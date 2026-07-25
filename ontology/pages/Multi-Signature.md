@@ -1,0 +1,262 @@
+public:: true
+
+# Multi-Signature
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:multi-signature",
+  "@type": "Page",
+  "vc:slug": "multi-signature",
+  "title": "Multi-Signature",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:multi-signature",
+  "@type": "Class",
+  "label": "Multi-Signature",
+  "definition": "Multi-Signature (multisig) is a cryptographic access-control scheme requiring that a transaction or operation be authorised by a threshold number m out of a defined set of n independent private keys before it is considered valid. Commonly expressed as m-of-n (e.g. 2-of-3), multisig eliminates single points of failure in key custody and enforces shared governance over digital assets, smart contracts, or any access-controlled resource. It is foundational to institutional cryptocurrency custody, DAO treasury management, bridge security, and hardware-secure wallet architectures. Multisig schemes may be implemented at the protocol layer, at the script level (as in Bitcoin P2SH/P2WSH), or at the application layer via smart contracts such as Gnosis Safe.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:signature-scheme",
+      "label": "Signature Scheme"
+    }
+  ],
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:multisig",
+      "label": "Multisig"
+    },
+    {
+      "@id": "urn:ngm:class:m-of-n-signature",
+      "label": "m-of-n Signature"
+    }
+  ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:pay-to-script-hash",
+        "label": "Pay-to-Script-Hash"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:key-ceremony",
+        "label": "Key Ceremony"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:mpc-wallet",
+        "label": "MPC Wallet"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposal"
+      },
+      {
+        "@id": "urn:ngm:class:eip",
+        "label": "EIP"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ]
+  },
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+- ### Definition
+  - [[Multi-Signature]] (multisig) is a cryptographic m-of-n access-control scheme in which a minimum of m distinct [[Cryptographic Keys]] from a predefined set of n must sign a transaction or authorise an operation before it is considered valid. By distributing signing authority, multisig eliminates the single point of failure present in [[Single Signature]] systems, enforces shared governance over [[Digital Asset]] holdings, and underpins modern [[Institutional Custody]] architectures. The scheme may be realised at the protocol layer (Bitcoin [[Pay-to-Script-Hash]]), at the application layer via [[Smart Contract]] logic (Gnosis Safe on Ethereum), or through aggregated [[Threshold Signature Scheme]] protocols such as MuSig2 and FROST.
+
+- ### Overview
+  - Multi-signature is one of the most widely deployed cryptographic security mechanisms in blockchain infrastructure. It addresses the fundamental tension between availability (no single key should block access) and security (no single compromise should grant access). The m-of-n parameterisation allows operators to tune this trade-off: a 2-of-3 scheme tolerates one lost key and prevents a single compromised key from being exploited; a 3-of-5 scheme used in institutional custody tolerates two losses while requiring collusion among three parties to misappropriate funds.
+  - Why it matters:
+    - Removes custodial single points of failure across key storage, geography, and personnel
+    - Enforces separation of duties in treasury and asset management
+    - Provides an auditable, on-chain record of approvals for compliance purposes
+    - Is a foundational primitive for [[DAO Governance]], [[Cross-Chain Bridge]] security, and exchange cold storage
+  - How it works (protocol level):
+    - In Bitcoin, the Pay-to-Script-Hash (P2SH) and Pay-to-Witness-Script-Hash (P2WSH) output types commit a hash of the redeem script to the chain; spending requires revealing the script and providing m valid signatures matching the n public keys encoded therein
+    - Full nodes verify each signature independently against the corresponding public key using [[ECDSA]] or [[Schnorr Signature]] verification
+    - On EVM-compatible chains, threshold logic is encoded in [[Smart Contract]] bytecode; Gnosis Safe (now Safe{Wallet}) is the dominant implementation, holding a significant share of total value locked in DeFi
+    - At the cryptographic layer, newer protocols (MuSig2, FROST) use interactive signing rounds to aggregate n individual signatures into a single aggregated signature, making multisig indistinguishable from single-key signatures on-chain
+
+- ### Key Components
+  - **m-of-n threshold**: the core parameter pair defining how many (m) of the total (n) key-holders must sign; selection of m and n determines the security-availability trade-off
+  - **[[Cryptographic Keys]]**: each participant holds a distinct private key; the corresponding public keys are registered in the redeem script or contract; key generation typically uses [[Elliptic Curve Cryptography]]
+  - **Redeem Script / Contract**: in Bitcoin, the redeem script encodes the public keys and threshold; in EVM chains, a [[Smart Contract]] enforces the logic and optionally additional conditions (time-locks, spending limits, role-based access)
+  - **[[Digital Signature]]**: each authorising party produces a signature over the transaction data using their private key; signatures are verified on-chain via [[ECDSA]] or [[Schnorr Signature]] algorithms
+  - **[[Hash Function]]**: in P2SH/P2WSH, the redeem script is hashed to form the output address, committing to the policy without revealing it until spend time
+  - **[[Hardware Security Module]]**: signing keys for institutional deployments are typically stored in HSMs or hardware wallets to prevent key extraction; each HSM holds one of the n shares
+  - **Key Ceremony**: the initial generation and distribution of the n private keys, often conducted as a formal [[Key Ceremony]] with multiple parties present to ensure no single party learns all keys
+  - **Coordinator / Aggregator**: software or service that collects partial signatures from m signers and assembles the final transaction; may be centralised (Gnosis relayer) or decentralised
+
+- ### Mechanisms
+  - **Bitcoin Script Multisig (OP_CHECKMULTISIG)**: the original Bitcoin opcode; deprecated in favour of P2SH and P2WSH for privacy and fee efficiency reasons; still valid but produces larger, more expensive transactions
+  - **P2SH Multisig (BIP 16)**: standardised in 2012; allows arbitrary redeem scripts committed as a hash, enabling n-of-m schemes without revealing participant keys in the output address
+  - **P2WSH (Segregated Witness)**: moves redeem script to the witness field, reducing transaction weight and fee costs; enables more complex scripts
+  - **Taproot / MuSig2 (BIP 340/341/327)**: Schnorr-based key aggregation; n participants interactively produce a single aggregate public key and, during signing, a single aggregate signature; undetectable as multisig on-chain, improving privacy and reducing fees
+  - **FROST (Flexible Round-Optimised Schnorr Threshold)**: a threshold signature protocol that supports t-of-n signing with a single-round online phase; suitable for distributed signers with high latency
+  - **Smart Contract Multisig (EVM)**: Solidity contracts encode threshold, signer list, and ancillary policies; transactions are proposed on-chain, signers approve via contract calls, and execution is released once m approvals accumulate; supports meta-transactions via EIP-1271
+  - **MPC Wallet / TSS**: [[MPC Wallet]] (multi-party computation wallet) uses secret sharing rather than independent full keys; each party holds a share; shares are combined ephemerally during signing; contrasts with classical multisig where each party holds a full private key
+
+- ### Applications and Use Cases
+  - **Institutional Cryptocurrency Custody**: exchanges and custodians (Coinbase Custody, BitGo) use 3-of-5 or higher schemes with HSMs distributed across geographic regions; mitigates both physical and cyber attacks
+  - **DAO Treasury Management**: [[DAO Governance]] bodies use multisig contracts (Safe{Wallet} deployed on Ethereum, Gnosis Chain, Polygon, and others) to control protocol treasuries; signers are elected council members or core team
+  - **Exchange Cold Storage**: exchange operators segregate cold wallets behind multisig requiring sign-off from multiple executives and security staff; prevents rogue employee theft
+  - **[[Cross-Chain Bridge]] Security**: bridge contracts controlling locked assets on source and destination chains typically use a multisig committee of validators; bridges with insufficient m-or-n thresholds have been exploited (Ronin, Harmony Horizon)
+  - **Escrow Services**: peer-to-peer escrow uses 2-of-3 multisig (buyer, seller, arbitrator) so that dispute resolution involves a neutral third party without ceding full control to either party
+  - **Payment Channels and Layer-2**: Lightning Network channel funding transactions use 2-of-2 multisig between channel participants; cooperative closes require both signatures
+  - **Corporate Accounts**: multi-signatory approvals for corporate blockchain accounts mirror traditional banking dual-control requirements; board resolutions encoded as multisig thresholds
+  - **Software Release Signing**: multi-signature schemes are applied beyond blockchain to code-signing workflows, where multiple developers must sign a release before it is published, preventing insider supply-chain attacks
+  - **[[Decentralised Identity]]**: multisig patterns appear in DID document key management, where recovery keys form an m-of-n quorum to rotate the primary signing key
+
+- ### Relationships
+  - subClassOf:: [[Signature Scheme]]
+  - relatedTo:: [[Threshold Signature Scheme]]
+  - relatedTo:: [[Schnorr Signature]]
+  - relatedTo:: [[ECDSA]]
+  - relatedTo:: [[Pay-to-Script-Hash]]
+  - relatedTo:: [[Hardware Security Module]]
+  - relatedTo:: [[Key Ceremony]]
+  - enables:: [[Multi Sig Governance]]
+  - enables:: [[DAO Governance]]
+  - enables:: [[Multi-Signature Wallet]]
+  - enables:: [[Institutional Custody]]
+  - enables:: [[Cross-Chain Bridge]]
+  - uses:: [[Cryptographic Keys]]
+  - uses:: [[Smart Contract]]
+  - uses:: [[Public Key Cryptography]]
+  - uses:: [[Hash Function]]
+  - requires:: [[Key Management]]
+  - requires:: [[Digital Signature]]
+  - implements:: [[Access Control]]
+  - implements:: [[Threshold Cryptography]]
+  - contrastsWith:: [[Single Signature]]
+  - contrastsWith:: [[MPC Wallet]]
+  - standardizedBy:: [[Bitcoin Improvement Proposal]]
+  - standardizedBy:: [[EIP]]
+  - bridges-to:: [[Zero-Knowledge Proof]]
+  - bridges-to:: [[Decentralised Identity]]
+
+- ### Standards and Context
+  - **BIP 11** (M-of-N Standard Transactions): the original Bitcoin Improvement Proposal defining OP_CHECKMULTISIG spending patterns
+  - **BIP 16** (Pay to Script Hash): standardised P2SH, enabling multisig addresses and arbitrary redeem scripts, merged 2012
+  - **BIP 141** (Segregated Witness): introduced P2WSH, placing redeem scripts in the witness field for reduced weight
+  - **BIP 327** (MuSig2): specifies a two-round Schnorr multi-signature scheme compatible with BIP 340 (Taproot)
+  - **BIP 340** (Schnorr Signatures for secp256k1): the underlying signature scheme enabling key aggregation
+  - **FROST** (RFC draft, IETF CFRG): Flexible Round-Optimised Schnorr Threshold signatures; under standardisation by the IETF Crypto Forum Research Group
+  - **EIP-1271**: standard for smart contract signature validation on EVM chains, enabling multisig wallets to sign arbitrary messages
+  - **FIPS 186-5**: NIST standard for digital signatures including ECDSA, underpinning the individual signatures within multisig schemes
+  - **MiCA (EU)**: Markets in Crypto-Assets Regulation explicitly addresses key management standards; proper multisig threshold custody is increasingly treated as a compliance expectation for VASPs
+  - **SOC 2 Type II / ISO 27001**: institutional custody providers routinely cite multisig architecture as a control mitigating unauthorised asset transfer risk in audit reports
+  - Relevant bodies: [[Bitcoin Core]] development community, [[Ethereum Foundation]], IETF CFRG, EU ESMA (MiCA implementation), US OFAC (sanctions compliance via on-chain transparency)
+
+- ### Security Considerations
+  - **Collusion risk**: multisig reduces but does not eliminate insider threat; m signers acting in collusion can still authorise fraudulent transactions; organisational controls and geographic distribution of signers are complementary
+  - **Script/contract bugs**: smart contract multisig introduces additional attack surface; the Parity Multisig wallet bug (2017) froze hundreds of millions of dollars due to a self-destruct vulnerability in a shared library contract
+  - **Signer availability**: too-high an m value risks fund lockout if signers are unavailable; dead-man's-switch and time-locked recovery mechanisms address this
+  - **Key ceremony integrity**: compromise during the initial key generation (e.g., a malicious RNG in a ceremony participant's hardware) undermines the security model entirely
+  - **Aggregation protocol security**: MuSig2 and FROST require careful implementation; rogue-key attacks and nonce reuse are known attack vectors against naive implementations of Schnorr aggregation
+  - **On-chain visibility**: classic P2SH multisig reveals the number of signers and public keys at spend time, which can be used for correlation analysis; Taproot-keypath and MuSig2 mitigate this
+
+- ### Provenance
+  - sources:: Bitcoin BIP 11, BIP 16, BIP 141, BIP 327; Gnosis Safe documentation; IETF FROST draft; MiCA Regulation (EU) 2023/1114; NIST FIPS 186-5
+  - updated:: 2026-06-13

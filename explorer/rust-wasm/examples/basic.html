@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebVOWL WASM - Basic Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .controls {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        button:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-card {
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #canvas {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 20px;
+            background: white;
+        }
+
+        .log {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 4px;
+            max-height: 200px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        .log-entry {
+            margin: 5px 0;
+            padding: 5px;
+            border-left: 3px solid #4CAF50;
+            background: white;
+        }
+
+        .log-error {
+            border-left-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦀 WebVOWL WASM - Basic Example</h1>
+
+        <div class="controls">
+            <button id="loadBtn">Load Example Ontology</button>
+            <button id="runBtn" disabled>Run Simulation (100 steps)</button>
+            <button id="animateBtn" disabled>Animate</button>
+            <button id="stopBtn" disabled>Stop</button>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-label">Nodes</div>
+                <div class="stat-value" id="nodeCount">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Edges</div>
+                <div class="stat-value" id="edgeCount">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Alpha</div>
+                <div class="stat-value" id="alpha">0.00</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Status</div>
+                <div class="stat-value" id="status">Not loaded</div>
+            </div>
+        </div>
+
+        <canvas id="canvas" width="1160" height="600"></canvas>
+
+        <div class="log" id="log"></div>
+    </div>
+
+    <script type="module">
+        import init, { WebVowl, version } from '../pkg/webvowl_wasm.js';
+
+        let webvowl = null;
+        let animationId = null;
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Example ontology data
+        const exampleOntology = {
+            header: {
+                iri: "http://example.org/university",
+                title: "University Ontology",
+                version: "1.0"
+            },
+            namespace: {
+                owl: "http://www.w3.org/2002/07/owl#",
+                rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+            },
+            class: [
+                { id: "person", label: "Person", type: "owl:Class" },
+                { id: "student", label: "Student", type: "owl:Class" },
+                { id: "professor", label: "Professor", type: "owl:Class" },
+                { id: "course", label: "Course", type: "owl:Class" },
+                { id: "department", label: "Department", type: "owl:Class" },
+                { id: "university", label: "University", type: "owl:Class" }
+            ],
+            property: [
+                { id: "teaches", label: "teaches", type: "owl:ObjectProperty", domain: "professor", range: "course" },
+                { id: "enrolledIn", label: "enrolled in", type: "owl:ObjectProperty", domain: "student", range: "course" },
+                { id: "belongsTo", label: "belongs to", type: "owl:ObjectProperty", domain: "professor", range: "department" },
+                { id: "offeredBy", label: "offered by", type: "owl:ObjectProperty", domain: "course", range: "department" },
+                { id: "partOf", label: "part of", type: "owl:ObjectProperty", domain: "department", range: "university" }
+            ]
+        };
+
+        function log(message, isError = false) {
+            const logDiv = document.getElementById('log');
+            const entry = document.createElement('div');
+            entry.className = 'log-entry' + (isError ? ' log-error' : '');
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            logDiv.insertBefore(entry, logDiv.firstChild);
+        }
+
+        function updateStats() {
+            if (!webvowl) return;
+
+            try {
+                const stats = webvowl.getStatistics();
+                document.getElementById('nodeCount').textContent = stats.node_count;
+                document.getElementById('edgeCount').textContent = stats.edge_count;
+                document.getElementById('alpha').textContent = webvowl.getAlpha().toFixed(3);
+                document.getElementById('status').textContent = webvowl.isFinished() ? 'Finished' : 'Running';
+            } catch (e) {
+                log('Error updating stats: ' + e.message, true);
+            }
+        }
+
+        function drawGraph() {
+            if (!webvowl) return;
+
+            try {
+                const graphData = webvowl.getGraphData();
+
+                // Clear canvas
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                // Center coordinates
+                const centerX = canvas.width / 2;
+                const centerY = canvas.height / 2;
+
+                // Draw edges
+                ctx.strokeStyle = '#999';
+                ctx.lineWidth = 1.5;
+                for (const edge of graphData.edges) {
+                    // Note: In full implementation, we'd map edge.source/target to actual node positions
+                    // This is simplified for the example
+                }
+
+                // Draw nodes
+                for (const node of graphData.nodes) {
+                    const x = centerX + node.x * 2;
+                    const y = centerY + node.y * 2;
+
+                    // Draw circle
+                    ctx.fillStyle = '#4CAF50';
+                    ctx.strokeStyle = '#333';
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.arc(x, y, 20, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    // Draw label
+                    ctx.fillStyle = '#333';
+                    ctx.font = '12px Arial';
+                    ctx.textAlign = 'center';
+                    ctx.fillText(node.label, x, y + 35);
+                }
+
+                updateStats();
+            } catch (e) {
+                log('Error drawing graph: ' + e.message, true);
+            }
+        }
+
+        function animate() {
+            if (!webvowl || webvowl.isFinished()) {
+                document.getElementById('animateBtn').disabled = false;
+                document.getElementById('stopBtn').disabled = true;
+                document.getElementById('status').textContent = 'Finished';
+                return;
+            }
+
+            webvowl.tick();
+            drawGraph();
+            animationId = requestAnimationFrame(animate);
+        }
+
+        // Initialize WASM
+        async function initWasm() {
+            try {
+                await init();
+                log('WebVOWL WASM initialized, version: ' + version());
+                document.getElementById('loadBtn').disabled = false;
+            } catch (e) {
+                log('Failed to initialize WASM: ' + e.message, true);
+            }
+        }
+
+        // Load ontology
+        document.getElementById('loadBtn').addEventListener('click', () => {
+            try {
+                webvowl = new WebVowl();
+                webvowl.loadOntology(JSON.stringify(exampleOntology));
+
+                // Configure simulation
+                webvowl.setCenter(0, 0);
+                webvowl.setLinkDistance(80);
+                webvowl.setChargeStrength(-200);
+
+                log('Ontology loaded successfully');
+                document.getElementById('runBtn').disabled = false;
+                document.getElementById('animateBtn').disabled = false;
+                updateStats();
+            } catch (e) {
+                log('Error loading ontology: ' + e.message, true);
+            }
+        });
+
+        // Run simulation
+        document.getElementById('runBtn').addEventListener('click', () => {
+            try {
+                webvowl.initSimulation();
+                log('Running simulation for 100 iterations...');
+
+                const start = performance.now();
+                webvowl.runSimulation(100);
+                const end = performance.now();
+
+                log(`Simulation completed in ${(end - start).toFixed(2)}ms`);
+                drawGraph();
+            } catch (e) {
+                log('Error running simulation: ' + e.message, true);
+            }
+        });
+
+        // Animate
+        document.getElementById('animateBtn').addEventListener('click', () => {
+            try {
+                webvowl.initSimulation();
+                log('Starting animation...');
+                document.getElementById('animateBtn').disabled = true;
+                document.getElementById('stopBtn').disabled = false;
+                animate();
+            } catch (e) {
+                log('Error starting animation: ' + e.message, true);
+            }
+        });
+
+        // Stop animation
+        document.getElementById('stopBtn').addEventListener('click', () => {
+            if (animationId) {
+                cancelAnimationFrame(animationId);
+                animationId = null;
+                log('Animation stopped');
+                document.getElementById('animateBtn').disabled = false;
+                document.getElementById('stopBtn').disabled = true;
+            }
+        });
+
+        // Initialize on load
+        initWasm();
+    </script>
+</body>
+</html>

@@ -1,0 +1,536 @@
+public:: true
+
+# Continual Learning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:279ccd490f46125b43bdb4809c8d5f8011027153b0fc4c0a805c854c9b22c910",
+  "@type": "Page",
+  "vc:slug": "continual-learning",
+  "title": "Continual Learning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
+    {"@id": "urn:visionflow:linked:catastrophic-forgetting", "vc:label": "Catastrophic Forgetting"},
+    {"@id": "urn:visionflow:linked:neural-networks", "vc:label": "Neural Networks"},
+    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
+    {"@id": "urn:visionflow:linked:online-learning", "vc:label": "Online Learning"},
+    {"@id": "urn:visionflow:linked:neural-plasticity", "vc:label": "Neural Plasticity"},
+    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
+    {"@id": "urn:visionflow:linked:elastic-weight-consolidation", "vc:label": "Elastic Weight Consolidation"},
+    {"@id": "urn:visionflow:linked:experience-replay", "vc:label": "Experience Replay"},
+    {"@id": "urn:visionflow:linked:knowledge-distillation", "vc:label": "Knowledge Distillation"},
+    {"@id": "urn:visionflow:linked:generative-adversarial-networks", "vc:label": "Generative Adversarial Networks"},
+    {"@id": "urn:visionflow:linked:variational-autoencoders", "vc:label": "Variational Autoencoders"},
+    {"@id": "urn:visionflow:linked:progressive-neural-networks", "vc:label": "Progressive Neural Networks"},
+    {"@id": "urn:visionflow:linked:meta-learning", "vc:label": "Meta-Learning"},
+    {"@id": "urn:visionflow:linked:few-shot-learning", "vc:label": "Few-Shot Learning"},
+    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
+    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
+    {"@id": "urn:visionflow:linked:edge-computing", "vc:label": "Edge Computing"},
+    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
+    {"@id": "urn:visionflow:linked:domain-adaptation", "vc:label": "Domain Adaptation"},
+    {"@id": "urn:visionflow:linked:curriculum-learning", "vc:label": "Curriculum Learning"},
+    {"@id": "urn:visionflow:linked:regularisation", "vc:label": "Regularisation"},
+    {"@id": "urn:visionflow:linked:multi-task-learning", "vc:label": "Multi-Task Learning"},
+    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
+    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
+    {"@id": "urn:visionflow:linked:parameter-efficient-fine-tuning", "vc:label": "Parameter-Efficient Fine-Tuning"},
+    {"@id": "urn:visionflow:linked:foundation-models", "vc:label": "Foundation Models"},
+    {"@id": "urn:visionflow:linked:autonomous-agents", "vc:label": "Autonomous Agents"},
+    {"@id": "urn:visionflow:linked:representation-learning", "vc:label": "Representation Learning"},
+    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
+    {"@id": "urn:visionflow:linked:memory-replay", "vc:label": "Memory Replay"},
+    {"@id": "urn:visionflow:linked:fisher-information", "vc:label": "Fisher Information"},
+    {"@id": "urn:visionflow:linked:model-compression", "vc:label": "Model Compression"},
+    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
+    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
+    {"@id": "urn:visionflow:linked:machine-unlearning", "vc:label": "Machine Unlearning"},
+    {"@id": "urn:visionflow:linked:batch-learning", "vc:label": "Batch Learning"},
+    {"@id": "urn:visionflow:linked:task-incremental-learning", "vc:label": "Task-Incremental Learning"},
+    {"@id": "urn:visionflow:linked:class-incremental-learning", "vc:label": "Class-Incremental Learning"},
+    {"@id": "urn:visionflow:linked:lora", "vc:label": "LoRA"},
+    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
+    {"@id": "urn:visionflow:linked:machine-learning-domain", "vc:label": "Machine Learning Domain"}
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Continual Learning"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-29T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:continual-learning",
+  "@type": "Class",
+  "label": "Continual Learning",
+  "definition": "Continual Learning is a machine learning paradigm in which a model sequentially learns from a non-stationary stream of tasks or data distributions while retaining competence on previously acquired knowledge. It directly confronts catastrophic forgetting — the tendency of neural networks to overwrite earlier representations when updated on new training distributions. Core strategies span regularisation-based protection of critical parameters, rehearsal-based replay of past exemplars or synthetic surrogates, and architectural methods that expand or isolate network capacity per task. The field spans both supervised and reinforcement learning settings and is fundamental wherever data arrives incrementally and retraining from scratch is computationally or commercially infeasible.",
+  "domain": "machine-learning",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:lifelong-learning",
+      "label": "Lifelong Learning"
+    },
+    {
+      "@id": "urn:ngm:class:incremental-learning",
+      "label": "Incremental Learning"
+    },
+    {
+      "@id": "urn:ngm:class:sequential-learning",
+      "label": "Sequential Learning"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:experience-replay", "label": "Experience Replay"},
+      {"@id": "urn:ngm:class:elastic-weight-consolidation", "label": "Elastic Weight Consolidation"},
+      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
+      {"@id": "urn:ngm:class:progressive-neural-networks", "label": "Progressive Neural Networks"},
+      {"@id": "urn:ngm:class:task-incremental-learning", "label": "Task-Incremental Learning"},
+      {"@id": "urn:ngm:class:class-incremental-learning", "label": "Class-Incremental Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:online-learning", "label": "Online Learning"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
+      {"@id": "urn:ngm:class:neural-networks", "label": "Neural Networks"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"},
+      {"@id": "urn:ngm:class:autonomous-agents", "label": "Autonomous Agents"},
+      {"@id": "urn:ngm:class:machine-unlearning", "label": "Machine Unlearning"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:neural-networks", "label": "Neural Networks"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:catastrophic-forgetting", "label": "Catastrophic Forgetting"},
+      {"@id": "urn:ngm:class:multi-task-learning", "label": "Multi-Task Learning"},
+      {"@id": "urn:ngm:class:batch-learning", "label": "Batch Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks"},
+      {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"},
+      {"@id": "urn:ngm:class:lora", "label": "LoRA"},
+      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:domain-adaptation", "label": "Domain Adaptation"},
+      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"},
+      {"@id": "urn:ngm:class:neural-plasticity", "label": "Neural Plasticity"},
+      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ]
+  },
+  "quality": 0.91,
+  "provenance": {
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-21T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:continual-learning:73e87299af1b",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:279ccd490f46125b43bdb4809c8d5f8011027153b0fc4c0a805c854c9b22c910"
+  },
+  "vc:resolutions": [
+    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Catastrophic Forgetting]]", "resolved": "urn:visionflow:linked:catastrophic-forgetting", "kind": "ResolvedLink"},
+    {"raw": "[[Neural Networks]]", "resolved": "urn:visionflow:linked:neural-networks", "kind": "ResolvedLink"},
+    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Online Learning]]", "resolved": "urn:visionflow:linked:online-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Neural Plasticity]]", "resolved": "urn:visionflow:linked:neural-plasticity", "kind": "ResolvedLink"},
+    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink"},
+    {"raw": "[[Elastic Weight Consolidation]]", "resolved": "urn:visionflow:linked:elastic-weight-consolidation", "kind": "StubLink"},
+    {"raw": "[[Experience Replay]]", "resolved": "urn:visionflow:linked:experience-replay", "kind": "ResolvedLink"},
+    {"raw": "[[Knowledge Distillation]]", "resolved": "urn:visionflow:linked:knowledge-distillation", "kind": "ResolvedLink"},
+    {"raw": "[[Generative Adversarial Networks]]", "resolved": "urn:visionflow:linked:generative-adversarial-networks", "kind": "ResolvedLink"},
+    {"raw": "[[Variational Autoencoders]]", "resolved": "urn:visionflow:linked:variational-autoencoders", "kind": "StubLink"},
+    {"raw": "[[Progressive Neural Networks]]", "resolved": "urn:visionflow:linked:progressive-neural-networks", "kind": "StubLink"},
+    {"raw": "[[Meta-Learning]]", "resolved": "urn:visionflow:linked:meta-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Few-Shot Learning]]", "resolved": "urn:visionflow:linked:few-shot-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Federated Learning]]", "resolved": "urn:visionflow:linked:federated-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Edge Computing]]", "resolved": "urn:visionflow:linked:edge-computing", "kind": "ResolvedLink"},
+    {"raw": "[[Robotics]]", "resolved": "urn:visionflow:linked:robotics", "kind": "ResolvedLink"},
+    {"raw": "[[Domain Adaptation]]", "resolved": "urn:visionflow:linked:domain-adaptation", "kind": "ResolvedLink"},
+    {"raw": "[[Curriculum Learning]]", "resolved": "urn:visionflow:linked:curriculum-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Regularisation]]", "resolved": "urn:visionflow:linked:regularisation", "kind": "ResolvedLink"},
+    {"raw": "[[Multi-Task Learning]]", "resolved": "urn:visionflow:linked:multi-task-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
+    {"raw": "[[Parameter-Efficient Fine-Tuning]]", "resolved": "urn:visionflow:linked:parameter-efficient-fine-tuning", "kind": "ResolvedLink"},
+    {"raw": "[[Foundation Models]]", "resolved": "urn:visionflow:linked:foundation-models", "kind": "ResolvedLink"},
+    {"raw": "[[Autonomous Agents]]", "resolved": "urn:visionflow:linked:autonomous-agents", "kind": "ResolvedLink"},
+    {"raw": "[[Representation Learning]]", "resolved": "urn:visionflow:linked:representation-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "ResolvedLink"},
+    {"raw": "[[Memory Replay]]", "resolved": "urn:visionflow:linked:memory-replay", "kind": "StubLink"},
+    {"raw": "[[Fisher Information]]", "resolved": "urn:visionflow:linked:fisher-information", "kind": "StubLink"},
+    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
+    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
+    {"raw": "[[Machine Unlearning]]", "resolved": "urn:visionflow:linked:machine-unlearning", "kind": "StubLink"},
+    {"raw": "[[Batch Learning]]", "resolved": "urn:visionflow:linked:batch-learning", "kind": "StubLink"},
+    {"raw": "[[Task-Incremental Learning]]", "resolved": "urn:visionflow:linked:task-incremental-learning", "kind": "StubLink"},
+    {"raw": "[[Class-Incremental Learning]]", "resolved": "urn:visionflow:linked:class-incremental-learning", "kind": "StubLink"},
+    {"raw": "[[LoRA]]", "resolved": "urn:visionflow:linked:lora", "kind": "ResolvedLink"},
+    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "ResolvedLink"},
+    {"raw": "[[Machine Learning Domain]]", "resolved": "urn:visionflow:linked:machine-learning-domain", "kind": "ResolvedLink"}
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:enrichment-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-06-21T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+- ### Definition
+  - Continual Learning is a sub-discipline of [[Machine Learning]] concerned with training models incrementally across a non-stationary sequence of tasks or data distributions while preserving previously acquired knowledge, directly addressing [[Catastrophic Forgetting]] — the failure mode in which [[Neural Networks]] overwrite earlier weight configurations when trained on new data, causing severe performance degradation on previously learned tasks. The field synthesises ideas from [[Transfer Learning]], [[Online Learning]], [[Meta-Learning]], and cognitive neuroscience models of [[Neural Plasticity]], seeking to build systems that accumulate competence over time without requiring full retraining on all historical data. Core algorithmic families include regularisation-based methods that constrain [[Gradient Descent]] updates to protect critical parameters estimated via [[Fisher Information]] matrices (as in [[Elastic Weight Consolidation]]), rehearsal-based methods that maintain an episodic [[Memory Replay]] buffer or synthesise pseudo-exemplars using [[Generative Adversarial Networks]] or [[Variational Autoencoders]], and architectural approaches such as [[Progressive Neural Networks]] that allocate fresh capacity per task. The field spans both supervised and [[Reinforcement Learning]] settings and is increasingly relevant to [[Large Language Models]], [[Foundation Models]], and systems deployed in dynamic real-world environments including [[Robotics]], [[Edge Computing]] nodes, and [[Federated Learning]] clusters where retraining from scratch is computationally or commercially infeasible. Contemporary developments tightly couple continual learning with [[Parameter-Efficient Fine-Tuning]] techniques such as [[LoRA]], enabling parameter-isolated adaptation of multi-billion-parameter models without catastrophic interference, with [[LoRA]]-based continual learning overheads as small as 1.79 MB on DistilBERT (less than 1% of full model footprint) making the approach compatible with [[Edge Computing]]-class hardware. The stability-plasticity dilemma — the fundamental tension between retaining old knowledge (stability) and absorbing new information (plasticity) — remains the central theoretical challenge, connecting the field to [[Representation Learning]], [[Deep Learning]] optimisation theory, and [[Attention Mechanism]] dynamics in transformer architectures. A 2024 landmark study in Nature (Dohare et al.) further separated plasticity loss — a distinct failure mode in which the model's capacity to learn new tasks degrades over time even given sufficient new data, caused by dormant neurons and gradient collapse in older layers — from classical [[Catastrophic Forgetting]], establishing that continual learning systems must simultaneously resist forgetting and maintain learning capacity across extended sequential training.
+
+- ### Semantic Classification
+  - owl-class:: machine-learning:ContinualLearning
+  - owl-role:: LearningParadigm | SequentialAdaptationProtocol
+  - owl-inferred:: machine-learning:IncrementalLearning, machine-learning:LifelongLearning, machine-learning:SequentialLearning, machine-learning:OnlineLearning, machine-learning:AdaptiveLearning
+  - belongs-to-domain:: [[Machine Learning Domain]]
+  - implemented-in-layer:: [[Deep Learning]], [[Foundation Models]]
+
+- ### Relationships
+  - is-subclass-of:: [[Machine Learning]], [[Online Learning]], [[Transfer Learning]]
+  - has-part:: [[Elastic Weight Consolidation]], [[Experience Replay]], [[Progressive Neural Networks]], [[Knowledge Distillation]], [[Task-Incremental Learning]], [[Class-Incremental Learning]], [[Memory Replay]], [[Domain Adaptation]]
+  - requires:: [[Neural Networks]], [[Gradient Descent]], [[Loss Function]], [[Regularisation]], [[Representation Learning]], [[Deep Learning]], [[Attention Mechanism]]
+  - enables:: [[Transfer Learning]], [[Few-Shot Learning]], [[Autonomous Agents]], [[Machine Unlearning]], [[Federated Learning]], [[Domain Adaptation]], [[Curriculum Learning]]
+  - depends-on:: [[Neural Networks]], [[Gradient Descent]], [[Loss Function]], [[Deep Learning]], [[Attention Mechanism]], [[Fisher Information]], [[Representation Learning]]
+  - uses:: [[Generative Adversarial Networks]], [[Variational Autoencoders]], [[Meta-Learning]], [[LoRA]], [[Parameter-Efficient Fine-Tuning]], [[Fisher Information]], [[Knowledge Distillation]]
+  - supports:: [[Reinforcement Learning]], [[Edge Computing]], [[Large Language Models]], [[Foundation Models]], [[Robotics]], [[Natural Language Processing]], [[Computer Vision]]
+  - contrasts-with:: [[Catastrophic Forgetting]], [[Multi-Task Learning]], [[Batch Learning]]
+  - related-to:: [[Domain Adaptation]], [[Curriculum Learning]], [[Neural Plasticity]], [[Computer Vision]], [[Natural Language Processing]], [[Machine Unlearning]], [[Federated Learning]]
+  - bridges-to:: [[Robotics]], [[Federated Learning]], [[Machine Unlearning]], [[Edge Computing]]
+  - standardized-by:: [[ContinualAI]]
+
+- ### Content
+  - ## Compositional Relationships (Components)
+    ```
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:ElasticWeightConsolidation))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:ExperienceReplay))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:ProgressiveNeuralNetworks))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:KnowledgeDistillation))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:TaskIncrementalLearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:ClassIncrementalLearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:MemoryReplay))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:DomainAdaptation))
+    ```
+  - ## Dependency Relationships
+    ```
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:requires ai:NeuralNetworks))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:requires ai:GradientDescent))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:requires ai:LossFunction))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:requires ai:Regularisation))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:requires ai:RepresentationLearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:dependsOn ai:FisherInformation))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:dependsOn ai:AttentionMechanism))
+    ```
+  - ## Capability Relationships
+    ```
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:enables ai:TransferLearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:enables ai:FewShotLearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousAgents))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:enables ai:MachineUnlearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:enables ai:DomainAdaptation))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:enables ai:CurriculumLearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:supports ai:ReinforcementLearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:supports ai:LargeLanguageModels))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:supports ai:EdgeComputing))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:supports ai:FederatedLearning))
+    ```
+  - ## Implementation Relationships
+    ```
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:uses ai:GenerativeAdversarialNetworks))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:uses ai:MetaLearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:uses ai:LoRA))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:uses ai:ParameterEfficientFineTuning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:uses ai:KnowledgeDistillation))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:implements ai:StabilityPlasticityDilemma))
+    ```
+  - ## Reduction Relationships
+    ```
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:reducesTo ai:OnlineLearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:reducesTo ai:TransferLearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:contrastsWith ai:CatastrophicForgetting))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:contrastsWith ai:BatchLearning))
+    SubClassOf(ai:ContinualLearning
+      ObjectSomeValuesFrom(ai:contrastsWith ai:MultiTaskLearning))
+    ```
+
+  - ## About
+    - Continual Learning — also termed Lifelong Learning, Incremental Learning, or Sequential Learning — addresses one of the fundamental limitations of static [[Machine Learning]] pipelines: a model trained offline on a fixed dataset cannot easily accommodate new information without retraining from scratch on the full historical corpus. This limitation is catastrophic in production settings where data arrives continuously, task definitions evolve, and complete dataset re-access is either computationally prohibitive or legally impermissible under data governance regulations such as GDPR Article 17's right-to-erasure obligations. The core challenge is rooted in the mechanics of [[Gradient Descent]] optimisation: updating parameters to minimise a [[Loss Function]] on new data overwrites the weight configurations that encoded prior knowledge. This phenomenon — [[Catastrophic Forgetting]] — was first characterised in connectionist systems by McCloskey and Cohen (1989) and studied extensively by Ratcliff (1990), long before the [[Deep Learning]] era. Grossberg's adaptive resonance theory (ART, 1980s) formalised the stability-plasticity dilemma as a fundamental constraint on any learning system that must both resist change (stability) and remain open to new information (plasticity).
+    - A 2024 landmark paper published in Nature by Dohare et al. (University of Alberta, including Richard Sutton) demonstrated that standard [[Deep Learning]] methods progressively lose plasticity in continual learning settings, eventually performing no better than shallow networks even in the absence of catastrophic forgetting. This opened an important sub-field focused on maintaining plasticity through techniques such as continual backpropagation (selective reinitialisation of dormant units), periodic weight resets with shrink-and-perturb [[Regularisation]], FIRE (Frobenius-Isometry Reinitialization, 2026) for balanced stability-plasticity trade-offs, and gradient measurement approaches for monitoring neuronal activity. Concurrent DeepMind work confirmed plasticity loss as structurally distinct from forgetting, requiring different interventions. Research from 2025 (arXiv:2505.09486, "Preserving Plasticity in Continual Learning with Adaptive Linearity Injection") further demonstrated that linear function components can be selectively preserved to maintain plasticity without sacrificing representational capacity.
+    - The field distinguishes three canonical learning scenarios: **Task-Incremental Learning (TIL)** in which task identity is known at inference, enabling task-specific prediction heads; **Domain-Incremental Learning (DIL)** in which the output space is fixed but input distributions shift across tasks with no task identity at inference; and **Class-Incremental Learning (CIL)**, the most challenging regime, where the model must simultaneously classify across all seen classes with no task identity signal, facing recency bias in softmax classifiers. Evaluation metrics capture these distinctions: Average Accuracy (AA), Backward Transfer (BWT, measuring forgetting), Forward Transfer (FWT, measuring whether prior tasks help future ones), and Intransigence (inability to learn new tasks from over-regularisation). Standard benchmarks include Split-MNIST, Permuted-MNIST, Split-CIFAR-100, CORe50 (real-world video object recognition), and CLEAR (Continual LEARning on real-world imagery with known temporal structure). The LibContinual library (arXiv:2512.22029) provides a comprehensive benchmarking framework covering 70+ algorithms across all three scenarios. Federated continual learning introduces additional complexity: a 2025-2026 survey in Expert Systems with Applications identifies unique challenges under non-i.i.d. client data distributions and heterogeneous task assignments.
+    - [[Large Language Models]] exhibit distinct continual learning dynamics compared to smaller [[Neural Networks]]. Research (arXiv:2504.01241, "Catastrophic Forgetting in LLMs: A Comparative Analysis Across Language Tasks", 2025) reveals mixed evidence — some architectures (e.g. Phi-3.5-mini) exhibit minimal forgetting across sequential fine-tuning, while others show task-recency bias and representation collapse under domain shift. Mechanistic analysis of six contemporary LLM architectures (arXiv:2601.18699, 2026) investigated catastrophic forgetting during continual fine-tuning, finding that layer-wise forgetting patterns differ systematically across attention and feed-forward components. Self-distillation fine-tuning (SDFT) has emerged as a promising mitigation — using in-context learning to generate on-policy training signals that preserve prior capabilities while acquiring new skills (InfoWorld 2025 coverage).
+
+  - ## Components / Architecture
+
+    **Regularisation-Based Methods** protect critical parameters from large updates when learning new tasks. [[Elastic Weight Consolidation]] (EWC; Kirkpatrick et al. 2017) penalises changes to parameters deemed important for previous tasks, estimating importance via the diagonal of the [[Fisher Information]] matrix computed on the previous task's training data. Synaptic Intelligence (SI; Zenke et al. 2017) computes online path integrals of parameter contributions to loss reduction, accumulating importance without a separate backward pass. Learning Without Forgetting (LwF; Li and Hoiem 2016) applies [[Knowledge Distillation]] from the old model as a soft regulariser during new-task training, preserving output-level behaviour without storing past data. Hierarchical layer-wise and element-wise regularisation (arXiv:2501.13669, 2025) provides fine-grained parameter importance weighting that substantially reduces forgetting in large-scale models.
+
+    **Rehearsal-Based Methods** maintain or regenerate past task representations and interleave them with new task training. [[Experience Replay]] (ER) stores a compact episodic memory buffer sampled from past tasks using reservoir sampling or class-balanced strategies, replayed during each new-task update. iCaRL (Rebuffi et al. 2017) combines herding-based exemplar selection with [[Knowledge Distillation]] and nearest-mean-of-exemplars classification. Dark Experience Replay (DER++; Buzzega et al. 2020) stores model logits alongside exemplars and uses distillation loss on stored outputs alongside cross-entropy on replayed inputs, achieving strong class-incremental performance. Generative Replay uses [[Generative Adversarial Networks]] or [[Variational Autoencoders]] to synthesise pseudo-exemplars without retaining real data — critical when data storage is prohibited by privacy or regulatory constraints. MSSR (Memory-aware adaptive replay; Qin et al. 2025) introduces adaptive replay scheduling for continual LLM fine-tuning, dynamically balancing old and new task samples. Spurious forgetting — a phenomenon distinct from true task forgetting, arising from distribution shift within a single continual learning episode (arXiv:2501.13453) — can be mitigated by replay strategies that sample across the full temporal distribution.
+
+    **Architecture-Based Methods** dedicate separate network capacity per task to eliminate parameter conflicts. [[Progressive Neural Networks]] (Rusu et al. 2016) grow a new column per task with lateral connections from frozen prior columns, providing full immunity to forgetting at the cost of linear growth in parameter count. PackNet (Mallya and Lazebnik 2018) iteratively prunes networks and reuses freed capacity for new tasks. Dynamic Expandable Networks (DEN; Yoon et al. 2018) selectively add neurons when existing capacity proves insufficient.
+
+    **Meta-Learning Approaches** learn generalisation mechanisms that transfer across the task sequence. MAML-derived Online-Aware Meta-Learning (OML; Javed and White 2019) explicitly trains representations that resist interference across [[Gradient Descent]] update steps. Gradient Episodic Memory (GEM; Lopez-Paz and Ranzato 2017) and A-GEM (Chaudhry et al. 2018) project gradient updates to not increase loss on stored past exemplars, providing theoretical backward transfer guarantees.
+
+    **Parameter-Efficient Continual Learning** emerged from the convergence of [[Parameter-Efficient Fine-Tuning]] methods with continual learning for [[Large Language Models]] and [[Foundation Models]]. [[LoRA]]-based continual learning (EWC-LoRA, O-LoRA, MoE-CL) applies low-rank adapter constraints per task, keeping the frozen backbone intact while maintaining task-specific adapters. The comprehensive LoRA survey (Frontiers of Computer Science, 2025) covering five research fronts confirms that [[LoRA]] plugins for cross-task generalisation facilitate [[Multi-Task Learning]], [[Domain Adaptation]], and continual learning within a single parameter-efficient framework. LoRA for federated continual learning on edge devices (arXiv:2602.11655, 2026) demonstrates that LoRA adapters for continuous learning on [[Edge Computing]] hardware introduce only ~1.79 MB overhead (DistilBERT, <1% of full model footprint). Vision-language model continual learning via dynamic [[LoRA]] (arXiv:2506.03189) extends this paradigm to multimodal [[Foundation Models]]. The 2025 ACM CSUR survey (Wang et al.) identifies prompt-only methods (CLOB, CIS, InCA) as achieving near-joint-fine-tuning upper bounds for class-incremental text classification on frozen [[Foundation Models]], with negligible explicit forgetting.
+
+    **Continual Reinforcement Learning** addresses the distinct challenge of sequential task adaptation in RL environments, where the agent must adapt to new environments without forgetting prior motor policies. The primacy bias (Nikishin et al. ICML 2022) — tendency of RL agents to overly prioritise early experiences — motivates periodic network resets for maintaining plasticity. Plasticine (arXiv:2504.17490, 2025) provides a dedicated benchmarking framework for plasticity-motivated deep RL research. On-policy RL training itself has been observed to naturally mitigate catastrophic forgetting by generating temporally coherent training distributions (Cameron Wolfe, Substack 2025 analysis).
+
+  - ## Use Cases / Major Families
+
+    **Robotics**: robots deployed in uncontrolled environments must continuously acquire new manipulation skills, object categories, and spatial maps without discarding prior motor competence. Continual learning bridges to [[Robotics]] through Avalanche-RL and [[Reinforcement Learning]] formulations where each new environment is a new task. ISO 26262 and ISO/PAS 21448 (SOTIF) automotive AI standards are expected to drive requirements for certified continual adaptation in autonomous driving perception systems.
+
+    **Natural Language Processing and LLMs**: sequential fine-tuning of [[Large Language Models]] on domain-specific corpora risks catastrophic forgetting of general language capabilities. Production deployment at Meta (LLaMA fine-tuning pipelines), Google (recommendation system continual training), and Anthropic (policy iteration across RLHF stages) employs continual learning variants to preserve instruction-following while adapting to new domains. Research on LLMs in graph continual learning (OpenReview 2026) demonstrates that with minimal modifications, [[Foundation Models]] achieve state-of-the-art results in graph classification continual learning, leveraging their broad pre-trained representations as a strong anti-forgetting prior.
+
+    **Medical Imaging**: new disease categories, imaging modalities, and scanner manufacturers require incremental model updates over the clinical system's lifetime. Retraining from scratch on aggregated historical data is frequently prohibited by data governance constraints (GDPR, UK Data Protection Act); continual learning allows incremental incorporation of new pathology classes while retaining diagnostic performance. A 2026 study (arXiv:2602.23533) applied frozen [[Foundation Models]] with few-shot exemplars for brain MRI classification in a continual setting, demonstrating near-full-retrain accuracy with GDPR-compliant data minimisation.
+
+    **Autonomous Driving**: perception systems encounter novel weather conditions, geographic regions, and unexpected object classes post-deployment. Continual adaptation is safety-critical. The [[Continual Learning]] for autonomous systems regulatory landscape is active, with ISO/PAS 21448 (SOTIF) requiring that post-deployment software updates maintain safety verification across the full operational design domain.
+
+    **Edge Computing and IoT**: on-device personalisation for mobile assistants, wearable health monitors, and industrial sensors requires [[Edge Computing]] nodes to adapt to individual user patterns without cloud data transmission. [[LoRA]]-based continual learning on [[Edge Computing]]-class hardware (arXiv:2602.11655) with <1% parameter overhead makes PEFT continual learning viable for embedded deployment. Federated continual learning (2025-2026 survey, Expert Systems with Applications) combines [[Federated Learning]]'s privacy-preserving aggregation with sequential task adaptation for IoT fleet management.
+
+    **Recommendation Systems**: user preferences and item catalogues shift continuously; online continual learning updates recommendation policies without discarding historical behavioural signals encoding long-term preferences. The "big world simulator" challenge (arXiv:2408.02930) formalises the requirement for continual learning in open-world environments where recommendation systems operate.
+
+    **Acoustic Event Classification**: a 2025 paper (arXiv:2512.17932) demonstrated continual learning for acoustic event classification, showing replay-based methods substantially outperform regularisation-only approaches under strong distribution shift — directly applicable to industrial acoustic monitoring in Northern England manufacturing environments.
+
+    **Machine Unlearning**: GDPR Article 17 right-to-erasure requirements necessitate selective removal of specific training examples' influence from deployed models. Continual learning frameworks provide foundational methods for both directions — selective forgetting of specific knowledge items and sequential acquisition of new knowledge — establishing [[Machine Unlearning]] as a regulatory compliance complement to continual learning research.
+
+  - ## Academic Context
+
+    The intellectual lineage of continual learning traces to cognitive neuroscience and the complementary learning systems (CLS) theory of McClelland, McNaughton, and O'Reilly (1995), which proposed that the hippocampus acts as a fast, high-capacity temporary store interleaving replayed memories into the neocortex — directly inspiring [[Experience Replay]] in [[Machine Learning]]. Grossberg's adaptive resonance theory (ART, 1980s) formalised the stability-plasticity dilemma as a fundamental constraint on any learning system. The modern deep learning era of continual learning was catalysed by three foundational 2017 papers: Kirkpatrick et al. (EWC, DeepMind/UCL collaboration), Zenke et al. (Synaptic Intelligence, Stanford), and Rusu et al. ([[Progressive Neural Networks]], DeepMind). The NIPS 2016 and ICML 2017 workshop series established the research community. The ContinualAI organisation, founded by Vincenzo Lomonaco and colleagues, developed the Avalanche framework (Lomonaco et al. 2021, CVPR workshop) as the PyTorch ecosystem's standard benchmarking and algorithm library.
+
+    Key evaluation benchmarks provide controlled test beds: Split-MNIST, Permuted-MNIST, Split-CIFAR-100 (100 classes split into 20 tasks), CORe50 (real-world video object recognition), CLEAR (Continual LEARning on real-world imagery with known temporal structure). The 2023 comprehensive survey by Wang et al. (arXiv:2302.00487, IEEE TPAMI 2024) provides the definitive taxonomy covering over 200 continual learning papers, distinguishing regularisation, rehearsal, architectural, and meta-learning families. LibContinual (arXiv:2512.22029) provides an updated comprehensive benchmarking library supporting realistic evaluation across 70+ continual learning algorithms. The 2025 ACM Computing Surveys paper by Wang et al. (doi:10.1145/3735633) catalogues CL-LLM methods across instruction tuning, domain-adaptive pre-training, and alignment stages, identifying task-recency bias, representation collapse, and the forgetting/plasticity-loss distinction as the three key theoretical challenges for [[Large Language Models]].
+
+    Research on vision-language model (VLM) continual learning has emerged as a distinct sub-field: the survey "Continual Learning for VLMs: A Survey and Taxonomy Beyond Forgetting" (GitHub/YuyangSunshine, arXiv August 2025) provides benchmarks and taxonomy for multimodal continual learning, connecting [[Attention Mechanism]] dynamics in vision-language transformers to the established CL literature. Benchmarking from cognitive perspectives (arXiv:2312.03309) extends evaluation beyond standard accuracy metrics to include cognitive load analogues and biological plausibility assessments. FeNeC (arXiv:2503.14301, 2025) proposes feature clustering for continual learning, improving class-incremental performance through nearest-centroid classification that reduces recency bias in softmax heads.
+
+  - ## Current Landscape (2026)
+
+    As of 2026, continual learning has transitioned from a niche academic sub-field to an industrial priority driven by three converging pressures: the cost of retraining billion-parameter [[Large Language Models]] and [[Foundation Models]] from scratch, GDPR-mandated right-to-erasure requirements that necessitate selective forgetting, and the demand for on-device personalisation in consumer AI products requiring [[Edge Computing]] deployment.
+
+    The plasticity loss paper (Dohare et al., Nature 2024) reframed the field: the community now recognises that forgetting and plasticity loss are distinct failure modes requiring distinct interventions. Continual backpropagation (selective reinitialisation of dormant units) and FIRE (Frobenius-Isometry Reinitialization, arXiv:2602.08040, 2026) have emerged as lightweight solutions for maintaining plasticity across non-stationary benchmarks. Gradient measurement approaches (arXiv:2505.24061, 2025) for monitoring neuronal activity provide diagnostic tools for detecting plasticity degradation before catastrophic failure.
+
+    [[Parameter-Efficient Fine-Tuning]]-based continual learning using [[LoRA]] adapters has become the dominant industrial approach for [[Large Language Models]] and [[Foundation Models]]. The comprehensive LoRA survey (Frontiers of Computer Science, July 2025) covering five research fronts confirms LoRA's central role spanning cross-task generalisation, [[Federated Learning]] privacy, and real-world continual deployment. MoE-CL (mixture-of-experts for continual learning) and O-LoRA demonstrate per-task low-rank subspaces in weight matrices can be orthogonally constrained to prevent interference, achieving near-zero backward transfer on domain-incremental benchmarks. The federated continual learning challenge (non-i.i.d. clients, heterogeneous tasks) is addressed by the federated LoRA optimisation framework (arXiv:2509.15087) applying adaptive expert allocation and selection.
+
+    The Avalanche framework (v0.5+ as of 2025, supporting Avalanche-RL for Atari, MuJoCo, and [[Robotics]]) and LibContinual (comprehensive benchmarking library covering 70+ algorithms) are the two primary open-source ecosystems. Hugging Face PEFT directly incorporates continual fine-tuning utilities. [[Machine Unlearning]] has emerged as an adjacent regulatory-compliance problem, with continual learning techniques providing foundational methods for both selective forgetting and sequential knowledge acquisition.
+
+  - ## UK Context
+
+    UK research groups have made substantial contributions to continual learning. Google DeepMind (London), the product of DeepMind's 2010 founding and 2014 Google acquisition, published the seminal EWC paper (Kirkpatrick et al. 2017) through a collaboration with UCL — one of the most cited papers in modern continual learning. DeepMind's Hado van Hasselt, Marc Lanctot, and colleagues have continued work on maintaining plasticity in RL agents (research on loss of plasticity in continual deep RL, published while authors were at DeepMind). Clare Lyle's work on hare-and-tortoise networks for maintaining plasticity (2024) continues this tradition. UCL's Gatsby Computational Neuroscience Unit, under Peter Dayan (until 2018), provided the neuroscience foundations motivating complementary learning systems approaches to continual learning.
+
+    The University of Edinburgh's School of Informatics houses the Bayesian and Neural Systems group (Amos Storkey et al.) with contributions to online variational inference applicable to continual learning. Imperial College London's Department of Computing has active research in continual learning for medical imaging and [[Robotics]], with collaborations with the UK Health Security Agency on longitudinal pathogen surveillance models requiring continual adaptation to emerging variants. The DARPA Lifelong Learning Machines (L2M) programme (2017-2022) funded multiple UK-US collaborative projects through the Alan Turing Institute.
+
+    The Alan Turing Institute's Data-Centric Engineering programme has applied continual learning to infrastructure monitoring scenarios, particularly relevant to Northern England's heavy industrial base — steel processing in Sheffield, chemical manufacturing in Teesside, and rail maintenance across the TransPennine network where sensor-driven predictive maintenance systems must continuously adapt to changing equipment conditions without retraining from scratch. Manchester Metropolitan University's Data Science Institute and the University of Leeds's School of Computing have published on continual learning for industrial IoT, with Leeds contributing work on acoustic event classification in manufacturing environments (2024-2025, directly relevant to the factory floor acoustic monitoring use case). The University of Sheffield's NLP group has published on sequential fine-tuning stability for low-resource language adaptation, connecting continual learning to Welsh and Scottish Gaelic [[Natural Language Processing]] needs.
+
+    ContinualAI's annual workshops at NeurIPS and ICLR regularly feature UK authors, and the Alan Turing Institute's bridging grants between neuroscience-inspired AI and continual learning have supported collaborative research between Edinburgh Informatics, Cambridge's MRC Cognition and Brain Sciences Unit, and UCL Neuroscience — directly applying [[Neural Plasticity]] insights to algorithmic continual learning design.
+
+  - ## Future Directions (2026-2030)
+
+    **Foundation model continual learning**: as frontier models grow to hundreds of billions of parameters, retraining from scratch becomes prohibitive even for major AI laboratories. Modular continual learning architectures — task-specific [[LoRA]] adapters archived and selectively activated via mixture-of-experts routing — enable effectively infinite capacity accumulation without parameter conflicts. The convergence of [[Parameter-Efficient Fine-Tuning]] with continual learning for vision-language [[Foundation Models]] (arXiv:2506.03189) represents the frontier trajectory, with continual VLM fine-tuning expected to be a standard production capability by 2028.
+
+    **Neurobiologically plausible mechanisms**: the hippocampal-neocortical complementary learning systems (CLS) theory continues to inspire architecture innovations. HippoRAG (2024) implemented a neurobiologically inspired long-term memory system for LLM retrieval; expect this to merge with parametric continual learning, creating hybrid memory systems balancing fast associative retrieval (hippocampal analogue) with slow parametric consolidation (neocortical analogue). The "Big World Simulator" challenge (arXiv:2408.02930) proposes a scientific programme to develop continual learning agents capable of open-world adaptation at the level of biological intelligence.
+
+    **Machine unlearning integration**: GDPR Article 17 right-to-erasure requirements will increasingly require AI systems to selectively remove specific training examples' influence, making [[Machine Unlearning]] a regulatory compliance necessity. Continual learning frameworks will incorporate selective forgetting as a first-class operation — unlearning as the inverse operation to learning, using Fisher information and rehearsal buffer methods to precisely target knowledge removal.
+
+    **Federated continual learning**: combining [[Federated Learning]]'s privacy preservation with continual learning's sequential adaptation under non-i.i.d. client data and heterogeneous task distributions is an open challenge (identified in 2025-2026 survey in Expert Systems with Applications). Convergence with differential privacy, sparse-and-orthogonal [[LoRA]] for wireless federated fine-tuning (arXiv:2602.20492), and secure aggregation protocols will define this trajectory.
+
+    **Continual learning for autonomous systems**: ISO 26262 and ISO/PAS 21448 (SOTIF) standards for automotive AI will likely drive requirements for certified continual adaptation in autonomous driving perception systems. Auditable continual learning protocols — with formal guarantees on backward transfer bounds and plasticity preservation — will emerge as a regulatory requirement, potentially driving a new category of safety-case documentation for deployed continual learning systems.
+
+    **Continual reinforcement learning at scale**: the Plasticine framework (2025) and on-policy RL's natural anti-forgetting properties will drive research into large-scale continual RL agents capable of open-ended skill accumulation, relevant to [[Robotics]], game-playing AI, and simulation-to-real transfer for physical systems.
+
+  - ## Continual Reinforcement Learning: Detailed Analysis
+    - Continual reinforcement learning (CRL) extends the standard RL problem formulation to multi-task sequential settings where the environment, reward function, or task objective changes over time. The agent must learn to solve new tasks (plasticity) without forgetting previously acquired policies (stability), subject to the additional complexity that RL training data is generated through the agent's own interactions with the environment rather than from a fixed dataset.
+    - The "primacy bias" (Nikishin et al. ICML 2022) — the tendency of RL agents to over-weight early experiences in their replay buffer, creating a systematic preference for early-learned behaviours that prevents later policy improvements — is a RL-specific manifestation of the stability-plasticity dilemma. Deep RL agents trained with experience replay exhibit this bias because early high-reward trajectories dominate the replay buffer, leading to persistent gradient updates that reinforce early behaviour at the cost of plasticity for new reward structures. Periodic network resets (wiping and reinitialising non-frozen layers while retaining replay buffer contents) address primacy bias without discarding learned representations, demonstrating that architectural choices for maintaining plasticity in RL overlap substantially with the continual learning plasticity literature.
+    - The Plasticine framework (arXiv:2504.17490, 2025) provides a comprehensive benchmarking environment for plasticity-motivated deep RL research, supporting grid-world, Atari, MuJoCo locomotion, and robotic manipulation task sequences with configurable distribution shift profiles. Plasticine's key contribution is the separation of plasticity measurement (rate of policy improvement given new interaction data) from stability measurement (rate of policy degradation on established tasks when exposed to new environments), enabling independent optimisation of each dimension.
+    - For continual learning in [[Robotics]] contexts, the challenge of sim-to-real transfer intersects with the CL problem: policies learned in simulation must be transferred to real-world hardware, and then further adapted to specific physical configurations, material properties, and task variations encountered in deployment. This creates a three-phase CL challenge: (1) simulation pre-training, (2) real-world transfer (domain shift), (3) real-world task extension (new skill acquisition). Methods such as domain randomisation during pre-training (encouraging representations robust to physical variation) and [[LoRA]]-based adapter fine-tuning for real-world adaptation address phases 1-2; rehearsal-based CL methods using simulator-generated exemplars address phase 3.
+    - On-policy RL — particularly policy gradient and PPO-based approaches — has been noted to naturally mitigate catastrophic forgetting relative to off-policy methods (DQN, SAC, TD3) because on-policy training generates fresh interaction data that reflects the current policy distribution, preventing over-fitting to old replay buffer distributions. The integration of continual RL with [[Foundation Models]] (large pre-trained world models) is an active research frontier: pre-trained transformer-based world models (Gato, RT-2) serve as plastic backbones that can be efficiently adapted to new tasks via [[LoRA]] or prompt tuning, combining the continual learning literature's algorithmic insights with the pre-training paradigm's representational breadth.
+  - ## Algorithm Taxonomy Summary
+    - The continual learning algorithm space is organised across four primary families, each addressing the stability-plasticity dilemma through a different inductive bias:
+    - **Regularisation family**: impose a penalty on parameter changes that would harm past-task performance. Key algorithms: EWC (Fisher-based importance), SI (online path integral importance), LwF (knowledge distillation regularisation), MAS (memory-aware synapses), RWalk (EWC + synaptic intelligence combined). Advantages: no memory storage, applicable to any model architecture. Limitations: importance estimates are diagonal approximations that underestimate cross-parameter correlations; effectiveness degrades as task count grows and important parameter sets overlap.
+    - **Rehearsal family**: maintain or regenerate past-task data for interleaved replay. Key algorithms: ER (experience replay with reservoir sampling), iCaRL (herding-based exemplar selection + nearest-mean classification), DER++ (stored logits + distillation), A-GEM (projected gradient), GEM (per-task gradient projection), MSSR (memory-aware adaptive replay for LLMs). Advantages: direct empirical constraint on forgetting; strong performance across all three CL scenarios. Limitations: memory storage requirement; privacy constraints on data retention; replicates only seen data, not unseen distribution.
+    - **Generative replay sub-family**: use [[Generative Adversarial Networks]] or [[Variational Autoencoders]] to synthesise past-task data. Key algorithms: DGR (deep generative replay), DGDMN (dual-generative memory network). Advantages: no raw data storage; supports privacy-compliant CL. Limitations: generative model itself subject to catastrophic forgetting; quality degrades in long task sequences.
+    - **Architecture family**: dedicate separate parameters per task, eliminating interference. Key algorithms: [[Progressive Neural Networks]] (new column per task), PackNet (iterative pruning and reuse), DEN (dynamically expandable networks), HAT (hard attention to task), PathNet (evolutionary algorithm for path selection). Advantages: complete forgetting immunity in pure isolation designs. Limitations: parameter growth; task identity required at inference for full isolation.
+    - **Parameter-efficient family**: leverage [[LoRA]], prompt tuning, and adapter modules to provide task-specific capacity within a shared frozen backbone. Key algorithms: O-LoRA (orthogonal LoRA), MoE-CL, EWC-LoRA, L2P (Learning to Prompt), DualPrompt, key-value prompt-prototypes. Advantages: backbone frozen; small per-task parameter overhead; scalable to billion-parameter [[Foundation Models]]. Limitations: limited expressivity per task; routing head must be updated continually; prompt interference in long sequences.
+    - **Meta-learning family**: learn to learn without forgetting across task sequences. Key algorithms: OML (online-aware meta-learning), MAML-CL, GEM, A-GEM. Advantages: explicitly optimises for sequential learning efficiency; positive forward transfer. Limitations: computationally expensive meta-training; requires task boundaries.
+  - ## Key Terminology
+
+    - **Catastrophic Forgetting**: the phenomenon whereby updating [[Neural Networks]] parameters on new task data causes severe performance degradation on previously learned tasks, first characterised by McCloskey and Cohen (1989) in connectionist networks.
+    - **Stability-Plasticity Dilemma**: the fundamental tension between preserving existing knowledge (stability) and acquiring new information (plasticity); the central theoretical challenge of continual learning, formalised by Grossberg's adaptive resonance theory.
+    - **Loss of Plasticity**: a distinct failure mode from forgetting, identified by Dohare et al. (Nature 2024), in which the model's ability to learn new tasks degrades over time even given new data; caused by dormant neurons and gradient collapse in older layers.
+    - **Task-Incremental Learning (TIL)**: the continual learning scenario in which task identity is known at inference time, enabling task-specific prediction heads; the easiest of the three canonical scenarios.
+    - **Domain-Incremental Learning (DIL)**: the scenario in which the task type is fixed but input distributions shift across tasks; no task identity provided at inference; intermediate difficulty.
+    - **Class-Incremental Learning (CIL)**: the most challenging scenario; the model must classify inputs across all seen classes with no task identity signal at inference; naive softmax classifiers exhibit recency bias requiring architectural or calibration mitigations.
+    - **Backward Transfer (BWT)**: evaluation metric measuring the change in performance on previously learned tasks after learning new ones; negative values indicate forgetting; a key metric in the CORe50 and CLEAR benchmark evaluations.
+    - **Forward Transfer (FWT)**: metric measuring whether learning previous tasks improves performance on future tasks before they are explicitly trained; positive values indicate beneficial knowledge transfer.
+    - **Intransigence**: the inability to learn new tasks, often caused by excessive [[Regularisation]] that prevents parameter updates; the dual failure mode to catastrophic forgetting.
+    - **Exemplar**: a representative stored sample from a past task used in rehearsal-based methods; exemplar selection strategies (herding, class-balanced reservoir sampling) significantly affect class-incremental performance.
+    - **Rehearsal Buffer**: the memory store containing past exemplars or pseudo-exemplars for replay; budget constraints (storage limits) drive compact exemplar selection research.
+    - **[[Elastic Weight Consolidation]] (EWC)**: regularisation method penalising changes to parameters important for past tasks, estimated via the [[Fisher Information]] matrix diagonal; the archetypal regularisation-based continual learning method.
+    - **[[Progressive Neural Networks]] (PNN)**: architecture that grows a new column per task with lateral connections from frozen prior columns; provides full forgetting immunity at the cost of linear parameter growth.
+    - **Generative Replay**: rehearsal approach using [[Generative Adversarial Networks]] or [[Variational Autoencoders]] to synthesise past-task data without storing real examples; enables privacy-compliant continual learning where data retention is prohibited.
+    - **Spurious Forgetting**: a distinct forgetting phenomenon arising from distribution shift within a single continual learning episode rather than from inter-task interference, identified by arXiv:2501.13453 (2025).
+    - **Continual Backpropagation**: variant of [[Gradient Descent]] that selectively reinitialises dormant units during training to maintain network plasticity, addressing the loss-of-plasticity failure mode without requiring task boundaries.
+    - **Primacy Bias**: in deep RL, the tendency to over-weight early experiences, preventing later policy improvements; a RL-specific manifestation of the stability-plasticity dilemma; mitigated by periodic network resets (Nikishin et al. 2022).
+    - **FIRE (Frobenius-Isometry Reinitialization)**: a principled continual backpropagation variant that preserves the isometric structure of weight matrices during unit reinitialisation, maintaining spectral properties of the learned representation space.
+    - **ContinualAI**: the research community organisation founded by Vincenzo Lomonaco that maintains the Avalanche framework, organises workshops at NeurIPS/ICLR, and provides the primary open-source benchmarking infrastructure for the field.
+    - **O-LoRA (Orthogonal LoRA)**: parameter-efficient continual learning method enforcing orthogonality between per-task LoRA adapter subspaces, preventing interference while maintaining shared backbone integrity.
+    - **Self-Distillation Fine-Tuning (SDFT)**: technique in which the model uses its own in-context learning capability to generate demonstrations for previous tasks, creating self-supervised replay signals without a separate teacher model or stored exemplar buffer.
+
+  - ## Formal Analysis
+    - **The continual learning problem formalisation**: Let T = {T₁, T₂, ..., Tₙ} be a sequence of tasks, where each task Tₜ = (Dₜ, Lₜ) comprises a data distribution Dₜ and a loss function Lₜ. A continual learning system maintains a parameter vector θ ∈ Θ and updates it sequentially: θₜ = Update(θₜ₋₁, Dₜ, Lₜ). [[Catastrophic Forgetting]] is formalised as the increase in loss on task Tₛ (s < t) after update: ΔL_forgetting = Lₛ(θₜ; Dₛ) − Lₛ(θₛ; Dₛ). Backward Transfer (BWT) in the evaluation framework aggregates this as BWT = (1/(T-1)) Σₜ₌₂ᵀ Σₛ₌₁ᵗ⁻¹ [Lₛ(θₜ; Dₛ) − Lₛ(θₛ; Dₛ)], with negative BWT indicating forgetting and positive BWT indicating beneficial knowledge retention. Forward Transfer (FWT) = (1/(T-1)) Σₜ₌₁ᵀ⁻¹ [Lₜ(θₜ₋₁; Dₜ) − L_rand(Dₜ)] captures whether prior learning helps future tasks before explicit training.
+    - **The [[Fisher Information]] importance estimation in EWC**: the parameter importance matrix Ω for task s is estimated as the diagonal of the [[Fisher Information]] matrix F_s = E_{x~D_s}[∇_θ log p(y|x,θ) ∇_θ log p(y|x,θ)ᵀ], computed at the converged θ_s. EWC adds the regularisation term ½ Σⱼ Ωⱼ(θⱼ - θⱼ^s)² to the new task loss, penalising movement away from θ^s proportionally to each parameter's importance for task s. The fundamental limitation is that Ω approximates a diagonal, ignoring parameter correlations — an approximation that degrades as task sequences lengthen and important parameters for different tasks begin to overlap.
+    - **Stability-plasticity as a Pareto frontier**: any single parameter configuration θ achieves some forgetting rate F(θ) and plasticity rate P(θ) for future tasks. The stability-plasticity Pareto frontier is the set of θ where no modification simultaneously decreases F and increases P — corresponding to the fundamental impossibility of perfect continual learning in a fixed-capacity neural network under arbitrary task sequences. [[Parameter-Efficient Fine-Tuning]] methods (particularly [[LoRA]]) circumvent this by extending Θ with task-specific low-rank subspaces, effectively escaping the fixed-capacity constraint and moving the Pareto frontier.
+    - **Plasticity loss mechanism**: Dohare et al. (Nature 2024) characterise plasticity loss through the "effective rank" of weight matrices — the number of singular values above a threshold — which decreases monotonically during continual training as gradient updates collapse the representational diversity of learned feature spaces. Dead units (neurons with zero effective gradient for new inputs) accumulate in older layers, reducing the network's effective capacity below its nominal parameter count. Continual backpropagation addresses this by selectively reinitialising dead units based on utility estimates, maintaining effective rank without requiring full retraining.
+    - **LLM-specific catastrophic forgetting dynamics**: mechanistic analysis (arXiv:2601.18699, 2026) of six contemporary LLM architectures reveals that forgetting in [[Transformer Architecture]] models is not uniformly distributed across layers — attention components and feed-forward network parameters exhibit different forgetting rates, with early-layer attention parameters showing greater stability (as they encode general language patterns) and later feed-forward parameters showing greater susceptibility to forgetting (as they encode task-specific factual associations). This layer-wise heterogeneity motivates hierarchical regularisation (arXiv:2501.13669) with layer-specific importance weights.
+  - ## Vision-Language and Multimodal Continual Learning
+    - The extension of continual learning to multimodal [[Foundation Models]] — vision-language models (VLMs) such as CLIP, LLaVA, and GPT-4V — is a rapidly emerging sub-field, formalised in the 2025 survey "Continual Learning for VLMs: A Survey and Taxonomy Beyond Forgetting" (arXiv, August 2025). VLM continual learning introduces additional challenges beyond text-only CL: cross-modal alignment must be preserved across task sequences, as catastrophic forgetting in either the vision encoder or the language decoder can corrupt the learned vision-language correspondence that enables zero-shot transfer.
+    - The dynamic [[LoRA]] approach for VLM continual learning (arXiv:2506.03189) allocates task-specific low-rank adapter pairs to each modality independently, with cross-modal alignment losses that prevent divergence between vision and language representations across tasks. This approach achieves near-joint-training accuracy on Split-COCO and Split-VQA benchmarks while maintaining linear parameter growth bounded by the [[LoRA]] rank hyperparameter.
+    - Key-value prompt-prototype methods (arXiv:2601.04864, "Key-Value Pair-Free Continual Learner") extend prompt-based CL to VLMs by learning task-specific prototype representations in the [[Attention Mechanism]] key-value space, enabling task retrieval without explicit task identity at inference — addressing the Class-Incremental Learning challenge in multimodal settings. The [[Attention Mechanism]]'s query-key-value structure provides a natural substrate for storing and retrieving task-specific knowledge without modifying the frozen backbone weights.
+    - Multimodal benchmarks for VLM continual learning include Split-COCO (object detection and captioning split across tasks), Split-VQA (visual question answering with class-incremental task structure), and domain-incremental image captioning benchmarks spanning artistic styles, medical imaging, satellite imagery, and natural scene photography. The FeNeC approach (arXiv:2503.14301, 2025) demonstrates that feature clustering for class-incremental learning substantially outperforms standard rehearsal and regularisation methods on these multimodal benchmarks by exploiting the rich semantic geometry of pre-trained multimodal feature spaces.
+    - The intersection with [[Computer Vision]] continual learning for medical imaging is particularly significant: clinical AI systems trained on historical imaging datasets must accommodate new scanner technologies, new disease classifications, and new demographic populations without discarding diagnostic competencies on established pathologies. The frozen [[Foundation Models]] approach (arXiv:2602.23533) demonstrates few-shot continual learning for 3D brain MRI classification, achieving near-retraining accuracy with a small fixed exemplar budget — enabling GDPR-compliant continual deployment of clinical AI without retaining full historical datasets.
+  - ## Benchmark Landscape and Evaluation Practice
+    - The continual learning benchmark ecosystem has matured substantially from the original Split-MNIST and Permuted-MNIST settings, which are now considered too simple to differentiate algorithm performance at scale. The current benchmark hierarchy spans three tiers of difficulty and ecological validity.
+    - **Tier 1 — Controlled synthetic benchmarks**: Split-MNIST (10 digit classes split into 5 binary tasks), Permuted-MNIST (random input permutations creating distribution-shifted tasks without semantic structure), Split-CIFAR-10/100 (standard image recognition datasets split into incremental tasks). These benchmarks provide fast, reproducible evaluation but are unrepresentative of real-world data characteristics — classes are balanced, task boundaries are crisp, and training data is i.i.d. within each task. Performance on Permuted-MNIST is particularly unreliable as a predictor of real-world CL performance due to the artificial nature of pixel permutation as a distribution shift.
+    - **Tier 2 — Realistic structured benchmarks**: CORe50 (50 household objects across 11 distinct collection scenarios representing real distribution shifts in object appearance, lighting, and viewpoint), CLEAR (Continual LEARning on real-world imagery with known temporal structure, spanning 10 visual concept classes photographed at 10 different time points over 10 years, enabling benchmark with genuine temporal distribution shift). Split-CIFAR-100 (100 classes in 20 tasks of 5 classes) provides an intermediate-difficulty image recognition benchmark. The LibContinual library (arXiv:2512.22029) standardises evaluation across 70+ CL algorithms on these benchmarks, enabling reproducible comparison.
+    - **Tier 3 — Domain-specific applied benchmarks**: CL-NLU (continual natural language understanding), Split-CoQA (continual question answering), Split-SST (continual sentiment analysis), medical imaging benchmarks (continual skin lesion classification, brain MRI adaptation), and acoustic event classification (arXiv:2512.17932) for industrial monitoring. These benchmarks connect the CL literature to application requirements, enabling ablation studies that isolate the contribution of CL algorithms relative to task-specific pre-training strategies.
+    - **LLM evaluation challenges**: evaluating continual learning in [[Large Language Models]] is substantially harder than in classification settings because (a) the output space is open-ended, (b) backward transfer on held-out language tasks is expensive to evaluate at model scale, and (c) the forgetting-vs-plasticity-loss distinction requires separate evaluation protocols. The comprehensive LLM-CL survey (Wang et al. ACM CSUR 2025) identifies three canonical evaluation settings: instruction tuning (sequential fine-tuning on instruction-following datasets), domain-adaptive pre-training (continued pre-training on domain corpora), and alignment (sequential RLHF stages). The arXiv:2504.01241 study ("Catastrophic Forgetting in LLMs: A Comparative Analysis Across Language Tasks") provides a comparative analysis of catastrophic forgetting across five language task types (classification, generation, QA, reasoning, and instruction following) in six contemporary LLM architectures.
+    - **Federated continual learning evaluation**: the 2025-2026 survey in Expert Systems with Applications on federated CL identifies additional evaluation dimensions specific to the federated setting: communication efficiency (rounds to convergence), differential privacy guarantee level (epsilon-delta budget), and client heterogeneity robustness (variance in per-client performance across non-i.i.d. data distributions). Standard FL benchmarks such as LEAF are being extended with temporal task sequences to create federated continual learning evaluation suites, expected to be formally standardised by ContinualAI and the OpenFL consortium by 2027.
+  - ## Parameter-Efficient Continual Learning: Detailed Analysis
+    - The convergence of [[Parameter-Efficient Fine-Tuning]] with continual learning has become the dominant paradigm for adapting [[Large Language Models]] and [[Foundation Models]] in production settings where retraining from scratch is computationally impractical. The key insight is that [[LoRA]]'s low-rank factorisation of weight update matrices — adding task-specific ΔW = BA (B ∈ ℝ^{d×r}, A ∈ ℝ^{r×k}, r << min(d,k)) to frozen pre-trained weights W₀ — provides a natural task isolation mechanism: different tasks can use different BA factorisation pairs without interfering with the shared W₀, as long as task boundaries are respected or orthogonality constraints are applied.
+    - **O-LoRA (Orthogonal Low-Rank Adaptation)**: enforces orthogonality between the LoRA subspaces of different tasks by adding an orthogonality regularisation term to the training objective: ||B_new^T B_old||_F ≤ ε, ensuring that the subspace spanned by new task adapters is nearly orthogonal to the subspace of all previous task adapters. O-LoRA achieves near-zero backward transfer on domain-incremental benchmarks (Split-CoQA, Split-SST) while maintaining competitive forward accuracy, at the cost of restricting the low-rank subspace dimensionality available per task as the task count increases.
+    - **MoE-CL (Mixture of Experts for Continual Learning)**: applies sparse gating mechanisms to route inputs to task-relevant adapter sets, combining architectural isolation (distinct experts per task) with shared computational infrastructure (the frozen backbone and MoE routing head). The routing head must itself be trained continually, creating a meta-learning challenge: the router must learn to identify which task a new input belongs to without task identity labels at inference — a Class-Incremental Learning challenge embedded within the MoE architecture.
+    - **LoRA for [[Federated Learning]]**: the sparse-and-orthogonal LoRA approach for wireless federated fine-tuning (arXiv:2602.20492) addresses communication efficiency in federated CL by transmitting only the low-rank adapter parameters (not full model gradients), reducing communication cost by a factor of d/r (typically 100-1000×). The adaptive expert allocation and selection framework (arXiv:2509.15087) further reduces communication by selectively transmitting only the most changed adapter parameters across federated rounds. Edge-device deployment (arXiv:2602.11655) demonstrates that LoRA-based continuous learning on DistilBERT achieves <1.79 MB adapter overhead — compatible with mobile and IoT-class hardware.
+    - **Prompt-based continual learning**: a distinct PEFT approach that avoids weight modification entirely, instead learning task-specific prompt tokens prepended to the frozen model's input sequence. CLIP, L2P (Learning to Prompt), and DualPrompt demonstrate that prompt tuning in the [[Attention Mechanism]] context achieves strong class-incremental performance on image classification benchmarks without any parameter update to the frozen [[Foundation Models]] backbone. The key-value prompt-prototype approach (arXiv:2601.04864) extends this to allow task retrieval without explicit task identity at inference, using k-NN matching in the prompt-key space to identify the most relevant task prompt for each input. Prompt-only methods (CLOB, CIS, InCA) achieve near-joint-fine-tuning upper bounds for class-incremental text classification with negligible explicit forgetting when applied to frozen [[Foundation Models]] (Wang et al. ACM CSUR 2025), making them particularly attractive for production deployment where any weight modification to billion-parameter models is operationally expensive.
+    - **Self-distillation fine-tuning (SDFT)**: leverages in-context learning to generate on-policy training signals that preserve prior capabilities while acquiring new skills. The frozen model generates demonstrations for previous tasks given in-context prompts, and these self-generated demonstrations are used as replay signals alongside new task training data — effectively converting the model into its own "teacher" for knowledge preservation without requiring a separate distillation model or stored exemplar buffer. Research (InfoWorld 2025 coverage of SDFT; arXiv:2501.13453 spurious forgetting analysis) demonstrates that SDFT substantially reduces both true catastrophic forgetting and spurious forgetting arising from distributional artifacts in sequential fine-tuning.
+  - ## Continual Learning and Knowledge Graphs
+    - Continual learning intersects with knowledge graph (KG) maintenance in scenarios where new entities, relations, and factual assertions must be incrementally incorporated into a knowledge representation system without corrupting established facts. This connection is directly relevant to ontology maintenance — the process of enriching a knowledge graph (such as this Logseq mainKnowledgeGraph) with new concepts while preserving existing ontology integrity mirrors the CL problem of extending a model's knowledge without catastrophic forgetting of established ontological relationships.
+    - Graph continual learning (GCL) addresses the challenge of incrementally extending [[Machine Learning]] models trained on graph-structured data (knowledge graphs, social networks, citation networks, molecule graphs) when new nodes, edges, or graph properties arrive sequentially. The 2026 OpenReview paper "Can LLMs Alleviate Catastrophic Forgetting in Graph Continual Learning?" demonstrates that [[Foundation Models]] — with minimal modifications — achieve state-of-the-art results in graph CL by leveraging their broad pre-trained representations as anti-forgetting priors, enabling knowledge graph completion models to incorporate new entity classes without discarding established relational embeddings.
+    - The intersection of continual learning with [[Federated Learning]] is particularly relevant for distributed knowledge graph systems where nodes (edge devices, federated clients) independently observe different subsets of new knowledge and must collectively update a shared graph representation. Sparse-and-orthogonal [[LoRA]] for wireless federated fine-tuning (arXiv:2602.20492) provides a communication-efficient mechanism for federated knowledge graph updates that satisfies privacy constraints while maintaining plasticity for new entity discovery.
+    - [[Machine Unlearning]] in knowledge graph contexts corresponds to the requirement to selectively erase the influence of incorrect, outdated, or GDPR-protected data from a KG-trained model without retraining from scratch. The complementarity of unlearning and continual learning is bidirectional: CL techniques provide the forward direction (incrementally learn new facts) and unlearning provides the reverse direction (selectively forget specific facts), together enabling a fully dynamic knowledge management system compatible with both AI Act and GDPR regulatory requirements.
+  - ## Continual Learning Optimisation Theory
+    - The optimisation dynamics of continual learning systems differ fundamentally from standard batch learning because the objective function changes between tasks, creating a non-stationary landscape that [[Gradient Descent]] must navigate without access to historical data. The loss surface geometry of a continual learning problem can be characterised by the sequence of task-specific minima θ*₁, θ*₂, ..., θ*ₙ and the paths in parameter space between them.
+    - **Gradient projection methods** (GEM, A-GEM, OGD) constrain gradient updates to the intersection of the feasible regions defined by the requirement that backward transfer on each stored task is non-positive: G_update · G_task_s ≥ 0 for all s < t. This geometric constraint ensures that parameter updates do not increase loss on previous tasks, providing theoretical backward transfer guarantees at the cost of restricting the gradient's freedom in the update direction. The A-GEM simplification (using a single "reference gradient" computed on a sampled episodic memory batch rather than per-task gradients) reduces computational cost from O(T) gradient computations per update to O(1) while approximately preserving the backward transfer guarantee in expectation.
+    - **Continual backpropagation** modifies the standard [[Gradient Descent]] update by selectively reinitialising units based on their "utility" — a measure combining the unit's contribution to recent predictions and the magnitude of its incoming weights. Units with near-zero utility (dormant neurons that contribute nothing to recent task performance) are periodically reset to random values with small weights, providing fresh capacity for new task representations without discarding the high-utility units that encode retained knowledge. The Frobenius-Isometry Reinitialization (FIRE; arXiv:2602.08040) provides a principled variant that preserves the isometric structure of weight matrices during reinitialisation, maintaining the spectral properties of the representation space.
+    - **Stochastic gradient interference** is the core mechanism of catastrophic forgetting: when task T₂ training updates parameters θ in a direction that reduces L₂(θ), these same parameter changes may increase L₁(θ) if the gradient directions ∇_θ L₁ and ∇_θ L₂ are negatively correlated. The "gradient cosine similarity" cos(∇_θ L₁, ∇_θ L₂) provides a diagnostic for interference severity: values close to -1 indicate severe conflict (the tasks are pulling parameters in opposite directions), while values close to +1 indicate that shared representations are beneficial (positive forward transfer). The network capacity for beneficial interference (cos > 0 across task pairs) is exhausted as tasks accumulate, driving the transition from positive transfer to catastrophic forgetting in long task sequences.
+    - **[[Curriculum Learning]] interactions**: the ordering of tasks in the training sequence has been shown to significantly affect continual learning performance, analogous to the curriculum effects in standard learning theory. Tasks with more structural similarity (higher cross-task gradient alignment) presented consecutively create less forgetting than dissimilar tasks; scheduling methods that adaptively reorder tasks based on gradient alignment estimates can improve CL performance by 5-15% on benchmark suites. The interaction between [[Curriculum Learning]] and continual learning is an active research area, with particular relevance to lifelong reinforcement learning where environment selection constitutes a curriculum design problem.
+    - **Loss of plasticity: mechanistic account**: Dohare et al. (Nature 2024) demonstrate through controlled experiments that standard deep [[Neural Networks]] in continual learning settings progressively lose effective capacity due to three interacting mechanisms: (1) dead units — neurons that contribute near-zero gradient signal to the [[Loss Function]] on new inputs, caused by the ReLU activation becoming permanently saturated in the negative regime; (2) gradient vanishing in deeper layers due to shrinking weight norms from regularisation; and (3) representation collapse — distinct input patterns that should activate different neurons instead activate identical neural codes, reducing representational dimensionality below nominal network width. These mechanisms accumulate over the task sequence, progressively shrinking the network's effective capacity. The continual backpropagation and FIRE reinitialisation approaches address mechanism (1); layer normalisation and gradient clipping address mechanism (2); and periodic network "shake-up" perturbations address mechanism (3).
+  - ## Regulatory and Safety Considerations
+    - Continual learning in safety-critical systems — automotive perception (ISO 26262, SOTIF), medical devices (MDR 2017/745, FDA Software as a Medical Device guidance), and aviation (DO-178C for avionics software) — faces significant regulatory barriers because existing certification frameworks assume static software artefacts. A certified autonomous driving perception system must pass a defined set of validation scenarios before deployment; continual learning post-deployment modifies the certified parameters without triggering re-certification, potentially invalidating the certification basis.
+    - The regulatory gap is recognised: ISO/PAS 21448 (SOTIF) addresses operational design domain (ODD) expansion through structured validation, but does not yet provide a framework for continual learning-induced parameter changes. Industry groups including the Automotive Safety Integrity Level (ASIL) working groups and EUCAR (European Council for Automotive R&D) are developing proposals for "learning-enabled components" in safety-critical automotive AI that require periodic re-validation triggered by monitored parameter drift metrics.
+    - GDPR Article 17 right-to-erasure requirements create a direct use case for [[Machine Unlearning]] as a complement to continual learning: if a data subject requests deletion of their training data contribution, the model must either be retrained from scratch on the remaining data or "unlearned" the specific data points' influence. Continual learning provides foundational techniques — particularly [[Fisher Information]]-based importance estimation and rehearsal buffer methods — that are directly applicable to machine unlearning, establishing a regulatory nexus between the two research directions.
+    - The [[AI Governance]] literature (NIST AI RMF 2023; EU AI Act Article 9 risk management requirements) identifies model drift monitoring as a governance requirement for high-risk AI systems. Continual learning systems that update in production introduce additional drift monitoring challenges: performance metrics must be tracked not only over deployment time (as in standard drift detection) but also across the task sequence, detecting forgetting-induced degradation on established tasks and plasticity-loss-induced failures to adapt to new tasks. This requires dual monitoring streams with task-specific performance dashboards and backward/forward transfer metrics computed against held-out task evaluation sets.
+    - The EU AI Act's August 2026 transparency obligations (Articles 52-53) and high-risk AI system requirements (Annex III, including AI systems in education, employment, essential services, law enforcement, and critical infrastructure) impose post-market monitoring obligations that continual learning deployments must satisfy. For a continual learning system classified as high-risk, the provider must maintain a post-market monitoring plan that detects performance drift on each task dimension separately, distinguishing forgetting (backward transfer degradation) from general model drift (performance degradation due to deployment distribution shift not attributable to parameter updates). These dual monitoring requirements have not yet been fully standardised, creating a compliance uncertainty that is being addressed through the EU AI Act's delegated acts and implementing regulations expected in 2026-2027.
+  - ## Research & Literature
+
+    1. McCloskey, M. & Cohen, N.J. (1989). Catastrophic interference in connectionist networks: The sequential learning problem. *Psychology of Learning and Motivation*, 24, 109-165.
+    2. Ratcliff, R. (1990). Connectionist models of recognition memory: Constraints imposed by learning and forgetting functions. *Psychological Review*, 97(2), 285-308.
+    3. McClelland, J.L., McNaughton, B.L., & O'Reilly, R.C. (1995). Why there are complementary learning systems in the hippocampus and neocortex. *Psychological Review*, 102(3), 419-457.
+    4. Kirkpatrick, J., Pascanu, R., et al. (2017). Overcoming catastrophic forgetting in neural networks. *PNAS*, 114(13), 3521-3526. https://doi.org/10.1073/pnas.1611835114
+    5. Zenke, F., Poole, B., & Ganguli, S. (2017). Continual learning through synaptic intelligence. *ICML 2017*.
+    6. Li, Z. & Hoiem, D. (2016). Learning without forgetting. *ECCV 2016*. https://doi.org/10.1007/978-3-319-46493-0_37
+    7. Rusu, A.A., et al. (2016). Progressive neural networks. *arXiv:1606.04671*.
+    8. Rebuffi, S.A., Kolesnikov, A., Sperl, G., & Lampert, C. (2017). iCaRL: Incremental classifier and representation learning. *CVPR 2017*.
+    9. Lopez-Paz, D. & Ranzato, M.A. (2017). Gradient episodic memory for continual learning. *NeurIPS 2017*.
+    10. Chaudhry, A., Ranzato, M.A., Rohrbach, M., & Elhoseiny, M. (2018). Efficient lifelong learning with A-GEM. *ICLR 2019*.
+    11. Javed, K. & White, M. (2019). Meta-learning representations for continual learning. *NeurIPS 2019*.
+    12. Mallya, A. & Lazebnik, S. (2018). PackNet: Adding multiple tasks to a single network by iterative pruning. *CVPR 2018*.
+    13. Yoon, J., Yang, E., Lee, J., & Hwang, S.J. (2018). Lifelong learning with dynamically expandable networks. *ICLR 2018*.
+    14. Buzzega, P., Boschini, M., Porrello, A., Abati, D., & Calderara, S. (2020). Dark experience for general continual learning. *NeurIPS 2020*.
+    15. Lomonaco, V., et al. (2021). Avalanche: an end-to-end library for continual learning. *CVPR Workshop on Continual Learning*.
+    16. van de Ven, G.M. & Tolias, A.S. (2019). Three scenarios for continual learning. *NeurIPS Workshop on Continual Learning*.
+    17. Wang, L., et al. (2023). A comprehensive survey of continual learning: Theory, method and application. *arXiv:2302.00487*; IEEE TPAMI 2024.
+    18. Dohare, S., Hernandez-Garcia, J.F., et al. (2024). Loss of plasticity in deep continual learning. *Nature*, 632, 768-774. https://doi.org/10.1038/s41586-024-07711-7
+    19. Wang, Z., et al. (2025). Continual learning of large language models: A comprehensive survey. *ACM Computing Surveys*. https://doi.org/10.1145/3735633
+    20. He, X., et al. (2023). Continual instruction tuning for large language models. *arXiv:2308.14152*.
+    21. Liang, Z., et al. (2024). Slowing down forgetting in continual learning. *arXiv:2411.06916*.
+    22. Nikishin, E., et al. (2022). The primacy bias in deep reinforcement learning. *ICML 2022*.
+    23. Shi, G., et al. (2024). Continual learning in vision-language models via dynamic LoRA. *arXiv:2506.03189*.
+    24. Aslam, S., et al. (2025). Continual learning inspired by brain functionality: A comprehensive survey. *International Journal of Intelligent Systems*. https://doi.org/10.1155/int/3145236
+    25. Gu, X., et al. (2024). Few-shot continual learning for 3D brain MRI with frozen foundation models. *arXiv:2602.23533*.
+    26. Qin, Y., et al. (2025). MSSR: Memory-aware adaptive replay for continual LLM fine-tuning. *arXiv:2603.09892*.
+    27. Continual Learning for Acoustic Event Classification. (2025). *arXiv:2512.17932*.
+    28. "Spurious Forgetting in Continual Learning of Language Models." (2025). *arXiv:2501.13453*. https://arxiv.org/pdf/2501.13453
+
+- ### Provenance
+  - sources:: Kirkpatrick et al. 2017 (EWC/PNAS), Rebuffi et al. 2017 (iCaRL), van de Ven & Tolias 2019 (benchmark taxonomy), Lomonaco et al. 2021 (Avalanche), Dohare et al. 2024 (Nature plasticity), Wang et al. 2025 (ACM CSUR LLM-CL survey), Wang et al. 2023/2024 (IEEE TPAMI comprehensive survey), arXiv:2302.00487, arXiv:2504.01241, arXiv:2501.13453, arXiv:2505.09486, arXiv:2602.11655, arXiv:2602.08040, https://arxiv.org/pdf/2601.18699v1, https://openreview.net/forum?id=ZKkeA1G935, https://www.sciencedirect.com/science/article/abs/pii/S0957417425028945, ContinualAI community (avalanche.continualai.org)
+  - migration-date:: 2026-06-21T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

@@ -1,0 +1,152 @@
+public:: true
+
+# Autonomous Manipulation
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:autonomous-manipulation",
+  "@type": "Page",
+  "title": "Autonomous Manipulation",
+  "vc:slug": "autonomous-manipulation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:autonomous-manipulation",
+  "@type": "Class",
+  "label": "Autonomous Manipulation",
+  "definition": "Autonomous manipulation is the capability of a robot to perceive, plan and physically interact with objects to achieve a task goal without step-by-step human teleoperation. It integrates perception, grasp and motion planning, force control and feedback to handle uncertainty in object pose, shape and contact dynamics. The aim is robust, closed-loop interaction in unstructured environments rather than the repetition of pre-programmed trajectories.",
+  "domain": "robotics",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotic-manipulation",
+      "label": "Robotic Manipulation"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:pick-and-place",
+        "label": "Pick And Place"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:pick-and-place",
+        "label": "Pick And Place"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      }
+    ]
+  },
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
+- ### Definition
+  - Autonomous manipulation is the capability of a robot to perceive, plan and physically interact with objects to achieve a task goal without step-by-step human teleoperation. It integrates perception, grasp and motion planning, force control and feedback to handle uncertainty in object pose, shape and contact dynamics. The aim is robust, closed-loop interaction in unstructured environments rather than the repetition of pre-programmed trajectories.
+  - Related core concepts: [[Robotic Manipulation]], [[Motion Planning]], [[Robot Perception]], [[Dexterous Manipulation]].
+- ### Overview
+  - Autonomous manipulation closes the loop between seeing and doing: the robot must locate objects, decide where and how to make contact, plan collision-free motion, and adapt as forces and slippage reveal that the world differs from its model. Achieving this in cluttered, variable settings is markedly harder than executing fixed trajectories on a structured production line.
+  - It is modelled as a subclass of [[Robotic Manipulation]] within the robotics domain.
+  - The hardest part of autonomous manipulation is contact: the moment a gripper touches an object, the dynamics become discontinuous and highly sensitive to small errors in pose, friction and compliance. Robust systems therefore combine geometric planning with reactive force and tactile control that adapts the plan as contact reveals the true state of the world.
+  - Learning has reshaped the field by allowing manipulation skills to generalise across objects and configurations that were never explicitly programmed. Imitation from demonstrations bootstraps reasonable behaviour, while reinforcement learning and large-scale data collection refine policies that cope with the variability of unstructured environments.
+- ### Mechanisms
+  - Perception-driven grasping: object detection and pose estimation produce candidate grasps ranked by stability.
+  - Motion and grasp planning: collision-free trajectories are computed to reach, grasp and place objects.
+  - Force and tactile feedback: contact sensing enables compliant, slip-aware regrasping and insertion.
+  - Learning policies: imitation and reinforcement learning generalise manipulation skills across objects and scenes.
+- ### Applications
+  - Warehouse picking, sorting and order fulfilment.
+  - Assembly, insertion and tool use in manufacturing.
+  - Domestic and assistive tasks performed by humanoid and mobile manipulators.
+- ### Considerations
+  - Sim-to-real transfer is a recurring challenge because contact-rich dynamics are difficult to simulate faithfully.
+  - Perception failures, such as misestimated object pose, propagate directly into grasp failure, so closed-loop correction is critical.
+  - Safety around humans and fragile objects constrains permissible forces and demands compliant, monitored control.
+- ### Relationships
+  - subClassOf:: [[Robotic Manipulation]]
+  - enables:: [[Humanoid Robotics]]
+  - enables:: [[Pick And Place]]
+  - partOf:: [[Robotic Manipulation]]
+  - requires:: [[Motion Planning]]
+  - requires:: [[Robot Perception]]
+  - uses:: [[Dexterous Manipulation]]
+  - uses:: [[Robot Control]]
+  - dependsOn:: [[Robot Perception]]
+  - dependsOn:: [[Feedback Control]]
+  - supports:: [[Pick And Place]]
+  - implements:: [[Motion Planning]]
+  - relatedTo:: [[Robotic Manipulation]]
+  - relatedTo:: [[Dexterous Manipulation]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

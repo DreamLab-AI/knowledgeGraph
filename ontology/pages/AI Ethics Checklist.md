@@ -1,0 +1,769 @@
+public:: true
+
+# AI Ethics Checklist
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d7fe99457fbbe29902c2831968b7f2a955f3397b8f0eb7181e45439bca52239f",
+  "@type": "Page",
+  "vc:slug": "ai-ethics-checklist",
+  "title": "AI Ethics Checklist",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:accountability-framework",
+      "vc:label": "Accountability Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-system-documentation",
+      "vc:label": "AI System Documentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:assessment-methodology",
+      "vc:label": "Assessment Methodology"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-detection-protocol",
+      "vc:label": "Bias Detection Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethical-ai-deployment",
+      "vc:label": "Ethical AI Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethical-guidelines",
+      "vc:label": "Ethical Guidelines"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness-assessment-criteria",
+      "vc:label": "Fairness Assessment Criteria"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-7000",
+      "vc:label": "IEEE 7000"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-7000-standard",
+      "vc:label": "IEEE 7000 Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd-ai-principles",
+      "vc:label": "OECD AI Principles"
+    },
+    {
+      "@id": "urn:visionflow:linked:stakeholder-trust",
+      "vc:label": "Stakeholder Trust"
+    },
+    {
+      "@id": "urn:visionflow:linked:unesco-ai-ethics-recommendations",
+      "vc:label": "UNESCO AI Ethics Recommendations"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance-framework",
+      "vc:label": "AI Governance Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compliance-verification",
+      "vc:label": "Compliance Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "MiddlewareLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-assessment",
+      "vc:label": "Risk Assessment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparency-metrics",
+      "vc:label": "Transparency Metrics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
+      "vc:label": "TrustAndGovernanceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001",
+      "vc:label": "ISO/IEC 42001"
+    },
+    {
+      "@id": "urn:visionflow:linked:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-card",
+      "vc:label": "Model Card"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainability",
+      "vc:label": "Explainability"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-by-design",
+      "vc:label": "Privacy by Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-transparency-index",
+      "vc:label": "Algorithmic Transparency Index"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-energy-optimisation",
+      "vc:label": "AI Energy Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:fundamental-rights-impact-assessment",
+      "vc:label": "Fundamental Rights Impact Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:conformity-assessment",
+      "vc:label": "Conformity Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-incident-reporting",
+      "vc:label": "AI Incident Reporting"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-impact-assessment",
+      "vc:label": "Algorithmic Impact Assessment"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20220"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Ethics Checklist"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-ethics-checklist",
+  "@type": "Class",
+  "label": "AI Ethics Checklist",
+  "definition": "Structured verification process evaluating fairness, accountability, transparency, and ethical compliance of AI systems against established governance frameworks including IEEE 7000, OECD AI Principles, UNESCO AI Ethics Recommendations, the EU AI Act, NIST AI RMF, and ISO/IEC 42001.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
+      "@id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:accountability-framework",
+        "label": "Accountability Framework"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-assessment",
+        "label": "Fairness Assessment Criteria"
+      },
+      {
+        "@id": "urn:ngm:class:transparency-metrics",
+        "label": "Transparency Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:fundamental-rights-impact-assessment",
+        "label": "Fundamental Rights Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ai-documentation-standards",
+        "label": "AI System Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-framework",
+        "label": "Ethical Guidelines"
+      },
+      {
+        "@id": "urn:ngm:class:assessment-methodology",
+        "label": "Assessment Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ethical-ai",
+        "label": "Ethical AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ieee-7000",
+        "label": "IEEE 7000 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      }
+    ]
+  },
+  "quality": 0.88,
+  "provenance": {
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "inferenceRule": "OntologyEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-ethics-checklist:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:d7fe99457fbbe29902c2831968b7f2a955f3397b8f0eb7181e45439bca52239f"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Accountability Framework]]",
+      "resolved": "urn:visionflow:linked:accountability-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI System Documentation]]",
+      "resolved": "urn:visionflow:linked:ai-system-documentation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Assessment Methodology]]",
+      "resolved": "urn:visionflow:linked:assessment-methodology",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Bias Detection Protocol]]",
+      "resolved": "urn:visionflow:linked:bias-detection-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ethical AI Deployment]]",
+      "resolved": "urn:visionflow:linked:ethical-ai-deployment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Ethical Guidelines]]",
+      "resolved": "urn:visionflow:linked:ethical-guidelines",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fairness Assessment Criteria]]",
+      "resolved": "urn:visionflow:linked:fairness-assessment-criteria",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE 7000]]",
+      "resolved": "urn:visionflow:linked:ieee-7000",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IEEE 7000 Standard]]",
+      "resolved": "urn:visionflow:linked:ieee-7000-standard",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[OECD AI Principles]]",
+      "resolved": "urn:visionflow:linked:oecd-ai-principles",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Stakeholder Trust]]",
+      "resolved": "urn:visionflow:linked:stakeholder-trust",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UNESCO AI Ethics Recommendations]]",
+      "resolved": "urn:visionflow:linked:unesco-ai-ethics-recommendations",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Agent System]]",
+      "resolved": "urn:visionflow:owl:class:ai-agent-system",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Governance Framework]]",
+      "resolved": "urn:visionflow:owl:class:ai-governance-framework",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Compliance Verification]]",
+      "resolved": "urn:visionflow:owl:class:compliance-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act Regulatory Instrument]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[MiddlewareLayer]]",
+      "resolved": "urn:visionflow:owl:class:middleware-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Risk Assessment]]",
+      "resolved": "urn:visionflow:owl:class:risk-assessment",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transparency Metrics]]",
+      "resolved": "urn:visionflow:owl:class:transparency-metrics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[TrustAndGovernanceDomain]]",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[NIST AI RMF]]",
+      "resolved": "urn:visionflow:linked:nist-ai-rmf",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ISO/IEC 42001]]",
+      "resolved": "urn:visionflow:linked:iso-iec-42001",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Responsible AI]]",
+      "resolved": "urn:visionflow:linked:responsible-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Model Card]]",
+      "resolved": "urn:visionflow:linked:model-card",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Explainability]]",
+      "resolved": "urn:visionflow:linked:explainability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Data Governance]]",
+      "resolved": "urn:visionflow:linked:data-governance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Human Oversight]]",
+      "resolved": "urn:visionflow:linked:human-oversight",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Privacy by Design]]",
+      "resolved": "urn:visionflow:linked:privacy-by-design",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Algorithmic Transparency Index]]",
+      "resolved": "urn:visionflow:linked:algorithmic-transparency-index",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Energy Optimisation]]",
+      "resolved": "urn:visionflow:linked:ai-energy-optimisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Fundamental Rights Impact Assessment]]",
+      "resolved": "urn:visionflow:linked:fundamental-rights-impact-assessment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Conformity Assessment]]",
+      "resolved": "urn:visionflow:linked:conformity-assessment",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[AI Incident Reporting]]",
+      "resolved": "urn:visionflow:linked:ai-incident-reporting",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Algorithmic Impact Assessment]]",
+      "resolved": "urn:visionflow:linked:algorithmic-impact-assessment",
+      "kind": "StubLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:enrichment-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-06-20T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - An AI Ethics Checklist is a structured verification artefact and executable process used to systematically evaluate whether an [[Artificial Intelligence]] system — at any stage of its lifecycle from design through decommissioning — satisfies the ethical, legal, and operational obligations codified in established governance frameworks such as the [[IEEE 7000 Standard]], [[OECD AI Principles]], [[UNESCO AI Ethics Recommendations]], the EU AI Act Regulatory Instrument, [[NIST AI RMF]], and [[ISO/IEC 42001]]. Operating as a component of the broader [[AI Governance Framework]], the checklist operationalises abstract ethical principles — fairness, accountability, transparency, explainability, safety, privacy, and human dignity — into concrete, auditable verification tasks that assessors can execute against a specific AI system. It has four structural components: a [[Fairness Assessment Criteria]] module evaluating disparate impact, demographic parity, equalised odds, and individual fairness properties across protected characteristic groups; an [[Accountability Framework]] module tracing decision pathways, logging mechanisms, and human override protocols; a [[Transparency Metrics]] module verifying [[Explainability]] of predictions, model disclosure through [[Model Card]] or datasheet artefacts, and algorithmic disclosure under the [[Algorithmic Transparency Index]]; and a [[Bias Detection Protocol]] module applying quantitative bias auditing tools (AI Fairness 360, Fairlearn, Aequitas) and qualitative stakeholder review processes. The checklist requires as preconditions comprehensive [[AI System Documentation]], defined [[Ethical Guidelines]], an established [[Assessment Methodology]], and sound [[Data Governance]] over training, validation, and deployment data. It enables [[Compliance Verification]] against applicable regulations, systematic [[Risk Assessment]] against identified harms, [[Ethical AI Deployment]] practices, and the accumulation of [[Stakeholder Trust]] through demonstrated accountability. As of 2026, the EU AI Act's high-risk AI obligations (shifted to December 2027 under the May 2026 Digital Omnibus agreement) require AI ethics checklist procedures to be formally documented, third-party audited, and registered in the EU AI database for systems in regulated domains including health, education, employment, critical infrastructure, law enforcement, and border management.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:AIEthicsChecklist
+  - owl-role:: Process | ExecutableProtocol
+  - owl-inferred:: mv:VirtualProcess, ai:GovernanceInstrument, ai:AuditArtefact
+  - belongs-to-domain:: [[TrustAndGovernanceDomain]]
+  - implemented-in-layer:: [[MiddlewareLayer]]
+
+- ### Relationships
+  - is-subclass-of:: [[AI Governance Framework]], [[TrustAndGovernanceDomain]], [[Responsible AI]]
+  - has-part:: [[Fairness Assessment Criteria]], [[Accountability Framework]], [[Transparency Metrics]], [[Bias Detection Protocol]], [[Fundamental Rights Impact Assessment]], [[Conformity Assessment]], [[AI Incident Reporting]], [[Model Card]], [[Human Oversight]], [[Algorithmic Impact Assessment]]
+  - is-part-of:: [[AI Governance Framework]]
+  - requires:: [[AI System Documentation]], [[Ethical Guidelines]], [[Assessment Methodology]], [[Data Governance]], [[Human Oversight]], [[Privacy by Design]], [[Explainability]]
+  - enables:: [[Ethical AI Deployment]], [[Compliance Verification]], [[Risk Assessment]], [[Stakeholder Trust]], [[Responsible AI]], [[Algorithmic Impact Assessment]], [[Algorithmic Transparency Index]], [[AI Incident Reporting]]
+  - implements:: [[OECD AI Principles]], [[IEEE 7000 Standard]], [[UNESCO AI Ethics Recommendations]], [[NIST AI RMF]], [[ISO/IEC 42001]]
+  - depends-on:: [[IEEE 7000 Standard]], [[OECD AI Principles]], [[EU AI Act Regulatory Instrument]], [[NIST AI RMF]], [[ISO/IEC 42001]], [[UNESCO AI Ethics Recommendations]]
+  - supports:: [[Algorithmic Transparency Index]], [[Model Card]], [[Privacy by Design]], [[AI Incident Reporting]], [[Stakeholder Trust]], [[AI Governance Framework]]
+  - uses:: [[Explainability]], [[Transparency Metrics]], [[Bias Detection Protocol]], [[Algorithmic Transparency Index]], [[Risk Assessment]], [[Assessment Methodology]]
+  - contrasts-with:: [[AI Agent System]]
+  - related-to:: [[AI Energy Optimisation]], [[Human Oversight]], [[Algorithmic Impact Assessment]], [[Fundamental Rights Impact Assessment]], [[Data Governance]], [[Responsible AI]]
+  - bridges-to:: [[AI Agent System]], [[Compliance Verification]]
+  - standardized-by:: [[IEEE 7000]], [[OECD AI Principles]], [[UNESCO AI Ethics Recommendations]], [[ISO/IEC 42001]], [[NIST AI RMF]]
+
+- ### Content
+  ## Compositional Relationships (Components)
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:hasPart ai:FairnessAssessmentCriteria))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:hasPart ai:AccountabilityFramework))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:hasPart ai:TransparencyMetrics))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:hasPart ai:BiasDetectionProtocol))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:hasPart ai:FundamentalRightsImpactAssessment))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:hasPart ai:ConformityAssessment))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:hasPart ai:AIIncidentReporting))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:hasPart ai:ModelCard))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:hasPart ai:AlgorithmicImpactAssessment))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:hasPart ai:HumanOversightMechanism))
+  ## Dependency Relationships
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:requires ai:AISystemDocumentation))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:requires ai:EthicalGuidelines))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:requires ai:AssessmentMethodology))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:requires ai:DataGovernance))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:dependsOn ai:IEEE7000Standard))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:dependsOn ai:OECDAIPrinciples))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:dependsOn ai:EUAIActRegulatoryInstrument))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:dependsOn ai:NISTAIRMF))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:dependsOn ai:ISOIEC42001))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:requires ai:PrivacyByDesign))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:requires ai:HumanOversight))
+  ## Capability Relationships
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:enables ai:EthicalAIDeployment))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:enables ai:ComplianceVerification))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:enables ai:RiskAssessment))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:enables ai:StakeholderTrust))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:supports ai:AlgorithmicTransparencyIndex))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:enables ai:AlgorithmicImpactAssessment))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:supports ai:AIIncidentReporting))
+  ## Implementation Relationships
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:implements ai:OECDAIPrinciples))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:implements ai:IEEE7000Standard))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:implements ai:UNESCOAIEthicsRecommendations))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:implements ai:NISTAIRMF))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:implements ai:ISOIEC42001))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:uses ai:Explainability))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:uses ai:BiasDetectionProtocol))
+  ## Reduction Relationships
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:reducesTo ai:GovernanceAuditArtefact))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:reducesTo ai:AlgorithmicImpactAssessment))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:reducesTo ai:FundamentalRightsImpactAssessment))
+      SubClassOf(ai:AIEthicsChecklist
+        ObjectSomeValuesFrom(ai:reducesTo ai:ConformityAssessment))
+
+  ## About
+
+  An AI Ethics Checklist is the operational translation of abstract ethical principles into a concrete, repeatable, and auditable verification protocol. Where frameworks such as the [[OECD AI Principles]], [[UNESCO AI Ethics Recommendations]], and [[IEEE 7000 Standard]] establish the normative content of responsible AI — articulating what values AI systems should embody — the AI Ethics Checklist provides the "how": a structured set of questions, tests, evidence requirements, and pass/fail criteria that practitioners can apply to a specific AI system at a specified lifecycle stage to determine whether it meets those normative requirements. The checklist does not replace ethical judgement; rather, it externalises and systematises the judgement process, making it reproducible, delegatable, and defensible under audit. This structural function — bridging principle and practice — makes the AI Ethics Checklist a central artefact in the [[AI Governance Framework]]: it is the mechanism by which governance obligations are discharged at the level of individual systems and individual deployment decisions, rather than remaining at the level of organisational policy or regulatory framework.
+
+  The intellectual genealogy of AI ethics checklisting draws on multiple traditions. The first is professional ethics checklist practice from aviation and medicine: Atul Gawande's "The Checklist Manifesto" (2009) demonstrated that structured checklists dramatically reduced error rates in high-stakes procedural contexts, establishing the cognitive rationale for externalising complex multi-step assessments into structured artefacts. The second is the software quality assurance tradition — IEEE 730 standard for software quality assurance plans, ISO/IEC 25010 for software quality characteristics, and the OWASP security checklists — which established that technical artefacts can be systematically assessed against structured criteria. The third is biomedical ethics review practice: Institutional Review Board (IRB) procedures for human subjects research have applied structured ethical review to research protocols for over fifty years, providing a procedural template that AI ethics review has extensively borrowed from. The synthesis of these traditions, applied to AI systems rather than medical procedures, aviation operations, or software quality, constitutes the distinctive field of AI ethics checklist practice.
+
+  The landscape of normative frameworks that AI Ethics Checklists must operationalise has grown substantially since 2020. The EU AI Act, which entered force in August 2024 with phased obligations through 2027, constitutes the most consequential regulatory development: it establishes risk tiers (unacceptable, high-risk, limited-risk, minimal-risk) with corresponding obligations that map directly to checklist domains. The classification of an AI system as "unacceptable risk" (Article 5), "high-risk" (Annexes II and III), "limited risk" (Articles 50–52), or "minimal risk" (remainder) determines which checklist modules are mandatory versus advisory. Unacceptable-risk systems — including social scoring, subliminal manipulation, exploitation of vulnerable groups, untargeted scraping for facial recognition databases, emotion recognition in workplace or education settings, and most biometric categorisation — are prohibited outright. High-risk AI systems — including those used in employment screening, education access decisions, critical infrastructure operation, healthcare diagnosis and treatment support, law enforcement pre-crime assessment, migration and asylum processing, and administration of justice — must satisfy extensive obligations including a risk management system conformant with ISO 31000, technical documentation according to Annex IV, data governance conformant with Article 10, [[Human Oversight]] mechanisms (Articles 14–15), accuracy, robustness and cybersecurity properties (Article 15), and [[Conformity Assessment]] before market entry. The May 2026 Digital Omnibus deal shifted the full high-risk obligation deadline from August 2026 to December 2027, allowing additional preparation time — but Article 5 prohibitions (unacceptable risk uses) have applied since February 2025, GPAI obligations (transparency, copyright, systemic risk reporting for frontier models) since August 2025, and conformity assessment bodies are being designated in 2026. Violations of Article 5 prohibited uses attract fines up to EUR 35 million or 7% of global annual turnover; high-risk violations attract up to EUR 15 million or 3% of global turnover.
+
+  Parallel to EU regulatory development, the US NIST AI Risk Management Framework (AI RMF 1.0, January 2023) provides a complementary voluntary structure organised around four functional components: Govern (establish accountability, policies, and culture), Map (identify risks and categorise systems), Measure (assess and quantify risks), and Manage (prioritise and implement risk controls). NIST AI RMF was developed through extensive multi-stakeholder consultation and is widely adopted in the US federal government and financial services sector. Its GenAI RMF Profile (March 2024) extends the framework to cover generative AI-specific risks including hallucination, synthetic content, homogenisation, and data privacy in fine-tuning. The ISO/IEC 42001:2023 standard provides the first internationally certifiable AI management system standard, structuring requirements analogous to ISO 27001 for information security but applied to AI governance — covering organisational context and scope, leadership accountability, planning (risk and opportunity assessment, objectives and policies), support (resource allocation, competence, documentation), operation (system lifecycle management), performance evaluation (monitoring, measurement, internal audit), and improvement (corrective action, continual improvement). Practitioners increasingly use ethics checklists to simultaneously satisfy obligations under all three frameworks, exploiting their substantial structural overlap: both NIST AI RMF and ISO/IEC 42001 require AI system inventory documentation (corresponding to EU AI Act Article 11 technical documentation), risk assessment procedures (corresponding to FRIA obligations), and ongoing monitoring (corresponding to EU AI Act Article 72 post-market monitoring obligations). The EU AI Act compliance checklist resources publicly available as of 2026 include a comprehensive 58-point checklist, risk classification matrices, and Fundamental Rights Impact Assessment (FRIA) templates with worked examples for multiple high-risk domains. Microsoft's agent governance toolkit (published 2025) provides a runtime governance framework for [[AI Agent System]] architectures specifically, covering policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering as structured checklist domains for agentic AI deployment — a significant advance given the relative novelty of agentic deployment patterns and the absence of established checklist frameworks for multi-step autonomous AI systems.
+
+  ## Components / Architecture
+
+  **Fairness Assessment Module:**
+  - [[Fairness Assessment Criteria]] specifying measurable fairness metrics: demographic parity (equal positive prediction rates across groups), equalised odds (equal true-positive and false-positive rates), individual fairness (similar individuals receive similar predictions), and counterfactual fairness (outcomes are unchanged under counterfactual identity change).
+  - Quantitative bias measurement using open-source toolkits: IBM AI Fairness 360 (AIF360) provides 70+ fairness metrics and 11 bias mitigation algorithms; Microsoft Fairlearn provides constraint-based in-processing mitigation; Aequitas (University of Chicago CDSP) generates bias audit reports for binary classification; Microsoft DoWhy addresses causal bias identification.
+  - Subgroup performance analysis requiring performance metrics (precision, recall, F1, AUC-ROC) to be reported broken down by each protected characteristic group present in training and deployment populations.
+
+  **Accountability Framework Module:**
+  - [[Accountability Framework]] specifying decision traceability: audit logs with human-readable explanations for consequential decisions, operator and deployer responsibilities documented, post-market monitoring obligations assigned, escalation procedures for contested decisions defined.
+  - [[Human Oversight]] mechanisms: requirements for human-in-the-loop decision authority thresholds, override capability, and duty-to-notify obligations for affected persons.
+  - [[AI Incident Reporting]] procedures: mandatory incident logging, root-cause analysis requirements, and notification timelines for serious incidents as required under EU AI Act Article 73.
+
+  **Transparency and Explainability Module:**
+  - [[Transparency Metrics]] evaluating the degree to which system behaviour is understandable to relevant stakeholders: technical transparency (access to model architecture, training data provenance, performance metrics); operational transparency (how the system will be used and by whom); and disclosure transparency (notification to individuals when consequential AI decisions are made about them).
+  - [[Model Card]] and datasheet documentation: structured artefacts covering intended use, out-of-scope uses, metrics, evaluation data, caveats, and bias/risks sections. As of 2025, the share of model cards including ethical considerations has fallen from approximately 18% in 2022 to 10%, indicating industry-wide implementation gap.
+  - [[Explainability]] methods: local explanation (LIME, SHAP) requirements for individual decisions; global explanation (feature importance, partial dependence plots) requirements for system-level understanding; counterfactual explanation availability for affected persons.
+  - [[Algorithmic Transparency Index]] submission for UK public sector systems under the UK government's Algorithmic Transparency Reporting Standard.
+
+  **Bias Detection and Data Governance Module:**
+  - [[Bias Detection Protocol]] covering four audit stages: (a) training data audit — assessing source provenance, collection consent adequacy, representational completeness across all demographic groups present in the deployment population (with specific attention to underrepresented intersectional subgroups that may be absent from training data); (b) labelling quality audit — measuring inter-rater reliability (Cohen's kappa, Krippendorff's alpha) for human-annotated labels, assessing annotator demographic diversity and annotation brief quality, and reviewing annotation guidelines for implicit biases in task framing; (c) model evaluation audit — verifying test set stratification by relevant demographic variables, conducting intersectional subgroup performance analysis across all combinations of protected characteristics relevant to the use case, and computing multiple fairness metrics (not merely overall accuracy) on the stratified test sets; (d) deployment monitoring audit — implementing real-time distribution shift detection using population stability indices (PSI) for input feature distributions, ongoing disaggregated performance monitoring against the same fairness metrics computed at evaluation time, and alerting protocols that trigger human review when drift or fairness metric degradation exceeds configured thresholds.
+  - [[Data Governance]] requirements underpinning the bias detection module include: data lineage documentation enabling tracing of all training, validation, and test data to source; data retention schedules compliant with GDPR and UK GDPR storage limitation obligations; consent records where personal data was used in training; data minimisation verification that no personally identifying information unnecessary for the task was included in training data; cross-border transfer compliance records for data sourced from or processed in multiple jurisdictions; and demographic data handling policies specifying when and how sensitive characteristics may be processed for fairness evaluation purposes (noting that Article 9 GDPR and Article 9 UK GDPR special category obligations apply to demographic data used in bias auditing).
+  - [[Privacy by Design]] verification ensures that privacy-protective mechanisms are embedded in the system architecture rather than added as afterthoughts: differential privacy implementation (where ε-DP or (ε,δ)-DP guarantees are appropriate for the data sensitivity and query volume) with privacy budget accounting; data anonymisation adequacy assessment against the ICO's Anonymisation Code of Practice; re-identification risk evaluation using k-anonymity, l-diversity, and t-closeness metrics for any aggregated outputs or statistical disclosures; and federated or on-device processing verification where centralised processing of sensitive data is architecturally avoidable.
+
+  **Risk Assessment Module:**
+  - [[Risk Assessment]] and [[Fundamental Rights Impact Assessment]] (FRIA): systematic identification of potential harms to individuals and groups, probability and severity estimation, risk mitigation measure definition, residual risk acceptance by responsible officer.
+  - [[Algorithmic Impact Assessment]] (AIA): for high-impact public-sector deployments, an AIA extends the FRIA to include broader societal impacts, democratic processes, and systemic effects.
+  - [[Conformity Assessment]]: for high-risk EU AI Act systems, third-party conformity assessment against harmonised standards; internal conformity assessment where permitted; registration in EU AI database.
+
+  ## Use Cases / Major Families
+
+  **Pre-Deployment Validation and Release Gates:** AI product teams apply ethics checklists as formal release gates before system launch, analogous to quality assurance gating in software development. In this use case, the checklist is integrated into the CI/CD pipeline or product development lifecycle, with mandatory sign-off from a responsible AI team, data protection officer (DPO), and — for high-risk domains — legal counsel before deployment approval is granted. Microsoft's Responsible AI Impact Assessment process, Google's model deployment review, and Amazon's Responsible AI practices all implement variants of this gate structure. For [[AI Agent System]] architectures, Microsoft's agent governance toolkit provides checklist domains specifically addressing policy enforcement, zero-trust identity (ensuring agent actions are authenticated and logged), execution sandboxing (limiting the blast radius of agent errors), and reliability engineering (circuit breakers, fallback chains, human escalation paths).
+
+  **Procurement and Vendor Due Diligence:** Public sector and large enterprise procurement teams use ethics checklists as mandatory supplier qualification criteria, requiring AI vendors to complete supplier ethics questionnaires that mirror the checklist structure. The EU AI Act's supply chain transparency obligations (Article 25 for deployers; Articles 52–53 for providers) create legal requirements for checklist completion and documentation retention throughout the supply chain. The UK Cabinet Office's Model Services Contract and AI Procurement Framework include ethical AI requirements that effectively mandate checklist-equivalent assessments for government AI contracts above threshold values. The UK government's Algorithmic Transparency Reporting Standard requires public sector bodies to submit structured transparency reports when deploying algorithmic tools in consequential decision-making — these reports contain elements corresponding directly to the [[Transparency Metrics]] and [[Algorithmic Transparency Index]] modules of a comprehensive ethics checklist.
+
+  **Continuous Compliance Monitoring (Post-Market):** The EU AI Act Article 72 post-market monitoring obligations require providers of high-risk AI systems to implement systematic processes for collecting, reviewing, and acting on information about system performance in deployment — including performance against the accuracy and robustness specifications established in the pre-deployment [[Conformity Assessment]], adverse incident rates, and user complaint processing. In practice, organisations subject to these obligations implement continuous ethics checklists as part of their MLOps pipelines: automated monitoring dashboards track [[Fairness Assessment Criteria]] metrics disaggregated by demographic group, detecting distributional shift that may cause previously fair models to exhibit disparate impact post-deployment. Alert thresholds trigger human review and potential re-assessment against the full checklist when monitored metrics breach acceptable bounds. [[AI Incident Reporting]] obligations require that serious incidents (including incidents resulting in death, serious injury, or significant disruption to critical infrastructure) be notified to the relevant national supervisory authority within 15 days.
+
+  **Research Ethics Review:** Academic institutions applying for IRB or ethics review board approval for AI research apply structured ethics review processes covering: (i) consent and data handling for human subjects data used in training or evaluation; (ii) fairness and bias assessment when the research involves demographic data or applications with differential impacts across population groups; (iii) dual-use risk assessment for AI systems that could be repurposed for harmful applications (generative content, surveillance, manipulation); and (iv) [[Privacy by Design]] verification for systems involving personal data. UK Research Councils — specifically EPSRC and ESRC — mandate ethics review forms for AI research projects that substantially overlap with AI ethics checklist content, and the UK's Research Integrity Framework requires institutions to maintain evidence of ethics review completion for funded research. UK universities (Edinburgh, Imperial, UCL, Cambridge, Oxford, Manchester, Leeds, Sheffield) have institutionalised AI ethics review boards that evaluate AI research proposals against structured criteria analogous to the [[AI Ethics Checklist]] framework.
+
+  **Audit and Third-Party Certification:** Third-party AI auditors — including the Big Four accountancy firms (KPMG, Deloitte, PwC, EY, all of which have established AI assurance practices since 2023–2024) and specialist AI audit firms (Element AI's audit practice, Eticas, Certified AI) — use structured checklists as the operational basis for ISO/IEC 42001 certification audits, NIST AI RMF maturity assessments, and bespoke regulatory compliance audits. The audit methodology typically proceeds in four phases: documentation review (verifying completeness of [[AI System Documentation]], [[Model Card]] artefacts, training data provenance records); technical testing (independent bias measurement using AIF360 or Fairlearn on held-out test sets stratified by protected characteristics, adversarial robustness evaluation, performance degradation testing); process audit (reviewing governance procedures, sign-off trails, incident logging, and human override evidence); and reporting (producing an audit report with findings mapped to the checklist and regulatory framework, distinguishing major non-conformances, minor non-conformances, and observations). UKAS (UK Accreditation Service) is developing accreditation criteria for AI audit body designation in line with ISO/IEC 17065 conformity assessment body requirements.
+
+  **Fundamental Rights Impact Assessment (FRIA):** For EU-deployed high-risk AI systems operated by public bodies or private operators deploying AI affecting fundamental rights, the EU AI Act requires a FRIA in addition to the standard technical conformity assessment. The FRIA, analogous to a Data Protection Impact Assessment (DPIA) under GDPR, involves: mapping affected fundamental rights against the EU Charter of Fundamental Rights (human dignity, freedom of expression, non-discrimination, data protection, access to justice, presumption of innocence); assessing the likelihood and severity of impact on each right; identifying mitigating measures; and obtaining sign-off from an accountable senior officer. The FRIA is a structured component of the [[Fundamental Rights Impact Assessment]] module of the AI Ethics Checklist and must be made available to the relevant supervisory authority on request. As of 2026, organisations in France, Germany, and the Netherlands have completed FRIAs for high-risk AI systems in social services, criminal justice, and employment screening; UK organisations are preparing equivalent assessments in anticipation of potential future UK statutory obligations.
+
+  ## Academic Context
+
+  The formal study of AI ethics operationalisation emerged from the convergence of AI safety research, fairness-in-machine-learning scholarship, and organisational ethics frameworks during the 2015–2020 period. Three distinct academic traditions have contributed most substantively to the current state of AI Ethics Checklist practice.
+
+  The fairness-in-machine-learning literature — emerging from computer science and statistics — developed the quantitative foundations for [[Fairness Assessment Criteria]] modules. Hardt, Price & Srebro (2016) formalised equalised odds and equal opportunity fairness criteria, showing that these are incompatible with one another except in degenerate cases (the "impossibility of fairness" results), which has direct implications for checklist design: checklists must specify which fairness criterion is appropriate for each deployment context rather than asserting universal applicability. Chouldechova (2017) demonstrated this impossibility empirically in the COMPAS recidivism prediction system, showing that satisfying calibration fairness implies violating equalised odds when base rates differ across demographic groups — a finding that influenced subsequent policy debates about algorithmic fairness requirements in criminal justice. Mehrabi et al. (2021) published a comprehensive survey of bias sources and fairness definitions, providing the taxonomic structure that most modern [[Bias Detection Protocol]] modules reference. Bellamy et al. (2019) described the IBM AI Fairness 360 toolkit, which operationalised 70+ fairness metrics and 11 mitigation algorithms in a unified Python library, enabling practitioners to conduct fairness assessments that were previously only accessible to expert statisticians.
+
+  The AI ethics governance literature — emerging from philosophy, law, and science and technology studies — provided the normative frameworks that checklists operationalise. Jobin, Ienca & Vayena (2019) published the most cited systematic review of AI ethics guidelines, analysing 84 documents from 34 countries and identifying eleven convergent principles: transparency, justice and fairness, non-maleficence, responsibility, privacy, beneficence, freedom and autonomy, trust, sustainability, dignity, and solidarity. Strikingly, only five of these — transparency, justice/fairness, non-maleficence, responsibility, and privacy — appeared in more than 50% of surveyed documents, with remaining principles representing regional or cultural variations. This finding provided empirical grounding for the common structure of AI ethics checklists across jurisdictions. Floridi et al. (2018, 2020), writing from the Oxford Internet Institute and the AI4People initiative, formalised the FATE (Fairness, Accountability, Transparency, and Ethics) framework, proposing that these four properties constitute the necessary and sufficient conditions for AI systems to be beneficial — a framing that directly influenced the EU AI Act's structural approach and is widely used as the organising schema for checklist modules. Selbst et al. (2019), in "Fairness and Abstraction in Sociotechnical Systems" (FAccT 2019), identified five "traps" in fairness checklist practice — the framing trap, portability trap, formalism trap, ripple effect trap, and solutionism trap — collectively demonstrating that technically-framed fairness assessments systematically miss the sociotechnical context in which harm occurs, establishing the case for mixed-methods approaches that combine quantitative metric assessment with qualitative stakeholder engagement and contextual analysis.
+
+  The AI governance and standards literature — emerging from professional engineering societies, international standards bodies, and policy research institutes — has shaped the procedural structure of checklist frameworks. IEEE's Ethically Aligned Design (EAD) framework (2019) and the associated IEEE 7000 series of standards translated ethical principles into engineering process requirements, specifying how ethical considerations should be incorporated into the system development lifecycle from requirements through design, implementation, verification, and operation. The IEEE 7000 standard (IEEE 7000-2021) specifically addresses the integration of ethical values into system design decisions through a "Value Elicitation and Prioritisation Process" (VEPP) and a "Concept of Operations Ethics Assessment" (CoOEA) — both of which correspond to structured checklist modules in practice. The OECD AI Principles (2019, updated 2024), adopted by 42 countries including all G20 members, established five principles — inclusive growth and sustainable development, rule of law and human rights, transparency and explainability, robustness and safety, and accountability — that have been operationalised into national AI governance frameworks in dozens of jurisdictions and form the normative core of most AI ethics checklists. UNESCO's Recommendation on the Ethics of AI (2021), the first global normative framework for AI ethics adopted by all 193 UNESCO member states, adds sustainability, environmental stewardship, and multi-stakeholder governance as explicit ethical dimensions not always present in technical standards — dimensions that are increasingly being incorporated into environmental sustainability modules of AI ethics checklists, including explicit linkage to [[AI Energy Optimisation]] performance.
+
+  The Alan Turing Institute has been the most prominent UK institution in developing practical AI ethics governance frameworks adapted to public sector and industrial contexts. Its AI Ethics and Governance in Practice programme, launched in collaboration with CDEI and the ICO, produced implementation workbooks covering six domains: sustainability, fairness, technical safety, accountability, explainability, and data stewardship, specifically tailored for UK public sector bodies with limited AI governance expertise. The Turing's fairness, transparency, and privacy interest group has collaborated with the ICO on fairness auditing methodologies and contributed to the ICO's guidance on explaining AI decisions under the UK GDPR Article 22 automated decision-making framework. The Ada Lovelace Institute (London) has produced the most policy-influential UK AI ethics research: its "Examining the Black Box" (2020) and "Algorithmic Accountability for the Public Sector" (2020) reports established the evidential basis for mandatory pre-deployment algorithmic impact assessment requirements, several provisions of which were adopted in the EU AI Act's final negotiated text (FRIA obligations; post-market monitoring; incident reporting). The Ada Lovelace Institute's "Foundational Model Regulation" report (2023) influenced UK and EU policy discussions about whether frontier AI models warrant specific regulatory obligations beyond existing product safety frameworks.
+
+  ## Current Landscape (2026)
+
+  The EU AI Act regulatory compliance landscape as of June 2026 is structured around a phased obligation timeline that creates immediate, medium-term, and long-term checklist requirements for AI system operators and providers in the EU market (and any system whose output affects EU residents regardless of where the system is deployed):
+
+  - **From February 2025:** Article 5 prohibitions applicable — AI Ethics Checklists must include an explicit unacceptable-risk classification check, verifying the system does not implement social scoring by public authorities, exploitation of vulnerabilities, subliminal manipulation, untargeted biometric data scraping, real-time remote biometric identification in public spaces (with limited law enforcement exceptions), emotion recognition in workplace/education settings, or biometric categorisation inferring protected characteristics. The EU AI Office has published guidance on these prohibitions with worked examples.
+  - **From August 2025:** GPAI (General-Purpose AI) obligations applicable — providers of GPAI models (foundation models, including LLMs) must complete technical documentation (model architecture, training data description, energy consumption, capabilities and limitations) and publish usage policies. GPAI models designated as having systemic risk (training compute > 10^25 FLOPs) additionally require adversarial testing, incident reporting to the EU AI Office, and cybersecurity measures. These obligations directly require elements of the AI Ethics Checklist including [[AI System Documentation]], [[AI Incident Reporting]], and [[AI Energy Optimisation]] energy reporting.
+  - **From December 2027 (shifted from August 2026 under May 2026 Digital Omnibus deal):** High-risk AI system obligations applicable — [[Conformity Assessment]], [[Risk Assessment]] system, [[AI System Documentation]], [[Human Oversight]] mechanisms, accuracy-robustness-cybersecurity properties, EU AI database registration. Organisations are advised to begin compliance preparation now given the complexity of high-risk conformity assessment processes.
+
+  The EU AI Office, established as the primary EU-level AI governance body within the European Commission (DG CNECT), has published regulatory guidance, standardisation mandates to CEN-CENELEC (including mandate M/589 for harmonised AI standards covering risk management, data governance, transparency, human oversight, and robustness), and is operating the first-ever GPAI Code of Practice development process (with approximately 100 frontier AI providers participating in the first annual cycle completing in 2026).
+
+  The NIST AI RMF (AI RMF 1.0, January 2023) has achieved de facto standard status in the United States federal government and financial services sector. Version 1.0 is structured around four functional components: Govern (establish organisational AI governance culture, accountability structures, policies, and processes), Map (categorise AI systems and identify risks), Measure (assess and quantify risks using quantitative and qualitative methods), and Manage (prioritise, implement, and monitor risk controls). The NIST GenAI RMF Profile (March 2024) extends the framework to generative AI-specific risks: confabulation (the AI generating plausible but false information), data privacy in fine-tuning workflows, homogenisation (AI outputs converging on stereotypical representations), synthetic content risks (deepfakes, synthetic text for disinformation), and intellectual property concerns from training data. The NIST AI RMF Playbook (published alongside the framework) provides detailed suggested actions for each core function, which map directly to specific checklist items that practitioners can include in an AI Ethics Checklist workflow.
+
+  ISO/IEC 42001:2023 has achieved broad adoption among enterprises seeking internationally recognised AI governance certification. Its requirements — covering organisational context, leadership accountability, planning, support, operation, performance evaluation, and continual improvement — provide the structural basis for a certification audit that simultaneously satisfies EU AI Act compliance demonstration and NIST AI RMF maturity assessment. KPMG, Deloitte, PwC, and EY have all established ISO/IEC 42001 certification audit practices, and approximately 500 organisations globally had achieved certification or were in active certification processes as of early 2026 according to the ISO Survey of Certifications.
+
+  Practical governance tooling has matured substantially since 2022. IBM AI Fairness 360 (AIF360), Microsoft Fairlearn, and Google's What-If Tool provide the primary open-source bias measurement infrastructure; Aequitas (UChicago) provides audit reporting. Commercial AI governance platforms — including ModelOp, Credo AI, Saidot, Arthur AI, Fiddler AI, and Monitaur — provide end-to-end workflow tools integrating ethics checklist execution, evidence collection, automated metric computation, audit trail maintenance, and regulatory reporting. These platforms increasingly offer pre-configured checklist templates mapped to EU AI Act, NIST AI RMF, ISO/IEC 42001, and sector-specific regulatory requirements, reducing the implementation burden for organisations without dedicated responsible AI teams. The humancompatible.detect Python toolkit (2025) provides an early implementation of intersectional bias detection that goes beyond single-characteristic analysis. Despite this tooling maturity, the share of model cards in the Hugging Face repository including ethical considerations has declined from approximately 18% in 2022 to approximately 10% in 2025, indicating that checklist adoption among the broader open-source AI community has not kept pace with model proliferation — a finding that highlights the importance of embedding checklist completion in model release workflows rather than relying on voluntary adoption.
+
+  ## UK Context
+
+  The United Kingdom has taken a principles-based rather than rules-based approach to AI regulation, as articulated in the DSIT AI Regulation: A Pro-Innovation Approach (March 2023) and the subsequent AI Safety Institute establishment in October 2023. Rather than enacting a unified AI Act on the EU model, the UK assigns AI oversight to sector-specific regulators — the FCA for financial services, CQC for healthcare, Ofsted for education, ICO for data protection, Ofcom for online safety — guided by five cross-sector principles: (1) safety, security and robustness; (2) appropriate transparency and explainability; (3) fairness; (4) accountability and governance; and (5) contestability and redress. These five principles map directly to the structural modules of an AI ethics checklist: safety to [[Risk Assessment]]; transparency to [[Transparency Metrics]] and [[Explainability]]; fairness to [[Fairness Assessment Criteria]]; accountability to [[Accountability Framework]]; and contestability to [[Human Oversight]] and [[AI Incident Reporting]] mechanisms. The CDEI (Centre for Data Ethics and Innovation), before its merger into DSIT's Responsible Technology Adoption Unit, produced sector-specific implementation guidance translating these principles into actionable checklist requirements for financial services, healthcare, education, recruitment, and public sector administration.
+
+  The UK AI Safety Institute (now AISI, AI Safety Institute), established in October 2023 following the Bletchley Park AI Safety Summit, focuses specifically on frontier AI systems — foundation models, general-purpose AI — and has developed structured evaluation frameworks (the AISI Evaluation Framework, published 2024) that constitute a specialised AI safety checklist for capability assessment, dangerous capability red-teaming, and alignment evaluation. AISI's evaluations cover chemical, biological, radiological, and nuclear (CBRN) uplift potential, cyberoffence capability, autonomy and deception, and sociotechnical harms — a checklist structure that is distinct from but complementary to the mainstream [[AI Ethics Checklist]] frameworks targeting deployment and fairness.
+
+  The Alan Turing Institute (ATI, headquartered at the British Library in London with affiliated institutes at Edinburgh, Cambridge, Leeds, Manchester, Oxford, Warwick, and Newcastle) has produced the most operationally detailed UK AI ethics checklist guidance. The ATI's AI Ethics and Governance in Practice workbooks — developed with CDEI and the ICO, and piloted with the NHS, DVSA, DWP, and local authorities — provide domain-specific checklists with scoring rubrics, evidence templates, and worked examples. The ATI's fairness, transparency, and privacy interest group has collaborated with the ICO on fairness auditing methodologies, particularly regarding automated profiling and solely automated decision-making under UK GDPR Articles 13, 14, and 22. The ICO's published guidance on explaining AI decisions (2022) established transparency and explainability obligations for solely automated consequential decisions — creating a direct legal mandate for checklist transparency and explainability modules for organisations processing UK residents' data. The ICO has indicated enforcement interest in organisations that deploy consequential AI systems without appropriate explainability, including algorithmic credit scoring and insurance pricing, representing a concrete liability incentive for comprehensive checklist adoption.
+
+  Northern England has specific industrial AI deployment contexts that drive structured ethics checklist requirements. NHS Trusts in Greater Manchester, West Yorkshire (Leeds), South Yorkshire (Sheffield), and Tyne and Wear (Newcastle) deploy AI diagnostic tools for radiology (chest X-ray interpretation, fracture detection), digital pathology (cancer grading), and clinical risk scoring (deterioration prediction, sepsis alerting). These systems are high-risk AI applications regulated under the MHRA's AI as a Medical Device (AIaMD) framework, which underwent significant revision in 2024–2025 to incorporate EU MDR/IVDR AI provisions and MHRA's own guidance. The AIaMD framework requires pre-market evaluation demonstrating fairness across demographic subgroups (age, sex, ethnicity, co-morbidity burden), clinical validation data governance, labelling transparency, post-market surveillance plans, and incident reporting procedures — all elements of a comprehensive AI Ethics Checklist. NHS England's AI Governance Framework and the ARC (Applied Research Collaboration) networks have developed standardised AI Ethics Checklist templates for NHS deployment that are widely adopted across NHS Trusts.
+
+  Leeds City Council's algorithmic transparency register — one of the first UK local authority implementations of the UK government's Algorithmic Transparency Reporting Standard — documents all algorithmic tools used in council decision-making including benefits assessment, housing allocation, and waste route optimisation, and publishes structured transparency reports conformant with the ATI/CDEI template. This represents a concrete implementation of the [[Algorithmic Transparency Index]] module of the AI Ethics Checklist framework in a public sector context. Manchester City Council's Data and AI Ethics Advisory Board provides independent ethical review of proposed AI deployments, modelled on the NHS Research Ethics Committee structure and applying the ATI ethics workbook checklist structure to local government AI procurement decisions. The Hartree Centre (Daresbury, Cheshire, operated by STFC) provides responsible AI consultancy to Northern Powerhouse SMEs, including checklist completion support for organisations applying for the UK government's AI Adoption Programme funding and certification.
+
+  The Ada Lovelace Institute (London), established as an independent research institute in 2018 with funding from the Nuffield Foundation, has been particularly influential in shaping UK policy on mandatory [[Algorithmic Impact Assessment]] requirements. Its "Examining the Black Box: Tools for Assessing AI for Public Services" (2020) established the evidential basis for third-party audit requirements and FRIA-equivalent pre-deployment assessments, several of which were incorporated into the EU AI Act's final text following lobbying by the European Parliament's civil liberties committee drawing on Ada Lovelace Institute research. The Institute's "Who Audits the Auditors?" (2021) report identified the limitations of purely voluntary self-assessment checklist approaches and argued for mandatory third-party auditing with accreditation requirements — a position now reflected in EU AI Act notified body designation for high-risk conformity assessment. As of 2026, the Ada Lovelace Institute is actively contributing to UK legislative debates about whether mandatory pre-deployment AI impact assessment obligations equivalent to EU FRIA requirements should be introduced through primary legislation in the UK, and is involved in developing the UKAS accreditation criteria for UK AI audit bodies.
+
+  ## Future Directions (2026–2030)
+
+  **Automated Checklist Execution via LLM Co-Pilots:** Large language models are increasingly used as co-pilots for ethics checklist completion, parsing [[AI System Documentation]] artefacts, flagging gaps against regulatory requirements, generating structured evidence summaries, and auto-populating checklist fields from technical documentation inputs. Tools like ModelOp's RegTech integration and Credo AI's policy engine automate portions of the checklist workflow, while Saidot's AI governance platform uses retrieval-augmented generation to surface relevant regulatory requirements against a described system. The irony of using AI to evaluate AI ethics — and the risks this introduces (an AI may be systematically biased in ways that bias its own ethics assessments) — is an emerging research topic. IEEE P7015 "Standard for AI Ethics Transparency and Fairness Audit" (in development) is addressing procedural requirements for AI-assisted checklist completion, including requirements for human review of AI-generated assessments before they count as evidence in regulatory filings.
+
+  **Agentic AI Governance and Autonomous Decision Architecture:** The proliferation of [[AI Agent System]] architectures — multi-step autonomous agents with tool use, memory, planning, and real-world action execution — creates novel checklist challenges for which existing frameworks were not designed. Key new risk categories include: unintended action scope (agents taking consequential actions beyond their authorised scope without explicit human instruction); reasoning opacity (chain-of-thought reasoning that is difficult to audit even when technically visible); emergent goal persistence (agents pursuing instrumental sub-goals in ways that contradict the stated objective); and multi-agent interaction effects (behaviours that emerge from interactions between multiple deployed agents that are not predictable from the behaviour of individual agents). Microsoft's agent governance toolkit (2025) addresses four agent-specific checklist domains: policy enforcement (defining and enforcing agent action permissions at runtime), zero-trust identity (authenticating agent actions and attributing them to accountable principals), execution sandboxing (limiting the blast radius of agent errors through permission scoping and reversibility requirements), and reliability engineering (circuit breakers, fallback chains, human escalation paths with defined trigger thresholds). IEEE is developing a dedicated standard in the P7010 series for autonomous agent ethics evaluation that extends the IEEE 7000 system ethics framework to agentic architectures. The EU AI Act's provisions for high-risk AI largely pre-date the proliferation of agentic AI; the European Commission is expected to publish guidance on how existing provisions apply to autonomous agents in 2026–2027.
+
+  **Intersectional and Causal Fairness Assessment:** Current [[Fairness Assessment Criteria]] toolkits primarily assess single protected characteristics at a time; intersectional fairness evaluation — assessing outcomes for subgroups defined by combinations of multiple protected characteristics (e.g., Black women over 50, or disabled LGBTQ+ individuals) — is an active research frontier. The combinatorial explosion of subgroup combinations makes exhaustive intersectional testing computationally challenging, and small sample sizes for specific intersectional groups create statistical power problems. The humancompatible.detect Python toolkit (2025) and IBM AIF360's intersectional fairness extension provide early implementations. Causal fairness frameworks (using causal DAGs to model the data-generating process and distinguish direct discrimination from indirect discrimination via acceptable mediating variables) offer a theoretically grounded alternative to purely statistical fairness metrics, with Microsoft's DoWhy library providing the primary open-source implementation. These advances are expected to be incorporated into revised editions of ISO/IEC 42001 and future NIST AI RMF profiles.
+
+  **[[AI Energy Optimisation]] as a First-Class Ethics Criterion:** Emerging AI ethics frameworks increasingly treat environmental sustainability — measured through energy consumption per inference, training carbon footprint, water usage for cooling, and hardware lifecycle impacts — as an ethical obligation equivalent in moral weight to fairness and safety. The environmental ethics of AI deployment is grounded in intergenerational justice (present AI deployments impose climate costs on future generations who did not consent) and global justice (the climate consequences of high-carbon AI deployments in the global north disproportionately harm populations in the global south). UNESCO's 2021 AI Ethics Recommendation explicitly includes sustainability and environmental impact as ethical dimensions. ISO/IEC JTC 1/SC 42 WG3 is developing AI sustainability metrics for inclusion in the next revision of ISO/IEC 42001, specifying measurement methodologies for training energy (total kWh, carbon intensity-adjusted tCO₂e), inference energy (kWh per 1,000 queries at specified batch size and hardware), and lifecycle carbon (embodied carbon in hardware, end-of-life e-waste). The EU AI Act's Article 51 systemic-risk provisions already require energy footprint measurement and reporting for frontier models, creating a regulatory mandate for [[AI Energy Optimisation]] metrics to appear in the AI Ethics Checklist for applicable systems. Future ethics checklists for any AI system subject to substantive public interest disclosure requirements are expected to include mandatory [[AI Energy Optimisation]] modules specifying minimum disclosure thresholds.
+
+  **Longitudinal and Dynamic Checklisting for Post-Deployment Ethics:** Static pre-deployment checklists are increasingly complemented by continuous monitoring frameworks that treat ethics as an ongoing operational obligation rather than a one-time gate. The conceptual model is analogous to financial audit: a one-time pre-deployment ethics certification is analogous to the initial financial audit of a new company, but post-market monitoring creates ongoing ethical accountability analogous to annual financial reporting requirements. Dynamic risk thresholds that trigger checklist re-execution when deployment context changes — including when a system is deployed in a new jurisdiction, used by a new user population, retrained or fine-tuned, or shows evidence of performance drift in monitoring dashboards — are being standardised in commercial AI governance platforms. The EU AI Act's post-market monitoring obligations (Article 72) provide the regulatory mandate for this shift; NIST AI RMF's Manage component specifies ongoing risk monitoring processes. The technical infrastructure supporting dynamic checklisting includes ML monitoring platforms (Evidently AI, Arize AI, WhyLabs) that continuously compute fairness metrics and generate alerts when drift exceeds configured thresholds.
+
+  **Third-Party Audit Ecosystem Maturation:** As EU AI Act conformity assessment obligations for high-risk AI take effect in December 2027, a professional market for accredited third-party AI auditors is emerging from a nascent state. The EU AI Office is establishing notified body designation procedures for high-risk conformity assessment, modelled on the notified body regime for medical devices. The UK Accreditation Service (UKAS) is developing accreditation criteria for AI audit bodies under an ISO/IEC 17065 conformity assessment body framework, with the first designations expected in 2026–2027. Big Four accountancy firms have invested heavily in AI audit capabilities: KPMG has published its KPMG Trusted AI Framework mapping to ISO/IEC 42001; Deloitte's AI Risk Lab provides automated assessment tooling; PwC's Responsible AI practice offers EU AI Act readiness assessments; EY's AI platform includes ethics checklist automation. Specialist AI audit firms — including Eticas Research & Consulting (Spain), Certified AI (Germany), and ForHumanity (US, with UK chapter) — provide domain-specific audit services for high-risk sectors. The maturation of this ecosystem by 2027–2030 will transform AI ethics checklisting from a primarily internal governance exercise into a professional assurance discipline with externally verifiable certifications analogous to financial audit opinions.
+
+  **Global Harmonisation and Mutual Recognition:** With EU, UK, US, and national frameworks increasingly diverging in their specific requirements while converging in their underlying principles, there is growing pressure for mutual recognition arrangements that would allow an AI system certified under one framework to be recognised as compliant under another without full duplicate assessment. The OECD's GPAI Working Party is developing a Global AI Incident Database and cross-framework mapping that would support mutual recognition. NIST-ISO mapping exercises already demonstrate substantial alignment between NIST AI RMF and ISO/IEC 42001 core requirements, suggesting that a single audit programme could satisfy both simultaneously. EU-UK equivalence discussions — relevant to organisations operating on both sides of the UK-EU border post-Brexit — are considering whether UK AI governance frameworks meet sufficient equivalence to the EU AI Act to enable a mutual recognition pathway, particularly for healthcare AI systems currently subject to duplicative MHRA and CE/MDR certification requirements.
+
+  ## Research & Literature
+
+  1. Jobin, A., Ienca, M., & Vayena, E. (2019). The global landscape of AI ethics guidelines. *Nature Machine Intelligence, 1*(9), 389–399. https://doi.org/10.1038/s42256-019-0088-2
+
+  2. Floridi, L., et al. (2018). AI4People — An ethical framework for a good AI society. *Minds and Machines, 28*(4), 689–707. https://doi.org/10.1007/s11023-018-9482-5
+
+  3. Selbst, A. D., et al. (2019). Fairness and abstraction in sociotechnical systems. *FAccT 2019*. https://doi.org/10.1145/3287560.3287598
+
+  4. IEEE. (2024). IEEE 7000™ series: Standards for ethical AI and autonomous systems. https://standards.ieee.org/beyond-standards/the-ethically-aligned-design-standards-project/
+
+  5. OECD. (2019, updated 2024). OECD Recommendation on AI (AI Principles). *OECD/LEGAL/0449*. https://oecd.ai/en/ai-principles
+
+  6. UNESCO. (2021). Recommendation on the Ethics of Artificial Intelligence. https://unesdoc.unesco.org/ark:/48223/pf0000381137
+
+  7. NIST. (2023). *AI Risk Management Framework (AI RMF 1.0)*. National Institute of Standards and Technology. https://doi.org/10.6028/NIST.AI.100-1
+
+  8. ISO/IEC 42001:2023. Information technology — Artificial intelligence — Management system. International Organization for Standardization.
+
+  9. European Parliament. (2024). Regulation (EU) 2024/1689 — EU Artificial Intelligence Act. *Official Journal of the European Union*. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689
+
+  10. Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., & Galstyan, A. (2021). A survey on bias and fairness in machine learning. *ACM Computing Surveys, 54*(6), 1–35. https://doi.org/10.1145/3457607
+
+  11. Bellamy, R. K. E., et al. (2019). AI Fairness 360: An extensible toolkit for detecting and mitigating algorithmic unfairness. *IBM Journal of Research and Development, 63*(4/5), 4:1–4:15. https://doi.org/10.1147/JRD.2019.2942287
+
+  12. Bird, S., et al. (2020). Fairlearn: A toolkit for assessing and improving fairness in AI. *Microsoft Research Technical Report MSR-TR-2020-32*. https://fairlearn.org/
+
+  13. Saleiro, P., et al. (2018). Aequitas: A bias and fairness audit toolkit. *arXiv:1811.05577*. https://arxiv.org/abs/1811.05577
+
+  14. Mitchell, M., et al. (2019). Model cards for model reporting. *FAccT 2019*. https://doi.org/10.1145/3287560.3287596
+
+  15. Doshi-Velez, F., & Kim, B. (2017). Towards a rigorous science of interpretable machine learning. *arXiv:1702.08608*. https://arxiv.org/abs/1702.08608
+
+  16. Alan Turing Institute. (2024). AI ethics and governance in practice. https://www.turing.ac.uk/research/research-projects/ai-ethics-and-governance-practice
+
+  17. Alan Turing Institute. (2024). Fairness, transparency, privacy interest group. https://www.turing.ac.uk/research/interest-groups/fairness-transparency-privacy
+
+  18. Ada Lovelace Institute. (2020). Examining the black box: Tools for assessing algorithmic systems. https://www.adalovelaceinstitute.org/report/examining-the-black-box/
+
+  19. UK Government CDEI. (2021). Algorithmic Transparency Reporting Standard. https://www.gov.uk/government/publications/algorithmic-transparency-template
+
+  20. Floridi, L., & Cowls, J. (2019). A unified framework of five principles for AI in society. *Harvard Data Science Review, 1*(1). https://doi.org/10.1162/99608f92.8cd550d1
+
+  21. Visioncompliance. (2026). EU AI Act compliance guide 2026. https://visioncompliance.eu/en/blog/eu-ai-act-compliance-guide
+
+  22. EUAIActChecklist. (2026). EU AI Act Checklist — Compliance Resources. https://euaiactchecklist.com/
+
+  23. Microsoft. (2025). Agent Governance Toolkit — EU AI Act compliance checklist. https://github.com/microsoft/agent-governance-toolkit/blob/main/docs/compliance/eu-ai-act-checklist.md
+
+  24. KPMG. (2025). ISO/IEC 42001: AI management system for governance. https://kpmg.com/ch/en/insights/artificial-intelligence/iso-iec-42001.html
+
+  25. TrustCloud. (2026). ISO 42001 & NIST AI RMF: Mastering responsible AI governance in 2026. https://www.trustcloud.ai/ai/iso-42001-nist-ai-rmf-practical-steps-for-responsible-ai-governance/
+
+  26. Ethical documentation of open-source AI models: A multivocal literature review and large-scale analysis of model cards. (2025). *ScienceDirect*. https://www.sciencedirect.com/science/article/pii/S0957417426009759
+
+  27. Lum, K., & Chowdhury, R. (2021). What is an "algorithm"? It depends whom you ask. *MIT Technology Review*. https://www.technologyreview.com/2021/02/26/1020007/what-is-an-algorithm/
+
+  28. Bradley. (2025). Global AI governance: Five key frameworks explained. https://www.bradley.com/insights/publications/2025/08/global-ai-governance-five-key-frameworks-explained
+
+- ### Provenance
+  - sources:: https://euaiactchecklist.com/, https://www.turing.ac.uk/research/research-projects/ai-ethics-and-governance-practice, https://github.com/microsoft/agent-governance-toolkit/blob/main/docs/compliance/eu-ai-act-checklist.md, https://kpmg.com/ch/en/insights/artificial-intelligence/iso-iec-42001.html, https://standards.ieee.org/news/ieee-standards-commitment-to-advancing-ai-governance-includes-impactful-contributions-to-new-international-ai-standards-exchange/, https://doi.org/10.1038/s42256-019-0088-2, [[IEEE 7000]], [[UNESCO AI Ethics Recommendations]]
+  - migration-date:: 2026-06-20T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

@@ -1,0 +1,157 @@
+public:: true
+
+# Presentation Attack Detection
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:presentation-attack-detection",
+  "@type": "Page",
+  "title": "Presentation Attack Detection",
+  "vc:slug": "presentation-attack-detection",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:presentation-attack-detection",
+  "@type": "Class",
+  "label": "Presentation Attack Detection",
+  "definition": "Presentation attack detection (PAD) is the set of techniques that determine whether a biometric sample is presented by a genuine, live subject or by an artefact intended to spoof the system. Attacks include printed photographs, replayed video, silicone fingerprints, and three-dimensional masks. PAD, also known as liveness or anti-spoofing analysis, is standardised under ISO/IEC 30107 and is essential to the trustworthiness of biometric authentication.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:biometric-authentication",
+      "label": "Biometric Authentication"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
+- ### Definition
+  - Presentation attack detection (PAD) is the set of techniques that determine whether a biometric sample is presented by a genuine, live subject or by an artefact intended to spoof the system. Attacks include printed photographs, replayed video, silicone fingerprints, and three-dimensional masks. PAD, also known as liveness or anti-spoofing analysis, is standardised under ISO/IEC 30107 and is essential to the trustworthiness of biometric authentication.
+  - Related concepts: [[Biometric Authentication]] [[Authentication]] [[Face Recognition]] [[Deepfake Detection]] [[Multi-Factor Authentication]]
+- ### Overview
+  - A biometric system is only as strong as its weakest enrolment path, and presentation attacks exploit the gap between capturing a likeness and confirming a living person. PAD methods analyse texture, motion, depth, physiological signals, and challenge-response behaviour to separate genuine presentations from artefacts. They are typically evaluated using the standardised metrics of attack presentation classification error rate and bona fide presentation classification error rate.
+- ### Key aspects
+  - Passive liveness from texture, micro-movement, and reflectance cues
+  - Active challenge-response such as blink, smile, or head-turn prompts
+  - Depth and infrared sensing to defeat flat-image spoofs
+  - Physiological signals including remote photoplethysmography
+  - Standardised evaluation under ISO/IEC 30107 (APCER, BPCER)
+- ### Applications
+  - Face unlock on mobile devices and laptops
+  - Remote identity verification for onboarding and KYC
+  - Border control and automated passport gates
+  - Fingerprint and iris systems in high-assurance access control
+- ### Relationships
+  - subClassOf:: [[Biometric Authentication]]
+  - partOf:: [[Biometric Authentication]]
+  - relatedTo:: [[Face Recognition]]
+  - relatedTo:: [[Authentication]]
+  - relatedTo:: [[Deepfake Detection]]
+  - requires:: [[Biometric Authentication]]
+  - requires:: [[Model Training]]
+  - uses:: [[Convolutional Neural Network]]
+  - uses:: [[Eye Tracking]]
+  - enables:: [[Multi-Factor Authentication]]
+  - supports:: [[Authentication]]
+  - contrastsWith:: [[Adversarial Attack]]
+  - bridgesTo:: [[Deepfake Detection]]
+  - standardizedBy:: [[Standards]]
+  - dependsOn:: [[Face Recognition]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

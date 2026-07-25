@@ -1,0 +1,59 @@
+public:: true
+
+# Asset Service
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:asset-service",
+  "@type": "Page",
+  "vc:slug": "asset-service",
+  "title": "Asset Service",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:asset-service",
+  "@type": "Class",
+  "label": "Asset Service",
+  "definition": "An Asset Service is a runtime or backend system that exposes digital assets and their associated metadata to consuming applications through well-defined APIs, handling storage, retrieval, transcoding, access control, and lifecycle operations as managed infrastructure. It abstracts the complexity of distributed storage and processing from client applications, enabling consistent, scalable access to asset libraries.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:service-layer", "label": "Service Layer"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:api-management", "label": "API Management"},
+      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:asset-management-system", "label": "Asset Management System"},
+      {"@id": "urn:ngm:class:content-pipeline", "label": "Content Pipeline"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+    ],
+    "relatedTo": [{"@id": "urn:ngm:class:platform-service", "label": "Platform Service"}]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - An [[Asset Service]] is a backend system or set of [[Microservices Architecture]] components responsible for the storage, retrieval, transformation, and access governance of digital assets at runtime. Clients — game engines, web applications, mobile apps, or pipeline tools — interact with the service through a REST, GraphQL, or gRPC [[API Management]] layer rather than accessing storage directly. The service handles format transcoding, progressive delivery (streaming, CDN integration), caching, version selection, and permissions enforcement transparently.
+
+- ### Relationships
+  - Asset Service operates as part of the [[Service Layer]] and applies [[API Management]] to expose consistent interfaces over [[Digital Asset Management]] repositories. It supports [[Asset Management System]] operations such as ingest, publish, and archive, and drives [[Content Pipeline]] stages by providing conditioned assets on demand. Its decomposition into specialised sub-services (storage, transcoding, metadata, delivery) follows [[Microservices Architecture]] principles, and its overall role is that of a managed [[Platform Service]] within a larger product architecture.
+
+- ### Content
+  - Asset services grew from the content delivery network (CDN) architectures pioneered by Akamai and Limelight in the early 2000s, which cached static media files geographically close to end users. As applications became more dynamic, static CDN caching proved insufficient: games required on-demand streaming of asset bundles, streaming video platforms needed adaptive bitrate (ABR) transcoding, and e-commerce sites required automated image resizing and format conversion per device type. Vendor-managed media services emerged — Cloudinary for image/video, Imgix, AWS MediaConvert — to abstract these operations behind simple API calls.
+
+  - A modern asset service architecture decomposes into: an ingest layer (accepting uploads, running validation and virus scanning), a processing layer (transcoding, optimisation, thumbnail generation, perceptual hashing), a storage layer (blob storage such as S3 or GCS with lifecycle policies), a metadata layer (database with search index), a delivery layer (CDN with signed URLs, streaming endpoints, progressive download), and an access control layer (OAuth, JWT-based permissions, watermarking). High-availability deployments use content-addressable storage and replicate across regions, with invalidation propagated through message queues.
+
+  - Games-as-a-service platforms make heavy use of asset services for live-operations (LiveOps) updates: cosmetic items, map packs, and balance patches are published through asset service pipelines that stage content, run integrity checks, and roll out incrementally to user segments via feature flags. Film and VFX studios use asset services to manage petabyte-scale visual effects libraries, with versioned references tracked per shot and per sequence. The Open Asset I/O initiative (ASWF) is standardising the interface contract between asset services and DCC tools to reduce integration friction across the industry.
+
+  - As of 2024–2025, asset services are incorporating AI-driven processing capabilities: automatic captioning, semantic tagging via vision-language models, background removal, upscaling, and format-aware compression using neural codecs. Edge computing deployments push transcoding and access-control logic to CDN edge nodes, reducing latency for real-time applications. Decentralised variants leveraging IPFS or Arweave for storage and smart contracts for access control are explored in Web3 contexts, though centralised asset services retain dominance for applications requiring SLA guarantees and support for large binary payloads.
+

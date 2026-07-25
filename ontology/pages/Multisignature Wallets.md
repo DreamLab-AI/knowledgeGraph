@@ -1,0 +1,59 @@
+public:: true
+
+# Multisignature Wallets
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:multisignature-wallets",
+  "@type": "Page",
+  "vc:slug": "multisignature-wallets",
+  "title": "Multisignature Wallets",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:multisignature-wallets",
+  "@type": "Class",
+  "label": "Multisignature Wallets",
+  "definition": "Multisignature wallets are cryptocurrency custody arrangements requiring m-of-n cryptographic signatures before a transaction can be authorised, distributing key control across multiple independent parties or devices. They eliminate single points of failure in private key management, making them a standard security architecture for institutional digital asset custody and shared treasury governance. The underlying cryptographic mechanism uses threshold signing schemes such as ECDSA or Schnorr aggregation.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:blockchain-entity", "label": "Blockchain Entity"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:asymmetric-cryptography", "label": "Asymmetric Cryptography"},
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
+      {"@id": "urn:ngm:class:bls-signature", "label": "BLS Signature"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:cold-storage", "label": "Cold Storage"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cryptocurrency-storage", "label": "Cryptocurrency Storage"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - Multisignature wallets are [[Blockchain Entity]] structures that require a threshold number of authorised signatories — typically expressed as m-of-n — to co-sign a transaction before it is broadcast to a [[Blockchain Network]]. By distributing [[Asymmetric Cryptography]] key control, they prevent any single compromised or lost key from resulting in asset loss. They are foundational to institutional [[Cryptocurrency Storage]], DAO treasuries, and escrow arrangements.
+
+- ### Relationships
+  - Multisignature wallets depend on [[Cryptographic Key Management]] infrastructure to distribute and protect signing keys across participants. They use signature schemes such as [[BLS Signature]] or ECDSA, and are commonly paired with [[Cold Storage]] hardware for key protection. The governance properties they provide are essential to [[Blockchain Governance]] processes, enabling multi-party treasury control without concentrating authority in a single actor.
+
+- ### Content
+  - The concept of multisignature transaction authorisation predates blockchain, appearing in traditional banking as dual-control requirements for high-value transfers. Bitcoin formalised the mechanism in 2012 via the P2SH (pay-to-script-hash) standard, which allowed native on-chain encoding of m-of-n spending conditions. Ethereum extended the pattern through smart-contract-based wallets such as Gnosis Safe, enabling richer governance logic including time-locks and role-based permissions.
+
+  - At the protocol level, a multisignature wallet encodes a redeem script specifying the number of required signatories and the set of permissible public keys. Spending requires collecting the requisite signatures off-chain and presenting them together. Modern implementations increasingly adopt Schnorr-based threshold signatures and MPC (multi-party computation) approaches, which produce a single aggregated signature indistinguishable from a standard single-key transaction, improving privacy and reducing on-chain data costs.
+
+  - In practice, multisignature wallets are deployed by cryptocurrency exchanges for hot and warm wallet layers, by DeFi protocols for admin key control, and by institutional custodians offering qualified custody services. Cross-chain applications via smart contracts on EVM-compatible networks handle billions of dollars in assets. Hardware security modules are frequently integrated to ensure that individual signing keys are never exposed in plaintext on networked computers.
+
+  - Between 2023 and 2025, the convergence of multisig with MPC threshold signatures has blurred the traditional distinction between hardware wallet multisig and software-based key sharing. Regulatory guidance in multiple jurisdictions — particularly around VASP (Virtual Asset Service Provider) requirements — has named multisignature custody as a preferred control for institutional asset management. The emergence of account abstraction on Ethereum (ERC-4337) has further unified multisig logic with programmable wallet behaviour, enabling seamless recovery and policy enforcement without bespoke smart-contract audits.
+

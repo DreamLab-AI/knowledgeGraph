@@ -1,0 +1,51 @@
+public:: true
+
+# Forensic Investigation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:forensic-investigation",
+  "@type": "Page",
+  "vc:slug": "forensic-investigation",
+  "title": "Forensic Investigation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:forensic-investigation",
+  "@type": "Class",
+  "label": "Forensic Investigation",
+  "definition": "Forensic investigation is the systematic collection, preservation, examination, and analysis of evidence — digital, physical, or financial — using scientifically validated methods that maintain legal admissibility and chain of custody, with the purpose of reconstructing events, attributing responsibility, and supporting judicial or regulatory proceedings. In digital contexts it encompasses disk imaging, memory acquisition, network traffic analysis, and log correlation.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:digital-forensics", "label": "Digital Forensics"}],
+  "relations": {
+    "uses": [{"@id": "urn:ngm:class:chain-of-custody", "label": "Chain of Custody"}, {"@id": "urn:ngm:class:evidence-collection", "label": "Evidence Collection"}],
+    "enables": [{"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}, {"@id": "urn:ngm:class:compliance", "label": "Compliance"}],
+    "relatedTo": [{"@id": "urn:ngm:class:digital-forensics-framework", "label": "Digital Forensics Framework"}, {"@id": "urn:ngm:class:digital-evidence-chain-of-custody", "label": "Digital Evidence Chain of Custody"}],
+    "supports": [{"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"}]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Forensic Investigation]] is the disciplined process of identifying, collecting, preserving, and analysing evidence to reconstruct events and establish factual findings that withstand legal scrutiny. In the digital domain — the most rapidly growing application — it encompasses acquisition of volatile memory, disk imaging, network packet capture, log correlation, and malware reverse engineering, all conducted under strict [[Chain of Custody]] protocols to ensure evidence integrity from scene to courtroom.
+
+- ### Relationships
+  - Successful forensic investigations depend on [[Chain of Custody]] documentation and rigorous [[Evidence Collection]] procedures to prevent spoliation. Findings directly inform [[Incident Response]] workflows, guiding containment and remediation. Formal [[Digital Forensics Framework]]s such as NIST SP 800-86 and the ACPO Good Practice Guide structure investigative phases, whilst [[Digital Evidence Chain of Custody]] tooling automates tamper-evident logging. The discipline also supports [[Compliance]] audits and informs [[Red Teaming]] exercises by revealing attacker tradecraft.
+
+- ### Content
+  - Digital forensics emerged as a sub-discipline of forensic science in the late 1980s when law enforcement first encountered cases where evidence resided solely in computer files. The FBI Computer Analysis and Response Team (CART) was established in 1984, and foundational tools such as SafeBack for disk imaging appeared in the 1990s. Standards bodies including SWGDE (Scientific Working Group on Digital Evidence) and later NIST formalised methodology, bridging the gap between technical practice and courtroom admissibility.
+
+  - The technical workflow follows the PCERF model: Preparation, Collection, Examination, Analysis, Reporting. Collection prioritises volatile data (RAM, running processes, network connections) before powering down systems, following the order of volatility principle. Examination uses write blockers and cryptographic hashing (MD5, SHA-256) to produce verified forensic images. Analysis correlates artefacts across file systems, registries, event logs, and browser histories, constructing a timeline of actor activity. Modern tools include Autopsy, EnCase, FTK, and open-source Volatility for memory forensics.
+
+  - Enterprise forensic investigations increasingly involve cloud storage, SaaS logs, and ephemeral container workloads, challenging traditional disk-centric methodologies. Cloud providers offer legal hold and preservation order APIs, but log retention windows, jurisdictional data residency, and multi-tenancy complicate acquisition. Threat intelligence platforms integrate forensic indicators of compromise (IOCs) across organisational boundaries, enabling shared post-incident understanding without exposing sensitive case details.
+
+  - In 2024–2025, AI-assisted triage tools are shortening investigation timelines by automatically clustering similar artefacts, surfacing anomalies in large log datasets, and generating draft report narratives. Simultaneously, adversarial anti-forensics techniques — log wiping, living-off-the-land attacks using native OS tools, and encrypted ephemeral channels — are raising the skill threshold for successful attribution. Regulatory mandates under NIS2 (EU) and the SEC's cybersecurity disclosure rules are driving investment in forensic readiness programmes across critical infrastructure sectors.
+

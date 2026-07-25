@@ -1,0 +1,486 @@
+public:: true
+
+# AI Documentation Standards
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:df2916f682f73afa86cc420193328ddb65ca3144592d1897ca0ac4e952ed7c4f",
+  "@type": "Page",
+  "vc:slug": "ai-documentation-standards",
+  "title": "AI Documentation Standards",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {"@id": "urn:visionflow:linked:datasheets-gebru-et-al", "vc:label": "Datasheets (Gebru et al.)"},
+    {"@id": "urn:visionflow:linked:iso-iec-23053", "vc:label": "ISO/IEC 23053"},
+    {"@id": "urn:visionflow:linked:model-cards-mitchell-et-al", "vc:label": "Model Cards (Mitchell et al.)"},
+    {"@id": "urn:visionflow:owl:class:ai-governance-and-ethics", "vc:label": "AIEthicsDomain"},
+    {"@id": "urn:visionflow:owl:class:conceptual-layer", "vc:label": "ConceptualLayer"},
+    {"@id": "urn:visionflow:owl:class:eu-ai-act", "vc:label": "EU AI Act"},
+    {"@id": "urn:visionflow:owl:class:smart-contract", "vc:label": "Smart Contract"},
+    {"@id": "urn:visionflow:owl:class:ai-governance", "vc:label": "AI Governance"},
+    {"@id": "urn:visionflow:linked:ieee-7001", "vc:label": "IEEE 7001"},
+    {"@id": "urn:visionflow:linked:iso-iec-42001", "vc:label": "ISO/IEC 42001"},
+    {"@id": "urn:visionflow:linked:nist-ai-rmf", "vc:label": "NIST AI RMF"},
+    {"@id": "urn:visionflow:linked:system-cards", "vc:label": "System Cards"},
+    {"@id": "urn:visionflow:linked:factsheets-ibm", "vc:label": "FactSheets (IBM)"},
+    {"@id": "urn:visionflow:linked:data-cards", "vc:label": "Data Cards"},
+    {"@id": "urn:visionflow:linked:algorithmic-transparency", "vc:label": "Algorithmic Transparency"},
+    {"@id": "urn:visionflow:linked:responsible-ai", "vc:label": "Responsible AI"},
+    {"@id": "urn:visionflow:linked:ai-risk-management", "vc:label": "AI Risk Management"},
+    {"@id": "urn:visionflow:linked:gdpr", "vc:label": "GDPR"},
+    {"@id": "urn:visionflow:linked:regulatory-compliance", "vc:label": "Regulatory Compliance"},
+    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
+    {"@id": "urn:visionflow:linked:ai-auditing", "vc:label": "AI Auditing"},
+    {"@id": "urn:visionflow:linked:bias-analysis", "vc:label": "Bias Analysis"},
+    {"@id": "urn:visionflow:linked:ai-ethics", "vc:label": "AI Ethics"},
+    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
+    {"@id": "urn:visionflow:linked:ai-impact-assessment", "vc:label": "AI Impact Assessment"},
+    {"@id": "urn:visionflow:linked:ai-model-card", "vc:label": "AI Model Card"},
+    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
+    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
+    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
+    {"@id": "urn:visionflow:linked:ai-lifecycle", "vc:label": "AI Lifecycle"},
+    {"@id": "urn:visionflow:linked:documentation-as-code", "vc:label": "Documentation As Code"},
+    {"@id": "urn:visionflow:linked:ai-transparency-framework", "vc:label": "Ai Transparency Framework"},
+    {"@id": "urn:visionflow:linked:ai-governance-framework", "vc:label": "AI Governance Framework"},
+    {"@id": "urn:visionflow:linked:ai-governance-maturity-model", "vc:label": "AI Governance Maturity Model"},
+    {"@id": "urn:visionflow:linked:documentation-generation", "vc:label": "Documentation Generation"},
+    {"@id": "urn:visionflow:linked:documentation-standards", "vc:label": "Documentation Standards"},
+    {"@id": "urn:visionflow:linked:ai-ecosystem", "vc:label": "AI Ecosystem"},
+    {"@id": "urn:visionflow:linked:algorithmic-transparency-reports", "vc:label": "Algorithmic Transparency Reports"},
+    {"@id": "urn:visionflow:linked:ai-ethics-board", "vc:label": "AI Ethics Board"},
+    {"@id": "urn:visionflow:linked:ai-ethics-checklist", "vc:label": "AI Ethics Checklist"},
+    {"@id": "urn:visionflow:linked:algorithmic-transparency-index", "vc:label": "Algorithmic Transparency Index"},
+    {"@id": "urn:visionflow:linked:ai-governance-law-and-privacy", "vc:label": "AI Governance Law and Privacy"},
+    {"@id": "urn:visionflow:linked:decision-transparency", "vc:label": "Decision Transparency"},
+    {"@id": "urn:visionflow:linked:ai-policy", "vc:label": "AI Policy"},
+    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"}
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {"vc:key": "legacy-term-id", "vc:value": "AI-0392"},
+    {"vc:key": "preferred-term", "vc:value": "AI Documentation Standards"}
+  ],
+  "prov:wasAttributedTo": {"@id": "did:nostr:jjohare"},
+  "prov:generatedAtTime": {"@value": "2026-05-18T07:12:05Z", "@type": "xsd:dateTime"}
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-documentation-standards",
+  "@type": "Class",
+  "label": "AI Documentation Standards",
+  "definition": "AI Documentation Standards are structured frameworks and templates for comprehensively documenting AI systems, datasets, and models to ensure transparency, accountability, reproducibility, and informed stakeholder decision-making throughout the AI lifecycle.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "relations": {
+    "implements": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"},
+      {"@id": "urn:ngm:class:datasheets-for-datasets", "label": "Datasheets for Datasets"},
+      {"@id": "urn:ngm:class:system-cards", "label": "System Cards"},
+      {"@id": "urn:ngm:class:factsheets", "label": "FactSheets"},
+      {"@id": "urn:ngm:class:data-cards", "label": "Data Cards"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:algorithmic-transparency", "label": "Algorithmic Transparency"},
+      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-auditing", "label": "AI Auditing"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"},
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+    ]
+  },
+  "quality": 0.92,
+  "provenance": {
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "inferenceRule": "R1EnrichmentFull"
+  },
+  "subClassOf": [
+    {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
+    {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"}
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ai-documentation-standards:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:df2916f682f73afa86cc420193328ddb65ca3144592d1897ca0ac4e952ed7c4f"
+  },
+  "vc:resolutions": [
+    {"raw": "[[Datasheets (Gebru et al.)]]", "resolved": "urn:visionflow:linked:datasheets-gebru-et-al", "kind": "StubLink"},
+    {"raw": "[[ISO/IEC 23053]]", "resolved": "urn:visionflow:linked:iso-iec-23053", "kind": "StubLink"},
+    {"raw": "[[Model Cards (Mitchell et al.)]]", "resolved": "urn:visionflow:linked:model-cards-mitchell-et-al", "kind": "StubLink"},
+    {"raw": "[[AIEthicsDomain]]", "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics", "kind": "ResolvedLink"},
+    {"raw": "[[ConceptualLayer]]", "resolved": "urn:visionflow:owl:class:conceptual-layer", "kind": "ResolvedLink"},
+    {"raw": "[[EU AI Act Regulatory Instrument]]", "resolved": "urn:visionflow:owl:class:eu-ai-act", "kind": "ResolvedLink"},
+    {"raw": "[[Smart Contract]]", "resolved": "urn:visionflow:owl:class:smart-contract", "kind": "ResolvedLink"},
+    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:owl:class:ai-governance", "kind": "ResolvedLink"},
+    {"raw": "[[IEEE 7001]]", "resolved": "urn:visionflow:linked:ieee-7001", "kind": "StubLink"},
+    {"raw": "[[ISO/IEC 42001]]", "resolved": "urn:visionflow:linked:iso-iec-42001", "kind": "StubLink"},
+    {"raw": "[[NIST AI RMF]]", "resolved": "urn:visionflow:linked:nist-ai-rmf", "kind": "StubLink"},
+    {"raw": "[[System Cards]]", "resolved": "urn:visionflow:linked:system-cards", "kind": "StubLink"},
+    {"raw": "[[FactSheets (IBM)]]", "resolved": "urn:visionflow:linked:factsheets-ibm", "kind": "StubLink"},
+    {"raw": "[[Data Cards]]", "resolved": "urn:visionflow:linked:data-cards", "kind": "StubLink"},
+    {"raw": "[[Algorithmic Transparency]]", "resolved": "urn:visionflow:linked:algorithmic-transparency", "kind": "StubLink"},
+    {"raw": "[[Responsible AI]]", "resolved": "urn:visionflow:linked:responsible-ai", "kind": "StubLink"},
+    {"raw": "[[AI Risk Management]]", "resolved": "urn:visionflow:linked:ai-risk-management", "kind": "StubLink"},
+    {"raw": "[[GDPR]]", "resolved": "urn:visionflow:linked:gdpr", "kind": "StubLink"},
+    {"raw": "[[Regulatory Compliance]]", "resolved": "urn:visionflow:linked:regulatory-compliance", "kind": "StubLink"},
+    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
+    {"raw": "[[AI Auditing]]", "resolved": "urn:visionflow:linked:ai-auditing", "kind": "StubLink"},
+    {"raw": "[[Bias Analysis]]", "resolved": "urn:visionflow:linked:bias-analysis", "kind": "StubLink"},
+    {"raw": "[[AI Ethics]]", "resolved": "urn:visionflow:linked:ai-ethics", "kind": "StubLink"},
+    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
+    {"raw": "[[AI Impact Assessment]]", "resolved": "urn:visionflow:linked:ai-impact-assessment", "kind": "StubLink"},
+    {"raw": "[[AI Model Card]]", "resolved": "urn:visionflow:linked:ai-model-card", "kind": "StubLink"},
+    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink"},
+    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
+    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "StubLink"},
+    {"raw": "[[AI Lifecycle]]", "resolved": "urn:visionflow:linked:ai-lifecycle", "kind": "StubLink"},
+    {"raw": "[[Documentation As Code]]", "resolved": "urn:visionflow:linked:documentation-as-code", "kind": "StubLink"},
+    {"raw": "[[Ai Transparency Framework]]", "resolved": "urn:visionflow:linked:ai-transparency-framework", "kind": "StubLink"},
+    {"raw": "[[AI Governance Framework]]", "resolved": "urn:visionflow:linked:ai-governance-framework", "kind": "StubLink"},
+    {"raw": "[[AI Governance Maturity Model]]", "resolved": "urn:visionflow:linked:ai-governance-maturity-model", "kind": "StubLink"},
+    {"raw": "[[Documentation Generation]]", "resolved": "urn:visionflow:linked:documentation-generation", "kind": "StubLink"},
+    {"raw": "[[Documentation Standards]]", "resolved": "urn:visionflow:linked:documentation-standards", "kind": "StubLink"},
+    {"raw": "[[AI Ecosystem]]", "resolved": "urn:visionflow:linked:ai-ecosystem", "kind": "StubLink"},
+    {"raw": "[[Algorithmic Transparency Reports]]", "resolved": "urn:visionflow:linked:algorithmic-transparency-reports", "kind": "StubLink"},
+    {"raw": "[[AI Ethics Board]]", "resolved": "urn:visionflow:linked:ai-ethics-board", "kind": "StubLink"},
+    {"raw": "[[AI Ethics Checklist]]", "resolved": "urn:visionflow:linked:ai-ethics-checklist", "kind": "StubLink"},
+    {"raw": "[[Algorithmic Transparency Index]]", "resolved": "urn:visionflow:linked:algorithmic-transparency-index", "kind": "StubLink"},
+    {"raw": "[[AI Governance Law and Privacy]]", "resolved": "urn:visionflow:linked:ai-governance-law-and-privacy", "kind": "StubLink"},
+    {"raw": "[[Decision Transparency]]", "resolved": "urn:visionflow:linked:decision-transparency", "kind": "StubLink"},
+    {"raw": "[[AI Policy]]", "resolved": "urn:visionflow:linked:ai-policy", "kind": "StubLink"},
+    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "StubLink"}
+  ],
+  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
+  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
+}
+```
+
+- ### Definition
+  - AI Documentation Standards are structured frameworks, templates, and institutional requirements for comprehensively documenting [[Machine Learning]] systems, datasets, and models across the full [[AI Lifecycle]] to ensure [[Algorithmic Transparency]], accountability, reproducibility, and informed stakeholder decision-making. These standards specify required information about system characteristics, development processes, performance metrics, limitations, intended uses, and governance practices, enabling [[AI Auditing]], compliance verification, and [[AI Risk Management]] at scale. The canonical documentation artefacts are: [[AI Model Card]] (introduced by [[Model Cards (Mitchell et al.)]] 2019) documenting model details, intended use, performance metrics across demographic subgroups, ethical considerations, and caveats — providing a concise yet structured disclosure layer readable by both technical and non-technical audiences; [[Datasheets (Gebru et al.)]] (2018/2021, Communications of the ACM) describing data composition, collection processes, pre-processing steps, labelling procedures, intended uses, and limitations for every dataset consumed in training or evaluation; [[System Cards]] documenting end-to-end AI systems including architecture, training procedures, deployment context, monitoring approaches, and governance structures — as used by Meta for its large-scale model releases; [[FactSheets (IBM)]] providing comprehensive transparency information for AI services including fairness, robustness benchmarks, and intended-use lists; and [[Data Cards]] (Pushkarna et al. 2022, NeurIPS) extending the datasheets concept with purposeful metadata structures designed for responsible AI pipelines. Documentation standards address four orthogonal transparency needs: algorithmic transparency (how the system operates internally), performance transparency (accuracy, fairness metrics, failure modes across demographic strata), data transparency (training data provenance, biases, annotation labour conditions), and governance transparency (oversight mechanisms, accountability chains, redress procedures). Regulatory obligations increasingly mandate these artefacts: [[EU AI Act]] Article 11 and Annex IV require technical documentation for high-risk AI systems, with GPAI obligations (Art. 56) enforced from August 2025; [[GDPR]] Articles 13–14 require information provision about automated decision-making; [[ISO/IEC 23053]] and [[ISO/IEC 42001]] (AI Management Systems, December 2023) provide management system standards for organisational AI accountability; [[IEEE 7001]] (2021) defines measurable, testable transparency levels for autonomous systems; and the [[NIST AI RMF]] (AI RMF 1.0, 2023) frames transparency and documentation under its Govern–Map–Measure–Manage quadrant. Effective documentation is increasingly machine-readable, version-controlled, linked to live monitoring dashboards, and maintained continuously as living artefacts rather than retrospective reports. The emergence of [[Model Context Protocol]] and metadata-rich documentation pipelines in 2025–2026 is enabling LLM-assisted auto-generation, reducing documentation creation time by up to 90% while expanding coverage across the model registry. This brings [[AI Documentation Standards]] into direct relation with [[AI Ecosystem]] compliance tooling, [[Explainable AI]] requirements, and the broader governance fabric of [[AI Governance Framework]] maturity models.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:AIDocumentationStandards
+  - owl-role:: Process
+  - owl-inferred:: ai:VirtualProcess, ai:GovernanceInstrument, ai:TransparencyMechanism
+  - belongs-to-domain:: [[AIEthicsDomain]]
+  - implemented-in-layer:: [[ConceptualLayer]]
+
+- ### Relationships
+  - is-subclass-of:: [[AI Governance]], [[Documentation Standards]], [[AI Governance Framework]], [[Responsible AI]]
+  - has-part:: [[AI Model Card]], [[Datasheets (Gebru et al.)]], [[System Cards]], [[FactSheets (IBM)]], [[Data Cards]], [[Algorithmic Transparency Reports]], [[Documentation Generation]], [[AI Impact Assessment]]
+  - requires:: [[Algorithmic Transparency]], [[AI Lifecycle]], [[Bias Analysis]], [[Machine Learning]], [[AI Auditing]], [[Explainable AI]]
+  - enables:: [[Responsible AI]], [[AI Auditing]], [[Regulatory Compliance]], [[AI Impact Assessment]], [[AI Safety]], [[AI Governance]], [[Algorithmic Transparency]], [[Decision Transparency]]
+  - implements:: [[AI Governance]], [[AI Governance Framework]], [[EU AI Act]], [[ISO/IEC 42001]], [[NIST AI RMF]]
+  - depends-on:: [[Machine Learning]], [[Explainable AI]], [[Large Language Models]], [[AI Lifecycle]], [[AI Ethics]]
+  - supports:: [[AI Ethics]], [[AI Safety]], [[AI Governance Maturity Model]], [[AI Ecosystem]], [[AI Policy]], [[AI Ethics Checklist]]
+  - uses:: [[Documentation Generation]], [[Documentation As Code]], [[Model Context Protocol]], [[Documentation Standards]], [[AI Transparency Framework]]
+  - contrasts-with:: [[Large Language Models]] (as subject of documentation, not producer), [[Informal AI Disclosure]]
+  - related-to:: [[EU AI Act]], [[ISO/IEC 23053]], [[ISO/IEC 42001]], [[IEEE 7001]], [[NIST AI RMF]], [[GDPR]], [[Model Cards (Mitchell et al.)]], [[AI Transparency Framework]], [[AI Ecosystem]], [[AI Ethics Board]], [[Algorithmic Transparency Index]], [[AI Governance Law and Privacy]]
+  - standardized-by:: [[ISO/IEC 42001]], [[NIST AI RMF]], [[IEEE 7001]], [[EU AI Act]], [[ISO/IEC 23053]]
+  - bridges-to:: [[Smart Contract]] (domain: bc)
+
+- ### Content
+  ## Compositional Relationships (Components)
+  ```
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:hasPart ai:AIModelCard))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:hasPart ai:DatasheetsForDatasets))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:hasPart ai:SystemCards))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:hasPart ai:FactSheets))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:hasPart ai:DataCards))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:hasPart ai:AlgorithmicTransparencyReport))
+  ```
+  ## Dependency Relationships
+  ```
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:requires ai:AlgorithmicTransparency))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:requires ai:AILifecycle))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:requires ai:BiasAnalysis))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:dependsOn ai:MachineLearning))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:dependsOn ai:ExplainableAI))
+  ```
+  ## Capability Relationships
+  ```
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:enables ai:AIAuditing))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:enables ai:RegulatoryCompliance))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:enables ai:AIImpactAssessment))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:enables ai:AISafety))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:supports ai:AIEthics))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:supports ai:AIGovernanceMaturityModel))
+  ```
+  ## Implementation Relationships
+  ```
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:implements ai:AIGovernance))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:implements ai:AIGovernanceFramework))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:uses ai:DocumentationGeneration))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:uses ai:DocumentationAsCode))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:uses ai:ModelContextProtocol))
+  ```
+  ## Reduction Relationships
+  ```
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:reducesTo ai:DocumentationStandards))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:reducesTo ai:AITransparencyFramework))
+  ```
+  ## Equivalence and Disjointness Relationships
+  ```
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:standardizedBy ai:EUAIACT))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:standardizedBy ai:ISOIEC42001))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:standardizedBy ai:NISTAIRM))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:standardizedBy ai:IEEE7001))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:relatedTo ai:AIEcosystem))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:relatedTo ai:AIGovernanceMaturityModel))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:contrastsWith ai:InformalAIDisclosure))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:bridgesTo ai:SmartContract))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:partOf ai:AIGovernanceAndEthics))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:partOf ai:RegulatoryComplianceFramework))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:producedBy ai:MLOrganisation))
+
+  SubClassOf(ai:AIDocumentationStandards
+    ObjectSomeValuesFrom(ai:verifiedBy ai:AIAuditing))
+  ```
+
+  ## About
+  AI Documentation Standards constitute the evidentiary infrastructure of responsible AI. They emerged from two distinct research lineages: accountability studies in sociotechnical systems (Friedman & Nissenbaum 1996; Selbst & Barocas 2018) that identified documentation as the primary mechanism for operationalising value commitments in software artefacts; and practical fairness auditing work (Raji & Buolamwini 2019; Buolamwini & Gebru 2018) that demonstrated how poorly documented training data and evaluation conditions lead directly to systematic demographic disparities in deployed systems. The concept of formalised model documentation was crystallised by Mitchell et al. (2019) in "Model Cards for Model Reporting" (FAccT 2019), which introduced a short-document schema requiring developers to disclose intended use, out-of-scope uses, evaluation data, quantitative analyses disaggregated by demographic group, ethical considerations, and caveats — a lightweight but structured accountability instrument capable of being read by policymakers, journalists, and affected communities as well as by technical ML engineers. The foundational intuition was borrowed from consumer product labelling: just as a food label must disclose ingredients, allergens, and nutritional content, a model card must disclose training data characteristics, known failure modes, and the demographic groups on which the model was evaluated. The Model Card for Model Reporting paper listed nine required sections — Model Details (authorship, architecture, version), Intended Use (primary and out-of-scope uses), Factors (features that affect performance including demographic subgroups, environmental conditions), Metrics (chosen evaluation metrics), Evaluation Data (datasets used for evaluation), Training Data (datasets used for training, with any limitations noted), Quantitative Analyses (diagrams disaggregating performance across factors), Ethical Considerations (use cases and foreseeable misuse), and Caveats and Recommendations (additional testing needs, ideal use conditions). The concision of the original schema — designed to fit on two pages — proved both a strength (adoption barrier low enough for practitioners) and a weakness (depth insufficient for regulatory compliance or adversarial use case assessment).
+
+  Concurrently, Gebru et al. (2018/2021) proposed Datasheets for Datasets — inspired by standardised hardware datasheets in electrical engineering — requiring dataset creators to document motivation, composition, collection process, preprocessing, labelling methodology, uses and limitations, distribution policy, and maintenance plans. The motivating observation was that the ML community systematically lacked the documentation infrastructure to answer basic questions about widely used benchmark datasets: Who collected them? From whom was data collected, and was consent obtained? What are the demographic characteristics of the subjects? What labelling instructions were given, and what was inter-annotator agreement? How should the dataset not be used? These questions are not merely academic; Buolamwini and Gebru's Gender Shades study (2018) found gender classification error rates up to 34.7% for darker-skinned women versus 0.3% for lighter-skinned men in commercial AI systems, attributable directly to unrepresentative training data. The Datasheet schema operationalises the documentation practices that would have surfaced these disparities before deployment. Together these two artefact types — Model Cards and Datasheets — defined the documentation vocabulary that regulators have since enshrined in law.
+
+  The regulatory crystallisation phase began with the EU AI Act (Regulation (EU) 2024/1689), which entered into force on 1 August 2024 with staggered enforcement phases. Article 11 and Annex IV require high-risk AI system providers to maintain detailed technical documentation before market placement, updated continuously throughout the lifecycle. Annex IV specifies thirteen documentation categories: (1) general description of the AI system including intended purpose; (2) description of design and development processes; (3) assessment and classification of risks; (4) description of monitoring and logging capabilities; (5) description of transparency and provision of information to deployers; (6) description of human oversight measures; (7) description of measures for accuracy, robustness, and cybersecurity; (8) description of the data and data governance practices; (9) testing and validation procedures; (10) description of compliance with GPAI obligations; (11) information on known limitations and foreseeable risks; (12) description of post-market monitoring and incident reporting; and (13) description of the relevant standards applied. GPAI model obligations under Articles 53–56, enforceable from August 2025, additionally require providers of general-purpose AI models with systemic risk to publish summaries of training data content, maintain copyright compliance records, conduct adversarial testing, report serious incidents to the EU AI Office, and ensure cybersecurity measures appropriate to the risk level. Parallel frameworks include NIST AI RMF (2023), which maps transparency and documentation obligations across its four core functions (Govern: establishing policies and accountability structures; Map: categorising AI context and risk; Measure: analysing and assessing risk; Manage: prioritising and implementing risk treatments), with documentation cited as an output of each function and as evidence for external accountability. ISO/IEC 42001 (December 2023) provides a certifiable AI Management System standard requiring organisations to establish, implement, maintain, and continually improve an AIMS, with documented AI policy, context analysis, risk and impact assessments, and lifecycle records as core outputs. Its companion standard BS ISO/IEC 42006:2025 entered force in 2025, establishing qualification requirements for AI management system auditors. In the UK, the Centre for Data Ethics and Innovation (CDEI) and the Alan Turing Institute have published voluntary guidance on [[Algorithmic Transparency Reports]] (ATRs) as a mechanism for government AI disclosure, with over 100 central and local government AI systems having published ATRs by 2025 under the Algorithmic Transparency Recording Standard (ATRS).
+
+  Documentation standards are increasingly operationalised through automation and machine-readable formats. Academic work in 2024–2025 demonstrated automated generation of model cards and data cards using [[Large Language Models]] (Gangemi et al. 2024; arXiv:2405.06258), with LLMs extracting relevant metadata from training run logs, evaluation framework outputs, and data pipeline configurations — dramatically reducing the manual effort involved in producing high-quality documentation from days to hours. AI Transparency Atlas (2024, arXiv:2512.12443) proposed a real-time scoring pipeline for model card completeness, computing scores across eight dimensions (intended use specificity, limitation disclosure, evaluation breadth, disaggregated metrics, data provenance, contact information, versioning, and ethical risk coverage) and surfacing gaps against regulatory checklists in real-time. This kind of continuous compliance monitoring — applied during ML experiment runs rather than retrospectively before deployment — represents a significant maturation of documentation practice from periodic report-writing to integrated quality assurance. Empirical studies of 32,000 Hugging Face model cards (2024, arXiv:2402.05160) found that fewer than 15% disclosed training data sources, fewer than 10% reported disaggregated performance metrics, and fewer than 5% discussed limitations in any substantive way — quantifying the implementation gap that regulatory mandates must close. The TEDI framework (2025, arXiv:2505.17841) extended this analysis to dataset documentation, developing twelve trustworthiness and ethical indicators enabling comparative benchmarking of dataset documentation quality across repositories, finding average compliance scores below 30% even for well-known benchmark datasets. These empirical findings collectively make the case that voluntary documentation standards, however well-designed, achieve limited uptake without regulatory enforcement mechanisms and automated tooling support.
+
+  The emergence of agentic AI systems poses distinctive challenges for AI Documentation Standards. Traditional documentation frameworks were designed around a clear separation between a trained model (characterised by fixed weights and an evaluation dataset) and a deployment context (specified in the Model Card's Intended Use section). Agentic systems collapse this distinction: an [[Agentic AI]] agent's behaviour is not determined solely by model weights but also by its system prompt, its tool registry, its memory state, its inter-agent communication partners, and the specific task context in which it operates. A single set of model weights might power radically different agents depending on these configuration parameters. Policy Cards (arXiv:2510.24383, 2025) proposed a machine-readable runtime governance specification format — analogous to robots.txt for web crawlers — that encodes constraints on agent behaviour, permitted tool uses, logging requirements, and escalation protocols in a structured format that agent systems can read and enforce at runtime. This represents a shift from documentation as a disclosure artefact (read by humans to understand AI systems) to documentation as an operational policy instrument (read by AI systems to constrain their own behaviour). The convergence of documentation and governance enforcement is likely to intensify as [[Agent Frameworks]] and [[Model Context Protocol]] infrastructure matures through 2026–2030.
+
+  ## Components / Architecture
+
+  ### Core Documentation Artefact Types
+
+  - **[[AI Model Card]]** (Mitchell et al. 2019; updated by Google, Hugging Face): The foundational AI documentation artefact. Schema sections — Model Details (authorship, architecture, training date, version, contact), Intended Use (primary use, out-of-scope use, users), Factors (relevant features affecting performance including demographic groups, environmental conditions), Metrics (performance measures chosen and why), Evaluation Data (dataset used, why chosen, preprocessing), Training Data (dataset used, caveats, preprocessing), Quantitative Analyses (intersectional analysis diagrams disaggregating performance), Ethical Considerations (use cases with ethical dimensions, foreseeable misuse), and Caveats and Recommendations (additional testing, ideal use conditions). Minimum viable card: approximately 2 pages; exemplary production card (e.g., Google Gemma 2, Meta LLaMA 3.1): 15–30 pages with disaggregated benchmark tables across fairness metrics, safety evaluations, and capability assessments. Hugging Face's `huggingface_hub` library provides a `ModelCard` class enabling programmatic generation from structured metadata. As of 2025, GPAI model providers publish expanded Model Cards as a primary mechanism for EU AI Act Art. 53 transparency obligations.
+  - **[[Datasheets (Gebru et al.)]]** (Gebru et al. 2018/2021, Communications of the ACM): Documentation artefact for every dataset used in ML training, fine-tuning, or evaluation. Schema sections — Motivation (why created, who funded), Composition (what is in the dataset, is it a sample, what counts as an instance, are there errors or noise), Collection Process (how was data collected, what mechanisms, was consent obtained, was an ethics review conducted), Preprocessing and Cleaning and Labelling (was preprocessing applied, what, is raw data available, what was the labelling approach, what was inter-annotator agreement), Uses (what has it been used for, what should it not be used for), Distribution (how is it distributed, IP constraints, export controls), and Maintenance (who is responsible, how can errors be reported, will the dataset be updated). Critical for EU AI Act Annex IV dataset documentation obligations. The LAION datasets controversy (2023, discovered to contain CSAM) and subsequent takedowns illustrated the precise risks that Datasheet documentation is designed to surface before deployment.
+  - **[[System Cards]]** (Meta, OpenAI usage, 2023–present): Extends the Model Card to document a full deployed AI system rather than just its underlying model. Additional sections relative to Model Card: System Architecture (component diagram, integration points, APIs), Red-Teaming and Evaluation (adversarial testing methods, discovered failure modes, mitigations applied), Deployment Safeguards (content filters, rate limits, misuse detection, monitoring), Incident Response (protocols for discovered harms, escalation paths, responsible disclosure), and Post-Deployment Monitoring (ongoing evaluation, drift detection, feedback mechanisms). Meta's System Card for LLaMA 2 (2023) and OpenAI's GPT-4 System Card (2023) established industry practice. System Cards are required for EU AI Act high-risk system providers as part of the Art. 11 / Annex IV technical documentation package.
+  - **[[FactSheets (IBM)]]** (Arnold et al. 2019, IBM Journal of Research and Development): Questionnaire-driven transparency report covering 170+ questions across purpose (intended audience, benefits, benefits to excluded parties), performance (benchmarks, test conditions, limitations), safety (adversarial robustness, out-of-distribution behaviour), security (access controls, data security), fairness (protected attributes, fairness metrics, disparity analysis), explainability (which explanations are available, what they explain), lineage (training data sources, model dependencies), and provider information (contact, licensing, support SLA). Used internally by IBM for Watson AI services and proposed as a standardised disclosure format for AI service providers. Influenced by EU AI Act Art. 13 (transparency and provision of information to deployers) requirements.
+  - **[[Data Cards]]** (Pushkarna et al. 2022, NeurIPS Workshop): Purposeful metadata structures for datasets with a structured template covering context of use (primary, secondary, and prohibited uses; sensitive attributes), dataset structure (format, size, temporal range, spatial coverage), data provenance (sources, collection methodology, collection dates, geographic distribution of collectors and subjects), social impact (potential positive uses, potential harms, who bears risks), and known limitations (known errors, missing data, demographic gaps, distribution shifts). Adopted by Google for internal ML datasets above 10,000 examples. The key innovation relative to Datasheets is a framework for specifying the dataset's "social context" — the labour conditions and compensation of data collectors and annotators, the power dynamics between data subjects and data users, and the communities at risk from misuse.
+  - **[[Algorithmic Transparency Reports]]** (UK CDEI Algorithmic Transparency Recording Standard, 2022): Public sector disclosure documents requiring UK government bodies using automated decision-making in public-facing services to publish structured disclosures covering: description of the algorithm and its role in the decision process; data inputs; development and testing methodology; human oversight and accountability mechanisms; performance metrics and evaluation approach; equalities impact assessment; and feedback and redress mechanisms. Over 100 central and local government AI systems had published ATRs by 2025 under the ATRS, creating the most comprehensive public-sector algorithmic disclosure register in the world.
+  - **Impact Assessment Cards** (Schumann et al. 2024, arXiv:2508.18919): Extending the model card paradigm to explicitly communicate risks and benefits of specific AI use cases, complementing the use-case-agnostic model card with a use-case-specific risk-benefit analysis. Motivated by the observation that the same model may have radically different risk profiles across its intended use cases.
+
+  ### Standards and Regulatory Instruments
+
+  - **[[EU AI Act]] Art. 11 / Annex IV** (Regulation (EU) 2024/1689, 2024, enforcement phases 2025–2026): Thirteen-category technical documentation schema for high-risk AI; GPAI Art. 53–56 (enforcement August 2025): training data summaries, copyright compliance, adversarial testing documentation, serious incident reporting. Full high-risk system documentation obligations apply from August 2026. Technical implementation guidance published by the EU AI Office in 2025.
+  - **[[ISO/IEC 42001]]:2023** — AI Management System standard specifying requirements for establishing, implementing, maintaining, and continually improving an AIMS. Certifiable through third-party audit. Documentation outputs include: AI policy statement, AI system impact assessment, training data records, evaluation and testing records, incident log, supplier assessment records. Companion auditor qualification standard BS ISO/IEC 42006:2025, entering force 2025, requires auditors to hold ISO 27001 lead auditor certification plus AI-specific additional competencies.
+  - **[[NIST AI RMF]] 1.0** (NIST AI 100-1, 2023) — Framework for AI risk management structured around Govern (establish culture and processes), Map (categorise AI context and risk), Measure (analyse and assess risks quantitatively), and Manage (prioritise, respond, and monitor). Documentation is an explicit output of each function: governance documentation (policies, roles, accountability); risk maps (documentation of AI system context, use cases, known risks); measurement results (evaluation protocols, benchmark results, bias assessments); and management records (risk treatment plans, monitoring reports, incident records). Voluntary but adopted by over 1,000 US organisations; increasingly referenced in US federal AI procurement requirements and state-level AI governance legislation.
+  - **[[ISO/IEC 23053]]:2022** — Framework for AI system accountability covering explanation, transparency, robustness, bias management, and reproducibility requirements. Establishes documentation requirements for AI system explanations (what must be explainable, at what level of technical detail, to which audience) and reproducibility (what records must be maintained to enable independent replication of model behaviour).
+  - **[[IEEE 7001]]-2021** — Standard for Transparency of Autonomous Systems. Defines five measurable levels of transparency (0: no transparency; 1: logging; 2: explainability to operators; 3: explainability to the public; 4: system-wide testing and validation; 5: real-time monitoring and certification) across five transparency domains (autonomy, detection, trustworthiness, situation awareness, and interpretability). Enables autonomous system developers to make objectively verifiable transparency claims aligned with specific use cases and stakeholder groups.
+  - **[[GDPR]] Art. 13–14 / Art. 22** — Information provision obligations for automated decision-making affecting individuals. Art. 22 gives data subjects the right not to be subject to solely automated decisions producing legal or similarly significant effects, and where such decisions occur, the right to obtain human review, express their point of view, and contest the decision. Documentation obligations include: logic of the automated decision, significance and envisaged consequences for the individual, information about profiling. These requirements have driven adoption of [[Explainable AI]] techniques as documentation inputs.
+  - **MHRA AI as a Medical Device (AIaMD) guidance** (2023, updated 2025): UK-specific documentation requirements for AI systems functioning as medical devices, requiring clinical evidence documentation (equivalent to a clinical evaluation report), post-market surveillance planning, and Software as a Medical Device (SaMD) documentation aligned with IEC 62304.
+  - **FCA AI Governance expectations** (Dear CEO Letter, 2024): UK financial regulators' expectations for AI documentation in regulated financial services, requiring firms to document AI model inventories, validation records, ongoing performance monitoring, and customer-facing AI disclosures.
+
+  ### Documentation Lifecycle
+
+  The documentation lifecycle runs in parallel with the AI system development and deployment lifecycle, with distinct documentation artefacts appropriate to each phase:
+
+  1. **Pre-development (Data Procurement Phase)**: Dataset curation begins with Datasheet drafting — documenting data sources, collection methodology, consent mechanisms, and known limitations before training commences. For proprietary datasets, Data Cards are completed alongside procurement documentation. Data governance records (provenance chain, licence terms, copyright clearances for GPAI compliance) are established in this phase.
+  2. **Development Phase (Training and Experimentation)**: Training configuration logging captures hyperparameters, batch sizes, compute budgets, optimiser settings, and random seeds required for reproducibility. Intermediate checkpoint documentation records model performance at each training stage. Experiment tracking in platforms like Weights & Biases, MLflow, or Comet ML provides the raw logs from which Model Card evaluation sections are later populated.
+  3. **Evaluation Phase**: Disaggregated performance analysis across demographic subgroups, task difficulty tiers, and environmental conditions generates the quantitative analysis content for Model Cards. Red-teaming sessions and adversarial testing generate findings for System Cards. [[Bias Analysis]] — computing performance disparities across protected groups — generates the fairness section of Model Cards. Third-party evaluation (where conducted, e.g., METR task evaluations for frontier models, UK AISI evaluations) generates independently verified evidence for high-stakes documentation.
+  4. **Deployment Preparation Phase**: Model Card completion, System Card assembly (adding deployment-specific context to the Model Card foundation), and EU AI Act Annex IV technical documentation package assembly. Internal legal review and privacy impact assessment (where required under GDPR Art. 35 Data Protection Impact Assessment obligations). Supplier documentation for downstream deployers (required by EU AI Act Art. 12 for GPAI models).
+  5. **Operational Monitoring Phase**: Post-market surveillance logs record model performance in deployment, user feedback, incident reports, and distributional shift indicators. [[AI Governance]] processes trigger documentation updates when significant changes in model behaviour are detected. For EU AI Act high-risk systems, the logging and monitoring obligations require continuous documentation of system operations at a level enabling post-incident reconstruction of decision logic.
+  6. **Model Update and Retirement Phase**: Documentation updates are required on each significant model update (new training data, fine-tuning, architecture change). Deprecation notices document the retirement timeline, successor model cross-references, data deletion attestations (for systems containing personal data), and transition guidance for downstream integrators. Version-controlled documentation repositories (following [[Documentation As Code]] principles) maintain the full history of documentation changes alongside model version history.
+
+  ## Use Cases / Major Families
+
+  ### Regulatory Compliance — EU AI Act
+
+  High-risk AI system providers operating in the EU market must assemble EU AI Act-compliant technical documentation packages integrating Annex IV material from Model Cards, Datasheets, system architecture descriptions, risk assessments, and monitoring plans. The practical challenge is mapping existing ML team outputs — which vary significantly across organisations in format and completeness — to the structured Annex IV schema. Compliance consultancies including Kothes GmbH (Germany), VerifyWise (UK), and specialised AI law firms have developed documentation tooling and gap-analysis services to support this mapping process. The technical documentation must be made available to national market surveillance authorities on request and maintained for ten years after market placement. GPAI model providers — OpenAI, Anthropic, Mistral, Meta, Google, Alibaba — must publish training data summaries under Art. 53–56 obligations from August 2025, creating a novel public disclosure obligation without clear precedent in technology regulation. The implementation challenge is significant: frontier model training datasets run to tens of trillions of tokens drawn from thousands of data sources, making complete provenance documentation extraordinarily resource-intensive.
+
+  ### Government Algorithmic Disclosure
+
+  UK public sector bodies operating AI in public-facing decision processes are guided by the [[Ai Transparency Framework]] and CDEI's [[Algorithmic Transparency Reports]] (ATR) scheme under the Algorithmic Transparency Recording Standard (ATRS). The ATRS requires disclosure of: the name and purpose of the algorithm; what decisions it supports or informs; the type of algorithm; the data it uses; the supplier (if a third-party product); what safeguards are in place; how the algorithm was evaluated; what equality impact assessment was conducted; and who the accountability point is. Over 100 central and local government AI systems had published ATRs by 2025. Scotland's algorithmic register (launched 2023) extended this to Scottish public authorities, requiring disclosure of automated systems meeting specified thresholds of decision significance and automation level. The NHS AI Lab has developed documentation templates aligned with MHRA regulatory requirements for AI as a Medical Device (AIaMD), incorporating clinical evidence requirements, intended clinical use specification, performance validation protocols, post-market clinical follow-up plans, and equal access impact assessments alongside standard model card fields. These government disclosure frameworks are notable for their focus on the human oversight dimension — documenting not just what the AI system does but how human judgement is retained, what overrides are available, and how affected individuals can seek review of AI-assisted decisions.
+
+  ### Enterprise ML Governance and Model Risk Management
+
+  Enterprises operating mature [[AI Governance Maturity Model]] programmes document model inventories against [[AI Model Card]] templates, with version-controlled cards stored in model registries (MLflow, Vertex AI Model Registry, Azure ML, SageMaker Model Registry). Large financial services firms — subject to FCA model risk management expectations and SR 11-7 / SS1/23 supervisory guidance in the US and UK respectively — treat AI model documentation as a regulatory compliance artefact equivalent to traditional model validation reports, requiring independent validation of the documentation contents rather than self-attestation. Google's internal Data Cards practice, applied to all internal training datasets above 10,000 examples, exemplifies institutionalised documentation discipline at scale. Meta's practice of publishing System Cards for all major model releases — LLaMA 2, LLaMA 3, and the LLaMA 4 family — established public accountability expectations that now apply normative pressure on other major model providers to match the depth and transparency of their disclosures.
+
+  ### Open-Source Model Ecosystems and Hugging Face
+
+  Hugging Face mandates a model card README.md for all uploaded models, and provides a `huggingface_hub` library with `ModelCard` and `DatasetCard` Python classes for programmatic card generation from training metadata. The `huggingface_hub.ModelCard.from_template()` method instantiates a standard card schema that contributors can populate, significantly lowering the effort barrier. As of 2025, over 500,000 models on the Hub have associated model cards in some form, though completeness varies widely: the empirical study of 32,000 model cards (arXiv:2402.05160) found that fewer than 15% disclosed training data sources with any specificity, fewer than 10% reported disaggregated performance metrics across demographic groups, and fewer than 5% discussed limitations in a substantive way — demonstrating that presence of a model card file does not guarantee meaningful documentation. Hugging Face's Model Card Creator tool (launched 2023) and card validation tools that check completeness against the standard schema have incrementally improved average completeness scores, but the fundamental challenge remains that many model uploaders lack the evaluation data needed to complete the quantitative analyses section.
+
+  ### Automated Documentation Generation
+
+  The emergence of LLM-powered documentation automation is transforming documentation from a bottleneck to a byproduct of model development. DocAgent (2025, arXiv:2504.08725) demonstrated a multi-agent system for automated code documentation generation using specialised sub-agents for API identification, documentation draft generation, cross-reference resolution, and review. Applied to AI model documentation, similar multi-agent architectures extract relevant metadata from training logs (hyperparameters, dataset statistics, compute budgets), evaluation framework outputs (benchmark scores, fairness metrics, calibration curves), red-teaming session summaries, and deployment configuration files, then generate structured Model Card and Datasheet drafts requiring human review rather than original authorship. The AI Transparency Atlas (arXiv:2512.12443, 2024) pipeline scores model cards in real-time against completeness criteria, surfacing specific missing sections and suggesting content. Commercial documentation platforms including Mintlify, Document360, Vidocu, and Notion AI Agents report 85–90% reductions in documentation creation time with 340% increases in documentation coverage when AI-assisted generation is adopted. The [[Model Context Protocol]] (MCP), enabling AI models to connect directly to training pipeline APIs, model registries, and evaluation databases, is creating the infrastructure for truly autonomous documentation agents that maintain living documentation in continuous synchronisation with evolving model behaviour — eliminating the documentation lag that makes static artefacts unreliable as regulatory compliance evidence.
+
+  ### Financial Services Model Risk Documentation
+
+  AI models deployed in credit scoring, fraud detection, algorithmic trading, insurance underwriting, and customer service in regulated financial services require documentation meeting both ML governance best practice and regulatory supervisory expectations. In the UK, FCA's Dear CEO Letter (2024) explicitly addressed AI model governance, requiring firms to document AI model inventories, maintain validation evidence, monitor models for performance degradation and distributional shift, and ensure customer-facing AI disclosures meet Consumer Duty fairness requirements. The FCA aligned its expectations closely with the model card framework while extending it with requirements specific to financial services: backtesting documentation, stress testing results, concentration risk from shared AI infrastructure, and explainability of individual credit decisions sufficient to comply with GDPR Art. 22 right to explanation. Leeds-based fintech firms and Manchester-based insurance technology companies have emerged as early adopters of formal AI documentation standards due to the combination of FCA regulatory pressure and sophisticated enterprise risk management cultures.
+
+  ## Academic Context
+
+  The intellectual lineage of AI documentation standards intersects three distinct but convergent traditions, each contributing different theoretical tools and empirical methods.
+
+  The **Value-Sensitive Design** tradition (Friedman & Nissenbaum 1996; Friedman, Kahn & Borning 2008) argues that technical artefacts embody values — that design choices about data selection, performance metrics, and deployment contexts are implicitly choices about whose interests are served and whose are excluded. Documentation standards operationalise this insight: by requiring explicit articulation of intended use, out-of-scope use, and demographic performance disaggregation, they force developers to confront embedded value choices that might otherwise remain implicit and invisible. The particular challenge for ML systems is that value embeddings occur not just in design choices (as in traditional software) but also in training data selection, annotation instruction writing, and evaluation metric choice — all stages occurring before any code is written and all requiring documentation to be made accountable.
+
+  The **Feminist Science and Technology Studies (STS)** tradition (Gebru, Crawford, Raji, Buolamwini, Benjamin) argues that documentation gaps reproduce structural inequities through a specific mechanism: data about marginalised communities is systematically underrepresented in training datasets, systematically underweighted in evaluation metrics, and systematically ignored in deployment decisions, while the harms that result are distributed back onto those same communities. The "stochastic parrots" paper (Bender, Gebru et al. 2021) extended this analysis to [[Large Language Models]], arguing that the cultural biases embedded in web-scale training data are amplified rather than averaged out by scale, and that documentation of training data composition is therefore a prerequisite for understanding which communities' voices are over- and under-represented in LLM outputs. The Gender Shades study (Buolamwini & Gebru 2018) provided the canonical empirical demonstration: facial recognition systems from Microsoft, IBM, and Face++ achieved error rates up to 34.7% for darker-skinned women versus 0.3% for lighter-skinned men, attributable to training datasets that were 75–80% lighter-skinned and 75–83% male — an imbalance that a mandatory Datasheet would have disclosed before deployment.
+
+  The **Software engineering standards** tradition (IEEE, ISO/IEC) provides the formal requirements vocabulary — what must be documented, in what format, verified by whom, retained for how long — adapted for the specific properties of learned statistical systems. The critical adaptation challenge is that traditional software documentation (architecture diagrams, API specifications, functional requirements, test case results) describes a deterministic system whose behaviour is fully specified by its code. ML model documentation must instead characterise a probabilistic system whose behaviour is a statistical property of the training data distribution, model architecture, and evaluation protocol — requiring different documentation primitives (performance distributions rather than pass/fail tests, demographic disaggregation rather than functional specification, limitation acknowledgement rather than completeness claims). IEEE 7001 and ISO/IEC 42001 represent the most mature adaptations of software engineering documentation standards to the ML domain.
+
+  Key research groups producing foundational work on AI documentation standards include: Google Research (Mitchell, Gebru, Pushkarna — model cards, data cards, fairness at scale); Stanford HAI (Raji, Henderson, Liang — audit frameworks, HELM benchmarks, accountability tooling); MIT Media Lab / CSAIL (Buolamwini — facial analysis bias audits as the paradigmatic motivating case study); Oxford Internet Institute (Mittelstadt, Wachter — explainability obligations under GDPR, accountability adequacy); Alan Turing Institute (algorithmic transparency for public sector AI, AI Standards Hub); Data & Society (Crawford, Joler — anatomy of AI systems, supply chain documentation); AI Now Institute (Whittaker, Raji — AI auditing practice, documentation sufficiency).
+
+  The relationship between AI documentation standards and [[Explainable AI]] (XAI) is a critical and undertheorised area. Documentation standards require disclosure of model limitations and failure modes; XAI methods (LIME, SHAP, attention visualisation, counterfactual explanations) provide the technical tools for generating the content of those disclosures. However, XAI methods themselves have limitations — feature attribution methods can be sensitive to small input perturbations, attention weights are not reliably indicative of decision causation, and counterfactual explanations may not reflect the actual computational pathway taken by the model. Documentation standards increasingly need to address not just the content of explanations but the reliability and limitations of the explanation methods used to generate them, creating a documentation-of-documentation challenge that remains an active research area.
+
+  ## Current Landscape (2026)
+
+  As of June 2026, the AI documentation standards landscape is in a transitional phase — between the era of voluntary best practice and the era of mandatory regulatory compliance with enforcement. The EU AI Act entered its primary enforcement phase, with GPAI model obligations (Art. 53–56) active from August 2025 and full high-risk AI system obligations (Art. 11, Annex IV) from August 2026. All major frontier model providers have published or announced GPAI-compliant training data summaries and technical documentation: OpenAI published a training data summary and copyright policy for GPT-4o; Anthropic published expanded model cards for Claude 3 and Claude 3.5/4; Google published Gemini technical reports covering training methodology, evaluation, and safety assessments; Meta published LLaMA 3 and LLaMA 4 System Cards; Mistral published model cards for Mistral Large 2 and Mistral Small 4. The consistency and depth of these disclosures varies considerably, with early assessments from the EU AI Office and independent researchers noting that training data summaries often provide high-level descriptions rather than the granular provenance information that would enable independent assessment of data quality, demographic representation, or copyright status.
+
+  ISO/IEC 42001 certification demand is growing rapidly in 2025–2026, driven by three factors: EU AI Act Article 40 creating a presumption of conformity for providers complying with harmonised standards (with ISO/IEC 42001 under evaluation as a potential harmonised standard); procurement requirements from EU public sector bodies and large enterprises requiring supplier AI governance certifications; and insurance and D&O liability considerations driving risk managers to seek certifiable evidence of AI management system maturity. The auditor qualification standard BS ISO/IEC 42006:2025 has generated a new professional market: dozens of certification bodies including TÜV Rheinland, SGS, Bureau Veritas, and BSI have launched AI management system audit services, and demand for qualified AI auditors significantly exceeds current supply. The NIST AI RMF has been adopted by over 1,000 US organisations and is increasingly referenced in US federal AI procurement requirements and state-level AI governance legislation, creating alignment pressure for US-EU regulatory convergence on documentation requirements.
+
+  Automated documentation generation has crossed decisively from research prototype to production tool in 2025–2026. Commercial tools report 85–90% reductions in documentation creation time with approximately 340% increase in documentation coverage breadth — meaning that documentation is now generated for models and datasets that would previously have been left undocumented due to resource constraints. LLM-generated first drafts of model cards and datasheets are now standard practice in large ML teams at Google, Meta, and frontier model laboratories. The AI Transparency Atlas pipeline scores model cards in real-time against regulatory checklists (EU AI Act Annex IV, NIST AI RMF documentation obligations, ISO/IEC 42001 records requirements), enabling continuous compliance monitoring integrated into MLOps pipelines. The transition from static documentation artefacts to living, versioned, machine-readable documentation systems is the defining infrastructure trajectory: documentation-as-code pipelines ([[Documentation As Code]]) integrate with MLOps frameworks and CI/CD systems, generating updated documentation artefacts automatically on each model re-training cycle, with changes tracked in version control alongside model weight checksums.
+
+  The frontier challenge for documentation standards is the emergence of [[Large Language Models]] and [[Agentic AI]] systems that strain or break the assumptions underlying existing documentation frameworks. Training data for frontier LLMs runs to tens of trillions of tokens from thousands of sources — documenting this in a Datasheet format that was designed for structured datasets of thousands to millions of labelled examples requires novel approaches to statistical characterisation rather than exhaustive enumeration. Model behaviour for LLMs is emergent, context-dependent, and cannot be fully characterised by a fixed evaluation suite: the same model may exhibit safe, coherent, and helpful behaviour in 99.9% of interactions while producing harmful outputs in carefully constructed adversarial scenarios, making any performance metric simultaneously true and misleadingly incomplete. Deployment contexts for frontier models are radically open-ended: a single GPT-4o or Claude 3.5 API serves thousands of different downstream applications with wildly different risk profiles — the Model Card's Intended Use section cannot enumerate use cases that developers have not yet imagined. System Cards for frontier models — GPT-4 System Card (OpenAI, 2023), Claude 3 Model Card (Anthropic, 2024), Gemini Technical Report (Google DeepMind, 2024) — represent the current state-of-practice: comprehensive documents running to 50–100 pages covering model architecture, training methodology, capability evaluations, safety assessments, red-teaming findings, and deployment safeguards. But regulators and AI safety researchers are pressing for more granular disaggregated evaluations, independent third-party audit verification rather than self-reported metrics, and standardised benchmark suites that enable cross-model comparison of documentation quality and accuracy — a form of documentation for documentation.
+
+  ## UK Context
+
+  The UK's approach to AI documentation is shaped by the pro-innovation regulatory stance of the 2023 AI White Paper ("A Pro-Innovation Approach to AI Regulation") and its operationalisation in the 2025 AI Opportunities Action Plan — both of which position the UK as seeking to lead on responsible AI deployment without the prescriptive ex-ante approval requirements of the EU AI Act. This creates a documentation landscape characterised by strong voluntary frameworks, sector-specific mandatory requirements, and a growing expectation that documentation practices adopted voluntarily today will be codified in sector-specific regulation within 2–3 years.
+
+  The Centre for Data Ethics and Innovation (CDEI), now part of DSIT, produced the Algorithmic Transparency Recording Standard (ATRS) in 2022, requiring central government bodies using AI in public-facing decisions to publish structured disclosures. The ATRS template covers: description of algorithm and purpose; decision type (recommendation, automation, augmentation); type of algorithm; data inputs and training data; development and testing approach; human oversight mechanisms; impact assessment; equalities screening; and accountability contacts. The Alan Turing Institute's AI UK programme provides technical guidance on documentation best practice and hosts the AI Standards Hub, which maps UK, EU, ISO, and IEEE documentation standards against each other for practitioners — a valuable interoperability resource given the regulatory divergence between UK, EU, and US documentation obligations post-Brexit.
+
+  The AI Safety Institute (AISI), established November 2023 at the Department for Science, Innovation and Technology, conducts systematic evaluations of frontier AI models against safety benchmarks and has published evaluation methodology documentation covering dangerous capability evaluations, alignment assessments, and societal risk profiling. AISI's bilateral evaluation agreements with OpenAI, Anthropic, Google DeepMind, Meta, and other frontier labs give it pre-release access to evaluate models before public deployment — creating a de facto documentation and safety verification requirement for models seeking UK market access. AISI's evaluation reports, published after each major model evaluation, represent a new form of third-party documentation that supplements provider-published model cards with independently-verified safety findings.
+
+  Scottish Government launched the UK's first public-sector algorithmic register in 2023, requiring all Scottish public authorities to disclose automated systems meeting defined thresholds of decision significance and automation level. The register covers AI systems in social care, housing benefits, criminal justice, and health — precisely the high-stakes public sector applications where documentation quality is most consequential. The NHS AI Lab has developed documentation templates for AI as a Medical Device (AIaMD) aligned with MHRA guidance, integrating clinical evidence documentation (equivalent to IEC 62304 software lifecycle records and ISO 14971 risk management documentation) with model card frameworks — creating hybrid documentation that satisfies both ML governance best practice and medical device regulatory requirements. NHS Digital Assessment Criteria (DTAC) require all NHS trusts deploying AI clinical tools to verify documentation completeness, creating a procurement-level documentation requirement that cascades to AI suppliers.
+
+  University research groups across the UK are contributing to the academic and policy foundations of documentation standards. Edinburgh's Bayes Centre and Alan Turing Institute node hosts research on algorithmic accountability in public sector AI. Edinburgh's Centre for Technomoral Futures (Shannon Vallor) focuses on ethics embedding in AI development processes, arguing that documentation standards are most effective when integrated into development workflow rather than appended as compliance tasks. Oxford's Internet Institute (Mittelstadt, Wachter) studies the legal adequacy of documentation for accountability obligations under GDPR — specifically whether current model card formats provide the "meaningful information about the logic involved" required by GDPR Art. 22(3). Manchester's Digital Futures at Work Research Centre (Ursula Huws lineage) examines the labour conditions of data annotation workers feeding the training datasets that documentation standards must characterise, arguing that Datasheet documentation should extend to labour rights and compensation practices of the annotation supply chain. UCL's Centre for Artificial Intelligence and Law (Christopher Sherborn) examines evidentiary uses of AI documentation in litigation and regulatory enforcement.
+
+  Northern England's industrial AI ecosystem is a significant early adopter of formal AI documentation standards, driven by a combination of sector-specific regulatory pressure, large enterprise risk management cultures, and proximity to regulatory-aware universities. In manufacturing, BAE Systems has developed AI documentation frameworks for safety-critical defence applications that substantially exceed standard model card requirements — incorporating DEFSTAN and MIL-SPEC documentation structures with ML-specific extensions covering adversarial robustness, out-of-distribution detection, and traceability of training data lineage for classification systems operating in high-consequence contexts. In healthcare, NHS trusts in Manchester (Manchester University NHS Foundation Trust, Salford Royal), Leeds (Leeds Teaching Hospitals Trust), and Sheffield (Sheffield Teaching Hospitals) are deploying AI diagnostic and workflow tools under NHS DTAC documentation requirements, creating regional clusters of AI documentation compliance expertise in the healthcare sector. In financial services, Leeds-based fintech firms including Sky Financial Solutions and a cluster of insurance technology companies are implementing FCA-aligned AI model documentation frameworks as part of enterprise AI governance programmes, with several firms having achieved early ISO/IEC 42001 certification assessments. The N8 Research Partnership's AI theme provides cross-institutional research infrastructure connecting these deployment contexts with the universities, enabling documentation standard research informed by real-world deployment experience.
+
+  ## Future Directions (2026–2030)
+
+  **Living Documentation Systems**: Documentation will shift from periodic manual artefacts to continuously-updated, versioned documentation systems embedded in MLOps pipelines. Every re-training event will trigger automated documentation updates with model comparison summaries and regression flagging.
+
+  **Machine-Readable Regulatory Compliance**: EU AI Act Annex IV content will be expressed as structured JSON-LD or RDF schemas, enabling automated compliance checking against regulatory requirements. Policy Cards (arXiv:2510.24383, 2025) propose machine-readable runtime governance specifications for agentic AI, extending documentation into operational policy enforcement.
+
+  **Third-Party Audit Standardisation**: Regulatory pressure and ISO/IEC 42006:2025 will drive the emergence of a professional AI documentation auditor market, analogous to financial auditing. Independent audit firms will verify documentation completeness and accuracy, creating liability incentives for documentation quality.
+
+  **Agentic and Multi-Agent Documentation**: As [[Agentic AI]] systems with emergent, tool-using behaviour become prevalent, documentation standards will need to cover not just model weights but agent configurations, tool registries, memory systems, and inter-agent communication protocols. New artefact types — Agent Cards, Workflow Cards — are anticipated by 2027.
+
+  **Global Harmonisation**: Convergence between EU AI Act, NIST AI RMF, ISO/IEC 42001, and emerging standards from Singapore (AI Verify), Canada (Algorithmic Impact Assessment), and Japan (AI Governance Guidelines) will drive a global documentation meta-standard by 2028–2030, reducing regulatory fragmentation costs for multinational AI deployers.
+
+  ## Research & Literature
+
+  1. Mitchell, M., Wu, S., Zaldivar, A., Barnes, P., Vasserman, L., Hutchinson, B., Spitzer, E., Raji, I.D., & Gebru, T. (2019). "Model Cards for Model Reporting." Proceedings of the ACM Conference on Fairness, Accountability, and Transparency (FAccT 2019). ACM.
+  2. Gebru, T., Morgenstern, J., Vecchione, B., Wortman Vaughan, J., Wallach, H., Daume III, H., & Crawford, K. (2021). "Datasheets for Datasets." Communications of the ACM, 64(12), 86–92.
+  3. Pushkarna, M., Zaldivar, A., & Kjartansson, O. (2022). "Data Cards: Purposeful and Transparent Dataset Documentation for Responsible AI." Proceedings of the ACM FAccT 2022.
+  4. Arnold, M., Bellamy, R.K.E., Hind, M., Houde, S., Mehta, S., Mojsilovic, A., Nair, R., Ramamurthy, K.N., Reimer, D., Olteanu, A., Piorkowski, D., Tsay, J., & Varshney, K.R. (2019). "FactSheets: Increasing Trust in AI Services through Supplier's Declarations of Conformity." IBM Journal of Research and Development, 63(4/5).
+  5. Raji, I.D., & Buolamwini, J. (2019). "Actionable Auditing: Investigating the Impact of Publicly Naming Biased Performance Results of Commercial AI Products." Proceedings of AIES 2019.
+  6. Buolamwini, J., & Gebru, T. (2018). "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification." Proceedings of the Conference on Fairness, Accountability and Transparency (FAT* 2018).
+  7. Bender, E.M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?" Proceedings of FAccT 2021. ACM.
+  8. European Parliament & Council. (2024). Regulation (EU) 2024/1689 — Artificial Intelligence Act. Official Journal of the European Union. (Annex IV: Technical Documentation).
+  9. ISO/IEC 42001:2023. "Artificial Intelligence — Management Systems." International Organization for Standardization. December 2023.
+  10. IEEE 7001-2021. "IEEE Standard for Transparency of Autonomous Systems." Institute of Electrical and Electronics Engineers. 2021.
+  11. National Institute of Standards and Technology (NIST). (2023). "Artificial Intelligence Risk Management Framework (AI RMF 1.0)." NIST AI 100-1. US Department of Commerce.
+  12. ISO/IEC 23053:2022. "Framework for Artificial Intelligence (AI) Systems Using Machine Learning (ML)." International Organization for Standardization.
+  13. Hupont, I., Delipetrev, B., Soler-Garrido, J., & Gomez, E. (2024). "Use Case Cards: A Use Case Reporting Framework Inspired by the European AI Act." Proceedings of FAccT 2024.
+  14. Golpayegani, D., Pandit, H.J., & Lewis, D. (2024). "AI Cards: Towards an Authentic and Responsible Disclosure of AI Systems." Proceedings of ECAI 2024.
+  15. Gangemi, A., et al. (2024). "Automatic Generation of Model and Data Cards: A Step Towards Responsible AI." arXiv:2405.06258.
+  16. Liang, W., et al. (2024). "What's Documented in AI? Systematic Analysis of 32K AI Model Cards." arXiv:2402.05160.
+  17. AI Transparency Atlas (2024). "AI Transparency Atlas: Framework, Scoring, and Real-Time Model Card Evaluation Pipeline." arXiv:2512.12443.
+  18. TEDI Working Group (2025). "TEDI: Trustworthy and Ethical Dataset Indicators to Analyse and Compare Dataset Documentation." arXiv:2505.17841.
+  19. Habernal, I., & Stowe, K. (2023). "Stronger Together: On the Articulation of Ethical Charters, Legal Tools, and Technical Documentation in ML." arXiv:2305.18615.
+  20. Policy Cards (2025). "Policy Cards: Machine-Readable Runtime Governance for Autonomous AI Agents." arXiv:2510.24383.
+  21. DocAgent (2025). "DocAgent: A Multi-Agent System for Automated Code Documentation Generation." arXiv:2504.08725.
+  22. Springer Nature (2025). "Simplifying Software Compliance: AI Technologies in Drafting Technical Documentation for the AI Act." Empirical Software Engineering, Springer. DOI: 10.1007/s10664-025-10645-x.
+  23. Centre for Data Ethics and Innovation (CDEI). (2022). "Algorithmic Transparency Recording Standard." UK Government / DSIT.
+  24. Alan Turing Institute. (2024). "AI Standards Hub: Mapping AI Standards for Practitioners." Alan Turing Institute / DSIT.
+  25. Mittelstadt, B., Russell, C., & Wachter, S. (2019). "Explaining Explanations in AI." Proceedings of the ACM Conference on Fairness, Accountability, and Transparency (FAT* 2019).
+  26. Friedman, B., & Nissenbaum, H. (1996). "Bias in Computer Systems." ACM Transactions on Information Systems, 14(3), 330–347.
+  27. Vallor, S. (2016). Technology and the Virtues: A Philosophical Guide to a Future Worth Wanting. Oxford University Press.
+  28. Nemko / Kothes GmbH. (2025). "FAQ: Technical Documentation in Accordance with the EU AI Act." Industry Practitioner Guidance, 2025.
+
+- ### Provenance
+  - sources:: [[Model Cards (Mitchell et al.)]], [[Datasheets (Gebru et al.)]], [[EU AI Act]], [[ISO/IEC 23053]], [[ISO/IEC 42001]], [[IEEE 7001]], [[NIST AI RMF]], https://artificialintelligenceact.eu/annex/4/, https://arxiv.org/pdf/2405.06258, https://arxiv.org/html/2402.05160v1, https://arxiv.org/pdf/2512.12443, https://arxiv.org/pdf/2505.17841, https://arxiv.org/pdf/2510.24383, https://practical-ai-act.eu/latest/engineering-practice/model-cards/, https://www.iso.org/standard/42001, https://www.turing.ac.uk/sites/default/files/2026-01/ai_governance_around_the_world_-_uk.pdf
+  - migration-date:: 2026-06-20T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

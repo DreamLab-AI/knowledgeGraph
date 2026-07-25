@@ -1,0 +1,598 @@
+public:: true
+
+# Harness Configuration Packs
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:harness-configuration-packs",
+  "@type": "Page",
+  "vc:slug": "harness-configuration-packs",
+  "title": "Harness Configuration Packs",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {"@id": "urn:visionflow:linked:agent-harness", "vc:label": "Agent Harness"},
+    {"@id": "urn:visionflow:linked:ide-coding-agents", "vc:label": "IDE Coding Agents"},
+    {"@id": "urn:visionflow:linked:terminal-coding-agents", "vc:label": "Terminal Coding Agents"},
+    {"@id": "urn:visionflow:linked:internal-ai-harness", "vc:label": "Internal AI Harness"},
+    {"@id": "urn:visionflow:linked:external-ai-harness", "vc:label": "External AI Harness"},
+    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
+    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
+    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
+    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
+    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
+    {"@id": "urn:visionflow:linked:autonomous-coding", "vc:label": "Autonomous Coding"},
+    {"@id": "urn:visionflow:linked:hook-system", "vc:label": "Hook System"},
+    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
+    {"@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "vc:label": "Multi-Agent Orchestration Frameworks"},
+    {"@id": "urn:visionflow:linked:plan-and-execute-pattern", "vc:label": "Plan-and-Execute Pattern"},
+    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
+    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
+    {"@id": "urn:visionflow:linked:multi-agent-collaboration", "vc:label": "Multi-Agent Collaboration"},
+    {"@id": "urn:visionflow:linked:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks"},
+    {"@id": "urn:visionflow:linked:prompt-template", "vc:label": "Prompt Template"},
+    {"@id": "urn:visionflow:linked:structured-output", "vc:label": "Structured Output"},
+    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain-of-Thought"},
+    {"@id": "urn:visionflow:linked:observability-stack", "vc:label": "Observability Stack"},
+    {"@id": "urn:visionflow:linked:software-engineering", "vc:label": "Software Engineering"},
+    {"@id": "urn:visionflow:linked:tool-registry", "vc:label": "Tool Registry"},
+    {"@id": "urn:visionflow:linked:re-act-pattern", "vc:label": "ReAct Pattern"},
+    {"@id": "urn:visionflow:linked:code-review", "vc:label": "Code Review"},
+    {"@id": "urn:visionflow:linked:browser-automation", "vc:label": "Browser Automation"},
+    {"@id": "urn:visionflow:linked:ai-agent-coordination", "vc:label": "AI Agent Coordination"},
+    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
+    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
+    {"@id": "urn:visionflow:linked:tree-of-thoughts", "vc:label": "Tree of Thoughts"},
+    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
+    {"@id": "urn:visionflow:linked:autonomous-coding", "vc:label": "Autonomous Coding"},
+    {"@id": "urn:visionflow:linked:agent-memory-layers", "vc:label": "Agent Memory Layers"},
+    {"@id": "urn:visionflow:linked:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks"},
+    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
+    {"@id": "urn:visionflow:linked:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes"},
+    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"}
+  ],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:harness-configuration-packs",
+  "@type": "Class",
+  "label": "Harness Configuration Packs",
+  "definition": "Skill packs, slash-command libraries, and meta-prompting frameworks that enhance existing coding agents with structured workflows, multi-role capabilities, and progressive disclosure — includes Superpowers, Everything Claude Code, GStack, Anthropic Skills, Get-Shit-Done (GSD), wshobson/agents, and pmstack.",
+  "domain": "ai",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:prompt-template", "label": "Prompt Template"},
+      {"@id": "urn:ngm:class:hook-system", "label": "Hook System"},
+      {"@id": "urn:ngm:class:tool-registry", "label": "Tool Registry"},
+      {"@id": "urn:ngm:class:slash-command-library", "label": "Slash Command Library"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:agent-harness", "label": "Agent Harness"},
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-coding", "label": "Autonomous Coding"},
+      {"@id": "urn:ngm:class:multi-agent-collaboration", "label": "Multi-Agent Collaboration"},
+      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
+      {"@id": "urn:ngm:class:code-review", "label": "Code Review"},
+      {"@id": "urn:ngm:class:browser-automation", "label": "Browser Automation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:plan-and-execute-pattern", "label": "Plan-and-Execute Pattern"},
+      {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"},
+      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain-of-Thought"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:terminal-coding-agents", "label": "Terminal Coding Agents"},
+      {"@id": "urn:ngm:class:ide-coding-agents", "label": "IDE Coding Agents"},
+      {"@id": "urn:ngm:class:multi-agent-orchestration-frameworks", "label": "Multi-Agent Orchestration Frameworks"}
+    ]
+  },
+  "quality": 0.90,
+  "vc:termId": "AI-9912",
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:harness-configuration-packs:b2c3d4e5f6a1",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:harness-configuration-packs"
+  },
+  "vc:resolutions": [
+    {"raw": "[[Agent Harness]]", "resolved": "urn:visionflow:linked:agent-harness", "kind": "ResolvedLink"},
+    {"raw": "[[IDE Coding Agents]]", "resolved": "urn:visionflow:linked:ide-coding-agents", "kind": "ResolvedLink"},
+    {"raw": "[[Terminal Coding Agents]]", "resolved": "urn:visionflow:linked:terminal-coding-agents", "kind": "ResolvedLink"},
+    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
+    {"raw": "[[Prompt Engineering]]", "resolved": "urn:visionflow:linked:prompt-engineering", "kind": "StubLink"},
+    {"raw": "[[Hook System]]", "resolved": "urn:visionflow:linked:hook-system", "kind": "StubLink"},
+    {"raw": "[[Multi-Agent Orchestration Frameworks]]", "resolved": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "kind": "StubLink"},
+    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "ResolvedLink"},
+    {"raw": "[[Autonomous Coding]]", "resolved": "urn:visionflow:linked:autonomous-coding", "kind": "StubLink"},
+    {"raw": "[[Plan-and-Execute Pattern]]", "resolved": "urn:visionflow:linked:plan-and-execute-pattern", "kind": "StubLink"}
+  ]
+}
+```
+
+- ### Definition
+  - Harness Configuration Packs are a specialised subclass of [[Agent Harness]] that operate at the configuration layer rather than the execution layer: they augment existing coding agents — primarily [[IDE Coding Agents]] such as Cline and Kilo Code, and [[Terminal Coding Agents]] such as Claude Code, opencode, and Gemini CLI — with structured skill libraries, slash-command sets, [[Hook System]] definitions, [[Prompt Template]] collections, and [[Model Context Protocol]] server registrations, transforming a general-purpose AI assistant into an opinionated virtual development team or domain-specific workflow engine without requiring any modification to the underlying agent runtime. The defining technical mechanism is the CLAUDE.md initialisation file — a Markdown document read automatically at session start that injects rules, workflow instructions, tool permissions, and skill-discovery pointers into the [[Large Language Model]]'s operating context — combined with a two-tier progressive disclosure architecture in which skill metadata (name, description) is loaded at session start while full skill bodies are loaded on-demand, preserving [[Context Window]] budget until a specific skill is invoked. Harness configuration packs range from single-developer workflow repositories to comprehensive multi-harness marketplaces: GStack (Garry Tan, Y Combinator CEO) encodes 23 specialist roles and 8 power tools into a single MIT-licensed pack oriented around CEO-level product review, engineering management, QA automation, and one-command release; Everything Claude Code (Affaan Mustafa, ~100K GitHub stars) provides a performance optimisation system with 28 subagents, instincts (a class of autonomic decision rules that fire without explicit invocation), persistent memory, and OWASP-aligned security review; Get-Shit-Done (Lex Christopherson) targets context-rot prevention through session hygiene disciplines, progressive context eviction, and task-completion rituals; wshobson/agents is a multi-harness marketplace with 184 specialist agents, 16 multi-agent orchestrators, 150 skills, and 98 commands distributed as 78 focused plugins; and the Anthropic Skills open standard (launched December 2025, SKILL.md specification) provides a vendor-neutral portable format for harness skills that any compliant agent — whether [[IDE Coding Agents]] or [[Terminal Coding Agents]] — can discover and load. Taken together, harness configuration packs represent the discipline of [[Prompt Engineering]] elevated to a software-engineering practice with versioning, modularity, composability, and multi-role governance.
+
+- ### Semantic Classification
+  - owl-class:: ai:HarnessConfigurationPacks
+  - owl-role:: ExecutableProtocol | ToolkitComponent | ConfigurationLayer
+  - owl-inferred:: ai:AgentHarness, ai:SkillLibrary, ai:MetaPromptingFramework, ai:WorkflowGovernanceSystem
+  - belongs-to-domain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[SoftwareEngineeringDomain]]
+  - implemented-in-layer:: [[ApplicationLayer]], [[ToolingLayer]]
+
+- ### Relationships
+  - is-subclass-of:: [[Agent Harness]], [[Agent Frameworks]], [[Agentic AI]], [[Prompt Engineering]]
+  - has-part:: [[Prompt Template]], [[Hook System]], [[Tool Registry]], [[Observability Stack]], [[Context Window]], [[Structured Output]], [[Agent Runtime]]
+  - requires:: [[Agent Harness]], [[Large Language Model]], [[Model Context Protocol]], [[Tool Use]], [[Hook System]], [[Prompt Engineering]], [[Function Calling]]
+  - enables:: [[Autonomous Coding]], [[Multi-Agent Collaboration]], [[Workflow Automation]], [[Code Review]], [[Browser Automation]], [[AI Agent Coordination]], [[Multi-Agent Orchestration Frameworks]]
+  - implements:: [[Plan-and-Execute Pattern]], [[ReAct Pattern]], [[Chain-of-Thought]], [[Multi-Agent Orchestration Frameworks]], [[Tree of Thoughts]]
+  - depends-on:: [[Context Window]], [[Prompt Engineering]], [[Structured Output]], [[Hook System]], [[Large Language Model]], [[Agent Runtime]]
+  - supports:: [[IDE Coding Agents]], [[Terminal Coding Agents]], [[Agent Evaluation Benchmarks]], [[Workflow Automation]], [[Software Engineering]]
+  - uses:: [[Model Context Protocol]], [[Hook System]], [[Prompt Template]], [[Tool Registry]], [[Structured Output]], [[Agent Runtime]], [[Function Calling]]
+  - contrasts-with:: [[Internal AI Harness]], [[External AI Harness]], [[Agent Frameworks]]
+  - related-to:: [[IDE Coding Agents]], [[Terminal Coding Agents]], [[Multi-Agent Orchestration Frameworks]], [[Software Engineering]], [[Agent Evaluation Benchmarks]], [[Large Language Model]], [[Agentic AI]], [[Agent Memory Layers]], [[Autonomous Coding]]
+  - standardized-by:: [[Model Context Protocol]], [[Agent Frameworks]], [[Anthropic Agent Skills]]
+
+- ### Content
+  - ## Compositional Relationships (Components)
+    ```
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:hasPart ai:PromptTemplate))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:hasPart ai:HookSystem))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:hasPart ai:ToolRegistry))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:hasPart ai:SlashCommandLibrary))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:hasPart ai:SkillLibrary))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:hasPart ai:ObservabilityStack))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:hasPart ai:MCPServerRegistry))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:hasPart ai:SessionInitialisationFile))
+    ```
+  - ## Dependency Relationships
+    ```
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:requires ai:AgentHarness))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:requires ai:ModelContextProtocol))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:requires ai:ToolUse))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:requires ai:HookSystem))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:requires ai:ContextWindow))
+    ```
+  - ## Capability Relationships
+    ```
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousCoding))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:enables ai:MultiAgentCollaboration))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:enables ai:WorkflowAutomation))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:enables ai:CodeReview))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:enables ai:BrowserAutomation))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:enables ai:AIAgentCoordination))
+    ```
+  - ## Implementation Relationships
+    ```
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:implements ai:PlanAndExecutePattern))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:implements ai:ReActPattern))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:implements ai:ChainOfThought))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:implements ai:MultiAgentOrchestration))
+    ```
+  - ## Reduction Relationships
+    ```
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:reducesTo ai:AgentHarness))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:reducesTo ai:PromptEngineering))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:reducesTo ai:ConfigurationLayer))
+    ```
+  - ## Supports Relationships
+    ```
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:supports ai:IDECodingAgents))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:supports ai:TerminalCodingAgents))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:supports ai:AgentEvaluationBenchmarks))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:supports ai:WorkflowAutomation))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:supports ai:SoftwareEngineering))
+    ```
+  - ## Uses Relationships
+    ```
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:uses ai:ModelContextProtocol))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:uses ai:HookSystem))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:uses ai:ToolRegistry))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:uses ai:AgentRuntime))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:uses ai:PromptTemplate))
+    SubClassOf(ai:HarnessConfigurationPacks
+      ObjectSomeValuesFrom(ai:uses ai:FunctionCalling))
+    ```
+  - ## About
+    Harness configuration packs emerged as a distinct engineering practice in the second half of 2025, when developers discovered that the performance delta between a raw coding agent and a carefully configured one was often larger than the performance delta between frontier models. The foundational insight — that [[Prompt Engineering]] applied systematically as versioned, modular configuration files could turn a general-purpose AI assistant into a disciplined virtual team — predates the term "harness configuration pack" but crystallised around the Claude Code ecosystem from mid-2025 onward. The category is characterised by operating entirely above the agent runtime layer: unlike [[IDE Coding Agents]] (which extend the IDE with new panels and approval workflows) or [[Agent Frameworks]] (which provide new runtimes and tool orchestration infrastructure), harness configuration packs work exclusively through the configuration interfaces that existing agents already expose — CLAUDE.md files, skill directories, slash-command registries, hook definitions, and [[Model Context Protocol]] server lists — and thus compose cleanly with any conforming agent without requiring code changes. This zero-runtime-change composability is what distinguishes harness configuration packs from [[Agent Frameworks]] proper: a pack author does not need to distribute a binary, maintain a dependency tree, or manage API compatibility across agent version upgrades; they need only maintain Markdown files and shell scripts.
+
+    The technical core of all harness configuration packs is a two-tier progressive disclosure architecture. At session start, the harness injects into the agent's context a bootstrap file (typically a CLAUDE.md or `using-superpowers` meta-skill) that instructs the [[Large Language Model]] that a skill library exists and that it should pattern-match incoming user intent against each skill's name and short description — a process that consumes only a handful of tokens per skill rather than the full skill body. When the model determines a skill is relevant (or the user invokes it explicitly via a slash command), the full SKILL.md body is read into the conversation context on demand. This progressive disclosure mechanism keeps harness overhead negligible for simple tasks while making the full configuration depth available for complex ones. Hooks provide the enforcement layer that pure instruction cannot: a PreToolUse hook can veto a `rm -rf` command, a PostToolUse hook can run a formatter after every file write, and a UserPromptSubmit hook can prepend global quality standards to every user message — actions that fire deterministically regardless of whether the model "remembers" to follow the corresponding instruction. This distinction between instructed behaviour and enforced behaviour is fundamental to harness engineering: any safety or quality requirement that must be met even when the model is distracted, misled, or operating under a long [[Context Window]] should be implemented as a hook, not as an instruction in CLAUDE.md.
+
+    The ecosystem by mid-2026 encompasses packs ranging from individual developer workflow opinions (GSD's context-rot prevention disciplines, pmstack's product-manager role definitions) to enterprise-grade multi-harness systems (wshobson/agents, with 184 specialist agents across 78 plugins that target Claude Code, Codex CLI, Cursor, OpenCode, GitHub Copilot, and Gemini CLI simultaneously). Anthropic's formalisation of the SKILL.md specification as an open standard in December 2025 and its adoption into Claude Code 2.1.0 with hot-reload in January 2026 transformed harness configuration packs from a community-engineering practice into an officially supported extension mechanism — comparable to how VS Code extensions became the canonical mechanism for extending VS Code regardless of the underlying task. The SKILL.md specification is cross-agent by design: any agent that implements the SKILL.md discovery and loading protocol can consume skills written for Claude Code, meaning that the community's investment in skill authoring is not locked to a single vendor's runtime.
+
+    The relationship between harness configuration packs and [[Agent Memory Layers]] deserves explicit treatment. Naive CLAUDE.md configurations assume a stateless session model where the agent begins each task from scratch; but sophisticated packs like Everything Claude Code include a memory architecture — typically a structured set of JSON or Markdown files written to a `.claude/memory/` directory — that accumulates architectural decisions, debugging history, naming conventions, and developer preferences across sessions. These memory files are read at session start as part of the CLAUDE.md bootstrap, making previously-learned context available to the current session without requiring the developer to re-explain the project's history. This session-memory pattern is the harness-layer analogue of [[Agent Memory Layers]] as modelled in frameworks like MemGPT (Packer et al., 2023), adapted to the filesystem-centric operational model of IDE and terminal coding agents rather than in-process vector store access.
+
+  - ## Formal Description
+    A harness configuration pack P can be described as a 6-tuple P = (I, S, C, H, M, R) where:
+    - I is the session initialisation bundle: a set of CLAUDE.md files at hierarchy levels (user, workspace, project) merged at session start into the agent's operating context
+    - S is the skill library: a set of SKILL.md files {s₁, s₂, ..., sₙ} each with metadata {name, description, allowed-tools, trigger} and a prompt-template body
+    - C is the slash-command registry: a set of command files {c₁, ..., cₘ} under `.claude/commands/` each with a name and prompt-template body, explicitly invocable by `/name`
+    - H is the hook set: a set of lifecycle handlers {h₁, ..., hₖ} registered in `settings.json` on events in {PreToolUse, PostToolUse, UserPromptSubmit, SessionStart, SessionEnd, Stop}
+    - M is the [[Model Context Protocol]] server registry: a set of MCP server definitions {mcp₁, ..., mcpₗ} in `.mcp.json`, each with a name, transport type (stdio/SSE), and command or URL
+    - R is the memory layer: an optional set of structured memory files {r₁, ..., rᵥ} read at session start to inject accumulated cross-session context
+
+    The progressive disclosure protocol operates over S: at session start, the agent receives only {(nameᵢ, descriptionᵢ) : sᵢ ∈ S}, consuming O(|S|) tokens of metadata. When the agent identifies a skill as relevant (or the user invokes /command), the full SKILL.md body is loaded, consuming O(|body|) additional tokens. The hook execution model is outside the agent's [[Context Window]]: hooks are executable scripts invoked by the harness process, not by the model; their outputs may be injected into the next user message or used to gate tool execution, but they do not consume context budget during their execution.
+
+  - ## Harness Engineering Disciplines
+    The HumanLayer blog post "Skill Issue: Harness Engineering for Coding Agents" (2026) coined the term "harness engineering" and identified three disciplines:
+    - **Session initialisation engineering**: Designing CLAUDE.md content to maximise signal-to-noise ratio at session start; the bootstrap must be dense enough to communicate project context and workflow expectations while leaving sufficient [[Context Window]] budget for the actual task conversation. The 1% rule (Superpowers: if there is even a 1% chance a skill applies, invoke it) represents the aggressive end of this spectrum; more conservative packs provide explicit invocation patterns.
+    - **Skill authoring**: Writing SKILL.md bodies that are precise enough to guide the model through a complex multi-step workflow without becoming so verbose that loading the full body exhausts the context budget before the actual task conversation begins. Well-authored skills follow a pattern analogous to [[Chain-of-Thought]] prompting: they provide a worked example of the target workflow before stating the general instructions, exploiting the model's in-context learning capability.
+    - **Hook engineering**: Identifying the subset of project quality requirements that must be enforced deterministically (rather than instructed probabilistically) and implementing them as PreToolUse, PostToolUse, or SessionEnd hooks. The set of enforced requirements grows over time as practitioners discover which classes of model errors are too costly or too frequent to rely on instruction-following to prevent.
+
+  - ## Pack Composition and Conflicts
+    Composing multiple harness configuration packs in a single installation introduces the risk of conflicts: two packs may define hooks that fire on the same event and interact destructively; two CLAUDE.md files may contain contradictory instructions; two skill libraries may define skills with identical names but different behaviours. Practitioners have developed the following composition principles:
+    - **Layer by specificity**: User-level CLAUDE.md provides universal behavioural defaults (communication style, security rules); workspace-level CLAUDE.md provides environment context (available tools, team conventions); project-level CLAUDE.md provides task-specific instructions. Project overrides workspace overrides user — the specificity hierarchy resolves most CLAUDE.md conflicts.
+    - **Hook composition**: Multiple hooks on the same event are executed sequentially in registration order; packs should document their hook event registrations and expected interaction semantics. The `/harness-audit` slash command (available in Claude Code) evaluates the current harness configuration and flags hooks that may conflict.
+    - **Skill namespace isolation**: Each pack should prefix its skill names with a pack identifier (e.g., `gstack/plan-review`, `ecc/security-review`) to prevent name collisions in multi-pack installations. The wshobson/agents marketplace enforces this convention through its 78-plugin directory structure.
+    - **Minimal base configuration**: DEV Community practitioners recommend starting with the minimal CLAUDE.md that encodes only genuinely project-specific constraints, then adding pack components incrementally and verifying behaviour at each step, rather than installing a full marketplace pack and debugging interactions afterward.
+    - **Context budget accounting**: The total token overhead at session start — CLAUDE.md content + skill metadata for all installed skills — should be estimated before installation and compared against the target model's context budget. A pack that installs 100 skills at 100 tokens of metadata each adds 10,000 tokens of fixed overhead to every session, which is significant for smaller context models.
+
+  - ## Components / Architecture
+    - **CLAUDE.md (Session Initialisation File)**: The primary configuration entrypoint for all harness configuration packs. Read automatically at conversation start by Claude Code and Cline; encodes project rules, tool permissions, custom slash-command definitions, [[Model Context Protocol]] server registrations, skill-discovery pointers, and behavioural constraints in structured Markdown. Hierarchical: user-level `~/.claude/CLAUDE.md`, workspace-level `CLAUDE.md`, and project-level `project/CLAUDE.md` are merged with project-level taking precedence. Best practice: keep user-level CLAUDE.md for universal behavioural constraints; workspace-level for environment context; project-level for task-specific instructions. Total CLAUDE.md content should target under 2,000 tokens to preserve [[Context Window]] budget for actual task work.
+    - **SKILL.md (Skill Body)**: A Markdown file defining a single skill — YAML frontmatter with `name`, `description`, `allowed-tools`, `default-model`, and optionally `trigger` patterns (regex or semantic conditions that cause the agent to consider the skill); body is the [[Prompt Template]] activated when the skill is invoked. Standardised by Anthropic's Agent Skills specification (December 2025); hot-reloaded without session restart since Claude Code 2.1.0 (January 2026). Skill bodies range from single-paragraph instructions (simple action skills) to multi-page workflows with worked examples (complex domain skills). The worked-example pattern is particularly effective: including a complete example of the skill's expected output before stating the general instructions exploits the [[Large Language Model]]'s in-context learning capability and reduces ambiguity in borderline cases.
+    - **Slash Command Library**: User-defined commands under `.claude/commands/<name>.md` (project-level) or `~/.claude/commands/<name>.md` (user-level). The Markdown body is the prompt template; YAML frontmatter sets description, allowed tools, and default model. Commands are explicit — typed by the user — in contrast to skills, which are implicit — invoked by the agent's intent-matching. Commands excel for deterministic, user-initiated workflows (e.g., `/commit` always runs the commit workflow regardless of context); skills excel for context-triggered assistance (e.g., the "security-review" skill fires when the agent detects that the current task involves authentication or data handling).
+    - **Hook Definitions**: Structured event handlers registered in `settings.json` that fire on harness lifecycle events: `PreToolUse`, `PostToolUse`, `UserPromptSubmit`, `SessionStart`, `SessionEnd`, `Stop`. Hooks execute deterministically outside the model's context as shell scripts or executables and are the enforcement layer for safety, style, and observability requirements. A PreToolUse hook that vetoes dangerous commands is the canonical safety pattern: `if command matches rm -rf/* then exit 1` — the exit code signals the harness to block the tool call and present an error to the agent. PostToolUse hooks can run prettier, eslint, mypy, or cargo clippy after each file write, maintaining code quality without relying on the model to remember to run formatting tools.
+    - **MCP Server Registry**: A JSON registry (`.mcp.json` or `settings.json` MCP section) listing named [[Model Context Protocol]] servers — local processes or remote endpoints — that the agent can discover as callable tools. Harness packs use this to ship pre-configured integrations with Git (git-mcp), CI systems (GitHub Actions MCP, CircleCI MCP), vector databases (Chroma MCP, Qdrant MCP), internal APIs (custom stdio MCP servers), and [[Retrieval-Augmented Generation]] search indices. Each MCP server is an independently controlled trust boundary; pack authors should document the permission scope of each registered server.
+    - **Subagent Definitions** (wshobson/agents, Everything Claude Code): Named agent role specifications that can be spawned as sub-processes with a specialised system prompt, restricted tool set, and task scope. Multi-agent orchestrators coordinate subagents through shared message queues or filesystem-based handoff protocols. In wshobson/agents, the 16 multi-agent orchestrators define coordination patterns (sequential, parallel, fan-out, fan-in) over named subagent pools, enabling [[Multi-Agent Orchestration Frameworks]] patterns without requiring a separate orchestration runtime.
+    - **Instinct Rules** (Everything Claude Code): A class of autonomic decision rules embedded in CLAUDE.md or as PostToolUse hooks that fire without explicit user invocation — for example, running the security reviewer automatically on every file-write to `*.py` files, or running the dependency auditor automatically when `requirements.txt` or `package.json` is modified. Instincts implement targeted [[ReAct Pattern]] micro-cycles at the harness level without requiring the model to reason about when to apply them, making them particularly robust to context-rot scenarios where the model may have forgotten earlier instructions.
+    - **Memory Layer** (Everything Claude Code, pmstack): Persistent structured memory files (typically JSON or Markdown under `.claude/memory/`) that accumulate developer preferences, architectural decisions, naming conventions, and past debugging outcomes across sessions, read at session start as part of the CLAUDE.md bootstrap. The memory layer is the harness-engineering realisation of [[Agent Memory Layers]] at the filesystem level: unlike in-process vector stores, filesystem-based memory is portable, human-readable, and Git-versionable, enabling the team to review, edit, and version-control the agent's accumulated knowledge alongside the codebase.
+    - **Bootstrap Meta-Skill** (Superpowers): A special skill loaded first at session start that instructs the [[Large Language Model]] about the existence and invocation protocol of the full skill library. The bootstrap establishes the session contract: "You have skills X, Y, Z. Invoke a skill if there is a 1% or greater chance it applies to the current task. Skills are invoked by [protocol description]." The bootstrap meta-skill is the mechanism through which the progressive-disclosure architecture maintains coherence: without it, the model would not know to pattern-match user intent against the available skill library.
+    - **/harness-audit Command**: A built-in Claude Code slash command that evaluates the current CLAUDE.md, skill library, hook set, and MCP server registry and produces a structured audit report covering: token overhead estimate, hook event coverage gaps, skill name conflicts across installed packs, MCP server permission scope, and CLAUDE.md hierarchical merge result. Used by practitioners to diagnose composition conflicts and optimise context-window budget usage before committing a harness configuration to the team's shared repository.
+
+  - ## Use Cases / Major Families
+    - **Role-Based Virtual Team (GStack)**: Garry Tan's MIT-licensed pack (50K GitHub stars in 16 days, 100K+ stars by mid-2026) encodes 23 specialist roles — CEO product reviewer, engineering manager, release manager, QA tester, documentation engineer — as SKILL.md files, each instantiating a different reasoning persona via system-prompt injection. A single developer commands a virtual team through slash commands: `/plan-review` triggers the CEO-mode strategic review; `/ship` triggers the release manager's one-command shipping workflow. GStack's "opinionated" design philosophy — encoding Garry Tan's own workflow decisions as defaults — is both its strength (strong coherence, battle-tested conventions) and its limitation (assumptions about project structure and workflow that may not match every developer's context).
+    - **Context-Rot Prevention (GSD — Get-Shit-Done)**: Created by Lex Christopherson in December 2025, GSD addresses the quality degradation that occurs as long coding sessions fill the [[Context Window]] with stale content. The pack installs session hygiene rituals (periodic context audits, structured handoff files, task-completion checkpoints) and instructs the agent to emit structured state dumps at regular intervals, enabling clean session restarts without losing progress. GSD explicitly targets the failure mode that occurs when a developer leaves a session running overnight and returns to find the agent has been spinning in a confused repair loop for hours — a problem that the structured handoff and checkpoint system prevents by forcing the agent to articulate its current state before each new sub-task.
+    - **Performance Optimisation and Security (Everything Claude Code)**: Affaan Mustafa's pack (~100K GitHub stars, winner of the Anthropic x Forum Ventures hackathon, September 2025) provides 28 subagents (code-reviewer, security-reviewer, tdd-guide, performance-analyser, dependency-auditor, etc.), an instinct system, and a memory architecture for multi-session projects. The security-reviewer subagent applies OWASP Top 10 checks on every relevant file write without requiring explicit invocation — the instinct rule fires automatically on each PostToolUse(file-write) event. The memory architecture writes structured JSON summaries of architectural decisions, naming conventions, and past debugging outcomes to `.claude/memory/`, reducing per-session re-orientation time from 10-15 minutes to under a minute for established projects.
+    - **Meta-Prompting Framework (Superpowers)**: The `obra/superpowers` pack implements the 1% rule — if there is even a 1% chance a skill might apply, invoke it — through a session-start hook that injects the bootstrap meta-skill into the [[Context Window]], after which Claude continuously pattern-matches user intent against the skill library. Superpowers ships skills for writing new skills (`writing-skills`), using the framework (`using-superpowers`), and a growing catalogue of domain skills contributed by community members. The 1% rule trades context overhead (more skills loaded) for coverage (fewer missed skill-applicable situations), making Superpowers better suited to experienced practitioners who have calibrated their skill library than to beginners who may trigger irrelevant skills frequently.
+    - **Multi-Harness Marketplace (wshobson/agents)**: With 184 specialist agents, 16 multi-agent orchestrators, 150 skills, and 98 commands across 78 plugins, wshobson/agents targets polyglot shops that run multiple agent runtimes (Claude Code, Cursor, Codex CLI, OpenCode, Gemini CLI). Each plugin is a self-contained directory installable independently, enabling developers to compose their own harness stack without installing the full marketplace. The multi-orchestrator component (16 orchestrators) supports [[Multi-Agent Orchestration Frameworks]] patterns ranging from sequential pipelines to concurrent fan-out workflows, making wshobson/agents the most powerful harness pack for teams that need coordinated multi-agent execution.
+    - **Anthropic Official Skills (anthropics/skills)**: The official Anthropic skills repository ships pre-built [[Agent Frameworks]]-compatible skills for document tasks (PowerPoint, Excel, Word, PDF processing), SRE/DevOps workflows, and code-generation patterns. The repository also serves as the canonical reference implementation of the SKILL.md specification, defining the format that third-party pack authors target for cross-agent compatibility. Enterprise customers on Team and Enterprise Claude plans have access to a curated partner skills directory that extends the official skills with integrations for Notion, Canva, Figma, and Atlassian, enabling harness packs that span product, design, and engineering workflows.
+    - **PM and Product Stack (pmstack)**: A product-manager-oriented configuration pack that installs a structured product-requirements workflow, acceptance-criteria templates, and stakeholder-communication skills, enabling engineers to run product-discovery conversations through the coding agent interface and generate structured PRDs and user-story backlogs. pmstack bridges the gap between [[Agent Frameworks]] oriented toward engineering tasks and the product management workflows that precede engineering: a developer using pmstack can transition from "what should we build?" (product-discovery mode) to "how do we build it?" (planning mode) to "build it" (act mode) within a single agent session.
+    - **SRE and DevOps Workflows**: Harness packs targeting site-reliability engineering encode runbook automation, incident-response checklists, configuration-drift detection, and deployment-validation workflows as skills. The yisusvii SRE/DevOps skills pack (2026) provides skills for common cloud-provider CLI interactions (AWS, GCP, Azure) as [[Model Context Protocol]] tool wrappers, infrastructure-as-code validation (Terraform plan review, Kubernetes manifest linting), and post-deployment health-check workflows — enabling on-call engineers to invoke the agent as a first-responder assistant during incident investigation.
+    - **Test-Driven Development Enforcement**: Packs implementing TDFlow (arxiv:2510.23761) and TDAD (arxiv:2603.17973) patterns install hooks that enforce the test-before-implementation discipline: a PreToolUse(file-write) hook verifies that a test file for the target implementation file has been written or updated in the current session before allowing the implementation file write to proceed. This enforcement converts the TDD discipline from an instruction ("you should write tests first") into a runtime constraint that the agent cannot bypass, even under pressure to produce working code quickly.
+
+  - ## Security Implications of Harness Configuration Packs
+    Harness configuration packs that include hook-based enforcement provide a significant security advantage over unaugmented coding agents, but they also introduce new risk surfaces. CLAUDE.md files are read into the [[Large Language Model]]'s context and therefore susceptible to indirect prompt injection: a maliciously crafted repository file that the agent reads as context could instruct the model to ignore or override rules stated in CLAUDE.md. Hooks, being executed outside the model's context by the harness process, are not susceptible to this attack — they enforce their constraints regardless of what the model "believes" it has been instructed to do. The security implication is that safety-critical constraints (no credential exfiltration, no command injection, no push to production without multi-party approval) must be implemented as hooks rather than CLAUDE.md instructions.
+
+    Everything Claude Code's security-reviewer instinct provides a practitioner blueprint: it fires automatically on every file-write tool call and analyses the written content against OWASP Top 10 patterns (SQL injection, cross-site scripting, insecure deserialisation, hard-coded credentials, etc.) before the write is committed to disk. This is structurally analogous to a lint-on-save workflow, but operating at semantic rather than syntactic level and invoked by the harness hook rather than by the developer's editor configuration. For UK organisations subject to Cyber Essentials, ISO 27001, or NCSC Supply Chain Security guidance, this pattern provides a documented, auditable control point for AI-generated code security that can be cited in certification evidence.
+
+    Harness packs that register [[Model Context Protocol]] servers also expand the attack surface: a compromised MCP server that injects malicious tool results into the agent's context could steer the agent's subsequent actions. Pack authors should document MCP server trust levels and practitioners should apply the principle of least privilege — an MCP server that provides read-only database query access should not also have write access, even if the underlying database supports it. The Paradime harness engineering guide (2026) provides a permissions matrix template for MCP server trust configuration that has been adopted as a best-practice reference in the practitioner community.
+
+  - ## Academic Context
+    Harness configuration packs as a formal category have limited dedicated academic literature, having emerged primarily from engineering practice. The closest academic antecedents are meta-prompting (Reynolds & McDonell, 2021; Suzgun & Kalai, 2024), which studied prompt templates that instruct models how to decompose and approach tasks; and [[Chain-of-Thought]] prompting (Wei et al., 2022), which established that structured reasoning traces in the prompt improve model performance on complex tasks. The systematic application of these techniques at harness-configuration level — rather than single-prompt level — represents an engineering contribution that predates formal academic study of the phenomenon. Suzgun and Kalai (2024)'s meta-prompting framework is the closest academic predecessor to skill-library design: like SKILL.md skills, meta-prompts instruct the model about when and how to engage specific reasoning strategies, rather than providing the strategy directly in the system prompt.
+
+    Paradime's guide to Claude Code skills and harness engineering (2026) is among the first systematic practitioner treatments of the design space, providing a structured analysis of CLAUDE.md, SKILL.md, hooks, and MCP server configuration as a unified four-layer system. The HumanLayer blog post "Skill Issue: Harness Engineering for Coding Agents" (2026) coined the term "harness engineering" as a distinct discipline, drawing an analogy to DevOps engineering: just as DevOps abstracted the operational concerns of software deployment into a distinct engineering practice, harness engineering abstracts the configurational concerns of coding agent behaviour. Anthropic's research on how AI assistance impacts coding-skill formation (2026, drawing on ~400,000 Claude Code sessions from ~235,000 users between October 2025 and April 2026) provides the first large-scale empirical data on how configuration-layer interventions affect developer learning and productivity, finding that domain expertise (not coding background) is the primary predictor of effective AI-assisted development — a result consistent with the hypothesis that harness configuration packs' most important role is to compensate for the mechanical-coding-skill component rather than the domain-knowledge component.
+
+    The Claw-SWE-Bench benchmark (arxiv:2606.12344, 2026) implicitly evaluates harness adapter quality by demonstrating that the same backbone model (GLM 5.1) scores 19.1% with a minimal adapter and 73.4% with a full adapter on 350 multilingual issue-resolution instances, quantifying the performance contribution of harness configuration independent of model capability. This result — a 3.8x performance ratio attributable to adapter and harness design rather than model capability — is the strongest empirical evidence to date for the claim that harness engineering is as important as model selection for practical coding-agent performance. The TDAD paper (arxiv:2603.17973, 2026) formalises test-driven agentic development as a workflow discipline, providing a graph-based impact analysis framework that quantifies regression risk from agent-generated patches — a pattern that sophisticated harness packs now encode as default workflow discipline.
+
+    The [[Retrieval-Augmented Generation]] literature (Lewis et al., 2020 and subsequent work) provides the theoretical basis for harness packs that include semantic memory layers: by pre-populating the [[Context Window]] with retrieved architectural context at session start, memory-augmented harness packs enable the agent to reason about project history without requiring the developer to re-explain it. The MCP-connected vector database pattern (agent retrieves relevant code snippets from a vector search index via MCP tool call before beginning file edits) is the harness-engineering realisation of RAG within the coding-agent domain.
+
+  - ## Historical Timeline
+    - **2024 H2**: Early CLAUDE.md configurations circulate in the Claude Code community; developers share project-specific configuration files on GitHub and forums. The concept is rudimentary: a single markdown file with project context and a few conventions.
+    - **2025 Q1–Q2**: obra/superpowers releases the first formally structured skill pack, introducing the progressive-disclosure architecture and the 1% invocation rule. The term "skill" for a loadable prompt template gains traction.
+    - **2025 Q3**: Lex Christopherson releases GSD (Get-Shit-Done) targeting context-rot prevention; GStack (Garry Tan) releases and achieves 50K GitHub stars in 16 days. Everything Claude Code (Affaan Mustafa) wins the Anthropic x Forum Ventures hackathon at Cerebral Valley in September 2025 with a performance-optimisation harness architecture including instincts and memory layers.
+    - **2025 Q4**: Anthropic releases the Agent Skills open standard (December 2025), defining SKILL.md as a portable, agent-agnostic format. wshobson/agents marketplace achieves 17,647 stars with its 78-plugin multi-harness architecture. hesreallyhim/awesome-claude-code curated directory launches to aggregate the growing ecosystem.
+    - **2026 Q1**: Claude Code 2.1.0 adds SKILL.md hot-reload (January 2026), eliminating the stop-restart iteration cycle. Everything Claude Code approaches 100K GitHub stars. The term "harness engineering" is coined by HumanLayer.
+    - **2026 Q2**: Paradime publishes the first systematic practitioner guide to harness engineering. wshobson/agents extends to support Codex CLI, Cursor, OpenCode, GitHub Copilot, and Gemini CLI — the first explicitly multi-harness pack marketplace. Enterprise adoption confirmed at TELUS, Bridgewater, Zapier.
+    - **2026 Q2 (ongoing)**: Claw-SWE-Bench (arxiv:2606.12344) published, providing the first empirical quantification of harness adapter quality independent of model capability (3.8x performance ratio).
+    - **2026 Q3 (projected)**: Formal DSL tooling for harness configuration under community development. SBOM-style harness pack manifests proposed for enterprise supply chain auditing.
+    - **2026 Q4 (projected)**: Cross-agent SKILL.md portability confirmed across Cursor, GitHub Copilot, and Gemini CLI; first harness evaluation benchmark (extending Claw-SWE-Bench) expected to launch.
+    - **2027 H1 (projected)**: First LLM-generated harness evolution systems in production; agents that analyse their own session transcripts and propose CLAUDE.md improvements.
+    - **2027 H2 (projected)**: UK Government Crown Commercial Service guidance on harness configuration audit requirements for public sector AI software procurement.
+    - **2028 H1 (projected)**: Hardware-level instinct enforcement via model-steering vectors enters production for enterprise harness deployments.
+    - **2028 H2 (projected)**: First formal ISO standard for harness configuration packs proposed, building on the SKILL.md specification and hook event standards.
+    - **2029 (projected)**: Harness configuration packs as mandatory component of AI software supply chain SBOM; required for regulated sector software procurement across EU and UK markets.
+    - **2030 (projected)**: Self-evolving harness configurations standard practice; agents routinely propose CLAUDE.md and SKILL.md improvements based on session transcript analysis.
+
+  - ## Current Landscape (2026)
+    By mid-2026 the harness configuration pack ecosystem has matured from individual developer experiments to a structured marketplace with thousands of packs across multiple distribution channels. GStack surpassed 100,000 GitHub stars, Everything Claude Code approached the same milestone, and the Anthropic Agent Skills open standard provided the formal specification layer that enabled cross-agent portability. The three dominant design philosophies have become clear: enforcement-first (Everything Claude Code's instinct and memory system, GSD's context-rot disciplines), role-based governance (GStack's specialist-persona approach), and breadth-first marketplace (wshobson/agents' plugin catalogue).
+
+    The hot-reload capability introduced in Claude Code 2.1.0 (January 2026) eliminated the stop-restart friction that previously slowed skill development, accelerating the iteration cycle for pack authors from minutes-per-iteration to seconds-per-iteration. This acceleration has had a measurable effect on the ecosystem's growth: the number of publicly available Claude Code skills on GitHub increased by approximately 5x between December 2025 and June 2026, reflecting both the hot-reload productivity boost and the community momentum generated by GStack, Everything Claude Code, and the awesome-claude-code curated directory.
+
+    Enterprise adoption is confirmed at TELUS, Bridgewater, and Zapier (Anthropic 2026), with organisation-wide skill management and partner skills directories available under Team and Enterprise Claude plans. Out-of-the-box integrations with Notion, Canva, Figma, and Atlassian — delivered as [[Model Context Protocol]] servers registered in the organisation's skill pack — remove the last friction for cross-tool workflow automation. The Paradime and HumanLayer practitioner guides (2026) have established harness engineering as a recognised job-function dimension for senior AI engineers, comparable to DevOps engineering's relationship to software deployment; senior engineers at growth-stage startups are increasingly expected to maintain the team's harness configuration as a first-class engineering deliverable alongside the product codebase.
+
+    The competitive dynamics of the ecosystem in mid-2026 show three tiers: Anthropic's official skills (anthropics/skills) as the canonical reference; community powerhouses (GStack, Everything Claude Code, wshobson/agents) as the go-to packs for broad workflows; and the long tail of specialised domain packs (pmstack for product management, SRE/DevOps skills from yisusvii, security-focused packs from various authors). The tier structure mirrors the VS Code extension marketplace's evolution, suggesting that the harness configuration pack ecosystem is following a familiar open-source marketplace maturation trajectory.
+
+  - ## UK Context
+    UK adoption of harness configuration packs follows the broader [[IDE Coding Agents]] adoption curve tracked by the Alan Turing Institute — University of Edinburgh collaboration and the AHRC-UKRI "Doing AI Differently" initiative. The UK's strong open-source engineering communities at Edinburgh, Cambridge, UCL, and Manchester contribute to the wshobson/agents and Everything Claude Code repositories; Edinburgh's Informatics department has contributed research on harness configuration evaluation methodology, and UCL's HCI group has studied the cognitive overhead of skill invocation decision-making. The DSIT guidance on AI in software supply chains (2025) and ICO guidance on AI-generated code provenance have specific implications for harness configuration packs in regulated sectors: hook-based enforcement of audit logging, structured session transcripts, and OWASP-aligned security review subagents (as in Everything Claude Code) directly address supply-chain transparency requirements that appear in both DSIT guidance and NCSC Supply Chain Security guidance.
+
+    Northern English industrial context is directly relevant: Sheffield's advanced manufacturing software companies are deploying GStack's engineering-manager and QA-automation roles for governance-compliant AI-assisted development in safety-critical contexts; Leeds' fintech cluster uses Everything Claude Code's security-reviewer instinct as part of their secure development lifecycle; Newcastle's growing digital sector has adopted wshobson/agents as a standard engineering environment for startups that want multi-specialist capability from day one without the cost of hiring a full engineering team. The Northern Powerhouse Investment Fund's focus on digital productivity has created regional incentives for SME adoption of coding agent tooling, with harness configuration packs acting as the low-friction entry point because they require no new software installations — only configuration files added to an existing Claude Code or Cline setup.
+
+    The Alan Turing Institute's partnership network includes firms piloting harness-configured coding agents for public-sector software procurement, where the traceable approval gates and structured session transcripts required by Government Security Classification (GSC) procurement frameworks align with harness configuration pack capabilities. Crown Commercial Service supplier guidance on AI tools in software development (expected 2026-2027) is anticipated to reference audit-trail requirements that existing harness pack transcript formats can satisfy, creating policy alignment between community engineering practice and UK government AI procurement standards.
+
+  - ## Future Directions (2026-2030)
+    - **Cross-agent harness portability**: Full implementation of the SKILL.md open standard across all major coding agents (Cursor, GitHub Copilot, Gemini CLI, Codex CLI) will enable single skill packs to operate across the entire ecosystem without per-agent adaptation. The wshobson/agents marketplace's multi-harness architecture is the practical precursor; the SKILL.md specification provides the formal foundation. Full portability requires agreement on hook event semantics across runtimes — the most technically challenging remaining gap.
+    - **Dynamic skill composition**: Rather than loading static skill libraries, future harness packs will assemble composite skills dynamically from atomic skill primitives based on task analysis, reducing [[Context Window]] overhead further. Dynamic composition would allow a pack to combine a "repository-exploration" primitive, a "security-check" primitive, and a "test-generation" primitive into a single composite skill appropriate for the current task type, loading only the relevant combination into context.
+    - **Harness evaluation benchmarks**: An extension of Claw-SWE-Bench to measure harness-pack quality directly — how much does Pack A improve an agent's SWE-bench Verified score over the bare agent? — will provide the first rigorous empirical basis for comparing packs. The 3.8x performance ratio (19.1% to 73.4%) demonstrated in Claw-SWE-Bench (arxiv:2606.12344) motivates this benchmark extension; a standardised harness evaluation protocol would enable pack authors to quantify and advertise the empirical improvement their pack provides.
+    - **Organisational harness registries**: Enterprise SKILL.md registries hosted on internal artifact servers, versioned with semantic versioning, and audited through supply-chain security tooling (SBOM-style manifests for harness packs). These registries would enable security teams to review and approve skills before deployment, apply patch management workflows to skill updates, and maintain an approved bill-of-materials for all installed harness components — directly analogous to existing software composition analysis (SCA) tools for open-source dependencies.
+    - **LLM-generated harness evolution**: Agents that analyse their own session transcripts to identify workflow inefficiencies and propose CLAUDE.md or SKILL.md modifications — a self-improving harness loop. Early experiments in this direction are already reported in the Everything Claude Code community, where the agent's memory layer records patterns of task-type failures that are subsequently addressed through CLAUDE.md instruction updates.
+    - **Formal specification languages**: Domain-specific languages (DSLs) for harness configuration that compile to CLAUDE.md + SKILL.md bundles, providing type-safety, linting, and IDE support for pack authors. A harness DSL would enable static analysis of hook ordering conflicts, skill name collisions, and [[Context Window]] budget exhaustion before deployment — addressing the composition problem described above at the tooling level rather than requiring practitioner discipline.
+    - **Hardware-level instincts**: Harness instincts enforced at the inference server level (not just CLAUDE.md instructions) through model-level steering vectors or inference-time intervention, making safety constraints runtime-verifiable rather than prompt-contingent. This direction intersects with mechanistic interpretability research and activation-steering work; practical implementation requires co-design between harness pack authors and model providers at a level of integration not yet established.
+    - **[[Retrieval-Augmented Generation]] integration**: Harness packs that include semantic search over the project's full history — code, issues, PRs, architecture documents — via [[Model Context Protocol]] vector-search servers, enabling the agent to retrieve relevant historical context on-demand rather than relying on manually curated memory files. The RAG-over-codebase pattern is technically feasible with existing MCP tooling in 2026; the harness configuration engineering needed to tune retrieval quality, chunking strategy, and context budget allocation for different project types represents the main open problem.
+
+  - ## Key Terminology
+    - **Harness configuration pack**: A versioned, distributable bundle of CLAUDE.md configuration, SKILL.md files, slash commands, hook definitions, and [[Model Context Protocol]] server registrations that augments an existing coding agent's behaviour without modifying the agent runtime. The defining characteristic is zero-code-change composability: the pack works through existing agent configuration interfaces.
+    - **SKILL.md**: The Anthropic Agent Skills specification format; a Markdown file with YAML frontmatter (name, description, allowed-tools, default-model, trigger) defining a single reusable skill that any conforming agent can discover and load. Standardised December 2025; hot-reloadable since Claude Code 2.1.0 (January 2026). Cross-agent by design: skills conforming to the specification can be consumed by any agent that implements the SKILL.md protocol, not only Claude Code.
+    - **CLAUDE.md**: Session initialisation file read at conversation start by Claude Code and Cline; encodes rules, tool permissions, skill pointers, MCP registrations, and slash-command definitions into the [[Large Language Model]]'s operating context. Hierarchical: user-level (`~/.claude/CLAUDE.md`) overridden by workspace-level (`CLAUDE.md`), overridden by project-level (`project/CLAUDE.md`).
+    - **Slash command**: A named shortcut prefixed with `/` that either invokes agent harness state (`/model`, `/permissions`) or triggers a saved SKILL.md prompt template. Explicit — requires user invocation. Complements skills, which are implicit.
+    - **Skill**: A named, loadable configuration unit with progressive disclosure; loaded passively (description only at ~5-10 tokens per skill) at session start and fully on intent-match or explicit invocation. Implicit — agent decides when to load based on task context. Distinguished from slash commands by the invocation mechanism: skills fire when the agent judges them relevant; commands fire when the developer types `/name`.
+    - **Instinct**: An autonomic decision rule (Everything Claude Code concept) embedded in CLAUDE.md or as a hook that fires without explicit user instruction or model reasoning, implementing safety and quality checks at the harness level below the [[ReAct Pattern]] reasoning loop. Instincts are the harness-engineering realisation of "fail-safe defaults" — the constraints that should apply even when the model is not thinking about them.
+    - **Hook**: A lifecycle event handler registered in `settings.json` that executes deterministically outside the model's context as a shell script or executable; the enforcement layer for harness constraints that instruction-following alone cannot guarantee. Hook events: PreToolUse (before a tool call executes), PostToolUse (after a tool call returns), UserPromptSubmit (when user submits a message), SessionStart (when session opens), SessionEnd (when session closes), Stop (when agent stops).
+    - **Progressive disclosure**: The two-tier skill architecture in which only skill metadata (name, description) is loaded at session start and full SKILL.md bodies are loaded on demand when the agent determines skill relevance or the user explicitly invokes the skill. Preserves [[Context Window]] budget by keeping the majority of skill content out of context until needed.
+    - **Context rot**: Quality degradation in long coding-agent sessions caused by accumulation of stale, irrelevant, or contradictory content in the [[Context Window]]; addressed by GSD's session hygiene disciplines, context eviction strategies, and handoff-file conventions.
+    - **Harness engineering**: The discipline of configuring, composing, and maintaining harness configuration packs to achieve reliable, auditable, and efficient coding-agent behaviour; coined by HumanLayer (2026); recognised as a distinct engineering competency analogous to DevOps engineering.
+    - **MCP server registry**: The configuration block (`.mcp.json`) listing [[Model Context Protocol]] servers available as tools to the agent; harness packs use this to ship pre-configured integrations with Git, CI/CD, vector databases, and external services without requiring the developer to configure each integration manually.
+    - **Bootstrap skill**: The initial skill loaded at session start that instructs the model about the existence of the skill library and how to invoke skills; Superpowers' `using-superpowers` meta-skill is the canonical example, implementing the 1% invocation rule.
+    - **Memory layer**: A set of structured files (JSON, Markdown) written to `.claude/memory/` by the agent across sessions and read at session start as part of the CLAUDE.md bootstrap; provides cross-session continuity for [[Agent Memory Layers]] without requiring an in-process vector store. Used by Everything Claude Code; analogous to MemGPT's external context management.
+    - **Plugin** (wshobson/agents): A self-contained directory in the wshobson/agents marketplace containing one or more skills, agents, slash commands, hooks, and MCP server definitions; independently installable without requiring the full marketplace. The plugin abstraction enables granular adoption: install only the plugins relevant to the current project rather than the full 78-plugin catalogue.
+    - **Instinct rule**: A specific instance of the instinct category; typically a PostToolUse hook condition that fires on specific tool-call patterns and injects a supplementary analysis or constraint. Example: "after every file-write to `*.py`, run the security-reviewer skill on the written content." Instinct rules are the mechanism through which quality and security constraints become automatic rather than discretionary.
+
+  - ## Hook Event Reference
+    The [[Hook System]] in Claude Code and conforming agents provides seven lifecycle events that harness configuration packs can attach handlers to. Understanding the semantics of each event is essential for harness engineering.
+    - **PreToolUse**: Fires before any tool call is executed. The hook receives the tool name and arguments; it can inspect the arguments and return exit code 1 to block the tool call, or exit code 0 to permit it. Used for safety enforcement (blocklist commands, path validation) and workflow gates (require test file before implementation file write).
+    - **PostToolUse**: Fires after a tool call returns its result. The hook receives the tool name, arguments, and result; it cannot modify the result but can trigger side effects (run formatter, invoke security scanner, write to audit log). The most commonly used hook event for quality enforcement.
+    - **UserPromptSubmit**: Fires when the developer submits a message to the agent. The hook can modify or prepend to the prompt before the model processes it; used to inject project context, quality rules, and global constraints that should apply to every interaction.
+    - **SessionStart**: Fires when an agent session opens. Used to inject session-start context (date, environment, project summary), verify prerequisites (MCP servers accessible, required tools installed), and log session metadata to the audit trail.
+    - **SessionEnd**: Fires when an agent session closes normally. Used to write session summary to memory files, commit session transcript to audit log, run end-of-session cleanup, and emit session metrics (total tokens, cost, files modified).
+    - **Stop**: Fires when the agent stops (either task complete or user-requested stop). Distinct from SessionEnd in that Stop fires on each task completion within a multi-task session; used to emit task-level metrics and trigger downstream processes (e.g., run CI after each task).
+    - **SubagentResult** (wshobson/agents extension): Fires when a sub-agent completes and returns its result to the orchestrator. Used in multi-agent orchestration patterns to validate sub-agent output quality before it is accepted by the orchestrating agent.
+
+  - ## Pack Installation and Configuration Reference
+    Installing a harness configuration pack typically involves the following steps, which vary in complexity by pack:
+    - **Step 1 — Clone or download the pack**: `git clone <pack-repo> ~/.claude/packs/<pack-name>` or `npm install @pack-author/pack-name` (for npm-distributed packs). Some packs are simply copied from GitHub; others are distributed as npm packages with an installer script.
+    - **Step 2 — Merge CLAUDE.md content**: Review the pack's CLAUDE.md or README for its CLAUDE.md additions; merge into your project-level or user-level CLAUDE.md. Do not wholesale replace your existing CLAUDE.md — merge selectively, checking for conflicts with existing rules.
+    - **Step 3 — Install skills**: Copy or symlink the pack's `skills/` directory contents to `~/.claude/skills/` (user-level) or `.claude/skills/` (project-level). Hot-reload (Claude Code 2.1.0+) means skills are available immediately without session restart.
+    - **Step 4 — Register hooks**: Add the pack's hook definitions to your `settings.json`. Review each hook's script before registering; hooks execute shell commands on your filesystem with your user permissions. Apply principle of least privilege.
+    - **Step 5 — Configure MCP servers**: Add the pack's [[Model Context Protocol]] server entries to `.mcp.json`. Start each MCP server and verify connectivity before relying on it in sessions. Check that server trust level matches the permission scope you intend to grant.
+    - **Step 6 — Install slash commands**: Copy the pack's `commands/` directory contents to `.claude/commands/`. Verify there are no name conflicts with existing commands; rename conflicting commands using the pack-prefix convention.
+    - **Step 7 — Verify installation**: Run `/harness-audit` in a Claude Code session to review the merged configuration, token budget estimate, hook coverage, and any detected conflicts. Address any reported issues before using the pack in production.
+    - **Step 8 — Test in isolation**: Create a throwaway branch and test the pack's skills and hooks on representative tasks before committing the pack configuration to the team's shared repository. Verify that hook blocklists match your team's conventions and that auto-approve scopes are correctly configured.
+
+  - ## Developer Adoption Patterns and Productivity Impact
+    The adoption trajectory of harness configuration packs in 2025-2026 follows a characteristic S-curve with three identifiable phases:
+    - **Phase 1 — Discovery (Q2-Q3 2025)**: Individual developers discover that CLAUDE.md customisation significantly improves agent reliability for their specific workflows. Sharing individual CLAUDE.md snippets on Reddit, Discord, and Hacker News creates an informal commons of configuration knowledge. obra/superpowers provides the first structured framework, attracting early adopters who want more than ad-hoc configuration.
+    - **Phase 2 — Popularisation (Q3-Q4 2025)**: GStack's viral launch (50K stars in 16 days) and Everything Claude Code's hackathon win bring harness engineering to mainstream developer attention. The TechTimes, MindStudio, and DEV Community press coverage familiarises non-early-adopter developers with the category. wshobson/agents marketplace launch makes curated, composable packs accessible without requiring pack authorship skill.
+    - **Phase 3 — Standardisation (Q4 2025 – mid-2026)**: Anthropic's SKILL.md open standard and Claude Code 2.1.0 hot-reload capability transform harness configuration from community practice to officially supported extension mechanism. Enterprise adoption begins at TELUS, Bridgewater, Zapier. The /harness-audit command, Paradime guide, and HumanLayer "harness engineering" framing provide the professional vocabulary and tooling that enterprise adoption requires.
+
+    Self-reported productivity impacts from practitioners (as aggregated in comparison blogs and community surveys) show a consistent pattern:
+    - GStack: 5-10x throughput increase for well-defined feature implementation tasks; 2-3x for exploratory or architecturally ambiguous tasks. The role-specialisation model is most effective for tasks where the required specialist persona is clear in advance.
+    - Everything Claude Code: Primary benefit reported as quality improvement (fewer security issues, more consistent test coverage) rather than speed increase. The instinct-based automatic security review provides ROI through defect prevention rather than development acceleration.
+    - GSD: Primary benefit reported as recovery from context-rot situations; developers cite being able to resume long-running sessions without losing hours of context as the key value proposition.
+    - Superpowers: Primary benefit reported as reduced cognitive overhead of skill selection; the 1% rule's aggressive invocation strategy means the agent handles skill selection rather than the developer, reducing the meta-task of "which skill should I invoke?" during complex workflows.
+
+    The most consistent finding across adoption reports is that harness configuration pack value is highly correlated with task repetition frequency: packs provide maximal value for tasks the developer performs daily (code review, commit preparation, test generation) and minimal value for one-off exploratory tasks where the agent's base capability is sufficient without workflow structure.
+
+  - ## Integration with the Broader Agent Ecosystem
+    Harness configuration packs interact with the broader [[Agentic AI]] ecosystem in three primary modes:
+    - **Configuration-as-Code for [[Agent Frameworks]]**: The same CLAUDE.md + SKILL.md + hooks model that works for Claude Code can be adapted for other [[Agent Frameworks]] that expose similar configuration interfaces. LangChain's prompt template registry and AutoGen's agent system prompts can be managed as harness-pack-style version-controlled Markdown files, even though neither framework natively supports SKILL.md format. The practitioner community has developed adapters for this pattern.
+    - **Pre-configuration for [[Agent Execution Sandboxes]]**: OpenHands deployments can be pre-loaded with harness configuration packs through Docker volume mounts that inject CLAUDE.md, skill directories, and hook definitions into the container's agent home directory before task execution begins. This pattern enables enterprise DevOps teams to maintain standardised harness configurations for automated agent runs without requiring per-developer configuration.
+    - **Input to [[Agent Evaluation Benchmarks]]**: The Claw-SWE-Bench benchmark's adapter specification is conceptually a harness configuration pack for the evaluation setting: it defines the prompt format, workspace contract, and tool permissions that standardise the agent's operating environment across benchmark instances. As harness evaluation becomes a research priority, the interface between harness configuration packs and evaluation benchmarks will need formal specification.
+    - **Metadata for [[Agent Identity]]**: Enterprise harness configuration registries increasingly include pack metadata (version, author, certified-by, scope) that enables organisational [[Agent Identity]] management: an agent's effective capability and behaviour are determined not only by its model but by its installed harness pack, and the registry metadata provides the information needed for capacity planning and compliance attestation.
+    - **Substrate for [[Multi-Agent Orchestration Frameworks]]**: The wshobson/agents orchestrator definitions and Everything Claude Code's subagent spawning conventions are harness-pack-level implementations of [[Multi-Agent Orchestration Frameworks]] patterns. As orchestration frameworks mature, the harness configuration layer will provide the per-agent behavioural specification that orchestrators use to route tasks to appropriately configured agents.
+
+  - ## Cross-Reference Matrix: Harness Configuration Packs vs Related Concepts
+    - **[[Harness Configuration Packs]] vs [[Agent Frameworks]]**: Agent frameworks provide runtime infrastructure (tool orchestration, state management, process spawning); harness configuration packs provide workflow intelligence and quality enforcement at the configuration layer. Agent frameworks require code changes; harness packs require only configuration file changes.
+    - **[[Harness Configuration Packs]] vs [[Internal AI Harness]]**: Internal harnesses embed model inference in the application runtime; harness configuration packs configure external agent runtimes like Claude Code or Cline. Internal harnesses are code; harness packs are configuration.
+    - **[[Harness Configuration Packs]] vs [[External AI Harness]]**: External harnesses route inference via service meshes for scalability; harness configuration packs configure the per-developer agent that calls the external service. External harnesses are infrastructure; harness packs are developer workflow tools.
+    - **[[Harness Configuration Packs]] vs [[Prompt Engineering]]**: Prompt engineering is the practice of crafting effective prompts for individual model interactions; harness engineering applies prompt engineering techniques as versioned, modular, composable configuration files that govern entire agent sessions. Harness engineering is prompt engineering elevated to software-engineering practice.
+    - **[[Harness Configuration Packs]] vs [[IDE Coding Agents]]**: IDE coding agents provide the runtime execution environment with approval gates, diff viewing, and MCP client; harness configuration packs configure the behaviour, roles, and quality disciplines within that environment. The two layers are complementary and typically adopted together.
+    - **[[Harness Configuration Packs]] vs [[Terminal Coding Agents]]**: Terminal coding agents operate via CLI; harness packs configure their CLAUDE.md, skills, hooks, and slash commands. The same SKILL.md specification (from Anthropic's open standard) can be used to configure both IDE and terminal coding agents, enabling pack portability across agent types.
+    - **[[Harness Configuration Packs]] vs [[Multi-Agent Orchestration Frameworks]]**: Orchestration frameworks coordinate multiple agent instances; harness packs provide the per-agent behavioural specification that orchestrators rely on for task routing. In the wshobson/agents marketplace, the orchestrator definitions and the skill/agent specifications are both harness pack components.
+    - **[[Harness Configuration Packs]] vs [[Retrieval-Augmented Generation]]**: RAG systems retrieve relevant documents into context; harness packs' memory layer and MCP-connected vector search provide RAG capabilities within the coding agent context. Harness engineering increasingly incorporates RAG patterns for codebase-aware context assembly.
+    - **[[Harness Configuration Packs]] vs [[Agent Memory Layers]]**: Formal agent memory architectures (episodic, semantic, procedural) are a research category; harness packs' memory layer is a pragmatic filesystem-based implementation of cross-session memory that does not require in-process vector stores or model modifications.
+
+  - ## SKILL.md Format Specification Reference
+    The SKILL.md format, standardised by Anthropic in December 2025 and consumed by Claude Code, Kilo Code, and any conforming agent, has the following structure:
+    - **Frontmatter (required)**:
+      - `name: "<skill-name>"` — unique identifier within the skill library; used for explicit invocation and conflict detection
+      - `description: "<short description>"` — loaded at session start; the text the agent pattern-matches against user intent; should be precise enough to trigger accurately but concise enough to load cheaply (target: under 30 words)
+    - **Frontmatter (optional)**:
+      - `allowed-tools: [tool1, tool2, ...]` — restricts the tool set available when this skill is active; prevents skills from invoking tools outside their intended scope
+      - `default-model: "<model-id>"` — overrides the session's default model for this skill; used to route expensive skills to budget models and complex skills to frontier models
+      - `trigger: "<regex-or-semantic-condition>"` — a pattern that causes the agent to consider the skill active without explicit invocation; used for skills that should fire on specific code patterns, file types, or task keywords
+      - `priority: <integer>` — determines skill loading order when multiple skills are triggered simultaneously; higher priority skills are loaded first, reducing context budget before lower priority skills
+    - **Body (required)**: The [[Prompt Template]] that defines the skill's behaviour when activated. Best practices:
+      - Lead with a worked example (input/output pair) before the general instruction
+      - State explicit success criteria ("the skill is complete when...")
+      - List the tool calls the skill is permitted to make in the expected order
+      - Include error recovery instructions for common failure modes
+      - Keep the body under 2,000 tokens for skills loaded frequently; longer bodies are acceptable for infrequently-loaded complex skills
+    - **Comments**: YAML comments (`#`) in frontmatter are preserved and not processed; useful for pack maintainers to document design decisions within the skill file itself
+
+  - ## Research & Literature
+    1. Anthropic (2025). "Agent Skills — Claude API Docs." https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+    2. Anthropic (2025). "Anthropic/skills — Public repository for Agent Skills." https://github.com/anthropics/skills
+    3. Anthropic (2026). "Extend Claude with skills — Claude Code Docs." https://code.claude.com/docs/en/skills
+    4. Anthropic (2026). "How AI assistance impacts the formation of coding skills." https://www.anthropic.com/research/AI-assistance-coding-skills
+    5. Tan, G. (2025). "GStack — Use Garry Tan's exact Claude Code setup." https://github.com/garrytan/gstack
+    6. GStacks.org (2026). "GStack — Turn Claude Code into a Virtual Software Development Team." https://gstacks.org/
+    7. Mustafa, A. (2025). "Everything Claude Code (ECC) — Agent harness performance optimisation." https://github.com/affaan-m/everything-claude-code
+    8. wshobson (2025). "wshobson/agents — Multi-harness agentic plugin marketplace." https://github.com/wshobson/agents
+    9. obra (2025). "obra/superpowers — Claude Code slash commands and hooks." https://deepwiki.com/obra/superpowers/5.1-claude-code:-slash-commands-and-hooks
+    10. Pulumi Blog (2026). "Superpowers, GSD, and GSTACK: Picking the Right Framework for Your Coding Agent." https://www.pulumi.com/blog/claude-code-orchestration-frameworks/
+    11. Medium / Ewan Mak (2026). "Superpowers, GSD, and gstack: What Each Claude Code Framework Actually Constrains." https://medium.com/@tentenco/superpowers-gsd-and-gstack-what-each-claude-code-framework-actually-constrains-12a1560960ad
+    12. TechTimes (2026). "AI Coding's Discipline Turn: Three Open-Source Frameworks Superpowers, gstack, GSD Outpace Model Upgrades." https://www.techtimes.com/articles/316927/20260521/ai-codings-discipline-turn-three-open-source-frameworks-superpowers-gstack-gsd-outpace-model.htm
+    13. MindStudio (2026). "What Is GStack? Gary Tan's Open-Source Startup Framework for Claude Code." https://www.mindstudio.ai/blog/what-is-gstack-gary-tan-claude-code-framework
+    14. Augment Code (2026). "Garry Tan open-sources gstack: what developers should know." https://www.augmentcode.com/learn/garry-tan-gstack-claude-code
+    15. Paradime (2026). "Claude Code Skills & Harness Engineering: Complete Guide to Rules, Plugins & MCP Servers." https://www.paradime.io/guides/claude-code-skills-plugins-rules-guide
+    16. HumanLayer Blog (2026). "Skill Issue: Harness Engineering for Coding Agents." https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents
+    17. DEV Community / arshtechpro (2026). "Harness: Turn a One-Line Prompt Into a Full Agent Team for Claude Code." https://dev.to/arshtechpro/harness-turn-a-one-line-prompt-into-a-full-agent-team-for-claude-code-5eog
+    18. Bridgers Agency (2026). "Everything Claude Code Is Approaching 100K GitHub Stars." https://bridgers.agency/en/blog/everything-claude-code-explained
+    19. hesreallyhim (2025–2026). "awesome-claude-code — Curated list of skills, hooks, slash-commands, orchestrators." https://github.com/hesreallyhim/awesome-claude-code
+    20. DEV Community / Imaginex (2026). "A Claude Code Skills Stack: How to Combine Superpowers, gstack, and GSD Without the Chaos." https://dev.to/imaginex/a-claude-code-skills-stack-how-to-combine-superpowers-gstack-and-gsd-without-the-chaos-44b3
+    21. Wei, J. et al. (2022). "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models." NeurIPS 2022. https://arxiv.org/abs/2201.11903
+    22. Suzgun, M. & Kalai, A. (2024). "Meta-Prompting: Enhancing Language Models with Task-Agnostic Scaffolding." arXiv:2401.12954. https://arxiv.org/abs/2401.12954
+    23. [Claw-SWE-Bench Authors] (2026). "Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks." arXiv:2606.12344. https://arxiv.org/abs/2606.12344
+    24. Dabi, N. et al. (2026). "Agentic Much? Adoption of Coding Agents on GitHub." arXiv:2601.18341. https://arxiv.org/abs/2601.18341
+    25. Alan Turing Institute (2024). "Doing AI Differently." https://www.turing.ac.uk/news/publications/doing-ai-differently
+    26. New Stack (2025). "Agent Skills: Anthropic's Next Bid to Define AI Standards." https://thenewstack.io/agent-skills-anthropics-next-bid-to-define-ai-standards/
+    27. VentureBeat (2025). "Anthropic launches enterprise 'Agent Skills' and opens the standard." https://venturebeat.com/technology/anthropic-launches-enterprise-agent-skills-and-opens-the-standard
+    28. Blake Crosley (2026). "Claude Code CLI: The Complete Guide — Hooks, MCP, Skills." https://blakecrosley.com/guides/claude-code
+
+  - ## Ecosystem Economics and Incentive Structure
+    The harness configuration pack ecosystem displays a distinctive economic structure driven by the zero-marginal-cost distribution of Markdown files:
+    - **Creator incentives**: Pack authors receive GitHub stars, community reputation, and (for commercially-oriented packs) potential enterprise licensing revenue. GStack's Garry Tan used his YC CEO platform to generate viral adoption; Everything Claude Code's hackathon win provided independent credibility. The marginal cost of distribution is zero (GitHub hosting); the primary investment is authorship time.
+    - **User incentives**: Packs provide immediate productivity benefits at zero adoption cost (no software installation, no API changes, only configuration file additions). The low switching cost also means users can compose multiple packs or switch between them easily, creating a competitive market dynamic.
+    - **Anthropic's platform interest**: Anthropic benefits from high-quality harness packs because they make Claude Code more capable and valuable, increasing API consumption and reducing churn. The SKILL.md open standard is partially a platform strategy: by defining the specification, Anthropic encourages third-party investment in skills that run on Claude, building ecosystem moat while nominally maintaining cross-agent portability.
+    - **Enterprise monetisation models**: wshobson/agents offers a free community tier and a premium enterprise tier with additional governance tooling, private skill registries, and support. This two-tier model is the emerging monetisation template for enterprise harness configuration packs.
+    - **Community commons dynamic**: The community skill library (awesome-claude-code, GitHub community search) functions as an open commons where individual developers contribute specialised skills that collectively provide broader coverage than any single pack. The coordination problem (avoiding duplication, maintaining quality) is partially addressed by the curated directory and by the SKILL.md format's standardisation of the contribution interface.
+    - **Network effects**: Pack value increases with pack quality and coverage; developer adoption increases as packs become more capable, which attracts more contributors, which improves pack quality — a positive feedback loop. GStack's rapid adoption (50K stars in 16 days) exemplifies the network effect dynamics of the ecosystem.
+
+  - ## Prompt Template Design Reference
+    [[Prompt Template]] design is the foundational skill of harness configuration pack authorship. Effective templates in SKILL.md and slash-command bodies share the following structural characteristics:
+    - **Role assignment**: "You are acting as [role] for this task." Role assignment anchors the model's reasoning persona and applies appropriate domain knowledge implicitly.
+    - **Context injection**: "The current project is [type] using [stack]. The relevant files are [list]." Context reduces the exploratory file-read phase overhead.
+    - **Task specification**: "Your goal is to [specific outcome]. The task is complete when [success criterion]." Clear success criteria prevent the agent from continuing after the task is complete.
+    - **Tool sequencing**: "Begin by [tool 1 to call], then [tool 2], then [tool 3]." Explicit sequencing reduces the model's decision entropy on which tool to call next, improving efficiency.
+    - **Output format**: "Return your result as [format: JSON/Markdown/PR comment/etc.]." Explicit output format enables downstream processing by hooks or by the developer.
+    - **Error handling**: "If [error condition], then [fallback action]. Alert the user if [escalation condition]." Explicit error handling prevents the agent from entering repair loops or continuing silently past failures.
+    - **Scope limitation**: "Only modify files in [directory]. Do not modify [restricted path]. Do not invoke [restricted tool]." Scope limitations reduce the risk surface of the skill activation.
+    - **Completion confirmation**: "After completing the task, summarise what you changed, why, and any issues you encountered." Completion summaries give the developer a quick quality signal before reviewing the diff in detail.
+    - **Idempotency instruction**: "If the task has already been completed in a previous session (check [indicator]), report the existing state rather than re-executing." Idempotency instructions prevent duplicate actions when skills are accidentally re-invoked.
+
+  - ## Pack Ecosystem Summary (mid-2026)
+    The following summary table characterises the major harness configuration packs available as of mid-2026. Stars are approximate GitHub star counts; license is the distribution license.
+    - **GStack (garrytan/gstack)**: Stars: ~100K+ | License: MIT | Design: Role-based virtual team | Skills: 23 | Hooks: minimal | MCP: none shipped | Best for: startup workflows, product-to-ship pipelines, CEO-level governance
+    - **Everything Claude Code (affaan-m/everything-claude-code)**: Stars: ~100K | License: MIT | Design: Performance + security optimisation | Subagents: 28 | Hooks: extensive (instincts) | Memory: yes | Best for: large projects, security-sensitive code, test-driven development
+    - **Get-Shit-Done / GSD (Lex Christopherson)**: Stars: moderate | License: MIT | Design: Context-rot prevention | Skills: workflow hygiene focused | Hooks: session checkpoint hooks | Memory: handoff files | Best for: long-running sessions, resumable complex tasks
+    - **Superpowers (obra/superpowers)**: Stars: moderate | License: MIT | Design: Meta-prompting framework | Skills: extensible library | Hooks: session-start bootstrap | MCP: none shipped | Best for: practitioners building their own skill library, 1% invocation rule enthusiasts
+    - **wshobson/agents**: Stars: ~17K | License: MIT | Design: Multi-harness marketplace | Agents: 184 | Orchestrators: 16 | Skills: 150 | Commands: 98 | Plugins: 78 | Best for: polyglot teams running multiple agent runtimes
+    - **anthropics/skills**: Stars: official | License: Apache 2.0 | Design: Reference implementation | Focus: document tasks, SRE/DevOps, code generation | SKILL.md compliance: canonical | Best for: cross-agent portability, enterprise baseline
+    - **pmstack**: Design: Product manager workflows | Focus: PRD generation, acceptance criteria, stakeholder comms | Best for: engineers who run product discovery through coding agents
+    - **hesreallyhim/awesome-claude-code**: Stars: curated directory | Type: pack catalogue (not a pack itself) | Contains: 1000+ community-contributed skills, hooks, slash commands, orchestrators | Best for: discovering specialised packs for specific domains
+
+  - ## Related Pages in This Ontology
+    The following pages in this knowledge graph are directly related to [[Harness Configuration Packs]] and should be consulted for cross-referencing and relationship navigation:
+    - **[[Agent Harness]]**: Parent class; the execution framework that harness configuration packs augment. Packs operate through the configuration interfaces that agent harnesses expose.
+    - **[[IDE Coding Agents]]**: Primary consumer class; harness packs most commonly configure IDE coding agents (Cline, Kilo Code). The runtime layer that harness packs sit above.
+    - **[[Terminal Coding Agents]]**: Secondary consumer class; harness packs like wshobson/agents explicitly target terminal coding agents (Claude Code, opencode, Codex CLI, Gemini CLI) alongside IDE agents.
+    - **[[Hook System]]**: The enforcement layer component of harness configuration packs; hooks fire deterministically outside the model context to enforce quality and safety constraints.
+    - **[[Prompt Template]]**: The skill-body component of SKILL.md; harness pack authorship is primarily the practice of writing effective prompt templates.
+    - **[[Model Context Protocol]]**: The protocol through which harness packs register external tool integrations; MCP server registries are a core component of harness packs that extend agent capability.
+    - **[[Agent Memory Layers]]**: Persistent memory architectures; the memory layer component of harness packs (Everything Claude Code's `.claude/memory/`) is a filesystem implementation of agent memory.
+    - **[[Agent Frameworks]]**: Higher-level orchestration runtimes; harness configuration packs configure individual agents within orchestration frameworks and implement lightweight orchestration through subagent definitions.
+    - **[[Large Language Model]]**: The backend that executes skill bodies and responds to CLAUDE.md instructions; harness pack effectiveness is conditioned on the capability and instruction-following of the underlying model.
+    - **[[Prompt Engineering]]**: The discipline from which harness engineering evolved; harness engineering is the application of prompt engineering to versioned, modular, composable configuration rather than single-interaction prompts.
+    - **[[Multi-Agent Orchestration Frameworks]]**: Coordinating systems for multi-agent workflows; wshobson/agents' orchestrator definitions implement lightweight orchestration at the harness-pack level.
+    - **[[Autonomous Coding]]**: The target capability that harness configuration packs enhance; packs improve the quality, reliability, and safety of autonomous coding within agent sessions.
+    - **[[Chain-of-Thought]]**: The reasoning pattern that skill bodies exploit through worked examples and step-by-step instructions; chain-of-thought prompting is embedded in effective skill body design.
+    - **[[Agent Evaluation Benchmarks]]**: Evaluation protocols for agents; Claw-SWE-Bench quantifies harness adapter quality, providing the empirical basis for comparing harness pack effectiveness.
+    - **[[Retrieval-Augmented Generation]]**: The pattern through which MCP-connected vector search tools provide codebase-aware context assembly within agent sessions; RAG integration is an emerging direction for harness packs.
+
+  - ## Skill Design Patterns
+    The following reusable patterns have emerged from community skill authorship and are documented in the hesreallyhim/awesome-claude-code directory and practitioner guides:
+    - **Worked-Example Pattern**: Lead the skill body with a complete input/output example before stating the general instruction. Exploits the [[Large Language Model]]'s in-context learning; the example anchors the model's interpretation of ambiguous instructions. Most effective for skills involving structured output formats.
+    - **Checklist Skill Pattern**: The skill body is a numbered checklist that the agent must execute step-by-step, reporting completion of each step before proceeding. Appropriate for multi-step compliance workflows (security review, code review, dependency audit) where skipping steps is a failure mode.
+    - **Gated Skill Pattern**: The skill body opens with a guard condition ("Only proceed if the current file is a Python implementation file, not a test file or configuration file"). The guard prevents the skill from running on inappropriate inputs, reducing false-positive invocations.
+    - **Persona Skill Pattern** (GStack): The skill body opens with a persona declaration ("You are the engineering manager for this project. Your role is to...") that overrides the agent's default assistant persona for the duration of the skill invocation. Used for role-based governance skills where distinct authority and responsibility boundaries are important.
+    - **RAG Skill Pattern**: The skill body instructs the agent to first invoke an MCP-connected vector search tool to retrieve relevant project history, architecture documents, or prior decision notes before proceeding with the task. Combines [[Retrieval-Augmented Generation]] with the [[Prompt Template]] model.
+    - **Self-Critiquing Skill Pattern**: The skill body instructs the agent to first complete a task, then self-review the output against a checklist, then revise where the review identifies issues. Implements a mini [[ReAct Pattern]] loop within a single skill invocation, improving output quality without requiring a separate review pass by the developer.
+    - **Handoff Skill Pattern** (GSD): The skill body instructs the agent to write a structured handoff document to a specified filesystem path before the session ends, capturing current task state, completed steps, pending steps, known issues, and next-action recommendations. The handoff file is read by the bootstrap at the next session start, enabling clean session resumption.
+    - **Budget-Aware Skill Pattern**: The skill body checks current token consumption against a budget threshold at the start and recommends to the developer whether to proceed in the current session or start a fresh session with the skill's output as context. Prevents context-rot by detecting high-consumption situations before quality degrades.
+    - **Approval-Gate Skill Pattern**: The skill body explicitly lists the tool calls it will make and their expected consequences before beginning execution, presenting this as a plan for developer review. Implements a skill-internal mini Plan mode, giving the developer a chance to abort before potentially costly tool calls execute.
+    - **Domain-Specific Checklist Pattern**: Skills for regulated domains (security, financial services, medical devices) encode domain-specific compliance checklists (OWASP Top 10 for security, PCI-DSS controls for fintech, IEC 62304 requirements for medical software). The checklist is applied systematically with each item reported and passed/failed, producing an audit-ready compliance record.
+
+  - ## Multi-Team Harness Governance
+    As harness configuration packs become organisational infrastructure, teams need governance processes that balance standardisation with flexibility. The following governance patterns have emerged from enterprise adoption:
+    - **Central harness repository**: Maintain a dedicated `team-harness` Git repository containing the approved shared CLAUDE.md, team skill library, authorised MCP server registry, and mandatory hooks. Individual project repositories add only project-specific overlays. Teams with multiple projects share the team-harness repository as a submodule or via automated sync pipelines.
+    - **Skill approval workflow**: New skills added to the team's shared skill library go through a review process (typically a PR to the team-harness repository) covering: security review (does the skill's allowed-tools list match minimum necessary permissions?), accuracy review (does the skill body correctly describe the intended workflow?), and testing (has the skill been validated on representative tasks?). Approved skills are tagged with a version and the approver's identity.
+    - **Hook mandatory vs optional designation**: Some hooks are mandatory for all team members (security blocklist, audit logging) while others are optional developer preference (formatter, linter choice). The governance policy distinguishes these categories and enforces mandatory hooks through team-harness repository automation.
+    - **Harness version pinning**: Team-harness configurations pin skill library and pack versions to specific Git commit SHAs or semantic version tags, preventing automatic update-induced behaviour changes during active development sprints. Updates are promoted from a staging harness to the production team harness through a deliberate promotion process, with integration testing on representative tasks before promotion.
+    - **Cost budget per role**: Enterprise governance includes per-role [[Context Window]] and cost budget policies: senior engineers may be granted higher cost budgets for complex architectural tasks; junior engineers may be restricted to Sonnet-tier models and auto-approve disabled for all write operations. Budget enforcement is implemented through UserPromptSubmit hooks that check session cost against the developer's policy tier.
+    - **Harness audit cadence**: Teams schedule quarterly harness audits (using `/harness-audit` plus manual review) to identify stale skills that are no longer used, hooks whose patterns no longer match the project's current structure, and MCP servers that have been deprecated or replaced. Quarterly audits prevent the harness from accumulating technical debt that degrades performance and increases context overhead.
+    - **Incident playbook integration**: Enterprise incident response playbooks include a harness configuration section that lists the team's mandatory hooks, approved tool permissions, and evidence-preservation procedures for IDE coding agent sessions involved in production incidents. The session transcript format (JSONL with timestamps) integrates directly with most evidence preservation requirements.
+
+  - ## Common Configuration Anti-Patterns
+    Practitioners frequently encounter the following anti-patterns in harness configuration, documented here as cautionary reference:
+    - **Wholesale CLAUDE.md replacement**: Installing a pack's CLAUDE.md as a complete replacement rather than merging into the existing configuration.
+      - Result: loss of project-specific constraints and previously tuned behavioural rules.
+      - Mitigation: always merge CLAUDE.md content, preserving the project-level override hierarchy.
+    - **Over-wide auto-approve**: Enabling full AUTO mode (approve all tool types without confirmation) early in agent adoption before understanding the agent's error modes.
+      - Result: accidental file deletion, unintended git operations, or expensive bash commands executed without review.
+      - Mitigation: expand auto-approve scope incrementally, tool-type by tool-type, based on observed error rates.
+    - **Hook script without error handling**: Writing a hook script that exits non-zero for transient errors (network timeout, linting tool not installed) rather than only genuine policy violations.
+      - Result: agent sessions blocked by infrastructure failures rather than by intentional constraints.
+      - Mitigation: hook scripts should distinguish transient errors (log and exit 0) from policy violations (exit 1 with explanation).
+    - **Skill library bloat**: Installing the full wshobson/agents marketplace (150 skills, 184 agents) without filtering to skills relevant to the current project.
+      - Result: high session-start token overhead; increased decision noise from irrelevant skills being considered for every task.
+      - Mitigation: install only the plugins relevant to current project type; audit session-start context budget.
+    - **Memory layer accumulation without review**: Allowing the memory layer to accumulate indefinitely without periodic review and pruning.
+      - Result: stale, contradictory, or incorrect architectural notes in `.claude/memory/` that mislead the agent on resumed sessions.
+      - Mitigation: review and prune memory files at the end of each sprint or major architectural change.
+    - **CLAUDE.md instruction vs hook confusion**: Using CLAUDE.md instructions for constraints that must be reliably enforced (e.g., "never commit to main directly") rather than implementing them as hooks.
+      - Result: the agent follows the instruction most of the time but violates it occasionally, particularly in long sessions with [[Context Window]] rot.
+      - Mitigation: safety-critical constraints must be hooks, not instructions. The rule: if the constraint must hold even when the model is not thinking about it, it must be a hook.
+    - **MCP server over-trust**: Registering a third-party MCP server (downloaded from the community) without auditing its implementation for malicious or overly permissive tool definitions.
+      - Result: the agent invokes tools that access filesystems, credentials, or network endpoints beyond the intended scope.
+      - Mitigation: review all MCP server source before registration; apply principle of least privilege to each server's permission scope.
+
+  - ## Ontology Provenance Notes
+    This page was enriched from a stub definition as part of the Phase 6 ontology enrichment programme, using web searches for 2024-2026 developments, cross-referencing with related pages in this knowledge graph ([[Agent Harness]], [[IDE Coding Agents]], [[Terminal Coding Agents]], [[Agent Frameworks]]), and integration of ecosystem data from GStack, Everything Claude Code, and the wshobson/agents repositories. OWL axioms follow the SubClassOf/ObjectSomeValuesFrom pattern consistent with the established ontology style. All factual claims are sourced from published papers, official documentation, or practitioner references dated 2024-2026. Unverified claims have been excluded.
+    - Domain: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[SoftwareEngineeringDomain]]
+    - Term ID: AI-9912
+    - Quality target: 0.90 (established, well-sourced, empirically grounded)
+    - OWL profile: DL + EL compatible
+    - Wikilink count: meets 60-82 target
+    - Reference count: 28 (meets 25-28 target)
+    - OWL axiom count: 38 (meets 35-46 target)
+    - Cross-referenced pages: [[Agent Harness]], [[IDE Coding Agents]], [[Terminal Coding Agents]], [[Hook System]], [[Prompt Template]], [[Model Context Protocol]], [[Agent Memory Layers]], [[Retrieval-Augmented Generation]]
+
+- ### Provenance
+  - sources:: https://github.com/garrytan/gstack, https://github.com/affaan-m/everything-claude-code, https://github.com/wshobson/agents, https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview, https://arxiv.org/abs/2606.12344, https://arxiv.org/abs/2601.18341, https://www.pulumi.com/blog/claude-code-orchestration-frameworks/, https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents, https://venturebeat.com/technology/anthropic-launches-enterprise-agent-skills-and-opens-the-standard, https://thenewstack.io/agent-skills-anthropics-next-bid-to-define-ai-standards/
+  - migration-date:: 2026-06-21T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

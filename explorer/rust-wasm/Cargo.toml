@@ -1,0 +1,73 @@
+[package]
+name = "webvowl-wasm"
+version = "0.3.4"
+authors = ["WebVOWL Contributors"]
+edition = "2021"
+license = "MIT"
+description = "High-performance WASM implementation of WebVOWL ontology visualizer"
+repository = "https://github.com/VisualDataWeb/WebVOWL"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+rayon = { version = "1", optional = true }
+wasm-bindgen = "0.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde-wasm-bindgen = "0.6"
+js-sys = "0.3"
+web-sys = { version = "0.3", features = [
+    "console",
+    "Document",
+    "Element",
+    "HtmlElement",
+    "Window",
+    "CanvasRenderingContext2d",
+    "HtmlCanvasElement",
+] }
+wee_alloc = { version = "0.4", optional = true }
+thiserror = "1.0"
+petgraph = "0.6"
+nalgebra = "0.32"
+regex = "1.10"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3"
+mockall = "0.12"
+pretty_assertions = "1.4"
+criterion = "0.5"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[profile.dev]
+opt-level = 0
+
+[[bench]]
+name = "layout_bench"
+harness = false
+
+[[bench]]
+name = "parser_bench"
+harness = false
+
+[[bench]]
+name = "interaction_bench"
+harness = false
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
+
+[features]
+default = []
+parallel = ["dep:rayon"]
+# Legacy full-graph serde export (WebVowl::get_graph_data). Off by default:
+# ADR-NG-001 §3 deletes it from the explorer hot path (NggExplorer reads
+# positions zero-copy). Enable only for diagnostics: --features debug-serde
+debug-serde = []
+# WASM SIMD128 acceleration for force calculations
+# Enable with: wasm-pack build --features simd
+simd = []

@@ -1,0 +1,188 @@
+public:: true
+
+# Virtual Event Platform
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:92ac6c42ae9f469a5466f64cef419a473bffd3e58b7f5419a43960cd74b4fc83",
+  "@type": "Page",
+  "vc:slug": "virtual-event-platform",
+  "title": "Virtual Event Platform",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "Metaverse"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-10123"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Virtual Event Platform"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-event-platform",
+  "@type": "Class",
+  "label": "Virtual Event Platform",
+  "definition": "Software platforms that enable hosting digital events in metaverse environments, supporting conferences, exhibitions, concerts, and networking through immersive 3D spaces with avatar-based attendance, interactive features, and real-time collaboration tools.",
+  "domain": "spatial-computing",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
+      "@id": "urn:ngm:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      },
+      {
+        "@id": "urn:ngm:class:event-management",
+        "label": "Event Management"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ]
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:virtual-event-platform:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:92ac6c42ae9f469a5466f64cef419a473bffd3e58b7f5419a43960cd74b4fc83"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - Software platforms that enable hosting digital events in metaverse environments, supporting conferences, exhibitions, concerts, and networking through immersive 3D spaces with avatar-based attendance, interactive features, and real-time collaboration tools.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:VirtualEventPlatform
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Metaverse]]
+  - Has Part: [[Virtual Event]]
+  - Has Part: [[Event Management]]
+  - Requires: [[Avatar]]
+  - Requires: [[Collaboration Platform]]
+  - Uses: [[Social VR]]
+  - Uses: [[Metaverse Platform]]
+  - Enables: [[Immersive Experience]]
+
+- ### Content
+
+  - ## Overview
+  - Virtual event platforms enable hosting immersive gatherings in metaverse environments. The metaverse market is projected to reach US$74.4 billion in 2024, growing to US$507.8 billion by 2030 at 37.73% CAGR. AI integration enhances matchmaking, language translation, and speaker avatar animation for engaging experiences.
+  - ## Technical Details
+  - ### Platform Features
+		- **Immersive Venues**: 3D conference halls, exhibition spaces, networking lounges
+		- **Avatar Systems**: Customizable attendee representations
+		- **Interactive Content**: 3D visualizations, simulations, product demos
+		- **Networking Tools**: AI matchmaking, breakout rooms, direct messaging
+  - ### AI Capabilities
+		- Attendee matching based on interests and goals
+		- Real-time language translation
+		- AI-powered speaker avatars with emotion mirroring
+		- Content recommendation engines
+  - ### Platform Examples
+		- Meetaverse, Virtway, VFairs
+		- Microsoft Mesh for enterprise
+		- Horizon Worlds for social events
+		- Custom-built brand experiences
+  - ## Applications
+  - Virtual conferences and summits
+  - Trade shows and exhibitions
+  - Product launches and demonstrations
+  - Corporate meetings and training
+  - Networking events and mixers
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

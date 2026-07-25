@@ -1,0 +1,185 @@
+public:: true
+
+# Privacy Enhancing Technologies
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:privacy-enhancing-technologies",
+  "@type": "Page",
+  "vc:slug": "privacy-enhancing-technologies",
+  "title": "Privacy Enhancing Technologies",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-enhancing-technologies",
+  "@type": "Class",
+  "label": "Privacy Enhancing Technologies",
+  "definition": "Privacy Enhancing Technologies (PETs) are a family of cryptographic and systems-engineering techniques designed to minimise the collection, use, and disclosure of personal data while still enabling legitimate data processing for analytics, machine learning, and regulatory compliance. The family encompasses Zero-Knowledge Proofs, Differential Privacy, Homomorphic Encryption, Secure Multi-Party Computation, Trusted Execution Environments, anonymisation pipelines, pseudonymisation, and synthetic data generation. PETs implement the data-minimisation and privacy-by-design principles mandated by frameworks such as GDPR and the UK Data Protection Act 2018. They are increasingly deployed by financial institutions, healthcare providers, and government agencies to unlock the utility of sensitive data without exposing individual records, and are recognised by the UK ICO, European Data Protection Board, and US NIST as essential infrastructure for trustworthy data ecosystems.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:privacy-preserving-technology",
+      "label": "Privacy Preserving Technology"
+    }
+  ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:pseudonymisation",
+        "label": "Pseudonymisation"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC 29101"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:surveillance-technology",
+        "label": "Surveillance Technology"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:pets",
+      "label": "PETs"
+    },
+    {
+      "@id": "urn:ngm:class:privacy-preserving-computation",
+      "label": "Privacy Preserving Computation"
+    }
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
+}
+```
+
+- ### Definition
+  - Privacy Enhancing Technologies encompass the suite of cryptographic and engineering tools — including [[Zero-Knowledge Proof]], [[Differential Privacy]], [[Homomorphic Encryption]], and [[Secure Multi-Party Computation]] — that collectively allow useful computation on personal or sensitive data whilst enforcing [[Data Minimisation]] and [[Privacy By Design]] obligations embedded in [[GDPR]] and equivalent regulatory frameworks.
+
+- ### Relationships
+  - PETs are a sub-category of [[Privacy Preserving Technology]] and serve as the technical implementation of [[Privacy By Design]] and [[Data Protection]] principles. [[Zero-Knowledge Proof]] systems allow one party to prove possession of information without revealing the information itself. [[Differential Privacy]] adds calibrated noise to aggregate statistics to bound individual re-identification risk. [[Homomorphic Encryption]] permits computation directly on ciphertext. [[Secure Multi-Party Computation]] distributes computation across mutually distrusting parties with no single party seeing the full dataset. Collectively they enable [[Privacy Preserving Analytics]] that satisfies [[GDPR]] compliance and [[Data Protection Regulation]] requirements without sacrificing analytical utility.
+
+- ### Content
+  - The term Privacy Enhancing Technologies was coined by a Canadian/Dutch joint report in 1995, originally covering anonymisation and pseudonymisation techniques. The field has since expanded dramatically to encompass cryptographic proofs of correct computation. Zero-Knowledge Proofs (SNARKs, STARKs) let a prover convince a verifier of a statement's truth — for instance, that a user is over 18 or holds a valid credential — without disclosing the underlying data. ZKP systems are deployed in digital identity (age verification, KYC-free authentication) and privacy-preserving blockchain transactions.
+
+  - Differential Privacy, pioneered by Cynthia Dwork et al. (2006), provides a mathematically rigorous privacy guarantee: the probability of any output from a query is nearly identical whether or not any specific individual's data is included, bounded by a parameter epsilon. Apple, Google, and the US Census Bureau use differential privacy to release population statistics from device telemetry and census microdata. Federated learning combined with differential privacy enables model training across devices without raw data ever leaving the user's hardware.
+
+  - Homomorphic Encryption (HE) allows a cloud server to compute functions (addition, multiplication) directly on encrypted data and return an encrypted result that the data owner can decrypt. While fully homomorphic encryption (FHE) is computationally intensive, levelled and bootstrapping techniques continue to reduce overheads. Secure Multi-Party Computation (MPC) achieves similar goals via a different mechanism: multiple parties jointly evaluate a function using secret shares, with no party learning another's input. MPC is used in privacy-preserving analytics consortia, confidential auctions, and threshold signature schemes.
+
+  - The UK Information Commissioner's Office (ICO) and the European Data Protection Board have both published guidance explicitly endorsing PETs as means of compliance with GDPR obligations, particularly data-minimisation and purpose-limitation principles. Regulatory sandboxes for PET deployment (e.g. the UK Digital Sandbox) allow financial institutions to pilot PET-based data-sharing arrangements under supervisory oversight, accelerating adoption in health, financial crime prevention, and transport planning.
+

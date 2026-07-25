@@ -1,0 +1,50 @@
+public:: true
+
+# ICVCM Core Carbon Principles
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:icvcm-core-carbon-principles",
+  "@type": "Page",
+  "vc:slug": "icvcm-core-carbon-principles",
+  "title": "ICVCM Core Carbon Principles",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:icvcm-core-carbon-principles",
+  "@type": "Class",
+  "label": "ICVCM Core Carbon Principles",
+  "definition": "The ICVCM Core Carbon Principles (CCPs) are a set of ten threshold standards established by the Integrity Council for the Voluntary Carbon Market to define what constitutes a high-quality carbon credit. They cover governance, emissions impact, and sustainable development dimensions, requiring that credits be real, additional, quantified, permanent, independently verified, and contribute positively to sustainable development goals without causing harm to local communities or ecosystems.",
+  "domain": "governance",
+  "maturity": "emerging",
+  "subClassOf": [{"@id": "urn:ngm:class:icvcm-framework", "label": "ICVCM Framework"}],
+  "relations": {
+    "standardizedBy": [{"@id": "urn:ngm:class:integrity-council-for-the-voluntary-carbon-market", "label": "Integrity Council for the Voluntary Carbon Market"}],
+    "enables": [{"@id": "urn:ngm:class:voluntary-carbon-market", "label": "Voluntary Carbon Market"}, {"@id": "urn:ngm:class:carbon-credit-retirement", "label": "Carbon Credit Retirement"}],
+    "relatedTo": [{"@id": "urn:ngm:class:carbon-standard-certification", "label": "Carbon Standard Certification"}, {"@id": "urn:ngm:class:verra-vcs-standard", "label": "Verra VCS Standard"}],
+    "supports": [{"@id": "urn:ngm:class:carbon-markets", "label": "Carbon Markets"}]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - The ICVCM Core Carbon Principles are threshold standards established by the [[Integrity Council for the Voluntary Carbon Market]] within the [[ICVCM Framework]], defining what high-integrity looks like for carbon credits traded in the [[Voluntary Carbon Market]], covering additionality, permanence, measurement accuracy, independent verification, and sustainable development safeguards.
+
+- ### Relationships
+  - The CCPs are standardised by the [[Integrity Council for the Voluntary Carbon Market]], enable robust [[Voluntary Carbon Market]] trading and ensure the environmental credibility of [[Carbon Credit Retirement]], relate closely to [[Carbon Standard Certification]] programmes and the [[Verra VCS Standard]], and collectively support the integrity of [[Carbon Markets]] by providing a cross-programme quality benchmark.
+
+- ### Content
+  - The voluntary carbon market grew rapidly through the 2010s as corporates sought to offset residual emissions after making efficiency improvements, but faced persistent criticism for the low quality of available credits. Studies by Berkeley Carbon Trading Project (2020), Vox Media (2023), and the Guardian/Zeit investigations revealed widespread over-crediting in forestry projects — particularly REDD+ — where baseline deforestation rates were systematically exaggerated. These findings triggered a crisis of confidence that threatened the market's legitimacy. In response, the Taskforce on Scaling Voluntary Carbon Markets (TSVCM, Mark Carney's initiative) and subsequently the ICVCM were established in 2021 to create universal quality standards.
+
+  - The ten Core Carbon Principles, published in final form by the ICVCM in March 2023, are organised into three categories. Governance principles require that carbon-crediting programmes have: (1) effective governance structures, (2) tracking systems to prevent double-counting, (3) transparency through public disclosure of all material information, and (4) robust independent third-party validation and verification. Emissions impact principles require that credits represent: (5) additionality (the emission reduction would not have occurred without the carbon revenue), (6) permanence (the stored carbon is durably removed), (7) robust quantification of net greenhouse gas reductions, (8) no net harm to environment or communities (safeguards), and (9) net mitigation benefit to the atmosphere (not mere avoidance of worse outcomes). The sustainable development principle requires (10) that projects contribute positively to UN SDGs.
+
+  - The CCP framework operates through a two-layer assessment: first, carbon-crediting programmes (Verra VCS, Gold Standard, American Carbon Registry, Climate Action Reserve, Architecture for REDD+ Transactions) apply for "CCP-Approved Programme" status by demonstrating that their programme-level rules meet the CCPs. Second, approved programmes can apply for "CCP-Eligible" labels on specific credit categories (e.g. cookstoves, afforestation, industrial gas destruction) by demonstrating that the methodology meets category-specific standards. Buyers who purchase CCP-labelled credits gain assurance that the credit has been independently assessed against a recognised quality floor.
+
+  - By 2024-2025 the ICVCM had approved several programmes for CCP status but progress on approving credit categories was slower than anticipated, with some high-volume methodology types (cookstoves, REDD+ avoided deforestation) facing continued scrutiny. The convergence of CCP standards with Article 6 of the Paris Agreement (international transfer of mitigation outcomes) raised questions about whether CCP-labelled credits could be used toward national Nationally Determined Contributions without corresponding adjustment. Digital registries using blockchain and tokenised carbon credits are seeking CCP certification to establish market credibility, creating pressure to clarify how CCPs apply to crypto-native carbon markets.

@@ -1,0 +1,59 @@
+public:: true
+
+# Intelligent Tutoring System
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:intelligent-tutoring-system",
+  "@type": "Page",
+  "vc:slug": "intelligent-tutoring-system",
+  "title": "Intelligent Tutoring System",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:intelligent-tutoring-system",
+  "@type": "Class",
+  "label": "Intelligent Tutoring System",
+  "definition": "An AI-powered software system that delivers personalised instruction by modelling a learner's knowledge state, selecting appropriate pedagogical strategies, and adapting content difficulty in real time without requiring a human instructor. Intelligent tutoring systems integrate domain knowledge, learner models, and tutoring strategies to provide one-on-one instructional support at scale.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:educational-technology", "label": "Educational Technology"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:adaptive-learning", "label": "Adaptive Learning"},
+      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - An Intelligent Tutoring System (ITS) is a class of [[Educational Technology]] that uses computational models of learner cognition to deliver adaptive, one-to-one instruction. Unlike static courseware, an ITS continuously diagnoses student knowledge, selects problems calibrated to the student's zone of proximal development, and provides corrective feedback in response to errors. Systems such as Carnegie Learning's Cognitive Tutor and AutoTutor demonstrated in the 1990s and 2000s that ITS can achieve learning gains comparable to human tutoring under controlled conditions.
+
+- ### Relationships
+  - Intelligent Tutoring Systems sit within the broader [[Educational Technology]] landscape but are distinguished by their use of [[Machine Learning Discipline]] models to infer learner state. [[Reinforcement Learning]] is used to optimise hint and problem-selection policies. [[Natural Language Processing]] enables natural dialogue-based tutors capable of interpreting student free-text responses. ITS directly enables [[Adaptive Learning]] pathways and can implement structured [[Curriculum Learning]] progressions. The integration of [[Large Language Models]] into ITS architectures from 2023 onwards substantially expands natural-language explanation capabilities.
+
+- ### Content
+  - The concept of intelligent tutoring systems was first articulated in the 1970s by John Anderson, whose ACT-R cognitive architecture provided a computational basis for modelling student knowledge as a set of production rules. Early systems such as LISP Tutor (1983) and Geometry Tutor tracked student mastery of specific skills through knowledge component models. The 1990s saw broad deployment of Cognitive Tutors in American secondary schools, and controlled studies by Koedinger and Anderson documented significant improvements in algebra attainment. DARPA-funded AutoTutor explored dialogue-based tutoring grounded in conversational AI.
+
+  - Architecturally, a classical ITS comprises four components: the domain model (what is to be taught), the learner model (estimated knowledge state and misconceptions), the pedagogical module (strategy for selecting instructional actions), and the interface. Knowledge tracing — the estimation of skill mastery from response sequences — became a canonical machine-learning problem, with Bayesian Knowledge Tracing (BKT) and later Deep Knowledge Tracing (DKT) as dominant approaches. Hint policies are typically learnt through [[Reinforcement Learning]] against delayed reward signals such as test scores.
+
+  - Modern ITS platforms integrate [[Natural Language Processing]] to support dialogue tutoring, essay grading, and open-ended problem feedback. Systems such as Khanmigo (Khan Academy, 2023) and ALEKS use LLM backends to generate natural-language explanations while retaining structured learner models. Crowdsourced datasets from millions of student interactions have enabled robust learner model benchmarking through competitions such as the AAAI EDM knowledge tracing challenge. Deployment contexts span K-12 mathematics, medical education, military training, and corporate upskilling.
+
+  - As of 2024–2025, the integration of [[Large Language Models]] has accelerated ITS capability, particularly in subjects requiring open-ended reasoning. However, open problems remain around hallucination (LLMs providing confident but incorrect explanations), bias in learner models across demographic groups, and the challenge of maintaining engagement over long learning sessions. Research frontiers include multimodal tutors that interpret student facial expressions and sketch input, federated learning approaches that train learner models without centralising sensitive data, and affective computing to address motivational dimensions of learning.
+

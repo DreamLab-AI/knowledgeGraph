@@ -1,0 +1,62 @@
+public:: true
+
+# continuous improvement
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:continuous-improvement",
+  "@type": "Page",
+  "vc:slug": "continuous-improvement",
+  "title": "continuous improvement",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:continuous-improvement",
+  "@type": "Class",
+  "label": "continuous improvement",
+  "definition": "Continuous improvement is an iterative organisational and engineering philosophy in which processes, products, and systems are systematically and incrementally refined over time through structured cycles of measurement, analysis, experimentation, and implementation, rather than through large-scale periodic overhauls. Rooted in Japanese manufacturing philosophy (kaizen), it was formalised in quality management frameworks including the Plan-Do-Check-Act cycle, ISO 9001, and Lean methodologies, and has since been adopted throughout software engineering via DevOps, agile retrospectives, and MLOps pipelines. The practice relies on feedback loops that surface inefficiencies, defects, or opportunities close to their point of origin, enabling rapid corrective action and cumulative quality gains.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"}],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"},
+      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"},
+      {"@id": "urn:ngm:class:performance-metrics", "label": "Performance Metrics"},
+      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:software-development", "label": "Software Development"},
+      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[continuous improvement]] is an iterative philosophy of incremental, data-driven refinement of processes and systems through structured [[Feedback Loop]] cycles — rooted in kaizen and Plan-Do-Check-Act — that manifests in software as agile retrospectives, [[Quality Assurance]] gates, and [[MLOps]] pipelines, driving cumulative gains in reliability, performance, and value delivery.
+
+- ### Relationships
+  - Continuous improvement underpins modern [[Software Development Process]] disciplines by embedding measurement and corrective action into every iteration rather than deferring quality work to post-release audits. The [[Feedback Loop]] is its core mechanism: observational data from [[Monitoring System]] infrastructure and [[Performance Metrics]] surfaces deviations that trigger targeted experiments. In machine learning contexts, this principle is operationalised through [[MLOps]] practices that continuously retrain, evaluate, and redeploy models as data distributions shift. It also supports robust [[AI Deployment]] by institutionalising the cadence of model monitoring and retraining, and it integrates with [[Real-Time Monitoring]] infrastructure to close the measurement-to-action gap.
+
+- ### Content
+  - The intellectual lineage of continuous improvement runs from Walter Shewhart's statistical process control charts developed at Bell Labs in the 1920s, through W. Edwards Deming's PDCA cycle adopted by Japanese manufacturers after World War II, to Taiichi Ohno's Toyota Production System formalisation of kaizen (meaning "change for better") as a daily discipline for every worker. These manufacturing origins were translated into quality management standards including ISO 9001 and Six Sigma, which spread the practice to service industries and eventually to software engineering through Total Quality Management initiatives in the late 1980s and 1990s.
+
+  - In software and AI contexts, continuous improvement operates through defined feedback mechanisms embedded in the delivery pipeline. Agile methodologies contribute the sprint retrospective — a structured meeting at the end of each iteration where teams inspect process metrics, identify impediments, and commit to specific changes. DevOps extends this to technical operations through deployment frequency metrics, mean time to recovery, and change failure rates (the DORA metrics). MLOps applies the same logic to machine learning: model performance dashboards, data drift detectors, and automated retraining triggers constitute a closed-loop improvement system. The key architectural requirement is observability: if a system cannot be measured, it cannot be improved incrementally.
+
+  - The significance of continuous improvement as a discipline is that it shifts quality from a phase (testing) to a property (built-in quality). Organisations that embed it consistently achieve compounding returns: each small gain reduces the baseline defect rate, which in turn frees capacity for further improvement rather than rework. In AI system development, this is particularly critical because model performance is not fixed at deployment — it degrades as the world changes — making continuous improvement not optional but existentially necessary for production AI systems that must remain accurate over time.
+
+  - In 2024-2025, continuous improvement practices are being extended to AI alignment and safety monitoring, where post-deployment behavioural drift in large language models is addressed through human feedback pipelines (RLHF follow-on cycles) and automated red-teaming. MLOps platforms such as MLflow, Weights and Biases, and Vertex AI Model Registry now provide native continuous improvement dashboards. The concept is also influencing AI governance frameworks, where regulators increasingly expect documented evidence of ongoing model monitoring and corrective action as a compliance requirement under frameworks such as the EU AI Act.

@@ -1,0 +1,146 @@
+public:: true
+alias:: EconomicLayer
+
+# Economic Layer
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:017a7b088a0111616026f50d83ea5f828b41a1a58bab88af76f2bb39dc0bc7c4",
+  "@type": "Page",
+  "vc:slug": "economic-layer",
+  "title": "Economic Layer",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Economic Layer"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:economic-layer",
+  "@type": "Class",
+  "label": "Economic Layer",
+  "definition": "The Economic Layer is the abstraction level at which concrete economic mechanisms are implemented in blockchain and distributed systems, encompassing fee markets, reward distribution formulae, automated market makers, staking yield calculations, and game-theoretic incentive structures. It is distinct from conceptual economic theory in that it specifies exact parameters, formulas, and on-chain behaviours.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-economy-market-framing",
+        "label": "Virtual Economy Market Framing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:economic-layer:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:017a7b088a0111616026f50d83ea5f828b41a1a58bab88af76f2bb39dc0bc7c4"
+  },
+  "vc:resolutions": [],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - The EconomicLayer represents the abstraction level of implemented economic mechanisms, incentive structures, market designs, resource allocation systems, and game-theoretic implementations that govern economic behavior in blockchain and distributed systems. This layer encompasses concrete economic implementations including token emission schedules (Bitcoin's halving schedule, Ethereum's changing issuance policy), fee market implementations (EIP-1559's base fee adjustment mechanism, priority fee auctions), incentive mechanism implementations (mining reward distribution, staking yield calculations, validator reward formulas), penalty mechanisms (slashing implementations specifying exact penalty amounts and conditions), market mechanism implementations (automated market maker formulas, bonding curves, liquidity pool mechanics), resource pricing mechanisms (gas price mechanisms, storage rent, computation pricing), economic security implementations (cost-of-attack calculations, security budget allocations), and game-theoretic mechanism implementations (auction mechanisms, voting systems, coordination games). Unlike ConceptualLayer which addresses abstract economic principles and theories, EconomicLayer focuses on concrete economic mechanism implementations with specific parameters, formulas, and behaviors. Unlike ProtocolLayer which addresses protocol mechanics broadly, EconomicLayer emphasizes economic aspects: incentive compatibility, market efficiency, resource allocation, and economic security.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:EconomicLayer
+  - owl-role:: Concept
+
+- ### Relationships
+  - Has part [[Governance Token]] as the primary instrument of on-chain economic agency
+  - Has part [[Governance Model]] which specifies voting and incentive rules
+  - Enables [[Virtual Economy Market Framing]] by providing the economic infrastructure for virtual economies
+  - Related to [[Governance]] as the broader policy framework within which mechanisms operate
+  - Related to [[Governance Framework]] for regulatory and procedural compliance
+
+- ### Content
+  - **Classification**
+  - **Definition**
+  - **Taxonomy**
+  - **Member Concepts**
+    - The EconomicLayer represents a critical implementation-focused abstraction level that addresses how blockchain systems implement economic mechanisms to align incentives, allocate resources, and achieve security through game-theoretic designs. Economics is not merely a consideration in blockchain systems but a fundamental component of their operation and security: blockchains are secured not just by cryptography but by economic incentives making attacks unprofitable, resources are allocated not by central planning but by market mechanisms, and coordination is achieved not by authority but by aligning individual incentives with collective goals. This layer focuses on concrete economic implementations: specific formulas, parameters, mechanisms, and behaviors that govern economic aspects of blockchain systems. Unlike theoretical economic models (ConceptualLayer), EconomicLayer addresses how economic principles are realized through specific implementations that can be deployed, tested, and optimized.
+    - The layer encompasses several categories of economic implementations. **Fee market mechanisms** implement dynamic pricing for scarce blockchain resources (transaction inclusion, state storage, computation). Ethereum's EIP-1559 exemplifies a sophisticated fee market implementation: a base fee that adjusts based on block fullness (increasing 12.5% when blocks are full, decreasing 12.5% when blocks are empty), targeting 50% block utilization, with users paying the base fee (which is burned) plus an optional priority fee (which goes to miners/validators). This mechanism creates predictable fee markets (users know the base fee for next block), reduces fee volatility (smooth adjustment rather than auction volatility), and creates deflationary pressure (fee burning reduces token supply). Gas auctions represent an alternative fee market implementation: users bid for transaction inclusion, with highest bids included first, creating first-price or second-price auction dynamics. These fee market mechanisms must balance efficiency (transactions are included efficiently), fairness (mechanisms are not easily manipulated), and simplicity (users can understand and use mechanisms).
+    - **Reward distribution systems** implement incentive mechanisms for network participants. Bitcoin's mining reward schedule specifies an initial 50 BTC block reward, halving every 210,000 blocks (~4 years), creating predictable supply emission and eventual supply cap of 21 million BTC. As block rewards decline, transaction fees must increasingly secure the network, raising questions about long-term security sustainability. Proof-of-Stake reward systems distribute staking yields based on stake amount and validation participation, with typical annual yields ranging from 3-15% depending on network parameters. These yields must be high enough to incentivize staking (providing economic security through locked stake) but not so high as to create unsustainable inflation. Reward formulas often incorporate penalties for validator downtime or unavailability, creating incentives for reliable operation. These distribution systems must balance multiple objectives: incentivizing honest participation, maintaining sufficient economic security, controlling inflation, ensuring long-term sustainability, and distributing rewards fairly across participants.
+    - **Market mechanism implementations** enable decentralized exchange and liquidity provision. Automated Market Makers (AMMs) implement specific mathematical formulas defining exchange rates. The constant product formula (x * y = k) used by Uniswap V2 creates a pricing curve where price impact increases with trade size, discouraging large trades and creating arbitrage opportunities that maintain price accuracy. Constant sum formulas (x + y = k) create zero price impact but risk reserves depletion if prices diverge from initial ratio. Hybrid curves combine multiple formulas for different price ranges, optimizing for different use cases (stable swaps for stablecoins, constant product for volatile assets). Bonding curves specify token price as a function of supply, creating predictable pricing for continuous token sales. Liquidity pools collect trading fees for liquidity providers, with fees set to compensate for impermanent loss (opportunity cost of providing liquidity vs holding tokens). These market mechanisms implement game-theoretic designs where arbitrageurs maintain price accuracy, liquidity providers earn fees compensating for risks, and traders get predictable execution.
+      - **Included:** Economic mechanism implementations, fee market mechanisms, reward distribution systems, penalty implementations, market mechanism implementations (AMMs, bonding curves), resource pricing mechanisms, economic security implementations, incentive mechanism implementations, and game-theoretic mechanism implementations with specific parameters and formulas.
+      - **Excluded:** Abstract economic theories without specific implementation (belong in ConceptualLayer), economic analysis of existing systems without implementation details (may be properties of specific systems rather than mechanisms), general economics not specific to blockchain (not relevant), and financial applications (belong in ApplicationLayer).
+      - **Boundary Clarifications:** EconomicLayer focuses on economic mechanism implementations with specific formulas, parameters, and behaviors. A concept belongs here if it implements an economic mechanism that governs incentives, allocates resources, or creates markets. For example, "EIP-1559" belongs in EconomicLayer as it implements a specific fee market mechanism with defined formulas and behaviors. "Transaction Fee" as an abstract concept belongs in ConceptualLayer or TokenEconomicsDomain, but specific fee calculation mechanisms belong in EconomicLayer. Many concepts may span EconomicLayer and other layers depending on the aspect emphasized.
+      - **Relationship to ConceptualLayer:** ConceptualLayer addresses abstract economic principles and theoretical models (what incentive compatibility means, what market efficiency requires), while EconomicLayer addresses concrete economic mechanism implementations (how EIP-1559 implements fee markets, how staking yield is calculated). Many concepts have both conceptual understanding (ConceptualLayer, TokenEconomicsDomain) and economic implementations (EconomicLayer).
+      - **Relationship to ProtocolLayer:** There is overlap between EconomicLayer and ProtocolLayer. Economic mechanisms are often specified in protocols (consensus protocols specify reward distribution, transaction protocols specify fee payment). The distinction is emphasis: EconomicLayer emphasizes economic properties (incentive compatibility, efficiency, allocation), while ProtocolLayer emphasizes protocol mechanics (message flows, state transitions). Many concepts appropriately belong to both layers.
+      - **Relationship to TokenEconomicsDomain:** TokenEconomicsDomain is a domain classification organizing economic concepts by subject matter (token economics, incentive mechanisms), while EconomicLayer is a layer classification organizing concepts by abstraction level (implemented economic mechanisms). A concept can belong to TokenEconomicsDomain (subject matter) and EconomicLayer (implementation level) simultaneously. For example, "Staking Yield Calculation" belongs to TokenEconomicsDomain (it's about token economics) and EconomicLayer (it's an implemented mechanism).
+      - **Economics as Security:** EconomicLayer was designed as a distinct layer because economic mechanisms are fundamental to blockchain security. Many blockchains are secured primarily through economic incentives: the cost to attack (acquiring 51% hashpower or stake) exceeds the benefit (double-spending or censorship gains). This economic security requires careful mechanism design with specific parameters, justifying dedicated layer classification.
+      - **Implementation-Level Economics:** While TokenEconomicsDomain addresses economic concepts broadly and ConceptualLayer addresses abstract economic principles, EconomicLayer focuses on concrete implementations with specific formulas and parameters. This implementation focus serves mechanism designers, protocol developers, and economic researchers who must implement and optimize economic mechanisms in real systems.
+      - **Game-Theoretic Design:** Economic mechanisms in blockchain systems are game-theoretic: they define games where participants' strategies determine outcomes. EconomicLayer captures these game implementations including payoff structures (rewards and penalties), strategy spaces (participant actions), and equilibrium properties (incentive compatibility, Nash equilibria). This game-theoretic perspective reflects that blockchain economics must account for strategic behavior.
+      - **Measurable Economic Properties:** EconomicLayer emphasizes mechanisms with measurable economic properties that can be analyzed, simulated, and optimized. Fee market efficiency can be measured through price volatility and allocation efficiency. Incentive compatibility can be analyzed through game-theoretic models. Economic security can be quantified through cost-of-attack calculations. This measurability enables scientific analysis and evidence-based optimization.
+      - **Cross-Domain Economics:** EconomicLayer is cross-cutting, addressing economic implementations across domains. Consensus mechanisms (ConsensusDomain) incorporate economic incentives. Token systems (TokenEconomicsDomain) implement economic mechanisms. DeFi applications implement market mechanisms. This cross-domain nature reflects that economic considerations span all aspects of blockchain systems.
+
+  - ### MetaOntologyBlock
+  - ## About EconomicLayer
+    - ### Scope and Boundaries
+    - ### Relationship to Other Classifications
+    - ### Design Rationale
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

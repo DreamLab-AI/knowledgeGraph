@@ -1,0 +1,161 @@
+public:: true
+
+# Character Animation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:character-animation",
+  "@type": "Page",
+  "vc:slug": "character-animation",
+  "title": "Character Animation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:character-animation",
+  "@type": "Class",
+  "label": "Character Animation",
+  "definition": "Character animation is the discipline of creating the illusion of life and intentional movement in digital or physical characters through the coordinated manipulation of skeletal rigs, blend shapes, and motion data across time, driven by principles derived from traditional film animation. It encompasses the full pipeline from rigging and skinning a character mesh to authoring, retargeting, and blending motion clips in real time, and extends to AI-driven procedural and physics-based approaches that generate plausible movement without manual keyframing. The field spans offline cinematic animation for film and games and real-time systems for interactive avatars, XR experiences, and virtual humans.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:animation",
+      "label": "Animation"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "@id": "urn:ngm:class:keyframe-animation",
+        "label": "Keyframe Animation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-character-animation",
+        "label": "Real Time Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-character-animation",
+        "label": "Dynamic Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "@id": "urn:ngm:class:facial-animation",
+        "label": "Facial Animation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:animation-state-machine",
+        "label": "Animation State Machine"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      },
+      {
+        "@id": "urn:ngm:class:physics-based-animation",
+        "label": "Physics-Based Animation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "@id": "urn:ngm:class:secondary-motion",
+        "label": "Secondary Motion"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-character-animation",
+      "label": "Digital Character Animation"
+    }
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
+}
+```
+
+- ### Definition
+  - [[Character Animation]] is the art and engineering of producing believable, purposeful movement in digital characters by manipulating skeletal hierarchies, blend shapes, and motion data according to timing principles, drawing from [[Motion Capture]], [[Inverse Kinematics]], and [[Procedural Animation]] to serve film, games, and interactive [[Avatar Animation]].
+
+- ### Relationships
+  - Character animation depends on [[Character Rigging]] to establish the underlying skeletal structure, uses [[Forward Kinematics]] for pose authoring and [[Inverse Kinematics]] for goal-directed limb placement, and is populated with reference data from [[Motion Capture]]. The resulting motion clips feed [[Real Time Character Animation]] pipelines in game engines and XR runtimes, and AI techniques now enable [[Dynamic Character Animation]] and [[Animation Retargeting]] across disparate body proportions.
+
+- ### Content
+  - Character animation as a digital discipline emerged in the 1970s alongside computer graphics research, with early milestones including the 1982 film Tron and the breakthrough articulated character pipeline of Pixar's Luxo Jr. (1986). Traditional animation principles — squash and stretch, anticipation, follow-through, overlapping action — were formalised by Disney animators in "The Illusion of Life" (1981) and remain the evaluative standard against which technical animation systems are judged. The introduction of motion capture in the early 1990s dramatically accelerated the production of realistic human movement for film and video games.
+
+  - The technical pipeline for character animation begins with rigging, where a hierarchical skeleton of joints is bound to a polygonal mesh through skin weighting algorithms (linear blend skinning, dual-quaternion skinning). Animators author motion as keyframes on joint rotation curves or import clean motion capture data. Blend trees and state machines in game engines such as Unreal and Unity layer and transition between clips based on gameplay state. Inverse kinematics solvers (cyclic coordinate descent, FABRIK, or analytical methods) handle footplanting, reach targets, and body posture in real time without requiring pre-authored clips for every surface configuration.
+
+  - Physics-based character animation uses rigid-body and soft-body dynamics, along with control policies trained through reinforcement learning, to produce secondary motion and full-character dynamics that respond to environment perturbations. Deep learning approaches — including motion prediction transformers, physics controllers trained with imitation learning from motion capture, and diffusion-based motion generation models — can synthesise novel animations from text prompts or sparse control signals. These systems are increasingly integrated into real-time XR avatars and virtual influencer pipelines.
+
+  - By 2024-2025 the boundary between pre-authored and AI-generated character motion is dissolving. Generative motion models trained on large datasets can produce hours of plausible locomotion and interaction, while neural scene representations enable characters to interact physically with reconstructed environments. Standards such as USD skeletal animation and OpenXR body tracking interoperability are stabilising the cross-platform pipeline, and real-time neural skinning is moving from research labs toward production game engines and metaverse platforms.
+

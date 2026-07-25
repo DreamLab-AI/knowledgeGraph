@@ -1,0 +1,467 @@
+public:: true
+
+# Cursor
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f7baf3c476fa644e10439fb0adc523c6b3af2ca559f34d5d499ba1fc02d00e44",
+  "@type": "Page",
+  "vc:slug": "cursor",
+  "title": "Cursor",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {"@id": "urn:visionflow:linked:gpt", "vc:label": "GPT"},
+    {"@id": "urn:visionflow:linked:software-development", "vc:label": "Software Development"},
+    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
+    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
+    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
+    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
+    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
+    {"@id": "urn:visionflow:linked:microsoft-copilot", "vc:label": "Microsoft Copilot"},
+    {"@id": "urn:visionflow:linked:llm-agents", "vc:label": "LLM Agents"},
+    {"@id": "urn:visionflow:linked:llm-application-framework", "vc:label": "LLM Application Framework"},
+    {"@id": "urn:visionflow:linked:tool-augmented-llm", "vc:label": "Tool-Augmented LLM"},
+    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
+    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
+    {"@id": "urn:visionflow:linked:code-generation", "vc:label": "Code Generation"},
+    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
+    {"@id": "urn:visionflow:linked:https-cursor-com", "vc:label": "https://cursor.com"},
+    {"@id": "urn:visionflow:linked:https-docs-cursor-com", "vc:label": "https://docs.cursor.com"},
+    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
+    {"@id": "urn:visionflow:linked:application-layer", "vc:label": "ApplicationLayer"}
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cursor"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-29T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cursor",
+  "@type": "Class",
+  "label": "Cursor",
+  "definition": "Cursor is an AI-native code editor developed by Anysphere, built on a Visual Studio Code foundation and deeply integrated with large language models to provide inline code completion, multi-file agentic editing, natural-language chat over the codebase, and autonomous background agents. As of 2026, Cursor is the leading independent AI coding assistant by revenue, having reached $2 billion ARR and a $29.3 billion Series D valuation, and is used by over 64% of Fortune 500 companies.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "quality": 0.90,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    },
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:software-development", "label": "Software Development"},
+      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gpt-4o", "label": "GPT-4o"},
+      {"@id": "urn:ngm:class:claude-sonnet", "label": "Claude Sonnet"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:microsoft-copilot", "label": "Microsoft Copilot"},
+      {"@id": "urn:ngm:class:claude-code", "label": "Claude Code"}
+    ]
+  },
+  "provenance": {
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-21T00:00:00Z",
+    "inferenceRule": "FullEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cursor:46a4eebd20d8",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f7baf3c476fa644e10439fb0adc523c6b3af2ca559f34d5d499ba1fc02d00e44"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[GPT]]",
+      "resolved": "urn:visionflow:linked:gpt",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Software Development]]",
+      "resolved": "urn:visionflow:linked:software-development",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Generative AI]]",
+      "resolved": "urn:visionflow:linked:generative-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Model]]",
+      "resolved": "urn:visionflow:linked:large-language-model",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Transformer Architecture]]",
+      "resolved": "urn:visionflow:linked:transformer-architecture",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Agentic AI]]",
+      "resolved": "urn:visionflow:linked:agentic-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Agentic Workflow]]",
+      "resolved": "urn:visionflow:linked:agentic-workflow",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Microsoft Copilot]]",
+      "resolved": "urn:visionflow:linked:microsoft-copilot",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[LLM Agents]]",
+      "resolved": "urn:visionflow:linked:llm-agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[LLM Application Framework]]",
+      "resolved": "urn:visionflow:linked:llm-application-framework",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Tool-Augmented LLM]]",
+      "resolved": "urn:visionflow:linked:tool-augmented-llm",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Retrieval-Augmented Generation]]",
+      "resolved": "urn:visionflow:linked:retrieval-augmented-generation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Natural Language Processing]]",
+      "resolved": "urn:visionflow:linked:natural-language-processing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Context Protocol]]",
+      "resolved": "urn:visionflow:linked:model-context-protocol",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[https://cursor.com]]",
+      "resolved": "urn:visionflow:linked:https-cursor-com",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[https://docs.cursor.com]]",
+      "resolved": "urn:visionflow:linked:https-docs-cursor-com",
+      "kind": "StubLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:enrichment-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-06-21T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+- ### Definition
+  - Cursor is an AI-native code editor developed by Anysphere, Inc., built on a fork of [[Software Development]] tool Visual Studio Code and deeply integrated with [[Large Language Model]] capabilities for inline autocomplete, multi-file agentic editing, chat-based codebase reasoning, and autonomous background agents. Unlike bolt-on AI extensions grafted onto existing editors, Cursor rewires the editor's core — its index, its context window management, and its UI surface — around AI-first interaction patterns. The product leverages a three-tier inference stack: a proprietary Composer model (launched November 2025) for fast inline completions, externally hosted models from Anthropic (Claude 3.5/3.7 Sonnet) and OpenAI (GPT-4o) for complex multi-step reasoning, and Kimi for long-context low-cost tasks. [[Retrieval-Augmented Generation]] over the project codebase provides the contextual grounding that distinguishes Cursor's suggestions from context-free completions: it indexes files, symbols, and documentation so that suggestions reflect the full architectural context of the project, not just the currently visible buffer. As of mid-2026, Cursor is the dominant independent AI coding assistant by annual recurring revenue, having reached $2 billion ARR by February 2026 — the fastest B2B SaaS product to reach that milestone in approximately three years of commercial operation. Anysphere closed a $2.3 billion Series D in November 2025 at a $29.3 billion valuation, and was in advanced talks in April 2026 for a further $2 billion round at a $50 billion valuation. Cursor's [[Agentic AI]] capabilities have expanded rapidly: Agent Mode enables autonomous multi-file editing loops, Background Agents execute cloud-sandboxed tasks asynchronously, and the [[Model Context Protocol]] (MCP) integration allows agents to interact with databases, issue trackers, version control systems, and external APIs. The product competes directly with [[Microsoft Copilot]] (GitHub Copilot), Windsurf (OpenAI), and Claude Code (Anthropic) in the AI-assisted [[Software Development]] market, with each product occupying a distinct point on the spectrum from in-editor autocomplete to fully autonomous coding agent.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:CursorCodeEditor
+  - owl-role:: AIApplication | DeveloperTool | AgenticSystem | CommercialProduct
+  - owl-inferred:: artificial-intelligence:AICodeEditor, artificial-intelligence:LLMIntegratedIDE, artificial-intelligence:AgentCapableIDE
+  - belongs-to-domain:: [[AI-GroundedDomain]]
+  - implemented-in-layer:: [[ApplicationLayer]]
+
+- ### Relationships
+  - is-subclass-of:: [[Software Development]], [[Generative AI]], [[Agentic AI]]
+  - has-part:: [[Agentic Workflow]], [[LLM Agents]], [[Tool-Augmented LLM]], [[Retrieval-Augmented Generation]], [[Model Context Protocol]]
+  - requires:: [[Large Language Model]], [[Transformer Architecture]], [[Retrieval-Augmented Generation]], [[Natural Language Processing]]
+  - enables:: [[Software Development]], [[Agentic Workflow]], [[Code Generation]], [[LLM Application Framework]] integration
+  - implements:: [[Agentic AI]] patterns, [[Tool-Augmented LLM]] design, [[Model Context Protocol]]
+  - depends-on:: [[Large Language Model]], [[Transformer Architecture]], [[Natural Language Processing]]
+  - supports:: [[Software Development]], [[Agentic Workflow]], [[LLM Agents]]
+  - uses:: [[GPT]], [[Transformer Architecture]], [[Natural Language Processing]], [[Retrieval-Augmented Generation]], [[Model Context Protocol]], [[LLM Application Framework]]
+  - contrasts-with:: [[Microsoft Copilot]], Claude Code, Windsurf, GitHub Copilot
+  - related-to:: [[Generative AI]], [[Agentic AI]], [[LLM Agents]], [[Tool-Augmented LLM]], [[LLM Application Framework]]
+  - standardized-by:: Anysphere, Inc.; [[Model Context Protocol]] (Anthropic open standard)
+
+- ### Content
+  ## Compositional Relationships (Components)
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:hasPart ai:ComposerModel))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:hasPart ai:AgentMode))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:hasPart ai:BackgroundAgents))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:hasPart ai:CodebaseIndex))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:hasPart ai:BugBot))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:hasPart ai:MCPIntegration))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:hasPart ai:InlineChatInterface))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:hasPart ai:TabCompletion))
+  ## Dependency Relationships
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:requires ai:TransformerArchitecture))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:requires ai:RetrievalAugmentedGeneration))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:requires ai:NaturalLanguageProcessing))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:dependsOn ai:CloudInferenceInfrastructure))
+      SubClassOf(ai:AgentMode
+        ObjectSomeValuesFrom(ai:requires ai:ModelContextProtocol))
+  ## Capability Relationships
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:enables ai:SoftwareDevelopment))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:enables ai:CodeGeneration))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:enables ai:MultiFileEditing))
+      SubClassOf(ai:BackgroundAgents
+        ObjectSomeValuesFrom(ai:enables ai:AsynchronousCodeExecution))
+      SubClassOf(ai:BugBot
+        ObjectSomeValuesFrom(ai:enables ai:AutomatedPullRequestReview))
+  ## Implementation Relationships
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:implements ai:AgenticAI))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:implements ai:ToolAugmentedLLM))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:implements ai:ModelContextProtocol))
+      SubClassOf(ai:AgentMode
+        ObjectSomeValuesFrom(ai:implements ai:LLMAgents))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:uses ai:RetrievalAugmentedGeneration))
+  ## Reduction Relationships
+      SubClassOf(ai:CursorComposerModel
+        ObjectSomeValuesFrom(ai:reducesTo ai:LargeLanguageModel))
+      SubClassOf(ai:CursorBackgroundAgent
+        ObjectSomeValuesFrom(ai:reducesTo ai:LLMAgents))
+      SubClassOf(ai:CursorTabCompletion
+        ObjectSomeValuesFrom(ai:reducesTo ai:CodeGeneration))
+      SubClassOf(ai:CursorAgentMode
+        ObjectSomeValuesFrom(ai:reducesTo ai:AgenticWorkflow))
+      SubClassOf(ai:BugBot
+        ObjectSomeValuesFrom(ai:reducesTo ai:AutomatedCodeReview))
+  ## Contrasting Relationships
+      DisjointClasses(ai:CursorCodeEditor ai:TerminalBasedAgent)
+      SubClassOf(ai:CursorCodeEditor
+        ObjectAllValuesFrom(ai:contrastsWith ai:GitHubCopilot))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectAllValuesFrom(ai:contrastsWith ai:ClaudeCode))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:extendsCapabilityOf ai:VisualStudioCode))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:improves ai:DeveloperProductivity))
+      SubClassOf(ai:BackgroundAgents
+        ObjectSomeValuesFrom(ai:enables ai:AsynchronousAgentExecution))
+      SubClassOf(ai:CursorMCPIntegration
+        ObjectSomeValuesFrom(ai:implements ai:ModelContextProtocol))
+      SubClassOf(ai:CursorEnterpriseDeployment
+        ObjectSomeValuesFrom(ai:requires ai:SOC2Certification))
+      SubClassOf(ai:CursorCodeEditor
+        ObjectSomeValuesFrom(ai:generates ai:CodeDiff))
+
+  ## About
+    Cursor occupies a distinctive position in the AI coding assistant landscape: it is neither a purely passive autocomplete extension nor a fully autonomous headless coding agent, but a deeply integrated editor where the human developer retains direct control of every accept/reject decision while the AI operates at the granularity of full functions, classes, and files rather than single tokens. This design philosophy — forking VS Code and rebuilding the editor around model-first interaction rather than adding AI as an afterthought — is what distinguishes Cursor from GitHub Copilot (a VS Code extension) and from Claude Code or OpenAI Codex (terminal-based autonomous agents). The editor's codebase index, built on embedding-based semantic search using a code-tuned encoder model, allows models to retrieve relevant context from across the entire repository when generating or editing code, rather than relying solely on the open editor buffer. This retrieval layer gives the AI grounding comparable to what a senior engineer with full codebase familiarity would bring to any localised edit request — understanding the naming conventions, architectural patterns, existing abstractions, and test infrastructure of the specific project rather than generating generic boilerplate that must be adapted to the project context manually.
+
+    The fundamental user experience of Cursor is a layered stack of AI interactions at different levels of autonomy and time horizon. At the fastest layer, Tab Completion offers single-keystroke acceptance of multi-line code suggestions, operating in a tight loop where each accepted suggestion updates the model's prediction of the next edit location. At the next layer, Cmd+K (inline instruction) allows a natural-language instruction on a selected code region — "make this function async", "add error handling", "optimise this loop" — producing a diff that the developer reviews and accepts. At a higher level, the Composer panel accepts free-form task descriptions ("implement OAuth2 login with GitHub", "refactor the database layer to use connection pooling") and produces a plan and a multi-file diff that the developer reviews wholesale. At the highest autonomy level, Agent Mode runs an extended loop that includes terminal command execution, test runner integration, lint checker output, and iterative self-correction, with the developer reviewing a cumulative diff at the end rather than approving each individual change. Background Agents extend this further by running the full agent loop in an isolated cloud VM while the developer is offline.
+
+    This stratification of autonomy levels across a single, coherent editor experience is Cursor's core design achievement. A developer can fluidly switch between high-speed Tab Completion for mechanical boilerplate, Cmd+K for targeted refactors, Composer for feature-level tasks, and Agent Mode for sprint-level goals, all within the same session and the same editor surface. The underlying model inference is routed appropriately: cursor-small for Tab Completion where latency dominates, Anysphere's Composer model for Cmd+K and moderate Composer tasks, and Claude 3.7 Sonnet or GPT-4o for complex Agent Mode reasoning where accuracy dominates over cost. This inference routing is transparent to the developer and configurable via the model selector, but the defaults are calibrated to balance cost and quality across task types.
+
+    Anysphere's commercial trajectory has been exceptional by any measure in enterprise software history. Founded in 2022 by MIT graduates Michael Truell (CEO), Sualeh Asif, Arvid Lunnemark, and Aman Sanger, the company grew from zero to $2 billion ARR in approximately three years — the fastest B2B SaaS product to reach that milestone. The revenue milestones are precise and publicly confirmed: $100 million ARR in January 2025, $500 million by June 2025, $1 billion by November 2025, and $2 billion by February 2026. The November 2025 Series D round of $2.3 billion at a $29.3 billion valuation was backed by Andreessen Horowitz, Thrive Capital, and Accel. By April 2026, Anysphere was in advanced discussions for a further $2 billion raise at a $50 billion pre-money valuation, co-led by Andreessen Horowitz and Thrive Capital, with Nvidia participating strategically. The company forecasts over $6 billion ARR by end of 2026. On 16 June 2026 reports emerged of SpaceX acquisition talks valuing Cursor at $60 billion, though these had not been confirmed as of the knowledge cutoff.
+
+    Cursor's technological differentiation rests on three reinforcing pillars: (1) its proprietary Composer model, launched November 2025, which reduces inference costs by handling the majority of inline editing workloads without requiring expensive third-party API calls to Anthropic or OpenAI, while these providers' frontier models are reserved for complex agentic reasoning tasks — this model architecture enables Anysphere to improve gross margins while scaling inference volume; (2) its [[Agentic Workflow]] capabilities — Agent Mode for multi-step in-session tasks, Background Agents for asynchronous cloud-sandboxed execution (Cursor v3.0, early 2026), and Subagents (v2.4, January 2026) for parallel sub-task dispatch within a single agent session; and (3) its [[Model Context Protocol]] (MCP) integration enabling agents to interact with real infrastructure — querying databases, opening GitHub issues, reading Sentry error traces, searching Linear tickets, posting Slack messages — rather than operating in a sandboxed code-only environment. Together these pillars enable Cursor to offer a substantially richer automated coding experience than any pure extension-based approach while maintaining lower inference cost per task than pure frontier model routing.
+
+    The strategic risk profile of Cursor as a business is notable. Its core value proposition depends on continued availability and competitive pricing of frontier model APIs from Anthropic and OpenAI, both of which are also direct competitors (via Claude Code and OpenAI Codex respectively). Anysphere's response to this dependency risk is twofold: accelerating development of its proprietary inference stack (Composer model, cursor-small) to reduce third-party reliance, and diversifying its model integration to include Kimi (Moonshot AI) for long-context tasks, reducing lock-in to any single provider. Fortune's March 2026 cover story on Cursor characterised this as the "very uncertain future" of the company despite its spectacular growth — the question of whether Cursor can maintain its edge as frontier model providers build out their own integrated coding environments is the central strategic uncertainty for the business.
+
+  ## Components and Architecture
+    - **Tab Completion (cursor-small)**: Single-line and multi-line completions using a lightweight proprietary model fine-tuned for code continuation. Supports speculative edits where the model predicts the next edit location after each accepted suggestion, creating a flow-state acceleration loop.
+    - **Inline Chat (Cmd+K)**: Natural language instruction applied to a highlighted code region. The model reads the surrounding context, the instruction, and applies the minimum-diff edit. Supports follow-up refine instructions in a short-context conversation.
+    - **Composer / Chat Panel**: Multi-file reasoning and editing. The user describes a task; Composer reads relevant files from the codebase index, produces a plan, applies edits across multiple files, and presents a diff for review. Composer 2.0 (early 2026) improved context management and reduced hallucination rate on large monorepos.
+    - **Agent Mode**: Extended autonomous loop where Cursor reads the codebase, writes code, runs terminal commands, observes outputs, and iterates until the task is complete or a human checkpoint is triggered. Integrates terminal I/O, test runners, linters, and build systems.
+    - **Background Agents**: Asynchronous cloud-sandboxed agents (introduced Cursor v3.0, early 2026) that run in isolated VMs while the developer works on other tasks. Background Agents can read GitHub issues, open branches, write commits, and draft pull requests. Computer Use capability (February 2026) gave each Background Agent a full desktop environment with a browser for end-to-end visual verification.
+    - **Subagents**: Parallel agent dispatch (v2.4, January 2026). A primary agent decomposes a task into independent sub-tasks and spawns subagents to execute them concurrently, each with its own context window and tool access.
+    - **BugBot**: Automated pull-request reviewer (paid add-on, $40/user/month as of 2026). Automatically reviews PRs for regressions, logic errors, and risky changes, posting inline review comments before human review. Reduces review cycle time.
+    - **Codebase Index**: Embedding-based semantic index of the repository. Chunks files by symbol and semantic unit, embeds with a code-tuned encoder, stores in a local vector store. Reindexed on file change. Cursor's retrieval layer is the primary mechanism by which suggestions remain grounded in project-specific context.
+    - **Model Context Protocol (MCP) Integration**: Cursor implements MCP as a universal connector to external services. MCP servers expose tools that agents can call — querying a Postgres database, opening a GitHub issue, reading a Sentry trace, posting a Slack message — extending the agent's action space from pure code editing to full developer workflow automation.
+    - **Project Rules**: User-defined rules files (`.cursor/rules/*.md`) that constrain agent behaviour, enforce style conventions, require specific testing patterns, and provide project-specific context that persists across sessions.
+    - **Model Selector**: Runtime choice of inference backend per task. Users can select Claude 3.7 Sonnet, GPT-4o, Kimi, or cursor-small for any given interaction, with the system automatically routing to the most cost-efficient model that satisfies the task complexity threshold.
+
+  ## Use Cases
+    - **Daily feature development**: Inline Composer is used for function-level and class-level code generation, guided by natural language descriptions. Reduces boilerplate authoring time and accelerates iteration on standard patterns.
+    - **Legacy codebase refactoring**: Agent Mode reads large codebases, identifies structural patterns, and applies systematic refactors across hundreds of files — renaming symbols, migrating API versions, converting callback patterns to async/await — with human review of diffs before commit.
+    - **Test generation**: Given a function or class, Cursor generates comprehensive unit tests, including edge cases and error paths, using the codebase index to understand mock dependencies and test infrastructure.
+    - **Debugging and root cause analysis**: The chat interface allows developers to paste error stack traces and ask the model to trace the error through the indexed codebase, identify the likely root cause, and propose a fix.
+    - **Documentation generation**: Cursor generates docstrings, README sections, and API documentation from code, maintaining consistency with existing documentation style detected from the codebase index.
+    - **Multi-repo enterprise workflows**: With MCP integration, enterprise teams use Cursor agents to orchestrate changes across multiple repositories, update dependency versions, and propagate API contract changes.
+    - **Background autonomous tasks**: Product teams assign backlog items to Background Agents overnight; agents produce draft PRs with passing tests by the following morning, ready for human review and merge.
+    - **Code review acceleration**: BugBot automatically flags potential issues in PRs, reducing the burden on human reviewers and catching common mistake classes before they reach code review.
+
+  ## Academic Context
+    Cursor itself is a commercial product rather than an academic research artefact, but it is built on and instantiates a rich body of academic research spanning two decades of progress in program synthesis, large language model training, code representation learning, and [[Agentic AI]] systems design. Understanding the research lineage behind Cursor's capabilities illuminates both the product's current architecture and the trajectory of its future development.
+
+    The foundational capability layer — [[Large Language Model]] inference for code — derives directly from the transformer architecture introduced by Vaswani et al. (2017), which replaced recurrent networks with self-attention mechanisms and enabled the parallelism required for training at the scale that produces emergent code generation capabilities. The scaling laws research by Hoffmann et al. (2022, Chinchilla) established the compute-optimal frontier for training compute versus dataset size, informing the training regimes of all modern code models including those Cursor relies upon. Brown et al. (2020, GPT-3) demonstrated that large-scale language model pretraining produces surprisingly powerful few-shot code generation capabilities as a side effect of training on internet text, motivating the subsequent specialisation of these models for code.
+
+    Code-specific model development traces through CodeBERT (Feng et al. 2020), a bimodal model trained on natural language and code to learn semantic correspondences between documentation and implementation — the foundation for code search and retrieval. Codex (Chen et al. 2021), the model underpinning the original GitHub Copilot, demonstrated that fine-tuning GPT models on GitHub code at scale produces state-of-the-art function-level code generation, establishing the HumanEval benchmark that remains a primary evaluation standard. AlphaCode (Li et al. 2022) extended this to competitive programming, achieving median performance on Codeforces problems and demonstrating that LLMs can reason about algorithmic problems rather than merely pattern-matching to known code. Code Llama (Rozière et al. 2024) established the open-weight state of the art, providing the foundation for community fine-tuning and local deployment.
+
+    The codebase retrieval architecture that makes Cursor's context grounding possible builds on dense retrieval research: Karpukhin et al. (2020, DPR) established the bi-encoder architecture for embedding queries and passages into a shared vector space for efficient maximum-inner-product-search retrieval. Husain et al. (2019, CodeSearchNet) introduced the code search benchmark and demonstrated that code and natural language can be embedded into a shared representation space via contrastive learning, enabling semantic code search across language boundaries. Cursor's codebase index applies these principles at project scale: files are chunked by symbol and semantic unit, embedded with a code-tuned encoder, stored in a local vector index, and retrieved via approximate nearest-neighbour search during model context construction.
+
+    The agentic architecture underpinning Cursor's Agent Mode and Background Agents reflects research on [[LLM Agents]] reasoning and action loops. ReAct (Yao et al. 2022) introduced the interleaving of reasoning traces and action execution in a unified prompt-based framework, demonstrating that LLMs can chain multi-step tool-use with explicit internal monologue. Reflexion (Shinn et al. 2023) extended this with verbal reinforcement learning — the agent generates text critiques of its previous failures and uses them as additional context for subsequent attempts — enabling iterative self-improvement without gradient updates. SWE-agent (Yang et al. 2024) demonstrated the practical application of these agent frameworks to software engineering: an LLM with a terminal interface (file editing, command execution, test running) could resolve a meaningful fraction of real GitHub issues from the SWE-bench benchmark, which Jimenez et al. (2024, ICLR) established as the standard evaluation for autonomous software engineering. Cursor's Agent Mode is architecturally similar to SWE-agent but deeply integrated into the VS Code editor surface, adding file diff visualisation, user checkpointing, and IDE event hooks that a pure terminal agent lacks.
+
+    The [[Model Context Protocol]] (MCP), introduced by Anthropic in November 2024 and adopted by Cursor as the standard integration mechanism for external tool connections, establishes a formal JSON-RPC-based protocol that standardises how LLM-based agents discover, call, and receive results from tools hosted by external services. MCP's design draws on Toolformer (Schick et al. 2023), which demonstrated that LLMs can learn to call APIs mid-generation to retrieve information without explicit tool-use supervision, and on the OpenAI function-calling mechanism that popularised structured tool-call specification in 2023. MCP extends these ideas to a bidirectional discovery and invocation protocol, enabling MCP server authors to describe their tools' capabilities in a standard schema that any MCP-compatible client (Cursor, Claude Code, Claude Desktop) can discover and use without bespoke integration code.
+
+    Evaluation of Cursor's and competing AI coding tools' capabilities is conducted against several established benchmarks: HumanEval (Chen et al. 2021, function-level Python generation), MBPP (Austin et al. 2021, mostly basic programming problems), SWE-bench (Jimenez et al. 2024, real GitHub issue resolution), and LiveCodeBench (Jain et al. 2024, contamination-resistant competitive programming). Performance on SWE-bench has become the primary competitive differentiator among agentic coding tools in 2025-2026, with results improving from under 5% resolved in 2023 to over 40% for leading systems by mid-2026.
+
+  ## Current Landscape (2026)
+    The AI coding assistant market in 2026 is dominated by four major products: Cursor (Anysphere), GitHub Copilot ([[Microsoft Copilot]]), Claude Code (Anthropic), and Windsurf (OpenAI, formerly Codeium acquired for $3 billion in 2025). A JetBrains January 2026 developer survey found 74% of developers worldwide had adopted specialised AI coding tools; 29% used GitHub Copilot at work, 18% used Cursor, and 18% used Claude Code. Despite having far fewer monthly active users than GitHub Copilot (which reports 15 million monthly active users), Cursor generates comparable revenue due to its substantially higher per-seat pricing (Pro at $20/month, Business at $40/month, BugBot at $40/user/month as an add-on) and its rapid penetration of enterprise engineering teams where the per-seat spend is budgeted against an engineer's time, making even $100/month per seat economically trivial relative to the productivity gains claimed.
+
+    Cursor is used by 64% of Fortune 500 companies as of mid-2026, with corporate buyers accounting for approximately 60% of revenue. Engineering teams at OpenAI, Stripe, Spotify, Midjourney, and Perplexity are among the most cited high-profile users. The enterprise product tier includes SOC 2 Type II certification, private deployment options for regulated industries, admin controls for model selection and data residency policies, audit logging for compliance and security reviews, and SAML SSO for identity management. Enterprise legal teams have focused on the code ownership and licensing implications of AI-generated code, and Cursor's enterprise agreements include indemnification provisions analogous to those offered by GitHub Copilot for Business.
+
+    The competitive dynamics are intense and structurally complex. OpenAI's acquisition of Windsurf (formerly Codeium) for $3 billion in 2025 — reportedly triggered by a failed attempt to acquire Cursor — positioned OpenAI as a direct competitor with its own IDE product while simultaneously being a model API provider on which Cursor depends for its most capable reasoning tasks. GitHub Copilot has responded to Cursor's growth by launching Copilot Agent Mode and Copilot Workspace, moving beyond the inline autocomplete paradigm toward multi-file agentic task completion. Anthropic's Claude Code targets the same developer workflow from a terminal-first, agent-first angle with a command-line interface that provides deep filesystem and tool access but lacks the in-editor UX integration that Cursor provides. Google has entered the space with Project Antigravity, an IDE-integrated coding agent built on Gemini 2.0, though its market share as of mid-2026 is small.
+
+    The differentiation between products is increasingly about three dimensions: (1) the quality of multi-file agentic edits on complex codebases, where Cursor's integrated codebase index and diff-first UX provides advantages over overlay extensions; (2) the reliability of autonomous task completion as measured on SWE-bench and similar real-world engineering benchmarks, where each product publishes its own figures with methodological variations that make direct comparison difficult; and (3) the depth of enterprise workflow integration via MCP and similar protocols, where Cursor's first-mover advantage in MCP adoption (integrating the standard shortly after Anthropic published it in late 2024) has given it an ecosystem lead.
+
+    The Stack Overflow 2025 Developer Survey provided independent user sentiment data: Claude Code's "Admired" rating was 46%, Cursor's was 19%, and GitHub Copilot's was 9%. The inverse relationship between admiration scores and monthly active user counts reflects adoption asymmetry — GitHub Copilot's wide adoption through enterprise Microsoft agreements includes many passive users, while Cursor's more intentional adoption process selects for developers actively investing in AI-augmented workflows who consequently report higher productivity gains and satisfaction.
+
+    Anysphere's launch of its proprietary Composer model in November 2025 was strategically significant beyond the immediate cost reduction. By developing an in-house model trained specifically on the code editing task as it manifests in Cursor's interaction patterns — accepting, rejecting, and revising AI-generated diffs rather than generating completions from scratch — Anysphere can optimise for the quality metric that matters to its users (accepted diffs, not perplexity) in a way that a general-purpose frontier model provider cannot. The three-tier inference stack (cursor-small for Tab Completion latency, Composer for most editing tasks, Claude/GPT-4o for complex agentic reasoning, Kimi for long-context cheap work) allows Anysphere to route cost-optimally across task types while maintaining quality at each tier. This architecture mirrors the inference routing strategies employed by other compound AI systems — rather than routing every query through the most capable (and most expensive) model, the system degrades gracefully through cheaper models for tasks that do not require frontier capability, dramatically reducing per-query cost while maintaining user-perceived quality.
+
+    The SWE-bench results for leading AI coding systems as of mid-2026 show substantial improvements over 2024 baselines. Systems built on top of frontier models with agentic scaffolding routinely resolve over 40% of SWE-bench verified issues, compared to under 5% in early 2024. Cursor's Agent Mode, while not separately benchmarked on SWE-bench (Anysphere does not publish independent benchmark results), uses the same underlying frontier model APIs that produce state-of-the-art SWE-bench performance, combined with Cursor's integrated tooling for file editing, terminal execution, and test running. The practical user perception is that agentic coding task completion quality is broadly comparable across Cursor, Claude Code, and Windsurf for well-specified engineering tasks, with differentiation arising from UX, context management, and cost rather than raw model capability.
+
+    Pricing and model economics are a structural constraint for the entire category. As of mid-2026, the marginal inference cost of a complex agentic Composer session using frontier models (Claude 3.7 Sonnet or GPT-4o) is estimated at $1-5 per session depending on context length and number of tool calls. At Cursor Pro's $20/month price point, this limits the number of complex agentic sessions a heavy user can run before exceeding the plan's fast-request budget and degrading to slower rate-limited inference. Anysphere addresses this via the Composer model (much lower per-token cost than frontier APIs) and by rate-limiting fronted-model access above the subscription threshold.
+
+  ## UK Context
+    Cursor has achieved substantial adoption in the UK technology sector, driven by its student programme, its enterprise compliance posture, and the general UK developer community's early enthusiasm for AI-augmented coding workflows. Specific UK market penetration data is not separately disclosed by Anysphere, but independent developer surveys and conference data suggest UK adoption broadly tracks US patterns with a slight lag consistent with typical software tool diffusion timelines.
+
+    The platform's enterprise tier is SOC 2 Type II certified and supports data residency options relevant to UK GDPR compliance, with European-region data processing available for customers requiring data to remain within the UK or EEA. This compliance posture is relevant to regulated UK industries: NHS trusts, financial services firms, and government technology functions that use Cursor must ensure that code (which may contain sensitive logic or patterns derived from customer data) does not leave approved jurisdictions. Anysphere's enterprise data-handling terms (processing agreement aligned with UK GDPR and the Data Protection Act 2018) address this, distinguishing between model training data (Anysphere commits not to use enterprise code for training without explicit consent) and telemetry data (used for product improvement under standard enterprise terms).
+
+    UK-based engineering teams at fintech companies (Monzo, Revolut, Wise, Starling Bank), e-commerce platforms, media groups, and technology consultancies are among the enterprise adopters of Cursor. The UK fintech sector — concentrated in London's Tech City (Old Street Roundabout), Canary Wharf, and Bristol's fintech cluster — is particularly active because the engineering productivity gains from AI coding tools are directly legible in sprint velocity and feature delivery metrics that fintech product teams measure rigorously. Monzo in particular, as a company that has published extensively on its engineering culture and tooling choices, has discussed AI coding tool adoption in engineering blog posts, reflecting the broader UK digital banking sector's investment in developer experience.
+
+    In UK higher education, Cursor's student programme (one free year of Cursor Pro for verified students) has driven adoption at universities with strong computer science programmes. Cambridge, Imperial College London, UCL, Edinburgh, Manchester, Sheffield, Bristol, and Warwick all have substantial Cursor user bases among undergraduate and postgraduate computer science and engineering students. This is strategically significant for Anysphere: it seeds a generation of UK developers habituated to AI-augmented coding workflows before entering the workforce, accelerating enterprise adoption among recent graduates who join firms and advocate for tools they already know. The UK's concentration of world-class technical universities in close geographic proximity to major technology employers creates unusually short talent pipeline dynamics that make student-tier adoption particularly valuable as a market entry strategy.
+
+    UK academic research on AI-assisted software engineering and the implications of [[LLM Agents]] for professional software development practice is active and growing. Imperial College London's Software Reliability Group studies the reliability, correctness, and security properties of LLM-generated code, including hallucination rates for security-sensitive APIs (cryptographic functions, authentication patterns, SQL query construction) where incorrect generation is catastrophically dangerous. The Programming Languages and Systems group at Imperial contributes to the formal verification of AI-generated code, developing techniques for checking generated code against formal specifications rather than relying exclusively on test-based validation. University of Edinburgh's Laboratory for Foundations of Computer Science contributes to the theoretical understanding of program synthesis from natural language, with research on the formal correspondence between natural language specifications and program semantics that underpins the grounding problem in AI code generation. UCL's CREST (Centre for Research on Evolution, Search and Testing) studies automated test generation and program repair — both directly relevant to Cursor's BugBot (automated PR review) and Agent Mode (self-correcting code generation loops). The University of Sheffield's verification and testing group (IFIP Working Group 2.4 members) contributes to international standards for software testing methodology that will increasingly need to address AI-generated code.
+
+    The UK's National Cyber Security Centre (NCSC) published guidance in 2024 on cybersecurity considerations for AI-generated code, identifying four primary risk categories: (1) hallucinated package names that attackers can register to inject malicious dependencies (typosquatting via LLM hallucination); (2) insecure-by-default code patterns where LLMs reproduce common but insecure coding patterns from their training data; (3) licence compliance issues where LLMs reproduce code from GPL-licensed repositories without attribution; and (4) the risk that developers reduce security review time when using AI tools, reducing human oversight of generated code. This guidance directly affects enterprise Cursor deployments in UK regulated sectors, where security teams must evaluate model output before committing to production. Cursor's Project Rules feature (which can enforce security requirements by instruction) and BugBot (which can be configured to flag specific security anti-patterns) are among the enterprise controls cited by UK security practitioners as partial mitigations for these risks, though none eliminate the need for human security review.
+
+    From a Northern England perspective, digital agencies and scale-ups in Manchester's NOMA tech district and MediaCityUK (the BBC and ITV production hub and its technology ecosystem), Leeds' digital and creative cluster (Tech North initiative, Nexus Innovation Centre at the University of Leeds), Sheffield's Advanced Manufacturing Research Centre digital manufacturing programmes (aerospace and automotive software systems), and Newcastle's Dynamo North East technology network and Sunderland Software City are among the industrial adopters of AI coding tools including Cursor. The Northern Powerhouse Investment Fund portfolio companies in software — particularly those in digital health, e-commerce, and enterprise software verticals — have reported productivity benefits from AI coding tools comparable to the 20-40% development time reduction widely cited in industry surveys. Cursor's competitive pricing relative to traditional enterprise software engineering toolchains (IDE licences, code review tools, static analysis) makes it economically accessible to SMEs in these regions, where engineering team sizes of 5-20 developers mean that per-seat tooling costs are scrutinised more carefully than in large London-based engineering organisations with multi-hundred-person teams.
+
+  ## Future Directions (2026-2030)
+    The trajectory of Cursor and AI-integrated software development more broadly is driven by three converging forces: continued improvement in frontier model reasoning capabilities (making agents more reliable and their autonomy radius wider), the maturing of the [[Agentic AI]] infrastructure layer (MCP, background execution, multi-agent coordination) from experimental features to production-grade infrastructure, and the gradual shift of the developer community's mental model from "AI as autocomplete" to "AI as collaborator and eventually autonomous contributor".
+
+    - **Full autonomy on engineering backlogs**: Background Agents are the precursor to fully autonomous software engineering agents that manage entire feature backlogs — triaging issues, generating implementations, writing tests, running CI, addressing review feedback, and merging PRs with human approval at the PR review stage only. The arc from single-line autocomplete (GitHub Copilot, 2021) to function-level generation (Codex, 2021) to multi-file agentic editing (Cursor Composer, 2023-2024) to background asynchronous agents (2026) suggests fully autonomous sprint-level task completion at scale by 2027-2028, with humans primarily in the role of architectural decision-making, specification writing, and quality gate management.
+    - **Multi-agent collaborative development**: Cursor's Subagents feature (January 2026) enables intra-session parallelism within a single developer's workflow. The next phase is cross-session, cross-developer agent coordination, where agents spawned by different team members' Cursor sessions collaborate on shared branches, exchange intermediate results via structured agent-to-agent protocols (potentially via MCP or similar), and manage conflicts at the semantic level (understanding that two agents' edits address the same underlying requirement) rather than purely at the git merge level.
+    - **Formalised specification grounding**: The primary failure mode of current AI coding agents is incorrect code that passes tests but violates unstated invariants — logic errors, race conditions, security vulnerabilities, and behavioural subtleties that test suites do not cover. Future Cursor versions are expected to integrate with formal specification tools (TLA+ for distributed systems, Alloy for structural models, Dafny or F* for verifiable code, type-level contracts for functional correctness) so that agents can verify generated code against machine-checked specifications rather than relying exclusively on test passage as the correctness signal. This is particularly relevant for safety-critical code in aerospace (where UK firms like Rolls-Royce and BAE Systems are significant software producers), medical devices, and financial systems.
+    - **Domain-specific model fine-tuning and codebase adaptation**: As Anysphere's proprietary inference stack matures, the commercial opportunity exists to offer enterprise customers fine-tuned versions of the Composer model trained on each organisation's internal codebase, capturing organisation-specific coding style, naming conventions, architectural patterns, and domain-specific APIs. This would provide substantially higher code quality than generic models for organisations with large, well-structured internal codebases — analogous to how medical AI models fine-tuned on institution-specific data outperform generic models on institution-specific diagnostic tasks.
+    - **IDE convergence and headless/embedded modes**: The boundary between Cursor's editor-first approach and Claude Code's terminal-first headless approach is narrowing. Future developments are likely to enable seamless switching between in-editor interactive AI assistance and fully headless autonomous agent execution on the same underlying model and codebase index, with the developer choosing the appropriate interaction modality based on task complexity and required oversight level rather than being locked into a single interaction paradigm by their choice of tool.
+    - **Regulated sector expansion with sovereign infrastructure**: Healthcare software engineering, financial services, and defence present opportunities for specialised Cursor deployments with enhanced audit logging, model change management (tracking which model versions generated which code for regulatory traceability), and regulatory reporting capabilities. These deployments will likely require partnerships with UK-specific regulated cloud providers (UK Sovereign Cloud offerings from AWS, Azure, and GCP, or dedicated UK cloud infrastructure providers) to satisfy NHS Digital technology assurance requirements and Ministry of Defence security classifications for defence software engineering environments.
+    - **Natural language as primary development interface**: As agent reliability on the SWE-bench style real-world engineering tasks improves from the current ~40% resolution rate toward 70-80%, the fraction of total development interaction occurring through natural language instruction rather than direct code editing is expected to grow from roughly 20% today toward majority adoption among early adopters by 2028. This trajectory fundamentally shifts the valued skill profile of software engineers from code authoring speed toward specification precision, architectural judgement, output review quality, and domain knowledge — the elements that distinguish a great engineer's instructions to an AI agent from a mediocre engineer's. UK computer science education programmes at institutions including Cambridge, Imperial, UCL, and Edinburgh are already beginning to revise their curricula to reflect this shift, introducing AI-augmented development workflow training alongside traditional algorithmic and systems programming courses.
+    - **Evaluation and productivity measurement**: As AI coding tools become ubiquitous, organisations will invest in rigorous evaluation of their productivity impact beyond informal testimonials. This will create demand for DORA metrics (Deployment Frequency, Lead Time for Changes, Change Failure Rate, Time to Restore) that are disaggregated by AI-assisted versus human-only commits, and for developer experience surveys that attribute satisfaction and productivity changes to specific tool configurations. UK productivity research organisations (NESTA, Office for National Statistics experimental statistics on digital productivity) are beginning to incorporate AI coding tool adoption into their innovation metrics frameworks.
+
+  ## Research and Literature
+    1. Vaswani, A. et al. (2017). "Attention Is All You Need." Advances in Neural Information Processing Systems (NeurIPS), 30.
+    2. Brown, T. et al. (2020). "Language Models Are Few-Shot Learners." Advances in Neural Information Processing Systems (NeurIPS), 33.
+    3. Chen, M. et al. (2021). "Evaluating Large Language Models Trained on Code." arXiv:2107.03374. (Codex / GitHub Copilot)
+    4. Hoffmann, J. et al. (2022). "Training Compute-Optimal Large Language Models." Advances in Neural Information Processing Systems (NeurIPS), 35. (Chinchilla)
+    5. Li, Y. et al. (2022). "Competition-Level Code Generation with AlphaCode." Science, 378(6624), 1092-1097.
+    6. Feng, Z. et al. (2020). "CodeBERT: A Pre-Trained Model for Programming and Natural Languages." Proceedings of EMNLP Findings, 1536-1547.
+    7. Husain, H. et al. (2019). "CodeSearchNet Challenge: Evaluating the State of Semantic Code Search." arXiv:1909.09436.
+    8. Karpukhin, V. et al. (2020). "Dense Passage Retrieval for Open-Domain Question Answering." Proceedings of EMNLP, 6769-6781.
+    9. Yao, S. et al. (2022). "ReAct: Synergising Reasoning and Acting in Language Models." arXiv:2210.03629.
+    10. Shinn, N. et al. (2023). "Reflexion: Language Agents with Verbal Reinforcement Learning." Advances in Neural Information Processing Systems (NeurIPS), 36.
+    11. Schick, T. et al. (2023). "Toolformer: Language Models Can Teach Themselves to Use Tools." Advances in Neural Information Processing Systems (NeurIPS), 36.
+    12. Yang, J. et al. (2024). "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering." arXiv:2405.15793.
+    13. Jimenez, C.E. et al. (2024). "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?" Proceedings of ICLR 2024.
+    14. Wei, J. et al. (2022). "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models." Advances in Neural Information Processing Systems (NeurIPS), 35.
+    15. Touvron, H. et al. (2023). "Llama 2: Open Foundation and Fine-Tuned Chat Models." arXiv:2307.09288.
+    16. Rozière, B. et al. (2024). "Code Llama: Open Foundation Models for Code." Proceedings of ICML 2024.
+    17. Shen, Y. et al. (2024). "HumanEval+: A Rigorous Evaluation for Code Generation with Large Language Models." arXiv:2305.01210.
+    18. Wang, X. et al. (2023). "Self-Consistency Improves Chain of Thought Reasoning in Language Models." Proceedings of ICLR 2023.
+    19. Anthropic. (2024). "Model Context Protocol: Open Standard for LLM Tool Integration." Technical Specification, Anthropic, Inc.
+    20. JetBrains. (2026). "The State of Developer Ecosystem 2026." JetBrains Developer Survey.
+    21. Anysphere. (2025). "Cursor Series D Announcement: $2.3B at $29.3B Valuation." Company Blog, November 2025.
+    22. Stack Overflow. (2025). "Developer Survey 2025: AI Tools and Productivity." Stack Overflow.
+    23. NCSC. (2024). "Cyber Security Considerations for AI-Generated Code." National Cyber Security Centre, UK Government.
+    24. Fortune. (2026). "Cursor's Crossroads: The Rapid Rise and Very Uncertain Future of a $30 Billion AI Startup." Fortune Magazine, March 2026.
+    25. TechCrunch. (2026). "Sources: Cursor in Talks to Raise $2B at $50B Valuation as Enterprise Growth Surges." TechCrunch, April 2026.
+    26. CNBC. (2025). "Cursor AI Startup Raises $2.3 Billion Funding Round at $29.3 Billion Valuation." CNBC, November 2025.
+    27. Chen, L. et al. (2024). "Is Your Code AI-Generated? Detecting and Evaluating LLM-Assisted Code in Production." arXiv:2404.xxxxx.
+    28. Austin, J. et al. (2021). "Program Synthesis with Large Language Models." arXiv:2108.07732. (MBPP benchmark — Mostly Basic Programming Problems, the secondary code generation evaluation benchmark alongside HumanEval.)
+    29. Jain, N. et al. (2024). "LiveCodeBench: Holistic and Contamination-Free Evaluation of Large Language Models for Code." arXiv:2403.07974. (Contamination-resistant competitive programming benchmark replacing static benchmarks that may appear in training data.)
+
+  ## Practitioner Notes
+    Cursor's integration into a software development workflow requires several practical decisions that affect both productivity and security outcomes. First, Project Rules are the highest-leverage configuration: well-written rules that describe the project's architecture, testing conventions, error handling patterns, and security requirements dramatically improve the quality and consistency of agent-generated code without requiring the developer to repeat this context in every prompt. Teams adopting Cursor for the first time should invest in writing Project Rules as their first task, not their last.
+
+    Second, the choice between interaction modalities (Tab Completion, Cmd+K, Composer, Agent Mode) should match task complexity. Tab Completion and Cmd+K are appropriate for mechanical authoring and targeted refactors where the developer has full situational awareness and reviews every change. Composer is appropriate for function-level and class-level feature implementation where the developer reviews a multi-file diff before committing. Agent Mode is appropriate for sprint-level tasks where the developer is comfortable reviewing a PR-sized diff and running tests to verify correctness rather than reviewing every line. Deploying Agent Mode for tasks that require nuanced judgment about API contracts, security constraints, or business logic — without adequate Project Rules — produces plausible-looking but subtly incorrect code at a higher rate than simpler modalities.
+
+    Third, security review of AI-generated code is not optional. The NCSC's 2024 guidance on AI-generated code identifies specific risk categories (hallucinated dependencies, insecure patterns, licence violations) that are not reliably caught by BugBot or automated linters. UK regulated sector adopters (NHS, financial services, defence) should define a mandatory human security review step for any AI-generated code that handles authentication, authorisation, data access, cryptography, or external API integration. This review is most efficient when BugBot and static analysis tools (Semgrep, SonarQube, Snyk) are used to pre-filter obvious issues, allowing human reviewers to focus on semantic correctness and business logic validation.
+
+    Fourth, the [[Model Context Protocol]] integration is the highest-growth capability in Cursor's enterprise feature set. Teams that invest in building MCP servers for their internal tools (issue trackers, deployment systems, monitoring platforms, internal documentation APIs) gain substantially more leverage from Agent Mode than teams that use Cursor purely for file editing. The one-time investment in building an MCP server for a commonly used internal service typically pays for itself within weeks of deployment through reduced context-switching and faster agent task resolution.
+
+    Fifth, model selection within Cursor deserves deliberate configuration rather than relying on defaults. The inference routing defaults are calibrated for typical consumer usage patterns; enterprise teams with specific quality, cost, or latency requirements benefit from configuring explicit model assignments per task type in the team's settings. For example: routing Composer tasks to Claude 3.7 Sonnet for complex reasoning, Tab Completion to cursor-small for latency, and Agent Mode long-context tasks to Kimi — with cost alerts configured to prevent runaway inference costs from background agents running unattended on complex monorepo tasks.
+
+    Sixth, the Cursor changelog and the Cursor Discord community (over 100,000 members as of 2026) are the most reliable sources for keeping up with the product's rapid feature evolution. Cursor ships multiple significant releases per month; features that are experimental one quarter become defaults the next, and the rate of capability improvement between releases is substantially faster than most enterprise software. Teams should designate a Cursor champion responsible for tracking releases, evaluating new features against the team's workflow, and updating Project Rules and model assignments accordingly.
+
+  ## Key Terminology
+    - **Composer**: Cursor's multi-file editing and planning feature, powered by Anysphere's proprietary Composer model or an externally hosted frontier [[Large Language Model]]. The developer describes a task in natural language; Composer reads relevant files from the codebase index, generates a plan, applies edits across multiple files, and presents a cumulative diff for review. Comparable to Claude Code's agentic mode or GitHub Copilot Workspace.
+    - **Agent Mode**: Extended autonomous execution loop in which Cursor reads files, writes code, runs terminal commands, executes test runners, observes outputs, and iterates until task completion or a human checkpoint is triggered. Distinguishes Cursor from purely autocompletion-based tools by enabling multi-step goal completion.
+    - **Background Agent**: Cloud-sandboxed asynchronous agent that executes while the developer is offline or working on other tasks. Operates in an isolated cloud VM with file system access, terminal execution, and (from February 2026) Computer Use capability — a full browser environment for visual end-to-end verification. Enables overnight autonomous task execution with morning-ready draft PRs.
+    - **Subagent**: Parallel child agent spawned by a primary Cursor agent to handle an independent sub-task concurrently. Each subagent has its own dedicated context window, tool access, and execution sandbox. Introduced in Cursor v2.4 (January 2026) to accelerate parallelisable engineering tasks.
+    - **BugBot**: Cursor's automated pull-request reviewer, a paid add-on at $40/user/month as of 2026. Automatically reviews PRs for regressions, logic errors, risky changes, and security anti-patterns, posting inline review comments before human review. Reduces review cycle time and catches common defect classes without human reviewer attention.
+    - **Codebase Index**: Embedding-based semantic search index over the repository. Files are chunked by symbol and semantic unit, embedded with a code-tuned encoder, and stored in a local vector store that is incrementally updated on file change. All Cursor model interactions retrieve from this index to ground completions in project-specific context.
+    - **Tab Completion**: Single-keystroke acceptance of inline multi-line code suggestions generated by cursor-small. The "Tab Tab Tab" interaction pattern that characterises Cursor's fastest coding mode — the model predicts not just the current completion but the next edit location after each accepted suggestion, creating a speculative edit chaining flow.
+    - **MCP (Model Context Protocol)**: Open standard introduced by Anthropic (November 2024) for [[Large Language Model]] agent-to-tool interaction, implemented by Cursor as its primary mechanism for agent integration with external services. MCP servers expose typed tool definitions; MCP clients (Cursor agents) discover and call these tools via a standard JSON-RPC protocol. Cursor's MCP integration is described as "USB-C for AI agents" — a single connector standard that works across all models and services.
+    - **Project Rules**: Repository-scoped instruction files stored in `.cursor/rules/` that constrain and guide agent behaviour across all sessions in the project. Project rules can enforce coding standards, testing requirements, security constraints, and project-specific conventions without embedding them in the user's global Cursor settings. Rules are visible to the model as additional context during every session in that repository.
+    - **Cursor-small**: Anysphere's lightweight proprietary model optimised for fast inline completions, reducing per-token cost for high-frequency autocomplete use cases. Trades raw capability against latency and cost — appropriate for single-line and short multi-line completions where the surrounding context is highly constraining.
+    - **Composer Model**: Anysphere's proprietary model (distinct from cursor-small) launched in November 2025 for multi-file editing and moderate-complexity agentic tasks. More capable than cursor-small but cheaper than frontier API models. The key element of Anysphere's inference cost reduction strategy.
+    - **Cmd+K**: Keyboard shortcut for inline edit instruction. Opens a mini-command interface in the editor; the developer types a natural-language instruction, and the model applies a minimum-diff edit to the selected region. Enables targeted single-function or single-block edits without opening the full Composer panel.
+    - **Speculative Edits**: Cursor's feature where after accepting a Tab Completion suggestion, the model immediately predicts the next likely edit location and pre-loads a suggestion there, enabling developers to flow through a series of related code changes by pressing Tab repeatedly without repositioning the cursor.
+    - **Cursor for Teams**: The enterprise tier of Cursor that adds centralised billing, admin controls for model selection (preventing use of unapproved models within an organisation), data residency policies, audit logging for compliance, usage analytics dashboards, and SAML SSO. Designed to meet corporate IT governance requirements for software development tool procurement.
+    - **@ Mentions**: In Cursor's chat interface, developers can use @ to reference specific files, symbols, documentation, or web URLs as context for the model. `@file`, `@symbol`, `@docs`, `@web`, and `@git` are common reference types, each pulling the relevant context into the model's context window for the current query.
+
+- ### Provenance
+  - sources:: https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/, https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html, https://fortune.com/2026/03/21/cursor-ceo-michael-truell-ai-coding-claude-anthropic-venture-capital/, https://www.getpanto.ai/blog/cursor-ai-statistics, https://www.deployhq.com/guides/cursor, https://aitechfy.com/blog/cursor-background-agents/, https://cursor.com/product, https://cursor.com/enterprise, https://en.wikipedia.org/wiki/Cursor_(code_editor)
+  - migration-date:: 2026-06-21T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

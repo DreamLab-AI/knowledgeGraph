@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------------------
+# Build output
+# ---------------------------------------------------------------------------
+# /dist/data/ IS committed — it is the published dataset (ontology.ttl,
+# ontology.json, NGG1 graph tiers). /dist/api/ is the website surface: 14k
+# files, rebuilt in seconds by `python -m pipeline.build ontology/pages dist`.
+/dist/api/
+/www/
+
+# Explorer build output. Everything under explorer/ that is generated:
+explorer/modern/dist/
+explorer/modern/node_modules/
+explorer/**/node_modules/
+explorer/**/target/
+explorer/**/pkg/
+explorer/legacy/deploy/
+
+# ---------------------------------------------------------------------------
+# Language toolchains
+# ---------------------------------------------------------------------------
+node_modules/
+target/
+pkg/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# ---------------------------------------------------------------------------
+# Editor / OS
+# ---------------------------------------------------------------------------
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
+
+# ---------------------------------------------------------------------------
+# Agent tooling state — not part of the published method
+# ---------------------------------------------------------------------------
+.claude-flow/
+.hive-mind/
+.swarm/
+.claude/

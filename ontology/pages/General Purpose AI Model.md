@@ -1,0 +1,434 @@
+public:: true
+
+# General Purpose AI Model
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:6a15166de1871a43f8a178b3f89299d7724dfdd1b1fbea8435af89ebbc398f40",
+  "@type": "Page",
+  "vc:slug": "general-purpose-ai-model",
+  "title": "General Purpose AI Model",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-3044"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "General Purpose AI Model"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:general-purpose-ai-model",
+  "@type": "Class",
+  "label": "General Purpose AI Model",
+  "definition": "An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market, as defined by EU AI Act Article 3(63). GPAI models face specific transparency and documentation obligations, with enhanced requirements for those meeting systemic risk thresholds based on training compute or high-impact capability benchmarks.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "@id": "urn:ngm:class:frontier-model",
+      "label": "Frontier Model"
+    }
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning From Human Feedback"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:large-scale-compute",
+        "label": "Large Scale Compute"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self Supervised Learning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:scaling-laws",
+        "label": "Neural Scaling Laws"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:narrow-ai",
+        "label": "Narrow AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      }
+    ]
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:general-purpose-ai-model:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:6a15166de1871a43f8a178b3f89299d7724dfdd1b1fbea8435af89ebbc398f40"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:GeneralPurposeAIModel
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
+
+- ### Relationships
+  - Uses [[Transformer Architecture]]
+  - Uses [[Pre Training]]
+  - Uses [[Fine Tuning]]
+  - Enables [[Large Language Models]]
+  - Depends on [[AI Regulation]]
+  - Depends on [[AI Governance]]
+  - Related to [[AI Governance Framework]]
+
+- ### Content
+  - An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.
+
+  ## Source
+
+  **Primary**: EU AI Act Article 3(63)
+  **Secondary**: Commission implementing acts, Article 53
+
+  ## Regulatory Context
+
+  Introduced to address foundation models and large language models. GPAI models face specific transparency and documentation obligations distinct from traditional AI systems.
+
+  #### Key Characteristics
+  - **Significant generality**: Not limited to narrow domain
+		  - **Multi-task capability**: Performs diverse functions
+		  - **Market-agnostic**: Capabilities independent of distribution method
+		  - **Adaptability**: Can be fine-tuned for downstream applications
+
+		  ## Risk Classification
+
+		  GPAI models are subject to:
+		  - **Standard tier**: Transparency obligations (Article 53)
+		  - **Systemic risk tier**: Enhanced requirements if meeting high-impact thresholds (Article 55)
+
+		  ## Obligations (Article 53)
+
+		  1. **Technical documentation** (Annex XI): Training processes, evaluation results
+		  2. **Downstream transparency** (Annex XII): Information for integrating providers
+		  3. **Copyright compliance**: Policy for rights reservations (Directive 2019/790)
+		  4. **Training content summary**: Publicly available dataset description
+
+		  ## Systemic Risk Threshold
+
+		  Models with systemic risk designation if:
+		  - High-impact capabilities matching state-of-the-art benchmarks, OR
+		  - Cumulative computation ≥10²⁵ floating point operations (FLOPs)
+
+		  ## Exemptions
+
+		  **Free and open-source AI models** are exempt from:
+		  - Technical documentation (Article 53(1)(a))
+		  - Downstream transparency information (Article 53(1)(b))
+
+		  Provided source code, parameters, weights, and information are publicly available.
+
+		  ## Governance
+
+		  - **AI Office**: Primary supervisory authority for GPAI
+		  - **Scientific Panel**: Independent experts for systemic risk assessment
+		  - **Codes of Practice**: Industry-led compliance frameworks (Article 56)
+
+  ## See Also
+
+		  - EU AI Act Chapter V (Articles 51-56)
+		  - Annex XI (Technical Documentation)
+		  - Annex XII (Transparency Information)
+		  - Annex XIII (Systemic Risk Criteria)
+
+		  ```
+
+  - public-access:: true
+  - definition:: An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.
+
+
+
+  ## Academic Context
+
+  - Brief contextual overview
+  - General-purpose AI models (GPAI) are foundational AI systems trained on vast datasets, exhibiting broad capabilities across diverse tasks
+  - The concept is central to modern generative AI, underpinning technologies such as large language models and multimodal systems
+  - Key developments and current state
+		- The EU AI Act (2024) formalised the definition and regulatory obligations for GPAI models, with guidance published in 2025
+		- The UK, while not bound by the EU AI Act, has adopted similar principles in its AI governance frameworks
+  - Academic foundations
+		- The field draws on advances in deep learning, self-supervised learning, and scalable model architectures
+		- Foundational research includes work on transformer architectures and large-scale pre-training
+
+  ## Current Landscape (2025)
+
+  - Industry adoption and implementations
+  - Major tech companies and startups globally deploy GPAI models for applications ranging from chatbots to content generation
+  - Notable organisations and platforms
+		- OpenAI, Anthropic, Google DeepMind, and Meta are leading providers of GPAI models
+		- UK-based companies such as DeepMind (London) and Faculty (London) are active in this space
+  - UK and North England examples where relevant
+		- The Alan Turing Institute (London) collaborates with regional hubs in Manchester, Leeds, Newcastle, and Sheffield on AI research and deployment
+		- The Northern AI Cluster, centred in Manchester, fosters innovation in AI applications for healthcare, finance, and public services
+  - Technical capabilities and limitations
+  - GPAI models excel at tasks such as text generation, image synthesis, and multimodal reasoning
+  - Limitations include high computational costs, potential for bias, and challenges in interpretability
+  - Standards and frameworks
+  - The EU AI Act sets a threshold for GPAI models based on training compute (10^23 FLOP)
+  - The General-Purpose AI Code of Practice provides voluntary guidelines for responsible development and deployment
+  - The UK’s AI Standards Hub promotes best practices and interoperability
+
+  ## Research & Literature
+
+  - Key academic papers and sources
+  - Vaswani, A., et al. (2017). Attention Is All You Need. *Advances in Neural Information Processing Systems*, 30. https://arxiv.org/abs/1706.03762
+  - Brown, T., et al. (2020). Language Models are Few-Shot Learners. *Advances in Neural Information Processing Systems*, 33. https://arxiv.org/abs/2005.14165
+  - European Commission. (2025). Guidelines on the Scope of Obligations for General-Purpose AI Models. https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+  - Ongoing research directions
+  - Improving efficiency and reducing environmental impact of large-scale AI training
+  - Enhancing fairness, transparency, and accountability in GPAI models
+  - Exploring new modalities and applications, such as multimodal reasoning and embodied AI
+
+  ## UK Context
+
+  - British contributions and implementations
+  - The UK is a leader in AI research, with strong academic and industry collaborations
+  - The Alan Turing Institute and the UKRI Centre for Doctoral Training in AI for Science and Government are key contributors
+  - North England innovation hubs (if relevant)
+  - Manchester, Leeds, Newcastle, and Sheffield host vibrant AI research communities and innovation clusters
+  - The Northern AI Cluster supports cross-sector collaboration and knowledge exchange
+  - Regional case studies
+  - The Manchester AI for Health initiative leverages GPAI models for medical imaging and diagnostics
+  - The Leeds Digital Health Hub applies GPAI models to improve patient care and operational efficiency
+
+  ## Future Directions
+
+  - Emerging trends and developments
+  - Increasing integration of GPAI models into everyday applications and services
+  - Growing emphasis on ethical and responsible AI development
+  - Anticipated challenges
+  - Balancing innovation with regulatory compliance and public trust
+  - Addressing the environmental and social impacts of large-scale AI
+  - Research priorities
+  - Developing more efficient and sustainable AI training methods
+  - Enhancing the interpretability and explainability of GPAI models
+  - Exploring new applications in areas such as education, healthcare, and public policy
+
+  ## References
+
+  1. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention Is All You Need. *Advances in Neural Information Processing Systems*, 30, 5998–6008. https://arxiv.org/abs/1706.03762
+  2. Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language Models are Few-Shot Learners. *Advances in Neural Information Processing Systems*, 33, 1877–1901. https://arxiv.org/abs/2005.14165
+  3. European Commission. (2025). Guidelines on the Scope of Obligations for General-Purpose AI Models. https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+  4. UKRI. (2025). AI Standards Hub. https://standardshub.org.uk/
+  5. Alan Turing Institute. (2025). Northern AI Cluster. https://turing.ac.uk/research/ai-clusters/northern-ai-cluster
+  6. Manchester AI for Health. (2025). https://manchesteraihealth.org/
+  7. Leeds Digital Health Hub. (2025). https://leedsdigitalhealthhub.org/
+
+
+  ## Metadata
+
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+  #### Related Concepts
+  - **Systemic Risk** (AI-0122): Highest-tier GPAI classification
+		  - **Downstream Provider** (AI-0146): Integrator of GPAI into systems
+		  - **Foundation Model**: Equivalent technical term
+		  - **Large Language Model**: Common GPAI implementation
+
+		  ## Examples
+
+		  GPT-4, Claude, Gemini, LLaMA, Mistral, Stable Diffusion (multimodal models)
+
+		  ## Enforcement Timeline
+
+		  - **Transparency obligations**: 2 August 2025
+		  - **Full GPAI regime**: 2 August 2027
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,0 +1,240 @@
+public:: true
+
+# ens
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:d694d81e0716ed3837f317c1defe1747e30ef895531a772f621a908ca1a5d6b1",
+  "@type": "Page",
+  "vc:slug": "ens",
+  "title": "ens",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2,
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-19T21:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ens",
+  "@type": "Class",
+  "label": "ENS",
+  "definition": "The Ethereum Name Service (ENS) is a decentralised, on-chain naming system built on Ethereum that maps human-readable names ending in .eth to Ethereum addresses, content hashes, multi-coin addresses, and arbitrary text records via ERC-137 compliant smart contracts and pluggable resolver contracts. It functions as the Web3 analogue of DNS, replacing opaque hexadecimal addresses with memorable, self-sovereign labels backed by ERC-721 NFTs and governed by the ENS DAO. Off-chain resolution via CCIP-Read (EIP-3668) extends the system to conventional databases with on-chain verification, reducing gas overhead for high-frequency updates whilst preserving trustless resolution semantics.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralised-identity",
+      "label": "Decentralised Identity"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:erc-137",
+        "label": "ERC-137"
+      },
+      {
+        "@id": "urn:ngm:class:eip-3668",
+        "label": "EIP-3668 CCIP-Read"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "@id": "urn:ngm:class:unstoppable-domains",
+        "label": "Unstoppable Domains"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:wallet-address",
+        "label": "Wallet Address"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Ecosystem"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ethereum-name-service",
+      "label": "Ethereum Name Service"
+    }
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+- ### Definition
+  - The Ethereum Name Service (ENS) is a decentralised, open, and extensible naming system built on the [[Ethereum]] blockchain that translates human-readable names such as `alice.eth` into machine-readable identifiers including [[Wallet Address|wallet addresses]], content hashes, and metadata records. Unlike [[DNS]] — which relies on hierarchical, centralised registries — ENS encodes ownership as an [[ERC-721]] [[NFT]], making names transferable, composable, and self-sovereign. ENS resolves names via pluggable [[Smart Contract]] resolvers supporting the [[IPFS]] contenthash field, multi-coin addresses through [[SLIP-0044]], and off-chain lookups via [[EIP-3668 CCIP-Read]], making it a foundational layer for [[Decentralised Identity]] and [[Web3]] discoverability.
+
+- ### Overview
+  - ENS was launched in May 2017 by Nick Johnson and the Ethereum Foundation and subsequently spun out as an independent project. It became a cornerstone of Web3 UX by giving every participant a memorable, portable, and censor-resistant identity anchor instead of a 42-character hexadecimal address.
+  - Why it matters:
+    - Reduces user error when sending cryptocurrency by replacing cryptographic addresses with readable labels.
+    - Provides a single namespace that wallets, [[Decentralised Application|dApps]], and browsers can resolve uniformly.
+    - Creates an on-chain public profile: ENS names can hold avatar, email, social-media handles, and website records, acting as a [[Self Sovereign Identity]] hub.
+    - Governance is fully on-chain through the [[DAO|ENS DAO]], funded by a November 2021 retroactive airdrop of the ENS [[Governance Token]], making the protocol one of the most studied examples of [[On-chain Governance]].
+  - How it works (high-level):
+    - A hierarchical namespace is partitioned into nodes (hashed via the Namehash algorithm defined in ERC-137).
+    - The root Registry [[Smart Contract]] records the owner, resolver address, and TTL for each node.
+    - A Registrar contract (ETHRegistrarController) manages auctions and renewals of second-level .eth names; each registered name is wrapped as an [[ERC-721]] NFT transferable in standard marketplaces.
+    - Resolver contracts translate a node into actual records. The default PublicResolver supports addr (multi-coin via SLIP-0044), contenthash (IPFS/Arweave), text records, and ABI fields.
+    - Reverse resolution maps an address back to a primary ENS name, enabling human-readable display in any [[Decentralised Application]].
+
+- ### Key Components
+  - **Registry** — The single authoritative [[Smart Contract]] that stores `owner`, `resolver`, and `TTL` for every node in the ENS namespace. It is the root of trust; all other contracts defer to it for ownership checks.
+  - **Registrar (ETHRegistrarController)** — Manages the .eth second-level domain: name registration, two-step commit-reveal to prevent front-running, annual renewal fees, and grace periods. Each registered name mints an [[ERC-721]] NFT to the owner's [[Wallet Address]].
+  - **NameWrapper** — Introduced in ENS v2, wraps names as ERC-1155 tokens, enabling fine-grained fuse (permission) controls so owners can lock, emancipate, or burn specific capabilities (e.g. prevent sub-name creation).
+  - **Resolvers** — Pluggable contracts implementing the `IResolver` interface. The canonical PublicResolver supports:
+    - `addr(node, coinType)` — multi-chain addresses via [[SLIP-0044]]
+    - `contenthash(node)` — IPFS, Arweave, and Swarm content hashes
+    - `text(node, key)` — arbitrary key-value metadata (avatar, email, url, com.twitter)
+    - `ABI(node, contentType)` — contract ABI storage
+  - **CCIP-Read / EIP-3668** — An off-chain lookup protocol that lets resolvers redirect clients to a gateway URL, fetch off-chain data, and verify it on-chain with an EIP-712 signature. Enables wildcard DNS-style resolution (e.g. `*.myprotocol.eth`) without per-subdomain gas costs.
+  - **Namehash (ERC-137)** — A recursive hashing algorithm converting `alice.eth` into a 256-bit node ID. Ensures a parent domain cannot spoof sub-names and that the entire hierarchy is authenticated.
+  - **ENS DAO** — Governs the protocol through an ENS [[Governance Token]] (ERC-20). Token holders vote on registrar parameters, treasury allocation, and protocol upgrades via Snapshot off-chain signalling and on-chain timelock execution.
+
+- ### Applications / Use Cases
+  - **Cryptocurrency payments** — Users send ETH, ERC-20 tokens, BTC (via SLIP-0044 coinType 0), and other assets to `name.eth` instead of raw addresses. Integrated natively in MetaMask, Rainbow, Coinbase Wallet, and most major wallets.
+  - **Decentralised websites** — Setting a contenthash record to an [[IPFS]] CID makes a site accessible at `name.eth.limo` via a centralised gateway or directly in [[Brave]] browser's ENS-aware resolver. Eliminates reliance on ICANN-registered domains for censorship-resistant publishing.
+  - **On-chain identity profiles** — ENS names serve as public profiles: avatar, bio, social handles, and linked [[Verifiable Credential|credentials]] stored in text records, consumed by [[Decentralised Application|dApps]] like OpenSea, Mirror, and Farcaster.
+  - **Multi-chain address book** — A single .eth name resolves to native addresses on Bitcoin, Solana, Cosmos, Polkadot, and other chains, providing a universal address aggregation layer across heterogeneous blockchains.
+  - **Smart contract discoverability** — Protocols register human-readable names for their contract deployments (e.g. `uniswap.eth`, `aave.eth`), enabling developer tooling and auditing interfaces to reference contracts symbolically rather than by bytecode address.
+  - **dApp routing and link resolution** — Frameworks like Wagmi and ethers.js resolve ENS names transparently at the SDK level, so developers write `provider.resolveName('vitalik.eth')` and receive the underlying address.
+  - **DAO treasury management** — ENS DAO itself and many sub-DAOs identify multisig wallets and treasury contracts via ENS names, making governance proposals and fund transfers auditable and human-readable.
+  - **DID integration** — ENS names map to [[Decentralised Identifier|DIDs]] via the `did:ens` method, bridging Web3 naming into the W3C DID ecosystem and enabling [[Verifiable Credential]] issuance anchored to .eth names.
+
+- ### Relationships
+  - uses:: [[Smart Contract]]
+  - uses:: [[NFT]]
+  - uses:: [[Ethereum]]
+  - uses:: [[ERC-721]]
+  - uses:: [[IPFS]]
+  - enables:: [[Decentralised Web]]
+  - enables:: [[Self Sovereign Identity]]
+  - enables:: [[Web3]]
+  - enables:: [[Decentralised Application]]
+  - implements:: [[ERC-137]]
+  - implements:: [[EIP-3668 CCIP-Read]]
+  - implements:: [[SLIP-0044]]
+  - requires:: [[Ethereum Virtual Machine]]
+  - requires:: [[On-chain Governance]]
+  - contrastsWith:: [[DNS]]
+  - contrastsWith:: [[Unstoppable Domains]]
+  - relatedTo:: [[DAO]]
+  - relatedTo:: [[Wallet Address]]
+  - relatedTo:: [[Governance Token]]
+  - relatedTo:: [[Name Registry]]
+  - bridges-to:: [[Decentralised Identifier]]
+  - bridges-to:: [[Verifiable Credential]]
+  - partOf:: [[Ethereum Ecosystem]]
+
+- ### Standards & Context
+  - **ERC-137** — Defines the Namehash algorithm, the ENS Registry interface, and the resolver interface. The foundational specification that every ENS component implements.
+  - **ERC-181** — Specifies the reverse resolution contract interface, allowing `addr.reverse` lookups from address to primary name.
+  - **EIP-3668 (CCIP-Read)** — Cross-Chain Interoperability Protocol Read: enables off-chain resolver gateways with on-chain verification, dramatically reducing gas for dynamic or large datasets whilst maintaining trustless semantics.
+  - **SLIP-0044** — Satoshi Labs Improvement Proposal defining coinType integers for multi-asset address resolution; ENS resolvers use this to store BTC, LTC, XRP and other addresses against a single name.
+  - **ERC-1155 (NameWrapper)** — ENS v2 wraps names as semi-fungible tokens with fuse permissions, inheriting the ERC-1155 standard for flexible ownership models.
+  - **W3C DID Core** — ENS names are addressable as DIDs via the `did:ens` method, aligning with W3C [[Decentralised Identifier]] specification and enabling interoperability with [[Verifiable Credential]] ecosystems.
+  - **ICANN / DNS comparison** — ENS deliberately mirrors DNS's hierarchical namespace model but removes ICANN's centralised root authority, replacing it with Ethereum's decentralised consensus. This trade-off sacrifices universal browser support for censorship resistance and self-sovereignty.
+
+- ### Technical Deep Dive
+  - **Namehash algorithm** — `namehash('')` = 32 zero bytes; `namehash(label + '.' + domain)` = `keccak256(namehash(domain) ++ keccak256(label))`. This recursive structure ensures each node in the hierarchy is cryptographically bound to its parent, preventing name spoofing.
+  - **Commit-reveal registration** — To prevent front-running, ENS registration uses a two-step process: first a commitment hash (`keccak256(name, owner, secret)`) is submitted on-chain, and after a minimum wait (typically 1 minute), the reveal transaction registers the name. The secret prevents miners from observing the intent.
+  - **Gas economics** — Registration fees are denominated in USD and paid in ETH via a price oracle (Chainlink). Annual renewal costs scale with name length to discourage squatting of short names. The fee revenue funds the ENS DAO treasury.
+  - **Wildcard resolution** — Via CCIP-Read, a single resolver can handle `*.subdomain.eth` without individual on-chain entries, enabling protocols to dynamically serve millions of sub-names (e.g. user profiles indexed in a database with cryptographic proofs returned on demand).
+  - **Reverse records** — The `addr.reverse` node allows any Ethereum address to claim a primary ENS name. Wallets display this name as the canonical identity for the address, creating a bidirectional mapping between address and human-readable label.
+
+- ### Provenance
+  - sources:: ENS documentation (docs.ens.domains), ERC-137 specification, EIP-3668 specification, ENS DAO governance forum
+  - updated:: 2026-06-13
+  - migration-date:: 2026-05-19T00:00:00Z

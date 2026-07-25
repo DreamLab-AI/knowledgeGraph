@@ -1,0 +1,60 @@
+public:: true
+
+# Censorship Resistant Payments
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:censorship-resistant-payments",
+  "@type": "Page",
+  "vc:slug": "censorship-resistant-payments",
+  "title": "Censorship Resistant Payments",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:censorship-resistant-payments",
+  "@type": "Class",
+  "label": "Censorship Resistant Payments",
+  "definition": "Censorship resistant payments are financial transactions that cannot be selectively blocked, reversed, or denied by any single authority — including governments, financial institutions, or network intermediaries — by virtue of operating on decentralised, permissionless infrastructure. Resistance to censorship is achieved through architectural properties such as open validator sets, pseudonymous addressing, and consensus rules that treat all valid transactions equally regardless of the identities or purposes of parties. Bitcoin, Monero, and decentralised finance protocols on public blockchains are archetypal examples, contrasting with traditional payment rails where correspondent banks, card networks, and processors can refuse service.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:class:payment-channel", "label": "Payment Channel"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:financial-sovereignty", "label": "Financial Sovereignty"},
+      {"@id": "urn:ngm:class:micropayments", "label": "Micropayments"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
+      {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - Censorship resistant payments are payment systems designed so that no single actor or coalition below a majority of validators can prevent a valid transaction from eventually being confirmed. This property emerges from the combination of [[Censorship Resistance]] at the protocol level — open participation in block production, pseudonymous addressing, and deterministic validity rules — with economic incentives that reward inclusion of all valid transactions. The [[Bitcoin Network]] pioneered this design; the [[Lightning Network]] extends it for high-frequency, low-value [[Micropayments]] with off-chain payment channels. The property is explicitly contrasted with traditional payment rails where intermediaries retain discretionary power to freeze, reverse, or block payments.
+
+- ### Relationships
+  - Censorship resistant payments depend on the [[Bitcoin Network]] for base-layer settlement and the [[Lightning Network]] and [[Payment Channel]] infrastructure for scalable retail payments. They express and enable [[Financial Sovereignty]] — the ability of individuals to transact without institutional permission — and, at a systemic level, [[Monetary Sovereignty]] for jurisdictions seeking alternatives to US dollar-dominated correspondent banking. These properties are also foundational to [[Decentralized Finance (DeFi)]] protocols, where smart contracts execute financial logic autonomously.
+
+- ### Content
+  - The motivation for censorship resistant payments predates Bitcoin: the cypherpunk movement of the 1990s sought digital cash that could not be traced or blocked by states, producing systems such as e-Cash (DigiCash), b-money, and Bit Gold. Satoshi Nakamoto's Bitcoin whitepaper (2008) solved the double-spend problem without a trusted intermediary, creating the first practical censorship-resistant payment network. The property became politically salient when Wikileaks was financially blockaded by Visa, Mastercard, and PayPal in 2010, driving a surge of Bitcoin donations — demonstrating the real-world utility of censorship-resistant rails.
+
+  - Censorship resistance is a spectrum, not a binary. Bitcoin achieves strong censorship resistance through its large, geographically distributed mining network and its rule that miners are economically incentivised to include any fee-paying transaction. However, mining pool concentration, OFAC-compliant mining (which excludes sanctioned addresses), and mempool filtering represent partial censorship vectors. Privacy coins such as Monero strengthen censorship resistance through cryptographic confidentiality (ring signatures, stealth addresses, Confidential Transactions), making it harder to identify which addresses to block. Decentralised exchanges and smart contract protocols on Ethereum inherit weaker censorship resistance than Bitcoin because a smaller validator set can more easily collude, and because OFAC-compliant validators were a significant majority on Ethereum after the Tornado Cash sanctions (2022).
+
+  - Use cases range from human rights applications — enabling dissidents, NGOs, and journalists in authoritarian regimes to receive donations — to commercial contexts such as online merchants in high-chargeback industries, remittance corridors with restrictive correspondent banking, and micropayments for content (enabled by the Lightning Network's sub-cent fee structure). The property is also relevant for machine-to-machine payments in IoT and AI agent economies, where autonomous agents require permissionless payment rails without requiring institutional accounts. Layer 2 solutions (Lightning Network, Ark protocol) extend censorship-resistant settlement to higher transaction throughputs suitable for consumer use.
+
+  - The regulatory posture toward censorship resistant payments intensified significantly between 2022 and 2025. The US Treasury's OFAC sanction of Tornado Cash smart contracts (August 2022) — the first sanction of code rather than a person or entity — created legal uncertainty about providing or developing censorship-resistant infrastructure. The EU's Markets in Crypto-Assets (MiCA) regulation and the Transfer of Funds Regulation (TFR) impose travel rule requirements that constrain pseudonymous transfers. Developers of privacy tools (Tornado Cash, Samourai Wallet, Phoenix Wallet) faced prosecution in multiple jurisdictions. Despite regulatory pressure, protocol-level censorship resistance remains intact on Bitcoin and Ethereum; the regulatory layer operates above the protocol at the on-ramp/off-ramp interfaces where KYC is enforced.
+

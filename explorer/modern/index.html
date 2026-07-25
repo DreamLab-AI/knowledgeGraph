@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="Narrative Goldmine — the readable tier of the DreamLab knowledge mesh. A mostly AI-generated synthetic corpus, built under human direction to exercise the VisionFlow toolchain, mapping the Fourth Industrial Revolution across six domains with OWL2 semantics, cryptographic provenance of generation, and an ontology explorer." />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://api.qrserver.com https://raw.githubusercontent.com; font-src 'self'; connect-src 'self' data: blob: https://raw.githubusercontent.com https://cdn.jsdelivr.net; worker-src 'self' blob:; base-uri 'self';" />
+    <title>Narrative Goldmine — the DreamLab knowledge mesh</title>
+    <script>
+      // GitHub Pages SPA redirect handler
+      // Restore the original path from 404.html redirect
+      (function() {
+        var redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          history.replaceState(null, '', redirect);
+        }
+      })();
+    </script>
+    <style>
+      /* Pre-hydration paint: house cream, not a dark flash. */
+      html, body { background-color: #f7f4ea; color: #2d2d2d; margin: 0; height: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

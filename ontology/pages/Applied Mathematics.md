@@ -1,0 +1,458 @@
+public:: true
+
+# Applied Mathematics
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f233b4c0d922e4e9dcba50bf635e31b558a587fbe20104f46023a236bfdeaeca",
+  "@type": "Page",
+  "vc:slug": "applied-mathematics",
+  "title": "Applied Mathematics",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {"@id": "urn:visionflow:linked:convex-optimisation", "vc:label": "Convex Optimisation"},
+    {"@id": "urn:visionflow:linked:numerical-methods", "vc:label": "Numerical Methods"},
+    {"@id": "urn:visionflow:linked:functional-analysis", "vc:label": "Functional Analysis"},
+    {"@id": "urn:visionflow:linked:owl-thing", "vc:label": "owl:Thing"},
+    {"@id": "urn:visionflow:linked:linear-algebra", "vc:label": "Linear Algebra"},
+    {"@id": "urn:visionflow:linked:calculus", "vc:label": "Calculus"},
+    {"@id": "urn:visionflow:linked:probability-theory", "vc:label": "Probability Theory"},
+    {"@id": "urn:visionflow:linked:differential-equations", "vc:label": "Differential Equations"},
+    {"@id": "urn:visionflow:linked:mathematical-optimisation", "vc:label": "Mathematical Optimisation"},
+    {"@id": "urn:visionflow:linked:mathematical-foundations", "vc:label": "Mathematical Foundations"},
+    {"@id": "urn:visionflow:linked:mathematical-science", "vc:label": "Mathematical Science"},
+    {"@id": "urn:visionflow:linked:numerical-integration", "vc:label": "Numerical Integration"},
+    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
+    {"@id": "urn:visionflow:linked:stochastic-processes", "vc:label": "Stochastic Processes"},
+    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
+    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
+    {"@id": "urn:visionflow:linked:applied-machine-learning", "vc:label": "Applied Machine Learning"},
+    {"@id": "urn:visionflow:linked:operations-research", "vc:label": "Operations Research"},
+    {"@id": "urn:visionflow:linked:information-theory", "vc:label": "Information Theory"},
+    {"@id": "urn:visionflow:linked:bayesian-optimisation", "vc:label": "Bayesian Optimisation"},
+    {"@id": "urn:visionflow:linked:bayesian-deep-learning", "vc:label": "Bayesian Deep Learning"},
+    {"@id": "urn:visionflow:linked:signal-processing", "vc:label": "Signal Processing"},
+    {"@id": "urn:visionflow:linked:graph-theory", "vc:label": "Graph Theory"},
+    {"@id": "urn:visionflow:linked:principal-component-analysis", "vc:label": "Principal Component Analysis"},
+    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
+    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
+    {"@id": "urn:visionflow:linked:regularisation", "vc:label": "Regularisation"},
+    {"@id": "urn:visionflow:linked:monte-carlo-methods", "vc:label": "Monte Carlo Methods"},
+    {"@id": "urn:visionflow:linked:control-theory", "vc:label": "Control Theory"},
+    {"@id": "urn:visionflow:linked:combinatorial-optimisation", "vc:label": "Combinatorial Optimisation"},
+    {"@id": "urn:visionflow:linked:game-theory", "vc:label": "Game Theory"},
+    {"@id": "urn:visionflow:linked:fourier-analysis", "vc:label": "Fourier Analysis"},
+    {"@id": "urn:visionflow:linked:simulation", "vc:label": "Simulation"},
+    {"@id": "urn:visionflow:linked:mathematical-logic", "vc:label": "Mathematical Logic"},
+    {"@id": "urn:visionflow:linked:mathematical-reasoning", "vc:label": "Mathematical Reasoning"},
+    {"@id": "urn:visionflow:linked:cryptography", "vc:label": "Cryptography"},
+    {"@id": "urn:visionflow:linked:optimisation-algorithm", "vc:label": "Optimisation Algorithm"},
+    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
+    {"@id": "urn:visionflow:linked:ai-research-area", "vc:label": "AI Research Area"},
+    {"@id": "urn:visionflow:linked:mathematical-hard-problems", "vc:label": "Mathematical Hard Problems"},
+    {"@id": "urn:visionflow:linked:tensor-decomposition", "vc:label": "Tensor Decomposition"},
+    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
+    {"@id": "urn:visionflow:linked:diffusion-models", "vc:label": "Diffusion Models"},
+    {"@id": "urn:visionflow:linked:scientific-computing", "vc:label": "Scientific Computing"},
+    {"@id": "urn:visionflow:linked:quantum-computation-paradigm", "vc:label": "Quantum Computation Paradigm"},
+    {"@id": "urn:visionflow:linked:epsrc", "vc:label": "EPSRC"}
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {"vc:key": "preferred-term", "vc:value": "Applied Mathematics"}
+  ],
+  "prov:wasAttributedTo": {"@id": "did:nostr:jjohare"},
+  "prov:generatedAtTime": {"@value": "2026-05-29T00:00:00Z", "@type": "xsd:dateTime"}
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:applied-mathematics",
+  "@type": "Class",
+  "label": "Applied Mathematics",
+  "definition": "Applied Mathematics is the systematic use of mathematical structures, methods, and reasoning to model, analyse, and solve problems arising in science, engineering, economics, computing, and industry. Distinct from pure mathematics by its orientation toward practical effectiveness, Applied Mathematics encompasses numerical analysis, mathematical modelling, optimisation, probability and statistics, differential equations, control theory, fluid dynamics, information theory, and scientific computing. It provides the formal substrate on which machine learning training dynamics, signal processing algorithms, control systems, financial derivatives pricing, and physical simulation all rest. The discipline demands both rigorous theoretical grounding — convergence proofs, stability analysis, error bounds — and pragmatic accommodation of real constraints such as floating-point arithmetic, computational cost, and measurement noise.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "qualityScore": 0.92,
+  "subClassOf": [
+    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"},
+    {"@id": "urn:ngm:class:mathematical-science", "label": "Mathematical Science"}
+  ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:convex-optimisation", "label": "Convex Optimisation"},
+      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Methods"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:operations-research", "label": "Operations Research"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
+      {"@id": "urn:ngm:class:calculus", "label": "Calculus"},
+      {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"},
+      {"@id": "urn:ngm:class:differential-equations", "label": "Differential Equations"},
+      {"@id": "urn:ngm:class:mathematical-optimisation", "label": "Mathematical Optimisation"},
+      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Methods"},
+      {"@id": "urn:ngm:class:functional-analysis", "label": "Functional Analysis"},
+      {"@id": "urn:ngm:class:stochastic-processes", "label": "Stochastic Processes"},
+      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"},
+      {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"},
+      {"@id": "urn:ngm:class:fourier-analysis", "label": "Fourier Analysis"},
+      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:mathematical-foundations", "label": "Mathematical Foundations"},
+      {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"},
+      {"@id": "urn:ngm:class:mathematical-hard-problems", "label": "Mathematical Hard Problems"},
+      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computation Paradigm"},
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:applied-machine-learning", "label": "Applied Machine Learning"},
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:bayesian-deep-learning", "label": "Bayesian Deep Learning"},
+      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ]
+  },
+  "quality": 0.92,
+  "provenance": {
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "inferenceRule": "EnrichmentTier1"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:applied-mathematics:b07a615e2a98",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f233b4c0d922e4e9dcba50bf635e31b558a587fbe20104f46023a236bfdeaeca"
+  },
+  "vc:resolutions": [
+    {"raw": "[[Convex Optimisation]]", "resolved": "urn:visionflow:linked:convex-optimisation", "kind": "ResolvedLink"},
+    {"raw": "[[Numerical Methods]]", "resolved": "urn:visionflow:linked:numerical-methods", "kind": "ResolvedLink"},
+    {"raw": "[[Functional Analysis]]", "resolved": "urn:visionflow:linked:functional-analysis", "kind": "ResolvedLink"},
+    {"raw": "[[owl:Thing]]", "resolved": "urn:visionflow:linked:owl-thing", "kind": "ResolvedLink"},
+    {"raw": "[[Linear Algebra]]", "resolved": "urn:visionflow:linked:linear-algebra", "kind": "ResolvedLink"},
+    {"raw": "[[Calculus]]", "resolved": "urn:visionflow:linked:calculus", "kind": "ResolvedLink"},
+    {"raw": "[[Probability Theory]]", "resolved": "urn:visionflow:linked:probability-theory", "kind": "StubLink"},
+    {"raw": "[[Differential Equations]]", "resolved": "urn:visionflow:linked:differential-equations", "kind": "StubLink"},
+    {"raw": "[[Mathematical Optimisation]]", "resolved": "urn:visionflow:linked:mathematical-optimisation", "kind": "ResolvedLink"},
+    {"raw": "[[Mathematical Foundations]]", "resolved": "urn:visionflow:linked:mathematical-foundations", "kind": "ResolvedLink"},
+    {"raw": "[[Mathematical Science]]", "resolved": "urn:visionflow:linked:mathematical-science", "kind": "ResolvedLink"},
+    {"raw": "[[Numerical Integration]]", "resolved": "urn:visionflow:linked:numerical-integration", "kind": "ResolvedLink"},
+    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink"},
+    {"raw": "[[Stochastic Processes]]", "resolved": "urn:visionflow:linked:stochastic-processes", "kind": "StubLink"},
+    {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:visionflow:linked:machine-learning-discipline", "kind": "StubLink"},
+    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Applied Machine Learning]]", "resolved": "urn:visionflow:linked:applied-machine-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Operations Research]]", "resolved": "urn:visionflow:linked:operations-research", "kind": "StubLink"},
+    {"raw": "[[Information Theory]]", "resolved": "urn:visionflow:linked:information-theory", "kind": "ResolvedLink"},
+    {"raw": "[[Bayesian Optimisation]]", "resolved": "urn:visionflow:linked:bayesian-optimisation", "kind": "ResolvedLink"},
+    {"raw": "[[Bayesian Deep Learning]]", "resolved": "urn:visionflow:linked:bayesian-deep-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Signal Processing]]", "resolved": "urn:visionflow:linked:signal-processing", "kind": "StubLink"},
+    {"raw": "[[Graph Theory]]", "resolved": "urn:visionflow:linked:graph-theory", "kind": "ResolvedLink"},
+    {"raw": "[[Principal Component Analysis]]", "resolved": "urn:visionflow:linked:principal-component-analysis", "kind": "ResolvedLink"},
+    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "StubLink"},
+    {"raw": "[[Backpropagation]]", "resolved": "urn:visionflow:linked:backpropagation", "kind": "ResolvedLink"},
+    {"raw": "[[Regularisation]]", "resolved": "urn:visionflow:linked:regularisation", "kind": "StubLink"},
+    {"raw": "[[Monte Carlo Methods]]", "resolved": "urn:visionflow:linked:monte-carlo-methods", "kind": "StubLink"},
+    {"raw": "[[Control Theory]]", "resolved": "urn:visionflow:linked:control-theory", "kind": "StubLink"},
+    {"raw": "[[Combinatorial Optimisation]]", "resolved": "urn:visionflow:linked:combinatorial-optimisation", "kind": "ResolvedLink"},
+    {"raw": "[[Game Theory]]", "resolved": "urn:visionflow:linked:game-theory", "kind": "StubLink"},
+    {"raw": "[[Fourier Analysis]]", "resolved": "urn:visionflow:linked:fourier-analysis", "kind": "StubLink"},
+    {"raw": "[[Simulation]]", "resolved": "urn:visionflow:linked:simulation", "kind": "StubLink"},
+    {"raw": "[[Mathematical Logic]]", "resolved": "urn:visionflow:linked:mathematical-logic", "kind": "ResolvedLink"},
+    {"raw": "[[Mathematical Reasoning]]", "resolved": "urn:visionflow:linked:mathematical-reasoning", "kind": "ResolvedLink"},
+    {"raw": "[[Cryptography]]", "resolved": "urn:visionflow:linked:cryptography", "kind": "StubLink"},
+    {"raw": "[[Optimisation Algorithm]]", "resolved": "urn:visionflow:linked:optimisation-algorithm", "kind": "ResolvedLink"},
+    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
+    {"raw": "[[Mathematical Hard Problems]]", "resolved": "urn:visionflow:linked:mathematical-hard-problems", "kind": "ResolvedLink"},
+    {"raw": "[[Tensor Decomposition]]", "resolved": "urn:visionflow:linked:tensor-decomposition", "kind": "StubLink"},
+    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "StubLink"},
+    {"raw": "[[Diffusion Models]]", "resolved": "urn:visionflow:linked:diffusion-models", "kind": "StubLink"},
+    {"raw": "[[Scientific Computing]]", "resolved": "urn:visionflow:linked:scientific-computing", "kind": "StubLink"},
+    {"raw": "[[Quantum Computation Paradigm]]", "resolved": "urn:visionflow:linked:quantum-computation-paradigm", "kind": "ResolvedLink"},
+    {"raw": "[[EPSRC]]", "resolved": "urn:visionflow:linked:epsrc", "kind": "StubLink"}
+  ],
+  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
+  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
+}
+```
+
+
+- ### Definition
+  - Applied Mathematics is the systematic use of mathematical structures, methods, and reasoning to model, analyse, and solve problems arising in science, engineering, economics, computing, and industry. It is a subdiscipline of [[Mathematical Science]], closely related to [[Mathematical Foundations]], that encompasses [[Numerical Methods]], [[Mathematical Optimisation]], [[Probability Theory]], [[Differential Equations]], [[Functional Analysis]], [[Stochastic Processes]], [[Control Theory]], and [[Information Theory]], among other subfields. Distinct from pure mathematics by its orientation toward practical effectiveness rather than intrinsic elegance or axiomatic completeness, Applied Mathematics demands both rigorous theoretical grounding — convergence proofs, stability analysis, error bounds — and pragmatic accommodation of real constraints such as floating-point arithmetic, computational complexity, and measurement noise. It provides the formal substrate on which [[Deep Learning]] training dynamics (via multivariate [[Calculus]] and the chain rule underpinning [[Backpropagation]]), large-scale [[Optimisation Algorithm]]s including [[Gradient Descent]] and [[Convex Optimisation]], dimensionality reduction via [[Principal Component Analysis]] and [[Tensor Decomposition]], Bayesian inference and [[Bayesian Deep Learning]], [[Signal Processing]] pipelines, [[Monte Carlo Methods]] for integration and simulation, [[Reinforcement Learning]] value estimation, and [[Diffusion Models]] for generative modelling all depend. Applied Mathematics bridges [[Mathematical Logic]] and [[Mathematical Reasoning]] to [[Applied Machine Learning]], [[Cryptography]], [[Scientific Computing]], [[Simulation]], [[Operations Research]], [[Graph Theory]], and ultimately [[Quantum Computation Paradigm]] extensions of classical probability into complex Hilbert spaces. As of 2026, the discipline is experiencing renewed vitality driven by its indispensability to large-scale AI systems, computational science, and post-quantum cryptography standardisation, with UK institutions including Imperial College London, the University of Edinburgh, UCL, Cambridge, and Manchester's [[EPSRC]]-funded centres at the forefront of research.
+
+- ### Semantic Classification
+  - owl-class:: mathematics:AppliedMathematics
+  - owl-role:: Class | ResearchDomain | FoundationalSubstrate
+  - owl-inferred:: mathematics:MathematicalScience, ai:AIResearchArea, mathematics:ComputationalMathematics
+  - belongs-to-domain:: [[Mathematical Science]]
+  - implemented-in-layer:: [[AlgorithmLayer]]
+
+- ### Relationships
+  - is-subclass-of:: [[owl:Thing]], [[Mathematical Science]], [[AI Research Area]]
+  - has-part:: [[Linear Algebra]], [[Calculus]], [[Probability Theory]], [[Differential Equations]], [[Mathematical Optimisation]], [[Numerical Methods]], [[Functional Analysis]], [[Stochastic Processes]], [[Information Theory]], [[Graph Theory]], [[Fourier Analysis]], [[Control Theory]], [[Numerical Integration]]
+  - requires:: [[Mathematical Foundations]], [[Mathematical Logic]], [[Mathematical Reasoning]]
+  - enables:: [[Convex Optimisation]], [[Numerical Methods]], [[Machine Learning Discipline]], [[Deep Learning]], [[Signal Processing]], [[Cryptography]], [[Operations Research]], [[Combinatorial Optimisation]], [[Scientific Computing]]
+  - implements:: [[Optimisation Algorithm]], [[Monte Carlo Methods]], [[Simulation]], [[Principal Component Analysis]]
+  - depends-on:: [[Mathematical Science]], [[Mathematical Hard Problems]]
+  - supports:: [[Applied Machine Learning]], [[Backpropagation]], [[Gradient Descent]], [[Bayesian Deep Learning]], [[Diffusion Models]], [[Reinforcement Learning]], [[Bayesian Optimisation]], [[Tensor Decomposition]]
+  - uses:: [[Fourier Analysis]], [[Graph Theory]], [[Game Theory]], [[Information Theory]]
+  - contrasts-with:: [[Mathematical Logic]], [[Mathematical Hard Problems]]
+  - related-to:: [[Mathematical Foundations]], [[Mathematical Reasoning]], [[Quantum Computation Paradigm]], [[Simulation]], [[Neural Network]], [[Loss Function]], [[Regularisation]]
+  - bridges-to:: [[Functional Analysis]]
+
+- ### Content
+  ## Compositional Relationships (Components)
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:hasPart mathematics:LinearAlgebra))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:hasPart mathematics:Calculus))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:hasPart mathematics:ProbabilityTheory))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:hasPart mathematics:DifferentialEquations))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:hasPart mathematics:MathematicalOptimisation))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:hasPart mathematics:NumericalMethods))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:hasPart mathematics:FunctionalAnalysis))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:hasPart mathematics:StochasticProcesses))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:hasPart mathematics:InformationTheory))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:hasPart mathematics:ControlTheory))
+  ## Dependency Relationships
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:requires mathematics:MathematicalFoundations))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:requires mathematics:MathematicalLogic))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:dependsOn mathematics:MathematicalScience))
+  ## Capability Relationships
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:enables mathematics:ConvexOptimisation))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:enables mathematics:NumericalMethods))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:enables mathematics:MachineLearningDiscipline))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:enables mathematics:DeepLearning))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:enables mathematics:SignalProcessing))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:enables mathematics:Cryptography))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:enables mathematics:OperationsResearch))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:supports mathematics:AppliedMachineLearning))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:supports mathematics:Backpropagation))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:supports mathematics:GradientDescent))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:supports mathematics:DiffusionModels))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:supports mathematics:ReinforcementLearning))
+  ## Implementation Relationships
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:implements mathematics:OptimisationAlgorithm))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:implements mathematics:MonteCarloMethods))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:implements mathematics:Simulation))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:implements mathematics:PrincipalComponentAnalysis))
+  ## Reduction Relationships
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:reducesTo mathematics:MathematicalScience))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:hasPart mathematics:GraphTheory))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:hasPart mathematics:FourierAnalysis))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:enables mathematics:CombinatorialOptimisation))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:enables mathematics:ScientificComputing))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:supports mathematics:BayesianDeepLearning))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:supports mathematics:BayesianOptimisation))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:implements mathematics:NumericalIntegration))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:uses mathematics:GameTheory))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:uses mathematics:InformationTheory))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:relatedTo mathematics:QuantumComputationParadigm))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:enables mathematics:TensorDecomposition))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:supports mathematics:MonteCarloMethods))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:implements mathematics:GradientDescent))
+      SubClassOf(mathematics:AppliedMathematics
+        ObjectSomeValuesFrom(mathematics:enables mathematics:ProbabilityTheory))
+
+  ## About
+
+  Applied Mathematics has a history stretching back to Archimedes (hydrostatics, the principle of the lever, and approximations to pi), Galileo (projectile motion and kinematics), and Newton (infinitesimal calculus, gravitational mechanics, optics), but its modern institutional identity as a discipline distinct from both pure mathematics and experimental science crystallised in the 20th century. The Applied Mathematics department structure emerged at institutions such as Cambridge (where the Mathematical Tripos long integrated applied and pure traditions, producing figures from Stokes and Maxwell to Dirac and Hawking), Caltech, MIT, New York University's Courant Institute, and Brown University's Division of Applied Mathematics. The discipline was profoundly shaped by the demands of two world wars — ballistics required numerical trajectory integration, radar [[Signal Processing]] required Fourier harmonic analysis, and the codebreaking efforts at Bletchley Park required combinatorics, group theory, and statistical analysis of cipher texts — and later by the space race (orbital mechanics, re-entry heat transfer, rocket propulsion), nuclear simulation (Monte Carlo methods for neutron transport, developed at Los Alamos by Ulam, Metropolis, and von Neumann), and the rise of digital computing. The latter proved transformative: as continuous mathematical models met discrete computational representation, the subdiscipline of [[Numerical Methods]] grew to encompass the study of floating-point error propagation (Wilkinson's backward error analysis), iterative solver convergence (conjugate gradient method, Lanczos algorithm), and the computational complexity of matrix factorisation (Strassen's 1969 O(n^2.81) matrix multiplication), crucially enabling large-scale scientific [[Simulation]] that would otherwise be intractable analytically.
+
+  The distinction between "pure" and "applied" mathematics has always been contested and partially artificial. G.H. Hardy's famous assertion in *A Mathematician's Apology* (1940) that pure mathematics had no application was decisively refuted by mid-century: number theory (Hardy's beloved field) became the foundation of public-key cryptography; topology informed knot theory in DNA supercoiling; combinatorics underpinned computer science complexity theory; and abstract algebra produced error-correcting codes. The more precise distinction is one of motivation: pure mathematics is driven primarily by aesthetic and logical criteria internal to mathematics itself, while Applied Mathematics is driven by the goal of producing effective tools for problems originating outside the discipline. In practice, the most fruitful Applied Mathematics combines deep theoretical insight with computational pragmatism — a tradition exemplified by Claude Shannon (information theory via Boolean algebra and probability), Norbert Wiener (cybernetics and stochastic processes for feedback control), John von Neumann (game theory, computing architecture, quantum mechanics), and more recently Yann LeCun's use of signal processing convolution theory in [[Convolutional Neural Network]]s and Yoshua Bengio's application of [[Probability Theory]] and variational inference to generative modelling.
+
+  The relationship between Applied Mathematics and computational science is now so close that the two are often co-located institutionally. [[Differential Geometry]] — the mathematics of curved manifolds, connections, curvature, and geodesics — is increasingly central to deep learning: the loss landscape of a [[Neural Network]] can be analysed as a Riemannian manifold (natural gradient descent moves along geodesics in the Fisher information metric); equivariant neural networks are built from group-theoretic representations of symmetry groups; and [[Topology]] provides persistent homology for characterising data shape. The emergence of "scientific computing" as a third paradigm of science — alongside experiment and theory — was articulated by Metropolis and Ulam in the 1940s and has since matured into a major research infrastructure. High-performance computing (HPC) clusters running numerical PDE solvers for climate modelling (ECMWF, 2024: 9.5 petaflops), molecular dynamics simulations (Anton 3 hardware at D.E. Shaw Research), and lattice quantum chromodynamics (requiring exascale computing) all represent Applied Mathematics at scale.
+
+  The core intellectual structure of Applied Mathematics rests on a set of subfields that interact richly. [[Linear Algebra]] provides the language of vectors, matrices, and tensors that permeates all computational mathematics; singular value decomposition (SVD), LU factorisation, and eigendecomposition are not merely abstract tools but the computational primitives of dimensionality reduction via [[Principal Component Analysis]], latent-factor models in recommendation systems, and stability analysis of dynamical systems. [[Calculus]] and its extension into real analysis and [[Functional Analysis]] ground the theory of differentiation and integration that underlies [[Gradient Descent]], [[Backpropagation]], and variational methods for physics. [[Differential Equations]] — ordinary (ODEs) and partial (PDEs) — model continuous-time phenomena from fluid dynamics and heat transfer to option pricing (Black-Scholes) and neural population dynamics; [[Numerical Methods]] for ODEs and PDEs (finite-element, finite-difference, spectral methods) constitute a major subdiscipline. [[Probability Theory]] and [[Stochastic Processes]] provide the mathematical language for uncertainty, random phenomena, and Bayesian inference: Brownian motion and Itô calculus underpin quantitative finance and [[Diffusion Models]] for generative image synthesis; Markov chains form the foundation of [[Monte Carlo Methods]] and [[Reinforcement Learning]] value estimation. [[Mathematical Optimisation]] — encompassing [[Convex Optimisation]], [[Combinatorial Optimisation]], and non-convex landscape analysis — is the mathematical backbone of all machine learning training, resource allocation, and engineering design. [[Information Theory]] (Shannon, 1948) provides entropy, mutual information, and channel capacity, which appear in compression, communication system design, and the theory of generalisation in [[Deep Learning]]. [[Control Theory]] — Lyapunov stability, LQR, and model-predictive control — overlaps with [[Reinforcement Learning]] in robotics and autonomous systems.
+
+  The connection between Applied Mathematics and modern AI is exceptionally tight, spanning every layer of the ML stack. Applied ML depends on [[Variational Inference]] (an [[Mathematical Optimisation]] approach to approximating intractable posterior distributions by optimising the ELBO), [[Markov Chain Monte Carlo]] methods (for exact posterior sampling in Bayesian models), and [[Manifold Learning]] (exploiting the intrinsic low-dimensional structure of high-dimensional data via techniques such as t-SNE, UMAP, and Isomap). [[Number Theory]] and [[Topology]] provide the mathematical substrate for cryptographic security proofs and topological data analysis respectively. Training a [[Neural Network]] via stochastic [[Stochastic Gradient Descent]] requires multivariate [[Calculus]] (chain rule for [[Backpropagation]] — the identity (f ∘ g)'(x) = f'(g(x)) · g'(x) applied recursively through layers), [[Linear Algebra]] (matrix products in forward pass — O(n^2) or O(n^3) operations per layer; gradient accumulation through tensor contraction), and [[Probability Theory]] (mini-batch sampling as a stochastic approximation to the full gradient, dropout as Bernoulli noise regularisation, Bayesian weight uncertainty). The design of [[Loss Function]]s draws on [[Information Theory]] (cross-entropy loss — H(p, q) = -Σ p log q — is a KL-divergence minimisation: KL(p||q) = H(p,q) - H(p)) and statistical estimation theory (maximum likelihood, MAP estimation). [[Regularisation]] via weight decay (L2: ||w||^2_2) corresponds to placing a Gaussian prior on weights in the Bayesian perspective; L1 regularisation (||w||_1) induces sparsity via the Laplace prior, as shown by Tibshirani's LASSO analysis. [[Functional Analysis]] provides the reproducing kernel Hilbert space (RKHS) framework — functions f such that |f(x) - f(y)| ≤ L ||x-y|| belong to specific RKHS classes — that unifies support vector machines (SVM margin maximisation in RKHS), Gaussian processes (stochastic processes with RKHS-valued sample paths), and neural tangent kernels (the RKHS limit of infinite-width deep networks). [[Convex Optimisation]] theory guarantees that every local minimum is a global minimum for convex [[Loss Function]]s, and provides the Lagrangian duality theory underlying SVM margin maximisation (the KKT conditions express the dual problem whose solution gives the support vectors). The [[Stochastic Processes]] framework — specifically stochastic differential equations (SDEs) — has emerged as the mathematical language of [[Diffusion Models]], where the forward noising process is an Itô SDE: dX_t = f(X_t, t)dt + g(t)dW_t, and the reverse denoising process is estimated via score matching (Hyvärinen 2005), a technique from non-parametric statistics that estimates the gradient of the log-density ∇_x log p(x) without computing the normalising constant Z.
+
+  The mathematical underpinnings of modern [[Applied Machine Learning]] extend to several additional domains. Optimal transport theory — measuring the "cost" of transforming one probability distribution into another by transporting probability mass — provides the Wasserstein distance W_p(μ, ν) that appears in Wasserstein GANs, normalising flows with transport objectives, and flow matching generative models. The geometry of high-dimensional spaces is captured by concentration-of-measure phenomena (Johnson-Lindenstrauss lemma, sub-Gaussian tail bounds) that explain why random projections preserve distances and why high-dimensional nearest-neighbour search becomes tractable via locality-sensitive hashing. Spectral graph theory — eigendecomposition of the graph Laplacian L = D - A — provides the mathematical foundation for graph convolutional networks (GCNs), spectral clustering, and graph signal processing. Tensor decomposition (Tucker, CP/PARAFAC, tensor-train formats) extends matrix factorisation to multi-dimensional arrays, providing compression and analysis tools for neural network weight matrices and multi-modal data.
+
+  ## Components / Architecture
+
+  The major subfields of Applied Mathematics and their computational roles are:
+
+  - **[[Linear Algebra]]**: Vector spaces, matrices, eigendecomposition, singular value decomposition (SVD), QR factorisation, sparse matrix representations. Provides the computational primitives for neural network forward passes, [[Principal Component Analysis]], and spectral graph methods via [[Graph Theory]].
+  - **[[Calculus]] and Real Analysis**: Limits, derivatives, integrals, measure theory, Lebesgue integration. Grounds [[Gradient Descent]], the chain rule underlying [[Backpropagation]], Lipschitz continuity analysis for optimiser convergence, and regularity theory for PDEs.
+  - **[[Probability Theory]] and Statistics**: Probability spaces, random variables, distributions (Gaussian, Bernoulli, Dirichlet, von Mises-Fisher), expectation, variance, central limit theorem, hypothesis testing, Bayesian inference. Pervasive throughout [[Applied Machine Learning]], [[Bayesian Deep Learning]], and [[Monte Carlo Methods]].
+  - **[[Differential Equations]]**: ODEs (Runge-Kutta solvers, stability), PDEs (finite-element, finite-difference, spectral methods), stochastic differential equations (Itô, Stratonovich formulations). Applied in [[Simulation]], [[Control Theory]], and [[Diffusion Models]].
+  - **[[Mathematical Optimisation]]**: [[Convex Optimisation]] (interior-point, subgradient, proximal methods), non-convex landscape theory (saddle points, loss surface geometry), [[Combinatorial Optimisation]] (branch-and-bound, dynamic programming), multi-objective optimisation.
+  - **[[Numerical Methods]]**: Root-finding (Newton-Raphson, bisection), interpolation (polynomial, spline), [[Numerical Integration]] (Gaussian quadrature, Monte Carlo integration), linear system solvers (conjugate gradient, GMRES), error analysis and stability (condition numbers, backward error).
+  - **[[Functional Analysis]]**: Banach and Hilbert spaces, operator theory, spectral theory, reproducing kernel Hilbert spaces (RKHS). Provides the mathematical foundation for kernel methods, Gaussian processes, and variational inference.
+  - **[[Stochastic Processes]]**: Markov chains, Brownian motion, Itô calculus, martingales, stochastic differential equations, Fokker-Planck equations. Mathematical foundation for [[Diffusion Models]], [[Monte Carlo Methods]], and financial mathematics.
+  - **[[Information Theory]]**: Shannon entropy, Kullback-Leibler divergence, mutual information, Fisher information. Appears in [[Loss Function]] design (cross-entropy), variational inference (ELBO), and generalisation theory for [[Deep Learning]].
+  - **[[Control Theory]]**: Lyapunov stability, LQR control, Pontryagin maximum principle, model-predictive control (MPC). Connects to [[Reinforcement Learning]] through dynamic programming and policy optimisation.
+  - **[[Fourier Analysis]]**: Discrete Fourier transform (DFT), fast Fourier transform (FFT), wavelet transforms, spectral analysis. Underpins [[Signal Processing]], convolutional operations in neural networks, and the analysis of PDE solutions.
+  - **[[Graph Theory]]**: Graph Laplacians, spectral graph theory, network flow. Applied in [[Graph Theory]]-based neural architectures (graph neural networks), combinatorial [[Optimisation Algorithm]]s, and network analysis.
+
+  ## Use Cases / Major Families
+
+  Applied Mathematics underpins the following major families of computational and scientific practice, providing the rigorous substrate on which each discipline's algorithms, proofs, and software implementations rest:
+
+  - **Scientific machine learning (SciML)**: Physics-informed neural networks (PINNs) embed PDE residuals as additional [[Loss Function]] terms — L_PINN = L_data + λ L_PDE where L_PDE = ||N[u](x) - f(x)||^2 over collocation points — allowing [[Neural Network]]s to respect known physical laws while fitting sparse observational data. This approach addresses the fundamental ill-posedness of inverse problems in physics (recovering material properties from incomplete measurements) by injecting mathematical structure as a regulariser. NeurIPS 2024 saw the release of PINNacle, standardising PINN evaluation across 15 canonical PDEs including Burgers', Navier-Stokes, and Allen-Cahn equations. Neural operators (DeepONet based on the universal approximation theorem of operators; Fourier Neural Operator using spectral convolution in frequency space via [[Fourier Analysis]]) learn mappings between function spaces — from initial conditions to solution trajectories — rather than finite-dimensional vectors, enabling fast surrogate models for expensive simulations. A 2025 NeurIPS result demonstrated one-shot operator learning from single solution trajectories using meta-learning, achieving 5-10% relative error with one training example vs. hundreds previously required.
+  - **Quantitative finance and risk**: Black-Scholes option pricing derives from the fundamental PDE ∂V/∂t + (1/2)σ^2 S^2 ∂^2V/∂S^2 + rS ∂V/∂S - rV = 0 (obtained via Itô calculus and the no-arbitrage condition), analytic solution of which prices European options. Stochastic volatility models (Heston 1993: dσ^2 = κ(θ - σ^2)dt + ξσ dW_σ with correlation ρ to the asset SDE) extend Black-Scholes to the volatility smile. Portfolio optimisation applies [[Convex Optimisation]] to the mean-variance frontier: min w^T Σ w s.t. w^T μ ≥ r_target, 1^T w = 1. Credit risk modelling uses copula theory (Gaussian copula for CDO pricing — a contribution that famously misrepresented tail dependence during the 2008 crisis). High-frequency market microstructure analysis uses [[Stochastic Processes]] models of order book dynamics (Hawkes processes, Kyle model, Glosten-Milgrom model).
+  - **Engineering design and simulation**: Finite-element analysis (FEA) of structural mechanics discretises Cauchy momentum equations over a mesh of elements, assembling global stiffness matrices K ∈ R^{n×n} and solving Ku = f for displacement vector u. Computational fluid dynamics (CFD) discretises the Navier-Stokes PDEs using finite-volume (OpenFOAM) or spectral methods (SPECFEM) over grids with millions to billions of cells. Electromagnetic field simulation solves Maxwell's equations (FDTD or finite-element methods, as in Ansys HFSS). All depend critically on [[Numerical Methods]] for sparse [[Linear Algebra]] (GMRES, AMG preconditioners), time-stepping (Runge-Kutta, Crank-Nicolson), and adaptive mesh refinement.
+  - **Cryptography and information security**: RSA encryption rests on the hardness of integer factorisation (if n = p·q with p, q large primes, finding p, q from n is computationally infeasible with best-known algorithms); elliptic-curve cryptography (ECC) rests on the discrete logarithm problem on elliptic curve groups over finite fields. Post-quantum schemes (CRYSTALS-Kyber, standardised August 2024 as FIPS 203) solve the module learning-with-errors (MLWE) problem: given A, b = As + e where s, e are small, find s. The hardness of MLWE reduces to hard [[Mathematical Hard Problems]] in lattice theory (approximating the shortest vector in a lattice). Zero-knowledge proofs (zk-SNARKs) use polynomial commitment schemes and algebraic [[Simulation]] of circuits for privacy-preserving verification.
+  - **Operations research and logistics**: [[Linear Programming]] (LP: min c^T x s.t. Ax ≤ b, x ≥ 0) solved by the simplex method (Dantzig 1947) or interior-point methods (Karmarkar 1984, O(n^{3.5}) worst-case) underlies production scheduling, transportation routing, and resource allocation. Integer linear programming (ILP) extends LP with integer constraints, solved by branch-and-bound with LP relaxation bounds; the travelling salesman problem (TSP) is a canonical NP-hard ILP. Network flow algorithms (max-flow min-cut, Ford-Fulkerson, Dinic's algorithm O(V^2E)) solve assignment, matching, and routing problems. Vehicle routing problems (VRP) generalise TSP to multiple vehicles; modern approaches combine exact branch-and-cut with machine learning heuristics ([[Deep Learning]] models trained to predict good branching decisions in branch-and-bound trees).
+  - **Signal and image processing**: The discrete Fourier transform (DFT) decomposes signals into frequency components; the FFT (Cooley-Tukey, 1965) computes the DFT in O(n log n) vs. O(n^2), enabling real-time audio processing and image analysis. Wavelet transforms (Daubechies, Haar) provide time-frequency localisation, underpinning JPEG 2000 image compression and ECG denoising. Medical imaging reconstruction — MRI reconstruction from k-space (Fourier space) measurements, CT reconstruction from sinogram projections (filtered back-projection: Radon transform inversion) — are fundamentally inverse problems in [[Functional Analysis]], where regularisation (compressed sensing with L1 sparsity constraints) enables high-quality reconstruction from sub-Nyquist measurements.
+  - **Generative AI mathematics**: Score-based [[Diffusion Models]] (DDPM, Ho et al. 2020; Score SDE, Song et al. 2021) frame image generation as a learned reverse Itô SDE: dX = [f(X,t) - g(t)^2 ∇_X log p_t(X)]dt + g(t)dW̄, where the score function ∇_X log p_t(X) is learned by a denoising [[Neural Network]] via score matching. Normalising flows use the change-of-variables formula — log p(x) = log p(z) + log|det(∂z/∂x)| — enabling exact log-likelihood computation, requiring [[Calculus]] and [[Linear Algebra]] (Jacobian determinant computation via LU decomposition or architectural constraints like coupling layers). Variational autoencoders (VAEs) minimise the ELBO (evidence lower bound): E_{q(z|x)}[log p(x|z)] - KL(q(z|x)||p(z)), requiring [[Probability Theory]] and variational [[Functional Analysis]] for derivation.
+  - **Climate and environmental modelling**: Global climate models (GCMs) solve coupled PDEs for atmosphere, ocean, sea-ice, and land-surface on spherical-coordinate grids with 50-100 km horizontal resolution and 90+ vertical levels. The ECMWF Integrated Forecasting System (IFS) uses spectral methods with T1279 (~16km) resolution, requiring [[Numerical Methods]] at petaflop scale. ML-accelerated climate prediction (GraphCast, Google DeepMind 2023; FourCastNet, NVIDIA 2022; Pangu-Weather, Huawei 2023) achieves 10-day global forecast skill matching IFS at fraction of compute cost, using [[Graph Theory]]-based message-passing or [[Fourier Analysis]]-based spectral architectures.
+
+  ## Academic Context
+
+  Applied Mathematics as a formal discipline traces its modern foundations through a set of foundational 20th century contributions that collectively defined computational mathematical science. John von Neumann's work spanned quantum mechanics (Hilbert-space formulation, von Neumann algebras), game theory (minimax theorem, equilibrium in mixed strategies), numerical stability of matrix computations (von Neumann stability analysis for finite-difference schemes), and computer architecture (the stored-program von Neumann machine). Norbert Wiener developed cybernetics — the science of feedback and control in biological and mechanical systems — grounded in [[Stochastic Processes]], statistical prediction theory, and communication engineering, presaging modern [[Control Theory]] and [[Reinforcement Learning]]. Claude Shannon's 1948 paper in the Bell System Technical Journal created [[Information Theory]] as a mathematical discipline, providing entropy H(X) = -Σ p(x) log p(x), channel capacity C = max_{p(x)} I(X;Y), and the fundamental limits of data compression and reliable communication. The field's axiomatic sharpening in the mid-20th century owes much to the Bourbaki tradition in France (promoting structural, categorical approaches to all mathematics), even as British mathematics maintained a strong applied tradition at Cambridge's DAMTP (Department of Applied Mathematics and Theoretical Physics), producing figures from James Lighthill (aeroacoustics) to Stephen Hawking and Roger Penrose (mathematical physics) to the current generation of data-driven applied mathematicians. The SIAM (Society for Industrial and Applied Mathematics, founded 1952) became the primary professional organisation, publishing journals spanning numerical analysis, scientific computing, optimisation, and increasingly machine learning.
+
+  The conference and publication landscape reflects Applied Mathematics' dual orientation toward rigorous theory and practical computation. The SIAM Annual Meeting, SIAM Conference on Computational Science and Engineering (CSE), and International Congress on Industrial and Applied Mathematics (ICIAM) are the primary venues. Journals include SIAM Journal on Numerical Analysis (SJNA), SIAM Journal on Scientific Computing (SISC), Mathematics of Computation (AMS), Numerische Mathematik (Springer), and the more recent Foundations of Computational Mathematics. The ACM-SIAM Symposium on Discrete Algorithms (SODA) covers the algorithmic foundations of combinatorial mathematics.
+
+  In the machine learning context, key mathematical contributions include the Vapnik-Chervonenkis (VC) theory of uniform convergence (Vapnik & Chervonenkis 1971), which provides combinatorial bounds on the generalisation gap between empirical and expected risk as a function of the VC dimension of the hypothesis class; the kernel trick (Aizerman et al. 1964; re-popularised by Boser, Guyon & Vapnik 1992 for SVMs), enabling implicit mapping to high-dimensional RKHS without explicit feature computation; the Nyström approximation (Williams & Seeger 2001) for large kernel matrices (approximating K ∈ R^{n×n} by a rank-m matrix at O(nm^2) cost); and the neural tangent kernel (NTK) theory (Jacot, Gabriel & Hongler 2018) unifying deep [[Neural Network]] training dynamics with kernel methods in the infinite-width limit — showing that gradient descent on an infinite-width network is equivalent to kernel regression with a specific kernel determined by the architecture. The SDE interpretation of [[Diffusion Models]] (Song et al. 2021, ICLR Best Paper) unified DDPM and score-matching approaches under a single mathematical framework and enabled the derivation of probability flow ODEs for deterministic sampling. Optimal transport theory (Villani 2003, 2009) provides the Wasserstein distance W_p(μ, ν) = (inf_{γ ∈ Γ(μ,ν)} ∫ ||x-y||^p dγ)^{1/p}, grounding Wasserstein GANs, flow matching generative models, and distributional [[Reinforcement Learning]] (quantile networks, IQN). These represent recent high-impact bridges between classical Applied Mathematics and modern [[Deep Learning]].
+
+  The Alan Turing Institute (ATI), the UK's national institute for data science and AI (co-founded by Cambridge, Edinburgh, Oxford, UCL, and Warwick), is the primary national locus for cross-institutional Applied Mathematics research for AI. Its programmes in statistical learning theory, numerical methods for ML, and probabilistic modelling bridge university groups and industry partners. EPSRC maintains Applied Mathematics as a core research priority through its Mathematical Analysis and Numerical Analysis research areas, funding approximately £45M annually across UK institutions in 2024-2025 under these headings. Edinburgh's EPSRC Centre for Doctoral Training in Mathematical Modelling, Analysis and Computation (MAC-MIGS, £6.1M, 2019-2028) trains 50+ PhD students at the intersection of mathematical modelling, numerical analysis, and scientific computing for AI applications. Desmond Higham's ERC Advanced Grant "Numerical Analysis for Stable AI" (2023-2028, University of Edinburgh) specifically addresses the numerical stability of ML training dynamics, investigating how floating-point errors propagate through stochastic gradient descent and whether numerical integrators of ML training SDEs exhibit the correct qualitative behaviour of the continuous-time limit. The UKRI Mathematical Sciences Programme, launched 2022 with £300M over five years, identifies AI and data science as a cross-cutting priority theme for mathematics funding.
+
+  ## Current Landscape (2026)
+
+  Applied Mathematics in 2026 is characterised by the deepest interpenetration with AI research in the discipline's history. The boundaries between Applied Mathematics, computer science, and statistical machine learning have become substantially blurred, with joint faculty appointments, co-authored papers, and shared methodological toolkits the norm rather than the exception at leading research universities. Several defining developments shape the current landscape:
+
+  **Physics-informed neural networks and neural operators.** PINNs have matured from research curiosities to engineering software tools, with NVIDIA's PhysicsNeMo framework (2024) providing GPU-accelerated PINN training at industrial scale, and Ansys integrating neural surrogate models into its simulation product suite for structural and fluid applications. Neural operators (Fourier Neural Operator, DeepONet, Geo-FNO for complex geometries, MeshGraphNet from DeepMind) enable fast surrogate [[Simulation]], replacing hours of CFD computation with millisecond [[Neural Network]] inference once the operator is trained on a family of PDE instances. NeurIPS 2024's PINNacle benchmark standardised evaluation across 15 canonical PDE families with 20+ method variants, revealing significant variation in PINN performance across problem types and motivating hybrid physics-ML approaches that combine analytical preconditioning with neural residual correction. The 2025 Mamba Neural Operator applied selective state-space models (SSMs) to PDEs with adaptive state matrices, achieving long-range spatiotemporal dependency capture at substantially lower computational cost than transformer-based alternatives. PAR-DeepONet with physical adaptive refinement (2025) dynamically adjusts collocation sampling based on PDE residual magnitudes, achieving up to 71.3% accuracy improvements on benchmark problems.
+
+  **Randomised numerical linear algebra.** Sketching algorithms — random projections that reduce problem dimensionality from n to k ≪ n before applying exact solvers — have become practical tools for large-scale [[Linear Algebra]] in ML, finding applications in [[Stochastic Gradient Descent]] preconditioning, kernel approximation, and randomised SVD for large-scale [[Principal Component Analysis]]. The Johnson-Lindenstrauss lemma guarantees that random projections to k = O(ε^{-2} log n) dimensions approximately preserve pairwise distances with high probability; this enables approximate least-squares solvers, kernel approximation (Nyström, random Fourier features), and sketch-and-solve approaches for overdetermined linear systems. Recent SODA 2025 results on multi-level sketched preconditioning achieve near-optimal complexity for symmetric positive definite linear system solving, with direct applications to large-scale kernel methods and second-order optimisation (K-FAC, Gauss-Newton). These approaches are being integrated into PyTorch and JAX numerical backends for production ML training.
+
+  **Optimal transport and Wasserstein geometry.** Wasserstein distances and optimal transport maps are now standard tools in generative modelling (flow matching, Wasserstein gradient flows, rectified flows), domain adaptation (Wasserstein distance as a discrepancy measure between source and target distributions), and computational biology (single-cell RNA sequencing trajectory inference via Waddington optimal transport). The Sinkhorn algorithm (Cuturi 2013) for entropic regularised optimal transport, with O(n^2 / ε^2) complexity and highly parallel GPU implementation, enables practical computation at scales of hundreds of thousands of samples. Flow matching (Lipman et al. 2022; Albergo & Vanden-Eijnden 2022) reformulates generative modelling as an ODE trajectory-fitting problem on the Wasserstein manifold, providing a deterministic alternative to SDE-based [[Diffusion Models]] with faster sampling (fewer function evaluations at inference time).
+
+  **Stochastic differential equations and generative modelling.** The SDE formulation of [[Diffusion Models]] (Song et al. 2021, ICLR 2021 Best Paper) unified the DDPM and NCSN score-matching approaches under a single mathematical SDE/ODE framework, enabling the derivation of probability flow ODEs (which yield deterministic sampling, enabling exact log-likelihood computation) and consistency models (single-step distillation of diffusion trajectories into direct sample generation). Fully Bayesian Differential Gaussian Processes via SDEs (2024) extend Gaussian process models with SDEs as latent dynamical priors, enabling learning of time-varying kernel hyperparameters without fixing a prior covariance function. Active research on SDE numerical integration methods (higher-order Itô-Taylor methods, variance-reduction techniques for score-based sampling) is driven by the commercial importance of fast, high-quality [[Diffusion Models]] inference.
+
+  **Post-quantum cryptography deployment.** The NIST post-quantum standards (CRYSTALS-Kyber for key encapsulation as FIPS 203, CRYSTALS-Dilithium for digital signatures as FIPS 204, SPHINCS+ as FIPS 205, all finalised August 2024) rest on lattice mathematics — the hardness of module-learning-with-errors (MLWE) and module-short-integer-solution (MSIS) problems — driving renewed academic interest in algebraic number theory, lattice theory, and computational geometry within Applied Mathematics departments. GCHQ and NCSC issued UK guidance in 2024 recommending migration to post-quantum algorithms by 2035, creating substantial demand for applied mathematicians with lattice theory expertise. ARM, Qualcomm, and Intel are embedding PQ cryptographic accelerators in hardware, requiring mathematical optimisation of lattice basis reduction algorithms for efficient implementation.
+
+  **AI-driven mathematical research tools.** DeepMind's AlphaGeometry (January 2024) solved 25/30 IMO geometry problems at gold-medal level using a neurosymbolic approach combining a language model for conjectured auxiliary constructions with a symbolic geometry deduction engine. FunSearch (December 2023) used LLM-guided evolutionary search to discover new algorithms for the cap-set problem, outperforming all previously known bounds. AlphaProof (2024) achieved silver-medal performance on the IMO using formal proof search in Lean 4. These results suggest that AI-assisted mathematical discovery is transitioning from theoretical possibility to practical tool, with implications for research productivity in Applied Mathematics that are beginning to be felt in the 2025-2026 period.
+
+  **Imperial and London AI/Mathematics interface.** Imperial College's partnership with Lenovo (2026) for the London AI Technology Centre at White City Deep Tech Campus includes an Applied Mathematics research stream focused on foundation model mathematics, differential geometry for AI, and numerical methods for agentic AI systems. UCL's appointment of a Google DeepMind Academic Fellow to its Centre for Artificial Intelligence (March 2026) strengthened the pipeline from mathematical learning theory to deployed AI systems, particularly in uncertainty quantification and Bayesian [[Applied Machine Learning]].
+
+  ## Mathematical Optimisation for Machine Learning
+
+  [[Mathematical Optimisation]] is the subfield of Applied Mathematics most directly responsible for the practical training of ML models, and its theoretical development has accelerated alongside the growth of [[Deep Learning]]. The central object is the [[Loss Function]] L: R^d → R defined over parameter space of dimensionality d (ranging from thousands for logistic regression to hundreds of billions for large language models), and the goal is to find parameters θ* ≈ arg min_{θ} L(θ) that minimise (expected) loss.
+
+  For convex [[Loss Function]]s — logistic regression, SVM, LASSO — [[Convex Optimisation]] provides global optimality certificates and polynomial-time algorithms. Interior-point methods (barrier methods) solve general convex programs in O(n^{3.5}) iterations. The simplex algorithm solves linear programs in polynomial time in practice despite exponential worst-case complexity. Frank-Wolfe (conditional gradient) algorithms solve constrained problems without projections, advantageous when the feasible set is simple (nuclear norm ball, simplex) but projection is expensive. Proximal gradient methods handle composite objectives f(θ) + g(θ) where g (e.g., L1 norm) is non-smooth but has a closed-form proximal operator: prox_{αg}(θ) = arg min_{z} (1/2)||z - θ||^2 + αg(z). The ADMM (Alternating Direction Method of Multipliers) decomposes composite objectives and constraints, enabling distributed optimisation across multiple computation nodes.
+
+  For non-convex [[Loss Function]]s — deep [[Neural Network]] training — convergence guarantees are harder to obtain and the field has developed several complementary theoretical frameworks. The loss landscape of wide [[Neural Network]]s has been characterised empirically and theoretically: critical points are predominantly saddle points (not spurious local minima) in high dimensions; narrow valleys ("sharpness") correlate with poor generalisation (Hochreiter & Schmidhuber 1997 "flat minima" hypothesis, confirmed by subsequent sharpness-aware minimisation (SAM) experiments); stochastic [[Gradient Descent]] with small learning rate implicitly biases toward flat minima (Xing et al. 2018, Jastrzebski et al. 2018). Second-order methods — Newton (O(d^3) per step due to Hessian inversion), quasi-Newton (L-BFGS, approximating the inverse Hessian via rank-2 updates), and natural gradient (Fisher information metric geometry) — can achieve faster convergence than SGD but are rarely used in large-scale [[Deep Learning]] due to per-step cost. The Kronecker-Factored Approximate Curvature (K-FAC) method approximates the Fisher information matrix as a Kronecker product of smaller matrices, enabling practical approximate natural gradient descent for neural networks with millions of parameters.
+
+  Adaptive gradient methods — AdaGrad (Duchi et al. 2011), RMSProp (Tieleman & Hinton 2012), Adam (Kingma & Ba 2015) — maintain per-parameter learning rate estimates based on accumulated squared gradient history, achieving coordinate-wise adaptive steps that significantly improve convergence speed on sparse gradient problems (NLP, sparse features). Adam has become the de facto default optimiser for [[Deep Learning]], though its convergence properties on non-convex objectives are not fully characterised theoretically; recent work (Défossez et al. 2022, Crawshaw et al. 2022) shows Adam may fail to converge to stationary points for certain [[Loss Function]] geometries, motivating improved variants (Amsgrad, AdamW with decoupled weight decay, Sophia). [[Feature Engineering]] and [[Statistics]] determine what enters the optimisation problem; the boundary between Applied Mathematics and data-scientific practice is permeable. [[Gradient Boosting]] training, for instance, applies functional gradient descent in the space of decision trees — a unification of [[Mathematical Optimisation]] and nonparametric [[Statistics]]. [[Variational Inference]] transforms Bayesian posterior inference into an [[Mathematical Optimisation]] problem, minimising KL-divergence between an approximating family and the true posterior. [[Markov Chain Monte Carlo]] provides exact posterior sampling via [[Stochastic Processes]] (Metropolis-Hastings, Hamiltonian Monte Carlo, NUTS) for cases where variational approximations are insufficiently accurate.
+
+  Learning rate scheduling — cosine annealing, polynomial decay, warmup-then-cosine, one-cycle schedules — controls the effective step size over training, with empirical evidence that warmup (gradually increasing learning rate in initial steps) improves stability for large batch training (batch sizes of 2k-32k, common in distributed [[Deep Learning]] training). The linear scaling rule (Goyal et al. 2017) allows learning rates to scale linearly with batch size up to a regime where gradient noise dominates, providing a mathematical prescription for distributed training hyperparameter transfer.
+
+  ## UK Context
+
+  The United Kingdom maintains internationally leading strength in Applied Mathematics across all four nations, with particular depth in the following institutions and contexts:
+
+  **Imperial College London**: DAMTP-adjacent Applied Mathematics and Mathematical Physics groups at Imperial work on fluid dynamics, quantum field theory, and numerical PDE methods. The newly established London AI Technology Centre (White City Campus, 2026) integrates Applied Mathematics with foundation model research. Imperial's Mathematics Department consistently places among the world top-5 in QS rankings.
+
+  **University of Edinburgh**: The Maxwell Institute for Mathematical Sciences (jointly with Heriot-Watt) houses leading groups in numerical analysis, probability, and mathematical modelling. The MAC-MIGS CDT (£6.1M EPSRC, 2019-2028) trains 50+ PhD students at the intersection of mathematical modelling, analysis, and computation for AI applications. Desmond Higham's ERC Advanced Grant on "Numerical Analysis for Stable AI" specifically addresses the stability and accuracy of numerical methods applied in ML training loops.
+
+  **University of Cambridge**: DAMTP (Department of Applied Mathematics and Theoretical Physics) is one of the world's leading applied mathematics departments, with groups spanning fluid mechanics, general relativity, mathematical biology, and the increasingly prominent intersection with data-driven science. The Turing Institute (Alan Turing Institute, co-hosted by Cambridge among other Russell Group universities) funds applied maths research for AI, particularly in statistical methods and numerical analysis.
+
+  **UCL**: The UCL Centre for Artificial Intelligence, Mathematics, and Information Sciences brings together Applied Mathematics with machine learning; the 2026 Google DeepMind Fellowship strengthened this connection. UCL's Statistical Science department maintains leading Bayesian computation and MCMC methods research.
+
+  **Northern England industrial context**: The University of Manchester's Applied Mathematics group, within the School of Mathematics, conducts research in fluid mechanics (geophysical fluid dynamics, non-Newtonian flows), [[Mathematical Biology]] (population dynamics, reaction-diffusion systems, tumour growth modelling), dynamical systems, and mathematical methods for AI through the industrial mathematics programme. Manchester's AIRI (AI Research Institute, £120M, opened 2024) includes applied mathematics for climate prediction, manufacturing process optimisation, and computational genomics. The University of Leeds Applied Mathematics group has an international reputation in fluid dynamics (geophysical flows, complex fluids, biological locomotion), mathematical biology (mathematical oncology, epidemic modelling, ecology), and numerical analysis. The Isaac Newton Institute at Cambridge — the UK's premier mathematical research institute for intensive research programmes — regularly hosts Applied Mathematics programmes with AI themes: the 2024-2025 programme "Uncertainty Quantification and Data-Driven Modelling" brought together statisticians, numerical analysts, and ML researchers. Sheffield's School of Mathematical and Physical Sciences applies mathematics to materials science (phase field models, dislocation dynamics) and aerospace engineering contexts, in close collaboration with the AMRC (Advanced Manufacturing Research Centre) and Rolls-Royce's Derby Research Centre. Newcastle University's mathematics group contributes to applied analysis (nonlinear dynamics, pattern formation) and mathematical modelling for engineering, with collaboration with the Centre for Digital Manufacturing at Newcastle. Durham University's Mathematics Department has strong groups in geometry and topology with connections to data science via topological data analysis. York's Mathematics Department contributes mathematical biology and dynamical systems. EPSRC's Mathematical Sciences small grants scheme (£10k-£80k, up to 12 months, 2024-2025 cohort) actively funds Northern English applied mathematics research at these institutions. The N8 Research Partnership facilitates collaborative applied mathematics research across the eight Northern English Russell Group universities (Leeds, Manchester, Liverpool, Sheffield, Newcastle, Durham, York, Lancaster) through joint research proposals and shared doctoral training.
+
+  **Industrial applications in the UK**: Rolls-Royce relies on Applied Mathematics for jet engine CFD simulation (Navier-Stokes solvers at 10^8 DOF scale), high-cycle fatigue analysis (finite-element structural mechanics), and turbine cooling design (conjugate heat transfer). BAE Systems uses numerical PDEs for aircraft aerodynamics, radar cross-section minimisation (electromagnetic scattering simulation), and submarine hydrodynamics. GSK and AstraZeneca employ Applied Mathematics extensively in pharmacokinetic/pharmacodynamic (PKPD) modelling (ODEs for drug absorption, distribution, metabolism, excretion), clinical trial simulation (stochastic modelling of patient population variability), and computational chemistry (quantum mechanical simulation of molecular binding). ARM Holdings uses applied algebra (polynomial arithmetic over finite fields, modular arithmetic) and numerical methods in chip design verification and timing analysis. BP and Shell apply computational fluid dynamics and reservoir simulation (multiphase flow through porous media, described by Darcy's law and coupled mass/energy balance PDEs) for oil and gas field development decisions. The National Physical Laboratory (NPL) in Teddington maintains a world-leading applied mathematics division specialising in metrology, numerical uncertainty quantification, and measurement standards — with growing AI metrology activities assessing the mathematical correctness and statistical validity of AI measurement systems.
+
+  ## Future Directions (2026-2030)
+
+  Applied Mathematics is positioned at the leading edge of AI science, providing the theoretical scaffolding for the next generation of ML systems. The following directions represent the most active research frontiers:
+
+  - **Mathematical AI for scientific discovery**: Beyond surrogate modelling, AI systems are beginning to generate novel mathematical conjectures and proofs. DeepMind's AlphaGeometry (2024) solved 25 of 30 International Mathematical Olympiad geometry problems at gold-medal level, combining a [[Numerical Methods]]-style algebraic derivation system with a language model for high-level reasoning. FunSearch (DeepMind, 2023) discovered new algorithms for the cap-set problem in combinatorics, outperforming all known approaches. These results suggest that applied [[Mathematical Reasoning]] may be increasingly AI-assisted across the 2026-2030 period, with human mathematicians directing high-level conjecture and AI handling proof search, symbolic manipulation, and counter-example generation.
+  - **Quantum algorithms for numerical linear algebra**: Quantum linear systems algorithms (HHL algorithm: Harrow, Hassidim & Lloyd 2009, achieving O(log n · κ · s · polylog(1/ε)) vs. classical O(nκs) where κ is condition number and s is sparsity) and quantum [[Monte Carlo Methods]] offer polynomial to exponential speedups for specific [[Numerical Methods]] problems, conditional on fault-tolerant quantum computing maturing. Current variational quantum eigensolvers (VQE, applied to molecular ground-state energy in [[Simulation]]) and quantum approximate optimisation algorithms (QAOA, for [[Combinatorial Optimisation]]) represent near-term noisy intermediate-scale quantum (NISQ) applications, though their practical advantage over classical heuristics on useful problem sizes remains contested.
+  - **Geometric deep learning and equivariant architectures**: Equivariant [[Neural Network]]s (E(3)-equivariant networks like SE(3)-Transformer, NequIP, MACE; message-passing neural networks like MPNN, DimeNet) designed using group representation theory and differential geometry are enabling physics-respecting ML for molecular dynamics, protein structure prediction (AlphaFold2's geometric reasoning; ESMFold's structure language model), and climate modelling (spherically equivariant GNNs for global weather). The mathematical framework of geometric deep learning (Bronstein et al. 2021) unifies CNNs, GNNs, and sequence models as instances of group equivariant function learning on geometric spaces.
+  - **Operator learning at scale**: Neural operators that learn mappings between infinite-dimensional function spaces are maturing toward production surrogate models for engineering simulation. The 2025 NeurIPS result on one-shot operator learning via meta-learning (achieving 5-10% relative error from a single training trajectory) suggests that expensive PDE simulation may be largely replaced by neural operator inference in engineering design pipelines. DeepMind's 2024 DMFR (Data-driven Multiscale Fluid Reasoning) operator achieves DNS-quality turbulence statistics at LES compute cost, an order-of-magnitude efficiency gain for CFD.
+  - **Stochastic analysis and robust ML theory**: Lyapunov stability theory applied to stochastic gradient descent and adaptive optimisers (Adam, AdaGrad, RMSProp) will yield provable convergence guarantees for complex non-convex [[Loss Function]] landscapes. The gap between empirical [[Deep Learning]] success and theoretical understanding of why overparameterised models generalise well (double-descent, benign overfitting, grokking) is narrowing through new analyses combining functional analysis (NTK, infinite-width limits), [[Stochastic Processes]] (SGD as Langevin dynamics), and algebraic geometry (loss landscape topology via Morse theory). Mean-field theory — borrowed from statistical physics — provides a mathematical framework for understanding collective behaviour of infinite-neuron networks analogous to thermodynamic limits.
+  - **Topological data analysis (TDA) at scale**: Persistent homology (computing Betti numbers of sublevel sets across a filtration parameter) and Mapper algorithms, grounded in algebraic topology, are moving from niche research to practical data analysis tools as GPU-accelerated TDA libraries mature (Gudhi, Ripser, Giotto-TDA). TDA captures qualitative features of high-dimensional data — loops, voids, connected components — that are invisible to conventional statistical methods, with applications in materials science (characterising porous media topology), neuroscience (persistent homology of neural activation patterns), and drug discovery (molecular topology fingerprints). The 2024 Fields Medal awarded to Maryna Viazovska (sphere packing in 8 and 24 dimensions) illustrated that pure topological/algebraic mathematics continues to produce insights with downstream implications for coding theory and data geometry.
+  - **Differential privacy and algorithmic fairness theory**: The mathematical theory of differential privacy (Dwork, McSherry, Nissim & Smith 2006) — ε-DP guarantees that releasing model outputs does not enable inference about individual training examples — is being extended to composition theorems (advanced composition, RDP — Rényi differential privacy, zCDP — zero-concentrated DP) that enable tighter accounting for complex multi-query analyses. [[Mathematical Optimisation]] of privacy-utility tradeoffs (optimal noise mechanisms, Laplace vs. Gaussian vs. exponential mechanisms) is an active area intersecting [[Probability Theory]], [[Convex Optimisation]], and [[Information Theory]]. Fairness-accuracy tradeoffs are being formalised using [[Probability Theory]] and statistical decision theory, revealing inherent incompatibilities between certain fairness criteria (equalized odds and calibration cannot simultaneously hold for imperfect classifiers when base rates differ across groups).
+  - **Mean-field games and multi-agent mathematics**: Mean-field game (MFG) theory (Lasry & Lions 2007; Huang, Malhamé & Caines 2006) provides the mathematical framework for analysing strategic interactions among large numbers of rational agents when individual influence is negligible but collective behaviour matters. Applications include multi-agent [[Reinforcement Learning]] (providing game-theoretic solution concepts), financial market microstructure (modelling competing algorithmic traders), epidemiological intervention design, and urban transportation modelling. The mean-field approach transforms an N-player Nash equilibrium problem — intractable at large N — into a coupled PDE system (Hamilton-Jacobi-Bellman + Fokker-Planck), amenable to [[Numerical Methods]] and increasingly to neural PDE solvers.
+
+  ## Research & Literature
+
+  1. Boyd, S., & Vandenberghe, L. (2004). *Convex Optimization*. Cambridge University Press. Canonical text on [[Convex Optimisation]] theory and algorithms.
+  2. Trefethen, L.N., & Bau, D. (1997). *Numerical Linear Algebra*. SIAM. Standard reference for computational [[Linear Algebra]] and [[Numerical Methods]].
+  3. Nocedal, J., & Wright, S.J. (2006). *Numerical Optimization* (2nd ed.). Springer. Definitive treatment of [[Mathematical Optimisation]] algorithms including quasi-Newton and conjugate-gradient methods.
+  4. Øksendal, B. (2003). *Stochastic Differential Equations* (6th ed.). Springer. Standard graduate text on [[Stochastic Processes]] and Itô calculus underlying [[Diffusion Models]].
+  5. Shannon, C.E. (1948). A mathematical theory of communication. *Bell System Technical Journal*, 27, 379–423. Founding paper of [[Information Theory]], underpinning cross-entropy loss and variational inference.
+  6. Villani, C. (2003). *Topics in Optimal Transportation*. AMS. Mathematical foundation for Wasserstein distances applied in generative modelling.
+  7. Jacot, A., Gabriel, F., & Hongler, C. (2018). Neural tangent kernel: Convergence and generalization in neural networks. *NeurIPS* 31. Applied Mathematics formalisation of infinite-width [[Neural Network]] training dynamics.
+  8. Song, Y., et al. (2021). Score-based generative modeling through stochastic differential equations. *ICLR* (Best Paper). SDE formulation of [[Diffusion Models]] — landmark bridge between [[Stochastic Processes]] and generative AI.
+  9. Raissi, M., Perdikaris, P., & Karniadakis, G.E. (2019). Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear PDEs. *Journal of Computational Physics*, 378, 686–707. Foundational paper on PINNs combining Applied Mathematics and [[Deep Learning]].
+  10. Li, Z., et al. (2021). Fourier neural operator for parametric partial differential equations. *ICLR*. Operator learning approach for fast PDE surrogate models.
+  11. Higham, N.J. (2002). *Accuracy and Stability of Numerical Algorithms* (2nd ed.). SIAM. Definitive reference on floating-point error analysis and numerical stability for [[Numerical Methods]].
+  12. Golub, G.H., & Van Loan, C.F. (2013). *Matrix Computations* (4th ed.). Johns Hopkins Press. Comprehensive reference for numerical [[Linear Algebra]] algorithms.
+  13. Vapnik, V.N. (1998). *Statistical Learning Theory*. Wiley. Connects [[Probability Theory]] and [[Functional Analysis]] to machine learning generalisation bounds.
+  14. Lu, L., et al. (2021). Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators. *Nature Machine Intelligence*, 3, 218–229. Neural operator learning [[Functional Analysis]] foundation.
+  15. Cuturi, M. (2013). Sinkhorn distances: Lightspeed computation of optimal transport distances. *NeurIPS* 26. Entropic regularisation enabling practical optimal transport computation.
+  16. Ho, J., Jain, A., & Abbeel, P. (2020). Denoising diffusion probabilistic models. *NeurIPS* 33. Applied probability and [[Stochastic Processes]] foundation for [[Diffusion Models]].
+  17. Bartlett, P.L., & Mendelson, S. (2002). Rademacher and Gaussian complexities: Risk bounds and structural results. *JMLR*, 3, 463–482. Functional-analytic generalisation theory for machine learning.
+  18. Belkin, M., & Niyogi, P. (2003). Laplacian eigenmaps for dimensionality reduction and data representation. *Neural Computation*, 15(6), 1373–1396. Spectral [[Graph Theory]] applied to manifold learning.
+  19. Woodbury, M.A. (1950). Inverting modified matrices. *Memorandum Report 42, Statistical Research Group*. Woodbury matrix identity — ubiquitous in applied [[Linear Algebra]] and Bayesian inference.
+  20. Müller, A., et al. (2024). Physics-Informed Neural Networks and Neural Operators for Parametric PDEs: A Human-AI Collaborative Analysis. *arXiv:2511.04576*. 2025 survey of applied mathematics at the frontier of scientific ML.
+  21. SIAM (2025). Advances in neural architecture search. *National Science Review*, 11(8), nwae282. Survey of NAS methods with Applied Mathematics grounding in optimisation and probability.
+  22. Diaconis, P., & Stroock, D. (1991). Geometric bounds for eigenvalues of Markov chains. *Annals of Applied Probability*, 1(1), 36–61. Applied [[Probability Theory]] foundational to [[Monte Carlo Methods]] mixing time analysis.
+  23. NIST (2024). Post-Quantum Cryptography Standards: CRYSTALS-Kyber (FIPS 203), CRYSTALS-Dilithium (FIPS 204), SPHINCS+ (FIPS 205). Applied algebraic number theory standardisation milestone.
+  24. Desmond Higham (ongoing ERC Advanced Grant, 2023-2028). Numerical Analysis for Stable AI. University of Edinburgh. UK research programme on numerical stability of ML training.
+  25. EPSRC (2024). Mathematical Sciences Small Grants Scheme. UKRI. Funding mechanism supporting UK Applied Mathematics research, £10k-£80k grants, 2024-2025 cohort.
+  26. Imperial College London & Lenovo (2026). London AI Technology Centre at White City Deep Tech Campus. Applied mathematics for foundation model research and agentic AI systems.
+  27. MAC-MIGS CDT (2019-2028). EPSRC Centre for Doctoral Training in Mathematical Modelling, Analysis and Computation. £6.1M programme at University of Edinburgh training applied mathematicians for AI and scientific computing.
+  28. AI for Mathematics Initiative (2025). AI for Mathematics: Progress, Challenges, and Prospects. *arXiv:2601.13209v4*. Comprehensive 2025 review of AI tools for mathematical reasoning and the future of applied mathematical research.
+
+- ### Provenance
+  - sources:: https://arxiv.org/html/2511.04576v1, https://www.maths.ed.ac.uk/school-of-mathematics/research/acm/acm-grants, https://en.wikipedia.org/wiki/Desmond_Higham, https://www.ukri.org/opportunity/mathematical-sciences-small-grants/, https://epsrc.ukri.org/research/ourportfolio/researchareas/mathanalysis/, https://arxiv.org/html/2601.13209v4, https://oatml.cs.ox.ac.uk/, https://www.idsai.manchester.ac.uk/research/methodologies/machine-learning/, https://research.com/advice/ai-automation-and-the-future-of-mathematics-degree-careers, https://epubs.siam.org/doi/10.1137/0719041
+  - migration-date:: 2026-06-20T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

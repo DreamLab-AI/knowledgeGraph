@@ -1,0 +1,61 @@
+public:: true
+
+# Collateral Management
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:collateral-management",
+  "@type": "Page",
+  "vc:slug": "collateral-management",
+  "title": "Collateral Management",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:collateral-management",
+  "@type": "Class",
+  "label": "Collateral Management",
+  "definition": "Collateral management is the operational and risk management discipline concerned with the posting, valuation, optimisation, and return of financial assets pledged as security against credit exposure in derivatives, securities lending, repo, and cleared transactions, ensuring that counterparty credit risk is adequately mitigated throughout the life of a financial contract. It encompasses collateral eligibility determination, margin call issuance and settlement, collateral transformation, and regulatory compliance with frameworks including EMIR, Dodd-Frank, and Basel III initial margin requirements.",
+  "domain": "finance",
+  "maturity": "mature",
+  "subClassOf": [{"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:financial-instruments", "label": "Financial Instruments"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
+      {"@id": "urn:ngm:class:blockchain-oracle", "label": "Blockchain Oracle"},
+      {"@id": "urn:ngm:class:financial-transactions", "label": "Financial Transactions"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - Collateral management is the financial operations function responsible for managing the assets posted between counterparties to mitigate credit risk in bilateral and centrally cleared [[Financial Transactions]]. It encompasses the full lifecycle of collateral from initial eligibility assessment and [[Risk Assessment]] of pledged [[Financial Instruments]], through daily mark-to-market valuation and margin call processing, to substitution, transformation, and final return upon contract expiry. In decentralised finance, [[Smart Contract]]s automate collateral locking and liquidation without intermediaries, enabling [[Decentralised Finance]] protocols to extend credit against crypto assets with programmable margin requirements.
+
+- ### Relationships
+  - Collateral management is a specialisation of [[Risk Management]], focused specifically on the credit risk mitigation function within financial markets. It depends on accurate [[Risk Assessment]] of collateral eligibility and counterparty exposure and operates across a broad universe of [[Financial Instruments]] including government bonds, equities, cash, and increasingly tokenised assets. In DeFi contexts, [[Smart Contract]]-based collateral management enables lending protocols where [[Blockchain Oracle]]s provide real-time price feeds used to trigger automated liquidations when collateral ratios breach minimum thresholds, supporting the [[Stablecoin]] minting mechanisms that underpin much of [[Decentralised Finance]].
+
+- ### Content
+  - Collateral management as a formalised discipline emerged from the growth of over-the-counter (OTC) derivatives markets in the 1980s. The International Swaps and Derivatives Association (ISDA) Credit Support Annex (CSA), introduced in 1994 and substantially revised in 2016, standardised the legal framework for bilateral collateral arrangements between derivatives counterparties. Prior to formalisation, credit exposure in OTC markets was managed through relationship banking and subjective credit assessments; the 2008 financial crisis, in which inadequate collateralisation of AIG's credit default swap book contributed to systemic stress, catalysed mandatory clearing requirements and initial margin rules that transformed collateral management from a back-office function to a strategic priority.
+
+  - Technically, collateral management involves several computational and operational layers. Portfolio reconciliation verifies that both counterparties agree on the mark-to-market value of each trade. Exposure calculation aggregates net exposure across a counterparty's portfolio, accounting for netting agreements. Margin call generation translates net exposure into a collateral call when exposure exceeds agreed thresholds. Collateral optimisation — the most computationally demanding component — determines which eligible assets to post across multiple counterparties and central counterparty clearing houses (CCPs) to minimise funding cost, typically formulated as a linear programme over the cheapest-to-deliver (CTD) eligible collateral set. Settlement involves physical transfer of securities through custodians or central securities depositories (CSDs).
+
+  - The collateral management ecosystem includes specialised software providers (OpenGamma, CloudMargin, TriOptima), custodian banks operating triparty collateral services (BNY Mellon, JP Morgan, Euroclear), and CCPs (LCH, ICE Clear, CME) that impose standardised margin models including SPAN and ISDA SIMM for initial margin. Triparty collateral management — in which a custodian agent allocates collateral between counterparties according to agreed eligibility schedules — handles the majority of repo and securities lending collateral operationally.
+
+  - In 2024–2025, the tokenisation of traditional financial assets on blockchain networks is creating new collateral management architectures: tokenised government bonds from projects including Franklin Templeton OnChain U.S. Government Money Fund and BlackRock BUIDL are being used as collateral in both traditional prime brokerage and DeFi lending protocols. Distributed ledger technology enables atomic delivery-versus-payment settlement, eliminating intraday credit risk in collateral substitutions. Regulators in the UK, EU, and Singapore are developing sandbox frameworks for DLT-based collateral settlement, while the Bank for International Settlements has published guidance on the prudential treatment of tokenised collateral.
+

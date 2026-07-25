@@ -1,0 +1,189 @@
+public:: true
+
+# Risk Treatment
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:e994edc25a4ade2487441b10fe96c4001cf8f0c8962253e778b3587942e1ba7c",
+  "@type": "Page",
+  "vc:slug": "risk-treatment",
+  "title": "Risk Treatment",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0080"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Risk Treatment"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:risk-treatment",
+  "@type": "Class",
+  "label": "Risk Treatment",
+  "definition": "The process of selecting and implementing measures to modify AI risk, including risk avoidance, risk reduction (mitigation), risk sharing (transfer), and risk retention, based on risk assessment outcomes and organisational risk appetite. Grounded in ISO/IEC 23894:2023 and the NIST AI RMF MANAGE function, risk treatment produces a treatment plan, residual risk documentation, and an ongoing monitoring regime. Options are evaluated for feasibility, cost, effectiveness, and stakeholder acceptability before selection.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
+      {"@id": "urn:ngm:class:responsible-ai-principles", "label": "Responsible AI Principles"}
+    ]
+  },
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:risk-treatment:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:e994edc25a4ade2487441b10fe96c4001cf8f0c8962253e778b3587942e1ba7c"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - The process of selecting and implementing measures to modify AI risk, including risk avoidance, risk reduction (mitigation), risk sharing (transfer), and risk retention, based on risk assessment outcomes and organisational risk appetite. Grounded in ISO/IEC 23894:2023 and the NIST AI RMF MANAGE function, risk treatment produces a treatment plan, residual risk documentation, and an ongoing monitoring regime. Options are evaluated for feasibility, cost, effectiveness, and stakeholder acceptability before selection.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:RiskTreatment
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
+
+- ### Relationships
+  - partOf:: [[AI Risk Management]]
+  - requires:: [[AI Risk]]
+  - enables:: [[Compliance Framework]]
+  - enables:: [[AI Governance]]
+  - relatedTo:: [[AI Governance Framework]]
+  - relatedTo:: [[Responsible AI Principles]]
+
+- ### Content
+  - ## Academic Context
+    - Risk treatment represents a fundamental component of AI governance frameworks, evolving significantly as organisations grapple with increasingly complex deployment scenarios
+    - Encompasses systematic selection and implementation of measures to modify AI risk across four primary strategies: avoidance, reduction (mitigation), sharing (transfer), and retention
+    - Builds upon classical risk management theory whilst addressing AI-specific challenges including model opacity, emergent behaviours, and systemic interdependencies
+    - Grounded in organisational risk appetite frameworks, requiring alignment between technical controls and strategic objectives
+  - ## Current Landscape
+    - Industry adoption and implementations
+    - NIST AI Risk Management Framework (AI RMF) provides the predominant voluntary standard for organisations across public and private sectors, with the July 2024 Generative AI Profile (NIST-AI-600-1) adding over 200 specific actions addressing large language model risks[4][5]
+    - EU AI Act is being implemented in phases: GPAI model obligations applied from August 2025, high-risk system requirements from August 2026. A May 2026 political agreement on an "AI omnibus" package has extended deadlines for certain high-risk categories to December 2027–August 2028[1]
+    - Organisations increasingly recognise that technical controls alone—access restrictions, data protections, inference monitoring—prove insufficient without integrated governance, compliance, and risk-based decision-making frameworks[6]
+    - UK and North England context: Manchester's growing fintech sector and Leeds' digital innovation clusters are adopting NIST frameworks, though regional adoption remains fragmented; Newcastle's emerging AI research community increasingly engages with risk treatment protocols through university partnerships
+    - Technical capabilities and limitations
+    - Real-time risk analysis and predictive analytics enable proactive identification of patterns and anomalies that manual processes might overlook[2]
+    - AI-driven risk mitigation enhances decision-making through data-driven insights and automates routine incident response tasks, though human expertise and judgment remain essential for validating AI-driven recommendations[2]
+    - Current limitations include difficulty in quantifying certain harms (reputational, ecosystem-level impacts) and challenges in addressing emergent risks from generative systems
+    - Standards and frameworks
+    - NIST AI RMF structures risk treatment through four core functions: Map (inventory AI systems), Measure (test for vulnerabilities), Manage (implement fixes and monitoring), Govern (establish accountability)[4]
+    - Framework defines three categories of potential harm: to individuals (civil liberties, economic opportunities), to organisations (reputation, operations, financial losses), and to ecosystems (natural resources, supply chains, financial systems)[3]
+    - Profiles enable sector-specific adaptation; fintech organisations prioritise bias in lending algorithms whilst healthcare systems emphasise diagnostic AI safety[4]
+  - ## Research & Literature
+    - Key academic papers and sources
+    - National Institute of Standards and Technology (2023). "AI Risk Management Framework (AI RMF 1.0)". Available at: https://www.nist.gov/itl/ai-risk-management-framework. Foundational voluntary framework released 26 January 2023, developed through consensus-driven, open, transparent, collaborative process[5]
+    - National Institute of Standards and Technology (2024). "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST-AI-600-1)". Released 26 July 2024. Addresses unique risks from large language models and generative systems with sector-specific guidance[5]
+    - SANS Institute. "SANS Draft Critical AI Security Guidelines v1.1". Outlines risk-based approach to AI controls and governance, emphasising integration of technical controls with governance and compliance frameworks[6]
+    - European Commission. "EU AI Act". Regulatory framework classifying AI systems by risk level and requiring compliance through documentation, transparency, and human oversight mechanisms[1]
+    - Ongoing research directions
+    - Quantification of ecosystem-level and reputational harms remains an active research area
+    - Integration of explainability and bias detection tools into risk treatment workflows
+    - Development of sector-specific risk treatment profiles beyond fintech and healthcare
+  - ## UK Context
+    - British contributions and implementations
+    - UK organisations increasingly adopt NIST frameworks alongside EU AI Act compliance requirements, creating dual-framework governance structures
+    - The Alan Turing Institute (London) conducts research on responsible AI and risk management, though regional distribution of AI governance expertise remains concentrated in South East England
+    - North England innovation hubs
+    - Manchester's fintech community engages with risk treatment protocols, particularly regarding algorithmic bias in lending and payment systems
+    - Leeds Digital Innovation Centre and Sheffield's advanced manufacturing sector explore AI risk treatment in industrial applications, though formal case studies remain limited
+    - Newcastle University's School of Computing conducts research on AI trustworthiness, contributing to regional capability development
+    - Regional considerations
+    - North England organisations often lack dedicated AI governance resources compared to London-based counterparts, creating implementation challenges for smaller enterprises
+    - Regional universities increasingly partner with local industry to develop contextualised risk treatment approaches
+  - ## Future Directions
+    - Emerging trends and developments
+    - Shift from reactive risk management to predictive risk identification through continuous monitoring and anomaly detection[2]
+    - Integration of AI-driven risk mitigation into existing enterprise risk management systems rather than siloed AI governance structures
+    - Development of real-time threat detection capabilities and automated incident response protocols[2]
+    - Expansion of generative AI-specific risk treatment guidance as LLM deployment accelerates across sectors
+    - Anticipated challenges
+    - Balancing automation of risk assessment with necessary human oversight and validation
+    - Addressing risks that emerge from AI system interactions and ecosystem-level effects
+    - Maintaining compliance across multiple regulatory regimes (EU AI Act, sector-specific regulations, organisational policies)
+    - Scaling risk treatment practices across organisations lacking dedicated AI governance expertise, particularly in North England
+    - Research priorities
+    - Development of standardised metrics for quantifying harm across different categories
+    - Creation of sector-specific risk treatment playbooks beyond current fintech and healthcare focus
+    - Investigation of human-AI collaboration models for effective risk validation and decision-making
+    - Regional capability building in AI governance, particularly outside London and South East England
+  - ## References
+    - [1] Sparkco AI (2025). "High-Risk AI Systems: A Comprehensive 2025 Definition". Available at: https://sparkco.ai/blog/high-risk-ai-systems-a-comprehensive-2025-definition
+    - [2] TrustCloud (2025). "Risk mitigation with artificial intelligence: smarter strategies in 2025". Available at: https://community.trustcloud.ai/docs/grc-launchpad/grc-101/risk-management/risk-mitigation-strategies-the-role-of-artificial-intelligence-in-enhancements/
+    - [3] Splunk (2025). "AI Risk Management in 2025: What You Need To Know". Available at: https://www.splunk.com/en_us/blog/learn/ai-risk-management.html
+    - [4] Superblocks (2025). "3 AI Risk Management Frameworks for 2025 + Best Practices". Available at: https://www.superblocks.com/blog/ai-risk-management
+    - [5] National Institute of Standards and Technology (2023, 2024). "AI Risk Management Framework". Available at: https://www.nist.gov/itl/ai-risk-management-framework
+    - [6] SANS Institute (2025). "Securing AI in 2025: A Risk-Based Approach to AI Controls and Governance". Available at: https://www.sans.org/blog/securing-ai-in-2025-a-risk-based-approach-to-ai-controls-and-governance
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

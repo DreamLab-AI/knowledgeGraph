@@ -1,0 +1,383 @@
+public:: true
+
+# Economic Model
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:3b4bf7a34ff4c7f5602ef75c2578d1bf9dc4014b0d0a33ac13d32e95852126bf",
+  "@type": "Page",
+  "vc:slug": "economic-model",
+  "title": "Economic Model",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:economics",
+      "vc:label": "Economics"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-based-modelling",
+      "vc:label": "Agent-Based Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulation",
+      "vc:label": "Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-theory",
+      "vc:label": "Game Theory"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Economic Model"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-29T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:economic-model",
+  "@type": "Class",
+  "label": "Economic Model",
+  "definition": "An economic model is a simplified representation of an economy or market used to analyse behaviour and predict outcomes. It expresses relationships between variables such as supply, demand, prices and output.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
+    ]
+  },
+  "quality": 0.6,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-29T00:00:00Z",
+    "inferenceRule": "GapFillTier5"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:economic-model:88129da1f918",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:3b4bf7a34ff4c7f5602ef75c2578d1bf9dc4014b0d0a33ac13d32e95852126bf"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Economics]]",
+      "resolved": "urn:visionflow:linked:economics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Agent-Based Modelling]]",
+      "resolved": "urn:visionflow:linked:agent-based-modelling",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Simulation]]",
+      "resolved": "urn:visionflow:linked:simulation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Game Theory]]",
+      "resolved": "urn:visionflow:linked:game-theory",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-29T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+- ### Definition
+  - An economic model is a formal, simplified representation of an economy, market, or economic mechanism constructed from mathematical equations, computational rules, or agent behavioural specifications that express hypothesised relationships among key variables — including supply, demand, prices, output, employment, investment, expectations, and welfare — with the purpose of explaining past observations, generating predictions, and evaluating the consequences of policy interventions. Economic models occupy a spectrum from closed-form analytical constructs such as [[General Equilibrium Models]] and [[Mechanism Design]] frameworks, through large-scale structural [[Econometrics]] models estimated on national accounts data, to computational approaches including [[Agent-Based Modelling]] and [[Simulation]] that dispense with global equilibrium in favour of emergent aggregate dynamics. Every model is a deliberate act of abstraction: it selects a small number of variables and relationships deemed sufficient to capture the phenomenon of interest while suppressing detail judged to be secondary — what Milton Friedman called the "as if" methodology, where the realism of assumptions matters less than the accuracy of predictions. The canonical families include: equilibrium models (partial and general) in which supply equals demand at market-clearing prices; [[Macroeconomics]] time-series models including DSGE (Dynamic Stochastic General Equilibrium) models that combine intertemporal optimisation, rational or bounded expectations, and stochastic disturbances; input-output models expressing inter-industry production flows as linear coefficient matrices; and [[Game Theory]]-based strategic interaction models capturing oligopoly, auction, and contracting behaviour. Increasingly, [[Machine Learning]] is being incorporated both as a modelling technique — replacing hand-specified functional forms with learned representations — and as a subject of economic modelling itself, with models of AI market structure, [[Labour Economics]] displacement, and algorithmic pricing. The [[Bank of England]]'s open-economy DSGE model and the [[IMF]]'s GIMF model exemplify how economic models inform monetary and fiscal policy at the national and international level, respectively. In the context of complex adaptive economies, [[Agent-Based Modelling]] offers an alternative paradigm that relaxes the homogeneous rational-agent assumption, allowing heterogeneous bounded-rational actors to interact within explicitly modelled institutional rules, with aggregate dynamics emerging from micro-level behaviour rather than being imposed as equilibrium conditions.
+
+- ### Semantic Classification
+  - owl-class:: ai:EconomicModel
+  - owl-role:: Concept | AnalyticalFramework | PolicyInstrument
+  - owl-inferred:: ai:ComputationalEconomics, ai:MacroeconomicModel, ai:MicroeconomicModel
+  - belongs-to-domain:: [[Economics]]
+  - implemented-in-layer:: [[Simulation]]
+
+- ### Relationships
+  - is-subclass-of:: [[Economics]], [[Computational Modelling]], [[Mathematical Modelling]]
+  - has-part:: [[General Equilibrium Models]], [[Macroeconomics]], [[Mechanism Design]], [[Incentive Structures]], [[Welfare Analysis]], [[Econometrics]], [[Market Design]]
+  - requires:: [[Economics]], [[Game Theory]], [[Statistics]], [[Causal Inference]], [[Information Asymmetry]]
+  - enables:: [[Agent-Based Modelling]], [[Policy Simulation]], [[Market Design]], [[Welfare Analysis]], [[Regulation]], [[Mechanism Design]], [[Auction Theory]], [[Contract Theory]]
+  - implements:: [[Game Theory]], [[Mechanism Design]], [[General Equilibrium Models]], [[Principal-Agent Theory]], [[Social Choice Theory]]
+  - depends-on:: [[Econometrics]], [[Statistics]], [[Causal Inference]], [[Mathematical Modelling]], [[Computational Modelling]]
+  - supports:: [[Macroeconomics]], [[Industrial Organisation]], [[Labour Economics]], [[Monetary Economics]], [[Platform Regulation]], [[AI Governance]]
+  - uses:: [[Agent-Based Modelling]], [[Simulation]], [[Monte Carlo Simulation]], [[Machine Learning]], [[Sensitivity Analysis]], [[Uncertainty Quantification]]
+  - contrasts-with:: [[Agent-Based Modelling]], [[System Dynamics]], [[Behavioural Economics]]
+  - bridges-to:: [[Complexity Science]], [[Complex Adaptive Systems]], [[Behavioural Science]], [[Tokenomics]]
+  - related-to:: [[Game Theory]], [[Mechanism Design]], [[Contract Theory]], [[Auction Theory]], [[Information Asymmetry]], [[Incentive Structures]], [[Welfare Economics]], [[Political Economy]], [[Network Analysis]], [[Digital Asset]]
+  - standardized-by:: [[Bank of England]], [[IMF]], [[OECD]], [[UK HM Treasury]]
+
+- ### Content
+  - ## Compositional Relationships (Components)
+    ```
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:hasPart ai:GeneralEquilibriumModel))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:hasPart ai:Macroeconomics))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:hasPart ai:MechanismDesign))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:hasPart ai:IncentiveStructures))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:hasPart ai:WelfareAnalysis))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:hasPart ai:Econometrics))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:hasPart ai:MarketDesign))
+    ```
+  - ## Dependency Relationships
+    ```
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:requires ai:Economics))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:requires ai:GameTheory))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:requires ai:Statistics))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:dependsOn ai:Econometrics))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:dependsOn ai:MathematicalModelling))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:dependsOn ai:CausalInference))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:dependsOn ai:ComputationalModelling))
+    ```
+  - ## Capability Relationships
+    ```
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:enables ai:AgentBasedModelling))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:enables ai:PolicySimulation))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:enables ai:MarketDesign))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:enables ai:WelfareAnalysis))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:enables ai:Regulation))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:enables ai:MechanismDesign))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:enables ai:AuctionTheory))
+    ```
+  - ## Implementation Relationships
+    ```
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:implements ai:GameTheory))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:implements ai:MechanismDesign))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:implements ai:GeneralEquilibriumModels))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:implements ai:PrincipalAgentTheory))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:implements ai:SocialChoiceTheory))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:uses ai:AgentBasedModelling))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:uses ai:Simulation))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:uses ai:MachineLearning))
+    ```
+  - ## Reduction Relationships
+    ```
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:reducesTo ai:PartialEquilibriumModel))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:reducesTo ai:InputOutputModel))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:reducesTo ai:LinearRegressionModel))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:reducesTo ai:SupplyDemandModel))
+    ```
+  - ## Support and Contrast Axioms
+    ```
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:supports ai:Macroeconomics))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:supports ai:IndustrialOrganisation))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:supports ai:MonetaryEconomics))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:bridgesTo ai:ComplexAdaptiveSystems))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:bridgesTo ai:ComplexityScience))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:standardizedBy ai:BankOfEngland))
+    SubClassOf(ai:EconomicModel
+      ObjectSomeValuesFrom(ai:standardizedBy ai:IMF))
+    ```
+
+  - ## About
+    - An economic model is a structured act of theoretical compression: it distils the essential relationships governing a subset of economic reality into a form that can be reasoned about, estimated, and used to guide decisions. The discipline of economics has produced a remarkable variety of model families, each resting on characteristic assumptions about agent rationality, market structure, information availability, and the nature of economic time. The most influential foundational framework is general equilibrium analysis, tracing from Léon Walras's 1874 formulation of simultaneous market-clearing across all goods and factors, through Arrow and Debreu's 1954 existence proof using fixed-point theorems, to modern [[General Equilibrium Models]] with heterogeneous agents, incomplete markets, and financial frictions. Partial equilibrium analysis — examining one market while treating others as fixed — remains the workhorse of applied microeconomics, embodied in the supply-and-demand framework that underpins competition policy, regulatory impact assessments, and trade analysis. [[Game Theory]] introduced strategic interdependence: economic models that represent the decisions of firms, governments, or individuals as strategies in a formal game, with equilibrium predictions derived from [[Nash Equilibrium]] and its refinements. This shift enabled rigorous analysis of oligopoly pricing, bargaining and contracting under [[Information Asymmetry]], public procurement auctions, and regulatory mechanism design — captured through the subfield of [[Mechanism Design]] (reverse game theory), in which the economist's task is to engineer rules that induce agents' equilibrium behaviour to achieve a desired social outcome such as efficient allocation or revenue maximisation.
+
+    - The macroeconomic branch of economic modelling underwent a major methodological revolution with the introduction of DSGE (Dynamic Stochastic General Equilibrium) models by Kydland and Prescott (1982) and later Smets and Wouters (2003, 2007). DSGE models combine intertemporal utility maximisation by households, profit maximisation by firms operating in monopolistically competitive markets, a monetary authority following an interest-rate rule, and stochastic disturbances (technology shocks, preference shocks, monetary policy shocks) to produce a rich characterisation of business-cycle dynamics. They are estimated using Bayesian methods on national accounts data and have become the standard analytical tool at major central banks, including the [[Bank of England]], the European Central Bank, and the US Federal Reserve. However, DSGE models face fundamental critiques: their linearisation around deterministic steady states limits them to local perturbation analysis, their representative-agent assumption cannot capture distributional effects or heterogeneous household responses to monetary policy (motivating HANK — Heterogeneous Agent New Keynesian — extensions), and their rational expectations assumption implausibly rules out systematic forecasting errors. Competing approaches include large-scale econometric models (the NiGEM model maintained by NIESR for cross-country policy analysis), input-output models (Wassily Leontief's 1941 linear accounting framework expressing inter-industry production flows, Nobel Prize 1973, now used in supply-chain resilience analysis and environmental footprint accounting), and computable general equilibrium (CGE) models that calibrate general equilibrium to social accounting matrix data for trade and tax policy simulation.
+
+    - The most significant contemporary development in economic modelling is the convergence between [[Agent-Based Modelling]] and mainstream macro. Agent-based economic models (sometimes called ACE — agent-based computational economics) abandon equilibrium as an assumed condition and instead allow aggregate outcomes to emerge from the decentralised interaction of heterogeneous boundedly rational agents following simple heuristics or learned decision rules. Foundational work includes the Santa Fe artificial stock market (Arthur et al., 1997), the Eurace model (Cincotti et al., 2022), and Dosi et al.'s series of Keynesian agent-based models at the Sant'Anna School, which have demonstrated the capacity to replicate business cycle statistics, financial fragility dynamics, and the distributional effects of fiscal consolidation — phenomena that DSGE models struggle to capture endogenously. The incorporation of [[Machine Learning]] into economic models proceeds along two distinct axes: as a technique for enriching models (deep reinforcement learning agents solving high-dimensional heterogeneous general equilibrium models, as in the AI Economist project; neural network approximations to DSGE policy functions; LLM-driven agents in [[Agent-Based Modelling]]); and as a subject of economic modelling (models of platform competition among AI firms, labour market disruption under automation, and the economics of data and [[Information Asymmetry]] in digital markets). The arXiv paper "AI Economist Agent" (2026) exemplifies this convergence, combining RAG retrieval of economic data, knowledge graphs, and LLM reasoning to produce model-grounded policy analysis.
+
+  - ## Components / Architecture
+    - **Equilibrium frameworks**: The foundational technical apparatus of most economic models. Partial equilibrium models fix variables outside the market of interest and solve supply-demand clearing in a single market, producing comparative statics — predictions of how price and quantity respond to parameter changes. Walrasian general equilibrium extends this to simultaneous clearing across all markets and factors, requiring existence theorems (Arrow-Debreu, 1954) and computationally intensive algorithms (path-following, Newton-Raphson) for practical application. Modern DSGE models replace static Walrasian equilibrium with dynamic rational-expectations equilibrium: households and firms solve intertemporal optimisation problems, forming rational (model-consistent) expectations about future variables, and the resulting first-order conditions — Euler equations for consumption, investment, and capital — are log-linearised around the steady state and solved using Blanchard-Kahn or Sims methods. HANK models augment this with a distribution over heterogeneous household asset holdings, solved using the sequence-space Jacobian method of Auclert et al. (2021). CGE models are large-scale multi-sector general equilibrium models calibrated to social accounting matrices, used for trade policy simulation (GTAP — Global Trade Analysis Project) and environmental policy assessment (E3ME from Cambridge Econometrics).
+    - **Structural estimation and identification**: Economic models are not merely calibrated illustrations; they are estimated statistical objects whose parameters are identified from variation in data. Structural econometric methods (instrumental variables, difference-in-differences, regression discontinuity, two-stage least squares) provide [[Causal Inference]] discipline that prevents confounding of model coefficients with omitted variable bias. DSGE models are estimated via Bayesian MCMC, with priors placed on structural parameters (habit persistence, capital adjustment costs, price-stickiness Calvo parameters) and likelihood evaluated against observables using the Kalman filter applied to the state-space representation. Identification analysis — determining which moments in the data pin down which parameters — is an active research area; weak identification inflates posterior uncertainty and limits policy counterfactual reliability. [[Econometrics]] provides the toolkit: VAR (vector autoregressions) for reduced-form dynamics, VECM for cointegrated systems, panel data methods for cross-sectional heterogeneity, and machine learning regularisation (LASSO, ridge, elastic net) for high-dimensional predictor selection.
+    - **Game-theoretic and mechanism design components**: Economic models grounded in [[Game Theory]] specify players, strategy spaces, payoff functions, information structures, and solution concepts. The [[Principal-Agent Theory]] paradigm — in which a principal (employer, regulator, buyer) designs a contract to induce desired behaviour from an agent who has private information or unobservable effort — is the foundation of modern [[Contract Theory]] (Holmström and Milgrom, Nobel 2016). [[Mechanism Design]] inverts this: given a social choice objective, what game should the designer implement? The Revelation Principle (Myerson, 1979) simplifies design to direct revelation mechanisms in which truthful reporting is the dominant strategy (incentive compatibility). The Vickrey-Clarke-Groves mechanism achieves efficiency; Myerson's optimal auction achieves revenue maximisation. These frameworks are directly implemented in computational economics for [[Auction Theory]] (spectrum auctions, Google's generalised second-price auction, VCG combinatorial auctions), matching markets ([[Matching Theory]] for medical residency assignment, school admissions), and [[Tokenomics]] design for decentralised protocol incentive structures.
+    - **Agent-based and computational components**: [[Agent-Based Modelling]] economic models specify a population of heterogeneous agents — households, firms, banks, regulators — each with a state vector (wealth, debt, inventory, credit rating) and a behavioural rule (demand function, pricing rule, lending criterion) expressed as a computer program rather than a first-order condition. The environment specifies market clearing mechanisms: auction clearing, sequential bargaining, random matching, or network-structured search. [[Simulation]] advances the model through discrete time steps, recording aggregate statistics (GDP, price level, unemployment rate, Gini coefficient). Monte Carlo ensembles (via [[Monte Carlo Simulation]]) generate distributions of outcomes under parameter uncertainty. Machine learning policies (from [[Reinforcement Learning]]) can replace hand-specified heuristics — the AI Economist uses deep RL to find optimal tax policy within an agent-based economic environment, handling the combinatorial complexity of policy space that analytical models cannot navigate. Differentiable ABM approaches (2025) allow gradient-based calibration of agent-based economic models, substantially reducing the calibration time that previously required extensive Monte Carlo sweeps.
+    - **Input-output and accounting frameworks**: Leontief input-output (IO) models represent an economy as a system of linear production relationships: each industry produces one good using fixed proportions of inputs from other industries. The IO table (coefficients matrix A) and its Leontief inverse (I - A)^{-1} allow computation of total output required to satisfy a given final demand vector. IO models are used in supply-chain risk analysis (identifying critical industries whose disruption cascades through the economy), environmental footprint accounting (embodied carbon, water, and material flows), and regional economic impact assessment. The World Input-Output Database (WIOD) and OECD Trade in Value Added (TiVA) provide multi-country IO data at sector resolution. Extensions include dynamic IO (incorporating investment and capital accumulation), stochastic IO (with uncertain coefficients), and multi-regional IO (MRIO) for global supply-chain analysis.
+
+  - ## Use Cases / Major Families
+    - **Central bank and monetary policy models**: The primary institutional use case for large-scale economic models. DSGE models at the [[Bank of England]] (Quarterly Model), ECB (EAGLE, NAWM-II), and US Federal Reserve (FRB/US, SIGMA) produce macroeconomic projections, policy counterfactuals, and scenario analyses. The Bank of England's 2025 open-economy DSGE model (Lloyd et al., SSRN 2025) includes imported energy goods, time-varying trends, and an expanded shock inventory, used for decomposing GDP fluctuations and generating conditional forecasts for the Monetary Policy Committee. NiGEM (National Institute Global Econometric Model, NIESR) is a large multicountry structural model used by the UK Treasury, OBR, and foreign governments for fiscal and monetary policy simulation in open-economy settings.
+    - **Fiscal policy and tax analysis**: CGE models are the standard tool for assessing the welfare and distributional effects of tax reforms, trade liberalisation, and public investment programmes. The UK's Office for Budget Responsibility uses macroeconomic models for medium-term fiscal forecasting. The IFS (Institute for Fiscal Studies) uses microsimulation models — distributional models that apply tax and benefit rules to microdata on individual household incomes — to analyse the poverty and inequality impacts of Budget measures. CGE models such as GTAP simulate the trade-flow and sectoral output consequences of tariff changes, Brexit trade friction, and carbon border adjustment mechanisms. Dynamic OLG (overlapping generations) models simulate intergenerational fiscal burdens, pension sustainability, and long-run debt trajectories.
+    - **Financial stability and systemic risk**: [[Agent-Based Modelling]] models are used at the [[Bank of England]] for systemic risk analysis — simulating the propagation of bank defaults through interbank networks, fire-sale spirals in asset markets, and contagion through common portfolio holdings. The RAMSI model (Bank of England) and the work of Haldane and May (2011) on financial complexity apply network theory from [[Network Analysis]] to stress-test bank interconnections beyond what DSGE models can capture. Insurance sector stress testing uses stochastic scenario models (copula-based multivariate loss distributions) calibrated to catastrophe model outputs. The [[BIS]] coordinates international stress testing frameworks under Basel III/IV.
+    - **Competition policy and platform economics**: Industrial organisation (IO) models — structural estimation of demand systems (BLP discrete-choice demand), cost functions, and pricing conduct — underpin competition authority decisions on mergers, abuse of dominance, and [[Platform Regulation]]. The [[UK Competition and Markets Authority]] (CMA) uses econometric structural models to simulate the competitive effects of proposed mergers. In digital markets, two-sided platform models (Rochet and Tirole, 2003; Nobel 2014 context) formalise how platforms internalise network externalities when setting prices to each side of the market, informing regulatory intervention in search advertising, app stores, and social media. The economics of data and algorithmic pricing (Calvano et al., 2020 — AI agents learning to collude without explicit communication) represent a frontier application where economic models directly intersect with [[Machine Learning]].
+    - **Climate economics and environmental policy**: Integrated assessment models (IAMs) — notably DICE (Nordhaus, Nobel 2018), PAGE, and FUND — combine simplified economic models of output growth and capital accumulation with carbon cycle and temperature modules to derive the social cost of carbon (SCC) and optimal carbon tax paths. These models are used by the UK Government's Net Zero Review, the IPCC Working Group III, and the [[OECD]] to calibrate climate targets and carbon pricing policy. Input-output models compute embodied carbon in traded goods, supporting carbon border adjustment mechanism design. Agent-based models of energy transitions simulate technology adoption diffusion (solar, EVs) under heterogeneous agent adoption decisions and network effects.
+    - **Labour market and AI economics**: Structural labour market models (search and matching models — Diamond-Mortensen-Pissarides, Nobel 2010) characterise the frictions that generate equilibrium unemployment even in a well-functioning economy, informing active labour market policy design. The economics of automation and AI displacement uses task-based models (Acemoglu and Restrepo, 2018, 2022) to decompose the labour demand effects of technology into displacement (tasks automated away from workers), reinstatement (new tasks for workers), and productivity effects. Agent-based labour market models (Dosi, Fagiolo, Roventini) simulate the distributional consequences of AI adoption across skill classes and sectors — a policy-critical application as AI diffuses through the UK economy.
+    - **Tokenomics and digital asset design**: Economic models are applied to the design and analysis of [[Tokenomics]] systems — the economic mechanisms governing digital assets, decentralised protocols, and blockchain networks. Token engineering applies [[Mechanism Design]] theory to construct incentive structures that align individual agent behaviour with protocol objectives. AMM (Automated Market Maker) pricing models (constant-product, constant-sum, Curve stableswap invariants) are economic models of decentralised exchange; Uniswap v3 concentrated liquidity is analysed using microstructure models derived from the market microstructure economics literature. MEV (maximal extractable value) is formalised as a game-theoretic problem in which searcher agents compete for transaction ordering priority — a direct application of auction theory.
+
+  - ## Academic Context
+    - The intellectual genealogy of economic modelling runs from Ricardo's comparative advantage (1817) and Walras's general equilibrium (1874) through Marshall's partial equilibrium and Pigou's welfare economics, to the mathematisation of the discipline in the mid-20th century: Samuelson's Foundations of Economic Analysis (1947), Arrow and Debreu's existence proof (1954), and Hicks's IS-LM model (1937). The transition from purely analytical models to computational models began with Klein's Keynesian macroeconometric models (1950s, Nobel 1980), Leontief's input-output model (1940s, Nobel 1973), and Kuhn and Tucker's optimisation theory. The rational expectations revolution (Lucas, Sargent, Barro, 1970s) critiqued large-scale Keynesian models for failing to account for agents' forward-looking expectations, paving the way for DSGE. Real Business Cycle theory (Kydland and Prescott, 1982, Nobel 2004) established the DSGE paradigm. Mechanism design theory (Hurwicz, Maskin, Myerson, Nobel 2007) provided rigorous foundations for designing markets and institutions as incentive-compatible mechanisms.
+    - Key theoretical advances of the 2000s-2010s include: HANK models incorporating household balance-sheet heterogeneity (Kaplan, Moll, Violante, 2018); algorithmic mechanism design bringing computational tractability to Myerson's framework (Nisan, Roughgarden, Tardos, Vazirani, 2007); matching theory for market design (Roth, Shapley, Nobel 2012); and Acemoglu-Restrepo task-based models of automation (2018). The 2020s have seen the emergence of machine-learning augmented economic models: the AI Economist (Zheng et al., Salesforce Research, 2020) using deep RL to find optimal progressive tax policies; deep learning solutions to HANK models via sequence-space Jacobians (Auclert et al., 2021); and LLM-driven agent-based economic simulations (ABIDES-Economist, 2024; AI Economist Agent, 2026). Behavioural economics (Kahneman, Nobel 2002; Thaler, Nobel 2017) produced models of systematic deviations from rationality — loss aversion, present bias, overconfidence — that enrich standard models with more empirically grounded decision rules.
+    - Major UK academic centres in economic modelling include: LSE (London School of Economics) — strong in mechanism design, auction theory, labour economics, and microeconometrics; Cambridge (Faculty of Economics) — heterogeneous agent macro, environmental economics, evolutionary game theory; Oxford (Economics) — political economy, development economics, impact evaluation; IFS (Institute for Fiscal Studies) — public economics microsimulation; NIESR — NiGEM macroeconomic model; Bank of England — DSGE, financial stability agent-based models; and Cambridge Econometrics — E3ME CGE model for energy-economy-environment policy simulation.
+
+  - ## Current Landscape (2026)
+    - The dominant institutional models in 2026 remain DSGE-family and large structural econometric models at central banks and multilateral institutions. The Bank of England's 2025 DSGE model update (Lloyd et al., SSRN 2025) added energy goods explicitly into production and consumption functions — a direct response to the 2021-2023 energy price shock revealing the inadequacy of earlier models. HANK models are becoming standard for distributional monetary policy analysis: the HANK model's prediction that monetary transmission operates primarily through indirect household income effects (rather than the direct intertemporal substitution channel of representative-agent models) has been validated empirically, reshaping how central banks communicate policy to the public. The OECD has endorsed agent-based macro models as complements to standard DSGE tools for systemic risk and inequality analysis, reflecting growing recognition of the limitations of representative-agent rational-expectations frameworks for policy analysis in an era of heightened macroeconomic uncertainty and structural change driven by AI. Research at the arXiv and SSRN (2024-2026) shows rapid growth in: data-driven agent-based models calibrated to large microdata sets; multi-agent RL environments for economic policy optimisation; LLM-powered economic agents capable of contextual reasoning about market conditions (ABIDES-Economist, 2024; AI Economist Agent, 2026); and differentiable economic simulation enabling gradient-based parameter calibration. The integration of [[Machine Learning]] as a subject of economic modelling is accelerating as AI-driven productivity effects, platform concentration, and algorithmic pricing become first-order policy concerns, with Francois, Rolland, Shi, and others developing task-based and growth models for AI's macroeconomic impact.
+
+  - ## UK Context
+    - The UK has a distinctive set of institutional and academic contributions to economic modelling. The [[Bank of England]]'s Monetary Policy Committee uses a suite of models — the quarterly DSGE model, the Monetary Policy Committee's Forecasting and Policy System (BEQM predecessor now superseded by COMPASS and GEMM), and satellite models for financial conditions — to produce the quarterly Inflation Report fan charts that communicate probabilistic forecasts and policy conditionality to financial markets and Parliament. The Office for Budget Responsibility (OBR) uses NiGEM and fiscal microsimulation to certify government economic and fiscal forecasts, a constitutional function central to UK fiscal credibility since 2010. The IFS produces microsimulation modelling of UK tax and benefit policy using TAXBEN and its successors — the UK's most influential tool for distributional analysis of Budgets. Cambridge Econometrics' E3ME model has been used for UK energy policy simulation, including the economic impact of net-zero transition pathways, feeding into the Climate Change Committee's assessment of carbon budget feasibility. The LSE's Centre for Economic Performance (CEP) produces structural models of UK productivity, trade costs, and labour market outcomes — including models of the productivity effects of Brexit, AI adoption, and skills mismatch. Northern England has strong industrial-relevance demand for economic modelling: the Northern Powerhouse agenda requires economic models capturing agglomeration externalities, infrastructure investment spillovers, and the consequences of the North-South productivity divide. The University of Manchester has research in agent-based models of industrial dynamics and complex systems economics, while Leeds produces structural labour market models informing combined authority workforce planning.
+
+  - ## Future Directions (2026-2030)
+    - The near-term trajectory of economic modelling is shaped by three convergent forces. First, the incorporation of [[Machine Learning]] into model structure: neural network policy-function approximations will displace log-linearisation in DSGE models, enabling genuinely nonlinear solution of models with heterogeneous agents at scale (building on Auclert et al.'s sequence-space Jacobian and Fernandez-Villaverde's deep learning approaches). Second, the rise of LLM-driven agent-based economic simulation: as LLM agents demonstrate more realistic economic decision-making than hand-coded heuristics, [[Agent-Based Modelling]] will increasingly use LLM reasoning as the agent decision module, enabling economic models that capture linguistic and contextual market dynamics (price discovery through narrative, sentiment effects on investment, policy communication) impossible in formal analytical models. Third, real-time and data-driven model updating: nowcasting models fusing high-frequency alternative data (credit card transactions, job postings, satellite imagery of retail car parks) into structural frameworks will accelerate central bank policy response. Mechanism design for AI systems — designing incentive structures that align AI agent behaviour with social welfare objectives — will emerge as a major applied domain, bridging [[Economics]] and [[AI Governance]]. The [[Tokenomics]] of AI protocols (compute markets, data markets, model marketplaces) will require novel economic modelling frameworks combining network economics, [[Game Theory]], and mechanism design for multi-sided digital platforms with AI-generated supply.
+
+  - ## Historical Timeline
+    - 1776 — Adam Smith publishes *The Wealth of Nations*, establishing the conceptual framework of markets, division of labour, and the price mechanism as a resource allocation device; the intellectual precursor of formal economic modelling.
+    - 1817 — David Ricardo's *Principles of Political Economy and Taxation* introduces comparative advantage, the foundational model of international trade, showing that mutual gains from specialisation arise even when one country is absolutely more productive in all goods.
+    - 1874 — Léon Walras publishes *Éléments d'économie politique pure*, the first formal general equilibrium model: a system of simultaneous equations representing supply and demand clearing across all markets, with price adjustment ensuring equilibrium.
+    - 1890 — Alfred Marshall's *Principles of Economics* establishes partial equilibrium analysis — the supply and demand diagram — as the workhorse analytical tool of microeconomics, introducing concepts of consumer surplus, producer surplus, and elasticity.
+    - 1920 — Arthur Cecil Pigou's *The Economics of Welfare* introduces welfare economics and the concept of externalities, providing the formal basis for tax-based intervention (Pigouvian taxes) in economic models of market failure.
+    - 1936 — John Maynard Keynes's *The General Theory of Employment, Interest and Money* revolutionises macroeconomic modelling, providing a demand-side model of income and employment determination that challenged classical equilibrium macroeconomics.
+    - 1937 — John Hicks formalises Keynesian economics as the IS-LM model, providing a two-equation simultaneous equilibrium framework (goods market and money market) that becomes the dominant macroeconomic teaching model for four decades.
+    - 1941 — Wassily Leontief publishes the first empirical input-output model of the US economy, enabling systematic analysis of inter-industry interdependencies (Nobel Prize 1973).
+    - 1944 — Von Neumann and Morgenstern publish *Theory of Games and Economic Behavior*, introducing formal [[Game Theory]] and expected utility theory as the foundations of strategic economic modelling.
+    - 1947 — Paul Samuelson's *Foundations of Economic Analysis* mathematises economics using revealed preference, comparative statics, and dynamic stability analysis, establishing the formal structure that underlies modern economic model specification.
+    - 1950 — John Nash's dissertation establishes the Nash equilibrium concept for n-player non-cooperative games (Nobel 1994), providing the central solution concept for strategic economic models.
+    - 1954 — Arrow and Debreu prove the existence of competitive general equilibrium under convexity assumptions using Kakutani's fixed-point theorem, establishing the mathematical foundations of Walrasian economics (Nobel for Arrow 1972, Debreu 1983).
+    - 1958 — A.W. Phillips documents the empirical inverse relationship between unemployment and wage inflation (the Phillips Curve), which becomes a central empirical relationship in macroeconomic policy models for two decades, and whose breakdown in the 1970s stagflation motivates the rational expectations revolution.
+    - 1970s — Rational expectations revolution (Lucas, Sargent, Barro) critiques large-scale Keynesian macroeconometric models (Klein's Brookings model) for failing to model forward-looking agent behaviour; the Lucas critique (1976) establishes that reduced-form policy models are not policy-invariant.
+    - 1979 — Roger Myerson publishes the Revelation Principle, providing the foundational theorem of [[Mechanism Design]] theory: any mechanism's equilibrium outcome can be replicated by an incentive-compatible direct revelation mechanism (Nobel 2007, with Hurwicz and Maskin).
+    - 1982 — Kydland and Prescott introduce the Real Business Cycle model and the first DSGE model, combining intertemporal household optimisation, firm profit maximisation, and stochastic technology shocks in a calibrated general equilibrium model (Nobel 2004).
+    - 1990s — Computational economics emerges: CGE models become practical for policy analysis with improved algorithms; agent-based computational economics (ACE) develops at the Santa Fe Institute (Arthur, Holland, LeBaron); dynamic programming and value function iteration become standard for heterogeneous agent models.
+    - 1997 — Arthur et al.'s Santa Fe artificial stock market demonstrates that heterogeneous adaptive agents in a simulated financial market produce realistic fat-tailed return distributions and volatility clustering — seminal agent-based economic model.
+    - 2003 — Smets and Wouters' estimated DSGE model for the euro area establishes Bayesian MCMC estimation as the standard methodology for fitting structural macroeconomic models to data, making DSGE operational for central bank forecasting.
+    - 2007 — Nisan, Roughgarden, Tardos, and Vazirani publish *Algorithmic Game Theory*, establishing the field at the intersection of [[Game Theory]], computer science, and mechanism design, with applications to internet market design, network routing, and algorithmic auctions.
+    - 2010 — Acemoglu and Robinson's *Why Nations Fail* (2012) and the subsequent task-based automation literature (Acemoglu-Restrepo, 2018) extend economic modelling to explain the distributional consequences of technological change and institutions — bridging historical political economy with formal economic models.
+    - 2018 — HANK (Heterogeneous Agent New Keynesian) models (Kaplan, Moll, Violante) incorporate household balance-sheet heterogeneity into DSGE, revealing that monetary policy transmission operates primarily through indirect income effects on liquidity-constrained households rather than direct intertemporal substitution — reshaping central bank communications.
+    - 2020 — AI Economist (Zheng et al., Salesforce Research) demonstrates that deep reinforcement learning can find optimal progressive tax policies in an agent-based economic model environment, outperforming both Saez's analytical formula and equilibrium model prescriptions on the equality-productivity trade-off frontier.
+    - 2024-2026 — LLM-driven economic agent models (ABIDES-Economist, AI Economist Agent) and differentiable ABM calibration emerge; [[Machine Learning]] becomes simultaneously a technique for enriching economic models and a subject of economic modelling as AI's macroeconomic impacts become first-order policy concerns.
+
+  - ## Contrast with Related Frameworks
+    - **Economic Model vs. [[Agent-Based Modelling]]**: Standard economic models (partial/general equilibrium, DSGE) impose equilibrium as an assumed condition — agents are assumed to solve intertemporal optimisation problems, markets are assumed to clear, and expectations are assumed to be consistent with the model's own predictions. This produces tractable, analytically estimable systems but rules out disequilibrium dynamics, systemic crises, and the heterogeneous micro-level behaviour that drives distributional outcomes. [[Agent-Based Modelling]] relaxes all of these assumptions: agents are heterogeneous and boundedly rational, markets need not clear at every period, and the modeller does not specify a global equilibrium condition but instead programs agent decision rules and allows aggregate outcomes to emerge from decentralised interaction. The trade-off is tractability versus realism: equilibrium models can be formally estimated, identified, and used for structural counterfactuals; ABMs are harder to estimate and validate but can generate phenomena (financial crises, unemployment fluctuations, innovation diffusion waves) that equilibrium models produce only with ad hoc modifications. Modern practice increasingly combines both: ABMs for scenario analysis and distributional dynamics, [[General Equilibrium Models]] for structural policy counterfactuals with formal welfare analysis.
+    - **Economic Model vs. [[Simulation]]**: Simulation is the broader computational methodology of which agent-based economic models and Monte Carlo economic analyses are instances. General simulation covers physical and natural systems (climate, fluid dynamics, epidemiology) far beyond the scope of economic modelling. Within economics, [[Simulation]] refers specifically to computational methods that are not analytically tractable — Monte Carlo integration over parameter uncertainty, agent-based simulation of market microstructure, and DSGE solution via global methods (projection, perturbation) rather than closed-form derivation. The intersection of economics and [[Simulation]] has produced differentiable economic simulation (ABMax, 2025), agent-based macroeconomic simulators (Eurace, MATLAB-based DSGE toolboxes), and real-time econometric simulation for policy stress testing. The conceptual distinction is that economic models specify the objectives, constraints, and equilibrium conditions that agents and markets must satisfy, while simulation specifies transition rules that are iterated forward from an initial state.
+    - **Economic Model vs. [[Statistical Model]]**: Statistical models (regression, time-series, machine learning) fit relationships between observed variables from data without necessarily imposing structural constraints derived from economic theory. The Lucas critique (Lucas, 1976) established that reduced-form statistical relationships change when policy changes, because agents rationally adjust their behaviour in response to the new regime — making purely statistical models unreliable for counterfactual policy analysis. Structural economic models are designed to be policy-invariant: their parameters (preferences, technology) do not depend on the policy regime, only agents' decision rules (endogenous variables) do. In practice, the boundary between economic and statistical modelling has blurred with [[Machine Learning]]: LASSO-regularised VARs, neural network forecasting models, and causal forest methods (Wager and Athey, 2018) occupy a middle ground between pure reduced-form statistics and full structural economic modelling, offering causal identification with data-adaptivity beyond what parametric structural models can achieve.
+    - **Equilibrium Model vs. Disequilibrium Model**: Most standard economic models impose market clearing as an equilibrium condition, assuming that prices adjust instantaneously to equalise supply and demand. Disequilibrium models (Barro and Grossman, 1971; Malinvaud, 1977) allow quantity rationing when prices are sticky — workers may be rationed in employment markets (involuntary unemployment), firms may be rationed in goods markets (demand-constrained output). New Keynesian DSGE models partially accommodate this through price and wage stickiness (Calvo pricing), but still impose rational expectations equilibrium in each period. Agent-based models are inherently disequilibrium: agents set prices and quantities based on bounded-rational rules, and aggregate supply may not equal demand in any individual period, with inventories, credit, and unmet demands constituting the market state dynamics that drive subsequent adjustment.
+
+  - ## Formal Mathematical Treatment
+    - The formal structure of the core economic model families can be expressed with considerable precision. A partial equilibrium model of a competitive market is defined by a demand function Q^d(p; θ^d) and supply function Q^s(p; θ^s) where p is price and θ^d, θ^s are demand and supply parameters (income, input costs, preferences, technology). Equilibrium is the price p* satisfying Q^d(p*; θ^d) = Q^s(p*; θ^s); comparative static analysis computes dp*/dθ using the implicit function theorem. Welfare is measured by consumer surplus CS = ∫_{p*}^{p_max} Q^d(p)dp and producer surplus PS = ∫_{p_min}^{p*} Q^s(p)dp, with deadweight loss measuring efficiency losses from market distortions (taxes, price controls, externalities). A Walrasian general equilibrium is an n-commodity model with m consumers and k firms: each consumer i has utility function U_i(x_i) defined over commodity bundle x_i, budget constraint p·x_i ≤ p·ω_i + Σ_j θ_{ij}π_j where ω_i is initial endowment and θ_{ij} is consumer i's share of firm j's profits π_j; each firm j maximises π_j = p·y_j over its production possibility set Y_j. Equilibrium is a price vector p* ∈ R^n_+ and allocation (x_i*, y_j*) such that each consumer maximises utility given p* and budget, each firm maximises profits given p*, and all markets clear: Σ_i x_i* = Σ_i ω_i + Σ_j y_j*. Arrow-Debreu proved existence under convexity and continuity assumptions via Kakutani's fixed-point theorem. DSGE models are expressed in recursive form as a system of equilibrium conditions: E_t[F(y_{t+1}, y_t, y_{t-1}, u_t; θ)] = 0, where y_t is the vector of endogenous variables (output, consumption, investment, inflation, employment), u_t is a vector of exogenous shocks, θ is the parameter vector, and E_t denotes rational expectations conditional on information at time t. The system is log-linearised around the non-stochastic steady state ȳ satisfying F(ȳ, ȳ, ȳ, 0; θ) = 0, and the linear system Aŷ_{t+1|t} + Bŷ_t + Cŷ_{t-1} + Du_t = 0 (where ŷ_t = log(y_t/ȳ)) is solved using the Blanchard-Kahn method, which finds the unique stable saddle-path solution under standard conditions on the eigenvalues of the system matrix. Bayesian estimation uses the Kalman filter to evaluate the likelihood L(θ|Y^T) = Π_{t=1}^T p(y_t|Y^{t-1}; θ) and combines it with a prior p(θ) via Bayes' theorem to obtain the posterior p(θ|Y^T) ∝ L(θ|Y^T)p(θ), sampled using Metropolis-Hastings MCMC. The Leontief input-output model is x = Ax + d, where x is the n×1 output vector, A is the n×n matrix of technical input coefficients (A_{ij} = fraction of sector i's output used per unit of sector j's output), and d is the final demand vector; the solution x = (I - A)^{-1}d exists when the Leontief inverse (I - A)^{-1} = I + A + A^2 + ... converges, guaranteed when A is productive (i.e., has spectral radius ρ(A) < 1). Mechanism design formalises the planner's problem as: choose a direct revelation mechanism M = (Θ, g) with message space Θ (the type space) and outcome function g: Θ^n → X such that truthful reporting is a dominant strategy for every agent i (incentive compatibility: u_i(g(θ_i, θ_{-i}), θ_i) ≥ u_i(g(θ_i', θ_{-i}), θ_i) ∀θ_i, θ_i', θ_{-i}) and every agent prefers to participate (individual rationality: u_i(g(θ_i, θ_{-i}), θ_i) ≥ ū_i). The Revelation Principle guarantees that any mechanism's equilibrium outcome can be replicated by such a truth-telling direct mechanism.
+
+  - ## Benchmark Datasets and Model Validation
+    - Economic models are validated and calibrated against a range of high-quality institutional data sources that define the empirical benchmarks of the discipline. National accounts (GDP, consumption, investment, government expenditure, net exports) from the UK Office for National Statistics (ONS), US Bureau of Economic Analysis (BEA), and the OECD National Accounts database provide the primary time series against which macroeconomic models (DSGE, NiGEM, VAR) are calibrated. The Penn World Tables (PWT 10.0, Feenstra, Inklaar, Timmer, 2015) provide cross-country data on GDP per capita, productivity, and capital stocks at purchasing-power-adjusted prices across 183 countries from 1950, enabling international comparative calibration of growth models. For labour market models, the Labour Force Survey (LFS, UK), Current Population Survey (CPS, US), and EU Labour Force Survey provide detailed individual-level data on employment, unemployment, wages, hours, and skill levels used for structural labour market model estimation. The Global Trade Analysis Project (GTAP) database (version 11, 2023) contains sector-level input-output tables, trade flows, and factor endowments for 160 countries and 65 sectors, used to calibrate CGE trade models. The World Input-Output Database (WIOD, 2016 release) provides time-series multi-country IO tables covering 43 countries and 56 sectors, enabling dynamic IO model calibration. For financial models, the BIS locational banking statistics provide international banking flow data; the ECB Securities Holdings Statistics provide granular data on European sovereign bond holdings by institution. The World Inequality Database (WID.world) provides pre-tax income distribution data across countries and decades, used to calibrate distributional HANK models and evaluate inequality predictions of fiscal policy models. For agent-based economic model validation, stylised facts benchmarks include: the Pareto distribution of firm sizes (power-law exponent approximately 1), the fat-tailed distribution of GDP growth rates (Laplace distribution, Fagiolo et al., 2008), the procyclicality of credit and investment, and the volatility clustering of financial returns (GARCH dynamics). The FRED (Federal Reserve Economic Data) database at St. Louis Fed provides over 800,000 US economic time series used for model calibration and nowcasting; the UK equivalent is the Bank of England's Statistical Interactive Database (IADB). Machine-learning-augmented economic models have introduced new validation benchmarks: the AI Economist evaluates tax policy models against equality-productivity Pareto frontiers measured by Gini coefficient and aggregate output; ABIDES-Economist validates learning-agent models against empirical market microstructure statistics (price impact curves, order book depth distributions, bid-ask spread dynamics).
+
+  - ## Limitations and Critiques
+    - All economic models face fundamental critiques that limit their reliability as guides to policy and prediction. The Lucas critique (Robert Lucas, 1976) established that the behavioural relationships estimated in macroeconometric models are not policy-invariant: when policy changes, agents adjust their expectations and behaviour, invalidating the estimated correlations. This critique motivated the shift from large-scale Keynesian econometric models to structural DSGE models with explicit microfoundations in agents' intertemporal optimisation — but DSGE models face their own critiques. DSGE models require rational expectations (all agents form expectations consistent with the model's own probability law) — a profoundly demanding assumption that rules out systematic forecasting errors, bubbles, herding behaviour, and the heterogeneous belief dynamics that drive financial crises. The representative agent assumption in standard DSGE models (all households and firms are identical aggregations of a representative individual) prevents modelling distributional consequences of policy, eliminating from the model the heterogeneity of wealth, income, and balance-sheet positions that is central to observed monetary and fiscal transmission. The linearisation requirement (log-linearisation around a non-stochastic steady state) limits DSGE to local perturbation analysis, producing model dynamics that are only valid for small shocks — fundamentally limiting their use in analysing rare but large events (financial crises, pandemics, supply shocks) which are exactly the events where policy guidance is most needed. The calibration vs. estimation debate highlights a further tension: DSGE models calibrated to match a small set of long-run moments may not fit the short-run dynamics in the data, while models estimated by Bayesian MCMC may fit the data but produce parameter estimates with difficult structural interpretations. Computable general equilibrium models face critiques of their own: the Armington assumption (each country's goods are imperfect substitutes for other countries' equivalent goods) is a maintained hypothesis that drives international trade responses and may be poorly calibrated; calibration to a single observed social accounting matrix means the model has no degrees of freedom for specification testing; and CGE models typically assume no unemployment or financial frictions, limiting their relevance for economic crisis analysis. Agent-based economic models are criticised for lack of uniqueness (many different sets of agent rules can produce similar aggregate statistics, making identification of the "true" model difficult), proliferation of free parameters (without equilibrium conditions to anchor parameters, modellers have more degrees of freedom, requiring stronger calibration discipline), and difficulty of formal statistical estimation (though differentiable ABM methods are beginning to address this). The most fundamental critique of all model families is model uncertainty: the "true" model of the economy is unknown, and all available models are wrong in different ways. Bayesian model averaging, robust decision-making, and scenario analysis across model families are the standard practical responses to this irreducible uncertainty.
+
+  - ## Standards and Governance
+    - Economic models are embedded within extensive institutional frameworks that govern their production, validation, and use in public policy. The [[IMF]] Article IV consultation process requires member countries to submit economic data and model-based forecasts annually, reviewed by IMF staff using the IMF's own suite of models (GIMF — Global Integrated Monetary and Fiscal model; DSGE models for individual country assessments; Global Projection Model for near-term forecasts). The [[Bank of England]]'s Monetary Policy Committee (MPC) governance framework requires that all model-based projections used in Inflation Report fan charts be documented in technical working papers and subject to external review by the Bank's Monetary Policy Committee Stakeholder Advisory Panel. The UK's OBR (Office for Budget Responsibility), established under the Budget Responsibility and National Audit Act 2011, is the constitutional authority for independent economic forecasting, using a combination of NiGEM, internal structural models, and HMRC microsimulation to produce the Fiscal Sustainability Reports and Economic and Fiscal Outlook that underpin every UK Budget. Model documentation standards are enforced through peer review: all major central bank models are published as staff working papers with full technical appendices; the Bank of England, ECB, and Federal Reserve cross-validate each other's international models through the Global Macro Modelling (GMM) network. The [[OECD]] coordinates multi-country model comparison through the International Futures Programme and produces the OECD Economic Outlook using NiGEM as the baseline international model. For CGE trade models, the GTAP Consortium (Purdue University) provides standardised data protocols, model documentation, and validation against observed trade flows and price responses. Academic standards for economic model publication are set through journals: the American Economic Review, Econometrica, Review of Economic Studies, and Quarterly Journal of Economics require structural models to pass referee peer review on identification, estimation validity, and specification testing. For agent-based economic models, no single standard body equivalent to the ODD protocol (for ecological/social ABMs) has been established, but the Journal of Economic Dynamics and Control and the Journal of Economic Behavior and Organisation have emerged as primary venues with de facto documentation expectations covering model description, validation against stylised facts, and sensitivity analysis. The [[OECD]]'s Framework for Regulatory Policy — incorporating regulatory impact assessment (RIA) — mandates economic modelling of the costs and benefits of proposed regulation, using partial equilibrium (consumer surplus, producer surplus, deadweight loss) or CGE frameworks depending on the scope of the regulatory intervention. The [[World Bank]] and [[IMF]] Debt Sustainability Analysis (DSA) framework applies macro-fiscal modelling to assess sovereign debt sustainability, producing the debt trajectory models used in Programme negotiations with member states. In the UK context, the OBR's Charter for Budget Responsibility specifies that all Budget fiscal measures must be scored against a published macroeconomic framework using models whose assumptions are publicly documented — a transparency standard that places economic modelling at the centre of the UK's fiscal constitution. The Financial Conduct Authority (FCA) and Prudential Regulation Authority (PRA) use economic models for stress testing of financial institutions: the Bank of England's annual concurrent stress test applies macro-financial models to assess capital adequacy under severe but plausible macroeconomic scenarios defined by economic models (GDP contraction of 5%, unemployment rise to 12%, house price falls of 33%).
+
+  - ## Key Terminology
+    - **General equilibrium**: a state in which all markets simultaneously clear, with prices adjusting so that quantity supplied equals quantity demanded in every market simultaneously; the foundational solution concept of Walrasian and DSGE economics.
+    - **Partial equilibrium**: analysis of a single market treating other markets as fixed; the standard tool of applied microeconomics and competition policy.
+    - **DSGE (Dynamic Stochastic General Equilibrium)**: the dominant family of macroeconomic structural models, combining intertemporal optimisation, rational expectations, market clearing, and stochastic shocks; the standard model type at central banks.
+    - **HANK (Heterogeneous Agent New Keynesian)**: extension of DSGE incorporating a distribution over household wealth and income, capturing heterogeneous monetary policy transmission through indirect income effects rather than direct intertemporal substitution.
+    - **Mechanism design**: the engineering branch of [[Game Theory]] that designs game rules (message spaces, outcome functions) to implement desired social outcomes as equilibria; also called "reverse game theory" or "incentive design".
+    - **Incentive compatibility**: property of a mechanism in which truthful reporting of private information is each agent's dominant strategy, eliminating strategic misrepresentation.
+    - **Pareto efficiency**: allocation in which no agent can be made better off without making at least one agent worse off; the standard welfare benchmark in economic models, contrasted with Pareto improvements (changes that make all agents weakly better off).
+    - **Social welfare function**: a function aggregating individual utilities into a social objective; specifies distributional weights (Utilitarian = equal weights; Rawlsian = max-min over worst-off agent; Bergson-Samuelson = general increasing function).
+    - **Computable general equilibrium (CGE)**: large-scale, multi-sector general equilibrium model calibrated to social accounting matrix data, used for trade and tax policy simulation; examples include GTAP, E3ME, ORANI.
+    - **Structural estimation**: econometric estimation of a formal economic model's parameters from data, enabling counterfactual prediction that is invariant to the Lucas critique (as opposed to reduced-form estimation that captures correlations in historically observed data).
+    - **Calibration**: setting model parameters to match selected empirical moments (long-run growth rate, capital-output ratio, unemployment rate) rather than estimating them statistically; used when data is insufficient for identification.
+    - **Counterfactual**: a model-generated prediction of what would have happened under a different policy, technology, or historical path than actually observed; the primary use of structural economic models for policy evaluation.
+    - **Agent-based computational economics (ACE)**: the application of [[Agent-Based Modelling]] methodology to economics; agents are heterogeneous, boundedly rational, and interact through decentralised market mechanisms, with aggregate outcomes emerging from micro-level behaviour rather than assumed equilibrium conditions.
+    - **Social accounting matrix (SAM)**: a comprehensive, double-entry matrix representation of all economic transactions in an economy within a period (production, distribution, consumption, capital accounts, rest of world); the calibration data source for CGE models.
+    - **Identification**: the statistical property of a model in which a unique parameter vector maps to the observed data distribution; weak identification occurs when many parameter values are approximately observationally equivalent, inflating estimation uncertainty.
+
+  - ## Research & Literature
+    - [1] Walras, L. (1874). *Éléments d'économie politique pure*. Corbaz, Lausanne. [Foundational general equilibrium]
+    - [2] Leontief, W. (1941). *The Structure of American Economy, 1919-1929*. Harvard University Press. [Input-output model]
+    - [3] Arrow, K.J. and Debreu, G. (1954). Existence of an equilibrium for a competitive economy. *Econometrica*, 22(3), 265-290.
+    - [4] Samuelson, P.A. (1947). *Foundations of Economic Analysis*. Harvard University Press.
+    - [5] Kydland, F.E. and Prescott, E.C. (1982). Time to build and aggregate fluctuations. *Econometrica*, 50(6), 1345-1370. [Real Business Cycle / DSGE foundations]
+    - [6] Smets, F. and Wouters, R. (2003). An estimated dynamic stochastic general equilibrium model of the euro area. *Journal of the European Economic Association*, 1(5), 1123-1175.
+    - [7] Myerson, R.B. (1979). Incentive compatibility and the bargaining problem. *Econometrica*, 47(1), 61-74. [Mechanism design revelation principle]
+    - [8] Nash, J.F. (1950). The bargaining problem. *Econometrica*, 18(2), 155-162.
+    - [9] Arthur, W.B., Holland, J.H., LeBaron, B., Palmer, R. and Tayler, P. (1997). Asset pricing under endogenous expectations in an artificial stock market. *The Economy as an Evolving Complex System II*, 15-44.
+    - [10] Tesfatsion, L. and Judd, K.L. (eds) (2006). *Handbook of Computational Economics, Vol. 2: Agent-Based Computational Economics*. Elsevier.
+    - [11] Rochet, J.C. and Tirole, J. (2003). Platform competition in two-sided markets. *Journal of the European Economic Association*, 1(4), 990-1029.
+    - [12] Acemoglu, D. and Restrepo, P. (2018). The race between man and machine: Implications of technology for growth, factor shares, and employment. *American Economic Review*, 108(6), 1488-1542.
+    - [13] Kaplan, G., Moll, B. and Violante, G.L. (2018). Monetary policy according to HANK. *American Economic Review*, 108(3), 697-743.
+    - [14] Diamond, P.A. (1982). Aggregate demand management in search equilibrium. *Journal of Political Economy*, 90(5), 881-894.
+    - [15] Holmström, B. and Milgrom, P. (1987). Aggregation and linearity in the provision of intertemporal incentives. *Econometrica*, 55(2), 303-328.
+    - [16] Dosi, G., Fagiolo, G. and Roventini, A. (2010). Schumpeter meeting Keynes: A policy-friendly model of endogenous growth and business cycles. *Journal of Economic Dynamics and Control*, 34(9), 1748-1767.
+    - [17] Auclert, A., Bardóczy, B., Rognlie, M. and Straub, L. (2021). Using the sequence-space Jacobian to solve and estimate heterogeneous-agent models. *Econometrica*, 89(5), 2375-2408.
+    - [18] Calvano, E., Calzolari, G., Denicolò, V. and Pastorello, S. (2020). Artificial intelligence, algorithmic pricing, and collusion. *American Economic Review*, 110(10), 3267-3297.
+    - [19] Nordhaus, W.D. (2017). Revisiting the social cost of carbon. *PNAS*, 114(7), 1518-1523.
+    - [20] Zheng, S., Trott, A., Srinivasa, S., Naik, N., Prokoshev, M., et al. (2020). The AI Economist: Improving equality and productivity with AI-driven tax policies. *arXiv:2004.13332*.
+    - [21] Lloyd, S., Albuquerque, D., Chan, J., Kanngiesser, D., Latto, D., Singh, S. and Zacek, J. (2025). Decompositions, forecasts and scenarios from an estimated DSGE model for the UK economy. *Bank of England Staff Working Paper / SSRN 5377801*.
+    - [22] Dawid, H. et al. (2019). Agent-based macroeconomic modeling and policy analysis: The Eurace@Unibi model. *Handbook on Complexity Economics*, Elgar.
+    - [23] Nisan, N., Roughgarden, T., Tardos, E. and Vazirani, V.V. (eds) (2007). *Algorithmic Game Theory*. Cambridge University Press.
+    - [24] ABIDES-Economist Team (2024). ABIDES-Economist: Agent-based simulation of economic systems with learning agents. *arXiv:2402.09563*.
+    - [25] Milgrom, P. and Wilson, R. (2020). Auction theory for the real world. Nobel Prize lecture, Stockholm. [Auction theory foundations]
+    - [26] Haldane, A.G. and May, R.M. (2011). Systemic risk in banking ecosystems. *Nature*, 469(7330), 351-355.
+    - [27] Acemoglu, D. and Restrepo, P. (2022). Tasks, automation, and the rise in US wage inequality. *Econometrica*, 90(5), 1973-2016.
+    - [28] AI Economist Agent (2026). An agentic framework for model-grounded economic analysis with RAG, knowledge graphs, and LLMs. *arXiv:2606.20041*.
+
+- ### Provenance
+  - sources:: Bank of England DSGE Working Paper (Lloyd et al., SSRN 5377801, 2025); Oxford Review of Economic Policy (agent-based macro, 2024); ABIDES-Economist arXiv:2402.09563 (2024); AI Economist Agent arXiv:2606.20041 (2026); Tesfatsion and Judd Handbook of Computational Economics (2006); Calvano et al. AER (2020); Kaplan, Moll, Violante AER (2018); Arrow and Debreu Econometrica (1954); Nordhaus PNAS (2017); Zheng et al. AI Economist arXiv:2004.13332
+  - migration-date:: 2026-06-21T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

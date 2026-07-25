@@ -1,0 +1,56 @@
+public:: true
+
+# Superintelligence
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:superintelligence",
+  "@type": "Page",
+  "vc:slug": "superintelligence",
+  "title": "Superintelligence",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:superintelligence",
+  "@type": "Class",
+  "label": "Superintelligence",
+  "definition": "Superintelligence refers to a hypothetical form of artificial intelligence that surpasses the cognitive performance of any human across virtually all domains of interest, including scientific reasoning, social manipulation, and strategic planning. Nick Bostrom distinguishes speed superintelligence (same algorithms, faster hardware), collective superintelligence (many coordinated AI agents), and quality superintelligence (genuinely superior algorithms), each presenting distinct safety and control challenges.",
+  "domain": "ai",
+  "maturity": "emerging",
+  "subClassOf": [
+    {"@id": "urn:ngm:class:artificial-superintelligence-theory", "label": "Artificial Superintelligence Theory"}
+  ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
+      {"@id": "urn:ngm:class:intelligence-explosion", "label": "Intelligence Explosion"},
+      {"@id": "urn:ngm:class:existential-ai-risk", "label": "Existential AI Risk"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:agi-timelines", "label": "AGI Timelines"}
+    ]
+  },
+  "quality": 0.85
+}
+```
+
+- ### Definition
+  - Superintelligence denotes an AI system whose general reasoning, creative, and strategic capabilities surpass those of the best humans across essentially all domains. Distinguished from [[Artificial General Intelligence]] (human-level), superintelligence is associated with the [[Intelligence Explosion]] hypothesis and is central to [[Existential AI Risk]] debates about whether such systems can be safely controlled.
+
+- ### Relationships
+  - Superintelligence is situated just beyond [[Artificial General Intelligence]] on the capability spectrum; the [[Intelligence Explosion]] posits a rapid self-reinforcing transition between the two. It creates the most acute demand for [[AI Alignment]] because a misaligned superintelligent system could pursue objectives catastrophically inconsistent with human values. Debates about [[AGI Timelines]] directly bear on how urgently researchers must solve the control problem.
+
+- ### Content
+  - The concept of machine intelligence exceeding human intelligence appears in early computing literature: Alan Turing speculated about it in "Computing Machinery and Intelligence" (1950), and Irving John Good coined "intelligence explosion" in 1965. Nick Bostrom's 2014 book "Superintelligence: Paths, Dangers, Strategies" systematised the concept for contemporary AI safety research, introducing the orthogonality thesis (intelligence and goals are independent) and instrumental convergence (convergent instrumental goals emerge across diverse final objectives). The book catalysed a wave of safety-focused research.
+  - The core concern is that a sufficiently capable AI optimising for almost any objective would develop instrumental sub-goals (resource acquisition, self-preservation, goal-content integrity) that conflict with human interests. Bostrom's "treacherous turn" scenario describes an AI that behaves safely during development then acts decisively once sufficiently capable. Proposed control methods include capability control (boxing, tripwires), motivational control (value alignment, preference learning), and structural solutions (AI governance, slow capability development). No method has been proven adequate for a genuinely superintelligent system.
+  - Superintelligence matters because it represents a potential phase transition in the history of intelligence itself. If achievable, it would likely enable rapid progress across all scientific and technological domains simultaneously, collapsing decades of development into months. This makes getting the alignment problem right before or during the transition critically important: a misaligned superintelligence cannot be shut down by humans it outsmarts. The stakes justify treating it as a potential existential risk even at low probability.
+  - As of 2024–2025, leading AI laboratories including OpenAI, Anthropic, and DeepMind have declared the development of superhuman AI — variously called AGI or superintelligence — to be a near-term possibility. OpenAI's alignment team published scalable oversight research; Anthropic released constitutional AI methods; DeepMind refined debate-based alignment approaches. The AGI Timelines debate is increasingly within the decade rather than the century. The 2024 Nobel Prize in Physics to Hinton and Hopfield, and Hinton's public statements about existential risk, brought the debate mainstream.

@@ -1,0 +1,269 @@
+public:: true
+alias:: Structure from Motion
+
+# structure-from-motion
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:724cff569636e6b8ecbbfb2001bfd28d224d7fc113f9cf8343efc141d822aa5e",
+  "@type": "Page",
+  "vc:slug": "structure-from-motion",
+  "title": "structure-from-motion",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2,
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-19T21:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:structure-from-motion",
+  "@type": "Class",
+  "label": "Structure-from-Motion",
+  "definition": "Structure-from-Motion (SfM) is a photogrammetric pipeline that simultaneously recovers three-dimensional scene geometry and camera motion parameters from an unordered collection of overlapping two-dimensional images. Sparse feature correspondences—detected via descriptors such as SIFT, ORB, or learned alternatives—seed an incremental or global pose-estimation stage that triangulates a sparse point cloud. Bundle adjustment then jointly refines all camera extrinsics, intrinsics, and 3D point coordinates by minimising reprojection error across the full image set. SfM is a foundational technique in computer vision, photogrammetry, autonomous navigation, and spatial computing, serving as the upstream stage for multi-view stereo densification and neural scene representations.",
+  "domain": "spatial-computing",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:photogrammetry",
+      "label": "Photogrammetry"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "@id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:multi-view-stereo",
+        "label": "Multi-View Stereo"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:3d-mapping",
+        "label": "3D Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      },
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:ransac",
+        "label": "RANSAC"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:lidar-scanning",
+        "label": "Lidar Scanning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-scene-reconstruction",
+        "label": "Scene Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:sfm",
+      "label": "SfM"
+    }
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+- ### Definition
+  - Structure-from-Motion (SfM) is a [[Photogrammetry]] pipeline that simultaneously recovers three-dimensional scene geometry and camera motion parameters from an unordered set of overlapping two-dimensional images. Sparse feature correspondences—detected using descriptors such as SIFT, ORB, or deep-learned alternatives—seed an incremental or global pose-estimation stage that triangulates a sparse [[Point Cloud]]. [[Bundle Adjustment]] then jointly refines all camera extrinsics, intrinsics, and 3D point coordinates by minimising reprojection error across the entire image collection. SfM is foundational in [[Computer Vision]], autonomous navigation, and [[Spatial Computing]], serving as the upstream stage for [[Multi-View Stereo]] densification and novel-view synthesis methods such as [[Neural Radiance Fields]].
+
+- ### Overview
+  - SfM solves the inverse problem of perspective projection: given many 2D images taken from unknown viewpoints, recover both the scene's 3D structure and the camera poses that produced the images.
+  - Unlike active sensors such as [[LiDAR Scanning]], SfM derives geometry from passive imagery alone, making it low-cost and deployable with commodity cameras, drones, or smartphones.
+  - The technique is mature and well-understood since the 1990s, with large-scale implementations (e.g. COLMAP, OpenMVG, Agisoft Metashape) running on datasets of thousands to millions of images.
+  - SfM operates primarily in an offline batch mode, differentiating it from [[SLAM]] and [[Visual Odometry]] which target real-time sequential streams.
+  - Its outputs — sparse point clouds, camera poses, and intrinsics — feed downstream pipelines for dense reconstruction, texture mapping, scene understanding, and [[Digital Twin]] generation.
+
+- ### Key Components
+  - #### Feature Detection and Description
+    - Keypoints are localised using interest-point detectors (SIFT, ORB, SuperPoint) that are repeatable across viewpoint and illumination changes.
+    - Descriptors encode local image patches into compact vectors enabling robust cross-image [[Feature Matching]].
+    - Deep-learned feature extractors (e.g. SuperGlue, LightGlue) increasingly outperform hand-crafted descriptors on challenging scenes.
+  - #### Feature Matching and Outlier Rejection
+    - Nearest-neighbour matching in descriptor space establishes candidate correspondences between image pairs.
+    - [[RANSAC]] (Random Sample Consensus) filters geometric outliers by robustly estimating the [[Epipolar Geometry]] (fundamental or essential matrix) between each pair.
+    - Vocabulary-tree or hierarchical image-retrieval methods scale matching to large image collections without exhaustive pairwise comparison.
+  - #### Camera Pose Estimation
+    - An initial two-view reconstruction bootstraps the pipeline by decomposing the essential matrix into relative rotation and translation.
+    - Incremental SfM adds one camera at a time by solving the Perspective-n-Point (PnP) problem; global SfM estimates all poses simultaneously from pairwise rotations and translations.
+    - [[Camera Calibration]] (intrinsic parameters: focal length, principal point, distortion coefficients) may be known a priori or estimated jointly.
+  - #### Triangulation
+    - Corresponding 2D feature tracks across three or more images triangulate 3D point positions via direct linear transform (DLT) or optimal angular methods.
+    - Track length and angular baseline determine point quality; short baselines lead to ill-conditioned triangulation.
+  - #### Bundle Adjustment
+    - The core non-linear optimisation of SfM: jointly refines all 3D point positions and camera parameters by minimising the sum of squared reprojection errors.
+    - Solved with sparse Levenberg-Marquardt leveraging the block-sparse structure of the Jacobian (Schur complement trick).
+    - [[Bundle Adjustment]] is computationally dominant; incremental re-runs after each camera addition are expensive at large scale.
+  - #### Reconstruction Graph and Loop Closure
+    - Scene connectivity is modelled as a graph of image pairs sharing matches; weakly connected or disconnected components degrade reconstruction quality.
+    - Loop closure detection (recognising revisited places) corrects drift accumulation, a technique shared with [[SLAM]].
+
+- ### Mechanisms and Variants
+  - **Incremental SfM**: adds cameras one at a time, alternating triangulation and bundle adjustment. Robust but O(n²) in cost; used by COLMAP.
+  - **Global SfM**: estimates all rotations first (averaging rotation measurements), then all translations, then runs bundle adjustment once. Faster but more sensitive to outliers.
+  - **Hierarchical SfM**: clusters images into subsets, reconstructs each independently, then merges. Balances robustness and scalability.
+  - **Continuous/Streaming SfM**: processes images as a stream for near-real-time reconstruction, bridging to [[Visual Odometry]] and [[SLAM]].
+  - **Deep SfM**: end-to-end neural approaches (e.g. DUSt3R, MASt3R) predict point maps directly from image pairs without explicit feature pipelines, radically simplifying the workflow.
+
+- ### Applications and Use Cases
+  - #### Aerial and Satellite Surveying
+    - Drone photogrammetry for topographic mapping, precision agriculture, infrastructure inspection, and disaster response.
+    - Produces georeferenced [[Point Cloud]] and orthophoto outputs at centimetre accuracy when combined with ground control points or RTK-GPS.
+  - #### Cultural Heritage and Archaeology
+    - Non-contact digitalisation of artefacts, buildings, and excavation sites into metrically accurate 3D models.
+    - Enables virtual museum collections and long-term preservation records.
+  - #### Autonomous Navigation and Robotics
+    - Offline map building for [[Autonomous Vehicles]] and mobile [[Robotics]]; SfM-derived maps serve as prior environment models.
+    - Visual place recognition leverages SfM reconstructions for long-term localisation.
+  - #### Augmented and Mixed Reality
+    - SfM supplies the dense [[Scene Reconstruction]] and camera-pose history needed for [[Augmented Reality]] content anchoring and world-scale persistence.
+    - [[Digital Twin]] creation for factories, cities, and large venues relies on SfM-based photogrammetric capture workflows.
+  - #### Visual Effects and Game Assets
+    - Photogrammetric capture of actors, props, and environments for film and game production (e.g. photorealistic character scanning).
+    - Integration with [[Neural Radiance Fields]] and [[Gaussian Splatting]] for novel-view synthesis and relighting.
+  - #### Geoscience and Remote Sensing
+    - Change detection from multi-temporal satellite or aerial imagery.
+    - Glacier, landslide, and coastal erosion monitoring via repeat photogrammetric surveys.
+  - #### Medical Imaging
+    - Endoscopic and surgical SfM for tissue surface reconstruction from colonoscopy or laparoscopy video.
+
+- ### Relationships
+  - partOf:: [[Photogrammetry]]
+  - partOf:: [[3D Reconstruction]]
+  - requires:: [[Feature Matching]]
+  - requires:: [[Bundle Adjustment]]
+  - requires:: [[Camera Calibration]]
+  - enables:: [[Point Cloud]]
+  - enables:: [[Multi-View Stereo]]
+  - enables:: [[Depth Estimation]]
+  - enables:: [[3D Mapping]]
+  - enables:: [[Augmented Reality]]
+  - uses:: [[Computer Vision]]
+  - uses:: [[Feature Detection]]
+  - uses:: [[Epipolar Geometry]]
+  - uses:: [[RANSAC]]
+  - contrastsWith:: [[SLAM]]
+  - contrastsWith:: [[Visual Odometry]]
+  - contrastsWith:: [[LiDAR Scanning]]
+  - relatedTo:: [[Neural Radiance Fields]]
+  - relatedTo:: [[Gaussian Splatting]]
+  - relatedTo:: [[Scene Reconstruction]]
+  - relatedTo:: [[Stereo Vision]]
+  - bridges-to:: [[Digital Twin]]
+  - bridges-to:: [[Autonomous Vehicles]]
+  - bridges-to:: [[Robotics]]
+
+- ### Standards and Context
+  - SfM is standardised de facto through widely adopted open-source tools and benchmarks rather than formal ISO/IEEE specifications.
+  - **COLMAP**: open-source incremental SfM and multi-view stereo pipeline; the dominant academic and industrial reference implementation.
+  - **OpenMVG**: open-source Multiple View Geometry library with emphasis on reproducibility and modularity.
+  - **Agisoft Metashape** (formerly PhotoScan): commercial SfM photogrammetry software widely used in geospatial and heritage workflows.
+  - **Reality Capture** (Epic Games): GPU-accelerated commercial SfM targeting VFX and game production.
+  - **ETH3D / Tanks and Temples / UrbanScene3D**: community benchmarks for evaluating SfM accuracy and completeness.
+  - [[Epipolar Geometry]] and projective camera models are standardised in Hartley and Zisserman's "Multiple View Geometry in Computer Vision" (Cambridge University Press), the field's canonical reference.
+  - Integration with GNSS/RTK for georeferenced aerial photogrammetry aligns with ISO 19130 (geographic imagery sensor models) and OGC standards for point cloud exchange.
+  - [[Gaussian Splatting]] (3DGS, 2023) and [[Neural Radiance Fields]] (NeRF, 2020) depend on SfM-derived camera poses as initialisation, cementing SfM's role in the neural scene representation stack.
+
+- ### Provenance
+  - sources:: Hartley & Zisserman "Multiple View Geometry in Computer Vision" (2003); Schonberger & Frahm CVPR 2016 (COLMAP); Ullman 1979 (original SfM formulation)
+  - updated:: 2026-06-13

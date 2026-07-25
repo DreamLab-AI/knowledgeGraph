@@ -1,0 +1,36 @@
+{
+  "name": "@dreamlab-ai/webvowl-wasm",
+  "version": "0.3.4",
+  "description": "High-performance WASM ontology parser + NggExplorer physics engine, built with wasm-pack (ADR-NG-001 §3)",
+  "main": "pkg/webvowl_wasm.js",
+  "types": "pkg/webvowl_wasm.d.ts",
+  "files": [
+    "pkg/**/*"
+  ],
+  "scripts": {
+    "build": "wasm-pack build --release --target web --out-dir pkg",
+    "build:dev": "wasm-pack build --dev --target web --out-dir pkg",
+    "test": "cargo test --all-features",
+    "test:rust": "cargo test --all-features",
+    "bench": "cargo bench",
+    "check": "cargo check --all-targets",
+    "clippy": "cargo clippy -- -D warnings",
+    "fmt": "cargo fmt -- --check"
+  },
+  "keywords": [
+    "owl",
+    "ontology",
+    "visualization",
+    "wasm",
+    "webvowl",
+    "d3",
+    "graph",
+    "wasm-pack"
+  ],
+  "author": "WebVOWL Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VisualDataWeb/WebVOWL.git"
+  }
+}

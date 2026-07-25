@@ -1,0 +1,72 @@
+public:: true
+alias:: IP Adapter
+
+# IP-Adapter
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ip-adapter",
+  "@type": "Page",
+  "vc:slug": "ip-adapter",
+  "title": "IP-Adapter",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ip-adapter",
+  "@type": "Class",
+  "label": "IP-Adapter",
+  "definition": "IP-Adapter (Image Prompt Adapter) is a lightweight adapter module for pre-trained text-to-image diffusion models that enables image-conditioned generation by injecting reference image features via a decoupled cross-attention mechanism. Introduced by Tencent AI Lab in 2023, it allows users to supply a reference image alongside a text prompt to control style, subject identity, or composition without fine-tuning the base diffusion model. The adapter architecture inserts parallel cross-attention layers that process image embeddings from a pre-trained image encoder such as CLIP, keeping base model weights frozen.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:adapter-modules", "label": "Adapter Modules"}],
+  "relations": {
+    "dependsOn": [
+      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:hugging-face-diffusers", "label": "Hugging Face Diffusers"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:style-transfer", "label": "Style Transfer"},
+      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"},
+      {"@id": "urn:ngm:class:image-to-image-translation", "label": "Image to Image Translation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - IP-Adapter is a plug-in adapter for pre-trained diffusion models that enables image-conditioned generation by injecting CLIP image embeddings through decoupled cross-attention layers, allowing style and content reference from an image without retraining the base model.
+- ### Relationships
+  - IP-Adapter is an instance of [[Adapter Modules]] and depends on a pre-trained [[Diffusion Model]] such as [[Stable Diffusion Image Model]] for its base generation capability. It routes image embeddings through [[Cross Attention]] layers parallel to existing text cross-attention, enabling [[Image Generation]] guided by both text and image signals. It is distributed via [[Hugging Face Diffusers]] and is closely related to [[ControlNet]] as a complementary spatial conditioning approach. Unlike [[Fine Tuning]], IP-Adapter modifies no base model weights. It supports [[Style Transfer]], [[Inpainting]], and [[Image to Image Translation]] use cases within the [[Generative AI]] and [[Computer Vision]] domains.
+- ### Content
+  - IP-Adapter was introduced by Ye et al. from Tencent AI Lab in a 2023 paper titled "IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models." The central problem it solves is image prompt compatibility: standard diffusion models accept only text prompts, but many practical applications require controlling generation with a reference image—for example, preserving a subject's face, copying an artistic style, or anchoring composition from a sketch or photograph.
+
+  - The technical approach is elegant: rather than replacing or fine-tuning cross-attention layers, IP-Adapter adds a parallel cross-attention branch specifically for image tokens. Image features are extracted from a frozen CLIP image encoder, projected into the text embedding space via a trainable linear layer, and then attended to by the new parallel branch. The text cross-attention branch remains unmodified, preserving the base model's text-following behaviour. During inference, the two attention streams are combined with a controllable weight, enabling smooth blending between text-driven and image-driven generation.
+
+  - A key practical advantage is parameter efficiency: only the projection layer and parallel attention weights are trained, totalling roughly 22 million parameters for SD v1.5 models. Training on large-scale paired image-caption datasets (such as LAION) takes orders of magnitude less compute than full model training, and the resulting adapter is base-model-agnostic—a single adapter can be applied to any fine-tuned checkpoint derived from the same base architecture.
+
+  - IP-Adapter-FaceID extends the base design with face-specific identity embeddings, enabling consistent face generation across diverse scenes, poses, and styles without identity drift. IP-Adapter-Plus variants incorporate multiple reference images and support higher-resolution feature injection. These specialisations demonstrate the adapter pattern's extensibility for domain-specific conditioning.
+
+  - The adapter has become a widely adopted tool in creative and commercial pipelines, used for product visualisation (placing a product image in a generated scene), character consistency across illustrated narratives, and virtual try-on applications. Its integration with ComfyUI and AUTOMATIC1111 makes it accessible to non-programmers. The pattern it establishes—decoupled cross-attention for modal conditioning—has influenced subsequent adapter architectures in the diffusion model ecosystem.

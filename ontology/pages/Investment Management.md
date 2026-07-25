@@ -1,0 +1,131 @@
+public:: true
+
+# Investment Management
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b63a987575e9b678a506e9db6aeed1a8fe03c15b81be7738b85dcc23ed93d837",
+  "@type": "Page",
+  "vc:slug": "investment-management",
+  "title": "Investment Management",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:owl-thing",
+      "vc:label": "owl:Thing"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9641"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Investment Management"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:investment-management",
+  "@type": "Class",
+  "label": "Investment Management",
+  "definition": "The professional discipline and supporting technological infrastructure for allocating, monitoring, and optimising portfolios of digital and traditional financial assets. In the blockchain and DeFi context, investment management encompasses on-chain portfolio tools, automated yield strategies, risk modelling, and governance-token-weighted decision frameworks.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
+      "@id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
+      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+    ]
+  },
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:investment-management:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b63a987575e9b678a506e9db6aeed1a8fe03c15b81be7738b85dcc23ed93d837"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[owl:Thing]]",
+      "resolved": "urn:visionflow:owl:class:owl-thing",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - Investment Management is a concept within the metaverse domain. Further enrichment pending.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:InvestmentManagement
+  - owl-role:: concept
+
+- ### Relationships
+  - **uses**: [[Digital Asset]], [[Smart Contract]]
+  - **requires**: [[Risk Management]], [[Financial Regulation]]
+  - **relatedTo**: [[Asset Management]], [[Digital Asset Trading]], [[Governance Token]]
+
+- ### Content
+
+  ## Overview
+
+  Investment Management represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

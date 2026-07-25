@@ -1,0 +1,458 @@
+public:: true
+
+# Computational Modelling
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:visionflow:page:ngm-computational-modelling",
+  "@type": "Page",
+  "vc:slug": "computational-modelling",
+  "title": "Computational Modelling",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": [
+    {"@id": "urn:visionflow:linked:mathematical-optimisation", "vc:label": "Mathematical Optimisation"},
+    {"@id": "urn:visionflow:linked:simulation", "vc:label": "Simulation"},
+    {"@id": "urn:visionflow:linked:differential-equations", "vc:label": "Differential Equations"},
+    {"@id": "urn:visionflow:linked:numerical-methods", "vc:label": "Numerical Methods"},
+    {"@id": "urn:visionflow:linked:finite-element-analysis", "vc:label": "Finite Element Analysis"},
+    {"@id": "urn:visionflow:linked:agent-based-modelling", "vc:label": "Agent-Based Modelling"},
+    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
+    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
+    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
+    {"@id": "urn:visionflow:linked:climate-modelling", "vc:label": "Climate Modelling"},
+    {"@id": "urn:visionflow:linked:computational-biology", "vc:label": "Computational Biology"},
+    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
+    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
+    {"@id": "urn:visionflow:linked:monte-carlo-simulation", "vc:label": "Monte Carlo Simulation"},
+    {"@id": "urn:visionflow:linked:high-performance-computing", "vc:label": "High-Performance Computing"},
+    {"@id": "urn:visionflow:linked:gpu-acceleration", "vc:label": "GPU Acceleration"},
+    {"@id": "urn:visionflow:linked:physics-informed-neural-network", "vc:label": "Physics-Informed Neural Network"},
+    {"@id": "urn:visionflow:linked:surrogate-model", "vc:label": "Surrogate Model"},
+    {"@id": "urn:visionflow:linked:sensitivity-analysis", "vc:label": "Sensitivity Analysis"},
+    {"@id": "urn:visionflow:linked:uncertainty-quantification", "vc:label": "Uncertainty Quantification"},
+    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
+    {"@id": "urn:visionflow:linked:system-dynamics", "vc:label": "System Dynamics"},
+    {"@id": "urn:visionflow:linked:molecular-dynamics", "vc:label": "Molecular Dynamics"},
+    {"@id": "urn:visionflow:linked:computational-fluid-dynamics", "vc:label": "Computational Fluid Dynamics"},
+    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
+    {"@id": "urn:visionflow:linked:scientific-machine-learning", "vc:label": "Scientific Machine Learning"},
+    {"@id": "urn:visionflow:linked:probabilistic-modelling", "vc:label": "Probabilistic Modelling"},
+    {"@id": "urn:visionflow:linked:data-assimilation", "vc:label": "Data Assimilation"},
+    {"@id": "urn:visionflow:linked:cellular-automata", "vc:label": "Cellular Automata"},
+    {"@id": "urn:visionflow:linked:stochastic-process", "vc:label": "Stochastic Process"},
+    {"@id": "urn:visionflow:linked:complex-systems", "vc:label": "Complex Systems"},
+    {"@id": "urn:visionflow:linked:operator-learning", "vc:label": "Operator Learning"},
+    {"@id": "urn:visionflow:linked:protein-structure-prediction", "vc:label": "Protein Structure Prediction"},
+    {"@id": "urn:visionflow:linked:epidemiological-modelling", "vc:label": "Epidemiological Modelling"},
+    {"@id": "urn:visionflow:linked:fluid-simulation", "vc:label": "Fluid Simulation"},
+    {"@id": "urn:visionflow:linked:optimisation", "vc:label": "Optimisation"},
+    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
+    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
+    {"@id": "urn:visionflow:linked:statistics", "vc:label": "Statistics"},
+    {"@id": "urn:visionflow:linked:linear-algebra", "vc:label": "Linear Algebra"},
+    {"@id": "urn:visionflow:linked:systems-biology", "vc:label": "Systems Biology"},
+    {"@id": "urn:visionflow:linked:collaborative-simulation", "vc:label": "Collaborative Simulation"},
+    {"@id": "urn:visionflow:linked:time-series-forecasting", "vc:label": "Time Series Forecasting"},
+    {"@id": "urn:visionflow:linked:discretisation", "vc:label": "Discretisation"}
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:computational-modelling",
+  "@type": "Class",
+  "label": "Computational Modelling",
+  "definition": "Computational Modelling is the use of mathematical formalisms implemented as computer programs to simulate the behaviour of real-world systems across domains such as physics, biology, economics, and climate science. A computational model translates theoretical assumptions into executable code so that hypotheses can be tested, predictions generated, and sensitivity analyses performed at scale. It forms the methodological backbone of simulation-based science and underpins modern AI training pipelines.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}
+  ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:mathematical-optimisation", "label": "Mathematical Optimisation"},
+      {"@id": "urn:ngm:class:scientific-machine-learning", "label": "Scientific Machine Learning"},
+      {"@id": "urn:ngm:class:probabilistic-modelling", "label": "Probabilistic Modelling"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Methods"},
+      {"@id": "urn:ngm:class:finite-element-analysis", "label": "Finite Element Analysis"},
+      {"@id": "urn:ngm:class:agent-based-modelling", "label": "Agent-Based Modelling"},
+      {"@id": "urn:ngm:class:monte-carlo-simulation", "label": "Monte Carlo Simulation"},
+      {"@id": "urn:ngm:class:sensitivity-analysis", "label": "Sensitivity Analysis"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:differential-equations", "label": "Differential Equations"},
+      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
+      {"@id": "urn:ngm:class:statistics", "label": "Statistics"},
+      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:climate-modelling", "label": "Climate Modelling"},
+      {"@id": "urn:ngm:class:epidemiological-modelling", "label": "Epidemiological Modelling"},
+      {"@id": "urn:ngm:class:protein-structure-prediction", "label": "Protein Structure Prediction"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:surrogate-model", "label": "Surrogate Model"},
+      {"@id": "urn:ngm:class:physics-informed-neural-network", "label": "Physics-Informed Neural Network"},
+      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
+      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"}
+    ]
+  },
+  "quality": 0.90,
+  "provenance": {
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-21T00:00:00Z",
+    "inferenceRule": "OntologyEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:annotation:computational-modelling:link-resolutions",
+  "@type": "LinkResolutionsAnnotation",
+  "forClass": "urn:ngm:class:computational-modelling",
+  "resolutions": [
+    {"wikilink": "Mathematical Optimisation", "@id": "urn:ngm:class:mathematical-optimisation"},
+    {"wikilink": "Simulation", "@id": "urn:ngm:class:simulation"},
+    {"wikilink": "Differential Equations", "@id": "urn:ngm:class:differential-equations"},
+    {"wikilink": "Numerical Methods", "@id": "urn:ngm:class:numerical-methods"},
+    {"wikilink": "Finite Element Analysis", "@id": "urn:ngm:class:finite-element-analysis"},
+    {"wikilink": "Agent-Based Modelling", "@id": "urn:ngm:class:agent-based-modelling"},
+    {"wikilink": "Machine Learning", "@id": "urn:ngm:class:machine-learning"},
+    {"wikilink": "Deep Learning", "@id": "urn:ngm:class:deep-learning"},
+    {"wikilink": "Neural Network", "@id": "urn:ngm:class:neural-network"},
+    {"wikilink": "Climate Modelling", "@id": "urn:ngm:class:climate-modelling"},
+    {"wikilink": "Computational Biology", "@id": "urn:ngm:class:computational-biology"},
+    {"wikilink": "Digital Twin", "@id": "urn:ngm:class:digital-twin"},
+    {"wikilink": "Bayesian Inference", "@id": "urn:ngm:class:bayesian-inference"},
+    {"wikilink": "Monte Carlo Simulation", "@id": "urn:ngm:class:monte-carlo-simulation"},
+    {"wikilink": "High-Performance Computing", "@id": "urn:ngm:class:high-performance-computing"},
+    {"wikilink": "GPU Acceleration", "@id": "urn:ngm:class:gpu-acceleration"},
+    {"wikilink": "Physics-Informed Neural Network", "@id": "urn:ngm:class:physics-informed-neural-network"},
+    {"wikilink": "Surrogate Model", "@id": "urn:ngm:class:surrogate-model"},
+    {"wikilink": "Sensitivity Analysis", "@id": "urn:ngm:class:sensitivity-analysis"},
+    {"wikilink": "Uncertainty Quantification", "@id": "urn:ngm:class:uncertainty-quantification"},
+    {"wikilink": "Reinforcement Learning", "@id": "urn:ngm:class:reinforcement-learning"},
+    {"wikilink": "System Dynamics", "@id": "urn:ngm:class:system-dynamics"},
+    {"wikilink": "Molecular Dynamics", "@id": "urn:ngm:class:molecular-dynamics"},
+    {"wikilink": "Computational Fluid Dynamics", "@id": "urn:ngm:class:computational-fluid-dynamics"},
+    {"wikilink": "Graph Neural Network", "@id": "urn:ngm:class:graph-neural-network"},
+    {"wikilink": "Scientific Machine Learning", "@id": "urn:ngm:class:scientific-machine-learning"},
+    {"wikilink": "Probabilistic Modelling", "@id": "urn:ngm:class:probabilistic-modelling"},
+    {"wikilink": "Data Assimilation", "@id": "urn:ngm:class:data-assimilation"},
+    {"wikilink": "Cellular Automata", "@id": "urn:ngm:class:cellular-automata"},
+    {"wikilink": "Stochastic Process", "@id": "urn:ngm:class:stochastic-process"},
+    {"wikilink": "Complex Systems", "@id": "urn:ngm:class:complex-systems"},
+    {"wikilink": "Operator Learning", "@id": "urn:ngm:class:operator-learning"},
+    {"wikilink": "Protein Structure Prediction", "@id": "urn:ngm:class:protein-structure-prediction"},
+    {"wikilink": "Epidemiological Modelling", "@id": "urn:ngm:class:epidemiological-modelling"},
+    {"wikilink": "Fluid Simulation", "@id": "urn:ngm:class:fluid-simulation"},
+    {"wikilink": "Optimisation", "@id": "urn:ngm:class:optimisation"},
+    {"wikilink": "Transfer Learning", "@id": "urn:ngm:class:transfer-learning"},
+    {"wikilink": "Artificial Intelligence", "@id": "urn:ngm:class:artificial-intelligence"},
+    {"wikilink": "Statistics", "@id": "urn:ngm:class:statistics"},
+    {"wikilink": "Linear Algebra", "@id": "urn:ngm:class:linear-algebra"},
+    {"wikilink": "Systems Biology", "@id": "urn:ngm:class:systems-biology"},
+    {"wikilink": "Collaborative Simulation", "@id": "urn:ngm:class:collaborative-simulation"},
+    {"wikilink": "Time Series Forecasting", "@id": "urn:ngm:class:time-series-forecasting"},
+    {"wikilink": "Discretisation", "@id": "urn:ngm:class:discretisation"}
+  ]
+}
+```
+
+- ### Definition
+  - Computational Modelling is the systematic discipline of constructing, calibrating, validating, and executing mathematical representations of real-world systems as computer programs — enabling the prediction of system behaviour, the testing of causal hypotheses, and the quantification of uncertainty at scales and resolutions that physical experimentation cannot achieve. The discipline spans the full modelling lifecycle: formulating governing equations (typically [[Differential Equations]] — ordinary, partial, stochastic, or integro-differential), choosing a [[Discretisation]] strategy (finite difference, [[Finite Element Analysis]], spectral, particle), implementing the discretised system as code, calibrating free parameters against observational data via [[Bayesian Inference]] or [[Mathematical Optimisation]], validating outputs against held-out empirical benchmarks, and conducting [[Sensitivity Analysis]] to characterise how uncertainty in inputs propagates to uncertainty in predictions, a practice formalised as [[Uncertainty Quantification]]. Computational models range from low-dimensional ordinary differential equation systems (a predator-prey Lotka-Volterra model with 2 state variables) to global [[Climate Modelling]] systems with tens of millions of degrees of freedom executing on petascale [[High-Performance Computing]] clusters, and from deterministic physics codes such as [[Computational Fluid Dynamics]] solvers and [[Finite Element Analysis]] engines to fully [[Stochastic Process]] simulations such as [[Monte Carlo Simulation]] integration, [[Agent-Based Modelling]] of emergent social dynamics, and [[Cellular Automata]] for discrete spatial phenomena. The past decade has witnessed a transformative fusion between Computational Modelling and [[Machine Learning]]: [[Surrogate Model]]s (also called emulators) accelerate costly forward simulations, [[Physics-Informed Neural Network]]s embed known governing equations as loss constraints during [[Neural Network]] training, [[Operator Learning]] frameworks (DeepONet, Fourier Neural Operator) learn mappings between infinite-dimensional function spaces, and [[Data Assimilation]] methods fuse simulation outputs with streaming observational data using ensemble Kalman filters or variational methods. This convergence, now labelled [[Scientific Machine Learning]], is redefining how science and engineering use computation to understand complex reality — with direct applications across [[Computational Biology]], [[Climate Modelling]], [[Molecular Dynamics]], [[Epidemiological Modelling]], structural mechanics, [[Fluid Simulation]], plasma physics, finance, and macroeconomics — making Computational Modelling one of the defining methodological pillars of twenty-first century science.
+
+- ### Semantic Classification
+  - owl-class:: sci:ComputationalModelling
+  - owl-role:: ResearchDiscipline | SimulationParadigm | ScientificMethod
+  - owl-inferred:: sci:SimulationBasedScience, ai:ScientificMachineLearning, sci:VirtualPrototyping
+  - belongs-to-domain:: [[Artificial Intelligence]]
+  - implemented-in-layer:: [[High-Performance Computing]]
+
+- ### Relationships
+  - is-subclass-of:: [[Artificial Intelligence]], [[Scientific Machine Learning]], [[Simulation]]
+  - has-part:: [[Numerical Methods]], [[Finite Element Analysis]], [[Agent-Based Modelling]], [[Monte Carlo Simulation]], [[Sensitivity Analysis]], [[Cellular Automata]], [[System Dynamics]], [[Computational Fluid Dynamics]], [[Molecular Dynamics]], [[Uncertainty Quantification]], [[Data Assimilation]]
+  - requires:: [[Differential Equations]], [[Linear Algebra]], [[Statistics]], [[High-Performance Computing]], [[Discretisation]], [[Stochastic Process]], [[Mathematical Optimisation]]
+  - enables:: [[Digital Twin]], [[Climate Modelling]], [[Epidemiological Modelling]], [[Protein Structure Prediction]], [[Fluid Simulation]], [[Collaborative Simulation]], [[Data Assimilation]], [[Time Series Forecasting]], [[Systems Biology]], [[Computational Biology]]
+  - implements:: [[Probabilistic Modelling]], [[Uncertainty Quantification]], [[Bayesian Inference]], [[Mathematical Optimisation]], [[Physics-Informed Neural Network]], [[Surrogate Model]]
+  - depends-on:: [[GPU Acceleration]], [[Surrogate Model]], [[Physics-Informed Neural Network]], [[Operator Learning]], [[Graph Neural Network]], [[Transfer Learning]]
+  - supports:: [[Computational Biology]], [[Systems Biology]], [[Complex Systems]], [[Optimisation]], [[Reinforcement Learning]], [[Deep Learning]]
+  - uses:: [[Machine Learning]], [[Deep Learning]], [[Neural Network]], [[Graph Neural Network]], [[Reinforcement Learning]], [[Transfer Learning]], [[Bayesian Inference]], [[Operator Learning]], [[Scientific Machine Learning]]
+  - contrasts-with:: [[Agent-Based Modelling]], [[Simulation]]
+  - related-to:: [[Scientific Machine Learning]], [[Probabilistic Modelling]], [[Computational Biology]], [[Digital Twin]], [[Collaborative Simulation]], [[Mathematical Optimisation]], [[Stochastic Process]], [[Molecular Dynamics]], [[Cellular Automata]]
+  - standardized-by:: [[SIAM]]
+
+- ### Content
+  - ## Compositional Relationships (Components)
+    - ```
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:hasPart sci:NumericalMethods))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:hasPart sci:FiniteElementAnalysis))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:hasPart sci:AgentBasedModelling))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:hasPart sci:MonteCarloSimulation))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:hasPart sci:SensitivityAnalysis))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:hasPart sci:MolecularDynamics))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:hasPart sci:ComputationalFluidDynamics))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:hasPart sci:SystemDynamics))
+      ```
+  - ## Dependency Relationships
+    - ```
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:requires sci:DifferentialEquations))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:requires sci:LinearAlgebra))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:requires sci:Statistics))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:requires sci:HighPerformanceComputing))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:requires sci:Discretisation))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:requires sci:GPUAcceleration))
+      ```
+  - ## Capability Relationships
+    - ```
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:enables sci:DigitalTwin))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:enables sci:ClimateModelling))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:enables sci:EpidemiologicalModelling))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:enables sci:ProteinStructurePrediction))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:enables sci:DataAssimilation))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:enables sci:CollaborativeSimulation))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:enables sci:UncertaintyQuantification))
+      ```
+  - ## Implementation Relationships
+    - ```
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:implements sci:ProbabilisticModelling))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:implements sci:BayesianInference))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:implements sci:MathematicalOptimisation))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:implements sci:PhysicsInformedNeuralNetwork))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:implements sci:SurrogateModel))
+      ```
+  - ## Reduction Relationships
+    - ```
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:reducesTo sci:NumericalMethods))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:reducesTo sci:MathematicalModel))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:reducesTo sci:SimulationExperiment))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:reducesTo sci:Discretisation))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:reducesTo sci:StochasticProcess))
+      ```
+  - ## Support Relationships
+    - ```
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:supports sci:ComputationalBiology))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:supports sci:SystemsBiology))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:supports sci:ComplexSystems))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:supports sci:Optimisation))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:supports sci:TimeSeriesForecasting))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:supports sci:FluidSimulation))
+      ```
+  - ## Uses Relationships
+    - ```
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:uses ai:MachineLearning))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:uses ai:DeepLearning))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:uses ai:GraphNeuralNetwork))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:uses ai:OperatorLearning))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:uses ai:ReinforcementLearning))
+      SubClassOf(sci:ComputationalModelling
+        ObjectSomeValuesFrom(ai:uses ai:TransferLearning))
+      ```
+  - ## About
+    - Computational Modelling is the art and science of replacing or augmenting physical experimentation with executable mathematical abstractions. Its intellectual roots are ancient — Kepler's laws model planetary motion; Newton's differential equations model mechanical forces — but it became a distinctly computational enterprise with the advent of programmable digital computers in the late 1940s. John von Neumann and Stanislaw Ulam's invention of the [[Monte Carlo Simulation]] method at Los Alamos (1947) to model neutron diffusion in fission reactions is widely regarded as the birth of modern Computational Modelling. The subsequent decades produced a cascade of discipline-specific simulation methodologies: [[Finite Element Analysis]] for structural mechanics (Turner et al. 1956), the first global weather prediction on a digital computer (Charney, Fjörtoft, and von Neumann 1950), [[Molecular Dynamics]] simulation of liquids (Alder and Wainwright 1957), and [[Computational Fluid Dynamics]] for aerodynamic design (NASA, 1970s). Each of these traditions developed its own community, numerical methods, and software ecosystem, but they are unified by a common methodological backbone: formalise governing equations, discretise the continuous system into a finite representation, solve numerically, and validate against observation.
+    - The critical validation pipeline distinguishes rigorous Computational Modelling from ad-hoc simulation. The AIAA Guide for Verification and Validation (2002) and the ASME V&V 10 standards formalise the distinction between verification (does the code correctly implement the mathematical model?) and validation (does the mathematical model correctly represent the physical system?). [[Sensitivity Analysis]] quantifies how much each input parameter contributes to output variance — Sobol indices provide a variance-decomposition framework for high-dimensional systems. [[Uncertainty Quantification]] propagates epistemic uncertainty (unknown parameters) and aleatoric uncertainty (inherent stochasticity) through the model to produce probabilistic predictions, typically via ensemble methods, [[Bayesian Inference]], or polynomial chaos expansion. These practices have become mandatory in regulatory domains: the US Food and Drug Administration's 2016 Computational Modelling guidance for medical devices, and the European Medicines Agency's guidance on model-informed drug development, both require formal uncertainty quantification.
+    - The fusion with [[Machine Learning]] since 2017 has catalysed a new synthesis labelled [[Scientific Machine Learning]] (SciML). Rather than training purely data-driven black-box [[Neural Network]]s, SciML methods embed physical knowledge into the learning process. [[Physics-Informed Neural Network]]s (PINNs, Raissi et al. 2019) encode the residuals of governing [[Differential Equations]] as additional loss terms during training, enabling solution of PDEs without classical mesh-based [[Discretisation]]. [[Operator Learning]] frameworks — DeepONet (Lu et al. 2021) and the Fourier Neural Operator (Li et al. 2021) — learn parameter-to-solution operators that generalise across different inputs without re-solving, enabling real-time emulation of costly solvers. [[Graph Neural Network]]s discretise irregular physical domains as graphs, enabling mesh-free [[Simulation]] of complex geometries. [[Surrogate Model]]s (Gaussian process emulators, polynomial chaos surrogates, neural network surrogates) approximate expensive forward simulations at a fraction of the cost, enabling Bayesian calibration and design optimisation over high-dimensional parameter spaces. The Julia SciML ecosystem and Python-based JAX/Equinox frameworks are the primary open-source platforms supporting this convergence.
+    - The epistemological foundations of Computational Modelling involve fundamental questions about the relationship between mathematical models and physical reality. Box's aphorism — "all models are wrong, but some are useful" — encapsulates the pragmatic stance dominant in engineering and applied science. A Computational Model is never a perfect replica of reality but a deliberate simplification that captures the phenomena relevant to the question being asked, while abstracting away the rest. The art of good Computational Modelling lies in identifying the right level of abstraction: too simple a model misses important physics; too complex a model is computationally intractable and impossible to validate. The No Free Lunch theorem for [[Optimisation]] applies to model selection: no single model formulation is universally optimal across all problem domains, and domain-specific physical intuition remains irreplaceable for choosing appropriate governing equations and constitutive assumptions. [[Sensitivity Analysis]] and [[Uncertainty Quantification]] are not afterthoughts but integral to model evaluation, revealing which assumptions matter most and which can safely be simplified.
+    - Multi-scale and multi-physics coupling represents both one of the most powerful capabilities and the most challenging aspects of Computational Modelling. Real engineering and natural systems operate across vast ranges of length scales (atomic to continental) and time scales (femtoseconds to millennia). Addressing this requires systematic approaches to scale bridging: homogenisation theory formalises how microscale constitutive behaviour (grain boundaries in metals, cell mechanics in tissue) aggregates to macroscale effective properties; concurrent multi-scale methods (Arlequin, FE2) directly couple fine and coarse scale models in different spatial regions; hierarchical multi-scale modelling sequentially parameterises macroscale models using mesoscale simulation results that are in turn parameterised by atomistic [[Molecular Dynamics]]. Multi-physics coupling between [[Finite Element Analysis]] structural mechanics, [[Computational Fluid Dynamics]] fluid dynamics, heat transfer, electromagnetics, and chemical reaction fields is essential for simulating real-world processes such as turbine hot-section thermomechanical fatigue, battery electrochemical-mechanical degradation, and atmospheric chemistry-climate interactions. The [[Collaborative Simulation]] paradigm extends multi-physics coupling to distributed human-AI collaborative environments, enabling shared exploration of high-dimensional model parameter spaces.
+  - ## Components / Architecture
+    - **Mathematical Formulation Layer**
+      - Governing equations: [[Differential Equations]] (ODE, PDE, SDE, DAE), conservation laws, constitutive relations, phenomenological laws
+      - Parameter space definition: continuous, discrete, constrained, uncertain parameter sets
+      - Boundary and initial conditions: Dirichlet, Neumann, Robin; temporal initial conditions
+    - **Discretisation and Solver Layer**
+      - [[Finite Element Analysis]] — subdivides spatial domain into elements; assembles global stiffness/mass matrices; used in structural mechanics, heat transfer, electromagnetics
+      - [[Computational Fluid Dynamics]] — finite volume or finite difference solvers for Navier-Stokes equations; applications in aerospace, automotive, biomedical [[Fluid Simulation]]
+      - [[Molecular Dynamics]] — integrates Newton's equations for atomic/molecular systems; force fields (AMBER, CHARMM); timescales nanoseconds to microseconds
+      - [[Monte Carlo Simulation]] — stochastic sampling over probability spaces; used in statistical physics, finance, radiation transport, Bayesian posterior sampling
+      - [[Agent-Based Modelling]] — discrete rule-governed agents in a shared environment; emergent macroscopic behaviour from micro-level interactions; platforms: NetLogo, Mesa, Repast
+      - [[Cellular Automata]] — discrete lattice of cells with local update rules; Conway's Game of Life; lattice Boltzmann methods for fluid flow
+      - [[System Dynamics]] — stock-and-flow causal loop diagrams; used in ecology, economics, policy simulation; Vensim, Stella platforms
+    - **Uncertainty and Validation Layer**
+      - [[Sensitivity Analysis]] — local (partial derivatives), global (Sobol indices, FAST, Morris screening); identifies influential parameters
+      - [[Uncertainty Quantification]] — Monte Carlo propagation, polynomial chaos expansion, Bayesian inverse problems; outputs probability distributions over predictions
+      - [[Bayesian Inference]] — Markov Chain Monte Carlo (MCMC), Sequential Monte Carlo (SMC), variational inference; posterior calibration of model parameters to data
+      - [[Data Assimilation]] — ensemble Kalman filter (EnKF), 4D-Var; fuses real-time observations into running model state; foundational in [[Climate Modelling]] and numerical weather prediction
+    - **Machine Learning Acceleration Layer**
+      - [[Surrogate Model]] — Gaussian process emulators, neural network surrogates, polynomial chaos; replaces expensive forward model calls
+      - [[Physics-Informed Neural Network]] — PINNs enforce PDE residuals as training constraints; meshless, differentiable
+      - [[Operator Learning]] — DeepONet, Fourier Neural Operator; learns function-space mappings; generalises across PDE parameter families
+      - [[Graph Neural Network]] — irregular mesh representation; physics [[Simulation]] on unstructured grids (MeshGraphNet, GNS)
+      - [[Scientific Machine Learning]] — combined SciML ecosystem (Julia DifferentialEquations.jl, Flux.jl, Python JAX/Equinox)
+    - **Infrastructure Layer**
+      - [[High-Performance Computing]] — multi-node CPU/GPU clusters; MPI+OpenMP parallelism; PetaFlops-scale supercomputers (ARCHER2, UK; Frontier/Aurora, USA; Fugaku, Japan); job schedulers (SLURM, PBS)
+      - [[GPU Acceleration]] — CUDA/ROCm frameworks; massively parallel [[Monte Carlo Simulation]] and [[Finite Element Analysis]] solvers; NVIDIA A100/H100, AMD MI300 GPU architectures; tensor cores for mixed-precision simulation
+      - Cloud HPC — AWS ParallelCluster, Azure CycleCloud, Google Cloud HPC; on-demand scaling for burst computational workloads; spot instances for [[Monte Carlo Simulation]] embarrassingly parallel parameter sweeps
+      - Storage and I/O — Lustre and GPFS parallel file systems; NetCDF4, HDF5, ADIOS2 data formats for checkpoint/restart and [[Data Assimilation]] observation files; FAIR data repositories (Zenodo, Figshare, CEDA)
+      - Workflow management — Cylc (Met Office), Snakemake, Nextflow, Parsl; orchestrating multi-step Computational Modelling workflows across HPC nodes; containerisation (Singularity/Apptainer) for reproducible execution
+    - **Software Ecosystem**
+      - Structural mechanics — Ansys Mechanical, Abaqus (Dassault), COMSOL Multiphysics, FEniCS-X (open source), OpenFAST (wind turbine)
+      - Fluid dynamics — OpenFOAM (open source), FLUENT, Star-CCM+, SU2 (open source aerodynamic optimisation), OpenFOAM-ML for [[Surrogate Model]] integration
+      - Molecular simulation — GROMACS, AMBER, NAMD, LAMMPS; PLUMED plugin for enhanced sampling; OpenMM for GPU-accelerated [[Molecular Dynamics]]
+      - [[Agent-Based Modelling]] — NetLogo (educational), Mesa (Python), Repast (HPC [[Agent-Based Modelling]]), OpenABM-Covid19 (epidemic modelling)
+      - [[System Dynamics]] — Vensim, Stella Architect, AnyLogic (multi-paradigm: [[Agent-Based Modelling]], [[System Dynamics]], discrete event)
+      - [[Scientific Machine Learning]] — Julia SciML ecosystem (DifferentialEquations.jl, Turing.jl, Flux.jl), Python/JAX (Diffrax, Equinox), PyTorch (torchdiffeq), DeepXDE ([[Physics-Informed Neural Network]])
+      - [[Uncertainty Quantification]] — OpenTURNS (Python), UQpy, COSSAN, SALib ([[Sensitivity Analysis]]), Chaospy (polynomial chaos), Stan/CMDSTANPY ([[Bayesian Inference]] MCMC)
+      - [[Data Assimilation]] — DART (NCAR), OpenDA, EnsembleKalmanProcesses.jl, PDAF; assimilation of satellite, sensor, and laboratory data into running Computational Models
+  - ## Use Cases / Major Families
+    - **Climate and Earth Sciences** — [[Climate Modelling]] using coupled atmosphere-ocean-land-ice general circulation models (UKESM1 from the UK Met Office, EC-Earth, CESM). [[Data Assimilation]] with ensemble Kalman filters fuses satellite and surface observations into running models, correcting model drift and producing probabilistic forecasts. The ECMWF (European Centre for Medium-Range Weather Forecasts) runs the world's highest-resolution operational Computational Model, assimilating 40 million observations per day into a spectral-element atmospheric model at 9 km horizontal resolution. Machine learning acceleration via neural network parameterisations for cloud microphysics (Google DeepMind GraphCast, Science 2023) ran 10-day global forecasts 10,000 times faster than the ECMWF physics-based baseline while matching its accuracy. Outputs underpin IPCC Assessment Reports and national climate adaptation strategies including the UK Climate Projections (UKCP18).
+    - **Biomedical and Life Sciences** — [[Computational Biology]] and [[Systems Biology]]: gene regulatory network modelling with ODE-based Gillespie stochastic simulation and flux balance analysis; [[Molecular Dynamics]] of protein-ligand binding for [[Protein Structure Prediction]] and rational drug design (AMBER, GROMACS, NAMD simulation packages). AlphaFold2 (DeepMind, 2021) represents a paradigm-shifting Computational Model — a [[Deep Learning]] system trained on the Protein Data Bank's crystallographic structures that predicts 3D protein structure from amino acid sequence with experimental accuracy, with over 200 million structures deposited in the AlphaFold Protein Structure Database, covering essentially the entire known proteome. [[Epidemiological Modelling]] (compartmental SIR/SEIR models, [[Agent-Based Modelling]] for epidemic spread on contact networks, stochastic branching processes) was central to COVID-19 pandemic response: Imperial College London's Report 9 (Ferguson et al. 2020) using an [[Agent-Based Modelling]] framework with 66 million synthetic UK agents directly informed UK government lockdown decisions in March 2020, one of the highest-impact applications of Computational Modelling in modern policy history.
+    - **Engineering and Manufacturing** — Structural analysis via [[Finite Element Analysis]] in Ansys Mechanical, Abaqus, COMSOL Multiphysics (covering structural, thermal, electromagnetic coupling); aerodynamic design via [[Computational Fluid Dynamics]] in OpenFOAM (open source), Fluent, and Star-CCM+ (Reynolds-averaged Navier-Stokes, Large Eddy Simulation); explicit crash simulation and crashworthiness in LS-DYNA for automotive safety testing (required by NCAP standards). Multi-physics coupling between [[Finite Element Analysis]] structural and [[Computational Fluid Dynamics]] fluid domains enables fluid-structure interaction modelling for bridge loading, wind turbine blade design, and heart valve prosthetics. Digital engineering via [[Digital Twin]]s: Rolls-Royce runs continuous [[Finite Element Analysis]] [[Surrogate Model]]s of its Trent XWB jet engines in flight, combining sensor telemetry with physics-based structural models to predict fatigue life and schedule maintenance; BAE Systems uses Computational Modelling in the Tempest programme for virtual aerodynamic flight envelope testing, reducing wind tunnel test campaigns by an estimated 30%.
+    - **Finance and Economics** — Stochastic [[Differential Equations]] models for derivative pricing: geometric Brownian motion (Black-Scholes), [[Monte Carlo Simulation]] pricing of exotic options (path-dependent, basket, barrier options), term structure models (Heath-Jarrow-Morton, Hull-White) for interest rate derivatives. [[Agent-Based Modelling]] for macroeconomic dynamics: the EURACE model (Cincotti et al.) and Bank of England's ABBA model simulate emergent financial system instabilities, market microstructure, and policy transmission effects not captured by representative-agent DSGE models. [[Uncertainty Quantification]] for Value-at-Risk and stressed scenario analysis is mandatory under Basel III regulatory capital frameworks.
+    - **Environmental and Ecological Science** — [[Agent-Based Modelling]] of wildlife population dynamics and species interaction networks; fisheries stock assessment via statistical Computational Models integrated with [[Bayesian Inference]] for parameter calibration (ADMB, TMB software); wildfire spread simulation using coupled atmospheric-fire models (WRF-SFIRE) for risk mapping; hydrological catchment modelling (TOPMODEL, SWAT, LISFLOOD-FP) for flood forecasting and water resource planning.
+    - **Neuroscience and Cognitive Science** — Connectome-scale computational neuroscience: The Virtual Brain (TVB) platform models whole-brain dynamics by coupling neural mass models (Jansen-Rit, Wilson-Cowan, Kuramoto oscillator) on empirically-derived structural connectomes reconstructed from diffusion MRI, producing electroencephalography (EEG) and fMRI BOLD signal predictions comparable to clinical recordings. [[System Dynamics]] models of dopaminergic circuits in Parkinson's disease, basal ganglia-cortical loops in decision making, and thalamo-cortical circuits in anaesthesia. Multi-scale modelling spans synaptic biophysics (Hodgkin-Huxley, NEURON, BRIAN2 simulators) to cortical column dynamics (Blue Brain Project) to whole-brain functional connectivity. Computational neuroscience is experiencing a renaissance through integration with [[Deep Learning]], with neural ODEs and recurrent neural networks fitting dynamical models to neural population recordings.
+    - **Nuclear and Energy** — Monte Carlo neutron transport codes (MCNP, OpenMC, Serpent) for reactor criticality safety calculations, shielding design, and fuel cycle analysis; [[Computational Fluid Dynamics]] for coolant flow in pressurised water reactors; [[Finite Element Analysis]] for reactor pressure vessel integrity assessment under irradiation embrittlement. Fusion plasma physics modelling uses gyrokinetic codes (GENE, GYRO) on petascale HPC for turbulent transport in tokamak plasmas; AI surrogate models are being developed to accelerate real-time plasma control in ITER and the UK's STEP compact tokamak programme. Wind turbine and offshore wind farm layout optimisation via [[Computational Fluid Dynamics]] and [[Surrogate Model]]-based [[Mathematical Optimisation]] is central to the UK's 50 GW offshore wind target by 2030.
+  - ## Academic Context
+    - Computational Modelling as a disciplinary identity crystallised in the 1970s–80s with the formation of dedicated journals (Journal of Computational Physics, founded 1966; International Journal for Numerical Methods in Engineering, 1969; SIAM Journal on Scientific Computing, 1979) and professional societies (SIAM founded 1952; International Council on Systems Engineering; ECCOMAS for computational mechanics in engineering, 1992; the Turing Institute for interdisciplinary Computational Modelling). The field draws from multiple intellectual traditions that gradually converged under the rubric of computational science:
+    - **Numerical Analysis** — the mathematical foundation: Euler (1768) forward integration method; Gauss (1795) method of least squares; Runge-Kutta adaptive ODE integrators (Kutta 1901); Galerkin (1915) weighted residual methods for variational PDEs; the Lax equivalence theorem (1956) establishing that consistency plus stability implies convergence for linear finite difference schemes; finite difference, finite volume, and spectral element PDE discretisation theories developed throughout the 20th century. The seminal Numerical Recipes textbook (Press et al. 1992) disseminated these methods to an entire generation of computational scientists.
+    - **Statistical Mechanics and Monte Carlo** — Metropolis et al. (1953) Markov Chain [[Monte Carlo Simulation]] at Los Alamos, enabling stochastic sampling for statistical physics; Alder and Wainwright (1957) first [[Molecular Dynamics]] simulations of hard sphere fluids, establishing atomic-scale Computational Modelling; Feynman's path integral formulation enabling quantum Monte Carlo simulation of many-body systems. The Monte Carlo tradition bifurcated into statistical physics (GROMACS, AMBER, LAMMPS), Bayesian statistics (MCMC, HMC, SMC), and quantitative finance (Monte Carlo derivative pricing).
+    - **Finite Element Methods** — Turner et al. (1956) first structural FEM paper in aeronautical engineering; Zienkiewicz and Taylor's definitive multi-volume textbook (first edition 1967; 6th edition 2005) established FEM as the standard method for solid mechanics, heat transfer, and electromagnetics; Babuška and Brezzi stability conditions for saddle-point problems (LBB/inf-sup condition) underpinned mathematically sound mixed formulations for incompressible fluid simulation; modern isogeometric analysis (Hughes et al. 2005) unifies CAD geometry with FEM basis functions.
+    - **Systems Modelling and Complex Systems** — Jay Forrester's system dynamics methodology (Industrial Dynamics, 1961; World Dynamics, 1971) provided causal loop and stock-flow formalisms for sociotechnical systems; the Club of Rome's Limits to Growth report (Meadows et al. 1972) brought Computational Modelling to public policy debate. Axelrod's agent-based social science (Evolution of Cooperation, 1984; Growing Artificial Societies with Epstein 1996) demonstrated how [[Agent-Based Modelling]] with simple local rules can generate emergent large-scale social phenomena.
+    - **Scientific Machine Learning** — Lagaris et al. (1998) demonstrated the first neural network solver for boundary value problems; Raissi et al. (2019) formalised [[Physics-Informed Neural Network]]s with the Physics-Informed Neural Network acronym (PINNs), coupling automatic differentiation with PDE residual loss penalties; Chen et al. (2018) Neural ODEs enabled differentiable continuous-time dynamics modelling; Karniadakis et al. (Brown University) established the theoretical framework for physics-constrained [[Deep Learning]]; Lu et al. (2021) DeepONet and Li et al. (2021) Fourier Neural Operator established the [[Operator Learning]] paradigm; Rackauckas et al. (2020) Universal Differential Equations combined symbolic and neural components in the Julia SciML ecosystem.
+    - **Data Assimilation** — Evensen (1994) ensemble Kalman filter (EnKF) provided a practical Monte Carlo implementation of sequential Bayesian state estimation scalable to high-dimensional models; Lorenc (1986) 4D-Var variational [[Data Assimilation]] formulation developed at the UK Met Office enabled optimal trajectory estimation across a time window; Kalnay's Atmospheric Modeling, Data Assimilation and Predictability (2002) codified the theoretical and practical foundations; Reichle et al. (2002) applied ensemble [[Data Assimilation]] to land surface models; neural network [[Data Assimilation]] approaches (EnsembleKalmanProcesses.jl, DifferentiableKalmanFilter) are currently being developed in the SciML community.
+  - ## Current Landscape (2026)
+    - In 2024–2026, Computational Modelling is being reshaped by four converging forces. First, AI-accelerated simulation: Google DeepMind's GraphCast (2023) demonstrated that a [[Graph Neural Network]] trained on 40 years of ERA5 reanalysis data can forecast global 10-day weather more accurately than ECMWF's operational physics-based model, running in under 60 seconds on a single TPU. This result triggered a wave of investment in neural weather models (Microsoft Aurora, Huawei Pangu-Weather, NVIDIA FourCastNet) that are now being operationally evaluated by national meteorological agencies. Second, unified [[Surrogate Model]] reporting: the SMRS initiative (2025) advocates a standardised reporting framework for [[Surrogate Model]]s in AI research, addressing reproducibility gaps across academic and industry deployments. Third, active learning for [[Scientific Machine Learning]]: feasibility studies on active learning surrogates for scientific simulations (arXiv:2407.07674, 2024) demonstrate that intelligent query strategies can reduce the training cost of [[Surrogate Model]]s by 60–80% for smooth parameter-to-output mappings. Fourth, the [[Physics-Informed Neural Network]] as [[Digital Twin]] substrate: 2025 papers demonstrated that PINNs can serve as real-time digital twin components for diesel engine health monitoring (arXiv:2412.11967) — combining operator-infused physics priors with [[Transfer Learning]] for cross-fleet generalisation — and for smart building energy optimisation via hybrid PINN-DT frameworks integrating blockchain-secured sensor telemetry (arXiv:2503.00331). A physics-informed neural network digital twin of optically turbid media (Wiley Advanced Intelligent Systems, 2025) demonstrates broadening from engineered systems into materials science characterisation.
+    - UK and international investment in Computational Modelling infrastructure has intensified. ARCHER2, the UK national supercomputer hosted by EPCC at the University of Edinburgh, provides 750,000 AMD EPYC cores and 48 PetaFLOPs peak performance, enabling ensemble [[Climate Modelling]], [[Molecular Dynamics]], and [[Computational Fluid Dynamics]] runs at previously impossible resolution. The UK National Centre for Atmospheric Science (NCAS) and the Met Office continue to co-develop UKESM2 (UK Earth System Model version 2), incorporating machine learning cloud parameterisations. The CIUK 2025 conference (Computing Insight UK, hosted by STFC) advanced cluster challenge competitions tied to ISC'26, reflecting growing UK community investment in HPC-enabled Computational Modelling for climate, life sciences, and materials. Machine learning interatomic potentials capable of describing molecular crystals at finite temperature and pressure — a flagship application of [[Scientific Machine Learning]] — have achieved sub-chemical accuracy for pharmaceutical and renewable energy materials discovery, representing a major step in integrating [[Deep Learning]] into [[Molecular Dynamics]] workflows (Nature, 2025). Teesside University and the University of Glasgow have published evaluations of multiple machine learning [[Surrogate Model]]s for [[Agent-Based Modelling]] applications, quantifying emulation accuracy against gold-standard stochastic runs. The case for a unified surrogate modelling framework (arXiv:2502.06753, 2025) has attracted attention from the SMRS community as industry demand for reproducible, standardised surrogate workflows grows. UCL's Computational Statistics and [[Machine Learning]] group is advancing Bayesian methods for high-dimensional inverse problems, directly applicable to parameter calibration in Computational Modelling workflows. Multi-scale [[Digital Twin]] frameworks integrating molecular dynamics, process simulation, [[Computational Fluid Dynamics]], and [[Deep Learning]] have been validated for amine-based carbon capture optimisation (Processes, 2025) — a paradigm of multi-physics Computational Modelling deployed in the service of net-zero industrial decarbonisation.
+    - The Julia SciML ecosystem (DifferentialEquations.jl, Turing.jl, Flux.jl, ModelingToolkit.jl) has emerged as the primary platform for next-generation Computational Modelling, combining symbolic-numeric compilation, automatic differentiation, and probabilistic programming in a unified framework. Python-based equivalents (JAX, Diffrax, Equinox) provide GPU-accelerated [[Differential Equations]] solving with automatic differentiation. These frameworks are increasingly taught in postgraduate Computational Modelling curricula across UK universities. The convergence of [[Reinforcement Learning]] with differentiable physical simulation is enabling a new paradigm of autonomous control policy discovery — where an RL agent interacts directly with a high-fidelity Computational Model rather than an engineered reward function — with applications in plasma control at JET and ITER, robotic manipulation, and autonomous vehicle dynamics, bridging Computational Modelling with the broader [[Artificial Intelligence]] research agenda.
+  - ## UK Context
+    - The United Kingdom has a distinguished tradition in Computational Modelling across academia, industry, and government:
+    - **University of Edinburgh** — Home of ARCHER2 (the UK national supercomputing service, run by EPCC), the UK's largest Computational Modelling resource. Edinburgh hosts the School of Mathematics computational modelling group and cross-disciplinary computational science programmes. The Alan Turing Institute, co-hosted with Edinburgh, has a Data-Centric Engineering programme integrating [[Machine Learning]] into physical simulation workflows.
+    - **Imperial College London** — Long-standing strength in [[Computational Fluid Dynamics]] (aeronautics), [[Finite Element Analysis]] (civil engineering), and large-scale [[Climate Modelling]]. Imperial's COVID-19 Response Team (Ferguson et al.) used [[Epidemiological Modelling]] to inform UK government lockdown policy in 2020.
+    - **University of Cambridge** — Engineering Department runs high-fidelity [[Finite Element Analysis]] and fluid dynamics groups. The Cavendish Laboratory (Physics) uses [[Molecular Dynamics]] and Monte Carlo simulation for condensed matter and materials research. Cambridge's MRC Biostatistics Unit is a centre for Bayesian [[Computational Biology]] methods.
+    - **UK Met Office (Exeter)** — Operates the Unified Model (UM), one of the world's leading numerical weather prediction and [[Climate Modelling]] systems. Partner in CMIP6/CMIP7 global model intercomparison projects. Integrating neural network weather emulators alongside conventional physics-based models.
+    - **Rolls-Royce (Derby)** — Uses [[Finite Element Analysis]] for turbine blade structural integrity, [[Computational Fluid Dynamics]] for combustion chamber design, and [[Digital Twin]] [[Surrogate Model]]s for in-flight engine health monitoring across Trent engine fleets.
+    - **BAE Systems (Warton, Lancashire)** — Applies [[Computational Fluid Dynamics]], structural [[Finite Element Analysis]], and [[Surrogate Model]]-based [[Mathematical Optimisation]] to Typhoon and Tempest combat aircraft design. Tempest programme explores [[Digital Twin]] virtual prototyping to reduce physical testing overhead by an estimated 30%.
+    - **Northern England industry** — Sheffield (Rolls-Royce nuclear / AMRC composites), Leeds (Institute for High Speed Rails FEA), Newcastle (Offshore Engineering, marine [[Computational Fluid Dynamics]]), Manchester (aerospace composites via NCC, nuclear decommissioning modelling at Sellafield). The Henry Royce Institute for advanced materials (Manchester) uses [[Molecular Dynamics]] and [[Finite Element Analysis]] for novel materials characterisation.
+    - **Wellcome Sanger Institute (Cambridge)** and **EMBL-EBI** — Computational modelling of genomic regulatory networks and protein folding; users of large-scale [[Molecular Dynamics]] clusters and [[Bayesian Inference]] pipelines for genomic [[Data Assimilation]].
+  - ## Future Directions (2026–2030)
+    - **Real-time [[Digital Twin]] pipelines** — Sub-second [[Surrogate Model]] inference enabling continuous digital thread monitoring of aerospace, energy, and civil infrastructure assets. [[Physics-Informed Neural Network]]s embedded in edge hardware will provide on-device structural health monitoring of bridges, pipelines, and wind turbines, triggering maintenance alerts when predicted fatigue life falls below threshold. The UK National Digital Twin Programme (Centre for Digital Built Britain) is actively developing standards for real-time [[Digital Twin]] integration across infrastructure sectors.
+    - **Differentiable physics and end-to-end learning** — End-to-end differentiable Computational Models (JAX/Diffrax for ODE/PDE systems, FEniCS-X with automatic differentiation, DiffTaichi for particle simulation) enabling gradient-based [[Mathematical Optimisation]] through simulation. This enables inverse design: given a target performance specification, gradient descent through the simulation directly yields optimal design parameters, collapsing what previously required thousands of forward simulation calls. Direct integration of simulation gradients into [[Reinforcement Learning]] reward signals enables policy learning for complex physical control problems (robot manipulation, fusion plasma control).
+    - **Foundation models for science** — Trillion-parameter [[Scientific Machine Learning]] models pretrained across families of simulation data (fluid dynamics, structural mechanics, atmospheric physics, molecular dynamics) enabling [[Transfer Learning]] to new PDE families with minimal fine-tuning, analogous to [[Large Language Model]] cross-task transfer. Microsoft's Aurora (2024) weather foundation model demonstrated that cross-domain atmospheric pretraining generalises to unseen meteorological variables and forecast horizons without re-training. Domain-specific science foundation models (biology, materials, climate) are expected to reach commercial maturity by 2028.
+    - **Quantum Computational Modelling** — Quantum Monte Carlo on near-term quantum hardware for electronic structure calculation; variational quantum eigensolver (VQE) and quantum phase estimation applied to many-body quantum chemistry problems where classical Computational Models face exponential scaling. Quantum advantage is expected first for [[Molecular Dynamics]] simulation of materials with strongly correlated electrons (transition metal oxides, high-temperature superconductors), with potential impact on materials discovery and catalysis design. UK National Quantum Computing Centre (NQCC) at Harwell is preparing quantum simulation capability for physical science Computational Modelling.
+    - **Exascale and post-exascale simulation** — Deployment of exascale HPC systems (Frontier at 1.2 ExaFLOPs operational 2022; Aurora at 2 ExaFLOPs 2024; planned UK ARCHER3 and EuroHPC Pre-Exascale systems) enabling resolved direct numerical simulation of turbulence in engineering geometries, whole-organ biomechanics at cellular resolution, and multi-century [[Climate Modelling]] ensemble runs at 1 km horizontal resolution. Data movement and memory bandwidth are the principal bottlenecks — new memory technologies (HBM, Processing-In-Memory) and data compression schemes based on [[Deep Learning]] will be essential to exploit exascale arithmetic capability.
+    - **Autonomous model discovery and scientific AI** — [[Machine Learning]]-driven equation discovery (SINDy: Sparse Identification of Nonlinear Dynamics; Brunton et al. 2016) automating the identification of governing [[Differential Equations]] from observational time series; symbolic regression via neural networks (AI Feynman; Udrescu & Tegmark 2020) recovering physical laws from data. The closed loop between data collection, model induction, and experimental design enabled by active learning closes the scientific method into an autonomous cycle — AI Scientist systems (as explored by Sakana AI and others in 2024) capable of formulating, testing, and revising Computational Models without human intervention.
+    - **Regulatory digital validation** — FDA (21st Century Cures Act) and EMA (model-informed drug development guidance) frameworks evolving to accept [[Digital Twin]]-based validation for medical devices, implants, and drug delivery systems, reducing animal testing requirements under the 3Rs principle (Replace, Reduce, Refine). ASME V&V 40 credibility standards for medical device Computational Modelling are being extended to AI-augmented simulation workflows, requiring formal [[Uncertainty Quantification]] and model risk assessment.
+    - **Multi-scale and multi-physics integration** — Seamless coupling across length and time scales — from quantum mechanics (DFT, quantum Monte Carlo) through atomistic [[Molecular Dynamics]], mesoscale continuum mechanics, and system-level [[Digital Twin]] — via systematic coarse-graining and information-passing across models. The Materials Modelling Ontology (MMO) and EMMC (European Materials Modelling Council) standards provide formal vocabulary for multi-scale model description and interoperability.
+    - **Computational social science** — Expanding [[Agent-Based Modelling]] and system dynamics simulation into social, political, and economic domains at unprecedented scale, using social media data and mobile phone datasets as calibration inputs; [[Bayesian Inference]] for parameter estimation; [[Sensitivity Analysis]] to identify key drivers of social phenomena; implications for election modelling, public health communication, and conflict early-warning systems.
+  - ## Formal Foundations and Mathematical Landscape
+    - The mathematical infrastructure of Computational Modelling can be organised around four pillars: **governing equations**, **discretisation and solution methods**, **statistical inference and calibration**, and **model evaluation**. These pillars are not sequential steps in a pipeline but deeply interdependent facets of the same activity. The choice of governing equations constrains the viable discretisation strategies; the discretisation method determines the form of numerical errors that must be characterised during [[Uncertainty Quantification]]; the calibration problem structure (convex or non-convex, identifiable or non-identifiable) is determined by the governing equation's parameterisation; and model evaluation compares the discretised calibrated system against empirical observations whose own measurement errors must be modelled.
+    - **Governing equations and constitutive models** encode the theoretical understanding of the system. Conservation laws — mass, momentum, energy, charge — expressed as partial [[Differential Equations]] are the backbone of continuum physics models. In [[Computational Fluid Dynamics]], the incompressible Navier-Stokes equations (∂u/∂t + u·∇u = -∇p/ρ + ν∇²u, ∇·u = 0) are the governing system; turbulence closure — the greatest unresolved challenge in classical fluid mechanics — determines whether the simulation resolves all scales (DNS), filters to large scales (LES), or models all turbulent effects statistically (RANS). In [[Molecular Dynamics]], Newton's equations of motion (mᵢẍᵢ = -∇ᵢU({x})) with empirical force fields U({x}) constitute the governing system; the accuracy of the simulation depends critically on the quality of the force field, motivating machine learning interatomic potentials (MLIP) that learn U({x}) from quantum chemistry reference calculations. In systems biology, Hill equations, Michaelis-Menten kinetics, and Boolean activation functions approximate gene regulatory logic in ODE-based models, with [[Bayesian Inference]] used to calibrate kinetic parameters from transcriptomic and proteomic time-series data.
+    - **Discretisation and numerical error** transform the continuous governing equations into systems of algebraic equations that digital computers can solve. The three primary families of spatial discretisation are: finite difference methods (FDM), which replace derivatives by difference quotients on a structured grid and are straightforward to analyse via Taylor expansion but limited to simple geometries; [[Finite Element Analysis]] (FEM), which represents the solution as a weighted sum of basis functions on an unstructured mesh, enabling complex geometry representation and rigorous a posteriori error estimation; and finite volume methods (FVM), which discretise integral conservation laws over control volumes, ensuring local conservation and robustness for hyperbolic problems such as compressible flows. Temporal discretisation introduces further choices — explicit methods (Euler forward, Runge-Kutta) have simple update rules but are limited to small time steps by stability constraints (CFL condition); implicit methods (Crank-Nicolson, BDF) are unconditionally stable for diffusive problems but require solving a linear or nonlinear algebraic system at each time step. The Lax equivalence theorem establishes that for well-posed linear initial value problems, consistency (the discrete equations approximate the continuous equations in the limit of zero grid spacing) plus stability (solutions do not grow unboundedly) implies convergence (solutions converge to the exact solution). Modern adaptive mesh refinement (AMR) algorithms — used in FLASH for astrophysics, AMReX for multi-physics — dynamically refine the mesh in regions of high solution gradient, concentrating computational effort where accuracy is most needed.
+    - **Statistical inference and parameter calibration** connect the mathematical model to empirical observations. The Bayesian calibration framework (Kennedy and O'Hagan, 2001) explicitly represents model parameters θ as random variables with a prior distribution π(θ) encoding pre-data beliefs, and updates this distribution using the likelihood of observing data y given θ: π(θ|y) ∝ π(y|θ)π(θ). For computationally expensive models, direct MCMC sampling of the posterior is infeasible; [[Surrogate Model]]s emulate the expensive forward model, enabling thousands of posterior evaluations per second on the emulator surface rather than the expensive simulation. Approximate Bayesian Computation (ABC) bypasses explicit likelihood computation for stochastic simulators such as [[Agent-Based Modelling]] systems by accepting parameter proposals whose simulated outputs fall within a discrepancy threshold of the observed data. Neural posterior estimation (NPE) and sequential neural posterior estimation (SNPE) use normalising flows trained on simulation-observation pairs to directly approximate the posterior without MCMC, enabling amortised inference across multiple observation datasets.
+    - **Verification, validation and uncertainty quantification (V&V&UQ)** constitute the quality assurance framework for Computational Modelling. Verification addresses the question "am I solving the equations correctly?" — typically answered by comparing numerical solutions against analytical solutions for carefully designed test cases (method of manufactured solutions, MMS), performing convergence studies to confirm the expected order of accuracy, and checking conservation properties (total energy, mass, momentum). Validation addresses "am I solving the right equations?" — the model's fidelity to physical reality — by comparing simulation predictions against independent experimental measurements withheld from the calibration procedure, quantifying the discrepancy and assessing whether it falls within the combined [[Uncertainty Quantification]] bounds of simulation and measurement. [[Uncertainty Quantification]] propagates input uncertainty (epistemic uncertainty in model parameters, aleatoric variability in boundary conditions, discretisation error) to produce probability distributions over model outputs. The ASME V&V 10 series (engineering simulation), the AIAA Guide G-077 ([[Computational Fluid Dynamics]]), and ASME V&V 40 (medical device simulation) provide the formal frameworks widely adopted in regulated industries.
+  - ## Key Terminology Glossary
+    - **Discretisation** — the process of approximating a continuous mathematical domain (space, time, parameter space) by a finite set of representative points or elements; foundational to [[Finite Element Analysis]] (mesh of elements), [[Computational Fluid Dynamics]] (finite volume cells), and spectral methods (basis function expansions); discretisation error is a primary source of model inaccuracy
+    - **Verification** — confirmation that a Computational Model is implemented correctly and solves the governing equations as intended; distinguished from validation (comparison with physical reality); typically performed via convergence tests, method of manufactured solutions, and comparison with analytical solutions
+    - **Validation** — confirmation that a Computational Model accurately represents the real-world physical system it is intended to describe, by comparison to independent experimental data not used in model construction; requires quantitative agreement within stated [[Uncertainty Quantification]] bounds
+    - **Emulator / Surrogate** — synonym for [[Surrogate Model]]; a computationally cheap statistical or machine learning approximation of an expensive forward simulation; common approaches: Gaussian process emulators (calibrated to simulation data via kriging), polynomial chaos expansion, neural network surrogate, reduced-order model (ROM)
+    - **Ensemble** — a set of Computational Model runs with perturbed initial conditions, parameter values, or boundary conditions; ensemble spread provides [[Uncertainty Quantification]] in predictions; the ECMWF runs a 51-member atmospheric ensemble; [[Climate Modelling]] CMIP6 multi-model ensembles involve 100+ model configurations
+    - **MCMC** — Markov Chain [[Monte Carlo Simulation]]; a class of iterative stochastic algorithms (Metropolis-Hastings, Gibbs sampling, Hamiltonian Monte Carlo, No-U-Turn Sampler) for sampling from probability distributions, used in [[Bayesian Inference]] for posterior parameter estimation in Computational Models
+    - **PDE** — Partial [[Differential Equations]]; mathematical equations relating a function's partial derivatives with respect to multiple independent variables (space, time); describe heat conduction (diffusion equation), fluid flow (Navier-Stokes), wave propagation (wave equation), electrostatics (Laplace/Poisson); the fundamental mathematical language of continuum Computational Modelling
+    - **PINN** — [[Physics-Informed Neural Network]]; a [[Neural Network]] trained to satisfy PDE constraints as additional soft loss penalties alongside data fitting; meshless, differentiable, and capable of solving PDEs in complex geometries without generating a discretisation mesh; particularly useful for inverse problems (inferring PDE parameters from sparse measurements)
+    - **Sobol index** — global [[Sensitivity Analysis]] measure quantifying the fraction of output variance attributable to each input variable or to interactions between variables; first-order Sobol indices measure individual contributions; total-order Sobol indices capture all interactions; computation typically requires [[Monte Carlo Simulation]] or polynomial chaos expansion
+    - **Digital Thread** — a continuous, bidirectional data linkage across a product's complete lifecycle from requirements and design through manufacturing, testing, operation, and decommissioning; enabled by [[Digital Twin]] and Computational Model integration into product lifecycle management (PLM) platforms; the technological backbone of model-based systems engineering
+    - **CFD** — [[Computational Fluid Dynamics]]; numerical solution of the Navier-Stokes equations for viscous fluid flow via finite volume, finite difference, or finite element methods; methods range from laminar direct numerical simulation (DNS) resolving all turbulent scales through Reynolds-Averaged Navier-Stokes (RANS) with closure models to Large Eddy Simulation (LES); used in aerodynamics, meteorology, biomedical [[Fluid Simulation]], marine engineering
+    - **ODE** — Ordinary [[Differential Equations]]; [[Differential Equations]] in a single independent variable (typically time); describe lumped-parameter dynamical systems; solved with Runge-Kutta, Adams-Bashforth, or implicit BDF methods; widely used in [[Epidemiological Modelling]] (SIR), [[System Dynamics]], chemical kinetics, and ecological modelling
+    - **Reduced Order Model (ROM)** — a Computational Model that captures the essential dynamics of a high-dimensional system in a much lower-dimensional representation; constructed via Proper Orthogonal Decomposition (POD), Dynamic Mode Decomposition (DMD), or Galerkin projection; enables real-time [[Digital Twin]] state estimation
+    - **Model-Based Systems Engineering (MBSE)** — the application of Computational Modelling to the design and integration of complex engineering systems; replaces document-centric engineering with formal model representations; standardised via SysML, DODAF, and MBSE-oriented platforms; deployed in aerospace (Airbus, Boeing, BAE Systems) and defence programme management
+  - ## Paradigm Families and Taxonomic Landscape
+    - Computational Modelling can be taxonomised along several orthogonal axes reflecting the nature of the governing equations, the treatment of randomness, the spatial and temporal resolution strategy, and the relationship between model structure and data. Understanding these dimensions is essential for selecting the appropriate modelling paradigm for a given scientific or engineering problem.
+    - **Deterministic vs. stochastic models**: Deterministic models produce identical outputs from identical inputs; given the same initial conditions and parameters, two runs of an ODE model will produce identical trajectories. This is appropriate when variability in outcomes arises primarily from uncertainty in initial conditions or parameters (epistemic uncertainty), which is propagated through [[Uncertainty Quantification]] analysis rather than embedded in the model equations. Stochastic models — [[Monte Carlo Simulation]], [[Stochastic Process]] differential equation solvers, [[Agent-Based Modelling]] with probabilistic agent decisions — embed randomness directly in the governing dynamics, reflecting irreducible aleatoric variability in the system being modelled: quantum effects at the molecular scale, demographic stochasticity in small populations, random contact patterns in epidemic spreading. The Gillespie algorithm and its accelerated variants (tau-leaping) enable exact stochastic simulation of chemical reaction networks, essential for [[Computational Biology]] models of gene expression in individual cells where copy numbers of transcription factors are too low for deterministic ODE models to be valid.
+    - **Equation-based vs. agent-based vs. data-driven models**: Equation-based models write down explicit governing equations that encode the modeller's theoretical understanding of the system's causal structure, then numerically integrate or solve these equations. They are interpretable, computationally efficient for simple systems, and enable analytical sensitivity analysis. [[Agent-Based Modelling]] instead specifies rules governing the behaviour of individual heterogeneous agents in a shared environment, allowing macroscopic emergent phenomena to arise from local interactions without writing down top-down governing equations for the collective — the appropriate paradigm for systems where individual heterogeneity and local interaction geometry are causally relevant (epidemic spreading on social contact networks, market microstructure). Data-driven models — [[Neural Network]]s, [[Machine Learning]] regression models, [[Gaussian Process]] emulators — learn the input-output mapping of a system from observation data without requiring an explicit mechanistic hypothesis, at the cost of interpretability and extrapolation reliability outside the training distribution. The three paradigms exist on a spectrum rather than in discrete categories, and hybrid models — universal differential equations (Rackauckas et al. 2020), physics-informed neural networks (Raissi et al. 2019) — combine their complementary strengths.
+    - **Continuum vs. discrete models**: Continuum models represent the state of the system as smooth fields (velocity, temperature, concentration, displacement) defined continuously in space and time, described by partial [[Differential Equations]] whose solutions require [[Discretisation]] for numerical computation. They are appropriate when the system contains many interacting components whose collective behaviour can be well-approximated by smooth bulk averages — fluid flow, heat conduction, elastic deformation, wave propagation. Discrete models represent the system as a finite collection of interacting objects: atoms in [[Molecular Dynamics]], cells in lattice Boltzmann methods, individuals in [[Agent-Based Modelling]], rules in [[Cellular Automata]]. The choice between continuum and discrete models is not merely computational convenience but a fundamental scientific hypothesis about the scale at which the relevant physics operates. Multi-scale coupling strategies bridge the two: molecular dynamics results parameterise continuum constitutive laws; continuum models provide boundary conditions for discrete models in localised regions of interest.
+    - **Forward vs. inverse problems**: A forward Computational Model takes model parameters θ and initial/boundary conditions as inputs and produces predictions of system state as output. An inverse problem reverses this direction: given observations of system state (typically noisy, sparse, and partial), infer the model parameters θ or initial conditions that are most consistent with those observations. Inverse problems are generally ill-posed (the Tikhonov regularisation framework establishes conditions for well-posedness), requiring regularisation, [[Bayesian Inference]], or variational [[Mathematical Optimisation]] to select a unique solution. Inverse problems arise ubiquitously: seismic tomography reconstructs subsurface velocity structure from surface seismograph recordings; [[Data Assimilation]] infers atmospheric state from satellite and surface observations; parameter estimation infers kinetic rate constants from time-course measurements in [[Systems Biology]]; medical imaging reconstruction (CT, MRI) infers tissue properties from indirect sensor measurements. The [[Physics-Informed Neural Network]] framework is particularly powerful for inverse problems because the automatic differentiation through the PDE residual loss naturally provides the adjoint gradients needed for gradient-based inversion.
+    - **Single-scale vs. multi-scale models**: Most real-world systems of scientific or engineering interest exhibit phenomena at multiple spatial and temporal scales that cannot all be simultaneously resolved by a single model at tractable computational cost. Multi-scale modelling systematically addresses this by building hierarchies of models at different resolution levels and establishing rigorous information-passing protocols between levels. The three principal multi-scale strategies are: sequential multi-scale methods (parameterise the macroscale model using outputs of the microscale model computed offline); concurrent multi-scale methods (both scales run simultaneously in the same simulation, exchanging information at each time step); and adaptive multi-scale methods (automatically switch between scale models based on local solution features). The Materials Genome Initiative (US) and the European Open Simulation Platform illustrate the ambition of principled multi-scale Computational Modelling for materials discovery and wind farm simulation respectively.
+  - ## Open Research Challenges
+    - **Model interoperability and reproducibility** — Computational Models are frequently developed in monolithic, institution-specific codebases that cannot be easily shared, reproduced, or combined. FAIR principles for scientific data (Findable, Accessible, Interoperable, Reusable) are being extended to Computational Models via the FAIR4RS (FAIR for Research Software) initiative. [[Scientific Machine Learning]] models in particular suffer from poor reproducibility due to stochastic training, hyperparameter sensitivity, and framework version dependencies. The SMRS unified surrogate modelling standard (2025) directly addresses this challenge.
+    - **Calibration and identifiability in high-dimensional parameter spaces** — Many Computational Models have tens to thousands of parameters that cannot all be uniquely determined from available observational data — the parameter identification or structural identifiability problem. [[Bayesian Inference]] via MCMC is theoretically principled but computationally intractable for models with more than ~100 parameters. Amortised inference (normalising flows, variational autoencoders trained on simulation data) offers a scalable alternative. Profile likelihood and [[Sensitivity Analysis]] methods can identify practically non-identifiable parameter combinations.
+    - **Uncertainty quantification at scale** — Propagating uncertainty through high-dimensional Computational Models (climate, [[Computational Fluid Dynamics]], multi-scale materials) using Monte Carlo is prohibitively expensive. Polynomial chaos expansion (PCE) is efficient for low-dimensional uncertainty but scales exponentially with dimension. Active subspace methods and dimension reduction are essential for [[Uncertainty Quantification]] in high-dimensional problems. The COSSAN software and OpenTURNS Python library provide open-source [[Uncertainty Quantification]] workflows.
+    - **Physics-AI interface formalism** — Embedding physical knowledge into [[Machine Learning]] remains an art rather than a science. How to choose which physical constraints to enforce (hard vs. soft), which scales to model with physics vs. data, and how to propagate uncertainty across the physics-AI boundary are open questions. The Materials Modelling Ontology (MMO) and the Virtual Physiological Human (VPH) ontology provide formal frameworks for representing multi-scale model coupling that could guide [[Physics-Informed Neural Network]] architecture design.
+    - **Temporal stability of neural [[Surrogate Model]]s** — Neural [[Surrogate Model]]s often exhibit temporal instability when rolled out autoregressively over many time steps — small per-step errors accumulate, causing trajectory divergence. Error correction schemes (physical constraint projection, adaptive ensemble correction, model-guided rollout via [[Data Assimilation]]) are active research topics. GraphCast uses a learned noise-injection scheme during training to improve long-term stability; ICON-A2O uses ocean-atmosphere coupling to constrain drift.
+    - **Multi-fidelity and multi-model fusion** — Real Computational Modelling workflows combine high-fidelity models (expensive, accurate) with low-fidelity models (cheap, approximate). Multi-fidelity methods (co-kriging, multi-level Monte Carlo, model bridging) systematically exploit the correlation between fidelity levels to obtain accurate statistics at the cost of the low-fidelity model. The MLMC (Multi-Level Monte Carlo) framework provides rigorous convergence theory; software implementations include MLMC.jl and UQpy.
+    - **Software engineering and long-term maintainability** — Scientific Computational Models in Fortran, C++, or legacy Python often have poor test coverage, opaque coupling interfaces, and fragile dependency chains. Modern software engineering practices — continuous integration, unit testing via method of manufactured solutions, containerisation with Docker/Singularity, semantic versioning — are being adopted in community model development. The Climate and Forecast (CF) conventions and the Modular Ocean Model (MOM6) represent exemplars of well-engineered open-source Computational Models.
+    - **Ethical dimensions** — Computational Models are increasingly used in policy-critical decisions (COVID-19 lockdown policy, flood risk zoning, credit risk assessment, military targeting). Model uncertainty must be honestly communicated to decision-makers. The risk of model fetishism — treating Computational Model outputs as ground truth rather than uncertain predictions — is well-documented in risk assessment and infrastructure planning. Transparency of [[Agent-Based Modelling]] assumptions in public health policy modelling and the reproducibility of published climate projections are active concerns in the open science community.
+  - ## Research & Literature
+    - 1. von Neumann, J., & Ulam, S. (1947). "Monte Carlo Method." Report to Los Alamos National Laboratory. [Foundation of stochastic [[Monte Carlo Simulation]]]
+    - 2. Charney, J. G., Fjörtoft, R., & von Neumann, J. (1950). "Numerical Integration of the Barotropic Vorticity Equation." Tellus, 2(4), 237–254. [First digital weather prediction; precursor to [[Climate Modelling]]]
+    - 3. Metropolis, N., et al. (1953). "Equation of State Calculations by Fast Computing Machines." J. Chemical Physics, 21(6), 1087–1092. [Metropolis-Hastings MCMC [[Monte Carlo Simulation]]]
+    - 4. Turner, M. J., et al. (1956). "Stiffness and Deflection Analysis of Complex Structures." Journal of the Aeronautical Sciences, 23(9), 805–823. [First [[Finite Element Analysis]] paper]
+    - 5. Alder, B. J., & Wainwright, T. E. (1957). "Phase Transition for a Hard Sphere System." J. Chemical Physics, 27(5), 1208–1209. [First [[Molecular Dynamics]] simulation]
+    - 6. Zienkiewicz, O. C., & Taylor, R. L. (1967/2005). The Finite Element Method (multiple editions). Elsevier. [Definitive [[Finite Element Analysis]] reference]
+    - 7. Forrester, J. W. (1961). Industrial Dynamics. MIT Press. [[[System Dynamics]] methodology]
+    - 8. Press, W. H., et al. (1992/2007). Numerical Recipes: The Art of Scientific Computing. Cambridge University Press. [Canonical [[Numerical Methods]] reference]
+    - 9. Saltelli, A., et al. (2000). Sensitivity Analysis. Wiley. [[[Sensitivity Analysis]] methods including Sobol indices]
+    - 10. Epstein, J. M., & Axtell, R. (1996). Growing Artificial Societies. MIT Press. [[[Agent-Based Modelling]] of social emergence]
+    - 11. Kennedy, M. C., & O'Hagan, A. (2001). "Bayesian Calibration of Computer Models." J. Royal Statistical Society B, 63(3), 425–464. [[[Bayesian Inference]] for [[Surrogate Model]] calibration]
+    - 12. Evensen, G. (1994). "Sequential Data Assimilation with a Nonlinear Quasi-Geostrophic Model." J. Geophysical Research: Oceans, 99(C5), 10143–10162. [Ensemble Kalman Filter [[Data Assimilation]]]
+    - 13. Oberkampf, W. L., & Trucano, T. G. (2002). "Verification and Validation in Computational Fluid Dynamics." Progress in Aerospace Sciences, 38(3), 209–272. [V&V standards for [[Computational Fluid Dynamics]]]
+    - 14. Frenkel, D., & Smit, B. (2002). Understanding Molecular Simulation (2nd ed.). Academic Press. [[[Molecular Dynamics]] and [[Monte Carlo Simulation]] methods]
+    - 15. Wilensky, U., & Rand, W. (2015). An Introduction to Agent-Based Modeling. MIT Press. [[[Agent-Based Modelling]] with NetLogo]
+    - 16. Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2019). "Physics-Informed Neural Networks: A Deep Learning Framework for Solving Forward and Inverse Problems." J. Computational Physics, 378, 686–707. [[[Physics-Informed Neural Network]] foundation paper]
+    - 17. Lu, L., et al. (2021). "Learning Nonlinear Operators via DeepONet Based on the Universal Approximation Theorem of Operators." Nature Machine Intelligence, 3, 218–229. [[[Operator Learning]] DeepONet]
+    - 18. Li, Z., et al. (2021). "Fourier Neural Operator for Parametric Partial Differential Equations." ICLR 2021. arXiv:2010.08895. [Fourier Neural [[Operator Learning]]]
+    - 19. Pfaff, T., et al. (2021). "Learning Mesh-Based Simulation with Graph Networks." ICLR 2021. [MeshGraphNet [[Graph Neural Network]] for physical simulation]
+    - 20. Cranmer, K., Brehmer, J., & Louppe, G. (2020). "The Frontier of Simulation-Based Inference." PNAS, 117(48), 30055–30062. [[[Bayesian Inference]] with [[Surrogate Model]]s]
+    - 21. Lam, R., et al. (2023). "Learning Skillful Medium-Range Global Weather Forecasting." Science, 382(6677), 1416–1421. [GraphCast neural [[Climate Modelling]] / [[Surrogate Model]]]
+    - 22. Ferguson, N. M., et al. (2020). "Impact of Non-Pharmaceutical Interventions (NPIs) to Reduce COVID-19 Mortality." Imperial College COVID-19 Response Team Report 9. [[[Epidemiological Modelling]] at UK policy scale]
+    - 23. Jumper, J., et al. (2021). "Highly Accurate Protein Structure Prediction with AlphaFold." Nature, 596(7873), 583–589. [[[Protein Structure Prediction]] as Computational Model]
+    - 24. Rackauckas, C., et al. (2020). "Universal Differential Equations for Scientific Machine Learning." arXiv:2001.04385. [Julia SciML [[Scientific Machine Learning]]]
+    - 25. arXiv:2502.06753 (2025). "Case for a Unified Surrogate Modelling Framework in the Age of AI (SMRS)." [[[Surrogate Model]] standardisation]
+    - 26. arXiv:2407.07674 (2024). "Feasibility Study on Active Learning of Smart Surrogates for Scientific Simulations." [Active learning for [[Surrogate Model]] efficiency]
+    - 27. PMC12430230 (2025). "AI and Computational Methods for Modelling, Simulations and Optimizing of Advanced Systems: Innovations in Complexity." [AI integration in Computational Modelling review]
+    - 28. Royal Society Philosophical Transactions A (2024). "Computational Modelling of Biological Systems Now and Then." DOI:10.1098/rsta.2023.0384. [[[Computational Biology]] modelling retrospective and prospects]
+
+- ### Provenance
+  - sources:: https://arxiv.org/html/2502.06753v1, https://pmc.ncbi.nlm.nih.gov/articles/PMC12430230/, https://arxiv.org/abs/2407.07674, https://royalsocietypublishing.org/doi/10.1098/rsta.2023.0384, https://www.sciencedirect.com/book/monograph/9780128195833, https://book.sciml.ai/notes/03-Introduction_to_Scientific_Machine_Learning_through_Physics-Informed_Neural_Networks/, https://arxiv.org/abs/2412.11967, https://arxiv.org/pdf/2503.00331, https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202400574, https://www.sc.stfc.ac.uk/ciuk-2025/, https://www.ucl.ac.uk/mathematical-physical-sciences/statistics/research/computational-statistics-and-machine-learning
+  - migration-date:: 2026-06-21T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

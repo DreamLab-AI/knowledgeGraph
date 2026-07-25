@@ -1,0 +1,421 @@
+public:: true
+
+# Clustering
+```json-ld
+{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:clustering", "@type":"Page", "title":"Clustering", "vc:slug":"clustering", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[ {"@id":"urn:visionflow:linked:unsupervised-learning","vc:label":"Unsupervised Learning"}, {"@id":"urn:visionflow:linked:distance-metric","vc:label":"Distance Metric"}, {"@id":"urn:visionflow:linked:feature-engineering","vc:label":"Feature Engineering"}, {"@id":"urn:visionflow:linked:embedding","vc:label":"Embedding"}, {"@id":"urn:visionflow:linked:embedding-space","vc:label":"Embedding Space"}, {"@id":"urn:visionflow:linked:gaussian-mixture-model","vc:label":"Gaussian Mixture Model"}, {"@id":"urn:visionflow:linked:anomaly-detection","vc:label":"Anomaly Detection"}, {"@id":"urn:visionflow:linked:community-detection","vc:label":"Community Detection"}, {"@id":"urn:visionflow:linked:dimensionality-reduction","vc:label":"Dimensionality Reduction"}, {"@id":"urn:visionflow:linked:predictive-analytics","vc:label":"Predictive Analytics"}, {"@id":"urn:visionflow:linked:hierarchical-clustering","vc:label":"Hierarchical Clustering"}, {"@id":"urn:visionflow:linked:graph-analytics","vc:label":"Graph Analytics"}, {"@id":"urn:visionflow:owl:class:classification","vc:label":"Classification"}, {"@id":"urn:visionflow:owl:class:regression","vc:label":"Regression"}, {"@id":"urn:visionflow:linked:dbscan","vc:label":"DBSCAN"}, {"@id":"urn:visionflow:linked:k-means","vc:label":"K-Means"}, {"@id":"urn:visionflow:linked:spectral-clustering","vc:label":"Spectral Clustering"}, {"@id":"urn:visionflow:linked:silhouette-score","vc:label":"Silhouette Score"}, {"@id":"urn:visionflow:linked:data-mining","vc:label":"Data Mining"}, {"@id":"urn:visionflow:linked:exploratory-data-analysis","vc:label":"Exploratory Data Analysis"}, {"@id":"urn:visionflow:linked:topic-modelling","vc:label":"Topic Modelling"}, {"@id":"urn:visionflow:linked:natural-language-processing","vc:label":"Natural Language Processing"}, {"@id":"urn:visionflow:linked:neural-network","vc:label":"Neural Network"}, {"@id":"urn:visionflow:linked:representation-learning","vc:label":"Representation Learning"}, {"@id":"urn:visionflow:linked:transfer-learning","vc:label":"Transfer Learning"}, {"@id":"urn:visionflow:linked:t-sne","vc:label":"t-SNE"}, {"@id":"urn:visionflow:linked:umap","vc:label":"UMAP"}, {"@id":"urn:visionflow:linked:principal-component-analysis","vc:label":"Principal Component Analysis"}, {"@id":"urn:visionflow:linked:bioinformatics","vc:label":"Bioinformatics"}, {"@id":"urn:visionflow:linked:customer-segmentation","vc:label":"Customer Segmentation"}, {"@id":"urn:visionflow:linked:vector-database","vc:label":"Vector Database"}, {"@id":"urn:visionflow:linked:large-language-model","vc:label":"Large Language Model"}, {"@id":"urn:visionflow:linked:density-estimation","vc:label":"Density Estimation"}, {"@id":"urn:visionflow:linked:graph-neural-network","vc:label":"Graph Neural Network"}, {"@id":"urn:visionflow:linked:self-supervised-learning","vc:label":"Self-Supervised Learning"}, {"@id":"urn:visionflow:linked:contrastive-learning","vc:label":"Contrastive Learning"}, {"@id":"urn:visionflow:linked:autoencoder","vc:label":"Autoencoder"}, {"@id":"urn:visionflow:linked:machine-learning","vc:label":"Machine Learning"}, {"@id":"urn:visionflow:linked:hdbscan","vc:label":"HDBSCAN"}, {"@id":"urn:visionflow:linked:expectation-maximisation","vc:label":"Expectation-Maximisation"}, {"@id":"urn:visionflow:linked:statistical-learning","vc:label":"Statistical Learning"}, {"@id":"urn:visionflow:linked:similarity-function","vc:label":"Similarity Function"}, {"@id":"urn:visionflow:linked:cell-type-identification","vc:label":"Cell Type Identification"}, {"@id":"urn:visionflow:linked:image-retrieval","vc:label":"Image Retrieval"}, {"@id":"urn:visionflow:linked:document-organisation","vc:label":"Document Organisation"}, {"@id":"urn:visionflow:linked:graph-laplacian","vc:label":"Graph Laplacian"}, {"@id":"urn:visionflow:linked:manifold-hypothesis","vc:label":"Manifold Hypothesis"}, {"@id":"urn:visionflow:linked:data-preprocessing","vc:label":"Data Preprocessing"}, {"@id":"urn:visionflow:linked:semi-supervised-learning","vc:label":"Semi-Supervised Learning"}, {"@id":"urn:visionflow:linked:bayesian-nonparametrics","vc:label":"Bayesian Nonparametrics"}, {"@id":"urn:visionflow:linked:information-theory","vc:label":"Information Theory"}, {"@id":"urn:visionflow:linked:combinatorial-optimisation","vc:label":"Combinatorial Optimisation"}, {"@id":"urn:visionflow:linked:linear-algebra","vc:label":"Linear Algebra"}, {"@id":"urn:visionflow:linked:probability-theory","vc:label":"Probability Theory"} ] }
+```
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:clustering",
+  "@type": "Class",
+  "label": "Clustering",
+  "definition": "Clustering is an unsupervised machine learning task that partitions a set of objects into groups, or clusters, such that objects within a group are more similar to one another than to those in other groups, according to a chosen distance or similarity metric. Unlike classification it operates without predefined labels, discovering latent structure directly from the data. Algorithms differ in their cluster model, ranging from centroid-based and density-based to hierarchical and probabilistic approaches. Clustering is widely used for exploratory analysis, segmentation, anomaly detection, and as a preprocessing step for downstream learning.",
+  "domain": "machine-learning",
+  "maturity": "mature",
+  "subClassOf": [
+    { "@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning" },
+    { "@id": "urn:ngm:class:machine-learning", "label": "Machine Learning" }
+  ],
+  "relations": {
+    "partOf": [
+      { "@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning" }
+    ],
+    "hasPart": [
+      { "@id": "urn:ngm:class:distance-metric", "label": "Distance Metric" },
+      { "@id": "urn:ngm:class:hierarchical-clustering", "label": "Hierarchical Clustering" },
+      { "@id": "urn:ngm:class:k-means", "label": "K-Means" },
+      { "@id": "urn:ngm:class:dbscan", "label": "DBSCAN" },
+      { "@id": "urn:ngm:class:spectral-clustering", "label": "Spectral Clustering" },
+      { "@id": "urn:ngm:class:gaussian-mixture-model", "label": "Gaussian Mixture Model" }
+    ],
+    "requires": [
+      { "@id": "urn:ngm:class:distance-metric", "label": "Distance Metric" },
+      { "@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering" },
+      { "@id": "urn:ngm:class:embedding", "label": "Embedding" }
+    ],
+    "uses": [
+      { "@id": "urn:ngm:class:embedding", "label": "Embedding" },
+      { "@id": "urn:ngm:class:embedding-space", "label": "Embedding Space" },
+      { "@id": "urn:ngm:class:gaussian-mixture-model", "label": "Gaussian Mixture Model" },
+      { "@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction" },
+      { "@id": "urn:ngm:class:neural-network", "label": "Neural Network" }
+    ],
+    "enables": [
+      { "@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection" },
+      { "@id": "urn:ngm:class:community-detection", "label": "Community Detection" },
+      { "@id": "urn:ngm:class:customer-segmentation", "label": "Customer Segmentation" },
+      { "@id": "urn:ngm:class:exploratory-data-analysis", "label": "Exploratory Data Analysis" },
+      { "@id": "urn:ngm:class:topic-modelling", "label": "Topic Modelling" }
+    ],
+    "supports": [
+      { "@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction" },
+      { "@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics" },
+      { "@id": "urn:ngm:class:representation-learning", "label": "Representation Learning" }
+    ],
+    "contrastsWith": [
+      { "@id": "urn:ngm:class:classification", "label": "Classification" },
+      { "@id": "urn:ngm:class:regression", "label": "Regression" }
+    ],
+    "relatedTo": [
+      { "@id": "urn:ngm:class:graph-analytics", "label": "Graph Analytics" },
+      { "@id": "urn:ngm:class:data-mining", "label": "Data Mining" },
+      { "@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing" },
+      { "@id": "urn:ngm:class:bioinformatics", "label": "Bioinformatics" },
+      { "@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning" },
+      { "@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning" }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.90,
+  "provenance": { "attributedTo": "did:nostr:enrichment-swarm", "generatedAt": "2026-06-21T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+}
+```
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:clustering:enriched-2026",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": { "@id": "urn:visionflow:page:clustering" },
+  "vc:resolutions": [
+    { "raw": "[[Unsupervised Learning]]", "resolved": "urn:visionflow:linked:unsupervised-learning", "kind": "StubLink" },
+    { "raw": "[[Distance Metric]]", "resolved": "urn:visionflow:linked:distance-metric", "kind": "StubLink" },
+    { "raw": "[[Feature Engineering]]", "resolved": "urn:visionflow:linked:feature-engineering", "kind": "StubLink" },
+    { "raw": "[[Embedding]]", "resolved": "urn:visionflow:linked:embedding", "kind": "StubLink" },
+    { "raw": "[[Embedding Space]]", "resolved": "urn:visionflow:linked:embedding-space", "kind": "StubLink" },
+    { "raw": "[[Gaussian Mixture Model]]", "resolved": "urn:visionflow:linked:gaussian-mixture-model", "kind": "StubLink" },
+    { "raw": "[[Anomaly Detection]]", "resolved": "urn:visionflow:linked:anomaly-detection", "kind": "StubLink" },
+    { "raw": "[[Community Detection]]", "resolved": "urn:visionflow:linked:community-detection", "kind": "StubLink" },
+    { "raw": "[[Dimensionality Reduction]]", "resolved": "urn:visionflow:linked:dimensionality-reduction", "kind": "StubLink" },
+    { "raw": "[[Predictive Analytics]]", "resolved": "urn:visionflow:linked:predictive-analytics", "kind": "StubLink" },
+    { "raw": "[[Hierarchical Clustering]]", "resolved": "urn:visionflow:linked:hierarchical-clustering", "kind": "StubLink" },
+    { "raw": "[[Graph Analytics]]", "resolved": "urn:visionflow:linked:graph-analytics", "kind": "StubLink" },
+    { "raw": "[[Classification]]", "resolved": "urn:visionflow:owl:class:classification", "kind": "ResolvedLink" },
+    { "raw": "[[Regression]]", "resolved": "urn:visionflow:owl:class:regression", "kind": "ResolvedLink" },
+    { "raw": "[[DBSCAN]]", "resolved": "urn:visionflow:linked:dbscan", "kind": "StubLink" },
+    { "raw": "[[K-Means]]", "resolved": "urn:visionflow:linked:k-means", "kind": "StubLink" },
+    { "raw": "[[Spectral Clustering]]", "resolved": "urn:visionflow:linked:spectral-clustering", "kind": "StubLink" },
+    { "raw": "[[Silhouette Score]]", "resolved": "urn:visionflow:linked:silhouette-score", "kind": "StubLink" },
+    { "raw": "[[Data Mining]]", "resolved": "urn:visionflow:linked:data-mining", "kind": "StubLink" },
+    { "raw": "[[Exploratory Data Analysis]]", "resolved": "urn:visionflow:linked:exploratory-data-analysis", "kind": "StubLink" },
+    { "raw": "[[Topic Modelling]]", "resolved": "urn:visionflow:linked:topic-modelling", "kind": "StubLink" },
+    { "raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink" },
+    { "raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "StubLink" },
+    { "raw": "[[Representation Learning]]", "resolved": "urn:visionflow:linked:representation-learning", "kind": "StubLink" },
+    { "raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "StubLink" },
+    { "raw": "[[t-SNE]]", "resolved": "urn:visionflow:linked:t-sne", "kind": "StubLink" },
+    { "raw": "[[UMAP]]", "resolved": "urn:visionflow:linked:umap", "kind": "StubLink" },
+    { "raw": "[[Principal Component Analysis]]", "resolved": "urn:visionflow:linked:principal-component-analysis", "kind": "StubLink" },
+    { "raw": "[[Bioinformatics]]", "resolved": "urn:visionflow:linked:bioinformatics", "kind": "StubLink" },
+    { "raw": "[[Customer Segmentation]]", "resolved": "urn:visionflow:linked:customer-segmentation", "kind": "StubLink" },
+    { "raw": "[[Vector Database]]", "resolved": "urn:visionflow:linked:vector-database", "kind": "StubLink" },
+    { "raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink" },
+    { "raw": "[[Density Estimation]]", "resolved": "urn:visionflow:linked:density-estimation", "kind": "StubLink" },
+    { "raw": "[[Graph Neural Network]]", "resolved": "urn:visionflow:linked:graph-neural-network", "kind": "StubLink" },
+    { "raw": "[[Self-Supervised Learning]]", "resolved": "urn:visionflow:linked:self-supervised-learning", "kind": "StubLink" },
+    { "raw": "[[Contrastive Learning]]", "resolved": "urn:visionflow:linked:contrastive-learning", "kind": "StubLink" },
+    { "raw": "[[Autoencoder]]", "resolved": "urn:visionflow:linked:autoencoder", "kind": "StubLink" },
+    { "raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "StubLink" },
+    { "raw": "[[HDBSCAN]]", "resolved": "urn:visionflow:linked:hdbscan", "kind": "StubLink" },
+    { "raw": "[[Expectation-Maximisation]]", "resolved": "urn:visionflow:linked:expectation-maximisation", "kind": "StubLink" },
+    { "raw": "[[Statistical Learning]]", "resolved": "urn:visionflow:linked:statistical-learning", "kind": "StubLink" },
+    { "raw": "[[Similarity Function]]", "resolved": "urn:visionflow:linked:similarity-function", "kind": "StubLink" },
+    { "raw": "[[Cell Type Identification]]", "resolved": "urn:visionflow:linked:cell-type-identification", "kind": "StubLink" },
+    { "raw": "[[Image Retrieval]]", "resolved": "urn:visionflow:linked:image-retrieval", "kind": "StubLink" },
+    { "raw": "[[Document Organisation]]", "resolved": "urn:visionflow:linked:document-organisation", "kind": "StubLink" },
+    { "raw": "[[Graph Laplacian]]", "resolved": "urn:visionflow:linked:graph-laplacian", "kind": "StubLink" },
+    { "raw": "[[Manifold Hypothesis]]", "resolved": "urn:visionflow:linked:manifold-hypothesis", "kind": "StubLink" },
+    { "raw": "[[Data Preprocessing]]", "resolved": "urn:visionflow:linked:data-preprocessing", "kind": "StubLink" },
+    { "raw": "[[Semi-Supervised Learning]]", "resolved": "urn:visionflow:linked:semi-supervised-learning", "kind": "StubLink" },
+    { "raw": "[[Bayesian Nonparametrics]]", "resolved": "urn:visionflow:linked:bayesian-nonparametrics", "kind": "StubLink" },
+    { "raw": "[[Information Theory]]", "resolved": "urn:visionflow:linked:information-theory", "kind": "StubLink" },
+    { "raw": "[[Combinatorial Optimisation]]", "resolved": "urn:visionflow:linked:combinatorial-optimisation", "kind": "StubLink" },
+    { "raw": "[[Linear Algebra]]", "resolved": "urn:visionflow:linked:linear-algebra", "kind": "StubLink" },
+    { "raw": "[[Probability Theory]]", "resolved": "urn:visionflow:linked:probability-theory", "kind": "StubLink" }
+  ],
+  "prov:wasAttributedTo": { "@id": "did:nostr:enrichment-swarm" },
+  "prov:generatedAtTime": { "@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime" }
+}
+```
+
+- ### Definition
+  - Clustering is a foundational [[Unsupervised Learning]] task that organises a collection of objects into groups — called clusters — such that members within a cluster are more similar to one another than to members of other clusters, as measured by a chosen [[Distance Metric]] or similarity function. Unlike [[Classification]], which assigns inputs to predefined label categories using labelled training data, clustering operates purely on unlabelled observations, discovering latent structure directly from the distributional geometry of the data. The problem is formally stated as: given a dataset X = {x₁, …, xₙ} where each xᵢ ∈ ℝᵈ, find a partition C = {C₁, …, Cₖ} (or a soft assignment) that optimises a cluster-quality criterion such as the within-cluster sum of squared distances (k-means objective), a likelihood function over a probabilistic generative model ([[Gaussian Mixture Model]]), or a graph-cut criterion ([[Spectral Clustering]]). Algorithms differ substantially in the cluster shape they can represent — centroid methods like [[K-Means]] assume convex, isotropic clusters; density-based methods like [[DBSCAN]] discover arbitrarily shaped dense regions while labelling sparse outliers as noise; [[Hierarchical Clustering]] produces a dendrogram of nested partitions; and probabilistic methods like the [[Gaussian Mixture Model]] yield soft, overlapping memberships. Modern practice supplements classical geometric algorithms with deep representational approaches: [[Autoencoder]] networks learn compact [[Embedding]] spaces in which classical algorithms achieve much higher quality, while [[Self-Supervised Learning]] and [[Contrastive Learning]] objectives train [[Neural Network]] encoders whose output [[Embedding Space]] is shaped to benefit downstream clustering. [[Dimensionality Reduction]] techniques — [[Principal Component Analysis]], [[t-SNE]], and [[UMAP]] — are routinely applied before clustering both to eliminate noise dimensions and to enable visual inspection of cluster geometry. Cluster quality is assessed without ground-truth labels using internal indices such as the [[Silhouette Score]] and the Davies-Bouldin index, or against known label sets using external metrics such as normalised mutual information. Clustering is a cornerstone of [[Data Mining]] and [[Exploratory Data Analysis]], enabling [[Customer Segmentation]], [[Anomaly Detection]], [[Topic Modelling]], [[Community Detection]] in networks and social graphs, and bioinformatics applications including single-cell RNA sequencing cell-type identification. It also serves as a preprocessing step that compresses continuous representations for [[Predictive Analytics]] and [[Representation Learning]], and increasingly runs directly on high-dimensional [[Large Language Model]] [[Embedding]] outputs stored in a [[Vector Database]].
+
+- ### Semantic Classification
+  - owl-class:: machine-learning:Clustering
+  - owl-role:: LearningParadigm | DataMiningTechnique | UnsupervisedMethod
+  - owl-inferred:: ml:PartitioningMethod, ml:ExploratoryTechnique, ml:RepresentationUtility
+  - belongs-to-domain:: [[Machine Learning]], [[Data Mining]], [[Natural Language Processing]], [[Bioinformatics]]
+  - implemented-in-layer:: [[Unsupervised Learning]]
+
+- ### Relationships
+  - is-subclass-of:: [[Unsupervised Learning]], [[Machine Learning]], [[Data Mining]], [[Statistical Learning]]
+  - has-part:: [[K-Means]], [[DBSCAN]], [[Hierarchical Clustering]], [[Spectral Clustering]], [[Gaussian Mixture Model]], [[Distance Metric]], [[Silhouette Score]], [[Expectation-Maximisation]], [[HDBSCAN]]
+  - requires:: [[Distance Metric]], [[Feature Engineering]], [[Embedding]], [[Embedding Space]], [[Similarity Function]]
+  - enables:: [[Anomaly Detection]], [[Community Detection]], [[Customer Segmentation]], [[Exploratory Data Analysis]], [[Topic Modelling]], [[Cell Type Identification]], [[Image Retrieval]], [[Document Organisation]]
+  - implements:: [[Expectation-Maximisation]], [[K-Means]], [[Graph Laplacian]], [[Manifold Hypothesis]]
+  - depends-on:: [[Dimensionality Reduction]], [[Feature Engineering]], [[Density Estimation]], [[Linear Algebra]], [[Probability Theory]]
+  - supports:: [[Predictive Analytics]], [[Representation Learning]], [[Dimensionality Reduction]], [[Transfer Learning]], [[Graph Analytics]], [[Data Preprocessing]], [[Bioinformatics]]
+  - uses:: [[Embedding]], [[Embedding Space]], [[Gaussian Mixture Model]], [[Neural Network]], [[Autoencoder]], [[t-SNE]], [[UMAP]], [[Principal Component Analysis]], [[Graph Neural Network]], [[Self-Supervised Learning]], [[Contrastive Learning]], [[Vector Database]], [[Large Language Model]], [[Expectation-Maximisation]], [[HDBSCAN]]
+  - contrasts-with:: [[Classification]], [[Regression]], [[Semi-Supervised Learning]]
+  - related-to:: [[Graph Analytics]], [[Data Mining]], [[Natural Language Processing]], [[Bioinformatics]], [[Self-Supervised Learning]], [[Contrastive Learning]], [[Representation Learning]], [[Transfer Learning]], [[Density Estimation]], [[Bayesian Nonparametrics]], [[Information Theory]], [[Combinatorial Optimisation]]
+  - standardized-by:: [[scikit-learn]], [[IEEE TPAMI]]
+
+- ### Content
+
+  ## Compositional Relationships (Components)
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:hasPart ml:KMeansAlgorithm))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:hasPart ml:DBSCAN))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:hasPart ml:HierarchicalClustering))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:hasPart ml:SpectralClustering))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:hasPart ml:GaussianMixtureModel))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:hasPart ml:DistanceMetric))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:hasPart ml:ClusterQualityIndex))
+
+  ## Dependency Relationships
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:requires ml:DistanceMetric))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:requires ml:FeatureEngineering))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:requires ml:EmbeddingSpace))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:dependsOn ml:DimensionalityReduction))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:dependsOn ml:DensityEstimation))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:dependsOn ml:FeatureEngineering))
+
+  ## Capability Relationships
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:enables ml:AnomalyDetection))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:enables ml:CommunityDetection))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:enables ml:CustomerSegmentation))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:enables ml:ExploratoryDataAnalysis))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:enables ml:TopicModelling))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:supports ml:PredictiveAnalytics))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:supports ml:RepresentationLearning))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:supports ml:GraphAnalytics))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:supports ml:BioinformaticsAnalysis))
+
+  ## Implementation Relationships
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:uses ml:EmbeddingSpace))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:uses ml:NeuralNetworkEncoder))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:uses ml:Autoencoder))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:uses ml:ContrastiveLearningObjective))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:uses ml:SelfSupervisedRepresentation))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:uses ml:tSNEProjection))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:uses ml:UMAPProjection))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:uses ml:GraphNeuralNetwork))
+
+  ## Reduction Relationships
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:reducesTo ml:PartitioningProblem))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:reducesTo ml:DensityEstimationProblem))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:reducesTo ml:GraphCutProblem))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:reducesTo ml:LatentSpaceOrganisation))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:reducesTo ml:CombOptimisationProblem))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:contrastsWith ml:Classification))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:contrastsWith ml:Regression))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:contrastsWith ml:SemiSupervisedLearning))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:implements ml:ExpectationMaximisation))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:implements ml:ManifoldHypothesis))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:relatedTo ml:BayesianNonparametrics))
+      SubClassOf(ml:Clustering
+        ObjectSomeValuesFrom(ml:relatedTo ml:InformationTheory))
+
+  ## Formal Analysis
+
+  Clustering is formally an optimisation problem over a space of partitions. Given a dataset X = {x₁, …, xₙ} with xᵢ ∈ ℝᵈ and a positive integer k, the k-means objective seeks a partition C = {C₁, …, Cₖ} minimising the within-cluster sum of squared distances (WCSS): J(C) = Σᵢ₌₁ᵏ Σ_{x∈Cᵢ} ‖x − μᵢ‖², where μᵢ = (1/|Cᵢ|) Σ_{x∈Cᵢ} x is the centroid of the i-th cluster. This objective is NP-hard to minimise exactly for general k ≥ 2 (Aloise et al., 2009), and the standard Lloyd's algorithm converges to a local minimum in O(nkdt) per iteration. The k-means++ seeding strategy (Arthur and Vassilvitskii, 2007) provides an O(log k) approximation guarantee, ensuring the initial centroid selection achieves expected WCSS no more than O(log k) times the optimal value. The Expectation-Maximisation (EM) algorithm for the [[Gaussian Mixture Model]] generalises k-means to a probabilistic setting: in the E-step, each point is assigned a posterior membership probability over k Gaussian components; in the M-step, the parameters (means, covariances, mixing weights) are updated by weighted maximum likelihood. EM for Gaussian mixtures is guaranteed to converge monotonically in the log-likelihood, though to a local maximum; BIC and AIC model selection criteria penalise log-likelihood by the number of free parameters, enabling principled selection of k.
+
+  The spectral clustering family grounds cluster discovery in algebraic graph theory. Given a similarity graph G = (V, E, W) with vertex set V = {x₁, …, xₙ} and weight matrix W where Wᵢⱼ = exp(−‖xᵢ − xⱼ‖²/2σ²) (Gaussian similarity), the unnormalised graph Laplacian is L = D − W (where D is the diagonal degree matrix), and the normalised Laplacian is L_sym = D^{-1/2} L D^{-1/2}. Clustering is performed by computing the k smallest eigenvectors of L_sym (or L), stacking them as columns of a matrix U ∈ ℝⁿˣᵏ, normalising each row of U to unit norm, and applying [[K-Means]] to the rows of U. By the Courant-Fischer min-max theorem, the k smallest eigenvalues correspond to the k loosely connected components of G, so the eigenvectors embed the graph structure in a space where cluster separation is maximally preserved. The computational bottleneck is the eigen-decomposition, which requires O(n³) time for exact computation — motivating Nyström-based approximations for large n.
+
+  Density-based methods such as [[DBSCAN]] formalise clusters as maximal connected sets of density-connected points. A point p is a core point if its ε-neighbourhood N_ε(p) = {q | dist(p, q) ≤ ε} contains at least min-pts points. Point q is density-reachable from p if there exists a chain p = p₁, p₂, …, pₙ = q where each pᵢ₊₁ ∈ N_ε(pᵢ) and each pᵢ is a core point. A cluster is a maximal set of mutually density-connected points. HDBSCAN (Campello et al., 2013) extends this by constructing a full hierarchy over the data via a mutual reachability distance d_mreach(p,q) = max(core_distance(p), core_distance(q), dist(p,q)) and extracting the most stable clusters from the resulting condensed tree, automatically selecting the ε threshold and tolerating variable-density regimes that confound DBSCAN.
+
+  For Bayesian nonparametric clustering, the Dirichlet Process Mixture Model (DPMM) places a Dirichlet Process prior over the number of clusters, allowing the model to grow with the data: as n → ∞, the expected number of clusters grows as O(α log n) where α is the concentration parameter. Inference proceeds via collapsed Gibbs sampling or variational inference, yielding a posterior over the number and structure of clusters — giving the Bayesian approach an inherent model-selection advantage over fixed-k methods. The Chinese Restaurant Process (CRP) representation of the DP provides an intuitive sequential assignment procedure: customer n+1 sits at an existing table i with probability nᵢ/(n+α) and opens a new table with probability α/(n+α).
+
+  Deep clustering methods jointly optimise an encoder network f_θ: X → Z and a cluster assignment head over the latent space Z. The DEC objective (Xie et al., 2016) minimises KL divergence between soft cluster assignments qᵢⱼ = (1 + ‖zᵢ − μⱼ‖²/α)^{-(α+1)/2} and sharpened target distributions pᵢⱼ ∝ qᵢⱼ² / Σᵢ qᵢⱼ, iteratively driving the learned representation toward a cluster-friendly geometry. Contrastive clustering (Li et al., 2021) adds an instance-level contrastive loss alongside a cluster-level contrastive loss that pulls cluster assignments together across augmented views, achieving state-of-the-art on image clustering benchmarks without ground-truth labels.
+
+  ## About
+
+  Clustering is one of the oldest and most practically impactful techniques in [[Machine Learning]] and [[Data Mining]]. Its core intuition — that structure in data can be revealed by grouping similar items together without any labels — appears across statistics, combinatorics, and information theory simultaneously in the 1950s and 1960s, predating the modern ML canon by decades. The term itself was consolidated by Tryon (1939) in psychological trait analysis, while MacQueen's 1967 formalisation of k-means and Ward's 1963 hierarchical agglomerative criterion established the algorithmic foundations that persist today. The enduring appeal of clustering rests on a fundamental empirical observation: most real-world high-dimensional datasets are not uniformly distributed but instead concentrate on lower-dimensional manifolds with intrinsic categorical or graded structure that an unsupervised partition can approximate. This manifold hypothesis connects clustering directly to [[Representation Learning]] and [[Dimensionality Reduction]], making the three disciplines mutually reinforcing.
+
+  The distinction between cluster paradigms is best understood through their structural assumptions. Centroid methods like [[K-Means]] minimise the sum of squared [[Distance Metric]] from each point to its nearest cluster representative; they are computationally efficient (O(nkdt) per iteration for n points, k clusters, d dimensions, t iterations) and scale to billions of data points, but assume spherical, equal-variance clusters. Density-based methods like [[DBSCAN]] define clusters as maximal sets of density-connected points, using two parameters (ε radius, min-points threshold) to separate core, border, and noise points; they handle arbitrary cluster shapes, detect outliers natively, and require no pre-specified k, but are sensitive to parameter choice and struggle in varying-density regimes — a limitation that motivated HDBSCAN's hierarchical density extension. [[Hierarchical Clustering]] builds a dendrogram through repeated agglomeration (Ward, complete-linkage, single-linkage) or division, allowing post-hoc selection of any granularity level, at the cost of O(n² log n) time for most linkages. [[Spectral Clustering]] embeds the graph Laplacian of a similarity matrix before applying k-means in the resulting eigenspace, capturing complex manifold-structured clusters at O(n³) eigen-decomposition cost. Probabilistic model-based clustering, principally via the [[Gaussian Mixture Model]] fitted with the Expectation-Maximisation algorithm, provides soft cluster assignments with calibrated uncertainty, interpretable covariance geometry, and a principled model-selection criterion (BIC/AIC). [[Density Estimation]] is the generative counterpart: rather than assigning points to clusters, a density model assigns each point a likelihood under a learned distribution, enabling outlier detection by thresholding.
+
+  The 2015-2025 decade saw the rise of deep clustering, in which the [[Embedding]] produced by a [[Neural Network]] encoder is jointly optimised with a clustering objective, collapsing the sequential pipeline of dimensionality reduction followed by classical clustering into a single end-to-end trainable system. Xie et al. (2016) introduced Deep Embedded Clustering (DEC), using soft cluster assignments to refine a [[Autoencoder]] representation iteratively. [[Contrastive Learning]] methods (SimCLR, MoCo) trained with self-supervised objectives on unlabelled data produce embeddings in which semantically similar instances are proximity-mapped, giving k-means dramatically better structure to exploit. By 2024-2025, the dominant trend in bioinformatics was applying these methods to single-cell RNA sequencing (scRNA-seq): methods like scAGCL (adversarial [[Graph Neural Network]] contrastive clustering, 2025), scDCCA (deep contrastive clustering with autoencoders), and scSCCNIA (similarity-matrix contrastive clustering with neighbour information aggregation) each achieve substantial gains over classical k-means on cell-type identification benchmarks. Separately, [[Large Language Model]] embeddings from models like BERT, GPT-4, and Llama-3 have replaced bag-of-words and TF-IDF as inputs to clustering pipelines for [[Natural Language Processing]] tasks, with 2025 studies demonstrating LLM-based k-means consistently outperforming traditional text features on customer segmentation and [[Topic Modelling]] tasks. The ERASMO method (2024) combines LLM cluster descriptions with iterative segmentation to produce human-readable, actionable cluster summaries automatically.
+
+  A persistent theoretical challenge in clustering is the absence of a universal definition of a "cluster." Different algorithms optimise different notions of cluster quality — WCSS minimisation for k-means, density-connectedness for DBSCAN, modularity for graph community detection, log-likelihood for GMMs — and these objectives are formally incompatible: a dataset can have one optimal k-means partition and a completely different optimal density-based partition, neither of which is "correct" in any absolute sense. This algorithmic relativity means that clustering is fundamentally interpretive: the partition produced depends on both the algorithm and the application-specific notion of similarity. The "No Free Lunch" theorem for clustering (Kleinberg, 2003) formalised this: no clustering algorithm can simultaneously satisfy three natural properties — scale-invariance, richness (ability to produce any partition), and consistency (similar data should produce similar clusters). This result establishes that clustering algorithm choice always embodies an implicit assumption about the desired structure, making the choice of algorithm an epistemological as well as computational decision.
+
+  Cluster validation — determining whether a clustering is "good" — is itself a research frontier. Internal validation indices (Silhouette Coefficient, Davies-Bouldin Index, Calinski-Harabasz Index) measure the geometric quality of a partition without reference to external labels, enabling unsupervised model selection including the number of clusters k. The Silhouette Coefficient, s(i) = (b(i) − a(i)) / max(a(i), b(i)), measures how well each point i fits its assigned cluster relative to the nearest other cluster, with values from −1 (misclustered) to +1 (perfectly assigned); the mean silhouette over all points provides a scalar summary of partition quality. External validation metrics — Adjusted Rand Index (ARI), Normalised Mutual Information (NMI), Fowlkes-Mallows score — require ground-truth label sets and measure agreement between the predicted partition and the known partition, enabling fair comparison of algorithms on labelled benchmark datasets. A 2025 benchmarking study (scCluBench, arXiv:2512.02471) applied 12 internal and external indices across 36 scRNA-seq datasets to comprehensively evaluate 20+ clustering methods, finding that no single algorithm dominated across all datasets and that hyperparameter tuning quality was a stronger predictor of outcome than algorithm family.
+
+  The intersection of clustering with [[Bayesian Nonparametrics]] provides a theoretically principled resolution to the k-selection problem. The Dirichlet Process (DP), introduced by Ferguson (1973) and popularised in the machine learning community by Jordan, Ghahramani, and colleagues in the late 1990s, defines a prior over discrete probability distributions that assigns positive probability to partitions of any finite size. A Dirichlet Process Mixture Model (DPMM) places a DP prior over the number of components, allowing the posterior to reflect genuine uncertainty about k and growing the number of clusters as data n grows (expected k ∼ α log n). Chinese Restaurant Process Gibbs sampling and variational inference for DPMMs scale to millions of data points with modern implementations (Pyro, TensorFlow Probability). The Pitman-Yor Process generalises the DP with a two-parameter family (discount and concentration) that models power-law cluster size distributions, better matching the empirical distribution of cluster sizes in natural language and bioinformatics datasets. Bayesian nonparametric clustering remains computationally expensive relative to k-means but provides principled uncertainty quantification over the number, sizes, and shapes of clusters — a critical advantage in scientific discovery applications where the structure of the data is genuinely unknown.
+
+  ## Components / Architecture
+
+  - **Distance / Similarity Layer**: computes pairwise affinity using Euclidean, cosine, Manhattan, or learned [[Distance Metric]]s; cosine dominates [[Large Language Model]] [[Embedding Space]] settings because embeddings live on the unit hypersphere.
+  - **Representation Layer**: [[Feature Engineering]], [[Dimensionality Reduction]] (PCA → t-SNE → UMAP for visualisation; PCA alone for scaling), or a trained [[Autoencoder]] / [[Self-Supervised Learning]] encoder that maps raw inputs to a latent [[Embedding]].
+  - **Partition Layer**: the core algorithm — [[K-Means]], [[DBSCAN]], [[Hierarchical Clustering]], [[Spectral Clustering]], [[Gaussian Mixture Model]], or a deep clustering network.
+  - **Evaluation Layer**: [[Silhouette Score]], Davies-Bouldin index, Calinski-Harabasz index (internal); Adjusted Rand Index, Normalised Mutual Information (external, when labels available).
+  - **Post-Processing Layer**: cluster labelling, merging, outlier filtering, and soft-to-hard assignment thresholding — feeds into [[Predictive Analytics]] and downstream models.
+  - **Indexing Layer (2024+)**: in production systems handling millions of embeddings, approximate nearest-neighbour indices (FAISS, ScaNN, HNSW) backed by a [[Vector Database]] replace naive pairwise distance computation, enabling sub-linear k-means and DBSCAN execution. The Hierarchical Navigable Small World (HNSW) graph index (Malkov and Yashunin, 2020) achieves O(log n) query time for approximate nearest-neighbour retrieval with controllable recall-speed trade-offs, and is the backbone of the Weaviate, Qdrant, and Milvus [[Vector Database]] platforms used in production LLM clustering pipelines.
+
+  ## Use Cases / Major Families
+
+  - **Customer and Market Segmentation**: [[K-Means]] and [[Gaussian Mixture Model]] on behavioural and transactional [[Embedding]]s identify customer cohorts for personalised marketing, pricing optimisation, and churn prediction. 2025 LLM-based segmentation pipelines (ERASMO, survey-analysis tools) expand this to unstructured text reviews.
+  - **[[Anomaly Detection]]**: data points that fall outside any dense cluster (DBSCAN noise points) or carry low likelihood under a fitted [[Gaussian Mixture Model]] are flagged as anomalies; widely deployed in fraud detection, network intrusion detection, and predictive maintenance.
+  - **Document Organisation and [[Topic Modelling]]**: k-means and hierarchical methods on BERT / LLM [[Embedding]]s cluster document corpora into topics; [[Community Detection]] algorithms extend this to citation and co-authorship networks.
+  - **[[Bioinformatics]]**: clustering cell populations in scRNA-seq and scATAC-seq data is the canonical high-dimensional biology task; deep clustering methods (scAGCL, scDCCA) now dominate leaderboards.
+  - **Image and Video Organisation**: clustering in CNN feature spaces or CLIP [[Embedding Space]]s supports deduplication, visual search, and dataset curation for training large models.
+  - **[[Community Detection]] in Graphs**: spectral and modularity-based clustering on graph adjacency matrices identify communities in social networks, protein-interaction networks, and knowledge graphs — closely related to [[Graph Analytics]] and [[Graph Neural Network]] methods.
+  - **Recommendation Systems**: clustering users and items in shared [[Embedding Space]] enables coarse candidate retrieval before fine-grained scoring; used at billion-user scale by YouTube, Spotify, and Amazon. Product catalogue clustering at Zalando and ASOS uses combined image-text [[Embedding]]s from multimodal models to group similar products, enabling faceted browsing, outfit-completion recommendations, and trend detection across millions of SKUs.
+  - **Spatial and Urban Analytics**: DBSCAN and [[Hierarchical Clustering]] on GPS coordinate sequences identify city-level zones of activity — commercial districts, residential clusters, transport hubs — from mobile phone location data (with appropriate differential privacy), pedestrian counts, and ride-share pickup density. Leeds City Council and Manchester City Council use spatial clustering for planning retail licensing zones and transport investment prioritisation. Postcode clustering on socioeconomic indices of deprivation enables targeted public health intervention planning in NHS commissioning regions.
+  - **Cybersecurity and Network Intrusion Detection**: clustering of network flow feature vectors (packet size, inter-arrival time, protocol, port) using DBSCAN or isolation-forest-enhanced k-means detects novel attack signatures without requiring labelled examples of the attack. The CERT Insider Threat Dataset and the KDD Cup 1999 network intrusion dataset remain standard benchmarks for clustering-based anomaly detection in cybersecurity. In 2025, LLM-based approaches to log clustering (grouping system logs by semantic type) have supplemented traditional feature-engineering-based methods, enabling zero-shot grouping of log messages across heterogeneous system architectures.
+
+  ## Academic Context
+
+  The theoretical foundations of clustering span statistical mechanics (Potts model, mean-field theory), combinatorial optimisation (NP-hard graph partitioning), information theory (minimum description length), and Bayesian nonparametrics (Dirichlet Process Mixture Models). The intellectual heritage is unusually broad, with independent roots in psychology (Tryon, 1939), operations research (Ward, 1963), computer science (MacQueen, 1967), statistics (Dempster, Laird & Rubin, 1977), and physics (the Ising-model analogy for spectral clustering). This multi-disciplinary origin explains why clustering vocabulary is inconsistent across fields: what a statistician calls a "mixture component" a computer scientist calls a "cluster" and a biologist calls a "cell type" — all referring to the same underlying latent structure.
+
+  Key intellectual lineages include:
+
+  - **Centroid / K-Means**: MacQueen (1967) coined "k-means" and provided the first convergence analysis; Lloyd (1982) described the Voronoi-iteration algorithm now universally called "Lloyd's algorithm"; Hartigan and Wong (1979) provided an alternative partition-based implementation with better convergence properties. Arthur & Vassilvitskii (2007, k-means++) transformed practical k-means by providing a probabilistic seeding strategy with a provably O(log k) approximation guarantee, replacing random restarts as the dominant initialisation strategy. Sculley (2010, mini-batch k-means for web scale) enabled k-means clustering of web-scale datasets through mini-batch stochastic updates, reducing per-iteration cost from O(nkd) to O(bkd) for batch size b.
+  - **Density-Based**: Ester, Kriegel, Sander & Xu (1996, DBSCAN) won the KDD Test of Time Award in 2014, nearly two decades after publication, recognising DBSCAN as one of the most practically impactful data mining algorithms ever developed. Campello, Moulavi & Sander (2013, HDBSCAN) formalised the hierarchical density approach and defined cluster stability as the selection criterion for extracting flat clusters from the condensed tree, resolving DBSCAN's sensitivity to the global ε parameter.
+  - **Hierarchical**: Ward (1963) introduced the minimum-variance agglomerative criterion now universally used in Ward's method; Murtagh & Contreras (2012, WIREs review) surveyed the algorithmic landscape comprehensively, noting that Olson (1995) showed SLINK (single-linkage) runs in O(n²) while most other linkage criteria require O(n² log n). The cophenetic correlation coefficient (Sokal and Rohlf, 1962) provides a goodness-of-fit measure for dendrogram quality relative to the original distance matrix, widely used in phylogenetics and ecology.
+  - **Spectral**: Shi & Malik (2000, normalised cuts) connected graph partitioning to image segmentation, framing boundary detection as a minimum normalised cut problem and showing that relaxing the NP-hard integer optimisation to the real-valued eigenvalue problem gives a provably good approximation. Ng, Jordan & Weiss (2002, spectral clustering) provided the clean modern formulation — similarity graph, normalised Laplacian, k-means in eigenspace — that became the reference algorithm. Von Luxburg's (2007, Statistics and Computing) tutorial on spectral clustering is the most widely cited pedagogical treatment.
+  - **Probabilistic**: Dempster, Laird & Rubin (1977, EM) established the Expectation-Maximisation algorithm as the canonical method for fitting mixture models to incomplete or latent-variable data, proving monotone convergence in log-likelihood and providing the first rigorous treatment of the algorithm that had been used informally for decades. The Bayesian Information Criterion (Schwarz, 1978) and its EM specialisation (BIC for GMMs) enabled principled model selection for the number of components k. Fraley and Raftery's 2002 MCLUST paper and software package made model-based clustering accessible to applied statisticians, catalysing widespread adoption in epidemiology, ecology, and social science.
+  - **Deep Clustering**: Xie, Girshick & Farhadi (2016, DEC) is the founding paper of modern deep clustering, demonstrating that jointly optimising a DNN encoder and a soft clustering objective substantially outperforms sequential pipelines of dimensionality reduction followed by classical clustering. Guo et al. (2017, DCEC) extended DEC with convolutional autoencoders for image clustering. Van Gansbeke et al. (2020, SCAN) introduced the pivotal insight that self-supervised pretraining followed by nearest-neighbour mining and constrained clustering consistently achieves near-supervised image classification accuracy in an entirely unsupervised manner. Li et al. (2021, contrastive clustering) added dual-level contrastive objectives; this, combined with the SimSiam (Chen & He, 2021) and Barlow Twins (Zbontar et al., 2021) self-supervised learning paradigms, constitutes the current state of the art in deep image clustering.
+  - **LLM-enhanced**: The integration of large language models into clustering pipelines began with using LLM embeddings as input features (e.g., BERT sentence-BERT embeddings for text clustering) and evolved to using LLMs as active participants in cluster refinement (ERASMO, 2024; ClusterFusion, 2025; HERCULES, 2025). A distinct direction uses LLMs for in-context clustering: rather than running an external algorithm, the LLM itself performs few-shot clustering by reasoning about similarities between presented examples (Zhang et al., 2024, LLM-as-clustering-agent).
+  - **Graph / scRNA-seq**: The scRNA-seq cell-type clustering domain has its own rich literature spanning Seurat (Butler et al., 2018), SCANPY (Wolf et al., 2018), Leiden (Traag et al., 2019), PAGA (Wolf et al., 2019), and a wave of deep clustering methods (scVI, 2018; scDEC, 2021; scAGCL, 2025). The scCluBench (2025) benchmark represents the maturation of this literature into a rigorous empirical evaluation framework.
+
+  Benchmark datasets include the UCI clustering repository (Iris, Wine, Seeds, Wholesale Customers), the MNIST image digit set, the 20 Newsgroups text corpus, the Reuters document corpus, the STL-10 and CIFAR-10/100 image datasets, and the Human Cell Atlas for single-cell data. Key venues: NeurIPS, ICML, KDD (Test-of-Time Award honours clustering as a core discipline), ICLR, Bioinformatics, IEEE TPAMI, and the ACM SIGKDD Explorations newsletter.
+
+  ## Variants and Taxonomy
+
+  Clustering methods are best understood through a taxonomy of their defining cluster model:
+
+  **Centroid-based methods** represent clusters by a prototype (centroid or medoid) and assign points to the nearest prototype. [[K-Means]] (MacQueen, 1967; Lloyd, 1982) is the canonical instance, with O(nkdt) per iteration and k-means++ seeding guaranteeing O(log k)-approximation (Arthur & Vassilvitskii, 2007). K-Medoids (PAM) uses actual data points as representatives, yielding robustness to outliers at higher computational cost. Mini-batch k-means (Sculley, 2010) samples subsets each iteration, scaling to billions of data points on streaming platforms. Bisecting k-means recursively splits the largest cluster, producing a hierarchical partition compatible with the flat k-means objective.
+
+  **Density-based methods** define clusters as connected regions of elevated point density, detecting arbitrarily shaped clusters and noise points natively. [[DBSCAN]] (Ester et al., 1996) parameterises density via ε and min-pts, requiring O(n log n) with spatial indexing. OPTICS (Ankerst et al., 1999) orders points by reachability distance, exposing the full density hierarchy without committing to a single ε. [[HDBSCAN]] (Campello et al., 2013) extracts stable clusters from the condensed reachability tree, handling variable-density data more robustly than DBSCAN and becoming the de-facto standard density-based algorithm in scikit-learn (2023+) for this reason. SHADE (2024, arXiv:2410.06265) extends deep density-based clustering with neural density estimators, substantially improving performance on high-dimensional text and image data.
+
+  **Hierarchical methods** produce a dendrogram encoding the complete merge/split history at all granularity levels. Agglomerative (bottom-up) methods — single-linkage, complete-linkage, average-linkage, Ward's — differ in the inter-cluster distance criterion used to select merges. Ward's criterion (1963) minimises the increase in WCSS at each merge step, producing compact, equally-sized clusters consistent with the k-means objective. Divisive (top-down) methods split clusters recursively; DIANA (Kaufman and Rousseeuw, 1990) is the canonical divisive hierarchical algorithm. BIRCH (Zhang et al., 1996) builds a compressed Clustering Feature tree for very large datasets, reducing the effective n before hierarchical aggregation.
+
+  **Graph and spectral methods** construct a similarity graph over the data and find clusters as graph communities. [[Spectral Clustering]] (Shi & Malik, 2000; Ng, Jordan & Weiss, 2002) computes eigenvectors of the graph Laplacian, revealing manifold-structured clusters invisible to centroid methods. Modularity-maximisation methods (Louvain, Leiden) find communities by optimising the modularity Q = Σ_{ij}[Aᵢⱼ − kᵢkⱼ/(2m)]δ(cᵢ, cⱼ), where Aᵢⱼ is the adjacency matrix, kᵢ the degree, and m the number of edges. The Leiden algorithm (Traag et al., 2019) guarantees community connectivity and avoids the disconnected community artefacts of the Louvain algorithm, making it the 2025 standard for community detection in social and biological networks. [[Graph Neural Network]] methods (MGAE, AGC, DAEGC) combine graph convolution with autoencoder training and clustering objectives.
+
+  **Probabilistic / model-based methods** fit a generative model to the data and infer cluster assignments as latent variables. The [[Gaussian Mixture Model]] with EM fitting (Dempster, Laird & Rubin, 1977) is the canonical instance, extended to non-Gaussian shapes by mixtures of Student-t, skew-normal, or other distributions for robustness to outliers. Bayesian nonparametric methods — Dirichlet Process Mixture Models, Pitman-Yor Process mixtures — infer the number of clusters from the data, avoiding the need to specify k a priori and providing principled posterior uncertainty over cluster structure.
+
+  **Deep clustering methods** end-to-end jointly learn an encoder and a clustering objective. DEC (Xie et al., 2016) iteratively refines autoencoder embeddings via a soft-to-hard KL divergence objective. SCAN (Van Gansbeke et al., 2020) adds a self-supervised pretext task (image transformation invariance) as a second objective. Contrastive Clustering (Li et al., 2021) enforces both instance-level and cluster-level contrastive objectives simultaneously. For text, LLM-MemCluster (2025, arXiv:2511.15424) augments k-means with LLM-generated memory summaries of clusters, enabling richer cluster descriptions and more stable convergence. ClusterFusion (2025, arXiv:2512.04350) bridges domain knowledge gaps using LLM-guided cluster refinement post-hoc. HERCULES (2025, arXiv:2506.19992) integrates hierarchical LLM-embedding clustering with recursive summarisation, producing layered document organisation structures at scale.
+
+  ## Current Landscape (2026)
+
+  By mid-2026, clustering has bifurcated into two operational regimes. In the classical regime, sk-learn-compatible implementations of k-means, HDBSCAN, and [[Gaussian Mixture Model]] remain the dominant daily-use tools for tabular and moderate-scale data; comparative analyses published in 2025 (ArXiv 2503.23215) confirm that algorithm selection should be guided by data geometry: k-means excels in speed for compact spherical clusters; DBSCAN handles irregular shapes and noise natively; and spectral clustering captures complex manifold relationships at higher computational cost. The 2025 trend of combining these classical algorithms with [[Principal Component Analysis]] or [[UMAP]] pre-reduction and automated hyperparameter search (via silhouette-score grid search or Bayesian optimisation) has become standard practice.
+
+  In the deep-learning regime, embedding-first clustering dominates: LLM embeddings (OpenAI text-embedding-3-large, Cohere Embed v3, BGE-M3) are produced, stored in a [[Vector Database]] (Pinecone, Weaviate, Qdrant), and clustered with approximate-nearest-neighbour k-means or HDBSCAN. This pipeline underlies production customer segmentation at firms including Zalando, Klarna, and Spotify. A 2025 study (MDPI Electronics, LLM-based customer representation) found LLM-embedding-based clustering surpassed hand-crafted feature baselines on downstream retention prediction tasks by 12-18 percentage points. The LLM-as-cluster-labeller pattern, in which a frontier model is prompted with a sample of cluster members to generate a human-readable description, has also become widespread in enterprise analytics tooling (Hex, Comet ML, DataRobot) by 2026.
+
+  The scRNA-seq bioinformatics community published the Human Cell Atlas v2 in 2025, cataloguing over 50 million cells across 30 organ systems — a dataset that has become the canonical large-scale clustering benchmark, driving adoption of scAGCL, Seurat v5, and other deep graph-clustering methods designed for high-dimensional sparse count data. The scCluBench framework (2025, arXiv:2512.02471) provides the most comprehensive benchmark to date, evaluating 36 diverse scRNA-seq datasets spanning 18 tissue types across traditional, deep learning-based, graph-based, and biological foundation model clustering methods. Importantly, a 2025 bioRxiv benchmarking study (biorxiv:2025.08.20.671270) found no significant performance difference between the Leiden and Louvain community-detection algorithms at equal hyperparameter tuning effort, instead identifying graph construction quality (Jaccard weighting vs. cosine similarity) and resolution parameter selection as the dominant factors in clustering outcome quality — directing engineering effort toward data preprocessing rather than algorithm choice.
+
+  LLM-enhanced clustering has matured significantly. HERCULES (arXiv:2506.19992, 2025) demonstrates hierarchical embedding-based recursive clustering that integrates LLM summarisation at each dendrogram level, producing multi-resolution document organisation with human-readable labels at all levels of granularity. LLM-MemCluster (arXiv:2511.15424, 2025) augments standard k-means with an LLM memory module that accumulates cluster history across iterations, reducing the sensitivity of k-means to initialisation and outliers. ClusterFusion (arXiv:2512.04350, 2025) proposes a hybrid architecture combining cosine similarity embedding clustering with LLM-guided domain adaptation, addressing the persistent challenge of transferring general-purpose embeddings to narrow domain clustering tasks without fine-tuning. Federated deep clustering has emerged as a principled privacy-preserving framework: a 2025 ScienceDirect paper ("Federated deep embedded clustering under privacy protection") adapts DEC to a federated learning setup, enabling global cluster model construction from distributed sensitive data — the first comprehensive treatment of federated deep clustering with medical imaging applications.
+
+  The 2025 comparative analysis (arXiv:2503.23215) of clustering techniques on high-dimensional data confirms that algorithm selection remains geometry-dependent: k-means excels for compact, spherical clusters in moderate dimensions; HDBSCAN is preferable for irregular shapes and varying density; spectral clustering captures complex manifold relationships at higher cost; and deep clustering methods dominate on raw images and text where the representation itself requires learning. The rise of [[Vector Database]] infrastructure (Pinecone, Weaviate, Qdrant, Milvus) has made approximate nearest-neighbour clustering operationally trivial at billion-scale, democratising production deployment of k-means and HDBSCAN over LLM embedding stores.
+
+  ## UK Context
+
+  UK universities hold prominent positions in both the theoretical and applied clustering literature. The University of Edinburgh's School of Informatics houses multiple research groups contributing to clustering methodology: the Machine Learning and Bioinformatics groups contribute foundational scRNA-seq clustering methods and are active participants in the Human Cell Atlas project. Edinburgh's 2024 installation of the largest Cerebras CS-3 wafer-scale supercomputing cluster in Europe (6 CS-3 systems, 138,240 streaming multiprocessors) accelerates large-scale clustering experiments on genomics, protein structure, and NLP data, enabling k-means and deep clustering runs at scales previously impractical in academic settings. Edinburgh's Chris Williams (Gaussian processes, probabilistic models) and Amos Storkey (deep learning, online learning) have contributed foundational probabilistic clustering methodology. The University of Manchester's Department of Computer Science maintains traditions in [[Data Mining]] and pattern recognition that stretch back to Donald Michie's early AI group and the Manchester Statistical Machine group of the 1960s; Manchester researchers contributed to early k-means and hierarchical clustering algorithm analysis, and the current DataSEQ group focuses on scalable data engineering for clustering at industrial scales. Manchester is co-lead of the UKRI North West Research and Innovation Cluster (£ multi-million UKRI 2024 funding), which funds applied ML in advanced manufacturing, healthcare analytics, and materials informatics — all areas with significant clustering workloads.
+
+  UCL's Gatsby Computational Neuroscience Unit and Centre for Computational Statistics and Machine Learning (CSML) have made fundamental contributions to Bayesian nonparametric clustering. Zoubin Ghahramani (now at Google DeepMind) developed Dirichlet Process Mixture Models and the Indian Buffet Process while at the Gatsby Unit, and Peter Dayan, Arthur Gretton, and their colleagues continue to develop kernel methods and probabilistic models that underpin state-of-the-art clustering algorithms. Cambridge's MRC Biostatistics Unit (Sylvia Richardson's group) leads statistical clustering methodology for clinical trial subgroup identification, Bayesian model-based clustering for cohort stratification, and federated clustering approaches for multi-centre clinical data analysis. The Wellcome Sanger Institute (near Cambridge) is a global leader in single-cell genomics and applies clustering at the scale of tens of millions of cells per project; the institute co-leads the Human Cell Atlas and maintains the cellxgene and Scanpy software ecosystems that make large-scale scRNA-seq clustering computationally accessible. Imperial College London's Data Science Institute deploys large-scale spatial clustering for urban analytics — London transport pattern analysis, spatial crime clustering, air quality spatial segmentation — and the Department of Computing contributes to graph clustering via the Adaptive Emergent Systems group.
+
+  In Northern England, the industrial and academic clustering landscape has distinct characteristics. Leeds University Business School applies clustering to financial market microstructure analysis and retail customer segmentation; the Leeds Institute for Data Analytics (LIDA) applies clustering to health administrative data and the Leeds-Bradford urban conurbation transport network. Sheffield's Materials Innovation Centre and the Advanced Manufacturing Research Centre use clustering for metallurgical data analysis — grain structure segmentation, defect classification in additive manufacturing scans — applying DBSCAN and deep clustering to microscopy image datasets. Newcastle University's Digital Institute uses clustering for health-data patient stratification leveraging the North East Patient Data Research Hub (PEDRHNE), one of five NHS Approved Research Environments. The Hub holds linked administrative and clinical records for over 2.3 million patients in the North East, and Newcastle researchers apply Gaussian mixture model clustering to identify multimorbidity patient phenotypes for NHS service planning. In Sheffield, the School of Health and Related Research (ScHARR) uses model-based clustering for cost-effectiveness analysis and health technology assessment subgroup identification, directly informing NICE guidelines. The Alan Turing Institute (London, partner universities include Edinburgh, Manchester, Cambridge, Oxford, UCL, and Warwick) funds research into scalable and privacy-preserving clustering under federated learning and differential-privacy constraints, with the Healthcare Data programme explicitly targeting NHS multi-site federated clustering.
+
+  ## Future Directions (2026-2030)
+
+  - **Foundation Model Clustering**: as embedding models become increasingly universal, clustering in [[Large Language Model]] embedding spaces will displace task-specific feature engineering; prompt-conditioned clustering — clustering that respects user-specified semantic axes — is an active 2026 research direction. The convergence of instruction-following LLMs and clustering will enable "semantic clustering on demand": a user specifies the clustering criterion in natural language ("group these customers by their price sensitivity rather than their spending level") and the system dynamically adjusts the [[Embedding Space]] or similarity function to honour the semantic specification.
+  - **Federated and Privacy-Preserving Clustering**: clustering across distributed, sensitive datasets (NHS patient records, financial transaction logs) without centralising data; differential-privacy k-means (2024-2025 NeurIPS papers) and federated [[HDBSCAN]] are early prototypes. Secure multi-party computation (SMPC) approaches to federated GMM fitting are entering early production use in cross-institutional clinical research (2026), allowing multiple NHS trusts to jointly fit a Gaussian mixture model to patient cohort data without sharing individual-level records.
+  - **Streaming and Online Clustering**: incremental algorithms that update cluster assignments as data arrives in real time, without full re-runs; critical for IoT sensor streams, financial market microstructure, and social media monitoring. The CluStream framework (Aggarwal et al., 2003) pioneered micro-cluster-based online k-means; 2025-2026 work extends this to online deep clustering, maintaining a compressed sketch of the data distribution that supports both anomaly detection and cluster assignment in constant amortised time per data point.
+  - **Cluster Interpretability**: integrating [[Large Language Model]] summarisation to auto-generate cluster descriptions and drift alerts; closes the human-AI loop in customer analytics and clinical decision support. The LLM-cluster-labeller pattern (pioneered by ERASMO 2024, extended in ClusterFusion 2025) is becoming a standard component of enterprise analytics platforms, replacing manual cluster inspection with automated natural-language summaries that include representative examples, distinguishing features, and temporal drift descriptions.
+  - **Multimodal Clustering**: joint clustering of text, image, audio, and tabular modalities in a shared [[Embedding Space]], driven by multimodal foundation models (GPT-4o, Gemini Ultra, Claude); early 2026 results show cross-modal clusters significantly outperform unimodal baselines on product catalogue organisation and medical imaging tasks, where combining image features with clinical text notes in a joint embedding space reveals patient phenotypes invisible to unimodal analysis.
+  - **Scalable Deep Graph Clustering**: extending [[Graph Neural Network]] deep-clustering methods from the million-cell regime (scRNA-seq) to trillion-node regimes (social graphs, knowledge graphs) using sparse attention and sub-graph sampling; the 2025 "Soft Graph Clustering for scRNA-seq" (arXiv:2507.09890) demonstrates soft probabilistic graph clustering at single-cell scale using a tractable variational objective.
+  - **Theory of Deep Clustering**: deriving generalisation bounds for jointly trained encoder-clustering objectives; connecting deep clustering convergence to the manifold hypothesis and information-geometric analysis of the [[Embedding Space]]. Formalising the conditions under which an encoder trained with a clustering objective learns a representation that supports downstream classification is an open research problem (2026), with early theoretical results using PAC-Bayes bounds and mutual information to characterise encoder quality for downstream task transfer.
+  - **Clustering under Distribution Shift**: developing algorithms robust to covariate shift between training and deployment distributions; critical for production customer segmentation and clinical phenotyping where cohort characteristics change over time (seasonal purchase patterns, evolving clinical practices). Methods include cluster anchoring (fixing a subset of reference clusters), drift-aware silhouette monitoring, and continual learning objectives that permit gradual cluster evolution without catastrophic forgetting.
+  - **Quantum Clustering**: quantum algorithms for k-means and spectral clustering offer theoretical O(polylog n) speedups over classical counterparts for dense distance matrices; the quantum k-means algorithm (Kerenidis and Prakash, 2017) uses quantum RAM to achieve O(k log n / ε²) query complexity per iteration under oracle access to the distance matrix, representing an exponential speedup over the O(nkd) classical complexity. Near-term (2026-2028) practical implementation requires fault-tolerant quantum hardware with thousands of logical qubits — still beyond current NISQ devices — but remains an active research frontier at IBM Research, Google Quantum AI, and PsiQuantum.
+  - **Neuromorphic and Edge Clustering**: deploying clustering algorithms on ultra-low-power neuromorphic chips (Intel Loihi 2, BrainScaleS-2) for real-time sensor-stream clustering at the IoT edge, without transmitting raw data to the cloud. Spiking neural network implementations of competitive learning (the neuromorphic analogue of k-means winner-take-all assignment) achieve sub-milliwatt power consumption at millisecond latency, enabling always-on anomaly detection in implantable medical devices, industrial vibration sensors, and autonomous vehicle perception stacks.
+
+  ## Key Terminology Glossary
+
+  - **Cluster**: a subset of data points judged mutually similar under a chosen metric; the output unit of any clustering algorithm. Clusters may be hard (each point assigned to exactly one cluster) or soft (each point has a fractional membership across multiple clusters).
+  - **Centroid**: the mean representative of a cluster in centroid-based methods; not necessarily a real data point. In k-medoids (PAM), the representative is constrained to be an actual data point (a medoid), providing robustness to outliers at higher computational cost.
+  - **Dendrogram**: the tree structure produced by hierarchical clustering, showing nested merge/split history. The x-axis lists data points; the y-axis shows the inter-cluster distance at which merges occurred. Cutting the dendrogram horizontally at any height yields a flat partition at that granularity level.
+  - **Silhouette Coefficient**: per-point internal quality measure s(i) = (b(i) − a(i)) / max(a(i), b(i)), where a(i) = mean intra-cluster distance to other points in the same cluster, b(i) = mean distance to points in the nearest other cluster; ranges from −1 (misclustered) to +1 (perfectly assigned). Mean silhouette over all points is the canonical internal cluster quality scalar.
+  - **ε-neighbourhood** (DBSCAN): the ball of radius ε around a point; core points have at least min-points neighbours within this ball. The choice of ε is the most consequential hyperparameter in DBSCAN; too small yields many singleton noise points, too large merges distinct clusters. The k-distance plot (sorted pairwise distances to the k-th nearest neighbour) provides a visual heuristic for ε selection.
+  - **Soft Assignment**: probabilistic cluster membership, as in [[Gaussian Mixture Model]] and DEC; a point has a fractional membership in multiple clusters summing to 1. Soft assignment captures uncertainty about cluster boundaries and is especially useful when clusters overlap or when downstream tasks can exploit probability-weighted cluster membership.
+  - **Inertia**: the k-means objective function value — total within-cluster sum of squared distances to centroids; lower is better. Plotting inertia against k produces the "elbow curve" used to select k heuristically.
+  - **Davies-Bouldin Index**: ratio of within-cluster scatter to between-cluster distance, averaged over clusters; lower is better. Unlike the Silhouette Coefficient, the Davies-Bouldin Index is computed using cluster centroids rather than all pairwise distances, making it computationally cheaper for large n and k.
+  - **Normalised Mutual Information (NMI)**: external evaluation metric measuring agreement between predicted cluster labels and ground-truth labels using information theory: NMI(U,V) = 2MI(U;V) / (H(U) + H(V)), where MI is mutual information and H is entropy. NMI is bounded in [0,1], symmetric, and invariant to label permutations, making it the standard external metric for fair comparison of clustering algorithms on labelled benchmarks.
+  - **Mutual Reachability Distance** (HDBSCAN): d_mreach(p,q) = max(core-distance(p), core-distance(q), dist(p,q)); used to build the minimum spanning tree over which HDBSCAN extracts the condensed cluster tree. The mutual reachability distance smooths the density landscape, preventing the "chaining effect" that causes single-linkage to connect distinct clusters through sparse bridge points.
+  - **Graph Laplacian**: L = D − W (unnormalised) or L_sym = D^{-1/2}(D−W)D^{-1/2} (normalised); eigenvalues encode the number of connected components (eigenvalues equal to 0) and the connectivity structure of the similarity graph. [[Spectral Clustering]] uses the k smallest eigenvectors as a manifold-preserving embedding in which Euclidean k-means recovers the true clusters.
+
+  ## Research & Literature
+
+  1. MacQueen, J. B. (1967). Some methods for classification and analysis of multivariate observations. *Proceedings of 5th Berkeley Symposium on Mathematical Statistics and Probability*, 1, 281-297.
+  2. Ward, J. H. (1963). Hierarchical grouping to optimize an objective function. *Journal of the American Statistical Association*, 58(301), 236-244.
+  3. Ester, M., Kriegel, H. P., Sander, J., & Xu, X. (1996). A density-based algorithm for discovering clusters in large spatial databases with noise. *KDD*, 96(34), 226-231. [KDD Best Paper Award]
+  4. Shi, J., & Malik, J. (2000). Normalized cuts and image segmentation. *IEEE TPAMI*, 22(8), 888-905.
+  5. Ng, A. Y., Jordan, M. I., & Weiss, Y. (2002). On spectral clustering: analysis and an algorithm. *NeurIPS*, 14.
+  6. Arthur, D., & Vassilvitskii, S. (2007). k-means++: the advantages of careful seeding. *SODA*, 1027-1035.
+  7. Dempster, A. P., Laird, N. M., & Rubin, D. B. (1977). Maximum likelihood from incomplete data via the EM algorithm. *Journal of the Royal Statistical Society B*, 39(1), 1-38.
+  8. Campello, R. J. G. B., Moulavi, D., & Sander, J. (2013). Density-based clustering based on hierarchical density estimates. *PAKDD*, 160-172.
+  9. Xie, J., Girshick, R., & Farhadi, A. (2016). Unsupervised deep embedding for clustering analysis. *ICML*, 48, 478-487.
+  10. Van Gansbeke, W., Vandeghen, S., Van den Berghe, E., & Blaschko, M. B. (2020). SCAN: Learning to classify images without labels. *ECCV*, 268-285.
+  11. Li, Y., Hu, P., Liu, Z., Peng, D., Zhou, J. T., & Peng, X. (2021). Contrastive clustering. *AAAI*, 35(10), 8547-8555.
+  12. Chen, X., & He, K. (2021). Exploring simple Siamese representation learning. *CVPR*, 15750-15758.
+  13. Guo, X., Liu, X., Zhu, E., & Yin, J. (2017). Deep clustering with convolutional autoencoders. *ICONIP*, 373-382.
+  14. Reynolds, D. (2009). Gaussian mixture models. *Encyclopedia of Biometrics*, 1, 827-832.
+  15. Lloyd, S. (1982). Least squares quantization in PCM. *IEEE Transactions on Information Theory*, 28(2), 129-137.
+  16. Sculley, D. (2010). Web-scale k-means clustering. *WWW*, 1177-1178.
+  17. Murtagh, F., & Contreras, P. (2012). Algorithms for hierarchical clustering: an overview. *WIREs Data Mining and Knowledge Discovery*, 2(1), 86-97.
+  18. Viswanathan, V., Gashteovski, K., Lawrence, C., Wu, T., & Neubig, G. (2024). ERASMO: Leveraging large language models for enhanced clustering segmentation. arXiv:2410.03738.
+  19. Xu, J., & Su, Z. (2015). SIMLR: a tool for large-scale genomic analyses by multi-kernel learning. *Genome Biology*.
+  20. scAGCL: Deep clustering of single-cell RNA-seq using adversarial graph contrastive learning. (2025). *Briefings in Bioinformatics*, bbaf423. https://academic.oup.com/bib/article/26/4/bbaf423/8239083
+  21. scDCCA: Deep contrastive clustering for single-cell RNA-seq data based on auto-encoder network. (2023). *Briefings in Bioinformatics*, 24(1), bbac625.
+  22. Comparative analysis of clustering techniques on high-dimensional data. (2025). arXiv:2503.23215. https://arxiv.org/html/2503.23215v1
+  23. SHADE: Deep density-based clustering. (2024). arXiv:2410.06265. https://arxiv.org/pdf/2410.06265
+  24. Zhang, Y. et al. (2025). LLM-based embeddings for clustering and predicting integrated reporting quality levels. *Discover Computing*, Springer. https://link.springer.com/article/10.1007/s10791-025-09590-6
+  25. scCluBench: Comprehensive benchmarking of clustering algorithms for single-cell RNA sequencing. (2025). arXiv:2512.02471. https://arxiv.org/pdf/2512.02471
+  26. HERCULES: Hierarchical embedding-based recursive clustering using LLMs for efficient summarization. (2025). arXiv:2506.19992. https://arxiv.org/html/2506.19992
+  27. Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning* (2nd ed.). Springer.
+  28. Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press. Chapters 14 (Autoencoders) and 15 (Representation Learning).
+
+- ### Provenance
+  - sources:: https://arxiv.org/html/2503.23215v1, https://arxiv.org/pdf/2410.06265, https://academic.oup.com/bib/article/26/4/bbaf423/8239083, https://link.springer.com/article/10.1007/s10791-025-09590-6, https://arxiv.org/pdf/2410.03738, https://arxiv.org/pdf/2512.02471, https://arxiv.org/html/2506.19992, https://arxiv.org/pdf/2511.15424, https://arxiv.org/pdf/2512.04350, https://www.sciencedirect.com/science/article/abs/pii/S1568494625012761, https://www.biorxiv.org/content/10.1101/2025.08.20.671270v1.full, https://edinburghuni-newsroom.prgloo.com/news/university-of-edinburgh-installs-largest-cs-3-cluster-in-europe, https://www.ukri.org/news/research-and-innovation-clusters-to-boost-uk-regional-growth/
+  - migration-date:: 2026-06-21T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

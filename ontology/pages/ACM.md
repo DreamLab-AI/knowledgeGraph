@@ -1,0 +1,275 @@
+public:: true
+
+# ACM
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ae58ac7e541abe946a6737f9778e8435f417b284a492e4445c88123a3d16cfdd",
+  "@type": "Page",
+  "vc:slug": "acm",
+  "title": "ACM",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:standards-body",
+      "vc:label": "Standards Body"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-engineering",
+      "vc:label": "Software Engineering"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "ACM"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-29T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:acm",
+  "@type": "Class",
+  "label": "ACM",
+  "definition": "The Association for Computing Machinery (ACM) is the world's largest and oldest scientific and educational computing society, founded in 1947, that advances the computing profession through peer-reviewed publication, professional development, and conference organisation. ACM maintains the ACM Digital Library, one of the most comprehensive archives of computing literature, and publishes flagship journals including Communications of the ACM and ACM Transactions series. It confers the ACM Turing Award — widely regarded as computing's highest honour — and promulgates ethical codes of professional conduct. ACM also co-sponsors and organises foundational conferences such as SIGGRAPH, STOC, CCS, and CHI through its network of Special Interest Groups.",
+  "domain": "standards",
+  "maturity": "mature",
+  "qualityScore": 0.75,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:association-for-computing-machinery",
+      "label": "Association for Computing Machinery"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "@id": "urn:ngm:class:open-access-publishing",
+        "label": "Open Access Publishing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:computing-education",
+        "label": "Computing Education"
+      },
+      {
+        "@id": "urn:ngm:class:professional-certification",
+        "label": "Professional Certification"
+      },
+      {
+        "@id": "urn:ngm:class:research-dissemination",
+        "label": "Research Dissemination"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:doi-system",
+        "label": "DOI System"
+      },
+      {
+        "@id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons Licensing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE Computer Society"
+      },
+      {
+        "@id": "urn:ngm:class:british-computer-society",
+        "label": "British Computer Society"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:programming-language",
+        "label": "Programming Languages"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence-research",
+        "label": "Artificial Intelligence Research"
+      }
+    ]
+  },
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:acm:62380b77e7bb",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ae58ac7e541abe946a6737f9778e8435f417b284a492e4445c88123a3d16cfdd"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Standards Body]]",
+      "resolved": "urn:visionflow:linked:standards-body",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Software Engineering]]",
+      "resolved": "urn:visionflow:linked:software-engineering",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-29T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+- ### Definition
+  - The **Association for Computing Machinery** (ACM) is the world's largest and oldest scientific and educational computing society, founded in 1947, that advances the computing profession through [[Peer Review|peer-reviewed]] publication, professional development, and the organisation of flagship conferences. It operates as a [[Standards Body]] publishing codes of professional conduct, [[Computer Science Curriculum|curriculum guidelines]], and archiving the cumulative record of [[Computer Science]] in the [[ACM Digital Library]]. As custodian of the [[ACM Turing Award]] — computing's highest honour — ACM occupies a unique institutional role bridging [[Research Dissemination]], [[Computing Education]], and professional standards across the full breadth of [[Software Engineering]] and adjacent disciplines.
+
+- ### Overview
+  - ACM was founded in 1947 as a professional organisation for computing practitioners at a time when "computing" referred primarily to numerical calculation. It has evolved into the primary learned society for all subfields of computer science and information technology.
+  - The organisation operates globally with chapters at universities and cities worldwide, serving researchers, practitioners, educators, and students.
+  - ACM's principal activities span:
+    - Publishing peer-reviewed journals, magazines, and conference proceedings
+    - Maintaining the ACM Digital Library as a centralised research archive
+    - Conferring awards recognising excellence in computing
+    - Defining curriculum guidelines and educational standards for computing programmes
+    - Articulating codes of professional ethics and conduct
+    - Hosting and co-sponsoring conferences through [[ACM Special Interest Group|Special Interest Groups (SIGs)]]
+  - Its influence extends from undergraduate computer science education through to the frontier of research, making it both a standards-setting institution and a scientific community hub.
+
+- ### Key Components
+  - **[[ACM Digital Library]]**
+    - Comprehensive bibliographic database and full-text archive of computing literature
+    - Covers ACM-published journals, conference proceedings, magazines, and newsletters
+    - Includes the Guide to Computing Literature, indexing publications from many publishers beyond ACM
+    - Central resource for [[Research Dissemination]] and literature discovery across [[Computer Science]]
+  - **[[ACM Special Interest Group|Special Interest Groups (SIGs)]]**
+    - Semi-autonomous communities focused on specific subfields of computing
+    - Key SIGs include: SIGCHI ([[Human-Computer Interaction]]), SIGGRAPH ([[Computer Graphics]]), SIGPLAN ([[Programming Languages]]), SIGCOMM ([[Computer Networking]]), SIGSAC ([[Cybersecurity]])
+    - Each SIG organises conferences, publications, and community events in its domain
+    - SIGs provide domain-specific professional communities within ACM's broader structure
+  - **[[ACM Turing Award]]**
+    - Awarded annually since 1966, widely regarded as computing's Nobel Prize equivalent
+    - Recipients include pioneers of [[Programming Languages]], [[Artificial Intelligence Research]], [[Computer Architecture]], [[Cryptography]], and [[Software Engineering]]
+    - Named after Alan Turing, honouring foundational contributions to computing
+  - **[[ACM Code of Ethics]]**
+    - First adopted in 1972, substantially revised in 2018
+    - Sets professional and ethical obligations for computing practitioners
+    - Addresses issues including privacy, algorithmic harm, security, and environmental impact
+    - Referenced in discussions of [[AI Ethics]] and responsible [[Software Engineering]]
+  - **Publications**
+    - *Communications of the ACM* (CACM): flagship magazine for computing practitioners and researchers
+    - ACM Transactions series: peer-reviewed journals in specialised domains (e.g. ACM Transactions on Graphics, on Programming Languages and Systems, on Intelligent Systems and Technology)
+    - Conference proceedings: STOC, POPL, CCS, CHI, SIGGRAPH, and many more
+  - **[[ACM Curriculum Guidelines]]**
+    - Joint ACM/[[IEEE Computer Society]] task forces define CS2023 and related curricula
+    - Widely adopted by universities globally to structure [[Computer Science Curriculum|undergraduate and postgraduate computing degrees]]
+    - Cover areas including algorithms, [[Software Engineering]], [[Cybersecurity]], [[Machine Learning]], and [[Human-Computer Interaction]]
+
+- ### Applications and Use Cases
+  - **Academic Research Publication**
+    - Researchers across [[Computer Science]], [[Human-Computer Interaction]], [[Cybersecurity]], and [[Programming Languages]] publish primary results in ACM venues
+    - ACM venues (STOC, POPL, PLDI, CCS) carry strong prestige signals for academic career evaluation
+  - **Professional Development**
+    - Computing practitioners access ACM learning resources, certification pathways, and [[Professional Certification]] programmes
+    - ACM's online learning platform provides courses, books, and skill assessments
+  - **AI and Machine Learning Community**
+    - ACM's SIGKDD conference is a flagship venue for [[Data Mining]] and knowledge discovery
+    - ACM FAccT (Fairness, Accountability, and Transparency) addresses [[AI Ethics]] and algorithmic accountability
+    - Bridges to [[Artificial Intelligence Research]] and [[Machine Learning Conferences]] through SIG communities
+  - **Policy and Governance Input**
+    - ACM's Technology Policy Council issues statements on [[Cybersecurity]], [[AI Ethics]], voting systems, and digital privacy
+    - ACM amicus briefs and policy documents inform legislative and regulatory processes
+  - **Education Accreditation**
+    - ACM partners with ABET to accredit [[Computer Science Curriculum|computing degree programmes]] internationally
+    - [[ACM Curriculum Guidelines]] serve as the foundational reference for programme design
+
+- ### Relationships
+  - hasPart:: [[ACM Digital Library]]
+  - hasPart:: [[ACM Special Interest Group]]
+  - hasPart:: [[ACM Turing Award]]
+  - hasPart:: [[ACM Code of Ethics]]
+  - partOf:: [[Computing Research Community]]
+  - requires:: [[Peer Review]]
+  - requires:: [[Open Access Publishing]]
+  - enables:: [[Computing Education]]
+  - enables:: [[Professional Certification]]
+  - enables:: [[Research Dissemination]]
+  - uses:: [[DOI System]]
+  - uses:: [[Creative Commons Licensing]]
+  - supports:: [[Software Engineering]]
+  - supports:: [[Computer Science Curriculum]]
+  - supports:: [[Diversity in Computing]]
+  - standardizedBy:: [[ACM Curriculum Guidelines]]
+  - contrastsWith:: [[IEEE Computer Society]]
+  - contrastsWith:: [[British Computer Society]]
+  - relatedTo:: [[Computer Science]]
+  - relatedTo:: [[Human-Computer Interaction]]
+  - relatedTo:: [[Cybersecurity]]
+  - relatedTo:: [[Programming Languages]]
+  - bridges-to:: [[Artificial Intelligence Research]]
+  - bridges-to:: [[Machine Learning Conferences]]
+
+- ### Standards and Context
+  - ACM functions as both a learned society and a de facto standard-setter for computing education and professional conduct.
+  - **Curriculum Standards**: The ACM/[[IEEE Computer Society]] Computing Curricula series (most recently CS2023) is the globally accepted reference for designing undergraduate computing programmes.
+  - **Publication Standards**: ACM sets formatting, peer-review, and archiving standards for its conference and journal ecosystem; its ACM Author Rights policies govern [[Open Access Publishing]] and [[Creative Commons Licensing]] adoption.
+  - **Ethics Standards**: The 2018 ACM [[ACM Code of Ethics|Code of Ethics and Professional Conduct]] is referenced in national policy, corporate governance frameworks, and professional body guidelines worldwide.
+  - **Awards Benchmarking**: ACM award criteria (Turing Award, Kanellakis Award, Grace Hopper Award, etc.) implicitly define community norms for what constitutes landmark contributions.
+  - **Relationship to IEEE**: ACM and [[IEEE Computer Society]] often collaborate on joint task forces (curricula, ethics) while competing as publication venues; most major universities require membership in one or both for professional credibility.
+  - **Open Access Transition**: ACM launched its Open Access Publishing model in 2021, moving towards making its [[ACM Digital Library]] freely accessible, reflecting broader movements in [[Research Dissemination]] and scholarly communication.
+
+- ### Provenance
+  - sources:: ACM official website (acm.org); ACM Digital Library; ACM History Committee records; CS2023 Curricular Guidelines; ACM Code of Ethics (2018 revision)
+  - updated:: 2026-06-13

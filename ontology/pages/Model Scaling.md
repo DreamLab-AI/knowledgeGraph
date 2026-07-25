@@ -1,0 +1,152 @@
+public:: true
+
+# Model Scaling
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:model-scaling",
+  "@type": "Page",
+  "title": "Model Scaling",
+  "vc:slug": "model-scaling",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-scaling",
+  "@type": "Class",
+  "label": "Model Scaling",
+  "definition": "Model scaling is the practice of systematically increasing the size of a machine learning model, the volume of training data, and the compute budget to improve performance in line with empirical scaling laws. Predictable power-law relationships link these resources to reductions in loss, guiding decisions about parameter counts and data allocation. Scaling has been a primary driver behind the capabilities of modern foundation models.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:scaling-laws",
+      "label": "Scaling Laws"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
+- ### Definition
+  - Model scaling is the practice of systematically increasing the size of a machine learning model, the volume of training data, and the compute budget to improve performance in line with empirical scaling laws. Predictable power-law relationships link these resources to reductions in loss, guiding decisions about parameter counts and data allocation. Scaling has been a primary driver behind the capabilities of modern foundation models.
+  - Related core concepts: [[Scaling Laws]] [[Foundation Model]] [[Large Language Model]] [[Distributed Training]] [[Compute Infrastructure]]
+- ### Overview
+  - Model scaling formalises the observation that increasing parameters, data, and compute together yields smooth, predictable improvements in model quality. Compute-optimal scaling balances parameter count against the number of training tokens to extract the most performance from a fixed budget. The approach has shifted research effort toward infrastructure, data curation, and distributed training at scale.
+- ### Mechanisms
+  - Power-law relationships connect loss to model size, data, and compute
+  - Compute-optimal allocation balances parameters against training tokens
+  - Distributed training partitions models and data across many accelerators
+  - Larger models exhibit qualitatively new capabilities at certain thresholds
+  - Diminishing returns and data limits constrain naive scaling
+- ### Applications
+  - Training large language and multimodal foundation models
+  - Budgeting compute and data for a target capability level
+  - Forecasting performance before committing to expensive training runs
+  - Designing infrastructure for parallel training across accelerators
+- ### Relationships
+  - dependsOn:: [[Scaling Laws]]
+  - dependsOn:: [[Compute Infrastructure]]
+  - enables:: [[Foundation Model]]
+  - enables:: [[Large Language Model]]
+  - supports:: [[Foundation Model]]
+  - uses:: [[Distributed Training]]
+  - uses:: [[Parameter Count]]
+  - requires:: [[Compute Infrastructure]]
+  - requires:: [[Model Training]]
+  - relatedTo:: [[Transformer]]
+  - relatedTo:: [[Deep Learning]]
+  - relatedTo:: [[Parameter Count]]
+  - implements:: [[Scaling Laws]]
+  - partOf:: [[Scaling Laws]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

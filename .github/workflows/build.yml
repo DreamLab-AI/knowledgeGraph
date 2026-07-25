@@ -1,0 +1,204 @@
+# Build and verify the ontology corpus — NO DEPLOY, BY DESIGN.
+#
+# This repository publishes a corpus and the pipeline that compiles it. This
+# workflow builds and gates that corpus; it deploys nothing. The deploy path is
+# deliberately absent: no GitHub Pages step, no publishing action, and no
+# reference to any secret anywhere in this file. `permissions: contents: read`
+# is the whole permission set — declared at workflow and job level both — so
+# this workflow cannot write to the repository even if a step tried.
+#
+# The repository root does carry a CNAME (narrativegoldmine.com) for the
+# published site, but no step below reads, writes or acts on it; the Pages push
+# lives in the private publishing CI (docs/ci-cd/build-and-gates.md §1).
+#
+# That private CI runs this same seven-stage pipeline and then the steps that
+# cannot be reproduced from a clone: SPA/WASM build, browser smoke test and the
+# gh-pages deploy. Its nine gates are listed in docs/ci-cd/build-and-gates.md §2;
+# three of them re-appear here (gate 2 pipeline unit tests, gate 4 build
+# validation, gate 5 standalone validation), and the other six cover the explorer
+# and the built site. The secret scan and the class-count contract below are
+# specific to this extracted corpus and have no counterpart in that list. What
+# you see here is the half that can be reproduced by anyone with a clone, no
+# credentials required.
+#
+# The corpus itself is mostly AI-generated synthetic content produced under human
+# direction, by design. It is an ontology testbed, not an authoritative
+# encyclopaedia; its provenance (did:nostr, generatedAtTime, URNs) attests
+# traceable generation under human direction, not human authorship. The pipeline
+# emits that framing rather than leaving it to prose — see `corpus.nature:
+# "synthetic"` in dist-ci/data/graph/stats.json.
+#
+# What this workflow proves, on every push and pull request:
+#   1. the corpus contains no credential-shaped strings (load-bearing: the
+#      corpus is the published artefact — 7,457 markdown pages go out verbatim)
+#   2. the NGG1 binary writer still matches its 183-byte golden fixture
+#      (pipeline/tests/test_emit_graph_tiers.py, pipeline/tests/fixtures/ngg1-3n2e.bin)
+#   3. the 7-stage pipeline runs end to end from ontology/pages/
+#   4. the build produced exactly 7457 OWL classes — a hard contract gate, not
+#      a printed statistic
+#   5. pipeline.validate reports zero errors over the corpus
+#
+# Reproduce locally:
+#   pip install "rdflib>=7.0.0" pytest
+#   python -m pytest pipeline/tests -q
+#   python -m pipeline.build ontology/pages dist-ci
+
+name: Build and verify
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # The corpus contract. Both dist-ci/data/graph/stats.json (`classes`) and
+  # dist-ci/data/ontology.json (`class[]` length) must report this many OWL
+  # classes or the build fails. Change it only alongside the corpus.
+  EXPECTED_CLASSES: '7457'
+
+jobs:
+  build:
+    name: Pipeline build and gates
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ------------------------------------------------------------------
+      # GATE 1 — secret scan over the published corpus (cheapest first)
+      # ------------------------------------------------------------------
+      # ontology/pages/*.md ships verbatim. A leaked key in a page is a leaked
+      # key on the internet, so this gate blocks the build rather than warning.
+      #
+      # Every pattern is anchored to a token-shaped suffix on purpose. A bare
+      # `sk-` substring match hits 1097 of the 7457 corpus files (risk-, task-,
+      # disk-, desk-assistant …), which would make the gate useless noise; the
+      # anchored form `sk-[A-Za-z0-9]{20,}` matches 0. Likewise the bare prefix
+      # `[Bb]earer ` used below appears in 64 pages as HTTP prose, while
+      # `[Bb]earer <20+ token chars>` matches 0. Verified against the corpus at
+      # 7457 pages: 0 hits total.
+      - name: Secret scan (corpus must contain no credential-shaped strings)
+        run: |
+          set -uo pipefail
+          patterns='(sk-[A-Za-z0-9]{20,}|pplx-[A-Za-z0-9]{20,}|ghp_[A-Za-z0-9]{36}|github_pat_[A-Za-z0-9_]{20,}|gho_[A-Za-z0-9]{36}|AKIA[0-9A-Z]{16}|-----BEGIN[A-Z ]*PRIVATE KEY-----|[Bb]earer [A-Za-z0-9._~+/-]{20,})'
+          # Actions runs `run:` steps under `bash -e`, and `set -uo pipefail`
+          # does not clear it. A plain `hits=$(grep …)` therefore aborts the step
+          # the instant grep exits 1 — i.e. on a *clean* corpus, the pass case.
+          # `|| rc=$?` puts the assignment in a tested context and keeps the code.
+          rc=0
+          hits=$(grep -rInE "$patterns" ontology/) || rc=$?
+          if [ "$rc" -eq 0 ]; then
+            echo "Secret scan FAILED — credential-shaped string(s) in the published corpus:"
+            echo "$hits" | cut -c1-200
+            exit 1
+          fi
+          # grep exits 1 for "no match" and 2+ for a real error. Only 1 is a pass;
+          # a broken scan must never be mistaken for a clean corpus.
+          if [ "$rc" -ne 1 ]; then
+            echo "Secret scan ERRORED: grep exited $rc"
+            exit 1
+          fi
+          echo "Secret scan passed: no credential-shaped strings under ontology/"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install "rdflib>=7.0.0" pytest
+
+      # ------------------------------------------------------------------
+      # GATE 2 — pipeline unit tests
+      # ------------------------------------------------------------------
+      # Includes the byte-exact 183-byte NGG1 golden (explorer/FORMAT-NGG1.md §7), parsed
+      # by a struct reader written independently of the writer, plus the
+      # overview.json consumer contract (40 nodes: 6 domains then 34
+      # categories, order frozen) and layout determinism.
+      - name: Pipeline unit tests (pytest)
+        run: python -m pytest pipeline/tests -q
+
+      # ------------------------------------------------------------------
+      # BUILD — the 7 stages: parse, validate, Turtle, WebVOWL JSON,
+      # page API, search index, NGG1 graph tiers
+      # ------------------------------------------------------------------
+      - name: Run the JSON-LD pipeline
+        run: |
+          set -euo pipefail
+          python -m pipeline.build ontology/pages dist-ci
+          echo "--- outputs ---"
+          ls -la dist-ci/data/
+          ls -la dist-ci/data/graph/
+
+      # ------------------------------------------------------------------
+      # GATE 3 — corpus contract: the build must produce 7457 OWL classes
+      # ------------------------------------------------------------------
+      # Read from the artefact the pipeline actually wrote, not from stdout.
+      # A silent parse regression (a dropped JSON-LD fence, a changed public
+      # filter) shows up here as a number, not as a warning nobody reads.
+      - name: Assert corpus contract (7457 classes)
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os, sys
+          from pathlib import Path
+
+          expected = int(os.environ["EXPECTED_CLASSES"])
+          stats = json.loads(Path("dist-ci/data/graph/stats.json").read_text())
+          vowl = json.loads(Path("dist-ci/data/ontology.json").read_text())
+
+          checks = {
+              "stats.json classes": stats["classes"],
+              "ontology.json class[] length": len(vowl["class"]),
+          }
+          failed = [f"{k}: expected {expected}, got {v}" for k, v in checks.items() if v != expected]
+          for k, v in checks.items():
+              print(f"  {k}: {v}")
+          print(f"  stats.json nodes: {stats['nodes']}, pages: {stats['pages']}, "
+                f"domains: {stats['domains']}, categories: {stats['categories']}")
+          print(f"  edges declared: {stats['edges']['declared']}, "
+                f"resolvable: {stats['edges']['resolvable']}")
+          if failed:
+              print("Corpus contract FAILED:")
+              for line in failed:
+                  print(f"  {line}")
+              sys.exit(1)
+          print(f"Corpus contract OK: {expected} OWL classes")
+          PY
+
+      # ------------------------------------------------------------------
+      # GATE 4 — validation must report zero errors
+      # ------------------------------------------------------------------
+      # pipeline.validate exits 1 on any error. Warnings do not fail the build:
+      # the corpus currently carries 961 of them (957 MULTI_PARENT — a class
+      # with more than one subClassOf — plus 4 INVALID_DOMAIN), and they are a
+      # known, recorded property of the taxonomy rather than a defect.
+      - name: Validate corpus (0 errors required)
+        run: python -m pipeline.validate ontology/pages
+
+      # ------------------------------------------------------------------
+      # ARTEFACT — build output, downloadable from the run page. Nothing is
+      # published anywhere; the artefact expires with the run's retention.
+      # ------------------------------------------------------------------
+      # `if: always()` means this also runs when gate 1 or 2 failed, in which
+      # case dist-ci was never created. `if-no-files-found: warn` keeps that case
+      # to one honest failure — the gate that actually broke — instead of adding
+      # a second, misleading upload failure on top of it.
+      - name: Upload build output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-ci
+          path: dist-ci
+          retention-days: 14
+          if-no-files-found: warn

@@ -1,0 +1,306 @@
+public:: true
+
+# Software Testing
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:944caf776b8e758f540e1d506df9ae705c052ccd7f699a2d41fc361a13bb9698",
+  "@type": "Page",
+  "vc:slug": "software-testing",
+  "title": "Software Testing",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:owl-thing",
+      "vc:label": "owl:Thing"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9690"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Software Testing"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:software-testing",
+  "@type": "Class",
+  "label": "Software Testing",
+  "definition": "Software Testing is the systematic discipline of evaluating software systems and components by executing them under controlled conditions, observing emergent behaviour, and verifying conformance to specified requirements, design intent, and quality attributes. It encompasses a hierarchy of test granularity — from unit and integration tests that validate individual components to system, end-to-end, and acceptance tests that assess the complete product — as well as specialised dimensions such as performance, security, accessibility, regression, and exploratory testing. Testing is an integral quality assurance mechanism embedded throughout the software development lifecycle, supporting early defect detection, risk mitigation, and continuous delivery. Alongside static analysis and formal verification, it constitutes the primary empirical evidence base for software correctness and reliability.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "quality": 0.74,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:software-verification-and-validation",
+      "label": "Software Verification and Validation"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:unit-testing",
+        "label": "Unit Testing"
+      },
+      {
+        "@id": "urn:ngm:class:integration-testing",
+        "label": "Integration Testing"
+      },
+      {
+        "@id": "urn:ngm:class:regression-testing",
+        "label": "Regression Testing"
+      },
+      {
+        "@id": "urn:ngm:class:performance-testing",
+        "label": "Performance Testing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:software-development-lifecycle",
+        "label": "Software Development Lifecycle"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:test-automation",
+        "label": "Test Automation"
+      },
+      {
+        "@id": "urn:ngm:class:test-data-management",
+        "label": "Test Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:defect-detection",
+        "label": "Defect Detection"
+      },
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Software Reliability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-829",
+        "label": "IEEE 829"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Development"
+      }
+    ]
+  },
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:software-testing:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:944caf776b8e758f540e1d506df9ae705c052ccd7f699a2d41fc361a13bb9698"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[owl:Thing]]",
+      "resolved": "urn:visionflow:owl:class:owl-thing",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+- ### Definition
+  - Software Testing is the systematic discipline of evaluating software systems and components by executing them under controlled conditions, observing emergent behaviour, and verifying conformance to specified requirements, design intent, and quality attributes. It forms a critical component of [[Software Quality Assurance]], operating alongside [[Static Analysis]] and [[Formal Verification]] as the primary empirical evidence base for correctness. Embedded throughout the [[Software Development Lifecycle]], testing enables [[Continuous Delivery]] by providing rapid, automated feedback on regressions, performance degradation, and security vulnerabilities. Its scope spans from fine-grained [[Unit Testing]] of isolated functions to full [[Acceptance Testing]] against stakeholder expectations.
+
+- ### Overview
+  - Software Testing is one of the oldest and most mature practices in software engineering, predating the term "software engineering" itself. Its core premise is that dynamic execution of a program against known inputs and expected outputs reveals defects that static inspection may miss.
+  - The discipline distinguishes between verification ("are we building the product right?") and validation ("are we building the right product?"), both of which contribute to overall [[Software Quality Assurance]].
+  - Modern software testing has evolved from purely manual, ad-hoc inspection to sophisticated, automated pipelines integrated into [[Continuous Integration]] systems that execute thousands of tests per commit.
+  - Testing cannot prove the absence of defects (Dijkstra's dictum) but provides probabilistic confidence calibrated by coverage criteria, fault models, and risk-based selection strategies.
+  - The economic rationale for testing is well-established: the cost of defect discovery rises steeply as a defect propagates from development through integration, system test, and into production — making early test investment highly cost-effective.
+
+- ### Key Components
+  - #### Test Granularity Levels
+    - **[[Unit Testing]]** — validates the smallest testable units (functions, methods, classes) in isolation, typically using stubs or [[Mock Objects]] for dependencies; the foundation of test pyramids.
+    - **[[Integration Testing]]** — verifies that multiple components interact correctly, exposing interface mismatches and contract violations.
+    - **[[System Testing]]** — exercises the complete assembled system against functional and non-functional requirements.
+    - **[[Acceptance Testing]]** — confirms the system meets stakeholder expectations; includes User Acceptance Testing (UAT) and behaviour-driven scenarios written in Gherkin or similar DSLs.
+    - **[[Regression Testing]]** — re-executes existing tests after changes to detect unintended side effects; forms the backbone of automated [[Continuous Integration]] pipelines.
+
+  - #### Specialised Test Dimensions
+    - **[[Performance Testing]]** — measures latency, throughput, and resource utilisation under load; subtypes include load, stress, soak, and spike testing.
+    - **[[Security Testing]]** — identifies vulnerabilities through penetration testing, fuzzing, and SAST/DAST toolchains; closely linked to [[Software Security]].
+    - **Accessibility Testing** — validates conformance to WCAG and platform-specific accessibility standards.
+    - **Exploratory Testing** — unscripted, experience-driven investigation of the system to uncover unexpected defects; complements scripted automation.
+    - **Contract Testing** — verifies that API providers and consumers honour an agreed interface schema, critical in [[Microservices Architecture]] environments.
+    - **[[AI Testing]]** — emerging discipline for validating probabilistic machine learning models, including data validation, model monitoring, and adversarial robustness checks.
+
+  - #### Test Design Techniques
+    - **Black-box techniques** — equivalence partitioning, boundary value analysis, decision tables, state transition testing; derive tests from specifications without knowledge of implementation.
+    - **White-box techniques** — statement coverage, branch coverage, mutation testing; derive tests from internal code structure to achieve measurable [[Code Coverage]].
+    - **[[Test-Driven Development]] (TDD)** — tests are written before production code, shaping design and ensuring continuous test coverage as the codebase grows.
+    - **Behaviour-Driven Development (BDD)** — extends TDD with natural-language specifications (Given-When-Then) co-authored by developers, testers, and business stakeholders.
+    - **Property-Based Testing** — generates randomised inputs satisfying declared properties, surfacing edge cases that hand-authored examples miss (e.g. QuickCheck, Hypothesis).
+    - **Fuzz Testing** — supplies malformed or random input streams to expose crashes, hangs, and security vulnerabilities; highly effective for parsers and protocol implementations.
+    - **Mutation Testing** — introduces deliberate code mutations to assess whether the existing test suite detects them, measuring test suite effectiveness beyond raw [[Code Coverage]].
+
+  - #### Infrastructure and Tooling
+    - **[[Test Automation]] frameworks** — xUnit family (JUnit, NUnit, pytest), Selenium/Playwright for UI, k6/Gatling for performance, OWASP ZAP for security.
+    - **[[Test Data Management]]** — provision, masking, and lifecycle control of test datasets; critical for [[Data]] privacy compliance and reproducibility.
+    - **[[Code Coverage]] tools** — JaCoCo, Istanbul, Coverage.py; instrument bytecode or source to report exercised paths.
+    - **Test orchestration** — CI servers (Jenkins, GitHub Actions, GitLab CI) schedule and parallelise test suites, feeding results into dashboards and alerting.
+    - **Service virtualisation** — stubs and virtual services simulate unavailable dependencies, enabling isolated testing in complex distributed environments.
+
+- ### Applications and Use Cases
+  - **Enterprise software delivery** — regression suites protect large codebases across hundreds of developers, with test counts in the millions for mature platforms.
+  - **Safety-critical systems** — aerospace (DO-178C), automotive (ISO 26262), and medical devices (IEC 62304) mandate rigorous test documentation, traceability to requirements, and formal review; direct link to [[Safety]] standards.
+  - **[[DevOps]] and platform engineering** — shift-left testing embeds quality gates early; shift-right practices (canary releases, chaos engineering, production monitoring) complement pre-production testing.
+  - **[[Agile Development]] sprints** — test automation enables continuous feedback within short iterations; definition-of-done commonly requires all unit and integration tests to pass.
+  - **[[Microservices Architecture]]** — contract testing and component-level integration tests replace expensive end-to-end suites for independently deployed services.
+  - **Machine learning pipelines** — [[AI Testing]] validates data schemas, model performance metrics, and fairness criteria; testing frameworks extend to cover non-deterministic model outputs.
+  - **Game and XR development** — automated visual regression, performance profiling on target hardware, and XR-specific interaction testing for [[Spatial Computing]] platforms.
+  - **[[Blockchain]] and smart contracts** — formal test suites and property-based testing verify immutable contract logic before deployment; post-deployment testing is infeasible for many contracts.
+
+- ### Relationships
+  - hasPart:: [[Unit Testing]]
+  - hasPart:: [[Integration Testing]]
+  - hasPart:: [[System Testing]]
+  - hasPart:: [[Acceptance Testing]]
+  - hasPart:: [[Regression Testing]]
+  - hasPart:: [[Performance Testing]]
+  - partOf:: [[Software Development Lifecycle]]
+  - partOf:: [[Continuous Integration]]
+  - requires:: [[Test Automation]]
+  - requires:: [[Test Data Management]]
+  - enables:: [[Continuous Delivery]]
+  - enables:: [[Defect Detection]]
+  - enables:: [[Software Reliability]]
+  - dependsOn:: [[Requirements Engineering]]
+  - dependsOn:: [[Version Control]]
+  - uses:: [[Test-Driven Development]]
+  - uses:: [[Mock Objects]]
+  - uses:: [[Code Coverage]]
+  - supports:: [[Software Security]]
+  - supports:: [[Robustness]]
+  - supports:: [[Safety]]
+  - standardizedBy:: [[ISO/IEC 29119]]
+  - standardizedBy:: [[IEEE 829]]
+  - contrastsWith:: [[Static Analysis]]
+  - contrastsWith:: [[Formal Verification]]
+  - bridges-to:: [[AI Testing]]
+  - bridges-to:: [[Digital Twin]]
+  - bridges-to:: [[Simulation]]
+  - relatedTo:: [[DevOps]]
+  - relatedTo:: [[Agile Development]]
+
+- ### Standards and Context
+  - **ISO/IEC 29119** — international standard series for software testing, covering concepts and definitions (Part 1), processes (Part 2), documentation (Part 3), testing techniques (Part 4), and keyword-driven testing (Part 5).
+  - **IEEE 829** (superseded by ISO/IEC 29119) — historically the dominant standard defining test plan, test case, and test summary report templates.
+  - **ISTQB (International Software Testing Qualifications Board)** — the leading professional certification body; its syllabi define the canonical test taxonomy used across the industry (Foundation, Advanced, Expert levels).
+  - **DO-178C / ED-12C** — avionics software standard mandating structural coverage objectives (MC/DC) and rigorous test evidence for airborne software; sets the benchmark for safety-critical testing stringency.
+  - **ISO 26262** — functional safety standard for road vehicles; Part 6 covers software-level testing requirements aligned to Automotive Safety Integrity Levels (ASILs).
+  - **IEC 62304** — medical device software lifecycle standard; defines software safety class-dependent testing requirements.
+  - **OWASP Testing Guide** — community-maintained reference for security testing of web applications; widely adopted as a de facto standard by penetration testers.
+  - **WCAG 2.2 / 3.0** — W3C Web Content Accessibility Guidelines; compliance validated through automated (axe, Lighthouse) and manual accessibility testing.
+
+- ### Provenance
+  - sources:: ISO/IEC 29119; ISTQB Foundation Level Syllabus; Myers, Sandler & Badgett "The Art of Software Testing" (3rd ed.); IEEE Software Engineering Body of Knowledge (SWEBOK); OWASP Testing Guide
+  - updated:: 2026-06-13

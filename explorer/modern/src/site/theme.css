@@ -1,0 +1,156 @@
+/*
+ * theme.css — house editorial design tokens for narrativegoldmine.com
+ * PRD-NG-001 §6 (visual identity). Light editorial: warm cream canvas,
+ * charcoal ink, deep-teal structure/trust + burnt-orange action/relations.
+ * The graph canvas is cream — a drawing, not a space-scene.
+ *
+ * All tokens are CSS custom properties on :root so the (deferred) dark theme
+ * is a variable swap, not a rewrite (PRD §6, ADR §5). Site chrome and the
+ * explorer both read from here — one palette, no drift.
+ */
+
+:root {
+  /* ── Core palette (house canon) ─────────────────────────────────────── */
+  --ng-cream: #f7f4ea; /* canvas / graph background */
+  --ng-charcoal: #2d2d2d; /* ink / subClassOf backbone */
+  --ng-teal: #1a6b6b; /* structure, trust, links */
+  --ng-orange: #c85a2a; /* action, object-property relations */
+
+  /* Tonal steps derived from the core four (kept within the warm family). */
+  --ng-cream-100: #fdfcf7;
+  --ng-cream-200: #f7f4ea; /* = --ng-cream */
+  --ng-cream-300: #efe9d8;
+  --ng-cream-400: #e3dbc4;
+  --ng-ink-900: #2d2d2d; /* = --ng-charcoal */
+  --ng-ink-700: #4a4a46;
+  --ng-ink-500: #6f6d64; /* secondary text */
+  --ng-ink-300: #a19e92; /* muted / captions */
+  --ng-teal-600: #155656;
+  --ng-teal-500: #1a6b6b; /* = --ng-teal */
+  --ng-teal-300: #4f9494;
+  --ng-orange-600: #a8471f;
+  --ng-orange-500: #c85a2a; /* = --ng-orange */
+  --ng-orange-300: #dd8b64;
+
+  /* ── Semantic roles ─────────────────────────────────────────────────── */
+  --ng-bg: var(--ng-cream-200);
+  --ng-bg-raised: var(--ng-cream-100); /* cards, panels */
+  --ng-bg-sunken: var(--ng-cream-300); /* wells, code, input */
+  --ng-border: var(--ng-cream-400);
+  --ng-text: var(--ng-ink-900);
+  --ng-text-muted: var(--ng-ink-500);
+  --ng-text-faint: var(--ng-ink-300);
+  --ng-link: var(--ng-teal-500);
+  --ng-link-hover: var(--ng-teal-600);
+  --ng-accent: var(--ng-orange-500);
+  --ng-accent-hover: var(--ng-orange-600);
+  --ng-focus-ring: var(--ng-teal-500);
+
+  /* Explorer render roles — backbone quiet, relations accented (PRD §5). */
+  --ng-graph-canvas: var(--ng-cream-200);
+  --ng-edge-backbone: var(--ng-ink-500); /* subClassOf: structural, quiet */
+  --ng-edge-relation: var(--ng-teal-500); /* objectProperty: accented */
+  --ng-node-stroke: var(--ng-ink-900);
+  --ng-node-hover: var(--ng-orange-500);
+  --ng-node-selected: var(--ng-orange-600);
+  --ng-label-ink: var(--ng-ink-900);
+  --ng-label-halo: var(--ng-cream-100); /* legibility halo on cream */
+
+  /* ── Six domain tints (muted family within the palette) ─────────────── */
+  /* index = domain id (FORMAT-NGG1 §6). Node fill by domain; kept desaturated
+   * so a full T1 scope reads as one drawing, not a paint-box. */
+  --ng-domain-0: #1a6b6b; /* artificial-intelligence — teal (anchor) */
+  --ng-domain-1: #c85a2a; /* blockchain — burnt orange */
+  --ng-domain-2: #4f7a9c; /* spatial-computing — dusty blue */
+  --ng-domain-3: #7a8b3f; /* robotics — olive */
+  --ng-domain-4: #9c6b8a; /* distributed-collaboration — muted plum */
+  --ng-domain-5: #8a6d4a; /* infrastructure — warm taupe */
+
+  /* ── Type scale (typography-first reading surface) ──────────────────── */
+  --ng-font-serif: 'Iowan Old Style', 'Palatino Linotype', 'Georgia', 'Times New Roman', serif;
+  --ng-font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --ng-font-mono: 'JetBrains Mono', 'SFMono-Regular', 'Menlo', 'Consolas', monospace;
+
+  --ng-body-font: var(--ng-font-serif); /* reading surface is serif */
+  --ng-ui-font: var(--ng-font-sans); /* chrome/controls are sans */
+
+  /* Modular scale, ratio ~1.25 (major third), 16px base. */
+  --ng-text-xs: 0.75rem; /* 12px — captions, provenance chip */
+  --ng-text-sm: 0.875rem; /* 14px — UI, legend */
+  --ng-text-base: 1rem; /* 16px — body */
+  --ng-text-lg: 1.25rem; /* 20px — lede */
+  --ng-text-xl: 1.5625rem; /* 25px — h3 */
+  --ng-text-2xl: 1.953rem; /* ~31px — h2 */
+  --ng-text-3xl: 2.441rem; /* ~39px — h1 */
+  --ng-text-4xl: 3.052rem; /* ~49px — hero */
+
+  --ng-leading-tight: 1.2;
+  --ng-leading-snug: 1.4;
+  --ng-leading-normal: 1.6; /* long-form reading */
+  --ng-tracking-tight: -0.01em;
+  --ng-tracking-wide: 0.04em; /* small-caps labels, legend */
+  --ng-weight-regular: 400;
+  --ng-weight-medium: 500;
+  --ng-weight-semibold: 600;
+  --ng-weight-bold: 700;
+  --ng-measure: 68ch; /* max reading line length */
+
+  /* ── Spacing scale (4px base, geometric-ish) ────────────────────────── */
+  --ng-space-0: 0;
+  --ng-space-1: 0.25rem; /* 4 */
+  --ng-space-2: 0.5rem; /* 8 */
+  --ng-space-3: 0.75rem; /* 12 */
+  --ng-space-4: 1rem; /* 16 */
+  --ng-space-5: 1.5rem; /* 24 */
+  --ng-space-6: 2rem; /* 32 */
+  --ng-space-7: 3rem; /* 48 */
+  --ng-space-8: 4rem; /* 64 */
+  --ng-space-9: 6rem; /* 96 */
+
+  /* ── Radii, borders, elevation ──────────────────────────────────────── */
+  --ng-radius-sm: 4px;
+  --ng-radius-md: 8px;
+  --ng-radius-lg: 14px;
+  --ng-radius-pill: 999px;
+  --ng-border-width: 1px;
+  --ng-shadow-sm: 0 1px 2px rgba(45, 45, 45, 0.06);
+  --ng-shadow-md: 0 4px 16px rgba(45, 45, 45, 0.08);
+  --ng-shadow-lg: 0 12px 40px rgba(45, 45, 45, 0.12);
+
+  /* ── Layout ─────────────────────────────────────────────────────────── */
+  --ng-content-width: 44rem; /* reading column */
+  --ng-wide-width: 72rem; /* home / data / graph chrome */
+  --ng-panel-width: 22rem; /* explorer side panel */
+  --ng-header-height: 3.5rem;
+
+  /* ── Motion (prefers-reduced-motion respected, PRD §9) ──────────────── */
+  --ng-ease: cubic-bezier(0.2, 0, 0, 1);
+  --ng-dur-fast: 120ms;
+  --ng-dur-base: 220ms;
+  --ng-dur-slow: 400ms;
+
+  /* ── z-index ladder ─────────────────────────────────────────────────── */
+  --ng-z-canvas: 0;
+  --ng-z-chrome: 10;
+  --ng-z-panel: 20;
+  --ng-z-header: 30;
+  --ng-z-overlay: 40;
+  --ng-z-toast: 50;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ng-dur-fast: 0ms;
+    --ng-dur-base: 0ms;
+    --ng-dur-slow: 0ms;
+  }
+}
+
+/* Dark theme is deferred (PRD §6/§10): the hook is here so it is a token swap.
+ * Not a launch gate — do not wire a toggle without a design pass.
+:root[data-theme='dark'] {
+  --ng-bg: #1c1b18;
+  --ng-text: #ece7da;
+  ... (deferred)
+}
+*/

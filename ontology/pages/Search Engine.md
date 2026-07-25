@@ -1,0 +1,307 @@
+public:: true
+
+# Search Engine
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:1f747bd8911b9ae3f0f27e47954b96209666ba98214b4adc9cb5dd817aa73f15",
+  "@type": "Page",
+  "vc:slug": "search-engine",
+  "title": "Search Engine",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:content-discovery",
+      "vc:label": "Content Discovery"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:information-retrieval",
+      "vc:label": "Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-10030"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Search Engine"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:search-engine",
+  "@type": "Class",
+  "label": "Search Engine",
+  "definition": "A search engine is a software system that systematically crawls, indexes, and ranks digital content to retrieve relevant results in response to user queries. It combines web crawling, inverted-index construction, relevance ranking (including PageRank-style link analysis and learning-to-rank models), and query understanding (tokenisation, stemming, NLP) into an end-to-end pipeline. Modern search engines increasingly integrate semantic embeddings, dense retrieval, and large language model components to handle natural-language and multimodal queries. They constitute foundational information infrastructure for the open web, enterprise knowledge bases, e-commerce catalogues, and emerging spatial and metaverse content layers.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:web-crawler",
+        "label": "Web Crawler"
+      },
+      {
+        "@id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      },
+      {
+        "@id": "urn:ngm:class:query-processing",
+        "label": "Query Processing"
+      },
+      {
+        "@id": "urn:ngm:class:relevance-ranking",
+        "label": "Relevance Ranking"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:vector-search",
+        "label": "Vector Search"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:pagerank",
+        "label": "PageRank"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-search",
+        "label": "Spatial Search"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:web-search-engine",
+      "label": "Web Search Engine"
+    }
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:search-engine:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:1f747bd8911b9ae3f0f27e47954b96209666ba98214b4adc9cb5dd817aa73f15"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Content Discovery]]",
+      "resolved": "urn:visionflow:linked:content-discovery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Information Retrieval]]",
+      "resolved": "urn:visionflow:owl:class:information-retrieval",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+- ### Definition
+  - A **search engine** is a software system that systematically crawls, indexes, and ranks digital content to return relevant results in response to user queries. It sits at the intersection of [[Information Retrieval]], [[Natural Language Processing]], [[Distributed Computing]], and applied [[Machine Learning]], forming the principal gateway through which users navigate the open web, enterprise intranets, e-commerce catalogues, and increasingly [[Metaverse]] content layers. By transforming unstructured corpora into queryable indexes and applying learned ranking functions, search engines mediate access to the majority of humanity's publicly available digital knowledge.
+
+- ### Overview
+  - Search engines emerged in the early 1990s alongside the World Wide Web, with systems such as Archie (1990), AltaVista (1995), and then Google (1998) establishing the modern paradigm of link-based [[Relevance Ranking]].
+  - Their core value proposition is scale and speed: they pre-compute index structures that allow sub-second retrieval across billions of documents, a problem that naïve real-time scanning cannot solve.
+  - The domain is now mature. Google, Bing, and Baidu dominate the public web tier; [[Elasticsearch]] and Apache Solr lead enterprise and application search; specialised vertical search engines target domains such as legal, biomedical, and code.
+  - Recent developments centre on the fusion of classical [[Inverted Index]] retrieval with dense [[Vector Search]] (bi-encoders, ColBERT) and the integration of [[Large Language Model]] components for query rewriting, answer synthesis, and [[Retrieval-Augmented Generation]] (RAG).
+  - Search engines are critical infrastructure whose design choices — what content is surfaced, in what order, under what policies — carry significant societal implications for information access and [[Digital Governance]].
+
+- ### Key Components
+  - #### Web Crawler
+    - A [[Web Crawler]] (spider) autonomously fetches web pages by following hyperlinks from a seed set, respecting `robots.txt` exclusion rules and crawl politeness delays.
+    - Large-scale crawlers such as Googlebot distribute work across thousands of machines and must handle dynamic [[JavaScript Rendering]], canonical URL deduplication, and freshness scheduling.
+    - Related: [[Content Discovery]], [[URL Frontier]], [[Link Graph]].
+  - #### Index Construction
+    - Raw crawled documents are parsed, normalised (encoding, HTML stripping), and tokenised into terms.
+    - An [[Inverted Index]] maps each term to a posting list of document identifiers and positional information, enabling fast Boolean and phrase retrieval.
+    - Modern indexes also store forward indexes for feature extraction and [[Document Embedding]] vectors for dense retrieval.
+    - [[Data Storage]] at search-engine scale requires distributed file systems (e.g. GFS / HDFS) and sharded index servers.
+  - #### Query Processing
+    - [[Query Processing]] encompasses tokenisation, stemming/lemmatisation, stop-word removal, spelling correction, query expansion, and intent classification.
+    - [[Natural Language Processing]] components parse conversational and ambiguous queries; entity recognition links query terms to [[Knowledge Graph]] entities for disambiguation.
+    - Structured queries (Boolean, field-restricted, geo-spatial) are compiled into query plans evaluated against the index shards.
+  - #### Relevance Ranking
+    - Classical [[Relevance Ranking]] models include TF-IDF, BM25 (Okapi), and [[PageRank]]-style authority propagation.
+    - Learning-to-rank (LTR) models (RankNet, LambdaMART, neural LTR) combine hundreds of features — textual similarity, freshness, click-through rates, page authority — into a final score.
+    - Dense retrieval augments sparse matching: query and document [[Embedding]] vectors are compared by approximate nearest-neighbour search ([[Vector Search]]), enabling semantic rather than purely lexical matching.
+    - Cross-encoder re-rankers (BERT-based) score top-k candidates for precision at the top of the results list.
+  - #### Results Presentation
+    - The [[Search Results Page]] (SERP) formats ranked results as title, URL snippet, and rich-answer features (featured snippets, knowledge panels, image/video carousels).
+    - Answer generation using [[Large Language Model]] components is increasingly embedded directly in SERPs (e.g. AI Overviews in Google Search).
+    - Personalisation layers adjust ranking based on user history, location, and preferences, raising [[Privacy]] and [[Filter Bubble]] concerns.
+
+- ### Mechanisms & Algorithms
+  - **BM25** — probabilistic term-frequency saturation model, the dominant sparse baseline since the 1990s.
+  - **PageRank / HITS** — graph-theoretic link-authority algorithms that treat hyperlinks as votes, forming the basis of web-scale quality signals.
+  - **Learning-to-Rank** — supervised models trained on human-labelled relevance judgements (NDCG-optimised); connect to [[Machine Learning]] pipelines for continuous model refreshes.
+  - **Dense Passage Retrieval (DPR)** — dual-encoder architecture mapping queries and passages to a shared vector space; enables [[Semantic Search]] without lexical overlap.
+  - **Approximate Nearest Neighbour (ANN)** — HNSW, IVF-PQ, and similar graph/quantisation indexes that make billion-scale [[Vector Search]] sub-millisecond.
+  - **BERT-based Re-ranking** — cross-attention models (e.g. monoT5, ColBERT) re-score top-k candidates for nuanced relevance.
+  - **[[Retrieval-Augmented Generation]] (RAG)** — retrieval step grounds [[Large Language Model]] generation in verified document chunks, reducing hallucination.
+
+- ### Applications & Use Cases
+  - **Web Search** — universal-scope crawl-and-rank over the public web; dominated by Google, Bing, Baidu, and Yandex at national scale.
+  - **[[Enterprise Search]]** — internal search over corporate document repositories, wikis, e-mail, CRM, and structured databases using platforms such as [[Elasticsearch]], Coveo, and Glean.
+  - **E-commerce Search** — product catalogue retrieval optimised for conversion; combines keyword, faceted, and behavioural signals (used by Amazon, Shopify, Algolia).
+  - **Code Search** — repository-level retrieval over source code; GitHub Code Search, Sourcegraph, and ctags-based local search.
+  - **Biomedical & Legal Search** — domain-specific indexes over PubMed, case law, and patent databases with specialised ontology-aware ranking.
+  - **Conversational Search** — integration of search retrieval with dialogue management, enabling multi-turn [[Question Answering]] and task completion.
+  - **[[Spatial Search]] & [[Metaverse]] Discovery** — emerging application of search to 3D asset repositories, XR experiences, and geospatial content, connecting to [[Spatial Computing]] use cases.
+  - **[[Retrieval-Augmented Generation]] Backends** — search engines as retrieval substrates for LLM-based chatbots and agents, mediating the boundary between parametric model knowledge and live document corpora.
+
+- ### Relationships
+  - partOf:: [[Information Retrieval]]
+  - hasPart:: [[Web Crawler]]
+  - hasPart:: [[Inverted Index]]
+  - hasPart:: [[Query Processing]]
+  - hasPart:: [[Relevance Ranking]]
+  - hasPart:: [[Search Results Page]]
+  - requires:: [[Natural Language Processing]]
+  - requires:: [[Distributed Computing]]
+  - requires:: [[Data Storage]]
+  - enables:: [[Content Discovery]]
+  - enables:: [[Knowledge Discovery]]
+  - enables:: [[Question Answering]]
+  - uses:: [[Vector Search]]
+  - uses:: [[Machine Learning]]
+  - uses:: [[Large Language Model]]
+  - uses:: [[PageRank]]
+  - contrastsWith:: [[Recommendation System]]
+  - contrastsWith:: [[Knowledge Graph]]
+  - bridges-to:: [[Retrieval-Augmented Generation]]
+  - bridges-to:: [[Spatial Search]]
+  - bridges-to:: [[Metaverse]]
+  - relatedTo:: [[Semantic Search]]
+  - relatedTo:: [[Enterprise Search]]
+  - relatedTo:: [[Search Engine Optimisation]]
+
+- ### Standards & Context
+  - **Schema.org** — structured data vocabulary used to annotate web pages, enabling search engines to extract rich entity information and generate knowledge panel entries; maintained by Google, Microsoft, Yahoo, and Yandex.
+  - **Sitemap Protocol (sitemaps.org)** — XML-based standard for webmasters to declare URL sets, update frequency, and priority hints to crawlers.
+  - **robots.txt (REP)** — Robots Exclusion Protocol governing which URL paths crawlers may access; formalised as RFC 9309 (2022).
+  - **OpenSearch** — XML description format allowing websites to advertise search endpoints to browsers and aggregators.
+  - **TREC (Text REtrieval Conference)** — long-running NIST evaluation series that has defined benchmarks (TREC-8, MS MARCO, BEIR) shaping ranking algorithm research for three decades.
+  - **MS MARCO / BEIR** — publicly available relevance datasets widely used to train and benchmark neural ranking models, including dense retrieval systems.
+  - **W3C Linked Data / SPARQL** — standards relevant to semantic search and entity-linked retrieval; connect to [[Knowledge Graph]] construction pipelines.
+  - [[Privacy]] regulation (GDPR, DSA in the EU) increasingly constrains personalisation, user-data retention, and de-indexing ("right to be forgotten") in search systems.
+
+- ### Provenance
+  - sources:: Schema.org documentation; RFC 9309 (robots.txt); TREC evaluation series; MS MARCO and BEIR benchmarks; Elasticsearch documentation; established IR textbooks (Manning, Raghavan & Schutze — Introduction to Information Retrieval).
+  - updated:: 2026-06-13

@@ -1,0 +1,12 @@
+/* App.css — canvas reset only; all editorial styling lives in site/site.css. */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+canvas {
+  display: block;
+  outline: none;
+}

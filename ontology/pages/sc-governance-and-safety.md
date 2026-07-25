@@ -1,0 +1,62 @@
+public:: true
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0b7716a95d4c4e3e86883c311cdba4ebd49bdc163c501664abc9cd723c77ae83",
+  "@type": "Page",
+  "vc:slug": "sc-governance-and-safety",
+  "title": "Governance and Safety",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2,
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-19T19:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@type": "Class",
+  "@id": "urn:ngm:class:sc-governance-and-safety",
+  "label": "Governance and Safety",
+  "definition": "Taxonomy hub for governance, safety, regulation, and privacy concepts within the spatial computing domain, encompassing frameworks for responsible XR and metaverse deployment, data protection, content moderation, risk management, and user safety standards.",
+  "domain": "spatial-computing",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
+      {"@id": "urn:ngm:class:user-safety", "label": "User Safety"},
+      {"@id": "urn:ngm:class:digital-safety", "label": "Digital Safety"},
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:spatial-embodiment-harm-taxonomy", "label": "Spatial Embodiment Harm Taxonomy"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"},
+      {"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"},
+      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
+      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
+    ]
+  },
+  "qualityScore": 0.8,
+  "quality": 0.8,
+  "maturity": "established"
+}
+```

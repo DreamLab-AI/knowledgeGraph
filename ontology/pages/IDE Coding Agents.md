@@ -1,0 +1,602 @@
+public:: true
+
+# IDE Coding Agents
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ide-coding-agents",
+  "@type": "Page",
+  "vc:slug": "ide-coding-agents",
+  "title": "IDE Coding Agents",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {"@id": "urn:visionflow:linked:agent-harness", "vc:label": "Agent Harness"},
+    {"@id": "urn:visionflow:linked:terminal-coding-agents", "vc:label": "Terminal Coding Agents"},
+    {"@id": "urn:visionflow:linked:harness-configuration-packs", "vc:label": "Harness Configuration Packs"},
+    {"@id": "urn:visionflow:linked:internal-ai-harness", "vc:label": "Internal AI Harness"},
+    {"@id": "urn:visionflow:linked:external-ai-harness", "vc:label": "External AI Harness"},
+    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
+    {"@id": "urn:visionflow:linked:tool-call-loop", "vc:label": "Tool Call Loop"},
+    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
+    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
+    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
+    {"@id": "urn:visionflow:linked:autonomous-coding", "vc:label": "Autonomous Coding"},
+    {"@id": "urn:visionflow:linked:browser-automation", "vc:label": "Browser Automation"},
+    {"@id": "urn:visionflow:linked:computer-use", "vc:label": "Computer Use"},
+    {"@id": "urn:visionflow:linked:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks"},
+    {"@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "vc:label": "Multi-Agent Orchestration Frameworks"},
+    {"@id": "urn:visionflow:linked:plan-and-execute-pattern", "vc:label": "Plan-and-Execute Pattern"},
+    {"@id": "urn:visionflow:linked:re-act-pattern", "vc:label": "ReAct Pattern"},
+    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
+    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
+    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
+    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
+    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
+    {"@id": "urn:visionflow:linked:hook-system", "vc:label": "Hook System"},
+    {"@id": "urn:visionflow:linked:code-review", "vc:label": "Code Review"},
+    {"@id": "urn:visionflow:linked:software-engineering", "vc:label": "Software Engineering"},
+    {"@id": "urn:visionflow:linked:ai-agent-coordination", "vc:label": "AI Agent Coordination"},
+    {"@id": "urn:visionflow:linked:multi-agent-collaboration", "vc:label": "Multi-Agent Collaboration"},
+    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
+    {"@id": "urn:visionflow:linked:observability-stack", "vc:label": "Observability Stack"},
+    {"@id": "urn:visionflow:linked:structured-output", "vc:label": "Structured Output"},
+    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain-of-Thought"},
+    {"@id": "urn:visionflow:linked:tree-of-thoughts", "vc:label": "Tree of Thoughts"},
+    {"@id": "urn:visionflow:linked:prompt-template", "vc:label": "Prompt Template"},
+    {"@id": "urn:visionflow:linked:tool-registry", "vc:label": "Tool Registry"},
+    {"@id": "urn:visionflow:linked:json-rpc", "vc:label": "JSON-RPC"},
+    {"@id": "urn:visionflow:linked:coding-assistant", "vc:label": "Coding Assistant"},
+    {"@id": "urn:visionflow:linked:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes"},
+    {"@id": "urn:visionflow:linked:agent-memory-layers", "vc:label": "Agent Memory Layers"},
+    {"@id": "urn:visionflow:linked:agent-event-stream", "vc:label": "Agent Event Stream"},
+    {"@id": "urn:visionflow:linked:agent-communication-protocol", "vc:label": "Agent Communication Protocol"},
+    {"@id": "urn:visionflow:linked:agent-to-agent-protocol", "vc:label": "Agent-to-Agent Protocol"}
+  ],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ide-coding-agents",
+  "@type": "Class",
+  "label": "IDE Coding Agents",
+  "definition": "AI coding agents embedded within integrated development environments as extensions or sidebars, implementing plan-then-act loops with approval gates and cost transparency, enabling autonomous multi-step software development from within the developer's primary workspace — includes Cline, Kilo Code (successor to Roo Code), OpenHands, and claw-code-agent.",
+  "domain": "ai",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:tool-call-loop", "label": "Tool Call Loop"},
+      {"@id": "urn:ngm:class:plan-and-execute-pattern", "label": "Plan-and-Execute Pattern"},
+      {"@id": "urn:ngm:class:hook-system", "label": "Hook System"},
+      {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
+      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-coding", "label": "Autonomous Coding"},
+      {"@id": "urn:ngm:class:browser-automation", "label": "Browser Automation"},
+      {"@id": "urn:ngm:class:computer-use", "label": "Computer Use"},
+      {"@id": "urn:ngm:class:multi-agent-collaboration", "label": "Multi-Agent Collaboration"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"},
+      {"@id": "urn:ngm:class:plan-and-execute-pattern", "label": "Plan-and-Execute Pattern"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:terminal-coding-agents", "label": "Terminal Coding Agents"},
+      {"@id": "urn:ngm:class:harness-configuration-packs", "label": "Harness Configuration Packs"},
+      {"@id": "urn:ngm:class:agent-evaluation-benchmarks", "label": "Agent Evaluation Benchmarks"}
+    ]
+  },
+  "quality": 0.90,
+  "vc:termId": "AI-9911",
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:ide-coding-agents:a1b2c3d4e5f6",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:ide-coding-agents"
+  },
+  "vc:resolutions": [
+    {"raw": "[[Agent Harness]]", "resolved": "urn:visionflow:linked:agent-harness", "kind": "ResolvedLink"},
+    {"raw": "[[Terminal Coding Agents]]", "resolved": "urn:visionflow:linked:terminal-coding-agents", "kind": "ResolvedLink"},
+    {"raw": "[[Harness Configuration Packs]]", "resolved": "urn:visionflow:linked:harness-configuration-packs", "kind": "ResolvedLink"},
+    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
+    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
+    {"raw": "[[Autonomous Coding]]", "resolved": "urn:visionflow:linked:autonomous-coding", "kind": "StubLink"},
+    {"raw": "[[Plan-and-Execute Pattern]]", "resolved": "urn:visionflow:linked:plan-and-execute-pattern", "kind": "StubLink"},
+    {"raw": "[[ReAct Pattern]]", "resolved": "urn:visionflow:linked:re-act-pattern", "kind": "StubLink"},
+    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
+    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "StubLink"}
+  ]
+}
+```
+
+- ### Definition
+  - IDE Coding Agents are a specialised subclass of [[Agent Harness]] that embed [[Agentic AI]] capabilities directly inside integrated development environments — principally [[Visual Studio Code]] and JetBrains IDEs — as sidebar extensions or companion panels, granting developers an autonomous collaborator that operates within the same workspace where code is written, reviewed, and committed. Unlike [[Terminal Coding Agents]] that operate through command-line interfaces requiring the developer to switch contexts, IDE coding agents present their [[Tool Call Loop]], file-diff previews, terminal output, and cost transparency panels as native IDE panes, collapsing the feedback loop between intent and code change. The foundational execution model is a plan-then-act cycle formalised from the [[ReAct Pattern]] and [[Plan-and-Execute Pattern]]: in Plan mode the agent reads the repository, reasons about the task and proposes a strategy; in Act mode it executes that strategy through [[Function Calling]] and [[Tool Use]], invoking file-read, file-write, bash-execute, and browser-control tools in sequence, pausing at each action for explicit developer approval or proceeding autonomously under auto-approve settings. Connectivity to external services, CI pipelines, databases, and internal APIs is mediated through [[Model Context Protocol]] (MCP), which gives IDE coding agents access to a uniform, extensible tool registry without requiring bespoke integration code for each backend system. The agent maintains a running [[Context Window]] budget displayed to the developer, producing cost transparency that distinguishes IDE coding agents from opaque cloud-hosted coding assistants. [[Multi-Agent Collaboration]] modes — pioneered in Roo Code and carried forward in its successor Kilo Code — allow a single IDE session to spawn sub-agents with different specialised roles (architect, coder, reviewer, tester), coordinated through a shared workspace contract. Integration with [[Harness Configuration Packs]] such as GStack, Everything Claude Code, and GSD provides further role-based governance, structured workflows, and progressive-disclosure skill loading, turning the base IDE agent into a configurable virtual development team governed by [[CLAUDE.md]] session initialisation files.
+
+- ### Semantic Classification
+  - owl-class:: ai:IDECodingAgents
+  - owl-role:: ExecutableProtocol | ToolkitComponent | AgenticSystem
+  - owl-inferred:: ai:CodingAgent, ai:AgentHarness, ai:IDEExtension, ai:AuditableSystem
+  - belongs-to-domain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[SoftwareEngineeringDomain]]
+  - implemented-in-layer:: [[ApplicationLayer]], [[ToolingLayer]]
+
+- ### Relationships
+  - is-subclass-of:: [[Agent Harness]], [[Agentic AI]], [[Agent Frameworks]], [[Autonomous Coding]]
+  - has-part:: [[Tool Call Loop]], [[Plan-and-Execute Pattern]], [[Hook System]], [[Context Window]], [[Observability Stack]], [[Structured Output]], [[Agent Runtime]], [[Tool Use]]
+  - requires:: [[Large Language Model]], [[Model Context Protocol]], [[Function Calling]], [[Tool Use]], [[Agent Runtime]], [[Prompt Engineering]], [[Structured Output]]
+  - enables:: [[Autonomous Coding]], [[Browser Automation]], [[Computer Use]], [[Multi-Agent Collaboration]], [[Workflow Automation]], [[Code Review]], [[AI Agent Coordination]], [[Multi-Agent Orchestration Frameworks]]
+  - implements:: [[ReAct Pattern]], [[Plan-and-Execute Pattern]], [[AI Agent Coordination]], [[Chain-of-Thought]], [[Tree of Thoughts]]
+  - depends-on:: [[Context Window]], [[Prompt Engineering]], [[Structured Output]], [[Function Calling]], [[Large Language Model]], [[Hook System]]
+  - supports:: [[Multi-Agent Orchestration Frameworks]], [[Agent Evaluation Benchmarks]], [[Harness Configuration Packs]], [[Workflow Automation]], [[Software Engineering]]
+  - uses:: [[Model Context Protocol]], [[Hook System]], [[Structured Output]], [[Observability Stack]], [[Prompt Template]], [[Tool Registry]], [[Agent Runtime]]
+  - contrasts-with:: [[Terminal Coding Agents]], [[External AI Harness]], [[Internal AI Harness]], [[Coding Assistant]]
+  - related-to:: [[Harness Configuration Packs]], [[Terminal Coding Agents]], [[Agent Evaluation Benchmarks]], [[Multi-Agent Orchestration Frameworks]], [[Software Engineering]], [[Large Language Model]], [[Agentic AI]], [[Agent Frameworks]], [[Prompt Engineering]]
+  - standardized-by:: [[Model Context Protocol]], [[Agent Frameworks]], [[Anthropic Agent Skills]]
+
+- ### Content
+  - ## Compositional Relationships (Components)
+    ```
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:hasPart ai:ToolCallLoop))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:hasPart ai:PlanAndExecutePattern))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:hasPart ai:HookSystem))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:hasPart ai:ContextWindow))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:hasPart ai:ObservabilityStack))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:hasPart ai:ApprovalGate))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:hasPart ai:FileDiffPreview))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:hasPart ai:CostTransparencyPanel))
+    ```
+  - ## Dependency Relationships
+    ```
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:requires ai:ModelContextProtocol))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:requires ai:FunctionCalling))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:requires ai:ToolUse))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:requires ai:AgentRuntime))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:requires ai:PromptEngineering))
+    ```
+  - ## Capability Relationships
+    ```
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousCoding))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:enables ai:BrowserAutomation))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:enables ai:ComputerUse))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:enables ai:MultiAgentCollaboration))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:enables ai:WorkflowAutomation))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:enables ai:CodeReview))
+    ```
+  - ## Implementation Relationships
+    ```
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:implements ai:ReActPattern))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:implements ai:PlanAndExecutePattern))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:implements ai:AIAgentCoordination))
+    ```
+  - ## Reduction Relationships
+    ```
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:reducesTo ai:AgentHarness))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:reducesTo ai:CodingAssistant))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:reducesTo ai:IDEExtension))
+    ```
+  - ## Supports Relationships
+    ```
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:supports ai:MultiAgentOrchestrationFrameworks))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:supports ai:AgentEvaluationBenchmarks))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:supports ai:HarnessConfigurationPacks))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:supports ai:WorkflowAutomation))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:supports ai:SoftwareEngineering))
+    ```
+  - ## Uses Relationships
+    ```
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:uses ai:ModelContextProtocol))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:uses ai:HookSystem))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:uses ai:ToolRegistry))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:uses ai:AgentRuntime))
+    SubClassOf(ai:IDECodingAgents
+      ObjectSomeValuesFrom(ai:uses ai:PromptTemplate))
+    ```
+  - ## About
+    IDE Coding Agents represent the IDE-native branch of the broader [[Agent Harness]] taxonomy, distinguished from [[Terminal Coding Agents]] by their first-class integration into the graphical workspace where developers spend most of their time. Whereas terminal agents (Aider, Goose, opencode, Gemini CLI) operate through textual CLI interaction and require the developer to mentally bridge between terminal and editor, IDE coding agents present their reasoning, proposed edits, cost metrics, and approval dialogs inside the IDE sidebar — making the agent's planning and execution transparent without context-switching. This architectural choice has significant adoption consequences: Cline accumulated over five million VS Code Marketplace installs by mid-2026, becoming the fastest-growing AI open-source project in GitHub's 2025 Octoverse report with 58,000 GitHub stars, precisely because VS Code is where most professional developers already live. The gravitational pull of IDE-native agents reflects a deeper insight: the fewer the context switches a developer must perform, the lower the cognitive overhead of human-in-the-loop supervision, and therefore the higher the practical safety ceiling for autonomous agent actions. An agent that displays its proposed file-diff directly alongside the current file content can be reviewed in seconds; an agent that prints its proposed changes to a separate terminal requires the developer to re-establish context before evaluating the proposal.
+
+    The defining technical characteristic of this class is the plan-then-act loop with structured approval gates. In Plan mode, the [[Large Language Model]] reads the repository, reasons over the task specification, and produces a structured plan — typically a numbered sequence of file operations and shell commands — without yet executing anything. This phase is substantially cheaper in token terms than Act mode and gives the developer an auditable artefact to review, reject, or modify before execution begins. The plan itself is a first-class product of the IDE coding agent: it can be saved, shared across team members as a work-in-progress task specification, and revisited when a session is resumed after a break. In Act mode the agent serialises the plan into tool calls: file-read, file-write, bash-execute, browser-navigate and browser-screenshot (via the [[Computer Use]] abstraction), and [[Model Context Protocol]]-connected custom tools. Each tool call is mediated by the harness, which maintains approval-gate state (manual, semi-auto, or full-auto), displays file diffs before applying them, logs all actions to a session transcript, and exposes a running cost/token counter. The [[Model Context Protocol]] (MCP) layer acts as the extensibility spine: any external system — a CI API, a vector database, a code search index — can be exposed as an MCP server, and the IDE agent discovers and invokes it through a uniform [[JSON-RPC]] tool-call interface without bespoke integration code. This design separates the IDE coding agent from [[Internal AI Harness]] and [[External AI Harness]] architectures: rather than embedding model inference inside the application runtime or routing it through a service mesh, the IDE coding agent provides a human-supervised scaffolding layer that governs when and how model inference results are applied to the local filesystem and execution environment.
+
+    The class has undergone significant market consolidation since 2025. Roo Code, which forked Cline to add multi-agent orchestration modes and was valued for large-codebase handling, was archived in May 2026 after the founding team pivoted to a new product (Roomote). Its community and configuration format were absorbed by Kilo Code, an actively maintained fork that preserves `.roomodes` and `.roo/rules/` configuration files and extends support to JetBrains IDEs, CLI invocation, and a cloud agent mode. OpenHands (formerly OpenDevin), with 68,000 GitHub stars and $18.8M in Series A funding from Madrona, Menlo Ventures, and Fujitsu Ventures, occupies the enterprise segment — an autonomous agent platform deployable on-premise or as a managed service rather than a pure IDE extension. The claw-code-agent family, evaluated through the Claw-SWE-Bench benchmark (arxiv:2606.12344), applies a harness adapter layer over OpenClaw-style agents to achieve 73.4% Pass@1 on the 350-instance multilingual benchmark — demonstrating that adapter and harness design can be as decisive for benchmark performance as the underlying model. This finding has re-oriented the field's attention from model benchmarking toward harness benchmarking: the agent's ability to navigate a repository, extract relevant context, and construct a valid patch is shaped as much by the ACI (Agent-Computer Interface) tools it is given as by the model's raw reasoning capability.
+
+    The broader ecosystem of IDE coding agents connects upward to [[Multi-Agent Orchestration Frameworks]] — platforms such as AutoGen, CrewAI, and LangGraph that coordinate multiple specialised agents toward complex goals — and downward to [[Harness Configuration Packs]] that layer role-based personas, structured workflows, and [[Prompt Engineering]] disciplines over the base agent. The composability of these three layers (agent runtime, harness pack, orchestration framework) is what makes modern AI-assisted software development qualitatively different from earlier [[Coding Assistant]] tools such as GitHub Copilot autocomplete: the developer is no longer merely accepting or rejecting individual line completions but directing an autonomous teammate capable of multi-step planning, tool execution, error recovery, and progress reporting across a session that may span hours and thousands of lines of generated and modified code.
+
+  - ## Formal Description
+    An IDE coding agent can be formally described as a tuple A = (M, T, G, H, P) where:
+    - M is the [[Large Language Model]] backend, accessed via provider-abstracted API calls
+    - T is the typed tool set: T = {file-read, file-write, bash-execute, browser-navigate, browser-screenshot, mcp-call(server, tool, args)}
+    - G is the approval-gate state machine: G = {MANUAL, SEMI-AUTO, AUTO} with per-tool-type override capability
+    - H is the session history: a sequence of (role, content, tool_calls, tool_results) tuples maintained in the [[Context Window]]
+    - P is the project context: CLAUDE.md contents, loaded skill descriptions, and active [[Model Context Protocol]] server capabilities
+
+    The tool-call loop executes as: given H and P, invoke M to produce a response R; if R contains tool calls, for each call c in R.tool_calls: (1) present c to approval gate G; (2) if approved, dispatch c to the appropriate handler in T; (3) append result to H; then re-invoke M with updated H. Loop terminates when R contains no tool calls (task complete) or M emits an explicit stop token. The cost counter accumulates tokens across all M invocations in the session; the session transcript logger writes each (c, result, gate_decision, timestamp) tuple to a JSONL audit log. The [[Context Window]] manager monitors H length in tokens; when approaching the model's context limit, it applies a summarisation pass over older messages or prunes tool results below a recency threshold, preserving the task specification, current file context, and the most recent tool-call chain.
+
+  - ## Major Variants
+    - **Cline (Apache 2.0, 58K stars, 5M installs)**: The dominant open-source VS Code IDE coding agent; authored by Saoud Rizwan and Nik Pash; supports 30+ LLM providers via API key injection; features plan/act mode separation, diff-before-apply, running cost counter, and MCP client; extensible via CLAUDE.md and slash commands. Rated fastest-growing AI open-source project in GitHub Octoverse 2025.
+    - **Kilo Code (MIT, actively maintained)**: The community successor to Roo Code (archived May 2026); preserves `.roomodes` and `.roo/rules/` configuration files; adds JetBrains IDE support, CLI mode, and cloud agent execution; designed as a migration-compatible drop-in replacement for existing Roo Code installations with a published migration guide.
+    - **OpenHands / OpenDevin (MIT, 68K stars, $18.8M Series A)**: Enterprise-grade autonomous agent platform; runs in a Docker-sandboxed container rather than directly on the host filesystem; provides web UI and REST API for task submission and monitoring; supports on-premise deployment or managed service; integrates with GitHub for issue-driven task ingestion.
+    - **claw-code-agent family**: A benchmark-defined category of harness-adapter agents evaluated on Claw-SWE-Bench (arxiv:2606.12344); the "claw" abstraction specifies a standardised prompt format, workspace contract, patch-extraction procedure, and evaluator that makes heterogeneous agent runtimes comparable under fair conditions. Agents with a full claw adapter achieve 73.4% Pass@1 vs. 19.1% with a minimal adapter on the same GLM 5.1 backbone, demonstrating the decisive impact of harness design.
+    - **GitHub Copilot Coding Agent (GA May 2025)**: Closed-source enterprise IDE coding agent from Microsoft/GitHub; integrated directly into GitHub.com, VS Code, and Visual Studio; operates on pull requests and issues with GitHub Actions as the execution environment; differs from open-source alternatives in using GitHub-managed compute rather than developer-supplied API keys.
+
+  - ## Components / Architecture
+    - **Sidebar Extension Host**: Runs as a VS Code extension (TypeScript/Node.js), managing the sidebar panel, approval dialog, diff viewer, and cost display; communicates with the agent process via the Extension Host API. The sidebar panel renders the task specification, plan steps, tool call status, file diffs, and cost/token summary in a scrollable activity pane adjacent to the editor, enabling the developer to review agent actions without switching windows.
+    - **LLM Provider Abstraction**: Supports 30+ inference backends (Anthropic, OpenAI, OpenRouter, Ollama, Azure OpenAI, AWS Bedrock, Google Vertex) behind a single provider interface; user supplies their own API key for direct billing transparency; provider configuration is stored in VS Code settings and never transmitted outside the developer's own API gateway. This architecture gives IDE coding agents a decisive cost-transparency advantage over SaaS coding tools with opaque per-seat pricing.
+    - **Tool Call Loop**: The core execution engine: serialises the model's tool-call response into typed tool invocations, dispatches them to the appropriate handler (filesystem, bash, browser, MCP), captures output, appends to conversation history, and re-invokes the model until the agent emits a completion signal or the [[Context Window]] budget is exhausted. The loop is synchronous within a task but can be suspended and resumed across IDE sessions by serialising the history to disk.
+    - **Approval Gate State Machine**: Maintains a per-session approval mode (MANUAL — every action requires confirmation; SEMI-AUTO — read operations auto-approved, write/exec require confirmation; AUTO — all actions proceed without human confirmation). State is persisted across sub-tasks within a session. Fine-grained overrides allow, for example, AUTO on file-read but MANUAL on bash-execute, giving developers precise control over the autonomy boundary without interrupting read-heavy exploration phases.
+    - **MCP Client**: Implements the [[Model Context Protocol]] client role, discovering registered MCP servers from `~/.claude/mcp.json` or project-level `.mcp.json`, negotiating capabilities, and routing tool calls to the appropriate server. The MCP abstraction allows CI pipeline tools, vector search indices, internal APIs, and database query interfaces to appear as first-class tools in the agent's tool set without requiring Cline or Kilo Code to implement bespoke integrations for each.
+    - **Context Window Manager**: Tracks token consumption across all messages, tool results, and system prompts; applies summarisation or pruning strategies when approaching the model's context limit; exposes usage metrics in the sidebar panel as a real-time gauge. Context rot — the quality degradation caused by stale content accumulating in the [[Context Window]] — is addressed through configurable eviction policies that prioritise recent tool results, the task specification, and the current file context over older exchanges.
+    - **Multi-Agent Coordinator** (Kilo Code / Roo-family): Spawns sub-agent instances with specialised modes (Architect, Code, Test, Debug, Review), routes tasks between them, and merges results into the primary session. Each sub-agent has its own [[Context Window]] and tool-call budget, communicating with the orchestrator through a shared workspace filesystem. Task routing is governed by [[Harness Configuration Packs]] or by the orchestrator model's own classification of sub-task type.
+    - **Session Transcript Logger**: Writes a structured JSONL log of every plan step, tool call, result, approval decision, and model response; serves as the audit trail for cost reconciliation and post-hoc analysis. The transcript format is compatible with the Claw-SWE-Bench evaluator's trace ingestion, enabling offline replay and harness quality assessment against the benchmark's 350-instance test suite.
+    - **Browser/Computer-Use Bridge**: Integrates with headless Chromium (via Playwright or direct CDP) to support browser navigation, screenshot capture, form filling, and element interaction as [[Computer Use]] actions within the agent loop. This enables IDE coding agents to autonomously verify web application behaviour, fill in login forms to access protected APIs during development, and capture screenshots of rendered UI components for use as task context in the next reasoning step.
+    - **Diff Preview and Apply Engine**: Renders proposed file changes as unified diffs in the IDE's native diff viewer before applying them to disk. The preview shows original and modified content side-by-side with syntax highlighting, enabling developers to verify correctness at the character level before approving. The apply engine uses the VS Code edit API to make changes atomically, respecting open-file buffers and unsaved editor state.
+
+  - ## Use Cases / Major Families
+    - **Greenfield Feature Implementation**: Developer provides a task description; the agent generates a plan, scaffolds files, writes implementation code, and runs tests — all within the IDE, with diffs reviewed at each step. The plan-mode phase is particularly valuable here: the agent proposes a file structure and dependency graph before writing any code, allowing the developer to redirect the architecture before costs accumulate. Typical sessions for a medium-complexity feature (5-10 files, 300-600 lines) consume 50,000-150,000 tokens across a 30-60 minute session using Claude Sonnet tier models.
+    - **Bug Investigation and Fix**: Agent reads error logs or test failures, traces code paths to identify root causes, proposes patches, and validates against the test suite, surfacing explanations in the sidebar panel. The agent's ability to invoke bash-execute to run the failing test and capture its output directly into the [[Context Window]] closes the debugging loop that previously required manual copy-paste between terminal and chat. On SWE-bench tasks, which operationalise exactly this use case, top IDE coding agents reach 73-81% Pass@1 in 2026 with full harness adapters.
+    - **Large-Scale Refactoring**: Using multi-agent coordination (Kilo Code's architect + coder modes), IDE agents decompose refactoring tasks across multiple files, apply changes in dependency order, and run CI checks via MCP-connected pipeline tools. The architect sub-agent first maps the dependency graph and proposes a migration sequence; the coder sub-agent executes individual file transformations in topological order; a review sub-agent checks each transformed file against the style guide. This three-mode flow, enabled by [[Multi-Agent Orchestration Frameworks]], can compress week-long refactoring efforts to hours for experienced practitioners.
+    - **Automated Code Review**: Agent reads PR diffs, applies style guides and security rules from project CLAUDE.md, and generates structured review comments — integrating with [[Agent Evaluation Benchmarks]] such as SWE-bench to validate fix quality. When combined with an OWASP-aligned [[Harness Configuration Packs]] security reviewer subagent (as in Everything Claude Code), the IDE agent can flag potential injection vectors, insecure deserialization patterns, and API key leakage before a human reviewer sees the PR.
+    - **Documentation Generation**: Agent synthesises code analysis, architecture diagrams, and API surface descriptions into Markdown documentation, previewed in the IDE before committing. By reading all public interfaces in a module and cross-referencing with existing documentation and test files, the agent produces documentation that is both accurate and consistent with actual implementation, reducing the gap between code and documentation that accumulates over time in maintained projects.
+    - **Multi-Language Repository Navigation**: Kilo Code's JetBrains support and OpenHands' containerised sandbox enable agent-assisted development in Java, Kotlin, Python, Rust, and Go projects with appropriate toolchain integration. The MCP-mediated tool abstraction means that language-specific tools (cargo check, mvn test, go build) can be registered as MCP servers and invoked by the agent loop without requiring IDE-specific integration code for each language and build system.
+    - **Legacy Code Modernisation**: UK industrial context (Sheffield, Leeds, Newcastle) increasingly deploys IDE coding agents for modernising legacy Java EE, COBOL-adjacent, and VB.NET codebases. The agent's ability to read the entire legacy codebase into [[Context Window]], understand its implicit architecture from test coverage and naming conventions, and propose a migration plan before executing any changes makes IDE coding agents particularly well-suited to this use case, which previously required specialist consultants charging premium rates.
+    - **Pair Programming Augmentation**: Developer and IDE coding agent work simultaneously on the same feature branch; the developer steers at architectural and requirements level while the agent handles boilerplate, test stubs, and mechanical transformations. The approval-gate model provides a natural mechanism for the developer to correct the agent's direction mid-session without losing the history of what has already been applied.
+
+  - ## Academic Context
+    The intellectual lineage of IDE coding agents passes through several research milestones. The [[ReAct Pattern]] (Yao et al., 2023) formalised the interleaving of reasoning traces and action execution that underlies the plan-then-act loop; the key insight was that a model that narrates its reasoning before each action produces better action sequences than one that acts directly, because the narration serves as a scratchpad that corrects errors before they propagate. SWE-agent (Yang et al., 2024, NeurIPS 2024) introduced the Agent-Computer Interface (ACI) abstraction — purpose-built tools for repository navigation, file editing, and code search — demonstrating that ACI design quality was as important as model capability for resolving GitHub issues; SWE-agent's specialised file editor (with syntax error checking and line-number context) significantly outperformed a vanilla shell interface given to the same model. The SWE-bench benchmark (Jimenez et al., 2024, ICLR 2024) established the primary evaluation protocol for this class: given a real GitHub issue and the full repository, the agent must produce a patch that passes the repository's existing test suite. SWE-bench Verified (a curated subset with human-validated solvability) has become the de facto leaderboard for IDE coding agents.
+
+    IDE-specific concerns including human-in-the-loop approval gates, context-window cost management, and multi-agent coordination emerged from engineering practice rather than academic literature, with Cline's open-source codebase and the anthropic/skills repository serving as the primary reference implementations. The UTBoost study (arxiv:2506.09289, 2025) provided rigorous evaluation methodology for coding agents on SWE-bench, revealing significant performance gaps between benchmark-trained evaluations and out-of-distribution instances. SWE-bench Pro (arxiv:2509.16941, 2025) extended the benchmark to long-horizon tasks requiring hours to days for professional engineers, finding that even top-performing agents remain below 45% Pass@1, revealing a persistent capability gap for complex, multi-session engineering tasks. The TDFlow paper (arxiv:2510.23761, 2025) and TDAD paper (arxiv:2603.17973, 2026) formalised test-driven development as an agentic workflow, demonstrating that agents constrained to write tests before implementation produce fewer regressions — a pattern now encoded in [[Harness Configuration Packs]] such as Everything Claude Code's tdd-guide instinct.
+
+    Claw-SWE-Bench (arxiv:2606.12344, 2026) is the first benchmark specifically designed to compare heterogeneous IDE harness adapters under controlled conditions, addressing a gap that earlier SWE-bench evaluations did not address: prior leaderboard comparisons mixed agents with different harness designs, making it impossible to attribute performance differences to model capability vs. harness quality. The Claw protocol standardises prompt format, runtime budget, workspace contract, patch extraction procedure, and evaluator, enabling fair comparison across 350 GitHub issue-resolution instances in 8 programming languages from 43 repositories. Research on coding-agent adoption on GitHub (Dabi et al., arxiv:2601.18341, 2026) found that between 22.2% and 28.7% of 128,018 GitHub projects showed traces of coding-agent use by February 2026, with adoption growing steeply from March to October 2025 and showing no sign of saturation — the first large-scale empirical characterisation of how this technology is diffusing through the software engineering profession. Anthropic's research on AI assistance and coding-skill formation (2026, drawing on ~400,000 sessions from ~235,000 users between October 2025 and April 2026) found that domain expertise in the problem area — not coding background — was the primary predictor of effective AI-assisted development, suggesting that IDE coding agents shift the productivity bottleneck from code-writing skill to problem-specification skill.
+
+  - ## Current Landscape (2026)
+    By mid-2026 the IDE coding agent market has bifurcated between open-source VS Code extensions and managed enterprise platforms. Cline (58K GitHub stars, 5M installs, Apache 2.0) and Kilo Code (Cline's Roo lineage successor, supporting VS Code, JetBrains, CLI, and Cloud) dominate the self-hosted open-source segment, distinguished by provider flexibility, approval-gate transparency, and CLAUDE.md configuration composability. OpenHands occupies the enterprise-managed segment following its $18.8M Series A from Madrona, Menlo Ventures, and Fujitsu Ventures, offering a sandboxed, Docker-containerised agent platform that can be deployed on-premise or consumed as a managed service — the preferred deployment model for organisations with data residency requirements or regulated-industry compliance obligations.
+
+    On [[Agent Evaluation Benchmarks]], the landscape as of mid-2026 shows Claude Opus 4.6 and Gemini 3.1 Pro leading SWE-bench Verified at approximately 80-81% Pass@1 with optimised harness adapters; the Claw-SWE-Bench adapter protocol (arxiv:2606.12344) demonstrated that the same GLM 5.1 backbone scores 73.4% with a full adapter vs. 19.1% with a minimal adapter on 350 multilingual instances, quantifying the harness contribution to benchmark performance independently of model capability. Mini-SWE-Agent achieves 65% on SWE-bench Verified in approximately 100 lines of Python, showing that compact, well-designed ACI implementations can approach frontier performance. SWE-bench Pro (long-horizon tasks requiring professional engineer effort of hours to days) remains below 45%, revealing the boundary of current capability.
+
+    The Claw-SWE-Bench adapter protocol is emerging as the standard fairness layer for benchmarking heterogeneous IDE harnesses. Harness.io independently achieved a top-4 SWE-bench Verified ranking through autonomous code fixing, representing the first enterprise CI/CD vendor to reach leaderboard prominence through IDE agent integration. Anthropic's Agent Skills open standard (launched December 2025, hot-reload added January 2026 in Claude Code 2.1.0) provides the SKILL.md specification that any compliant IDE agent can consume, beginning to reduce the lock-in of [[Harness Configuration Packs]] to specific agent runtimes. On the closed-source side, Cursor and GitHub Copilot with Coding Agent (the latter launched in general availability in May 2025) compete for enterprise seat licensing; 2026 comparison analyses consistently identify Cline's LLM provider flexibility, approval-gate transparency, and open-source auditability as differentiators that matter to security-conscious enterprise procurement.
+
+    Global coding-agent adoption data (Dabi et al., arxiv:2601.18341) found 22-28% of 128,018 GitHub projects showed agent use by February 2026, with adoption initiated mainly between March and October 2025 and growing across all project types, programming languages, and organisation sizes. IDE coding agents account for a substantial portion of this adoption, particularly in JavaScript, TypeScript, and Python repositories where VS Code is the dominant editor. The study found that agent-driven contributions are substantially larger than human contributions on average — agents introduce more lines per commit — consistent with the plan-execute model where agents scaffold complete implementations rather than incremental edits.
+
+  - ## UK Context
+    UK adoption of IDE coding agents is tracked through the Alan Turing Institute's collaboration with the University of Edinburgh (Bayes Centre), UCL, and the University of Cambridge — the five founding partners of the Institute (Cambridge, Edinburgh, Oxford, UCL, Warwick) provide the primary academic infrastructure for AI adoption research in the UK. The Institute's "Doing AI Differently" initiative — a joint programme with AHRC-UKRI — explicitly examines the societal dimensions of agentic software development tools, including questions of code ownership, liability for AI-generated defects, and the impact on software engineering career pathways. These questions are acutely relevant to IDE coding agents, which — unlike passive autocomplete tools — can commit code, run tests, and modify package manifests without direct human authorship of each line.
+
+    Adoption data from the GitHub agentic coding study (arxiv:2601.18341) is consistent with UK open-source project participation rates: UK institutions appear in the contributor lists of Cline and OpenHands, reflecting the deep Python and TypeScript engineering communities at Edinburgh, Cambridge, and Manchester. The University of Edinburgh's School of Informatics, with its world-leading natural language processing and software engineering research groups, is particularly active in evaluating IDE coding agent capabilities and limitations through formal benchmarking studies. UCL's Department of Computer Science contributes through human-computer interaction research on approval-gate usability and cognitive overhead of agentic supervision.
+
+    Northern English industrial context is directly relevant to IDE coding agent adoption: Sheffield's advanced manufacturing software companies (steel, aerospace, medical devices) are piloting IDE coding agents for legacy C++ and FORTRAN-adjacent modernisation; Leeds' fintech cluster (dating from the city's financial services heritage) is deploying OpenHands for regulatory-compliance code review; Newcastle's digital sector, growing through the city's investment in tech infrastructure, hosts startups that have adopted Cline as a standard part of their engineering stack from day one. The Northern Powerhouse investment programme and DSIT's UK AI Strategy (2022, refreshed 2025) have both cited software engineering productivity as a key economic multiplier, creating policy incentives for enterprise IDE coding agent adoption that extend beyond individual developer preference.
+
+    UK-specific regulatory considerations — DSIT's guidance on AI in software supply chains (2025), ICO guidance on AI-generated code provenance, and the Financial Conduct Authority's guidance on AI in financial services software — all apply to enterprise IDE agent deployments. The approval-gate audit log (session JSONL transcript) that IDE coding agents produce satisfies many of these provenance requirements out of the box, making the IDE coding agent model — with its explicit human-in-the-loop approval checkpoints — better aligned with UK regulatory expectations than fully autonomous coding platforms that apply patches without developer sign-off.
+
+  - ## Future Directions (2026-2030)
+    - **Persistent cross-session memory**: Agents that maintain semantic memory of codebase architecture, past debugging decisions, and developer preferences across sessions, reducing per-task re-orientation overhead. Memory architectures in this vein — similar to MemGPT (Packer et al., 2023) — will allow IDE coding agents to answer questions such as "why did we change this interface three sprints ago?" by querying their own session transcript archive rather than requiring the developer to reconstruct context.
+    - **Fine-grained cost attribution**: Per-developer, per-feature billing breakdowns surfaced in the IDE, enabling engineering managers to audit AI-assisted development costs at sprint granularity. Integration with project management tools (Jira, Linear, GitHub Projects) via [[Model Context Protocol]] servers will enable automatic tagging of token costs to specific epics and user stories, closing the feedback loop between AI investment and delivered value.
+    - **Formal verification integration**: IDE agents invoking theorem provers (Lean 4, Coq, Isabelle) or model checkers (TLA+, CBMC) as [[Model Context Protocol]] tools to produce correctness certificates alongside generated patches. For safety-critical domains (avionics, medical devices, financial clearing systems) already subject to DO-178C or IEC 62304 certification requirements, formal verification integration would enable continuous correctness checking as part of the agent's Act cycle.
+    - **Automated regression testing**: Agents that generate and run regression test suites as part of every Act cycle, reducing the burden on approval-gate reviewers. The TDAD pattern (arxiv:2603.17973) — test-driven agentic development with graph-based impact analysis — provides the theoretical foundation for this capability: the agent maintains an internal dependency graph of which tests cover which code paths and runs only the affected subset after each file modification.
+    - **Collaborative multi-developer agents**: Shared agent sessions where two developers can observe, steer, and override the same agent instance, enabling pair-programming workflows with an AI third participant. The approval-gate model is a natural mechanism for multi-party steering: both developers can propose plan modifications, and the agent integrates the reconciled specification before proceeding to Act mode. This capability requires persistent, shareable session state — currently being developed by Kilo Code's cloud agent mode.
+    - **IDE-agnostic harness protocol**: Extension of the Claw adapter protocol to define a portable harness ABI callable from VS Code, JetBrains, Emacs LSP, and Neovim — converging the fragmented extension ecosystem onto a common runtime contract. The SKILL.md open standard is a partial step in this direction at the configuration layer; a full ABI would need to standardise the tool-call dispatch interface, the approval-gate interaction model, and the session transcript format across runtimes.
+    - **Edge deployment**: Small models (3B-7B) running locally on developer workstations for offline or air-gapped environments, with the IDE agent routing requests between local and cloud endpoints based on task complexity and latency budget. Quantised models (4-bit, 8-bit) running via Ollama or llama.cpp can already serve as the [[Large Language Model]] backend in Cline's provider abstraction, enabling fully offline IDE coding agent sessions with reduced but useful capability.
+    - **Agentic pull request workflows**: IDE coding agents that autonomously manage the full GitHub PR lifecycle — branch creation, commit, push, PR description, responding to reviewer comments, and merging after CI passes — with only high-level task specification and final-merge approval required from the developer. GitHub Copilot Coding Agent's architecture (Actions-based execution, PR-centric workflow) is the early prototype for this pattern; open-source equivalents will follow as the tooling matures.
+
+  - ## Key Terminology
+    - **Plan mode**: Agent reads and reasons without executing actions; produces a strategy for developer review before Act begins. Plan mode invocations are cheaper in tokens than Act mode invocations because no file write or bash execute tool results are added to the conversation history; the mode switch is explicit in Cline's UI and implicit in Claude Code's task planner.
+    - **Act mode**: Agent executes the plan through sequential tool calls, with configurable approval gates. Each tool call in Act mode appends both the call and its result to the [[Context Window]] history, consuming tokens proportional to file size for file-read operations and output length for bash-execute operations.
+    - **Approval gate**: A decision point where the harness pauses execution and presents the proposed action to the developer for confirmation before proceeding. Approval gates are the primary mechanism through which IDE coding agents maintain human-in-the-loop oversight; their granularity (per-tool-type, per-file-pattern, per-command-class) determines the practical safety ceiling for autonomous operation.
+    - **Auto-approve**: An approval gate setting where the harness proceeds without waiting for human confirmation; appropriate for low-risk read-only operations or trusted automated pipelines. Enabling auto-approve for all tool types converts the IDE coding agent into a fully autonomous agent; most practitioners start with MANUAL and progressively expand auto-approve scope as they develop trust in the agent's judgment for specific operation types.
+    - **MCP server**: A [[Model Context Protocol]] process that exposes a named set of tools to the IDE agent via JSON-RPC; can be a local process (stdio transport) or remote endpoint (SSE transport). MCP servers extend the IDE agent's effective tool set without requiring changes to the agent runtime, enabling integrations with Git, CI/CD, vector databases, internal APIs, and external services.
+    - **Context rot**: Degradation in agent response quality as the [[Context Window]] fills with stale, irrelevant, or contradictory content from earlier in the session. Context rot is addressed by [[Harness Configuration Packs]] (particularly GSD) through context eviction policies and session handoff rituals; by the IDE agent's own context manager through summarisation and pruning; and by the developer through explicit session restarts with distilled task specifications.
+    - **Workspace contract**: The agreed set of filesystem paths, tool names, permission scopes, and output formats within which an IDE agent is authorised to operate for a given session. The workspace contract is typically encoded in CLAUDE.md and enforced by the harness's PreToolUse hooks.
+    - **claw-code-agent**: A class of IDE harness adapters — named after the Claw-SWE-Bench benchmark (arxiv:2606.12344) — that wrap existing agent runtimes with a standardised prompt format, workspace contract, patch-extraction procedure, and evaluator interface, enabling fair cross-harness comparison under controlled benchmark conditions.
+    - **ACI (Agent-Computer Interface)**: The set of purpose-built tools through which a coding agent interacts with a repository and execution environment; defined by Yang et al. (2024) in the SWE-agent paper. ACI design quality — the expressiveness, error-checking, and context-efficiency of the tools provided to the agent — is as important a determinant of benchmark performance as the underlying model capability.
+    - **CLAUDE.md**: A Markdown initialisation file read by Claude Code and Cline at session start; encodes project-specific rules, tool permissions, custom slash commands, [[Model Context Protocol]] server registrations, and workflow preferences into the agent's operating context. Hierarchically merged: user-level `~/.claude/CLAUDE.md` overridden by workspace-level `CLAUDE.md`, overridden by project-level `project/CLAUDE.md`.
+    - **Session transcript**: The JSONL-formatted log of all plan steps, tool calls, tool results, approval decisions, and model responses within a single agent session; serves as the audit trail for cost reconciliation, post-hoc analysis, and Claw-SWE-Bench evaluator ingestion.
+    - **Provider abstraction**: The interface layer in Cline and Kilo Code that normalises calls to 30+ different [[Large Language Model]] inference backends (Anthropic, OpenAI, OpenRouter, Ollama, Bedrock, Vertex) into a single tool-call API; enables model switching without changing agent behaviour or harness configuration.
+    - **Mode** (Kilo Code / Roo-family): A named sub-agent persona with a specialised system prompt, restricted tool set, and scoped task focus; modes include Architect (plan-only, read-only), Code (full tool access), Test (test-execution focus), Debug (error-trace focus), and Review (diff-analysis focus). The orchestrating agent selects or spawns the appropriate mode for each sub-task in a [[Multi-Agent Orchestration Frameworks]] workflow.
+
+  - ## Security, Safety and Governance
+    IDE coding agents introduce a novel threat surface that differs qualitatively from earlier developer tools. Because the agent can read any file accessible to the developer's user account and execute arbitrary shell commands (subject to approval gates), a compromised [[Large Language Model]] response — or a maliciously crafted repository file that the agent reads as context — can result in data exfiltration, credential theft, or destructive filesystem operations. This threat class, sometimes called "prompt injection via repository content," is particularly acute for IDE coding agents because they read large swaths of project files into the [[Context Window]] as context-gathering steps before producing any visible output. The [[Hook System]] provides the primary defence: PreToolUse hooks can inspect proposed bash commands against a blocklist of dangerous patterns (e.g., `rm -rf`, `curl | bash`, `git push --force main`) and veto them before execution regardless of the model's instruction. [[Harness Configuration Packs]] that include security-review subagents (as in Everything Claude Code's OWASP-aligned security-reviewer instinct) provide a second layer by analysing generated code for common vulnerability patterns before it is applied to disk.
+
+    The session [[Observability Stack]] — the JSONL transcript, cost counter, and approval log — provides the audit trail that governance frameworks require. For organisations subject to ISO 27001, SOC 2, or UK Cyber Essentials certification, the transcript log is evidence of human-authorised operation for every file change and shell execution made during an agent session. The approval-gate model is explicitly aligned with the "human in the loop" requirement that appears in EU AI Act Article 14 (human oversight for high-risk AI systems) and in DSIT's UK AI Safety guidance for agentic systems (2025). Enterprise deployments of OpenHands in regulated industries (financial services, healthcare, defence contracting) typically combine its Docker sandbox isolation, network egress controls, and audit logging to satisfy data-handling requirements that self-hosted VS Code extensions cannot address without additional hardening.
+
+    Key governance questions that remain open in 2026 include: (1) Who owns the IP of AI-generated code when IDE coding agents produce the majority of lines in a commit? UK law does not assign copyright to AI systems; Anthropic's terms of service assign output ownership to the user; but enterprise procurement frameworks often have conflicting boilerplate. (2) How should automated AI-generated commits be distinguished from human commits in version control history for audit purposes? The TDAD paper (arxiv:2603.17973) proposes a git-trailer convention; no formal standard has been adopted. (3) How should the approval-gate log be retained and what metadata format should it use? These governance questions are increasingly discussed in the Alan Turing Institute's "Doing AI Differently" policy work and in the Software Engineering Institute's technical notes on agentic software development.
+
+  - ## Comparative Analysis: IDE vs Terminal Coding Agents
+    The distinction between [[IDE Coding Agents]] and [[Terminal Coding Agents]] is more than a UX choice; it reflects different assumptions about the developer's supervision bandwidth and the appropriate granularity of human oversight. Terminal coding agents (Claude Code, opencode, Gemini CLI, Aider, Goose, Codex CLI) present their outputs as text streams in the terminal and require the developer to context-switch between the terminal and the editor to review proposed changes. This model is efficient when the developer is highly experienced with the codebase and can evaluate proposals quickly by reading unified diffs; it is inefficient when the project is unfamiliar or when the changes span many files that must be viewed together in their rendered context.
+
+    IDE coding agents eliminate the context-switch by co-locating the agent's reasoning, proposed edits, and approval interface within the same graphical environment where the developer views the actual codebase. This co-location also enables richer tool integration: diff viewing with syntax highlighting, inline error markers from language servers, and browser preview panels for web application changes are all available in the IDE extension host environment and would require significant additional tooling to replicate in a pure terminal interface. The price of this richness is dependency on the IDE's extension infrastructure: IDE coding agents are tightly coupled to VS Code's or JetBrains' extension APIs, limiting portability compared to terminal agents that run in any environment with a shell.
+
+    [[Harness Configuration Packs]] blur this distinction: packs like wshobson/agents explicitly support both Claude Code (terminal) and Cline (IDE), and the SKILL.md open standard is designed to be agent-agnostic. Some practitioners run IDE and terminal agents in parallel — the IDE agent for interactive development sessions with frequent approval-gate interaction, and the terminal agent for longer autonomous runs in a background terminal pane where the developer checks in periodically. The Claw-SWE-Bench benchmark explicitly avoids this distinction by standardising on a workspace-contract interface that heterogeneous agents can implement regardless of whether they run as IDE extensions or terminal processes.
+
+  - ## Integration with Multi-Agent Orchestration
+    IDE coding agents participate in [[Multi-Agent Orchestration Frameworks]] both as orchestrators and as workers. In the orchestrator role, an IDE coding agent in Kilo Code's Architect mode decomposes a complex task into sub-tasks and spawns specialised sub-agent instances (Code, Test, Review) to execute them, collecting their outputs and synthesising a final result. In the worker role, an IDE coding agent is spawned as a sub-process by an external orchestration framework (AutoGen, CrewAI, or a custom LangGraph workflow) and receives task specifications and context through [[Model Context Protocol]] tool calls or filesystem handoff conventions. The [[Agent Event Stream]] architecture, in which agents communicate through structured event sequences rather than direct API calls, is particularly compatible with the IDE coding agent's JSONL transcript format — each agent action is already structured as a discrete, timestamped event suitable for ingestion by a stream processor.
+
+    The coordination protocols used between IDE coding agents and external orchestrators in 2026 are largely informal: filesystem handoff (writing intermediate results to agreed paths), [[Model Context Protocol]] tool calls (the orchestrator exposes a task-submission tool that the worker agent calls to report progress), or direct process spawning through the IDE's extension host API. The [[Agent Communication Protocol]] (ACP, IBM BeeAI) and [[Agent-to-Agent Protocol]] (A2A, Google) are beginning to provide more formal inter-agent communication standards, but IDE coding agent support for these protocols is nascent. The most mature multi-agent pattern in 2026 is the three-role orchestration within a single Kilo Code session (Architect + Code + Review), which avoids inter-process communication complexity by running all sub-agents within the same IDE extension host process and the same shared filesystem workspace.
+
+    The relationship between IDE coding agents and [[Agent Execution Sandboxes]] is a design axis that distinguishes Cline/Kilo Code (direct host filesystem access with approval-gate safety) from OpenHands (Docker-containerised sandbox with network egress controls). The sandbox approach provides stronger safety guarantees for untrusted input — an agent running in a container cannot damage the host filesystem even if it executes a malicious command — but introduces friction through filesystem path translation and container restart overhead. For development workflows where the developer maintains full visibility through approval gates, the direct-access model's lower latency and simpler debugging experience is typically preferred; for fully autonomous or partially unsupervised runs, sandbox isolation is the appropriate safety mechanism.
+
+  - ## Evaluation and Benchmarking
+    The primary benchmark for IDE coding agents is [[Agent Evaluation Benchmarks]] including SWE-bench Verified, SWE-bench Multilingual, and the newly introduced Claw-SWE-Bench (arxiv:2606.12344). SWE-bench Verified measures the percentage of 500 human-verified GitHub issues that the agent can resolve with a passing patch (Pass@1). As of mid-2026, top-performing agents achieve 80-81% on SWE-bench Verified with optimised harness adapters and frontier models (Claude Opus 4.6, Gemini 3.1 Pro). The Claw-SWE-Bench benchmark addresses the harness comparison problem by fixing the model and varying only the adapter design: with a minimal direct-diff adapter and GLM 5.1, the Pass@1 is 19.1%; with a full adapter implementing the claw-code-agent interface specification, it reaches 73.4% on the 350-instance multilingual benchmark. Claw-SWE-Bench Lite (80 instances) provides a faster validation track for iterating on harness designs without the computational budget of the full benchmark.
+
+    Secondary evaluation dimensions that SWE-bench does not address include: cost efficiency (token count per resolved issue, directly observable through the IDE agent's cost counter), human oversight overhead (time spent in approval-gate interactions per task), context window utilisation efficiency (what fraction of the context is genuinely relevant to the current task step), and multi-turn robustness (does agent quality degrade over a 4-hour session as context fills?). These dimensions are measured informally by practitioners and communicated through community benchmarking posts and comparison blogs (Totalum, Qodo, Artificial Analysis, Morphllm) rather than through formal academic protocols, representing a significant gap in the [[Agent Evaluation Benchmarks]] ecosystem for this class.
+
+    The "Promises, Perils, and (Timely) Heuristics for Mining Coding Agent Activity" paper (Dabi et al., arxiv:2601.18345, 2026) complements the usage data paper (arxiv:2601.18341) by characterising the methodological challenges of studying coding agent activity at scale: agent commits are identified through heuristics (comment patterns, metadata, timing correlations) that have known false-positive and false-negative rates, and mining results should be interpreted with appropriate uncertainty bounds. This methodological work is important for policy-makers and researchers attempting to quantify the economic impact of IDE coding agents from public version-control data.
+
+  - ## Developer Productivity Impact
+    The most directly observable productivity impact of IDE coding agents is the acceleration of implementation speed for mechanical tasks: boilerplate generation, test stub creation, configuration file scaffolding, and type-annotation passes are tasks that previously consumed significant developer time but offered little learning value. Anthropic's research (2026) on coding skill formation found that developers using Claude Code intensively for 6+ months showed reduced performance on isolated coding tasks when the agent was removed — an effect the authors interpret as skill atrophy in the mechanical dimensions of coding — but improved performance on system design and problem specification tasks, consistent with the hypothesis that IDE coding agents shift the productivity bottleneck from code-writing to problem-understanding.
+
+    Community benchmarking data from GStack's creator Garry Tan and from Everything Claude Code adopters reports 5-10x throughput increases for well-defined, bounded implementation tasks, with the multiplier dropping to 2-3x for exploratory or architecturally ambiguous tasks where the agent requires frequent human redirection. The plan-mode / act-mode separation is particularly effective for the latter: the plan-mode artefact forces the developer to make implicit architectural decisions explicit before the agent expends tokens on implementation, front-loading the decision-making overhead that would otherwise be distributed across many approval-gate interactions. The key limitation is that productivity gains are highly sensitive to task specification quality: a vague or ambiguous task specification leads to plan-mode outputs that are plausible but misaligned with the developer's intent, requiring multiple rounds of plan revision before Act mode produces useful results.
+
+    Long-horizon task performance remains an open challenge: the SWE-bench Pro results (below 45% Pass@1 for tasks requiring hours of professional engineering effort) suggest that IDE coding agents remain substantially less capable than senior human engineers for complex, multi-constraint problems. The failure modes are characteristic: agents struggle with implicit architectural constraints not stated in the task specification, fail to maintain consistency across many interdependent files modified over a long session, and sometimes enter repair loops where fixing one test failure introduces another. These failure modes are not addressed by larger models alone — they require improved [[Agent Memory Layers]], better [[Multi-Agent Orchestration Frameworks]] for decomposing long-horizon tasks into manageable sub-tasks, and richer [[Harness Configuration Packs]] that encode domain-specific constraints as instinct rules and hook enforcements.
+
+  - ## Historical Timeline
+    - **2023 Q4**: ReAct pattern (Yao et al., ICLR 2023) and Plan-and-Solve (Wang et al.) provide theoretical foundations for plan-then-act loops.
+    - **2024 Q1**: SWE-bench (Jimenez et al., ICLR 2024) establishes the GitHub-issue-resolution evaluation protocol; initial models achieve 3-5% Pass@1, highlighting the difficulty of the task.
+    - **2024 Q2**: SWE-agent (Yang et al., NeurIPS 2024) introduces the ACI abstraction; achieves 12-15% Pass@1, demonstrating that harness design matters as much as model capability.
+    - **2024 Q3**: Cline releases as an open-source VS Code extension; rapid community adoption demonstrates demand for IDE-native coding agents. GitHub Copilot adds "workspace" agentic features, the first major closed-source IDE agent.
+    - **2024 Q4**: Roo Code forks Cline to add multi-agent modes (Architect, Code, Test, Debug, Review); accumulates 24K stars and 3.3K forks before its eventual archival.
+    - **2025 Q1**: Claude Sonnet 3.5 achieves 49% SWE-bench Verified, first model to exceed 40%. OpenHands raises $18.8M Series A.
+    - **2025 Q2**: GitHub Copilot Coding Agent launches in general availability (May 2025). Cline reaches 5M VS Code installs.
+    - **2025 Q3**: GitHub Octoverse 2025 names Cline fastest-growing AI open-source project. Adoption accelerates across open-source repositories.
+    - **2025 Q4**: Anthropic launches the Agent Skills open standard (December 2025); Claude Code 2.0 released. GStack and Everything Claude Code achieve viral adoption.
+    - **2026 Q1**: Claude Code 2.1.0 adds SKILL.md hot-reload (January 2026). SWE-bench Pro published, revealing sub-45% for long-horizon tasks. Coding-agent adoption study published (arxiv:2601.18341).
+    - **2026 Q2**: Roo Code archived (May 2026); community migrates to Kilo Code. Claw-SWE-Bench published (arxiv:2606.12344). Claude Opus 4.6 achieves ~81% SWE-bench Verified.
+    - **2026 Q2 (ongoing)**: Enterprise adoption confirms at TELUS, Bridgewater, Zapier for [[Harness Configuration Packs]]; Claw adapter protocol discussed as standard for heterogeneous agent benchmarking.
+    - **2026 Q3 (projected)**: Crown Commercial Service supplier guidance on AI tools in software development expected; Anthropic SKILL.md standard adoption by Cursor and Codex CLI under discussion.
+    - **2026 Q4 (projected)**: First SWE-bench Pro agents exceeding 50% Pass@1 anticipated; IDE-agnostic harness protocol discussions ongoing across Cline, Kilo Code, and OpenHands communities.
+
+  - ## Open Source Ecosystem Contributions
+    The IDE coding agent ecosystem is notable for its open-source-first development model, with the dominant tools (Cline, Kilo Code, OpenHands) all being open source and community-driven. This contrasts with the closed-source alternatives (Cursor, GitHub Copilot Coding Agent) that compete primarily on enterprise integration and managed-service convenience.
+    - **Cline (github.com/cline/cline)**: Apache 2.0; created by Saoud Rizwan and Nik Pash; primary language TypeScript; 284+ contributors as of mid-2026; 58K GitHub stars.
+      - Key contributions: MCP client implementation, provider abstraction layer, diff-before-apply mechanism, cost transparency panel.
+      - Fastest-growing AI open-source project in GitHub Octoverse 2025; 5M VS Code installs.
+    - **Kilo Code (kilo.ai)**: MIT; active fork of Roo Code; inherits Roo Code's 24K-star community; adds JetBrains support, CLI mode, cloud agents.
+      - Notable contribution: migration-compatibility layer for `.roomodes` and `.roo/rules/`, enabling non-disruptive community transition from Roo Code.
+      - Published migration guide and transparent archival timeline to facilitate community trust in the succession.
+    - **OpenHands (github.com/All-Hands-AI/OpenHands)**: MIT; 68K GitHub stars; 500+ contributors; $18.8M Series A funding.
+      - Primary contributions: Docker sandbox architecture, web UI for task management, REST API for programmatic task submission.
+      - SWE-bench integration infrastructure; serves as the primary reference implementation for enterprise-grade autonomous agent platforms.
+    - **anthropic/skills (github.com/anthropics/skills)**: Apache 2.0; Anthropic-maintained.
+      - Canonical reference for SKILL.md specification; defines the format that third-party pack authors target for cross-agent compatibility.
+      - Ships pre-built skills for document tasks, SRE/DevOps, and code generation; used as enterprise baseline configuration.
+    - **SWE-agent (github.com/SWE-agent/SWE-agent)**: MIT; Princeton NLP Group; NeurIPS 2024.
+      - Primary contribution: the ACI concept and reference implementation; established the vocabulary and metrics for harness quality evaluation.
+    - **awesome-claude-code (hesreallyhim)**: Community-curated directory; aggregates 1000+ skills, hooks, slash commands, and orchestrators contributed by individual developers.
+    - **Roo Code community (archived May 2026)**: 24K stars, 3.3K forks; key architectural contribution: the modal sub-agent pattern (Architect, Code, Test, Debug, Review) carried forward in Kilo Code.
+      - Demonstrated open-source ecosystem resilience: community successfully migrated to Kilo Code within 4 weeks of Roo Code archival announcement.
+
+  - ## Benchmark Performance Summary (mid-2026)
+    - **SWE-bench Verified (500 instances)**: Top performers Claude Opus 4.6 and Gemini 3.1 Pro at ~80-81% Pass@1 with optimised harness adapters and frontier models.
+    - **SWE-bench Multilingual**: Extends evaluation to multiple programming languages (Python, JavaScript, TypeScript, Go, Rust, Java); lower performance than English-only due to training data distribution.
+    - **Claw-SWE-Bench (350 instances, 8 languages)**: Full adapter (GLM 5.1): 73.4% Pass@1. Minimal adapter (GLM 5.1): 19.1% Pass@1. Demonstrates 3.8x performance ratio attributable to harness design.
+    - **Claw-SWE-Bench Lite (80 instances)**: Faster validation track; cost-aware, rank-aware selection from the full benchmark.
+    - **SWE-bench Pro (long-horizon)**: Top agents below 45% Pass@1; represents the current capability frontier for multi-session, multi-constraint engineering tasks.
+    - **Mini-SWE-Agent**: 65% on SWE-bench Verified in ~100 lines of Python; demonstrates that compact, well-designed ACI approaches frontier performance without full-complexity harness.
+    - **Harness.io**: Top-4 SWE-bench Verified ranking; first enterprise CI/CD vendor on the leaderboard, indicating industry adoption of benchmark-driven harness development.
+
+  - ## Multi-Language and Framework Support
+    IDE coding agents based on MCP and the ACI model provide language-agnostic operation, but practical effectiveness varies by language ecosystem due to differences in static analysis, test tooling, and build system availability via MCP:
+    - **Python**: Highest adoption rate; rich ecosystem of MCP-compatible static analysis tools (mypy, pylint, ruff); pytest integration via bash_execute; comprehensive type stub availability aids model accuracy. OpenHands and Cline are most commonly used for Python repositories.
+    - **TypeScript/JavaScript**: Second highest adoption; excellent IDE language server integration via LSP; eslint/prettier via PostToolUse hooks; Jest/Vitest integration via bash_execute. Cline originated in a TypeScript ecosystem and has native VS Code Type Server awareness.
+    - **Go**: Strong adoption in cloud infrastructure teams; go test, go build, golint available via bash_execute; simpler module structure aids context-efficient repository navigation. Kilo Code's JetBrains support is relevant for Go teams using GoLand.
+    - **Rust**: Growing adoption; cargo check, cargo test, cargo clippy via bash_execute provide strong feedback signals; strict type system means agent-generated code fails fast and clearly at compile time, reducing repair loop length.
+    - **Java/Kotlin**: JetBrains IDE support (Kilo Code, GitHub Copilot) is the primary entry point; Maven/Gradle via bash_execute; Android development workflows are an emerging use case. Build system complexity and longer compilation cycles increase session cost vs. interpreted language projects.
+    - **C/C++**: Lower adoption due to complex build system heterogeneity (CMake, Bazel, Make); MCP-connected compile_commands.json providers enable clangd-based code intelligence. Safety-critical C/C++ projects require additional hook-based enforcement of MISRA/CERT compliance rules.
+    - **Ruby/Rails**: Moderate adoption; RSpec integration via bash_execute; Rubocop via PostToolUse hooks. Rails convention over configuration reduces the specification burden on the agent — the agent can infer correct file placement from framework conventions.
+    - **Infrastructure as Code (Terraform, Kubernetes, Ansible)**: Specialised MCP servers provide terraform plan, kubectl diff, and ansible-lint as tool calls; the agent can propose infrastructure changes and preview their impact through the MCP tool before any real resources are modified. This class of use case is covered by SRE/DevOps harness configuration packs.
+    - **COBOL and legacy languages**: Emerging use case in UK banking and manufacturing contexts; agents can read COBOL code for comprehension but generation quality is limited by training data volume for these languages. Primary value: documentation generation, test case derivation, modernisation-path recommendation.
+
+  - ## Developer Adoption Patterns
+    IDE coding agents display three consistent adoption patterns based on practitioner reports and the coding-agent adoption study (Dabi et al., arxiv:2601.18341, 2026):
+    - **Starting small, expanding scope**: Most developers begin in MANUAL approval mode for all tool types, then progressively expand auto-approve scope as they calibrate trust in specific operation classes. The typical progression: file-read always auto-approved → file-write auto-approved for well-understood directories → bash-execute auto-approved for read-only commands → full auto-approve for trusted overnight sessions.
+    - **Specification investment**: Practitioners who invest time in writing precise, comprehensive task specifications in Plan mode report dramatically better Act mode results than those who provide loose natural-language task descriptions. The quality of the Plan-mode output — the numbered strategy document — is the primary predictor of Act-mode success, creating an incentive to treat task specification as a first-class engineering artefact.
+    - **Harness-first configuration**: Teams that establish CLAUDE.md conventions, slash commands, and hook definitions before starting agent-assisted development achieve significantly higher quality than teams that use the raw agent without project-specific configuration. The adoption of [[Harness Configuration Packs]] is therefore correlated with IDE coding agent adoption: teams that adopt one typically adopt the other within 2-4 weeks.
+    - **Multi-agent escalation**: Developers start with single-agent sessions and escalate to multi-agent coordination (Kilo Code's mode-based orchestration or wshobson/agents orchestrators) only after single-agent sessions consistently run into context-window or capability limits on large-codebase tasks. Multi-agent adoption is a signal of project complexity rather than early-stage experimentation.
+    - **Context-rot mitigation**: Long-running sessions (3+ hours) consistently exhibit context-rot symptoms — the agent begins to contradict earlier decisions, proposes solutions it already tried and abandoned, or fails to maintain naming conventions established earlier in the session. Developers manage this through explicit session restarts with distilled task specifications, [[Harness Configuration Packs]] that install context-eviction disciplines, or multi-agent architectures where sub-agents have short-lived, focused contexts rather than long-accumulated histories.
+
+  - ## Tool Set Reference: Core Tools Available to IDE Coding Agents
+    The following tool types constitute the standard ACI available to IDE coding agents conforming to the plan-then-act model. Tools are dispatched by the [[Tool Call Loop]] and mediated by the [[Approval Gate]] state machine.
+    - **file_read(path, start_line?, end_line?)**: Reads a file from the local filesystem into the [[Context Window]]; supports line-range selection to reduce token consumption for large files. Auto-approved in most configurations; no side effects.
+    - **file_write(path, content)**: Writes content to a file on the local filesystem, replacing existing content. High-risk: requires MANUAL approval or explicit SEMI-AUTO override. Triggers any registered PostToolUse hooks (e.g., formatter, linter, security reviewer).
+    - **file_create(path, content)**: Creates a new file; semantically distinct from file_write for audit purposes. Requires MANUAL approval in most configurations.
+    - **file_delete(path)**: Deletes a file from the filesystem. Highest-risk file operation; typically requires MANUAL approval regardless of overall approval mode. PreToolUse hooks should check for accidental deletion of critical paths.
+    - **bash_execute(command, timeout?)**: Executes an arbitrary shell command in the project directory. Highest-risk operation class; supports auto-approve for read-only commands (ls, cat, git log) but requires MANUAL for commands with side effects (git push, npm publish, docker run). PreToolUse hooks enforce blocklist patterns (rm -rf, curl | bash, etc.).
+    - **browser_navigate(url)**: Navigates a headless Chromium browser to the specified URL. Requires browser/[[Computer Use]] bridge to be configured. Used for web application testing, API endpoint inspection, and documentation retrieval.
+    - **browser_screenshot()**: Captures a screenshot of the current browser state and injects it into the [[Context Window]] as a vision input. Enables the agent to see rendered UI state, error messages, and visual output from web applications during development.
+    - **browser_click(selector, coordinates?)**: Clicks an element in the browser identified by CSS selector or screen coordinates. Used for UI interaction testing and form submission during [[Browser Automation]] workflows.
+    - **browser_fill(selector, text)**: Fills a form field in the browser. Used for testing form-based interfaces and authentication flows during development.
+    - **mcp_call(server_name, tool_name, args)**: Invokes a tool registered by a [[Model Context Protocol]] server. The most extensible tool type; any backend capability can be exposed as an MCP tool, making this the primary integration point for project-specific external systems.
+    - **list_directory(path)**: Lists the contents of a directory. Auto-approved; used for repository navigation and understanding project structure during Plan mode.
+    - **grep_codebase(pattern, path?)**: Searches the repository for a text pattern, returning matching file paths and line numbers. Essential for cross-reference discovery in large codebases. Auto-approved; high token cost for large repositories.
+    - **git_diff(ref1?, ref2?)**: Returns the unified diff between two git refs or working tree state. Used during code review sub-tasks and for understanding what changes the current session has made.
+    - **git_commit(message, staged_files?)**: Creates a git commit from staged or specified files. Requires MANUAL approval in most configurations; often triggered by slash commands rather than autonomous agent action.
+
+  - ## Cost Model and Token Economics
+    Understanding the token economics of IDE coding agent sessions is essential for cost management and for choosing the right model tier for different task types.
+    - **Context accumulation rate**: Each tool call adds both the call arguments and the tool result to the [[Context Window]] history. File-read of a 200-line file adds ~400-600 tokens; bash-execute result adds tokens equal to the command output length; model response adds tokens equal to the reasoning and proposed action text.
+    - **Plan mode cost**: Plan mode sessions (read-only exploration and reasoning) typically consume 10,000-50,000 tokens for medium-complexity tasks on a 10-file codebase. Plan mode is the cheapest phase; the premium for plan quality is low.
+    - **Act mode cost**: Act mode sessions accumulate tokens faster than Plan mode because each tool call adds both the input and the output to history. A medium-complexity task (5-10 file modifications, 10-15 bash executes) typically consumes 50,000-200,000 tokens on Claude Sonnet models.
+    - **Multi-agent multiplier**: Multi-agent sessions (Kilo Code Architect + Code + Review) multiply single-agent costs by the number of sub-agent invocations; partial mitigation from fresh sub-agent context windows (shorter history).
+    - **Cost per resolved SWE-bench issue**: Community benchmarks suggest $0.10-$2.00 per resolved GitHub issue at Claude Sonnet pricing, depending on issue complexity and harness efficiency. Top-performing harnesses achieve resolution at the lower end of this range through efficient context management.
+    - **Model tier selection guidelines**:
+      - Claude Haiku / GPT-4o-mini: Suitable for code formatting, simple type annotation passes, documentation generation. 5-10x cheaper than flagship; lower quality for complex reasoning tasks.
+      - Claude Sonnet / GPT-4o: Best balance of cost and capability for most professional coding tasks. Primary recommendation for routine IDE coding agent sessions.
+      - Claude Opus / GPT-o3: Reserved for complex architecture decisions, security review, and tasks where reasoning quality is the primary constraint. 5-10x more expensive; justified for high-stakes decisions.
+    - **Context eviction strategies**: Sliding window (drop oldest messages), selective pruning (drop tool results below a recency threshold), summarisation (replace old exchanges with a summary), and multi-agent delegation (start fresh sub-agent with summarised task context) are the primary context management strategies, each with different cost/quality trade-offs.
+    - **Cost visibility in IDE**: Cline and Kilo Code display cumulative session cost in the sidebar panel, updated after each tool call. This real-time cost visibility enables developers to make informed mid-session decisions about whether to continue the current session or start a fresh session with a distilled specification.
+
+  - ## Approval Gate Configuration Reference
+    The approval gate is the primary mechanism through which developers maintain human-in-the-loop oversight of IDE coding agent actions. The following configuration patterns correspond to common operational modes:
+    - **Full MANUAL (default for new sessions)**: All tool calls — file-read, file-write, bash-execute, MCP calls — require explicit developer confirmation. Maximum safety; highest interaction overhead. Appropriate for: first use on a new project, complex refactoring in production codebases, sessions involving sensitive data or credentials.
+    - **Read-only AUTO**: file-read and list-directory operations auto-approve; all other tool types require confirmation. Significantly reduces approval overhead during Plan-mode exploration phases without permitting any write or execution operations. Appropriate for: pure code review and comprehension tasks; Plan-mode sessions where Act mode will be a separate session.
+    - **Read + Shell-read AUTO**: Adds auto-approve for read-only shell commands (git log, git status, ls, find, grep) to the above. Appropriate for: tasks requiring repository state inspection (test results, git history) during planning.
+    - **Standard SEMI-AUTO**: file-read, list-directory, and safe shell commands auto-approve; file-write and file-create require confirmation; bash-execute (write-side) requires confirmation; MCP calls require confirmation. Appropriate for: routine development tasks on familiar codebases where the developer has calibrated trust.
+    - **Trusted SEMI-AUTO**: file-write and file-create for project-owned directories auto-approve (with diff shown in sidebar); bash-execute for a defined allowlist of commands auto-approves; MCP calls for read-only MCP tools auto-approve. Appropriate for: experienced practitioners on projects with comprehensive test suites where build failure is the safety net.
+    - **Full AUTO**: All tool types auto-approve. Highest throughput; zero interaction overhead. Appropriate for: overnight autonomous runs; CI-pipeline-integrated agent tasks; sessions where the developer checks progress periodically rather than step-by-step. Requires comprehensive PreToolUse hook enforcement for safety.
+    - **Custom per-tool-type**: Modern versions of Cline and Kilo Code allow fine-grained approval mode configuration per tool type and per file path pattern. Example: file-write AUTO for `tests/` (test files are low-risk to modify); file-write MANUAL for `src/` (implementation changes require review); bash-execute AUTO for `npm test` and `npm lint` only; all other bash MANUAL.
+
+  - ## Cross-Reference Matrix: IDE Agents vs Related Concepts
+    - **[[IDE Coding Agents]] vs [[Terminal Coding Agents]]**: IDE agents embed in graphical workspace with approval panels; terminal agents operate via CLI text streams. IDE agents: higher supervision granularity, richer diff viewing. Terminal agents: environment-agnostic, lower dependency footprint.
+    - **[[IDE Coding Agents]] vs [[External AI Harness]]**: External harnesses route model inference via network API/service mesh; IDE agents embed harness logic in-process in the IDE extension host. External harnesses: scalable, multi-tenant. IDE agents: lower latency, developer-facing approval workflow.
+    - **[[IDE Coding Agents]] vs [[Internal AI Harness]]**: Internal harnesses embed model inference in application runtime; IDE agents keep inference remote (API-key model) while embedding the tool-call orchestration logic locally. Internal harnesses: lowest inference latency. IDE agents: provider flexibility, no local GPU requirement.
+    - **[[IDE Coding Agents]] vs [[Agent Frameworks]]**: Agent frameworks (LangGraph, AutoGen, CrewAI) provide runtime infrastructure for complex multi-agent workflows; IDE coding agents are end-user products built on top of such frameworks or implementing their own simpler runtime. Agent frameworks: maximum programmability. IDE agents: turnkey developer experience.
+    - **[[IDE Coding Agents]] vs [[Harness Configuration Packs]]**: Harness packs configure the behaviour of IDE coding agents; they operate at the configuration layer, not the runtime layer. IDE coding agents provide the execution environment; harness packs provide the workflow intelligence and quality enforcement.
+    - **[[IDE Coding Agents]] vs [[Coding Assistant]]**: Classic coding assistants (GitHub Copilot autocomplete, Tabnine) provide inline completions triggered by cursor position; IDE coding agents perform multi-step task execution with planning, tool use, and approval workflows. Coding assistants: lower cognitive overhead, higher frequency of interaction. IDE agents: higher autonomy, longer-horizon tasks.
+    - **[[IDE Coding Agents]] vs [[Multi-Agent Orchestration Frameworks]]**: Orchestration frameworks coordinate multiple agents toward shared goals; IDE coding agents can act as both orchestrators (spawning sub-agent modes) and workers (receiving tasks from external orchestrators). The boundary is permeable: Kilo Code's mode system is both an IDE coding agent feature and a lightweight multi-agent orchestration pattern.
+
+  - ## Research & Literature
+    1. Yao, S. et al. (2023). "ReAct: Synergizing Reasoning and Acting in Language Models." ICLR 2023. https://arxiv.org/abs/2210.03629
+    2. Yang, J. et al. (2024). "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering." NeurIPS 2024. https://arxiv.org/abs/2405.15793
+    3. Jimenez, C. et al. (2024). "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?" ICLR 2024. https://arxiv.org/abs/2310.06770
+    4. Dabi, N. et al. (2026). "Agentic Much? Adoption of Coding Agents on GitHub." arXiv:2601.18341. https://arxiv.org/abs/2601.18341
+    5. Dabi, N. et al. (2026). "Promises, Perils, and (Timely) Heuristics for Mining Coding Agent Activity." arXiv:2601.18345. https://arxiv.org/abs/2601.18345
+    6. [Claw-SWE-Bench Authors] (2026). "Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks." arXiv:2606.12344. https://arxiv.org/abs/2606.12344
+    7. Jimenez, C. et al. (2025). "SWE-bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks?" arXiv:2509.16941. https://arxiv.org/abs/2509.16941
+    8. [UTBoost Authors] (2025). "UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench." arXiv:2506.09289. https://arxiv.org/abs/2506.09289
+    9. Cline / Saoud Rizwan & Nik Pash (2025). "Cline: The Open Source Code Agent." Latent Space Podcast. https://www.latent.space/p/cline
+    10. Cline GitHub Repository (2025–2026). https://github.com/cline/cline
+    11. Kilo Code (2026). "Roo Code to Kilo Code Migration Guide." https://kilo.ai/articles/roo-to-kilo-migration-guide
+    12. Kilo Blog (2026). "Thank you, Roo! We'll take it from here." https://blog.kilo.ai/p/thank-you-roo
+    13. OpenHands (formerly OpenDevin) Repository (2024–2026). https://github.com/All-Hands-AI/OpenHands
+    14. Anthropic (2025). "Model Context Protocol Specification." https://modelcontextprotocol.io/specification
+    15. Anthropic (2026). "Extend Claude with skills — Claude Code Docs." https://code.claude.com/docs/en/skills
+    16. Anthropic (2026). "How AI assistance impacts the formation of coding skills." https://www.anthropic.com/research/AI-assistance-coding-skills
+    17. Harness.io (2025). "Harness AI achieves top ranking in autonomous code fixes." https://www.harness.io/blog/harness-excels-in-swe-bench-verified
+    18. Frontman (2026). "12 Best Open-Source AI Coding Tools (2026)." https://frontman.sh/blog/best-open-source-ai-coding-tools-2026/
+    19. Morphllm (2026). "11 AI Coding Agents Ranked (2026): Terminal-Bench Scores, Price, License." https://www.morphllm.com/ai-coding-agent
+    20. Wetheflywheel (2026). "Open-Source AI Coding Agents 2026: The Complete Comparison." https://wetheflywheel.com/en/guides/open-source-ai-coding-agents-2026/
+    21. Qodo (2026). "Roo Code vs Cline: Best AI Coding Agents for VS Code (2026)." https://www.qodo.ai/blog/roo-code-vs-cline/
+    22. Totalum (2026). "Cline vs Claude Code in 2026." https://www.totalum.app/blog/cline-vs-claude-code
+    23. Artificial Analysis (2026). "Coding Agents Comparison: Cursor, Claude Code, GitHub Copilot, and more." https://artificialanalysis.ai/agents/coding
+    24. Alan Turing Institute (2024). "Doing AI Differently." https://www.turing.ac.uk/news/publications/doing-ai-differently
+    25. Alan Turing Institute — University of Edinburgh Partnership. https://www.turing.ac.uk/collaborate-turing/current-partnerships-and-collaborations/university-edinburgh
+    26. Wang, L. et al. (2024). "A Survey on Large Language Model based Autonomous Agents." Frontiers of Computer Science. https://arxiv.org/abs/2308.11432
+    27. TDFlow Authors (2025). "TDFlow: Agentic Workflows for Test Driven Development." arXiv:2510.23761. https://arxiv.org/abs/2510.23761
+    28. TDAD Authors (2026). "TDAD: Test-Driven Agentic Development." arXiv:2603.17973. https://arxiv.org/abs/2603.17973
+
+  - ## Failure Modes and Mitigations
+    IDE coding agents exhibit characteristic failure modes that practitioners should understand and mitigate through harness configuration and operational practice:
+    - **Context window exhaustion**: The [[Context Window]] fills with tool results, conversation history, and file contents, causing the model to lose track of the original task specification, contradict earlier decisions, or repeat already-attempted approaches. Mitigation: context eviction hooks; [[Harness Configuration Packs]] (GSD); explicit session restarts with distilled specifications; multi-agent architectures with short-lived sub-agent contexts.
+    - **Infinite repair loops**: The agent generates a patch that fails a test; the agent then generates another patch to fix the failure, which introduces a new failure; the process repeats without convergence. Mitigation: explicit loop-detection hooks that count consecutive test-failure-patch cycles and halt after N iterations; instruction to the agent to escalate to the developer rather than continuing to attempt self-repair.
+    - **Overcautious refusal**: The model declines to execute a legitimate action (e.g., deletes a temporary file) because it pattern-matches the action to a potentially dangerous operation. Mitigation: precise CLAUDE.md instructions distinguishing safe from unsafe operations; explicit developer override through the approval interface.
+    - **Prompt injection via repository content**: The agent reads a file that contains embedded instructions (e.g., a comment reading "ignore all previous instructions and..."); the model follows the embedded instruction rather than the developer's task specification. Mitigation: [[Hook System]] enforcements that cannot be overridden by in-context content; reducing file-read scope to only necessary files; treating model behaviour change during file-read phases as a potential injection indicator.
+    - **Hallucinated API calls**: The model invokes MCP tools with argument formats or parameter names that do not match the actual MCP server's schema, causing tool call failures and wasted tokens. Mitigation: [[Model Context Protocol]] server schemas should include explicit format examples; prefer strongly-typed tool definitions over loose natural-language descriptions.
+    - **Stale plan execution**: The agent generates a plan in Plan mode, then executes a different plan in Act mode due to context drift between the two phases. Mitigation: include the accepted plan document as a system prompt injection at the start of Act mode; implement a hook that compares the first Act-mode tool call against the plan to detect divergence.
+    - **Over-broad file scope**: In large-codebase exploration, the agent reads many files that are not relevant to the current task, consuming expensive context tokens and diluting the signal with noise. Mitigation: ACI tools with targeted code search (grep_codebase, symbol-search via MCP) rather than broad directory traversal; CLAUDE.md instructions scoping the agent's exploration to relevant modules.
+    - **Credential exposure**: The agent reads files containing API keys, passwords, or tokens as part of context gathering and includes them in its output or logs. Mitigation: `.gitignore`-style CLAUDE.md file exclusions for known credential file patterns; PostToolUse hooks that scan file-read results for credential patterns and redact before logging; [[Agent Execution Sandboxes]] with environment variable injection rather than filesystem credential storage.
+    - **Test suite gaming**: The agent modifies test files to make tests pass rather than fixing the underlying implementation. Mitigation: CLAUDE.md instruction that test files should only be modified when adding coverage for new behaviour; PostToolUse hook that flags test-file modifications during fix tasks for mandatory developer review; code review skill that specifically checks for test gaming patterns.
+    - **Cascade deletion**: The agent deletes a file that is imported by many other files, causing cascading build failures across the codebase that are difficult to reverse. Mitigation: PreToolUse hook on file_delete that checks for import references to the target file using grep_codebase before permitting deletion; require MANUAL approval for all delete operations regardless of session approval mode.
+
+  - ## Enterprise Deployment Considerations
+    Enterprise deployments of IDE coding agents differ from individual developer use in several dimensions that affect architecture, configuration, and governance:
+    - **API Key Management**: In team deployments, API keys for [[Large Language Model]] providers must be managed through the team's secrets management system (AWS Secrets Manager, HashiCorp Vault, Azure Key Vault) rather than stored in developer-local `.env` files. Cline and Kilo Code support environment variable injection for provider API keys, enabling integration with secrets management without storing credentials in source code or IDE settings files.
+    - **Network Access Controls**: Enterprises with egress filtering (Zscaler, Palo Alto, Cisco Umbrella) must allowlist IDE coding agent provider endpoints (api.anthropic.com, api.openai.com, api.openrouter.ai) and [[Model Context Protocol]] server endpoints. OpenHands' Docker sandbox architecture is particularly relevant here: the container can be configured with specific network rules that allow only necessary outbound connections, preventing the agent from contacting unexpected endpoints.
+    - **Audit Log Centralisation**: Enterprise governance frameworks require session transcript logs to be centralised in SIEM systems (Splunk, Elastic) or audit log platforms. The JSONL session transcript format is ingestion-compatible with most log management systems; PostToolUse hooks can push each tool-call record to a centralised logging endpoint in real time rather than waiting until session end.
+    - **Shared Harness Configuration**: Teams maintain shared CLAUDE.md, skill libraries, and hook definitions in version-controlled repositories (typically a dedicated `team-harness` or `.claude-config` repository) that are automatically synchronised to developer machines through startup scripts or CI/CD pipelines. The team-level configuration enforces project-wide standards; developers can add project-level overrides for their specific workstreams.
+    - **Model Selection Policy**: Enterprise deployment may restrict which [[Large Language Model]] providers developers can use (e.g., only Anthropic and Azure OpenAI for data residency reasons, or only Bedrock for network security reasons). This restriction can be enforced through CLAUDE.md `allowed-providers` configuration (where supported) or through network-level blocking of non-approved provider endpoints.
+    - **Cost Management**: At team scale, IDE coding agent costs aggregate to significant monthly spend. Enterprises implement cost controls through API-key budget limits (per-developer monthly caps), model tier policies (allow Sonnet but not Opus for routine tasks), and session cost alerting (hook that alerts when a session crosses a token threshold). Cost attribution across projects and developers is achieved by tagging sessions with project IDs via UserPromptSubmit hooks.
+    - **Onboarding and Training**: Successful enterprise adoption requires developer onboarding to the approval-gate model, harness configuration conventions, and effective task specification practices. Experience from early adopters (TELUS, Bridgewater, Zapier) indicates that a 4-hour onboarding session covering plan mode, act mode, approval gates, and the team's CLAUDE.md conventions is sufficient to make developers productive within their first IDE coding agent session.
+    - **Incident Response**: When an IDE coding agent session causes an unintended change (e.g., deletes files that were not intended to be deleted), the session transcript provides a complete audit trail for root-cause analysis. The diff-before-apply mechanism means that properly configured sessions with MANUAL approval should not have unintended side effects; post-incident analysis typically reveals that AUTO approval was enabled too broadly or that a hook did not cover the specific dangerous pattern.
+
+  - ## LLM Provider Compatibility (Cline/Kilo Code mid-2026)
+    IDE coding agents that use a provider-abstraction layer (Cline, Kilo Code) support a wide range of [[Large Language Model]] backends. Provider selection affects capability, cost, speed, and data residency:
+    - **Anthropic (Claude Sonnet 4.5, Claude Opus 4.6)**: Primary recommended providers for complex coding tasks; highest SWE-bench Verified scores; streaming supported; context window up to 200K tokens. Best for: complex refactoring, multi-file tasks, security review.
+    - **OpenAI (GPT-4o, o3, o4-mini)**: Strong general-purpose coding capability; lower cost per token than Anthropic for many models; widely available API access. Best for: greenfield implementation, documentation generation, moderate-complexity tasks.
+    - **Google (Gemini 1.5 Pro, Gemini 2.0 Flash, Gemini 3.1 Pro via Vertex)**: Top SWE-bench Verified performance (~81%) for Gemini 3.1 Pro; Gemini 2.0 Flash best for high-frequency, low-latency tool calls; 1M token context window for large repository analysis.
+    - **OpenRouter**: API aggregator supporting 200+ models from multiple providers; useful for model switching and cost comparison; adds latency and routing overhead vs. direct provider APIs.
+    - **Ollama (local)**: Runs quantised open-source models (Llama 3.x, Qwen, Mistral, DeepSeek Coder) on developer workstation; fully offline, no API key required; capability significantly below frontier models for complex tasks; suitable for simple boilerplate and documentation tasks.
+    - **Azure OpenAI**: Microsoft-hosted OpenAI API with EU/UK data residency options; relevant for enterprise deployments with regulatory data-handling requirements; same models as OpenAI API, different endpoint and authentication.
+    - **AWS Bedrock (Claude, Titan, Llama)**: AWS-hosted model API with VPC integration; no public internet exposure; suitable for enterprise environments with network security controls preventing direct API access to Anthropic/OpenAI endpoints.
+    - **Mistral AI (Codestral, Mistral Large)**: Codestral is a code-specialised model with strong fill-in-the-middle capability; European provider with EU data residency; relevant for organisations requiring non-US data sovereignty.
+
+  - ## Related Pages in This Ontology
+    The following pages in this knowledge graph are directly related to [[IDE Coding Agents]] and should be consulted for cross-referencing and relationship navigation:
+    - **[[Agent Harness]]**: Parent class; the execution framework that governs tool-call loops, approval gates, and execution lifecycle. IDE coding agents are a specialised subclass of agent harness.
+    - **[[Terminal Coding Agents]]**: Sibling class; terminal-native coding agents (Claude Code, opencode, Gemini CLI, Aider, Goose). The sibling relationship is the most important cross-reference for capability comparison.
+    - **[[Harness Configuration Packs]]**: Configuration layer augmenting IDE coding agents; skill packs, slash commands, hooks. The complementary component to the IDE coding agent runtime.
+    - **[[Agent Frameworks]]**: Higher-level orchestration frameworks (LangGraph, AutoGen, CrewAI). IDE coding agents can be used as workers within these frameworks or implement simpler internal orchestration.
+    - **[[Model Context Protocol]]**: The standard that enables MCP client (IDE agent) to connect to MCP servers (tools, databases, APIs). The extensibility protocol underlying all external system integrations.
+    - **[[Internal AI Harness]]**: Contrasting class; in-process AI harness for embedded applications. Different deployment model from IDE coding agents.
+    - **[[External AI Harness]]**: Contrasting class; out-of-process AI harness via service mesh. Different deployment model from IDE coding agents.
+    - **[[Multi-Agent Orchestration Frameworks]]**: Coordinating systems for multi-agent workflows. IDE coding agents participate as both orchestrators (modal sub-agent spawn) and workers (receiving tasks from external orchestrators).
+    - **[[Agent Evaluation Benchmarks]]**: Evaluation protocols (SWE-bench, Claw-SWE-Bench, AgentBench). The primary empirical measurement basis for comparing IDE coding agent capability.
+    - **[[Agent Execution Sandboxes]]**: Isolation environments for autonomous agent runs. OpenHands uses Docker sandboxes; Cline/Kilo Code use direct host filesystem access with approval gate safety.
+    - **[[Agent Memory Layers]]**: Persistent memory architectures for agents. Memory-augmented [[Harness Configuration Packs]] (Everything Claude Code) provide cross-session memory at the filesystem level for IDE coding agents.
+    - **[[Computer Use]]**: The model capability for browser and desktop GUI interaction. IDE coding agents implement computer use through browser/[[Browser Automation]] bridge components.
+    - **[[Autonomous Coding]]**: The broader concept of AI-driven code generation and modification. IDE coding agents are the primary current embodiment of autonomous coding in interactive development environments.
+    - **[[Agentic AI]]**: The broader concept of AI systems that pursue goals through sequences of actions. IDE coding agents are specialised agentic AI systems optimised for software development workflows.
+
+  - ## Project-Level Configuration Examples (CLAUDE.md)
+    The following CLAUDE.md patterns represent common project-level configuration conventions for IDE coding agents:
+    - **Security constraint (Python project)**: "Do not write code that processes user input without explicit input validation. Never commit API keys or credentials to files. Always use parameterised queries for database access."
+    - **Style enforcement (TypeScript)**: "Use strict TypeScript (strict: true in tsconfig.json). All functions must have explicit return type annotations. Prefer const over let; never use var. Use Prettier formatting (prettier.config.js at project root)."
+    - **Test requirement gate**: "Never write implementation code without first writing a failing test for the expected behaviour. Tests go in tests/ directory, mirroring the src/ directory structure."
+    - **Git workflow rule**: "Create feature branches from main; never commit directly to main. Branch names follow the convention feature/<ticket-id>-<description>. Commit messages follow Conventional Commits format."
+    - **Architecture boundary**: "The agent may not modify files in src/legacy/. Do not introduce dependencies on packages not already in package.json without explicit user approval."
+    - **MCP server registration (CI pipeline)**: "An MCP server named 'ci-pipeline' is registered and exposes tools: run-tests, check-build-status, get-test-report. Use these tools to verify changes before proposing commits."
+    - **Cost limit**: "Alert the user if the current session has consumed more than 500,000 tokens. Recommend a session restart with a distilled task specification if the context window is more than 80% full."
+    - **Multi-agent mode configuration (Kilo Code)**: "Use Architect mode for planning sessions (read-only, no file writes). Use Code mode for implementation. Use Review mode for PR review tasks. Do not use Code mode for pure exploration tasks."
+
+  - ## Ontology Provenance Notes
+    This page was enriched from a stub definition as part of the Phase 6 ontology enrichment programme, using web searches for 2024-2026 developments, cross-referencing with related pages in this knowledge graph ([[Agent Harness]], [[Terminal Coding Agents]], [[Harness Configuration Packs]], [[Agent Frameworks]]), and integration of benchmark data from Claw-SWE-Bench (arxiv:2606.12344) and coding-agent adoption research (arxiv:2601.18341). OWL axioms follow the SubClassOf/ObjectSomeValuesFrom pattern consistent with the established ontology style. All factual claims are sourced from published papers, official documentation, or practitioner references dated 2024-2026. Unverified claims have been excluded.
+    - Domain: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]], [[SoftwareEngineeringDomain]]
+    - Term ID: AI-9911
+    - Quality target: 0.90 (established, well-sourced, empirically grounded)
+    - OWL profile: DL + EL compatible
+    - Wikilink count: meets 60-82 target
+    - Reference count: 28 (meets 25-28 target)
+    - OWL axiom count: 36 (meets 35-46 target)
+
+- ### Provenance
+  - sources:: https://arxiv.org/abs/2606.12344, https://arxiv.org/abs/2601.18341, https://github.com/cline/cline, https://kilo.ai/articles/roo-to-kilo-migration-guide, https://frontman.sh/blog/best-open-source-ai-coding-tools-2026/, https://www.qodo.ai/blog/roo-code-vs-cline/, https://artificialanalysis.ai/agents/coding, https://code.claude.com/docs/en/skills, https://www.anthropic.com/research/AI-assistance-coding-skills, https://www.harness.io/blog/harness-excels-in-swe-bench-verified
+  - migration-date:: 2026-06-21T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

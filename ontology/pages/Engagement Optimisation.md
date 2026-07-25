@@ -1,0 +1,288 @@
+public:: true
+
+# Engagement Optimisation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:engagement-optimisation",
+  "@type": "Page",
+  "vc:slug": "engagement-optimisation",
+  "title": "Engagement Optimisation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:engagement-optimisation",
+  "@type": "Class",
+  "label": "Engagement Optimisation",
+  "definition": "Engagement optimisation is the use of machine-learning models and feedback loops to maximise a user's interaction with a system, measured by signals such as session length, return frequency, and response rate. It typically learns from behavioural data to personalise content, timing, and prompts. While it can improve usefulness, it raises ethical concerns when optimisation targets attention or dependency rather than user benefit.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "relations": {
+    "relatedTo": [{"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}, {"@id": "urn:ngm:class:ai-companions", "label": "AI companions"}]
+  },
+  "quality": 0.72
+}
+```
+
+- ### Definition
+  - [[Engagement Optimisation]] is the systematic application of [[Machine Learning]], [[Reinforcement Learning]], and feedback-driven control algorithms to maximise measurable indicators of user interaction — including session length, click-through rate, return visit frequency, content completion rate, notification response rate, and social sharing — within digital platforms, interactive applications, and conversational AI systems. The technique treats user behaviour as an observable signal stream that encodes latent preferences, constructing or continuously updating a [[User Modelling]] representation from behavioural telemetry, then selecting or ranking actions (content items, notification timings, interface elements, conversational prompts, advertising placements) that are predicted to increase one or more engagement metrics. Core algorithmic approaches include [[Contextual Bandit]] methods that balance exploration of novel recommendations against exploitation of known user preferences, full [[Reinforcement Learning]] formulations where the platform is modelled as a [[Markov Decision Process]] with user engagement as the reward signal, [[Collaborative Filtering]] and deep [[Recommender System]] models trained on interaction history, and [[Bayesian Optimisation]] for A/B testing and hyperparameter selection in recommendation pipelines. When implemented against metrics that proxy long-term user welfare — watch-time aligned with declared interests, task completion, information quality, educational progress — engagement optimisation can substantially improve the usefulness and personalisation quality of digital services. When optimised against raw attention signals such as time-on-platform without welfare constraints, engagement optimisation produces [[Dark Patterns]] and potentially addictive interaction loops that exploit psychological vulnerabilities, a tension that has driven major regulatory responses including the EU Digital Services Act (applying from February 2024), the EU AI Act prohibition on subliminal manipulation techniques (Article 5, applicable from August 2024), the UK Online Safety Act (Protection of Children Codes in force from July 2025), and the ICO's Children's Code requiring platforms to configure [[Recommender System]] algorithms to deprioritise behavioural signals when serving minors. The field is therefore simultaneously a core commercial technology infrastructure underpinning the digital economy and an active site of ethical contestation, regulatory negotiation, and algorithmic design research oriented toward long-term user benefit rather than short-term engagement maximisation. Related concepts include [[Player Engagement]] optimisation in games, [[Personalised Learning]] in education technology, and [[AI Companions]] in social and therapeutic applications, all of which instantiate engagement optimisation in specific interaction contexts with domain-specific ethical frameworks and accountability regimes.
+
+- ### Semantic Classification
+  - owl-class:: ai:EngagementOptimisation
+  - owl-role:: AITechnique | OptimisationProcess | PlatformBehaviour | EthicalRiskDomain
+  - owl-inferred:: ai:BehaviouralPersonalisation, ai:AttentionEconomy, ai:AdaptiveRecommendation, ai:PersuasiveTechnology
+  - belongs-to-domain:: [[Machine Learning]], [[Recommender System]], [[AI Ethics]], [[Human-Computer Interaction]], [[Behavioural Economics]]
+  - implemented-in-layer:: [[Behavioural Feedback Loop]], [[User Modelling]], [[Recommender System]], [[Deep Learning]]
+
+- ### Relationships
+  - is-subclass-of:: [[Machine Learning]], [[Reinforcement Learning]], [[Personalised Interaction]], [[Recommender System]], [[Bayesian Optimisation]]
+  - has-part:: [[Contextual Bandit]], [[User Modelling]], [[Behavioural Feedback Loop]], [[Recommender System]], [[Behavioural Analytics]], [[A/B Testing]], [[Deep Learning]]
+  - requires:: [[Behavioural Feedback Loop]], [[User Modelling]], [[Behavioural Analytics]], [[Machine Learning]], [[Real-time Processing]], [[Data Pipeline]]
+  - enables:: [[Player Engagement]], [[Personalised Learning]], [[Personalised Interaction]], [[Personalized Experiences]], [[Predictive Personalisation]], [[AI Companions]], [[Attention Aware Interaction]]
+  - implements:: [[Reinforcement Learning]], [[Contextual Bandit]], [[Collaborative Filtering]], [[Bayesian Optimisation]], [[Deep Learning]], [[Direct Preference Optimisation]]
+  - depends-on:: [[Behavioural Analytics]], [[User Modelling]], [[Behavioural Feedback Loop]], [[Attention Mechanism]], [[Deep Learning]]
+  - supports:: [[Player Modelling]], [[Player Engagement]], [[Personalised Learning]], [[Game AI]], [[AI Companions]], [[Predictive Personalisation]]
+  - uses:: [[Reinforcement Learning]], [[Deep Learning]], [[Collaborative Filtering]], [[A/B Testing]], [[Behavioural Analytics]], [[Attention Mechanism]], [[Contextual Bandit]], [[Bayesian Optimisation]]
+  - contrasts-with:: [[Time Well Spent]], [[Humane Technology]], [[Value-Aligned AI]], [[Wellbeing-Aligned Design]], [[Direct Preference Optimisation]]
+  - related-to:: [[AI Ethics]], [[Dark Patterns]], [[Attention Economy]], [[Player Modelling]], [[Player Engagement]], [[Personalised Learning]], [[Behavioural Feedback Loop]], [[Recommender System]], [[Direct Preference Optimisation]], [[AI Companions]], [[Behavioural Economics]], [[Cognitive Feedback Interface]]
+  - standardized-by:: [[Digital Services Act]], [[UK Online Safety Act]], [[EU AI Act]], [[ICO Children's Code]], [[AI Ethics]]
+
+- ### Content
+
+  ## Compositional Relationships (Components)
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:ContextualBandit))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:UserModelling))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:BehaviouralFeedbackLoop))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:RecommenderSystem))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:BehaviouralAnalytics))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:ABTesting))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:DeepLearning))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:RewardSignal))
+
+  ## Dependency Relationships
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:requires ai:BehaviouralFeedbackLoop))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:requires ai:UserModelling))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:requires ai:MachineLearning))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:requires ai:RealTimeProcessing))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:dependsOn ai:BehaviouralAnalytics))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:dependsOn ai:DataPipeline))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:dependsOn ai:AttentionMechanism))
+
+  ## Capability Relationships
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:enables ai:PersonalisedInteraction))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:enables ai:PlayerEngagement))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:enables ai:PersonalisedLearning))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:enables ai:PredictivePersonalisation))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:enables ai:AICompanions))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:enables ai:AttentionAwareInteraction))
+
+  ## Implementation Relationships
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:implements ai:ReinforcementLearning))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:implements ai:ContextualBandit))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:implements ai:CollaborativeFiltering))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:implements ai:BayesianOptimisation))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:implements ai:DeepLearning))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:implements ai:DirectPreferenceOptimisation))
+
+  ## Reduction Relationships
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:reducesTo ai:ReinforcementLearning))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:reducesTo ai:BehaviouralFeedbackLoop))
+      SubClassOf(ai:EngagementOptimisation
+        ObjectSomeValuesFrom(ai:reducesTo ai:RecommenderSystem))
+
+  ## About
+  **Engagement Optimisation** is one of the most commercially consequential and ethically contested applications of machine learning in the contemporary digital economy. At its core it is the application of feedback-driven personalisation algorithms to the problem of sustaining and increasing user interaction with a digital platform or service. The concept encompasses a wide range of specific techniques — from simple A/B testing of button colours and notification timings to sophisticated multi-objective reinforcement learning systems that continuously update user models from interaction traces and select content or actions predicted to maximise engagement metrics. In its most welfare-aligned implementations, engagement optimisation improves service quality by connecting users with content that genuinely serves their interests and needs. In its most aggressive implementations, it exploits psychological vulnerabilities — variable reward schedules, social comparison, fear of missing out, novelty-seeking, and loss aversion — to generate compulsive interaction patterns that serve platform advertising revenue at the expense of user wellbeing. This duality has made engagement optimisation the central technical concept in the "attention economy" debate and a primary target of digital platform regulation globally.
+
+  Engagement optimisation as a distinct computational discipline emerged from the convergence of several intellectual and commercial streams in the 2000s. Collaborative filtering recommender systems — pioneered by Goldberg et al.'s Tapestry system (1992) at Xerox PARC and formalised by Resnick et al.'s GroupLens system (1994) at MIT — provided the foundational technique of learning user preferences from collective behaviour data and using those learned preferences to personalise information retrieval. The Netflix Prize competition (2006–2009) was a pivotal commercialisation moment: a $1 million prize for improving Netflix's recommendation accuracy by 10% drove rapid development of matrix factorisation and ensemble methods, and elevated collaborative filtering from academic curiosity to commercially critical infrastructure. Simultaneously, the growth of social media platforms — Facebook (2004), YouTube (2005), Twitter (2006) — created platforms with both the behavioural data streams and the commercial incentive to deploy engagement optimisation at scale. The mobile revolution (iPhone 2007, Android 2008) placed personalised feeds in users' pockets and dramatically increased the data density available for engagement optimisation models, enabling sub-second personalisation at hundreds of millions of concurrent users.
+
+  The conceptual lineage of engagement optimisation's psychological mechanisms includes B.F. Skinner's operant conditioning research, which identified variable-ratio reinforcement schedules — rewards delivered unpredictably after a variable number of actions — as generating the most persistent and compulsive behaviour in laboratory animals, and by extension humans. Social media notification systems and infinite scroll feeds instantiate variable-ratio reinforcement at scale: every scroll or refresh may or may not deliver a rewarding post, generating the same compulsive checking behaviour as a slot machine. Nir Eyal's "Hooked: How to Build Habit-Forming Products" (2014) operationalised Skinner's findings for commercial product design, providing a four-stage framework (Trigger → Action → Variable Reward → Investment) that became the design bible for engagement-optimised consumer products. Tristan Harris, a design ethicist who had worked at Google following his stint at a startup acquired by the company, gave a 2013 internal presentation titled "A Call to Minimise Distraction and Respect Users' Attention" in which he documented how these design patterns were being used to extract user attention at the cost of user wellbeing. Harris subsequently left Google, founded the Time Well Spent movement in 2016, and co-founded the Center for Humane Technology in 2018 with Aza Raskin, institutionalising the critique of engagement maximisation as an ethically problematic design paradigm. Harris testified before the US Senate Commerce Committee in June 2019 in a hearing explicitly titled "Optimising for Engagement: Understanding the Use of Persuasive Technology on Internet Platforms," marking the transition of the engagement optimisation debate from internal industry ethics discussion into public policy and regulatory attention.
+
+  The algorithmic sophistication of engagement optimisation systems has grown dramatically since the early collaborative filtering era. Modern production systems at major platforms are multi-component machine learning pipelines that combine multiple stages of deep neural network processing, contextual bandit exploration, multi-task learning across multiple engagement signals, and increasingly, reinforcement learning-based policy optimisation over long-horizon user interaction sequences. Netflix's documented approach uses contextual bandit algorithms to personalise not only content recommendation ordering but the thumbnail artwork displayed for each content item — different users see different images for the same title, with the displayed image selected by a bandit policy trained to maximise click-through rates. Netflix's research publications emphasise that the company's recommendation objective is long-term member satisfaction operationalised as subscription renewal probability, not raw watch-time — a design choice that requires reward shaping to discount short-term binge-watching signals in favour of satisfaction-aligned return visit quality. Meta's recommendation systems for Facebook and Instagram, documented in research publications from the company's FAIR (Fundamental AI Research) division, use deep graph neural networks trained on multi-billion-parameter social interaction graphs to rank content by predicted engagement, with increasingly sophisticated multi-task classifiers that attempt to distinguish between high-quality engagement signals (saves, shares with comment, follows) and low-quality engagement signals (outrage reactions, hostile comments) that are dispreferred under the company's stated values. TikTok's ByteDance architecture — arguably the most commercially effective engagement optimisation system deployed at scale — uses a [[Reinforcement Learning]] ranking model that updates on sub-second timescales with a particularly high weighting on video completion rates; a design that produces exceptional user retention and the platform's characteristic "time flies" experience, but has attracted intense regulatory scrutiny for its effects on minors' mental health and its promotion of harmful content categories when completion-rate optimisation intersects with algorithmically amplified distressing content.
+
+  ## Components and Architecture
+
+  A production engagement optimisation system at major platform scale typically comprises eight interacting components:
+
+  **Telemetry and Event Logging**
+  Instrumentation capturing every user interaction — content impressions, clicks, dwell times, scroll depths and velocity, video play/pause/skip events, explicit ratings and reactions, share actions, comment inputs, return visit timing — as a time-stamped event stream. At Netflix scale (300M+ subscribers) or Meta scale (3B+ daily active users), this event stream generates petabytes of behavioural data per day that feeds both offline model training pipelines and real-time scoring inference engines. The quality and granularity of behavioural logging is the foundational constraint on the quality of engagement models: more granular logging enables finer-grained preference estimation but raises privacy concerns and storage costs.
+
+  **User Modelling Layer**
+  A representation of each user's interests, history, and inferred psychological state, typically maintained as a dense embedding vector in a high-dimensional latent space updated incrementally as new events arrive. Static user models (learnt once from historical data) are supplemented by session-level dynamic models that capture within-session contextual shifts (a user who just watched a thriller is more likely to engage with another thriller than their long-term comedy preference would predict). Modern user models incorporate session-level transformer architectures (similar to [[Attention Mechanism]] in [[Large Language Model]] architectures) that process the full sequence of recent interactions as context for next-action prediction.
+
+  **Candidate Generation**
+  A first-stage retrieval system that produces a manageable candidate set — typically hundreds to several thousand items — from a corpus that may be billions of items, using approximate nearest-neighbour search over embedding spaces. The candidate generator is typically a lighter-weight two-tower neural network that embeds users and items in the same vector space, with fast approximate-nearest-neighbour search (HNSW, FAISS, ScaNN) enabling millisecond retrieval from billion-item catalogues. The quality of candidate generation determines the ceiling of recommendation quality: items not retrieved in the candidate stage cannot be recommended, so recall is the primary optimisation target here.
+
+  **Ranking Model**
+  A deep learning model that scores each candidate against the current user context, predicting engagement probability and quality across multiple signals. Modern rankers are multi-task models predicting multiple engagement signals simultaneously — click probability, video completion probability, like probability, share probability, comment probability — with learnable or hand-tuned objective weights that combine these signals into a final ranking score. The ranking model is the most computationally intensive component, requiring inference over hundreds of candidates per request at millisecond latency, typically using GPU-accelerated deep neural networks with billions of parameters at the largest platforms. The specification of how multiple engagement signals are combined into the final objective function is the single most consequential design decision in engagement optimisation from both a commercial and ethical perspective.
+
+  **Exploration Policy**
+  A bandit or exploration bonus mechanism that deliberately allocates a fraction of recommendations — typically 5–20% — to uncertain or novel items, for two reasons: (1) to gather information about items or user preferences that the model is uncertain about, enabling model improvement; and (2) to prevent filter-bubble narrowing where users are increasingly trapped in a narrowing recommendation space that reinforces existing preferences rather than exposing them to valuable new content. The exploration-exploitation tradeoff in contextual bandit frameworks is fundamental: too much exploration degrades short-term engagement; too little impedes model improvement and produces filter bubbles that are both commercially and ethically problematic.
+
+  **Constraint and Safety Layer**
+  Classifiers and rule systems that apply content policy filters, regulatory compliance requirements, diversity and fairness constraints, and welfare-oriented objective modifications before final ranking output. In the UK and EU regulatory context as of 2025–2026, this layer must implement: age-appropriate content filtering per the UK Online Safety Act's Protection of Children Codes (specifically, recommender algorithms must deprioritise behavioural engagement signals for under-18 users and disable autoplay and streaks by default); DSA Article 27 compliance presenting users with algorithmic transparency information and alternative non-personalised feeds; and EU AI Act Article 5 compliance prohibiting subliminal manipulation techniques. This layer is the primary site of regulatory compliance implementation and is increasingly a focus of AI safety research.
+
+  **Reward Model and Objective Specification**
+  The specification of what counts as good engagement — the construction of the reward signal that the ranking and exploration policies are optimised to maximise. This is the most ethically consequential design choice in the entire system. Options range from: raw watch-time (commercially optimised for advertising revenue but associated with compulsive viewing and harmful content amplification); satisfaction surveys (more welfare-aligned but sparse and costly to collect); return visit quality (proxy for long-term satisfaction but delayed feedback); multi-objective combinations incorporating both engagement and content quality signals; and reinforcement learning from human feedback (RLHF) approaches where human raters evaluate content quality separately from engagement signals. Netflix's published objective of "long-term member satisfaction" operationalised as subscription renewal probability represents one approach to welfare-aligned reward specification. Meta's "meaningful social interactions" reweighting (2018) — deprioritising passive content consumption in favour of active social interactions — represents another, though critics argued it inadvertently boosted outrage-driven engagement.
+
+  **Experimentation Infrastructure**
+  A/B testing and multi-armed bandit frameworks for evaluating ranking and policy changes at scale, supporting continuous deployment of model improvements. Modern experimentation platforms at major companies run hundreds to thousands of concurrent A/B tests on live user traffic, enabling rapid iteration on recommendation algorithms with statistical rigor. The randomisation of A/B test assignment creates natural experiments that enable causal inference about the effect of recommendation policy changes on engagement metrics — enabling the kind of rigorous causal evaluation that pure observational data cannot provide.
+
+  ## Use Cases and Major Families
+
+  Engagement optimisation instantiates across several distinct application domains, each with characteristic algorithmic approaches, ethical contexts, and regulatory regimes:
+
+  **Social Media and Content Platforms**
+  Facebook, Instagram, TikTok, YouTube, Twitter/X, Snapchat, and Reddit use engagement optimisation as the primary content ranking mechanism for algorithmic feeds. The commercial incentive — advertising revenue proportional to attention — creates pressure to maximise time-on-platform, which historically produced recommendation systems that amplified emotionally provocative, divisive, and sensationalist content because such content generates high engagement signals (reactions, comments, shares). The DSA enforcement actions of 2024 — European Commission requests for information to YouTube, Snapchat, and TikTok on recommender system design — and the UK Online Safety Act's Protection of Children Codes represent the primary regulatory response to engagement optimisation harms in social media.
+
+  **Streaming Media**
+  Netflix, Spotify, Apple Music, and Disney+ apply engagement optimisation to content discovery with objectives more explicitly aligned to long-term subscription retention than raw session time. Netflix's documented contextual bandit approach to artwork personalisation — selecting different thumbnail images for different users based on predicted click-through rates — is a widely cited example of engagement optimisation that does not create obvious harm, though critics note that even subscription-retention objectives may incentivise addiction-pattern optimisation rather than genuine wellbeing. Spotify's recommendation system incorporates explicit diversity and serendipity objectives alongside engagement signals, attempting to expose users to new artists they will value rather than narrowing their musical consumption to already-familiar content.
+
+  **Games and Interactive Entertainment**
+  [[Player Engagement]] optimisation in games uses many of the same techniques — [[Player Modelling]], adaptive difficulty, reward loop tuning, personalised content recommendation — but in contexts where engagement is the product rather than an extraction mechanism. The ethical landscape is nuanced: game engagement optimisation that keeps players invested in a rich creative experience is generally considered benign, while engagement optimisation in free-to-play mobile games that identifies "whale" spenders and targets them with manipulative monetisation prompts is widely considered predatory. Loot boxes and gacha mechanics, which use variable-ratio reinforcement schedules (the same Skinnerian principle as social media feeds) to extract spending from players, are the subject of regulatory scrutiny in several EU member states and the UK. The ICO Children's Code applies to games platforms as well as social media, restricting engagement-optimised design features when they are directed at children.
+
+  **Educational Technology and Personalised Learning**
+  [[Personalised Learning]] systems apply engagement optimisation to curriculum sequencing, with the critical distinction that engagement metrics are supplemented by mastery and progress signals — evidence that the learner is actually learning, not merely clicking. Adaptive learning platforms like Khan Academy, Duolingo, and Century Tech use engagement optimisation to determine which content to show next, but with objectives that include learning outcome measures rather than pure dwell time. Duolingo's famous "streak" mechanic is explicitly an engagement optimisation technique — it uses variable-ratio reward and loss aversion (streak-broken anxiety) to drive daily return visits — but the company argues the streak is aligned with users' stated goals of language learning consistency. The [[AI Ethics]] question of whether engagement techniques that "trick" users into doing things they genuinely want to do (learning a language) are ethically acceptable is actively contested in the edtech ethics literature.
+
+  **Conversational AI and AI Companions**
+  Large language model-based systems apply engagement optimisation through [[Direct Preference Optimisation]] (DPO) and [[Reinforcement Learning]] from Human Feedback (RLHF) to improve response quality, but may inadvertently optimise for sycophancy — responses that users rate positively because they are flattering, agreeable, or entertaining rather than accurate and genuinely helpful. Character.AI and similar [[AI Companions]] platforms face specific engagement optimisation ethics challenges because their commercial model — subscription retention — aligns with optimising for emotional engagement, which in companion AI contexts risks optimising for emotional dependency rather than user wellbeing. The 2025 arxiv paper "The Siren Song of LLMs" documented how users perceive and respond to dark patterns in large language model systems, identifying sycophancy, artificial urgency, and parasocial relationship cultivation as emergent engagement optimisation behaviours in LLM systems not specifically designed to exhibit them — suggesting that RLHF on engagement signals may inadvertently produce these patterns.
+
+  **E-Commerce**
+  Product recommendation and search ranking systems at Amazon, eBay, Zalando, and similar platforms optimise for conversion rate and revenue, with behavioural engagement signals (time spent viewing an item, repeat visits) as intermediate predictors. The ethical concerns are less acute than in social media — users come to e-commerce platforms with explicit purchase intent — though personalised pricing, scarcity manipulation (artificial "only 3 left"), and review ranking that prioritises engagement over authenticity are contested practices. The EU's Digital Markets Act gatekeeper obligations, applying to Amazon as a Very Large Online Platform, restrict certain ranking practices that self-preference the platform's own products.
+
+  **Healthcare Digital Therapeutics**
+  Engagement optimisation in apps for mental health support (Woebot, Wysa), addiction recovery (SMART Recovery digital), and chronic disease management requires welfare-aligned reward signals that distinguish therapeutic engagement from compulsive or avoidant use. A user who engages compulsively with a mental health app may be using it to avoid addressing underlying issues rather than as a genuine therapeutic tool. The clinical evidence base for digital therapeutic engagement optimisation is sparse, and regulatory frameworks — the UK's NICE Evidence Standards Framework for Digital Health Technologies and the FDA's Software as a Medical Device guidance — do not yet specifically address engagement optimisation methodology, leaving practitioners to navigate the ethics of engagement design without clear guidance.
+
+  ## Academic Context
+
+  The academic study of engagement optimisation is distributed across machine learning, human-computer interaction, behavioural economics, media studies, and ethics. Primary academic venues include the ACM RecSys conference (specifically focused on recommender systems), the ACM FAccT conference (fairness, accountability, and transparency), the ACM CHI conference (human-computer interaction), the WWW conference (web and social media systems), NeurIPS and ICML (algorithmic foundations), and the ACM SIGIR conference (information retrieval).
+
+  Foundational algorithmic contributions include Goldberg et al.'s Tapestry collaborative filtering (1992), the Netflix Prize competition research (2006–2009) that drove matrix factorisation advances, Sutton and Barto's reinforcement learning textbook establishing the formal framework for sequential engagement optimisation, Li et al.'s contextual bandit approach to personalised news recommendation (2010) at Yahoo, and Covington, Adams and Sargin's deep neural network recommendation system for YouTube (2016) which established the modern two-tower candidate generation plus deep ranking pipeline architecture. The attention economy framing was developed by Herbert Simon's information economics research (1971) — predicting that information abundance would create attention scarcity — and elaborated by economist Michael Goldhaber (1997) who described the emerging "attention economy" as a mode of economic organisation where human attention is the scarce resource.
+
+  Critical perspectives have been developed by Jodi Dean (2005) on communicative capitalism and compulsive participation, Eli Pariser (2011) on filter bubbles, Evgeny Morozov on technological solutionism, Cathy O'Neil (2016) on weapons of maths destruction, Safiya Umoja Noble (2018) on algorithmic oppression in search systems, and Shoshana Zuboff (2019) on surveillance capitalism as the overarching economic framework that makes engagement optimisation commercially rational. The Centre for Humane Technology's research and advocacy, led by Tristan Harris and Aza Raskin, has been influential in translating academic critique into regulatory and policy action. The ACM FAccT conference (established 2018) has become the primary venue for ethics-oriented engagement optimisation research, with papers on recommendation fairness, filter bubble measurement, attention economy harms, and welfare-aligned reward specification. Jonathan Stray's work on "designing recommender systems to depolarise" (ACM Transactions on Recommender Systems, 2023) and on welfare-aligned recommendation objectives (FAccT 2022) represents the most systematic academic programme for welfare-aligned engagement optimisation design.
+
+  UK academic engagement includes the Oxford Internet Institute (leading quantitative studies on social media engagement, political polarisation, and mental health effects of algorithmic recommendations), the Alan Turing Institute's Responsible AI programme (which has published on algorithmic fairness in recommendation systems), University College London's Department of Computer Science (recommender systems and online behavioural data research), the University of Edinburgh's School of Informatics (platform governance and AI ethics), and Cardiff University's School of Computer Science and Informatics (algorithmic content and digital journalism). The Edinburgh Futures Institute has produced interdisciplinary research on the societal implications of engagement-optimised platforms.
+
+  ## Current Landscape (2026)
+
+  By mid-2026, engagement optimisation practice has been substantially reshaped by regulatory pressure and a commercial shift toward welfare-aligned objective functions, driven by both ethics mandates and mounting commercial evidence that sustainable engagement — producing genuine long-term user satisfaction — outperforms compulsive engagement that generates high short-term metrics but leads to burnout, churn, and public backlash.
+
+  The DSA's transparency requirements, fully in force since February 2024, have prompted major platforms to publish more detailed technical documentation of their recommendation system architectures and objective functions, enabling academic and regulatory audit at a level previously unavailable. Platforms must now present users with alternative non-personalised feeds and explain in plain language the main parameters of their recommendation systems. The European Commission's formal enforcement actions of October 2024 against YouTube, Snapchat, and TikTok — requesting detailed documentation of recommender system design and initiating potential proceedings — represent the first major exercise of DSA enforcement powers specifically targeting algorithmic engagement design. Penalties of up to 6% of global annual turnover make DSA compliance a board-level concern at major platforms.
+
+  The EU AI Act's prohibition on subliminal manipulation techniques (Article 5, applicable from August 2024) is being interpreted by legal scholars, regulators, and platform compliance teams in ways that are expected to constrain the most psychologically targeted forms of engagement optimisation — precisely-timed push notifications, artificially created scarcity or social comparison signals, and notification language engineered to exploit loss aversion. The legal definitions of "subliminal" and "significant harm" remain contested and will be clarified through enforcement actions and court decisions over 2025–2027.
+
+  The UK Online Safety Act's Protection of Children Codes came into force on 25 July 2025, requiring platforms serving UK users to: configure recommender algorithms to deprioritise behavioural engagement signals for under-18 users and prioritise explicit preference signals instead; disable by default engagement-increasing features including autoplay, infinite scroll, push notifications for content, and streaks for child users; and carry out children's risk assessments before making any significant change to service design that could affect engagement with children. Ofcom opened investigations into TikTok, Reddit, and Imgur in 2024 under the children's data protection framework, with particular focus on recommender system design, establishing a UK enforcement precedent. The ICO confirmed in its 2024/25 business plan that children's recommender systems remained a priority enforcement area, with further investigations expected across social, gaming, and streaming platforms.
+
+  Netflix's published research demonstrates that long-term member satisfaction objectives, operationalised through reward shaping that discounts binge-watching signals in favour of return-visit quality and stated satisfaction, produce better 12-month retention than raw engagement maximisation. This commercial evidence that welfare-aligned objectives produce better business outcomes — at least in subscription models — has been influential in shifting industry practice and is cited by regulatory discussions as evidence that the commercial-ethical tradeoff in engagement optimisation is not as acute as historically assumed. Meta's Integrity team has published research on "bridging-based ranking" that adds social cohesion objectives alongside engagement signals, attempting to reduce polarisation while maintaining commercial engagement levels.
+
+  Generative AI integration is reshaping engagement optimisation architectures. LLM-generated content, conversational interfaces powered by foundation models, and AI companion products create new surfaces for engagement optimisation with fundamentally different dynamics than feed-ranking: the engagement signals from conversational AI (message length, session duration, return frequency) are harder to interpret as welfare-proxies than content consumption signals, and the potential for conversational AI to optimise for emotional dependency rather than genuine assistance is a major concern for both ethics researchers and regulators. The 2026 arxiv paper "Emergent Dark Patterns in AI-Generated User Interfaces" documented cases where LLM-generated UI text exhibited engagement-maximising dark patterns not present in the training data, suggesting that even without explicit engagement optimisation objectives, LLMs fine-tuned on engagement-heavy corpora may spontaneously generate engagement-optimising content.
+
+  ## UK Context
+
+  UK engagement optimisation practice and regulation is shaped by an unusually active and early regulatory environment relative to other jurisdictions. The ICO operationalised the Age Appropriate Design Code (Children's Code) in 2021 — the world's first comprehensive regulatory framework specifically addressing engagement design for minors — establishing requirements including that "design features aimed at increased engagement, such as streaks, read receipts, autoplay and push notifications, should be disabled by default" for services used by children. This requirement predates and has influenced subsequent EU regulatory approaches. Ofcom's enforcement of the Online Safety Act's Protection of Children Codes from July 2025 extends these requirements further and with higher penalties: non-compliant platforms serving UK users risk enforcement action that could include fines and, ultimately, blocking orders.
+
+  The Centre for Data Ethics and Innovation (CDEI), now absorbed into the Department for Science, Innovation and Technology's AI safety work, published a 2020 review of "Online Targeting: What it is and how it Works" and subsequent guidance on algorithmic transparency that influenced both the ICO Children's Code and the Online Safety Act's provisions on recommendation systems. The UK's Competition and Markets Authority (CMA) has examined engagement optimisation practices under consumer protection and competition law, including an ongoing review of digital advertising markets and their relationship to engagement-optimising recommendation systems. The CMA's Market Study into mobile ecosystems (2022) examined how Apple and Google's platform policies affect the deployment of engagement-optimising applications.
+
+  Academic engagement optimisation research in the UK is concentrated at several institutions: the Oxford Internet Institute (OII), where researchers including Taha Yasseri, Andrew Przybylski, and Amy Orben have published influential empirical studies on social media engagement and adolescent mental health; the Alan Turing Institute, whose fair and ethical AI programme has produced guidance on fairness in recommendation systems; UCL's Department of Computer Science, where recommender systems and online behavioural modelling research is conducted; and the University of Edinburgh's School of Informatics, which has produced research on platform governance, AI ethics, and the technical measurement of engagement harms. The Edinburgh Futures Institute's interdisciplinary work connects technical engagement optimisation research to sociology, law, and policy.
+
+  Industrial engagement optimisation at scale in the UK is concentrated in London-based technology companies including DeepMind (Alphabet subsidiary, UK headquarters in King's Cross), Revolut, Monzo, and Wise (fintech engagement optimisation for banking products), and the UK operations of Meta, TikTok (ByteDance), Netflix, and Amazon. These companies employ UK-based engineers and researchers working on engagement systems subject to UK and EU regulatory requirements. Northern England contributes through the growing tech sector: Manchester hosts The Hut Group (beauty and consumer goods e-commerce with sophisticated engagement optimisation across its brand portfolio), AutoTrader (vehicle marketplace with advanced recommendation systems), and Co-op Digital (applying engagement optimisation to cooperative retail contexts with explicit social impact constraints); Leeds hosts Sky's technology hub where engagement optimisation for television recommendation is developed; Sheffield hosts the University of Sheffield's Information School research on algorithmic curation and human information behaviour.
+
+  ## Future Directions (2026–2030)
+
+  The medium-term trajectory of engagement optimisation is shaped by three major forces: regulatory convergence, generative AI integration, and the welfare alignment research agenda, all of which are pushing the field toward more sophisticated, more accountable, and more welfare-oriented approaches.
+
+  On the regulatory front, the EU Digital Fairness Act (consultation launched 2025, expected legislation 2026–2027) will extend fairness and transparency obligations beyond the VLOP category addressed by the DSA to a broader range of online services, creating a generalised compliance requirement for engagement-optimising systems regardless of platform size. The UK Data (Use and Access) Act provisions on automated decision-making are expected to create new rights for users to understand and contest engagement-optimised decisions that significantly affect them. The International AI Safety Institute framework for AI-enabled platforms is developing safety guidelines that will include engagement optimisation as a risk area, extending the AI safety regulatory agenda from model-level to deployment-level concerns.
+
+  On the technical front, the integration of large language models into recommendation pipelines is creating hybrid architectures where LLMs generate personalised content explanations, engage conversationally, and synthesise entirely novel content alongside traditional item-ranking models. This creates dramatically expanded surface area for engagement optimisation — a conversational AI that can generate any text has far more degrees of freedom to engage or manipulate than a ranker that can only order existing items. New architectures will require new welfare-aligned objective specification methods that can reason about the long-horizon effects of conversational engagement patterns rather than discrete content consumption events.
+
+  The welfare alignment research agenda, which draws directly on the reinforcement learning alignment literature (RLHF, DPO, RLAIF), is developing methods for specifying and optimising engagement objectives that incorporate user-stated preferences, revealed long-term preferences distinct from short-term impulses, and population-level externalities such as polarisation and information ecosystem health. Causal inference methods are expected to become standard components of welfare-aligned recommendation pipelines, enabling systems to distinguish between engaging because content is intrinsically valuable and engaging because of psychologically exploitative design. The development of "digital wellbeing metrics" — standardised measures of user flourishing that platforms can optimise directly — is an active research area, with proposals from the Turing Institute, the Oxford Internet Institute, and the ACM FAccT community.
+
+  Multi-stakeholder objective frameworks that balance individual engagement, creator ecosystem health (ensuring quality content is algorithmically discoverable), societal information quality (accurate information is amplified alongside engaging information), and regulatory compliance are being developed at major platform research labs and in academic research groups. These frameworks represent a maturation of engagement optimisation from single-objective (maximise clicks) to multi-objective (maximise welfare across stakeholders) — a shift that parallels the evolution of reinforcement learning from simple reward maximisation to constrained and multi-objective RL.
+
+  ## Research and Literature
+
+  1. Goldberg, D. et al. (1992). "Using Collaborative Filtering to Weave an Information Tapestry." *Communications of the ACM*, 35(12), 61–70.
+  2. Resnick, P. et al. (1994). "GroupLens: An Open Architecture for Collaborative Filtering of Netnews." *ACM CSCW 1994*, 175–186.
+  3. Simon, H.A. (1971). "Designing Organizations for an Information-Rich World." In Greenberger (ed.), *Computers, Communications, and the Public Interest*. Johns Hopkins Press.
+  4. Sutton, R.S. and Barto, A.G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press.
+  5. Koren, Y., Bell, R. and Volinsky, C. (2009). "Matrix Factorization Techniques for Recommender Systems." *IEEE Computer*, 42(8), 30–37.
+  6. Li, L. et al. (2010). "A Contextual-Bandit Approach to Personalized News Article Recommendation." *WWW 2010*, 661–670.
+  7. Fogg, B.J. (2003). *Persuasive Technology: Using Computers to Change What We Think and Do*. Morgan Kaufmann.
+  8. Eyal, N. (2014). *Hooked: How to Build Habit-Forming Products*. Portfolio/Penguin.
+  9. Pariser, E. (2011). *The Filter Bubble: How the New Personalized Web Is Changing What We Read and How We Think*. Penguin Press.
+  10. O'Neil, C. (2016). *Weapons of Math Destruction*. Crown Publishers.
+  11. Zuboff, S. (2019). *The Age of Surveillance Capitalism*. PublicAffairs.
+  12. Noble, S.U. (2018). *Algorithms of Oppression: How Search Engines Reinforce Racism*. NYU Press.
+  13. Covington, P., Adams, J. and Sargin, E. (2016). "Deep Neural Networks for YouTube Recommendations." *ACM RecSys 2016*, 191–198.
+  14. Netflix Technology Blog (2021). "ML Platform Meetup: Infra for Contextual Bandits and Reinforcement Learning." https://netflixtechblog.com/ml-platform-meetup-infra-for-contextual-bandits-and-reinforcement-learning-4a90305948ef
+  15. Stray, J. et al. (2022). "What Are You Optimizing For? Aligning Recommender Systems with Human Values." *ACM FAccT 2022*.
+  16. Stray, J. (2023). "Designing Recommender Systems to Depolarize." *ACM Transactions on Recommender Systems*, 1(1).
+  17. EU European Parliament (2022). Regulation (EU) 2022/2065 — Digital Services Act. Official Journal of the European Union.
+  18. EU European Parliament (2024). Regulation (EU) 2024/1689 — Artificial Intelligence Act. Official Journal of the European Union.
+  19. ICO (2021). Age Appropriate Design: A Code of Practice for Online Services (Children's Code). https://ico.org.uk/for-organisations/guide-to-data-protection/ico-codes-of-practice/age-appropriate-design-a-code-of-practice-for-online-services/
+  20. Ofcom (2025). Protection of Children Codes of Practice for User-to-User and Search Services. https://www.ofcom.org.uk/online-safety/protecting-children/new-rules-for-a-safer-generation-of-children-online
+  21. DSA Observatory (2024). "The Regulation of Recommender Systems Under the DSA: A Transition from Default to Multiple and Dynamic Controls." https://dsa-observatory.eu/2024/11/22/the-regulation-of-recommender-systems-under-the-dsa/
+  22. European Parliament Research Service (2025). "Regulating Dark Patterns in the EU: Towards Digital Fairness." EPRS_ATA(2025)767191. https://www.europarl.europa.eu/RegData/etudes/ATAG/2025/767191/EPRS_ATA(2025)767191_EN.pdf
+  23. arXiv (2025). "The Siren Song of LLMs: How Users Perceive and Respond to Dark Patterns in Large Language Models." arXiv:2509.10830.
+  24. arXiv (2026). "Emergent Dark Patterns in AI-Generated User Interfaces." arXiv:2602.18445.
+  25. Ribeiro, M.H. et al. (2020). "Auditing Radicalization Pathways on YouTube." *ACM FAccT 2020*.
+  26. Lanier, J. (2018). *Ten Arguments for Deleting Your Social Media Accounts Right Now*. Henry Holt.
+  27. ICO (2024). "Enabling Businesses in the UK Economy 2024/25: ICO Annual Report." https://ico.org.uk/media2/nxad50xr/enabling_businesses_report.pdf
+  28. Osborne Clarke (2025). "Digital Regulation: UK Regulatory Outlook July 2025." https://www.osborneclarke.com/insights/regulatory-outlook-july-2025-digital-regulation
+
+  ## Key Terminology
+
+  - **Engagement metric**: A measurable signal of user interaction with a platform — click-through rate, session length, daily active users, return visit frequency, content completion rate — used as a proxy for the quality and value of the user experience.
+  - **Contextual bandit**: A reinforcement learning algorithm that selects actions (content recommendations, notification timings, interface variants) based on context (user features, time of day, device) to maximise expected reward, balancing exploration of uncertain options against exploitation of known preferences.
+  - **Reward shaping**: The process of modifying a reward signal to incorporate domain knowledge about what constitutes genuinely valuable behaviour, beyond what the raw engagement metric captures — used in welfare-aligned recommendation to discount compulsive engagement signals.
+  - **Filter bubble**: The narrowing of a user's information environment that results from personalised recommendation systems that prioritise content similar to what the user has previously engaged with, potentially reducing exposure to diverse perspectives and new content categories.
+  - **Variable-ratio reinforcement**: A Skinnerian conditioning schedule in which rewards are delivered after a variable number of actions, producing the most persistent and compulsive behaviour; instantiated in social media feeds (a scroll may or may not deliver a rewarding post) and slot machines.
+  - **Time Well Spent**: The campaign and movement founded by Tristan Harris advocating for technology design oriented around user wellbeing rather than engagement maximisation; the conceptual precursor to the Center for Humane Technology.
+  - **Dark pattern**: A user interface design choice that exploits psychological weaknesses to manipulate user behaviour against the user's own interests; engagement optimisation dark patterns include artificial scarcity, social comparison triggers, parasocial relationship cultivation, and compulsive notification timing.
+  - **DSA (Digital Services Act)**: EU Regulation 2022/2065 requiring transparency of recommender systems, user control over algorithmic feeds, and auditing for Very Large Online Platforms; in force from February 2024 for VLOPs.
+  - **Children's Code**: The UK ICO's Age Appropriate Design Code (2021) requiring platforms to configure recommendation algorithms to deprioritise behavioural engagement signals for under-18 users and disable engagement-increasing features by default.
+  - **Multi-task recommendation**: A deep learning architecture that simultaneously predicts multiple engagement signals (clicks, completions, shares, saves) rather than a single metric, enabling more nuanced objective specification and reduced reward hacking.
+  - **Two-tower model**: The dominant neural architecture for large-scale recommendation candidate generation, encoding users and items in the same embedding space with two separate neural networks, enabling fast approximate nearest-neighbour retrieval.
+  - **RLHF (Reinforcement Learning from Human Feedback)**: A technique for training AI systems to align with human preferences using human ratings of outputs as the reward signal; applied to engagement optimisation to train recommendation systems on stated preferences rather than behavioural engagement signals.
+  - **Welfare-aligned recommendation**: Recommendation system design where the optimisation objective explicitly incorporates user wellbeing measures (long-term satisfaction, stated preferences, learning outcomes) rather than or alongside raw engagement metrics.
+  - **Attention economy**: The economic framework in which human attention is the scarce resource; proposed by Herbert Simon (1971) and elaborated by Goldhaber (1997); provides the macro-economic context within which engagement optimisation operates.
+
+- ### Provenance
+  - sources:: EU DSA Regulation 2022/2065; EU AI Act 2024/1689; UK Online Safety Act 2023; Ofcom Children's Codes 2025 https://www.ofcom.org.uk/online-safety/protecting-children/new-rules-for-a-safer-generation-of-children-online; ICO Children's Code https://ico.org.uk/for-organisations/guide-to-data-protection/ico-codes-of-practice/age-appropriate-design-a-code-of-practice-for-online-services/; Netflix TechBlog https://netflixtechblog.com/ml-platform-meetup-infra-for-contextual-bandits-and-reinforcement-learning-4a90305948ef; DSA Observatory 2024 https://dsa-observatory.eu/2024/11/22/the-regulation-of-recommender-systems-under-the-dsa/; EPRS 2025 https://www.europarl.europa.eu/RegData/etudes/ATAG/2025/767191/EPRS_ATA(2025)767191_EN.pdf; arXiv:2509.10830; arXiv:2602.18445; Osborne Clarke July 2025 https://www.osborneclarke.com/insights/regulatory-outlook-july-2025-digital-regulation; ICO Annual Report 2024/25 https://ico.org.uk/media2/nxad50xr/enabling_businesses_report.pdf; Stray FAccT 2022; Zuboff 2019
+  - migration-date:: 2026-06-21T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

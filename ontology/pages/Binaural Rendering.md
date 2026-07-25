@@ -1,0 +1,59 @@
+public:: true
+
+# Binaural Rendering
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:binaural-rendering",
+  "@type": "Page",
+  "vc:slug": "binaural-rendering",
+  "title": "Binaural Rendering",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:binaural-rendering",
+  "@type": "Class",
+  "label": "Binaural Rendering",
+  "definition": "Binaural rendering is the audio signal processing technique that synthesises a three-dimensional sound field deliverable over standard headphones by convolving audio sources with head-related transfer functions (HRTFs) that model the acoustic filtering imposed by the human head, pinnae, and torso. The result is the perceptual illusion of sounds emanating from specific spatial locations outside the headphones, enabling immersive audio experiences in virtual and augmented reality environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:convolution", "label": "Convolution"},
+      {"@id": "urn:ngm:class:audio-processing", "label": "Audio Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-audio", "label": "Immersive Audio"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
+      {"@id": "urn:ngm:class:audio-spatialization", "label": "Audio Spatialization"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - Binaural rendering is the computational process of generating a two-channel audio signal that, when delivered through headphones, reproduces the spatial perception of a three-dimensional sound environment. It operates by convolving each mono audio source signal with a pair of head-related transfer functions—one per ear—that encode the frequency-dependent, direction-specific filtering caused by the outer ear, head shadow, and torso reflections. The technique is foundational to [[Immersive Audio]] in [[Extended Reality (XR)]] applications, enabling accurate localisation of virtual sound sources in azimuth, elevation, and distance without loudspeaker arrays.
+
+- ### Relationships
+  - Binaural rendering [[uses]] [[Convolution]] as the core DSP operation, applying HRTF filters in either the time domain or the frequency domain via fast convolution. It [[uses]] [[Audio Processing]] pipelines for room acoustics modelling, distance attenuation, and Doppler simulation. The technique [[enables]] [[Immersive Audio]] experiences and contributes to overall [[Immersive Experience]] in XR applications. It is [[relatedTo]] [[Extended Reality (XR)]] as its primary deployment context and to [[Audio Spatialization]] as the broader spatial audio discipline encompassing loudspeaker-based methods as well.
+
+- ### Content
+  - Binaural audio has scientific roots in the nineteenth century, when Clement Ader demonstrated a binaural telephone system at the 1881 Paris Electrical Exhibition. The perceptual study of HRTFs advanced substantially in the 1970s–1990s through psychoacoustic research at MIT Lincoln Laboratory, Kemar dummy head measurements, and the work of Jens Blauert codified in his 1974 textbook on spatial hearing. The first real-time binaural rendering systems emerged in the late 1980s for military aviation simulators, where accurate audio spatial cues augmented situational awareness.
+
+  - Technically, an HRTF is measured by placing microphones in the ear canals of a subject or dummy head, playing impulse responses from loudspeakers at numerous positions on a sphere, and recording the resulting room impulse responses. These are parameterised as finite impulse response (FIR) filters and stored in databases such as the CIPIC and SADIE II sets. Real-time convolution is achieved using partitioned convolution in the frequency domain to meet low-latency requirements (below 10 ms). Head tracking via inertial measurement units feeds dynamic HRTF interpolation to maintain stable externalised sounds as the listener moves.
+
+  - The spatial audio ecosystem has expanded substantially with the rise of consumer VR headsets. Platforms including Meta's Audio SDK, Apple's AUSpatialMixer, Microsoft's Spatial Sound for Windows, and Sony's 360 Reality Audio incorporate binaural rendering engines. Ambisonics (first- and higher-order) is frequently used as an intermediate representation that is decoded to binaural at runtime. Standards from the W3C Web Audio API and MPEG-H 3D Audio specify binaural rendering interfaces for browser and streaming delivery.
+
+  - By 2024–2025 machine learning is reshaping binaural rendering through personalised HRTF estimation from anthropometric measurements or photographs of the listener's ears, eliminating the need for costly individual HRTF measurement sessions. Neural network-based binaural rendering can generate plausible HRTFs for novel directions not present in measured datasets and has shown improved externalisation over generic HRTFs. Apple's AirPods Pro with personalised spatial audio (introduced 2022) represents the first mass-market deployment of personalised binaural rendering.
+

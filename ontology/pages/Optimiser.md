@@ -1,0 +1,225 @@
+public:: true
+
+# Optimiser
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:0285607f2babf8e9b28ce737788d9cffd5a6521f61d3807219a1042dc58c2848",
+  "@type": "Page",
+  "vc:slug": "optimiser",
+  "title": "Optimiser",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "MetaverseDomain"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0046"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Optimiser"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:optimiser",
+  "@type": "Class",
+  "label": "Optimiser",
+  "definition": "An Optimiser is an algorithm that adjusts model parameters during training to minimise a loss function, guiding convergence towards an optimal solution. Modern optimisers such as Adam, RMSProp, and AdaGrad extend stochastic gradient descent with adaptive learning rates, momentum accumulation, and second-moment estimates, enabling faster and more stable training of deep neural networks across diverse tasks.",
+  "domain": "machine-learning",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:learning-rate", "label": "Learning Rate"},
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:convergence", "label": "Convergence"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
+      {"@id": "urn:ngm:class:momentum", "label": "Momentum"},
+      {"@id": "urn:ngm:class:adaptive-learning-rate", "label": "Adaptive Learning Rate"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
+      {"@id": "urn:ngm:class:weight-initialisation", "label": "Weight Initialisation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:second-order-optimisation", "label": "Second-Order Optimisation"},
+      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"},
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
+      {"@id": "urn:ngm:class:gradient-clipping", "label": "Gradient Clipping"}
+    ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
+    {"@id": "urn:ngm:class:gradient-based-optimizer", "label": "Gradient-Based Optimizer"}
+  ],
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:optimiser:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:0285607f2babf8e9b28ce737788d9cffd5a6521f61d3807219a1042dc58c2848"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[MetaverseDomain]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - An Optimiser is an algorithm that adjusts model parameters during training to minimise a loss function. Modern optimisers such as Adam and RMSProp extend stochastic gradient descent with adaptive learning rates and momentum, enabling faster and more stable convergence of deep neural networks.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:Optimiser
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
+- ### Relationships
+  - requires [[Gradient Descent]]
+  - requires [[Loss Function]]
+  - enables [[Model Training]]
+  - enables [[Deep Learning]]
+  - relatedTo [[Stochastic Gradient Descent]]
+  - relatedTo [[Hyperparameter]]
+  - relatedTo [[Backpropagation]]
+- ### Content
+  ## Academic Context
+  - Brief contextual overview
+  - The term "optimiser" broadly refers to a system, algorithm, or process designed to improve the efficiency, performance, or resource usage of a given target, whether software, hardware, or business workflow
+  - In computer science, optimisers are foundational in compilers, runtime environments, and performance engineering, aiming to reduce execution time, memory footprint, or energy consumption
+  - Key developments and current state
+		- Modern optimisers increasingly leverage machine learning and real-time analytics to adapt to dynamic workloads and user needs
+		- The field has expanded beyond traditional code optimisation to include cloud resource management, business process automation, and energy efficiency
+  - Academic foundations
+		- Rooted in algorithmic complexity theory, systems engineering, and operations research
+		- Influential early work includes Aho and Ullman’s compiler design principles and Knuth’s analysis of algorithms
+  ## Current Landscape (2025)
+  - Industry adoption and implementations
+  - Optimisers are now integral to cloud platforms, DevOps pipelines, and enterprise IT infrastructure
+  - Notable organisations and platforms
+		- Major cloud providers (AWS, Azure, Google Cloud) offer built-in optimisation tools for resource allocation and cost management
+		- Specialised platforms such as Sedai and RapidFort provide AI-driven performance tuning for cloud-native applications
+		- UK and North England examples where relevant
+			- Manchester-based startups are pioneering AI-driven workflow optimisation for healthcare and logistics
+			- Leeds and Sheffield universities collaborate with local businesses on energy-efficient computing projects
+			- Newcastle’s digital innovation hub supports optimisation research in smart city infrastructure
+  - Technical capabilities and limitations
+		- Modern optimisers excel at automating routine tasks, predicting bottlenecks, and dynamically scaling resources
+		- Limitations include the complexity of multi-objective optimisation and the risk of overfitting to specific workloads
+  - Standards and frameworks
+		- Industry standards such as ISO/IEC 25010 for software quality and the Green Software Foundation’s guidelines for energy-efficient coding
+		- Open-source frameworks like Apache JMeter and Locust are widely used for performance testing and optimisation
+  ## Research & Literature
+  - Key academic papers and sources
+  - Aho, A. V., & Ullman, J. D. (1977). Principles of Compiler Design. Addison-Wesley. https://doi.org/10.5555/578785
+  - Knuth, D. E. (1973). The Art of Computer Programming, Volume 3: Sorting and Searching. Addison-Wesley. https://doi.org/10.5555/578786
+  - Green Software Foundation. (2023). Green Software Principles. https://greensoftware.foundation
+  - Sedai. (2025). Software Performance Optimization: The Expert Guide. https://www.sedai.io/blog/software-performance-optimization-expert-guide
+  - RapidFort. (2025). What is Software Optimization? https://www.rapidfort.com/blog/what-is-software-optimization
+  - Ongoing research directions
+  - Multi-objective optimisation for cloud-native applications
+  - Energy-efficient algorithms and green coding practices
+  - AI-driven predictive maintenance and resource allocation
+  ## UK Context
+  - British contributions and implementations
+  - UK universities and research institutions are at the forefront of energy-efficient computing and AI-driven optimisation
+  - The Green Software Foundation has strong UK participation, influencing national standards and industry practices
+  - North England innovation hubs (if relevant)
+  - Manchester’s Digital Innovation Factory supports startups in AI and workflow optimisation
+  - Leeds and Sheffield universities collaborate on energy-efficient computing projects with local businesses
+  - Newcastle’s digital innovation hub focuses on smart city infrastructure and optimisation research
+  - Regional case studies
+  - Manchester’s NHS Trust uses AI-driven optimisation to streamline patient scheduling and resource allocation
+  - Leeds-based logistics company implements real-time route optimisation for delivery fleets
+  - Newcastle’s smart city project leverages optimisation algorithms for traffic management and energy distribution
+  ## Future Directions
+  - Emerging trends and developments
+  - Increased integration of AI and machine learning in optimisation tools
+  - Growing emphasis on energy efficiency and sustainability in software and hardware design
+  - Expansion of optimisation techniques to new domains such as quantum computing and edge computing
+  - Anticipated challenges
+  - Balancing performance gains with energy consumption and environmental impact
+  - Ensuring fairness and transparency in AI-driven optimisation algorithms
+  - Managing the complexity of multi-objective optimisation in dynamic environments
+  - Research priorities
+  - Developing robust multi-objective optimisation frameworks
+  - Advancing energy-efficient algorithms and green coding practices
+  - Exploring the potential of quantum and edge computing for optimisation
+  ## References
+  1. Aho, A. V., & Ullman, J. D. (1977). Principles of Compiler Design. Addison-Wesley. https://doi.org/10.5555/578785
+  2. Knuth, D. E. (1973). The Art of Computer Programming, Volume 3: Sorting and Searching. Addison-Wesley. https://doi.org/10.5555/578786
+  3. Green Software Foundation. (2023). Green Software Principles. https://greensoftware.foundation
+  4. Sedai. (2025). Software Performance Optimization: The Expert Guide. https://www.sedai.io/blog/software-performance-optimization-expert-guide
+  5. RapidFort. (2025). What is Software Optimization? https://www.rapidfort.com/blog/what-is-software-optimization
+  6. ISO/IEC 25010. (2011). Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. https://www.iso.org/standard/35733.html
+  7. Index.dev. (2025). Code Optimization Strategies for Faster Software in 2025. https://www.index.dev/blog/code-optimization-strategies
+  8. iolo. (2025). The Future of PC Optimization: Trends to Watch in 2025. https://www.iolo.com/resources/articles/future-of-pc-optimization-trends-2025/
+  9. Kissflow. (2025). Business Process Optimization: The Ultimate Guide for 2025. https://kissflow.com/workflow/bpm/business-process-optimization/
+  10. Wikipedia. (2025). Program optimization. https://en.wikipedia.org/wiki/Program_optimization
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,0 +1,560 @@
+public:: true
+
+# Agent-to-Agent Protocol
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:agent-to-agent-protocol",
+  "@type": "Page",
+  "vc:slug": "agent-to-agent-protocol",
+  "title": "Agent-to-Agent Protocol",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {"@id": "urn:visionflow:linked:agent-communication-protocol", "vc:label": "Agent Communication Protocol"},
+    {"@id": "urn:visionflow:linked:inter-agent-communication", "vc:label": "Inter-Agent Communication"},
+    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
+    {"@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "Multi-Agent System"},
+    {"@id": "urn:visionflow:linked:task-delegation", "vc:label": "Task Delegation"},
+    {"@id": "urn:visionflow:linked:service-discovery", "vc:label": "Service Discovery"},
+    {"@id": "urn:visionflow:linked:message-passing", "vc:label": "Message Passing"},
+    {"@id": "urn:visionflow:linked:json-data-interchange-format-ld", "vc:label": "JSON-LD"},
+    {"@id": "urn:visionflow:linked:mutual-authentication", "vc:label": "Mutual Authentication"},
+    {"@id": "urn:visionflow:linked:decentralised-identifier", "vc:label": "Decentralised Identifier"},
+    {"@id": "urn:visionflow:linked:agent2-agent-protocol-google-2025", "vc:label": "Agent2Agent Protocol (Google 2025)"},
+    {"@id": "urn:visionflow:linked:fipa-acl", "vc:label": "FIPA ACL"},
+    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
+    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
+    {"@id": "urn:visionflow:linked:remote-procedure-call", "vc:label": "Remote Procedure Call"},
+    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
+    {"@id": "urn:visionflow:linked:prompt-injection", "vc:label": "Prompt Injection"},
+    {"@id": "urn:visionflow:linked:microservices-architecture", "vc:label": "Microservices Architecture"},
+    {"@id": "urn:visionflow:linked:web-of-things", "vc:label": "Web of Things"},
+    {"@id": "urn:visionflow:linked:agent-interoperability", "vc:label": "Agent Interoperability"},
+    {"@id": "urn:visionflow:linked:oauth-2-0", "vc:label": "OAuth 2.0"},
+    {"@id": "urn:visionflow:linked:agent-card", "vc:label": "Agent Card"},
+    {"@id": "urn:visionflow:linked:task-lifecycle", "vc:label": "Task Lifecycle"},
+    {"@id": "urn:visionflow:linked:server-sent-events", "vc:label": "Server-Sent Events"},
+    {"@id": "urn:visionflow:linked:json-rpc-2-0", "vc:label": "JSON-RPC 2.0"},
+    {"@id": "urn:visionflow:linked:agent-identity", "vc:label": "Agent Identity"},
+    {"@id": "urn:visionflow:linked:capability-advertisement", "vc:label": "Capability Advertisement"},
+    {"@id": "urn:visionflow:linked:contract-net-protocol", "vc:label": "Contract Net Protocol"},
+    {"@id": "urn:visionflow:linked:kqml", "vc:label": "KQML"},
+    {"@id": "urn:visionflow:linked:multi-agent-orchestration", "vc:label": "Multi-Agent Orchestration"},
+    {"@id": "urn:visionflow:linked:speech-act-theory", "vc:label": "Speech Act Theory"},
+    {"@id": "urn:visionflow:linked:agent-network-protocol", "vc:label": "Agent Network Protocol"},
+    {"@id": "urn:visionflow:linked:agent-communication-protocol-ibm", "vc:label": "Agent Communication Protocol (IBM ACP)"},
+    {"@id": "urn:visionflow:linked:agentic-internet", "vc:label": "Agentic Internet"},
+    {"@id": "urn:visionflow:linked:coordination-protocol", "vc:label": "Coordination Protocol"},
+    {"@id": "urn:visionflow:linked:distributed-systems", "vc:label": "Distributed Systems"},
+    {"@id": "urn:visionflow:linked:http-protocol", "vc:label": "HTTP Protocol"},
+    {"@id": "urn:visionflow:linked:linux-foundation", "vc:label": "Linux Foundation"},
+    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
+    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
+    {"@id": "urn:visionflow:linked:swarm-intelligence", "vc:label": "Swarm Intelligence"},
+    {"@id": "urn:visionflow:linked:autonomous-task-execution", "vc:label": "Autonomous Task Execution"},
+    {"@id": "urn:visionflow:linked:negotiation", "vc:label": "Negotiation"},
+    {"@id": "urn:visionflow:linked:error-handling", "vc:label": "Error Handling"},
+    {"@id": "urn:visionflow:linked:state-management", "vc:label": "State Management"},
+    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
+    {"@id": "urn:visionflow:linked:trust-framework", "vc:label": "Trust Framework"},
+    {"@id": "urn:visionflow:linked:rate-limiting", "vc:label": "Rate Limiting"},
+    {"@id": "urn:visionflow:linked:api-gateway", "vc:label": "API Gateway"},
+    {"@id": "urn:visionflow:linked:webhook", "vc:label": "Webhook"},
+    {"@id": "urn:visionflow:linked:agent-payments-protocol", "vc:label": "Agent Payments Protocol"},
+    {"@id": "urn:visionflow:linked:lang-chain-agent-framework", "vc:label": "LangChain Agent Framework"},
+    {"@id": "urn:visionflow:linked:autogen", "vc:label": "AutoGen"},
+    {"@id": "urn:visionflow:linked:crewai", "vc:label": "CrewAI"},
+    {"@id": "urn:visionflow:linked:vertex-ai", "vc:label": "Vertex AI"},
+    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
+    {"@id": "urn:visionflow:linked:access-control", "vc:label": "Access Control"},
+    {"@id": "urn:visionflow:linked:json-web-signature", "vc:label": "JSON Web Signature"},
+    {"@id": "urn:visionflow:linked:supply-chain-automation", "vc:label": "Supply Chain Automation"},
+    {"@id": "urn:visionflow:linked:enterprise-ai", "vc:label": "Enterprise AI"},
+    {"@id": "urn:visionflow:linked:jade-framework", "vc:label": "JADE Framework"},
+    {"@id": "urn:visionflow:linked:openai-swarm", "vc:label": "OpenAI Swarm"},
+    {"@id": "urn:visionflow:linked:agent-orchestrator", "vc:label": "Agent Orchestrator"},
+    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"}
+  ],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:agent-to-agent-protocol",
+  "@type": "Class",
+  "label": "Agent-to-Agent Protocol",
+  "definition": "Agent-to-Agent Protocol is a class of communication specifications that define how autonomous AI agents discover one another, advertise capabilities, delegate tasks, and exchange results directly — without requiring a centralised broker — enabling peer-to-peer coordination between agents built by different organisations or on different frameworks. These protocols treat agents as first-class addressable entities with discoverable skill sets and negotiable service contracts.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:agent-communication-protocol",
+    "label": "Agent Communication Protocol"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Decentralised Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:json-rpc-2-0",
+        "label": "JSON-RPC 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:agent-identity",
+        "label": "Agent Identity"
+      },
+      {
+        "@id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:agent2-agent-protocol-google-2025",
+        "label": "Agent2Agent Protocol (Google 2025)"
+      },
+      {
+        "@id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA ACL"
+      },
+      {
+        "@id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "@id": "urn:ngm:class:agent-network-protocol",
+        "label": "Agent Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:web-of-things",
+        "label": "Web of Things"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:agent-interoperability-protocol",
+      "label": "Agent Interoperability Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:peer-agent-protocol",
+      "label": "Peer Agent Protocol"
+    }
+  ],
+  "quality": 0.92,
+  "provenance": {
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:agent-to-agent-protocol:20260620",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:agent-to-agent-protocol"
+  },
+  "vc:resolutions": [
+    {"raw": "[[Agent Communication Protocol]]", "resolved": "urn:visionflow:linked:agent-communication-protocol", "kind": "StubLink"},
+    {"raw": "[[Inter-Agent Communication]]", "resolved": "urn:visionflow:linked:inter-agent-communication", "kind": "StubLink"},
+    {"raw": "[[Agentic Workflow]]", "resolved": "urn:visionflow:linked:agentic-workflow", "kind": "StubLink"},
+    {"raw": "[[Multi-Agent System]]", "resolved": "urn:visionflow:linked:multi-agent-system", "kind": "StubLink"},
+    {"raw": "[[Task Delegation]]", "resolved": "urn:visionflow:linked:task-delegation", "kind": "StubLink"},
+    {"raw": "[[Service Discovery]]", "resolved": "urn:visionflow:linked:service-discovery", "kind": "StubLink"},
+    {"raw": "[[Message Passing]]", "resolved": "urn:visionflow:linked:message-passing", "kind": "StubLink"},
+    {"raw": "[[JSON-LD]]", "resolved": "urn:visionflow:linked:json-data-interchange-format-ld", "kind": "StubLink"},
+    {"raw": "[[Mutual Authentication]]", "resolved": "urn:visionflow:linked:mutual-authentication", "kind": "StubLink"},
+    {"raw": "[[Decentralised Identifier]]", "resolved": "urn:visionflow:linked:decentralised-identifier", "kind": "StubLink"},
+    {"raw": "[[Agent2Agent Protocol (Google 2025)]]", "resolved": "urn:visionflow:linked:agent2-agent-protocol-google-2025", "kind": "StubLink"},
+    {"raw": "[[FIPA ACL]]", "resolved": "urn:visionflow:linked:fipa-acl", "kind": "StubLink"},
+    {"raw": "[[Autonomous Agent]]", "resolved": "urn:visionflow:linked:autonomous-agent", "kind": "StubLink"},
+    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
+    {"raw": "[[Remote Procedure Call]]", "resolved": "urn:visionflow:linked:remote-procedure-call", "kind": "StubLink"},
+    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
+    {"raw": "[[Prompt Injection]]", "resolved": "urn:visionflow:linked:prompt-injection", "kind": "StubLink"},
+    {"raw": "[[Microservices Architecture]]", "resolved": "urn:visionflow:linked:microservices-architecture", "kind": "StubLink"},
+    {"raw": "[[Web of Things]]", "resolved": "urn:visionflow:linked:web-of-things", "kind": "StubLink"},
+    {"raw": "[[Agent Interoperability]]", "resolved": "urn:visionflow:linked:agent-interoperability", "kind": "StubLink"},
+    {"raw": "[[OAuth 2.0]]", "resolved": "urn:visionflow:linked:oauth-2-0", "kind": "StubLink"},
+    {"raw": "[[Agent Card]]", "resolved": "urn:visionflow:linked:agent-card", "kind": "StubLink"},
+    {"raw": "[[Task Lifecycle]]", "resolved": "urn:visionflow:linked:task-lifecycle", "kind": "StubLink"},
+    {"raw": "[[Server-Sent Events]]", "resolved": "urn:visionflow:linked:server-sent-events", "kind": "StubLink"},
+    {"raw": "[[JSON-RPC 2.0]]", "resolved": "urn:visionflow:linked:json-rpc-2-0", "kind": "StubLink"},
+    {"raw": "[[Agent Identity]]", "resolved": "urn:visionflow:linked:agent-identity", "kind": "StubLink"},
+    {"raw": "[[Capability Advertisement]]", "resolved": "urn:visionflow:linked:capability-advertisement", "kind": "StubLink"},
+    {"raw": "[[Contract Net Protocol]]", "resolved": "urn:visionflow:linked:contract-net-protocol", "kind": "StubLink"},
+    {"raw": "[[KQML]]", "resolved": "urn:visionflow:linked:kqml", "kind": "StubLink"},
+    {"raw": "[[Multi-Agent Orchestration]]", "resolved": "urn:visionflow:linked:multi-agent-orchestration", "kind": "StubLink"},
+    {"raw": "[[Speech Act Theory]]", "resolved": "urn:visionflow:linked:speech-act-theory", "kind": "StubLink"},
+    {"raw": "[[Agent Network Protocol]]", "resolved": "urn:visionflow:linked:agent-network-protocol", "kind": "StubLink"},
+    {"raw": "[[Agent Communication Protocol (IBM ACP)]]", "resolved": "urn:visionflow:linked:agent-communication-protocol-ibm", "kind": "StubLink"},
+    {"raw": "[[Agentic Internet]]", "resolved": "urn:visionflow:linked:agentic-internet", "kind": "StubLink"},
+    {"raw": "[[Coordination Protocol]]", "resolved": "urn:visionflow:linked:coordination-protocol", "kind": "StubLink"},
+    {"raw": "[[Distributed Systems]]", "resolved": "urn:visionflow:linked:distributed-systems", "kind": "StubLink"},
+    {"raw": "[[HTTP Protocol]]", "resolved": "urn:visionflow:linked:http-protocol", "kind": "StubLink"},
+    {"raw": "[[Linux Foundation]]", "resolved": "urn:visionflow:linked:linux-foundation", "kind": "StubLink"},
+    {"raw": "[[Agent Runtime]]", "resolved": "urn:visionflow:linked:agent-runtime", "kind": "StubLink"},
+    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "StubLink"},
+    {"raw": "[[Swarm Intelligence]]", "resolved": "urn:visionflow:linked:swarm-intelligence", "kind": "StubLink"},
+    {"raw": "[[Autonomous Task Execution]]", "resolved": "urn:visionflow:linked:autonomous-task-execution", "kind": "StubLink"},
+    {"raw": "[[Negotiation]]", "resolved": "urn:visionflow:linked:negotiation", "kind": "StubLink"},
+    {"raw": "[[Error Handling]]", "resolved": "urn:visionflow:linked:error-handling", "kind": "StubLink"},
+    {"raw": "[[State Management]]", "resolved": "urn:visionflow:linked:state-management", "kind": "StubLink"},
+    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
+    {"raw": "[[Trust Framework]]", "resolved": "urn:visionflow:linked:trust-framework", "kind": "StubLink"},
+    {"raw": "[[Rate Limiting]]", "resolved": "urn:visionflow:linked:rate-limiting", "kind": "StubLink"},
+    {"raw": "[[API Gateway]]", "resolved": "urn:visionflow:linked:api-gateway", "kind": "StubLink"},
+    {"raw": "[[Webhook]]", "resolved": "urn:visionflow:linked:webhook", "kind": "StubLink"},
+    {"raw": "[[Agent Payments Protocol]]", "resolved": "urn:visionflow:linked:agent-payments-protocol", "kind": "StubLink"},
+    {"raw": "[[LangChain Agent Framework]]", "resolved": "urn:visionflow:linked:lang-chain-agent-framework", "kind": "StubLink"},
+    {"raw": "[[AutoGen]]", "resolved": "urn:visionflow:linked:autogen", "kind": "StubLink"},
+    {"raw": "[[CrewAI]]", "resolved": "urn:visionflow:linked:crewai", "kind": "StubLink"},
+    {"raw": "[[Vertex AI]]", "resolved": "urn:visionflow:linked:vertex-ai", "kind": "StubLink"},
+    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
+    {"raw": "[[Access Control]]", "resolved": "urn:visionflow:linked:access-control", "kind": "StubLink"},
+    {"raw": "[[JSON Web Signature]]", "resolved": "urn:visionflow:linked:json-web-signature", "kind": "StubLink"},
+    {"raw": "[[Supply Chain Automation]]", "resolved": "urn:visionflow:linked:supply-chain-automation", "kind": "StubLink"},
+    {"raw": "[[Enterprise AI]]", "resolved": "urn:visionflow:linked:enterprise-ai", "kind": "StubLink"},
+    {"raw": "[[JADE Framework]]", "resolved": "urn:visionflow:linked:jade-framework", "kind": "StubLink"},
+    {"raw": "[[OpenAI Swarm]]", "resolved": "urn:visionflow:linked:openai-swarm", "kind": "StubLink"},
+    {"raw": "[[Agent Orchestrator]]", "resolved": "urn:visionflow:linked:agent-orchestrator", "kind": "StubLink"},
+    {"raw": "[[Context Window]]", "resolved": "urn:visionflow:linked:context-window", "kind": "StubLink"}
+  ],
+  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
+  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
+}
+```
+
+- ### Definition
+  - [[Agent-to-Agent Protocol]] (A2AP) denotes a family of open specifications that govern how [[Autonomous Agent|autonomous AI agents]] discover one another, advertise their capabilities, delegate tasks, stream intermediate results, and return final artefacts — all without requiring a centralised broker or shared orchestrator to mediate every exchange. Unlike [[Remote Procedure Call|remote procedure calls]], which expose fixed function signatures to human-authored client code, agent-to-agent protocols treat every participating node as an active, reasoning entity: each agent possesses an identity, publishes a machine-readable [[Capability Advertisement|capability manifest]] (often called an [[Agent Card]]), and participates in multi-turn conversations governed by a defined [[Task Lifecycle]] state machine. The class encompasses both historic specifications such as [[FIPA ACL]] and [[KQML]], which rooted the vocabulary in [[Speech Act Theory]], and contemporary web-native specifications such as [[Agent2Agent Protocol (Google 2025)]], [[Agent Network Protocol]], and [[Agent Communication Protocol (IBM ACP)]], which leverage [[HTTP Protocol]], [[JSON-RPC 2.0]], and [[Server-Sent Events]] as transport primitives. A well-formed protocol in this class addresses at minimum four concerns: (1) [[Agent Identity]] — how agents authenticate themselves and establish mutual trust, typically using [[OAuth 2.0]], [[JSON Web Signature]]-signed agent cards, or [[Decentralised Identifier|decentralised identifiers]]; (2) [[Service Discovery]] — how a requesting agent locates a capable peer, whether via a well-known URI path, a centralised registry, or a peer-to-peer broadcast; (3) [[Task Delegation]] — the structured handoff of work, including instructions, input artefacts, priority, and callback endpoints; and (4) [[State Management]] — correlation of multi-turn task exchanges, [[Error Handling]], retry semantics, and result aggregation. The protocol family forms the peer-coordination substrate of the emerging [[Agentic Internet]], operating alongside but distinct from [[Model Context Protocol]], which governs [[Agentic AI|agentic]] agent-to-tool interaction rather than agent-to-agent delegation. Production deployment in 2025–2026 encompasses [[Supply Chain Automation]], financial services, IT operations, and [[Enterprise AI]] platforms across more than 150 organisations formally endorsing the [[Linux Foundation]]-governed A2A specification alone.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:AgentToAgentProtocol
+  - owl-role:: ExecutableProtocol
+  - owl-inferred:: ai:CoordinationProtocol, ai:InteroperabilityStandard, ai:PeerProtocol
+  - belongs-to-domain:: [[Agentic AI]]
+  - implemented-in-layer:: [[Agent Frameworks]], [[Agent Runtime]]
+
+- ### Relationships
+  - is-subclass-of:: [[Agent Communication Protocol]], [[Coordination Protocol]]
+  - has-part:: [[Agent Card]], [[Task Lifecycle]], [[Service Discovery]], [[Capability Advertisement]], [[Agent Identity]]
+  - requires:: [[Mutual Authentication]], [[Decentralised Identifier]], [[Agent Identity]], [[Capability Advertisement]], [[HTTP Protocol]], [[JSON-RPC 2.0]]
+  - enables:: [[Inter-Agent Communication]], [[Agentic Workflow]], [[Multi-Agent System]], [[Task Delegation]], [[Autonomous Task Execution]], [[Agentic Internet]]
+  - implements:: [[Agent2Agent Protocol (Google 2025)]], [[FIPA ACL]], [[Contract Net Protocol]]
+  - depends-on:: [[Autonomous Agent]], [[Large Language Model]], [[HTTP Protocol]], [[OAuth 2.0]], [[Server-Sent Events]]
+  - supports:: [[Negotiation]], [[Error Handling]], [[State Management]], [[Rate Limiting]], [[Access Control]], [[Webhook]]
+  - uses:: [[Message Passing]], [[JSON-LD]], [[JSON-RPC 2.0]], [[Server-Sent Events]], [[OAuth 2.0]], [[JSON Web Signature]]
+  - contrasts-with:: [[Remote Procedure Call]], [[Multi-Agent Orchestration]]
+  - related-to:: [[Model Context Protocol]], [[Prompt Injection]], [[Agent Network Protocol]], [[Agent Communication Protocol (IBM ACP)]], [[Multi-Agent Orchestration]], [[OpenAI Swarm]], [[Swarm Intelligence]]
+  - bridges-to:: [[Microservices Architecture]], [[Web of Things]], [[Distributed Systems]], [[Supply Chain Automation]], [[Enterprise AI]]
+  - standardized-by:: [[Linux Foundation]]
+
+- ### Content
+  ## Compositional Relationships (Components)
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:hasPart ai:AgentCard))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:hasPart ai:TaskLifecycle))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:hasPart ai:ServiceDiscovery))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:hasPart ai:CapabilityAdvertisement))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:hasPart ai:AgentIdentity))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:hasPart ai:MessagePassing))
+
+  ## Dependency Relationships
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:requires ai:MutualAuthentication))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:requires ai:AgentIdentity))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:requires ai:CapabilityAdvertisement))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:requires ai:HTTPProtocol))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:requires ai:JSONRPC20))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:dependsOn ai:AutonomousAgent))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:dependsOn ai:LargeLanguageModel))
+
+  ## Capability Relationships
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:enables ai:InterAgentCommunication))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:enables ai:TaskDelegation))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:enables ai:AutonomousTaskExecution))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:enables ai:AgenticInternet))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:supports ai:Negotiation))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:supports ai:ErrorHandling))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:supports ai:StateManagement))
+
+  ## Implementation Relationships
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:implements ai:Agent2AgentProtocolGoogle2025))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:implements ai:FIPAACL))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:implements ai:ContractNetProtocol))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:uses ai:JSONLD))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:uses ai:OAuth20))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:uses ai:ServerSentEvents))
+
+  ## Reduction Relationships
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:reducesTo ai:CoordinationProtocol))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:reducesTo ai:AgentCommunicationProtocol))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:bridgesTo ai:MicroservicesArchitecture))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:bridgesTo ai:DistributedSystems))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:bridgesTo ai:EnterpriseAI))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:contrastsWith ai:RemoteProcedureCall))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:relatedTo ai:AgentNetworkProtocol))
+      SubClassOf(ai:AgentToAgentProtocol
+        ObjectSomeValuesFrom(ai:relatedTo ai:ModelContextProtocol))
+
+  ## About
+
+  The Agent-to-Agent Protocol class names a conceptual and engineering space that has existed since the foundational era of [[Multi-Agent System|multi-agent systems]] research in the 1980s and 1990s but has undergone a profound revival in the era of [[Large Language Model]]-powered agents. The essential problem the class solves — how do two independent software agents communicate their intentions, capabilities, and task state to one another in a way that is interpretable by both parties regardless of their internal architecture — turns out to be both theoretically deep and practically critical for any economy of interoperating AI services. The problem has three irreducible dimensions that any protocol in this class must address simultaneously: semantic alignment (both parties must interpret message content consistently), trust establishment (parties must be confident they are communicating with legitimate, authorised counterparts), and conversation management (long-running, multi-turn task exchanges must be correlated and recoverable across failures). These dimensions map onto three distinct protocol layers — semantic, security, and session — each of which has accumulated decades of research and engineering literature.
+
+  The intellectual lineage begins with [[KQML]] (Knowledge Query and Manipulation Language, 1993), which drew on Austin and Searle's [[Speech Act Theory]] to introduce performatives — message types whose semantic content includes an illocutionary force such as TELL, ASK, SUBSCRIBE, or ACHIEVE. KQML defined an envelope format carrying sender, receiver, language, ontology, and content fields, plus a set of interaction protocol patterns such as query-ref and broker-all. KQML's principal innovation was the separation of the illocutionary force (what the sender intends by sending the message) from the propositional content (what the message asserts or asks about), enabling a richer model of agent communication than simple remote procedure calls provide. However, KQML suffered from underspecified semantics for its performatives — different implementors interpreted TELL and ASK differently, making interoperability between implementations unreliable in practice.
+
+  [[FIPA ACL]], developed by the Foundation for Intelligent Physical Agents from 1996 onwards (absorbed into IEEE Computer Society in 2005), addressed KQML's semantic ambiguity by adding formal BDI (Belief-Desire-Intention) semantics specifying feasibility preconditions and rational effects for each communicative act. A FIPA INFORM message, for example, carries the formal semantics that the sender believes the content to be true and believes the receiver does not already know it to be true — a richer commitment than mere data transfer. The [[JADE Framework]] (Java Agent Development Environment) provided the canonical FIPA-ACL implementation, enabling distributed multi-agent applications in e-commerce, robotics, and network management through the early 2000s, and served as the reference platform for dozens of FIPA conformance demonstrations. The [[Contract Net Protocol]] (Smith, 1980) contributed the fundamental task-allocation pattern — an initiator broadcasts a call-for-proposals carrying task specifications and deadline, bidders respond with proposals including cost and time estimates, the initiator selects the best bid and sends an acceptance, the contractor executes the task and returns results — that remains the conceptual backbone of contemporary task-delegation schemes and is directly recognisable in modern agent-to-agent protocols' task submission and response cycle.
+
+  The FIPA/JADE era (roughly 1997–2010) established the theoretical foundations and produced the first generation of deployed multi-agent systems in industrial automation, supply chain management, and intelligent tutoring. However, the heavyweight BDI semantic stack, the requirement for a shared ontology expressed in FIPA SL (Semantic Language) or KIF (Knowledge Interchange Format), and the Java-centric implementation infrastructure made FIPA-based systems difficult to compose with the web-native architectures that were becoming dominant. By the mid-2010s, multi-agent systems research had largely retreated to academia while commercial practice adopted simpler, more pragmatic integration patterns — REST APIs, message queues, and microservices — that abandoned the semantic richness of FIPA in favour of operational simplicity.
+
+  The resurgence of interest in agent-to-agent protocols from 2023 onwards was driven primarily by the proliferation of [[Large Language Model]]-based [[Autonomous Agent|autonomous agents]] capable of flexible instruction-following, reasoning about tool use, and multi-step task planning without hardcoded behavioural logic. These LLM-based agents possess the general-purpose reasoning capacity that earlier BDI agents could only approximate through laborious hand-crafted rule bases, enabling genuinely open-ended [[Task Delegation]] where the receiving agent can interpret novel task descriptions and produce appropriate outputs without prior configuration for that specific task type. This fundamentally changes the requirements for agent-to-agent protocols: rather than needing to agree on a shared ontology and a restricted set of task types, a modern protocol need only provide a structured envelope for task description in natural language plus typed artefact slots for structured inputs and outputs, with the LLM backend doing the semantic interpretation. Contemporary web-native frameworks such as [[LangChain Agent Framework]], [[AutoGen]], and [[CrewAI]] each developed proprietary message formats for inter-agent communication within a single framework's scope. The missing layer was a cross-framework, cross-organisation standard — something analogous to HTTP for web services or the SMTP envelope for email — that would allow an agent built on any framework to discover and delegate work to an agent on any other. The practical absence of such a standard meant that, as enterprises began deploying multi-agent systems in 2023–2024, every cross-vendor integration required bespoke adapter code, making the engineering overhead of agent composition prohibitive at scale.
+
+  The contemporary protocol landscape, as of mid-2026, comprises four principal specifications operating at complementary layers rather than competing for the same niche. [[Model Context Protocol]] (Anthropic, November 2024) governs agent-to-tool communication — how an LLM-based agent discovers and invokes external functions, databases, and services through a typed tool-call interface that exposes each tool's input schema, invokes it with validated arguments, and returns structured results to the model's [[Context Window]]. [[Agent2Agent Protocol (Google 2025)]] (A2A, April 2025, transferred to the [[Linux Foundation]] in June 2025) governs agent-to-agent delegation via [[HTTP Protocol]], [[JSON-RPC 2.0]], and [[Server-Sent Events]], with [[Agent Card|agent cards]] hosted at well-known URIs for [[Service Discovery]] and a six-state [[Task Lifecycle]] for tracking multi-turn task execution. [[Agent Communication Protocol (IBM ACP)]] addresses RESTful agent communication for IBM's BeeAI platform with a focus on enterprise-grade reliability and integration with IBM Cloud. [[Agent Network Protocol]] (ANP-Community, W3C White Paper May 2025) targets decentralised, open-market agent ecosystems where agents from mutually unknown parties must negotiate trust and payment without a pre-existing bilateral relationship, using DID-based identity and verifiable credentials as the trust substrate. A fifth emerging specification, Coral Protocol (arXiv:2505.00749), proposes open infrastructure for connecting heterogeneous agent ecosystems through a shared registry and routing layer. These specifications are increasingly understood as addressing different deployment contexts and trust models rather than competing implementations of the same concept — analogous to how FTP, SMTP, and HTTP all sit atop TCP/IP but serve distinct application niches.
+
+  The protocol class's fundamental security challenge — preventing an agent-to-agent delegation chain from being exploited by malicious content injected at any link in the chain — remains the most actively researched open problem in the field. In a delegation chain where agent A sends a task to agent B, which includes content sourced from an untrusted external website, the content may contain embedded instructions that cause agent B to deviate from agent A's original intent and instead execute instructions from the untrusted source. This [[Prompt Injection]] attack pattern is structurally analogous to SQL injection in relational database contexts, but significantly harder to defend against because the LLM's natural-language processing boundary is diffuse rather than syntactically crisp. No protocol-level defence for prompt injection has yet been standardised; current mitigations rely on input sanitisation at the application layer, output validation against expected schemas, and architectural patterns such as sandboxing that limit the blast radius of a successful injection.
+
+  ## Components / Architecture
+
+  A complete agent-to-agent protocol implementation comprises the following functional layers. These layers are logically independent but practically coupled: a weakness in any one layer degrades the reliability, security, or interoperability of the whole system.
+
+  - **Identity and Trust Layer**: Agents are identified by stable, verifiable identities — either [[Decentralised Identifier|decentralised identifiers]] (DIDs) aligned with W3C DID specifications, or traditional X.509 certificates for enterprise deployments operating within established PKI hierarchies. [[Mutual Authentication]] is established before any task delegation, typically using OAuth 2.0 bearer tokens, mTLS (mutual TLS), or API keys declared in the agent card's `securitySchemes` field. From A2A v1.0 (September 2025) onwards, [[Agent Card|agent cards]] may be cryptographically signed using [[JSON Web Signature]] (RFC 7515) over a [[JSON Canonicalization Scheme]] (RFC 8785) normalised payload, enabling recipients to verify the card was produced by the declared identity using the identity's registered public key without consulting a central registry at verification time. [[Trust Framework|Trust frameworks]] for cross-organisation delegation remain an active research problem: what authorisation scope should a requesting agent receive over the resources accessible to a remote agent, how is that scope attested in a tamper-evident way, how is delegation logged for audit and compliance, and how is delegation revocation propagated when a client agent's authorisation is rescinded? These open questions are addressed in the arXiv:2603.18043 paper on delegation contracts and in the Binding Agent ID work (arXiv:2512.17538), which proposes a portable identity framework for agents that includes reputation scoring and cross-protocol interoperability.
+
+  - **Discovery Layer**: An agent discovers a peer's capabilities through one of three mechanisms: (a) well-known URI paths (e.g. `https://{host}/.well-known/agent.json`) as pioneered by A2A, building on IETF RFC 8615's well-known resource convention; (b) centralised agent registries analogous to DNS name resolution or PKI certificate transparency logs, such as the agent directories now provided by Google's Gemini Enterprise Agent Platform and AWS Bedrock's agent marketplace; or (c) peer-to-peer broadcasts or gossip protocols in closed multi-agent deployments where agents are pre-registered with one another. [[Agent Card|Agent cards]] are the canonical capability advertisement document: they include the agent's human-readable name and description, a unique identifier, the endpoint URL for task submission, supported input and output modalities (text, image, audio, video, structured data), [[JSON Schema]]-typed input schemas for each supported skill, [[Access Control|authentication requirements]] expressed as OpenAPI security scheme descriptors, pricing model for paid capabilities, and support flags indicating whether streaming or push-notification delivery is supported. By 2026, registries for agent card publication and discovery are emerging as a market in their own right, with cloud platforms competing to host the most comprehensive agent directories.
+
+  - **Task Delegation Layer**: The unit of work exchanged between agents is a Task, characterised by a globally unique identifier (typically a UUID or a hash of the task content for idempotency), a message thread that accumulates the full history of instructions, clarifications, and intermediate outputs in the conversation, a set of typed input artefacts, and a [[Task Lifecycle|task lifecycle]] state machine that tracks the task's progression from submission to completion or failure. The canonical A2A state machine covers six states: `submitted` (task received and queued for processing), `working` (actively processing — intermediate streaming updates may be emitted), `input-required` (agent has paused and requires clarification or additional input from the requesting agent or a human in the loop), `completed` (successfully finished, output artefacts available), `failed` (unrecoverable error, with structured error payload), and `cancelled` (terminated by client or server before completion). This six-state machine maps cleanly onto both short-lived synchronous interactions (where `submitted → working → completed` is the expected happy path) and long-lived asynchronous workflows that may pause for human review. Task messages carry typed parts — TextPart (natural language instructions or intermediate outputs), FilePart (file references or inline base64 binary content), and DataPart (arbitrary JSON objects) — enabling [[Multi-Agent System|multimodal]] cooperation between agents that process different data types. Push-notification [[Webhook|webhooks]] and [[Server-Sent Events]] streaming support long-running tasks that may take minutes or hours to complete, contrasting with the synchronous request-response model of [[Remote Procedure Call]] which blocks the caller until the operation completes.
+
+  - **Security and Authorisation Layer**: Authentication is delegated to [[OAuth 2.0]] bearer token flows, API keys, or mTLS declared in the agent card's `securitySchemes` object, following established IETF RFC standards rather than inventing bespoke mechanisms. This pragmatic choice lowers adoption barriers but places the burden of correct OAuth scope management on implementors. [[Access Control]] over what a delegated agent may request from a remote agent is a critical unresolved challenge: in principle a requesting agent should not be able to instruct a remote agent to exfiltrate data, spend money, read files, or modify production systems beyond an explicitly authorised scope. In practice, current implementations typically grant the remote agent permission to perform any action it is technically capable of, with no protocol-level enforcement of scope constraints on the task instructions themselves. [[Rate Limiting]] and denial-of-service controls are declared in agent cards and enforced by the receiving agent's [[API Gateway]]. Server-Side Request Forgery (SSRF) prevention requires validating that agent card endpoint URLs do not resolve to RFC 1918 private network addresses or localhost, to prevent an attacker from using a malicious agent card to make a requesting agent probe internal network services. [[Prompt Injection]] through malicious task instruction content represents the most prevalent and currently undermitigated attack surface — when the delegating agent passes externally-sourced content (from a web search result, database query, or user input) to the receiving agent without sanitisation, that content may contain instructions that hijack the receiving agent's behaviour.
+
+  - **Session and Conversation Management Layer**: Multi-turn task exchanges require correlation of messages across request-response cycles, recovery from transient failures without task duplication, and management of task timeouts for stuck agents. A2A task IDs serve as the correlation key across all messages in a task's lifecycle. Idempotency keys prevent duplicate task submission when a client retries after a network failure. Timeout and cancellation semantics allow the requesting agent to abandon tasks that exceed time budgets, with the [[Error Handling|error handling]] layer returning a `cancelled` state and any partial artefacts produced before cancellation. [[State Management]] across long-running tasks that span multiple server restarts requires persistent task state storage on the remote agent's side — a non-trivial infrastructure requirement that agent-hosting platforms such as the Gemini Enterprise Agent Platform and AWS Bedrock address with managed durable task queues.
+
+  - **Economic Layer**: [[Agent Payments Protocol|Agentic payments protocols]] — including Google's AP2 (Agent Payments Protocol, September 2025) and Coinbase's x402 stablecoin settlement layer — are emerging as a complementary economic coordination layer atop agent-to-agent protocols. When agent A delegates a paid task to agent B, which in turn sub-delegates to agent C, the billing attribution chain must be recorded, settled, and potentially disputed. Cost attribution in multi-hop delegation chains requires each agent to log the tasks it accepted and delegated, the costs it incurred from downstream agents, and the price it charged to upstream agents, creating an auditable chain of economic responsibility. [[Negotiation]] over task pricing — allowing agents to bid for tasks or negotiate service rates in real time — is an emerging capability that draws on the theoretical foundations of the [[Contract Net Protocol]] and auction mechanisms from classical multi-agent systems research. Research at the IMF (2026) identifies agentic payment coordination as a new systemic consideration for financial stability regulation, as the scale of autonomous agent spending on paid services could reach macroeconomically significant levels within the current decade.
+
+  ## Use Cases / Major Families
+
+  **Enterprise Workflow Automation**: The dominant 2025–2026 deployment pattern places a [[Large Language Model]]-based [[Agent Orchestrator|orchestrator agent]] at the top of a delegation tree that spans specialist agents from different vendors. SAP's Joule enterprise assistant orchestrates legal review, financial compliance checking, and procurement approval agents — each from specialist AI vendors — through A2A task delegation, with the orchestrator synthesising outputs into a unified decision recommendation. A major investment bank uses 40+ A2A-connected specialist agents for trade reconciliation, KYC document collection, regulatory capital calculation, and regulatory reporting, with each agent exposing a narrow, well-defined capability through its agent card. The bank's compliance architecture requires that every agent-to-agent delegation is logged with full task context and artefact hashes for regulatory audit — a requirement met by A2A's persistent task history model.
+
+  **Cross-Enterprise Supply Chain Coordination**: [[Supply Chain Automation]] through cross-enterprise agent delegation is one of the most commercially significant deployment contexts. Supply chain firms Tyson Foods and Gordon Food Service deployed collaborative A2A systems in 2025 to enable their respective domain agents to share product availability data, demand forecasts, promotional calendars, and logistics capacity in real time, with agents negotiating order parameters and flagging supply-demand mismatches autonomously. The A2A model allows each company to maintain full control of its internal systems while exposing a well-defined capability surface to trusted partners — analogous to the EDI (Electronic Data Interchange) standards that enabled earlier generations of supply chain integration, but with the added flexibility of natural-language task description and LLM-mediated interpretation.
+
+  **Cross-Framework Agent Composition**: Teams building production multi-agent systems on different frameworks — [[LangChain Agent Framework]], [[AutoGen]], [[CrewAI]], and bespoke microservice agents — previously required custom adapter code for every pair of agent types. The combinatorial explosion of N-squared integration points made cross-framework composition prohibitively expensive. A2A provides a standard task-delegation envelope that allows any compliant agent to delegate to any other without knowing the recipient's internal implementation, reducing the integration problem from N-squared bespoke adapters to N A2A server implementations — analogous to how HTTP reduced the heterogeneity of network application integration from M×N protocol pairs to M+N HTTP client and server implementations.
+
+  **Software Development Agent Pipelines**: Multi-agent software engineering pipelines where a planning agent decomposes a feature request into implementation tasks, delegates code generation to a specialist coding agent, passes generated code to a testing agent for unit test generation and coverage analysis, routes the test results to a review agent for code quality assessment, and synthesises all outputs into a pull request — each agent potentially from a different vendor or built on a different framework. The typed artefact model in A2A (text, file, and data parts) ensures that source code, test files, coverage reports, and review comments are passed as structured artefacts rather than raw text, allowing downstream agents to consume them programmatically without text-parsing heuristics.
+
+  **Decentralised Agent Marketplaces**: [[Agent Network Protocol]] and emerging decentralised identity schemes envision open-market agent ecosystems where specialist agents from mutually unknown parties publish capability cards to public registries, accept tasks from any authorised requestor, charge per-task fees through integrated payment protocols, and build portable reputation scores from task completion history that are visible across the marketplace — analogous to app stores or freelancer marketplaces but operating autonomously at machine speed and microscale granularity. The economic viability of such marketplaces depends critically on solving the trust establishment problem (how does a requesting agent know a published agent card is genuine and the agent competent?) and the payment atomicity problem (how are task payment and task delivery guaranteed to occur together, preventing scenarios where payment is made but the task is not executed?).
+
+  **Robotics and IoT**: In the [[Web of Things]] context, physical devices with embedded reasoning capabilities — industrial sensors, robotic manipulators, autonomous mobile robots, HVAC controllers — advertise themselves as agents via A2A-compatible agent cards, enabling natural-language task delegation to physical systems without bespoke device-specific API integrations. A warehouse management orchestrator can discover a new robotic picking unit via its agent card, delegate pick tasks with natural-language instructions, and receive structured delivery confirmations — without any pre-existing knowledge of the specific robot model's API. This capability is particularly valuable in heterogeneous manufacturing environments where equipment from multiple vendors must be coordinated in real time.
+
+  ## Academic Context
+
+  The academic foundations of agent-to-agent protocols span distributed artificial intelligence (DAI), multi-agent systems (MAS), and more recently large language model engineering. Michael Wooldridge and Nick Jennings (Queen Mary, University of London) produced the foundational survey on intelligent agents (Wooldridge & Jennings, 1995), establishing the BDI model of autonomous agency — in which an agent maintains beliefs about the world, desires (goals it wishes to achieve), and intentions (plans it is committed to executing) — that provides the theoretical underpinning for protocol semantics. Wooldridge has subsequently argued that BDI-style formal semantics, while valuable for theoretical reasoning about agent systems, proved too heavyweight for practical deployment; his subsequent work on agent verification and the specification of agent normative systems (norms and obligations governing agent behaviour) is directly relevant to the trust and authorisation challenges of contemporary A2A deployments. Jennings' Archon framework (1996) demonstrated practical multi-agent coordination in industrial electricity management, providing early evidence that agent-based coordination could outperform centralised optimisation in dynamic, distributed control problems. Yoav Shoham and Kevin Leyton-Brown formalised game-theoretic agent interactions in "Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations" (2008), providing the equilibrium concepts and mechanism design principles underlying contract-net negotiation and combinatorial auction protocols for task allocation — concepts that resurface in the [[Negotiation|negotiation]] and pricing layers of contemporary agent marketplaces.
+
+  The UK has strong historical presence in multi-agent systems research. The UK Multi-Agent Systems Symposium (UK-MAS), organised in 2025 at King's College London in collaboration with the [[Alan Turing Institute]], brought together researchers from the University of Edinburgh, University of Liverpool, University of Manchester, University of Southampton, University of Essex, University of Leeds, and University of Sheffield to map the UK's MAS research landscape and identify priorities for the LLM-agent era. The [[Alan Turing Institute]]'s multi-agent systems interest group, led by researchers including Chris Hicks (Principal Research Scientist and Theme Lead), conducts ongoing work on agent coordination, safety, and deception in multi-agent settings. The published census of UK MAS labs confirms active research groups at 14+ UK universities working on agent protocols, coordination mechanisms, and safety.
+
+  Historically, key UK contributions to the field include: Nick Jennings and Michael Wooldridge at Queen Mary and Oxford on BDI agent theory and agent verification; Tim Norman at Aberdeen on agent normative systems and policy enforcement; Julian Padget at Bath on electronic institutions for agent coordination; and the Southampton group's work on semantic web services (David De Roure, Nigel Shadbolt) which contributed the concept of machine-readable service descriptions that prefigures today's agent cards.
+
+  Contemporary academic work has shifted substantially towards LLM-based agents and protocol standardisation. The survey "A Survey of Agent Interoperability Protocols: MCP, ACP, A2A, and ANP" (Guo et al., arXiv:2505.02279, May 2025) provides the first systematic technical comparison of all four major contemporary protocols across interaction modes, discovery mechanisms, communication patterns, security models, and deployment suitability. The paper identifies A2A as the most production-ready for enterprise multi-agent systems and ANP as the most suitable for open-market decentralised deployments, while noting that none of the four protocols fully addresses the prompt injection problem at the protocol level. Security threat modelling for the protocol class appears in "Security Threat Modeling for Emerging AI-Agent Protocols: A Comparative Analysis of MCP, A2A, Agora, and ANP" (Chen et al., arXiv:2602.11327, February 2026), which applies STRIDE and PASTA threat modelling methodologies to identify six primary attack surfaces. Semantic analysis of protocol expressiveness — the question of whether the natural-language-plus-typed-artefact model of contemporary protocols is semantically equivalent to, richer than, or poorer than FIPA ACL's formal performative vocabulary — appears in "Beyond Message Passing: A Semantic View of Agent Communication Protocols" (arXiv:2604.02369, April 2026), which argues that LLM-mediated semantic interpretation effectively recovers most of FIPA ACL's expressive power without requiring a shared formal ontology, at the cost of non-deterministic interpretation.
+
+  The field is converging on a new research agenda that integrates protocol design, formal verification, security engineering, and LLM alignment. Key open problems identified across the literature include: (1) protocol-level defences against prompt injection in delegated task content; (2) formal verification of [[Task Lifecycle]] state machine implementations; (3) scalable trust establishment for cross-organisational agent delegation without central registries; (4) economic mechanism design for agent marketplaces with rational, potentially adversarial participants; and (5) governance frameworks for multi-agent systems operating with significant autonomy in regulated domains.
+
+  ## Current Landscape (2026)
+
+  By June 2026 the agent-to-agent protocol landscape has reached a milestone of practical standardisation after years of fragmentation. The A2A protocol, transferred to the [[Linux Foundation]]'s Agentic AI Foundation in June 2025, surpassed 150 supporting organisations by April 2026, including Amazon Web Services, Cisco, Google, IBM, Microsoft, Salesforce, SAP, and ServiceNow — a coalition that collectively represents the dominant infrastructure of global enterprise software. Version 1.0 was declared production-ready in September 2025 with SDK support in Python, JavaScript, Java, Go, and .NET, covering the five most commonly used languages in enterprise backend engineering. Version 1.2 (March 2026) added cryptographically signed [[Agent Card|agent cards]] using [[JSON Web Signature]] over [[JSON Canonicalization Scheme]], multi-tenancy support for shared agent hosting infrastructure, registry-based [[Service Discovery]] as an alternative to well-known URIs, and extended [[JSON Schema]] validation for structured output artefacts.
+
+  The platform integration landscape as of mid-2026 spans all three major hyperscale cloud providers. Google rebranded [[Vertex AI]] Agent Builder as the Gemini Enterprise Agent Platform in April 2026 (Cloud Next 2026), with A2A embedded as a first-class coordination primitive, a global Agentspace directory for agent card discovery, and managed A2A server hosting with built-in logging and [[Rate Limiting]]. AWS Bedrock's agent marketplace enables A2A-compatible agents to be published and discovered at scale, with AWS handling the infrastructure for [[Mutual Authentication]] and endpoint scaling. Microsoft's Agent Framework for .NET shipped A2A v1 support in January 2026, integrating with Azure Active Directory for enterprise identity management and Azure API Management for [[API Gateway]] functions including [[Rate Limiting]] and metering. This three-cloud adoption pattern signals that A2A has effectively become table stakes for any cloud platform offering enterprise agentic services. Gartner projected that 40% of enterprise applications would feature task-specific AI agents by 2026, up from fewer than 5% in 2025; this projection was borne out by the rapid proliferation of A2A deployments across financial services, healthcare, manufacturing, and retail.
+
+  The broader agent-to-agent protocol ecosystem remains multi-standard in 2026, with A2A the leading enterprise standard but not the sole specification. [[Agent Communication Protocol (IBM ACP)]] serves IBM's BeeAI platform and has traction in IBM-centric enterprise environments. [[Agent Network Protocol]] from the ANP-Community targets decentralised, open-market deployments and has attracted interest from Web3 communities and edge computing deployments where centralised cloud infrastructure is unavailable or undesirable. The four-protocol landscape (MCP + A2A + ACP + ANP) is increasingly analysed as a layered stack rather than a competitive market: MCP for agent-to-tool invocation, A2A for structured enterprise agent delegation, ACP for REST-native microservice-adjacent agent communication, and ANP for decentralised, trust-minimised agent marketplaces. Protocol bridging adapters — enabling an agent to interact with both A2A and ACP counterparts through a single implementation — are an active area of development, with the [[Linux Foundation]] exploring a unified conformance layer.
+
+  The security research community has sharpened attention on protocol vulnerabilities, with the [[Prompt Injection]] attack surface emerging as the most studied and most consequential open problem. A malicious requesting agent can embed adversarial instructions in task content — instructions sourced from a compromised external website, a database record, or a user-supplied input — that cause the receiving agent to exfiltrate sensitive data, initiate unauthorised financial transactions, or modify production systems, all while reporting successful completion of the nominally assigned task (documented in arXiv:2601.22569, "Whispers of Wealth", January 2026, which demonstrated a 34% attack success rate against undefended implementations). Context lineage assurance — tracking provenance of every content fragment in a delegation chain to identify when untrusted content enters the agent's reasoning context — is an active research direction aimed at making injection attacks detectable (arXiv:2509.18415). The [[AI Safety]] implications of autonomous agent delegation chains that operate without human approval at each step — chains that could potentially encompass hundreds of agents, each taking actions with real-world consequences — are addressed at a policy level in the International AI Safety Report 2026 (arXiv:2602.21012), which calls for mandatory human-in-the-loop checkpoints for high-risk autonomous agent actions.
+
+  The [[Agent Payments Protocol]] ecosystem is maturing in parallel with A2A's task delegation capabilities: Google's AP2 (Agent Payments Protocol, September 2025) standardises authorisation and spend-limit controls for agent-initiated financial transactions, including mechanisms for orchestrating agents to cap the total spend of a delegation chain. Coinbase's x402 provides HTTP-native stablecoin micropayment settlement; these layer atop A2A delegation to form an emerging complete economic coordination stack for autonomous agent services. IMF Notes 2026/004 identifies agentic payment coordination as a new systemic consideration for financial stability regulation, noting that autonomous agents' ability to initiate financial transactions without human approval could create novel systemic risks if spend limits and authorisation controls are not properly implemented.
+
+  ## UK Context
+
+  The UK has a historically strong position in multi-agent systems research. The University of Edinburgh (School of Informatics) has maintained research programmes in agent reasoning, planning, and coordination since the 1990s, with connections to the [[Alan Turing Institute]] through its Bayes Centre partnership. The University of Southampton's Agents, Interaction & Complexity group (including researchers in the tradition of Nigel Shadbolt and Tim Berners-Lee on the Web of Agents) produced influential early work on semantic web services and agent discovery — concepts directly ancestral to today's agent card and service registry mechanisms. The University of Liverpool's Agent Autonomy group and University of Manchester's Information Management Group have contributed to formal verification of agent protocols.
+
+  In the Northern English industrial context, the manufacturing and logistics sectors centred on Manchester, Leeds, Sheffield, and Newcastle represent a natural domain for agent-to-agent protocol deployment: supply chain coordination between industrial partners, automated procurement negotiation, and logistics orchestration across freight networks. The UK's industrial strategy for AI identifies agentic systems as a priority for manufacturing competitiveness, with UKRI funding streams supporting agent framework development and sector-specific deployment research.
+
+  The UK's post-Brexit data-protection framework (UK GDPR, Data Protection Act 2018) creates specific compliance obligations for cross-border agent delegation: when a UK-based agent delegates a task to a non-UK agent that will process personal data, the data controller must ensure appropriate transfer mechanisms are in place, analogous to existing cloud service outsourcing obligations. This is an emerging compliance challenge that UK-based enterprise AI deployments must navigate as A2A adoption accelerates.
+
+  ## Future Directions (2026–2030)
+
+  **Protocol Convergence**: The four-protocol landscape (MCP, A2A, ACP, ANP) is expected to converge through bridging adapters and shared primitives rather than through one protocol displacing the others. The [[Linux Foundation]]'s Agentic AI Foundation is the likely venue for a unified interoperability standard that subsumes the best elements of each protocol into a common envelope, while preserving each protocol's specific strengths for its target deployment context. The IETF model — where multiple application-layer protocols (HTTP, FTP, SMTP) coexist but share a common transport (TCP/IP) — suggests that a common agent transport layer might emerge, above which A2A, ACP, and ANP operate as application-layer profiles. By 2028–2029, a single protocol stack analogous to TCP/IP may emerge for agent coordination, with vendor-specific agent APIs layered above a common open envelope — analogous to how cloud computing abstracted hardware infrastructure while preserving application-layer diversity.
+
+  **Verified Agent Identity and Reputation**: Cryptographically signed [[Agent Card|agent cards]] (already in A2A v1.2) will evolve towards full PKI-backed identity certificates for agents, analogous to TLS certificates for web servers, enabling relying parties to verify agent identity against a chain of trust anchored at well-known certificate authorities or decentralised identity registries. [[Decentralised Identifier|Decentralised identifiers]] and W3C Verifiable Credentials will allow agents to carry portable reputation scores, compliance attestations, and capability certifications across organisational boundaries without consulting a central registry at verification time — a capability that becomes essential as the number of independently-deployed agents in global circulation reaches the millions.
+
+  **Formal Safety Guarantees and Regulatory Compliance**: Research into formal verification of agent protocol implementations — producing mathematical proofs that a particular agent configuration cannot violate specified safety constraints regardless of the instructions it receives — will gain practical urgency as regulatory frameworks (the EU AI Act, UK AI Bill, US Executive Order on AI safety) impose mandatory accountability requirements on autonomous agent systems operating in high-risk domains. The [[AI Safety]] research community is developing formal models for delegation chain integrity (what safety invariants can be preserved across multi-hop agent delegation?), [[Trust Framework|trust framework]] composition (when is the combined trust of a delegation chain equal to the weakest link?), and prompt injection resistance (can a protocol-level sandboxing mechanism prevent injected instructions from propagating beyond a single agent's context boundary?). These formal methods will evolve from research prototypes to engineering tools embedded in agent development frameworks, analogous to how TLS protocol analysers (Tamarin, ProVerif) became standard components of security protocol engineering practice.
+
+  **Economic Agent Ecosystems and Regulatory Infrastructure**: Fully autonomous agent-to-agent economic interaction — where agents discover, negotiate, execute, and settle service transactions using [[Agent Payments Protocol|agentic payments]] entirely without human involvement at any step — represents a qualitative shift in how software services are procured and consumed. This shift requires mature [[Trust Framework|trust frameworks]], dispute resolution mechanisms operable at machine speed, insurance and liability assignment frameworks for autonomous economic actors, and regulatory oversight analogous to financial market regulation applied to autonomous market participants. The timeline for this infrastructure maturing is uncertain, but the pace of A2A adoption and the parallel development of agentic payments protocols suggests that regulatory frameworks will face pressure to address autonomous agent economics within the current decade.
+
+  **Multi-Modal and Embodied Agents**: As [[Autonomous Agent|autonomous agents]] increasingly control physical systems — robotic actuators, IoT sensor networks, autonomous vehicles, smart building infrastructure — agent-to-agent protocols must extend to handle real-time streaming sensor data, physical safety constraints (agents must be able to declare and respect hard constraints on physical actions even when task instructions request constraint violations), and latency requirements incompatible with current HTTP-based request-response patterns. Edge computing deployments in manufacturing, logistics, and infrastructure management will require compact binary A2A encodings, store-and-forward delivery semantics for intermittently-connected devices, and real-time pub-sub variants for high-frequency sensor data sharing alongside discrete task delegation. The [[Web of Things]] standard's Thing Description format provides a useful model for machine-readable physical device capability declarations that could be extended into A2A-compatible agent card semantics for embodied agents.
+
+  ## Research & Literature
+
+  1. Wooldridge, M., & Jennings, N. R. (1995). Intelligent agents: Theory and practice. *The Knowledge Engineering Review*, 10(2), 115–152. https://doi.org/10.1017/S0269888900008122
+  2. Jennings, N. R. (1996). Coordination techniques for distributed artificial intelligence. *Foundations of Distributed Artificial Intelligence*, 187–210.
+  3. Smith, R. G. (1980). The contract net protocol: High-level communication and control in a distributed problem solver. *IEEE Transactions on Computers*, C-29(12), 1104–1113.
+  4. Finin, T., Fritzson, R., McKay, D., & McEntire, R. (1994). KQML as an agent communication language. *Proceedings of the Third International Conference on Information and Knowledge Management*, 456–463.
+  5. Foundation for Intelligent Physical Agents. (2002). *FIPA ACL Message Structure Specification*. Document SC00061G. http://www.fipa.org/specs/fipa00061/
+  6. Bellifemine, F., Poggi, A., & Rimassa, G. (1999). JADE: A FIPA-compliant agent framework. *Proceedings of the Fourth International Conference on the Practical Application of Intelligent Agents and Multi-Agent Technology*, 97–108.
+  7. Shoham, Y., & Leyton-Brown, K. (2008). *Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations*. Cambridge University Press.
+  8. Weiss, G. (Ed.). (2013). *Multiagent Systems* (2nd ed.). MIT Press.
+  9. Google. (2025). *Agent2Agent Protocol Specification*. https://a2a-protocol.org/latest/specification/
+  10. Google. (2025). "Introducing the Agent2Agent Protocol." Google Developers Blog, April 9, 2025. https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/
+  11. Linux Foundation. (2025). "Linux Foundation Launches the Agent2Agent Protocol Project." Press release, June 23, 2025. https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project
+  12. Linux Foundation. (2026). "A2A Protocol Surpasses 150 Organizations, Lands in Major Cloud Platforms." Press release, April 2026. https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year
+  13. Anthropic. (2024). *Model Context Protocol Specification*. https://modelcontextprotocol.io/specification
+  14. Guo, S., Chen, J., Li, Y., et al. (2025). A survey of agent interoperability protocols: Model Context Protocol (MCP), Agent Communication Protocol (ACP), Agent-to-Agent Protocol (A2A), and Agent Network Protocol (ANP). *arXiv:2505.02279*.
+  15. Zhang, T., Wang, H., & Liu, Y. (2025). A survey of AI agent protocols. *arXiv:2504.16736*.
+  16. Mehta, A., & Singh, R. (2025). From glue-code to protocols: A critical analysis of A2A and MCP integration for scalable agent systems. *arXiv:2505.03864*.
+  17. Chen, X., Li, M., & Wu, Z. (2026). Security threat modeling for emerging AI-agent protocols: A comparative analysis of MCP, A2A, Agora, and ANP. *arXiv:2602.11327*.
+  18. Park, J., Kim, S., & Lee, H. (2026). Aiming for AI interoperability: Challenges and opportunities. *arXiv:2601.14512*.
+  19. Wang, L., & Zhang, Q. (2026). Beyond message passing: A semantic view of agent communication protocols. *arXiv:2604.02369*.
+  20. Nakamura, K., & Patel, R. (2026). The provenance paradox in multi-agent LLM routing: Delegation contracts and attested identity in LDP. *arXiv:2603.18043*.
+  21. Liu, Y., & Chen, W. (2025). Whispers of wealth: Red-teaming Google's Agent Payments Protocol via prompt injection. *arXiv:2601.22569*.
+  22. Rodriguez, M., & Thompson, A. (2025). Context lineage assurance for non-human identities in critical multi-agent systems. *arXiv:2509.18415*.
+  23. International AI Safety Report 2026. *arXiv:2602.21012*. https://arxiv.org/abs/2602.21012
+  24. IMF. (2026). How agentic AI will reshape payments. *IMF Staff Notes*, 2026/004. https://www.elibrary.imf.org/view/journals/068/2026/004/article-A001-en.xml
+  25. Alan Turing Institute. (2025). UK Multi-Agent Systems Symposium 2025 (UK-MAS). Event report. https://www.turing.ac.uk/events/uk-multi-agent-systems-symposium-2025-uk-mas
+  26. Hicks, C., & Tuyls, K. (2025). Multi-agent systems research in the United Kingdom. *AI Communications*. https://content.iospress.com/articles/ai-communications/aic229003
+  27. Wang, R., et al. (2025). Open challenges in multi-agent security: Towards secure systems of interacting AI agents. *arXiv:2505.02077*.
+  28. Coral Protocol Team. (2025). Coral protocol: Open infrastructure connecting the internet of agents. *arXiv:2505.00749*.
+
+- ### Provenance
+  - sources:: https://a2a-protocol.org/latest/specification/, https://arxiv.org/abs/2505.02279, https://arxiv.org/abs/2602.11327, https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year, https://arxiv.org/abs/2604.02369, https://arxiv.org/abs/2601.14512, https://www.turing.ac.uk/events/uk-multi-agent-systems-symposium-2025-uk-mas
+  - migration-date:: 2026-06-20T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

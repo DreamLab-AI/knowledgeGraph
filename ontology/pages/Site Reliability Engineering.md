@@ -1,0 +1,298 @@
+public:: true
+
+# Site Reliability Engineering
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:44a7bc95908649a0622146b221cbf637d79ee1d9112850d698a3e1be3d059875",
+  "@type": "Page",
+  "vc:slug": "site-reliability-engineering",
+  "title": "Site Reliability Engineering",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:observability",
+      "vc:label": "Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:reliability-engineering",
+      "vc:label": "Reliability Engineering"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Site Reliability Engineering"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-29T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:site-reliability-engineering",
+  "@type": "Class",
+  "label": "Site Reliability Engineering",
+  "definition": "Site Reliability Engineering (SRE) is a discipline that applies software engineering principles and practices to operations work, treating infrastructure management and service reliability as software problems to be solved through automation, measurement, and iterative improvement. Originating at Google in the early 2000s, SRE defines explicit reliability targets via Service Level Objectives, manages risk through error budgets, and uses observability tooling to maintain confidence in production systems. SRE practitioners reduce operational toil through systematic automation, implement incident management processes, and balance the competing demands of feature velocity and system stability. The discipline formalises the role of the operations engineer as a software engineer who designs for reliability, scalability, and maintainability from the outset.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "qualityScore": 0.75,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:reliability-engineering",
+      "label": "Reliability Engineering"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:incident-management",
+        "label": "Incident Management"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:itil",
+        "label": "ITIL"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:aiops",
+        "label": "AIOps"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-operations",
+        "label": "Machine Learning Operations"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:sre",
+      "label": "SRE"
+    }
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:site-reliability-engineering:097b973e6250",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:44a7bc95908649a0622146b221cbf637d79ee1d9112850d698a3e1be3d059875"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Observability]]",
+      "resolved": "urn:visionflow:linked:observability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Systems]]",
+      "resolved": "urn:visionflow:linked:distributed-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Reliability Engineering]]",
+      "resolved": "urn:visionflow:linked:reliability-engineering",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-29T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+- ### Definition
+  - Site Reliability Engineering (SRE) is a discipline that applies [[Software Engineering]] principles and automation practices to the management of production systems, treating operational problems as software problems to be solved through measurement, iteration, and code. It establishes explicit reliability contracts — [[Service Level Objective]]s, [[Service Level Indicator]]s, and [[Service Level Agreement]]s — and uses [[Error Budget]]s to govern the trade-off between feature development velocity and system stability. SRE emerged from [[Google]]'s internal operations practice and has since become an industry-wide model for running large-scale, highly available [[Distributed Systems]] with engineering rigour.
+
+- ### Overview
+  - SRE was formalised by Google's Ben Treynor Sloss around 2003 and first described publicly in the 2016 O'Reilly book "Site Reliability Engineering: How Google Runs Production Systems."
+  - The core premise is that reliability is a software feature, not an afterthought, and that the people responsible for running a system must also have the skills and authority to improve it through code.
+  - Unlike traditional IT operations — characterised by manual runbooks, reactive incident response, and siloed tooling — SRE teams share engineering ownership with development teams, participate in on-call rotations, and spend a defined proportion of their time on automation and engineering work rather than toil.
+  - The discipline introduces quantified reliability targets: a service's [[Service Level Objective]] defines the acceptable level of unreliability per rolling window, and the gap between actual performance and that target constitutes the [[Error Budget]], which is consumed by outages and released by developer-driven changes.
+  - When a service exhausts its error budget, new feature deployments are frozen until reliability is restored, creating a contractual feedback loop between development velocity and system health.
+  - SRE is practiced at scale by companies including Google, Netflix, LinkedIn, Dropbox, Spotify, and many others, and is supported by tooling ecosystems around [[Kubernetes]], [[Prometheus]], [[Grafana]], and distributed tracing platforms.
+
+- ### Key Components
+  - #### Service Level Management
+    - [[Service Level Indicator]] (SLI): a quantitative metric that captures the reliability property of interest (e.g. request latency, availability, error rate).
+    - [[Service Level Objective]] (SLO): a target value or range for an SLI over a measurement window, agreed between SRE and product teams.
+    - [[Service Level Agreement]] (SLA): a formal contractual commitment to customers, typically less ambitious than internal SLOs.
+    - [[Error Budget]]: the permitted amount of unreliability (1 − SLO target); spent by incidents, consumed by risky changes, governs deployment gating.
+  - #### Toil Management
+    - [[Toil Reduction]]: SRE teams aim to keep manual, repetitive, automatable operational work (toil) below a defined threshold of working time (typically 50%).
+    - Remaining time is invested in engineering work: building automation, improving systems, reducing risk.
+    - Identifying and eliminating toil is a continuous engineering activity, not a one-off project.
+  - #### Incident Management
+    - [[Incident Management]]: structured processes for detecting, triaging, mitigating, and communicating about production failures.
+    - On-call rotation: SRE engineers carry pagers and respond to alerts; rotations are designed to preserve work–life balance.
+    - Escalation paths, incident commanders, and communication channels are predefined to reduce cognitive load under pressure.
+    - [[Postmortem]]: a blameless written retrospective produced after every significant incident, documenting timeline, root causes, contributing factors, and action items. Blamelessness is a cultural prerequisite for honest post-incident learning.
+  - #### Observability and Monitoring
+    - [[Observability]]: the ability to infer the internal state of a system from its external outputs (logs, metrics, traces); an SRE prerequisite for diagnosing complex distributed failures.
+    - [[Monitoring]]: continuous collection and alerting on [[Service Level Indicator]]s; dashboards surface SLO burn rate to on-call engineers.
+    - [[Distributed Tracing]]: correlates requests across service boundaries in [[Microservices]] architectures, enabling latency attribution and dependency analysis.
+    - [[Log Management]]: structured log aggregation feeds anomaly detection and forensic investigation.
+  - #### Automation and Infrastructure
+    - [[Infrastructure as Code]]: provisioning and configuration expressed as version-controlled code (Terraform, Ansible, Pulumi), enabling reproducible environments.
+    - [[Continuous Deployment]]: automated pipelines release validated code to production with rollback capability; error budgets gate deployment frequency.
+    - [[Chaos Engineering]]: deliberate fault injection (e.g. using tools like Chaos Monkey) to validate system resilience assumptions before failures occur in production.
+    - [[Capacity Planning]]: demand forecasting and resource provisioning to prevent saturation failures; integrated with cost optimisation.
+  - #### Production Readiness
+    - Production Readiness Reviews (PRRs): a structured checklist-based gate assessing whether a new service or major feature meets SRE reliability and operability standards before launch.
+    - Launch coordination: SRE involvement in deployment planning to pre-empt risks, define rollout milestones, and confirm rollback plans.
+
+- ### Applications and Use Cases
+  - **Large-scale web platforms**: SRE originated in the context of search, advertising, and video-streaming systems serving billions of requests per day, where even small reliability degradations translate to significant user impact.
+  - **Financial services infrastructure**: banks and payment processors apply SRE to trading platforms, payment gateways, and core banking systems where downtime has direct regulatory and financial consequences.
+  - **Telecommunications**: mobile network operators use SRE practices to manage distributed control planes and customer-facing APIs at carrier scale.
+  - **E-commerce**: retail platforms deploy SRE for peak-load management (e.g. seasonal traffic surges), using error budgets to balance feature releases around high-traffic events.
+  - **Healthcare systems**: SRE practices are applied to patient-facing applications and clinical data platforms where availability and data integrity are safety-critical requirements.
+  - **Cloud provider infrastructure**: major [[Cloud Computing]] platforms (AWS, GCP, Azure) internally use SRE-derived practices for managing their own control planes, and surface SLO/SLA concepts to customers.
+  - **MLOps pipelines**: [[Machine Learning Operations]] borrows SRE concepts to define reliability targets for model serving endpoints, manage training infrastructure, and handle model drift as an operational concern.
+
+- ### Relationships
+  - subClassOf:: [[Reliability Engineering]]
+  - requires:: [[Observability]]
+  - requires:: [[Monitoring]]
+  - requires:: [[Incident Management]]
+  - hasPart:: [[Service Level Objective]]
+  - hasPart:: [[Error Budget]]
+  - hasPart:: [[Toil Reduction]]
+  - hasPart:: [[Postmortem]]
+  - uses:: [[Infrastructure as Code]]
+  - uses:: [[Continuous Deployment]]
+  - uses:: [[Chaos Engineering]]
+  - uses:: [[Distributed Tracing]]
+  - enables:: [[High Availability]]
+  - enables:: [[Scalability]]
+  - enables:: [[Fault Tolerance]]
+  - dependsOn:: [[Distributed Systems]]
+  - dependsOn:: [[Software Engineering]]
+  - contrastsWith:: [[DevOps]]
+  - contrastsWith:: [[ITIL]]
+  - relatedTo:: [[Platform Engineering]]
+  - relatedTo:: [[Service Mesh]]
+  - relatedTo:: [[Kubernetes]]
+  - bridges-to:: [[AIOps]]
+  - bridges-to:: [[Machine Learning Operations]]
+
+- ### Contrasts and Complements
+  - **SRE vs [[DevOps]]**: DevOps is a cultural movement that advocates for collaboration between development and operations; SRE is a concrete, opinionated implementation of DevOps values with specific practices, roles, and metrics. SRE is sometimes described as "what DevOps looks like in practice."
+  - **SRE vs [[ITIL]]**: ITIL (Information Technology Infrastructure Library) defines process frameworks for IT service management with a focus on governance and change control; SRE replaces prescriptive process adherence with engineering judgment, error budgets, and automation. The two are not incompatible but represent different organisational philosophies.
+  - **SRE vs [[Platform Engineering]]**: Platform Engineering is a more recent evolution that focuses on building internal developer platforms (IDPs) to reduce cognitive load for developers; SRE focuses on production reliability. In many organisations, platform teams and SRE teams collaborate or overlap.
+  - **SRE and [[AIOps]]**: AI-assisted operations tools (anomaly detection, alert correlation, automated root-cause analysis) increasingly augment SRE workflows; SRE provides the engineering rigour and observability instrumentation that AIOps tooling requires to function effectively.
+
+- ### Standards and Context
+  - **Google SRE Books**: "Site Reliability Engineering" (2016) and "The Site Reliability Workbook" (2018) by Google engineers are the canonical references; freely available online and widely cited in the field.
+  - **CNCF Ecosystem**: The [[Cloud Native Computing Foundation]] (CNCF) maintains projects — [[Prometheus]], [[Jaeger]], [[OpenTelemetry]], [[Argo CD]] — that form the de facto open-source SRE toolchain.
+  - **[[OpenTelemetry]]**: the emerging CNCF standard for unified telemetry collection (metrics, traces, logs), increasingly adopted as the observability instrumentation layer underpinning SRE signal collection.
+  - **[[Kubernetes]]**: the dominant container orchestration platform; SRE practices for Kubernetes-native systems are a major sub-discipline, covering pod disruption budgets, horizontal pod autoscaling, and rolling deployments.
+  - **ISO/IEC 25010**: software quality standard whose reliability, availability, and maintainability characteristics align with SRE's quantitative reliability framing.
+  - **SRE Community**: the SRE community maintains resources via SREcon (USENIX conference series), the Google SRE community blog, and numerous open-source runbook and postmortem template repositories.
+
+- ### Provenance
+  - sources:: Google SRE Book (2016), The Site Reliability Workbook (2018), USENIX SREcon proceedings, CNCF ecosystem documentation
+  - updated:: 2026-06-13

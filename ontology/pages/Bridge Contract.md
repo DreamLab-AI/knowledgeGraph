@@ -1,0 +1,63 @@
+public:: true
+
+# Bridge Contract
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:bridge-contract",
+  "@type": "Page",
+  "vc:slug": "bridge-contract",
+  "title": "Bridge Contract",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bridge-contract",
+  "@type": "Class",
+  "label": "Bridge Contract",
+  "definition": "A Bridge Contract is a smart contract deployed on one or more blockchain networks that facilitates the transfer of tokens, messages, or state between two separate chains by locking or burning assets on the source chain and minting or releasing equivalent assets on the destination chain. Bridge contracts are the on-chain components of cross-chain bridge protocols, enforcing custody, verifying cryptographic proofs of source-chain events, and coordinating with off-chain relayers or decentralised oracle networks.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
+    {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+  ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
+      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
+      {"@id": "urn:ngm:class:wrapped-token", "label": "Wrapped Token"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:relayer", "label": "Relayer"},
+      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
+      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"},
+      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - A [[Bridge Contract]] is the on-chain code artefact that anchors a cross-chain bridge protocol to a specific blockchain. On the source chain, a bridge contract typically accepts a token deposit (lock-and-mint model) or burns the token (burn-and-mint model) and emits a log event. On the destination chain, a complementary bridge contract verifies proof of this event—supplied by a [[Relayer]] or oracle network—and mints or releases an equivalent representation of the asset. The contracts together enforce custody guarantees: assets cannot be double-spent or created from thin air provided the proof verification logic is correct and the validator set or oracle network is honest. [[Bridge Contract]] security is the principal attack surface for cross-chain hacks, accounting for billions of dollars in losses (Ronin, Wormhole, Nomad) since 2021.
+
+- ### Relationships
+  - [[Bridge Contract]] is a specialised [[Smart Contract]] that enables [[Cross-Chain Bridge]] infrastructure. Its core output is the issuance of [[Wrapped Token]] representations of assets from another chain, supporting [[Cross Chain Asset Transfer]] across otherwise isolated networks. [[Relayer]] nodes submit cryptographic proofs of source-chain events to bridge contracts on the destination chain, with [[Cryptographic Hash]] verification ensuring message authenticity. Bridge contracts are a key mechanism for achieving [[Cross-Chain Interoperability]] and connect [[Sidechain]] and [[Layer 2 Scaling]] systems to their parent chains.
+
+- ### Content
+  - The first bridge contracts appeared with the rise of Ethereum-compatible sidechains and the need to move assets between them. Polygon's Plasma bridge (2019) and the Ethereum deposit contract for its then-forthcoming Beacon Chain (2020) were early high-profile instances. As the multi-chain ecosystem proliferated (Avalanche, BSC, Fantom, Arbitrum, Optimism), demand surged for generalised bridges. Wormhole, launched in 2020, used a guardian network of 19 validators; Multichain (previously AnySwap) grew to support 80+ chains; LayerZero, launched 2021, pioneered ultra-light node verification using oracles and relayers independently.
+
+  - Technically, bridge contracts implement one of several security models. Federated (multi-sig) bridges require a threshold of pre-designated validators to sign off on cross-chain messages—simple but centralised. Optimistic bridges (Nomad, Connext) assume messages are valid and allow a challenge period during which fraud proofs can be submitted. ZK-proof bridges verify a zero-knowledge validity proof of the source chain state transition on the destination chain—the most trustless model but computationally expensive. Light-client bridges embed a minimal verifier of the source chain's consensus in a smart contract, enabling trustless verification without a separate validator set.
+
+  - Bridge contracts have been the most catastrophic attack vectors in blockchain history. The Ronin bridge hack (March 2022, $625 M) exploited a compromised multi-sig; the Wormhole hack (February 2022, $320 M) exploited a signature verification bug; Nomad (August 2022, $190 M) suffered a flawed initialisation allowing arbitrary message spoofing. These incidents drove the industry toward ZK-based bridges and formalised auditing standards from firms such as Trail of Bits, Zellic, and OpenZeppelin, as well as on-chain circuit breakers that pause bridges if abnormal outflows are detected.
+
+  - In 2024–2025, the bridge landscape is consolidating around a few major interoperability protocols: LayerZero v2, Axelar, Hyperlane, and Chainlink CCIP. ZK-based bridges for Ethereum L2s (Polygon zkEVM bridge, zkSync Era native bridge, Starknet bridge) have matured to production use, with proof generation times falling to seconds. The Ethereum EIP-7683 cross-chain intent standard aims to abstract bridge routing from end users, allowing intent-based protocols to find the cheapest and safest bridge path automatically. Regulatory attention is increasing, with FATF guidance noting that bridge contracts can obscure fund flows in ways relevant to anti-money-laundering compliance.
+

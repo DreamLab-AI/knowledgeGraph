@@ -1,0 +1,71 @@
+public:: true
+
+# Circuit Breaker
+
+```json-ld
+{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:circuit-breaker", "@type":"Page", "title":"Circuit Breaker", "vc:slug":"circuit-breaker", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+```
+
+```json-ld
+{
+  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id":"urn:ngm:class:circuit-breaker",
+  "@type":"Class",
+  "label":"Circuit Breaker",
+  "definition":"The circuit breaker is a fault-tolerance design pattern that monitors calls to a remote service or resource and, once failures exceed a threshold, trips open to fail fast and stop sending requests for a cooling-off period. After a timeout it allows a limited number of trial calls in a half-open state to test recovery before closing again. The pattern prevents cascading failures, protects struggling dependencies, and enables graceful degradation in distributed systems.",
+  "domain":"infrastructure",
+  "maturity":"established",
+  "subClassOf":[{"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"}],
+  "relations":{
+    "implements":[{"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"},{"@id":"urn:ngm:class:resilience","label":"Resilience"}],
+    "hasPart":[{"@id":"urn:ngm:class:observability","label":"Observability"}],
+    "relatedTo":[{"@id":"urn:ngm:class:rate-limiting","label":"Rate Limiting"},{"@id":"urn:ngm:class:api-gateway","label":"API Gateway"},{"@id":"urn:ngm:class:service-mesh","label":"Service Mesh"}],
+    "partOf":[{"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"}],
+    "enables":[{"@id":"urn:ngm:class:resilience","label":"Resilience"}],
+    "supports":[{"@id":"urn:ngm:class:reliability-engineering","label":"Reliability Engineering"},{"@id":"urn:ngm:class:microservices","label":"Microservices"}],
+    "uses":[{"@id":"urn:ngm:class:observability","label":"Observability"}],
+    "requires":[{"@id":"urn:ngm:class:observability","label":"Observability"}],
+    "bridgesTo":[{"@id":"urn:ngm:class:service-mesh","label":"Service Mesh"}],
+    "dependsOn":[{"@id":"urn:ngm:class:reliability-engineering","label":"Reliability Engineering"}]
+  },
+  "sameAs":[],
+  "quality":0.62,
+  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+}
+```
+
+- ### Definition
+- A [[Circuit Breaker]] is a [[Fault Tolerance]] pattern that monitors calls to a dependency and, when failures pass a threshold, trips open to fail fast and stop hammering a struggling service. It is a building block of system [[Resilience]].
+- After a cooldown it enters a half-open state to test recovery, complementing [[Rate Limiting]] and commonly deployed in an [[API Gateway]] or [[Service Mesh]].
+- ### Overview
+- Named after electrical circuit breakers, the pattern protects a distributed system from cascading failure: rather than queuing requests against a failing dependency until resources exhaust, the breaker short-circuits and returns errors or fallbacks immediately.
+- It maintains a small state machine - closed, open, half-open - driven by observed success and failure counts within a rolling window.
+- The breaker is essential in [[Microservices]] architectures where one slow dependency can otherwise saturate thread pools and bring down upstream services.
+- ### Mechanisms
+- Closed state: requests pass through and failures are counted.
+- Open state: requests fail fast for a configured timeout, sparing the dependency.
+- Half-open state: a limited number of trial calls probe recovery before closing.
+- Thresholds: error rate or count over a window decides when to trip.
+- Fallbacks: cached values, defaults or degraded responses cover the open period.
+- ### Applications
+- Protecting microservices from cascading dependency failures.
+- Guarding external API calls behind an API gateway.
+- Embedded in service meshes and resilience libraries as a standard policy.
+- Combined with retries and timeouts in reliability engineering.
+- ### Relationships
+- implements:: [[Fault Tolerance]]
+- implements:: [[Resilience]]
+- hasPart:: [[Observability]]
+- relatedTo:: [[Rate Limiting]]
+- relatedTo:: [[API Gateway]]
+- relatedTo:: [[Service Mesh]]
+- partOf:: [[Fault Tolerance]]
+- enables:: [[Resilience]]
+- supports:: [[Reliability Engineering]]
+- supports:: [[Microservices]]
+- uses:: [[Observability]]
+- requires:: [[Observability]]
+- bridgesTo:: [[Service Mesh]]
+- dependsOn:: [[Reliability Engineering]]
+- ### Provenance
+- updated:: 2026-06-15

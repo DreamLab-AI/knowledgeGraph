@@ -1,0 +1,60 @@
+public:: true
+
+# Immersive Audio
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:immersive-audio",
+  "@type": "Page",
+  "vc:slug": "immersive-audio",
+  "title": "Immersive Audio",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:immersive-audio",
+  "@type": "Class",
+  "label": "Immersive Audio",
+  "definition": "Immersive audio refers to audio reproduction and processing technologies that create a convincing three-dimensional sound field, enveloping the listener in a spatially accurate sonic environment. It encompasses object-based audio formats, binaural rendering, ambisonics, and head-related transfer function (HRTF) personalisation, enabling the perception of sounds positioned above, below, and around the listener rather than confined to a flat stereo plane.",
+  "domain": "spatial-computing",
+  "maturity": "emerging",
+  "subClassOf": [{"@id": "urn:ngm:class:audio-technology", "label": "Audio Technology"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:binaural-rendering", "label": "Binaural Rendering"},
+      {"@id": "urn:ngm:class:audio-processing", "label": "Audio Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
+      {"@id": "urn:ngm:class:immersive-experience-pipeline", "label": "Immersive Experience Pipeline"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:audio-engine", "label": "Audio Engine"},
+      {"@id": "urn:ngm:class:audio-spatialization", "label": "Audio Spatialization"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Immersive Audio]] denotes a family of technologies and formats designed to reproduce sound in three-dimensional space, going beyond conventional stereo or 5.1 surround systems to place audio objects at precise locations in a spherical field around the listener. Key technical paradigms include object-based audio (e.g., Dolby Atmos, MPEG-H), scene-based audio (ambisonics), and head-related transfer function (HRTF) personalised [[Binaural Rendering]]. When integrated with [[Extended Reality (XR)]] environments, immersive audio is fundamental to presence and spatial coherence, as the auditory system is highly sensitive to mismatch between visual and acoustic cues.
+
+- ### Relationships
+  - Immersive audio builds upon [[Spatial Audio]] principles and is realised through [[Binaural Rendering]] engines and [[Audio Processing]] pipelines. It is an enabling technology for [[Extended Reality (XR)]] experiences, where accurate sound localisation reinforces presence. [[Audio Engine|Audio engines]] provide the runtime environment for dynamic [[Audio Spatialization]], while the [[Immersive Experience Pipeline]] integrates audio with visual rendering to produce coherent XR output.
+
+- ### Content
+  - The foundations of immersive audio lie in acoustic science research dating to the early 20th century, particularly Blumlein's stereo and binaural recording patents (1933) and later Ambisonics developed at the British National Research Development Corporation in the 1970s. However, the practical deployment of immersive audio at consumer scale required the convergence of digital signal processing, head-tracking sensors, and compute capacity only available from the 2010s onward. Dolby Atmos launched in cinemas in 2012, introducing the object-based paradigm that allows sounds to be authored as three-dimensional objects rather than fixed channel feeds.
+
+  - At its technical core, immersive audio operates on two complementary paradigms: object-based and scene-based. Object-based formats represent each audio element with position metadata, allowing a renderer to decode the appropriate output for any speaker configuration or headphone geometry at playback time. Scene-based ambisonics encodes a full spherical sound field into a set of harmonic coefficients (B-format), which can be decoded to any arrangement. HRTF processing convolves audio signals with individualised filters derived from measurements of how a person's ears, head, and torso transform incoming sound, enabling headphone playback to simulate precise spatial positions including elevation.
+
+  - The ecosystem has expanded substantially through streaming platforms (Apple Music Spatial Audio with Dolby Atmos, Amazon Music HD), gaming engines (Unreal Engine's MetaSounds, Unity's HDRP audio), and XR platforms (Meta Quest spatial audio, Apple Vision Pro's Personalized Spatial Audio). Professional audio tools such as Aalto, SPAT Revolution, and the Dolby Atmos Production Suite allow content creators to author immersive mixes. The MPEG-H standard underpins broadcast applications, enabling personalised loudness and dialogue enhancement alongside spatial rendering for television.
+
+  - In 2024–2025 immersive audio development is driven by neural audio synthesis and AI-driven HRTF personalisation, which uses machine learning to estimate individual head-related transfer functions from photographs or brief acoustic measurements rather than requiring expensive anechoic chamber sessions. Real-time AI rendering allows dynamic acoustic simulation in open-world games and XR environments, modelling reflections, occlusion, and material properties. The Apple Vision Pro's Personalized Spatial Audio feature — building HRTF profiles from user scans — is a landmark consumer deployment demonstrating the mainstream viability of personalised three-dimensional audio.
+

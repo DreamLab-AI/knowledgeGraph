@@ -1,0 +1,161 @@
+public:: true
+
+# Standardized Asset Classification
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:4f257fd736c81469655ce1b063e2a7869b0eac0d3be81dae0ca1f2cfab3bab23",
+  "@type": "Page",
+  "vc:slug": "standardized-asset-classification",
+  "title": "Standardized Asset Classification",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:asset-management",
+      "vc:label": "Asset Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-10070"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Standardized Asset Classification"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:standardized-asset-classification",
+  "@type": "Class",
+  "label": "Standardized Asset Classification",
+  "definition": "Systematic taxonomies and frameworks for categorizing digital assets including cryptocurrencies, NFTs, and metaverse tokens based on characteristics such as issuance mod, value mechanism, rights conferred, fungibility, and redemption properties.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ]
+  },
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ]
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:standardized-asset-classification:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:4f257fd736c81469655ce1b063e2a7869b0eac0d3be81dae0ca1f2cfab3bab23"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Asset Management]]",
+      "resolved": "urn:visionflow:owl:class:asset-management",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Regulatory Compliance]]",
+      "resolved": "urn:visionflow:owl:class:regulatory-compliance",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - Systematic taxonomies and frameworks for categorizing digital assets including cryptocurrencies, NFTs, and metaverse tokens based on characteristics such as issuance method, value mechanism, rights conferred, fungibility, and redemption properties.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:StandardizedAssetClassification
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Asset Management]]
+  - enables:: [[Regulatory Compliance]]
+  - bridges-to:: [[Blockchain]]
+
+- ### Content
+
+  - #### Classification Standards
+		- CFTC GMAC Digital Asset Taxonomy (2024)
+		- DATS by Wilshire and DAR
+		- LDACS by Lukka (five-tier hierarchy)
+		- DACS by CoinDesk Indices
+		- Datonomy by Goldman Sachs/MSCI/CoinMetrics
+  - #### Classification Criteria
+		- Asset issuance methodology
+		- Value holding mechanism
+		- Rights conferred to holders
+		- Fungibility characteristics
+		- Redemption properties
+		- Recording in books and records
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

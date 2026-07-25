@@ -1,0 +1,125 @@
+NOTICE
+======
+
+This product includes software and data developed by Dr John O'Hare / DreamLab AI
+Consulting Ltd.
+
+  Copyright (c) 2024-2026 Dr John O'Hare / DreamLab AI Consulting Ltd
+
+Licensing is split by path. LICENSING.md is the authoritative scope statement; where
+this NOTICE and LICENSING.md disagree, LICENSING.md governs.
+
+  pipeline/, static/, docs/, examples/, .github/, root Markdown
+                    — GNU Affero General Public License v3.0 or later
+                      (AGPL-3.0-or-later)         full text: LICENSE
+  explorer/         — MIT License                 full text: LICENSE-EXPLORER
+  ontology/, dist/  — Open Database License v1.0
+                      (ODbL-1.0)                  full text: LICENSE-DATA
+
+The LICENSE file at the repository root is the AGPL-3.0 text. Automated licence
+detectors read that file and will label the entire repository AGPL-3.0. That label is
+incorrect for explorer/, ontology/ and dist/.
+
+--------------------------------------------------------------------------------
+THIRD-PARTY COMPONENTS
+--------------------------------------------------------------------------------
+
+1. WebVOWL
+--------------------------------------------------------------------------------
+`explorer/` is a derivative work of WebVOWL.
+
+  Copyright (c) 2014-2019 Vincent Link, Steffen Lohmann, Eduard Marbach,
+                          Stefan Negru, Vitalis Wiens
+  Licensed under the MIT License.
+
+The unmodified MIT licence text is retained in two places, byte-identical:
+
+  explorer/license.txt      (as vendored)
+  LICENSE-EXPLORER          (at the repository root, for discoverability)
+
+Upstream:  https://github.com/VisualDataWeb/WebVOWL
+Parent:    https://github.com/DreamLab-AI/WasmVOWL   (branch: master)
+
+CORRECTION TO EARLIER NOTICES. A previous version of this file stated that this
+derivative is distributed under AGPL-3.0-or-later, on the basis that the MIT License
+permits sublicensing. That statement is withdrawn. `explorer/` is distributed under the
+MIT License, unchanged.
+
+The reason for the reversal is set out in LICENSING.md and is recorded here so the
+change is not mistaken for an oversight: substantially identical code is published under
+MIT at DreamLab-AI/WasmVOWL, so an AGPL claim over this copy would bind readers of this
+repository without restricting anyone willing to take the MIT copy instead. The MIT grant
+is therefore passed through as received.
+
+The copyright notice above must be preserved in all copies and substantial portions of
+`explorer/`. That obligation runs to the WebVOWL authors and is not DreamLab AI's to
+waive.
+
+`explorer/` is not a verbatim copy of WasmVOWL. The upstream `legacy/` tree — the
+original D3 implementation of WebVOWL — is not vendored here.
+
+Internal manifests are consistent with this: explorer/package.json declares
+"license": "MIT" and explorer/rust-wasm/Cargo.toml declares license = "MIT".
+explorer/modern/package.json carries no license field and is covered by LICENSE-EXPLORER
+and by LICENSING.md.
+
+
+2. VOWL specification
+--------------------------------------------------------------------------------
+The visual notation implemented by the explorer follows VOWL (Visual Notation for OWL
+Ontologies), developed by the same authors. VOWL is a specification, not code; it is
+implemented here rather than copied. Specification documents are published by their
+authors under their own terms.
+
+
+3. Dependencies
+--------------------------------------------------------------------------------
+This project depends on, but does not vendor, third-party packages declared in:
+
+  explorer/package.json
+  explorer/modern/package.json
+  explorer/rust-wasm/Cargo.toml
+
+The Python pipeline requires rdflib >= 7.0.0. No requirements file is committed; the
+import is at pipeline/jsonld_to_turtle.py and the version constraint is stated in the
+build documentation. rdflib is licensed BSD-3-Clause by its own copyright holders.
+
+Each dependency remains under its own licence, held by its own copyright holders. Those
+licences are not superseded by this NOTICE.
+
+
+--------------------------------------------------------------------------------
+CORPUS PROVENANCE
+--------------------------------------------------------------------------------
+
+The ontology corpus in `ontology/`, and the artefacts derived from it in `dist/`, are
+substantially machine-generated — LLM-authored synthetic content produced under human
+direction, by design, as a testbed for the pipeline. It is not a curated human-authored
+encyclopaedia and should not be cited as an authority on its subject matter.
+
+The provenance metadata carried through the pipeline (did:nostr identifiers,
+prov:generatedAtTime, URNs, and the attributedTo field in dist/data/graph/stats.json)
+attests traceable generation under human direction. It does not attest human authorship.
+
+Rights in the corpus are asserted on the basis of section 9(3) of the UK Copyright,
+Designs and Patents Act 1988, under which the author of a computer-generated work is the
+person by whom the arrangements necessary for its creation were undertaken. That
+provision has no United States equivalent, and the sui generis database right does not
+extend to the EEA for a database made by a UK person after 1 January 2021. LICENSING.md
+sets out what this means jurisdiction by jurisdiction, including where the grant is
+likely to be worth little.
+
+
+--------------------------------------------------------------------------------
+RESERVATION OF TEXT AND DATA MINING RIGHTS
+--------------------------------------------------------------------------------
+
+DreamLab AI Consulting Ltd expressly reserves the rights of text and data mining,
+including the use of any part of ontology/ or dist/ for training, fine-tuning,
+evaluating or otherwise developing machine-learning models, under Article 4(3) of
+Directive (EU) 2019/790 and any equivalent national provision. This reservation applies
+to the whole of the database and to any substantial part of it, and to every channel
+through which it is distributed. It does not restrict acts permitted by section 29A of
+the Copyright, Designs and Patents Act 1988.
+
+Licences for such use are available. See COMMERCIAL.md.

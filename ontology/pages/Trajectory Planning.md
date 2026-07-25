@@ -1,0 +1,347 @@
+public:: true
+
+# Trajectory Planning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:dd5c0adbcceffd24a2c14653fcdb9210c9badee7ec91a2dd055e062bf355f843",
+  "@type": "Page",
+  "vc:slug": "trajectory-planning",
+  "title": "Trajectory Planning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "RoboticsDomain"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "RB-0930"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Trajectory Planning"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trajectory-planning",
+  "@type": "Class",
+  "label": "Trajectory Planning",
+  "definition": "The process of computing a time-parameterised path for a robot or autonomous system that satisfies kinematic constraints, avoids obstacles, and achieves a target configuration smoothly and efficiently. Trajectory planning bridges high-level path planning with low-level motion control, incorporating velocity and acceleration profiles, inverse kinematics, and real-time replanning for dynamic environments.",
+  "domain": "robotics",
+  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:robo-navigation-and-planning",
+    "label": "Navigation and Planning"
+  },
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:motion-trajectory-generation",
+      "label": "Motion Trajectory Generation"
+    },
+    {
+      "@id": "urn:ngm:class:path-parameterisation",
+      "label": "Path Parameterisation"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:dynamics-modelling",
+        "label": "Dynamics Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-space",
+        "label": "Configuration Space"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Mapping"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:optimization-algorithms",
+        "label": "Optimisation Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:spline-interpolation",
+        "label": "Spline Interpolation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:velocity-profiling",
+        "label": "Velocity Profiling"
+      },
+      {
+        "@id": "urn:ngm:class:acceleration-planning",
+        "label": "Acceleration Planning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rrt-algorithm",
+        "label": "RRT Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:potential-field-method",
+        "label": "Potential Field Method"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      }
+    ]
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:trajectory-planning:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:dd5c0adbcceffd24a2c14653fcdb9210c9badee7ec91a2dd055e062bf355f843"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Robotics]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[RoboticsDomain]]",
+      "resolved": "urn:visionflow:owl:class:robotics",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - **Trajectory Planning** - Trajectory Planning in robotics systems
+
+- ### Semantic Classification
+  - owl-class:: robotics:TrajectoryPlanning
+  - owl-role:: Concept
+  - belongs-to-domain:: [[RoboticsDomain]]
+
+- ### Relationships
+  - is-subclass-of:: Navigation and Planning
+  - Requires [[Kinematics]]
+  - Requires [[Inverse Kinematics]]
+  - Uses [[Motion Planning]]
+  - Uses [[Sensor Fusion]]
+  - Enables [[Motion Control]]
+  - Enables [[Collision Avoidance]]
+  - Depends On [[Obstacle Avoidance]]
+
+- ### Content
+  ## Academic Context
+
+  - Trajectory planning represents a fundamental challenge in autonomous systems, determining optimal paths for robots to navigate complex environments safely and efficiently
+  - The field has evolved from classical geometric approaches to sophisticated machine learning-based solutions
+  - Core problem: selecting and implementing algorithms that balance computational efficiency with navigation reliability across diverse operational contexts
+  - Autonomous mobile robots now leverage advanced sensor systems (cameras, radar, LIDAR) integrated with planning, localisation, and control algorithms to achieve autonomous navigation[1]
+
+  ## Current Landscape (2025)
+
+  - **Industry adoption and implementations**
+  - Collaborative robotics platforms increasingly employ trajectory planning for manipulator control in unstructured environments
+  - Deep reinforcement learning approaches, particularly multi-actor-critic architectures, have demonstrated superior convergence stability and smoothing capabilities compared to traditional methods[2]
+  - Dynamical movement primitives integrated with particle swarm optimisation frameworks represent emerging hybrid approaches for robotic arm trajectory planning[3]
+  - Mechanical arm systems now achieve high-smoothness trajectory curves that effectively mitigate sudden velocity and acceleration changes[4]
+
+  - **Technical capabilities and limitations**
+  - Real-time adaptability remains a persistent challenge, particularly in dynamic environments requiring rapid replanning
+  - Scalability constraints emerge when applying algorithms across diverse robot configurations and environmental complexities
+  - Position hopping and jitter problems in reinforcement learning-based planning have been addressed through NURBS curve smoothing techniques[2]
+  - Inverse kinematics transformation using Newton-MP iterative methods provides generalised solutions for complex manipulator geometries
+
+  - **Standards and frameworks**
+  - Systematic evaluation frameworks now guide algorithm selection based on environmental complexity, computational constraints, and robot configuration[1]
+  - Two-stage reward strategies (approach and close phases) optimise trajectory planning for contact-based tasks in collaborative robotics[2]
+
+  ## Research & Literature
+
+  - **Key academic papers and sources**
+  - Abdouni, J., Jarou, T., Mzili, T., Waga, A., and Bensassi, K. (2025). "Challenges and Constraints in Trajectory Planning for Autonomous Robots." *Iraqi Journal for Computer Science and Mathematics*, Vol. 6, Iss. 3, Article 7. DOI: https://doi.org/10.52866/2788-7421.1274[1]
+  - Deep reinforcement learning trajectory planning research (2025). Multi-Actor-Critic Deep Deterministic Policy Gradient (M2ACD) algorithm development for robotic manipulators in complex environments, demonstrating superior performance over TD3, DARC, and DDPG algorithms[2]
+  - Novel framework integrating dynamical movement primitives with particle swarm optimisation (DMP-PSO) for robotic arm trajectory planning, published in *Nature Scientific Reports* (2025)[3]
+  - Mechanical arm trajectory planning research demonstrating high-smoothness curve generation for anchor systems (2025)[4]
+
+  - **Ongoing research directions**
+  - Refinement of multi-actor-critic architectures for enhanced stability and convergence speed
+  - Integration of NURBS smoothing with reinforcement learning to eliminate trajectory jitter
+  - Development of real-time adaptive planning systems for dynamic environments
+  - Scalability solutions for heterogeneous robot configurations
+
+  ## UK Context
+
+  - British robotics research institutions continue contributing to trajectory planning methodologies, though specific North England implementations remain limited in current literature
+  - Manchester, Leeds, and Sheffield host significant robotics research clusters within their respective universities, though trajectory planning contributions are typically integrated within broader autonomous systems programmes rather than standalone initiatives
+  - UK manufacturing sector increasingly adopts collaborative robot trajectory planning for precision assembly and handling tasks, particularly in automotive and aerospace applications
+  - Research emphasis aligns with UK Robotics and Autonomous Systems Strategy priorities regarding safe human-robot collaboration
+
+  ## Future Directions
+
+  - **Emerging trends and developments**
+  - Hybrid approaches combining classical planning with deep learning for improved robustness and interpretability
+  - Edge computing implementations enabling real-time trajectory planning on resource-constrained platforms
+  - Integration with digital twin technologies for pre-deployment trajectory validation
+  - Quantum computing applications for optimisation-heavy planning problems (exploratory stage)
+
+  - **Anticipated challenges**
+  - Maintaining computational efficiency whilst increasing environmental complexity handling
+  - Standardising evaluation metrics across diverse application domains
+  - Addressing safety certification requirements for autonomous trajectory planning in regulated industries
+  - Bridging the gap between simulation-based planning and real-world deployment variability
+
+  - **Research priorities**
+  - Development of adaptive algorithms responsive to environmental changes without complete replanning cycles
+  - Enhanced inverse kinematics solutions for redundant manipulator systems
+  - Formal verification methods for trajectory safety guarantees
+  - Cross-platform algorithm portability and standardisation
+
+  ## References
+
+  1. Abdouni, J., Jarou, T., Mzili, T., Waga, A., and Bensassi, K. (2025). Challenges and Constraints in Trajectory Planning for Autonomous Robots. *Iraqi Journal for Computer Science and Mathematics*, 6(3), Article 7. https://doi.org/10.52866/2788-7421.1274
+
+  2. Deep Reinforcement Learning Trajectory Planning Research (2025). Multi-Actor-Critic Deep Deterministic Policy Gradient Algorithm for Robotic Manipulators. *PubMed Central*, NCBI. https://pubmed.ncbi.nlm.nih.gov/40065009/
+
+  3. Novel Framework for Trajectory Planning in Robotic Arms (2025). Dynamical Movement Primitives and Particle Swarm Optimisation Integration. *Nature Scientific Reports*. https://www.nature.com/articles/s41598-025-14801-7
+
+  4. Mechanical Arm Trajectory Planning Research (2025). High-Smoothness Trajectory Curve Generation. *SPIE Digital Library*, Conference Proceedings. https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13953/139530W/
+
+
+  ## Metadata
+
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

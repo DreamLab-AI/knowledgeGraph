@@ -1,0 +1,272 @@
+public:: true
+
+# yield farming
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:dbe0cc6c0e093fcbde0e75b2daf03c4b44b6eeb7323f75fd43284c3fca54094d",
+  "@type": "Page",
+  "vc:slug": "yield-farming",
+  "title": "yield farming",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2,
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-19T21:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:yield-farming",
+  "@type": "Class",
+  "label": "Yield Farming",
+  "definition": "Yield farming is the practice of actively deploying digital assets into decentralised finance protocols—including liquidity pools, lending markets, and staking contracts—to earn token rewards, trading fees, or interest income, and optimising risk-adjusted returns by dynamically reallocating capital across multiple protocols. Participants typically receive liquidity provider (LP) tokens representing their proportional pool share, which can themselves be staked or deposited into yield aggregator contracts to compound rewards, creating layered risk and return exposure. The practice emerged prominently during the 2020 DeFi Summer as protocols adopted token-emission incentive models to bootstrap liquidity and governance participation. Yield farming strategies are sensitive to smart contract risk, impermanent loss, reward token price volatility, oracle manipulation, and evolving regulatory classification of token distributions.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:token-emission",
+        "label": "Token Emission"
+      },
+      {
+        "@id": "urn:ngm:class:yield-aggregator",
+        "label": "Yield Aggregator"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:passive-income",
+        "label": "Passive Income"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-governance",
+        "label": "Protocol Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Proof-of-Work Mining"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "@id": "urn:ngm:class:annual-percentage-yield",
+        "label": "Annual Percentage Yield"
+      },
+      {
+        "@id": "urn:ngm:class:total-value-locked",
+        "label": "Total Value Locked"
+      },
+      {
+        "@id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:defi-yield-farming",
+      "label": "DeFi Yield Farming"
+    },
+    {
+      "@id": "urn:ngm:class:liquidity-farming",
+      "label": "Liquidity Farming"
+    }
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+- ### Definition
+  - Yield farming is the active practice of deploying [[Cryptocurrency]] assets into [[Decentralised Finance]] protocols—specifically [[Liquidity Pool]]s, [[Lending Protocol]]s, and [[Staking]] contracts—to generate returns in the form of token rewards, trading fees, and interest income. It relies on [[Smart Contract]] automation to distribute rewards proportionally to capital contributors, and on [[Automated Market Maker]] mechanics to facilitate continuous trading without an order book. The practice was popularised during the 2020 DeFi Summer, triggered by the launch of [[Compound Finance]]'s COMP [[Governance Token]] distribution, and became foundational to bootstrapping [[Decentralised Exchange]] liquidity and protocol participation.
+
+- ### Overview
+  - Yield farming emerged as the primary mechanism by which decentralised protocols attract and retain liquidity from external capital providers.
+  - Unlike traditional [[Savings Account]] or [[Money Market Fund]] products, yield farming returns are often paid in the protocol's own [[Governance Token]], meaning APY figures include volatile asset price risk.
+  - The practice created a self-reinforcing incentive loop: high token emissions attract liquidity, which reduces slippage, which increases trading volume, which generates more fee revenue for liquidity providers.
+  - This loop—while effective at bootstrapping—historically led to hyperinflationary token schedules and eventual APY collapse as token prices fell.
+  - [[Total Value Locked]] (TVL) became the canonical metric for measuring a protocol's yield farming adoption, though it can be inflated by recursive lending loops.
+  - The ecosystem matured post-2021 with more sustainable emission schedules, [[Protocol Governance]] mechanisms, and risk frameworks replacing pure APY chasing.
+
+- ### Key Components
+  - #### Liquidity Pools
+    - The core primitive: users deposit paired assets (e.g. ETH/USDC) into an [[Automated Market Maker]] [[Liquidity Pool]].
+    - The pool contract issues [[Liquidity Provider Token]]s (LP tokens) representing proportional ownership.
+    - Traders pay fees (typically 0.05%–1%) on each swap, distributed pro-rata to LP token holders.
+    - [[Impermanent Loss]] arises when the relative price of pooled assets diverges from the entry ratio, reducing the LP's asset value versus simply holding.
+  - #### Reward Token Emissions
+    - Protocols distribute their native [[Governance Token]] or [[Reward Token]] to incentivise deposits.
+    - Emission schedules are encoded in [[Smart Contract]]s and may follow linear, halving, or bonding-curve models.
+    - [[Token Emission]] rates are a key protocol parameter voted on through [[Protocol Governance]].
+    - [[Annual Percentage Yield]] (APY) figures combine fee income and token reward value; the latter makes stated APYs highly volatile.
+  - #### LP Token Composability
+    - LP tokens are themselves ERC-20 compatible and can be deposited into secondary [[Yield Aggregator]] contracts.
+    - Aggregators such as Yearn Finance autocompound rewards by selling earned tokens and reinvesting into the base pool.
+    - This composability creates nested risk: a single exploit in any layer can cascade upward.
+  - #### Lending Protocol Integration
+    - [[Lending Protocol]]s such as Aave and Compound allow users to deposit collateral, borrow against it, and deploy borrowed assets into yield farming positions.
+    - Leveraged yield farming amplifies returns but also liquidation risk if collateral values drop.
+    - [[Flash Loan]]s enable atomic liquidation arbitrage and complex multi-step yield strategies within a single transaction.
+
+- ### Mechanisms
+  - #### Liquidity Mining
+    - [[Liquidity Mining]] is the specific mechanism of distributing protocol tokens proportionally to liquidity providers.
+    - It differs from yield farming in scope: liquidity mining is one strategy within the broader yield farming activity set.
+    - Pioneered by Synthetix in 2019 and mainstreamed by Compound in 2020.
+  - #### Staking
+    - [[Staking]] in a DeFi context typically means locking tokens in a contract to earn rewards, distinct from [[Proof-of-Stake]] validator staking.
+    - Single-asset staking pools avoid [[Impermanent Loss]] but generally offer lower yields than paired-asset pools.
+  - #### Yield Aggregation
+    - [[Yield Aggregator]] protocols abstract strategy selection, autocompounding, and gas cost amortisation across pooled users.
+    - Strategy vaults encapsulate entire farming logic, updated via [[Protocol Governance]] proposals.
+    - Key risk: vault strategies may become suboptimal or exploitable as underlying protocol conditions change.
+  - #### Vetoken Mechanics
+    - Vote-escrowed token models (popularised by Curve Finance's veCRV) allow users to lock governance tokens to boost farming rewards and direct [[Token Emission]] to chosen pools.
+    - This created secondary markets (e.g. Convex Finance) for acquiring voting power, adding a meta-game layer to yield farming.
+
+- ### Applications and Use Cases
+  - #### Bootstrapping Protocol Liquidity
+    - New [[Decentralised Exchange]]s and [[Lending Protocol]]s use yield farming incentives as a [[Liquidity Bootstrapping]] mechanism to achieve sufficient depth for low-slippage trading from launch.
+  - #### Governance Distribution
+    - Distributing [[Governance Token]]s to active liquidity providers achieves broader decentralisation of voting power compared to ICO or VC-concentrated initial distributions.
+  - #### Stablecoin Yield
+    - Stablecoin-to-stablecoin [[Liquidity Pool]]s (e.g. USDC/DAI) eliminate [[Impermanent Loss]] while earning trading fees, attracting risk-averse capital seeking [[Passive Income]] above traditional savings rates.
+  - #### Cross-Protocol Capital Efficiency
+    - Advanced farmers deploy assets simultaneously across [[Lending Protocol]]s and [[Liquidity Pool]]s, recursively increasing yield through leveraged positions while managing [[Liquidation]] risk.
+  - #### Treasury Management
+    - [[Decentralised Autonomous Organisation]] (DAO) treasuries yield-farm idle assets to fund operational expenses and protocol development without centralised custody.
+
+- ### Risk Factors
+  - [[Smart Contract]] vulnerabilities: re-entrancy attacks, logic bugs, and upgrade key compromises have resulted in protocol losses.
+  - [[Impermanent Loss]]: quantified as the percentage difference between LP token value and equivalent held value; increases with asset price divergence.
+  - [[Oracle]] manipulation: price oracle exploits allow attackers to manipulate pool asset prices, enabling flash-loan-assisted fund drains.
+  - Token price risk: reward tokens earned may depreciate faster than they are harvested, eroding net yield.
+  - Regulatory risk: token distributions may be classified as securities offerings or taxable income events under multiple jurisdictions' frameworks.
+  - Gas cost risk: on high-fee networks, compounding frequency is constrained by transaction costs, reducing effective APY for smaller positions.
+
+- ### Relationships
+  - partOf:: [[Decentralised Finance]]
+  - requires:: [[Liquidity Pool]]
+  - requires:: [[Smart Contract]]
+  - requires:: [[Cryptocurrency Wallet]]
+  - hasPart:: [[Liquidity Provision]]
+  - hasPart:: [[Liquidity Mining]]
+  - hasPart:: [[Staking]]
+  - uses:: [[Automated Market Maker]]
+  - uses:: [[Governance Token]]
+  - uses:: [[Yield Aggregator]]
+  - uses:: [[Token Emission]]
+  - enables:: [[Passive Income]]
+  - enables:: [[Liquidity Bootstrapping]]
+  - enables:: [[Protocol Governance]]
+  - dependsOn:: [[Oracle]]
+  - dependsOn:: [[Decentralised Exchange]]
+  - dependsOn:: [[Lending Protocol]]
+  - contrastsWith:: [[Centralised Finance]]
+  - contrastsWith:: [[HODLing]]
+  - relatedTo:: [[Impermanent Loss]]
+  - relatedTo:: [[Annual Percentage Yield]]
+  - relatedTo:: [[Total Value Locked]]
+  - relatedTo:: [[Flash Loan]]
+  - bridges-to:: [[Algorithmic Trading]]
+  - bridges-to:: [[Risk Management]]
+
+- ### Standards and Context
+  - Yield farming contracts are predominantly deployed on [[Ethereum]] and EVM-compatible chains using [[ERC-20]] token standards for LP and reward tokens.
+  - [[ERC-4626]] (Tokenised Vault Standard) standardises the interface for yield-bearing vault contracts, improving composability across aggregators and protocols.
+  - Regulatory guidance varies: the US SEC has indicated that certain token distributions may constitute unregistered securities offerings; EU [[MiCA]] regulation provides a framework for crypto-asset service providers but does not fully address DeFi yield mechanics.
+  - [[FATF]] guidance on virtual assets covers exchange and custody but DeFi yield farming sits in a regulatory grey zone for direct P2P protocol interactions.
+  - Tax treatment of yield farming rewards differs across jurisdictions: some treat rewards as income at receipt, others as capital gains only upon disposal.
+
+- ### Provenance
+  - sources:: Compound Finance whitepaper (COMP distribution), Uniswap V2/V3 documentation, Aave Protocol documentation, Yearn Finance strategy vault documentation, ERC-4626 EIP specification
+  - updated:: 2026-06-13
+  - migration-date:: 2026-05-19T00:00:00Z

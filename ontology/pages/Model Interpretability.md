@@ -1,0 +1,688 @@
+public:: true
+
+# Model Interpretability
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:547fd240ca08f289f8e618c04cbd5aeb140f0f86ffc142254e45a726940a7b57",
+  "@type": "Page",
+  "vc:slug": "model-interpretability",
+  "title": "Model Interpretability",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:lime",
+      "vc:label": "LIME"
+    },
+    {
+      "@id": "urn:visionflow:linked:shap",
+      "vc:label": "SHAP"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feature-importance",
+      "vc:label": "Feature Importance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:global-explanation",
+      "vc:label": "Global Explanation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interpretable-ai",
+      "vc:label": "Interpretable AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intrinsic-interpretability",
+      "vc:label": "Intrinsic Interpretability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:local-explanation",
+      "vc:label": "Local Explanation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-transparency",
+      "vc:label": "Model Transparency"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0298"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Model Interpretability"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-interpretability",
+  "@type": "Class",
+  "label": "Model Interpretability",
+  "definition": "The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": {
+    "@id": "urn:ngm:class:explainable-ai",
+    "label": "Explainable AI"
+  },
+  "quality": 0.7,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:model-transparency",
+      "label": "Model Transparency"
+    },
+    {
+      "@id": "urn:ngm:class:interpretable-machine-learning",
+      "label": "Interpretable Machine Learning"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "@id": "urn:ngm:class:local-explanation",
+        "label": "Local Explanation"
+      },
+      {
+        "@id": "urn:ngm:class:global-explanation",
+        "label": "Global Explanation"
+      },
+      {
+        "@id": "urn:ngm:class:intrinsic-interpretability",
+        "label": "Intrinsic Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:post-hoc-explanation",
+        "label": "Post Hoc Explanation"
+      },
+      {
+        "@id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-model",
+        "label": "Predictive Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:lime",
+        "label": "LIME"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias Detection"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:black-box-model",
+        "label": "Black-Box Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-complexity",
+        "label": "Model Complexity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:interpretable-ai",
+        "label": "Interpretable AI"
+      },
+      {
+        "@id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Medical Decision Support"
+      }
+    ]
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:model-interpretability:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:547fd240ca08f289f8e618c04cbd5aeb140f0f86ffc142254e45a726940a7b57"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[LIME]]",
+      "resolved": "urn:visionflow:linked:lime",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[SHAP]]",
+      "resolved": "urn:visionflow:linked:shap",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ArtificialIntelligenceDomain]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Explainable AI]]",
+      "resolved": "urn:visionflow:owl:class:explainable-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Feature Importance]]",
+      "resolved": "urn:visionflow:owl:class:feature-importance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Global Explanation]]",
+      "resolved": "urn:visionflow:owl:class:global-explanation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Interpretable AI]]",
+      "resolved": "urn:visionflow:owl:class:interpretable-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Intrinsic Interpretability]]",
+      "resolved": "urn:visionflow:owl:class:intrinsic-interpretability",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Local Explanation]]",
+      "resolved": "urn:visionflow:owl:class:local-explanation",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning Discipline]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Model Transparency]]",
+      "resolved": "urn:visionflow:owl:class:model-transparency",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ModelInterpretability
+  - owl-role:: Concept
+  - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
+
+- ### Relationships
+  - Has Part: [[Feature Importance]]
+  - Has Part: [[Local Explanation]]
+  - Has Part: [[Global Explanation]]
+  - Requires: [[Machine Learning Discipline]]
+  - Supports: [[AI Governance]]
+  - Supports: [[Fairness]]
+  - Related To: [[Interpretable AI]]
+
+- ### Content
+  - The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.
+
+
+  ## Related Terms
+
+  - **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
+  - **Narrower**: [[Local Explanation]], [[Global Explanation]], [[Feature Importance]]
+  - **Related**: [[Interpretable AI]], [[Model Transparency]], [[Intrinsic Interpretability]]
+
+  ## Formal Specification
+
+  ### Dimensions of Interpretability
+
+  1. **Simulatability**: Can a human mentally simulate the entire model?
+  2. **Decomposability**: Can each component (input, parameter, calculation) be explained?
+  3. **Algorithmic Transparency**: Understanding of the learning algorithm itself
+
+  ### Levels of Interpretability
+
+  **Global Interpretability**:
+  - Understanding entire model logic
+  - Overall feature importance rankings
+  - General decision-making patterns
+
+  **Local Interpretability**:
+  - Explaining individual predictions
+  - Instance-specific feature contributions
+  - Decision boundaries for particular cases
+
+  **Modular Interpretability**:
+  - Understanding specific model components
+  - Layer-wise analysis in neural networks
+  - Subsystem behaviour characterisation
+
+  ## Taxonomy
+
+  ### By Scope
+
+  #### Global Interpretability Methods
+
+  **Feature Importance**:
+  - Permutation importance
+  - Shapley values (global)
+  - LASSO coefficients
+
+  **Model Behaviour**:
+  - Partial dependence plots (PDP)
+  - Accumulated local effects (ALE)
+  - Individual conditional expectation (ICE)
+
+  #### Local Interpretability Methods
+
+  **Instance-Level Explanations**:
+  - SHAP values (local)
+  - LIME approximations
+  - Counterfactual explanations
+
+  **Prediction Analysis**:
+  - Influence functions
+  - Attention weights
+  - Saliency maps
+
+  ### By Mechanism
+
+  #### Intrinsic Methods
+
+  Built into model architecture:
+  - Linear regression coefficients
+  - Decision tree paths
+  - Rule-based systems
+
+  #### Post-Hoc Methods
+
+  Applied after training:
+  - Model-agnostic techniques (SHAP, LIME)
+  - Model-specific visualisations (Grad-CAM)
+  - Surrogate models
+
+  ## Key Properties
+
+  ### Fidelity
+
+  **Definition**: Accuracy with which interpretation reflects true model behaviour
+
+  **Measurement**:
+  - Correlation between interpretation scores and actual predictions
+  - Agreement with ground truth in synthetic experiments
+  - Stability across similar inputs
+
+  ### Comprehensibility
+
+  **Definition**: Ease with which humans understand explanations
+
+  **Factors**:
+  - Cognitive load
+  - Required technical expertise
+  - Presentation format
+  - Context appropriateness
+
+  ### Completeness
+
+  **Definition**: Degree to which interpretation covers all relevant model aspects
+
+  **Considerations**:
+  - Feature coverage
+  - Interaction effects
+  - Temporal dynamics
+  - Multi-modal aspects
+
+  ## Implementation Approaches
+
+  ### Model-Agnostic Techniques
+
+  **SHAP (SHapley Additive exPlanations)**:
+  ```
+  φᵢ = Σ |S|!(|F|-|S|-1)! / |F|! [f(S∪{i}) - f(S)]
+     S⊆F\{i}
+  ```
+  - Game-theoretic feature attribution
+  - Consistent and locally accurate
+  - Computationally expensive for large models
+
+  **LIME (Local Interpretable Model-agnostic Explanations)**:
+  ```
+  ξ(x) = argmin L(f, g, πₓ) + Ω(g)
+       g∈G
+  ```
+  - Local linear approximations
+  - Fast computation
+  - Instability across similar inputs
+
+  ### Model-Specific Techniques
+
+  **Neural Networks**:
+  - Integrated gradients
+  - Layer-wise relevance propagation
+  - Attention visualisation
+
+  **Tree Ensembles**:
+  - Feature importance from splits
+  - SHAP TreeExplainer (fast)
+  - Individual tree path analysis
+
+  **Linear Models**:
+  - Coefficient interpretation
+  - Standardised coefficients for comparison
+  - Confidence intervals
+
+  ## Application Domains
+
+  ### Healthcare
+
+  **Requirements**:
+  - Clinical decision support transparency (IEEE P2802)
+  - Physician trust and adoption
+  - Patient informed consent
+
+  **Methods**:
+  - Instance-level explanations for diagnoses
+  - Global feature importance for clinical validation
+  - Counterfactuals for treatment alternatives
+
+  ### Finance
+
+  **Regulatory Context**:
+  - GDPR Article 22 right to explanation
+  - Fair lending regulations
+  - Audit trail requirements
+
+  **Applications**:
+  - Credit scoring interpretability
+  - Fraud detection explanation
+  - Risk assessment transparency
+
+  ### Autonomous Systems
+
+  **Standards**:
+  - IEEE 7001-2021 transparency requirements
+  - Safety-critical decision explanation
+  - Failure mode analysis
+
+  **Techniques**:
+  - Real-time local explanations
+  - Global behaviour characterisation
+  - Uncertainty quantification
+
+  ## Standards & Frameworks
+
+  ### IEEE Standards
+
+  **IEEE P2976 (XAI)**:
+  - Interpretability as core XAI component
+  - Classification by interpretability level
+  - Mandatory vs. optional interpretability requirements
+
+  **IEEE 7001-2021 (Transparency)**:
+  - Five transparency dimensions
+  - Interpretability for autonomous systems
+  - Stakeholder-appropriate explanations
+
+  **IEEE P2863 (Governance)**:
+  - Transparency as governance criterion
+  - Interpretability for accountability
+  - Organisational interpretability policies
+
+  ### Documentation Standards
+
+  **Model Cards** (Mitchell et al. 2019):
+  - Intended use
+  - Performance characteristics
+  - Limitations disclosure
+  - Interpretability methods employed
+
+  **Data Cards** (Gebru et al. 2021):
+  - Dataset characteristics affecting interpretability
+  - Known biases
+  - Recommended interpretation approaches
+
+  ## Evaluation Metrics
+
+  ### Quantitative Measures
+
+  **Fidelity Metrics**:
+  - R² between explanation and model
+  - Mean absolute error of approximation
+  - Rank correlation for feature importance
+
+  **Stability Metrics**:
+  - Lipschitz continuity of explanations
+  - Consistency across similar instances
+  - Robustness to input perturbations
+
+  **Efficiency Metrics**:
+  - Computation time
+  - Memory requirements
+  - Scalability characteristics
+
+  ### Qualitative Assessment
+
+  **User Studies**:
+  - Task completion time with/without explanations
+  - Decision accuracy improvement
+  - Trust calibration
+
+  **Expert Evaluation**:
+  - Domain specialist validation
+  - Alignment with prior knowledge
+  - Utility for decision support
+
+  ## Challenges & Limitations
+
+  ### Technical Challenges
+
+  **Computational Cost**:
+  - SHAP requires 2^n model evaluations
+  - Real-time constraints in production
+  - Scalability to high-dimensional data
+
+  **Approximation Errors**:
+  - Local methods may misrepresent global behaviour
+  - Surrogate model fidelity limitations
+  - Sampling-based uncertainty
+
+  **Interaction Effects**:
+  - Difficulty explaining high-order interactions
+  - Pairwise interaction visualisation complexity
+  - Combinatorial explosion in feature combinations
+
+  ### Methodological Issues
+
+  **Rashomon Effect**:
+  - Multiple equally accurate models with different interpretations
+  - No unique "correct" explanation
+  - Context-dependent interpretation validity
+
+  **Audience Heterogeneity**:
+  - Technical vs. non-technical users
+  - Domain expertise variations
+  - Cultural interpretation differences
+
+  ## Research Directions
+
+  ### Emerging Areas
+
+  **Causal Interpretability**:
+  - Moving beyond correlational explanations
+  - Interventional reasoning
+  - Counterfactual causal models
+
+  **Interactive Interpretability**:
+  - Dialogue-based explanation refinement
+  - User-guided interpretation exploration
+  - Personalised explanation generation
+
+  **Multi-modal Interpretability**:
+  - Cross-modal explanation consistency
+  - Vision-language model interpretation
+  - Unified multimodal frameworks
+
+  ### Industry Innovation
+
+  **Microsoft InterpretML**:
+  - Explainable boosting machines (EBM)
+  - Unified interpretation API
+  - Interactive visualisations
+
+  **Google Cloud Explainable AI**:
+  - Integrated with ML platform
+  - Feature attributions at scale
+  - What-if tool for counterfactuals
+
+  **DALEX (Descriptive mAchine Learning EXplanations)**:
+  - Language-agnostic framework
+  - Comprehensive interpretation suite
+  - R and Python implementations
+
+  ## Best Practices
+
+  ### Development Guidelines
+
+  1. **Design for Interpretability**: Consider interpretation methods during model selection
+  2. **Validate Explanations**: Test fidelity and stability empirically
+  3. **Document Methods**: Record interpretation techniques and limitations
+  4. **Stakeholder Alignment**: Tailor interpretations to audience expertise
+
+  ### Deployment Recommendations
+
+  **Pre-deployment**:
+  - Validate interpretation correctness with domain experts
+  - Assess computational feasibility for production
+  - Test across diverse input scenarios
+
+  **Production**:
+  - Monitor interpretation stability over time
+  - Track user engagement with explanations
+  - Update interpretations as model evolves
+
+  **Post-deployment**:
+  - Collect feedback on interpretation utility
+  - Refine methods based on user needs
+  - Audit interpretation accuracy periodically
+
+  #### References
+  ### Standards
+
+  - IEEE. (2023). *IEEE P2976: Standard for eXplainable Artificial Intelligence*
+  - IEEE. (2021). *IEEE 7001-2021: Standard for Transparency of Autonomous Systems*
+  - IEEE. (2020). *IEEE P2863: Recommended Practice for Organisational Governance of AI*
+
+  ### Academic Literature
+
+  - Molnar, C. (2022). *Interpretable Machine Learning: A Guide for Making Black Box Models Explainable*
+  - Lundberg, S. M., & Lee, S. I. (2017). "A unified approach to interpreting model predictions." *NeurIPS*
+  - Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). "'Why should I trust you?': Explaining predictions of any classifier." *KDD*
+
+  ### Tools & Frameworks
+
+  - Nori, H., et al. (2019). "InterpretML: A unified framework for machine learning interpretability." *arXiv:1909.09223*
+  - Biecek, P. (2018). "DALEX: Explainers for complex predictive models in R." *Journal of Machine Learning Research*, 19(84), 1-5
+
+  ## See Also
+
+  - [[Explainable AI]]
+  - [[Interpretable AI]]
+  - [[Local Explanation]]
+  - [[Global Explanation]]
+  - [[Feature Importance]]
+  - [[SHAP]]
+  - [[LIME]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

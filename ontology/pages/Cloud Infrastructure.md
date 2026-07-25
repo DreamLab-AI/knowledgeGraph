@@ -1,0 +1,312 @@
+public:: true
+alias:: CloudInfrastructure
+
+# Cloud Infrastructure
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:b11f10016d267812827e40767d6deb23a332922f97483ffbe6cd63e4d674c646",
+  "@type": "Page",
+  "vc:slug": "cloud-infrastructure",
+  "title": "Cloud Infrastructure",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:elasticity",
+      "vc:label": "Elasticity"
+    },
+    {
+      "@id": "urn:visionflow:linked:scalability",
+      "vc:label": "Scalability"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-service-provisioning",
+      "vc:label": "Self-Service Provisioning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:etsi-domain-infrastructure",
+      "vc:label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "InfrastructureDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure",
+      "vc:label": "Technology Domain"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "NGM-7032"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Cloud Infrastructure"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cloud-infrastructure",
+  "@type": "Class",
+  "label": "Cloud Infrastructure",
+  "definition": "Cloud infrastructure is a computing model that provides on-demand access to virtualized computing resources including servers, storage, networking, and platform services delivered over the internet, enabling organizations to provision and scale IT resources dynamically through IaaS, PaaS, and SaaS service models without managing physical hardware.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-computing-and-cloud",
+    "label": "Computing and Cloud"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      },
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure as a Service"
+      },
+      {
+        "@id": "urn:ngm:class:platform-as-a-service",
+        "label": "Platform as a Service"
+      },
+      {
+        "@id": "urn:ngm:class:software-as-a-service",
+        "label": "Software as a Service"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:multi-tenancy",
+        "label": "Multi-Tenancy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:hybrid-cloud",
+        "label": "Hybrid Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:multi-cloud",
+        "label": "Multi-Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "@id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-17788",
+        "label": "ISO/IEC 17788"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:on-premises-infrastructure",
+        "label": "On-Premises Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Application"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cloud-computing-infrastructure",
+      "label": "Cloud Computing Infrastructure"
+    }
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:cloud-infrastructure:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:b11f10016d267812827e40767d6deb23a332922f97483ffbe6cd63e4d674c646"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Elasticity]]",
+      "resolved": "urn:visionflow:linked:elasticity",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Scalability]]",
+      "resolved": "urn:visionflow:linked:scalability",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Self-Service Provisioning]]",
+      "resolved": "urn:visionflow:linked:self-service-provisioning",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ETSI_Domain_Infrastructure]]",
+      "resolved": "urn:visionflow:owl:class:etsi-domain-infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[InfrastructureDomain]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Technology Domain]]",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - Cloud infrastructure is a computing model that provides on-demand access to virtualized computing resources including servers, storage, networking, and platform services delivered over the internet. It enables organizations to provision and scale IT resources dynamically without managing physical hardware, typically through service models such as IaaS, PaaS, and SaaS.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:CloudInfrastructure
+  - owl-role:: Infrastructure
+  - belongs-to-domain:: [[InfrastructureDomain]], [[Technology Domain]], [[ETSI_Domain_Infrastructure]]
+
+- ### Relationships
+  - enables:: [[Scalability]], [[Elasticity]], [[Self-Service Provisioning]]
+
+- ### Content
+
+  ## Cloud Service Models
+
+  ### Infrastructure as a Service (IaaS)
+  Provides on-demand access to computing resources: servers, storage, networking, and virtualization. Customers manage applications, runtime, OS, middleware, and data while providers manage servers, storage, and networking.
+
+  **Key Characteristics:**
+  - Fully self-service for accessing computing resources
+  - Scalable and automated compute resources
+  - Pay-as-you-go pricing model
+  - Complete control over infrastructure through APIs/dashboards
+
+  **Examples:** AWS EC2, Azure Virtual Machines, Google Compute Engine
+
+  ### Platform as a Service (PaaS)
+  Provides a complete on-demand cloud platform for developing, running, and managing applications. The provider hosts servers, networks, storage, OS, databases, and development tools.
+
+  **Key Characteristics:**
+  - Developers write code and manage data/applications
+  - Platform management handled by provider
+  - Faster development and deployment cycles
+  - Built-in scaling and load balancing
+
+  **Examples:** Heroku, Google App Engine, Azure App Service
+
+  ### Software as a Service (SaaS)
+  Delivers fully functional applications over the internet on a subscription basis. Providers manage all aspects of the application infrastructure.
+
+  **Examples:** Salesforce, Microsoft 365, Google Workspace
+
+  ## Cloud Architecture Components
+
+  ### Building Blocks
+  - Compute instances (VMs, containers)
+  - Storage services (block, object, file)
+  - Networking (VPCs, load balancers, CDN)
+  - Identity and access management
+  - Monitoring and logging services
+
+  ### Deployment Models
+  | Model | Description |
+  |-------|-------------|
+  | Public Cloud | Resources shared among multiple tenants |
+  | Private Cloud | Dedicated infrastructure for single organization |
+  | Hybrid Cloud | Combination of public, private, and on-premises |
+  | Multi-Cloud | Services from multiple cloud providers |
+
+  ## Market Growth
+  - 2024 global market: $752.44 billion
+  - Projected 2030 market: $2,390.18 billion
+  - CAGR: 20.4% (2025-2030)
+
+  ## Major Providers
+  - Amazon Web Services (AWS)
+  - Microsoft Azure
+  - Google Cloud Platform
+  - IBM Cloud
+  - Oracle Cloud
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

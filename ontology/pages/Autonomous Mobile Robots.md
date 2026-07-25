@@ -1,0 +1,168 @@
+public:: true
+
+# Autonomous Mobile Robots
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:autonomous-mobile-robots",
+  "@type": "Page",
+  "vc:slug": "autonomous-mobile-robots",
+  "title": "Autonomous Mobile Robots",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:autonomous-mobile-robots",
+  "@type": "Class",
+  "label": "Autonomous Mobile Robots",
+  "definition": "Robotic platforms capable of self-directed locomotion through environments, navigating without fixed infrastructure guidance by using onboard sensing, mapping, localisation, and path-planning capabilities. Autonomous mobile robots (AMRs) operate in dynamic, human-shared spaces and are distinguished from automated guided vehicles (AGVs) by their ability to adapt routes in real time rather than following pre-defined paths.",
+  "domain": "robotics",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:mobile-robotics",
+      "label": "Mobile Robotics"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-manipulation",
+        "label": "Mobile Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-delivery",
+        "label": "Autonomous Delivery"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:navigation-stack",
+        "label": "Navigation Stack"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "@id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS Navigation Stack"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:amr",
+      "label": "AMR"
+    },
+    {
+      "@id": "urn:ngm:class:mobile-autonomous-robot",
+      "label": "Mobile Autonomous Robot"
+    }
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
+}
+```
+
+- ### Definition
+  - [[Autonomous Mobile Robots]] (AMRs) are wheeled, tracked, or legged robotic platforms that navigate environments independently using onboard computation and sensors, without requiring magnetic tape, wire, or other floor-embedded guidance infrastructure. They employ [[SLAM]] to build and localise within maps of their operating environment, [[Path Planning]] algorithms to compute collision-free routes to task goals, and [[Sensor Fusion]] to perceive both static obstacles and dynamic human co-workers. AMRs can replanning routes in real time when blocked, making them suitable for unstructured and human-occupied facilities.
+
+- ### Relationships
+  - AMRs rely on [[SLAM]] for simultaneous map construction and self-localisation, [[Path Planning]] for route computation, and [[Sensor Fusion]] of LiDAR, depth camera, and IMU data for environmental awareness. They directly enable [[Warehouse Automation]] and [[Logistics Automation]] use cases. Fleet coordination is managed through [[Fleet Management]] software, whilst software architectures commonly build upon the [[ROS Navigation Stack]]. Safety in human-shared environments depends critically on [[Collision Avoidance]] algorithms, and the physical hardware is provided by [[Mobile Robot Platform]] vendors.
+
+- ### Content
+  - The distinction between AGVs (which follow fixed infrastructure) and AMRs emerged practically in the 2010s, driven by advances in affordable solid-state LiDAR sensors, increased compute density, and the maturation of probabilistic robotics methods. Companies including Kiva Systems (acquired by Amazon in 2012 and rebranded Amazon Robotics) pioneered large-scale warehouse robotics, though the original Kiva platform operated on a constrained grid model rather than free-form navigation. MiR (Mobile Industrial Robots, founded 2013) and Fetch Robotics popularised truly autonomous, infrastructure-free industrial AMRs.
+
+  - The technical architecture of an AMR centres on the navigation stack: a sensor perception layer producing local obstacle maps, a global planner computing a path through the pre-built map to the goal, a local planner implementing dynamic obstacle avoidance (DWA, TEB, or similar), and a velocity controller translating planned motion to wheel commands. The Robot Operating System (ROS) and its successor ROS 2 provide the standard middleware framework binding these components. LiDAR-based SLAM (Google Cartographer, SLAM Toolbox, ORB-SLAM3 for vision-based variants) produces 2D occupancy or 3D point-cloud maps. Multi-floor operation and semantic navigation (understanding room labels, human gesture instructions) extend the basic navigation capability.
+
+  - AMR deployment spans logistics and fulfilment (Amazon, Ocado, AutoStore), manufacturing intralogistics (delivery of parts to assembly stations), healthcare (medication and supply transport in hospitals), and retail (autonomous shelf-scanning and restocking robots). Fleet management software orchestrates task assignment across tens to hundreds of AMRs in a facility, using queueing theory and multi-agent path finding (MAPF) algorithms to maximise throughput and minimise congestion. Safety standards (ISO 3691-4 for industrial trucks, ISO 13482 for service robots, IEC 61508 for functional safety) govern the design and certification of collision avoidance and emergency-stop systems.
+
+  - In 2024–2025, AMR capabilities are extending towards mobile manipulation — combining navigation with robotic arms for pick-and-place tasks — as seen in platforms from 6 River Systems, Locus Robotics, and Boston Dynamics Spot with manipulation attachments. Foundation models are enabling AMRs to interpret natural-language task instructions and reason about novel objects without explicit programming. Human-robot interaction improvements, including social-norm-compliant navigation and verbal status communication, are addressing acceptance barriers in shared workspaces. The global AMR market is forecast to exceed USD 15 billion by 2027, driven by e-commerce growth and labour market pressures in logistics and manufacturing.

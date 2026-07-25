@@ -1,0 +1,16 @@
+/* SearchView.css — editorial styles live in site/site.css (single palette source).
+   Kept as a thin import target so the page's CSS import remains valid. */
+
+.ng-search__doors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ng-space-2);
+  justify-content: center;
+  margin-top: var(--ng-space-6);
+}
+
+/* Centre + tint the empty-state icon on the search prompt. */
+.ng-search .ng-empty > svg {
+  color: var(--ng-teal-300);
+  margin-bottom: var(--ng-space-3);
+}

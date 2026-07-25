@@ -1,0 +1,315 @@
+public:: true
+
+# Optical Character Recognition
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:26f90a86d5aba314db04ff2fc3e228821f4b1acdb54f659ba3e4dcd80167dab0",
+  "@type": "Page",
+  "vc:slug": "optical-character-recognition",
+  "title": "Optical Character Recognition",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:legal-research",
+      "vc:label": "Legal Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Optical Character Recognition"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-29T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:optical-character-recognition",
+  "@type": "Class",
+  "label": "Optical Character Recognition",
+  "definition": "Optical Character Recognition (OCR) is a technology that converts images of typed, printed, or handwritten text into machine-encoded character sequences, enabling downstream search, editing, and automated processing of scanned documents and photographs. Classical approaches segment character glyphs and classify them against trained feature descriptors; contemporary deep-learning pipelines — typically convolutional neural networks paired with sequence models such as CTC or Transformer decoders — recognise whole text lines end-to-end without explicit segmentation. OCR is a foundational building block of document intelligence, information extraction, and accessibility tooling, and underlies virtually every large-scale digitisation effort from cultural heritage archives to enterprise content management.",
+  "domain": "ai",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:image-preprocessing",
+        "label": "Image Preprocessing"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:document-intelligence",
+        "label": "Document Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:legal-research",
+        "label": "Legal Research"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Digital Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:text-detection",
+        "label": "Text Detection"
+      },
+      {
+        "@id": "urn:ngm:class:layout-analysis",
+        "label": "Layout Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:character-segmentation",
+        "label": "Character Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:unicode-standard",
+        "label": "Unicode Standard"
+      },
+      {
+        "@id": "urn:ngm:class:pdf-ua",
+        "label": "PDF/UA"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:text-recognition",
+      "label": "Text Recognition"
+    },
+    {
+      "@id": "urn:ngm:class:ocr",
+      "label": "OCR"
+    }
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:optical-character-recognition:7c24e2360c7f",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:26f90a86d5aba314db04ff2fc3e228821f4b1acdb54f659ba3e4dcd80167dab0"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Computer Vision]]",
+      "resolved": "urn:visionflow:linked:computer-vision",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Legal Research]]",
+      "resolved": "urn:visionflow:linked:legal-research",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Deep Learning]]",
+      "resolved": "urn:visionflow:linked:deep-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning Discipline]]",
+      "resolved": "urn:visionflow:linked:machine-learning",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-29T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+- ### Definition
+  - Optical Character Recognition (OCR) is the automated conversion of images containing typed, printed, or handwritten text into machine-encoded character data. It integrates [[Computer Vision]] techniques — text region detection, binarisation, layout analysis, and character classification — with [[Natural Language Processing]] post-processing such as language-model rescoring and [[Named Entity Recognition]]. Modern OCR systems leverage [[Deep Learning]] architectures, particularly [[Convolutional Neural Network]]s combined with sequence transducers, to achieve near-human accuracy on printed Latin scripts and near-human performance on constrained handwriting. As a core primitive of [[Document Intelligence]], OCR underpins digitisation pipelines in publishing, government, healthcare, and enterprise content management, making previously inaccessible analogue archives fully searchable and processable by downstream [[Machine Learning]] systems.
+
+- ### Overview
+  - OCR solves the fundamental problem of bridging the analogue–digital divide for text. A physical document — a book page, a form, a street sign, a historical manuscript — is captured as a pixel image; OCR reconstructs the underlying symbolic character sequence.
+  - **Why it matters**
+    - Unlocks billions of pages of historical content for full-text search and analysis.
+    - Enables automation of high-volume data-entry workflows, reducing human error and cost.
+    - Provides the text layer required for [[Accessibility]] tools such as screen readers operating on scanned PDFs.
+    - Powers real-time applications from mobile cheque deposit to instant translation of signage.
+  - **Historical trajectory**
+    - Early systems (1950s–1980s) used template matching and feature engineering for fixed fonts.
+    - Tesseract (originally HP/Google) introduced adaptive classifiers that generalised across typefaces.
+    - The ImageNet era brought [[Convolutional Neural Network]]s replacing hand-crafted features; CRNN (2015) combined CNN feature extraction with bidirectional LSTM sequence decoding and CTC loss.
+    - [[Transformer Architecture]]-based engines (e.g. TrOCR, Donut) treat document images as visual tokens, enabling end-to-end models that also interpret layout semantics.
+  - **Distinction from related concepts**
+    - [[Intelligent Character Recognition]] (ICR) extends OCR to unconstrained cursive handwriting.
+    - [[Optical Mark Recognition]] (OMR) detects filled bubbles or marks rather than character glyphs.
+    - Scene text recognition addresses text embedded in natural photographs — variable scale, perspective, illumination — which classical document OCR handles poorly.
+
+- ### Key Components
+  - **Image Preprocessing** — [[Image Preprocessing]] steps including binarisation (Otsu thresholding, adaptive thresholding), deskewing, noise removal, and resolution normalisation that condition the input image for reliable character extraction.
+  - **Text Detection** — [[Text Detection]] localises text regions in the image. Methods range from connected-component analysis to deep detectors (EAST, CRAFT, DBNet) producing word- or line-level bounding boxes.
+  - **Layout Analysis** — [[Layout Analysis]] recovers document structure: columns, paragraphs, tables, headings, and reading order. Tools like Detectron2-based Document Layout Analysis (DLA) models classify page regions semantically.
+  - **Character Segmentation** — [[Character Segmentation]] isolates individual glyphs (traditional) or keeps sequences intact for end-to-end recognition (modern). CTC-based decoders handle variable-length sequences without explicit segmentation.
+  - **Recognition Engine** — The core classification step. Modern engines use CRNN (CNN + BiLSTM + CTC) or vision-encoder–text-decoder [[Transformer Architecture]]s. Multi-lingual engines jointly model scripts through shared Unicode output layers.
+  - **Language Model Post-Processing** — [[Language Model]] rescoring corrects character-level errors by leveraging word and n-gram probabilities; beam search with lexicon constraints improves dictionary-word accuracy significantly.
+  - **Output Rendering** — Results are encoded as [[Unicode Standard]]-compliant strings and may be embedded in tagged PDF ([[PDF/UA]]), ALTO XML, hOCR, or PAGE XML formats preserving spatial coordinates.
+
+- ### Mechanisms
+  - **CRNN Pipeline** — Input image → CNN feature maps (backbone, e.g. ResNet) → column-wise sequence of feature vectors → BiLSTM contextual encoding → CTC decoder → character sequence. Trained end-to-end with CTC loss, avoiding explicit character-level segmentation labels.
+  - **Attention-based Sequence-to-Sequence** — Encoder encodes image patch embeddings; attention decoder generates characters autoregressively. More flexible than CTC for irregular text and mathematical notation.
+  - **Document Foundation Models** — Models like Donut and Nougat treat the entire document page as a visual input and generate structured text (or JSON) directly, bypassing the classical pipeline stages. Relevant to [[Document Intelligence]] and zero-shot form understanding.
+  - **Handwriting Recognition Specifics** — HTR (Handwritten Text Recognition) extends OCR to cursive and historical scripts using line-level segmentation and specialised training corpora (e.g. IAM, RIMES, George Washington).
+
+- ### Applications and Use Cases
+  - **Enterprise Document Automation** — High-volume processing of invoices, purchase orders, and contracts through [[Robotic Process Automation]] integrations. OCR extracts field values; downstream [[Information Extraction]] models structure them.
+  - **Legal and Compliance** — [[Legal Research]] platforms digitise court decisions, patents, and regulatory filings. Full-text indexing enables semantic search at scale.
+  - **Healthcare** — Converting handwritten clinical notes, pathology reports, and prescription images into structured EHR data, reducing transcription latency and error.
+  - **Banking and Finance** — Cheque processing, KYC identity-document verification, and automated mortgage application ingestion depend on reliable OCR under time pressure.
+  - **Cultural Heritage Digitisation** — Mass digitisation of manuscripts, newspapers, and rare books (Google Books, Project Gutenberg, Europeana) making historical collections searchable.
+  - **Accessibility** — OCR underpins screen-reader access to scanned PDFs and image-only web content. [[Digital Accessibility]] mandates (WCAG, PDF/UA) increasingly require text-layer provision.
+  - **Supply Chain and Logistics** — Reading shipping labels, pallet markings, and waybills contributes to [[Supply Chain Visibility]] and inventory accuracy.
+  - **Augmented and Mixed Reality** — Real-time scene-text recognition in AR overlays translates signage and menus; cross-language OCR bridges physical and digital information layers, linking to [[Digital Twin]] representations of physical environments.
+  - **Knowledge Graph Population** — Extracted text feeds entity and relation extraction pipelines that enrich [[Knowledge Graph]] resources, enabling structured querying over formerly unstructured document corpora.
+
+- ### Relationships
+  - subClassOf:: [[Computer Vision]]
+  - requires:: [[Computer Vision]]
+  - requires:: [[Image Preprocessing]]
+  - requires:: [[Convolutional Neural Network]]
+  - uses:: [[Deep Learning]]
+  - uses:: [[Natural Language Processing]]
+  - uses:: [[Recurrent Neural Network]]
+  - uses:: [[Transformer Architecture]]
+  - enables:: [[Document Intelligence]]
+  - enables:: [[Information Extraction]]
+  - enables:: [[Legal Research]]
+  - enables:: [[Digital Accessibility]]
+  - enables:: [[Knowledge Graph]]
+  - hasPart:: [[Text Detection]]
+  - hasPart:: [[Layout Analysis]]
+  - hasPart:: [[Character Segmentation]]
+  - hasPart:: [[Language Model]]
+  - contrastsWith:: [[Intelligent Character Recognition]]
+  - contrastsWith:: [[Optical Mark Recognition]]
+  - bridges-to:: [[Robotic Process Automation]]
+  - bridges-to:: [[Supply Chain Visibility]]
+  - bridges-to:: [[Digital Twin]]
+  - standardizedBy:: [[Unicode Standard]]
+  - standardizedBy:: [[PDF/UA]]
+  - relatedTo:: [[Machine Learning]]
+  - relatedTo:: [[Named Entity Recognition]]
+
+- ### Standards and Context
+  - **Unicode Standard** — The [[Unicode Standard]] (maintained by the Unicode Consortium) defines the character repertoire and encoding for OCR output, covering virtually every script and symbol system. Correct Unicode normalisation (NFC/NFD) is essential for downstream NLP interoperability.
+  - **PDF/UA (ISO 14289)** — [[PDF/UA]] defines requirements for universally accessible PDF documents, including mandatory tagged content and searchable text layers that OCR-processed PDFs must satisfy to meet accessibility regulations (e.g. EU Web Accessibility Directive, ADA).
+  - **ALTO XML** — Analyzed Layout and Text Object XML schema (Library of Congress standard) encodes page layout and OCR character coordinates used in digital library workflows.
+  - **PAGE XML** — Page Analysis and Ground-truth Elements schema used in document-image analysis research and competition datasets (e.g. ICDAR series).
+  - **hOCR** — HTML-based OCR output format encoding word bounding boxes in HTML attributes; used by Tesseract and many open-source pipelines.
+  - **ISO/IEC standards** — Character recognition is addressed within ISO/IEC JTC 1/SC 34 (Document description and processing languages) and related standardisation bodies.
+  - **ICDAR Competitions** — The International Conference on Document Analysis and Recognition (ICDAR) series provides canonical benchmarks (ICDAR 2013, 2015, 2019, 2023) against which OCR engine accuracy is measured; winning entries drive research directions.
+  - **Tesseract** — Open-source OCR engine originally developed at HP, now maintained by Google. Versions 4+ use LSTM-based recognition. Widely used reference implementation for evaluating pipeline components.
+
+- ### Provenance
+  - sources:: Tesseract OCR documentation; ICDAR competition proceedings; Shi et al. "End-to-end Trainable Neural Network for Image-based Sequence Recognition" (CRNN 2016); He et al. Donut (2022); Blecher et al. Nougat (2023); Unicode Standard v15; ISO 14289-1:2014 (PDF/UA)
+  - updated:: 2026-06-13

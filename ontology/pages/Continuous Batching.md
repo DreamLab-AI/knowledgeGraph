@@ -1,0 +1,597 @@
+public:: true
+
+# Continuous Batching
+```json-ld
+{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:continuous-batching", "@type":"Page", "title":"Continuous Batching", "vc:slug":"continuous-batching", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[
+  {"@id":"urn:visionflow:linked:inference-optimisation","vc:label":"Inference Optimisation"},
+  {"@id":"urn:visionflow:linked:large-language-models","vc:label":"Large Language Models"},
+  {"@id":"urn:visionflow:linked:kv-cache","vc:label":"KV Cache"},
+  {"@id":"urn:visionflow:linked:paged-attention","vc:label":"Paged Attention"},
+  {"@id":"urn:visionflow:linked:v-llm","vc:label":"vLLM"},
+  {"@id":"urn:visionflow:linked:autoregressive-decoding","vc:label":"Autoregressive Decoding"},
+  {"@id":"urn:visionflow:linked:model-serving","vc:label":"Model Serving"},
+  {"@id":"urn:visionflow:linked:gpu-compute","vc:label":"GPU Compute"},
+  {"@id":"urn:visionflow:linked:gpu-memory","vc:label":"GPU Memory"},
+  {"@id":"urn:visionflow:linked:throughput","vc:label":"Throughput"},
+  {"@id":"urn:visionflow:linked:latency","vc:label":"Latency"},
+  {"@id":"urn:visionflow:linked:token-generation","vc:label":"Token Generation"},
+  {"@id":"urn:visionflow:linked:request-scheduling","vc:label":"Request Scheduling"},
+  {"@id":"urn:visionflow:linked:transformer-architecture","vc:label":"Transformer Architecture"},
+  {"@id":"urn:visionflow:linked:attention-mechanism","vc:label":"Attention Mechanism"},
+  {"@id":"urn:visionflow:linked:speculative-decoding","vc:label":"Speculative Decoding"},
+  {"@id":"urn:visionflow:linked:tensor-parallelism","vc:label":"Tensor Parallelism"},
+  {"@id":"urn:visionflow:linked:flash-attention","vc:label":"Flash Attention"},
+  {"@id":"urn:visionflow:linked:quantisation","vc:label":"Quantisation"},
+  {"@id":"urn:visionflow:linked:batch-processing","vc:label":"Batch Processing"},
+  {"@id":"urn:visionflow:linked:memory-management","vc:label":"Memory Management"},
+  {"@id":"urn:visionflow:linked:sglang","vc:label":"SGLang"},
+  {"@id":"urn:visionflow:linked:tensorrt-llm","vc:label":"TensorRT-LLM"},
+  {"@id":"urn:visionflow:linked:chunked-prefill","vc:label":"Chunked Prefill"},
+  {"@id":"urn:visionflow:linked:prefill-decode-disaggregation","vc:label":"Prefill-Decode Disaggregation"},
+  {"@id":"urn:visionflow:linked:gpu","vc:label":"GPU"},
+  {"@id":"urn:visionflow:linked:cuda","vc:label":"CUDA"},
+  {"@id":"urn:visionflow:linked:model-optimisation-and-performance","vc:label":"Model Optimisation and Performance"},
+  {"@id":"urn:visionflow:linked:inference","vc:label":"Inference"},
+  {"@id":"urn:visionflow:linked:inference-serving","vc:label":"Inference Serving"},
+  {"@id":"urn:visionflow:linked:triton-inference-server","vc:label":"Triton Inference Server"},
+  {"@id":"urn:visionflow:linked:distributed-systems","vc:label":"Distributed Systems"},
+  {"@id":"urn:visionflow:linked:retrieval-augmented-generation","vc:label":"Retrieval-Augmented Generation"},
+  {"@id":"urn:visionflow:linked:natural-language-processing","vc:label":"Natural Language Processing"},
+  {"@id":"urn:visionflow:linked:pipeline-parallelism","vc:label":"Pipeline Parallelism"}
+] }
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:continuous-batching",
+  "@type": "Class",
+  "label": "Continuous Batching",
+  "definition": "Continuous batching is a large language model serving technique in which the inference scheduler admits and evicts requests at the granularity of individual decoding steps rather than running a whole batch to completion before starting the next. As soon as any sequence in the batch finishes generating, its slot is freed and a queued request takes its place, keeping the GPU saturated and dramatically improving throughput and latency under heterogeneous request lengths. It is a defining feature of modern inference engines such as vLLM and is typically combined with paged attention and a shared key-value cache.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:inference-optimisation",
+      "label": "Inference Optimisation"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:request-scheduling", "label": "Request Scheduling"},
+      {"@id": "urn:ngm:class:kv-cache", "label": "KV Cache"},
+      {"@id": "urn:ngm:class:chunked-prefill", "label": "Chunked Prefill"},
+      {"@id": "urn:ngm:class:slot-management", "label": "Slot Management"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"},
+      {"@id": "urn:ngm:class:inference-serving", "label": "Inference Serving"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:paged-attention", "label": "Paged Attention"},
+      {"@id": "urn:ngm:class:kv-cache", "label": "KV Cache"},
+      {"@id": "urn:ngm:class:autoregressive-decoding", "label": "Autoregressive Decoding"},
+      {"@id": "urn:ngm:class:memory-management", "label": "Memory Management"},
+      {"@id": "urn:ngm:class:gpu", "label": "GPU"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:v-llm", "label": "vLLM"},
+      {"@id": "urn:ngm:class:sglang", "label": "SGLang"},
+      {"@id": "urn:ngm:class:tensorrt-llm", "label": "TensorRT-LLM"},
+      {"@id": "urn:ngm:class:token-generation", "label": "Token Generation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:throughput", "label": "Throughput"},
+      {"@id": "urn:ngm:class:gpu-utilisation", "label": "GPU Utilisation"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:multi-tenant-inference", "label": "Multi-Tenant Inference"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:gpu-memory", "label": "GPU Memory"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:paged-attention", "label": "Paged Attention"},
+      {"@id": "urn:ngm:class:autoregressive-decoding", "label": "Autoregressive Decoding"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:static-batching", "label": "Static Batching"},
+      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"},
+      {"@id": "urn:ngm:class:triton-inference-server", "label": "Triton Inference Server"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"},
+      {"@id": "urn:ngm:class:prefill-decode-disaggregation", "label": "Prefill-Decode Disaggregation"},
+      {"@id": "urn:ngm:class:tensor-parallelism", "label": "Tensor Parallelism"},
+      {"@id": "urn:ngm:class:flash-attention", "label": "Flash Attention"},
+      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+    ],
+    "improves": [
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:model-optimisation-and-performance", "label": "Model Optimisation and Performance"}
+    ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:in-flight-batching", "label": "In-Flight Batching"},
+    {"@id": "urn:ngm:class:dynamic-batching", "label": "Dynamic Batching"},
+    {"@id": "urn:ngm:class:iteration-level-scheduling", "label": "Iteration-Level Scheduling"}
+  ],
+  "quality": 0.91,
+  "provenance": {
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-21T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:continuous-batching:9e2f4a71bc83",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:continuous-batching"
+  },
+  "vc:resolutions": [
+    {"raw": "[[Inference Optimisation]]", "resolved": "urn:visionflow:linked:inference-optimisation", "kind": "ResolvedLink"},
+    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
+    {"raw": "[[KV Cache]]", "resolved": "urn:visionflow:linked:kv-cache", "kind": "ResolvedLink"},
+    {"raw": "[[Paged Attention]]", "resolved": "urn:visionflow:linked:paged-attention", "kind": "ResolvedLink"},
+    {"raw": "[[vLLM]]", "resolved": "urn:visionflow:linked:v-llm", "kind": "ResolvedLink"},
+    {"raw": "[[Autoregressive Decoding]]", "resolved": "urn:visionflow:linked:autoregressive-decoding", "kind": "StubLink"},
+    {"raw": "[[Model Serving]]", "resolved": "urn:visionflow:linked:model-serving", "kind": "ResolvedLink"},
+    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "StubLink"},
+    {"raw": "[[GPU Memory]]", "resolved": "urn:visionflow:linked:gpu-memory", "kind": "StubLink"},
+    {"raw": "[[Throughput]]", "resolved": "urn:visionflow:linked:throughput", "kind": "ResolvedLink"},
+    {"raw": "[[Latency]]", "resolved": "urn:visionflow:linked:latency", "kind": "ResolvedLink"},
+    {"raw": "[[Token Generation]]", "resolved": "urn:visionflow:linked:token-generation", "kind": "StubLink"},
+    {"raw": "[[Request Scheduling]]", "resolved": "urn:visionflow:linked:request-scheduling", "kind": "StubLink"},
+    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
+    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "ResolvedLink"},
+    {"raw": "[[Speculative Decoding]]", "resolved": "urn:visionflow:linked:speculative-decoding", "kind": "ResolvedLink"},
+    {"raw": "[[Tensor Parallelism]]", "resolved": "urn:visionflow:linked:tensor-parallelism", "kind": "ResolvedLink"},
+    {"raw": "[[Flash Attention]]", "resolved": "urn:visionflow:linked:flash-attention", "kind": "ResolvedLink"},
+    {"raw": "[[Quantisation]]", "resolved": "urn:visionflow:linked:quantisation", "kind": "ResolvedLink"},
+    {"raw": "[[Batch Processing]]", "resolved": "urn:visionflow:linked:batch-processing", "kind": "ResolvedLink"},
+    {"raw": "[[Memory Management]]", "resolved": "urn:visionflow:linked:memory-management", "kind": "ResolvedLink"},
+    {"raw": "[[SGLang]]", "resolved": "urn:visionflow:linked:sglang", "kind": "StubLink"},
+    {"raw": "[[TensorRT-LLM]]", "resolved": "urn:visionflow:linked:tensorrt-llm", "kind": "StubLink"},
+    {"raw": "[[Chunked Prefill]]", "resolved": "urn:visionflow:linked:chunked-prefill", "kind": "StubLink"},
+    {"raw": "[[Prefill-Decode Disaggregation]]", "resolved": "urn:visionflow:linked:prefill-decode-disaggregation", "kind": "StubLink"},
+    {"raw": "[[GPU]]", "resolved": "urn:visionflow:linked:gpu", "kind": "ResolvedLink"},
+    {"raw": "[[CUDA]]", "resolved": "urn:visionflow:linked:cuda", "kind": "ResolvedLink"},
+    {"raw": "[[Model Optimisation and Performance]]", "resolved": "urn:visionflow:linked:model-optimisation-and-performance", "kind": "ResolvedLink"},
+    {"raw": "[[Inference]]", "resolved": "urn:visionflow:linked:inference", "kind": "ResolvedLink"},
+    {"raw": "[[Inference Serving]]", "resolved": "urn:visionflow:linked:inference-serving", "kind": "StubLink"},
+    {"raw": "[[Triton Inference Server]]", "resolved": "urn:visionflow:linked:triton-inference-server", "kind": "StubLink"},
+    {"raw": "[[Distributed Systems]]", "resolved": "urn:visionflow:linked:distributed-systems", "kind": "ResolvedLink"},
+    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
+    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
+    {"raw": "[[Pipeline Parallelism]]", "resolved": "urn:visionflow:linked:pipeline-parallelism", "kind": "StubLink"}
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:enrichment-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-06-21T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+- ### Definition
+  - Continuous Batching — also termed in-flight batching, iteration-level scheduling, or dynamic batching — is a foundational scheduling technique for high-throughput [[Inference Serving]] of [[Large Language Models]] and other [[Autoregressive Decoding]]-based [[Deep Learning]] models in which the [[Request Scheduling]] policy operates at the granularity of individual decoding steps rather than waiting for an entire batch of sequences to complete before admitting new work.
+  - The technique was first systematically described by the Orca paper (Yu et al., OSDI 2022) and rapidly operationalised in the [[vLLM]] inference engine (Kwon et al., SOSP 2023 Best Paper), becoming the universal default scheduling strategy for all production-grade [[Inference Serving]] systems by 2024.
+  - As of 2026, continuous batching underlies the [[Throughput]] and [[Latency]] characteristics of every major open-source [[Inference Serving]] engine — [[vLLM]], [[SGLang]], [[TensorRT-LLM]], LMDeploy, and NVIDIA Dynamo — and is the foundational mechanism enabling commercially viable serving of [[Large Language Models]] at scale across chat, [[Retrieval-Augmented Generation]], [[Agentic AI]], and specialised [[Natural Language Processing]] workloads. In the naive static batching regime, all sequences in a batch must run until the longest sequence emits its end-of-sequence token before the next batch can begin; short sequences that finish early leave [[GPU Compute]] slots idle, inflating both [[Latency]] and cost per generated token — because the idle GPU is still consuming power while returning no useful output. Continuous batching dissolves this inefficiency by re-evaluating the active batch composition after every forward pass: any slot vacated by a completed sequence is immediately reclaimed and assigned to a queued request, keeping [[GPU]] utilisation close to its theoretical maximum and decoupling service throughput from the tail behaviour of the longest-running requests in the queue. The mechanism depends critically on efficient [[Memory Management]] of the [[KV Cache]], the per-token key-value tensor store that grows with sequence length during [[Autoregressive Decoding]] and must be maintained in [[GPU Memory]] for every active sequence simultaneously. [[Paged Attention]], introduced in the [[vLLM]] system (Kwon et al., SOSP 2023), addresses this by partitioning the cache into fixed-size blocks managed analogously to virtual memory pages, enabling near-zero fragmentation and prefix sharing across concurrent requests via copy-on-write block semantics. Together, continuous batching and [[Paged Attention]] form the foundational throughput stack of all major open-source [[Inference Optimisation]] engines as of 2026 — including [[vLLM]], [[SGLang]], [[TensorRT-LLM]], and LMDeploy — and have demonstrated [[Throughput]] improvements of up to 23x over naive HuggingFace Transformers serving on the same [[GPU]] hardware. Extensions including [[Chunked Prefill]], [[Speculative Decoding]], and [[Prefill-Decode Disaggregation]] build upon continuous batching's iteration-level scheduling to further reduce time-to-first-token and improve tail [[Latency]] at high concurrency. The NVIDIA Dynamo open-source framework (2025) extended continuous batching to disaggregated multi-node deployments, pairing it with a smart router, SLA-based planner, and NIXL hardware-accelerated [[KV Cache]] transfer library to achieve sub-100ms time-to-first-token at scale. RadixAttention in [[SGLang]] exploits continuous batching's iteration-level visibility to maintain a prefix radix tree, enabling up to 6.4x throughput gain on workloads with shared prefixes such as [[Retrieval-Augmented Generation]] pipelines and multi-turn [[Attention Mechanism]]-based dialogue systems, making continuous batching the architectural cornerstone of modern production [[Model Serving]] for [[Natural Language Processing]] workloads built on [[Transformer Architecture]] backbones and the essential enabling technology for commercially viable [[Distributed Systems]] LLM deployment at scale.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ContinuousBatching
+  - owl-role:: ExecutableProtocol | InferenceSchedulingMechanism | ThroughputOptimiser
+  - owl-inferred:: artificial-intelligence:InFlightBatching, artificial-intelligence:DynamicBatching, artificial-intelligence:IterationLevelScheduling, artificial-intelligence:AdaptiveBatching
+  - belongs-to-domain:: [[Model Optimisation and Performance]]
+  - implemented-in-layer:: [[Inference Serving]]
+
+- ### Relationships
+  - is-subclass-of:: [[Inference Optimisation]], [[Model Serving]]
+  - has-part:: [[Request Scheduling]], [[KV Cache]], [[Chunked Prefill]], [[Paged Attention]], [[Admission Control]], [[Slot Management]]
+  - requires:: [[GPU Compute]], [[GPU Memory]], [[Transformer Architecture]], [[Autoregressive Decoding]], [[Deep Learning]]
+  - enables:: [[Throughput]], [[Large Language Models]], [[Inference Serving]], [[Retrieval-Augmented Generation]], [[Multi-Tenant Inference]], [[Cost Optimisation]]
+  - implements:: [[Memory Management]], [[Inference Optimisation]], [[Scheduling]]
+  - depends-on:: [[Paged Attention]], [[Attention Mechanism]], [[KV Cache]], [[Autoregressive Decoding]], [[GPU Compute]]
+  - supports:: [[vLLM]], [[SGLang]], [[TensorRT-LLM]], [[Token Generation]], [[Natural Language Processing]], [[NVIDIA Dynamo]]
+  - uses:: [[GPU]], [[CUDA]], [[Paged Attention]], [[Flash Attention]], [[Tensor Parallelism]], [[Pipeline Parallelism]], [[Quantisation]]
+  - contrasts-with:: [[Batch Processing]], [[Triton Inference Server]], [[Static Batching]], [[Offline Inference]]
+  - related-to:: [[Speculative Decoding]], [[Prefill-Decode Disaggregation]], [[Quantisation]], [[Distributed Systems]], [[Pipeline Parallelism]], [[Model Optimisation and Performance]], [[Mixture of Experts]], [[Data Parallelism]], [[Agentic AI]], [[RadixAttention]], [[Knowledge Graph]], [[Federated Learning]], [[Reinforcement Learning]], [[Vertex AI]]
+  - improves:: [[Latency]], [[Throughput]], [[GPU Utilisation]]
+  - standardized-by:: [[vLLM]]
+
+- ### Content
+  ## Compositional Relationships (Components)
+    ```
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:hasPart ai:RequestScheduling))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:hasPart ai:KVCache))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:hasPart ai:ChunkedPrefill))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:hasPart ai:SlotManagement))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:partOf ai:ModelServing))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:partOf ai:InferenceServing))
+    ```
+  ## Dependency Relationships
+    ```
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:requires ai:GPUMemory))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:requires ai:TransformerArchitecture))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:requires ai:AutoregressiveDecoding))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:dependsOn ai:PagedAttention))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:dependsOn ai:AttentionMechanism))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:dependsOn ai:KVCache))
+    ```
+  ## Capability Relationships
+    ```
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:enables ai:Throughput))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:enables ai:LargeLanguageModels))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:enables ai:InferenceServing))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:enables ai:MultiTenantInference))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:supports ai:vLLM))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:supports ai:SGLang))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:supports ai:TensorRTLLM))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:improves ai:Latency))
+    ```
+  ## Implementation Relationships
+    ```
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:uses ai:PagedAttention))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:uses ai:FlashAttention))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:uses ai:TensorParallelism))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:uses ai:CUDA))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:implements ai:MemoryManagement))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:implements ai:InferenceOptimisation))
+    ```
+  ## Reduction Relationships
+    ```
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:reducesTo ai:RequestScheduling))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:contrastsWith ai:StaticBatching))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:contrastsWith ai:BatchProcessing))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:relatedTo ai:PrefillDecodeDisaggregation))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:enables ai:CostOptimisation))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:enables ai:GPUUtilisation))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:requires ai:DeepLearning))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:supports ai:NVIDIADynamo))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:relatedTo ai:MixtureOfExperts))
+    SubClassOf(ai:ContinuousBatching
+      ObjectSomeValuesFrom(ai:relatedTo ai:AgenticAI))
+    ```
+
+  ## About
+    Continuous batching is the scheduling mechanism that elevated [[Large Language Models]] serving from a low-efficiency, high-latency operation to a production-grade, economically viable service. The underlying problem it addresses — GPU under-utilisation under heterogeneous request lengths — is structurally fundamental to [[Autoregressive Decoding]]: because each token is generated sequentially and depends on all prior tokens' key-value representations stored in the [[KV Cache]], inference cannot be trivially parallelised across sequence positions. In naive static batching, the scheduler fills a batch, fires a forward pass for every decoding step, and waits until the entire batch completes (i.e., the longest sequence emits its end-of-sequence token) before starting new work. Short requests that finish early simply idle — their slots are allocated but unused — causing effective [[GPU]] utilisation to collapse under heterogeneous workloads typical of chat, API, or [[Retrieval-Augmented Generation]] applications where prompt and response lengths vary by orders of magnitude. The economics of this inefficiency are severe: at a concurrency of 64 requests with length variance typical of a real-world API, static batching can utilise as little as 20-30% of peak [[GPU Compute]] throughput, meaning that operators are paying for hardware that is idle more than two-thirds of the time.
+
+    Continuous batching, first described systematically by Orca (Yu et al., OSDI 2022) and rapidly adopted in [[vLLM]] (Kwon et al., SOSP 2023), dissolves this bottleneck by moving [[Request Scheduling]] to the iteration level: after each forward pass (a single decoding step for all sequences currently in flight), the scheduler checks whether any sequence has completed. Completed sequences immediately release their [[KV Cache]] blocks, and pending requests from the queue are admitted to fill those slots in the very next forward pass. The [[GPU]] never waits for a tail sequence to finish; it remains continuously occupied. Anyscale benchmarks demonstrated that the combination of [[Paged Attention]] and continuous batching yields [[Throughput]] improvements of up to 23x over naive HuggingFace Transformers serving on identical hardware. More conservatively, production benchmarks across diverse workloads show 4-8x throughput improvement, with the largest gains under high request concurrency and high variance in request length. The improvement arises from two complementary mechanisms: reduced idle time (continuous batching keeps the batch full) and reduced memory waste ([[Paged Attention]] eliminates [[KV Cache]] fragmentation, allowing more sequences to coexist in [[GPU Memory]] simultaneously). These effects compound: a fuller batch with denser memory utilisation achieves higher arithmetic intensity in the matrix multiplications that dominate [[Transformer Architecture]] forward passes, further improving hardware efficiency.
+
+    The technique is now universally adopted in production LLM serving stacks. As of 2026, [[vLLM]], [[SGLang]], [[TensorRT-LLM]] (where it is marketed as "in-flight batching"), and LMDeploy ("persistent batching") all implement continuous batching as their default scheduling strategy. The performance frontier has shifted to optimising second-order interactions between continuous batching and its extensions. [[SGLang]]'s RadixAttention prefix tree exploits continuous batching's iteration-level KV cache visibility to detect and reuse shared prefixes across concurrent requests, yielding up to 6.4x additional throughput gain on [[Retrieval-Augmented Generation]] workloads. NVIDIA Dynamo (open-sourced 2025) lifted continuous batching to a multi-node disaggregated architecture, incorporating an SLA-based planner and smart router that assigns prefill and decode to specialised GPU pools while maintaining continuous scheduling semantics within each pool — achieving sub-100ms time-to-first-token on multi-node H100 clusters serving [[Deep Learning]] models at hundreds of billions of parameters. The research community continues to push the scheduling frontier: Nexus (arXiv:2507.06608) proposed proactive intra-GPU disaggregation of prefill and decode phases without inter-node KV transfer overhead; PolyServe (arXiv:2507.17769) addressed multi-SLO serving under heterogeneous latency requirements; and PROSERVE (arXiv:2512.12928) introduced unified multi-priority [[Request Scheduling]] that balances fairness with throughput under continuous batching constraints — each of these building directly on the iteration-level scheduling primitive that continuous batching established.
+
+  ## Relationship to Operating System Scheduling Theory
+
+    The design of continuous batching schedulers draws directly from classical operating system process scheduling theory. The mapping between OS scheduling concepts and LLM inference scheduling concepts is precise and instructive:
+
+    | OS Scheduling Concept | LLM Continuous Batching Equivalent |
+    |---|---|
+    | Process | Request / sequence |
+    | CPU time quantum | Decoding iteration (one forward pass) |
+    | Ready queue | Request admission queue |
+    | Running state | Active batch slot (in-flight sequence) |
+    | Process completion | Sequence EOS emission |
+    | Memory page | [[Paged Attention]] KV cache block |
+    | Virtual address | Logical KV cache token position |
+    | Physical frame | Physical KV cache block in [[GPU Memory]] |
+    | Page table | Per-sequence block table |
+    | Swap space | CPU memory [[KV Cache]] for preempted sequences |
+    | Page fault | KV cache block miss (requires recomputation) |
+
+    This correspondence is explicit in the Orca paper (Yu et al., 2022), which positions its "iteration-level scheduling" as the LLM equivalent of preemptive process scheduling. The analogy extends to scheduling algorithms: Shortest-Job-First (SJF) scheduling corresponds to prioritising requests with shorter expected output lengths, which reduces average [[Latency]] but requires length prediction (non-trivial for generative models). Round-robin corresponds to uniform time quantum allocation, implemented as a fairness policy in systems like FairBatching. First-Come-First-Served (FCFS) is the default policy in most continuous batching deployments, providing simplicity at the cost of head-of-line blocking under heterogeneous request lengths.
+
+    The key insight that continuous batching uniquely contributes over standard OS scheduling is the [[KV Cache]] as a "working set" analogy: just as OS virtual memory requires that a process's working set (frequently accessed pages) remain in physical memory for efficient execution, a generative sequence's [[KV Cache]] blocks (representing its entire context history) must remain in [[GPU Memory]] for efficient decode step execution. [[Paged Attention]] operationalises this working set concept for [[GPU Memory]], enabling the continuous batching scheduler to reason about memory allocation at block granularity rather than at sequence granularity.
+
+  ## Formal Analysis
+    The throughput advantage of continuous batching over static batching can be characterised formally. Let $B$ be the batch size, $L_i$ the output length of request $i$, and $L_{max} = \max_i L_i$ the maximum output length in the batch. Under static batching, the GPU executes $B \cdot L_{max}$ token-generation steps — because all requests are padded to run until the longest completes — but only $\sum_i L_i$ of those steps produce useful output. The wasteful compute fraction is $1 - \frac{\sum_i L_i}{B \cdot L_{max}}$, which grows as output length variance increases. For a realistic Zipf-distributed output length distribution (which describes real API traffic well), this waste fraction typically exceeds 60% at batch size 32.
+
+    Under continuous batching, the GPU executes exactly $\sum_i L_i$ token-generation steps (plus a small constant overhead for scheduling), because each step produces exactly one useful output token per active sequence, and sequences are retired immediately upon completion. The [[Throughput]] gain of continuous batching over static batching therefore approximates $\frac{B \cdot L_{max}}{\sum_i L_i}$, which equals the ratio of the maximum output length to the mean output length — the coefficient of variation of the output length distribution. This theoretical maximum is achieved when: (1) the [[KV Cache]] is large enough to hold all concurrent sequences, (2) [[Paged Attention]] eliminates fragmentation so that the practical capacity matches the theoretical maximum, and (3) scheduling overhead is negligible compared to forward pass time.
+
+    The time-to-first-token (TTFT) under continuous batching is determined by the prefill time (proportional to the prompt length, with complexity $O(n^2)$ for the [[Attention Mechanism]] without [[Flash Attention]], $O(n)$ effective IO complexity with [[Flash Attention]]) plus queuing delay (time waiting in the admission queue behind other requests). The time-per-output-token (TPOT) after the first token is determined by the decode step time, which is primarily memory-bandwidth-bound: each decode step reads the full [[KV Cache]] for all active sequences (a large memory read) and writes one token of new KV state. TPOT therefore scales linearly with the active batch size $B_{active}$: $TPOT \propto B_{active} \cdot d_{model} \cdot n_{layers} / BW_{mem}$, where $BW_{mem}$ is [[GPU Memory]] bandwidth. This memory-bandwidth bottleneck is the fundamental reason that [[Speculative Decoding]] (which amortises the cost of memory reads by verifying multiple draft tokens per forward pass) is synergistic with continuous batching: it increases arithmetic intensity per memory read, converting memory-bandwidth-bound decode steps toward compute-bound steps and recovering efficiency that continuous batching alone cannot achieve.
+
+  ## Components / Architecture
+
+    **Iteration-Level Scheduler**: the core algorithmic component of continuous batching. After every forward pass, the scheduler evaluates: (1) which sequences have completed (emitted EOS or hit max length), (2) which queued requests can be admitted given current [[GPU Memory]] availability and block budget, and (3) how to reshape the batch tensor and [[KV Cache]] block table accordingly for the next forward pass. The scheduler operates on sequence-level metadata — current position, remaining KV block budget, priority tier, SLA class — rather than on the raw tensors, keeping scheduling overhead below 1 ms even at batch sizes of 512+. In asynchronous scheduling architectures (vLLM v0.19.0+), CPU-side scheduling computations are overlapped with GPU forward passes, eliminating scheduling from the critical path entirely.
+
+    **[[KV Cache]] Manager with [[Paged Attention]]**: the enabling data structure that makes continuous batching practical. [[Paged Attention]] partitions the [[KV Cache]] into fixed-size physical blocks (typically 16-32 tokens per block, configurable). A per-sequence block table maps logical token positions to physical blocks scattered non-contiguously across [[GPU Memory]], analogously to virtual memory page tables in an operating system. When a sequence completes, its blocks are atomically returned to a free-block pool and immediately available to incoming sequences. This eliminates both internal fragmentation (blocks are exactly the right size for their allocated tokens) and external fragmentation (non-contiguous physical layout is transparent to the attention kernel via the block table). Copy-on-write semantics allow identical prefixes — such as shared system prompts in a multi-tenant deployment, or shared document contexts in a [[Retrieval-Augmented Generation]] service — to reference the same physical blocks without duplication, implementing the RadixAttention and automatic prefix caching (APC) optimisations. The [[Paged Attention]] CUDA kernel was implemented specifically to support non-contiguous block table lookup, a non-trivial kernel engineering challenge that required custom [[CUDA]] development by the [[vLLM]] team.
+
+    **Prefill Pipeline**: the initial forward pass that processes the entire input prompt in parallel (one pass, full prompt length), populating the [[KV Cache]] for all input tokens. This is compute-intensive (dominated by the $O(n^2)$ [[Attention Mechanism]] over the prompt length $n$, reduced to $O(n)$ effective IO-complexity with [[Flash Attention]]) and is distinct from the memory-bandwidth-bound decode phase. In high-concurrency systems, prefill of long prompts can monopolise the [[GPU]] for an entire forward pass, stalling decode steps for other in-flight sequences; [[Chunked Prefill]] addresses this by breaking prefill computation into smaller chunks (typically 256-512 tokens) and interleaving them with decode steps of other sequences in each micro-batch. Chunking trades a modest increase in per-request prefill latency for a large reduction in time-to-first-token variance across the concurrent request population.
+
+    **Admission Control**: the scheduler must enforce a memory budget — attempting to admit a request whose [[KV Cache]] requirements would exhaust [[GPU Memory]] would cause an out-of-memory error and crash the serving process. Admission control evaluates the maximum possible cache footprint of a new request (worst-case output length, in blocks) and only admits it if sufficient free blocks exist. Conservative admission control guarantees memory safety but reduces utilisation; optimistic admission with preemption support achieves higher utilisation by pausing low-priority sequences (swapping their [[KV Cache]] to CPU memory via "swap-out" or dropping it entirely, forcing recomputation on resume) to admit higher-priority requests. [[vLLM]] supports three preemption modes: recompute (cheapest but introduces re-prefill latency), swap (medium cost, requires CPU [[Memory Management]]), and abort (highest priority new request, drop lowest-priority incumbent).
+
+    **[[Chunked Prefill]]** (introduced in Sarathi-Serve, adopted in vLLM v0.3+, [[SGLang]]): prefill requests are segmented into equal-sized chunks (e.g., 256-512 tokens per chunk), and each chunk is executed as part of a micro-batch that also includes decode steps for other sequences. This prevents long prompts from monopolising the [[GPU]] for an entire forward pass, reducing time-to-first-token variance by up to 60-80% in mixed workloads and improving overall [[Throughput]] when prefill and decode loads are mixed. Chunked prefill also improves [[GPU]] arithmetic intensity by padding decode-only micro-batches (which are compute-underutilised at small batch sizes) with prefill tokens, achieving better hardware efficiency per forward pass.
+
+    **[[Speculative Decoding]] Integration**: [[Speculative Decoding]] uses a small, fast draft model to propose $k$ tokens per step (typically $k = 5-8$) that the larger target model verifies in a single forward pass, achieving 2-3x effective token generation speedup without changing output quality (identical to greedy sampling when all tokens are accepted; or using rejection sampling to maintain the target distribution). Integrating [[Speculative Decoding]] with continuous batching requires careful scheduler coordination: the scheduler must manage the variable number of accepted tokens per step (zero to $k$), handle draft model inference as a sub-step, and interleave speculative and non-speculative requests. As of [[vLLM]] v0.18+, EAGLE-based and NGram speculative decoding both integrate with [[Chunked Prefill]] and continuous batching. P-EAGLE on AWS Trainium achieves 3x speedup via Conditional-On-Distribution sampling. The vLLM Speculators library provides a standardised API for plugging new draft models into any [[vLLM]]-compatible continuous batching serving system.
+
+    **[[Prefill-Decode Disaggregation]]**: an architectural evolution that runs prefill and decode on separate [[GPU]] pools (Mooncake architecture, Kimi/DeepSeek production systems). The prefill pool processes incoming prompts at high [[GPU Compute]] efficiency — running large prefill batches at near-peak FLOP utilisation; the resulting [[KV Cache]] tensors are streamed to the decode pool (via NIXL, NVLink, InfiniBand, or CXL), which runs continuous batching over completed-prefill sequences at near-peak [[GPU Memory]] bandwidth utilisation. Disaggregation removes the interference between compute-bound prefill and memory-bandwidth-bound decode, enabling independent scaling of each phase and hardware specialisation (high-FLOP/HBM-bandwidth ratio chips for prefill; high-HBM-bandwidth chips for decode). By 2025, every major production-grade LLM serving framework — NVIDIA Dynamo, llm-d, Ray Serve LLM, [[SGLang]], [[vLLM]], Mooncake — supported disaggregated inference. [[SGLang]] with Mooncake on 96 H100 GPUs achieved 52,300 input tokens/second and 22,300 output tokens/second for DeepSeek-R1 under full disaggregation. Nexus (arXiv:2507.06608) extended disaggregation to intra-GPU prefill/decode pipelining, hiding KV transfer latency within decode micro-batches on the same GPU.
+
+    **[[Tensor Parallelism]] and [[Pipeline Parallelism]] Integration**: at scale, the [[Transformer Architecture]] model weights are sharded across multiple GPUs via [[Tensor Parallelism]] (splitting attention heads and FFN dimensions across GPUs) and/or [[Pipeline Parallelism]] (partitioning model layers across GPUs, running different layers on different devices in a pipeline). Continuous batching operates above both of these parallelism strategies — the scheduler manages sequence slots and [[KV Cache]] blocks, while the parallelism framework handles the distribution of computation across GPUs. [[vLLM]] uses ray-distributed execution for multi-GPU serving with continuous batching; [[SGLang]] uses its own distributed execution layer. Combining [[Tensor Parallelism]] with disaggregated continuous batching requires co-ordinating tensor-parallel groups across both prefill and decode pools, adding an extra scheduling dimension that NVIDIA Dynamo's Planner module manages automatically.
+
+  ## Major Variants and Extensions
+
+    **In-flight batching (original continuous batching)**: the baseline form as described in Orca (2022) — iteration-level scheduler, no chunking, no disaggregation. Sufficient for moderate concurrency and moderate prompt length variance. Adopted by early [[vLLM]] and Hugging Face TGI.
+
+    **Chunked prefill continuous batching** ([[Chunked Prefill]]): long prompts are split into fixed-size chunks (typically 256-512 tokens) that are co-scheduled with decode steps in each micro-batch. First proposed in Sarathi-Serve (Agrawal et al., OSDI 2024), later adopted in [[vLLM]] (v0.3+) and [[SGLang]]. The variant eliminates the "prefill monopoly" problem where a single long-prompt request stalls decode for all other in-flight sequences, reducing tail TTFT by 60-80% in mixed workloads without sacrificing aggregate [[Throughput]].
+
+    **Disaggregated continuous batching** ([[Prefill-Decode Disaggregation]]): prefill and decode phases are separated onto dedicated GPU pools, with [[KV Cache]] tensors transferred between them via high-bandwidth interconnects (NVLink, InfiniBand, or CXL). Continuous batching runs independently within each pool. Eliminates phase interference, enables hardware specialisation (high-FLOP chips for prefill, high-HBM-bandwidth chips for decode), and enables independent auto-scaling of each phase. Formalised in DistServe (Zhong et al., OSDI 2024) and Mooncake (Qin et al., FAST 2025), operationalised in NVIDIA Dynamo, [[SGLang]] Mooncake, and Ray Serve LLM. Proactive intra-GPU disaggregation (Nexus, arXiv:2507.06608) extends this concept to within a single GPU, pipelining prefill and decode micro-batches to hide KV transfer latency.
+
+    **Prefix-caching continuous batching** (RadixAttention in [[SGLang]]): continuous batching is augmented with a radix tree that tracks [[KV Cache]] blocks for cached prefixes. When a new request shares a prefix with a recently served request (common in RAG, tool-augmented agents, and multi-turn dialogue), the matching KV blocks are reused without recomputation. SGLang's RadixAttention achieves up to 6.4x additional throughput on prefix-heavy workloads. [[vLLM]] implements an equivalent mechanism via automatic prefix caching (APC), enabled by default from v0.4.
+
+    **Speculative continuous batching**: continuous batching is integrated with [[Speculative Decoding]], where a small draft model proposes $k$ tokens per step and the target model verifies them in a single forward pass. The scheduler must handle variable effective output lengths (accepted token counts vary per step) and interleave speculative proposals with standard decode for non-speculative requests. As of vLLM v0.18+, EAGLE-based speculative decoding and NGram speculative decoding both integrate with chunked prefill and continuous batching, delivering 2-3x effective token throughput improvement on decode-heavy workloads.
+
+    **Multi-model and MoE continuous batching**: future schedulers for [[Mixture of Experts]] architectures route different requests to different expert subsets within the same forward pass, requiring batch-level awareness of expert activation patterns. Disaggregated [[Mixture of Experts]] serving (Lina, ExFlow, and related 2025 systems) extends continuous batching semantics to heterogeneous expert routing, treating expert activation as a scheduling dimension alongside sequence length.
+
+    **Priority-aware and fair continuous batching**: FairBatching (arXiv:2510.14392) and PROSERVE (arXiv:2512.12928) extend the basic continuous batching scheduler with fairness-aware queue management, multi-tier priority levels, and SLA-differentiated scheduling (latency SLO for interactive users, throughput SLO for batch workloads). These are particularly relevant for multi-tenant academic and enterprise deployments where different user classes have different service expectations.
+
+  ## Use Cases / Major Families
+
+    **Chat and API services**: the archetypal continuous batching workload — requests arrive at varying rates, prompt lengths range from a few tokens (continuation prompts) to thousands (document-grounded QA), and response lengths are similarly unpredictable. Continuous batching maximises [[Throughput]] for this heterogeneous mix and minimises queuing [[Latency]] for short requests that would otherwise wait behind long ones. This is the primary use case for which [[vLLM]] was designed, and it drives the API serving infrastructure of OpenAI-compatible endpoints deployed worldwide.
+
+    **[[Retrieval-Augmented Generation]] (RAG)**: [[Retrieval-Augmented Generation]] pipelines prepend retrieved document chunks to the user query, creating prompt lengths that vary substantially with retrieval results. Under static batching, the padding overhead from aligning RAG prompts to batch-uniform lengths is severe. Continuous batching eliminates padding entirely and allows prefix-sharing of common document chunks via [[Paged Attention]]'s copy-on-write blocks. [[SGLang]]'s RadixAttention is particularly effective here, achieving up to 6.4x throughput gain by detecting shared document-chunk prefixes across concurrent RAG requests and reusing their [[KV Cache]] blocks without recomputation. This makes continuous batching the enabling technology for production-scale [[Knowledge Graph]] query and document retrieval LLM services.
+
+    **Multi-tenant inference with shared prefixes**: enterprise deployments serving multiple clients from a single [[Large Language Models]] instance commonly inject per-client system prompts (of 500-4,000 tokens each). [[Paged Attention]]'s prefix caching allows these prompts to populate the [[KV Cache]] once and be shared across all requests from that client, saving computation proportional to system prompt length multiplied by the per-client request rate. At 10,000 requests/hour per client with 2,000-token system prompts, prefix caching can reduce effective [[GPU Compute]] load by 30-40%.
+
+    **[[Long Context]] inference**: [[Large Language Models]] with 128K+ context windows (GPT-4, Gemini 1.5, Claude, Llama 3.1 405B) generate [[KV Cache]] tensors that dwarf the model weights themselves at long contexts. Continuous batching with [[Paged Attention]]'s non-contiguous block allocation allows [[Long Context]] requests to coexist with short ones without pre-reserving contiguous [[GPU Memory]] regions, dramatically improving memory utilisation at scale. Without [[Paged Attention]], a single 128K-token request would require 32-64 GB of contiguous [[GPU Memory]], making multi-request coexistence impossible on typical [[GPU]] hardware. [[Long Context]] serving is increasingly important for enterprise RAG and coding assistant deployments.
+
+    **[[Speculative Decoding]] workloads and structured generation**: applications requiring constrained [[Autoregressive Decoding]] (JSON schemas, grammar-guided generation via outlines or lm-format-enforcer, structured prediction with finite-state-machine token masking) or speculative drafting benefit from continuous batching's flexible batch composition. Structured generation masks invalid tokens at each decode step without altering the continuous batching scheduler, while [[Speculative Decoding]] requires scheduler-level coordination of draft and verify phases across in-flight sequences.
+
+    **[[Agentic AI]] and tool-augmented inference**: agentic frameworks (LangChain, LlamaIndex, AutoGen, CrewAI) generate sequences that pause mid-generation to call external tools, then resume with tool output appended to the context. Continuous batching must handle these "mid-stream pauses" gracefully — releasing the [[GPU]] slot during the tool call (which may take seconds) and re-admitting the sequence when the tool result arrives without losing the [[KV Cache]] state. [[vLLM]]'s "tool call interrupt" mechanism and [[SGLang]]'s native tool integration handle this pattern within the continuous batching scheduler.
+
+    **[[Federated Learning]] and privacy-preserving serving**: federated inference architectures serving local LLMs on privacy-sensitive data — healthcare, legal, finance — use continuous batching to maximise [[Throughput]] on the smaller GPU configurations typical of on-premises deployment (A100-40GB, A6000, L40S), where the efficiency gains are most critical because the hardware cannot be scaled horizontally as easily as in cloud deployments.
+
+    **Cost-optimised inference serving**: cloud inference providers including AWS Bedrock, GCP [[Vertex AI]], Azure AI, and UK-based providers (Ori, Aleph Alpha UK partnerships) use continuous batching as the foundational throughput mechanism to reduce per-token serving cost, with measured cost reductions of 4-6x compared to static batching at equivalent quality-of-service levels. At scale (millions of tokens per day), this cost reduction translates directly to the commercial viability of LLM product integration.
+
+  ## Academic Context
+
+    The intellectual roots of continuous batching lie in operating systems scheduling theory: the analogy between iteration-level LLM scheduling and OS process scheduling (where the CPU switches between processes at each clock interrupt) is explicit in the Orca paper (Yu et al., 2022). The Orca paper (presented at OSDI 2022, University of Washington) is the first formal treatment of iteration-level scheduling for [[Transformer Architecture]] inference, introducing the term and demonstrating 36.9x throughput improvement over existing systems. The Orca authors drew explicitly on the shortest-job-first and preemptive scheduling literature from classical OS theory, recognising that LLM decode steps are analogous to CPU time quanta and that the variable output length of generative models creates a scheduling problem structurally equivalent to process scheduling with unknown job lengths. The paper introduced the notion of "selective batching" — only batching operations that have the same batch dimension (self-attention with different sequence lengths requires different operations) — as a practical constraint on the iteration-level scheduler.
+
+    [[vLLM]] (Kwon et al., SOSP 2023) operationalised continuous batching at scale by pairing it with [[Paged Attention]] — the key insight being that continuous batching requires efficient [[Memory Management]] of variable-length [[KV Cache]] allocations, which naive contiguous allocation cannot provide. Without [[Paged Attention]], continuous batching must either pre-allocate the maximum possible output length for each new request (wasting [[GPU Memory]] proportional to the gap between actual and maximum length) or use complex compaction strategies to reclaim fragmented memory. [[Paged Attention]]'s block-table indirection eliminates both problems. The [[vLLM]] paper was awarded the SOSP 2023 Best Paper award and is among the most-cited systems papers of 2023, reflecting the community's recognition of its practical significance for the newly emerging large-model serving domain.
+
+    [[Flash Attention]] (Dao et al., NeurIPS 2022; Flash Attention 2, 2023; Flash Attention 3, 2024) is a complementary optimisation operating at the kernel level — it restructures attention computation to reduce HBM memory bandwidth requirements by tiling the attention matrix computation to fit in on-chip SRAM — and is orthogonal to but synergistic with continuous batching. Together, they operate at different levels of the inference stack: continuous batching optimises request scheduling and [[KV Cache]] utilisation at the system level; [[Flash Attention]] optimises the [[Attention Mechanism]] kernel arithmetic intensity at the chip level. The combination lowers the memory-bandwidth cost of each decode step (Flash Attention) while maximising the number of decode steps that execute without GPU idle time (continuous batching), producing compounding efficiency gains.
+
+    Sarathi-Serve (Agrawal et al., OSDI 2024) introduced the key [[Chunked Prefill]] insight: that the prefill phase, being compute-bound, interferes with the memory-bandwidth-bound decode phase when co-scheduled in the same batch, and that chunking prefill into decode-sized micro-batches resolves the interference without sacrificing aggregate [[Throughput]]. This paper established the empirical and theoretical basis for the chunked-prefill variant of continuous batching that is now default in [[vLLM]] and [[SGLang]].
+
+    The Mooncake paper (Qin et al., USENIX FAST 2025) formalised [[Prefill-Decode Disaggregation]] and demonstrated the economic case for separating the two phases onto specialised hardware pools. The architecture was developed at Moonshot AI for the Kimi production service and released as open source, rapidly adopted by [[SGLang]], [[vLLM]], and the LLM serving community. Mooncake introduced the concept of the NIXL-style KV transfer library — a dedicated high-throughput channel for moving [[KV Cache]] tensors between prefill and decode nodes — which NVIDIA later adopted as the NIXL library in its Dynamo framework.
+
+    The survey paper "From Attention to Disaggregation: Tracing the Evolution of LLM Inference" (arXiv:2511.07422) provides a comprehensive taxonomy of continuous batching variants and their relationships, tracing the intellectual lineage from the Orca iteration-level scheduler through [[Paged Attention]], [[Chunked Prefill]], [[Speculative Decoding]] integration, and full disaggregation. The survey identifies continuous batching as the "scheduling primitive" upon which the entire modern [[Inference Serving]] stack is constructed.
+
+    FairBatching (arXiv:2510.14392) introduced fairness-aware batch formation for continuous batching systems, addressing the head-of-line blocking problem in which a small number of very long requests can stall other users' short requests even under continuous batching if the scheduler is purely throughput-greedy. This work is particularly relevant for academic shared-infrastructure deployments where equity of access across user communities is a governance requirement, as distinct from commercial deployments where throughput maximisation is the dominant objective.
+
+  ## Current Landscape (2026)
+
+    As of mid-2026, continuous batching is the universal baseline for all serious LLM inference deployments. The competitive landscape has shifted to optimising second-order interactions between continuous batching and its extensions, with the primary differentiators among frameworks being prefix caching efficiency, disaggregation support, and scheduling fairness.
+
+    **vLLM vs SGLang**: [[SGLang]] has overtaken [[vLLM]] in raw throughput on most benchmarks — delivering approximately 16,200 tokens/second versus [[vLLM]]'s 12,500 tokens/second on H100 GPUs at 70B+ model scale (n1n.ai benchmark, March 2026). [[SGLang]]'s advantage stems from its RadixAttention prefix-tree [[KV Cache]] management and optimised [[Chunked Prefill]] scheduling, which together reduce redundant computation for shared-prefix workloads. For smaller (7B-8B) models, the performance gap is approximately 29% in [[SGLang]]'s favour. [[vLLM]] retains advantages in hardware compatibility breadth (AMD ROCm, Intel Gaudi, CPU offloading) and community size (dominant open-source adoption). TensorRT-LLM, NVIDIA's proprietary implementation, leads on NVIDIA hardware for pure throughput — with 3.1x DeepSeek V3 throughput advantage over [[vLLM]] on H100s — at the cost of a more complex compilation and deployment model. LMDeploy occupies a niche in the Chinese research community with strong performance on Qwen models.
+
+    **Zero-bubble scheduling**: vLLM v0.19.0 introduced async scheduling with overlap between CPU-side [[Request Scheduling]] and [[GPU]] forward passes, reducing scheduling overhead to near zero and contributing to a reported 4.3x improvement in aggregate throughput metrics on certain high-concurrency workloads. This architectural change decouples the scheduling policy from the GPU execution timeline, allowing arbitrarily complex scheduling algorithms without adding latency to the critical path.
+
+    **NVIDIA Dynamo and disaggregation at scale**: [[Prefill-Decode Disaggregation]] has become standard for large-scale deployments. NVIDIA Dynamo (open-sourced in early 2025 at GTC) provides a production-grade disaggregated inference framework built on NIXL for inter-node [[KV Cache]] transfer, with Planner + Smart Router components that dynamically route prefill and decode requests based on current load and SLA targets. NVIDIA Dynamo achieves sub-100ms TTFT for interactive applications on multi-node H100 clusters, and is deployed on Azure Kubernetes Service with the ND GB200 NVL72 configuration for frontier model serving. Ray Serve LLM, llm-d (the Kubernetes-native LLM serving project backed by Google, Red Hat, and Hugging Face), and [[SGLang]]'s Mooncake integration all ship with full disaggregation support as of 2025-2026.
+
+    **Multi-model serving and MoE**: [[Mixture of Experts]] architectures (DeepSeek-R1, Mixtral, Grok) require the continuous batching scheduler to manage expert routing alongside sequence slot management. The 2025 research frontier includes ExFlow, MoE-Offloading, and related systems that extend continuous batching semantics to expert routing — treating expert activation patterns as a scheduling dimension and pipelining expert computation to maintain GPU utilisation.
+
+    **Data residency deployments**: UK and EU organisations subject to data residency requirements under GDPR and the Data Protection Act 2018 increasingly deploy [[vLLM]] and [[SGLang]] on private [[GPU]] infrastructure. The open-source nature of both engines eliminates data leakage to external inference APIs, with continuous batching ensuring economically viable [[Throughput]] on on-premises hardware that otherwise would be too expensive to justify. UK cloud providers including Ori Cloud (Oxford-founded) and Epigram AI (Edinburgh-based) offer managed [[vLLM]]-based inference services under UK jurisdiction for NHS Digital, legal, and financial sector clients.
+
+    **P-EAGLE and advanced speculative decoding**: P-EAGLE (Parallel EAGLE) on AWS Trainium integrates parallel multi-token prediction with continuous batching, achieving up to 3x speedup on decode-heavy workloads via Conditional-On-Distribution (COD) sampling that predicts multiple tokens in a single forward pass. The vLLM Speculators library (github.com/vllm-project/speculators) provides a unified framework for building, evaluating, and storing [[Speculative Decoding]] algorithms compatible with continuous batching schedulers, enabling community-developed draft models to plug into any [[vLLM]]-compatible serving deployment.
+
+  ## UK Context
+
+    The UK has developed a notable presence in LLM [[Inference Serving]] infrastructure, driven by regulatory (GDPR, UK Data Protection Act 2018), commercial, and academic interests. The Alan Turing Institute — the UK's national institute for data science and AI, with founding universities including Edinburgh, Oxford, Cambridge, UCL, and Warwick — has funded research programmes on efficient [[Model Serving]] for open academic models, specifically exploring the throughput-fairness trade-off in continuous batching schedulers for shared research infrastructure. The ARCHER2 national supercomputing facility at Edinburgh and the Baskerville GPU facility at Birmingham have piloted [[vLLM]]-based continuous batching for serving large open-weight models such as Llama 3 and Mistral across the UK academic community, with the goal of reducing per-token serving cost for research users to a level comparable with commercial APIs.
+
+    Oxford-founded Ori Cloud and Edinburgh-based Epigram AI have both deployed [[vLLM]]-based [[Inference Serving]] stacks with continuous batching as UK-jurisdiction alternatives to US-based cloud AI APIs, marketing specifically to healthcare (NHS Digital) and legal sector clients who cannot route personal data through US-based inference endpoints under UK GDPR Art. 46 transfer restrictions. Ori Cloud's managed LLM inference service on UK data-centre GPU infrastructure uses continuous batching and [[Paged Attention]] to serve healthcare [[Natural Language Processing]] workloads — clinical document summarisation, discharge letter generation, and SNOMED coding assistance — with demonstrated [[Throughput]] of 8-12x over naive static serving on equivalent A100 hardware.
+
+    The University of Edinburgh's School of Informatics, through collaborations with the Edinburgh International Data Facility (EIDF), has used [[vLLM]] with continuous batching to serve open-weight models for the Scottish Government's public-sector AI pilots, exploring throughput-cost trade-offs for multi-tenant academic deployments serving diverse [[Natural Language Processing]] tasks including Gaelic language processing and public-sector document retrieval via [[Retrieval-Augmented Generation]]. The Informatics group has published analysis of [[Flash Attention]] kernel performance on EIDF's H100 cluster, directly informing optimal chunk sizing for [[Chunked Prefill]] in UK academic [[Model Serving]] contexts.
+
+    Manchester's National Graphene Institute and the University of Manchester's AI Research Hub (£120 million facility opened 2024) have explored [[Inference Serving]] for domain-specific LLMs on their GPU clusters, with continuous batching enabling multi-user sharing of specialised chemistry and materials-science models — directly relevant to Northern England's advanced materials manufacturing base in Manchester, Sheffield (steel/advanced alloys), and Teesside (chemicals). The Sheffield Advanced Manufacturing Research Centre and its AI-in-manufacturing programme have piloted continuous batching for [[Inference]] of predictive maintenance LLMs on shared GPU nodes, demonstrating that continuous batching reduces the GPU hardware required per manufacturing site by a factor of 4-6 compared to per-request static-batch serving. Imperial College London's AI lab has published work on fairness-aware scheduling for shared inference infrastructure building on the FairBatching academic literature, relevant to Imperial's shared-GPU academic computing infrastructure where multiple research groups compete for [[GPU Compute]] resources. Newcastle University's Digital Institute has explored continuous batching for [[Distributed Systems]] inference serving in the context of the North East England health data analytics cluster, serving clinical NLP models for the Newcastle Hospitals NHS Foundation Trust.
+
+    The UK AI Safety Institute (established 2023, operationalised 2024) has evaluated [[vLLM]] and [[SGLang]] continuous batching deployments as part of its AI system safety testing infrastructure, requiring efficient [[Model Serving]] of frontier models for red-teaming and capability evaluation. The UK's National AI Infrastructure Programme, announced in the AI Opportunities Action Plan (January 2026) and backed by £14 billion in AI infrastructure investment, will deploy significant GPU capacity at UK data centres — creating substantial demand for continuous batching serving infrastructure as the enabling technology for cost-effective access to this public compute resource.
+
+  ## Future Directions (2026-2030)
+
+    **Chiplet and disaggregated memory architectures**: next-generation [[GPU]] architectures (NVIDIA Blackwell Ultra, AMD MI400) feature CXL-attached memory pooling and chiplet disaggregation. Continuous batching schedulers will need to manage heterogeneous memory tiers (HBM, CXL-DRAM, NVMe) for [[KV Cache]], enabling sequences longer than any single chip's HBM capacity. The CXL interconnect allows [[GPU Memory]] capacity to scale independently of GPU count, potentially enabling 10-100x longer context windows than current HBM-limited designs without requiring model parallelism.
+
+    **Multi-model and [[Mixture of Experts]] serving**: future inference systems will serve multiple [[Large Language Models]] or sparse MoE architectures concurrently on a single GPU cluster. Continuous batching across models — routing different requests to different expert subsets without [[GPU]] idle time — is an active research problem. Unified schedulers that co-locate multiple fine-tuned adapters on the same base model (LoRA adapter hot-swapping) while maintaining continuous batching efficiency are under development in [[vLLM]] (v1.0+ adapter multiplexing) and [[SGLang]].
+
+    **AI inference energy efficiency standards**: the EU AI Act's forthcoming inference efficiency provisions and the UK government's AI Opportunities Action Plan (January 2026) both include references to compute efficiency reporting. Continuous batching's throughput gains directly translate to energy efficiency improvements per token — the same 23x throughput improvement represents a 23x reduction in energy per output token at equivalent [[GPU]] utilisation — making it a policy-relevant technology for AI carbon footprint reduction under emerging sustainability reporting frameworks.
+
+    **Sparse and adaptive computation**: future models with adaptive computation depth (early exit layers, Mixture of Depths, token skipping) will require continuous batching schedulers that can handle sequences of varying effective depth in the same batch. A batch where some sequences exit at layer 16 and others run to layer 64 creates heterogeneous compute graphs that require scheduler modifications analogous to those required for heterogeneous output lengths.
+
+    **[[Agentic AI]] inference and sequence forking**: multi-step agentic workloads generating tool calls, sub-agent prompts, and structured outputs mid-sequence require the scheduler to handle sequence forking (one sequence spawns multiple parallel branches) and merging (multiple branches converge to a continuation), extending continuous batching beyond simple sequence completion semantics. Tree-attention and beam-search-style scheduling are early approaches to this problem, with active development in [[vLLM]] and [[SGLang]] for agentic serving workloads.
+
+    **Hardware-software co-design for scheduling**: the NVLink-Fabric and CXL interconnects in upcoming GPU platforms will expose programmable network bandwidth that continuous batching schedulers can exploit — routing [[KV Cache]] transfers with scheduling-level awareness of network congestion, reducing the latency penalty of [[Prefill-Decode Disaggregation]]. Software-hardware co-design for scheduling is an emerging research area at NVIDIA Research, Microsoft Research, and University of Cambridge's Systems Research Group.
+
+  ## Key Terminology
+
+    - **Static Batching**: the naive scheduling approach where all sequences in a batch run to completion before the next batch starts; wastes [[GPU]] capacity under heterogeneous request lengths. GPU utilisation can fall below 30% for typical API workload distributions.
+    - **Continuous Batching (In-Flight Batching)**: iteration-level scheduling that admits new requests as existing ones complete, keeping [[GPU]] utilisation near maximum across heterogeneous workloads. Also termed iteration-level scheduling (Orca, 2022) and in-flight batching (TensorRT-LLM marketing term).
+    - **[[KV Cache]]**: the per-sequence memory store of key-value tensors computed for past tokens, enabling [[Autoregressive Decoding]] without recomputing [[Attention Mechanism]] over the full history at each step. The [[KV Cache]] size grows linearly with sequence length and is the dominant [[GPU Memory]] consumer in continuous batching serving.
+    - **[[Paged Attention]]**: block-based [[KV Cache]] management that eliminates fragmentation by decoupling logical token positions from physical memory layout, analogously to virtual memory paging. Enables non-contiguous allocation, prefix sharing via copy-on-write, and near-zero internal fragmentation.
+    - **Prefill Phase**: the initial forward pass that processes the full input prompt, populating the [[KV Cache]] for all input tokens. Compute-intensive ($O(n^2)$ with standard attention, $O(n)$ IO-complexity with [[Flash Attention]]). Typically runs once per request.
+    - **Decode Phase**: the [[Autoregressive Decoding]] loop producing one token per forward pass. Memory-bandwidth-intensive (reads full [[KV Cache]] per step). Duration is proportional to output length and dominates total [[Latency]] for long responses.
+    - **[[Chunked Prefill]]**: splitting the prefill phase into smaller chunks interleaved with decode steps of other sequences, eliminating prefill monopoly and reducing time-to-first-token variance. Default in vLLM v0.3+ and [[SGLang]].
+    - **[[Prefill-Decode Disaggregation]]**: running prefill and decode on separate [[GPU]] pools, enabling independent scaling, hardware specialisation, and elimination of phase interference. Implemented in NVIDIA Dynamo, Mooncake, DistServe, llm-d.
+    - **[[Speculative Decoding]]**: using a small draft model to propose multiple tokens that the target model verifies in one forward pass, improving effective token generation rate. Achieves 2-3x TPOT improvement on decode-heavy workloads; 3.6x demonstrated on H200 GPUs with EAGLE-based drafting.
+    - **Admission Control**: the scheduling policy that decides when a queued request can be admitted to the active batch given current [[GPU Memory]] availability. Must account for worst-case output length to prevent OOM errors; preemption-enabled schedulers can relax this constraint via swap-out policies.
+    - **Head-of-Line Blocking**: the problem where long requests stall shorter ones even under continuous batching if the [[Request Scheduling]] policy is purely throughput-greedy. Addressed by FairBatching (arXiv:2510.14392) and PROSERVE (arXiv:2512.12928).
+    - **RadixAttention**: [[SGLang]]'s prefix-tree caching mechanism that extends continuous batching with automatic [[KV Cache]] reuse for shared prefixes, achieving up to 6.4x throughput gain on [[Retrieval-Augmented Generation]] and multi-turn workloads.
+    - **Slot**: the conceptual unit of [[KV Cache]] capacity assigned to one sequence in the active batch. Measured in [[Paged Attention]] blocks; released immediately when the sequence completes.
+    - **Iteration**: one forward pass through the model, producing one output token per active sequence. The granularity at which continuous batching operates its scheduling policy.
+    - **Goodput**: the useful [[Throughput]] delivered to users — output tokens per second that meet SLA latency targets — as distinguished from gross throughput. Goodput is the correct optimisation target for multi-SLO deployments; some works (DistServe, PolyServe) show that maximising goodput requires different scheduling strategies than maximising raw throughput.
+    - **Throughput (tokens/second)**: the primary throughput metric for continuous batching systems; typically reported as output tokens per second summed across all concurrent requests. SGLang achieves ~16,200 output tokens/second on H100 GPUs for 70B models as of 2026.
+    - **Time-to-First-Token (TTFT)**: the [[Latency]] from request submission to receipt of the first output token; dominated by prefill time and queuing delay. Sub-100ms TTFT is achievable with disaggregated prefill on NVIDIA Dynamo at scale.
+    - **Time-per-Output-Token (TPOT)**: the [[Latency]] of generating each subsequent token after the first; dominated by decode step time and active batch size. Scales as $B_{active} \cdot d_{model} \cdot n_{layers} / BW_{HBM}$. [[Speculative Decoding]] reduces effective TPOT by verifying multiple tokens per step.
+    - **NIXL (NVIDIA Inference Transfer Library)**: NVIDIA's hardware-accelerated library for transferring [[KV Cache]] tensors between disaggregated prefill and decode nodes. Uses NVLink, InfiniBand, or PCIe pathways with scheduling-aware bandwidth allocation.
+    - **Preemption**: the scheduler action of pausing a low-priority active sequence by swapping its [[KV Cache]] to CPU memory (swap-out) or dropping it (recompute-on-resume), freeing [[GPU Memory]] to admit a higher-priority request. Increases scheduling flexibility at the cost of recomputation overhead.
+
+  ## Interactions with the Broader LLM Stack
+
+    Continuous batching does not operate in isolation — it is embedded within a multi-layer [[Model Optimisation and Performance]] stack where each layer's optimisations are either synergistic, orthogonal, or in tension. Understanding these interactions is essential for deploying and configuring continuous batching systems correctly.
+
+    **[[Flash Attention]] (orthogonal, synergistic)**: [[Flash Attention]] reduces the arithmetic cost and memory bandwidth consumption of the attention kernel within each forward pass, independently of how many sequences are batched. Continuous batching increases the number of useful sequences in each forward pass. The two optimisations operate at different levels — kernel-level and scheduler-level — and compound multiplicatively rather than substituting for each other. A deployment using both achieves gains of each simultaneously.
+
+    **[[Quantisation]] (orthogonal, enables higher batch concurrency)**: applying [[Quantisation]] to model weights (INT8, INT4, FP8) reduces the [[GPU Memory]] footprint of the model, freeing more [[GPU Memory]] for the [[KV Cache]], which directly allows continuous batching to hold more concurrent sequences in flight. Weight-only [[Quantisation]] (GPTQ, AWQ) and [[KV Cache]] [[Quantisation]] (KIVI, Gear) both expand the effective batch size that continuous batching can sustain on a given GPU configuration. This interaction means that [[Quantisation]] and continuous batching together provide super-additive throughput gains compared to either technique alone.
+
+    **[[Tensor Parallelism]] (required at scale, adds coordination overhead)**: for models that exceed a single [[GPU]]'s VRAM capacity, [[Tensor Parallelism]] shards model weights across multiple GPUs using [[Model Parallelism]] strategies, requiring all-reduce communication at each layer boundary in every forward pass. Continuous batching must coordinate batch reshaping across all tensor-parallel ranks, adding synchronisation overhead that is proportional to the number of GPUs in the tensor-parallel group. This overhead is typically small (< 5% of forward pass time with NVLink) but becomes material when scheduling overhead approaches the all-reduce latency. [[vLLM]] handles this via [[Ray]] distributed execution; [[SGLang]] uses its own process group management.
+
+    **[[Pipeline Parallelism]] (complex interaction, reduces scheduling flexibility)**: [[Pipeline Parallelism]] partitions model layers across GPUs, creating a pipeline where each stage processes a micro-batch independently. This introduces pipeline bubbles — periods where some stages are idle waiting for the next micro-batch. Continuous batching's variable-length micro-batches interact poorly with pipeline schedules designed for fixed-length micro-batches; zero-bubble [[Pipeline Parallelism]] (Qi et al., 2024) attempts to eliminate pipeline bubbles while maintaining continuous batching semantics, but the interaction remains an active engineering challenge.
+
+    **[[Speculative Decoding]] (synergistic, requires scheduler support)**: as discussed in Components/Architecture, [[Speculative Decoding]] is synergistic with continuous batching — it increases arithmetic intensity per memory read, helping to overcome the memory-bandwidth bottleneck that limits decode step throughput. However, integrating [[Speculative Decoding]] requires the scheduler to handle variable token counts per step and to manage the draft model's own [[KV Cache]] alongside the target model's [[KV Cache]], adding complexity to the [[Memory Management]] subsystem.
+
+    **[[Reinforcement Learning]] and online fine-tuning**: systems that perform online [[Reinforcement Learning]] from human feedback (RLHF) or RLAIF require running continuous batching inference to generate [[Token Generation]] rollout trajectories during training. The [[Policy Gradient]] training update depends on the quality and volume of on-policy trajectories, which are collected via continuous batching inference of the policy model. The continuous batching serving component must be co-ordinated with the fine-tuning compute, either via a separate serving engine (vLLM + DeepSpeed-Chat) or an integrated on-policy system (OpenRLHF, VERL). The scheduling priority and throughput of the continuous batching inference component directly affects the convergence rate of the [[Reinforcement Learning]] training loop.
+
+    **[[Deep Learning]] framework compatibility**: continuous batching implementations depend on the [[Deep Learning]] framework's ability to execute variable-size batch tensors efficiently. [[PyTorch]]'s dynamic shapes support and the `torch.compile` just-in-time compilation pathway interact with continuous batching's variable batch composition in ways that can introduce recompilation overhead if not managed carefully. [[vLLM]] uses a "padding to fixed shapes" trick (padding to a sequence of discrete batch sizes, e.g., 1, 2, 4, 8, 16 …) to avoid recompilation while still approximating continuous batching semantics within each padding tier. [[SGLang]] uses [[CUDA]] graph replay with fixed-shape batches padded to powers of two, achieving similar results. This framework interaction motivates custom [[Inference Engine]] designs that bypass [[PyTorch]]'s general-purpose graph-capture overhead entirely, as [[TensorRT-LLM]] does with its compiled engine format and [[NVIDIA Dynamo]]'s native CUDA graph management.
+
+  ## Open Research Problems and Frontier Questions
+
+    **Optimal chunked prefill chunk size**: the trade-off between prefill monopoly elimination (favours small chunks) and arithmetic intensity per micro-batch (favours large chunks to amortise [[GPU]] launch overhead) is workload-dependent and not yet analytically solved. Empirical guidelines (256-512 tokens for most deployments) exist but lack theoretical grounding for general load profiles.
+
+    **Scheduler-aware [[Quantisation]]**: [[Quantisation]] (INT8, INT4, FP8) of the [[KV Cache]] reduces [[GPU Memory]] consumption per sequence, allowing higher batch concurrency under continuous batching. The interaction between cache quantisation noise and admission control thresholds is underexplored; some work (KIVI, Gear) quantises [[KV Cache]] dynamically while the sequence is in flight, creating novel requirements for the continuous batching memory manager.
+
+    **[[Mixture of Experts]] scheduling**: continuous batching for [[Mixture of Experts]] models requires the scheduler to account for expert activation imbalance — some experts activate for many requests in a batch (high load, potential GPU compute bottleneck) while others activate for few (low load, wasted memory). Optimal expert-aware scheduling under continuous batching is an open problem addressed by emerging work (ExFlow, DejaVu, Pre-gated MoE).
+
+    **Cross-request attention sharing for [[Knowledge Graph]] queries**: when continuous batching serves LLMs that query an external [[Knowledge Graph]] or document store, multiple concurrent requests may reference the same graph nodes. KV-sharing across requests for identical retrieved subgraphs is a superset of prefix caching that requires graph-aware [[KV Cache]] management, extending [[Paged Attention]]'s block-sharing semantics beyond sequence prefixes to arbitrary shared subtrees.
+
+    **[[Reinforcement Learning]] from human feedback (RLHF) serving**: RLHF training pipelines require continuous inference from both the policy model and the reward model, with policy rollouts collected under continuous batching and reward model inference serving the resulting sequences. The on-policy data collection loop introduces a feedback coupling between the continuous batching scheduler's throughput and the RLHF training loop's convergence, a systems-ML co-design problem studied in vLLM's online RLHF integration and the OpenRLHF framework.
+
+    **Heterogeneous hardware pools**: as inference deployments move to mixed hardware (H100 + H200 + L40S + A100 in the same cluster, or CPU + [[GPU]] hybrid offloading), the continuous batching scheduler must manage [[Request Scheduling]] across heterogeneous execution units with different throughput-latency profiles — a generalisation of [[Prefill-Decode Disaggregation]] to arbitrary hardware heterogeneity. This connects to the broader [[Cloud Computing]] problem of workload placement on heterogeneous resource pools, where the scheduler must model the performance characteristics of each hardware type and route requests accordingly.
+
+  ## Research & Literature
+
+    1. Yu, G., et al. (2022). Orca: A distributed serving system for transformer-based generative models. *OSDI 2022*. University of Washington.
+    2. Kwon, W., et al. (2023). Efficient memory management for large language model serving with PagedAttention. *SOSP 2023* (Best Paper). UC Berkeley. https://arxiv.org/abs/2309.06180
+    3. Dao, T., Fu, D.Y., Ermon, S., Rudra, A., & Ré, C. (2022). FlashAttention: Fast and memory-efficient exact attention with IO-awareness. *NeurIPS 2022*. https://arxiv.org/abs/2205.14135
+    4. Dao, T. (2023). FlashAttention-2: Faster attention with better parallelism and work partitioning. *ICLR 2024*. https://arxiv.org/abs/2307.08691
+    5. Shah, J., et al. (2024). FlashAttention-3: Fast and accurate attention for H100 GPUs. *arXiv:2407.08608*.
+    6. Qin, Y., et al. (2025). Mooncake: A KVCache-centric disaggregated architecture for LLM serving. *USENIX FAST 2025*. https://arxiv.org/abs/2407.00079
+    7. Holmes, C., et al. (2024). Disaggregated serving: 18 months later. Hao AI Lab, UCSD. https://haoailab.com/blogs/distserve-retro/
+    8. Zheng, L., et al. (2024). SGLang: Efficient execution of structured language model programs. *NeurIPS 2024*. https://arxiv.org/abs/2312.07104
+    9. NVIDIA. (2023). TensorRT-LLM: Optimizing inference for large language models. NVIDIA Technical Blog.
+    10. vLLM Team. (2024). vLLM: Easy, fast, and cheap LLM serving for everyone. vLLM documentation. https://docs.vllm.ai
+    11. AI21 Labs. (2024). What is continuous batching? AI21 Glossary. https://www.ai21.com/glossary/foundational-llm/what-is-continuous-batching/
+    12. Anyscale. (2023). Continuous batching: How to achieve 23x LLM inference throughput. Anyscale Blog. https://www.anyscale.com/blog/continuous-batching-llm-inference
+    13. Spheron Network. (2026). LLM serving optimization: Continuous batching, PagedAttention, and chunked prefill on H100. https://www.spheron.network/blog/llm-serving-optimization-continuous-batching-paged-attention/
+    14. n1n.ai. (2026). vLLM vs SGLang vs LMDeploy: Fastest LLM inference engine in 2026. https://explore.n1n.ai/blog/vllm-vs-sglang-vs-lmdeploy-fastest-inference-2026-2026-03-05
+    15. Chen, B., et al. (2023). Towards efficient generative large language model serving: A survey from algorithms to systems. *arXiv:2312.15234*.
+    16. Zhong, Y., et al. (2024). DistServe: Disaggregating prefill and decoding for goodput-optimized large language model serving. *OSDI 2024*.
+    17. Agrawal, A., et al. (2024). Sarathi-Serve: Efficient LLM inference by piggybacking decodes with chunked prefills. *OSDI 2024*. https://arxiv.org/abs/2308.16369
+    18. Liu, Z., et al. (2024). FlowKV: A disaggregated inference framework with low-latency KV cache transfer and load-aware scheduling. *arXiv:2504.03775*.
+    19. Li, B., et al. (2024). Towards high-goodput LLM serving with prefill-decode multiplexing. *arXiv:2504.14489*.
+    20. FairBatching authors. (2024). FairBatching: Fairness-aware batch formation for LLM inference. *arXiv:2510.14392*.
+    21. RunPod. (2024). vLLM explained: PagedAttention and continuous batching. https://www.runpod.io/articles/guides/vllm-pagedattention-continuous-batching
+    22. BentoML. (2024). Static, dynamic and continuous batching. *LLM Inference Handbook*. https://bentoml.com/llm/inference-optimization/static-dynamic-continuous-batching
+    23. Particula Tech. (2026). SGLang vs vLLM in 2026: Benchmarks, architecture, and when to use each. https://particula.tech/blog/sglang-vs-vllm-inference-engine-comparison
+    24. Hivenet Compute. (2024). A practical guide to continuous batching for LLM inference. https://compute.hivenet.com/post/continuous-batching-explained
+    25. Patterson, D., et al. (2021). Carbon emissions and large neural network training. *arXiv:2104.10350*. [Motivates efficiency via throughput.]
+    26. Micikevicius, P., et al. (2018). Mixed precision training. *ICLR 2018*. [Enables higher-throughput continuous batching via reduced memory footprint per token.]
+    27. Sheng, Y., et al. (2023). FlexGen: High-throughput generative inference of large language models with a single GPU. *ICML 2023*.
+    28. Yotta Labs. (2026). vLLM vs SGLang in 2026: Speed, throughput, and cost compared. https://www.yottalabs.ai/post/vllm-vs-sglang-which-inference-engine-should-you-use-in-2026
+    29. NVIDIA. (2025). NVIDIA Dynamo: Accelerating llm-d community initiatives for advancing large-scale distributed inference. NVIDIA Technical Blog. https://developer.nvidia.com/blog/nvidia-dynamo-accelerates-llm-d-community-initiatives-for-advancing-large-scale-distributed-inference/
+    30. AKS Engineering Blog. (2025). Scaling multi-node LLM inference with NVIDIA Dynamo and ND GB200 NVL72 GPUs on AKS. Microsoft Azure. https://blog.aks.azure.com/2025/10/24/dynamo-on-aks
+    31. ArXiv. (2025). From attention to disaggregation: Tracing the evolution of LLM inference. arXiv:2511.07422.
+    32. Song, J., et al. (2025). Nexus: Proactive intra-GPU disaggregation of prefill and decode in LLM serving. arXiv:2507.06608.
+    33. ArXiv. (2025). PolyServe: Efficient multi-SLO serving at scale. arXiv:2507.17769.
+    34. AWS Machine Learning Blog. (2025). P-EAGLE: Faster LLM inference with parallel speculative decoding in vLLM. https://aws.amazon.com/blogs/machine-learning/p-eagle-faster-llm-inference-with-parallel-speculative-decoding-in-vllm/
+    35. Introl. (2025). Speculative decoding: Achieving 2-3x LLM inference speedup. https://introl.com/blog/speculative-decoding-llm-inference-speedup-guide-2025
+    36. Wikipedia. (2025). vLLM. https://en.wikipedia.org/wiki/VLLM
+
+  ## Evolution of the Continuous Batching Ecosystem
+
+    The continuous batching ecosystem has evolved through distinct generations since 2022, each generation extending the core concept with new mechanisms that address the bottlenecks exposed by the previous generation's adoption:
+
+    **Generation 1 (2022-2023): Proof of concept and open-source operationalisation.** Orca introduced the iteration-level scheduling concept. [[vLLM]] operationalised it with [[Paged Attention]], achieving 23x [[Throughput]] improvement and winning SOSP 2023 Best Paper. HuggingFace Text Generation Inference (TGI) adopted continuous batching for its production serving API. This generation proved the concept and drove mass adoption in the research and startup community.
+
+    **Generation 2 (2023-2024): Efficiency extensions and disaggregation.** [[Chunked Prefill]] (Sarathi-Serve, OSDI 2024) addressed the prefill-monopoly problem. [[Speculative Decoding]] integration improved decode efficiency. [[Prefill-Decode Disaggregation]] (DistServe, Mooncake) eliminated phase interference at scale. [[SGLang]] introduced RadixAttention for prefix-aware scheduling. TensorRT-LLM added in-flight batching with CUDA-graph-replay optimisation. This generation pushed performance to near-theoretical limits on single-node configurations and created the architectural template for large-scale disaggregated serving.
+
+    **Generation 3 (2025-2026): Multi-node disaggregation and ecosystem consolidation.** NVIDIA Dynamo (open-sourced GTC 2025) standardised disaggregated inference with a framework-agnostic architecture supporting [[vLLM]], [[SGLang]], and [[TensorRT-LLM]] backends. llm-d emerged as the Kubernetes-native standard for cloud-deployed LLM serving with continuous batching. [[vLLM]] v0.19+ introduced async zero-bubble scheduling. P-EAGLE and EAGLE-3 brought production-ready [[Speculative Decoding]] to mainstream deployments. The [[Mixture of Experts]] serving problem emerged as the next frontier as DeepSeek-R1 and Mixtral drove demand for expert-routing-aware schedulers.
+
+    **Generation 4 (projected 2026-2028): Autonomous scheduling and hardware co-evolution.** SLA-aware autonomous schedulers (PROSERVE, PolyServe) that dynamically optimise for multi-tier latency targets without manual configuration. CXL-memory-tiered [[KV Cache]] management for 1M+ token contexts. [[Agentic AI]] scheduling with sequence-forking and cross-request [[KV Cache]] sharing for graph-structured inference. Hardware-software co-designed scheduling for NVLink-fabric and CXL interconnect topologies.
+
+  ## Benchmark Reference Points (2026)
+
+    The following benchmark figures provide concrete reference points for evaluating continuous batching deployments. All figures are indicative; performance varies with model architecture, prompt/output length distribution, hardware generation, and framework version.
+
+    | Framework | Hardware | Model | Output Tokens/sec | Notes |
+    |---|---|---|---|---|
+    | [[SGLang]] | 8x H100-80GB | Llama 3.1 70B | ~16,200 | RadixAttention enabled |
+    | [[vLLM]] | 8x H100-80GB | Llama 3.1 70B | ~12,500 | APC enabled, chunked prefill |
+    | [[TensorRT-LLM]] | 8x H100-80GB | Llama 3.1 70B | ~19,500 | Compiled engine |
+    | [[SGLang]] + Mooncake | 96x H100 | DeepSeek-R1 | 22,300 output + 52,300 input | Disaggregated |
+    | [[NVIDIA Dynamo]] | Multi-node GB200 | Llama 3.1 405B | Sub-100ms TTFT | Disaggregated |
+    | [[vLLM]] (naive) vs HF Transformers | 1x A100-80GB | Llama 2 13B | 23x improvement | Original Anyscale benchmark |
+
+    These figures demonstrate that at current scale, the choice of continuous batching implementation and its extensions (prefix caching, disaggregation, [[Speculative Decoding]]) can produce a 50-100% performance differential between leading frameworks on identical hardware — making framework selection a commercially significant engineering decision distinct from model selection.
+
+  ## Governance, Compliance, and Sustainability Context
+
+    Continuous batching is not merely a performance optimisation — it has direct governance, compliance, and sustainability implications for organisations deploying AI systems:
+
+    **Data residency and privacy**: continuous batching in an on-premises [[vLLM]] or [[SGLang]] deployment eliminates the need to transmit user data to external cloud APIs, directly addressing GDPR Art. 5(1)(f) data integrity and confidentiality requirements and UK Data Protection Act 2018 Schedule 1 special categories provisions. UK healthcare organisations using continuous batching for NHS clinical NLP can avoid the data processing agreement complexity required for third-party API inference, while achieving comparable throughput economics through continuous batching's efficiency gains on on-premises GPU hardware.
+
+    **AI Act compliance**: the EU AI Act (Regulation 2024/1689, in force August 2025) and its implementing regulations include provisions on AI system documentation and post-market monitoring. For high-risk AI systems, the inference infrastructure — including the continuous batching serving layer — must be documented as part of the technical documentation required by Art. 11. Continuous batching's deterministic scheduling semantics (the same request, admitted to the same slot, produces the same output under identical conditions) support reproducibility requirements for high-risk AI system audit trails.
+
+    **Carbon footprint**: continuous batching reduces the number of GPU-hours required per million output tokens by a factor of 4-23x compared to naive static batching. For large-scale deployments generating billions of tokens per day, this throughput efficiency directly translates to proportional reductions in GPU energy consumption and associated CO2 emissions — at NVIDIA H100 TDP of 700W per GPU, a 10x throughput improvement corresponds to a 10x reduction in CO2 per token, a sustainability metric increasingly relevant to AI ESG reporting under the UK Sustainability Disclosure Standards (SDS) and the EU Corporate Sustainability Reporting Directive (CSRD).
+
+  ## Deployment Configuration Checklist
+
+    For production deployments of continuous batching systems, the following configuration decisions have the greatest impact on performance and reliability:
+
+    1. **Block size** ([[Paged Attention]]): 16-32 tokens/block is standard. Larger blocks reduce block table lookup overhead but increase [[GPU Memory]] waste for short sequences (last-block internal fragmentation). Default: 16 tokens.
+    2. **Max model length**: set to the maximum expected prompt + output length. Setting too high pre-allocates [[GPU Memory]] for the worst-case [[KV Cache]] size per sequence. Setting too low causes OOM errors for long requests.
+    3. **[[Chunked Prefill]] chunk size**: 256-512 tokens. Must match the decode batch size for optimal micro-batch pipelining. [[SGLang]] auto-tunes this; [[vLLM]] uses a configurable default.
+    4. **GPU memory utilisation target**: [[vLLM]]'s `gpu_memory_utilization` parameter (default 0.90) controls how much [[GPU Memory]] is reserved for the [[KV Cache]] versus model weights and activation buffers. Higher values allow larger batches but risk OOM under unexpected load spikes.
+    5. **Preemption policy**: recompute vs. swap vs. abort. Recompute is safest (no extra [[GPU Memory]] needed for swap buffers) but adds latency for preempted sequences. Swap is faster but requires [[CPU]] memory for the swapped [[KV Cache]] blocks.
+    6. **[[Speculative Decoding]] draft model selection**: for decode-heavy workloads (long outputs, short prompts), enabling [[Speculative Decoding]] with an appropriate draft model (2-4x smaller than the target) can improve effective [[Throughput]] by 2-3x. For prefill-heavy workloads, the gain is smaller and the overhead of the draft model reduces net benefit.
+    7. **[[Tensor Parallelism]] degree**: for models with > 13B parameters on a single node, [[Tensor Parallelism]] across 2-8 GPUs is required. Increasing [[Tensor Parallelism]] degree improves per-request [[Latency]] but reduces aggregate [[Throughput]] due to all-reduce overhead. Optimal degree depends on the [[Large Language Models]] architecture and NVLink topology.
+    8. **[[Prefill-Decode Disaggregation]]**: enable for high-QPS deployments (> 1,000 requests/minute) where the prefill-decode interference is measurable. Requires inter-node KV transfer infrastructure (NIXL, NVLink, InfiniBand) and adds operational complexity.
+
+- ### Provenance
+  - sources:: Kwon et al. 2023 (vLLM/PagedAttention, SOSP), Yu et al. 2022 (Orca, OSDI), Qin et al. 2025 (Mooncake, FAST 2025), Zhong et al. 2024 (DistServe, OSDI), Agrawal et al. 2024 (Sarathi-Serve), Zheng et al. 2024 (SGLang, NeurIPS), Anyscale blog 23x throughput, n1n.ai 2026 benchmarks, Spheron 2026 H100 serving guide, FairBatching arXiv:2510.14392, BentoML LLM Inference Handbook, vLLM docs.vllm.ai, NVIDIA Dynamo blog 2025, Particula Tech SGLang vs vLLM 2026, arXiv:2507.06608 (Nexus), arXiv:2511.07422 (Evolution of LLM Inference), arXiv:2507.17769 (PolyServe), arXiv:2512.12928 (PROSERVE), aws.amazon.com P-EAGLE blog 2025, https://thenewstack.io/six-frameworks-for-efficient-llm-inferencing/, https://inferenceengineering.tech/chapters/software/, https://theaiengineer.substack.com/p/vllm-vs-ollama-vs-sglang-vs-tensorrt, https://inferenceengineering.tech/learn/vllm-vs-sglang-vs-tensorrt-llm/
+  - webSearchPerformed:: 2026-06-21 — queries: "continuous batching LLM inference 2025 2026 vLLM SGLang NVIDIA Dynamo benchmarks advances", "continuous batching prefill decode disaggregation KV cache 2025 chunked prefill research paper", "vLLM speculative decoding 2025 production multi-modal agentic inference scheduling", "NVIDIA Dynamo inference 2025 disaggregated LLM serving architecture open source"
+  - migration-date:: 2026-06-21T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

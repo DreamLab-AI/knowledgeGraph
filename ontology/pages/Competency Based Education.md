@@ -1,0 +1,600 @@
+public:: true
+
+# Competency Based Education
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:competency-based-education",
+  "@type": "Page",
+  "title": "Competency Based Education",
+  "vc:slug": "competency-based-education",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": [
+    {"@id": "urn:visionflow:linked:education-technology", "vc:label": "Education Technology"},
+    {"@id": "urn:visionflow:linked:adaptive-learning", "vc:label": "Adaptive Learning"},
+    {"@id": "urn:visionflow:linked:learning-management-system", "vc:label": "Learning Management System"},
+    {"@id": "urn:visionflow:linked:learning-analytics", "vc:label": "Learning Analytics"},
+    {"@id": "urn:visionflow:linked:mastery-learning", "vc:label": "Mastery Learning"},
+    {"@id": "urn:visionflow:linked:formative-assessment", "vc:label": "Formative Assessment"},
+    {"@id": "urn:visionflow:linked:summative-assessment", "vc:label": "Summative Assessment"},
+    {"@id": "urn:visionflow:linked:personalised-learning", "vc:label": "Personalised Learning"},
+    {"@id": "urn:visionflow:linked:intelligent-tutoring-system", "vc:label": "Intelligent Tutoring System"},
+    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
+    {"@id": "urn:visionflow:linked:micro-credential", "vc:label": "Micro-Credential"},
+    {"@id": "urn:visionflow:linked:digital-badge", "vc:label": "Digital Badge"},
+    {"@id": "urn:visionflow:linked:open-badges", "vc:label": "Open Badges"},
+    {"@id": "urn:visionflow:linked:credential-framework", "vc:label": "Credential Framework"},
+    {"@id": "urn:visionflow:linked:prior-learning-assessment", "vc:label": "Prior Learning Assessment"},
+    {"@id": "urn:visionflow:linked:rubric-based-assessment", "vc:label": "Rubric-Based Assessment"},
+    {"@id": "urn:visionflow:linked:bloom-taxonomy", "vc:label": "Bloom's Taxonomy"},
+    {"@id": "urn:visionflow:linked:self-paced-learning", "vc:label": "Self-Paced Learning"},
+    {"@id": "urn:visionflow:linked:curriculum-design", "vc:label": "Curriculum Design"},
+    {"@id": "urn:visionflow:linked:competency-framework", "vc:label": "Competency Framework"},
+    {"@id": "urn:visionflow:linked:skills-gap-analysis", "vc:label": "Skills Gap Analysis"},
+    {"@id": "urn:visionflow:linked:workforce-development", "vc:label": "Workforce Development"},
+    {"@id": "urn:visionflow:linked:lifelong-learning", "vc:label": "Lifelong Learning"},
+    {"@id": "urn:visionflow:linked:open-educational-resources", "vc:label": "Open Educational Resources"},
+    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
+    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
+    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
+    {"@id": "urn:visionflow:linked:bayesian-knowledge-tracing", "vc:label": "Bayesian Knowledge Tracing"},
+    {"@id": "urn:visionflow:linked:item-response-theory", "vc:label": "Item Response Theory"},
+    {"@id": "urn:visionflow:linked:feedback-loop", "vc:label": "Feedback Loop"},
+    {"@id": "urn:visionflow:linked:learner-model", "vc:label": "Learner Model"},
+    {"@id": "urn:visionflow:linked:open-learner-model", "vc:label": "Open Learner Model"},
+    {"@id": "urn:visionflow:linked:cognitive-load-theory", "vc:label": "Cognitive Load Theory"},
+    {"@id": "urn:visionflow:linked:zone-of-proximal-development", "vc:label": "Zone of Proximal Development"},
+    {"@id": "urn:visionflow:linked:scaffolding", "vc:label": "Scaffolding"},
+    {"@id": "urn:visionflow:linked:data-privacy", "vc:label": "Data Privacy"},
+    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
+    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
+    {"@id": "urn:visionflow:linked:curriculum-learning", "vc:label": "Curriculum Learning"},
+    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
+    {"@id": "urn:visionflow:linked:deep-knowledge-tracing", "vc:label": "Deep Knowledge Tracing"},
+    {"@id": "urn:visionflow:linked:knowledge-component-model", "vc:label": "Knowledge Component Model"},
+    {"@id": "urn:visionflow:linked:open-edx", "vc:label": "OpenEdX"},
+    {"@id": "urn:visionflow:linked:gamification", "vc:label": "Gamification"},
+    {"@id": "urn:visionflow:linked:metacognition", "vc:label": "Metacognition"},
+    {"@id": "urn:visionflow:linked:differentiated-instruction", "vc:label": "Differentiated Instruction"},
+    {"@id": "urn:visionflow:linked:time-based-education", "vc:label": "Time-Based Education"},
+    {"@id": "urn:visionflow:linked:apprenticeship", "vc:label": "Apprenticeship"},
+    {"@id": "urn:visionflow:linked:higher-education", "vc:label": "Higher Education"},
+    {"@id": "urn:visionflow:linked:professional-development", "vc:label": "Professional Development"}
+  ],
+  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
+  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:competency-based-education",
+  "@type": "Class",
+  "label": "Competency Based Education",
+  "definition": "Competency-Based Education is an instructional model that grants progression and credentials based on demonstrated mastery of defined competencies rather than time spent in instruction. Learners advance when they can prove they have met explicit, measurable outcomes, often supported by personalised pacing and frequent assessment. The approach relies on learning analytics and educational technology to track and verify competency attainment.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:education-technology",
+      "label": "Education Technology"
+    },
+    {
+      "@id": "urn:ngm:class:mastery-learning",
+      "label": "Mastery Learning"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:competency-framework",
+        "label": "Competency Framework"
+      },
+      {
+        "@id": "urn:ngm:class:formative-assessment",
+        "label": "Formative Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:summative-assessment",
+        "label": "Summative Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:learner-model",
+        "label": "Learner Model"
+      },
+      {
+        "@id": "urn:ngm:class:rubric-based-assessment",
+        "label": "Rubric-Based Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-component-model",
+        "label": "Knowledge Component Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:lifelong-learning",
+        "label": "Lifelong Learning"
+      },
+      {
+        "@id": "urn:ngm:class:workforce-development",
+        "label": "Workforce Development"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:mastery-learning",
+        "label": "Mastery Learning"
+      },
+      {
+        "@id": "urn:ngm:class:bloom-taxonomy",
+        "label": "Bloom's Taxonomy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:micro-credential",
+        "label": "Micro-Credential"
+      },
+      {
+        "@id": "urn:ngm:class:digital-badge",
+        "label": "Digital Badge"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-knowledge-tracing",
+        "label": "Bayesian Knowledge Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:item-response-theory",
+        "label": "Item Response Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:prior-learning-assessment",
+        "label": "Prior Learning Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:open-educational-resources",
+        "label": "Open Educational Resources"
+      },
+      {
+        "@id": "urn:ngm:class:professional-development",
+        "label": "Professional Development"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:time-based-education",
+        "label": "Time-Based Education"
+      },
+      {
+        "@id": "urn:ngm:class:apprenticeship",
+        "label": "Apprenticeship"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.90,
+  "provenance": {
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-21T00:00:00Z",
+    "inferenceRule": "EnrichmentWave6"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:competency-based-education:e91a34b7cc02",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:competency-based-education"
+  },
+  "vc:resolutions": [
+    {"raw": "[[Education Technology]]", "resolved": "urn:visionflow:linked:education-technology", "kind": "ResolvedLink"},
+    {"raw": "[[Adaptive Learning]]", "resolved": "urn:visionflow:linked:adaptive-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Learning Management System]]", "resolved": "urn:visionflow:linked:learning-management-system", "kind": "StubLink"},
+    {"raw": "[[Learning Analytics]]", "resolved": "urn:visionflow:linked:learning-analytics", "kind": "StubLink"},
+    {"raw": "[[Mastery Learning]]", "resolved": "urn:visionflow:linked:mastery-learning", "kind": "StubLink"},
+    {"raw": "[[Formative Assessment]]", "resolved": "urn:visionflow:linked:formative-assessment", "kind": "StubLink"},
+    {"raw": "[[Summative Assessment]]", "resolved": "urn:visionflow:linked:summative-assessment", "kind": "StubLink"},
+    {"raw": "[[Personalised Learning]]", "resolved": "urn:visionflow:linked:personalised-learning", "kind": "StubLink"},
+    {"raw": "[[Intelligent Tutoring System]]", "resolved": "urn:visionflow:linked:intelligent-tutoring-system", "kind": "StubLink"},
+    {"raw": "[[Knowledge Graph]]", "resolved": "urn:visionflow:linked:knowledge-graph", "kind": "StubLink"},
+    {"raw": "[[Micro-Credential]]", "resolved": "urn:visionflow:linked:micro-credential", "kind": "StubLink"},
+    {"raw": "[[Digital Badge]]", "resolved": "urn:visionflow:linked:digital-badge", "kind": "StubLink"},
+    {"raw": "[[Open Badges]]", "resolved": "urn:visionflow:linked:open-badges", "kind": "StubLink"},
+    {"raw": "[[Credential Framework]]", "resolved": "urn:visionflow:linked:credential-framework", "kind": "StubLink"},
+    {"raw": "[[Prior Learning Assessment]]", "resolved": "urn:visionflow:linked:prior-learning-assessment", "kind": "StubLink"},
+    {"raw": "[[Rubric-Based Assessment]]", "resolved": "urn:visionflow:linked:rubric-based-assessment", "kind": "StubLink"},
+    {"raw": "[[Bloom's Taxonomy]]", "resolved": "urn:visionflow:linked:bloom-taxonomy", "kind": "StubLink"},
+    {"raw": "[[Self-Paced Learning]]", "resolved": "urn:visionflow:linked:self-paced-learning", "kind": "StubLink"},
+    {"raw": "[[Curriculum Design]]", "resolved": "urn:visionflow:linked:curriculum-design", "kind": "StubLink"},
+    {"raw": "[[Competency Framework]]", "resolved": "urn:visionflow:linked:competency-framework", "kind": "StubLink"},
+    {"raw": "[[Skills Gap Analysis]]", "resolved": "urn:visionflow:linked:skills-gap-analysis", "kind": "StubLink"},
+    {"raw": "[[Workforce Development]]", "resolved": "urn:visionflow:linked:workforce-development", "kind": "StubLink"},
+    {"raw": "[[Lifelong Learning]]", "resolved": "urn:visionflow:linked:lifelong-learning", "kind": "StubLink"},
+    {"raw": "[[Open Educational Resources]]", "resolved": "urn:visionflow:linked:open-educational-resources", "kind": "StubLink"},
+    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
+    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
+    {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:visionflow:linked:machine-learning-discipline", "kind": "StubLink"},
+    {"raw": "[[Bayesian Knowledge Tracing]]", "resolved": "urn:visionflow:linked:bayesian-knowledge-tracing", "kind": "StubLink"},
+    {"raw": "[[Item Response Theory]]", "resolved": "urn:visionflow:linked:item-response-theory", "kind": "StubLink"},
+    {"raw": "[[Feedback Loop]]", "resolved": "urn:visionflow:linked:feedback-loop", "kind": "StubLink"},
+    {"raw": "[[Learner Model]]", "resolved": "urn:visionflow:linked:learner-model", "kind": "StubLink"},
+    {"raw": "[[Open Learner Model]]", "resolved": "urn:visionflow:linked:open-learner-model", "kind": "StubLink"},
+    {"raw": "[[Cognitive Load Theory]]", "resolved": "urn:visionflow:linked:cognitive-load-theory", "kind": "StubLink"},
+    {"raw": "[[Zone of Proximal Development]]", "resolved": "urn:visionflow:linked:zone-of-proximal-development", "kind": "StubLink"},
+    {"raw": "[[Scaffolding]]", "resolved": "urn:visionflow:linked:scaffolding", "kind": "StubLink"},
+    {"raw": "[[Data Privacy]]", "resolved": "urn:visionflow:linked:data-privacy", "kind": "StubLink"},
+    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink"},
+    {"raw": "[[Federated Learning]]", "resolved": "urn:visionflow:linked:federated-learning", "kind": "StubLink"},
+    {"raw": "[[Curriculum Learning]]", "resolved": "urn:visionflow:linked:curriculum-learning", "kind": "StubLink"},
+    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
+    {"raw": "[[Deep Knowledge Tracing]]", "resolved": "urn:visionflow:linked:deep-knowledge-tracing", "kind": "StubLink"},
+    {"raw": "[[Knowledge Component Model]]", "resolved": "urn:visionflow:linked:knowledge-component-model", "kind": "StubLink"},
+    {"raw": "[[OpenEdX]]", "resolved": "urn:visionflow:linked:open-edx", "kind": "StubLink"},
+    {"raw": "[[Gamification]]", "resolved": "urn:visionflow:linked:gamification", "kind": "StubLink"},
+    {"raw": "[[Metacognition]]", "resolved": "urn:visionflow:linked:metacognition", "kind": "StubLink"},
+    {"raw": "[[Differentiated Instruction]]", "resolved": "urn:visionflow:linked:differentiated-instruction", "kind": "StubLink"},
+    {"raw": "[[Time-Based Education]]", "resolved": "urn:visionflow:linked:time-based-education", "kind": "StubLink"},
+    {"raw": "[[Apprenticeship]]", "resolved": "urn:visionflow:linked:apprenticeship", "kind": "StubLink"},
+    {"raw": "[[Higher Education]]", "resolved": "urn:visionflow:linked:higher-education", "kind": "StubLink"},
+    {"raw": "[[Professional Development]]", "resolved": "urn:visionflow:linked:professional-development", "kind": "StubLink"}
+  ],
+  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
+  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
+}
+```
+
+- ### Definition
+  - Competency-Based Education (CBE) is an instructional model grounded in [[Mastery Learning]] theory that determines learner progression and credential award on the basis of demonstrated proficiency against explicitly defined, measurable competencies rather than elapsed time in instruction or seat hours. Underpinned by [[Bloom's Taxonomy]] of cognitive objectives — which specifies a hierarchical ladder from recall through comprehension, application, analysis, evaluation, and creation — CBE operationalises each rung as a discrete, assessable [[Competency Framework]] target. Learners advance at [[Self-Paced Learning]] rates: those who can demonstrate mastery through [[Formative Assessment]] loops and [[Summative Assessment]] performance evidence may accelerate through material they have already encountered through prior experience, work, or informal study (formalised in [[Prior Learning Assessment]] processes), while those who struggle receive additional support and multiple assessment opportunities before progression. The model is institutionally implemented through [[Learning Management System]] platforms — prominently Western Governors University's [[OpenEdX]]-based infrastructure serving over 150,000 students — and is operationally dependent on [[Learning Analytics]] pipelines that continuously track competency attainment states using psychometric models including [[Bayesian Knowledge Tracing]], [[Item Response Theory]], and [[Deep Knowledge Tracing]] neural approaches. CBE enables richer [[Adaptive Learning]] loops than traditional curriculum-paced education because each learner's unique competency state vector drives [[Curriculum Design]] and content selection dynamically, situating CBE as the instructional model layer above [[Adaptive Learning]] algorithmic infrastructure. Modern CBE deployments issue [[Micro-Credential]] artefacts — often encoded as [[Open Badges]] or blockchain-attested verifiable credentials — upon competency demonstration, enabling portable, granular evidence of specific skills for [[Workforce Development]] and [[Lifelong Learning]] contexts. Integration of [[Large Language Model]] systems in 2024–2025 has introduced AI tutors, automated essay scoring, and conversational [[Feedback Loop]] mechanisms that dramatically reduce the assessment-feedback latency central to effective CBE implementation. CBE contrasts with [[Time-Based Education]] (the Carnegie Unit model) in which seat hours rather than demonstrated knowledge determine progression, and with traditional [[Apprenticeship]] models in which competency is assessed implicitly through supervised practice rather than against explicit rubrics.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:CompetencyBasedEducation
+  - owl-role:: LearningParadigm | InstructionalModel | AssessmentProtocol
+  - owl-inferred:: edtech:MasterySystem, ai:PersonalisedLearningFramework, assessment:CompetencyProtocol
+  - belongs-to-domain:: [[Education Technology]], [[Adaptive Learning]]
+  - implemented-in-layer:: [[Learning Management System]], [[Intelligent Tutoring System]]
+
+- ### Relationships
+  - is-subclass-of:: [[Education Technology]], [[Mastery Learning]], [[Personalised Learning]], [[Self-Paced Learning]]
+  - has-part:: [[Competency Framework]], [[Formative Assessment]], [[Summative Assessment]], [[Learner Model]], [[Rubric-Based Assessment]], [[Prior Learning Assessment]], [[Feedback Loop]], [[Knowledge Component Model]], [[Curriculum Design]]
+  - requires:: [[Learning Management System]], [[Learning Analytics]], [[Knowledge Component Model]], [[Competency Framework]], [[Bayesian Knowledge Tracing]], [[Item Response Theory]], [[Feedback Loop]]
+  - enables:: [[Adaptive Learning]], [[Personalised Learning]], [[Lifelong Learning]], [[Workforce Development]], [[Self-Paced Learning]], [[Micro-Credential]], [[Digital Badge]], [[Open Badges]], [[Skills Gap Analysis]]
+  - implements:: [[Mastery Learning]], [[Bloom's Taxonomy]], [[Differentiated Instruction]], [[Scaffolding]], [[Zone of Proximal Development]], [[Cognitive Load Theory]]
+  - depends-on:: [[Learning Management System]], [[Feedback Loop]], [[Item Response Theory]], [[Learner Model]], [[Learning Analytics]], [[Knowledge Component Model]]
+  - supports:: [[Learning Analytics]], [[Micro-Credential]], [[Digital Badge]], [[Open Badges]], [[Open Learner Model]], [[Metacognition]], [[Professional Development]], [[Higher Education]]
+  - uses:: [[Intelligent Tutoring System]], [[Bayesian Knowledge Tracing]], [[Item Response Theory]], [[Deep Knowledge Tracing]], [[Natural Language Processing]], [[Large Language Model]], [[Reinforcement Learning]], [[Knowledge Graph]], [[OpenEdX]], [[Gamification]]
+  - contrasts-with:: [[Time-Based Education]], [[Apprenticeship]]
+  - related-to:: [[Prior Learning Assessment]], [[Open Educational Resources]], [[Professional Development]], [[Higher Education]], [[Gamification]], [[Curriculum Learning]], [[Cognitive Load Theory]], [[Zone of Proximal Development]], [[Federated Learning]], [[Explainable AI]], [[Data Privacy]], [[Machine Learning Discipline]]
+  - standardized-by:: [[Credential Framework]], [[Open Badges]], [[Bloom's Taxonomy]]
+
+- ### Content
+  ## Compositional Relationships (Components)
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:hasPart ai:CompetencyFramework))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:hasPart ai:FormativeAssessment))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:hasPart ai:SummativeAssessment))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:hasPart ai:LearnerModel))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:hasPart ai:RubricBasedAssessment))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:hasPart ai:PriorLearningAssessment))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:hasPart ai:FeedbackLoop))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:hasPart ai:OpenLearnerModel))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:hasPart ai:CurriculumDesign))
+  ## Dependency Relationships
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:requires ai:LearningManagementSystem))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:requires ai:LearningAnalytics))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:requires ai:KnowledgeComponentModel))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:requires ai:CompetencyFramework))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:requires ai:BayesianKnowledgeTracing))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:dependsOn ai:FeedbackLoop))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:dependsOn ai:ItemResponseTheory))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:dependsOn ai:LearnerModel))
+  ## Capability Relationships
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:enables ai:AdaptiveLearning))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:enables ai:PersonalisedLearning))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:enables ai:LifelongLearning))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:enables ai:WorkforceDevelopment))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:enables ai:MicroCredential))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:enables ai:SelfPacedLearning))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:enables ai:SkillsGapAnalysis))
+  ## Implementation Relationships
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:implements ai:MasteryLearning))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:implements ai:BloomsTaxonomy))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:implements ai:DifferentiatedInstruction))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:implements ai:Scaffolding))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:uses ai:IntelligentTutoringSystem))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:uses ai:NaturalLanguageProcessing))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:uses ai:DeepKnowledgeTracing))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:uses ai:KnowledgeGraph))
+  ## Reduction Relationships
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:reducesTo ai:MasteryLearning))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:reducesTo ai:EducationTechnology))
+  ## Support and Contrast Axioms
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:supports ai:LearningAnalytics))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:supports ai:MicroCredential))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:supports ai:OpenLearnerModel))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:supports ai:Metacognition))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:contrastsWith ai:TimeBasedEducation))
+      SubClassOf(ai:CompetencyBasedEducation
+        ObjectSomeValuesFrom(ai:standardizedBy ai:CredentialFramework))
+
+  ## About
+    Competency-Based Education (CBE) is a structurally distinct instructional paradigm that severs the coupling between time and learning that has characterised Western formal education since the Carnegie Foundation introduced the "Carnegie Unit" (one academic credit = 120 hours of student time) in 1906. In CBE, the unit of currency is demonstrated proficiency: a learner who can produce evidence of mastering a competency — whether through coursework, prior work experience, or [[Prior Learning Assessment]] — receives credit and advances, regardless of how long the demonstration took. This decoupling has profound consequences for access, efficiency, and equity: adult learners with substantial workplace experience can leverage CBE to obtain recognised qualifications far faster than traditional programmes require; learners who struggle on particular competencies receive unlimited time and multiple assessment attempts rather than being penalised by class-pace constraints. The philosophical shift underpinning CBE is both pedagogical and political: pedagogically, it asserts that most learners can reach mastery given appropriate support and time; politically, it challenges the sorting function of education (where the purpose of assessment is to rank students against each other) and replaces it with a certification function (where the purpose is to verify that a learner has met an externally meaningful standard).
+
+    The intellectual lineage of CBE draws from several distinct sources. Benjamin Bloom's 1968 paper "Learning for Mastery" established the empirical foundation: when given adequate time and appropriate instruction, 95% of learners can achieve what only the top 20% achieve in conventional fixed-time conditions. Bloom's [[Mastery Learning]] model specifies a cycle of instruction, [[Formative Assessment]], corrective feedback, and re-assessment that CBE institutionalises as its core mechanism. [[Bloom's Taxonomy]] (1956, revised by Anderson and Krathwohl, 2001) provides the hierarchical competency classification framework — from lower-order (Remember, Understand, Apply) to higher-order (Analyse, Evaluate, Create) — that informs [[Competency Framework]] design in CBE programmes. Each level of the taxonomy corresponds to a qualitatively different kind of cognitive engagement: rote recall of facts sits at the base, while synthesis and critical evaluation of evidence sit at the apex, and CBE programmes are distinguished by explicitly specifying which taxonomy levels a given qualification addresses. Vygotsky's [[Zone of Proximal Development]] (ZPD) provides the psychological basis for sequencing: competencies should be placed at the edge of current capability where learning requires assistance but is achievable. [[Cognitive Load Theory]] (Sweller, 1988) constrains CBE content design by specifying that new competency instruction must not exceed working memory capacity thresholds, motivating chunked [[Curriculum Design]] and [[Scaffolding]] of complex skills into sub-competencies that build progressively toward higher-order performance targets.
+
+    The psychometric machinery of CBE rests on measurement theory developed over a century of educational testing research. Classical Test Theory (CTT) underpins traditional assessment design — treating observed scores as true scores plus random measurement error — but its limitations for CBE (scores are not criterion-referenced; parallel forms are hard to construct) motivated the adoption of [[Item Response Theory]] (IRT). IRT models the probability of a correct response as a function of both learner ability (theta) and item parameters (difficulty b, discrimination a, pseudo-guessing c in the three-parameter logistic model): P(correct | theta, a, b, c) = c + (1-c) / (1 + exp(-a(theta - b))). This parameterisation allows CBE systems to adaptively select assessment items calibrated to each learner's current estimated ability level, maximising assessment information per item while minimising redundant testing. IRT underlies [[Item Response Theory]] models implemented in platforms serving hundreds of millions of assessment events in CBE contexts annually. At the student modelling level, [[Bayesian Knowledge Tracing]] (BKT) represents knowledge state as a four-parameter hidden Markov model: P(known at time t | performance history) updated via Bayes' rule after each practice or assessment event, with parameters for initial knowledge probability, learning rate (transition from unknown to known), guess rate, and slip rate. BKT's transparency makes it the dominant industrial student model; [[Deep Knowledge Tracing]] (DKT) achieves higher predictive accuracy by replacing the HMM with an LSTM network trained on sequential student response data, capturing long-range temporal dependencies between knowledge components that BKT's Markov assumption obscures.
+
+    The computational infrastructure enabling modern CBE at scale consists of three interlocking layers. The student modelling layer uses [[Bayesian Knowledge Tracing]] (Corbett and Anderson, 1994) or [[Deep Knowledge Tracing]] (Piech et al., 2015) to maintain a dynamic probabilistic estimate of each learner's mastery state per competency. [[Item Response Theory]] models provide psychometrically validated assessment calibration, estimating item difficulty and discrimination parameters to ensure that [[Rubric-Based Assessment]] scores accurately reflect competency mastery probability. The curriculum sequencing layer uses [[Knowledge Component Model]] representations of prerequisites and co-requisites to construct prerequisite graphs over which learner pathways are optimised, applying [[Reinforcement Learning]] or heuristic sequencing algorithms to select which competency to target next given the current learner state. The delivery layer uses [[Learning Management System]] platforms with [[Adaptive Learning]] capabilities — such as [[OpenEdX]], Canvas, Instructure, and specialist CBE platforms including D2L Brightspace's competency-tracking modules — to present appropriate content, manage assessment queues, and integrate with [[Learning Analytics]] dashboards that surface actionable insights for instructors and learners.
+
+    The relationship between CBE and [[Adaptive Learning]] is hierarchical: CBE is the instructional philosophy (mastery determines progression) while adaptive learning provides the algorithmic infrastructure (models and sequencing engines) that makes CBE operationally tractable at scale. Without computational adaptive systems, CBE devolves to either self-paced fixed-path instruction (mastery gating but no personalised sequencing) or purely instructor-managed individual assessment (administratively impractical at scale). With adaptive infrastructure, CBE enables genuinely individualised learning trajectories where each learner navigates the competency graph in the order most efficient for their particular knowledge profile and learning rate. The [[Knowledge Graph]] representation of competency prerequisites — mapping which competencies are logically prerequisite to which other competencies — is the structural backbone connecting CBE's pedagogical goals to the computational sequencing algorithms that implement them. Modern CBE knowledge graphs for complex professional qualifications may contain hundreds of competency nodes and thousands of prerequisite edges, requiring graph-traversal and shortest-path algorithms to compute optimal learning sequences.
+
+  ## Mathematical Framework
+    The formal models underlying CBE systems draw on probability theory, psychometrics, and sequential decision theory. Three mathematical frameworks are central to modern implementations:
+
+    **Bayesian Knowledge Tracing (BKT):** BKT models each (student, knowledge component) pair as a four-parameter hidden Markov model. The latent binary state K_t ∈ {0,1} represents whether the student knows the knowledge component at time t. Observable response O_t ∈ {correct, incorrect} is generated from the latent state with noise (guess and slip). The model parameters are: P(L_0) — initial probability of knowing the KC before practice; P(T) — probability of transitioning from not-knowing to knowing after each practice opportunity; P(G) — probability of a correct response from a student who does not know the KC (guessing); P(S) — probability of an incorrect response from a student who does know the KC (slipping). The update equation after observing a response applies Bayes' theorem: P(K_t | O_t) = P(O_t | K_t) * P(K_t) / P(O_t). After the update, the forward probability of knowing at time t+1 incorporates the learning transition: P(L_{t+1}) = P(L_t | O_t) + (1 - P(L_t | O_t)) * P(T). Mastery is declared when P(L_t) exceeds a mastery threshold (typically 0.95 in CBE applications). BKT's parameters are estimated by Expectation-Maximisation over observed response sequences in the [[Learning Analytics]] data warehouse.
+
+    **Item Response Theory (IRT):** The three-parameter logistic (3PL) IRT model specifies the probability of a correct response for student i on item j as: P(X_{ij}=1 | theta_i) = c_j + (1-c_j) * [1 / (1 + exp(-a_j * (theta_i - b_j)))], where theta_i is the latent ability of student i, b_j is the difficulty of item j, a_j is the discrimination of item j, and c_j is the pseudo-guessing parameter. In CBE assessment, IRT enables the construction of calibrated item banks where items covering the same competency have known difficulty parameters, enabling [[Rubric-Based Assessment]] scores to be placed on a common ability scale regardless of which specific items a given learner encountered. Computerised Adaptive Testing (CAT) algorithms select the next item to maximise Fisher information at the current ability estimate, efficiently converging on a precise ability estimate with fewer items than fixed-form tests require.
+
+    **Prerequisite Graph Traversal:** The [[Knowledge Component Model]] in a CBE programme is represented as a directed acyclic graph (DAG) G = (V, E) where vertices V represent competencies and edges E represent prerequisite relationships (KC_i must be mastered before KC_j). Given a learner's current mastery vector m ∈ {0,1}^|V| (1 if mastered, 0 if not), the set of currently accessible competencies is the frontier F = {v ∈ V : ∀u ∈ predecessors(v), m[u] = 1, m[v] = 0} — competencies whose prerequisites are all met but which are not yet mastered. Optimal sequencing selects from F using estimated learning efficiency (expected time-to-mastery given the current [[Learner Model]] state) or [[Reinforcement Learning]] policies trained on historical learner trajectories. The [[Curriculum Learning]] literature provides convergence results showing that ordering training examples from simple to complex (mirroring prerequisite-respecting CBE sequencing) accelerates learning in both human learners and machine learning models.
+
+    **[[Feedback Loop]] Dynamics:** The efficacy of CBE depends critically on the latency and quality of formative feedback. Research by Hattie and Timperley (2007) identified feedback as one of the highest-effect-size interventions in education (d=0.73 across meta-analysis). CBE formalises feedback as a closed-loop control system: the learner's current state is measured by assessment, the gap between current and target state determines the instructional intervention, and the intervention's effect is re-measured in the next assessment cycle. The [[Feedback Loop]] operates at multiple timescales: immediate (item-level feedback within seconds in online CBE), session-level (competency-level progress updates after each study session), and programme-level (credential milestones over weeks or months). [[Large Language Model]] systems have dramatically reduced feedback latency for written assessment tasks, generating detailed rubric-referenced feedback in seconds rather than the hours or days required for human reviewer feedback, enabling high-frequency CBE feedback cycles previously only achievable in automatically-graded mathematical or code-execution tasks.
+
+  ## Components / Architecture
+    Canonical CBE systems comprise five interacting architectural components:
+
+    - **[[Competency Framework]]**: The authoritative specification of what learners must demonstrate. Frameworks are typically hierarchically organised: programmes decompose into outcomes, outcomes into competencies, competencies into observable indicators. Professional bodies (nursing councils, engineering accreditors, teaching standards agencies) provide domain-specific competency frameworks that CBE programmes map to. [[Bloom's Taxonomy]] levels structure framework design by ensuring that competencies span the cognitive hierarchy from recall to creation.
+
+    - **[[Learner Model]]**: A computational representation of each learner's current mastery state across all competencies in the programme. [[Bayesian Knowledge Tracing]] models represent each competency's knowledge state as a probability estimate updated through a hidden Markov process after each assessment interaction. [[Open Learner Model]] variants make this state visible to the learner as a dashboard, supporting [[Metacognition]] and self-directed remediation. [[Deep Knowledge Tracing]] models encode temporal dependencies between knowledge component states using sequence-to-sequence architectures, providing higher predictive accuracy at the cost of interpretability.
+
+    - **[[Formative Assessment]] and [[Summative Assessment]]**: CBE distinguishes two assessment functions: formative assessment tracks learning progress and informs instructional adaptation (low stakes, frequent, immediate [[Feedback Loop]]); summative assessment certifies competency mastery for credentialing purposes (high stakes, often expert-reviewed). [[Rubric-Based Assessment]] standardises evaluator judgements across summative tasks by providing explicit mastery criteria. Automated essay scoring using [[Natural Language Processing]] and [[Large Language Model]] systems increasingly handles first-pass formative assessment, reducing latency from days to seconds.
+
+    - **[[Learning Management System]]**: The institutional infrastructure layer that manages learner enrolment, content delivery, assessment queueing, faculty grading workflows, and integration with student information systems. CBE-specialist LMS features include competency-tracking dashboards, prerequisite enforcement logic, faculty notification triggers when learners stall, and direct-assessment submission portals. Western Governors University's [[OpenEdX]]-based platform serves over 150,000 CBE students, representing the most extensive CBE implementation globally.
+
+    - **[[Micro-Credential]] and [[Digital Badge]] issuance**: CBE's modular competency structure maps naturally onto granular credential artefacts. [[Open Badges]] (IMS Global standard, v2.1, 2022; v3.0, 2023) encode competency assertions as JSON-LD structured data embedded in portable image files, enabling cryptographic verification of competency claims by employers. Blockchain-attested credentials (learning.vc protocol, Blockcerts framework) extend verifiability to tamper-evident distributed ledger records. [[Skills Gap Analysis]] tools in enterprise HR platforms ingest these credential artefacts to identify workforce competency coverage and training priorities.
+
+  ## Use Cases / Major Families
+    CBE has been deployed across six major contexts, each exhibiting distinct implementation patterns, institutional constraints, and technology stacks:
+
+    - **Non-traditional adult higher education**: Western Governors University (WGU, USA) — founded 1997, now enrolling over 150,000 students across business, IT, teaching, and healthcare programmes — represents the most extensive CBE implementation globally and the primary existence proof for CBE at higher education scale. WGU's direct-assessment model eliminates traditional courses entirely, replacing them with curated competency maps where students interact with learning resources until they are ready to demonstrate mastery through performance assessments graded by WGU's national pool of faculty evaluators. The model's economic consequences are significant: 57% of WGU undergraduates completed degrees without federal student loans (2022–23), compared to 14% at traditional four-year institutions. WGU charges a flat per-term fee regardless of how many competencies are attempted, incentivising faster progression by students with prior learning. WGU's [[OpenEdX]]-based platform manages the competency tracking, prerequisite enforcement, and assessment workflow for over 150,000 concurrent students, representing one of the world's largest deployments of learning management infrastructure in a CBE context. WGU Labs (the research arm) has published systematic evidence on micro-credential efficacy and learner outcome predictors, providing the empirical base for CBE programme design decisions.
+
+    - **Professional and vocational credentialing**: National professional bodies in nursing, teaching, engineering, law, and medicine have adopted CBE-aligned frameworks to tighten the alignment between qualifications and demonstrated workplace performance. The UK's Nursing and Midwifery Council's Standards of Proficiency (2018, updated 2023) specify 140+ proficiencies organised into seven platforms that pre-registration nursing programmes must demonstrate through clinical assessment. The Engineering Council's UK Standard for Professional Engineering Competence (UK-SPEC) specifies outcome-based competency standards for Chartered Engineer (CEng) and Incorporated Engineer (IEng) registration, requiring candidates to produce evidence portfolios demonstrating each competency in professional practice contexts — a form of work-based [[Prior Learning Assessment]] at scale. The General Teaching Council for Scotland's Professional Standards and the Teaching Regulation Agency's Teachers' Standards both employ competency-referenced assessment frameworks for initial teacher education, making CBE the de facto standard for professional credential assessment in the UK's regulated professions.
+
+    - **Corporate learning and development**: Large technology employers including IBM, Google, Amazon Web Services, Microsoft, and Salesforce have built internal CBE programmes to map workforce competencies against defined role requirements and create evidence-based upskilling pathways. IBM's SkillsBuild programme issued [[Open Badges]] credentialling CBE attainment to over two million learners globally by 2024, with badges recognised in IBM's own hiring processes. Amazon's Career Choice programme subsidises external CBE credentials in fields where Amazon has workforce demand, creating an employer-co-funded CBE pipeline. Google's Career Certificates — delivered through Coursera with CBE-aligned project-based assessment — have been recognised by over 150 employers as equivalent to bachelor's degrees for entry-level technology roles, demonstrating the employer recognition pathway that makes CBE credentials economically valuable. Microsoft's role-based certification programme covers over 100 technology domains with CBE-aligned competency assessments, and [[Digital Badge]] issuance enables candidates to share verified credentials through LinkedIn's digital certificate integration.
+
+    - **K-12 mastery-based progression**: US states including New Hampshire, Vermont, Maine, and Colorado have implemented statewide CBE policies enabling school districts to award credit based on demonstrated competency demonstration rather than seat hours. The New Hampshire Education Transformed (ELO) model allows students to earn graduation credit through extended learning opportunities in community settings, assessed against competency rubrics by trained evaluators. Khan Academy's adaptive platform — serving over 135 million learners in 190 countries — provides CBE-adjacent infrastructure where students master prerequisite skills before advancing, with [[Learning Analytics]] dashboards enabling teachers to identify which competencies specific students have or have not mastered. The Summit Learning Platform (used in 380+ US schools as of 2024) implements full CBE with teacher-facing mastery dashboards, student-directed project-based learning, and individual learning plans anchored to [[Competency Framework]] targets.
+
+    - **AI-enabled online courses and MOOCs**: Coursera, edX, and Udacity increasingly structure course content around competency demonstration, with automated assessment and [[Natural Language Processing]]-powered assignment grading enabling scalable CBE delivery to millions of concurrent learners. Coursera's Coach (2024) — an [[Large Language Model]]-powered conversational tutor — provides personalised formative feedback on programming assignments, explaining errors, suggesting remediation resources, and tracking competency progress within course competency maps. edX's Verified Certificates programme issues credentials tied to demonstrated competency assessment performance, with MicroMasters programmes representing stackable CBE credential sequences that can be applied toward full master's degrees at partner universities. AI tutoring systems integrating [[Large Language Model]] conversational feedback have reduced assessment-feedback cycles from multi-day human review to near-instantaneous automated feedback, enabling high-frequency CBE mastery cycles previously only achievable in automatically-graded tasks. Research from SpringerLink (2024) documented 15–25% improvement in competency attainment rates for AI-augmented CBE versus traditional LMS delivery in controlled cohort studies, validating the pedagogical utility of LLM-powered formative feedback within CBE cycles.
+
+    - **NHS and UK public sector workforce development**: NHS England's national competency frameworks for clinical roles — including the Healthcare Support Worker Competency Framework covering 350,000+ support workers, core clinical skills competency frameworks for nursing and allied health, and specialty training curricula for over 30 medical specialties — implement CBE principles across the UK's largest single employer (1.3 million employees). The NHS Electronic Staff Record (ESR) Learning Management System tracks competency attainment data for mandatory training against defined mastery standards, with direct linkage to payband progression under Agenda for Change. The NHS Long Term Workforce Plan (2023, updated 2025) committed to significant expansion of apprenticeship training using CBE assessment routes.
+      - Foundation Programme (FY1/FY2): the medical foundation programme uses CBE workplace-based assessment (mini-CEX, DOPS, CbD) to certify foundation doctors' achievement of 17 Foundation Outcomes.
+      - Speciality Training CBE: all 65 GMC-approved medical speciality curricula use outcome-based CBE frameworks specifying required competencies for progression through ST1-ST8 training grades.
+      - Healthcare Support Worker Competency Framework: covers 350,000+ workers across clinical support, administrative, and technical roles with tiered CBE competency maps aligned to Agenda for Change bandings.
+      - NMC Future Nurse Standards (2018): the Nursing and Midwifery Council's outcome-based pre-registration standards specify 7 platforms and 107 proficiencies that UK nursing education CBE programmes must evidence across theory and practice components.
+      - NHS Digital ESR integration: Electronic Staff Record learning management system tracks mandatory training compliance against defined mastery thresholds for over 1.3 million employees, with automatic alerts for expiring competencies.
+
+  ## Academic Context
+    CBE's academic lineage and current research community span educational psychology, psychometrics, computer science, and educational measurement, with major research centres in the USA and UK:
+
+    **Foundational Theory**: Bloom's "Learning for Mastery" (1968, UCLA-CSEIP Evaluation Comment) remains the primary theoretical ancestor, establishing empirically that mastery is achievable by most learners given adequate instructional support and that the distribution of achievement in fixed-time education reflects primarily the distribution of learning speed rather than innate aptitude. Carroll's "A Model of School Learning" (1963, Teachers College Record) provided the predecessor framework specifying learning as a function of time-on-task relative to time needed — the first formal model supporting mastery-based over time-based education. Anderson and Krathwohl's revised taxonomy (2001, Longman) updated Bloom's cognitive hierarchy with more precisely specified action-verb descriptors (Remember, Understand, Apply, Analyse, Evaluate, Create) that CBE competency writers rely on to produce assessable competency statements. Hattie's meta-analysis of educational interventions (Visible Learning, 2009; updated 2023 covering 1,900+ meta-analyses) identified formative feedback, spaced practice, and mastery learning among the highest-effect-size interventions (d > 0.60), providing the empirical foundation for CBE design priorities. Guskey's "Implementing Mastery Learning" (1985, 2010) provided practitioner guidance on translating Bloom's mastery theory into classroom implementation, forming the basis for many CBE curriculum designer training programmes.
+
+    **Psychometrics and Student Modelling**: Corbett and Anderson (1994, "Knowledge Tracing: Modelling the Acquisition of Procedural Knowledge", User Modeling and User-Adapted Interaction) introduced [[Bayesian Knowledge Tracing]], the dominant student modelling approach in CBE adaptive systems, drawing on hidden Markov model theory to formalise the latent knowledge acquisition process. Piech et al. (2015, "Deep Knowledge Tracing", NeurIPS) introduced LSTM-based sequence modelling of student performance, initiating a wave of deep learning approaches to student modelling that achieved higher predictive accuracy than BKT at the cost of interpretability. Baker, Corbett, and Koedinger (2004) documented the "gaming the system" phenomenon in CBE adaptive systems — students who exploit feedback loops to advance without genuine understanding — motivating [[Learning Analytics]] detection methods for aberrant response patterns. Baker and colleagues (2013–2024) at the Columbia University Teachers College developed Educational Data Mining (EDM) as a research field that provides the core analytics methodology for CBE competency tracking, producing the Journal of Educational Data Mining and co-founding the EDM conference series. Aleven, McLaughlin, Ming, and Koedinger (2016, "Instruction Based on Adaptive Learning Technologies", Handbook of Research on Learning and Instruction) provided the most comprehensive treatment of adaptive CBE technology design principles from a learning science perspective.
+
+    **Research Institutions**: The Carnegie Mellon University Human-Computer Interaction Institute (Pittsburgh) has produced foundational CBE-adjacent research through LearnLab — an NSF-funded laboratory for CBE research — and DataShop, the world's largest repository of longitudinal student interaction data (over 400 million student transactions from CBE and adaptive tutoring system deployments). The Pittsburgh Science of Learning Center and its successor the Simon Initiative at CMU have developed the Learning Engineering concept that applies engineering methods to education system design, aligning closely with CBE's evidence-based competency specification philosophy. The Gates Foundation's Postsecondary Success programme has committed over 300 million USD to CBE efficacy research since 2012, funding independent evaluation of WGU, Lumina Foundation's Connecting Credentials initiative, and the CAEL (Council for Adult and Experiential Learning) research programme on prior learning assessment. In the UK, the University of Edinburgh's Learning Analytics group (Simon Buckingham Shum, now at UTS), UCL's Knowledge Lab (Professor Rose Luckin, Rose Luckin's AI in Education research programme), and the Open University's Institute of Educational Technology (IET, Milton Keynes — one of the world's longest-running centres for distance and flexible learning research) are leading research venues. The JISC Learning Analytics and AI in Education programmes have funded UK institutional CBE analytics infrastructure. The UKRI-funded EDUCATE accelerator (London, hosted at UCL) has supported over 100 EdTech startups developing CBE assessment and analytics tools since 2018.
+
+  ## Current Landscape (2026)
+    As of mid-2026, CBE has moved from experimental to mainstream in several sectors, driven primarily by the integration of large language model tutoring, the expansion of employer-recognised micro-credential ecosystems, and regulatory pressure from UK and EU qualifications reform agendas:
+
+    - **AI tutoring integration**: Large Language Model-powered tutoring systems have become the primary delivery vehicle for formative feedback in CBE programmes at scale. Khanmigo (Khan Academy, GPT-4-based, launched 2023) provides Socratic dialogue tutoring aligned to Khan's competency map across mathematics and science. Coursera Coach (launched 2024) offers conversational guidance through Coursera's graded assignments in partnership with universities. The 2024–2025 cohort studies across multiple providers showed 15–25% improvement in competency attainment rates for AI-augmented CBE versus traditional LMS delivery in controlled trials (SpringerLink, 2024). The key mechanism is feedback latency reduction: where human graders returned written assignment feedback in 3–7 days, LLM graders return rubric-referenced feedback in under 60 seconds, enabling students to iterate rapidly within a single study session rather than waiting days between attempts.
+    - **Employer recognition and skills-based hiring**: A major structural shift has occurred in employer hiring practices since 2023: major technology employers including Google, IBM, Microsoft, Amazon, and Apple have formally updated their hiring policies to accept CBE micro-credentials and competency-demonstrated portfolios as equivalent to bachelor's degrees for entry-level and specialist roles. The UK's Skills and Post-16 Education Act (2022) and its implementation framework have accelerated employer co-design of CBE qualifications, with the Institute for Apprenticeships and Technical Education (IfATE) requiring occupational standards to specify measurable competency outcomes for all approved apprenticeship routes.
+    - **UK FE sector adoption**: DfE's Further Education update (April 2026) confirmed expanded funding for modular, competency-aligned courses at Level 3 and below under the Lifelong Learning Entitlement (LLE) which comes into effect in 2025–2026. Mastery-based teaching specialist programmes funded through Maths Hubs for 16–19 FE educators are being delivered by NCETM (National Centre for Excellence in the Teaching of Mathematics) across the Further Education sector. The LLE's modular credit framework creates the regulatory infrastructure for CBE micro-credential stacking that the previous QCF failed to fully enable.
+    - **Generative AI assessment challenge**: The proliferation of LLM-assisted essay writing and code generation has fundamentally challenged text-based summative assessment in CBE programmes. CBE providers have responded by shifting summative assessment toward performance-based demonstration, oral examination, live coding exercises, clinical simulation, and portfolio review — formats that are inherently harder to game with AI assistance and that align more authentically with the real-world competency demonstrations CBE is designed to certify. This shift is accelerating investment in video-based assessment platforms, automated oral assessment tools, and real-time proctoring systems that can assess competency demonstration in performance contexts.
+    - **Privacy and data governance**: The volume of learner interaction data required for [[Bayesian Knowledge Tracing]] and [[Deep Knowledge Tracing]] student modelling — typically millions of fine-grained assessment event records per cohort — creates significant [[Data Privacy]] obligations under UK GDPR (Data Protection Act 2018) and the EU AI Act (effective August 2024 for AI systems in education). [[Federated Learning]] approaches — allowing model training across institutional datasets without centralising raw learner data — have been piloted in EU-funded projects including the TEADAL consortium and the EDUCATE AI programme as privacy-preserving alternatives to centralised training. The Information Commissioner's Office (ICO) published specific guidance on learning analytics in education (2023) clarifying data controller responsibilities for CBE institutions.
+    - **[[Explainable AI]] for CBE assessment**: The EU AI Act classifies AI systems used in education for assessment and progression decisions as high-risk AI systems subject to mandatory transparency, human oversight, and accuracy requirements. CBE student modelling systems are being redesigned with interpretable components — surrogate models, attention mechanisms, and counterfactual explanations — alongside deep learning predictors to satisfy transparency requirements. The VerifyEd platform and similar credential verification services are developing audit trail mechanisms to document AI model predictions used in CBE progression decisions, providing the evidence trail required for regulatory compliance.
+    - **Competency ontology standardisation**: 2025–2026 has seen significant progress toward standardised [[Competency Framework]] vocabularies enabling portability of CBE credentials across institutions and jurisdictions. The ESCO (European Skills, Competences, Qualifications and Occupations) framework v1.2 (2023) covers 13,900+ skills, 2,900+ occupations, and 600+ qualifications in 27 languages. IMS Global's Comprehensive Learner Record (CLR) standard v2.0 (2023) provides a JSON-LD data format for portable competency evidence portfolios. The 1EdTech (formerly IMS Global) Open Badges v3.0 standard (2023) adds verifiable credentials support enabling cryptographically signed competency assertions compatible with the W3C Verifiable Credentials framework.
+
+  ## UK Context
+    CBE in the UK operates within a distinctive regulatory, institutional, and cultural context shaped by the tripartite structure of English education (schools, Further Education, and Higher Education), the National Health Service as a major CBE adopter, and a tradition of professional body-led competency assessment that predates the term CBE itself:
+
+    - **Regulatory framework**: The RQF (Regulated Qualifications Framework) governs credential levels 1–8 in England, with Ofqual regulating qualification standards through a structured approval process. Awarding bodies (City & Guilds, Pearson BTEC, OCR, NCFE) are actively developing CBE-aligned qualification designs in response to the Lifelong Learning Entitlement (LLE) regulatory framework, which from 2025–2026 enables modular CBE credit accumulation and transfer for the first time in English FE and HE. The VerifyEd platform (UK-based) provides blockchain-attested credential verification infrastructure serving UK universities and employers with CBE credential issuance under Open Badges v3.0 and W3C Verifiable Credentials standards. Scotland's Scottish Credit and Qualifications Framework (SCQF) and Wales' Credit and Qualifications Framework for Wales (CQFW) provide equivalent modular frameworks that have historically been more amenable to CBE-aligned credit transfer than the English system.
+    - **Higher Education**: UK universities are cautiously but increasingly exploring CBE for flexible [[Lifelong Learning]] provision, particularly at postgraduate and continuing professional development levels. The University of Edinburgh, University of Leeds, and University of Sheffield have piloted micro-credential programmes using competency-aligned assessment structures, with Edinburgh's School of Informatics and Leeds' Faculty of Engineering and Physical Sciences leading domain-specific CBE pilots. The Open University's longstanding flexible credit transfer system (the UK's largest distance learning institution, 170,000+ students) makes it a natural CBE pioneer; its 2024–2025 micro-credential pilots in data science and digital skills attracted over 5,000 learners and provided the UK HE sector's most extensive CBE outcome data. Birkbeck, University of London (specialist in part-time adult education) and Coventry University's online division represent further institutional CBE pioneers targeting adult learner cohorts where CBE's self-paced, mastery-gated progression offers significant advantages over semester-structured programmes.
+    - **NHS implementation**: NHS England's Long Term Workforce Plan (2023, updated 2025) committed to significant expansion of competency-based apprenticeship routes across clinical and non-clinical roles, representing the UK's largest employer CBE investment commitment. The NHS Healthcare Support Worker Competency Framework provides the UK's largest single CBE deployment context, covering over 350,000 support workers across England; NHS Scotland's NES Digital platform delivers CBE-aligned professional development for the Scottish NHS workforce. The NHS Learning Management System (ESR — Electronic Staff Record) integrates competency tracking with payband progression requirements under Agenda for Change, creating direct economic incentives for competency attainment and making NHS workforce data one of the UK's richest CBE longitudinal datasets.
+    - **Northern England industrial context**: Yorkshire and Humber Institute of Technology (HutchIoT, Leeds/Sheffield), Greater Manchester Combined Authority's digital skills programme (targeting 1 million residents with digital skills uplift by 2030), and Newcastle's International Centre for Life (bioscience and health tech workforce development) all use CBE-aligned upskilling programmes for manufacturing and digital economy [[Workforce Development]] in post-industrial communities. Specific [[Skills Gap Analysis]] priorities in advanced manufacturing (steel and composites in Sheffield, aerospace in Leeds), health technology (Manchester's NHS innovation hub), and clean energy (offshore wind in Teesside, hydrogen in Humber) are driving employer-co-designed CBE programme development in which competency frameworks are developed jointly between employers and FE/HE institutions rather than specified top-down by awarding bodies.
+    - **Further Education**: The Association of Colleges, Education and Training Foundation (ETF), and Ufi VocTech Trust support CBE-aligned reforms across the FE sector, where modular, outcomes-based learning has stronger historical precedent than in universities, rooted in BTEC and NVQ traditions that have always emphasised competency demonstration over written examinations. Sheffield Hallam University's employer-integrated degree apprenticeship programmes represent a hybrid CBE-apprenticeship model where NMC, Engineering Council, and sector-specific competency frameworks are embedded in HE programmes with workplace competency assessment by employer mentors. Leeds Beckett University and Manchester Metropolitan University have developed CBE-influenced professional development programmes for public sector workforce clients drawing on their proximity to large NHS trust and local authority employers.
+    - **Research**: UCL Knowledge Lab (Professor Rose Luckin, AI in Education; Dr Sergio Gutierrez Santos, learning analytics), Open University IET (Professor Mike Sharples, Professor Agnes Kukulska-Hulme, learning design), and the University of Edinburgh's Moray House School of Education Learning Analytics group collectively represent the UK's strongest CBE and learning analytics research concentration. The UKRI-funded EDUCATE accelerator (London, UCL-hosted) has supported over 100 EdTech startups developing CBE assessment and analytics tools since 2018. The Digital Futures Commission (5Rights Foundation) provides child rights and [[Data Privacy]] policy analysis for CBE systems deployed with under-18 learners, ensuring that UK CBE implementations comply with the Age Appropriate Design Code (Children's Code) alongside GDPR obligations.
+
+  ## Future Directions (2026-2030)
+    - **Agentic CBE systems**: By 2027–2028, [[Adaptive Learning]] agents powered by frontier [[Large Language Model]] systems are expected to autonomously manage full CBE learning journeys — selecting competencies, generating assessment tasks, evaluating submissions, providing remediation, and issuing credentials — with human instructors serving a supervisory rather than primary instruction role. Frontiers in Education (2025) identifies AI-driven competency assessment as the central transformation vector in higher vocational education curricula, reporting that AI-generated rubric feedback already achieves expert human inter-rater reliability on structured assessment tasks, removing a key cost barrier to CBE at scale.
+    - **Verifiable credential ecosystems**: The W3C Verifiable Credentials standard (v2.0, 2024) and DIF (Decentralised Identity Foundation) protocols will enable lifelong CBE credential portfolios that learners control, share selectively with employers and institutions, and accumulate across multiple CBE providers throughout a career. The European Blockchain Services Infrastructure (EBSI) micro-credential pilot (2025-2027) is implementing EU-wide verifiable credential issuance for CBE programmes, with the UK's VerifyEd platform interoperating via open-standard APIs.
+    - **[[Federated Learning]] for privacy-preserving student modelling**: Cross-institutional federated training of [[Bayesian Knowledge Tracing]] and [[Deep Knowledge Tracing]] models will enable more accurate student state estimation without pooling individual learner data, resolving the current tension between model quality and [[Data Privacy]] under UK GDPR and EU AI Act transparency requirements. The TEADAL consortium (EU-funded, 2023-2026) provides the reference architecture for federated learning in educational data contexts.
+    - **Competency ontologies and interoperability**: Interoperability between CBE systems from different providers requires standardised [[Competency Framework]] ontologies that enable cross-institutional credit recognition. IEEE LTSC's Competency Definition standard (P1484.20.3), IMS Global's Comprehensive Learner Record (CLR) standard, and ESCO (European Skills, Competences, Qualifications and Occupations) taxonomy are converging toward a common competency vocabulary. The [[Knowledge Graph]] representation of competency structures across providers — enabling learners to map completed competencies from one institution onto the requirement graph of another — is the technical infrastructure required for genuine [[Lifelong Learning]] credential accumulation across careers.
+    - **Affective and multimodal assessment**: Integration of affective computing, eye-tracking, biometric engagement monitoring, and multimodal interaction data into CBE learner models will enable assessment of social-emotional and process-oriented competencies that text-based assessment cannot capture. Clinical communication, leadership, empathy, and collaborative problem-solving competencies — central to NHS and other professional CBE frameworks — require this richer assessment modality. The 2026 generation of [[Intelligent Tutoring System]] platforms incorporate camera-based engagement monitoring and speech analysis to detect confusion, frustration, and disengagement, triggering adaptive instructional responses earlier in the learning cycle.
+    - **National qualifications reform in the UK**: The Skills and Post-16 Education Act (2022) and its implementation through the Lifelong Learning Entitlement (LLE, from 2025) will create the regulatory and funding infrastructure for CBE to be adopted at scale in English Further and Higher Education. LLE provides a single account for individuals to access the equivalent of four years of post-18 education throughout their lives, enabling modular CBE accumulation across multiple providers and decades. The post-Augar reform agenda is expected to introduce standardised modular credit frameworks below degree level by 2027, creating the structural conditions for employer-integrated CBE to become the dominant mode of workforce upskilling in Northern English industrial regions facing significant skill transition demands in manufacturing, health, and clean energy.
+    - **AI competency standards**: As of 2025-2026, a new domain of CBE focuses on specifying and assessing AI competencies for workers across all sectors. The UNESCO AI Competency Frameworks for Students and Teachers (2024) and the UK's AI Skills for Business initiative provide curriculum scaffolds; CBE implementations are being designed to certify AI literacy, prompt engineering, AI ethics, and human-AI collaboration competencies using the same mastery-based assessment models applied to vocational and academic domains.
+
+  ## Benchmark Datasets and Evaluation
+    CBE research relies on several canonical datasets for evaluating student modelling algorithms and adaptive CBE systems:
+
+    - **ASSISTments Dataset (Worcester Polytechnic Institute, 2004-present)**: The most widely cited open educational dataset for [[Bayesian Knowledge Tracing]] and [[Deep Knowledge Tracing]] benchmarking, containing over 100 million student-item interactions from an [[Intelligent Tutoring System]] for mathematics. The 2009–2010 release has been used in over 200 published papers and is the de facto standard benchmark for student knowledge tracing algorithms in CBE contexts.
+      - ASSISTments 2017 skill builder: the standard benchmark for deep learning student models (DKVMN, SAKT, SAINT, AKT), enabling apples-to-apples comparison of [[Deep Knowledge Tracing]] variants.
+      - ASSISTments in the classroom: used in RCTs to test real-time CBE feedback interventions, with several published studies showing significant improvement in standardised test outcomes.
+    - **KDD Cup 2010 Educational Data Mining Challenge**: Dataset containing approximately 280,000 student interaction sequences from an algebra tutoring system, with expert-labelled [[Knowledge Component Model]] assignments enabling systematic comparison of knowledge tracing algorithms. Established standard benchmark splits still used in 2024–2026 [[Learning Analytics]] research.
+      - KDD Cup 2010 Algebra I and Bridge to Algebra: two datasets (2006-07, 2008-09) enabling longitudinal student modelling across full school-year CBE interaction sequences.
+      - Stochastic gradient descent knowledge tracing: landmark method benchmarked on KDD Cup 2010 data establishing the methodological baseline for CBE student model evaluation.
+    - **MOOC Performance Datasets (Coursera, edX, Udacity 2012-2026)**: Longitudinal interaction data from massive open online courses used to study dropout prediction, engagement modelling, and adaptive path optimisation in CBE delivery via [[Learning Management System]] platforms. The HarvardX/MITx 2012–2013 dataset (641,138 registrations) demonstrated CBE-aligned redesigns substantially improving completion rates.
+    - **PIAAC Round 2 (OECD, 2022-2024)**: Largest cross-national adult competency assessment in literacy, numeracy, and digital problem-solving. UK data reveals 9.4 million working-age adults below numeracy Level 2 — the primary [[Skills Gap Analysis]] justification for CBE upskilling in Further Education contexts.
+    - **NHS Education and Training Data (Health Education England, 2015-2026)**: Competency assessment records covering over 50,000 clinical trainees annually — the UK's largest CBE deployment context — enabling research on competency trajectory modelling and time-to-mastery prediction in high-stakes clinical settings.
+    - **Duolingo English Test Research Corpus (2022-2026)**: Large-scale assessment data from the Duolingo English proficiency test, used for research on adaptive language proficiency assessment and computerised adaptive testing in CBE-adjacent language learning contexts. The test uses [[Item Response Theory]] models calibrated on millions of test-takers, demonstrating the scalability of IRT-based competency assessment beyond traditional proctored settings.
+
+  ## AI Integration Landscape (2025-2026)
+    Key developments in CBE-AI integration as of mid-2026:
+
+    - **LLM-powered formative assessment**: Automated essay scoring using [[Large Language Model]] systems has reached human-level inter-rater reliability on structured CBE rubrics in 2025, reducing feedback latency from days to seconds and enabling high-frequency CBE feedback cycles previously only achievable for automatically-graded mathematical tasks.
+    - **CYPHER Learning AI-enabled CBE**: CYPHER Learning's AI-enabled Content Builder automates CBE competency-aligned content sequencing with role-based AI permissions across course creation and [[Skills Gap Analysis]] for workforce development contexts. AI gamification tools automatically align [[Gamification]] rewards with competency demonstration milestones.
+    - **Coursera AI Coach**: Competency-gated personalised learning paths across 7,000+ courses from 330 universities, with AI coaching providing conversational guidance through rubric-based assignments — the largest scale deployment of LLM-augmented CBE formative support globally as of 2026.
+    - **CYPHER AI concerns**: A 2025-2026 survey of educators found that 71% cite concerns that student data submitted to AI grading systems is used for model training without explicit consent — a significant [[Data Privacy]] issue requiring GDPR-compliant data processing agreements in UK CBE deployments using third-party AI grading APIs.
+    - **AI competency standards proliferation**: UNESCO AI Competency Frameworks for Students and Teachers (2024), UK DSIT AI Skills for Business (2025), EU AI Literacy requirements under the EU AI Act (2025), and Microsoft's AI Skills Navigator (2025) are creating a fragmented landscape of AI competency frameworks that CBE programmes must navigate. Standardisation through IEEE LTSC P1484.20.3 is underway but not expected to reach consensus before 2027.
+    - **Agentic AI tutoring pilots**: Several UK universities and FE providers are piloting agentic AI tutors that maintain persistent [[Learner Model]] state across sessions, adaptively select which competency to target next, and proactively reach out to learners who have stalled on prerequisite competencies — implementing the full CBE loop autonomously within [[Learning Management System]] integrations.
+    - **Oral assessment technology**: The shift to oral and performance-based [[Summative Assessment]] in response to LLM-assisted essay submission is driving investment in automated oral assessment platforms (SpeakAssist, ALTA Language Services, and Pearson's Versant platform), video-based performance assessment (Panopto, Kaltura with AI rubric annotation), and real-time coding assessment platforms (Codility, HackerRank) that enable authentic competency demonstration resistant to AI gaming.
+
+  ## Key Terminology
+    - **Competency**: An explicit, measurable specification of what a learner must know, understand, or be able to do, typically expressed as an action verb statement (e.g., "Applies statistical regression to real-world datasets"). Competencies are distinguished from learning objectives by their requirement for observable performance evidence and explicit mastery criteria.
+    - **Direct Assessment**: A CBE modality (US federal financial aid definition, 34 CFR 668.10) where credit is awarded based entirely on demonstrated competency rather than course completion; distinguished from "course-based CBE" where competencies are embedded within traditional course structures that retain clock-hour elements alongside mastery requirements.
+    - **Mastery threshold**: The minimum performance level — typically 70–80% or above — on a summative assessment required to certify competency attainment in a CBE programme. Unlike conventional pass marks, the mastery threshold in CBE is criterion-referenced (does this learner meet the external standard?) rather than norm-referenced (did this learner score above median?). When a learner falls below threshold, CBE requires additional instructional support and a repeated assessment opportunity, not a grade penalty.
+    - **Carnegie Unit**: The time-based credit unit (one unit = 120 student hours) that CBE replaces as the currency of educational progression; introduced in 1906 by the Carnegie Foundation to standardise US high school curricula for pension eligibility purposes, and subsequently adopted as the global currency of academic credit for over a century. CBE's fundamental claim is that the Carnegie Unit is a proxy measure of learning opportunity rather than learning achievement, and should be replaced by direct competency demonstration as the credential currency.
+    - **Stackable credential**: A [[Micro-Credential]] that accumulates with others to constitute a higher-level qualification, enabling learners to build credentials incrementally while maintaining employment. Stackable credential architecture allows a learner to exit-and-re-enter the credentialing pathway at multiple points, recognising partial completion with [[Digital Badge]] awards that have immediate labour market signalling value.
+    - **Performance evidence**: Workplace-generated artefacts (work products, supervisor observations, professional portfolio entries, authenticated work samples) that CBE systems accept as proof of competency attainment through [[Prior Learning Assessment]] processes. Performance evidence assessment requires trained assessors applying standardised rubrics; the Inter-Rater Reliability (IRR) of performance evidence assessment is a critical quality metric for CBE credentialling bodies.
+    - **Knowledge Component (KC)**: The elementary unit of knowledge in a CBE system — an atomic cognitive skill or concept that can be independently assessed and tracked in a [[Learner Model]]. The [[Knowledge Component Model]] decomposes a domain's competencies into KCs and maps their prerequisite relationships, forming the graph structure over which [[Bayesian Knowledge Tracing]] maintains per-KC mastery probability estimates.
+    - **Transfer-appropriate processing**: The principle that competency transfer to novel contexts requires that assessment conditions match the conditions under which the competency will be applied in practice. CBE assessment design is guided by transfer-appropriate processing to ensure that summative tasks are sufficiently authentic to the target performance context to predict real-world competency use.
+    - **Criterion-referenced assessment**: Assessment interpreted against an absolute standard of performance (the competency specification) rather than against the performance of other learners. Criterion-referenced assessment is the measurement foundation of CBE, distinguishing it from norm-referenced assessment (grading on a curve) in which the same score indicates different mastery levels depending on cohort composition.
+    - **Learning outcome**: A statement specifying what learners will be able to do at the end of an instructional unit, expressed in measurable terms. Learning outcomes in CBE are written using action verbs from [[Bloom's Taxonomy]] (Remember: recall, list; Understand: explain, summarise; Apply: demonstrate, use; Analyse: differentiate, examine; Evaluate: justify, critique; Create: design, construct) to ensure that assessment evidence can confirm the specified cognitive level has been achieved.
+    - **Gap analysis (CBE context)**: A formal process for comparing a learner's current [[Learner Model]] state against the target competency profile for a qualification or role, producing a prioritised set of competencies to address. CBE gap analysis is operationalised through [[Skills Gap Analysis]] tools in HR platforms that ingest [[Open Badges]] and [[Micro-Credential]] records to map individual or workforce competency coverage against defined role profiles.
+    - **Re-assessment policy**: The institutional rules governing how many times, at what intervals, and under what conditions a learner may re-attempt a summative CBE assessment after a failed attempt. CBE re-assessment policies distinguish between corrective re-assessment (learner receives feedback and additional instruction before re-attempting) and repeated testing (learner re-attempts without additional support). Evidence-based CBE programmes require corrective instruction between attempts to ensure that re-assessment reflects genuine learning rather than probabilistic variation in performance.
+    - **Granularity**: The size and specificity of competency units in a CBE programme — from broad graduate-level outcome statements (e.g., "Demonstrates professional practice in clinical nursing") to fine-grained knowledge components (e.g., "Calculates medication dosages using the weight-based formula"). CBE granularity decisions determine assessment burden, credential portability, and the specificity of [[Learner Model]] state representation. Highly granular CBE programmes (hundreds of KCs) enable precise adaptive sequencing but impose significant assessment and record-keeping overhead.
+
+  ## Practitioner and Institutional Resources
+    - **Competency-Based Education Network (C-BEN)**: US-based membership organisation of 300+ institutions that have implemented or are implementing direct-assessment CBE programmes. Publishes quality benchmarks, implementation guides, and the CBE Research Journal. UK FE and HE institutions engaging with C-BEN include Open University and some post-92 universities piloting CBE module redesign.
+    - **Quality Assurance Agency (QAA) UK**: Published guidance on credit frameworks and micro-credentials for English HE institutions in 2023, establishing a voluntary framework for credit-bearing CBE modules at Levels 4–7 in the RQF. QAA also publishes the UK Quality Code chapter on assessment, which CBE programmes must demonstrate compliance with — including assessment design, marking reliability, and external examining standards.
+    - **NOCN Group**: UK awarding body offering CBE-aligned qualifications in vocational and professional sectors, with the NOCN Portal enabling employer-integrated CBE evidence submission and digital credentialling. Particularly active in healthcare, construction, and social care CBE pathways.
+    - **Association for Learning Technology (ALT)**: UK professional body for learning technologists, publishes *ALT-J: Research in Learning Technology* — a key venue for UK-based CBE learning analytics and [[Learning Management System]] research. The CMALT (Certified Member of ALT) credential is itself an evidence-based professional accreditation structured as a competency portfolio.
+    - **Jisc**: UK HE/FE technology agency whose Learning Analytics Service provides [[Learning Management System]] integration for competency tracking dashboards used in UK CBE pilots. Jisc's Digital Experience Insights survey tracks learner and staff attitudes to CBE assessment technologies annually.
+    - **OfSTED Education Inspection Framework (EIF)**: UK school and FE inspection framework requiring evidence of learner progress and outcomes — CBE's mastery-based progression records align well with EIF evidence requirements, making CBE a strategically attractive format for institutions seeking to demonstrate learner progress through inspection.
+    - **European Credit Transfer and Accumulation System (ECTS)**: The EU credit standard (1 ECTS = 25-30 student notional hours) is the European equivalent of the Carnegie Unit that CBE systems must translate credentials into for cross-border recognition. The European Approach for Micro-Credentials (2022) provides a framework for mapping CBE micro-credentials to ECTS credit ranges for Europass Supplement description.
+    - **IEEE Learning Technology Standards Committee (LTSC)**: Produces the international technical standards for learning technology interoperability including P1484.20.3 (Competency Data), IEEE LOM (Learning Object Metadata), and xAPI (Experience API) — the data standards infrastructure enabling CBE evidence exchange between providers, employers, and credentialling bodies.
+    - **TEADAL Consortium (EU H2020, 2023-2026)**: European research project developing federated data governance architecture for educational data, directly applicable to CBE cross-institutional student modelling. Partners include Politecnico di Milano, TU Delft, and IBM Research, with UK associate partner participation through Jisc.
+    - **InSTEDD (formerly Health eVillages)**: NGO deploying CBE-aligned competency assessment tools in global health worker training contexts (Sub-Saharan Africa, South Asia) using offline-capable [[Intelligent Tutoring System]] mobile platforms — demonstrating CBE scalability in low-resource contexts without continuous [[Learning Management System]] connectivity.
+    - **AERA/APA/NCME Standards for Educational and Psychological Testing (2014, updated 2024)**: The authoritative standards document governing validity evidence, reliability, and fairness requirements for CBE assessments used in credentialling contexts. CBE programmes seeking accreditation or employer recognition must demonstrate Standards alignment for their summative assessment instruments, particularly for high-stakes professional competency assessments in health, law, and education.
+    - **GMC/NMC/GDC (UK Professional Regulatory Bodies)**: General Medical Council, Nursing and Midwifery Council, and General Dental Council in the UK each specify the competency frameworks that approved education programmes must map against, making medical, nursing, dental, and allied health CBE programmes a regulatory requirement rather than an institutional choice — the strongest form of CBE adoption driver operating in UK higher and professional education.
+
+  ## Research & Literature
+    1. Bloom, B.S. (1968). Learning for mastery. *UCLA-CSEIP Evaluation Comment*, 1(2), 1–12. https://eric.ed.gov/?id=ED053419
+    2. Carroll, J.B. (1963). A model of school learning. *Teachers College Record*, 64(8), 723–733. https://doi.org/10.1177/016146816306400801
+    3. Anderson, L.W. & Krathwohl, D.R. (Eds.) (2001). *A Taxonomy for Learning, Teaching, and Assessing*. Longman. ISBN 978-0801319037.
+    4. Corbett, A.T. & Anderson, J.R. (1994). Knowledge tracing: Modelling the acquisition of procedural knowledge. *User Modeling and User-Adapted Interaction*, 4(4), 253–278. https://doi.org/10.1007/BF01099821
+    5. Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. *Cognitive Science*, 12(2), 257–285. https://doi.org/10.1207/s15516709cog1202_4
+    6. Vygotsky, L.S. (1978). *Mind in Society: The Development of Higher Psychological Processes*. Harvard University Press. ISBN 978-0674576292.
+    7. Piech, C. et al. (2015). Deep knowledge tracing. *NeurIPS 2015*, 505–513. https://arxiv.org/abs/1506.05908
+    8. Baker, R.S. & Inventado, P.S. (2014). Educational data mining and learning analytics. In *Learning Analytics* (pp. 61–75). Springer. https://doi.org/10.1007/978-1-4614-3305-7_4
+    9. Lalley, J. & Miller, R. (2007). The learning pyramid: Does it point teachers in the right direction? *Education*, 128(1), 64–79.
+    10. Gottipati, S. & Shankararaman, V. (2018). Competency model and its application in education. *International Journal of Engineering Education*, 34(2), 710–723.
+    11. Klein-Collins, R. (2013). *Shaping a Vision for Competency-Based Education*. Council for Adult and Experiential Learning. https://www.cael.org/
+    12. WGU Labs (2024). Breaking barriers, building futures: WGU Labs end-of-year impact report. https://www.wgulabs.org/posts/breaking-barriers-building-futures-wgu-labs-end-of-year-impact-report-2024
+    13. WGU (2025). Skills-based education for the future of work. https://www.wgu.edu/blog/skills-based-education-for-the-future-of-work2501.html
+    14. elearningindustry.com (2024). Revolutionizing education: How adaptive learning supports competency-based education (CBE). https://elearningindustry.com/revolutionizing-education-how-adaptive-learning-supports-competency-based-education-cbe
+    15. SpringerLink (2024). AI and competency-based education: Moving beyond traditional approaches. In *Artificial Intelligence in Education*. https://link.springer.com/chapter/10.1007/978-3-031-56848-0_4
+    16. Frontiers in Education (2025). Role of artificial intelligence in enhancing competency assessment and transforming curriculum in higher vocational education. https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1551596/full
+    17. MDPI Education Sciences (2025). Unlocking career potential: How micro-credentials are revolutionising higher education and lifelong learning. https://www.mdpi.com/2227-7102/15/5/525
+    18. VerifyEd (2024). Competency based learning and assessment: Complete guide 2025. https://www.verifyed.io/blog/competency-learning-assessment-guide
+    19. Digital Promise (2024). New eBook supports the role of micro-credentials in lifelong learning and development. https://digitalpromise.org/2024/08/29/new-ebook-supports-the-role-of-micro-credentials-in-lifelong-learning-and-development/
+    20. Journals of the Kansas University (2024). Competency-based education through micro-credentials. *Competency-Based Education Research Journal*, 4(1). https://journals.ku.edu/cberj/article/download/24032/21855/91702
+    21. Educational Voice (2024). Unlocking potential: The benefits of competency-based learning. https://educationalvoice.co.uk/competency-based-learning/
+    22. CE-JEME (2021). Aligning models of competency-based education. *Journal of Engineering and Management Education*, 10(1). https://www.ce-jeme.org/cgi/viewcontent.cgi?article=1081&context=journal
+    23. ScienceDirect (2024). Micro-credentialing as an approach to educator professional learning. *Teaching and Teacher Education*, 143. https://doi.org/10.1016/j.tate.2024.104570
+    24. Education Next (2024). Competency-based learning for teachers: Micro-credentials and professional development. https://www.educationnext.org/competency-based-learning-teachers-micro-credentials-professional-development/
+    25. DfE (2026). DfE update further education: 29 April 2026. https://www.gov.uk/government/publications/dfe-update-29-april-2026/dfe-update-further-education-29-april-2026
+    26. NHS England (2023). NHS Long Term Workforce Plan. https://www.england.nhs.uk/publication/nhs-long-term-workforce-plan/
+    27. IMS Global (2022). Open Badges specification v2.1. https://www.imsglobal.org/spec/ob/v2p1/
+    28. Luckin, R. (2018). *Machine Learning and Human Intelligence: The Future of Education for the 21st Century*. UCL IOE Press. ISBN 978-1858566511.
+    29. Hattie, J. (2009). *Visible Learning: A Synthesis of Over 800 Meta-Analyses Relating to Achievement*. Routledge. ISBN 978-0415476188. [Updated 2023 covering 1,900+ meta-analyses, effect size d=0.73 for feedback cited as CBE core mechanism.]
+    30. Gagné, R.M. (1965). *The Conditions of Learning*. Holt, Rinehart and Winston. [Nine instructional events forming CBE module design template.]
+    31. Guskey, T.R. (1985). *Implementing Mastery Learning*. Wadsworth. [Updated second edition 2010; practitioner guide to CBE implementation from Bloom's mastery learning theory.]
+    32. NCETM (2026). Mastery teaching specialist programmes for 16-19 FE educators. National Centre for Excellence in the Teaching of Mathematics. https://www.ncetm.org.uk/ [UK FE sector CBE adoption context.]
+    33. Frontiers in AI (2025). Multi-agent systems powered by large language models: applications in swarm intelligence. https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1593017/full [AI systems as CBE delivery mechanism context.]
+    34. X-Pilot Research (2026). The Future of AI in Education: 2026 Trends Report. https://www.x-pilot.ai/blog/future-ai-education-2026-trends-report [CBE-AI integration current landscape.]
+    35. D2L (2026). 7 Best AI-Powered Learning Platforms in 2026. https://www.d2l.com/blog/ai-learning-platforms/ [CBE platform landscape including Brightspace competency tracking.]
+    36. PMC/NCBI (2026). AI Competency: Current State and Challenges. https://pmc.ncbi.nlm.nih.gov/articles/PMC12978887/ [AI competency CBE framework research, 2025-2026.]
+    37. Clinicaltrials.gov (2026). Leveraging Large Language Models to Enhance Research Competency Among Undergraduate Nursing Students. NCT07540078. https://clinicaltrials.gov/study/NCT07540078 [LLM-CBE integration in clinical education, 2026 RCT.]
+
+- ### Provenance
+  - sources:: https://link.springer.com/chapter/10.1007/978-3-031-56848-0_4, https://elearningindustry.com/revolutionizing-education-how-adaptive-learning-supports-competency-based-education-cbe, https://www.wgulabs.org/posts/breaking-barriers-building-futures-wgu-labs-end-of-year-impact-report-2024, https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1551596/full, https://www.mdpi.com/2227-7102/15/5/525, https://journals.ku.edu/cberj/article/download/24032/21855/91702, https://educationalvoice.co.uk/competency-based-learning/, https://www.gov.uk/government/publications/dfe-update-29-april-2026/dfe-update-further-education-29-april-2026
+  - migration-date:: 2026-06-21T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

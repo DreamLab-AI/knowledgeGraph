@@ -1,0 +1,148 @@
+public:: true
+
+# Inflation Targeting
+
+```json-ld
+{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:inflation-targeting", "@type": "Page", "title": "Inflation Targeting", "vc:slug": "inflation-targeting", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:inflation-targeting",
+  "@type": "Class",
+  "label": "Inflation Targeting",
+  "definition": "Inflation targeting is a monetary-policy framework in which a central bank publicly commits to achieving a specified rate of inflation over the medium term and adjusts its policy instruments to meet that target. By anchoring expectations to a clear, numerical goal, it aims to deliver price stability while preserving transparency and accountability. The framework links interest-rate decisions to forecasts of how inflation will deviate from the announced target.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:forward-guidance",
+        "label": "Forward Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:taylor-rule",
+        "label": "Taylor Rule"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-price-index",
+        "label": "Consumer Price Index"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      },
+      {
+        "@id": "urn:ngm:class:forward-guidance",
+        "label": "Forward Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "@id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "@id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
+- ### Definition
+  - Inflation targeting is a monetary-policy framework in which a central bank publicly commits to achieving a specified rate of inflation over the medium term and adjusts its policy instruments to meet that target. By anchoring expectations to a clear, numerical goal, it aims to deliver price stability while preserving transparency and accountability. The framework links interest-rate decisions to forecasts of how inflation will deviate from the announced target.
+  - Related concepts: [[Monetary Policy]] [[Price Stability]] [[Central Bank]] [[Inflation]] [[Interest Rate]]
+- ### Overview
+  - Pioneered by New Zealand in 1990 and since adopted by central banks including the Bank of England and many others, inflation targeting replaced earlier frameworks based on monetary or exchange-rate aggregates. The central bank sets a target — often around two per cent measured by a consumer price index — and uses its policy rate as the principal instrument, raising rates when inflation is forecast above target and lowering them when below. Transparency through published forecasts, minutes, and forward guidance is integral, as credible communication anchors inflation expectations and makes the policy self-reinforcing.
+- ### Mechanisms
+  - Numerical target: a publicly announced inflation rate, typically defined over a medium-term horizon.
+  - Policy instrument: adjustment of the short-term interest rate to steer aggregate demand and prices.
+  - Expectations anchoring: credible commitment that shapes wage- and price-setting behaviour.
+  - Transparency and accountability: published forecasts, votes, and explanations of deviations from target.
+  - Forward guidance: signalling the likely future path of policy to amplify current actions.
+- ### Applications
+  - Conduct of monetary policy by central banks such as the Bank of England and the Federal Reserve.
+  - Anchoring long-run inflation expectations in advanced and emerging economies.
+  - Communicating policy intent through published inflation reports and guidance.
+  - Framework for evaluating central-bank credibility and performance.
+- ### Relationships
+  - partOf:: [[Monetary Policy]]
+  - hasPart:: [[Forward Guidance]]
+  - hasPart:: [[Taylor Rule]]
+  - dependsOn:: [[Central Bank]]
+  - dependsOn:: [[Interest Rate]]
+  - requires:: [[Interest Rate]]
+  - requires:: [[Consumer Price Index]]
+  - uses:: [[Interest Rate]]
+  - uses:: [[Forward Guidance]]
+  - uses:: [[Quantitative Easing]]
+  - supports:: [[Price Stability]]
+  - enables:: [[Price Stability]]
+  - relatedTo:: [[Inflation]]
+  - relatedTo:: [[Macroeconomics]]
+  - relatedTo:: [[Bank of England]]
+  - relatedTo:: [[Federal Reserve]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

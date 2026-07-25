@@ -1,0 +1,147 @@
+public:: true
+
+# Proprioception
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:proprioception",
+  "@type": "Page",
+  "title": "Proprioception",
+  "vc:slug": "proprioception",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:proprioception",
+  "@type": "Class",
+  "label": "Proprioception",
+  "definition": "Proprioception is a robot's internal sense of its own configuration and motion, derived from sensors that report joint angles, velocities, motor torques, body orientation and contact forces. Distinct from exteroceptive sensing of the external world, proprioceptive feedback lets a system estimate its pose and dynamics without external references, which is essential for stable balance, compliant interaction and dead-reckoning. It provides the fast, low-latency state signal that closed-loop motor controllers depend upon.",
+  "domain": "robotics",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robot-perception",
+      "label": "Robot Perception"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      }
+    ]
+  },
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
+- ### Definition
+  - Proprioception is a robot's internal sense of its own configuration and motion, derived from sensors that report joint angles, velocities, motor torques, body orientation and contact forces. Distinct from exteroceptive sensing of the external world, proprioceptive feedback lets a system estimate its pose and dynamics without external references, which is essential for stable balance, compliant interaction and dead-reckoning. It provides the fast, low-latency state signal that closed-loop motor controllers depend upon.
+  - Related core concepts: [[Robot Perception]], [[Sensor Fusion]], [[Feedback Control]], [[Humanoid Robotics]].
+- ### Overview
+  - Proprioception gives a machine an inward-facing perceptual channel that mirrors the biological sense of body position. Encoders, inertial measurement units and force-torque sensors continuously report the state of every joint and link, and fusing these signals yields an estimate of the robot's posture and movement that is fast and robust even when cameras are occluded or lighting fails.
+  - It is modelled as a subclass of [[Robot Perception]] within the robotics domain.
+  - Proprioceptive feedback is prized in control because it is fast and largely independent of environmental conditions. Where a vision pipeline may run at tens of frames per second and fail in darkness or occlusion, joint encoders and inertial sensors report at kilohertz rates regardless of lighting, providing the tight, low-latency loop that dynamic balance and force control require.
+  - Recent learning-based controllers for legged and humanoid robots increasingly rely on proprioception as the dominant or sole observation, demonstrating robust locomotion over rough terrain using only internal state. This blind locomotion shows how much can be inferred about the world indirectly through the body's own response to contact.
+- ### Mechanisms
+  - Joint sensing: encoders and resolvers measure angular position and velocity at each actuated joint.
+  - Inertial sensing: accelerometers and gyroscopes estimate body orientation and angular rate for balance.
+  - Force and torque sensing: contact and current sensors infer interaction forces for compliant control.
+  - State estimation: sensor fusion combines proprioceptive streams into a coherent dynamic state for control.
+- ### Applications
+  - Balancing and gait control in legged and humanoid robots.
+  - Compliant, force-aware manipulation and assembly.
+  - Odometry and dead-reckoning when external localisation is unavailable.
+- ### Considerations
+  - Sensor drift, especially in inertial measurement units, accumulates over time and must be corrected by fusion or occasional exteroceptive anchoring.
+  - Calibration of encoder offsets and force-sensor biases is essential for accurate state estimation.
+  - Proprioception alone cannot localise in a global frame, so it is typically fused with exteroceptive sensing for mapping and navigation.
+- ### Relationships
+  - subClassOf:: [[Robot Perception]]
+  - requires:: [[Sensor Fusion]]
+  - requires:: [[Feedback Control]]
+  - relatedTo:: [[Robot Perception]]
+  - relatedTo:: [[Sensor Fusion]]
+  - partOf:: [[Robot Perception]]
+  - enables:: [[Feedback Control]]
+  - enables:: [[Humanoid Robotics]]
+  - supports:: [[Robotic Manipulation]]
+  - supports:: [[Humanoid Robotics]]
+  - uses:: [[Sensor Fusion]]
+  - dependsOn:: [[Sensor Calibration]]
+  - bridgesTo:: [[Robotic Manipulation]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

@@ -1,0 +1,136 @@
+public:: true
+
+# Query Vector
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:43acfa8b7c84976ae4e2328591f9183d838ad62ed44c860f82cf2fce083f20df",
+  "@type": "Page",
+  "vc:slug": "query-vector",
+  "title": "Query Vector",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0807"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Query Vector"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:query-vector",
+  "@type": "Class",
+  "label": "Query Vector",
+  "definition": "A Query Vector is a dense numerical representation of a search query produced by an embedding model, enabling similarity-based retrieval in a high-dimensional vector space. It is matched against stored document or passage embeddings using distance metrics such as cosine similarity or inner product, forming the core retrieval mechanism in semantic search and retrieval-augmented generation systems. Query vectors encode the semantic intent of a query independent of exact keyword overlap, allowing conceptually related results to be surfaced even when surface-level vocabulary differs.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "qualityScore": 0.8,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
+      {"@id": "urn:ngm:class:nearest-neighbor-search", "label": "Nearest Neighbor Search"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"},
+      {"@id": "urn:ngm:class:query-processor", "label": "Query Processor"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+    ]
+  },
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:query-vector:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:43acfa8b7c84976ae4e2328591f9183d838ad62ed44c860f82cf2fce083f20df"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Artificial Intelligence]]",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  A Query Vector is a dense numerical representation of a search query produced by an embedding model, enabling similarity-based retrieval in a high-dimensional vector space. It is matched against stored document or passage embeddings using distance metrics such as cosine similarity or inner product, forming the core retrieval mechanism in semantic search and retrieval-augmented generation systems. Query vectors encode the semantic intent of a query independent of exact keyword overlap, allowing conceptually related results to be surfaced even when surface-level vocabulary differs.
+
+- ### Relationships
+  - requires:: [[Embedding Model]], [[Vector Database]]
+  - enables:: [[Semantic Search]], [[Nearest Neighbor Search]], [[Retrieval-Augmented Generation]]
+  - uses:: [[Information Retrieval]]
+  - relatedTo:: [[Query Key Value]], [[Query Processor]], [[Retrieval Augmented Generation - RAG]], [[Natural Language Processing]]
+  - partOf:: [[Retrieval-Augmented Generation]]
+
+- ### Content
+  A query vector is generated by passing a natural-language query through an encoder model — typically a bi-encoder such as a sentence transformer — which produces a fixed-dimension floating-point vector capturing the query's semantic content. This vector is then compared against a pre-indexed corpus of document embeddings stored in a vector database, with retrieval ranked by approximate nearest-neighbour algorithms such as HNSW or IVF-PQ.
+
+  The quality of a query vector depends critically on the embedding model's domain coverage and the alignment between the query encoder and the document encoder used during indexing. Asymmetric retrieval setups (where queries and documents are encoded with different models or different pooling strategies) are common in production systems to balance speed and accuracy.
+
+  Query vectors underpin retrieval-augmented generation pipelines, where the retrieved passages are concatenated with the query and passed to a language model for answer synthesis. The separation of retrieval (query vector similarity) from generation (language model) makes RAG systems more interpretable and allows the knowledge base to be updated without retraining the language model.
+
+  Failure modes of query vector retrieval include semantic drift (the embedding model does not capture domain-specific jargon), distributional mismatch (queries differ stylistically from indexed documents), and dimensional collapse (embeddings cluster in a low-variance subspace). These issues are addressed through domain-adapted fine-tuning of the embedding model and hard-negative mining during training.
+
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

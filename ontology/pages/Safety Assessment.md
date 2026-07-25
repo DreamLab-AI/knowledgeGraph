@@ -1,0 +1,61 @@
+public:: true
+
+# Safety Assessment
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:safety-assessment",
+  "@type": "Page",
+  "vc:slug": "safety-assessment",
+  "title": "Safety Assessment",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:safety-assessment",
+  "@type": "Class",
+  "label": "Safety Assessment",
+  "definition": "Safety assessment is a systematic analytical process that identifies, evaluates, and mitigates hazards associated with a system, product, or operational process to demonstrate that residual risk is tolerable within accepted standards and regulatory frameworks. It encompasses methods such as Failure Modes and Effects Analysis (FMEA), Fault Tree Analysis (FTA), Hazard and Operability Studies (HAZOP), and probabilistic safety analysis, applied across domains including aerospace, automotive, nuclear, medical devices, and increasingly AI systems. Safety assessments form the evidentiary basis for certification against safety standards such as IEC 61508 and ISO 26262.",
+  "domain": "governance",
+  "maturity": "mature",
+  "subClassOf": [{"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:hazard-analysis", "label": "Hazard Analysis"},
+      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
+      {"@id": "urn:ngm:class:risk-assessment-methodology", "label": "Risk Assessment Methodology"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:safety-critical-systems", "label": "Safety-Critical Systems"},
+      {"@id": "urn:ngm:class:ai-risk-assessment", "label": "AI Risk Assessment"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"},
+      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"},
+      {"@id": "urn:ngm:class:safety-standard", "label": "Safety Standard"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - Safety assessment is the structured, evidence-based process by which engineers and assessors determine whether a system poses acceptable levels of risk to persons, property, and the environment throughout its operational lifecycle. It relies on [[Hazard Analysis]] to identify failure modes and their potential consequences, on [[Functional Safety]] standards to specify integrity requirements, and on [[Risk Assessment Methodology]] to quantify and prioritise residual risks. The outputs — safety cases and compliance documentation — are required for certification against standards such as [[IEC 61508]] and [[ISO 26262]] and, increasingly, for regulatory approval of [[Safety-Critical Systems]] incorporating AI.
+
+- ### Relationships
+  - Safety assessment builds upon [[Hazard Analysis]] techniques including FMEA, FTA, and HAZOP to enumerate failure modes. It employs [[Functional Safety]] frameworks to assign Safety Integrity Levels (SILs) or Automotive Safety Integrity Levels (ASILs) to system functions, determining the rigour of verification required. Compliance with [[ISO 26262]] (automotive) and [[IEC 61508]] (industrial) requires documented safety assessments as a prerequisite for product certification. The extension to AI systems is addressed through [[AI Risk Assessment]] frameworks such as SOTIF (ISO 21448) and emerging AI Act requirements under the EU regulatory regime.
+
+- ### Content
+  - Formal safety assessment methodologies originated in the nuclear power and aerospace industries in the 1950s and 1960s, where catastrophic failure consequences demanded rigorous prior analysis. Fault Tree Analysis was developed by Bell Telephone Laboratories for the Minuteman missile programme in 1961; FMEA originated in the US military (MIL-P-1629, 1949) and was codified in aerospace and automotive quality standards. These quantitative techniques enabled engineers to compute probability of failure on demand (PFD) and tolerable hazard rates for complex systems.
+
+  - A comprehensive safety assessment integrates both qualitative and quantitative methods. Qualitative HAZOP studies identify deviations from design intent by systematically applying guide words (more, less, none, reverse) to process parameters. Quantitative FTA constructs Boolean logic trees of failure events and computes top-event probabilities from component failure rate data. FMEA/FMECA analyses individual component failure modes and their system-level effects, severity, and detectability — producing a risk priority number that guides design and mitigation decisions. Safety cases — structured arguments demonstrating that safety goals are met — integrate evidence from all these analyses.
+
+  - In automotive electronics, [[ISO 26262]] mandates a safety lifecycle from concept phase through decommissioning, with safety assessment activities at each phase gate. ASIL decomposition allocates safety requirements to hardware and software components, driving diverse and redundant architectures. In aviation, DO-178C and DO-254 govern software and hardware development assurance levels. Medical device safety assessments under ISO 14971 follow a risk management process covering risk analysis, evaluation, control, and review throughout the product lifecycle.
+
+  - Between 2023 and 2025, safety assessment methodology is under intense development for AI and machine learning systems, where traditional deterministic failure mode analysis is insufficient for statistical models with complex, data-dependent behaviour. SOTIF (ISO 21448), originally developed for automated driving, addresses performance limitations and triggering conditions not covered by functional safety. The EU AI Act classifies high-risk AI applications and mandates conformity assessments including risk management, data governance, and human oversight provisions. [[AI Risk Assessment]] frameworks from NIST (AI RMF), AISI, and ISO/IEC 42001 are converging on structured safety case approaches adapted for machine learning, though standardisation remains actively contested.
+

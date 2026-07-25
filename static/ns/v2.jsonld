@@ -1,0 +1,143 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vc": "https://narrativegoldmine.com/ns/v1#",
+    "ngm": "https://narrativegoldmine.com/class/",
+    "ngmi": "https://narrativegoldmine.com/individual/",
+
+    "Class": "owl:Class",
+    "Individual": "owl:NamedIndividual",
+
+    "label": "rdfs:label",
+    "definition": "rdfs:comment",
+    "domain": "vc:sourceDomain",
+    "maturity": "vc:maturity",
+    "qualityScore": {
+      "@id": "vc:qualityScore",
+      "@type": "xsd:float"
+    },
+
+    "subClassOf": {
+      "@id": "rdfs:subClassOf",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "instanceOf": {
+      "@id": "rdf:type",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "slug": "vc:slug",
+    "title": "rdfs:label",
+    "public": "vc:public",
+
+    "wikilinks": {
+      "@id": "vc:wikilink",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "relations": {
+      "@id": "vc:relations",
+      "@context": {
+        "hasPart": {
+          "@id": "vc:hasPart",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "partOf": {
+          "@id": "vc:isPartOf",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "requires": {
+          "@id": "vc:requires",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "enables": {
+          "@id": "vc:enables",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "dependsOn": {
+          "@id": "vc:dependsOn",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "implements": {
+          "@id": "vc:implements",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "uses": {
+          "@id": "vc:uses",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "supports": {
+          "@id": "vc:supports",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "contrastsWith": {
+          "@id": "vc:contrastsWith",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "bridgesTo": {
+          "@id": "vc:bridgesTo",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "relatedTo": {
+          "@id": "skos:related",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "standardizedBy": {
+          "@id": "vc:standardizedBy",
+          "@type": "@id",
+          "@container": "@set"
+        }
+      }
+    },
+
+    "sameAs": {
+      "@id": "owl:sameAs",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "provenance": {
+      "@id": "prov:qualifiedGeneration",
+      "@context": {
+        "attributedTo": {
+          "@id": "prov:wasAttributedTo",
+          "@type": "@id"
+        },
+        "generatedAt": {
+          "@id": "prov:generatedAtTime",
+          "@type": "xsd:dateTime"
+        },
+        "inferenceRule": "vc:inferenceRule"
+      }
+    },
+
+    "legacyProperties": {
+      "@id": "vc:legacyProperty",
+      "@container": "@set",
+      "@context": {
+        "key": "vc:key",
+        "value": "vc:value"
+      }
+    }
+  }
+}

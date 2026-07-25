@@ -1,0 +1,58 @@
+{
+  "header": {
+    "title": "Phase 11 Test Ontology",
+    "iri": "http://narrativegoldmine.com/test",
+    "version": "1.0"
+  },
+  "namespace": {
+    "ai": "http://narrativegoldmine.com/ai#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "class": [
+    {
+      "id": "knowledge-management",
+      "iri": "http://narrativegoldmine.com/ai#KnowledgeManagement",
+      "label": "Knowledge Management",
+      "type": "owl:Class"
+    },
+    {
+      "id": "semantic-reasoning",
+      "iri": "http://narrativegoldmine.com/ai#SemanticReasoning",
+      "label": "Semantic Reasoning",
+      "type": "owl:Class"
+    },
+    {
+      "id": "llm-agent",
+      "iri": "http://narrativegoldmine.com/ai#LLMAgent",
+      "label": "LLM Agent",
+      "type": "owl:Class"
+    }
+  ],
+  "property": [
+    {
+      "id": "enables-capability",
+      "iri": "http://narrativegoldmine.com/ai#enablesCapability",
+      "label": "enables capability",
+      "type": "owl:ObjectProperty",
+      "domain": "knowledge-management",
+      "range": "semantic-reasoning",
+      "inverseOf": "is-enabled-by",
+      "equivalentProperty": ["supports-feature"],
+      "functional": false,
+      "symmetric": false,
+      "transitive": false
+    },
+    {
+      "id": "uses-technology",
+      "iri": "http://narrativegoldmine.com/ai#usesTechnology",
+      "label": "uses technology",
+      "type": "owl:ObjectProperty",
+      "domain": "llm-agent",
+      "range": "knowledge-management",
+      "disjointWith": ["avoids-technology"],
+      "functional": false,
+      "symmetric": false,
+      "transitive": false
+    }
+  ]
+}

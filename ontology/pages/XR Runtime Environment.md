@@ -1,0 +1,262 @@
+public:: true
+
+# XR Runtime Environment
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:5fb2d21bb62ca44c1a5d8d150a51721c6fc2cd74358f8bc37477fe774527487a",
+  "@type": "Page",
+  "vc:slug": "xr-runtime-environment",
+  "title": "XR Runtime Environment",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:metaverse",
+      "vc:label": "metaverse"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:runtime-environment",
+      "vc:label": "Runtime Environment"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-10173"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "XR Runtime Environment"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:xr-runtime-environment",
+  "@type": "Class",
+  "label": "XR Runtime Environment",
+  "definition": "The software infrastructure layer that manages extended reality hardware and provides standardized APIs for XR applications, handling device abstraction, tracking systems, rendering pipelines, input processing, and compositor services to enable cross-platform XR development.",
+  "domain": "spatial-computing",
+  "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-platform-and-environment",
+    "label": "Platform and Environment"
+  },
+  "qualityScore": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:xr-platform-runtime",
+      "label": "XR Platform Runtime"
+    },
+    {
+      "@id": "urn:ngm:class:mixed-reality-runtime",
+      "label": "Mixed Reality Runtime"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tracking-system",
+        "label": "Tracking Subsystem"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-tracking",
+        "label": "Spatial Tracking"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:w-3-c-web-xr-device-api",
+        "label": "WebXR Device API"
+      },
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:optical-tracking",
+        "label": "Optical Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ]
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:xr-runtime-environment:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:5fb2d21bb62ca44c1a5d8d150a51721c6fc2cd74358f8bc37477fe774527487a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[metaverse]]",
+      "resolved": "urn:visionflow:owl:class:metaverse",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Runtime Environment]]",
+      "resolved": "urn:visionflow:owl:class:runtime-environment",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - The software infrastructure layer that manages extended reality hardware and provides standardized APIs for XR applications, handling device abstraction, tracking systems, rendering pipelines, input processing, and compositor services to enable cross-platform XR development.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:XrRuntimeEnvironment
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Runtime Environment]]
+  - Requires [[Rendering Pipeline]]
+  - Requires [[Hardware Abstraction]]
+  - Implements [[Open Standard]]
+  - Enables [[Spatial Computing Paradigm]]
+  - Enables [[Virtual Reality]]
+  - Enables [[Augmented Reality]]
+  - Uses [[Optical Tracking]]
+  - Uses [[Middleware]]
+
+- ### Content
+
+  - ## Overview
+  - XR runtime environments abstract hardware complexity, enabling applications to run across different XR devices through standardized interfaces. OpenXR, the Khronos Group standard, provides vendor-neutral access to VR and AR platforms. WebXR enables browser-based XR experiences with Safari adding support in 2024. Runtimes manage tracking, input, and compositor services critical for immersive experiences.
+  - ## Technical Details
+  - ### Runtime Standards
+		- **OpenXR**: Khronos Group cross-platform XR API standard
+		- **WebXR Device API**: W3C specification for browser-based XR
+		- **Oculus Runtime**: Meta's proprietary Quest runtime
+		- **SteamVR**: Valve's PC VR runtime environment
+  - ### Runtime Services
+		- **Device Abstraction**: Unified API across different hardware
+		- **Tracking Services**: Position and orientation data management
+		- **Input Processing**: Controller, hand, and eye tracking handling
+		- **Compositor**: Final frame composition and lens correction
+  - ### Key Features
+		- Extension system for vendor-specific capabilities
+		- Session management for XR application lifecycle
+		- Reference space handling for tracking origins
+		- Action-based input for cross-device compatibility
+  - ## Applications
+  - Cross-platform XR application development
+  - Enterprise XR deployment management
+  - Browser-based metaverse experiences
+  - XR plugin development for game engines
+  - Research platform standardization
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,0 +1,289 @@
+public:: true
+
+# Simulation Engine
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:2164c4c18cf2b522f8e76a40c470354d381e58c697abd64745382ceb0ce9e3ed",
+  "@type": "Page",
+  "vc:slug": "simulation-engine",
+  "title": "Simulation Engine",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "MV-9141"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Simulation Engine"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:simulation-engine",
+  "@type": "Class",
+  "label": "Simulation Engine",
+  "definition": "A simulation engine is the computational core responsible for advancing synthetic world state over discrete or continuous time steps, resolving inter-object interactions, enforcing physical or logical constraints, and exposing deterministic replay and instrumentation interfaces. It abstracts heterogeneous hardware (CPU thread pools, GPU compute shaders, distributed clusters) behind a unified loop that separates physics integration, collision detection, agent behaviour evaluation, and sensor data generation into composable subsystems. Specialised variants include rigid-body and soft-body physics engines (PhysX, Bullet, Havok), behaviour-simulation engines, robotics simulators (Isaac Sim, Gazebo), and synthetic-data factories used to train and evaluate machine-learning models at scale.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:simulation-software",
+      "label": "Simulation Software"
+    }
+  ],
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:simulation-runtime",
+      "label": "Simulation Runtime"
+    },
+    {
+      "@id": "urn:ngm:class:simulation-framework",
+      "label": "Simulation Framework"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:event-loop",
+        "label": "Event Loop"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:simulation-software",
+        "label": "Simulation Software"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-execution",
+        "label": "Deterministic Execution"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle-testing",
+        "label": "Autonomous Vehicle Testing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:spatial-partitioning",
+        "label": "Spatial Partitioning"
+      },
+      {
+        "@id": "urn:ngm:class:multithreading",
+        "label": "Multithreading"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "@id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      }
+    ]
+  },
+  "quality": 0.73,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:simulation-engine:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:2164c4c18cf2b522f8e76a40c470354d381e58c697abd64745382ceb0ce9e3ed"
+  },
+  "vc:resolutions": [],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+- ### Definition
+  - A simulation engine is the computational core of any [[Simulation Software]] stack, responsible for advancing a synthetic world's state over time by resolving physics, evaluating agent behaviours, enforcing constraints, and exposing instrumented outputs. It differs from a [[Rendering Engine]] in that its primary concern is the fidelity of state evolution rather than visual presentation, though modern engines often integrate both. Key capabilities include [[Deterministic Execution]] for reproducible experiments and network synchronisation, [[Collision Detection]] via hierarchical bounding-volume trees, and massive parallelism on [[GPU Compute]] hardware. Simulation engines underpin [[Digital Twin]] deployments, [[Reinforcement Learning]] training loops, robotic validation pipelines, and large-scale [[Synthetic Data Generation]] for computer-vision model training.
+
+- ### Overview
+  - Simulation engines provide the core runtime that separates the logical world model from its visual representation, its application logic, and its networking layer.
+  - The engine owns the **simulation loop**: at each tick it integrates forces via [[Numerical Integration]] (Euler, Runge-Kutta, Verlet), detects and resolves collisions, updates agent state machines or [[Behaviour Tree]]s, fires events, and advances clocks — deterministically if seeded.
+  - Determinism is critical in two contexts:
+    - **Networked synchronisation**: distributed participants advance identical state from identical inputs without peer-to-peer correction packets.
+    - **Scientific reproducibility**: experiments can be exactly replayed to isolate variable effects.
+  - The industry distinguishes several engine families:
+    - **Physics engines** (PhysX, Bullet, Havok, ODE) — rigid-body, soft-body, fluid, and cloth simulation.
+    - **Behaviour-simulation engines** — crowd dynamics, pedestrian flow, finite state machines.
+    - **Robotics simulators** (Gazebo, Isaac Sim, MuJoCo) — high-fidelity kinematic and dynamic modelling for [[Robotics]] pipelines.
+    - **AI training environments** (Isaac Lab, Brax, dm_control, OpenAI Gym/Gymnasium) — vectorised, headless, massively parallelised loops for [[Reinforcement Learning]].
+    - **Full-stack game/simulation engines** (Unreal Engine, Unity, Godot) — integrate physics, rendering, scripting, and networking in one runtime.
+  - Cloud-hosted simulation-as-a-service scales parameter sweeps to thousands of concurrent headless instances, enabling [[Monte Carlo Methods]]-style exploration of design spaces without bespoke HPC provisioning.
+
+- ### Key Components
+  - **Simulation Loop (Game Loop / Fixed Timestep)** — the central scheduler advancing state at a fixed or variable rate; separates update frequency from render frequency.
+  - **[[Physics Engine]]** — integrates Newtonian mechanics, resolves rigid-body collisions, and optionally simulates deformables, fluids, and particles; typically runs at a higher fixed tick rate than rendering.
+  - **[[Collision Detection]]** — broad-phase [[Spatial Partitioning]] (BVH, octrees, grids) followed by narrow-phase contact manifold generation; determines which object pairs interact each tick.
+  - **[[Scene Graph]]** — hierarchical transform tree representing spatial relationships among simulation objects; drives both physics queries and optional visual output.
+  - **[[Event Loop]]** — asynchronous callback and message-dispatch system for triggers, sensor events, and inter-agent communications.
+  - **[[Agent-Based Modelling]] subsystem** — houses FSMs, [[Behaviour Tree]]s, utility AI, or neural policy networks governing autonomous entity decisions.
+  - **State serialisation and checkpointing** — save/restore snapshots enabling branching scenario analysis, rollback debugging, and distributed experiment management.
+  - **Sensor and instrumentation layer** — virtual cameras, LIDAR emulators, IMUs, and telemetry buses producing labelled output streams for [[Synthetic Data Generation]] or real-time monitoring.
+  - **Scripting and parameter API** — exposes engine internals (gravity, friction coefficients, spawn/despawn commands) for programmatic scenario variation by orchestration frameworks.
+  - **[[Deterministic Execution]] guarantees** — fixed-point arithmetic or controlled floating-point modes, canonical random-seed management, and lock-step tick ordering across threads.
+  - **[[Multithreading]] and task graph** — job-system dispatching collision, physics, and AI tasks across CPU cores; fork-join patterns minimise frame stalls.
+  - **[[GPU Compute]] offload** — parallel constraint solving, particle dynamics, and cloth simulation executed on compute shaders (CUDA, OpenCL, Vulkan Compute, Metal).
+
+- ### Applications and Use Cases
+  - **[[Autonomous Vehicle Testing]]** — high-fidelity simulators (CARLA, LGSVL, NVIDIA DRIVE Sim) run millions of synthetic driving scenarios, including rare edge cases impractical to test on public roads.
+  - **[[Robotics]] development** — MuJoCo, Isaac Sim, and Gazebo let engineers train manipulation policies, validate kinematics, and stress-test control loops before hardware deployment.
+  - **[[Reinforcement Learning]] training** — vectorised environments (Brax, Isaac Lab) run thousands of headless agent instances in parallel on a single GPU cluster, compressing training from months to hours.
+  - **[[Digital Twin]] operations** — industrial plants, smart cities, and data-centre floor plans maintain live simulation mirrors updated from IoT sensor streams, enabling predictive maintenance and what-if analysis.
+  - **[[Synthetic Data Generation]]** for computer vision — engines render domain-randomised scenes (varied lighting, textures, camera poses) to produce labelled training images at scale, bypassing costly real-world annotation.
+  - **Aerospace and defence** — flight simulators, battlefield simulation, and satellite orbital mechanics modelling leverage deterministic physics engines certified to DO-178C or equivalent standards.
+  - **Crowd and pedestrian simulation** — urban planners use agent-based engines (MassMotion, Legion) to evaluate evacuation routes, retail layouts, and transit hub designs.
+  - **[[Finite Element Analysis]]** integration — structural engineers couple simulation engines with FEA solvers (ANSYS, Abaqus) for co-simulation of mechanical assemblies under load.
+  - **Game development** — [[Game Engine]]s (Unity, Unreal, Godot) embed simulation engines as a subsystem; real-time physics fidelity is balanced against frame-budget constraints.
+  - **[[Metaverse Platform]]s and [[Virtual Reality]]** — persistent multi-user virtual worlds require shared simulation engines to synchronise environment state across geographically distributed clients.
+
+- ### Relationships
+  - hasPart:: [[Physics Engine]]
+  - hasPart:: [[Collision Detection]]
+  - hasPart:: [[Scene Graph]]
+  - hasPart:: [[Event Loop]]
+  - partOf:: [[Simulation Software]]
+  - partOf:: [[Digital Twin Platform]]
+  - requires:: [[GPU Compute]]
+  - requires:: [[Real-time Processing]]
+  - requires:: [[Deterministic Execution]]
+  - enables:: [[Digital Twin]]
+  - enables:: [[Synthetic Data Generation]]
+  - enables:: [[Reinforcement Learning]]
+  - enables:: [[Autonomous Vehicle Testing]]
+  - uses:: [[Spatial Partitioning]]
+  - uses:: [[Multithreading]]
+  - uses:: [[Numerical Integration]]
+  - supports:: [[Machine Learning Discipline]]
+  - supports:: [[Robotics]]
+  - supports:: [[Agent-Based Modelling]]
+  - contrastsWith:: [[Rendering Engine]]
+  - contrastsWith:: [[Game Engine]]
+  - bridgesTo:: [[Virtual Reality]]
+  - bridgesTo:: [[Metaverse Platform]]
+  - relatedTo:: [[Finite Element Analysis]]
+  - relatedTo:: [[Monte Carlo Methods]]
+  - relatedTo:: [[Behaviour Tree]]
+
+- ### Standards and Context
+  - **IEEE 1516 (HLA — High Level Architecture)** — the principal federation standard for interoperating heterogeneous simulation systems; defines the Runtime Infrastructure (RTI), Federation Object Model (FOM), and time-management services for distributed simulation.
+  - **SISO (Simulation Interoperability Standards Organisation)** — maintains HLA profiles, DIS (Distributed Interactive Simulation, IEEE 1278), and the TENA middleware standard used in US DoD range testing.
+  - **OpenUSD (Universal Scene Description)** — increasingly used as a neutral scene-exchange format between simulation engines, enabling asset pipelines from authoring tools into physics runtimes without proprietary conversion.
+  - **Khronos OpenXR** — standardises the interface between simulation/game engines and XR hardware, relevant when simulation engines drive [[Virtual Reality]] or [[Augmented Reality]] outputs.
+  - **ROS 2 (Robot Operating System 2)** — the de facto middleware stack in the [[Robotics]] domain; simulation engines (Gazebo/Ignition) communicate with ROS 2 nodes via DDS, providing hardware-abstraction for sensor and actuator interfaces.
+  - **FMI/FMU (Functional Mock-up Interface)** — an IEC standard for co-simulation between heterogeneous physics models (e.g., coupling a fluid-dynamics FMU into a rigid-body engine) widely used in automotive and industrial simulation.
+  - **OpenAI Gymnasium (formerly Gym)** — the de facto API contract between AI training code and simulation environments; most modern robotics and RL simulation engines implement or wrap this interface.
+
+- ### Provenance
+  - sources:: IEEE 1516 HLA Standard; SISO Standards Catalogue; NVIDIA Isaac Sim Documentation; MuJoCo Physics Documentation; OpenAI Gymnasium; ROS 2 Documentation; Unreal Engine Physics Documentation; Unity Physics Manual
+  - updated:: 2026-06-13

@@ -1,0 +1,140 @@
+public:: true
+
+# Social Network Analysis
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:social-network-analysis",
+  "@type": "Page",
+  "vc:slug": "social-network-analysis",
+  "title": "Social Network Analysis",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:social-network-analysis",
+  "@type": "Class",
+  "label": "Social Network Analysis",
+  "definition": "Social network analysis (SNA) is a methodology for studying social structures through graph-theoretic and statistical techniques applied to networks of actors (nodes) and their relationships (edges). It measures structural properties such as centrality, clustering, path length, and community structure to identify influential actors, information bottlenecks, and emergent communities within social systems.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": {
+    "@id": "urn:ngm:class:network-analysis",
+    "label": "Network Analysis"
+  },
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "@id": "urn:ngm:class:adjacency-matrix",
+        "label": "Adjacency Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "@id": "urn:ngm:class:influence-maximisation",
+        "label": "Influence Maximisation"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:network-science",
+        "label": "Network Science"
+      },
+      {
+        "@id": "urn:ngm:class:social-network-graph",
+        "label": "Social Network Graph"
+      },
+      {
+        "@id": "urn:ngm:class:link-prediction",
+        "label": "Link Prediction"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:small-world-network",
+        "label": "Small-World Network"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Graph Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:epidemiological-modelling",
+        "label": "Epidemiological Modelling"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:social-graph-analysis",
+      "label": "Social Graph Analysis"
+    },
+    {
+      "@id": "urn:ngm:class:network-sociology",
+      "label": "Network Sociology"
+    }
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
+}
+```
+
+- ### Definition
+  - Social network analysis is a structured methodology drawing on [[Graph Theory]] and [[Network Science]] to map and measure the relational structure of social systems, identifying key nodes, subgraphs, and structural patterns that determine how information, influence, or resources flow through the network.
+
+- ### Relationships
+  - SNA is a specialisation of [[Network Analysis]] applied to social actors, using [[Graph Theory]] as its mathematical foundation. [[Community Detection]] algorithms such as Louvain and label propagation are applied to [[Social Network Graph]] data to identify cohesive subgroups. The field is closely related to [[Network Science]] and its power-law degree distribution findings about scale-free social networks.
+
+- ### Content
+  - Social network analysis has roots in 1930s sociometry developed by Jacob Moreno, who used sociograms (hand-drawn graphs of interpersonal relationships) to study group dynamics. The field developed formal mathematical foundations in the 1950s-1970s through the work of sociologists Harrison White, Stanley Milgram (six degrees of separation, 1967), and Mark Granovetter (strength of weak ties, 1973). Graph-theoretic measures such as betweenness centrality (Linton Freeman, 1977) became standard tools. The internet age provided unprecedented datasets, and the discovery of small-world networks (Watts and Strogatz, 1998) and scale-free networks (Barabasi and Albert, 1999) transformed SNA into a quantitative science.
+
+  - SNA computes structural metrics on a graph G=(V,E). Degree centrality counts a node's direct connections; betweenness centrality measures how often a node lies on shortest paths between other node pairs, identifying brokers and bottlenecks; eigenvector centrality weights connections by the importance of neighbours (the foundation of PageRank). Clustering coefficient measures local density of triangles. Path length statistics reveal small-world properties. Community detection partitions nodes into densely connected subgraphs using modularity optimisation (Louvain algorithm), spectral methods, or stochastic block models. Temporal network analysis tracks how these structures evolve over time.
+
+  - SNA is applied in public health to trace disease propagation and identify super-spreaders; in security to map terrorist and criminal networks; in marketing to identify influencers for viral campaign design; in organisational management to reveal informal power structures hidden from org charts; and in political science to study legislative co-sponsorship and polarisation. In AI, graph neural networks (GNNs) extend SNA by learning node and graph representations that incorporate both network topology and node attributes, enabling tasks like link prediction, node classification, and anomaly detection at scale.
+
+  - In 2024-2025, SNA is experiencing rapid integration with large language models through graph-augmented retrieval systems that use network structure to improve knowledge graph question-answering. Platform-level analysis of X (Twitter), TikTok, and Bluesky is being conducted at scale using SNA to study information diffusion, coordinated inauthentic behaviour (bot networks), and echo chamber formation. Regulatory interest in network effects and market concentration is driving SNA-based market structure analysis in antitrust investigations. Federated graph learning approaches allow SNA on privacy-sensitive social data without centralising raw relationships.

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WASM Simple Test</title>
+    <style>
+        body { font-family: monospace; padding: 20px; background: #1a1a1a; color: #0f0; }
+        .pass { color: #0f0; }
+        .fail { color: #f00; }
+        pre { background: #000; padding: 10px; border: 1px solid #0f0; }
+    </style>
+</head>
+<body>
+    <h1>WASM Module Test</h1>
+    <div id="output"></div>
+
+    <script type="module">
+        const output = document.getElementById('output');
+
+        function log(msg, success = true) {
+            const div = document.createElement('div');
+            div.className = success ? 'pass' : 'fail';
+            div.textContent = msg;
+            output.appendChild(div);
+            console.log(msg);
+        }
+
+        try {
+            log('Loading WASM module...');
+            const { default: init, WasmForceSimulation } = await import('./pkg/webvowl_wasm.js');
+
+            log('✓ WASM module imported');
+
+            await init();
+            log('✓ WASM initialized');
+
+            // Test 1: Create simulation with 10 nodes
+            const nodes = 10;
+            const positions = new Float32Array(nodes * 3);
+            for (let i = 0; i < nodes; i++) {
+                positions[i * 3] = Math.random() * 100;
+                positions[i * 3 + 1] = Math.random() * 100;
+                positions[i * 3 + 2] = Math.random() * 100;
+            }
+
+            const links = new Uint32Array([
+                0, 1,  1, 2,  2, 3,  3, 4,  4, 5,
+                5, 6,  6, 7,  7, 8,  8, 9
+            ]);
+
+            log('Creating simulation with 10 nodes, 9 links...');
+            const sim = new WasmForceSimulation(positions, links);
+            log('✓ Simulation created');
+
+            // Test 2: Run simulation
+            log('Running 100 iterations...');
+            const start = performance.now();
+            for (let i = 0; i < 100; i++) {
+                sim.tick();
+            }
+            const elapsed = performance.now() - start;
+            log(`✓ 100 iterations in ${elapsed.toFixed(2)}ms (${(100000/elapsed).toFixed(0)} iterations/sec)`);
+
+            // Test 3: Get positions
+            const newPositions = sim.get_positions();
+            log(`✓ Retrieved positions: ${newPositions.length} values`);
+
+            // Test 4: Large graph (100 nodes)
+            log('\nTesting 100 nodes...');
+            const largePositions = new Float32Array(100 * 3);
+            const largeLinks = new Uint32Array(150 * 2);
+            for (let i = 0; i < 150; i++) {
+                largeLinks[i * 2] = Math.floor(Math.random() * 100);
+                largeLinks[i * 2 + 1] = Math.floor(Math.random() * 100);
+            }
+
+            const largeSim = new WasmForceSimulation(largePositions, largeLinks);
+            const start2 = performance.now();
+            for (let i = 0; i < 100; i++) {
+                largeSim.tick();
+            }
+            const elapsed2 = performance.now() - start2;
+            log(`✓ 100 nodes: ${elapsed2.toFixed(2)}ms for 100 iterations (${(100000/elapsed2).toFixed(0)} iter/sec)`);
+
+            // Test 5: Production scale (1,700 nodes)
+            log('\nTesting 1,700 nodes (production scale)...');
+            const prodPositions = new Float32Array(1700 * 3);
+            const prodLinks = new Uint32Array(2550 * 2); // 1.5x links
+            for (let i = 0; i < 2550; i++) {
+                prodLinks[i * 2] = Math.floor(Math.random() * 1700);
+                prodLinks[i * 2 + 1] = Math.floor(Math.random() * 1700);
+            }
+
+            const prodSim = new WasmForceSimulation(prodPositions, prodLinks);
+            const start3 = performance.now();
+            for (let i = 0; i < 100; i++) {
+                prodSim.tick();
+            }
+            const elapsed3 = performance.now() - start3;
+            const ipsProduction = (100000/elapsed3).toFixed(0);
+            log(`✓ 1,700 nodes: ${elapsed3.toFixed(2)}ms for 100 iterations (${ipsProduction} iter/sec)`);
+
+            // Summary
+            log('\n=== SUMMARY ===');
+            log(`✓ All tests passed`);
+            log(`✓ Production scale: ${ipsProduction} iterations/second`);
+            log(`✓ Estimated FPS at 1,700 nodes: ${Math.min(60, Math.floor(ipsProduction/100))} FPS`);
+
+            // Expose results
+            window.testResults = {
+                smallGraph: { elapsed, iterPerSec: 100000/elapsed },
+                mediumGraph: { elapsed: elapsed2, iterPerSec: 100000/elapsed2 },
+                productionGraph: { elapsed: elapsed3, iterPerSec: 100000/elapsed3 }
+            };
+
+        } catch (err) {
+            log(`✗ Error: ${err.message}`, false);
+            console.error(err);
+        }
+    </script>
+</body>
+</html>

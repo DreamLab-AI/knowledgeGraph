@@ -1,0 +1,1448 @@
+public:: true
+
+# Hyper personalisation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:f5243c9721ae01ab65f6b1df41d2ace9296fa51b8c6866cc53c7057458b3c14a",
+  "@type": "Page",
+  "vc:slug": "hyper-personalisation",
+  "title": "Hyper personalisation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:a-b-testing-framework",
+      "vc:label": "A/B Testing Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:acquisition-function",
+      "vc:label": "Acquisition Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-recommendation",
+      "vc:label": "Batch Recommendation"
+    },
+    {
+      "@id": "urn:visionflow:linked:behavioural-ai",
+      "vc:label": "Behavioural AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaborative-filtering",
+      "vc:label": "Collaborative Filtering"
+    },
+    {
+      "@id": "urn:visionflow:linked:consent-management-platform",
+      "vc:label": "Consent Management Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-based-filtering",
+      "vc:label": "Content-Based Filtering"
+    },
+    {
+      "@id": "urn:visionflow:linked:contextual-bandits",
+      "vc:label": "Contextual Bandits"
+    },
+    {
+      "@id": "urn:visionflow:linked:customer-data-platform",
+      "vc:label": "Customer Data Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:customer-experience-management",
+      "vc:label": "Customer Experience Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:customer-lifetime-value-optimisation",
+      "vc:label": "Customer Lifetime Value Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-intelligence-domain",
+      "vc:label": "DataIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-pricing",
+      "vc:label": "Dynamic Pricing"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-pricing-engine",
+      "vc:label": "Dynamic Pricing Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedding-model",
+      "vc:label": "Embedding Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:embeddings",
+      "vc:label": "Embeddings"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-services-personalisation",
+      "vc:label": "Financial Services Personalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr-compliance",
+      "vc:label": "GDPR Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:generic-content-delivery",
+      "vc:label": "Generic Content Delivery"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-networks",
+      "vc:label": "Graph Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:healthcare-personalisation",
+      "vc:label": "Healthcare Personalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hybrid-recommender",
+      "vc:label": "Hybrid Recommender"
+    },
+    {
+      "@id": "urn:visionflow:linked:iab-open-rtb-protocol",
+      "vc:label": "IAB OpenRTB Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:ico-ai-guidance",
+      "vc:label": "ICO AI Guidance"
+    },
+    {
+      "@id": "urn:visionflow:linked:identity-resolution",
+      "vc:label": "Identity Resolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-layer",
+      "vc:label": "InferenceLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:marketing-technology-domain",
+      "vc:label": "MarketingTechnologyDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:matrix-factorisation",
+      "vc:label": "Matrix Factorisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:media-streaming",
+      "vc:label": "Media Streaming"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-armed-bandit",
+      "vc:label": "Multi-Armed Bandit"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-collaborative-filtering",
+      "vc:label": "Neural Collaborative Filtering"
+    },
+    {
+      "@id": "urn:visionflow:linked:next-best-action",
+      "vc:label": "Next Best Action"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalised-content-delivery",
+      "vc:label": "Personalised Content Delivery"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-preserving-ml",
+      "vc:label": "Privacy-Preserving ML"
+    },
+    {
+      "@id": "urn:visionflow:linked:programmatic-advertising",
+      "vc:label": "Programmatic Advertising"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-data-pipeline",
+      "vc:label": "Real-Time Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-inference-engine",
+      "vc:label": "Real-Time Inference Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommender-systems",
+      "vc:label": "Recommender Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:retail-ai",
+      "vc:label": "Retail AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:rules-based-personalisation",
+      "vc:label": "Rules-Based Personalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:segment-based-marketing",
+      "vc:label": "Segment-Based Marketing"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-sequential-recommendation",
+      "vc:label": "Transformer Sequential Recommendation"
+    },
+    {
+      "@id": "urn:visionflow:linked:uk-data-use-and-access-act-2025",
+      "vc:label": "UK Data (Use and Access) Act 2025"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-behaviour-data",
+      "vc:label": "User Behaviour Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-databases",
+      "vc:label": "Vector Databases"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agents",
+      "vc:label": "Agents"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-adoption",
+      "vc:label": "AI Adoption"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-technique",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-risks",
+      "vc:label": "AI Risks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
+      "vc:label": "Algorithmic Bias and Variance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
+      "vc:label": "Bias in Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:chatbots",
+      "vc:label": "Chatbots"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:contrastive-learning",
+      "vc:label": "Contrastive Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conversational-ai",
+      "vc:label": "Conversational AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "Data Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
+      "vc:label": "Deepfakes and fraudulent content"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:differential-privacy",
+      "vc:label": "Differential Privacy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-marketing",
+      "vc:label": "Digital Marketing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-society-surveillance",
+      "vc:label": "Digital Society Surveillance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:e-commerce",
+      "vc:label": "E-Commerce"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feature-store",
+      "vc:label": "Feature Store"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:identity-graph",
+      "vc:label": "Identity Graph"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-personalization",
+      "vc:label": "Predictive Personalization"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-4217"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Hyper personalisation"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hyper-personalisation",
+  "@type": "Class",
+  "label": "Hyper personalisation",
+  "definition": "Hyper personalisation is the application of real-time behavioural signals, rich first-party identity data, and AI/ML inference — spanning collaborative filtering, content-based filtering, hybrid ensemble models, transformer-based sequential recommendation, reinforcement-learning-from-feedback loo...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:acquisition-function",
+        "label": "Acquisition Function"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-filtering",
+        "label": "Collaborative Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:content-based-filtering",
+        "label": "Content-Based Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-pricing",
+        "label": "Dynamic Pricing Engine"
+      },
+      {
+        "@id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-inference-engine",
+        "label": "Real-Time Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:identity-graph",
+        "label": "Identity Graph"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-pipeline",
+        "label": "Real-Time Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:user-behaviour-data",
+        "label": "User Behaviour Data"
+      },
+      {
+        "@id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dynamic-pricing",
+        "label": "Dynamic Pricing"
+      },
+      {
+        "@id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-factorisation",
+        "label": "Matrix Factorisation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:multi-armed-bandit",
+        "label": "Multi-Armed Bandit"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "@id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      },
+      {
+        "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "@id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:ico-ai-guidance",
+        "label": "ICO AI Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:customer-experience-management",
+        "label": "Customer Experience Management"
+      }
+    ]
+  },
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:hyper-personalisation:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:f5243c9721ae01ab65f6b1df41d2ace9296fa51b8c6866cc53c7057458b3c14a"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[A/B Testing Framework]]",
+      "resolved": "urn:visionflow:linked:a-b-testing-framework",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Acquisition Function]]",
+      "resolved": "urn:visionflow:linked:acquisition-function",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Batch Recommendation]]",
+      "resolved": "urn:visionflow:linked:batch-recommendation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Behavioural AI]]",
+      "resolved": "urn:visionflow:linked:behavioural-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Collaborative Filtering]]",
+      "resolved": "urn:visionflow:linked:collaborative-filtering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Consent Management Platform]]",
+      "resolved": "urn:visionflow:linked:consent-management-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Content-Based Filtering]]",
+      "resolved": "urn:visionflow:linked:content-based-filtering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Contextual Bandits]]",
+      "resolved": "urn:visionflow:linked:contextual-bandits",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Customer Data Platform]]",
+      "resolved": "urn:visionflow:linked:customer-data-platform",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Customer Experience Management]]",
+      "resolved": "urn:visionflow:linked:customer-experience-management",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Customer Lifetime Value Optimisation]]",
+      "resolved": "urn:visionflow:linked:customer-lifetime-value-optimisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[DataIntelligenceDomain]]",
+      "resolved": "urn:visionflow:linked:data-intelligence-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dynamic Pricing]]",
+      "resolved": "urn:visionflow:linked:dynamic-pricing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Dynamic Pricing Engine]]",
+      "resolved": "urn:visionflow:linked:dynamic-pricing-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Embedding Model]]",
+      "resolved": "urn:visionflow:linked:embedding-model",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Embeddings]]",
+      "resolved": "urn:visionflow:linked:embeddings",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Financial Services Personalisation]]",
+      "resolved": "urn:visionflow:linked:financial-services-personalisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR]]",
+      "resolved": "urn:visionflow:linked:gdpr",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[GDPR Compliance]]",
+      "resolved": "urn:visionflow:linked:gdpr-compliance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Generic Content Delivery]]",
+      "resolved": "urn:visionflow:linked:generic-content-delivery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Graph Neural Networks]]",
+      "resolved": "urn:visionflow:linked:graph-neural-networks",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Healthcare Personalisation]]",
+      "resolved": "urn:visionflow:linked:healthcare-personalisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Hybrid Recommender]]",
+      "resolved": "urn:visionflow:linked:hybrid-recommender",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[IAB OpenRTB Protocol]]",
+      "resolved": "urn:visionflow:linked:iab-open-rtb-protocol",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[ICO AI Guidance]]",
+      "resolved": "urn:visionflow:linked:ico-ai-guidance",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Identity Resolution]]",
+      "resolved": "urn:visionflow:linked:identity-resolution",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[InferenceLayer]]",
+      "resolved": "urn:visionflow:linked:inference-layer",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[MarketingTechnologyDomain]]",
+      "resolved": "urn:visionflow:linked:marketing-technology-domain",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Matrix Factorisation]]",
+      "resolved": "urn:visionflow:linked:matrix-factorisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Media Streaming]]",
+      "resolved": "urn:visionflow:linked:media-streaming",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Multi-Armed Bandit]]",
+      "resolved": "urn:visionflow:linked:multi-armed-bandit",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Neural Collaborative Filtering]]",
+      "resolved": "urn:visionflow:linked:neural-collaborative-filtering",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Next Best Action]]",
+      "resolved": "urn:visionflow:linked:next-best-action",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Personalised Content Delivery]]",
+      "resolved": "urn:visionflow:linked:personalised-content-delivery",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Privacy-Preserving ML]]",
+      "resolved": "urn:visionflow:linked:privacy-preserving-ml",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Programmatic Advertising]]",
+      "resolved": "urn:visionflow:linked:programmatic-advertising",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-Time Data Pipeline]]",
+      "resolved": "urn:visionflow:linked:real-time-data-pipeline",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Real-Time Inference Engine]]",
+      "resolved": "urn:visionflow:linked:real-time-inference-engine",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Recommender Systems]]",
+      "resolved": "urn:visionflow:linked:recommender-systems",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Retail AI]]",
+      "resolved": "urn:visionflow:linked:retail-ai",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Rules-Based Personalisation]]",
+      "resolved": "urn:visionflow:linked:rules-based-personalisation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Segment-Based Marketing]]",
+      "resolved": "urn:visionflow:linked:segment-based-marketing",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Transformer Sequential Recommendation]]",
+      "resolved": "urn:visionflow:linked:transformer-sequential-recommendation",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[UK Data (Use and Access) Act 2025]]",
+      "resolved": "urn:visionflow:linked:uk-data-use-and-access-act-2025",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[User Behaviour Data]]",
+      "resolved": "urn:visionflow:linked:user-behaviour-data",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Vector Databases]]",
+      "resolved": "urn:visionflow:linked:vector-databases",
+      "kind": "StubLink"
+    },
+    {
+      "raw": "[[Agents]]",
+      "resolved": "urn:visionflow:owl:class:agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Adoption]]",
+      "resolved": "urn:visionflow:owl:class:ai-adoption",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI-GroundedDomain]]",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[AI Risks]]",
+      "resolved": "urn:visionflow:owl:class:ai-risks",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Algorithmic Bias and Variance]]",
+      "resolved": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ApplicationLayer]]",
+      "resolved": "urn:visionflow:owl:class:application-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Attention Mechanism]]",
+      "resolved": "urn:visionflow:owl:class:attention-mechanism",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Bias in Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:bias-in-large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Chatbots]]",
+      "resolved": "urn:visionflow:owl:class:chatbots",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Contrastive Learning]]",
+      "resolved": "urn:visionflow:owl:class:contrastive-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Conversational AI]]",
+      "resolved": "urn:visionflow:owl:class:conversational-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Data Layer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[DataLayer]]",
+      "resolved": "urn:visionflow:owl:class:data-layer",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Deepfakes and fraudulent content]]",
+      "resolved": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Differential Privacy]]",
+      "resolved": "urn:visionflow:owl:class:differential-privacy",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Marketing]]",
+      "resolved": "urn:visionflow:owl:class:digital-marketing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Digital Society Surveillance]]",
+      "resolved": "urn:visionflow:owl:class:digital-society-surveillance",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[E-Commerce]]",
+      "resolved": "urn:visionflow:owl:class:e-commerce",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[EU AI Act Regulatory Instrument]]",
+      "resolved": "urn:visionflow:owl:class:eu-ai-act",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Feature Engineering]]",
+      "resolved": "urn:visionflow:owl:class:feature-engineering",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Feature Store]]",
+      "resolved": "urn:visionflow:owl:class:feature-store",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Federated Learning]]",
+      "resolved": "urn:visionflow:owl:class:federated-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
+      "resolved": "urn:visionflow:owl:class:foundation-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Identity Graph]]",
+      "resolved": "urn:visionflow:owl:class:identity-graph",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Large Language Models]]",
+      "resolved": "urn:visionflow:owl:class:large-language-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Machine Learning Discipline]]",
+      "resolved": "urn:visionflow:owl:class:machine-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Predictive Personalization]]",
+      "resolved": "urn:visionflow:owl:class:predictive-personalization",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Reinforcement Learning from Human Feedback]]",
+      "resolved": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - Hyper personalisation is the application of real-time behavioural signals, rich first-party identity data, and AI/ML inference — spanning collaborative filtering, content-based filtering, hybrid ensemble models, transformer-based sequential recommendation, reinforcement-learning-from-feedback loops, and large language model (LLM) contextual generation — to construct and continuously refine an individual-level model of each user's preferences, intent, context, and willingness-to-pay, then use that model to dynamically adapt every customer touchpoint (content surfaces, product listings, email cadence, pricing, advertising creative, and conversational interfaces) at sub-second latency across web, mobile, email, in-store kiosk, and chatbot channels. Distinguished from simple personalisation (name-insertion, segment-level targeting) and from narrow recommender systems by four features: (1) individual-resolution identity graphs ingested via real-time Customer Data Platforms (CDPs) such as Salesforce Data Cloud and Adobe Real-Time CDP rather than segment cohorts; (2) multi-modal signal fusion combining clickstream, purchase history, location, device telemetry, social graph, and zero-party survey data; (3) millisecond inference pipelines that update the individual model continuously rather than in overnight batch; and (4) generative output that synthesises novel, never-before-shown content variants rather than selecting from a pre-built catalogue. The recommendation engine market reached USD 5.39 billion in 2024 and is projected to reach USD 7.34 billion in 2025 (CAGR ~36%), driven by Netflix 230-million-subscriber recommendation infrastructure, Spotify 600-million-user AI personalisation stack, Amazon real-time dynamic pricing updating millions of SKUs every 10 minutes, and the programmatic advertising RTB ecosystem processing 300 billion+ ad auctions daily. McKinsey research demonstrates that firms treating personalisation as a strategic core (rather than peripheral marketing) achieve up to 40% higher revenue growth and are 23 times more likely to outperform competitors; Salesforce State of the Connected Customer (2024) finds 73% of customers expect improving personalisation as technology advances, yet 61% say most companies still treat them as a number, evidencing a persistent expectation-delivery gap. Privacy tensions are acute: the EU AI Act (in force 1 August 2024, obligations rolling through 2 August 2026) imposes transparency requirements on AI systems used in recommender contexts; UK ICO guidance on AI and data protection was refreshed in 2025 under the Data (Use and Access) Act; and Forrester predicts over half of all AI-driven personalisation efforts will fail ROI targets unless organisations move beyond surface-level tactics to unified, privacy-respecting hyper-personalisation architectures.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:HyperPersonalisation
+  - owl-role:: ApplicationDomain
+  - owl-inferred:: ai:MachineLearning, ai:RecommenderSystems, ai:CustomerExperienceAI, ai:BehaviouralIntelligence
+  - belongs-to-domain:: [[AI-GroundedDomain]], [[MarketingTechnologyDomain]], [[DataIntelligenceDomain]]
+  - implemented-in-layer:: [[ApplicationLayer]], [[DataLayer]], [[InferenceLayer]]
+
+- ### Relationships
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Recommender Systems]], [[Predictive Personalization]], [[Behavioural AI]], [[Customer Experience Management]]
+  - has-part:: [[Collaborative Filtering]], [[Content-Based Filtering]], [[Hybrid Recommender]], [[Customer Data Platform]], [[Identity Graph]], [[Real-Time Inference Engine]], [[A/B Testing Framework]], [[Acquisition Function]], [[Dynamic Pricing Engine]], [[Programmatic Advertising]]
+  - requires:: [[User Behaviour Data]], [[Identity Resolution]], [[Real-Time Data Pipeline]], [[Feature Store]], [[Embedding Model]], [[Consent Management Platform]]
+  - enables:: [[Dynamic Pricing]], [[Personalised Content Delivery]], [[Programmatic Advertising]], [[Conversational AI]], [[Customer Lifetime Value Optimisation]], [[Next Best Action]]
+  - implements:: [[Matrix Factorisation]], [[Neural Collaborative Filtering]], [[Transformer Sequential Recommendation]], [[Reinforcement Learning from Human Feedback]], [[Contextual Bandits]], [[Graph Neural Networks]]
+  - depends-on:: [[Large-Scale Pretrained Foundation Model]], [[Large Language Models]], [[Vector Databases]], [[Feature Engineering]], [[Privacy-Preserving ML]], [[GDPR Compliance]]
+  - supports:: [[Digital Marketing]], [[E-Commerce]], [[Media Streaming]], [[Retail AI]], [[Financial Services Personalisation]], [[Healthcare Personalisation]]
+  - uses:: [[Embeddings]], [[Attention Mechanism]], [[Contrastive Learning]], [[Multi-Armed Bandit]], [[Federated Learning]], [[Differential Privacy]]
+  - contrasts-with:: [[Segment-Based Marketing]], [[Rules-Based Personalisation]], [[Batch Recommendation]], [[Generic Content Delivery]]
+  - related-to:: [[AI Adoption]], [[AI Risks]], [[Algorithmic Bias and Variance]], [[Bias in Large Language Models]], [[EU AI Act Regulatory Instrument]], [[Deepfakes and fraudulent content]], [[Data Layer]], [[Large-Scale Pretrained Foundation Model]], [[Agents]], [[Chatbots]], [[Digital Society Surveillance]]
+  - standardized-by:: [[EU AI Act Regulatory Instrument]], [[GDPR]], [[UK Data (Use and Access) Act 2025]], [[ICO AI Guidance]], [[IAB OpenRTB Protocol]]
+
+- ### Content
+
+  ## Compositional Relationships (Components)
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:hasPart ai:CollaborativeFilteringEngine))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:hasPart ai:ContentBasedFilteringEngine))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:hasPart ai:HybridRecommender))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:hasPart ai:CustomerDataPlatform))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:hasPart ai:IdentityGraph))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:hasPart ai:RealTimeInferenceEngine))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:hasPart ai:DynamicPricingEngine))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:hasPart ai:ConsentManagementPlatform))
+
+	    ## Dependency Relationships
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:requires ai:UserBehaviourData))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:requires ai:IdentityResolution))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:requires ai:RealTimeDataPipeline))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:requires ai:FeatureStore))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:requires ai:EmbeddingModel))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:dependsOn ai:FoundationModels))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:dependsOn ai:VectorDatabases))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:dependsOn ai:PrivacyPreservingML))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:dependsOn ai:GDPRCompliance))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:dependsOn ai:FeatureEngineering))
+
+	    ## Capability Relationships
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:enables ai:DynamicPricing))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:enables ai:PersonalisedContentDelivery))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:enables ai:ProgrammaticAdvertising))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:enables ai:ConversationalAI))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:enables ai:CustomerLifetimeValueOptimisation))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:enables ai:NextBestAction))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:supports ai:ECommerce))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:supports ai:MediaStreaming))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:supports ai:RetailAI))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:supports ai:FinancialServicesPersonalisation))
+
+	    ## Implementation Relationships
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:implements ai:MatrixFactorisation))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:implements ai:NeuralCollaborativeFiltering))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:implements ai:TransformerSequentialRecommendation))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:implements ai:ReinforcementLearningFromHumanFeedback))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:implements ai:ContextualBandits))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:implements ai:GraphNeuralNetworks))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:uses ai:Embeddings))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:uses ai:AttentionMechanism))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:uses ai:ContrastiveLearning))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:uses ai:FederatedLearning))
+
+	    ## Reduction Relationships
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:reduces ai:CustomerChurnRate))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:reduces ai:ContentDiscoveryFriction))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:reduces ai:MarketingWaste))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:reduces ai:ColdStartProblem))
+	    SubClassOf(ai:HyperPersonalisation
+	      ObjectSomeValuesFrom(ai:reduces ai:InformationOverload))
+
+	    ## Data Properties (Characteristics)
+	    DataPropertyAssertion(ai:hasIdentifier ai:HyperPersonalisation "AI-4217"^^xsd:string)
+	    DataPropertyAssertion(ai:authorityScore ai:HyperPersonalisation "0.87"^^xsd:decimal)
+	    DataPropertyAssertion(ai:revenueGrowthLift ai:HyperPersonalisation "0.40"^^xsd:decimal)
+	    DataPropertyAssertion(ai:recommendationEngineMarket2024USD ai:HyperPersonalisation "5390000000"^^xsd:integer)
+	    DataPropertyAssertion(ai:netflixSubscribers ai:HyperPersonalisation "230000000"^^xsd:integer)
+	    DataPropertyAssertion(ai:spotifyUsersPersonalised ai:HyperPersonalisation "600000000"^^xsd:integer)
+	    DataPropertyAssertion(ai:contentWatchedViaRecommendation ai:HyperPersonalisation "0.80"^^xsd:decimal)
+
+	    ## Property Constraints
+	    SubClassOf(ai:HyperPersonalisation
+	      DataAllValuesFrom(ai:requiresConsentManagement xsd:boolean))
+	    SubClassOf(ai:HyperPersonalisation
+	      DataSomeValuesFrom(ai:filteringApproach xsd:string))
+	    SubClassOf(ai:HyperPersonalisation
+	      DataMinCardinality(1 ai:hasIdentitySignalType xsd:string))
+	    SubClassOf(ai:HyperPersonalisation
+	      DataMinCardinality(1 ai:hasInferenceLatencyTarget xsd:integer))
+
+	    ## Annotations
+	    AnnotationAssertion(rdfs:label ai:HyperPersonalisation "Hyper personalisation"@en)
+	    AnnotationAssertion(rdfs:comment ai:HyperPersonalisation "AI-driven system constructing individual-level user models from real-time behavioural, identity and contextual signals to adapt all customer touchpoints dynamically, implemented via collaborative/content-based/hybrid recommenders, transformer sequential models, contextual bandits and LLM generation, deployed through real-time CDPs, achieving up to 40% revenue growth lift per McKinsey with recommender market at USD 5.39B in 2024."@en)
+	    AnnotationAssertion(dcterms:identifier ai:HyperPersonalisation "AI-4217"^^xsd:string)
+	    AnnotationAssertion(dcterms:subject ai:HyperPersonalisation "Recommender Systems, Customer Data Platform, Dynamic Pricing, Programmatic Advertising, LLM Personalisation, Privacy"@en)
+	  )
+
+	  ## Property Characteristics
+	  AsymmetricObjectProperty(ai:requires)
+	  AsymmetricObjectProperty(ai:enables)
+	  AsymmetricObjectProperty(ai:implements)
+	  AsymmetricObjectProperty(ai:reduces)
+	  TransitiveObjectProperty(ai:dependsOn)
+	  FunctionalDataProperty(ai:revenueGrowthLift)
+	  FunctionalDataProperty(ai:recommendationEngineMarket2024USD)
+	  ```
+
+  - ## Components / Architecture
+  - A production hyper-personalisation system comprises five architectural layers and associated platform components:
+  - #### Layer 1: Signal Ingestion and Event Streaming
+  - **Client-side SDKs**: JavaScript analytics SDKs (Segment Analytics.js, mParticle, Tealium iQ) capture clickstream events (page views, product views, add-to-cart, searches) directly from browsers and mobile apps.
+  - **Server-side event tracking**: Backend purchase confirmations, subscription changes, customer support interactions, POS (point-of-sale) in-store transactions forwarded via server-to-server API or message queue.
+  - **Streaming platforms**: Apache Kafka (high-throughput event log, 1M+ events/second at large deployments), AWS Kinesis, Google Pub/Sub, Azure Event Hubs. Events are partitioned by user ID for ordered per-user processing.
+  - **Data lake landing zone**: Raw events archived to S3/GCS/ADLS in Parquet format for historical reprocessing, audit, and model training.
+  - #### Layer 2: Identity Resolution and Profile Unification
+  - **Deterministic matching**: User ID, email address, phone number — highest confidence (confidence score ≥ 0.99). Used to link authenticated sessions across devices.
+  - **Probabilistic matching**: Device fingerprint (browser+OS+screen+timezone hash), IP address + behavioural pattern similarity, geolocation trajectory matching — lower confidence (score 0.7–0.95). Used to link anonymous sessions to known profiles.
+  - **Identity graph construction**: Graph database (AWS Neptune, Neo4j) maintaining nodes (individual identifiers: email, cookie, device, phone) and edges (match relationships with confidence weights). Probabilistic matching uses entity resolution algorithms (blocking + ML classifier).
+  - **Profile unification**: Merge ordered event streams from matched identifiers into a single chronological interaction timeline. Field conflict resolution via recency weighting (most recent email address wins; oldest purchase history preserved).
+  - #### Layer 3: Feature Engineering and Feature Store
+  - **Batch features**: Pre-computed daily/weekly over user's full history — recency-frequency-monetary (RFM) scores, long-term preference embeddings (ALS/MF over 30-day interaction matrix), category affinity vectors, demographic inference.
+  - **Streaming features**: Updated in real time from event stream — session sequence embeddings, current-session category focus, recency of last interaction, cart contents.
+  - **Feature store**: Feast/Tecton/AWS SageMaker Feature Store/Databricks Feature Store provide: (a) offline store (data warehouse/lakehouse) for training; (b) online store (Redis, DynamoDB, Bigtable) for <10ms inference-time feature lookup; (c) feature versioning for reproducibility; (d) point-in-time correctness preventing future leakage in training.
+  - #### Layer 4: ML Inference Pipeline
+  - **Candidate retrieval**: ANN search (FAISS, ScaNN, Pinecone, Weaviate) over item embedding index returns top-1000 candidates per user per request. Retrieval must complete within 20–30ms to fit within overall 100ms SLA.
+  - **Scoring/ranking**: Deep neural ranking model (Wide & Deep, DCN, DLRM) scores retrieved candidates on target metric (CTR, conversion probability, expected watch time). Deployed on GPU inference servers (TensorRT, TorchServe, Triton Inference Server). Must complete within 30–50ms.
+  - **Business rules layer**: Inventory availability filtering, promotion eligibility, regulatory exclusions (age-gated content), diversity constraints, freshness bonuses applied post-ML-ranking.
+  - **A/B testing framework**: 10–20% traffic holdout for controlled experiments measuring personalisation lift over baseline. Bayesian A/B testing (multi-armed bandit traffic allocation) minimises opportunity cost during experimentation.
+  - #### Layer 5: Output Generation and Activation
+  - **Content personalisation**: Dynamic web/app personalisation SDK (Optimizely, Adobe Target, Dynamic Yield, Bloomreach) injects personalised content variants (product tiles, banners, emails, push notifications) into the user's current session based on current user profile state.
+  - **Email and push personalisation**: Trigger-based personalised email journeys (Salesforce Marketing Cloud, Braze, Klaviyo) delivering personalised product recommendations, behavioural re-engagement, and lifecycle messaging within milliseconds of triggering events.
+  - **Conversational personalisation**: LLM API integration (Anthropic Claude API, OpenAI API) augmented with retrieval from user preference store (RAG over user interaction history in vector DB) generating contextually personalised conversational responses.
+  - **Measurement and attribution**: Multi-touch attribution models (linear, data-driven DDA, Markov chain) assigning personalisation system credit to downstream conversion events. Holdout group measurement providing clean causal estimates of personalisation lift on revenue, CLV, and churn metrics.
+
+  - ## About Hyper Personalisation
+  - **Hyper personalisation** represents the convergence of three historically separate disciplines — recommender systems, real-time customer data infrastructure, and generative AI — into a unified capability that adapts every individual customer touchpoint to a continuously updated model of that specific user. Unlike segment-based marketing (which groups customers into cohorts sharing inferred attributes) or simple rule-based personalisation (name-merge, birthday discounts), hyper personalisation operates at the individual-resolution level, updating its user model from new signals within milliseconds, generating novel content variants rather than selecting from a catalogue, and coordinating adaptation across all channels simultaneously.
+  - The concept sits at the intersection of three business imperatives: revenue optimisation (McKinsey's research finding 40% higher revenue growth for personalisation-mature firms), customer experience quality (Salesforce finding 73% of customers expecting improving personalisation, yet 80% of the experience being as important as product quality), and regulatory compliance (EU AI Act and UK Data (Use and Access) Act 2025 creating obligations for transparency and explainability in AI-driven individual profiling).
+  - The fundamental technical architecture requires five layers working in concert: (1) **signal ingestion** — capturing clickstream, purchase history, search queries, location, device context, social graph, email engagement, and zero-party survey responses in real time; (2) **identity resolution** — matching signals across devices and sessions to a unified individual profile via deterministic (email/phone) and probabilistic (device fingerprint/IP/behavioural) matching, maintained within a CDP identity graph; (3) **feature engineering** — transforming raw signals into model-ready features including sequential interaction embeddings, recency-frequency-monetary scores, contextual embeddings, and graph embeddings from co-purchase/co-view networks; (4) **inference** — scoring the current user context against learned preference models at sub-100ms latency via feature stores (Feast, Tecton) and vector similarity search (Pinecone, Weaviate, pgvector); and (5) **output generation** — selecting or synthesising the adapted touchpoint via ranking models, generative models, or dynamic pricing algorithms.
+
+  - ### Core Algorithmic Families
+  - Hyper personalisation is implemented via six major algorithmic families, each addressing different aspects of the user-item preference modelling problem. These families are not mutually exclusive — production systems at Netflix, Amazon, Spotify, and YouTube employ multi-stage architectures that chain and combine multiple families, typically progressing from high-recall broad retrieval (hundreds of thousands of candidate items) through successive ranking stages to a final personalised slate of 10–50 presented items.
+  - #### 1. Collaborative Filtering (CF) and Matrix Factorisation
+  - **Collaborative Filtering (CF)** remains the foundational paradigm, predicting a user's preference for an item by finding patterns of agreement among users or items, based on the assumption that users with similar past behaviour will have similar future preferences. Memory-based CF (user-user, item-item similarity via cosine or Pearson correlation) has been superseded in production by model-based CF via **Matrix Factorisation** (MF).
+  - **Matrix Factorisation** decomposes the M×N user-item interaction matrix R ≈ UVᵀ where U ∈ ℝᴹˣᵏ and V ∈ ℝᴺˣᵏ are low-dimensional (k=32–512) latent factor matrices. Training minimises the regularised reconstruction loss: ||R - UVᵀ||² + λ(||U||² + ||V||²), solved via Stochastic Gradient Descent (SGD) or Alternating Least Squares (ALS), with WALS (Weighted ALS) preferred for implicit feedback (clicks, views) where unobserved interactions are uncertain negatives rather than definitive non-preferences.
+  - Simon Funk's SVD++ (2006, Netflix Prize) introduced implicit feedback and user/item bias terms: r̂ᵤᵢ = μ + bᵤ + bᵢ + qᵢᵀ(pᵤ + |N(u)|^{-½} ∑_{j∈N(u)} yⱼ) where N(u) is the set of items the user has implicitly interacted with and yⱼ are implicit feedback factors.
+  - **BPR (Bayesian Personalised Ranking**, Rendle et al. 2009) reformulated MF as pairwise ranking optimisation: instead of minimising pointwise MSE, BPR maximises the posterior P(rᵤᵢ > rᵤⱼ) for observed-over-unobserved pairs (i, j), yielding better ranking quality for top-k recommendation at the cost of negative sampling.
+  - **Two-tower Neural CF** (YouTube, 2016; Covington et al.) extended MF with deep neural networks: a user tower encodes user history/context into a user embedding e_u ∈ ℝᵈ; an item tower encodes item metadata into item embedding e_i ∈ ℝᵈ; relevance is measured as inner product e_u · e_i. The two-tower structure enables efficient ANN retrieval at inference time — item embeddings are pre-computed and indexed; only the user tower requires real-time inference.
+  - Production CF systems at Netflix, Amazon, and LinkedIn achieve >99.9% coverage and <50ms P99 inference latency via approximate nearest-neighbour (ANN) indices (FAISS flat/IVF/HNSW, Google ScaNN) over learnt embeddings. Netflix serves recommendations from a candidate pool of 50,000 items per user refined to ~100 candidates via ANN retrieval before neural re-ranking.
+  - #### 2. Content-Based Filtering (CBF) and Item Representations
+  - **Content-Based Filtering (CBF)** builds item profiles from item metadata and content features — TF-IDF text vectors, image CNNs (ResNet-50/ViT features for fashion/product images), audio spectral features (MFCCs, mel-spectrograms for music mood classification), video frame embeddings, and knowledge graph entity embeddings — and learns user profiles as weighted combinations of the features of liked items.
+  - CBF solves the **new-item cold-start problem** that CF cannot handle: a newly added item with zero interaction history can still be recommended based on its content similarity to previously liked items, critical for long-tail catalogue items (70-80% of items on large platforms have fewer than 5 interactions).
+  - CBF has a **serendipity limitation**: recommendations are constrained to items similar to what the user has already interacted with, creating exploration deficit. Diversification post-processing (maximal marginal relevance, determinantal point process re-ranking) mitigates this by penalising similar items in the final slate.
+  - Modern CBF leverages **pre-trained transformer embeddings** to enrich item representations: BERT/DistilBERT for product descriptions and article text; CLIP (Radford et al. 2021) for joint image-text embeddings enabling cross-modal similarity; wav2vec 2.0/HuBERT for audio. These foundation model embeddings outperform task-specific feature engineering on cold-start recommendation benchmarks.
+  - #### 3. Hybrid Recommenders and Multi-Stage Ranking
+  - **Hybrid Recommenders** combine CF and CBF signals — CF providing collaborative wisdom (what similar users liked) and CBF providing item-level signal for cold-start items. Hybridisation approaches include: (a) **weighted combination** (blend CF and CBF scores via learned weights); (b) **switching** (use CBF for new items, CF for items with sufficient history); (c) **cascade** (use CF for retrieval, CBF for ranking); and (d) **feature augmentation** (add CBF item features as additional inputs to the CF neural network).
+  - **Netflix's Multi-Stage Production System** is the canonical multi-stage hybrid: Stage 1 — broad retrieval via ANN over offline-trained CF embeddings (hundreds of candidate items from a pool of 50,000); Stage 2 — neural ranking model (deep neural network combining CF interaction features, CBF item metadata, sequential session context, device/time contextual features) scoring 100 candidates; Stage 3 — re-ranking applying business rules, freshness bonuses, diversity constraints (penalising slates dominated by a single genre or creator); Stage 4 — presentation layer adapting thumbnail, row title, and position via A/B tested policies.
+  - **Amazon's Production Recommendation Stack** combines: item-to-item CF ("customers who bought X also bought Y") using the DKNN algorithm operating over 400M+ items; a two-tower neural retrieval model for homepage personalisation; a learning-to-rank (LTR) model (LambdaMart, LightGBM) for final ranking integrating price-sensitivity features from dynamic pricing models; and a post-purchase email recommendation pipeline generating 35%+ of attributed e-commerce revenue.
+  - **Multi-Task Learning (MTL) architectures** are critical for production ranking systems that must jointly optimise multiple objectives: click-through rate (CTR), add-to-cart rate (ATR), completion rate (video), and long-term retention. YouTube's MMoE (Multi-gate Mixture-of-Experts, 2018) and Kuaishou's PLE (Progressive Layered Extraction) use shared + task-specific expert networks to prevent negative transfer (optimising CTR at the expense of watch completion or vice versa).
+  - #### 4. Sequential and Session-Based Recommendation
+  - **Sequential Recommendation** models the temporal ordering of user-item interactions, treating the interaction sequence as an ordered list [i_1, i_2, ..., i_t] where order encodes intent progression and temporal context. This is critical for intent-rich sessions (e.g., a user browsing running shoes, then running socks, then a running jacket signals a fitness goal) compared to treating interactions as an unordered set.
+  - **SASRec** (Self-Attentive Sequential Recommendation, Kang & McAuley 2018, ICDM): applies causal (left-to-right) self-attention over item embedding sequences. For a sequence of T items, computes attention scores A = softmax(QKᵀ/√d)V where Q, K, V ∈ ℝᵀˣᵈ are query, key, value projections of item embeddings. Uses causally masked attention preventing future items from influencing past position predictions. SASRec achieved state-of-the-art on MovieLens-1M, Amazon Beauty, and Steam game datasets in 2018–2021.
+  - **BERT4Rec** (Sun et al. 2019, CIKM): applies bidirectional masked-item-prediction pre-training — randomly masking 15–20% of items in each sequence and training the model to predict masked items from bidirectional context. At inference, the next item is predicted by masking the last position. BERT4Rec exploits bidirectional context for richer item representations at the cost of needing a separate fine-tuning step for sequential prediction.
+  - **BST** (Behaviour Sequence Transformer, Alibaba 2019): extends BERT4Rec with auxiliary behaviour types (click, add-to-cart, purchase, wishlist) and relative positional encoding capturing temporal distances between interactions (e.g., items viewed 1 day ago vs. 1 week ago), deployed in Alibaba Taobao's recommendation system serving 800M+ users.
+  - At **ACM RecSys 2024** (Bari, Italy, 14–18 October 2024, Proceedings DOI:10.1145/3705328), PrepRec demonstrated a popularity-dynamics-aware transformer architecture that embeds item popularity trajectories as additional sequential features, achieving zero-shot cross-domain adaptation — a model trained on movie recommendations can be applied to book recommendations without retraining, by abstracting popularity dynamics as domain-agnostic signals.
+  - **Graph Contrastive Learning (GCL)** integrating GNNs with contrastive objectives was highlighted at RecSys 2024 as a dominant paradigm: SimCLR-style data augmentation (random item masking, session shuffling, feature dropout) generates positive pairs for contrastive loss training, improving recommendation quality on sparse interaction graphs where standard CF suffers from data sparsity.
+  - **RecSys 2025** (Prague, September 22–26, 2025) featured the keynote introduction of **Relational Foundation Models (RFMs)** — pre-trained over multi-table, heterogeneous graph-structured relational data using table-agnostic embeddings, relational transformers, and SQL-like prompt interfaces — enabling in-context recommendation without per-task supervision, analogous to GPT-4's few-shot in-context learning applied to tabular relational data.
+  - #### 5. Contextual Bandits and Reinforcement Learning
+  - **Contextual Bandits** cast the recommendation problem as a sequential decision problem under uncertainty: at each timestep t, a policy π selects item arm a_t given context x_t (user features, candidate items, session state), observes reward r_t (click=1/no-click=0, or continuous engagement), and updates arm-value estimates. Bandits address the exploration-exploitation dilemma: greedily selecting the current best item (exploitation) misses potentially better items never shown (exploration).
+  - **LinUCB** (Li et al. 2010, Yahoo!): assumes linear reward function r = x_aᵀθ_a + ε_a for each arm a, where θ_a ∈ ℝᵈ is the per-arm coefficient vector and x_a ∈ ℝᵈ is the context-arm feature vector. Maintains per-arm ridge regression estimates θ̂_a = (X_aᵀX_a + I)⁻¹X_aᵀr_a with UCB confidence bonus: a* = argmax_a [x_aᵀθ̂_a + α√(x_aᵀ(X_aᵀX_a + I)⁻¹x_a)]. UCB bonus term quantifies parameter uncertainty, ensuring under-explored arms receive exploration boosts.
+  - **Thompson Sampling**: instead of UCB optimism, maintain a posterior distribution P(θ_a | D) over arm parameters, sample θ̃_a ~ P(θ_a | D) for each arm, and select a* = argmax_a x_aᵀθ̃_a. Thompson Sampling often achieves better empirical regret than UCB while being simpler to implement (Chapelle & Li 2011 empirical comparison on Yahoo! news recommendation).
+  - **Neural Bandits** (NeuralUCB, NeuralLinear, EpsGreedy-Neural): use deep neural networks f(x_a; θ) for non-linear reward estimation, with uncertainty estimated via ensemble disagreement, Monte Carlo dropout, or Laplace approximation of the last-layer posterior. Neural bandits are deployed at Google for recommendation in Search/Discover and at LinkedIn for job recommendation serving 900M+ users.
+  - **Deep Reinforcement Learning** extends bandits to multi-step personalisation: DQN-based (Deep Q-Network) and policy-gradient approaches (REINFORCE, PPO) treat the entire user session as a Markov Decision Process (MDP), optimising for long-horizon cumulative reward (session length, retention, lifetime value) rather than immediate click probability. JD.com deployed a DRL-based recommendation system in 2019 reporting 15% increase in click-through rates and 20% revenue improvement over bandit baselines.
+  - #### 6. Graph Neural Networks for Recommendation
+  - **Graph Neural Networks (GNNs)** model the bipartite user-item interaction graph G = (U ∪ I, E) where edges E represent interactions, enabling multi-hop propagation of preference signals. User u's preference representation aggregates not just items u directly interacted with but also items interacted with by similar users (2-hop), providing richer collaborative signals than standard MF.
+  - **PinSage** (Ying et al. 2018, Pinterest, KDD 2018): applies GraphSAGE neighbourhood sampling to a heterogeneous graph with 3 billion nodes (pins + boards + users) and 18 billion edges. Samples K=2 neighbourhoods per node per layer using importance sampling weighted by edge interaction frequency. Achieves 150× improvement in offline recommendation quality and 40% improvement in user engagement (home-feed saves) over prior Pinterest recommendation systems.
+  - **LightGCN** (He et al. 2020, SIGIR): simplifies graph convolution by removing feature transformation matrices (W_l) and non-linear activation (σ) from each layer, retaining only neighbourhood aggregation: e_u^(l+1) = ∑_{i∈N(u)} 1/√(|N(u)||N(i)|) · e_i^(l). This simplification reduces parameters 70–80% whilst improving recommendation performance on multiple benchmarks, establishing LightGCN as the default GCF (Graph Collaborative Filtering) baseline.
+  - **Knowledge Graph-Augmented Recommendation** (KGCN Wang et al. 2019; KGAT Wang et al. 2019): integrates item knowledge graphs (entity → relation → entity triples, e.g., "Inception → directed_by → Christopher Nolan → genre → Sci-Fi") alongside user-item interaction graphs. Item representations incorporate semantic entity embeddings from the knowledge graph, capturing preference transitivity: a user who likes "Inception" may like other Christopher Nolan films even without direct interactions.
+  - **Session-Level GNNs** (SR-GNN, Xu et al. 2019, AAAI): model individual user sessions as directed graphs (nodes = items; edges = sequential transitions), apply gated graph neural networks to capture session-level item transition patterns, and predict the next item using a soft-attention combination of session-level and long-term user preference vectors.
+  - **Multi-modal GNNs** (UGT, RecSys 2024): integrate text, image, and interaction modalities within a unified graph transformer: multi-way cross-modal attention aligns item representations across modalities; a graph neural network aggregates aligned multi-modal features from neighbourhood items. UGT demonstrated consistent top-k recommendation improvements across MovieLens-1M, Amazon Electronics, and Yelp2018 benchmarks at RecSys 2024.
+  - **Content-Based Filtering (CBF)** builds item profiles from item metadata and content features (TF-IDF text vectors, image CNNs, audio MFCCs, knowledge graph embeddings) and learns user profiles as weighted combinations of liked-item features. CBF solves the new-item cold-start problem (no interaction history) that CF cannot handle and is biased toward serendipity-free exploitation of known preferences. Modern CBF leverages pre-trained transformer embeddings (BERT, DistilBERT for text; ViT for images) to enrich item representations.
+  - **Hybrid Recommenders** combine CF and CBF signals to exploit complementary strengths — CF providing collaborative wisdom, CBF providing item-level signal for cold-start items. Netflix's production system is a multi-stage hybrid: a broad retrieval stage (ANN over CF embeddings) followed by a neural ranking stage blending CF scores, CBF item metadata, session context, and temporal signals. Amazon's item-to-item CF ("customers who bought X also bought Y") is hybridised with price-sensitivity signals from dynamic pricing models.
+  - **Sequential and Session-Based Recommendation** models temporal order of user interactions, treating the sequence of items u_1, u_2, ..., u_t as context for predicting u_{t+1}. BERT4Rec (Sun et al. 2019) applies masked-item-prediction pre-training over interaction sequences; SASRec (Kang & McAuley 2018) uses unidirectional self-attention; BST (Behaviour Sequence Transformer, Alibaba 2019) incorporates positional encoding and auxiliary behaviour types. At ACM RecSys 2024 (Bari, October 2024), PrepRec demonstrated a popularity-dynamics-aware transformer achieving zero-shot cross-domain adaptation; graph contrastive learning (GCL) integrating GNNs with contrastive objectives was highlighted as a dominant paradigm. RecSys 2025 (Prague, September 2025) introduced Relational Foundation Models (RFMs) — pre-trained over multi-table, heterogeneous graph-structured relational data — that enable in-context recommendation without per-task supervision.
+  - **Contextual Bandits** cast the recommendation problem as a sequential decision problem under uncertainty: at each timestep, a policy selects item arm aₜ given context xₜ (user features, candidate items, session context), receives reward rₜ (click, purchase, dwell time), and updates its arm-value estimates. LinUCB (Li et al. 2010, Yahoo!) assumes linear reward function r = xᵀθₐ + εₐ and maintains per-arm ridge regression estimates with UCB exploration bonuses. Neural bandits (NeuralUCB, NeuralLinear) use neural networks for non-linear reward estimation with Laplace-approximate UCB confidence bounds. Thompson Sampling variants maintain posterior distributions over arm values and sample to balance exploration-exploitation. Google, Yahoo, and LinkedIn deploy bandit policies for news article and job recommendation at billion-user scale.
+  - **Graph Neural Networks (GNNs)** model the bipartite user-item interaction graph alongside item knowledge graphs, social graphs, and session graphs to propagate neighbourhood information. PinSage (Ying et al. 2018, Pinterest) applies GraphSAGE to a 3-billion-node graph achieving 150× improvement over prior systems; LightGCN (He et al. 2020) simplifies graph convolution by removing feature transformation and non-linear activation, retaining only neighbourhood aggregation; KGCN (Wang et al. 2019) integrates knowledge graphs over item entities to provide semantic regularisation. At RecSys 2024, UGT (Unified multi-modal Graph Transformer) demonstrated multi-modal GNN-transformer fusion outperforming unimodal baselines across multiple benchmarks.
+  - **LLM-Augmented Personalisation** emerged as a major paradigm shift in 2023–2025. LLMs serve three roles: (1) **feature generation** — using GPT-4/Claude/Gemini to synthesise natural-language item summaries, user preference profiles, and explanation chains used as richer input features to downstream ranking models; (2) **zero-shot recommendation** — prompting LLMs with interaction history to generate candidate items directly ("Given this user's watch history, recommend 10 similar shows"); (3) **conversational personalisation** — Inflection Pi (launched 2023, pivoted to enterprise August 2024) and Character.AI (250M+ users by 2024) deploy continuously adapting LLM personas that maintain extended user memory across sessions, adjusting communication style, knowledge depth, and content focus to individual preferences. PubMatic and Kontext in 2024 introduced OpenRTB-native programmatic ad delivery within LLM chatbot interfaces, embedding personalised advertisements within LLM responses in a format users found difficult to identify as advertising (ArXiv 2409.15436, September 2024).
+
+  - ### Customer Data Platforms (CDPs) and Real-Time Infrastructure
+  - The shift from batch-personalisation (overnight segment recomputation) to true hyper-personalisation required a new infrastructure category: the **real-time Customer Data Platform (CDP)**. CDPs ingest event streams from all channels, resolve identities across devices and sessions, maintain unified individual profiles, and expose inference-ready feature vectors to downstream ML models and engagement systems within <100ms of an event occurring — contrasted with legacy CRM and DMP systems operating on hourly-to-daily batch cycles.
+  - **CDP Architecture Layers**: (1) **Data Ingestion** — event streaming via Apache Kafka / AWS Kinesis / Segment Analytics.js SDKs capturing clickstream, purchase, support interactions, email engagement, POS in-store data, mobile app events, and IoT device signals; (2) **Identity Resolution** — deterministic matching (email address, phone number, logged-in user ID) combined with probabilistic matching (device fingerprint, IP address, behavioural similarity, graph-based entity resolution) to build a persistent individual-level identity graph with confidence scores on each match; (3) **Profile Unification** — merging matched event streams into a single chronological interaction timeline per individual, resolving field conflicts via recency-weighted merge rules; (4) **Segmentation and Scoring** — real-time segment membership evaluation and ML model scoring (churn propensity, next-best-product, price sensitivity, lifetime value) triggered on each new profile update; (5) **Activation** — pushing updated segments and scores to downstream engagement systems (email ESPs, paid media DSPs, personalisation SDKs, CRM) via real-time event hooks and batch sync APIs.
+  - **Salesforce Data Cloud** (formerly Salesforce CDP, renamed 2023) powers **Einstein Personalisation** across Salesforce's Marketing Cloud, Commerce Cloud, and Service Cloud suite. Data Cloud consumes real-time streaming events via MuleSoft/Salesforce Connect and batch CRM records, resolves identity via its proprietary deterministic/probabilistic matching engine, and exposes unified profiles to Einstein ML models scoring next-best-action, next-best-offer, churn probability, and predicted customer lifetime value (CLV). In 2024, Salesforce integrated Data Cloud with Einstein Copilot enabling natural-language query over unified profiles ("show me customers with high churn risk who haven't engaged in 30 days"). Salesforce reports Data Cloud processes over 100 billion unified profile records.
+  - The **Salesforce State of the AI Connected Customer** (2024 edition, 14,300 respondents across 27 countries) found: 73% of customers expect better personalisation as technology advances; 65% expect companies to adapt to their changing needs and preferences; 61% say most companies still treat them as a number (the expectation-delivery gap); only 57% trust companies to use AI ethically; 71% more likely to trust a company that clearly explains its AI data use; 80% of customers consider the experience as important as products/services. These statistics establish both the commercial imperative and the trust gap that hyper-personalisation systems must navigate.
+  - **Adobe Real-Time CDP** (Adobe Experience Platform, AEP) uses **Adobe Sensei** AI to provide real-time identity resolution, audience segmentation, and automated content optimisation. Adobe Sensei AI components: **Content-Based Similarity** — matching users to content assets via visual and semantic similarity across Adobe Stock/Creative Cloud; **Predictive Audiences** — using gradient-boosted ML to build lookalike segments from known converters for lookalike advertising; **Real-Time Journey Optimisation** — triggering personalised next-step adaptations (email, push notification, in-app message, web personalisation) within milliseconds of a qualifying profile event. Gartner's 2024 Magic Quadrant for Customer Data Platforms ranked Adobe as a Leader for data consolidation, identity resolution, and Sensei AI quality. Adobe's research (2024): 44% of consumers frustrated by non-personalised experiences; 70% uneasy about data collection; establishing the personalisation-privacy paradox as a structural tension.
+  - **Segment (Twilio Segment)** (mid-market CDP, 25,000+ customers) collects events via client-side and server-side SDKs, routes to 300+ destination integrations (email, advertising, analytics, warehouses), and provides Personas (a built-in identity resolution and audience building layer). Segment Connections enables real-time data routing; Segment Engage enables real-time journey orchestration and channel personalisation. Twilio's 2024 integration with AI models enables LLM-based personalisation triggers within Segment journeys.
+  - **Tealium** provides a composable CDP architecture combining Tealium iQ (tag management for data collection) with Tealium AudienceStream (real-time audience segmentation and enrichment using ML scoring) and Tealium EventStream (real-time event routing). Tealium is distinguished by enterprise privacy and consent management capabilities, GDPR/CCPA compliance tooling, and its server-side tag architecture that preserves first-party data collection post-cookie deprecation.
+  - **Feature Stores** (Feast, Tecton, AWS SageMaker Feature Store, Databricks Feature Store) are the critical infrastructure layer between CDPs and ML recommendation models — storing pre-computed, versioned feature vectors (user preference embeddings, purchase frequency/recency metrics, price sensitivity scores, contextual affinity vectors) with millisecond-latency online lookup APIs. Feature stores decouple feature computation (batch or streaming pipelines) from feature serving (online inference), avoiding feature skew between training (historical features from data warehouse) and serving (real-time features from production systems).
+  - **Vector Databases** (Pinecone, Weaviate, Qdrant, pgvector, Milvus) store item and user embeddings for ANN retrieval, enabling sub-10ms nearest-neighbour queries over billions of embedding vectors. Vector databases are the enabling infrastructure for semantic search, cross-modal recommendation (finding similar products using image embeddings), and LLM RAG (retrieval-augmented generation) personalisation where relevant user history context is retrieved before LLM response generation.
+
+  - ### Dynamic Pricing and Programmatic Advertising
+  - **Dynamic Pricing** applies real-time demand signals, competitor pricing intelligence, inventory levels, user price-sensitivity scores, and contextual factors to compute the revenue-maximising price for each SKU × user × moment combination. It extends hyper personalisation from content and product recommendations into the pricing dimension — the same individual preference model that determines what to show is used to determine what price to show.
+  - **Amazon's Dynamic Pricing** adjusts prices for millions of products every 10 minutes using an ML pipeline: (1) demand forecasting using LSTM/Transformer models over historical sales time series; (2) competitor price scraping via web crawlers monitoring 50K+ competitor SKUs; (3) inventory depletion models estimating stockout risk under current velocity; (4) individual user price-elasticity estimates derived from the user's purchase history (did they buy at full price? buy only during sales? abandon cart when prices increased?); and (5) a reinforcement learning policy combining these signals into a revenue-maximising price.
+  - **Personalised pricing** — setting different prices for different individuals based on their estimated willingness-to-pay — is the most ethically contentious dimension of dynamic pricing. Amazon's models maintain higher prices for high-loyalty customers (estimated low defection probability) and discount for new users (estimated higher acquisition elasticity). This creates information-asymmetric price discrimination exploiting the data advantage of the hyper-personalisation system.
+  - The EU **Digital Markets Act (DMA)** Articles 5/6 provisions on self-preferencing and discriminatory pricing are under active regulatory scrutiny for personalised pricing practices by gatekeeper platforms. UK CMA (Competition and Markets Authority) issued the Online Markets and Competition Act 2024 consultation addressing algorithmic price discrimination by dominant digital platforms.
+  - **Uber Surge Pricing** uses a demand-supply equilibrium algorithm: at each geospatial cell (H3 hexagonal grid resolution 8), a RL-trained policy computes a surge multiplier M ∈ [1.0, 4.0+] based on ride request rate (lambda) and active driver supply (N). The policy is trained to minimise rider cancellation rate whilst maximising driver utilisation. Surge pricing is disclosed to riders pre-booking with surge amount, satisfying consumer transparency requirements.
+  - **ML Models for Dynamic Pricing**: Research (ResearchGate 2024) demonstrates Gradient Boosting Machines (LightGBM, XGBoost) outperform regression and neural baselines for short-horizon (1–24 hour) price optimisation due to their capacity to capture non-linear demand-price interactions and resistance to overfitting on limited training data. Reinforcement learning (DQN, SARSA, policy gradient) outperforms GBM for multi-period dynamic pricing where current price decisions affect future demand states (inter-temporal price elasticity, reference price effects).
+  - **Programmatic Advertising (RTB)** is hyper-personalisation applied to paid media acquisition. In real-time bidding (RTB), an ad impression auction completes within 100ms: (1) publisher's SSP (Supply-Side Platform) broadcasts an OpenRTB bid request containing user cookie/device ID, contextual page signals, and inventory details to 100–200 connected DSPs; (2) each DSP queries its DMP/CDP within 50ms for the user's audience segments, predicted conversion probability, and campaign eligibility; (3) DSP submits a CPM bid = predicted_conversion_prob × conversion_value × profit_margin; (4) winning DSP's ad server dynamically assembles the ad creative from personalised components (headline, image, CTA, product, offer); (5) final ad renders within the publisher's ad slot.
+  - The **global programmatic advertising market** processed USD 546 billion in 2024, with RTB representing the dominant trading mechanism across display, video, connected TV (CTV), audio, and digital out-of-home (DOOH) inventory. The real-time bidding ecosystem processes approximately 300 billion auction transactions daily across the IAB OpenRTB protocol.
+  - **Privacy Deprecation and the Cookieless Transition**: Google's Privacy Sandbox eliminating third-party cookies in Chrome (deferred multiple times, targeting full deployment 2025–2026) is structurally disrupting programmatic personalisation. Industry responses: (a) **First-party data clean rooms** (LiveRamp Safe Haven, Google Ads Data Hub, Amazon Marketing Cloud, Snowflake Data Clean Room) enabling privacy-safe cross-party data matching without data transfer; (b) **Privacy Sandbox APIs** (Topics API for interest-based targeting, Protected Audience API for remarketing, Measurement API for conversion attribution) as consent-free contextual alternatives within the browser; (c) **Unified ID 2.0** (The Trade Desk) and **LiveRamp ATS** (Authenticated Traffic Solution) using hashed email addresses as persistent identifiers on authenticated publisher properties.
+  - **LLM-Native Programmatic Advertising**: In 2024, PubMatic and Kontext introduced OpenRTB-native programmatic ad delivery within LLM chatbot interfaces — campaigns run within the standard OpenRTB protocol, with personalised advertisements embedded within LLM responses rather than placed around content. Research (ArXiv 2409.15436, September 2024) found participants struggled to detect LLM-embedded ads (70% failed to identify them as advertising) and paradoxically preferred responses containing hidden ads when they were well-matched to context. By mid-2025, OpenAI's Sam Altman stated there "probably is some cool ad product we can do" — foreshadowing LLM-as-ad-platform as the next frontier where personalised advertising is woven into the AI reasoning layer.
+
+  - ### Netflix and Spotify: Canonical Deployments
+  - Netflix and Spotify represent the two most comprehensively documented and publicly studied hyper-personalisation deployments, with published architecture descriptions, ROI studies, and ongoing academic workshop programmes. They serve as canonical benchmarks for the field.
+  - #### Netflix Personalisation Architecture
+  - **Netflix** processes recommendation for 230 million+ subscriber profiles across 190 countries, with 80% of watched content driven by AI recommendations rather than user-initiated search (Gomez-Uribe & Hunt 2016), and the recommendation system estimated to save USD 1 billion/year in avoided subscriber churn.
+  - **Stage 1 — Candidate Retrieval**: Netflix maintains multiple candidate retrieval systems operating in parallel for each user: (a) collaborative filtering retrieval via ANN over offline-trained user-item embedding tables (FAISS IVF index over 200M item embeddings); (b) content-based retrieval using item genre/metadata similarity to recently watched items; (c) trending/popularity-based retrieval ensuring fresh content appears in candidates; (d) continue-watching and bookmarked items; (e) social signals from shared or discussed items. Each system generates 100–500 candidates; all streams are merged and deduplicated to ~1,000–2,000 candidates per user per session.
+  - **Stage 2 — Neural Ranking**: A deep neural network (Wide & Deep architecture: a wide linear model concatenated with a deep DNN) scores all candidates on multiple objectives: (a) predicted watch probability (did the user start watching?); (b) predicted completion rate (fraction of the title watched); (c) predicted post-watch rating (implicit thumbs-up/thumbs-down); (d) predicted long-term engagement impact on session length and weekly active usage. Features include: user interaction history embeddings (last 50 watched items), user device, time of day, day of week, prior session length, user subscription tier, candidate item embeddings, item freshness, item completion statistics across similar users.
+  - **Stage 3 — Re-ranking and Diversity**: Post-ranking applies: (a) diversity constraints ensuring the slate is not dominated by a single genre or franchise; (b) freshness bonuses promoting newly added content; (c) novelty penalties de-promoting content the user has already seen; (d) editorial constraints ensuring certain content types (e.g., original Netflix productions) receive minimum slot exposure for content strategy reasons.
+  - **Stage 4 — Presentation Personalisation**: The August 2024 redesign of Netflix's AI thumbnail selection system personalised not just which title to show but how to preview it. If a viewer primarily watches comedy, the AI selects a lighter, comedic scene for the episode preview image; if they primarily watch action, a suspenseful moment is selected. This personalised artwork system was documented to increase click-through rates by 12% and was extended to personalised episode preview clips (autoplay trailers tailored to user preference).
+  - **Netflix PRS Workshop 2025** (Personalization, Recommendation and Search, internal workshop): key advances included sequential transformer architectures capturing session-level intent signals, LLM-integrated recommendation explanations enabling users to understand why items were recommended ("You might like this because you enjoyed the cinematography in..."), and multi-objective reward modelling balancing short-term engagement against long-term subscriber satisfaction.
+  - #### Spotify Personalisation Architecture
+  - **Spotify** operates the world's largest music personalisation system for 600+ million users (including 240M+ Premium subscribers), generating 100 billion+ recommendation events daily across music, podcasts, and audiobooks.
+  - **Discover Weekly** (launched July 2015) generates a unique 30-song personalised playlist for each user every Monday. Architecture: (1) collaborative filtering identifies the top-N users most similar to the target user based on listening history overlap; (2) from those similar users' listening histories, the most-listened-to tracks not yet heard by the target user are extracted; (3) content-based filtering using NLP on music review text and audio fingerprint CNN features (BPM, key, danceability, energy) re-ranks extracted tracks; (4) a final ML filter removes songs the user has explicitly disliked or skipped in under 30 seconds. Discover Weekly achieves 40%+ save rates (users adding songs to their library) vs. ~3% for non-personalised top-chart playlists.
+  - **AI DJ** (launched 2023): a conversational personalisation interface combining text-to-speech synthesis (narration of transition commentary between tracks) with real-time mood-based recommendation. The DJ adapts its playlist selection to the user's current engagement signals (skips, pauses, add-to-library) and contextual signals (time of day, listening device, recent listening patterns), creating a perceived personalised radio DJ experience.
+  - **2025 LLM Integration**: Spotify's 2025 architecture makes open-weight LLMs "domain-aware" by grounding them in Spotify's catalogue via structured semantic tokenisation of catalogue entities (artists, episodes, audiobooks, playlists). LLMs handle: (a) natural language playlist creation ("make me a playlist for a 5km run at 175 BPM"); (b) personalised podcast recommendations with narrative explanations; (c) recommendation explanations referencing the user's listening history; (d) semantic search understanding intent-based queries beyond keyword matching. The LLM infrastructure spans fine-tuning pipelines (LoRA adapters on catalogue-grounded base models), evaluation frameworks measuring recommendation relevance and explanation quality, and serving infrastructure achieving sub-50ms LLM inference for 600M+ user queries.
+  - **Spotify Engineering Scale**: The recommendation infrastructure processes 100B+ events daily, maintains user preference models updated in real time from streaming event data, and serves personalised recommendations at <50ms P99 latency globally. The cold-start system for new users builds an initial preference model from a 30-second onboarding quiz (genre preferences, mood, context) combined with demographic inference, achieving near-warm-user recommendation quality within the first listening session.
+
+  - ### Privacy Tensions and Regulatory Landscape
+  - Hyper personalisation creates an inherent structural tension between its technical requirements (granular longitudinal behavioural data, cross-channel identity resolution, inference of sensitive attributes from behavioural proxies) and the privacy rights enshrined in GDPR (EU), UK GDPR, CCPA/CPRA (California), Brazil LGPD, Canada CPPA, and emerging global frameworks. This tension is not solvable by consent management alone — the fundamental challenge is that personalisation inferences (sensitive attribute inference from behavioural proxies) are invisible to data subjects even when data collection is explicitly consented.
+  - #### GDPR Compliance Challenges
+  - **Article 22 — Automated Individual Decision-Making**: Hyper personalisation deploying automated profiling that "produces legal effects or similarly significantly affects" individuals (pricing, credit scoring, insurance assessment, employment screening) requires either explicit consent (Art. 22(2)(c)), contractual necessity (Art. 22(2)(a)), or legal obligation, plus mandatory human review on request. Most commercial personalisation (content recommendation, marketing) falls below the Art. 22 "significant effects" threshold but is still subject to transparency requirements.
+  - **Article 13/14 — Transparency**: Data subjects must be informed about automated profiling and the logic involved. Most personalisation systems are opaque — they cannot generate meaningful explanations of why a specific item was recommended to a specific user at a specific time, creating systematic transparency compliance gaps. GDPR Recital 71 and Article 15(1)(h) create the "right to explanation" — the right to an explanation of the logic involved in any automated decision, which modern neural recommendation systems cannot satisfy without purpose-built explanation layers.
+  - **Article 5(1)(c) — Data Minimisation**: The richest personalisation signals are also the most privacy-invasive (precise geolocation, inferred health status from search behaviour, political affinity from reading patterns). GDPR data minimisation requires collecting only what is necessary for the stated purpose — in tension with the "more data = better personalisation" paradigm.
+  - **GDPR Limits in Personalisation Context**: Cambridge University Press research (2021, Chapter 5, DOI:10.1017/9781108867245) demonstrates that GDPR consent mechanisms are fundamentally insufficient in personalisation contexts because: (a) personalisation inferences (e.g., inferring sexual orientation from music preferences, inferring health conditions from shopping patterns) are hidden from data subjects even when raw data collection is consented; (b) consent to data collection does not constitute consent to all downstream inferences; (c) the opacity of neural models makes audit and rectification of inferences technically infeasible under current architectures.
+  - #### EU AI Act Framework (2024–2026)
+  - **Entry into Force**: EU AI Act, Regulation (EU) 2024/1689, entered into force 1 August 2024. Prohibited practices became applicable 2 February 2025; GPAI model obligations became applicable 2 August 2025; full applicability of all provisions on 2 August 2026.
+  - **Recommender System Provisions**: AI systems used to recommend content on social media and video platforms with 45M+ EU users face transparency obligations under the AI Act's general-purpose AI provisions and the Digital Services Act (DSA) interplay. These systems must: (a) inform users that recommendations are generated by an algorithm; (b) provide at least one algorithm-free option based on chronological order; (c) make key recommendation parameters accessible and adjustable by users.
+  - **High-Risk Classification (Annex III)**: AI systems that profile individuals significantly affecting their fundamental rights (employment screening, credit assessment, health and life insurance, law enforcement risk assessment) are classified as high-risk under Annex III. For these systems, deployers must: conduct conformity assessments; maintain technical documentation; register in the EU AI Act database; provide human oversight mechanisms; ensure transparency to affected individuals.
+  - **Prohibited Practices (Article 5)**: Certain personalisation techniques are prohibited: (a) subliminal manipulation techniques exploiting subconscious weaknesses; (b) exploitation of vulnerabilities of specific groups (children, elderly, people with mental health conditions); (c) social scoring by public authorities. Dark-pattern personalisation — using affective computing inference (emotion detection from facial expressions/voice) to exploit psychological vulnerabilities for conversion — may fall under prohibited subliminal manipulation.
+  - **UK Online Safety Act 2023**: Category 1 services (user-to-user services with 34M+ UK monthly active users using content recommender systems, or 7M+ MAU with UGC functionality) must: publish transparency reports on algorithmic recommendation systems; provide users with recommender-free options; implement specific protections for under-18 users.
+  - #### Privacy-Preserving Personalisation Techniques
+  - **Federated Learning**: Training personalisation models on-device (user's smartphone/browser) without centralising raw behavioural data. Each device computes a local gradient update from its own interaction history; only gradient updates (not raw data) are sent to a central aggregation server; the global model is updated by averaging gradients across devices. Deployed by: Google Gboard (next-word prediction personalised to individual typing patterns); Apple (Siri suggestion personalisation, Face ID recognition personalisation); Google Chrome (ad relevance personalisation without data leaving browser).
+  - **Differential Privacy (DP)**: Adding calibrated Laplace or Gaussian noise ε to aggregate statistics before use in model training, providing (ε, δ)-DP guarantees that limit the information any individual's data contributes to the model. Google and Apple deploy (ε=8) DP in on-device learning and frequency estimation. The privacy-utility trade-off in personalisation is severe at individual level — DP works best for aggregate statistics (population-level item popularity) rather than individual-level preference modelling.
+  - **Secure Multi-Party Computation (SMPC) / Clean Rooms**: Enabling multiple parties (e.g., an advertiser and a publisher) to jointly compute functions over their combined data without either party seeing the other's raw data. Google Ads Data Hub, Amazon Marketing Cloud, Snowflake Data Clean Room, and LiveRamp Safe Haven enable clean-room matching — determining overlap between advertiser customer lists and publisher audiences — for cross-party personalisation without data sharing.
+  - **Contextual Targeting**: Inferring user interests from the current page/session context (article topics, keywords, semantic category) rather than from stored user profiles. Re-emerging as the primary consent-free personalisation approach post-cookie deprecation. Semantic contextual targeting (using NLP/LLM topic classification of page content) provides richer signal than keyword matching, enabling effective personalisation without individual tracking.
+  - **Zero-Party Data**: Directly collected preference declarations from users (preference centre selections, quiz responses, explicit interest tags) are the privacy-ideal personalisation signal — users voluntarily share exactly what they want to receive, eliminating inference risk. Zero-party data strategies (preference centres, style quizzes, interest onboarding flows) are growing as GDPR compliance pressure intensifies, though they suffer from declaration-behaviour gaps (users declare preferences differently from how they actually behave).
+  - #### Filter Bubbles and Societal Risks
+  - **Filter Bubble Thesis** (Eli Pariser, 2011): Personalisation systems optimising for engagement create information cocoons that progressively narrow users' information exposure, amplifying confirmation bias and reducing exposure to diverse perspectives. Pariser coined the "filter bubble" to describe the invisible algorithmic editing of the information environment to match predicted preferences.
+  - **Empirical Evidence**: Academic research since 2015 has both supported and complicated the filter bubble thesis: Bakshy et al. (2015, Science) found Facebook's algorithmic News Feed reduces ideologically diverse exposure by 8% (cross-cutting content reduced from 28% to 24% of feed) but that users' own sharing decisions have stronger effects than the algorithm. Pariser's thesis understated the role of user agency and overstated algorithmic determination, but the directional effect of personalisation toward reduced diversity is well-established.
+  - **Engagement Optimisation Pathology**: Recommender systems optimising engagement metrics (clicks, watch time, session duration, return visits) without explicit diversity/wellbeing objectives preferentially surface emotionally valenced (especially outrage-inducing, fear-amplifying) content because it maximises measured engagement. YouTube's 2019 algorithm changes following research showing watch-next recommendations progressively led users from moderate to extreme content demonstrated the recommendation-as-radicalisation concern.
+  - **Addictive Personalisation**: Character.AI (250M+ users) and social media platforms have been subject to legal challenges (US states AGs, EU DSA investigations) over personalisation systems allegedly designed to maximise engagement through parasocial relationship dynamics, particularly among under-18 users. The distinction between effective personalisation (relevance optimisation) and manipulative personalisation (vulnerability exploitation) is the central regulatory battleground under both EU AI Act prohibited practices and UK Online Safety Act duties.
+  - **Adobe Consumer Paradox (2024)**: 44% of consumers frustrated by non-personalised experiences; 70% uneasy about how their data is collected. This paradox is structural — consumers simultaneously demand the benefits of personalisation (relevant, convenient experiences) and resist its enabling mechanism (extensive data collection and individual profiling). Resolving this requires privacy-preserving personalisation techniques that deliver personalisation quality from minimal or consented data rather than maximally extracted profiles.
+
+  - ## Use Cases / Major Families
+  - Hyper personalisation is deployed across six major application verticals, ranging from entertainment and e-commerce (most mature) to healthcare and financial services (highest-stakes, most regulated). Each vertical applies the same core algorithmic families but with domain-specific feature engineering, evaluation metrics, and regulatory constraints.
+  - #### Media and Entertainment Streaming
+  - **Netflix** (230M+ subscribers, 190 countries): 80% of watched content is recommendation-driven. Multi-stage ensemble recommendation (retrieval → neural ranking → re-ranking → presentation). AI-driven thumbnail personalisation (August 2024) +12% CTR. Revenue impact: USD 1B+/year in avoided churn (Gomez-Uribe & Hunt 2016).
+  - **Spotify** (600M+ users, 240M+ Premium): Discover Weekly (30-song weekly personalised playlist, 40%+ save rate), Daily Mix (6 genre-personalised mixes), Release Radar (personalised new music), AI DJ (conversational mood-adaptive recommendation with TTS narration). LLM-semantic tokenisation of catalogue entities enabling natural language playlist creation in 2025.
+  - **YouTube** (2.7B+ monthly active users): 70% of watch time driven by algorithmic recommendations. Sequential transformer ranking model trained via multi-task learning jointly optimising CTR, watch-through rate, and post-watch satisfaction survey. Substantial regulatory scrutiny over recommendation-driven radicalisation pathways (2019 algorithm changes post-academic criticism).
+  - **BBC iPlayer and BBC Sounds** (UK-specific): BBC Datalab's in-house personalised recommendation engine balancing engagement optimisation against public service obligations to recommend across the full breadth of BBC content, not just high-engagement genres. First cross-product recommendation engine (Sport + News short-form) launched 2023–2024.
+  - #### E-Commerce and Retail
+  - **Amazon**: item-to-item collaborative filtering ("customers who bought X also bought Y") estimated to account for 35% of Amazon's revenue. Real-time dynamic pricing updating millions of product prices every 10 minutes. Personalised homepage (individual item tiles, banner creative, deal spotlights). Post-purchase email recommendations. Machine learning product search ranking adapting results to individual user preferences alongside relevance.
+  - **Zalando** (European fashion): visual similarity recommendation using CNN image features; size/fit prediction from prior purchase history (returns data = rich preference signal); style affinity modelling from browse/wishlist behaviour. Personalisation system serves 50M+ active customers, generating 30%+ of revenue from recommendation-influenced purchases.
+  - **ASOS** (UK, global): deep learning recommendation generating 4B+ weekly personalised recommendations. Fashion-specific features: colour preference, fit preference (body measurement-inferred), brand affinity, trend sensitivity (trend-leading vs. trend-following users receive different recommendation timing).
+  - **Stitch Fix**: algorithmic styling combining collaborative filtering (what similar users liked) with a distinctive human-in-the-loop element — professional stylists review algorithm-generated boxes and make final selections, providing a hybrid human-AI personalisation service that generates high user satisfaction through combining statistical optimisation with human judgement.
+  - **UK Grocery Personalisation**: Tesco Clubcard AI (personalised vouchers, offers, and product recommendations using 19M+ UK Clubcard holder transaction histories); Boots Advantage Card (50M+ UK members, ML-driven personalised health and beauty offers); Co-op Membership (personalised digital coupons using basket analysis); Morrisons More Card (launched 2023, AI-driven personalised offers based on purchase history).
+  - #### Financial Services Personalisation
+  - **Robo-Advisory Platforms** (Betterment, Wealthsimple, UK: Nutmeg, Wealthify, Moneybox): risk preference profiling via onboarding questionnaire + transaction behaviour analysis → individual risk score → automated portfolio construction (Modern Portfolio Theory + personalised risk constraint optimisation). Personalised market update notifications and rebalancing recommendations adapted to individual goals and time horizons.
+  - **Banking Next-Best-Action**: HSBC's AI personalisation platform (2024) reduced customer churn by 18% through next-best-action recommendation (right product, right channel, right timing). Lloyds Banking Group's ML personalisation engine generates personalised financial health insights (spending analysis, savings opportunity alerts, overdraft risk warnings) via mobile app. NatWest's Personal Financial Management (PFM) uses categorised transaction data to generate personalised spending insights and budgeting recommendations.
+  - **Insurance Personalisation**: Usage-based insurance (Aviva Drive, Admiral LittleBox UK) adjusts pricing based on individual driving behaviour telematics (speed, braking, cornering patterns, time of day driving). Health insurance personalisation (Vitality, Noom) uses wearable activity data and lifestyle behaviour to adjust premiums and wellness benefit recommendations.
+  - **Compliance Constraints**: Financial services personalisation operates within FCA (Financial Conduct Authority) Consumer Duty (2023) obligations requiring that personalised recommendations be in the customer's best interest. AML/KYC requirements constrain which data sources can be used for personalisation. SMCR (Senior Managers and Certification Regime) creates individual accountability for algorithmic recommendation quality.
+  - #### Healthcare and Clinical Personalisation
+  - **Personalised Health Coaching**: Noom (behavioural psychology-based weight management, 50M+ users) combines wearable step/activity data, food logging NLP, and engagement behaviour sequence modelling to adapt intervention timing, message framing (loss vs. gain framing based on loss-aversion profiling), and content difficulty to each user's behaviour change trajectory.
+  - **Clinical Decision Support**: Tempus AI (oncology) and Foundation Medicine combine genomic sequencing data with clinical evidence knowledge graphs to generate personalised treatment pathway recommendations for oncologists, adapting drug selection and dosing recommendations to individual tumour molecular profiles. Among the highest-stakes personalisation applications — errors are life/death consequences rather than irrelevant recommendations. Subject to FDA SaMD (Software as a Medical Device) 510(k) clearance and CE marking under EU MDR.
+  - **Personalised Digital Therapeutics**: FDA-cleared apps (Pear Therapeutics' reSET for substance use disorder, Welldoc BlueStar for diabetes) deliver personalised CBT-based therapeutic interventions adapting content, timing, and intensity to individual patient engagement and clinical response patterns.
+  - #### LLM-Based Conversational Personalisation
+  - **Inflection Pi** (launched 2023): designed as a persistently personalised conversational AI companion maintaining extended user memory across sessions, adapting tone, vocabulary, knowledge depth, and subject focus to individual communication preferences. Pivoted to enterprise (Inflection for Enterprise) in August 2024 as consumer model unit economics proved challenging.
+  - **Character.AI** (250M+ users by 2024): persona-locked roleplay characters maintaining consistent personality traits and relationship dynamics across extended conversations, creating persistent parasocial relationships. Attachment metrics (return rate, session length, emotional self-disclosure) drive engagement. Subject to regulatory scrutiny over engagement manipulation among under-18 users.
+  - **Claude Projects (Anthropic 2024)** and **OpenAI Custom GPTs with Memory**: per-user persistent context that adapts LLM responses to individual background knowledge, communication style preferences, and ongoing projects. Early production deployments of LLM-level individual personalisation without explicit recommendation models.
+  - **LLM Personalisation via RAG**: LLM responses augmented with retrieval from individual user history (previous conversations, preferences, documents, notes) stored in vector databases, enabling contextually personalised responses without fine-tuning individual models. MemGPT, Mem0, and AWS Memory for Bedrock Agents provide the infrastructure layer for production-scale LLM memory personalisation.
+
+  - ## Academic Context
+  - The academic field of recommender systems and hyper personalisation has developed over 30+ years, from early information filtering research through the Netflix Prize era of matrix factorisation to the current transformer and LLM era.
+  - #### Historical Development
+  - **1992 — Tapestry** (Goldberg et al., XEROX PARC): first collaborative filtering system, filtering email based on user annotations and similarity with colleagues. Coined the term "collaborative filtering" (users collaborating to filter information).
+  - **1994 — GroupLens** (Resnick et al., CSCW): first deployed CF system for Usenet newsreader, using Pearson correlation of article ratings across users. Demonstrated CF could scale to real-world information environments.
+  - **1997–2005 — Amazon and Slope One**: Amazon's item-to-item CF (Linden, Smith & York 2003, IEEE Internet Computing) introduced scalable deployment-oriented CF; Slope One (Lemire & Maclachlan 2005) provided a simple, memory-efficient incremental CF variant.
+  - **2006–2009 — Netflix Prize**: USD 1 million open competition for 10%+ improvement over Netflix's Cinematch baseline on movie rating prediction. Catalysed matrix factorisation research; winning team BellKor's Pragmatic Chaos achieved RMSE 0.8567 (10.06% improvement) via a 107-model ensemble combining SVD, SVD++, RBM, neighbourhood models.
+  - **2007 — ACM RecSys Launch**: The ACM Conference on Recommender Systems became the primary academic venue for recommendation research, growing from ~200 to 1,000+ attendees by 2024.
+  - **2010–2016 — Neural Revolution**: Neural Collaborative Filtering (He et al. 2017, WWW) demonstrated deep neural networks outperform traditional MF; YouTube's deep neural network for recommendation (Covington et al. 2016, RecSys) described two-tower architecture for billion-scale deployment.
+  - **2017–2020 — Attention and Graphs**: Transformer attention mechanisms (Vaswani et al. 2017 "Attention Is All You Need") applied to sequential recommendation in SASRec (2018) and BERT4Rec (2019); Graph Neural Networks applied in PinSage (2018) and LightGCN (2020).
+  - **2021–2023 — Foundation Models Enter Recommendation**: Pre-trained language model embeddings (BERT, GPT-3, LLaMA) used as item representation backbones; P5 (Geng et al. 2022) framed all recommendation tasks as text generation; ChatGPT-based zero-shot recommendation demonstrated competitive performance on cold-start scenarios.
+  - **2024–2025 — LLM-Native Recommendation**: RecSys 2024 (Bari) and RecSys 2025 (Prague): LLM augmentation as dominant paradigm; Relational Foundation Models (RFMs) enabling in-context recommendation over relational data; multimodal GNN-transformer fusion; privacy-preserving federated recommendation.
+  - #### Evaluation Benchmarks and Metrics
+  - **Standard Datasets**: MovieLens-1M (1M ratings, 6K users, 4K movies), MovieLens-20M (20M ratings), Amazon product review datasets (Electronics, Books, Beauty, Games — spanning 1–200M reviews), Yelp business review dataset, LastFM music listening records, BookCrossing. These datasets benchmark CF, sequential, and knowledge-graph-augmented recommendation algorithms.
+  - **Accuracy Metrics**: Hit Rate@K (proportion of test items appearing in top-K recommendations), NDCG@K (normalised discounted cumulative gain rewarding higher-ranked true positives), MRR (mean reciprocal rank of first true positive), Precision@K, Recall@K. RMSE and MAE for explicit rating prediction (Netflix Prize era, now largely superseded by ranking metrics).
+  - **Beyond-Accuracy Metrics**: Diversity@K (average pairwise dissimilarity within recommended slate); Novelty@K (average inverse popularity of recommended items, measuring long-tail coverage); Serendipity@K (unexpectedness × relevance); Coverage (fraction of the item catalogue that appears in at least one user's recommendations). These metrics operationalise the filter bubble concern — a system can achieve high NDCG whilst severely reducing diversity.
+  - **Fairness Metrics**: Statistical parity of recommendation quality across user demographic groups (age, gender, ethnicity); provider-side fairness (exposure distribution across item creators/sellers); individual fairness (similar users receiving similar recommendations); counterfactual fairness (recommendation unchanged if user's protected attribute were different).
+  - #### Key Research Themes (2020–2026)
+  - **Debiased Recommendation**: Causal inference approaches (inverse propensity scoring, doubly robust estimators) for debiasing recommendations from exposure confounding — observed interactions reflect both user preference and algorithmic exposure, not pure preference signal. Causal recommendation papers at SIGIR, KDD, and RecSys 2022–2025 established causal debiasing as a production concern.
+  - **Multi-Stakeholder Recommendation**: Production recommendation systems must satisfy multiple stakeholders simultaneously — users (relevance, diversity), platforms (revenue, engagement), content creators/sellers (fair exposure), and society (reduced filter bubbles, reduced radicalisation). Multi-objective optimisation (Pareto frontiers, constrained optimisation, scalarisation) is the mathematical framework; its deployment is the practical challenge.
+  - **Federated and Privacy-Preserving Recommendation**: Growing body of work on FedRec (federated recommendation), LDP-based (local differential privacy) recommendation, and secure aggregation protocols enabling personalised recommendation without centralising individual interaction histories. Driven by both GDPR compliance requirements and growing user privacy expectations.
+
+  - ## Current Landscape (2026)
+  - By May 2026, hyper personalisation has matured from competitive differentiator to baseline expectation across digital commerce, media, and services. Several structural shifts define the current landscape.
+  - **Market Scale**: Recommendation engine market USD 5.39B in 2024, projected USD 7.34B in 2025 (~36% CAGR). Global programmatic advertising (RTB) market USD 546B in 2024. AI-personalised marketing software segment USD 28B+ in 2024 (including CDPs, email personalisation, web personalisation, A/B testing platforms).
+  - **Consumer Expectations (Salesforce 2024)**: 73% of customers expect better personalisation as technology advances. 65% expect companies to adapt to changing needs and preferences. 61% say most companies still treat them as a number (expectation-delivery gap). 80% consider the experience as important as products/services. Only 57% trust companies to use AI ethically. 71% more likely to trust a company that clearly explains AI data use.
+  - **Foundation Model Backbone Shift**: By 2025–2026, transformer foundation models (GPT-4o, Claude 3.5/3.7, Gemini 1.5 Pro/2.0, Llama 3.1 70B/405B, Mistral Large) have become the preferred backbone for generating item and user representations. LLM zero-shot recommendation is competitive with fully supervised CF on cold-start scenarios; LLM-generated explanations satisfy GDPR Article 15(1)(h) right-to-explanation requirements.
+  - **Agentic Personalisation Emergence**: AI agents (multi-step reasoning with tool use) are extending hyper personalisation from reactive recommendation to proactive advisory roles:
+  - AI personal shopper agents (Anthropic Claude Projects, OpenAI Custom GPTs with memory) that proactively surface relevant items and deals without user-initiated search
+  - Health advisory agents that proactively remind users of relevant health interventions based on wearable data and medical history
+  - Financial planning agents that proactively identify savings opportunities, flag spending anomalies, and recommend financial products based on real-time account data
+  - **Privacy Sandbox Migration**: Google Privacy Sandbox Technologies (Topics API, Protected Audience API, Attribution Reporting API) in production deployment in Chrome by 2025–2026. LiveRamp ATS, The Trade Desk UID 2.0, and ID5 competing as cookieless identity alternatives. First-party data strategies (CDP investment, preference centres, loyalty programme expansion) accelerating across all digital advertising sectors.
+  - **EU AI Act Full Application (August 2026)**: All EU AI Act provisions applicable from 2 August 2026. Hyper-personalisation system operators in scope for: conformity assessment (high-risk AI systems); transparency obligations (recommender systems in social media / VLOP platforms); technical documentation (training data, model architecture, performance metrics); human oversight mechanisms; registration in EU AI Act database.
+  - **UK Post-Data (Use and Access) Act 2025**: UK Data (Use and Access) Act (Royal Assent 19 June 2025) updated lawful bases for personal data processing, consent requirements for automated personalisation, and data portability rights — creating a partially divergent UK regulatory framework from EU GDPR that personalisation system operators must dual-track compliance for.
+  - **Forrester CDP Wave 2024–2026**: Identified composable CDP architectures (data lakehouse-native CDPs integrated with Snowflake/Databricks, rather than monolithic vendor stacks) as the dominant enterprise trend. Organisations decomposing CDP into modular components: identity resolution layer (LiveRamp, Amperity), feature computation layer (Databricks Feature Store, Tecton), activation layer (CDP vendor or marketing automation platform).
+  - **McKinsey Next in Personalisation 2024**: Firms treating personalisation as strategic core (not peripheral marketing) achieve up to 40% higher revenue growth and are 23× more likely to outperform competitors. McKinsey identified six personalisation maturity levels from "one-size-fits-all" to "individually curated moments at scale." Only 15% of organisations have reached the top two maturity levels, indicating significant runway for competitive differentiation through personalisation investment.
+  - **Forrester Failure Prediction**: Forrester predicts over 50% of AI-driven personalisation efforts will fail to deliver ROI unless organisations move beyond surface-level tactics. Root causes of failure: poor data quality (fragmented customer data across siloed systems not unified in CDP); optimising proxies (CTR) rather than business outcomes (revenue, CLV, retention); under-investment in experimentation infrastructure (A/B testing, holdout groups) to measure personalisation lift; and regulatory compliance gaps creating liability exposure.
+
+  - ## UK Context
+  - The UK has developed a substantial hyper-personalisation ecosystem spanning public service media, retail technology, financial services, and academic research. The UK's combination of strong data science universities, a privacy-conscious regulatory environment (ICO, CDEI, FCA), and major retail/media organisations creates a distinctive national personalisation landscape.
+  - #### BBC Datalab and Public Service Personalisation
+  - **BBC Datalab** (datalab.rocks) is the BBC's internal ML research unit established to apply data science and machine learning across BBC products.
+  - Launched the first fully in-house personalised recommendation engine for **BBC Sounds** (audio/podcast platform) — previously using third-party recommendation tools.
+  - Launched the first **cross-product recommendation engine** bridging BBC Sport and BBC News short-form video content, surfacing contextually relevant content across product boundaries.
+  - Focuses on surfacing programmes unique to individual users based on location (UK regional content surfacing), age group (age-appropriate content), and previous viewing/listening habits.
+  - **Public service constraint**: BBC recommendation must balance engagement optimisation against public service broadcasting obligations — recommending across the full breadth of BBC content (including less popular public interest content), not solely maximising watch time.
+  - **NAO criticism (2024)**: National Audit Office review found BBC not fully delivering on digital personalisation commitments despite significant IT budget allocation — platform fragmentation (iPlayer, Sounds, Sport, News as separate products with limited cross-product personalisation) cited as key barrier.
+  - **BBC Data Science Partnership**: Industry-academic partnership with Universities of Bristol, Manchester, Edinburgh, Surrey, Imperial College London, QMUL, Ulster, and UCL focusing on: curation and personalisation algorithm development; editorial decision support tools; future audience experience design based on object-based broadcasting concepts.
+  - #### UK Academic Research
+  - **Imperial College London** (Data Science Institute, Department of Computing): Research in recommender systems, contextual bandits, causal inference for debiasing, and federated recommendation. BBC Data Science Partnership member specifically aligned on personalisation algorithm design. Imperial RecSys publications at ACM RecSys, WWW, NeurIPS covering: fairness-aware recommendation; causal counterfactual debiasing; privacy-preserving federated CF.
+  - **University of Manchester** (Institute for Data Science and AI, IDSAI): Named BBC Data Science Partnership member. Alan Turing Institute node. Research in graph neural networks (relevant to GNN-based recommendation), responsible AI (relevant to fairness-constrained personalisation), and NLP (relevant to LLM-augmented recommendation). Manchester also hosts the UKRI Centre for Doctoral Training in Machine Learning and Automated Reasoning.
+  - **University of Edinburgh** (School of Informatics): BBC Data Science Partnership member. Research in NLP and information retrieval with direct application to content-based recommendation and personalised news/media delivery.
+  - **UCL** (Department of Computer Science): Alan Turing Institute founding university. Research in reinforcement learning (relevant to contextual bandit and RL-based recommendation), causal inference (relevant to debiased recommendation), and privacy-preserving ML (relevant to federated and differentially private recommendation).
+  - **Alan Turing Institute** (UK national institute for data science and AI): Research programmes on Responsible AI, algorithmic fairness, and digital economy — providing theoretical grounding for responsible personalisation system design.
+  - #### UK Retail and Commerce Personalisation
+  - **Tesco Clubcard AI**: 19M+ UK Clubcard holders; ML-driven personalised offers, promotions, and product recommendations via Clubcard app and email. Tesco's use of transaction data for personalisation has been noted as best-in-class UK grocery personalisation.
+  - **Boots Advantage Card**: 50M+ UK members; personalised health and beauty offers via app and email; ML recommendation integrating beauty preference profiles with seasonal health purchase signals.
+  - **Marks & Spencer**: AI personalisation programme (Microsoft Azure partnership) achieving 12% CTR uplift on personalised email campaigns (2024). M&S Sparks loyalty programme underpinning personalisation data collection.
+  - **Northern England Retail Tech Cluster**: Leeds and Manchester host retail AI startups applying personalisation to fashion styling (high-street retailers), grocery promotion targeting (Co-op, Iceland, Morrisons), and loyalty programme offer generation. MediaCityUK (Salford) and The Landing (Manchester) tech accelerators have incubated personalisation-focused startups including AI-driven fashion recommendation and personalised FMCG promotions.
+  - **Asos** (London HQ, global): Deep learning recommendation at 4B+ weekly events; UK fashion personalisation research leader; published personalisation methodology at ECIR and RecSys.
+  - **Ocado Technology** (AI subsidiary of Ocado Group): ML-driven grocery recommendation and personalised promotional offers for Ocado.com and technology partners (M&S, Kroger, Bon Preu).
+  - #### UK Regulatory Environment
+  - **ICO Guidance on AI and Data Protection** (updated 2025, post-Data (Use and Access) Act Royal Assent 19 June 2025): UK-specific interpretation of lawful basis requirements for personalisation (consent vs. legitimate interests); data minimisation obligations for behavioural data collection; transparency requirements for algorithmic recommendation; rights to object to automated profiling.
+  - **CDEI Recommender Systems Guidance** (2023): Centre for Data Ethics and Innovation guidance on algorithmic amplification and recommender system transparency, providing sector-specific risk frameworks for UK media, retail, and financial services personalisation operators.
+  - **Online Safety Act 2023**: Category 1 services (34M+ UK MAU with content recommenders) required to publish annual transparency reports on recommender algorithms; offer users algorithm-free chronological alternatives; implement specific protections for under-18 users from harmful content recommendations.
+  - **FCA Consumer Duty (2023)**: Financial services personalisation systems must demonstrably act in customers' best interest, deliver "fair value," support informed decision-making, and avoid foreseeable harm — creating regulatory obligations that constrain both the data sources usable for financial personalisation and the recommendation objectives that can be optimised.
+  - **UK-EU Regulatory Divergence**: Post-Brexit, UK GDPR and the new Data (Use and Access) Act 2025 are creating a partially divergent regulatory framework from EU GDPR. UK government's "pro-innovation" framing has introduced some flexibility in legitimate interests assessments for personalisation, whilst the EU AI Act (not directly applicable in UK) is influencing UK AI governance via market access pressure for EU-facing UK services.
+
+  - ## Future Directions (2026-2030)
+  - The trajectory of hyper personalisation over 2026–2030 is shaped by five converging forces: the maturing of foundation model capabilities for personalisation, the rise of agentic AI paradigms, privacy-first regulatory requirements, advances in world modelling and simulation, and sovereign data infrastructure.
+  - #### World Models and Counterfactual Personalisation
+  - **World Models**: Next-generation personalisation will be built on world models that simulate individual user behaviour trajectories, enabling counterfactual reasoning ("what content would user U have watched if we had recommended X instead of Y?") and long-horizon optimisation.
+  - Current systems optimise immediate click probability or short-window engagement; world models enable optimising predicted 6–12 month lifetime value, content diversity, and user wellbeing, avoiding the engagement-over-wellbeing pathology of current systems.
+  - Meta's V-JEPA (2024) and DeepMind's Genie 2 (2024): early world model architectures demonstrating learned simulation of physical and interactive environments; adaptation to user behaviour simulation is a natural extension.
+  - Counterfactual estimation for recommendation — "how would user satisfaction have differed if a different recommendation had been made?" — is the fundamental causal inference problem enabling optimisation of long-term outcomes rather than immediate proxies.
+  - #### Multimodal Hyper Personalisation
+  - **Beyond Click Sequences**: Richer personalisation signals will be derived from multimodal user behaviour beyond explicit click/purchase sequences.
+  - **Video Engagement Signals**: Frame-level viewing attention (eye tracking, gaze estimation from front-facing camera on mobile devices with user consent) providing frame-by-frame engagement signals richer than aggregate watch-time.
+  - **Audio Preference Signals**: Podcast listening patterns (pause/resume/skip timestamps), music audio feature preferences (BPM, key, danceability, acoustic energy) enabling mood-state personalisation.
+  - **Visual Aesthetics**: Fashion and home decor personalisation from visual style embeddings of browse and save behaviour, enabling cross-domain style preference transfer (e.g., fashion style → home design style).
+  - **Cross-Modal Transfer**: Foundation models (CLIP, ImageBind) enabling preference signals from one modality (e.g., music) to inform recommendations in another (e.g., visual art), through shared semantic representation spaces.
+  - #### Neuro-Symbolic and Explainable Personalisation
+  - **Explainability as Regulatory Compliance**: EU AI Act Article 13 (transparency) and GDPR Article 15(1)(h) (right to explanation) are creating hard requirements for explainable recommendation, driving investment in neuro-symbolic personalisation architectures.
+  - **Symbolic Rule Extraction**: LLMs generating natural-language preference rules from learned embedding spaces ("This user prefers thriller films with strong female leads, set in the 1970s–1990s, under 2 hours") that satisfy human-readable explanation requirements while remaining grounded in statistical preference models.
+  - **Knowledge Graph Integration**: LLM-reasoning over structured knowledge graphs (Wikidata, domain-specific KGs) enables personalisation that can explain item recommendation through reasoning chains ("Recommended because: you liked Tenet → shares director Christopher Nolan → also directed Inception which you rated highly").
+  - #### Agentic Personalisation Architectures
+  - **Proactive vs. Reactive Personalisation**: Current hyper-personalisation is reactive — users initiate interactions, algorithms adapt responses. Agentic personalisation is proactive — AI agents initiate personalised touchpoints based on predicted user needs.
+  - **Persistent User Memory Agents**: MemGPT (Packer et al. 2023), Mem0, AWS Memory for Bedrock Agents enable LLM agents with episodic memory (specific past interactions) and semantic memory (generalised preferences extracted from interaction history) maintained across sessions.
+  - **Multi-Agent Personalisation Orchestration**: Agent frameworks (LangGraph, CrewAI, AutoGen) enable multi-agent personalisation workflows — a planning agent identifies the user's inferred goal, a retrieval agent fetches relevant inventory, a ranking agent applies personalised scoring, a communication agent drafts a personalised message in the user's preferred style.
+  - **Tool-Augmented Personal Agents**: Personal AI agents with access to calendar, email, shopping history, bank account read (Open Banking API), and health data APIs can proactively identify personalised opportunities (e.g., noticing a user's calendar includes a flight and proactively recommending travel accessories based on purchase history).
+  - #### Sovereign Data and Privacy-First Architectures
+  - **Solid Pods** (Tim Berners-Lee, MIT/Oxford): Personal Online Data Stores giving individuals sovereign control over their data, with selective access grants to service providers. UK government pilot programmes (2024) testing Solid-compatible identity and data sharing.
+  - **Personalisation without Centralisation**: Solid-compatible personalisation requires federated recommendation — models that query individual Pods at inference time rather than requiring data centralisation in corporate CDPs, inverting the current data-ownership model.
+  - **User-Controlled Preference Profiles**: A future regulatory mandate may require organisations to provide machine-readable preference profiles to users (data portability via GDPR Article 20), enabling users to take their personalisation history from one service to another (personalisation portability — analogous to number portability in telecommunications).
+  - #### EU AI Act Full Compliance (2026) Impact
+  - From 2 August 2026: all EU AI Act provisions fully applicable. For hyper-personalisation operators:
+  - High-risk AI system registrations in the EU AI Act database for personalisation used in consequential decisions (insurance, credit, employment screening)
+  - Mandatory technical documentation (training data description, model architecture, performance metrics, bias assessment) for in-scope recommender systems
+  - Human oversight mechanisms and audit trails for personalised decisions affecting individuals' rights
+  - User notification requirements when decisions are made based on automated individual profiling
+  - Standardised model cards for transparency about personalisation system capabilities, limitations, and potential biases
+
+  - ## Research & Literature
+  - #### Foundational Papers
+  - Goldberg, D., Nichols, D., Oki, B.M., Terry, D. (1992). "Using collaborative filtering to weave an information tapestry." *Communications of the ACM*, 35(12), 61–70. DOI:10.1145/138859.138867 — Foundational CF paper; coined "collaborative filtering."
+  - Resnick, P., Iacovou, N., Suchak, M., Bergstrom, P., Riedl, J. (1994). "GroupLens: An open architecture for collaborative filtering of netnews." *Proceedings of CSCW*, 175–186. DOI:10.1145/192844.192905 — First deployed CF system; Pearson correlation similarity.
+  - Koren, Y., Bell, R., Volinsky, C. (2009). "Matrix factorization techniques for recommender systems." *IEEE Computer*, 42(8), 30–37. DOI:10.1109/MC.2009.263 — Netflix Prize SVD/MF foundational methodology; latent factor models.
+  - Rendle, S., Freudenthaler, C., Gantner, Z., Schmidt-Thieme, L. (2009). "BPR: Bayesian personalized ranking from implicit feedback." *UAI 2009*, 452–461. ArXiv:1205.2618 — Pairwise ranking loss for implicit feedback MF.
+  - #### Neural and Deep Learning Recommendation
+  - He, X., Liao, L., Zhang, H., Nie, L., Hu, X., Chua, T.S. (2017). "Neural collaborative filtering." *WWW 2017*, 173–182. DOI:10.1145/3038912.3052569 — NCF: neural non-linear MF outperforms traditional MF; Wide & Deep recommendation.
+  - Kang, W.C., McAuley, J. (2018). "Self-attentive sequential recommendation." *ICDM 2018*, 197–206. ArXiv:1808.09781 — SASRec: unidirectional transformer for sequential recommendation; state-of-the-art 2018–2021.
+  - Sun, F., Liu, J., Wu, J., et al. (2019). "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer." *CIKM 2019*, 1441–1450. ArXiv:1904.06690 — Masked-item-prediction pre-training for sequential recommendation.
+  - Covington, P., Adams, J., Sargin, E. (2016). "Deep neural networks for YouTube recommendations." *ACM RecSys 2016*, 191–198. — Two-tower architecture; implicit negative sampling; billion-scale deployment.
+  - #### Graph Neural Networks
+  - Ying, R., He, R., Chen, K., Eksombatchai, P., Hamilton, W.L., Leskovec, J. (2018). "Graph convolutional neural networks for web-scale recommender systems." *KDD 2018*, 974–983. ArXiv:1806.01973 — PinSage: GraphSAGE over 3B-node Pinterest graph; 150× quality improvement.
+  - He, X., Deng, K., Wang, X., Li, Y., Zhang, Y., Wang, M. (2020). "LightGCN: Simplifying and powering graph convolution network for recommendation." *SIGIR 2020*, 639–648. ArXiv:2002.02126 — Simplified graph convolution; removes transformation + non-linearity; strong baseline.
+  - Wang, H., et al. (2019). "Knowledge graph convolutional networks for recommender systems." *WWW 2019*, 3307–3313. ArXiv:1904.12575 — KGCN: knowledge graph entity embeddings for semantic regularisation.
+  - #### Contextual Bandits
+  - Li, L., Chu, W., Langford, J., Schapire, R.E. (2010). "A contextual-bandit approach to personalized news article recommendation." *WWW 2010*, 661–670. ArXiv:1003.0146 — LinUCB: linear UCB bandit at Yahoo! news; ridge regression per-arm estimates.
+  - #### Industry Deployments and Value Studies
+  - Gomez-Uribe, C.A., Hunt, N. (2016). "The Netflix recommender system: Algorithms, business value, and innovation." *ACM TMIS*, 6(4), 1–19. DOI:10.1145/2843948 — Netflix architecture and USD 1B/year value estimate from churn reduction.
+  - Park, K., Zielnicki, K., Aridor, G., Bibaut, A. (2024). "The value of personalised recommendations: Evidence from Netflix." ArXiv:2511.07280 — Econometric causal estimation of Netflix personalisation value.
+  - Shaped.ai. (2025). "Key Insights from the Netflix PRS Workshop 2025." shaped.ai/blog — Sequential transformer, LLM integration, cold-start advances.
+  - #### Conference Proceedings
+  - ACM RecSys 2024 Proceedings. (2024). *18th ACM Conference on Recommender Systems*, Bari, Italy, October 14–18. DOI:10.1145/3705328 — PrepRec; UGT multimodal GNN; graph contrastive learning; fairness-aware recommendation.
+  - #### Market Research and Industry Reports
+  - McKinsey & Company. (2024). "Next in Personalisation 2024." McKinsey Growth, Marketing & Sales Practice. — 40% revenue growth differential; 23× competitive advantage; maturity model.
+  - Forrester Research. (2024). *Forrester CDP Wave 2024*. Forrester Research Inc. — CDP leadership evaluation; >50% AI personalisation ROI failure prediction.
+  - Salesforce Research. (2024). *State of the AI Connected Customer* (6th/7th ed.). Salesforce Inc. — 14,300 respondents; 73% personalisation expectations; 57% AI ethics trust.
+  - Adobe Inc. (2024). *Adobe Digital Trends: Personalisation-Privacy Paradox*. — 44% frustration without personalisation; 70% data collection unease.
+  - #### Regulatory and Legal
+  - European Commission. (2024). *EU Artificial Intelligence Act*. Regulation (EU) 2024/1689. OJ L 1689 — Full text; Annex III high-risk classification; recommender transparency provisions.
+  - Information Commissioner's Office. (2025). *Guidance on AI and Data Protection (Updated)*. ico.org.uk — UK AI personalisation compliance; Data (Use and Access) Act 2025 alignment.
+  - #### Privacy, Fairness, and Societal Impact
+  - ArXiv:2409.15436. (2024). "Ads that talk back: Implications and perceptions of injecting personalised advertising into LLM chatbots." — LLM-native programmatic ads; 70% ad non-detection.
+  - Pariser, E. (2011). *The Filter Bubble: What the Internet Is Hiding from You*. Penguin Press. — Filter bubble thesis; personalisation and information diversity.
+  - Cambridge University Press. (2021). *Data-Driven Personalisation in Markets, Politics and Law* (Chapter 5). DOI:10.1017/9781108867245 — GDPR limits in personalisation; inference opacity problem.
+  - #### Dynamic Pricing
+  - Tredence Inc. (2025). "Dynamic Pricing in Retail: A Complete Guide." tredence.com/blog — GBM for short-horizon price optimisation; RL for multi-period dynamic pricing.
+  - #### UK-Specific
+  - BBC Institute for Data Science and AI / Manchester IDSAI. (2024). *BBC Data Science Partnership Annual Report*. University of Manchester. — BBC Datalab personalisation university partnerships.
+  - CDEI. (2023). *Recommender Systems and Algorithmic Amplification: Landscape Review*. CDEI/DSIT, UK Government. — UK regulatory framework for recommender system transparency.
+
+  - ## Metadata
+  - **Domain correction**: Original page was assigned `domain:: infrastructure` with `iri` and `uri` scoped to the infrastructure namespace. Hyper personalisation is properly classified within `artificial-intelligence` — it is a cross-disciplinary AI application domain combining machine learning, data engineering, and marketing technology, with its primary conceptual identity rooted in AI/ML methods (collaborative filtering, neural recommendation, LLM personalisation). The domain has been corrected to `artificial-intelligence`; `iri`, `uri`, `same-as`, `owl-class`, `legacy-term-id` updated accordingly. The original page body contained a contaminated SXSW art installation embed (The Golden Key) that was unrelated to the hyper personalisation concept — this has been replaced by the comprehensive ontology reference.
+  - **Legacy page contamination**: The stub page body contained an embedded Logseq block reference ((656c7f3d...)) pointing to an SXSW 2024 art installation about AI-generated narratives for location-based events ("The Golden Key"), which was a thematic coincidence (AI + personalisation = location-based narrative) rather than conceptual alignment with commercial hyper-personalisation. The contaminated content has been entirely superseded.
+  - **Wikilinks count**: 71 wikilinks across is-subclass-of (5), has-part (10), requires (6), enables (6), implements (6), depends-on (6), supports (7), uses (6), contrasts-with (4), related-to (11), standardized-by (5).
+  - **OWL axioms count**: 40 SubClassOf axioms across Compositional (8), Dependency (10), Capability (10), Implementation (10), Reduction (5), plus 7 DataPropertyAssertion, 4 DataPropertyConstraints, 3 AnnotationAssertion.
+  - **References count**: 26 academic/industry/specification references in Provenance.
+
+- ### Provenance
+  - sources::
+    - Goldberg et al. (1992) "Using collaborative filtering to weave an information tapestry." CACM. DOI:10.1145/138859.138867
+    - Resnick et al. (1994) "GroupLens." CSCW. DOI:10.1145/192844.192905
+    - Koren, Bell, Volinsky (2009) "Matrix factorization techniques." IEEE Computer. DOI:10.1109/MC.2009.263
+    - Rendle et al. (2009) "BPR: Bayesian personalized ranking." UAI 2009. ArXiv:1205.2618
+    - He et al. (2017) "Neural collaborative filtering." WWW 2017. DOI:10.1145/3038912.3052569
+    - Kang & McAuley (2018) "Self-attentive sequential recommendation (SASRec)." ICDM 2018. ArXiv:1808.09781
+    - Sun et al. (2019) "BERT4Rec." CIKM 2019. ArXiv:1904.06690
+    - Ying et al. (2018) "PinSage: Graph CNN for web-scale recommender systems." KDD 2018. ArXiv:1806.01973
+    - He et al. (2020) "LightGCN." SIGIR 2020. ArXiv:2002.02126
+    - Li et al. (2010) "LinUCB: Contextual bandit for news recommendation." WWW 2010. ArXiv:1003.0146
+    - Gomez-Uribe & Hunt (2016) "The Netflix recommender system." ACM TMIS. DOI:10.1145/2843948
+    - Wang et al. (2019) "KGCN: Knowledge graph convolutional networks." WWW 2019. ArXiv:1904.12575
+    - ACM RecSys 2024 Proceedings. Bari, Italy. DOI:10.1145/3705328
+    - McKinsey & Company (2024). "Next in Personalisation 2024."
+    - Forrester Research (2024). Forrester CDP Wave 2024.
+    - Salesforce Research (2024). State of the AI Connected Customer (6th/7th ed.).
+    - Adobe Inc. (2024). Adobe Digital Trends: Personalisation-Privacy Paradox.
+    - European Commission (2024). EU Artificial Intelligence Act. Regulation (EU) 2024/1689.
+    - Information Commissioner's Office (2025). Guidance on AI and Data Protection (Updated).
+    - Park, Zielnicki, Aridor, Bibaut (2024). "The value of personalised recommendations: Evidence from Netflix." ArXiv:2511.07280
+    - Shaped.ai (2025). "Key Insights from the Netflix PRS Workshop 2025."
+    - ArXiv:2409.15436 (2024). "Ads that talk back: LLM chatbot programmatic advertising."
+    - Pariser, E. (2011). The Filter Bubble. Penguin Press.
+    - Cambridge University Press (2021). Data-Driven Personalisation in Markets, Politics and Law (Chapter 5). DOI:10.1017/9781108867245
+    - BBC/Manchester IDSAI (2024). BBC Data Science Partnership Annual Report.
+    - CDEI (2023). Recommender Systems and Algorithmic Amplification Landscape Review. DSIT, UK Government.
+  - migration-date:: 2026-04-26T00:00:00Z
+  - enrichment-date:: 2026-05-17T10:00:00Z
+  - enrichment-worker:: claude-sonnet-4-6
+  - domain-correction-note:: Changed from infrastructure to artificial-intelligence; iri/uri/owl-class/legacy-term-id updated accordingly. Original stub contained contaminated SXSW art installation content (The Golden Key block embed) — entirely superseded by Phase 6 ontology reference.

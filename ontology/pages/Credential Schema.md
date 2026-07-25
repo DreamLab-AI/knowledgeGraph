@@ -1,0 +1,260 @@
+public:: true
+
+# credential schema
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:80225b5045b383185fe894e9030a5fdd25d828d9237fa2f68da3b7211ecfb9c6",
+  "@type": "Page",
+  "vc:slug": "credential-schema",
+  "title": "credential schema",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2,
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-19T21:00:00Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:credential-schema",
+  "@type": "Class",
+  "label": "Credential Schema",
+  "definition": "A Credential Schema is a machine-readable, versioned specification — typically expressed in JSON Schema or a JSON-LD vocabulary — that defines the mandatory and optional claims, data types, cardinality constraints, and value ranges permissible within a Verifiable Credential. Schemas function as a binding contract between credential issuers, holders, and verifiers: the issuer populates claims in conformance with a declared schema, the holder's identity wallet stores schema metadata alongside the credential, and the verifier resolves and validates the credential's structure against the schema before applying trust policy decisions. Schemas are published at stable, resolvable URIs and are referenced from the credentialSchema property defined in the W3C Verifiable Credentials Data Model; in AnonCreds ecosystems they are written to a Verifiable Data Registry, making them tamper-evident and globally discoverable.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralised-identity",
+      "label": "Decentralised Identity"
+    }
+  ],
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:credential-type-definition",
+      "label": "Credential Type Definition"
+    },
+    {
+      "@id": "urn:ngm:class:vc-schema",
+      "label": "VC Schema"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential (VC)"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:credential-definition",
+        "label": "Credential Definition"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-aries",
+        "label": "Hyperledger Aries"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:sd-jwt-vc",
+        "label": "SD-JWT VC"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:credential-format-standard",
+        "label": "Credential Format Standard"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-policy",
+        "label": "Access Control Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
+  },
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+- ### Definition
+  - A **Credential Schema** is a machine-readable, versioned specification — typically expressed in [[JSON Schema]] or a [[JSON-LD]] vocabulary — that defines the mandatory and optional claims, data types, cardinality constraints, and value ranges permissible within a [[Verifiable Credential (VC)]]. Schemas act as a binding structural contract between all three parties in the credential triangle: an issuer populates claims in conformance with a declared schema, a holder's [[Identity Wallet]] stores schema metadata alongside the credential, and a verifier resolves and validates the credential's structure against the schema before applying [[Trust Framework]] policy decisions. They are published at stable, resolvable URIs and referenced from the `credentialSchema` property in the [[W3C Verifiable Credentials Data Model]].
+
+- ### Overview
+  - Credential Schemas sit at the intersection of [[Decentralised Identity]], [[Semantic Web]] technology, and [[Data Governance]]. Without a shared, resolvable schema, a verifier cannot programmatically determine whether a credential's claims are structurally valid or semantically coherent — two credentials claiming to describe the same attribute (e.g. date of birth) may use incompatible field names, encodings, or type constraints.
+  - The W3C Verifiable Credentials Data Model 1.1 and 2.0 define the `credentialSchema` property, which may point to a JSON Schema document or a semantic vocabulary term. [[JSON Schema]] (IETF standard) provides syntactic validation: required properties, string format constraints, enum values, and numeric ranges. [[JSON-LD]] vocabularies add semantic grounding, associating claim names with globally unique IRIs that resolve to machine-readable definitions in an [[Ontology]] or linked data vocabulary.
+  - Schema versioning and governance are first-class concerns: credential schemas must remain resolvable for the full lifetime of issued credentials, which may span decades. This places unique demands on hosting infrastructure and update policies compared with ordinary API schemas.
+
+- ### Key Components
+  - **Claim Definitions** — each claim (attribute) in the schema is declared with a name, data type (string, integer, boolean, date), optionality flag, and optionally a constrained value set or format (e.g. ISO 8601 date, URI, base64url-encoded image).
+  - **Schema Identifier (URI / Registry Entry)** — a globally unique, resolvable identifier for the schema. In [[AnonCreds]] ecosystems this is a [[Verifiable Data Registry]] entry on a ledger such as [[Hyperledger Indy]]; in W3C ecosystems it is an HTTPS URI.
+  - **Version Metadata** — schema version, author DID, and timestamp, enabling verifiers to pin validation to the schema version declared in an individual credential.
+  - **Credential Definition (AnonCreds)** — in the [[AnonCreds]] model, an issuer additionally publishes a [[Credential Definition]] that binds the schema to a specific cryptographic key pair, enabling [[Zero-Knowledge Proof]] presentations and [[Selective Disclosure]].
+  - **Context and Vocabulary Terms** — [[JSON-LD]] credential schemas include a `@context` array that maps human-readable claim names to canonical IRIs, enabling [[Linked Data]] graph traversal and semantic reasoning.
+  - **Encoding Rules** — define how raw claim values are encoded within a signed credential (e.g. integer encoding for AnonCreds ZKP arithmetic, base64url for binary values in SD-JWT VC).
+
+- ### Mechanisms
+  - **Schema Resolution** — a verifier fetches the schema from its declared URI or ledger address, caches it, and applies structural validation (syntactic check via JSON Schema, optionally semantic check via SPARQL or shape constraints such as [[SHACL]] or SHEX).
+  - **Issuer Binding** — in [[AnonCreds]], an issuer creates a [[Credential Definition]] that cryptographically binds the schema to the issuer's [[Decentralised Identifier]] (DID) public key, producing a unique schema+issuer pairing. Multiple issuers can issue against the same schema.
+  - **Holder Wallet Processing** — the [[Identity Wallet]] stores the schema reference, enabling it to display human-friendly claim labels, enforce required-field completeness, and prepare [[Selective Disclosure]] presentations.
+  - **Verifier Policy Mapping** — presentation requests (e.g. [[DIF Presentation Exchange]], OpenID4VP) specify required schema references, allowing verifiers to automatically match incoming credentials against accepted schemas before checking cryptographic validity.
+  - **Schema Evolution** — new versions of a schema are published at new URIs or with incremented ledger sequence numbers. Backward compatibility is managed by keeping old schema versions resolvable; breaking changes require a new schema ID.
+
+- ### Applications / Use Cases
+  - **Digital Government Credentials** — national identity, driving licence, and academic qualification credentials (e.g. eIDAS 2.0 European Digital Identity Wallets, ISO/IEC 18013-5 mDL / [[MDOC]]) define schemas to ensure cross-border verifier interoperability.
+  - **Healthcare** — clinical credential schemas define claim sets for immunisation records, prescriptions, and professional licences; interoperability requires shared schemas between hospital information systems, insurance verifiers, and regulatory bodies.
+  - **Education and Skills** — Open Badges 3.0 and Europass Digital Credentials use credential schemas to express learning outcomes, making achievements machine-verifiable by employers and academic institutions globally.
+  - **Supply Chain Provenance** — product passport credentials (under EU Battery Regulation, Ecodesign for Sustainable Products Regulation) rely on standardised schemas to encode material composition, carbon footprint, and recycling instructions as verifiable data.
+  - **Financial Services (KYC/AML)** — [[Know Your Customer]] and Anti-Money Laundering credential schemas allow regulated entities to share verified identity attributes without re-transmitting raw documents, reducing compliance overhead.
+  - **Workforce Credentials** — professional certification bodies (medical boards, bar associations, engineering institutes) publish credential schemas that employers can reference in automated hiring workflows, reducing fraud in credential verification.
+  - **IoT Device Identity** — [[Decentralised Identifier]] and credential schema pairings are used to attest device firmware versions, security certifications, and manufacturing provenance for [[Internet of Things]] endpoints.
+
+- ### Relationships
+  - enables:: [[Verifiable Credentials]]
+  - enables:: [[Verifiable Credential (VC)]]
+  - enables:: [[Selective Disclosure]]
+  - enables:: [[Zero-Knowledge Proof]]
+  - enables:: [[Interoperability]]
+  - uses:: [[JSON Schema]]
+  - uses:: [[JSON-LD]]
+  - uses:: [[Semantic Web]]
+  - uses:: [[Distributed Ledger Technology]]
+  - requires:: [[Verifiable Data Registry]]
+  - requires:: [[Decentralised Identifier]]
+  - partOf:: [[Self-Sovereign Identity]]
+  - partOf:: [[Trust Framework]]
+  - hasPart:: [[Credential Definition]]
+  - hasPart:: [[Claim Mapping]]
+  - standardizedBy:: [[W3C]]
+  - standardizedBy:: [[OpenID Foundation]]
+  - standardizedBy:: [[Hyperledger Aries]]
+  - implements:: [[AnonCreds]]
+  - implements:: [[SD-JWT VC]]
+  - implements:: [[MDOC]]
+  - contrastsWith:: [[Credential Format Standard]]
+  - contrastsWith:: [[Access Control Policy]]
+  - relatedTo:: [[Metadata Schema]]
+  - relatedTo:: [[Ontology]]
+  - relatedTo:: [[Schema Registry]]
+  - relatedTo:: [[Credential Governance]]
+  - bridges-to:: [[Knowledge Graph]]
+  - bridges-to:: [[Data Governance]]
+
+- ### Standards & Context
+  - **W3C Verifiable Credentials Data Model 1.1 / 2.0** — defines the `credentialSchema` property and specifies that schema documents SHOULD be published at resolvable HTTPS URIs. The VC Data Model is the foundational interoperability layer for credential schemas in the web PKI and [[Decentralised Identity]] ecosystem.
+  - **W3C DID Core 1.0** — [[Decentralised Identifier]] specification underpins the resolution of schema author DIDs and issuer DID Documents referenced in credential definitions.
+  - **AnonCreds Specification (Hyperledger)** — defines schema structure for privacy-preserving credentials using [[Zero-Knowledge Proof]] arithmetic; schemas are ledger-anchored tuples of attribute names plus schema metadata (name, version, issuer DID).
+  - **OpenID for Verifiable Credential Issuance (OID4VCI)** — specifies `credential_definition` objects that reference schemas; the OpenID Foundation's [[OpenID Foundation]] specifications are increasingly the primary interoperability layer for credential exchange in production deployments.
+  - **SD-JWT VC (IETF draft)** — [[SD-JWT VC]] defines a format for selective-disclosure JWT credentials that reference [[JSON Schema]] documents for structural validation; increasingly adopted by eIDAS 2.0 conformance profiles.
+  - **ISO/IEC 18013-5 mDL** — defines schema-equivalent data element dictionaries for mobile driving licences, influencing the [[MDOC]] ecosystem and cross-border identity use cases.
+  - **IETF JSON Schema (draft-bhutton-json-schema)** — the foundational syntactic validation language; ongoing standardisation at IETF is relevant to schema portability across credential ecosystems.
+  - **Governance Bodies** — [[W3C]] Credentials Community Group, [[Decentralised Identity Foundation]] (DIF), [[OpenID Foundation]], and ISO/IEC JTC 1/SC 17 (identity cards and personal identification) are the primary standardisation venues.
+
+- ### Semantic Classification
+  - owl-class:: credential-schema:Credential Schema
+  - owl-role:: Concept
+
+- ### Provenance
+  - sources:: W3C Verifiable Credentials Data Model 1.1, AnonCreds Specification, OID4VCI, SD-JWT VC IETF draft, ISO/IEC 18013-5
+  - updated:: 2026-06-13
+  - migration-date:: 2026-05-19T00:00:00Z
