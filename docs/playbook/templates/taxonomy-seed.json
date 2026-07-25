@@ -1,0 +1,398 @@
+{
+  "profile": "v3",
+  "project": "owf",
+  "note": "Seed contract for an offshore wind farm O&M ontology. A generation mesh reads `nodes` in order (root, then domains, then categories) and materialises one TBox page per node. This seed carries a SINGLE classification axis (subject Domain) plus first-class bridging: a class MAY assert two or three `subClassOf` parents across categories or domains, reported at info severity and published as data from the first build. A second orthogonal axis is added ONLY when a competency question cannot be answered without it; a speculative second axis in the reference corpus was authored and never consumed. Leaf concepts are NOT seeded: they are pulled in demand-driven once two or more independent pages reference them (the refs>=2 rule). Under ABox-first work the Individuals extracted from the lake are clustered first, and those clusters inform which categories and leaf classes are seeded, rather than the taxonomy being derived from expert priors alone. `boundary` is a contract, not prose: it states what each node EXCLUDES and where the excluded concept is classified instead.",
+  "namespaces": {
+    "context": "https://owf.example/owf/ns/v3.jsonld",
+    "page": "urn:owf:page/",
+    "class": "urn:owf:class/",
+    "individual": "urn:owf:individual/",
+    "linked": "urn:owf:linked/"
+  },
+  "domainEnum": [
+    "asset-engineering",
+    "marine-operations",
+    "energy-markets",
+    "environment-consenting",
+    "commercial-finance",
+    "hse-workforce"
+  ],
+  "maturityEnum": [
+    "established",
+    "emerging",
+    "mature",
+    "draft"
+  ],
+  "nodes": [
+    {
+      "slug": "thing",
+      "title": "owl:Thing",
+      "type": "Root",
+      "owl_role": "Root",
+      "definition": "Universal superclass. Every seeded domain and every authored class is, directly or transitively, a subclass of owl:Thing. It carries no distinguishing properties and exists so that every concept has one well-defined ultimate parent.",
+      "parent": null,
+      "boundary": "Holds no members of its own; a class parented directly to owl:Thing has skipped its domain and is a defect.",
+      "domain": null
+    },
+    {
+      "slug": "asset-engineering",
+      "title": "Asset Engineering Domain",
+      "type": "Domain",
+      "owl_role": "Domain",
+      "definition": "Physical wind farm assets and the engineering of them: turbines, foundations and substructures, array and export cables, electrical plant, and the reliability and maintenance discipline applied to all of them.",
+      "parent": "thing",
+      "boundary": "Excludes the vessels and offshore logistics that service the assets (classified under Marine Operations) and the commercial terms of the grid connection (classified under Energy Markets).",
+      "domain": "asset-engineering"
+    },
+    {
+      "slug": "marine-operations",
+      "title": "Marine Operations Domain",
+      "type": "Domain",
+      "owl_role": "Domain",
+      "definition": "Offshore marine activity that installs, accesses and services the wind farm: vessels and craft, weather and met-ocean windows, crew and cargo transfer, jack-up and cable campaigns, and ports.",
+      "parent": "thing",
+      "boundary": "Excludes the turbine and cable hardware itself (classified under Asset Engineering) and the workforce safety-management system (classified under HSE and Workforce).",
+      "domain": "marine-operations"
+    },
+    {
+      "slug": "energy-markets",
+      "title": "Energy Markets Domain",
+      "type": "Domain",
+      "owl_role": "Domain",
+      "definition": "How generated energy reaches the grid and is priced and dispatched: grid connection, dispatch and curtailment instructions, generation forecasting and trading, wholesale pricing and settlement.",
+      "parent": "thing",
+      "boundary": "Excludes the subsidy and revenue-support contracts that sit over the market price (classified under Commercial and Finance) and the physical electrical plant (classified under Asset Engineering).",
+      "domain": "energy-markets"
+    },
+    {
+      "slug": "environment-consenting",
+      "title": "Environment and Consenting Domain",
+      "type": "Domain",
+      "owl_role": "Domain",
+      "definition": "The environmental and consent envelope: permits and consents, environmental surveys, ecological impact, monitoring and mitigation obligations, and decommissioning duties.",
+      "parent": "thing",
+      "boundary": "Excludes occupational health and safety of the workforce (classified under HSE and Workforce) and the insurance of environmental liabilities (classified under Commercial and Finance).",
+      "domain": "environment-consenting"
+    },
+    {
+      "slug": "commercial-finance",
+      "title": "Commercial and Finance Domain",
+      "type": "Domain",
+      "owl_role": "Domain",
+      "definition": "The commercial layer over the asset: contracts and agreements, warranties and liability, insurance and claims, revenue-support instruments such as Contracts for Difference, and operating-cost accounting.",
+      "parent": "thing",
+      "boundary": "Excludes the market price-formation mechanics (classified under Energy Markets) and the consent obligations that create the liabilities (classified under Environment and Consenting).",
+      "domain": "commercial-finance"
+    },
+    {
+      "slug": "hse-workforce",
+      "title": "HSE and Workforce Domain",
+      "type": "Domain",
+      "owl_role": "Domain",
+      "definition": "Health, safety and the people: safety-management systems, incident and near-miss reporting, competence and training, permit-to-work, and occupational health.",
+      "parent": "thing",
+      "boundary": "Excludes the marine vessel operations the workforce travels on (classified under Marine Operations) and asset condition and reliability (classified under Asset Engineering).",
+      "domain": "hse-workforce"
+    },
+    {
+      "slug": "turbine-systems",
+      "title": "Turbine Systems",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "The wind turbine generator and its subsystems: rotor and blades, pitch and yaw, drivetrain and gearbox, generator and converter, nacelle and tower.",
+      "parent": "asset-engineering",
+      "boundary": "Excludes the foundation the tower sits on (Foundation and Substructure).",
+      "domain": "asset-engineering"
+    },
+    {
+      "slug": "foundation-substructure",
+      "title": "Foundation and Substructure",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Below-nacelle support structures: monopiles, jackets, transition pieces, floating platforms and their moorings, and scour protection.",
+      "parent": "asset-engineering",
+      "boundary": "Excludes the array cables that run between foundations (Cable and Electrical).",
+      "domain": "asset-engineering"
+    },
+    {
+      "slug": "cable-electrical",
+      "title": "Cable and Electrical",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Array cables, export cables, offshore and onshore substations, transformers, switchgear and the electrical protection that connects turbines to the grid boundary.",
+      "parent": "asset-engineering",
+      "boundary": "Excludes the commercial grid-connection agreement (Energy Markets, Grid Connection).",
+      "domain": "asset-engineering"
+    },
+    {
+      "slug": "condition-monitoring",
+      "title": "Condition Monitoring",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Sensing and diagnostics that infer asset health from data: vibration and SCADA analytics, alarms, fault signatures, and remaining-useful-life estimation.",
+      "parent": "asset-engineering",
+      "boundary": "Excludes the scheduling of the maintenance the diagnosis triggers (Reliability and Maintenance).",
+      "domain": "asset-engineering"
+    },
+    {
+      "slug": "reliability-maintenance",
+      "title": "Reliability and Maintenance",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Maintenance strategy and execution: preventive and corrective tasks, work orders, spares and logistics, failure taxonomies, and availability and reliability metrics.",
+      "parent": "asset-engineering",
+      "boundary": "Excludes the diagnosis that raises the task (Condition Monitoring) and the vessel that carries the technician (Marine Operations).",
+      "domain": "asset-engineering"
+    },
+    {
+      "slug": "balance-of-plant",
+      "title": "Balance of Plant",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Site-wide assets that are neither turbine nor grid connection: met masts, SCADA and control networks, offshore accommodation, and site infrastructure.",
+      "parent": "asset-engineering",
+      "boundary": "Excludes the turbines themselves (Turbine Systems).",
+      "domain": "asset-engineering"
+    },
+    {
+      "slug": "vessels-craft",
+      "title": "Vessels and Craft",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Marine craft used across the lifecycle: crew transfer vessels, service operation vessels, jack-up and installation vessels, cable-lay vessels, and support tugs.",
+      "parent": "marine-operations",
+      "boundary": "Excludes the ports they sail from (Port and Logistics).",
+      "domain": "marine-operations"
+    },
+    {
+      "slug": "weather-metocean",
+      "title": "Weather and Met-Ocean",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Wind, wave and current conditions and their forecasts: significant wave height, wind speed at hub height, tidal windows, and the operational limits derived from them.",
+      "parent": "marine-operations",
+      "boundary": "Excludes the market forecasting of generation output (Energy Markets, Forecasting and Trading).",
+      "domain": "marine-operations"
+    },
+    {
+      "slug": "access-transfer",
+      "title": "Access and Transfer",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Getting people and cargo onto assets: crew transfer operations, walk-to-work gangways, motion-compensated access, and transfer limits.",
+      "parent": "marine-operations",
+      "boundary": "Excludes the permit-to-work that authorises the intervention (HSE and Workforce).",
+      "domain": "marine-operations"
+    },
+    {
+      "slug": "campaign-planning",
+      "title": "Campaign Planning",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Planning of multi-day offshore campaigns: jack-up major-component-exchange campaigns, cable-repair mobilisations, and vessel scheduling against weather windows.",
+      "parent": "marine-operations",
+      "boundary": "Excludes the component-level maintenance task the campaign executes (Asset Engineering, Reliability and Maintenance).",
+      "domain": "marine-operations"
+    },
+    {
+      "slug": "port-logistics",
+      "title": "Port and Logistics",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Onshore and quayside support: operations and maintenance ports, marshalling, warehousing, and the movement of spares to the vessel.",
+      "parent": "marine-operations",
+      "boundary": "Excludes the spares inventory policy itself (Asset Engineering, Reliability and Maintenance).",
+      "domain": "marine-operations"
+    },
+    {
+      "slug": "grid-connection",
+      "title": "Grid Connection",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "The connection to the transmission or distribution network: connection agreements, grid-code compliance such as Engineering Recommendation G99, and the point of connection.",
+      "parent": "energy-markets",
+      "boundary": "Excludes the physical offshore substation hardware (Asset Engineering, Cable and Electrical).",
+      "domain": "energy-markets"
+    },
+    {
+      "slug": "dispatch-curtailment",
+      "title": "Dispatch and Curtailment",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Instructions that raise or lower output: system-operator dispatch, curtailment and constraint payments, and the response of the plant to them.",
+      "parent": "energy-markets",
+      "boundary": "Excludes the revenue impact of curtailment on a support contract (Commercial and Finance).",
+      "domain": "energy-markets"
+    },
+    {
+      "slug": "pricing-settlement",
+      "title": "Pricing and Settlement",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Wholesale price formation and imbalance settlement: day-ahead and intraday prices, imbalance pricing, and metering for settlement.",
+      "parent": "energy-markets",
+      "boundary": "Excludes the strike-price mechanics of a Contract for Difference (Commercial and Finance, Revenue Support).",
+      "domain": "energy-markets"
+    },
+    {
+      "slug": "forecasting-trading",
+      "title": "Forecasting and Trading",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Prediction of output and its sale: generation forecasting, route-to-market, power purchase agreements, and trading positions.",
+      "parent": "energy-markets",
+      "boundary": "Excludes the met-ocean forecasting used for marine access (Marine Operations, Weather and Met-Ocean).",
+      "domain": "energy-markets"
+    },
+    {
+      "slug": "consent-permitting",
+      "title": "Consent and Permitting",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Development and operational consents: marine licences, planning consent, permit conditions, and the compliance reporting they require.",
+      "parent": "environment-consenting",
+      "boundary": "Excludes the commercial liability arising from a breach (Commercial and Finance).",
+      "domain": "environment-consenting"
+    },
+    {
+      "slug": "environmental-survey",
+      "title": "Environmental Survey",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Baseline and monitoring surveys: benthic, geophysical, ornithological and marine-mammal surveys, and the datasets they produce.",
+      "parent": "environment-consenting",
+      "boundary": "Excludes the engineering geophysical survey of the cable route (Asset Engineering).",
+      "domain": "environment-consenting"
+    },
+    {
+      "slug": "ecology-impact",
+      "title": "Ecology and Impact",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Assessment of effects on the receiving environment: collision and displacement risk, underwater noise, and cumulative impact.",
+      "parent": "environment-consenting",
+      "boundary": "Excludes the mitigation actions taken in response (Monitoring and Mitigation).",
+      "domain": "environment-consenting"
+    },
+    {
+      "slug": "monitoring-mitigation",
+      "title": "Monitoring and Mitigation",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Actions that reduce or track impact: soft-start piling, noise abatement, adaptive management, and post-consent monitoring.",
+      "parent": "environment-consenting",
+      "boundary": "Excludes the survey that establishes the baseline (Environmental Survey).",
+      "domain": "environment-consenting"
+    },
+    {
+      "slug": "decommissioning",
+      "title": "Decommissioning",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "End-of-life obligations: decommissioning programmes, removal and disposal, seabed reinstatement, and the financial security behind them.",
+      "parent": "environment-consenting",
+      "boundary": "Excludes the decommissioning-cost provision on the balance sheet (Commercial and Finance).",
+      "domain": "environment-consenting"
+    },
+    {
+      "slug": "contracts-agreements",
+      "title": "Contracts and Agreements",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "The contractual framework: O&M service agreements, turbine supply agreements, charters, and the obligations and service levels within them.",
+      "parent": "commercial-finance",
+      "boundary": "Excludes the grid connection agreement's technical content (Energy Markets, Grid Connection).",
+      "domain": "commercial-finance"
+    },
+    {
+      "slug": "warranty-liability",
+      "title": "Warranty and Liability",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Warranty regimes and liability: defect warranties, serial-defect claims, liquidated damages, and availability guarantees.",
+      "parent": "commercial-finance",
+      "boundary": "Excludes the condition-monitoring alarm that evidences a claim (Asset Engineering, Condition Monitoring).",
+      "domain": "commercial-finance"
+    },
+    {
+      "slug": "insurance-claims",
+      "title": "Insurance and Claims",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Risk transfer: operational and business-interruption insurance, claims handling, deductibles, and loss adjustment.",
+      "parent": "commercial-finance",
+      "boundary": "Excludes the physical cable failure that triggers a claim (Asset Engineering, Cable and Electrical).",
+      "domain": "commercial-finance"
+    },
+    {
+      "slug": "revenue-support",
+      "title": "Revenue Support",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Revenue-stabilising instruments: Contracts for Difference and their strike and reference prices, power purchase agreements, and merchant exposure.",
+      "parent": "commercial-finance",
+      "boundary": "Excludes the wholesale reference-price formation itself (Energy Markets, Pricing and Settlement).",
+      "domain": "commercial-finance"
+    },
+    {
+      "slug": "cost-opex",
+      "title": "Cost and Opex",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Operating-cost accounting: opex budgeting, cost of energy, spares and vessel cost allocation, and lifecycle cost models.",
+      "parent": "commercial-finance",
+      "boundary": "Excludes the physical spares inventory (Asset Engineering, Reliability and Maintenance).",
+      "domain": "commercial-finance"
+    },
+    {
+      "slug": "safety-management",
+      "title": "Safety Management",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "The safety-management system: risk assessments, method statements, safety cases, and the governance of safe work offshore.",
+      "parent": "hse-workforce",
+      "boundary": "Excludes the vessel operations the work depends on (Marine Operations).",
+      "domain": "hse-workforce"
+    },
+    {
+      "slug": "incident-reporting",
+      "title": "Incident Reporting",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Capture and analysis of events: near misses, accidents, dangerous occurrences, root-cause analysis, and regulatory reporting.",
+      "parent": "hse-workforce",
+      "boundary": "Excludes the asset-failure record behind a technical incident (Asset Engineering, Reliability and Maintenance).",
+      "domain": "hse-workforce"
+    },
+    {
+      "slug": "competence-training",
+      "title": "Competence and Training",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Workforce capability: GWO and role-based training, certification and revalidation, and competence assurance.",
+      "parent": "hse-workforce",
+      "boundary": "Excludes the contractual staffing obligation (Commercial and Finance, Contracts and Agreements).",
+      "domain": "hse-workforce"
+    },
+    {
+      "slug": "permit-to-work",
+      "title": "Permit to Work",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Authorisation and control of work: permits, isolations and lock-out/tag-out, confined-space and working-at-height controls.",
+      "parent": "hse-workforce",
+      "boundary": "Excludes the access-and-transfer operation that delivers the technician (Marine Operations, Access and Transfer).",
+      "domain": "hse-workforce"
+    },
+    {
+      "slug": "occupational-health",
+      "title": "Occupational Health",
+      "type": "Category",
+      "owl_role": "Category",
+      "definition": "Worker health: medical fitness, fatigue and shift management, exposure monitoring, and offshore welfare.",
+      "parent": "hse-workforce",
+      "boundary": "Excludes the environmental monitoring of the receiving habitat (Environment and Consenting, Monitoring and Mitigation).",
+      "domain": "hse-workforce"
+    }
+  ]
+}
