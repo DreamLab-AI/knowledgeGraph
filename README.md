@@ -8,6 +8,13 @@ a binary graph format, and the WebAssembly explorer that renders the result. It 
 self-contained release: corpus, build, viewer and method in one tree, published at
 [narrativegoldmine.com](https://narrativegoldmine.com).
 
+It is also a working example of the layer the industry began demanding of agentic
+systems in 2026: a shared, formal semantic substrate — an ontology agents can be
+grounded in and checked against (neurosymbolic AI, in the current vocabulary). The
+sibling [VisionClaw](https://github.com/DreamLab-AI/VisionClaw) engine reasons over
+this corpus with OWL 2 EL and measured the grounding lift; this repo gives you the
+corpus, the pipeline and the method to build your own.
+
 > **What this corpus is.** Mostly **AI-generated synthetic content, produced under
 > human direction, by design**. It is an ontology testbed (built to exercise a
 > medium-scale Logseq→OWL pipeline and a GPU graph renderer), not an authoritative
