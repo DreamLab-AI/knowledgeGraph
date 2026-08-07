@@ -136,7 +136,7 @@ public:: true
         "label": "Search Algorithms"
       },
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -229,7 +229,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[AI Technique]]
   - Uses [[Search Algorithms]]
-  - Uses [[Optimization Algorithm]]
+  - Uses [[Optimisation Algorithm]]
   - Enables [[Automated Planning]]
   - Enables [[Pathfinding Algorithm]]
   - Depends on [[Search Algorithm]]

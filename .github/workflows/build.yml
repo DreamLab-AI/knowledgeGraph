@@ -30,11 +30,11 @@
 #
 # What this workflow proves, on every push and pull request:
 #   1. the corpus contains no credential-shaped strings (load-bearing: the
-#      corpus is the published artefact — 7,874 markdown pages go out verbatim)
+#      corpus is the published artefact — 8,124 markdown pages go out verbatim)
 #   2. the NGG1 binary writer still matches its 183-byte golden fixture
 #      (pipeline/tests/test_emit_graph_tiers.py, pipeline/tests/fixtures/ngg1-3n2e.bin)
 #   3. the 7-stage pipeline runs end to end from ontology/pages/
-#   4. the build produced exactly 7874 OWL classes — a hard contract gate, not
+#   4. the build produced exactly 8124 OWL classes — a hard contract gate, not
 #      a printed statistic
 #   5. pipeline.validate reports zero errors over the corpus
 #
@@ -61,7 +61,7 @@ env:
   # The corpus contract. Both dist-ci/data/graph/stats.json (`classes`) and
   # dist-ci/data/ontology.json (`class[]` length) must report this many OWL
   # classes or the build fails. Change it only alongside the corpus.
-  EXPECTED_CLASSES: '7874'
+  EXPECTED_CLASSES: '8124'
 
 jobs:
   build:
@@ -141,12 +141,12 @@ jobs:
           ls -la dist-ci/data/graph/
 
       # ------------------------------------------------------------------
-      # GATE 3 — corpus contract: the build must produce 7874 OWL classes
+      # GATE 3 — corpus contract: the build must produce 8124 OWL classes
       # ------------------------------------------------------------------
       # Read from the artefact the pipeline actually wrote, not from stdout.
       # A silent parse regression (a dropped JSON-LD fence, a changed public
       # filter) shows up here as a number, not as a warning nobody reads.
-      - name: Assert corpus contract (7874 classes)
+      - name: Assert corpus contract (8124 classes)
         run: |
           set -euo pipefail
           python - <<'PY'

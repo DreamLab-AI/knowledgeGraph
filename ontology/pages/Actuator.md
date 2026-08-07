@@ -174,7 +174,7 @@ public:: true
 ```
 
 - ### Definition
-  - An actuator is a transducer that converts a stored or supplied energy form — electrical, hydraulic, pneumatic, or thermochemical — into controlled mechanical motion or force, functioning as the output effector in any closed-loop [[Control System]]. In [[Robotics]], actuators execute commands from a [[Robot Controller]] by producing joint rotations, linear displacements, or gripping forces, and their dynamic properties fundamentally constrain achievable [[Robot Kinematics]], payload, and safety in [[Human-Robot Interaction]]. The choice of actuation technology propagates through every layer of system design, from mechanical geometry and energy storage to [[Feedback Control]] law selection and [[Motion Planning]] strategy.
+  - An actuator is a transducer that converts a stored or supplied energy form — electrical, hydraulic, pneumatic, or thermochemical — into controlled mechanical motion or force, functioning as the output effector in any closed-loop [[Control System]]. In [[Robotics]], actuators execute commands from a [[Robot Controller]] by producing joint rotations, linear displacements, or gripping forces, and their dynamic properties fundamentally constrain achievable [[Robot Kinematics]], payload, and safety in [[Human Robot Interaction]]. The choice of actuation technology propagates through every layer of system design, from mechanical geometry and energy storage to [[Feedback Control]] law selection and [[Motion Planning]] strategy.
 
 - ### Overview
   - Actuators sit at the boundary between the computational (cyber) domain and the physical world — they are the means by which digital control signals become real forces and movements.
@@ -222,7 +222,7 @@ public:: true
 - ### Applications and Use Cases
   - **Industrial Robot Arms** — Six-axis articulated arms (e.g., KUKA, ABB, FANUC) use electric servo actuators at every joint; coordinated by a [[Robot Controller]] running real-time [[Motion Planning]] and torque control loops to achieve sub-millimetre repeatability in automotive welding and electronic assembly.
   - **Collaborative Robots (Cobots)** — Torque-sensing electric actuators or SEAs allow power-and-force limiting compliance, enabling safe operation alongside humans without physical guards; standardised by ISO/TS 15066.
-  - **Exoskeletons and Prosthetics** — Lightweight electric and pneumatic actuators assist or restore limb function; [[Human-Robot Interaction]] quality is dominated by actuator backdrivability and [[Impedance Control]] fidelity.
+  - **Exoskeletons and Prosthetics** — Lightweight electric and pneumatic actuators assist or restore limb function; [[Human Robot Interaction]] quality is dominated by actuator backdrivability and [[Impedance Control]] fidelity.
   - **Autonomous Vehicles (Steering and Braking)** — Electromechanical actuators replace hydraulic systems in steer-by-wire and brake-by-wire architectures, enabling [[Autonomous Vehicle]] control without a mechanical connection to the driver.
   - **Aerospace and Defence** — Electrohydrostatic and electromechanical actuators operate flight control surfaces; meet DO-178C / DO-254 certification. High power density and failure-mode determinism are essential.
   - **Medical Robotics** — Miniaturised electric and pneumatic actuators drive [[Surgical Robot]] instruments (e.g., da Vinci system); must satisfy IEC 60601 electrical safety and sterilisability requirements.
@@ -245,7 +245,7 @@ public:: true
   - requires:: [[Power Electronics]]
   - requires:: [[Sensor]]
   - enables:: [[Robot Kinematics]]
-  - enables:: [[Human-Robot Interaction]]
+  - enables:: [[Human Robot Interaction]]
   - enables:: [[Teleoperation]]
   - enables:: [[Motion Planning]]
   - dependsOn:: [[Encoder]]

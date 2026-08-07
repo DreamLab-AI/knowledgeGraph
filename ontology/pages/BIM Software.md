@@ -100,7 +100,7 @@ public:: true
         "label": "Facility Management"
       },
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       }
     ]
@@ -144,7 +144,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[3D Modeling]]",
+      "raw": "[[3D Modelling]]",
       "resolved": "urn:visionflow:owl:class:3-d-modeling",
       "kind": "ResolvedLink"
     },
@@ -186,7 +186,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Design Software]]
   - requires:: [[CAD Capabilities]], [[Data Management]], [[Collaboration Tools]]
-  - enables:: [[3D Modeling]], [[Construction Coordination]], [[Facility Management]]
+  - enables:: [[3D Modelling]], [[Construction Coordination]], [[Facility Management]]
 
 - ### Content
 

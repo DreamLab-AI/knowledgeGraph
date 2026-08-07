@@ -15,7 +15,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:asset-tokenization",
+      "@id": "urn:ngm:class:asset-tokenisation",
       "label": "Asset Tokenization"
     }
   ],
@@ -56,7 +56,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       }
     ],
@@ -120,7 +120,7 @@ public:: true
 ```
 
 - ### Definition
-  - [[Tokenized Asset]] is defined in relation to [[Asset Tokenization]], [[Smart Contract]], [[Real-World Asset]], [[Fractional Ownership]], building on [[Asset Tokenization]].
+  - [[Tokenized Asset]] is defined in relation to [[Asset Tokenisation]], [[Smart Contract]], [[Real-World Asset]], [[Fractional Ownership]], building on [[Asset Tokenisation]].
   - A tokenized asset is a representation of ownership or economic rights in a real-world or digital asset recorded as a blockchain token. The token acts as a programmable, transferable claim whose issuance, transfer, and settlement are governed by smart contracts, enabling fractional ownership, faster settlement, and broader access. Underlying assets range from securities, real estate, and commodities to art and intellectual property.
 
 - ### Overview
@@ -138,7 +138,7 @@ public:: true
   - Tokenized intellectual property, art, and collectibles.
 
 - ### Relationships
-  - subClassOf:: [[Asset Tokenization]]
+  - subClassOf:: [[Asset Tokenisation]]
   - relatedTo:: [[Tokenization]]
   - relatedTo:: [[Digital Asset]]
   - relatedTo:: [[Security Token]]
@@ -146,7 +146,7 @@ public:: true
   - bridgesTo:: [[Real-World Asset]]
   - bridgesTo:: [[Non-Fungible Token]]
   - enables:: [[Fractional Ownership]]
-  - partOf:: [[Asset Tokenization]]
+  - partOf:: [[Asset Tokenisation]]
   - uses:: [[Smart Contract]]
   - uses:: [[ERC-20]]
   - dependsOn:: [[Smart Contract]]

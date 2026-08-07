@@ -178,7 +178,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -419,7 +419,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Localization]]",
+      "raw": "[[Localisation]]",
       "resolved": "urn:visionflow:owl:class:localization",
       "kind": "ResolvedLink"
     },

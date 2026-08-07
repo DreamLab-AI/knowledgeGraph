@@ -56,7 +56,7 @@ public:: true
         "label": "Fraud Detection"
       },
       {
-        "@id": "urn:ngm:class:behavioral-analytics",
+        "@id": "urn:ngm:class:behavioural-analytics",
         "label": "Behavioral Analytics"
       },
       {
@@ -148,7 +148,7 @@ public:: true
   - Stream processing systems ingest continuous event streams from sources such as IoT sensors, clickstreams, financial transactions, and log aggregators, applying stateful transformations — filtering, aggregation, joins, and enrichment — within bounded time windows before emitting results to downstream sinks. Unlike batch processing, which operates on finite datasets loaded into storage, stream processing maintains in-memory operator state and processes each record as it arrives. [[Apache Kafka]] is the dominant durable log and transport layer; frameworks including Apache Flink and Apache Spark Streaming provide the distributed computation layer above it.
 
 - ### Relationships
-  - [[Message Broker]] and [[Message Queue]] infrastructure provides the durable, partitioned log that decouples producers from stream processors. Processed results feed [[Data Pipeline]] outputs and enable real-time [[Fraud Detection]] and [[Behavioral Analytics]]. [[ETL Pipeline]] workflows increasingly blend batch and streaming in lambda or kappa architectures, while [[Machine Learning Pipeline]] deployments use stream processing for online feature computation and model serving.
+  - [[Message Broker]] and [[Message Queue]] infrastructure provides the durable, partitioned log that decouples producers from stream processors. Processed results feed [[Data Pipeline]] outputs and enable real-time [[Fraud Detection]] and [[Behavioural Analytics]]. [[ETL Pipeline]] workflows increasingly blend batch and streaming in lambda or kappa architectures, while [[Machine Learning Pipeline]] deployments use stream processing for online feature computation and model serving.
 
 - ### Content
   - The theoretical foundations of stream processing trace to the Stanford STREAM project and MIT Aurora/Borealis work in the early 2000s, which formalised windowing semantics and continuous query languages. Commercial systems such as Esper (complex event processing), IBM InfoSphere Streams, and Oracle CEP followed. Apache Storm (2011, open-sourced from BackType/Twitter) was the first widely adopted open-source distributed stream processor, followed by Apache Samza (LinkedIn, 2013), Apache Spark Streaming (2012), and Apache Flink (2014).

@@ -72,13 +72,13 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:standardization",
+        "@id": "urn:ngm:class:standardisation",
         "label": "Standardisation"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:standardization",
+        "@id": "urn:ngm:class:standardisation",
         "label": "Standardisation"
       }
     ],

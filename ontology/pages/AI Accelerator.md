@@ -35,7 +35,7 @@ public:: true
       { "@id": "urn:ngm:class:matrix-multiplication", "label": "Matrix Multiplication" }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:data-center", "label": "Data Center" }
+      { "@id": "urn:ngm:class:data-centre", "label": "Data Center" }
     ],
     "supports": [
       { "@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing" }
@@ -76,7 +76,7 @@ public:: true
   - Sparsity support and quantisation increase effective throughput per watt.
 - ### Applications
   - Training and serving large language models and vision models at scale.
-  - Real-time inference at the edge and in [[Data Center]] deployments.
+  - Real-time inference at the edge and in [[Data Centre]] deployments.
   - Scientific computing and simulation workloads expressed as dense tensor algebra.
 - ### Relationships
   - subClassOf:: [[Hardware Accelerator]]
@@ -88,7 +88,7 @@ public:: true
   - enables:: [[Neural Network]]
   - enables:: [[Distributed Training]]
   - uses:: [[Matrix Multiplication]]
-  - requires:: [[Data Center]]
+  - requires:: [[Data Centre]]
   - supports:: [[Cloud Computing]]
   - relatedTo:: [[GPU]]
   - relatedTo:: [[TPU]]

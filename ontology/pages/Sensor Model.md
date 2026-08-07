@@ -75,7 +75,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -143,7 +143,7 @@ public:: true
 	- Incorporate the likelihood into a [[Kalman Filter]] or [[Particle Filter]] update.
 	- Validate against ground truth and recalibrate as hardware drifts.
 - ### Applications
-	- Robot [[Localization]] against a known map.
+	- Robot [[Localisation]] against a known map.
 	- Simultaneous mapping and localisation in [[SLAM]].
 	- Multi-sensor [[Sensor Fusion]] and [[Robot Perception]].
 	- Building consistent maps via [[Mapping]].
@@ -153,7 +153,7 @@ public:: true
 	- hasPart:: [[Observation Model]]
 	- requires:: [[Lidar]]
 	- requires:: [[Camera]]
-	- enables:: [[Localization]]
+	- enables:: [[Localisation]]
 	- enables:: [[SLAM]]
 	- supports:: [[Kalman Filter]]
 	- supports:: [[Particle Filter]]

@@ -135,7 +135,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:ai-knowledge-base",
+        "@id": "urn:ngm:class:knowledge-base",
         "label": "AI Knowledge Base"
       },
       {

@@ -220,7 +220,7 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"},
-      {"@id": "urn:ngm:class:model-card", "label": "Model Card"},
+      {"@id": "urn:ngm:class:model-cards", "label": "Model Card"},
       {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"},
       {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
       {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}

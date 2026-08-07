@@ -49,7 +49,7 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"},
+      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"},
       {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"}
     ],
     "enables": [
@@ -100,7 +100,7 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - **requires** [[3D Modeling]] — foundational skill for authoring geometry
+  - **requires** [[3D Modelling]] — foundational skill for authoring geometry
   - **requires** [[Rendering Engine]] — real-time feedback loop for design iteration
   - **enables** [[3D Content Generation]] — design artefacts feed generative pipelines
   - **enables** [[Real-Time Rendering]] — optimised assets enable live rendering

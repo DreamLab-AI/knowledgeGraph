@@ -94,7 +94,7 @@ public:: true
         "label": "Historical Research"
       },
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       },
       {
@@ -147,7 +147,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[3D Modeling]]",
+      "raw": "[[3D Modelling]]",
       "resolved": "urn:visionflow:owl:class:3-d-modeling",
       "kind": "ResolvedLink"
     },
@@ -198,7 +198,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Heritage]]
-  - requires:: [[Photogrammetry]], [[3D Modeling]], [[Historical Research]]
+  - requires:: [[Photogrammetry]], [[3D Modelling]], [[Historical Research]]
   - enables:: [[Heritage Preservation]], [[Virtual Tourism]], [[Educational Experiences]]
   - bridges-to:: [[Computer Vision]] (ai)
 

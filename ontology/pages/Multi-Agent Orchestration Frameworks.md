@@ -87,7 +87,7 @@ public:: true
     ],
     "implements": [
       {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:agent2agent-protocol", "label": "Agent2Agent Protocol"},
+      {"@id": "urn:ngm:class:agent2-agent-protocol", "label": "Agent2Agent Protocol"},
       {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"}
     ],
     "relatedTo": [

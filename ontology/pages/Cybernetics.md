@@ -90,7 +90,7 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"},
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous Systems"},
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ],
     "contrastsWith": [

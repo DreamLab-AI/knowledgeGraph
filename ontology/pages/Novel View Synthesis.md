@@ -96,7 +96,7 @@ public:: true
         "label": "Structure-from-Motion"
       },
       {
-        "@id": "urn:ngm:class:multi-layer-perceptron",
+        "@id": "urn:ngm:class:multilayer-perceptron",
         "label": "Multi-Layer Perceptron"
       }
     ],

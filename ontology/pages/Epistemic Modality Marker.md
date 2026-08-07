@@ -43,10 +43,38 @@ elevatedFrom:: [[Could]]
   "@id": "urn:ngm:class:epistemic-modality-marker",
   "@type": "Class",
   "label": "Epistemic Modality Marker",
-  "definition": "Could is a modal verb in English expressing past ability, possibility, permission or polite requests. It functions as the past form of the modal can and as a marker of tentative or hypothetical meaning.",
+  "definition": "An Epistemic Modality Marker is a lexical or grammatical element — such as the modal verbs may, might, could and must, or hedges like perhaps and possibly — that encodes a speaker's degree of certainty or commitment toward a proposition. Detecting and generating such markers is central to hedge detection, uncertainty-aware natural language processing and calibrated dialogue systems.",
   "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computational-linguistics",
+        "label": "Computational Linguistics"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dialogue-systems",
+        "label": "Dialogue Systems"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ]
+  },
   "subClassOf": [
     {
       "@id": "urn:ngm:class:natural-language-processing",

@@ -52,6 +52,18 @@ public:: true
       "label": "Economics"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
   "quality": 0.6,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -102,6 +114,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Economics]]
   - bridges-to:: [[Distributed Ledger Technology]]
+  - related-to:: [[Blockchain]]
 
 - ### Content
   - Paolo Tasca is an academic and adviser working on the economics of digital currencies, distributed ledgers and financial technology. He founded and directed the UCL Centre for Blockchain Technologies, an interdisciplinary research group studying the design and economics of these systems.

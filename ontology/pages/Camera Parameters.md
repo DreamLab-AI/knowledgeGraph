@@ -98,7 +98,7 @@ public:: true
         "label": "Calibration Target"
       },
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -168,7 +168,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Optimization Algorithm]]",
+      "raw": "[[Optimisation Algorithm]]",
       "resolved": "urn:visionflow:owl:class:optimization-algorithm",
       "kind": "ResolvedLink"
     }
@@ -194,7 +194,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Imaging Parameters]]
-  - requires:: [[Camera Calibration]], [[Calibration Target]], [[Optimization Algorithm]]
+  - requires:: [[Camera Calibration]], [[Calibration Target]], [[Optimisation Algorithm]]
   - enables:: [[3D Reconstruction]], [[Object Measurement]], [[Scene Localization]]
   - bridges-to:: [[Computer Vision]]
 

@@ -92,7 +92,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       },
       {
@@ -150,7 +150,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[3D Modeling]]",
+      "raw": "[[3D Modelling]]",
       "resolved": "urn:visionflow:owl:class:3-d-modeling",
       "kind": "ResolvedLink"
     },
@@ -196,7 +196,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Human Technology]]
-  - requires:: [[Motion Capture]], [[3D Modeling]], [[AI Synthesis]]
+  - requires:: [[Motion Capture]], [[3D Modelling]], [[AI Synthesis]]
   - enables:: [[Virtual Performances]], [[Digital Twins]], [[Synthetic Media]]
   - bridges-to:: [[DID Nostr Identity]]
 

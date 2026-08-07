@@ -150,7 +150,7 @@ public:: true
         "label": "Scene Design"
       },
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       }
     ]
@@ -219,7 +219,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[3D Modeling]]",
+      "raw": "[[3D Modelling]]",
       "resolved": "urn:visionflow:owl:class:3-d-modeling",
       "kind": "ResolvedLink"
     },
@@ -284,7 +284,7 @@ public:: true
   - bridges-to:: [[Computer Vision]] (ai)
   - has-part:: [[Editor Interface]], [[Asset Pipeline]], [[Preview System]], [[Generative Design Tool]]
   - requires:: [[Compute Infrastructure]], [[Graphics API]]
-  - enables:: [[Content Creation]], [[3D Modeling]], [[Scene Design]], [[Interactive Experience Development]]
+  - enables:: [[Content Creation]], [[3D Modelling]], [[Scene Design]], [[Interactive Experience Development]]
 
 - ### Content
   Authoring Tool — content pending enrichment.

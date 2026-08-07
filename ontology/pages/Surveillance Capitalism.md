@@ -50,7 +50,7 @@ public:: true
         "label": "Mass Data Collection"
       },
       {
-        "@id": "urn:ngm:class:behavioral-analytics",
+        "@id": "urn:ngm:class:behavioural-analytics",
         "label": "Behavioral Analytics"
       },
       {
@@ -173,10 +173,10 @@ public:: true
 ```
 
 - ### Definition
-  - Surveillance Capitalism is the economic system in which [[Behavioral Analytics]] derived from continuous monitoring of human activity is commodified into prediction products and sold to advertisers and institutional clients seeking to influence behaviour, representing a structural challenge to [[Data Sovereignty]], [[Digital Rights]], and [[Digital Society]] autonomy.
+  - Surveillance Capitalism is the economic system in which [[Behavioural Analytics]] derived from continuous monitoring of human activity is commodified into prediction products and sold to advertisers and institutional clients seeking to influence behaviour, representing a structural challenge to [[Data Sovereignty]], [[Digital Rights]], and [[Digital Society]] autonomy.
 
 - ### Relationships
-  - Surveillance Capitalism is an expression of [[Platform Economy]] logic taken to its behavioural extreme, and it is the principal target of [[GDPR]] and similar [[Data Protection Regulation]] frameworks that mandate [[Consent Management]] and [[Data Minimisation]]. Its outputs, predictive behavioural profiles, are produced by [[Behavioral Analytics]] pipelines operating on mass telemetry from [[Social Media]] platforms, search engines, and connected devices. Resistance to surveillance capitalism focuses on [[Data Sovereignty]] — users reclaiming control of their data — and [[Digital Rights]] frameworks. The harms it produces are catalogued under [[Digital Society Surveillance]] and have driven legislative moves towards [[Algorithmic Accountability]].
+  - Surveillance Capitalism is an expression of [[Platform Economy]] logic taken to its behavioural extreme, and it is the principal target of [[GDPR]] and similar [[Data Protection Regulation]] frameworks that mandate [[Consent Management]] and [[Data Minimisation]]. Its outputs, predictive behavioural profiles, are produced by [[Behavioural Analytics]] pipelines operating on mass telemetry from [[Social Media]] platforms, search engines, and connected devices. Resistance to surveillance capitalism focuses on [[Data Sovereignty]] — users reclaiming control of their data — and [[Digital Rights]] frameworks. The harms it produces are catalogued under [[Digital Society Surveillance]] and have driven legislative moves towards [[Algorithmic Accountability]].
 
 - ### Content
   - Zuboff's analysis distinguishes surveillance capitalism from earlier capitalism by identifying the transformation of behavioural surplus — data collected beyond what is needed to improve the service — into a privately owned asset traded in opaque markets. The original Google AdWords system exemplified this: behavioural signals from billions of searches (query terms, click patterns, dwell times) were found to predict advertising engagement with unprecedented accuracy, creating a feedback loop where more data produced better predictions, better predictions attracted more advertisers, and more advertising revenue funded more data collection.

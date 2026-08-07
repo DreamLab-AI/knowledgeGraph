@@ -76,7 +76,7 @@ public:: true
       {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
       {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
       {"@id": "urn:ngm:class:comfy-ui", "label": "ComfyUI"},
-      {"@id": "urn:ngm:class:controlnet", "label": "ControlNet"},
+      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
       {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
     ]

@@ -35,7 +35,7 @@ public:: true
     ],
     "implements":[
       {"@id":"urn:ngm:class:gaussian-mixture-model","label":"Gaussian Mixture Model"},
-      {"@id":"urn:ngm:class:normalizing-flow","label":"Normalizing Flow"}
+      {"@id":"urn:ngm:class:normalising-flow","label":"Normalizing Flow"}
     ],
     "relatedTo":[
       {"@id":"urn:ngm:class:variational-autoencoder","label":"Variational Autoencoder"},

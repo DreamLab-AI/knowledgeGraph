@@ -73,7 +73,7 @@ public:: true
         "label": "Accessibility"
       },
       {
-        "@id": "urn:ngm:class:user-centered-design",
+        "@id": "urn:ngm:class:user-centred-design",
         "label": "User-Centered Design"
       }
     ],

@@ -52,6 +52,12 @@ public:: true
       "label": "Legal and Regulatory"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:china", "label": "China"},
+      {"@id": "urn:ngm:class:digital-governance", "label": "Digital Governance"}
+    ]
+  },
   "quality": 0.6,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -102,6 +108,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[China]]
+  - related-to:: [[Digital Governance]]
 
 - ### Content
   - The United States is a federal republic of fifty states in North America. It has the largest national economy in the world by nominal output and is a centre of technology, finance, and academic research.

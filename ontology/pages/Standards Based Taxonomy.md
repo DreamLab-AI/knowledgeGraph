@@ -43,7 +43,7 @@ alias:: StandardsBasedTaxonomy
   "@id": "urn:ngm:class:standards-based-taxonomy",
   "@type": "Class",
   "label": "Standards Based Taxonomy",
-  "definition": "Standards Based Taxonomy is a spatial computing concept.",
+  "definition": "A standards-based taxonomy is a hierarchical classification scheme whose categories, labels, and relationships are drawn from published technical standards rather than ad hoc convention. Within spatial computing it organises concepts using vocabularies from bodies such as the W3C, ISO, and the Khronos Group, supporting consistent categorisation and semantic interoperability across platforms.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "relations": {
@@ -52,6 +52,17 @@ alias:: StandardsBasedTaxonomy
         "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:standards-organization", "label": "Standards Organization"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:classification-system", "label": "Classification System"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:web-standards", "label": "Web Standards"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
     ]
   },
   "quality": 0.35,
@@ -96,14 +107,18 @@ alias:: StandardsBasedTaxonomy
 
 
 - ### Definition
-  - Standards Based Taxonomy is a concept within the metaverse domain. Further enrichment pending.
+  - A standards-based taxonomy is a hierarchical classification scheme whose categories, labels, and relationships are drawn from published technical standards rather than ad hoc convention. Within spatial computing it organises concepts using vocabularies from bodies such as the W3C, ISO, and the Khronos Group, supporting consistent categorisation and semantic interoperability across platforms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:StandardsBasedTaxonomy
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Standards Organization]]
+  - related-to:: [[Classification System]]
+  - related-to:: [[Semantic Web]]
+  - related-to:: [[Web Standards]]
+  - enables:: [[Interoperability]]
 
 - ### Content
 

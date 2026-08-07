@@ -35,7 +35,7 @@ public:: true
       {"@id": "urn:ngm:class:slam", "label": "SLAM"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:localization", "label": "Localization"},
+      {"@id": "urn:ngm:class:localisation", "label": "Localization"},
       {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
     ]
@@ -48,7 +48,7 @@ public:: true
   - [[RB-1008-odometry]] is the encoder-based pose estimation subsystem of the RB-1008 mobile robot, fusing differential wheel encoder data with [[Sensor Fusion|IMU measurements]] and publishing continuous odometric transforms that anchor the [[ROS Navigation Stack]] local planner and [[SLAM]] algorithms to a consistent reference frame.
 
 - ### Relationships
-  - [[RB-1008-odometry]] is a component [[partOf]] the [[Wheeled Mobile Robot]] architecture of the RB-1008 and its associated [[Mobile Robot Platform]] family. It feeds directly into the [[ROS Navigation Stack]], providing the wheel odometry transform (odom → base_link) consumed by localisation nodes. The subsystem is complemented by [[Visual Odometry]] for environments where wheel slip is significant, and both contribute to robust [[Localization]] and [[Autonomous Navigation]] behaviour. In complex environments, raw odometry serves as the dead-reckoning prior that [[SLAM]] algorithms correct against scan-matching evidence.
+  - [[RB-1008-odometry]] is a component [[partOf]] the [[Wheeled Mobile Robot]] architecture of the RB-1008 and its associated [[Mobile Robot Platform]] family. It feeds directly into the [[ROS Navigation Stack]], providing the wheel odometry transform (odom → base_link) consumed by localisation nodes. The subsystem is complemented by [[Visual Odometry]] for environments where wheel slip is significant, and both contribute to robust [[Localisation]] and [[Autonomous Navigation]] behaviour. In complex environments, raw odometry serves as the dead-reckoning prior that [[SLAM]] algorithms correct against scan-matching evidence.
 
 - ### Content
   - The RB-1008 is a wheeled mobile robot platform developed by Robotnik Automation, a Spanish manufacturer specialising in professional service robots. The RB-1008 series targets indoor logistics, security, and research applications, combining a compact differential drive base with a modular sensor tower that can accommodate LIDAR, RGB-D cameras, and manipulation arms. Odometry on this platform is derived from quadrature encoders mounted on the drive motor shafts, providing encoder tick counts from which wheel angular velocity and linear displacement are computed at kilohertz rates.

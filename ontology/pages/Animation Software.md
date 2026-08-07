@@ -116,7 +116,7 @@ public:: true
         "label": "GPU Rendering"
       },
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       },
       {
@@ -249,7 +249,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[3D Modeling]]",
+      "raw": "[[3D Modelling]]",
       "resolved": "urn:visionflow:owl:class:3-d-modeling",
       "kind": "ResolvedLink"
     },
@@ -290,7 +290,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Content Creation Tools]]
-  - requires:: [[GPU Rendering]], [[3D Modeling]], [[Rigging Systems]]
+  - requires:: [[GPU Rendering]], [[3D Modelling]], [[Rigging Systems]]
   - enables:: [[3D Character Animation]], [[Motion Graphics]], [[Visual Effects]]
   - bridges-to:: [[Computer Vision]] (ai)
 

@@ -51,7 +51,7 @@ public:: true
       "vc:label": "Protocol Translator"
     },
     {
-      "@id": "urn:visionflow:linked:real-time-synchronization",
+      "@id": "urn:visionflow:linked:real-time-synchronisation",
       "vc:label": "Real-Time Synchronization"
     },
     {
@@ -166,7 +166,7 @@ public:: true
         "label": "Data Federation"
       },
       {
-        "@id": "urn:ngm:class:real-time-synchronization",
+        "@id": "urn:ngm:class:real-time-synchronisation",
         "label": "Real-time Synchronization"
       }
     ],
@@ -251,7 +251,7 @@ public:: true
     },
     {
       "raw": "[[Real-Time Synchronization]]",
-      "resolved": "urn:visionflow:linked:real-time-synchronization",
+      "resolved": "urn:visionflow:linked:real-time-synchronisation",
       "kind": "StubLink"
     },
     {

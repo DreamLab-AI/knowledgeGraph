@@ -244,7 +244,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ieee-p7003-2021",
+        "@id": "urn:ngm:class:ieee-p-7003-2021",
         "label": "IEEE P7003-2021"
       },
       {

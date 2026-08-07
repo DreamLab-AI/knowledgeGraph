@@ -300,7 +300,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Optimization Algorithm]]",
+      "raw": "[[Optimisation Algorithm]]",
       "resolved": "urn:visionflow:owl:class:optimization-algorithm",
       "kind": "ResolvedLink"
     },
@@ -336,7 +336,7 @@ public:: true
   - is-part-of:: [[Content Creation Tool]], [[Authoring Tool]]
   - requires:: [[Machine Learning Infrastructure]], [[Compute Infrastructure]], [[Design Database]]
   - enables:: [[Automated Design]], [[Design Optimization]], [[Parametric Modeling]], [[Constraint-Based Design]]
-  - depends-on:: [[AI Engine]], [[Optimization Algorithm]], [[Graphics API]]
+  - depends-on:: [[AI Engine]], [[Optimisation Algorithm]], [[Graphics API]]
 
 - ### Content
   Generative Design Tool — content pending enrichment.

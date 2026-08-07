@@ -147,7 +147,7 @@ public:: true
   "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:robo-human-robot-interaction",
+      "@id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],
@@ -324,7 +324,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -366,7 +366,7 @@ public:: true
 
 
 - ### Definition
-  - Human factors encompasses the interdisciplinary study of how humans interact with, perceive, and respond to robotic systems, integrating ergonomics, psychology, cognitive science, and design principles to ensure robots enhance rather than impede human performance and safety. Effective human factors engineering is critical for successful [[Human-Robot Interaction]], [[Collaborative Robotics]], and safe deployment in human-centred environments.
+  - Human factors encompasses the interdisciplinary study of how humans interact with, perceive, and respond to robotic systems, integrating ergonomics, psychology, cognitive science, and design principles to ensure robots enhance rather than impede human performance and safety. Effective human factors engineering is critical for successful [[Human Robot Interaction]], [[Collaborative Robotics]], and safe deployment in human-centred environments.
 
 - ### Semantic Classification
   - owl-class:: robotics:HumanFactors

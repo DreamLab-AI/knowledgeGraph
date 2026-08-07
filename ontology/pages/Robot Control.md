@@ -279,7 +279,7 @@ public:: true
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robo-human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
       {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"},
       {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
     ]

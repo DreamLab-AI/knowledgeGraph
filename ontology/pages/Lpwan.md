@@ -74,7 +74,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:wifi",
+        "@id": "urn:ngm:class:wi-fi",
         "label": "Wi-Fi"
       },
       {
@@ -84,7 +84,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:lorawan",
+        "@id": "urn:ngm:class:lo-ra-wan",
         "label": "LoRaWAN"
       }
     ],
@@ -96,7 +96,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:sensor-network",
+        "@id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Network"
       },
       {

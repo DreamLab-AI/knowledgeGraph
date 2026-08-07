@@ -65,7 +65,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -129,7 +129,7 @@ public:: true
 - ### Definition
   - Robot navigation lets a mobile robot localise, plan, and move to a goal safely.
   - It is a core capability of [[Robotics]] and [[Mobile Robot]] systems.
-  - It integrates [[Localization]], [[Mapping]], and [[Path Planning]].
+  - It integrates [[Localisation]], [[Mapping]], and [[Path Planning]].
   - It relies on [[Sensor Fusion]] and [[SLAM]] in unknown environments.
 - ### Overview
   - Navigation fuses sensing, localisation, planning, and control into a closed loop.
@@ -153,7 +153,7 @@ public:: true
   - uses:: [[Sensor Fusion]]
   - uses:: [[LiDAR]]
   - uses:: [[Odometry]]
-  - requires:: [[Localization]]
+  - requires:: [[Localisation]]
   - requires:: [[Mapping]]
   - requires:: [[Path Planning]]
   - dependsOn:: [[Robot Perception]]

@@ -19,14 +19,14 @@ public:: true
     {"@id": "urn:ngm:class:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
     {"@id": "urn:ngm:class:gaussian-process", "vc:label": "Gaussian Process"},
     {"@id": "urn:ngm:class:surrogate-model", "vc:label": "Surrogate Model"},
-    {"@id": "urn:ngm:class:optimization-algorithm", "vc:label": "Optimization Algorithm"},
+    {"@id": "urn:ngm:class:optimisation-algorithm", "vc:label": "Optimization Algorithm"},
     {"@id": "urn:ngm:class:expected-improvement", "vc:label": "Expected Improvement"},
-    {"@id": "urn:ngm:class:exploration-exploitation-trade-off", "vc:label": "Exploration-Exploitation Trade-off"},
+    {"@id": "urn:ngm:class:exploration-exploitation-tradeoff", "vc:label": "Exploration-Exploitation Trade-off"},
     {"@id": "urn:ngm:class:reinforcement-learning", "vc:label": "Reinforcement Learning"},
     {"@id": "urn:ngm:class:active-learning", "vc:label": "Active Learning"},
     {"@id": "urn:ngm:class:kernel-function", "vc:label": "Kernel Function"},
     {"@id": "urn:ngm:class:drug-discovery", "vc:label": "Drug Discovery"},
-    {"@id": "urn:ngm:class:materials-science", "vc:label": "Materials Science"},
+    {"@id": "urn:ngm:class:material-science", "vc:label": "Materials Science"},
     {"@id": "urn:ngm:class:auto-ml", "vc:label": "AutoML"},
     {"@id": "urn:ngm:class:multi-objective-optimisation", "vc:label": "Multi-Objective Optimisation"},
     {"@id": "urn:ngm:class:deep-learning", "vc:label": "Deep Learning"},
@@ -64,7 +64,7 @@ public:: true
   "definition": "An acquisition function is a utility function used in Bayesian optimisation that determines which point in the input space to evaluate next by balancing exploration of uncertain regions against exploitation of known promising areas. It transforms the surrogate model's posterior distribution into a scalar score, guiding the sequential selection of experiments or evaluations. Common forms include Expected Improvement, Upper Confidence Bound, and Probability of Improvement.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"}],
+  "subClassOf": [{"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
@@ -90,7 +90,7 @@ public:: true
       {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:exploration-exploitation-trade-off", "label": "Exploration-Exploitation Trade-off"},
+      {"@id": "urn:ngm:class:exploration-exploitation-tradeoff", "label": "Exploration-Exploitation Trade-off"},
       {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
     ],
     "contrastsWith": [
@@ -101,7 +101,7 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
-      {"@id": "urn:ngm:class:materials-science", "label": "Materials Science"}
+      {"@id": "urn:ngm:class:material-science", "label": "Materials Science"}
     ]
   },
   "quality": 0.8,
@@ -131,14 +131,14 @@ public:: true
     {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:ngm:class:machine-learning-discipline", "kind": "ResolvedLink"},
     {"raw": "[[Gaussian Process]]", "resolved": "urn:ngm:class:gaussian-process", "kind": "ResolvedLink"},
     {"raw": "[[Surrogate Model]]", "resolved": "urn:ngm:class:surrogate-model", "kind": "ResolvedLink"},
-    {"raw": "[[Optimization Algorithm]]", "resolved": "urn:ngm:class:optimization-algorithm", "kind": "ResolvedLink"},
+    {"raw": "[[Optimisation Algorithm]]", "resolved": "urn:ngm:class:optimisation-algorithm", "kind": "ResolvedLink"},
     {"raw": "[[Expected Improvement]]", "resolved": "urn:ngm:class:expected-improvement", "kind": "StubLink"},
-    {"raw": "[[Exploration-Exploitation Trade-off]]", "resolved": "urn:ngm:class:exploration-exploitation-trade-off", "kind": "StubLink"},
+    {"raw": "[[Exploration-Exploitation Trade-off]]", "resolved": "urn:ngm:class:exploration-exploitation-tradeoff", "kind": "StubLink"},
     {"raw": "[[Reinforcement Learning]]", "resolved": "urn:ngm:class:reinforcement-learning", "kind": "ResolvedLink"},
     {"raw": "[[Active Learning]]", "resolved": "urn:ngm:class:active-learning", "kind": "ResolvedLink"},
     {"raw": "[[Kernel Function]]", "resolved": "urn:ngm:class:kernel-function", "kind": "ResolvedLink"},
     {"raw": "[[Drug Discovery]]", "resolved": "urn:ngm:class:drug-discovery", "kind": "ResolvedLink"},
-    {"raw": "[[Materials Science]]", "resolved": "urn:ngm:class:materials-science", "kind": "ResolvedLink"},
+    {"raw": "[[Materials Science]]", "resolved": "urn:ngm:class:material-science", "kind": "ResolvedLink"},
     {"raw": "[[AutoML]]", "resolved": "urn:ngm:class:auto-ml", "kind": "ResolvedLink"},
     {"raw": "[[Multi-Objective Optimisation]]", "resolved": "urn:ngm:class:multi-objective-optimisation", "kind": "ResolvedLink"},
     {"raw": "[[Deep Learning]]", "resolved": "urn:ngm:class:deep-learning", "kind": "ResolvedLink"},
@@ -179,7 +179,7 @@ public:: true
   - implemented-in-layer:: [[AlgorithmLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Optimization Algorithm]], [[Black-Box Optimisation]]
+  - is-subclass-of:: [[Optimisation Algorithm]], [[Black-Box Optimisation]]
   - has-part:: [[Expected Improvement]], [[Upper Confidence Bound]], [[Thompson Sampling]]
   - requires:: [[Surrogate Model]], [[Probabilistic Inference]], [[Gaussian Process]], [[Kernel Function]]
   - enables:: [[Bayesian Optimisation]], [[Hyperparameter Tuning]], [[Neural Architecture Search]], [[Multi-Objective Optimisation]], [[Drug Discovery]], [[Experimental Design]], [[AutoML]]

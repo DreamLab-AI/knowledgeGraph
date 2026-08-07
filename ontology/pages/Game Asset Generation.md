@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"}],
   "relations": {
-    "uses": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}, {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"}, {"@id": "urn:ngm:class:texture-mapping", "label": "Texture Mapping"}],
+    "uses": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}, {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"}, {"@id": "urn:ngm:class:texture-mapping", "label": "Texture Mapping"}],
     "enables": [{"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}, {"@id": "urn:ngm:class:asset-pipeline", "label": "Asset Pipeline"}],
     "relatedTo": [{"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}, {"@id": "urn:ngm:class:text-to-image-generation", "label": "Text-to-Image Generation"}],
     "dependsOn": [{"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}]
@@ -35,10 +35,10 @@ public:: true
 ```
 
 - ### Definition
-  - [[Game Asset Generation]] covers the automated or AI-assisted creation of all digital content consumed by a [[Game Engine]] — from [[3D Modeling]] geometry and [[Texture Mapping]] maps to audio, animations, narrative dialogue, and level layouts. By combining [[Procedural Generation]] with [[Generative Model]]s, studios can produce content at scales that manual authoring cannot sustain, filling open-world environments, generating player-unique quests, or synthesising costume variations without proportional artist headcount growth.
+  - [[Game Asset Generation]] covers the automated or AI-assisted creation of all digital content consumed by a [[Game Engine]] — from [[3D Modelling]] geometry and [[Texture Mapping]] maps to audio, animations, narrative dialogue, and level layouts. By combining [[Procedural Generation]] with [[Generative Model]]s, studios can produce content at scales that manual authoring cannot sustain, filling open-world environments, generating player-unique quests, or synthesising costume variations without proportional artist headcount growth.
 
 - ### Relationships
-  - [[Generative Model]]s — including diffusion-based [[Text-to-Image Generation]] networks, NeRF-derived geometry generators, and language models for dialogue — supply the creative substrate. [[3D Modeling]] and [[Texture Mapping]] pipelines receive generated outputs and validate them against technical constraints (polygon budget, UV space, PBR material compliance) before delivery to the [[Asset Pipeline]]. The resulting [[3D Asset]]s flow into the [[Game Engine]] runtime, where they populate scenes. The dependency chain begins with [[Procedural Generation]] algorithms that constrain generative outputs to design intent.
+  - [[Generative Model]]s — including diffusion-based [[Text-to-Image Generation]] networks, NeRF-derived geometry generators, and language models for dialogue — supply the creative substrate. [[3D Modelling]] and [[Texture Mapping]] pipelines receive generated outputs and validate them against technical constraints (polygon budget, UV space, PBR material compliance) before delivery to the [[Asset Pipeline]]. The resulting [[3D Asset]]s flow into the [[Game Engine]] runtime, where they populate scenes. The dependency chain begins with [[Procedural Generation]] algorithms that constrain generative outputs to design intent.
 
 - ### Content
   - Procedural asset generation in games predates modern AI: id Software's 1993 Quake used texture synthesis tools, whilst Elite (1984) generated entire star systems procedurally. SpeedTree (1999) automated tree geometry, becoming an industry standard. Houdini's procedural graph model enabled films and games to share asset generation logic, and its GPU adoption in the 2010s made real-time procedural geometry practical.

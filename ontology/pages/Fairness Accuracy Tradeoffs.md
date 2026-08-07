@@ -109,7 +109,7 @@ public:: true
         "label": "Statistical Learning Theory"
       },
       {
-        "@id": "urn:ngm:class:protected-attribute",
+        "@id": "urn:ngm:class:protected-attributes",
         "label": "Protected Attribute"
       }
     ],

@@ -147,7 +147,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:robo-human-robot-interaction",
+      "@id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],
@@ -298,7 +298,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -340,7 +340,7 @@ public:: true
 
 
 - ### Definition
-  - Gaze control regulates robot eye and head movement to establish, maintain, and redirect visual attention toward objects and people, conveying robot intent and facilitating natural [[Human-Robot Interaction]]. Gaze serves both functional roles—directing perception toward task-relevant features—and social functions—signalling attentiveness and promoting human comprehension of robot behaviour.
+  - Gaze control regulates robot eye and head movement to establish, maintain, and redirect visual attention toward objects and people, conveying robot intent and facilitating natural [[Human Robot Interaction]]. Gaze serves both functional roles—directing perception toward task-relevant features—and social functions—signalling attentiveness and promoting human comprehension of robot behaviour.
 
 - ### Semantic Classification
   - owl-class:: robotics:GazeControl

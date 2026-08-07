@@ -25,7 +25,7 @@ public:: true
     ],
     "requires":[
       {"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"},
-      {"@id":"urn:ngm:class:optimization-algorithm","label":"Optimisation Algorithm"}
+      {"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimisation Algorithm"}
     ],
     "enables":[
       {"@id":"urn:ngm:class:data-parallelism","label":"Data Parallelism"}

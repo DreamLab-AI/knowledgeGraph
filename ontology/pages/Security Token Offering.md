@@ -98,7 +98,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {
@@ -212,7 +212,7 @@ public:: true
 ```
 
 - ### Definition
-  - A Security Token Offering (STO) is a regulated capital-raising mechanism in which blockchain-based [[Security Token]]s representing ownership rights, equity interests, debt obligations, or revenue participation are issued to investors under applicable [[Financial Regulation]]. Unlike the unregulated [[Initial Coin Offering]] model, STOs embed [[Regulatory Compliance]] logic directly into [[Smart Contract]]s on a [[Distributed Ledger Technology]] platform, with mandatory disclosure, [[Know Your Customer]] checks, and [[Investor Accreditation]] verification. STOs bridge traditional [[Capital Markets]] infrastructure with blockchain-based [[Asset Tokenization]], enabling [[Fractional Ownership]] of previously illiquid assets and new forms of programmatic securities issuance.
+  - A Security Token Offering (STO) is a regulated capital-raising mechanism in which blockchain-based [[Security Token]]s representing ownership rights, equity interests, debt obligations, or revenue participation are issued to investors under applicable [[Financial Regulation]]. Unlike the unregulated [[Initial Coin Offering]] model, STOs embed [[Regulatory Compliance]] logic directly into [[Smart Contract]]s on a [[Distributed Ledger Technology]] platform, with mandatory disclosure, [[Know Your Customer]] checks, and [[Investor Accreditation]] verification. STOs bridge traditional [[Capital Markets]] infrastructure with blockchain-based [[Asset Tokenisation]], enabling [[Fractional Ownership]] of previously illiquid assets and new forms of programmatic securities issuance.
 
 - ### Overview
   - Security Token Offerings emerged from the regulatory aftermath of the 2017–2018 [[Initial Coin Offering]] boom, during which many token sales were later judged by regulators to constitute unregistered securities offerings. STOs address this directly: the issuer acknowledges that the token is a security, registers with or claims an exemption from the relevant regulator, and structures the offering accordingly.
@@ -269,7 +269,7 @@ public:: true
   - uses:: [[Smart Contract]]
   - uses:: [[Distributed Ledger Technology]]
   - uses:: [[Digital Wallet]]
-  - enables:: [[Asset Tokenization]]
+  - enables:: [[Asset Tokenisation]]
   - enables:: [[Fractional Ownership]]
   - enables:: [[Secondary Market Trading]]
   - enables:: [[Programmable Compliance]]

@@ -149,7 +149,7 @@ alias:: RB-1014-monte-carlo-localization
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Global Localization"
       }
     ],
@@ -262,7 +262,7 @@ alias:: RB-1014-monte-carlo-localization
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Localization]]",
+      "raw": "[[Localisation]]",
       "resolved": "urn:visionflow:owl:class:localization",
       "kind": "ResolvedLink"
     },
@@ -309,7 +309,7 @@ alias:: RB-1014-monte-carlo-localization
 - ### Semantic Classification
   - owl-class:: robotics:MonteCarloLocalization
   - owl-role:: Algorithm
-  - belongs-to-domain:: [[Robotics]], [[Probabilistic Methods]], [[Localization]]
+  - belongs-to-domain:: [[Robotics]], [[Probabilistic Methods]], [[Localisation]]
 
 - ### Relationships
   - is-subclass-of:: [[RB-1013-localization]]

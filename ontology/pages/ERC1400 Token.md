@@ -71,7 +71,7 @@ public:: true
       {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"},
+      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenization"},
       {"@id": "urn:ngm:class:security-token-offering", "label": "Security Token Offering"},
       {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"}
     ],
@@ -132,7 +132,7 @@ public:: true
 - ### Relationships
   - hasPart:: [[ERC1400 Standard]], [[Smart Contract]]
   - requires:: [[Regulatory Compliance]], [[AML KYC Compliance]], [[Blockchain Compliance]]
-  - enables:: [[Asset Tokenization]], [[Security Token Offering]], [[Digital Asset Trading]]
+  - enables:: [[Asset Tokenisation]], [[Security Token Offering]], [[Digital Asset Trading]]
   - uses:: [[ERC20 Token]], [[Compliance Framework]]
   - relatedTo:: [[ERC3643 Token]], [[Digital Asset]], [[Securities Regulation]], [[Financial Regulation]], [[Token Standard]]
 

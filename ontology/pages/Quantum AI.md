@@ -60,7 +60,7 @@ public:: true
       {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
+      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "relatedTo": [

@@ -47,7 +47,7 @@ public:: true
         "label": "Conflict Resolution"
       },
       {
-        "@id": "urn:ngm:class:state-synchronization",
+        "@id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization"
       }
     ],
@@ -91,7 +91,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:state-synchronization",
+        "@id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization"
       },
       {
@@ -118,7 +118,7 @@ public:: true
 
 - ### Definition
   - [[Real Time Collaboration]] lets multiple users edit shared content concurrently with low-latency propagation.
-  - It is a form of [[Distributed Collaboration]] that depends on [[Conflict Resolution]] and [[State Synchronization]].
+  - It is a form of [[Distributed Collaboration]] that depends on [[Conflict Resolution]] and [[State Synchronisation]].
   - It commonly uses [[Operational Transformation]] or [[CRDT]] to merge concurrent edits while preserving intent.
 - ### Overview
   - The central challenge is that participants edit independently and their changes can conflict when interleaved.
@@ -128,7 +128,7 @@ public:: true
 - ### Mechanisms
   - [[Operational Transformation]] rewrites concurrent operations so they can be applied in any order with identical results.
   - [[CRDT]] structures guarantee convergence by design, requiring no central coordination.
-  - [[State Synchronization]] reconciles replicas after disconnection or divergence.
+  - [[State Synchronisation]] reconciles replicas after disconnection or divergence.
   - [[Real-Time Communication]] channels carry edits between participants with minimal delay.
 - ### Key aspects
   - Convergence: all replicas reach the same final state.
@@ -143,7 +143,7 @@ public:: true
 - ### Relationships
   - partOf:: [[Distributed Collaboration]]
   - requires:: [[Conflict Resolution]]
-  - requires:: [[State Synchronization]]
+  - requires:: [[State Synchronisation]]
   - uses:: [[Operational Transformation]]
   - uses:: [[CRDT]]
   - enables:: [[Distributed Collaboration]]

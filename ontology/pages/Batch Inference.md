@@ -237,7 +237,7 @@ public:: true
         "label": "Throughput Optimisation"
       },
       {
-        "@id": "urn:ngm:class:model-quantisation",
+        "@id": "urn:ngm:class:model-quantization",
         "label": "Model Quantisation"
       },
       {

@@ -86,7 +86,7 @@ public:: true
         "label": "Sequence-to-Sequence Learning"
       },
       {
-        "@id": "urn:ngm:class:long-context-modeling",
+        "@id": "urn:ngm:class:long-context-modelling",
         "label": "Long-Context Modeling"
       }
     ],

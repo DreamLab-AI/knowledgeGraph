@@ -171,7 +171,7 @@ alias:: Privacy-Preserving Technology
   },
   "sameAs": [
     {
-      "@id": "urn:ngm:class:privacy-enhancing-technology",
+      "@id": "urn:ngm:class:privacy-enhancing-technologies",
       "label": "Privacy Enhancing Technology"
     }
   ],

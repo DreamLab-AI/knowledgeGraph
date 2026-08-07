@@ -377,7 +377,7 @@ alias:: Feed-Forward Network
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:multi-layer-perceptron",
+        "@id": "urn:ngm:class:multilayer-perceptron",
         "label": "Multi-Layer Perceptron"
       },
       {

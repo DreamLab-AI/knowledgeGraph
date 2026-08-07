@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:democratic-governance",
   "@type": "Class",
   "label": "Democratic Governance",
-  "definition": "Democratic Governance is an infrastructure concept.",
+  "definition": "The exercise of collective decision-making through participatory, accountable, and transparent processes in which stakeholders deliberate and vote on rules and resource allocation; in digital and blockchain contexts it encompasses DAO voting, token-weighted and one-person-one-vote mechanisms, and community oversight of platforms and protocols.",
   "domain": "infrastructure",
   "maturity": "draft",
   "relations": {
@@ -54,6 +54,20 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralised Governance"
       }
     ]
   },
@@ -104,7 +118,7 @@ public:: true
 
 
 - ### Definition
-  - Democratic Governance is a concept within the metaverse domain. Further enrichment pending.
+  - The exercise of collective decision-making through participatory, accountable, and transparent processes in which stakeholders deliberate and vote on rules and resource allocation; in digital and blockchain contexts it encompasses DAO voting, token-weighted and one-person-one-vote mechanisms, and community oversight of platforms and protocols.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:DemocraticGovernance

@@ -69,7 +69,7 @@ public:: true
       {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
       {"@id": "urn:ngm:class:algorithmic-auditing", "label": "Algorithmic Auditing"},
       {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
-      {"@id": "urn:ngm:class:model-card", "label": "Model Card"},
+      {"@id": "urn:ngm:class:model-cards", "label": "Model Card"},
       {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
       {"@id": "urn:ngm:class:post-market-monitoring", "label": "Post-Market Monitoring"},
       {"@id": "urn:ngm:class:redress-mechanism", "label": "Redress Mechanism"}

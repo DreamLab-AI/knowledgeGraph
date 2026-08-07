@@ -144,7 +144,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       }
     ]
@@ -198,7 +198,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Asset Tokenization]]",
+      "raw": "[[Asset Tokenisation]]",
       "resolved": "urn:visionflow:owl:class:asset-tokenization",
       "kind": "ResolvedLink"
     },
@@ -266,7 +266,7 @@ public:: true
 
 - ### Relationships
   - has-part:: [[Smart Contract]], [[Token Standard]], [[Metadata Mapping]]
-  - is-part-of:: [[Asset Tokenization]]
+  - is-part-of:: [[Asset Tokenisation]]
   - requires:: [[Blockchain Infrastructure]], [[NFT Standard]], [[Cryptographic Keys]]
   - enables:: [[Cross-Chain Asset Transfer]], [[Asset Interoperability]], [[Enhanced Token Functionality]]
   - depends-on:: [[Digital Wallet]], [[Token Registry]]

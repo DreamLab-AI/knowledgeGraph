@@ -99,7 +99,7 @@ public:: true
       {"@id": "urn:ngm:class:structured-output", "label": "Structured Output"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:evolutionary-algorithms", "label": "Evolutionary Algorithms"},
+      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithms"},
       {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
       {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}

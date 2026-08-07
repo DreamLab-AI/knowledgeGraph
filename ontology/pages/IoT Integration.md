@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-twin-creation", "label": "Digital Twin Creation"},
-      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"}
+      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"}
     ]
   },
   "quality": 0.72
@@ -35,6 +35,6 @@ public:: true
 ```
 
 - ### Definition
-  - IoT integration links physical sensors and actuators to software so telemetry feeds analytics and control. It is a prerequisite for [[Digital Twin Creation]] and supports [[Logistics Optimization]].
+  - IoT integration links physical sensors and actuators to software so telemetry feeds analytics and control. It is a prerequisite for [[Digital Twin Creation]] and supports [[Logistics Optimisation]].
 - ### Content
   - Architectures span edge gateways, message brokers (MQTT, AMQP), time-series storage, and device management. Reliable integration handles intermittent connectivity, security provisioning, and the volume and velocity of streaming sensor data feeding live digital representations.

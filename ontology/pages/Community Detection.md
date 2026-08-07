@@ -156,7 +156,7 @@ public:: true
         "label": "Matrix Factorisation"
       },
       {
-        "@id": "urn:ngm:class:random-walks",
+        "@id": "urn:ngm:class:random-walk",
         "label": "Random Walks"
       },
       {

@@ -138,7 +138,7 @@ public:: true
         "label": "Message Broker"
       },
       {
-        "@id": "urn:ngm:class:state-synchronization",
+        "@id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization Engine"
       }
     ],

@@ -102,7 +102,7 @@ public:: true
       {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:react-pattern", "label": "ReAct Pattern"},
+      {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"},
       {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},
       {"@id": "urn:ngm:class:checkpointing", "label": "Checkpointing"}
     ],

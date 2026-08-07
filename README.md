@@ -2,7 +2,7 @@
 
 ![Narrative Goldmine](explorer/modern/public/images/heroes/ngm-hero.webp)
 
-This repository holds a 7,874-class OWL ontology whose source of truth is 7,874
+This repository holds an 8,124-class OWL ontology whose source of truth is 8,124
 ordinary Logseq markdown pages, the Python pipeline that compiles them into RDF and
 a binary graph format, and the WebAssembly explorer that renders the result. It is a
 self-contained release: corpus, build, viewer and method in one tree, published at
@@ -25,29 +25,29 @@ corpus, the pipeline and the method to build your own.
 
 ## Numbers
 
-Measured on the build of 2026-07-25 (`pipelineVersion: ng-1.0.0`), reproducible with
+Measured on the build of 2026-08-07 (`pipelineVersion: ng-1.0.0`), reproducible with
 the quickstart below.
 
 | | |
 |---|---|
-| Source pages | 7,874 markdown files in `ontology/pages/` (129 MB) |
-| OWL classes | 7,874 (0 individuals) |
-| RDF triples | 258,200 in Turtle (12.1 MB) |
-| Declared edges | 111,827 (9,481 `subClassOf` + 102,346 object-property) |
-| Resolvable graph edges | 98,776 after self-loop, duplicate and unresolved-target removal |
+| Source pages | 8,124 markdown files in `ontology/pages/` (132 MB) |
+| OWL classes | 8,124 (0 individuals) |
+| RDF triples | 262,028 in Turtle (12.4 MB) |
+| Declared edges | 113,433 (9,735 `subClassOf` + 103,698 object-property) |
+| Resolvable graph edges | 101,249 after self-loop, duplicate and unresolved-target removal |
 | Domains / categories | 6 / 34 |
-| Multiple inheritance | 1,401 classes with more than one parent; 454 spanning categories, 153 spanning domains |
-| Validation | 0 errors, 0 warnings, 1,401 info |
+| Multiple inheritance | 1,403 classes with more than one parent; 479 spanning categories, 156 spanning domains |
+| Validation | 0 errors, 0 warnings, 1,404 info |
 | Build time | ~18 s, single-threaded, `rdflib` only |
 
 Classes per domain, before the 1,500-node tier cap (`nodes` + `nodesTruncated`
-for each `domain-*` scope in `stats.json`): Infrastructure 2,585 · Artificial
-Intelligence 1,899 · Blockchain 1,432 · Spatial Computing 1,216 · Robotics 600 ·
-Distributed Collaboration 142. Only the first two exceed the cap.
+for each `domain-*` scope in `stats.json`): Infrastructure 2,717 · Artificial
+Intelligence 1,976 · Blockchain 1,455 · Spatial Computing 1,231 · Robotics 601 ·
+Distributed Collaboration 144. Only the first two exceed the cap.
 
-**The taxonomy is a lattice, not a tree, and that is deliberate.** 1,401 of the
-7,874 classes declare more than one `subClassOf`; 454 of them thereby sit in more
-than one of the 34 categories and 153 in more than one of the 6 domains. A Star
+**The taxonomy is a lattice, not a tree, and that is deliberate.** 1,403 of the
+8,124 classes declare more than one `subClassOf`; 479 of them thereby sit in more
+than one of the 34 categories and 156 in more than one of the 6 domains. A Star
 Algorithm is under Search Algorithm, Informed Search and Graph Search at once.
 Multiple inheritance is legal in OWL 2 EL and here it carries meaning: it is how a
 concept that genuinely belongs to two branches is bridged rather than duplicated.

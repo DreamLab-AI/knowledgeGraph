@@ -32,7 +32,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       },
       {
@@ -96,7 +96,7 @@ public:: true
         "label": "Convex Optimisation"
       },
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -146,7 +146,7 @@ public:: true
   - Formulating constrained engineering optimisation
 - ### Relationships
   - subClassOf:: [[Optimisation]]
-  - requires:: [[Optimization Algorithm]]
+  - requires:: [[Optimisation Algorithm]]
   - requires:: [[Evaluation Metric]]
   - uses:: [[Gradient Descent]]
   - enables:: [[Learning Algorithm]]
@@ -158,7 +158,7 @@ public:: true
   - contrastsWith:: [[Loss Function]]
   - partOf:: [[Optimisation]]
   - relatedTo:: [[Convex Optimisation]]
-  - relatedTo:: [[Optimization Algorithm]]
+  - relatedTo:: [[Optimisation Algorithm]]
   - bridgesTo:: [[Machine Learning]]
 - ### Provenance
   - attributedTo:: did:nostr:ontology-mesh

@@ -54,7 +54,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {
@@ -137,7 +137,7 @@ public:: true
 	- relatedTo:: [[Cryptocurrency]]
 	- uses:: [[Tokenization]]
 	- uses:: [[Smart Contract]]
-	- implements:: [[Asset Tokenization]]
+	- implements:: [[Asset Tokenisation]]
 	- implements:: [[Real World Asset Tokenization]]
 	- enables:: [[Fractional Ownership]]
 	- enables:: [[Liquidity Pool]]

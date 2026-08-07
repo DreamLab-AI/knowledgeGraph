@@ -33,7 +33,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:cross-border-payments", "label": "Cross-Border Payments"},
-      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},
+      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"},
       {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
     ],
     "relatedTo": [
@@ -50,7 +50,7 @@ public:: true
 - ### Definition
   - Trade Finance Automation deploys [[Smart Contract]] technology and AI-driven document processing to replace paper-based [[Financial Instruments]] in international commerce, enabling faster settlement and transparent [[Supply Chain Traceability]].
 - ### Relationships
-  - Trade Finance Automation builds on [[Blockchain]] infrastructure to create immutable records of shipment events and document states, allowing [[Enterprise Smart Contracts]] to release payments automatically when verified conditions are met. This accelerates [[Cross-Border Payments]] by eliminating multi-day manual checking cycles. [[Customs Trade Facilitation]] systems integrate with automated trade finance platforms to co-verify import/export declarations. [[Supply Chain Blockchain]] networks connect banks, shippers, and buyers on shared ledgers, reducing reconciliation disputes. [[Logistics Optimization]] benefits from the same real-time visibility, whilst [[Blockchain Compliance]] frameworks ensure that automated workflows satisfy KYC and AML obligations.
+  - Trade Finance Automation builds on [[Blockchain]] infrastructure to create immutable records of shipment events and document states, allowing [[Enterprise Smart Contracts]] to release payments automatically when verified conditions are met. This accelerates [[Cross-Border Payments]] by eliminating multi-day manual checking cycles. [[Customs Trade Facilitation]] systems integrate with automated trade finance platforms to co-verify import/export declarations. [[Supply Chain Blockchain]] networks connect banks, shippers, and buyers on shared ledgers, reducing reconciliation disputes. [[Logistics Optimisation]] benefits from the same real-time visibility, whilst [[Blockchain Compliance]] frameworks ensure that automated workflows satisfy KYC and AML obligations.
 - ### Content
   - Traditional letters of credit involve up to 20 paper documents exchanged among exporters, importers, their respective banks, shipping companies, and inspection agencies. Each handoff introduces delay—global average cycle times exceed 100 days—and manual checking generates error rates estimated at 50–70 % on first presentation. Automation targets these inefficiencies by digitising documents and encoding payment conditions in machine-executable logic.
 

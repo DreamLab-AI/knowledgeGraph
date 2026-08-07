@@ -65,7 +65,7 @@ public:: true
   },
   "sameAs": [
     {
-      "@id": "urn:ngm:class:optimization-algorithm",
+      "@id": "urn:ngm:class:optimisation-algorithm",
       "label": "Optimization Algorithm"
     }
   ],

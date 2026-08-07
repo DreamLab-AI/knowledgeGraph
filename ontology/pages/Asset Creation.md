@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:content-creation", "label": "Content Creation"}],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"},
+      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"},
       {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"}
     ],
     "uses": [
@@ -43,10 +43,10 @@ public:: true
 ```
 
 - ### Definition
-  - [[Asset Creation]] is the end-to-end process of authoring discrete digital resources that populate interactive applications, virtual worlds, and media productions. It spans conceptual design, modelling, rigging, texturing, audio recording or synthesis, and export into target formats. Modern pipelines integrate manual [[3D Modeling]] with [[Procedural Content Generation]] to balance artistic control against production scale, feeding downstream [[Asset Pipeline]] systems that condition assets for runtime delivery.
+  - [[Asset Creation]] is the end-to-end process of authoring discrete digital resources that populate interactive applications, virtual worlds, and media productions. It spans conceptual design, modelling, rigging, texturing, audio recording or synthesis, and export into target formats. Modern pipelines integrate manual [[3D Modelling]] with [[Procedural Content Generation]] to balance artistic control against production scale, feeding downstream [[Asset Pipeline]] systems that condition assets for runtime delivery.
 
 - ### Relationships
-  - Asset Creation includes [[3D Modeling]] and [[3D Animation]] as primary sub-disciplines for spatial content. It relies on [[Game Engine]] tooling and [[Procedural Content Generation]] to accelerate volume and variety. Outputs flow into [[Asset Pipeline]] infrastructure for optimisation, format conversion, and packaging, contributing ultimately to [[Digital Content Creation]] workflows across games, film, architecture, and spatial computing.
+  - Asset Creation includes [[3D Modelling]] and [[3D Animation]] as primary sub-disciplines for spatial content. It relies on [[Game Engine]] tooling and [[Procedural Content Generation]] to accelerate volume and variety. Outputs flow into [[Asset Pipeline]] infrastructure for optimisation, format conversion, and packaging, contributing ultimately to [[Digital Content Creation]] workflows across games, film, architecture, and spatial computing.
 
 - ### Content
   - The formalisation of asset creation as a distinct discipline traces to the early video-game industry of the late 1980s and 1990s, when dedicated pixel artists, 3D modellers, and sound designers emerged as specialist roles separate from programmers. The introduction of DCC tools such as Alias PowerAnimator (ancestor of Maya), 3ds Max, and Softimage provided interactive authoring environments that replaced code-based asset description. Film visual-effects pipelines developed parallel conventions around procedural effects, matte painting, and compositing.

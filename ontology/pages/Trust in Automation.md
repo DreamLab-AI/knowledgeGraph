@@ -144,7 +144,7 @@ alias:: RB-1012-trust-in-automation
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:robo-human-robot-interaction",
+      "@id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     },
     {
@@ -288,7 +288,7 @@ alias:: RB-1012-trust-in-automation
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -330,7 +330,7 @@ alias:: RB-1012-trust-in-automation
 - ### Semantic Classification
   - owl-class:: robotics:TrustInAutomation
   - owl-role:: Concept
-  - belongs-to-domain:: [[Human-Robot Interaction]], [[Human Factors]], [[Automation]]
+  - belongs-to-domain:: [[Human Robot Interaction]], [[Human Factors]], [[Automation]]
 
 - ### Relationships
   - is-subclass-of:: [[Human Factors]]
@@ -474,5 +474,5 @@ alias:: RB-1012-trust-in-automation
   - accuracy:: 0.94
 
 - ### Provenance
-  - sources:: [[Human Factors]], [[Human-Robot Interaction]], [[Automation Psychology]]
+  - sources:: [[Human Factors]], [[Human Robot Interaction]], [[Automation Psychology]]
   - migration-date:: 2026-04-26T00:00:00Z

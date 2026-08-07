@@ -86,7 +86,7 @@ public:: true
   - supports:: [[Prime Intellect]], [[Decentralised Foundation Model Training]], [[Decentralised Science]], [[Compute Exchange]], [[Bittensor]], [[Collaborative Model Ownership]], [[Federated Edge Learning]]
   - uses:: [[Adam Optimiser]], [[Nesterov Momentum]], [[Collective Communication]], [[Gradient Compression]], [[Checkpoint Recovery]], [[Bandwidth Optimization]], [[Communication Protocol]], [[Asynchronous Communication]]
   - contrasts-with:: [[Synchronous Data Parallelism]], [[Centralised Training]], [[Pipeline Parallelism]], [[Tensor Parallelism]], [[ZeRO Sharding]]
-  - related-to:: [[Federated Learning]], [[Asynchronous RL]], [[Gradient Compression]], [[Communication Protocol]], [[Bandwidth Optimization]], [[AI Energy Optimisation]], [[Decentralised AI]], [[Bittensor]], [[Federated Edge Learning]], [[Distributed Training]], [[Collective Communication]], [[Asynchronous Communication]], [[Adam Optimizer]], [[AI Energy Scarcity]]
+  - related-to:: [[Federated Learning]], [[Asynchronous RL]], [[Gradient Compression]], [[Communication Protocol]], [[Bandwidth Optimization]], [[AI Energy Optimisation]], [[Decentralised AI]], [[Bittensor]], [[Federated Edge Learning]], [[Distributed Training]], [[Collective Communication]], [[Asynchronous Communication]], [[Adam Optimiser]], [[AI Energy Scarcity]]
   - standardized-by:: [[arXiv Preprint Standards]], [[Apache 2.0 Open Source Licence]]
 
 - ### Content

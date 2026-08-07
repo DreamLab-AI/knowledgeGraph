@@ -108,7 +108,7 @@ public:: true
     "dependsOn": [
       { "@id": "urn:ngm:class:computational-modelling", "label": "Computational Modelling" },
       { "@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process" },
-      { "@id": "urn:ngm:class:behavioural-modelling", "label": "Behavioural Modelling" }
+      { "@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioural Modelling" }
     ],
     "implements": [
       { "@id": "urn:ngm:class:complex-adaptive-systems", "label": "Complex Adaptive Systems" },

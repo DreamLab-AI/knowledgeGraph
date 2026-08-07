@@ -91,7 +91,7 @@ public:: true
         "label": "Exoskeleton"
       },
       {
-        "@id": "urn:ngm:class:robo-human-robot-interaction",
+        "@id": "urn:ngm:class:human-robot-interaction",
         "label": "Human-Robot Interaction"
       }
     ],
@@ -143,7 +143,7 @@ public:: true
 - bridgesTo:: [[Prosthetics]]
 - bridgesTo:: [[Soft Robotics]]
 - relatedTo:: [[Exoskeleton]]
-- relatedTo:: [[Human-Robot Interaction]]
+- relatedTo:: [[Human Robot Interaction]]
 - dependsOn:: [[Robotics]]
 - ### Provenance
 - updated:: 2026-06-15

@@ -52,7 +52,7 @@ public:: true
         "label": "Statistical Learning Theory"
       },
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -132,7 +132,7 @@ public:: true
   - implements:: [[Classification]]
   - implements:: [[Regression]]
   - uses:: [[Statistical Learning Theory]]
-  - uses:: [[Optimization Algorithm]]
+  - uses:: [[Optimisation Algorithm]]
   - requires:: [[Labelled Dataset]]
   - requires:: [[Feature Engineering]]
   - enables:: [[Model Evaluation]]

@@ -152,7 +152,7 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
-      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
+      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"},
       {"@id": "urn:ngm:class:graph-algorithms", "label": "Graph Algorithms"},
       {"@id": "urn:ngm:class:learning-algorithm", "label": "Learning Algorithm"},
       {"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"},
@@ -182,7 +182,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:dynamic-programming", "label": "Dynamic Programming"},
       {"@id": "urn:ngm:class:monte-carlo-methods", "label": "Monte Carlo Methods"},
-      {"@id": "urn:ngm:class:evolutionary-algorithms", "label": "Evolutionary Algorithms"},
+      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithms"},
       {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
     ],
     "bridgesTo": [
@@ -227,7 +227,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Optimization Algorithm]]",
+      "raw": "[[Optimisation Algorithm]]",
       "resolved": "urn:visionflow:owl:class:optimization-algorithm",
       "kind": "ResolvedLink"
     },
@@ -359,7 +359,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[AI Framework]], [[AI Technique]]
-  - has-part:: [[Algorithm]], [[Optimization Algorithm]], [[Graph Algorithms]], [[Learning Algorithm]], [[Search Algorithm]], [[Heuristic Methods]], [[Data Structure]]
+  - has-part:: [[Algorithm]], [[Optimisation Algorithm]], [[Graph Algorithms]], [[Learning Algorithm]], [[Search Algorithm]], [[Heuristic Methods]], [[Data Structure]]
   - requires:: [[Computational Complexity]], [[Data Structure]], [[Mathematical Logic]]
   - enables:: [[Procedural Content Generation]], [[Automated Planning]], [[Inference]], [[Reinforcement Learning]], [[Game AI]], [[Robotics]]
   - uses:: [[Dynamic Programming]], [[Monte Carlo Methods]], [[Evolutionary Algorithms]], [[Gradient Descent]]

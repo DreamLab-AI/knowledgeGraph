@@ -77,7 +77,7 @@ public:: true
         "label": "Conflict Resolution"
       },
       {
-        "@id": "urn:ngm:class:state-synchronization",
+        "@id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization"
       }
     ],
@@ -143,7 +143,7 @@ public:: true
   - supports:: [[Database System]]
   - dependsOn:: [[Concurrency]]
   - relatedTo:: [[Conflict Resolution]]
-  - relatedTo:: [[State Synchronization]]
+  - relatedTo:: [[State Synchronisation]]
   - contrastsWith:: [[Conflict Resolution]]
   - bridgesTo:: [[Database System]]
   - implements:: [[Data Consistency]]

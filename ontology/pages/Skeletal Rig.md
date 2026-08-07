@@ -17,7 +17,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:3-d-modeling",
+      "@id": "urn:ngm:class:3d-modelling",
       "label": "3D Modelling"
     }
   ],
@@ -66,7 +66,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modelling"
       }
     ],

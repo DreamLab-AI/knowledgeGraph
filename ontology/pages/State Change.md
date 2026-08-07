@@ -64,7 +64,7 @@ public:: true
         "label": "State Machine"
       },
       {
-        "@id": "urn:ngm:class:state-synchronization",
+        "@id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization"
       },
       {

@@ -139,7 +139,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:network-functions-virtualisation",
+        "@id": "urn:ngm:class:network-function-virtualization",
         "label": "Network Functions Virtualisation"
       },
       {

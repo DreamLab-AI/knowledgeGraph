@@ -699,7 +699,7 @@ alias:: FaultTolerance
         "label": "FLP Impossibility"
       },
       {
-        "@id": "urn:ngm:class:linearisability",
+        "@id": "urn:ngm:class:linearizability",
         "label": "Linearisability"
       },
       {

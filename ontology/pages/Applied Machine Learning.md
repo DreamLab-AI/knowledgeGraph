@@ -98,7 +98,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:automl", "label": "AutoML"},
+      {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
       {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
       {"@id": "urn:ngm:class:fairness-in-machine-learning", "label": "Fairness in Machine Learning"},
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}

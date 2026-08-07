@@ -63,7 +63,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -131,9 +131,9 @@ public:: true
   - requires:: [[Sensor Fusion]]
   - requires:: [[Path Planning]]
   - enables:: [[Situational Awareness]]
-  - supports:: [[Human-Robot Interaction]]
+  - supports:: [[Human Robot Interaction]]
   - supports:: [[Navigation]]
-  - dependsOn:: [[Localization]]
+  - dependsOn:: [[Localisation]]
   - dependsOn:: [[Mapping]]
   - implements:: [[Mobile Robotics]]
   - bridgesTo:: [[Computer Vision]]

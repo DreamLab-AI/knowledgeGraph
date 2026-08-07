@@ -161,7 +161,7 @@ public:: true
         "label": "Model Cards"
       },
       {
-        "@id": "urn:ngm:class:ai-incident-reporting",
+        "@id": "urn:ngm:class:incident-reporting",
         "label": "AI Incident Reporting"
       }
     ],

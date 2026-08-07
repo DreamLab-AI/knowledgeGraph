@@ -44,7 +44,7 @@ public:: true
         "label": "Global Illumination"
       },
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       },
       {

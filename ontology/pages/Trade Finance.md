@@ -51,7 +51,7 @@ public:: true
       {"@id": "urn:ngm:class:fatf", "label": "FATF"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},
+      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"},
       {"@id": "urn:ngm:class:digital-asset-standards", "label": "Digital Asset Standards"}
     ]
   },

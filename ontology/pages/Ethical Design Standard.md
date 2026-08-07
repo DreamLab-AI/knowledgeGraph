@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:ethical-design-standard",
   "@type": "Class",
   "label": "Ethical Design Standard",
-  "definition": "Ethical Design Standard is a spatial computing concept.",
+  "definition": "An Ethical Design Standard is a codified set of principles and requirements that guides the design of digital products, immersive environments and AI systems so that they respect user autonomy, privacy, accessibility and wellbeing. Such standards translate ethical values into verifiable design criteria, supporting audit, certification and regulatory compliance in spatial computing.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "relations": {
@@ -50,6 +50,30 @@ public:: true
       {
         "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:value-sensitive-design",
+        "label": "Value-Sensitive Design"
+      },
+      {
+        "@id": "urn:ngm:class:digital-ethics",
+        "label": "Digital Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ]
   },
@@ -95,14 +119,15 @@ public:: true
 
 
 - ### Definition
-  - Ethical Design Standard is a concept within the metaverse domain. Further enrichment pending.
+  - An Ethical Design Standard is a codified set of principles and requirements that guides the design of digital products, immersive environments and AI systems so that they respect user autonomy, privacy, accessibility and wellbeing. Such standards translate ethical values into verifiable design criteria, supporting audit, certification and regulatory compliance in spatial computing.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EthicalDesignStandard
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - related-to:: [[AI Ethics]], [[Value-Sensitive Design]], [[Digital Ethics]], [[Inclusive Design]]
+  - enables:: [[Regulatory Compliance]]
 
 - ### Content
 

@@ -206,7 +206,7 @@ public:: true
         "label": "Virtualization"
       },
       {
-        "@id": "urn:ngm:class:webassembly",
+        "@id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       },
       {

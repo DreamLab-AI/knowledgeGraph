@@ -468,7 +468,7 @@ public:: true
         "label": "Hidden State"
       },
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -877,7 +877,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Localization]]",
+      "raw": "[[Localisation]]",
       "resolved": "urn:visionflow:owl:class:localization",
       "kind": "ResolvedLink"
     },
@@ -973,7 +973,7 @@ public:: true
   - supports:: [[Autonomous Navigation]], [[Autonomous Robot]], [[Autonomous Vehicle]], [[Sensor Fusion]], [[State Estimation]], [[Mobile Robot Platform]], [[Wheeled Robot]]
   - uses:: [[Occupancy Grid]], [[Lidar]], [[Odometry]], [[Gyroscope]], [[IMU]], [[SLAM]], [[Sensor Fusion]]
   - contrasts-with:: [[Kalman Filter]], [[Extended Kalman Filter]], [[Unscented Kalman Filter]], [[Histogram Filter]], [[Gaussian Process]]
-  - related-to:: [[Hidden State]], [[State Estimation]], [[Machine Learning Discipline]], [[Deep Learning]], [[Simulation]], [[Localization]], [[Monte Carlo Tree Search]]
+  - related-to:: [[Hidden State]], [[State Estimation]], [[Machine Learning Discipline]], [[Deep Learning]], [[Simulation]], [[Localisation]], [[Monte Carlo Tree Search]]
   - standardized-by:: [[IEEE Signal Processing Society]], [[ICRA]], [[IROS]], [[RSS Conference]], [[ROS Navigation Stack]]
 
 - ### Content
@@ -1126,7 +1126,7 @@ public:: true
   - ### Components / Architecture
 
   - #### Particle Set {(x^(i), w^(i))}
-  - The N-element empirical measure approximating the posterior bel(x_t). Typical N = 500–2,000 (standard 2-D [[Localization]] in known map) up to 50,000 (global localisation solving the kidnapped-robot problem).
+  - The N-element empirical measure approximating the posterior bel(x_t). Typical N = 500–2,000 (standard 2-D [[Localisation]] in known map) up to 50,000 (global localisation solving the kidnapped-robot problem).
   - **KLD-sampling** (Fox 2003) adapts N dynamically between N_min = 100 and N_max = 20,000 based on empirical Kullback-Leibler divergence between the current particle approximation and the target posterior, reducing average N by 70% versus fixed-N while maintaining accuracy. This is the key innovation in the AMCL package.
 
   - #### Motion Model
@@ -1205,7 +1205,7 @@ public:: true
   - Jonschkowski, Rastogi & Brock (2018, RSS); Karkus, Hsu & Lee (2018, CoRL): introduced end-to-end differentiable SIR variants using Gumbel-softmax resampling or pathwise gradient estimators, enabling joint gradient training of [[Motion Model]], observation model, and downstream policy or planning network.
   - **`torchfilter`** (Yi et al. 2021, CMU): PyTorch implementation enabling gradient-based learning of all PF parameters including noise covariances and likelihood neural networks.
   - **`differentiable-particle-filters`** (Jonschkowski, Google Brain): reference implementation of RSS 2018 paper with learned observation model from raw RGB/depth input.
-  - **`neuralDPF`** (Ma 2023, ICRA): neural differentiable PF integrating ViT-based image likelihoods for map-free indoor [[Localization]].
+  - **`neuralDPF`** (Ma 2023, ICRA): neural differentiable PF integrating ViT-based image likelihoods for map-free indoor [[Localisation]].
   - Integration with foundation model observation processing (LiDARformer, Point-MAE) is active with 50+ papers in 2025–2026 ICRA/IROS/RSS proceedings, enabling map-free localisation for embodied [[AI Agent]] tasks.
 
   - ### Academic Context
@@ -1266,7 +1266,7 @@ public:: true
   - Imperial Centre for Process Systems Engineering: particle filters for chemical plant [[State Estimation]] and fault detection in oil refinery digital twins.
 
   - #### Oxford Robotics Institute (ORI)
-  - Paul Newman's group deployed particle-filter-based [[Localization]] on Wildcat all-terrain vehicles and the Oxford RobotCar Dataset vehicle (10 million kilometre urban drive dataset benchmarking AMCL variants under seasonal variation).
+  - Paul Newman's group deployed particle-filter-based [[Localisation]] on Wildcat all-terrain vehicles and the Oxford RobotCar Dataset vehicle (10 million kilometre urban drive dataset benchmarking AMCL variants under seasonal variation).
   - SeqSLAM (Milford & Wyeth 2012) and Experience-Based Navigation (Churchill & Newman 2013) use probabilistic particle consistency checks for long-term scene-change robustness in outdoor [[Autonomous Navigation]].
   - ORI spun out Oxbotica (acquired by Wayve 2023) whose autonomy stack uses Bayesian multi-hypothesis localisation for Level 4 [[Autonomous Vehicle]] operation in Oxford and London.
   - EPSRC Centre for Doctoral Training in Autonomous and Intelligent Machines & Systems (AIMS) at Oxford provides UK-wide doctoral training in probabilistic [[State Estimation]] and particle filters.

@@ -28,7 +28,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
       {"@id": "urn:ngm:class:universal-design", "label": "Universal Design"},
-      {"@id": "urn:ngm:class:localization", "label": "Localization"}
+      {"@id": "urn:ngm:class:localisation", "label": "Localization"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:inclusive-design", "label": "Inclusive Design"},
@@ -47,10 +47,10 @@ public:: true
 ```
 
 - ### Definition
-  - Inclusive participation is the principle and practice of designing technology systems and governance processes so that people of diverse abilities, backgrounds, and resources can engage fully, applying [[Accessibility]] standards, [[Universal Design]] principles, and [[Localization]] to remove structural exclusion barriers.
+  - Inclusive participation is the principle and practice of designing technology systems and governance processes so that people of diverse abilities, backgrounds, and resources can engage fully, applying [[Accessibility]] standards, [[Universal Design]] principles, and [[Localisation]] to remove structural exclusion barriers.
 
 - ### Relationships
-  - Inclusive participation operationalises [[Accessibility]] through WCAG compliance, ARIA roles, and assistive technology support; applies [[Universal Design]] to create experiences usable without adaptation; and employs [[Localization]] to extend reach across linguistic communities. It enables [[Inclusive Design]] practice as a systematic methodology, supports [[Digital Technology Access Equity]] outcomes in resource and opportunity distribution, and strengthens [[Community Governance]] by diversifying the pool of engaged stakeholders. In XR contexts, it is linked to [[XR Accessibility Standards]] and [[Governance Framework]] design, and is assessed through [[Social Impact]] and [[Diversity, Non-Discrimination, and Fairness]] frameworks.
+  - Inclusive participation operationalises [[Accessibility]] through WCAG compliance, ARIA roles, and assistive technology support; applies [[Universal Design]] to create experiences usable without adaptation; and employs [[Localisation]] to extend reach across linguistic communities. It enables [[Inclusive Design]] practice as a systematic methodology, supports [[Digital Technology Access Equity]] outcomes in resource and opportunity distribution, and strengthens [[Community Governance]] by diversifying the pool of engaged stakeholders. In XR contexts, it is linked to [[XR Accessibility Standards]] and [[Governance Framework]] design, and is assessed through [[Social Impact]] and [[Diversity, Non-Discrimination, and Fairness]] frameworks.
 
 - ### Content
   - Inclusive participation as a formal concept emerged from disability rights advocacy—specifically the social model of disability, which locates barriers in system design rather than in individual impairments—and from participatory design research in the 1970s and 1980s that demonstrated higher-quality outcomes when affected communities were involved in designing technologies that served them. The concept has since broadened to encompass intersectional exclusion across gender, race, economic status, digital literacy, and geographic access.

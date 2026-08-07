@@ -52,6 +52,12 @@ public:: true
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ]
+  },
   "quality": 0.6,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -102,6 +108,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[Interoperability]]
+  - related-to:: [[Knowledge Graph]]
 
 - ### Content
   - The supports relation links a provider to a beneficiary, expressing that the first entity makes the second possible or compatible. It is used loosely across technical and organisational contexts.

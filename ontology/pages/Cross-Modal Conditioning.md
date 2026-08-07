@@ -32,7 +32,7 @@ public:: true
     {"@id": "urn:ngm:class:computer-vision", "vc:label": "Computer Vision"},
     {"@id": "urn:ngm:class:generative-ai", "vc:label": "Generative AI"},
     {"@id": "urn:ngm:class:ip-adapter", "vc:label": "IP-Adapter"},
-    {"@id": "urn:ngm:class:controlnet", "vc:label": "ControlNet"},
+    {"@id": "urn:ngm:class:control-net", "vc:label": "ControlNet"},
     {"@id": "urn:ngm:class:self-attention", "vc:label": "Self Attention"},
     {"@id": "urn:ngm:class:modality-specific-encoder", "vc:label": "Modality-Specific Encoder"},
     {"@id": "urn:ngm:class:neural-network", "vc:label": "Neural Network"},
@@ -95,7 +95,7 @@ public:: true
       {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"},
       {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
       {"@id": "urn:ngm:class:ip-adapter", "label": "IP-Adapter"},
-      {"@id": "urn:ngm:class:controlnet", "label": "ControlNet"},
+      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
       {"@id": "urn:ngm:class:lora", "label": "LoRA"}
     ],
     "contrastsWith": [
@@ -142,7 +142,7 @@ public:: true
     {"raw": "[[Computer Vision]]", "resolved": "urn:ngm:class:computer-vision", "kind": "ResolvedLink"},
     {"raw": "[[Generative AI]]", "resolved": "urn:ngm:class:generative-ai", "kind": "ResolvedLink"},
     {"raw": "[[IP-Adapter]]", "resolved": "urn:ngm:class:ip-adapter", "kind": "ResolvedLink"},
-    {"raw": "[[ControlNet]]", "resolved": "urn:ngm:class:controlnet", "kind": "ResolvedLink"},
+    {"raw": "[[ControlNet]]", "resolved": "urn:ngm:class:control-net", "kind": "ResolvedLink"},
     {"raw": "[[Self Attention]]", "resolved": "urn:ngm:class:self-attention", "kind": "ResolvedLink"},
     {"raw": "[[Modality-Specific Encoder]]", "resolved": "urn:ngm:class:modality-specific-encoder", "kind": "ResolvedLink"},
     {"raw": "[[Neural Network]]", "resolved": "urn:ngm:class:neural-network", "kind": "ResolvedLink"},

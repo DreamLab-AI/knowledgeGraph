@@ -1,4 +1,5 @@
 public:: true
+alias:: Optimization Algorithm
 
 # Optimisation Algorithm
 ```json-ld
@@ -18,37 +19,65 @@ public:: true
   "relations":{
     "hasPart":[
       {"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"},
-      {"@id":"urn:ngm:class:stochastic-gradient-descent","label":"Stochastic Gradient Descent"}
+      {"@id":"urn:ngm:class:stochastic-gradient-descent","label":"Stochastic Gradient Descent"},
+      {"@id":"urn:ngm:class:adam-optimiser","label":"Adam Optimiser"},
+      {"@id":"urn:ngm:class:learning-rate-schedule","label":"Learning Rate Schedule"},
+      {"@id":"urn:ngm:class:momentum","label":"Momentum"},
+      {"@id":"urn:ngm:class:weight-decay","label":"Weight Decay"}
     ],
     "partOf":[
       {"@id":"urn:ngm:class:mathematical-optimisation","label":"Mathematical Optimisation"}
     ],
     "dependsOn":[
       {"@id":"urn:ngm:class:loss-function","label":"Loss Function"},
-      {"@id":"urn:ngm:class:objective-function","label":"Objective Function"}
+      {"@id":"urn:ngm:class:objective-function","label":"Objective Function"},
+      {"@id":"urn:ngm:class:gradient","label":"Gradient"},
+      {"@id":"urn:ngm:class:automatic-differentiation","label":"Automatic Differentiation"}
     ],
     "requires":[
       {"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"},
-      {"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"}
+      {"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"},
+      {"@id":"urn:ngm:class:loss-function","label":"Loss Function"},
+      {"@id":"urn:ngm:class:objective-function","label":"Objective Function"}
     ],
     "enables":[
       {"@id":"urn:ngm:class:model-training","label":"Model Training"},
       {"@id":"urn:ngm:class:hyperparameter-optimisation","label":"Hyperparameter Optimisation"},
-      {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}
+      {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"},
+      {"@id":"urn:ngm:class:machine-learning-discipline-model","label":"Machine Learning Model"},
+      {"@id":"urn:ngm:class:neural-network-architecture","label":"Neural Network Architecture"},
+      {"@id":"urn:ngm:class:reinforcement-learning","label":"Reinforcement Learning"}
     ],
     "implements":[
       {"@id":"urn:ngm:class:convex-optimisation","label":"Convex Optimisation"}
     ],
     "uses":[
-      {"@id":"urn:ngm:class:statistics","label":"Statistics"}
+      {"@id":"urn:ngm:class:statistics","label":"Statistics"},
+      {"@id":"urn:ngm:class:mini-batch","label":"Mini-Batch"},
+      {"@id":"urn:ngm:class:regularisation","label":"Regularisation"}
+    ],
+    "contrastsWith":[
+      {"@id":"urn:ngm:class:evolutionary-algorithm","label":"Evolutionary Algorithm"},
+      {"@id":"urn:ngm:class:bayesian-optimisation","label":"Bayesian Optimisation"}
+    ],
+    "bridgesTo":[
+      {"@id":"urn:ngm:class:numerical-methods","label":"Numerical Methods"},
+      {"@id":"urn:ngm:class:operations-research","label":"Operations Research"}
     ],
     "relatedTo":[
       {"@id":"urn:ngm:class:simulated-annealing","label":"Simulated Annealing"},
       {"@id":"urn:ngm:class:genetic-algorithm","label":"Genetic Algorithm"},
-      {"@id":"urn:ngm:class:hyperparameter-tuning","label":"Hyperparameter Tuning"}
+      {"@id":"urn:ngm:class:hyperparameter-tuning","label":"Hyperparameter Tuning"},
+      {"@id":"urn:ngm:class:convergence","label":"Convergence"},
+      {"@id":"urn:ngm:class:hyperparameter","label":"Hyperparameter"},
+      {"@id":"urn:ngm:class:generalisation","label":"Generalisation"},
+      {"@id":"urn:ngm:class:overfitting","label":"Overfitting"}
     ]
   },
-  "sameAs":[],
+  "sameAs":[
+    {"@id":"urn:ngm:class:numerical-optimiser","label":"Numerical Optimiser"},
+    {"@id":"urn:ngm:class:training-algorithm","label":"Training Algorithm"}
+  ],
   "quality":0.62,
   "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
 }
@@ -76,19 +105,40 @@ public:: true
 - ### Relationships
 	- hasPart:: [[Gradient Descent]]
 	- hasPart:: [[Stochastic Gradient Descent]]
+	- hasPart:: [[Adam Optimiser]]
+	- hasPart:: [[Learning Rate Schedule]]
+	- hasPart:: [[Momentum]]
+	- hasPart:: [[Weight Decay]]
 	- partOf:: [[Mathematical Optimisation]]
 	- dependsOn:: [[Loss Function]]
 	- dependsOn:: [[Objective Function]]
+	- dependsOn:: [[Gradient]]
+	- dependsOn:: [[Automatic Differentiation]]
 	- requires:: [[Gradient Descent]]
 	- requires:: [[Backpropagation]]
+	- requires:: [[Loss Function]]
+	- requires:: [[Objective Function]]
 	- enables:: [[Model Training]]
 	- enables:: [[Hyperparameter Optimisation]]
 	- enables:: [[Deep Learning]]
+	- enables:: [[Machine Learning Model]]
+	- enables:: [[Neural Network Architecture]]
+	- enables:: [[Reinforcement Learning]]
 	- implements:: [[Convex Optimisation]]
 	- uses:: [[Statistics]]
+	- uses:: [[Mini-Batch]]
+	- uses:: [[Regularisation]]
+	- contrastsWith:: [[Evolutionary Algorithm]]
+	- contrastsWith:: [[Bayesian Optimisation]]
+	- bridgesTo:: [[Numerical Methods]]
+	- bridgesTo:: [[Operations Research]]
 	- relatedTo:: [[Simulated Annealing]]
 	- relatedTo:: [[Genetic Algorithm]]
 	- relatedTo:: [[Hyperparameter Tuning]]
+	- relatedTo:: [[Convergence]]
+	- relatedTo:: [[Hyperparameter]]
+	- relatedTo:: [[Generalisation]]
+	- relatedTo:: [[Overfitting]]
 - ### Provenance
 	- updated:: 2026-06-15
 	- attributedTo:: did:nostr:ontology-mesh

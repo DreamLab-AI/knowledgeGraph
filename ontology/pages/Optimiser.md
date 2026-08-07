@@ -92,7 +92,7 @@ public:: true
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
+    {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"},
     {"@id": "urn:ngm:class:gradient-based-optimizer", "label": "Gradient-Based Optimizer"}
   ],
   "quality": 0.68,

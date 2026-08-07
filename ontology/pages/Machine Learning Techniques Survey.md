@@ -87,7 +87,7 @@ elevatedFrom:: [[Overview of Machine Learning Techniques]]
       {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
       {"@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:direct-preference-optimization", "label": "Direct Preference Optimization"}
+      {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimization"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
@@ -131,7 +131,7 @@ elevatedFrom:: [[Overview of Machine Learning Techniques]]
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Direct Preference Optimization]]",
+      "raw": "[[Direct Preference Optimisation]]",
       "resolved": "urn:visionflow:owl:class:direct-preference-optimization",
       "kind": "ResolvedLink"
     },
@@ -175,7 +175,7 @@ elevatedFrom:: [[Overview of Machine Learning Techniques]]
   - owl-role:: Concept
 
 - ### Relationships
-  - hasPart: [[Transformers]], [[Diffusion Models]], [[Generative Adversarial Networks]], [[Reinforcement Learning]], [[Direct Preference Optimization]]
+  - hasPart: [[Transformers]], [[Diffusion Models]], [[Generative Adversarial Networks]], [[Reinforcement Learning]], [[Direct Preference Optimisation]]
   - enables: [[Large Language Models]], [[Generative AI]]
   - uses: [[Optimization Algorithms]], [[Neural Network]]
 
@@ -261,7 +261,7 @@ elevatedFrom:: [[Overview of Machine Learning Techniques]]
 		- #### 1️⃣ Neural Networks
 		- #### 2️⃣ Deep Learning
 		- #### 3️⃣ Reinforcement Learning from Human Feedback [[RLHF]]
-		- #### 4️⃣ Direct Preference Optimisation [[Direct Preference Optimization]]
+		- #### 4️⃣ Direct Preference Optimisation [[Direct Preference Optimisation]]
 		- #### 5️⃣ Generative Adversarial Networks [[Generative Adversarial Networks]]
 		- #### 6️⃣ [[Diffusion Models]] (Generative Models)
 		- #### 7️⃣ 🟢 [[Transformers]]

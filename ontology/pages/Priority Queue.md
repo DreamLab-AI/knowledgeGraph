@@ -32,7 +32,7 @@ public:: true
       {"@id":"urn:ngm:class:data-structure","label":"Data Structure"}
     ],
     "supports":[
-      {"@id":"urn:ngm:class:optimization-algorithm","label":"Optimization Algorithm"},
+      {"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimization Algorithm"},
       {"@id":"urn:ngm:class:event-driven-architecture","label":"Event-Driven Architecture"},
       {"@id":"urn:ngm:class:task-scheduling","label":"Task Scheduling"}
     ],
@@ -81,7 +81,7 @@ public:: true
   - enables:: [[Heuristic Search]]
   - enables:: [[Discrete-Event Simulation]]
   - requires:: [[Data Structure]]
-  - supports:: [[Optimization Algorithm]]
+  - supports:: [[Optimisation Algorithm]]
   - supports:: [[Event-Driven Architecture]]
   - supports:: [[Task Scheduling]]
   - relatedTo:: [[Data Structure]]

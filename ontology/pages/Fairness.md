@@ -76,7 +76,7 @@ public:: true
         "label": "Bias Mitigation"
       },
       {
-        "@id": "urn:ngm:class:protected-attribute",
+        "@id": "urn:ngm:class:protected-attributes",
         "label": "Protected Attribute"
       },
       {

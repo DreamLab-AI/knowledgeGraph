@@ -91,7 +91,7 @@ public:: true
         "label": "Autoregressive Model"
       },
       {
-        "@id": "urn:ngm:class:normalizing-flow",
+        "@id": "urn:ngm:class:normalising-flow",
         "label": "Normalizing Flow"
       }
     ],

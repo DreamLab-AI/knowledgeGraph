@@ -104,7 +104,7 @@ public:: true
       {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:openpose", "label": "OpenPose"},
+      {"@id": "urn:ngm:class:open-pose", "label": "OpenPose"},
       {"@id": "urn:ngm:class:vitpose", "label": "ViTPose"},
       {"@id": "urn:ngm:class:mediapipe", "label": "MediaPipe"},
       {"@id": "urn:ngm:class:sdpose", "label": "SDPose"},

@@ -29,7 +29,7 @@ alias:: StabilityAnalysis
     "uses": [
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
       {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"}
+      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
@@ -50,7 +50,7 @@ alias:: StabilityAnalysis
   - Stability analysis is the mathematical determination of whether a [[Control System]]'s response to perturbations remains bounded or diverges, using techniques from [[Control Theory]] such as Lyapunov methods and eigenvalue analysis, with applications spanning [[Robotic Control]], [[Model Predictive Control]], and [[Financial Stability]] assessment.
 
 - ### Relationships
-  - Stability analysis is a core technique within [[Control Theory]], applied to [[Control System]] design and safety verification. It underpins [[Robotic Control]] and [[Robot Dynamics]] — ensuring that a robot's closed-loop behaviour converges to desired trajectories — and feeds directly into [[Model Predictive Control]] constraint synthesis. In machine learning, it is invoked to understand [[Training Instability]] in deep networks (gradient explosion/vanishing, loss landscape geometry). [[Simulation]] tools are used to empirically explore stability boundaries, complementing analytical methods. [[Financial Stability]] analysis applies analogous techniques to economic dynamical systems. [[Signal Processing]] and [[Optimization Algorithm]] tools are foundational to both analysis and controller synthesis.
+  - Stability analysis is a core technique within [[Control Theory]], applied to [[Control System]] design and safety verification. It underpins [[Robotic Control]] and [[Robot Dynamics]] — ensuring that a robot's closed-loop behaviour converges to desired trajectories — and feeds directly into [[Model Predictive Control]] constraint synthesis. In machine learning, it is invoked to understand [[Training Instability]] in deep networks (gradient explosion/vanishing, loss landscape geometry). [[Simulation]] tools are used to empirically explore stability boundaries, complementing analytical methods. [[Financial Stability]] analysis applies analogous techniques to economic dynamical systems. [[Signal Processing]] and [[Optimisation Algorithm]] tools are foundational to both analysis and controller synthesis.
 
 - ### Content
   - The mathematical foundations of stability analysis were laid by Aleksandr Lyapunov in his 1892 doctoral dissertation, which introduced the energy-function method that bears his name. Simultaneously, Henri Poincaré developed qualitative theory of differential equations, identifying limit cycles and chaotic behaviour. In the twentieth century, control engineers developed frequency-domain methods (Bode plots, Nyquist criterion, root locus) for linear time-invariant systems, enabling practical controller design for aerospace, chemical processes, and electrical power grids.

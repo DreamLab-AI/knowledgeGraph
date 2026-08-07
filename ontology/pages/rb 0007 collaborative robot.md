@@ -65,7 +65,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"},
       {"@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring", "label": "rb 0105 speed and separation monitoring"},
-      {"@id": "urn:ngm:class:robo-human-robot-interaction", "label": "Human-Robot Interaction"}
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"},

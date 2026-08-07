@@ -66,7 +66,7 @@ public:: true
         "label": "Fault Tolerance"
       },
       {
-        "@id": "urn:ngm:class:linearisability",
+        "@id": "urn:ngm:class:linearizability",
         "label": "Linearisability"
       },
       {

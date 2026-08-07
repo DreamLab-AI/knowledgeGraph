@@ -442,7 +442,7 @@ public:: true
         "label": "3D Gaussian Splatting"
       },
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       },
       {
@@ -716,7 +716,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[3D Modeling]]",
+      "raw": "[[3D Modelling]]",
       "resolved": "urn:visionflow:owl:class:3-d-modeling",
       "kind": "ResolvedLink"
     },
@@ -902,7 +902,7 @@ public:: true
   - supports:: [[AR Technology]], [[Apple Mixed Reality Headset]], [[Spatial Computing System]], [[3D Reconstruction]], [[Photogrammetry]], [[Robotics]], [[Avatar Creation]], [[3D Content Generation]]
   - uses:: [[GPU Compute]], [[Spherical Harmonics]], [[COLMAP]], [[Adam Optimiser]], [[CUDA]], [[Structure from Motion]]
   - contrasts-with:: [[Neural Radiance Field]], [[Neural Radiance Fields]], [[Ray Tracing]], [[Physically Based Rendering]], [[Mesh-Based Rendering]], [[Voxel Grid Representation]]
-  - related-to:: [[3D Gaussian Splatting]], [[3D Reconstruction]], [[3D Rendering Engine]], [[Photogrammetry]], [[Point Cloud]], [[Neural Rendering]], [[Volumetric Capture]], [[3D Modeling]], [[SLAM]], [[AR Frame]]
+  - related-to:: [[3D Gaussian Splatting]], [[3D Reconstruction]], [[3D Rendering Engine]], [[Photogrammetry]], [[Point Cloud]], [[Neural Rendering]], [[Volumetric Capture]], [[3D Modelling]], [[SLAM]], [[AR Frame]]
   - standardized-by:: [[ACM SIGGRAPH]], [[IEEE CVPR]], [[IEEE ICCV]]
 
 - ### Content

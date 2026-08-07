@@ -67,7 +67,7 @@ public:: true
   "qualityScore": 0.90,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:optimization-algorithm",
+      "@id": "urn:ngm:class:optimisation-algorithm",
       "label": "Optimization Algorithm"
     },
     {

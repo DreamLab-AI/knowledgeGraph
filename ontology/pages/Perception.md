@@ -277,7 +277,7 @@ public:: true
     - [[Sensor Fusion]] with [[Simultaneous Localisation and Mapping]] provides centimetre-level localisation.
   - #### [[Robotics]]
     - Manipulator robots use visual perception and force-torque sensing to perform pick-and-place, assembly, and surgical tasks.
-    - [[Human-Robot Interaction]] requires robust perception of human pose, gaze, and gesture.
+    - [[Human Robot Interaction]] requires robust perception of human pose, gaze, and gesture.
   - #### [[Extended Reality]]
     - AR/VR headsets (HoloLens, Quest) rely on inside-out tracking, plane detection, and hand-tracking — all perception tasks — to anchor [[Digital Twin]] overlays on physical surfaces.
     - Perception bridges the physical and virtual layers, enabling [[Scene Understanding]] for coherent mixed-reality experiences.
@@ -317,7 +317,7 @@ public:: true
   - enables:: [[Robotics]]
   - enables:: [[Autonomous Navigation]]
   - enables:: [[Scene Understanding]]
-  - enables:: [[Human-Robot Interaction]]
+  - enables:: [[Human Robot Interaction]]
   - uses:: [[Convolutional Neural Network]]
   - uses:: [[Transformer]]
   - uses:: [[Point Cloud]]

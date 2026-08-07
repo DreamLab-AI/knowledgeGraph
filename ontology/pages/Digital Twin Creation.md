@@ -88,7 +88,7 @@ public:: true
         "label": "Sensor Data"
       },
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       },
       {
@@ -116,7 +116,7 @@ public:: true
         "label": "Sensor Data"
       },
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       },
       {
@@ -266,7 +266,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[3D Modeling]]",
+      "raw": "[[3D Modelling]]",
       "resolved": "urn:visionflow:owl:class:3-d-modeling",
       "kind": "ResolvedLink"
     },
@@ -312,7 +312,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Modeling]]
-  - requires:: [[3D Modeling]], [[IoT Integration]], [[Sensor Data]]
+  - requires:: [[3D Modelling]], [[IoT Integration]], [[Sensor Data]]
   - enables:: [[Real-Time Monitoring]], [[Predictive Analytics]], [[Lifecycle Management]]
   - bridges-to:: [[Computer Vision]]
 

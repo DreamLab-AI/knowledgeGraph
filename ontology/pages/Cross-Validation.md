@@ -162,7 +162,7 @@ public:: true
         "label": "Overfitting Prevention"
       },
       {
-        "@id": "urn:ngm:class:automl",
+        "@id": "urn:ngm:class:auto-ml",
         "label": "AutoML"
       }
     ],

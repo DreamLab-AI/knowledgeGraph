@@ -86,14 +86,14 @@ public:: true
   - is-subclass-of:: [[Cognitive Architecture]], [[Agent Architecture]], [[Artificial Intelligence]], [[Deliberative System]], [[Rational Agent Model]]
   - has-part:: [[Belief Base]], [[Desire Set]], [[Intention Stack]], [[Plan Library]], [[Deliberation Function]], [[Means-Ends Reasoning]], [[Reconsideration Function]], [[Belief Revision]], [[Options Generator]], [[Filter Function]]
   - requires:: [[Planning]], [[Goal-Directed Behaviour]], [[Knowledge Representation]], [[Reasoning Engine]], [[Agent Communication Language]], [[Logic Programming]], [[Ontology]]
-  - enables:: [[Multi-Agent System]], [[Autonomous Agent]], [[Rational Agent]], [[Deliberative Reasoning]], [[Explainable AI]], [[Human-Robot Interaction]], [[Social Simulation]], [[Agent-Based Modelling]]
+  - enables:: [[Multi-Agent System]], [[Autonomous Agent]], [[Rational Agent]], [[Deliberative Reasoning]], [[Explainable AI]], [[Human Robot Interaction]], [[Social Simulation]], [[Agent-Based Modelling]]
   - implements:: [[Rational Agent]], [[Deliberative Reasoning]], [[Practical Reasoning]], [[Commitment Strategy]], [[Goal Management]], [[Plan Selection]]
   - depends-on:: [[Knowledge Representation]], [[Ontology]], [[Logic Programming]], [[Planning]], [[Belief Revision]], [[Modal Logic]]
   - supports:: [[Robotics]], [[Distributed Collaboration]], [[Air Traffic Management]], [[Logistics Optimisation]], [[Healthcare Decision Support]], [[Smart Grid]], [[Autonomous Vehicle]]
   - uses:: [[Agent Architecture]], [[Reasoning Engine]], [[Knowledge Representation]], [[AgentSpeak]], [[Jason Framework]], [[JADE]], [[FIPA-ACL]], [[Plan Library]]
   - contrasts-with:: [[Reactive Agent]], [[Reinforcement Learning]], [[Behaviour Tree]], [[Subsumption Architecture]], [[Neural Network]], [[Finite State Machine]], [[Pure Reactive System]]
   - related-to:: [[Cognitive Architecture]], [[Symbolic AI]], [[Agentic AI]], [[Automated Planning]], [[Multi-Agent System]], [[Belief Revision]], [[Modal Logic]], [[Temporal Logic]], [[Goal-Oriented Action Planning]]
-  - bridges-to:: [[Large Language Model]], [[Agentic AI]], [[Explainable AI]], [[Human-Robot Interaction]], [[Neurosymbolic AI]]
+  - bridges-to:: [[Large Language Model]], [[Agentic AI]], [[Explainable AI]], [[Human Robot Interaction]], [[Neurosymbolic AI]]
   - standardized-by:: [[FIPA]], [[JADE]], [[Jason Framework]], [[AgentSpeak]], [[FIPA-ACL]]
 
 - ### Content

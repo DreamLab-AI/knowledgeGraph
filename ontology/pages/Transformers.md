@@ -11,7 +11,7 @@ public:: true
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
-      "@id": "urn:visionflow:linked:adam-optimizer",
+      "@id": "urn:visionflow:linked:adam-optimiser",
       "vc:label": "Adam Optimizer"
     },
     {
@@ -426,7 +426,7 @@ public:: true
   "@id": "urn:ngm:class:transformers",
   "@type": "Class",
   "label": "Transformers",
-  "definition": "Neural network architecture introduced by Vaswani et al.",
+  "definition": "The transformer is a neural network architecture introduced by Vaswani et al. in 'Attention Is All You Need' (2017). It replaces recurrence and convolution with multi-head self-attention and position-wise feed-forward layers, enabling fully parallel sequence processing, and underpins large language models and modern vision, speech, and protein-structure systems.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -566,7 +566,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:adam-optimizer",
+        "@id": "urn:ngm:class:adam-optimiser",
         "label": "Adam Optimizer"
       },
       {
@@ -680,8 +680,8 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Adam Optimizer]]",
-      "resolved": "urn:visionflow:linked:adam-optimizer",
+      "raw": "[[Adam Optimiser]]",
+      "resolved": "urn:visionflow:linked:adam-optimiser",
       "kind": "StubLink"
     },
     {
@@ -1194,7 +1194,7 @@ public:: true
   - implements:: [[Scaled Dot Product Attention]], [[RoPE]], [[SwiGLU]], [[RMSNorm]], [[Flash Attention]], [[Grouped Query Attention]], [[Sparse Mixture of Experts]]
   - depends-on:: [[Linear Algebra]], [[Information Theory]], [[Softmax]], [[Backpropagation]], [[CUDA]], [[Transformer Training Infrastructure]]
   - supports:: [[Natural Language Processing]], [[Computer Vision]], [[Audio Processing]], [[Time Series Forecasting]], [[Reinforcement Learning]], [[Drug Discovery]]
-  - uses:: [[Attention Mechanism]], [[Layer Normalization]], [[Dropout]], [[Adam Optimizer]], [[Mixed Precision Training]]
+  - uses:: [[Attention Mechanism]], [[Layer Normalization]], [[Dropout]], [[Adam Optimiser]], [[Mixed Precision Training]]
   - contrasts-with:: [[Recurrent Neural Network]], [[LSTM]], [[Convolutional Neural Network]], [[Mamba]], [[State Space Models]], [[RWKV]]
   - related-to:: [[BERT]], [[GPT]], [[LLaMA]], [[Claude]], [[T5]], [[ViT]], [[Whisper]], [[AlphaFold]], [[Mistral]], [[Gemini Multimodal Language Model]]
   - standardized-by:: [[Hugging Face Transformers]], [[PyTorch]], [[JAX]], [[ONNX]]
@@ -1678,7 +1678,7 @@ public:: true
 
   - ## Metadata
   - **Domain correction**: File originally tagged `domain:: infrastructure` and IRI under infrastructure namespace. Corrected to `domain:: artificial-intelligence` — transformer is a neural network architecture, not an IT infrastructure component. IRI, URI, `same-as`, and `owl-class` updated accordingly. Correction recorded 2026-05-17.
-  - **Wikilink targets**: [[Deep Learning]], [[Neural Network]], [[Sequence Modelling]], [[Attention Mechanism]], [[Large-Scale Pretrained Foundation Model]], [[Multi-Head Attention]], [[Self Attention]], [[Feed-Forward Network]], [[Positional Encoding]], [[Layer Normalization]], [[Residual Connection]], [[KV Cache]], [[Mixture-of-Experts Architecture]], [[Tokenization]], [[Embedding Layer]], [[Training Data]], [[Gradient Descent]], [[Backpropagation]], [[GPU Compute]], [[Large Language Model]], [[Vision Transformer]], [[Speech Recognition]], [[Protein Structure Prediction]], [[Code Generation]], [[Machine Translation]], [[Text Generation]], [[Multimodal Learning]], [[RoPE]], [[SwiGLU]], [[RMSNorm]], [[Flash Attention]], [[Grouped Query Attention]], [[Sparse Mixture of Experts]], [[Linear Algebra]], [[Information Theory]], [[Softmax]], [[CUDA]], [[Natural Language Processing]], [[Computer Vision]], [[Audio Processing]], [[Time Series Forecasting]], [[Reinforcement Learning]], [[Drug Discovery]], [[Attention Mechanism]], [[Layer Normalization]], [[Dropout]], [[Adam Optimizer]], [[Mixed Precision Training]], [[Recurrent Neural Network]], [[LSTM]], [[Convolutional Neural Network]], [[Mamba]], [[State Space Models]], [[RWKV]], [[BERT]], [[GPT]], [[LLaMA]], [[Claude]], [[T5]], [[ViT]], [[Whisper]], [[AlphaFold]], [[Mistral]], [[Gemini Multimodal Language Model]], [[Hugging Face Transformers]], [[PyTorch]], [[JAX]], [[ONNX]], [[RoBERTa]], [[DeBERTa]], [[BART]], [[Retrieval-Augmented Generation]], [[AI Safety]], [[AI Risks]], [[Agents]], [[Falcon]].
+  - **Wikilink targets**: [[Deep Learning]], [[Neural Network]], [[Sequence Modelling]], [[Attention Mechanism]], [[Large-Scale Pretrained Foundation Model]], [[Multi-Head Attention]], [[Self Attention]], [[Feed-Forward Network]], [[Positional Encoding]], [[Layer Normalization]], [[Residual Connection]], [[KV Cache]], [[Mixture-of-Experts Architecture]], [[Tokenization]], [[Embedding Layer]], [[Training Data]], [[Gradient Descent]], [[Backpropagation]], [[GPU Compute]], [[Large Language Model]], [[Vision Transformer]], [[Speech Recognition]], [[Protein Structure Prediction]], [[Code Generation]], [[Machine Translation]], [[Text Generation]], [[Multimodal Learning]], [[RoPE]], [[SwiGLU]], [[RMSNorm]], [[Flash Attention]], [[Grouped Query Attention]], [[Sparse Mixture of Experts]], [[Linear Algebra]], [[Information Theory]], [[Softmax]], [[CUDA]], [[Natural Language Processing]], [[Computer Vision]], [[Audio Processing]], [[Time Series Forecasting]], [[Reinforcement Learning]], [[Drug Discovery]], [[Attention Mechanism]], [[Layer Normalization]], [[Dropout]], [[Adam Optimiser]], [[Mixed Precision Training]], [[Recurrent Neural Network]], [[LSTM]], [[Convolutional Neural Network]], [[Mamba]], [[State Space Models]], [[RWKV]], [[BERT]], [[GPT]], [[LLaMA]], [[Claude]], [[T5]], [[ViT]], [[Whisper]], [[AlphaFold]], [[Mistral]], [[Gemini Multimodal Language Model]], [[Hugging Face Transformers]], [[PyTorch]], [[JAX]], [[ONNX]], [[RoBERTa]], [[DeBERTa]], [[BART]], [[Retrieval-Augmented Generation]], [[AI Safety]], [[AI Risks]], [[Agents]], [[Falcon]].
   - **Legacy term ID**: AI-0742 (artificial-intelligence domain, 4-digit sequence, consistent with scheme).
   - **Authority score**: 0.87 reflecting 28 peer-reviewed and primary references, comprehensive academic provenance, confirmed cross-domain deployment evidence, UK research context at 6+ institutions, and active 2026 state capture.
   - **Quality score**: 0.52 reflecting production-ready enrichment with comprehensive content across all required subsections.

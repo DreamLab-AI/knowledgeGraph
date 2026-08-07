@@ -158,12 +158,12 @@ public:: true
   - is-subclass-of:: [[Human-Computer Interaction]], [[Multimodal AI]], [[Cognitive Science]]
   - has-part:: [[Emotion Recognition]], [[Multimodal Fusion]], [[Cognitive Feedback Interface]], [[Emotional Analytics Engine]], [[Physiological Signal Processing]], [[Biometric Sensing]]
   - uses:: [[Sentiment Analysis]], [[Computer Vision]], [[Deep Learning]], [[Natural Language Processing]], [[Speech Recognition]], [[Physiological Signal Processing]], [[Convolutional Neural Network]], [[Transformer Architecture]], [[Attention Mechanism]], [[EEG]], [[Wearable Computing]], [[Foundation Model]], [[Large Language Model]]
-  - enables:: [[Emotion Aware Interaction]], [[Emotional Analytics Engine]], [[Cognitive Feedback Interface]], [[Adaptive Learning System]], [[Mental Health Monitoring]], [[Human-Robot Interaction]], [[Driver Monitoring System]], [[Intelligent Tutoring System]], [[Social Robotics]], [[Digital Health]]
+  - enables:: [[Emotion Aware Interaction]], [[Emotional Analytics Engine]], [[Cognitive Feedback Interface]], [[Adaptive Learning System]], [[Mental Health Monitoring]], [[Human Robot Interaction]], [[Driver Monitoring System]], [[Intelligent Tutoring System]], [[Social Robotics]], [[Digital Health]]
   - requires:: [[Emotion Recognition]], [[Annotated Dataset]], [[Multimodal Fusion]], [[Data Labelling]], [[Transfer Learning]]
   - depends-on:: [[Machine Learning]], [[Transfer Learning]], [[Foundation Model]], [[Active Learning]], [[Multimodal AI]]
   - supports:: [[Digital Health]], [[Extended Reality]], [[Autonomous Vehicle]], [[Social Robotics]], [[User Experience Design]]
-  - bridges-to:: [[Extended Reality]], [[Digital Health]], [[Autonomous Vehicle]], [[Robotics]], [[Social Robotics]], [[Human-Robot Interaction]]
-  - relatedTo:: [[Emotional Intelligence]], [[Cognitive Science]], [[User Experience Design]], [[Biometric Sensing]], [[Explainable AI]], [[Multimodal AI]], [[Large Language Model]], [[Reinforcement Learning from Human Feedback]], [[Privacy-Preserving Machine Learning]], [[BDI Architecture]], [[Autonomous Agent]], [[Human-Robot Interaction]], [[Cognitive Load]], [[Neuroimaging]], [[Psychophysiology]], [[Facial Action Coding System]], [[Appraisal Theory]], [[Dimensional Model of Affect]]
+  - bridges-to:: [[Extended Reality]], [[Digital Health]], [[Autonomous Vehicle]], [[Robotics]], [[Social Robotics]], [[Human Robot Interaction]]
+  - relatedTo:: [[Emotional Intelligence]], [[Cognitive Science]], [[User Experience Design]], [[Biometric Sensing]], [[Explainable AI]], [[Multimodal AI]], [[Large Language Model]], [[Reinforcement Learning from Human Feedback]], [[Privacy-Preserving Machine Learning]], [[BDI Architecture]], [[Autonomous Agent]], [[Human Robot Interaction]], [[Cognitive Load]], [[Neuroimaging]], [[Psychophysiology]], [[Facial Action Coding System]], [[Appraisal Theory]], [[Dimensional Model of Affect]]
   - contrastsWith:: [[Rational Agent]], [[Symbolic AI]], [[Rule-Based System]]
   - standardized-by:: [[EU AI Act]], [[IEEE P7014]], [[GDPR]]
   - implements:: [[Privacy-Preserving Machine Learning]], [[Federated Learning]], [[Differential Privacy]], [[Active Learning]], [[Transfer Learning]]
@@ -560,7 +560,7 @@ public:: true
   - [[Digital Health]]: mental health monitoring, depression biomarker sensing, patient wellbeing tracking.
   - [[Extended Reality]]: emotionally responsive VR/AR environments and avatar expressiveness.
   - [[Intelligent Tutoring System]]: affect-aware educational personalisation and intervention.
-  - [[Human-Robot Interaction]]: social robot emotional expression and affect perception.
+  - [[Human Robot Interaction]]: social robot emotional expression and affect perception.
   - [[Driver Monitoring System]]: fatigue and emotional agitation detection for automotive safety.
 
   **Contrasting and Boundary Concepts**

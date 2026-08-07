@@ -1,4 +1,5 @@
 public:: true
+alias:: Adam Optimizer, Adaptive Moment Estimation, AdaM
 
 # adam optimiser
 ```json-ld
@@ -79,6 +80,10 @@ public:: true
     {
       "@id": "urn:ngm:class:gradient-descent",
       "label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:ngm:class:optimisation-algorithm",
+      "label": "Optimisation Algorithm"
     }
   ],
   "relations": {
@@ -111,6 +116,7 @@ public:: true
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:rmsprop", "label": "RMSProp"},
+      {"@id": "urn:ngm:class:adagrad", "label": "Adagrad"},
       {"@id": "urn:ngm:class:sgd-with-momentum", "label": "SGD with Momentum"},
       {"@id": "urn:ngm:class:lion-optimiser", "label": "Lion Optimiser"},
       {"@id": "urn:ngm:class:muon-optimiser", "label": "Muon Optimiser"}
@@ -134,6 +140,10 @@ public:: true
     {
       "@id": "urn:ngm:class:adaptive-moment-estimation",
       "label": "Adaptive Moment Estimation"
+    },
+    {
+      "@id": "urn:ngm:class:adam-optimiser",
+      "label": "Adam Optimizer"
     }
   ],
   "quality": 0.91,

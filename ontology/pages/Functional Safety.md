@@ -152,7 +152,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:failure-mode-effects-analysis",
+        "@id": "urn:ngm:class:failure-mode-and-effects-analysis",
         "label": "Failure Mode and Effects Analysis"
       },
       {

@@ -128,7 +128,7 @@ public:: true
       { "@id": "urn:ngm:class:gdpr", "label": "GDPR" },
       { "@id": "urn:ngm:class:ai-governance", "label": "AI Governance" },
       { "@id": "urn:ngm:class:mlops", "label": "MLOps" },
-      { "@id": "urn:ngm:class:model-card", "label": "Model Card" },
+      { "@id": "urn:ngm:class:model-cards", "label": "Model Card" },
       { "@id": "urn:ngm:class:explainability", "label": "Explainability" },
       { "@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI" }
     ]

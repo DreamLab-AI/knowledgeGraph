@@ -207,7 +207,7 @@ public:: true
         "label": "Site Reliability Engineering"
       },
       {
-        "@id": "urn:ngm:class:devsecops",
+        "@id": "urn:ngm:class:dev-sec-ops",
         "label": "DevSecOps"
       }
     ],
@@ -277,7 +277,7 @@ public:: true
     {"raw": "[[Data Versioning]]", "resolved": "urn:ngm:class:data-versioning", "kind": "ResolvedLink"},
     {"raw": "[[Microservices]]", "resolved": "urn:ngm:class:microservices", "kind": "ResolvedLink"},
     {"raw": "[[Cloud Native]]", "resolved": "urn:ngm:class:cloud-native", "kind": "ResolvedLink"},
-    {"raw": "[[DevSecOps]]", "resolved": "urn:ngm:class:devsecops", "kind": "ResolvedLink"},
+    {"raw": "[[DevSecOps]]", "resolved": "urn:ngm:class:dev-sec-ops", "kind": "ResolvedLink"},
     {"raw": "[[Docker]]", "resolved": "urn:ngm:class:docker", "kind": "ResolvedLink"},
     {"raw": "[[Software Delivery Lifecycle]]", "resolved": "urn:ngm:class:software-delivery-lifecycle", "kind": "ResolvedLink"},
     {"raw": "[[Disaster Recovery]]", "resolved": "urn:ngm:class:disaster-recovery", "kind": "ResolvedLink"},

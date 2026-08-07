@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:web-standards",
   "@type": "Class",
   "label": "Web Standards",
-  "definition": "Web Standards is a spatial computing concept.",
+  "definition": "Web standards are the formal specifications and protocols — including HTML, CSS, HTTP, and the WebXR Device API — that define how content and applications are described, transmitted, and rendered on the World Wide Web. Developed by consensus bodies such as the W3C, they ensure interoperability across browsers, devices, and immersive spatial computing platforms.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "relations": {
@@ -51,6 +51,14 @@ public:: true
         "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:world-wide-web-consortium", "label": "World Wide Web Consortium"},
+      {"@id": "urn:ngm:class:open-standards", "label": "Open Standards"},
+      {"@id": "urn:ngm:class:web-xr", "label": "WebXR"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
     ]
   },
   "quality": 0.35,
@@ -95,14 +103,17 @@ public:: true
 
 
 - ### Definition
-  - Web Standards is a concept within the metaverse domain. Further enrichment pending.
+  - Web standards are the formal specifications and protocols — including HTML, CSS, HTTP, and the WebXR Device API — that define how content and applications are described, transmitted, and rendered on the World Wide Web. Developed by consensus bodies such as the W3C, they ensure interoperability across browsers, devices, and immersive spatial computing platforms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:WebStandards
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - related-to:: [[World Wide Web Consortium]]
+  - related-to:: [[Open Standards]]
+  - related-to:: [[WebXR]]
+  - enables:: [[Interoperability]]
 
 - ### Content
 

@@ -123,7 +123,7 @@ alias:: DigitalGoods
   "@id": "urn:ngm:class:digital-goods",
   "@type": "Class",
   "label": "Digital Goods",
-  "definition": "Digital Goods is a type of Virtual Economy in the spatial computing domain.",
+  "definition": "Virtual items and assets that can be owned, transferred, traded, or used within metaverse environments, typically with provable scarcity and verifiable ownership recorded on distributed ledgers; they span avatar wearables, virtual land, in-game items, and creative works monetised through creator economies and virtual commerce.",
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
@@ -322,7 +322,7 @@ alias:: DigitalGoods
 
 
 - ### Definition
-  - Virtual items and assets that can be owned, transferred, traded, or used within metaverse environments, typically with provable scarcity and ownership.
+  - Virtual items and assets that can be owned, transferred, traded, or used within metaverse environments, typically with provable scarcity and verifiable ownership recorded on distributed ledgers; they span avatar wearables, virtual land, in-game items, and creative works monetised through creator economies and virtual commerce.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalGoods

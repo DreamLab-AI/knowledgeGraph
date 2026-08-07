@@ -27,7 +27,7 @@ public:: true
     "partOf":[{"@id":"urn:ngm:class:deep-learning-framework","label":"Deep Learning Framework"}],
     "relatedTo":[{"@id":"urn:ngm:class:neural-network","label":"Neural Network"},{"@id":"urn:ngm:class:gradient","label":"Gradient"}],
     "bridgesTo":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:optimization-algorithm","label":"Optimization Algorithm"}]
+    "contrastsWith":[{"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimization Algorithm"}]
   },
   "sameAs":[],
   "quality":0.62,
@@ -70,7 +70,7 @@ public:: true
 - relatedTo:: [[Neural Network]]
 - relatedTo:: [[Gradient]]
 - bridgesTo:: [[Deep Learning]]
-- contrastsWith:: [[Optimization Algorithm]]
+- contrastsWith:: [[Optimisation Algorithm]]
 - ### Provenance
 - updated:: 2026-06-15
 - attributedTo:: did:nostr:ontology-mesh

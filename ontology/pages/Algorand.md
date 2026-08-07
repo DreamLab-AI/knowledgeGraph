@@ -62,7 +62,7 @@ public:: true
         "label": "Decentralized Application"
       },
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {

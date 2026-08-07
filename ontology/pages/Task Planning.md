@@ -816,7 +816,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -917,7 +917,7 @@ public:: true
   - is-subclass-of:: [[Artificial Intelligence]], [[Automated Planning]], [[Symbolic AI]], [[Robotics]], [[Sequential Decision Making]]
   - has-part:: [[PDDL]], [[HTN Planning]], [[Behaviour Trees]], [[Task and Motion Planning]], [[Goal-Oriented Action Planning]], [[MCTS]], [[Plan Library]], [[World Model]], [[Heuristic Function]], [[Action Schema]]
   - requires:: [[World State Representation]], [[Goal Specification]], [[Action Model]], [[Search Algorithm]], [[Feasibility Checker]]
-  - enables:: [[Robot Autonomy]], [[Intelligent Agent]], [[Multi-Robot Coordination]], [[Human-Robot Interaction]], [[Warehouse Automation]], [[Surgical Robotics]], [[Game AI]]
+  - enables:: [[Robot Autonomy]], [[Intelligent Agent]], [[Multi-Robot Coordination]], [[Human Robot Interaction]], [[Warehouse Automation]], [[Surgical Robotics]], [[Game AI]]
   - implements:: [[STRIPS]], [[PDDL]], [[HTN Decomposition]], [[Behaviour Tree Execution]], [[MCTS Rollout]], [[Chain-of-Thought Reasoning]], [[Diffusion Policy]]
   - depends-on:: [[Search Theory]], [[Formal Logic]], [[Probability Theory]], [[Computer Vision]], [[Natural Language Processing]], [[Motion Planning]]
   - supports:: [[Autonomous Vehicles]], [[Manufacturing Automation]], [[Service Robotics]], [[Space Robotics]], [[Surgical Robotics]], [[Video Game AI]]

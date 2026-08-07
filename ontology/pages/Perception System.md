@@ -608,7 +608,7 @@ public:: true
         "label": "Scene Understanding"
       },
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ],
@@ -1374,7 +1374,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Localization]]",
+      "raw": "[[Localisation]]",
       "resolved": "urn:visionflow:owl:class:localization",
       "kind": "ResolvedLink"
     },
@@ -1441,7 +1441,7 @@ public:: true
 
 
 - ### Definition
-  - A Perception System is the sensor processing and environmental understanding component of [[Autonomous Systems]] that interprets raw [[Sensor Data]] to build a coherent representation of the surrounding environment, including [[Object Detection]], [[Classification]], [[Tracking]], [[Localization]], and [[Scene Understanding]]. Perception systems fuse data from multiple [[Sensor Modalities]] ([[Camera]], [[LiDAR]], [[Radar]], [[Ultrasonic Sensors]]) to create robust environmental models for [[Autonomous Decision-Making]]. [Updated 2025]
+  - A Perception System is the sensor processing and environmental understanding component of [[Autonomous Systems]] that interprets raw [[Sensor Data]] to build a coherent representation of the surrounding environment, including [[Object Detection]], [[Classification]], [[Tracking]], [[Localisation]], and [[Scene Understanding]]. Perception systems fuse data from multiple [[Sensor Modalities]] ([[Camera]], [[LiDAR]], [[Radar]], [[Ultrasonic Sensors]]) to create robust environmental models for [[Autonomous Decision-Making]]. [Updated 2025]
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:PerceptionSystem

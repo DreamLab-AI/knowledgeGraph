@@ -233,7 +233,7 @@ public:: true
       {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:neurosymbolic-ai", "label": "Neurosymbolic AI"},
+      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neurosymbolic AI"},
       {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},
       {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"},
       {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain-of-Thought Prompting"}

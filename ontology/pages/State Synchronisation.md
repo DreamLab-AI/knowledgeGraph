@@ -1,4 +1,5 @@
 public:: true
+alias:: State Synchronization
 
 # State Synchronisation
 ```json-ld
@@ -58,11 +59,11 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:state-synchronization",
+        "@id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization"
       },
       {
-        "@id": "urn:ngm:class:real-time-synchronization",
+        "@id": "urn:ngm:class:real-time-synchronisation",
         "label": "Real-time Synchronization"
       },
       {
@@ -98,6 +99,18 @@ public:: true
       {
         "@id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "Consistent User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:shared-virtual-world",
+        "label": "Shared Virtual World"
       }
     ],
     "requires": [
@@ -108,6 +121,22 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
+      },
+      {
+        "@id": "urn:ngm:class:state-representation",
+        "label": "State Representation"
+      },
+      {
+        "@id": "urn:ngm:class:synchronization-protocol",
+        "label": "Synchronization Protocol"
       }
     ],
     "implements": [
@@ -145,11 +174,43 @@ public:: true
         "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution Engine"
+      },
+      {
+        "@id": "urn:ngm:class:delta-compression",
+        "label": "Delta Compression"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "State Replication"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp",
+        "label": "Timestamp Ordering"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-twin-interop-protocol",
+        "label": "Digital Twin Interop Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system-architecture",
+        "label": "Distributed System Architecture"
+      }
     ]
   },
   "sameAs": [
     {
-      "@id": "urn:ngm:class:state-synchronization",
+      "@id": "urn:ngm:class:state-synchronisation",
       "label": "State Synchronization"
     }
   ],
@@ -176,3 +237,14 @@ public:: true
   - CRDTs (conflict-free replicated data types) represent a major advance for offline-capable and high-availability applications: their algebraic properties guarantee that any set of concurrent updates can be merged in any order to produce a consistent result, enabling applications such as collaborative text editors, distributed counters, and real-time multiplayer state to operate without coordination. Automerge and Yjs are widely used CRDT libraries underpinning tools including Figma, Notion, and various metaverse platforms.
 
   - In 2024-2025, state synchronisation is increasingly important in multi-agent AI systems where agents maintain shared world models, and in metaverse platforms where thousands of participants need consistent spatial state with sub-100-millisecond latency. Blockchain consensus protocols continue to evolve, with Ethereum's Gasper and Solana's Tower BFT representing contrasting approaches to validator-set synchronisation. Edge computing and IoT deployments are driving interest in lightweight synchronisation protocols tolerant of intermittent connectivity.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:StateSynchronization
+  - owl-role:: Process
+  - owl-inferred:: spatial-computing:VirtualProcess
+  - belongs-to-domain:: [[InfrastructureDomain]]
+  - implemented-in-layer:: [[Data Layer]], [[Middleware Layer]]
+
+- ### Provenance
+  - sources:: [[EWG/MSF taxonomy]], [[ETSI GR ARF 010]], [[ISO/IEC 23247]]
+  - migration-date:: 2026-04-26T00:00:00Z

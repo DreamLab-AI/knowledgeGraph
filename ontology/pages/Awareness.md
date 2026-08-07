@@ -96,7 +96,7 @@ public:: true
         "label": "Presence Detection"
       },
       {
-        "@id": "urn:ngm:class:state-synchronization",
+        "@id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization"
       }
     ],
@@ -169,7 +169,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[State Synchronization]]",
+      "raw": "[[State Synchronisation]]",
       "resolved": "urn:visionflow:owl:class:state-synchronization",
       "kind": "ResolvedLink"
     }
@@ -193,7 +193,7 @@ public:: true
   - belongs-to-domain:: [[metaverse]]
 - ### Relationships
   - is-subclass-of:: [[Social Computing]]
-  - requires:: [[Presence Detection]], [[State Synchronization]], [[Notification Systems]]
+  - requires:: [[Presence Detection]], [[State Synchronisation]], [[Notification Systems]]
   - enables:: [[Collaborative Presence]], [[Social Interaction]], [[Situational Understanding]]
 - ### Content
   ### Technical Details

@@ -125,7 +125,7 @@ alias:: RB-1003-optimal-control
         "label": "State Space Representation"
       },
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -304,7 +304,7 @@ alias:: RB-1003-optimal-control
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Optimization Algorithm]]",
+      "raw": "[[Optimisation Algorithm]]",
       "resolved": "urn:visionflow:owl:class:optimization-algorithm",
       "kind": "ResolvedLink"
     },
@@ -346,7 +346,7 @@ alias:: RB-1003-optimal-control
   - requires:: [[System Dynamics Model]]
   - minimizes some PerformanceCriterion
   - satisfies some SystemConstraints
-  - uses:: [[Optimization Algorithm]]
+  - uses:: [[Optimisation Algorithm]]
   - characterizedBy:: [[Optimality]], [[Efficiency]]
 
   - #### Relationships

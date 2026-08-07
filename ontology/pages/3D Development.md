@@ -168,7 +168,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[3D Modeling]]",
+      "raw": "[[3D Modelling]]",
       "resolved": "urn:visionflow:owl:class:3-d-modeling",
       "kind": "ResolvedLink"
     },
@@ -200,7 +200,7 @@ public:: true
 
 
 - ### Definition
-  - 3D Development encompasses the methodologies, tools, and workflows for creating, iterating, and deploying three-dimensional digital assets and environments. It integrates disciplines including [[3D Modeling]], [[3D Graphics Standard]], and [[3D Rendering Engine]] to produce immersive content for games, virtual worlds, and extended reality applications.
+  - 3D Development encompasses the methodologies, tools, and workflows for creating, iterating, and deploying three-dimensional digital assets and environments. It integrates disciplines including [[3D Modelling]], [[3D Graphics Standard]], and [[3D Rendering Engine]] to produce immersive content for games, virtual worlds, and extended reality applications.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:3DDevelopment
@@ -208,7 +208,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Software Development]]
-  - bridges-to:: [[Computer Vision]], [[3D Modeling]], [[Game Engine]]
+  - bridges-to:: [[Computer Vision]], [[3D Modelling]], [[Game Engine]]
   - requires:: [[3D Graphics Standard]], [[3D Rendering Engine]]
   - enables:: [[Metaverse Creation]], [[XR Applications]], [[Virtual Environment Design]]
 
@@ -225,7 +225,7 @@ public:: true
   - **Integration**: Combining assets into cohesive interactive experiences
 
   #### Related Concepts
-  - [[3D Modeling]], [[3D Graphics Standard]], [[3D Rendering Engine]], [[Game Development]]
+  - [[3D Modelling]], [[3D Graphics Standard]], [[3D Rendering Engine]], [[Game Development]]
 
 - ### Provenance
   - sources::

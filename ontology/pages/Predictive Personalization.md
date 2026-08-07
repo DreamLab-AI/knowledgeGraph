@@ -58,7 +58,7 @@ public:: true
         "label": "Machine Learning Discipline"
       },
       {
-        "@id": "urn:ngm:class:behavioral-analytics",
+        "@id": "urn:ngm:class:behavioural-analytics",
         "label": "Behavioral Analytics"
       },
       {

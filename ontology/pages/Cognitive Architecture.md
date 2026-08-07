@@ -242,7 +242,7 @@
         "label": "Robotics"
       },
       {
-        "@id": "urn:ngm:class:brain-computer-interface",
+        "@id": "urn:ngm:class:brain-computer-interfaces",
         "label": "Brain-Computer Interface"
       },
       {

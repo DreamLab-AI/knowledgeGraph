@@ -112,7 +112,7 @@ public:: true
       {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
       {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
       {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:opentelemetry", "label": "OpenTelemetry"}
+      {"@id": "urn:ngm:class:open-telemetry", "label": "OpenTelemetry"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-task-execution", "label": "Autonomous Task Execution"},
