@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [

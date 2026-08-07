@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -101,7 +101,7 @@ public:: true
 
   Three legal forms dominate. *Payment (settlement) netting* offsets amounts due on the same date in the same currency. *Netting by novation* replaces each new obligation with a running net contract as trades accumulate. *Close-out netting* — the most important for systemic risk — is triggered by a counterparty default: all outstanding transactions under a master agreement (such as the ISDA Master Agreement) are terminated, valued, and collapsed into a single net claim, preventing an insolvency administrator from cherry-picking profitable contracts whilst repudiating unprofitable ones.
 
-  Enforceability is the critical property. Netting only reduces risk if it survives insolvency law, so jurisdictions have enacted specific statutory protections (the EU Settlement Finality and Financial Collateral Directives, the US FDICIA and Bankruptcy Code safe harbours, the UK's settlement finality regulations), and ISDA maintains legal opinions on close-out netting enforceability in over 80 jurisdictions. Where netting is enforceable, prudential capital rules allow banks to hold capital against net rather than gross exposures.
+  Enforceability is the critical property. Netting only reduces risk if it survives insolvency law, so jurisdictions have enacted specific statutory protections (the EU Settlement Finality and Financial Collateral Directives, the US FDICIA and Bankruptcy Code safe harbours, the UK's settlement finality regulations), and ISDA maintains legal opinions on close-out netting enforceability in over 90 jurisdictions. Where netting is enforceable, prudential capital rules allow banks to hold capital against net rather than gross exposures.
 
   ## Technical Details
 
@@ -110,6 +110,19 @@ public:: true
   - **Interaction with settlement finality**: netting arrangements depend on legally designated moments of [[Settlement Finality]] — the point after which transfers and the net calculation itself are irrevocable even in insolvency.
   - **Securities markets**: clearing houses net trading obligations before instructing delivery at the [[Central Securities Depository]]; netting efficiency shortens settlement pipelines but complicates settlement-date compression debates such as the move to T+1.
   - **Portfolio compression**: in derivatives markets, multilateral compression runs (e.g. TriOptima) tear up offsetting contracts across dealers, reducing gross notional outstanding by hundreds of trillions of dollars since 2008.
+
+  ## Current Landscape
+
+  - **ISDA's netting opinions now cover more than 90 jurisdictions** (with collateral opinions in over 60), the benchmark for close-out netting enforceability relied on by prudential capital rules.
+  - The **UK will move to T+1 settlement on 11 October 2027**: the government accepted the Accelerated Settlement Taskforce's recommendations in February 2025 and published a draft statutory instrument on 20 November 2025 to mandate the change.
+  - The **EU (and Switzerland) will migrate to T+1 on the same date, 11 October 2027**, following ESMA's November 2024 recommendation; a June 2025 trilogue agreement exempted securities financing transactions documented as single two-leg transactions. The US, Canada, Mexico, and Argentina already moved to T+1 in May 2024.
+  - Shorter settlement cycles compress the window in which multilateral netting accumulates, raising the operational premium on same-day affirmation, automated allocation, and efficient netting algorithms across CCPs and CSDs.
+
+  **Sources**:
+  - https://www.isda.org/opinions-overview/
+  - https://www.fca.org.uk/markets/about-t1-settlement
+  - https://www.esma.europa.eu/esmas-activities/markets-and-infrastructure/shortening-settlement-cycle-t1-eu
+  - https://www.gov.uk/government/publications/accelerated-settlement-t1
 
 - ### Provenance
   - sources::

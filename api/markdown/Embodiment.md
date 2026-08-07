@@ -83,11 +83,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -120,4 +120,12 @@ public:: true
   - **Measurement**: standardised questionnaires (e.g. the Embodiment Questionnaire of Peck & Gonzalez-Franco, 2021) complemented by physiological proxies — skin conductance responses to threats against the virtual body, drift in proprioceptive pointing, and motor synchrony measures.
   - **Social VR and telepresence**: platforms from VRChat to workplace telepresence systems treat embodiment quality — full-body tracking, finger and face capture, photorealistic or stylised avatars — as a core driver of social presence and communication fidelity.
   - **Design levers**: first-person perspective, visuomotor synchrony, avatar realism and self-similarity, and congruent haptics each contribute; research consistently finds synchrony outweighs visual realism, which permits strong embodiment even in cartoon-styled bodies.
-  - **Robotics and agents**: the term also covers physical embodiment of AI — the claim that robots and embodied agents acquire grounding that disembodied models lack — linking the construct back to embodied cognition and to debates about whether large models require bodies to achieve human-like understanding.
+  - **Robotics and agents**: the term also covers physical embodiment of AI — the claim that robots and embodied agents acquire grounding that disembodied models lack — linking the construct back to embodied cognition and to debates about whether large models require bodies to achieve human-like understanding; vision-language-action (VLA) foundation models for robotics made this a mainstream research programme through 2025–2026.
+  - **Proteus effect quantified (2025)**: a meta-analysis across roughly five dozen experiments found the Proteus effect reliable but small-to-medium in size, and significantly stronger in VR than on flat screens — consistent with embodiment, not mere avatar depiction, being the active ingredient.
+  - **New design levers (2025–2026)**: UIST 2025 work showed that proprioceptive motion feedback matching an avatar's expected motion style enhances self-identification beyond visual synchrony alone; a 2026 Frontiers in Virtual Reality review maps body-ownership illusions onto musculoskeletal rehabilitation, pain perception, and kinesiophobia, extending the clinical agenda beyond the established pain-management findings.
+
+  **Sources**:
+  - https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2026.1793021/full
+  - https://dl.acm.org/doi/10.1145/3590767
+  - https://hci.cs.uni-saarland.de/wp-content/uploads/projects/human_robot_interaction/moveWithStyle/paper.pdf
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC11632092/

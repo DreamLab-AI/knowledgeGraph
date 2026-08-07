@@ -89,11 +89,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -123,8 +123,14 @@ public:: true
 
   ## Current Landscape
 
-  - **Geographic concentration**: the top ten global startup hubs attract the majority of AI venture funding; the Bay Area alone regularly accounts for over a third of global AI investment.
-  - **National strategies**: the UK's AI Opportunities Action Plan, the EU's Horizon Europe programme, and the US CHIPS and Science Act all frame public investment explicitly as ecosystem construction.
+  - **Geographic concentration**: AI venture capital is more geographically concentrated than almost any other sector: Dealroom data show the San Francisco Bay Area routinely capturing 35–40% of all global AI venture funding — a share that tightened rather than loosened as global AI VC reached $216.1 billion in 2025 — with the wider US accounting for roughly two-thirds of the world total.
+  - **Measured concentration at cluster level**: WIPO's Global Innovation Index 2025 (published September 2025) added venture-capital deal locations to its cluster methodology; the top 100 clusters now account for roughly 70% of global PCT patent filings and VC deal activity, with the top ten alone generating around 40% of PCT filings. Shenzhen–Hong Kong–Guangzhou ranked first, ahead of Tokyo–Yokohama and San Jose–San Francisco; London ranked eighth.
+  - **National rankings**: the GII 2025 places Switzerland first, followed by Sweden, the United States, the Republic of Korea (its highest rank ever), and Singapore, with the UK sixth and China tenth.
+  - **National strategies**: the UK's AI Opportunities Action Plan (January 2025) and Modern Industrial Strategy (June 2025), the EU's Horizon Europe programme, and the US CHIPS and Science Act all frame public investment explicitly as ecosystem construction — compute, AI Growth Zones, and talent pipelines included.
   - **Corporate ecosystems**: platform firms cultivate developer ecosystems around foundation models, cloud APIs, and open-source releases, blurring the boundary between corporate strategy and regional innovation policy.
-  - **Measurement**: indices such as the Global Innovation Index and Startup Genome rankings score ecosystems on research output, funding depth, talent retention, and knowledge-network connectedness.
   - **Failure modes**: ecosystems can hollow out when talent or capital exits faster than it is replenished, or when a dominant incumbent absorbs rather than seeds new entrants — a dynamic regulators increasingly scrutinise in AI markets.
+
+  **Sources**:
+  - https://www.wipo.int/web-publications/global-innovation-index-2025/en/cluster-ranking.html
+  - https://www.wipo.int/en/web/global-innovation-index/2025/index
+  - https://dealroom.co/guides/ai

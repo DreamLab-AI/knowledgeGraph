@@ -55,11 +55,11 @@ public:: true
       {"@id": "urn:ngm:class:networking", "label": "Networking"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -94,3 +94,15 @@ public:: true
   - **Reliability vocabulary**: availability tiers expressed in "nines"; redundancy patterns N+1 and 2N for power and cooling; RAID/erasure coding for storage; live migration for maintenance.
   - **Management plane**: PXE/Redfish provisioning, infrastructure-as-code (Terraform, Ansible), telemetry and remote KVM via the BMC — itself a notable attack surface requiring firmware hygiene.
   - **Trends**: heterogeneous compute (GPUs, DPUs/SmartNICs offloading [[Networking]] and storage), Arm adoption for performance-per-watt, confidential-computing enclaves, and rack-scale liquid cooling for AI density.
+
+  ## Current Landscape
+
+  - **The rack is the new server**: NVIDIA's GB200 NVL72 fuses 72 Blackwell GPUs and 36 Grace CPUs into a single liquid-cooled rack behaving as one accelerator, linked by an NVLink domain delivering 130 TB/s of aggregate GPU bandwidth — an "exascale computer in a single rack".
+  - **Power density has jumped an order of magnitude**: a GB200 NVL72 draws roughly 120 kW nominal (130-132 kW observed under full load) per rack, versus the ~7.6 kW industry-average rack reported by the Uptime Institute in 2025, forcing purpose-built or modular facilities.
+  - **Liquid cooling is now mandatory, not optional**: NVIDIA ships the NVL72 only with direct-to-chip cold plates on GPUs, CPUs and NVLink switches (roughly 2 L/s coolant flow at a ~20-25°C inlet); air cooling is not viable at this density.
+  - **Open hardware for AI racks**: NVIDIA contributed the GB200 NVL72 rack and its liquid-cooled compute/switch tray designs to the Open Compute Project at the 2024 OCP Global Summit, and the successor GB300 NVL72 (Blackwell Ultra) is positioned for test-time-scaling inference and reasoning workloads.
+
+  **Sources**:
+  - https://www.nvidia.com/en-us/data-center/gb200-nvl72/
+  - https://developer.nvidia.com/blog/nvidia-contributes-nvidia-gb200-nvl72-designs-to-open-compute-project/
+  - https://www.moduledge.com/blog/nvidia-blackwell

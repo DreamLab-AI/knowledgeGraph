@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -113,6 +113,15 @@ public:: true
   - **Scaling within the turn**: chain-of-thought prompting, self-consistency sampling, and inference-time reasoning all buy accuracy without adding interaction rounds — test-time compute inside a single turn.
   - **When to escalate**: empirically, agentic loops justify their 5-100x token cost when tasks require environmental feedback or verification; when they do not, single-turn baselines are frequently as accurate and far cheaper — a comparison every agent evaluation should include.
   - **Evaluation role**: benchmarks such as MMLU-style QA measure single-turn capability, while agentic benchmarks (e.g. SWE-bench) measure what looping adds; the delta between them quantifies the value of iteration for a task family.
+  - **Test-time compute is now a scaling axis within the turn**: OpenAI's o1 (2024) and o3 report performance that "consistently improves" with more thinking time; o1 reached 74.4% pass@1 on AIME 2024 versus GPT-4o's 9.3%, entirely inside a single API call with no external feedback.
+  - **Small models plus better inference can beat larger ones**: Stanford's s1 (2025) used SFT on 1,000 examples plus "budget forcing" to exceed o1-preview on competition maths by up to 27%, a clean demonstration that inference-time strategy, not just parameters, drives single-turn accuracy.
+  - **Diminishing returns are real**: 2025 analyses of o1-like models (QwQ, R1, LIMO) found longer chains of thought do not monotonically improve accuracy — correct solutions are often shorter than incorrect ones — so test-time compute has task-dependent optima rather than unlimited upside.
+  - **The interface distinction holds**: reasoning models remain single-turn in interface terms (hidden deliberation, one completion), which is why the single-turn/agentic boundary is still defined by the presence of external tool execution and environmental feedback, not by internal compute.
+
+  **Sources**:
+  - https://ashitaorbis.com/understanding-ai/wiki/test-time-compute/
+  - https://aclanthology.org/2025.emnlp-main.1025.pdf
+  - https://arxiv.org/html/2502.12215v1
 
 - ### Provenance
   - sources::

@@ -45,11 +45,11 @@ public:: true
       {"@id": "urn:ngm:class:topology", "label": "Topology"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -83,6 +83,17 @@ public:: true
   - **Representations in computing**: homogeneous coordinates unify rotation, translation, and projection as matrix products; boundary representations, polygon meshes, implicit surfaces (signed distance fields), and parametric splines (NURBS) encode shape for graphics, CAD, and simulation.
   - **Transformation hierarchy**: Euclidean ⊂ similarity ⊂ affine ⊂ projective — each step preserves fewer invariants, and computer vision routinely works at the projective level before upgrading reconstructions to metric.
   - **Algorithmic layer**: geometric predicates (orientation, in-circle) demand careful numerical treatment; robustness under floating-point arithmetic is a defining concern of computational geometry libraries such as CGAL.
+
+  ## Current Landscape
+
+  - CGAL, the reference computational-geometry library, published version 6.1 in 2025 — adding constrained 3D Delaunay triangulations, self-intersection repair via 3D snap rounding, and a 10x acceleration of mesh clipping/splitting — followed by version 6.2 on 11 June 2026, which introduced 2D alpha wrapping, 3D generalised barycentric coordinates, and a restructured Polygon Mesh Processing suite.
+  - Google DeepMind's AlphaGeometry2 (February 2025) raised automated solving of IMO geometry problems from 54% to 84% over the 2000–2024 set — surpassing the average IMO gold medallist — by pairing a Gemini-based language model with a faster symbolic engine and a shared-knowledge ensemble tree search; it formed part of the system that achieved silver-medal standard at IMO 2024.
+  - Geometric deep learning continues to industrialise geometry within machine learning: libraries such as PyTorch Geometric treat learning on meshes, point clouds, and molecular structures as geometry-aware computation over irregular domains.
+
+  **Sources**:
+  - https://www.cgal.org/2026/01/01/2025_recap/
+  - https://zenodo.org/records/20640334
+  - https://arxiv.org/html/2502.03544v1
 
 - ### Provenance
   - sources::

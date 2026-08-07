@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -125,3 +125,15 @@ public:: true
   - **ZAB phases**: leader election (fast leader election), discovery/synchronisation of follower state, then broadcast with zxid-ordered proposals and majority commit
   - **Operations**: quorum sizing (odd ensembles), observer nodes for read scaling without vote overhead, snapshots plus transaction logs for recovery; dynamic reconfiguration since 3.5
   - **Trade-offs vs. etcd**: ZooKeeper offers mature JVM integration and battle-tested recipes; etcd offers simpler operational surface, Raft's more accessible correctness story, and first-class Kubernetes ecosystem placement
+
+  ## Current Landscape
+
+  - **Kafka has fully cut the ZooKeeper dependency**: Apache Kafka 4.0 shipped on 18 March 2025 as the first major release to run entirely without ZooKeeper, with KRaft (Kafka Raft metadata mode) as the sole cluster-management implementation; Kafka 4.1 followed in September 2025.
+  - **Migration timeline**: ZooKeeper was deprecated in Kafka 3.5, the ZK-to-KRaft migration was designated production-ready in 3.7, and Kafka 3.9 is the designated final bridge release still supporting ZooKeeper — clusters must migrate to KRaft before upgrading to 4.0.
+  - **Pattern repeats across the ecosystem**: removing an external coordinator in favour of embedded consensus (KRaft's Raft, etcd's Raft) is now the prevailing design direction, eroding ZooKeeper's historic role as the default coordination kernel.
+  - **ZooKeeper itself remains maintained**: it stays in active use behind HBase, SolrCloud, and other JVM-ecosystem systems, and older Kafka clusters (pre-3.3, or 3.3–3.9 in ZooKeeper mode) still depend on it, keeping migration planning a live operational concern in 2025–2026.
+
+  **Sources**:
+  - https://kafka.apache.org/blog/2025/03/18/apache-kafka-4.0.0-release-announcement/
+  - https://www.confluent.io/learn/zookeeper-kafka/
+  - https://www.openlogic.com/blog/upgrade-kafka-4-planning

@@ -50,11 +50,11 @@ public:: true
       {"@id": "urn:ngm:class:concurrency", "label": "Concurrency"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -87,6 +87,18 @@ public:: true
   - **Preemptive vs cooperative**: preemptive schedulers can interrupt a running task at any time (essential for responsiveness and real-time guarantees); cooperative schedulers wait for tasks to yield, as in many async runtimes.
   - **Classical results**: RMS utilisation bound n(2^(1/n)−1) ≈ 69% for large n; EDF schedulable up to 100% utilisation on one processor; multiprocessor and DAG scheduling largely NP-hard, motivating heuristics.
   - **Modern practice**: work-stealing runtimes (Cilk, Tokio, Rayon) schedule fine-grained tasks in user space; datacentre schedulers add bin-packing, affinity, and preemption policies; GPU and accelerator queues push scheduling into hardware and drivers.
+
+  ## Current Landscape
+
+  - **EEVDF replaced CFS in the Linux kernel**: kernel 6.6 (October 2023) merged the Earliest Eligible Virtual Deadline First scheduler (from Stoica & Abdel-Wahab, 1995), retiring the ~16-year-old Completely Fair Scheduler; by 6.8 (March 2024) EEVDF was the default for SCHED_NORMAL and SCHED_BATCH.
+  - **Latency as a first-class knob**: EEVDF selects the eligible task with the earliest virtual deadline and exposes a per-task `latency_nice` attribute plus explicit request-sized slices via `sched_setattr(2)`, replacing CFS's fragile heuristics; benchmarks over the 6.6-6.8 cycle showed rough throughput parity with ~20-40% p99-latency reductions on schbench/hackbench at moderate overcommit.
+  - **Bounded-lag guarantee**: every runnable task's lag is bounded by its request size — at most one `base_slice_ns` (6 ms default, tunable to ~750 µs) — giving analysable fairness without tuning parameters.
+  - **Real-time stays separate**: EEVDF is explicitly *not* a real-time scheduler; hard-deadline work still uses SCHED_DEADLINE (EDF), and rate-monotonic/EDF analysis remains the basis for dependable control loops.
+
+  **Sources**:
+  - https://docs.kernel.org/scheduler/sched-eevdf.html
+  - https://lwn.net/Articles/925371/
+  - https://www.linux-magazine.com/Issues/2025/301/EEVDF
 
 - ### Provenance
   - sources::

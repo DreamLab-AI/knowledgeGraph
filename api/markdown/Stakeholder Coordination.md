@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -112,6 +112,16 @@ public:: true
   Contemporary approaches blend several mechanisms. Token-weighted voting remains the default in [[DAO]] governance, but its plutocratic tendencies have prompted experimentation with quadratic voting, conviction voting, delegated "protocol politician" models, and citizen-house structures such as Optimism's bicameral design. Off-chain, coordination increasingly relies on structured deliberation platforms (Discourse, Snapshot for gasless signalling) and professional delegate ecosystems.
 
   Research in this area draws on political science, mechanism design, and organisational theory. Open challenges include voter apathy (participation in most DAOs is below 10% of eligible tokens), information asymmetry between core teams and communities, and the difficulty of coordinating across chains and jurisdictions. Tokenomics design — vesting schedules, staking incentives, retroactive funding — is itself a coordination instrument, aligning long-term stakeholder behaviour with protocol health.
+
+  Recent, dated developments:
+
+  - **Persistent low turnout (2024–2026)**: governance trackers put average routine-proposal participation in major DAOs at roughly 3–8% of circulating/delegated supply; some analyses find under 2% of token holders vote on most proposals, entrenching plutocratic outcomes where a few large wallets decide.
+  - **Delegation lifts participation**: DAOs shifting from one-token-one-vote to delegated or quadratic models report turnout rising from low single digits to the 11–40% range via active delegate ecosystems, with the Optimism Collective's delegate-heavy Token House cited around 20–35%.
+  - **Optimism's bicameral design matured (2023–2025)**: the Token House (OP holders) governs upgrades and treasury while the non-transferable, attestation-selected Citizens' House runs Retroactive Public Goods Funding using conviction-voting mechanics, deliberately separating capital from community legitimacy; multiple Citizen cohort elections have expanded the body since 2023.
+  - **Mechanism diversity in production**: quadratic voting (Gitcoin, Optimism), conviction voting (1Hive), and delegated proof-of-stake for treasury management are now live rather than theoretical, though whale influence and apathy persist even under these schemes.
+
+  **Sources**:
+  - https://zugdao.com/tracker/dao-governance-activity-tracker/
 
 - ### Provenance
   - sources::

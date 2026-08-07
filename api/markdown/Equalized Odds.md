@@ -46,11 +46,11 @@ public:: true
       {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -83,3 +83,13 @@ public:: true
   - **In-processing**: constrained optimisation and reductions approaches (e.g. Agarwal et al.'s exponentiated-gradient method) train models subject to bounded equalized-odds violation, trading accuracy against fairness continuously.
   - **Measurement**: reported in practice as TPR and FPR gaps or ratios between groups; toolkits such as Fairlearn and AIF360 compute these alongside demographic parity and calibration diagnostics, and they are among the [[Bias Mitigation Techniques]] surfaced in model cards.
   - **Caveats**: satisfying equalized odds on historical labels inherits any bias in those labels; intersectional subgroups can remain unequal even when top-level groups match; and randomised threshold policies raise their own procedural-fairness concerns.
+
+  ## Current Landscape
+
+  - **From academic to binding**: with the EU AI Act's high-risk obligations reaching enforcement by August 2026, fairness metrics such as equalized odds have shifted from research interest to pre-deployment compliance gates. High-risk systems (credit scoring, hiring, benefits eligibility under Annex III) must document bias evaluation and undergo conformity assessment before deployment.
+  - **Regulatory citation of Hardt et al.**: the European Data Protection Board's January 2025 bias-evaluation guidance explicitly names equalized odds (Hardt et al., 2016) as a thresholding/post-processing mitigation optimising the true-positive- and false-positive-rate balance across subgroups.
+  - **AI Act mechanics**: Article 10(2)(f)-(g) requires examining training/validation/test data for biases and applying mitigation measures, while Article 10(5) permits processing special-category data strictly for bias monitoring, detection and correction in high-risk systems — the legal basis on which equalized-odds-style audits run.
+  - **Lifecycle monitoring**: enterprise guidance (2026) treats equalized-odds violation as one of a small set of metrics — alongside demographic-parity gap and per-subgroup calibration — that must be computed, recorded and continuously monitored in production with thresholds that trigger review, not measured once at launch.
+
+  **Sources**:
+  - https://www.edpb.europa.eu/system/files/2025-01/d1-ai-bias-evaluation_en.pdf

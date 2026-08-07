@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -105,7 +105,22 @@ public:: true
 
   ## Current Landscape
 
-  Organisational research and distributed-systems practice increasingly treat hierarchy as one point on a design spectrum rather than an inevitability. Holacracy, sociocracy, and platform-cooperative models flatten tiers; DAOs replace reporting lines with token-weighted or reputation-weighted voting; multi-agent AI systems experiment with both orchestrator-worker hierarchies and peer swarms. In practice most durable systems are hybrids: a thin hierarchical spine for accountability and dispute resolution, with decentralised coordination inside and between teams. The relevant engineering question has therefore shifted from "hierarchy or not" to where on the stack authority should concentrate, and how quickly a structure can be reconfigured when its bottlenecks bind.
+  Organisational research and distributed-systems practice increasingly treat hierarchy as one point on a design spectrum rather than an inevitability. Holacracy, sociocracy, and platform-cooperative models flatten tiers; DAOs replace reporting lines with token-weighted or reputation-weighted voting; multi-agent AI systems experiment with both orchestrator-worker hierarchies and peer swarms. In practice most durable systems are hybrids: a thin hierarchical spine for accountability and dispute resolution, with decentralised coordination inside and between teams.
+
+  The empirical trend since 2024 is a pronounced "great flattening" driven by AI absorbing coordination work:
+
+  - Manager headcount at US public companies fell 6.1% between May 2022 and May 2025, while middle managers accounted for 29% of all layoffs in 2024 despite being a far smaller share of headcount (CNBC/Revelio Labs analysis, 2025).
+  - Korn Ferry's Workforce 2025 survey of 15,000 professionals found 41% saying their employer had reduced management tiers in the previous year.
+  - Gartner predicted in October 2024 that through 2026 one in five organisations will use AI to flatten their structure, eliminating more than half of current middle-management positions.
+  - Concrete restructurings include Amazon's October 2025 cut of roughly 14,000 corporate roles explicitly framed as "removing organisational layers", Google cutting roughly a third of its manager roles, and Bayer moving from twelve-plus management layers towards five or six.
+
+  The relevant engineering question has therefore shifted from "hierarchy or not" to where on the stack authority should concentrate, and how quickly a structure can be reconfigured when its bottlenecks bind.
+
+  **Sources**:
+  - https://fortune.com/2025/08/07/ai-corporate-org-chart-workplace-agents-flattening/
+  - https://fortune.com/2026/06/09/ai-agents-flattening-corporate-hierarchies-companies-managers-develop-new-playbook/
+  - https://www.lepaya.com/blog/insights-great-flattening-middle-management-ai
+  - https://smarthumain.com/briefs/gartner-management-flattening-ai/
 
 - ### Provenance
   - sources::

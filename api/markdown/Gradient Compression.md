@@ -77,11 +77,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -127,3 +127,15 @@ public:: true
   - Framework hooks: PyTorch DDP communication hooks, Horovod compression operators, DeepSpeed 1-bit Adam/LAMB
   - Interaction with all-reduce: sparse updates aggregate poorly under ring all-reduce (indices differ per worker), so sparsified schemes often use all-gather or parameter-server topologies
   - Trade-off envelope: compression helps most when the network, not the GPU, is the bottleneck — over fast NVLink/InfiniBand fabrics, aggressive compression can reduce end-to-end throughput
+
+  ## Current Landscape
+
+  - **Optimiser-aware compression**: DeepSpeed's 1-bit Adam (2020) reports up to 5x less communication and up to 3.5x higher throughput for BERT-Large pretraining at the same convergence; its successor 0/1 Adam (ICLR 2023) cut up to 87% of data volume and 54% of communication rounds across up to 128 GPUs, and 1-bit LAMB extends the technique to large-batch training.
+  - **Low-rank remains the practical winner for all-reduce**: PowerSGD (NeurIPS 2019) is still the reference low-rank compressor because its factors aggregate cleanly under ring all-reduce/NCCL — the property that lets sparsified top-k schemes struggle at scale — and it ships as a built-in PyTorch DDP communication hook.
+  - **LLM-era methods**: work such as LoCo (2024) integrates a moving-average error-feedback compensator with Adam/Adafactor under Megatron-LM and PyTorch FSDP, reporting 14-40% faster training of LLaMA-class and MoE models without accuracy loss; extreme 1-bit schemes (e.g. BinSGDM) now claim overall wall-clock speedups over highly optimised full-precision DDP.
+  - **Error feedback is the load-bearing idea**: nearly every deployed compressor pairs a biased compressor (sign, top-k, low-rank) with local accumulation and reinsertion of the discarded residual, which restores convergence guarantees for a broad compressor class.
+
+  **Sources**:
+  - https://www.deepspeed.ai/2020/09/08/onebit-adam-blog-post.html
+  - https://openreview.net/pdf?id=Sylw3BHgIH
+  - https://openreview.net/pdf?id=-CefY2EOupj

@@ -44,7 +44,7 @@ public:: true
   "@id": "urn:ngm:class:foreign-exchange",
   "@type": "Class",
   "label": "Foreign Exchange",
-  "definition": "The global, decentralised market and settlement activity in which one currency is exchanged for another at agreed exchange rates, spanning spot transactions, forwards, swaps, and options. Trading over seven trillion US dollars daily, it is the largest financial market in the world, providing the currency conversion that underlies international trade, investment, and cross-border payments, with settlement risk managed through mechanisms such as CLS payment-versus-payment and liquidity intermediated by dealer banks and correspondent networks.",
+  "definition": "The global, decentralised market and settlement activity in which one currency is exchanged for another at agreed exchange rates, spanning spot transactions, forwards, swaps, and options. Trading around nine and a half trillion US dollars daily (BIS 2025 Triennial Survey), it is the largest financial market in the world, providing the currency conversion that underlies international trade, investment, and cross-border payments, with settlement risk managed through mechanisms such as CLS payment-versus-payment and liquidity intermediated by dealer banks and correspondent networks.",
   "domain": "finance",
   "maturity": "mature",
   "subClassOf": {
@@ -71,17 +71,17 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
 
 - ### Definition
-  - "The global, decentralised market and settlement activity in which one currency is exchanged for another at agreed exchange rates, spanning spot transactions, forwards, swaps, and options. Trading over seven trillion US dollars daily, it is the largest financial market in the world, providing the currency conversion that underlies international trade, investment, and cross-border payments, with settlement risk managed through mechanisms such as CLS payment-versus-payment and liquidity intermediated by dealer banks and correspondent networks."
+  - "The global, decentralised market and settlement activity in which one currency is exchanged for another at agreed exchange rates, spanning spot transactions, forwards, swaps, and options. Trading around nine and a half trillion US dollars daily (BIS 2025 Triennial Survey), it is the largest financial market in the world, providing the currency conversion that underlies international trade, investment, and cross-border payments, with settlement risk managed through mechanisms such as CLS payment-versus-payment and liquidity intermediated by dealer banks and correspondent networks."
 
 - ### Semantic Classification
   - owl-class:: finance:ForeignExchange
@@ -97,7 +97,7 @@ public:: true
 
   ## Definition
 
-  **Foreign exchange (FX)** is the conversion of one currency into another and the market in which those conversions are priced and traded. It is the world's largest financial market — the BIS Triennial Survey put average daily turnover at roughly US$7.5 trillion in 2022 — and it operates as a decentralised, over-the-counter dealer network running twenty-four hours across the Sydney, Tokyo, London and New York sessions, with London the single largest trading centre. Every price is an [[Exchange Rate]]: the number of units of a quote currency per unit of base currency, quoted as a bid-offer pair for currency pairs such as EUR/USD or GBP/JPY.
+  **Foreign exchange (FX)** is the conversion of one currency into another and the market in which those conversions are priced and traded. It is the world's largest financial market — the BIS Triennial Survey put average daily turnover at roughly US$9.6 trillion in April 2025, up 28% from US$7.5 trillion in 2022 — and it operates as a decentralised, over-the-counter dealer network running twenty-four hours across the Sydney, Tokyo, London and New York sessions, with London the single largest trading centre. Every price is an [[Exchange Rate]]: the number of units of a quote currency per unit of base currency, quoted as a bid-offer pair for currency pairs such as EUR/USD or GBP/JPY.
 
   The instrument set extends well beyond immediate conversion. *Spot* trades settle (conventionally) in two business days; *outright forwards* fix a rate for a future date; *FX swaps* — the highest-turnover instrument — pair a spot exchange with an offsetting forward and function as collateralised money-market funding; *currency swaps* exchange principal and interest streams over years; and *options* confer conversion rights without obligation. Corporates use these [[Financial Instruments]] to hedge trade receivables and translation exposure, investors to hedge or express macro views, and dealers to warehouse and lay off inventory risk.
 
@@ -105,7 +105,12 @@ public:: true
 
   ## Current Landscape
 
-  - **Scale and composition** (BIS 2022): ~US$7.5tn daily turnover — FX swaps ~51%, spot ~28%, forwards ~15%; the US dollar is on one side of ~88% of trades; sterling ranks among the top four currencies and the UK hosts ~38% of global turnover.
-  - **Market plumbing**: electronic trading dominates, with algorithmic execution, internalisation by large dealers, and non-bank liquidity providers (XTX, Citadel Securities, Jump) now central to price formation; the FX Global Code (updated 2021) sets conduct standards.
+  - **Scale and composition** (BIS 2025 Triennial Survey, April 2025): ~US$9.6tn daily turnover, up 28% from 2022, surveyed across 52 jurisdictions and 1,100+ dealers amid elevated volatility following early-April trade-policy announcements — FX swaps remained the largest instrument at ~US$4tn (up 5%), spot ~US$3tn (31% of turnover), outright forwards ~US$1.8tn (19%).
+  - **Dollar dominance and UK weight**: the US dollar remains on one side of the large majority of trades (~88% historically), and the UK continues to host the single largest share of global FX turnover; final settlement data followed in the BIS Quarterly Review of June 2026.
+  - **Market plumbing**: electronic trading dominates, with algorithmic execution, internalisation by large dealers, and non-bank liquidity providers (XTX, Citadel Securities, Jump) central to price formation; the FX Global Code (updated 2021) sets conduct standards.
   - **Settlement risk agenda**: a third or more of deliverable turnover still settles outside PvP protection; regulators push wider CLS coverage, CLSNet netting for emerging-market currencies, and exploratory wholesale CBDC/tokenised-deposit PvP designs (BIS Project mBridge and successors).
   - **Technology frontier**: T+1 securities settlement in the US has compressed FX funding windows; meanwhile stablecoins and tokenised money offer near-instant conversion legs, positioning on-chain FX as a live challenger for remittance corridors even as the institutional core remains dealer-intermediated.
+
+  **Sources**:
+  - https://www.bis.org/press/p250930.htm
+  - https://www.bis.org/statistics/rpfx25_fx.htm

@@ -93,11 +93,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -128,6 +128,16 @@ public:: true
   ## Current Landscape
 
   Artificial intelligence has become the industry's principal demand engine. Data-centre accelerators — GPUs and custom [[AI Hardware]] such as TPUs and inference ASICs — pushed industry revenue beyond US$600 billion in 2024 with projections towards US$1 trillion by 2030, made Nvidia one of the most valuable companies in the world, and turned advanced packaging (TSMC's CoWoS) and high-bandwidth memory into the binding constraints on AI compute supply. Technologically, the leading edge is transitioning to gate-all-around transistors, backside power delivery, and chiplet-based heterogeneous integration, with High-NA EUV lithography entering production use — evidence that progress increasingly comes from architecture and packaging rather than classical planar scaling. Persistent structural issues include a global talent shortage, water and energy intensity of fabs, and the tension between export-control regimes and the industry's historically borderless research and supply networks.
+
+  - **Record revenue on the AI cycle**: global semiconductor revenue reached about US$626 billion in 2024 (+18.1% year on year), with Gartner projecting roughly US$705 billion in 2025; data-centre AI chip sales jumped to US$112 billion in 2024 from US$64.8 billion in 2023.
+  - **TSMC's AI-led surge**: TSMC closed 2025 with net revenue of about US$122.4 billion (+35.9%), high-performance computing supplying 58% of revenue; in March 2025 it announced an additional US$100 billion US investment (US$165 billion total, six Arizona fabs).
+  - **Leading edge moves to 2 nm**: TSMC's N2 node (gate-all-around nanosheet transistors) entered high-volume manufacturing in late 2025, with Apple and NVIDIA among first adopters; Intel's 18A (RibbonFET plus PowerVia backside power) began ramping on its Panther Lake products.
+  - **High-NA EUV reaches production**: ASML shipped its first production-grade High-NA tool (EXE:5200B) in Q2 2025, with Intel as inaugural customer targeting its 14A node (risk production 2027); TSMC is deferring High-NA, extending 0.33-NA EUV for its A14/1.4 nm generation.
+  - **Subsidy geography**: government semiconductor subsidies exceeded US$250 billion by 2025 (US CHIPS Act ~US$52.7 billion, EU Chips Act ~€43 billion, Japan's ~US$69 billion framework to 2030), accelerating a "China+1" diversification.
+
+  **Sources**:
+  - https://www.manufacturingdive.com/news/tsmc-q4-full-year-2025-earnings-ai-taiwan/809775/
+  - https://ts2.tech/en/global-semiconductor-industry-trends-and-2025-outlook-ai-boom-advanced-nodes-and-geopolitics-report-june-27th-2025/
 
 - ### Provenance
   - sources::

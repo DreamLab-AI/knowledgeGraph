@@ -49,11 +49,11 @@ public:: true
       {"@id": "urn:ngm:class:online-learning", "label": "Online Learning"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -88,3 +88,15 @@ public:: true
   - **Thompson sampling**: maintain a Bayesian posterior per arm, sample from each, and play the argmax; empirically strong, matches the lower bound, and extends naturally to contextual and structured settings.
   - **Variants**: adversarial bandits (EXP3) drop the stochastic assumption; non-stationary bandits discount old evidence; budgeted and combinatorial bandits handle costs and multi-item actions; best-arm identification optimises pure exploration.
   - **Deployment cautions**: delayed or biased reward signals, feedback loops with the logged data, and non-stationarity from changing user populations are the usual failure modes in production bandit systems.
+
+  ## Current Landscape
+
+  - **Contextual bandits are the deployed workhorse**: a 2025 arXiv literature review (May 2025) surveys scalable, interpretable contextual multi-armed bandit (CMAB) methods and documents their adoption across news, product and advert personalisation, dynamic pricing, and medical-treatment optimisation.
+  - **Thompson sampling vs LinUCB in production**: a six-month production study (Aug 2025 – Jan 2026) reported contextual bandits improving click-through rate by ~15–29% over context-free baselines, with Thompson sampling ~8% ahead of LinUCB in high-traffic (>100k decisions/day) fast-feedback settings, while LinUCB gave lower reward variance for regulated, audit-critical use.
+  - **Neural bandits scaling up**: Meta's Epistemic Neural Recommendation (ENR, Dec 2024) enables Thompson sampling at recommender-system scale, boosting click-through and ratings by ≥9% and ≥6% while using orders of magnitude less compute than prior neural bandit baselines.
+  - **Multi-objective bandits**: 2025 work extends CMAB to jointly optimise relevance and fairness in recommender systems, reflecting a broader push to balance reward with fairness and other constraints.
+
+  **Sources**:
+  - https://arxiv.org/html/2505.16918v1
+  - https://ai.meta.com/research/publications/scalable-neural-contextual-bandit-for-recommender-systems/
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC12012038/

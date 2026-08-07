@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -108,3 +108,15 @@ public:: true
   - **Backpropagation**: max pooling routes the gradient solely to the argmax position (requiring stored switch indices); average pooling distributes it uniformly across the window.
   - **Design debate**: strided convolutions can replace pooling ("all-convolutional" networks), and vision transformers largely abandon it within blocks, yet patch merging and final mean pooling play the same summarising role; anti-aliased (blur) pooling restores shift robustness lost to naive downsampling.
   - **Trade-off**: aggressive pooling discards localisation detail that dense-prediction tasks need — hence encoder-decoder designs (U-Net) that pool on the way down and restore resolution with skip connections on the way up.
+
+  ## Current Landscape
+
+  - **Transformers relocate pooling, not abandon it**: vision transformers collapse token sequences into a class prediction using either a dummy `[CLS]` token, global average pooling (GAP, noted as equally good in the original ViT), or multihead attention pooling (MAP) with a learnable query; hierarchical designs such as Swin insert 2×2 "patch merging" layers that are directly analogous to strided pooling.
+  - **Pooling choice is task-dependent**: recent analysis of pooling in transformer-based models finds `CLS`/last-token pooling generally best for classification while average/weighted-average pooling wins on inpainting and segmentation, with the CLS-vs-average gap narrowing as models grow larger.
+  - **GAP for translation invariance**: global average pooling remains widely adopted in ViTs for its translation-invariant behaviour, though 2025 work (e.g. MPVG) shows GAP can conflict with position embeddings in layer-wise structures and proposes fixes.
+  - **Sequence/embedding models**: mean pooling, attention-weighted pooling, and CLS selection over transformer token outputs are the standard ways to produce the fixed-length vectors that retrieval and semantic-search indexes consume.
+
+  **Sources**:
+  - https://en.wikipedia.org/wiki/Vision_transformer
+  - https://openreview.net/pdf?id=8uhXfdSJmA
+  - https://arxiv.org/html/2502.02919

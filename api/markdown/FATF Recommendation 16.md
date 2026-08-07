@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -103,7 +103,23 @@ public:: true
 
   ## Current Landscape
 
-  Implementation is uneven. The FATF's own targeted reviews report that a majority of assessed jurisdictions have now legislated Travel Rule requirements for VASPs, but enforcement and actual inter-provider data exchange lag well behind the law on paper — the so-called "sunrise problem", where a compliant VASP must transact with counterparties in jurisdictions that have not yet switched the rule on. In 2025 the FATF launched a review of Recommendation 16's payment-transparency requirements to modernise them for instant payments and evolving message formats such as ISO 20022.
+  Implementation is uneven. The FATF's own targeted reviews report that a majority of assessed jurisdictions have now legislated Travel Rule requirements for VASPs, but enforcement and actual inter-provider data exchange lag well behind the law on paper — the so-called "sunrise problem", where a compliant VASP must transact with counterparties in jurisdictions that have not yet switched the rule on.
+
+  The payment-transparency review concluded in 2025: at its **June 2025 Plenary the FATF adopted a revised Recommendation 16** (adopted 13 June, published 18 June 2025), the most substantial rewrite since the virtual-asset extension. Key changes, following two public consultations:
+
+  - The rule now covers all "payments or value transfers and related messages", not just wire transfers, and clarifies that the payment chain begins with the financial institution receiving the customer's instruction.
+  - For cross-border transfers above USD/EUR 1,000, messages must carry verified originator name and account number plus beneficiary name, account number, and country and town; legal entities must be identified by BIC, Legal Entity Identifier, or another unique official identifier. A natural person's national identity number is no longer part of the minimum data set.
+  - Information should follow **structured formats aligned with ISO 20022** wherever possible, and beneficiary institutions must use received data to detect misdirected payments arising from fraud or error.
+  - Card-based purchases of goods and services remain exempt (card number must travel), but card person-to-person payments fall under the full rule, and new requirements cover cross-border card cash withdrawals.
+  - Unusually for the FATF, the revisions carry a delayed effective date: jurisdictions and institutions must comply **by the end of 2030**, with FATF guidance promised in the interim.
+
+  In the UK, the Travel Rule for cryptoassets took effect in September 2023 under the Money Laundering Regulations; the EU applies it through the Transfer of Funds Regulation alongside MiCA, with no de minimis threshold for VASP-to-VASP transfers. Open compliance questions concentrate on transfers involving self-hosted wallets, cross-protocol interoperability of Travel Rule messaging systems, and the privacy engineering needed to exchange personal data between VASPs without creating new honeypots.
+
+  **Sources**:
+  - https://www.fatf-gafi.org/content/dam/fatf-gafi/recommendations/Explanatory%20note%20for%20revised%20R.16.pdf.coredownload.pdf
+  - https://www.cgap.org/blog/fatfs-revised-travel-rule-key-changes-for-payment-transparency
+  - https://www.mayerbrown.com/en/insights/publications/2025/08/fatf-revises-aml-standards-for-certain-funds-transfers
+  - https://www.cssf.lu/en/Document/fatf-enhances-transparency-in-payments-through-the-modification-to-the-recommendation-16-of-its-standard/
 
   In the UK, the Travel Rule for cryptoassets took effect in September 2023 under the Money Laundering Regulations; the EU applies it through the Transfer of Funds Regulation alongside MiCA, with no de minimis threshold for VASP-to-VASP transfers. Open compliance questions concentrate on transfers involving self-hosted wallets, cross-protocol interoperability of Travel Rule messaging systems, and the privacy engineering needed to exchange personal data between VASPs without creating new honeypots.
 

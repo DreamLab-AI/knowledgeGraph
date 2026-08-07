@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -116,6 +116,16 @@ public:: true
   SDK distribution has largely moved from monolithic downloads to package managers — npm, PyPI, Maven, NuGet, crates.io — with vendors generating idiomatic multi-language clients from machine-readable API specifications such as OpenAPI. This industrialisation cuts maintenance cost but makes the software supply chain a security surface: a compromised or typosquatted SDK package propagates directly into thousands of downstream applications, which is why provenance attestation, signed releases, and software bills of materials increasingly accompany serious SDKs.
 
   Design quality of SDKs is now a recognised competitive factor — developer experience teams treat time-to-first-successful-call as a core metric — and the rise of AI-assisted coding is shifting documentation towards forms that both humans and coding agents can consume reliably. Meanwhile mobile platforms are tightening scrutiny of third-party SDKs embedded in consumer apps, since analytics and advertising kits inherit the host application's permissions and data access, making SDK governance a privacy and compliance concern as much as an engineering one.
+
+  - **Supply-chain attacks are industrialising (2025-2026)**: Sonatype recorded a 188% year-on-year jump in malicious open-source packages in Q2 2025, with npm carrying roughly 90% of detected open-source malware — turning SDK and library distribution into a primary attack surface.
+  - **"Slopsquatting", a new AI-driven vector**: security researcher Seth Larson coined the term (2025) for attackers registering plausible but non-existent package names that LLMs hallucinate; Endor Labs' State of Dependency Management 2025 found ~34% of dependency versions imported by AI coding agents do not exist, and ~49% carry known vulnerabilities.
+  - **Defences converging on provenance**: lockfile pinning, package-hash verification, signed releases, software bills of materials (SBOM), and allowlist gates on AI-agent package installs are now standard recommendations for hardening SDK consumption.
+  - **Spec-driven, multi-language generation**: vendors increasingly auto-generate idiomatic client SDKs from machine-readable API specifications (OpenAPI), cutting maintenance cost while making publisher identity and package-registration date load-bearing trust signals.
+
+  **Sources**:
+  - https://www.endorlabs.com/lp/state-of-dependency-management-2025
+  - https://socket.dev/blog/malicious-open-source-packages-2025-mid-year-threat-report
+  - https://www.rescana.com/post/ai-hallucinated-dependencies-in-pypi-and-npm-the-2025-slopsquatting-supply-chain-risk-explained
 
 - ### Provenance
   - sources::

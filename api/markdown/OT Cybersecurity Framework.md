@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -113,4 +113,15 @@ public:: true
 
   ## Current Landscape
 
-  IEC 62443 has consolidated as the international reference, with certification schemes (ISASecure, IECEE CB) covering products, development processes, and integrated systems. NIST SP 800-82 provides implementation guidance widely used alongside it, and sector regulators map their own assessment frameworks onto both. Adoption pressure now comes from three directions: regulators extending critical-infrastructure duties, insurers pricing OT exposure, and the accelerating IT/OT convergence — remote access, cloud historians, and industrial IoT — which dissolves the air gaps older security postures assumed. Current practice therefore emphasises continuous asset inventory, network monitoring tuned to industrial protocols, and secure-by-design procurement over perimeter defence alone.
+  IEC 62443 has consolidated as the international reference, with certification schemes (ISASecure, IECEE CB) covering products, development processes, and integrated systems, and NIST SP 800-82 providing widely used implementation guidance alongside it. Recent regulatory developments have sharpened the assessment layer:
+
+  - The **NCSC published Cyber Assessment Framework v4.0 on 6 August 2025** — the most significant revision since the CAF's 2018 introduction — adding contributing outcomes on Understanding Threat (A2.b) and Secure Software Development and Support (A4.b, covering SBOMs and code provenance), rewriting Objective C around proactive threat hunting, and adding expectations for visibility into AI and automated decision-making systems that support essential functions. Competent authorities set their own transition timelines from v3.2.
+  - The **UK Cyber Security and Resilience Bill** is converging UK regulation on NIS2-equivalent standards, bringing managed service providers into scope, adopting a 24/72-hour incident reporting framework, and moving the CAF towards a statutory footing as the assessment basis for regulated operators.
+  - In the EU, **NIS2 transposition and sectoral enforcement continued through 2025–2026**, with CAF/IEC 62443 mappings used to demonstrate coverage of Article 21's ten security measure areas; gaps most often cited are incident-reporting timelines, supply-chain depth, and board-level accountability.
+  - Adoption pressure still comes from three directions — regulators extending critical-infrastructure duties, insurers pricing OT exposure, and accelerating IT/OT convergence (remote access, cloud historians, industrial IoT) that dissolves the air gaps older postures assumed. Current practice emphasises continuous asset inventory, monitoring tuned to industrial protocols, and secure-by-design procurement over perimeter defence alone.
+
+  **Sources**:
+  - https://www.ncsc.gov.uk/collection/cyber-assessment-framework
+  - https://www.nccgroup.com/introducing-the-cyber-assessment-framework-4-an-updated-tool-for-uk-cyber-resilience/
+  - https://www.surecloud.com/blog-hub/nis2-caf-v4-mapping
+  - https://www.darktrace.com/blog/cyber-assessment-framework-v4-0-raises-the-bar-5-questions-every-security-team-should-ask-about-their-security-posture

@@ -47,11 +47,11 @@ public:: true
       {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -82,3 +82,14 @@ public:: true
   ## Technical Details
 
   The term has a narrower operational sense in infrastructure engineering: a *liveness probe*, one facet of a [[Health Check]]. Kubernetes distinguishes liveness (is the process making progress, or deadlocked and in need of a restart?) from readiness (should it receive traffic?) — a direct, if informal, descendant of the formal property: the probe approximates "this service will eventually respond" with "it responded within the timeout just now". Verifying true liveness requires reasoning about infinite behaviours, so model checkers handle it with Büchi automata and fairness assumptions (weak fairness: a continuously enabled action eventually fires), and proofs use ranking functions or well-founded orderings to show the awaited event cannot recede forever. In practice, most production incidents described as "the system is down" are liveness failures — state remains consistent, but progress has stopped.
+
+  ## Current Landscape
+
+  - **Settled formal core**: the Alpern–Schneider result that every trace property is the intersection of a safety property and a liveness property remains the standard decomposition; total correctness is exactly the conjunction of a safety property ("execution does not end in a bad state") and a liveness property ("execution terminates").
+  - **Violation asymmetry**: the defining operational distinction — a safety property can be violated by a finite prefix of an execution, whereas a liveness property can only be violated by an infinite execution — is what forces model checkers to reason about infinite behaviours (Büchi automata, fairness assumptions) when verifying liveness.
+  - **Distributed-systems pedagogy**: current course material frames the pair as "safety: bad things never happen" versus "liveness: good things eventually happen", with the canonical liveness example being "every client request eventually receives a response".
+  - **Live tension in consensus**: the FLP-driven trade-off still shapes deployed systems — BFT-finality chains halt (favouring safety) while Nakamoto-style chains keep extending under partition (favouring liveness), and mechanisms such as Ethereum's inactivity leak exist specifically to restore liveness by penalising absent validators.
+
+  **Sources**:
+  - https://en.wikipedia.org/wiki/Safety_and_liveness_properties
+  - https://courses.cs.washington.edu/courses/cse452/23wi/lecture/L3/

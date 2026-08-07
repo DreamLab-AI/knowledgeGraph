@@ -49,11 +49,11 @@ public:: true
       {"@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -89,3 +89,17 @@ public:: true
   - **Joint behaviour**: for random vectors (X₁, …, Xₙ), pairwise covariances Cov(Xᵢ, Xⱼ) populate the covariance matrix; independence factorises the joint distribution.
   - **Transformations**: functions of random variables (sums, maxima, smooth maps) are themselves random variables — the change-of-variables formula and the central limit theorem govern their limiting behaviour.
   - **Common families**: Bernoulli, binomial, and Poisson (discrete); uniform, Gaussian, and exponential (continuous). The Gaussian case dominates machine-learning practice because it is closed under linear maps and maximises entropy for a fixed variance.
+
+  ## Current Landscape
+
+  The concept is settled mathematics; the notes below reconcile the graph's definition with standard references.
+
+  - **Codomain generality**: the fully general definition takes a random variable to be a measurable function X : Ω → E into *any* measurable space (E, ℰ) — real-valued (E = ℝ) is the common special case, but random vectors, random matrices, and random graphs are all random variables in this sense. The page's ℝ-valued statement is the widely-taught special case, not the most general form.
+  - **Measurability condition**: X is measurable iff the preimage X⁻¹(B) ∈ ℱ for every B in the codomain σ-algebra; for real-valued X this reduces to {ω : X(ω) ≤ x} ∈ ℱ for all x, exactly the Borel condition stated in the page's technical details.
+  - **Distribution as pushforward**: the "law" of X is the pushforward measure P∘X⁻¹ on the codomain — the modern framing that underlies why identically-distributed variables can still differ (e.g. be dependent), a distinction central to probabilistic ML.
+  - **Contemporary relevance**: this measure-theoretic footing is what makes probabilistic programming, Bayesian deep learning, and diffusion-model noise schedules rigorous, since each manipulates transformations and conditionals of random variables.
+
+  **Sources**:
+  - https://en.wikipedia.org/wiki/Random_variable
+  - https://e.math.cornell.edu/people/belk/measuretheory/Probability.pdf
+  - https://sas.uwaterloo.ca/~dlmcleis/s901/chapt3.pdf

@@ -47,11 +47,11 @@ public:: true
       {"@id": "urn:ngm:class:hm-treasury", "label": "HM Treasury"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -81,7 +81,13 @@ public:: true
 
   ## Current Landscape
 
-  - **Digitalised administration**: real-time or near-real-time reporting (e-invoicing mandates, split-payment VAT) is spreading across the EU, Latin America, and Asia; the UK's Making Tax Digital extends to income tax self-assessment from 2026.
-  - **Cryptoasset rules**: HMRC's Cryptoassets Manual sets out UK treatment (CGT on disposals, income tax on rewards); CARF and updated CRS bring exchange-level reporting from 2026-27.
-  - **International reform**: Pillar Two minimum tax rules entered into force in the UK and EU in 2024-25, reshaping incentives for profit shifting.
-  - **Open issues**: valuation of illiquid tokens, DeFi transactions with no intermediary to report, NFT classification, and the compliance burden on small holders remain contested.
+  - **Making Tax Digital for Income Tax** becomes mandatory in phases: from **6 April 2026** for sole traders and landlords with qualifying income over **£50,000**, from April 2027 for those over £30,000, and from April 2028 for those over £20,000 — requiring digital records and quarterly updates via compatible software, with a final declaration replacing the annual Self Assessment return. Partnerships have no confirmed start date.
+  - **UK adoption of the OECD Crypto-Asset Reporting Framework (CARF)**: from **1 January 2026** UK reporting cryptoasset service providers must collect user and transaction data; the first report (covering calendar year 2026) is due to HMRC between 1 January and 31 May 2027, with penalties up to £300 per user for non-compliance.
+  - **Self Assessment crypto reporting**: the 2024/25 return introduced dedicated boxes for cryptoasset gains and losses; the Capital Gains Tax annual exempt amount now sits at **£3,000** (down from £6,000 in 2023/24).
+  - **International reform**: Pillar Two's 15% global minimum-tax rules entered into force in the UK and EU from 2024, reshaping profit-shifting incentives.
+  - **Open issues**: valuation of illiquid tokens, DeFi transactions with no intermediary to report, NFT classification, and the near-real-time compliance burden on small holders remain contested.
+
+  **Sources**:
+  - https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax
+  - https://www.gov.uk/guidance/reporting-cryptoasset-user-and-transaction-data
+  - https://www.icaew.com/insights/tax-news/2025/may-2025/new-hmrc-guidance-on-cryptoasset-reporting

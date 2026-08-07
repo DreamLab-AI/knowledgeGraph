@@ -49,11 +49,11 @@ public:: true
       {"@id": "urn:ngm:class:time-sensitive-networking", "label": "Time-Sensitive Networking"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -83,4 +83,11 @@ public:: true
 
   ## Current Landscape
 
-  Industrial Ethernet passed classic fieldbus in new node share around 2018 and now accounts for roughly three-quarters of new installations (HMS market data), with PROFINET and EtherNet/IP each holding around a quarter of the total and EtherCAT strong in high-performance motion. The next convergence wave is [[Time-Sensitive Networking]]: a set of IEEE 802.1 standards (time synchronisation, scheduled traffic, frame pre-emption, per-stream policing) that put determinism into standard Ethernet silicon itself, promising a single vendor-neutral real-time layer beneath PROFINET over TSN, CC-Link IE TSN, and OPC UA Pub/Sub. Complementary developments include gigabit device connectivity, Single Pair Ethernet and Ethernet-APL extending Ethernet to two-wire field instruments in hazardous process areas, and 5G/Wi-Fi 6 integration for mobile equipment — together aimed at one continuous, deterministic network from sensor to cloud.
+  Industrial Ethernet passed classic fieldbus in new node share around 2018 and its dominance keeps deepening: HMS Networks' 2026 Industrial Network Market Shares analysis (published June 2026) puts Industrial Ethernet at 79% of newly installed nodes worldwide, up from 76% in the 2025 study and just 34% when HMS began publishing the series in 2015. Within Ethernet, PROFINET strengthened its lead at 30% of the total wired market (up from 27%), EtherNet/IP followed at 25%, and EtherCAT continued its climb to 20%, with Modbus TCP at 5% and CC-Link IE at 3%; POWERLINK fell to 1%. Fieldbus dropped to 14% of new nodes (from 17%), with PROFIBUS new-node installations declining about 9% year on year to roughly 1.0 million in 2025.
+
+  The next convergence wave is [[Time-Sensitive Networking]]: a set of IEEE 802.1 standards (time synchronisation, scheduled traffic, frame pre-emption, per-stream policing) that put determinism into standard Ethernet silicon itself, promising a single vendor-neutral real-time layer beneath PROFINET over TSN, CC-Link IE TSN — already the first industrial protocol shipping TSN mechanisms, with a strong foothold in Asia — and OPC UA Pub/Sub. Complementary developments include gigabit device connectivity, Single Pair Ethernet and Ethernet-APL (Advanced Physical Layer) extending Ethernet to two-wire field instruments in hazardous process areas — both seeing strong European activity in 2025–2026 — and 5G/Wi-Fi 6 integration for mobile equipment, with wireless holding around 7% of new nodes. Together these aim at one continuous, deterministic network from sensor to cloud.
+
+  **Sources**:
+  - https://www.hms-networks.com/network-report
+  - https://industrialethernet.net/news/tech-updates/2026-industrial-network-market-shares-annual-report-by-hms-networks/
+  - https://www.hms-networks.com/tech-blog/blogpost/hms-blog/2025/07/10/how-much-are-you-losing-on-industrial-networks

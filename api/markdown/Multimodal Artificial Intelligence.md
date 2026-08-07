@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -106,3 +106,12 @@ public:: true
   ## Current Landscape
 
   Multimodal capability has moved from research novelty to a baseline expectation of foundation models. Practical drivers include accessibility (image description for blind users, live captioning), robotics and spatial computing (vision-language-action models that ground instructions in camera feeds), and content production (storyboard-to-video pipelines). Persistent challenges are cross-modal hallucination, where the language head asserts details absent from the image; the scarcity of high-quality aligned training data outside English; heavy inference cost for video; and evaluation, since benchmarks lag behind the pace at which modalities are being combined. Regulatory attention is also sharpening, as synthetic media produced by multimodal generators falls under emerging disclosure and provenance requirements.
+
+  - **Native-multimodal frontier models (2025)**: Google's Gemini 2.5 Pro (launched March 2025) processes text, images, audio and video in a single model with a 1-million-token context window (2M announced), and OpenAI's GPT-5 line extended native video understanding from August 2025; multimodal input is now the default API surface rather than an add-on.
+  - **Open-weight catch-up**: open vision-language models — Qwen-VL/Qwen3-VL, Llama Vision (Llama 4, early 2026), DeepSeek-VL — narrowed the gap, with Qwen VL variants reported around 97% on the DocVQA document-understanding benchmark.
+  - **Fastest-growing modalities**: native audio (speech in and out, capturing prosody and emotion) and long-form video understanding are the most rapidly expanding capabilities, powering voice assistants and computer-use agents.
+  - **Evaluation and failure modes**: MMMU, MathVista and DocVQA are the reference benchmarks; hallucinated visual detail and brittle spatial reasoning remain the persistent weaknesses.
+
+  **Sources**:
+  - https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/
+  - https://www.codegpt.co/blog/ai-coding-models-2025-comprehensive-guide

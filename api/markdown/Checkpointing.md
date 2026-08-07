@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -119,6 +119,20 @@ public:: true
   - **Application-level vs transparent** — frameworks like PyTorch and Flink expose explicit checkpoint APIs, whereas CRIU or VM snapshots capture state without application cooperation.
   - **Agentic systems** — LLM agent harnesses persist the message transcript, tool results, and plan state; because the transcript is the state, checkpointing is comparatively cheap and enables replay, branching, and human-in-the-loop resumption.
   - **Interval tuning** — Daly's approximation `τ ≈ √(2δM)` (checkpoint cost δ, mean time between failures M) gives the near-optimal checkpoint interval for long-running jobs.
+
+  ## Current Landscape
+
+  - **Asynchronous checkpointing is now standard for LLM training**: PyTorch Distributed Checkpoint (DCP) added an asynchronous save API that copies state GPU→CPU and persists to storage on a background thread; in work with IBM Research (June 2024) this cut effective checkpoint downtime 10–23× (a 7B model fell from ~149 s to ~6 s per checkpoint).
+  - **Near-zero overhead**: the TorchTitan team demonstrated a zero-overhead DCP prototype (October 2024) that also overlaps the GPU→CPU copy with forward/backward compute, reducing total checkpoint overhead to under one second — roughly a 19× improvement over synchronous checkpointing plus a further 5× from copy overlap.
+  - **"Badput" accounting**: a September 2025 PyTorch engineering post formalised checkpointing cost as training *badput* (loading + saving overhead + computation lost since last checkpoint, relative to mean time between interruptions), reporting checkpoint overhead reduced from 18.5 s to 1.5 s via plan/metadata caching, dedicated-process checkpointing with pinned memory, and node-local checkpoints.
+  - **In-cluster checkpointing**: co-developed by Google Cloud's GPU Resiliency team and Meta's DCP team and presented at PyTorch Conference 2025, node-local checkpoint storage with automatic replication for node replacement improved training goodput by up to 5% in large-scale deployments.
+  - **API status**: `torch.distributed.checkpoint.async_save` ships in PyTorch 2.9 (still marked experimental), supporting resharding across differing cluster topologies at load time via DTensor.
+
+  **Sources**:
+  - https://pytorch.org/blog/distributed-checkpoint-efficient-checkpointing-in-large-scale-jobs/
+  - https://pytorch.org/blog/reducing-checkpointing-times/
+  - https://discuss.pytorch.org/t/distributed-w-torchtitan-optimizing-checkpointing-efficiency-with-pytorch-dcp/211250
+  - https://docs.pytorch.org/docs/2.9/distributed.checkpoint.html
 
 - ### Provenance
   - sources::

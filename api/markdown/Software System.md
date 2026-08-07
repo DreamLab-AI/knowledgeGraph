@@ -47,11 +47,11 @@ public:: true
       {"@id": "urn:ngm:class:backward-compatibility", "label": "Backward Compatibility"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -86,6 +86,18 @@ public:: true
   - **Quality attributes**: ISO/IEC 25010 catalogues the characteristics (functional suitability, performance efficiency, reliability, security, maintainability, portability) against which systems are specified and evaluated.
   - **Descriptions**: ISO/IEC/IEEE 42010 standardises architecture description; the C4 model and UML remain common notations for communicating system structure at multiple levels of abstraction.
   - **Operation**: modern practice treats the running system, its telemetry, and its deployment pipeline as part of the system itself (DevOps, observability, site reliability engineering).
+
+  ## Current Landscape
+
+  - **Quality model revised (2023)**: ISO/IEC 25010:2023 (second edition, published November 2023) replaced the 2011 product-quality model, adding *safety* as a top-level characteristic and renaming *usability* to *interaction capability* and *portability* to *flexibility* — reflecting the state of the art in ICT products.
+  - **Model split out**: the 2023 revision moved the quality-model overview and usage into the new ISO/IEC 25002, and the quality-in-use model into ISO/IEC 25019, leaving 25010 focused on the nine product-quality characteristics.
+  - **Architecture description standardised**: ISO/IEC/IEEE 42010 (current edition 2022) remains the reference for describing system and software architectures via viewpoints and views, complementing lighter-weight notations such as the C4 model.
+  - **Systems increasingly include their operations**: platform engineering, DevOps/SRE, and observability practices now treat deployment pipelines and runtime telemetry as first-class parts of the software system, consistent with Lehman's laws that a system in use must continuously evolve or decay.
+
+  **Sources**:
+  - https://www.iso.org/standard/78176.html
+  - https://webstore.ansi.org/preview-pages/ISO/preview_ISO+IEC+25010-2023.pdf
+  - https://quality.arc42.org/articles/iso-25010-update-2023
 
 - ### Provenance
   - sources::

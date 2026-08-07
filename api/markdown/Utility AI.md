@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -122,6 +122,17 @@ public:: true
   - **Scoring pipeline**: inputs → normalisation via response curves → per-consideration utilities → aggregation (product, weighted sum, or compensated product that offsets the score shrinkage of multiplying many factors) → optional priority buckets so categories such as "emergency" always outrank "idle" → action selection (argmax, weighted random over top-k, or hysteresis/commitment bonuses to prevent oscillation between similarly scored actions).
   - **Architecture in practice**: considerations are data-driven assets editable by designers; scorers are shared across agent archetypes with per-archetype weights; evaluation is cheap (a few dozen curve lookups per action) and easily amortised by staggering agents across frames.
   - **Hybridisation**: utility scoring is frequently embedded as the selector layer inside other architectures — utility-selected branches in behaviour trees, utility-weighted goal selection feeding GOAP or HTN planners, and utility gates on ability usage in MOBA/RTS bots — so the technique complements rather than strictly replaces its rivals in a modern [[AI Game Agent]] stack.
+
+  ## Current Landscape
+
+  - **Dave Mark's Infinite Axis Utility System (IAUS)** remains the canonical formulation: each action is scored by one or more *axes*, where an axis is one normalised [0,1] input passed through a response curve (linear, quadratic, logistic, logit, Gaussian) with four designer-tunable parameters (m, k, b, c), and axis scores are combined so any zero vetoes the action (the "zero rule").
+  - Practitioner write-ups (2025) flag **naïve multiplication of many [0,1] axes as unfairly penalising complex actions** and recommend a **geometric-mean / compensated-product** aggregation, followed by a weight multiplier expressing an action's category urgency, to keep scores comparable regardless of axis count.
+  - Guidance in the *Game AI Pro* series (Rabin/Mark) stresses that **response-curve selection — direction, monotonicity, and endpoints — is the heart of the technique**, and that good considerations often rely on proxy variables and influence-map combinations rather than exact metrics.
+  - Standard runtime optimisations are early-exit-on-zero, weight-ordered evaluation with pruning, memoisation of reusable inputs (ammo, cooldowns, distance), and evaluating cheap axes before expensive ones such as line-of-sight; open-source IAUS implementations (e.g. Unity ECS ports) keep the approach in active use.
+
+  **Sources**:
+  - https://tonogameconsultants.com/infinite-axis-utility-systems/
+  - http://www.gameaipro.com/GameAIPro3/GameAIPro3_Chapter13_Choosing_Effective_Utility-Based_Considerations.pdf
 
 - ### Provenance
   - sources::

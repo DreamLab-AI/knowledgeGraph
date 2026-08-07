@@ -67,11 +67,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -102,6 +102,18 @@ public:: true
   ## Technical Details
 
   For neighbouring databases the privacy loss of N(f(D), σ²I) is itself normally distributed with mean Δ₂²/2σ² — this sub-Gaussian privacy-loss profile is what Rényi-DP accounting exploits: the mechanism satisfies (α, α·Δ₂²/2σ²)-RDP for every order α, and RDP guarantees convert to (ε, δ)-DP at the end of composition. In DP-SGD, per-example gradients are clipped to norm C (so Δ₂ = C under add/remove adjacency), noise N(0, (zC)²) is added to the summed batch gradient, and privacy amplification by Poisson subsampling further reduces per-step cost; the noise multiplier z, sampling rate, and step count jointly determine the final (ε, δ) via the moments accountant or numerically tight privacy-loss-distribution accountants. Implementation caveats mirror the Laplace case: floating-point sampling must be hardened (Mironov-style attacks apply), and the discrete Gaussian (Canonne, Kamath, Steinke 2020) — used in the 2020 US Census Disclosure Avoidance System — provides an exact integer-valued variant immune to those side channels.
+
+  ## Current Landscape
+
+  - A 2025 position paper ("(ε, δ) Considered Harmful", arXiv:2503.10945, revised October 2025) argues that reporting a single (ε, δ) pair is incomplete and often misleading, and recommends Gaussian differential privacy (µ-GDP, Dong et al. 2022) as the standard for communicating guarantees, since numerically accounted DP-SGD deployments are almost exactly characterised by GDP.
+  - The same line of work re-analysed the US Census Bureau's TopDown algorithm (against the privacy-loss budget allocation of 25 August 2022) and showed it is tightly characterised by µ = 2.702-GDP, computable in seconds on a laptop with modern numerical accountants.
+  - Numerical privacy-loss-distribution accountants (Koskela & Honkela 2021; Gopi et al. 2021; Doroshenko et al. 2022) have largely displaced the original moments accountant for tight composition of subsampled Gaussian mechanisms in production libraries.
+  - Mainstream open-source implementations of the Gaussian mechanism and DP-SGD include Opacus (PyTorch), TensorFlow Privacy, Google's differential-privacy library, IBM diffprivlib, and OpenDP; the discrete Gaussian remains the deployed choice for integer-valued releases such as the 2020 US Census Disclosure Avoidance System.
+
+  **Sources**:
+  - https://arxiv.org/html/2503.10945v2
+  - https://arxiv.org/html/2509.03294v2
+  - https://proceedings.neurips.cc/paper_files/paper/2020/file/b53b3a3d6ab90ce0268229151c9bde11-Supplemental.pdf
 
 - ### Provenance
   - sources::

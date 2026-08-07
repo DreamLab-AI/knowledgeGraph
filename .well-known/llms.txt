@@ -5,7 +5,7 @@
 > Revolution across six domains: artificial intelligence, blockchain, spatial
 > computing, robotics, distributed collaboration and infrastructure. It exists to
 > exercise and demonstrate the VisionFlow pipeline and VisionClaw engine on a
-> medium-scale ontology (~7.4k classes, ~100k relations). It is a testbed, NOT an
+> medium-scale ontology (~8.1k classes, ~100k relations). It is a testbed, NOT an
 > authoritative human-authored encyclopedia. It compiles to a reasoned OWL2 DL
 > ontology (Whelk EL++), not a pile of hyperlinks. Every page carries OWL2
 > semantics in embedded JSON-LD and a traceable generation record

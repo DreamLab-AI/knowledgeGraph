@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ieee-p2048-4",
   "domain": "standards",
-  "definition": "IEEE P2048-4 is the part of the IEEE 2048 virtual and augmented reality standards series that specifies immersive video file and stream formats: how classified immersive video content \u2014 360-degree, stereoscopic, and volumetric \u2014 is containerised, signalled, and delivered for storage and streaming across platforms. Where its sibling IEEE P2048-3 addresses who a user is in immersive environments (person identification), P2048-4 addresses how immersive media payloads are packaged and interchanged, defining metadata for projection type, viewport, and rendering parameters so content plays back correctly on heterogeneous devices.",
+  "definition": "IEEE P2048-4 is the part of the IEEE 2048 virtual and augmented reality standards series that specifies requirements and methods for verifying a person's identity in immersive (virtual and augmented reality) environments \u2014 Person Identity. It lets a user identify themselves to a site or service through one or more identity authorities, authenticate individual pieces of information without disclosing additional data, and present a certified visual appearance (avatar). Its sibling IEEE P2048-3 addresses the complementary media question of how immersive video files and streams are containerised, signalled and delivered, so that verified identity can govern entitlement to the immersive content those formats carry.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.8,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -48,16 +48,20 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:video-compression",
-        "label": "Video Compression"
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
       },
       {
-        "id": "urn:ngm:class:codec",
-        "label": "Codec"
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
       },
       {
-        "id": "urn:ngm:class:data-format",
-        "label": "Data Format"
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
       }
     ]
   },

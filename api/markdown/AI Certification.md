@@ -73,11 +73,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -107,4 +107,17 @@ public:: true
 
   ## Current Landscape
 
-  AI certification is emerging rather than settled. The publication of ISO/IEC 42001 gave the field its first broadly applicable management-system standard to certify against, and accreditation bodies are building the schemes and auditor competencies needed to issue credible marks. In parallel, jurisdiction-specific regimes — notably the conformity-assessment obligations for high-risk systems under the EU AI Act — are shaping demand for both self-assessment and third-party certification routes. The open questions are practical: how to test statistical, evolving systems repeatably, how often certification must be renewed as models are updated, and how to prevent certification from becoming a box-ticking exercise divorced from real-world behaviour.
+  AI certification is emerging rather than settled, but the accreditation infrastructure hardened considerably through 2025–26:
+
+  - **ISO/IEC 42001:2023** (published December 2023) remains the anchor standard; it gained two companions in 2025 — ISO/IEC 42005:2025 (AI system impact assessment, May 2025) and ISO/IEC 42006:2025 (requirements for bodies certifying AI management systems, July 2025).
+  - **Accredited certification is now real**: BSI became the first certification body worldwide accredited to certify ISO/IEC 42001, with dual UKAS and RvA accreditation announced in November 2025 and UKAS formally confirming its first AIMS accreditation grant on 15 January 2026. Seven certification bodies took part in the UKAS pilot, with a second tranche of about twelve more progressing applications.
+  - **ISO/IEC 42001 does not equal EU AI Act conformity**: the European AI Office signalled in 2024 that the standard is not fully aligned with the Act, and it is not in the EU harmonisation pipeline. The first AI-specific harmonised standard, prEN 18286 (CEN-CENELEC JTC 21 quality-management standard for AI Act purposes), entered public enquiry on 30 October 2025 with final publication targeted for late 2026; only citation in the Official Journal will confer presumption of conformity.
+  - **EU AI Act conformity assessment** (Article 43) mostly permits internal-control routes for Annex III high-risk systems, with notified-body assessment required for biometrics where harmonised standards are not applied — so third-party AI certification demand is currently driven more by procurement and assurance than by statute.
+
+  The open questions remain practical: how to test statistical, evolving systems repeatably, how often certification must be renewed as models are updated, and how to prevent certification from becoming a box-ticking exercise divorced from real-world behaviour.
+
+  **Sources**:
+  - https://www.ukas.com/resources/latest-news/ukas-grants-first-aims-accreditation/
+  - https://www.bsigroup.com/en-GB/insights-and-media/media-centre/press-releases/2025/november/bsi-becomes-the-first-certification-body-accredited-by-ukas-and-rva-to-deliver-certification-for-isoiec-42001/
+  - https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-pren-18286-iso-42001-20260428-cs/
+  - https://www.isaca.org/resources/news-and-trends/industry-news/2025/isoiec-42001-and-eu-ai-act-a-practical-pairing-for-ai-governance

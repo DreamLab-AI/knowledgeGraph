@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -109,6 +109,14 @@ public:: true
   - **When multi-agent wins**: breadth-heavy tasks (parallel research, map-reduce over many documents), separation of privilege (a planner without write access delegating to constrained executors), and adversarial review patterns.
   - **When single-agent wins**: depth-heavy tasks with strong sequential dependencies, tight token budgets (multi-agent systems multiply token spend), and settings where coordination errors dominate — studies of multi-agent failures repeatedly trace them to inter-agent misalignment rather than model weakness.
   - **Hybrid drift**: a single agent that spawns ephemeral subagents for isolated subtasks blurs the boundary; the defining property remains a single locus of control and accountability.
+  - **The 2025 debate crystallised the trade-off**: within a day of each other in June 2025, Cognition published "Don't Build Multi-Agents" (arguing shared context and single-threaded control avoid conflicting sub-agent decisions) while Anthropic reported a multi-agent research system beating single-agent Claude Opus 4 by 90.2% on its internal eval — at roughly 15x the token cost of a chat.
+  - **Reconciliation via context engineering**: LangChain's synthesis (June 2025) noted both posts agree that context engineering is the core problem, and that multi-agent systems which primarily "read" (parallel research) are far easier to get right than those that "write" a single coherent artefact, where single-agent designs stay safer.
+  - **Token cost as the deciding variable**: measured overheads place a single agent at ~4x chat tokens and multi-agent at ~15x, so single-agent remains the default for coding and other write-heavy, sequentially dependent tasks; escalate only when parallel exploration clearly pays and sub-task assumptions rarely conflict.
+
+  **Sources**:
+  - https://cognition.com/blog/dont-build-multi-agents
+  - https://www.anthropic.com/engineering/multi-agent-research-system
+  - https://www.langchain.com/blog/how-and-when-to-build-multi-agent-systems
 
 - ### Provenance
   - sources::

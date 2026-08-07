@@ -101,11 +101,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -150,3 +150,17 @@ public:: true
   - Neptune, Comet, ClearML, TensorBoard — alternatives spanning hosted, self-hosted, and visualisation-first niches
 
   **Good practice**: log seeds and environment for exact reruns; treat runs as immutable records; tag runs with the hypothesis being tested so the store reads as a lab notebook rather than a metrics dump; and gate [[Hyperparameter Tuning]] sweeps through the same tracking path as manual runs so all evidence is comparable.
+
+  ## Current Landscape
+
+  - **MLflow 3 (released June 2025)** reoriented the de facto open-source standard around generative AI: a new first-class `LoggedModel` entity moves beyond the run-centric design, and MLflow Tracing provides auto-instrumented, hierarchical observability for 20+ GenAI libraries (OpenAI, LangChain, LlamaIndex, LangGraph, AutoGen, PydanticAI, smolagents), with token/cost tracking, a prompt registry, and human/LLM-judge feedback APIs.
+  - **Managed offerings followed quickly**: Amazon SageMaker AI shipped fully managed MLflow 3.0 in July 2025, positioning tracing and version lineage as the debugging backbone for GenAI applications, alongside Databricks' managed MLflow.
+  - **Consolidation among vendors**: Weights & Biases was acquired by GPU cloud provider CoreWeave in 2025 and now vertically integrates with that compute stack (its Weave product covers GenAI tracing); Neptune.ai positions on governance and extreme logging scale for foundation-model builders.
+  - **Regulatory pull**: the EU AI Act's obligations for general-purpose AI model providers applied from 2 August 2025, requiring maintained technical documentation of training processes, evaluation results, data sources, and compute — an audit trail that is only practically producible from systematic experiment tracking.
+  - **Scope shift**: the discipline's centre of gravity has widened from metric-curve comparison for training runs to full-lineage observability across models, prompts, agents, and evaluations — a convergence of experiment tracking with production tracing.
+
+  **Sources**:
+  - https://mlflow.org/releases/3/
+  - https://aws.amazon.com/about-aws/whats-new/2025/07/fully-managed-mlflow-3-0-amazon-sagemaker-ai/
+  - https://www.databricks.com/blog/mlflow-30-unified-ai-experimentation-observability-and-governance
+  - https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers

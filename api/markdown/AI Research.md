@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -109,7 +109,14 @@ public:: true
 
   ## Current Landscape
 
-  - **Venues**: NeurIPS, ICML, ICLR dominate machine learning; AAAI and IJCAI represent the broader AI tradition, including symbolic reasoning, planning, and multi-agent systems.
-  - **Publication culture**: rapid preprint-first dissemination, open review experiments, and artefact evaluation; reproducibility checklists are now standard at major venues.
-  - **Research directions (mid-2020s)**: scaling laws and their limits, reasoning and agentic systems, multimodal models, alignment and interpretability, data curation, and efficient inference.
-  - **UK context**: the Alan Turing Institute, AI Security Institute, and university labs anchor a strong national research base; UK-based groups are particularly prominent in reinforcement learning, machine learning theory, and AI safety.
+  - **Venues**: NeurIPS, ICML, ICLR dominate machine learning; AAAI and IJCAI represent the broader AI tradition, including symbolic reasoning, planning, and multi-agent systems. NeurIPS 2025 (2–7 December, dual-sited in San Diego and Mexico City) received 21,575 main-track submissions and accepted 5,290 papers (24.5%) — more than double the 2020 submission volume — and added a Position Paper Track alongside its Datasets & Benchmarks Track (1,995 submissions).
+  - **Publication scale**: arXiv submissions across cs.AI, cs.CL, and cs.LG grew from about 17,600 in 2018 to roughly 115,000 in 2025 — around a 30% compound annual growth rate, with cs.AI alone up more than thirteenfold.
+  - **Publication culture**: rapid preprint-first dissemination, open review experiments, and artefact evaluation; reproducibility checklists are now standard at major venues, and the NeurIPS datasets track mandates persistent hosting with Croissant metadata.
+  - **Research directions (2025–26)**: test-time/inference scaling and reasoning models, agentic systems (agentic-workflow papers more than doubled between half-year windows into 2026), multimodal vision-language models, alignment and interpretability, data curation, and efficient inference.
+  - **UK context**: the Alan Turing Institute, AI Security Institute (renamed from AI Safety Institute in February 2025), and university labs anchor a strong national research base; UK-based groups are particularly prominent in reinforcement learning, machine learning theory, and AI safety.
+
+  **Sources**:
+  - https://intuitionlabs.ai/articles/neurips-2025-conference-summary-trends
+  - https://blog.neurips.cc/2025/12/05/neurips-datasets-benchmarks-track-from-art-to-science-in-ai-evaluations/
+  - https://moclaw.ai/blog/arxiv-ai-paper-explosion-2026
+  - https://paperscode.org/articles/ai-research-trends-h1-2026/

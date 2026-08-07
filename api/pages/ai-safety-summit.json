@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-safety-summit",
   "domain": "governance",
-  "definition": "An intergovernmental summit series on frontier AI risk, inaugurated at Bletchley Park in November 2023, that convenes governments, leading AI companies, and researchers to agree shared assessments of advanced-model risks and coordination mechanisms for testing and governance. The series produced the Bletchley Declaration, catalysed the creation of national AI safety institutes, and continued through the Seoul summit (2024) and the Paris AI Action Summit (2025).",
+  "definition": "An intergovernmental summit series on frontier AI risk, inaugurated at Bletchley Park in November 2023, that convenes governments, leading AI companies, and researchers to agree shared assessments of advanced-model risks and coordination mechanisms for testing and governance. The series produced the Bletchley Declaration, catalysed the creation of national AI safety institutes, and continued through the Seoul summit (2024), the Paris AI Action Summit (2025), and the India AI Impact Summit in New Delhi (February 2026), with Switzerland due to host the next summit in Geneva in 2027.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:international-ai-cooperation",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.8,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],

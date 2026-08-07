@@ -81,11 +81,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -120,6 +120,19 @@ public:: true
   - **Decision theory**: with known error costs, the Bayes-optimal rule thresholds the posterior at a cost-dependent value; class imbalance is handled through resampling, cost-sensitive losses, or threshold tuning rather than raw accuracy.
   - **Multi-class and beyond**: softmax/one-vs-rest schemes extend binary classifiers to K classes; multi-label, hierarchical, and open-set classification relax the assumption of exactly one known class per instance.
   - **Failure modes**: distribution shift, spurious-correlation shortcuts, adversarial perturbations, and miscalibrated confidence — active research areas for deployed systems.
+
+  ## Current Landscape
+
+  - **Classifiers as the LLM safety layer**: Anthropic's Constitutional Classifiers (paper released 31 January 2025) are input/output classifiers trained on constitution-guided synthetic data; guarding Claude, they cut jailbreak success from 86% to 4.4% at the cost of a 0.38% increase in production-traffic refusals and ~23.7% inference overhead, and survived over 3,000 hours of red teaming without a universal jailbreak being found.
+  - **Probe-based cascades**: the next-generation system (published January 2026) replaces a monolithic safeguard with a two-stage cascade — a linear probe over the model's internal activations screens all traffic and escalates suspicious exchanges to a classifier ensemble — achieving a 0.05% refusal rate on harmless production queries at roughly 1% additional compute, a ~40× cost reduction over the baseline exchange classifier.
+  - **Cheap classification via representation reuse**: Anthropic's 2025 alignment work showed linear probes on intermediate activations match dedicated classifiers ~2% of the policy model's size at virtually no additional compute, and fine-tuning only final layers outperforms standalone classifiers a quarter of the base model's size.
+  - **Tabular status quo holds**: gradient-boosted tree ensembles remain the default for tabular classification, while large pretrained models adapted by fine-tuning or zero-shot prompting now dominate text and image classification — increasingly evaluated as much on calibration and robustness as on raw accuracy.
+
+  **Sources**:
+  - https://www.anthropic.com/research/constitutional-classifiers
+  - https://www.anthropic.com/research/next-generation-constitutional-classifiers
+  - https://alignment.anthropic.com/2025/cheap-monitors/
+  - https://www.alphaxiv.org/abs/2501.18837
 
 - ### Provenance
   - sources::

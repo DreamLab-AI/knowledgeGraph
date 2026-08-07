@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -106,4 +106,16 @@ public:: true
   - **Definition**: VCdim(H) = max{n : some set of n points is shattered by H}; infinite if arbitrarily large sets can be shattered.
   - **Worked examples**: intervals on the line, d = 2; axis-aligned rectangles in the plane, d = 4; linear halfspaces in ℝ^d, d + 1; sine-wave classifiers sign(sin(ωx)), infinite despite one parameter — capacity is not parameter count.
   - **Sauer-Shelah lemma**: the growth function satisfies Π_H(n) ≤ Σ_{i=0}^{d} C(n, i) = O(n^d) for finite VC dimension d.
-  - **Successors**: Rademacher complexity gives data-dependent (often tighter) bounds; the Natarajan dimension extends the theory to multiclass problems; fat-shattering dimension covers real-valued regression.
+  - **Successors**: Rademacher complexity gives data-dependent (often tighter) bounds; the Natarajan dimension (and its generalisation, the DS dimension) extends the theory to multiclass problems; fat-shattering dimension and Pollard's pseudo-dimension cover real-valued functions.
+
+  ## Current Landscape
+
+  - The core theory is stable and foundational: VC dimension is the cardinality of the largest point set a hypothesis class can shatter, and finiteness is equivalent to PAC-learnability, with linear classifiers in R^d having VC dimension d+1 (Wikipedia, *Vapnik–Chervonenkis dimension*; university course notes, 2025).
+  - The classical VC bound is essentially inert for modern deep networks: fully-connected ReLU nets have VC dimension roughly on the order of their parameter count (Bartlett et al., 2017), so the bound exceeds 1 in the over-parameterised regime and **cannot explain why networks that fit random labels and true labels have the same VC dimension yet generalise differently** (CSE543 generalization lecture, autumn 2025).
+  - Consequently, current research favours **scale-sensitive and data-dependent capacity measures** — fat-shattering dimension, Rademacher complexity, and margin/norm-based bounds — that need not grow with parameter count (Bartlett, Berkeley).
+  - VC theory nonetheless remains an active analytical tool for structured architectures: a NeurIPS 2025 paper derives new VC-dimension bounds for deep **group-convolutional** neural networks (GCNNs), showing how architecture, not just equivariance, shapes generalisation.
+
+  **Sources**:
+  - https://en.wikipedia.org/wiki/Vapnik%E2%80%93Chervonenkis_dimension
+  - https://openreview.net/forum?id=Y9nxhKcgAA
+  - https://www.stat.berkeley.edu/~bartlett/talks/201711BAIR.pdf

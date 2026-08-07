@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -105,6 +105,12 @@ public:: true
 
   - **Instruments**: EU Charter of Fundamental Rights (binding since 2009), European Convention on Human Rights enforced by the Strasbourg court, national constitutional catalogues, and the UN framework including the Guiding Principles on Business and Human Rights
   - **Technology jurisprudence**: CJEU rulings on data retention (Digital Rights Ireland), transfers (Schrems I/II), and the right to erasure (Google Spain) show fundamental rights invalidating or reshaping digital legislation and practice
-  - **AI governance**: the AI Act's prohibited-practices list (social scoring, certain biometric surveillance) is a direct fundamental-rights judgement; the Council of Europe's 2024 Framework Convention on AI extends rights-based obligations beyond the EU
-  - **Institutions**: the EU Agency for Fundamental Rights (FRA) publishes empirical assessments of rights impacts of AI and biometrics; national equality bodies and data-protection authorities act as day-to-day enforcers
+  - **AI governance**: the EU AI Act (Regulation (EU) 2024/1689) entered into force on 1 August 2024; its Article 27 requires deployers that are public bodies, private providers of public services, and certain other Annex III deployers to perform a Fundamental Rights Impact Assessment (FRIA) before first use, with the AI Office to supply a template questionnaire
+  - **Council of Europe**: the Framework Convention on Artificial Intelligence, Human Rights, Democracy and the Rule of Law — the first binding international AI treaty — was opened for signature on 5 September 2024 and signed by the EU, extending rights-based, lifecycle risk-assessment obligations (Article 16) beyond the Union
+  - **Institutions**: the EU Agency for Fundamental Rights (FRA) published *Assessing High-risk Artificial Intelligence: Fundamental Rights Risks* in November 2025, offering a step-by-step FRIA method keyed to the Charter; national equality bodies and data-protection authorities act as day-to-day enforcers
   - **Open tensions**: horizontal effect between private parties, extraterritorial reach of rights-based regulation, and reconciling innovation policy with precautionary rights protection
+
+  **Sources**:
+  - https://artificialintelligenceact.eu/article/27/
+  - https://fra.europa.eu/en/publication/2025/assessing-high-risk-ai
+  - https://www.tandfonline.com/doi/full/10.1080/20508840.2025.2492524

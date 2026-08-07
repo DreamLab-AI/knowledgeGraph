@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -107,8 +107,17 @@ public:: true
 
   - **Computational models**: Bayesian inverse planning (Baker, Saxe, Tenenbaum) treats observed action as approximately rational given latent beliefs and goals; ToMnet (Rabinowitz et al., 2018) meta-learns agent models from behavioural traces; recursive reasoning appears in multi-agent RL as I-POMDPs and cognitive hierarchy models.
   - **Language models**: large models pass many classic false-belief vignettes, but performance degrades under adversarial rewording, prompting active debate over whether this constitutes robust ToM or pattern matching; benchmarks include ToMi, BigToM, FANToM, and OpenToM.
+  - **ToMBench (Chen et al., ACL 2024)**: a systematic, build-from-scratch bilingual benchmark of 2,860 items across 8 tasks and 31 ATOMS social-cognition abilities finds that even GPT-4 trails human performance by more than 10 points on average, though it surpasses humans on 9 of the 31 specific abilities.
+  - **Kosinski (2023)** reported ChatGPT-4 solving ~75% of false-belief tasks (comparable to a six-year-old), but true-belief controls and adversarial rewording collapse accuracy, underlining fragility.
+  - **2025 benchmarks broaden scope**: ToMATO (AAAI 2025) evaluates first- and second-order ToM across beliefs, intentions, desires, emotions and knowledge; XToM/Multi-ToM add multilingual coverage and MuMA-ToM adds multimodal reasoning — all showing GPT-4o-class models still lag humans, especially on false beliefs.
   - **Applications**: assistive and service robots, dialogue systems tracking interlocutor knowledge state, pedagogical agents modelling learner misconceptions, and negotiation or teaming agents anticipating human partners.
   - **Safety relevance**: ToM cuts both ways — agents that model human beliefs can cooperate and communicate better, but the same capability underlies deception; alignment research therefore treats machine ToM as both a tool and a monitored risk.
+
+  **Sources**:
+  - https://aclanthology.org/2024.acl-long.847.pdf
+  - https://arxiv.org/html/2402.15052v1
+  - https://openreview.net/pdf?id=pzS8MJkf06
+  - https://aclanthology.org/2025.acl-long.1522.pdf
 
 - ### Provenance
   - sources::

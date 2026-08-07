@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -128,3 +128,13 @@ public:: true
   - **Plugin and dynamic loading**: shared libraries or JVM/CLR assemblies loaded into the host process — in-process communication across independently compiled artefacts, with versioning as the principal hazard.
 
   The architectural decision rule follows from the cost model: keep chatty, consistency-critical interactions in-process, and reserve process or network boundaries for components that genuinely need independent scaling, deployment cadence, or fault isolation.
+
+  ## Current Landscape
+
+  The industry pendulum has swung markedly back towards in-process architectures. The CNCF's 2025 annual survey found that 42% of organisations that adopted microservices are consolidating services back into larger deployable units, with the "modular monolith" — strict module boundaries crossed in-process rather than over the network — emerging as the pragmatic middle ground. The canonical reference case remains Amazon Prime Video's Video Quality Analysis team, which in March 2023 consolidated a Step Functions/Lambda-based distributed pipeline into a single-process service, cutting infrastructure costs by roughly 90% by replacing S3-mediated data transfer with in-memory buffers. Cost analyses published through 2025 put the "microservices tax" at roughly 3.75–6x the infrastructure cost of an equivalent monolith, and service-mesh adoption fell from 18% (Q3 2023) to 8% (Q3 2025) in CNCF tracking — evidence that teams are re-pricing the trade between in-process calls and network boundaries. Current guidance converges on team-size thresholds: below roughly ten developers a monolith wins outright, the 10–50 range favours modular monoliths, and only genuinely independent teams and scaling domains justify converting in-process boundaries into network ones.
+
+  **Sources**:
+  - https://byteiota.com/microservices-vs-monolith-42-return-to-modular-monoliths/
+  - https://www.softwareseni.com/the-great-microservices-consolidation-what-the-cncf-2025-survey-reveals-about-industry-trends/
+  - https://refactix.com/software-architecture-design/microservices-to-modular-monolith-migration-guide
+  - https://debugg.ai/resources/modular-monolith-vs-microservices-2025-consolidation-and-tooling-playbook

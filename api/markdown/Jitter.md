@@ -45,11 +45,11 @@ public:: true
       {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -80,3 +80,16 @@ public:: true
   ## Technical Details
 
   The same concept, at nanosecond scale, governs digital electronics: clock jitter is the deviation of clock edges from ideal instants, decomposed into random jitter (Gaussian, thermal in origin, quoted as RMS) and deterministic jitter (bounded — periodic coupling, inter-symbol interference, duty-cycle distortion), combined in eye-diagram and bathtub-curve analysis to predict bit-error rates in serial links such as PCIe and SerDes; phase noise is its frequency-domain expression. In sampling systems, aperture jitter limits the achievable SNR of ADCs (SNR ≤ −20·log₁₀(2π·f·σⱼ)), and in synchronisation hierarchies (SyncE, PTP) jitter and wander budgets are allocated per ITU-T G.810x recommendations. Across all these domains the invariant holds: average timing tells you throughput and responsiveness; timing *variation* tells you whether real-time behaviour is possible at all.
+
+  ## Current Landscape
+
+  - The foundational IETF definitions remain stable: **RFC 3393** (November 2002) defines the IP Packet Delay Variation (Type-P-One-way-ipdv) metric, and **RFC 5481** (March 2009) is the applicability statement distinguishing Inter-Packet Delay Variation (IPDV, relative to the previous packet, as used by RTP) from Packet Delay Variation (PDV, relative to the minimum-delay packet, always non-negative). RFC 3393 deliberately avoids the ambiguous word "jitter".
+  - **RTP/RTCP interarrival jitter** is still computed with the smoothed mean-deviation estimator of **RFC 3550** §6.4.1, `J(i) = J(i-1) + (|D(i-1,i)| - J(i-1))/16`, which is what appears in RTCP receiver reports and VoIP/video monitoring dashboards.
+  - The dominant jitter source on consumer links — bufferbloat — is attacked by modern active-queue-management schemes (fq_codel, CAKE), while **Time-Sensitive Networking** (IEEE 802.1 TSN) and 5G fronthaul provide bounded-by-design delay variation where statistical smoothing is insufficient (motion control, audio-video bridging).
+  - ITU-T Y.1540 continues to standardise the PDV parameter for IP transfer performance, keeping IETF and ITU-T terminology aligned.
+
+  **Sources**:
+  - https://www.rfc-editor.org/info/rfc3393/
+  - https://www.rfc-editor.org/info/rfc5481/
+  - https://www.ietf.org/rfc/rfc3550.txt
+  - https://en.wikipedia.org/wiki/Packet_delay_variation

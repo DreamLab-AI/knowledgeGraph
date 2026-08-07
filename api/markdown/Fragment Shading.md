@@ -87,11 +87,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -124,6 +124,17 @@ public:: true
   - **Interaction with fixed-function stages**: early depth/stencil testing can reject fragments before shading (early-Z), a major optimisation defeated when the shader writes depth or uses discard; after shading, fixed-function blending, depth test, and write-out complete the per-sample merge.
   - **Performance characteristics**: cost scales with resolution, overdraw, and shader complexity rather than triangle count. Standard optimisations include depth pre-passes and front-to-back sorting to maximise early-Z rejection, moving work per-vertex where quality permits, variable-rate shading, and — on tile-based mobile GPUs — keeping intermediate results on-chip to save bandwidth.
   - **Architectural alternatives**: deferred shading decouples visibility from shading by writing geometric attributes to a G-buffer and shading once per visible pixel; compute-based and mesh-shading pipelines vary the geometry side, but per-pixel appearance in rasterised rendering remains the fragment shader's job.
+
+  ## Current Landscape
+
+  - **WebGPU brings fragment shading to the web**: the W3C WebGPU and WGSL specifications reached Candidate Recommendation on the Recommendation track (WGSL Candidate Recommendation Draft, June 2025; both specs actively maintained into 2026). WGSL defines exactly three programmable stages — vertex, fragment, and compute — with `@fragment` entry points that sample textures and output to `@location(n)` colour attachments.
+  - **Per-sample vs per-pixel**: the WebGPU spec formalises that fragment shaders may run once per pixel and broadcast to samples, but *must* run once per sample when `sample_index` or `sample` interpolation contributes to output — the standard multisampling/supersampling trade-off, now precisely specified for the web.
+  - **Integer interpolation rule**: WGSL requires user-defined fragment inputs of integer type to use `flat` interpolation, a portability constraint fixing a long-standing source of cross-GPU shader bugs.
+  - **Bandwidth-driven optimisation persists**: variable-rate shading, tile-based on-chip accumulation on mobile GPUs, early-Z and depth pre-passes remain the dominant levers, since fragment cost still scales with resolution and overdraw rather than triangle count.
+
+  **Sources**:
+  - https://www.w3.org/TR/WGSL/
+  - https://www.w3.org/TR/webgpu/
 
 - ### Provenance
   - sources::

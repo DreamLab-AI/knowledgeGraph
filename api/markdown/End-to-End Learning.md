@@ -50,11 +50,11 @@ public:: true
       {"@id": "urn:ngm:class:monolithic-ai", "label": "Monolithic AI"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -83,7 +83,12 @@ public:: true
 
   ## Current Landscape
 
-  - **Autonomous driving**: the field's live controversy. Tesla's FSD v12 onwards and research systems such as UniAD (CVPR 2023 best paper) pursue end-to-end driving stacks, while Waymo and most certification frameworks retain modular decomposition for verifiability; intermediate designs train modules jointly but keep inspectable interfaces.
+  - **Autonomous driving**: the field's live controversy, and the paradigm has hardened into product. Tesla's FSD transitioned to a true single-network end-to-end stack at v12 — replacing "thousands of lines of rule-based C++" with one neural net — and extended it in v13 (higher-resolution video, ~36 Hz temporal sampling) and v14 (multi-second temporal reasoning, audio awareness, a possible mixture-of-models), the model used in the 2025 Austin robotaxi trials.
+  - **Convergence toward hybrids**: a 2026 survey ("The Era of End-to-End Autonomy") frames "supervised E2E driving" (FSD Supervised / L2++) as the emerging category several manufacturers plan to ship from 2026. Waymo's December 2025 **Waymo Foundation Model** is explicitly neither pure end-to-end nor modular: it supports full end-to-end backpropagation while materialising structured representations (objects, roadgraph) for inference-time safety validation, exactly the "interpretable bottleneck" middle ground.
   - **Foundation models**: large language and multimodal models are end-to-end learning at maximal scale, with [[Representation Learning]] emerging implicitly from a single objective; instruction tuning and RLHF extend the differentiable path through behavioural alignment.
   - **Robotics**: end-to-end visuomotor policies (RT-2, diffusion policies, ALOHA-style imitation) map camera input to actuation, challenging the classical sense–plan–act decomposition catalogued in robotics core concepts.
   - **Engineering practice**: data curation has replaced feature design as the main human lever — the effort formerly spent on features now goes into datasets, augmentation, and evaluation harnesses, alongside auxiliary losses and probing to recover some of the lost inspectability.
+
+  **Sources**:
+  - https://arxiv.org/html/2603.16050
+  - https://waymo.com/blog/2025/12/demonstrably-safe-ai-for-autonomous-driving/

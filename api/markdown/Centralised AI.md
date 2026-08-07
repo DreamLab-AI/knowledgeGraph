@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -111,7 +111,15 @@ public:: true
 
   The tension between centralised and distributed AI is now a live architectural and policy question rather than a settled outcome. On-device model deployments from major platform vendors, increasingly capable open-weight models, and training methods tolerant of slow interconnects (exemplified by DiLoCo-style distributed optimisation) are eroding the assumption that capability must live in a single data centre. At the same time, frontier capability continues to concentrate: the largest training runs, the deepest safety teams, and the majority of paid inference all sit with a handful of centralised providers.
 
-  Most realistic systems are hybrids — routing between a large centralised model and small local ones, or coordinating fleets of edge agents against a central orchestrator — so the class is best understood as one pole of a spectrum along which real deployments position themselves according to their latency, privacy, cost, and governance requirements.
+  - **Distributed training has crossed from theory to practice**: Prime Intellect's INTELLECT-1 (late 2024) trained a 10-billion-parameter model across five countries and three continents on up to 112 H100 GPUs, using DiLoCo plus an int8 all-reduce to cut communication bandwidth roughly 400-fold versus standard data-parallel training.
+  - **Decentralised RL and larger runs (2025)**: INTELLECT-2 (32B) was trained by globally decentralised, permissionless reinforcement learning on heterogeneous contributed compute, and Nous Research's Consilience began pretraining a 40B model on ~20 trillion tokens over its Psyche network — evidence the ceiling on distributed scale keeps rising.
+  - **Method lineage**: These build on DeepMind's DiLoCo and Prime Intellect's OpenDiLoCo (2024), whose inner/outer optimisation synchronises pseudo-gradients only every few hundred steps, making training viable over slow or intermittent interconnects.
+  - **Centralisation still dominant**: Despite this, the largest frontier runs, deepest safety teams, and most paid inference remain with a handful of centralised providers, and most production systems are hybrids — routing between a large centralised model and small local ones, or coordinating edge agents against a central orchestrator.
+
+  **Sources**:
+  - https://arxiv.org/html/2412.01152v1
+  - https://www.primeintellect.ai/blog/intellect-2
+  - https://www.galaxy.com/insights/research/decentralized-ai-training
 
 - ### Provenance
   - sources::

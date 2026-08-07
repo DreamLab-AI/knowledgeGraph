@@ -81,11 +81,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -114,7 +114,19 @@ public:: true
 
   ## Current Landscape
 
-  Datasheets became one of the most influential proposals in responsible AI, with tens of thousands of citations and direct descendants including Data Statements for NLP (Bender and Friedman), Data Nutrition Labels, Dataset Cards on Hugging Face (whose template explicitly incorporates datasheet questions), and Croissant, a machine-readable metadata vocabulary adopted by major dataset repositories. Conferences such as NeurIPS require dataset documentation in their datasets-and-benchmarks track, and the practice is embedded in corporate [[Data Governance]] pipelines at Google, Microsoft, and IBM in the form of internal data cards. Regulation is reinforcing the trend: the EU AI Act requires providers of high-risk systems to document training, validation, and testing data governance, and general-purpose model providers to publish summaries of training content — obligations for which datasheets are a natural compliance vehicle. Persistent challenges include documentation debt for web-scale crawled corpora, where answering composition and consent questions honestly is genuinely hard, incentives that reward dataset release speed over documentation quality, and keeping datasheets current as datasets are filtered, augmented, and merged downstream.
+  Datasheets became one of the most influential proposals in responsible AI, with tens of thousands of citations and direct descendants including Data Statements for NLP (Bender and Friedman), Data Nutrition Labels, Dataset Cards on Hugging Face (whose template explicitly incorporates datasheet questions), and Croissant, a machine-readable metadata vocabulary adopted by major dataset repositories. Conferences such as NeurIPS require dataset documentation in their datasets-and-benchmarks track, and the practice is embedded in corporate [[Data Governance]] pipelines at Google, Microsoft, and IBM in the form of internal data cards. Persistent challenges include documentation debt for web-scale crawled corpora, where answering composition and consent questions honestly is genuinely hard, incentives that reward dataset release speed over documentation quality, and keeping datasheets current as datasets are filtered, augmented, and merged downstream.
+
+  Regulation has turned the practice from a norm into an obligation:
+
+  - **Datasheets named in EU law**: Annex IV(2)(d) of the EU AI Act explicitly refers to datasheets for training datasets as part of the technical documentation required for high-risk AI systems, alongside data-governance documentation duties under Articles 10, 11, and 13
+  - **Mandatory training-content summaries**: on 24 July 2025 the Commission's AI Office published the compulsory template under Article 53(1)(d) for general-purpose AI providers to summarise training content (data sources, scraped domains, licensing, synthetic data); the obligation applies from 2 August 2025, models already on the market must comply by 2 August 2027, and AI Office enforcement powers (fines up to 3% of worldwide turnover or €15 million) apply from 2 August 2026
+  - **Machine-readable convergence**: the MLCommons Croissant format (JSON-LD on schema.org/Dataset) operationalises datasheet content for pipelines — auto-generated for Hugging Face Hub datasets convertible to Parquet and supported by Kaggle, OpenML, and Google Dataset Search; guidance increasingly recommends shipping a human-readable datasheet alongside a Croissant descriptor and a PROV-O lineage record
+
+  **Sources**:
+  - https://digital-strategy.ec.europa.eu/en/news/commission-presents-template-general-purpose-ai-model-providers-summarise-data-used-train-their
+  - https://practical-ai-act.eu/latest/engineering-practice/data-governance/documentation/
+  - https://mlcommons.org/working-groups/data/croissant/
+  - https://huggingface.co/docs/hub/en/datasets-cards
 
 - ### Provenance
   - sources::

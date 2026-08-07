@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -110,6 +110,15 @@ public:: true
   - **Applications**: precision agriculture and crop forecasting, deforestation and methane monitoring, insurance and disaster assessment (floods, wildfires), maritime domain awareness, urban growth mapping, and humanitarian response — with imagery-derived evidence increasingly used in climate policy and conflict documentation.
   - **UK context**: the UK hosts Airbus Defence and Space's optical imaging heritage in Stevenage, SAR pioneer SSTL in Guildford, and analytics firms clustered around the Harwell space campus and the Satellite Applications Catapult.
   - **Standards and formats**: cloud-optimised GeoTIFF (COG) and the SpatioTemporal Asset Catalog (STAC) specification have become the de facto interfaces for discovering and streaming imagery at scale.
+  - **Geospatial foundation models (2024-2026)**: NASA and IBM open-sourced Prithvi-EO-2.0 (a vision transformer with 3D spatiotemporal embeddings pre-trained on 7+ years of Harmonized Landsat-Sentinel data, ~4.2M samples, released under Apache 2.0 on Hugging Face); a unified Copernicus-FM foundation model trained on 18.7M aligned Sentinel images was presented at ICCV 2025.
+  - **Generative AI reasoning layer (2025)**: Google introduced remote-sensing foundation models and a "Geospatial Reasoning" research effort pairing them with Gemini, with Airbus, Maxar and Planet Labs among inaugural trusted testers.
+  - **Benchmarks maturing**: Landsat-Bench (2025) established standardised evaluation for Landsat-pretrained models, showing self-supervised geospatial pretraining beats ImageNet transfer by roughly +4% overall accuracy on land-cover tasks.
+
+  **Sources**:
+  - https://research.ibm.com/publications/prithvi-eo-an-open-access-geospatial-foundation-model-advancing-earth-science-through-global-collaboration
+  - https://research.google/blog/geospatial-reasoning-unlocking-insights-with-generative-ai-and-multiple-foundation-models/
+  - https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Towards_a_Unified_Copernicus_Foundation_Model_for_Earth_Vision_ICCV_2025_paper.pdf
+  - https://arxiv.org/html/2506.08780v1
 
 - ### Provenance
   - sources::

@@ -57,11 +57,11 @@ public:: true
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -96,3 +96,16 @@ public:: true
   - **Experiment tracking**: MLflow, Weights & Biases, and Neptune record parameters, metrics, and artefacts per run, keyed to dataset and code versions (DVC, lakeFS, git).
   - **Optimisation loop**: SGD-family optimisers (Adam, AdamW) with learning-rate schedules, early stopping, and checkpoint/EMA management; distributed variants use data, tensor, or pipeline parallelism (DDP, FSDP, DeepSpeed).
   - **Quality gates**: minimum-metric thresholds, regression tests against the incumbent model, fairness and robustness checks before a candidate is promoted to deployment.
+
+  ## Current Landscape
+
+  Through 2025 the training pipeline absorbed the demands of foundation models, spawning LLMOps/FMOps as distinct sub-disciplines:
+
+  - **Registries and eval frameworks scaled up**: model registries were extended to handle 100GB+ foundation-model artefacts, and prompt versioning plus evaluation frameworks (Promptfoo, LangSmith) became standard pipeline stages (IEEE Software, 2025; December 2025 industry surveys).
+  - **Fine-tuning became a core capability**: LoRA and QLoRA fine-tuning pipelines are now first-class MLOps components for customising enterprise LLMs at a fraction of full-training cost.
+  - **Evaluation-driven development**: LLM-as-judge and human-preference scoring are increasingly replacing traditional accuracy metrics in the validation/quality-gate stage.
+  - **Distributed training standardised**: data, tensor, and pipeline parallelism (DDP, FSDP, DeepSpeed) with GPU-aware DAG orchestration (Airflow, Kubeflow Pipelines, Prefect) and task-level caching now run continuous training (CT) at scale — production references cite hundreds of automated model updates per day.
+
+  **Sources**:
+  - https://www.computer.org/csdl/magazine/so/2025/01/10779344/22qTcrs9hpm
+  - https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning

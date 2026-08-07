@@ -42,11 +42,11 @@ public:: true
       {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -76,7 +76,19 @@ public:: true
 
   ## Current Landscape
 
-  Handling uncertainty well has become a differentiator in applied machine learning. Bayesian neural networks, deep ensembles, and conformal prediction attach calibrated confidence to model outputs, which regulators increasingly expect in safety-critical domains such as medical diagnosis and autonomous driving. In robotics, the entire estimation stack — Kalman and particle filters, factor-graph SLAM — is built on explicit uncertainty representation, and planners consume covariance estimates to trade speed against safety margins. Large language models have sharpened the problem again: distinguishing confident knowledge from plausible fabrication is fundamentally a question of epistemic uncertainty estimation, and remains an open research frontier.
+  Handling uncertainty well has become a differentiator in applied machine learning. Bayesian neural networks, deep ensembles, and conformal prediction attach calibrated confidence to model outputs, which regulators increasingly expect in safety-critical domains such as medical diagnosis and autonomous driving. In robotics, the entire estimation stack — Kalman and particle filters, factor-graph SLAM — is built on explicit uncertainty representation, and planners consume covariance estimates to trade speed against safety margins.
+
+  Recent developments (2024-2025):
+
+  - The standard aleatoric/epistemic split holds across current work: aleatoric uncertainty is the irreducible randomness of the data-generating process, epistemic uncertainty is reducible ignorance about the model or parameters that shrinks with more data or a better model (Sale, Javanmardi & Hüllermeier, COPA/PMLR 266, 2025).
+  - **Conformal prediction** (Vovk et al., 2005) has become the fast-growing distribution-free framework for uncertainty quantification: it wraps any predictor to output prediction sets that contain the true label with a user-specified probability, assuming only exchangeability, and is now a leading tool for calibrated confidence in NLP and vision (TACL survey, 2024).
+  - LLM reliability has re-sharpened the problem: hallucinations correlate strongly with model uncertainty, and 2024-2025 methods estimate epistemic uncertainty (semantic entropy, information-theoretic metrics) and apply conformal risk control to derive abstention rules that bound hallucination risk (arXiv survey 2412.05563; Yadkori et al., 2024).
+  - Uncertainty-aware conformal prediction, which folds explicit aleatoric/epistemic estimates into the calibration pipeline, is an active 2025 research direction for tightening prediction sets.
+
+  **Sources**:
+  - https://proceedings.mlr.press/v266/sale25a.html
+  - https://arxiv.org/html/2412.05563v2
+  - https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00715/125278/Conformal-Prediction-for-Natural-Language
 
 - ### Provenance
   - sources::

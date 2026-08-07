@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -106,6 +106,15 @@ public:: true
   Behaviourism's legacy remains substantial. Applied behaviour analysis is a mainstream clinical discipline; exposure therapies and contingency management descend directly from conditioning research; and behavioural experimentation standards (operational definition, single-subject designs, cumulative records) shaped experimental method well beyond the school itself.
 
   In artificial intelligence the inheritance is explicit: reinforcement learning formalises the law of effect — an agent's policy is shaped by reward signals — and temporal-difference learning turned out to model dopamine-based reward-prediction error in the brain, closing a loop between Skinnerian theory and neuroscience. Contemporary debates about whether large models "understand" or merely exhibit competent behaviour replay the behaviourist–cognitivist argument in modern dress: benchmark-based evaluation is methodologically behaviourist, whilst interpretability research insists, with the cognitivists, that internal structure matters.
+
+  - **The dopamine–RL bridge is being refined (2025)**: The classic reward-prediction-error account of phasic dopamine — the neuroscientific vindication of Sutton and Barto's temporal-difference learning — is now argued by reviews such as Gershman and colleagues (2025) to be "too simple", with dual-channel proposals (phasic dopamine encoding RPE, tonic dopamine encoding average reward) and roles beyond learning in action selection, motivation and vigour.
+  - **The behaviourist–cognitivist split reappears in LLM evaluation**: RL-from-verifiable-rewards work in 2025 found that models can post strong benchmark gains even under spurious or random reward signals, sharpening the worry that purely behavioural (output-based) evaluation can mistake heuristic pattern-matching for genuine reasoning — the modern echo of Chomsky's critique of Skinner.
+  - **Applied behaviour analysis** remains a mainstream clinical discipline, and its single-subject designs and operational definitions still underpin behavioural experimental method.
+
+  **Sources**:
+  - http://datta.hms.harvard.edu/wp-content/uploads/2025/08/Gershman-et-al.pdf
+  - https://gershmanlab.com/pubs/MassetGershman25.pdf
+  - https://openreview.net/pdf?id=TDfrN1TbGH
 
 - ### Provenance
   - sources::

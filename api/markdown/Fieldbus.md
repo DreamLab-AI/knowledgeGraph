@@ -51,11 +51,11 @@ public:: true
       {"@id": "urn:ngm:class:scada", "label": "SCADA"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -86,3 +86,16 @@ public:: true
   ## Current Landscape
 
   Fieldbus is now the legacy tier in a transition it started. [[Industrial Ethernet]] variants (PROFINET, EtherNet/IP, EtherCAT) overtook classic fieldbus in new node shipments around 2018, offering higher bandwidth, larger address spaces, and IT/OT convergence, with [[Time-Sensitive Networking]] standardising the determinism that fieldbuses provided by construction. Yet the installed base is vast and long-lived: process plants run on 15–30 year lifecycles, PROFIBUS PA and FOUNDATION Fieldbus segments remain in active service, and Modbus refuses to die at the edges of almost every industry. Migration paths — Ethernet-APL (two-wire, hazardous-area Ethernet for process instruments), proxy gateways mapping PROFIBUS into PROFINET, and OPC UA aggregation — are designed to absorb fieldbus installations gradually rather than replace them wholesale, so the technology will remain operationally relevant well into the 2030s.
+
+  Recent market data confirm the accelerating decline in new installations:
+
+  - **HMS Networks' 2026 industrial network market report** (June 2026) puts fieldbus at **14% of newly installed nodes**, down from 17% in 2025 and 22% in 2024, while Industrial Ethernet reached 79% (from 34% when HMS began the series in 2015); wireless holds ~7%.
+  - Within the fieldbus remainder: PROFIBUS is still the largest at 4% (down from 5%), Modbus RTU holds steady at 3% as the universal low-cost serial protocol, and CC-Link, DeviceNet, and CAN/CANopen each sit in the 1–2% band.
+  - PROFIBUS & PROFINET International's own figures show PROFIBUS new-node installations falling from 1.1 million (2024) to 1.0 million (2025), a 9% year-on-year decline.
+  - On the Ethernet side, PROFINET leads at 30%, EtherNet/IP 25%, EtherCAT 20% of new nodes (2026 report); **Ethernet-APL and Single Pair Ethernet are gaining clear momentum** for process and sensor-level connectivity — e.g. ABB and China's ITEI opened a Beijing laboratory in April 2025 to standardise Ethernet-APL + PROFINET for Chinese process industries.
+  - HMS forecasts ~7.7% average annual growth in newly installed nodes over the next five years, much of it from migration of the remaining fieldbus installed base.
+
+  **Sources**:
+  - https://industrialethernet.net/news/tech-updates/2026-industrial-network-market-shares-annual-report-by-hms-networks/
+  - https://www.hms-networks.com/network-report
+  - https://www.precedenceresearch.com/industrial-ethernet-market

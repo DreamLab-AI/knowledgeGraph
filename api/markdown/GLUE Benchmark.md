@@ -81,11 +81,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -119,3 +119,10 @@ public:: true
   - **Saturation and legacy**: with frontier models scoring above human baselines, GLUE ceased to discriminate at the top and now serves mainly as a sanity check for small or efficient encoder models, where it remains routine (e.g. evaluating distilled and quantised BERT variants).
   - **Known flaws**: WNLI's pathological split (most submissions score below majority-class), annotation artefacts in NLI data that permit hypothesis-only shortcuts, and single-metric aggregation masking task-level regressions — all well-documented lessons that shaped later benchmark design.
   - **Successors**: SuperGLUE, MMLU, BIG-bench, HELM, and instruction-following/agentic evaluations now carry the discriminative burden for large language models, but GLUE's template — multi-task suite, public leaderboard, human baseline, diagnostic set — remains the canonical pattern for NLP [[Benchmarking]].
+  - **Dated timeline**: the strongest baseline in the 2018 release scored 70.0; BERT-Large reached 80.5 (Oct 2018); XLNet was first to pass the 87.1 human baseline with 88.4 (Jun 2019), less than 14 months after launch; the current top GLUE leaderboard entry is Microsoft's Turing ULR v6 at 91.3. As of 2026 GLUE and SuperGLUE are considered effectively solved and function as training-time sanity checks rather than frontier leaderboards.
+  - **SuperGLUE**: introduced May 2019 (NeurIPS 2019) with a higher human baseline of 89.8; that baseline was crossed by 2021 (T5-11B, DeBERTa, ST-MoE, ERNIE 3.0), and the official leaderboard has seen no meaningful new submissions since late 2022.
+
+  **Sources**:
+  - https://gluebenchmark.com/leaderboard
+  - https://super.gluebenchmark.com/
+  - https://aiwiki.ai/wiki/glue_benchmark

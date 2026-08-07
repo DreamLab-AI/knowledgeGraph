@@ -43,11 +43,11 @@ public:: true
       {"@id": "urn:ngm:class:inflation", "label": "Inflation"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -77,3 +77,15 @@ public:: true
   ## Technical Details
 
   Measurement proceeds by three routes that should agree: the income approach (summing factor incomes from tax and survey data), the production approach (value added by industry), and the expenditure approach (consumption, investment, government spending, net exports). Real national income is obtained by deflating nominal figures with an appropriate price index, since [[Inflation]] otherwise overstates growth in the income aggregate. Known limitations mirror those of GDP: household and informal production are undercounted, environmental depletion is not netted off (motivating adjusted measures such as green NNI and the UN's inclusive wealth accounts), and distribution is invisible in the aggregate — prompting the distributional national accounts programme, which allocates national income across the household distribution to link macro totals with inequality statistics.
+
+  ## Current Landscape
+
+  - The UN Statistical Commission adopted the **2025 SNA** at its 56th session in March 2025 as the new international standard for national accounts, superseding the 2008 SNA; the formally edited publication follows in 2026, and countries are targeted to implement it within a 2029–2030 window.
+  - The 2025 SNA was endorsed alongside the **seventh edition of the Balance of Payments Manual (BPM7)**, keeping national accounts and external-sector statistics fully aligned worldwide.
+  - The revision gives greater prominence to **net income measures**: the volume change of net domestic product is identified as the conceptually preferred measure of economic growth, used alongside (not replacing) GDP — directly relevant to the gross-versus-net distinctions in the national income family.
+  - Distributional national accounts move into the core framework, with new standard breakdowns of disposable income, final consumption, saving, and wealth by income and wealth decile, plus new guidance on crypto-assets, non-fungible tokens, and multinationals' global production arrangements.
+
+  **Sources**:
+  - https://unstats.un.org/unsd/nationalaccount/sna2025.asp
+  - https://ec.europa.eu/eurostat/web/products-eurostat-news/w/cn-20250409-1
+  - https://unstats.un.org/UNSDWebsite/statcom/session_56/documents/2025-2-NationalAccounts-E.pdf

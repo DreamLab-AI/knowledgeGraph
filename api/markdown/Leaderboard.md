@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -106,3 +106,13 @@ public:: true
   ## Current Landscape
 
   In the LLM era leaderboards have multiplied and diversified. Static-benchmark boards (Hugging Face Open LLM Leaderboard, HELM) aggregate suites such as MMLU, GSM8K and BIG-bench; preference-based boards, most prominently LMSYS Chatbot Arena, rank models by Elo ratings computed from millions of blind pairwise human votes, sidestepping test-set contamination at the price of popularity effects and prompt-distribution bias. Domain boards cover code (SWE-bench, LiveCodeBench), agents, safety and multilingual ability. The current frontier concerns trust: contamination detection, private held-out evaluations, statistical significance of rank differences, and disclosure standards — a recognition that leaderboards now shape procurement and investment decisions, not merely academic bragging rights.
+
+  Recent specifics:
+
+  - **Chatbot Arena is now "LMArena"**: the crowdsourced platform run by the Large Model Systems Organization was rebranded to LMArena and, by 2026, aggregates on the order of 6M+ blind pairwise user votes to compute Elo / Bradley–Terry ratings.
+  - **Composite indices**: contemporary boards pair the human-vote Arena score with aggregate benchmark indices (e.g. the Artificial Analysis Intelligence Index combining ~10 hard evaluations) and separate coding, vision and reasoning sub-leaderboards, encouraging triangulation rather than single-number ranking.
+  - **Statistical rigour**: leading boards now publish 95% confidence intervals, so top models frequently fall within a statistical tie — reinforcing the mature practice of reading rank position as one signal within broader [[Model Evaluation]].
+  - **Triangulation norm**: practitioners routinely cross-check Arena position against held-out coding benchmarks (SWE-bench Verified), MMLU-Pro and MATH to guard against contamination and popularity bias.
+
+  **Sources**:
+  - https://openlm.ai/chatbot-arena/

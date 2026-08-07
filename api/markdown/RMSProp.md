@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -129,3 +129,17 @@ public:: true
   - vs **AdaGrad**: moving average instead of cumulative sum — no vanishing step size on non-convex problems.
   - vs **[[Adam Optimiser]]**: Adam ≈ RMSProp + momentum + bias correction; Adam's bias correction matters early in training, and its momentum term usually speeds convergence, which is why Adam superseded it as the default.
   - vs plain **[[Stochastic Gradient Descent]]**: RMSProp needs far less learning-rate tuning across layers, at the cost of per-parameter state memory and, on some vision benchmarks, slightly worse final generalisation than well-tuned SGD with momentum.
+
+  ## Current Landscape
+
+  Although RMSProp dates to Hinton's 2012 lectures and was never formally published, its theoretical footing has firmed up considerably in recent years, closing a long-standing gap between practice and proof.
+
+  - **Convergence guarantees (2019–2025)**: RMSProp's convergence for smooth *non-convex* objectives is now established. Results include an O(log T / √T)-style rate for stochastic RMSProp (De et al.), and a 2022 analysis (published PMC 2024) proving convergence at rate O(log T / T) using time-varying decay βₜ = (1 − 1/t)ᵖ without extra assumptions.
+  - **Sharper rates (2025)**: a JMLR 2025 paper establishes an O(√d / T^{1/4}) rate (measured in ℓ₁ norm) for classical RMSProp and its momentum extension *without* the bounded-gradient assumption, matching state-of-the-art AdaGrad-style analyses.
+  - **Practical status**: Adam (≈ RMSProp + first-moment momentum + bias correction) remains the general-purpose default; RMSProp persists in reinforcement-learning codebases and legacy Keras/TensorFlow configurations, and as the cleanest pedagogical instance of second-moment gradient scaling.
+  - **Framework parity**: current PyTorch (`torch.optim.RMSprop`) and Keras implementations retain the optional momentum and centred variants, so the algorithm remains a first-class, maintained optimiser rather than a deprecated one.
+
+  **Sources**:
+  - https://www.jmlr.org/papers/volume26/24-0523/24-0523.pdf
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC11655782/
+  - https://openreview.net/pdf/aea0ecd7eed57e6ae8bb1de2bb022c25a9edbf2d.pdf

@@ -49,11 +49,11 @@ public:: true
       {"@id": "urn:ngm:class:dao", "label": "DAO"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -83,4 +83,12 @@ public:: true
 
   ## Current Landscape
 
-  Empirical studies of major DAOs consistently find heavy concentration: in many protocols fewer than a dozen addresses can decide most votes, and average turnout of eligible voting power remains in single-digit percentages. This has pushed the ecosystem towards delegation programmes with compensated professional delegates, quorum tuning, and hybrid models where token-weighted signalling is checked by elected councils or security multisigs. Vote markets and governance attacks — accumulating cheap voting power to pass a self-serving proposal — remain the core threat model, making the measurement, snapshotting, and auditability of voting power a live engineering concern rather than a settled convention.
+  - **Concentration is empirically severe**: a 2025 study of DAO governance finds top-decile voters controlling 76.2% of realised voting power, the single largest voter holding 37.5%, and a per-proposal Gini coefficient for voting-power distribution of roughly 0.8 — with abnormal trading and insider activity clustering around proposals.
+  - **Delegation frequently misaligns with holders**: an October 2025 empirical study across 14 DAO forums (arXiv 2510.05830) links forum participants to on-chain addresses and shows that ranking-based delegate interfaces exacerbate power concentration and that delegations often diverge from token holders' expressed priorities.
+  - **Anti-plutocratic mechanisms face a formal limit**: recent work argues that no voting rule deriving power solely from wallet balance can escape plutocracy on a permissionless chain — under a rational Sybil attacker who splits tokens across wallets, even concave rules such as quadratic voting yield power that grows asymptotically linearly in holdings.
+  - **Scoping reviews (June 2025)** confirm delegated voting improves turnout but can deepen centralisation when whales or influential delegate networks dominate; quadratic voting, weighted-delegation constraints, and reputation-based governance are the leading correctives, each exposed to gaming, collusion, and implementation complexity.
+  - Vote markets and token-control governance attacks — accumulating cheap voting power to pass a self-serving proposal — remain the core threat model, keeping the measurement, snapshotting, and auditability of voting power a live engineering concern rather than a settled convention.
+
+  **Sources**:
+  - https://arxiv.org/html/2510.05830v2
+  - https://www.frontiersin.org/journals/blockchain/articles/10.3389/fbloc.2025.1598283/full

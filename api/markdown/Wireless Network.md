@@ -48,11 +48,11 @@ public:: true
       {"@id": "urn:ngm:class:satellite-communication", "label": "Satellite Communication"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -86,6 +86,20 @@ public:: true
   - **Key impairments**: path loss, multipath fading, shadowing, co-channel interference, and the hidden-terminal problem — countered with MIMO antennas, beamforming, adaptive modulation, and retransmission schemes.
   - **Contemporary direction**: Wi-Fi 7 (802.11be) brings multi-link operation and 4096-QAM; 5G-Advanced and early 6G research push into millimetre-wave and sub-terahertz bands; low-Earth-orbit constellations blur the line between cellular and satellite service. Unlicensed-band IoT protocols (LoRaWAN, Thread/Matter) continue to expand the low-power end of the spectrum.
 
+  ## Current Landscape
+
+  - **Wi-Fi 7 formally published**: IEEE published the 802.11be (Extremely High Throughput) amendment on 22 July 2025, completing the normative definition phase; the Wi-Fi Alliance had run certification from early 2024 on draft specs. Its headline features are Multi-Link Operation (aggregating 2.4/5/6 GHz), 320 MHz channels in 6 GHz, 4096-QAM, and enhanced OFDMA.
+  - **Adoption still early but accelerating**: global Speedtest data (Ookla, Q1 2026) shows Wi-Fi 7 at under 2% of samples worldwide, though US adoption reached ~7.2%, up roughly 300% year-on-year; Singapore leads globally at ~25% of users. AP shipments are projected to rise from 26.3m units (2024) to 66.5m (2025) and ~118m (2026).
+  - **6 GHz band going mainstream**: unlicensed 6 GHz usage in the US jumped 62% year-on-year to 13.8% of Wi-Fi samples by Q1 2026, though 5 GHz remains the global workhorse at ~60% of connections.
+  - **Wi-Fi 8 (802.11bn, Ultra High Reliability)** consolidated its first complete draft (D1.0) in 2025 with comment resolution under way; final publication is projected around 2028, with first chipsets already announced and prototype APs expected at MWC 2026.
+  - **6G**: 3GPP Release 19 reached functional freeze while Release 20 initiated 6G study items (ISAC, AI/ML-native design, FR3 7–24 GHz spectrum); normative 6G work is expected to begin in Release 21, targeting the IMT-2030 submission window.
+
+  **Sources**:
+  - https://ofinno.com/standards-readout/2025-retrospective-on-cellular-wi-fi-and-video-compression-standards-and-what-were-watching-in-2026/
+  - https://techblog.comsoc.org/2026/08/05/ookla-u-s-dominates-global-wifi-7-while-adoption-grew-300-by-q1-2026/
+  - https://www.advanced-television.com/2026/06/08/report-wi-fi-7-remains-nascent-in-most-markets/
+
 - ### Provenance
-  - sources::
+  - sources:: https://ofinno.com/standards-readout/2025-retrospective-on-cellular-wi-fi-and-video-compression-standards-and-what-were-watching-in-2026/
   - migration-date:: 2026-08-06T00:00:00Z
+  - research-augmented:: 2026-08-07T00:00:00Z

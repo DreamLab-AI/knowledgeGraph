@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -109,3 +109,18 @@ public:: true
   - **Auction protocols**: single-item, sequential, and combinatorial auctions; sequential single-item auctions offer a strong quality/tractability compromise with provable bounds for some objectives.
   - **Coalition formation**: tasks requiring multiple agents introduce coalition structure generation, closely linked to cooperative [[Game Theory]].
   - **Dynamic reallocation**: real systems must re-plan as tasks arrive, agents fail, or estimates prove wrong; techniques include task abandonment thresholds, work stealing, and periodic re-auctioning.
+
+  ## Current Landscape
+
+  Classical allocation theory is being re-instantiated inside LLM-agent orchestration:
+
+  - **Auction mechanisms for LLM agents**: Agora (arXiv 2607.09600, 2026) casts each reasoning step as a tradeable item in an incentive-compatible auction, with agents bidding on *calibrated* competence so critical logic routes to the ablest solver rather than the most overconfident one.
+  - **LLMs as orchestrators**: "Self-Resource Allocation in Multi-Agent LLM Systems" (arXiv 2504.02051, April 2025) benchmarks LLM allocators against the Hungarian-algorithm optimum, finding a *planner* beats a single *orchestrator* on concurrent actions and that LLMs need explicit worker-capability information to allocate well.
+  - **Learned central orchestration**: NeurIPS 2025's "Multi-Agent Collaboration via Evolving Orchestration" trains a centralised puppeteer policy by reinforcement learning to select which agents to activate per step, improving adaptability without retraining the agents.
+  - **Robotics auctions remain active**: a distributed multi-round auction (FMMRA, Frontiers in Physics, June 2025) weights task fitness by analytic-hierarchy-process attributes, preserving incentive compatibility and individual rationality for heterogeneous multi-robot teams.
+
+  **Sources**:
+  - https://arxiv.org/html/2607.09600
+  - https://arxiv.org/pdf/2504.02051
+  - https://proceedings.neurips.cc/paper_files/paper/2025/file/f1320d2e2842169c6fc89dcbd80e94d0-Paper-Conference.pdf
+  - https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2025.1617607/full

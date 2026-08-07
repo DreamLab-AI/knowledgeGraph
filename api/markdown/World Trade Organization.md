@@ -45,11 +45,11 @@ public:: true
       {"@id": "urn:ngm:class:oecd", "label": "OECD"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -79,4 +79,17 @@ public:: true
 
   ## Current Landscape
 
-  The organisation is in a prolonged stress test. The Doha Round of negotiations effectively collapsed, pushing rule-making towards plurilateral and regional agreements; and since December 2019 the Appellate Body has been paralysed by a US block on appointments, allowing losing parties to appeal "into the void". A subset of members operates the interim MPIA arbitration arrangement as a workaround. Meanwhile subsidy races, national-security tariffs, export controls, and industrial policy have moved much of trade politics outside WTO disciplines. The WTO nonetheless retains real function: the 2022 fisheries-subsidies agreement was its first new multilateral deal in years, the Trade Facilitation Agreement continues to cut border costs, the (periodically renewed) e-commerce moratorium keeps digital transmissions duty-free, and its monitoring and statistics remain the reference record of world trade policy. Reform debates centre on restoring binding appellate review, updating rules for subsidies and state enterprises, and recalibrating developing-country status.
+  The organisation is in a prolonged stress test. The Doha Round of negotiations effectively collapsed, pushing rule-making towards plurilateral and regional agreements; and since December 2019 the Appellate Body has been paralysed by a US block on appointments, allowing losing parties to appeal "into the void". A subset of members operates the interim MPIA arbitration arrangement as a workaround. Meanwhile subsidy races, national-security tariffs, export controls, and industrial policy have moved much of trade politics outside WTO disciplines. Reform debates centre on restoring binding appellate review, updating rules for subsidies and state enterprises, and recalibrating developing-country status.
+
+  ## Current Landscape
+
+  - **MC14 (Yaoundé, Cameroon) failed**: the 14th Ministerial Conference ended on 29 March 2026 with no final declaration and no agreement on the core reform package — the EU attributed the failure to geopolitical fragmentation and rising trade tensions. Modest decisions were adopted on integrating small economies and on SPS/TBT implementation, but substantive reform was deferred to a post-MC14 work plan with no timeline.
+  - **The e-commerce moratorium lapsed**: the multilateral moratorium on customs duties for electronic transmissions (in place since 1998) expired at MC14 without a universal replacement. As a partial workaround, 66 members covering ~70% of global trade adopted an interim declaration committing not to impose such duties, but major economies including India and the US did not sign.
+  - **Dispute settlement still broken**: the Appellate Body has now been non-functional for over six years. In February 2025 the US blocked, for the 84th time, a proposal (tabled by Colombia on behalf of 130 members) to start Appellate Body selection. Reform talks on appellate review had "all but ceased" by mid-2025 and were not expected to advance under the Trump administration.
+  - **MPIA is the working substitute**: the Multi-Party Interim Appeal Arbitration Arrangement continues to provide binding appellate-style review among its participants — its membership grew in 2025 as Paraguay, Malaysia, the United Kingdom, and Vietnam joined, and it now covers roughly 60% of world trade.
+  - The WTO retains real function through the Trade Facilitation Agreement, the 2022 Fisheries Subsidies Agreement, the Investment Facilitation for Development Agreement (nearly incorporated at MC14), and its monitoring and statistics — still the reference record of world trade policy. Its membership remains 166.
+
+  **Sources**:
+  - https://policy.trade.ec.europa.eu/news/outcome-14th-wto-ministerial-conference-2026-03-30_en
+  - https://www.bruegel.org/policy-brief/plan-revitalise-world-trade-organization
+  - https://taxscape.deloitte.com/article/wto-mc14--what-has-been-agreed-and-what-does-it-mean-for-businesses-.aspx

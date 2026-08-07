@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -130,5 +130,16 @@ public:: true
 
   **Operational profile**:
   - Scales from a few nodes to multi-petabyte and exabyte-class clusters (CERN runs Ceph at tens of petabytes for LHC computing)
-  - Release cadence of roughly one major version per year (recent lines include Quincy, Reef, and Squid)
+  - Release cadence of roughly one major version per year (recent lines include Reef, Squid, and Tentacle)
   - Deployed via cephadm containers or the Rook Kubernetes operator; contrasted in this graph with simpler single-protocol systems (MinIO for object, GlusterFS for file) that trade Ceph's generality for operational simplicity
+
+  ## Current Landscape
+
+  - **Tentacle is the current stable line**: Ceph v20.2.0 "Tentacle" — the 20th stable release — was published on 18 November 2025, with the v20.2.2 minor release following on 16 June 2026 (adding Rocky 10 support). Clusters must first upgrade to Reef (18.2.z) or Squid (19.2.z) before moving to Tentacle.
+  - **Squid remains widely deployed**: the 19th stable series (latest 19.2.4, initial release 26 September 2024) continues to receive backport releases such as v19.2.3, and is the recommended baseline for clusters not yet on Tentacle.
+  - **Governance**: Ceph remains an open-source project under the Ceph Foundation (a directed fund of the Linux Foundation), with IBM (via its Red Hat acquisition) as the principal commercial steward following IBM's absorption of the Red Hat storage portfolio.
+  - **Deployment defaults**: cephadm-based container orchestration fully automates rolling upgrades, and the Rook operator remains the standard route for running Ceph as Kubernetes-native persistent storage via CSI.
+
+  **Sources**:
+  - https://ceph.io/en/news/blog/2025/v20-2-0-tentacle-released/
+  - https://docs.ceph.com/en/latest/releases/

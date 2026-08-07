@@ -73,11 +73,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -107,7 +107,12 @@ public:: true
 
   ## Current Landscape
 
-  - **Implementation timelines**: FRTB go-live has staggered across jurisdictions through the mid-2020s — the EU via CRR3, the UK via the PRA's Basel 3.1 rules, and the US within the delayed "Basel endgame" package — with many banks opting for the standardised approach over internal models given the cost of desk-level approval.
+  - **Implementation timelines (updated)**: FRTB go-live has slipped repeatedly amid jurisdictional divergence. The UK PRA delayed the whole Basel 3.1 package to **1 January 2027** (announced 17 January 2025), and its final rules (PS1/26, January 2026) further deferred the FRTB internal-model approach (FRTB-IMA) to **1 January 2028**, with the trading-book boundary and standardised approaches live from 2027. The EU implemented most of CRR3 from 1 January 2025 but used a delegated act (June 2025) to push the FRTB application date to **1 January 2027**; the US "Basel endgame" timeline and content remain uncertain, the very divergence cited for the EU/UK delays.
+  - **Standardised over internal models**: given the cost of desk-level model approval and P&L attribution tests, many banks are opting for the standardised approach rather than the FRTB-IMA.
   - **Risk infrastructure**: intraday risk aggregation, full-revaluation Monte Carlo on GPU grids, and machine-learning approximations of pricing functions are standard modernisation themes; BCBS 239 governs the data-aggregation quality expected of the numbers.
   - **Interaction with other risks**: the 2023 US regional-bank failures were driven by unhedged interest-rate risk in the *banking* book (IRRBB), underlining that market-price sensitivity outside the trading book — and its interaction with liquidity risk — can be just as lethal as trading losses.
   - **Non-bank exposure**: margin spirals, LDI fund stress in the UK gilt market (2022), and crypto-asset volatility have extended market-risk supervision debates well beyond the regulated banking perimeter.
+
+  **Sources**:
+  - https://www.bankofengland.co.uk/prudential-regulation/publication/2026/january/implementation-of-the-basel-3-1-final-rules-policy-statement
+  - https://www.bankofengland.co.uk/prudential-regulation/publication/2025/july/basel-3-1-adjustments-to-the-market-risk-framework-consultation-paper

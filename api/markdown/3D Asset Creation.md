@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -113,6 +113,11 @@ public:: true
 
   ## Current Landscape
 
-  Demand is driven by real-time 3D's spread beyond entertainment into product configurators, architectural visualisation, industrial simulation, and virtual production. Asset interchange is consolidating around glTF for runtime delivery and OpenUSD for pipeline interchange, with the Alliance for OpenUSD (Pixar, Adobe, Apple, Autodesk, NVIDIA) formalising the standard. Marketplaces—Sketchfab, Fab, TurboSquid—and scan libraries such as Quixel Megascans have made high-quality stock assets a substitute for bespoke work in many productions.
+  Demand is driven by real-time 3D's spread beyond entertainment into product configurators, architectural visualisation, industrial simulation, and virtual production. Asset interchange is consolidating around glTF for runtime delivery and OpenUSD for pipeline interchange: the Alliance for OpenUSD (founded 2023 by Pixar, Adobe, Apple, Autodesk, and NVIDIA) ratified the OpenUSD Core Specification 1.0 in 2025, its first formal standard, and NVIDIA launched a cross-industry OpenUSD Development Certification the same year. The Khronos Group and AOUSD are jointly working on USD-glTF round-trip interoperability through the Metaverse Standards Forum. Marketplaces—Sketchfab, Fab, TurboSquid—and scan libraries such as Quixel Megascans have made high-quality stock assets a substitute for bespoke work in many productions.
 
-  The pressing questions are economic and legal rather than technical. AI-assisted generation compresses junior artist tasks, shifting studio demand towards art direction, optimisation, and technical art skills; meanwhile the provenance and licensing of training data for generative 3D models remains contested. On the technical frontier, the gap between offline and real-time quality continues to narrow as engines adopt virtualised geometry (Nanite-style micropolygon streaming) and neural compression, letting film-grade assets ship in interactive titles with far less manual optimisation.
+  Generative pipelines matured markedly through 2025: Tencent's Hunyuan3D Studio (September 2025) demonstrated an end-to-end system taking a single image or text prompt to a game-ready asset with automated retopology, semantic UV unwrapping, PBR texture synthesis, and auto-rigging, while commercial tools now export engine-ready GLB assets with user-controlled polygon budgets. The pressing questions are economic and legal rather than technical. AI-assisted generation compresses junior artist tasks, shifting studio demand towards art direction, optimisation, and technical art skills; meanwhile the provenance and licensing of training data for generative 3D models remains contested. On the technical frontier, the gap between offline and real-time quality continues to narrow as engines adopt virtualised geometry (Nanite-style micropolygon streaming) and neural compression, letting film-grade assets ship in interactive titles with far less manual optimisation.
+
+  **Sources**:
+  - https://aousd.org/blog/aousd-year-in-review-a-landmark-year-for-openusd-standardization-and-growth-in-2025/
+  - https://arxiv.org/html/2509.12815v1
+  - https://metaverse-standards.org/wp-content/uploads/glTF-USD-BOF-SIGGRAPH-Vancouver-Aug25-FINAL.pdf

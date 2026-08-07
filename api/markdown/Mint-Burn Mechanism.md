@@ -50,11 +50,11 @@ public:: true
       {"@id": "urn:ngm:class:collateral", "label": "Collateral"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -88,6 +88,20 @@ public:: true
   - **Access-control patterns**: single-owner (custodial issuers), role-based (`MINTER_ROLE`), multisig or DAO-governed minting, and algorithmic minting triggered purely by contract logic (CDP-style vaults in MakerDAO).
   - **Burn beyond redemption**: the same primitive serves deflationary tokenomics — fee burning (Ethereum's EIP-1559 base fee), buy-back-and-burn programmes (BNB), and supply-adjustment auctions — where destruction is a value-accrual policy rather than a redemption record.
   - **Failure modes**: compromised mint keys, forged bridge attestations, oracle manipulation of collateral values, and reflexive death spirals in under-collateralised algorithmic designs.
+
+  ## Current Landscape
+
+  - The US GENIUS Act (S.1582) was signed into law on 18 July 2025 as Public Law 119-27, creating the first federal framework for payment stablecoins: permitted issuers must back outstanding tokens at least 1:1 with a narrow set of liquid reserves (US currency, insured deposits, Treasuries of 93 days or less, Treasury-backed repos), publish monthly reserve compositions examined by a registered public accounting firm, and may not pay yield to holders.
+  - The Act takes effect on the earlier of 18 January 2027 or 120 days after the primary federal regulators issue final implementing rules; three years after enactment, digital asset service providers may only offer stablecoins from permitted issuers.
+  - Rehypothecation of reserves is prohibited under the GENIUS Act except for narrow margin purposes — a direct legislative response to the unbacked-minting failure mode described above; issuers with more than $50 billion outstanding must additionally publish annual audited financial statements.
+  - In the EU, MiCA's stablecoin provisions (e-money tokens and asset-referenced tokens) have applied since 30 June 2024, requiring full backing in secure, same-currency, low-risk reserve assets with reliable redemption at par.
+  - Together the two regimes move the mint-burn pattern's accounting from voluntary attestations towards statutory proof-of-reserve discipline in the world's two largest markets.
+
+  **Sources**:
+  - https://www.congress.gov/bill/119th-congress/senate-bill/1582/text
+  - https://www.richmondfed.org/banking/banker_resources/news_flash/2025/20251118_genius_act
+  - https://www.law.georgetown.edu/international-law-journal/blog/geniusact/
+  - https://www.lw.com/en/insights/the-genius-act-of-2025-stablecoin-legislation-adopted-in-the-us
 
 - ### Provenance
   - sources::

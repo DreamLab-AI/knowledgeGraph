@@ -77,11 +77,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -111,6 +111,17 @@ public:: true
 
   ## Current Landscape
 
-  Regulation has converted AI documentation from voluntary hygiene into legal obligation. The EU AI Act requires providers of high-risk systems to maintain extensive technical documentation (Annex IV) and obliges general-purpose model providers under Article 53 to keep technical files and publish training-content summaries. The GPAI Code of Practice, NIST's AI Risk Management Framework, ISO/IEC 42001, and the UK's algorithmic transparency recording standard all embed documentation duties, while procurement processes increasingly demand model cards as a condition of purchase.
+  Regulation has converted AI documentation from voluntary hygiene into legal obligation. The EU AI Act requires providers of high-risk systems to maintain extensive technical documentation (Annex IV) and obliges general-purpose model providers under Article 53 to keep technical files and publish training-content summaries. Key dates and instruments:
+
+  - **10 July 2025**: the European Commission published the GPAI Code of Practice, whose Transparency chapter centres on a standardised **Model Documentation Form** covering licensing, technical specifications, intended uses, dataset details, and compute and energy usage, with tiered disclosure to the AI Office, national authorities, and downstream providers.
+  - **24 July 2025**: the AI Office adopted the mandatory template for the public **training-data summary** under Article 53(1)(d), requiring general model information, a list of data sources (including the most-used web-scraped domains), and data-processing descriptions; summaries must be updated at least every six months where training continues.
+  - **2 August 2025**: GPAI documentation obligations began applying to new models; Commission enforcement powers start 2 August 2026, and models placed on the market before August 2025 have until 2 August 2027 to comply.
+  - NIST's AI Risk Management Framework, ISO/IEC 42001, and the UK's Algorithmic Transparency Recording Standard all embed documentation duties, while procurement processes increasingly demand model cards as a condition of purchase.
 
   Industry tooling has followed: Hugging Face made model cards a repository norm with structured templates and automated population; major laboratories publish system cards alongside frontier releases; and MLOps platforms generate evaluation documentation from pipeline metadata rather than by hand. The unresolved tensions are freshness (documentation drifting out of date as models are retrained), depth versus trade secrecy (training-data disclosure meeting IP and privacy resistance), and verification — a document is only as trustworthy as the process that audits it against the system it describes.
+
+  **Sources**:
+  - https://digital-strategy.ec.europa.eu/en/news/commission-presents-template-general-purpose-ai-model-providers-summarise-data-used-train-their
+  - https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/european-commission-releases-mandatory-template-for-public-disclosure-of-ai-training-data
+  - https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+  - https://www.twobirds.com/en/insights/2025/taking-the-eu-ai-act-to-practice-decoding-the-gpai-code-of-practice-and-the-training-data-summary-te

@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -117,3 +117,15 @@ public:: true
   - **Interaction with temperature**: temperature τ < 1 sharpens the distribution (shrinking the nucleus); τ > 1 flattens it. Common practice tunes (τ, p) jointly, e.g. τ = 0.7, p = 0.9 for assistants; τ = 1.0, p = 0.95 for creative writing.
   - **Descendants and refinements**: typical sampling (information-theoretic truncation), locally typical/eta and epsilon sampling (entropy-relative cutoffs), Mirostat (perplexity-targeting adaptive control), and min-p sampling (threshold relative to the top token's probability, popular in open-weights communities since 2023–24 for high-temperature stability) all generalise the same insight: truncate the unreliable tail, keep the reliable head.
   - **Evaluation**: the original paper showed nucleus-sampled text approaches human perplexity, repetition, and Zipfian statistics far better than beam search (which loops) or pure sampling (which drifts); HUSE and MAUVE later formalised the quality-diversity trade-off decoders navigate.
+
+  ## Current Landscape
+
+  - **Min-p sampling** (Nguyen et al.) was accepted as an ICLR 2025 oral, showing consistent gains over top-p on GPQA, GSM8K, and creative-writing evaluations, especially at temperatures above 1; it is now natively supported in llama.cpp, vLLM, Hugging Face Transformers, Ollama, and most open-source inference engines, with recommended values of 0.05–0.1.
+  - Commercial APIs (OpenAI, Anthropic, Google) still expose **top-p as the primary truncation parameter** and do not offer min-p, so nucleus sampling remains the de facto standard for hosted models, while temperature-plus-min-p has become the prevailing open-weights configuration.
+  - **Top-nσ** (ACL 2025) truncates in logit space using a threshold of max(logit) − n·σ, giving a nucleus that is invariant to temperature — addressing the temperature coupling that afflicts all probability-space truncation methods, min-p and top-p included; Top-H decoding (NeurIPS 2025) continues the line of entropy-aware refinements.
+  - Reasoning-tuned models increasingly ship with **locked or recommended decoding defaults**, narrowing the role of user-side sampler tuning for closed-form tasks while leaving nucleus-family samplers dominant for open-ended generation.
+
+  **Sources**:
+  - https://proceedings.iclr.cc/paper_files/paper/2025/file/afa5f124e36bed5cc2125067005d43f5-Paper-Conference.pdf
+  - https://aclanthology.org/2025.acl-long.528.pdf
+  - https://huggingface.co/papers/2407.01082

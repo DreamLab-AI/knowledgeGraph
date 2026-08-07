@@ -77,11 +77,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -115,3 +115,17 @@ public:: true
   - **Forward recovery**: compensating transactions (sagas), exception handlers, degraded modes, self-healing reconciliation loops as in Kubernetes controllers.
   - **Retry discipline**: exponential backoff with jitter, idempotency guarantees, retry budgets, and circuit breakers to avoid retry storms that amplify outages.
   - **Agent-specific patterns**: reflection/self-critique on failure, plan repair versus full re-planning, tool-output validation, sandboxed dry runs, and human-in-the-loop escalation thresholds.
+
+  ## Current Landscape
+
+  - **Reliability has become a first-class benchmark axis**: Sierra's τ-bench (June 2024) introduced the pass^k metric — success across *k* repeated runs — after finding GPT-4-class agents completed fewer than 50% of tasks and only ~25% consistently over eight repeats; its successor τ²-Bench extends this to airline, retail, and telecom domains.
+  - **Recovery is now benchmarked directly**: Recovery-Bench (2025, OpenReview) evaluates agents dropped into environments seeded with artefacts of prior failed attempts, and AgentErrorBench (2025) provides the first systematically annotated dataset of failure trajectories from ALFWorld, GAIA, and WebShop.
+  - **Failure taxonomies distinguish terminal from recoverable errors**: Atla's April 2025 analysis of τ-bench retail tasks found wrong-action, wrong-information, and tool-parameter errors dominate, with terminal (irrecoverable) failures outnumbering recoverable ones absent guided intervention.
+  - **Trained recovery works**: the PALADIN framework (September 2025) lifted tool-failure recovery rates from ~33% to ~90% on ToolBench-derived evaluations and retained 95.2% recovery on unseen APIs; Cleanlab reported in December 2025 that real-time trustworthiness scoring with fallback regeneration cuts τ²-Bench agent failure rates by up to 50%.
+  - A 2026 "science of AI agent reliability" research programme (arXiv, February 2026) decomposes agent reliability into consistency, robustness, predictability, and safety — recovery competence spanning all four.
+
+  **Sources**:
+  - https://sierra.ai/blog/tau-bench-shaping-development-evaluation-agents
+  - https://arxiv.org/html/2509.25238v1
+  - https://cleanlab.ai/blog/tau-bench/
+  - https://www.marktechpost.com/2025/04/30/diagnosing-and-self-correcting-llm-agent-failures-a-technical-deep-dive-into-%CF%84-bench-findings-with-atlas-evaltoolbox/

@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -113,7 +113,14 @@ public:: true
 
   ## Current Landscape
 
-  - **Web formats**: JPEG remains ubiquitous; WebP has near-universal browser support; AVIF offers roughly 30–50% smaller files than JPEG at equivalent quality and is now supported in all major browsers; JPEG XL, technically strong, has fragmented support after Chrome's removal but Apple platform adoption revived it.
+  - **Web formats**: JPEG remains ubiquitous and AVIF is now the practical modern default — roughly 30–50% smaller than JPEG at equal quality and, per caniuse, supported by all major browsers at about 93–94% of global users (Chrome 85+, Firefox 93+, Safari 16.4+, Edge, Opera). WebP retains near-universal support as a fallback.
+  - **JPEG XL reversal (2026)**: after Google removed experimental JXL from Chrome 110 in February 2023, a memory-safe Rust decoder (jxl-rs) was vendored into Chromium in late 2025 and shipped in **Chrome 145 (February 2026)** behind the `chrome://flags/#enable-jxl-image-format` flag; **Firefox 152 (June 2026)** added it behind a preference. Only Safari (since v17, 2023) enables JPEG XL by default, so as of mid-2026 JXL is still not production-ready as a primary web format and needs AVIF/JPEG fallbacks.
   - **Quality measurement**: PSNR and SSIM are giving way to perceptual metrics (MS-SSIM, butteraugli, LPIPS) that better track human judgements, which matters because codecs are tuned against their evaluation metric.
-  - **Learned compression**: neural codecs using variational autoencoders with hyperpriors (Ballé et al.) and, more recently, diffusion-based decoders exceed classical codecs in rate–distortion terms; standardisation is underway in JPEG AI. Trade-offs remain decode cost and non-deterministic detail synthesis.
+  - **Learned compression**: neural codecs using variational autoencoders with hyperpriors (Ballé et al.) and, more recently, diffusion-based decoders exceed classical codecs in rate–distortion terms; ISO/IEC's first learning-based image standard, JPEG AI (ISO/IEC 6048-1), was published in October 2024 with reported gains above 25% over the VVC intra anchor. Trade-offs remain decode cost and non-deterministic detail synthesis.
   - **Systems context**: responsive image pipelines (srcset, CDN transcoding) routinely store one master and derive per-device variants, making the codec choice an infrastructure decision as much as a format one.
+
+  **Sources**:
+  - https://caniuse.com/avif
+  - https://theimagecdn.com/docs/jpeg-xl-explained
+  - https://speedvitals.com/blog/avif-vs-jpeg-xl/
+  - https://freetoolonline.com/news/jpeg-xl-returns-chrome-firefox.html

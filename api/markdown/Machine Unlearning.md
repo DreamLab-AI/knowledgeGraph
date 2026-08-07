@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -104,7 +104,20 @@ public:: true
 
   Benchmarks such as TOFU, WMDP, and MUSE now anchor evaluation of unlearning in large language models, measuring whether forget-set knowledge is gone, whether retained capability survives, and whether "relearning" attacks can resurrect the removed content. Results are sobering: many published methods suppress rather than remove knowledge, and fine-tuning on a few related examples often restores it. Verification remains the open problem — proving a model has forgotten is harder than making it appear to forget.
 
+  Dated markers of the field's state:
+
+  - **Unified evaluation arrived in 2025**: OpenUnlearning (NeurIPS 2025 Datasets & Benchmarks) unifies the TOFU, MUSE and WMDP benchmarks with 13 unlearning algorithms, 16 evaluation metrics (including six membership-inference attacks), and 450+ publicly released model checkpoints; its meta-evaluation found method rankings highly sensitive to experimental design, with SimNPO the strongest performer on TOFU.
+  - **Relearning attacks confirmed as the weak point**: ICLR 2025 work showed that finetuning an "unlearned" model on a small subset of the forget data — or even auxiliary public data — recovers supposedly removed content across WMDP, TOFU and Who's-Harry-Potter settings, and NeurIPS 2025 work demonstrated data extraction attacks that double success rates even after *exact* unlearning of the target records.
+  - **Robustness progress**: the UNDO distillation approach (NeurIPS 2025) showed that distilling an unlearned model into a fresh student matches the relearning-robustness of full retraining at 60-80% of the compute — one of the first methods to close the suppression-versus-removal gap.
+  - **Regulatory pull sharpened**: the EU AI Act's GPAI obligations (applicable from 2 August 2025) require documented training-data governance and copyright compliance, while UK GDPR erasure rights and US FTC algorithmic-disgorgement orders continue to assume deletion capabilities that current approximate methods cannot yet certify.
+
   Research directions include unlearning in federated settings (where the data holder never shared raw records), certified deletion with differential-privacy-style guarantees, and capability-level unlearning for frontier model safety cases. The field is young but moving quickly, pulled by the widening gap between what privacy and AI regulation assumes is possible and what current techniques reliably deliver.
+
+  **Sources**:
+  - https://github.com/locuslab/open-unlearning
+  - https://papers.neurips.cc/paper_files/paper/2025/file/3e4a38f228427ab819ba7899003a44b1-Paper-Datasets_and_Benchmarks_Track.pdf
+  - https://proceedings.neurips.cc/paper_files/paper/2025/file/800981b7bff06c3feb88c65cc712ba2b-Paper-Conference.pdf
+  - https://proceedings.iclr.cc/paper_files/paper/2025/file/18fd48d9cbbf9a20e434c9d3db6973c5-Paper-Conference.pdf
 
 - ### Provenance
   - sources::

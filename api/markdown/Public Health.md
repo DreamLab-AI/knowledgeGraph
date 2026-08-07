@@ -67,11 +67,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -100,7 +100,18 @@ public:: true
 
   ## Current Landscape
 
-  The post-pandemic settlement is reshaping the field along three axes. First, surveillance infrastructure: wastewater epidemiology and routine pathogen genomics (pioneered at scale by COG-UK) are now permanent fixtures, and the WHO's Hub for Pandemic and Epidemic Intelligence pursues integrated global early warning; the WHO Pandemic Agreement, adopted in 2025, formalises international obligations on data sharing and equitable access to countermeasures. Second, computation: forecasting hubs aggregate ensemble epidemic models, and machine learning augments classical compartmental approaches for nowcasting and resource planning, with foundation-model methods under active evaluation. Third, the burden mix: non-communicable diseases (cardiovascular disease, diabetes, mental ill-health) dominate mortality, antimicrobial resistance and climate-sensitive disease are rising strategic threats, and misinformation management has become a recognised operational competency. Persistent challenges are institutional rather than technical — chronic underfunding relative to acute care, workforce attrition, and rebuilding public trust in health authorities.
+  The post-pandemic settlement is reshaping the field along three axes. First, surveillance infrastructure: wastewater epidemiology and routine pathogen genomics (pioneered at scale by COG-UK) are now permanent fixtures, and the WHO's Hub for Pandemic and Epidemic Intelligence pursues integrated global early warning. Second, computation: forecasting hubs aggregate ensemble epidemic models, and machine learning augments classical compartmental approaches for nowcasting and resource planning, with foundation-model methods under active evaluation. Third, the burden mix: non-communicable diseases (cardiovascular disease, diabetes, mental ill-health) dominate mortality, antimicrobial resistance and climate-sensitive disease are rising strategic threats, and misinformation management has become a recognised operational competency. Persistent challenges are institutional rather than technical — chronic underfunding relative to acute care, workforce attrition, and rebuilding public trust in health authorities.
+
+  Dated developments:
+  - **20 May 2025**: the 78th World Health Assembly formally adopted the world's first WHO Pandemic Agreement by consensus (resolution WHA78.1; approved 124–0 with 11 abstentions in Committee A on 19 May), after more than three years of negotiation launched in response to COVID-19.
+  - The Agreement establishes obligations on coordinated multisectoral surveillance (a One Health approach), technology transfer, and equitable access — including a Pathogen Access and Benefit-Sharing (PABS) system under which participating manufacturers target 20% of real-time production of pandemic vaccines, therapeutics and diagnostics for WHO allocation.
+  - The Agreement explicitly preserves national sovereignty (Article 22): it confers no WHO authority to mandate lockdowns, travel bans or vaccination.
+  - **Next steps (2025–2026)**: an Intergovernmental Working Group (first met 9–10 July 2025) is negotiating the PABS annex for consideration at the 79th World Health Assembly in May 2026; the Agreement opens for signature only after the annex is adopted, and enters into force 30 days after 60 ratifications.
+
+  **Sources**:
+  - https://www.who.int/news/item/20-05-2025-world-health-assembly-adopts-historic-pandemic-agreement-to-make-the-world-more-equitable-and-safer-from-future-pandemics
+  - https://www.who.int/health-topics/who-pandemic-agreement
+  - https://apps.who.int/gb/ebwha/pdf_files/WHA78/A78_R1-en.pdf
 
 - ### Provenance
   - sources::

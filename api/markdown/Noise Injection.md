@@ -91,11 +91,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -126,3 +126,16 @@ public:: true
   ## Technical Details
 
   Practical design questions are where to inject (input, feature, weight, gradient), what distribution (Gaussian for continuous signals, Bernoulli masks for discrete structure, uniform jitter for geometric data) and how much: variance is a hyperparameter that mediates the bias-variance trade-off, often annealed over training. Noise injection improves calibration and adversarial [[Robustness]] (randomised smoothing converts additive Gaussian noise into certified robustness radii), but excessive noise destroys the signal — the augmentation must respect task-preserving invariances. Modern recipes rarely use a single mechanism; they compose noise injection with other augmentations (mixup, CutMix, RandAugment) and rely on validation-driven tuning of the overall corruption budget.
+
+  ## Current Landscape
+
+  - Calibrated noise injection has reached frontier-scale language models: Google's **VaultGemma** (September 2025) is the most capable LLM trained end-to-end with differential privacy, achieving a sequence-level guarantee of (ε ≤ 2.0, δ ≤ 1.1e-10) and establishing DP scaling laws around the "noise-batch ratio".
+  - Google also demonstrated practical **user-level DP fine-tuning** of LLMs (May 2025), showing how contribution bounding plus increased gradient noise upgrades example-level DP-SGD guarantees to per-user protection.
+  - In generative modelling, **noise multiplicity** — reusing each private example at multiple diffusion noise levels at no extra privacy cost — has become a standard trick for differentially private diffusion models, and NeurIPS 2025 work (DPAgg-TI) showed that noising aggregated embeddings can outperform DP-SGD outright in small-data adaptation regimes.
+  - Research continues on where and when to inject: adaptive and randomised noise schedules for DP-SGD (e.g. randomly skipping noise steps, Nature Scientific Reports, November 2025) aim to improve the privacy-utility trade-off over fixed per-step noise.
+
+  **Sources**:
+  - https://research.google/blog/vaultgemma-the-worlds-most-capable-differentially-private-llm/
+  - https://research.google/blog/fine-tuning-llms-with-user-level-differential-privacy/
+  - https://research.nvidia.com/labs/toronto-ai/DPDM/
+  - https://www.nature.com/articles/s41598-025-27708-0

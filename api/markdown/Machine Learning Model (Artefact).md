@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -110,3 +110,16 @@ public:: true
   ## Technical Details
 
   Models are usefully classified along three axes. By learning paradigm: supervised (classification, regression), unsupervised (clustering, dimensionality reduction), self-supervised and reinforcement-learned. By hypothesis class: linear models, kernel machines, tree ensembles (random forests, gradient-boosted trees), probabilistic graphical models and neural networks, with deep architectures dominating perception and language tasks while gradient boosting remains highly competitive on tabular data. By parametric character: parametric models with a fixed weight count versus non-parametric methods such as k-nearest neighbours whose effective capacity grows with the data. Key evaluation quantities — bias-variance trade-off, calibration, out-of-distribution robustness — are properties of the trained artefact rather than of the algorithm, which is why rigorous practice always distinguishes the two.
+
+  ## Current Landscape
+
+  - **The model artefact is now a regulated object**: under the EU AI Act, obligations for providers of general-purpose AI models (Article 53) applied from 2 August 2025 — maintained technical documentation covering architecture, training and evaluation, compute and energy; documentation for downstream integrators; a copyright-compliance policy; and a public training-content summary using the Commission's mandatory template published on 24 July 2025.
+  - **Transitional deadlines**: GPAI models placed on the EU market before 2 August 2025 must be brought into compliance by 2 August 2027; models above the 10²⁵-FLOP systemic-risk threshold face additional adversarial-testing, incident-reporting, and cybersecurity obligations.
+  - **Voluntary scaffolding**: the Commission's GPAI Code of Practice and accompanying guidelines (July 2025) operationalise these duties; providers submit systemic-risk notifications and model reports through the EU's SEND platform.
+  - **Serialisation and lineage practice**: safetensors has displaced pickle-based weight formats for safe distribution on model hubs; model registries and lineage-tracking platforms (MLflow 3's model-centric redesign, June 2025) increasingly bind the artefact to the exact code, data, prompts and evaluations that produced it — turning the model card from documentation courtesy into compliance evidence.
+
+  **Sources**:
+  - https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers
+  - https://www.skadden.com/insights/publications/2025/08/eus-general-purpose-ai-obligations
+  - https://artificialintelligenceact.eu/high-level-summary/
+  - https://mlflow.org/releases/3/

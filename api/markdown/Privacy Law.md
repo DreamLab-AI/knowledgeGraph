@@ -48,11 +48,11 @@ public:: true
       {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -81,7 +81,11 @@ public:: true
 
   ## Current Landscape
 
-  - **Enforcement maturity**: cumulative GDPR fines exceed €5 billion, with landmark penalties against Meta (€1.2 billion, 2023, transfers) and Amazon; regulators increasingly target ad-tech consent flows, children's services, and AI training data.
+  - **Enforcement maturity**: DLA Piper's January 2026 survey puts cumulative GDPR fines since May 2018 at about €7.1 billion, with a further ~€1.2 billion issued in the year to January 2026; Ireland leads all enforcers at ~€4.04 billion to date. Landmark penalties include Meta (€1.2 billion, 2023, transfers) and the Luxembourg fine against a major US e-commerce platform (upheld March 2025); regulators increasingly target ad-tech consent flows, children's services, and AI training data.
   - **AI collision**: supervisory authorities are testing how purpose limitation, lawful basis, and erasure rights apply to foundation-model training; the EU AI Act layers product-safety-style obligations on top of data protection law.
-  - **UK divergence**: the Data (Use and Access) Act 2025 adjusts the retained UK GDPR around research reuse, legitimate interests, and automated decision-making while striving to preserve EU adequacy.
+  - **UK divergence**: the Data (Use and Access) Act 2025 received Royal Assent on 19 June 2025, adjusting the retained UK GDPR around research reuse, legitimate interests, and automated decision-making, and raising the maximum PECR (e-privacy/cookies) fine from £500,000 to £17.5 million or 4% of global turnover — while striving to preserve EU adequacy.
   - **Structural trends**: proliferating US state statutes push towards de facto national standards; data-broker regulation, biometric-specific laws (Illinois BIPA), and cross-border transfer mechanics remain the most litigated fronts.
+
+  **Sources**:
+  - https://www.legislation.gov.uk/ukpga/2025/18
+  - https://blogs.dlapiper.com/advocatus/files/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-2026.pdf

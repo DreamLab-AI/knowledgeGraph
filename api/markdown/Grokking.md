@@ -73,11 +73,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -110,6 +110,14 @@ public:: true
   - **Drivers**: weight decay is the most reliable trigger; data-set size, initialisation scale, and representation learning speed modulate the delay between memorisation and generalisation.
   - **Theory links**: connected to double descent, benign overfitting, lottery-ticket-style circuit competition, and singular learning theory's phase-transition view of training dynamics.
   - **Practical reading**: "converged" networks may still be reorganising internally; interpretability probes (weight-norm trajectories, Fourier structure, progress measures such as restricted loss) can reveal transitions invisible in aggregate loss curves.
+  - **Weight decay is not the whole story (2024-2025)**: an ICLR 2024 study exhibits grokking with *zero* weight decay and *increasing* weight norm, attributing it instead to a lazy-to-rich (feature-learning) transition; a NeurIPS 2025 analysis casts grokking as a two-timescale gradient-flow process where a slow norm-reduction phase (order 1/λ) drives the late generalisation jump.
+  - **Optimisation-level triggers**: ICLR 2025 work ("Grokking at the Edge of Numerical Stability") traces the delay to Softmax Collapse from uncontrolled logit growth and removes it with a modified optimiser (⊥Grad); grokking can also occur without regularisation when the training set is large enough.
+  - **Consensus caveat**: weight decay reliably *induces* grokking and controls its delay (Nanda et al. 2023, Varma et al. 2023), but recent results show it is neither strictly necessary nor sufficient — initialisation scale and data fraction ("Goldilocks" regime) matter as much.
+
+  **Sources**:
+  - https://papers.neurips.cc/paper_files/paper/2022/file/dfc310e81992d2e4cedc09ac47eff13e-Paper-Conference.pdf
+  - https://openreview.net/pdf?id=TvfkSyHZRA
+  - https://par.nsf.gov/servlets/purl/10541956
 
 - ### Provenance
   - sources::

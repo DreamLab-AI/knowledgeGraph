@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -103,4 +103,15 @@ public:: true
 
   ## Current Landscape
 
-  Hardware is in the transition from the NISQ (noisy intermediate-scale quantum) era towards early fault tolerance. Superconducting platforms (IBM, Google), trapped ions (Quantinuum, IonQ), neutral atoms (QuEra, Pasqal) and photonics (PsiQuantum, Xanadu) compete on qubit count, gate fidelity and error-corrected logical qubits; milestones since 2023 include logical-qubit demonstrations below the surface-code threshold and Google's Willow error-correction results, though thousands of high-quality logical qubits are needed for cryptographically relevant workloads. The credible threat to public-key cryptography has already reshaped security practice: NIST finalised its first post-quantum cryptography standards (ML-KEM, ML-DSA, SLH-DSA) in 2024, and "harvest now, decrypt later" drives migration planning across governments and financial infrastructure. National programmes in the US, EU, UK and China treat quantum computing as strategic infrastructure, with the UK's National Quantum Strategy committing £2.5 billion over ten years.
+  Hardware is in the transition from the NISQ (noisy intermediate-scale quantum) era towards early fault tolerance. Superconducting platforms (IBM, Google), trapped ions (Quantinuum, IonQ), neutral atoms (QuEra, Pasqal) and photonics (PsiQuantum, Xanadu) compete on qubit count, gate fidelity and error-corrected logical qubits; thousands of high-quality logical qubits are needed for cryptographically relevant workloads. The credible threat to public-key cryptography has already reshaped security practice: NIST finalised its first post-quantum cryptography standards (FIPS 203 ML-KEM, FIPS 204 ML-DSA, FIPS 205 SLH-DSA) in August 2024, and "harvest now, decrypt later" drives migration planning across governments and financial infrastructure. National programmes in the US, EU, UK and China treat quantum computing as strategic infrastructure, with the UK's National Quantum Strategy committing £2.5 billion over ten years.
+
+  Dated developments:
+  - **Dec 2024 / Feb 2025**: Google's 105-qubit Willow chip demonstrated *below-threshold* quantum error correction — published in Nature (Feb 2025), a 101-qubit distance-7 surface code suppresses the logical error rate by a factor Λ = 2.14 as code distance grows, the first convincing prototype of a scalable logical qubit.
+  - **Oct 2025**: Google reported the first *verifiable* quantum advantage — its "Quantum Echoes" (OTOC) algorithm on Willow ran ~13,000× faster than the Frontier supercomputer on a reproducible, physically interpretable task.
+  - **Nov 2025**: IBM's updated roadmap introduced Nighthawk (120 qubits, real-time qLDPC decoding) and set a fault-tolerant target of IBM Quantum Starling by 2029 (200 logical qubits, 100 million gates), scaling toward 1,000 logical qubits in the early 2030s.
+  - **2025**: other groups replicated below-threshold operation (USTC's Zuchongzhi 3.2 via all-microwave control) and pushed neutral-atom fault tolerance (Harvard–QuEra, hundreds of qubits), broadening the platform race.
+
+  **Sources**:
+  - https://blog.google/innovation-and-ai/technology/research/google-willow-quantum-chip/
+  - https://blog.google/innovation-and-ai/technology/research/quantum-hardware-verifiable-advantage/
+  - https://www.moodys.com/web/en/us/insights/quantum/quantum-computings-six-most-important-trends-for-2025.html

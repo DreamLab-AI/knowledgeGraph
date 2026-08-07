@@ -81,11 +81,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -120,3 +120,15 @@ public:: true
   - **Control interface**: two direction inputs plus a PWM enable (or PWM applied per leg) from a [[Microcontroller]]; locked-antiphase and sign-magnitude are the common modulation schemes, trading ripple against zero-crossing linearity.
   - **Protection and sensing**: current sensing via shunt resistors or integrated mirrors supports torque control and stall detection; thermal shutdown, overcurrent limits, and reverse-polarity protection are standard in integrated bridges.
   - **Typical applications**: differential-drive mobile robots, DC servo positioning, stepper drivers (two bridges, one per phase), electric vehicle traction, solenoid and Peltier drive, and DC-AC inversion.
+
+  ## Current Landscape
+
+  - **Integrated smart gate drivers**: modern parts fold dead-time generation, protection and current sensing into the IC. TI's DRV8871 integrates dual N-channel MOSFETs (~565 mΩ RDS(on), 6.5-45 V, 3.6 A peak) with internal current regulation and a fixed ~220 ns dead time; the automotive DRV8706-Q1 smart gate driver runs external MOSFETs with an integrated charge pump and register-selectable insertable dead-time (0-4 µs), driven by a single PWM input.
+  - **Wide-bandgap adoption (2025-2026)**: GaN and SiC devices push switching frequencies higher and cut losses; TI's GaN motor drivers advertise sub-150 ns dead time and propagation delay for lower current distortion and better acoustics, and vendors recommend negative gate bias plus active Miller clamp when driving GaN/SiC to suppress shoot-through.
+  - **Design practice**: typical silicon-MOSFET dead time is ~100-300 ns (e.g. LM5106 adjustable 100-600 ns via a resistor); PWM is commonly 20-100 kHz (25 kHz sits just above the audible band), and designers simulate transients in LTspice/QSPICE before prototyping.
+  - **Protection is standard**: undervoltage lockout, overcurrent limit, thermal shutdown and configurable interlock/dead-time now come built into mainstream integrated bridges and gate-driver families (TI, Infineon EiceDRIVER).
+
+  **Sources**:
+  - https://www.ti.com/lit/gpn/DRV8871
+  - https://www.ti.com/lit/ds/symlink/drv8706-q1.pdf
+  - https://www.wevolver.com/article/h-bridge-motor-control-a-complete-guide-for-engineers-2025

@@ -65,11 +65,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -99,7 +99,15 @@ public:: true
 
   ## Current Landscape
 
-  - **Regulatory status**: CSRD reporting began for the first wave of large EU companies in FY2024 reports; the 2025 "Omnibus" simplification package has narrowed scope and delayed later waves, but double materiality remains the core methodology.
+  - **Omnibus I finalised**: Directive (EU) 2026/470, published in the Official Journal on 26 February 2026 and in force from 18 March 2026, retains double materiality as the methodological core of the CSRD while cutting the number of in-scope entities by more than 80%; Member States must transpose it by 19 March 2027.
+  - **Narrowed scope**: mandatory CSRD reporting now applies only to companies with more than 1,000 employees *and* net turnover above €450 million (both thresholds cumulative), with reporting obligations beginning FY2027 (reports in 2028); listed SMEs are removed from scope, and the earlier "Stop-the-Clock" Directive (EU) 2025/794 had already postponed the second and third waves by two years.
+  - **Simplified ESRS**: following EFRAG's technical advice of 3 December 2025, mandatory ESRS datapoints fall by roughly 61% (from about 1,073 to about 320); the Commission adopted the revised ESRS Delegated Act in July 2026, expected in force on 10 November 2026 and mandatory from FY2027. Reasonable assurance has been dropped — only limited assurance remains — and the sector-specific standards mandate was deleted. The four-step double materiality assessment process itself is unchanged.
   - **Practice**: assessments typically produce a materiality matrix or IRO register signed off at board level; common weaknesses flagged by regulators and auditors include thin value-chain coverage and unevidenced stakeholder engagement.
   - **UK position**: the UK Sustainability Reporting Standards are ISSB-based (single materiality), so UK groups with EU operations frequently run a double-materiality process to satisfy both regimes.
   - **Tooling**: ESG software platforms now embed double-materiality workflows, and XBRL tagging of ESRS disclosures makes assessment outcomes machine-readable.
+
+  **Sources**:
+  - https://generationimpact.global/blog/omnibus-i-double-materiality/
+  - https://commonwealthclimatelaw.org/publication/csrd-reporting-post-omnibus-i-what-directors-need-to-know-in-2026/
+  - https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/csrd-technical-resources/documents/ey-gl-eu-sustainability-developments-v2-07-2026.pdf
+  - https://dart.deloitte.com/USDART/home/publications/deloitte/heads-up/2026/eu-sustainability-reporting-omnibus-esrs-updates

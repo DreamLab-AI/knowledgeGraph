@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -122,3 +122,18 @@ public:: true
   - **Scheduling and SLOs**: goodput (requests meeting time-to-first-token and inter-token-latency targets) rather than raw tokens/s is the operative production metric; admission control and priority scheduling protect interactive traffic whilst background batch work absorbs spare capacity.
 
   Beyond ML, the same discipline appears in databases (transactions/s), networking (goodput vs bandwidth), and stream processing — throughput optimisation is ultimately queueing theory plus hardware sympathy applied to a specific pipeline.
+
+  ## Current Landscape
+
+  LLM-serving throughput work in 2025-26 has professionalised around vLLM-class engines:
+
+  - **PagedAttention + continuous batching** deliver the baseline gains: vLLM reports 2-4x throughput over prior serving systems, and continuous (in-flight) batching gives roughly 2-5x over static batching for typical workloads.
+  - **Prefill/decode (P/D) disaggregation** is the current architectural frontier — compute-bound prefill and bandwidth-bound decode run on separate worker pools; note that disaggregation itself targets tail-latency control (TTFT/ITL) rather than raw throughput. The **vLLM Router (December 2025)** orchestrates P/D and benchmarked 25-100% higher requests/s than K8s-native and llm-d load balancers.
+  - **Kernel and precision advances**: FlashAttention-3 (≈2x over FA2 on H100, FP8 support) is now the default attention path, with FP8/INT4 weight and KV-cache quantisation, CUDA graphs, and torch.compile standard.
+  - **Speculative decoding** (n-gram, EAGLE, or a small draft model) yields ~1.5-3x decode speedups that are statistically equivalent to token-by-token autoregressive sampling.
+  - **Goodput over raw tokens/s**: production tuning now optimises SLO-meeting requests (time-to-first-token and inter-token-latency targets), using admission control and chunked prefill to protect interactive traffic.
+
+  **Sources**:
+  - https://vllm.ai/blog/2025-09-05-anatomy-of-vllm
+  - https://vllm.ai/blog/2025-12-13-vllm-router-release
+  - https://docs.vllm.ai/en/latest/features/disagg_prefill/

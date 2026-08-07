@@ -45,11 +45,11 @@ public:: true
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -73,7 +73,7 @@ public:: true
 
   **RTMPose** ("Real-Time Models for Pose estimation") is a top-down [[Pose Estimation]] framework released by OpenMMLab in 2023 (Jiang et al., arXiv:2303.07399) with an explicit industrial brief: close the gap between academic accuracy and deployable latency. A person detector first crops each subject; RTMPose then localises keypoints within each crop. Its distinguishing choice is the **SimCC** head, which discretises the x and y axes into sub-pixel bins and predicts two 1-D classification distributions per keypoint instead of a 2-D heatmap — removing the costly upsampling decoder, reducing quantisation error, and making the whole network a compact feed-forward [[Convolutional Neural Network]].
 
-  The backbone is **CSPNeXt**, a CSP-style architecture tuned for the accuracy-latency frontier, offered in t/s/m/l/x scales. Training folds in modern recipes — heavy data augmentation, exponential moving averages, and self-distillation — so that even the small variants remain competitive: the paper reports roughly 75.8 AP on COCO for RTMPose-m at over 400 FPS on an NVIDIA GTX 1660 Ti and 70+ FPS on a desktop CPU, with mobile builds running in tens of milliseconds via ncnn. Deployment paths through ONNX, TensorRT, and OpenVINO are first-class citizens of the release.
+  The backbone is **CSPNeXt**, a CSP-style architecture tuned for the accuracy-latency frontier, offered in t/s/m/l/x scales. Training folds in modern recipes — heavy data augmentation, exponential moving averages, and self-distillation — so that even the small variants remain competitive: the paper reports 75.8% AP on COCO for RTMPose-m at 430+ FPS on an NVIDIA GTX 1660 Ti GPU and 90+ FPS on an Intel i7-11700 CPU, while the smaller RTMPose-s reaches 72.2% AP at 70+ FPS on a Snapdragon 865 mobile chip via ncnn. Deployment paths through ONNX, TensorRT, and OpenVINO are first-class citizens of the release.
 
   RTMPose's wider influence in this graph runs through [[DWPose]], which applies two-stage knowledge distillation to RTMPose teachers to produce state-of-the-art whole-body (133-keypoint) estimators; DWPose in turn became the default skeleton extractor in ControlNet-style conditioning pipelines for image and video generation. RTMPose variants also anchor real-time skeletal tracking in AR/VR avatar systems, sports analytics, and human-robot interaction, where per-frame latency budgets rule out heavier heatmap models.
 
@@ -85,3 +85,15 @@ public:: true
   - **Benchmarks**: COCO AP from ~68.5 (RTMPose-t) to ~78+ (RTMPose-x, extra data); whole-body and 26-keypoint "body8" checkpoints available.
   - **Deployment**: exports to ONNX Runtime, TensorRT, ncnn, and OpenVINO; official pipelines in MMPose and the rtmlib lightweight runtime.
   - **Successors**: RTMW extends the recipe to whole-body keypoints; DWPose distils RTMPose for higher accuracy at equal cost.
+
+  ## Current Landscape
+
+  - **A model family, not one model**: within MMPose the line now spans three siblings — RTMPose (2D body), RTMO (one-stage multi-person), and RTMW (real-time whole-body, 133 keypoints) — all sharing the SimCC coordinate-classification design, in t/s/m/l/x scales at 256×192 and 384×288 input.
+  - **Headline benchmark (unchanged, verified)**: RTMPose-m attains 75.8% AP on COCO with 430+ FPS on a GTX 1660 Ti and 90+ FPS on an Intel i7-11700 CPU (arXiv:2303.07399); RTMPose-x reaches 65.3% AP on COCO-WholeBody.
+  - **Deployment breadth**: official export paths cover ONNX Runtime, TensorRT, ncnn, OpenVINO and CoreML (bundled via MMDeploy), plus the lightweight `rtmlib` runtime for dependency-free inference.
+  - **Ecosystem role**: DWPose distils RTMPose teachers into state-of-the-art whole-body estimators, and DWPose/RTMPose skeletons became the default pose extractor for ControlNet-style conditioning in image and video generation — the main route by which RTMPose reaches the generative-AI stack.
+
+  **Sources**:
+  - https://arxiv.org/abs/2303.07399
+  - https://github.com/open-mmlab/mmpose/tree/main/projects/rtmpose
+  - https://liyn.site/projects/mmpose/

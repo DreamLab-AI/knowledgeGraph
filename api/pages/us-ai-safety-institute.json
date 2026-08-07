@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:us-ai-safety-institute",
   "domain": "governance",
-  "definition": "The US AI Safety Institute (US AISI) is the United States government body, established within the National Institute of Standards and Technology (NIST), tasked with developing the science, evaluations, and guidelines for safe and trustworthy artificial intelligence. It conducts pre-deployment testing of frontier models, produces measurement methods and red-teaming guidance, and advances standards for AI safety. As a distinct organisation from the UK AI Safety Institute, it operates under US jurisdiction and NIST's standards mandate; the two institutes coordinate on evaluations through a bilateral partnership while remaining separate national bodies with their own remits, funding, and legal contexts.",
+  "definition": "The US AI Safety Institute (US AISI) is the United States government body, established within the National Institute of Standards and Technology (NIST), tasked with developing the science, evaluations, and guidelines for safe and trustworthy artificial intelligence. It conducts pre-deployment testing of frontier models, produces measurement methods and red-teaming guidance, and advances standards for AI safety. As a distinct organisation from the UK AI Safety Institute, it operates under US jurisdiction and NIST's standards mandate; the two institutes coordinate on evaluations through a bilateral partnership while remaining separate national bodies with their own remits, funding, and legal contexts. In June 2025 the Trump administration renamed the body the Center for AI Standards and Innovation (CAISI), dropping 'safety' from its title and narrowing its mandate to demonstrable national-security risks while keeping it within NIST.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-safety-institute",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.8,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],

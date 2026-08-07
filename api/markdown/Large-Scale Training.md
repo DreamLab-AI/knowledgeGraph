@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -122,3 +122,14 @@ public:: true
   Large-scale training is the industrial process behind every [[Foundation Model]]. Frontier runs now span tens of thousands of accelerators for weeks, with compute budgets measured in 10²⁵–10²⁶ FLOPs and costs in the tens to hundreds of millions of dollars; scaling laws relating loss to compute, parameters, and data (Kaplan 2020, Chinchilla 2022) still guide how those budgets are split. Efficiency work concentrates on lower-precision arithmetic (BF16 and now FP8), communication-computation overlap, and mixture-of-experts architectures that grow capacity faster than per-token cost.
 
   Two shifts define the current period. First, post-training has become large-scale in its own right: reinforcement learning pipelines with distributed rollout generation and reward evaluation can rival pretraining infrastructure in complexity. Second, energy and siting constraints—power delivery, cooling, and grid access for gigawatt-class campuses—have joined chip supply as the binding limits on scale, pushing operators towards multi-datacentre training runs coordinated over wide-area links, a regime that reopens old distributed-systems questions at unprecedented size.
+
+  Recent developments sharpen the picture:
+
+  - **Cluster scale**: leading frontier clusters reached ~100,000 GPUs during 2024, with 300,000+ GPU deployments planned for 2025; Google, OpenAI and Anthropic are each spreading single training runs across multiple datacentre campuses (SemiAnalysis, 2024).
+  - **Gigawatt-class campuses**: multiple operators are assembling roughly 1 GW of AI-chip capacity across clustered sites through 2025–2026, making power delivery and cooling first-order constraints alongside chip supply.
+  - **Low-precision training is standard**: FP8 (and increasingly FP4/microscaling MX formats) now drive frontier runs — for example FP8 training of DeepSeek-V3-scale mixture-of-experts models yields roughly 10–25% end-to-end speed-ups and cuts activation memory, while master weights are typically kept in FP32.
+  - **Mixture-of-experts hardware**: rack-scale systems such as NVIDIA's GB200 NVL72 (72 Blackwell GPUs acting as one, ~1.4 exaFLOPS) are built specifically to scale trillion-parameter MoE models with sparse activation.
+
+  **Sources**:
+  - https://newsletter.semianalysis.com/p/multi-datacenter-training-openais
+  - https://blogs.nvidia.com/blog/mixture-of-experts-frontier-models/

@@ -83,11 +83,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -123,3 +123,14 @@ public:: true
   - **Testing**: Neyman–Pearson lemma for optimal simple-vs-simple tests; likelihood-ratio, Wald, and score tests; multiple-comparison control via familywise error (Bonferroni, Holm) or false discovery rate (Benjamini–Hochberg).
   - **Interval estimation**: exact, asymptotic, and bootstrap confidence intervals, judged by coverage probability.
   - **Machine-learning connections**: statistical learning theory's generalisation bounds are frequentist in character (guarantees over repeated draws of training sets), and [[Conformal Prediction]] is a distinctly frequentist contribution to modern uncertainty quantification — distribution-free prediction sets with guaranteed finite-sample marginal coverage, requiring only exchangeability, now widely used to wrap black-box models including neural networks.
+
+  ## Current Landscape
+
+  - **Conformal prediction as the growth frontier**: a 2024-2025 survey ("Conformal Prediction: A Data Perspective", arXiv:2410.06494, revised March 2025) describes CP as, at present, the only uncertainty-quantification framework that genuinely deserves the label *distribution-free*, offering finite-sample coverage regardless of the base model — a purely frequentist (repeated-sampling / exchangeability) guarantee now spreading into large-scale and language-model applications.
+  - **Beyond exchangeability**: 2025 research (e.g. NeurIPS 2025 work on conformal policy evaluation in reinforcement learning) extends CP to temporally dependent, distribution-shifted settings via weighting and time-aware calibration, precisely because the marginal-coverage guarantee otherwise breaks when exchangeability fails.
+  - **Frequentist-Bayesian pragmatism**: modern practice increasingly evaluates methods — including Bayesian ones — by their frequentist operating characteristics ("calibrated Bayes"), choosing machinery per problem rather than by philosophical allegiance.
+  - **Reproducibility pressure**: the replication crisis continues to drive scrutiny of p-value misuse, pre-registration, and error-rate control, keeping frequentist evaluation (Type I/II error, coverage, FDR) central to regulatory and scientific standards.
+
+  **Sources**:
+  - https://arxiv.org/abs/2410.06494
+  - https://papers.nips.cc/paper_files/paper/2025/file/ce37ba67dd12c4e11ca735da9d60295f-Paper-Conference.pdf

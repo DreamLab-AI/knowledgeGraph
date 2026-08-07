@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -128,3 +128,17 @@ public:: true
   - **Guidance**: classifier-free guidance scales the difference between conditional and unconditional predictions, typically at scales 5–9.
 
   Fine-tuning practice ranges from full checkpoint training to parameter-efficient LoRA adapters of a few tens of megabytes, enabling per-style and per-subject customisation that closed models cannot match. The open ecosystem — Hugging Face Diffusers, Civitai model sharing, ControlNet, IP-Adapter — remains Stable Diffusion's decisive advantage, even as licensing tightened from SD3 onwards and successors such as FLUX (from the original research team at Black Forest Labs) compete for the open-weights community.
+
+  ## Current Landscape
+
+  - **Stable Diffusion 3.5 is the current SD line**: released October 2024 as a Multimodal Diffusion Transformer (MMDiT) with three fixed text encoders (dual CLIP + T5-XXL), it ships as 3.5 Large (~8.1B parameters), 3.5 Large Turbo (4-step distilled), and 3.5 Medium (~2.5B, added 29 October 2024); Stability AI deprecated the SD3.0 API on 17 April 2025 and auto-upgraded users to the 3.5 endpoints.
+  - **Licensing**: SD3.5 is free for commercial use under roughly $1M annual revenue, with an enterprise licence required above that; users retain rights to generated outputs.
+  - **FLUX has taken the open-weights frontier**: Black Forest Labs (the original latent-diffusion team) released FLUX.2 [dev], a 32B open-weight model with multi-reference support for up to 10 images, on 25 November 2025 — distinct from the earlier 12B FLUX.1 [dev] — with a cloud-only FLUX.2 [max] tier above it.
+  - **SDXL endures as the ecosystem default**: despite newer models, SDXL retains the most mature LoRA and ControlNet tooling and runs comfortably on ~12GB consumer GPUs, making it the pragmatic open baseline in 2025–2026.
+  - **Real-time generation**: adversarial-diffusion-distillation variants (SDXL Turbo) reach one-to-few-step synthesis, and SD3.5 Large runs in a few seconds on an RTX 4090.
+
+  **Sources**:
+  - https://stability.ai/news-updates/introducing-stable-diffusion-3-5
+  - https://huggingface.co/stabilityai/stable-diffusion-3.5-large
+  - https://platform.stability.ai/docs/release-notes
+  - https://www.digitalapplied.com/blog/local-image-generation-flux-stable-diffusion-comfyui-2026

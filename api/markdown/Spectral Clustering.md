@@ -83,11 +83,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -122,6 +122,17 @@ public:: true
   - **Complexity**: dense eigendecomposition is O(n³); practical implementations use sparse k-NN graphs with Lanczos/ARPACK solvers, or approximations such as the Nyström method and landmark-based spectral clustering to reach large n.
   - **Sensitivities**: results depend strongly on the similarity kernel and its bandwidth σ, the graph-construction choice, and k-means initialisation in the embedded space; self-tuning variants adapt σ locally.
   - **Connections**: eigenvectors of `L_rw` relate to random-walk mixing and diffusion maps; Laplacian eigenmaps use the identical embedding for manifold learning; graph neural networks' spectral convolutions descend from the same Laplacian analysis.
+
+  ## Current Landscape
+
+  - **Speaker diarisation remains the flagship application**: production pipelines such as pyannote.audio 2.1 (Interspeech 2023) extract neural speaker embeddings (x-vectors/ECAPA-TDNN), build a cosine-similarity affinity matrix, and spectrally cluster it, with the number of speakers read from the eigengap.
+  - **Auto-tuning the affinity matrix is the active research edge**: the persistent difficulty of choosing the kernel bandwidth and pruning threshold before forming the Laplacian drives 2024 work such as SC-pNA (self-tuning spectral clustering on a p-neighbourhood-retained affinity matrix), which derives its pruning parameters directly from the data and outperforms prior adaptive methods on DIHARD-III at lower compute cost.
+  - **Normalised maximum-eigengap (NME-SC) back-ends** and Gaussian-blur affinity refinement are now standard components in state-of-the-art diarisation, having overtaken older Kaldi x-vector agglomerative-clustering systems.
+  - **Scalability**: sparse k-NN graphs with Lanczos/ARPACK solvers and Nyström approximation remain the practical route to large n, keeping spectral clustering viable where dense O(n³) eigendecomposition is infeasible.
+
+  **Sources**:
+  - https://arxiv.org/html/2410.00023v1
+  - https://www.isca-archive.org/interspeech_2023/bredin23_interspeech.pdf
 
 - ### Provenance
   - sources::

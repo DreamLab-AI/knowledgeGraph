@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -101,4 +101,16 @@ public:: true
 
   ## Current Landscape
 
-  Self-regulation has been the de facto governance mode during the frontier-model boom, simply because capability outran legislation. Leading developers published responsible scaling and preparedness frameworks that commit them to capability evaluations and to pausing or gating deployment when defined risk thresholds are crossed, and several signed voluntary safety commitments with governments. Critics note the structural weakness: voluntary regimes depend on firms honouring their own promises, are revisable at will, and can substitute the appearance of governance for the substance. The prevailing view treats self-regulation as a genuine but partial layer — valuable for encoding technical practice quickly, but requiring external evaluation by bodies like national safety institutes and, ultimately, statutory backstops to be credible.
+  Self-regulation has been the de facto governance mode during the frontier-model boom, simply because capability outran legislation. Leading developers published responsible scaling and preparedness frameworks that commit them to capability evaluations and to pausing or gating deployment when defined risk thresholds are crossed, and several signed voluntary safety commitments with governments.
+
+  - **Frontier AI Safety Commitments (May 2024)**: Announced at the Seoul AI Safety Summit, sixteen frontier developers pledged to publish safety frameworks, define intolerable-risk thresholds, and share information with governments; the signatory count had grown to over twenty by 2026.
+  - **White House voluntary commitments (July 2023)**: Seven US labs (Amazon, Anthropic, Google, Inflection, Meta, Microsoft, OpenAI) made the first high-profile voluntary safety pledges, with a further wave (Adobe, IBM, Nvidia, Palantir, Salesforce, Scale AI, Stability AI) in September 2023 and Apple in July 2024.
+  - **Uneven follow-through**: As of December 2025, a METR survey identified only twelve frontier companies as having published detailed responsible-scaling or preparedness policies, against the twenty-plus that signed on in principle.
+  - **Revisability in practice (2026)**: Anthropic's Responsible Scaling Policy v3.0 (effective 24 February 2026) replaced its original threshold-triggered pause commitment with a two-part test the company itself determines — a concrete illustration of the critique that voluntary commitments are revisable at will and can weaken over time without public consultation.
+  - **The prevailing view** treats self-regulation as a genuine but partial layer — valuable for encoding technical practice quickly, but requiring external evaluation by bodies like national safety institutes and, ultimately, statutory backstops to be credible.
+
+  **Sources**:
+  - https://aisecurityandsafety.org/en/frameworks/frontier-ai-safety-commitments/
+  - https://metr.org/assets/common_elements_of_frontier_ai_safety_policies.pdf
+  - https://www-cdn.anthropic.com/e670587677525f28df69b59e5fb4c22cc5461a17.pdf
+  - https://forum.nls.ac.in/ijlt-blog-post/voluntary-commitment-and-where-private-ai-safety-frameworks-substitute-for-governance/

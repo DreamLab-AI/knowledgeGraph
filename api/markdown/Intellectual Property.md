@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -111,6 +111,11 @@ public:: true
 
   - **Framework treaties**: the Berne Convention (copyright), the Paris Convention (industrial property), and the WTO TRIPS Agreement set international minimum standards, administered largely through WIPO.
   - **UK regime**: the Copyright, Designs and Patents Act 1988 and the Patents Act 1977, with the UK Intellectual Property Office handling registration; post-Brexit, UK and EU trade mark and design rights have diverged.
-  - **AI flashpoints**: Getty Images v Stability AI (UK High Court), the New York Times v OpenAI litigation, and consultations on text-and-data-mining exceptions in the UK and EU.
-  - **Industry practice**: provenance standards such as C2PA content credentials, model training on licensed datasets, and indemnification offers from major AI vendors are emerging as commercial responses to unresolved legal questions.
+  - **AI flashpoints**: In *Getty Images v Stability AI* [2025] EWHC 2863 (Ch), handed down on **4 November 2025**, the England & Wales High Court (Mrs Justice Joanna Smith) largely rejected Getty's claims — Getty had dropped its primary training/output copyright claims for lack of evidence that copying occurred in the UK, and the court held that Stable Diffusion's model weights are not an "infringing copy" under s.27 CDPA because they never stored or reproduced the training works, so secondary infringement by importation failed; only a "historic and extremely limited" trade-mark infringement (watermark generation) was found. The US *New York Times v OpenAI* litigation and UK/EU consultations on text-and-data-mining exceptions remain live.
+  - **Industry practice**: provenance standards such as C2PA content credentials (now aligned with ISO/IEC 21617 JPEG Trust), model training on licensed datasets, and indemnification offers from major AI vendors are emerging as commercial responses to unresolved legal questions.
   - IP valuation increasingly dominates corporate balance sheets: intangible assets account for the large majority of S&P 500 market value, making IP governance a board-level concern rather than a purely legal one.
+
+  **Sources**:
+  - https://www.judiciary.uk/wp-content/uploads/2025/11/Getty-Images-v-Stability-AI.pdf
+  - https://www.pinsentmasons.com/out-law/news/gettys-copyright-case-against-stability-ai-fails
+  - https://www.theguardian.com/media/2025/nov/04/stabilty-ai-high-court-getty-images-copyright

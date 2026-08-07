@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:foreign-exchange",
   "domain": "finance",
-  "definition": "The global, decentralised market and settlement activity in which one currency is exchanged for another at agreed exchange rates, spanning spot transactions, forwards, swaps, and options. Trading over seven trillion US dollars daily, it is the largest financial market in the world, providing the currency conversion that underlies international trade, investment, and cross-border payments, with settlement risk managed through mechanisms such as CLS payment-versus-payment and liquidity intermediated by dealer banks and correspondent networks.",
+  "definition": "The global, decentralised market and settlement activity in which one currency is exchanged for another at agreed exchange rates, spanning spot transactions, forwards, swaps, and options. Trading around nine and a half trillion US dollars daily (BIS 2025 Triennial Survey), it is the largest financial market in the world, providing the currency conversion that underlies international trade, investment, and cross-border payments, with settlement risk managed through mechanisms such as CLS payment-versus-payment and liquidity intermediated by dealer banks and correspondent networks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-instruments",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.8,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],

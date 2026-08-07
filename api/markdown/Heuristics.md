@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -109,6 +109,19 @@ public:: true
   - **Descriptive vs. prescriptive** (psychology): the heuristics-and-biases tradition documents deviations from normative models, whilst fast-and-frugal research prescribes simple rules for specific environments.
   - **Effort–accuracy trade-off**: heuristics reduce computation by ignoring information; whether this hurts accuracy depends on the statistical structure of the environment (less-is-more effects occur when cue validities are skewed and samples small).
   - **Applications**: triage rules in medicine, one-reason decision rules in finance, branch-and-bound pruning, and reward shaping in reinforcement learning all deploy heuristics deliberately.
+
+  ## Current Landscape
+
+  - Heuristics research has migrated into AI evaluation: a large-scale benchmark of 30 cognitive biases across 20 state-of-the-art large language models (30,000 generated tests, published 2024–2025) reported evidence of all 30 tested biases in at least some models, including anchoring, availability, and framing effects.
+  - A 2024 replication of Jacowitz and Kahneman's classic anchoring paradigm across four LLMs (GPT-4, GPT-3.5, Gemini Pro, Claude 2) measured a mean anchoring index of 0.37, comparable to the human benchmark of 0.49 — machine judgement inherits human shortcut behaviour from training data.
+  - Findings presented at EMNLP 2025 indicate that reasoning models with long chain-of-thought are measurably less prone to the anchoring effect, suggesting deliberative computation partially substitutes for explicit debiasing.
+  - Mitigation is an active front: frameworks such as BiasBuster (16,800 evaluation prompts) and awareness-reminder prompting reduce measured bias in high-stakes decision tasks, echoing the psychology literature's debiasing programme.
+
+  **Sources**:
+  - https://arxiv.org/html/2410.15413v2
+  - https://arxiv.org/html/2410.02820v3
+  - https://www.sciencedirect.com/science/article/pii/S2214635024000868
+  - https://aclanthology.org/anthology-files/anthology-files/pdf/findings/2025.findings-emnlp.240.pdf
 
 - ### Provenance
   - sources::

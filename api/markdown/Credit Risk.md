@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -109,4 +109,11 @@ public:: true
 
   ## Current Landscape
 
-  Machine learning has reshaped credit assessment: gradient-boosted models and, increasingly, explainable neural approaches are used for retail scoring, while regulators require that adverse decisions remain interpretable and free of proscribed bias. Credit risk modelling also intersects fraud detection, since default and fraud losses share data pipelines and early-warning systems. Post-2023 banking stress episodes renewed supervisory focus on concentration risk and on the interaction between credit deterioration and interest-rate cycles, reinforcing credit risk's position at the centre of prudential regulation.
+  - **Basel 3.1 in the UK**: after a one-year delay announced by the PRA in January 2025 (citing US implementation uncertainty and competitiveness), the final rules in policy statement PS1/26 (published 20 January 2026) take effect on 1 January 2027, with the internal-model approach for market risk deferred to 1 January 2028 and full implementation — including the output floor transition — still targeted for 1 January 2030. PS1/26 also replaces CRR definitions of probability of default, loss given default and conversion factor with new PRA Rulebook glossary definitions.
+  - **Capital impact**: the PRA estimates Tier 1 capital requirements for major UK firms will be virtually unchanged in aggregate (increase below 1% at end of transition).
+  - **EU divergence**: most CRR3 credit-risk provisions have applied in the EU since 1 January 2025, while the market-risk (FRTB) start was postponed by delegated act to 1 January 2027 — leaving credit-risk rules ahead of trading-book rules on both sides of the Channel; a September 2025 European Parliament analysis noted only 8 of 20 Basel Committee members had implemented the full final Basel III framework.
+  - **Modelling practice**: machine learning has reshaped credit assessment — gradient-boosted models and, increasingly, explainable neural approaches are used for retail scoring — while regulators require adverse decisions to remain interpretable and free of proscribed bias, and IFRS 9 expected-credit-loss provisioning keeps forward-looking macro scenarios inside the credit models. Post-2023 banking stress episodes renewed supervisory focus on concentration risk and on the interaction between credit deterioration and interest-rate cycles.
+
+  **Sources**:
+  - https://www.bankofengland.co.uk/prudential-regulation/publication/2026/january/implementation-of-the-basel-3-1-final-rules-policy-statement
+  - https://www.bankofengland.co.uk/news/2025/january/the-pra-announces-a-delay-to-the-implementation-of-basel-3-1

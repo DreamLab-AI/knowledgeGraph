@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -106,7 +106,14 @@ public:: true
   ## Current Landscape
 
   - **Dominant open-source engines**: Suricata (multi-threaded NIDS/IPS), Zeek (network security monitoring and protocol analysis), and Wazuh (HIDS/XDR), frequently deployed together.
+  - **Suricata 8.0 (GA 8 July 2025)**: the first major release in two years added a runtime plugin architecture (protocol parsers, loggers, and detection keywords registerable at runtime), eight new application-layer protocols, 107 new rule keywords, JA4 fingerprinting alongside JA3, an experimental inline firewall mode, and converted LibHTP plus several parsers to Rust for memory safety; the 7.0 branch remains a supported LTS line.
+  - **Active security maintenance**: the 16 September 2025 releases (8.0.1 and 7.0.12) fixed four CVEs — CVE-2025-59147 through CVE-2025-59150, three rated high severity — and the 8.0.x line has continued with regular point releases into 2026.
   - **Convergence with EDR/XDR**: standalone IDS capability has been absorbed into endpoint detection and response and extended detection platforms, correlating network, host, and identity telemetry in SIEM/SOAR pipelines.
   - **Encrypted traffic**: pervasive TLS has pushed network detection towards metadata analysis (JA3/JA4 fingerprinting, flow analytics) rather than payload inspection.
   - **Machine learning**: anomaly-based detection increasingly uses unsupervised and sequence models, though alert triage cost and adversarial evasion remain unsolved research problems.
   - **Compliance drivers**: PCI DSS, NIS2, and ISO 27001 all effectively mandate intrusion detection capability, keeping it a baseline control in regulated environments.
+
+  **Sources**:
+  - https://suricata.io/2025/07/08/suricata-8-0-0-released/
+  - https://suricata.io/2025/09/16/suricata-8-0-1-and-7-0-12-released/
+  - https://suricata.io/2025/07/23/suricata-8-always-evolving-constantly-improving/

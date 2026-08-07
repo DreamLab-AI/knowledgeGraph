@@ -81,11 +81,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -122,3 +122,18 @@ public:: true
   - **Temporal planning**: PDDL 2.1 durative actions, timelines, and chronicles; planners such as OPTIC and LPG interleave symbolic search with STP consistency checks.
   - **Event calculus**: axiomatises `Initiates`, `Terminates`, and `HoldsAt` predicates to reason about fluent persistence under events, supporting narrative understanding and legal/process reasoning.
   - **Temporal knowledge graphs and neural approaches**: embedding-based models (e.g. TNTComplEx) and temporal question answering extend the classical toolkit to large, noisy corpora, whilst large language models exhibit partial but unreliable temporal competence — a gap that keeps explicit temporal reasoning relevant in neuro-symbolic architectures.
+
+  ## Current Landscape
+
+  LLM temporal reasoning became a distinct evaluation and neuro-symbolic research area in 2024-25:
+
+  - **Controlled benchmarks expose brittleness**: Google Research's *Test of Time* (ToT, 2024/2025) separates temporal *semantics/logic* from temporal *arithmetic* on synthetic graphs, showing frontier models (GPT-4, Gemini 1.5 Pro, Claude-3) stay sensitive to graph structure, size, and fact order.
+  - **Neuro-symbolic offloading works**: TReMu (ACL Findings 2025) has LLM-agents generate Python for temporal calculations over time-aware memory, lifting GPT-4o from 29.83 to 77.67 on multi-session-dialogue temporal QA.
+  - **Test-time scaling closes the gap**: TISER (ACL 2025) uses explicit timeline construction plus self-reflection to let small open models rival or beat closed models on TGQA, TempReason, TimeQA and out-of-distribution ToT.
+  - **Abductive symbolic reasoning sets zero-shot SOTA**: NeSTR (arXiv, December 2025) reaches a macro-F1 of 89.7 with GPT-4o-mini across TimeQA and TempReason without fine-tuning, improving TempReason-L3 F1 from 61.0 to 90.0.
+
+  **Sources**:
+  - https://research.google/pubs/test-of-time-benchmarking-llms-on-temporal-reasoning/
+  - https://aclanthology.org/2025.findings-acl.972.pdf
+  - https://aclanthology.org/2025.acl-long.1358.pdf
+  - https://arxiv.org/html/2512.07218v1

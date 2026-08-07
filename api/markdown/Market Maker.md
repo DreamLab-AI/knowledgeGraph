@@ -97,11 +97,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -130,3 +130,14 @@ public:: true
   ## Current Landscape
 
   In digital-asset markets the role bifurcated. Centralised crypto exchanges replicate the traditional model, with professional firms (Wintermute, GSR, Cumberland) making markets around the clock. Decentralised finance replaced the dealer entirely: the [[Automated Market Maker]] embeds pricing in a smart contract — Uniswap's constant-product formula being the canonical curve — and sources inventory from permissionless liquidity pools, so passive depositors collectively play the market maker's role and earn fees whilst bearing impermanent loss instead of quoted-spread risk. Later designs (concentrated liquidity in Uniswap v3, hybrid RFQ systems, on-chain order books on high-throughput chains) push [[Capital Efficiency]] back towards professional [[Market Making]], and in practice the two worlds have converged: sophisticated firms now dominate concentrated-liquidity provision, quoting algorithmically on-chain much as they do off-chain.
+
+  Recent developments:
+
+  - **Concentrated liquidity carried forward**: the concentrated-liquidity model first introduced in Uniswap v3 — LPs allocating capital to a chosen price range rather than the full (0, ∞) curve — is retained as the core implementation in Uniswap v4, keeping active range management central to on-chain market making.
+  - **Intent-based, filler-driven flow**: UniswapX runs an auction-based, intent protocol where professional market makers ("fillers") compete to fill signed user swap orders from their own inventory, private pools, cross-chain bridges or on-chain AMMs — importing dealer-style off-chain market making onto the DEX rail.
+  - **Empirical convergence**: 2024–2025 research on Uniswap v3 finds that private-market-maker internalisation of order flow via aggregators materially reshapes on-chain liquidity depth and concentration, evidencing that professional firms, not passive depositors, now drive much of DEX liquidity.
+  - **New primitives**: v4 adds a Liquidity Launchpad using a Continuous Clearing Auction to discover a fair price and auto-seed a pool, extending market-making mechanics to token bootstrapping.
+
+  **Sources**:
+  - https://developers.uniswap.org/docs/liquidity/overview
+  - https://developers.uniswap.org/docs/get-started/concepts/liquidity-providers/concentrated-liquidity

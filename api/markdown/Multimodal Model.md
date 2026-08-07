@@ -87,11 +87,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -126,3 +126,9 @@ public:: true
   - **Techniques in flux**: unified any-to-any token spaces, early-fusion versus late-fusion trade-offs, native-resolution vision encoders, and multimodal RLHF for grounding and safety are active research fronts.
   - **Evaluation**: MMMU, MathVista, DocVQA and video benchmarks probe multimodal reasoning; hallucinated visual detail and brittle spatial reasoning remain the persistent failure modes.
   - **Trajectory**: modality coverage keeps widening (3D, sensor streams, biosignals), and multimodal perception is now assumed infrastructure for agentic systems that operate software and robots rather than a research niche.
+  - **2025 milestones**: Google's Gemini 2.5 Pro (March 2025) processes text, image, audio and video natively in a 1M-token context (2M announced); Meta's Llama 4 (early 2026) adopts an early-fusion native-multimodal backbone; open-weight Qwen3-VL variants report ~97% on DocVQA, leading document-centric tasks.
+  - **Evidence base**: the MMMU expert-level benchmark had 61 models evaluated as of early 2026, with top scores around 80% — a marker of how fast joint visual-textual reasoning has advanced while vision-only variants (MMMU-Pro) remain far harder.
+
+  **Sources**:
+  - https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/
+  - https://www.codegpt.co/blog/ai-coding-models-2025-comprehensive-guide

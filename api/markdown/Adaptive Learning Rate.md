@@ -89,11 +89,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -134,3 +134,17 @@ public:: true
   - Adaptive methods tolerate a wide range of base rates but still need one; η ≈ 10⁻³ (Adam) is the common starting point, far lower for fine-tuning.
   - Known caveats: convergence counterexamples for Adam (addressed by AMSGrad), and a generalisation gap versus tuned SGD with momentum on some vision tasks, which keeps plain [[Stochastic Gradient Descent]] competitive in image classification.
   - Recent variants — AdaFactor (memory-efficient second moments), LAMB (layer-wise adaptation for huge batches), Lion, and second-order-flavoured methods such as Shampoo/SOAP — continue the same design theme at larger scale.
+
+  ## Current Landscape
+
+  - **Muon breaks Adam's monopoly**: proposed by Keller Jordan in late 2024, the Muon optimiser (MomentUm Orthogonalised by Newton-Schulz) orthogonalises the momentum *matrix* of 2D hidden-layer weights rather than scaling each scalar independently, and stores only one buffer (momentum) versus AdamW's two (m and v), cutting optimiser-state memory by ~33% for <1% extra FLOPs.
+  - **~2x compute efficiency at scale**: Moonshot AI's scaling-law study "Muon is Scalable for LLM Training" (arXiv:2502.16982, 2025) found Muon reaches AdamW-equivalent loss with roughly 52% of the training FLOPs, after adding decoupled weight decay and an RMS rescale that matches AdamW's update magnitude so learning rates transfer.
+  - **Frontier deployment**: Muon and its stabilised descendant MuonClip (with QK-Clip) trained trillion-parameter models including Moonshot's Kimi K2 (pre-trained on 15.5T tokens with zero loss spikes, arXiv:2507.20534) and GLM-5; NVIDIA added Muon support to Megatron in 2026.
+  - **Hybrid, not replacement**: Muon applies only to 2D hidden weight matrices; embeddings, output heads, biases and layer-norm parameters still use AdamW — so Adam-family adaptive methods remain the backbone.
+  - **Active research**: AdaMuon (arXiv:2507.11005, 2025) adds per-parameter second-moment adaptivity on top of Muon; MuonAll and other 2025 variants extend orthogonalised updates to all parameters for fine-tuning.
+
+  **Sources**:
+  - https://arxiv.org/html/2502.16982v1
+  - https://arxiv.org/html/2507.20534v1
+  - https://developer.nvidia.com/blog/advancing-emerging-optimizers-for-accelerated-llm-training-with-nvidia-megatron/
+  - https://arxiv.org/html/2507.11005v1

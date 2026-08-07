@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -105,8 +105,13 @@ public:: true
 
   ## Current Landscape
 
-  - **Languages and standards**: SysML v1 (an OMG UML profile) dominates deployed practice; SysML v2, released by the OMG with a native metamodel, textual notation and standard API, is the focus of current tool migration. Related standards include UAF for enterprise architecture and OSLC for tool interoperability.
+  - **SysML v2 final adoption (July 2025)**: on 21 July 2025 the OMG approved SysML v2.0 for *final* adoption, together with the Kernel Modeling Language (KerML) 1.0 that gives it a formal semantic foundation and the SysML v2 API & Services 1.0 for tool interoperability — the culmination of an effort begun with the 2017 RFP and the June 2023 beta. SysML v1 (an OMG UML profile) still dominates deployed practice and is expected to remain in use for several years during migration.
+  - **Languages and standards**: SysML v2 brings a native metamodel with both graphical and textual syntax and a standardised API; related standards include UAF for enterprise architecture and OSLC for tool interoperability. Commercial and open-source SysML v2 tools began appearing through 2025.
   - **Tooling**: Dassault Systèmes Cameo (MagicDraw), IBM Rhapsody, Sparx Enterprise Architect, and the open-source Eclipse Capella (with its Arcadia method) are the principal platforms; SysML v2 reference implementations and Jupyter-based tooling are maturing rapidly.
   - **Integration trend**: the frontier is closing the loop between the descriptive system model and analytical models — co-simulation via FMI, parametric solvers, and requirements tools — so that a change to an architecture element re-triggers affected analyses automatically.
   - **Adoption evidence**: INCOSE's Systems Engineering Vision 2035 positions MBSE as the default mode of systems engineering; surveys consistently report reduced integration defects and rework on programmes that adopt it, at the cost of up-front investment in modelling skills and tool infrastructure.
   - **UK context**: MBSE underpins major UK programmes in rail (Network Rail), defence (Ministry of Defence acquisition guidance) and nuclear, and is taught in dedicated MSc programmes at Cranfield, Loughborough and UCL.
+
+  **Sources**:
+  - https://www.omg.org/news/releases/pr2025/07-21-25.htm
+  - https://www.omg.org/sysml/

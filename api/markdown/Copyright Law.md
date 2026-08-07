@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -109,6 +109,17 @@ public:: true
 
   ## Current Landscape
 
-  Copyright litigation against AI developers has become a defining feature of the field: authors, news organisations, image libraries, and record labels have sued model providers in the US, UK, and Germany over training-data use, with early decisions split on fair use and several disputes settling on licensing terms. In parallel, a licensing market is emerging in which publishers strike paid data-access deals with AI companies — an outcome copyright law is designed to enable through [[Licensing]].
+  Copyright litigation against AI developers has become a defining feature of the field, and the first landmark outcomes point in opposite directions:
 
-  Legislatures are moving too. The EU AI Act obliges general-purpose AI providers to publish training-content summaries and to respect the DSM Directive's TDM opt-out, effectively exporting EU copyright reservations worldwide. The UK has consulted repeatedly on a broad TDM exception with rights-reservation machinery, drawing strong resistance from the [[Creative Industries]]. Machine-readable opt-outs (robots.txt conventions, metadata standards) remain contested and inconsistently honoured, keeping the boundary between lawful mining and infringement the sharpest edge of AI governance.
+  - **Getty Images v Stability AI** ([2025] EWHC 2863 (Ch), judgment 4 November 2025): the first major UK generative-AI ruling. Getty abandoned its primary training-claim mid-trial (unable to prove training occurred in the UK); Mrs Justice Joanna Smith rejected secondary copyright infringement, holding that Stable Diffusion's model weights do not contain or store copies of training works and so are not "infringing copies" under the CDPA 1988 — while confirming that an intangible "article" can in principle be an infringing copy. Only "extremely limited" trade-mark infringement was found for early watermark-reproducing outputs. The copyright interpretation is under appeal.
+  - **Bartz v Anthropic** (N.D. Cal.): the June 2025 summary judgment held that training on lawfully acquired books was transformative fair use, but that downloading books from pirate libraries was not; the resulting US$1.5 billion class settlement covering roughly 482,000 works — the largest copyright class settlement in history — received final court approval on 20 July 2026.
+  - **EU AI Act**: Article 53 obliges general-purpose AI providers to publish "sufficiently detailed" training-content summaries (Commission template, obligations applying from 2 August 2025, with full enforcement from 2 August 2026 and fines up to €15m or 3% of global turnover) and to respect the DSM Directive's TDM opt-out — effectively exporting EU copyright reservations worldwide.
+  - **UK policy**: after its 2024-25 consultation — in which 81% of respondents preferred strengthening copyright so licensing is required for AI training — the government published its Report on Copyright and Artificial Intelligence (April 2026), stepping back from the previously preferred broad TDM-with-opt-out exception and weighing transparency and licensing-first approaches, under strong pressure from the [[Creative Industries]].
+
+  In parallel, a paid licensing market between publishers and AI companies continues to grow — an outcome copyright law is designed to enable through [[Licensing]] — while machine-readable opt-outs (robots.txt conventions, metadata standards) remain contested and inconsistently honoured, keeping the boundary between lawful mining and infringement the sharpest edge of AI governance.
+
+  **Sources**:
+  - https://www.judiciary.uk/wp-content/uploads/2025/11/Getty-Images-v-Stability-AI.pdf
+  - https://www.gov.uk/government/publications/report-and-impact-assessment-on-copyright-and-artificial-intelligence/report-on-copyright-and-artificial-intelligence
+  - https://natlawreview.com/article/ai-vs-authors-update-court-approves-historic-anthropic-settlement-while-meta
+  - https://www.lw.com/en/insights/getty-images-v-stability-ai-english-high-court-rejects-secondary-copyright-claim

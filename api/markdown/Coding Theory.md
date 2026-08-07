@@ -83,11 +83,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -121,6 +121,19 @@ public:: true
   - **Code families**: linear block codes (Hamming, BCH, Reed-Solomon, Reed-Muller), convolutional codes with Viterbi decoding, and modern graph-based codes (LDPC, turbo, polar) decoded by belief propagation or successive cancellation.
   - **Deployments**: 5G NR uses LDPC for data and polar codes for control channels; NAND flash and hard drives use LDPC; deep-space links use concatenated and turbo codes; distributed storage (HDFS, Ceph, S3) uses Reed-Solomon and locally repairable codes.
   - **Research frontiers**: locally repairable and regenerating codes for storage bandwidth, quantum error-correcting codes (surface and LDPC-type qLDPC codes), DNA storage codes, and coded computation for straggler-tolerant distributed computing.
+
+  ## Current Landscape
+
+  - **Below-threshold quantum error correction demonstrated**: Google's Willow processor achieved the first below-threshold surface-code memories (announced December 2024, published in Nature vol. 638, 2025) — logical error suppressed by Λ = 2.14 per distance-2 increase, culminating in a 101-qubit distance-7 code at 0.143% error per cycle, with real-time decoding at 63 µs average latency.
+  - **qLDPC codes are the current frontier**: high-rate quantum LDPC codes offer far better physical-to-logical qubit ratios than the surface code; QuEra encoded up to 96 logical qubits with a [[16,6,4]] high-rate code on neutral atoms (Nature, 2026), and IBM's Kookaburra module (2026) introduces qLDPC quantum memory on its roadmap to fault tolerance.
+  - **Decoding hardware catches up**: a 2025 GPU-accelerated belief-propagation decoder for qLDPC codes (DLR, arXiv:2508.07879) achieved sub-63 µs latencies on commodity RTX-class GPUs — beating the real-time threshold set by Willow's surface-code decoder — for codes as large as [[784, 24, 24]].
+  - **Classical deployments stable**: 5G NR continues to use LDPC for data and polar codes for control channels; both families, plus successors, are under study for 6G channel coding.
+  - **Complexity connections remain live**: code-based cryptography (McEliece-family schemes) remains among the post-quantum candidate families, and qLDPC codes with constant encoding rate have been shown to reduce fault-tolerance overhead to constant factors.
+
+  **Sources**:
+  - https://research.google/blog/making-quantum-error-correction-work/
+  - https://inspirehep.net/literature/2821840
+  - https://errorcorrectionzoo.org/c/qldpc
 
 - ### Provenance
   - sources::

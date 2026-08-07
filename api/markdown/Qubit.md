@@ -61,11 +61,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -93,3 +93,15 @@ public:: true
   ## Technical Details
 
   Physical qubits are imperfect: interaction with the environment causes decoherence, characterised by relaxation time T₁ and dephasing time T₂, and gates introduce errors at rates around 10⁻³–10⁻⁴ on today's best hardware. Leading implementations trade off differently — superconducting transmons switch in nanoseconds but must be held at ~15 millikelvin and cohere for microseconds to milliseconds; trapped ions offer minutes-scale coherence and the highest two-qubit fidelities but slower gates; photonic qubits travel at light speed and resist decoherence but are hard to make interact; neutral-atom arrays scale to thousands of physical qubits with reconfigurable connectivity. Because error rates far exceed what long algorithms tolerate, quantum error correction encodes one logical qubit redundantly across many physical qubits (the surface code needs roughly a thousand physical qubits per logical qubit at current fidelities), making the physical-to-logical ratio the key metric on every hardware roadmap. Distinct notions — the physical qubit, the error-corrected logical qubit, and the algorithmic qubit counted by applications — should not be conflated when comparing platforms.
+
+  ## Current Landscape
+
+  - **Logical qubits are now real (Dec 2024 / Feb 2025)**: Google's 105-qubit Willow chip encoded a 101-physical-qubit distance-7 surface-code logical qubit that lives *below threshold* — its lifetime exceeds that of its best physical qubit by ~2.4× — demonstrating that adding physical qubits can now reduce, not increase, the logical error rate.
+  - **Multi-logical-qubit systems (2024–2025)**: Microsoft and Quantinuum entangled 12 logical qubits (Sept 2024), and neutral-atom groups (Harvard–QuEra) demonstrated fault-tolerant operation across hundreds of physical qubits, moving beyond single-logical-qubit memories toward computation.
+  - **Physical-to-logical overhead**: at current fidelities the surface code still needs on the order of a thousand physical qubits per logical qubit; reducing this ratio (via better fidelities and quantum LDPC codes) is the central metric on every roadmap, e.g. IBM's Starling target of 200 logical qubits by 2029.
+  - **Record low error rates (2025)**: per-operation error rates as low as ~1.5×10⁻⁷ have been reported on leading platforms, and algorithmic-fault-tolerance techniques promise up to ~100× reductions in error-correction overhead.
+
+  **Sources**:
+  - https://blog.google/innovation-and-ai/technology/research/google-willow-quantum-chip/
+  - https://www.moodys.com/web/en/us/insights/quantum/quantum-computings-six-most-important-trends-for-2025.html
+  - https://www.spinquanta.com/news-detail/quantum-computing-industry-trends-2025-breakthrough-milestones-commercial-transition

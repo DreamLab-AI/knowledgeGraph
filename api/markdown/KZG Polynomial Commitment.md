@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -116,6 +116,18 @@ public:: true
   Setup publishes {g^(τ^i)} for i up to the degree bound. Committing to f computes C = g^f(τ) as a linear combination of these powers. To open at z, the prover computes the quotient q(X) = (f(X) − y)/(X − z) — a polynomial precisely when f(z) = y — and sends π = g^q(τ). The verifier checks one pairing equation, e(C / g^y, h) = e(π, h^(τ−z)), in constant time. Batch openings amortise many evaluations into a single proof.
 
   Trade-offs against alternatives are well mapped: FRI-based commitments (used in STARKs) need no trusted setup and are plausibly post-quantum but have larger, logarithmic-size proofs; inner-product arguments (Bulletproofs) avoid setup at the cost of linear verification. KZG's pairing dependence means it is not post-quantum secure, which motivates ongoing research into lattice-based and hash-based successors for Ethereum's longer-term roadmap.
+
+  ## Current Landscape
+
+  - **Mainnet debut**: KZG blob commitments went live with the Cancun-Deneb ("Dencun") upgrade on 13 March 2024 (EIP-4844, proto-danksharding), each blob committing 4,096 field elements; blob data is pruned after 4,096 epochs (~18 days) while the KZG commitment persists in the execution layer.
+  - **Trusted setup ceremony**: the EIP-4844 KZG Summoning Ceremony ran January–March 2023 and drew over 141,000 contributions, operating under a 1-of-N trust assumption (secure if at least one participant discarded their secret).
+  - **Capacity scaling**: the Pectra upgrade (7 May 2025, EIP-7691) doubled the blob target from 3 to 6 and the maximum from 6 to 9.
+  - **Data availability sampling shipped**: the Fusaka upgrade (3 December 2025) activated PeerDAS (EIP-7594), the 1-D data-availability-sampling scheme that lets nodes verify random blob samples against KZG commitments — the first production step toward full danksharding.
+  - **Security assurance**: in 2025 the Ethereum Foundation commissioned zkSecurity to audit the PeerDAS KZG libraries (blst, c-kzg-4844, rust-eth-kzg, go-eth-kzg), reflecting KZG's status as safety-critical consensus infrastructure.
+
+  **Sources**:
+  - https://ethereum.org/roadmap/danksharding/
+  - https://security.ethereum.org/audits/2025_KZG_Audit_Report_zkSecurity.pdf
 
 - ### Provenance
   - sources::

@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -112,6 +112,18 @@ public:: true
   - **Physical realisation**: microwave pulses on superconducting transmons (typical two-qubit gate times 20–200 ns), laser pulses on trapped ions (slower, ~10–100 µs, but higher fidelity), and photonic or neutral-atom implementations. Native gate sets differ by platform (e.g. cross-resonance or iSWAP-family gates on superconductors, Mølmer–Sørensen gates on ions).
   - **Fidelity**: state-of-the-art two-qubit gate error rates are in the 10⁻³–10⁻⁴ range. Since errors compound multiplicatively across deep circuits, gate fidelity is the binding constraint on useful circuit depth and the reason [[Quantum Error Correction]] — itself implemented from sequences of physical gates — is required for fault-tolerant computation.
   - **Compilation**: transpilers decompose abstract algorithm-level unitaries into native gates, route entangling gates across limited hardware connectivity, and optimise depth; the T-gate count is the standard cost metric for fault-tolerant execution because non-Clifford gates require expensive magic-state distillation.
+
+  ## Current Landscape
+
+  - **Below-threshold gates (Feb 2025)**: Google's Willow surface-code result — logical error suppressed by Λ = 2.14 on a 101-qubit distance-7 code, with a 1.1 µs syndrome-extraction cycle and ~63 µs real-time decoder latency — is the clearest demonstration that physical gate fidelities have crossed the surface-code threshold, the precondition for fault-tolerant gate execution.
+  - **Fidelity frontier**: state-of-the-art two-qubit gate errors sit in the 10⁻³–10⁻⁴ range; trapped-ion and neutral-atom platforms report the highest fidelities, while superconducting transmons offer the fastest gates (tens to low-hundreds of ns).
+  - **Overhead reduction (2025)**: work on algorithmic fault tolerance (e.g. QuEra) and quantum LDPC codes (central to IBM's 2029 Starling roadmap) aims to cut the physical-gate overhead of error-corrected logical operations by up to ~90–100×, easing the magic-state-distillation cost that dominates non-Clifford (T-gate) budgets.
+  - **Native gate diversity**: platforms continue to expose different native entangling gates (cross-resonance / iSWAP-family on superconductors, Mølmer–Sørensen on ions), so transpilation and gate-set compilation remain an active hardware-software co-design problem.
+
+  **Sources**:
+  - https://blog.google/innovation-and-ai/technology/research/google-willow-quantum-chip/
+  - https://www.research-collection.ethz.ch/bitstreams/ff784bf1-6f08-48b5-a9c6-c61d13aba053/download
+  - https://www.spinquanta.com/news-detail/quantum-computing-industry-trends-2025-breakthrough-milestones-commercial-transition
 
 - ### Provenance
   - sources::

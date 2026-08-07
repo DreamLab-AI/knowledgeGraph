@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -115,3 +115,14 @@ public:: true
   Practically all deployed identity today is centralised or federated (a variant in which one authority, such as a social-login provider, vouches for the identifier to many relying parties—concentrating rather than removing central control). The decentralised alternative is advancing through the W3C DID Core standard, the EU's eIDAS 2.0 digital identity wallets, and verifiable-credential pilots, but adoption remains early and most "decentralised" deployments still anchor to centralised registries or wallets operated by large vendors.
 
   The realistic trajectory is hybrid: high-assurance roots (government eID, banking KYC) remain centralised for accountability, while portable, user-held credentials layer on top for privacy-preserving presentation. Understanding centralised identifiers as a distinct class—with their specific failure modes of revocation, surveillance, lock-in, and single-point compromise—is what makes the trade-offs of that hybrid legible, rather than treating decentralisation as an end in itself.
+
+  Recent developments:
+
+  - **DID standard maturing**: the W3C published the First Public Working Draft of Decentralized Identifiers (DIDs) v1.1 in January 2025 and continued the Recommendation-track work into 2026, explicitly positioning DIDs as decoupled from centralised registries, identity providers and certificate authorities.
+  - **eIDAS 2.0 rollout**: the EU's European Digital Identity Wallet (EUDIW) programme advanced through its Architecture and Reference Framework, with the EDPS issuing TechDispatch #3/2025 (15 December 2025) analysing digital-identity-wallet designs including W3C DIDs and Verifiable Credentials.
+  - **Centralisation persists in practice**: even nominally decentralised deployments still commonly anchor to centralised or federated registries and vendor-operated wallets, so most identity in production remains centralised or federated (single-sign-on providers concentrating rather than removing central control).
+  - **Infrastructure fragility as evidence**: the 20 October 2025 AWS US-EAST-1 DNS outage disrupted authentication and login flows for thousands of centralised services, underscoring how identifier resolution bound to one operator's infrastructure inherits that operator's failure modes.
+
+  **Sources**:
+  - https://www.w3.org/TR/did-1.1/
+  - https://www.edps.europa.eu/data-protection/our-work/publications/techdispatch/2025-12-15-techdispatch-32025-digital-identity-wallets_en

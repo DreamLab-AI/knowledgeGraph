@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -119,6 +119,19 @@ public:: true
   - **Types**: global outliers, contextual outliers (normal value, abnormal context — 25°C in an Arctic winter), and collective outliers (individually normal points forming an abnormal pattern).
   - **Pitfalls**: masking and swamping in iterative deletion, curse of dimensionality flattening distance contrasts, and the contamination-rate hyperparameter that most unsupervised methods quietly require.
 
+  ## Current Landscape
+
+  - PyOD, the de facto Python toolkit, now ships more than 50 detection algorithms behind a single scikit-learn-style API, spanning classical LOF (SIGMOD 2000) through modern deep methods; release v2.0.5 landed on 29 April 2025.
+  - Parameter-free probabilistic detectors have become the recommended defaults: ECOD (empirical cumulative distribution, 2022) and COPOD (copula-based, 2020) require no tuning and, alongside Isolation Forest and LODA, top the ADBench benchmark of 30 algorithms across 57 datasets.
+  - Deep and GPU-accelerated approaches are now mainstream in the tooling: Deep Isolation Forest (DIF, TKDE 2023), autoencoder/VAE reconstruction scores, and the tensor-based PyTOD framework bring outlier detection to high-dimensional and large-scale data.
+  - Streaming/online detection is served by dedicated frameworks such as PySAD, reflecting demand for monitoring live data rather than only batch samples.
+  - scikit-learn (1.9.0, 2025) continues to ship Isolation Forest, LOF and One-Class SVM as the standard first-line estimators for general-purpose novelty and outlier detection.
+
+  - **Sources**:
+    - https://github.com/yzhao062/pyod
+    - https://scikit-learn.org/stable/modules/outlier_detection.html
+    - https://github.com/yzhao062/anomaly-detection-resources
+
 - ### Provenance
   - sources::
-  - migration-date:: 2026-08-06T00:00:00Z
+  - migration-date:: 2026-08-07T00:00:00Z

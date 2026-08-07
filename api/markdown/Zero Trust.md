@@ -89,11 +89,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -129,6 +129,19 @@ public:: true
   - **Agentic extension**: applying zero trust to AI agents means scoped, auditable, short-lived credentials for every tool call, treating each agent action as an untrusted request to be verified — an active area of practice as autonomous agents proliferate.
   - **Limits**: zero trust is an architecture rather than a product; incremental migration, legacy protocols that cannot present modern identity signals, and policy-engine complexity remain the main adoption obstacles.
 
+  ## Current Landscape
+
+  - **Reference standards remain stable**: NIST SP 800-207 (2020) defines the core architecture, and CISA's Zero Trust Maturity Model — Version 2.0, April 2023 — organises adoption across five pillars (Identity, Devices, Networks, Applications & Workloads, Data) and four maturity stages (Traditional, Initial, Advanced, Optimal), aligned to OMB Memorandum M-22-09.
+  - **Federal mandate baseline**: OMB M-22-09 (26 January 2022, in support of EO 14028) required US civilian agencies to meet specified zero-trust goals — enterprise-managed identities with phishing-resistant MFA, full device inventory, encrypted DNS and network traffic, and treating every application as internet-accessible — by the end of FY2024.
+  - **Guidance is still expanding**: CISA published "Microsegmentation in Zero Trust, Part One" (v1.0, 29 July 2025), deepening the network-pillar guidance of the ZTMM and signalling that federal zero-trust direction continues to be actively developed beyond the FY2024 deadline.
+  - **Implementations**: Google's BeyondCorp pioneered production zero trust after the 2009 Aurora attacks; commercial platforms include Zscaler, Cloudflare Access, Palo Alto Prisma, and Microsoft Entra conditional access, with service meshes (mutual TLS, SPIFFE/SPIRE) bringing the model inside clusters.
+  - **Agentic extension**: applying zero trust to AI agents means scoped, auditable, short-lived credentials for every tool call — treating each agent action as an untrusted request to be verified — an active area of practice as autonomous agents proliferate.
+
+  **Sources**:
+  - https://www.cisa.gov/zero-trust-maturity-model
+  - https://www.cisa.gov/sites/default/files/2025-07/ZT-Microsegmentation-Guidance-Part-One_508c.pdf
+
 - ### Provenance
-  - sources::
+  - sources:: https://www.cisa.gov/zero-trust-maturity-model
   - migration-date:: 2026-08-06T00:00:00Z
+  - research-augmented:: 2026-08-07T00:00:00Z

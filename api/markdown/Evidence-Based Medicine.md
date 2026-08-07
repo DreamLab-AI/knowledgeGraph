@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -108,6 +108,19 @@ public:: true
   EBM's population-average logic is in productive tension with [[Precision Medicine]], which stratifies patients by genomic and biomarker profiles: an RCT estimates the average treatment effect in a trial population, whilst precision approaches ask what will work for *this* patient. The synthesis is emerging in stratified and adaptive trial designs (basket, umbrella, and platform trials such as RECOVERY), estimation of heterogeneous treatment effects, and the regulated use of real-world evidence from electronic health records to complement trials where randomisation is infeasible.
 
   Contemporary challenges include research waste and publication bias, the slow pace of guideline updating against exponential publication volume (motivating "living" systematic reviews), applicability of trial evidence to multimorbid patients excluded from trials, and the appraisal of AI-based interventions, for which trial standards (CONSORT-AI, SPIRIT-AI) have been developed. Automation of evidence synthesis — screening, extraction, and increasingly LLM-assisted appraisal — is an active research front, with the same EBM standards applied reflexively to the automation tools themselves.
+
+  Recent dated developments:
+
+  - **CONSORT 2025 statement** (published 14 April 2025, simultaneously in the BMJ, Nature Medicine, PLoS Medicine and other journals) supersedes CONSORT 2010, which the authors state should no longer be used. The update comprises a 30-item checklist with seven new items, three revised, one deleted, and a new "open science" section covering trial registration, protocol and statistical-analysis-plan access, data sharing, and conflicts of interest.
+  - CONSORT 2025 integrates items from the Harms, Outcomes and Non-Pharmacological Treatment extensions plus TIDieR, and is explicitly framed as a **living guideline** to be periodically updated — the reporting infrastructure adopting the same "living" model as living systematic reviews.
+  - Its companion **explanation and elaboration** document (BMJ 2025;389:e081124) adds required reporting on patient and public involvement, harms assessment, and missing-data handling.
+  - The paired SPIRIT 2025 protocol guideline and CONSORT 2025 now share a joint home (consort-spirit.org), registered with the EQUATOR Network.
+
+  **Sources**:
+  - https://www.bmj.com/content/389/bmj-2024-081123
+  - https://www.nature.com/articles/s41591-025-03635-5
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC11995452/
+  - https://www.equator-network.org/reporting-guidelines/consort/
 
 - ### Provenance
   - sources::

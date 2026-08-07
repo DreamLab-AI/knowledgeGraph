@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -113,8 +113,14 @@ public:: true
 
   ## Current Landscape
 
-  - **Licensing wave**: since early 2025, major exchanges and fintechs have obtained MiCA CASP authorisations via hub jurisdictions (Ireland, Malta, Germany, France, the Netherlands), passporting services EU-wide; ESMA maintains the public register of authorised CASPs
-  - **Transitional period**: firms operating under prior national regimes benefit from grandfathering windows of up to 18 months, varying by member state, creating a staggered compliance landscape through 2026
-  - **Supervisory architecture**: national competent authorities license and supervise CASPs, with ESMA and the EBA issuing technical standards; the new EU AMLA authority will assume AML oversight of the riskiest cross-border CASPs
-  - **Beyond the EU**: the UK is building an analogous authorisation regime for cryptoasset activities under FSMA; FATF mutual evaluations track VASP regulation globally, making CASP-style licensing the de facto international norm
+  - **Transitional period over**: the MiCA grandfathering window (up to 18 months, varying by member state) expired EU-wide on 1 July 2026; ESMA's public statements of December 2025 and June 2026 required unauthorised CASPs to implement orderly wind-down plans and warned investors to check the ESMA Interim MiCA Register
+  - **Licensing wave and consolidation**: roughly 216 firms held MiCA CASP authorisation by June 2026 (KPMG, from the ESMA register) against more than 1,200 previously operating under national registrations; by 20 July 2026 the register showed ~295 active authorisation records, about 70% of which include custody authorisation — Germany (55), the Netherlands (26), France (19), Malta (15), Cyprus and Ireland (12 each) lead as hub jurisdictions, and roughly a quarter of authorisations landed in June 2026 alone
+  - **Supervisory architecture**: national competent authorities license and supervise CASPs, with ESMA and the EBA issuing technical standards (ESMA ran a fast-track peer review of Malta's CASP authorisation practice in July 2025 and launched a Common Supervisory Action on custody); the new EU AMLA authority is assuming AML oversight of the riskiest cross-border CASPs
+  - **Beyond the EU**: the UK's analogous regime is now legislated — the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 were made on 4 February 2026, the FCA authorisation window runs from 30 September 2026 to 28 February 2027, and the full regime takes effect on 25 October 2027; FATF mutual evaluations track VASP regulation globally, making CASP-style licensing the de facto international norm
   - **Open issues**: treatment of fully decentralised protocols (formally out of MiCA scope), reverse solicitation boundaries, and the interaction between CASP custody rules and institutional digital-asset custody practice
+
+  **Sources**:
+  - https://www.esma.europa.eu/sites/default/files/2026-06/ESMA75-113276571-1710_Public_Statement_MiCA_transitional_period_ends.pdf
+  - https://assets.kpmg.com/content/dam/kpmgsites/cy/pdf/2026/CASPs-Grandfathering-Period-June-2026.pdf.coredownload.inline.pdf
+  - https://pharosproduction.com/insights/engineering/esma-casp-register-after-mica-deadline/
+  - https://www.fca.org.uk/publications/policy-statements/cryptoasset-regime

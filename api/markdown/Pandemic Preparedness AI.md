@@ -65,11 +65,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -99,4 +99,14 @@ public:: true
 
   ## Current Landscape
 
-  Investment in this area accelerated sharply after 2020, with dedicated efforts from national health agencies, philanthropic funders, and compute-focused organisations such as Prime Intellect that provision the distributed infrastructure these models require. Genomic early-warning consortia now routinely apply machine learning to sequencing pipelines, and protein-design models have moved from research demonstrations into working drug-discovery workflows. The field remains emerging: benchmarks for real-world outbreak prediction are still immature, data-sharing across jurisdictions is uneven, and the balance between open scientific progress and biosecurity restraint is an active governance question.
+  - The WHO Hub for Pandemic and Epidemic Intelligence in Berlin now supports over 150 countries; its Epidemic Intelligence from Open Sources (EIOS) system was upgraded in 2025 with advanced AI capabilities and has trained nearly 5,000 public-health intelligence professionals across 119 member states.
+  - The WHO's International Pathogen Surveillance Network (IPSN) connects over 235 organisations and countries to expand genomic surveillance, channelling catalytic funding to low- and middle-income countries; WHO mobilised a US$18 million grant in 2025 to scale collaborative surveillance.
+  - The UK published a Pandemic Preparedness Strategy on 25 March 2026, backed by around £1 billion, and operationalised a "Biothreats Radar" for real-time incident data; UKHSA has embedded AI biological tools into biosurveillance pipelines, including models predicting avian-influenza spillover risk and tuberculosis drug resistance, plus clinical and wastewater metagenomic surveillance.
+  - Multi-modal LLM forecasters are emerging in the literature: PandemicLLM (Du et al., 2025) integrates policy, genomic and behavioural data and reportedly outperforms traditional time-series models for outbreak forecasting.
+  - The field remains emerging: real-world outbreak-prediction benchmarks are immature, cross-jurisdiction data sharing is uneven, and dual-use governance — balancing open science against biosecurity restraint — is an active question, sharpened by events such as the May 2026 Bundibugyo virus PHEIC in the DRC and Uganda.
+
+  - **Sources**:
+    - https://www.who.int/news/item/17-06-2025-the-who-hub-in-berlin-driving-innovation-to-make-the-world-safer-from-health-threats
+    - https://www.gov.uk/government/publications/uk-biological-security-strategy-implementation-report-july-2025-july-2026/uk-biological-security-strategy-implementation-report-july-2025-july-2026
+    - https://pmc.ncbi.nlm.nih.gov/articles/PMC12343573/
+    - https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1711344/full

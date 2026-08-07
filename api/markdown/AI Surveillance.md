@@ -87,11 +87,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -121,4 +121,15 @@ public:: true
 
   ## Current Landscape
 
-  Deployment is widespread and growing: market analyses consistently find that the majority of countries operate some form of AI-enabled public surveillance, spanning smart-city platforms, border biometrics, and predictive policing pilots. Vendor ecosystems range from large Chinese and Western platform suppliers to specialist analytics firms, with export controls and human-rights due-diligence requirements becoming procurement factors. Counter-currents include privacy-preserving analytics (on-device processing, redaction-by-default), statutory oversight bodies such as the UK's Biometrics and Surveillance Camera Commissioner functions, and civil-society auditing of accuracy and bias claims. The technical frontier — re-identification across camera networks, multimodal foundation models applied to video, and emotion or intent inference of contested scientific validity — continues to move faster than the accountability mechanisms designed for it.
+  Deployment is widespread and growing: market analyses consistently find that the majority of countries operate some form of AI-enabled public surveillance, spanning smart-city platforms, border biometrics, and predictive policing pilots. Vendor ecosystems range from large Chinese and Western platform suppliers to specialist analytics firms, with export controls and human-rights due-diligence requirements becoming procurement factors.
+
+  - **EU AI Act prohibitions live since 2 February 2025**: Article 5 bans real-time remote biometric identification in publicly accessible spaces for law enforcement (bar narrow, pre-authorised exceptions for missing persons, imminent terrorist threats, and listed serious crimes) and prohibits building facial-recognition databases through untargeted scraping of internet or CCTV images.
+  - **Enforcement teeth from 2 August 2025**: Breaches of the Article 5 prohibitions attract the top-tier fine of up to €35 million or 7% of worldwide annual turnover; the 2026 Digital Omnibus did not move these dates.
+  - **High-risk regime from 2 December 2027**: Post/non-real-time (retrospective) biometric identification and biometric verification in high-risk contexts fall under Annex III and must meet full high-risk requirements — risk management, data governance, human oversight, accuracy, and logging.
+  - **UK case law**: Police deployments remain tested against data-protection and equality law, notably *R (Bridges) v South Wales Police* (Court of Appeal, 2020), the first successful legal challenge to live facial recognition.
+  - **Technical frontier**: Re-identification across camera networks, multimodal foundation models applied to video, and emotion or intent inference of contested scientific validity continue to move faster than the accountability mechanisms designed for them.
+
+  **Sources**:
+  - https://www.regulation-ai.eu/en/prohibited-practices/
+  - https://www.regulatoryai.eu/ai-facial-recognition/
+  - https://www.bundesnetzagentur.de/EN/Areas/Digitalisation/AI/08_ProhibitedPractices/start.html

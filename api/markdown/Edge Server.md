@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -106,6 +106,19 @@ public:: true
   ## Technical Details
 
   Edge caching behaviour is governed by HTTP semantics: `Cache-Control` and `Surrogate-Control` headers, TTLs, `ETag`/`If-None-Match` revalidation, and explicit purge APIs. Effectiveness is measured by cache hit ratio; tiered architectures interpose regional "shield" or mid-tier caches between edges and origin so that a miss at one PoP is often served by another cache rather than the origin. Request routing uses anycast (one IP advertised from every PoP, BGP delivers users to the nearest) or geo-aware DNS. Typical hardware profiles favour high-throughput NVMe storage and NICs over raw compute, though compute-capable edges increasingly carry CPUs and, for inference workloads, GPUs. The operational trade-off against origin consolidation is consistency and complexity: cached state is eventually consistent by design, and purging, cache-key design, and personalisation-versus-cacheability tensions are the day-to-day engineering concerns of running an edge fleet.
+
+  ## Current Landscape
+
+  - **Market**: the global CDN market reached roughly USD 31.5 billion in 2025 and an estimated USD 35–37 billion in 2026, with Akamai, Cloudflare, and Amazon CloudFront together fronting around three-quarters of CDN traffic; consolidation continues after Edgio's late-2024 Chapter 11, with parts of its infrastructure absorbed by Akamai and Lumen.
+  - **GPU-equipped edges**: edge servers are becoming AI inference endpoints. Akamai launched Akamai Cloud Inference in March 2025 across a footprint of 4,200+ points of presence in 130+ countries, and by 2026 is deploying NVIDIA RTX PRO 6000 Blackwell GPUs with BlueField-3 DPUs across edge locations; Cloudflare's Workers AI serves small models (sub-7B parameters) from 330+ cities.
+  - **Edge compute maturity**: Cloudflare Workers (V8 isolates), Fastly Compute (WebAssembly-native, having fully replaced VCL), Akamai EdgeWorkers, and CloudFront Functions are all production-grade serverless runtimes, and Gartner's Q4 2025 Market Guide describes CDN, security, compute, and AI converging into unified "edge distribution platforms".
+  - **Workload shift**: as of early 2026, edge inference use cases centre on content moderation, real-time personalisation, and ad decisioning, with cloud gaming and IoT cited as the next growth drivers.
+
+  **Sources**:
+  - https://www.akamai.com/newsroom/press-release/akamai-sharpens-its-ai-edge-with-launch-of-akamai-cloud-inference
+  - https://blog.blazingcdn.com/en-us/biggest-cdn-providers-market-share-pop-count-2025
+  - https://www.16idc.com/en-us/article-detail/cdn-industry-competition-analysis-2026
+  - https://learn.fastly.com/gartner-market-guide-edge-distribution-platforms-q4-2025
 
 - ### Provenance
   - sources::

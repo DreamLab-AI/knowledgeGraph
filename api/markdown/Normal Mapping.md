@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -113,3 +113,16 @@ public:: true
   - **Shading**: the TBN matrix transforms the sampled normal from tangent space to world space (or the light vector the other way); normalisation and careful mip-mapping matter because averaging normals shortens them, which specular models such as LEAN/Toksvig mapping compensate for.
   - **Baking tools**: Substance 3D Painter/Designer, Marmoset Toolbag, xNormal, and Blender's Cycles baker; cage meshes control ray projection to avoid skewed or missed details.
   - **PBR integration**: glTF 2.0, USD, and every major engine (Unreal, Unity, Godot) treat the tangent-space normal map as a core material input alongside base colour, roughness, and metallic maps.
+
+  ## Current Landscape
+
+  - **Nanite virtualised geometry** (Unreal Engine 5.x) removes the low-poly-plus-bake constraint for hero assets — full-resolution source meshes can be imported directly, and Nanite does not even store per-vertex tangents, deriving tangent space in the pixel shader instead; its offline adaptive tessellator adds displacement-map-driven detail on top. Normal maps nonetheless remain in every PBR material stack for micro-detail and for the vast majority of non-Nanite platforms (mobile, VR, web).
+  - The **glTF 2.0 specification** continues to recommend MikkTSpace tangent generation when tangents are absent; ecosystem experience shows assets must embed explicit tangents to guarantee identical normal-map rendering across viewers, since runtimes otherwise reconstruct tangent frames by differing methods (including screen-space derivatives).
+  - Production renderers have converged on discarding stored bitangents and reconstructing them as cross(normal, tangent.xyz) * tangent.w; active engineering work (e.g. Kapoulkine's April 2026 analysis of quantised tangent frames) focuses on compressing tangent-frame data for bandwidth-bound GPU pipelines.
+  - Bake tooling remains centred on Substance 3D Painter/Designer and Marmoset Toolbag, with MikkTSpace still the cross-tool tangent-space convention and the OpenGL(+Y)/DirectX(−Y) green-channel split still the leading cause of inverted-bump artefacts.
+
+  **Sources**:
+  - https://dev.epicgames.com/documentation/en-us/unreal-engine/nanite-virtualized-geometry-in-unreal-engine
+  - https://github.com/KhronosGroup/glTF/issues/1252
+  - https://zeux.io/2026/04/30/quantizing-tangent-frames/
+  - https://www.magnopus.com/blog/unreal-engine-5-and-nanite-virtualized-geometry
