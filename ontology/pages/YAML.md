@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -107,3 +107,8 @@ public:: true
   - **Schema validation**: JSON Schema is routinely applied to YAML documents (the two share a data model), and yamllint plus editor language servers catch indentation and typing errors before deployment.
   - **Fatigue and alternatives**: "YAML engineering" at scale has driven templating and generation layers (Helm, Kustomize, Jsonnet, CUE, Dhall) that emit YAML rather than having humans write it directly.
   - **Parsers**: libyaml (C), SnakeYAML (Java), PyYAML/ruamel.yaml (Python), and go-yaml dominate; safe-load defaults are now the norm in maintained libraries.
+  - **Spec status (current as of 2026)**: the newest revision remains YAML 1.2.2 (published 1 October 2021, exactly 12 years after the prior revision); it introduces *no normative changes* to the YAML 1.2 data language — its purpose is to correct errors, add clarity, and fully document the parameterised BNF. Spec sources moved to Markdown on GitHub with a Dockerised build, described by the maintainers as the first step in YAML's "rejuvenated development journey".
+
+  **Sources**:
+  - https://yaml.org/spec/1.2.2/
+  - https://yaml.com/blog/a-new-yaml-specification/

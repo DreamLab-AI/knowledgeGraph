@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -104,7 +104,20 @@ public:: true
 
   ## Current Landscape
 
-  Empirical research complicates the strong version of the thesis. Large-scale studies — including work published in *Science* and *Nature* on Facebook data during the 2020 US election, and repeated audits of Google Search — find algorithmic personalisation of news exposure to be more modest than Pariser's account implied, with self-selection (whom users choose to follow) often the larger driver of skewed diets. Yet narrower effects are well documented on recommendation-driven platforms such as YouTube and TikTok, where rabbit-hole dynamics can rapidly concentrate a feed around conspiratorial or extreme content. Policy has moved regardless of the academic debate: the EU's Digital Services Act obliges very large platforms to offer at least one non-profiling recommender option and to assess systemic risks from their ranking systems, and the UK's Online Safety Act imposes related duties. Mitigation research focuses on diversity- and serendipity-aware ranking objectives, exposure auditing, and giving users legible controls over their own personalisation.
+  Empirical research complicates the strong version of the thesis. Large-scale studies — including work published in *Science* and *Nature* on Facebook data during the 2020 US election, and repeated audits of Google Search — find algorithmic personalisation of news exposure to be more modest than Pariser's account implied, with self-selection (whom users choose to follow) often the larger driver of skewed diets. Yet narrower effects are well documented on recommendation-driven platforms such as YouTube and TikTok, where rabbit-hole dynamics can rapidly concentrate a feed around conspiratorial or extreme content. Policy has moved regardless of the academic debate: the EU's Digital Services Act (Article 38) obliges very large platforms to offer at least one non-profiling recommender option and (Articles 34–35) to assess systemic risks from their ranking systems, and the UK's Online Safety Act imposes related duties. Mitigation research focuses on diversity- and serendipity-aware ranking objectives, exposure auditing, and giving users legible controls over their own personalisation.
+
+  DSA recommender-system duties are now being enforced in court:
+
+  - **On 2 October 2025 the Amsterdam District Court delivered the first private-enforcement DSA judgment** (Bits of Freedom v Meta), finding Meta breached Article 27 by hiding the non-profiled feed option and Article 25 ("dark patterns") by resetting users back to the profiled feed on every app reopen; Meta was ordered to make the chronological-feed choice persistent for Dutch users.
+  - On 28 October 2025 the Amsterdam Court of Appeals gave Meta until 31 December 2025 to implement the changes, on pain of €100,000 per day (capped at €5 million); Meta's substantive appeal was heard from 26 January 2026.
+  - Germany became a parallel testing ground in 2025: a Berlin court injunction (6 February 2025) ordered X to grant researchers access to engagement data ahead of the federal election, and cross-border class actions against TikTok and X target algorithmic amplification (EU DisinfoLab mapping, November 2024–2025).
+  - Researcher access to platform data under DSA Article 40 — including for auditing recommender-driven exposure narrowing — began operating in 2025, giving the filter-bubble research programme its first legally mandated data pipeline.
+
+  **Sources**:
+  - https://the-platform-law.com/2025/10/09/the-bits-of-freedom-ruling-the-first-step-in-private-dsa-enforcement/
+  - https://www.loc.gov/item/global-legal-monitor/2025-12-10/netherlands-amsterdam-court-of-appeals-orders-meta-to-implement-algorithm-choice-changes-for-facebook-and-instagram-by-end-of-year/
+  - https://dsa-observatory.eu/2025/05/19/making-recommender-systems-work-for-people/
+  - https://www.isdglobal.org/digital_dispatches/towards-transparent-recommender-systems-lessons-from-tiktok-research-ahead-of-the-2025-german-federal-election/
 
 - ### Provenance
   - sources::

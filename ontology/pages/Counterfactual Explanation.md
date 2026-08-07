@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -109,7 +109,14 @@ public:: true
 
   ## Current Landscape
 
-  - **Methods**: Wachter-style gradient optimisation; DiCE (diverse counterfactuals); FACE (feasible paths through the data manifold); CEM (pertinent negatives); prototype-guided and generative-model-based approaches for plausibility
+  - **Methods**: Wachter-style gradient optimisation; DiCE (diverse counterfactuals); FACE (feasible paths through the data manifold); CEM (pertinent negatives); prototype-guided and generative-model-based approaches for plausibility. DiCE-Extended (arXiv:2504.19027, 2025) adds a Dice-Sørensen robustness metric and multi-objective weighting to stabilise counterfactuals under input perturbation, benchmarked on COMPAS, Lending Club, German Credit, and Adult Income.
   - **Tooling**: open-source libraries including Microsoft's DiCE, Alibi (Seldon), CARLA (benchmarking suite), and IBM's AIX360 ship counterfactual generators alongside attribution methods
-  - **Regulatory relevance**: cited in guidance around GDPR Article 22, the EU AI Act's transparency obligations for high-risk systems, and UK ICO/Turing Institute "Explaining decisions made with AI" guidance, which lists counterfactual statements among recommended explanation types
-  - **Open problems**: robustness of recourse under model updates (a promised counterfactual may stop working after retraining), gaming and strategic behaviour, causal feasibility, and fair distribution of recourse cost across demographic groups
+  - **Regulatory relevance**: the EU AI Act's Article 86 grants affected persons a right to "clear and meaningful explanations" of decisions based on high-risk AI output (applying from 2 August 2026), complementing GDPR Articles 15 and 22; counterfactual statements are among the explanation types recommended in the UK ICO/Turing Institute "Explaining decisions made with AI" guidance, and legal scholarship (e.g. SAFE Frankfurt working papers, 2025) treats counterfactuals as a leading candidate for satisfying these duties in credit scoring
+  - **Robustness of recourse**: a FAccT 2025 study showed recourse can be invalidated simply by the passage of time as distributions drift, extending earlier findings that minor model updates break promised counterfactuals; Verma et al.'s ACM Computing Surveys review (October 2024) consolidates the field's evaluation criteria — validity, proximity, sparsity, actionability, and causal consistency
+  - **Open problems**: gaming and strategic behaviour, causal feasibility, computational cost of robust generation, and fair distribution of recourse cost across demographic groups
+
+  **Sources**:
+  - https://arxiv.org/abs/2504.19027
+  - https://dl.acm.org/doi/10.1145/3677119
+  - https://facctconference.org/static/docs/facct2025-206archivalpdfs/facct2025-final48-acmpaginated.pdf
+  - https://safe-frankfurt.de/fileadmin/user_upload/editor_common/Policy_Center/LawLab_Fintech_AI/Langenbucher_Explainable_AI_as_a_Component_of_Building_Trust.pdf

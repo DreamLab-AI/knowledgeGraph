@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -109,6 +109,14 @@ public:: true
 
   ## Current Landscape
 
-  Application is phased: prohibitions and AI-literacy duties applied from February 2025, GPAI obligations from August 2025, and the bulk of high-risk requirements from August 2026, with some embedded-product rules extending to 2027. The Act functions as a de facto global standard through the "Brussels effect", shaping vendor compliance programmes far beyond Europe, and interacts with harmonised standards being drafted by CEN-CENELEC JTC 21, whose adoption gives providers a presumption of conformity.
+  Application is phased, and the timeline was substantially revised in 2026. Prohibitions and AI-literacy duties applied from 2 February 2025 and GPAI obligations from 2 August 2025. The "Digital Omnibus on AI" (Regulation (EU) 1744/2026, applicable from 27 July 2026) then deferred the bulk of the high-risk regime: obligations for stand-alone Annex III high-risk systems (employment, education, biometrics, law enforcement, critical infrastructure) now apply from 2 December 2027, and those for AI embedded in regulated products under Annex I from 2 August 2028, largely because CEN-CENELEC JTC 21 harmonised standards — whose adoption gives providers a presumption of conformity — were not ready in time.
+
+  What the Omnibus did not move: Article 50 transparency duties (disclosing interaction with AI, deepfake labelling) applied on schedule on 2 August 2026 for newly placed systems, with the Article 50(2) machine-readable marking of synthetic content deferred only to 2 December 2026; and the AI Office's GPAI enforcement powers, including fines, activated on 2 August 2026. The Act continues to function as a de facto global standard through the "Brussels effect", shaping vendor compliance programmes far beyond Europe.
+
+  **Sources**:
+  - https://fpf.org/blog/the-ai-act-implementation-timeline-what-changes-under-the-ai-omnibus/
+  - https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - https://www.mayerbrown.com/en/insights/publications/2026/07/eu-ai-act-news-digital-omnibus-on-ai-new-guidance-on-risk-classification-gpai-and-transparency-obligations
+  - https://cdp.cooley.com/digital-ai-omnibus-delays-key-deadlines-introduces-new-rules/
 
   Within this knowledge graph the EU AI Act anchors the regulatory dimension of [[AI Governance]]: accountability, transparency and bias-mitigation practices reference it as the binding instrument that operationalises [[Risk Based Regulation]], and audit-trail and disclosure mechanisms cite it as the source of their documentation requirements.

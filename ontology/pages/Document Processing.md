@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -118,3 +118,11 @@ public:: true
   - **Open source**: Tesseract for OCR; LayoutLM/LayoutLMv3, Donut, and docTR for layout-aware extraction; a rapid shift towards general multimodal LLMs performing extraction via prompting
   - **Adoption drivers**: accounts-payable automation, KYC onboarding, claims processing, and preparing document corpora for retrieval-augmented generation, which has made clean document parsing a prerequisite for enterprise AI initiatives
   - **Persistent challenges**: complex tables, multi-page dependency, handwriting variance, confidence calibration for regulated straight-through processing, and provenance/auditability of extracted values
+  - **Market signals (2025–2026)**: Gartner published its first IDP Magic Quadrant in 2025, formalising a category of 100+ vendors; analyst sizings for 2026 cluster around USD 2.8–3.2 billion (Mordor Intelligence, January 2026: USD 3.17 billion in 2026 rising to USD 7.18 billion by 2031 at 17.8% CAGR), with cloud deployment taking about 74% of 2025 revenue and BFSI the leading vertical
+  - **Multimodal displacement of OCR (2026)**: production benchmarks report multimodal LLMs achieving 95–99% field-extraction accuracy on structured documents (invoices, purchase orders) and 85–95% on semi-structured contracts and claims, eroding the case for a separate OCR stage; Microsoft's Azure Content Understanding (generally available 2025–2026) packages this as a single multimodal extraction service across documents, images, audio, and video
+
+  **Sources**:
+  - https://www.mordorintelligence.com/industry-reports/intelligent-document-processing-market
+  - https://app-lab.ai/blog/ai-document-processing/
+  - https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool
+  - https://www.marketresearchfuture.com/reports/intelligent-document-processing-market-10629

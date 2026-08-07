@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -103,8 +103,14 @@ public:: true
 
   ## Current Landscape
 
-  - **Cloud regions**: AWS, Azure, and Google Cloud each operate dozens of geographic regions with residency commitments; EU-specific offerings (AWS European Sovereign Cloud, Microsoft's EU Data Boundary) target sovereignty-sensitive customers
-  - **Regulatory drivers**: GDPR Chapter V transfer rules, Schrems II fallout, the EU Data Act, UK GDPR adequacy arrangements, and localisation statutes in Russia, China (PIPL/CSL), India, and Indonesia
-  - **Sovereign cloud**: national initiatives such as Gaia-X and partnerships pairing hyperscalers with domestic operators (e.g. T-Systems, Thales/S3NS) attempt to combine hyperscale services with jurisdictional isolation
-  - **Technical controls**: region pinning, geo-fencing policies, customer-managed keys held in-jurisdiction, and confidential computing to reduce exposure even where infrastructure crosses borders
-  - **Residual risks**: metadata, telemetry, and support pathways often leave the declared region even when primary data does not — a recurring finding in residency audits
+  - **EU Data Boundary completed**: Microsoft announced completion of its EU Data Boundary on 26 February 2025, contractually committing that customer data — and, since the final phase, professional-services support data — for Microsoft 365, Dynamics 365, Power Platform, and most Azure services is stored and processed within the EU/EFTA; the boundary was delivered in three phases from January 2023
+  - **AWS European Sovereign Cloud launched**: reached general availability in January 2026 from Brandenburg, Germany, backed by a €7.8 billion investment — a physically and logically separate partition with its own IAM, billing system, and root certificate authority, operated by EU-resident staff under German subsidiaries, keeping customer-created metadata as well as content within the EU
+  - **Sovereignty beyond residency**: Microsoft's November 2025 sovereign-cloud announcements added end-to-end AI data processing inside the EU Data Boundary, a "Data Guardian" control routing all remote engineer access through EU-based operators, and in-country Microsoft 365 Copilot processing (four countries by end-2025, eleven more in 2026); national partner clouds (Bleu in France, Delos Cloud in Germany) offer stronger separation
+  - **Regulatory drivers**: GDPR Chapter V transfer rules, the EU Data Act, UK GDPR adequacy arrangements, and localisation statutes in Russia, China (PIPL/CSL), India, and Indonesia; a December 2025 legal opinion commissioned by the German Federal Interior Ministry concluded that the physical location of data in Europe is legally irrelevant where the provider remains subject to US jurisdiction under the CLOUD Act
+  - **Residual risks**: hyperscaler sovereign offerings remain wholly owned by US parents, and whether the CLOUD Act can compel a US parent to extract data from a foreign-incorporated subsidiary has not been definitively resolved by any court; metadata, telemetry, and support pathways remain the points where residency guarantees most often silently fail
+
+  **Sources**:
+  - https://blogs.microsoft.com/on-the-issues/2025/02/26/microsoft-completes-landmark-eu-data-boundary-offering-enhanced-data-residency-and-transparency/
+  - https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud/
+  - https://azure.microsoft.com/en-us/blog/microsoft-strengthens-sovereign-cloud-capabilities-with-new-services/
+  - https://eualternative.eu/guides/choosing-eu-cloud/

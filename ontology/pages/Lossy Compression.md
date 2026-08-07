@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -104,4 +104,16 @@ public:: true
 
   ## Current Landscape
 
-  Royalty questions and streaming economics drive codec evolution: AV1 (AOMedia, royalty-free) and HEVC/VVC (licensed) compete for video, AVIF and JPEG XL for images, while Opus dominates real-time audio and AAC persists in broadcast. Neural compression is the research frontier — learned image codecs surpass JPEG substantially at equal bitrate, and generative video codecs promise order-of-magnitude gains by synthesising plausible detail rather than transmitting it, raising fresh questions about fidelity versus hallucination. Standardisation bodies (JVET, AOMedia, MPEG) are actively studying learned tools for post-VVC generations, and the same rate-distortion machinery now underpins compression of neural network weights themselves for edge deployment.
+  Royalty questions and streaming economics continue to drive codec evolution: AV1 (AOMedia, royalty-free) and HEVC/VVC (licensed) compete for video, AVIF and JPEG XL for images, while Opus dominates real-time audio and AAC persists in broadcast. Recent milestones sharpen the picture:
+
+  - **AV2 released**: the Alliance for Open Media finalised its royalty-free AV2 specification in late May 2026 (announced 9 June 2026), with prototype results showing roughly 28-33% bitrate reduction over AV1 at equivalent quality; an AOMedia member survey reports 53% plan adoption within a year and 88% within two.
+  - **H.267 kick-off**: on 14 July 2025 JVET published requirements for the next-generation ITU-T/ISO video standard beyond VVC, targeting at least 40% bitrate reduction over VVC Main 10 for 4K content, with standardisation expected around 2028-2029; the Enhanced Compression Model (ECM) test model already demonstrates ~25% savings over VVC.
+  - **Learned codecs go mainstream in research**: by 2025-2026 the best end-to-end neural video codecs (DCVC-RT class) match or beat VVC while running in real time on a single GPU, and JPEG AI / MPEG-AI standardisation tracks are formalising learned image and video coding — though these ship as model weights rather than fixed bitstream specifications.
+  - **Licensing pressure persists**: Access Advance launched its Video Distribution Patent pool (covering HEVC, VVC, AV1 and VP9 content distribution) on 16 January 2025, with rates published July 2025 — keeping royalty economics central to codec selection for streaming at scale.
+  - The same rate-distortion machinery now also underpins compression of neural network weights themselves for edge deployment.
+
+  **Sources**:
+  - https://en.wikipedia.org/wiki/AV2
+  - http://aomedia.org/press%20releases/Alliance-for-Open-Media-Releases-AV2-Codec/
+  - https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/The-State-of-Streaming-Codecs-2026-173838.aspx
+  - https://www.cnx-software.com/2025/11/21/aomedia-av2-open-video-codec-release-nears-delivers-around-40-bandwidth-reduction/

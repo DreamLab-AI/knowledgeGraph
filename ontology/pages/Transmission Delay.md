@@ -81,11 +81,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -120,6 +120,18 @@ public:: true
   - **Scaling behaviour**: doubling link rate halves transmission delay; it has no effect on propagation delay, which is bounded by the speed of light in the medium (~2 × 10⁸ m/s in fibre).
   - **Where it matters**: last-mile access links, serial WAN circuits, LPWAN and satellite uplinks with modest bit rates, and real-time systems where per-hop serialisation of large frames adds jitter. On modern data-centre links at 100–800 Gbps, transmission delay of ordinary frames is measured in nanoseconds and queueing dominates instead.
   - **Mitigations**: higher link rates, smaller frames for latency-critical flows, cut-through switching (which begins forwarding after reading the header rather than the whole frame), and fragmentation-and-interleaving schemes historically used on slow serial links to stop bulk transfers delaying voice packets.
+
+  ## Current Landscape
+
+  - The canonical formula is standardised across networking references as D_T = N/R (bits ÷ link rate); it is a function of packet length and link rate only and is independent of the distance between nodes (Wikipedia, *Transmission delay*; Kurose & Ross, *Computer Networking*, §1.6).
+  - The Broadband Internet Technical Advisory Group's *Latency Explained* report classes serialisation/encoding delay as "generally negligible on today's high-throughput networks", with queueing (buffering) delay now the dominant and most variable component of access-network latency — the driver behind the bufferbloat and Low Latency, Low Loss, Scalable throughput (L4S) work being deployed from 2023 onward.
+  - Cut-through switching removes per-hop transmission delay for the body of a frame by forwarding after reading only the header, which is why low-latency data-centre and HPC fabrics (InfiniBand, RoCE) favour it over store-and-forward — a worked example puts a cut-through hop at zero transmission delay versus ~100 µs store-and-forward for a 1,000-bit frame on a 10 Mbps link (IIITDM lecture notes).
+  - On modern 100–800 Gbps data-centre links the serialisation of an ordinary frame is measured in nanoseconds, so end-to-end latency budgets are now dominated by propagation, queueing, and NIC/host processing rather than transmission delay.
+
+  **Sources**:
+  - https://en.wikipedia.org/wiki/Transmission_delay
+  - https://www.bitag.org/documents/BITAG_latency_explained.pdf
+  - http://www2.ic.uff.br/~michael/kr1999/1-introduction/1_06-delay.htm
 
 - ### Provenance
   - sources::

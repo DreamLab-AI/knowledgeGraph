@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -113,3 +113,11 @@ public:: true
   - **Attacker adaptation**: EDR evasion is now a standard tradecraft category — BYOVD (bring your own vulnerable driver), userland unhooking, and abuse of legitimate remote-management tools — driving kernel-level tamper protection and eBPF-based sensors on Linux.
   - **Operational risk**: the July 2024 CrowdStrike faulty-update outage, which disabled roughly 8.5 million Windows machines, demonstrated that endpoint agents themselves are critical infrastructure requiring staged rollout discipline.
   - **Baseline expectations**: Cyber Essentials (UK), ISO 27001, and cyber-insurance underwriting all effectively require managed endpoint protection, MFA, and patch SLAs as minimum controls.
+  - **Market sizing (2026)**: analysts put the standalone EDR market at ~US$6.33bn in 2026 (≈24% CAGR to 2031) and XDR at ~US$7.9bn in 2025, with cloud-delivered agents holding ~68% share; the broader endpoint-security market is ~US$40bn (2025).
+  - **Platform consolidation (2025–2026)**: vendors are merging endpoint, identity and AI-agent security — CrowdStrike agreed to acquire SGNL and Seraphic Security (Jan 2026), SentinelOne agreed to acquire Prompt Security (Aug 2025), and Palo Alto announced a US$250m Cortex XDR expansion (Feb 2026).
+  - **Post-outage buying behaviour**: the July 2024 CrowdStrike faulty-update outage (~8.5m Windows machines) continues to drive phased-rollout discipline and, for some enterprises, multi-agent diversification strategies.
+
+  **Sources**:
+  - https://www.mordorintelligence.com/industry-reports/endpoint-detection-and-response-market
+  - https://www.marketsandmarkets.com/Market-Reports/extended-detection-response-market-52119574.html
+  - https://www.datamintelligence.com/endpoint-security-market

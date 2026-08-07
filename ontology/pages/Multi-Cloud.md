@@ -65,11 +65,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -98,7 +98,15 @@ public:: true
 
   ## Current Landscape
 
-  Surveys by Flexera and Gartner have consistently reported that the large majority of enterprises (typically 85–90%) operate multi-cloud in some form, though often accidentally — through acquisitions or team-level choices — rather than by design. The tooling ecosystem has matured around the pattern: Terraform and OpenTofu for provider-agnostic provisioning, Kubernetes and its distributions for a portable runtime layer, Crossplane for control-plane abstraction, and cost-management platforms for unified billing visibility. Hyperscalers themselves now ship multi-cloud management planes (Azure Arc, Google Anthos, AWS EKS Anywhere), tacitly acknowledging that single-provider estates are the exception. The open question for most organisations is not whether to be multi-cloud but how much workload portability is worth engineering for, given that the deepest provider value lies precisely in the non-portable managed services.
+  Surveys by Flexera and Gartner have consistently reported that the large majority of enterprises operate multi-cloud in some form, though often accidentally — through acquisitions or team-level choices — rather than by design. The tooling ecosystem has matured around the pattern: Terraform and OpenTofu for provider-agnostic provisioning, Kubernetes and its distributions for a portable runtime layer, Crossplane for control-plane abstraction, and cost-management platforms for unified billing visibility. Hyperscalers themselves now ship multi-cloud management planes (Azure Arc, Google Anthos, AWS EKS Anywhere), tacitly acknowledging that single-provider estates are the exception. The open question for most organisations is not whether to be multi-cloud but how much workload portability is worth engineering for, given that the deepest provider value lies precisely in the non-portable managed services.
+
+  - **Flexera 2025 State of the Cloud**: 86% of organisations reported running multi-cloud and 70% a hybrid strategy (at least one public and one private cloud), using on average 2.4 public cloud providers.
+  - **Flexera 2026 State of the Cloud**: hybrid cloud rose to 73% of organisations, with multi-cloud adoption continuing to grow — "often unintentionally". Only ~21% of cloud workloads have been repatriated to on-premises, and over half of enterprise/SMB workloads now run in public cloud.
+  - **Regulatory pressure**: the EU's Digital Operational Resilience Act (DORA), in force since January 2025, sharpens concentration-risk and exit-plan expectations for financial firms, reinforcing multi-cloud and multi-provider strategies.
+
+  **Sources**:
+  - https://www.softwareone.com/en-us/blog/articles/2025/05/14/flexera-2025-state-of-the-cloud-recap
+  - https://www.flexera.com/blog/finops/flexera-2026-state-of-the-cloud-report-the-convergence-of-cloud-and-value/
 
 - ### Provenance
   - sources::

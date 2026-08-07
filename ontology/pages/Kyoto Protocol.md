@@ -83,11 +83,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -116,10 +116,15 @@ public:: true
 
   ## Current Landscape
 
-  - **Status**: the second commitment period ended in 2020; Kyoto's accounting and market infrastructure has been wound down or transitioned into the Paris framework, with eligible CDM activities and units migrating to the Article 6.4 mechanism under agreed transition rules.
+  - **Status**: the second commitment period ended in 2020; Kyoto's accounting and market infrastructure has been wound down or transitioned into the Paris framework. The CDM Executive Board continued provisional governance only until 31 December 2025, after which the Article 6.4 Supervisory Body took over eligible activities.
+  - **CDM-to-Paris transition**: the Article 6.4 Supervisory Body adopted the CDM transition standard and procedure at its July 2023 meeting (effective 1 January 2024); by early 2025 around 1,478 activities had requested transition and undergone Global Stakeholder Consultation. Projects had to notify intent to transition by 31 December 2023, with host-Party approval due by 30 June 2026.
+  - **Article 6.4 operationalised at COP29 (Baku, November 2024)**: after nearly nine years of negotiation, the rules governing both Article 6.2 cooperative approaches and the Article 6.4 mechanism (PACM) were finalised; the Baku decision also expanded the scope of transitionable CDM projects to include afforestation and reforestation (A/R) activities.
   - **Assessment**: parties bound in the first period broadly met their collective target, though analyses attribute part of the reduction to the post-1990 economic contraction in transition economies ("hot air") and to carbon leakage; global emissions kept rising because major emitters were outside the caps.
-  - **Legacy for measurement**: Kyoto's basket of gases, global warming potentials, national inventories, and registry systems remain the backbone of how states and companies account for emissions today, feeding through to corporate reporting concepts such as [[Scope 1 Emissions]].
-  - **Legacy for markets**: over 8,000 registered CDM projects and more than 2 billion CERs issued established the professional ecosystem — validators, verifiers, registries, [[Carbon Credits]] traders — that both compliance and voluntary carbon markets still rely on.
+  - **Legacy for measurement and markets**: Kyoto's basket of gases, global warming potentials, national inventories and registry systems remain the backbone of emissions accounting today (feeding concepts such as [[Scope 1 Emissions]]), and the professional ecosystem of validators, verifiers, registries and [[Carbon Credits]] traders built for the CDM still underpins both compliance and voluntary markets.
+
+  **Sources**:
+  - https://unfccc.int/process-and-meetings/the-paris-agreement/article-6/article-64-pacm/CDM_transition/faqs
+  - https://climatefocus.com/wp-content/uploads/2025/05/The-Paris-Agreement-Crediting-Mechanism-After-COP29_FINAL.pdf
 
 - ### Provenance
   - sources::

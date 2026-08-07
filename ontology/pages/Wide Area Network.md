@@ -50,11 +50,11 @@ public:: true
       {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -85,3 +85,10 @@ public:: true
   ## Current Landscape
 
   The enterprise WAN has been remade twice in a decade. SD-WAN — [[Software-Defined Networking]] applied to the branch edge — replaces static routing over a single MPLS circuit with centrally orchestrated overlays that measure loss, latency, and jitter across multiple underlays (MPLS, broadband, 5G) per application and steer traffic accordingly, cutting cost and lifting cloud-application performance; it is now the default branch architecture. The second remake is SASE/SSE, which fuses SD-WAN with cloud-delivered security (secure web gateway, CASB, zero-trust network access) so that the security perimeter follows users and workloads rather than sites. Meanwhile hyperscalers operate private global backbones that increasingly carry enterprise inter-region traffic (cloud WAN offerings), and 400G/800G coherent optics keep the underlying carrier economics on their long deflationary curve. The WAN's centre of gravity has shifted accordingly: from connecting branches to a head office, to connecting everyone to the cloud.
+
+  Recent market data underlines the pace of this shift. Dell'Oro Group reported the SASE market up 22% year-on-year in Q2 2025 to $2.7bn — a third consecutive quarter of accelerating growth — driven by enterprises upgrading to "AI-ready" branch architectures; within that, SD-WAN rose 27% and SSE 19%, and vendors offering both now generate 84% of SASE revenue. Gartner projected that by 2026 around 60% of new SD-WAN purchases would be part of a single-vendor SASE offering, up from 15% in 2022, and the SSE (security) half of SASE is growing at roughly twice the rate of the SD-WAN half. Consolidation continues via acquisition — Broadcom (VeloCloud), Cisco, Fortinet, Palo Alto Networks, and Zscaler lead the field — while the legacy access-router market fell ~15% as traffic migrated to SD-WAN. Analyst forecasts put the SASE market at $16–25bn by 2027–2029.
+
+  **Sources**:
+  - https://www.delloro.com/news/ai-ready-sase-branch-architectures-push-2q-2025-revenue-up-22-percent-to-2-7-b/
+  - https://www.fierce-network.com/cloud/gartner-analysis-forces-reshaping-sd-wan-landscape
+  - https://www.analysysmason.com/research/content/short-reports/sdwan-vendor-partnerships-ren01/

@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -118,6 +118,18 @@ public:: true
   - **Deployment points**: enterprise WAN edges (shaping to sub-line-rate MPLS/DIA contracts), ISP broadband aggregation, mobile cores (per-subscriber shaping via PCRF/PCF policy), datacentre hypervisors and NIC hardware shapers for tenant isolation, and SD-WAN appliances doing per-application shaping.
   - **Traffic engineering context**: shaping conditions traffic to match contracts (SLA conformance) and is often combined with marking (DSCP), policing at trust boundaries, and scheduling; in carrier ATM/Frame Relay heritage this is "traffic conditioning" per the DiffServ architecture (RFC 2475).
   - **Controversies**: application-level shaping by ISPs (throttling peer-to-peer or video) sits at the centre of net-neutrality regulation, which typically permits application-agnostic congestion management while restricting discriminatory shaping.
+
+  ## Current Landscape
+
+  - **CAKE is the modern all-in-one shaper**: Common Applications Kept Enhanced folds shaping, active queue management, DiffServ handling and flow/host fairness (dual-dsthost, triple-isolate) into a single qdisc — the rollup of years of htb+fq_codel SQM-script experience — and now has official Ubuntu Server documentation and is standard in OpenWrt-class SQM.
+  - **fq_codel is the default**: most modern Linux distributions set `net.core.default_qdisc = fq_codel`; `systemd-networkd` exposes declarative `[CAKE]` configuration, removing fragile `tc` post-up scripts.
+  - **The "95% rule" fixes bufferbloat**: shaping egress (and ingress via an IFB redirect) to roughly 90-95% of the provisioned link rate moves the bottleneck queue under your own AQM control, holding induced latency to single-digit milliseconds under load — verified via bufferbloat grading tests.
+  - **Naive deep shaping is the anti-pattern**: large FIFO shaper buffers cause bufferbloat, so contemporary practice always pairs the shaper with flow-queuing AQM rather than buffering alone.
+
+  **Sources**:
+  - https://ubuntu.com/server/docs/how-to/networking/traffic-shaping-tc-cake/
+  - https://www.bufferbloat.net/projects/codel/wiki/Cake/
+  - https://www.bufferbloat.net/projects/codel/wiki/CakeTechnical/
 
 - ### Provenance
   - sources::

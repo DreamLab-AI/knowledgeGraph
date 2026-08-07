@@ -51,11 +51,11 @@ public:: true
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -85,4 +85,14 @@ public:: true
 
   ## Current Landscape
 
-  After a decade of cloud-first orthodoxy, the pendulum has partially swung back under the banner of "cloud repatriation": organisations with stable, predictable workloads (large databases, video, simulation, and increasingly self-hosted AI inference on their own GPUs) report material savings from moving them back on-premises, with 37signals' documented exit from AWS a widely cited case. Data-sovereignty regulation in the EU, the growth of sovereign-cloud offerings, and GPU scarcity have reinforced the trend. The realistic synthesis is workload placement as an ongoing economic decision: on-premises is no longer a legacy posture but one point on a continuum running from owned racks through colocation and hosted private cloud to hyperscale public regions.
+  After a decade of cloud-first orthodoxy, the pendulum has partially swung back under the banner of "cloud repatriation": organisations with stable, predictable workloads (large databases, video, simulation, and increasingly self-hosted AI inference on their own GPUs) report material savings from moving them back on-premises.
+
+  - **37signals completed its AWS exit in May 2025**, migrating 18 petabytes off Amazon S3 onto its own Pure Storage arrays (a ~$1.5m purchase costing under $200k a year to run); its annual infrastructure bill fell from roughly $3.2m in the cloud to about $1.3m on-premises, with projected five-year savings above $10m and no added headcount.
+  - **Flexera's 2026 State of the Cloud report puts enterprise workload/data repatriation at 21%**, up two points year on year; other documented cases include GEICO (private OCP-based cloud after costs rose 2.5x, halving compute cost per core) and Dropbox's earlier Magic Pocket build-out.
+  - **Steady-state AI inference is the strongest new repatriation driver**: 24/7 LLM inference on owned GPU servers typically undercuts equivalent three-year reserved cloud capacity by 2–3x, while bursty training generally stays in the cloud for elasticity.
+  - EU data-sovereignty regulation and the growth of sovereign-cloud offerings reinforce the trend; hybrid remains the dominant end-state, and the realistic synthesis is workload placement as an ongoing economic decision — on-premises is no longer a legacy posture but one point on a continuum from owned racks through colocation and hosted private cloud to hyperscale public regions.
+
+  **Sources**:
+  - https://www.theregister.com/special-features/2025/05/09/37signals-on-prem-migration-to-save-millions-abandon-aws/691340
+  - https://www.puppet.com/blog/cloud-repatriation-trends-2026
+  - https://www.flowverify.co/blog/cloud-repatriation-21-percent-2026

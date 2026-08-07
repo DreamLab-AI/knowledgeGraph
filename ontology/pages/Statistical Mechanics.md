@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -109,7 +109,11 @@ public:: true
 
   ## Current Landscape
 
-  - **Machine learning**: energy-based models, Boltzmann machines, Hopfield networks, and diffusion models (built on Langevin dynamics and non-equilibrium thermodynamics) import statistical-mechanical tools directly; the 2024 Nobel Prize in Physics recognised Hopfield and Hinton for exactly this lineage. Replica and cavity methods from spin-glass theory are used to analyse the loss landscapes and generalisation of deep networks.
+  - **Machine learning**: energy-based models, Boltzmann machines, Hopfield networks, and diffusion models (built on Langevin dynamics and non-equilibrium thermodynamics) import statistical-mechanical tools directly. The 2024 Nobel Prize in Physics (announced 8 October 2024) was awarded to John Hopfield and Geoffrey Hinton "for foundational discoveries and inventions that enable machine learning with artificial neural networks" — explicitly citing Hopfield's spin-glass-inspired associative memory (1982) and Hinton's Boltzmann machine (1985), which assigns network states a Boltzmann probability P(s) ∝ e^(−E/T). Replica and cavity methods from spin-glass theory are used to analyse the loss landscapes and generalisation of deep networks.
   - **Complexity science**: renormalisation-group ideas, criticality, and universality classes organise the study of scaling laws in biological, urban, and technological networks.
   - **Computation**: Markov chain Monte Carlo, simulated annealing, and parallel tempering are statistical-mechanical algorithms that have become general-purpose optimisation and inference workhorses.
   - **Active matter and non-equilibrium**: current research frontiers include fluctuation theorems (Jarzynski, Crooks), thermodynamics of computation, and the statistical mechanics of living, driven systems.
+
+  **Sources**:
+  - https://www.nobelprize.org/prizes/physics/2024/press-release/
+  - https://www.nobelprize.org/prizes/physics/2024/popular-information/

@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -118,3 +118,16 @@ public:: true
   - **Variance reduction**: mini-batching, importance sampling, control variates, reparameterised gradients, and momentum as an implicit averaging mechanism; variance, not bias, usually dictates convergence speed.
   - **Key trade-off**: noise slows asymptotic convergence but aids exploration — the same perturbations that prevent tight convergence help iterates escape saddle points and poor local minima in non-convex landscapes.
   - **Practical dominance**: essentially all deep learning training is stochastic optimisation; step-size schedules, batch-size scaling rules and adaptive optimisers are the field's theory made operational in every ML framework.
+
+  ## Current Landscape
+
+  - **Matrix-structured optimisers are challenging Adam's dominance (2024–2025)**: Muon (Jordan et al., 2024) — a second-order method that orthogonalises the momentum matrix via a Newton–Schulz iteration — has moved from a nanoGPT curiosity to a serious AdamW replacement, with a February 2025 study ("Muon is Scalable for LLM Training") reporting ~2× compute efficiency at compute-optimal scale once weight decay and per-parameter update-scale adjustments are added.
+  - **Second-order preconditioning back in favour**: Shampoo won the 2025 AlgoPerf optimiser benchmark, outperforming Adam by roughly 28%, and its generalisation SOAP shows strong language-modelling results; Muon without momentum is known to be equivalent to preconditioner-free Shampoo.
+  - **Scaling rules make the gains real**: a NeurIPS 2025 study found that with correct width/depth learning-rate and weight-decay scaling (weight decay ∝ 1/width), Muon, SOAP, and Shampoo deliver a consistent ~1.4× speedup over AdamW on Llama-architecture models from 190M to 1.4B parameters — a speedup that vanishes under incorrect scaling.
+  - **AdamW remains the default baseline**: despite these advances, AdamW is still the incumbent optimiser for most large-model training, and the new methods are positioned as drop-in successors rather than wholesale replacements as of 2025–2026.
+  - **Enduring core theory**: Robbins–Monro stochastic approximation, variance-reduction (SVRG, control variates, reparameterised gradients), and O(1/√T)/O(1/T) convex rates continue to underpin the analysis of every one of these optimisers.
+
+  **Sources**:
+  - https://arxiv.org/abs/2502.16982
+  - https://arxiv.org/html/2505.02222v1
+  - https://neurips.cc/virtual/2025/poster/119109

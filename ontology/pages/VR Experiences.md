@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -122,3 +122,16 @@ public:: true
   The installed base is dominated by standalone headsets—Meta's Quest line holds the majority of consumer share, with Apple Vision Pro anchoring the premium tier and PC-tethered and PlayStation VR2 devices serving enthusiast niches. Distribution runs through platform stores, location-based venues (VR arcades, museum installations, theme-park attractions), and increasingly the browser via WebXR, which lets tourism boards and brands deliver experiences without app-store friction.
 
   Design practice has matured around VR's specific constraints: comfort (locomotion techniques and frame-rate floors of 72–90 Hz to limit motion sickness), session length (most experiences target 10–30 minutes), and onboarding for first-time users. The commercial centre of gravity has broadened from gaming into enterprise training, simulation, and marketing, where measurable outcomes—retention rates in training, uplift in booking intent—justify production costs more readily than consumer entertainment alone. The unresolved question remains habitual use: headsets excel at occasional, high-intensity experiences, and turning those into daily routines is still the industry's open challenge.
+
+  Recent developments (2025-2026):
+
+  - **Meta dominates the headset market**: Meta held roughly **53% of standalone VR/MR headset shipments in 2025** (near 80% of dedicated VR sales on some trackers), with the **Quest 3, Quest 2, and Quest 3S** occupying the top three connected-headset slots (>63% combined on SteamVR, April 2026); cumulative Quest installed base is about **26.8 million lifetime units** (Treeview/coopboardgames, 2026).
+  - **Dedicated VR headset shipments fell in 2025** (down ~14% year-on-year, ~4.3M units) even as the broader XR market grew ~42-44% to ~14.5M units — **all of that growth came from display-less smart glasses**, not headsets (Treeview; IDC).
+  - **Premium and new entrants**: Apple Vision Pro shipped an estimated 85,000 units in 2025 (~475K lifetime) and remains a professional/premium niche; Samsung launched the Android XR **Galaxy XR** in October 2025 at $1,799.
+  - The overall **VR market was valued at roughly $20.8 billion in 2025**, projected to about $26.7 billion in 2026, with over 171 million users worldwide (Fortune Business Insights via multiple trackers).
+  - **WebXR** distribution continues to let tourism boards and brands deliver "try before you fly" previews without app-store friction, and **Gaussian splatting** (now standardised via the experimental Khronos glTF KHR_gaussian_splatting extension, September 2025) is raising photorealism for captured real-place experiences.
+
+  **Sources**:
+  - https://treeview.studio/blog/xr-spatial-computing-smart-glasses-market-statistics-report
+  - https://coopboardgames.com/statistics/vr-headset-market-share/
+  - https://www.g2.com/articles/virtual-reality-statistics

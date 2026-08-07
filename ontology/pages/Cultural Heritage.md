@@ -50,11 +50,11 @@ public:: true
       {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -89,3 +89,14 @@ public:: true
   - **Preservation urgency**: conflict, climate change, and mass tourism drive "digital ark" initiatives (CyArk, Iconem) that scan at-risk sites pre-emptively.
   - **UK context**: Historic England and the National Heritage Lottery Fund finance digitisation programmes; the GLAM sector (galleries, libraries, archives, museums) is a recognised component of the UK creative economy.
   - **Open questions**: rights management for scanned artefacts, standards for 3D heritage metadata (e.g. CIDOC CRM), and equitable access for source communities remain unresolved.
+
+  Recent developments (2025-2026):
+
+  - **EU data-space strategy**: the European Commission and Europeana Foundation published the *Common European Data Space for Cultural Heritage – Strategy 2025-2030* (announced January 2026), built around three priorities — interoperable infrastructure, wider access and reuse, and sector digital transformation — with AI, 3D and extended reality as cross-cutting themes.
+  - **3D digitisation targets**: the Commission's Recommendation asks Member States to digitise in 3D, by 2030, all monuments and sites at risk of degradation and 50% of the most-visited heritage sites; the data space is funded under the Digital Europe Programme and built on Europeana's infrastructure.
+  - **Twin it! campaign**: the EU/Europeana "Twin it! 3D for Europe's Culture" campaign ran a second phase from June 2025 with a sharper focus on reuse intent, culminating in its final event on 12 May 2026, adding emblematic 3D models from all 27 Member States to the data space.
+  - **Sector baseline**: as of the data space's launch, Europeana offered access to ~52 million cultural-heritage assets, of which only ~0.03% were 3D — the gap that Twin it! and projects such as EUreka3D-XR (2025-2026) are designed to close.
+
+  **Sources**:
+  - https://digital-strategy.ec.europa.eu/en/library/common-european-data-space-cultural-heritage-strategy-2025-2030
+  - https://digital-strategy.ec.europa.eu/en/policies/twin-it

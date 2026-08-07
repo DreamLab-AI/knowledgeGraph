@@ -89,11 +89,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -127,3 +127,16 @@ public:: true
   - **Training**: maximum-likelihood next-token prediction with teacher forcing; the discrepancy between training (ground-truth history) and inference (own predictions) is exposure bias, mitigated by scheduled sampling or sequence-level objectives.
   - **Decoding strategies**: greedy search, beam search for quality-critical tasks such as translation, and sampling with temperature/nucleus truncation for diverse generation.
   - **Architectural trade-off**: encoder-decoder models process input bidirectionally and are efficient when input and output are distinct; decoder-only models unify both in one causal stream, which scales more simply and dominates modern large language models.
+
+  ## Current Landscape
+
+  - **Encoder-decoder revival (July 2025)**: Google released T5Gemma, a family of encoder-decoder LLMs built by *adapting* pretrained decoder-only Gemma 2 models (initialising both halves from decoder weights, then continuing pre-training with UL2/PrefixLM); the adapted models matched or beat their decoder-only counterparts and dominated the quality-versus-inference-efficiency Pareto frontier on benchmarks such as SuperGLUE and GSM8K.
+  - **T5Gemma 2 (December 2025)**: the follow-up, based on Gemma 3, added the first multimodal and long-context open encoder-decoder models at compact sizes (270M–270M to 4B–4B), with tied encoder-decoder embeddings and merged self/cross-attention to cut parameters for on-device deployment.
+  - **Systematic comparison (October 2025)**: a large-scale study ("RedLLM vs DecLLM", 150M–8B parameters on 1.6T tokens) found decoder-only models more compute-optimal in pretraining, but encoder-decoder models comparable in scaling and substantially better in finetuned quality and inference efficiency — evidence the decoder-only monoculture is a contingent choice rather than a settled verdict.
+  - **Deployed workhorses**: the pattern remains standard in production for machine translation, Whisper-style speech recognition, and summarisation, where a fixed input consumed once by a bidirectional encoder is cheaper than re-processing it causally at every step.
+
+  **Sources**:
+  - https://developers.googleblog.com/en/t5gemma/
+  - https://blog.google/innovation-and-ai/technology/developers-tools/t5gemma-2/
+  - https://arxiv.org/html/2510.26622v1
+  - https://aclanthology.org/2025.findings-acl.490.pdf

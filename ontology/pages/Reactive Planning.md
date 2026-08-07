@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -127,3 +127,15 @@ public:: true
   - **Universal plans / policies**: precomputed mappings from every reachable state to an action, as produced by reinforcement learning or symbolic policy synthesis — reactive at execution time even when computed deliberatively.
 
   Reactive execution layers must satisfy hard latency bounds, which links the topic to [[Real Time Systems]]: control loops typically run at 10–1000 Hz, and action selection must complete within a single tick. The standard weaknesses — local minima, oscillation, and inability to reason about resource use over long horizons — are mitigated in practice by layering reactive skills beneath a slower deliberative planner, an arrangement now conventional in autonomous driving stacks, drone autopilots, and manipulation pipelines that pair [[Motion Planning]] with reactive collision avoidance.
+
+  ## Current Landscape
+
+  - **Behaviour trees are the ROS 2 default**: `BehaviorTree.CPP` has become the de facto standard for reactive task execution in the ROS 2 ecosystem, largely through its integration into the Nav2 navigation stack, cementing tick-based reactive control as mainstream robotics practice.
+  - **LLMs as reactive-plan generators (2024–2025)**: a wave of work uses large language models to *generate* behaviour trees from natural-language instructions — including fine-tuned lightweight (≤7B) models that emit BehaviorTree.CPP-compatible trees (arXiv:2403.12761) and in-context "LLM-as-BT-Planner" frameworks for robotic assembly (arXiv:2409.10444) — combining a deliberative language layer with a reactive execution layer.
+  - **Interpretable hybrid control (Aug 2025)**: frameworks pairing GPT-4o interpretation with a tick-based behaviour-tree core report ~94% end-to-end command-to-execution accuracy across human-robot interaction scenarios, illustrating the now-standard "slow deliberation, fast reaction" split on real aerial and legged robots.
+  - **Enduring rationale**: the classic reactive-planning virtues — robustness to sensor noise and exogenous change, and bounded per-tick latency — remain the reason these architectures dominate over purely deliberative planning in dynamic, safety-critical settings.
+
+  **Sources**:
+  - https://arxiv.org/html/2403.12761v2
+  - https://arxiv.org/html/2409.10444v3
+  - https://www.emergentmind.com/papers/2508.09621

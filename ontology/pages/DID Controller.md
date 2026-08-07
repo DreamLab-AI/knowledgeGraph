@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -116,3 +116,14 @@ public:: true
   In a DID document the `controller` property names one or more DIDs authorised to make changes; authority to *use* the DID for specific purposes is expressed through verification relationships—`authentication`, `assertionMethod`, `keyAgreement`, `capabilityInvocation`, and `capabilityDelegation`—each pointing at verification methods. How a controller actually effects an update is method-specific: `did:web` controllers edit a file on a domain they administer, `did:key` documents are immutable derivations of a single key, ledger-based methods require signed transactions accepted by the network, and `did:peer` updates propagate directly between relationship parties.
 
   Practical deployments (EU eIDAS 2.0 wallets, mobile driving licences, supply-chain credentials) concentrate on the hard edges of controllership: recovery when a sole controller loses keys (social recovery, custodial fallback), succession when an organisational controller dissolves, and the privacy risk that controller relationships—one DID naming another as controller—create correlatable graphs. Guardianship transitions, such as a device DID passing from manufacturer to owner, remain an active design area in the W3C and Decentralized Identity Foundation communities.
+
+  ## Current Landscape
+
+  - **DID Core moving to v1.1**: the W3C Decentralized Identifier Working Group published the First Public Working Draft of DIDs v1.1 in January 2025 and continued Recommendation-track work through 2026; the controller model — an entity proving authority over a DID document via cryptographic verification methods, without permission from any central party — is carried forward unchanged from DID Core 1.0.
+  - **Resolution split out**: DID Resolution is now specified separately (DID Resolution v0.3), so how a controller's update is discovered and dereferenced is handled outside the core data model.
+  - **eIDAS 2.0 / EUDIW**: the EU's European Digital Identity Wallet Architecture and Reference Framework (ARF) drives real-world controllership requirements — self-representation, recovery, and wallet-secure-cryptographic-application (WSCA) key custody — analysed in the EDPS TechDispatch #3/2025 on digital identity wallets (December 2025).
+  - **Key management is the substance of control**: guardianship handover, social/custodial recovery, and threshold or multi-controller schemes remain the active engineering frontier, since whoever holds the controlling keys is operationally the controller.
+
+  **Sources**:
+  - https://www.w3.org/TR/did-1.1/
+  - https://www.edps.europa.eu/data-protection/our-work/publications/techdispatch/2025-12-15-techdispatch-32025-digital-identity-wallets_en

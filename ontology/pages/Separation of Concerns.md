@@ -77,11 +77,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -114,6 +114,17 @@ public:: true
   - **Mechanisms of enforcement**: module systems and visibility rules, interface/implementation splits, dependency inversion, service boundaries in microservice architectures, and schema contracts between producers and consumers.
   - **Related principles**: single responsibility principle (SoC applied at class level), high cohesion/low coupling, information hiding, and orthogonality; Kiczales et al.'s aspect-oriented programming (1997) addresses concerns that cross-cut a dominant decomposition.
   - **Limits**: every decomposition privileges one dimension of concern ("tyranny of the dominant decomposition"); over-separation produces indirection-heavy designs where a single behaviour is smeared across many trivial parts, so the principle is applied against expected axes of change, not maximally.
+
+  ## Current Landscape
+
+  - **Provenance is precise**: the term was coined by Edsger Dijkstra in EWD447, "On the role of scientific thought" (30 August 1974), framed as separating software qualities such as *correctness* from *efficiency* — a broader idea than modularity alone.
+  - **A taxonomy of separations**: current reference treatments (e.g. Wikipedia's consolidated entry) note SoC can be achieved temporally (lifecycle sequencing), by quality (correctness vs efficiency), by view (Kruchten's "4+1" architectural views), or by size (modularity) — modularity being only one application of the principle.
+  - **Cross-cutting concerns**: aspect-oriented programming (Kiczales et al., 1997) remains the canonical mechanism for concerns — logging, security, transactions — that resist a single dominant decomposition, weaving them at defined join points.
+  - **Enduring architectural driver**: SoC underpins today's dominant patterns — microservice and service boundaries, layered/hexagonal architectures, and the model-view separation in modern UI frameworks — where well-specified boundaries remain the precondition for independent deployment and interoperability.
+
+  **Sources**:
+  - https://en.wikipedia.org/wiki/Separation_of_concerns
+  - https://ocw.mit.edu/courses/6-170-software-studio-spring-2013/67b9b2f52222362b273de0c6638626e4_MIT6_170S13_08-sep-of-conc.pdf
 
 - ### Provenance
   - sources::

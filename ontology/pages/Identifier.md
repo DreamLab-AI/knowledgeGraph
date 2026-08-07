@@ -45,11 +45,11 @@ public:: true
       {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -84,6 +84,18 @@ public:: true
   - **Cryptographic identifiers**: content-addressed hashes (Git commits, IPFS CIDs) and DID methods derive the identifier from key material or content, making integrity verifiable without a registry.
   - **Persistence practice**: "cool URIs don't change" — persistent-identifier infrastructure (DOI, ARK, PURL) separates the stable name from mutable locations via resolution services.
   - **Design pitfalls**: reusing identifiers, embedding mutable semantics (smart keys), and scope collisions when local identifiers leak into global contexts are the classic failure modes.
+
+  ## Current Landscape
+
+  - The UUID standard was fully modernised by **RFC 9562** (Proposed Standard, May 2024), which obsoletes RFC 4122 and adds sortable, timestamp-ordered UUIDv7 plus the reordered UUIDv6 and free-form UUIDv8 — a direct response to database and distributed-systems needs where random UUIDv4 keys fragment index locality.
+  - **W3C Decentralized Identifiers (DID) Core v1.0** became a W3C Recommendation in July 2022, defining a cryptographically verifiable, registry-independent identifier that (unlike a UUID) is both resolvable and provable; DID methods and the accompanying Verifiable Credentials work remain the fastest-moving area of new identifier design.
+  - The URI/IRI family (RFC 3986/3987) still underpins web-scale naming, while ISO/IEC 9834 / ITU-T X.667 keep the OID and UUID registries technically aligned across ISO and the IETF.
+  - Persistent-identifier infrastructure (DOI, ORCID, ROR, ARK) continues to expand in research and cultural-heritage settings, reinforcing the "cool URIs don't change" separation of stable name from mutable location.
+
+  **Sources**:
+  - https://www.rfc-editor.org/info/rfc9562/
+  - https://www.w3.org/TR/did-core/
+  - https://en.wikipedia.org/wiki/Universally_unique_identifier
 
 - ### Provenance
   - sources::

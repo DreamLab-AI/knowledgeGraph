@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -110,3 +110,16 @@ public:: true
   ## Technical Details
 
   Under Pillar 1, credit-risk capital could be computed via the standardised approach, using external ratings and fixed risk weights, or via foundation and advanced internal-ratings-based approaches in which banks estimate probability of default, loss given default, and exposure at default. Operational risk introduced the basic-indicator, standardised, and advanced-measurement approaches. The framework retained the 8% minimum ratio of capital to risk-weighted assets from Basel I but changed how those risk-weighted assets were computed. Its reliance on banks' internal models and on external credit ratings became a central criticism after the crisis, as both were shown to understate tail risk. Basel III responded with higher and better-quality capital, a leverage ratio backstop independent of risk weights, capital conservation and counter-cyclical buffers, and new liquidity standards — the liquidity coverage ratio and net stable funding ratio — that Basel II had lacked entirely.
+
+  ## Current Landscape
+
+  The Basel II framework is fully superseded in principle, but the final ("endgame") Basel III reforms that replace its internal-model-heavy approach are still being phased in across jurisdictions, with repeated delays.
+
+  - **UK Basel 3.1**: On 17 January 2025 the PRA, with HM Treasury, delayed UK implementation by a further year to 1 January 2027 (its third slippage), citing US timing uncertainty and competitiveness; the PRA published its final rules in policy statement PS1/26 (January 2026).
+  - **UK phasing detail**: The market-risk internal-model approach (FRTB-IMA) is deferred to 1 January 2028, while the output floor — which caps the benefit banks derive from internal models — is phased in to 2030 (earlier than the EU's 2032).
+  - **EU (CRR3/CRD6)**: Most CRR3 provisions applied from 1 January 2025; in June 2025 the European Commission used a delegated act to postpone the FRTB market-risk chapter to 1 January 2027 to preserve a level playing field with the UK and US.
+  - **Global divergence**: A September 2025 European Parliament analysis found that as of that date only 8 of 20 Basel Committee members had implemented the whole final framework, with the US, UK, India, South Africa and Turkey among those yet to implement any of the endgame standards — the very divergence driving the successive delays.
+
+  **Sources**:
+  - https://www.bankofengland.co.uk/news/2025/january/the-pra-announces-a-delay-to-the-implementation-of-basel-3-1
+  - https://www.bankofengland.co.uk/prudential-regulation/publication/2026/january/implementation-of-the-basel-3-1-final-rules-policy-statement

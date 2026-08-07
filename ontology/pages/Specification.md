@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -110,6 +110,19 @@ public:: true
   - **Lifecycle**: draft, review, ratification, publication, errata, and versioned revision; standards bodies (ISO, IEC, IETF, W3C, ETSI) each define maturity ladders such as the IETF's Internet-Draft → Proposed Standard → Internet Standard track.
   - **Conformance infrastructure**: reference implementations, test suites, and certification programmes (e.g. Khronos conformance tests, USB-IF certification) close the loop between specification text and shipping products; specification ambiguity discovered by divergent implementations is fed back as errata.
   - **Executable specifications**: modern practice increasingly makes the specification machine-readable — OpenAPI for HTTP interfaces, JSON Schema and SHACL for data, IDL for binary protocols — so that validators, code generators, and contract tests are derived from the specification rather than written beside it.
+
+  ## Current Landscape
+
+  - **Normative-keyword conformance**: the RFC 2119 / RFC 8174 keyword set (MUST, SHOULD, MAY, published as BCP 14) remains the standard grammar of conformance; RFC 8174 (May 2017) clarified that only UPPERCASE usage carries the defined normative meaning, resolving a long-standing ambiguity that persists across IETF, W3C, and OASIS documents.
+  - **Machine-readable HTTP specs**: OpenAPI 3.1 (2021) realigned its Schema Object with JSON Schema Draft 2020-12, and the OpenAPI Initiative has since published the 3.2.0 line (2025), continuing the shift towards specifications that are directly consumable by validators, code generators, and contract-testing tools.
+  - **Standards-body keyword guidance**: OASIS's keyword guidelines (updated 2022) formally fold RFC 8174 into BCP 14 and align it with the ISO/IEC Directives, underscoring that changing a lowercase "must" to UPPERCASE "MUST" materially changes a specification's conformance requirements.
+  - **Executable and contract-first practice**: JSON Schema, SHACL, and OpenAPI increasingly serve as the single normative artefact from which servers, clients, and tests are derived, tightening the loop between specification text and shipping software.
+
+  **Sources**:
+  - https://datatracker.ietf.org/doc/html/rfc8174
+  - https://swagger.io/specification/
+  - https://spec.openapis.org/oas/
+  - https://www.oasis-open.org/policies-guidelines/keyword-guidelines-for-oasis-specifications-and-standards/
 
 - ### Provenance
   - sources::

@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -116,7 +116,19 @@ public:: true
   - **Branch and cut / branch and price**: modern MILP solvers (CPLEX, Gurobi, SCIP, CBC) interleave cutting planes and column generation with the branch-and-bound tree; presolve, heuristics for early incumbents, and conflict learning further shrink the tree.
   - **Search strategies**: best-first order minimises nodes expanded but is memory-hungry; depth-first finds incumbents quickly with O(depth) memory; solvers typically dive for incumbents then switch strategy.
   - **Complexity**: worst case remains exponential — the paradigm does not evade NP-hardness — but strong bounds routinely reduce practical instances from astronomically many candidates to thousands of explored nodes.
-  - **Parallelism**: subtrees are naturally independent, enabling parallel and distributed tree search, though load balancing and sharing of incumbents/pseudo-costs are non-trivial.
+  - **Parallelism**: subtrees are naturally independent, enabling parallel and distributed tree search, though load balancing and sharing of incumbents/pseudo-costs are non-trivial; the UG framework (v1.0) parallelises branch and bound over shared- and distributed-memory machines with SCIP as the base solver.
+
+  ## Current Landscape
+
+  - **Solver releases**: the SCIP Optimization Suite 10.0 (November 2025) added an exact rational MILP solving mode, cut-based conflict analysis, a new infeasibility-explanation tool, and improved branching strategies, with maintenance release 10.0.2 following in April 2026; SCIP remains one of the fastest non-commercial MIP/MINLP solvers and the standard research testbed because its branching and cut-selection internals are open, unlike Gurobi and CPLEX.
+  - **Nonlinear extension**: Gurobi 12 added support for general nonlinear constraints via dynamic outer approximation, treating global MINLP as a spatial branch-and-bound extension of MILP branch and bound.
+  - **Learned branching**: machine-learning-guided tree search is an active research front — SORREL (AAAI 2025) applies reinforcement learning over suboptimal demonstrations to variable branching, and Collab-Solver (2025) jointly learns cut-selection and branching policies as a Stackelberg game, reporting roughly 50% solving-time improvement over default SCIP on benchmark sets.
+
+  **Sources**:
+  - https://scipopt.org/
+  - https://optimization-online.org/wp-content/uploads/2025/11/scipopt-100.pdf
+  - https://arxiv.org/html/2508.03030v2
+  - https://arxiv.org/pdf/2412.15534.pdf
 
 - ### Provenance
   - sources::

@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -120,7 +120,14 @@ public:: true
   ## Current Landscape
 
   - **AI as the growth driver**: token-metered LLM APIs have made usage-based pricing the dominant new model; AI inference is now among the largest API spend categories for software firms.
-  - **Platform tooling**: gateways and API platforms (Apigee, Kong, AWS API Gateway, Azure API Management) ship native monetisation modules; usage-billing specialists (Stripe Billing, Metronome, Lago, OpenMeter) handle metering-to-invoice pipelines.
-  - **Agentic payments**: L402 implementations (Lightning Labs' Aperture, LangChain integrations) and HTTP 402 revivals target machine-to-machine commerce, where an agent discovers, pays for, and consumes an API within a single request cycle.
+  - **x402 has become the flagship agentic-payment rail**: Coinbase's x402 protocol, which revives the HTTP 402 status code for stablecoin (USDC/EURC) settlement, is now governed by the Linux Foundation via the x402 Foundation (a coalition of 25+ organisations) and, as of early 2026, is live on Base, Solana, Stellar, Arbitrum, Polygon, and Ethereum mainnet with roughly 2-second settlement on Base.
+  - **Cloudflare Monetization Gateway (July 2026)**: Cloudflare announced an edge engine to charge for any protected resource — web pages, datasets, APIs, or MCP tools — settling in stablecoins over x402, signalling infrastructure-scale adoption of pay-per-call machine payments.
+  - **L402 remains the Bitcoin-native alternative**: Lightning Labs' L402 pairs HTTP 402 with Lightning invoices and macaroon tokens, settling in bitcoin with no custodial facilitator in the critical path; a full pay-and-retry cycle adds roughly two to four seconds.
+  - **MCP tool monetisation**: a fast-growing use case is charging per invocation for Model Context Protocol tools an AI agent calls (translation, database query, image generation), billed directly without accounts or API keys.
+  - **Platform tooling**: gateways (Apigee, Kong, AWS/Azure API Management) ship native monetisation modules; usage-billing specialists (Stripe Billing, Metronome, Lago, OpenMeter) handle metering-to-invoice pipelines.
   - **Pricing pressure**: per-seat pricing is giving way to hybrid usage models; predictability (caps, alerts, committed tiers) is the main lever against bill-shock churn.
-  - **Governance**: monetised APIs need SLAs, versioning discipline, and abuse controls, binding commercial terms tightly to the technical management plane.
+
+  **Sources**:
+  - https://blog.cloudflare.com/monetization-gateway/
+  - https://www.tftc.io/x402-foundation-operational-launch-ai-agent-payments
+  - https://www.tryspeed.com/blog/how-to-monetize-apis-for-ai-agents

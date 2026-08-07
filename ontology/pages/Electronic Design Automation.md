@@ -81,11 +81,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -119,3 +119,15 @@ public:: true
   - **Verification arsenal**: logic simulation, hardware emulation, formal property checking (model checking, SAT/SMT), equivalence checking, and post-silicon validation.
   - **Physical design objectives**: simultaneous optimisation of timing (setup/hold slack), power (dynamic and leakage), and area — the "PPA" triad — under increasingly restrictive design rules at advanced nodes.
   - **Open-source flows**: OpenROAD, Yosys, and the OpenLane flow now support complete RTL-to-GDSII for mature nodes, underpinning academic tape-outs and efforts such as Google/Efabless open MPW shuttles.
+
+  ## Current Landscape
+
+  - **Consolidation**: Synopsys completed its $35 billion acquisition of simulation vendor Ansys on 17 July 2025, expanding its addressable market to a stated $31 billion; China's SAMR granted conditional approval on 14 July 2025, requiring divestment of Ansys's optics/photonics simulation business and non-discriminatory supply to Chinese customers.
+  - **Export-control whiplash (2025)**: in late May 2025 the US Commerce Department ordered Synopsys, Cadence, and Siemens EDA to halt EDA software sales to China — a market worth over 10% of their revenue, where the three held a combined ~82% share (Morgan Stanley) — then rescinded the restrictions in early July 2025 following a US–China trade truce, with all three vendors restoring access. Advanced-node (sub-14/16nm GAAFET-class) EDA restrictions from the 2022–2023 controls remain a separate, narrower regime.
+  - **AI in the flow**: reinforcement-learning placement (Google's AlphaChip lineage) and ML-guided synthesis and verification are now embedded in commercial flows, with all major vendors shipping AI copilots and design-space-exploration products.
+
+  **Sources**:
+  - https://news.synopsys.com/2025-07-17-Synopsys-Completes-Acquisition-of-Ansys
+  - https://www.reuters.com/world/china/china-grants-conditional-approval-synopsys-acquire-ansys-2025-07-14/
+  - https://www.reuters.com/world/china/chip-design-software-firms-rise-us-lifts-curbs-china-exports-2025-07-03/
+  - https://www.caixinglobal.com/2025-07-15/china-approves-synopsysansys-merger-with-eight-conditions-amid-post-sanctions-rebound-102341171.html

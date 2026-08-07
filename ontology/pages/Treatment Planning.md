@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -108,6 +108,19 @@ public:: true
   AI-assisted planning has moved into routine use fastest in radiation oncology: deep-learning auto-contouring is now deployed in many NHS and international centres, cutting segmentation time from hours to minutes, and automated or knowledge-based dose planning produces clinically acceptable plans for common sites with clinician sign-off. Regulators treat these tools as medical devices, and the human-approval step remains mandatory everywhere they are deployed.
 
   The frontier is adaptive and personalised planning: re-planning radiotherapy daily as anatomy shifts (MR-guided adaptive systems), genomically informed therapy selection in oncology, and multimodal models that combine imaging, pathology, and records to predict which plan a specific patient will tolerate and respond to. Persistent challenges are familiar from medical AI generally — validation across scanners and populations, automation bias in time-pressured clinics, auditability of plan recommendations, and integrating algorithmic outputs into accountable multidisciplinary decision-making.
+
+  Recent developments (2025-2026):
+
+  - The Royal College of Radiologists published *Guidance Statements on the Use of Auto-contouring in Radiotherapy* (Clin Oncol, 18 December 2025), setting UK consensus recommendations on model selection, clinical commissioning, day-to-day QA, and post-implementation monitoring — and stating that the healthcare professional approving auto-contours carries overall responsibility as the operator of a medical device.
+  - Auto-segmentation is now the most clinically mature radiation-oncology AI application, with multiple FDA-cleared/CE-marked commercial platforms (Siemens Healthineers Organs RT, MVision Contour+, TheraPanacea Annotate, RadFormation AutoContour) routinely cutting contouring from hours to minutes while still requiring clinician review and edits (Frontiers in Oncology review, July 2026).
+  - Most deployed radiation-oncology AI is regulated as Software as a Medical Device (SaMD) via FDA 510(k)/De Novo or equivalent pathways; the FDA's Predetermined Change Control Plan framework is being positioned to govern continuously adaptive AI (Frontiers in Oncology, 2026).
+  - Deep-learning synthetic-CT generation (from MRI/CBCT) and AI auto-contouring have cut online MR-guided adaptive re-planning to under about six minutes in reported prostate workflows, enabling daily adaptation within clinical time constraints on platforms such as Elekta Unity and ViewRay MRIdian.
+  - Commonly cited open challenges remain multi-institutional external validation, standardised benchmarking, drift monitoring, and transparent, uncertainty-aware models before broad autonomous deployment.
+
+  **Sources**:
+  - https://pubmed.ncbi.nlm.nih.gov/41519097/
+  - https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2026.1912362/full
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC13067188/
 
 - ### Provenance
   - sources::

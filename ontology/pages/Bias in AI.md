@@ -81,11 +81,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -116,6 +116,13 @@ public:: true
   ## Current Landscape
 
   - **Measurement**: disaggregated evaluation with metrics such as demographic parity, equalised odds, and calibration within groups; toolkits include IBM AIF360, Fairlearn, and Google's Fairness Indicators; LLM-specific benchmarks (BBQ, StereoSet, HolisticBias) probe representational bias.
-  - **Regulation**: the EU AI Act (in force since 2024, obligations phasing in through 2026-27) makes bias testing and data-governance duties explicit for high-risk systems; the NIST AI Risk Management Framework and ISO/IEC 42001 embed bias controls in organisational governance; UK regulators (ICO, EHRC, FCA) apply existing discrimination and data-protection law to AI systems.
+  - **Regulation**: the EU AI Act (in force since 1 August 2024) applied its prohibited-practice rules from 2 February 2025 and its GPAI-model obligations from 2 August 2025, with the Commission's GPAI enforcement powers following on 2 August 2026; the 2026 "digital omnibus" agreement deferred the high-risk obligations that mandate bias examination — to 2 December 2027 for standalone Annex III systems (recruitment, credit scoring, biometrics) and 2 August 2028 for AI embedded in regulated products — while extending the legal basis for processing special-category data for bias detection and correction to all AI systems; the NIST AI Risk Management Framework and ISO/IEC 42001 embed bias controls in organisational governance; UK regulators (ICO, EHRC, FCA) apply existing discrimination and data-protection law to AI systems.
   - **Practice**: model cards and datasheets are standard release artefacts at major labs; red-teaming for biased behaviour is part of frontier-model evaluation; sector deployments in credit, insurance and employment increasingly require documented bias audits before go-live.
   - **Open problems**: intersectional groups too small for reliable measurement, bias amplification during fine-tuning and RLHF, unmeasured proxy discrimination, and the transfer of benchmark results to real deployment contexts.
+  - **Enforcement in practice**: New York City's Department of Consumer and Worker Protection shifted from complaint-driven to proactive enforcement of Local Law 144 in January 2026, after analyses found only around 5% of NYC employers using automated hiring tools had published the required bias-audit summaries.
+
+  **Sources**:
+  - https://artificialintelligenceact.eu/enforcement-of-chapter-v-under-the-eu-ai-act/
+  - https://ai-act-service-desk.ec.europa.eu/en/faq
+  - https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/
+  - https://www.nyc144euaiact.com/learn/timeline

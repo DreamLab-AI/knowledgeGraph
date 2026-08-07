@@ -89,11 +89,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -124,7 +124,13 @@ public:: true
   ## Current Landscape
 
   - **Scale**: well over 200 million students are enrolled in tertiary education worldwide; global scholarly output exceeds five million articles a year.
-  - **Compute divide**: training frontier AI models costs orders of magnitude more than typical academic grants; responses include national AI research resources (US NAIRR pilot, UK AIRR, EuroHPC) and consortium clusters.
+  - **Compute divide**: training frontier AI models costs orders of magnitude more than typical academic grants; national responses are now concrete. The UK's AI Research Resource (AIRR) — Isambard-AI at Bristol (5,448 Nvidia GH200 Grace-Hopper superchips) and Dawn at Cambridge (1,024 Intel Data Centre GPU Max 1550 GPUs) — was formally launched in July 2025, backed by a £1 billion government commitment to expand national compute roughly twenty-fold by 2030 (c.£350m in the two clusters alone).
+  - **Structured academic access (2025-26)**: AIRR opened Gateway (up to 10,000 GPU hours), Rapid Access/Innovator (up to 20,000 GPU hours for SMEs), and larger AI-for-Science calls offering 200,000-1,000,000 GPU hours, with "system takeover" hero runs up to ~1.4 million GPU hours — allocated as compute rather than cash grants under the Subsidy Control Act 2022.
   - **Talent flows**: a majority of leading AI researchers now work in or with industry; dual appointments and industrial PhD schemes have become the standard bridge.
   - **Open science pressure**: preprint servers (arXiv), open-access mandates (Plan S, UKRI policy), and open peer-review experiments are restructuring scholarly publishing economics.
-  - **Evaluation reform**: movements such as DORA and CoARA push against journal-impact-factor careerism toward assessing research on its own merits — including software, datasets, and replication work.
+  - **Evaluation reform**: movements such as DORA (San Francisco Declaration on Research Assessment) and CoARA push against journal-impact-factor careerism toward assessing research on its own merits — including software, datasets, and replication work.
+
+  **Sources**:
+  - https://www.gov.uk/government/publications/ai-research-resource/airr-advanced-supercomputers-for-the-uk
+  - https://www.gov.uk/government/publications/airr-compute-opportunity-ai-for-science/airr-compute-opportunity-ai-for-science
+  - https://www.ukri.org/opportunity/access-to-isambard-ai-and-dawn-airr-supercomputers-gateway-route/

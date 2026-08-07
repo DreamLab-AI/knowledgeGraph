@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -114,6 +114,19 @@ public:: true
   - **Publish** — gateway registration, documentation portal, credential issuance, service-level objectives.
   - **Operate** — observability (latency, error rates, usage per consumer), throttling, incident response.
   - **Evolve** — versioned releases, backward-compatibility checks in CI, changelog discipline.
-  - **Deprecate and retire** — sunset policy (RFC 8594 Sunset header, Deprecation header), consumer notification, traffic drain, removal.
+  - **Deprecate and retire** — sunset policy (RFC 8594 Sunset header, RFC 9745 Deprecation header), consumer notification, traffic drain, removal.
 
   **Practice notes**: mature platforms encode lifecycle state (draft, beta, general availability, deprecated, retired) as first-class metadata in their API catalogue, and gate transitions with automated checks — a breaking-change detector comparing successive specifications is the single highest-value control. Deprecation windows are typically six to twenty-four months for public APIs, and telemetry on per-consumer usage is what makes retirement safe rather than speculative. The lifecycle concept applies equally to REST, GraphQL, gRPC, and event-driven interfaces; only the contract artefacts differ.
+
+  ## Current Landscape
+
+  - **RFC 9745 standardised the Deprecation header (March 2025)**: The IETF published "The Deprecation HTTP Response Header Field", giving the deprecation signal formal standing alongside the older RFC 8594 Sunset header (May 2019). The two are designed to work together — Deprecation signals a resource is still available but no longer recommended; Sunset signals the date it will cease to exist.
+  - **Format detail**: RFC 9745's Deprecation value is a Structured Field Date (RFC 9651), a Unix timestamp prefixed with `@`; the Sunset value is an IMF-fixdate HTTP-date. The Sunset timestamp must not be earlier than the Deprecation date, and both are paired with a `Link` header (RFC 8288, `rel="deprecation"`) pointing to human-readable migration docs.
+  - **Retirement convention**: At the sunset date, return `410 Gone` for permanently removed resources rather than `404 Not Found`, so clients can distinguish deliberate retirement from an error.
+  - **OpenAPI catching up**: OpenAPI 3.x already supports `deprecated: true` on operations and fields; an active OpenAPI 3.3/3.x proposal (2026) would add API-level `deprecationDate`, `sunsetDate`, and migration URLs mapping directly to the RFC 9745/8594/8288 headers.
+  - **Finer granularity emerging**: an IETF draft (`application/deprecations+json`, 2026) proposes a machine-readable Deprecation Manifest to describe the lifecycle of individual fields within request/response bodies, which the resource-level headers cannot express.
+
+  **Sources**:
+  - https://www.rfc-editor.org/rfc/rfc9745.txt
+  - https://apiguide.dev/guides/deprecation-sunsetting/
+  - https://github.com/OAI/OpenAPI-Specification/discussions/5193

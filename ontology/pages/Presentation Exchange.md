@@ -51,11 +51,11 @@ public:: true
       {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -89,4 +89,18 @@ public:: true
   - **Constraint language**: per-field JSONPath selectors with JSON Schema filters; `limit_disclosure` signals that only requested fields may be revealed.
   - **Submission requirements**: rule-based combinators (`all`, `pick` with count/min/max) over descriptor groups, enabling policies such as "one government ID and one proof of address".
   - **Format negotiation**: declared per definition or per descriptor (`jwt_vc`, `ldp_vc`, `ac_vc`, `mso_mdoc`), letting a verifier accept multiple credential technologies in one request.
-  - **Versions**: PE v1.0 (2021) and v2.0 (2023); v2 tightened the feature set and clarified conformance. Widely implemented in wallet SDKs (Sphereon, walt.id, Credo) and referenced by OpenID4VP drafts up to draft 20+.
+  - **Versions**: DIF has ratified PE v1.0.0, v2.0.0, v2.1.0 and v2.1.1; the working spec remains a pre-draft that continues to be refined from real-world wallet feedback. Widely implemented in wallet SDKs (Sphereon, walt.id, Credo).
+
+  ## Current Landscape
+
+  - OpenID4VP reached its 1.0 release in 2025 (draft 24 was published on 27 January 2025, draft 25 in April 2025), and it now defines a new query language — the Digital Credentials Query Language (DCQL) — alongside the older `presentation_definition` (Presentation Exchange) parameter.
+  - DCQL was introduced into OpenID4VP at draft 22 (31 October 2024) and is explicitly designed to reduce the ambiguity and complexity of full PE; it uses a simpler explicit map keyed by identifiers instead of PE's JSONPath `descriptor_map`.
+  - For EU-grade interoperability the balance has tipped: DCQL is the query format "preferred for new EUDI wallet deployments", and in the latest High Assurance Interoperability Profile (HAIP) DCQL is already the only mandated query language, positioning PE as the legacy path.
+  - OpenWallet Foundation incubated dedicated TypeScript projects for OpenID4VP and DCQL in early 2025, signalling the shift of tooling investment toward DCQL while both formats remain supported in parallel.
+  - PE nonetheless remains widely deployed in existing OpenID4VP implementations and continues to be accepted as an alternative to DCQL in current EUDI verification APIs, so the two coexist during the migration window.
+
+  - **Sources**:
+    - https://identity.foundation/presentation-exchange/
+    - https://openid.net/specs/openid-4-verifiable-presentations-1_0-25.html
+    - https://openwallet.foundation/2025/02/25/openid4vc-dcql-and-openid-federation-three-new-fundamental-typescript-projects-incubated-at-openwallet-foundation/
+    - https://trustid-solutions.eu/en/articles/openid4vp-changes

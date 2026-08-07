@@ -43,11 +43,11 @@ public:: true
       {"@id": "urn:ngm:class:numpy", "label": "NumPy"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -80,6 +80,20 @@ public:: true
   - **Transmission broadcasting**: characterised by a shared downlink with no return channel; conditional access (encryption) rather than addressing controls who can decode. Digital standards (DVB, DAB+, ATSC) multiplex many programmes into one transport stream per channel.
   - **Network broadcast**: bounded by the broadcast domain — routers do not forward broadcasts, which is why large flat networks suffer broadcast storms and why IPv6 replaced broadcast entirely with well-known multicast groups.
   - **Array broadcasting rules (NumPy)**: two dimensions are compatible when they are equal or one of them is 1; the result shape takes the maximum along each axis. Misaligned shapes raise an error rather than silently recycling values, a deliberate contrast with R's vector recycling.
+
+  ## Current Landscape
+
+  Traditional over-the-air broadcasting is in structural, IP-driven decline in the UK, though it remains dominant for radio and heavily used for television among older audiences.
+
+  - **Linear TV decline (Ofcom, 2025)**: Broadcast TV viewing fell again in 2024 to around 2 hours 23 minutes per person per day (a 4% year-on-year drop), with weekly reach of 73.8% — highest among the over-65s (94%) and lowest among 16-24s (45%); the decline continued through the first months of 2025.
+  - **DTT/satellite forecast to shrink**: Ofcom's Future of TV Distribution work forecasts viewing of scheduled channels via digital terrestrial and satellite falling from 62% of long-form viewing in 2023 to about 28% by 2035 and 22% by 2040, as IP and hybrid delivery grow.
+  - **Media Act 2024**: The most significant reform to UK public-service media regulation in two decades; Ofcom has re-licensed ITV, STV, Channel 4 and Channel 5 so they can meet content quotas through on-demand apps rather than only linear channels, and extended "listed events" sports rules to streaming.
+  - **Radio stays resilient on DAB+/IP**: The Digital Radio and Audio Review concluded live radio will still exceed 50% of UK audio listening into the mid-2030s, with no mandated FM switchover before 2030; in 2025 the BBC launched DAB+ stations Radio 1 Dance, Radio 1 Anthems and Radio 3 Unwind.
+
+  **Sources**:
+  - https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/multi-sector/cmr/cmr2025/communications-market-report-2025_pdf.pdf?v=400305
+  - https://www.ofcom.org.uk/siteassets/resources/documents/consultations/category-1-10-weeks/269636-call-for-evidence-future-of-tv-distribution/future-of-tv-distribution-report-to-government.pdf?v=344045
+  - https://www.gov.uk/government/publications/digital-radio-and-audio-review/digital-radio-and-audio-review
 
 - ### Provenance
   - sources::

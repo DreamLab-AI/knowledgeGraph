@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -118,3 +118,19 @@ public:: true
   - **Intelligent backtracking**: backjumping returns directly to the culprit decision identified by a conflict set; conflict-driven clause/nogood learning records the reason so the same dead end is never re-explored.
   - **Restarts and randomisation**: heavy-tailed run-time distributions make randomised value ordering with geometric or Luby restarts standard in both CP and SAT solvers.
   - **Canonical applications**: N-queens, Sudoku and crossword generation as teaching cases; industrially, scheduling, rostering, configuration, register allocation, and the DPLL/CDCL core of SAT-based verification.
+
+  ## Current Landscape
+
+  - **CP-SAT sweeps the 2025 benchmarks**: Google OR-Tools CP-SAT — whose complete-search core is conflict-driven backtracking over a CDCL SAT engine — won gold in every category (Fixed, Free, Parallel, Local Search) at the MiniZinc Challenge 2025 held at the CP 2025 conference, its ninth consecutive year of dominance.
+  - **Lazy clause generation (LCG) is the state of the art**: the strongest modern constraint solvers (Chuffed, and the 2025 modular LCG solver Huub presented at CP 2025) fuse backtracking-with-propagation and SAT-style nogood learning; conflict-driven clause learning plus restarts (Luby/geometric) remain the decisive additions over plain chronological backtracking.
+  - **SAT Competition 2025**: Kissat continued to lead the field of CDCL solvers, whose DPLL/CDCL core is specialised backtracking over Boolean variables — the industrial backbone of hardware and software verification.
+  - **Neurosymbolic revival**: 2025 work training LLMs to emit and execute code for backtracking-based reasoning engines (SAT/CP/Prolog) shows the classical complete-search skeleton being wrapped as a verifiable tool for language-model reasoning, e.g. best-of-N decoding with symbolic verification.
+
+  **Sources**:
+  - https://www.minizinc.org/challenge/2025/results/
+  - https://alexeyignatiev.github.io/assets/pdf/disz-cp25-preprint.pdf
+  - https://satcompetition.github.io/2025/
+  - https://cp2025.a4cp.org/competitions.html
+
+- ### Provenance
+  - sources:: https://www.minizinc.org/challenge/2025/results/, https://cp2025.a4cp.org/competitions.html

@@ -91,11 +91,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -125,7 +125,14 @@ public:: true
 
   ## Current Landscape
 
-  - **Deployment**: H.264 remains near-universal in hardware; HEVC dominates 4K broadcast and Apple ecosystems; VVC adoption is growing through broadcast trials (Brazil's TV 3.0) and chipset support; AV1 is the principal royalty-free competitor at YouTube and Netflix.
-  - **Streaming stack**: MPEG-DASH + CMAF (a joint MPEG effort) is the common packaging layer for large-scale adaptive streaming.
-  - **Immersive media**: V-PCC and G-PCC compress point clouds for volumetric video; MPEG-I standards target six-degrees-of-freedom immersive experiences relevant to XR and telepresence pipelines.
-  - **Machine media**: exploration of Video Coding for Machines (VCM) and neural-network-based compression signals a shift toward codecs optimised for computer vision consumers rather than human viewers.
+  - **Deployment**: H.264 remains near-universal in hardware; HEVC dominates 4K broadcast and Apple ecosystems; AV1 is the principal royalty-free competitor at YouTube and Netflix. VVC adoption accelerated through 2025: Brazil regulated its VVC-based "TV 3.0"/DTV+ system via Decree No. 12,595/2025 (27 August 2025), ATSC approved VVC as an (optional) full ATSC 3.0 standard in July 2025, and Google's Android 17 adds native VVC/H.266 support on devices with compatible hardware decoders.
+  - **Next generation**: on 14 July 2025 JVET published requirements for the successor to VVC (working label H.267), targeting at least 40% bitrate reduction over VVC Main 10, with standardisation expected around 2028-2029. The competing royalty-free AV2 from AOMedia was finalised in late May 2026 (announced 9 June 2026), renewing the AV1-versus-MPEG rivalry a generation on.
+  - **Licensing**: patent economics remain the fault line — Access Advance launched a Video Distribution Patent pool covering HEVC, VVC, AV1 and VP9 distribution on 16 January 2025, with rates published in July 2025.
+  - **Streaming stack**: MPEG-DASH + CMAF (a joint MPEG effort) remains the common packaging layer for large-scale adaptive streaming.
+  - **Immersive and machine media**: V-PCC and G-PCC compress point clouds for volumetric video; MPEG-I targets six-degrees-of-freedom experiences; and MPEG-AI work on Video Coding for Machines (VCM) and neural-network-based coding signals a shift toward codecs optimised for computer-vision consumers rather than human viewers.
+
+  **Sources**:
+  - https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/The-State-of-Streaming-Codecs-2026-173838.aspx
+  - http://aomedia.org/press%20releases/Alliance-for-Open-Media-Releases-AV2-Codec/
+  - https://www.streamingmedia.com/Articles/News/Online-Video-News/AI-Helps-InterDigital-Reach-Beyond-VVC-in-Race-to-Develop-Next-Gen-Codec-171971.aspx
+  - https://en.wikipedia.org/wiki/AV2

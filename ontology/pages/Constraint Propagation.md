@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -114,3 +114,16 @@ public:: true
   - **Propagation during search**: maintaining arc consistency (MAC) after each assignment is standard in solvers such as Gecode, Choco, OR-Tools CP-SAT and MiniZinc backends.
   - **Beyond finite domains**: interval propagation applies the same idea to continuous variables in numerical and geometric constraint solving, which underpins parametric CAD and constraint-based design systems.
   - **Failure detection**: when propagation wipes out a variable's domain the current branch is provably infeasible, giving solvers early, cheap backtrack triggers and powerful nogood learning signals.
+
+  ## Current Landscape
+
+  - **CP-SAT dominance confirmed**: Google OR-Tools CP-SAT took gold in all four categories of the MiniZinc Challenge 2025 (Fixed, Free, Parallel, and — via its CP-SAT-LS variant — Local Search), with Choco-solver CP-SAT and PicatSAT taking silvers; it has placed first consistently since 2018.
+  - **Hybrid propagation-SAT architecture**: modern winners integrate constraint propagation with SAT-style clause learning through lazy clause generation — propagators explain their domain reductions as clauses, letting the solver reuse CP's specialised global-constraint filtering (linear, allDifferent, circuit, interval/disjunctive/cumulative scheduling) alongside conflict-driven learning.
+  - **Solver ecosystem**: the MiniZinc Challenge 2025 fielded entrants including Atlantis, Choco-solver (CP and CP-SAT), SICStus Prolog, Pumpkin, PicatSAT, iZplus, and Yuck, each run on 100 model instances — propagation-based finite-domain solving remains the benchmark's explicit focus.
+  - **Application growth**: propagation-backed CP is increasingly packaged for domain users, e.g. PyJobShop (2025, arXiv:2502.13483) exposing CP-SAT and IBM CP Optimizer for scheduling problems without requiring users to write propagator-level models.
+
+  **Sources**:
+  - https://www.minizinc.org/challenge/2025/results/
+  - https://www.minizinc.org/challenge/
+  - https://developers.google.com/optimization/cp/cp_solver
+  - https://arxiv.org/pdf/2502.13483

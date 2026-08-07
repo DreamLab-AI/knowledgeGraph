@@ -45,11 +45,11 @@ public:: true
       {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -79,12 +79,18 @@ public:: true
 
   ## Current Landscape
 
-  - **Scale**: digital advertising, the attention economy's primary monetisation channel, exceeds two-thirds of global advertising expenditure, concentrated in a small number of platform intermediaries.
-  - **Design vocabulary**: "engagement optimisation", dark patterns, variable-reward mechanics, and streak dynamics are now standard objects of study in human-computer interaction and behavioural economics.
-  - **Counter-movements**: subscription and patronage models, "time well spent" design principles, chronological-feed options, and attention-protective regulation offer partial alternatives to engagement-maximising defaults.
-  - **Measurement shift**: platforms increasingly report "meaningful engagement" or wellbeing-adjusted metrics, though independent auditability remains limited.
+  - **Addictive design becomes an enforcement target (2026)**: on 6 February 2026 the European Commission preliminarily found TikTok in breach of the Digital Services Act specifically for addictive design — infinite scroll, autoplay, push notifications and highly personalised recommenders — the first DSA action targeting platform architecture rather than illegal content; on 10 July 2026 it issued a parallel preliminary finding against Meta's Instagram and Facebook. Non-compliance can draw fines of up to 6% of global annual turnover.
+  - **US liability**: in March 2026 a US jury found both Meta and YouTube liable for addictive design, extending the reckoning beyond Europe.
+  - **UK regime live**: Ofcom's Online Safety Act duties took effect from 17 March 2025, with illegal-content risk assessments required by 16 March 2025, adding a UK layer to recommender-system and design scrutiny.
+  - **DSA user controls in force**: since the DSA fully applied (February 2024), VLOPs with 45m+ EU users must offer non-personalised/chronological feeds, label ads, maintain ad repositories, ban targeted advertising to minors and to sensitive-data profiling, and prohibit deceptive dark patterns (Art. 25).
+  - **Scale**: digital advertising, the attention economy's primary monetisation channel, remains roughly two-thirds of global advertising expenditure, concentrated in a few platform intermediaries.
   - **Research frontier**: quantifying the welfare cost of attention capture, and designing recommender objectives that internalise long-term user value rather than short-term engagement.
 
+  **Sources**:
+  - https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-addictive-design-instagram-and-facebook-breach-digital-services-act
+  - https://commission.europa.eu/news-and-media/news/digital-services-act-keeping-us-safe-online-2025-09-22_en
+  - https://www.slaughterandmay.com/media/yhkfefnr/the-eus-digital-services-act-and-uk-online-safety-act-where-are-we-now.pdf
+
 - ### Provenance
-  - sources::
+  - sources:: https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-addictive-design-instagram-and-facebook-breach-digital-services-act, https://commission.europa.eu/news-and-media/news/digital-services-act-keeping-us-safe-online-2025-09-22_en
   - migration-date:: 2026-08-06T00:00:00Z

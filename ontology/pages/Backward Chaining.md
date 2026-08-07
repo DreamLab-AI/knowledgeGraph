@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -124,6 +124,19 @@ public:: true
   - **Termination and efficiency**: tabling/memoisation avoids recomputing and loops on recursive predicates; magic sets bridge backward-style goal focus with forward-style materialisation in deductive databases.
   - **When preferred**: interactive diagnosis and consultation, query answering over large fact bases, top-down planning — anywhere the set of possible conclusions is vast but the question is specific.
   - **Modern use**: Prolog and Datalog query engines, SPARQL entailment via query rewriting, business-rules decision services evaluating a single decision, and goal-regression planners; hybrid engines (e.g. Drools) offer both chaining modes and choose per query.
+
+  ## Current Landscape
+
+  Backward chaining is a mature technique, but it is being actively revisited as the symbolic half of neurosymbolic LLM reasoning.
+
+  - **Neurosymbolic backward chaining (2024-25)**: Work such as SymBa (*Symbolic Backward Chaining*, arXiv 2402.12806) argues that LLM-based backward-chaining prompting schemes (least-to-most, LAMBADA) are *incomplete* because they omit components of the classic SLD-resolution algorithm; SymBa puts a symbolic solver in control of the proof and calls the LLM only to supply a unifying rule or fact, improving deductive, relational and arithmetic reasoning.
+  - **Explainable domain reasoning**: Prolog-synergised language models (e.g. arXiv 2409.11589) use SWI-Prolog backward chaining over a first-order-logic knowledge base to assemble an auditable proof trail as context for an LLM query — reviving MYCIN's "why?" explanation property in a modern stack.
+  - **Tabling as the standard fix for termination**: SWI-Prolog and XSB implement tabled execution (SLG resolution), which memoises goals and answers to guarantee termination and avoid recomputation on recursive predicates, giving a goal-oriented superset of Datalog's bottom-up semantics — the production answer to the non-termination weakness of naive backward chaining.
+
+  **Sources**:
+  - https://arxiv.org/html/2402.12806v3
+  - https://www.swi-prolog.org/pldoc/man?section=tabling
+  - https://arxiv.org/html/2409.11589v1
 
 - ### Provenance
   - sources::

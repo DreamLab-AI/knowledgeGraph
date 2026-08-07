@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -106,6 +106,19 @@ public:: true
   ## Technical Details
 
   SIL verification computes the average probability of failure on demand (PFDavg) per SIF from component failure rates (λ, split into safe/dangerous, detected/undetected), redundancy architecture, common-cause factors (β-model), diagnostic coverage, and proof-test interval; SIL 2 demands PFDavg between 10⁻³ and 10⁻², SIL 3 between 10⁻⁴ and 10⁻³. Voting architectures trade spurious-trip rate against dangerous-failure rate — 2oo3 sensor voting is the process-industry staple because it improves both. Certified logic solvers (for example HIMA, Triconex, Siemens S7-F, ABB) carry SIL capability certificates from bodies such as TÜV and exida. Current engineering concerns include cybersecurity of safety systems (IEC 62443 alignment, after incidents such as the 2017 TRITON/TRISIS attack on a Triconex SIS), digital proof-testing and predictive diagnostics from SIS data, and the interaction of SIL-rated protection with increasingly autonomous and robotic process operations.
+
+  ## Current Landscape
+
+  - **Cybersecurity is now mandatory in the standard**: IEC 61511 Edition 2 (2016) made a security risk assessment of the SIS a mandatory part of hazard and risk analysis (Clause 8), directly reflecting the threat demonstrated by the 2017 TRITON/TRISIS attack; the design must now provide resilience against identified security risks.
+  - **Consolidated 2026 publication**: IEC published IEC 61511:2026 SER (a "System Reference" bundling all parts of the process-sector functional-safety standard) on 13 February 2026, with cyber security, smart manufacturing and Industry 4.0 among its keyword scope.
+  - **Architectural-constraint change**: Edition 2 removed the Safe Failure Fraction (SFF) term, adopting the IEC 61508 "Route 2H" approach with hardware-fault-tolerance tables per SIL, and requires a minimum 60% diagnostic coverage for devices using fixed or limited variability languages.
+  - **SIL 4 discouraged**: the second edition strongly advises avoiding SIL 4 safety instrumented functions where at all possible, favouring additional independent protection layers instead.
+  - **Data-quality emphasis**: Edition 2 mandates credible, traceable, documented reliability data and explicit treatment of uncertainty when computing PFDavg, plus mandatory periodic (stage 4) functional safety assessments.
+
+  **Sources**:
+  - https://webstore.iec.ch/en/publication/5527
+  - https://en.wikipedia.org/wiki/IEC_61511
+  - https://esc.uk.net/changes-to-iec-61511-the-second-edition-part-two/
 
 - ### Provenance
   - sources::

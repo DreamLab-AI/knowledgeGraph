@@ -47,11 +47,11 @@ public:: true
       {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -85,3 +85,17 @@ public:: true
   - **Immutability in practice**: commits are never edited — "amending" or rebasing writes new commits and moves branch pointers; unreachable commits are eventually garbage-collected. Signed commits (GPG/SSH) add cryptographic attribution on top of integrity.
   - **Craft conventions**: atomic commits (one logical change), imperative-mood messages with explanatory bodies, and machine-readable schemes such as Conventional Commits (`feat:`, `fix:`) that drive changelog and semantic-version automation; commit granularity and hygiene are what make review, bisection, and revert practical on large codebases.
   - **Beyond code**: the commit model now versions infrastructure definitions, documents, datasets (DVC, LakeFS), and machine-learning experiments — anywhere an auditable, revertible history of snapshots is worth its storage cost.
+
+  ## Current Landscape
+
+  - **SHA-256 transition accelerating**: Git's SHA-256 object format, introduced experimentally in 2.29 (October 2020) and de-flagged as experimental in Git 2.42 (2023), gained substantial transport-layer and verification plumbing in Git 2.51 (August 2025), including gitk and git-gui support; builds with `WITH_BREAKING_CHANGES` now default new repositories to SHA-256.
+  - **Git 3.0 targeted for late 2026**: the project plans to flip the default hash for new repositories from SHA-1 to SHA-256 at the 3.0 boundary, alongside a production-ready reftable reference backend; existing SHA-1 repositories will continue to work.
+  - **Interoperability design**: SHA-256 repositories can carry a `compatObjectFormat = sha1` bidirectional object-name mapping, letting users address objects by either identifier and allowing lossless conversion; a `gpgsig-sha256` commit field permits signing in either or both algorithms.
+  - **Ecosystem is the bottleneck**: as of early 2026, GitHub and Bitbucket do not host SHA-256 repositories; GitLab's Gitaly and Forgejo support them, with go-git and libgit2 experimental — the chief reason SHA-1 remains the practical default.
+  - **Commit conventions industrialised**: Conventional Commits-style machine-readable messages remain the basis of automated changelog and semantic-versioning pipelines, and commit signing (GPG/SSH, plus Sigstore's gitsign) is increasingly enforced by organisational policy for supply-chain attribution.
+
+  **Sources**:
+  - https://git-scm.com/docs/hash-function-transition
+  - https://www.helpnetsecurity.com/2025/08/19/git-2-51-sha-256/
+  - https://www.deployhq.com/blog/git-3-0-on-the-horizon-what-git-users-need-to-know-about-the-next-major-release
+  - https://about.gitlab.com/blog/sha256-support-in-gitaly/

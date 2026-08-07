@@ -47,11 +47,11 @@ public:: true
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -81,8 +81,12 @@ public:: true
 
   ## Current Landscape
 
-  - **Breach economics**: leaked credential lists in the billions feed automated credential-stuffing; MFA and breach-list screening are the standard mitigations.
-  - **Storage practice**: argon2id is the current OWASP first choice for password hashing; unsalted fast hashes (MD5, SHA-1) are considered negligent.
-  - **Policy shift**: NIST SP 800-63B (rev. 4) and the UK NCSC both recommend long passphrases, denylist checks, and no scheduled expiry.
-  - **Passwordless transition**: passkeys synced through platform vaults (Apple, Google, Microsoft) now cover major consumer services; passwords remain as fallback, which keeps phishing pressure on account-recovery flows.
+  - **Policy is now final**: NIST published SP 800-63B-4 as a final standard on 31 July 2025, superseding the 2020 SP 800-63B in its entirety; it mandates rate-limiting and breach-list screening, and drops both forced periodic rotation and composition rules in favour of length.
+  - **Passkeys standards-backed at AAL2**: NIST's 2024 supplement formally authorised syncable passkeys (cloud-backed FIDO2 credentials) at Authentication Assurance Level 2, while device-bound FIDO2 keys satisfy the phishing-resistant AAL3; Apple, Google and Microsoft ship passkeys at the platform level.
+  - **FIDO2/WebAuthn as the reference for phishing resistance**: SP 800-63B-4 cites WebAuthn's verifier-name binding (origin binding) as the mechanism that defeats phishing, formalising the asymmetric-credential advantage over shared secrets.
+  - **Storage practice**: argon2id is the current OWASP first choice for password hashing; unsalted fast hashes (MD5, SHA-1) are considered negligent, and breached-credential corpora in the billions continue to feed automated credential-stuffing.
   - **Enterprise reality**: passwords persist in legacy protocols (RADIUS, LDAP binds, service accounts), so vaulting and rotation of machine credentials remain necessary even in "passwordless" programmes.
+
+  - **Sources**:
+    - https://csrc.nist.gov/pubs/sp/800/63/b/4/final
+    - https://pages.nist.gov/800-63-4/sp800-63b.html

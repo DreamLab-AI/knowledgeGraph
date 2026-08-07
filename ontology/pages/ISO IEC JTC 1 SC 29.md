@@ -83,11 +83,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -117,4 +117,16 @@ public:: true
 
   ## Current Landscape
 
-  SC 29's current programme reflects two shifts in the media landscape. First, immersive and machine-oriented media: visual volumetric coding (V3C/V-PCC and G-PCC for point clouds), MPEG immersive video for six-degrees-of-freedom playback, and "video coding for machines" optimised for analysis rather than human viewing. Second, learning-based compression, where JPEG AI and exploratory MPEG work apply neural networks to image and video coding. Codec economics also shape the field: royalty-bearing HEVC/VVC coexist with the Alliance for Open Media's royalty-free AV1, keeping SC 29's licensing structures under competitive pressure. National mirror committees (in the UK, through BSI) coordinate participation, and the subcommittee's outputs remain among the most widely deployed standards ever published — present in effectively every smartphone, browser, camera, and television.
+  SC 29's current programme reflects the shift toward immersive, machine-oriented and learning-based media. (Since a 2020 reorganisation, the historic MPEG committee was dissolved into working groups WG 2-8 under SC 29, with JPEG as WG 1.)
+
+  - **JPEG AI** (ISO/IEC 6048), the first learning-based image-coding standard and a joint project with ITU-T SG 21, reached its Part 1 (Core Coding System) as a published International Standard in October 2024, reporting compression gains above 25% over the VVC intra anchor; JPEG AI version 2 entered its call-for-proposals cycle in 2025.
+  - **JPEG Trust** (ISO/IEC 21617-1), addressing authenticity and provenance of generative-AI content in coordination with the C2PA, was published as an International Standard in July 2024.
+  - **JPEG Pleno learning-based point cloud coding** (ISO/IEC 21794-6) reached FDIS in 2025 with the International Standard published that year, extending the plenoptic framework to AI-based point-cloud compression with a royalty-free baseline goal.
+  - On the MPEG side, the **second edition of MPEG Immersive Video** (6DoF playback with motion parallax) and **V3C/V-PCC** (ISO/IEC 23090-5, fourth edition to FDIS) advanced in 2025-2026, alongside newer tracks on dynamic mesh compression, video/feature coding for machines and Gaussian-splat coding.
+  - Codec economics still shape the field: royalty-bearing HEVC/VVC coexist with the Alliance for Open Media's royalty-free AV1. National mirror committees (in the UK, through BSI) coordinate participation, and SC 29's outputs remain among the most widely deployed standards ever published.
+
+  **Sources**:
+  - https://jtc1info.org/wp-content/uploads/2023/12/SC29-AI-Standards-Gary-J-Sullivan.pdf
+  - https://jpeg.org/items/20250521_press.html
+  - https://assets.iec.ch/further_informations/3403/ISO-IEC%20JTC%201_N17022_JTC%201-SC%2029%20Business%20Plan%202024.pdf?0218T00
+  - https://records.sigmm.org/category/pub_standards/

@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -120,3 +120,14 @@ public:: true
   - Cryptographic erasure and certified media destruction for end-of-life data
 
   Lifecycle policy is a standard control area in frameworks such as ISO/IEC 27001, NIST SP 800-53, and the ETSI data-management domain, which treats lifecycle management as a first-class component alongside classification and quality.
+
+  ## Current Landscape
+
+  - **Market growth**: the dedicated data-lifecycle-management (DLM) tools market was valued at roughly US$3.2bn in 2025 and is projected to reach ~US$9.1bn by 2034 (~14.8% CAGR), with software the largest component and regulatory compliance a primary driver.
+  - **Data-volume pressure**: global data volume was projected to reach ~175 zettabytes by 2025, making manual lifecycle management infeasible and pushing organisations toward automated tiering, cataloguing and retention enforcement.
+  - **Overlapping regulation**: GDPR, CCPA, HIPAA, SOX and newer regimes such as Brazil's LGPD and Singapore's PDPA now impose overlapping obligations to track data lineage, prove deletion on request, and evidence retention-policy compliance during audits.
+  - **AI-readiness shift**: 2026 data-management commentary highlights that most organisations have adopted governance only at low maturity, so lifecycle discipline — quality, lineage and classification — is now framed as the prerequisite for trustworthy, "AI-ready" data under a fragmented AI-regulatory landscape.
+
+  **Sources**:
+  - https://atlan.com/know/data-lifecycle-management/
+  - https://www.dataversity.net/articles/data-management-trends/

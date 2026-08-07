@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -107,3 +107,16 @@ public:: true
   - **Generalisations**: generalised arc consistency (GAC, also called domain consistency) extends the same support requirement to n-ary constraints, and is what dedicated global-constraint propagators such as `allDifferent` filtering enforce.
   - **Strength hierarchy**: node consistency < arc consistency < path consistency < k-consistency; stronger levels prune more but cost more, and arc consistency is the empirical sweet spot for general-purpose solving.
   - **Classic illustration**: in the Waltz line-labelling and map-colouring examples familiar from Russell and Norvig, arc consistency alone eliminates most of the search space, which is why AC-3 is the standard textbook entry point to constraint reasoning.
+
+  ## Current Landscape
+
+  - **CP-SAT's continued dominance**: Google OR-Tools CP-SAT — a hybrid CP/ILP/MaxSAT engine built on a CDCL SAT core — swept every gold medal at the 15th MiniZinc Challenge 2025 (held at the CP 2025 conference), taking the Fixed, Free, Parallel and Local Search categories, extending an unbroken run of golds since 2017.
+  - **Lazy clause generation as the frontier**: modern solvers pair arc-consistency-style propagators with SAT clause learning (LCG). The 2025 CP conference work on Huub (a modular LCG solver) showed SAT-based search competitive with or beating Chuffed and matching CP-SAT on several MiniZinc Challenge benchmarks, confirming that propagation plus nogood learning is the dominant architecture.
+  - **Global-constraint propagation**: generalised arc consistency (domain consistency) for global constraints such as `allDifferent` remains the practical workhorse, with dedicated filtering algorithms rather than binary decomposition; the 2025 solver field (Choco-solver, PicatSAT, Pumpkin, iZplus, SICStus) all ship optimised GAC propagators.
+  - **Next competition**: the MiniZinc Challenge 2026 solver-submission deadline is set for 19 June 2026, keeping arc-consistency-based propagation under active benchmarking pressure.
+
+  **Sources**:
+  - https://www.minizinc.org/challenge/2025/results/
+  - https://www.minizinc.org/challenge/
+  - https://alexeyignatiev.github.io/assets/pdf/disz-cp25-preprint.pdf
+  - https://cp2025.a4cp.org/competitions.html

@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -113,4 +113,15 @@ public:: true
 
   ## Current Landscape
 
-  SC 17's centre of gravity has shifted from plastic cards to mobile documents. ISO/IEC 18013-5 (published 2021) and 18013-7 (online presentment) are being adopted by US states, the EU eIDAS 2.0 framework, Australia, and Japan, with certification programmes emerging to test wallet and reader conformance. The ISO/IEC 23220 series is progressing to give the same rigour to generic mobile eID documents, positioning SC 17 alongside W3C Verifiable Credentials and the OpenID Foundation as one of the three principal stacks for digital identity wallets. National bodies from over 30 countries participate, with the UK contribution coordinated through BSI committee IST/17.
+  SC 17's centre of gravity has shifted from plastic cards to mobile documents.
+
+  - ISO/IEC 18013-5 (mDL, published 2021) is now complemented by the online-presentment specification ISO/IEC 18013-7, first issued as a Technical Specification (TS 18013-7:2024, published October 2024) and then revised as a second edition (TS 18013-7:2025), which withdrew and replaced the 2024 text; the revision updated mdoc MAC authentication and added a normative annex for the W3C Digital Credentials API retrieval route.
+  - A companion technical report, ISO/IEC TR 25219:2025 ("mDL Guidance for Early Adopters", published December 2025), gives implementers targeted considerations for deploying 18013-7 over the internet — evidence of an active, fast-moving mDL programme rather than a static one.
+  - The secretariat of SC 17 is held by BSI, the UK national standards body, so the UK role in this subcommittee is central rather than peripheral; national mirror work is coordinated through BSI committee IST/17.
+  - mDL adoption is spreading across US states, the EU (under the eIDAS 2.0 / EU Digital Identity Wallet framework), Australia and Japan, positioning SC 17 alongside W3C Verifiable Credentials and the OpenID Foundation as one of the principal interoperability stacks for digital identity wallets; the ISO/IEC 23220 series generalises the same architecture to other mobile eID documents.
+
+  **Sources**:
+  - https://www.iso.org/standard/82772.html
+  - https://webstore.iec.ch/en/publication/101954
+  - https://standards.iteh.ai/catalog/standards/iso/85773531-274a-4f67-9a16-71d0c6cc11e9/iso-iec-tr-25219-2025
+  - https://www.incits.org/news-events/press-releases/incits-announces-adoption-of-incitsisoiec-ts-18013720252025

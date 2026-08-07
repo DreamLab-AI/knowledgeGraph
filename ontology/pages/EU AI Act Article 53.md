@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -115,4 +115,9 @@ public:: true
 
   Operationalisation arrived through the GPAI Code of Practice (July 2025), whose Transparency and Copyright chapters give signatories a presumption-of-conformity route to Article 53 compliance, and the AI Office's training-content-summary template published the same month. Open-source model providers enjoy a partial exemption from duties (a) and (b) — but not from the copyright policy or the training-content summary — unless their model is designated as carrying systemic risk.
 
-  Enforcement powers ramp up through 2026–2027 as the AI Office gains audit and fining authority (up to 3% of global turnover or 15 million euros for GPAI infringements). The article's extraterritorial pull is significant: any provider whose model reaches the EU market must apply an EU-grade copyright-reservation policy to training conducted anywhere in the world, making Article 53 a de facto global standard for training-data governance and a template debated in other jurisdictions.
+  The AI Office's formal enforcement powers, including the ability to impose fines of up to 3% of global annual turnover or 15 million euros for GPAI infringements, activated on 2 August 2026 — the obligations themselves had applied since 2 August 2025, so the intervening year was compliance without penalty exposure. Notably, the 2026 "Digital Omnibus on AI", which deferred the Act's standalone high-risk (Annex III) obligations to 2 December 2027 and embedded (Annex I product) high-risk obligations to 2 August 2028, explicitly left the GPAI obligations of Articles 51-56 — Article 53 among them — and their enforcement dates untouched. The article's extraterritorial pull is significant: any provider whose model reaches the EU market must apply an EU-grade copyright-reservation policy to training conducted anywhere in the world, making Article 53 a de facto global standard for training-data governance and a template debated in other jurisdictions.
+
+  **Sources**:
+  - https://fpf.org/blog/the-ai-act-implementation-timeline-what-changes-under-the-ai-omnibus/
+  - https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act
+  - https://www.regulatoryai.eu/eu-ai-act-observatory/

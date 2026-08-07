@@ -97,11 +97,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -130,3 +130,13 @@ public:: true
   ## Current Landscape
 
   Dominant platforms include GitHub Actions, GitLab CI/CD, Jenkins, CircleCI, Azure DevOps and cloud-native systems such as Tekton and Argo (whose GitOps model continuously reconciles cluster state with a Git repository). DORA's research programme ties CI/CD maturity directly to organisational performance via its four key metrics — deployment frequency, lead time for changes, change failure rate and time to restore — with elite performers deploying on demand, many times a day. Current emphases are supply-chain security (artefact signing with Sigstore, SLSA provenance levels, SBOM generation in-pipeline), merge queues and test-impact analysis to keep feedback fast at monorepo scale, and increasingly AI-assisted test generation and failure triage. The practice is now table stakes: the VisionFlow corpus itself is built and republished by a CI pipeline on every push.
+
+  - **DORA 2024 (a decade of the four key metrics)**: The Accelerate State of DevOps 2024 report reframed time-to-restore as a throughput measure and added *rework rate* as a fifth metric feeding stability; it found AI adoption raised individual productivity but, at that point, was associated with an estimated 1.5% drop in delivery throughput and a 7.2% drop in delivery stability, underlining that small batches and robust testing still matter.
+  - **DORA 2025 (the trade-off shifts)**: With around 90% of respondents now using AI, the 2025 report found — for the first time — AI adoption linked to *higher* throughput, while instability remained elevated; platform quality emerged as the decisive amplifier of AI's benefits, with roughly 90% of organisations now running internal developer platforms.
+  - **Supply-chain security mainstreamed**: Sigstore signing, SLSA provenance levels and in-pipeline SBOM generation have become standard controls against build-system compromise.
+  - **Platform engineering** is now a first-class discipline, though DORA cautions that a new internal platform can dip performance before it matures.
+
+  **Sources**:
+  - https://dora.dev/research/2024/dora-report/
+  - https://cloud.google.com/blog/products/devops-sre/announcing-the-2024-dora-report
+  - https://devops.com/dora-2025-faster-but-are-we-any-better/

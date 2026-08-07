@@ -53,11 +53,11 @@ public:: true
       {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -92,6 +92,18 @@ public:: true
   - **RDF alignment**: a JSON-LD document denotes an RDF dataset; conversion to and from N-Quads, Turtle, and TriG is lossless for the supported feature set.
   - **1.1 additions**: scoped contexts, `@nest`, `@included`, JSON literals, and improved container maps for indexing by id, type, or language.
   - **Implementations**: jsonld.js, PyLD, Titanium (Java), Ruby JSON-LD, and RDF library integrations (rdflib, Jena, RDF4J); processors are conformance-tested against the W3C test suite.
+
+  ## Current Landscape
+
+  - **JSON-LD 1.1** has been a W3C Recommendation since **16 July 2020** (authored by Gregg Kellogg, Pierre-Antoine Champin and Dave Longley), together with its companion API and Framing recommendations; the registered media type is `application/ld+json`.
+  - It is the concrete syntax of the **W3C Verifiable Credentials Data Model 2.0**, whose canonical context `https://www.w3.org/ns/credentials/v2` (context files published under w3.org/2025/credentials) expresses credentials as JSON-LD 1.1, cementing JSON-LD's role in the fast-growing digital-identity and Data Integrity proof stack.
+  - RDF Dataset Canonicalization (**RDFC-1.0**) underpins hashing and signing of JSON-LD credentials, a dependency of the Verifiable Credential Data Integrity work advancing at W3C into 2026.
+  - As the predominant carrier of **Schema.org** structured data in `<script type="application/ld+json">` blocks, JSON-LD remains the most widely deployed RDF syntax on the web, and is also the specified data model syntax for DID documents, ActivityPub/ActivityStreams and IIIF.
+
+  **Sources**:
+  - https://www.w3.org/TR/json-ld11/
+  - https://www.w3.org/TR/vc-overview-1.1/
+  - https://www.w3.org/2025/credentials/
 
 - ### Provenance
   - sources::

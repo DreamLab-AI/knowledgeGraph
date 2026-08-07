@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -116,3 +116,16 @@ public:: true
   - **Normalisation**: L2 (for cosine scoring), or pivoted length normalisation to correct the bias against long documents.
 
   Practical properties worth noting: the representation is trivially interpretable (each dimension is a word), embarrassingly cheap to compute and update, needs no training data, and works in any language given tokenisation — which is why TF-IDF persists in log analysis, deduplication, relevance debugging, and as the sparse leg of hybrid search stacks decades after its invention. Its limitations are equally well known: no notion of synonymy or word order, sensitivity to tokenisation choices, and vocabulary-mismatch failure on short queries — precisely the weaknesses that motivated latent semantic analysis, topic models, and ultimately neural retrieval.
+
+  ## Current Landscape
+
+  - **The sparse leg of hybrid RAG**: in retrieval-augmented generation, TF-IDF's successor BM25 is now routinely run in parallel with dense vector search and the two ranked lists fused, because keyword and semantic retrieval have complementary recall — dense search misses exact terms (SKUs, error codes, proper nouns) while sparse search misses paraphrase and synonymy.
+  - **Reciprocal Rank Fusion is the production default**: RRF (score = Σ 1/(k + rank), with k typically 60, from Cormack et al.'s 2009 SIGIR paper) fuses lists on rank position rather than raw scores, sidestepping the incompatibility between unbounded BM25 scores and bounded cosine similarities; it is the built-in default in Elasticsearch and most vector databases.
+  - **Consistent benchmark gains**: hybrid sparse+dense retrieval is reported to lift NDCG by roughly 7–31% over dense-only baselines depending on dataset, and two-stage pipelines adding a neural reranker push Recall@5 higher still; notably, BM25 alone can still beat dense retrieval on exact-term-heavy domains such as financial documents.
+  - **Native platform support (2024–2026)**: Weaviate, Qdrant, Pinecone, Elasticsearch, and pgvector all ship native hybrid search; vendor fusion defaults have diverged, with Weaviate switching its v1.24 default from RRF to Relative Score Fusion.
+  - **Enduring baseline**: TF-IDF itself (scikit-learn's `TfidfVectorizer`) remains the zero-training, interpretable default vectoriser for classification, clustering, and keyword extraction.
+
+  **Sources**:
+  - https://atlan.com/know/hybrid-rag/
+  - https://www.digitalapplied.com/blog/hybrid-search-bm25-vector-reranking-reference-2026
+  - https://mbrenndoerfer.com/writing/hybrid-search-bm25-dense-retrieval-fusion

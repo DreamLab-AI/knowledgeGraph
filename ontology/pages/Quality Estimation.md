@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -113,3 +113,14 @@ public:: true
   - **LLM-based QE**: prompting and fine-tuning large language models (GEMBA-style) achieves strong sentence-level correlation, and LLM judges are increasingly used for multilingual quality gating beyond translation proper.
   - **Known weaknesses**: QE models inherit encoder biases — fluent but unfaithful translations (hallucinations) can score deceptively well; robustness work targets critical error detection (WMT's dedicated subtask) for meaning-inverting, safety-relevant failures.
   - **Beyond MT**: the reference-free paradigm has spread to summarisation, speech translation, and generative-AI output gating generally, making QE a template for confidence estimation over generated text.
+
+  Dated developments:
+  - **WMT24 (Nov 2024)**: the Metrics Shared Task, run under the Error Span Annotation (ESA) protocol, was won by two ensemble metrics — MetricX-24-Hybrid (Google) and xCOMET — with the report framed around the question "Are LLMs Breaking MT Metrics?"; fine-tuned neural metrics remained strongest.
+  - **WMT24 QE task**: focused on sentence-level quality; the organisers' finding was that LLM-based QE methods were *still outperformed* by predictor-estimator systems (e.g. CometKiwi variants) for sentence-level scoring, tempering the "just prompt an LLM" narrative.
+  - **xCOMET (TACL 2024)**: unifies sentence-level scoring with span-level error detection in two sizes (xCOMET-XL, 3.5B; xCOMET-XXL, 10.7B), and is designed specifically to catch localised critical errors and hallucinations that fluency-biased scalars miss.
+  - **2025**: QE is increasingly fused into decoding itself — quality-aware / QE-reranked decoding improves translation quality over N-best re-ranking (reported gains up to ~1.39 xCOMET-XXL), extending QE from a post-hoc filter to an inference-time signal.
+
+  **Sources**:
+  - https://www2.statmt.org/wmt24/pdf/2024.wmt-1.2.pdf
+  - https://www2.statmt.org/wmt24/pdf/2024.wmt-1.3.pdf
+  - https://aclanthology.org/2024.tacl-1.54.pdf

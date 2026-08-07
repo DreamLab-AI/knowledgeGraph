@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -108,3 +108,16 @@ public:: true
   - **AP behaviour**: divergent replicas must be reconciled — last-writer-wins (lossy), application-level merge, or CRDTs, which guarantee convergence by making all operations commutative.
   - **Split-brain**: the pathological failure of partition handling, where two sides both believe they hold the lease or leadership and accept conflicting writes; prevented with quorums, fencing, and STONITH-style mechanisms.
   - **Testing**: partition tolerance claims are routinely falsified in practice; Jepsen's fault-injection testing has documented consistency violations under partition in dozens of widely used databases, making partition testing part of modern release engineering.
+
+  ## Current Landscape
+
+  - Jepsen continues to find partition-related safety failures in current systems: its analysis of NATS 2.12.1 (December 2025) showed the JetStream subsystem could lose acknowledged messages or enter persistent split-brain when node failures combined with network partitions, worsened by an fsync-once-every-two-minutes default.
+  - The March 2026 MariaDB Galera Cluster analysis (versions 12.1.2–12.2.2) found committed transactions lost under process crashes and network partitions, and that the cluster fails to meet its claimed isolation level even without faults.
+  - The pattern is consistent across the corpus: divergence and data loss during partitions typically trace to weak durability defaults (delayed fsync) interacting with the partition, not to the consensus core itself — reinforcing that partition tolerance is an end-to-end property spanning replication and disk-flush policy.
+  - Amazon RDS for PostgreSQL (April 2025, v17.4) was found to exhibit Long Fork at "Repeatable Read", illustrating that even managed, mature engines expose partition- and concurrency-related anomalies under Jepsen's Elle checker.
+  - The theoretical frame is unchanged since Gilbert and Lynch (2002): over real networks P is mandatory, so the live engineering question remains what to sacrifice — consistency (CP) or availability (AP) — while a partition is in progress.
+
+  - **Sources**:
+    - https://jepsen.io/analyses
+    - https://jepsen.io/blog
+    - https://www.infoq.com/articles/jepsen/

@@ -61,11 +61,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -95,6 +95,18 @@ public:: true
   ## Technical Details
 
   The layer rule is H^(l+1) = σ(D̃^(-1/2) Ã D̃^(-1/2) H^(l) W^(l)), where Ã = A + I adds self-loops, D̃ is Ã's degree matrix, and W^(l) is the learned weight matrix — a first-order Chebyshev approximation with the "renormalisation trick" for stability. Complexity is linear in the number of edges, but full-batch propagation over huge graphs motivates sampled and clustered variants (GraphSAGE, Cluster-GCN, GraphSAINT). Two well-characterised failure modes shape practice: **over-smoothing** — repeated Laplacian averaging drives node representations towards indistinguishability, so vanilla GCNs are typically only 2–4 layers deep, mitigated by residual/initial connections (GCNII), jumping knowledge, or decoupled propagation (APPNP, SGC) — and weak performance on **heterophilous** graphs, addressed by signed or separated aggregation schemes. Standard tooling is PyTorch Geometric and DGL; production deployments include recommendation at Pinterest (PinSage), fraud and abuse detection at scale, traffic forecasting, and molecular screening, and GCN-style message passing remains the reference point against which graph transformers and newer geometric architectures are measured.
+
+  ## Current Landscape
+
+  - **Over-smoothing is now theory, not just folklore**: Kipf & Welling (2017) already showed vanilla GCNs peak at 2-3 layers and degrade sharply beyond ~7; Rusch et al.'s 2023 survey formalised over-smoothing as exponential convergence of node features to a constant, and 2024 analyses (e.g. NeurIPS 2024's Gaussian-process treatment) identify a non-over-smoothing "chaotic" phase reachable with large initial weight variance, letting GCNs on Cora stay informative beyond 100 layers.
+  - **Depth fixes are mature**: GCNII (initial-residual + identity mapping), APPNP/SGC (decoupled propagation), PairNorm and principal-eigenvector removal reliably enable deep GCNs; a 2024 TMLR study nonetheless notes deep GNNs still rarely beat shallow ones on standard node-classification benchmarks.
+  - **Position in 2025**: GCN remains the canonical baseline rather than the state of the art — graph transformers and attention-based variants (GAT) lead many leaderboards — but message passing is still the reference formulation, and GCNs stay competitive on homophilous graphs with few parameters.
+  - **Tooling**: PyTorch Geometric and DGL are the standard libraries; production lineage includes PinSage-style recommendation, fraud/abuse detection, traffic forecasting and molecular property prediction.
+
+  **Sources**:
+  - https://arxiv.org/abs/1609.02907
+  - https://ar5iv.labs.arxiv.org/html/2007.02133
+  - https://proceedings.neurips.cc/paper_files/paper/2024/file/5623c35f3ab5e2c72aeb3abce27dc28f-Paper-Conference.pdf
 
 - ### Provenance
   - sources::

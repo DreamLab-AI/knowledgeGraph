@@ -51,11 +51,11 @@ public:: true
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -85,7 +85,11 @@ public:: true
 
   ## Current Landscape
 
-  - **EDA consolidation and AI**: Synopsys, Cadence, and Siemens EDA dominate tooling; reinforcement-learning-assisted floorplanning and placement (Google's AlphaChip lineage, Synopsys DSO.ai) now ship in production flows.
-  - **Open-source hardware**: RISC-V has made processor architecture a commons; open toolchains (Yosys, OpenROAD) and open PDKs (SkyWater 130 nm) allow fabricable open-source silicon, with chiplet standards (UCIe) opening integration.
+  - **EDA consolidation and AI**: Synopsys, Cadence, and Siemens EDA dominate tooling; reinforcement-learning-assisted floorplanning and placement now ship in production flows. Google's macro-placement method — introduced as a 2020 preprint, published in *Nature* in 2021 and named **AlphaChip** in September 2024 alongside a *Nature* addendum and a released pre-trained checkpoint — has been used across TPU v5e, v5p and Trillium and Axion CPU blocks, though its reproducibility remains publicly contested (no independent replication on open benchmarks as of 2026).
+  - **Open-source hardware**: RISC-V has made processor architecture a commons; open toolchains (Yosys, OpenROAD) and open PDKs (SkyWater 130 nm) allow fabricable open-source silicon, with chiplet standards (UCIe) opening multi-die integration.
   - **Domain-specific silicon**: the end of Dennard scaling pushed differentiation into accelerators — AI training and inference chips, video codecs, network processors — making hardware design a competitive weapon for cloud and automotive firms that once bought commodity parts.
   - **Verification frontier**: formal methods expand from block-level proofs towards security properties (information-flow, side-channel freedom), while shift-left co-design ties hardware models to software bring-up ever earlier in the schedule.
+
+  **Sources**:
+  - https://deepmind.google/blog/how-alphachip-transformed-computer-chip-design/
+  - https://github.com/google-research/circuit_training/blob/main/README.md

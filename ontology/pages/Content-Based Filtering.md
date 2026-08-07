@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -105,6 +105,19 @@ public:: true
   ## Technical Details
 
   A minimal pipeline has three stages. **Item representation**: extract features per item — TF-IDF or BM25 for text; one-hot or learned embeddings for categorical metadata; CNN, audio, or transformer embeddings for images, music, and long-form text. **Profile construction**: aggregate the vectors of positively engaged items, usually with recency weighting and negative feedback subtraction; Rocchio's relevance-feedback formula is the classical formulation. **Scoring**: rank candidates by cosine similarity or feed profile and item vectors into a learned model (logistic regression through to two-tower neural retrieval, where one tower encodes the user history and the other the item content). Modern large-scale systems blur the line: two-tower and sequence models such as SASRec consume content embeddings as inputs, making "content-based" one signal within a learned ranking stack rather than a standalone algorithm. Evaluation uses ranking metrics (precision@k, nDCG, MAP) plus beyond-accuracy measures — diversity, novelty, and catalogue coverage — precisely because content-based systems score well on accuracy while narrowing exposure.
+
+  ## Current Landscape
+
+  - **Semantic IDs**: content-derived discrete item tokens (RQ-VAE quantised embeddings) have become the dominant successor to random hashed item IDs; Spotify Research (September 2025) showed that embeddings fine-tuned jointly for search and recommendation give the best cross-task Semantic IDs.
+  - **Generative retrieval in production**: YouTube and Google DeepMind's PLUM framework (arXiv:2510.07784, October 2025) fuses multi-modal content embeddings into SID-v2 tokens and is in production for YouTube recommendations, delivering a reported +4.96% panel CTR lift for Shorts in live A/B tests — content signals now sit inside LLM-native generative recommenders rather than standalone content-based scorers.
+  - **LLM-as-recommender scaling**: a September 2025 study (arXiv:2509.25522) found SID-based generative recommendation saturates with scale, whereas directly using LLMs as recommenders (44M–14B parameters tested) scales better, improving up to 20% over the best SID configurations.
+  - **Enhancement-layer pattern**: the LF AI & Data survey (August 2025) describes the prevailing non-generative architecture — LLMs generate semantic item/user embeddings and enrich features feeding conventional ranking stacks, i.e. content-based filtering re-implemented on foundation-model representations.
+
+  **Sources**:
+  - https://research.atspotify.com/2025/9/semantic-ids-for-generative-search-and-recommendation
+  - https://arxiv.org/html/2510.07784v1
+  - https://arxiv.org/abs/2509.25522
+  - https://lfaidata.foundation/communityblog/2025/08/25/leverage-llm-for-next-gen-recommender-systems-technical-deep-dive-into-llm-enhanced-recommender-architectures/
 
 - ### Provenance
   - sources::

@@ -77,11 +77,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -110,7 +110,19 @@ public:: true
 
   ## Current Landscape
 
-  Corporate training is a large, countercyclical industry — commonly estimated at over US$350 billion globally — under pressure from two directions. Skills volatility is shortening the half-life of technical competence, pushing organisations towards skills-based talent frameworks, internal talent marketplaces, and continuous reskilling commitments rather than episodic courses. Simultaneously, generative AI is reshaping both content and delivery within [[Education Technology]]: authoring tools draft course material and scenario scripts, AI tutors and role-play bots provide always-available practice partners for sales conversations and management coaching, and analytics link learning records to performance systems for skills-gap inference. The persistent critiques remain measurement (proving behavioural change and ROI beyond completion rates), the compliance-theatre tendency of mandated modules, and engagement in remote-first settings — the problems that collaborative, simulation-rich formats are specifically deployed to solve.
+  Corporate training is a large, countercyclical industry — estimated at roughly US$370-420 billion globally in 2025, depending on scope, and projected to exceed US$500 billion by 2030 — under pressure from two directions. Skills volatility is shortening the half-life of technical competence, pushing organisations towards skills-based talent frameworks, internal talent marketplaces, and continuous reskilling commitments rather than episodic courses. Simultaneously, generative AI is reshaping both content and delivery within [[Education Technology]]. Dated markers of the shift:
+
+  - **AI-powered training market**: valued at US$6.27 billion in 2025 and forecast to reach US$18.19 billion by 2031 (19.4% CAGR, Mordor Intelligence 2026), with North America holding ~39% share in 2025.
+  - **LinkedIn's 2025 Workplace Learning Report** identifies the convergence of generative AI, career development, and measurable business outcomes as the defining L&D agenda; 91% of workers want personalised, role-relevant training.
+  - **Spend and skills mix**: 2025 industry estimates put average training spend near US$1,400 per employee, with technology skills (AI/ML, cybersecurity, data analytics) the largest single spend category for the first time, at ~28%.
+  - **Delivery**: AI authoring tools draft course material and scenario scripts, AI tutors and role-play bots provide always-available practice partners for sales conversations and management coaching, and analytics link learning records to performance systems for skills-gap inference.
+
+  The persistent critiques remain measurement (proving behavioural change and ROI beyond completion rates), the compliance-theatre tendency of mandated modules, and engagement in remote-first settings — the problems that collaborative, simulation-rich formats are specifically deployed to solve.
+
+  **Sources**:
+  - https://www.mordorintelligence.com/industry-reports/ai-powered-corporate-training-market
+  - https://business.linkedin.com/content/dam/lem/business/en/learn/workplace-learning-report-2025/LinkedIn-Workplace-Learning-Report-2025.pdf
+  - https://www.evous.ai/en/blog/corporate-training-market-size-2025-verified-data-102-8b-us-spend
 
 - ### Provenance
   - sources::

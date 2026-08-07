@@ -43,11 +43,11 @@ public:: true
       {"@id": "urn:ngm:class:exchange-rate", "label": "Exchange Rate"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -81,3 +81,16 @@ public:: true
   - **Basis risk**: the residual risk that the hedge instrument and the exposure do not move one-for-one — the dominant practical failure mode, from mismatched grades, maturities, or reference rates.
   - **Greeks**: derivative desks manage delta, gamma, vega, and theta jointly; a "perfect" hedge in one dimension leaves residuals in the others.
   - **Accounting and governance**: hedge-accounting rules (IFRS 9) require documented designation and effectiveness testing, distinguishing genuine hedges from directional bets carried on the same instruments.
+
+  ## Current Landscape
+
+  - The MillTechFX Global FX Report 2025, surveying 750 senior finance executives across Europe, North America, and the UK, found that 81% of corporates now hedge forecastable currency risk, with average hedge ratios of 45–49% and UK firms running the longest average hedge tenor at 5.5 months (published March–April 2025).
+  - Geopolitical uncertainty is lengthening hedges: 62% of surveyed corporates planned to extend hedge tenors during 2025, against only 8% planning to shorten them (Reuters, 28 March 2025).
+  - On 3 December 2025 the IASB published Exposure Draft IASB/ED/2025/1 introducing the Risk Mitigation Accounting (RMA) model — the renamed Dynamic Risk Management project — for portfolios of interest-rate repricing risk managed on a net basis; comments close 31 July 2026, and the ED proposes the eventual withdrawal of IAS 39's hedge accounting, including macro hedging.
+  - Migration to IFRS 9 hedge accounting remains incomplete: a September 2025 EFRAG survey found 68% of responding financial institutions still apply IAS 39 for hedge accounting, with a further 24% applying both standards during transition.
+
+  **Sources**:
+  - https://www.reuters.com/markets/currencies/geopolitical-angst-prompts-over-60-companies-hedge-fx-longer-survey-shows-2025-03-28/
+  - https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/technical/ifrs-technical-resources/documents/ey-gl-ifrs-devel-245-iasb-rma-12-2025.pdf
+  - https://www.isda.org/a/0opgE/Preparing-for-the-Dynamic-Risk-Management-Accounting-Model-Aug-2025-Update.pdf
+  - https://tradetreasurypayments.com/articles/81-of-corporates-now-hedging-fx-risk-new-milltechfx-data-shows

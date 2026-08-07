@@ -87,11 +87,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -125,6 +125,13 @@ public:: true
   - **Tooling**: enterprise platforms (ServiceNow IRM, Archer, MetricStream, LogicGate, AuditBoard, Vanta and Drata at the lighter end) automate control mapping, evidence collection, and attestation; "compliance as code" pushes control checks into CI/CD pipelines.
   - **Drivers**: regulatory volume and velocity (financial services, privacy, AI regulation such as the EU AI Act), ESG and supply-chain due-diligence duties, and cyber risk have widened GRC's scope from financial controls to the whole operating model.
   - **Direction of travel**: continuous controls monitoring over point-in-time audits, quantified risk (FAIR) over heat maps, and increasing use of AI to map obligations to controls — which itself becomes a governed risk within the same GRC apparatus.
+  - **Market and AI**: MarketsandMarkets values the enterprise GRC (eGRC) market at USD 20.56bn in 2025, projected to USD 39.99bn by 2030 (14.2% CAGR); in March 2025 ServiceNow agreed to acquire Moveworks for USD 2.85bn to push agentic AI into risk and compliance workflows, and vendors now ship dedicated "AI Risk and Compliance" modules (e.g. ServiceNow, 2025) to govern AI systems within the GRC apparatus itself.
+  - **Market split (2026)**: the platform market has bifurcated into lightweight compliance-automation tools (Vanta, Drata, Secureframe) optimised for SOC 2 / ISO 27001 evidence collection, and integrated risk-management suites (ServiceNow IRM, Archer, IBM OpenPages, LogicGate, OneTrust) covering enterprise risk, policy, vendor and business-continuity management.
+
+  **Sources**:
+  - https://www.marketsandmarkets.com/ResearchInsight/enterprise-governance-risk-compliance-market.asp
+  - https://www.servicenow.com/docs/r/zurich/governance-risk-compliance/r_WhatIsGRC.html
+  - https://pathlock.com/blog/grc/list-of-top-grc-tools-and-softwares/
 
 - ### Provenance
   - sources::

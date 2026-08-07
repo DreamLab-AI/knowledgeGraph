@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -103,7 +103,14 @@ public:: true
 
   ## Current Landscape
 
-  - **Employer concentration**: a large share of highly cited AI researchers work at a handful of US laboratories; movement between them is closely tracked as a competitive signal.
-  - **Geographic concentration**: the Bay Area, London, Beijing, and a few other metros account for a disproportionate share of frontier AI employment; the UK's position rests heavily on the London cluster and its universities.
-  - **Compensation dynamics**: reported nine-figure offers for individual researchers in 2025 marked the extreme of the escalation, drawing comparison with elite sports transfer markets.
-  - **Counter-currents**: open-weight model releases, distributed research collectives, and improved tooling diffuse some expertise outward, though the tacit knowledge of frontier-scale training remains concentrated.
+  - **The 2025 "talent war" made the concentration vivid**: Meta's mid-2025 push to staff its new Superintelligence Labs — following a ~$14.3B investment in Scale AI and the hire of Alexandr Wang — saw Mark Zuckerberg personally recruit from a shortlist of top researchers, with OpenAI's Sam Altman publicly claiming Meta offered "$100 million signing bonuses" (June 2025) to lure his staff.
+  - **Compensation reached athlete-transfer scale**: reports described Meta packages reaching over $300M across four years for elite researchers and an approximately $1.5B offer (declined) to a Thinking Machines co-founder; OpenAI countered with retention bonuses and equity packages exceeding $20M to deter defections to Ilya Sutskever's SSI.
+  - **Retention and counter-strategies**: OpenAI's Residency programme (annualised ~$210k) trains talent "from the ground up" as a cheaper pipeline, while Anthropic was reported to be siphoning talent from both OpenAI and DeepMind; SignalFire's 2025 State of Talent Report put Meta's AI retention rate at 64%.
+  - **Compute as leverage**: access to H100-class GPU clusters is now cited as being as decisive as salary in attracting frontier researchers, reinforcing concentration at the few labs able to provide it.
+  - **Geographic concentration**: the San Francisco Bay Area, London, Beijing, and a few other metros account for a disproportionate share of frontier AI employment; the UK's position rests heavily on the London cluster (historically anchored by DeepMind) and its universities.
+  - **Counter-currents**: open-weight model releases, distributed research collectives, and improved tooling diffuse some expertise outward, though the tacit knowledge of frontier-scale training remains concentrated — and Meta's own ~600 AI-division layoffs in October 2025 (sparing its elite hires) show the concentration hardening even amid churn.
+
+  **Sources**:
+  - https://fortune.com/2025/06/18/metas-100-million-signing-bonuses-openai-staff-extreme-ai-talent-war/
+  - https://techcrunch.com/2025/06/17/sam-altman-says-meta-tried-and-failed-to-poach-openais-talent-with-100m-offers/
+  - https://fortune.com/2025/07/05/openai-is-betting-millions-on-building-ai-talent-from-the-ground-up-amid-rival-metas-poaching-pitch/

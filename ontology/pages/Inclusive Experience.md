@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -116,3 +116,10 @@ public:: true
   Inclusive experience has moved from advocacy language to product roadmap across the major XR platforms. Meta's avatar system now ships wheelchairs, hearing aids, and a broad range of body and skin options; Apple visionOS launched with Pointer Control, Dwell Control, VoiceOver in spatial contexts, and captions for immersive media; social platforms such as Rec Room and VRChat have invested in safety bubbles, mute-and-block norms, and moderation after research documented high rates of harassment in social VR. The W3C's XR Accessibility User Requirements and the XR Association's inclusive design guidance provide the emerging normative base.
 
   Measurement remains the open problem: conformance checklists capture accessibility, but inclusion is assessed through participation gaps, retention across demographic groups, and qualitative belonging measures — instruments still maturing in both industry and research. In distributed-collaboration settings the stakes are rising as immersive meetings enter mainstream work: an exclusionary XR workplace experience is increasingly understood as a legal-equalities and talent problem, not merely a design blemish.
+
+  The regulatory floor beneath inclusive experience has also hardened. The European Accessibility Act became enforceable on 28 June 2025, covering consumer-facing digital products and services offered into the EU regardless of vendor location, with national fines up to €300,000 and a 28 June 2030 deadline for pre-existing products; in the US, ADA Title II requires larger public entities to meet WCAG 2.1 AA by 24 April 2026. Meanwhile the baseline the inclusive layer builds upon is deteriorating: the February 2026 WebAIM Million analysis found detectable WCAG 2 failures on 95.9% of the top one million home pages (up from 94.8% in 2025), the first regression in six years — a reminder that inclusive experience cannot outrun unmet accessibility fundamentals.
+
+  **Sources**:
+  - https://webaim.org/projects/million/
+  - https://www.digitalapplied.com/blog/web-accessibility-statistics-2026-wcag-lawsuit-data
+  - https://peoplearegeek.com/articles/web-accessibility-wcag-2026/

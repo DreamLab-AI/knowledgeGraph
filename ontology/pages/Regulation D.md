@@ -77,11 +77,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -114,3 +114,14 @@ public:: true
   Regulation D remains the workhorse of US private capital formation, with Form D filings covering well over one trillion US dollars of annual issuance — far exceeding registered public offerings. In tokenised markets, platforms combine Rule 506(c) verification workflows with [[Know Your Customer]] checks and on-chain transfer-restriction logic (for example ERC-1404-style token standards) so that restricted securities cannot move to unverified wallets.
 
   Debate continues over the accredited-investor definition, which gates most Regulation D deals to wealthier participants, and over the boundary between exempt private placements and public [[Crowdfunding]] regimes such as Regulation CF. For UK and EU issuers the closest analogues are prospectus-exemption thresholds, but the regimes differ materially: Regulation D is jurisdiction-specific SEC law, and non-US issuers targeting US investors must still comply with it.
+
+  Dated developments:
+  - **12 March 2025**: the SEC's Division of Corporation Finance issued a no-action letter easing Rule 506(c) accredited-investor verification — issuers may now treat a high **minimum investment amount** (at least $200,000 for natural persons, $1 million for legal entities) as a reasonable verification step, provided they obtain written representations and have no contrary knowledge. This materially lowers the compliance friction that had made 506(c) less popular than 506(b).
+  - **Thresholds (current)**: the accredited-investor bar for individuals remains $200,000 income ($300,000 with spouse) in each of the two most recent years, or $1 million net worth excluding primary residence — plus professional-certification routes (e.g. Series 7/65/82 licences) added in the 2020 definition expansion.
+  - **Rule 506(b) vs 506(c)**: both allow unlimited capital; 506(b) forbids general solicitation but permits investor self-certification and up to 35 sophisticated non-accredited purchasers, while 506(c) permits public advertising but requires all purchasers to be verified accredited investors. Form D must be filed within 15 days of first sale.
+  - **Scale**: Regulation D (chiefly Rule 506) remains the dominant channel of US private capital formation, with annual issuance far exceeding registered public offerings, and Rule 504 caps smaller offerings at $10 million per twelve-month period.
+
+  **Sources**:
+  - https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/assessing-accredited-investors-under-regulation-d
+  - https://www.morganlewis.com/pubs/2025/03/new-sec-guidance-eases-burden-in-rule-506c-accredited-investor-verification-requirements
+  - https://www.investor.gov/introduction-investing/investing-basics/glossary/rule-506-regulation-d

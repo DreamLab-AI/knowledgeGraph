@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -120,3 +120,13 @@ public:: true
   ## Current Landscape
 
   Commercially, MIR underpins the streaming economy. Recommendation and playlist engines at Spotify, Apple Music and YouTube Music combine collaborative filtering with content-based MIR features; fingerprinting powers rights management and duplicate detection at catalogue scale; and source separation models such as Demucs enable stem extraction for remixing and karaoke. Open tooling — librosa, Essentia, madmom and the ISMIR community's shared datasets (MSD, FMA, MTG-Jamendo) — keeps the research field reproducible. Open challenges include full polyphonic transcription, cross-cultural generalisation beyond Western tonal music, and evaluation of musical similarity, which remains stubbornly subjective.
+
+  - **ISMIR 2025 (26th conference, Daejeon, South Korea, 21–25 September 2025)**: the field's flagship venue, its proceedings marking the continued shift toward generative and foundation-model methods.
+  - **Generative source separation**: 2025 work moved music source separation beyond fixed four-stem (vocals/bass/drums/other) setups toward diffusion-based, user-guided and instrument-agnostic separation — e.g. "GuideSep", conditioned on hummed melody and mel-spectrogram masks.
+  - **Beyond Western tonal music**: ISMIR 2025 papers evaluated foundation models on world-music corpora and applied regression-guided latent diffusion to singing-voice separation for Carnatic music, tackling the cross-cultural generalisation gap directly.
+  - **Immersive audio**: new evaluations show standard stereo separation models fail to preserve spatial cues in binaural audio, opening MIR work at the intersection with VR/AR and accessibility.
+
+  **Sources**:
+  - https://ismir.net/conferences/ismir-2025/
+  - https://ismir2025program.ismir.net/poster_147.html
+  - https://ismir2025program.ismir.net/poster_300.html

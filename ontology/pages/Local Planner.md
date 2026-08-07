@@ -48,11 +48,11 @@ public:: true
       {"@id": "urn:ngm:class:velocity-control", "label": "Velocity Control"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -86,6 +86,19 @@ public:: true
   - **Outputs**: body velocity commands (linear and angular), typically published at 10–20 Hz to a [[Velocity Control]] loop.
   - **ROS ecosystem**: `base_local_planner` (DWA) and `teb_local_planner` in ROS 1; Nav2's controller server in ROS 2 hosts DWB, Regulated Pure Pursuit, and MPPI as plugins behind a common interface.
   - **Failure handling**: when no admissible trajectory exists, navigation stacks trigger recovery behaviours — costmap clearing, in-place rotation, or requesting a global replan.
+
+  ## Current Landscape
+
+  - **MPPI is the shipped default**: as of the ROS 2 Kilted release (2025) and Rolling, MPPI is the default controller in Nav2's controller server configuration, confirmed by the Nav2 maintainers in June 2025; DWB and Regulated Pure Pursuit remain available as plugins from Humble onwards.
+  - **Major performance rewrite**: in January 2025 the Nav2 team announced a full reimplementation of the MPPI optimiser from xtensor to Eigen, yielding roughly 45-50% speedups — over 120 Hz CPU-only on an i7-1365U, and user reports of 55-60 Hz on NVIDIA Jetson Orin — and enabling ARM processors without wide SIMD support. The rewrite landed in Kilted/Rolling and was not backported to Jazzy.
+  - **New MPPI capabilities**: the Kilted-to-L-turtle cycle added a trajectory-validator plugin for the MPPI controller (collision, obstacle-margin, and progress checks on the output trajectory), an open-loop initial-state option for high-latency odometry, and optional publication of the full optimal `nav2_msgs/Trajectory` for downstream multi-stage control.
+  - **Stack-level changes**: Kilted moved all velocity command topics from `Twist` to `TwistStamped` by default, released the new Route Server for global routing, and Smac planner traversal-function optimisations delivered a further 20-25% planning speedup (backported to Jazzy).
+
+  **Sources**:
+  - https://docs.nav2.org/migration/Jazzy.html
+  - https://docs.nav2.org/migration/Kilted.html
+  - https://github.com/ros-navigation/navigation2/issues/5244
+  - https://discourse.openrobotics.org/t/nav2-speedups-in-mppi-smac-planner/41667
 
 - ### Provenance
   - sources::

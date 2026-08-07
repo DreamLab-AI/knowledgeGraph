@@ -77,11 +77,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -110,3 +110,15 @@ public:: true
   ## Technical Details
 
   The H200 delivers approximately 141 GB of HBM3e memory at around 4.8 TB/s of bandwidth, compared with the H100's 80 GB of HBM3 at roughly 3.35 TB/s. Peak compute across the tensor and floating-point pipelines is broadly comparable to the H100 because the underlying processing cores are unchanged; the uplift is concentrated in memory-bound scenarios. The part is offered in SXM and NVL form factors for dense data-centre deployment, remains compatible with existing Hopper software stacks, and is commonly aggregated into eight-GPU server nodes and larger clusters. Organisations provisioning distributed training and inference — including decentralised compute networks — treat the H200 as a drop-in capacity upgrade path from the H100 within the same rack and interconnect designs.
+
+  ## Current Landscape
+
+  - **Confirmed specifications** (NVIDIA): 141 GB HBM3e at 4.8 TB/s — the first GPU to ship HBM3e, roughly double the capacity and 1.4× the bandwidth of the H100, with FP8 Tensor Core throughput of ~3,958 TFLOPS (with sparsity) matching the H100.
+  - **Same die, memory-only upgrade**: the H200 reuses the H100's GH100 silicon (16,896 CUDA cores, 528 4th-gen Tensor Cores); the change is six 24 GB HBM3e stacks versus the H100's five 16 GB HBM3 stacks, so gains are concentrated in memory-bound LLM inference and training.
+  - **Availability**: announced 13 November 2023, H200-powered HGX systems from major server makers and cloud providers began shipping in Q2 2024; SXM (up to 700 W) and PCIe NVL (up to 600 W) form factors are HGX/MGX-compatible with existing Hopper deployments.
+  - **Generational position**: within Hopper the H200 is the top memory SKU, now flanked by NVIDIA's newer Blackwell generation (B200/GB200) as the successor architecture for the largest training and inference clusters.
+
+  **Sources**:
+  - https://www.nvidia.com/en-us/data-center/h200/
+  - https://nvidianews.nvidia.com/news/nvidia-supercharges-hopper-the-worlds-leading-ai-computing-platform
+  - https://www.runpod.io/articles/guides/nvidia-h200-gpu

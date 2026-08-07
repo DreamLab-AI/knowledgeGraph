@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -111,3 +111,16 @@ public:: true
   Practical strategies fall into a few families. **Local search with restarts** accepts local convergence and samples many initialisations. **Stochastic first-order methods** exploit gradient noise as an implicit regulariser and saddle-escape mechanism; almost all large-scale learning uses them because per-iteration cost, not iteration count, dominates. **Relaxation and lifting** replace the non-convex problem with a tractable convex surrogate—semidefinite relaxations, convex envelopes—whose solution bounds or seeds the original. **Global methods** (branch-and-bound, interval arithmetic) certify optimality but scale poorly beyond modest dimensions. **Structure exploitation** is often decisive: problems such as low-rank matrix recovery and phase retrieval are non-convex yet provably solvable by gradient descent under statistical assumptions, a landmark line of results from the 2015–2020 literature.
 
   The theoretical benchmarks also differ from the convex case: instead of convergence to the global optimum, guarantees are typically stated as convergence to ε-stationary points (‖∇f‖ ≤ ε), with second-order methods or noise injection ruling out saddles. The gap between such worst-case statements and observed behaviour on real problems—especially in overparameterised regimes—remains one of the most active questions in optimisation and learning theory.
+
+  ## Current Landscape
+
+  - The practical frontier has shifted towards **matrix-aware optimisers**: Muon (Keller Jordan, October 2024) orthogonalises momentum updates for matrix parameters via Newton-Schulz iteration, and Moonshot AI's "Muon is Scalable for LLM Training" (February 2025) reported roughly 2x computational efficiency over AdamW in compute-optimal pretraining once weight decay and per-parameter update scaling were added; a MuonClip variant was used to train the trillion-parameter Kimi K2 model in 2025.
+  - Independent benchmarking has tempered the headline claims: rigorous September 2025 sweeps across eleven optimisers found matrix-preconditioned methods (Muon, SOAP, Kron) deliver at most ~1.4x speedup over well-tuned AdamW at 0.1B parameters, shrinking to ~1.1x at 1.2B — the advantage is real but diminishes with scale and data budget.
+  - Muon comes with non-convex convergence guarantees to nuclear-norm stationary points and is typically deployed as a hybrid (Muon for 2D weight matrices, AdamW for embeddings, norms, and output layers), a pattern now supported in mainstream training stacks.
+  - The theory-practice programme continues: 2025–2026 work interprets Muon as an implicit Newton-type method (Newton–Muon) and studies large-batch data efficiency beyond the critical batch size, extending the Pareto frontier on the compute-time trade-off.
+
+  **Sources**:
+  - https://arxiv.org/abs/2502.16982
+  - https://arxiv.org/html/2509.01440v1
+  - https://arxiv.org/html/2505.02222v1
+  - https://www.emergentmind.com/papers/2509.02046

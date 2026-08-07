@@ -43,11 +43,11 @@ public:: true
       {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -78,3 +78,17 @@ public:: true
   ## Technical Details
 
   Within [[Imitation Learning]], apprenticeship learning names the IRL-based branch, and its descendants dominate the modern literature. Maximum-entropy IRL (Ziebart et al., 2008) resolved the reward ambiguity probabilistically; guided cost learning and adversarial formulations replaced linear features with neural rewards; and GAIL (Ho and Ermon, 2016) showed the feature-matching game is equivalent to a GAN-style occupancy-measure matching, collapsing the explicit reward-recovery step while retaining the framework's guarantees in spirit. The core assumptions remain the classical caveats: demonstrations must be near-optimal under some reward in the hypothesis class, feature (or discriminator) expressiveness bounds what can be inferred, and each iteration embeds a full RL problem, which sets the computational cost. The paradigm also underpins strands of AI-alignment research, where inferring what humans value from their behaviour — rather than trusting a hand-written objective — is the central problem.
+
+  ## Current Landscape
+
+  - **IRL–RLHF equivalence (2025)**: "On a Connection Between Imitation Learning and RLHF" (arXiv:2503.05079, March 2025) established that reinforcement learning from human feedback implicitly performs imitation learning on the preference distribution, and proposed DIL, a direct imitation-learning objective that subsumes existing alignment algorithms — placing apprenticeship-style reward inference at the heart of LLM alignment.
+  - **Non-adversarial IRL**: Successor Feature Matching (SFM, ICLR 2025) recovers the feature-matching idea at the core of Abbeel–Ng via direct policy-gradient search, achieving state-of-the-art imitation from state-only demonstrations without the adversarial min-max game GAIL required.
+  - **PAC guarantees for active IRL**: PAC-EIG (Reinforcement Learning Journal 2025) gives the first probably-approximately-correct guarantee for the learned apprentice policy under noisy expert demonstrations, extending the classical ε-of-expert result to Bayesian active inverse RL.
+  - **Foundation-model demonstrations**: vision-language-action models (DeepMind RT-1/RT-2/RT-X), Diffusion Policy and Action Chunking Transformers have shifted robotic learning-from-demonstration toward few-shot and cross-embodiment transfer, reducing the demonstrations needed and improving generalisation.
+  - **Hybrid trainer–student methods (ICLR 2025)**: RILe combines IRL and imitation learning so a trainer learns an adaptive dense reward while a student imitates, reaching near-expert performance on high-dimensional robotic locomotion where direct imitation fails.
+
+  **Sources**:
+  - https://arxiv.org/abs/2503.05079
+  - https://proceedings.iclr.cc/paper_files/paper/2025/file/60a3b2b3210acc010ecfbbd6d5afc8b2-Paper-Conference.pdf
+  - https://arxiv.org/html/2506.13498v1
+  - https://portal.cs.cornell.edu/research/

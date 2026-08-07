@@ -48,11 +48,11 @@ public:: true
       {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -87,3 +87,11 @@ public:: true
   - **Model-assisted annotation**: pre-labelling by an existing model with human correction routinely cuts annotation cost several-fold, at the risk of anchoring annotators to model errors.
   - **Synthetic augmentation**: [[Synthetic Data Generation]] supplies perfectly labelled artificial examples for rare classes and privacy-constrained domains, complementing rather than replacing human-annotated evaluation sets.
   - **Documentation norms**: datasheets for datasets and data statements are increasingly expected, recording provenance, annotation protocol, agreement scores, and known gaps.
+  - **Market and strategic value (2025–2026)**: the data-labelling / annotation market is estimated at roughly £2.0–2.6bn (US$2.3–2.8bn) in 2025–2026, growing ~22–33% annually toward US$7–28bn by the early 2030s. In June 2025 Meta invested US$14.3bn for a ~49% non-voting stake in Scale AI (implying a ~US$29bn valuation), installing founder Alexandr Wang as Meta's chief AI officer; the deal pushed OpenAI, Google and Anthropic to diversify vendors.
+  - **RLHF-led workload shift**: bootstrapped rival Surge AI passed US$1bn ARR as Anthropic's named reference RLHF partner for Claude, while Mercor reached ~US$20bn in 2026 talks. The annotation mix has inverted from bounding-boxes-and-entity-tags to domain-expert response-quality rating, pairwise-completion comparison, hallucination flagging and LLM-judge calibration.
+
+  **Sources**:
+  - https://www.reuters.com/business/scale-ais-bigger-rival-surge-ai-seeks-up-1-billion-capital-raise-sources-say-2025-07-01/
+  - https://www.mordorintelligence.com/industry-reports/data-labeling-market
+  - https://valueaddvc.com/blog/how-does-scale-ai-make-money-data-labeling-rlhf-and-the-meta-14-3b-stake
+  - https://market.us/report/ai-annotation-market/

@@ -52,11 +52,11 @@ public:: true
       {"@id": "urn:ngm:class:rotary-encoder", "label": "Rotary Encoder"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -87,3 +87,16 @@ public:: true
   ## Technical Details
 
   Identifier resolvers share a common design vocabulary: a well-known entry point (DNS roots, `/.well-known/gs1resolver` description files), a syntax for decomposing the identifier, a link registry mapping identifiers and link types to destinations, and content negotiation so that humans receive web pages while machines receive structured data (JSON-LD linksets per RFC 9264). Operational concerns mirror DNS: caching and TTLs, redundancy and anycast deployment for availability, and governance over who may write entries for a given identifier range. GS1 operates a global resolver at `id.gs1.org`, with brand owners able to delegate resolution for their own prefixes to private resolvers — a federated model deliberately analogous to DNS zone delegation.
+
+  ## Current Landscape
+
+  - **Standardisation (2025)**: GS1 published Digital Link URI syntax **1.6.0 (April 2025)** and the **GS1-Conformant resolver 1.1.0 (February 2025)**; the underlying resolution mechanism is now an international standard, **ISO/IEC 18975** ("encoding and resolving identifiers over HTTP"), which formally defines a resolver as a service that accepts a conformant URI and redirects to the relevant target resource from a linkset.
+  - **Conformance levels**: the GS1 framework grades resolvers Level 0 (basic HTTP redirect) → Level 1 (content negotiation) → Level 2 (full linkset API for machine discovery, per RFC 9264) → Level 3 (compressed Digital Link URIs); Level 1–2 is recommended for Digital Product Passport use.
+  - **EU Digital Product Passport**: under the ESPR, the resolver is the pivot that turns a scanned GS1 Digital Link URI into DPP data via the `gs1:digitalProductPassport` link type; importantly, the ESPR mandates a unique identifier and data carrier but stays *technology-neutral* and does **not** name GS1 Digital Link as the sole mandatory standard.
+  - **Adoption timeline**: industry "2D barcode / GS1 Digital Link" migration plans target **2027** at retail point-of-sale, driving resolver deployment; the DPP requirement that passport data stay accessible for years after sale makes persistent, well-governed resolver infrastructure a hard requirement.
+  - **Electromechanical resolvers** remain a distinct, mature technology — brushless absolute angle sensors prized in aerospace, servo drives and industrial robotics for tolerance to heat, vibration and radiation.
+
+  **Sources**:
+  - https://www.gs1.org/standards/gs1-digital-link
+  - https://gs1.eu/wp-content/uploads/2025/04/GS1-Standards-Enabling-DPP-V2.2.pdf
+  - https://myproductpassport.eu/blog/gs1-digital-link-resolver-how-it-works

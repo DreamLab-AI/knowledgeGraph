@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -117,3 +117,15 @@ public:: true
   - **Microarchitectural techniques**: pipelining, superscalar issue (4–10 instructions/cycle), out-of-order execution with reorder buffers of 300+ entries, speculative execution, and simultaneous multithreading.
   - **Memory hierarchy**: per-core L1/L2 caches, shared L3 in the tens of megabytes, coherent interconnects (mesh or ring), DDR5 and on-package memory; NUMA topologies on multi-socket servers.
   - **Trends**: heterogeneous cores (performance plus efficiency), chiplet-based scaling, growing vector widths, on-die AI accelerators, and confidential-computing features — while the latency-first design philosophy that distinguishes CPUs from GPUs remains unchanged.
+
+  ## Current Landscape
+
+  - **Arm's server ascent**: AWS Graviton4 (Arm Neoverse V2, Armv9.0-A, up to 96 cores per socket, 12-channel DDR5-5600, SVE2) reached general availability, and by 2025 independent benchmarks reported it leading comparable AMD/Intel x86 parts on price-performance across enterprise workloads; Google Axion, Azure Cobalt 100, Ampere AmpereOne (192 cores) and Nvidia Grace round out a mature Arm data-centre field.
+  - **Three-way ISA contest (2025)**: x86-64 still holds the highest per-thread performance and the deepest software ecosystem; Arm leads general-purpose performance-per-watt; and royalty-free RISC-V is emerging, with the RVA23 profile improving cross-implementation compatibility and vendors such as Ventana (Veyron V2, up to 192 cores) targeting servers.
+  - **Chiplet disaggregation via UCIe**: Heterogeneous multi-ISA, chiplet-based designs are consolidating around the UCIe die-to-die interconnect standard, enabling x86, Arm and RISC-V cores and accelerators to coexist on one package.
+  - **Vector and matrix extensions**: Arm SVE2 (scalable 128-2048-bit vectors) is now widespread, and SME/SME2 (a 2D tile matrix extension for outer-product operations) is arriving in cores such as Qualcomm's Oryon — though production auto-vectorisation for SME lags toolchains until roughly GCC 15 / LLVM 20.
+
+  **Sources**:
+  - https://ts2.tech/en/risc-v-vs-arm-vs-x86-the-2025-silicon-architecture-showdown/
+  - https://developer.arm.com/community/arm-community-blogs/b/servers-and-cloud-computing-blog/posts/leading-hpc-performance-with-graviton4
+  - https://www.phoronix.com/review/aws-graviton4-benchmarks

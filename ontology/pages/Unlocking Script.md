@@ -77,11 +77,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -114,6 +114,18 @@ public:: true
   Consensus rules shaped the unlocking script's evolution. Early Bitcoin executed scriptSig with the full Script language; since BIP 62 hardening and standardness rules, unlocking scripts are effectively restricted to pushing data, closing malleability avenues where a third party could tweak a scriptSig (for example by re-encoding a signature) and change the transaction ID without invalidating it.
 
   Segregated Witness (2017) completed that repair by relocating the unlocking data for SegWit outputs into a separate *witness* field: for P2WPKH and P2WSH spends the scriptSig is empty and the signatures live in the witness, which is excluded from the transaction ID entirely. Taproot (2021) continued the lineage — a key-path spend's witness is a single Schnorr signature, while script-path spends reveal only the branch actually used. The unlocking-script *concept* — spender-supplied proof satisfying receiver-defined conditions — survives unchanged across all these encodings, and remains the canonical mental model for how value is authorised to move in every UTXO-based chain.
+
+  ## Current Landscape
+
+  - The lock/key model is unchanged: the scriptPubKey ("locking script") sets spending conditions and the scriptSig ("unlocking script") supplies the signatures/public keys that satisfy them; combined and executed, they must leave a true value on the stack (Binance Academy, *Introduction to Bitcoin Script*, 2026).
+  - **SegWit** (BIP141, activated 2017) moves the unlocking data out of the scriptSig into a separate **witness** field, leaving the scriptSig empty for native SegWit spends and excluding that data from the transaction ID to close malleability.
+  - **Taproot** (BIP341/BIP342, activated November 2021) makes every P2TR output a version-1 SegWit witness program: a **key-path spend** carries a single 64/65-byte **Schnorr signature** in the witness, while a **script-path spend** reveals only the chosen leaf script plus a Merkle control block (MAST), improving privacy and efficiency.
+  - Under Taproot's **Tapscript** (BIP342), OP_CHECKSIG/OP_CHECKSIGVERIFY use Schnorr verification, and opcode versioning allows future soft-fork upgrades; the annex field is reserved but currently unused.
+
+  **Sources**:
+  - https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki
+  - https://learnmeabitcoin.com/technical/upgrades/taproot/
+  - https://www.binance.com/en/academy/articles/an-introduction-to-bitcoin-script
 
 - ### Provenance
   - sources::

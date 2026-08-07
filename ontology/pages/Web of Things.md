@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -119,8 +119,17 @@ public:: true
 
   ## Current Landscape
 
-  Adoption is strongest in industrial and smart-building integration, where WoT acts as a neutral overlay above brownfield protocols; Siemens, Oracle, and Intel contributed heavily to the working group, and Eclipse Thingweb provides the reference implementation. WoT deliberately complements rather than competes with transport-level ecosystems: Matter standardises the radio-to-application stack for consumer devices, whereas WoT standardises *description and interaction metadata* and can wrap Matter, OPC UA, or proprietary APIs alike. Active work items include TD 2.0, richer discovery mechanisms, and profiles for out-of-the-box interoperability. The main critique — that heavyweight semantic descriptions add friction for constrained devices — is being addressed through slimmer profiles and canonical serialisations, while interest from the agentic-AI community in machine-readable capability descriptions has given the standard a second wind.
+  - **Thing Description 2.0** reached First Public Working Draft on 4 November 2025 on the W3C Recommendation track; it continues the work of TD 1.1 (a Recommendation of 5 December 2023) with *no guarantee of backwards compatibility*, and the draft charter targets a Candidate Recommendation transition around Q4 2027 and a Recommendation around June 2028.
+  - **Binding Templates retired in favour of a Binding Registry**: alongside TD 2.0 the Working Group replaced the WoT Binding Templates Group Note with the WoT Binding Registry and published an updated Working Draft of WoT Profiles (for out-of-the-box interoperability).
+  - **Governance churn**: co-Chair Michael McCool stepped down on 8 May 2025 and Dave Raggett became Team Contact; the WoT WG charter was extended to 2 April 2026.
+  - Adoption remains strongest in industrial and smart-building integration, where WoT acts as a neutral overlay above brownfield protocols (Siemens, Oracle, and Intel contributed heavily, and Eclipse Thingweb node-wot is the reference implementation).
+  - WoT deliberately complements rather than competes with transport-level ecosystems: Matter standardises the radio-to-application stack for consumer devices, whereas WoT standardises *description and interaction metadata* and can wrap Matter, OPC UA, or proprietary APIs alike; interest from the agentic-AI community in machine-readable capability descriptions has renewed attention on the standard.
+
+  **Sources**:
+  - https://www.w3.org/TR/wot-thing-description-2.0/
+  - https://www.w3.org/news/2025/first-public-working-draft-web-of-things-wot-thing-description-2-0/
 
 - ### Provenance
-  - sources::
+  - sources:: https://www.w3.org/TR/wot-thing-description-2.0/
   - migration-date:: 2026-08-06T00:00:00Z
+  - research-augmented:: 2026-08-07T00:00:00Z

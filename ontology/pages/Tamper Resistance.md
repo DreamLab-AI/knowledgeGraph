@@ -45,11 +45,11 @@ public:: true
       {"@id": "urn:ngm:class:side-channel-attack", "label": "Side-Channel Attack"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -80,6 +80,18 @@ public:: true
   ## Current Landscape
 
   Secure hardware has moved from niche banking equipment into every pocket and rack: Apple's Secure Enclave, Google's Titan chips, discrete and firmware TPMs mandated by Windows 11, SIMs and eSIMs, and cloud HSM services all rest on tamper-resistant silicon. Certification demand is rising with regulation — PCI PTS for payment devices, Common Criteria EAL5+ for smartcard ICs, and FIPS 140-3 superseding 140-2 across government procurement. Research attention has shifted towards low-cost invasive attacks (voltage glitching kits now cost tens of pounds), supply-chain implants, and countermeasures such as PUFs (physically unclonable functions) that derive keys from manufacturing variation so there is no stored secret to extract.
+
+  The frontier through 2025-26 is fusing tamper resistance with post-quantum cryptography:
+
+  - **FIPS 140-3** (published 22 March 2019, superseding FIPS 140-2) remains the graded standard, with physical-security Levels 1-4 setting the tamper-response ladder; its Implementation Guidance mandates hardness testing of potting/epoxy and tamper-evident labelling.
+  - **July 2026**: Thales TCT's Luna T-Series became the first US-manufactured PQC-enabled HSM to gain FIPS 140-3 Level 3 validation (certificate #5450), embedding the full NSA CNSA 2.0 suite (ML-DSA, ML-KEM, LMS).
+  - **February 2026**: Jmem Tek gained FIPS 140-3 CAVP certification for a PUF-based PQC key-security chip — the first to implement NIST SP 800-232 (ASCON) lightweight cryptography alongside FIPS 203/204.
+  - **2026 commercial tokens** now pair a fine-wire PCB tamper mesh with silicon PUF identity and sub-10-microsecond active zeroisation of SRAM and flash keys, so no cloneable master key is ever stored.
+
+  **Sources**:
+  - https://csrc.nist.gov/pubs/fips/140-3/final
+  - https://www.thalestct.com/hsm-fips140-3-validation/
+  - https://www.design-reuse.com/news/202529306-jmem-tek-has-achieved-nist-cavp-certification-with-ascon-algorithm-implementation-and-will-be-showcased-at-semicon-taiwan-/
 
 - ### Provenance
   - sources::

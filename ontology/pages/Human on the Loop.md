@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -107,6 +107,16 @@ public:: true
   The rise of agentic AI has made the on-the-loop pattern the default operating mode for practical systems: coding agents, browser agents, and workflow agents execute multi-step plans autonomously while surfacing checkpoints, logs, and approval gates for risky operations. Governance frameworks are converging on the same layered picture — the EU AI Act's Article 14 requires that high-risk systems be designed so humans can effectively oversee, intervene in, or interrupt them, without prescribing which loop position; military policy debates continue to contest whether on-the-loop supervision satisfies the "meaningful human control" threshold for lethal systems.
 
   Current research concentrates on making supervision genuinely effective at machine speed: interpretable action previews, anomaly detection that directs scarce human attention to the decisions most likely to need it, calibrated escalation thresholds, and audit trails that let after-the-fact accountability compensate for the impossibility of watching everything in real time.
+
+  - **EU AI Act Article 14 (in force 1 Aug 2024)**: high-risk systems must be designed for effective human oversight, but the Article deliberately does *not* prescribe in-the-loop vs on-the-loop — it lists capabilities the overseer must have (understand the system, detect anomalies, resist automation bias, interpret output, decline to use it, and interrupt via a stop mechanism). The required modality (retrospective, real-time or pre-execution) follows from each system's residual-risk assessment; obligations for high-risk agentic systems apply from 2 August 2026.
+  - **Biometric exception**: Article 14(5) is the one hard mandate — outputs of certain remote biometric identification systems may not be acted on unless separately verified by at least two competent persons (with narrow law-enforcement/migration carve-outs).
+  - **Agentic AI is the driver**: 2025-2026 analyses treat a hard, mid-execution stop mechanism and an append-only delegation-chain audit log as non-negotiable for production agents; oversight obligations attach to the deployed system (wrappers, orchestration, tool calls), not just the underlying model.
+  - **Open contest**: military-policy debate continues over whether on-the-loop supervision satisfies "meaningful human control" for lethal autonomous systems, given vigilance decay and sub-human reaction windows.
+
+  **Sources**:
+  - https://artificialintelligenceact.eu/article/14/
+  - https://sota.io/blog/eu-ai-act-agentic-ai-human-in-the-loop-art14-implementation-patterns-2026
+  - https://www.kiteworks.com/regulatory-compliance/human-in-the-loop-ai-compliance/
 
 - ### Provenance
   - sources::

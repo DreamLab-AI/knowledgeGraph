@@ -71,11 +71,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -110,6 +110,18 @@ public:: true
   - **Agentic realisation**: skill libraries (e.g. Voyager's ever-growing code skill repository), procedure files and reusable prompts, learned tool-invocation policies, and reinforcement-learned behaviours; distinct from episodic transcripts (what happened) and semantic/vector stores (what is known).
   - **Design consequence**: procedural memory updates change *behaviour* globally, so agent frameworks typically gate them behind evaluation or human review, whereas episodic writes are cheap and continuous.
 
+  ## Current Landscape
+
+  - **CoALA taxonomy is now the shared standard**: the semantic/episodic/procedural split for long-term agent memory (from CoALA) has been adopted across the major frameworks — LangChain's LangGraph/LangMem cites it directly, and mem0's "State of AI Agent Memory 2026" organises the field the same way; procedural memory is consistently defined as implicit (LLM weights) plus explicit (system-prompt rules, playbooks, skills, runbooks).
+  - **Skill libraries as procedural memory**: production systems capture successful task procedures from episodes, validate them (replay or human review), and version-control them for just-in-time loading — Letta's automatic "skill learning" distils successful patterns into an agent's procedural memory.
+  - **MemGPT/Letta hierarchy**: Letta (formerly MemGPT) manages an OS-style memory hierarchy (in-context core vs out-of-context archival), and a 2025 Letta benchmark found a plain filesystem scored ~74% on the LoCoMo memory benchmark, beating several specialised vector-store memory libraries.
+  - **Procedural memory as an optimisation target**: recent research (e.g. Mem^p, arXiv Aug 2025) treats the build/retrieve/update lifecycle of procedural memory as a first-class object, distilling trajectories into step-by-step instructions and script-like abstractions that are continuously corrected and deprecated.
+
+  **Sources**:
+  - https://hidekazu-konishi.com/entry/ai_agent_memory_design_guide.html
+  - https://arxiv.org/html/2508.06433v2
+  - https://www.letta.com/blog/benchmarking-ai-agent-memory/
+
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-08-06T00:00:00Z
+  - sources:: https://arxiv.org/html/2508.06433v2
+  - migration-date:: 2026-08-07T00:00:00Z

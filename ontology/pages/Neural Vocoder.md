@@ -89,11 +89,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -127,3 +127,16 @@ public:: true
   - **Conditioning**: typically 80-band mel-spectrograms at ~12.5 ms hop; codec-style vocoders condition on residual-vector-quantised token streams instead.
   - **Training losses**: adversarial losses with multi-period/multi-scale discriminators, multi-resolution STFT loss, and feature-matching terms; mean opinion scores of leading vocoders approach those of ground-truth recordings.
   - **Deployment**: HiFi-GAN-class models run faster than real time on CPU, enabling on-device TTS; quality-speed-footprint trade-offs drive variant selection for embedded, server, and streaming (chunked, low-latency) use.
+
+  ## Current Landscape
+
+  - **BigVGAN v2** (NVIDIA, released July 2024, final 5M-step checkpoints September 2024) is the reference universal vocoder: trained on 100x more multi-domain audio than its predecessor, supporting sampling rates up to 44.1 kHz, with fused CUDA kernels delivering up to 240x-faster-than-real-time synthesis on a single A100.
+  - **Vocos** (ICLR 2024) demonstrated that predicting STFT magnitude and phase rather than raw samples runs roughly 13x faster than HiFi-GAN and about 70x faster than BigVGAN at comparable quality, and serves as a drop-in decoder for EnCodec token streams in codec-language-model TTS.
+  - Codec-token pipelines have overtaken mel-conditioned vocoding at the frontier: Microsoft's **VALL-E 2** (2024) reported the first human-parity zero-shot TTS results on LibriSpeech and VCTK, using EnCodec tokens with a Vocos decoder.
+  - 2025 research pushes efficiency and artefact control: an IJCAI 2025 range-null-space decomposition vocoder matches BigVGAN-112M with under 3% of its parameters, and aliasing-free designs (e.g. the Pupu-Vocoder/Pupu-Codec line, December 2025) attack the tonal artefacts of transposed convolutions across speech, singing, and music.
+
+  **Sources**:
+  - https://developer.nvidia.com/blog/achieving-state-of-the-art-zero-shot-waveform-audio-generation-across-audio-types/
+  - https://github.com/NVIDIA/BigVGAN
+  - https://github.com/gemelo-ai/vocos
+  - https://arxiv.org/html/2512.20211v1

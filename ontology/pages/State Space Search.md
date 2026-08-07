@@ -93,11 +93,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -128,3 +128,14 @@ public:: true
   ## Technical Details
 
   Key design dimensions include the search direction (progression from the initial state, regression from the goal, or bidirectional), duplicate detection (tree search versus graph search with a closed set), and memory management (IDA* and frontier search trade time for space). Complexity is governed by branching factor b and solution depth d — O(b^d) in the worst case — which is why heuristic accuracy, symmetry pruning and abstraction (pattern databases) matter more in practice than raw speed. Modern applications range from GPS route finding and robot task planning to model checking, program synthesis and the tree searches inside game-playing systems such as AlphaZero, where learned value functions play the role of heuristics.
+
+  ## Current Landscape
+
+  - **IPC 2023 marked the tenth classical planning competition**: the classical (sequential, deterministic) track — the oldest part of the International Planning Competition, with results presented at ICAPS 2023 in Prague (July 2023) — drew 65 entries from 23 teams across optimal, satisficing, and agile sub-tracks, using a subset of PDDL 3.1.
+  - **Portfolio and abstraction still dominate**: the optimal track was won by Ragnarok, a portfolio combining explicit state-space search, decoupled search, symbolic search, and a lifted planner with cost-partitioned heuristics; abstraction (pattern-database and Cartesian) and landmark heuristics remain the workhorses of optimal search.
+  - **LAMA endures as a baseline (2011→2023)**: the LAMA planner, which won IPC 2011, still scored at or near the top of the agile and satisficing tracks in 2023 — a striking testament to the durability of landmark-guided greedy best-first search over more than a decade.
+  - **Learning enters the loop**: neural-network heuristics trained on state/cost-to-goal pairs (e.g. the FSM learning planner) competed in IPC 2023, mirroring the wider trend where learned value functions serve as heuristics inside state-space and tree searches in systems such as AlphaZero and MuZero.
+
+  **Sources**:
+  - https://ipc2023-classical.github.io/
+  - https://satres.kikit.kit.edu/papers/2024-aimag-ipc.pdf

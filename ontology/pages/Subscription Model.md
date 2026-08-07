@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -113,10 +113,16 @@ public:: true
 
   ## Current Landscape
 
-  - **Ubiquity and fatigue**: the average household now holds many overlapping subscriptions; "subscription fatigue" and regulatory pressure (e.g. click-to-cancel rules and UK/EU auto-renewal consumer protections) push providers towards clearer cancellation and pause options.
+  - **UK subscription regime (DMCC Act 2024)**: the Digital Markets, Competition and Consumers Act's unfair-practices provisions took effect in April 2025, but the dedicated subscription-contracts regime — mandatory reminder notices, a new 14-day "renewal" cooling-off period after free trials or 12-month-plus auto-renewals, and a straightforward online cancellation route — is now set to commence in Spring 2027 (delayed a year); non-compliance risks fines up to 10% of group worldwide turnover.
+  - **US "click-to-cancel" vacated (2025)**: the FTC's negative-option / click-to-cancel rule was struck down in its entirety by the Eighth Circuit on 8 July 2025 (Custom Communications v. FTC), days before its 14 July compliance deadline; auto-renewal is now governed by ROSCA, Section 5 of the FTC Act, and stricter state laws (California, New York), with the FTC beginning fresh rulemaking in January 2026.
   - **Pricing evolution**: seat-based SaaS pricing is giving ground to usage-based and hybrid models, particularly for AI products whose marginal costs scale with consumption; tiered freemium remains the standard acquisition funnel.
   - **Creator tiers**: membership platforms standardised tiered patronage (access, community, perks), making recurring support the creator economy's counterweight to volatile advertising income.
   - **Key metrics**: MRR/ARR growth, gross and net churn, net revenue retention above 100% (expansion outpacing cancellation), CAC payback period, and LTV:CAC ratio as the canonical viability test.
+
+  **Sources**:
+  - https://www.whitecase.com/insight-alert/click-cancel-uks-new-subscription-contract-regime
+  - https://www.gov.uk/government/consultations/consultation-on-the-implementation-of-the-new-subscription-contracts-regime/consultation-on-the-implementation-of-the-new-subscription-contracts-regime-web-accessible-version
+  - https://renewaltrap.com/state-consumer-protection-laws
 
 - ### Provenance
   - sources::

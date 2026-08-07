@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -103,3 +103,16 @@ public:: true
   ## Technical Details
 
   Neighbourhood design dominates performance: 2-opt and Or-opt moves for routing, swap and shift moves for scheduling, and flip moves for satisfiability each balance evaluation cost against landscape smoothness. Incremental (delta) evaluation — recomputing only the change in objective caused by a move — is what makes millions of moves per second feasible. Modern SAT and constraint portfolios interleave local search with clause-learning systematic solvers, and local search also names the analogous idea in continuous optimisation, where gradient descent is its differentiable counterpart. Landscape analysis (autocorrelation, fitness-distance correlation) provides the theoretical vocabulary for predicting when a given neighbourhood will let local search succeed.
+
+  ## Current Landscape
+
+  - **Local search inside CDCL**: local search preprocessing that seeds Conflict-Driven Clause Learning solvers with high-quality starting assignments is now standard in competitive SAT solvers, and many Kissat variants submitted to the SAT Competition 2025 (held at the SAT conference, Glasgow, 14 August 2025) tune rephasing and reward heuristics that descend from this hybridisation.
+  - **LLM-designed local search**: a January 2025 line of work (Schidler & Szeider, arXiv:2501.14630) uses large language models to analyse SAT encoding code and automatically generate specialised local search algorithms for initial-assignment construction, solving 12 additional Directed Feedback Vertex Set instances over conventional solvers; related frameworks (AutoSAT, FunSearch-style evolutionary loops, DASHCO) treat heuristic design itself as a search problem for LLMs.
+  - **Learning-guided initialisation**: InitPMS (Science China Information Sciences, 2025) uses graph neural networks to predict initial assignments for local-search partial MaxSAT solvers, significantly increasing solved instances across benchmarks; earlier GCN guidance had already shown 27-62% gains for local search SAT solvers.
+  - **New incomplete-solver frameworks**: PALSAT (SAT 2026) integrates unit propagation with local search via progressive activation of the search space, reported as the first framework advance beyond the decade-old CCAnr/probSAT lineage with significantly better performance across benchmarks.
+
+  **Sources**:
+  - https://satcompetition.github.io/2025/satcomp25slides.pdf
+  - https://arxiv.org/abs/2501.14630
+  - https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2026.21
+  - http://scis.scichina.com/en/2025/122101.pdf

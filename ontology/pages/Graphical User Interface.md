@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -109,6 +109,16 @@ public:: true
   ## Current Landscape
 
   GUIs remain the default interface for productivity computing and show no sign of displacement. Contemporary evolution happens along several axes: design systems (Material Design, Fluent, Apple's Human Interface Guidelines) standardise component behaviour across platforms; declarative UI frameworks (React, SwiftUI, Jetpack Compose, Flutter) have replaced imperative widget trees with state-driven rendering; and accessibility APIs expose the visual hierarchy to screen readers and automation. Two frontiers are notable for this corpus. First, XR platforms are hybridising the GUI rather than abandoning it — visionOS and Quest render familiar windows, buttons, and menus as floating panels controlled by gaze-and-pinch, keeping GUI semantics inside spatial containers. Second, GUI agents — multimodal AI models that perceive screens and operate interfaces by synthetic clicks and keystrokes — have turned the GUI itself into a machine-facing API, making interface legibility relevant to software agents as well as people.
+
+  - **Computer-use / GUI agents (2024-2026)**: Anthropic shipped Computer Use with Claude 3.5 Sonnet in October 2024; OpenAI's Computer-Using Agent (Operator) and Google's Gemini 2.5 Computer Use followed. These vision-language-action systems capture screenshots, ground UI elements and emit bounded actions (click, type, scroll). On the OSWorld desktop benchmark, scores rose from a ~12% baseline to 61.4% (Claude Sonnet 4.5) against a 72.4% human ceiling; Gemini 2.5 Computer Use reports ~88.9% on WebVoyager but remains browser- rather than OS-optimised.
+  - **Hybrid architectures**: production 2026 agents (e.g. Microsoft UFO²) fuse OS accessibility trees with vision-based parsing (OmniParser) rather than relying on pixels alone, reflecting that much GUI interaction logic is deterministic and needn't route through the model.
+  - **Standardisation pressure**: proposals to expose application semantics to assistants via the Model Context Protocol (MCP) and declarative OS interfaces aim to make GUIs first-class targets for agents while keeping the human-facing widget grammar intact.
+  - **Human-facing evolution**: design systems (Material Design, Fluent, Apple HIG) and declarative frameworks (React, SwiftUI, Jetpack Compose, Flutter) remain the mainstream, and XR platforms (visionOS, Quest) re-embed flat GUI panels as gaze-and-pinch-controlled floating windows.
+
+  **Sources**:
+  - https://www.marktechpost.com/2025/10/10/what-are-computer-use-agents-from-web-to-os-a-technical-explainer/
+  - https://arxiv.org/html/2510.06223v1
+  - https://arxiv.org/html/2510.04607v2
 
 - ### Provenance
   - sources::

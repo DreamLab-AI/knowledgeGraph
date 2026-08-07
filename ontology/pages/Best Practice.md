@@ -47,11 +47,11 @@ public:: true
       {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -81,7 +81,13 @@ public:: true
 
   ## Current Landscape
 
-  - **Codification**: bodies of knowledge (DMBOK, PMBOK, SWEBOK), vendor well-architected frameworks (AWS, Azure, Google Cloud), and security baselines (CIS Benchmarks, NCSC guidance, OWASP ASVS) are the dominant carriers.
+  - **Codification**: bodies of knowledge (DMBOK, PMBOK, SWEBOK), vendor well-architected frameworks, and security baselines (CIS Benchmarks, NCSC guidance, OWASP ASVS) are the dominant carriers. The AWS Well-Architected Framework (latest revision November 2024) codifies practices across six pillars and is designed as a "constructive conversation", explicitly not an audit.
+  - **Living, versioned guidance**: CIS Benchmarks are maintained through a rolling community-consensus process — the CIS AWS Foundations Benchmark reached version 7.0.0, with a broad August 2025 update refreshing recommendations across the catalogue — illustrating how best practice now ships on a continuous cadence rather than as a one-off document.
   - **Standards pipeline**: W3C publishes "Best Practices" notes (Data on the Web, Spatial Data on the Web) that shape later Recommendations; IETF BCP documents give the pattern formal status.
   - **Emerging domains**: XR accessibility, AI assurance, and decentralised identity currently rely heavily on best-practice guidance because formal standards are still maturing.
   - **Critique**: management literature warns that "best" ossifies; many organisations now prefer "good practices" or context-ranked patterns, reviewed on a fixed cadence against incident and benchmark data.
+
+  **Sources**:
+  - https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html
+  - https://www.cisecurity.org/benchmark/amazon_web_services
+  - https://www.cisecurity.org/insights/blog/cis-benchmarks-august-2025-update

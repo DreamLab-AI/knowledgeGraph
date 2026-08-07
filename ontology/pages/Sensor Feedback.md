@@ -77,11 +77,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -113,3 +113,16 @@ public:: true
   In a canonical closed loop the plant output y(t) is measured as ŷ(t) = y(t) + noise, the error e(t) = r(t) − ŷ(t) is computed against the reference r(t), and the controller maps e(t) to an actuator command—proportional-integral-derivative control being the ubiquitous industrial case. Discrete implementations sample feedback at rates from ~10 Hz (thermal processes) through 1 kHz (robot joint control) to 20 kHz+ (motor current loops); a common rule of thumb places the sampling frequency at least ten times the desired closed-loop bandwidth.
 
   Modern robotics stacks layer feedback at multiple rates: fast inner loops on motor current and joint velocity, mid-rate loops on position and force, and slower outer loops on task-level quantities such as end-effector pose from vision (visual servoing at 30–100 Hz). Learning-based controllers change none of the fundamentals—reinforcement-learning policies and model-predictive controllers still consume fused sensor feedback as their observation vector, and their deployment stands or falls on the same latency, calibration, and noise budgets that govern classical loops. Failure modes—sensor dropout, aliasing, miscalibration—are correspondingly first-class safety concerns, handled with redundancy, plausibility checks, and graceful degradation to safe states.
+
+  ## Current Landscape
+
+  - **Force and touch enter learned policies**: a 2025 literature review of "forceful robotic foundation models" documents a clear trend of folding force feedback (proprioception and tactile sensing) into transformer- and diffusion-based manipulation policies, reporting consistent robustness gains when force is added as an input, an output, or both.
+  - **Whole-body tactile control**: the TACT system (2025) extended action-chunking transformers to accept distributed tactile measurements alongside vision and proprioception, letting the life-size humanoid RHP7 Kaleido perform contact-rich whole-body manipulation while balancing and walking.
+  - **Feedback without dedicated sensors**: a 2025 unified force-and-position policy for legged robots estimates external forces from historical robot states (no force sensors) and reports roughly 39.5% higher success on contact-rich tasks than position-only control.
+  - **Sim-to-real remains the bottleneck**: 2025 humanoid surveys stress that raw high-dimensional tactile data and the difficulty of simulating contact physics keep sim-to-real transfer the dominant challenge, driving work on tactile simulators and domain randomisation.
+
+  **Sources**:
+  - https://arxiv.org/html/2504.11827v1
+  - https://arxiv.org/html/2506.15146v1
+  - https://arxiv.org/html/2505.20829v2
+  - https://arxiv.org/html/2501.02116v1

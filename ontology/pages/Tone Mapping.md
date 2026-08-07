@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -113,6 +113,17 @@ public:: true
   - **HDR displays**: HDR10, Dolby Vision, and the PQ (SMPTE ST 2084) and HLG transfer functions shift rather than remove the problem — content must still be tone mapped between mastering luminance and each display's actual peak brightness.
   - **Inverse tone mapping**: expands legacy SDR content toward HDR ranges, and appears inside neural rendering pipelines where training photographs are display-referred.
   - **Perceptual metrics**: TMO quality is assessed with metrics such as TMQI and HDR-VDP, since simple PSNR does not capture appearance preservation.
+
+  ## Current Landscape
+
+  - **ACES 2.0 (released 2024)** overhauled the Output Transform (RRT+ODT), improving rendering of high-saturation and wide-gamut colour over ACES 1.x — though practitioners still debate its hue transitions and note it darkens scenes versus AgX.
+  - **Blender 5.0 (18 November 2025)** integrated ACES 1.3 and 2.0 view transforms via OCIO, selectable in one click alongside AgX (the default since Blender 4.0) and Filmic, and added ACEScg and Linear Rec.2020 working spaces.
+  - **HDR is now first-class**: Blender 5.0 ships HDR view-transform variants (e.g. ACES 2.0 - HDR 1000 nits, AgX HDR) targeting Rec.2100-PQ and Rec.2100-HLG displays, so tone mapping increasingly maps between a mastering luminance and each display's peak rather than to SDR only.
+  - **AgX remains the pragmatic default** for many artists because its progressive desaturation-to-white avoids the "six colours" oversaturation failure of older filmic/ACES 1.x curves, while ACES is reserved for film-adjacent and HDR-master deliverables.
+
+  **Sources**:
+  - https://github.com/blender/blender/blob/main/release/datafiles/colormanagement/config.ocio
+  - https://journal.persc.jp/blender-aces-color-management/
 
 - ### Provenance
   - sources::

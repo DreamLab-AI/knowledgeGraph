@@ -48,11 +48,11 @@ public:: true
       {"@id": "urn:ngm:class:decentralisation", "label": "Decentralisation"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -85,3 +85,11 @@ public:: true
   - **Decentralised social**: ActivityPub (W3C, powering Mastodon and the Fediverse), AT Protocol (Bluesky), Nostr, and Farcaster compete on the trade-off between simplicity, portability of identity, and operational decentralisation.
   - **Metaverse and 3D**: glTF, USD, and WebXR are the open-format front in the effort to keep virtual worlds interoperable; the alternative is asset lock-in to individual engines and platforms.
   - **Enclosure pressure**: the recurring risk is "open at the bottom, closed at the top" — open transport with proprietary discovery, moderation, or identity layers capturing the network effect; protocol designers increasingly treat exit costs and credible neutrality as explicit design goals.
+
+  - **AT Protocol / Bluesky scale (2025)**: Bluesky grew ~60% in 2025, from 25.94M to 41.41M registered users by year-end (per its 2025 Transparency Report, Jan 2026), with users creating 1.41 billion posts in 2025 — 61% of all posts ever made on the network; the AT Protocol holds roughly 20 billion public records and supports a thousand-plus third-party apps.
+  - **ActivityPub remains the largest by reach**: Meta's Threads, which federates over ActivityPub, passed 400 million monthly active users in August 2025, dwarfing native Fediverse activity (FediDB tracked ~12M registered but only ~2M monthly-active Fediverse users; Mastodon monthly actives slipped under 1M by late 2025).
+  - **Funding signal**: Bluesky's $100M Series B (led by Bain Capital Crypto, closed April 2025, disclosed March 2026) valued the company around $700M while keeping atproto explicitly non-blockchain and distinct from ActivityPub.
+
+  **Sources**:
+  - https://bsky.social/about/blog/01-29-2026-transparency-report-2025
+  - https://voxbooster.com/blog/bluesky-fediverse-statistics-2026/

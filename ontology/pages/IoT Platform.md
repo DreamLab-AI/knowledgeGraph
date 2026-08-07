@@ -54,11 +54,11 @@ public:: true
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -82,7 +82,7 @@ public:: true
 
   An **IoT platform** is the middleware tier of the [[Internet of Things]] stack: it sits between constrained devices at the network edge and the business applications that consume their data. Its core responsibilities are device lifecycle management (registration, authentication, credential rotation, decommissioning), reliable bidirectional messaging, ingestion and buffering of high-volume telemetry, and the routing of events into storage, analytics, and automation systems.
 
-  Most platforms are delivered as cloud services — AWS IoT Core, Azure IoT Hub, and Google Cloud IoT being canonical examples — though self-hosted and open-source options such as ThingsBoard, Eclipse Kapua, and Home Assistant serve on-premises and domestic deployments. They typically speak lightweight publish–subscribe protocols such as [[MQTT]] and CoAP towards devices, and expose HTTP, AMQP, or Kafka-compatible interfaces towards the enterprise, with an internal [[Message Broker]] mediating between the two worlds in an event-driven architecture.
+  Most platforms are delivered as cloud services — AWS IoT Core and Azure IoT Hub being the canonical surviving examples, Google Cloud IoT Core having been retired in August 2023 — though self-hosted and open-source options such as ThingsBoard, Eclipse Kapua, and Home Assistant serve on-premises and domestic deployments. They typically speak lightweight publish–subscribe protocols such as [[MQTT]] and CoAP towards devices, and expose HTTP, AMQP, or Kafka-compatible interfaces towards the enterprise, with an internal [[Message Broker]] mediating between the two worlds in an event-driven architecture.
 
   A distinguishing feature of the modern platform is the **digital twin** or device shadow: a cloud-side document mirroring each device's reported and desired state. Applications write to the twin rather than the device, and the platform reconciles state when connectivity allows — essential for battery-powered or intermittently connected hardware. Combined with rules engines and over-the-air update channels, this lets a small operations team manage millions of endpoints.
 
@@ -95,3 +95,17 @@ public:: true
   - **Security posture**: per-device least-privilege policies, anomaly detection on traffic patterns, and audit logging are baseline expectations, since compromised device fleets are a favoured botnet substrate.
 
   In this knowledge graph the IoT platform is the bridging artefact through which event-driven architectures and message brokers reach the physical world, and the component that [[Smart Home Automation]] systems such as Home Assistant instantiate at domestic scale.
+
+  ## Current Landscape
+
+  - **Hyperscaler consolidation**: Google Cloud IoT Core was retired on 16 August 2023 (announced August 2022 with a one-year migration window), and IBM Watson IoT Platform was discontinued shortly afterwards, leaving AWS IoT Core and Azure IoT Hub as the only hyperscaler-native IoT platforms.
+  - **GCP's replacement is partners, not product**: Google now directs IoT customers to third-party platforms running on its infrastructure, notably ClearBlade; "GCP IoT" in practice means a self-hosted broker (EMQX, HiveMQ) plus Pub/Sub rather than a managed service.
+  - **Microsoft's stack keeps growing**: Azure IoT Operations was added in 2025, extending the Azure IoT Hub / IoT Edge / Digital Twins family to Arc-managed Kubernetes at the edge.
+  - **Open-source consolidation**: self-hosted deployments have converged on ThingsBoard (full-stack platform), Balena (container fleet operations), and broker-centric builds on EMQX or HiveMQ; edge runtimes have narrowed to Azure IoT Edge, AWS Greengrass, Open Horizon (LF Edge), and KubeEdge (CNCF).
+  - **Vendor longevity is now a first-order selection criterion**: two hyperscaler platform shutdowns within eighteen months forced unplanned fleet migrations and pushed buyers towards exit-strategy assessments (standard protocols, exportable device registries) before committing.
+
+  **Sources**:
+  - https://hubble.com/community/comparisons/aws-iot-vs-azure-iot-vs-google-cloud-iot-honest-comparison/
+  - https://thingsboard.io/google-iot-core-alternative/
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC12389921/
+  - https://cio.economictimes.indiatimes.com/news/internet-of-things/google-cloud-to-disband-iot-core-service-from-aug-2023/93650130

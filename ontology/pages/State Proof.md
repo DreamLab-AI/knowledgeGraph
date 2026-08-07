@@ -87,11 +87,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -126,6 +126,19 @@ public:: true
   - **Algorand specifics**: post-quantum secure (Falcon), produced every 256 rounds, verifiable by a constant-size verifier; consumed by the London Bridge design for trustless cross-chain verification.
   - **ZK state proofs**: SNARK-based systems (e.g. zk light clients such as Succinct/Telepathy-style designs, Mina's recursive chain proof) compress consensus verification into a single succinct proof cheap enough to verify inside a smart contract.
   - **Trade-offs**: proof size and verification gas versus trust assumptions; multisig bridges are cheap but custodial, Merkle+consensus proofs are trust-minimised but heavier, ZK proofs minimise both at the cost of proving infrastructure.
+
+  ## Current Landscape
+
+  - **Algorand State Proofs live since August 2022**: introduced in the "Renaissance" upgrade, a State Proof commits a Merkle root over the last 256 block headers, signed by node runners holding a supermajority of stake using post-quantum Falcon signatures — making the chain's history quantum-resistant, not just tamper-evident.
+  - **SNARK-friendly by design**: node-runner signatures are committed with the SumHash512 subset-sum compression function (chosen for ZK-SNARK friendliness over SHA-2), so State Proofs can supply the inputs for trustless, quantum-safe cross-chain bridging.
+  - **Post-quantum programme extending beyond history**: on 3 November 2025 Algorand executed its first Falcon-signed mainnet transaction (via LogicSignature account abstraction), extending PQ protection from historical state to live assets; by early 2026 over 140,000 quantum-resistant transactions had been recorded.
+  - **Roadmap to broad quantum resilience by end of 2027** (announced 2026): native Falcon-1024 accounts arrive in Q3 2026 (with SDK, AlgoKit, and Pera Wallet support), PQ multisig in Q4 2026, and a post-quantum replacement for the consensus-layer VRF targeted for 2027 — the hardest remaining step.
+  - **Zero-knowledge state proofs elsewhere**: SNARK-based light clients (Succinct/Telepathy-style designs, Mina's recursive chain proof) compress consensus verification into a single succinct proof cheap enough to verify inside a smart contract, the trust-minimising alternative to custodial multisig bridges.
+
+  **Sources**:
+  - https://algorand.co/technology/post-quantum
+  - https://algorand.co/blog/algorand-targets-broad-quantum-resilience-by-2027
+  - https://algorand.co/blog/technical-brief-quantum-resistant-transactions-on-algorand-with-falcon-signatures
 
 - ### Provenance
   - sources::

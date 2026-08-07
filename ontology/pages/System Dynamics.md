@@ -83,11 +83,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -122,6 +122,18 @@ public:: true
   - **Tooling**: Vensim, Stella/iThink, Powersim, AnyLogic (which also supports agent-based and discrete-event paradigms in one model), and open-source PySD for Python workflows.
   - **Relation to state estimation**: because a system dynamics model supplies explicit state-transition equations, it can serve as the process model that [[State Estimation]] techniques such as Kalman filtering require — calibrating stocks against noisy observations.
   - **Strengths and limits**: excellent for policy insight, communication, and long-horizon feedback reasoning; weak where individual heterogeneity, networks, discrete events, or adaptive learning drive outcomes.
+
+  ## Current Landscape
+
+  - **En-ROADS is the highest-profile modern system dynamics model**: Climate Interactive/MIT Sloan's "Energy Rapid Overview and Decision-Support" simulator is a high-order non-linear ODE stock-and-flow model built in Vensim (~21,000 equations, Euler integration at a ~0.125-year time step, running 1990–2100) and translated to WebAssembly via SDEverywhere so a full scenario recomputes in around 60 milliseconds in the browser.
+  - **Interactive policy engagement at scale**: En-ROADS (an extension of the earlier C-ROADS international-emissions model) is used worldwide in facilitated climate "solutions" workshops, exemplifying system dynamics' original purpose — making feedback structure and policy trade-offs legible to non-modellers.
+  - **Open-source Python tooling**: PySD (published in the Journal of Open Source Software) transpiles Stella (.xmile) and Vensim (.mdl) models into Python via parsing-expression grammars and a forward-Euler solver, bringing classic stock-flow models into the data-science ecosystem alongside commercial tools Vensim, Stella/iThink, Powersim, and the multi-paradigm AnyLogic.
+  - **Hybrid paradigms**: models increasingly embed agent populations inside aggregate stock-flow contexts, combining system dynamics' analytical clarity with agent-based modelling's individual heterogeneity, and system dynamics equations continue to serve as the process models underlying epidemiological (SIR) and state-estimation workflows.
+
+  **Sources**:
+  - https://www.climateinteractive.org/en-roads/en-roads-simulator-science/
+  - https://docs.climateinteractive.org/projects/en-roads-reference-guide/en/latest/pages/structure.html
+  - https://www.theoj.org/joss-papers/joss.04329/10.21105.joss.04329.pdf
 
 - ### Provenance
   - sources::

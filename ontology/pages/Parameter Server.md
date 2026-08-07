@@ -81,11 +81,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -121,6 +121,18 @@ public:: true
   - **Bottlenecks**: the servers' aggregate ingress bandwidth caps scaling, which is why dense-gradient deep learning largely migrated to all-reduce over InfiniBand or NVLink, while parameter servers remain strong for sparse models (recommender embeddings) where each worker touches only a small slice of the parameters.
   - **Implementations**: MXNet's KVStore, TensorFlow's ParameterServerStrategy, BytePS, and Angel are representative systems.
 
+  ## Current Landscape
+
+  - In modern large-model training the field has largely converged on synchronous all-reduce: PyTorch's Distributed Data Parallel (DDP), using NCCL/Gloo collectives, is the default, with a 2024–2025 quantitative study measuring DDP at a 2–3× throughput advantage over parameter-server setups on homogeneous, gang-scheduled clusters.
+  - Fully Sharded Data Parallel (FSDP) has become the standard route to training very large networks, showing a 4–6× reduction in peak per-GPU memory versus DDP at the cost of roughly 2–3× longer training time from extra communication — the memory ceiling the parameter server originally addressed is now handled by sharding within a data-parallel collective.
+  - Asynchronous parameter servers retain a niche in heterogeneous and elastic environments: the same study found Asynchronous PS cut training time by up to 28% over synchronous PS, but at a 4–17% accuracy penalty from gradient staleness, quantifying the classic throughput-versus-convergence trade-off.
+  - The architecture endures where it is still the best fit — sparse workloads such as recommender-system embeddings, where each worker touches only a small slice of parameters — while dense deep-learning gradients favour all-reduce over InfiniBand/NVLink.
+
+  - **Sources**:
+    - https://arxiv.org/html/2505.12832v2
+    - https://www.cs.cornell.edu/courses/cs4787/2025fa/lectures/lecture20-slides.pdf
+    - https://www.sciencedirect.com/science/article/pii/S2949719125000500
+
 - ### Provenance
   - sources::
-  - migration-date:: 2026-08-06T00:00:00Z
+  - migration-date:: 2026-08-07T00:00:00Z

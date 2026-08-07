@@ -47,11 +47,11 @@ public:: true
       {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -86,3 +86,15 @@ public:: true
   - **Ecosystem churn**: law-enforcement takedowns (LockBit's Operation Cronos, ALPHV's collapse in 2024) fragment groups without ending the model; affiliates migrate to successor brands.
   - **Policy direction**: mandatory incident reporting, sanctions on payment facilitation, and proposals (including in the UK) to ban or require notification of ransom payments by public bodies and critical infrastructure operators.
   - **Countermeasures**: EDR with behavioural detection of mass encryption, immutable object-lock backups, network segmentation, and rehearsed offline recovery are the consensus baseline.
+
+  Dated developments (2024–2026):
+  - **UK policy (Jan/Feb 2025)**: the Home Office consulted on three legislative proposals — a targeted **ban on ransom payments** by all public-sector bodies and regulated Critical National Infrastructure operators; a **payment-prevention regime** (other victims must notify authorities before paying); and a mandatory **incident-reporting regime** (initial report within 72 hours, full report within 28 days).
+  - **Encryption → pure extortion**: Check Point's 2025 tracking shows a decisive shift away from file encryption toward data-theft-only extortion; the global ransom *payment* rate fell to a historic low of roughly 25–27%, driven by resilient backups and payment restrictions.
+  - **Ecosystem fragmentation**: after LockBit's disruption (Operation Cronos, Feb 2024; further internal-data leak May 2025) and the collapse of other brands, Q3 2025 saw a record ~85 active extortion/leak-site groups with the top 10 accounting for only ~56% of victims; **Qilin** became the most active operator, and LockBit re-emerged with LockBit 5.0 in September 2025.
+  - **UK threat picture**: the NCSC Annual Review 2025 recorded a 50% year-on-year rise in "highly significant" incidents (the third consecutive annual increase); the 3 June 2024 Synnovis/NHS pathology attack postponed over 10,000 outpatient appointments and 1,700 elective procedures across two London trusts.
+  - **Business prevalence (UK)**: the Cyber Security Breaches Survey 2025/2026 found ransomware affecting ~1% of businesses (down from 3% in the prior two years), with phishing still the dominant attack vector.
+
+  **Sources**:
+  - https://www.gov.uk/government/consultations/ransomware-proposals-to-increase-incident-reporting-and-reduce-payments-to-criminals/ransomware-legislative-proposals-reducing-payments-to-cyber-criminals-and-increasing-incident-reporting-accessible
+  - https://research.checkpoint.com/2025/the-state-of-ransomware-q3-2025/
+  - https://www.ncsc.gov.uk/files/ncsc-annual-review-2025.pdf

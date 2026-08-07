@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -119,7 +119,14 @@ public:: true
 
   ## Current Landscape
 
-  - **Implementations**: the reference Stanford `colbert-ai` library; RAGatouille for easy fine-tuning and indexing; native multi-vector support in Vespa, and late-interaction support arriving across vector databases (Qdrant, LanceDB, Weaviate) — relevant wherever [[Semantic Search]] or [[Hybrid Search]] stacks are assembled.
-  - **Derivatives**: answerai-colbert-small demonstrated strong quality at 33M parameters; JaColBERT and multilingual variants extend coverage; ColPali applies late interaction to document *images* with vision-language models, indexing page patches for OCR-free retrieval — one of the most active retrieval directions of 2024–2025.
-  - **Trade-offs**: index size and memory remain the chief costs versus single-vector systems (per-token storage even after compression), motivating continued work on pooling, quantisation, and token pruning.
-  - **Role in RAG**: late-interaction retrievers are a common first stage in retrieval-augmented generation pipelines, either standalone or fused with lexical BM25 scores, with cross-encoders reserved for final reranking.
+  - **Native multi-vector support is now mainstream**: Qdrant has offered first-class multivector collections with a MaxSim comparator since v1.10 (2024); Vespa supports tensor-field MaxSim ranking natively; Weaviate (v1.27+) and LanceDB followed, and Elasticsearch (8.18+) and OpenSearch (3.3+) added multi-vector support to their cores during 2025 — relevant wherever [[Semantic Search]] or [[Hybrid Search]] stacks are assembled.
+  - **Multilingual and long-context variants**: Jina-ColBERT-v2 (August 2024, arXiv:2408.16672) extended late interaction to 89 languages and 8,192-token documents with Matryoshka output dimensions of 128/96/64, beating original ColBERTv2 by ~6.5% on 14 BEIR tasks; answerai-colbert-small showed strong quality at just 33M parameters.
+  - **ColPali and visual late interaction**: ColPali ("Contextualised Late Interaction over PaliGemma", arXiv:2407.01449, accepted at ICLR 2025) applies MaxSim scoring to vision-language-model patch embeddings of rendered pages (~1,000 patch vectors per page), enabling OCR-free document retrieval; Vespa has published work scaling ColPali-style retrieval to billions of pages with binary quantisation and phased ranking, and ColQwen variants extend the family.
+  - **Deployment pattern**: in production, late interaction is predominantly used to rerank a small candidate set retrieved by a cheaper representation (single-vector or BM25) rather than as brute-force first-stage retrieval — Qdrant's Query API expresses this retrieve-then-rerank flow in a single call.
+  - **Trade-offs**: per-token storage (roughly 30× a single-vector index before quantisation, ~1,000× for page-image patches) remains the chief cost, motivating continued work on pooling, int8/binary quantisation, and token pruning.
+
+  **Sources**:
+  - https://weaviate.io/blog/late-interaction-overview
+  - https://jina.ai/news/jina-colbert-v2-multilingual-late-interaction-retriever-for-embedding-and-reranking/
+  - https://arxiv.org/abs/2408.16672
+  - https://qdrant.tech/course/multi-vector-search/module-1/late-interaction-basics/

@@ -49,11 +49,11 @@ public:: true
       {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -88,6 +88,19 @@ public:: true
   - **Resolution**: because pixels are spread across the full sphere, 8K spherical resolution yields only roughly HD quality in the visible viewport, driving demand for 8K+ capture.
   - **Delivery**: standard H.264/H.265/AV1 codecs over conventional streaming stacks; viewport-adaptive tiled streaming reduces bandwidth by prioritising the region being watched.
   - **Standards**: MPEG Omnidirectional Media Format (OMAF, ISO/IEC 23090-2) specifies projection, packing, and signalling for spherical media; WebXR and platform players (YouTube VR, Meta Quest TV) provide playback.
+
+  ## Current Landscape
+
+  - **Apple Projected Media Profile (June 2025)**: at WWDC 2025 Apple introduced APMP, an extension to the QuickTime/MP4 format describing lens projection parameters, so that 360 and wide-field-of-view footage from Insta360, GoPro, and Canon cameras plays back natively on Apple Vision Pro under visionOS 26 — a significant platform endorsement of the format.
+  - **8K became the consumer baseline in 2025**: the Insta360 X4/X5, DJI Osmo 360 (8K/50fps), and GoPro Max 2 all shipped 8K spherical capture, and Insta360's budget X4 Air retained 8K as a competitive essential.
+  - **Market scale**: industry estimates placed the global 360-degree camera market at roughly USD 1.5–2.4 billion in 2025, with forecast compound annual growth rates between about 12% and 28% depending on the analyst.
+  - **Resolution economics remain the constraint**: an 8K equirectangular sphere yields only ~4K in a 170° reframed view and ~1440p at a 110° linear field of view, which is why professional VR production is moving towards 12K+ capture as headset pixel density rises.
+
+  **Sources**:
+  - https://tech.yahoo.com/cameras/articles/gopro-insta360-cameras-getting-massive-164146262.html
+  - https://www.digitalcameraworld.com/cameras/360-cameras/from-niche-to-necessary-this-is-why-360-cameras-took-off-in-2025
+  - https://xtendedview.com/360-camera-statistics/
+  - https://www.insta360.com/blog/tips/understanding-8K-360-video.html
 
 - ### Provenance
   - sources::

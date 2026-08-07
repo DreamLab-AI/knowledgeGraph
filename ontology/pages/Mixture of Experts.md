@@ -79,11 +79,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -118,6 +118,19 @@ public:: true
   - **Systems cost**: experts shard across devices, so MoE trades FLOPs for memory and all-to-all communication; inference must hold all experts resident even though few fire per token.
   - **Design axes**: expert count and granularity (few large vs many fine-grained), shared always-on experts (DeepSeekMoE), k per token, and which layers are sparse.
   - **Exemplars**: GShard and Switch Transformer (Google), GLaM, Mixtral 8×7B/8×22B (Mistral), DeepSeek-V2/V3, Qwen-MoE, Grok-1 — establishing sparse MoE as the default recipe for frontier-scale efficiency.
+
+  ## Current Landscape
+
+  - MoE is now the default architecture for frontier-scale open-weight models: DeepSeek-V3 (December 2024; 671B total, 37B active, 256 routed experts plus one shared) and its R1 reasoning derivative (January 2025) set the template of fine-grained experts with auxiliary-loss-free load balancing.
+  - Meta's Llama 4 Scout and Maverick (April 2025) were the company's first MoE releases — Maverick pairs ~400B total parameters with only 17B active across 128 experts; Alibaba's Qwen3-235B-A22B activates 22B of 235B (8 of 128 experts per token), encoding the active count in its name.
+  - Moonshot AI's Kimi K2 (July 2025) pushed open weights past a trillion total parameters (~1T, 32B active, 384 experts), and OpenAI returned to open weights with gpt-oss-120b (August 2025): 117B total but just 5.1B active — a 4.4% activation ratio.
+  - Activation sparsity keeps falling — Mixtral activated 27.6% of parameters per token (2023), DeepSeek-V3 5.5%, Kimi K2 ~3% — and the total/active parameter pair is now the headline specification of every model release.
+  - NVIDIA reported in December 2025 that the ten most intelligent open-source models on the Artificial Analysis leaderboard all use MoE architectures, and serving stacks (vLLM, llm-d) now ship wide expert-parallelism modes specifically for DeepSeek-style MoEs.
+
+  **Sources**:
+  - https://blogs.nvidia.com/blog/mixture-of-experts-frontier-models/
+  - https://friendli.ai/blog/moe-models-comparison
+  - https://developers.redhat.com/articles/2025/09/08/scaling-deepseek-style-moes-vllm-and-llm-d-using-wide-ep
 
 - ### Provenance
   - sources::

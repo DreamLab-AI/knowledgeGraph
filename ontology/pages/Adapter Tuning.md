@@ -65,11 +65,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -100,6 +100,20 @@ public:: true
 
   A Houlsby-style adapter computes h' = h + W_up · f(W_down · h), with W_down ∈ R^(d×r), W_up ∈ R^(r×d), r ≪ d (r is commonly 8–256 against hidden sizes of 768–8192); near-identity initialisation (W_up ≈ 0) makes the model start from exact pre-trained behaviour. Design axes include placement (after each sublayer, parallel to it as in He et al.'s unified view, or only in upper layers), sharing across layers, and whether the adapter is merged into base weights after training (possible for linear reparameterisations such as LoRA, impossible for non-linear bottleneck adapters, which add a small inference cost). Tooling has consolidated around Hugging Face PEFT and AdapterHub, which standardise adapter formats, injection points, and composition. Empirically, adapter methods dominate full fine-tuning on cost-adjusted comparisons for models above roughly a billion parameters, and multi-adapter serving (for example S-LoRA-style batched inference over thousands of adapters) has become the standard architecture for personalised and multi-tenant LLM deployment.
 
+  ## Current Landscape
+
+  - **LoRA is the de-facto default (2024–2026)**: practitioner guidance now recommends reaching for reparameterised methods — standard LoRA or a variant — first; QLoRA (NF4 4-bit base + fp16 adapters, paged optimisers) lets a 65B model be fine-tuned on a single consumer GPU.
+  - **Hugging Face PEFT** reached version 0.17.1 (21 August 2025) and integrates directly with Transformers (requires `peft >= 0.18.0` for the native `add_adapter`/`load_adapter`/`set_adapter` path); it supports LoRA, DoRA, QLoRA, IA³, AdaLoRA and prefix tuning, and can now convert non-LoRA adapters into LoRA for downstream serving.
+  - **Method proliferation**: DoRA (weight-decomposed, magnitude + direction) reports +2–5% gains over LoRA; VeRA cuts parameters ~10x via shared random matrices; rsLoRA, PiSSA, OLoRA and X-LoRA (Mixture of LoRA Experts) occupy nearby design points.
+  - **Multi-tenant LoRA serving** is now a standard deployment pattern: a shared int4/int8 base (e.g. Llama-3 70B) is loaded once per GPU and thousands of adapters are indexed and routed per request through vLLM, LoRAX, TGI or TensorRT-LLM.
+  - **Adapter overhead trade-off**: LoRA merges into base weights for zero inference latency, whereas classic bottleneck adapters add roughly 15% overhead — a live consideration in serving-stack choices.
+
+  **Sources**:
+  - https://github.com/huggingface/peft
+  - https://huggingface.co/docs/transformers/en/peft
+  - https://huggingface.co/blog/samuellimabraz/peft-methods
+  - https://huggingface.co/blog/peft-beyond-lora
+
 - ### Provenance
-  - sources::
+  - sources:: https://github.com/huggingface/peft, https://huggingface.co/docs/transformers/en/peft, https://huggingface.co/blog/peft-beyond-lora
   - migration-date:: 2026-08-06T00:00:00Z

@@ -75,11 +75,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -114,6 +114,18 @@ public:: true
   - **Context management**: long loops overflow the window; harnesses use truncation, summarisation/compaction, or externalised memory so the loop can run for hundreds of iterations.
   - **Failure modes**: infinite retry loops on a persistent error, context poisoning from verbose tool output, schema-violating call arguments, and prompt injection carried in tool results — the reason tool output is treated as untrusted data.
   - **Standardisation**: the Model Context Protocol (MCP) decouples the loop from tool implementations, letting one harness drive an open ecosystem of tool servers.
+
+  ## Current Landscape
+
+  - **MCP became the de facto tool interface**: released by Anthropic in November 2024, MCP was adopted by OpenAI across its platform and Agents SDK (March 2025), with Google and Microsoft following (April-May 2025); by early 2026 roughly 28% of Fortune 500 companies had deployed MCP servers and the community had published thousands of servers.
+  - **From vendor project to open standard**: in December 2025 Anthropic donated MCP to the Linux Foundation's Agentic AI Foundation, backed by AWS, Google, Microsoft, OpenAI, Bloomberg and Cloudflare, removing single-vendor risk.
+  - **Security is the loop's weak point**: MCP shipped without built-in authentication, delegating enforcement to implementers; the 2025-06-18 specification treats tool descriptions/annotations as untrusted and mandates explicit user consent before any tool invocation. Independent analysis found ~43% of surveyed MCP servers vulnerable to command injection, plus protocol-level issues (missing capability attestation, unauthenticated bidirectional sampling) and multiple CVEs in the first year.
+  - **Hardening patterns now standard**: OAuth 2.1 with PKCE for remote servers, tool allowlists with fail-closed enforcement, gateways with centralised audit logging, and human-in-the-loop approval gates for create/delete/pay/privilege-escalation actions.
+
+  **Sources**:
+  - https://modelcontextprotocol.io/specification/2025-06-18
+  - https://arxiv.org/html/2503.23278v2
+  - https://openai.github.io/openai-agents-python/mcp/
 
 - ### Provenance
   - sources::

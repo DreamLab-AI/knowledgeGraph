@@ -77,11 +77,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -115,3 +115,15 @@ public:: true
   - **Game-theoretic grounding**: alternating-offers bargaining admits subgame-perfect equilibrium analysis; mechanism design asks whether truthful strategies can be made dominant.
   - **Multilateral forms**: one-to-many negotiation generalises to auctions; many-to-many to markets and matching protocols.
   - **Machine-readable specification**: interaction protocols are specified as finite-state machines, Petri nets, or AUML sequence diagrams, enabling conformance checking of agent implementations.
+
+  ## Current Landscape
+
+  - A new generation of agent interaction protocols has emerged for LLM-based systems: Anthropic's **Model Context Protocol (MCP)**, introduced in November 2024, standardises agent-to-tool communication over JSON-RPC 2.0, while Google's **Agent2Agent (A2A) protocol**, released in April 2025, standardises agent-to-agent discovery and task delegation via capability-describing "Agent Cards" and a defined task lifecycle.
+  - A2A was donated to the **Linux Foundation in June 2025** with more than 50 partners including AWS, Microsoft, Salesforce, and SAP; IBM's Agent Communication Protocol (ACP) is under the same governance, echoing the FIPA-era ambition of vendor-neutral interaction standards.
+  - A May 2025 survey (arXiv:2505.02279) maps the competing stack — MCP, ACP, A2A, and the decentralised Agent Network Protocol (ANP) — and characterises 2024–2025 as the "protocol-oriented interoperability" phase of multi-agent systems.
+  - Research directions include negotiation layers with dynamic SLA formation (probe/bid/commit exchanges between agents) and Agent Context Protocols for structured error handling, reviving classical protocol properties — termination, commitment semantics, auditability — for LLM agents.
+
+  **Sources**:
+  - https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/
+  - https://arxiv.org/html/2505.02279v1
+  - https://www.ibm.com/think/topics/agent2agent-protocol

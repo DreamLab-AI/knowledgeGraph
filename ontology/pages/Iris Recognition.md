@@ -93,11 +93,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -125,4 +125,16 @@ public:: true
 
   ## Current Landscape
 
-  Deployed systems include the UAE's border-crossing watchlist (the first nationwide deployment), India's Aadhaar programme — the largest biometric system on Earth, using iris alongside fingerprints for over a billion residents — airport e-gates, and humanitarian cash-assistance registration by UNHCR. In the decentralised-identity world, [[Worldcoin]] (now World) uses custom "Orb" hardware to derive an iris-based uniqueness proof for its proof-of-personhood protocol, provoking regulatory scrutiny from data-protection authorities in the EU, Kenya and elsewhere over consent and biometric data handling — a reminder that the technique's precision cuts both ways for privacy. Research directions include deep-learning segmentation and matching, iris recognition at a distance and on the move, and post-mortem and infant iris stability; standards such as ISO/IEC 19794-6 and 29794-6 govern image quality and interchange.
+  Deployed systems include the UAE's border-crossing watchlist (the first nationwide deployment), India's Aadhaar programme — the largest biometric system on Earth, using iris alongside fingerprints for over a billion residents — airport e-gates, and humanitarian cash-assistance registration by UNHCR. Standards such as ISO/IEC 19794-6 and 29794-6 govern iris image quality and interchange, and research continues on deep-learning segmentation and matching, iris recognition at a distance and on the move, and infant and post-mortem iris stability.
+
+  The most contested current deployment is [[Worldcoin]] (rebranded **World**), co-founded by Sam Altman, which uses custom "Orb" hardware to derive an iris-based proof-of-personhood credential (World ID) intended to distinguish humans from AI-generated accounts. In 2025–2026 it drew escalating enforcement from data-protection regulators worldwide, illustrating that the technique's precision cuts both ways for privacy:
+
+  - **Germany**: the Bavarian DPA (BayLDA), acting as lead supervisory authority, reprimanded the Worldcoin Foundation for storing iris codes as plaintext and, in a decision finalised in early 2025, ordered deletion of iris data and raised GDPR-compliance questions, prompting a pause for "station upgrades and regulatory review".
+  - **Brazil**: the ANPD, in early 2025, prohibited paying financial (crypto) incentives for iris enrolment under the LGPD, holding that payment vitiates the "free" consent required for sensitive data.
+  - **Thailand**: the PDPC (November 2025) ordered World to halt iris enrolment and delete records of some 1.2 million people; the **Philippines** banned the project in October 2025; and **Colombia's** SIC confirmed a permanent shutdown and deletion order (Resolution 45710 of June 2026, upholding its October 2025 sanction).
+  - Amid these bans, World continued to open new markets, launching Orb iris enrolment in Italy and reporting compliance with Kenyan regulators in early 2026.
+
+  **Sources**:
+  - https://idtechwire.com/world-iris-biometrics-launches-in-italy-as-kenya-confirms-regulatory-compliance/
+  - https://www.edpb.europa.eu/system/files/2025-02/decision1594_0.pdf
+  - https://idtechwire.com/thailand-orders-worldcoin-to-halt-iris-scans-and-delete-biometric-data/

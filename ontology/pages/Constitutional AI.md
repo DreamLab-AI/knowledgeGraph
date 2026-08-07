@@ -89,11 +89,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -123,8 +123,15 @@ public:: true
 
   ## Current Landscape
 
-  - **Deployment**: CAI and its descendants underpin the training of Anthropic's Claude models; the published constitution has been revised publicly over successive model generations.
-  - **RLAIF generalisation**: AI-feedback preference training is now a standard tool across labs, often blended with human feedback rather than replacing it, because AI judges are cheap, fast, and consistent but inherit their own biases.
-  - **Open replication**: open-source ecosystems have reproduced the recipe (e.g. constitution-guided self-critique plus DPO/RLAIF) on open-weight models, and self-critique pipelines derived from CAI are widely used for [[Instruction Following]] refinement.
-  - **Open problems**: principle conflicts within a constitution, sensitivity to how principles are phrased, whether models genuinely internalise principles or pattern-match them, and who has standing to write the constitution — an active governance question as much as a technical one.
+  - **A rewritten constitution, published in full**: on 21–22 January 2026 Anthropic published a new ~80-page constitution for Claude under a Creative Commons CC0 1.0 licence, shifting from a list of standalone principles to a reason-based document that explains *why* behaviours are desired; it establishes a four-tier priority order (broadly safe → broadly ethical → compliant with Anthropic's guidelines → genuinely helpful) and holds final authority over all other training guidance.
+  - **Constitutional Classifiers**: the constitution idea extended to inference-time safeguards — classifiers trained on constitution-guided synthetic data (paper, 31 January 2025) reduced jailbreak success on Claude from 86% to 4.4%, surviving 3,000+ hours of red teaming without a universal jailbreak; a next-generation cascade (January 2026) cut the harmless-query refusal rate to 0.05% at ~1% additional compute.
+  - **RLAIF generalisation**: AI-feedback preference training is now a standard tool across labs, usually blended with human feedback rather than replacing it, because AI judges are cheap, fast, and consistent but inherit their own biases.
+  - **Open replication**: open-source ecosystems have reproduced the recipe (constitution-guided self-critique plus DPO/RLAIF) on open-weight models, and self-critique pipelines derived from CAI are widely used for [[Instruction Following]] refinement.
+  - **Open problems**: principle conflicts within a constitution, sensitivity to phrasing, whether models genuinely internalise principles or pattern-match them, and who has standing to write the constitution — analysts expect other frontier labs to face pressure to publish comparable governance documents, particularly given EU AI Act transparency expectations.
   - **Relation to red teaming**: [[Red Teaming]] supplies the adversarial prompts that drive the critique-revision loop, making the two practices complementary halves of a safety training pipeline.
+
+  **Sources**:
+  - https://www.anthropic.com/news/claude-new-constitution
+  - https://www.anthropic.com/research/constitutional-classifiers
+  - https://www.anthropic.com/research/next-generation-constitutional-classifiers
+  - https://bisi.org.uk/reports/claudes-new-constitution-ai-alignment-ethics-and-the-future-of-model-governance

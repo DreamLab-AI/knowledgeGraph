@@ -97,11 +97,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -131,7 +131,15 @@ public:: true
 
   ## Current Landscape
 
+  - **Security councils are now standard**: to prevent execution of harmful proposals, most large DAOs run an elected multisig council — e.g. Arbitrum's 12-member Security Council (9-of-12 threshold) — with equivalents at Optimism, ENS, Compound, Uniswap and ZKsync (DAOstar, 2025).
+  - **Executive-body drift (2025)**: Arbitrum's April 2025 "A Vision for the Future" shifted executive power toward an elected Operational Coordination Body (OpCo); Optimism stood up a Budget Board (May 2025-May 2026) and, from August 2025, made its Developer Advisory Board the primary approver of protocol upgrades.
+  - **Plutocracy is formally unavoidable**: "The Impossibility of Anti-Plutocratic DAO Governance" (arXiv, 2025) proves no wallet-balance voting rule resists Sybil splitting; replaying five major DAOs it measured Sybil amplification of 1,172x-4,039x under quadratic voting, and showed a ~$300M Uniswap vote capturable for roughly $75K in token and gas costs.
+  - **Delegation concentration persists**: Uniswap's treasury-delegation programme (rounds since December 2023) and evidence that a16z-affiliated parties attract disproportionate delegations (arXiv 2503.11940) keep centralisation a live concern.
   - **Reference stacks**: OpenZeppelin Governor, Compound Governor Bravo, and Aave Governance V3 dominate on-chain execution; Snapshot handles gasless off-chain signalling for thousands of projects.
-  - **Delegation layer**: professional delegate ecosystems (with public platforms, incentive programmes, and delegate compensation votes) have emerged in Uniswap, Arbitrum, and Optimism governance.
-  - **Known attack surfaces**: flash-loan vote acquisition (the 2020 MakerDAO scare, the 2022 Beanstalk exploit), governance capture via cheap token accumulation (Build Finance, 2022), and last-minute proposal-payload swaps — motivating timelocks, guardians, and security councils.
   - **Hybrid trends**: vote-escrow tokenomics, non-transferable participation weight, futarchy pilots, and legal wrappers (Wyoming DAO LLCs, Cayman foundations) that bind on-chain votes to off-chain legal effect.
+
+  **Sources**:
+  - https://daostar.org/research/delegating_decentralization.pdf
+  - https://arxiv.org/html/2605.18990v1
+  - http://arxiv.org/pdf/2503.11940.pdf
+  - https://docs.arbitrum.foundation/gentle-intro-dao-governance

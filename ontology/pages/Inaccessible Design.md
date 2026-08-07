@@ -73,11 +73,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -107,6 +107,14 @@ public:: true
 
   ## Current Landscape
 
-  Inaccessibility remains the measured norm rather than the exception on the flat web: WebAIM's annual survey of the top million home pages continues to find detectable WCAG failures on over 94% of them, dominated by low-contrast text, missing alternative text, and unlabelled form controls. Regulation is tightening — the European Accessibility Act became applicable in June 2025, the UK Equality Act 2010 and Public Sector Bodies Accessibility Regulations impose duties on services, and US ADA litigation over digital properties continues to grow — turning inaccessible design from a quality gap into a legal and commercial risk.
+  Inaccessibility remains the measured norm rather than the exception on the flat web — and is now getting worse, not better. The WebAIM Million analysis run in February 2026 found detectable WCAG 2 failures on 95.9% of the top one million home pages, up from 94.8% in 2025 and reversing six consecutive years of small improvements; average errors per page rose 10.1% to 56.1. The same six failure types have accounted for 96% of all detected errors for seven consecutive years: low-contrast text (83.9% of pages), missing image alternative text (53.1%), missing form labels (51.0%), empty links (46.3%), empty buttons (30.6%), and a missing document language attribute (13.5%).
 
-  For XR the guidance base is younger: the W3C's XR Accessibility User Requirements (XAUR), the XR Association's developer guides, and platform features such as Apple visionOS accessibility settings (Pointer Control, Dwell Control, captions in spatial experiences) sketch what accessible immersive design looks like, which in turn sharpens the definition of its opposite. Auditing practice increasingly treats inaccessible patterns as defects to be caught in design review and automated testing, rather than retrofitted after launch — the cheapest inaccessible design to fix being the one that never ships.
+  Regulation has tightened sharply. The European Accessibility Act became enforceable on 28 June 2025, applying to consumer-facing digital products and services offered in the EU regardless of where the vendor is based, with member-state fines ranging from roughly €5,000 to €300,000 and the first private lawsuits landing in late 2025; pre-existing products have until 28 June 2030 to comply. In the United States, ADA Title II requires state and local government entities serving populations of 50,000 or more to conform to WCAG 2.1 AA by 24 April 2026. The UK Equality Act 2010 and Public Sector Bodies Accessibility Regulations continue to impose duties on services. Inaccessible design has thus moved decisively from quality gap to legal and commercial risk.
+
+  For XR the guidance base is younger: the W3C's XR Accessibility User Requirements (XAUR), the XR Association's developer guides, and platform features such as Apple visionOS accessibility settings (Pointer Control, Dwell Control, captions in spatial experiences) sketch what accessible immersive design looks like, which in turn sharpens the definition of its opposite. Auditing practice increasingly treats inaccessible patterns as defects to be caught in design review and automated testing — noting that automated tools detect only around 30–40% of WCAG issues — rather than retrofitted after launch.
+
+  **Sources**:
+  - https://webaim.org/projects/million/
+  - https://www.digitalapplied.com/blog/web-accessibility-statistics-2026-wcag-lawsuit-data
+  - https://crosscheck.cloud/blogs/why-95-percent-websites-fail-accessibility/
+  - https://accessibility.build/blog/webaim-million-2026-accessibility-getting-worse

@@ -77,11 +77,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -111,7 +111,14 @@ public:: true
 
   ## Current Landscape
 
-  - **Sovereign pegs**: hard pegs (currency boards such as Hong Kong's), conventional fixed pegs, and crawling pegs; defended with foreign-exchange reserves and rate policy under [[Monetary Policy]] constraints.
-  - **Stablecoin pegs**: fiat-reserved designs dominate volume; regulatory regimes (MiCA in the EU, the US GENIUS Act, UK FCA proposals) increasingly mandate full reserve backing and redemption rights, effectively outlawing unbacked algorithmic pegs.
-  - **Peg quality metrics**: depth of liquidity at parity, historical deviation and recovery time, reserve attestation quality, and redemption latency and gating.
-  - **Beyond currencies**: wrapped tokens (WBTC) peg to an underlying asset via custodial redemption, and liquid-staking tokens maintain soft pegs to their staked collateral.
+  - **US GENIUS Act enacted**: the Guiding and Establishing National Innovation for U.S. Stablecoins Act was signed into law on 18 July 2025, creating the first federal framework for payment stablecoins; it requires 1:1 reserves in cash and short-dated (≤93-day) Treasuries with monthly public reserve disclosures. The framework is not yet fully in effect, with implementing rules expected around late 2026.
+  - **EU MiCA live**: MiCA's stablecoin (EMT/ART) rules have applied since 30 June 2024, imposing 100% reserve backing and a bank-deposit floor of 30% (rising to 60% for "significant" tokens).
+  - **UK regime finalised but delayed**: the Financial Services and Markets Act 2000 (Cryptoassets) Regulations 2026 (SI 2026/102) bring stablecoin issuance and custody under FCA supervision, with the full regime commencing 25 October 2027; the Bank of England oversees "systemic" sterling stablecoins and in June 2026 replaced individual holding caps with a temporary £40 billion aggregate issuance cap.
+  - **Algorithmic pegs marginalised**: all three major regimes mandate full reserve backing and redemption rights, effectively outlawing unbacked algorithmic designs of the kind that produced the 2022 TerraUSD collapse.
+  - **Sovereign pegs**: hard pegs (currency boards such as Hong Kong's), conventional fixed pegs, and crawling pegs remain defended with foreign-exchange reserves and rate policy under [[Monetary Policy]] constraints and the "impossible trinity".
+
+  - **Sources**:
+    - https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/
+    - https://eco.com/support/en/articles/14796313-mica-vs-genius-act-vs-uk-fca
+    - https://www.spark.money/tools/stablecoin-regulation-by-country
+    - https://www.gibsondunn.com/wp-content/uploads/2026/03/global-stablecoin-rules-in-focus-a-cross-border-guide-to-the-new-era-of-stablecoin-regulation.pdf

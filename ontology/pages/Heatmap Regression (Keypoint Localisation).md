@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -124,6 +124,18 @@ public:: true
   - **Losses**: MSE on maps is standard; focal-style variants (CornerNet, CenterNet) down-weight easy negatives for sparse peaks; Adaptive Wing loss targets the foreground–background imbalance in facial landmarking.
   - **Trade-offs**: memory and computation grow with map resolution; quantisation error bounds accuracy at low resolution; soft-argmax restores end-to-end differentiability at the cost of sensitivity to distractor peaks.
   - **Applications**: 2D/3D human pose estimation, facial and hand landmarks, anatomical landmarks in medical imaging, and centre/corner heatmaps in anchor-free object detection.
+
+  ## Current Landscape
+
+  - **Still the accuracy leader**: heatmap-based methods remain the top-performing top-down paradigm on COCO. Transformer-backbone ViTPose set 80.9 AP on COCO test-dev, and a November 2025 method (RSPose) reports 79.9 AP on COCO-val with ViTPose-H, so 2D-Gaussian MSE heatmaps are still the reference formulation for keypoint localisation.
+  - **Coordinate-classification challengers**: SimCC and RTMPose (2023) reframe localisation as two 1D per-axis classification problems, reaching heatmap-competitive accuracy at lower FLOPs and mitigating quantisation error without high-resolution maps — the main efficiency-oriented alternative to 2D heatmaps for real-time and edge deployment.
+  - **Sub-pixel and continuous decoding (2024)**: work such as NerPE (NeurIPS 2024) uses an implicit neural representation to regress confidence at arbitrary resolution, giving continuous sub-pixel localisation (e.g. +6.1 AP over HRNet at low input resolution) and decoupling accuracy from feature-map stride.
+  - **Video and loss refinements**: motion-aware heatmap regression (IJCAI 2024) injects inter-frame motion into the Gaussian targets for video pose, and ranking-based losses (2025) better align heatmap training with the mAP evaluation metric than plain MSE.
+
+  **Sources**:
+  - https://arxiv.org/html/2212.04246v3
+  - https://papers.nips.cc/paper_files/paper/2024/file/b90cb10d4dae058dd167388e76168c1b-Paper-Conference.pdf
+  - https://arxiv.org/html/2511.13857v1
 
 - ### Provenance
   - sources::

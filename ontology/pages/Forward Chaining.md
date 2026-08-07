@@ -85,11 +85,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -124,6 +124,17 @@ public:: true
   - **Semantics**: computes the least fixed point of the rule set applied to the initial facts — the same bottom-up evaluation used by Datalog engines and by materialisation in RDF/OWL reasoners (e.g. RDFS and OWL RL rule sets), making forward chaining the standard strategy for knowledge-graph inference at load time.
   - **Trade-offs vs. backward chaining**: better when many facts arrive incrementally and all consequences matter (monitoring, business rules, CEP); worse when only a specific goal is queried against a large fact base.
   - **Modern use**: business-rules engines (Drools), stream/complex-event processing, OWL RL materialisation, and agent architectures (Soar, ACT-R) all retain forward chaining as their core inference loop.
+
+  ## Current Landscape
+
+  - **Beyond classic Rete**: Drools — the most widely used open-source production-rule system — has moved from ReteOO to the **Phreak** algorithm, which evolved from Rete but is *lazy* (delayed, goal-oriented) rather than *eager* (immediate, data-oriented), adding node/segment/rule-level contextual memory and set-oriented propagation to scale to large datasets better than classic Rete.
+  - **Hybrid reasoning**: modern Drools is a hybrid engine combining forward chaining (data-driven, reacting to facts inserted into working memory) with backward chaining (goal-driven recursion), and integrates a DMN engine and complex-event-processing (CEP) engine on the JVM.
+  - **Knowledge-graph materialisation**: forward chaining remains the standard load-time strategy for RDFS and OWL RL rule sets in triple stores, computing the least fixed point (bottom-up) exactly as Datalog engines do.
+  - **Provenance and governance**: the Kie/Drools codebase now tracks the Apache incubator-kie-drools project, reflecting its move toward Apache Software Foundation governance while retaining the forward-and-backward-chaining, Rete-derived core.
+
+  **Sources**:
+  - https://docs.drools.org/latest/drools-docs/drools/rule-engine/index.html
+  - https://en.wikipedia.org/wiki/Drools
 
 - ### Provenance
   - sources::

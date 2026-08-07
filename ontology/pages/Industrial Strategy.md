@@ -73,11 +73,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -107,6 +107,14 @@ public:: true
 
   ## Current Landscape
 
-  The 2025 Modern Industrial Strategy marked a return to explicit sector targeting after a period in which the term had fallen out of official favour. Its Digital and Technologies Sector Plan aligns with the AI Opportunities Action Plan (January 2025), which committed to expanding sovereign compute capacity twenty-fold by 2030, establishing AI Growth Zones with accelerated planning for data centres, and embedding AI adoption across public services.
+  The Modern Industrial Strategy, published on 23 June 2025 as a ten-year plan, marked a return to explicit sector targeting after a period in which the term had fallen out of official favour. It names eight growth-driving sectors (the "IS-8"): advanced manufacturing, clean energy industries, creative industries, defence, digital and technologies, financial services, life sciences, and professional and business services — each with a dedicated Sector Plan, backed by public R&D funding rising from £20.4 billion in 2025/26 to £22.6 billion by 2029/30, and a network of 22 Industrial Strategy Zones built on existing Investment Zones and Freeports.
+
+  Its Digital and Technologies Sector Plan aligns with the AI Opportunities Action Plan (January 2025): expanding the AI Research Resource at least twenty-fold by 2030 (backed by around £2 billion, including £750 million for an Edinburgh supercomputer), establishing AI Growth Zones with accelerated planning for data centres, creating a £500 million Sovereign AI Unit, and embedding AI adoption across public services. By the government's one-year-on report (January 2026), five AI Growth Zones had been designated across Great Britain — credited with £28.2 billion of investment and more than 15,000 jobs — the Isambard-AI supercomputer had launched in Bristol (July 2025), and a sixfold expansion of Cambridge supercomputer capacity was confirmed for spring 2026.
 
   Critics note the recurring UK pattern of strategy churn — each administration rebrands or restructures its predecessor's framework, weakening the long-term certainty that industrial policy is supposed to provide. Supporters point to genuine continuity in AI: sustained funding for the Alan Turing Institute, catapult centres, and compute programmes has survived successive relabellings. Internationally, the strategy competes with the US CHIPS and Science Act and the EU's Green Deal Industrial Plan in an era of renewed state intervention in technology supply chains.
+
+  **Sources**:
+  - https://www.gov.uk/government/publications/industrial-strategy
+  - https://www.gov.uk/government/publications/ai-opportunities-action-plan-one-year-on/ai-opportunities-action-plan-one-year-on
+  - https://www.techuk.org/resource/industrial-strategy-2025-what-does-it-mean-for-ai.html
+  - https://www.local.gov.uk/parliament/briefings-and-responses/uks-modern-industrial-strategy-local-authority-policy

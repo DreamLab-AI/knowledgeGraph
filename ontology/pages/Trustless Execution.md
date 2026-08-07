@@ -93,11 +93,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -126,3 +126,14 @@ public:: true
   ## Technical Details
 
   Trustless execution is only as strong as its weakest dependency, and several are routinely smuggled back in: oracles importing off-chain data reintroduce trusted parties (mitigated by decentralised oracle networks); contract bugs make "code is law" a double-edged guarantee (addressed by audits, formal verification and bug bounties); upgrade keys and admin multisigs reintroduce operator discretion; and consensus itself rests on economic assumptions (honest-majority hashpower or stake) that can fail under 51% attacks. The verification frontier is moving from re-execution to succinct proofs: [[Zero-Knowledge Proof]] systems (zk-SNARKs/STARKs) let a single prover execute a computation and convince everyone of its correctness cheaply, powering zk-rollups that inherit a base chain's trustlessness whilst scaling throughput. Trusted execution environments (TEEs) such as Intel SGX offer a hardware-based cousin — confidential, attested execution — but depend on trusting the chip vendor, illustrating the spectrum between institutional trust and fully verifiable computation.
+
+  ## Current Landscape
+
+  - Verification is shifting from re-execution to succinct validity proofs: zero-knowledge rollups execute transactions off-chain, then post only a summary and a ZK-SNARK/ZK-STARK validity proof to an on-chain verifier contract, so an L2 batch inherits Ethereum's trustlessness without every node re-running it (Ethereum.org ZK-rollups docs, updated 2026).
+  - Because a ZK-rollup finalises only when the L1 verifier contract accepts the validity proof, the base chain enforces state-update correctness and data availability — eliminating the risk of a malicious operator corrupting the rollup or stealing funds, in contrast to optimistic rollups' fraud-proof challenge windows.
+  - zk-Rollups are now characterised in the research literature (2025) as among the most advanced Layer-2 scaling approaches, combining high throughput with strong cryptographic security guarantees via off-chain execution plus on-chain proof verification.
+  - The "trustless" label remains a redistribution rather than an elimination of trust: oracles, admin/upgrade keys and multisigs, contract bugs, and honest-majority consensus assumptions each reintroduce trusted dependencies, and TEEs trade validator trust for chip-vendor trust.
+
+  **Sources**:
+  - https://ethereum.org/developers/docs/scaling/zk-rollups/
+  - https://hal.science/hal-05374674v1/file/Scaling_Blockchains_with_zk_Rollups__State_of_the_Art_and_Implementation.pdf

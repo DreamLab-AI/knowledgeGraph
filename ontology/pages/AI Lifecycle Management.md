@@ -91,11 +91,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -126,3 +126,15 @@ public:: true
   ## Current Landscape
 
   In practice, AI lifecycle management is implemented at the intersection of governance and engineering. [[MLOps]] platforms supply the mechanics — experiment tracking, model registries, CI/CD for models, monitoring, and rollback — while governance functions layer approval gates, bias and robustness evaluations, and documentation requirements on top. Enterprise adoption is being driven by audit and assurance demands: internal model-risk-management teams (extending practices from banking's SR 11-7 tradition), external conformity assessment under the EU AI Act, and certification against ISO/IEC 42001. The frontier challenges are lifecycle management for foundation models and generative systems — where the "training" stage is outsourced to a provider and downstream deployers inherit opaque risk — and for continuously learning or agentic systems, whose behaviour changes faster than periodic review cycles were designed to handle.
+
+  Recent framework milestones:
+
+  - **NIST AI 600-1** (Generative AI Profile of the AI RMF, released 26 July 2024) maps generative-AI-specific risks and actions onto the Govern/Map/Measure/Manage functions; in April 2026 NIST issued a concept note for a further AI RMF profile on trustworthy AI in critical infrastructure.
+  - **ISO/IEC 42005:2025** (AI system impact assessment, published May 2025) and **ISO/IEC 42006:2025** (requirements for certification bodies, July 2025) rounded out the ISO/IEC 42001 lifecycle-governance stack; UKAS granted the first accredited ISO/IEC 42001 certification capability (to BSI) in January 2026.
+  - **EU AI Act phasing**: GPAI provider obligations applied from 2 August 2025, with AI Office enforcement powers from 2 August 2026 — the date the Act's high-risk framework, including post-market monitoring and serious-incident reporting duties, also becomes broadly applicable.
+
+  **Sources**:
+  - https://www.nist.gov/itl/ai-risk-management-framework
+  - https://airc.nist.gov/airmf-resources/crosswalks/
+  - https://www.eccouncil.org/cybersecurity-exchange/responsible-ai-governance/eu-ai-act-nist-ai-rmf-and-iso-iec-42001-a-plain-english-comparison/
+  - https://www.ukas.com/resources/latest-news/ukas-grants-first-aims-accreditation/

@@ -93,11 +93,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -127,4 +127,13 @@ public:: true
 
   ## Current Landscape
 
-  Three.js dominates browser 3D by adoption: over 100k GitHub stars, use in countless award-winning WebGL sites, scientific viewers, digital twins and NeRF/Gaussian-splat viewers. The strategic shift is the migration from WebGL 2 to WebGPU: `WebGPURenderer` and the node-based TSL material system reached production quality through 2024-2025, bringing compute shaders and modern GPU pipelines to the same scene-graph API. Performance work centres on instancing, batched meshes and reducing draw-call overhead, keeping complex scenes at 60-90 FPS even on mobile and standalone XR hardware.
+  Three.js dominates browser 3D by adoption: over 100k GitHub stars, use in countless award-winning WebGL sites, scientific viewers, digital twins and NeRF/Gaussian-splat viewers. The strategic shift is the migration from WebGL 2 to WebGPU, which crossed the production threshold in 2025-26:
+
+  - **WebGPURenderer went zero-config production-ready in r171 (September 2025)**: `import * as THREE from 'three/webgpu'` gives WebGPU rendering with automatic fallback to a built-in WebGL 2 backend — no bundler tweaks, polyfills, or `navigator.gpu` checks.
+  - **Browser support is now universal**: Apple shipped WebGPU in Safari 26 (September 2025) across macOS, iOS, iPadOS and visionOS — the last major-browser holdout — joining Chrome/Edge (v113+, 2023) and Firefox (v141+); the WebGL 2 fallback still covers the residual minority.
+  - **Recent releases**: r180 (September 2025) added HDR support to WebGPURenderer and removed the deprecated RGBMLoader; r182 (December 2025) is a recent stable; r184 (March 2026) eliminated per-frame allocations to steady frame rates on complex scenes.
+  - **TSL is the renderer-agnostic material path**: node materials transpile to WGSL on the WebGPU backend and GLSL on the WebGL 2 fallback, but classic `ShaderMaterial`/`RawShaderMaterial` and `EffectComposer` passes must be ported to the node/TSL post-processing stack. Compute shaders now enable million-unit particle systems and GPU collision on the same scene graph.
+
+  **Sources**:
+  - https://threejs.org/manual/en/webgpurenderer.html
+  - https://www.utsubo.com/blog/threejs-2026-what-changed

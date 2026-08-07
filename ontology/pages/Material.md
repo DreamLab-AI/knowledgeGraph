@@ -73,11 +73,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -108,3 +108,14 @@ public:: true
   ## Technical Details
 
   In physically based rendering, most materials are built on a small number of standardised models — commonly a metallic-roughness or specular-glossiness parameterisation of a microfacet BRDF — chosen so that surfaces behave plausibly under any lighting. Parameters may be constants or driven by texture maps sampled through UV coordinates, and modern authoring exposes them as node graphs where operations combine and layer inputs before feeding the shading model. At render time the pipeline binds the material's shader, uploads its parameters and textures, and evaluates the BRDF per fragment, optionally combining it with the scene's lighting and global-illumination solution to produce the final shaded result.
+
+  ## Current Landscape
+
+  - **OpenPBR 1.0 (June 2024)**: the Academy Software Foundation released OpenPBR Surface, a new open standard "über-shader" surface model developed by Autodesk and Adobe, as a subproject of MaterialX — intended as the single successor to both Autodesk Standard Surface and Adobe Standard Material.
+  - **Convergence of standard materials**: because both Autodesk and Adobe committed to focus their efforts on OpenPBR going forward, the historically fragmented "standard surface" landscape is consolidating onto one physically-based parameterisation.
+  - **Ships inside MaterialX**: OpenPBR's reference implementation is written in MaterialX, so any tool in the MaterialX and OpenUSD ecosystem automatically supports OpenPBR with no bespoke implementation work.
+  - **Interchange, not the material itself**: this reinforces the conceptual point that a material is renderer-agnostic — MaterialX/OpenPBR are ways to serialise and exchange a material's node graph across tools and renderers, distinct from the general notion of a material.
+
+  **Sources**:
+  - https://www.aswf.io/blog/academy-software-foundation-releases-openpbr-1-0/
+  - https://github.com/AcademySoftwareFoundation/OpenPBR

@@ -69,11 +69,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -102,4 +102,16 @@ public:: true
 
   ## Current Landscape
 
-  Frontier laboratories — Anthropic, OpenAI, Google DeepMind — maintain dedicated alignment teams, publish safety frameworks tying deployment decisions to capability evaluations, and fund external work; independent organisations (Redwood Research, MIRI, Apollo Research) and the UK AI Security Institute add evaluation and theory capacity. Notable 2023–2025 results include sparse-autoencoder feature dictionaries scaling interpretability to production models, empirical demonstrations of alignment faking and in-context scheming in frontier models, and weak-to-strong generalisation as a testbed for oversight. The field remains talent-constrained relative to capabilities research, and its open problems — verifying honesty, detecting deceptive alignment before deployment, and specifying values robustly — are widely regarded as unsolved.
+  Frontier laboratories — Anthropic, OpenAI, Google DeepMind — maintain dedicated alignment teams, publish safety frameworks tying deployment decisions to capability evaluations, and fund external work; independent organisations (Redwood Research, MIRI, Apollo Research) and the UK AI Security Institute add evaluation and theory capacity.
+
+  - **UK AISI's Alignment Project**: launched in 2025 as a global fund, it grew from an initial £15m+ to £27m and welcomed its first cohort of 60 grantees, making the UK a significant public funder of alignment research; AISI's own agenda now targets ensuring the *honesty* of systems as they scale past AGI toward superintelligence.
+  - **Frameworks tied to capability thresholds**: Anthropic ships Claude models under ASL-3 mitigations (Constitutional Classifiers plus safety fine-tuning) per its Responsible Scaling Policy (updated May 2025); OpenAI runs its Preparedness Framework (updated April 2025) with a board-level Safety & Security Committee after the Superalignment team dissolved; Google DeepMind updated its Frontier Safety Framework in September 2025, adding a harmful-manipulation risk domain.
+  - **Interpretability going operational**: sparse-autoencoder feature dictionaries have crossed from research into deployed tooling; Dario Amodei's 2025 essay "The Urgency of Interpretability" targets reliable problem-detection tools by 2027.
+  - **Empirical misalignment demonstrations (2024–2025)**: alignment faking and in-context scheming in frontier models, plus weak-to-strong generalisation as an oversight testbed, are now standard evidence in safety-case sketches.
+  - **Governance context**: the EU AI Act's general-purpose AI obligations applied from 2 August 2025, and a network of AI Safety/Security Institutes (UK, US, EU, Korea, Japan, Canada, Singapore) now coordinates pre-deployment evaluations. The field remains talent-constrained, and verifying honesty and detecting deceptive alignment before deployment are still regarded as unsolved.
+
+  **Sources**:
+  - https://www.aisi.gov.uk/blog
+  - https://www.aisi.gov.uk/research-agenda
+  - https://www.anthropic.com/responsible-scaling-policy/roadmap
+  - https://www.aisi.gov.uk/frontier-ai-trends-report

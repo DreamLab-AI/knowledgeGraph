@@ -101,11 +101,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -134,3 +134,14 @@ public:: true
   ## Current Landscape
 
   Methodologically, CRISP-DM (business understanding → data understanding → preparation → modelling → evaluation → deployment) remains the most widely used process model, effectively the ancestor of modern [[Data Science]] workflows and MLOps pipelines. Tooling has shifted from dedicated suites (SAS Enterprise Miner, RapidMiner, Weka, KNIME) towards Python and SQL ecosystems — pandas, scikit-learn, Spark MLlib — running against cloud warehouses. Applications remain pervasive: fraud and intrusion detection, customer segmentation and churn, recommendation, bioinformatics motif discovery, and scientific literature mining. The field's hard problems are increasingly governance problems: privacy-preserving mining (differential privacy, federated analytics), fairness of discovered patterns, and the regulatory treatment of mined personal data under regimes such as UK/EU GDPR.
+
+  Recent developments (2025-2026):
+
+  - **Federated analytics goes mainstream**: driven by GDPR and HIPAA restrictions on centralising sensitive data, federated learning/analytics — aggregating patterns from distributed models without moving raw records — is now a de facto framework for mining across institutional silos, the theme of the 2025 FedKDD workshop at KDD.
+  - **Differential privacy in production**: once confined to research, differential privacy is now deployed at scale by Apple, Google, Microsoft and the US Census Bureau, and is increasingly referenced in regulatory guidance including NIST's 2025 recommendations, making DP-SGD and noise-added statistical summaries standard tools for privacy-preserving mining.
+  - **Hybrid PET stacks**: combining differential privacy with secure multi-party computation and homomorphic encryption within federated pipelines is an active 2025 research direction, allowing mining over encrypted, distributed data without a central trusted curator.
+  - **Regulatory framing**: the field's centre of gravity has shifted from algorithmic novelty toward compliance — lineage, consent, and fairness of discovered patterns — under the overlapping GDPR and EU AI Act regimes.
+
+  **Sources**:
+  - https://arxiv.org/html/2509.03294v3
+  - https://www.cs.emory.edu/~jyang71/files/fedkdd2025.pdf

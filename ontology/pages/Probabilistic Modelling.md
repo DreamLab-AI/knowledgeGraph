@@ -81,11 +81,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -117,3 +117,14 @@ public:: true
   Modern probabilistic modelling is dominated by probabilistic programming languages—Stan, PyMC, NumPyro, Turing.jl, and Pyro—which let a modeller write the generative story of the data as code and delegate inference to general-purpose engines (Hamiltonian Monte Carlo, the No-U-Turn Sampler, stochastic variational inference). This separation of model from inference has widened access considerably: epidemiologists, econometricians, and engineers routinely fit hierarchical models that would have required bespoke derivations two decades ago.
 
   Within machine learning, probabilistic modelling supplies the formal backbone of generative methods: variational autoencoders, diffusion models, and Gaussian process regression are all probabilistic models trained by (approximately) maximising likelihoods or evidence bounds. The practice also disciplines model criticism—posterior predictive checks, calibration curves, and information criteria test whether a model's stated uncertainty matches reality. The persistent challenges are computational cost at scale, prior sensitivity, and communicating distributional outputs to audiences accustomed to single numbers.
+
+  ## Current Landscape
+
+  - **JAX-backed inference is the performance frontier**: NumPyro (JAX) and BlackJAX provide fast NUTS/HMC and are now callable from within PyMC (`pm.sample_numpyro_nuts`, `pm.sample_blackjax_nuts`), because PyMC decouples model specification from the inference engine — both only require a JAX log-density.
+  - **PyMC v5 on PyTensor**: the current PyMC generation compiles models through PyTensor to C, JAX or Numba backends (CPU/GPU/TPU), and 2025 community tutorials position it as the most accessible Python entry point, with JAX integration closing much of the historic speed gap to Stan and NumPyro.
+  - **Ecosystem roles**: Stan (Hamiltonian Monte Carlo via cmdstan/rstan/pystan) remains the academic reference; NumPyro leads on raw compute; Pyro (PyTorch), TensorFlow Probability, and Turing.jl round out the mainstream PPL landscape.
+  - **Deep-generative overlap**: probabilistic programming increasingly interoperates with deep learning, underpinning variational autoencoders and score-based/diffusion models as approximate-inference problems rather than a separate discipline.
+
+  **Sources**:
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC10495961/
+  - https://community.amstat.org/discussion/12-aug-2025-webinar-a-tutorial-for-getting-started-with-pymc-v5-probabilistic-bayesian-python

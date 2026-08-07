@@ -61,11 +61,11 @@ public:: true
       }
     ]
   },
-  "quality": 0.7,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-08-06T00:00:00Z",
-    "inferenceRule": "SwarmRepair"
+    "generatedAt": "2026-08-07T00:00:00Z",
+    "inferenceRule": "ResearchAugment"
   }
 }
 ```
@@ -95,3 +95,15 @@ public:: true
   ## Technical Details
 
   A practical SA implementation specifies four components: a solution representation, a neighbourhood move operator (for the travelling salesman problem, typically 2-opt edge swaps), a cooling schedule with an initial temperature calibrated so that 60–90% of early moves are accepted, and a termination criterion (final temperature, iteration budget or acceptance stagnation). Theoretical results by Geman and Geman show convergence to the global optimum under logarithmic cooling, but such schedules are impractically slow; engineering practice trades guarantees for speed, often adding restarts or reheating when the search stagnates. SA remains a strong baseline in VLSI placement and routing, timetabling, protein-structure search and logistics, and is the classical reference point for quantum annealing hardware, which exploits quantum tunnelling rather than thermal fluctuation to traverse the same kinds of energy landscapes.
+
+  ## Current Landscape
+
+  - **Still the benchmark to beat**: 2024-2025 quantum and physics-inspired optimisation studies continue to use classical simulated annealing (e.g. the `dwave-neal` implementation) as the reference baseline against D-Wave quantum annealers on Max-Cut and QUBO/Ising problems.
+  - **Hardware annealers vs classical SA**: a 2025 benchmark of Fujitsu's Digital Annealer across 2,125 Max-Cut instances (up to ~53,000 variables) found dedicated annealing hardware competitive with, but not decisively beating, the best classical heuristics.
+  - **Physics-inspired successors**: a 2024 Nature *Communications Physics* study reported ballistic simulated bifurcation achieving nearly a 50-fold reduction in time-to-solution versus a D-Wave Advantage system on chimera-graph Max-Cut, positioning such "quantum-inspired" solvers as the natural baseline.
+  - **Mixed quantum-annealing evidence**: on 127-qubit Ising instances (2024), D-Wave quantum annealing outperformed short-depth QAOA on gate-model hardware, yet classical SA still sampled optimal solutions across all tested quadratic problems — reinforcing SA's enduring role as a robust general-purpose optimiser.
+
+  **Sources**:
+  - https://arxiv.org/html/2507.22117v1
+  - https://www.nature.com/articles/s42005-024-01705-7
+  - https://www.nature.com/articles/s41534-024-00825-w
