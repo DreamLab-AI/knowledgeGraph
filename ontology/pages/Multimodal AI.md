@@ -43,6 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Multimodal AI",
   "definition": "Multimodal AI refers to machine learning systems that process and integrate information from multiple data modalities — including text, images, audio, and video — simultaneously to produce contextually richer outputs than single-modality systems. These architectures employ specialised neural network fusion techniques to replicate the human brain's capacity to synthesise diverse sensory inputs, enabling applications in healthcare diagnostics, human-computer interaction, and cross-modal content generation.",
+  "vc:plainGloss": "AI that can take in and combine more than one kind of input at once (text, images, sound, video) rather than just words. It lets you, for instance, show it a photo and ask a question about it in the same breath.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
@@ -112,6 +113,9 @@ public:: true
 
 - ### Definition
   - [Generated from Gartner emerging tech analysis]
+
+- ### In Plain Terms
+  - AI that can take in and combine more than one kind of input at once (text, images, sound, video) rather than just words. It lets you, for instance, show it a photo and ask a question about it in the same breath.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:MultimodalAI

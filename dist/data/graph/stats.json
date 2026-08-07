@@ -11,10 +11,10 @@
     "description": "Mostly AI-generated synthetic content, produced under human direction, by design \u2014 this corpus exists to exercise and demonstrate the VisionFlow pipeline and VisionClaw engine on a medium-scale ontology (~8.1k classes, ~100k relations). Provenance (did:nostr, generatedAtTime, URNs) attests traceable generation under human direction, not human authorship."
   },
   "datasetDate": "2026-08-07",
-  "pages": 8120,
-  "classes": 8124,
+  "pages": 8134,
+  "classes": 8138,
   "individuals": 0,
-  "nodes": 8124,
+  "nodes": 8138,
   "domains": 6,
   "categories": 34,
   "uncategorised": 66,
@@ -25,30 +25,30 @@
     "crossDomain": 156
   },
   "edges": {
-    "declared": 113434,
-    "declaredBackbone": 9735,
-    "declaredRelations": 103699,
-    "resolvable": 101250,
-    "backbone": 9607,
-    "relations": 91643
+    "declared": 113506,
+    "declaredBackbone": 9749,
+    "declaredRelations": 103757,
+    "resolvable": 101321,
+    "backbone": 9621,
+    "relations": 91700
   },
   "scopes": {
     "full": {
-      "nodes": 8124,
-      "backbone": 9607,
-      "relations": 91643,
-      "shipped": 101250,
+      "nodes": 8138,
+      "backbone": 9621,
+      "relations": 91700,
+      "shipped": 101321,
       "relationsCapped": 0,
-      "bytes": 1378337
+      "bytes": 1380011
     },
     "domain-artificial-intelligence": {
       "nodes": 1500,
-      "backbone": 1726,
-      "relations": 10390,
-      "shipped": 12116,
-      "relationsCapped": 7305,
-      "bytes": 222277,
-      "nodesTruncated": 476
+      "backbone": 1724,
+      "relations": 10387,
+      "shipped": 12111,
+      "relationsCapped": 7309,
+      "bytes": 222259,
+      "nodesTruncated": 483
     },
     "domain-blockchain": {
       "nodes": 1455,
@@ -78,22 +78,22 @@
       "nodesTruncated": 0
     },
     "domain-distributed-collaboration": {
-      "nodes": 144,
+      "nodes": 145,
       "backbone": 137,
       "relations": 425,
       "shipped": 562,
       "relationsCapped": 19,
-      "bytes": 18836,
+      "bytes": 18958,
       "nodesTruncated": 0
     },
     "domain-infrastructure": {
       "nodes": 1500,
       "backbone": 1286,
-      "relations": 10418,
-      "shipped": 11704,
-      "relationsCapped": 5243,
-      "bytes": 217284,
-      "nodesTruncated": 1217
+      "relations": 10413,
+      "shipped": 11699,
+      "relationsCapped": 5245,
+      "bytes": 217216,
+      "nodesTruncated": 1223
     }
   }
 }

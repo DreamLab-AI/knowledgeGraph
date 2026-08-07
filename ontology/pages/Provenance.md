@@ -55,6 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Provenance",
   "definition": "The documented record of the origin, history and chain of custody of data or assets, used to establish authenticity, trust and accountability.",
+  "vc:plainGloss": "A traceable record of where something came from and everyone who has handled it since — like the paper trail that proves a painting is genuine. For data, it lets you check the source is trustworthy and see exactly how it reached you.",
   "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -267,6 +268,9 @@ public:: true
 
 - ### Definition
   - The documented record of the origin, history and chain of custody of data or assets, used to establish authenticity, trust and accountability.
+
+- ### In Plain Terms
+  - A traceable record of where something came from and everyone who has handled it since — like the paper trail that proves a painting is genuine. For data, it lets you check the source is trustworthy and see exactly how it reached you.
 
 - ### Semantic Classification
   - owl-class:: general:Provenance

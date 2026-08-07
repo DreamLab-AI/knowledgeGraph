@@ -12,6 +12,7 @@ public:: true
   "@type":"Class",
   "label":"Data Drift",
   "definition":"Data drift is the change over time in the statistical distribution of the input data fed to a deployed machine learning model relative to the distribution it was trained on. Unlike concept drift, which alters the relationship between inputs and targets, data drift (also called covariate or feature drift) shifts the marginal distribution of the features themselves and can silently degrade model accuracy even when the learned mapping remains valid. Detecting and responding to data drift is a central concern of model monitoring and MLOps, typically driving alerts, scheduled retraining, or fallback policies.",
+  "vc:plainGloss":"When the real-world data an AI meets in daily use slowly drifts away from the examples it was trained on — a demand forecaster trained before a market shift, say. Nothing about the model changes, but its answers quietly get less accurate, which is why its incoming data is watched over time.",
   "domain":"artificial-intelligence",
   "maturity":"established",
   "subClassOf":[{"@id":"urn:ngm:class:concept-drift","label":"Concept Drift"}],
@@ -61,6 +62,8 @@ public:: true
 	- [[Data Drift]] is the change over time in the statistical distribution of the inputs a deployed model receives, relative to its training data.
 	- It is a specific form of [[Concept Drift]] affecting the marginal [[Feature Distribution]] rather than the input-output relationship.
 	- It is a primary signal tracked by [[Model Monitoring]] and a core concern of [[MLOps]].
+- ### In Plain Terms
+	- When the real-world data an AI meets in daily use slowly drifts away from the examples it was trained on — a demand forecaster trained before a market shift, say. Nothing about the model changes, but its answers quietly get less accurate, which is why its incoming data is watched over time.
 - ### Overview
 	- A model learns patterns from a snapshot of the world; once deployed, the world keeps moving. When the live feature distribution diverges from the training distribution, the model is asked to extrapolate beyond its support, and predictions become unreliable.
 	- Data drift is distinguished from concept drift: data drift moves the distribution of X while leaving P(Y|X) intact, whereas concept drift moves P(Y|X) itself. In practice both can co-occur and both degrade live performance.

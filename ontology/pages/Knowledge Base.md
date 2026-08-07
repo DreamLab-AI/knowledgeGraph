@@ -28,6 +28,7 @@ public:: true
   "@type": "Class",
   "label": "Knowledge Base",
   "definition": "A knowledge base is a structured, machine-readable repository of domain-specific information, factual assertions, and inference rules that software systems—including expert systems, question-answering engines, and AI agents—can query, reason over, and update. Knowledge bases range from relational tables and document stores to formal ontologies expressed in OWL/RDF and property graphs, each offering different trade-offs between expressiveness, scalability, and reasoning complexity. They function as the long-term declarative memory layer in AI architectures, enabling systems to retrieve, validate, and integrate facts without embedding all knowledge in model parameters. In contemporary retrieval-augmented generation pipelines a knowledge base serves as the authoritative external store from which a retriever selects grounding context for a large language model.",
+  "vc:plainGloss": "An organised, machine-readable store of facts and rules that an AI system can look things up in and reason over. It acts as the AI's reference library — the trusted source it draws on to answer questions, rather than relying only on what is baked into the model.",
   "domain": "artificial-intelligence",
   "maturity": "mature",
   "subClassOf": [
@@ -167,6 +168,9 @@ public:: true
 
 - ### Definition
   - A **knowledge base** is a structured, machine-readable repository of domain-specific information, factual assertions, and inference rules that software systems—including [[Expert Systems]], question-answering engines, and [[AI Agents]]—can query, reason over, and update. Knowledge bases range from relational tables and document stores to formal [[Ontology|ontologies]] expressed in [[OWL]] / [[RDF]] and property graphs, each offering different trade-offs between expressiveness, scalability, and reasoning complexity. They serve as the long-term declarative memory layer in AI architectures, enabling systems to retrieve and integrate facts without embedding all world knowledge in model parameters. In contemporary [[Retrieval-Augmented Generation]] pipelines a knowledge base is the authoritative external store from which a retriever fetches grounding context for a [[Large Language Model]].
+
+- ### In Plain Terms
+  - An organised, machine-readable store of facts and rules that an AI system can look things up in and reason over. It acts as the AI's reference library — the trusted source it draws on to answer questions, rather than relying only on what is baked into the model.
 
 - ### Overview
   - The concept of a knowledge base emerged from the field of [[Knowledge Representation]] in the 1970s, when researchers building early [[Expert Systems]] recognised the need to separate domain facts and rules from the reasoning mechanisms that operated over them. This canonical separation—knowledge base plus [[Inference Engine]]—remains architecturally important today.

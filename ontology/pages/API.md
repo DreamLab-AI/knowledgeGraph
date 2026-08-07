@@ -55,6 +55,7 @@ public:: true
   "@type": "Class",
   "label": "API",
   "definition": "An Application Programming Interface: a defined set of operations, inputs, and outputs through which software components or services communicate without exposing their internal implementation, enabling modular composition and system integration.",
+  "vc:plainGloss": "A standard socket that lets two pieces of software talk to each other: one program can ask another to do something or hand over data through an agreed set of requests, without needing to know how the other works inside.",
   "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.72,
@@ -219,6 +220,9 @@ public:: true
 
 - ### Definition
   - An Application Programming Interface, a defined set of operations, inputs and outputs through which software components or services communicate without exposing their internal implementation.
+
+- ### In Plain Terms
+  - A standard socket that lets two pieces of software talk to each other: one program can ask another to do something or hand over data through an agreed set of requests, without needing to know how the other works inside.
 
 - ### Semantic Classification
   - owl-class:: general:API

@@ -21,6 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Planning Module",
   "definition": "A planning module is a software component within an autonomous system or AI agent responsible for generating sequences of actions to achieve specified goals, given a model of the current world state, available actions, and constraints. It translates high-level objectives into concrete executable task sequences, integrating deliberative reasoning, motion planning, and contingency handling. Planning modules appear in robotic architectures, autonomous vehicles, and large-language-model-based agent systems as a dedicated decision-making subsystem.",
+  "vc:plainGloss": "The part of an AI agent that works out the plan: it takes your goal and breaks it into an ordered list of steps the agent will then carry out. It is the think-before-you-act stage that decides what to do and in what order.",
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:ai-system-component", "label": "AI System Component"}],
@@ -45,6 +46,9 @@ public:: true
 
 - ### Definition
   - A planning module is an [[AI System Component]] that generates ordered action sequences to achieve goals within an [[Autonomous System]] or AI agent. It receives a representation of world state and a set of objectives, then applies search, constraint satisfaction, or learned policies to produce a plan. In robotic systems the planning module interfaces with [[Motion Planning]] and perception subsystems; in [[Agentic Workflow]] systems it uses [[Automated Reasoning]] and increasingly [[Large Language Models]] to decompose tasks into sub-goals and select tools.
+
+- ### In Plain Terms
+  - The part of an AI agent that works out the plan: it takes your goal and breaks it into an ordered list of steps the agent will then carry out. It is the think-before-you-act stage that decides what to do and in what order.
 
 - ### Relationships
   - Planning modules use [[Automated Reasoning]] techniques — including classical planners (STRIPS, PDDL), probabilistic planners, and reinforcement learning policies — to generate action sequences. [[Motion Planning]] is a specialised sub-problem handled within or alongside the planning module for physical systems. [[Large Language Models]] are increasingly used as planning module implementations in software agents, leveraging chain-of-thought decomposition. The planning module enables [[Autonomous Behavior]] and feeds execution to actuators or API calls in [[Agentic Workflow]] architectures.

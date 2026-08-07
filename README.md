@@ -2,7 +2,7 @@
 
 ![Narrative Goldmine](explorer/modern/public/images/heroes/ngm-hero.webp)
 
-This repository holds an 8,124-class OWL ontology whose source of truth is 8,124
+This repository holds an 8,138-class OWL ontology whose source of truth is 8,138
 ordinary Logseq markdown pages, the Python pipeline that compiles them into RDF and
 a binary graph format, and the WebAssembly explorer that renders the result. It is a
 self-contained release: corpus, build, viewer and method in one tree, published at
@@ -30,23 +30,23 @@ the quickstart below.
 
 | | |
 |---|---|
-| Source pages | 8,124 markdown files in `ontology/pages/` (132 MB) |
-| OWL classes | 8,124 (0 individuals) |
-| RDF triples | 262,029 in Turtle (12.4 MB) |
-| Declared edges | 113,434 (9,735 `subClassOf` + 103,699 object-property) |
-| Resolvable graph edges | 101,250 after self-loop, duplicate and unresolved-target removal |
+| Source pages | 8,138 markdown files in `ontology/pages/` (137 MB) |
+| OWL classes | 8,138 (0 individuals) |
+| RDF triples | 262,217 in Turtle (12.4 MB) |
+| Declared edges | 113,506 (9,749 `subClassOf` + 103,757 object-property) |
+| Resolvable graph edges | 101,321 after self-loop, duplicate and unresolved-target removal |
 | Domains / categories | 6 / 34 |
 | Multiple inheritance | 1,403 classes with more than one parent; 479 spanning categories, 156 spanning domains |
 | Validation | 0 errors, 0 warnings, 1,404 info |
 | Build time | ~18 s, single-threaded, `rdflib` only |
 
 Classes per domain, before the 1,500-node tier cap (`nodes` + `nodesTruncated`
-for each `domain-*` scope in `stats.json`): Infrastructure 2,717 · Artificial
-Intelligence 1,976 · Blockchain 1,455 · Spatial Computing 1,231 · Robotics 601 ·
-Distributed Collaboration 144. Only the first two exceed the cap.
+for each `domain-*` scope in `stats.json`): Infrastructure 2,723 · Artificial
+Intelligence 1,983 · Blockchain 1,455 · Spatial Computing 1,231 · Robotics 601 ·
+Distributed Collaboration 145. Only the first two exceed the cap.
 
 **The taxonomy is a lattice, not a tree, and that is deliberate.** 1,403 of the
-8,124 classes declare more than one `subClassOf`; 479 of them thereby sit in more
+8,138 classes declare more than one `subClassOf`; 479 of them thereby sit in more
 than one of the 34 categories and 156 in more than one of the 6 domains. A Star
 Algorithm is under Search Algorithm, Informed Search and Graph Search at once.
 Multiple inheritance is legal in OWL 2 EL and here it carries meaning: it is how a
@@ -130,10 +130,10 @@ Three design consequences worth stating plainly:
   reference. Conflating them would fabricate taxonomy.
 - **Parse the JSON, never grep it.** 889 pages emit their Page block as compact
   single-line JSON. A whitespace-sensitive `grep '"vc:public": true'` matches only
-  7,249 of 8,124 files — an 875-page silent drop, and the reason the class-count
+  7,263 of 8,138 files — an 875-page silent drop, and the reason the class-count
   contract gate is in CI (`.github/workflows/build.yml`, gate 3: `stats.json`
   `classes` and `ontology.json` `class[]` length must both equal the pinned
-  `EXPECTED_CLASSES` or the build fails; the pin reads `8124` and moves only
+  `EXPECTED_CLASSES` or the build fails; the pin reads `8138` and moves only
   alongside the corpus).
 
 The context document that the class blocks dereference is `static/ns/v2.jsonld`
@@ -147,7 +147,7 @@ declares the twelve canonical relations: `hasPart`, `partOf`, `requires`, `enabl
 ```mermaid
 flowchart LR
     subgraph source["Source"]
-        md["ontology/pages/<br/>8124 Logseq .md<br/>+ embedded JSON-LD"]
+        md["ontology/pages/<br/>8138 Logseq .md<br/>+ embedded JSON-LD"]
         ctx["static/ns/v2.jsonld<br/>JSON-LD 1.1 context"]
     end
 
@@ -188,7 +188,7 @@ flowchart LR
 
 | Path | What it is |
 |---|---|
-| `ontology/pages/` | The corpus. 8,124 Logseq markdown pages, each with a Page block, a Class block and often a link-resolutions annotation. |
+| `ontology/pages/` | The corpus. 8,138 Logseq markdown pages, each with a Page block, a Class block and often a link-resolutions annotation. |
 | `pipeline/` | The build. 9 modules plus a one-line `__init__.py`, 2,472 lines in total, one dependency (`rdflib>=7.0.0`). |
 | `pipeline/tests/` | 9 pytest cases, including a byte-exact 183-byte NGG1 golden fixture parsed by an independently written struct reader. |
 | `static/ns/v2.jsonld` | The published JSON-LD 1.1 context the class blocks reference. |
@@ -217,7 +217,7 @@ Expected output, from a clean run:
 
 ```
 [1/7] Parsing ontology/pages...
-       8138 pages (8138 OntologyClass, 8124 public)
+       8152 pages (8152 OntologyClass, 8138 public)
 [2/7] Validating...
        0 errors, 0 warnings
 [3/7] Generating Turtle...
@@ -243,7 +243,7 @@ cd ../modern && npm install && npm install ../rust-wasm/pkg && npm run build
 
 ## What you get, and how to consume it
 
-**`dist/data/ontology.ttl`**: 262,029 triples, 12.4 MB. Load it in anything that
+**`dist/data/ontology.ttl`**: 262,217 triples, 12.4 MB. Load it in anything that
 speaks RDF. IRIs are `https://narrativegoldmine.com/class/<slug>`, rewritten from the
 `urn:ngm:class:<slug>` form in the source. The ontology targets **OWL 2 EL**:
 `owl:inverseOf` and `owl:SymmetricProperty` are deliberately omitted because neither
@@ -268,7 +268,7 @@ WebVOWL-lineage viewers.
 can fetch a tier and hand it straight to WebAssembly with no JSON parse. 32-byte
 header, 24-byte node records, CSR adjacency, `u8` edge types, and a UTF-8 string table
 where `strings[n*2]` is node *n*'s label and `strings[n*2+1]` its IRI. `full.bin` is
-8,124 nodes and 101,250 edges in 1,378,337 bytes. Six domain tiers cap at 1,500 nodes
+8,138 nodes and 101,321 edges in 1,380,011 bytes. Six domain tiers cap at 1,500 nodes
 and 8 object-property edges per source node (the `subClassOf` backbone is never
 capped, and node degree is always the full-graph value so scale and label ranking stay
 correct). The format is specified in `explorer/FORMAT-NGG1.md` §1–§7.
@@ -282,8 +282,8 @@ the parent labels that put it there. Indices match `overview.json`, whose 40 nod
 category-level summary graph. The bridge edges also feed the force layout, so the
 baked positions match the topology the explorer draws.
 
-**`dist/api/`**: 8,124 class JSON files plus a `_domain-index.json`, a flat search
-index (6.8 MB), and a markdown mirror of each page body. 8,070 of 8,124 pages have a
+**`dist/api/`**: 8,138 class JSON files plus a `_domain-index.json`, a flat search
+index (6.8 MB), and a markdown mirror of each page body. 8,084 of 8,138 pages have a
 body to mirror.
 
 **`dist/data/graph/stats.json`** carries every headline number above, machine-readable,
@@ -361,7 +361,7 @@ left.
 - **1,404 validation notices, all `info`, all `MULTI_PARENT`.** 0 errors, 0 warnings.
   The notice is a statement about the shape of the taxonomy, not a fault; see the
   lattice note above.
-- **66 of 8,124 classes are uncategorised.** Category membership is now resolved by a
+- **66 of 8,138 classes are uncategorised.** Category membership is now resolved by a
   breadth-first walk of `subClassOf`/`instanceOf` ancestry, nearest category ancestor
   winning, parents visited in declared order so the NGG1 tiers stay byte-identical
   across runs (`pipeline/emit_graph_tiers.py:480`). The deepest real path needs 7
@@ -372,16 +372,16 @@ left.
   so a tier keeps only the nearest category and the other memberships of the 454
   cross-category classes are invisible to any consumer reading `.bin` alone. They are
   in `bridges.json`. This is a limitation of the frozen format, not of the data.
-- **Unresolved reference targets.** 113,434 declared edges resolve to 101,250; the
-  12,184-edge difference is self-loops, duplicates, and references to classes that do
+- **Unresolved reference targets.** 113,506 declared edges resolve to 101,321; the
+  12,185-edge difference is self-loops, duplicates, and references to classes that do
   not exist. Most of the missing targets are named exactly once in the whole corpus,
   and materialising a page for each singleton is deferred rather than done.
 - **789 classes emit `vc:qualityScore "0.0"`.** The context defines `qualityScore`;
   the parser reads `quality` first and falls back to `vc:qualityScore`, a key that
-  appears in 0 of the 8,124 pages. 742 of the 789 carry a bare `qualityScore` the
+  appears in 0 of the 8,138 pages. 742 of the 789 carry a bare `qualityScore` the
   parser never looks at; the other 47 carry no score at all. A further 1,259 carry
   both `quality` and `qualityScore`, and the two disagree on 1,013 of them.
-- **`stats.json` reports 8,120 pages against 8,124 classes.** Four pairs of files
+- **`stats.json` reports 8,134 pages against 8,138 classes.** Four pairs of files
   share a page IRI (`bitcoin`, `comfy-ui`, `ethereum`, `foundation-models`). The page
   count is deliberately deduplicated by IRI rather than reported as the class count
   under a "pages" label.
@@ -410,5 +410,5 @@ Class-level attribution resolves to four DIDs: `did:nostr:ontology-mesh` (3,541)
 `provenance.inferenceRule`: `GapMaterialisation`, `RelationEnrichment`,
 `R5DomainRootFallback`, `R1Explicit`, `ManualEnrichment` and others. Those rule names
 are self-describing about machine origin, which is the point. Coverage is partial:
-6,664 of 8,124 classes carry a `provenance.attributedTo`; the remaining 1,460 carry
+6,678 of 8,138 classes carry a `provenance.attributedTo`; the remaining 1,460 carry
 none. The record is an audit trail of generation, not a claim of authorship.

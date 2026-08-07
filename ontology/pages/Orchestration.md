@@ -38,6 +38,7 @@ public:: true
   "@type": "Class",
   "label": "Orchestration",
   "definition": "The automated coordination, scheduling, and lifecycle management of containerised workloads, microservices, and distributed agents across heterogeneous infrastructure. In the context of metaverse and telecollaboration systems, orchestration—exemplified by Kubernetes—ensures that compute-intensive rendering, AI inference, and real-time communication services scale elastically and recover automatically from failures.",
+  "vc:plainGloss": "The behind-the-scenes conductor that starts, coordinates, and keeps track of many moving parts (services, containers, or agents) so they run in the right order and recover on their own when something fails.",
   "domain": "infrastructure",
   "maturity": "emerging",
   "subClassOf": {
@@ -187,6 +188,9 @@ public:: true
 
 - ### Definition
   - The automated coordination, scheduling, and lifecycle management of containerised workloads, microservices, and distributed agents across heterogeneous infrastructure. In the context of metaverse and telecollaboration systems, orchestration—exemplified by Kubernetes—ensures that compute-intensive rendering, AI inference, and real-time communication services scale elastically and recover automatically from failures.
+
+- ### In Plain Terms
+  - The behind-the-scenes conductor that starts, coordinates, and keeps track of many moving parts (services, containers, or agents) so they run in the right order and recover on their own when something fails.
 - ### Semantic Classification
   - owl-class:: infrastructure:Orchestration
   - owl-role:: Concept
