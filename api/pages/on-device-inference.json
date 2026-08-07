@@ -120,6 +120,10 @@
       "label": "Hardware and Edge"
     },
     {
+      "slug": "local-model",
+      "label": "Local Model"
+    },
+    {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
     }

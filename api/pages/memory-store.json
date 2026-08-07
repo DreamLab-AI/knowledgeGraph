@@ -51,6 +51,10 @@
     {
       "slug": "context-engineering",
       "label": "Context Engineering"
+    },
+    {
+      "slug": "memory-bank",
+      "label": "Memory Bank"
     }
   ]
 }

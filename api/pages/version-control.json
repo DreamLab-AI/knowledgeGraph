@@ -171,6 +171,10 @@
       "label": "GitHub"
     },
     {
+      "slug": "rollback",
+      "label": "Rollback"
+    },
+    {
       "slug": "software-development-process",
       "label": "Software Development Process"
     }

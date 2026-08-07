@@ -18246,6 +18246,11 @@
       "qualityScore": 0.52
     },
     {
+      "slug": "agent-handoff",
+      "title": "Agent Handoff",
+      "qualityScore": 0.75
+    },
+    {
       "slug": "agent-identity",
       "title": "Agent Identity",
       "qualityScore": 0.88
@@ -18254,6 +18259,11 @@
       "slug": "agent-memory",
       "title": "Agent Memory",
       "qualityScore": 0.88
+    },
+    {
+      "slug": "agent-skill",
+      "title": "Agent Skill",
+      "qualityScore": 0.75
     },
     {
       "slug": "agent-based-modelling",
@@ -20766,6 +20776,11 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "memory-bank",
+      "title": "Memory Bank",
+      "qualityScore": 0.75
+    },
+    {
       "slug": "mesa-optimisation",
       "title": "Mesa-Optimisation",
       "qualityScore": 0.8
@@ -22226,6 +22241,11 @@
       "qualityScore": 0.52
     },
     {
+      "slug": "subagent",
+      "title": "Subagent",
+      "qualityScore": 0.75
+    },
+    {
       "slug": "supply-chain-optimisation",
       "title": "Supply Chain Optimisation",
       "qualityScore": 0.62
@@ -22414,6 +22434,11 @@
       "slug": "tiny-ml",
       "title": "TinyML",
       "qualityScore": 0.8
+    },
+    {
+      "slug": "token-cost",
+      "title": "Token Cost",
+      "qualityScore": 0.75
     },
     {
       "slug": "token-embedding",
@@ -24788,6 +24813,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "fallback",
+      "title": "Fallback",
+      "qualityScore": 0.75
+    },
+    {
       "slug": "fashion",
       "title": "Fashion",
       "qualityScore": 0.52
@@ -25716,6 +25746,11 @@
       "slug": "libertarian-political-economy-thesis",
       "title": "Libertarian Political Economy Thesis",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "lifecycle-hook",
+      "title": "Lifecycle Hook",
+      "qualityScore": 0.75
     },
     {
       "slug": "lifecycle-management",
@@ -27326,6 +27361,11 @@
       "slug": "robin-hanson-ai-sceptic-economist",
       "title": "Robin Hanson AI Sceptic Economist",
       "qualityScore": 0.35
+    },
+    {
+      "slug": "rollback",
+      "title": "Rollback",
+      "qualityScore": 0.75
     },
     {
       "slug": "root-cause-analysis",
@@ -29738,6 +29778,11 @@
       "slug": "llama-3",
       "title": "Llama 3",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "local-model",
+      "title": "Local Model",
+      "qualityScore": 0.75
     },
     {
       "slug": "long-range-dependency-modelling",
@@ -33484,6 +33529,11 @@
       "qualityScore": 0.6
     },
     {
+      "slug": "model-tier",
+      "title": "Model Tier",
+      "qualityScore": 0.75
+    },
+    {
       "slug": "model-versioning",
       "title": "Model Versioning",
       "qualityScore": 0.72
@@ -34701,6 +34751,11 @@
       "qualityScore": 0.74
     },
     {
+      "slug": "fan-out",
+      "title": "Fan-Out",
+      "qualityScore": 0.75
+    },
+    {
       "slug": "federation",
       "title": "Federation",
       "qualityScore": 0.72
@@ -35916,6 +35971,11 @@
       "slug": "groth-16",
       "title": "Groth16",
       "qualityScore": 0.6
+    },
+    {
+      "slug": "guardrail",
+      "title": "Guardrail",
+      "qualityScore": 0.75
     },
     {
       "slug": "hmac",
@@ -39152,6 +39212,11 @@
       "qualityScore": 0.7
     },
     {
+      "slug": "supervisor-worker-pattern",
+      "title": "Supervisor-Worker Pattern",
+      "qualityScore": 0.75
+    },
+    {
       "slug": "synchronous-collaboration",
       "title": "Synchronous Collaboration",
       "qualityScore": 0.55
@@ -39832,6 +39897,11 @@
       "slug": "frequentist-statistics",
       "title": "Frequentist Statistics",
       "qualityScore": 0.8
+    },
+    {
+      "slug": "golden-set",
+      "title": "Golden Set",
+      "qualityScore": 0.75
     },
     {
       "slug": "graph-data-model",

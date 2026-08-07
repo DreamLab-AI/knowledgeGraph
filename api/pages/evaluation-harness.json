@@ -95,6 +95,10 @@
       "label": "External AI Harness"
     },
     {
+      "slug": "golden-set",
+      "label": "Golden Set"
+    },
+    {
       "slug": "internal-ai-harness",
       "label": "Internal AI Harness"
     }

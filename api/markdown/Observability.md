@@ -51,6 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Observability",
   "definition": "Observability is the capability of a system that allows engineers to infer its internal state and behaviour solely from externally observable outputs — primarily logs, metrics, and distributed traces. Derived from control-systems theory, it answers whether the complete internal state can be reconstructed from a sequence of outputs. In modern software engineering, observability enables debugging, performance tuning, incident response, and proactive reliability assurance across complex distributed architectures where direct inspection is impractical.",
+  "vc:plainGloss": "Being able to tell what a running system is doing from the outside, using the signals it gives off (logs, measurements, and traces) without having to stop it and look inside. It is what lets you spot and diagnose problems in a live service.",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
@@ -248,6 +249,9 @@ public:: true
 
 - ### Definition
   - Observability is the capability of a system that allows engineers to infer its complete internal state solely from external outputs — principally [[Logging]], [[Metrics]], and [[Distributed Tracing]]. Rooted in control-systems theory (Kalman, 1960), it asks whether internal states are fully reconstructable from a sequence of observations. Applied to software, observability governs how well [[Distributed Systems]] can be understood, diagnosed, and improved without halting them, underpinning the discipline of [[Site Reliability Engineering]] and modern [[DevOps]] practice.
+
+- ### In Plain Terms
+  - Being able to tell what a running system is doing from the outside, using the signals it gives off (logs, measurements, and traces) without having to stop it and look inside. It is what lets you spot and diagnose problems in a live service.
 
 - ### Overview
   - Observability emerged as a first-class engineering concern with the rise of [[Microservices]] and cloud-native [[Distributed Systems]], where thousands of networked components interact in ways that are impossible to replicate in isolation.

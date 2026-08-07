@@ -353,6 +353,10 @@
       "label": "Agent Execution Sandboxes"
     },
     {
+      "slug": "agent-handoff",
+      "label": "Agent Handoff"
+    },
+    {
       "slug": "agent-identity",
       "label": "Agent Identity"
     },
@@ -371,6 +375,10 @@
     {
       "slug": "agent-runtime",
       "label": "Agent Runtime"
+    },
+    {
+      "slug": "agent-skill",
+      "label": "Agent Skill"
     },
     {
       "slug": "agent-to-agent-protocol",
@@ -459,6 +467,10 @@
     {
       "slug": "lang-graph",
       "label": "LangGraph"
+    },
+    {
+      "slug": "lifecycle-hook",
+      "label": "Lifecycle Hook"
     },
     {
       "slug": "multi-agent-coordination",

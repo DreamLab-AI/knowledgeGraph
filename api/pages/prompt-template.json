@@ -84,6 +84,10 @@
       "label": "Agent Frameworks"
     },
     {
+      "slug": "agent-skill",
+      "label": "Agent Skill"
+    },
+    {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
     },

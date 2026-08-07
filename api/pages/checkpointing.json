@@ -86,6 +86,10 @@
     {
       "slug": "multi-agent-orchestration-frameworks",
       "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "rollback",
+      "label": "Rollback"
     }
   ]
 }

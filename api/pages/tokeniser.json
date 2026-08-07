@@ -153,6 +153,10 @@
       "label": "Model Training"
     },
     {
+      "slug": "token-cost",
+      "label": "Token Cost"
+    },
+    {
       "slug": "translation",
       "label": "Translation"
     }

@@ -253,6 +253,10 @@
       "label": "Telecollaboration and Telepresence"
     },
     {
+      "slug": "token-cost",
+      "label": "Token Cost"
+    },
+    {
       "slug": "transmission-delay",
       "label": "Transmission Delay"
     },

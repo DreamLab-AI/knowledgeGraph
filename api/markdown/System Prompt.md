@@ -28,6 +28,7 @@ public:: true
   "@type": "Class",
   "label": "System Prompt",
   "definition": "A system prompt is a structured instruction block injected into the context window of a large language model at the start of an inference session, establishing operational context, persona, tool descriptions, safety constraints, and behavioural guidelines before any user turn is processed. Unlike user messages, system prompts are authored by operators rather than end users and govern the model's allowed behaviours, response style, and tool-use policy throughout the session. In agentic and multi-agent architectures, system prompts serve as the primary mechanism for role specialisation, capability scoping, safety guardrail enforcement, and task decomposition. The security boundary between the system prompt and user-controlled input is a central concern in prompt injection defence.",
+  "vc:plainGloss": "The standing set of instructions an AI is given before you ever start typing — its brief on who it is, how to behave, what it may and may not do, and which tools it can use. You usually never see it, but it quietly shapes every reply.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -161,6 +162,9 @@ public:: true
 
 - ### Definition
   - A **system prompt** is a structured instruction block injected into the [[Context Window]] of a [[Large Language Models]] at the start of an inference session, establishing the operational context, persona, tool schemas, safety constraints, and behavioural guidelines that shape every subsequent response. It occupies a privileged position in the conversational turn hierarchy — processed before [[User Message]] input — and is typically authored by the operator or developer rather than the end user. In [[Agentic AI]] architectures it is the primary vehicle for role assignment, capability scoping, and enforcement of [[AI Safety]] guardrails, making its design a central concern of [[Prompt Engineering]] practice.
+
+- ### In Plain Terms
+  - The standing set of instructions an AI is given before you ever start typing — its brief on who it is, how to behave, what it may and may not do, and which tools it can use. You usually never see it, but it quietly shapes every reply.
 
 - ### Overview
   - The system prompt emerged as a first-class API concept alongside the development of instruction-tuned [[Large Language Models]] such as GPT-3.5-turbo and Claude 1. Prior to that, similar effects were achieved by prepending instructions to the single text completion prompt.

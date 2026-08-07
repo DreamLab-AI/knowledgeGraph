@@ -53,6 +53,10 @@
       "label": "Agent2Agent Protocol (Google 2025)"
     },
     {
+      "slug": "lifecycle-hook",
+      "label": "Lifecycle Hook"
+    },
+    {
       "slug": "presence-indicator",
       "label": "Presence Indicator"
     }

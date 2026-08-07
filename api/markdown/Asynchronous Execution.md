@@ -51,6 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Asynchronous Execution",
   "definition": "An execution model in which operations are initiated without blocking the calling thread; completion is signalled via callbacks, promises, futures, or events, enabling high-throughput concurrent processing particularly suited to I/O-bound workloads and distributed system communication.",
+  "vc:plainGloss": "A way of working where you set a task going and carry on with other things rather than standing idle until it finishes — like putting the kettle on and getting on with breakfast instead of watching it boil. The system tells you when each task is done, so many can be under way at once.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.7,
@@ -124,6 +125,9 @@ public:: true
 
 - ### Definition
   - An execution model in which operations are initiated without blocking the calling thread; completion is signalled via callbacks, promises, futures, or events, enabling high-throughput concurrent processing for I/O-bound workloads and distributed system communication.
+
+- ### In Plain Terms
+  - A way of working where you set a task going and carry on with other things rather than standing idle until it finishes — like putting the kettle on and getting on with breakfast instead of watching it boil. The system tells you when each task is done, so many can be under way at once.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AsynchronousExecution

@@ -189,6 +189,10 @@
       "label": "ETSI_Domain_Infrastructure"
     },
     {
+      "slug": "lifecycle-hook",
+      "label": "Lifecycle Hook"
+    },
+    {
       "slug": "ros",
       "label": "ROS"
     },

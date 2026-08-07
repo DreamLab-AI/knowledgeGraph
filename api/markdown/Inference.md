@@ -43,6 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Inference",
   "definition": "Inference is the process of applying a trained AI model to new, unseen data to produce predictions, classifications, or generated outputs. It is distinct from training in that model parameters are fixed; the computational objective is throughput, latency, and memory efficiency. Inference is the primary execution path in production deployments and is governed by ISO/IEC 22989:2022 clause 3.3.4.",
+  "vc:plainGloss": "The everyday act of using a finished, trained AI model to get an answer — every time you send it a prompt and it replies, that is inference. It is the running-cost side of AI, as opposed to the one-off, expensive job of training the model in the first place.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": {
@@ -216,6 +217,9 @@ public:: true
 
 - ### Definition
   - Inference is the process of applying a trained AI model to new, unseen data to produce predictions, classifications, or generated outputs. It is distinct from training in that model parameters are fixed; the computational objective is throughput, latency, and memory efficiency. Inference is the primary execution path in production deployments and is governed by ISO/IEC 22989:2022 clause 3.3.4.
+
+- ### In Plain Terms
+  - The everyday act of using a finished, trained AI model to get an answer — every time you send it a prompt and it replies, that is inference. It is the running-cost side of AI, as opposed to the one-off, expensive job of training the model in the first place.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Inference

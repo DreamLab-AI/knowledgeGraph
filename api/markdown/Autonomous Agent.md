@@ -140,6 +140,7 @@ alias:: Autonomous Agents, AutonomousAgent
   "@type": "Class",
   "label": "Autonomous Agent",
   "definition": "Software entity capable of acting autonomously to achieve goals within a metaverse, exhibiting goal-directed behavior, decision-making, and adaptive responses without continuous human intervention.",
+  "vc:plainGloss": "Software that chases a goal on its own — sensing what is happening, deciding what to do, and adjusting as things change, without someone steering it at every turn.",
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
@@ -379,6 +380,9 @@ alias:: Autonomous Agents, AutonomousAgent
 
 - ### Definition
   - Software entity capable of acting autonomously to achieve goals within a metaverse, exhibiting goal-directed behavior, decision-making, and adaptive responses without continuous human intervention.
+
+- ### In Plain Terms
+  - Software that chases a goal on its own — sensing what is happening, deciding what to do, and adjusting as things change, without someone steering it at every turn.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:AutonomousAgent

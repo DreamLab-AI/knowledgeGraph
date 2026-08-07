@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:320ac29095bce71c45b447e3520a55f0ddadbe9ae44464b6bc818e8767d6d8fa",
+  "title": "Supervisor-Worker Pattern",
+  "slug": "supervisor-worker-pattern",
+  "public": true,
+  "classIri": "urn:ngm:class:supervisor-worker-pattern",
+  "domain": "distributed-collaboration",
+  "definition": "The supervisor-worker pattern is a multi-agent coordination architecture in which a single supervisor agent decomposes a goal, delegates the resulting subtasks to a set of worker agents, and integrates their returned results into a coherent whole, without the workers communicating directly with one another. The supervisor owns planning, routing, verification, and error handling; the workers own execution of their assigned subtask. Centralising control this way makes the system's behaviour easy to reason about and to recover, at the cost of the supervisor becoming a throughput bottleneck and single point of failure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:subagent",
+        "label": "Subagent"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-agent-coordination",
+      "label": "AIAgentCoordination"
+    },
+    {
+      "slug": "task-delegation",
+      "label": "TaskDelegation"
+    },
+    {
+      "slug": "orchestration",
+      "label": "Orchestration"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "MultiAgentSystem"
+    },
+    {
+      "slug": "subagent",
+      "label": "Subagent"
+    }
+  ],
+  "backlinks": []
+}

@@ -39,6 +39,10 @@
     {
       "slug": "ade20-k",
       "label": "ADE20K"
+    },
+    {
+      "slug": "golden-set",
+      "label": "Golden Set"
     }
   ]
 }

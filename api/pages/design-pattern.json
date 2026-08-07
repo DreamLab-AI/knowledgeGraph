@@ -66,6 +66,14 @@
     {
       "slug": "component",
       "label": "Component"
+    },
+    {
+      "slug": "fan-out",
+      "label": "Fan-Out"
+    },
+    {
+      "slug": "lifecycle-hook",
+      "label": "Lifecycle Hook"
     }
   ]
 }

@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:5c7ee2074b65853f71fc5a01ce194ff26deedf6daacdb715c6beefdfd3f31b35",
+  "title": "Fallback",
+  "slug": "fallback",
+  "public": true,
+  "classIri": "urn:ngm:class:fallback",
+  "domain": "infrastructure",
+  "definition": "A fault-tolerance strategy in which a system, upon detecting that its primary path has failed, timed out, or returned an unacceptable result, automatically switches to a predefined alternative path that provides reduced but still useful behaviour. In agent orchestration the alternative is typically a cheaper or more reliable model, a cached response, a simpler tool, or a deterministic default, invoked so that the overall workflow degrades gracefully rather than failing outright.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:graceful-degradation",
+        "label": "Graceful Degradation"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:circuit-breaker",
+        "label": "Circuit Breaker"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "fault-tolerance",
+      "label": "FaultTolerance"
+    },
+    {
+      "slug": "graceful-degradation",
+      "label": "GracefulDegradation"
+    },
+    {
+      "slug": "circuit-breaker",
+      "label": "CircuitBreaker"
+    },
+    {
+      "slug": "resilience",
+      "label": "Resilience"
+    }
+  ],
+  "backlinks": []
+}

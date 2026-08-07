@@ -77,6 +77,10 @@
     {
       "slug": "autonomous-task-execution",
       "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "rollback",
+      "label": "Rollback"
     }
   ]
 }

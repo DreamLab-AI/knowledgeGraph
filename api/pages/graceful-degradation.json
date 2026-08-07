@@ -98,6 +98,10 @@
     {
       "slug": "bandwidth-adaptation",
       "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "fallback",
+      "label": "Fallback"
     }
   ]
 }

@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:67c26f6cac4e18ba56ab41bdf41950770fa84dafcbea3322bc1e5682708cdbe6",
+  "title": "Token Cost",
+  "slug": "token-cost",
+  "public": true,
+  "classIri": "urn:ngm:class:token-cost",
+  "domain": "artificial-intelligence",
+  "definition": "Token cost is the economic and computational expense incurred when a large language model consumes and produces tokens, calculated as the sum of input (prompt) tokens and output (completion) tokens multiplied by their respective per-token prices, and it constitutes the dominant recurring cost driver of deployed generative-AI and agent-orchestration systems. Because providers meter usage in tokens rather than requests, token cost scales super-linearly with prompt length, conversation history, retrieved context, tool-call payloads, and multi-step agent fan-out, making it the primary budget variable an orchestrator must forecast, cap, and attribute. Managing token cost involves measurement (counting tokens per call and per session), attribution (allocating spend to tasks, agents, or tenants), and reduction levers such as prompt compression, context pruning, caching, model-tier routing, and truncation of chat history against the model context window.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:performance-metrics",
+      "label": "Performance Metrics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cost-efficient-inference",
+        "label": "Cost-Efficient Inference"
+      },
+      {
+        "id": "urn:ngm:class:cost-optimisation",
+        "label": "Cost Optimisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "cost-efficient-inference",
+      "label": "Cost-Efficient Inference"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "tokeniser",
+      "label": "Tokeniser"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    }
+  ],
+  "backlinks": []
+}

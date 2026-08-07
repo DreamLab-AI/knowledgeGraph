@@ -178,6 +178,10 @@
     {
       "slug": "progressive-disclosure-harnesses",
       "label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "slug": "supervisor-worker-pattern",
+      "label": "Supervisor-Worker Pattern"
     }
   ]
 }

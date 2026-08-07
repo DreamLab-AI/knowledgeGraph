@@ -806,12 +806,20 @@
       "label": "FLP Impossibility"
     },
     {
+      "slug": "fallback",
+      "label": "Fallback"
+    },
+    {
       "slug": "partition-tolerance",
       "label": "Partition Tolerance"
     },
     {
       "slug": "prime-intellect",
       "label": "Prime Intellect"
+    },
+    {
+      "slug": "rollback",
+      "label": "Rollback"
     },
     {
       "slug": "state-machine",

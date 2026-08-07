@@ -21,6 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Frontier Models",
   "definition": "Frontier models are large-scale AI systems trained at the leading edge of compute, data, and capability, exhibiting emergent behaviours not observed in smaller models and presenting both transformative societal potential and novel safety risks. The term typically refers to the most capable foundation models available at any given time, assessed across benchmarks spanning reasoning, coding, science, and multimodal tasks.",
+  "vc:plainGloss": "The most powerful AI models available at any given moment — the current top of the range, built at enormous cost and able to do things smaller models simply cannot. Because they also carry the biggest unknowns, they draw the most safety scrutiny and regulation.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
@@ -176,6 +177,9 @@ public:: true
 
 - ### Definition
   - [[Frontier Models]] are the most capable [[Large-Scale Pretrained Foundation Model]] at any given moment, trained at unprecedented compute scales, and distinguished by [[Emergent Capabilities]] such as in-context reasoning, tool use, and scientific problem-solving that were absent in prior-generation systems.
+
+- ### In Plain Terms
+  - The most powerful AI models available at any given moment — the current top of the range, built at enormous cost and able to do things smaller models simply cannot. Because they also carry the biggest unknowns, they draw the most safety scrutiny and regulation.
 
 - ### Relationships
   - Frontier Models are governed by [[Scaling Laws]] that predict capability gains, require massive [[GPU Cluster]] infrastructure, enable downstream [[Reasoning Models]] and [[Multimodal AI]] systems, and are assessed through structured [[Frontier Model Evaluation]] frameworks.

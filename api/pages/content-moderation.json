@@ -335,6 +335,10 @@
       "label": "Digital Society Harms"
     },
     {
+      "slug": "guardrail",
+      "label": "Guardrail"
+    },
+    {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
     },

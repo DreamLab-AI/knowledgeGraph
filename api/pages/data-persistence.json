@@ -191,6 +191,10 @@
       "label": "Database System"
     },
     {
+      "slug": "memory-bank",
+      "label": "Memory Bank"
+    },
+    {
       "slug": "storage-layer",
       "label": "Storage Layer"
     },

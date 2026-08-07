@@ -51,6 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Automated Summarization",
   "definition": "Automated Summarization is an NLP task in which a system produces a condensed representation of one or more source documents that preserves salient information and is significantly shorter than the original. Extractive approaches select and concatenate verbatim sentences or passages from the source; abstractive approaches generate novel text that may paraphrase, fuse, or infer content not explicitly stated in the source. Modern large language model-based summarizers are predominantly abstractive, achieving strong performance on long-form documents, meeting transcripts, scientific papers, and news articles, but remain susceptible to hallucination, factual inconsistency, and salience mismatch relative to the reader's intent.",
+  "vc:plainGloss": "Getting an AI to boil a long document, meeting transcript, or email thread down to its key points. It saves reading time, though it can occasionally drop an important detail or state something the original never said, so a quick check is wise.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.8,
@@ -139,6 +140,9 @@ public:: true
 
 - ### Definition
   Automated Summarization is an NLP task in which a system produces a condensed representation of one or more source documents that preserves salient information and is significantly shorter than the original. Extractive approaches select and concatenate verbatim sentences or passages from the source; abstractive approaches generate novel text that may paraphrase, fuse, or infer content not explicitly stated in the source. Modern large language model-based summarizers are predominantly abstractive, achieving strong performance on long-form documents, meeting transcripts, scientific papers, and news articles, but remain susceptible to hallucination, factual inconsistency, and salience mismatch relative to the reader's intent.
+
+- ### In Plain Terms
+  - Getting an AI to boil a long document, meeting transcript, or email thread down to its key points. It saves reading time, though it can occasionally drop an important detail or state something the original never said, so a quick check is wise.
 
 - ### Relationships
   - hasPart:: [[Text Generation]], [[Language Modeling]]

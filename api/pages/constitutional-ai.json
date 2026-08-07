@@ -129,6 +129,10 @@
       "label": "Corrigibility"
     },
     {
+      "slug": "guardrail",
+      "label": "Guardrail"
+    },
+    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     },

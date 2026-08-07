@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:2f0a9e4fec74e596ad09c1ed0f7b77efd01d2149acc4d492e06a87a0da365b1f",
+  "title": "Guardrail",
+  "slug": "guardrail",
+  "public": true,
+  "classIri": "urn:ngm:class:guardrail",
+  "domain": "security",
+  "definition": "A programmable safety control placed around a language model or agent that inspects, constrains, or rewrites inputs and outputs to keep behaviour within a defined policy envelope. Guardrails operate at runtime as input filters, output validators, topic and PII detectors, schema or format enforcers, and tool-permission gates; they block, redact, or re-prompt when a violation is detected, providing an enforcement layer that is independent of, and complementary to, the alignment baked into the model itself.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:constrained-decoding",
+        "label": "Constrained Decoding"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-safety",
+      "label": "AISafety"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "ContentModeration"
+    },
+    {
+      "slug": "constrained-decoding",
+      "label": "ConstrainedDecoding"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "ConstitutionalAI"
+    }
+  ],
+  "backlinks": []
+}

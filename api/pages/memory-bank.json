@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:d32d577dbd038a729d57498b7875eb6a06f28940de308633501ed73a9703ba3d",
+  "title": "Memory Bank",
+  "slug": "memory-bank",
+  "public": true,
+  "classIri": "urn:ngm:class:memory-bank",
+  "domain": "artificial-intelligence",
+  "definition": "A memory bank is a structured, persistent repository of curated project and task context that an autonomous agent reads at the start of every session and updates as work progresses, so that knowledge survives the resetting of the model's ephemeral context window. Typically realised as a set of versioned markdown or database records (project brief, active decisions, progress log, architectural notes), it gives a stateless language model durable long-term memory, enabling continuity of intent, avoidance of repeated discovery, and coherent behaviour across many disconnected invocations of the same or different agents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-memory",
+      "label": "Agent Memory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:memory-store",
+        "label": "Memory Store"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-memory",
+      "label": "AgentMemory"
+    },
+    {
+      "slug": "memory-store",
+      "label": "MemoryStore"
+    },
+    {
+      "slug": "context-management",
+      "label": "ContextManagement"
+    },
+    {
+      "slug": "data-persistence",
+      "label": "DataPersistence"
+    }
+  ],
+  "backlinks": []
+}

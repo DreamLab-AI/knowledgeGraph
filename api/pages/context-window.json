@@ -267,6 +267,10 @@
     {
       "slug": "terminal-coding-agents",
       "label": "Terminal Coding Agents"
+    },
+    {
+      "slug": "token-cost",
+      "label": "Token Cost"
     }
   ]
 }

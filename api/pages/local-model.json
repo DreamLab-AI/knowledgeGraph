@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:e0b17b43a5207b740fd790d68f77a3942d4cbeb3036971d13f4afcc91cd3216f",
+  "title": "Local Model",
+  "slug": "local-model",
+  "public": true,
+  "classIri": "urn:ngm:class:local-model",
+  "domain": "machine-learning",
+  "definition": "A machine-learning model, typically a language model, whose weights are downloaded and run on hardware controlled by the operator \u2014 a personal device, a workstation, or a private server \u2014 so that inference happens without sending data to a third-party API. Local models trade the ceiling capability and elastic scale of hosted frontier systems for data locality, predictable per-token cost, offline availability, and full control over versioning and privacy, and they are commonly used as the cheap or confidential tier in a model-routing strategy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:language-model",
+      "label": "Language Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-hosted-ai-server-infrastructure",
+        "label": "Self-Hosted AI Server Infrastructure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "language-model",
+      "label": "LanguageModel"
+    },
+    {
+      "slug": "on-device-inference",
+      "label": "OnDeviceInference"
+    },
+    {
+      "slug": "self-hosted-ai-server-infrastructure",
+      "label": "SelfHostedAIServerInfrastructure"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "CloudComputing"
+    }
+  ],
+  "backlinks": []
+}

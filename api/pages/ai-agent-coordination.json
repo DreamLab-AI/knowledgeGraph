@@ -353,6 +353,10 @@
     {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "supervisor-worker-pattern",
+      "label": "Supervisor-Worker Pattern"
     }
   ]
 }

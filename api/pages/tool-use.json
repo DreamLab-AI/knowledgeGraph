@@ -209,6 +209,10 @@
       "label": "Agent Runtime"
     },
     {
+      "slug": "agent-skill",
+      "label": "Agent Skill"
+    },
+    {
       "slug": "agentic-ai",
       "label": "agentic ai"
     },

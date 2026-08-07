@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:4ae5df45df053849c4ccaa722042ab468877db67d9a8700930efd459742c5efe",
+  "title": "Agent Handoff",
+  "slug": "agent-handoff",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-handoff",
+  "domain": "artificial-intelligence",
+  "definition": "The orchestration primitive by which one agent transfers control of a conversation or task to another agent, passing along the accumulated context, goal, and constraints so the receiving agent can continue the work with its own specialised tools and instructions. A handoff reassigns responsibility rather than merely requesting a result: control does not automatically return to the sender, and the receiver becomes the active locus of decision-making, which is what distinguishes handoff-based routing from a simple tool call or a blocking sub-task.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multi-agent-orchestration",
+      "label": "Multi-Agent Orchestration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "multi-agent-orchestration",
+      "label": "MultiAgentOrchestration"
+    },
+    {
+      "slug": "task-delegation",
+      "label": "TaskDelegation"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "MultiAgentSystem"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "AgenticWorkflow"
+    }
+  ],
+  "backlinks": []
+}

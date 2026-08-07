@@ -705,6 +705,10 @@
       "label": "Eventual Consistency"
     },
     {
+      "slug": "fan-out",
+      "label": "Fan-Out"
+    },
+    {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
     },

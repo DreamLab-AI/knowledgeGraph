@@ -42,6 +42,10 @@
     {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
+    },
+    {
+      "slug": "golden-set",
+      "label": "Golden Set"
     }
   ]
 }

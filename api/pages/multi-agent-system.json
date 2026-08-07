@@ -191,6 +191,10 @@
       "label": "Agent Communication Protocol"
     },
     {
+      "slug": "agent-handoff",
+      "label": "Agent Handoff"
+    },
+    {
       "slug": "agent-identity",
       "label": "Agent Identity"
     },
@@ -275,8 +279,16 @@
       "label": "Situational Awareness"
     },
     {
+      "slug": "subagent",
+      "label": "Subagent"
+    },
+    {
       "slug": "subsumption-architecture",
       "label": "Subsumption Architecture"
+    },
+    {
+      "slug": "supervisor-worker-pattern",
+      "label": "Supervisor-Worker Pattern"
     },
     {
       "slug": "swarm-control",

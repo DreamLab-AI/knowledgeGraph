@@ -137,6 +137,10 @@
       "label": "Action Executor"
     },
     {
+      "slug": "agent-handoff",
+      "label": "Agent Handoff"
+    },
+    {
       "slug": "agent-to-agent-protocol",
       "label": "Agent-to-Agent Protocol"
     },
@@ -159,6 +163,10 @@
     {
       "slug": "external-ai-harness",
       "label": "External AI Harness"
+    },
+    {
+      "slug": "fan-out",
+      "label": "Fan-Out"
     },
     {
       "slug": "internal-ai-harness",

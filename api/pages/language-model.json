@@ -219,6 +219,10 @@
       "label": "LangGraph"
     },
     {
+      "slug": "local-model",
+      "label": "Local Model"
+    },
+    {
       "slug": "mistral",
       "label": "Mistral"
     },

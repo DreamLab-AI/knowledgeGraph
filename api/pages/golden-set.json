@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:91358e0bd94f3fe5a68cc6f1e6256617d0a2c385a7acc6a05122bfcb33efe387",
+  "title": "Golden Set",
+  "slug": "golden-set",
+  "public": true,
+  "classIri": "urn:ngm:class:golden-set",
+  "domain": "data",
+  "definition": "A small, carefully curated and human-verified collection of input-output examples that serves as the authoritative reference against which a model, prompt, agent, or pipeline is repeatedly evaluated. Each item pairs a representative input with an expected or ideal output, and the set is deliberately kept stable across versions so that regression can be measured, quality can be tracked over time, and changes can be accepted or rejected on the basis of a consistent benchmark rather than anecdote.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:test-dataset",
+      "label": "Test Dataset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:llm-evaluation",
+        "label": "LLM Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Harness"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "test-dataset",
+      "label": "TestDataset"
+    },
+    {
+      "slug": "ground-truth",
+      "label": "GroundTruth"
+    },
+    {
+      "slug": "evaluation-harness",
+      "label": "EvaluationHarness"
+    },
+    {
+      "slug": "llm-evaluation",
+      "label": "LLMEvaluation"
+    }
+  ],
+  "backlinks": []
+}

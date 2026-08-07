@@ -121,6 +121,10 @@
     {
       "slug": "cross-validation",
       "label": "Cross-Validation"
+    },
+    {
+      "slug": "model-tier",
+      "label": "Model Tier"
     }
   ]
 }

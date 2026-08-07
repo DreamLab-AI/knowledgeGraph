@@ -461,6 +461,10 @@
       "label": "RGB and Client Side Validation"
     },
     {
+      "slug": "subagent",
+      "label": "Subagent"
+    },
+    {
       "slug": "voice-assistant",
       "label": "Voice Assistant"
     },

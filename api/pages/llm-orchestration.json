@@ -77,6 +77,10 @@
     {
       "slug": "internal-ai-harness",
       "label": "Internal AI Harness"
+    },
+    {
+      "slug": "model-tier",
+      "label": "Model Tier"
     }
   ]
 }

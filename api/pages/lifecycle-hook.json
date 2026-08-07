@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:f52ddd4c9da33e08c60eb3b345100e74836493bcdd55ed3ed16a363fbd20af5a",
+  "title": "Lifecycle Hook",
+  "slug": "lifecycle-hook",
+  "public": true,
+  "classIri": "urn:ngm:class:lifecycle-hook",
+  "domain": "infrastructure",
+  "definition": "An extension point exposed at a defined moment in a system's execution lifecycle at which user-supplied code is invoked to observe or modify behaviour without altering the host itself. In agent runtimes, hooks fire before and after events such as a tool call, a model request, a task start, or a session end, and the registered handler can log, validate, transform inputs and outputs, inject context, or veto the action, making hooks the primary mechanism for deterministic, policy-driven customisation of an otherwise opaque agent loop.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:design-pattern",
+      "label": "Design Pattern"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:webhook",
+        "label": "Webhook"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "design-pattern",
+      "label": "DesignPattern"
+    },
+    {
+      "slug": "webhook",
+      "label": "Webhook"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "AgenticWorkflow"
+    }
+  ],
+  "backlinks": []
+}

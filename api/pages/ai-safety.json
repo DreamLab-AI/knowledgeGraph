@@ -581,6 +581,10 @@
       "label": "Ground Robot"
     },
     {
+      "slug": "guardrail",
+      "label": "Guardrail"
+    },
+    {
       "slug": "internal-ai-harness",
       "label": "Internal AI Harness"
     },

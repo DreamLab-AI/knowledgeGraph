@@ -456,6 +456,10 @@
       "label": "Text Generation"
     },
     {
+      "slug": "token-cost",
+      "label": "Token Cost"
+    },
+    {
       "slug": "transformer",
       "label": "Transformer"
     },

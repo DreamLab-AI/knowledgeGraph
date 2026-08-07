@@ -310,6 +310,10 @@
       "label": "IoT Sensor Network"
     },
     {
+      "slug": "local-model",
+      "label": "Local Model"
+    },
+    {
       "slug": "machine-learning-platform",
       "label": "Machine Learning Platform"
     },

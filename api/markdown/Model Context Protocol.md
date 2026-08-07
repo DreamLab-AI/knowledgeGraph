@@ -207,6 +207,7 @@ public:: true
   "@type": "Class",
   "label": "Model Context Protocol",
   "definition": "The Model Context Protocol (MCP) is an open standard published by Anthropic in November 2024 that defines a JSON-RPC 2.0-based client–server protocol for connecting Large Language Model inference hosts (MCP clients) to external capability providers (MCP servers), exposing tools, resources, an...",
+  "vc:plainGloss": "A common plug-and-socket standard that lets an AI assistant connect to outside tools and data (files, databases, apps) without custom wiring for each one. Think of it as a universal adapter, so any assistant that speaks it can use any tool that speaks it.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -564,6 +565,9 @@ public:: true
 
 - ### Definition
   - The Model Context Protocol (MCP) is an open standard published by Anthropic in November 2024 that defines a JSON-RPC 2.0-based client–server protocol for connecting [[Large Language Model]] inference hosts (MCP clients) to external capability providers (MCP servers), exposing tools, resources, and prompts in a uniform interface that allows any compliant LLM application to discover and invoke heterogeneous external services — databases, file systems, APIs, agent memory stores — without bespoke integration code, forming the primary tool-surface interface within [[VisionClaw Agentic Container]] for agent-to-environment interaction.
+
+- ### In Plain Terms
+  - A common plug-and-socket standard that lets an AI assistant connect to outside tools and data (files, databases, apps) without custom wiring for each one. Think of it as a universal adapter, so any assistant that speaks it can use any tool that speaks it.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:ModelContextProtocol

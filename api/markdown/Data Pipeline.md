@@ -164,6 +164,7 @@ alias:: DataPipeline
   "@type": "Class",
   "label": "Data Pipeline",
   "definition": "An automated, end-to-end sequence of connected processing stages that orchestrates data ingestion, transformation, validation, and delivery, enforcing quality assurance and error handling at each stage to produce reliable, actionable analytical outputs for downstream consumers such as machine learning systems and business intelligence platforms.",
+  "vc:plainGloss": "An automated conveyor belt for data: it collects information from various sources, cleans and reshapes it along the way, and delivers it ready to use at the far end. Each stage checks its own work, so what comes out is reliable.",
   "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
@@ -478,6 +479,9 @@ alias:: DataPipeline
 
 - ### Definition
   - A series of connected data processing stages orchestrating [[Data Ingestion]], [[Data Transformation]], [[Quality Assurance]], and [[Data Delivery]] to produce actionable analytical outputs. Data pipelines implement [[ETL Patterns]], [[Data Validation]], [[Error Handling]], and [[Monitoring]] to ensure [[Data Reliability]] and [[Availability]].
+
+- ### In Plain Terms
+  - An automated conveyor belt for data: it collects information from various sources, cleans and reshapes it along the way, and delivers it ready to use at the far end. Each stage checks its own work, so what comes out is reliable.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DataPipeline

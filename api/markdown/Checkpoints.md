@@ -331,6 +331,7 @@ public:: true
   "@type": "Class",
   "label": "Checkpoints",
   "definition": "Checkpoints are serialised snapshots of a machine-learning model's complete trainable state — weight tensors, optimiser moment accumulators, learning-rate schedules, gradient scalers, random-number-generator seeds, and epoch/step counters — persisted to durable storage at regular intervals during...",
+  "vc:plainGloss": "Saved snapshots of a model taken partway through training, like hitting 'save' in a long game. If something crashes you can pick up from the last snapshot instead of starting over, and you can compare or reuse earlier versions.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -976,6 +977,9 @@ public:: true
   - **Checkpoint averaging**: This technique constructs an ensemble-like parameter set by arithmetically averaging the weight vectors from several recent checkpoints (typically the last 5-20 saved during the final training phase), reducing stochastic noise and improving generalisation by 0.2-1.5 BLEU / 0.1-0.5 accuracy points without any additional training compute. Stochastic Weight Averaging (SWA) formalises this as a cyclical learning rate that revisits high-loss basins before averaging the traversed checkpoints.
   - **EMA weight tracking**: Exponential Moving Average (EMA) maintains a shadow copy of model parameters updated each step as `θ_ema ← α · θ_ema + (1-α) · θ` with decay α typically 0.999-0.9999, producing a smoother weight trajectory that substantially outperforms the raw training weights on evaluation benchmarks. EMA is essentially mandatory in [[Diffusion Models]] pipelines (Stable Diffusion, FLUX, EDM2) where the EMA copy is the inference model and the non-EMA weights are discarded after training. A 2024 paper from Karras et al. introduced post-hoc EMA: by storing periodic snapshots of short-EMA weight states, any longer EMA profile can be reconstructed post-training through a linear mixture, allowing researchers to tune EMA decay after compute is spent.
   - **Blockchain checkpoints**: In Bitcoin's historical implementation, hardcoded block hashes were compiled into the client binary to accelerate initial synchronisation and prevent denial-of-service attacks; this practice was discontinued after the final checkpoint at block 295,000 in 2014. In [[Ethereum Smart Contract Platform]]'s proof-of-stake beacon chain, a checkpoint is a formal consensus object defined as a (epoch, block_root) pair — validators vote on epoch-boundary checkpoints via Casper FFG, and a checkpoint becomes justified once it receives votes from validators controlling ≥ 2/3 of staked ETH, then finalised when a subsequent checkpoint is justified on top, providing cryptoeconomic finality. Ethereum's weak-subjectivity checkpoint mechanism enables newly syncing nodes to obtain a recent finalised block hash from a trusted endpoint, enabling safe fast-sync without full chain replay.
+
+- ### In Plain Terms
+  - Saved snapshots of a model taken partway through training, like hitting 'save' in a long game. If something crashes you can pick up from the last snapshot instead of starting over, and you can compare or reuse earlier versions.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Checkpoints

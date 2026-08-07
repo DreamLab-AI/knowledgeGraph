@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:451e035e6513a124671ed4ecfff6c0a1c9f11d23da86ccbaa8cc7bde63208c2f",
+  "title": "Model Tier",
+  "slug": "model-tier",
+  "public": true,
+  "classIri": "urn:ngm:class:model-tier",
+  "domain": "ai",
+  "definition": "A model tier is a named capability-and-cost band into which the language models available to an agent system are grouped, so that work can be routed to the cheapest model that is competent for it. A typical scheme distinguishes a small fast tier for classification and routing, a mid tier for routine generation, and a frontier tier for hard reasoning, each with characteristic latency, price per token, and quality envelope. Tiering turns the continuous space of model choices into a discrete policy surface that orchestration layers can reason about, enabling deliberate trade-offs between spend, speed, and answer quality across a workload.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-selection",
+      "label": "Model Selection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cost-optimisation",
+        "label": "Cost Optimisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cost-efficient-inference",
+        "label": "Cost-Efficient Inference"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "model-selection",
+      "label": "ModelSelection"
+    },
+    {
+      "slug": "cost-optimisation",
+      "label": "CostOptimisation"
+    },
+    {
+      "slug": "cost-efficient-inference",
+      "label": "CostEfficientInference"
+    },
+    {
+      "slug": "llm-orchestration",
+      "label": "LLMOrchestration"
+    }
+  ],
+  "backlinks": []
+}

@@ -95,6 +95,7 @@ public:: true
   "@type": "Class",
   "label": "Agent",
   "definition": "An autonomous computational or physical entity that perceives its environment, reasons about its perceptions using internal beliefs and goals, and acts to achieve specified objectives—exhibiting autonomy, reactivity, proactivity, and social ability across AI, blockchain, robotics, and metaverse domains.",
+  "vc:plainGloss": "A piece of software that acts on your behalf: it senses what is going on around it, works out what to do, and takes steps towards a goal you have set — with little or no hand-holding along the way.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.7,
@@ -337,6 +338,8 @@ public:: true
 
 - ### Definition
   - An autonomous computational or physical entity that perceives its environment, reasons using internal beliefs and goals, and acts to achieve specified objectives—exhibiting autonomy, reactivity, proactivity, and social ability across AI, blockchain, robotics, and metaverse domains.
+- ### In Plain Terms
+  - A piece of software that acts on your behalf: it senses what is going on around it, works out what to do, and takes steps towards a goal you have set — with little or no hand-holding along the way.
 - ### Semantic Classification
   - owl-class:: blockchain:Agent
   - owl-role:: Concept

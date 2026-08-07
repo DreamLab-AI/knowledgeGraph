@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:ba7f5acd6c32de9dac7517f72f80b0904a1008b78e73020e0be91263d1f93655",
+  "title": "Agent Skill",
+  "slug": "agent-skill",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-skill",
+  "domain": "artificial-intelligence",
+  "definition": "An agent skill is a packaged, self-contained unit of procedural knowledge \u2014 a named bundle of instructions, and optionally scripts and reference resources \u2014 that an agent loads into its context on demand when a task matches the skill's trigger, and unloads afterwards. Rather than baking every capability into the base system prompt, a skill lets specialised know-how (how to run a deployment, audit prose, drive a browser) live as a discoverable, versioned artifact that is progressively disclosed only when relevant, keeping the working context small while giving the agent deep competence in whatever domain the current task demands.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:prompt-template",
+      "label": "Prompt Template"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "prompt-template",
+      "label": "PromptTemplate"
+    },
+    {
+      "slug": "tool-use",
+      "label": "ToolUse"
+    },
+    {
+      "slug": "context-management",
+      "label": "ContextManagement"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "AgenticWorkflow"
+    }
+  ],
+  "backlinks": []
+}

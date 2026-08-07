@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:94a168d2da574b00ec6c787377278465271cf2b97e68af076fc3eee87eba8664",
+  "title": "Subagent",
+  "slug": "subagent",
+  "public": true,
+  "classIri": "urn:ngm:class:subagent",
+  "domain": "artificial-intelligence",
+  "definition": "A subagent is a subordinate autonomous agent spawned by a parent or orchestrating agent to carry out a delegated subtask within its own isolated context window, returning only a distilled result to the parent. By running in a fresh context, a subagent keeps the noise of its intermediate exploration \u2014 long file reads, search output, failed attempts \u2014 out of the parent's limited context, while allowing many subtasks to proceed in parallel. Subagents may be specialised by role, tools, or model tier, and are the unit of work distribution in hierarchical multi-agent architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent",
+      "label": "AI Agent"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:task-decomposition",
+        "label": "Task Decomposition"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-agent",
+      "label": "AIAgent"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "MultiAgentSystem"
+    },
+    {
+      "slug": "task-delegation",
+      "label": "TaskDelegation"
+    },
+    {
+      "slug": "agent-loop",
+      "label": "AgentLoop"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "supervisor-worker-pattern",
+      "label": "Supervisor-Worker Pattern"
+    }
+  ]
+}

@@ -39,6 +39,14 @@
     {
       "slug": "context-engineering",
       "label": "Context Engineering"
+    },
+    {
+      "slug": "model-tier",
+      "label": "Model Tier"
+    },
+    {
+      "slug": "token-cost",
+      "label": "Token Cost"
     }
   ]
 }

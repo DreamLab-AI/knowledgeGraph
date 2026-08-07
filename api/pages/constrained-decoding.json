@@ -78,6 +78,10 @@
     {
       "slug": "function-calling",
       "label": "Function Calling"
+    },
+    {
+      "slug": "guardrail",
+      "label": "Guardrail"
     }
   ]
 }

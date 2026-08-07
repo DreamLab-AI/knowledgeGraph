@@ -104,8 +104,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-skill",
+      "label": "Agent Skill"
+    },
+    {
       "slug": "autonomous-task-execution",
       "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "memory-bank",
+      "label": "Memory Bank"
     }
   ]
 }

@@ -99,6 +99,7 @@ public:: true
   "@type": "Class",
   "label": "Human in the Loop",
   "definition": "A design pattern and operational approach for artificial intelligence systems in which human judgment, decision-making, or validation is integrated as an essential component of the AI system's decision cycle, requiring active human participation at critical points before AI-generated outputs are finalised or actions are executed, thereby ensuring meaningful human control, accountability, and the application of human values and contextual understanding to consequential AI-assisted decisions.",
+  "vc:plainGloss": "A way of running AI where a person checks or approves the important decisions before anything is finalised or acted on. It keeps a human in charge at the moments that matter, so judgement and accountability are not handed over entirely to the machine.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "subClassOf": {
@@ -328,6 +329,8 @@ public:: true
 
 - ### Definition
   - A design pattern and operational approach for artificial intelligence systems in which human judgment, decision-making, or validation is integrated as an essential component of the AI system's decision cycle, requiring active human participation at critical points before AI-generated outputs are finalised or actions are executed, thereby ensuring meaningful human control, accountability, and the application of human values and contextual understanding to consequential AI-assisted decisions.
+- ### In Plain Terms
+  - A way of running AI where a person checks or approves the important decisions before anything is finalised or acted on. It keeps a human in charge at the moments that matter, so judgement and accountability are not handed over entirely to the machine.
 - ### Semantic Classification
   - owl-class:: spatial-computing:HumanintheLoop
   - owl-role:: Concept

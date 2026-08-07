@@ -28,6 +28,7 @@ public:: true
   "@type": "Class",
   "label": "Tool Use",
   "definition": "Tool Use is the capability of large language models and AI agent systems to invoke external functions, APIs, databases, or services at inference time, extending the model's effective knowledge and action repertoire beyond pure text generation. The model receives a structured description of available tools — a tool schema encoding names, descriptions, and JSON Schema parameter specifications — reasons about which tool to call and with what arguments, executes that call via a surrounding orchestration layer, and incorporates the returned observation into its subsequent reasoning. This capability is foundational to agentic AI systems that must take real-world actions such as code execution, web search, database queries, file manipulation, or actuator control, bridging the boundary between language generation and executable computation.",
+  "vc:plainGloss": "An AI's ability to reach beyond writing text and actually do things — run a search, look something up in a database, send an email, or run code — by calling external tools on your behalf. This is what turns a chatbot into an assistant that can take real actions.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -185,6 +186,9 @@ public:: true
 
 - ### Definition
   - Tool Use is the capability of [[Large Language Models]] and AI agent systems to invoke external functions, [[API]]s, databases, or services at inference time, extending the model's effective knowledge and action repertoire beyond pure text generation. The model receives a structured description of available tools — a [[Tool Schema]] encoding names, descriptions, and [[JSON Schema]] parameter specifications — reasons about which tool to call and with what arguments, and incorporates the returned result into its response. This capability is foundational to [[Agentic AI]] systems that must take real-world actions such as [[Code Execution]], web search, database queries, or actuator control, directly bridging the gap between language generation and executable computation.
+
+- ### In Plain Terms
+  - An AI's ability to reach beyond writing text and actually do things — run a search, look something up in a database, send an email, or run code — by calling external tools on your behalf. This is what turns a chatbot into an assistant that can take real actions.
 
 - ### Overview
   - Tool Use transforms a [[Large Language Models|language model]] from a closed-world text predictor into an open-world agent capable of interacting with live information and external systems.

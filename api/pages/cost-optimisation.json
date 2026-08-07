@@ -93,6 +93,10 @@
     {
       "slug": "batch-inference",
       "label": "Batch Inference"
+    },
+    {
+      "slug": "model-tier",
+      "label": "Model Tier"
     }
   ]
 }

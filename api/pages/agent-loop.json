@@ -93,6 +93,10 @@
       "label": "Progressive Disclosure Harnesses"
     },
     {
+      "slug": "subagent",
+      "label": "Subagent"
+    },
+    {
       "slug": "terminal-coding-agents",
       "label": "Terminal Coding Agents"
     },

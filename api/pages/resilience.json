@@ -153,6 +153,10 @@
       "label": "Error Recovery"
     },
     {
+      "slug": "fallback",
+      "label": "Fallback"
+    },
+    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     },
