@@ -637,6 +637,10 @@
       "label": "Adaptive Behaviour"
     },
     {
+      "slug": "apprenticeship-learning",
+      "label": "Apprenticeship Learning"
+    },
+    {
       "slug": "deep-reinforcement-learning",
       "label": "Deep Reinforcement Learning"
     },

@@ -100,5 +100,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "yaml",
+      "label": "YAML"
+    }
+  ]
 }

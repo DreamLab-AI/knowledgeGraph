@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:193f78c86837c9b3f6b2b6e6c410e46c2b5ff4263ec2c4b12f9ae48197cd515b",
+  "title": "Statistical Mechanics",
+  "slug": "statistical-mechanics",
+  "public": true,
+  "classIri": "urn:ngm:class:statistical-mechanics",
+  "domain": "infrastructure",
+  "definition": "The branch of physics that derives the macroscopic behaviour of matter from the statistical properties of its microscopic constituents, explaining thermodynamic quantities such as temperature, pressure, and entropy as averages over ensembles of particle configurations. Built on probability theory and the Boltzmann distribution, it provides the mathematical machinery \u2014 partition functions, ensembles, phase transitions \u2014 that now underpins complexity science, information theory, and energy-based machine learning models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      },
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "thermodynamics",
+      "label": "Thermodynamics"
+    },
+    {
+      "slug": "complex-systems",
+      "label": "Complex Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    }
+  ]
+}

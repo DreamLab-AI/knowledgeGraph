@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:e7c8c52bffd3495a6528765e6c57164ee8594e8c59e02eb453bafbb1401527e5",
+  "title": "Data Lifecycle",
+  "slug": "data-lifecycle",
+  "public": true,
+  "classIri": "urn:ngm:class:data-lifecycle",
+  "domain": "data",
+  "definition": "The sequence of stages that data passes through from initial creation or capture to eventual archival or destruction, typically comprising creation, storage, use, sharing, archiving, and disposal, with each stage carrying distinct security, quality, and regulatory obligations that organisations manage through lifecycle policies, retention schedules, and classification-driven controls.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-classification",
+        "label": "Data Classification"
+      },
+      {
+        "id": "urn:ngm:class:records-management",
+        "label": "Records Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-classification",
+      "label": "Data Classification"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-data-management",
+      "label": "ETSI Domain: Data Management"
+    }
+  ]
+}

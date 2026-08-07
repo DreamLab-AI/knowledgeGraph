@@ -135,10 +135,6 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
-    },
-    {
       "slug": "algorithmic-bias-and-variance",
       "label": "Algorithmic Bias and Variance"
     },
@@ -177,6 +173,10 @@
     {
       "slug": "data-augmentation",
       "label": "Data Augmentation"
+    },
+    {
+      "slug": "noise-injection",
+      "label": "Noise Injection"
     }
   ]
 }

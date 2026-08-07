@@ -137,6 +137,10 @@
       "label": "Product Recall Management"
     },
     {
+      "slug": "public-health",
+      "label": "Public Health"
+    },
+    {
       "slug": "walmart",
       "label": "Walmart"
     }

@@ -101,6 +101,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ci-cd",
+      "label": "CI/CD"
+    },
+    {
       "slug": "configuration-management",
       "label": "Configuration Management"
     },

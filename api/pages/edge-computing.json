@@ -742,6 +742,10 @@
       "label": "Compute Layer"
     },
     {
+      "slug": "container-image",
+      "label": "Container Image"
+    },
+    {
       "slug": "container",
       "label": "Container"
     },
@@ -786,6 +790,10 @@
       "label": "Edge Inference"
     },
     {
+      "slug": "edge-server",
+      "label": "Edge Server"
+    },
+    {
       "slug": "gartner-prediction",
       "label": "Gartner Prediction"
     },
@@ -826,16 +834,16 @@
       "label": "IoT Sensor Network"
     },
     {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
-    },
-    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },
     {
       "slug": "npu",
       "label": "NPU"
+    },
+    {
+      "slug": "on-premises",
+      "label": "On-Premises"
     },
     {
       "slug": "open-webui-and-pipelines",

@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:a0e349366f501109572b83efb9c7bc3d21c8efc16c1be24e8a4ba5499e4b236a",
+  "title": "Transmission Delay",
+  "slug": "transmission-delay",
+  "public": true,
+  "classIri": "urn:ngm:class:transmission-delay",
+  "domain": "infrastructure",
+  "definition": "The time required to push all of a packet's bits onto the transmission medium, calculated as packet size divided by the link's transmission rate. It is one of the four canonical components of network latency alongside propagation, processing, and queueing delay, dominates end-to-end delay on low-bandwidth links, and shrinks proportionally as link capacity increases, which is why upgrading link speed reduces this component but leaves propagation delay unchanged.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-latency",
+      "label": "Network Latency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "network-latency",
+      "label": "Network Latency"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "propagation-delay",
+      "label": "Propagation Delay"
+    },
+    {
+      "slug": "bandwidth",
+      "label": "Bandwidth"
+    }
+  ],
+  "backlinks": []
+}

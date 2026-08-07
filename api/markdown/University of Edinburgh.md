@@ -236,7 +236,7 @@ public:: true
   - **[[Centre for Clinical Brain Sciences]]** — Applies computational and AI methods to neuroscience and neuroimaging, intersecting with [[Medical AI]] and [[Brain-Computer Interface]] research.
   - **[[Edinburgh Futures Institute]]** — Interdisciplinary centre focusing on societal implications of AI, data, and technology, bridging [[AI Ethics]], [[Responsible AI]], and policy.
   - **[[Language Technology Group]]** — One of Europe's longest-standing groups in [[Natural Language Processing]] and computational linguistics, with contributions to [[Machine Translation]], [[Speech Recognition]], and [[Information Extraction]].
-  - **[[Edinburgh Centre for Robotics]]** — Joint initiative with Heriot-Watt University; focuses on [[Autonomous Systems]], [[Human-Robot Interaction]], and field [[Robotics]].
+  - **[[Edinburgh Centre for Robotics]]** — Joint initiative with Heriot-Watt University; focuses on [[Autonomous Systems]], [[Human Robot Interaction]], and field [[Robotics]].
 
 - ### Applications and Use Cases
   - **[[Large Language Model]] Research** — Edinburgh researchers have contributed to pre-training methods, alignment techniques, and evaluation frameworks for large-scale language models.

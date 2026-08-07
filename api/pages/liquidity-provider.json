@@ -147,6 +147,10 @@
     {
       "slug": "liquidity-pool",
       "label": "Liquidity Pool"
+    },
+    {
+      "slug": "market-maker",
+      "label": "Market Maker"
     }
   ]
 }

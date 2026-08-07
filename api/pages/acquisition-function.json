@@ -8,7 +8,7 @@
   "definition": "An acquisition function is a utility function used in Bayesian optimisation that determines which point in the input space to evaluate next by balancing exploration of uncertain regions against exploitation of known promising areas. It transforms the surrogate model's posterior distribution into a scalar score, guiding the sequential selection of experiments or evaluations. Common forms include Expected Improvement, Upper Confidence Bound, and Probability of Improvement.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:optimization-algorithm",
+      "id": "urn:ngm:class:optimisation-algorithm",
       "label": "Optimization Algorithm"
     }
   ],
@@ -102,7 +102,7 @@
         "label": "AutoML"
       },
       {
-        "id": "urn:ngm:class:materials-science",
+        "id": "urn:ngm:class:material-science",
         "label": "Materials Science"
       }
     ],
@@ -126,7 +126,7 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:exploration-exploitation-trade-off",
+        "id": "urn:ngm:class:exploration-exploitation-tradeoff",
         "label": "Exploration-Exploitation Trade-off"
       },
       {
@@ -173,7 +173,7 @@
       "label": "Surrogate Model"
     },
     {
-      "slug": "optimization-algorithm",
+      "slug": "optimisation-algorithm",
       "label": "Optimization Algorithm"
     },
     {
@@ -181,7 +181,7 @@
       "label": "Expected Improvement"
     },
     {
-      "slug": "exploration-exploitation-trade-off",
+      "slug": "exploration-exploitation-tradeoff",
       "label": "Exploration-Exploitation Trade-off"
     },
     {
@@ -201,7 +201,7 @@
       "label": "Drug Discovery"
     },
     {
-      "slug": "materials-science",
+      "slug": "material-science",
       "label": "Materials Science"
     },
     {

@@ -145,6 +145,10 @@
       "label": "GENIUS Act"
     },
     {
+      "slug": "insider-trading",
+      "label": "Insider Trading"
+    },
+    {
       "slug": "regulatory-reporting",
       "label": "Regulatory Reporting"
     },

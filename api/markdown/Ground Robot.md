@@ -950,7 +950,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -1038,7 +1038,7 @@ public:: true
   - supports:: [[Precision Agriculture]], [[Last-Mile Delivery]], [[Disaster Response]], [[Industrial Inspection]], [[Security Patrol]], [[Scientific Exploration]]
   - uses:: [[ROS 2]], [[Gazebo Simulation]], [[NVIDIA Isaac Sim]], [[SLAM Toolbox]], [[OpenCV]], [[PCL Point Cloud Library]], [[MoveIt2]]
   - contrasts-with:: [[Aerial Robot]], [[Marine Robot]], [[Soft Robot]], [[Fixed Robot Arm]], [[Teleoperated System]]
-  - related-to:: [[Human-Robot Interaction]], [[Multi-Robot Systems]], [[Digital Twin]], [[Edge Computing]], [[5G Connectivity]], [[AI Safety]]
+  - related-to:: [[Human Robot Interaction]], [[Multi-Robot Systems]], [[Digital Twin]], [[Edge Computing]], [[5G Connectivity]], [[AI Safety]]
   - standardized-by:: [[ISO 13482]], [[ISO 3691-4]], [[IEC 62061]], [[UL 3100]], [[ANSI/RIA R15.08]], [[IEEE 1872-2015]]
 
 - ### Content

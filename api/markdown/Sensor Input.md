@@ -202,7 +202,7 @@ public:: true
   - **Robotics and manipulation**
     - Industrial manipulators use [[Machine Vision]] and proximity sensors for bin-picking, quality inspection, and assembly.
     - Surgical robots integrate force-torque sensor inputs and fluoroscopic imaging for tissue interaction feedback with sub-millimetre control.
-    - [[Human-Robot Interaction]] systems fuse tactile, visual, and audio sensor inputs to infer intent and ensure safe co-working.
+    - [[Human Robot Interaction]] systems fuse tactile, visual, and audio sensor inputs to infer intent and ensure safe co-working.
   - **Spatial computing and XR**
     - [[Spatial Computing]] headsets use camera arrays, depth sensors, and [[Inertial Measurement Unit|IMUs]] for simultaneous localisation and mapping (SLAM), anchoring virtual content to the physical environment.
     - Eye-tracking sensors provide gaze-based interaction inputs in [[Mixed Reality]] platforms.
@@ -220,7 +220,7 @@ public:: true
   - hasPart:: [[Signal Conditioning]], [[Analogue-to-Digital Conversion]], [[Sensor Calibration]]
   - partOf:: [[Perception System]], [[Sensor System]]
   - requires:: [[Sensor Calibration]], [[Real-Time Computation]], [[Digital Signal Processing]]
-  - enables:: [[Sensor Fusion]], [[State Estimation]], [[Autonomous Navigation]], [[Human-Robot Interaction]]
+  - enables:: [[Sensor Fusion]], [[State Estimation]], [[Autonomous Navigation]], [[Human Robot Interaction]]
   - dependsOn:: [[Transducer]], [[Embedded System]]
   - uses:: [[Digital Signal Processing]], [[Kalman Filter]], [[Interrupt-Driven I/O]]
   - supports:: [[Control System]], [[Autonomous System]], [[Machine Vision]]

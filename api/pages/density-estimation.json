@@ -48,7 +48,7 @@
         "label": "Gaussian Mixture Model"
       },
       {
-        "id": "urn:ngm:class:normalizing-flow",
+        "id": "urn:ngm:class:normalising-flow",
         "label": "Normalizing Flow"
       }
     ],
@@ -105,6 +105,10 @@
     {
       "slug": "deep-generative-model",
       "label": "Deep Generative Model"
+    },
+    {
+      "slug": "outlier-detection",
+      "label": "Outlier Detection"
     }
   ]
 }

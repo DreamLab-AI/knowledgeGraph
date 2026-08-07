@@ -224,6 +224,10 @@
       "label": "Bitcoin Technical Overview"
     },
     {
+      "slug": "commit",
+      "label": "Commit"
+    },
+    {
       "slug": "compliance-audit-trail",
       "label": "Compliance Audit Trail"
     },

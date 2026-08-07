@@ -200,6 +200,10 @@
       "label": "Fashion"
     },
     {
+      "slug": "modality-specific-encoder",
+      "label": "Modality-Specific Encoder"
+    },
+    {
       "slug": "perception-system",
       "label": "Perception System"
     },

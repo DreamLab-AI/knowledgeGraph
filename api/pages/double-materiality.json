@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:999dcbdeca6fb59f0c55b1b802fd1d9f370475c7545f7be2400b0bf7aa0e033e",
+  "title": "Double Materiality",
+  "slug": "double-materiality",
+  "public": true,
+  "classIri": "urn:ngm:class:double-materiality",
+  "domain": "governance",
+  "definition": "A principle of sustainability reporting under which a topic must be disclosed if it is material from either of two perspectives: financial materiality, where sustainability matters create risks or opportunities that affect the company's cash flows and enterprise value, and impact materiality, where the company's own activities and value chain materially affect people or the environment. Adopted as the mandatory lens of the EU Corporate Sustainability Reporting Directive and its ESRS standards, it determines the scope of every disclosure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:materiality-assessment",
+      "label": "Materiality Assessment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "materiality-assessment",
+      "label": "Materiality Assessment"
+    },
+    {
+      "slug": "corporate-sustainability-reporting",
+      "label": "Corporate Sustainability Reporting"
+    },
+    {
+      "slug": "corporate-sustainability-reporting-directive",
+      "label": "Corporate Sustainability Reporting Directive"
+    }
+  ],
+  "backlinks": []
+}

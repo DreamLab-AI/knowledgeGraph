@@ -180,6 +180,10 @@
       "label": "Lightning and Similar L2"
     },
     {
+      "slug": "open-protocol",
+      "label": "Open Protocol"
+    },
+    {
       "slug": "privacy-preserving-dynamic-creative-optimisation",
       "label": "Privacy-Preserving Dynamic Creative Optimisation"
     },

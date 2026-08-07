@@ -85,5 +85,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "backtracking-search",
+      "label": "Backtracking Search"
+    }
+  ]
 }

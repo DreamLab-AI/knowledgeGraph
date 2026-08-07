@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:ec29a32379bc199937672fa6e60730f3516e0ba55a72816c5eba213a3c56372c",
+  "title": "Spectral Clustering",
+  "slug": "spectral-clustering",
+  "public": true,
+  "classIri": "urn:ngm:class:spectral-clustering",
+  "domain": "machine-learning",
+  "definition": "A clustering technique that partitions data using the eigenvectors of a graph Laplacian built from a pairwise similarity matrix. By embedding points into the subspace spanned by the Laplacian's smallest eigenvectors and running a simple algorithm such as k-means in that spectral space, it relaxes NP-hard graph-cut objectives (ratio cut, normalised cut) into tractable eigenproblems, allowing it to recover non-convex, connectivity-defined clusters that centroid-based methods cannot separate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:clustering",
+      "label": "Clustering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    },
+    {
+      "slug": "speaker-diarisation",
+      "label": "Speaker Diarisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    }
+  ]
+}

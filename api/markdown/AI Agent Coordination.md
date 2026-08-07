@@ -87,7 +87,7 @@ public:: true
       {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:emergent-behaviour", "label": "Emergent Behaviour"},
+      {"@id": "urn:ngm:class:emergent-behavior", "label": "Emergent Behaviour"},
       {"@id": "urn:ngm:class:autonomous-ai-agents", "label": "Autonomous AI Agents"},
       {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"},
       {"@id": "urn:ngm:class:knowledge-sharing", "label": "Knowledge Sharing"},

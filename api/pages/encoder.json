@@ -180,6 +180,10 @@
       "label": "Linear Encoder"
     },
     {
+      "slug": "modality-specific-encoder",
+      "label": "Modality-Specific Encoder"
+    },
+    {
       "slug": "motion-control",
       "label": "Motion Control"
     },

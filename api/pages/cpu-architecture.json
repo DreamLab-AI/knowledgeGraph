@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:75de30a60b9c3c7260fdc009fbdec8a9ab583f9d6a1e273ed3f1f7d6359127d5",
+  "title": "CPU Architecture",
+  "slug": "cpu-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:cpu-architecture",
+  "domain": "infrastructure",
+  "definition": "CPU architecture is the design of general-purpose central processors optimised for low-latency execution of sequential and branch-heavy code: a small number of powerful cores with deep pipelines, aggressive out-of-order execution, sophisticated branch prediction, and large multi-level caches. It is the deliberate opposite pole to GPU architecture, which trades single-thread latency for massive throughput; CPUs devote silicon to making one instruction stream fast, GPUs to running tens of thousands of streams concurrently.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-hardware",
+      "label": "Computer Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:instruction-set-architecture",
+        "label": "Instruction Set Architecture"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gpu-architecture",
+        "label": "GPU Architecture"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      },
+      {
+        "id": "urn:ngm:class:simd",
+        "label": "SIMD"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-hardware",
+      "label": "Computer Hardware"
+    },
+    {
+      "slug": "gpu-architecture",
+      "label": "GPU Architecture"
+    },
+    {
+      "slug": "instruction-set-architecture",
+      "label": "Instruction Set Architecture"
+    },
+    {
+      "slug": "parallel-computing",
+      "label": "Parallel Computing"
+    }
+  ],
+  "backlinks": []
+}

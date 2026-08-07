@@ -43,6 +43,10 @@
     {
       "slug": "continuous-training",
       "label": "Continuous Training"
+    },
+    {
+      "slug": "experiment-tracking",
+      "label": "ML Experiment Tracking"
     }
   ]
 }

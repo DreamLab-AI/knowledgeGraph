@@ -139,6 +139,10 @@
     {
       "slug": "global-inequality",
       "label": "Global Inequality"
+    },
+    {
+      "slug": "national-income",
+      "label": "National Income"
     }
   ]
 }

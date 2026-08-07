@@ -131,6 +131,18 @@
     {
       "slug": "applied-mathematics",
       "label": "Applied Mathematics"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "quantum-gate",
+      "label": "Quantum Gate"
+    },
+    {
+      "slug": "qubit",
+      "label": "Qubit"
     }
   ]
 }

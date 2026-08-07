@@ -79,6 +79,10 @@
       "label": "Embodied Minds"
     },
     {
+      "slug": "reactive-planning",
+      "label": "Reactive Planning"
+    },
+    {
       "slug": "swarm-control",
       "label": "Swarm Control"
     }

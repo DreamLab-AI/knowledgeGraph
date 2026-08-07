@@ -16,7 +16,24 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution Engine"
+      },
+      {
+        "id": "urn:ngm:class:delta-compression",
+        "label": "Delta Compression"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "State Replication"
+      },
+      {
+        "id": "urn:ngm:class:timestamp",
+        "label": "Timestamp Ordering"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:network-communication",
@@ -25,6 +42,22 @@
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronization"
+      },
+      {
+        "id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
+      },
+      {
+        "id": "urn:ngm:class:state-representation",
+        "label": "State Representation"
+      },
+      {
+        "id": "urn:ngm:class:synchronization-protocol",
+        "label": "Synchronization Protocol"
       }
     ],
     "enables": [
@@ -43,6 +76,18 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "Consistent User Experience"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:shared-virtual-world",
+        "label": "Shared Virtual World"
       }
     ],
     "dependsOn": [],
@@ -109,14 +154,27 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-twin-interop-protocol",
+        "label": "Digital Twin Interop Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system-architecture",
+        "label": "Distributed System Architecture"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:state-synchronization",
+        "id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization"
       },
       {
-        "id": "urn:ngm:class:real-time-synchronization",
+        "id": "urn:ngm:class:real-time-synchronisation",
         "label": "Real-time Synchronization"
       },
       {

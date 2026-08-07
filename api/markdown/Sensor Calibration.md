@@ -66,7 +66,7 @@ public:: true
         "label": "SLAM"
       },
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -168,7 +168,7 @@ public:: true
   - Sensor calibration establishes the mathematical relationship between a physical quantity and a sensor's digital output by characterising systematic biases, scale factors, axis misalignments, lens distortions, and cross-axis sensitivities. For cameras, calibration determines [[Camera Intrinsics]] (focal length, principal point, distortion coefficients) and extrinsic poses using structured [[Calibration Target]]s such as chessboards or AprilTag arrays. For inertial units ([[IMU]]), it resolves accelerometer and gyroscope offsets and cross-axis coupling through multi-position or turntable procedures, while [[Lidar]] calibration corrects range biases and beam divergence models. [[Coordinate Transformation]] matrices between sensor frames are jointly estimated during multi-sensor extrinsic calibration.
 
 - ### Relationships
-  - Sensor calibration is a prerequisite for [[Sensor Fusion]], which combines heterogeneous sensor streams into a unified state estimate. Accurate calibration parameters feed into [[SLAM]] systems that simultaneously build maps and track robot pose, and into [[Localization]] algorithms that match sensor observations against prior maps. [[Camera Calibration]] is the most widely studied instance of the general process. [[IMU]] calibration is particularly critical for visual-inertial odometry, where even small systematic errors compound over time into unbounded pose drift.
+  - Sensor calibration is a prerequisite for [[Sensor Fusion]], which combines heterogeneous sensor streams into a unified state estimate. Accurate calibration parameters feed into [[SLAM]] systems that simultaneously build maps and track robot pose, and into [[Localisation]] algorithms that match sensor observations against prior maps. [[Camera Calibration]] is the most widely studied instance of the general process. [[IMU]] calibration is particularly critical for visual-inertial odometry, where even small systematic errors compound over time into unbounded pose drift.
 
 - ### Content
   - Sensor calibration has been practised since the earliest scientific instrumentation, but its modern algorithmic form in robotics and computer vision was shaped by foundational work in the 1990s and 2000s. Zhang's planar calibration method (1998–2000) democratised camera calibration by replacing precision calibration rigs with printable planar patterns, enabling accurate intrinsic estimation from as few as three images at different orientations. Simultaneously, inertial sensor calibration benefited from improved MEMS manufacturing and the availability of high-precision turntable references, enabling consumer-grade IMUs to achieve navigation-grade performance through software correction.

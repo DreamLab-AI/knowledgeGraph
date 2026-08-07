@@ -140,12 +140,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "fieldbus",
+      "label": "Fieldbus"
+    },
+    {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
     },
     {
       "slug": "hydraulic-actuator",
       "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "industrial-ethernet",
+      "label": "Industrial Ethernet"
     },
     {
       "slug": "io-t-sensors",

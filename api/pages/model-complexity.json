@@ -111,6 +111,10 @@
     {
       "slug": "bias-variance-tradeoff",
       "label": "Bias-Variance Tradeoff"
+    },
+    {
+      "slug": "vc-dimension",
+      "label": "VC Dimension"
     }
   ]
 }

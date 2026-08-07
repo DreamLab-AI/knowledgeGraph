@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:f565037eac1e4cf29bb1c3da4571c832c75ff46e2656bee601d169660a702510",
+  "title": "Dataset Curation",
+  "slug": "dataset-curation",
+  "public": true,
+  "classIri": "urn:ngm:class:dataset-curation",
+  "domain": "data",
+  "definition": "Dataset curation is the deliberate selection, cleaning, documentation, and maintenance of data collections used to train and evaluate machine learning models. It encompasses sourcing and licensing, de-duplication, filtering of low-quality or harmful content, labelling and label auditing, balancing for coverage and representation, and versioning with provenance records. Curation quality is a first-order determinant of model behaviour: the same architecture trained on better-curated data is routinely more capable, safer, and easier to evaluate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-curation",
+      "label": "Data Curation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dataset",
+        "label": "Dataset"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "data-curation",
+      "label": "Data Curation"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "data-quality",
+      "label": "Data Quality"
+    },
+    {
+      "slug": "data-labelling",
+      "label": "Data Labelling"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    }
+  ]
+}

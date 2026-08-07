@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:a82eb872eedd1818ad289a4754e82da0b8175e93c2bd34ec235d182cf55c44a4",
+  "title": "NVIDIA H200",
+  "slug": "nvidia-corporation-h200",
+  "public": true,
+  "classIri": "urn:ngm:class:nvidia-corporation-h200",
+  "domain": "infrastructure",
+  "definition": "The NVIDIA H200 is a data-centre GPU accelerator built on the Hopper architecture, positioned as the memory-upgraded successor to the H100 within the same generation. Its defining change is the adoption of HBM3e high-bandwidth memory, raising on-package capacity to 141 GB and memory bandwidth to roughly 4.8 TB/s \u2014 a substantial increase over the H100's 80 GB of HBM3. The extra capacity and bandwidth directly benefit large-language-model inference and training, where model weights and key-value caches are memory-bound, allowing larger models or longer context windows to be served per device and improving throughput on memory-limited workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-accelerator",
+      "label": "AI Accelerator"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:nvidia-corporation-h-100",
+        "label": "NVIDIA H100"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High Bandwidth Memory"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nvidia-corporation",
+        "label": "NVIDIA Corporation"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-accelerator",
+      "label": "AI Accelerator"
+    },
+    {
+      "slug": "nvidia-corporation-h-100",
+      "label": "NVIDIA H100"
+    },
+    {
+      "slug": "high-bandwidth-memory",
+      "label": "High Bandwidth Memory"
+    }
+  ],
+  "backlinks": []
+}

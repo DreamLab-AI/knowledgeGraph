@@ -72,7 +72,7 @@
         "label": "Provenance Tracking"
       },
       {
-        "id": "urn:ngm:class:logistics-optimization",
+        "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       },
       {
@@ -128,10 +128,6 @@
     {
       "slug": "io-t-sensor-network",
       "label": "IoT Sensor Network"
-    },
-    {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
     }
   ]
 }

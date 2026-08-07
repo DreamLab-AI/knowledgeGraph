@@ -194,7 +194,7 @@ public:: true
         "label": "CDN Distribution"
       },
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       },
       {
@@ -383,7 +383,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[3D Modeling]]",
+      "raw": "[[3D Modelling]]",
       "resolved": "urn:visionflow:owl:class:3-d-modeling",
       "kind": "ResolvedLink"
     },
@@ -450,7 +450,7 @@ public:: true
   - implemented-in-layer:: [[DataLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - has-part:: [[Asset Creation]], [[3D Modeling]], [[Texture Baking]], [[LOD Generation]], [[Asset Optimization]], [[Content Storage]], [[CDN Distribution]], [[Runtime Loading]], [[Render Pipeline]]
+  - has-part:: [[Asset Creation]], [[3D Modelling]], [[Texture Baking]], [[LOD Generation]], [[Asset Optimization]], [[Content Storage]], [[CDN Distribution]], [[Runtime Loading]], [[Render Pipeline]]
   - is-part-of:: [[Creator Economy]], [[Metaverse Infrastructure]]
   - requires:: [[3D Authoring Tools]], [[Asset Management System]], [[Content Delivery Network]], [[Real-Time Rendering Engine]], [[Asset Compression]], [[Format Conversion]]
   - enables:: [[Cross-Platform Content]], [[User-Generated Content]], [[Dynamic Asset Loading]], [[Procedural Generation]], [[Content Interoperability]]

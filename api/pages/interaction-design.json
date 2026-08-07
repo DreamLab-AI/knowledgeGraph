@@ -143,6 +143,10 @@
       "label": "Emotional Immersion"
     },
     {
+      "slug": "error-recovery",
+      "label": "Error Recovery"
+    },
+    {
       "slug": "human-factors",
       "label": "Human Factors"
     },

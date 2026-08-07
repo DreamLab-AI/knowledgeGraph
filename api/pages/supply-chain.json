@@ -8,7 +8,7 @@
   "definition": "A supply chain is the end-to-end network of organisations, people, activities, information flows, and resources involved in transforming raw materials into finished products and delivering them to end consumers. It spans procurement, manufacturing, quality assurance, logistics, customs compliance, and retail fulfilment across multiple tiers of suppliers and distributors. Modern supply chains are subject to geopolitical risk, demand variability, regulatory traceability mandates, and sustainability-reporting requirements under frameworks such as CSRD and the GHG Protocol. Digital technologies including blockchain-based provenance tracking, AI-driven demand forecasting, digital twins, and IoT-enabled visibility platforms are increasingly deployed to improve resilience, transparency, and efficiency.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:logistics-optimization",
+      "id": "urn:ngm:class:logistics-optimisation",
       "label": "Logistics Optimization"
     }
   ],
@@ -44,7 +44,7 @@
         "label": "Provenance Tracking"
       },
       {
-        "id": "urn:ngm:class:logistics-optimization",
+        "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       },
       {
@@ -184,12 +184,12 @@
       "label": "GS1 Standards"
     },
     {
-      "slug": "ibm-food-trust",
-      "label": "IBM Food Trust"
+      "slug": "global-trade",
+      "label": "Global Trade"
     },
     {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
+      "slug": "ibm-food-trust",
+      "label": "IBM Food Trust"
     },
     {
       "slug": "medi-ledger",
@@ -198,6 +198,10 @@
     {
       "slug": "provenance",
       "label": "Provenance"
+    },
+    {
+      "slug": "semiconductor-industry",
+      "label": "Semiconductor Industry"
     },
     {
       "slug": "smart-contract",

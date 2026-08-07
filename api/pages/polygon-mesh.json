@@ -104,5 +104,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "vertex-attribute",
+      "label": "Vertex Attribute"
+    }
+  ]
 }

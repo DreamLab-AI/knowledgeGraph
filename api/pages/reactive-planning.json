@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:9fcac2fd1a1853851611cef6b69da352f680d89b0b7c061bc9362ffa9408894a",
+  "title": "Reactive Planning",
+  "slug": "reactive-planning",
+  "public": true,
+  "classIri": "urn:ngm:class:reactive-planning",
+  "domain": "artificial-intelligence",
+  "definition": "An approach to agent control that selects actions directly from the current perceived situation rather than constructing and executing a complete plan in advance, trading long-horizon optimality for immediate responsiveness so that agents can act robustly in dynamic, uncertain, or partially observable environments where deliberative plans would be invalidated before they finish executing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automated-planning",
+      "label": "Automated Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:subsumption-architecture",
+        "label": "Subsumption Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:classical-planning",
+        "label": "Classical Planning"
+      },
+      {
+        "id": "urn:ngm:class:task-and-motion-planning",
+        "label": "Task and Motion Planning"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time-systems",
+        "label": "Real Time Systems"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
+      "slug": "behaviour-tree",
+      "label": "Behaviour Tree"
+    },
+    {
+      "slug": "subsumption-architecture",
+      "label": "Subsumption Architecture"
+    }
+  ],
+  "backlinks": []
+}

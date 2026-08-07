@@ -332,6 +332,10 @@
       "label": "Deep Learning"
     },
     {
+      "slug": "encoder-decoder",
+      "label": "Encoder-Decoder"
+    },
+    {
       "slug": "feature-attribution",
       "label": "Feature Attribution"
     },

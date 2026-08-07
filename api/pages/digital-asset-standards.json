@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-asset-standards",
   "domain": "spatial-computing",
-  "definition": "Digital Asset Standards is a spatial computing concept.",
+  "definition": "Formal specifications governing how digital assets are represented, identified, exchanged, and verified across platforms, including token standards such as ERC-721 and ERC-1155, metadata schemas, and interoperability profiles that keep virtual items portable and provably owned across metaverse environments and blockchain networks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -17,8 +17,18 @@
   "maturity": "draft",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-interoperability",
+        "label": "Asset Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
@@ -32,7 +42,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft-standards",
+        "label": "NFT Standards"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
   },
   "wikilinks": [
     {

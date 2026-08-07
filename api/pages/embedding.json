@@ -170,6 +170,10 @@
       "label": "Large Language Models"
     },
     {
+      "slug": "modality-specific-encoder",
+      "label": "Modality-Specific Encoder"
+    },
+    {
       "slug": "x402-and-l402-payment-protocols",
       "label": "x402 and l402 payment protocols"
     }

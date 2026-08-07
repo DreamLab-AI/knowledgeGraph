@@ -111,10 +111,6 @@
     {
       "slug": "decision-tree",
       "label": "Decision Tree"
-    },
-    {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
     }
   ]
 }

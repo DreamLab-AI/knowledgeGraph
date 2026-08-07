@@ -185,6 +185,10 @@
     {
       "slug": "proprietary-image-generation",
       "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
     }
   ]
 }

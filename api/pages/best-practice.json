@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:fcb0d8c56ff960be12a4c1ab9f290f3d1be967fab00389a9b95fe8c1dbb1ea5f",
+  "title": "Best Practice",
+  "slug": "best-practice",
+  "public": true,
+  "classIri": "urn:ngm:class:best-practice",
+  "domain": "standards",
+  "definition": "A method, technique, or configuration that a professional community has found through accumulated experience to reliably produce superior results, codified so that others can adopt it without rediscovering it. Best practices sit between raw craft knowledge and formal standards: they are advisory rather than mandatory, evolve faster than standardisation processes allow, and are the substance that bodies of knowledge, reference architectures, and accessibility or security guidelines distil and disseminate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-management",
+      "label": "Knowledge Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "knowledge-management",
+      "label": "Knowledge Management"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    },
+    {
+      "slug": "reference-architecture",
+      "label": "Reference Architecture"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "xr-accessibility-guideline",
+      "label": "XR Accessibility Guideline"
+    }
+  ]
+}

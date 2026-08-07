@@ -256,6 +256,10 @@
       "label": "Numerical Methods"
     },
     {
+      "slug": "quantum-gate",
+      "label": "Quantum Gate"
+    },
+    {
       "slug": "rendering-pipeline",
       "label": "Rendering Pipeline"
     },

@@ -92,8 +92,8 @@ public:: true
       { "@id": "urn:ngm:class:task-planning", "label": "Task Planning" }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:langgraph", "label": "LangGraph" },
-      { "@id": "urn:ngm:class:crewai", "label": "CrewAI" }
+      { "@id": "urn:ngm:class:lang-graph", "label": "LangGraph" },
+      { "@id": "urn:ngm:class:crew-ai", "label": "CrewAI" }
     ],
     "relatedTo": [
       { "@id": "urn:ngm:class:semantic-kernel", "label": "Semantic Kernel" },

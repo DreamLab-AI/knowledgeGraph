@@ -147,6 +147,14 @@
   ],
   "backlinks": [
     {
+      "slug": "basel-ii",
+      "label": "Basel II"
+    },
+    {
+      "slug": "market-risk",
+      "label": "Market Risk"
+    },
+    {
       "slug": "risk-assessment",
       "label": "Risk Assessment"
     }

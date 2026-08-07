@@ -149,6 +149,10 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "constrained-decoding",
+      "label": "Constrained Decoding"
+    },
+    {
       "slug": "dspy",
       "label": "DSPy"
     },

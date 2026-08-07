@@ -8,7 +8,7 @@
   "definition": "UV mapping is the process of projecting a 3D model's surface onto a two-dimensional coordinate space so that texture images can be applied accurately to its geometry. The letters U and V denote the axes of this 2D texture space, distinct from the X, Y, and Z axes of the model. By unwrapping the mesh into UV islands, artists control how textures, normal maps, and other surface data wrap around the object with minimal stretching or seams.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:3-d-modeling",
+      "id": "urn:ngm:class:3d-modelling",
       "label": "3D Modelling"
     }
   ],
@@ -40,7 +40,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:3-d-modeling",
+        "id": "urn:ngm:class:3d-modelling",
         "label": "3D Modelling"
       }
     ],
@@ -85,7 +85,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:3-d-modeling",
+        "id": "urn:ngm:class:3d-modelling",
         "label": "3D Modelling"
       }
     ],

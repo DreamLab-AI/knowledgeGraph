@@ -285,6 +285,10 @@
       "label": "Privacy Filter"
     },
     {
+      "slug": "privacy-law",
+      "label": "Privacy Law"
+    },
+    {
       "slug": "trust-and-safety",
       "label": "Trust and Safety"
     }

@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:9019f8058b99ac31bb7dfedda8717b003d6a9ac5b8a809f9e5e08e2349e4c4d4",
+  "title": "Uncertainty",
+  "slug": "uncertainty",
+  "public": true,
+  "classIri": "urn:ngm:class:uncertainty",
+  "domain": "artificial-intelligence",
+  "definition": "The condition of incomplete or imperfect knowledge about the state of a system, the outcome of a process, or the truth of a proposition, formalised in probability theory as a distribution over possible values rather than a single determinate answer. Uncertainty is conventionally divided into aleatoric uncertainty, arising from irreducible randomness in the world, and epistemic uncertainty, arising from limited data or model inadequacy and reducible in principle by gathering more evidence. Representing, propagating, and acting under uncertainty is central to probabilistic reasoning, robot localisation, risk assessment, and modern machine learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:risk",
+        "label": "Risk"
+      },
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "probabilistic-reasoning",
+      "label": "Probabilistic Reasoning"
+    },
+    {
+      "slug": "risk",
+      "label": "Risk"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    }
+  ],
+  "backlinks": []
+}

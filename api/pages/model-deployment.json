@@ -219,6 +219,10 @@
     {
       "slug": "tensor-rt",
       "label": "TensorRT"
+    },
+    {
+      "slug": "training-pipeline",
+      "label": "Training Pipeline"
     }
   ]
 }

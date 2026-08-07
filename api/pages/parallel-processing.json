@@ -148,6 +148,10 @@
     {
       "slug": "delta-robot",
       "label": "Delta Robot"
+    },
+    {
+      "slug": "openmp",
+      "label": "OpenMP"
     }
   ]
 }

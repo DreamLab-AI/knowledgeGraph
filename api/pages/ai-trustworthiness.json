@@ -190,6 +190,10 @@
       "label": "Decision Transparency"
     },
     {
+      "slug": "iso-iec-tr-24028",
+      "label": "ISO/IEC TR 24028"
+    },
+    {
       "slug": "policy-enforcement",
       "label": "Policy Enforcement"
     }

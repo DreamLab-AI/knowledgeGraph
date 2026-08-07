@@ -115,6 +115,10 @@
     {
       "slug": "machine-learning-infrastructure",
       "label": "Machine Learning Infrastructure"
+    },
+    {
+      "slug": "server",
+      "label": "Server"
     }
   ]
 }

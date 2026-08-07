@@ -380,6 +380,10 @@
       "label": "Human Computer Interaction"
     },
     {
+      "slug": "integrated-gradients",
+      "label": "Integrated Gradients"
+    },
+    {
       "slug": "interpretable-ai",
       "label": "Interpretable AI"
     },

@@ -119,7 +119,7 @@
         "label": "Matrix Factorisation"
       },
       {
-        "id": "urn:ngm:class:random-walks",
+        "id": "urn:ngm:class:random-walk",
         "label": "Random Walks"
       },
       {
@@ -348,6 +348,10 @@
     {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "spectral-clustering",
+      "label": "Spectral Clustering"
     }
   ]
 }

@@ -103,6 +103,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "fieldbus",
+      "label": "Fieldbus"
+    },
+    {
+      "slug": "ot-cybersecurity-framework",
+      "label": "OT Cybersecurity Framework"
+    },
+    {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
     }

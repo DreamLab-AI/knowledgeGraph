@@ -125,6 +125,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "case-management",
+      "label": "Case Management"
+    },
+    {
       "slug": "compliance-control",
       "label": "Compliance Control"
     },

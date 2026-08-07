@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:3cfab73f63be994025e9cc2edbb7eaa30cacf2b9655235eff49549ce6aba9f4f",
+  "title": "Content Repository",
+  "slug": "content-repository",
+  "public": true,
+  "classIri": "urn:ngm:class:content-repository",
+  "domain": "data",
+  "definition": "A structured store for digital content and its metadata that provides hierarchical or graph organisation, typed properties, versioning, access control, search, and observation APIs, decoupling how content is stored from the applications that author and deliver it \u2014 the persistence backbone of content management systems, digital curation platforms, and adaptive learning systems that assemble instruction from tagged learning objects.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:content-management-system",
+        "label": "Content Management System"
+      },
+      {
+        "id": "urn:ngm:class:digital-curation-platform",
+        "label": "Digital Curation Platform"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    },
+    {
+      "slug": "content-management-system",
+      "label": "Content Management System"
+    },
+    {
+      "slug": "metadata",
+      "label": "Metadata"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "digital-curation-platform",
+      "label": "Digital Curation Platform"
+    }
+  ]
+}

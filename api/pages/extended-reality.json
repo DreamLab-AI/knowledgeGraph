@@ -211,6 +211,10 @@
       "label": "Neural 3D Generation"
     },
     {
+      "slug": "openxr-standard",
+      "label": "OpenXR Standard"
+    },
+    {
       "slug": "pose-estimation",
       "label": "Pose Estimation"
     },

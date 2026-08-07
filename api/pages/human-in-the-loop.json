@@ -301,6 +301,10 @@
       "label": "Human Oversight"
     },
     {
+      "slug": "human-on-the-loop",
+      "label": "Human on the Loop"
+    },
+    {
       "slug": "llm-application-frameworks",
       "label": "LLM Application Frameworks"
     },

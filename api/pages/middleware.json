@@ -193,6 +193,10 @@
       "label": "ROS"
     },
     {
+      "slug": "resolver",
+      "label": "Resolver"
+    },
+    {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
     }

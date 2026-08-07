@@ -348,6 +348,10 @@
       "label": "Authoring Tool"
     },
     {
+      "slug": "content-curation",
+      "label": "Content Curation"
+    },
+    {
       "slug": "content-discovery",
       "label": "Content Discovery"
     },

@@ -61,7 +61,7 @@ public:: true
       {"@id": "urn:ngm:class:dijkstra-algorithm", "label": "Dijkstra Algorithm"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:localization", "label": "Localization"},
+      {"@id": "urn:ngm:class:localisation", "label": "Localization"},
       {"@id": "urn:ngm:class:slam", "label": "SLAM"},
       {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
     ],
@@ -116,7 +116,7 @@ public:: true
 
 - ### Relationships
   - hasPart:: [[Motion Planning]], [[Trajectory Planning]], [[RRT Algorithm]], [[Graph Search]], [[Dijkstra Algorithm]]
-  - requires:: [[Localization]], [[SLAM]], [[Obstacle Avoidance]]
+  - requires:: [[Localisation]], [[SLAM]], [[Obstacle Avoidance]]
   - enables:: [[Autonomous Navigation]], [[Autonomous Robot]]
   - uses:: [[Robot Operating System]]
 

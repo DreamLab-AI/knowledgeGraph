@@ -8,7 +8,7 @@
   "definition": "Communication protocol defines message formats, transmission rules, addressing schemes, and error-handling procedures that enable robots and computational systems to reliably exchange information over wired or wireless channels.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],
@@ -259,6 +259,10 @@
     {
       "slug": "federation",
       "label": "Federation"
+    },
+    {
+      "slug": "fieldbus",
+      "label": "Fieldbus"
     },
     {
       "slug": "io-t-sensor-network",

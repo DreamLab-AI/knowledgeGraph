@@ -370,12 +370,20 @@
       "label": "Exploration Exploitation Tradeoff"
     },
     {
+      "slug": "heuristics",
+      "label": "Heuristics"
+    },
+    {
       "slug": "machine-learning-discipline",
       "label": "Machine Learning Discipline"
     },
     {
       "slug": "robot-control",
       "label": "Robot Control"
+    },
+    {
+      "slug": "utility-ai",
+      "label": "Utility AI"
     }
   ]
 }

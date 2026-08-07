@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:2063ab8b5efa6f8d241c8587e45e41eafe272fdc6eb7599a1b3de62656dcd2d7",
+  "title": "Quantum Gate",
+  "slug": "quantum-gate",
+  "public": true,
+  "classIri": "urn:ngm:class:quantum-gate",
+  "domain": "infrastructure",
+  "definition": "A reversible, unitary operation applied to a small number of qubits that transforms their joint quantum state, serving as the fundamental building block of quantum circuits in the gate-based model of quantum computation. Quantum gates are the analogue of classical logic gates but, being unitary matrices acting on complex state vectors, they can create superposition and entanglement, and any quantum algorithm can be decomposed into sequences drawn from a small universal gate set.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quantum-computation-paradigm",
+      "label": "Quantum Computation Paradigm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quantum-error-correction",
+        "label": "Quantum Error Correction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:quantum-mechanics",
+        "label": "Quantum Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "quantum-computation-paradigm",
+      "label": "Quantum Computation Paradigm"
+    },
+    {
+      "slug": "quantum-mechanics",
+      "label": "Quantum Mechanics"
+    },
+    {
+      "slug": "quantum-error-correction",
+      "label": "Quantum Error Correction"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    }
+  ],
+  "backlinks": []
+}

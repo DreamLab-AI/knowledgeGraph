@@ -26,7 +26,7 @@
         "label": "Transaction Monitoring"
       },
       {
-        "id": "urn:ngm:class:suspicious-activity-reporting",
+        "id": "urn:ngm:class:suspicious-activity-report",
         "label": "Suspicious Activity Reporting"
       },
       {
@@ -164,8 +164,16 @@
       "label": "Crypto Regulation"
     },
     {
+      "slug": "cryptocurrency-regulation",
+      "label": "Cryptocurrency Regulation"
+    },
+    {
       "slug": "elliptic",
       "label": "Elliptic"
+    },
+    {
+      "slug": "fatf-recommendation-16",
+      "label": "FATF Recommendation 16"
     },
     {
       "slug": "fatf-recommendations",

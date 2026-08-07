@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:a0d15b71b21180599480720674c8a90b53730dd8441a23cfb3e22f600cbeb8a2",
+  "title": "ColBERT",
+  "slug": "colbert",
+  "public": true,
+  "classIri": "urn:ngm:class:colbert",
+  "domain": "machine-learning",
+  "definition": "A late-interaction neural retrieval model that encodes queries and documents into per-token embedding matrices with BERT and scores relevance by summing each query token's maximum similarity over document tokens, retaining much of the accuracy of full cross-encoder attention whilst permitting document embeddings to be precomputed and indexed for scalable, fast retrieval.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dense-retrieval",
+      "label": "Dense Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cross-encoder-reranking",
+        "label": "Cross-Encoder Reranking"
+      },
+      {
+        "id": "urn:ngm:class:dense-passage-retrieval",
+        "label": "Dense Passage Retrieval"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hybrid-search",
+        "label": "Hybrid Search"
+      },
+      {
+        "id": "urn:ngm:class:beir-benchmark",
+        "label": "BEIR Benchmark"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "dense-retrieval",
+      "label": "Dense Retrieval"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "beir-benchmark",
+      "label": "BEIR Benchmark"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    }
+  ]
+}

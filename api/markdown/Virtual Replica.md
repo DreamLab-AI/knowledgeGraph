@@ -63,7 +63,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"},
+      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"},
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
     ],
     "contrastsWith": [
@@ -127,7 +127,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Model]]
-  - uses:: [[Photogrammetry]], [[3D Modeling]], [[Simulation]]
+  - uses:: [[Photogrammetry]], [[3D Modelling]], [[Simulation]]
   - contrastsWith:: [[Digital Twin]]
   - enables:: [[Virtual Museum Tour]], [[Virtual Factory]]
   - relatedTo:: [[Digital Modeling]], [[Simulation Software]]

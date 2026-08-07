@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:83d8f676e5df3f3c74adb32aaee3379472d31ce37963731a5d24865c8c3fcc62",
+  "title": "Centralised Identifier",
+  "slug": "centralised-identifier",
+  "public": true,
+  "classIri": "urn:ngm:class:centralised-identifier",
+  "domain": "security",
+  "definition": "An identifier issued, controlled, and resolvable only through a central authority\u2014such as an email address bound to a provider, a username on a platform, a government-issued number, or a domain name under registry control. Centralised identifiers are the architectural opposite of decentralised identifiers: the issuing authority can revoke, reassign, surveil, or lose them, creating single points of failure and lock-in, but also offering simple governance, accountability, and recovery paths that self-sovereign schemes must engineer explicitly.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identifier",
+      "label": "Identifier"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:domain-name-system",
+        "label": "Domain Name System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:single-point-of-failure",
+        "label": "Single Point of Failure"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "identifier",
+      "label": "Identifier"
+    },
+    {
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
+    },
+    {
+      "slug": "single-point-of-failure",
+      "label": "Single Point of Failure"
+    }
+  ],
+  "backlinks": []
+}

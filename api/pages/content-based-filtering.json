@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:26157190a0c2c192890c6d132b2b8dcece70ac0664e50ea55a544366f5bd83e4",
+  "title": "Content-Based Filtering",
+  "slug": "content-based-filtering",
+  "public": true,
+  "classIri": "urn:ngm:class:content-based-filtering",
+  "domain": "machine-learning",
+  "definition": "A recommendation technique that suggests items by matching the attributes of items a user has previously engaged with \u2014 such as text features, genres, tags, or learned embeddings \u2014 against the attributes of candidate items, building a per-user preference profile in feature space; it requires no data about other users, handles new items gracefully, and offers explainable suggestions, but tends to over-specialise, recommending only items similar to what the user already knows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:recommendation-systems",
+      "label": "Recommendation Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-filtering",
+        "label": "Collaborative Filtering"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper Personalisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:filter-bubble",
+        "label": "Filter Bubble"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "recommendation-systems",
+      "label": "Recommendation Systems"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    }
+  ]
+}

@@ -69,7 +69,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
       {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
-      {"@id": "urn:ngm:class:localization", "label": "Localization"}
+      {"@id": "urn:ngm:class:localisation", "label": "Localization"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},

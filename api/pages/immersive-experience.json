@@ -139,6 +139,10 @@
   ],
   "backlinks": [
     {
+      "slug": "cultural-heritage",
+      "label": "Cultural Heritage"
+    },
+    {
       "slug": "etsi-domain-infrastructure-immersive",
       "label": "ETSI_Domain_Infrastructure___Immersive"
     },
@@ -157,6 +161,10 @@
     {
       "slug": "spatial-presence",
       "label": "Spatial Presence"
+    },
+    {
+      "slug": "vr-experiences",
+      "label": "VR Experiences"
     },
     {
       "slug": "virtual-tour",

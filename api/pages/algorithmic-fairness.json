@@ -108,6 +108,10 @@
       "label": "Algorithmic Bias"
     },
     {
+      "slug": "equalized-odds",
+      "label": "Equalized Odds"
+    },
+    {
       "slug": "privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
     }

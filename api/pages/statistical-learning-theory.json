@@ -191,6 +191,10 @@
     {
       "slug": "translation",
       "label": "Translation"
+    },
+    {
+      "slug": "vc-dimension",
+      "label": "VC Dimension"
     }
   ]
 }

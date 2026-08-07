@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:630845811d53dc40fbe2c97977123e585e46c1fb1848db48fd49cd86b795f043",
+  "title": "OT Cybersecurity Framework",
+  "slug": "ot-cybersecurity-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:ot-cybersecurity-framework",
+  "domain": "security",
+  "definition": "An OT cybersecurity framework is a structured body of security requirements, zone-and-conduit models, maturity levels, and assurance processes designed specifically for operational technology \u2014 the industrial control systems, SCADA platforms, PLCs, and safety systems that actuate physical processes. Unlike generic IT cybersecurity frameworks, it prioritises availability and safety over confidentiality, accommodates decades-long asset lifecycles and legacy protocols, and assigns duties across asset owners, integrators, and product suppliers, with the IEC 62443 series as its canonical instantiation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity-framework",
+      "label": "Cybersecurity Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:defence-in-depth",
+        "label": "Defence in Depth"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-technology",
+        "label": "Operational Technology"
+      },
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "cybersecurity-framework",
+      "label": "Cybersecurity Framework"
+    },
+    {
+      "slug": "iec-62443",
+      "label": "IEC 62443"
+    },
+    {
+      "slug": "operational-technology",
+      "label": "Operational Technology"
+    },
+    {
+      "slug": "scada",
+      "label": "SCADA"
+    }
+  ],
+  "backlinks": []
+}

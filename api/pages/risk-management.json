@@ -260,6 +260,10 @@
       "label": "Corporate Governance"
     },
     {
+      "slug": "credit-risk",
+      "label": "Credit Risk"
+    },
+    {
       "slug": "cross-platform-compliance-hub",
       "label": "Cross-Platform Compliance Hub"
     },
@@ -308,8 +312,16 @@
       "label": "Governance Framework"
     },
     {
+      "slug": "governance-risk-compliance",
+      "label": "Governance Risk Compliance"
+    },
+    {
       "slug": "governance-structure",
       "label": "Governance Structure"
+    },
+    {
+      "slug": "hedging",
+      "label": "Hedging"
     },
     {
       "slug": "human-oversight",
@@ -318,6 +330,10 @@
     {
       "slug": "human-in-the-loop",
       "label": "Human in the Loop"
+    },
+    {
+      "slug": "market-risk",
+      "label": "Market Risk"
     },
     {
       "slug": "metaverse-liability-model",

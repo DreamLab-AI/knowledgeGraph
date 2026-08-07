@@ -122,6 +122,14 @@
     {
       "slug": "decentralised-web",
       "label": "Decentralised Web"
+    },
+    {
+      "slug": "on-premises",
+      "label": "On-Premises"
+    },
+    {
+      "slug": "subscription-model",
+      "label": "Subscription Model"
     }
   ]
 }

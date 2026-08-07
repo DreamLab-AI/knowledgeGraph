@@ -182,6 +182,10 @@
       "label": "Image and Video Restoration"
     },
     {
+      "slug": "modality-specific-encoder",
+      "label": "Modality-Specific Encoder"
+    },
+    {
       "slug": "segmentation-and-identification",
       "label": "Segmentation and Identification"
     },

@@ -40,7 +40,7 @@ public:: true
         "label": "Thread Protocol"
       },
       {
-        "@id": "urn:ngm:class:wifi",
+        "@id": "urn:ngm:class:wi-fi",
         "label": "Wi-Fi"
       }
     ],

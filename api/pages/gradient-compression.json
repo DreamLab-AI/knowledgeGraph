@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:6f11740deffcafb9a1ae36b63dbec10858ddbaf3a53016f6edf697640ec18dd4",
+  "title": "Gradient Compression",
+  "slug": "gradient-compression",
+  "public": true,
+  "classIri": "urn:ngm:class:gradient-compression",
+  "domain": "machine-learning",
+  "definition": "A family of communication-efficiency techniques for distributed and federated machine learning that reduce the volume of gradient data exchanged between workers during training, using quantisation to fewer bits, sparsification of small-magnitude entries, or low-rank decomposition, usually combined with error-feedback so the accumulated compression error is reapplied and convergence is preserved.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-compression",
+      "label": "Data Compression"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gradient-aggregation",
+        "label": "Gradient Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "slug": "gradient-aggregation",
+      "label": "Gradient Aggregation"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    }
+  ]
+}

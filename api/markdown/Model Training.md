@@ -514,7 +514,7 @@ public:: true
         "label": "Constitutional AI Training Methodology"
       },
       {
-        "@id": "urn:ngm:class:direct-preference-optimization",
+        "@id": "urn:ngm:class:direct-preference-optimisation",
         "label": "Direct Preference Optimization"
       },
       {
@@ -1180,7 +1180,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Direct Preference Optimization]]",
+      "raw": "[[Direct Preference Optimisation]]",
       "resolved": "urn:visionflow:owl:class:direct-preference-optimization",
       "kind": "ResolvedLink"
     },
@@ -1323,7 +1323,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Machine Learning Discipline]], [[Deep Learning]], [[Optimisation]], [[Large-Scale Pretrained Foundation Model]], [[Neural Networks]]
-  - has-part:: [[Pre-training]], [[Supervised Fine Tuning]], [[RLHF]], [[Direct Preference Optimization]], [[KTO]], [[Constitutional AI Training Methodology]], [[Data Curation]], [[Reward Model]], [[Policy Optimisation]], [[Gradient Checkpointing]], [[Mixed Precision Training]]
+  - has-part:: [[Pre-training]], [[Supervised Fine Tuning]], [[RLHF]], [[Direct Preference Optimisation]], [[KTO]], [[Constitutional AI Training Methodology]], [[Data Curation]], [[Reward Model]], [[Policy Optimisation]], [[Gradient Checkpointing]], [[Mixed Precision Training]]
   - requires:: [[Training Data]], [[Compute Infrastructure]], [[GPU Clusters]], [[Distributed Computing]], [[Data Pipeline]], [[Loss Function]], [[Optimiser]], [[Tokeniser]]
   - enables:: [[Large Language Models]], [[Large-Scale Pretrained Foundation Model]], [[Emergent Capabilities]], [[Instruction Following]], [[Alignment]], [[Reasoning]], [[Code Generation]]
   - implements:: [[Causal Language Modelling]], [[Backpropagation]], [[Stochastic Gradient Descent]], [[AdamW]], [[ZeRO Optimisation]], [[Tensor Parallelism]], [[Pipeline Parallelism]], [[LoRA DoRA etc]]

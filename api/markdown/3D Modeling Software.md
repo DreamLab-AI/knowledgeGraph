@@ -24,7 +24,7 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"}
+    {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"}
   ],
   "relations": {
     "enables": [

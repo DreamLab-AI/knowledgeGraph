@@ -44,7 +44,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:data-center",
+        "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
       {
@@ -552,6 +552,10 @@
       "label": "Nostr Protocol"
     },
     {
+      "slug": "on-premises",
+      "label": "On-Premises"
+    },
+    {
       "slug": "open-xr",
       "label": "OpenXR"
     },
@@ -630,10 +634,6 @@
     {
       "slug": "spatial-index",
       "label": "Spatial Index"
-    },
-    {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
     },
     {
       "slug": "storage-infrastructure",

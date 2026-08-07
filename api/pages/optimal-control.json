@@ -27,7 +27,7 @@
         "label": "State Space Representation"
       },
       {
-        "id": "urn:ngm:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],

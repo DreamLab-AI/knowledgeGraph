@@ -535,10 +535,6 @@
       "label": "Stablecoin"
     },
     {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
-    },
-    {
       "slug": "testing-process",
       "label": "Testing Process"
     },

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:95e94a1b237bcbabdbd40b6bb538c735552c661fa71725ad2c3094c42d96ae60",
+  "title": "Talent Concentration",
+  "slug": "talent-concentration",
+  "public": true,
+  "classIri": "urn:ngm:class:talent-concentration",
+  "domain": "governance",
+  "definition": "Talent concentration is the clustering of scarce, highly skilled researchers and engineers within a small number of organisations, geographic hubs, or research groups. In frontier AI the pattern is pronounced: a few thousand specialists capable of training state-of-the-art models are concentrated in a handful of laboratories and metropolitan clusters, reinforced by compensation escalation, compute access, and network effects. The resulting asymmetry shapes competitive dynamics, national capability, and the diffusion of expertise across the wider economy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-talent",
+      "label": "AI Talent"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-talent-war",
+        "label": "AI Talent War"
+      },
+      {
+        "id": "urn:ngm:class:ai-investment",
+        "label": "AI Investment"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

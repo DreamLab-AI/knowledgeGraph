@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:7dd772ab7dad191cc7af65c2bc60a5cc6d57e8f723a952efd129cfe7f1b004a7",
+  "title": "Credit Risk",
+  "slug": "credit-risk",
+  "public": true,
+  "classIri": "urn:ngm:class:credit-risk",
+  "domain": "finance",
+  "definition": "The risk of financial loss arising from a borrower or counterparty failing to meet contractual obligations, quantified through probability of default, loss given default and exposure at default, and managed through credit scoring, collateralisation, diversification, provisioning and regulatory capital requirements; the dominant risk category on most bank balance sheets and the core determinant of loan pricing in both traditional and decentralised lending.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk",
+      "label": "Risk"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-risk",
+        "label": "Operational Risk"
+      },
+      {
+        "id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "risk",
+      "label": "Risk"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "operational-risk",
+      "label": "Operational Risk"
+    },
+    {
+      "slug": "lending-protocol",
+      "label": "Lending Protocol"
+    }
+  ],
+  "backlinks": []
+}

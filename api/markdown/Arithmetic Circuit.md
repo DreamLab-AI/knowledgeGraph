@@ -36,7 +36,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:zk-snark", "label": "zk-SNARK"},
-      {"@id": "urn:ngm:class:zk-stark", "label": "zk-STARK"},
+      {"@id": "urn:ngm:class:zk-starks", "label": "zk-STARK"},
       {"@id": "urn:ngm:class:verifiable-computation", "label": "Verifiable Computation"}
     ],
     "hasPart": [

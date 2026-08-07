@@ -391,6 +391,10 @@
       "label": "Feed Forward Network"
     },
     {
+      "slug": "graph-convolutional-network",
+      "label": "Graph Convolutional Network"
+    },
+    {
       "slug": "hand-tracking",
       "label": "Hand Tracking"
     },

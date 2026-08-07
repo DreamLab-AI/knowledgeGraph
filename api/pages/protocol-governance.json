@@ -118,6 +118,10 @@
     {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
+    },
+    {
+      "slug": "stakeholder-coordination",
+      "label": "Stakeholder Coordination"
     }
   ]
 }

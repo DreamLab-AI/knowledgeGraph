@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:ab598f21d63a582ae9c026aab253ee37184db5c4ec83a033e9a6ca88afb95767",
+  "title": "ISO/IEC TR 24028",
+  "slug": "iso-iec-tr-24028",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-tr-24028",
+  "domain": "standards",
+  "definition": "ISO/IEC TR 24028 is a technical report, published by ISO/IEC JTC 1/SC 42, that provides an overview of trustworthiness in artificial intelligence. It surveys the properties that make AI systems trustworthy \u2014 reliability, robustness, resilience, safety, transparency, explainability, controllability, and privacy \u2014 and catalogues the threats to trustworthiness and the mitigation approaches available across the AI lifecycle. As a foundational overview it frames the vocabulary and concerns that later, more specific standards build upon. It is a distinct deliverable from ISO/IEC TR 24027, which addresses bias in AI systems and AI-aided decision making; the two carry different numbers and cover different subjects within the same SC 42 programme.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-iec-tr-24027",
+        "label": "ISO-IEC TR 24027"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO-IEC"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    },
+    {
+      "slug": "iso-iec-tr-24027",
+      "label": "ISO-IEC TR 24027"
+    },
+    {
+      "slug": "ai-trustworthiness",
+      "label": "AI Trustworthiness"
+    }
+  ],
+  "backlinks": []
+}

@@ -166,7 +166,7 @@
         "label": "ZeRO Optimizer"
       },
       {
-        "id": "urn:ngm:class:deepspeed",
+        "id": "urn:ngm:class:deep-speed",
         "label": "DeepSpeed"
       }
     ]
@@ -176,6 +176,14 @@
     {
       "slug": "fsdp",
       "label": "FSDP"
+    },
+    {
+      "slug": "large-scale-training",
+      "label": "Large-Scale Training"
+    },
+    {
+      "slug": "parameter-server",
+      "label": "Parameter Server"
     }
   ]
 }

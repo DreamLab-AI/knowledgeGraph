@@ -152,6 +152,10 @@
       "label": "Digital Workplace Platform"
     },
     {
+      "slug": "document-processing",
+      "label": "Document Processing"
+    },
+    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     },

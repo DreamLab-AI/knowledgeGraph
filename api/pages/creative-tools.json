@@ -140,7 +140,7 @@
         "label": "Human-AI Collaboration"
       },
       {
-        "id": "urn:ngm:class:c2pa",
+        "id": "urn:ngm:class:c2-pa",
         "label": "C2PA"
       }
     ]
@@ -285,6 +285,10 @@
   ],
   "backlinks": [
     {
+      "slug": "3d-asset-creation",
+      "label": "3D Asset Creation"
+    },
+    {
       "slug": "adobe-firefly",
       "label": "Adobe Firefly"
     },
@@ -311,6 +315,10 @@
     {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "multimodal-model",
+      "label": "Multimodal Model"
     }
   ]
 }

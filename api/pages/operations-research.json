@@ -42,7 +42,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:logistics-optimization",
+        "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       },
       {
@@ -86,7 +86,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       },
       {
@@ -173,10 +173,6 @@
     {
       "slug": "decision-theory",
       "label": "Decision Theory"
-    },
-    {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
     },
     {
       "slug": "time-series-forecasting",

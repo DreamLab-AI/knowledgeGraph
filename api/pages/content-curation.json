@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:05cd35c371029c94e3e1bf498a457b3640d56b822414f21ed1e4cbf097708437",
+  "title": "Content Curation",
+  "slug": "content-curation",
+  "public": true,
+  "classIri": "urn:ngm:class:content-curation",
+  "domain": "data",
+  "definition": "The practice of discovering, selecting, contextualising, and organising existing content for a particular audience, in contrast to producing new material. Content curation adds value through judgement\u2014filtering signal from an overwhelming volume of published media, sequencing items into coherent collections, and annotating them with commentary or provenance\u2014whether performed by human editors, algorithmic recommendation systems, or hybrid pipelines that combine both.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-management",
+      "label": "Information Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:data-curation",
+        "label": "Data Curation"
+      },
+      {
+        "id": "urn:ngm:class:attention-economy",
+        "label": "Attention Economy"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "information-management",
+      "label": "Information Management"
+    },
+    {
+      "slug": "recommendation-system",
+      "label": "Recommendation System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "attention-economy",
+      "label": "Attention Economy"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    }
+  ]
+}

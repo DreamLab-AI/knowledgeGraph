@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:b70e74e842592f6505b31daf621ead479ab2e4c0e65904c16e25e4c34365b4e1",
+  "title": "Ransomware",
+  "slug": "ransomware",
+  "public": true,
+  "classIri": "urn:ngm:class:ransomware",
+  "domain": "security",
+  "definition": "A class of malware that denies victims access to their data or systems \u2014 typically by encrypting files with attacker-held keys, and increasingly by exfiltrating data for extortion \u2014 and demands payment, usually in cryptocurrency, for restoration or non-disclosure. Operated today as a service economy with affiliates, initial-access brokers, and leak sites, ransomware is among the most financially damaging cyber threats and the principal stress test of an organisation's backup, incident response, and disaster recovery posture.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:malware",
+      "label": "Malware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
+      },
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "malware",
+      "label": "Malware"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
+      "slug": "disaster-recovery",
+      "label": "Disaster Recovery"
+    },
+    {
+      "slug": "incident-response",
+      "label": "Incident Response"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

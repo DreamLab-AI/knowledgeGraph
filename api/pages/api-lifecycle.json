@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:e783eeba7ecb3168bd6166ec7bee1c2ba0a2e6e40cff06b5417568c39e7e96c3",
+  "title": "API Lifecycle",
+  "slug": "api-lifecycle",
+  "public": true,
+  "classIri": "urn:ngm:class:api-lifecycle",
+  "domain": "infrastructure",
+  "definition": "The end-to-end progression of an application programming interface from design and specification through implementation, publication, versioning, monitoring, deprecation, and eventual retirement. Managing the API lifecycle as a deliberate process \u2014 with contract-first design, semantic versioning, sunset policies, and consumer migration paths \u2014 is what keeps evolving service interfaces stable for the clients that depend on them.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:api-management",
+      "label": "API Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
+      },
+      {
+        "id": "urn:ngm:class:deprecation",
+        "label": "Deprecation"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:semantic-versioning",
+        "label": "Semantic Versioning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "api-management",
+      "label": "API Management"
+    },
+    {
+      "slug": "api-versioning",
+      "label": "API Versioning"
+    },
+    {
+      "slug": "api-design",
+      "label": "API Design"
+    }
+  ],
+  "backlinks": []
+}

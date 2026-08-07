@@ -786,6 +786,10 @@
       "label": "Policy Enforcement"
     },
     {
+      "slug": "presentation-exchange",
+      "label": "Presentation Exchange"
+    },
+    {
       "slug": "reputation-system",
       "label": "Reputation System"
     },

@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:845312c0be3391c9151694e2c3e09a04415159c46d472a0d8fb4645d90d92c20",
+  "title": "Local Planner",
+  "slug": "local-planner",
+  "public": true,
+  "classIri": "urn:ngm:class:local-planner",
+  "domain": "robotics",
+  "definition": "The component of a robot navigation system that converts a global route into safe, kinematically feasible velocity commands over a short horizon, reacting in real time to obstacles detected by onboard sensors. Operating at control rates of five to twenty hertz over a rolling window of a few metres, a local planner evaluates candidate trajectories against a local costmap and the robot's kinodynamic limits, selecting commands that make progress along the global path while avoiding collisions. Classic realisations include the Dynamic Window Approach, Timed Elastic Bands, and sampling-based controllers such as MPPI; in sampling-based roadmap methods the same term names the routine that checks whether two configurations can be connected by a simple collision-free motion.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:motion-planning",
+      "label": "Motion Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS Navigation Stack"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-roadmap",
+        "label": "Probabilistic Roadmap"
+      },
+      {
+        "id": "urn:ngm:class:velocity-control",
+        "label": "Velocity Control"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "ros-navigation-stack",
+      "label": "ROS Navigation Stack"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    }
+  ]
+}

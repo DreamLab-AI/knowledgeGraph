@@ -45,7 +45,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"},
-      {"@id": "urn:ngm:class:robo-human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
       {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
       {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
       {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}

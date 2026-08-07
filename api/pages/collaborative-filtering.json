@@ -303,6 +303,10 @@
       "label": "Content Discovery"
     },
     {
+      "slug": "content-based-filtering",
+      "label": "Content-Based Filtering"
+    },
+    {
       "slug": "fashion",
       "label": "Fashion"
     },

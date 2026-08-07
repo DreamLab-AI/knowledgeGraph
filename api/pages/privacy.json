@@ -389,6 +389,10 @@
       "label": "David Chaum"
     },
     {
+      "slug": "deanonymisation",
+      "label": "Deanonymisation"
+    },
+    {
       "slug": "decision-engine",
       "label": "Decision Engine"
     },

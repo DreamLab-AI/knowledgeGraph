@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:a8f275950ea8929e6ddae18d53d492cae50bc348cfc21449183146b257aed695",
+  "title": "On-Premises",
+  "slug": "on-premises",
+  "public": true,
+  "classIri": "urn:ngm:class:on-premises",
+  "domain": "infrastructure",
+  "definition": "On-premises is the deployment model in which an organisation runs its computing infrastructure \u2014 servers, storage, networking, and the software on top \u2014 in facilities it owns or directly controls, rather than renting capacity from a cloud provider. The organisation purchases hardware as capital expenditure, operates and patches the full stack itself, and retains physical custody of its data, trading the elasticity and managed services of public cloud for maximal control over locality, latency, security boundaries, and long-run unit costs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure as a Service"
+      },
+      {
+        "id": "urn:ngm:class:software-as-a-service",
+        "label": "Software as a Service"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:hybrid-cloud",
+        "label": "Hybrid Cloud"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "hybrid-cloud",
+      "label": "Hybrid Cloud"
+    },
+    {
+      "slug": "infrastructure-as-a-service",
+      "label": "Infrastructure As A Service"
+    },
+    {
+      "slug": "software-as-a-service",
+      "label": "Software As A Service"
+    },
+    {
+      "slug": "data-centre",
+      "label": "Data Centre"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "backlinks": []
+}

@@ -54,7 +54,7 @@ public:: true
         "label": "Pattern Recognition"
       },
       {
-        "@id": "urn:ngm:class:behavioral-analytics",
+        "@id": "urn:ngm:class:behavioural-analytics",
         "label": "Behavioral Analytics"
       },
       {
@@ -168,7 +168,7 @@ public:: true
   - Transaction monitoring systems ingest financial event streams from core banking, payment rails, brokerage platforms, and cryptocurrency exchanges, applying rule-based scenario detection and machine-learning models to identify suspicious activity patterns. Detected anomalies generate alerts that compliance analysts investigate, resulting either in case closure or the filing of Suspicious Activity Reports (SARs) with Financial Intelligence Units (FIUs) such as FINCEN (US), NCA (UK), or AUSTRAC (Australia). Regulatory requirements under [[FATF]] Recommendations 10 and 20, and national AML legislation such as the EU's AMLD6 and the US Bank Secrecy Act, mandate transaction monitoring for banks, payment institutions, crypto asset service providers, and other regulated entities. Close integration with [[AML KYC Compliance]] processes ensures customer risk profiles inform monitoring thresholds.
 
 - ### Relationships
-  - [[Anti-Money Laundering]] programmes use transaction monitoring as their primary detection mechanism. [[Pattern Recognition]] algorithms identify structuring (smurfing), layering, and integration typologies. [[Graph Analytics]] maps transaction networks to identify money mule chains and shell company structures. [[Behavioral Analytics]] establishes baseline customer behaviour to detect anomalous deviations. [[Regulatory Reporting]] pipelines automate SAR filing and suspicious transaction report (STR) submissions.
+  - [[Anti-Money Laundering]] programmes use transaction monitoring as their primary detection mechanism. [[Pattern Recognition]] algorithms identify structuring (smurfing), layering, and integration typologies. [[Graph Analytics]] maps transaction networks to identify money mule chains and shell company structures. [[Behavioural Analytics]] establishes baseline customer behaviour to detect anomalous deviations. [[Regulatory Reporting]] pipelines automate SAR filing and suspicious transaction report (STR) submissions.
 
 - ### Content
   - Systematic transaction monitoring requirements emerged from the 1989 FATF recommendations and were implemented in US law through the Bank Secrecy Act regulations, particularly FinCEN's 2002 SAR rules. Early systems were purely rule-based, applying fixed thresholds (e.g., cash transactions above $10,000) and scenario templates. By the 2000s, purpose-built platforms from NICE Actimize, Tonbeller (now Wolters Kluwer), and Oracle FCCM dominated the market, offering hundreds of pre-built detection scenarios.

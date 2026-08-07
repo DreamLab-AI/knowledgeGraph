@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:c88172024b5aeeeb7a01b971cf0b569d103151140880315505e77fc7653bd4bb",
+  "title": "Insider Trading",
+  "slug": "insider-trading",
+  "public": true,
+  "classIri": "urn:ngm:class:insider-trading",
+  "domain": "finance",
+  "definition": "The buying or selling of a publicly traded company's securities by individuals with access to material, non-public information about that company, in breach of a fiduciary duty or other relationship of trust. It undermines market integrity and investor confidence by giving informed parties an unfair advantage over ordinary participants, and is prohibited under securities law in most jurisdictions, with enforcement led by regulators such as the SEC and the FCA.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:market-manipulation",
+      "label": "Market Manipulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:securities-law",
+        "label": "Securities Law"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "market-manipulation",
+      "label": "Market Manipulation"
+    },
+    {
+      "slug": "market-integrity",
+      "label": "Market Integrity"
+    },
+    {
+      "slug": "investor-protection",
+      "label": "Investor Protection"
+    },
+    {
+      "slug": "securities-law",
+      "label": "Securities Law"
+    }
+  ],
+  "backlinks": []
+}

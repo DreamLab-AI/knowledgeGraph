@@ -154,6 +154,14 @@
     {
       "slug": "material-system",
       "label": "Material System"
+    },
+    {
+      "slug": "statistical-mechanics",
+      "label": "Statistical Mechanics"
+    },
+    {
+      "slug": "system-dynamics",
+      "label": "System Dynamics"
     }
   ]
 }

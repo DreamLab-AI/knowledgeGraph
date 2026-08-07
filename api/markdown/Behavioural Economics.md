@@ -124,7 +124,7 @@ public:: true
         "label": "Incentive Compatibility"
       },
       {
-        "@id": "urn:ngm:class:behavioral-analytics",
+        "@id": "urn:ngm:class:behavioural-analytics",
         "label": "Behavioral Analytics"
       },
       {
@@ -164,7 +164,7 @@ public:: true
   - Behavioural economics combines the rigour of formal economic modelling with empirical evidence from psychology to explain how real people make choices under uncertainty, scarcity, and social pressure. Key constructs include prospect theory's asymmetric treatment of gains and losses, hyperbolic discounting of future rewards, the anchoring effect of irrelevant reference points, and social norms that override self-interest. The field informs policy through [[Mechanism Design]] and choice architecture, and is increasingly applied in digital product design and algorithmic systems. Its methods draw heavily on [[Heuristic Methods]] and [[Behavioral Modeling]].
 
 - ### Relationships
-  - Behavioural economics [[uses]] [[Heuristic Methods]] to characterise cognitive shortcuts that produce predictable biases, and [[uses]] [[Behavioral Modeling]] to formalise these patterns mathematically. It [[enables]] [[Mechanism Design]] by identifying how incentive structures must account for bounded rationality, and [[enables]] [[Incentive Alignment]] in organisational and platform contexts. It is [[relatedTo]] [[Incentive Compatibility]] in game-theoretic settings and to [[Behavioral Analytics]] as the applied data-driven counterpart.
+  - Behavioural economics [[uses]] [[Heuristic Methods]] to characterise cognitive shortcuts that produce predictable biases, and [[uses]] [[Behavioral Modeling]] to formalise these patterns mathematically. It [[enables]] [[Mechanism Design]] by identifying how incentive structures must account for bounded rationality, and [[enables]] [[Incentive Alignment]] in organisational and platform contexts. It is [[relatedTo]] [[Incentive Compatibility]] in game-theoretic settings and to [[Behavioural Analytics]] as the applied data-driven counterpart.
 
 - ### Content
   - The intellectual roots of behavioural economics lie in the work of Herbert Simon, who introduced the concept of bounded rationality in the 1950s, and in Kahneman and Tversky's prospect theory, published in 1979. Their empirical demonstrations that people weight losses approximately twice as heavily as equivalent gains posed a direct challenge to expected utility theory. Richard Thaler extended this programme into market anomalies and later co-developed nudge theory with Cass Sunstein, earning the Nobel Memorial Prize in Economic Sciences in 2017.

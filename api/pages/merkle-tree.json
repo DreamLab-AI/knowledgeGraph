@@ -261,6 +261,10 @@
       "label": "State Machine"
     },
     {
+      "slug": "state-proof",
+      "label": "State Proof"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     },

@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:2a38a24b6fb693d9f375fdfd7f98ef9eee2bfb79481b368891a265ab80c62492",
+  "title": "Multi-Armed Bandit",
+  "slug": "multi-armed-bandit",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-armed-bandit",
+  "domain": "machine-learning",
+  "definition": "A sequential decision-making framework in which an agent repeatedly chooses among a fixed set of actions ('arms') with unknown reward distributions, observing only the reward of the chosen arm, and seeks to maximise cumulative reward \u2014 equivalently, to minimise regret against the best arm in hindsight; it isolates the exploration\u2013exploitation trade-off in its purest form, since unlike a full Markov decision process the environment has no state transitions, and underpins algorithms such as epsilon-greedy, UCB, and Thompson sampling used in A/B testing, recommendation, and adaptive experimentation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:exploration-exploitation-tradeoff",
+        "label": "Exploration Exploitation Tradeoff"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:online-learning",
+        "label": "Online Learning"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "recommendation-systems",
+      "label": "Recommendation Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    }
+  ]
+}

@@ -131,6 +131,14 @@
       "label": "Content Delivery"
     },
     {
+      "slug": "ieee-p2048-4",
+      "label": "IEEE P2048-4"
+    },
+    {
+      "slug": "mpeg",
+      "label": "MPEG"
+    },
+    {
       "slug": "meeting-recording",
       "label": "Meeting Recording"
     },

@@ -54,7 +54,7 @@ public:: true
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:localization", "label": "Localization"},
+      {"@id": "urn:ngm:class:localisation", "label": "Localization"},
       {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
     ],
     "uses": [
@@ -105,7 +105,7 @@ public:: true
   - **requires** [[SLAM]] — simultaneous localisation and mapping provides the real-time map and pose needed for navigation
   - **requires** [[Sensor]] — sensors (LiDAR, cameras, IMUs) supply the perceptual data the navigation system depends on
   - **hasPart** [[Path Planning]] — path planning is a core sub-module computing collision-free trajectories
-  - **hasPart** [[Localization]] — localisation determines the robot's current position within the map
+  - **hasPart** [[Localisation]] — localisation determines the robot's current position within the map
   - **hasPart** [[Obstacle Avoidance]] — reactive obstacle avoidance handles dynamic impediments not in the static map
   - **uses** [[Lidar]] — LiDAR is the most common sensor modality for outdoor and large-scale navigation
   - **uses** [[Motion Planning]] — motion planning converts high-level paths into executable joint or velocity commands

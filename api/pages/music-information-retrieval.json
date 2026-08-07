@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:5b7810d6aaa5510c684f7c4479b9a981e95bb404f37e127ef96608c51ae32706",
+  "title": "Music Information Retrieval",
+  "slug": "music-information-retrieval",
+  "public": true,
+  "classIri": "urn:ngm:class:music-information-retrieval",
+  "domain": "artificial-intelligence",
+  "definition": "Music Information Retrieval (MIR) is the interdisciplinary science of extracting, analysing and organising musically meaningful information from audio signals, symbolic scores and metadata. It spans tasks such as genre and mood classification, chord and key estimation, beat tracking, melody extraction, audio fingerprinting, cover-song detection and source separation, combining digital signal processing with machine learning to make large music collections searchable, navigable and analysable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "music-generation",
+      "label": "Music Generation"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    }
+  ]
+}

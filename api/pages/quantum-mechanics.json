@@ -97,6 +97,10 @@
     {
       "slug": "convergence",
       "label": "Convergence"
+    },
+    {
+      "slug": "quantum-gate",
+      "label": "Quantum Gate"
     }
   ]
 }

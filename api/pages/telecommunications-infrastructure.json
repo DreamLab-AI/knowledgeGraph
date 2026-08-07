@@ -142,5 +142,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "fibre-optic-network",
+      "label": "Fibre Optic Network"
+    }
+  ]
 }

@@ -147,16 +147,16 @@
       "label": "DSPy"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "model-training",
       "label": "Model Training"
     },
     {
       "slug": "prompt-engineering",
       "label": "Prompt Engineering"
+    },
+    {
+      "slug": "specification-gaming",
+      "label": "Specification Gaming"
     }
   ]
 }

@@ -217,6 +217,10 @@
       "label": "3D File Format"
     },
     {
+      "slug": "deserialisation",
+      "label": "Deserialisation"
+    },
+    {
       "slug": "universal-manifest",
       "label": "Universal Manifest"
     }

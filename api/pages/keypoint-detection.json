@@ -45,6 +45,10 @@
       "label": "DWPose"
     },
     {
+      "slug": "heatmap-regression",
+      "label": "Heatmap Regression"
+    },
+    {
       "slug": "image-segmentation",
       "label": "Image Segmentation"
     },

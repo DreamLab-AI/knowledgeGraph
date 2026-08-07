@@ -150,6 +150,10 @@
   ],
   "backlinks": [
     {
+      "slug": "fragment-shading",
+      "label": "Fragment Shading"
+    },
+    {
       "slug": "gpu",
       "label": "GPU"
     },

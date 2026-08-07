@@ -123,6 +123,10 @@
       "label": "AI Model"
     },
     {
+      "slug": "grokking",
+      "label": "Grokking"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     }

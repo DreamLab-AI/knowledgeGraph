@@ -296,6 +296,14 @@
     {
       "slug": "alignment",
       "label": "Alignment"
+    },
+    {
+      "slug": "instrumental-convergence",
+      "label": "Instrumental Convergence"
+    },
+    {
+      "slug": "mesa-optimisation",
+      "label": "Mesa-Optimisation"
     }
   ]
 }

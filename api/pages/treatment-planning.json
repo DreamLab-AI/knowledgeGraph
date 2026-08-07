@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:12e39f846e657ad3b09603b75b74fe56b073bb0488dc96d881ced285bb5dc4b2",
+  "title": "Treatment Planning",
+  "slug": "treatment-planning",
+  "public": true,
+  "classIri": "urn:ngm:class:treatment-planning",
+  "domain": "ai",
+  "definition": "The clinical process of deciding how a patient's condition will be treated: integrating diagnosis, imaging, patient history, and evidence-based guidelines into a specific course of therapy with defined goals, doses, sequencing, and review points; in domains such as radiotherapy and surgery it is a quantitative, imaging-driven activity that medical image analysis and medical imaging AI systems support but do not replace.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:healthcare",
+      "label": "Healthcare"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:medical-image-analysis",
+        "label": "Medical Image Analysis"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:personalised-medicine",
+        "label": "Personalised Medicine"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "healthcare",
+      "label": "Healthcare"
+    },
+    {
+      "slug": "medical-imaging-ai",
+      "label": "Medical Imaging AI"
+    },
+    {
+      "slug": "clinical-decision-support",
+      "label": "Clinical Decision Support"
+    }
+  ],
+  "backlinks": []
+}

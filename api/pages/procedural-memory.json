@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:60d76c103c16acb643e3b6d3995517d462aea97b2bec682489c11fa6e9893ec5",
+  "title": "Procedural Memory",
+  "slug": "procedural-memory",
+  "public": true,
+  "classIri": "urn:ngm:class:procedural-memory",
+  "domain": "artificial-intelligence",
+  "definition": "The long-term memory subsystem that stores knowledge of how to perform actions and skills \u2014 as opposed to episodic memory of specific events or semantic memory of facts; in cognitive science it underlies habits and motor skills learnt through repetition, while in cognitive architectures and AI agents it is realised as production rules, learned policies, reusable workflows, or refined system prompts that encode competence rather than content.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-memory",
+      "label": "Agent Memory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:agent-memory-layers",
+        "label": "Agent Memory Layers"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "working-memory",
+      "label": "Working Memory"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    }
+  ]
+}

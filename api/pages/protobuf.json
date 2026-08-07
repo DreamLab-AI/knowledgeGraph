@@ -96,5 +96,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "deserialisation",
+      "label": "Deserialisation"
+    }
+  ]
 }

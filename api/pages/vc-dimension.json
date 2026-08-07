@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:c02960fc1ab85861134e5f0afa3b64bb6362882d775081fd484d6d44480c1453",
+  "title": "VC Dimension",
+  "slug": "vc-dimension",
+  "public": true,
+  "classIri": "urn:ngm:class:vc-dimension",
+  "domain": "machine-learning",
+  "definition": "The Vapnik-Chervonenkis (VC) dimension is a measure of the capacity of a hypothesis class, defined as the size of the largest set of points that the class can shatter \u2014 classify correctly under every possible binary labelling. Introduced by Vapnik and Chervonenkis in 1971, it yields distribution-free generalisation bounds in statistical learning theory: a finite VC dimension guarantees that empirical risk converges uniformly to true risk as sample size grows, linking model complexity to the amount of data needed to learn reliably.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-complexity",
+      "label": "Model Complexity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "model-complexity",
+      "label": "Model Complexity"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
+      "slug": "overfitting",
+      "label": "Overfitting"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:9977245bcca5af1a7833528982e8131d326e896bbfe84888698c8e5bf90f283f",
+  "title": "Integrated Gradients",
+  "slug": "integrated-gradients",
+  "public": true,
+  "classIri": "urn:ngm:class:integrated-gradients",
+  "domain": "machine-learning",
+  "definition": "A gradient-based feature attribution method for differentiable models, introduced by Sundararajan, Taly, and Yan (2017), that assigns each input feature a contribution equal to the path integral of the model's gradient along the straight line from a neutral baseline input to the actual input; it uniquely satisfies the axioms of sensitivity and implementation invariance among path methods, its attributions sum exactly to the difference between the model's output and the baseline output (completeness), and it requires only gradient access rather than model retraining or sampling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:feature-attribution",
+      "label": "Feature Attribution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lime",
+        "label": "LIME"
+      },
+      {
+        "id": "urn:ngm:class:shap",
+        "label": "SHAP"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
+      "slug": "lime",
+      "label": "LIME"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "local-explanation",
+      "label": "Local Explanation"
+    }
+  ]
+}

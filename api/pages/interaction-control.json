@@ -8,7 +8,7 @@
   "definition": "A robotics control paradigm that explicitly manages contact forces and compliant behaviour when a robot interacts with its environment or human collaborators. Interaction control encompasses impedance control, admittance control, and force control strategies that allow robots to operate safely during physical contact, adapting stiffness, damping, and inertia in response to sensed forces.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],

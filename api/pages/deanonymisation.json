@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:63e5ca6641c42a07648c331efdbaf0e2b942b3ebfa93b5118709a9cfdd7b6231",
+  "title": "Deanonymisation",
+  "slug": "deanonymisation",
+  "public": true,
+  "classIri": "urn:ngm:class:deanonymisation",
+  "domain": "security",
+  "definition": "Deanonymisation is the adversarial process of re-identifying individuals within data that was intended to be anonymous or pseudonymous, reversing the protective transformation that anonymisation applied. It works by correlating a supposedly de-identified record against auxiliary information \u2014 public datasets, quasi-identifiers such as postcode, age, and gender, behavioural fingerprints, or linkage across leaked corpora \u2014 until a unique individual is singled out. Landmark demonstrations against released medical, mobility, and streaming datasets have shown that removing direct identifiers is rarely sufficient. As the antonym of anonymisation, deanonymisation is both a privacy threat to defend against and an analytical technique used to test whether a dataset's protection actually holds.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:adversarial-attack",
+      "label": "Adversarial Attack"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:anonymisation",
+        "label": "Anonymisation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      },
+      {
+        "id": "urn:ngm:class:open-source-intelligence",
+        "label": "Open-Source Intelligence"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pseudonymity",
+        "label": "Pseudonymity"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "anonymisation",
+      "label": "Anonymisation"
+    },
+    {
+      "slug": "pseudonymity",
+      "label": "Pseudonymity"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:19f5d15b8a7d046d6df53fc2a8d174054150f43f7b69556ec86e4fdf7680d093",
+  "title": "Netting",
+  "slug": "netting",
+  "public": true,
+  "classIri": "urn:ngm:class:netting",
+  "domain": "finance",
+  "definition": "The offsetting of mutual obligations between counterparties so that only the net balance is settled, rather than each gross obligation individually. Netting compresses large volumes of bilateral or multilateral exposures into a single payable or receivable per party, dramatically reducing settlement volumes, liquidity needs, and counterparty credit risk. Legally enforceable forms include payment netting, novation netting, and close-out netting on default, and it is the core economic function performed by clearing houses and payment systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:clearing",
+      "label": "Clearing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:settlement-finality",
+        "label": "Settlement Finality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-securities-depository",
+        "label": "Central Securities Depository"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "clearing",
+      "label": "Clearing"
+    },
+    {
+      "slug": "settlement",
+      "label": "Settlement"
+    },
+    {
+      "slug": "settlement-finality",
+      "label": "Settlement Finality"
+    },
+    {
+      "slug": "central-securities-depository",
+      "label": "Central Securities Depository"
+    }
+  ],
+  "backlinks": []
+}

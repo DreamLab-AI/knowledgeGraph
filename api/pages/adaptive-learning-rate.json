@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:c72e5cc1211b71ac864de3b48bb7fbe604abfcc9499211ed9035cfa4ae0b4689",
+  "title": "Adaptive Learning Rate",
+  "slug": "adaptive-learning-rate",
+  "public": true,
+  "classIri": "urn:ngm:class:adaptive-learning-rate",
+  "domain": "machine-learning",
+  "definition": "A family of optimisation techniques in which the step size of gradient descent is adjusted automatically during training \u2014 typically per parameter, from running statistics of past gradients \u2014 so that parameters with large or frequent gradients take smaller steps and rarely-updated parameters take larger ones, as implemented by AdaGrad, RMSProp, and Adam, reducing sensitivity to the manually chosen global learning rate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:learning-rate",
+      "label": "Learning Rate"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:rmsprop",
+        "label": "RMSProp"
+      },
+      {
+        "id": "urn:ngm:class:momentum",
+        "label": "Momentum"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "learning-rate",
+      "label": "Learning Rate"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "Adam Optimiser"
+    },
+    {
+      "slug": "rmsprop",
+      "label": "RMSProp"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
+      "slug": "rmsprop",
+      "label": "RMSProp"
+    }
+  ]
+}

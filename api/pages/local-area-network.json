@@ -101,7 +101,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ieee-802",
+        "id": "urn:ngm:class:ieee-802-x",
         "label": "IEEE 802"
       }
     ],
@@ -131,5 +131,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "wide-area-network",
+      "label": "Wide Area Network"
+    }
+  ]
 }

@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:6d09f236263abea577ee04670a644f4b807c7d349fada3e1ef32258305f777c8",
+  "title": "OpenXR Standard",
+  "slug": "openxr-standard",
+  "public": true,
+  "classIri": "urn:ngm:class:openxr-standard",
+  "domain": "standards",
+  "definition": "A royalty-free open standard from the Khronos Group defining a common application programming interface between XR applications and virtual, augmented, and mixed reality hardware, covering device tracking, input actions, frame timing, and composition, so that an application written once against the OpenXR runtime interface runs across headsets from different vendors without engine-specific porting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:open-standard",
+      "label": "Open Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:xr-headset",
+        "label": "XR Headset"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "open-standard",
+      "label": "Open Standard"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    }
+  ],
+  "backlinks": []
+}

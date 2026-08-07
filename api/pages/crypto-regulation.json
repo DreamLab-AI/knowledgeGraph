@@ -199,6 +199,10 @@
     {
       "slug": "stablecoin-regulation",
       "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "taxation",
+      "label": "Taxation"
     }
   ]
 }

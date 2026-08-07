@@ -94,12 +94,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "360-video",
+      "label": "360 Video"
+    },
+    {
       "slug": "etsi-domain-virtual-society",
       "label": "ETSI_Domain_Virtual_Society"
     },
     {
       "slug": "etsi-domain-virtual-society",
       "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "ieee-p2048-2",
+      "label": "IEEE P2048-2"
     },
     {
       "slug": "image-and-video-restoration",

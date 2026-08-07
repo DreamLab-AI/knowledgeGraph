@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ethical-design-standard",
   "domain": "spatial-computing",
-  "definition": "Ethical Design Standard is a spatial computing concept.",
+  "definition": "An Ethical Design Standard is a codified set of principles and requirements that guides the design of digital products, immersive environments and AI systems so that they respect user autonomy, privacy, accessibility and wellbeing. Such standards translate ethical values into verifiable design criteria, supporting audit, certification and regulatory compliance in spatial computing.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -18,7 +18,12 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
@@ -32,7 +37,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:value-sensitive-design",
+        "label": "Value-Sensitive Design"
+      },
+      {
+        "id": "urn:ngm:class:digital-ethics",
+        "label": "Digital Ethics"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      }
+    ]
   },
   "wikilinks": [
     {

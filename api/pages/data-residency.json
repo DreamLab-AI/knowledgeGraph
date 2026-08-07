@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:d345d32b324efdec4f54c888ff86e7c6b5c955a130f5ec2530601b77f9d7ed8b",
+  "title": "Data Residency",
+  "slug": "data-residency",
+  "public": true,
+  "classIri": "urn:ngm:class:data-residency",
+  "domain": "governance",
+  "definition": "The physical or geographic location in which an organisation's data is stored and processed, and the practice of controlling that location to satisfy regulatory, contractual, tax, or policy requirements; data residency underpins localisation mandates and sovereignty claims by determining which jurisdiction's laws, courts, and government access powers apply to the data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:data-localisation",
+        "label": "Data Localisation"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "data-sovereignty",
+      "label": "Data Sovereignty"
+    },
+    {
+      "slug": "data-localisation",
+      "label": "Data Localisation"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "backlinks": []
+}

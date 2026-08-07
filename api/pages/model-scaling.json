@@ -94,5 +94,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    }
+  ]
 }

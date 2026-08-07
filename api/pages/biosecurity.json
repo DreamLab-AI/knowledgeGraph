@@ -92,6 +92,10 @@
     {
       "slug": "bio-terror",
       "label": "Bio Terror"
+    },
+    {
+      "slug": "pandemic-preparedness-ai",
+      "label": "Pandemic Preparedness AI"
     }
   ]
 }

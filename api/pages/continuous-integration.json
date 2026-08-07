@@ -163,6 +163,10 @@
       "label": "Benchmark Evaluation"
     },
     {
+      "slug": "ci-cd",
+      "label": "CI/CD"
+    },
+    {
       "slug": "code-generation",
       "label": "Code Generation"
     },

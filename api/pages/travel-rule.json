@@ -542,6 +542,10 @@
       "label": "BC-0456-virtual-asset-service-providers"
     },
     {
+      "slug": "fatf-recommendation-16",
+      "label": "FATF Recommendation 16"
+    },
+    {
       "slug": "fatf-recommendations",
       "label": "FATF Recommendations"
     },

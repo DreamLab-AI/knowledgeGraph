@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ],

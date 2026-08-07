@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:ac593f237a4f64c485c2f9a73f96799a1cdd3ebf7d5b068ffdccce99861fa094",
+  "title": "Wireless Network",
+  "slug": "wireless-network",
+  "public": true,
+  "classIri": "urn:ngm:class:wireless-network",
+  "domain": "infrastructure",
+  "definition": "A communication network in which nodes exchange data over radio, infrared, or other electromagnetic links rather than physical cabling, spanning technologies from short-range personal-area protocols such as Bluetooth and Zigbee, through Wi-Fi local-area networks, to cellular and satellite systems covering entire regions. Wireless networks depend on regulated spectrum allocation to avoid interference, employ modulation, coding, and medium-access schemes to share the channel, and trade bandwidth, range, power consumption, and mobility against one another. They are the connective substrate for mobile computing, smart-home devices, mesh deployments, and the Internet of Things.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:networking",
+      "label": "Networking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mesh-network",
+        "label": "Mesh Network"
+      },
+      {
+        "id": "urn:ngm:class:smart-home",
+        "label": "Smart Home"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:wi-fi",
+        "label": "Wi-Fi"
+      },
+      {
+        "id": "urn:ngm:class:5-g",
+        "label": "5G"
+      },
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "networking",
+      "label": "Networking"
+    },
+    {
+      "slug": "mesh-network",
+      "label": "Mesh Network"
+    },
+    {
+      "slug": "spectrum-allocation",
+      "label": "Spectrum Allocation"
+    },
+    {
+      "slug": "smart-home",
+      "label": "Smart Home"
+    }
+  ],
+  "backlinks": []
+}

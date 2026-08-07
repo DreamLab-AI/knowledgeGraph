@@ -95,6 +95,10 @@
       "label": "Deepfakes and fraudulent content"
     },
     {
+      "slug": "neural-vocoder",
+      "label": "Neural Vocoder"
+    },
+    {
       "slug": "recurrent-neural-network",
       "label": "Recurrent Neural Network"
     },

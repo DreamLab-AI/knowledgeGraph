@@ -35,5 +35,10 @@
     "relatedTo": []
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "digital-ethics",
+      "label": "Digital Ethics"
+    }
+  ]
 }

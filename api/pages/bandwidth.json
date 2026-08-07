@@ -54,12 +54,24 @@
       "label": "Decentralised file storage"
     },
     {
+      "slug": "fibre-optic-network",
+      "label": "Fibre Optic Network"
+    },
+    {
       "slug": "latency",
       "label": "Latency"
     },
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "traffic-shaping",
+      "label": "Traffic Shaping"
+    },
+    {
+      "slug": "transmission-delay",
+      "label": "Transmission Delay"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

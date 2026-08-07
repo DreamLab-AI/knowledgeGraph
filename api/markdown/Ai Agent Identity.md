@@ -61,7 +61,7 @@ public:: true
         "label": "Digital Signature"
       },
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       }
     ],

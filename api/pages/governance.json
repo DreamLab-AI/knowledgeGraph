@@ -245,12 +245,20 @@
       "label": "Governance Frameworks"
     },
     {
+      "slug": "governance-risk-compliance",
+      "label": "Governance Risk Compliance"
+    },
+    {
       "slug": "governance-token",
       "label": "Governance Token"
     },
     {
       "slug": "identity-management-system",
       "label": "Identity Management System"
+    },
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
     },
     {
       "slug": "law-commission",
@@ -313,6 +321,10 @@
       "label": "Snapshot"
     },
     {
+      "slug": "stakeholder-coordination",
+      "label": "Stakeholder Coordination"
+    },
+    {
       "slug": "tally",
       "label": "Tally"
     },
@@ -341,12 +353,20 @@
       "label": "Treasury Management"
     },
     {
+      "slug": "voting-power",
+      "label": "Voting Power"
+    },
+    {
       "slug": "voting-system",
       "label": "Voting System"
     },
     {
       "slug": "world-economic-forum",
       "label": "World Economic Forum"
+    },
+    {
+      "slug": "world-trade-organization",
+      "label": "World Trade Organization"
     },
     {
       "slug": "community",

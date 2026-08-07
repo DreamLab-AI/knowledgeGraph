@@ -157,6 +157,10 @@
       "label": "Economics"
     },
     {
+      "slug": "frequentist-statistics",
+      "label": "Frequentist Statistics"
+    },
+    {
       "slug": "gaussian-distribution",
       "label": "Gaussian Distribution"
     },
@@ -173,6 +177,10 @@
       "label": "Mean Squared Error"
     },
     {
+      "slug": "random-variable",
+      "label": "Random Variable"
+    },
+    {
       "slug": "regression",
       "label": "Regression"
     },
@@ -183,6 +191,10 @@
     {
       "slug": "statistical-learning-theory",
       "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "variance",
+      "label": "Variance"
     }
   ]
 }

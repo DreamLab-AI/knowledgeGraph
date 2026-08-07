@@ -41,7 +41,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -109,7 +109,7 @@
       "label": "Bayesian Inference"
     },
     {
-      "slug": "localization",
+      "slug": "localisation",
       "label": "Localization"
     },
     {

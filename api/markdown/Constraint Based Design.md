@@ -18,7 +18,7 @@ alias:: Constraint-Based Design
     {"@id": "urn:visionflow:linked:parametric-modeling", "vc:label": "Parametric Modeling"},
     {"@id": "urn:visionflow:linked:topology-optimization", "vc:label": "Topology Optimization"},
     {"@id": "urn:visionflow:linked:constraint-satisfaction", "vc:label": "Constraint Satisfaction"},
-    {"@id": "urn:visionflow:linked:optimization-algorithm", "vc:label": "Optimization Algorithm"},
+    {"@id": "urn:visionflow:linked:optimisation-algorithm", "vc:label": "Optimization Algorithm"},
     {"@id": "urn:visionflow:linked:formal-verification", "vc:label": "Formal Verification"},
     {"@id": "urn:visionflow:linked:cyber-physical-systems", "vc:label": "Cyber Physical Systems"},
     {"@id": "urn:visionflow:linked:simulation", "vc:label": "Simulation"},
@@ -91,7 +91,7 @@ alias:: Constraint-Based Design
     ],
     "requires": [
       {"@id": "urn:ngm:class:constraint-satisfaction", "label": "Constraint Satisfaction"},
-      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
+      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"},
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
     ],
@@ -133,7 +133,7 @@ alias:: Constraint-Based Design
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:rule-based-system", "label": "Rule Based System"}
+      {"@id": "urn:ngm:class:rule-based-systems", "label": "Rule Based System"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
@@ -166,7 +166,7 @@ alias:: Constraint-Based Design
     {"raw": "[[Parametric Modeling]]", "resolved": "urn:visionflow:linked:parametric-modeling", "kind": "ResolvedLink"},
     {"raw": "[[Topology Optimization]]", "resolved": "urn:visionflow:linked:topology-optimization", "kind": "StubLink"},
     {"raw": "[[Constraint Satisfaction]]", "resolved": "urn:visionflow:linked:constraint-satisfaction", "kind": "ResolvedLink"},
-    {"raw": "[[Optimization Algorithm]]", "resolved": "urn:visionflow:linked:optimization-algorithm", "kind": "ResolvedLink"},
+    {"raw": "[[Optimisation Algorithm]]", "resolved": "urn:visionflow:linked:optimisation-algorithm", "kind": "ResolvedLink"},
     {"raw": "[[Formal Verification]]", "resolved": "urn:visionflow:linked:formal-verification", "kind": "StubLink"},
     {"raw": "[[Cyber Physical Systems]]", "resolved": "urn:visionflow:linked:cyber-physical-systems", "kind": "StubLink"},
     {"raw": "[[Simulation]]", "resolved": "urn:visionflow:linked:simulation", "kind": "ResolvedLink"},
@@ -222,8 +222,8 @@ alias:: Constraint-Based Design
 
 - ### Relationships
   - is-subclass-of:: [[Constraint Satisfaction]], [[AI System Component]], [[Symbolic AI]]
-  - has-part:: [[Constraint Solver]], [[Constraint Propagation]], [[Geometric Constraint]], [[Functional Requirements]], [[Feasibility]], [[Design Space Exploration]], [[Optimization Algorithm]]
-  - requires:: [[Constraint Satisfaction]], [[Optimization Algorithm]], [[Knowledge Representation]], [[Simulation]], [[Finite Element Analysis]]
+  - has-part:: [[Constraint Solver]], [[Constraint Propagation]], [[Geometric Constraint]], [[Functional Requirements]], [[Feasibility]], [[Design Space Exploration]], [[Optimisation Algorithm]]
+  - requires:: [[Constraint Satisfaction]], [[Optimisation Algorithm]], [[Knowledge Representation]], [[Simulation]], [[Finite Element Analysis]]
   - enables:: [[Generative Design Tool]], [[Formal Verification]], [[Product Design]], [[Topology Optimization]], [[Motion Planning]], [[Co-Design]], [[Additive Manufacturing]], [[Multi-Objective Optimization]]
   - implements:: [[Symbolic AI]], [[Systems Engineering]], [[Model Based Systems Engineering]], [[Neuro-Symbolic AI]]
   - depends-on:: [[Parametric Modeling]], [[Computer Aided Design]], [[Structural Analysis]], [[Constraint Satisfaction]]

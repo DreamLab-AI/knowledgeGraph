@@ -335,6 +335,10 @@
     {
       "slug": "decision-tree",
       "label": "Decision Tree"
+    },
+    {
+      "slug": "vc-dimension",
+      "label": "VC Dimension"
     }
   ]
 }

@@ -217,6 +217,10 @@
       "label": "Real-Time Rendering Pipeline"
     },
     {
+      "slug": "three-js",
+      "label": "Three.js"
+    },
+    {
       "slug": "universal-scene-description",
       "label": "Universal Scene Description"
     },

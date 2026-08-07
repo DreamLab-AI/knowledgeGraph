@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:4be47b63df304e77e7168f28e54be3fdf12d2579eb1403b00dacd08217cdc7e1",
+  "title": "State Space Search",
+  "slug": "state-space-search",
+  "public": true,
+  "classIri": "urn:ngm:class:state-space-search",
+  "domain": "artificial-intelligence",
+  "definition": "State space search is a foundational problem-solving paradigm in artificial intelligence in which a problem is formalised as an initial state, a set of operators that transform states, and a goal test; solving the problem means finding a path through the implicit graph of reachable states from the initial state to a goal state. Uninformed strategies such as breadth-first and depth-first search enumerate states systematically, whilst informed strategies exploit heuristic estimates to focus effort, underpinning classical planning, game playing and combinatorial optimisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:search-algorithm",
+      "label": "Search Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:breadth-first-search",
+        "label": "Breadth-First Search"
+      },
+      {
+        "id": "urn:ngm:class:depth-first-search",
+        "label": "Depth-First Search"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "id": "urn:ngm:class:classical-planning",
+        "label": "Classical Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
+      },
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "heuristic-search",
+      "label": "Heuristic Search"
+    },
+    {
+      "slug": "state-space",
+      "label": "State Space"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    }
+  ]
+}

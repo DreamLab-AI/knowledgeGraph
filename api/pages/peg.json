@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:5ca1b7b104433c8e4e319bedf7678d3a07e4725b1dc8ccadd64fa4e21a8110d7",
+  "title": "Peg",
+  "slug": "peg",
+  "public": true,
+  "classIri": "urn:ngm:class:peg",
+  "domain": "finance",
+  "definition": "A peg is a commitment to hold the price of one asset fixed against another \u2014 historically a national currency fixed to gold or to the US dollar, and in decentralised finance a stablecoin held at parity with a fiat currency. Maintaining a peg requires reserves, redemption rights, or algorithmic supply adjustment strong enough to absorb market pressure and sustain arbitrage back to parity; when confidence in these defences fails the peg breaks, as in classic currency crises and stablecoin de-pegging events such as the 2022 TerraUSD collapse.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:exchange-rate",
+      "label": "Exchange Rate"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:redemption-mechanism",
+        "label": "Redemption Mechanism"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:peg-mechanism",
+        "label": "Peg Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "exchange-rate",
+      "label": "Exchange Rate"
+    },
+    {
+      "slug": "peg-mechanism",
+      "label": "Peg Mechanism"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "redemption-mechanism",
+      "label": "Redemption Mechanism"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "mint-burn-mechanism",
+      "label": "Mint-Burn Mechanism"
+    }
+  ]
+}

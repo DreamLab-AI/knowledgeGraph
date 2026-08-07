@@ -277,6 +277,10 @@
       "label": "AI Documentation Standards"
     },
     {
+      "slug": "counterfactual-explanation",
+      "label": "Counterfactual Explanation"
+    },
+    {
       "slug": "decision-engine",
       "label": "Decision Engine"
     },

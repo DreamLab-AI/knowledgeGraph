@@ -175,6 +175,10 @@
       "label": "AI Energy Optimisation"
     },
     {
+      "slug": "adapter-tuning",
+      "label": "Adapter Tuning"
+    },
+    {
       "slug": "answer-ai",
       "label": "Answer AI"
     },

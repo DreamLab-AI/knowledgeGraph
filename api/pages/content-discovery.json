@@ -319,6 +319,10 @@
       "label": "Content Creation"
     },
     {
+      "slug": "content-based-filtering",
+      "label": "Content-Based Filtering"
+    },
+    {
       "slug": "controlled-vocabulary",
       "label": "Controlled Vocabulary"
     },

@@ -88,7 +88,7 @@ public:: true
         "label": "Monte Carlo Tree Search"
       },
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       },
       {
@@ -143,7 +143,7 @@ public:: true
 - ### Definition
   - [[Importance Sampling]] is a [[Monte Carlo Methods]] variance-reduction technique that draws from a surrogate proposal distribution and reweights samples to estimate expectations under a target [[Probabilistic Model]], enabling [[Bayesian Inference]] and off-policy [[Reinforcement Learning]] evaluation with reduced sample complexity.
 - ### Relationships
-  - [[Importance Sampling]] extends [[Monte Carlo Methods]] and relies on [[Sampling]] procedures to draw from a proposal. It integrates with [[Variational Inference]] as a building block for importance-weighted autoencoders and enables [[Bayesian Inference]] by allowing evaluation of posteriors that are intractable to sample directly. In [[Reinforcement Learning]] it underpins off-policy policy gradient estimators and experience replay weighting. Related concepts include [[Monte Carlo Tree Search]], [[Optimization Algorithm]] design, [[State Estimation]] for robotics filters, and [[Gradient Descent]] variance reduction through control variates.
+  - [[Importance Sampling]] extends [[Monte Carlo Methods]] and relies on [[Sampling]] procedures to draw from a proposal. It integrates with [[Variational Inference]] as a building block for importance-weighted autoencoders and enables [[Bayesian Inference]] by allowing evaluation of posteriors that are intractable to sample directly. In [[Reinforcement Learning]] it underpins off-policy policy gradient estimators and experience replay weighting. Related concepts include [[Monte Carlo Tree Search]], [[Optimisation Algorithm]] design, [[State Estimation]] for robotics filters, and [[Gradient Descent]] variance reduction through control variates.
 - ### Content
   - Importance sampling addresses a fundamental challenge in probabilistic computation: how to estimate the expectation of a function under a distribution p(x) when sampling directly from p is expensive or infeasible. The technique samples instead from a proposal q(x) and multiplies each sample's contribution by the importance weight w(x) = p(x)/q(x), yielding an unbiased estimator of the target expectation so long as q assigns non-zero probability wherever p is non-zero.
 

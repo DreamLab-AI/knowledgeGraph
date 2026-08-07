@@ -33,7 +33,7 @@
         "label": "Digital Twin Creation"
       },
       {
-        "id": "urn:ngm:class:logistics-optimization",
+        "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       }
     ]
@@ -43,10 +43,6 @@
     {
       "slug": "digital-twin-creation",
       "label": "Digital Twin Creation"
-    },
-    {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
     }
   ]
 }

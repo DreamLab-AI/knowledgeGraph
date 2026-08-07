@@ -87,5 +87,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "global-trade",
+      "label": "Global Trade"
+    },
+    {
+      "slug": "world-trade-organization",
+      "label": "World Trade Organization"
+    }
+  ]
 }

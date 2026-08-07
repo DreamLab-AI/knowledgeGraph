@@ -215,6 +215,10 @@
       "label": "Privacy Impact Assessment (PIA)"
     },
     {
+      "slug": "privacy-law",
+      "label": "Privacy Law"
+    },
+    {
       "slug": "smart-contract",
       "label": "Smart Contract"
     },

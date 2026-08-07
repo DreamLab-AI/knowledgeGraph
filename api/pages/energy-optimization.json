@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:e082b9fa2f8837be61b35b9bf855d20fca3ff634cced9e2192405661fb1b8e13",
+  "title": "Energy Optimisation",
+  "slug": "energy-optimization",
+  "public": true,
+  "classIri": "urn:ngm:class:energy-optimization",
+  "domain": "infrastructure",
+  "definition": "The systematic adjustment of how a building, facility, or physical system consumes, stores, and sources energy in order to minimise cost, waste, and carbon emissions while maintaining required service levels such as comfort, output, and safety. Energy optimisation combines metered consumption data, simulation of thermal and electrical behaviour, and control strategies\u2014from schedule tuning to model-predictive control\u2014often driven by a digital twin that lets operators test interventions virtually before applying them to the real asset.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:construction-digital-twin",
+        "label": "Construction Digital Twin"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "id": "urn:ngm:class:smart-building",
+        "label": "Smart Building"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "energy-management",
+      "label": "Energy Management"
+    },
+    {
+      "slug": "construction-digital-twin",
+      "label": "Construction Digital Twin"
+    },
+    {
+      "slug": "energy-efficiency",
+      "label": "Energy Efficiency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "construction-digital-twin",
+      "label": "Construction Digital Twin"
+    }
+  ]
+}

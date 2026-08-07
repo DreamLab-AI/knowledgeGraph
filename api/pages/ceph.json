@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:bbbd1d8e85dff20497f7f9d1cf29ceeccb3f849aa8f6b4ba8ea3148491388958",
+  "title": "Ceph",
+  "slug": "ceph",
+  "public": true,
+  "classIri": "urn:ngm:class:ceph",
+  "domain": "infrastructure",
+  "definition": "An open-source software-defined storage platform that provides object, block, and file storage from a single self-healing cluster of commodity servers, using the CRUSH algorithm to place data deterministically without a central metadata bottleneck, and protecting data through replication or erasure coding; widely deployed beneath OpenStack and Kubernetes as exabyte-scale storage infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-storage",
+      "label": "Distributed Storage"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-file-system",
+        "label": "Distributed File System"
+      },
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-storage",
+      "label": "Distributed Storage"
+    },
+    {
+      "slug": "erasure-coding",
+      "label": "Erasure Coding"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

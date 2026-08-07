@@ -107,7 +107,7 @@
         "label": "ComfyUI"
       },
       {
-        "id": "urn:ngm:class:controlnet",
+        "id": "urn:ngm:class:control-net",
         "label": "ControlNet"
       },
       {
@@ -242,6 +242,10 @@
     {
       "slug": "kohya-dreambooth-and-similar",
       "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
     }
   ]
 }

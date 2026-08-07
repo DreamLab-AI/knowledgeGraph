@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:cdb8b976ed4d4aad4f12ffa4fc10c8b2b3dabb64fc82381d03a3542d3ce6f0f8",
+  "title": "Carbon Tax",
+  "slug": "carbon-tax",
+  "public": true,
+  "classIri": "urn:ngm:class:carbon-tax",
+  "domain": "governance",
+  "definition": "A carbon tax is a government levy charged per tonne of carbon dioxide (or CO2-equivalent) emitted, putting an explicit, predictable price on greenhouse-gas pollution so that emitters internalise the climate damage their activities cause. Unlike an emissions trading scheme, which caps the quantity of emissions and lets the price float, a carbon tax fixes the price and lets emitted quantities adjust; examples include Sweden's levy of over 100 euros per tonne and carbon taxes in Canada, Singapore and South Africa.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:climate-policy",
+      "label": "Climate Policy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:emissions-trading-scheme",
+        "label": "Emissions Trading Scheme"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      },
+      {
+        "id": "urn:ngm:class:compliance-carbon-market",
+        "label": "Compliance Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "climate-policy",
+      "label": "Climate Policy"
+    },
+    {
+      "slug": "emissions-trading-scheme",
+      "label": "Emissions Trading Scheme"
+    },
+    {
+      "slug": "carbon-credits",
+      "label": "Carbon Credits"
+    },
+    {
+      "slug": "carbon-markets",
+      "label": "Carbon Markets"
+    }
+  ],
+  "backlinks": []
+}

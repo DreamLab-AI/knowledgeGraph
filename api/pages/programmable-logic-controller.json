@@ -98,6 +98,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "fieldbus",
+      "label": "Fieldbus"
+    },
+    {
       "slug": "industrial-robot",
       "label": "Industrial Robot"
     }

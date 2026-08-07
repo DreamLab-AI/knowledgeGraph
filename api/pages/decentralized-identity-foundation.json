@@ -153,6 +153,10 @@
       "label": "Hyperledger Indy"
     },
     {
+      "slug": "presentation-exchange",
+      "label": "Presentation Exchange"
+    },
+    {
       "slug": "self-sovereign-identity",
       "label": "Self Sovereign Identity"
     }

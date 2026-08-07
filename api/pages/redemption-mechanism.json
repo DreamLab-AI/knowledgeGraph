@@ -101,6 +101,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "peg",
+      "label": "Peg"
+    },
+    {
       "slug": "stablecoin-regulation",
       "label": "Stablecoin Regulation"
     }

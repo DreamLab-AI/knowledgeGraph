@@ -50,7 +50,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -139,7 +139,7 @@
       "label": "Probability Theory"
     },
     {
-      "slug": "localization",
+      "slug": "localisation",
       "label": "Localization"
     },
     {
@@ -167,10 +167,6 @@
     {
       "slug": "kalman-filter",
       "label": "Kalman Filter"
-    },
-    {
-      "slug": "localization",
-      "label": "Localization"
     },
     {
       "slug": "monte-carlo-localization",

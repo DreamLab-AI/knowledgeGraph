@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:e6d5586934843d253959df2e1cd7245f71b1d8b9abf293b9964983ba0b2a3f34",
+  "title": "Crypto Asset Service Provider",
+  "slug": "crypto-asset-service-provider",
+  "public": true,
+  "classIri": "urn:ngm:class:crypto-asset-service-provider",
+  "domain": "blockchain",
+  "definition": "A legal person authorised to provide crypto-asset services to third parties on a professional basis \u2014 custody, exchange operation, order execution, placement, transfer services, and advice \u2014 as defined by the EU's Markets in Crypto-Assets Regulation (MiCA); CASPs must obtain authorisation, meet prudential and governance requirements, and comply with anti-money-laundering and travel-rule obligations, gaining passporting rights across the EU single market.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:transfer-of-funds-regulation",
+        "label": "Transfer Of Funds Regulation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "eu-mi-ca-regulation",
+      "label": "EU MiCA Regulation"
+    },
+    {
+      "slug": "cryptocurrency-exchange",
+      "label": "Cryptocurrency Exchange"
+    },
+    {
+      "slug": "transfer-of-funds-regulation",
+      "label": "Transfer Of Funds Regulation"
+    }
+  ],
+  "backlinks": []
+}

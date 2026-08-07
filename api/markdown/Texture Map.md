@@ -51,7 +51,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:3d-asset",
+        "@id": "urn:ngm:class:3-d-asset",
         "label": "3D Asset"
       },
       {
@@ -65,7 +65,7 @@ public:: true
         "label": "UV Mapping"
       },
       {
-        "@id": "urn:ngm:class:3d-model",
+        "@id": "urn:ngm:class:3-d-model",
         "label": "3D Model"
       }
     ],
@@ -81,7 +81,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:rasterisation",
+        "@id": "urn:ngm:class:rasterization",
         "label": "Rasterisation"
       },
       {
@@ -91,11 +91,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:gltf",
+        "@id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
-        "@id": "urn:ngm:class:3d-asset-standard",
+        "@id": "urn:ngm:class:3-d-asset-standard",
         "label": "3D Asset Standard"
       }
     ],
@@ -111,7 +111,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:3d-content-creation",
+        "@id": "urn:ngm:class:3-d-content-creation",
         "label": "3D Content Creation"
       },
       {

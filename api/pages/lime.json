@@ -124,6 +124,10 @@
   ],
   "backlinks": [
     {
+      "slug": "counterfactual-explanation",
+      "label": "Counterfactual Explanation"
+    },
+    {
       "slug": "decision-transparency",
       "label": "Decision Transparency"
     },
@@ -134,6 +138,10 @@
     {
       "slug": "feature-attribution",
       "label": "Feature Attribution"
+    },
+    {
+      "slug": "integrated-gradients",
+      "label": "Integrated Gradients"
     },
     {
       "slug": "local-explanation",

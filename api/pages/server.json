@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:b3eacd33433b31b5252351032c9b3e7a2e7aa7738d5decdf0dd6c62680853c06",
+  "title": "Server",
+  "slug": "server",
+  "public": true,
+  "classIri": "urn:ngm:class:server",
+  "domain": "infrastructure",
+  "definition": "A computer system engineered to provide services \u2014 computation, storage, or content \u2014 to other machines over a network, typically built for sustained load, remote management, and high availability with error-correcting memory, redundant power supplies, and hot-swappable storage. Racked in their thousands inside data centres, servers are the physical substrate of cloud computing, and the term equally names the software process that answers client requests in the client-server model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:networking",
+        "label": "Networking"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "data-centre",
+      "label": "Data Centre"
+    },
+    {
+      "slug": "computing-infrastructure",
+      "label": "Computing Infrastructure"
+    },
+    {
+      "slug": "power-supply",
+      "label": "Power Supply"
+    },
+    {
+      "slug": "operating-system",
+      "label": "Operating System"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "networking",
+      "label": "Networking"
+    }
+  ],
+  "backlinks": []
+}

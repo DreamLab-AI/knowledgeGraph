@@ -166,6 +166,10 @@
       "label": "Telecollaboration and Telepresence"
     },
     {
+      "slug": "three-js",
+      "label": "Three.js"
+    },
+    {
       "slug": "vircadia",
       "label": "Vircadia"
     },

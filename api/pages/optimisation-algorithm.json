@@ -24,6 +24,22 @@
       {
         "id": "urn:ngm:class:stochastic-gradient-descent",
         "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      },
+      {
+        "id": "urn:ngm:class:momentum",
+        "label": "Momentum"
+      },
+      {
+        "id": "urn:ngm:class:weight-decay",
+        "label": "Weight Decay"
       }
     ],
     "requires": [
@@ -34,6 +50,14 @@
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:objective-function",
+        "label": "Objective Function"
       }
     ],
     "enables": [
@@ -48,6 +72,18 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
     "dependsOn": [
@@ -58,6 +94,14 @@
       {
         "id": "urn:ngm:class:objective-function",
         "label": "Objective Function"
+      },
+      {
+        "id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      },
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
       }
     ],
     "implements": [
@@ -66,12 +110,38 @@
         "label": "Convex Optimisation"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:statistics",
         "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:mini-batch",
+        "label": "Mini-Batch"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
       }
     ],
     "supports": [],
@@ -94,11 +164,31 @@
       {
         "id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
+    {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
     {
       "slug": "adam-optimiser",
       "label": "adam optimiser"
@@ -106,6 +196,18 @@
     {
       "slug": "applied-mathematics",
       "label": "Applied Mathematics"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "rmsprop",
+      "label": "RMSProp"
     }
   ]
 }

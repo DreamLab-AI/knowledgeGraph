@@ -42,7 +42,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:behavior-tree",
+        "@id": "urn:ngm:class:behaviour-tree",
         "label": "Behavior Tree"
       },
       {
@@ -78,7 +78,7 @@ public:: true
         "label": "SLAM"
       },
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Robot Localization"
       }
     ],
@@ -147,10 +147,10 @@ public:: true
 ```
 
 - ### Definition
-  - [[Nav2]] is the official navigation framework for [[ROS 2]], supplying modular planners (global and local), costmap 2D layers, recovery behaviours, and a [[Behavior Tree]]-driven mission server that together allow a mobile robot to autonomously navigate from goal to goal.
+  - [[Nav2]] is the official navigation framework for [[ROS 2]], supplying modular planners (global and local), costmap 2D layers, recovery behaviours, and a [[Behaviour Tree]]-driven mission server that together allow a mobile robot to autonomously navigate from goal to goal.
 
 - ### Relationships
-  - Nav2 depends on [[ROS 2]] for its communication middleware and lifecycle management, uses [[Costmap]] layers to represent traversable and obstacle-occupied space, orchestrates planner/controller switching through [[Behavior Tree]] executors, and produces behaviours central to [[Autonomous Navigation]] in [[Autonomous Mobile Robots]].
+  - Nav2 depends on [[ROS 2]] for its communication middleware and lifecycle management, uses [[Costmap]] layers to represent traversable and obstacle-occupied space, orchestrates planner/controller switching through [[Behaviour Tree]] executors, and produces behaviours central to [[Autonomous Navigation]] in [[Autonomous Mobile Robots]].
 
 - ### Content
   - Nav2 is the direct successor to the original ROS Navigation Stack (move_base) and was redesigned from scratch for ROS 2 to exploit its improved security, lifecycle nodes, and DDS-based communication. The initial stable release targeted ROS 2 Foxy (2020) and has shipped in every subsequent distribution. The redesign introduced behaviour-tree task orchestration to replace the brittle state-machine approach of move_base, giving practitioners the ability to compose complex recovery sequences declaratively in XML.

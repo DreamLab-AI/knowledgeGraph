@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:2b52f28766a3e15cdf7d384aa3449165699f2cebdddbcaf37e371cb9b36ed697",
+  "title": "Heuristics",
+  "slug": "heuristics",
+  "public": true,
+  "classIri": "urn:ngm:class:heuristics",
+  "domain": "ai",
+  "definition": "Mental shortcuts or simple decision rules that trade completeness and guaranteed optimality for speed and low cognitive or computational cost. In psychology, heuristics such as availability, representativeness, and anchoring explain how humans judge under uncertainty; in computer science, heuristic functions guide search and optimisation algorithms towards good solutions when exhaustive evaluation is intractable. Heuristics are adaptive in the environments they evolved for but produce systematic biases outside them.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decision-making",
+      "label": "Decision Making"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bounded-rationality",
+        "label": "Bounded Rationality"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-psychology",
+        "label": "Cognitive Psychology"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "bounded-rationality",
+      "label": "Bounded Rationality"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    }
+  ]
+}

@@ -93,8 +93,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "jitter",
+      "label": "Jitter"
+    },
+    {
       "slug": "latency",
       "label": "Latency"
+    },
+    {
+      "slug": "transmission-delay",
+      "label": "Transmission Delay"
     }
   ]
 }

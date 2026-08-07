@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:standards-based-taxonomy",
   "domain": "spatial-computing",
-  "definition": "Standards Based Taxonomy is a spatial computing concept.",
+  "definition": "A standards-based taxonomy is a hierarchical classification scheme whose categories, labels, and relationships are drawn from published technical standards rather than ad hoc convention. Within spatial computing it organises concepts using vocabularies from bodies such as the W3C, ISO, and the Khronos Group, supporting consistent categorisation and semantic interoperability across platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -17,8 +17,18 @@
   "maturity": "draft",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
@@ -32,7 +42,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:classification-system",
+        "label": "Classification System"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
+    ]
   },
   "wikilinks": [
     {

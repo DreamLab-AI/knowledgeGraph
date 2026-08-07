@@ -153,6 +153,10 @@
       "label": "Communication Protocol"
     },
     {
+      "slug": "industrial-ethernet",
+      "label": "Industrial Ethernet"
+    },
+    {
       "slug": "physical-layer",
       "label": "Physical Layer"
     },

@@ -113,6 +113,10 @@
       "label": "Communication Protocol"
     },
     {
+      "slug": "industrial-ethernet",
+      "label": "Industrial Ethernet"
+    },
+    {
       "slug": "industrial-robot",
       "label": "Industrial Robot"
     }

@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:74d898e3370968c8a62bbaaf3149ae13b44f37d55310923da1770827bb49de68",
+  "title": "State Proof",
+  "slug": "state-proof",
+  "public": true,
+  "classIri": "urn:ngm:class:state-proof",
+  "domain": "blockchain",
+  "definition": "A compact cryptographic attestation that a particular state \u2014 an account balance, storage slot, or block commitment \u2014 is part of a blockchain's canonical history, verifiable by anyone without replaying the chain or trusting an intermediary; ranging from Merkle inclusion proofs against a state root to Algorand-style aggregate-signature certificates, state proofs are the primitive that lets light clients and cross-chain bridges verify one chain's state from another vantage point trustlessly.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-proof",
+      "label": "Cryptographic Proof"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:light-client-verification",
+        "label": "Light Client Verification"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:vector-commitment",
+        "label": "Vector Commitment"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:algorand",
+        "label": "Algorand"
+      },
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-proof",
+      "label": "Cryptographic Proof"
+    },
+    {
+      "slug": "light-client",
+      "label": "Light Client"
+    },
+    {
+      "slug": "algorand",
+      "label": "Algorand"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "light-client",
+      "label": "Light Client"
+    }
+  ]
+}

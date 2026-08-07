@@ -689,6 +689,10 @@
       "label": "Monetary Theory"
     },
     {
+      "slug": "national-income",
+      "label": "National Income"
+    },
+    {
       "slug": "paolo-tasca",
       "label": "Paolo Tasca"
     },
@@ -699,6 +703,10 @@
     {
       "slug": "prediction-markets",
       "label": "Prediction Markets"
+    },
+    {
+      "slug": "supply-and-demand",
+      "label": "Supply and Demand"
     }
   ]
 }

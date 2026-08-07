@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:ce3d883daf033760c54145f883f627c0172f997d973f7c992ac58bfecd671045",
+  "title": "Cryptocurrency Regulation",
+  "slug": "cryptocurrency-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptocurrency-regulation",
+  "domain": "governance",
+  "definition": "The body of laws, supervisory frameworks, and enforcement practice governing the issuance, custody, exchange, and use of cryptocurrencies and related digital assets. It spans securities and commodities classification, anti-money-laundering and counter-terrorist-financing obligations, consumer and investor protection, taxation, stablecoin reserve requirements, and prudential rules for intermediaries, and it varies sharply across jurisdictions \u2014 from comprehensive regimes such as the EU's MiCA to outright prohibitions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    }
+  ],
+  "backlinks": []
+}

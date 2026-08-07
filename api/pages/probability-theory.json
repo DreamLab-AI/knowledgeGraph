@@ -200,10 +200,6 @@
       "label": "Diffusion Models"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "fid-benchmark-protocol",
       "label": "FID Benchmark Protocol"
     },
@@ -260,6 +256,10 @@
       "label": "Probabilistic Robotics"
     },
     {
+      "slug": "random-variable",
+      "label": "Random Variable"
+    },
+    {
       "slug": "risk-assessment",
       "label": "Risk Assessment"
     },
@@ -274,6 +274,10 @@
     {
       "slug": "statistical-learning-theory",
       "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "statistical-mechanics",
+      "label": "Statistical Mechanics"
     },
     {
       "slug": "statistics",
@@ -294,6 +298,10 @@
     {
       "slug": "time-series-forecasting",
       "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "uncertainty",
+      "label": "Uncertainty"
     }
   ]
 }

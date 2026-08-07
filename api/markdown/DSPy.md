@@ -86,7 +86,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"},
       {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"},
-      {"@id": "urn:ngm:class:langchain", "label": "LangChain"},
+      {"@id": "urn:ngm:class:lang-chain", "label": "LangChain"},
       {"@id": "urn:ngm:class:hallucination", "label": "Hallucination"},
       {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
     ]

@@ -85,5 +85,10 @@
     "relatedTo": []
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "password",
+      "label": "Password"
+    }
+  ]
 }

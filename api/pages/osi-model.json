@@ -144,6 +144,10 @@
     {
       "slug": "physical-layer",
       "label": "Physical Layer"
+    },
+    {
+      "slug": "separation-of-concerns",
+      "label": "Separation of Concerns"
     }
   ]
 }

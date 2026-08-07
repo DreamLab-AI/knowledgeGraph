@@ -24,7 +24,7 @@ public:: true
   "domain": "finance",
   "maturity": "established",
   "subClassOf": {
-    "@id": "urn:ngm:class:asset-tokenization",
+    "@id": "urn:ngm:class:asset-tokenisation",
     "label": "Asset Tokenization"
   },
   "relations": {
@@ -40,7 +40,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {
@@ -171,9 +171,9 @@ public:: true
 ```
 
 - ### Definition
-  - [[Fractional Ownership]] is a form of [[Asset Tokenization]] in which high-value assets are divided into tradeable shares—often implemented as [[Fractionalized NFT]] tokens or fungible on-chain instruments—enabling multiple parties to hold proportional economic rights in an asset they could not individually afford.
+  - [[Fractional Ownership]] is a form of [[Asset Tokenisation]] in which high-value assets are divided into tradeable shares—often implemented as [[Fractionalized NFT]] tokens or fungible on-chain instruments—enabling multiple parties to hold proportional economic rights in an asset they could not individually afford.
 - ### Relationships
-  - [[Fractional Ownership]] is a specialisation of [[Asset Tokenization]] and commonly employs [[NFT]] and [[Fractionalized NFT]] mechanisms alongside [[Enterprise Smart Contracts]] to manage share issuance and distributions. It enables [[Investment Management]] and [[Digital Asset Trading]] activities and integrates into [[Decentralized Finance (DeFi)]] protocols as collateral or yield-bearing instruments. Conceptually it extends [[Digital Ownership]] and [[Digital Property Rights]], and its economic logic mirrors traditional [[Digital Technology Access Equity]] structures.
+  - [[Fractional Ownership]] is a specialisation of [[Asset Tokenisation]] and commonly employs [[NFT]] and [[Fractionalized NFT]] mechanisms alongside [[Enterprise Smart Contracts]] to manage share issuance and distributions. It enables [[Investment Management]] and [[Digital Asset Trading]] activities and integrates into [[Decentralized Finance (DeFi)]] protocols as collateral or yield-bearing instruments. Conceptually it extends [[Digital Ownership]] and [[Digital Property Rights]], and its economic logic mirrors traditional [[Digital Technology Access Equity]] structures.
 - ### Content
   - Fractional ownership predates blockchain technology: timeshare holiday properties, private-aviation syndicates, and art investment funds all represent pre-digital implementations. These structures required substantial legal overhead—special-purpose vehicles, solicitor conveyancing, and regulated broker-dealer involvement—making them accessible only to sophisticated investors willing to absorb transaction costs.
 

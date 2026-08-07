@@ -95,6 +95,10 @@
     {
       "slug": "identifier-layer",
       "label": "Identifier Layer"
+    },
+    {
+      "slug": "identifier",
+      "label": "Identifier"
     }
   ]
 }

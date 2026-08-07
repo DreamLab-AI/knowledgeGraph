@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:b7486a9a302f91050e15519a5addc57bfa87611840ea8e4d1febe489d9ce9b86",
+  "title": "Unlocking Script",
+  "slug": "unlocking-script",
+  "public": true,
+  "classIri": "urn:ngm:class:unlocking-script",
+  "domain": "blockchain",
+  "definition": "The script supplied in a Bitcoin transaction input, historically called scriptSig, that satisfies the spending conditions imposed by the locking script of the unspent output it references, typically by providing digital signatures and public keys; the input is valid only if executing the unlocking script followed by the locking script leaves a true value on the stack, proving authorisation to spend the UTXO.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:script",
+      "label": "Script"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:locking-script",
+        "label": "Locking Script"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bitcoin-transaction",
+        "label": "Bitcoin Transaction"
+      },
+      {
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "script",
+      "label": "Script"
+    },
+    {
+      "slug": "locking-script",
+      "label": "Locking Script"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    }
+  ],
+  "backlinks": []
+}

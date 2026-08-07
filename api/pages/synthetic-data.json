@@ -144,6 +144,10 @@
       "label": "Back-Translation"
     },
     {
+      "slug": "bias-in-ai",
+      "label": "Bias in AI"
+    },
+    {
       "slug": "common-crawl",
       "label": "Common Crawl"
     },

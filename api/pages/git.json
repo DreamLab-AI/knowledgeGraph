@@ -159,6 +159,10 @@
       "label": "comfyui manager"
     },
     {
+      "slug": "commit",
+      "label": "Commit"
+    },
+    {
       "slug": "dvc",
       "label": "DVC"
     },

@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:560e50e82b2a4db79479d47b10de24c55a9f10049e140a7a06a5a93bedb71c0d",
+  "title": "Throughput Optimisation",
+  "slug": "throughput-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:throughput-optimisation",
+  "domain": "machine-learning",
+  "definition": "The systems discipline of maximising useful work completed per unit time \u2014 requests, tokens, or samples per second \u2014 on fixed hardware, typically by batching to raise arithmetic intensity, keeping accelerators saturated through scheduling and overlap, and managing memory so that capacity rather than stalls bounds concurrency, usually traded off explicitly against per-request latency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference-optimisation",
+      "label": "Inference Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:continuous-batching",
+        "label": "Continuous Batching"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "id": "urn:ngm:class:batch-inference",
+        "label": "Batch Inference"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "inference-optimisation",
+      "label": "Inference Optimisation"
+    },
+    {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
+      "slug": "kv-cache",
+      "label": "KV Cache"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    }
+  ]
+}

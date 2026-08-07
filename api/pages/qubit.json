@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:75fba45b9a910debbf925ef0afec807420e7f593a9ef0478fee169d589c19fbe",
+  "title": "Qubit",
+  "slug": "qubit",
+  "public": true,
+  "classIri": "urn:ngm:class:qubit",
+  "domain": "infrastructure",
+  "definition": "The fundamental unit of quantum information: a two-level quantum system whose state is a complex linear superposition \u03b1|0\u27e9 + \u03b2|1\u27e9 of computational basis states, capable of entanglement with other qubits and collapsing probabilistically on measurement; physically realised as superconducting transmon circuits, trapped-ion energy levels, photon polarisation, neutral-atom states or electron spins, and the resource whose coherence time, gate fidelity and count determine what a quantum computer can achieve.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quantum-computation-paradigm",
+      "label": "Quantum Computation Paradigm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "quantum-computation-paradigm",
+      "label": "Quantum Computation Paradigm"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    }
+  ]
+}

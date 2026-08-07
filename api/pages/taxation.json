@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:d8806ee41898c3007efd6d1a15caa3d08964b7a0ae500c7715fc750f511843a9",
+  "title": "Taxation",
+  "slug": "taxation",
+  "public": true,
+  "classIri": "urn:ngm:class:taxation",
+  "domain": "finance",
+  "definition": "The compulsory levying of financial charges by a state on individuals, businesses, and transactions to fund public expenditure and steer economic behaviour. Taxation spans income, corporation, consumption, capital gains, and property taxes, and its administration depends on financial reporting, valuation rules, and compliance infrastructure \u2014 questions made newly complex by digital assets, cross-border platforms, and decentralised finance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:fiscal-policy",
+      "label": "Fiscal Policy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:financial-reporting",
+        "label": "Financial Reporting"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:crypto-regulation",
+        "label": "Crypto Regulation"
+      },
+      {
+        "id": "urn:ngm:class:hm-treasury",
+        "label": "HM Treasury"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "fiscal-policy",
+      "label": "Fiscal Policy"
+    },
+    {
+      "slug": "hm-treasury",
+      "label": "HM Treasury"
+    },
+    {
+      "slug": "financial-reporting",
+      "label": "Financial Reporting"
+    },
+    {
+      "slug": "crypto-regulation",
+      "label": "Crypto Regulation"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    }
+  ]
+}

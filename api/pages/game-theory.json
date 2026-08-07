@@ -223,6 +223,10 @@
       "label": "Quadratic Voting"
     },
     {
+      "slug": "task-allocation",
+      "label": "Task Allocation"
+    },
+    {
       "slug": "tokenomics-governance",
       "label": "Tokenomics Governance"
     }

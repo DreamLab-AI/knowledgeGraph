@@ -190,6 +190,10 @@
       "label": "Money"
     },
     {
+      "slug": "peg",
+      "label": "Peg"
+    },
+    {
       "slug": "political-economy",
       "label": "Political Economy"
     },

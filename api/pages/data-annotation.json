@@ -158,6 +158,10 @@
       "label": "ADE20K"
     },
     {
+      "slug": "annotated-dataset",
+      "label": "Annotated Dataset"
+    },
+    {
       "slug": "benchmark-dataset",
       "label": "Benchmark Dataset"
     },

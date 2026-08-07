@@ -8,7 +8,7 @@
   "definition": "Human factors encompasses the interdisciplinary study of how humans interact with, perceive, and respond to robotic systems, integrating ergonomics, psychology, cognitive science, and design principles to ensure robots enhance rather than impede human performance and safety.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],

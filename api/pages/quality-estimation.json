@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:53a49f677c5d9861d9fa17d87ee6ffd1c41f7ec353fb0e1fb120998486da67a7",
+  "title": "Quality Estimation",
+  "slug": "quality-estimation",
+  "public": true,
+  "classIri": "urn:ngm:class:quality-estimation",
+  "domain": "machine-learning",
+  "definition": "The task of predicting the quality of machine translation output without access to reference translations, at sentence, word, or document level, enabling production systems to route low-confidence translations to human post-editing, filter parallel corpora, and gate automated publication \u2014 in contrast to reference-based metrics that require gold translations for scoring.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-translation",
+      "label": "Machine Translation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bleu-score",
+        "label": "BLEU Score"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:comet-metric",
+        "label": "COMET Metric"
+      },
+      {
+        "id": "urn:ngm:class:back-translation",
+        "label": "Back-Translation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "comet-metric",
+      "label": "COMET Metric"
+    },
+    {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
+      "slug": "bleu-score",
+      "label": "BLEU Score"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

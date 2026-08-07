@@ -150,7 +150,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:advanced-driver-assistance-systems",
+        "@id": "urn:ngm:class:advanced-driver-assistance-system",
         "label": "Advanced Driver Assistance Systems"
       },
       {

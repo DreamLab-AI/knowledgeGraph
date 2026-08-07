@@ -92,6 +92,10 @@
     {
       "slug": "compliance-control",
       "label": "Compliance Control"
+    },
+    {
+      "slug": "governance-risk-compliance",
+      "label": "Governance Risk Compliance"
     }
   ]
 }

@@ -155,10 +155,6 @@
       "label": "Drone Navigation"
     },
     {
-      "slug": "localization",
-      "label": "Localization"
-    },
-    {
       "slug": "navigation",
       "label": "Navigation"
     },

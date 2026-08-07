@@ -92,7 +92,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:data-centres", "label": "Data Centres"},
+      {"@id": "urn:ngm:class:data-centre", "label": "Data Centres"},
       {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ],
     "supports": [

@@ -912,7 +912,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -1420,7 +1420,7 @@ public:: true
   - The Manchester Robotics group, in collaboration with the Dalton Nuclear Institute and the National Nuclear Laboratory, investigates autonomous inspection robots for nuclear decommissioning at Sellafield — one of the most challenging operational environments for autonomous navigation.
   - Sellafield's legacy buildings present GPS-denied, radiation-hazardous, geometrically complex environments where topological maps constructed from LiDAR SLAM enable navigation planning for inspection robots that must traverse multi-kilometre facility layouts.
   - The RAIN (Remote Applications in Challenging Environments) Hub, coordinated from Manchester, coordinates UK research on nuclear robotics including topological mapping for decommissioning inspection.
-  - Sheffield Robotics investigates social robotics and [[Human-Robot Interaction]] in hospital and domestic environments — contexts where topological maps must support natural spatial dialogue (landmark references, relative directions) and human-interpretable navigation planning.
+  - Sheffield Robotics investigates social robotics and [[Human Robot Interaction]] in hospital and domestic environments — contexts where topological maps must support natural spatial dialogue (landmark references, relative directions) and human-interpretable navigation planning.
   - Sheffield's ARIA (Autonomous Robots for Industrial Applications) programme applies topological SLAM to manufacturing and logistics environments, with industrial partners including Boeing and McLaren.
   - UCL's Computational Neuroscience Unit (directed by Peter Latham and Maneesh Sahani) investigates computational models of place cells and grid cells — contributing theoretical foundations connecting neuroscience to robotic topological mapping.
   - ### UK Industry

@@ -132,11 +132,11 @@
         "label": "Prompt Engineering"
       },
       {
-        "id": "urn:ngm:class:controlnet",
+        "id": "urn:ngm:class:control-net",
         "label": "ControlNet"
       },
       {
-        "id": "urn:ngm:class:controlnet-conditioning",
+        "id": "urn:ngm:class:control-net-conditioning",
         "label": "ControlNet Conditioning"
       },
       {

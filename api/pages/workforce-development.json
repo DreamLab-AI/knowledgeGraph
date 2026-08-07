@@ -76,6 +76,10 @@
       "label": "Competency Based Education"
     },
     {
+      "slug": "corporate-training",
+      "label": "Corporate Training"
+    },
+    {
       "slug": "virtual-training",
       "label": "Virtual Training"
     }

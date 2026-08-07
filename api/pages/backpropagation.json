@@ -8,7 +8,7 @@
   "definition": "Backpropagation is the algorithm for computing gradients of the loss function with respect to each weight in a neural network by applying the chain rule of calculus in reverse through the computation graph. It enables efficient gradient calculation across all layers in a single backward pass, making large-scale neural network training computationally feasible.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:optimization-algorithm",
+      "id": "urn:ngm:class:optimisation-algorithm",
       "label": "Optimization Algorithm"
     }
   ],
@@ -160,10 +160,6 @@
     {
       "slug": "adam-optimiser",
       "label": "adam optimiser"
-    },
-    {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
     },
     {
       "slug": "algorithm-layer",

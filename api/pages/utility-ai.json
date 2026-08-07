@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:fb2ec05adb829c28e1df2aef4f805845a6ce572ee8cfb2fafb27491199efdb46",
+  "title": "Utility AI",
+  "slug": "utility-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:utility-ai",
+  "domain": "artificial-intelligence",
+  "definition": "A game artificial intelligence architecture in which an agent scores every available action by evaluating weighted utility functions over the current world state \u2014 factors such as health, distance, threat, ammunition, and needs \u2014 and selects the highest-scoring option. Response curves map raw game variables onto normalised utilities that are combined multiplicatively or additively, yielding nuanced, context-sensitive behaviour that degrades gracefully and is easier to tune than rigid rule-based state machines or behaviour trees.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:game-ai",
+      "label": "Game AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      },
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:game-ai",
+        "label": "Game AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-game-agent",
+        "label": "AI Game Agent"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "game-ai",
+      "label": "Game AI"
+    },
+    {
+      "slug": "behaviour-tree",
+      "label": "Behaviour Tree"
+    },
+    {
+      "slug": "finite-state-machine",
+      "label": "Finite State Machine"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    }
+  ]
+}

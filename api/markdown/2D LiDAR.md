@@ -69,7 +69,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:localization", "label": "Localization"},
+      {"@id": "urn:ngm:class:localisation", "label": "Localization"},
       {"@id": "urn:ngm:class:proximity-detection", "label": "Proximity Detection"}
     ],
     "partOf": [

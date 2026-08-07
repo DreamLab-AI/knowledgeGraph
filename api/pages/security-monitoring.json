@@ -94,6 +94,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "intrusion-detection",
+      "label": "Intrusion Detection"
+    },
+    {
       "slug": "threat-surface-map",
       "label": "Threat Surface Map"
     }

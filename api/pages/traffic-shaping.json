@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:5d600d60a8bf4c6230a6129af554400685b84dae4910228c10a581a9d153e124",
+  "title": "Traffic Shaping",
+  "slug": "traffic-shaping",
+  "public": true,
+  "classIri": "urn:ngm:class:traffic-shaping",
+  "domain": "infrastructure",
+  "definition": "A network traffic management technique that regulates the rate and burstiness of outgoing packet flows by buffering packets and releasing them according to a configured profile, classically implemented with token bucket or leaky bucket algorithms. By smoothing bursts and holding flows to contracted rates, shaping delays rather than drops excess traffic, enforcing bandwidth allocations and protecting latency-sensitive classes as a core mechanism of quality-of-service policy at network edges.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:traffic-management",
+      "label": "Traffic Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      },
+      {
+        "id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "traffic-management",
+      "label": "Traffic Management"
+    },
+    {
+      "slug": "quality-of-service",
+      "label": "Quality Of Service"
+    },
+    {
+      "slug": "congestion-control",
+      "label": "Congestion Control"
+    },
+    {
+      "slug": "rate-limiting",
+      "label": "Rate Limiting"
+    },
+    {
+      "slug": "bandwidth",
+      "label": "Bandwidth"
+    }
+  ],
+  "backlinks": []
+}

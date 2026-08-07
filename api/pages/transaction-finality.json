@@ -179,6 +179,10 @@
       "label": "Deterministic Finality"
     },
     {
+      "slug": "liveness",
+      "label": "Liveness"
+    },
+    {
       "slug": "probabilistic-finality",
       "label": "Probabilistic Finality"
     }

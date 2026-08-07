@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
       "label": "Navigation and Planning"
+    },
+    {
+      "id": "urn:ngm:class:state-estimation",
+      "label": "State Estimation"
     }
   ],
   "entityType": "Class",
@@ -29,6 +33,10 @@
       {
         "id": "urn:ngm:class:coordinate-frame",
         "label": "Coordinate Frame"
+      },
+      {
+        "id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
       }
     ],
     "enables": [
@@ -65,6 +73,10 @@
       {
         "id": "urn:ngm:class:loop-closure-detection",
         "label": "Loop Closure Detection"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-robotics",
+        "label": "Probabilistic Robotics"
       }
     ],
     "implements": [],
@@ -76,6 +88,10 @@
       {
         "id": "urn:ngm:class:position-control",
         "label": "Position Tracking"
+      },
+      {
+        "id": "urn:ngm:class:mapping",
+        "label": "Mapping"
       }
     ],
     "bridgesTo": [
@@ -116,9 +132,34 @@
       {
         "id": "urn:ngm:class:occupancy-grid",
         "label": "Occupancy Grid"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-localization",
+        "label": "Monte Carlo Localisation"
+      },
+      {
+        "id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
+      },
+      {
+        "id": "urn:ngm:class:sensor-model",
+        "label": "Sensor Model"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -137,6 +178,14 @@
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:robot-pose",
+        "label": "Robot Pose"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty",
+        "label": "Uncertainty"
       }
     ]
   },
@@ -155,6 +204,10 @@
       "label": "Differential Drive Robot"
     },
     {
+      "slug": "extended-kalman-filter",
+      "label": "Extended Kalman Filter"
+    },
+    {
       "slug": "exteroceptive-sensor",
       "label": "Exteroceptive Sensor"
     },
@@ -165,6 +218,10 @@
     {
       "slug": "navigation",
       "label": "Navigation"
+    },
+    {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
     },
     {
       "slug": "robotics-platform",

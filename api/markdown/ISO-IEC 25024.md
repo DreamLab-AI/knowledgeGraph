@@ -39,10 +39,28 @@ alias:: ISO/IEC 25024
   "@id": "urn:ngm:class:iso-iec-25024",
   "@type": "Class",
   "label": "ISO-IEC 25024",
-  "definition": "ISO/IEC 25024 is part of the SQuaRE series and defines measures for the quality of data within an information system.",
+  "definition": "ISO/IEC 25024 is part of the ISO/IEC 25000 SQuaRE (Systems and software Quality Requirements and Evaluation) series. It defines quantitative measures for the data quality characteristics established in ISO/IEC 25012, enabling the quality of data retained in structured formats within an information system to be measured, evaluated and compared across its life cycle.",
   "domain": "standards",
   "maturity": "established",
   "qualityScore": 0.7,
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      }
+    ]
+  },
   "subClassOf": [
     {
       "@id": "urn:ngm:class:technical-standard",
@@ -85,7 +103,7 @@ alias:: ISO/IEC 25024
 
 
 - ### Definition
-  - ISO/IEC 25024 is part of the SQuaRE series and defines measures for the quality of data within an information system.
+  - ISO/IEC 25024 is part of the ISO/IEC 25000 SQuaRE (Systems and software Quality Requirements and Evaluation) series. It defines quantitative measures for the data quality characteristics established in ISO/IEC 25012, enabling the quality of data retained in structured formats within an information system to be measured, evaluated and compared across its life cycle.
 
 - ### Semantic Classification
   - owl-class:: standards:ISOIEC25024
@@ -93,6 +111,8 @@ alias:: ISO/IEC 25024
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standard]]
+  - related-to:: [[Data Quality]], [[Data Governance]]
+  - enables:: [[Data Quality Management]]
 
 - ### Content
   - ISO/IEC 25024 is part of the SQuaRE series and defines measures for the quality of data within an information system.

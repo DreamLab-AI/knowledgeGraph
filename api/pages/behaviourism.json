@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:7a824f8425577e1c86381291da3219575fa0d6ed1cb27006fdfc6f4295fea881",
+  "title": "Behaviourism",
+  "slug": "behaviourism",
+  "public": true,
+  "classIri": "urn:ngm:class:behaviourism",
+  "domain": "ai",
+  "definition": "A school of psychology and associated philosophy of mind holding that behaviour should be explained through observable stimulus\u2013response relationships and learning histories rather than by appeal to inner mental states. Dominant from Watson's 1913 manifesto through Skinner's radical behaviourism of the mid-twentieth century, it produced the experimental analysis of classical and operant conditioning, was displaced as a general paradigm by the cognitive revolution, and survives today in applied behaviour analysis and in reinforcement learning's core concepts of reward-driven learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:psychology",
+      "label": "Psychology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cognitive-psychology",
+        "label": "Cognitive Psychology"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "psychology",
+      "label": "Psychology"
+    },
+    {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "philosophy-of-mind",
+      "label": "Philosophy of Mind"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    }
+  ]
+}

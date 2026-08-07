@@ -1,4 +1,5 @@
 public:: true
+alias:: Behavior Tree
 
 # Behaviour Tree
 ```json-ld
@@ -27,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:automated-planning",
       "label": "Automated Planning"
+    },
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
     }
   ],
   "relations": {
@@ -96,6 +101,10 @@ public:: true
     ],
     "relatedTo": [
       {
+        "@id": "urn:ngm:class:nav2",
+        "label": "Nav2"
+      },
+      {
         "@id": "urn:ngm:class:intelligent-npc",
         "label": "Intelligent NPC"
       },
@@ -125,7 +134,7 @@ public:: true
   },
   "sameAs": [
     {
-      "@id": "urn:ngm:class:behavior-tree",
+      "@id": "urn:ngm:class:behaviour-tree",
       "label": "Behavior Tree"
     }
   ],
@@ -155,7 +164,7 @@ public:: true
   - enables:: [[Autonomous Agent]], [[NPC Interaction]], [[Intelligent NPC]], [[AI Game Agent]], [[Mission Execution]], [[Robot Navigation]], [[Task Execution]], [[Recovery Behaviour]], [[Concurrent Task Execution]]
   - implements:: [[Modular Behaviour Composition]], [[Reactive Control]], [[Hierarchical Task Decomposition]], [[Interrupt-Driven Control]], [[Asynchronous Execution]]
   - depends-on:: [[Pathfinding Algorithm]], [[Motion Planning]], [[Sensor Input]], [[World Model]], [[Task Planner]]
-  - supports:: [[Game Engine]], [[Game Development]], [[Robot Operating System]], [[Spatial Computing]], [[Autonomous Driving]], [[Human-Robot Interaction]], [[Swarm Robotics]], [[Manufacturing Automation]]
+  - supports:: [[Game Engine]], [[Game Development]], [[Robot Operating System]], [[Spatial Computing]], [[Autonomous Driving]], [[Human Robot Interaction]], [[Swarm Robotics]], [[Manufacturing Automation]]
   - uses:: [[Pathfinding Algorithm]], [[Goal-Oriented Action Planning]], [[AI Agents]], [[Blackboard]], [[PDDL]], [[Motion Planning]], [[Perception Module]]
   - contrasts-with:: [[Finite State Machine]], [[State Machine]], [[Hierarchical Task Network]], [[Teleo-Reactive Program]], [[Subsumption Architecture]], [[Belief Desire Intention]], [[Decision Tree]]
   - related-to:: [[Automated Planning]], [[Teleo-Reactive Program]], [[Belief Desire Intention]], [[Cognitive Architecture]], [[Multi-Agent System]], [[Agentic AI]], [[Reinforcement Learning]], [[Imitation Learning]], [[Formal Verification]]

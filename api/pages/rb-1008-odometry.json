@@ -51,7 +51,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -69,10 +69,6 @@
     {
       "slug": "kalman-filter",
       "label": "Kalman Filter"
-    },
-    {
-      "slug": "localization",
-      "label": "Localization"
     },
     {
       "slug": "monte-carlo-localization",

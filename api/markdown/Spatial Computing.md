@@ -23,7 +23,12 @@ public:: true
   "definition": "Spatial computing is a computing paradigm in which digital information, computation, and interaction are anchored to and organised within three-dimensional physical or virtual space, enabling humans and machines to engage with data as if it inhabits the real world. It integrates continuous spatial sensing — through depth cameras, LiDAR, inertial measurement units, and computer vision — with real-time 3D rendering and multi-modal input (gaze, gesture, voice, touch) to create systems that perceive, reason about, and respond to the user's physical environment. The paradigm subsumes augmented reality, mixed reality, virtual reality, and autonomous spatial agents, unifying them under a common architectural requirement: the continuous, low-latency alignment of digital representations with physical geometry.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
   "sameAs": [
     {
       "@id": "urn:ngm:class:spatial-computing",
@@ -206,6 +211,7 @@ public:: true
     - Education and museum installations use spatial computing to present historical reconstructions, scientific simulations, and cultural artefacts at scales and with interactivity impossible in physical displays.
 
 - ### Relationships
+  - is-subclass-of:: [[Human Computer Interaction]]
   - hasPart:: [[Augmented Reality]]
   - hasPart:: [[Virtual Reality]]
   - hasPart:: [[Mixed Reality]]

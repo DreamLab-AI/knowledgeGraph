@@ -200,6 +200,10 @@
       "label": "Markov Chain"
     },
     {
+      "slug": "multi-armed-bandit",
+      "label": "Multi-Armed Bandit"
+    },
+    {
       "slug": "offline-reinforcement-learning",
       "label": "Offline Reinforcement Learning"
     }

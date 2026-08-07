@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:2ec6ba5d5fafce5fe95b5f7b03e5a4ebcb5a1ce1017d9a1803df7f76a31adcf3",
+  "title": "Container Image",
+  "slug": "container-image",
+  "public": true,
+  "classIri": "urn:ngm:class:container-image",
+  "domain": "infrastructure",
+  "definition": "An immutable, layered filesystem bundle packaging an application together with its runtime, libraries, and configuration metadata, from which container instances are created. Defined by the OCI Image Specification as content-addressed layers plus a manifest and configuration, images are built once, distributed through registries, and executed identically on any compliant runtime, providing the reproducible unit of software delivery that underpins containerised infrastructure from cloud clusters to edge devices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:containerisation",
+      "label": "Containerisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:container",
+        "label": "Container"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:docker-containerisation-platform",
+        "label": "Docker Containerisation Platform"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:container-registry",
+        "label": "Container Registry"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "containerisation",
+      "label": "Containerisation"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
+    },
+    {
+      "slug": "container-registry",
+      "label": "Container Registry"
+    },
+    {
+      "slug": "docker-containerisation-platform",
+      "label": "Docker Containerisation Platform"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "container-registry",
+      "label": "Container Registry"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ]
+}

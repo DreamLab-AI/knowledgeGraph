@@ -414,12 +414,24 @@
   ],
   "backlinks": [
     {
+      "slug": "annotated-dataset",
+      "label": "Annotated Dataset"
+    },
+    {
       "slug": "benchmark-dataset",
       "label": "Benchmark Dataset"
     },
     {
       "slug": "dicom",
       "label": "DICOM"
+    },
+    {
+      "slug": "dataset-curation",
+      "label": "Dataset Curation"
+    },
+    {
+      "slug": "datasheets-for-datasets",
+      "label": "Datasheets for Datasets"
     },
     {
       "slug": "training-data",

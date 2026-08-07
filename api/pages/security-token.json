@@ -147,6 +147,10 @@
   ],
   "backlinks": [
     {
+      "slug": "digital-securities",
+      "label": "Digital Securities"
+    },
+    {
       "slug": "erc1400-token",
       "label": "ERC1400 Token"
     },
@@ -161,6 +165,10 @@
     {
       "slug": "identity-federation",
       "label": "Identity Federation"
+    },
+    {
+      "slug": "regulation-d",
+      "label": "Regulation D"
     },
     {
       "slug": "securitize",

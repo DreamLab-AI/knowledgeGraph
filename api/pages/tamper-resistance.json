@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:5b6b3df239b80f9a0878fa726551fce6ff7dad7e97b4c4a8c72e1548c4841e56",
+  "title": "Tamper Resistance",
+  "slug": "tamper-resistance",
+  "public": true,
+  "classIri": "urn:ngm:class:tamper-resistance",
+  "domain": "security",
+  "definition": "The property of a device or system that makes unauthorised physical access, modification, or extraction of its protected contents actively difficult, achieved through measures such as hardened enclosures, potted or shielded circuitry, mesh sensors that detect penetration, and logic that zeroises cryptographic keys when intrusion is sensed. Tamper resistance aims to prevent or frustrate an attack in progress, in contrast to tamper evidence, which merely ensures that interference leaves a detectable trace. It is a defining requirement for secure hardware including trusted platform modules, hardware security modules, smartcards, and payment terminals, and is graded by certification schemes such as FIPS 140-3 physical security levels and Common Criteria evaluations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-security",
+      "label": "Hardware Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      },
+      {
+        "id": "urn:ngm:class:secure-element",
+        "label": "Secure Element"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tamper-evidence",
+        "label": "Tamper Evidence"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:physical-security",
+        "label": "Physical Security"
+      },
+      {
+        "id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attack"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware-security",
+      "label": "Hardware Security"
+    },
+    {
+      "slug": "tamper-evidence",
+      "label": "Tamper Evidence"
+    },
+    {
+      "slug": "trusted-platform-module",
+      "label": "Trusted Platform Module"
+    },
+    {
+      "slug": "hardware-security-module",
+      "label": "Hardware Security Module"
+    }
+  ],
+  "backlinks": []
+}

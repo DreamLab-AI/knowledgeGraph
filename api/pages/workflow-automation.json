@@ -189,6 +189,10 @@
       "label": "Business Process Automation"
     },
     {
+      "slug": "case-management-system",
+      "label": "Case Management System"
+    },
+    {
       "slug": "claude",
       "label": "Claude"
     },
@@ -275,6 +279,10 @@
     {
       "slug": "task-automation",
       "label": "Task Automation"
+    },
+    {
+      "slug": "task-scheduling",
+      "label": "Task Scheduling"
     }
   ]
 }

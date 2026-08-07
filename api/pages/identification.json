@@ -35,5 +35,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "identifier",
+      "label": "Identifier"
+    }
+  ]
 }

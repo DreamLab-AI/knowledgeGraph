@@ -784,6 +784,10 @@
       "label": "AI System"
     },
     {
+      "slug": "api-monetisation",
+      "label": "API Monetisation"
+    },
+    {
       "slug": "access-control-system",
       "label": "Access Control System"
     },

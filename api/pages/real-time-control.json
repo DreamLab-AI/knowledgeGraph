@@ -159,6 +159,10 @@
       "label": "Robotics Platform"
     },
     {
+      "slug": "task-scheduling",
+      "label": "Task Scheduling"
+    },
+    {
       "slug": "micro-ros",
       "label": "micro-ROS"
     }

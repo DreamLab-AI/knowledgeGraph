@@ -28,7 +28,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:data-center",
+        "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       }
     ],
@@ -110,6 +110,10 @@
     {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
+    },
+    {
+      "slug": "nvidia-corporation-h200",
+      "label": "NVIDIA H200"
     }
   ]
 }

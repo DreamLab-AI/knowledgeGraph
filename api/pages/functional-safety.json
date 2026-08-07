@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:failure-mode-effects-analysis",
+        "id": "urn:ngm:class:failure-mode-and-effects-analysis",
         "label": "Failure Mode and Effects Analysis"
       },
       {
@@ -182,6 +182,10 @@
     {
       "slug": "robot-standard",
       "label": "Robot Standard"
+    },
+    {
+      "slug": "safety-instrumented-system",
+      "label": "Safety Instrumented System"
     }
   ]
 }

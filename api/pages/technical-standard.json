@@ -182,6 +182,10 @@
       "label": "Benchmark Standard"
     },
     {
+      "slug": "best-practice",
+      "label": "Best Practice"
+    },
+    {
       "slug": "c2-pa-standard",
       "label": "C2PA Standard"
     },
@@ -330,8 +334,20 @@
       "label": "IEEE 802.3"
     },
     {
+      "slug": "ieee-p2048-1",
+      "label": "IEEE P2048-1"
+    },
+    {
+      "slug": "ieee-p2048-2",
+      "label": "IEEE P2048-2"
+    },
+    {
       "slug": "ieee-p-2048-3",
       "label": "IEEE P2048-3"
+    },
+    {
+      "slug": "ieee-p2048-4",
+      "label": "IEEE P2048-4"
     },
     {
       "slug": "ieee-p-2048-9",
@@ -586,6 +602,10 @@
       "label": "ISO-IEC TR 24027"
     },
     {
+      "slug": "iso-iec-tr-24028",
+      "label": "ISO/IEC TR 24028"
+    },
+    {
       "slug": "iso-iec-tr-24029-1-2021",
       "label": "ISO-IEC TR 24029-1 2021"
     },
@@ -666,6 +686,10 @@
       "label": "NIST SP 800-63"
     },
     {
+      "slug": "presentation-exchange",
+      "label": "Presentation Exchange"
+    },
+    {
       "slug": "rfc-8785-canonical-json",
       "label": "RFC 8785 Canonical JSON"
     },
@@ -676,6 +700,10 @@
     {
       "slug": "robot-standard",
       "label": "Robot Standard"
+    },
+    {
+      "slug": "specification",
+      "label": "Specification"
     },
     {
       "slug": "w-3-c-2022-did-core-1-0-recommendation",

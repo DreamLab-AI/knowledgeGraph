@@ -369,6 +369,10 @@
       "label": "Cryptography"
     },
     {
+      "slug": "cultural-heritage",
+      "label": "Cultural Heritage"
+    },
+    {
       "slug": "decentralised-creative-metaverse-framework",
       "label": "Decentralised Creative Metaverse Framework"
     },
@@ -541,10 +545,6 @@
       "label": "IoT Sensor Network"
     },
     {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
-    },
-    {
       "slug": "mechanical-component",
       "label": "Mechanical Component"
     },
@@ -567,6 +567,10 @@
     {
       "slug": "model-capacity",
       "label": "Model Capacity"
+    },
+    {
+      "slug": "model-based-systems-engineering",
+      "label": "Model-Based Systems Engineering"
     },
     {
       "slug": "motion-control",

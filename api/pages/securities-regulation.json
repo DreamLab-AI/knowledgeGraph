@@ -662,6 +662,10 @@
       "label": "Financial Conduct Authority"
     },
     {
+      "slug": "regulation-d",
+      "label": "Regulation D"
+    },
+    {
       "slug": "regulatory-reporting",
       "label": "Regulatory Reporting"
     },

@@ -212,10 +212,6 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
-    },
-    {
       "slug": "adaptive-behaviour",
       "label": "Adaptive Behaviour"
     },
@@ -320,6 +316,10 @@
       "label": "Computational Linguistics"
     },
     {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
       "slug": "content-creation",
       "label": "Content Creation"
     },
@@ -388,10 +388,6 @@
       "label": "Deep Reinforcement Learning"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },
@@ -438,6 +434,10 @@
     {
       "slug": "multi-agent-orchestration-frameworks",
       "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "multimodal-model",
+      "label": "Multimodal Model"
     },
     {
       "slug": "nostr-protocol",

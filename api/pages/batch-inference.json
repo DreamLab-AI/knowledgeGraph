@@ -186,7 +186,7 @@
         "label": "Throughput Optimisation"
       },
       {
-        "id": "urn:ngm:class:model-quantisation",
+        "id": "urn:ngm:class:model-quantization",
         "label": "Model Quantisation"
       },
       {
@@ -345,6 +345,10 @@
     {
       "slug": "ai-inference",
       "label": "AI Inference"
+    },
+    {
+      "slug": "throughput-optimisation",
+      "label": "Throughput Optimisation"
     }
   ]
 }

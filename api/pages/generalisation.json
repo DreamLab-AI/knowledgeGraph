@@ -90,6 +90,10 @@
     {
       "slug": "adam-optimiser",
       "label": "adam optimiser"
+    },
+    {
+      "slug": "grokking",
+      "label": "Grokking"
     }
   ]
 }

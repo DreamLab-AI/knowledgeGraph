@@ -91,6 +91,10 @@
     {
       "slug": "bitcoin-mining",
       "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "integrated-circuit",
+      "label": "Integrated Circuit"
     }
   ]
 }

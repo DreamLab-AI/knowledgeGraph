@@ -166,6 +166,10 @@
     {
       "slug": "health-metaverse-application",
       "label": "Health Metaverse Application"
+    },
+    {
+      "slug": "ieee-p2048-1",
+      "label": "IEEE P2048-1"
     }
   ]
 }

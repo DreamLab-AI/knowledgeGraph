@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:2aa92279761ea66a39641a40df8df562c6144f53d1a36e051261c5ccee2045fb",
+  "title": "Task Allocation",
+  "slug": "task-allocation",
+  "public": true,
+  "classIri": "urn:ngm:class:task-allocation",
+  "domain": "artificial-intelligence",
+  "definition": "Task allocation is the process of assigning work items to agents in a multi-agent system so that collective objectives are met efficiently, taking into account agent capabilities, current load, task dependencies, deadlines, and communication costs. Approaches range from centralised optimisation and market-based auctions to fully distributed negotiation, and the choice of mechanism determines the system's scalability, robustness to agent failure, and responsiveness to changing conditions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:coordination-mechanisms",
+      "label": "Coordination Mechanisms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "coordination-mechanisms",
+      "label": "Coordination Mechanisms"
+    },
+    {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "slug": "task-delegation",
+      "label": "Task Delegation"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "Coordination Layer"
+    }
+  ]
+}

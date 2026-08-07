@@ -53,7 +53,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:automl",
+        "id": "urn:ngm:class:auto-ml",
         "label": "AutoML"
       }
     ],
@@ -293,6 +293,10 @@
     {
       "slug": "creative-industries",
       "label": "Creative Industries"
+    },
+    {
+      "slug": "electronic-design-automation",
+      "label": "Electronic Design Automation"
     },
     {
       "slug": "generative-ai",

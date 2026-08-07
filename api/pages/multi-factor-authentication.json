@@ -176,6 +176,10 @@
     {
       "slug": "identity-provider",
       "label": "Identity Provider"
+    },
+    {
+      "slug": "password",
+      "label": "Password"
     }
   ]
 }

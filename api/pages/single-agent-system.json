@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:7a93e14ccb4c8655b5fa801e78c150efc80d5ca0e466fbd9983a484ffa89f067",
+  "title": "Single-Agent System",
+  "slug": "single-agent-system",
+  "public": true,
+  "classIri": "urn:ngm:class:single-agent-system",
+  "domain": "artificial-intelligence",
+  "definition": "An architectural pattern in which one autonomous agent, equipped with its own model, memory, and tool access, carries an entire task from goal to completion within a single reasoning loop \u2014 with no delegation, inter-agent messaging, or coordination overhead; simpler to build, debug, and evaluate than multi-agent designs, and often the stronger baseline when a capable model with good tools can hold the whole problem in context.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:architecture",
+      "label": "Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:llm-agents",
+        "label": "LLM Agents"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    }
+  ]
+}

@@ -67,6 +67,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "coding-theory",
+      "label": "Coding Theory"
+    },
+    {
       "slug": "communication-protocol",
       "label": "Communication Protocol"
     },

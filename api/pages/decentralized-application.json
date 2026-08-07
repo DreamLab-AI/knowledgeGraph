@@ -153,6 +153,10 @@
       "label": "Smart Contracts"
     },
     {
+      "slug": "trustless-execution",
+      "label": "Trustless Execution"
+    },
+    {
       "slug": "x-402",
       "label": "X402"
     }

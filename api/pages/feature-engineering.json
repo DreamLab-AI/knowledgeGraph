@@ -211,6 +211,10 @@
       "label": "Dimensionality Reduction"
     },
     {
+      "slug": "end-to-end-learning",
+      "label": "End-to-End Learning"
+    },
+    {
       "slug": "feature-attribution",
       "label": "Feature Attribution"
     },

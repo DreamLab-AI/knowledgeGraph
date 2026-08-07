@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:40b30b4e8f0d137056ac497e859ea198c1a00db4267d1ade9c458d04024e2981",
+  "title": "Material",
+  "slug": "material",
+  "public": true,
+  "classIri": "urn:ngm:class:material",
+  "domain": "spatial-computing",
+  "definition": "A material is the generic description of how a 3D surface responds to light, bundling the shading model and its parameters \u2014 base colour, roughness, metalness, normal detail, emission, transparency \u2014 into a reusable definition that a renderer evaluates for each visible point. Materials are the container into which texture maps are plugged and which a shader program consumes, mediating between geometry and the final rendered appearance. This is a general graphics concept, not to be confused with MaterialX, which is a specific open interchange standard from Lucasfilm/ILM for encoding and exchanging material graphs between applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:texture-map",
+        "label": "Texture Map"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "texture-map",
+      "label": "Texture Map"
+    },
+    {
+      "slug": "shader",
+      "label": "Shader"
+    },
+    {
+      "slug": "physically-based-rendering",
+      "label": "Physically Based Rendering"
+    }
+  ],
+  "backlinks": []
+}

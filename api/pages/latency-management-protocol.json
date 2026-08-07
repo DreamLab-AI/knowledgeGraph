@@ -155,10 +155,6 @@
     {
       "slug": "edge-orchestration",
       "label": "Edge Orchestration"
-    },
-    {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
     }
   ]
 }

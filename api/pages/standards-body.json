@@ -166,6 +166,10 @@
       "label": "Interoperability Standards"
     },
     {
+      "slug": "mpeg",
+      "label": "MPEG"
+    },
+    {
       "slug": "oma-3",
       "label": "OMA3"
     },

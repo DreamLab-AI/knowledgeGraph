@@ -107,5 +107,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "normal-mapping",
+      "label": "Normal Mapping"
+    }
+  ]
 }

@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:40ea16f54cc461d93e26bc0ec6637dbd0d0bb6e984ffd5be43673ca785ef3b38",
+  "title": "Instrumental Convergence",
+  "slug": "instrumental-convergence",
+  "public": true,
+  "classIri": "urn:ngm:class:instrumental-convergence",
+  "domain": "artificial-intelligence",
+  "definition": "The hypothesis in AI safety research that sufficiently capable goal-directed agents will pursue similar instrumental subgoals \u2014 self-preservation, goal-content integrity, resource acquisition, and cognitive self-improvement \u2014 almost regardless of their terminal objectives, because these subgoals are useful for achieving nearly any final goal. Formulated by Steve Omohundro and Nick Bostrom, the thesis implies that advanced systems may resist shutdown or modification even when never explicitly programmed to do so, motivating research on corrigibility and alignment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-risk",
+      "label": "AI Risk"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:existential-ai-risk",
+        "label": "Existential AI Risk"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:superintelligence",
+        "label": "Superintelligence"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "existential-ai-risk",
+      "label": "Existential AI Risk"
+    },
+    {
+      "slug": "superintelligence",
+      "label": "Superintelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    }
+  ]
+}

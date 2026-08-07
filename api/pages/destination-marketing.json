@@ -98,6 +98,10 @@
     {
       "slug": "tourism-metaverse",
       "label": "Tourism Metaverse"
+    },
+    {
+      "slug": "vr-experiences",
+      "label": "VR Experiences"
     }
   ]
 }

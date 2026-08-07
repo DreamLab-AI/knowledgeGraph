@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:85e52bb04f3c306d8de2dde3a037db3c2aceb09aed93d1878af8b4f7651446a2",
+  "title": "Bias in AI",
+  "slug": "bias-in-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:bias-in-ai",
+  "domain": "governance",
+  "definition": "The systematic and unfair skewing of artificial intelligence outputs against particular groups or outcomes, arising from unrepresentative or historically prejudiced training data, flawed problem framing, proxy variables, feedback loops, and deployment context. It manifests as measurable performance and treatment disparities \u2014 in face recognition, hiring, credit, healthcare and content moderation \u2014 and is addressed through bias auditing, fairness metrics, data curation, and governance obligations now codified in regulation such as the EU AI Act.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-ethics",
+      "label": "AI Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "Synthetic Data"
+    },
+    {
+      "slug": "healthcare-ai",
+      "label": "Healthcare AI"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    }
+  ]
+}

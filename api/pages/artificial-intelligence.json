@@ -348,6 +348,10 @@
       "label": "ai policy"
     },
     {
+      "slug": "ai-research",
+      "label": "AI Research"
+    },
+    {
       "slug": "ai-risk-management",
       "label": "AI Risk Management"
     },
@@ -508,10 +512,6 @@
       "label": "Behavior Analysis"
     },
     {
-      "slug": "behavioral-analytics",
-      "label": "Behavioral Analytics"
-    },
-    {
       "slug": "behavioral-modeling",
       "label": "Behavioral Modeling"
     },
@@ -526,6 +526,10 @@
     {
       "slug": "call-centres",
       "label": "Call Centres"
+    },
+    {
+      "slug": "centralised-ai",
+      "label": "Centralised AI"
     },
     {
       "slug": "circular-economy",
@@ -1048,6 +1052,10 @@
       "label": "Multi-Head Attention"
     },
     {
+      "slug": "multimodal-ai",
+      "label": "Multimodal Artificial Intelligence"
+    },
+    {
       "slug": "multimodal-understanding",
       "label": "Multimodal Understanding"
     },
@@ -1100,8 +1108,8 @@
       "label": "Objective"
     },
     {
-      "slug": "optimization-algorithm",
-      "label": "Optimization Algorithm"
+      "slug": "pandemic-preparedness-ai",
+      "label": "Pandemic Preparedness AI"
     },
     {
       "slug": "parameter-efficient-fine-tuning",

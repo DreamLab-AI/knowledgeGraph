@@ -137,7 +137,7 @@
         "label": "Model Cards"
       },
       {
-        "id": "urn:ngm:class:ai-incident-reporting",
+        "id": "urn:ngm:class:incident-reporting",
         "label": "AI Incident Reporting"
       }
     ]
@@ -180,6 +180,10 @@
     {
       "slug": "ai-liability",
       "label": "AI Liability"
+    },
+    {
+      "slug": "ai-lifecycle-management",
+      "label": "AI Lifecycle Management"
     },
     {
       "slug": "ai-lifecycle",

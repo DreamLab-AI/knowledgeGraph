@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:da28744bb278b159f29991375d8ac0684744db64ab22782bc76ea88b1f4ecafd",
+  "title": "Stochastic Optimisation",
+  "slug": "stochastic-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:stochastic-optimisation",
+  "domain": "machine-learning",
+  "definition": "The branch of mathematical optimisation concerned with minimising or maximising objectives that involve randomness \u2014 either because the objective and constraints are expectations over uncertain data, or because the algorithm itself deliberately injects randomness, as in stochastic gradient methods, simulated annealing, and evolutionary search. It provides the convergence theory and algorithmic machinery, from Robbins-Monro stochastic approximation to Adam, that makes training large-scale machine learning models on sampled mini-batches tractable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mathematical-optimisation",
+      "label": "Mathematical Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:random-search",
+        "label": "Random Search"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "mathematical-optimisation",
+      "label": "Mathematical Optimisation"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "random-search",
+      "label": "Random Search"
+    },
+    {
+      "slug": "monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    }
+  ]
+}

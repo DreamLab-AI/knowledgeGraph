@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:animation-standard",
   "domain": "spatial-computing",
-  "definition": "Animation Standard is a spatial computing concept.",
+  "definition": "A technical specification defining how skeletal rigs, keyframes, blend shapes, and motion data are represented and exchanged so that animated characters and objects behave consistently across metaverse platforms, game engines, and spatial computing runtimes, supporting interoperable avatar animation and real-time playback.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -18,7 +18,12 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-interoperability",
+        "label": "Asset Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
@@ -32,7 +37,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ]
   },
   "wikilinks": [
     {

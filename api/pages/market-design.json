@@ -37,7 +37,7 @@
         "label": "Spectrum Allocation"
       },
       {
-        "id": "urn:ngm:class:carbon-market",
+        "id": "urn:ngm:class:carbon-markets",
         "label": "Carbon Market"
       },
       {
@@ -68,7 +68,7 @@
         "label": "Tokenomics"
       },
       {
-        "id": "urn:ngm:class:defi",
+        "id": "urn:ngm:class:de-fi",
         "label": "Defi"
       }
     ],

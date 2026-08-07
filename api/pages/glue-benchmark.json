@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:8e28b86425d6b71e3c8f9cb01baadfd2e7f620ea628a70b3125786719b37259d",
+  "title": "GLUE Benchmark",
+  "slug": "glue-benchmark",
+  "public": true,
+  "classIri": "urn:ngm:class:glue-benchmark",
+  "domain": "machine-learning",
+  "definition": "The General Language Understanding Evaluation, a 2018 suite of nine English sentence- and sentence-pair tasks \u2014 spanning acceptability, sentiment, paraphrase, similarity, and natural language inference \u2014 with a public leaderboard and diagnostic set, which became the standard yardstick for pretrained language models such as BERT and RoBERTa until model performance surpassed human baselines and evaluation moved to harder successors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:benchmarking",
+      "label": "Benchmarking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:beir-benchmark",
+        "label": "BEIR Benchmark"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "benchmarking",
+      "label": "Benchmarking"
+    },
+    {
+      "slug": "natural-language-understanding",
+      "label": "Natural Language Understanding"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "beir-benchmark",
+      "label": "BEIR Benchmark"
+    }
+  ],
+  "backlinks": []
+}

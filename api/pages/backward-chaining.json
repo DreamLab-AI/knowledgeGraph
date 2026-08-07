@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:a0d0f30b35b695513f8b64829c09d81f71a63b700380dd2ec0c2fb91fb143a2d",
+  "title": "Backward Chaining",
+  "slug": "backward-chaining",
+  "public": true,
+  "classIri": "urn:ngm:class:backward-chaining",
+  "domain": "artificial-intelligence",
+  "definition": "A goal-driven inference strategy that starts from a hypothesis to be proved and works backwards through the rule base, decomposing each goal into the subgoals given by the antecedents of rules whose consequents match it, recursing until every subgoal is grounded in known facts or fails. It is the query-answering counterpart to forward chaining, the evaluation strategy underlying Prolog's SLD resolution, and the diagnostic engine of classic expert systems such as MYCIN.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference",
+      "label": "Inference"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:forward-chaining",
+        "label": "Forward Chaining"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "inference",
+      "label": "Inference"
+    },
+    {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based Systems"
+    },
+    {
+      "slug": "forward-chaining",
+      "label": "Forward Chaining"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    },
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
+    },
+    {
+      "slug": "forward-chaining",
+      "label": "Forward Chaining"
+    }
+  ]
+}

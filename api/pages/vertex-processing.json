@@ -102,6 +102,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "fragment-shading",
+      "label": "Fragment Shading"
+    },
+    {
       "slug": "real-time-rendering-pipeline",
       "label": "Real-Time Rendering Pipeline"
     }

@@ -94,7 +94,7 @@
       {"@id": "urn:ngm:class:cognitive-ai", "label": "Cognitive AI"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
       {"@id": "urn:ngm:class:intelligent-tutoring-systems", "label": "Intelligent Tutoring Systems"},
-      {"@id": "urn:ngm:class:neurosymbolic-ai", "label": "Neurosymbolic AI"},
+      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neurosymbolic AI"},
       {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"}
     ],
     "requires": [

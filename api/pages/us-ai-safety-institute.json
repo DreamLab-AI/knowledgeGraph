@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:bac2e871ffb9f9d297462595d27cc197b9fcb1918e44e75805c04c9572a8e6a3",
+  "title": "US AI Safety Institute",
+  "slug": "us-ai-safety-institute",
+  "public": true,
+  "classIri": "urn:ngm:class:us-ai-safety-institute",
+  "domain": "governance",
+  "definition": "The US AI Safety Institute (US AISI) is the United States government body, established within the National Institute of Standards and Technology (NIST), tasked with developing the science, evaluations, and guidelines for safe and trustworthy artificial intelligence. It conducts pre-deployment testing of frontier models, produces measurement methods and red-teaming guidance, and advances standards for AI safety. As a distinct organisation from the UK AI Safety Institute, it operates under US jurisdiction and NIST's standards mandate; the two institutes coordinate on evaluations through a bilateral partnership while remaining separate national bodies with their own remits, funding, and legal contexts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-safety-institute",
+      "label": "AI Safety Institute"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-self-regulation",
+        "label": "AI Self-Regulation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:uk-ai-safety-institute",
+        "label": "UK AI Safety Institute"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-safety-institute",
+      "label": "AI Safety Institute"
+    },
+    {
+      "slug": "uk-ai-safety-institute",
+      "label": "UK AI Safety Institute"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    }
+  ]
+}

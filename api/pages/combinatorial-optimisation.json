@@ -342,6 +342,10 @@
       "label": "Applied Mathematics"
     },
     {
+      "slug": "branch-and-bound",
+      "label": "Branch and Bound"
+    },
+    {
       "slug": "clustering",
       "label": "Clustering"
     },
@@ -360,6 +364,18 @@
     {
       "slug": "constraint",
       "label": "Constraint"
+    },
+    {
+      "slug": "local-search",
+      "label": "Local Search"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "simulated-annealing",
+      "label": "Simulated Annealing"
     }
   ]
 }

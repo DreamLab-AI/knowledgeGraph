@@ -1,4 +1,5 @@
 public:: true
+alias:: Data Center
 
 # Data Centre
 ```json-ld
@@ -28,10 +29,20 @@ public:: true
     "label": "Computing Infrastructure"
   },
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:server",
         "label": "Server"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-cooling",
+        "label": "Liquid Cooling"
       },
       {
         "@id": "urn:ngm:class:cooling-system",
@@ -58,6 +69,14 @@ public:: true
       {
         "@id": "urn:ngm:class:high-speed-network-connectivity",
         "label": "High-Speed Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
       }
     ],
     "enables": [
@@ -76,6 +95,10 @@ public:: true
       {
         "@id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       }
     ],
     "dependsOn": [
@@ -100,6 +123,14 @@ public:: true
       {
         "@id": "urn:ngm:class:hot-aisle-cold-aisle-containment",
         "label": "Hot-Aisle Cold-Aisle Containment"
+      },
+      {
+        "@id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
       }
     ],
     "supports": [
@@ -110,6 +141,10 @@ public:: true
       {
         "@id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:failover",
+        "label": "Failover"
       }
     ],
     "standardizedBy": [
@@ -140,6 +175,10 @@ public:: true
       {
         "@id": "urn:ngm:class:renewable-energy",
         "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
       }
     ],
     "relatedTo": [
@@ -150,12 +189,20 @@ public:: true
       {
         "@id": "urn:ngm:class:colocation-services",
         "label": "Colocation Services"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:geographic-distribution",
+        "label": "Geographic Distribution"
       }
     ]
   },
   "sameAs": [
     {
-      "@id": "urn:ngm:class:data-center",
+      "@id": "urn:ngm:class:data-centre",
       "label": "Data Center"
     },
     {
@@ -176,3 +223,33 @@ public:: true
   - A data centre is a purpose-built facility housing compute, storage and network hardware along with the [[Energy and Power]] and cooling systems required to keep them running reliably.
 - ### Content
   - Facilities are engineered for redundancy across power, cooling and connectivity, with tiered availability classifications. Because cooling and electricity dominate operating cost and environmental impact, efficiency metrics such as power usage effectiveness drive design and sustainability efforts.
+- ### Overview
+  - Data centres are the physical substrate of the digital economy, concentrating compute and storage where power and connectivity are abundant.
+  - Their design balances reliability, density, energy use, and cost, with tiered standards describing redundancy and uptime expectations.
+  - As [[GPU]]-driven AI workloads grow, power delivery and advanced cooling such as [[Liquid Cooling]] have become defining constraints.
+  - Geographic distribution across facilities supports latency reduction, disaster recovery, and content delivery.
+- ### Key aspects
+  - Power and cooling: redundant supply, backup generation, and thermal management of dense racks.
+  - Reliability tiering: redundancy levels that determine tolerated downtime and concurrent maintainability.
+  - Physical and network security: access control, monitoring, and resilient connectivity.
+  - Energy efficiency: power usage effectiveness, heat reuse, and renewable sourcing.
+  - Scale tiers: from edge micro-facilities to hyperscale campuses serving global cloud demand.
+- ### Applications
+  - Hosting public and private cloud platforms and their virtualised workloads.
+  - Running AI training and inference clusters that demand high-density power and cooling.
+  - Anchoring content delivery networks and low-latency edge presence.
+  - Providing disaster-recovery and high-availability sites through geographic redundancy.
+- ### Relationships
+  - partOf:: [[Cloud Computing]]
+  - hasPart:: [[Server]]
+  - hasPart:: [[Liquid Cooling]]
+  - requires:: [[Power Grid]]
+  - requires:: [[Renewable Energy]]
+  - uses:: [[Redundancy]]
+  - uses:: [[GPU]]
+  - supports:: [[Edge Computing]]
+  - supports:: [[Failover]]
+  - bridgesTo:: [[Infrastructure]]
+  - enables:: [[High Availability]]
+  - relatedTo:: [[Content Delivery Network]]
+  - relatedTo:: [[Geographic Distribution]]

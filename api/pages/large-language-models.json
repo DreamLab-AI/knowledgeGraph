@@ -1021,6 +1021,10 @@
       "label": "Semantic Search"
     },
     {
+      "slug": "single-turn-inference",
+      "label": "Single-Turn Inference"
+    },
+    {
       "slug": "social-impact",
       "label": "Social Impact"
     },

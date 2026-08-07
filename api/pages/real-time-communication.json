@@ -166,6 +166,10 @@
       "label": "Audience Engagement"
     },
     {
+      "slug": "jitter",
+      "label": "Jitter"
+    },
+    {
       "slug": "networking-layer",
       "label": "Networking Layer"
     },

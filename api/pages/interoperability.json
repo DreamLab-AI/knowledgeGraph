@@ -778,6 +778,10 @@
       "label": "Allo Protocol"
     },
     {
+      "slug": "best-practice",
+      "label": "Best Practice"
+    },
+    {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
     },
@@ -862,6 +866,10 @@
       "label": "Network Protocol"
     },
     {
+      "slug": "open-protocol",
+      "label": "Open Protocol"
+    },
+    {
       "slug": "private-blockchain",
       "label": "Private Blockchain"
     },
@@ -870,12 +878,24 @@
       "label": "Relayer"
     },
     {
+      "slug": "resolver",
+      "label": "Resolver"
+    },
+    {
       "slug": "routing-protocol",
       "label": "Routing Protocol"
     },
     {
+      "slug": "separation-of-concerns",
+      "label": "Separation of Concerns"
+    },
+    {
       "slug": "solid",
       "label": "Solid"
+    },
+    {
+      "slug": "specification",
+      "label": "Specification"
     },
     {
       "slug": "squid-router",

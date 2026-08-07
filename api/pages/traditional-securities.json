@@ -41,7 +41,7 @@
         "label": "Security Token"
       },
       {
-        "id": "urn:ngm:class:asset-tokenization",
+        "id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       }
     ],
@@ -51,7 +51,7 @@
         "label": "Security Token"
       },
       {
-        "id": "urn:ngm:class:asset-tokenization",
+        "id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       }
     ],

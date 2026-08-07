@@ -153,6 +153,10 @@
       "label": "Layer2"
     },
     {
+      "slug": "open-protocol",
+      "label": "Open Protocol"
+    },
+    {
       "slug": "reputation-system",
       "label": "Reputation System"
     }

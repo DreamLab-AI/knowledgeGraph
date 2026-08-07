@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:8ab13e329badc1fb1e68ac138dc7f66717a95f8eb3a7df1f90ebd35d82025e9a",
+  "title": "EU AI Act Article 53",
+  "slug": "eu-ai-act-regulatory-instrument-article-53",
+  "public": true,
+  "classIri": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-53",
+  "domain": "governance",
+  "definition": "The article of the EU Artificial Intelligence Act (Regulation (EU) 2024/1689) that imposes obligations on providers of general-purpose AI models: maintaining technical documentation, supplying information to downstream integrators, putting in place a policy to comply with EU copyright law including text-and-data-mining opt-outs, and publishing a sufficiently detailed public summary of the content used for training. It is the principal legal hook connecting web scraping and training-data practices to EU regulatory enforcement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:eu-ai-act",
+      "label": "EU AI Act"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-scrapers",
+        "label": "AI Scrapers"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    }
+  ],
+  "backlinks": []
+}

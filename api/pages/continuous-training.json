@@ -336,5 +336,10 @@
       "label": "Gradient Descent"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "model-retraining",
+      "label": "Model Retraining"
+    }
+  ]
 }

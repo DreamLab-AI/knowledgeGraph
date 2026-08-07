@@ -44,7 +44,7 @@
         "label": "Bias Mitigation"
       },
       {
-        "id": "urn:ngm:class:protected-attribute",
+        "id": "urn:ngm:class:protected-attributes",
         "label": "Protected Attribute"
       },
       {
@@ -217,6 +217,10 @@
     {
       "slug": "decision-engine",
       "label": "Decision Engine"
+    },
+    {
+      "slug": "equalized-odds",
+      "label": "Equalized Odds"
     },
     {
       "slug": "ethical-ai",

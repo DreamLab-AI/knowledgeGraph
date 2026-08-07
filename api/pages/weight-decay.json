@@ -67,10 +67,6 @@
     {
       "slug": "adam-optimiser",
       "label": "adam optimiser"
-    },
-    {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
     }
   ]
 }

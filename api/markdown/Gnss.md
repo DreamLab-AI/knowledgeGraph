@@ -24,7 +24,7 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:localization",
+      "@id": "urn:ngm:class:localisation",
       "label": "Localization"
     }
   ],
@@ -51,7 +51,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -81,7 +81,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ],
@@ -121,7 +121,7 @@ public:: true
 ```
 - ### Definition
   - A Global Navigation Satellite System (GNSS) is a constellation of satellites that broadcast timed signals enabling receivers to compute their absolute position, velocity and time anywhere on Earth. GPS, Galileo, GLONASS and BeiDou are the principal systems, with receivers trilaterating position from signal travel times across multiple satellites. In robotics, GNSS provides global geo-referenced localisation that anchors local sensor-based estimates to an absolute coordinate frame.
-  - Related core concepts: [[Localization]] [[GPS]] [[Autonomous Navigation]] [[Sensor Fusion]] [[Kalman Filter]]
+  - Related core concepts: [[Localisation]] [[GPS]] [[Autonomous Navigation]] [[Sensor Fusion]] [[Kalman Filter]]
 - ### Overview
   - GNSS delivers absolute positioning by measuring how long coded signals take to reach a receiver from satellites with precisely known orbits and clocks. Augmentation techniques such as RTK and PPP refine accuracy from metres to centimetres, while integration with inertial measurement units bridges signal outages. For robots and vehicles, GNSS is the global anchor that complements relative, drift-prone onboard estimation.
 - ### Mechanisms
@@ -136,18 +136,18 @@ public:: true
   - Anchoring SLAM and dead-reckoning estimates to an absolute frame.
   - Fleet tracking, logistics and timing synchronisation across distributed systems.
 - ### Relationships
-  - subClassOf:: [[Localization]]
+  - subClassOf:: [[Localisation]]
   - relatedTo:: [[GPS]]
   - relatedTo:: [[Autonomous Navigation]]
   - relatedTo:: [[SLAM]]
   - dependsOn:: [[Sensor]]
-  - enables:: [[Localization]]
+  - enables:: [[Localisation]]
   - enables:: [[Autonomous Navigation]]
   - uses:: [[Kalman Filter]]
   - uses:: [[Sensor]]
   - supports:: [[Autonomous Vehicle]]
   - supports:: [[Path Planning]]
-  - partOf:: [[Localization]]
+  - partOf:: [[Localisation]]
   - requires:: [[Sensor]]
   - bridgesTo:: [[Sensor Fusion]]
   - contrastsWith:: [[SLAM]]

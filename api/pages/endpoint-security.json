@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:8c6aa157a5a223d71e163e5b5ef5c923a6eb7c2b413bf4e374bccee7b0901287",
+  "title": "Endpoint Security",
+  "slug": "endpoint-security",
+  "public": true,
+  "classIri": "urn:ngm:class:endpoint-security",
+  "domain": "security",
+  "definition": "The practice of protecting end-user and edge devices \u2014 laptops, desktops, servers, mobiles, and increasingly IoT hardware \u2014 from compromise, combining preventive controls such as anti-malware, disk encryption, patching, and application allow-listing with detective and responsive capabilities delivered by endpoint detection and response (EDR) agents. As perimeter defences have weakened under remote work and cloud adoption, the endpoint has become the primary battleground and telemetry source for enterprise defence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:defense-in-depth",
+        "label": "Defense In Depth"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity"
+    },
+    {
+      "slug": "defense-in-depth",
+      "label": "Defense In Depth"
+    },
+    {
+      "slug": "network-security",
+      "label": "Network Security"
+    }
+  ],
+  "backlinks": []
+}

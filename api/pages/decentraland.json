@@ -42,7 +42,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:asset-tokenization",
+        "id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {
@@ -140,7 +140,7 @@
       "label": "Smart Contract"
     },
     {
-      "slug": "asset-tokenization",
+      "slug": "asset-tokenisation",
       "label": "Asset Tokenization"
     },
     {

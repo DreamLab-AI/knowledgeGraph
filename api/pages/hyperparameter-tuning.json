@@ -202,6 +202,10 @@
     {
       "slug": "optimization-algorithms",
       "label": "Optimization Algorithms"
+    },
+    {
+      "slug": "training-pipeline",
+      "label": "Training Pipeline"
     }
   ]
 }

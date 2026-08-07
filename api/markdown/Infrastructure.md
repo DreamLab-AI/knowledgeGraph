@@ -57,7 +57,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:data-center",
+        "@id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
       {

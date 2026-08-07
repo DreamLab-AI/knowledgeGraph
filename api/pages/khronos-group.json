@@ -183,6 +183,10 @@
       "label": "Mixed Reality"
     },
     {
+      "slug": "openxr-standard",
+      "label": "OpenXR Standard"
+    },
+    {
       "slug": "procedural-and-hybrid-4-d",
       "label": "Procedural and Hybrid 4D"
     },

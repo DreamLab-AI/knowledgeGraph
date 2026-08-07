@@ -336,6 +336,10 @@
       "label": "Payment Protocol"
     },
     {
+      "slug": "peg",
+      "label": "Peg"
+    },
+    {
       "slug": "private-blockchain",
       "label": "Private Blockchain"
     },

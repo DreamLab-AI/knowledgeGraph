@@ -114,6 +114,10 @@
     {
       "slug": "decision-engine",
       "label": "Decision Engine"
+    },
+    {
+      "slug": "uncertainty",
+      "label": "Uncertainty"
     }
   ]
 }

@@ -8,7 +8,7 @@
   "definition": "A tokenized asset is a representation of ownership or economic rights in a real-world or digital asset recorded as a blockchain token. The token acts as a programmable, transferable claim whose issuance, transfer, and settlement are governed by smart contracts, enabling fractional ownership, faster settlement, and broader access. Underlying assets range from securities, real estate, and commodities to art and intellectual property.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:asset-tokenization",
+      "id": "urn:ngm:class:asset-tokenisation",
       "label": "Asset Tokenization"
     }
   ],
@@ -84,7 +84,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:asset-tokenization",
+        "id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       }
     ],

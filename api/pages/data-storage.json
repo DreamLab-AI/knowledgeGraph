@@ -158,6 +158,10 @@
   ],
   "backlinks": [
     {
+      "slug": "content-repository",
+      "label": "Content Repository"
+    },
+    {
       "slug": "digital-goods-registry",
       "label": "Digital Goods Registry"
     },

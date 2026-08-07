@@ -71,6 +71,10 @@
     {
       "slug": "noise-function-library",
       "label": "Noise Function Library"
+    },
+    {
+      "slug": "three-js",
+      "label": "Three.js"
     }
   ]
 }

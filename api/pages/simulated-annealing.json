@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:e4672b148839cbc277de5b799c3b4c115eddd35dc07ceba9b2ffe4ac6611648a",
+  "title": "Simulated Annealing",
+  "slug": "simulated-annealing",
+  "public": true,
+  "classIri": "urn:ngm:class:simulated-annealing",
+  "domain": "artificial-intelligence",
+  "definition": "A stochastic metaheuristic for global optimisation, inspired by the annealing of metals, that explores a solution space via local moves while accepting worsening solutions with a probability governed by a gradually decreasing temperature parameter, allowing early escape from local optima and increasingly greedy refinement as the temperature cools; widely applied to combinatorial problems such as travelling salesman routing, chip placement, scheduling and logistics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:heuristic-methods",
+      "label": "Heuristic Methods"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:local-search",
+        "label": "Local Search"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "heuristic-methods",
+      "label": "Heuristic Methods"
+    },
+    {
+      "slug": "local-search",
+      "label": "Local Search"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "local-search",
+      "label": "Local Search"
+    }
+  ]
+}

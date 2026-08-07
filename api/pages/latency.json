@@ -221,8 +221,16 @@
       "label": "Edge Computing Layer"
     },
     {
+      "slug": "fibre-optic-network",
+      "label": "Fibre Optic Network"
+    },
+    {
       "slug": "inference-serving",
       "label": "Inference Serving"
+    },
+    {
+      "slug": "jitter",
+      "label": "Jitter"
     },
     {
       "slug": "model-optimization",
@@ -243,6 +251,10 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "transmission-delay",
+      "label": "Transmission Delay"
     },
     {
       "slug": "v-llm",

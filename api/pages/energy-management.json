@@ -118,6 +118,10 @@
       "label": "Control Algorithm"
     },
     {
+      "slug": "energy-optimization",
+      "label": "Energy Optimisation"
+    },
+    {
       "slug": "home-assistant",
       "label": "Home Assistant"
     },

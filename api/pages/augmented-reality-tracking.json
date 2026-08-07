@@ -33,7 +33,7 @@
         "label": "Marker-Based Tracking"
       },
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ],
@@ -96,7 +96,7 @@
         "label": "Tracking"
       },
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ]

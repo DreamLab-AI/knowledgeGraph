@@ -34,7 +34,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:logistics-optimization",
+        "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       },
       {
@@ -56,6 +56,10 @@
     {
       "slug": "combinatorial-optimisation",
       "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "global-trade",
+      "label": "Global Trade"
     }
   ]
 }

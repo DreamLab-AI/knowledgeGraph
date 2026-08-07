@@ -47,7 +47,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:sha256",
+        "id": "urn:ngm:class:sha-256",
         "label": "SHA-256"
       },
       {

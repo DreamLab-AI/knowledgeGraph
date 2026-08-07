@@ -152,6 +152,10 @@
       "label": "Automated Reasoning"
     },
     {
+      "slug": "backward-chaining",
+      "label": "Backward Chaining"
+    },
+    {
       "slug": "chatbots",
       "label": "Chatbots"
     },
@@ -174,6 +178,10 @@
     {
       "slug": "decision-engine",
       "label": "Decision Engine"
+    },
+    {
+      "slug": "forward-chaining",
+      "label": "Forward Chaining"
     },
     {
       "slug": "history-and-path-to-agi",

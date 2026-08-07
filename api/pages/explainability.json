@@ -229,6 +229,10 @@
       "label": "Constraint"
     },
     {
+      "slug": "counterfactual-explanation",
+      "label": "Counterfactual Explanation"
+    },
+    {
       "slug": "decision-tree",
       "label": "Decision Tree"
     },

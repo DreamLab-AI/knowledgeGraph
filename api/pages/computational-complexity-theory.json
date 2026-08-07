@@ -377,6 +377,10 @@
       "label": "Algorithmic Layer"
     },
     {
+      "slug": "coding-theory",
+      "label": "Coding Theory"
+    },
+    {
       "slug": "computability-theory",
       "label": "Computability Theory"
     },
@@ -395,6 +399,10 @@
     {
       "slug": "privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
     },
     {
       "slug": "zero-knowledge-proof-zkp",

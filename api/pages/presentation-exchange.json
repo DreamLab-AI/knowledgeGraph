@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:8afd7ab1df2b0a63a40bce9a8e50f6eba7f0d22646da3af915a8cb72ff6565a8",
+  "title": "Presentation Exchange",
+  "slug": "presentation-exchange",
+  "public": true,
+  "classIri": "urn:ngm:class:presentation-exchange",
+  "domain": "standards",
+  "definition": "A Decentralized Identity Foundation specification defining a data format by which verifiers articulate proof requirements (presentation definitions) and holders describe how submitted credentials satisfy them (presentation submissions). Presentation Exchange is transport-agnostic and credential-format-agnostic, and is the requirement language embedded in protocols such as OpenID for Verifiable Presentations to negotiate selective disclosure of verifiable credentials.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    },
+    {
+      "slug": "decentralized-identity-foundation",
+      "label": "Decentralized Identity Foundation"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "decentralized-identifier",
+      "label": "Decentralized Identifier"
+    }
+  ],
+  "backlinks": []
+}

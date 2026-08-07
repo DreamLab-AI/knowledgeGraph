@@ -179,5 +179,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "heatmap-regression",
+      "label": "Heatmap Regression"
+    }
+  ]
 }

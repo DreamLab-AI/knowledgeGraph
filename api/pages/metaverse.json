@@ -64,7 +64,7 @@
         "label": "3D Rendering"
       },
       {
-        "id": "urn:ngm:class:real-time-synchronization",
+        "id": "urn:ngm:class:real-time-synchronisation",
         "label": "Real-time Synchronization"
       },
       {
@@ -171,7 +171,7 @@
       "label": "ISO 23257"
     },
     {
-      "slug": "real-time-synchronization",
+      "slug": "real-time-synchronisation",
       "label": "Real-time Synchronization"
     },
     {
@@ -1153,20 +1153,12 @@
       "label": "ETSIDomainClassification"
     },
     {
-      "slug": "etsi-domain-governance-compliance",
-      "label": "ETSI_Domain_Governance_Compliance"
-    },
-    {
       "slug": "etsi-domain-governance-security",
       "label": "ETSI_Domain_Governance_Security"
     },
     {
       "slug": "etsi-domain-governance-economy",
       "label": "ETSI_Domain_Governance___Economy"
-    },
-    {
-      "slug": "etsi-domain-governance-ethics",
-      "label": "ETSI_Domain_Governance___Ethics"
     },
     {
       "slug": "etsi-domain-governance-society",
@@ -1958,7 +1950,7 @@
     },
     {
       "slug": "multimodal-ai",
-      "label": "Multimodal AI"
+      "label": "Multimodal Artificial Intelligence"
     },
     {
       "slug": "multiverse",

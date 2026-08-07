@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:5f850169293aeb006cc8587f5ab5288c51604f5a65eb3efaa52f99fa34a65f6c",
+  "title": "Open Protocol",
+  "slug": "open-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:open-protocol",
+  "domain": "standards",
+  "definition": "A communication protocol whose specification is publicly documented, royalty-free, and implementable by anyone without permission from a controlling party, typically evolved through an open governance process; open protocols such as TCP/IP, HTTP, SMTP, ActivityPub, and Nostr enable permissionless interoperability between independent implementations, prevent single-vendor lock-in, and shift competition from control of the network to quality of the client \u2014 the architectural foundation of the open internet and of credible open-metaverse and decentralised social efforts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:protocol",
+      "label": "Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "id": "urn:ngm:class:farcaster",
+        "label": "Farcaster"
+      },
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "protocol",
+      "label": "Protocol"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "nostr",
+      "label": "Nostr"
+    },
+    {
+      "slug": "farcaster",
+      "label": "Farcaster"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    }
+  ]
+}

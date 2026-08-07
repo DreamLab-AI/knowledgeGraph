@@ -108,6 +108,10 @@
     {
       "slug": "ai-investment",
       "label": "AI Investment"
+    },
+    {
+      "slug": "innovation-ecosystems",
+      "label": "Innovation Ecosystems"
     }
   ]
 }

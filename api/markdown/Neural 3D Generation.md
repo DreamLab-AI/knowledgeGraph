@@ -262,7 +262,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "Automated 3D Modeling"
       },
       {

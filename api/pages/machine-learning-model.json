@@ -190,6 +190,10 @@
     {
       "slug": "shap",
       "label": "SHAP"
+    },
+    {
+      "slug": "sequence-model",
+      "label": "Sequence Model"
     }
   ]
 }

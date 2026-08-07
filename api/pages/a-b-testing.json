@@ -99,6 +99,10 @@
       "label": "Continuous Training"
     },
     {
+      "slug": "conversion-rate-optimisation",
+      "label": "Conversion Rate Optimisation"
+    },
+    {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
     }

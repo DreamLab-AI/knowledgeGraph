@@ -593,6 +593,10 @@
       "label": "Robot Hardware"
     },
     {
+      "slug": "sensor-feedback",
+      "label": "Sensor Feedback"
+    },
+    {
       "slug": "velocity-control",
       "label": "VelocityControl"
     }

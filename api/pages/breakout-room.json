@@ -400,6 +400,10 @@
       "label": "Collaborative Whiteboard"
     },
     {
+      "slug": "corporate-training",
+      "label": "Corporate Training"
+    },
+    {
       "slug": "meeting-recording",
       "label": "Meeting Recording"
     },

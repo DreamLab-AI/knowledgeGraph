@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
-      {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
+      {"@id": "urn:ngm:class:behavioural-analytics", "label": "Behavioral Analytics"},
       {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"}
     ],
     "enables": [
@@ -44,7 +44,7 @@ public:: true
 ```
 
 - ### Definition
-  - Advertising and marketing is the integrated commercial discipline through which organisations identify market opportunities, develop compelling value propositions, and communicate those propositions to prospective and existing customers across paid, earned, and owned media channels to drive commercial outcomes. The marketing function spans market research, brand strategy, product positioning, pricing, distribution channel design, and the full communications mix; [[Advertising]] is the paid communications instrument within that broader strategy. Modern practice is deeply data-driven, leveraging [[Predictive Analytics]], [[Behavioral Analytics]], and [[Recommendation Engine]] infrastructure to optimise audience targeting, message personalisation, and campaign performance measurement.
+  - Advertising and marketing is the integrated commercial discipline through which organisations identify market opportunities, develop compelling value propositions, and communicate those propositions to prospective and existing customers across paid, earned, and owned media channels to drive commercial outcomes. The marketing function spans market research, brand strategy, product positioning, pricing, distribution channel design, and the full communications mix; [[Advertising]] is the paid communications instrument within that broader strategy. Modern practice is deeply data-driven, leveraging [[Predictive Analytics]], [[Behavioural Analytics]], and [[Recommendation Engine]] infrastructure to optimise audience targeting, message personalisation, and campaign performance measurement.
 
 - ### Relationships
   - Advertising and marketing provides the revenue engine for the majority of consumer-facing digital platforms, which monetise audience attention through [[Advertising]] inventory. The discipline enables [[Programmatic Advertising]] as its most automated and scalable expression. [[Customer Experience]] strategy links marketing communications to post-purchase relationship management, recognising that brand perception is formed across the entire customer journey. [[Data Privacy]] regulation fundamentally constrains the data infrastructure available for targeted marketing, forcing strategic adaptation away from identity-based to contextual and cohort-based approaches.

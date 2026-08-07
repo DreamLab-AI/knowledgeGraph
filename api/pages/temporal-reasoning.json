@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:9c02c8aed7e0bb921dba64396a0ebbfa95d6c62d5493c706c0e1d2b3974ad5bd",
+  "title": "Temporal Reasoning",
+  "slug": "temporal-reasoning",
+  "public": true,
+  "classIri": "urn:ngm:class:temporal-reasoning",
+  "domain": "artificial-intelligence",
+  "definition": "The branch of knowledge representation and reasoning concerned with representing time \u2014 instants, intervals, durations, and their qualitative and quantitative relations \u2014 and drawing inferences about the ordering, persistence, and change of events and states, underpinning planning, scheduling, narrative understanding, and any system that must reason about what held before, holds now, or will hold later.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reasoning",
+      "label": "Reasoning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:temporal-logic",
+        "label": "Temporal Logic"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:common-sense-reasoning",
+        "label": "Common Sense Reasoning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "temporal-logic",
+      "label": "Temporal Logic"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    }
+  ]
+}

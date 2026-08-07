@@ -146,7 +146,7 @@
       "label": "activation functions"
     },
     {
-      "slug": "adam-optimizer",
+      "slug": "adam-optimiser",
       "label": "Adam optimizer"
     },
     {
@@ -948,6 +948,10 @@
       "label": "Decoder Network"
     },
     {
+      "slug": "deep-knowledge-tracing",
+      "label": "Deep Knowledge Tracing"
+    },
+    {
       "slug": "deep-learning-framework",
       "label": "Deep Learning Framework"
     },
@@ -966,6 +970,10 @@
     {
       "slug": "neural-network",
       "label": "Neural Network"
+    },
+    {
+      "slug": "sequence-model",
+      "label": "Sequence Model"
     },
     {
       "slug": "state-space-models",

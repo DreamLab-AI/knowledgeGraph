@@ -22,7 +22,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:lorawan",
+        "id": "urn:ngm:class:lo-ra-wan",
         "label": "LoRaWAN"
       }
     ],
@@ -54,7 +54,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:wifi",
+        "id": "urn:ngm:class:wi-fi",
         "label": "Wi-Fi"
       },
       {
@@ -75,7 +75,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:sensor-network",
+        "id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Network"
       },
       {

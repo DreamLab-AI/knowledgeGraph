@@ -229,7 +229,7 @@
         "label": "FLP Impossibility"
       },
       {
-        "id": "urn:ngm:class:linearisability",
+        "id": "urn:ngm:class:linearizability",
         "label": "Linearisability"
       },
       {
@@ -738,6 +738,10 @@
       "label": "CRDT"
     },
     {
+      "slug": "checkpointing",
+      "label": "Checkpointing"
+    },
+    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },
@@ -790,12 +794,20 @@
       "label": "Edge Mesh Network"
     },
     {
+      "slug": "error-recovery",
+      "label": "Error Recovery"
+    },
+    {
       "slug": "external-ai-harness",
       "label": "External AI Harness"
     },
     {
       "slug": "flp-impossibility",
       "label": "FLP Impossibility"
+    },
+    {
+      "slug": "partition-tolerance",
+      "label": "Partition Tolerance"
     },
     {
       "slug": "prime-intellect",

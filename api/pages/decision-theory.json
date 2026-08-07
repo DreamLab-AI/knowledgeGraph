@@ -305,6 +305,10 @@
       "label": "Decision Making"
     },
     {
+      "slug": "heuristics",
+      "label": "Heuristics"
+    },
+    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
     }

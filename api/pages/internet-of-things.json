@@ -208,6 +208,10 @@
       "label": "Io T Sensors"
     },
     {
+      "slug": "iot-platform",
+      "label": "IoT Platform"
+    },
+    {
       "slug": "io-t-sensor-network",
       "label": "IoT Sensor Network"
     },
@@ -246,6 +250,10 @@
     {
       "slug": "ve-chain",
       "label": "VeChain"
+    },
+    {
+      "slug": "web-of-things",
+      "label": "Web of Things"
     },
     {
       "slug": "wi-fi",

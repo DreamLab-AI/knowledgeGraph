@@ -104,10 +104,6 @@
       "label": "Closed-Loop Control"
     },
     {
-      "slug": "localization",
-      "label": "Localization"
-    },
-    {
       "slug": "robotics",
       "label": "Robotics"
     }

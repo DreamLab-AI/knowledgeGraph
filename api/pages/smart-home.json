@@ -106,6 +106,10 @@
     {
       "slug": "home-assistant",
       "label": "Home Assistant"
+    },
+    {
+      "slug": "wireless-network",
+      "label": "Wireless Network"
     }
   ]
 }

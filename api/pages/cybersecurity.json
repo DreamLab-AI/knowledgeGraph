@@ -170,6 +170,10 @@
       "label": "Digital Forensics Framework"
     },
     {
+      "slug": "endpoint-security",
+      "label": "Endpoint Security"
+    },
+    {
       "slug": "ncsc",
       "label": "NCSC"
     },

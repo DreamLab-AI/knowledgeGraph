@@ -155,10 +155,6 @@
       "label": "Bias in Large Language Models"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },

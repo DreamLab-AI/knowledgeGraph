@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:aa15a3413f00930b9a25f7ac12e56fceeb979323444cc68c98f7aba6a915cb4c",
+  "title": "AI Documentation",
+  "slug": "ai-documentation",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-documentation",
+  "domain": "artificial-intelligence",
+  "definition": "The structured transparency artefacts that record what an AI system is, how it was built, and how it behaves \u2014 model cards, datasheets for datasets, system cards, technical files, and decision logs. AI documentation is the evidentiary substrate of AI accountability: it lets developers, deployers, auditors, and regulators trace capabilities, limitations, training data provenance, and evaluation results, and is increasingly mandated by regimes such as the EU AI Act.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:documentation",
+      "label": "Documentation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-accountability",
+        "label": "AI Accountability"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:auditability",
+        "label": "Auditability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "documentation",
+      "label": "Documentation"
+    },
+    {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    }
+  ]
+}

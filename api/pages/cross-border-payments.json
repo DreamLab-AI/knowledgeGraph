@@ -160,6 +160,10 @@
       "label": "Distributed Ledger"
     },
     {
+      "slug": "foreign-exchange",
+      "label": "Foreign Exchange"
+    },
+    {
       "slug": "mastercard",
       "label": "Mastercard"
     },

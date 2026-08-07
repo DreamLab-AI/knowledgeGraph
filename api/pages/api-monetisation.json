@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:a999713c902dfa7cc100cb079c92d73c7ea7acf823be77e45ae84ef399a064d9",
+  "title": "API Monetisation",
+  "slug": "api-monetisation",
+  "public": true,
+  "classIri": "urn:ngm:class:api-monetisation",
+  "domain": "infrastructure",
+  "definition": "The practice of generating revenue directly from programmatic interfaces by metering consumption and charging for it \u2014 through subscription tiers, pay-per-call and usage-based pricing, revenue sharing, or machine-payable protocols such as L402 \u2014 turning an API from an integration mechanism into a product with its own pricing, packaging, billing, and developer-experience lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:api-management",
+      "label": "API Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:streaming-payment",
+        "label": "Streaming Payment"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "api-management",
+      "label": "API Management"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "streaming-payment",
+      "label": "Streaming Payment"
+    }
+  ],
+  "backlinks": []
+}

@@ -96,7 +96,7 @@
         "label": "Stochastic Process"
       },
       {
-        "id": "urn:ngm:class:behavioural-modelling",
+        "id": "urn:ngm:class:behavioral-modeling",
         "label": "Behavioural Modelling"
       }
     ],
@@ -410,6 +410,10 @@
     {
       "slug": "innovation-diffusion",
       "label": "Innovation Diffusion"
+    },
+    {
+      "slug": "system-dynamics",
+      "label": "System Dynamics"
     }
   ]
 }

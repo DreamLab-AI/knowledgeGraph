@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:94c9534489b589f692358468a2b076e008fc2cb44ae20df57cd7f5d50584d5bb",
+  "title": "Design Pattern",
+  "slug": "design-pattern",
+  "public": true,
+  "classIri": "urn:ngm:class:design-pattern",
+  "domain": "infrastructure",
+  "definition": "A named, reusable solution template for a recurring design problem in software, describing the participating roles, their collaborations, and the trade-offs of applying the solution in a given context. Catalogued most famously by the Gang of Four as creational, structural, and behavioural patterns, design patterns form a shared vocabulary that lets engineers communicate architecture concisely, guide refactoring towards proven structures, and evaluate components against well-understood alternatives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:refactoring",
+        "label": "Refactoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:component",
+        "label": "Component"
+      },
+      {
+        "id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering"
+    },
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    },
+    {
+      "slug": "refactoring",
+      "label": "Refactoring"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "component",
+      "label": "Component"
+    }
+  ]
+}

@@ -383,10 +383,6 @@
       "label": "Diffusion Models"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
     },
@@ -465,10 +461,6 @@
     {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
-    },
-    {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
     },
     {
       "slug": "model-architecture-layer",

@@ -166,6 +166,10 @@
       "label": "Empathetic AI"
     },
     {
+      "slug": "evidence-based-medicine",
+      "label": "Evidence-Based Medicine"
+    },
+    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     },
@@ -180,6 +184,10 @@
     {
       "slug": "time-series-forecasting",
       "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "treatment-planning",
+      "label": "Treatment Planning"
     }
   ]
 }

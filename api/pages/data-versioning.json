@@ -261,6 +261,10 @@
       "label": "ETSI Domain: Data Management + AI"
     },
     {
+      "slug": "experiment-tracking",
+      "label": "ML Experiment Tracking"
+    },
+    {
       "slug": "model-registry",
       "label": "Model Registry"
     }

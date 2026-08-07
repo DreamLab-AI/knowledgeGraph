@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-goods",
   "domain": "spatial-computing",
-  "definition": "Digital Goods is a type of Virtual Economy in the spatial computing domain.",
+  "definition": "Virtual items and assets that can be owned, transferred, traded, or used within metaverse environments, typically with provable scarcity and verifiable ownership recorded on distributed ledgers; they span avatar wearables, virtual land, in-game items, and creative works monetised through creator economies and virtual commerce.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",

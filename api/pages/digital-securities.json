@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:5715511c8933ff03e2e521b1fea138a4e5933edbeb7fbb1b308bfdb789fb29c0",
+  "title": "Digital Securities",
+  "slug": "digital-securities",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-securities",
+  "domain": "finance",
+  "definition": "Regulated financial instruments \u2014 equities, bonds, fund units, and other investment products \u2014 issued, recorded, and transferred as tokens on distributed ledgers, combining the legal character of traditional securities with programmable compliance, fractional ownership, and near-instant settlement, and implemented through permissioned token standards such as ERC-1400 and ERC-3643.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
+      },
+      {
+        "id": "urn:ngm:class:erc-3643",
+        "label": "ERC-3643"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "security-token",
+      "label": "Security Token"
+    },
+    {
+      "slug": "erc-1400",
+      "label": "ERC-1400"
+    },
+    {
+      "slug": "erc-3643",
+      "label": "ERC-3643"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

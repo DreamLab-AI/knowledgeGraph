@@ -132,6 +132,10 @@
     {
       "slug": "control-net",
       "label": "controlnet"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
     }
   ]
 }

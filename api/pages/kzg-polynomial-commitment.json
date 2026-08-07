@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:228b6c8e223c72d4da64bc37ae20b5171b276972a27c322613a08bd6ec47a499",
+  "title": "KZG Polynomial Commitment",
+  "slug": "kzg-polynomial-commitment",
+  "public": true,
+  "classIri": "urn:ngm:class:kzg-polynomial-commitment",
+  "domain": "blockchain",
+  "definition": "The Kate-Zaverucha-Goldberg polynomial commitment scheme, which uses elliptic curve pairings and a structured reference string from a trusted setup to commit to a polynomial with a single constant-size group element and prove any evaluation with a constant-size opening proof; its succinctness underpins SNARK constructions such as PLONK and Ethereum's data availability sampling via blob commitments in proto-danksharding.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:polynomial-commitment",
+      "label": "Polynomial Commitment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:trusted-setup",
+        "label": "Trusted Setup"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      },
+      {
+        "id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "polynomial-commitment",
+      "label": "Polynomial Commitment"
+    },
+    {
+      "slug": "trusted-setup",
+      "label": "Trusted Setup"
+    },
+    {
+      "slug": "data-availability",
+      "label": "Data Availability"
+    }
+  ],
+  "backlinks": []
+}

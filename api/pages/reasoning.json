@@ -606,6 +606,10 @@
       "label": "Singularity"
     },
     {
+      "slug": "temporal-reasoning",
+      "label": "Temporal Reasoning"
+    },
+    {
       "slug": "tool-augmented-reasoning",
       "label": "Tool-Augmented Reasoning"
     }

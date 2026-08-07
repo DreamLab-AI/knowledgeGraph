@@ -231,6 +231,10 @@
     {
       "slug": "semantic-search",
       "label": "Semantic Search"
+    },
+    {
+      "slug": "tf-idf",
+      "label": "TF-IDF"
     }
   ]
 }

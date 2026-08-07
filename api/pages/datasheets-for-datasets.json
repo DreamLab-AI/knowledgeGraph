@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:7134f58d9d23277f67e93a353bb9c80aecaaa7b5785437adb0613488046ab98e",
+  "title": "Datasheets for Datasets",
+  "slug": "datasheets-for-datasets",
+  "public": true,
+  "classIri": "urn:ngm:class:datasheets-for-datasets",
+  "domain": "governance",
+  "definition": "A documentation framework proposed by Gebru et al. in which every machine learning dataset is accompanied by a structured datasheet recording its motivation, composition, collection process, preprocessing, recommended uses, distribution, and maintenance. Modelled on the datasheets that accompany electronic components, the practice surfaces provenance, consent, and bias considerations at the data layer, enabling informed dataset selection, reproducibility, and accountability across the machine learning lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-cards",
+        "label": "Model Cards"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-documentation-standards",
+        "label": "AI Documentation Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dataset",
+        "label": "Dataset"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "model-cards",
+      "label": "Model Cards"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    }
+  ]
+}

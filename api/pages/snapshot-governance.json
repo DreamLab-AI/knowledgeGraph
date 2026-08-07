@@ -104,6 +104,10 @@
     {
       "slug": "tokenomics-governance",
       "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "voting-power",
+      "label": "Voting Power"
     }
   ]
 }

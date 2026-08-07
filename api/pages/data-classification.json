@@ -103,6 +103,10 @@
     {
       "slug": "data-anonymization-pipeline",
       "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "data-lifecycle",
+      "label": "Data Lifecycle"
     }
   ]
 }

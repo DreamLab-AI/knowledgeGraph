@@ -86,6 +86,10 @@
     {
       "slug": "state-machine",
       "label": "State Machine"
+    },
+    {
+      "slug": "state-space-search",
+      "label": "State Space Search"
     }
   ]
 }

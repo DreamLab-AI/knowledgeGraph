@@ -223,12 +223,20 @@
       "label": "Decoder Network"
     },
     {
+      "slug": "encoder-decoder",
+      "label": "Encoder-Decoder"
+    },
+    {
       "slug": "natural-language-processing",
       "label": "Natural Language Processing"
     },
     {
       "slug": "patent",
       "label": "Patent"
+    },
+    {
+      "slug": "quality-estimation",
+      "label": "Quality Estimation"
     },
     {
       "slug": "real-time-translation",

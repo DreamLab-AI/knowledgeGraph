@@ -8,7 +8,7 @@
   "definition": "Momentum is an optimisation technique that accelerates gradient descent by accumulating an exponentially weighted moving average of past gradients and using it to update parameters. By carrying velocity from prior steps, it damps oscillations across steep directions and speeds progress along consistent ones, improving convergence on ill-conditioned loss surfaces. Momentum underlies many modern optimisers, with Nesterov's variant and adaptive methods such as Adam building directly on its formulation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:optimization-algorithm",
+      "id": "urn:ngm:class:optimisation-algorithm",
       "label": "Optimization Algorithm"
     }
   ],
@@ -75,7 +75,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],

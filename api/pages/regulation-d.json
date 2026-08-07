@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:66466b2beeb473048914d87507999efcca276529c35a51d3045b04bc5af0e6dd",
+  "title": "Regulation D",
+  "slug": "regulation-d",
+  "public": true,
+  "classIri": "urn:ngm:class:regulation-d",
+  "domain": "finance",
+  "definition": "A United States Securities and Exchange Commission regulation providing exemptions from the registration requirements of the Securities Act of 1933, allowing companies to raise capital through private placements to accredited investors without a full public offering. Its Rules 504 and 506 are the dominant legal pathway for security token offerings and early-stage fundraising, trading reduced disclosure burdens for restrictions on general solicitation and resale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:crowdfunding",
+        "label": "Crowdfunding"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "security-token",
+      "label": "Security Token"
+    },
+    {
+      "slug": "know-your-customer",
+      "label": "Know Your Customer"
+    },
+    {
+      "slug": "crowdfunding",
+      "label": "Crowdfunding"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

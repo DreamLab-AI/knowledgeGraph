@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:28e37aedcce353b92afab0dc9887b35810cb0b26c28381247130fc11e3fcb9c6",
+  "title": "Copyright Law",
+  "slug": "intellectual-property-rights-framework-law",
+  "public": true,
+  "classIri": "urn:ngm:class:intellectual-property-rights-framework-law",
+  "domain": "governance",
+  "definition": "The body of statute and case law granting creators exclusive rights over the reproduction, distribution, adaptation, and communication of original works of authorship, including text, images, music, software, and audiovisual media. Copyright law defines the exceptions \u2014 fair use, fair dealing, text-and-data-mining carve-outs \u2014 that determine whether scraping and training artificial intelligence models on protected works is lawful, making it the central legal battleground of generative AI.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:intellectual-property",
+      "label": "Intellectual Property"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-scrapers",
+        "label": "AI Scrapers"
+      },
+      {
+        "id": "urn:ngm:class:creative-industries",
+        "label": "Creative Industries"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
+    },
+    {
+      "slug": "copyright",
+      "label": "Copyright"
+    },
+    {
+      "slug": "licensing",
+      "label": "Licensing"
+    },
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    }
+  ],
+  "backlinks": []
+}

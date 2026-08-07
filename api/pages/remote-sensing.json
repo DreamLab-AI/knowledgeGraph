@@ -150,6 +150,10 @@
     {
       "slug": "image-and-video-restoration",
       "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "satellite-imagery",
+      "label": "Satellite Imagery"
     }
   ]
 }

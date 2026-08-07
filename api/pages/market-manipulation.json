@@ -94,6 +94,10 @@
       "label": "Deepfakes and fraudulent content"
     },
     {
+      "slug": "insider-trading",
+      "label": "Insider Trading"
+    },
+    {
       "slug": "us-regulatory-framework",
       "label": "US Regulatory Framework"
     }

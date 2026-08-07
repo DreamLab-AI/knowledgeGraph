@@ -82,7 +82,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:asset-tokenization",
+        "id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {
@@ -123,7 +123,7 @@
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:ngm:class:asset-tokenization",
+        "id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {

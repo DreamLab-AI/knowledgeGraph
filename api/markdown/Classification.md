@@ -225,7 +225,7 @@ public:: true
         "label": "Knowledge Graph"
       },
       {
-        "@id": "urn:ngm:class:robotic-perception",
+        "@id": "urn:ngm:class:robotics-perception",
         "label": "Robotic Perception"
       }
     ]

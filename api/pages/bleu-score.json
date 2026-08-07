@@ -150,6 +150,10 @@
       "label": "Back-Translation"
     },
     {
+      "slug": "quality-estimation",
+      "label": "Quality Estimation"
+    },
+    {
       "slug": "real-time-translation",
       "label": "Real-time Translation"
     },

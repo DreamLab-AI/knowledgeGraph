@@ -291,6 +291,10 @@
       "label": "Human in the Loop"
     },
     {
+      "slug": "human-on-the-loop",
+      "label": "Human on the Loop"
+    },
+    {
       "slug": "internal-ai-harness",
       "label": "Internal AI Harness"
     },

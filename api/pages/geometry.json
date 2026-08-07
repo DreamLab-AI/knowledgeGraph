@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:8148b7fefaf89ebf8e7951994d2601d731220c5460faecc64c69d12bb7ff3213",
+  "title": "Geometry",
+  "slug": "geometry",
+  "public": true,
+  "classIri": "urn:ngm:class:geometry",
+  "domain": "spatial-computing",
+  "definition": "The branch of mathematics concerned with the properties of space and of figures within it \u2014 points, lines, curves, surfaces, and solids \u2014 and with the notions of distance, angle, area, volume, and transformation that relate them. From Euclid's axiomatic plane geometry through analytic, projective, differential, and computational branches, geometry supplies the formal language in which spatial computing describes the world: coordinate frames and transformations in robotics, projective camera models in computer vision, meshes and parametric surfaces in graphics, and spatial subdivisions such as Voronoi diagrams in computational geometry.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
+      },
+      {
+        "id": "urn:ngm:class:projective-geometry",
+        "label": "Projective Geometry"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scene-geometry",
+        "label": "Scene Geometry"
+      },
+      {
+        "id": "urn:ngm:class:voronoi-diagram",
+        "label": "Voronoi Diagram"
+      },
+      {
+        "id": "urn:ngm:class:topology",
+        "label": "Topology"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "mathematical-science",
+      "label": "Mathematical Science"
+    },
+    {
+      "slug": "computational-geometry",
+      "label": "Computational Geometry"
+    },
+    {
+      "slug": "scene-geometry",
+      "label": "Scene Geometry"
+    },
+    {
+      "slug": "voronoi-diagram",
+      "label": "Voronoi Diagram"
+    }
+  ],
+  "backlinks": []
+}

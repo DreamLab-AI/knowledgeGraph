@@ -124,7 +124,7 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:brain-computer-interface",
+        "id": "urn:ngm:class:brain-computer-interfaces",
         "label": "Brain-Computer Interface"
       },
       {
@@ -470,6 +470,10 @@
     {
       "slug": "cybernetics",
       "label": "Cybernetics"
+    },
+    {
+      "slug": "procedural-memory",
+      "label": "Procedural Memory"
     },
     {
       "slug": "progressive-disclosure-harnesses",

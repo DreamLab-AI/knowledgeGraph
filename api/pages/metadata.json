@@ -123,6 +123,10 @@
       "label": "Content Layer"
     },
     {
+      "slug": "content-repository",
+      "label": "Content Repository"
+    },
+    {
       "slug": "data-provenance",
       "label": "Data Provenance"
     },

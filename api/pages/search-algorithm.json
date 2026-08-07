@@ -169,8 +169,16 @@
       "label": "BM25"
     },
     {
+      "slug": "backtracking-search",
+      "label": "Backtracking Search"
+    },
+    {
       "slug": "beam-search",
       "label": "Beam Search"
+    },
+    {
+      "slug": "branch-and-bound",
+      "label": "Branch and Bound"
     },
     {
       "slug": "classical-planning",
@@ -203,6 +211,10 @@
     {
       "slug": "planning",
       "label": "Planning"
+    },
+    {
+      "slug": "state-space-search",
+      "label": "State Space Search"
     },
     {
       "slug": "task-planning",

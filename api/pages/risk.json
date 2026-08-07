@@ -148,6 +148,10 @@
       "label": "Attack Vector"
     },
     {
+      "slug": "credit-risk",
+      "label": "Credit Risk"
+    },
+    {
       "slug": "data-breach",
       "label": "Data Breach"
     },
@@ -158,6 +162,10 @@
     {
       "slug": "threat-actor",
       "label": "Threat Actor"
+    },
+    {
+      "slug": "uncertainty",
+      "label": "Uncertainty"
     },
     {
       "slug": "vulnerability",

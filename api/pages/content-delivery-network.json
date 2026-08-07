@@ -189,6 +189,10 @@
       "label": "Edge Layer"
     },
     {
+      "slug": "edge-server",
+      "label": "Edge Server"
+    },
+    {
       "slug": "metaverse-content-pipeline",
       "label": "Metaverse Content Pipeline"
     },

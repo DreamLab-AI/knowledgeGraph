@@ -8,7 +8,7 @@
   "definition": "A constraint solver is a computational engine that finds assignments of values to variables such that all specified constraints \u2014 mathematical relationships, logical predicates, or physical laws \u2014 are simultaneously satisfied, drawing on techniques from constraint programming, SAT/SMT solving, linear programming, and numerical methods. Solvers operate by propagating constraint implications to prune the search space, applying backtracking or branch-and-bound search, and invoking domain-specific inference procedures that make the infeasibility of partial assignments detectable early. They are applied across planning and scheduling, combinatorial optimisation, formal verification, physics simulation, computer-aided design, and robotic motion planning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:optimization-algorithm",
+      "id": "urn:ngm:class:optimisation-algorithm",
       "label": "Optimization Algorithm"
     },
     {
@@ -365,12 +365,24 @@
   ],
   "backlinks": [
     {
+      "slug": "backtracking-search",
+      "label": "Backtracking Search"
+    },
+    {
+      "slug": "branch-and-bound",
+      "label": "Branch and Bound"
+    },
+    {
       "slug": "combinatorial-optimisation",
       "label": "Combinatorial Optimisation"
     },
     {
       "slug": "constraint-based-design",
       "label": "Constraint Based Design"
+    },
+    {
+      "slug": "constraint-propagation",
+      "label": "Constraint Propagation"
     },
     {
       "slug": "constraint-satisfaction",

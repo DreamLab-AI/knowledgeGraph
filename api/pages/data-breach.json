@@ -293,5 +293,10 @@
       "label": "Privacy Preserving Data Mining"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ransomware",
+      "label": "Ransomware"
+    }
+  ]
 }

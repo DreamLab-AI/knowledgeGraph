@@ -158,6 +158,10 @@
   ],
   "backlinks": [
     {
+      "slug": "360-video",
+      "label": "360 Video"
+    },
+    {
       "slug": "etsi-domain-virtual-society",
       "label": "ETSI_Domain_Virtual_Society"
     },

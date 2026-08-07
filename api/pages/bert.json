@@ -159,6 +159,10 @@
       "label": "Attention Weight"
     },
     {
+      "slug": "colbert",
+      "label": "ColBERT"
+    },
+    {
       "slug": "common-crawl",
       "label": "Common Crawl"
     },
@@ -169,6 +173,10 @@
     {
       "slug": "cross-encoder-reranking",
       "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "glue-benchmark",
+      "label": "GLUE Benchmark"
     },
     {
       "slug": "language-modeling",

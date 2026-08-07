@@ -110,6 +110,10 @@
     {
       "slug": "constraint-solver",
       "label": "Constraint Solver"
+    },
+    {
+      "slug": "state-space-search",
+      "label": "State Space Search"
     }
   ]
 }

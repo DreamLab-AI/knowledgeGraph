@@ -118,6 +118,10 @@
     {
       "slug": "blockchain-as-a-service",
       "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "on-premises",
+      "label": "On-Premises"
     }
   ]
 }

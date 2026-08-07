@@ -305,6 +305,10 @@
       "label": "Cohere"
     },
     {
+      "slug": "constrained-decoding",
+      "label": "Constrained Decoding"
+    },
+    {
       "slug": "decoder-network",
       "label": "Decoder Network"
     },
@@ -323,6 +327,10 @@
     {
       "slug": "natural-language-processing",
       "label": "Natural Language Processing"
+    },
+    {
+      "slug": "nucleus-sampling",
+      "label": "Nucleus Sampling"
     },
     {
       "slug": "text-summarisation",

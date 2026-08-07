@@ -99,5 +99,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "mipmap",
+      "label": "Mipmap"
+    }
+  ]
 }

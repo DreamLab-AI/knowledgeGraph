@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:erc1400-standard",
   "domain": "blockchain",
-  "definition": "Security token standard with compliance controls and transfer restrictions.",
+  "definition": "An Ethereum security token standard (ERC-1400) combining fungible token behaviour with regulatory compliance controls, including partitioned balances, transfer restrictions, forced transfers for legal recovery, and on-chain document attachment, enabling the issuance and lifecycle management of regulated securities on public blockchains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -17,8 +17,18 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
@@ -32,7 +42,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      }
+    ]
   },
   "wikilinks": [
     {

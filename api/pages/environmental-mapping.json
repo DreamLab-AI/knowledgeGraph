@@ -51,7 +51,7 @@
         "label": "Occupancy Grid"
       },
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ]

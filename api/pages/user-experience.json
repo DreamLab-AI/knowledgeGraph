@@ -198,6 +198,10 @@
       "label": "Audience Engagement"
     },
     {
+      "slug": "conversion-rate-optimisation",
+      "label": "Conversion Rate Optimisation"
+    },
+    {
       "slug": "cross-platform-identity",
       "label": "Cross-Platform Identity"
     },
@@ -228,6 +232,10 @@
     {
       "slug": "image-generation",
       "label": "Image Generation"
+    },
+    {
+      "slug": "inclusive-experience",
+      "label": "Inclusive Experience"
     },
     {
       "slug": "lightning-and-similar-l2",

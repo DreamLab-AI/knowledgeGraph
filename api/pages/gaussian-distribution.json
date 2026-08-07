@@ -166,6 +166,10 @@
       "label": "Gaussian Splatting"
     },
     {
+      "slug": "variance",
+      "label": "Variance"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
     }

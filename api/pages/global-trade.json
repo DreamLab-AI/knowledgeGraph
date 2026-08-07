@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:030a4d3864c3ebcd3ca53fac0156fab8ea6194d6596525d97329c77c9e1b0e35",
+  "title": "Global Trade",
+  "slug": "global-trade",
+  "public": true,
+  "classIri": "urn:ngm:class:global-trade",
+  "domain": "finance",
+  "definition": "Global trade is the world-wide system of exchange of goods, services, and intangibles across national borders, viewed as an aggregate: the sum of all international trade flows together with the networks of shipping, finance, standards, and agreements that carry them. Worth roughly one third of world GDP, it is organised increasingly through global value chains in which production stages are distributed across many countries, and it depends on shared technical standards, interoperable logistics, and multilateral rules to keep transaction costs low.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:international-trade",
+      "label": "International Trade"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "international-trade",
+      "label": "International Trade"
+    },
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    },
+    {
+      "slug": "logistics",
+      "label": "Logistics"
+    },
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "economic-growth",
+      "label": "Economic Growth"
+    }
+  ],
+  "backlinks": []
+}

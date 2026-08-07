@@ -90,6 +90,10 @@
     {
       "slug": "beam-search",
       "label": "Beam Search"
+    },
+    {
+      "slug": "nucleus-sampling",
+      "label": "Nucleus Sampling"
     }
   ]
 }

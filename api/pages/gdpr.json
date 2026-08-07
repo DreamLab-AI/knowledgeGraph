@@ -383,10 +383,6 @@
       "label": "ETSI Domain: Ethics & Law"
     },
     {
-      "slug": "etsi-domain-governance-compliance",
-      "label": "ETSI_Domain_Governance_Compliance"
-    },
-    {
       "slug": "etsi-domain-virtual-society",
       "label": "ETSI_Domain_Virtual_Society"
     },
@@ -409,6 +405,10 @@
     {
       "slug": "meeting-ai-assistant",
       "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "privacy-law",
+      "label": "Privacy Law"
     },
     {
       "slug": "privacy-preserving-blockchain",

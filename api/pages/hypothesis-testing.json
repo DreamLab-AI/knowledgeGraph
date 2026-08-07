@@ -42,6 +42,10 @@
     {
       "slug": "conformal-prediction",
       "label": "Conformal Prediction"
+    },
+    {
+      "slug": "frequentist-statistics",
+      "label": "Frequentist Statistics"
     }
   ]
 }

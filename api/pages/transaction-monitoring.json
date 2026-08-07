@@ -85,7 +85,7 @@
         "label": "Pattern Recognition"
       },
       {
-        "id": "urn:ngm:class:behavioral-analytics",
+        "id": "urn:ngm:class:behavioural-analytics",
         "label": "Behavioral Analytics"
       },
       {
@@ -141,6 +141,10 @@
     {
       "slug": "aml-kyc-compliance",
       "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "case-management",
+      "label": "Case Management"
     },
     {
       "slug": "compliance-monitoring",

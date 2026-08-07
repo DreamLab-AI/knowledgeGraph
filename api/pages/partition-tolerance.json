@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:1de6fcb11015f78fd632b8b6d9168536e83fe2d636b31442c05a47ee329dcee7",
+  "title": "Partition Tolerance",
+  "slug": "partition-tolerance",
+  "public": true,
+  "classIri": "urn:ngm:class:partition-tolerance",
+  "domain": "distributed-systems",
+  "definition": "The property of a distributed system that allows it to continue operating correctly when the network splits into components that cannot communicate with one another, so that messages between nodes are arbitrarily delayed or lost. As the P in the CAP theorem, partition tolerance is effectively mandatory over real networks, forcing designers to choose during a partition between refusing requests to preserve consistency and serving them to preserve availability at the cost of divergent replicas.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      },
+      {
+        "id": "urn:ngm:class:replication-protocol",
+        "label": "Replication Protocol"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "cap-theorem",
+      "label": "CAP Theorem"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "eventual-consistency",
+      "label": "Eventual Consistency"
+    }
+  ],
+  "backlinks": []
+}

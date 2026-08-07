@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:2e81c050ccdee0e14073b078f2e8583630461ce68b194b4c7f8ac88ef00b25b4",
+  "title": "Inaccessible Design",
+  "slug": "inaccessible-design",
+  "public": true,
+  "classIri": "urn:ngm:class:inaccessible-design",
+  "domain": "spatial-computing",
+  "definition": "Design of products, interfaces, environments, or experiences that erects barriers for people with disabilities or situational limitations \u2014 relying on a single sensory channel, demanding fine motor precision, ignoring assistive technologies, or assuming one body, language, or cognitive style. The antonym of accessible design, it excludes users not through intent but through unexamined defaults, and in immersive XR contexts can render entire experiences unusable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-interface-design",
+      "label": "User Interface Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:accessible-design",
+        "label": "Accessible Design"
+      },
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-experience",
+        "label": "Inclusive Experience"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accessible-experience",
+        "label": "Accessible Experience"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "user-interface-design",
+      "label": "User Interface Design"
+    },
+    {
+      "slug": "accessible-design",
+      "label": "Accessible Design"
+    },
+    {
+      "slug": "universal-design",
+      "label": "Universal Design"
+    },
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    }
+  ],
+  "backlinks": []
+}

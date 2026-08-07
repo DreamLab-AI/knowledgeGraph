@@ -109,5 +109,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "web-of-things",
+      "label": "Web of Things"
+    }
+  ]
 }

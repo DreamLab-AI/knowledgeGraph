@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:dad807a0f1a32144c048891cfdcc67ea62a91c2dc32062344329c7e51ac469c8",
+  "title": "Multimodal Model",
+  "slug": "multimodal-model",
+  "public": true,
+  "classIri": "urn:ngm:class:multimodal-model",
+  "domain": "machine-learning",
+  "definition": "A machine learning model that ingests, aligns, or generates information across two or more modalities \u2014 text, images, audio, video, or 3D \u2014 within a single architecture, typically by encoding each modality into a shared representation space processed by a transformer backbone. Spanning contrastive dual encoders such as CLIP, text-to-image generators, and natively multimodal frontier models like GPT-4o and Gemini, multimodal models underpin image understanding, cross-modal search, and modern creative tooling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vision-language-model",
+        "label": "Vision Language Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "vision-language-model",
+      "label": "Vision Language Model"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "Creative Tools"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-net",
+      "label": "controlnet"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    }
+  ]
+}

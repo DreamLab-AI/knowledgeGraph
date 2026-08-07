@@ -87,6 +87,10 @@
       "label": "Decision Tree"
     },
     {
+      "slug": "heatmap-regression",
+      "label": "Heatmap Regression"
+    },
+    {
       "slug": "mean-absolute-error",
       "label": "Mean Absolute Error"
     },

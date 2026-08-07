@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:f43c5c4c751977f33591518fe370b5c3d0d383fa0ceae6c91f1bf7ad64814aee",
+  "title": "Liveness",
+  "slug": "liveness",
+  "public": true,
+  "classIri": "urn:ngm:class:liveness",
+  "domain": "distributed-systems",
+  "definition": "Liveness is the class of correctness properties asserting that something good eventually happens: a submitted transaction is eventually finalised, a consensus protocol eventually decides, a requesting process eventually enters its critical section. Formalised in temporal logic and contrasted with safety properties, which assert that nothing bad ever happens, liveness cannot be violated by any finite execution \u2014 only by an infinite one that forever withholds progress \u2014 and in asynchronous fault-prone systems it is fundamentally constrained by results such as the FLP impossibility theorem.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:temporal-logic",
+      "label": "Temporal Logic"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:health-check",
+        "label": "Health Check"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "temporal-logic",
+      "label": "Temporal Logic"
+    },
+    {
+      "slug": "health-check",
+      "label": "Health Check"
+    },
+    {
+      "slug": "quorum",
+      "label": "Quorum"
+    },
+    {
+      "slug": "transaction-finality",
+      "label": "Transaction Finality"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    }
+  ],
+  "backlinks": []
+}

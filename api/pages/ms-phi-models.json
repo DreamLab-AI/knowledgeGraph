@@ -133,7 +133,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:direct-preference-optimization",
+        "id": "urn:ngm:class:direct-preference-optimisation",
         "label": "Direct Preference Optimization"
       },
       {

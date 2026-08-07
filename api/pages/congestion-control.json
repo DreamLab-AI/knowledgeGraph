@@ -155,6 +155,10 @@
       "label": "Telecollaboration and Telepresence"
     },
     {
+      "slug": "traffic-shaping",
+      "label": "Traffic Shaping"
+    },
+    {
       "slug": "transport-layer",
       "label": "Transport Layer"
     }

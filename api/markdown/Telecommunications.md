@@ -48,7 +48,7 @@ public:: true
         "label": "Radio Access Network"
       },
       {
-        "@id": "urn:ngm:class:satellite-communications",
+        "@id": "urn:ngm:class:satellite-communication",
         "label": "Satellite Communications"
       }
     ],

@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:e7d2382fa2b9710b9a128450dc59cec961d81728685bff0923ebdcce7f459759",
+  "title": "Foreign Exchange",
+  "slug": "foreign-exchange",
+  "public": true,
+  "classIri": "urn:ngm:class:foreign-exchange",
+  "domain": "finance",
+  "definition": "The global, decentralised market and settlement activity in which one currency is exchanged for another at agreed exchange rates, spanning spot transactions, forwards, swaps, and options. Trading over seven trillion US dollars daily, it is the largest financial market in the world, providing the currency conversion that underlies international trade, investment, and cross-border payments, with settlement risk managed through mechanisms such as CLS payment-versus-payment and liquidity intermediated by dealer banks and correspondent networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-instruments",
+      "label": "Financial Instruments"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:exchange-rate",
+        "label": "Exchange Rate"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-instruments",
+      "label": "Financial Instruments"
+    },
+    {
+      "slug": "exchange-rate",
+      "label": "Exchange Rate"
+    },
+    {
+      "slug": "correspondent-banking",
+      "label": "Correspondent Banking"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    }
+  ],
+  "backlinks": []
+}

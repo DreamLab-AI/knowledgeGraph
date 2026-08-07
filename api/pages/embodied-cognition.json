@@ -90,6 +90,10 @@
       "label": "Cognitive Science"
     },
     {
+      "slug": "embodiment",
+      "label": "Embodiment"
+    },
+    {
       "slug": "tc-0003-telepresence-robot",
       "label": "tc 0003 telepresence robot"
     }

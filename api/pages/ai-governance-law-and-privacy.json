@@ -195,6 +195,10 @@
     {
       "slug": "ai-documentation-standards",
       "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "risk-classification",
+      "label": "Risk Classification"
     }
   ]
 }

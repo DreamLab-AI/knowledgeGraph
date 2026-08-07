@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:af5b1cab707b00cf593d2de45bb621d7b86637c3ec1428e5a4e7efaeec8f7596",
+  "title": "Lossy Compression",
+  "slug": "lossy-compression",
+  "public": true,
+  "classIri": "urn:ngm:class:lossy-compression",
+  "domain": "data",
+  "definition": "Data compression that achieves high ratios by permanently discarding information judged perceptually or statistically less important, guided by rate-distortion theory and models of human vision and hearing; the basis of virtually all deployed image, audio and video coding \u2014 JPEG, MP3, AAC, Opus, H.264/HEVC/AV1 \u2014 where transform coding, quantisation and entropy coding together trade reconstruction fidelity against bitrate, in contrast to lossless methods that guarantee exact reconstruction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-compression",
+      "label": "Data Compression"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adaptive-bitrate-streaming",
+        "label": "Adaptive Bitrate Streaming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lossless-compression",
+        "label": "Lossless Compression"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "data-compression",
+      "label": "Data Compression"
+    },
+    {
+      "slug": "lossless-compression",
+      "label": "Lossless Compression"
+    },
+    {
+      "slug": "adaptive-bitrate-streaming",
+      "label": "Adaptive Bitrate Streaming"
+    },
+    {
+      "slug": "audio-codec",
+      "label": "Audio Codec"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "patent",
+      "label": "Patent"
+    }
+  ]
+}

@@ -47,7 +47,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
       {"@id": "urn:ngm:class:data-cleaning", "label": "Data Cleaning"},
-      {"@id": "urn:ngm:class:automl", "label": "AutoML"},
+      {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
       {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
     ]
   },

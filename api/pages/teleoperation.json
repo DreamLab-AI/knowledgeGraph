@@ -8,7 +8,7 @@
   "definition": "Teleoperation is the remote control of robots and physical systems by human operators in real-time, enabling task execution in hazardous, distant, or inaccessible environments whilst maintaining human supervision and decision-making authority.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],

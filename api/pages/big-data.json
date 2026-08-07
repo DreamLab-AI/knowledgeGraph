@@ -111,6 +111,10 @@
     {
       "slug": "data-lake",
       "label": "Data Lake"
+    },
+    {
+      "slug": "data-mining",
+      "label": "Data Mining"
     }
   ]
 }

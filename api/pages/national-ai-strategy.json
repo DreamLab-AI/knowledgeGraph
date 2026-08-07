@@ -110,6 +110,14 @@
     {
       "slug": "asia-pacific-regulation",
       "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "industrial-strategy",
+      "label": "Industrial Strategy"
+    },
+    {
+      "slug": "uk-national-ai-strategy",
+      "label": "UK National AI Strategy"
     }
   ]
 }

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:gradient-descent",
       "label": "Gradient Descent"
+    },
+    {
+      "id": "urn:ngm:class:optimisation-algorithm",
+      "label": "Optimisation Algorithm"
     }
   ],
   "entityType": "Class",
@@ -89,6 +93,10 @@
       {
         "id": "urn:ngm:class:rmsprop",
         "label": "RMSProp"
+      },
+      {
+        "id": "urn:ngm:class:adagrad",
+        "label": "Adagrad"
       },
       {
         "id": "urn:ngm:class:sgd-with-momentum",
@@ -345,16 +353,12 @@
       "label": "AI Video"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
+      "slug": "adaptive-learning-rate",
+      "label": "Adaptive Learning Rate"
     },
     {
       "slug": "automatic-differentiation",
       "label": "Automatic Differentiation"
-    },
-    {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
     },
     {
       "slug": "gaussian-splatting",
@@ -367,6 +371,26 @@
     {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
+    },
+    {
+      "slug": "rmsprop",
+      "label": "RMSProp"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
     },
     {
       "slug": "fast-ai",

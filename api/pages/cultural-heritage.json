@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:296535f674bfacc36d6a6669e7a94d6cc6a6c37dcad10d5164913e636bc84acf",
+  "title": "Cultural Heritage",
+  "slug": "cultural-heritage",
+  "public": true,
+  "classIri": "urn:ngm:class:cultural-heritage",
+  "domain": "metaverse",
+  "definition": "The legacy of tangible artefacts (monuments, buildings, artworks, archives) and intangible attributes (language, performance, craft, ritual) inherited from past generations, maintained in the present, and safeguarded for future ones. In digital ecosystems, cultural heritage is increasingly captured, preserved, and re-presented through 3D scanning, digital twins, and immersive experiences, making it a foundational content domain for virtual tourism and the creative industries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:creative-industries",
+      "label": "Creative Industries"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      },
+      {
+        "id": "urn:ngm:class:education",
+        "label": "Education"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-objects",
+        "label": "Digital Objects"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "digital-preservation",
+      "label": "Digital Preservation"
+    },
+    {
+      "slug": "virtual-tourism",
+      "label": "Virtual Tourism"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "immersive-experience",
+      "label": "Immersive Experience"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    }
+  ]
+}

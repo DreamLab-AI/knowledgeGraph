@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:5a21dba43423488f0f1c2e9112c59942559bcd20d91609e29dec4ea4dc8549ea",
+  "title": "Token Governance",
+  "slug": "token-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:token-governance",
+  "domain": "blockchain",
+  "definition": "A decision-making mechanism for blockchain protocols and DAOs in which voting power is allocated in proportion to holdings of a governance token, so that proposals \u2014 parameter changes, treasury spending, protocol upgrades \u2014 are ratified by token-weighted ballots executed through smart contracts, trading the legitimacy problems of plutocratic weighting against the sybil resistance and skin-in-the-game that stake-based voting provides.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-governance",
+      "label": "Decentralised Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-governance",
+        "label": "Digital Asset Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:aave",
+        "label": "Aave"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "on-chain-governance",
+      "label": "On-chain Governance"
+    }
+  ],
+  "backlinks": []
+}

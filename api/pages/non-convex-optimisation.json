@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:2728d8f653dd2294456f5b11f719fba7a463262c466f923c533b586781e8621b",
+  "title": "Non-Convex Optimisation",
+  "slug": "non-convex-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:non-convex-optimisation",
+  "domain": "machine-learning",
+  "definition": "The minimisation of objective functions that are not convex, so the loss surface may contain multiple local minima, saddle points, plateaus, and ravines, and no general guarantee links a local solution to the global optimum. Non-convex optimisation is the actual setting of deep learning\u2014neural network training landscapes are highly non-convex\u2014and of many engineering problems, tackled in practice with stochastic gradient methods, momentum, restarts, relaxations, and problem-specific structure rather than the clean certificates available in the convex case.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mathematical-optimisation",
+      "label": "Mathematical Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:gradient-based-optimisation",
+        "label": "Gradient-Based Optimisation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:loss-landscape",
+        "label": "Loss Landscape"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "loss-landscape",
+      "label": "Loss Landscape"
+    }
+  ],
+  "backlinks": []
+}

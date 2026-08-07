@@ -34,7 +34,7 @@
         "label": "Radio Access Network"
       },
       {
-        "id": "urn:ngm:class:satellite-communications",
+        "id": "urn:ngm:class:satellite-communication",
         "label": "Satellite Communications"
       }
     ],
@@ -143,6 +143,10 @@
       "label": "Audio Signal Processing"
     },
     {
+      "slug": "broadcasting",
+      "label": "Broadcasting"
+    },
+    {
       "slug": "digital-divide",
       "label": "Digital Divide"
     },
@@ -161,6 +165,10 @@
     {
       "slug": "real-time",
       "label": "Real Time"
+    },
+    {
+      "slug": "wide-area-network",
+      "label": "Wide Area Network"
     }
   ]
 }

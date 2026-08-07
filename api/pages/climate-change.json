@@ -90,6 +90,10 @@
     {
       "slug": "global-inequality",
       "label": "Global Inequality"
+    },
+    {
+      "slug": "greenhouse-gas-emissions",
+      "label": "Greenhouse Gas Emissions"
     }
   ]
 }

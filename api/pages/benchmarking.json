@@ -105,6 +105,10 @@
     {
       "slug": "dataset",
       "label": "Dataset"
+    },
+    {
+      "slug": "glue-benchmark",
+      "label": "GLUE Benchmark"
     }
   ]
 }

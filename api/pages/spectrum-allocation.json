@@ -111,5 +111,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "broadcasting",
+      "label": "Broadcasting"
+    },
+    {
+      "slug": "wireless-network",
+      "label": "Wireless Network"
+    }
+  ]
 }

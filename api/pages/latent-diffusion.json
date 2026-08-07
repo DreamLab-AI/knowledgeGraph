@@ -192,6 +192,10 @@
       "label": "Music and Audio"
     },
     {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
     }

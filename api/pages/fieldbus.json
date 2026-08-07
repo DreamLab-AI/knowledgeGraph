@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:0d4d0fe1ed5bd1a8abe930c280f27ab6e37120333992e649cbd12528169dfcc4",
+  "title": "Fieldbus",
+  "slug": "fieldbus",
+  "public": true,
+  "classIri": "urn:ngm:class:fieldbus",
+  "domain": "infrastructure",
+  "definition": "Fieldbus is the family of digital, serial, multi-drop communication protocols \u2014 standardised in IEC 61158 and including PROFIBUS, FOUNDATION Fieldbus, Modbus, CAN-based networks, and DeviceNet \u2014 that connect field devices such as sensors, actuators, and drives to programmable logic controllers and distributed control systems. Introduced from the mid-1980s to replace point-to-point 4\u201320 mA and RS-232 wiring, a single shared cable carries deterministic cyclic process data and device diagnostics, cutting cabling cost and enabling intelligent field instruments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:industrial-ethernet",
+        "label": "Industrial Ethernet"
+      },
+      {
+        "id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:can-bus",
+        "label": "CAN Bus"
+      },
+      {
+        "id": "urn:ngm:class:programmable-logic-controller",
+        "label": "Programmable Logic Controller"
+      },
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "IndustrialAutomation"
+    },
+    {
+      "slug": "industrial-ethernet",
+      "label": "Industrial Ethernet"
+    },
+    {
+      "slug": "can-bus",
+      "label": "CAN Bus"
+    },
+    {
+      "slug": "programmable-logic-controller",
+      "label": "Programmable Logic Controller"
+    },
+    {
+      "slug": "scada",
+      "label": "SCADA"
+    },
+    {
+      "slug": "time-sensitive-networking",
+      "label": "Time-Sensitive Networking"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "industrial-ethernet",
+      "label": "Industrial Ethernet"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

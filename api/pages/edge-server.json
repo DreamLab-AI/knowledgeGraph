@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:31cf2e8fc2e4652b78ac69139f77bb3a3aef0840260e4ed5334085fc6445a7ed",
+  "title": "Edge Server",
+  "slug": "edge-server",
+  "public": true,
+  "classIri": "urn:ngm:class:edge-server",
+  "domain": "infrastructure",
+  "definition": "A server deployed at a network point of presence geographically and topologically close to end users, which caches and serves content, terminates TLS connections, and increasingly executes application logic on behalf of a distant origin server; edge servers are the building blocks of content delivery networks and edge computing platforms, cutting round-trip latency, absorbing traffic spikes and DDoS load, and reducing bandwidth demand on origin infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:origin-server",
+        "label": "Origin Server"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "origin-server",
+      "label": "Origin Server"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "content-delivery-network-cdn",
+      "label": "Content Delivery Network (CDN)"
+    }
+  ]
+}

@@ -265,6 +265,10 @@
     {
       "slug": "trust-framework",
       "label": "Trust Framework"
+    },
+    {
+      "slug": "us-ai-safety-institute",
+      "label": "US AI Safety Institute"
     }
   ]
 }

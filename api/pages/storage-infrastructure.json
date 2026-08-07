@@ -597,6 +597,10 @@
       "label": "Asset Archive"
     },
     {
+      "slug": "ceph",
+      "label": "Ceph"
+    },
+    {
       "slug": "collective-memory-archive",
       "label": "Collective Memory Archive"
     },

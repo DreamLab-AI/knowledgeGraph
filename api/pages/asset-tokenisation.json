@@ -51,6 +51,10 @@
       {
         "id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
       }
     ],
     "dependsOn": [
@@ -65,6 +69,14 @@
       {
         "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "implements": [],
@@ -76,12 +88,28 @@
       {
         "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:real-estate",
+        "label": "Real Estate"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-finance",
+        "label": "Supply Chain Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -100,6 +128,10 @@
       {
         "id": "urn:ngm:class:non-fungible-token",
         "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
       }
     ],
     "supports": [],
@@ -107,6 +139,18 @@
       {
         "id": "urn:ngm:class:financial-action-task-force",
         "label": "Financial Action Task Force"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
       }
     ],
     "partOf": [],
@@ -122,6 +166,10 @@
       {
         "id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
       }
     ]
   },
@@ -146,6 +194,10 @@
     {
       "slug": "dtcc",
       "label": "DTCC"
+    },
+    {
+      "slug": "decentraland",
+      "label": "Decentraland"
     },
     {
       "slug": "decentralized-exchange",
@@ -174,6 +226,10 @@
     {
       "slug": "securitize",
       "label": "Securitize"
+    },
+    {
+      "slug": "the-sandbox",
+      "label": "The Sandbox"
     }
   ]
 }

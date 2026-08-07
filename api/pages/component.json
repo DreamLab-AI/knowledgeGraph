@@ -322,6 +322,10 @@
     {
       "slug": "module",
       "label": "Module"
+    },
+    {
+      "slug": "separation-of-concerns",
+      "label": "Separation of Concerns"
     }
   ]
 }

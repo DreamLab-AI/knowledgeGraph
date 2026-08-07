@@ -104,6 +104,10 @@
     {
       "slug": "enterprise-token-standards",
       "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "netting",
+      "label": "Netting"
     }
   ]
 }

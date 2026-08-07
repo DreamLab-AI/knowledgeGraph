@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:8304581e2d82259b0dabfcc1db0228de6e5a124227a616826832a41291a58b29",
+  "title": "Branch and Bound",
+  "slug": "branch-and-bound",
+  "public": true,
+  "classIri": "urn:ngm:class:branch-and-bound",
+  "domain": "artificial-intelligence",
+  "definition": "An exact algorithmic paradigm for combinatorial optimisation that systematically explores a tree of candidate solution subsets, using bounds from relaxations of the problem to prune any branch that provably cannot contain a solution better than the best one found so far. Introduced by Land and Doig in 1960 for integer programming, branch and bound guarantees optimality while often avoiding exhaustive enumeration, and remains the backbone of modern mixed-integer programming and constraint solvers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:search-algorithm",
+      "label": "Search Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "dynamic-programming",
+      "label": "Dynamic Programming"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    }
+  ]
+}

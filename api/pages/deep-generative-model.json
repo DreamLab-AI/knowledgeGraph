@@ -425,6 +425,10 @@
       "label": "Automated Design"
     },
     {
+      "slug": "classifier",
+      "label": "Classifier"
+    },
+    {
       "slug": "comfy-ui",
       "label": "Comfy Ui"
     },

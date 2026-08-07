@@ -75,7 +75,7 @@
         "label": "Cognitive Science"
       },
       {
-        "id": "urn:ngm:class:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       }
     ],
@@ -400,6 +400,10 @@
       "label": "Claude"
     },
     {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
       "slug": "decision-making",
       "label": "Decision Making"
     },
@@ -410,6 +414,10 @@
     {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
+    },
+    {
+      "slug": "specification-gaming",
+      "label": "Specification Gaming"
     }
   ]
 }

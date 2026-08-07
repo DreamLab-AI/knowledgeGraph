@@ -139,7 +139,7 @@
         "label": "Drug Discovery"
       },
       {
-        "id": "urn:ngm:class:materials-science",
+        "id": "urn:ngm:class:material-science",
         "label": "Materials Science"
       },
       {
@@ -167,7 +167,7 @@
         "label": "Expected Improvement"
       },
       {
-        "id": "urn:ngm:class:exploration-exploitation-trade-off",
+        "id": "urn:ngm:class:exploration-exploitation-tradeoff",
         "label": "Exploration-Exploitation Trade-off"
       },
       {

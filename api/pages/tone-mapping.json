@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:96640ed3bcd491132a4aab3cff644f639ff8bb8619c33ea95996e2675998ffe3",
+  "title": "Tone Mapping",
+  "slug": "tone-mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:tone-mapping",
+  "domain": "spatial-computing",
+  "definition": "An image processing operation that compresses the high dynamic range of luminance values captured or rendered in a scene into the limited range a display or print medium can reproduce, while preserving perceived contrast, detail, and colour appearance. Tone mapping operators range from simple global curves such as Reinhard and filmic ACES transforms to local, content-adaptive methods, and are a standard final stage in real-time rendering pipelines, HDR photography, and cinematic colour workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:image-processing",
+      "label": "Image Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:photorealism",
+        "label": "Photorealism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:colour-grading",
+        "label": "Colour Grading"
+      },
+      {
+        "id": "urn:ngm:class:computational-photography",
+        "label": "Computational Photography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "image-processing",
+      "label": "Image Processing"
+    },
+    {
+      "slug": "colour-grading",
+      "label": "Colour Grading"
+    },
+    {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
+      "slug": "photorealism",
+      "label": "Photorealism"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    }
+  ]
+}

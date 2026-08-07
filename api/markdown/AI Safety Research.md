@@ -253,7 +253,7 @@ public:: true
     "bridgesTo": [
       {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
       {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"}
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous Systems"}
     ]
   },
   "sameAs": [

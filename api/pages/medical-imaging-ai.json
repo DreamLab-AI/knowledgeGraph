@@ -188,6 +188,10 @@
     {
       "slug": "training-and-fine-tuning",
       "label": "Training and fine tuning"
+    },
+    {
+      "slug": "treatment-planning",
+      "label": "Treatment Planning"
     }
   ]
 }

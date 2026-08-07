@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:automated-planning",
       "label": "Automated Planning"
+    },
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
     }
   ],
   "entityType": "Class",
@@ -96,6 +100,10 @@
     "partOf": [],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:nav2",
+        "label": "Nav2"
+      },
+      {
         "id": "urn:ngm:class:intelligent-npc",
         "label": "Intelligent NPC"
       },
@@ -116,6 +124,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
       "slug": "ai-in-games",
       "label": "AI in Games"
     },
@@ -132,12 +144,20 @@
       "label": "Mobile Robot Platform"
     },
     {
+      "slug": "reactive-planning",
+      "label": "Reactive Planning"
+    },
+    {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
     },
     {
       "slug": "state-machine",
       "label": "State Machine"
+    },
+    {
+      "slug": "utility-ai",
+      "label": "Utility AI"
     }
   ]
 }

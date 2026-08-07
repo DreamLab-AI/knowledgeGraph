@@ -123,6 +123,10 @@
     {
       "slug": "distributed-computing",
       "label": "Distributed Computing"
+    },
+    {
+      "slug": "zookeeper",
+      "label": "ZooKeeper"
     }
   ]
 }

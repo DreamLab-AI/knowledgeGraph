@@ -28,7 +28,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
       {"@id": "urn:ngm:class:property-rights", "label": "Property Rights"},
-      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"}
+      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenization"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
@@ -50,7 +50,7 @@ public:: true
   - [[Ownership Transfer]] is the atomic, auditable process of moving legal or functional control of an asset from one party to another, executed in traditional law through deeds and registries and, in Web3 contexts, through on-chain state transitions that update [[Digital Ownership]] records for tokens and [[Non-Fungible Token (NFT)]] without intermediaries.
 
 - ### Relationships
-  - Ownership transfer is the transactional primitive that makes [[Asset Tokenization]] economically meaningful: it enables [[NFT Marketplace]] trading and [[Fractional Ownership]] schemes by updating on-chain ownership state atomically. It uses [[Digital Asset]] structures as the transferred object and [[Provenance Tracking]] to maintain audit history. It supports [[Cross Chain Asset Transfer]] when assets migrate between blockchains, and its legal legitimacy depends on alignment with [[Property Rights]] frameworks.
+  - Ownership transfer is the transactional primitive that makes [[Asset Tokenisation]] economically meaningful: it enables [[NFT Marketplace]] trading and [[Fractional Ownership]] schemes by updating on-chain ownership state atomically. It uses [[Digital Asset]] structures as the transferred object and [[Provenance Tracking]] to maintain audit history. It supports [[Cross Chain Asset Transfer]] when assets migrate between blockchains, and its legal legitimacy depends on alignment with [[Property Rights]] frameworks.
 
 - ### Content
   - Ownership transfer is among humanity's oldest legal concepts, formalised in Roman law through traditio (physical handover) and later abstracted into deed systems, title registries, and escrow. In the analogue world, transferring a house requires conveyancing solicitors, land registry filings, and settlement banks — a process taking weeks. The blockchain era reframed ownership transfer as a cryptographic operation: a sender signs a transaction spending a UTXO (Bitcoin) or calling a transfer() function (ERC-20/ERC-721), and the network reaches consensus on the new state within seconds.

@@ -233,10 +233,6 @@
       "label": "cost function"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "image-segmentation",
       "label": "Image Segmentation"
     },

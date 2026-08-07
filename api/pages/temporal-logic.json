@@ -100,5 +100,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "liveness",
+      "label": "Liveness"
+    },
+    {
+      "slug": "temporal-reasoning",
+      "label": "Temporal Reasoning"
+    }
+  ]
 }

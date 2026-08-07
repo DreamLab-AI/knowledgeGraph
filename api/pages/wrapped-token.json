@@ -137,6 +137,10 @@
     {
       "slug": "lock-and-mint-mechanism",
       "label": "Lock and Mint Mechanism"
+    },
+    {
+      "slug": "mint-burn-mechanism",
+      "label": "Mint-Burn Mechanism"
     }
   ]
 }

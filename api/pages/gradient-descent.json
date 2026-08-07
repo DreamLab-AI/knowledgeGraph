@@ -158,8 +158,8 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
+      "slug": "adaptive-learning-rate",
+      "label": "Adaptive Learning Rate"
     },
     {
       "slug": "algorithm-layer",
@@ -312,6 +312,10 @@
     {
       "slug": "training-layer",
       "label": "Training Layer"
+    },
+    {
+      "slug": "training-pipeline",
+      "label": "Training Pipeline"
     },
     {
       "slug": "training-and-fine-tuning",

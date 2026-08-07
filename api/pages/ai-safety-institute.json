@@ -145,6 +145,10 @@
       "label": "ai policy"
     },
     {
+      "slug": "ai-safety-summit",
+      "label": "AI Safety Summit"
+    },
+    {
       "slug": "anthropic",
       "label": "anthropic"
     },
@@ -163,6 +167,10 @@
     {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
+    },
+    {
+      "slug": "us-ai-safety-institute",
+      "label": "US AI Safety Institute"
     }
   ]
 }

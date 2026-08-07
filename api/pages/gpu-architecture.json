@@ -175,6 +175,10 @@
       "label": "Batch Inference"
     },
     {
+      "slug": "cpu-architecture",
+      "label": "CPU Architecture"
+    },
+    {
       "slug": "graphics-api",
       "label": "Graphics API"
     },

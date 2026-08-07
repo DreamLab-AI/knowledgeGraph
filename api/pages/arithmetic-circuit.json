@@ -38,7 +38,7 @@
         "label": "zk-SNARK"
       },
       {
-        "id": "urn:ngm:class:zk-stark",
+        "id": "urn:ngm:class:zk-starks",
         "label": "zk-STARK"
       },
       {

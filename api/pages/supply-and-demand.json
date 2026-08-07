@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:a81b253178922771f8a864c9e0d8af2f2925f287babc0d2c4a10768551b90d25",
+  "title": "Supply and Demand",
+  "slug": "supply-and-demand",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-and-demand",
+  "domain": "finance",
+  "definition": "The foundational economic model describing how the price and traded quantity of a good emerge from the interaction of sellers' willingness to supply at each price and buyers' willingness to purchase, with markets tending towards the equilibrium where the two schedules intersect; shifts in either schedule \u2014 driven by costs, income, preferences, or expectations \u2014 move prices and quantities in predictable directions, making the model the basic engine of price formation in markets from commodities to currencies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:microeconomics",
+        "label": "Microeconomics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:exchange-rate",
+        "label": "Exchange Rate"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "microeconomics",
+      "label": "Microeconomics"
+    },
+    {
+      "slug": "price-discovery",
+      "label": "Price Discovery"
+    },
+    {
+      "slug": "exchange-rate",
+      "label": "Exchange Rate"
+    }
+  ],
+  "backlinks": []
+}

@@ -45,6 +45,14 @@
       "label": "Convergence"
     },
     {
+      "slug": "iso-iec-jtc-1-sc-17",
+      "label": "ISO/IEC JTC 1/SC 17"
+    },
+    {
+      "slug": "iso-iec-jtc1-sc29",
+      "label": "ISO/IEC JTC 1/SC 29"
+    },
+    {
       "slug": "physical-layer",
       "label": "Physical Layer"
     }

@@ -111,6 +111,10 @@
     {
       "slug": "carbon-footprint-measurement",
       "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "double-materiality",
+      "label": "Double Materiality"
     }
   ]
 }

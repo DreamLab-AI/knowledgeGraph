@@ -185,6 +185,10 @@
       "label": "Lattice Cryptography"
     },
     {
+      "slug": "password",
+      "label": "Password"
+    },
+    {
       "slug": "private-channels",
       "label": "Private Channels"
     },
@@ -195,6 +199,10 @@
     {
       "slug": "proprietary-video",
       "label": "Proprietary Video"
+    },
+    {
+      "slug": "ransomware",
+      "label": "Ransomware"
     },
     {
       "slug": "storage-infrastructure",

@@ -170,8 +170,16 @@
       "label": "Agent2Agent Protocol (Google 2025)"
     },
     {
+      "slug": "centralised-identifier",
+      "label": "Centralised Identifier"
+    },
+    {
       "slug": "digital-objects",
       "label": "Digital Objects"
+    },
+    {
+      "slug": "identifier",
+      "label": "Identifier"
     },
     {
       "slug": "identity-verification",

@@ -126,11 +126,11 @@ public:: true
       {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
       {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:react-pattern", "label": "ReAct Pattern"}
+      {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:reactive-system", "label": "Reactive System"}
+      {"@id": "urn:ngm:class:reactive-systems", "label": "Reactive System"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},

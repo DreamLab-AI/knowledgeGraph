@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:9d1ef618e3adece935cf0c169d952354e487798dfe8ab092f47acfa33be6f68a",
+  "title": "IoT Platform",
+  "slug": "iot-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:iot-platform",
+  "domain": "infrastructure",
+  "definition": "A managed software layer that connects fleets of physical devices to applications and analytics, providing device provisioning and identity, secure bidirectional messaging, telemetry ingestion, rule-based event processing, over-the-air updates, and digital twin state management, so that organisations can operate heterogeneous sensor and actuator networks at scale without building the connectivity, security, and data-pipeline plumbing themselves.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-home-automation",
+        "label": "Smart Home Automation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "mqtt",
+      "label": "MQTT"
+    },
+    {
+      "slug": "smart-home-automation",
+      "label": "Smart Home Automation"
+    }
+  ],
+  "backlinks": []
+}

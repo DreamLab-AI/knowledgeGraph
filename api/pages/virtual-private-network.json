@@ -93,5 +93,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "wide-area-network",
+      "label": "Wide Area Network"
+    }
+  ]
 }

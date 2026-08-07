@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:6a86dd616a5812d947ec5f71d182adae2f04e2378c2048427528eba534203e5d",
+  "title": "Leaderboard",
+  "slug": "leaderboard",
+  "public": true,
+  "classIri": "urn:ngm:class:leaderboard",
+  "domain": "artificial-intelligence",
+  "definition": "A leaderboard is a public, continuously updated ranking of systems or models against a shared benchmark dataset and fixed evaluation protocol, typically reporting standardised metrics on held-out test sets. Leaderboards make model comparison transparent and reproducible, drive competitive progress in machine learning and adjacent fields, and increasingly incorporate human preference voting \u2014 whilst also inviting over-fitting, benchmark gaming and metric myopia when rankings are treated as ends in themselves.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "model-comparison",
+      "label": "Model Comparison"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    }
+  ]
+}

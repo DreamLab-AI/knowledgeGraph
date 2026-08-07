@@ -180,6 +180,10 @@
     {
       "slug": "robot-learning",
       "label": "Robot Learning"
+    },
+    {
+      "slug": "sensor-feedback",
+      "label": "Sensor Feedback"
     }
   ]
 }

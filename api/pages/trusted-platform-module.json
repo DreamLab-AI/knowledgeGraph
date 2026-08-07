@@ -98,5 +98,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "tamper-resistance",
+      "label": "Tamper Resistance"
+    }
+  ]
 }

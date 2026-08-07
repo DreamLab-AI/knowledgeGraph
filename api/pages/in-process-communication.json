@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:5332397fbdc32628cc37f8f01f1810a12d29dbbdff93eec4b768f7cc6a6241bf",
+  "title": "In-Process Communication",
+  "slug": "in-process-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:in-process-communication",
+  "domain": "distributed-systems",
+  "definition": "In-process communication is the exchange of data and control between software components running inside a single operating-system process: direct function and method calls, shared objects on the heap, and in-memory events. Because callers and callees share one address space, invocation costs nanoseconds, arguments pass by reference without serialisation, and failures are shared \u2014 the defining communication style of monolithic architectures, and the deliberate opposite of inter-process communication, which crosses process boundaries via sockets, pipes, or messaging at the price of serialisation, latency, and partial-failure semantics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inter-process-communication",
+        "label": "Inter-Process Communication"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shared-memory",
+        "label": "Shared Memory"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    },
+    {
+      "slug": "monolithic-architecture",
+      "label": "Monolithic Architecture"
+    },
+    {
+      "slug": "inter-process-communication",
+      "label": "Inter Process Communication"
+    },
+    {
+      "slug": "shared-memory",
+      "label": "Shared Memory"
+    }
+  ],
+  "backlinks": []
+}

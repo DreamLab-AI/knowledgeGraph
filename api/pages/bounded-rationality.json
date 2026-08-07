@@ -180,6 +180,10 @@
     {
       "slug": "decision-theory",
       "label": "Decision Theory"
+    },
+    {
+      "slug": "heuristics",
+      "label": "Heuristics"
     }
   ]
 }

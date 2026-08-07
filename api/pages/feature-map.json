@@ -203,5 +203,10 @@
       "label": "Tensor"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "pooling-layer",
+      "label": "Pooling Layer"
+    }
+  ]
 }

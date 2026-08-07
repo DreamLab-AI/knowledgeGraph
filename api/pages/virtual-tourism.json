@@ -97,7 +97,7 @@
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:3-d-modeling",
+        "id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       },
       {
@@ -143,6 +143,10 @@
     {
       "slug": "archaeological-site-reconstruction",
       "label": "Archaeological Site Reconstruction"
+    },
+    {
+      "slug": "cultural-heritage",
+      "label": "Cultural Heritage"
     },
     {
       "slug": "destination-marketing",

@@ -137,10 +137,6 @@
       "label": "Diffusion Models"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

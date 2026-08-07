@@ -185,7 +185,7 @@ public:: true
       {"@id": "urn:ngm:class:photometric-transformation", "label": "Photometric Transformation"},
       {"@id": "urn:ngm:class:noise-injection", "label": "Noise Injection"},
       {"@id": "urn:ngm:class:mixup", "label": "Mixup Augmentation"},
-      {"@id": "urn:ngm:class:cutmix", "label": "CutMix"},
+      {"@id": "urn:ngm:class:cut-mix", "label": "CutMix"},
       {"@id": "urn:ngm:class:autoaugment", "label": "AutoAugment"},
       {"@id": "urn:ngm:class:randaugment", "label": "RandAugment"},
       {"@id": "urn:ngm:class:feature-space-augmentation", "label": "Feature-Space Augmentation"}

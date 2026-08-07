@@ -149,6 +149,10 @@
     {
       "slug": "inpainting",
       "label": "Inpainting"
+    },
+    {
+      "slug": "noise-injection",
+      "label": "Noise Injection"
     }
   ]
 }

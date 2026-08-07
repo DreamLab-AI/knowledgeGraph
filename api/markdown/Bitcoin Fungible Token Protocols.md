@@ -71,7 +71,7 @@ elevatedFrom:: [[Runes and Glyphs]]
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"}
+      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenization"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}

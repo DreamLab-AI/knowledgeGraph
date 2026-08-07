@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:bb5669a613a39386844ec7453bb3b348e219def2cba27144051ca2003e38f8ad",
+  "title": "Information Management",
+  "slug": "information-management",
+  "public": true,
+  "classIri": "urn:ngm:class:information-management",
+  "domain": "data",
+  "definition": "The organisational discipline of acquiring, organising, storing, curating, securing, distributing, and disposing of information across its lifecycle so that the right information reaches the right people, in the right form, at the right time. It spans structured data and unstructured content alike, sitting between data management (which stewards raw data assets) and knowledge management (which cultivates human understanding), and is governed by policies for quality, retention, access, and compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:records-management",
+        "label": "Records Management"
+      },
+      {
+        "id": "urn:ngm:class:content-curation",
+        "label": "Content Curation"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:information-governance",
+        "label": "Information Governance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "knowledge-management",
+      "label": "Knowledge Management"
+    },
+    {
+      "slug": "records-management",
+      "label": "Records Management"
+    },
+    {
+      "slug": "information-governance",
+      "label": "Information Governance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "content-curation",
+      "label": "Content Curation"
+    }
+  ]
+}

@@ -386,6 +386,10 @@
       "label": "Learning Algorithm"
     },
     {
+      "slug": "machine-unlearning",
+      "label": "Machine Unlearning"
+    },
+    {
       "slug": "perception-system",
       "label": "Perception System"
     },

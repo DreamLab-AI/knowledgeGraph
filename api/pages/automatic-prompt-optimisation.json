@@ -114,7 +114,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:evolutionary-algorithms",
+        "id": "urn:ngm:class:evolutionary-algorithm",
         "label": "Evolutionary Algorithms"
       },
       {

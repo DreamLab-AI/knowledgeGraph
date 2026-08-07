@@ -67,6 +67,10 @@
       "label": "Edge Orchestration"
     },
     {
+      "slug": "jitter",
+      "label": "Jitter"
+    },
+    {
       "slug": "latency-management-protocol",
       "label": "Latency Management Protocol"
     },

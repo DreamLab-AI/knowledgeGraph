@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:456831beef3fc1500939995d7369695f48642664a02d5eab9d807592a08b2384",
+  "title": "ZooKeeper",
+  "slug": "zookeeper",
+  "public": true,
+  "classIri": "urn:ngm:class:zookeeper",
+  "domain": "distributed-systems",
+  "definition": "An Apache open-source coordination service for distributed systems that exposes a replicated, hierarchical key-value namespace of 'znodes' with strict ordering guarantees, ephemeral nodes, and watches, over which applications build leader election, distributed locks, configuration management, and group membership; consistency across the ensemble is maintained by the ZAB atomic-broadcast protocol, a Paxos-influenced consensus design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      },
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:etcd",
+        "label": "etcd"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "etcd",
+      "label": "Etcd"
+    },
+    {
+      "slug": "leader-election",
+      "label": "Leader Election"
+    },
+    {
+      "slug": "paxos",
+      "label": "Paxos"
+    }
+  ],
+  "backlinks": []
+}

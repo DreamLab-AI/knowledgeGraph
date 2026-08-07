@@ -149,12 +149,20 @@
       "label": "Cyber Security and Cryptography"
     },
     {
+      "slug": "hardware-design",
+      "label": "Hardware Design"
+    },
+    {
       "slug": "human-factors",
       "label": "Human Factors"
     },
     {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "model-based-systems-engineering",
+      "label": "Model-Based Systems Engineering"
     },
     {
       "slug": "risk-assessment",

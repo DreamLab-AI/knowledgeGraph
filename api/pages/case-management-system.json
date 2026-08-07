@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:895d6044fc4ea2b0bb85cbc1baf00d58e952a3be4b102d2448b8f81fc054c544",
+  "title": "Case Management System",
+  "slug": "case-management-system",
+  "public": true,
+  "classIri": "urn:ngm:class:case-management-system",
+  "domain": "governance",
+  "definition": "A software platform that tracks discrete units of investigative or remedial work\u2014cases\u2014from intake through triage, assignment, evidence gathering, escalation, and resolution, providing structured workflows, deadline management, and a complete audit trail. In compliance and legal operations, a case management system is the destination for alerts raised by monitoring controls, ensuring each potential breach is documented, investigated by accountable owners, and closed with a defensible record for regulators.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:enterprise-software",
+      "label": "Enterprise Software"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:case-management",
+        "label": "Case Management"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:legal-technology",
+        "label": "Legal Technology"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "case-management",
+      "label": "Case Management"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    }
+  ]
+}

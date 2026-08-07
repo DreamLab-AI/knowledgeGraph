@@ -112,5 +112,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "api-lifecycle",
+      "label": "API Lifecycle"
+    }
+  ]
 }

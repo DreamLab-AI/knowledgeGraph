@@ -120,6 +120,10 @@
     {
       "slug": "generative-ai",
       "label": "Generative AI"
+    },
+    {
+      "slug": "music-information-retrieval",
+      "label": "Music Information Retrieval"
     }
   ]
 }

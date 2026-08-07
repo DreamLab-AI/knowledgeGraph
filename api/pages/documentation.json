@@ -101,6 +101,10 @@
       "label": "3D and 4D"
     },
     {
+      "slug": "ai-documentation",
+      "label": "AI Documentation"
+    },
+    {
       "slug": "ai-user",
       "label": "AI User"
     },

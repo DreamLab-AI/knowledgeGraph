@@ -137,6 +137,10 @@
     {
       "slug": "real-time-translation",
       "label": "Real-time Translation"
+    },
+    {
+      "slug": "spectral-clustering",
+      "label": "Spectral Clustering"
     }
   ]
 }

@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:3-d-modeling",
+        "id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       },
       {
@@ -59,8 +59,8 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "3-d-modeling",
-      "label": "3D Modeling"
+      "slug": "3d-asset-creation",
+      "label": "3D Asset Creation"
     },
     {
       "slug": "metaverse-content-pipeline",

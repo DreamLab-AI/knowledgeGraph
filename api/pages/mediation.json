@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:9e44dae2c5ca8dc916878b28f5ec3720e42ea22d2add139759780727e6f487ce",
+  "title": "Mediation",
+  "slug": "mediation",
+  "public": true,
+  "classIri": "urn:ngm:class:mediation",
+  "domain": "governance",
+  "definition": "A structured, consensual dispute resolution process in which a neutral third party \u2014 the mediator \u2014 helps disputing parties communicate, surface underlying interests, and negotiate their own settlement, without the power to impose an outcome. Confidential, without prejudice, and typically far cheaper and faster than litigation or arbitration, mediation resolves the majority of commercial, family, workplace, and community disputes that reach it, and any agreement becomes binding only when the parties choose to contract on it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dispute-resolution",
+      "label": "Dispute Resolution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:negotiation",
+        "label": "Negotiation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "dispute-resolution",
+      "label": "Dispute Resolution"
+    },
+    {
+      "slug": "negotiation",
+      "label": "Negotiation"
+    },
+    {
+      "slug": "conflict-resolution",
+      "label": "Conflict Resolution"
+    }
+  ],
+  "backlinks": []
+}

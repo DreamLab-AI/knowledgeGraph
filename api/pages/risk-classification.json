@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:83376a4f2cf91d99de0915e45626469eeed313eadbc0df3356b2981732294ceb",
+  "title": "Risk Classification",
+  "slug": "risk-classification",
+  "public": true,
+  "classIri": "urn:ngm:class:risk-classification",
+  "domain": "governance",
+  "definition": "The systematic assignment of activities, systems, or products into ordered categories of risk severity so that regulatory obligations, controls, and oversight can be proportioned to potential harm. It combines criteria such as likelihood, impact, affected populations, and context of use into defined tiers, exemplified by the EU AI Act's four-level scheme running from prohibited unacceptable-risk practices through high-risk conformity requirements to limited-risk transparency duties and minimal-risk freedom.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:risk-based-regulation",
+        "label": "Risk Based Regulation"
+      },
+      {
+        "id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "risk-based-regulation",
+      "label": "Risk Based Regulation"
+    },
+    {
+      "slug": "policy-framework",
+      "label": "Policy Framework"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "ai-governance-law-and-privacy",
+      "label": "AI Governance Law and Privacy"
+    }
+  ],
+  "backlinks": []
+}

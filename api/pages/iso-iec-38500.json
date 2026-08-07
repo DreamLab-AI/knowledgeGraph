@@ -35,10 +35,5 @@
       "label": "Technical Standard"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "etsi-domain-governance-compliance",
-      "label": "ETSI_Domain_Governance_Compliance"
-    }
-  ]
+  "backlinks": []
 }

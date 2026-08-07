@@ -313,6 +313,10 @@
       "label": "Deep Learning Framework"
     },
     {
+      "slug": "encoder-decoder",
+      "label": "Encoder-Decoder"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },
@@ -357,12 +361,24 @@
       "label": "Mistral"
     },
     {
+      "slug": "modality-specific-encoder",
+      "label": "Modality-Specific Encoder"
+    },
+    {
       "slug": "model-architecture-layer",
       "label": "Model Architecture Layer"
     },
     {
       "slug": "motion-capture",
       "label": "Motion Capture"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal Artificial Intelligence"
+    },
+    {
+      "slug": "multimodal-model",
+      "label": "Multimodal Model"
     },
     {
       "slug": "multimodal-models",
@@ -387,6 +403,10 @@
     {
       "slug": "recurrent-neural-network",
       "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "sequence-model",
+      "label": "Sequence Model"
     },
     {
       "slug": "state-space-model",

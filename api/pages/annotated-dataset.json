@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:caa8b680d1fadc3a8d7aa04cc4e719be5ae51feadffff5c3421bd6253309585d",
+  "title": "Annotated Dataset",
+  "slug": "annotated-dataset",
+  "public": true,
+  "classIri": "urn:ngm:class:annotated-dataset",
+  "domain": "machine-learning",
+  "definition": "A dataset in which each example carries human- or machine-assigned labels \u2014 class names, bounding boxes, segmentation masks, transcripts, action-unit codes, or relevance judgements \u2014 produced under a documented annotation scheme with quality controls such as inter-annotator agreement; annotated datasets are the primary fuel of supervised learning, and their coverage, label accuracy, and demographic balance bound the accuracy and fairness of every model trained on them.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dataset",
+      "label": "Dataset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "data-annotation",
+      "label": "Data Annotation"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    }
+  ]
+}

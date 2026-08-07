@@ -46,6 +46,10 @@
       "label": "Artificial General Intelligence"
     },
     {
+      "slug": "instrumental-convergence",
+      "label": "Instrumental Convergence"
+    },
+    {
       "slug": "singularity",
       "label": "Singularity"
     }

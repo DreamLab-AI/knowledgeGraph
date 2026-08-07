@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:72c32cf618f86eda0d45ca076bd906d467bb5ad3a0d0f077d039bee4ec3a714a",
+  "title": "Integrated Circuit",
+  "slug": "integrated-circuit",
+  "public": true,
+  "classIri": "urn:ngm:class:integrated-circuit",
+  "domain": "infrastructure",
+  "definition": "An integrated circuit (IC) is a set of electronic circuits \u2014 transistors, resistors, capacitors and their interconnections \u2014 fabricated as a single monolithic device on a wafer of semiconductor material, usually silicon. By miniaturising and mass-producing complete circuits photolithographically, ICs made computation cheap, fast and reliable, enabling microprocessors, memory, FPGAs and application-specific chips; transistor density doubled roughly every two years in the trend described by Moore's Law, underpinning the whole of modern digital infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cpu-computing",
+        "label": "CPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:semiconductor-manufacturing",
+        "label": "Semiconductor Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:semiconductor",
+        "label": "Semiconductor"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field-Programmable Gate Array"
+      },
+      {
+        "id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "id": "urn:ngm:class:moore-s-law",
+        "label": "Moore's Law"
+      },
+      {
+        "id": "urn:ngm:class:computer-hardware",
+        "label": "Computer Hardware"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "semiconductor-manufacturing",
+      "label": "Semiconductor Manufacturing"
+    },
+    {
+      "slug": "cpu-computing",
+      "label": "CPU Computing"
+    },
+    {
+      "slug": "field-programmable-gate-array",
+      "label": "Field-Programmable Gate Array"
+    }
+  ],
+  "backlinks": []
+}

@@ -58,6 +58,10 @@
       "label": "Assistive Technology Integration"
     },
     {
+      "slug": "inclusive-experience",
+      "label": "Inclusive Experience"
+    },
+    {
       "slug": "xr-accessibility-guideline",
       "label": "XR Accessibility Guideline"
     }

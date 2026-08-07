@@ -91,7 +91,7 @@ public:: true
       {"@id": "urn:ngm:class:calibration", "label": "Calibration"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-card", "label": "Model Card"},
+      {"@id": "urn:ngm:class:model-cards", "label": "Model Card"},
       {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"},
       {"@id": "urn:ngm:class:alignment-evaluation", "label": "Alignment Evaluation"}
     ],

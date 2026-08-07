@@ -43,6 +43,22 @@ alias:: ISO/IEC 23247
   "domain": "standards",
   "maturity": "established",
   "qualityScore": 0.7,
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-metaverse",
+        "label": "Industrial Metaverse"
+      }
+    ]
+  },
   "subClassOf": [
     {
       "@id": "urn:ngm:class:technical-standard",
@@ -93,6 +109,7 @@ alias:: ISO/IEC 23247
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standard]]
+  - related-to:: [[Digital Twin]], [[Smart Manufacturing]], [[Industrial Metaverse]]
 
 - ### Content
   - An ISO/IEC standard, in multiple parts, defining a digital twin framework for manufacturing. It specifies a reference architecture and concepts for digital twins of manufacturing assets and processes.

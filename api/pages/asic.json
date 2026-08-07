@@ -144,6 +144,10 @@
       "label": "Canaan"
     },
     {
+      "slug": "electronic-design-automation",
+      "label": "Electronic Design Automation"
+    },
+    {
       "slug": "micro-bt",
       "label": "MicroBT"
     },
@@ -158,6 +162,10 @@
     {
       "slug": "riot-platforms",
       "label": "Riot Platforms"
+    },
+    {
+      "slug": "semiconductor-industry",
+      "label": "Semiconductor Industry"
     }
   ]
 }

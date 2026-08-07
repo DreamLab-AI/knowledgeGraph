@@ -187,6 +187,10 @@
       "label": "Diffusion Models"
     },
     {
+      "slug": "end-to-end-learning",
+      "label": "End-to-End Learning"
+    },
+    {
       "slug": "fid-benchmark-protocol",
       "label": "FID Benchmark Protocol"
     },

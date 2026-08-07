@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:f899272a64222812d48160e5a2ccb0e67132779ae43b1e3343316173c0bf6ed8",
+  "title": "Probabilistic Modelling",
+  "slug": "probabilistic-modelling",
+  "public": true,
+  "classIri": "urn:ngm:class:probabilistic-modelling",
+  "domain": "machine-learning",
+  "definition": "The practice of representing systems, processes, and observations as probability distributions over possible states rather than as single deterministic values, so that predictions carry calibrated uncertainty. Probabilistic modelling encompasses specifying random variables and their dependencies, choosing priors, performing inference to update beliefs from data, and validating the resulting probabilistic model\u2014underpinning Bayesian statistics, generative machine learning, risk analysis, and scientific simulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computational-modelling",
+      "label": "Computational Modelling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    }
+  ]
+}

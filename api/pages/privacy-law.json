@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:ed8b7d7c189a9531c1db6dedc2466064e7c5894994789c8d5e5c325a8301833e",
+  "title": "Privacy Law",
+  "slug": "privacy-law",
+  "public": true,
+  "classIri": "urn:ngm:class:privacy-law",
+  "domain": "governance",
+  "definition": "The body of constitutional provisions, statutes, regulations, and case law that protects individuals' informational and personal privacy \u2014 governing how organisations and states may collect, process, retain, share, and surveil personal data \u2014 anchored internationally in instruments such as Article 8 of the European Convention on Human Rights and operationalised by data protection regimes including the EU and UK GDPR, the California Consumer Privacy Act, and sectoral statutes, which grant data subjects enforceable rights and impose accountability obligations backed by supervisory authorities and substantial penalties.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:legal-framework",
+      "label": "Legal Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "data-privacy",
+      "label": "Data Privacy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    }
+  ]
+}

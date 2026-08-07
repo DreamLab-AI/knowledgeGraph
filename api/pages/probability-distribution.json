@@ -111,8 +111,16 @@
       "label": "Covariance Matrix"
     },
     {
+      "slug": "random-variable",
+      "label": "Random Variable"
+    },
+    {
       "slug": "sampling",
       "label": "Sampling"
+    },
+    {
+      "slug": "variance",
+      "label": "Variance"
     },
     {
       "slug": "variational-autoencoders",

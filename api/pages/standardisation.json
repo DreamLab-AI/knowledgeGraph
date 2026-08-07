@@ -30,5 +30,10 @@
     "relatedTo": []
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "specification",
+      "label": "Specification"
+    }
+  ]
 }

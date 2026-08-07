@@ -99,6 +99,10 @@
     {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "integrated-circuit",
+      "label": "Integrated Circuit"
     }
   ]
 }

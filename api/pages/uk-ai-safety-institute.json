@@ -125,6 +125,10 @@
     {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "us-ai-safety-institute",
+      "label": "US AI Safety Institute"
     }
   ]
 }

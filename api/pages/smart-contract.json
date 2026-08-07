@@ -1229,6 +1229,10 @@
       "label": "Marketplace"
     },
     {
+      "slug": "mint-burn-mechanism",
+      "label": "Mint-Burn Mechanism"
+    },
+    {
       "slug": "money",
       "label": "Money"
     },
@@ -1455,6 +1459,10 @@
     {
       "slug": "trustless-coordination",
       "label": "Trustless Coordination"
+    },
+    {
+      "slug": "trustless-execution",
+      "label": "Trustless Execution"
     },
     {
       "slug": "uma",

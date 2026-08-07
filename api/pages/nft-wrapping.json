@@ -59,7 +59,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:asset-tokenization",
+        "id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       }
     ],

@@ -79,7 +79,7 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:3d-content-generation",
+        "id": "urn:ngm:class:3-d-content-generation",
         "label": "3D Content Generation"
       }
     ],
@@ -91,7 +91,7 @@
         "label": "Neural Radiance Field"
       },
       {
-        "id": "urn:ngm:class:3d-gaussian-splatting",
+        "id": "urn:ngm:class:3-d-gaussian-splatting",
         "label": "3D Gaussian Splatting"
       },
       {

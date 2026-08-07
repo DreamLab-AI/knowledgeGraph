@@ -52,6 +52,22 @@ public:: true
       "label": "Legal and Regulatory"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cbdc",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ]
+  },
   "quality": 0.6,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",

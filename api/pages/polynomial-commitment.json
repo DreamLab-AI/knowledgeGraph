@@ -97,6 +97,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "kzg-polynomial-commitment",
+      "label": "KZG Polynomial Commitment"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     }

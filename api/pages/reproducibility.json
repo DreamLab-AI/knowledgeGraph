@@ -176,6 +176,10 @@
       "label": "Evaluation benchmarks and leaderboards"
     },
     {
+      "slug": "experiment-tracking",
+      "label": "ML Experiment Tracking"
+    },
+    {
       "slug": "parameter-set",
       "label": "Parameter Set"
     },

@@ -205,10 +205,6 @@
       "label": "Linear Algebra"
     },
     {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
-    },
-    {
       "slug": "multi-agent-orchestration-frameworks",
       "label": "Multi-Agent Orchestration Frameworks"
     },
@@ -227,6 +223,10 @@
     {
       "slug": "set-theory",
       "label": "Set Theory"
+    },
+    {
+      "slug": "spectral-clustering",
+      "label": "Spectral Clustering"
     },
     {
       "slug": "topological-map",

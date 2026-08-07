@@ -156,6 +156,10 @@
       "label": "Customs Trade Facilitation"
     },
     {
+      "slug": "document-processing",
+      "label": "Document Processing"
+    },
+    {
       "slug": "identity-verification",
       "label": "Identity Verification"
     },

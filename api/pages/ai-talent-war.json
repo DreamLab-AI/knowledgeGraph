@@ -252,6 +252,10 @@
     {
       "slug": "ai-talent",
       "label": "AI Talent"
+    },
+    {
+      "slug": "talent-concentration",
+      "label": "Talent Concentration"
     }
   ]
 }

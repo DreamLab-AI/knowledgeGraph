@@ -522,6 +522,10 @@
       "label": "AI Development"
     },
     {
+      "slug": "ai-documentation",
+      "label": "AI Documentation"
+    },
+    {
       "slug": "ai-investment",
       "label": "AI Investment"
     },
@@ -664,6 +668,10 @@
     {
       "slug": "depth-estimation",
       "label": "Depth Estimation"
+    },
+    {
+      "slug": "eu-ai-act-regulatory-instrument-article-53",
+      "label": "EU AI Act Article 53"
     },
     {
       "slug": "feed-forward-network",

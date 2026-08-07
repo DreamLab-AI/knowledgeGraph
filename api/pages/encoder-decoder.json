@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:70bd17f03c822536cb45225cae07a52a9835d57e1d663731c6a433710f85dcaa",
+  "title": "Encoder-Decoder",
+  "slug": "encoder-decoder",
+  "public": true,
+  "classIri": "urn:ngm:class:encoder-decoder",
+  "domain": "machine-learning",
+  "definition": "The encoder-decoder is a neural network architecture pattern in which an encoder maps a variable-length input into an intermediate representation and a decoder generates a variable-length output conditioned on that representation. It underpins sequence-to-sequence learning for machine translation, speech recognition, and speech synthesis, and appears in both recurrent and transformer instantiations, usually augmented with an attention mechanism so the decoder can consult the full encoded input at every generation step rather than a single fixed-size vector.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "sequence-to-sequence-learning",
+      "label": "Sequence To Sequence Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    }
+  ]
+}

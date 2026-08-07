@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:62499fe0ce212413ae4c439105fe92a29a8bd527a58a1fb964dd546cb96732a9",
+  "title": "Model-Based Systems Engineering",
+  "slug": "model-based-systems-engineering",
+  "public": true,
+  "classIri": "urn:ngm:class:model-based-systems-engineering",
+  "domain": "standards",
+  "definition": "A systems engineering methodology that replaces document-centric specification with a coherent, machine-interpretable system model as the authoritative source of requirements, architecture, behaviour, and verification information across the whole lifecycle. Formalised by INCOSE and realised through languages such as SysML, it enables early analysis, simulation, and consistency checking of complex systems, keeping every discipline working against a single shared model rather than divergent documents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:simulation-software",
+        "label": "Simulation Software"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:constraint-based-design",
+        "label": "Constraint Based Design"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "systems-engineering",
+      "label": "Systems Engineering"
+    },
+    {
+      "slug": "simulation-software",
+      "label": "Simulation Software"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    }
+  ]
+}

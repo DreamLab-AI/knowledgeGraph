@@ -96,6 +96,10 @@
       "label": "DAO Tooling"
     },
     {
+      "slug": "digital-public-goods",
+      "label": "Digital Public Goods"
+    },
+    {
       "slug": "quadratic-voting",
       "label": "Quadratic Voting"
     }

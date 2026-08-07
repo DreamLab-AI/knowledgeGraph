@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:f647becefd54a98e87cca6b8dc025d36ef62c8411bdcc03198e227b9f0abd6c2",
+  "title": "Constrained Decoding",
+  "slug": "constrained-decoding",
+  "public": true,
+  "classIri": "urn:ngm:class:constrained-decoding",
+  "domain": "machine-learning",
+  "definition": "A family of inference-time techniques that restrict the token choices of a language model during generation so that output is guaranteed to satisfy formal constraints \u2014 a JSON schema, a context-free grammar, a regular expression, or required lexical content. At each decoding step the sampler masks tokens that would violate the constraint, typically by intersecting the model's next-token distribution with the valid transitions of a compiled automaton, yielding syntactically valid structured output without retraining the model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:text-generation",
+      "label": "Text Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:structured-output",
+        "label": "Structured Output"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "structured-output",
+      "label": "Structured Output"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    }
+  ]
+}

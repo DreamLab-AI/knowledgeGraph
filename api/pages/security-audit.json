@@ -105,7 +105,7 @@
         "label": "NIST Cybersecurity Framework"
       },
       {
-        "id": "urn:ngm:class:soc2",
+        "id": "urn:ngm:class:soc-2",
         "label": "SOC 2"
       }
     ],

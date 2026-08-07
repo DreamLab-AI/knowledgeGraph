@@ -414,6 +414,18 @@
     {
       "slug": "competition-in-ai",
       "label": "Competition in AI"
+    },
+    {
+      "slug": "industrial-strategy",
+      "label": "Industrial Strategy"
+    },
+    {
+      "slug": "talent-concentration",
+      "label": "Talent Concentration"
+    },
+    {
+      "slug": "uk-national-ai-strategy",
+      "label": "UK National AI Strategy"
     }
   ]
 }

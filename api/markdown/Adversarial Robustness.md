@@ -95,7 +95,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:safe-deployment",
+        "@id": "urn:ngm:class:safe-ai-deployment",
         "label": "Safe Deployment"
       }
     ],

@@ -154,6 +154,10 @@
       "label": "Algorithmic Framework"
     },
     {
+      "slug": "backward-chaining",
+      "label": "Backward Chaining"
+    },
+    {
       "slug": "bayes-theorem",
       "label": "Bayes Theorem"
     },
@@ -174,8 +178,16 @@
       "label": "Continuous Batching"
     },
     {
+      "slug": "forward-chaining",
+      "label": "Forward Chaining"
+    },
+    {
       "slug": "knowledge-graphs",
       "label": "Knowledge Graphs"
+    },
+    {
+      "slug": "single-turn-inference",
+      "label": "Single-Turn Inference"
     }
   ]
 }

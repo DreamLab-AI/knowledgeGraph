@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:cdf532fb18386465ce3422fda1b56ccdbeb158baf97c1999801b8b05ed9287df",
+  "title": "Sequence Model",
+  "slug": "sequence-model",
+  "public": true,
+  "classIri": "urn:ngm:class:sequence-model",
+  "domain": "machine-learning",
+  "definition": "Any machine learning model that captures dependencies across ordered data \u2014 text, speech, video frames, genomic strings, time series \u2014 by assigning probabilities to sequences or mapping input sequences to outputs; the family spans n-gram models and hidden Markov models through recurrent networks (LSTM, GRU) to transformers and modern state space models, and underlies language modelling, speech recognition, machine translation and time-series forecasting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hidden-markov-model",
+        "label": "Hidden Markov Model"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-learning-model",
+      "label": "Machine Learning Model"
+    },
+    {
+      "slug": "hidden-markov-model",
+      "label": "Hidden Markov Model"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:c174c798dbc8c186b6b862bddbef4cb35f0468757cace62b4ee82191edf723c8",
+  "title": "Modality-Specific Encoder",
+  "slug": "modality-specific-encoder",
+  "public": true,
+  "classIri": "urn:ngm:class:modality-specific-encoder",
+  "domain": "machine-learning",
+  "definition": "A neural network component within a multimodal architecture that transforms raw input from one particular modality \u2014 text, image, audio, video, depth, or sensor streams \u2014 into a dense embedding using an architecture suited to that modality's structure, such as a Transformer for tokenised text or a Vision Transformer for image patches. The resulting per-modality representations are projected into a shared latent space where fusion, alignment, or cross-modal conditioning can occur.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:encoder",
+      "label": "Encoder"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cross-modal-conditioning",
+        "label": "Cross-Modal Conditioning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "encoder",
+      "label": "Encoder"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    },
+    {
+      "slug": "embedding",
+      "label": "Embedding"
+    },
+    {
+      "slug": "contrastive-learning",
+      "label": "Contrastive Learning"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    }
+  ]
+}

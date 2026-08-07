@@ -30,7 +30,7 @@ alias:: Autonomous Systems
   ],
   "sameAs": [
     {
-      "@id": "urn:ngm:class:autonomous-systems",
+      "@id": "urn:ngm:class:autonomous-system",
       "label": "Autonomous Systems"
     },
     {
@@ -256,7 +256,7 @@ alias:: Autonomous Systems
   - uses:: [[Deep Learning]]
   - dependsOn:: [[Embedded Systems]]
   - dependsOn:: [[Control Theory]]
-  - supports:: [[Human-Robot Interaction]]
+  - supports:: [[Human Robot Interaction]]
   - supports:: [[Multi-Robot Systems]]
   - standardizedBy:: [[SAE Levels of Driving Automation]]
   - standardizedBy:: [[ISO/IEC 42010]]

@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:fdc56f5402d831948931ac49024ed829092e49bbbc04e537a7c112f8ffae0088",
+  "title": "RMSProp",
+  "slug": "rmsprop",
+  "public": true,
+  "classIri": "urn:ngm:class:rmsprop",
+  "domain": "machine-learning",
+  "definition": "A stochastic gradient descent variant, proposed by Geoffrey Hinton in his 2012 Coursera lectures, that divides each parameter's update by the root of an exponentially weighted moving average of its squared gradients, giving every parameter its own adaptive step size; it cured AdaGrad's vanishing learning rate, made recurrent networks practical to train, and supplied the second-moment machinery later absorbed into Adam.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimisation-algorithm",
+      "label": "Optimisation Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:adaptive-learning-rate",
+        "label": "Adaptive Learning Rate"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:momentum",
+        "label": "Momentum"
+      },
+      {
+        "id": "urn:ngm:class:learning-rate",
+        "label": "Learning Rate"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "optimisation-algorithm",
+      "label": "Optimisation Algorithm"
+    },
+    {
+      "slug": "adaptive-learning-rate",
+      "label": "Adaptive Learning Rate"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "Adam Optimiser"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
+      "slug": "adaptive-learning-rate",
+      "label": "Adaptive Learning Rate"
+    }
+  ]
+}

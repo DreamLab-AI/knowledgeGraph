@@ -112,17 +112,13 @@
         "label": "Autonomous Vehicle"
       },
       {
-        "id": "urn:ngm:class:logistics-optimization",
+        "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
-    },
     {
       "slug": "mobile-robot-platform",
       "label": "Mobile Robot Platform"

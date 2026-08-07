@@ -61,6 +61,10 @@
       "label": "Fairness Metrics"
     },
     {
+      "slug": "iso-iec-tr-24028",
+      "label": "ISO/IEC TR 24028"
+    },
+    {
       "slug": "privacy-preserving-data-mining",
       "label": "Privacy Preserving Data Mining"
     }

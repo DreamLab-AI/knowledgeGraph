@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:38cf33a8d922b9cbd748daf817090d6821d3535b8dd55501d593222120604c0e",
+  "title": "Pooling Layer",
+  "slug": "pooling-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:pooling-layer",
+  "domain": "machine-learning",
+  "definition": "A parameter-free neural network layer that summarises local regions or whole sets of feature activations into a single value each \u2014 typically the maximum or the mean \u2014 thereby reducing spatial resolution, enlarging receptive fields, and conferring a degree of translation invariance in convolutional networks, or collapsing token sequences into fixed-length vectors in embedding models. Pooling trades fine positional detail for compactness and robustness, and its choice (max, average, global, attention-weighted) materially affects what a representation preserves.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:feature-map",
+        "label": "Feature Map"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "embedding-model",
+      "label": "Embedding Model"
+    },
+    {
+      "slug": "feature-map",
+      "label": "Feature Map"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "feature-map",
+      "label": "Feature Map"
+    }
+  ]
+}

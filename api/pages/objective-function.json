@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       },
       {
@@ -90,7 +90,7 @@
         "label": "Convex Optimisation"
       },
       {
-        "id": "urn:ngm:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ]

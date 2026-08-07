@@ -87,6 +87,10 @@
       "label": "Agent Orchestrator"
     },
     {
+      "slug": "commit",
+      "label": "Commit"
+    },
+    {
       "slug": "multi-agent-orchestration-frameworks",
       "label": "Multi-Agent Orchestration Frameworks"
     }

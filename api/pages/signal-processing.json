@@ -229,6 +229,10 @@
       "label": "Motion Capture"
     },
     {
+      "slug": "music-information-retrieval",
+      "label": "Music Information Retrieval"
+    },
+    {
       "slug": "patent",
       "label": "Patent"
     },

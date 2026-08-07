@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:85ea3acaac2c738d3f0fa28535d9be65810678dc2864d9836d1aa7848f4d9de8",
+  "title": "Semiconductor Industry",
+  "slug": "semiconductor-industry",
+  "public": true,
+  "classIri": "urn:ngm:class:semiconductor-industry",
+  "domain": "supply-chain",
+  "definition": "The global economic sector that designs, fabricates, packages, tests, and supplies integrated circuits and related components. It spans fabless design houses, foundries, integrated device manufacturers, equipment and materials suppliers, and EDA vendors in a deeply specialised international supply chain whose output underpins computing, communications, automotive, and defence systems, and whose leading-edge capacity has become a strategic chokepoint amid the accelerating hardware demands of artificial intelligence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technology-ecosystem",
+      "label": "Technology Ecosystem"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:semiconductor",
+        "label": "Semiconductor"
+      },
+      {
+        "id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:moore-s-law",
+        "label": "Moore's Law"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "technology-ecosystem",
+      "label": "Technology Ecosystem"
+    },
+    {
+      "slug": "semiconductor",
+      "label": "Semiconductor"
+    },
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    },
+    {
+      "slug": "ai-hardware",
+      "label": "AI Hardware"
+    },
+    {
+      "slug": "asic",
+      "label": "ASIC"
+    },
+    {
+      "slug": "moore-s-law",
+      "label": "Moore's Law"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

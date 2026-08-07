@@ -333,6 +333,10 @@
       "label": "Training Data"
     },
     {
+      "slug": "training-pipeline",
+      "label": "Training Pipeline"
+    },
+    {
       "slug": "ai-core-concepts",
       "label": "ai core concepts"
     }

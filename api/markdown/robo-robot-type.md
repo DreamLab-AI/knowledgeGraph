@@ -50,7 +50,7 @@ public:: true
       {"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"},
       {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
       {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"},
-      {"@id": "urn:ngm:class:robo-human-robot-interaction", "label": "Human-Robot Interaction"}
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
     ]
   },
   "qualityScore": 0.8,

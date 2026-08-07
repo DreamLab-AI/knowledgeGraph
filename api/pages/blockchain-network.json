@@ -881,10 +881,6 @@
       "label": "Liquidity Provision"
     },
     {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
-    },
-    {
       "slug": "micropayments",
       "label": "Micropayments"
     },

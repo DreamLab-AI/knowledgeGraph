@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -32,7 +32,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -98,6 +98,10 @@
     {
       "slug": "beam-search",
       "label": "Beam Search"
+    },
+    {
+      "slug": "branch-and-bound",
+      "label": "Branch and Bound"
     },
     {
       "slug": "combinatorial-optimisation",

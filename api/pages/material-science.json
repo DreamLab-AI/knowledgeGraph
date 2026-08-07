@@ -128,6 +128,10 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
       "slug": "circular-economy",
       "label": "Circular Economy"
     },

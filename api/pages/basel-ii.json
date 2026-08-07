@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:133ce64ab409624af02d579cc39ed900d2b0eeacc24f5190d1ea60aa3ece822a",
+  "title": "Basel II",
+  "slug": "basel-ii",
+  "public": true,
+  "classIri": "urn:ngm:class:basel-ii",
+  "domain": "finance",
+  "definition": "Basel II is the second of the Basel Accords, issued by the Basel Committee on Banking Supervision in 2004 to refine the international framework for bank capital adequacy. It organised prudential regulation around three pillars: minimum capital requirements made more risk-sensitive through standardised and internal-ratings-based approaches to credit risk plus explicit treatment of operational risk; supervisory review of institutions' own capital adequacy assessments; and market discipline through enhanced disclosure. Distinct from both its predecessor Basel I and its successor Basel III, Basel II is a specific accord version; the 2007-2009 financial crisis exposed its underweighting of liquidity and leverage, prompting the tighter Basel III reforms that superseded and contrast with it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:basel-accords",
+      "label": "Basel Accords"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:banking-regulation",
+        "label": "Banking Regulation"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "basel-accords",
+      "label": "Basel Accords"
+    },
+    {
+      "slug": "basel-iii",
+      "label": "Basel III"
+    },
+    {
+      "slug": "basel-committee",
+      "label": "Basel Committee"
+    }
+  ],
+  "backlinks": []
+}

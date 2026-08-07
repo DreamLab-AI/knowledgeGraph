@@ -189,6 +189,10 @@
   ],
   "backlinks": [
     {
+      "slug": "fragment-shading",
+      "label": "Fragment Shading"
+    },
+    {
       "slug": "game-engine",
       "label": "Game Engine"
     },

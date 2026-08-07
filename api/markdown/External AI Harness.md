@@ -95,7 +95,7 @@ public:: true
       {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
       {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"},
       {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:grpc", "label": "gRPC"},
+      {"@id": "urn:ngm:class:g-rpc", "label": "gRPC"},
       {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},
       {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
       {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},

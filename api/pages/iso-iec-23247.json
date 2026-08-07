@@ -27,7 +27,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:industrial-metaverse",
+        "label": "Industrial Metaverse"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -39,10 +52,6 @@
     {
       "slug": "digital-twin-interop-protocol",
       "label": "Digital Twin Interop Protocol"
-    },
-    {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
     }
   ]
 }

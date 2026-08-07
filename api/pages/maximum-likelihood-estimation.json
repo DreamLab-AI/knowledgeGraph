@@ -104,10 +104,6 @@
       "label": "Cross-Entropy Loss"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     }

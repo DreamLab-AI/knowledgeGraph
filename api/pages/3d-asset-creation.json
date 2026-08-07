@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:c288952e16f02f114d1fea7ee6a666c0356f9ce884955f1ac96da9673fad0afc",
+  "title": "3D Asset Creation",
+  "slug": "3d-asset-creation",
+  "public": true,
+  "classIri": "urn:ngm:class:3d-asset-creation",
+  "domain": "metaverse",
+  "definition": "The production of three-dimensional digital assets\u2014models, characters, environments, props, and their materials, textures, rigs, and animations\u2014ready for use in games, film, extended reality, simulation, and digital-twin applications. 3D asset creation is the spatial specialisation of general asset creation, spanning manual modelling and sculpting, photogrammetry and scanning, procedural generation, and increasingly generative AI pipelines that produce textured meshes from text or image prompts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asset-creation",
+      "label": "Asset Creation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modelling"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-creation",
+      "label": "Asset Creation"
+    },
+    {
+      "slug": "3d-modelling",
+      "label": "3D Modelling"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "Creative Tools"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    }
+  ]
+}

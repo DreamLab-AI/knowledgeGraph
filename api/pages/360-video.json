@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:b0b671b647f173818c9b1ed7fd3026f3c7e5d1420f8502d76c23c5ce59bae03c",
+  "title": "360 Video",
+  "slug": "360-video",
+  "public": true,
+  "classIri": "urn:ngm:class:360-video",
+  "domain": "spatial-computing",
+  "definition": "A spherical video format captured with omnidirectional camera rigs that records the full 360-degree field of view around a single vantage point, allowing viewers to look in any direction during playback on headsets, browsers, or mobile devices. Because the footage is fixed to the capture position, it offers rotational (three-degrees-of-freedom) immersion but no positional movement, distinguishing it from volumetric formats that reconstruct scene geometry.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:immersive-media",
+      "label": "Immersive Media"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vr-experiences",
+        "label": "VR Experiences"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:volumetric-video",
+        "label": "Volumetric Video"
+      },
+      {
+        "id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "immersive-media",
+      "label": "Immersive Media"
+    },
+    {
+      "slug": "vr-experiences",
+      "label": "VR Experiences"
+    },
+    {
+      "slug": "volumetric-video",
+      "label": "Volumetric Video"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    }
+  ]
+}

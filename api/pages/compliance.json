@@ -198,6 +198,10 @@
       "label": "Self-Regulation"
     },
     {
+      "slug": "taxation",
+      "label": "Taxation"
+    },
+    {
       "slug": "x402-and-l402-payment-protocols",
       "label": "x402 and l402 payment protocols"
     },

@@ -8,7 +8,7 @@
   "definition": "Fractional ownership is a model in which a high-value asset is divided into discrete shares that multiple parties hold simultaneously, each acquiring proportional economic rights and, in some structures, governance rights over the underlying asset. Historically applied to aircraft, real estate, and fine art through legal syndication, it has been radically simplified by blockchain-based tokenisation, which encodes shares as on-chain tokens transferable without traditional intermediaries. Fractional ownership democratises access to asset classes previously restricted to institutional or wealthy investors. It raises important questions of regulatory classification, valuation, and liquidity management.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:asset-tokenization",
+      "id": "urn:ngm:class:asset-tokenisation",
       "label": "Asset Tokenization"
     }
   ],
@@ -115,7 +115,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:asset-tokenization",
+        "id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {

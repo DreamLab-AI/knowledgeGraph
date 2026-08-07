@@ -1,74 +1,37 @@
 {
-  "id": "urn:visionflow:page:c0a8c8c3e91e88034834aba3b11c78a5710ce51b3c7204288c760f0dc6149e40",
-  "title": "Multimodal AI",
+  "id": "urn:visionflow:page:a5e260959ef70939963534d42bc6495d84887bba997298c73fe66555a6ea44ac",
+  "title": "Multimodal Artificial Intelligence",
   "slug": "multimodal-ai",
   "public": true,
-  "classIri": "urn:ngm:class:multimodal-ai-architecture-ai",
+  "classIri": "urn:ngm:class:multimodal-ai",
   "domain": "artificial-intelligence",
-  "definition": "Multimodal AI refers to machine learning systems that process and integrate information from multiple data modalities \u2014 including text, images, audio, and video \u2014 simultaneously to produce contextually richer outputs than single-modality systems. These architectures employ specialised neural network fusion techniques to replicate the human brain's capacity to synthesise diverse sensory inputs, enabling applications in healthcare diagnostics, human-computer interaction, and cross-modal content generation.",
+  "definition": "Artificial intelligence systems that jointly perceive, reason over and generate content across multiple data modalities \u2014 text, images, audio, video, depth and sensor streams \u2014 by learning shared or aligned representations, enabling capabilities such as image captioning, visual question answering, text-to-image and text-to-audio generation, and speech-driven interaction that no single-modality model can provide on its own.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.75,
-  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
-      },
-      {
-        "id": "urn:ngm:class:speech-recognition",
-        "label": "Speech Recognition"
-      },
-      {
-        "id": "urn:ngm:class:multimodal-ai-architecture-understanding",
-        "label": "Multimodal Understanding"
-      }
-    ],
+    "hasPart": [],
     "requires": [],
-    "enables": [
+    "enables": [],
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:image-generation",
-        "label": "Image Generation"
-      },
-      {
-        "id": "urn:ngm:class:text-to-image",
-        "label": "Text-to-Image"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
-    "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:transformer-architecture",
-        "label": "Transformer Architecture"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:feature-extraction",
-        "label": "Feature Extraction"
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
       }
     ],
     "supports": [],
@@ -76,19 +39,27 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ]
   },
   "wikilinks": [
     {
-      "slug": "metaverse",
-      "label": "MetaverseDomain"
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
     }
   ],
   "backlinks": [

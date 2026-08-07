@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:ebe1f2c17db8aca2b958adc7b85dac45e5c184082dbc5386b95643de68e021db",
+  "title": "Decentralized Key Storage",
+  "slug": "decentralized-key-storage",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralized-key-storage",
+  "domain": "security",
+  "definition": "Decentralized key storage is the practice of distributing a cryptographic key across multiple independent holders or locations so that no single party ever possesses the whole key, and no single point of compromise or failure can expose or destroy it. Typically realised with Shamir secret sharing or threshold cryptography, the key is split into shares such that a defined quorum reconstructs or jointly uses it while any smaller subset reveals nothing. This is distinct from decentralised data storage \u2014 which spreads arbitrary files across a network such as IPFS \u2014 because the object being protected is the secret itself and the security goal is quorum-controlled reconstruction rather than content availability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:key-management",
+      "label": "Key Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shamir-secret-sharing",
+        "label": "Shamir Secret Sharing"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "shamir-secret-sharing",
+      "label": "Shamir Secret Sharing"
+    },
+    {
+      "slug": "threshold-cryptography",
+      "label": "Threshold Cryptography"
+    }
+  ],
+  "backlinks": []
+}

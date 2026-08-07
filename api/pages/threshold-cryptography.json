@@ -154,6 +154,10 @@
       "label": "Cryptographic System"
     },
     {
+      "slug": "decentralized-key-storage",
+      "label": "Decentralized Key Storage"
+    },
+    {
       "slug": "distributed-ledger",
       "label": "Distributed Ledger"
     },

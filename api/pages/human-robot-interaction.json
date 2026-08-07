@@ -8,8 +8,8 @@
   "definition": "Interdisciplinary field studying how humans and robots communicate, collaborate, and interact safely and effectively in shared physical and virtual spaces. HRI combines robotics engineering, AI, human factors engineering, and cognitive science to design systems with natural interaction modalities including gesture recognition, natural language processing, and haptic feedback.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-human-robot-interaction",
-      "label": "Human-Robot Interaction"
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
   "entityType": "Class",
@@ -28,6 +28,34 @@
       {
         "id": "urn:ngm:class:teach-pendant",
         "label": "Teach Pendant"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
       }
     ],
     "requires": [
@@ -124,6 +152,22 @@
       {
         "id": "urn:ngm:class:intent-recognition",
         "label": "Intent Recognition"
+      },
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      },
+      {
+        "id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
       }
     ]
   },

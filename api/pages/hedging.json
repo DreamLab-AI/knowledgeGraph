@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:c3cadcbd270ef98293f5fc757d31b402ce3282bbdbba13751c01d1c466ceccd2",
+  "title": "Hedging",
+  "slug": "hedging",
+  "public": true,
+  "classIri": "urn:ngm:class:hedging",
+  "domain": "finance",
+  "definition": "A risk management practice in which an exposure to adverse price, rate, or credit movements is deliberately offset by taking a counterbalancing position \u2014 typically in derivatives such as futures, options, and swaps, or in correlated instruments \u2014 so that losses on the primary holding are compensated by gains on the hedge; the aim is not profit but the reduction of variance, exchanging upside potential for predictability of outcomes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:synthetic-asset",
+        "label": "Synthetic Asset"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      },
+      {
+        "id": "urn:ngm:class:exchange-rate",
+        "label": "Exchange Rate"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "market-making",
+      "label": "Market Making"
+    },
+    {
+      "slug": "synthetic-asset",
+      "label": "Synthetic Asset"
+    },
+    {
+      "slug": "exchange-rate",
+      "label": "Exchange Rate"
+    }
+  ],
+  "backlinks": []
+}

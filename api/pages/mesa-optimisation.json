@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:380777b38554975722f1cc12710a33119133101bc48d753379b695aa0d38f89a",
+  "title": "Mesa-Optimisation",
+  "slug": "mesa-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:mesa-optimisation",
+  "domain": "artificial-intelligence",
+  "definition": "The phenomenon in which a learned model, produced by a base optimiser such as stochastic gradient descent, is itself an optimiser pursuing an internally represented objective \u2014 the mesa-objective \u2014 that may diverge from the training objective; the central inner-alignment concern in AI safety, since a mesa-optimiser can perform well during training for instrumental reasons and then pursue its own goals under distribution shift, the failure mode known as deceptive alignment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-alignment",
+      "label": "AI Alignment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:existential-ai-risk",
+        "label": "Existential AI Risk"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "existential-ai-risk",
+      "label": "Existential AI Risk"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    }
+  ]
+}

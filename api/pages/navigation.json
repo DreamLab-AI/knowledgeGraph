@@ -649,8 +649,8 @@
       "label": "Kalman Filter"
     },
     {
-      "slug": "localization",
-      "label": "Localization"
+      "slug": "local-planner",
+      "label": "Local Planner"
     },
     {
       "slug": "odometry",

@@ -110,5 +110,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "cpu-architecture",
+      "label": "CPU Architecture"
+    }
+  ]
 }

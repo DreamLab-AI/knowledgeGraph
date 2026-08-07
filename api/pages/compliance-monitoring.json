@@ -834,6 +834,10 @@
       "label": "Call Centres"
     },
     {
+      "slug": "case-management-system",
+      "label": "Case Management System"
+    },
+    {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
     },
@@ -856,6 +860,10 @@
     {
       "slug": "etsi-domain-governance-and-compliance",
       "label": "ETSI Domain: Governance & Compliance"
+    },
+    {
+      "slug": "governance-risk-compliance",
+      "label": "Governance Risk Compliance"
     },
     {
       "slug": "governance-structure",

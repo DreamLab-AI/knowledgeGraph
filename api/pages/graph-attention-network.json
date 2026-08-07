@@ -108,6 +108,10 @@
     {
       "slug": "community-detection",
       "label": "Community Detection"
+    },
+    {
+      "slug": "graph-convolutional-network",
+      "label": "Graph Convolutional Network"
     }
   ]
 }

@@ -150,6 +150,10 @@
       "label": "AI Audit"
     },
     {
+      "slug": "ai-documentation",
+      "label": "AI Documentation"
+    },
+    {
       "slug": "ai-impact-assessment",
       "label": "AI Impact Assessment"
     },
@@ -212,6 +216,10 @@
     {
       "slug": "esg",
       "label": "ESG"
+    },
+    {
+      "slug": "eu-ai-act-regulatory-instrument-article-53",
+      "label": "EU AI Act Article 53"
     },
     {
       "slug": "ethical-ai",

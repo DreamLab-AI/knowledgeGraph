@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:4c3f175e6782cb73c6682c03a7c422143c8854be9c7b0906f1442ecdcc283545",
+  "title": "Voting Power",
+  "slug": "voting-power",
+  "public": true,
+  "classIri": "urn:ngm:class:voting-power",
+  "domain": "governance",
+  "definition": "Voting power is the quantified influence a participant can exert over a collective decision, expressed as the weight their ballot carries relative to all eligible ballots. In token-based governance systems it is typically proportional to the number of governance tokens held, delegated, or staked at a given snapshot block, though alternative schemes such as quadratic voting, reputation weighting, and one-person-one-vote deliberately decouple influence from raw holdings to resist plutocratic capture.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-governance",
+        "label": "Snapshot Governance"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "on-chain-governance",
+      "label": "On-chain Governance"
+    },
+    {
+      "slug": "snapshot-governance",
+      "label": "Snapshot Governance"
+    },
+    {
+      "slug": "quorum",
+      "label": "Quorum"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

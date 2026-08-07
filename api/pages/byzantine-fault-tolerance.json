@@ -270,6 +270,10 @@
       "label": "Lightning and Similar L2"
     },
     {
+      "slug": "liveness",
+      "label": "Liveness"
+    },
+    {
       "slug": "practical-byzantine-fault-tolerance",
       "label": "Practical Byzantine Fault Tolerance"
     },

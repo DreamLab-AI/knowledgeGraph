@@ -110,6 +110,10 @@
       "label": "Affective Computing"
     },
     {
+      "slug": "dataset-curation",
+      "label": "Dataset Curation"
+    },
+    {
       "slug": "dataset",
       "label": "Dataset"
     }

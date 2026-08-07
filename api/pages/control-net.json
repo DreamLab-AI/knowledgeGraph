@@ -401,6 +401,10 @@
       "label": "comfy-ui-for-fashion-and-brands"
     },
     {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

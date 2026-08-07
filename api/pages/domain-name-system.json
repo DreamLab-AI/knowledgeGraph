@@ -104,5 +104,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "resolver",
+      "label": "Resolver"
+    }
+  ]
 }

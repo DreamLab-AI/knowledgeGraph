@@ -127,6 +127,14 @@
     {
       "slug": "california-ai-bill",
       "label": "California AI bill"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "risk-classification",
+      "label": "Risk Classification"
     }
   ]
 }

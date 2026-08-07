@@ -165,6 +165,10 @@
       "label": "Interface"
     },
     {
+      "slug": "openmp",
+      "label": "OpenMP"
+    },
+    {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
     },

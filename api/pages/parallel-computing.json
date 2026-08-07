@@ -162,6 +162,10 @@
       "label": "Agent-Based Models"
     },
     {
+      "slug": "cpu-architecture",
+      "label": "CPU Architecture"
+    },
+    {
       "slug": "compute-shader",
       "label": "Compute Shader"
     },

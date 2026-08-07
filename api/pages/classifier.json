@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:fe1991a9d8b6abd7ff7c58d5e22b4538a75dadae9f33dcca784e7a87c2d0f6ae",
+  "title": "Classifier",
+  "slug": "classifier",
+  "public": true,
+  "classIri": "urn:ngm:class:classifier",
+  "domain": "machine-learning",
+  "definition": "A model or algorithm that assigns input instances to one of a finite set of discrete categories, typically by learning a decision function from labelled training data. Classifiers range from linear models (logistic regression, linear SVMs) through tree ensembles to deep neural networks, and most output class probabilities or scores that a decision threshold converts into hard labels. Their performance is characterised through confusion-matrix quantities such as true and false positives, precision, recall, and ROC analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-model",
+      "label": "AI Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:classification-threshold",
+        "label": "Classification Threshold"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "classification-threshold",
+      "label": "Classification Threshold"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    }
+  ]
+}

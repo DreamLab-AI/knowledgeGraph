@@ -65,7 +65,7 @@ alias:: RGB-Protocol
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {
@@ -162,7 +162,7 @@ alias:: RGB-Protocol
 ```
 
 - ### Definition
-  - RGB Protocol is a [[Client-Side Validation]] smart-contract system anchored to the [[Bitcoin Network]] via [[Single-Use Seal]] commitments on [[UTXO Model]] outputs, enabling private, scalable [[Asset Tokenization]], [[Smart Contract]] execution, and [[Non-Fungible Token]] issuance without exposing contract state on-chain. It operates as a genuine [[Layer 2 Scaling]] solution when combined with the [[Lightning Network]], inheriting Bitcoin's security model while delivering programmability and confidentiality that purely on-chain designs cannot achieve.
+  - RGB Protocol is a [[Client-Side Validation]] smart-contract system anchored to the [[Bitcoin Network]] via [[Single-Use Seal]] commitments on [[UTXO Model]] outputs, enabling private, scalable [[Asset Tokenisation]], [[Smart Contract]] execution, and [[Non-Fungible Token]] issuance without exposing contract state on-chain. It operates as a genuine [[Layer 2 Scaling]] solution when combined with the [[Lightning Network]], inheriting Bitcoin's security model while delivering programmability and confidentiality that purely on-chain designs cannot achieve.
 
 - ### Overview
   - RGB Protocol addresses a fundamental limitation of blockchain-based smart contracts: the trade-off between on-chain transparency and scalability. Traditional platforms such as [[Ethereum Smart Contract]] systems publish all contract state publicly, creating privacy risks and throughput constraints. RGB inverts this model — only cryptographic commitment hashes are anchored to Bitcoin transactions; the actual contract state lives in client-held data structures validated locally.
@@ -205,7 +205,7 @@ alias:: RGB-Protocol
   - **Stablecoin Issuance on Bitcoin**
     - RGB enables fiat-backed stablecoins (e.g., RGB20 tokens pegged to USD or EUR) settled on Bitcoin and transferred via [[Lightning Network]], without requiring a separate blockchain. Bitfinex has explored USDt issuance on RGB.
   - **Security Token Offerings**
-    - [[Asset Tokenization]] of equity, bonds, and real-world assets benefits from RGB's privacy properties — investors' holdings are not publicly enumerable on-chain.
+    - [[Asset Tokenisation]] of equity, bonds, and real-world assets benefits from RGB's privacy properties — investors' holdings are not publicly enumerable on-chain.
   - **NFT and Digital Collectibles**
     - RGB21 supports non-fungible assets with royalty enforcement and media attachment metadata, providing [[Non-Fungible Token]] capabilities anchored to Bitcoin's security model.
   - **Decentralised Finance on Bitcoin**
@@ -222,7 +222,7 @@ alias:: RGB-Protocol
   - uses:: [[Cryptographic Commitment]]
   - uses:: [[Single-Use Seal]]
   - uses:: [[AluVM]]
-  - enables:: [[Asset Tokenization]]
+  - enables:: [[Asset Tokenisation]]
   - enables:: [[Smart Contract]]
   - enables:: [[Layer 2 Scaling]]
   - enables:: [[Non-Fungible Token]]

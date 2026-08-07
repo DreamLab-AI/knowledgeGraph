@@ -148,6 +148,14 @@
       "label": "API Gateway"
     },
     {
+      "slug": "api-lifecycle",
+      "label": "API Lifecycle"
+    },
+    {
+      "slug": "api-monetisation",
+      "label": "API Monetisation"
+    },
+    {
       "slug": "blockchain-as-a-service",
       "label": "Blockchain As A Service"
     },

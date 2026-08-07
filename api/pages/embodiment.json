@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:5b42a56da776ea2d851cb6fb15c4180ccd54b9252c7afbe94d0ee4700bba079a",
+  "title": "Embodiment",
+  "slug": "embodiment",
+  "public": true,
+  "classIri": "urn:ngm:class:embodiment",
+  "domain": "spatial-computing",
+  "definition": "The sense of inhabiting a body \u2014 in immersive systems, the subjective experience that a virtual body or avatar is one's own, arising from synchronised visuomotor and multisensory feedback and decomposable into self-location, agency, and body ownership; a foundational construct for presence, social VR, telepresence, and embodied theories of cognition.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:embodied-cognition",
+      "label": "Embodied Cognition"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:proprioception",
+        "label": "Proprioception"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "id": "urn:ngm:class:flow-state",
+        "label": "Flow State"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "embodied-cognition",
+      "label": "Embodied Cognition"
+    },
+    {
+      "slug": "presence",
+      "label": "Presence"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "proprioception",
+      "label": "Proprioception"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "presence",
+      "label": "Presence"
+    }
+  ]
+}

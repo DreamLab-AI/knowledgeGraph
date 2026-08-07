@@ -105,6 +105,10 @@
     {
       "slug": "coreference-resolution",
       "label": "Coreference Resolution"
+    },
+    {
+      "slug": "data-mining",
+      "label": "Data Mining"
     }
   ]
 }

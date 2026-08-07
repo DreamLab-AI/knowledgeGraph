@@ -721,12 +721,20 @@
       "label": "Hand Tracking"
     },
     {
+      "slug": "heatmap-regression",
+      "label": "Heatmap Regression"
+    },
+    {
       "slug": "lens-and-camera-calibration",
       "label": "Lens and Camera Calibration"
     },
     {
       "slug": "motion-capture",
       "label": "Motion Capture"
+    },
+    {
+      "slug": "rtmpose",
+      "label": "RTMPose"
     },
     {
       "slug": "slam",

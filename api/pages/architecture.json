@@ -377,5 +377,10 @@
       "label": "Responsible AI"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "single-agent-system",
+      "label": "Single-Agent System"
+    }
+  ]
 }

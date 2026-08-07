@@ -182,6 +182,10 @@
       "label": "IBM TrueNorth"
     },
     {
+      "slug": "integrated-circuit",
+      "label": "Integrated Circuit"
+    },
+    {
       "slug": "intel-sgx",
       "label": "Intel SGX"
     },
@@ -204,6 +208,10 @@
     {
       "slug": "physical-hardware",
       "label": "Physical Hardware"
+    },
+    {
+      "slug": "server",
+      "label": "Server"
     },
     {
       "slug": "tee",

@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:118963547c211f67bf3006db1ba8993b1253bb2a44ea919a9af55cd73949009f",
+  "title": "Normal Mapping",
+  "slug": "normal-mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:normal-mapping",
+  "domain": "spatial-computing",
+  "definition": "A real-time rendering technique that fakes fine surface detail by storing perturbed surface normals in a texture and using them, rather than the interpolated geometric normals, during per-pixel lighting. Detail sculpted on a high-polygon model is baked into a tangent-space normal map applied to a low-polygon mesh, so bumps, scratches, and seams respond correctly to moving lights without adding geometry \u2014 a cornerstone of the game-asset pipeline and physically based rendering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:texture-mapping",
+      "label": "Texture Mapping"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:surface-normal",
+        "label": "Surface Normal"
+      },
+      {
+        "id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "texture-mapping",
+      "label": "Texture Mapping"
+    },
+    {
+      "slug": "surface-normal",
+      "label": "Surface Normal"
+    },
+    {
+      "slug": "pixel-shader",
+      "label": "Pixel Shader"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "pixel-shader",
+      "label": "Pixel Shader"
+    }
+  ]
+}

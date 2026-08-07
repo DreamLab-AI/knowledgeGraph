@@ -58,6 +58,10 @@
       "label": "Common Crawl"
     },
     {
+      "slug": "dataset-curation",
+      "label": "Dataset Curation"
+    },
+    {
       "slug": "dataset",
       "label": "Dataset"
     },

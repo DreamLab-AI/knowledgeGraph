@@ -141,6 +141,10 @@
     {
       "slug": "money",
       "label": "Money"
+    },
+    {
+      "slug": "world-trade-organization",
+      "label": "World Trade Organization"
     }
   ]
 }

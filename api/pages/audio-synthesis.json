@@ -369,6 +369,10 @@
       "label": "Diffusion Models"
     },
     {
+      "slug": "neural-vocoder",
+      "label": "Neural Vocoder"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
     }

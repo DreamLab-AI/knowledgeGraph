@@ -177,6 +177,10 @@
     {
       "slug": "task-planning",
       "label": "Task Planning"
+    },
+    {
+      "slug": "utility-ai",
+      "label": "Utility AI"
     }
   ]
 }

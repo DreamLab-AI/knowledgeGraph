@@ -102,6 +102,10 @@
     {
       "slug": "identity-management-system",
       "label": "Identity Management System"
+    },
+    {
+      "slug": "zero-trust",
+      "label": "Zero Trust"
     }
   ]
 }

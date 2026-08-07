@@ -205,6 +205,10 @@
       "label": "ONTOLOGY_TECHNICAL_DETAILS"
     },
     {
+      "slug": "software-system",
+      "label": "Software System"
+    },
+    {
       "slug": "sovereign-mesh",
       "label": "Sovereign Mesh"
     },

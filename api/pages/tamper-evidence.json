@@ -95,6 +95,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "tamper-resistance",
+      "label": "Tamper Resistance"
+    },
+    {
       "slug": "virtual-notary-service",
       "label": "Virtual Notary Service"
     }

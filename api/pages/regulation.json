@@ -172,12 +172,20 @@
       "label": "Cross Border Compliance"
     },
     {
+      "slug": "cryptocurrency-regulation",
+      "label": "Cryptocurrency Regulation"
+    },
+    {
       "slug": "dataset",
       "label": "Dataset"
     },
     {
       "slug": "decision-engine",
       "label": "Decision Engine"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
     },
     {
       "slug": "economics",

@@ -144,6 +144,10 @@
       "label": "Digital Asset Trading"
     },
     {
+      "slug": "hedging",
+      "label": "Hedging"
+    },
+    {
       "slug": "liquidity-provision",
       "label": "Liquidity Provision"
     },

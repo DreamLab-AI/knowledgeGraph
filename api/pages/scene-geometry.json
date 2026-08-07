@@ -118,6 +118,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "geometry",
+      "label": "Geometry"
+    },
+    {
       "slug": "ray-tracing",
       "label": "Ray Tracing"
     }

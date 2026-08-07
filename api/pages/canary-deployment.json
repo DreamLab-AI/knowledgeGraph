@@ -110,6 +110,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ci-cd",
+      "label": "CI/CD"
+    },
+    {
       "slug": "continuous-training",
       "label": "Continuous Training"
     },

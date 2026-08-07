@@ -78,7 +78,7 @@ public:: true
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
+      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"},
       {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
       {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"},

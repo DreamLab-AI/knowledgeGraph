@@ -98,7 +98,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:arcface",
+        "id": "urn:ngm:class:arc-face",
         "label": "ArcFace"
       },
       {
@@ -187,6 +187,10 @@
     {
       "slug": "facial-action-coding-system",
       "label": "Facial Action Coding System"
+    },
+    {
+      "slug": "iris-recognition",
+      "label": "Iris Recognition"
     },
     {
       "slug": "jumio",

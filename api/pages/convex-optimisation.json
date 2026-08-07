@@ -261,6 +261,14 @@
     {
       "slug": "model-based-control",
       "label": "Model Based Control"
+    },
+    {
+      "slug": "non-convex-optimisation",
+      "label": "Non-Convex Optimisation"
+    },
+    {
+      "slug": "stochastic-optimisation",
+      "label": "Stochastic Optimisation"
     }
   ]
 }

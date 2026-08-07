@@ -1118,6 +1118,10 @@
       "label": "Attribute Sharing"
     },
     {
+      "slug": "did-controller",
+      "label": "DID Controller"
+    },
+    {
       "slug": "did",
       "label": "DID"
     },

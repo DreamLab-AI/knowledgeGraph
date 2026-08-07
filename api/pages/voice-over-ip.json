@@ -52,7 +52,7 @@
         "label": "Infrastructure"
       },
       {
-        "id": "urn:ngm:class:iot-infrastructure",
+        "id": "urn:ngm:class:io-t-infrastructure",
         "label": "IoT Infrastructure"
       }
     ],

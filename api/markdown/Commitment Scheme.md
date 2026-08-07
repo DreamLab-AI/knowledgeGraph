@@ -92,7 +92,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:zksnark",
+        "@id": "urn:ngm:class:zk-snark",
         "label": "zkSNARK"
       },
       {

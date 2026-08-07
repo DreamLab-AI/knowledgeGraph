@@ -155,8 +155,16 @@
       "label": "Blockchain Scalability"
     },
     {
+      "slug": "image-compression",
+      "label": "Image Compression"
+    },
+    {
       "slug": "information-theory",
       "label": "Information Theory"
+    },
+    {
+      "slug": "lossy-compression",
+      "label": "Lossy Compression"
     }
   ]
 }

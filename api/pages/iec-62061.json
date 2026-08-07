@@ -115,6 +115,10 @@
     {
       "slug": "robot-standard",
       "label": "Robot Standard"
+    },
+    {
+      "slug": "safety-instrumented-system",
+      "label": "Safety Instrumented System"
     }
   ]
 }

@@ -1,4 +1,5 @@
 public:: true
+alias:: Asset Tokenization, asset-tokenization
 
 # asset tokenisation
 ```json-ld
@@ -44,6 +45,10 @@ public:: true
     {
       "@id": "urn:ngm:class:security-token-offering",
       "label": "Security Token Offering"
+    },
+    {
+      "@id": "urn:ngm:class:tokenization-of-assets",
+      "label": "Tokenization of Assets"
     }
   ],
   "relations": {
@@ -63,6 +68,10 @@ public:: true
       {
         "@id": "urn:ngm:class:non-fungible-token",
         "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
       }
     ],
     "requires": [
@@ -99,6 +108,10 @@ public:: true
       {
         "@id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
       }
     ],
     "dependsOn": [
@@ -113,12 +126,32 @@ public:: true
       {
         "@id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:financial-action-task-force",
         "label": "Financial Action Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
       }
     ],
     "contrastsWith": [
@@ -129,12 +162,28 @@ public:: true
       {
         "@id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:real-estate",
+        "label": "Real Estate"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-finance",
+        "label": "Supply Chain Finance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "relatedTo": [
@@ -149,6 +198,10 @@ public:: true
       {
         "@id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
       }
     ]
   },
@@ -210,6 +263,7 @@ public:: true
   - uses:: [[Token Standard]]
   - uses:: [[Distributed Ledger Technology]]
   - uses:: [[Non-Fungible Token]]
+  - uses:: [[Digital Wallet]]
   - requires:: [[Regulatory Compliance]]
   - requires:: [[Know Your Customer]]
   - requires:: [[Digital Identity]]
@@ -218,19 +272,30 @@ public:: true
   - enables:: [[Decentralised Finance]]
   - enables:: [[Automated Market Maker]]
   - enables:: [[Programmable Money]]
+  - enables:: [[Liquidity]]
   - dependsOn:: [[Blockchain]]
   - dependsOn:: [[Cryptographic Hash Function]]
   - dependsOn:: [[Public Key Infrastructure]]
+  - dependsOn:: [[Oracle]]
+  - dependsOn:: [[Consensus Mechanism]]
   - standardizedBy:: [[Financial Action Task Force]]
   - standardizedBy:: [[International Organisation of Securities Commissions]]
+  - standardizedBy:: [[ERC-20]]
+  - standardizedBy:: [[ERC-721]]
+  - standardizedBy:: [[ERC-1400]]
   - contrastsWith:: [[Traditional Securities]]
   - contrastsWith:: [[Central Bank Digital Currency]]
+  - contrastsWith:: [[Fiat Currency]]
   - bridges-to:: [[Decentralised Autonomous Organisation]]
   - bridges-to:: [[Artificial Intelligence in Finance]]
+  - bridges-to:: [[Real Estate]]
+  - bridges-to:: [[Supply Chain Finance]]
+  - bridges-to:: [[Digital Twin]]
   - relatedTo:: [[Special Purpose Vehicle]]
   - relatedTo:: [[Decentralised Exchange]]
   - relatedTo:: [[Stablecoin]]
   - relatedTo:: [[Real-World Asset Tokenisation]]
+  - relatedTo:: [[Anti-Money Laundering]]
 
 - ### Standards & Context
   - **ERC-1400 / ST-20 (Polymath)**: early security token standard introducing partitioning, forced transfers, and issuance/redemption controllers on Ethereum.
@@ -243,7 +308,16 @@ public:: true
   - **BIS Innovation Hub projects**: Project Helvetia, Project Jura, and Project Dunbar have demonstrated tokenised security settlement using wholesale [[Central Bank Digital Currency|CBDCs]], providing design blueprints for central bank–endorsed tokenised asset infrastructure.
   - **IOSCO Policy Recommendations (2023)**: the [[International Organisation of Securities Commissions]] issued recommendations urging regulators to apply existing securities law to tokenised instruments and to address cross-border regulatory gaps.
 
+- ### Risks and Limitations
+  - **Legal Uncertainty** — on-chain token ownership may not equal off-chain legal title in all jurisdictions; binding legal structures (SPVs, trusts) add complexity
+  - **Smart Contract Risk** — bugs or exploits in token contract code can lead to irreversible asset loss; formal verification is recommended
+  - **Oracle Risk** — manipulation of price feeds used by token contracts can trigger incorrect liquidations or distributions
+  - **Liquidity Risk** — despite theoretical liquidity benefits, secondary markets for many tokenised assets remain thin
+  - **Custody Counterparty Risk** — the off-chain custodian holding the underlying asset remains a single point of failure
+  - **Regulatory Risk** — classification of a token as a security triggers extensive compliance obligations that vary by jurisdiction
+  - **Interoperability Fragmentation** — proliferation of incompatible token standards and blockchain networks limits composability
+
 - ### Provenance
-  - sources::
+  - sources:: Ethereum Improvement Proposals (EIPs); IOSCO guidance on crypto-asset markets; MiCA Regulation (EU) 2023/1114; BIS Working Paper No. 1002 (tokenisation); ERC-1400 / ERC-3643 specifications
   - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

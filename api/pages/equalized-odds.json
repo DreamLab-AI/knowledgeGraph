@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:2cb1a35b80a94132389d5c2fb71d7b096930be1651677c593c7750f642e8f2d4",
+  "title": "Equalized Odds",
+  "slug": "equalized-odds",
+  "public": true,
+  "classIri": "urn:ngm:class:equalized-odds",
+  "domain": "ai",
+  "definition": "A group fairness criterion, introduced by Hardt, Price, and Srebro (2016), requiring that a classifier's true positive rate and false positive rate be equal across protected groups \u2014 the prediction must be conditionally independent of group membership given the true outcome; unlike demographic parity it permits base rates to differ between groups, but it conflicts with calibration when base rates differ, and is typically approached by threshold adjustment or constrained training rather than achieved exactly.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:fairness-metrics",
+      "label": "Fairness Metrics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "fairness-metrics",
+      "label": "Fairness Metrics"
+    },
+    {
+      "slug": "algorithmic-fairness",
+      "label": "Algorithmic Fairness"
+    },
+    {
+      "slug": "fairness",
+      "label": "Fairness"
+    },
+    {
+      "slug": "bias-mitigation-techniques",
+      "label": "Bias Mitigation Techniques"
+    }
+  ],
+  "backlinks": []
+}

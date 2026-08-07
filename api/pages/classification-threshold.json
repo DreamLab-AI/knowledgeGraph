@@ -109,6 +109,10 @@
     {
       "slug": "classification",
       "label": "Classification"
+    },
+    {
+      "slug": "classifier",
+      "label": "Classifier"
     }
   ]
 }

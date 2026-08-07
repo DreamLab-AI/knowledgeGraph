@@ -30,7 +30,7 @@
         "label": "Procurement"
       },
       {
-        "id": "urn:ngm:class:logistics-optimization",
+        "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       }
     ],
@@ -159,10 +159,6 @@
     {
       "slug": "fashion",
       "label": "Fashion"
-    },
-    {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
     },
     {
       "slug": "time-series-forecasting",

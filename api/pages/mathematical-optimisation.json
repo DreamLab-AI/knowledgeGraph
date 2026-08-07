@@ -47,6 +47,10 @@
     {
       "slug": "computational-modelling",
       "label": "Computational Modelling"
+    },
+    {
+      "slug": "stochastic-optimisation",
+      "label": "Stochastic Optimisation"
     }
   ]
 }

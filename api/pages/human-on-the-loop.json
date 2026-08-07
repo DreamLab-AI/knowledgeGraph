@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:b1b423e1f4e57543eb5a274686ae6d0f0bc6c9b168f7561ba00d0f8f66c2a7b8",
+  "title": "Human on the Loop",
+  "slug": "human-on-the-loop",
+  "public": true,
+  "classIri": "urn:ngm:class:human-on-the-loop",
+  "domain": "artificial-intelligence",
+  "definition": "A supervisory model of human oversight in which an automated or AI system selects and executes actions autonomously while a human monitors its operation and retains the authority to intervene, veto, or shut it down; distinct from human-in-the-loop control, where each consequential action requires affirmative human approval before execution rather than after-the-fact supervision.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-oversight",
+      "label": "Human Oversight"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:meaningful-human-control",
+        "label": "Meaningful Human Control"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
+    },
+    {
+      "slug": "meaningful-human-control",
+      "label": "Meaningful Human Control"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
+    }
+  ]
+}

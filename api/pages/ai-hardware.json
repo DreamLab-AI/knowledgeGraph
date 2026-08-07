@@ -124,7 +124,7 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:data-center",
+        "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       }
     ],
@@ -173,6 +173,10 @@
     {
       "slug": "optical-sensor-array",
       "label": "Optical Sensor Array"
+    },
+    {
+      "slug": "semiconductor-industry",
+      "label": "Semiconductor Industry"
     },
     {
       "slug": "tpu",

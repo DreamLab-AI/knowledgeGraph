@@ -94,7 +94,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:standardization",
+        "@id": "urn:ngm:class:standardisation",
         "label": "Standardization"
       }
     ],

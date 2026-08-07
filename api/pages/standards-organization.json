@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:standards-organization",
   "domain": "artificial-intelligence",
-  "definition": "Standards Organization is an artificial intelligence concept.",
+  "definition": "A standards organisation is a body that develops, publishes, and maintains technical standards through consensus among industry, academic, and governmental stakeholders. Bodies such as the W3C, ISO, IEEE, and the Khronos Group produce the specifications that underpin interoperability across the web, extended reality, and artificial intelligence systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -18,7 +18,16 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
@@ -32,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -41,6 +63,14 @@
     }
   ],
   "backlinks": [
+    {
+      "slug": "iso-iec-jtc-1-sc-17",
+      "label": "ISO/IEC JTC 1/SC 17"
+    },
+    {
+      "slug": "iso-iec-jtc1-sc29",
+      "label": "ISO/IEC JTC 1/SC 29"
+    },
     {
       "slug": "microsoft",
       "label": "Microsoft"

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:web-standards",
   "domain": "spatial-computing",
-  "definition": "Web Standards is a spatial computing concept.",
+  "definition": "Web standards are the formal specifications and protocols \u2014 including HTML, CSS, HTTP, and the WebXR Device API \u2014 that define how content and applications are described, transmitted, and rendered on the World Wide Web. Developed by consensus bodies such as the W3C, they ensure interoperability across browsers, devices, and immersive spatial computing platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -18,7 +18,12 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
@@ -32,7 +37,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -60,6 +78,10 @@
     {
       "slug": "solid",
       "label": "Solid"
+    },
+    {
+      "slug": "web-of-things",
+      "label": "Web of Things"
     }
   ]
 }

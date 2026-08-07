@@ -103,6 +103,10 @@
     {
       "slug": "ai-in-games",
       "label": "AI in Games"
+    },
+    {
+      "slug": "utility-ai",
+      "label": "Utility AI"
     }
   ]
 }

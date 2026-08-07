@@ -46,6 +46,28 @@ public:: true
   "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
+  },
   "subClassOf": [
     {
       "@id": "urn:ngm:class:governance",
@@ -102,6 +124,8 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Governance]]
   - bridges-to:: [[AI Governance]]
+  - related-to:: [[Corporate Governance]], [[Data Governance]]
+  - enables:: [[Regulatory Compliance]]
 
 - ### Content
   - A governance framework specifies decision rights, accountability, escalation paths, and controls. Frameworks are applied to corporate management, data management, IT, and increasingly to artificial intelligence systems.

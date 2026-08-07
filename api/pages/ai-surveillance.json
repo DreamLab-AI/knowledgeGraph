@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:62235aaf4112394d6b9562496d73fd101a352661373767b799a2a621896408fa",
+  "title": "AI Surveillance",
+  "slug": "ai-surveillance",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-surveillance",
+  "domain": "governance",
+  "definition": "AI surveillance is the application of machine learning and computer vision to monitoring at scale: automated facial recognition in public space, gait and behaviour analysis, licence-plate reading, social-media and communications analytics, and predictive scoring of individuals or crowds. It differs from conventional surveillance in that inference, not observation, does the work \u2014 systems classify, track, and flag people continuously without human attention per subject, raising distinct governance questions about bias, proportionality, chilling effects, and the legal basis for algorithmic monitoring.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:surveillance",
+      "label": "Surveillance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "surveillance",
+      "label": "Surveillance"
+    },
+    {
+      "slug": "facial-recognition",
+      "label": "Facial Recognition"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    }
+  ]
+}

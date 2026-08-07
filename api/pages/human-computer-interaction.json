@@ -273,6 +273,10 @@
       "label": "Facial Action Coding System"
     },
     {
+      "slug": "graphical-user-interface",
+      "label": "Graphical User Interface"
+    },
+    {
       "slug": "hand-tracking",
       "label": "Hand Tracking"
     },

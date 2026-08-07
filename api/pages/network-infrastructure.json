@@ -218,8 +218,16 @@
       "label": "Edge Network"
     },
     {
+      "slug": "edge-server",
+      "label": "Edge Server"
+    },
+    {
       "slug": "education-metaverse",
       "label": "Education Metaverse"
+    },
+    {
+      "slug": "fibre-optic-network",
+      "label": "Fibre Optic Network"
     },
     {
       "slug": "health-metaverse-application",

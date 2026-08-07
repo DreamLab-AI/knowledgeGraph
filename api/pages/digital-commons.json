@@ -104,5 +104,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "digital-public-goods",
+      "label": "Digital Public Goods"
+    }
+  ]
 }

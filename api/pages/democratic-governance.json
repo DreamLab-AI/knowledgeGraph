@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:democratic-governance",
   "domain": "infrastructure",
-  "definition": "Democratic Governance is an infrastructure concept.",
+  "definition": "The exercise of collective decision-making through participatory, accountable, and transparent processes in which stakeholders deliberate and vote on rules and resource allocation; in digital and blockchain contexts it encompasses DAO voting, token-weighted and one-person-one-vote mechanisms, and community oversight of platforms and protocols.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -20,6 +20,10 @@
       {
         "id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
       }
     ],
     "requires": [],
@@ -32,7 +36,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralised Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

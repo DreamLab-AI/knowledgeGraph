@@ -179,6 +179,10 @@
     {
       "slug": "tax-treatment-crypto",
       "label": "Tax Treatment Crypto"
+    },
+    {
+      "slug": "world-trade-organization",
+      "label": "World Trade Organization"
     }
   ]
 }

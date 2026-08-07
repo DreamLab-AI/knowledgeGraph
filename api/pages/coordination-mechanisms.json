@@ -144,6 +144,14 @@
       "label": "Distributed Decision Making"
     },
     {
+      "slug": "negotiation-protocol",
+      "label": "Negotiation Protocol"
+    },
+    {
+      "slug": "task-allocation",
+      "label": "Task Allocation"
+    },
+    {
       "slug": "telecollaboration",
       "label": "Telecollaboration"
     }

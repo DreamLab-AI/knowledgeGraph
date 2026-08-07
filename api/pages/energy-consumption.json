@@ -137,6 +137,10 @@
       "label": "Climate Policy"
     },
     {
+      "slug": "greenhouse-gas-emissions",
+      "label": "Greenhouse Gas Emissions"
+    },
+    {
       "slug": "greenwashing",
       "label": "Greenwashing"
     },

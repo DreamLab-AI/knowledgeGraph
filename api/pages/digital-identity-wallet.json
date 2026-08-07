@@ -702,6 +702,10 @@
       "label": "Distributed Identity"
     },
     {
+      "slug": "iso-iec-jtc-1-sc-17",
+      "label": "ISO/IEC JTC 1/SC 17"
+    },
+    {
       "slug": "identity-provider",
       "label": "Identity Provider"
     },

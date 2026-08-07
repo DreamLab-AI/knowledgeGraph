@@ -168,6 +168,10 @@
       "label": "KYC"
     },
     {
+      "slug": "regulation-d",
+      "label": "Regulation D"
+    },
+    {
       "slug": "travel-rule",
       "label": "Travel Rule"
     }

@@ -22,7 +22,7 @@ public:: true
     "enables":[{"@id":"urn:ngm:class:automation","label":"Automation"},{"@id":"urn:ngm:class:reproducibility","label":"Reproducibility"}],
     "uses":[{"@id":"urn:ngm:class:version-control","label":"Version Control"}],
     "supports":[{"@id":"urn:ngm:class:cloud-infrastructure","label":"Cloud Infrastructure"},{"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"},{"@id":"urn:ngm:class:kubernetes","label":"Kubernetes"}],
-    "relatedTo":[{"@id":"urn:ngm:class:configuration-management","label":"Configuration Management"},{"@id":"urn:ngm:class:data-center","label":"Data Center"}],
+    "relatedTo":[{"@id":"urn:ngm:class:configuration-management","label":"Configuration Management"},{"@id":"urn:ngm:class:data-centre","label":"Data Center"}],
     "contrastsWith":[{"@id":"urn:ngm:class:configuration-management","label":"Configuration Management"}],
     "bridgesTo":[{"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}]
   },
@@ -55,7 +55,7 @@ public:: true
 	- Provisioning compute, networking, and storage across [[Cloud Infrastructure]] providers.
 	- Standardising environment creation for development, staging, and production in [[DevOps]] pipelines.
 	- Managing [[Kubernetes]] clusters and their supporting cloud resources.
-	- Codifying [[Data Center]] and hybrid infrastructure for auditable, repeatable deployments.
+	- Codifying [[Data Centre]] and hybrid infrastructure for auditable, repeatable deployments.
 - ### Relationships
 	- subClassOf:: [[Infrastructure as Code]]
 	- partOf:: [[DevOps]]
@@ -68,7 +68,7 @@ public:: true
 	- supports:: [[Cloud Computing]]
 	- supports:: [[Kubernetes]]
 	- relatedTo:: [[Configuration Management]]
-	- relatedTo:: [[Data Center]]
+	- relatedTo:: [[Data Centre]]
 	- contrastsWith:: [[Configuration Management]]
 	- bridgesTo:: [[Cloud Computing]]
 - ### Provenance

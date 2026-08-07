@@ -57,7 +57,7 @@ public:: true
       {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"},
+      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"},
       {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"}
     ]
   },

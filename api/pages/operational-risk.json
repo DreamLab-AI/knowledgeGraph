@@ -94,6 +94,18 @@
     {
       "slug": "compliance-control",
       "label": "Compliance Control"
+    },
+    {
+      "slug": "credit-risk",
+      "label": "Credit Risk"
+    },
+    {
+      "slug": "governance-risk-compliance",
+      "label": "Governance Risk Compliance"
+    },
+    {
+      "slug": "market-risk",
+      "label": "Market Risk"
     }
   ]
 }

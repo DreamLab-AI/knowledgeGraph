@@ -201,10 +201,6 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
-    },
-    {
       "slug": "adaptive-learning",
       "label": "Adaptive Learning"
     },
@@ -497,10 +493,6 @@
       "label": "Deep Learning"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "empathetic-ai",
       "label": "Empathetic AI"
     },
@@ -547,6 +539,10 @@
     {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
     },
     {
       "slug": "model-optimisation-and-performance",

@@ -248,6 +248,10 @@
       "label": "Decision Tree"
     },
     {
+      "slug": "leaderboard",
+      "label": "Leaderboard"
+    },
+    {
       "slug": "mean-absolute-error",
       "label": "Mean Absolute Error"
     },

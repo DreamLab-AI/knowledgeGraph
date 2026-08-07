@@ -184,6 +184,10 @@
       "label": "Embodied Presence"
     },
     {
+      "slug": "embodiment",
+      "label": "Embodiment"
+    },
+    {
       "slug": "inworld-ai",
       "label": "Inworld AI"
     },

@@ -52,7 +52,7 @@
         "label": "Constraint Satisfaction"
       },
       {
-        "id": "urn:ngm:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       },
       {
@@ -111,7 +111,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:rule-based-system",
+        "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule Based System"
       }
     ],
@@ -236,7 +236,7 @@
       "label": "Constraint Satisfaction"
     },
     {
-      "slug": "optimization-algorithm",
+      "slug": "optimisation-algorithm",
       "label": "Optimization Algorithm"
     },
     {
@@ -400,6 +400,10 @@
     {
       "slug": "generative-design-tool",
       "label": "Generative Design Tool"
+    },
+    {
+      "slug": "model-based-systems-engineering",
+      "label": "Model-Based Systems Engineering"
     }
   ]
 }

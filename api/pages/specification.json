@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:83ae2f5a38db4ea1ec02e0210a84469fdc50dafe1b6a08a6d0904027baf6f32e",
+  "title": "Specification",
+  "slug": "specification",
+  "public": true,
+  "classIri": "urn:ngm:class:specification",
+  "domain": "standards",
+  "definition": "A precise, documented statement of the requirements, behaviour, interfaces, or characteristics that a system, product, or process must satisfy, written so that independent parties can implement against it and verify conformance to it. Specifications range from engineering requirements documents and CAD tolerances to protocol and file-format definitions published by standards bodies, and they are the normative core of every technical standard: the testable text that separates what conforms from what does not.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    },
+    {
+      "slug": "open-standards",
+      "label": "Open Standards"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "standardisation",
+      "label": "Standardisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ]
+}

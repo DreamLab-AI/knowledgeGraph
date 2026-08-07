@@ -274,6 +274,10 @@
       "label": "Architecture"
     },
     {
+      "slug": "bias-in-ai",
+      "label": "Bias in AI"
+    },
+    {
       "slug": "compliance-audit-trail",
       "label": "Compliance Audit Trail"
     },

@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:42b9d12e97bea34df72e4a992fa4b779aca0bbd150e6f7735688d7dce24ab9b5",
+  "title": "ISO/IEC JTC 1/SC 17",
+  "slug": "iso-iec-jtc-1-sc-17",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-jtc-1-sc-17",
+  "domain": "standards",
+  "definition": "ISO/IEC JTC 1/SC 17 is the joint ISO and IEC subcommittee responsible for standards covering cards and security devices for personal identification, including integrated circuit cards, machine-readable travel documents, driving licences, and mobile identity documents. Its work programme includes ISO/IEC 7816 for smart cards, ISO/IEC 14443 for contactless proximity cards, and ISO/IEC 18013-5 for mobile driving licences, making it the principal international venue for interoperable identity credential formats consumed by digital identity wallets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-organization",
+      "label": "Standards Organization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:biometric-identification",
+        "label": "Biometric Identification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:iso-iec-jtc-1",
+        "label": "ISO/IEC JTC 1"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "standards-organization",
+      "label": "Standards Organization"
+    },
+    {
+      "slug": "iso-iec-jtc-1",
+      "label": "ISO/IEC JTC 1"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    }
+  ]
+}

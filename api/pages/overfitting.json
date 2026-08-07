@@ -155,8 +155,16 @@
       "label": "Decision Tree"
     },
     {
+      "slug": "grokking",
+      "label": "Grokking"
+    },
+    {
       "slug": "statistical-learning-theory",
       "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "vc-dimension",
+      "label": "VC Dimension"
     }
   ]
 }

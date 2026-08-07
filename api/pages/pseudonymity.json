@@ -141,6 +141,10 @@
       "label": "Aleo"
     },
     {
+      "slug": "deanonymisation",
+      "label": "Deanonymisation"
+    },
+    {
       "slug": "identity-verification",
       "label": "Identity Verification"
     },

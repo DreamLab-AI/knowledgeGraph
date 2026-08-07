@@ -91,5 +91,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "market-risk",
+      "label": "Market Risk"
+    }
+  ]
 }

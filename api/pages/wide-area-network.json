@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:3daf054f171a351ec0b402052a726de47b38bc6902630e7ccd3d6cedc56e0d4d",
+  "title": "Wide Area Network",
+  "slug": "wide-area-network",
+  "public": true,
+  "classIri": "urn:ngm:class:wide-area-network",
+  "domain": "infrastructure",
+  "definition": "A wide area network (WAN) is a telecommunications network that interconnects sites across large geographic distances \u2014 cities, countries, or continents \u2014 typically by carrying traffic over links leased from or operated by carriers rather than infrastructure the user owns end to end. WANs join local area networks into a single reachable whole using technologies ranging from leased lines, MPLS, and carrier Ethernet to broadband internet, cellular, and satellite, with the internet itself the largest example, and they trade the high bandwidth and low latency of the LAN for reach, at recurring circuit cost.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:networking-infrastructure",
+      "label": "Networking Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:local-area-network",
+        "label": "Local Area Network"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:local-area-network",
+        "label": "Local Area Network"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-private-network",
+        "label": "Virtual Private Network"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "networking-infrastructure",
+      "label": "Networking Infrastructure"
+    },
+    {
+      "slug": "local-area-network",
+      "label": "Local Area Network"
+    },
+    {
+      "slug": "software-defined-networking",
+      "label": "Software-Defined Networking"
+    },
+    {
+      "slug": "virtual-private-network",
+      "label": "Virtual Private Network"
+    },
+    {
+      "slug": "telecommunications",
+      "label": "Telecommunications"
+    }
+  ],
+  "backlinks": []
+}

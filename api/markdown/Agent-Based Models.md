@@ -86,7 +86,7 @@ public:: true
     ],
     "uses": [
       { "@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent" },
-      { "@id": "urn:ngm:class:behavioural-modelling", "label": "Behavioral Modeling" },
+      { "@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling" },
       { "@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing" },
       { "@id": "urn:ngm:class:monte-carlo-simulation", "label": "Monte Carlo Simulation" },
       { "@id": "urn:ngm:class:cellular-automata", "label": "Cellular Automata" },
@@ -111,7 +111,7 @@ public:: true
     ],
     "dependsOn": [
       { "@id": "urn:ngm:class:complex-adaptive-systems", "label": "Complex Adaptive Systems" },
-      { "@id": "urn:ngm:class:behavioural-modelling", "label": "Behavioral Modeling" },
+      { "@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling" },
       { "@id": "urn:ngm:class:network-science", "label": "Network Science" }
     ],
     "implements": [

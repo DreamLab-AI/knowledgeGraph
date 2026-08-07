@@ -134,7 +134,7 @@ public:: true
         "label": "Augmented Reality"
       },
       {
-        "@id": "urn:ngm:class:robotic-perception",
+        "@id": "urn:ngm:class:robotics-perception",
         "label": "Robotic Perception"
       }
     ]

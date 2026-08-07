@@ -18,7 +18,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}, {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"}],
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:sha256", "label": "SHA-256"},
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
       {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
       {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
     ],

@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:2771538831a99ab9e6ebed98cb79051d304921abfcb01af5a56f177c8356cf6f",
+  "title": "MPEG",
+  "slug": "mpeg",
+  "public": true,
+  "classIri": "urn:ngm:class:mpeg",
+  "domain": "standards",
+  "definition": "The Moving Picture Experts Group, the ISO/IEC standardisation body (formally ISO/IEC JTC 1/SC 29 working groups) that since 1988 has defined the dominant international standards for compressed digital audio and video \u2014 MPEG-1 and MP3, MPEG-2 for broadcast television and DVD, MPEG-4 AVC/H.264, HEVC, and VVC for streaming, plus systems standards such as MP4, MPEG-DASH, and MPEG-H spatial audio \u2014 underpinning virtually all modern media distribution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-bitrate-streaming",
+        "label": "Adaptive Bitrate Streaming"
+      },
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "id": "urn:ngm:class:codec",
+        "label": "Codec"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-video",
+        "label": "Proprietary Video"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "standards-body",
+      "label": "Standards Body"
+    },
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "video-compression",
+      "label": "Video Compression"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "iso-iec-jtc1-sc29",
+      "label": "ISO/IEC JTC 1/SC 29"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    }
+  ]
+}

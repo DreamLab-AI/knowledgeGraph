@@ -70,7 +70,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ],
@@ -94,7 +94,7 @@
         "label": "SLAM"
       },
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {

@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:1ff3794057ce3781130f25d9803b5df1e8becf6998d502dc40a55fb590b4c39f",
+  "title": "Digital Public Goods",
+  "slug": "digital-public-goods",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-public-goods",
+  "domain": "governance",
+  "definition": "Open-source software, open data, open AI models, open standards, and open content that adhere to privacy and other applicable laws and best practices, do no harm by design, and help attain sustainable development goals; formalised by the UN-endorsed Digital Public Goods Alliance standard, they are freely adoptable and adaptable building blocks for digital public infrastructure worldwide.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:public-goods",
+      "label": "Public Goods"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-commons",
+        "label": "Digital Commons"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "public-goods",
+      "label": "Public Goods"
+    },
+    {
+      "slug": "digital-commons",
+      "label": "Digital Commons"
+    },
+    {
+      "slug": "open-source-software",
+      "label": "Open Source Software"
+    }
+  ],
+  "backlinks": []
+}

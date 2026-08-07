@@ -150,6 +150,10 @@
       "label": "Electric Actuator"
     },
     {
+      "slug": "h-bridge",
+      "label": "H-Bridge"
+    },
+    {
       "slug": "mobile-robot-platform",
       "label": "Mobile Robot Platform"
     },

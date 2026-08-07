@@ -174,7 +174,7 @@ public:: true
   },
   "sameAs": [
     {
-      "@id": "urn:ngm:class:nearest-neighbour-search",
+      "@id": "urn:ngm:class:nearest-neighbor-search",
       "label": "Nearest Neighbour Search"
     },
     {

@@ -144,10 +144,6 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
-    },
-    {
       "slug": "algorithmic-bias-and-variance",
       "label": "Algorithmic Bias and Variance"
     },

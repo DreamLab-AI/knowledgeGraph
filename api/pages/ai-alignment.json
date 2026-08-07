@@ -198,6 +198,10 @@
       "label": "Ai Governance Principle"
     },
     {
+      "slug": "alignment-research",
+      "label": "Alignment Research"
+    },
+    {
       "slug": "alignment",
       "label": "Alignment"
     },
@@ -254,6 +258,10 @@
       "label": "Computer Use and Browser Agents"
     },
     {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
       "slug": "corrigibility",
       "label": "Corrigibility"
     },
@@ -274,12 +282,20 @@
       "label": "History and Path to AGI"
     },
     {
+      "slug": "instrumental-convergence",
+      "label": "Instrumental Convergence"
+    },
+    {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
     },
     {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
+    },
+    {
+      "slug": "mesa-optimisation",
+      "label": "Mesa-Optimisation"
     },
     {
       "slug": "prompt-engineering",

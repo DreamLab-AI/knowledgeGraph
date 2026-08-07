@@ -150,6 +150,10 @@
     {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
+    },
+    {
+      "slug": "partition-tolerance",
+      "label": "Partition Tolerance"
     }
   ]
 }

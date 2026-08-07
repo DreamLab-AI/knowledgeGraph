@@ -98,6 +98,10 @@
       "label": "Bandwidth Adaptation"
     },
     {
+      "slug": "lossy-compression",
+      "label": "Lossy Compression"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     }

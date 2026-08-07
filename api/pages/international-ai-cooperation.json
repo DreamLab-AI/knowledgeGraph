@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:518ce87feddca3b7f573f85d2dcf5d141079e9210b23af88cccef320da2ccef5",
+  "title": "International AI Cooperation",
+  "slug": "international-ai-cooperation",
+  "public": true,
+  "classIri": "urn:ngm:class:international-ai-cooperation",
+  "domain": "governance",
+  "definition": "Coordination between states, multilateral institutions, safety institutes, and frontier laboratories on the governance of artificial intelligence, spanning safety summit declarations, shared model evaluation programmes, harmonised risk thresholds for frontier models, compute and export control alignment, and scientific exchange, aimed at managing risks that no single jurisdiction can address alone.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:international-cooperation",
+      "label": "International Cooperation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-safety-summit",
+        "label": "AI Safety Summit"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:uk-ai-safety-institute",
+        "label": "UK AI Safety Institute"
+      },
+      {
+        "id": "urn:ngm:class:frontier-models",
+        "label": "Frontier Models"
+      },
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "international-cooperation",
+      "label": "International Cooperation"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-safety-summit",
+      "label": "AI Safety Summit"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-safety-summit",
+      "label": "AI Safety Summit"
+    }
+  ]
+}

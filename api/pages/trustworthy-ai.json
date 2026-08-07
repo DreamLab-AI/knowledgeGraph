@@ -153,6 +153,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-certification",
+      "label": "AI Certification"
+    },
+    {
       "slug": "ai-model-card",
       "label": "AI Model Card"
     },

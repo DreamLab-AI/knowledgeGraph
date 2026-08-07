@@ -146,6 +146,10 @@
     {
       "slug": "cognitive-science",
       "label": "Cognitive Science"
+    },
+    {
+      "slug": "procedural-memory",
+      "label": "Procedural Memory"
     }
   ]
 }

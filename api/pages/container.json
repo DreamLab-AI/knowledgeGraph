@@ -104,7 +104,7 @@
         "label": "Virtualization"
       },
       {
-        "id": "urn:ngm:class:webassembly",
+        "id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       },
       {
@@ -377,5 +377,10 @@
       "label": "CRI-O"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "container-image",
+      "label": "Container Image"
+    }
+  ]
 }

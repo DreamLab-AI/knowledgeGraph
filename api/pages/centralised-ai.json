@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:b5fe37724363c206945c627bbdd7e0ca8557389f011f5e2cdb7451e2941a7cfb",
+  "title": "Centralised AI",
+  "slug": "centralised-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:centralised-ai",
+  "domain": "artificial-intelligence",
+  "definition": "An organisational and architectural model of artificial intelligence in which training data, compute, model weights, and inference services are concentrated under a single operator in large data centres, with users accessing capability remotely through APIs; the contrast class to decentralised AI, edge inference, and multi-agent approaches that distribute computation, control, or decision-making across many independent nodes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "decentralised-ai",
+      "label": "Decentralised AI"
+    },
+    {
+      "slug": "edge-inference",
+      "label": "Edge Inference"
+    }
+  ],
+  "backlinks": []
+}

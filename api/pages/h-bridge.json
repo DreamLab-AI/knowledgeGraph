@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:9ac99d32117cbd532ac8e19ad59ed85311354651e3c98cd8f97eebb6b6f3cbcf",
+  "title": "H-Bridge",
+  "slug": "h-bridge",
+  "public": true,
+  "classIri": "urn:ngm:class:h-bridge",
+  "domain": "robotics",
+  "definition": "An H-bridge is a power-electronics circuit of four switching elements arranged in an 'H' around a load, enabling voltage of either polarity to be applied from a single supply. It is the core stage of DC motor drivers: diagonal switch pairs drive the motor forward or reverse, pulse-width modulation of the switches regulates speed and torque, and shorting or opening both legs provides braking or coasting. Implemented with MOSFETs or IGBTs plus gate drivers and protection, H-bridges power robotics actuators, servo drives, inverters, and battery-powered traction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:power-electronics",
+      "label": "Power Electronics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motor-control",
+        "label": "Motor Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pulse-width-modulation",
+        "label": "Pulse Width Modulation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dc-servo-motor",
+        "label": "DC Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "power-electronics",
+      "label": "Power Electronics"
+    },
+    {
+      "slug": "motor-driver",
+      "label": "Motor Driver"
+    },
+    {
+      "slug": "pulse-width-modulation",
+      "label": "Pulse Width Modulation"
+    },
+    {
+      "slug": "motor-control",
+      "label": "Motor Control"
+    }
+  ],
+  "backlinks": []
+}

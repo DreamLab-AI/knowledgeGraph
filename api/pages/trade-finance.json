@@ -77,7 +77,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:logistics-optimization",
+        "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       },
       {

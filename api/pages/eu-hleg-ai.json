@@ -135,6 +135,10 @@
       "label": "AI Trustworthiness Dimensions"
     },
     {
+      "slug": "fundamental-rights",
+      "label": "Fundamental Rights"
+    },
+    {
       "slug": "human-agency-and-oversight",
       "label": "Human Agency and Oversight"
     },

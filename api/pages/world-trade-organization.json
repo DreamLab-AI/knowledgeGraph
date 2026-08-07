@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:09fc6bed4b5120d2937d5cca75df1c4b52bc92c163028bcd58ee79dee9575029",
+  "title": "World Trade Organization",
+  "slug": "world-trade-organization",
+  "public": true,
+  "classIri": "urn:ngm:class:world-trade-organization",
+  "domain": "governance",
+  "definition": "The World Trade Organization (WTO) is the intergovernmental organisation, established in 1995 as successor to the GATT, that administers the multilateral rules governing trade between its 166 members. It provides the negotiated agreements covering goods, services, and intellectual property, a forum for further trade negotiations, a binding dispute-settlement mechanism, and monitoring of members' trade policies, anchored in the principles of non-discrimination (most-favoured-nation and national treatment), tariff bindings, and transparency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:oecd",
+        "label": "OECD"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:imf",
+        "label": "IMF"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "international-trade",
+      "label": "International Trade"
+    },
+    {
+      "slug": "imf",
+      "label": "IMF"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    }
+  ],
+  "backlinks": []
+}

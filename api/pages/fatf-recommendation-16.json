@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:22bdb44119f8762bbe425902152f7d7b7e12d9c079f362b27e8b2b46f7edb2ad",
+  "title": "FATF Recommendation 16",
+  "slug": "fatf-recommendation-16",
+  "public": true,
+  "classIri": "urn:ngm:class:fatf-recommendation-16",
+  "domain": "finance",
+  "definition": "The specific Financial Action Task Force recommendation, known as the Travel Rule, requiring financial institutions and virtual asset service providers to obtain, hold, and transmit accurate originator and beneficiary information alongside wire transfers and virtual asset transfers, so that anti-money-laundering and counter-terrorist-financing authorities can trace funds across institutions and borders.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:fatf-recommendations",
+      "label": "FATF Recommendations"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "fatf-recommendations",
+      "label": "FATF Recommendations"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

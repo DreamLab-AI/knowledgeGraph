@@ -159,6 +159,10 @@
       "label": "Data Pipeline"
     },
     {
+      "slug": "dataset-curation",
+      "label": "Dataset Curation"
+    },
+    {
       "slug": "dataset",
       "label": "Dataset"
     },

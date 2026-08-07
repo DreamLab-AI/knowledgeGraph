@@ -216,10 +216,6 @@
       "label": "Reality Capture System"
     },
     {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
-    },
-    {
       "slug": "tokenization",
       "label": "Tokenization"
     },

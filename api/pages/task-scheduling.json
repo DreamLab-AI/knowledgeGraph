@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:7dea315227e59793545bf6fb0aebe3c4b21052c405838c2d8a9be6da83936d13",
+  "title": "Task Scheduling",
+  "slug": "task-scheduling",
+  "public": true,
+  "classIri": "urn:ngm:class:task-scheduling",
+  "domain": "distributed-systems",
+  "definition": "The process of deciding which tasks run on which computational resources and when, subject to constraints such as priorities, deadlines, dependencies, and resource capacity. Task scheduling appears at every scale of computing: operating-system schedulers multiplex threads across CPU cores, real-time schedulers such as rate-monotonic and earliest-deadline-first guarantee that control loops meet hard deadlines, cluster orchestrators place jobs across machines, and workflow engines order dependent steps expressed as directed acyclic graphs. Because optimal scheduling is NP-hard in most general formulations, practical schedulers rely on priority-based heuristics, often implemented over priority queues, trading strict optimality for predictability, fairness, and low overhead.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:resource-allocation",
+      "label": "Resource Allocation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:priority-queue",
+        "label": "Priority Queue"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time-systems",
+        "label": "Real-Time Systems"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "resource-allocation",
+      "label": "Resource Allocation"
+    },
+    {
+      "slug": "operating-system",
+      "label": "Operating System"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "priority-queue",
+      "label": "Priority Queue"
+    },
+    {
+      "slug": "real-time-control",
+      "label": "Real-Time Control"
+    }
+  ],
+  "backlinks": []
+}

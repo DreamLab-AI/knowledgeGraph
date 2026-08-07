@@ -49,8 +49,16 @@
       "label": "Bitcoin Environmental Issues"
     },
     {
+      "slug": "carbon-tax",
+      "label": "Carbon Tax"
+    },
+    {
       "slug": "energy-and-power",
       "label": "Energy and Power"
+    },
+    {
+      "slug": "kyoto-protocol",
+      "label": "Kyoto Protocol"
     }
   ]
 }

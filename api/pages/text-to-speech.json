@@ -185,6 +185,10 @@
       "label": "Inworld AI"
     },
     {
+      "slug": "neural-vocoder",
+      "label": "Neural Vocoder"
+    },
+    {
       "slug": "speech-processing",
       "label": "Speech Processing"
     },

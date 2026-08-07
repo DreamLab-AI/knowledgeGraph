@@ -32,6 +32,10 @@
       {
         "id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "requires": [

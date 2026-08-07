@@ -217,6 +217,10 @@
     {
       "slug": "goal",
       "label": "Goal"
+    },
+    {
+      "slug": "single-agent-system",
+      "label": "Single-Agent System"
     }
   ]
 }

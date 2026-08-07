@@ -191,6 +191,10 @@
       "label": "Multi-Agent Orchestration Frameworks"
     },
     {
+      "slug": "negotiation-protocol",
+      "label": "Negotiation Protocol"
+    },
+    {
       "slug": "open-ai-agents-sdk",
       "label": "OpenAI Agents SDK"
     },
@@ -201,6 +205,10 @@
     {
       "slug": "personal-agent-runtimes",
       "label": "Personal Agent Runtimes"
+    },
+    {
+      "slug": "task-allocation",
+      "label": "Task Allocation"
     }
   ]
 }

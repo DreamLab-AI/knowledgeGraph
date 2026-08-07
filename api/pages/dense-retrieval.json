@@ -49,6 +49,10 @@
       "label": "BM25"
     },
     {
+      "slug": "colbert",
+      "label": "ColBERT"
+    },
+    {
       "slug": "content-discovery",
       "label": "Content Discovery"
     },

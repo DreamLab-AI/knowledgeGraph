@@ -562,6 +562,10 @@
       "label": "Singularity"
     },
     {
+      "slug": "talent-concentration",
+      "label": "Talent Concentration"
+    },
+    {
       "slug": "training-data",
       "label": "Training Data"
     },

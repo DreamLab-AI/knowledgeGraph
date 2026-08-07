@@ -140,6 +140,10 @@
       "label": "Global Illumination"
     },
     {
+      "slug": "material",
+      "label": "Material"
+    },
+    {
       "slug": "material-x",
       "label": "MaterialX"
     },

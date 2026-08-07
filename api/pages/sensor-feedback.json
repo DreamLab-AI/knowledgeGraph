@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:7dbbbdbb880988eeca547dc4ce96795691d74b9ccb5b74be5ffedb5990f9699c",
+  "title": "Sensor Feedback",
+  "slug": "sensor-feedback",
+  "public": true,
+  "classIri": "urn:ngm:class:sensor-feedback",
+  "domain": "robotics",
+  "definition": "Measurement data returned from sensors into a control loop so that a controller can compare the actual state of a dynamic system against its desired state and compute corrective action. Sensor feedback closes the loop in control engineering and robotics: encoders, IMUs, force-torque sensors, thermocouples, and cameras report position, velocity, force, temperature, or pose, and the resulting error signal drives actuator commands, with latency, noise, and sampling rate directly bounding achievable control performance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor-data",
+      "label": "Sensor Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "sensor-data",
+      "label": "Sensor Data"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    }
+  ]
+}

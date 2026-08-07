@@ -780,14 +780,6 @@
       "label": "Linear Encoder"
     },
     {
-      "slug": "localization",
-      "label": "Localization"
-    },
-    {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
-    },
-    {
       "slug": "lower-limb-exoskeleton",
       "label": "Lower Limb Exoskeleton"
     },

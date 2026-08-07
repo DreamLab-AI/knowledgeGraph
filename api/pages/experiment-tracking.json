@@ -1,104 +1,56 @@
 {
-  "id": "urn:visionflow:page:ca24087b3836a9cf4e3a2a523ab3c1f24e74909d2e08a03b4692b8b91d86995f",
-  "title": "Experiment Tracking",
+  "id": "urn:visionflow:page:1fe14f0aed73e945e8037499e6bec3958d249d5446037c4c9adf7a36ac482113",
+  "title": "ML Experiment Tracking",
   "slug": "experiment-tracking",
   "public": true,
-  "classIri": "urn:ngm:class:empirical-experimental-design-tracking",
-  "domain": "artificial-intelligence",
-  "definition": "Experiment tracking is the practice of recording the configuration, code, data, and results of machine learning experiments so they can be compared and reproduced, enabling teams to audit, iterate, and roll back to prior model states. It is a core discipline within MLOps.",
+  "classIri": "urn:ngm:class:experiment-tracking",
+  "domain": "machine-learning",
+  "definition": "The systematic recording of every machine-learning training run \u2014 hyperparameters, code version, dataset version, environment, metrics, and resulting artefacts \u2014 in a queryable store, so that results can be compared across runs, reproduced exactly, and promoted to production with a complete audit trail linking a deployed model back to the precise conditions that produced it.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:mlops",
       "label": "MLOps"
-    },
-    {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Artificial Intelligence)"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.7,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
+    "hasPart": [],
+    "requires": [],
+    "enables": [
       {
-        "id": "urn:ngm:class:hyperparameter-logging",
-        "label": "Hyperparameter Logging"
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
       },
       {
-        "id": "urn:ngm:class:metric-logging",
-        "label": "Metric Logging"
-      },
-      {
-        "id": "urn:ngm:class:artifact-versioning",
-        "label": "Artifact Versioning"
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
       }
     ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:model-training",
-        "label": "Model Training"
-      },
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
       {
         "id": "urn:ngm:class:data-versioning",
         "label": "Data Versioning"
       },
       {
-        "id": "urn:ngm:class:reproducibility",
-        "label": "Reproducibility"
-      }
-    ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
-      },
-      {
-        "id": "urn:ngm:class:model-comparison",
-        "label": "Model Comparison"
-      },
-      {
-        "id": "urn:ngm:class:model-registry",
-        "label": "Model Registry"
-      },
-      {
-        "id": "urn:ngm:class:continuous-training",
-        "label": "Continuous Training"
-      }
-    ],
-    "dependsOn": [
-      {
         "id": "urn:ngm:class:version-control",
         "label": "Version Control"
-      },
-      {
-        "id": "urn:ngm:class:metadata-management",
-        "label": "Metadata Management"
       }
     ],
-    "implements": [
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
       {
-        "id": "urn:ngm:class:scientific-method",
-        "label": "Scientific Method"
+        "id": "urn:ngm:class:ai-model-development",
+        "label": "AI Model Development"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:ad-hoc-experimentation",
-        "label": "Ad-hoc Experimentation"
-      }
-    ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
-      }
-    ],
-    "uses": [
+    "relatedTo": [
       {
         "id": "urn:ngm:class:mlflow",
         "label": "MLflow"
@@ -108,66 +60,35 @@
         "label": "Weights and Biases"
       },
       {
-        "id": "urn:ngm:class:open-source",
-        "label": "Open Source"
-      }
-    ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:collaborative-research",
-        "label": "Collaborative Research"
+        "id": "urn:ngm:class:dvc",
+        "label": "DVC"
       },
       {
-        "id": "urn:ngm:class:model-governance",
-        "label": "Model Governance"
-      }
-    ],
-    "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
-      }
-    ],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
-      },
-      {
-        "id": "urn:ngm:class:hyperparameter-tuning",
-        "label": "Hyperparameter Tuning"
-      },
-      {
-        "id": "urn:ngm:class:ci-cd-automation",
-        "label": "CI/CD Pipeline"
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
       }
     ]
   },
   "wikilinks": [
     {
-      "slug": "model-training",
-      "label": "Model Training"
-    },
-    {
-      "slug": "machine-learning",
-      "label": "Machine Learning"
-    },
-    {
-      "slug": "open-source",
-      "label": "Open Source"
-    },
-    {
       "slug": "mlops",
       "label": "MLOps"
     },
     {
-      "slug": "https-mlflow-org-docs-latest-tracking-html",
-      "label": "https://mlflow.org/docs/latest/tracking.html"
+      "slug": "data-versioning",
+      "label": "Data Versioning"
     },
     {
-      "slug": "https-en-wikipedia-org-wiki-mlops",
-      "label": "https://en.wikipedia.org/wiki/MLOps"
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "mlflow",
+      "label": "MLflow"
+    },
+    {
+      "slug": "dvc",
+      "label": "DVC"
     }
   ],
   "backlinks": [

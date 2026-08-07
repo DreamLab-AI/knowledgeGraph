@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:d8b6d70f70f31f9d52543447334e5f48d0c14a8dd53caf8512d3af1c4cc45e04",
+  "title": "Software Development Kit",
+  "slug": "software-development-kit",
+  "public": true,
+  "classIri": "urn:ngm:class:software-development-kit",
+  "domain": "infrastructure",
+  "definition": "A packaged collection of tools for building software against a specific platform, service, or hardware target, typically bundling libraries, application programming interfaces, compilers or build tooling, debuggers, emulators, documentation, and sample code, so that developers can create, test, and ship applications without assembling the platform-specific toolchain themselves.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:application-software",
+      "label": "Application Software"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:software-library",
+        "label": "Software Library"
+      },
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "id": "urn:ngm:class:integrated-development-environment",
+        "label": "Integrated Development Environment"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "application-software",
+      "label": "Application Software"
+    },
+    {
+      "slug": "software-library",
+      "label": "Software Library"
+    },
+    {
+      "slug": "runtime-environment",
+      "label": "Runtime Environment"
+    }
+  ],
+  "backlinks": []
+}

@@ -369,6 +369,14 @@
       "label": "Hardware and Edge"
     },
     {
+      "slug": "intrusion-detection",
+      "label": "Intrusion Detection"
+    },
+    {
+      "slug": "outlier-detection",
+      "label": "Outlier Detection"
+    },
+    {
       "slug": "predictive-maintenance",
       "label": "Predictive Maintenance"
     },

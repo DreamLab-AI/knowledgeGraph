@@ -150,6 +150,10 @@
       "label": "CBDC Cross-Border Settlement"
     },
     {
+      "slug": "netting",
+      "label": "Netting"
+    },
+    {
       "slug": "transaction-finality",
       "label": "Transaction Finality"
     },

@@ -180,6 +180,10 @@
       "label": "Smart Contract"
     },
     {
+      "slug": "state-proof",
+      "label": "State Proof"
+    },
+    {
       "slug": "trust-framework",
       "label": "Trust Framework"
     },

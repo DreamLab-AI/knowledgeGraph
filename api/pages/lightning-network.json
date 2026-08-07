@@ -537,6 +537,10 @@
       "label": "AI Upscaling and Super-Resolution"
     },
     {
+      "slug": "api-monetisation",
+      "label": "API Monetisation"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
     },

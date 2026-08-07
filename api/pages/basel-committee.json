@@ -124,6 +124,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "basel-ii",
+      "label": "Basel II"
+    },
+    {
       "slug": "cbdcs",
       "label": "CBDCs"
     },

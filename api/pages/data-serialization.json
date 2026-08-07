@@ -145,6 +145,10 @@
     {
       "slug": "digital-twin-interop-protocol",
       "label": "Digital Twin Interop Protocol"
+    },
+    {
+      "slug": "yaml",
+      "label": "YAML"
     }
   ]
 }

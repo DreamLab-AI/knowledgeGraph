@@ -38,7 +38,7 @@
         "label": "Mixup Augmentation"
       },
       {
-        "id": "urn:ngm:class:cutmix",
+        "id": "urn:ngm:class:cut-mix",
         "label": "CutMix"
       },
       {
@@ -348,8 +348,16 @@
       "label": "Generative Adversarial Networks"
     },
     {
+      "slug": "noise-injection",
+      "label": "Noise Injection"
+    },
+    {
       "slug": "synthetic-data-generator",
       "label": "Synthetic Data Generator"
+    },
+    {
+      "slug": "training-pipeline",
+      "label": "Training Pipeline"
     }
   ]
 }

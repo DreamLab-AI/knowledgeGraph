@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:82ff4bd9211832fc00c2bdba61e054531b840833ddbe596d4e731780eb061856",
+  "title": "Industrial Strategy",
+  "slug": "industrial-strategy",
+  "public": true,
+  "classIri": "urn:ngm:class:industrial-strategy",
+  "domain": "governance",
+  "definition": "The UK government's long-term policy framework for shaping the structure of the national economy through targeted support for priority sectors, exemplified by the 2017 Industrial Strategy white paper and the 2025 Modern Industrial Strategy, which designate growth-driving sectors \u2014 including digital technologies and artificial intelligence \u2014 for coordinated investment, skills development, regulatory reform, and public procurement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:public-policy",
+      "label": "Public Policy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-investment",
+        "label": "AI Investment"
+      },
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:national-ai-strategy",
+        "label": "National AI Strategy"
+      },
+      {
+        "id": "urn:ngm:class:uk-national-ai-strategy",
+        "label": "UK National AI Strategy"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "public-policy",
+      "label": "Public Policy"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "national-ai-strategy",
+      "label": "National Ai Strategy"
+    },
+    {
+      "slug": "economic-growth",
+      "label": "Economic Growth"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "uk-national-ai-strategy",
+      "label": "UK National AI Strategy"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:3ca2117d6a066abea61e41b3683d7cccb5e4731dc8d66945c0a1b976c21347ab",
+  "title": "Checkpointing",
+  "slug": "checkpointing",
+  "public": true,
+  "classIri": "urn:ngm:class:checkpointing",
+  "domain": "distributed-systems",
+  "definition": "A fault-tolerance technique in which a system periodically captures a consistent snapshot of its execution state \u2014 memory, variables, message queues, or conversation context \u2014 and persists it to durable storage, so that after a crash, pre-emption, or migration the computation can resume from the most recent checkpoint rather than restarting from the beginning; foundational to long-running distributed workloads, ML training, and agent runtimes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      },
+      {
+        "id": "urn:ngm:class:state-management",
+        "label": "State Management"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "state-management",
+      "label": "State Management"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    }
+  ]
+}

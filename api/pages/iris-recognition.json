@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:bb4f14a677ca0a89b6bd63744864760e79b93471cffaeb686687ac4d5e2fbdd8",
+  "title": "Iris Recognition",
+  "slug": "iris-recognition",
+  "public": true,
+  "classIri": "urn:ngm:class:iris-recognition",
+  "domain": "security",
+  "definition": "Iris recognition is a biometric identification technique that authenticates individuals from the intricate, epigenetically random texture of the iris, which is stable from early childhood and differs even between genetically identical twins. Near-infrared imaging, iris segmentation and Gabor-wavelet encoding \u2014 pioneered by John Daugman \u2014 produce a compact IrisCode compared via Hamming distance, delivering among the lowest false-match rates of any biometric and powering border control, national identity schemes such as India's Aadhaar, and proof-of-personhood systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:biometric-identification",
+      "label": "Biometric Identification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      },
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:worldcoin",
+        "label": "Worldcoin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "biometric-identification",
+      "label": "Biometric Identification"
+    },
+    {
+      "slug": "face-recognition",
+      "label": "Face Recognition"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "worldcoin",
+      "label": "Worldcoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

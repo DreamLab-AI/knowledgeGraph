@@ -187,6 +187,10 @@
     {
       "slug": "order-book",
       "label": "Order Book"
+    },
+    {
+      "slug": "supply-and-demand",
+      "label": "Supply and Demand"
     }
   ]
 }

@@ -73,10 +73,6 @@
       "label": "Alignment"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "training-and-fine-tuning",
       "label": "Training and fine tuning"
     }

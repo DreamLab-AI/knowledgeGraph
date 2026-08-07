@@ -250,6 +250,10 @@
     {
       "slug": "revenue-sharing",
       "label": "Revenue Sharing"
+    },
+    {
+      "slug": "subscription-model",
+      "label": "Subscription Model"
     }
   ]
 }

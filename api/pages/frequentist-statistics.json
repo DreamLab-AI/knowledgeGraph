@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:aebb7ccc67b4c33b6697f5791b2f6ef3030e117ab6483ff1e8e33ab57163845d",
+  "title": "Frequentist Statistics",
+  "slug": "frequentist-statistics",
+  "public": true,
+  "classIri": "urn:ngm:class:frequentist-statistics",
+  "domain": "data",
+  "definition": "The school of statistical inference that defines probability as long-run relative frequency over repeated sampling, treats parameters as fixed unknowns rather than random variables, and evaluates procedures \u2014 estimators, hypothesis tests, confidence intervals \u2014 by their repeated-sampling operating characteristics such as bias, error rates, and coverage, in explicit contrast to Bayesian inference over posterior beliefs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistics",
+      "label": "Statistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-decision-theory",
+        "label": "Bayesian Decision Theory"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:conformal-prediction",
+        "label": "Conformal Prediction"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "hypothesis-testing",
+      "label": "Hypothesis Testing"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

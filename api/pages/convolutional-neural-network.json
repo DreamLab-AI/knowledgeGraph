@@ -356,6 +356,14 @@
       "label": "Optical Sensor Array"
     },
     {
+      "slug": "pooling-layer",
+      "label": "Pooling Layer"
+    },
+    {
+      "slug": "rtmpose",
+      "label": "RTMPose"
+    },
+    {
       "slug": "real-esrgan",
       "label": "Real-ESRGAN"
     },

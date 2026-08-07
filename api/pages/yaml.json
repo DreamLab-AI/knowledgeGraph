@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:9831daaaa0a94144fc3378fde30109ecfc1639ae1d738f35bedbb6ac80210f85",
+  "title": "YAML",
+  "slug": "yaml",
+  "public": true,
+  "classIri": "urn:ngm:class:yaml",
+  "domain": "standards",
+  "definition": "A human-readable data serialisation language (YAML Ain't Markup Language) that expresses mappings, sequences, and scalars through indentation-based structure rather than delimiters, and is a strict superset of JSON. Designed for legibility and hand-editing, it adds comments, anchors and aliases for reuse, and multi-document streams, which has made it the dominant format for configuration in the DevOps ecosystem \u2014 Kubernetes manifests, CI pipelines, Ansible playbooks, and OpenAPI definitions \u2014 despite well-known pitfalls around implicit typing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-serialization",
+      "label": "Data Serialization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "data-serialization",
+      "label": "Data Serialization"
+    },
+    {
+      "slug": "json",
+      "label": "JSON"
+    },
+    {
+      "slug": "openapi",
+      "label": "OpenAPI"
+    }
+  ],
+  "backlinks": []
+}

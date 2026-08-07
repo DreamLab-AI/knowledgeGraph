@@ -158,7 +158,7 @@
         "label": "Stable Diffusion"
       },
       {
-        "id": "urn:ngm:class:lora-fine-tuning",
+        "id": "urn:ngm:class:lo-ra-fine-tuning",
         "label": "LoRA Fine-Tuning"
       },
       {

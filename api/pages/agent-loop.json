@@ -95,6 +95,10 @@
     {
       "slug": "terminal-coding-agents",
       "label": "Terminal Coding Agents"
+    },
+    {
+      "slug": "tool-call-loop",
+      "label": "Tool Call Loop"
     }
   ]
 }

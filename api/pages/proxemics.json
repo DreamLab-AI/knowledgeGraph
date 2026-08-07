@@ -8,7 +8,7 @@
   "definition": "The study and application of interpersonal and human-robot spatial relationships \u2014 including intimate, personal, social, and public distance zones \u2014 to design robotic systems that behave in spatially appropriate ways. Proxemics-aware robots adjust their approach trajectories, velocities, and stopping distances in response to detected human zones, improving perceived safety, comfort, and social acceptability in shared environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],

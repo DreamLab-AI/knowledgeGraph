@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:06f563853591cd2a7f0739d7a2eaeb247d929c93ffab72c7ea31e896fcc4fd88",
+  "title": "AI Research",
+  "slug": "ai-research",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-research",
+  "domain": "artificial-intelligence",
+  "definition": "AI research is the systematic scientific investigation of methods for creating and understanding machine intelligence, spanning theoretical foundations, algorithm and architecture development, empirical benchmarking, and the study of capabilities, limitations, safety, and societal impact. It is conducted across universities, corporate laboratories, and independent institutes, and disseminated through peer-reviewed venues such as NeurIPS, ICML, and AAAI, as well as preprint servers and open-source releases.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-ecosystem",
+        "label": "AI Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence-research",
+        "label": "Artificial Intelligence Research"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "neurips",
+      "label": "NeurIPS"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
+      "slug": "answer-ai",
+      "label": "Answer AI"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    }
+  ]
+}

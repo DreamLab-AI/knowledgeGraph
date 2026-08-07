@@ -132,6 +132,10 @@
       "label": "Evaluation benchmarks and leaderboards"
     },
     {
+      "slug": "leaderboard",
+      "label": "Leaderboard"
+    },
+    {
       "slug": "model-property",
       "label": "Model Property"
     },

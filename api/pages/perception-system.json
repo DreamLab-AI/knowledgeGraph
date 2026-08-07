@@ -30,7 +30,7 @@
         "label": "Scene Understanding"
       },
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ],
@@ -709,6 +709,10 @@
     {
       "slug": "collision-avoidance",
       "label": "Collision Avoidance"
+    },
+    {
+      "slug": "end-to-end-learning",
+      "label": "End-to-End Learning"
     },
     {
       "slug": "ground-robot",

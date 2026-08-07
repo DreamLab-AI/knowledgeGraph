@@ -88,7 +88,7 @@
         "label": "Chain-of-Thought Prompting"
       },
       {
-        "id": "urn:ngm:class:langchain",
+        "id": "urn:ngm:class:lang-chain",
         "label": "LangChain"
       },
       {

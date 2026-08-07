@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:227936a954451924bae1da14bb4157c84ff233469d71a8e5ebd0360c1b86edb6",
+  "title": "Hardware Design",
+  "slug": "hardware-design",
+  "public": true,
+  "classIri": "urn:ngm:class:hardware-design",
+  "domain": "infrastructure",
+  "definition": "The engineering discipline of specifying, architecting, implementing, and verifying physical computing and electronic systems \u2014 from printed circuit boards and mechatronic assemblies to FPGAs and full-custom silicon \u2014 spanning requirements capture, architectural trade-off between performance, power, area, and cost, register-transfer-level description in hardware description languages, synthesis and physical implementation, and exhaustive pre-fabrication verification, since unlike software a shipped hardware error cannot be patched and a mask respin costs months and millions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      },
+      {
+        "id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardware-description-language",
+        "label": "Hardware Description Language"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semiconductor",
+        "label": "Semiconductor"
+      },
+      {
+        "id": "urn:ngm:class:jedec",
+        "label": "JEDEC"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "systems-engineering",
+      "label": "Systems Engineering"
+    },
+    {
+      "slug": "hardware-description-language",
+      "label": "Hardware Description Language"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "semiconductor",
+      "label": "Semiconductor"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    }
+  ]
+}

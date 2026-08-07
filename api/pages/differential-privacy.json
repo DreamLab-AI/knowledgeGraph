@@ -182,12 +182,24 @@
       "label": "Dataset"
     },
     {
+      "slug": "gaussian-mechanism",
+      "label": "Gaussian Mechanism"
+    },
+    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
     },
     {
       "slug": "information-security",
       "label": "Information Security"
+    },
+    {
+      "slug": "laplace-mechanism",
+      "label": "Laplace Mechanism"
+    },
+    {
+      "slug": "noise-injection",
+      "label": "Noise Injection"
     },
     {
       "slug": "privacy-preserving-analytics",

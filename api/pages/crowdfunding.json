@@ -103,5 +103,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "regulation-d",
+      "label": "Regulation D"
+    }
+  ]
 }

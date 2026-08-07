@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:c780ef2632926789cf641771876ba6c37f7ee5baab6a20000c3bfe28a88dd30d",
+  "title": "Intellectual Property",
+  "slug": "intellectual-property",
+  "public": true,
+  "classIri": "urn:ngm:class:intellectual-property",
+  "domain": "governance",
+  "definition": "A category of legally protected intangible assets arising from creations of the mind, encompassing copyright over creative works, patents over inventions, trade marks over distinctive signs, and trade secrets over confidential know-how. Intellectual property law grants creators time-limited exclusive rights to exploit their creations commercially, balancing incentives for innovation against public access, and underpins licensing, technology transfer, and the contested attribution of AI-generated content.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "id": "urn:ngm:class:patent",
+        "label": "Patent"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-licence",
+        "label": "Software Licence"
+      },
+      {
+        "id": "urn:ngm:class:ai-generated-content",
+        "label": "AI Generated Content"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "copyright",
+      "label": "Copyright"
+    },
+    {
+      "slug": "software-licence",
+      "label": "Software Licence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
+      "slug": "intellectual-property-rights-framework-law",
+      "label": "Copyright Law"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "erc721",
+      "label": "ERC721"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    }
+  ]
+}

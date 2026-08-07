@@ -1,0 +1,139 @@
+{
+  "id": "urn:visionflow:page:2a6cfb24f8a9ce2cd77d723a1c0aa81662cb4ca659e21b7348c72ab7fe3bac96",
+  "title": "Mixture of Experts",
+  "slug": "mixture-of-experts",
+  "public": true,
+  "classIri": "urn:ngm:class:mixture-of-experts",
+  "domain": "machine-learning",
+  "definition": "A sparse neural network architecture in which a learned router (gating network) dispatches each input \u2014 in modern transformers, each token at each MoE layer \u2014 to a small subset of many parallel expert sub-networks, so that total parameter count can grow enormously while per-token computation stays roughly constant; introduced by Jacobs and Jordan in 1991 and revived at scale by Shazeer's sparsely-gated MoE and the Switch Transformer, it underpins frontier models such as Mixtral and DeepSeek-V3.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network-architecture",
+      "label": "Neural Network Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-scaling",
+        "label": "Model Scaling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monolithic-ai",
+        "label": "Monolithic AI"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanisms",
+        "label": "Attention Mechanisms"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-network-architecture",
+      "label": "Neural Network Architecture"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "model-scaling",
+      "label": "Model Scaling"
+    },
+    {
+      "slug": "monolithic-ai",
+      "label": "Monolithic Ai"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

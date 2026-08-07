@@ -8,7 +8,7 @@
   "definition": "A structured terminology reference documenting standardised vocabulary for Human-Robot Interaction (HRI), encompassing communication protocols, behavioural patterns, and engagement modalities. It enables consistent annotation and semantic understanding of interaction contexts across robotic and autonomous systems, aligned with IEEE and ISO standards.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],

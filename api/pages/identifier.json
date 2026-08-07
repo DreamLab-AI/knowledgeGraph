@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:285437db8c5e1541aa49708b4abd51642a065b66e4bac0901e75b44ce2d0cebe",
+  "title": "Identifier",
+  "slug": "identifier",
+  "public": true,
+  "classIri": "urn:ngm:class:identifier",
+  "domain": "standards",
+  "definition": "A symbol, string, or token that unambiguously denotes an entity \u2014 a resource, person, organisation, device, dataset, or concept \u2014 within a defined scope, enabling that entity to be referenced, located, compared, and linked independently of its descriptive attributes. Identifiers are the foundational primitive of naming systems: their guarantees of uniqueness, persistence, and resolvability within a namespace determine what URIs, UUIDs, DIDs, and registry codes can be trusted to do.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identification",
+      "label": "Identification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:uri",
+        "label": "URI"
+      },
+      {
+        "id": "urn:ngm:class:namespace",
+        "label": "Namespace"
+      },
+      {
+        "id": "urn:ngm:class:unique-identifier",
+        "label": "Unique Identifier"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "identification",
+      "label": "Identification"
+    },
+    {
+      "slug": "uri",
+      "label": "URI"
+    },
+    {
+      "slug": "namespace",
+      "label": "Namespace"
+    },
+    {
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "centralised-identifier",
+      "label": "Centralised Identifier"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    }
+  ]
+}

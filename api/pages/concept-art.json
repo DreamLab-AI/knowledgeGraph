@@ -66,7 +66,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:3d-modeling",
+        "id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       },
       {
@@ -155,7 +155,7 @@
         "label": "Adobe Firefly"
       },
       {
-        "id": "urn:ngm:class:controlnet",
+        "id": "urn:ngm:class:control-net",
         "label": "ControlNet"
       },
       {

@@ -99,10 +99,6 @@
       "label": "Diffusion Models"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "emergence",
       "label": "Emergence"
     },

@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:b6a4769d2b1f2ae91209660ccd43d853c4a05e61d50dfa5fb7020e2e649c67d4",
+  "title": "Web of Things",
+  "slug": "web-of-things",
+  "public": true,
+  "classIri": "urn:ngm:class:web-of-things",
+  "domain": "standards",
+  "definition": "A W3C standardisation effort that applies web architecture, protocols, and semantics to the Internet of Things, describing physical devices through machine-readable Thing Descriptions based on JSON-LD so that heterogeneous sensors, actuators, and services can be discovered, composed, and controlled through uniform web interfaces regardless of the underlying transport protocol, providing an interoperability layer that bridges fragmented IoT ecosystems and makes device capabilities legible to software agents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:web-standards",
+      "label": "Web Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "web-standards",
+      "label": "Web Standards"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "world-wide-web-consortium",
+      "label": "World Wide Web Consortium"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "agent2-agent-protocol-google-2025",
+      "label": "Agent2Agent Protocol (Google 2025)"
+    }
+  ]
+}

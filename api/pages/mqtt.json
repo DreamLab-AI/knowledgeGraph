@@ -158,6 +158,10 @@
       "label": "Home Assistant"
     },
     {
+      "slug": "iot-platform",
+      "label": "IoT Platform"
+    },
+    {
       "slug": "io-t-sensor-network",
       "label": "IoT Sensor Network"
     },

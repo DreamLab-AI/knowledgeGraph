@@ -91,7 +91,7 @@
         "label": "InvokeAI"
       },
       {
-        "id": "urn:ngm:class:automatic1111-web-ui",
+        "id": "urn:ngm:class:automatic-1111-web-ui",
         "label": "AUTOMATIC1111 WebUI"
       }
     ],
@@ -136,7 +136,7 @@
         "label": "InvokeAI"
       },
       {
-        "id": "urn:ngm:class:automatic1111-web-ui",
+        "id": "urn:ngm:class:automatic-1111-web-ui",
         "label": "AUTOMATIC1111 WebUI"
       }
     ]

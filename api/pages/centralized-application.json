@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:524c8485c40179ce08c5aa91bba074bc038da992474b8a30016675e23cd4f5d6",
+  "title": "Centralised Application",
+  "slug": "centralized-application",
+  "public": true,
+  "classIri": "urn:ngm:class:centralized-application",
+  "domain": "infrastructure",
+  "definition": "A software application whose logic, state, and data are operated by a single controlling entity on infrastructure it administers, typically following a client-server architecture in which users depend on the operator for availability, data custody, access control, and rule changes, in contrast to decentralised applications whose execution and state are replicated across a permissionless network.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-system",
+      "label": "Software System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-application",
+        "label": "Blockchain Application"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:single-point-of-failure",
+        "label": "Single Point of Failure"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "software-system",
+      "label": "Software System"
+    },
+    {
+      "slug": "decentralised-application",
+      "label": "Decentralised Application"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
+  "backlinks": []
+}

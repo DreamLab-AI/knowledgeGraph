@@ -98,6 +98,10 @@
     {
       "slug": "bayesian-optimisation",
       "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "stochastic-optimisation",
+      "label": "Stochastic Optimisation"
     }
   ]
 }

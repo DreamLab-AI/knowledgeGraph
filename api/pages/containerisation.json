@@ -122,6 +122,14 @@
       "label": "Configuration Management"
     },
     {
+      "slug": "container-image",
+      "label": "Container Image"
+    },
+    {
+      "slug": "container-registry",
+      "label": "Container Registry"
+    },
+    {
       "slug": "edge-computing",
       "label": "Edge Computing"
     }

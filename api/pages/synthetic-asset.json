@@ -112,5 +112,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "hedging",
+      "label": "Hedging"
+    },
+    {
+      "slug": "mint-burn-mechanism",
+      "label": "Mint-Burn Mechanism"
+    }
+  ]
 }

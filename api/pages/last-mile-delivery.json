@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:logistics-optimization",
+        "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       },
       {
@@ -47,10 +47,6 @@
     {
       "slug": "ground-robot",
       "label": "Ground Robot"
-    },
-    {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
     }
   ]
 }

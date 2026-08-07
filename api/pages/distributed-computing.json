@@ -737,6 +737,10 @@
       "label": "Parallel Computing"
     },
     {
+      "slug": "parameter-server",
+      "label": "Parameter Server"
+    },
+    {
       "slug": "pipeline-parallelism",
       "label": "Pipeline Parallelism"
     },

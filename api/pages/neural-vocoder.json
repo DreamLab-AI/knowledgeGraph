@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:402fc535bb9f858c4add5c43c7f51aceac9ba0df658ad608376a979e520489f9",
+  "title": "Neural Vocoder",
+  "slug": "neural-vocoder",
+  "public": true,
+  "classIri": "urn:ngm:class:neural-vocoder",
+  "domain": "machine-learning",
+  "definition": "A neural vocoder is a deep generative model that synthesises a raw audio waveform from a compact intermediate representation, most commonly a mel-spectrogram produced by the acoustic model in a text-to-speech pipeline. Beginning with WaveNet in 2016 and evolving through flow-based, GAN-based designs such as HiFi-GAN, and diffusion-based approaches, neural vocoders replaced signal-processing methods such as Griffin-Lim and WORLD, delivering near-natural speech quality at real-time or faster generation speeds on commodity hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:speech-synthesis",
+        "label": "Speech Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
+      "slug": "speech-synthesis",
+      "label": "Speech Synthesis"
+    },
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    }
+  ]
+}

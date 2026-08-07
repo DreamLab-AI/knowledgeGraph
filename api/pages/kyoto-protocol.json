@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:1d532aaa02c88ad73adb7a3c978c395c226f0ee72c64e171f9a9f357d677ec17",
+  "title": "Kyoto Protocol",
+  "slug": "kyoto-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:kyoto-protocol",
+  "domain": "governance",
+  "definition": "The 1997 international treaty under the UN Framework Convention on Climate Change that, for the first time, set legally binding greenhouse gas emission reduction targets for industrialised (Annex B) countries, and created the flexible market mechanisms \u2014 International Emissions Trading, the Clean Development Mechanism, and Joint Implementation \u2014 that founded the compliance carbon market. In force from 2005 with commitment periods spanning 2008-2020, it was superseded as the primary climate treaty by the Paris Agreement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:climate-policy",
+      "label": "Climate Policy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-carbon-market",
+        "label": "Compliance Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:emissions-trading-scheme",
+        "label": "Emissions Trading Scheme"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "climate-policy",
+      "label": "Climate Policy"
+    },
+    {
+      "slug": "paris-agreement",
+      "label": "Paris Agreement"
+    },
+    {
+      "slug": "compliance-carbon-market",
+      "label": "Compliance Carbon Market"
+    },
+    {
+      "slug": "emissions-trading-scheme",
+      "label": "Emissions Trading Scheme"
+    },
+    {
+      "slug": "carbon-credits",
+      "label": "Carbon Credits"
+    }
+  ],
+  "backlinks": []
+}

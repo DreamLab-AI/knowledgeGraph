@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:03319ece7685b695307ce77f320fb7a2fb0ce9566fa3a8253e5787833e5dcdf5",
+  "title": "Trustless Execution",
+  "slug": "trustless-execution",
+  "public": true,
+  "classIri": "urn:ngm:class:trustless-execution",
+  "domain": "blockchain",
+  "definition": "Trustless execution is the property of a computational system whereby parties can rely on the correct execution of agreed logic without trusting any single operator, intermediary or counterparty. Blockchains achieve it by combining deterministic smart-contract code, replicated execution across many independent nodes, consensus mechanisms that make history tamper-evident, and cryptographic verification, so that outcomes \u2014 payments, settlements, state transitions \u2014 follow from code and verifiable data rather than institutional promises.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralisation",
+      "label": "Decentralisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "id": "urn:ngm:class:conditional-payment",
+        "label": "Conditional Payment"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralisation",
+      "label": "Decentralisation"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "decentralized-application",
+      "label": "Decentralized Application"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    }
+  ]
+}

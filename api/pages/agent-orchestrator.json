@@ -85,7 +85,7 @@
         "label": "Plan-and-Execute Pattern"
       },
       {
-        "id": "urn:ngm:class:react-pattern",
+        "id": "urn:ngm:class:re-act-pattern",
         "label": "ReAct Pattern"
       },
       {
@@ -479,6 +479,10 @@
     {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "error-recovery",
+      "label": "Error Recovery"
     },
     {
       "slug": "multi-agent-orchestration-frameworks",

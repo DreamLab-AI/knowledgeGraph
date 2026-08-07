@@ -233,10 +233,6 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
-    },
-    {
       "slug": "adaptive-learning",
       "label": "Adaptive Learning"
     },
@@ -327,6 +323,10 @@
     {
       "slug": "edge-computing",
       "label": "Edge Computing"
+    },
+    {
+      "slug": "gradient-compression",
+      "label": "Gradient Compression"
     },
     {
       "slug": "hardware-and-edge",

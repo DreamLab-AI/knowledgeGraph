@@ -15,7 +15,7 @@ public:: true
       "vc:label": "activation functions"
     },
     {
-      "@id": "urn:visionflow:linked:adam-optimizer",
+      "@id": "urn:visionflow:linked:adam-optimiser",
       "vc:label": "Adam optimizer"
     },
     {
@@ -867,7 +867,7 @@ public:: true
     },
     {
       "raw": "[[Adam optimizer]]",
-      "resolved": "urn:visionflow:linked:adam-optimizer",
+      "resolved": "urn:visionflow:linked:adam-optimiser",
       "kind": "StubLink"
     },
     {

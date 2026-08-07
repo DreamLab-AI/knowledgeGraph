@@ -136,6 +136,10 @@
       "label": "Bayes Filter"
     },
     {
+      "slug": "local-planner",
+      "label": "Local Planner"
+    },
+    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },

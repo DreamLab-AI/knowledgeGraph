@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:8b7241e84c4e3481a49886318835dbd43170fe7102364251ff70aaeaf52fb55d",
+  "title": "Broadcasting",
+  "slug": "broadcasting",
+  "public": true,
+  "classIri": "urn:ngm:class:broadcasting",
+  "domain": "infrastructure",
+  "definition": "The one-to-many distribution of a signal or message from a single source to all receivers within reach, in contrast to unicast (one-to-one) and multicast (one-to-selected-group) delivery. In telecommunications it denotes terrestrial and satellite radio and television transmission over allocated spectrum, and by extension the broadcast primitives of computer networks, where a frame or packet is addressed to every node on a segment. The same word names a distinct but analogous mechanism in array computing, where NumPy-style broadcasting stretches arrays of differing shapes to a common shape so that element-wise operations apply one value across many without copying data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telecommunications",
+      "label": "Telecommunications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      },
+      {
+        "id": "urn:ngm:class:numpy",
+        "label": "NumPy"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "telecommunications",
+      "label": "Telecommunications"
+    },
+    {
+      "slug": "spectrum-allocation",
+      "label": "Spectrum Allocation"
+    },
+    {
+      "slug": "satellite-communication",
+      "label": "Satellite Communication"
+    },
+    {
+      "slug": "numpy",
+      "label": "NumPy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "patent",
+      "label": "Patent"
+    }
+  ]
+}

@@ -367,8 +367,20 @@
       "label": "AI Group Formation"
     },
     {
+      "slug": "arc-consistency",
+      "label": "Arc Consistency"
+    },
+    {
       "slug": "automated-reasoning",
       "label": "Automated Reasoning"
+    },
+    {
+      "slug": "backtracking-search",
+      "label": "Backtracking Search"
+    },
+    {
+      "slug": "branch-and-bound",
+      "label": "Branch and Bound"
     },
     {
       "slug": "classical-planning",
@@ -391,12 +403,20 @@
       "label": "Constraint Based Design"
     },
     {
+      "slug": "constraint-propagation",
+      "label": "Constraint Propagation"
+    },
+    {
       "slug": "constraint-solver",
       "label": "Constraint Solver"
     },
     {
       "slug": "decision-engine",
       "label": "Decision Engine"
+    },
+    {
+      "slug": "local-search",
+      "label": "Local Search"
     },
     {
       "slug": "model-based-control",

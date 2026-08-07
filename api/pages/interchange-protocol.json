@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:interchange-protocol",
   "domain": "spatial-computing",
-  "definition": "Interchange Protocol is a spatial computing concept.",
+  "definition": "An interchange protocol is an agreed set of rules and data formats for transferring assets, avatars, scenes and other content between platforms and applications. Such protocols enable interoperability across virtual environments and spatial computing systems, allowing content to move between implementations without loss of structure or meaning.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -18,7 +18,12 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse-interoperability",
+        "label": "Metaverse Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
@@ -32,7 +37,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:protocol",
+        "label": "Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {

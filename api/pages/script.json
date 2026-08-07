@@ -178,6 +178,10 @@
       "label": "Layer2"
     },
     {
+      "slug": "unlocking-script",
+      "label": "Unlocking Script"
+    },
+    {
       "slug": "wallet",
       "label": "Wallet"
     }

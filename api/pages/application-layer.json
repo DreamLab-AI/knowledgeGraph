@@ -965,10 +965,6 @@
       "label": "LoRA DoRA etc"
     },
     {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
-    },
-    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },

@@ -116,6 +116,10 @@
       "label": "Audio Synthesis"
     },
     {
+      "slug": "lossy-compression",
+      "label": "Lossy Compression"
+    },
+    {
       "slug": "spatial-audio-scene-description",
       "label": "Spatial Audio Scene Description"
     }

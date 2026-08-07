@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:6465b9c5dfede162674a29ac999e4a0e8eae7a0b22dea43415e764d73eddc8ad",
+  "title": "RTMPose",
+  "slug": "rtmpose",
+  "public": true,
+  "classIri": "urn:ngm:class:rtmpose",
+  "domain": "machine-learning",
+  "definition": "A family of real-time multi-person pose estimation models from OpenMMLab's MMPose project (Jiang et al., 2023) that pairs a lightweight CSPNeXt convolutional backbone with a SimCC coordinate-classification head, treating keypoint localisation as classification over discretised horizontal and vertical bins rather than heatmap regression. RTMPose achieves strong COCO accuracy at real-time speeds on CPU, GPU, and mobile targets, and serves as the teacher and architectural basis for distilled variants such as DWPose.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dwpose",
+        "label": "DWPose"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ]
+}

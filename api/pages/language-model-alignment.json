@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:direct-preference-optimization",
+        "id": "urn:ngm:class:direct-preference-optimisation",
         "label": "Direct Preference Optimization"
       },
       {
@@ -43,10 +43,6 @@
     {
       "slug": "anthropic",
       "label": "anthropic"
-    },
-    {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
     }
   ]
 }

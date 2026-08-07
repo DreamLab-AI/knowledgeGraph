@@ -109,7 +109,7 @@
         "label": "Predictive Personalization"
       },
       {
-        "id": "urn:ngm:class:behavioral-analytics",
+        "id": "urn:ngm:class:behavioural-analytics",
         "label": "Behavioral Analytics"
       },
       {
@@ -189,7 +189,7 @@
       "label": "User Experience"
     },
     {
-      "slug": "behavioral-analytics",
+      "slug": "behavioural-analytics",
       "label": "Behavioral Analytics"
     },
     {
@@ -357,10 +357,6 @@
     {
       "slug": "digital-transformation",
       "label": "Digital Transformation"
-    },
-    {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
     }
   ]
 }

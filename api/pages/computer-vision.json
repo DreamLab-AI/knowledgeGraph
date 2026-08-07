@@ -216,10 +216,6 @@
       "label": "3D Model"
     },
     {
-      "slug": "3-d-modeling",
-      "label": "3D Modeling"
-    },
-    {
       "slug": "3-d-reconstruction",
       "label": "3D Reconstruction"
     },
@@ -1048,6 +1044,10 @@
       "label": "Intelligent Virtual Entity"
     },
     {
+      "slug": "iris-recognition",
+      "label": "Iris Recognition"
+    },
+    {
       "slug": "kohya-dreambooth-and-similar",
       "label": "KOHYA Dreambooth and similar"
     },
@@ -1200,6 +1200,10 @@
       "label": "Proprietary AI Video"
     },
     {
+      "slug": "rtmpose",
+      "label": "RTMPose"
+    },
+    {
       "slug": "real-esrgan",
       "label": "Real-ESRGAN"
     },
@@ -1222,6 +1226,10 @@
     {
       "slug": "robotics",
       "label": "Robotics"
+    },
+    {
+      "slug": "satellite-imagery",
+      "label": "Satellite Imagery"
     },
     {
       "slug": "scene-capture-and-reconstruction",

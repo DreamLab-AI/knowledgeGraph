@@ -177,6 +177,10 @@
     {
       "slug": "quantum-network-node",
       "label": "Quantum Network Node"
+    },
+    {
+      "slug": "server",
+      "label": "Server"
     }
   ]
 }

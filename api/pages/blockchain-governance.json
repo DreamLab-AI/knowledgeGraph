@@ -233,6 +233,10 @@
       "label": "Policy Enforcement"
     },
     {
+      "slug": "stakeholder-coordination",
+      "label": "Stakeholder Coordination"
+    },
+    {
       "slug": "blockchain-core-concepts",
       "label": "blockchain core concepts"
     }

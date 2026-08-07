@@ -186,6 +186,14 @@
       "label": "Benchmark Evaluation"
     },
     {
+      "slug": "colbert",
+      "label": "ColBERT"
+    },
+    {
+      "slug": "glue-benchmark",
+      "label": "GLUE Benchmark"
+    },
+    {
       "slug": "retrieval-augmented-generation-rag",
       "label": "Retrieval Augmented Generation - RAG"
     },

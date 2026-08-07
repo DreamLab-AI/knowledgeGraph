@@ -149,6 +149,10 @@
       "label": "Edge Computing"
     },
     {
+      "slug": "error-recovery",
+      "label": "Error Recovery"
+    },
+    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     },

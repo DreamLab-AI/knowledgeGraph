@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:b3e53a2bd3350339ccebb40845cc43155be725774ba5efbeffc9bfdd9451341d",
+  "title": "Conversion Rate Optimisation",
+  "slug": "conversion-rate-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:conversion-rate-optimisation",
+  "domain": "data",
+  "definition": "Conversion rate optimisation (CRO) is the systematic practice of increasing the percentage of visitors to a digital property who complete a desired action \u2014 purchasing, subscribing, registering \u2014 by forming hypotheses about user behaviour and testing changes to copy, design, pricing, and flow. It combines quantitative instrumentation such as funnel analytics and A/B and multivariate testing with qualitative research such as session recordings and user interviews, turning traffic acquired through marketing into measurable business outcomes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-marketing",
+      "label": "Digital Marketing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-marketing",
+      "label": "Digital Marketing"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-Commerce"
+    },
+    {
+      "slug": "a-b-testing",
+      "label": "A/B Testing"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    }
+  ],
+  "backlinks": []
+}

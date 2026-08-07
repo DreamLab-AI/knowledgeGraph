@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:4fa495b5c483ce9468197f6c651b98be2df89cfa1a5d9e751764898bdd5ebac2",
+  "title": "Tool Call Loop",
+  "slug": "tool-call-loop",
+  "public": true,
+  "classIri": "urn:ngm:class:tool-call-loop",
+  "domain": "ai",
+  "definition": "The core execution cycle of an LLM agent, in which the model emits a structured tool invocation, the harness executes it against the real environment (shell, file system, API, browser), appends the result to the conversation, and re-invokes the model \u2014 repeating until the model judges the task complete and returns a final answer; this iterate-observe-act loop is what turns single-turn text generation into grounded, autonomous task execution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-loop",
+      "label": "Agent Loop"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:llm-application-frameworks",
+        "label": "LLM Application Frameworks"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-loop",
+      "label": "Agent Loop"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    }
+  ]
+}

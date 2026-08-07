@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:7c0766a4cdd8aa64a82af051fb0ada7ec970166a28d7e287be1b970d52baf307",
+  "title": "Variance",
+  "slug": "variance",
+  "public": true,
+  "classIri": "urn:ngm:class:variance",
+  "domain": "data",
+  "definition": "The fundamental statistical measure of dispersion, defined as the expected squared deviation of a random variable from its mean, Var(X) = E[(X \u2212 E[X])\u00b2]. Its square root is the standard deviation; its multivariate generalisation is the covariance matrix; and it parameterises the spread of the Gaussian distribution. Variance governs the reliability of sample-based estimates, decomposes prediction error in the bias-variance trade-off, and is the quantity that variance-reduction techniques in Monte Carlo estimation and stochastic optimisation exist to control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistics",
+      "label": "Statistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:covariance-matrix",
+        "label": "Covariance Matrix"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
+      "slug": "gaussian-distribution",
+      "label": "Gaussian Distribution"
+    },
+    {
+      "slug": "probability-distribution",
+      "label": "Probability Distribution"
+    },
+    {
+      "slug": "random-sampling",
+      "label": "Random Sampling"
+    }
+  ],
+  "backlinks": []
+}

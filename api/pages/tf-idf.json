@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:5b3f54a0c416c01ee2b1e9bf9876bb1cf6dfefce1e1c30bd35e0aa8439164cf5",
+  "title": "TF-IDF",
+  "slug": "tf-idf",
+  "public": true,
+  "classIri": "urn:ngm:class:tf-idf",
+  "domain": "data",
+  "definition": "Term frequency\u2013inverse document frequency, a classical term-weighting scheme that scores a term's importance to a document as the product of how often it occurs in that document and the logarithm of how rare it is across the collection, producing sparse vector representations that underpin lexical search ranking, document similarity, and feature extraction for text mining.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:keyword-search",
+        "label": "Keyword Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      },
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
+      "slug": "keyword-search",
+      "label": "Keyword Search"
+    },
+    {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
+    }
+  ]
+}

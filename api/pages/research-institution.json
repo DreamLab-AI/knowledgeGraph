@@ -97,6 +97,10 @@
       "label": "AAAI"
     },
     {
+      "slug": "academia",
+      "label": "Academia"
+    },
+    {
       "slug": "patent",
       "label": "Patent"
     }

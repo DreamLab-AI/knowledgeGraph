@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:economic-governance",
   "domain": "artificial-intelligence",
-  "definition": "Economic Governance is an artificial intelligence concept.",
+  "definition": "Economic Governance is the set of institutions, rules and decision-making processes through which economic activity is steered, monitored and held accountable. In digital and metaverse contexts it spans token issuance, treasury management, incentive design and market oversight, extending traditional monetary and fiscal governance into decentralised digital economies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -27,12 +27,30 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ]
   },
   "wikilinks": [
     {

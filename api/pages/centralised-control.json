@@ -92,5 +92,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "hierarchical-organisation",
+      "label": "Hierarchical Organisation"
+    }
+  ]
 }

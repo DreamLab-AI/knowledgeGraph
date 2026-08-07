@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:cb47410033f168c2d3a74bdb74d5718592859cf14953a70ae8bce1f83567865f",
+  "title": "DID Controller",
+  "slug": "did-controller",
+  "public": true,
+  "classIri": "urn:ngm:class:did-controller",
+  "domain": "security",
+  "definition": "The entity\u2014person, organisation, or autonomous system\u2014authorised to make changes to a DID document, as defined by the W3C DID Core specification. The DID controller proves its authority by controlling the cryptographic keys or verification methods designated in the DID document, and may be the DID subject itself (self-sovereign control), a guardian acting for a subject such as a child or an IoT device, or a set of parties sharing control. It is unrelated to the PID controller of control engineering, with which it shares only a surface string.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:entity",
+      "label": "Entity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "did-document",
+      "label": "DID Document"
+    },
+    {
+      "slug": "cryptographic-key",
+      "label": "Cryptographic Key"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    }
+  ]
+}

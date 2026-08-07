@@ -994,6 +994,10 @@
       "label": "Layer 0"
     },
     {
+      "slug": "liveness",
+      "label": "Liveness"
+    },
+    {
       "slug": "nft-swapping",
       "label": "NFT Swapping"
     },
@@ -1064,6 +1068,10 @@
     {
       "slug": "transaction-standard",
       "label": "Transaction Standard"
+    },
+    {
+      "slug": "trustless-execution",
+      "label": "Trustless Execution"
     },
     {
       "slug": "validator",

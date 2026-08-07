@@ -87,7 +87,7 @@ public:: true
       {"@id": "urn:ngm:class:formal-logic", "label": "Formal Logic"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:neurosymbolic-ai", "label": "Neurosymbolic AI"},
+      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neurosymbolic AI"},
       {"@id": "urn:ngm:class:business-rules-engine", "label": "Business Rules Engine"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ],

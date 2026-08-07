@@ -103,7 +103,7 @@ public:: true
       {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:advanced-driver-assistance-systems", "label": "Advanced Driver Assistance Systems"},
+      {"@id": "urn:ngm:class:advanced-driver-assistance-system", "label": "Advanced Driver Assistance Systems"},
       {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"}
     ],
     "bridgesTo": [

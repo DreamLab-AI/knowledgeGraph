@@ -45,6 +45,10 @@
       "label": "Constraint Satisfaction"
     },
     {
+      "slug": "task-scheduling",
+      "label": "Task Scheduling"
+    },
+    {
       "slug": "value-transfer",
       "label": "Value Transfer"
     }

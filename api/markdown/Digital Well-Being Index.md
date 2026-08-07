@@ -168,7 +168,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:behavioral-analytics",
+        "@id": "urn:ngm:class:behavioural-analytics",
         "label": "Behavioral Tracking"
       },
       {

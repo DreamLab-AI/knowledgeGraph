@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:ff69e9d3869870d00f7008db4f19013412e870478f6eab4c91758c12a80bddb1",
+  "title": "Laplace Mechanism",
+  "slug": "laplace-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:laplace-mechanism",
+  "domain": "security",
+  "definition": "The foundational noise mechanism of differential privacy, which releases a numeric query result after adding random noise drawn from a Laplace distribution whose scale equals the query's L1 sensitivity divided by the privacy budget epsilon; introduced by Dwork, McSherry, Nissim, and Smith in 2006, it achieves pure epsilon-differential privacy with no failure probability, and remains the standard mechanism for counts, sums, and histograms in privacy-preserving analytics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:noise-mechanisms",
+      "label": "Noise Mechanisms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gaussian-mechanism",
+        "label": "Gaussian Mechanism"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "noise-mechanisms",
+      "label": "Noise Mechanisms"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "gaussian-mechanism",
+      "label": "Gaussian Mechanism"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gaussian-mechanism",
+      "label": "Gaussian Mechanism"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    }
+  ]
+}

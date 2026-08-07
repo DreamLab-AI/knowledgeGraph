@@ -22,7 +22,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:behavior-tree",
+        "id": "urn:ngm:class:behaviour-tree",
         "label": "Behavior Tree"
       },
       {
@@ -142,7 +142,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:proximal-policy-optimization",
+        "id": "urn:ngm:class:proximal-policy-optimisation",
         "label": "Proximal Policy Optimization"
       },
       {
@@ -154,7 +154,7 @@
         "label": "Curriculum Learning"
       },
       {
-        "id": "urn:ngm:class:domain-randomization",
+        "id": "urn:ngm:class:domain-randomisation",
         "label": "Domain Randomization"
       },
       {
@@ -219,7 +219,7 @@
       "label": "Adaptive Difficulty"
     },
     {
-      "slug": "behavior-tree",
+      "slug": "behaviour-tree",
       "label": "Behavior Tree"
     },
     {
@@ -463,5 +463,10 @@
       "label": "Open-Endedness"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "utility-ai",
+      "label": "Utility AI"
+    }
+  ]
 }

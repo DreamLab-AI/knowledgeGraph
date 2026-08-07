@@ -115,6 +115,14 @@
       "label": "Edge Computing"
     },
     {
+      "slug": "fieldbus",
+      "label": "Fieldbus"
+    },
+    {
+      "slug": "industrial-ethernet",
+      "label": "Industrial Ethernet"
+    },
+    {
       "slug": "real-time",
       "label": "Real Time"
     },

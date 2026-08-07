@@ -175,7 +175,7 @@
         "label": "Plenoptic Camera"
       },
       {
-        "id": "urn:ngm:class:nerf",
+        "id": "urn:ngm:class:ne-rf",
         "label": "NeRF"
       },
       {
@@ -386,6 +386,10 @@
     {
       "slug": "light-field",
       "label": "Light field"
+    },
+    {
+      "slug": "tone-mapping",
+      "label": "Tone Mapping"
     }
   ]
 }

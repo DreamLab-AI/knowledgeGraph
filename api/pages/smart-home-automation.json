@@ -111,6 +111,10 @@
     {
       "slug": "home-assistant",
       "label": "Home Assistant"
+    },
+    {
+      "slug": "iot-platform",
+      "label": "IoT Platform"
     }
   ]
 }

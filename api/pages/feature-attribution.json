@@ -184,6 +184,10 @@
       "label": "Feature Importance"
     },
     {
+      "slug": "integrated-gradients",
+      "label": "Integrated Gradients"
+    },
+    {
       "slug": "local-explanation",
       "label": "Local Explanation"
     },

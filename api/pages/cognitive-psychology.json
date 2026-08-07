@@ -232,6 +232,10 @@
   ],
   "backlinks": [
     {
+      "slug": "behaviourism",
+      "label": "Behaviourism"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     },
@@ -242,6 +246,10 @@
     {
       "slug": "cognitive-science",
       "label": "Cognitive Science"
+    },
+    {
+      "slug": "heuristics",
+      "label": "Heuristics"
     },
     {
       "slug": "history-and-path-to-agi",

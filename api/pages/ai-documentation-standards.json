@@ -293,6 +293,10 @@
     {
       "slug": "ai-ecosystem",
       "label": "AI Ecosystem"
+    },
+    {
+      "slug": "datasheets-for-datasets",
+      "label": "Datasheets for Datasets"
     }
   ]
 }

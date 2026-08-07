@@ -152,6 +152,10 @@
       "label": "Identity Verification"
     },
     {
+      "slug": "iris-recognition",
+      "label": "Iris Recognition"
+    },
+    {
       "slug": "quadratic-voting",
       "label": "Quadratic Voting"
     },

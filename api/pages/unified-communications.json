@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:219156fbd0be4bd08a0d4add14e7910fe3ea1d286615fd34b6fdabfd80dedeb9",
+  "title": "Unified Communications",
+  "slug": "unified-communications",
+  "public": true,
+  "classIri": "urn:ngm:class:unified-communications",
+  "domain": "distributed-collaboration",
+  "definition": "The integration of enterprise communication channels \u2014 voice telephony, video conferencing, instant messaging, presence, voicemail, and content sharing \u2014 into a single coherent platform with a consistent user experience across devices, so that a conversation can move fluidly between modalities; delivered today predominantly as cloud services (UCaaS) such as Microsoft Teams, Zoom, and Cisco Webex.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:real-time-communication",
+      "label": "Real-Time Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:instant-messaging",
+        "label": "Instant Messaging"
+      },
+      {
+        "id": "urn:ngm:class:presence-technology",
+        "label": "Presence Technology"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-workplace-platform",
+        "label": "Digital Workplace Platform"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "video-conferencing",
+      "label": "Video Conferencing"
+    },
+    {
+      "slug": "presence-technology",
+      "label": "Presence Technology"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    }
+  ]
+}

@@ -103,8 +103,20 @@
       "label": "Computational Biology"
     },
     {
+      "slug": "evidence-based-medicine",
+      "label": "Evidence-Based Medicine"
+    },
+    {
+      "slug": "public-health",
+      "label": "Public Health"
+    },
+    {
       "slug": "social-robotics",
       "label": "Social Robotics"
+    },
+    {
+      "slug": "treatment-planning",
+      "label": "Treatment Planning"
     }
   ]
 }

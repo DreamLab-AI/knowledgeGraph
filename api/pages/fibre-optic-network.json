@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:6d58db72e87a53c042cca683fad850e75f05ce4323671131e2d2f0a0c23754e2",
+  "title": "Fibre Optic Network",
+  "slug": "fibre-optic-network",
+  "public": true,
+  "classIri": "urn:ngm:class:fibre-optic-network",
+  "domain": "infrastructure",
+  "definition": "A communications network that transmits data as pulses of light through strands of ultra-pure glass or plastic fibre, achieving terabit-class bandwidth, low attenuation over tens of kilometres, and immunity to electromagnetic interference. Fibre optic networks form the backbone of global telecommunications \u2014 submarine cables, metro rings, data-centre interconnects, and fibre-to-the-premises access \u2014 and set the bandwidth and latency envelope within which cloud, streaming, and real-time immersive applications operate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "slug": "telecommunications-infrastructure",
+      "label": "Telecommunications Infrastructure"
+    },
+    {
+      "slug": "satellite-communication",
+      "label": "Satellite Communication"
+    },
+    {
+      "slug": "data-centre",
+      "label": "Data Centre"
+    },
+    {
+      "slug": "bandwidth",
+      "label": "Bandwidth"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    }
+  ],
+  "backlinks": []
+}

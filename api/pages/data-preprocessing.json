@@ -92,7 +92,7 @@
         "label": "Data Cleaning"
       },
       {
-        "id": "urn:ngm:class:automl",
+        "id": "urn:ngm:class:auto-ml",
         "label": "AutoML"
       },
       {
@@ -130,6 +130,10 @@
     {
       "slug": "feature-engineering",
       "label": "Feature Engineering"
+    },
+    {
+      "slug": "outlier-detection",
+      "label": "Outlier Detection"
     }
   ]
 }

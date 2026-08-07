@@ -95,5 +95,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "gaussian-mechanism",
+      "label": "Gaussian Mechanism"
+    },
+    {
+      "slug": "laplace-mechanism",
+      "label": "Laplace Mechanism"
+    }
+  ]
 }

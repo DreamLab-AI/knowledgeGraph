@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:699270441734d723f677adeff926ee7e7d5a8422ba5330b60564aa55ed4276ea",
+  "title": "Model Retraining",
+  "slug": "model-retraining",
+  "public": true,
+  "classIri": "urn:ngm:class:model-retraining",
+  "domain": "machine-learning",
+  "definition": "The post-deployment lifecycle activity of training a machine learning model again on refreshed or expanded data after production monitoring detects data drift, concept drift, or performance degradation, restoring predictive accuracy without redesigning the model. Retraining closes the MLOps feedback loop between monitoring and deployment, and may be scheduled periodically or triggered automatically by drift-detection thresholds.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-operations",
+      "label": "Machine Learning Operations"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:drift-detection",
+        "label": "Drift Detection"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:model-versioning",
+        "label": "Model Versioning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:continuous-training",
+        "label": "Continuous Training"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-learning-operations",
+      "label": "Machine Learning Operations"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    }
+  ],
+  "backlinks": []
+}

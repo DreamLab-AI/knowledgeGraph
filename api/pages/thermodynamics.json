@@ -98,6 +98,10 @@
     {
       "slug": "pneumatic-actuator",
       "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "statistical-mechanics",
+      "label": "Statistical Mechanics"
     }
   ]
 }

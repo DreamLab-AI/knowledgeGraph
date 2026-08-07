@@ -466,7 +466,7 @@ public:: true
         "label": "Precision Agriculture"
       },
       {
-        "@id": "urn:ngm:class:smart-buildings",
+        "@id": "urn:ngm:class:smart-building",
         "label": "Smart Buildings"
       },
       {

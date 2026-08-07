@@ -173,6 +173,10 @@
       "label": "NCSC"
     },
     {
+      "slug": "ransomware",
+      "label": "Ransomware"
+    },
+    {
       "slug": "resilience-metric",
       "label": "Resilience Metric"
     },

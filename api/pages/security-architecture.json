@@ -184,6 +184,10 @@
       "label": "Trust Architecture"
     },
     {
+      "slug": "zero-trust",
+      "label": "Zero Trust"
+    },
+    {
       "slug": "zero-trust-architecture-zta",
       "label": "Zero-Trust Architecture (ZTA)"
     }

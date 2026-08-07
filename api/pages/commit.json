@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:9505cacb7c710ed17125fcc6cb3669e8ddca6c8cd8af6a31f6b3cd64604c3098",
+  "title": "Commit",
+  "slug": "commit",
+  "public": true,
+  "classIri": "urn:ngm:class:commit",
+  "domain": "infrastructure",
+  "definition": "The atomic unit of change in a version control system: an immutable, uniquely identified snapshot of a project's tracked content together with metadata \u2014 author, timestamp, descriptive message, and references to one or more parent commits \u2014 so that the full set of commits forms a directed acyclic graph recording the project's history; in Git each commit is content-addressed by a cryptographic hash of its tree and parents, making history tamper-evident and enabling branching, merging, reverting, and precise attribution of every line of a codebase.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "git",
+      "label": "Git"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "directed-acyclic-graph",
+      "label": "Directed Acyclic Graph"
+    }
+  ],
+  "backlinks": []
+}

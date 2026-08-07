@@ -183,6 +183,10 @@
       "label": "Carbon Offsetting"
     },
     {
+      "slug": "carbon-tax",
+      "label": "Carbon Tax"
+    },
+    {
       "slug": "circular-economy",
       "label": "Circular Economy"
     },
@@ -193,6 +197,10 @@
     {
       "slug": "integrity-council-for-the-voluntary-carbon-market",
       "label": "Integrity Council for the Voluntary Carbon Market"
+    },
+    {
+      "slug": "kyoto-protocol",
+      "label": "Kyoto Protocol"
     },
     {
       "slug": "paris-agreement",

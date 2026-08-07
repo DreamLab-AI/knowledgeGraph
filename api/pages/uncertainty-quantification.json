@@ -158,12 +158,20 @@
       "label": "Probabilistic Model"
     },
     {
+      "slug": "probabilistic-modelling",
+      "label": "Probabilistic Modelling"
+    },
+    {
       "slug": "sampling",
       "label": "Sampling"
     },
     {
       "slug": "stochastic-process",
       "label": "Stochastic Process"
+    },
+    {
+      "slug": "uncertainty",
+      "label": "Uncertainty"
     }
   ]
 }

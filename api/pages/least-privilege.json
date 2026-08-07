@@ -98,6 +98,10 @@
     {
       "slug": "agent-identity",
       "label": "Agent Identity"
+    },
+    {
+      "slug": "zero-trust",
+      "label": "Zero Trust"
     }
   ]
 }

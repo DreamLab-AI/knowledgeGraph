@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:d7dad511c5bdb111b363b8f1d27553e924eef972c5df24be16367b485afc385f",
+  "title": "Attention Economy",
+  "slug": "attention-economy",
+  "public": true,
+  "classIri": "urn:ngm:class:attention-economy",
+  "domain": "governance",
+  "definition": "An economic framing, articulated by Herbert Simon in 1971, in which human attention is treated as the scarce resource that information-rich systems compete to capture, allocate, and monetise. In digital markets it describes the business logic of advertising-funded platforms whose revenue scales with engagement, driving recommendation algorithms, infinite feeds, and notification design that optimise for time-on-platform \u2014 with documented consequences for information quality, creator livelihoods, and individual wellbeing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-economy",
+      "label": "Digital Economy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:digital-platform",
+        "label": "Digital Platform"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:content-curation",
+        "label": "Content Curation"
+      },
+      {
+        "id": "urn:ngm:class:creator-monetization",
+        "label": "Creator Monetization"
+      },
+      {
+        "id": "urn:ngm:class:digital-society-harms",
+        "label": "Digital Society Harms"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    },
+    {
+      "slug": "content-curation",
+      "label": "Content Curation"
+    },
+    {
+      "slug": "creator-monetization",
+      "label": "Creator Monetization"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

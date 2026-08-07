@@ -101,6 +101,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "coding-theory",
+      "label": "Coding Theory"
+    },
+    {
       "slug": "data-layer",
       "label": "Data Layer"
     },

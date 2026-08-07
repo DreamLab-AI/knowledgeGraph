@@ -100,6 +100,10 @@
       "label": "AAAI"
     },
     {
+      "slug": "academia",
+      "label": "Academia"
+    },
+    {
       "slug": "academic-conference",
       "label": "Academic Conference"
     },

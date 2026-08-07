@@ -26,7 +26,7 @@
         "label": "AI Audit"
       },
       {
-        "id": "urn:ngm:class:model-card",
+        "id": "urn:ngm:class:model-cards",
         "label": "Model Card"
       },
       {

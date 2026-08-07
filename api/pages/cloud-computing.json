@@ -202,6 +202,10 @@
       "label": "Blockchain As A Service"
     },
     {
+      "slug": "centralized-application",
+      "label": "Centralised Application"
+    },
+    {
       "slug": "cold-chain-monitoring",
       "label": "Cold Chain Monitoring"
     },
@@ -298,12 +302,12 @@
       "label": "Internet Infrastructure"
     },
     {
-      "slug": "io-t-sensor-network",
-      "label": "IoT Sensor Network"
+      "slug": "iot-platform",
+      "label": "IoT Platform"
     },
     {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
     },
     {
       "slug": "machine-learning-platform",
@@ -312,6 +316,14 @@
     {
       "slug": "metaverse",
       "label": "Metaverse"
+    },
+    {
+      "slug": "multi-cloud",
+      "label": "Multi-Cloud"
+    },
+    {
+      "slug": "on-premises",
+      "label": "On-Premises"
     },
     {
       "slug": "predictive-maintenance",
@@ -332,6 +344,10 @@
     {
       "slug": "regulatory-reporting",
       "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "server",
+      "label": "Server"
     },
     {
       "slug": "storage-infrastructure",

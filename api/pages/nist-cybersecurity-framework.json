@@ -151,10 +151,6 @@
       "label": "Cybersecurity Risk Management"
     },
     {
-      "slug": "etsi-domain-governance-compliance",
-      "label": "ETSI_Domain_Governance_Compliance"
-    },
-    {
       "slug": "threat-surface-map",
       "label": "Threat Surface Map"
     }

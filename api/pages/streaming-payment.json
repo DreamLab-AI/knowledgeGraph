@@ -32,7 +32,7 @@
         "label": "Web Monetization"
       },
       {
-        "id": "urn:ngm:class:machine-to-machine-payment",
+        "id": "urn:ngm:class:machine-to-machine-payments",
         "label": "Machine-to-Machine Payment"
       },
       {
@@ -118,5 +118,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "api-monetisation",
+      "label": "API Monetisation"
+    },
+    {
+      "slug": "subscription-model",
+      "label": "Subscription Model"
+    }
+  ]
 }

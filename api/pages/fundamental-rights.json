@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:cdcff4b6ed8ff202b29cda3cdee01c20c0473dfc8d60a0702da43acafb601083",
+  "title": "Fundamental Rights",
+  "slug": "fundamental-rights",
+  "public": true,
+  "classIri": "urn:ngm:class:fundamental-rights",
+  "domain": "governance",
+  "definition": "The basic rights and freedoms guaranteed to individuals by constitutional orders and supranational charters \u2014 dignity, privacy, freedom of expression, equality, non-discrimination, and effective remedy among them \u2014 which bind public authorities and increasingly shape technology governance, serving as the normative benchmark for instruments such as the EU Charter of Fundamental Rights, the GDPR, and the EU AI Act.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-rights",
+      "label": "Human Rights"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-rights-law",
+        "label": "Human Rights Law"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:eu-hleg-ai",
+        "label": "EU HLEG AI"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "human-rights",
+      "label": "Human Rights"
+    },
+    {
+      "slug": "rule-of-law",
+      "label": "Rule of Law"
+    },
+    {
+      "slug": "eu-hleg-ai",
+      "label": "EU HLEG AI"
+    }
+  ],
+  "backlinks": []
+}

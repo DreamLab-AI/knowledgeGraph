@@ -654,6 +654,10 @@
       "label": "Agentic Internet"
     },
     {
+      "slug": "filter-bubble",
+      "label": "Filter Bubble"
+    },
+    {
       "slug": "fine-tuning",
       "label": "Fine Tuning"
     },

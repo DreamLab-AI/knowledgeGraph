@@ -35,5 +35,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "information-management",
+      "label": "Information Management"
+    }
+  ]
 }

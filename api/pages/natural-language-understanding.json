@@ -160,6 +160,10 @@
       "label": "Customer Support Automation"
     },
     {
+      "slug": "glue-benchmark",
+      "label": "GLUE Benchmark"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },

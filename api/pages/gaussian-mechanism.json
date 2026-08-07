@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:6d1420c639c5b5a365896d87c5982512c17cf75b43e9e72d5f28b0ee320a0023",
+  "title": "Gaussian Mechanism",
+  "slug": "gaussian-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:gaussian-mechanism",
+  "domain": "security",
+  "definition": "A differential privacy noise mechanism that releases a numeric query result after adding noise drawn from a normal distribution calibrated to the query's L2 sensitivity, providing approximate (epsilon, delta)-differential privacy; its light tails, per-coordinate efficiency on high-dimensional vectors, and tight composition under R\u00e9nyi and zero-concentrated accounting make it the mechanism of choice for iterative computations, most prominently gradient perturbation in differentially private stochastic gradient descent (DP-SGD).",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:noise-mechanisms",
+      "label": "Noise Mechanisms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:laplace-mechanism",
+        "label": "Laplace Mechanism"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "noise-mechanisms",
+      "label": "Noise Mechanisms"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "laplace-mechanism",
+      "label": "Laplace Mechanism"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "laplace-mechanism",
+      "label": "Laplace Mechanism"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    }
+  ]
+}

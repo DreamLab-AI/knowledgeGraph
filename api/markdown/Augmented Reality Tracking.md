@@ -56,7 +56,7 @@ public:: true
         "label": "Marker-Based Tracking"
       },
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ],
@@ -100,7 +100,7 @@ public:: true
         "label": "Tracking"
       },
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ],
@@ -140,7 +140,7 @@ public:: true
   - supports:: [[Augmented Reality]]
   - supports:: [[Spatial Computing]]
   - enables:: [[Marker-Based Tracking]]
-  - enables:: [[Localization]]
+  - enables:: [[Localisation]]
   - uses:: [[Computer Vision]]
   - uses:: [[Sensor Fusion]]
   - uses:: [[Kalman Filter]]
@@ -149,7 +149,7 @@ public:: true
   - requires:: [[SLAM]]
   - dependsOn:: [[Visual SLAM]]
   - relatedTo:: [[Tracking]]
-  - relatedTo:: [[Localization]]
+  - relatedTo:: [[Localisation]]
   - implements:: [[Marker-Based Tracking]]
 - ### Provenance
   - updated:: 2026-06-15

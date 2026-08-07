@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:66cebabe65797a1219cb76d85a7cd1e819339055c85b571e0a5c090b6ad58b19",
+  "title": "Disinformation",
+  "slug": "disinformation",
+  "public": true,
+  "classIri": "urn:ngm:class:disinformation",
+  "domain": "governance",
+  "definition": "Disinformation is false or misleading information created and spread deliberately to deceive, manipulate, or cause harm \u2014 typically to advance a political, financial, or strategic objective. Its defining feature is intent: unlike misinformation, which is false content shared without the awareness that it is wrong, disinformation is engineered and disseminated in bad faith, often through coordinated inauthentic behaviour, fabricated sources, or synthetic media such as deepfakes. It threatens information integrity and media authenticity by corrupting the shared factual basis on which public discourse and democratic decision-making depend, and it is a central concern of trust-and-safety, electoral-security, and content-provenance work.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:information-integrity",
+        "label": "Information Integrity"
+      },
+      {
+        "id": "urn:ngm:class:media-authenticity",
+        "label": "Media Authenticity"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "information-integrity",
+      "label": "Information Integrity"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    }
+  ],
+  "backlinks": []
+}

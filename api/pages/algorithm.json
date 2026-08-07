@@ -369,12 +369,12 @@
       "label": "Distributed Systems Theory"
     },
     {
-      "slug": "optimization-algorithm",
-      "label": "Optimization Algorithm"
-    },
-    {
       "slug": "pathfinding-algorithm",
       "label": "Pathfinding Algorithm"
+    },
+    {
+      "slug": "software-system",
+      "label": "Software System"
     }
   ]
 }

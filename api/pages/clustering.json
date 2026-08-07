@@ -401,6 +401,14 @@
       "label": "Community Detection"
     },
     {
+      "slug": "data-mining",
+      "label": "Data Mining"
+    },
+    {
+      "slug": "spectral-clustering",
+      "label": "Spectral Clustering"
+    },
+    {
       "slug": "unsupervised-learning",
       "label": "Unsupervised Learning"
     },

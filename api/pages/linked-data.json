@@ -144,6 +144,10 @@
       "label": "Graph Database"
     },
     {
+      "slug": "json-ld-serialisation",
+      "label": "JSON-LD Serialisation"
+    },
+    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     },

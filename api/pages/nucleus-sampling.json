@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:66a7ee0814cbad87fb9b5590e99aebc5bd9c230ef728052be0e57fada6f1e317",
+  "title": "Nucleus Sampling",
+  "slug": "nucleus-sampling",
+  "public": true,
+  "classIri": "urn:ngm:class:nucleus-sampling",
+  "domain": "machine-learning",
+  "definition": "A stochastic decoding strategy for autoregressive language models, also called top-p sampling, that at each step truncates the next-token distribution to the smallest set of tokens whose cumulative probability exceeds a threshold p, renormalises, and samples from that nucleus \u2014 adapting the candidate pool to the model's confidence and avoiding both the degenerate repetition of greedy search and the incoherent tail noise of unrestricted sampling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sampling",
+      "label": "Sampling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:greedy-decoding",
+        "label": "Greedy Decoding"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
+      "slug": "greedy-decoding",
+      "label": "Greedy Decoding"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-twin-interop-protocol",
   "domain": "spatial-computing",
-  "definition": "Digital Twin Interop Protocol is a spatial computing concept.",
+  "definition": "A standardised API and communication framework enabling the exchange of state, simulation data, and behaviour models between heterogeneous digital twin systems, defining data formats, query interfaces, and synchronisation semantics so twins built on different platforms can interoperate and compose into federated simulations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -34,7 +34,7 @@
         "label": "Metadata Schema"
       },
       {
-        "id": "urn:ngm:class:state-synchronization",
+        "id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization"
       }
     ],
@@ -192,10 +192,6 @@
     {
       "slug": "etsi-domain-interoperability",
       "label": "ETSI_Domain_Interoperability"
-    },
-    {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
     }
   ]
 }

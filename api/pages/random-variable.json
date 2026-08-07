@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:9aade5b7c65fa9455e389537bd9a9129c0e154e440666744977369d8b8b208f9",
+  "title": "Random Variable",
+  "slug": "random-variable",
+  "public": true,
+  "classIri": "urn:ngm:class:random-variable",
+  "domain": "data",
+  "definition": "A measurable function that assigns a numerical value to each outcome in the sample space of a random experiment, providing the formal bridge between abstract probability spaces and quantitative analysis. Random variables may be discrete or continuous, are fully characterised by their probability distributions, and underpin expectation, variance, covariance, and the entropy measures central to information theory and statistical machine learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:covariance-matrix",
+        "label": "Covariance Matrix"
+      },
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "probability-distribution",
+      "label": "Probability Distribution"
+    },
+    {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
+      "slug": "entropy",
+      "label": "Entropy"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ],
+  "backlinks": []
+}

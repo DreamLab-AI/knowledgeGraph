@@ -96,5 +96,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "lossy-compression",
+      "label": "Lossy Compression"
+    }
+  ]
 }

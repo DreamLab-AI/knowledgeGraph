@@ -185,6 +185,14 @@
       "label": "Crypto Token"
     },
     {
+      "slug": "did-controller",
+      "label": "DID Controller"
+    },
+    {
+      "slug": "password",
+      "label": "Password"
+    },
+    {
       "slug": "user-consent-token",
       "label": "User Consent Token"
     }

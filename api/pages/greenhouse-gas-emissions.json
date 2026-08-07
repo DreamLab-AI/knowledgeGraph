@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:651e88031ed071ed51cdc6567bdf078d5516684e300d7ed833dbf6b32b5e2ad8",
+  "title": "Greenhouse Gas Emissions",
+  "slug": "greenhouse-gas-emissions",
+  "public": true,
+  "classIri": "urn:ngm:class:greenhouse-gas-emissions",
+  "domain": "governance",
+  "definition": "Releases into the atmosphere of gases that trap outgoing infrared radiation \u2014 principally carbon dioxide, methane, nitrous oxide, and fluorinated gases \u2014 from fossil-fuel combustion, industrial processes, agriculture, and land-use change. They are the dominant anthropogenic driver of climate change, are quantified in tonnes of CO2-equivalent using global warming potentials, and are the object of measurement, reporting, and reduction regimes ranging from the GHG Protocol's scope 1\u20133 accounting to national inventories under the Paris Agreement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:environment",
+      "label": "Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:climate-change",
+        "label": "Climate Change"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "environment",
+      "label": "Environment"
+    },
+    {
+      "slug": "climate-change",
+      "label": "Climate Change"
+    },
+    {
+      "slug": "ghg-protocol",
+      "label": "GHG Protocol"
+    },
+    {
+      "slug": "energy-consumption",
+      "label": "Energy Consumption"
+    },
+    {
+      "slug": "net-zero-targets",
+      "label": "Net Zero Targets"
+    }
+  ],
+  "backlinks": []
+}

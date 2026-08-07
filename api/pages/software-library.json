@@ -62,6 +62,10 @@
     {
       "slug": "math-library",
       "label": "Math Library"
+    },
+    {
+      "slug": "software-development-kit",
+      "label": "Software Development Kit"
     }
   ]
 }

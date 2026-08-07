@@ -422,6 +422,10 @@
       "label": "Behavioural Feedback Loop"
     },
     {
+      "slug": "classifier",
+      "label": "Classifier"
+    },
+    {
       "slug": "generative-design-tool",
       "label": "Generative Design Tool"
     }

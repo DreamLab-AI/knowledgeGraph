@@ -101,6 +101,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ceph",
+      "label": "Ceph"
+    },
+    {
       "slug": "data-fabric-architecture",
       "label": "Data Fabric Architecture"
     },

@@ -57,7 +57,7 @@
         "label": "Data Privacy"
       },
       {
-        "id": "urn:ngm:class:privacy-enhancing-technology",
+        "id": "urn:ngm:class:privacy-enhancing-technologies",
         "label": "Privacy-Enhancing Technology"
       }
     ],
@@ -93,6 +93,10 @@
   },
   "wikilinks": [],
   "backlinks": [
+    {
+      "slug": "ai-surveillance",
+      "label": "AI Surveillance"
+    },
     {
       "slug": "action-recognition",
       "label": "Action Recognition"

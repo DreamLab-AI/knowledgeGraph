@@ -187,6 +187,10 @@
       "label": "Configuration Management"
     },
     {
+      "slug": "design-pattern",
+      "label": "Design Pattern"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     },

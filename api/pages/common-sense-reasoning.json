@@ -90,7 +90,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:neurosymbolic-ai",
+        "id": "urn:ngm:class:neuro-symbolic-ai",
         "label": "Neurosymbolic AI"
       },
       {
@@ -327,6 +327,14 @@
     {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
+    },
+    {
+      "slug": "temporal-reasoning",
+      "label": "Temporal Reasoning"
+    },
+    {
+      "slug": "theory-of-mind",
+      "label": "Theory of Mind"
     }
   ]
 }

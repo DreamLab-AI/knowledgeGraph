@@ -51,6 +51,10 @@
     {
       "slug": "data-processing-hardware",
       "label": "Data Processing Hardware"
+    },
+    {
+      "slug": "nvidia-corporation-h200",
+      "label": "NVIDIA H200"
     }
   ]
 }

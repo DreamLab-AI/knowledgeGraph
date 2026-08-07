@@ -231,6 +231,10 @@
       "label": "AI Risks"
     },
     {
+      "slug": "ai-surveillance",
+      "label": "AI Surveillance"
+    },
+    {
       "slug": "accountability-ai-0068",
       "label": "Accountability (AI-0068)"
     },
@@ -251,6 +255,10 @@
       "label": "Algorithmic Accountability"
     },
     {
+      "slug": "bias-in-ai",
+      "label": "Bias in AI"
+    },
+    {
       "slug": "bias-in-large-language-models",
       "label": "Bias in Large Language Models"
     },
@@ -265,6 +273,10 @@
     {
       "slug": "digital-society-harms",
       "label": "Digital Society Harms"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
     },
     {
       "slug": "ms-phi-models",

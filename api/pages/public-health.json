@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:62dc6e9bd997780c8dc9c314a2fb35b9e0dd9fda8ae0b480989d7be57a8d718d",
+  "title": "Public Health",
+  "slug": "public-health",
+  "public": true,
+  "classIri": "urn:ngm:class:public-health",
+  "domain": "governance",
+  "definition": "The organised science and practice of protecting and improving the health of populations rather than individuals, encompassing disease surveillance, epidemiology, vaccination programmes, sanitation, food and water safety, health promotion, and emergency preparedness; delivered through governmental and international institutions, it works predominantly through prevention and policy, and increasingly depends on data infrastructure, computational modelling, and cross-sector coordination to detect and respond to threats at population scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:healthcare",
+      "label": "Healthcare"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:epidemiological-modelling",
+        "label": "Epidemiological Modelling"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "healthcare",
+      "label": "Healthcare"
+    },
+    {
+      "slug": "epidemiological-modelling",
+      "label": "Epidemiological Modelling"
+    },
+    {
+      "slug": "food-safety",
+      "label": "Food Safety"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "pandemic-preparedness-ai",
+      "label": "Pandemic Preparedness AI"
+    }
+  ]
+}

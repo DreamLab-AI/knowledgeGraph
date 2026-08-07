@@ -361,8 +361,20 @@
       "label": "Beam Search Decoding"
     },
     {
+      "slug": "constrained-decoding",
+      "label": "Constrained Decoding"
+    },
+    {
+      "slug": "nucleus-sampling",
+      "label": "Nucleus Sampling"
+    },
+    {
       "slug": "reasoning",
       "label": "Reasoning"
+    },
+    {
+      "slug": "sequence-model",
+      "label": "Sequence Model"
     },
     {
       "slug": "translation",

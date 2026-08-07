@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:c8f668425186b3d6a99b31969f0aea38abc76e3ebf4dd74fba23bdb6f8a45105",
+  "title": "AI Self-Regulation",
+  "slug": "ai-self-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-self-regulation",
+  "domain": "governance",
+  "definition": "AI self-regulation is the governance of artificial intelligence through voluntary commitments, codes of conduct, and internal policies adopted by AI developers and industry bodies rather than imposed by statute. It includes responsible scaling policies, voluntary safety commitments, model release and evaluation norms, and industry consortia that agree shared practices. As a domain-specific specialisation of general industry self-regulation, it is defined by contrast with binding AI regulation and with state safety bodies such as national AI Safety Institutes: it is faster and more technically informed but lacks enforcement and can drift toward reputational cover unless paired with external accountability. It is frequently framed as a bridge or interim measure ahead of formal regulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:self-regulation",
+      "label": "Self-Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:uk-ai-safety-institute",
+        "label": "UK AI Safety Institute"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "self-regulation",
+      "label": "Self-Regulation"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "responsible-scaling-policy",
+      "label": "Responsible Scaling Policy"
+    }
+  ],
+  "backlinks": []
+}

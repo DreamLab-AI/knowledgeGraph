@@ -77,6 +77,10 @@
     {
       "slug": "digital-twin-of-society-dto-s",
       "label": "Digital Twin of Society (DToS)"
+    },
+    {
+      "slug": "subscription-model",
+      "label": "Subscription Model"
     }
   ]
 }

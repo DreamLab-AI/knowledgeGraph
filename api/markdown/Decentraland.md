@@ -19,7 +19,7 @@ public:: true
       "vc:label": "Smart Contract"
     },
     {
-      "@id": "urn:visionflow:linked:asset-tokenization",
+      "@id": "urn:visionflow:linked:asset-tokenisation",
       "vc:label": "Asset Tokenization"
     },
     {
@@ -87,7 +87,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {
@@ -213,8 +213,8 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Asset Tokenization]]",
-      "resolved": "urn:visionflow:linked:asset-tokenization",
+      "raw": "[[Asset Tokenisation]]",
+      "resolved": "urn:visionflow:linked:asset-tokenisation",
       "kind": "ResolvedLink"
     },
     {
@@ -255,7 +255,7 @@ public:: true
   - is-subclass-of:: [[Metaverse Platform]]
   - bridges-to:: [[Decentralized Autonomous Organization]]
   - requires:: [[Ethereum Smart Contract Platform]], [[Smart Contract]]
-  - enables:: [[Asset Tokenization]], [[Social VR]]
+  - enables:: [[Asset Tokenisation]], [[Social VR]]
 
 - ### Content
   - Decentraland represents land parcels and wearable items as on-chain tokens, allowing users to buy, sell and build persistent content that they retain ownership of independently of the operator. The client renders an explorable 3D world in the browser and supports user-authored scenes and interactive experiences.

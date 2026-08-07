@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:4612fcd44ad9481ac5c133fde17a95a4daec623a363a29776bfebf51435d2cdc",
+  "title": "Case Management",
+  "slug": "case-management",
+  "public": true,
+  "classIri": "urn:ngm:class:case-management",
+  "domain": "governance",
+  "definition": "A business-process discipline for handling unstructured, knowledge-intensive work items \u2014 'cases' \u2014 whose resolution path cannot be fully predetermined, such as compliance investigations, insurance claims, legal matters, and customer disputes. Each case aggregates documents, tasks, participants, deadlines, and an audit trail around a single subject, and progresses through investigation, decision, and resolution stages guided by worker judgement rather than a rigid predefined flow.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:business-process-management",
+      "label": "Business Process Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:case-management-system",
+        "label": "Case Management System"
+      },
+      {
+        "id": "urn:ngm:class:records-management",
+        "label": "Records Management"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "business-process-management",
+      "label": "Business Process Management"
+    },
+    {
+      "slug": "transaction-monitoring",
+      "label": "Transaction Monitoring"
+    },
+    {
+      "slug": "case-management-system",
+      "label": "Case Management System"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "backlinks": []
+}

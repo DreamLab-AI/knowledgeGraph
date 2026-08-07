@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:44dc2a30cf368b37385faf422fb4906747e94a4fa463e5512fa24e855364579f",
+  "title": "AI Lifecycle Management",
+  "slug": "ai-lifecycle-management",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-lifecycle-management",
+  "domain": "governance",
+  "definition": "AI lifecycle management is the governed oversight of an AI system across its whole existence \u2014 design, data acquisition, training, validation, deployment, operation, monitoring, retraining, and retirement \u2014 so that risk controls, documentation, and accountability travel with the system rather than stopping at release. It extends generic asset lifecycle management with AI-specific concerns: dataset provenance and drift, model versioning, performance and bias monitoring in production, incident response for model failures, and the stage-mapped risk activities that frameworks such as the NIST AI Risk Management Framework require.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lifecycle-management",
+      "label": "Lifecycle Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:data-lifecycle",
+        "label": "Data Lifecycle"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "lifecycle-management",
+      "label": "Lifecycle Management"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:1d78b336473c05ec8aa254f8fae9cbeef761f71a674608bd847efe290a3fc507",
+  "title": "Error Recovery",
+  "slug": "error-recovery",
+  "public": true,
+  "classIri": "urn:ngm:class:error-recovery",
+  "domain": "distributed-systems",
+  "definition": "Error recovery is the set of mechanisms by which a system detects that an operation has failed or produced an invalid state and restores correct operation, through techniques such as retries with exponential backoff, checkpointing and rollback, compensating actions, graceful degradation, and escalation to human oversight. In autonomous agent systems it distinguishes robust task execution from brittle scripted automation, and in interaction design it covers helping users notice, diagnose, and undo their own mistakes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "interaction-design",
+      "label": "Interaction Design"
+    },
+    {
+      "slug": "resilience",
+      "label": "Resilience"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    }
+  ]
+}

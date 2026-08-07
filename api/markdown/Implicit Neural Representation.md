@@ -28,7 +28,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
-      {"@id": "urn:ngm:class:3d-gaussian-splatting", "label": "3D Gaussian Splatting"},
+      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
       {"@id": "urn:ngm:class:signed-distance-function", "label": "Signed Distance Function"}
     ],
     "dependsOn": [
@@ -53,7 +53,7 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:3d-content-generation", "label": "3D Content Generation"}
+      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"}
     ],
     "relatedTo_2": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}

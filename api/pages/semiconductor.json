@@ -30,5 +30,18 @@
     "relatedTo": []
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "electronic-design-automation",
+      "label": "Electronic Design Automation"
+    },
+    {
+      "slug": "hardware-design",
+      "label": "Hardware Design"
+    },
+    {
+      "slug": "semiconductor-industry",
+      "label": "Semiconductor Industry"
+    }
+  ]
 }

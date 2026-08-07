@@ -153,6 +153,10 @@
       "label": "Governance Model"
     },
     {
+      "slug": "risk-classification",
+      "label": "Risk Classification"
+    },
+    {
       "slug": "trust-framework",
       "label": "Trust Framework"
     }

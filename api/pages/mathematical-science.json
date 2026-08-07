@@ -63,6 +63,10 @@
       "label": "Applied Mathematics"
     },
     {
+      "slug": "geometry",
+      "label": "Geometry"
+    },
+    {
       "slug": "ontology-technical-details",
       "label": "ONTOLOGY_TECHNICAL_DETAILS"
     }

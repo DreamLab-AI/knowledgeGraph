@@ -186,6 +186,10 @@
     {
       "slug": "token-economics",
       "label": "Token Economics"
+    },
+    {
+      "slug": "token-governance",
+      "label": "Token Governance"
     }
   ]
 }

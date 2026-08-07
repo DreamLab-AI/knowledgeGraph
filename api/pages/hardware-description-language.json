@@ -98,6 +98,10 @@
     {
       "slug": "automated-design",
       "label": "Automated Design"
+    },
+    {
+      "slug": "hardware-design",
+      "label": "Hardware Design"
     }
   ]
 }

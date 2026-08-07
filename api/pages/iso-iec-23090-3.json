@@ -18,7 +18,16 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +36,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "id": "urn:ngm:class:video-coding",
+        "label": "Video Coding"
+      },
+      {
+        "id": "urn:ngm:class:immersive-media",
+        "label": "Immersive Media"
+      }
+    ]
   },
   "wikilinks": [
     {

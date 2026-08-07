@@ -61,10 +61,6 @@
     {
       "slug": "edge-computing-architecture",
       "label": "Edge Computing Architecture"
-    },
-    {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
     }
   ]
 }

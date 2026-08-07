@@ -52,7 +52,7 @@
         "label": "IoT Infrastructure"
       },
       {
-        "id": "urn:ngm:class:real-time-synchronization",
+        "id": "urn:ngm:class:real-time-synchronisation",
         "label": "Real-time Synchronization"
       },
       {
@@ -151,7 +151,7 @@
       "label": "Maintenance Schedule"
     },
     {
-      "slug": "real-time-synchronization",
+      "slug": "real-time-synchronisation",
       "label": "Real-time Synchronization"
     },
     {
@@ -199,5 +199,10 @@
       "label": "Predictive Maintenance"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "energy-optimization",
+      "label": "Energy Optimisation"
+    }
+  ]
 }

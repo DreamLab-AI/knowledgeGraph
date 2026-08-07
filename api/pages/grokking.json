@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:edb8ea204b96700292b181c57c317c09547a53e136fd4c89da6abdc491f85536",
+  "title": "Grokking",
+  "slug": "grokking",
+  "public": true,
+  "classIri": "urn:ngm:class:grokking",
+  "domain": "machine-learning",
+  "definition": "A training phenomenon in deep learning, first documented by Power et al. (2022) on algorithmic tasks, in which a network first memorises its training data \u2014 reaching perfect training accuracy while test accuracy stays at chance \u2014 and then, after continued training far beyond apparent convergence, abruptly transitions to near-perfect generalisation; interpreted as a delayed phase change from a memorising solution to a simpler, structured circuit, typically induced by regularisation such as weight decay.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generalisation",
+      "label": "Generalisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:benign-overfitting",
+        "label": "Benign Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "generalisation",
+      "label": "Generalisation"
+    },
+    {
+      "slug": "overfitting",
+      "label": "Overfitting"
+    },
+    {
+      "slug": "emergent-capabilities",
+      "label": "Emergent Capabilities"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    }
+  ]
+}

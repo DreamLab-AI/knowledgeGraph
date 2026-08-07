@@ -71,10 +71,6 @@
       "label": "Audit Trail"
     },
     {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
-    },
-    {
       "slug": "vector-clocks",
       "label": "Vector Clocks"
     }

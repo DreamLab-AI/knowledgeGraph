@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:6c0e1b737c1cf84634ae7349278fd01cffbb453ad4a56d360fe88aee1316986b",
+  "title": "Zero Trust",
+  "slug": "zero-trust",
+  "public": true,
+  "classIri": "urn:ngm:class:zero-trust",
+  "domain": "security",
+  "definition": "A security architecture built on the principle of 'never trust, always verify': no user, device, or workload is trusted by virtue of its network location, and every access request must be continuously authenticated, authorised, and encrypted based on identity, device posture, and context, replacing the traditional perimeter model in which anything inside the corporate network was implicitly trusted.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security-architecture",
+      "label": "Security Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      },
+      {
+        "id": "urn:ngm:class:virtual-private-network",
+        "label": "Virtual Private Network"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "security-architecture",
+      "label": "Security Architecture"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "least-privilege",
+      "label": "Least Privilege"
+    },
+    {
+      "slug": "perimeter-security",
+      "label": "Perimeter Security"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    }
+  ]
+}

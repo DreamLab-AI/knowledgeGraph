@@ -34,7 +34,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:logistics-optimization",
+        "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       },
       {
@@ -105,7 +105,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:logistics-optimization",
+        "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       },
       {
@@ -121,8 +121,8 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
+      "slug": "satellite-imagery",
+      "label": "Satellite Imagery"
     }
   ]
 }

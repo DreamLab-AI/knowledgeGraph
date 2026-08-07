@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:57aa51119b9fa2e744191ef32b8c830e07553d08c1b71e41ee9df0ab6f6c4501",
+  "title": "IEEE P2048-1",
+  "slug": "ieee-p2048-1",
+  "public": true,
+  "classIri": "urn:ngm:class:ieee-p2048-1",
+  "domain": "standards",
+  "definition": "IEEE P2048-1 is the part of the IEEE 2048 virtual and augmented reality standards series that establishes device taxonomy and definitions: a common vocabulary for classifying VR, AR, and mixed-reality hardware \u2014 head-mounted displays, handheld and projection systems, tracking and input devices \u2014 together with the defining attributes of each category. By fixing shared terminology and classification criteria, it gives the sibling parts of the series, regulators, and procurement specifications a consistent language for describing immersive devices and their capabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ieee-p-2048",
+        "label": "IEEE P2048"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ieee-p-2048-3",
+        "label": "IEEE P2048-3"
+      },
+      {
+        "id": "urn:ngm:class:xr-device",
+        "label": "XR Device"
+      },
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-p2048",
+      "label": "IEEE P2048"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    },
+    {
+      "slug": "xr-device",
+      "label": "XR Device"
+    },
+    {
+      "slug": "ieee-p2048-3",
+      "label": "IEEE P2048-3"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse-architecture-stack",
+      "label": "Metaverse Architecture Stack"
+    }
+  ]
+}

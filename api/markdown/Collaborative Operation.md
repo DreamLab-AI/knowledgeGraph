@@ -99,7 +99,7 @@ public:: true
   "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:robo-human-robot-interaction",
+      "@id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],
@@ -198,7 +198,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -239,7 +239,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Robotics]]
-  - is-part-of:: [[Human-Robot Interaction]], [[Manufacturing Process]]
+  - is-part-of:: [[Human Robot Interaction]], [[Manufacturing Process]]
   - requires:: [[Safety Monitoring]], [[Force Feedback]], [[Task Planning]]
   - enables:: [[Workspace Efficiency]], [[Production Flexibility]]
 

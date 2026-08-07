@@ -123,6 +123,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "peg",
+      "label": "Peg"
+    },
+    {
       "slug": "stablecoin",
       "label": "Stablecoin"
     }

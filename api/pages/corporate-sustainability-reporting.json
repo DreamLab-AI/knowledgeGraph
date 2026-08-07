@@ -104,6 +104,10 @@
     {
       "slug": "carbon-neutral-blockchain",
       "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "double-materiality",
+      "label": "Double Materiality"
     }
   ]
 }

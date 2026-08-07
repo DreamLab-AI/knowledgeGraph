@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:8f0ac0710a98b7e01ecab050c851e3e2a61aa4666f3bb3360fa10c0b302b3bb9",
+  "title": "Parameter Server",
+  "slug": "parameter-server",
+  "public": true,
+  "classIri": "urn:ngm:class:parameter-server",
+  "domain": "distributed-systems",
+  "definition": "A distributed systems architecture for large-scale machine learning in which a set of centralised server nodes holds the globally shared model parameters while many worker nodes compute gradients on partitions of the training data, pushing updates to the servers and pulling refreshed parameters back. The design decouples computation from state management, supports synchronous and asynchronous update schemes, and underpinned the first generation of industrial-scale distributed training before decentralised all-reduce approaches became dominant.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gradient-aggregation",
+        "label": "Gradient Aggregation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "data-parallelism",
+      "label": "Data Parallelism"
+    },
+    {
+      "slug": "gradient-aggregation",
+      "label": "Gradient Aggregation"
+    },
+    {
+      "slug": "collective-communication",
+      "label": "Collective Communication"
+    }
+  ],
+  "backlinks": []
+}

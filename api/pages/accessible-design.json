@@ -112,6 +112,10 @@
       "label": "Accessible Experience"
     },
     {
+      "slug": "inaccessible-design",
+      "label": "Inaccessible Design"
+    },
+    {
       "slug": "inclusive-xr-design",
       "label": "Inclusive Xr Design"
     }

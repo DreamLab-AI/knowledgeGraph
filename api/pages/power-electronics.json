@@ -188,6 +188,10 @@
       "label": "Electric Motor"
     },
     {
+      "slug": "h-bridge",
+      "label": "H-Bridge"
+    },
+    {
       "slug": "motion-control",
       "label": "Motion Control"
     },

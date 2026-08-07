@@ -156,6 +156,10 @@
       "label": "Cyber Security and Cryptography"
     },
     {
+      "slug": "decentralized-key-storage",
+      "label": "Decentralized Key Storage"
+    },
+    {
       "slug": "digital-asset-infrastructure",
       "label": "Digital Asset Infrastructure"
     },

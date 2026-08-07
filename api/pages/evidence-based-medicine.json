@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:22f932b07e897b6ad0c6cb69da283a10153e61f1eb41944cc0ed50eba691e87b",
+  "title": "Evidence-Based Medicine",
+  "slug": "evidence-based-medicine",
+  "public": true,
+  "classIri": "urn:ngm:class:evidence-based-medicine",
+  "domain": "governance",
+  "definition": "The practice of making clinical decisions by conscientiously integrating the best available research evidence with clinical expertise and patient values. Formalised in the early 1990s, it ranks evidence by methodological rigour \u2014 systematic reviews and randomised controlled trials at the top, expert opinion at the bottom \u2014 and operationalises care through critical appraisal, clinical guidelines, and decision support, replacing tradition- and authority-based practice with explicit, auditable use of research findings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:healthcare",
+      "label": "Healthcare"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:randomised-controlled-trial",
+        "label": "Randomised Controlled Trial"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "healthcare",
+      "label": "Healthcare"
+    },
+    {
+      "slug": "randomised-controlled-trial",
+      "label": "Randomised Controlled Trial"
+    },
+    {
+      "slug": "clinical-decision-support",
+      "label": "Clinical Decision Support"
+    },
+    {
+      "slug": "precision-medicine",
+      "label": "Precision Medicine"
+    }
+  ],
+  "backlinks": []
+}

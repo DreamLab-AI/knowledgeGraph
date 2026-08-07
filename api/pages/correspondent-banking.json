@@ -116,6 +116,10 @@
       "label": "CBDC Frameworks"
     },
     {
+      "slug": "foreign-exchange",
+      "label": "Foreign Exchange"
+    },
+    {
       "slug": "swift",
       "label": "SWIFT"
     }

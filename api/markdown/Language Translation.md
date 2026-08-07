@@ -60,7 +60,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ],
@@ -132,7 +132,7 @@ public:: true
   - Uses [[Natural Language Processing]]
   - Uses [[Large Language Models]]
   - Uses [[Transformer]]
-  - Enables [[Localization]]
+  - Enables [[Localisation]]
   - Related to [[Distributed Collaboration]]
 
 - ### Content

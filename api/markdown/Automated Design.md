@@ -86,7 +86,7 @@ public:: true
       { "@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool" },
       { "@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing" },
       { "@id": "urn:ngm:class:digital-twin", "label": "Digital Twin" },
-      { "@id": "urn:ngm:class:automl", "label": "AutoML" }
+      { "@id": "urn:ngm:class:auto-ml", "label": "AutoML" }
     ],
     "relatedTo": [
       { "@id": "urn:ngm:class:formal-verification", "label": "Formal Verification" },

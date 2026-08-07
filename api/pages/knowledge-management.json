@@ -124,6 +124,10 @@
       "label": "Asynchronous Video"
     },
     {
+      "slug": "best-practice",
+      "label": "Best Practice"
+    },
+    {
       "slug": "call-centres",
       "label": "Call Centres"
     },
@@ -146,6 +150,10 @@
     {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "information-management",
+      "label": "Information Management"
     },
     {
       "slug": "meeting-ai-assistant",

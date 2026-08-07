@@ -46,7 +46,7 @@
         "label": "Model Architecture"
       },
       {
-        "id": "urn:ngm:class:optimizer",
+        "id": "urn:ngm:class:optimiser",
         "label": "Optimizer"
       }
     ],
@@ -482,10 +482,6 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
-    },
-    {
       "slug": "adaptive-behaviour",
       "label": "Adaptive Behaviour"
     },
@@ -834,6 +830,10 @@
       "label": "ElevenLabs"
     },
     {
+      "slug": "end-to-end-learning",
+      "label": "End-to-End Learning"
+    },
+    {
       "slug": "external-ai-harness",
       "label": "External AI Harness"
     },
@@ -948,6 +948,10 @@
     {
       "slug": "motion-capture",
       "label": "Motion Capture"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal Artificial Intelligence"
     },
     {
       "slug": "music-and-audio",

@@ -467,6 +467,10 @@
     {
       "slug": "ide-coding-agents",
       "label": "IDE Coding Agents"
+    },
+    {
+      "slug": "web-of-things",
+      "label": "Web of Things"
     }
   ]
 }

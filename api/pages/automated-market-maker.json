@@ -217,6 +217,10 @@
       "label": "Mango Markets"
     },
     {
+      "slug": "market-maker",
+      "label": "Market Maker"
+    },
+    {
       "slug": "market-making",
       "label": "Market Making"
     },

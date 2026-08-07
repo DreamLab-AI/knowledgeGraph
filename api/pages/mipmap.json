@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:8ec78b127aac0836cfde2049dd8d640b450c17d042e2a61c33617e0b8a7834f6",
+  "title": "Mipmap",
+  "slug": "mipmap",
+  "public": true,
+  "classIri": "urn:ngm:class:mipmap",
+  "domain": "spatial-computing",
+  "definition": "A precomputed pyramid of progressively half-resolution versions of a texture image, from full size down to a single texel, from which the graphics pipeline selects (and trilinearly blends between) the level whose texel density best matches the on-screen footprint of the surface being shaded; introduced by Lance Williams in 1983, mipmapping eliminates minification aliasing and shimmer, improves texture-cache coherence, and costs only one third more memory than the base image.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:texture-map",
+      "label": "Texture Map"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:texture-compression",
+        "label": "Texture Compression"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "texture-map",
+      "label": "Texture Map"
+    },
+    {
+      "slug": "texture-mapping",
+      "label": "Texture Mapping"
+    },
+    {
+      "slug": "texture-compression",
+      "label": "Texture Compression"
+    },
+    {
+      "slug": "foveated-rendering",
+      "label": "Foveated Rendering"
+    }
+  ],
+  "backlinks": []
+}

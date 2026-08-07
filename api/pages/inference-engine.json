@@ -149,6 +149,10 @@
       "label": "Automated Reasoning"
     },
     {
+      "slug": "backward-chaining",
+      "label": "Backward Chaining"
+    },
+    {
       "slug": "chatbots",
       "label": "Chatbots"
     },
@@ -179,6 +183,10 @@
     {
       "slug": "edge-inference",
       "label": "Edge Inference"
+    },
+    {
+      "slug": "forward-chaining",
+      "label": "Forward Chaining"
     },
     {
       "slug": "knowledge-graph",

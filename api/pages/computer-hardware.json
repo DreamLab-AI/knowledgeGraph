@@ -97,6 +97,10 @@
       "label": "AI Hardware"
     },
     {
+      "slug": "cpu-architecture",
+      "label": "CPU Architecture"
+    },
+    {
       "slug": "gpu-architecture",
       "label": "GPU Architecture"
     },

@@ -332,6 +332,10 @@
     {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "throughput-optimisation",
+      "label": "Throughput Optimisation"
     }
   ]
 }

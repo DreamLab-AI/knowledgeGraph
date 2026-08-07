@@ -79,6 +79,10 @@
       "label": "Electric Motor"
     },
     {
+      "slug": "fieldbus",
+      "label": "Fieldbus"
+    },
+    {
       "slug": "proprioceptive-sensor",
       "label": "Proprioceptive Sensor"
     },

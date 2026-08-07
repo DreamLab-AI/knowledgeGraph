@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:d89b67e7447e5d7c5453bf4f0b06ce4ea790967c36b1be1a14b77a4d5f2cc243",
+  "title": "Digital Ethics",
+  "slug": "digital-ethics",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-ethics",
+  "domain": "governance",
+  "definition": "The branch of applied ethics that examines how digital technologies \u2014 data collection, algorithms, platforms, connected devices, and AI systems \u2014 affect human values such as autonomy, privacy, fairness, dignity, and wellbeing, and that develops principles, design methods, and governance instruments to align technology development with those values. It underpins frameworks including the EU HLEG Ethics Guidelines for Trustworthy AI and value-based engineering standards such as IEEE 7000.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ethics",
+      "label": "Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:value-sensitive-design",
+        "label": "Value-Sensitive Design"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethical-design-standard",
+        "label": "Ethical Design Standard"
+      },
+      {
+        "id": "urn:ngm:class:ieee-7000",
+        "label": "IEEE 7000"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ethics",
+      "label": "Ethics"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "value-sensitive-design",
+      "label": "Value-Sensitive Design"
+    },
+    {
+      "slug": "ieee-7000",
+      "label": "IEEE 7000"
+    }
+  ],
+  "backlinks": []
+}

@@ -37,7 +37,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -100,10 +100,6 @@
     {
       "slug": "automatic-differentiation",
       "label": "Automatic Differentiation"
-    },
-    {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
     }
   ]
 }

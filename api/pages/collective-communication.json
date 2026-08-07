@@ -102,6 +102,10 @@
     {
       "slug": "fsdp",
       "label": "FSDP"
+    },
+    {
+      "slug": "parameter-server",
+      "label": "Parameter Server"
     }
   ]
 }

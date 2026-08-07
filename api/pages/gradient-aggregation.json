@@ -92,5 +92,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "gradient-compression",
+      "label": "Gradient Compression"
+    },
+    {
+      "slug": "parameter-server",
+      "label": "Parameter Server"
+    }
+  ]
 }

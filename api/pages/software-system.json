@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:f705051568d0ce12aa4b84abe0fadadb0a7b4a88f43f0644679c3d2cb57b9083",
+  "title": "Software System",
+  "slug": "software-system",
+  "public": true,
+  "classIri": "urn:ngm:class:software-system",
+  "domain": "infrastructure",
+  "definition": "An organised assembly of interacting software components \u2014 programs, libraries, services, configuration, and data \u2014 that together deliver a coherent set of functions on computing hardware for defined users and purposes. A software system is more than its source code: it encompasses runtime behaviour, interfaces and contracts with other systems, deployment environment, and the evolutionary pressures of maintenance, versioning, and backward compatibility over its operational lifetime.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:system",
+      "label": "System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "system",
+      "label": "System"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "centralized-application",
+      "label": "Centralised Application"
+    }
+  ]
+}

@@ -132,7 +132,7 @@ public:: true
         "label": "3D File Format"
       },
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       }
     ],
@@ -273,7 +273,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[3D Modeling]]",
+      "raw": "[[3D Modelling]]",
       "resolved": "urn:visionflow:owl:class:3-d-modeling",
       "kind": "ResolvedLink"
     },
@@ -323,7 +323,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Asset]]
-  - bridges-to:: [[Computer Vision]], [[3D Modeling]], [[Animation Retargeting]]
+  - bridges-to:: [[Computer Vision]], [[3D Modelling]], [[Animation Retargeting]]
   - requires:: [[Mesh Data]], [[Material Definition]], [[Texture Mapping]]
   - enables:: [[3D Rendering]], [[Interactive Visualization]], [[Virtual Environment Design]]
 
@@ -341,7 +341,7 @@ public:: true
   - **LOD Variants**: Multiple detail levels for performance optimisation
 
   #### Related Concepts
-  - [[3D Modeling]], [[Mesh Data]], [[Material Definition]], [[Texture Mapping]], [[Animation Retargeting]]
+  - [[3D Modelling]], [[Mesh Data]], [[Material Definition]], [[Texture Mapping]], [[Animation Retargeting]]
 
 - ### Provenance
   - sources::

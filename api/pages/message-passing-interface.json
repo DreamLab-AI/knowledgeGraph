@@ -110,5 +110,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "openmp",
+      "label": "OpenMP"
+    }
+  ]
 }

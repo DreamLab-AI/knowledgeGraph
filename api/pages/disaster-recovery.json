@@ -128,6 +128,10 @@
       "label": "Fault Tolerance"
     },
     {
+      "slug": "ransomware",
+      "label": "Ransomware"
+    },
+    {
       "slug": "storage-infrastructure",
       "label": "Storage Infrastructure"
     }

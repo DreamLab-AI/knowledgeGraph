@@ -514,8 +514,16 @@
       "label": "Bio Terror"
     },
     {
+      "slug": "intellectual-property-rights-framework-law",
+      "label": "Copyright Law"
+    },
+    {
       "slug": "death-of-the-internet",
       "label": "Death of the Internet"
+    },
+    {
+      "slug": "eu-ai-act-regulatory-instrument-article-53",
+      "label": "EU AI Act Article 53"
     },
     {
       "slug": "open-generative-ai-tools",

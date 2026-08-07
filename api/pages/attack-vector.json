@@ -158,6 +158,10 @@
   ],
   "backlinks": [
     {
+      "slug": "intrusion-detection",
+      "label": "Intrusion Detection"
+    },
+    {
       "slug": "threat-actor",
       "label": "Threat Actor"
     },

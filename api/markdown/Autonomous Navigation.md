@@ -285,7 +285,7 @@ alias:: AutonomousNavigation
   - dependsOn:: [[Coordinate Frame]]
   - implements:: [[A* Algorithm]]
   - implements:: [[PID Controller]]
-  - supports:: [[Human-Robot Interaction]]
+  - supports:: [[Human Robot Interaction]]
   - supports:: [[Search and Rescue Robotics]]
   - contrastsWith:: [[Teleoperation]]
   - bridgesTo:: [[Spatial Computing]]

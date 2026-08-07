@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:15587f7e7234236ffb95b33b4d26369db800d58dafd580ceb4c930edc37ae0ae",
+  "title": "Mint-Burn Mechanism",
+  "slug": "mint-burn-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:mint-burn-mechanism",
+  "domain": "blockchain",
+  "definition": "A token supply-management pattern in which new units are created (minted) when value enters a system and permanently destroyed (burned) when it leaves, keeping circulating supply in one-to-one correspondence with the assets, collateral, or claims backing it. Implemented as privileged mint and burn functions in a token's smart contract, the pattern underlies fiat-backed and algorithmic stablecoins, wrapped tokens that represent assets locked on another chain, synthetic assets minted against collateral, and cross-chain bridges that burn on the source chain and mint on the destination. Its integrity depends entirely on access control and honest accounting of the backing: compromised mint authority or unbacked minting is a recurring cause of catastrophic protocol failures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:tokenomics",
+      "label": "Tokenomics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      },
+      {
+        "id": "urn:ngm:class:peg",
+        "label": "Peg"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:stable-coins",
+        "label": "Stablecoins"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-asset",
+        "label": "Synthetic Asset"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:token-bridge",
+        "label": "Token Bridge"
+      },
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "wrapped-token",
+      "label": "Wrapped Token"
+    },
+    {
+      "slug": "synthetic-asset",
+      "label": "Synthetic Asset"
+    },
+    {
+      "slug": "peg",
+      "label": "Peg"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    }
+  ]
+}

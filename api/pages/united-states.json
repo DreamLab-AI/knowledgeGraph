@@ -27,7 +27,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:china",
+        "label": "China"
+      },
+      {
+        "id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

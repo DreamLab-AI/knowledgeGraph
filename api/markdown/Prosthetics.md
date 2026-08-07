@@ -55,7 +55,7 @@ public:: true
 
 - ### Definition
   - Prosthetics is the field of designing and controlling artificial devices that replace missing or impaired body parts, restoring both appearance and function. As a branch of [[Assistive Technology]], modern prosthetic limbs embed [[Actuators]], sensors, and control systems.
-  - It draws heavily on [[Biomechanics]] and [[Human-Robot Interaction]] to map human intent onto device motion, and contrasts with the [[Exoskeleton]], which augments rather than replaces a limb.
+  - It draws heavily on [[Biomechanics]] and [[Human Robot Interaction]] to map human intent onto device motion, and contrasts with the [[Exoskeleton]], which augments rather than replaces a limb.
 
 - ### Overview
   - Prosthetics restores mobility and dexterity to people with limb loss or congenital absence, ranging from passive cosmetic devices to actively powered, intent-driven limbs.
@@ -89,7 +89,7 @@ public:: true
   - uses:: [[Actuators]]
   - requires:: [[Biomechanics]]
   - supports:: [[Rehabilitation Robotics]]
-  - supports:: [[Human-Robot Interaction]]
+  - supports:: [[Human Robot Interaction]]
   - contrastsWith:: [[Exoskeleton]]
   - bridgesTo:: [[Neural Interface]]
   - bridgesTo:: [[Wearable Robotics]]

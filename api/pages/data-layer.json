@@ -886,10 +886,6 @@
       "label": "Spatial Audio Scene Description"
     },
     {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
-    },
-    {
       "slug": "storage-infrastructure",
       "label": "Storage Infrastructure"
     },

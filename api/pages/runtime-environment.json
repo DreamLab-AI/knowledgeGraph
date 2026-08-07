@@ -140,6 +140,10 @@
       "label": "Internal AI Harness"
     },
     {
+      "slug": "software-development-kit",
+      "label": "Software Development Kit"
+    },
+    {
       "slug": "xr-runtime-environment",
       "label": "XR Runtime Environment"
     }

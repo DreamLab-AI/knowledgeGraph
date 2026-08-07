@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:91b96b0ce9251498c701e24df9c15536c5fcf339c5f3c7cf62af7907a6851244",
+  "title": "Filter Bubble",
+  "slug": "filter-bubble",
+  "public": true,
+  "classIri": "urn:ngm:class:filter-bubble",
+  "domain": "artificial-intelligence",
+  "definition": "A state of informational isolation in which algorithmic personalisation \u2014 recommendation systems, personalised search, and engagement-optimised feeds \u2014 progressively narrows the content a person encounters to material predicted to match their existing preferences and beliefs, reducing exposure to disconfirming viewpoints without the person's awareness or consent; coined by Eli Pariser in 2011, the concept names a structural harm of personalised media that feeds polarisation, reinforces bias, and erodes the shared factual ground of public discourse.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-society-harms",
+      "label": "Digital Society Harms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:death-of-the-internet",
+        "label": "Death of the Internet"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:content-discovery",
+        "label": "Content Discovery"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "recommendation-systems",
+      "label": "Recommendation Systems"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    }
+  ]
+}

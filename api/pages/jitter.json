@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:16c7dc721bc2a15a1c933bd9aad8edd44a36d2bb20a3391337e268eb5895cea0",
+  "title": "Jitter",
+  "slug": "jitter",
+  "public": true,
+  "classIri": "urn:ngm:class:jitter",
+  "domain": "infrastructure",
+  "definition": "Jitter is the variation in a signal's timing from its ideal or expected schedule \u2014 in packet networks, the variability of one-way delay between successive packets of a flow (packet delay variation, RFC 3393/5481), and in digital electronics, the deviation of clock edges from their nominal instants. Where latency measures how late data arrives, jitter measures how inconsistently it arrives; it is caused by queueing, scheduling, and route changes, degrades real-time audio, video, and control traffic, and is absorbed at receivers by de-jitter buffers at the price of added delay.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-performance-metrics",
+      "label": "Network Performance Metrics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "network-performance-metrics",
+      "label": "Network Performance Metrics"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "propagation-delay",
+      "label": "Propagation Delay"
+    },
+    {
+      "slug": "quality-of-service",
+      "label": "Quality Of Service"
+    },
+    {
+      "slug": "real-time-communication",
+      "label": "Real-Time Communication"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

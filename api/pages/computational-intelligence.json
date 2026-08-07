@@ -44,7 +44,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       },
       {
@@ -70,7 +70,7 @@
         "label": "Predictive Analytics"
       },
       {
-        "id": "urn:ngm:class:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {
@@ -136,7 +136,7 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:control-systems",
+        "id": "urn:ngm:class:control-system",
         "label": "Control Systems"
       },
       {
@@ -199,7 +199,7 @@
       "label": "Reinforcement Learning"
     },
     {
-      "slug": "optimization-algorithm",
+      "slug": "optimisation-algorithm",
       "label": "Optimization Algorithm"
     },
     {

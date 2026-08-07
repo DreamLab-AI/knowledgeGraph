@@ -424,6 +424,10 @@
       "label": "KOHYA Dreambooth and similar"
     },
     {
+      "slug": "multimodal-model",
+      "label": "Multimodal Model"
+    },
+    {
       "slug": "music-and-audio",
       "label": "Music and Audio"
     },

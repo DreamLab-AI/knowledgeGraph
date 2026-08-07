@@ -111,6 +111,10 @@
     {
       "slug": "bayesian-knowledge-tracing",
       "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "sequence-model",
+      "label": "Sequence Model"
     }
   ]
 }

@@ -86,5 +86,22 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "foreign-exchange",
+      "label": "Foreign Exchange"
+    },
+    {
+      "slug": "hedging",
+      "label": "Hedging"
+    },
+    {
+      "slug": "peg",
+      "label": "Peg"
+    },
+    {
+      "slug": "supply-and-demand",
+      "label": "Supply and Demand"
+    }
+  ]
 }

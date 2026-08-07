@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:6eec93eaac45253ab5a657adef63556f9c60984132649761f276b6f13fe7863e",
+  "title": "Apprenticeship Learning",
+  "slug": "apprenticeship-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:apprenticeship-learning",
+  "domain": "machine-learning",
+  "definition": "Apprenticeship learning is the problem of learning to perform a task at expert level from demonstrations, without an explicitly specified reward function. Introduced by Abbeel and Ng (2004), it proceeds via inverse reinforcement learning: the learner infers a reward function under which the expert's behaviour is near-optimal \u2014 typically as a linear combination of state features whose expected values it seeks to match \u2014 and then optimises a policy against that inferred reward, yielding performance guarantees relative to the expert and better generalisation than directly mimicking actions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:imitation-learning",
+      "label": "Imitation Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inverse-reinforcement-learning",
+        "label": "Inverse Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "inverse-reinforcement-learning",
+      "label": "Inverse Reinforcement Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "reward-function",
+      "label": "Reward Function"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    }
+  ]
+}

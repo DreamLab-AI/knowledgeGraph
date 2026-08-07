@@ -471,6 +471,14 @@
     {
       "slug": "progressive-disclosure-harnesses",
       "label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "slug": "single-turn-inference",
+      "label": "Single-Turn Inference"
+    },
+    {
+      "slug": "tool-call-loop",
+      "label": "Tool Call Loop"
     }
   ]
 }

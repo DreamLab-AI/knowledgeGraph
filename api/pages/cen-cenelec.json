@@ -36,7 +36,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:standardization",
+        "id": "urn:ngm:class:standardisation",
         "label": "Standardisation"
       }
     ],
@@ -58,7 +58,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:standardization",
+        "id": "urn:ngm:class:standardisation",
         "label": "Standardisation"
       }
     ],

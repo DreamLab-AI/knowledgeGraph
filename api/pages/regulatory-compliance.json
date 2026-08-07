@@ -276,6 +276,10 @@
       "label": "Carbon Accounting"
     },
     {
+      "slug": "case-management",
+      "label": "Case Management"
+    },
+    {
       "slug": "cohere",
       "label": "Cohere"
     },
@@ -346,6 +350,10 @@
     {
       "slug": "governance-model",
       "label": "Governance Model"
+    },
+    {
+      "slug": "governance-risk-compliance",
+      "label": "Governance Risk Compliance"
     },
     {
       "slug": "governance-structure",

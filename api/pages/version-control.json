@@ -131,6 +131,10 @@
       "label": "Collaboration Tools"
     },
     {
+      "slug": "commit",
+      "label": "Commit"
+    },
+    {
       "slug": "configuration-management",
       "label": "Configuration Management"
     },

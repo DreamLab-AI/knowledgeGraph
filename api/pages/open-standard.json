@@ -135,6 +135,10 @@
       "label": "3D Scene Exchange Protocol (SXP)"
     },
     {
+      "slug": "openxr-standard",
+      "label": "OpenXR Standard"
+    },
+    {
       "slug": "universal-scene-description",
       "label": "Universal Scene Description"
     }

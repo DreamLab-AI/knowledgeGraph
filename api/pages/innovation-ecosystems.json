@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:e1b48ee753d2a8cfe2f02635a14d69760e670e6a4ac8e23ff0f6be25eab8cb61",
+  "title": "Innovation Ecosystems",
+  "slug": "innovation-ecosystems",
+  "public": true,
+  "classIri": "urn:ngm:class:innovation-ecosystems",
+  "domain": "governance",
+  "definition": "Interdependent networks of firms, universities, research institutions, investors, and governments that jointly create, diffuse, and commercialise new technologies, where co-located talent pools, venture funding, shared infrastructure, and knowledge spillovers reinforce one another so that the productive capacity of the whole system exceeds the sum of its individual actors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:innovation",
+      "label": "Innovation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "id": "urn:ngm:class:ai-talent",
+        "label": "AI Talent"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-ecosystem",
+        "label": "AI Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "innovation",
+      "label": "Innovation"
+    },
+    {
+      "slug": "venture-capital",
+      "label": "Venture Capital"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "technology-transfer",
+      "label": "Technology Transfer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

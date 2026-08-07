@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:transformers",
   "domain": "artificial-intelligence",
-  "definition": "Neural network architecture introduced by Vaswani et al.",
+  "definition": "The transformer is a neural network architecture introduced by Vaswani et al. in 'Attention Is All You Need' (2017). It replaces recurrence and convolution with multi-head self-attention and position-wise feed-forward layers, enabling fully parallel sequence processing, and underpins large language models and modern vision, speech, and protein-structure systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -149,7 +149,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:adam-optimizer",
+        "id": "urn:ngm:class:adam-optimiser",
         "label": "Adam Optimizer"
       },
       {
@@ -247,7 +247,7 @@
   },
   "wikilinks": [
     {
-      "slug": "adam-optimizer",
+      "slug": "adam-optimiser",
       "label": "Adam Optimizer"
     },
     {

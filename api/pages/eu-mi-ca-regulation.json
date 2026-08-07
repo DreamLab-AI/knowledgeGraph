@@ -155,6 +155,10 @@
       "label": "Bitcoin Environmental Issues"
     },
     {
+      "slug": "crypto-asset-service-provider",
+      "label": "Crypto Asset Service Provider"
+    },
+    {
       "slug": "governance-token",
       "label": "Governance Token"
     },

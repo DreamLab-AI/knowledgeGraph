@@ -130,6 +130,14 @@
       "label": "Distributed Decision Making"
     },
     {
+      "slug": "mediation",
+      "label": "Mediation"
+    },
+    {
+      "slug": "negotiation-protocol",
+      "label": "Negotiation Protocol"
+    },
+    {
       "slug": "operational-transformation",
       "label": "Operational Transformation"
     }

@@ -29,7 +29,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:nearest-neighbour-search",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Nearest-Neighbour Search"
       },
       {
@@ -94,6 +94,10 @@
     {
       "slug": "ai-in-games",
       "label": "AI in Games"
+    },
+    {
+      "slug": "geometry",
+      "label": "Geometry"
     }
   ]
 }

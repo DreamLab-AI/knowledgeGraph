@@ -163,6 +163,10 @@
     {
       "slug": "rendering-pipeline",
       "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "vertex-attribute",
+      "label": "Vertex Attribute"
     }
   ]
 }

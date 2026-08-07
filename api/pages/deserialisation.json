@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:cfb9141623dbf2f8707c5178ed276b3b821881cdf1960455c043844006200ffa",
+  "title": "Deserialisation",
+  "slug": "deserialisation",
+  "public": true,
+  "classIri": "urn:ngm:class:deserialisation",
+  "domain": "data",
+  "definition": "The process of reconstructing in-memory data structures or objects from a serialised byte stream or textual encoding such as JSON, XML, or Protocol Buffers, reversing serialisation so that transmitted or persisted state can be used by a running program. Deserialisation must validate structure, types, and bounds of untrusted input, since naive object reconstruction is a well-known source of remote-code-execution vulnerabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-format-standard",
+      "label": "Data Format Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:serialisation",
+        "label": "Serialisation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:protobuf",
+        "label": "Protobuf"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-exchange",
+        "label": "Data Exchange"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "serialisation",
+      "label": "Serialisation"
+    },
+    {
+      "slug": "data-format-standard",
+      "label": "Data Format Standard"
+    },
+    {
+      "slug": "data-exchange",
+      "label": "Data Exchange"
+    },
+    {
+      "slug": "protobuf",
+      "label": "Protobuf"
+    }
+  ],
+  "backlinks": []
+}

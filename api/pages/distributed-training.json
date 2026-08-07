@@ -138,10 +138,6 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
-    },
-    {
       "slug": "answer-ai",
       "label": "Answer AI"
     },
@@ -174,6 +170,10 @@
       "label": "Fault Tolerance"
     },
     {
+      "slug": "gradient-compression",
+      "label": "Gradient Compression"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },
@@ -184,6 +184,10 @@
     {
       "slug": "prime-intellect",
       "label": "Prime Intellect"
+    },
+    {
+      "slug": "training-pipeline",
+      "label": "Training Pipeline"
     }
   ]
 }

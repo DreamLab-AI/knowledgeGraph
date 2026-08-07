@@ -76,7 +76,7 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:network-functions-virtualisation",
+        "id": "urn:ngm:class:network-function-virtualization",
         "label": "Network Functions Virtualisation"
       },
       {
@@ -179,20 +179,12 @@
       "label": "ETSI GS MEC 003"
     },
     {
-      "slug": "etsi-domain-governance-compliance",
-      "label": "ETSI_Domain_Governance_Compliance"
-    },
-    {
       "slug": "etsi-domain-governance-security",
       "label": "ETSI_Domain_Governance_Security"
     },
     {
       "slug": "etsi-domain-governance-economy",
       "label": "ETSI_Domain_Governance___Economy"
-    },
-    {
-      "slug": "etsi-domain-governance-ethics",
-      "label": "ETSI_Domain_Governance___Ethics"
     },
     {
       "slug": "etsi-domain-governance-society",

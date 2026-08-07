@@ -297,6 +297,10 @@
     {
       "slug": "model-performance",
       "label": "Model Performance"
+    },
+    {
+      "slug": "model-retraining",
+      "label": "Model Retraining"
     }
   ]
 }

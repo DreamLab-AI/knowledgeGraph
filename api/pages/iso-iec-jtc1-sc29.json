@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:c513ab192f7cc4b999e277165b585d53176149fa80b7193903fd3c78b9bc7971",
+  "title": "ISO/IEC JTC 1/SC 29",
+  "slug": "iso-iec-jtc1-sc29",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-jtc1-sc29",
+  "domain": "standards",
+  "definition": "ISO/IEC JTC 1/SC 29 is the joint ISO and IEC subcommittee for coding of audio, picture, multimedia, and hypermedia information \u2014 the home of the JPEG and MPEG families of standards. Its working groups have produced the compression and carriage formats that underpin digital imaging and video worldwide, from JPEG and JPEG 2000 for still images through MPEG-2, AVC, HEVC, and VVC for video to immersive and point-cloud coding, making it the primary international venue for standardising how visual media are represented, compressed, and transported.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-organization",
+      "label": "Standards Organization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:iso-iec-jtc-1",
+        "label": "ISO/IEC JTC 1"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mpeg",
+        "label": "MPEG"
+      },
+      {
+        "id": "urn:ngm:class:codec",
+        "label": "Codec"
+      },
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "standards-organization",
+      "label": "Standards Organization"
+    },
+    {
+      "slug": "iso-iec-jtc-1",
+      "label": "ISO/IEC JTC 1"
+    },
+    {
+      "slug": "mpeg",
+      "label": "MPEG"
+    },
+    {
+      "slug": "image-processing",
+      "label": "Image Processing"
+    }
+  ],
+  "backlinks": []
+}

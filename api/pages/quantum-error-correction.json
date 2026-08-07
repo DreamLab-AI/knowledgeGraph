@@ -105,6 +105,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "quantum-gate",
+      "label": "Quantum Gate"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
     }

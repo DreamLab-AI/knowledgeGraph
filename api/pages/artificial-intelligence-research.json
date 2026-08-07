@@ -429,6 +429,10 @@
     {
       "slug": "academic-conference",
       "label": "Academic Conference"
+    },
+    {
+      "slug": "alignment-research",
+      "label": "Alignment Research"
     }
   ]
 }

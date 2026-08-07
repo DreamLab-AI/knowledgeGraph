@@ -46,7 +46,7 @@
         "label": "Data Federation"
       },
       {
-        "id": "urn:ngm:class:real-time-synchronization",
+        "id": "urn:ngm:class:real-time-synchronisation",
         "label": "Real-time Synchronization"
       }
     ],
@@ -111,7 +111,7 @@
       "label": "Protocol Translator"
     },
     {
-      "slug": "real-time-synchronization",
+      "slug": "real-time-synchronisation",
       "label": "Real-Time Synchronization"
     },
     {

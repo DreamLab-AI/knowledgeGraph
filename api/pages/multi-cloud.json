@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:9fa96b721dfec7d53686422acbc8872c15841d41275a968c140dd1081fd48b46",
+  "title": "Multi-Cloud",
+  "slug": "multi-cloud",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-cloud",
+  "domain": "infrastructure",
+  "definition": "A cloud deployment strategy in which an organisation consumes services from two or more independent public cloud providers \u2014 such as AWS, Azure, and Google Cloud \u2014 distributing workloads to avoid vendor lock-in, satisfy data-residency and regulatory requirements, exploit provider-specific strengths, and improve resilience against provider-wide outages, at the cost of increased operational complexity, duplicated tooling, and cross-cloud egress charges.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hybrid-cloud",
+        "label": "Hybrid Cloud"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure as a Service"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "hybrid-cloud",
+      "label": "Hybrid Cloud"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    }
+  ],
+  "backlinks": []
+}

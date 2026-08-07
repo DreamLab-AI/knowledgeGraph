@@ -146,7 +146,7 @@
         "label": "Classifier-Free Guidance"
       },
       {
-        "id": "urn:ngm:class:openpose",
+        "id": "urn:ngm:class:open-pose",
         "label": "OpenPose"
       },
       {

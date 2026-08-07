@@ -448,6 +448,10 @@
       "label": "RGB"
     },
     {
+      "slug": "ransomware",
+      "label": "Ransomware"
+    },
+    {
       "slug": "reputation-system",
       "label": "Reputation System"
     },

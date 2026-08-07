@@ -114,7 +114,7 @@ public:: true
       {"@id": "urn:ngm:class:u-net", "label": "U-Net"},
       {"@id": "urn:ngm:class:zero-convolution", "label": "Zero Convolution"},
       {"@id": "urn:ngm:class:classifier-free-guidance", "label": "Classifier-Free Guidance"},
-      {"@id": "urn:ngm:class:openpose", "label": "OpenPose"},
+      {"@id": "urn:ngm:class:open-pose", "label": "OpenPose"},
       {"@id": "urn:ngm:class:dwpose", "label": "DWPose"},
       {"@id": "urn:ngm:class:midas", "label": "MiDaS Depth Estimation"}
     ],

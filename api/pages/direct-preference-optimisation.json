@@ -16,7 +16,20 @@
   "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bradley-terry-model",
+        "label": "Bradley-Terry Model"
+      },
+      {
+        "id": "urn:ngm:class:preference-dataset",
+        "label": "Preference Dataset"
+      },
+      {
+        "id": "urn:ngm:class:reference-policy",
+        "label": "Reference Policy"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:preference-learning",
@@ -33,6 +46,18 @@
       {
         "id": "urn:ngm:class:human-preference",
         "label": "Human Preference Data"
+      },
+      {
+        "id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
       }
     ],
     "enables": [
@@ -51,6 +76,14 @@
       {
         "id": "urn:ngm:class:value-alignment",
         "label": "Value Alignment"
+      },
+      {
+        "id": "urn:ngm:class:language-model-alignment",
+        "label": "Language Model Alignment"
+      },
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety Alignment"
       }
     ],
     "dependsOn": [
@@ -71,6 +104,10 @@
       {
         "id": "urn:ngm:class:bradley-terry-model",
         "label": "Bradley-Terry Model"
+      },
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
       }
     ],
     "contrastsWith": [
@@ -109,6 +146,22 @@
       {
         "id": "urn:ngm:class:kl-divergence",
         "label": "KL Divergence"
+      },
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:gradient-accumulation",
+        "label": "Gradient Accumulation"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra",
+        "label": "LoRA Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
       }
     ],
     "supports": [
@@ -119,9 +172,26 @@
       {
         "id": "urn:ngm:class:human-feedback",
         "label": "Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI Training Methodology"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -131,6 +201,14 @@
       {
         "id": "urn:ngm:class:self-supervised-learning",
         "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:kto",
+        "label": "KTO"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
       }
     ]
   },

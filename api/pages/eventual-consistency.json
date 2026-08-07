@@ -152,6 +152,10 @@
       "label": "Fault Tolerance"
     },
     {
+      "slug": "partition-tolerance",
+      "label": "Partition Tolerance"
+    },
+    {
       "slug": "vector-clocks",
       "label": "Vector Clocks"
     }

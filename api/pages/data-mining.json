@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:c59f22a9d2ddc10bc9e347c547c09d152f649094d8d6fb5dac46e3e86a9e6526",
+  "title": "Data Mining",
+  "slug": "data-mining",
+  "public": true,
+  "classIri": "urn:ngm:class:data-mining",
+  "domain": "data",
+  "definition": "Data mining is the computational process of discovering non-obvious patterns, correlations, anomalies and predictive structure in large datasets, sitting at the core of the knowledge discovery in databases (KDD) pipeline. It combines techniques from machine learning, statistics and database systems \u2014 including clustering, classification, association-rule learning, regression and anomaly detection \u2014 to turn raw operational data into actionable models and insights across science, commerce and government.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-discovery",
+      "label": "Knowledge Discovery"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:text-mining",
+        "label": "Text Mining"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "knowledge-discovery",
+      "label": "Knowledge Discovery"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "text-mining",
+      "label": "Text Mining"
+    },
+    {
+      "slug": "big-data",
+      "label": "Big Data"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    }
+  ]
+}

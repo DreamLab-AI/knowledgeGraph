@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:067f5ef59b9df0655f212fd6aa5ccc53bc948d297465a459d2c0266176c1546c",
+  "title": "Constraint Propagation",
+  "slug": "constraint-propagation",
+  "public": true,
+  "classIri": "urn:ngm:class:constraint-propagation",
+  "domain": "artificial-intelligence",
+  "definition": "An inference technique in constraint satisfaction that repeatedly applies local consistency rules to shrink the domains of variables, eliminating values that cannot participate in any solution before or during search. By propagating the logical consequences of each constraint through the constraint network, it prunes the search space dramatically, often exposes infeasibility early without any backtracking, and turns otherwise intractable combinatorial problems into practically solvable ones.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:arc-consistency",
+        "label": "Arc Consistency"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:backtracking-search",
+        "label": "Backtracking Search"
+      },
+      {
+        "id": "urn:ngm:class:constraint",
+        "label": "Constraint"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "arc-consistency",
+      "label": "Arc Consistency"
+    },
+    {
+      "slug": "backtracking-search",
+      "label": "Backtracking Search"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "arc-consistency",
+      "label": "Arc Consistency"
+    },
+    {
+      "slug": "backtracking-search",
+      "label": "Backtracking Search"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    }
+  ]
+}

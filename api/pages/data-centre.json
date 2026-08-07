@@ -22,6 +22,10 @@
         "label": "Server"
       },
       {
+        "id": "urn:ngm:class:liquid-cooling",
+        "label": "Liquid Cooling"
+      },
+      {
         "id": "urn:ngm:class:cooling-system",
         "label": "Cooling System"
       },
@@ -46,6 +50,14 @@
       {
         "id": "urn:ngm:class:high-speed-network-connectivity",
         "label": "High-Speed Network Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
       }
     ],
     "enables": [
@@ -64,6 +76,10 @@
       {
         "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       }
     ],
     "dependsOn": [
@@ -95,6 +111,10 @@
       {
         "id": "urn:ngm:class:renewable-energy",
         "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
       }
     ],
     "uses": [
@@ -109,6 +129,14 @@
       {
         "id": "urn:ngm:class:hot-aisle-cold-aisle-containment",
         "label": "Hot-Aisle Cold-Aisle Containment"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
       }
     ],
     "supports": [
@@ -119,6 +147,10 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:failover",
+        "label": "Failover"
       }
     ],
     "standardizedBy": [
@@ -131,7 +163,12 @@
         "label": "ISO/IEC 27001"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:energy-and-power",
@@ -140,6 +177,14 @@
       {
         "id": "urn:ngm:class:colocation-services",
         "label": "Colocation Services"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:geographic-distribution",
+        "label": "Geographic Distribution"
       }
     ]
   },
@@ -150,8 +195,28 @@
       "label": "AI Energy Optimisation"
     },
     {
+      "slug": "content-delivery-network-cdn",
+      "label": "Content Delivery Network (CDN)"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
       "slug": "energy-and-power",
       "label": "Energy and Power"
+    },
+    {
+      "slug": "fibre-optic-network",
+      "label": "Fibre Optic Network"
+    },
+    {
+      "slug": "on-premises",
+      "label": "On-Premises"
+    },
+    {
+      "slug": "server",
+      "label": "Server"
     }
   ]
 }

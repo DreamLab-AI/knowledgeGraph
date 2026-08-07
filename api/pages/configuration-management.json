@@ -170,7 +170,7 @@
         "label": "Site Reliability Engineering"
       },
       {
-        "id": "urn:ngm:class:devsecops",
+        "id": "urn:ngm:class:dev-sec-ops",
         "label": "DevSecOps"
       }
     ]

@@ -259,7 +259,7 @@ public:: true
 - ### Applications and Use Cases
   - **AI-driven medical imaging** — UCL researchers develop [[Deep Learning]] models for pathology, radiology, and surgical planning, collaborating with NHS trusts and the [[Wellcome Trust]].
   - **Natural language understanding** — UCL NLP groups contribute to [[Large Language Models]], [[Dialogue Systems]], and [[Information Extraction]] research with applications in legal, financial, and scientific text.
-  - **Autonomous robotics** — UCL's robotics teams work on [[Perception]], [[Planning Under Uncertainty]], and [[Human-Robot Interaction]] for both industrial and assistive applications.
+  - **Autonomous robotics** — UCL's robotics teams work on [[Perception]], [[Planning Under Uncertainty]], and [[Human Robot Interaction]] for both industrial and assistive applications.
   - **Computational drug discovery** — [[Graph Neural Networks]] and [[Generative Models]] are applied to molecular design in collaboration with pharmaceutical industry partners.
   - **Spatial data and urban AI** — through UCL's Centre for Advanced Spatial Analysis (CASA), [[Geospatial Data]], [[Urban Simulation]], and [[Agent-Based Modelling]] are applied to city planning and transport.
   - **Cybersecurity and privacy** — UCL's Information Security Research Group works on [[Privacy-Enhancing Technologies]], [[Cryptography]], [[Federated Learning]], and secure multi-party computation.

@@ -223,6 +223,10 @@
     {
       "slug": "ai-generated-content-disclosure",
       "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "disinformation",
+      "label": "Disinformation"
     }
   ]
 }

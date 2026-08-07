@@ -494,6 +494,10 @@
   ],
   "backlinks": [
     {
+      "slug": "adapter-tuning",
+      "label": "Adapter Tuning"
+    },
+    {
       "slug": "fine-tuning",
       "label": "Fine Tuning"
     },

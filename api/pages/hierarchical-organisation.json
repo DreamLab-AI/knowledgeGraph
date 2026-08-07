@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:948fe439d3dadd63c814829a11bde587b201b99cb2d4d0e18203d16aea47af34",
+  "title": "Hierarchical Organisation",
+  "slug": "hierarchical-organisation",
+  "public": true,
+  "classIri": "urn:ngm:class:hierarchical-organisation",
+  "domain": "governance",
+  "definition": "A governance and coordination structure in which authority, decision-making, and information flow are arranged in ranked tiers, with each level reporting upward to a narrower level above it, culminating in a single apex of control; the dominant organisational pattern of firms, bureaucracies, and traditional software architectures, offering clear accountability and command efficiency at the cost of communication bottlenecks, single points of failure, and reduced local autonomy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-structure",
+      "label": "Governance Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:centralised-control",
+        "label": "Centralised Control"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:organisational-theory",
+        "label": "Organisational Theory"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "centralised-control",
+      "label": "Centralised Control"
+    },
+    {
+      "slug": "decentralised-coordination",
+      "label": "Decentralised Coordination"
+    }
+  ],
+  "backlinks": []
+}

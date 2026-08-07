@@ -128,7 +128,7 @@ public:: true
         "label": "Robotics"
       },
       {
-        "@id": "urn:ngm:class:building-information-modeling",
+        "@id": "urn:ngm:class:building-information-modelling",
         "label": "Building Information Modeling"
       }
     ],

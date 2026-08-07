@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:3b27982f67b1acf7ba90a9270897e4b1a0598224e26fa5e8dea59b40bca7e267",
+  "title": "AI Certification",
+  "slug": "ai-certification",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-certification",
+  "domain": "governance",
+  "definition": "AI certification is the formal attestation, by an accredited third party, that an artificial intelligence system or its governing management system conforms to defined requirements for safety, robustness, fairness, transparency, and risk management. Unlike generic conformity certification, it is scoped to AI-specific standards and hazards \u2014 data-quality and bias controls, model evaluation, human oversight, and lifecycle governance under frameworks such as ISO/IEC 42001. AI certification converts abstract commitments to trustworthy AI into auditable, marketable evidence, giving procurers, regulators, and the public a credible signal that a system has been independently assessed against recognised criteria rather than self-declared as compliant.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:certification",
+      "label": "Certification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "certification",
+      "label": "Certification"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO IEC 42001"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    }
+  ],
+  "backlinks": []
+}

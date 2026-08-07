@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:07078452ff6af27b8ac67621aba7ea7efe0ac5c463014ed2cdc78b11d5995604",
+  "title": "Image Compression",
+  "slug": "image-compression",
+  "public": true,
+  "classIri": "urn:ngm:class:image-compression",
+  "domain": "data",
+  "definition": "The process of encoding digital images with fewer bits by exploiting spatial redundancy, statistical structure, and the limits of human visual perception. Lossless methods (PNG, lossless WebP) permit exact reconstruction, while lossy methods (JPEG, HEIC, AVIF, JPEG XL) discard perceptually insignificant detail through transform coding, quantisation, and entropy coding to achieve far higher ratios, trading fidelity against file size for storage and transmission.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-compression",
+      "label": "Data Compression"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:entropy-coding",
+        "label": "Entropy Coding"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:discrete-cosine-transform",
+        "label": "Discrete Cosine Transform"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:lossless-compression",
+        "label": "Lossless Compression"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "data-compression",
+      "label": "Data Compression"
+    },
+    {
+      "slug": "entropy-coding",
+      "label": "Entropy Coding"
+    },
+    {
+      "slug": "image-processing",
+      "label": "Image Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    }
+  ]
+}

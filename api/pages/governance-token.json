@@ -1361,6 +1361,10 @@
       "label": "Token Economics"
     },
     {
+      "slug": "token-governance",
+      "label": "Token Governance"
+    },
+    {
       "slug": "token",
       "label": "Token"
     },
@@ -1375,6 +1379,10 @@
     {
       "slug": "vesting-schedule",
       "label": "Vesting Schedule"
+    },
+    {
+      "slug": "voting-power",
+      "label": "Voting Power"
     }
   ]
 }

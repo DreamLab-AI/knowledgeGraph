@@ -163,10 +163,6 @@
       "label": "Diffusion Models"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "fid-benchmark-protocol",
       "label": "FID Benchmark Protocol"
     },

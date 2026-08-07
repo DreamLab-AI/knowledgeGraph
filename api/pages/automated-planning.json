@@ -188,8 +188,20 @@
       "label": "Planning"
     },
     {
+      "slug": "reactive-planning",
+      "label": "Reactive Planning"
+    },
+    {
+      "slug": "state-space-search",
+      "label": "State Space Search"
+    },
+    {
       "slug": "task-planning",
       "label": "Task Planning"
+    },
+    {
+      "slug": "temporal-reasoning",
+      "label": "Temporal Reasoning"
     }
   ]
 }

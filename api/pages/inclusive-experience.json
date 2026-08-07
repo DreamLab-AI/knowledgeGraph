@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:2fa19c64220e4d45b71076f84e284eda1a41565d85ae391484e6ac6792996867",
+  "title": "Inclusive Experience",
+  "slug": "inclusive-experience",
+  "public": true,
+  "classIri": "urn:ngm:class:inclusive-experience",
+  "domain": "spatial-computing",
+  "definition": "An immersive or interactive experience deliberately shaped so that people of differing abilities, bodies, languages, cultures, and levels of technical confidence can all participate fully and feel that the experience was made for them. In extended reality contexts an inclusive experience goes beyond meeting accessibility conformance: it offers multiple interaction modalities, adaptable comfort and representation options, and social norms that make diverse participants welcome.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-experience",
+      "label": "User Experience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:accessible-design",
+        "label": "Accessible Design"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-xr-design",
+        "label": "Inclusive XR Design"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inaccessible-design",
+        "label": "Inaccessible Design"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accessible-experience",
+        "label": "Accessible Experience"
+      },
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "inclusive-xr-design",
+      "label": "Inclusive Xr Design"
+    },
+    {
+      "slug": "universal-design",
+      "label": "Universal Design"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    }
+  ]
+}

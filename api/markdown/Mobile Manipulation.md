@@ -290,7 +290,7 @@ public:: true
   - dependsOn:: [[Robot Perception]], [[Task and Motion Planning]], [[Force Control]]
   - contrastsWith:: [[Fixed-Base Manipulation]], [[Autonomous Navigation]]
   - relatedTo:: [[Humanoid Robot]], [[Legged Robot]], [[Robot Learning]], [[Reinforcement Learning]]
-  - bridges-to:: [[Human-Robot Interaction]], [[Spatial Computing]]
+  - bridges-to:: [[Human Robot Interaction]], [[Spatial Computing]]
 
 - ### Research Landscape
   - Key research venues: IEEE International Conference on Robotics and Automation ([[ICRA]]), IEEE/RSJ International Conference on Intelligent Robots and Systems ([[IROS]]), Robotics: Science and Systems (RSS), International Journal of Robotics Research (IJRR).

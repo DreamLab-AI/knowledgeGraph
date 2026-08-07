@@ -340,6 +340,14 @@
     {
       "slug": "cost-function",
       "label": "cost function"
+    },
+    {
+      "slug": "random-variable",
+      "label": "Random Variable"
+    },
+    {
+      "slug": "variance",
+      "label": "Variance"
     }
   ]
 }

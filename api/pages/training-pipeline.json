@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:845d4d44d84260f10c305acb26ff9e61a622c1a49688f16dbef0d67a5d71b511",
+  "title": "Training Pipeline",
+  "slug": "training-pipeline",
+  "public": true,
+  "classIri": "urn:ngm:class:training-pipeline",
+  "domain": "machine-learning",
+  "definition": "The orchestrated, repeatable sequence of stages that turns raw data into a trained machine-learning model: ingestion and validation, preprocessing and augmentation, batching, the optimisation loop itself, evaluation against held-out data, and registration of versioned artefacts. Treating training as a pipeline rather than a script makes runs reproducible, resumable, and automatable, and is the precondition for continuous retraining and reliable model deployment within MLOps practice.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-pipeline",
+      "label": "Data Pipeline"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "hyperparameter-tuning",
+      "label": "Hyperparameter Tuning"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    }
+  ]
+}

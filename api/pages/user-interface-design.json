@@ -102,6 +102,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "graphical-user-interface",
+      "label": "Graphical User Interface"
+    },
+    {
+      "slug": "inaccessible-design",
+      "label": "Inaccessible Design"
+    },
+    {
       "slug": "trust-in-automation",
       "label": "Trust in Automation"
     }

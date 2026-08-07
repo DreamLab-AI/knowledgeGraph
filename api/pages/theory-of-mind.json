@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:9224c0b4fffa3b978459797f9ae4052e281f6d9899beb8e4abeacf94abb95165",
+  "title": "Theory of Mind",
+  "slug": "theory-of-mind",
+  "public": true,
+  "classIri": "urn:ngm:class:theory-of-mind",
+  "domain": "ai",
+  "definition": "The cognitive capacity to attribute mental states \u2014 beliefs, desires, intentions, knowledge, and emotions \u2014 to oneself and to others, and to recognise that others' mental states may differ from one's own and from reality. Central to human social cognition and classically probed with false-belief tasks, theory of mind has become a benchmark capability for artificial agents, where machine analogues are pursued to support cooperation, communication, and safe interaction with people.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:social-interaction",
+        "label": "Social Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:common-sense-reasoning",
+        "label": "Common Sense Reasoning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "social-interaction",
+      "label": "Social Interaction"
+    },
+    {
+      "slug": "social-robotics",
+      "label": "Social Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    }
+  ]
+}

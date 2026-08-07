@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:1feee884a8bed36f13aa70e0bdd3691c205aa75163edd0cdf6f45ed47c91358c",
+  "title": "Container Registry",
+  "slug": "container-registry",
+  "public": true,
+  "classIri": "urn:ngm:class:container-registry",
+  "domain": "infrastructure",
+  "definition": "A content-addressed storage and distribution service for container images that implements the OCI Distribution Specification's push, pull, and discovery API. Registries hold image layers and manifests under named, tagged repositories, enforce authentication and access control, and increasingly store signatures, SBOMs, and other supply-chain artefacts alongside images, making them the central hand-off point between build pipelines and every runtime that deploys containerised software.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:containerisation",
+      "label": "Containerisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:container-image",
+        "label": "Container Image"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:docker-containerisation-platform",
+        "label": "Docker Containerisation Platform"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "containerisation",
+      "label": "Containerisation"
+    },
+    {
+      "slug": "container-image",
+      "label": "Container Image"
+    },
+    {
+      "slug": "docker-containerisation-platform",
+      "label": "Docker Containerisation Platform"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "container-image",
+      "label": "Container Image"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
+    }
+  ]
+}

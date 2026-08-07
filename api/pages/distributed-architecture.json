@@ -30,7 +30,7 @@
         "label": "Network Topology"
       },
       {
-        "id": "urn:ngm:class:state-synchronization",
+        "id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization"
       }
     ],
@@ -196,10 +196,5 @@
       "label": "System Architecture"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
-    }
-  ]
+  "backlinks": []
 }

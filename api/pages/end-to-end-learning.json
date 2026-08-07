@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:2faa8a27b0f03be0ecb08bb30ade719ab71bc99ab30a733ff0d2ad2adb68e3d1",
+  "title": "End-to-End Learning",
+  "slug": "end-to-end-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:end-to-end-learning",
+  "domain": "machine-learning",
+  "definition": "A training paradigm in which a single differentiable model is optimised to map raw inputs directly to final task outputs \u2014 pixels to steering angles, waveforms to transcripts, text to text \u2014 with all intermediate representations learned jointly by gradient descent rather than specified as hand-engineered features or separately built pipeline stages; it trades the modularity, interpretability, and testability of engineered pipelines for the ability to discover representations that human designers would not, and dominates wherever data and compute are abundant.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monolithic-ai",
+        "label": "Monolithic AI"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

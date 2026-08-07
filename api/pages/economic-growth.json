@@ -96,6 +96,14 @@
     {
       "slug": "adoption-of-convergent-technologies",
       "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "global-trade",
+      "label": "Global Trade"
+    },
+    {
+      "slug": "industrial-strategy",
+      "label": "Industrial Strategy"
     }
   ]
 }

@@ -133,6 +133,10 @@
   ],
   "backlinks": [
     {
+      "slug": "digital-securities",
+      "label": "Digital Securities"
+    },
+    {
       "slug": "enterprise-smart-contracts",
       "label": "Enterprise Smart Contracts"
     },

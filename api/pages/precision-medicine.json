@@ -149,6 +149,10 @@
       "label": "Convergence"
     },
     {
+      "slug": "evidence-based-medicine",
+      "label": "Evidence-Based Medicine"
+    },
+    {
       "slug": "medical-ai",
       "label": "Medical AI"
     }

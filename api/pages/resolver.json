@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:439c3635079b57a69aff22860369462fb9330c300fa4dbc70426f087192e369d",
+  "title": "Resolver",
+  "slug": "resolver",
+  "public": true,
+  "classIri": "urn:ngm:class:resolver",
+  "domain": "standards",
+  "definition": "A resolver is a component that takes an identifier and returns the resource, address, or value it stands for. In identification infrastructure such as GS1 Digital Link and the Domain Name System, a resolver service receives a request containing a structured identifier and redirects the requester to one of potentially many linked resources \u2014 product information, traceability records, or network addresses \u2014 chosen by link type and context. The term also names the electromechanical rotary transformer used in robotics and motor control to resolve a shaft's absolute angular position from induced analogue signals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:middleware",
+      "label": "Middleware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:unique-identifier",
+        "label": "Unique Identifier"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:proprioceptive-sensor",
+        "label": "Proprioceptive Sensor"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:domain-name-system",
+        "label": "Domain Name System"
+      },
+      {
+        "id": "urn:ngm:class:rotary-encoder",
+        "label": "Rotary Encoder"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "gs1-digital-link",
+      "label": "Gs1 Digital Link"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "domain-name-system",
+      "label": "Domain Name System"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "rotary-encoder",
+      "label": "Rotary Encoder"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

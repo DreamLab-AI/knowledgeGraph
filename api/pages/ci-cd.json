@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:05d131b75cc2a7536d59fa14d0d3820317b4e983e8d3a887dc328c70693e8d4f",
+  "title": "CI/CD",
+  "slug": "ci-cd",
+  "public": true,
+  "classIri": "urn:ngm:class:ci-cd",
+  "domain": "infrastructure",
+  "definition": "CI/CD (continuous integration and continuous delivery/deployment) is the software engineering practice of automatically building, testing and releasing every code change through a versioned pipeline. Continuous integration merges work into a shared trunk many times a day behind automated test gates; continuous delivery keeps the mainline permanently releasable; continuous deployment pushes each passing change to production automatically. Together they shrink feedback loops, reduce integration risk and enable progressive release strategies such as canary and zero-downtime deployments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:devops",
+      "label": "DevOps"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:canary-deployment",
+        "label": "Canary Deployment"
+      },
+      {
+        "id": "urn:ngm:class:zero-downtime-deployment",
+        "label": "Zero Downtime Deployment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-testing",
+        "label": "Automated Testing"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:container",
+        "label": "Container"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "devops",
+      "label": "DevOps"
+    },
+    {
+      "slug": "continuous-integration",
+      "label": "Continuous Integration"
+    },
+    {
+      "slug": "continuous-deployment",
+      "label": "Continuous Deployment"
+    },
+    {
+      "slug": "canary-deployment",
+      "label": "Canary Deployment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "container",
+      "label": "Container"
+    }
+  ]
+}

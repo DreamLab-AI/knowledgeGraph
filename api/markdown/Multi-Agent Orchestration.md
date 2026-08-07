@@ -46,7 +46,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:agentic-systems",
+        "@id": "urn:ngm:class:agentic-ai-systems",
         "label": "Agentic Systems"
       }
     ],

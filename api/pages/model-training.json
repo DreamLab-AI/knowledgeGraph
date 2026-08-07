@@ -50,7 +50,7 @@
         "label": "Constitutional AI Training Methodology"
       },
       {
-        "id": "urn:ngm:class:direct-preference-optimization",
+        "id": "urn:ngm:class:direct-preference-optimisation",
         "label": "Direct Preference Optimization"
       },
       {
@@ -733,10 +733,6 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
-    },
-    {
       "slug": "algorithm-layer",
       "label": "Algorithm Layer"
     },
@@ -782,7 +778,11 @@
     },
     {
       "slug": "experiment-tracking",
-      "label": "Experiment Tracking"
+      "label": "ML Experiment Tracking"
+    },
+    {
+      "slug": "large-scale-training",
+      "label": "Large-Scale Training"
     },
     {
       "slug": "learning-algorithm",
@@ -791,6 +791,10 @@
     {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
+    },
+    {
+      "slug": "model-retraining",
+      "label": "Model Retraining"
     },
     {
       "slug": "music-and-audio",

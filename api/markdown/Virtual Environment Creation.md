@@ -68,7 +68,7 @@ public:: true
         "label": "Game Engine"
       },
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       }
     ],
@@ -142,7 +142,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[3D Development]]
   - Requires [[Game Engine]]
-  - Requires [[3D Modeling]]
+  - Requires [[3D Modelling]]
   - Uses [[Physics Simulation]]
   - Uses [[Real-Time Rendering]]
   - Uses [[3D Content Generation]]

@@ -147,6 +147,10 @@
       "label": "Deep Generative Model"
     },
     {
+      "slug": "modality-specific-encoder",
+      "label": "Modality-Specific Encoder"
+    },
+    {
       "slug": "transformers",
       "label": "Transformers"
     },

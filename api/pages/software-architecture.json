@@ -172,6 +172,14 @@
       "label": "Component"
     },
     {
+      "slug": "design-pattern",
+      "label": "Design Pattern"
+    },
+    {
+      "slug": "in-process-communication",
+      "label": "In-Process Communication"
+    },
+    {
       "slug": "middleware",
       "label": "Middleware"
     },
@@ -184,8 +192,16 @@
       "label": "Reference Architecture"
     },
     {
+      "slug": "separation-of-concerns",
+      "label": "Separation of Concerns"
+    },
+    {
       "slug": "service-oriented-architecture",
       "label": "Service Oriented Architecture"
+    },
+    {
+      "slug": "software-system",
+      "label": "Software System"
     }
   ]
 }

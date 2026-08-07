@@ -97,6 +97,10 @@
       "label": "Artificial Intelligence Research"
     },
     {
+      "slug": "data-mining",
+      "label": "Data Mining"
+    },
+    {
       "slug": "knowledge-graph",
       "label": "Knowledge Graph"
     }

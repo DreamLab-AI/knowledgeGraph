@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:75b28828c1ebae792e5abbc6818c6087ea390f60e8080d9c520f4d729834748b",
+  "title": "Counterfactual Explanation",
+  "slug": "counterfactual-explanation",
+  "public": true,
+  "classIri": "urn:ngm:class:counterfactual-explanation",
+  "domain": "ai",
+  "definition": "An explainable-AI method that accounts for a model's decision by presenting the smallest realistic change to the input that would have produced a different outcome \u2014 for example, 'the loan would have been approved had annual income been \u00a35,000 higher' \u2014 giving affected individuals actionable recourse without requiring disclosure of the model's internal structure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:explainability",
+      "label": "Explainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decision-transparency",
+        "label": "Decision Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lime",
+        "label": "LIME"
+      },
+      {
+        "id": "urn:ngm:class:shap",
+        "label": "SHAP"
+      },
+      {
+        "id": "urn:ngm:class:counterfactual-reasoning",
+        "label": "Counterfactual Reasoning"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "lime",
+      "label": "LIME"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
+      "slug": "local-explanation",
+      "label": "Local Explanation"
+    },
+    {
+      "slug": "post-hoc-explanation",
+      "label": "Post Hoc Explanation"
+    }
+  ]
+}

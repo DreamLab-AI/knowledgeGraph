@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:economic-governance",
   "@type": "Class",
   "label": "Economic Governance",
-  "definition": "Economic Governance is an artificial intelligence concept.",
+  "definition": "Economic Governance is the set of institutions, rules and decision-making processes through which economic activity is steered, monitored and held accountable. In digital and metaverse contexts it spans token issuance, treasury management, incentive design and market oversight, extending traditional monetary and fiscal governance into decentralised digital economies.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "relations": {
@@ -50,6 +50,26 @@ public:: true
       {
         "@id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
       }
     ]
   },
@@ -95,14 +115,15 @@ public:: true
 
 
 - ### Definition
-  - Economic Governance is a concept within the metaverse domain. Further enrichment pending.
+  - Economic Governance is the set of institutions, rules and decision-making processes through which economic activity is steered, monitored and held accountable. In digital and metaverse contexts it spans token issuance, treasury management, incentive design and market oversight, extending traditional monetary and fiscal governance into decentralised digital economies.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:EconomicGovernance
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - related-to:: [[Governance]], [[Tokenomics]], [[Digital Economy]]
+  - bridges-to:: [[Decentralized Autonomous Organization]]
 
 - ### Content
 

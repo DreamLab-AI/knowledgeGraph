@@ -233,6 +233,10 @@
       "label": "Telecollaboration and Telepresence"
     },
     {
+      "slug": "unified-communications",
+      "label": "Unified Communications"
+    },
+    {
       "slug": "virtual-stand-up",
       "label": "virtual-stand-up"
     }

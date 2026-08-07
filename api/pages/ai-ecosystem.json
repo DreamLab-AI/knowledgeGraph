@@ -60,7 +60,7 @@
         "label": "GPU Computing"
       },
       {
-        "id": "urn:ngm:class:data-centres",
+        "id": "urn:ngm:class:data-centre",
         "label": "Data Centres"
       },
       {
@@ -308,6 +308,10 @@
     {
       "slug": "ai-documentation-standards",
       "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-research",
+      "label": "AI Research"
     },
     {
       "slug": "intelligent-virtual-entity",

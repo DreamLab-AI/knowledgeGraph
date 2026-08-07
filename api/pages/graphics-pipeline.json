@@ -192,6 +192,10 @@
       "label": "Unity"
     },
     {
+      "slug": "vertex-attribute",
+      "label": "Vertex Attribute"
+    },
+    {
       "slug": "vertex-shader",
       "label": "Vertex Shader"
     },

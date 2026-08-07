@@ -501,10 +501,6 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
-    },
-    {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
     },

@@ -88,7 +88,7 @@ public:: true
       {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:arcface", "label": "ArcFace"},
+      {"@id": "urn:ngm:class:arc-face", "label": "ArcFace"},
       {"@id": "urn:ngm:class:adaface", "label": "AdaFace"}
     ],
     "dependsOn": [

@@ -98,10 +98,6 @@
     {
       "slug": "ai-evaluation",
       "label": "AI Evaluation"
-    },
-    {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
     }
   ]
 }

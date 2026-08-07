@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:a3672b78638a01d6babd95be92f8c3912c7393340e828a11b6cee5f797bd994b",
+  "title": "Subscription Model",
+  "slug": "subscription-model",
+  "public": true,
+  "classIri": "urn:ngm:class:subscription-model",
+  "domain": "finance",
+  "definition": "A revenue model in which customers pay a recurring fee \u2014 monthly or annually \u2014 for continuing access to a product or service rather than purchasing it outright, converting one-off sales into predictable recurring revenue; the economic backbone of Software as a Service, media streaming, and the membership tiers of the creator economy, it shifts the commercial burden from closing sales to retaining customers, measured through metrics such as MRR, churn, and customer lifetime value.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-model",
+      "label": "Economic Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:streaming-payment",
+        "label": "Streaming Payment"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-as-a-service",
+        "label": "Software As A Service"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "economic-model",
+      "label": "Economic Model"
+    },
+    {
+      "slug": "software-as-a-service",
+      "label": "Software As A Service"
+    },
+    {
+      "slug": "streaming-payment",
+      "label": "Streaming Payment"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "audience-engagement",
+      "label": "Audience Engagement"
+    }
+  ]
+}

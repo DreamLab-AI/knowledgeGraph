@@ -74,6 +74,10 @@
     {
       "slug": "digital-constitution",
       "label": "Digital Constitution"
+    },
+    {
+      "slug": "fundamental-rights",
+      "label": "Fundamental Rights"
     }
   ]
 }

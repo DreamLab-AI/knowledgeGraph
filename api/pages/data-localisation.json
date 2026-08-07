@@ -76,6 +76,10 @@
     {
       "slug": "asia-pacific-regulation",
       "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "data-residency",
+      "label": "Data Residency"
     }
   ]
 }

@@ -67,7 +67,7 @@
         "label": "AutoGen"
       },
       {
-        "id": "urn:ngm:class:langgraph",
+        "id": "urn:ngm:class:lang-graph",
         "label": "LangGraph"
       }
     ]

@@ -104,6 +104,10 @@
     {
       "slug": "content-delivery-network-cdn",
       "label": "Content Delivery Network (CDN)"
+    },
+    {
+      "slug": "edge-server",
+      "label": "Edge Server"
     }
   ]
 }

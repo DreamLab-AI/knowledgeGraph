@@ -82,7 +82,7 @@
         "label": "Intelligent Tutoring Systems"
       },
       {
-        "id": "urn:ngm:class:neurosymbolic-ai",
+        "id": "urn:ngm:class:neuro-symbolic-ai",
         "label": "Neurosymbolic AI"
       },
       {
@@ -384,6 +384,10 @@
       "label": "Bayesian Knowledge Tracing"
     },
     {
+      "slug": "behaviourism",
+      "label": "Behaviourism"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     },
@@ -446,6 +450,10 @@
     {
       "slug": "reasoning",
       "label": "Reasoning"
+    },
+    {
+      "slug": "theory-of-mind",
+      "label": "Theory of Mind"
     }
   ]
 }

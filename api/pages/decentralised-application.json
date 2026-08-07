@@ -124,6 +124,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "centralized-application",
+      "label": "Centralised Application"
+    },
+    {
       "slug": "web3",
       "label": "Web3"
     }

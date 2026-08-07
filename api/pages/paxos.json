@@ -153,6 +153,10 @@
     {
       "slug": "state-machine",
       "label": "State Machine"
+    },
+    {
+      "slug": "zookeeper",
+      "label": "ZooKeeper"
     }
   ]
 }

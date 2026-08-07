@@ -222,6 +222,10 @@
       "label": "AI Liability"
     },
     {
+      "slug": "ai-lifecycle-management",
+      "label": "AI Lifecycle Management"
+    },
+    {
       "slug": "ai-lifecycle",
       "label": "AI Lifecycle"
     },
@@ -394,6 +398,10 @@
       "label": "Decision Transparency"
     },
     {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
       "slug": "eu-hleg-ai",
       "label": "EU HLEG AI"
     },
@@ -428,6 +436,10 @@
     {
       "slug": "human-in-the-loop",
       "label": "Human in the Loop"
+    },
+    {
+      "slug": "international-ai-cooperation",
+      "label": "International AI Cooperation"
     },
     {
       "slug": "jailbreaking",

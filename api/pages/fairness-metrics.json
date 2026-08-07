@@ -160,6 +160,10 @@
     {
       "slug": "ai-model-card",
       "label": "AI Model Card"
+    },
+    {
+      "slug": "equalized-odds",
+      "label": "Equalized Odds"
     }
   ]
 }

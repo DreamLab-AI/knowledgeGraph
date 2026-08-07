@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:xr-technical-standard",
   "domain": "spatial-computing",
-  "definition": "XR Technical Standard is a spatial computing concept.",
+  "definition": "An XR technical standard is a formal specification defining interfaces, data formats, or performance requirements for extended reality hardware and software \u2014 for example OpenXR for runtime APIs, WebXR for browser-based immersive experiences, and glTF for 3D asset interchange. Such standards reduce fragmentation and let content run across headsets from different vendors.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -18,7 +18,12 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
@@ -27,12 +32,30 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ]
   },
   "wikilinks": [
     {

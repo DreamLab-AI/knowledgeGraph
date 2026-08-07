@@ -154,6 +154,10 @@
       "label": "Attack Vector"
     },
     {
+      "slug": "global-trade",
+      "label": "Global Trade"
+    },
+    {
       "slug": "iso-10218-robot-safety",
       "label": "ISO 10218 Robot Safety"
     },
@@ -272,6 +276,10 @@
     {
       "slug": "identity-verification",
       "label": "Identity Verification"
+    },
+    {
+      "slug": "mpeg",
+      "label": "MPEG"
     },
     {
       "slug": "self-sovereign-identity",

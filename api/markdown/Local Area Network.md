@@ -50,7 +50,7 @@ public:: true
       {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee-802", "label": "IEEE 802"}
+      {"@id": "urn:ngm:class:ieee-802-x", "label": "IEEE 802"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},

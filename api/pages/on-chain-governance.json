@@ -164,8 +164,16 @@
       "label": "Nouns DAO"
     },
     {
+      "slug": "token-governance",
+      "label": "Token Governance"
+    },
+    {
       "slug": "treasury-management",
       "label": "Treasury Management"
+    },
+    {
+      "slug": "voting-power",
+      "label": "Voting Power"
     },
     {
       "slug": "web3",

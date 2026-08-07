@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:462e7810725dab4c8a27466e1d29d0c99be8c5281545b2aae336568a331a1d98",
+  "title": "National Income",
+  "slug": "national-income",
+  "public": true,
+  "classIri": "urn:ngm:class:national-income",
+  "domain": "finance",
+  "definition": "National income is the total income earned by a country's residents \u2014 wages, profits, rent, and interest \u2014 from the production of goods and services over an accounting period, whether that production occurs at home or abroad. It is measured within the system of national accounts, where gross national income equals gross domestic product plus net factor income from overseas, and net national income further deducts depreciation of the capital stock, making it the income-side counterpart to output measures of economic activity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:macroeconomics",
+      "label": "Macroeconomics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gross-domestic-product",
+        "label": "Gross Domestic Product"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "macroeconomics",
+      "label": "Macroeconomics"
+    },
+    {
+      "slug": "gross-domestic-product",
+      "label": "Gross Domestic Product"
+    },
+    {
+      "slug": "inflation",
+      "label": "Inflation"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    }
+  ],
+  "backlinks": []
+}

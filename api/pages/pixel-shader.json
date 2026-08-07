@@ -153,6 +153,10 @@
       "label": "Compute Shader"
     },
     {
+      "slug": "normal-mapping",
+      "label": "Normal Mapping"
+    },
+    {
       "slug": "rasterization",
       "label": "Rasterization"
     },

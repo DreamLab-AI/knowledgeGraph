@@ -99,7 +99,7 @@
         "label": "Conversational AI"
       },
       {
-        "id": "urn:ngm:class:reactive-system",
+        "id": "urn:ngm:class:reactive-systems",
         "label": "Reactive System"
       }
     ],
@@ -135,7 +135,7 @@
         "label": "Model Context Protocol"
       },
       {
-        "id": "urn:ngm:class:react-pattern",
+        "id": "urn:ngm:class:re-act-pattern",
         "label": "ReAct Pattern"
       }
     ],

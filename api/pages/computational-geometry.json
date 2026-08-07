@@ -158,6 +158,10 @@
       "label": "Collision Detection"
     },
     {
+      "slug": "geometry",
+      "label": "Geometry"
+    },
+    {
       "slug": "light-field",
       "label": "Light field"
     },

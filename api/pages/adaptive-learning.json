@@ -429,6 +429,14 @@
       "label": "Competency Based Education"
     },
     {
+      "slug": "content-repository",
+      "label": "Content Repository"
+    },
+    {
+      "slug": "deep-knowledge-tracing",
+      "label": "Deep Knowledge Tracing"
+    },
+    {
       "slug": "education-and-ai",
       "label": "Education and AI"
     },

@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:1207ae21b6ead5f655636363acc7b897044fdfeedcbf7ddbcaff50c481252ab2",
+  "title": "UK National AI Strategy",
+  "slug": "uk-national-ai-strategy",
+  "public": true,
+  "classIri": "urn:ngm:class:uk-national-ai-strategy",
+  "domain": "governance",
+  "definition": "The UK government's ten-year plan for artificial intelligence, published in September 2021, organised around three pillars: investing in the long-term needs of the AI ecosystem, ensuring AI benefits all sectors and regions, and governing AI effectively. It committed to skills programmes, compute and research investment through bodies including the Alan Turing Institute, and a pro-innovation regulatory approach, and was subsequently extended by the AI Opportunities Action Plan.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:national-ai-strategy",
+      "label": "National AI Strategy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-investment",
+        "label": "AI Investment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:industrial-strategy",
+        "label": "Industrial Strategy"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "national-ai-strategy",
+      "label": "National Ai Strategy"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "industrial-strategy",
+      "label": "Industrial Strategy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    }
+  ]
+}

@@ -181,6 +181,10 @@
       "label": "Cryptography Security and Privacy"
     },
     {
+      "slug": "hardware-design",
+      "label": "Hardware Design"
+    },
+    {
       "slug": "real-time",
       "label": "Real Time"
     },

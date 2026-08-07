@@ -147,6 +147,10 @@
       "label": "Navigation"
     },
     {
+      "slug": "ot-cybersecurity-framework",
+      "label": "OT Cybersecurity Framework"
+    },
+    {
       "slug": "robot-standard",
       "label": "Robot Standard"
     }

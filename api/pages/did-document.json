@@ -133,6 +133,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "did-controller",
+      "label": "DID Controller"
+    },
+    {
       "slug": "decentralized-identifiers",
       "label": "Decentralized Identifiers"
     },

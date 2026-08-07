@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:8261207417276a479136f36c9ba9af17200eccbf7eee4b3f7a5fc7e991453493",
+  "title": "Fragment Shading",
+  "slug": "fragment-shading",
+  "public": true,
+  "classIri": "urn:ngm:class:fragment-shading",
+  "domain": "spatial-computing",
+  "definition": "The programmable stage of the graphics pipeline in which per-fragment computations determine the final colour and depth of each candidate pixel produced by rasterisation. Fragment shaders evaluate lighting models, sample and filter textures, and apply material properties in parallel across thousands of GPU cores, consuming interpolated vertex attributes and producing the shaded values that are blended into the framebuffer, making this stage the dominant cost in most real-time rendering workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:real-time-rendering",
+      "label": "Real-Time Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:vertex-processing",
+        "label": "Vertex Processing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    },
+    {
+      "slug": "vertex-processing",
+      "label": "Vertex Processing"
+    },
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "texture-mapping",
+      "label": "Texture Mapping"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    }
+  ]
+}

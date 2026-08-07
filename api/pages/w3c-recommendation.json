@@ -64,5 +64,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "json-ld-serialisation",
+      "label": "JSON-LD Serialisation"
+    }
+  ]
 }

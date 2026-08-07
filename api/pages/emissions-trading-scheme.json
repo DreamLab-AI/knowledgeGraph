@@ -95,5 +95,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "carbon-tax",
+      "label": "Carbon Tax"
+    },
+    {
+      "slug": "kyoto-protocol",
+      "label": "Kyoto Protocol"
+    }
+  ]
 }

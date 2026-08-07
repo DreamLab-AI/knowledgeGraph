@@ -505,6 +505,10 @@
       "label": "Exteroceptive Sensor"
     },
     {
+      "slug": "resolver",
+      "label": "Resolver"
+    },
+    {
       "slug": "robot-hardware",
       "label": "Robot Hardware"
     }

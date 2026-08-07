@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:744a38c5947aaa56c6ef03058903ea564d09ccee172aa9d7eca1e78efb1bac19",
+  "title": "Pandemic Preparedness AI",
+  "slug": "pandemic-preparedness-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:pandemic-preparedness-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Pandemic Preparedness AI is the class of artificial intelligence systems applied specifically to anticipating, detecting, and mitigating infectious disease outbreaks with pandemic potential. It spans genomic surveillance models that flag novel pathogen variants, epidemiological forecasting that projects transmission dynamics, protein-structure and drug-discovery pipelines that accelerate vaccine and therapeutic design, and early-warning systems that fuse clinical, wastewater, and mobility signals. Distinct from the broader public-health discipline of pandemic preparedness, this class denotes the computational and machine-learning tooling that augments human decision-making, compressing the time between the emergence of a threat and an effective countermeasure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:public-health",
+        "label": "Public Health"
+      },
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "public-health",
+      "label": "Public Health"
+    },
+    {
+      "slug": "biosecurity",
+      "label": "Biosecurity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:de98e5ea566225a14a9a6b3086253f6ddb4b90f537eddbfe582e3f099aae7336",
+  "title": "Academia",
+  "slug": "academia",
+  "public": true,
+  "classIri": "urn:ngm:class:academia",
+  "domain": "governance",
+  "definition": "The worldwide community and institutional system devoted to the production, validation, and transmission of scholarly knowledge \u2014 universities, research institutes, learned societies, journals, and conferences \u2014 organised around disciplines, credentialed through degrees and peer review, and governed by norms of originality, citation, and open critique that distinguish scholarly knowledge from other forms of expertise.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:education",
+      "label": "Education"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:research-institution",
+        "label": "Research Institution"
+      },
+      {
+        "id": "urn:ngm:class:academic-conference",
+        "label": "Academic Conference"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      },
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "education",
+      "label": "Education"
+    },
+    {
+      "slug": "academic-research",
+      "label": "Academic Research"
+    },
+    {
+      "slug": "research-institution",
+      "label": "Research Institution"
+    },
+    {
+      "slug": "peer-review",
+      "label": "Peer Review"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    }
+  ]
+}

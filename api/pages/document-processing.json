@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:448d3fabb45e42eae7aac39bad8561b28d1f8c53f1405e15933ec575f5cecf3f",
+  "title": "Document Processing",
+  "slug": "document-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:document-processing",
+  "domain": "ai",
+  "definition": "The automated ingestion, interpretation, and transformation of documents \u2014 scans, PDFs, forms, invoices, contracts, and email \u2014 into structured, machine-actionable data, combining optical character recognition, layout analysis, classification, and entity extraction; in its AI-driven form (intelligent document processing) it feeds downstream automation, search, and analytics with high-accuracy extracted content.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:business-process-automation",
+      "label": "Business Process Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optical-character-recognition",
+        "label": "Optical Character Recognition"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:document-summarisation",
+        "label": "Document Summarisation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "optical-character-recognition",
+      "label": "Optical Character Recognition"
+    },
+    {
+      "slug": "enterprise-search",
+      "label": "Enterprise Search"
+    },
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    }
+  ],
+  "backlinks": []
+}

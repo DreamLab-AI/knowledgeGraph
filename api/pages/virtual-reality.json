@@ -145,6 +145,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "360-video",
+      "label": "360 Video"
+    },
+    {
       "slug": "altspace-vr",
       "label": "AltspaceVR"
     },
@@ -239,6 +243,10 @@
     {
       "slug": "unity",
       "label": "Unity"
+    },
+    {
+      "slug": "vr-experiences",
+      "label": "VR Experiences"
     },
     {
       "slug": "vrchat",

@@ -169,6 +169,10 @@
     {
       "slug": "proprietary-video",
       "label": "Proprietary Video"
+    },
+    {
+      "slug": "tamper-resistance",
+      "label": "Tamper Resistance"
     }
   ]
 }

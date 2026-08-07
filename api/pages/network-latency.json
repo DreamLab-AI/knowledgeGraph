@@ -167,6 +167,10 @@
       "label": "Presence Indicator"
     },
     {
+      "slug": "transmission-delay",
+      "label": "Transmission Delay"
+    },
+    {
       "slug": "voice-interaction",
       "label": "Voice Interaction"
     }

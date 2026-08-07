@@ -56,7 +56,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:react-pattern",
+        "id": "urn:ngm:class:re-act-pattern",
         "label": "ReAct Pattern"
       },
       {

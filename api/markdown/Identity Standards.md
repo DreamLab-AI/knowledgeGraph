@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:identity-standards",
   "@type": "Class",
   "label": "Identity Standards",
-  "definition": "Identity Standards is an infrastructure concept.",
+  "definition": "Identity Standards are agreed specifications and protocols governing how digital identities are created, expressed, verified and exchanged across systems. They include standards for decentralised identifiers, verifiable credentials and federated authentication, enabling secure, interoperable identity management across platforms and virtual environments.",
   "domain": "infrastructure",
   "maturity": "draft",
   "relations": {
@@ -50,6 +50,26 @@ public:: true
       {
         "@id": "urn:ngm:class:technology-infrastructure",
         "label": "Technology Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       }
     ]
   },
@@ -95,14 +115,15 @@ public:: true
 
 
 - ### Definition
-  - Identity Standards is a concept within the metaverse domain. Further enrichment pending.
+  - Identity Standards are agreed specifications and protocols governing how digital identities are created, expressed, verified and exchanged across systems. They include standards for decentralised identifiers, verifiable credentials and federated authentication, enabling secure, interoperable identity management across platforms and virtual environments.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:IdentityStandards
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - related-to:: [[Identity Management]], [[Decentralized Identity]], [[Verifiable Credentials]]
+  - enables:: [[Interoperability]]
 
 - ### Content
 

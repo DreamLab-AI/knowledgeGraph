@@ -225,6 +225,10 @@
       "label": "AI Model"
     },
     {
+      "slug": "ai-research",
+      "label": "AI Research"
+    },
+    {
       "slug": "ai-risks",
       "label": "AI Risks"
     },
@@ -355,10 +359,6 @@
     {
       "slug": "behavior-analysis",
       "label": "Behavior Analysis"
-    },
-    {
-      "slug": "behavioral-analytics",
-      "label": "Behavioral Analytics"
     },
     {
       "slug": "behavioral-learning",
@@ -605,6 +605,10 @@
       "label": "Data Breach"
     },
     {
+      "slug": "data-mining",
+      "label": "Data Mining"
+    },
+    {
       "slug": "dataset",
       "label": "Dataset"
     },
@@ -627,6 +631,10 @@
     {
       "slug": "decision-tree",
       "label": "Decision Tree"
+    },
+    {
+      "slug": "deep-knowledge-tracing",
+      "label": "Deep Knowledge Tracing"
     },
     {
       "slug": "deep-learning-framework",
@@ -670,7 +678,7 @@
     },
     {
       "slug": "experiment-tracking",
-      "label": "Experiment Tracking"
+      "label": "ML Experiment Tracking"
     },
     {
       "slug": "explainable-ai",
@@ -825,10 +833,6 @@
       "label": "LoRA DoRA etc"
     },
     {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
-    },
-    {
       "slug": "mitre-atlas",
       "label": "MITRE ATLAS"
     },
@@ -837,8 +841,16 @@
       "label": "Machine Learning Discipline"
     },
     {
+      "slug": "machine-learning-model",
+      "label": "Machine Learning Model"
+    },
+    {
       "slug": "machine-learning-technique",
       "label": "Machine Learning Technique"
+    },
+    {
+      "slug": "machine-unlearning",
+      "label": "Machine Unlearning"
     },
     {
       "slug": "manipulator-arm",

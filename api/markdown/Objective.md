@@ -60,7 +60,7 @@ public:: true
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
+      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"},
       {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
     ],
     "enables": [

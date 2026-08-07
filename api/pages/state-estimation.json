@@ -173,10 +173,6 @@
       "label": "Kalman Filter"
     },
     {
-      "slug": "localization",
-      "label": "Localization"
-    },
-    {
       "slug": "model-based-control",
       "label": "Model Based Control"
     },

@@ -102,6 +102,14 @@
     {
       "slug": "decentralised-web",
       "label": "Decentralised Web"
+    },
+    {
+      "slug": "server",
+      "label": "Server"
+    },
+    {
+      "slug": "wireless-network",
+      "label": "Wireless Network"
     }
   ]
 }

@@ -141,6 +141,14 @@
       "label": "Agent Execution Sandboxes"
     },
     {
+      "slug": "container-image",
+      "label": "Container Image"
+    },
+    {
+      "slug": "container-registry",
+      "label": "Container Registry"
+    },
+    {
       "slug": "container",
       "label": "Container"
     }

@@ -179,6 +179,10 @@
       "label": "Concept Drift"
     },
     {
+      "slug": "container-registry",
+      "label": "Container Registry"
+    },
+    {
       "slug": "continuous-training",
       "label": "Continuous Training"
     },

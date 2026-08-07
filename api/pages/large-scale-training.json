@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:d3a5b05aa2af6998eadae4cc9b9b662b3019ba3a6b40d04c744260cbef094781",
+  "title": "Large-Scale Training",
+  "slug": "large-scale-training",
+  "public": true,
+  "classIri": "urn:ngm:class:large-scale-training",
+  "domain": "machine-learning",
+  "definition": "Machine learning training conducted at a scale that exceeds the capacity of a single accelerator, requiring workloads to be distributed across many GPUs or nodes. Large-scale training covers the full range of distributed regimes\u2014pretraining, large fine-tuning runs, and reinforcement learning from feedback\u2014and rests on parallelism strategies (data, tensor, pipeline, and expert parallelism), high-bandwidth interconnects, checkpointing, and fault tolerance to keep thousands of accelerators productively synchronised for days or weeks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-training",
+      "label": "Model Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "data-parallelism",
+      "label": "Data Parallelism"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    }
+  ],
+  "backlinks": []
+}

@@ -95,6 +95,10 @@
     {
       "slug": "checkpoints",
       "label": "Checkpoints"
+    },
+    {
+      "slug": "deserialisation",
+      "label": "Deserialisation"
     }
   ]
 }

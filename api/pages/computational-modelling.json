@@ -308,6 +308,14 @@
     {
       "slug": "dataset",
       "label": "Dataset"
+    },
+    {
+      "slug": "probabilistic-modelling",
+      "label": "Probabilistic Modelling"
+    },
+    {
+      "slug": "system-dynamics",
+      "label": "System Dynamics"
     }
   ]
 }

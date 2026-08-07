@@ -215,6 +215,10 @@
     {
       "slug": "suggested-reading-order",
       "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "web-of-things",
+      "label": "Web of Things"
     }
   ]
 }

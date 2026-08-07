@@ -97,6 +97,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "content-repository",
+      "label": "Content Repository"
+    },
+    {
       "slug": "digital-asset-workflow",
       "label": "Digital Asset Workflow"
     },

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:1d8a6b071a9668d992f68479cd6f3c1662fa2105acba4827552f4423d8368762",
+  "title": "Arc Consistency",
+  "slug": "arc-consistency",
+  "public": true,
+  "classIri": "urn:ngm:class:arc-consistency",
+  "domain": "artificial-intelligence",
+  "definition": "A local consistency property of binary constraint networks in which, for every value in one variable's domain, each constraint linking it to another variable admits at least one compatible supporting value in that variable's domain. Enforcing it \u2014 classically with the AC-3 algorithm \u2014 deletes unsupported values until a fixed point, providing the most widely used level of constraint propagation and the pruning backbone of practical constraint solvers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:constraint-propagation",
+      "label": "Constraint Propagation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:backtracking-search",
+        "label": "Backtracking Search"
+      },
+      {
+        "id": "urn:ngm:class:constraint",
+        "label": "Constraint"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "constraint-propagation",
+      "label": "Constraint Propagation"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "backtracking-search",
+      "label": "Backtracking Search"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "constraint-propagation",
+      "label": "Constraint Propagation"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    }
+  ]
+}

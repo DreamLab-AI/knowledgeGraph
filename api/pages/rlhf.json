@@ -158,12 +158,12 @@
       "label": "Common Sense Reasoning"
     },
     {
-      "slug": "cost-function",
-      "label": "cost function"
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
+      "slug": "cost-function",
+      "label": "cost function"
     },
     {
       "slug": "feedback-loop",

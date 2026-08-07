@@ -160,6 +160,10 @@
       "label": "Content Discovery"
     },
     {
+      "slug": "content-based-filtering",
+      "label": "Content-Based Filtering"
+    },
+    {
       "slug": "death-of-the-internet",
       "label": "Death of the Internet"
     },
@@ -168,8 +172,16 @@
       "label": "Fashion"
     },
     {
+      "slug": "filter-bubble",
+      "label": "Filter Bubble"
+    },
+    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "multi-armed-bandit",
+      "label": "Multi-Armed Bandit"
     }
   ]
 }

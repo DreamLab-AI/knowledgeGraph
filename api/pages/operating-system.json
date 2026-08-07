@@ -163,6 +163,14 @@
     {
       "slug": "middleware",
       "label": "Middleware"
+    },
+    {
+      "slug": "server",
+      "label": "Server"
+    },
+    {
+      "slug": "task-scheduling",
+      "label": "Task Scheduling"
     }
   ]
 }

@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:64216dbccee9404a01f4c234d8fe234257bd9d34d9fe327cca0488b5ed75b1ce",
+  "title": "Single-Turn Inference",
+  "slug": "single-turn-inference",
+  "public": true,
+  "classIri": "urn:ngm:class:single-turn-inference",
+  "domain": "artificial-intelligence",
+  "definition": "The stateless request-response mode of using a language model: a prompt goes in, one completion comes out, and the interaction ends \u2014 with no intermediate tool execution, environmental feedback, self-correction, or persistent state; it is the cheapest and most predictable inference pattern, suited to classification, extraction, translation, and summarisation, and serves as the baseline against which iterative agentic workflows are defined and evaluated.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference",
+      "label": "Inference"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "inference",
+      "label": "Inference"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    }
+  ]
+}

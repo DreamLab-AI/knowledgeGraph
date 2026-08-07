@@ -142,6 +142,10 @@
     {
       "slug": "digital-money",
       "label": "Digital Money"
+    },
+    {
+      "slug": "foreign-exchange",
+      "label": "Foreign Exchange"
     }
   ]
 }

@@ -124,12 +124,20 @@
       "label": "ETSI_Domain_Infrastructure___Immersive"
     },
     {
+      "slug": "jitter",
+      "label": "Jitter"
+    },
+    {
       "slug": "latency",
       "label": "Latency"
     },
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "traffic-shaping",
+      "label": "Traffic Shaping"
     }
   ]
 }

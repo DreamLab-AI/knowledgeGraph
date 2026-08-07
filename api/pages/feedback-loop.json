@@ -716,6 +716,14 @@
     {
       "slug": "emergence",
       "label": "Emergence"
+    },
+    {
+      "slug": "sensor-feedback",
+      "label": "Sensor Feedback"
+    },
+    {
+      "slug": "system-dynamics",
+      "label": "System Dynamics"
     }
   ]
 }

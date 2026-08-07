@@ -329,6 +329,10 @@
     {
       "slug": "data-versioning",
       "label": "Data Versioning"
+    },
+    {
+      "slug": "experiment-tracking",
+      "label": "ML Experiment Tracking"
     }
   ]
 }

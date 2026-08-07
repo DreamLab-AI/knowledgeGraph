@@ -157,6 +157,10 @@
     {
       "slug": "enterprise-token-standards",
       "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "taxation",
+      "label": "Taxation"
     }
   ]
 }

@@ -183,10 +183,6 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
-    },
-    {
       "slug": "adobe-firefly",
       "label": "Adobe Firefly"
     },
@@ -381,6 +377,10 @@
     {
       "slug": "score-matching",
       "label": "Score Matching"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
     }
   ]
 }

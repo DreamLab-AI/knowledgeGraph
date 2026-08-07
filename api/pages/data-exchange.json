@@ -72,7 +72,7 @@
         "label": "Encryption"
       },
       {
-        "id": "urn:ngm:class:data-serialisation",
+        "id": "urn:ngm:class:data-serialization",
         "label": "Data Serialisation"
       }
     ],
@@ -113,5 +113,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "deserialisation",
+      "label": "Deserialisation"
+    }
+  ]
 }

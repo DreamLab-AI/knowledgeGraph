@@ -273,6 +273,10 @@
       "label": "BM25"
     },
     {
+      "slug": "colbert",
+      "label": "ColBERT"
+    },
+    {
       "slug": "cosine-similarity",
       "label": "Cosine Similarity"
     },

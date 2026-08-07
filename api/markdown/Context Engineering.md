@@ -604,7 +604,7 @@ public:: true
         "label": "Agentic AI"
       },
       {
-        "@id": "urn:ngm:class:long-context-modeling",
+        "@id": "urn:ngm:class:long-context-modelling",
         "label": "Long-Context Modeling"
       },
       {

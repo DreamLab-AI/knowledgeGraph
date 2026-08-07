@@ -120,11 +120,11 @@ public:: true
       {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager", "label": "ComfyUI Manager"},
       {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
       {"@id": "urn:ngm:class:invoke-ai", "label": "InvokeAI"},
-      {"@id": "urn:ngm:class:automatic1111-web-ui", "label": "AUTOMATIC1111 WebUI"}
+      {"@id": "urn:ngm:class:automatic-1111-web-ui", "label": "AUTOMATIC1111 WebUI"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:invoke-ai", "label": "InvokeAI"},
-      {"@id": "urn:ngm:class:automatic1111-web-ui", "label": "AUTOMATIC1111 WebUI"}
+      {"@id": "urn:ngm:class:automatic-1111-web-ui", "label": "AUTOMATIC1111 WebUI"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:comfy-org-git-hub-organisation", "label": "Comfy-Org GitHub Organisation"}

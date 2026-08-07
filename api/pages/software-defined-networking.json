@@ -96,6 +96,10 @@
     {
       "slug": "physical-layer",
       "label": "Physical Layer"
+    },
+    {
+      "slug": "wide-area-network",
+      "label": "Wide Area Network"
     }
   ]
 }

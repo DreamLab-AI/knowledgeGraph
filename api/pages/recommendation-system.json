@@ -163,6 +163,10 @@
       "label": "Collaborative Filtering"
     },
     {
+      "slug": "content-curation",
+      "label": "Content Curation"
+    },
+    {
       "slug": "cosine-similarity",
       "label": "Cosine Similarity"
     },

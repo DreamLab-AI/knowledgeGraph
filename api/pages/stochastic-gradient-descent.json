@@ -152,10 +152,6 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
-    },
-    {
       "slug": "algorithm-layer",
       "label": "Algorithm Layer"
     },
@@ -204,10 +200,6 @@
       "label": "Diffusion Models"
     },
     {
-      "slug": "direct-preference-optimization",
-      "label": "Direct Preference Optimization"
-    },
-    {
       "slug": "exploration-exploitation-tradeoff",
       "label": "Exploration Exploitation Tradeoff"
     },
@@ -226,6 +218,18 @@
     {
       "slug": "neural-network",
       "label": "Neural Network"
+    },
+    {
+      "slug": "non-convex-optimisation",
+      "label": "Non-Convex Optimisation"
+    },
+    {
+      "slug": "rmsprop",
+      "label": "RMSProp"
+    },
+    {
+      "slug": "stochastic-optimisation",
+      "label": "Stochastic Optimisation"
     },
     {
       "slug": "stochastic-process",

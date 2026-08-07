@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:3e3e2ca5fc2975c5ce017fb969ce59bbc62bcbef8d7e6188956dfe596273389b",
+  "title": "VR Experiences",
+  "slug": "vr-experiences",
+  "public": true,
+  "classIri": "urn:ngm:class:vr-experiences",
+  "domain": "spatial-computing",
+  "definition": "Designed interactive episodes delivered through fully immersive virtual reality, in which a head-mounted display replaces the user's visual field with a rendered or captured environment they can look around, move through, and act within. VR experiences span entertainment, training, virtual tours, and destination previews; unlike AR experiences, which overlay content on the physical world, they substitute the world entirely, trading environmental awareness for presence and total authorial control of the scene.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:immersive-experience",
+      "label": "Immersive Experience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      },
+      {
+        "id": "urn:ngm:class:destination-marketing",
+        "label": "Destination Marketing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "id": "urn:ngm:class:360-video",
+        "label": "360 Video"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "immersive-experience",
+      "label": "Immersive Experience"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "destination-marketing",
+      "label": "Destination Marketing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "360-video",
+      "label": "360 Video"
+    },
+    {
+      "slug": "destination-marketing",
+      "label": "Destination Marketing"
+    }
+  ]
+}

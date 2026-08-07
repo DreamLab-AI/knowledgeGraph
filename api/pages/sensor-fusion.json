@@ -286,10 +286,6 @@
       "label": "Kalman Filter"
     },
     {
-      "slug": "localization",
-      "label": "Localization"
-    },
-    {
       "slug": "mobile-robot-platform",
       "label": "Mobile Robot Platform"
     },

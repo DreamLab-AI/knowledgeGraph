@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:iso-iec-25024",
   "domain": "standards",
-  "definition": "ISO/IEC 25024 is part of the SQuaRE series and defines measures for the quality of data within an information system.",
+  "definition": "ISO/IEC 25024 is part of the ISO/IEC 25000 SQuaRE (Systems and software Quality Requirements and Evaluation) series. It defines quantitative measures for the data quality characteristics established in ISO/IEC 25012, enabling the quality of data retained in structured formats within an information system to be measured, evaluated and compared across its life cycle.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -18,7 +18,12 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +32,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

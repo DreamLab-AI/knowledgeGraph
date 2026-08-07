@@ -47,7 +47,7 @@ public:: true
         "label": "Security Token"
       },
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       }
     ],
@@ -57,7 +57,7 @@ public:: true
         "label": "Security Token"
       },
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       }
     ],
@@ -108,7 +108,7 @@ public:: true
 
 - ### Definition
   - Traditional Securities are conventional financial instruments such as equities, bonds and fund units that are issued, held and transferred through established centralised market infrastructure including exchanges, central securities depositories and custodians. They represent legal claims on assets or income and are governed by long-standing securities regulation. In blockchain discourse they form the baseline against which tokenised and on-chain security tokens are compared.
-  - Related concepts: [[Security Token]] [[Capital Markets]] [[Centralised Exchange]] [[Asset Tokenization]]
+  - Related concepts: [[Security Token]] [[Capital Markets]] [[Centralised Exchange]] [[Asset Tokenisation]]
 - ### Overview
   - Traditional securities are the incumbent representation of financial claims, settled through layered intermediaries: brokers, exchanges, clearing houses and central securities depositories. Settlement typically follows a multi-day cycle and relies on reconciliation between siloed ledgers. Blockchain-based security tokens propose to compress this stack by representing the same legal claims as programmable on-chain assets, which is why the two are routinely contrasted and bridged.
 - ### Key aspects
@@ -131,9 +131,9 @@ public:: true
   - subClassOf:: [[Blockchain]]
   - partOf:: [[Capital Markets]]
   - contrastsWith:: [[Security Token]]
-  - contrastsWith:: [[Asset Tokenization]]
+  - contrastsWith:: [[Asset Tokenisation]]
   - bridgesTo:: [[Security Token]]
-  - bridgesTo:: [[Asset Tokenization]]
+  - bridgesTo:: [[Asset Tokenisation]]
   - dependsOn:: [[Centralised Exchange]]
   - requires:: [[Regulatory Conformance]]
   - relatedTo:: [[Capital Markets]]

@@ -326,10 +326,6 @@
       "label": "State Machine"
     },
     {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
-    },
-    {
       "slug": "swarm-robotics",
       "label": "Swarm Robotics"
     },

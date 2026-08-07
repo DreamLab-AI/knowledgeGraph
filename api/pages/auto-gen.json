@@ -70,11 +70,11 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:langgraph",
+        "id": "urn:ngm:class:lang-graph",
         "label": "LangGraph"
       },
       {
-        "id": "urn:ngm:class:crewai",
+        "id": "urn:ngm:class:crew-ai",
         "label": "CrewAI"
       }
     ],

@@ -111,6 +111,10 @@
       "label": "Concept Art"
     },
     {
+      "slug": "intellectual-property-rights-framework-law",
+      "label": "Copyright Law"
+    },
+    {
       "slug": "creative-ai",
       "label": "Creative AI"
     },
@@ -125,6 +129,10 @@
     {
       "slug": "image-generation",
       "label": "Image Generation"
+    },
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
     },
     {
       "slug": "music-and-audio",

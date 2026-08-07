@@ -8,7 +8,7 @@
   "definition": "A Global Navigation Satellite System (GNSS) is a constellation of satellites that broadcast timed signals enabling receivers to compute their absolute position, velocity and time anywhere on Earth. GPS, Galileo, GLONASS and BeiDou are the principal systems, with receivers trilaterating position from signal travel times across multiple satellites. In robotics, GNSS provides global geo-referenced localisation that anchors local sensor-based estimates to an absolute coordinate frame.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:localization",
+      "id": "urn:ngm:class:localisation",
       "label": "Localization"
     }
   ],
@@ -30,7 +30,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -80,7 +80,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ],

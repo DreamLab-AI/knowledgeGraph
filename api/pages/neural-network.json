@@ -249,10 +249,6 @@
       "label": "adam optimiser"
     },
     {
-      "slug": "adam-optimizer",
-      "label": "Adam Optimizer"
-    },
-    {
       "slug": "adaptive-behaviour",
       "label": "Adaptive Behaviour"
     },
@@ -469,6 +465,10 @@
       "label": "Diffusion Models"
     },
     {
+      "slug": "encoder-decoder",
+      "label": "Encoder-Decoder"
+    },
+    {
       "slug": "exploration-exploitation-tradeoff",
       "label": "Exploration Exploitation Tradeoff"
     },
@@ -499,6 +499,10 @@
     {
       "slug": "generative-models",
       "label": "Generative Models"
+    },
+    {
+      "slug": "graph-convolutional-network",
+      "label": "Graph Convolutional Network"
     },
     {
       "slug": "graph-neural-networks",
@@ -537,8 +541,16 @@
       "label": "Luma AI"
     },
     {
+      "slug": "machine-learning-model",
+      "label": "Machine Learning Model"
+    },
+    {
       "slug": "model-architecture-layer",
       "label": "Model Architecture Layer"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal Artificial Intelligence"
     },
     {
       "slug": "network-architecture",
@@ -549,8 +561,16 @@
       "label": "Neural 3D Generation"
     },
     {
+      "slug": "neural-vocoder",
+      "label": "Neural Vocoder"
+    },
+    {
       "slug": "patent",
       "label": "Patent"
+    },
+    {
+      "slug": "pooling-layer",
+      "label": "Pooling Layer"
     },
     {
       "slug": "probabilistic-model",

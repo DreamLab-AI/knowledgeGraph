@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:5b24d4013609a73a695b3d71b78a434f59aaabb59f7e94212ed12056fad693a0",
+  "title": "System Dynamics",
+  "slug": "system-dynamics",
+  "public": true,
+  "classIri": "urn:ngm:class:system-dynamics",
+  "domain": "artificial-intelligence",
+  "definition": "A modelling methodology, originated by Jay Forrester at MIT in the 1950s, that represents a complex system as aggregate stocks, flows, and feedback loops governed by coupled differential (or difference) equations, simulating how policy choices and delays produce counter-intuitive behaviour over time; it takes a top-down, population-level view, in deliberate contrast to agent-based modelling's bottom-up simulation of heterogeneous individuals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computational-modelling",
+      "label": "Computational Modelling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "complex-systems",
+      "label": "Complex Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    }
+  ]
+}

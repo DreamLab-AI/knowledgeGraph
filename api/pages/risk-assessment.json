@@ -610,6 +610,10 @@
       "label": "Reputation Scoring Model"
     },
     {
+      "slug": "risk-classification",
+      "label": "Risk Classification"
+    },
+    {
       "slug": "robot-standard",
       "label": "Robot Standard"
     },

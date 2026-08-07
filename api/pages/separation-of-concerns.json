@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:b0c30c1ec77763a6ea96d80bbc70a25bcda736fdfa77aa1630dbc18c989c4b86",
+  "title": "Separation of Concerns",
+  "slug": "separation-of-concerns",
+  "public": true,
+  "classIri": "urn:ngm:class:separation-of-concerns",
+  "domain": "infrastructure",
+  "definition": "A foundational design principle holding that a system should be decomposed so that each part addresses a single, distinct concern \u2014 one aspect of functionality or one axis of decision-making \u2014 with minimal overlap between parts. Articulated by Dijkstra in 1974, it underlies modularity, layering, encapsulation, and interface design: by isolating concerns behind boundaries, changes to one concern can be made, understood, tested, and reused without cascading through the rest of the system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:component",
+        "label": "Component"
+      },
+      {
+        "id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
+      "slug": "osi-model",
+      "label": "OSI Model"
+    },
+    {
+      "slug": "hardware-abstraction-layer",
+      "label": "Hardware Abstraction Layer"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "component",
+      "label": "Component"
+    }
+  ]
+}

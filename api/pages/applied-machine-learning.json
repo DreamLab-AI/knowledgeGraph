@@ -109,7 +109,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:automl",
+        "id": "urn:ngm:class:auto-ml",
         "label": "AutoML"
       },
       {
@@ -336,10 +336,6 @@
     {
       "slug": "cross-validation",
       "label": "Cross-Validation"
-    },
-    {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
     }
   ]
 }

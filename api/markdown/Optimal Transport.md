@@ -57,7 +57,7 @@ public:: true
         "label": "Generative Adversarial Network"
       },
       {
-        "@id": "urn:ngm:class:normalizing-flow",
+        "@id": "urn:ngm:class:normalising-flow",
         "label": "Normalizing Flow"
       }
     ],

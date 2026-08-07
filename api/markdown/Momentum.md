@@ -15,9 +15,9 @@ public:: true
   "definition":"Momentum is an optimisation technique that accelerates gradient descent by accumulating an exponentially weighted moving average of past gradients and using it to update parameters. By carrying velocity from prior steps, it damps oscillations across steep directions and speeds progress along consistent ones, improving convergence on ill-conditioned loss surfaces. Momentum underlies many modern optimisers, with Nesterov's variant and adaptive methods such as Adam building directly on its formulation.",
   "domain":"machine-learning",
   "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:optimization-algorithm","label":"Optimization Algorithm"}],
+  "subClassOf":[{"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimization Algorithm"}],
   "relations":{
-    "partOf":[{"@id":"urn:ngm:class:optimization-algorithm","label":"Optimization Algorithm"}],
+    "partOf":[{"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimization Algorithm"}],
     "hasPart":[
       {"@id":"urn:ngm:class:gradient","label":"Gradient"}
     ],
@@ -55,7 +55,7 @@ public:: true
 ```
 
 - ### Definition
-- Momentum is an [[Optimization Algorithm]] enhancement that accumulates a moving average of past gradients to accelerate [[Gradient Descent]]. It uses the current [[Gradient]] and a [[Learning Rate]] together with a velocity term to make smoother, faster parameter updates.
+- Momentum is an [[Optimisation Algorithm]] enhancement that accumulates a moving average of past gradients to accelerate [[Gradient Descent]]. It uses the current [[Gradient]] and a [[Learning Rate]] together with a velocity term to make smoother, faster parameter updates.
 - By carrying inertia between steps, it damps oscillation and improves [[Convergence]] on ill-conditioned [[Loss Function]] landscapes.
 - ### Overview
 - Plain gradient descent can zig-zag across narrow valleys and crawl along shallow directions. Momentum addresses both: it builds velocity in directions where gradients consistently point, while averaging out noisy, oscillating components.
@@ -72,7 +72,7 @@ public:: true
 - Foundation for adaptive optimisers such as Adam and RMSProp variants.
 - Accelerating convergence in large-scale and distributed training.
 - ### Relationships
-- partOf:: [[Optimization Algorithm]]
+- partOf:: [[Optimisation Algorithm]]
 - hasPart:: [[Gradient]]
 - uses:: [[Gradient]]
 - uses:: [[Learning Rate]]

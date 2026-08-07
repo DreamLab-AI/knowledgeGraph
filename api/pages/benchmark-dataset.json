@@ -297,6 +297,10 @@
       "label": "Dataset"
     },
     {
+      "slug": "leaderboard",
+      "label": "Leaderboard"
+    },
+    {
       "slug": "pose-estimation",
       "label": "Pose Estimation"
     }

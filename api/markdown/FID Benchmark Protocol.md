@@ -74,7 +74,7 @@ public:: true
       {"@id": "urn:ngm:class:inception-v3", "label": "Inception v3"},
       {"@id": "urn:ngm:class:image-net", "label": "ImageNet"},
       {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"},
-      {"@id": "urn:ngm:class:convolutional-neural-networks", "label": "Convolutional Neural Networks"}
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Networks"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},

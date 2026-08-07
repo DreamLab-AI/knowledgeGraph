@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:633a24a483119c9a982f1587feee1a3ec8edf38caeb46a2dbd48f0662783b0e2",
+  "title": "Vertex Attribute",
+  "slug": "vertex-attribute",
+  "public": true,
+  "classIri": "urn:ngm:class:vertex-attribute",
+  "domain": "spatial-computing",
+  "definition": "A per-vertex data channel attached to the vertices of a polygon mesh \u2014 position, normal, tangent, texture coordinates, colour, skinning joint indices and weights \u2014 supplied to the vertex shader as its input. Attributes are stored in vertex buffers with a declared layout (location, format, offset, stride), interpolated across triangles during rasterisation for per-pixel shading, and standardised by interchange formats such as glTF, making them the fundamental unit of geometry data throughout the graphics pipeline.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      },
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-rig",
+        "label": "Skeletal Rig"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "slug": "vertex-shader",
+      "label": "Vertex Shader"
+    },
+    {
+      "slug": "polygon-mesh",
+      "label": "Polygon Mesh"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:d396fa0caebca1334bf08d69ee7bbd8412e3c4c7987644a5c19bece1d7109ca6",
+  "title": "Market Risk",
+  "slug": "market-risk",
+  "public": true,
+  "classIri": "urn:ngm:class:market-risk",
+  "domain": "finance",
+  "definition": "The risk of losses in on- and off-balance-sheet positions arising from adverse movements in market prices \u2014 interest rates, foreign exchange rates, equity prices, credit spreads, and commodity prices \u2014 measured with tools such as value-at-risk, expected shortfall, and sensitivity analysis, and capitalised under banking regulation alongside credit and operational risk.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-risk",
+        "label": "Operational Risk"
+      },
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      },
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "basel-iii",
+      "label": "Basel III"
+    },
+    {
+      "slug": "operational-risk",
+      "label": "Operational Risk"
+    },
+    {
+      "slug": "stress-testing",
+      "label": "Stress Testing"
+    }
+  ],
+  "backlinks": []
+}

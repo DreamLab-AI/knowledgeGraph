@@ -32,7 +32,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"}
+      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:mobile-robotics", "label": "Mobile Robotics"}
@@ -46,7 +46,7 @@ public:: true
   - Logistics automation encompasses the systems — mechanical, computational, and hybrid — that replace or augment human labour in the storage, retrieval, sorting, picking, packing, and transport of physical goods. It spans [[Warehouse Automation]] (automated storage and retrieval systems, conveyor networks, robotic picking arms, autonomous mobile robots), last-mile delivery (autonomous delivery vehicles and drones), and digital orchestration (transport management systems, demand forecasting, route optimisation). The field integrates [[Machine Learning Discipline]] for demand prediction and [[Mobile Robotics]] for flexible, unstructured-environment navigation.
 
 - ### Relationships
-  - Logistics automation builds upon [[Warehouse Automation]] for intralogistics operations and [[Autonomous Vehicle]] technology for over-the-road and last-mile delivery. [[Mobile Robotics]] platforms such as AMRs (Autonomous Mobile Robots) navigate warehouse floors to move inventory pods. [[Machine Learning Discipline]] drives demand forecasting, carrier selection, and route optimisation that constitute the informational backbone. Together these capabilities enable [[Supply Chain]] resilience and are further refined through [[Logistics Optimization]] algorithms that minimise transport cost and delivery latency.
+  - Logistics automation builds upon [[Warehouse Automation]] for intralogistics operations and [[Autonomous Vehicle]] technology for over-the-road and last-mile delivery. [[Mobile Robotics]] platforms such as AMRs (Autonomous Mobile Robots) navigate warehouse floors to move inventory pods. [[Machine Learning Discipline]] drives demand forecasting, carrier selection, and route optimisation that constitute the informational backbone. Together these capabilities enable [[Supply Chain]] resilience and are further refined through [[Logistics Optimisation]] algorithms that minimise transport cost and delivery latency.
 
 - ### Content
   - Logistics automation has roots in the mechanised conveyor systems of 20th-century postal sorting facilities and distribution centres. Toyota's kaizen and just-in-time methodologies accelerated systematic material flow design from the 1970s. The emergence of e-commerce — catalysed by Amazon's fulfilment model from the late 1990s — created demand for warehouse automation at previously unattained scales. Amazon's 2012 acquisition of Kiva Systems (subsequently Amazon Robotics) marked a turning point: autonomous drive units that carry inventory shelving to stationary human pickers replaced labour-intensive manual picking walks, achieving order-of-magnitude throughput improvements.

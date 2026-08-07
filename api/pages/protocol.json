@@ -110,6 +110,10 @@
       "label": "Interface"
     },
     {
+      "slug": "open-protocol",
+      "label": "Open Protocol"
+    },
+    {
       "slug": "smart-contract",
       "label": "Smart Contract"
     }

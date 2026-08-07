@@ -140,6 +140,14 @@
       "label": "AI Safety Institute"
     },
     {
+      "slug": "instrumental-convergence",
+      "label": "Instrumental Convergence"
+    },
+    {
+      "slug": "mesa-optimisation",
+      "label": "Mesa-Optimisation"
+    },
+    {
       "slug": "sociotechnical-risk",
       "label": "Sociotechnical Risk"
     }

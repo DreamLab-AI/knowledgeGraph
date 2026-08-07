@@ -24,7 +24,7 @@ public:: true
     "standardizedBy":[{"@id":"urn:ngm:class:internet-engineering-task-force","label":"Internet Engineering Task Force"}],
     "implements":[{"@id":"urn:ngm:class:governance-mechanism","label":"Governance Mechanism"}],
     "contrastsWith":[{"@id":"urn:ngm:class:voting-mechanism","label":"Voting Mechanism"}],
-    "relatedTo":[{"@id":"urn:ngm:class:ietf","label":"IETF"},{"@id":"urn:ngm:class:standardization","label":"Standardization"},{"@id":"urn:ngm:class:standards","label":"Standards"}]
+    "relatedTo":[{"@id":"urn:ngm:class:ietf","label":"IETF"},{"@id":"urn:ngm:class:standardisation","label":"Standardization"},{"@id":"urn:ngm:class:standards","label":"Standards"}]
   },
   "sameAs":[],
   "quality":0.62,

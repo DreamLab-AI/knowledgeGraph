@@ -122,7 +122,7 @@
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "id": "urn:ngm:class:opentelemetry",
+        "id": "urn:ngm:class:open-telemetry",
         "label": "OpenTelemetry"
       }
     ],
@@ -467,6 +467,10 @@
     {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
+    },
+    {
+      "slug": "checkpointing",
+      "label": "Checkpointing"
     },
     {
       "slug": "harness-configuration-packs",

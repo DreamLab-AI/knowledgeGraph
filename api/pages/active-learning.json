@@ -337,6 +337,10 @@
       "label": "Affective Computing"
     },
     {
+      "slug": "annotated-dataset",
+      "label": "Annotated Dataset"
+    },
+    {
       "slug": "anomaly-detection",
       "label": "anomaly detection"
     },

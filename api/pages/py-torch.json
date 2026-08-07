@@ -145,10 +145,6 @@
       "label": "LoRA DoRA etc"
     },
     {
-      "slug": "logistics-optimization",
-      "label": "Logistics Optimization"
-    },
-    {
       "slug": "model-training",
       "label": "Model Training"
     },

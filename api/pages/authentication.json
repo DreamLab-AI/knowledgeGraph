@@ -224,6 +224,10 @@
       "label": "Meeting Recording"
     },
     {
+      "slug": "password",
+      "label": "Password"
+    },
+    {
       "slug": "presence-indicator",
       "label": "Presence Indicator"
     },
@@ -250,6 +254,10 @@
     {
       "slug": "x-509-certificate",
       "label": "X.509 Certificate"
+    },
+    {
+      "slug": "zero-trust",
+      "label": "Zero Trust"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

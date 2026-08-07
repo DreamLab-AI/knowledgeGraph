@@ -157,6 +157,14 @@
     {
       "slug": "assistive-technology-integration",
       "label": "Assistive Technology Integration"
+    },
+    {
+      "slug": "inaccessible-design",
+      "label": "Inaccessible Design"
+    },
+    {
+      "slug": "inclusive-experience",
+      "label": "Inclusive Experience"
     }
   ]
 }

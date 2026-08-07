@@ -221,7 +221,7 @@ public:: true
   - #### Household and Service Robotics
     - [[AI Navigation]] through homes, opening doors, fetching objects, assisting elderly users.
     - Meta Habitat 3.0 supports social navigation and human-robot collaboration scenarios.
-    - Related: [[Human-Robot Interaction]], [[Semantic Navigation]]
+    - Related: [[Human Robot Interaction]], [[Semantic Navigation]]
   - #### Autonomous Driving
     - Safety-critical scenario replay, adversarial agent generation, rare-event injection.
     - Platforms: CARLA, LGSVL, NVIDIA DRIVE Sim, Waymo's internal simulator.

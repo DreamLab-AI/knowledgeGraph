@@ -163,6 +163,10 @@
       "label": "Batch Inference"
     },
     {
+      "slug": "centralised-ai",
+      "label": "Centralised AI"
+    },
+    {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
     },

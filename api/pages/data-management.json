@@ -168,6 +168,10 @@
       "label": "Data Integration Interface"
     },
     {
+      "slug": "data-lifecycle",
+      "label": "Data Lifecycle"
+    },
+    {
       "slug": "data-provenance",
       "label": "Data Provenance"
     },
@@ -178,6 +182,10 @@
     {
       "slug": "data-versioning",
       "label": "Data Versioning"
+    },
+    {
+      "slug": "dataset-curation",
+      "label": "Dataset Curation"
     },
     {
       "slug": "dataset",
@@ -218,6 +226,10 @@
     {
       "slug": "image-generation",
       "label": "Image Generation"
+    },
+    {
+      "slug": "information-management",
+      "label": "Information Management"
     },
     {
       "slug": "large-language-models",

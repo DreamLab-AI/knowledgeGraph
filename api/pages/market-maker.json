@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:ea20ae7cc9d76da73e51c93b94e18dc534069c99696aa3aae1e6259e8e930d5f",
+  "title": "Market Maker",
+  "slug": "market-maker",
+  "public": true,
+  "classIri": "urn:ngm:class:market-maker",
+  "domain": "finance",
+  "definition": "A market maker is a firm or agent that stands ready to both buy and sell an asset continuously, quoting bid and ask prices and earning the spread between them. By absorbing temporary imbalances between buyers and sellers, market makers supply liquidity, tighten spreads, reduce slippage and accelerate price discovery on exchanges. In decentralised finance the role is generalised by automated market makers, which replace quoted order books with algorithmic pricing curves funded by pooled liquidity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:liquidity-provider",
+      "label": "Liquidity Provider"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "id": "urn:ngm:class:trade-execution",
+        "label": "Trade Execution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bid-ask-spread",
+        "label": "Bid Ask Spread"
+      },
+      {
+        "id": "urn:ngm:class:slippage",
+        "label": "Slippage"
+      },
+      {
+        "id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      },
+      {
+        "id": "urn:ngm:class:capital-efficiency",
+        "label": "Capital Efficiency"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "liquidity-provider",
+      "label": "Liquidity Provider"
+    },
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "bid-ask-spread",
+      "label": "Bid Ask Spread"
+    }
+  ],
+  "backlinks": []
+}

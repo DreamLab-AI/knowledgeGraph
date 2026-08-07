@@ -1,0 +1,159 @@
+{
+  "id": "urn:visionflow:page:507c8335bc749943ef9e4628d1ed4494867b7c2cbd75653f18ff1ad22a2bd8ac",
+  "title": "Quantum Computing",
+  "slug": "quantum-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:quantum-computing",
+  "domain": "infrastructure",
+  "definition": "The engineering discipline and technology stack that performs computation using quantum-mechanical phenomena \u2014 superposition, entanglement and interference \u2014 over registers of qubits, spanning hardware platforms (superconducting circuits, trapped ions, photonics, neutral atoms), error correction, and algorithms such as Shor's factoring and Grover's search that offer provable or conjectured speed-ups over classical computation for specific problem classes including cryptanalysis, simulation of quantum systems and combinatorial optimisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quantum-computation-paradigm",
+      "label": "Quantum Computation Paradigm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity Theory"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "quantum-computation-paradigm",
+      "label": "Quantum Computation Paradigm"
+    },
+    {
+      "slug": "qubit",
+      "label": "Qubit"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "computability-theory",
+      "label": "Computability Theory"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "lattice-cryptography",
+      "label": "Lattice Cryptography"
+    },
+    {
+      "slug": "material-science",
+      "label": "Material Science"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "quantum-key-distribution",
+      "label": "Quantum Key Distribution"
+    },
+    {
+      "slug": "qubit",
+      "label": "Qubit"
+    },
+    {
+      "slug": "superfluid",
+      "label": "Superfluid"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

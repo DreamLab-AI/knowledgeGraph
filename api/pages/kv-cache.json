@@ -169,6 +169,10 @@
       "label": "Model Optimisation and Performance"
     },
     {
+      "slug": "throughput-optimisation",
+      "label": "Throughput Optimisation"
+    },
+    {
       "slug": "transformers",
       "label": "Transformers"
     },

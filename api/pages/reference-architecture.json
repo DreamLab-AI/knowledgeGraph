@@ -156,6 +156,10 @@
   ],
   "backlinks": [
     {
+      "slug": "best-practice",
+      "label": "Best Practice"
+    },
+    {
       "slug": "digital-twin-framework",
       "label": "Digital Twin Framework"
     },

@@ -27,7 +27,7 @@
         "label": "Presence Detection"
       },
       {
-        "id": "urn:ngm:class:state-synchronization",
+        "id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization"
       }
     ],

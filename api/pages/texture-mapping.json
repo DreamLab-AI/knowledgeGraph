@@ -162,8 +162,20 @@
       "label": "Character Model"
     },
     {
+      "slug": "fragment-shading",
+      "label": "Fragment Shading"
+    },
+    {
       "slug": "material-x",
       "label": "MaterialX"
+    },
+    {
+      "slug": "mipmap",
+      "label": "Mipmap"
+    },
+    {
+      "slug": "normal-mapping",
+      "label": "Normal Mapping"
     },
     {
       "slug": "pixel-shader",

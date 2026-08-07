@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:e9c930c66658717e2191c28a6c9ebf053932d8c1e880e0e39f3f01af08064be6",
+  "title": "Satellite Imagery",
+  "slug": "satellite-imagery",
+  "public": true,
+  "classIri": "urn:ngm:class:satellite-imagery",
+  "domain": "spatial-computing",
+  "definition": "Imagery of the Earth's surface captured by sensors aboard orbiting satellites, spanning optical, multispectral, hyperspectral, thermal, and synthetic-aperture radar modalities at spatial resolutions from kilometres to tens of centimetres. Georeferenced and revisited on regular orbits, satellite imagery is the primary raster substrate of geospatial analysis, feeding mapping, agriculture, climate monitoring, disaster response, and defence, and \u2014 via open programmes such as Landsat and Sentinel \u2014 machine learning at planetary scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:remote-sensing",
+      "label": "Remote Sensing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "remote-sensing",
+      "label": "Remote Sensing"
+    },
+    {
+      "slug": "geospatial-data",
+      "label": "Geospatial Data"
+    },
+    {
+      "slug": "image-processing",
+      "label": "Image Processing"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

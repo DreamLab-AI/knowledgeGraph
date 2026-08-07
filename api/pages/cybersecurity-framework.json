@@ -99,6 +99,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ot-cybersecurity-framework",
+      "label": "OT Cybersecurity Framework"
+    },
+    {
       "slug": "zero-trust-architecture-zta",
       "label": "Zero-Trust Architecture (ZTA)"
     }

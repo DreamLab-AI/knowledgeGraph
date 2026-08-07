@@ -52,7 +52,7 @@ elevatedFrom:: [[solar plans]]
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"}
+      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},

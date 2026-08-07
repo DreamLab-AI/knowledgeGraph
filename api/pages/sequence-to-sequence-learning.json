@@ -114,6 +114,10 @@
       "label": "Beam Search"
     },
     {
+      "slug": "encoder-decoder",
+      "label": "Encoder-Decoder"
+    },
+    {
       "slug": "real-time-translation",
       "label": "Real-time Translation"
     },

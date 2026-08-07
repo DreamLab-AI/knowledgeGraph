@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:b8b68308832394e08449890a6728023d46ce98bb8680295812f57c047ec10769",
+  "title": "Governance Risk Compliance",
+  "slug": "governance-risk-compliance",
+  "public": true,
+  "classIri": "urn:ngm:class:governance-risk-compliance",
+  "domain": "governance",
+  "definition": "An integrated organisational discipline that aligns corporate governance, enterprise risk management, and regulatory compliance into one coordinated capability, so that objectives are set and overseen reliably, uncertainty is addressed within appetite, and the organisation acts with integrity within legal and regulatory boundaries. Formalised by OCEG's 'principled performance' model, GRC replaces siloed oversight functions with shared taxonomies of risks, controls, policies, and obligations, typically operationalised through dedicated platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:grc-platform",
+        "label": "Grc Platform"
+      },
+      {
+        "id": "urn:ngm:class:operational-risk",
+        "label": "Operational Risk"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "grc-platform",
+      "label": "Grc Platform"
+    },
+    {
+      "slug": "operational-risk",
+      "label": "Operational Risk"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    }
+  ]
+}

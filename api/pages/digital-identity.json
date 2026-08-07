@@ -269,6 +269,10 @@
       "label": "Hyperledger Iroha"
     },
     {
+      "slug": "iso-iec-jtc-1-sc-17",
+      "label": "ISO/IEC JTC 1/SC 17"
+    },
+    {
       "slug": "identity-management-system",
       "label": "Identity Management System"
     },
@@ -283,6 +287,10 @@
     {
       "slug": "instant-value-settlement",
       "label": "Instant value settlement"
+    },
+    {
+      "slug": "presentation-exchange",
+      "label": "Presentation Exchange"
     },
     {
       "slug": "private-blockchain",

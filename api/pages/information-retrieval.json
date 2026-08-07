@@ -221,6 +221,10 @@
       "label": "LLM Application Frameworks"
     },
     {
+      "slug": "music-information-retrieval",
+      "label": "Music Information Retrieval"
+    },
+    {
       "slug": "progressive-disclosure-harnesses",
       "label": "Progressive Disclosure Harnesses"
     },
@@ -247,6 +251,10 @@
     {
       "slug": "semantic-search",
       "label": "Semantic Search"
+    },
+    {
+      "slug": "tf-idf",
+      "label": "TF-IDF"
     },
     {
       "slug": "vector-search",

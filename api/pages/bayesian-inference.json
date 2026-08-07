@@ -245,6 +245,10 @@
       "label": "Exteroceptive Sensor"
     },
     {
+      "slug": "frequentist-statistics",
+      "label": "Frequentist Statistics"
+    },
+    {
       "slug": "gaussian-distribution",
       "label": "Gaussian Distribution"
     },
@@ -259,6 +263,10 @@
     {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
+    },
+    {
+      "slug": "probabilistic-modelling",
+      "label": "Probabilistic Modelling"
     },
     {
       "slug": "probabilistic-robotics",

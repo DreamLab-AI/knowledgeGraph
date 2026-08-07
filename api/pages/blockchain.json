@@ -356,10 +356,6 @@
       "label": "Asset Registry"
     },
     {
-      "slug": "asset-tokenization",
-      "label": "Asset Tokenization"
-    },
-    {
       "slug": "asset-trading",
       "label": "Asset Trading"
     },
@@ -1520,20 +1516,12 @@
       "label": "ETSI Domain: Governance & Ethics"
     },
     {
-      "slug": "etsi-domain-governance-compliance",
-      "label": "ETSI_Domain_Governance_Compliance"
-    },
-    {
       "slug": "etsi-domain-governance-security",
       "label": "ETSI_Domain_Governance_Security"
     },
     {
       "slug": "etsi-domain-governance-economy",
       "label": "ETSI_Domain_Governance___Economy"
-    },
-    {
-      "slug": "etsi-domain-governance-ethics",
-      "label": "ETSI_Domain_Governance___Ethics"
     },
     {
       "slug": "etsi-domain-human-interface-governance",
@@ -2330,10 +2318,6 @@
     {
       "slug": "state-machine",
       "label": "State Machine"
-    },
-    {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
     },
     {
       "slug": "stellar",

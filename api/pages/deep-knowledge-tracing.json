@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:035d6f267066298b0f1848a4f60dab0fe8e0e9262515ba6995027efea4ba219f",
+  "title": "Deep Knowledge Tracing",
+  "slug": "deep-knowledge-tracing",
+  "public": true,
+  "classIri": "urn:ngm:class:deep-knowledge-tracing",
+  "domain": "machine-learning",
+  "definition": "A machine-learning approach to modelling student knowledge, introduced by Piech et al. in 2015, that feeds a learner's full sequence of exercise interactions into a recurrent neural network which maintains a latent state of mastery and predicts the probability of answering the next item correctly, outperforming Bayesian Knowledge Tracing by learning inter-skill structure and forgetting dynamics directly from data at the cost of interpretability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bayesian-knowledge-tracing",
+        "label": "Bayesian Knowledge Tracing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:lstm",
+        "label": "LSTM"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
+    }
+  ]
+}

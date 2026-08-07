@@ -108,6 +108,10 @@
     {
       "slug": "feature-importance",
       "label": "Feature Importance"
+    },
+    {
+      "slug": "machine-learning-model",
+      "label": "Machine Learning Model"
     }
   ]
 }

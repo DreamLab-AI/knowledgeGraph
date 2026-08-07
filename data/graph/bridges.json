@@ -1,7 +1,7 @@
 {
   "pipelineVersion": "ng-1.0.0",
   "note": "Classes bridging more than one taxonomy category or domain. Overlap is a design property of this corpus. The NGG1 node record carries a single u16 category (FORMAT-NGG1 3), so tiers keep the nearest one; the full membership is here. Indices match overview.json.",
-  "count": 542,
+  "count": 565,
   "bridges": [
     {
       "iri": "https://narrativegoldmine.com/class/3-d-generation",
@@ -33,6 +33,21 @@
       "parents": [
         "Display and Rendering",
         "Content and Assets"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/3d-modelling",
+      "label": "3D Modelling",
+      "categories": [
+        12,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Computer Graphics",
+        "3D Development"
       ]
     },
     {
@@ -435,6 +450,21 @@
       "parents": [
         "Concurrency",
         "Distributed Computing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/adam-optimiser",
+      "label": "Adam Optimiser",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Gradient Descent",
+        "Optimisation Algorithm"
       ]
     },
     {
@@ -1159,21 +1189,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/behavioral-analytics",
-      "label": "Behavioral Analytics",
-      "categories": [
-        0,
-        5
-      ],
-      "domains": [
-        0
-      ],
-      "parents": [
-        "AI Technique",
-        "Machine Learning Discipline"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/behavioral-modeling",
       "label": "Behavioral Modeling",
       "categories": [
@@ -1186,6 +1201,40 @@
       "parents": [
         "Machine Learning Discipline",
         "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/behaviour-tree",
+      "label": "Behaviour Tree",
+      "categories": [
+        5,
+        21
+      ],
+      "domains": [
+        0,
+        3
+      ],
+      "parents": [
+        "Automated Planning",
+        "Navigation and Planning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/behavioural-analytics",
+      "label": "Behavioural Analytics",
+      "categories": [
+        32,
+        0,
+        5
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Security",
+        "AI Technique",
+        "Machine Learning Discipline"
       ]
     },
     {
@@ -1502,6 +1551,21 @@
       "parents": [
         "Mobile Robotics",
         "Robot Type"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/building-information-modelling",
+      "label": "Building Information Modelling",
+      "categories": [
+        5,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Digital Twin"
       ]
     },
     {
@@ -2120,6 +2184,21 @@
       "parents": [
         "AI Technique",
         "Combinatorial Optimisation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/constraint-solver",
+      "label": "Constraint Solver",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Optimization Algorithm",
+        "Inference Engine"
       ]
     },
     {
@@ -3111,20 +3190,18 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/direct-preference-optimization",
-      "label": "Direct Preference Optimization",
+      "iri": "https://narrativegoldmine.com/class/disaster-response",
+      "label": "Disaster Response",
       "categories": [
-        0,
-        1,
-        3
+        5,
+        15
       ],
       "domains": [
-        0
+        2
       ],
       "parents": [
-        "AI Technique",
-        "Generative Model",
-        "Language Model Alignment"
+        "Spatial Computing",
+        "Remote Sensing"
       ]
     },
     {
@@ -3202,6 +3279,22 @@
       "parents": [
         "Content and Assets",
         "Etsi Metaverse Domain Taxonomy"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/etsi-domain-governance-and-ethics",
+      "label": "ETSI Domain: Governance & Ethics",
+      "categories": [
+        32,
+        3
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "AI Governance and Ethics"
       ]
     },
     {
@@ -3481,6 +3574,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/extended-reality",
+      "label": "Extended Reality",
+      "categories": [
+        5,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Extended Reality (XR)"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/external-ai-harness",
       "label": "External AI Harness",
       "categories": [
@@ -3677,6 +3785,21 @@
       "parents": [
         "Diffusion Model",
         "Generative AI"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/formative-assessment",
+      "label": "Formative Assessment",
+      "categories": [
+        5,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Learning Analytics"
       ]
     },
     {
@@ -3943,6 +4066,36 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/geographic-information-system",
+      "label": "Geographic Information System",
+      "categories": [
+        5,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Remote Sensing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/geospatial-technology",
+      "label": "Geospatial Technology",
+      "categories": [
+        5,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Geospatial Engine"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/global-explanation",
       "label": "Global Explanation",
       "categories": [
@@ -4002,6 +4155,21 @@
       "parents": [
         "Graphics Processing",
         "Computing Infrastructure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/graphics-processing",
+      "label": "Graphics Processing",
+      "categories": [
+        5,
+        12
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Display and Rendering"
       ]
     },
     {
@@ -4344,6 +4512,7 @@
       "iri": "https://narrativegoldmine.com/class/indoor-navigation",
       "label": "Indoor Navigation",
       "categories": [
+        5,
         14
       ],
       "domains": [
@@ -4568,6 +4737,21 @@
       "parents": [
         "Cryptographic Primitive",
         "Blockchain Entity"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/khronos-open-xr",
+      "label": "Khronos OpenXR",
+      "categories": [
+        5,
+        16
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Standards and Interoperability"
       ]
     },
     {
@@ -4828,6 +5012,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/localisation",
+      "label": "Localisation",
+      "categories": [
+        21,
+        0
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Navigation and Planning",
+        "State Estimation"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/lock-and-mint-mechanism",
       "label": "Lock and Mint Mechanism",
       "categories": [
@@ -4843,16 +5042,17 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/logistics-optimization",
-      "label": "Logistics Optimization",
+      "iri": "https://narrativegoldmine.com/class/logistics-optimisation",
+      "label": "Logistics Optimisation",
       "categories": [
-        0,
-        5
+        5,
+        0
       ],
       "domains": [
         0
       ],
       "parents": [
+        "Optimisation",
         "AI Technique",
         "Applied Machine Learning"
       ]
@@ -5927,6 +6127,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/presence-technology",
+      "label": "Presence Technology",
+      "categories": [
+        5,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Platform and Environment"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/prime-intellect",
       "label": "Prime Intellect",
       "categories": [
@@ -6833,6 +7048,36 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/service-layer",
+      "label": "Service Layer",
+      "categories": [
+        15,
+        5
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Spatial Computing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/shadow-mapping",
+      "label": "Shadow Mapping",
+      "categories": [
+        5,
+        12
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Display and Rendering"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/shared-whiteboards",
       "label": "Shared Whiteboards",
       "categories": [
@@ -7078,6 +7323,21 @@
       "parents": [
         "Standards and Interoperability",
         "Coordinate System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/spatial-web",
+      "label": "Spatial Web",
+      "categories": [
+        5,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Semantic Spatial Web Layer"
       ]
     },
     {
@@ -7401,6 +7661,7 @@
       "iri": "https://narrativegoldmine.com/class/tamper-evidence",
       "label": "Tamper Evidence",
       "categories": [
+        5,
         10
       ],
       "domains": [
@@ -7475,6 +7736,36 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/texture-compression",
+      "label": "Texture Compression",
+      "categories": [
+        5,
+        12
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Display and Rendering"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/texture-map",
+      "label": "Texture Map",
+      "categories": [
+        5,
+        12
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Uv Mapping"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/tezos",
       "label": "Tezos",
       "categories": [
@@ -7487,6 +7778,21 @@
       "parents": [
         "Layer 1",
         "Layer 1 Blockchain"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/think-aloud-protocol",
+      "label": "Think Aloud Protocol",
+      "categories": [
+        5,
+        13
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Human Computer Interface"
       ]
     },
     {
@@ -8086,6 +8392,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/voxel-grid",
+      "label": "Voxel Grid",
+      "categories": [
+        5,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Point Cloud"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/wallet-address",
       "label": "Wallet Address",
       "categories": [
@@ -8098,6 +8419,36 @@
       "parents": [
         "Blockchain",
         "Public Key"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/wearable-ai",
+      "label": "Wearable AI",
+      "categories": [
+        5,
+        13
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Wearable Device Integration"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/wearable-computing",
+      "label": "Wearable Computing",
+      "categories": [
+        5,
+        13
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Human Interface Device"
       ]
     },
     {
@@ -8133,6 +8484,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/web-xr",
+      "label": "WebXR",
+      "categories": [
+        5,
+        16
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Standards and Interoperability"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/working-memory",
       "label": "Working Memory",
       "categories": [
@@ -8160,6 +8526,21 @@
       "parents": [
         "Governance and Safety",
         "Accessibility Standard"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/xr-hardware",
+      "label": "XR Hardware",
+      "categories": [
+        5,
+        12
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Display and Rendering"
       ]
     },
     {
@@ -8280,36 +8661,6 @@
       "parents": [
         "Actuation and Control",
         "Robot"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/rb-0056-impedance-control",
-      "label": "rb 0056 impedance control",
-      "categories": [
-        19,
-        23
-      ],
-      "domains": [
-        3
-      ],
-      "parents": [
-        "Actuation and Control",
-        "Interaction Control"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/rb-0057-admittance-control",
-      "label": "rb 0057 admittance control",
-      "categories": [
-        19,
-        23
-      ],
-      "domains": [
-        3
-      ],
-      "parents": [
-        "Actuation and Control",
-        "Interaction Control"
       ]
     },
     {

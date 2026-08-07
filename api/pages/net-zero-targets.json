@@ -135,6 +135,10 @@
     {
       "slug": "energy-and-power",
       "label": "Energy and Power"
+    },
+    {
+      "slug": "greenhouse-gas-emissions",
+      "label": "Greenhouse Gas Emissions"
     }
   ]
 }

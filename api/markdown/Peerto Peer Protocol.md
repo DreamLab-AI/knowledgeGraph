@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:peerto-peer-protocol",
   "@type": "Class",
   "label": "Peerto Peer Protocol",
-  "definition": "Peerto Peer Protocol is a blockchain concept.",
+  "definition": "A peer-to-peer protocol defines the rules by which nodes in a decentralised network discover one another, exchange messages and share data directly, without central intermediaries. In blockchain systems such protocols underpin peer discovery, transaction relay and block propagation, providing the communication layer over which consensus is reached.",
   "domain": "blockchain",
   "maturity": "draft",
   "relations": {
@@ -50,6 +50,26 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ]
   },
@@ -95,14 +115,15 @@ public:: true
 
 
 - ### Definition
-  - Peerto Peer Protocol is a concept within the blockchain domain. Further enrichment pending.
+  - A peer-to-peer protocol defines the rules by which nodes in a decentralised network discover one another, exchange messages and share data directly, without central intermediaries. In blockchain systems such protocols underpin peer discovery, transaction relay and block propagation, providing the communication layer over which consensus is reached.
 
 - ### Semantic Classification
   - owl-class:: blockchain:PeertoPeerProtocol
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - related-to:: [[Peer-to-Peer Network]], [[Network Protocol]], [[Distributed Ledger Technology]]
+  - enables:: [[Consensus Mechanism]]
 
 - ### Content
 

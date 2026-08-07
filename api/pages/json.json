@@ -46,6 +46,10 @@
     {
       "slug": "pre-training",
       "label": "Pre Training"
+    },
+    {
+      "slug": "yaml",
+      "label": "YAML"
     }
   ]
 }

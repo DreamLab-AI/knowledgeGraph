@@ -78,7 +78,7 @@
         "label": "Search Algorithms"
       },
       {
-        "id": "urn:ngm:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -154,8 +154,16 @@
       "label": "Constraint Satisfaction"
     },
     {
+      "slug": "local-search",
+      "label": "Local Search"
+    },
+    {
       "slug": "search-algorithm",
       "label": "Search Algorithm"
+    },
+    {
+      "slug": "simulated-annealing",
+      "label": "Simulated Annealing"
     }
   ]
 }

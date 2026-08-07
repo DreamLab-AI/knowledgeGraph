@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "energy-optimization",
+      "label": "Energy Optimisation"
+    },
+    {
       "slug": "velocity-control",
       "label": "VelocityControl"
     }

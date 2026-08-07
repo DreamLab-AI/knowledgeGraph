@@ -83,5 +83,10 @@
       "label": "Robotics"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "resolver",
+      "label": "Resolver"
+    }
+  ]
 }

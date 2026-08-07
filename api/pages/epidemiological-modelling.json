@@ -108,6 +108,10 @@
       "label": "Computational Modelling"
     },
     {
+      "slug": "public-health",
+      "label": "Public Health"
+    },
+    {
       "slug": "time-series-forecasting",
       "label": "Time Series Forecasting"
     }

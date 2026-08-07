@@ -30,7 +30,7 @@
         "label": "AI Impact Assessment"
       },
       {
-        "id": "urn:ngm:class:model-card",
+        "id": "urn:ngm:class:model-cards",
         "label": "Model Card"
       },
       {
@@ -309,6 +309,10 @@
     {
       "slug": "ai-agent-coordination",
       "label": "AI Agent Coordination"
+    },
+    {
+      "slug": "ai-documentation",
+      "label": "AI Documentation"
     },
     {
       "slug": "ai-governance-framework",

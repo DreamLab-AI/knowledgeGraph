@@ -131,6 +131,10 @@
       "label": "Carbon Neutral Blockchain"
     },
     {
+      "slug": "carbon-tax",
+      "label": "Carbon Tax"
+    },
+    {
       "slug": "climate-finance",
       "label": "Climate Finance"
     },

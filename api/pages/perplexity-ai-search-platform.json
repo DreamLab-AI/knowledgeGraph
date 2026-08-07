@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:perplexity-ai-search-platform",
   "domain": "infrastructure",
-  "definition": "perplexity is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Perplexity AI is a conversational search platform that combines large language models with live web retrieval to produce cited, synthesised answers to natural-language queries. Offered through consumer applications and an API, it applies retrieval-augmented generation to web-scale content, sitting between traditional search engines and generative AI assistants.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -36,6 +36,18 @@
       {
         "id": "urn:ngm:class:technology-infrastructure",
         "label": "Technology Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       }
     ]
   },

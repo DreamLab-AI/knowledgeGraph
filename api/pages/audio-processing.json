@@ -360,6 +360,10 @@
       "label": "Deepfakes"
     },
     {
+      "slug": "music-information-retrieval",
+      "label": "Music Information Retrieval"
+    },
+    {
       "slug": "otter-ai",
       "label": "Otter.ai"
     },

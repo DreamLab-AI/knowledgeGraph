@@ -122,7 +122,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:openpose",
+        "id": "urn:ngm:class:open-pose",
         "label": "OpenPose"
       },
       {
@@ -341,6 +341,10 @@
     {
       "slug": "pose-estimation",
       "label": "Pose Estimation"
+    },
+    {
+      "slug": "rtmpose",
+      "label": "RTMPose"
     }
   ]
 }

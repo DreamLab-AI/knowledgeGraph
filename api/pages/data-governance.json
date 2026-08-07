@@ -257,12 +257,20 @@
       "label": "Data Integration Interface"
     },
     {
+      "slug": "data-lifecycle",
+      "label": "Data Lifecycle"
+    },
+    {
       "slug": "data-provenance",
       "label": "Data Provenance"
     },
     {
       "slug": "data-quality",
       "label": "Data Quality"
+    },
+    {
+      "slug": "data-residency",
+      "label": "Data Residency"
     },
     {
       "slug": "data-versioning",
@@ -275,6 +283,10 @@
     {
       "slug": "dataset",
       "label": "Dataset"
+    },
+    {
+      "slug": "datasheets-for-datasets",
+      "label": "Datasheets for Datasets"
     },
     {
       "slug": "decision-engine",

@@ -222,6 +222,10 @@
       "label": "Smart Contract"
     },
     {
+      "slug": "stakeholder-coordination",
+      "label": "Stakeholder Coordination"
+    },
+    {
       "slug": "tele-252-dao-governance-telecollaboration",
       "label": "TELE-252-dao-governance-telecollaboration"
     },
@@ -232,6 +236,10 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token-governance",
+      "label": "Token Governance"
     },
     {
       "slug": "token",

@@ -47,7 +47,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:security-information-and-event-management", "label": "Security Information and Event Management"},
-      {"@id": "urn:ngm:class:devsecops", "label": "DevSecOps"},
+      {"@id": "urn:ngm:class:dev-sec-ops", "label": "DevSecOps"},
       {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
     ],
     "dependsOn": [

@@ -17,7 +17,7 @@ public:: true
   "maturity":"established",
   "subClassOf":[{"@id":"urn:ngm:class:human-computer-interaction","label":"Human Computer Interaction"}],
   "relations":{
-    "implements":[{"@id":"urn:ngm:class:design-thinking","label":"Design Thinking"},{"@id":"urn:ngm:class:user-centered-design","label":"User Centered Design"}],
+    "implements":[{"@id":"urn:ngm:class:design-thinking","label":"Design Thinking"},{"@id":"urn:ngm:class:user-centred-design","label":"User Centered Design"}],
     "uses":[{"@id":"urn:ngm:class:user-experience-design","label":"User Experience Design"}],
     "hasPart":[{"@id":"urn:ngm:class:usability","label":"Usability"},{"@id":"urn:ngm:class:interaction-design","label":"Interaction Design"}],
     "enables":[{"@id":"urn:ngm:class:accessibility","label":"Accessibility"},{"@id":"urn:ngm:class:user-experience","label":"User Experience"}],

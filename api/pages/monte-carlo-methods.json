@@ -171,6 +171,10 @@
       "label": "Sampling"
     },
     {
+      "slug": "stochastic-optimisation",
+      "label": "Stochastic Optimisation"
+    },
+    {
       "slug": "stochastic-process",
       "label": "Stochastic Process"
     },

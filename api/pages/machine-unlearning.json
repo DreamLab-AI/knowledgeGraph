@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:8050a4c24b5d079d6198fde61843ed4b28d5b422ccea0373e380952ee8c600d0",
+  "title": "Machine Unlearning",
+  "slug": "machine-unlearning",
+  "public": true,
+  "classIri": "urn:ngm:class:machine-unlearning",
+  "domain": "machine-learning",
+  "definition": "A family of techniques for removing the influence of specific training examples from an already-trained machine learning model without retraining it from scratch, so that the resulting model behaves as if the deleted data had never been seen; motivated by privacy law (the right to erasure), copyright disputes, data poisoning remediation, and the removal of hazardous capabilities from foundation models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:right-to-erasure",
+        "label": "Right to Erasure"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "data-privacy",
+      "label": "Data Privacy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    }
+  ]
+}

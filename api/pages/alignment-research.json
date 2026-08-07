@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:740cdc86fd1813d7d13a67474f48c0e04bf663d3efa26d66c9d1615e429715ac",
+  "title": "Alignment Research",
+  "slug": "alignment-research",
+  "public": true,
+  "classIri": "urn:ngm:class:alignment-research",
+  "domain": "artificial-intelligence",
+  "definition": "The research programme dedicated to ensuring that increasingly capable AI systems reliably pursue their designers' and society's intended goals, spanning empirical techniques such as reinforcement learning from human feedback, constitutional AI, scalable oversight and mechanistic interpretability, alongside theoretical work on agent foundations, corrigibility, deceptive alignment and mesa-optimisation; a field whose importance scales with model capability and which anchors the safety agendas of frontier laboratories and a growing academic community.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    }
+  ]
+}

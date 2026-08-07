@@ -172,6 +172,10 @@
       "label": "LangChain"
     },
     {
+      "slug": "pooling-layer",
+      "label": "Pooling Layer"
+    },
+    {
       "slug": "retrieval-augmented-generation-rag",
       "label": "Retrieval Augmented Generation - RAG"
     },

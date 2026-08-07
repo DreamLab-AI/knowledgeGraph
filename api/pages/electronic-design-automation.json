@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:ccd3c14a7fb43b4e058b3fa88692f3276a8cfd0646c8b7e624f3110e26717691",
+  "title": "Electronic Design Automation",
+  "slug": "electronic-design-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:electronic-design-automation",
+  "domain": "infrastructure",
+  "definition": "Electronic design automation (EDA) is the category of software tools used to design, simulate, verify, and physically lay out electronic systems such as integrated circuits and printed circuit boards. Modern chips containing tens of billions of transistors cannot be designed by hand, so EDA tools perform logic synthesis, placement and routing, timing and power analysis, and formal verification, drawing heavily on combinatorial optimisation and SAT solving. The market is dominated by Synopsys, Cadence, and Siemens EDA, making the sector a strategic chokepoint in the semiconductor supply chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cad-software",
+      "label": "CAD Software"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sat-solving",
+        "label": "SAT Solving"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:automated-design",
+        "label": "Automated Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semiconductor",
+        "label": "Semiconductor"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "cad-software",
+      "label": "CAD Software"
+    },
+    {
+      "slug": "asic",
+      "label": "ASIC"
+    },
+    {
+      "slug": "sat-solving",
+      "label": "Sat Solving"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
+      "slug": "semiconductor",
+      "label": "Semiconductor"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    }
+  ]
+}

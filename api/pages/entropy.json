@@ -58,6 +58,10 @@
       "label": "Information Theory"
     },
     {
+      "slug": "random-variable",
+      "label": "Random Variable"
+    },
+    {
       "slug": "sampling",
       "label": "Sampling"
     },

@@ -33,7 +33,7 @@
         "label": "Decentralized Application"
       },
       {
-        "id": "urn:ngm:class:asset-tokenization",
+        "id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {
@@ -154,6 +154,10 @@
     {
       "slug": "green-blockchain-initiatives",
       "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "state-proof",
+      "label": "State Proof"
     },
     {
       "slug": "sustainable-consensus",

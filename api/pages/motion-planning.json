@@ -108,7 +108,7 @@
         "label": "Sampling-Based Planning"
       },
       {
-        "id": "urn:ngm:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -253,6 +253,10 @@
     {
       "slug": "kinematics-model",
       "label": "Kinematics Model"
+    },
+    {
+      "slug": "local-planner",
+      "label": "Local Planner"
     },
     {
       "slug": "navigation",

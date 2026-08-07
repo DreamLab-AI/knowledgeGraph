@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:localization",
+        "id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -300,10 +300,6 @@
     {
       "slug": "lens-and-camera-calibration",
       "label": "Lens and Camera Calibration"
-    },
-    {
-      "slug": "localization",
-      "label": "Localization"
     },
     {
       "slug": "mixed-reality-mr",

@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:cc14f7dae8867d0765c713cb2c1ac1f0155677e102117cf31f1a5ed50782afed",
+  "title": "Safety Instrumented System",
+  "slug": "safety-instrumented-system",
+  "public": true,
+  "classIri": "urn:ngm:class:safety-instrumented-system",
+  "domain": "robotics",
+  "definition": "An engineered system of sensors, logic solvers, and final elements dedicated to automatically bringing an industrial process to a safe state when hazardous conditions are detected \u2014 for example shutting an emergency valve on high pressure; each of its safety instrumented functions is assigned a safety integrity level (SIL 1-4) quantifying required risk reduction, and the system is specified, designed, validated, and maintained under the functional safety lifecycle of IEC 61508 and IEC 61511, independently of the basic process control system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:functional-safety",
+      "label": "Functional Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:safety-lifecycle",
+        "label": "Safety Lifecycle"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:failure-mode-and-effects-analysis",
+        "label": "Failure Mode And Effects Analysis"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "functional-safety",
+      "label": "Functional Safety"
+    },
+    {
+      "slug": "safety-lifecycle",
+      "label": "Safety Lifecycle"
+    },
+    {
+      "slug": "failure-mode-and-effects-analysis",
+      "label": "Failure Mode And Effects Analysis"
+    },
+    {
+      "slug": "iec-62061",
+      "label": "IEC 62061"
+    }
+  ],
+  "backlinks": []
+}

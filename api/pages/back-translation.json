@@ -335,6 +335,10 @@
   ],
   "backlinks": [
     {
+      "slug": "quality-estimation",
+      "label": "Quality Estimation"
+    },
+    {
       "slug": "translation",
       "label": "Translation"
     }

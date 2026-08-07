@@ -1,13 +1,13 @@
 {
-  "total_pages": 7888,
-  "pages_with_ontology": 7888,
-  "public_pages": 7874,
-  "total_issues": 1402,
+  "total_pages": 8138,
+  "pages_with_ontology": 8138,
+  "public_pages": 8124,
+  "total_issues": 1404,
   "errors": 0,
   "warnings": 0,
-  "info": 1402,
+  "info": 1404,
   "by_code": {
-    "MULTI_PARENT": 1402
+    "MULTI_PARENT": 1404
   },
   "issues": [
     {
@@ -21,6 +21,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Display and Rendering, Content and Assets"
+    },
+    {
+      "path": "3D Modelling.md",
+      "severity": "info",
+      "code": "MULTI_PARENT",
+      "message": "Bridging class, 2 parents: Computer Graphics, 3D Development"
     },
     {
       "path": "A Star Algorithm.md",
@@ -323,10 +329,10 @@
       "message": "Bridging class, 2 parents: Concurrency, Distributed Computing"
     },
     {
-      "path": "Adam Optimizer.md",
+      "path": "Adam Optimiser.md",
       "severity": "info",
       "code": "MULTI_PARENT",
-      "message": "Bridging class, 2 parents: Optimization Algorithm, Gradient Descent"
+      "message": "Bridging class, 2 parents: Gradient Descent, Optimisation Algorithm"
     },
     {
       "path": "Adaptive Behaviour.md",
@@ -887,16 +893,22 @@
       "message": "Bridging class, 2 parents: AI Technique, Machine Learning Discipline"
     },
     {
-      "path": "Behavioral Analytics.md",
-      "severity": "info",
-      "code": "MULTI_PARENT",
-      "message": "Bridging class, 2 parents: AI Technique, Machine Learning Discipline"
-    },
-    {
       "path": "Behavioral Modeling.md",
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Machine Learning Discipline, AI Technique"
+    },
+    {
+      "path": "Behaviour Tree.md",
+      "severity": "info",
+      "code": "MULTI_PARENT",
+      "message": "Bridging class, 2 parents: Automated Planning, Navigation and Planning"
+    },
+    {
+      "path": "Behavioural Analytics.md",
+      "severity": "info",
+      "code": "MULTI_PARENT",
+      "message": "Bridging class, 3 parents: Security, AI Technique, Machine Learning Discipline"
     },
     {
       "path": "Belief Desire Intention.md",
@@ -2519,12 +2531,6 @@
       "message": "Bridging class, 2 parents: Navigation and Planning, Path Planning"
     },
     {
-      "path": "Direct Preference Optimization.md",
-      "severity": "info",
-      "code": "MULTI_PARENT",
-      "message": "Bridging class, 3 parents: AI Technique, Generative Model, Language Model Alignment"
-    },
-    {
       "path": "Disaster Response.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -2727,6 +2733,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Content and Assets, Etsi Metaverse Domain Taxonomy"
+    },
+    {
+      "path": "ETSI Domain: Governance & Ethics.md",
+      "severity": "info",
+      "code": "MULTI_PARENT",
+      "message": "Bridging class, 2 parents: Legal and Regulatory, AI Governance and Ethics"
     },
     {
       "path": "ETSI_Domain_Reality_Capture___Creative.md",
@@ -4277,6 +4289,12 @@
       "message": "Bridging class, 2 parents: Infrastructure, Networking Infrastructure"
     },
     {
+      "path": "Localisation.md",
+      "severity": "info",
+      "code": "MULTI_PARENT",
+      "message": "Bridging class, 2 parents: Navigation and Planning, State Estimation"
+    },
+    {
       "path": "Lock and Mint Mechanism.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -4289,10 +4307,10 @@
       "message": "Bridging class, 2 parents: AI Technique, Programming Paradigm"
     },
     {
-      "path": "Logistics Optimization.md",
+      "path": "Logistics Optimisation.md",
       "severity": "info",
       "code": "MULTI_PARENT",
-      "message": "Bridging class, 2 parents: AI Technique, Applied Machine Learning"
+      "message": "Bridging class, 3 parents: Optimisation, AI Technique, Applied Machine Learning"
     },
     {
       "path": "Long Short Term Memory.md",
@@ -6861,12 +6879,6 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Actuation and Control, Feedback Control"
-    },
-    {
-      "path": "State Synchronization.md",
-      "severity": "info",
-      "code": "MULTI_PARENT",
-      "message": "Bridging class, 2 parents: Platform and Environment, Distributed System Architecture"
     },
     {
       "path": "Statistical Learning Theory.md",

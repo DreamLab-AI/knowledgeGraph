@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:1b21f0fbf08f039b679eb328022ec5fbebeb25b7aecdb7cb663bae12be930545",
+  "title": "Corporate Training",
+  "slug": "corporate-training",
+  "public": true,
+  "classIri": "urn:ngm:class:corporate-training",
+  "domain": "distributed-collaboration",
+  "definition": "The organised development of employee knowledge, skills, and competencies undertaken by employers to improve individual and organisational performance. It spans onboarding, compliance, technical upskilling, soft-skills coaching, and leadership development, and is increasingly delivered through digital, collaborative, and immersive learning technologies \u2014 learning management systems, virtual classrooms with breakout rooms, and VR simulation \u2014 that let distributed workforces practise skills safely and at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:workforce-development",
+      "label": "Workforce Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "id": "urn:ngm:class:breakout-room",
+        "label": "Breakout Room"
+      },
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-training",
+        "label": "Virtual Training"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "workforce-development",
+      "label": "Workforce Development"
+    },
+    {
+      "slug": "immersive-learning",
+      "label": "Immersive Learning"
+    },
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "education-technology",
+      "label": "Education Technology"
+    },
+    {
+      "slug": "virtual-training",
+      "label": "Virtual Training"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-group-formation",
+      "label": "AI Group Formation"
+    },
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    }
+  ]
+}

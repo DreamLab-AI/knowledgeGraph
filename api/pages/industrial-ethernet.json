@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:f105b574fd446e43fad8cce2a2aee17c68d866eb84561f4ed8fce6affdcc483b",
+  "title": "Industrial Ethernet",
+  "slug": "industrial-ethernet",
+  "public": true,
+  "classIri": "urn:ngm:class:industrial-ethernet",
+  "domain": "infrastructure",
+  "definition": "Industrial Ethernet is the adaptation of standard IEEE 802.3 Ethernet for factory-floor and process control: ruggedised hardware combined with real-time protocol extensions \u2014 PROFINET, EtherNet/IP, EtherCAT, POWERLINK, Modbus TCP \u2014 that add the determinism, cyclic exchange, and device profiles plain Ethernet lacks. It delivers 100 Mbit/s and gigabit speeds, cycle times down to tens of microseconds in hard-real-time variants, and seamless connectivity between automation devices and IT systems, and has overtaken classic fieldbus as the dominant networking technology in new industrial installations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ethernet",
+      "label": "Ethernet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:profinet",
+        "label": "PROFINET"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fieldbus",
+        "label": "Fieldbus"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ethernet",
+      "label": "Ethernet"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "IndustrialAutomation"
+    },
+    {
+      "slug": "profinet",
+      "label": "Profinet"
+    },
+    {
+      "slug": "fieldbus",
+      "label": "Fieldbus"
+    },
+    {
+      "slug": "time-sensitive-networking",
+      "label": "Time-Sensitive Networking"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fieldbus",
+      "label": "Fieldbus"
+    }
+  ]
+}

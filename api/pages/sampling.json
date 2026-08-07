@@ -519,6 +519,10 @@
     {
       "slug": "feedback-loop",
       "label": "Feedback Loop"
+    },
+    {
+      "slug": "nucleus-sampling",
+      "label": "Nucleus Sampling"
     }
   ]
 }

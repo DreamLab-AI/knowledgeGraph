@@ -599,6 +599,10 @@
     {
       "slug": "markov-chain",
       "label": "Markov Chain"
+    },
+    {
+      "slug": "random-variable",
+      "label": "Random Variable"
     }
   ]
 }

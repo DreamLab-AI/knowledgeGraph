@@ -35,5 +35,10 @@
     "relatedTo": []
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "h-bridge",
+      "label": "H-Bridge"
+    }
+  ]
 }

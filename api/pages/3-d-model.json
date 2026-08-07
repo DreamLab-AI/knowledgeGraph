@@ -40,7 +40,7 @@
         "label": "3D File Format"
       },
       {
-        "id": "urn:ngm:class:3-d-modeling",
+        "id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       }
     ],
@@ -188,10 +188,6 @@
     {
       "slug": "3-d-file-format",
       "label": "3D File Format"
-    },
-    {
-      "slug": "3-d-modeling",
-      "label": "3D Modeling"
     },
     {
       "slug": "bim-virtual-model",

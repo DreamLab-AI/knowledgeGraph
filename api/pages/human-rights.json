@@ -204,6 +204,10 @@
     {
       "slug": "ethical-ai",
       "label": "Ethical AI"
+    },
+    {
+      "slug": "fundamental-rights",
+      "label": "Fundamental Rights"
     }
   ]
 }

@@ -168,6 +168,10 @@
       "label": "Fraud Proof"
     },
     {
+      "slug": "kzg-polynomial-commitment",
+      "label": "KZG Polynomial Commitment"
+    },
+    {
       "slug": "layer2",
       "label": "Layer2"
     },

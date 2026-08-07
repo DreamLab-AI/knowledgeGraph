@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:21ff85e1f7426f6e2c488ada2cbc8338c0f63316e7ec8baf59e1ddfc914bd1bb",
+  "title": "Graphical User Interface",
+  "slug": "graphical-user-interface",
+  "public": true,
+  "classIri": "urn:ngm:class:graphical-user-interface",
+  "domain": "spatial-computing",
+  "definition": "A form of user interface that lets people interact with computing systems through visual elements \u2014 windows, icons, menus, buttons, and pointers \u2014 rendered on a two-dimensional display and manipulated directly with a pointing device or touch. By replacing memorised text commands with recognisable on-screen objects and immediate visual feedback, the GUI established the dominant interaction paradigm of personal computing from the 1980s onward and remains the baseline against which 3D, voice, and spatial interfaces are contrasted.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-interface",
+      "label": "User Interface"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:3-d-user-interface",
+        "label": "3D User Interface"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-interface-design",
+        "label": "User Interface Design"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "user-interface",
+      "label": "User Interface"
+    },
+    {
+      "slug": "3-d-user-interface",
+      "label": "3D User Interface"
+    },
+    {
+      "slug": "user-interface-design",
+      "label": "User Interface Design"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    }
+  ]
+}

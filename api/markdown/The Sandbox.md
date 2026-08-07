@@ -19,7 +19,7 @@ public:: true
       "vc:label": "Smart Contract"
     },
     {
-      "@id": "urn:visionflow:linked:asset-tokenization",
+      "@id": "urn:visionflow:linked:asset-tokenisation",
       "vc:label": "Asset Tokenization"
     },
     {
@@ -101,7 +101,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {
@@ -201,8 +201,8 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Asset Tokenization]]",
-      "resolved": "urn:visionflow:linked:asset-tokenization",
+      "raw": "[[Asset Tokenisation]]",
+      "resolved": "urn:visionflow:linked:asset-tokenisation",
       "kind": "ResolvedLink"
     },
     {
@@ -243,7 +243,7 @@ public:: true
   - is-subclass-of:: [[Metaverse Platform]]
   - bridges-to:: [[Digital Asset]]
   - requires:: [[Ethereum Smart Contract Platform]], [[Smart Contract]]
-  - enables:: [[Asset Tokenization]], [[Blockchain Gaming]]
+  - enables:: [[Asset Tokenisation]], [[Blockchain Gaming]]
 
 - ### Content
   - The Sandbox provides creation tools for modelling voxel assets and scripting interactive games without coding, with virtual land parcels and assets held as on-chain tokens. Creators publish experiences on parcels they own and can sell assets to other users through an in-platform marketplace.

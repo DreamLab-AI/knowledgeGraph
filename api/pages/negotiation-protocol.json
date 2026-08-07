@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:3c2c0670d91a134028136e269319a520b2c4655e783d20f4ad76bd603026e5f6",
+  "title": "Negotiation Protocol",
+  "slug": "negotiation-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:negotiation-protocol",
+  "domain": "artificial-intelligence",
+  "definition": "A negotiation protocol is a formally specified interaction pattern governing how autonomous agents exchange proposals, counter-proposals, and commitments in order to reach agreement over resources, tasks, or joint plans. It defines the permitted message types, turn-taking rules, and termination conditions, separating the public rules of engagement from each agent's private negotiation strategy. Canonical examples include the Contract Net Protocol, alternating-offers bargaining, and the FIPA standardised interaction protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:coordination-mechanisms",
+      "label": "Coordination Mechanisms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:negotiation",
+        "label": "Negotiation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "coordination-mechanisms",
+      "label": "Coordination Mechanisms"
+    },
+    {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "slug": "negotiation",
+      "label": "Negotiation"
+    },
+    {
+      "slug": "conflict-resolution",
+      "label": "Conflict Resolution"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    }
+  ]
+}

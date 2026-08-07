@@ -283,5 +283,10 @@
       "label": "ComputationAndIntelligenceDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "reactive-planning",
+      "label": "Reactive Planning"
+    }
+  ]
 }

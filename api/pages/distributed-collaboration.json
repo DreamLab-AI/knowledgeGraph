@@ -223,10 +223,6 @@
     {
       "slug": "screen-sharing",
       "label": "Screen Sharing"
-    },
-    {
-      "slug": "state-synchronization",
-      "label": "State Synchronization"
     }
   ]
 }

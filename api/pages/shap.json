@@ -177,6 +177,10 @@
       "label": "Global Explanation"
     },
     {
+      "slug": "integrated-gradients",
+      "label": "Integrated Gradients"
+    },
+    {
       "slug": "lime",
       "label": "LIME"
     },

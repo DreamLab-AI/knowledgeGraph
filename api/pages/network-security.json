@@ -185,6 +185,10 @@
       "label": "ETSI_Domain_Infrastructure"
     },
     {
+      "slug": "endpoint-security",
+      "label": "Endpoint Security"
+    },
+    {
       "slug": "identity-provider",
       "label": "Identity Provider"
     },

@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:7af3ca334be5d42959745833e3f1fc5046c7be9b31428d01753509cab7c2780c",
+  "title": "Coding Theory",
+  "slug": "coding-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:coding-theory",
+  "domain": "data",
+  "definition": "The mathematical study of codes \u2014 structured mappings from messages to symbol sequences \u2014 and of their properties for reliable, efficient representation and transmission of information. Spanning error-correcting codes that add redundancy to detect and repair corruption, source codes that compress data towards its entropy, and cryptographic and network codes, coding theory turns Shannon's existence theorems into constructive schemes such as Hamming, Reed-Solomon, LDPC, turbo, and polar codes that underpin storage, networking, and broadcasting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-theory",
+      "label": "Information Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      },
+      {
+        "id": "urn:ngm:class:reed-solomon-codes",
+        "label": "Reed-Solomon Codes"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity Theory"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "error-correction",
+      "label": "Error Correction"
+    },
+    {
+      "slug": "reed-solomon-codes",
+      "label": "Reed-Solomon Codes"
+    },
+    {
+      "slug": "erasure-coding",
+      "label": "Erasure Coding"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    }
+  ]
+}

@@ -119,7 +119,7 @@
         "label": "IP-Adapter"
       },
       {
-        "id": "urn:ngm:class:controlnet",
+        "id": "urn:ngm:class:control-net",
         "label": "ControlNet"
       },
       {
@@ -218,7 +218,7 @@
       "label": "IP-Adapter"
     },
     {
-      "slug": "controlnet",
+      "slug": "control-net",
       "label": "ControlNet"
     },
     {
@@ -278,6 +278,10 @@
     {
       "slug": "attention",
       "label": "Attention"
+    },
+    {
+      "slug": "modality-specific-encoder",
+      "label": "Modality-Specific Encoder"
     }
   ]
 }

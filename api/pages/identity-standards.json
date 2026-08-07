@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:identity-standards",
   "domain": "infrastructure",
-  "definition": "Identity Standards is an infrastructure concept.",
+  "definition": "Identity Standards are agreed specifications and protocols governing how digital identities are created, expressed, verified and exchanged across systems. They include standards for decentralised identifiers, verifiable credentials and federated authentication, enabling secure, interoperable identity management across platforms and virtual environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -18,7 +18,12 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
@@ -32,7 +37,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ]
   },
   "wikilinks": [
     {

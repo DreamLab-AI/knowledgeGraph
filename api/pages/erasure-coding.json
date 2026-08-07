@@ -155,6 +155,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ceph",
+      "label": "Ceph"
+    },
+    {
+      "slug": "coding-theory",
+      "label": "Coding Theory"
+    },
+    {
       "slug": "consensus-mechanism",
       "label": "Consensus Mechanism"
     },

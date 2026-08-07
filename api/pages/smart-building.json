@@ -26,7 +26,7 @@
         "label": "Building Automation"
       },
       {
-        "id": "urn:ngm:class:iot-infrastructure",
+        "id": "urn:ngm:class:io-t-infrastructure",
         "label": "IoT Infrastructure"
       }
     ],
@@ -46,7 +46,7 @@
         "label": "Smart City Infrastructure"
       },
       {
-        "id": "urn:ngm:class:iot-ai-integration",
+        "id": "urn:ngm:class:io-t-ai-integration",
         "label": "IoT AI Integration"
       },
       {
@@ -56,11 +56,11 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:iot-integration",
+        "id": "urn:ngm:class:io-t-integration",
         "label": "IoT Integration"
       },
       {
-        "id": "urn:ngm:class:industrial-iot",
+        "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial IoT"
       }
     ],
@@ -78,7 +78,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:iot-sensor-network",
+        "id": "urn:ngm:class:io-t-sensor-network",
         "label": "Iot Sensor Network"
       },
       {
@@ -112,7 +112,7 @@
         "label": "Smart Home Automation"
       },
       {
-        "id": "urn:ngm:class:iot",
+        "id": "urn:ngm:class:io-t",
         "label": "IoT"
       },
       {

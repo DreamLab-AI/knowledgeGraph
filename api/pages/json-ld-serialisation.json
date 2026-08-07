@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:b2874d0fce9ece53c27a5bd4f49c3c3854f2b49eadf52cc684f086c35cc995c6",
+  "title": "JSON-LD Serialisation",
+  "slug": "json-ld-serialisation",
+  "public": true,
+  "classIri": "urn:ngm:class:json-ld",
+  "domain": "standards",
+  "definition": "A W3C-standardised serialisation of linked data in ordinary JSON, in which an @context maps plain JSON keys to IRIs so that documents remain idiomatic JSON for developers while being losslessly convertible to RDF graphs. JSON-LD 1.1 (W3C Recommendation, 2020) provides @id, @type, framing, and compaction/expansion algorithms, and is the interchange syntax used by schema.org markup, Verifiable Credentials, DID documents, ActivityPub, and agent-to-agent protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:serialisation-format",
+      "label": "Serialisation Format"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:w3c-recommendation",
+        "label": "W3C Recommendation"
+      },
+      {
+        "id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "serialisation-format",
+      "label": "Serialisation Format"
+    },
+    {
+      "slug": "linked-data",
+      "label": "Linked Data"
+    },
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "w3c-recommendation",
+      "label": "W3C Recommendation"
+    }
+  ],
+  "backlinks": []
+}
