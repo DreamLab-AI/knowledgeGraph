@@ -65,63 +65,164 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:computational-complexity-theory", "label": "Computational Complexity Theory"},
-    {"@id": "urn:ngm:class:mathematical-logic", "label": "Mathematical Logic"}
+    {
+      "@id": "urn:ngm:class:mathematical-logic",
+      "label": "Mathematical Logic"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:automata-theory", "label": "Automata Theory"},
-      {"@id": "urn:ngm:class:formal-language", "label": "Formal Language"},
-      {"@id": "urn:ngm:class:turing-machine", "label": "Turing Machine"},
-      {"@id": "urn:ngm:class:lambda-calculus", "label": "Lambda Calculus"},
-      {"@id": "urn:ngm:class:recursive-function", "label": "Recursive Function"},
-      {"@id": "urn:ngm:class:decidability", "label": "Decidability"},
-      {"@id": "urn:ngm:class:turing-degree", "label": "Turing Degree"}
+      {
+        "@id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      },
+      {
+        "@id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      },
+      {
+        "@id": "urn:ngm:class:turing-machine",
+        "label": "Turing Machine"
+      },
+      {
+        "@id": "urn:ngm:class:lambda-calculus",
+        "label": "Lambda Calculus"
+      },
+      {
+        "@id": "urn:ngm:class:recursive-function",
+        "label": "Recursive Function"
+      },
+      {
+        "@id": "urn:ngm:class:decidability",
+        "label": "Decidability"
+      },
+      {
+        "@id": "urn:ngm:class:turing-degree",
+        "label": "Turing Degree"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:mathematical-logic", "label": "Mathematical Logic"},
-      {"@id": "urn:ngm:class:set-theory", "label": "Set Theory"},
-      {"@id": "urn:ngm:class:proof-theory", "label": "Proof Theory"}
+      {
+        "@id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "@id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "@id": "urn:ngm:class:proof-theory",
+        "label": "Proof Theory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:automata-theory", "label": "Automata Theory"},
-      {"@id": "urn:ngm:class:programme-verification", "label": "Programme Verification"},
-      {"@id": "urn:ngm:class:automated-theorem-proving", "label": "Automated Theorem Proving"},
-      {"@id": "urn:ngm:class:programming-language-theory", "label": "Programming Language Theory"},
-      {"@id": "urn:ngm:class:model-checking", "label": "Model Checking"}
+      {
+        "@id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      },
+      {
+        "@id": "urn:ngm:class:programme-verification",
+        "label": "Programme Verification"
+      },
+      {
+        "@id": "urn:ngm:class:automated-theorem-proving",
+        "label": "Automated Theorem Proving"
+      },
+      {
+        "@id": "urn:ngm:class:programming-language-theory",
+        "label": "Programming Language Theory"
+      },
+      {
+        "@id": "urn:ngm:class:model-checking",
+        "label": "Model Checking"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:church-turing-thesis", "label": "Church-Turing Thesis"},
-      {"@id": "urn:ngm:class:reduction", "label": "Reduction"}
+      {
+        "@id": "urn:ngm:class:church-turing-thesis",
+        "label": "Church-Turing Thesis"
+      },
+      {
+        "@id": "urn:ngm:class:reduction",
+        "label": "Reduction"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:mathematical-logic", "label": "Mathematical Logic"},
-      {"@id": "urn:ngm:class:set-theory", "label": "Set Theory"}
+      {
+        "@id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "@id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:computational-complexity-theory", "label": "Computational Complexity Theory"},
-      {"@id": "urn:ngm:class:hypercomputation", "label": "Hypercomputation"}
+      {
+        "@id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity Theory"
+      },
+      {
+        "@id": "urn:ngm:class:hypercomputation",
+        "label": "Hypercomputation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:formal-language", "label": "Formal Language"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"},
-      {"@id": "urn:ngm:class:kolmogorov-complexity", "label": "Kolmogorov Complexity"},
-      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"},
-      {"@id": "urn:ngm:class:godel-incompleteness", "label": "Gödel Incompleteness Theorems"},
-      {"@id": "urn:ngm:class:type-theory", "label": "Type Theory"}
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:kolmogorov-complexity",
+        "label": "Kolmogorov Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "@id": "urn:ngm:class:godel-incompleteness",
+        "label": "Gödel Incompleteness Theorems"
+      },
+      {
+        "@id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",

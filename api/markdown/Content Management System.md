@@ -26,8 +26,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:digital-asset-management",
-      "label": "Digital Asset Management"
+      "@id": "urn:ngm:class:enterprise-software-platform",
+      "label": "Enterprise Software Platform"
     }
   ],
   "relations": {
@@ -136,6 +136,7 @@ public:: true
   - Supplying structured content to mobile apps and spatial interfaces via APIs.
   - Coordinating multilingual and multi-channel publishing workflows.
 - ### Relationships
+  - subClassOf:: [[Enterprise Software Platform]]
   - partOf:: [[Digital Asset Management]]
   - requires:: [[Database]]
   - supports:: [[Version Control]]

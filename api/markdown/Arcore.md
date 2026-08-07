@@ -33,12 +33,6 @@ public:: true
     }
   ],
   "relations": {
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
-      }
-    ],
     "supports": [
       {
         "@id": "urn:ngm:class:spatial-anchors",
@@ -133,7 +127,6 @@ public:: true
   - Measurement and scene-capture utilities
 - ### Relationships
   - subClassOf:: [[Augmented Reality]]
-  - contrastsWith:: [[Augmented Reality]]
   - supports:: [[Spatial Anchors]]
   - supports:: [[Spatial Anchor]]
   - standardizedBy:: [[Augmented Reality]]

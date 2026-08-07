@@ -8,29 +8,96 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:market-manipulation",
-  "@type":"Class",
-  "label":"Market Manipulation",
-  "definition":"Market manipulation is the deliberate attempt to interfere with the free and fair operation of a financial market by creating false or misleading appearances of supply, demand or price. It encompasses practices such as spoofing, wash trading, pump-and-dump schemes and the dissemination of false information. As a form of market abuse it is prohibited by securities regulation and undermines price discovery and investor protection.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:market-integrity","label":"Market Integrity"}],
-  "relations":{
-    "contrastsWith":[{"@id":"urn:ngm:class:market-integrity","label":"Market Integrity"},{"@id":"urn:ngm:class:price-discovery","label":"Price Discovery"}],
-    "enables":[{"@id":"urn:ngm:class:insider-trading","label":"Insider Trading"}],
-    "uses":[{"@id":"urn:ngm:class:front-running","label":"Front Running"}],
-    "relatedTo":[{"@id":"urn:ngm:class:insider-trading","label":"Insider Trading"},{"@id":"urn:ngm:class:front-running","label":"Front Running"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:securities-regulation","label":"Securities Regulation"}],
-    "supports":[{"@id":"urn:ngm:class:market-surveillance","label":"Market Surveillance"}],
-    "dependsOn":[{"@id":"urn:ngm:class:price-discovery","label":"Price Discovery"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:investor-protection","label":"Investor Protection"}],
-    "requires":[{"@id":"urn:ngm:class:market-surveillance","label":"Market Surveillance"}],
-    "implements":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:market-manipulation",
+  "@type": "Class",
+  "label": "Market Manipulation",
+  "definition": "Market manipulation is the deliberate attempt to interfere with the free and fair operation of a financial market by creating false or misleading appearances of supply, demand or price. It encompasses practices such as spoofing, wash trading, pump-and-dump schemes and the dissemination of false information. As a form of market abuse it is prohibited by securities regulation and undermines price discovery and investor protection.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:insider-trading",
+        "label": "Insider Trading"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:front-running",
+        "label": "Front Running"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:insider-trading",
+        "label": "Insider Trading"
+      },
+      {
+        "@id": "urn:ngm:class:front-running",
+        "label": "Front Running"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -53,7 +120,7 @@ public:: true
 - Design of [[Market Surveillance]] and anomaly-detection systems.
 - Investor-protection policy and exchange rule-making.
 - ### Relationships
-- subClassOf:: [[Market Integrity]]
+  - subClassOf:: [[Financial Regulation]]
 - contrastsWith:: [[Market Integrity]]
 - contrastsWith:: [[Price Discovery]]
 - enables:: [[Insider Trading]]

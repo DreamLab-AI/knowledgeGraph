@@ -8,8 +8,8 @@
   "definition": "A Soft Fork is a backward-compatible change to a blockchain's consensus rules in which the set of valid blocks is tightened so that newly produced blocks remain acceptable to non-upgraded nodes. Because old nodes still recognise the stricter blocks as valid, the network does not split provided a majority of hash power or stake enforces the new rules. Soft forks are commonly used to deploy protocol upgrades such as new script types without requiring every participant to update.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:hard-fork",
-      "label": "Hard Fork"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
     }
   ],
   "entityType": "Class",

@@ -25,8 +25,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:continuous-delivery",
-      "label": "Continuous Delivery"
+      "@id": "urn:ngm:class:devops",
+      "label": "DevOps"
     }
   ],
   "relations": {
@@ -135,6 +135,7 @@ public:: true
   - Web platforms using progressive delivery to validate changes on live traffic.
   - Teams pursuing elite DevOps performance metrics.
 - ### Relationships
+  - subClassOf:: [[DevOps]]
   - partOf:: [[DevOps]]
   - hasPart:: [[Automated Testing]]
   - hasPart:: [[Monitoring]]

@@ -8,8 +8,8 @@
   "definition": "A graph-theoretic data structure in which nodes represent social actors (individuals, organisations, or automated agents) and edges encode directed or undirected social relations such as friendship, following, trust, or co-authorship. Social network graphs are analysed using network-science metrics including degree centrality, clustering coefficient, betweenness, and PageRank to reveal community structure, information diffusion pathways, and influential actors. They underpin decentralised identity federation protocols (ActivityPub, Nostr), recommendation engines, and adversarial analysis tasks such as Sybil detection. The formalism extends naturally to heterogeneous property graphs and hypergraphs when multi-typed relations or group memberships must be represented.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:knowledge-graph",
-      "label": "Knowledge Graph"
+      "id": "urn:ngm:class:graph-data-model",
+      "label": "Graph Data Model"
     }
   ],
   "entityType": "Class",

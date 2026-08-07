@@ -26,8 +26,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:regulation",
-      "label": "Regulation"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "relations": {
@@ -129,6 +129,7 @@ public:: true
 - Energy market unbundling separating generation, transmission, and supply.
 - Digital-platform policy where deregulatory and re-regulatory pressures coexist.
 - ### Relationships
+  - subClassOf:: [[Governance]]
 - partOf:: [[Regulation]]
 - partOf:: [[Governance]]
 - contrastsWith:: [[Regulation]]

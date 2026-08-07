@@ -6,52 +6,100 @@ public:: true
 ```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:enhanced-due-diligence",
-  "@type":"Class",
-  "label":"Enhanced Due Diligence",
-  "definition":"Enhanced due diligence (EDD) is a heightened level of customer scrutiny applied by regulated institutions to relationships and transactions that present elevated money-laundering, terrorist-financing, or sanctions risk. Going beyond standard customer due diligence, it requires deeper verification of identity and beneficial ownership, investigation of source of funds and wealth, and ongoing intensified monitoring. EDD is mandated for higher-risk categories such as politically exposed persons, customers in high-risk jurisdictions, and complex or unusually large transactions. It is a cornerstone of the risk-based approach embedded in anti-money-laundering and know-your-customer regulatory regimes.",
-  "domain":"finance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:customer-due-diligence","label":"Customer Due Diligence"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:risk-assessment","label":"Risk Assessment"},
-      {"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:enhanced-due-diligence",
+  "@type": "Class",
+  "label": "Enhanced Due Diligence",
+  "definition": "Enhanced due diligence (EDD) is a heightened level of customer scrutiny applied by regulated institutions to relationships and transactions that present elevated money-laundering, terrorist-financing, or sanctions risk. Going beyond standard customer due diligence, it requires deeper verification of identity and beneficial ownership, investigation of source of funds and wealth, and ongoing intensified monitoring. EDD is mandated for higher-risk categories such as politically exposed persons, customers in high-risk jurisdictions, and complex or unusually large transactions. It is a cornerstone of the risk-based approach embedded in anti-money-laundering and know-your-customer regulatory regimes.",
+  "domain": "finance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:customer-due-diligence",
+      "label": "Customer Due Diligence"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:customer-due-diligence","label":"Customer Due Diligence"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:risk-assessment","label":"Risk Assessment"},
-      {"@id":"urn:ngm:class:sanctions-screening","label":"Sanctions Screening"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:risk-based-approach",
+        "label": "Risk-Based Approach"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:risk-based-approach","label":"Risk-Based Approach"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:transaction-monitoring","label":"Transaction Monitoring"},
-      {"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:aml",
+        "label": "AML"
+      },
+      {
+        "@id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:aml","label":"AML"},
-      {"@id":"urn:ngm:class:kyc","label":"KYC"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:compliance","label":"Compliance"}
-    ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:sanctions-screening","label":"Sanctions Screening"},
-      {"@id":"urn:ngm:class:transaction-monitoring","label":"Transaction Monitoring"},
-      {"@id":"urn:ngm:class:risk-based-approach","label":"Risk-Based Approach"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:risk-based-approach",
+        "label": "Risk-Based Approach"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 - ### Definition
@@ -75,7 +123,6 @@ public:: true
 - subClassOf:: [[Customer Due Diligence]]
 - hasPart:: [[Risk Assessment]]
 - hasPart:: [[Identity Verification]]
-- contrastsWith:: [[Customer Due Diligence]]
 - requires:: [[Sanctions Screening]]
 - dependsOn:: [[Risk-Based Approach]]
 - uses:: [[Transaction Monitoring]]

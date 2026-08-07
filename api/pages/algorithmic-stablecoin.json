@@ -41,12 +41,7 @@
         "label": "Smart Contract"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:stablecoin",
-        "label": "Stablecoin"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
       {

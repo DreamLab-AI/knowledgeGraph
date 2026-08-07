@@ -1,7 +1,7 @@
 {
   "pipelineVersion": "ng-1.0.0",
   "note": "Classes bridging more than one taxonomy category or domain. Overlap is a design property of this corpus. The NGG1 node record carries a single u16 category (FORMAT-NGG1 3), so tiers keep the nearest one; the full membership is here. Indices match overview.json.",
-  "count": 565,
+  "count": 563,
   "bridges": [
     {
       "iri": "https://narrativegoldmine.com/class/3-d-generation",
@@ -1822,7 +1822,8 @@
       "iri": "https://narrativegoldmine.com/class/character-relationship-graph",
       "label": "Character Relationship Graph",
       "categories": [
-        14
+        14,
+        31
       ],
       "domains": [
         2,
@@ -6188,21 +6189,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/probabilistic-forecasting",
-      "label": "Probabilistic Forecasting",
-      "categories": [
-        5,
-        0
-      ],
-      "domains": [
-        0
-      ],
-      "parents": [
-        "Machine Learning Discipline",
-        "Time Series Forecasting"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/probabilistic-model",
       "label": "Probabilistic Model",
       "categories": [
@@ -7808,21 +7794,6 @@
       "parents": [
         "Performance Metrics",
         "AI Infrastructure (Artificial Intelligence)"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/time-series-forecasting",
-      "label": "Time Series Forecasting",
-      "categories": [
-        0,
-        5
-      ],
-      "domains": [
-        0
-      ],
-      "parents": [
-        "AI Technique",
-        "Probabilistic Forecasting"
       ]
     },
     {

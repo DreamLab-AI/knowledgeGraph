@@ -330,10 +330,6 @@ alias:: Time-Series Forecasting
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:probabilistic-forecasting",
-      "label": "Probabilistic Forecasting"
     }
   ],
   "relations": {

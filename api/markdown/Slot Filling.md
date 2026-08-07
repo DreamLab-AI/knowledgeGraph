@@ -94,10 +94,6 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:information-extraction",
-        "label": "Open-Domain Information Extraction"
-      },
-      {
         "@id": "urn:ngm:class:relation-extraction",
         "label": "Relation Extraction"
       }

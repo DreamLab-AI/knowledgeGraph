@@ -8,8 +8,8 @@
   "definition": "Quasi-Monte Carlo (QMC) is a family of numerical integration and sampling methods that replace the pseudo-random points of classical Monte Carlo with deterministic low-discrepancy sequences. By spreading sample points more evenly across the integration domain, QMC achieves faster asymptotic convergence than standard Monte Carlo for many smooth, moderate-dimensional integrals. It is widely used in computational finance, computer graphics, and uncertainty quantification.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:monte-carlo-integration",
-      "label": "Monte Carlo Integration"
+      "id": "urn:ngm:class:numerical-methods",
+      "label": "Numerical Methods"
     }
   ],
   "entityType": "Class",

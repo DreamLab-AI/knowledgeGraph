@@ -179,10 +179,6 @@ alias:: CollaborativeRobot
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:industrial-robot",
-        "label": "Industrial Robot"
-      },
-      {
         "@id": "urn:ngm:class:autonomous-mobile-robots",
         "label": "Autonomous Mobile Robot"
       }

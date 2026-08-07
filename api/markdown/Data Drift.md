@@ -7,54 +7,108 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:data-drift",
-  "@type":"Class",
-  "label":"Data Drift",
-  "definition":"Data drift is the change over time in the statistical distribution of the input data fed to a deployed machine learning model relative to the distribution it was trained on. Unlike concept drift, which alters the relationship between inputs and targets, data drift (also called covariate or feature drift) shifts the marginal distribution of the features themselves and can silently degrade model accuracy even when the learned mapping remains valid. Detecting and responding to data drift is a central concern of model monitoring and MLOps, typically driving alerts, scheduled retraining, or fallback policies.",
-  "vc:plainGloss":"When the real-world data an AI meets in daily use slowly drifts away from the examples it was trained on — a demand forecaster trained before a market shift, say. Nothing about the model changes, but its answers quietly get less accurate, which is why its incoming data is watched over time.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:concept-drift","label":"Concept Drift"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:model-monitoring","label":"Model Monitoring"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-drift",
+  "@type": "Class",
+  "label": "Data Drift",
+  "definition": "Data drift is the change over time in the statistical distribution of the input data fed to a deployed machine learning model relative to the distribution it was trained on. Unlike concept drift, which alters the relationship between inputs and targets, data drift (also called covariate or feature drift) shifts the marginal distribution of the features themselves and can silently degrade model accuracy even when the learned mapping remains valid. Detecting and responding to data drift is a central concern of model monitoring and MLOps, typically driving alerts, scheduled retraining, or fallback policies.",
+  "vc:plainGloss": "When the real-world data an AI meets in daily use slowly drifts away from the examples it was trained on — a demand forecaster trained before a market shift, say. Nothing about the model changes, but its answers quietly get less accurate, which is why its incoming data is watched over time.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:probability-distribution","label":"Probability Distribution"},
-      {"@id":"urn:ngm:class:feature-distribution","label":"Feature Distribution"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:feature-distribution",
+        "label": "Feature Distribution"
+      }
     ],
-    "causes":[
-      {"@id":"urn:ngm:class:model-degradation","label":"Model Degradation"}
+    "causes": [
+      {
+        "@id": "urn:ngm:class:model-degradation",
+        "label": "Model Degradation"
+      }
     ],
-    "detectedBy":[
-      {"@id":"urn:ngm:class:model-monitoring","label":"Model Monitoring"},
-      {"@id":"urn:ngm:class:observability","label":"Observability"}
+    "detectedBy": [
+      {
+        "@id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:retraining","label":"Retraining"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:retraining",
+        "label": "Retraining"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:statistics","label":"Statistics"},
-      {"@id":"urn:ngm:class:density-estimation","label":"Density Estimation"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:density-estimation",
+        "label": "Density Estimation"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:covariate-shift","label":"Covariate Shift"},
-      {"@id":"urn:ngm:class:distribution-shift","label":"Distribution Shift"},
-      {"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:covariate-shift",
+        "label": "Covariate Shift"
+      },
+      {
+        "@id": "urn:ngm:class:distribution-shift",
+        "label": "Distribution Shift"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:mlops","label":"MLOps"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:concept-drift","label":"Concept Drift"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:concept-drift",
+        "label": "Concept Drift"
+      }
     ]
   },
-  "sameAs":[
-    {"@id":"urn:ngm:class:covariate-shift","label":"Covariate Shift"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:covariate-shift",
+      "label": "Covariate Shift"
+    }
   ],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -79,6 +133,7 @@ public:: true
 	- Data-quality gating in feature stores and ingestion pipelines.
 	- Root-cause analysis when live metrics degrade.
 - ### Relationships
+  - subClassOf:: [[Machine Learning]]
 	- partOf:: [[Model Monitoring]]
 	- dependsOn:: [[Probability Distribution]]
 	- dependsOn:: [[Feature Distribution]]

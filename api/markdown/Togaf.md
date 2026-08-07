@@ -71,12 +71,6 @@ public:: true
         "label": "Regulatory Conformance"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:governance-framework",
-        "label": "Governance Framework"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:enterprise-integration",
@@ -124,7 +118,6 @@ public:: true
   - enables:: [[Enterprise Integration]]
   - relatedTo:: [[Strategic Planning]]
   - relatedTo:: [[Regulatory Conformance]]
-  - contrastsWith:: [[Governance Framework]]
   - bridgesTo:: [[Enterprise Integration]]
 - ### Provenance
   - attributedTo:: did:nostr:ontology-mesh

@@ -45,12 +45,7 @@
         "label": "Concurrency"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:concurrency",
-        "label": "Concurrency"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:infrastructure",

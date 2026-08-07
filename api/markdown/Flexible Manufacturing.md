@@ -8,40 +8,102 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:flexible-manufacturing",
-  "@type":"Class",
-  "label":"Flexible Manufacturing",
-  "definition":"Flexible manufacturing is a production approach in which automated, reconfigurable equipment and material-handling systems can adapt rapidly to changes in product mix and volume with minimal downtime. It combines computer numerical control machines, robots, and automated transport under coordinated supervisory control so that the same line can produce varied parts on demand. The approach targets responsiveness and customisation while retaining the efficiency of automation.",
-  "domain":"robotics",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:industrial-automation","label":"IndustrialAutomation"}],
-  "relations":{
-    "enables":[
-      {"@id":"urn:ngm:class:automation","label":"Automation"},
-      {"@id":"urn:ngm:class:robotics","label":"Robotics"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:flexible-manufacturing",
+  "@type": "Class",
+  "label": "Flexible Manufacturing",
+  "definition": "Flexible manufacturing is a production approach in which automated, reconfigurable equipment and material-handling systems can adapt rapidly to changes in product mix and volume with minimal downtime. It combines computer numerical control machines, robots, and automated transport under coordinated supervisory control so that the same line can produce varied parts on demand. The approach targets responsiveness and customisation while retaining the efficiency of automation.",
+  "domain": "robotics",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:industrial-automation",
+      "label": "IndustrialAutomation"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
-    "supports":[{"@id":"urn:ngm:class:scada","label":"SCADA"}],
-    "uses":[
-      {"@id":"urn:ngm:class:robot","label":"Robot"},
-      {"@id":"urn:ngm:class:actuator","label":"Actuator"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      }
     ],
-    "requires":[{"@id":"urn:ngm:class:sensor","label":"Sensor"}],
-    "hasPart":[{"@id":"urn:ngm:class:robot","label":"Robot"}],
-    "dependsOn":[{"@id":"urn:ngm:class:automation","label":"Automation"}],
-    "implements":[{"@id":"urn:ngm:class:automation","label":"Automation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:supply-chain","label":"Supply Chain"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:industrial-automation","label":"IndustrialAutomation"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:industrial-automation","label":"IndustrialAutomation"},
-      {"@id":"urn:ngm:class:robotics","label":"Robotics"},
-      {"@id":"urn:ngm:class:scada","label":"SCADA"},
-      {"@id":"urn:ngm:class:robot","label":"Robot"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:robot",
+        "label": "Robot"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "@id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

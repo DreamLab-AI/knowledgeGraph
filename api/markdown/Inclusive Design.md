@@ -26,8 +26,8 @@ alias:: InclusiveDesign
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:universal-design",
-      "label": "Universal Design"
+      "@id": "urn:ngm:class:design-thinking",
+      "label": "Design Thinking"
     }
   ],
   "relations": {
@@ -196,6 +196,7 @@ alias:: InclusiveDesign
   - **Automotive and transport interfaces** — in-vehicle information systems and public transport signage/ticketing designed for vision impairment, motor impairment, and cognitive diversity.
 
 - ### Relationships
+  - subClassOf:: [[Design Thinking]]
   - uses:: [[Accessibility]]
   - uses:: [[Human Computer Interaction]]
   - uses:: [[Interaction Design]]

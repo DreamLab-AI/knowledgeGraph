@@ -45,12 +45,7 @@
         "label": "SLAM"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
       {

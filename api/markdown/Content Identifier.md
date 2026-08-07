@@ -116,12 +116,6 @@ public:: true
         "label": "NFT Metadata"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:content-addressing",
-        "label": "Location Addressing"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:verifiable-credentials",

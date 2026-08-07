@@ -60,12 +60,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:deep-learning",

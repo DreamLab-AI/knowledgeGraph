@@ -6,29 +6,111 @@ public:: true
 ```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:digital-commons",
-  "@type":"Class",
-  "label":"Digital Commons",
-  "definition":"The digital commons are shared, non-rivalrous information resources that a community collectively produces, governs, and stewards under open licences and self-defined rules, rather than through private enclosure or state provision. Examples include open-source software, open data, free knowledge repositories, and open scientific outputs, often coordinated via peer production and commons-based governance. As a governance concept it bridges classical commons theory with digital public goods, examining how communities sustain shared resources, prevent enclosure, and align incentives in distributed and blockchain-supported settings.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:public-goods","label":"Public Goods"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:open-source","label":"Open Source"},{"@id":"urn:ngm:class:open-data","label":"Open Data"}],
-    "partOf":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "uses":[{"@id":"urn:ngm:class:creative-commons","label":"Creative Commons"},{"@id":"urn:ngm:class:free-software","label":"Free Software"}],
-    "enables":[{"@id":"urn:ngm:class:digital-public-goods","label":"Digital Public Goods"},{"@id":"urn:ngm:class:open-science","label":"Open Science"}],
-    "supports":[{"@id":"urn:ngm:class:collective-action","label":"Collective Action"}],
-    "requires":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "dependsOn":[{"@id":"urn:ngm:class:collective-action","label":"Collective Action"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:digital-public-goods","label":"Digital Public Goods"},{"@id":"urn:ngm:class:public-goods","label":"Public Goods"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:public-goods","label":"Public Goods"}],
-    "relatedTo":[{"@id":"urn:ngm:class:open-science","label":"Open Science"},{"@id":"urn:ngm:class:open-data","label":"Open Data"},{"@id":"urn:ngm:class:creative-commons","label":"Creative Commons"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-commons",
+  "@type": "Class",
+  "label": "Digital Commons",
+  "definition": "The digital commons are shared, non-rivalrous information resources that a community collectively produces, governs, and stewards under open licences and self-defined rules, rather than through private enclosure or state provision. Examples include open-source software, open data, free knowledge repositories, and open scientific outputs, often coordinated via peer production and commons-based governance. As a governance concept it bridges classical commons theory with digital public goods, examining how communities sustain shared resources, prevent enclosure, and align incentives in distributed and blockchain-supported settings.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:public-goods",
+      "label": "Public Goods"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      },
+      {
+        "@id": "urn:ngm:class:free-software",
+        "label": "Free Software"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-public-goods",
+        "label": "Digital Public Goods"
+      },
+      {
+        "@id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-public-goods",
+        "label": "Digital Public Goods"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:knowledge-commons","label":"Knowledge Commons"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:knowledge-commons",
+      "label": "Knowledge Commons"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -77,7 +159,6 @@ public:: true
   - dependsOn:: [[Collective Action]]
   - bridgesTo:: [[Digital Public Goods]]
   - bridgesTo:: [[Public Goods]]
-  - contrastsWith:: [[Public Goods]]
   - relatedTo:: [[Open Science]]
   - relatedTo:: [[Open Data]]
   - relatedTo:: [[Creative Commons]]

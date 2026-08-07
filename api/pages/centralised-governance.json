@@ -8,8 +8,8 @@
   "definition": "Centralised governance is a model in which decision-making authority over a system, protocol, or organisation is concentrated in a single entity or a small controlling group. In contrast to distributed models, changes, upgrades, and policy are determined by this authority rather than by broad stakeholder consensus, which can deliver faster, more decisive action at the cost of reduced censorship resistance and a single point of control. It is the conventional baseline against which decentralised governance defines itself.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:decentralised-governance",
-      "label": "Decentralised Governance"
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
     }
   ],
   "entityType": "Class",

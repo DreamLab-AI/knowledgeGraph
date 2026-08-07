@@ -109,10 +109,6 @@ public:: true
       {
         "@id": "urn:ngm:class:voice-conversion",
         "label": "Voice Conversion"
-      },
-      {
-        "@id": "urn:ngm:class:speech-synthesis",
-        "label": "Concatenative Synthesis"
       }
     ],
     "bridgesTo": [

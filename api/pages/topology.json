@@ -8,8 +8,8 @@
   "definition": "Topology is the mathematical study of properties of spaces that are preserved under continuous deformation, such as connectivity, continuity and the presence of holes. It provides the formal language for reasoning about shape independent of exact distances or coordinates, underpinning fields from network analysis to topological data analysis. In machine learning it informs how the structure of data and networks can be characterised and exploited.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:graph-theory",
-      "label": "Graph Theory"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",

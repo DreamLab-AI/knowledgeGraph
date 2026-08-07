@@ -50,12 +50,7 @@
         "label": "Model Parallelism"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:model-serving",
-        "label": "Model Serving"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:distributed-systems",

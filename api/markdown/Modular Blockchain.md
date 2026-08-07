@@ -102,12 +102,6 @@ public:: true
         "label": "Cosmos"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      }
-    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:fraud-proof",

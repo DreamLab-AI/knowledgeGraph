@@ -26,8 +26,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:interoperability",
-      "label": "Interoperability"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
     }
   ],
   "relations": {
@@ -119,6 +119,7 @@ public:: true
   - Procurement risk assessment and supplier diversification.
   - Open-standards advocacy and architecture governance.
 - ### Relationships
+  - subClassOf:: [[Network and Communication]]
   - contrastsWith:: [[Interoperability]]
   - contrastsWith:: [[Open Standard]]
   - contrastsWith:: [[Portability]]

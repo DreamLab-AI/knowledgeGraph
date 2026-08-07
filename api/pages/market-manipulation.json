@@ -8,8 +8,8 @@
   "definition": "Market manipulation is the deliberate attempt to interfere with the free and fair operation of a financial market by creating false or misleading appearances of supply, demand or price. It encompasses practices such as spoofing, wash trading, pump-and-dump schemes and the dissemination of false information. As a form of market abuse it is prohibited by securities regulation and undermines price discovery and investor protection.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:market-integrity",
-      "label": "Market Integrity"
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
     }
   ],
   "entityType": "Class",

@@ -126,12 +126,6 @@ public:: true
         "label": "Robotics"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:deep-learning",
@@ -274,7 +268,6 @@ public:: true
   - supports:: [[Robotics]]
   - standardizedBy:: [[AIA Standards]]
   - standardizedBy:: [[GenICam Standard]]
-  - contrastsWith:: [[Computer Vision]]
   - bridges-to:: [[Deep Learning]]
   - bridges-to:: [[Digital Twin]]
   - bridges-to:: [[Augmented Reality]]

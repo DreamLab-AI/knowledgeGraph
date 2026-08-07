@@ -79,12 +79,6 @@ public:: true
         "@id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
-      }
     ]
   },
   "sameAs": [],
@@ -126,7 +120,6 @@ public:: true
   - relatedTo:: [[Privacy]]
   - relatedTo:: [[Confidential Computing]]
   - relatedTo:: [[Smart Contracts]]
-  - contrastsWith:: [[Smart Contract]]
 - ### Provenance
   - attributedTo:: did:nostr:ontology-mesh
   - inferenceRule:: GapMaterialisation

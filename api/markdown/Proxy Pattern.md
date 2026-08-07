@@ -26,8 +26,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:smart-contract",
-      "label": "Smart Contract"
+      "@id": "urn:ngm:class:design-pattern",
+      "label": "Design Pattern"
     }
   ],
   "relations": {
@@ -130,6 +130,7 @@ public:: true
   - Beacon proxies that upgrade many instances by pointing them at a single implementation.
   - Governance-controlled protocol upgrades coordinated through timelocks and multisigs.
 - ### Relationships
+  - subClassOf:: [[Design Pattern]]
   - partOf:: [[Smart Contract]]
   - uses:: [[Solidity]]
   - requires:: [[Access Control]]

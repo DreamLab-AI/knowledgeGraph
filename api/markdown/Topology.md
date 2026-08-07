@@ -7,27 +7,84 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:topology",
-  "@type":"Class",
-  "label":"Topology",
-  "definition":"Topology is the mathematical study of properties of spaces that are preserved under continuous deformation, such as connectivity, continuity and the presence of holes. It provides the formal language for reasoning about shape independent of exact distances or coordinates, underpinning fields from network analysis to topological data analysis. In machine learning it informs how the structure of data and networks can be characterised and exploited.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:graph-theory","label":"Graph Theory"}],
-  "relations":{
-    "relatedTo":[{"@id":"urn:ngm:class:graph-theory","label":"Graph Theory"},{"@id":"urn:ngm:class:network-topology","label":"Network Topology"},{"@id":"urn:ngm:class:data-structure","label":"Data Structure"}],
-    "requires":[{"@id":"urn:ngm:class:graph-theory","label":"Graph Theory"}],
-    "hasPart":[{"@id":"urn:ngm:class:persistence","label":"Persistence"}],
-    "enables":[{"@id":"urn:ngm:class:dimensionality-reduction","label":"Dimensionality Reduction"}],
-    "uses":[{"@id":"urn:ngm:class:data-structure","label":"Data Structure"}],
-    "supports":[{"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:network-topology","label":"Network Topology"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:graph-theory","label":"Graph Theory"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:topology",
+  "@type": "Class",
+  "label": "Topology",
+  "definition": "Topology is the mathematical study of properties of spaces that are preserved under continuous deformation, such as connectivity, continuity and the presence of holes. It provides the formal language for reasoning about shape independent of exact distances or coordinates, underpinning fields from network analysis to topological data analysis. In machine learning it informs how the structure of data and networks can be characterised and exploited.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:persistence",
+        "label": "Persistence"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -47,6 +104,7 @@ public:: true
 - Reasoning about network and graph structure.
 - Robust feature extraction for point clouds and manifolds.
 - ### Relationships
+  - subClassOf:: [[AI Research Area]]
 - relatedTo:: [[Graph Theory]]
 - relatedTo:: [[Network Topology]]
 - relatedTo:: [[Data Structure]]

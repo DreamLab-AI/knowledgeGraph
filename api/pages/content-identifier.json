@@ -44,12 +44,7 @@
         "label": "Content Addressing"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:content-addressing",
-        "label": "Location Addressing"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:verifiable-credentials",

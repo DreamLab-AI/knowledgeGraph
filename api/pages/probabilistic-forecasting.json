@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning Discipline"
-    },
-    {
-      "id": "urn:ngm:class:time-series-forecasting",
-      "label": "Time Series Forecasting"
     }
   ],
   "entityType": "Class",

@@ -24,8 +24,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:hard-fork",
-      "label": "Hard Fork"
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
     }
   ],
   "relations": {
@@ -134,7 +134,7 @@ public:: true
   - Incremental consensus changes without coordinated network-wide updates.
   - Fixing protocol vulnerabilities while preserving compatibility.
 - ### Relationships
-  - subClassOf:: [[Hard Fork]]
+  - subClassOf:: [[Protocol and Consensus]]
   - partOf:: [[Blockchain Governance]]
   - contrastsWith:: [[Hard Fork]]
   - requires:: [[Consensus Mechanism]]

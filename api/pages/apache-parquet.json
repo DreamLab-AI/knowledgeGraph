@@ -49,12 +49,7 @@
         "label": "Columnar Storage"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:data-format",
-        "label": "Data Format"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:data-warehouse",

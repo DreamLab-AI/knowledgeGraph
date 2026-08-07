@@ -134,10 +134,6 @@ public:: true
       {
         "@id": "urn:ngm:class:shared-virtual-space",
         "label": "Shared Virtual Environment"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-experience",
-        "label": "Static Virtual Experience"
       }
     ],
     "bridgesTo": [

@@ -8,8 +8,8 @@
   "definition": "A Content Management System (CMS) is software that lets users create, store, organise, edit and publish digital content without requiring direct manipulation of underlying code. It separates content from presentation, providing authoring interfaces, versioning, access control and workflow so that non-technical contributors can manage websites and applications. Modern variants include headless systems that expose content through APIs for delivery across many front ends, including spatial and immersive interfaces.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:digital-asset-management",
-      "label": "Digital Asset Management"
+      "id": "urn:ngm:class:enterprise-software-platform",
+      "label": "Enterprise Software Platform"
     }
   ],
   "entityType": "Class",

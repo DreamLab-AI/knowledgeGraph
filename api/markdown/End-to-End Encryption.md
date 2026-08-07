@@ -96,10 +96,6 @@ public:: true
       {
         "@id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
-      },
-      {
-        "@id": "urn:ngm:class:encryption",
-        "label": "Server-Side Encryption"
       }
     ],
     "standardizedBy": [

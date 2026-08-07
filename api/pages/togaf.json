@@ -31,12 +31,7 @@
         "label": "Enterprise Integration"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:governance-framework",
-        "label": "Governance Framework"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:enterprise-integration",

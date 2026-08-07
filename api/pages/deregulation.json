@@ -8,8 +8,8 @@
   "definition": "Deregulation is the process of removing, reducing, or simplifying government rules and controls that constrain how firms operate in a market, typically to increase competition, lower barriers to entry, and improve economic efficiency. It is the deliberate counterpart to regulation and is often pursued in sectors such as telecommunications, finance, energy, and transport. Deregulation does not mean the absence of oversight but rather a shift toward lighter-touch or market-based governance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:regulation",
-      "label": "Regulation"
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "entityType": "Class",

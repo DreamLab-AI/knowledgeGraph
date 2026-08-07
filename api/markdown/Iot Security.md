@@ -78,12 +78,6 @@ public:: true
         "label": "Incident Response"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:network-security",
-        "label": "Network Security"
-      }
-    ],
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:standards",
@@ -153,7 +147,6 @@ public:: true
 - dependsOn:: [[Authentication]]
 - enables:: [[Data Protection]]
 - supports:: [[Incident Response]]
-- contrastsWith:: [[Network Security]]
 - standardizedBy:: [[Standards]]
 - standardizedBy:: [[ISO]]
 - relatedTo:: [[Threat Model]]

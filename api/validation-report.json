@@ -2,12 +2,12 @@
   "total_pages": 8152,
   "pages_with_ontology": 8152,
   "public_pages": 8138,
-  "total_issues": 1404,
+  "total_issues": 1397,
   "errors": 0,
   "warnings": 0,
-  "info": 1404,
+  "info": 1397,
   "by_code": {
-    "MULTI_PARENT": 1404
+    "MULTI_PARENT": 1397
   },
   "issues": [
     {
@@ -45,12 +45,6 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Academic Conference, AI Research Area"
-    },
-    {
-      "path": "ADAS.md",
-      "severity": "info",
-      "code": "MULTI_PARENT",
-      "message": "Bridging class, 2 parents: Robot Type, Autonomous Vehicle"
     },
     {
       "path": "ADE20K.md",
@@ -1577,12 +1571,6 @@
       "message": "Bridging class, 2 parents: Legal and Regulatory, Security and Identity"
     },
     {
-      "path": "Computability Theory.md",
-      "severity": "info",
-      "code": "MULTI_PARENT",
-      "message": "Bridging class, 2 parents: Computational Complexity Theory, Mathematical Logic"
-    },
-    {
       "path": "Computational Biology.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -1905,12 +1893,6 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Software Development, Generative AI"
-    },
-    {
-      "path": "Customer Experience Management.md",
-      "severity": "info",
-      "code": "MULTI_PARENT",
-      "message": "Bridging class, 2 parents: CRM, Enterprise Software Platform"
     },
     {
       "path": "Customer Rewards.md",
@@ -5129,12 +5111,6 @@
       "message": "Bridging class, 3 parents: Security and Identity, Security and Identity, Security and Identity"
     },
     {
-      "path": "Normalising Flow.md",
-      "severity": "info",
-      "code": "MULTI_PARENT",
-      "message": "Bridging class, 2 parents: Generative Model, Generative Adversarial Network"
-    },
-    {
       "path": "Nostr Protocol.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -5643,12 +5619,6 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Computing and Cloud, Decentralised Web"
-    },
-    {
-      "path": "Probabilistic Forecasting.md",
-      "severity": "info",
-      "code": "MULTI_PARENT",
-      "message": "Bridging class, 2 parents: Machine Learning Discipline, Time Series Forecasting"
     },
     {
       "path": "Probabilistic Model.md",
@@ -7109,12 +7079,6 @@
       "message": "Bridging class, 3 parents: AI Technique, Automated Planning, Symbolic AI"
     },
     {
-      "path": "Task Specific Model.md",
-      "severity": "info",
-      "code": "MULTI_PARENT",
-      "message": "Bridging class, 2 parents: Foundation Model, AI Model Architecture"
-    },
-    {
       "path": "Tax Treatment Crypto.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -7269,12 +7233,6 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Robotics, Proximity Sensor"
-    },
-    {
-      "path": "Time Series Forecasting.md",
-      "severity": "info",
-      "code": "MULTI_PARENT",
-      "message": "Bridging class, 2 parents: AI Technique, Probabilistic Forecasting"
     },
     {
       "path": "TinyML.md",

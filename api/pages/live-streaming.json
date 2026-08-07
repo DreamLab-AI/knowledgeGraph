@@ -49,12 +49,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:video-streaming",
-        "label": "Video Streaming"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
       {

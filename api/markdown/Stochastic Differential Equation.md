@@ -118,10 +118,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ordinary-differential-equation",
         "label": "Ordinary Differential Equation"
-      },
-      {
-        "@id": "urn:ngm:class:differential-equations",
-        "label": "Partial Differential Equation"
       }
     ],
     "relatedTo": [

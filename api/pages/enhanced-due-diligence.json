@@ -49,12 +49,7 @@
         "label": "Regulatory Compliance"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:customer-due-diligence",
-        "label": "Customer Due Diligence"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
       {

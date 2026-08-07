@@ -31,12 +31,6 @@ public:: true
     }
   ],
   "relations": {
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:stablecoin",
-        "label": "Stablecoin"
-      }
-    ],
     "implements": [
       {
         "@id": "urn:ngm:class:smart-contract",
@@ -132,7 +126,6 @@ public:: true
   - Experimental monetary designs studied against [[Tether]] and [[DAI]].
   - Yield and liquidity strategies built on protocol incentives.
 - ### Relationships
-  - contrastsWith:: [[Stablecoin]]
   - implements:: [[Smart Contract]]
   - enables:: [[Decentralised Finance]]
   - uses:: [[Price Oracle]]

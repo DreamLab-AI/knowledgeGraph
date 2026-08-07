@@ -163,10 +163,6 @@ public:: true
         "label": "FBX"
       },
       {
-        "@id": "urn:ngm:class:3-d-file-format",
-        "label": "OBJ File Format"
-      },
-      {
         "@id": "urn:ngm:class:collada",
         "label": "COLLADA"
       }

@@ -88,12 +88,6 @@ public:: true
         "label": "Bandwidth"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:video-streaming",
-        "label": "Video Streaming"
-      }
-    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:content-delivery",
@@ -142,7 +136,6 @@ public:: true
   - enables:: [[User Engagement]]
   - supports:: [[Real-Time Communication]]
   - dependsOn:: [[Bandwidth]]
-  - contrastsWith:: [[Video Streaming]]
   - relatedTo:: [[Content Delivery]]
   - relatedTo:: [[Network Protocol]]
 - ### Provenance

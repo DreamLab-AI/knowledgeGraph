@@ -88,12 +88,6 @@ public:: true
         "label": "Blockchain"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:logistics",
-        "label": "Forward Logistics"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:artificial-intelligence",

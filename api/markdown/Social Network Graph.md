@@ -48,8 +48,8 @@ public:: true
   "quality": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:knowledge-graph",
-      "label": "Knowledge Graph"
+      "@id": "urn:ngm:class:graph-data-model",
+      "label": "Graph Data Model"
     }
   ],
   "sameAs": [
@@ -252,6 +252,7 @@ public:: true
   - **Academic citation networks** — co-authorship graphs and citation graphs share the same structural formalism; [[Citation Network]] analysis identifies research fronts and gatekeepers
 
 - ### Relationships
+  - subClassOf:: [[Graph Data Model]]
   - hasPart:: [[Graph Node]]
   - hasPart:: [[Graph Edge]]
   - hasPart:: [[Community Structure]]

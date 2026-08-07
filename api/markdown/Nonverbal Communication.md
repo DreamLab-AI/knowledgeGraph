@@ -106,12 +106,6 @@ public:: true
         "@id": "urn:ngm:class:human-computer-interaction",
         "label": "Human Computer Interaction"
       }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:communication-theory",
-        "label": "Communication Theory"
-      }
     ]
   },
   "sameAs": [],
@@ -157,7 +151,6 @@ public:: true
   - uses:: [[Spatial Audio]]
   - dependsOn:: [[Avatar]]
   - bridgesTo:: [[Human Computer Interaction]]
-  - contrastsWith:: [[Communication Theory]]
 - ### Provenance
   - attributedTo:: did:nostr:ontology-mesh
   - inferenceRule:: GapMaterialisation

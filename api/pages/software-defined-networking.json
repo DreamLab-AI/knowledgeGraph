@@ -45,12 +45,7 @@
         "label": "Network Slicing"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:network-architecture",
-        "label": "Network Architecture"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:network-slicing",

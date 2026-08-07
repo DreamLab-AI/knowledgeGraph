@@ -185,10 +185,6 @@ public:: true
       {
         "@id": "urn:ngm:class:image-processing",
         "label": "Image Processing"
-      },
-      {
-        "@id": "urn:ngm:class:signal-processing",
-        "label": "Analogue Signal Processing"
       }
     ],
     "bridgesTo": [

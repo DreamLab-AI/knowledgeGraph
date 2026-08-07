@@ -110,12 +110,6 @@ public:: true
         "label": "Distributed Trust"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:transaction",
-        "label": "Transaction"
-      }
-    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:double-spending",
@@ -169,7 +163,6 @@ public:: true
   - requires:: [[Byzantine Fault Tolerance]]
   - requires:: [[Immutability]]
   - bridgesTo:: [[Distributed Trust]]
-  - contrastsWith:: [[Transaction]]
   - relatedTo:: [[Double Spending]]
   - relatedTo:: [[Atomic Swap]]
 - ### Provenance

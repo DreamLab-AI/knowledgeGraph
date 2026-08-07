@@ -45,12 +45,7 @@
         "label": "Standards"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:standards-organization",
-        "label": "Standards Organization"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:5-g",

@@ -60,12 +60,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:animation",
-        "label": "Cinematic Animation"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:machine-learning",

@@ -106,10 +106,6 @@ public:: true
       {
         "@id": "urn:ngm:class:carbon-neutrality",
         "label": "Carbon Neutrality"
-      },
-      {
-        "@id": "urn:ngm:class:climate-commitments",
-        "label": "Climate Pledges"
       }
     ],
     "relatedTo": [

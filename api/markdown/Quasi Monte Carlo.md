@@ -8,29 +8,104 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:quasi-monte-carlo",
-  "@type":"Class",
-  "label":"Quasi Monte Carlo",
-  "definition":"Quasi-Monte Carlo (QMC) is a family of numerical integration and sampling methods that replace the pseudo-random points of classical Monte Carlo with deterministic low-discrepancy sequences. By spreading sample points more evenly across the integration domain, QMC achieves faster asymptotic convergence than standard Monte Carlo for many smooth, moderate-dimensional integrals. It is widely used in computational finance, computer graphics, and uncertainty quantification.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:monte-carlo-integration","label":"Monte Carlo Integration"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:numerical-methods","label":"Numerical Methods"}],
-    "hasPart":[{"@id":"urn:ngm:class:variance-reduction","label":"Variance Reduction"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:monte-carlo-integration","label":"Monte Carlo Integration"}],
-    "uses":[{"@id":"urn:ngm:class:sampling","label":"Sampling"},{"@id":"urn:ngm:class:random-sampling","label":"Random Sampling"}],
-    "enables":[{"@id":"urn:ngm:class:variance-reduction","label":"Variance Reduction"}],
-    "relatedTo":[{"@id":"urn:ngm:class:importance-sampling","label":"Importance Sampling"},{"@id":"urn:ngm:class:statistics","label":"Statistics"},{"@id":"urn:ngm:class:stochastic-process","label":"Stochastic Process"}],
-    "supports":[{"@id":"urn:ngm:class:numerical-methods","label":"Numerical Methods"},{"@id":"urn:ngm:class:uncertainty-quantification","label":"Uncertainty Quantification"}],
-    "dependsOn":[{"@id":"urn:ngm:class:sampling","label":"Sampling"}],
-    "implements":[{"@id":"urn:ngm:class:simulation","label":"Simulation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:quasi-monte-carlo",
+  "@type": "Class",
+  "label": "Quasi Monte Carlo",
+  "definition": "Quasi-Monte Carlo (QMC) is a family of numerical integration and sampling methods that replace the pseudo-random points of classical Monte Carlo with deterministic low-discrepancy sequences. By spreading sample points more evenly across the integration domain, QMC achieves faster asymptotic convergence than standard Monte Carlo for many smooth, moderate-dimensional integrals. It is widely used in computational finance, computer graphics, and uncertainty quantification.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:numerical-methods",
+      "label": "Numerical Methods"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -53,6 +128,7 @@ public:: true
 	- Uncertainty quantification and sensitivity analysis in engineering and the physical sciences.
 	- Bayesian computation and expectation estimation as a faster alternative to plain [[Importance Sampling]].
 - ### Relationships
+  - subClassOf:: [[Numerical Methods]]
 	- partOf:: [[Numerical Methods]]
 	- hasPart:: [[Variance Reduction]]
 	- contrastsWith:: [[Monte Carlo Integration]]

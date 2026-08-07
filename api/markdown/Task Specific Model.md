@@ -26,10 +26,6 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:foundation-model",
-      "label": "Foundation Model"
-    },
-    {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
@@ -134,8 +130,6 @@ public:: true
   - Cost-sensitive high-volume production tasks
   - Regulated settings requiring auditable single-purpose behaviour
 - ### Relationships
-  - subClassOf:: [[Foundation Model]]
-  - subClassOf:: [[Foundation Model]]
   - contrastsWith:: [[Foundation Model]]
   - contrastsWith:: [[Language Model]]
   - implements:: [[Fine-Tuning]]

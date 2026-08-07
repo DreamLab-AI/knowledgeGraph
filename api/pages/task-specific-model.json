@@ -8,10 +8,6 @@
   "definition": "A Task Specific Model is a machine learning model trained or adapted to perform a single, narrowly defined task such as sentiment classification, named entity recognition or defect detection. Unlike general-purpose foundation models, it optimises parameters against the distribution of one objective, often yielding higher accuracy and lower inference cost for that task. Such models are typically produced by training from scratch on labelled data or by fine-tuning a larger base model.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:foundation-model",
-      "label": "Foundation Model"
-    },
-    {
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }

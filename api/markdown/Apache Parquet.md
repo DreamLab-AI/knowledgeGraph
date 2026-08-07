@@ -101,12 +101,6 @@ public:: true
         "@id": "urn:ngm:class:data-warehouse",
         "label": "Data Warehouse"
       }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:data-format",
-        "label": "Data Format"
-      }
     ]
   },
   "sameAs": [],
@@ -154,7 +148,6 @@ public:: true
   - implements:: [[Columnar Storage]]
   - dependsOn:: [[Data Serialisation]]
   - bridgesTo:: [[Data Warehouse]]
-  - contrastsWith:: [[Data Format]]
 
 - ### Provenance
   - updated:: 2026-06-15

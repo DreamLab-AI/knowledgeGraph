@@ -118,10 +118,6 @@ alias:: Sim to Real Transfer
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:robot-learning",
-        "label": "Real-World Robot Learning"
-      },
-      {
         "@id": "urn:ngm:class:imitation-learning",
         "label": "Imitation Learning"
       }

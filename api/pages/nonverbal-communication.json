@@ -48,12 +48,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:communication-theory",
-        "label": "Communication Theory"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:human-computer-interaction",

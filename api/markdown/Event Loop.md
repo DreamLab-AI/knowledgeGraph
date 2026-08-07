@@ -80,12 +80,6 @@ public:: true
         "label": "Asynchronous Programming"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:concurrency",
-        "label": "Concurrency"
-      }
-    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:asynchronous-programming",
@@ -146,7 +140,6 @@ public:: true
   - enables:: [[Asynchronous Programming]]
   - implements:: [[Concurrency]]
   - supports:: [[Asynchronous Programming]]
-  - contrastsWith:: [[Concurrency]]
   - relatedTo:: [[Asynchronous Programming]]
   - relatedTo:: [[Runtime Environment]]
   - bridgesTo:: [[Infrastructure]]

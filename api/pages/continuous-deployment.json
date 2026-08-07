@@ -8,8 +8,8 @@
   "definition": "Continuous Deployment is a software release practice in which every code change that passes the automated pipeline is released to production automatically, without manual approval gates. It extends continuous delivery by removing the final human decision step, so that a successful build, test, and integration sequence results directly in a live deployment. The practice depends on comprehensive automated testing, robust monitoring, and rapid rollback mechanisms to maintain reliability while sustaining a high deployment cadence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:continuous-delivery",
-      "label": "Continuous Delivery"
+      "id": "urn:ngm:class:devops",
+      "label": "DevOps"
     }
   ],
   "entityType": "Class",

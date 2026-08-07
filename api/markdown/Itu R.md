@@ -8,30 +8,104 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:itu-r",
-  "@type":"Class",
-  "label":"Itu R",
-  "definition":"ITU-R is the Radiocommunication Sector of the International Telecommunication Union, the United Nations agency responsible for managing the global radio-frequency spectrum and satellite orbits. It coordinates international spectrum allocation, develops technical recommendations and maintains the Radio Regulations treaty that governs cross-border use of radio. ITU-R sets the framework for mobile, broadcasting, satellite and emerging wireless standards, including the IMT specifications that define generations such as 5G.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:standards-organization","label":"Standards Organization"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:itu","label":"ITU"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:itu","label":"ITU"}],
-    "enables":[{"@id":"urn:ngm:class:wireless-communication","label":"Wireless Communication"},{"@id":"urn:ngm:class:5-g","label":"5G"}],
-    "supports":[{"@id":"urn:ngm:class:telecommunications","label":"Telecommunications"},{"@id":"urn:ngm:class:wireless-communication","label":"Wireless Communication"}],
-    "uses":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "requires":[{"@id":"urn:ngm:class:standards-organization","label":"Standards Organization"}],
-    "implements":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "dependsOn":[{"@id":"urn:ngm:class:itu","label":"ITU"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:5-g","label":"5G"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:standards-organization","label":"Standards Organization"}],
-    "relatedTo":[{"@id":"urn:ngm:class:itu","label":"ITU"},{"@id":"urn:ngm:class:telecommunications","label":"Telecommunications"},{"@id":"urn:ngm:class:wireless-communication","label":"Wireless Communication"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:itu-r",
+  "@type": "Class",
+  "label": "Itu R",
+  "definition": "ITU-R is the Radiocommunication Sector of the International Telecommunication Union, the United Nations agency responsible for managing the global radio-frequency spectrum and satellite orbits. It coordinates international spectrum allocation, develops technical recommendations and maintains the Radio Regulations treaty that governs cross-border use of radio. ITU-R sets the framework for mobile, broadcasting, satellite and emerging wireless standards, including the IMT specifications that define generations such as 5G.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-organization",
+      "label": "Standards Organization"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:itu",
+        "label": "ITU"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:itu",
+        "label": "ITU"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      },
+      {
+        "@id": "urn:ngm:class:5-g",
+        "label": "5G"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:itu",
+        "label": "ITU"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:5-g",
+        "label": "5G"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:itu",
+        "label": "ITU"
+      },
+      {
+        "@id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -65,7 +139,6 @@ public:: true
 - implements:: [[Standards]]
 - dependsOn:: [[ITU]]
 - bridgesTo:: [[5G]]
-- contrastsWith:: [[Standards Organization]]
 - relatedTo:: [[ITU]]
 - relatedTo:: [[Telecommunications]]
 - relatedTo:: [[Wireless Communication]]

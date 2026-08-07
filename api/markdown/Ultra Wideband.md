@@ -24,41 +24,82 @@ public:: true
   "definition": "Ultra Wideband (UWB) is a short-range radio technology that transmits data using pulses spread across a very wide frequency spectrum (typically 3.1–10.6 GHz, bandwidth exceeding 500 MHz), enabling precise time-of-flight ranging and centimetre-accurate indoor positioning. Unlike narrowband technologies, UWB's broad spectrum allocation provides high resistance to multipath interference and coexistence with other radio systems. It is standardised under IEEE 802.15.4z and used in applications from secure device pairing to spatial-computing anchor systems.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:wireless-communication", "label": "Wireless Communication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:wireless-communication",
+      "label": "Wireless Communication"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:fourier-transform", "label": "Fourier Transform"},
-      {"@id": "urn:ngm:class:euclidean-distance", "label": "Euclidean Distance"}
+      {
+        "@id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      },
+      {
+        "@id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Methods"},
-      {"@id": "urn:ngm:class:statistical-analysis", "label": "Statistical Analysis"}
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:security", "label": "Security"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:wireless-communication", "label": "Wireless Communication"}
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:standards", "label": "Standards"}
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ]
   },
   "quality": 0.62,

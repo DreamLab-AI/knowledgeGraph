@@ -83,12 +83,6 @@ public:: true
         "label": "Network Slicing"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:network-architecture",
-        "label": "Network Architecture"
-      }
-    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:virtual-network",
@@ -139,7 +133,6 @@ public:: true
   - uses:: [[API]]
   - supports:: [[Infrastructure]]
   - bridgesTo:: [[Network Slicing]]
-  - contrastsWith:: [[Network Architecture]]
   - relatedTo:: [[Virtual Network]]
   - relatedTo:: [[Infrastructure]]
 - ### Provenance

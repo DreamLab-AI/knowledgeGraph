@@ -8,10 +8,6 @@
   "definition": "Customer Experience Management (CEM or CXM) is the systematic discipline of designing, orchestrating, measuring, and continuously improving every interaction a customer has with an organisation across the full lifecycle \u2014 from initial brand awareness through purchase, onboarding, ongoing service, and eventual advocacy or churn. It encompasses the tools, processes, data infrastructure, and organisational culture required to engineer experience quality at scale, relying on journey mapping to document touchpoint sequences, voice-of-customer programmes to capture perception signals, omnichannel platforms to unify channel delivery, and analytics engines to translate interaction data into actionable improvement priorities.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:crm",
-      "label": "CRM"
-    },
-    {
       "id": "urn:ngm:class:enterprise-software-platform",
       "label": "Enterprise Software Platform"
     }

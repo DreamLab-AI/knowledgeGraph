@@ -53,12 +53,7 @@
         "label": "RDF"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:data-model",
-        "label": "Data Model"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
       {

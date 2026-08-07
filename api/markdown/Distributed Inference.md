@@ -8,31 +8,102 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:distributed-inference",
-  "@type":"Class",
-  "label":"Distributed Inference",
-  "definition":"Distributed inference is the execution of a machine learning model's forward pass across multiple devices or machines so that models too large or too demanding for a single accelerator can serve predictions. It partitions the model and its computation using strategies such as tensor, pipeline and data parallelism, and coordinates the resulting workers with high-bandwidth interconnects. Distributed inference is essential for serving very large language and vision models at acceptable latency and throughput.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"},{"@id":"urn:ngm:class:cat-ai-infrastructure","label":"AI Infrastructure"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"}],
-    "hasPart":[{"@id":"urn:ngm:class:tensor-parallelism","label":"Tensor Parallelism"}],
-    "requires":[{"@id":"urn:ngm:class:gpu","label":"GPU"}],
-    "enables":[{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"}],
-    "uses":[{"@id":"urn:ngm:class:pipeline-parallelism","label":"Pipeline Parallelism"}],
-    "dependsOn":[{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}],
-    "supports":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"}],
-    "implements":[{"@id":"urn:ngm:class:model-parallelism","label":"Model Parallelism"}],
-    "relatedTo":[{"@id":"urn:ngm:class:model-parallelism","label":"Model Parallelism"},{"@id":"urn:ngm:class:kv-cache","label":"KV Cache"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:distributed-inference",
+  "@type": "Class",
+  "label": "Distributed Inference",
+  "definition": "Distributed inference is the execution of a machine learning model's forward pass across multiple devices or machines so that models too large or too demanding for a single accelerator can serve predictions. It partitions the model and its computation using strategies such as tensor, pipeline and data parallelism, and coordinates the resulting workers with high-bandwidth interconnects. Distributed inference is essential for serving very large language and vision models at acceptable latency and throughput.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -72,7 +143,6 @@ public:: true
   - relatedTo:: [[Model Parallelism]]
   - relatedTo:: [[KV Cache]]
   - bridgesTo:: [[Distributed Systems]]
-  - contrastsWith:: [[Model Serving]]
   - standardizedBy:: [[Machine Learning]]
 - ### Provenance
   - updated:: 2026-06-15

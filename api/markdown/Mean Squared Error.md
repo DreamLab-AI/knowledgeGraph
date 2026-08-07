@@ -117,10 +117,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cross-entropy-loss",
         "label": "Cross-Entropy Loss"
-      },
-      {
-        "@id": "urn:ngm:class:loss-function",
-        "label": "Huber Loss"
       }
     ],
     "relatedTo": [

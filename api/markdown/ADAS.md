@@ -74,27 +74,44 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
-    },
-    {
-      "@id": "urn:ngm:class:autonomous-vehicle",
-      "label": "Autonomous Vehicle"
     }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:camera", "label": "Camera"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:risk", "label": "Risk"}
+      {
+        "@id": "urn:ngm:class:risk",
+        "label": "Risk"
+      }
     ]
   },
   "provenance": {

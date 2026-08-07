@@ -24,8 +24,8 @@ public:: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:adaptive-learning",
-    "label": "Adaptive Learning"
+    "@id": "urn:ngm:class:education-technology",
+    "label": "Education Technology"
   },
   "relations": {
     "uses": [

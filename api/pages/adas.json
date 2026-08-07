@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
-    },
-    {
-      "id": "urn:ngm:class:autonomous-vehicle",
-      "label": "Autonomous Vehicle"
     }
   ],
   "entityType": "Class",

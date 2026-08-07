@@ -7,48 +7,90 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:graph-data-model",
-  "@type":"Class",
-  "label":"Graph Data Model",
-  "definition":"A graph data model represents information as nodes connected by edges, where edges carry the semantics of relationships between entities. It makes connections first-class, so traversing and querying relationships is direct rather than reconstructed through joins as in tabular models. The two dominant variants are the labelled property graph, which attaches key-value properties to nodes and edges, and the RDF triple model, which expresses facts as subject-predicate-object statements.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-model","label":"Data Model"}],
-  "relations":{
-    "requires":[
-      {"@id":"urn:ngm:class:graph-database","label":"Graph Database"},
-      {"@id":"urn:ngm:class:schema","label":"Schema"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:graph-data-model",
+  "@type": "Class",
+  "label": "Graph Data Model",
+  "definition": "A graph data model represents information as nodes connected by edges, where edges carry the semantics of relationships between entities. It makes connections first-class, so traversing and querying relationships is direct rather than reconstructed through joins as in tabular models. The two dominant variants are the labelled property graph, which attaches key-value properties to nodes and edges, and the RDF triple model, which expresses facts as subject-predicate-object statements.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-model",
+      "label": "Data Model"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:property-graph","label":"Property Graph"},
-      {"@id":"urn:ngm:class:rdf","label":"RDF"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:property-graph",
+        "label": "Property Graph"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:node","label":"Node"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:node",
+        "label": "Node"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:knowledge-graph","label":"Knowledge Graph"},
-      {"@id":"urn:ngm:class:semantic-web","label":"Semantic Web"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:sparql","label":"SPARQL"},
-      {"@id":"urn:ngm:class:knowledge-representation","label":"Knowledge Representation"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:structured-data","label":"Structured Data"},
-      {"@id":"urn:ngm:class:knowledge-graph-embedding","label":"Knowledge Graph Embedding"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:structured-data",
+        "label": "Structured Data"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:data-model","label":"Data Model"}
-    ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:ontology","label":"Ontology"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -84,7 +126,6 @@ public:: true
 	- uses:: [[Knowledge Representation]]
 	- supports:: [[Structured Data]]
 	- supports:: [[Knowledge Graph Embedding]]
-	- contrastsWith:: [[Data Model]]
 	- relatedTo:: [[Ontology]]
 - ### Provenance
 	- updated:: 2026-06-15

@@ -6,29 +6,94 @@ public:: true
 ```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:operator-fusion",
-  "@type":"Class",
-  "label":"Operator Fusion",
-  "definition":"Operator fusion is a compiler optimisation that combines several consecutive operations in a neural network computation graph into a single fused kernel. By merging operations such as a matrix multiply with its bias addition and activation function, fusion avoids writing intermediate tensors back to memory, reducing memory bandwidth pressure and kernel launch overhead. It is a core technique in machine learning compilers and inference runtimes for improving throughput and latency on accelerators. Fusion trades increased kernel complexity for fewer round trips to global memory.",
-  "domain":"ai",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:model-optimization","label":"Model Optimization"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:compiler","label":"Compiler"}],
-    "hasPart":[{"@id":"urn:ngm:class:hardware-acceleration","label":"Hardware Acceleration"}],
-    "requires":[{"@id":"urn:ngm:class:compiler","label":"Compiler"}],
-    "enables":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"}],
-    "dependsOn":[{"@id":"urn:ngm:class:memory-bandwidth","label":"Memory Bandwidth"}],
-    "uses":[{"@id":"urn:ngm:class:gpu","label":"GPU"},{"@id":"urn:ngm:class:onnx","label":"ONNX"}],
-    "supports":[{"@id":"urn:ngm:class:inference","label":"Inference"}],
-    "implements":[{"@id":"urn:ngm:class:hardware-acceleration","label":"Hardware Acceleration"}],
-    "relatedTo":[{"@id":"urn:ngm:class:latency","label":"Latency"},{"@id":"urn:ngm:class:memory-bandwidth","label":"Memory Bandwidth"},{"@id":"urn:ngm:class:neural-network","label":"Neural Network"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:model-optimization","label":"Model Optimization"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:operator-fusion",
+  "@type": "Class",
+  "label": "Operator Fusion",
+  "definition": "Operator fusion is a compiler optimisation that combines several consecutive operations in a neural network computation graph into a single fused kernel. By merging operations such as a matrix multiply with its bias addition and activation function, fusion avoids writing intermediate tensors back to memory, reducing memory bandwidth pressure and kernel launch overhead. It is a core technique in machine learning compilers and inference runtimes for improving throughput and latency on accelerators. Fusion trades increased kernel complexity for fewer round trips to global memory.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-optimization",
+      "label": "Model Optimization"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 - ### Definition
@@ -61,6 +126,5 @@ public:: true
 - implements:: [[Hardware Acceleration]]
 - relatedTo:: [[Latency]]
 - relatedTo:: [[Neural Network]]
-- contrastsWith:: [[Model Optimization]]
 - ### Provenance
 - updated:: 2026-06-15

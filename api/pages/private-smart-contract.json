@@ -40,12 +40,7 @@
         "label": "Zero-Knowledge Rollup"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
       {

@@ -39,12 +39,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:asynchronous-collaboration",
-        "label": "Asynchronous Collaboration"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
       {

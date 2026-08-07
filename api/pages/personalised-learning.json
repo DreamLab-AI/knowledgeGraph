@@ -8,8 +8,8 @@
   "definition": "Personalised learning is an educational approach in which the pace, content, modality, and assessment of instruction are dynamically adapted to the knowledge state, learning style, goals, and preferences of the individual learner. Technology-enabled personalised learning uses data about learner interactions and performance to drive adaptive algorithms that present the most effective next learning experience for each person, contrasting with one-size-fits-all curriculum delivery.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:adaptive-learning",
-      "label": "Adaptive Learning"
+      "id": "urn:ngm:class:education-technology",
+      "label": "Education Technology"
     }
   ],
   "entityType": "Class",

@@ -134,12 +134,6 @@ public:: true
         "label": "Metaverse Standards Forum"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:animation",
-        "label": "Cinematic Animation"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:machine-learning",

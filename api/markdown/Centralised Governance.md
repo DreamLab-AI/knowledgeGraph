@@ -26,8 +26,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:decentralised-governance",
-      "label": "Decentralised Governance"
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
     }
   ],
   "relations": {
@@ -118,7 +118,7 @@ public:: true
   - Regulated platforms that require an accountable controlling entity for [[Compliance]].
   - Early-stage protocols retaining admin keys before progressive decentralisation.
 - ### Relationships
-  - subClassOf:: [[Decentralised Governance]]
+  - subClassOf:: [[Governance Framework]]
   - contrastsWith:: [[Decentralised Governance]]
   - contrastsWith:: [[DAO]]
   - contrastsWith:: [[Decentralisation]]

@@ -128,10 +128,6 @@ alias:: LifeCycleAssessment
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:environmental-assessment",
-        "label": "Environmental Impact Assessment"
-      },
-      {
         "@id": "urn:ngm:class:material-flow-analysis",
         "label": "Material Flow Analysis"
       }
