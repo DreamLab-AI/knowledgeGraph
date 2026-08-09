@@ -147,6 +147,10 @@
     {
       "slug": "reasoning",
       "label": "Reasoning"
+    },
+    {
+      "slug": "reflection",
+      "label": "Reflection"
     }
   ]
 }

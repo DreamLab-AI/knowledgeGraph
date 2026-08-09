@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:442d9448eb05283b656a99a201a01fe0a601ae08220040ffe67f4d2f612241f7",
+  "title": "Planner-Executor Pattern",
+  "slug": "planner-executor-pattern",
+  "public": true,
+  "classIri": "urn:ngm:class:planner-executor-pattern",
+  "domain": "artificial-intelligence",
+  "definition": "A multi-agent orchestration pattern that separates deciding what to do from doing it: a planner component decomposes a goal into an ordered sequence of concrete steps, and one or more executor components carry those steps out, reporting results back so the plan can proceed or be revised. The split lets each role specialise \u2014 the planner reasons about strategy, dependencies, and ordering over the whole task, while executors focus narrowly on faithfully performing individual steps with the appropriate tools \u2014 and it makes the plan an explicit, inspectable artefact rather than an implicit chain of ad-hoc decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multi-agent-orchestration",
+      "label": "Multi-Agent Orchestration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supervisor-worker-pattern",
+        "label": "Supervisor-Worker Pattern"
+      },
+      {
+        "id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "multi-agent-orchestration",
+      "label": "MultiAgentOrchestration"
+    },
+    {
+      "slug": "supervisor-worker-pattern",
+      "label": "SupervisorWorkerPattern"
+    },
+    {
+      "slug": "task-delegation",
+      "label": "TaskDelegation"
+    },
+    {
+      "slug": "llm-orchestration",
+      "label": "LLMOrchestration"
+    }
+  ],
+  "backlinks": []
+}

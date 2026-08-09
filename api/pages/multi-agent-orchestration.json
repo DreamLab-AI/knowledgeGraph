@@ -161,6 +161,10 @@
       "label": "Autonomous Task Execution"
     },
     {
+      "slug": "blackboard-pattern",
+      "label": "Blackboard Pattern"
+    },
+    {
       "slug": "external-ai-harness",
       "label": "External AI Harness"
     },
@@ -175,6 +179,10 @@
     {
       "slug": "model-context-protocol",
       "label": "Model Context Protocol"
+    },
+    {
+      "slug": "planner-executor-pattern",
+      "label": "Planner-Executor Pattern"
     }
   ]
 }

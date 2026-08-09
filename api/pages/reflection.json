@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:f30409c51a78ed6906df6e53052bcb0fe52ae708ebd809bd2d52820fceb253ed",
+  "title": "Reflection",
+  "slug": "reflection",
+  "public": true,
+  "classIri": "urn:ngm:class:reflection",
+  "domain": "artificial-intelligence",
+  "definition": "An agent pattern in which a model examines its own prior output, judges it against the goal and any available evidence, and then revises the work in a further pass. Reflection turns generation into a loop rather than a single shot: the agent produces a draft, critiques that draft \u2014 spotting errors, gaps, unmet constraints, or weak reasoning \u2014 and feeds the critique back as input to an improved attempt. It is distinguished from ordinary multi-step prompting by the fact that the intermediate judgement is about the agent's own work, making the agent both author and reviewer within the same task.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agentic-workflow",
+      "label": "Agentic Workflow"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:golden-set",
+        "label": "Golden Set"
+      },
+      {
+        "id": "urn:ngm:class:guardrail",
+        "label": "Guardrail"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agentic-workflow",
+      "label": "AgenticWorkflow"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "ChainOfThought"
+    },
+    {
+      "slug": "self-consistency",
+      "label": "SelfConsistency"
+    },
+    {
+      "slug": "golden-set",
+      "label": "GoldenSet"
+    }
+  ],
+  "backlinks": []
+}

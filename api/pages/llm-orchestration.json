@@ -81,6 +81,10 @@
     {
       "slug": "model-tier",
       "label": "Model Tier"
+    },
+    {
+      "slug": "planner-executor-pattern",
+      "label": "Planner-Executor Pattern"
     }
   ]
 }

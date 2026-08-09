@@ -276,6 +276,10 @@
       "label": "Proprietary Large Language Models"
     },
     {
+      "slug": "reflection",
+      "label": "Reflection"
+    },
+    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
     },

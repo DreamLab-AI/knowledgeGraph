@@ -18651,6 +18651,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "blackboard-pattern",
+      "title": "Blackboard Pattern",
+      "qualityScore": 0.75
+    },
+    {
       "slug": "bletchley-declaration",
       "title": "Bletchley Declaration",
       "qualityScore": 0.74
@@ -21336,6 +21341,11 @@
       "qualityScore": 0.6
     },
     {
+      "slug": "planner-executor-pattern",
+      "title": "Planner-Executor Pattern",
+      "qualityScore": 0.75
+    },
+    {
       "slug": "planning-and-scheduling",
       "title": "Planning and Scheduling",
       "qualityScore": 0.72
@@ -21719,6 +21729,11 @@
       "slug": "redress-procedure",
       "title": "Redress Procedure",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "reflection",
+      "title": "Reflection",
+      "qualityScore": 0.75
     },
     {
       "slug": "regression",
@@ -27331,6 +27346,11 @@
       "slug": "response-time-prediction",
       "title": "Response Time Prediction",
       "qualityScore": 0.35
+    },
+    {
+      "slug": "retry-with-backoff",
+      "title": "Retry with Backoff",
+      "qualityScore": 0.75
     },
     {
       "slug": "reusable-content-template-scaffolds",

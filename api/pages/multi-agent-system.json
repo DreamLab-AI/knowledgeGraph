@@ -247,6 +247,10 @@
       "label": "BDI Model"
     },
     {
+      "slug": "blackboard-pattern",
+      "label": "Blackboard Pattern"
+    },
+    {
       "slug": "collective-intelligence-system",
       "label": "Collective Intelligence System"
     },

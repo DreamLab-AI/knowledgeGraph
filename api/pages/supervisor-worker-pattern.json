@@ -71,5 +71,14 @@
       "label": "Subagent"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "blackboard-pattern",
+      "label": "Blackboard Pattern"
+    },
+    {
+      "slug": "planner-executor-pattern",
+      "label": "Planner-Executor Pattern"
+    }
+  ]
 }

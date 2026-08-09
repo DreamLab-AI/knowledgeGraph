@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:c9ac3f5c21ecfedf838cc13b8bb9b79f7857e79af2c4c09d104e02cf242fe25b",
+  "title": "Retry with Backoff",
+  "slug": "retry-with-backoff",
+  "public": true,
+  "classIri": "urn:ngm:class:retry-with-backoff",
+  "domain": "infrastructure",
+  "definition": "A resilience strategy for handling transient failures in which a failed operation is attempted again after a deliberately growing delay, rather than immediately or at a fixed interval. Each successive retry waits longer \u2014 commonly the delay doubles \u2014 so that a system experiencing a temporary fault or overload is given increasing time to recover and is not hammered by a tight loop of identical requests. Randomised jitter is usually added to the delay so that many clients failing at once do not synchronise their retries into repeated coordinated bursts, and a cap on attempts or total elapsed time prevents the strategy from waiting forever on a failure that is not in fact transient.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:fallback",
+      "label": "Fallback"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rollback",
+        "label": "Rollback"
+      },
+      {
+        "id": "urn:ngm:class:guardrail",
+        "label": "Guardrail"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "fallback",
+      "label": "Fallback"
+    },
+    {
+      "slug": "rollback",
+      "label": "Rollback"
+    },
+    {
+      "slug": "guardrail",
+      "label": "Guardrail"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "AgenticWorkflow"
+    }
+  ],
+  "backlinks": []
+}

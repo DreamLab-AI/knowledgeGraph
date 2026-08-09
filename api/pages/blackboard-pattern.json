@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:b9ea829e77bc4d85b88adf164f945743e12f315d508621a7c41264c75cf61077",
+  "title": "Blackboard Pattern",
+  "slug": "blackboard-pattern",
+  "public": true,
+  "classIri": "urn:ngm:class:blackboard-pattern",
+  "domain": "artificial-intelligence",
+  "definition": "A coordination architecture in which multiple specialised agents collaborate not by messaging each other directly but by reading from and writing to a shared, structured workspace \u2014 the blackboard. Each agent watches the blackboard for a state it can act on, contributes its partial result back to the shared space, and lets other agents build on that contribution in turn, so a solution accretes incrementally through many opportunistic updates rather than through a fixed pipeline. The pattern decouples the collaborators from one another: an agent needs to understand only the blackboard's contents, not the identity, order, or availability of its peers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multi-agent-orchestration",
+      "label": "Multi-Agent Orchestration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:memory-bank",
+        "label": "Memory Bank"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supervisor-worker-pattern",
+        "label": "Supervisor-Worker Pattern"
+      },
+      {
+        "id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "multi-agent-orchestration",
+      "label": "MultiAgentOrchestration"
+    },
+    {
+      "slug": "memory-bank",
+      "label": "MemoryBank"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "MultiAgentSystem"
+    },
+    {
+      "slug": "supervisor-worker-pattern",
+      "label": "SupervisorWorkerPattern"
+    }
+  ],
+  "backlinks": []
+}

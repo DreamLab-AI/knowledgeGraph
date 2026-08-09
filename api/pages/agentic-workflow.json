@@ -485,6 +485,14 @@
       "label": "Progressive Disclosure Harnesses"
     },
     {
+      "slug": "reflection",
+      "label": "Reflection"
+    },
+    {
+      "slug": "retry-with-backoff",
+      "label": "Retry with Backoff"
+    },
+    {
       "slug": "single-turn-inference",
       "label": "Single-Turn Inference"
     },

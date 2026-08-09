@@ -109,6 +109,10 @@
       "label": "Fan-Out"
     },
     {
+      "slug": "planner-executor-pattern",
+      "label": "Planner-Executor Pattern"
+    },
+    {
       "slug": "subagent",
       "label": "Subagent"
     },

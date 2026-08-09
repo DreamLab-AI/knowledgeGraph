@@ -67,5 +67,10 @@
       "label": "DataPersistence"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "blackboard-pattern",
+      "label": "Blackboard Pattern"
+    }
+  ]
 }
