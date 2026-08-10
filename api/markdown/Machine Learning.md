@@ -324,6 +324,22 @@ public:: true
   - Leading research venues include [[ICML]], NeurIPS, and ICLR, which collectively set research directions and disseminate benchmark results.
   - [[Bayesian Optimisation]] is a widely-used ML sub-technique for automated hyperparameter search across model families.
 
+- ### Current Landscape (2026)
+  - The field has pivoted from raw pretraining scaling towards inference-time (test-time) compute and explicit reasoning: frontier "reasoning" models such as GPT-5.1/5.2, Google's Gemini 3.1 Pro and Anthropic's top model now dynamically adjust reasoning effort, with Stanford HAI's 2026 AI Index reporting SWE-bench Verified performance rising from roughly 60% in 2024 to near 100% in 2025 and MLE-bench agent success climbing from about 17% to 64.4% by early 2026.
+  - Benchmarks that were previously well above machine capability have saturated: leading models now meet or exceed human baselines on GPQA Diamond (PhD-level science), MMMU (multimodal) and competition maths (AIME/MathArena), with the top 15 models clustered above 87% on MMLU-Pro as of early 2026.
+  - Industry produced over 90% of notable frontier models in 2025, and US and Chinese labs have repeatedly traded the lead — DeepSeek-R1 briefly matched top US systems in February 2025, and as of March 2026 the gap between the leading US and Chinese models was as little as 2.7%.
+  - The frontier is broadening beyond text into agentic tool-use (still brittle over 20+ step long-horizon tasks), World Foundation Models, physical/robotics foundation models, and a rise of small and specialised foundation models plus neurosymbolic/causal hybrids that pair deep learning with deterministic rules.
+  - Regulation matured sharply: the EU AI Act became broadly applicable on 2 August 2026 with the AI Office holding GPAI enforcement powers, GPAI systemic-risk obligations (10^25 FLOP presumption) live since August 2025 under a July 2025 Code of Practice, and Foundation Model Transparency Index penalties triggering 2 August 2026; standards such as ISO/IEC 42001 and the NIST AI RMF are now widely cited by organisations.
+  - Safety and governance frameworks tightened, with Google DeepMind publishing a third iteration of its Frontier Safety Framework (17 April 2026) adding Critical Capability Levels for harmful manipulation and misaligned ML R&D acceleration.
+  - Open challenges as of 2026 remain acute: hallucination rates across 26 top models range from 22% to 94%, documented AI incidents rose to 362 in 2025 (up from 233), safety collapses under adversarial jailbreaks, average transparency scores fell to 40, and regulators struggle to cover agentic runtime behaviour and inference-time compute that existing pretraining-focused thresholds do not capture.
+
+- ### References
+  - 1. Stanford HAI (2026). The 2026 AI Index Report — Technical Performance & Responsible AI. https://hai.stanford.edu/ai-index/2026-ai-index-report
+  - 2. European Commission (2026). AI Act — Regulatory framework for AI (Regulation (EU) 2024/1689). https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 3. Google DeepMind (2026). Strengthening our Frontier Safety Framework (third iteration, updated 17 April 2026). https://deepmind.google/blog/strengthening-our-frontier-safety-framework/
+  - 4. Bommasani et al. (2025). The 2025 Foundation Model Transparency Index. https://arxiv.org/html/2512.10169v1
+  - 5. Pistillo et al. (2025). Governing AI Beyond the Pretraining Frontier. https://arxiv.org/html/2502.15719v1
+
 - ### Provenance
   - sources:: ISO/IEC 23053:2022; NIST AI RMF 1.0; Bishop, *Pattern Recognition and Machine Learning* (2006); Goodfellow et al., *Deep Learning* (2016); LeCun, Bengio & Hinton, *Deep Learning* (Nature, 2015)
   - updated:: 2026-06-13

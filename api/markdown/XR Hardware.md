@@ -319,6 +319,23 @@ public:: true
   - Regulatory considerations include electromagnetic emissions compliance (FCC, CE marking), optical safety standards for display luminance and retinal exposure (IEC 62471), and health and safety guidelines for extended wear and motion sickness mitigation.
   - The [[Khronos Group]] ecosystem also includes [[VULKAN]] (low-overhead graphics API leveraged for XR rendering pipelines) and [[OpenCL]] for heterogeneous compute on XR SoCs.
 
+- ### Current Landscape (2026)
+  - Samsung's Galaxy XR (formerly Project Moohan) launched in the US on 22 October 2025 at $1,799 as the first device on Google's Android XR OS, pairing a Snapdragon XR2+ Gen 2 with dual 3,552x3,840 micro-OLED panels (29M pixels), eye/iris tracking and deep Gemini spatial-AI integration.
+  - Apple refreshed the Vision Pro with an M5-chip variant in late 2025, keeping the class-leading micro-OLED displays and visionOS while remaining a premium media and productivity device rather than a gaming headset.
+  - Display-less AI smart glasses became the dominant XR form factor: the segment shipped roughly 7.25M units in 2025 (about half of all XR shipments) and surged 167% year-on-year in Q1 2026 to around 2.25M units, with Meta holding about 69% market share via its EssilorLuxottica/Ray-Ban partnership.
+  - Meta opened the display-glasses era with the Meta Ray-Ban Display ($799, launched 30 September 2025), the first full-colour waveguide inside a Ray-Ban frame, controlled by a wrist-worn Neural Band that reads EMG gestures; the second-gen displayless Ray-Ban Meta launched alongside at $379.
+  - The overall XR market shipped about 14.5M devices in 2025 (up 41.6% YoY) and was valued near $20.4bn, with IDC forecasting screenless smart glasses alone to reach roughly 13.6M units in 2026 and 27.3M by 2030.
+  - Optical see-through display glasses from XREAL, VITURE and RayNeo (TCL) matured on Sony's latest micro-OLED, with the VITURE Beast and XREAL One Pro (both around 87-88g) shipping in 2026 and brightness reaching about 1,250 nits.
+  - True see-through AR remains a frontier: Meta's Orion prototype demonstrated silicon-carbide waveguides, micro-LED projectors and an approximately 70-degree field of view but stays an internal dev kit (about $10,000 build cost), with a productised successor generally forecast for 2027-2028.
+  - A wave of 2026 hardware is queued, including Valve's Steam Frame, the ultralight Bigscreen Beyond 2 (107g PC VR), XREAL's Project Aura and Samsung's confirmed Android XR smart glasses, while Meta's next mainstream Quest ("Phoenix") slipped to 2027.
+
+- ### References
+  - 1. Road to VR (2025). Samsung Android XR Headset Gets Price, Specs & Release Date. https://roadtovr.com/samsung-galaxy-xr-headset-price-specs-release-date/
+  - 2. VR.org (2026). Upcoming VR Headsets 2026: New Releases and What's Coming Next. https://vr.org/upcoming-vr-headsets-2026
+  - 3. Treeview Studio (2026). XR & Smart Glasses Market Statistics Report (2026). https://treeview.studio/blog/xr-spatial-computing-smart-glasses-market-statistics-report
+  - 4. IDC (2026). Smart Glasses Surge: The XR Market Is Rewriting Its Own Rules. https://www.idc.com/resource-center/blog/smart-glasses-surge-the-xr-market-is-rewriting-its-own-rules/
+  - 5. Youngju (2026). Smart Glasses & AR 2026 - Meta Orion / Ray-Ban Meta / Vision Pro 2 / Snap Spectacles Deep Dive. https://www.youngju.dev/blog/culture/2026-05-16-smart-glasses-ar-2026-meta-orion-ray-ban-meta-vision-pro-2-snap-spectacles-halliday-deep-dive.en
+
 - ### Provenance
   - sources:: Khronos OpenXR specification; IEEE VR conference proceedings; Meta Quest developer documentation; Microsoft HoloLens 2 technical documentation; industry analysis (IDC, Counterpoint Research)
   - updated:: 2026-06-13

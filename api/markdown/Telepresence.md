@@ -358,6 +358,22 @@ public:: true
   - domain:: spatial-computing
   - maturity:: established
 
+- ### Current Landscape (2026)
+  - At Google I/O in May 2025, Google rebranded Project Starline as Google Beam, an AI-first 3D video-communication platform that uses a state-of-the-art volumetric video model, a six-camera array and a custom light field display to render a life-sized, glasses-free 3D participant with millimetre-level head tracking at 60fps.
+  - HP Dimension with Google Beam, the first commercial Beam device, was announced at InfoComm in June 2025 and began shipping to early enterprise customers (Deloitte, Salesforce, Citadel, NEC and Duolingo) later that year, integrating with Google Meet and Zoom and adding an AI real-time speech-translation mode that preserves the speaker's voice and expressions.
+  - Headset-based telepresence advanced sharply with Apple's visionOS 26 (previewed June 2025), which rebuilt Vision Pro Personas on Gaussian-splatting volumetric rendering for far higher fidelity (accurate hair, lashes and a full side profile) and shared spatial experiences for up to five co-located or remote FaceTime participants; academic measurement (ACM, 2024) found FaceTime spatial personas run under 0.7 Mbps via semantic, visibility-aware streaming.
+  - Meta's long-promised photorealistic Codec Avatars remained unshipped as of 2026, and with the Quest 4 reportedly cancelled, its next consumer headset ("Puffin"/Loma) slipped to late 2026, leaving Apple and Google ahead on realistic virtual presence.
+  - The mobile telepresence-robot segment kept growing, valued at roughly USD 498 million in 2025 and around USD 581 million in 2026 (CAGR near 15%), with 2024-2025 product refreshes including OhmniLabs' 4K AI auto-framing Ohmni Supercam (March 2025), Double Robotics' Double 4 (November 2024) and Ava Robotics' AI environmental-sensing integration with Cisco (January 2025).
+  - Consolidation and capital continued to reshape the field: 3C Groups took a majority stake in Blue Ocean Robotics (maker of the GoBe telepresence robot) in March 2025 to scale global commercialisation, while Logitech's simpler 2D "Project Ghost" booth was pitched at roughly USD 15,000-20,000, underscoring the price gap with true 3D systems.
+  - Open challenges as of 2026 centre on cost and accessibility (enterprise Beam and Vision Pro remain premium, non-consumer priced), the persistent gap between avatar-based and truly photorealistic capture, standardisation and interoperability across Meet/Zoom/FaceTime/Teams, and bandwidth and latency demands of real-time volumetric streaming.
+
+- ### References
+  - 1. Google (2025). Google Beam: Our AI-first 3D video communication platform. https://blog.google/innovation-and-ai/technology/research/project-starline-google-beam-update/
+  - 2. TechCrunch (2025). Google's 3D teleconferencing platform, now called Beam, will ship later in 2025. https://techcrunch.com/2025/05/20/googles-3d-teleconferencing-platform-now-called-beam-will-ship-later-in-2025/
+  - 3. Apple (2025). visionOS 26 introduces powerful new spatial experiences for Apple Vision Pro. https://www.apple.com/newsroom/2025/06/visionos-26-introduces-powerful-new-spatial-experiences-for-apple-vision-pro/
+  - 4. ACM (2024). A First Look at Immersive Telepresence on Apple Vision Pro. https://dl.acm.org/doi/pdf/10.1145/3646547.3689006
+  - 5. Data Bridge Market Research (2025). Global Telepresence Robot Market — Recent Developments. https://www.databridgemarketresearch.com/reports/global-telepresence-robot-market/recent-developments
+
 - ### Provenance
   - sources:: ITU-T F.730; IEEE 1918.1 Tactile Internet Standard; IETF RFC 7478 (WebRTC); ISO/IEC 23090 series; established computer science literature
   - updated:: 2026-06-13

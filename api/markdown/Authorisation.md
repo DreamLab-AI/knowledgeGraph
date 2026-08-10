@@ -291,6 +291,23 @@ public:: true
     - SOC 2 Trust Services Criteria (CC6) mandates logical access controls, which are implemented primarily through authorisation systems.
     - PCI DSS Requirement 7 ("Restrict access to system components and cardholder data by business need to know") is enforced through authorisation policies.
 
+- ### Current Landscape (2026)
+  - OAuth 2.1 has become the de facto baseline for new authorisation flows despite still being an IETF draft (draft-ietf-oauth-v2-1-15, 2 March 2026), with a working-group milestone to submit to the IESG in December 2026; it makes PKCE mandatory for all clients, removes the implicit and ROPC grants, requires exact redirect-URI matching, and points high-security deployments to sender-constrained tokens via DPoP.
+  - Two foundational RFCs landed in 2025 and now anchor the modern stack: RFC 9700 (OAuth 2.0 Security Best Current Practice, January 2025), which formally deprecated insecure grant types, and RFC 9728 (Protected Resource Metadata, April 2025), which lets resource servers advertise their authorisation servers.
+  - Authorisation for AI agents emerged as a distinct discipline: the Model Context Protocol authorisation spec was consolidated on OAuth 2.1 across successive revisions (2025-03-26 introduced OAuth 2.1, 2025-06-18 made the MCP server an OAuth resource server and mandated RFC 8707 Resource Indicators, 2025-11-25 shifted client identity from Dynamic Client Registration to Client ID Metadata Documents), and a 28 July 2026 revision promoted Enterprise-Managed Authorisation (EMA) to an official extension using an Identity Assertion JWT Authorisation Grant so a corporate IdP governs which agents reach which servers without per-user consent screens.
+  - Policy-decision interoperability reached a milestone when the OpenID Foundation's AuthZEN Authorization API 1.0 was approved as a Final Specification in January 2026, standardising the PEP-to-PDP request/response format so authorisation engines can be swapped without changing enforcement points; OpenFGA, Keycloak (with Cedar), Topaz and others now expose AuthZEN endpoints.
+  - The fine-grained authorisation engine market matured: OpenFGA was promoted to a CNCF Incubating project in October 2025, AWS's Cedar policy language reached v4.9 (March 2026) and underpins Amazon Verified Permissions, and SpiceDB (v1.50) continues the Google Zanzibar ReBAC lineage, with ReBAC, ABAC and hybrid PBAC models now the mainstream answer beyond coarse RBAC.
+  - Standards bodies and vendors formalised agent authorisation: NIST's NCCoE published a February 2026 concept paper on Software and AI Agent Identity and Authorization, the Coalition for Secure AI released an Agentic Identity and Access Management guidance paper (April 2026) advocating Zero Standing Privilege and RFC 8693 token exchange plus RFC 9396 Rich Authorization Requests, Microsoft Entra Agent ID reached general availability, and MCP-I / KYA-OS at the DIF is pushing DID- and Verifiable-Credential-based delegation.
+  - Open challenges as of 2026 centre on the delegation chain: proving who authorised an autonomous agent and bounding what it may do on behalf of which human, verifiable end-to-end across untrusting domains, alongside preventing confused-deputy and token-passthrough attacks, enforcing least-privilege scoping per tool call, and defending against prompt-injection-driven privilege escalation.
+
+- ### References
+  - 1. OAuth Working Group / IETF (2026). Specs and The OAuth 2.1 Authorization Framework (draft-ietf-oauth-v2-1-15). https://oauth.net/specs/
+  - 2. Descope (2026). Diving Into the MCP Authorization Specification (updated 28 July 2026). https://www.descope.com/blog/post/mcp-auth-spec
+  - 3. Let's Data Science / The New Stack (2026). Model Context Protocol Adds Enterprise Authorization Layer. https://letsdatascience.com/news/model-context-protocol-adds-enterprise-authorization-layer-03ebc385
+  - 4. Clerk (2026). Authentication Trends in 2026: Passkeys, AI Agents, and Edge (Part 2). https://clerk.com/articles/authentication-trends-in-2026-passkeys-ai-agents-and-edge-2
+  - 5. Zuplo (2026). Fine-Grained API Authorization: From RBAC to AuthZEN at the Gateway. https://zuplo.com/learning-center/fine-grained-api-authorization-rbac-authzen-gateway
+  - 6. Coalition for Secure AI (2026). Agentic Identity and Access Management. https://www.coalitionforsecureai.org/wp-content/uploads/2026/04/agentic-identity-and-access-control.pdf
+
 - ### Provenance
   - sources:: OWASP Top 10 (Broken Access Control); NIST SP 800-162; NIST SP 800-207; RFC 6749 (OAuth 2.0); RFC 9396 (Rich Authorisation Requests); XACML 3.0 OASIS Standard; Google Zanzibar paper (2019)
   - updated:: 2026-06-13

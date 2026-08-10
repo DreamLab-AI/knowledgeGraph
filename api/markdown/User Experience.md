@@ -308,6 +308,22 @@ alias:: UserExperience
     - Experience sampling methodology
     - Retention and churn cohort analysis
 
+- ### Current Landscape (2026)
+  - The competitive frame shifted in late 2025 from a single reference platform to a two-OS contest: Samsung's Galaxy XR (formerly Project Moohan) shipped on 21 October 2025 at USD 1,799 as the first Android XR headset, running a Snapdragon XR2+ Gen 2 with 4K-per-eye displays, directly challenging Apple's visionOS-based Vision Pro.
+  - AI-native, conversational UX is now the primary differentiator: Android XR (first previewed December 2024, expanded at Google I/O in May 2025) is positioned as "the first Android platform built for the Gemini era", where gaze, hand and voice are fused with a context-aware Gemini agent that can see the wearer's view, organise floating windows and drive apps on the user's behalf.
+  - Interaction conventions have largely converged: eye-gaze focus plus a thumb-forefinger pinch to select is now the de-facto primary gesture across both Vision Pro and Galaxy XR, and both platforms default to passthrough-first with full immersion as opt-in rather than the default state.
+  - Design guidance has matured into concrete, published ergonomics rules: Apple's visionOS HIG codifies roughly 60pt minimum interactive targets (to absorb eye-tracking drift), a 1.0-1.5m default content distance and translucent "glass" materials, while Google's Android XR Spatial UI guidelines specify a 0.75-5m panel depth range, panels centred around 1.75m with content in the central 41 degrees of field of view, plus spatial-elevation tokens and "orbiter" components.
+  - Open standards advanced to reduce fragmentation: Khronos released OpenXR 1.1 on 15 April 2024 (consolidating extensions into core, adding runtime input-rebinding UI for accessibility and glTF controller render models), followed by the Spatial Entities extensions in June 2025 for plane/marker tracking, spatial anchors and cross-session persistence; Meta and Valve have deprecated their proprietary APIs in favour of OpenXR, and WebXR now uses OpenXR as its default backend in Chrome, Edge and Firefox.
+  - "Spatial" has also crossed back into flat-screen UX, with 2026 web and mobile products adopting layered glass panels, depth tokens, gaze-forgiving focus targets and parallax hierarchy as mainstream patterns rather than headset-only techniques.
+  - Open challenges as of 2026 remain physical comfort and safety (motion sickness from unstable parallax, vergence strain, neck fatigue), accessibility and contrast collapse where glass materials fail WCAG over busy backgrounds, and the trust/privacy questions raised by always-on, world-sensing AI agents that continuously interpret the user's surroundings.
+
+- ### References
+  - 1. Google (2025). Android XR: The Gemini era comes to headsets and glasses. https://blog.google/products-and-platforms/platforms/android/android-xr/
+  - 2. 9to5Google (2025). Samsung's Galaxy XR is the first Android XR headset, launching October 21. https://9to5google.com/2025/10/21/samsung-galaxy-xr-launch/
+  - 3. Apple (2026). Designing for visionOS - Human Interface Guidelines. https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos
+  - 4. Android Developers (2025). Spatial UI - XR Headsets and wired XR Glasses. https://developer.android.com/design/ui/xr/guides/spatial-ui
+  - 5. The Khronos Group (2024). Khronos Releases OpenXR 1.1 to Further Streamline Cross-Platform XR Development. https://www.khronos.org/news/press/khronos-releases-openxr-1.1-to-further-streamline-cross-platform-xr-development
+
 - ### Provenance
   - sources:: ISO 9241-210:2019; Nielsen & Molich (1990) usability heuristics; Norman (1988) The Design of Everyday Things; W3C WCAG 2.1; Hassenzahl (2003) hedonic quality model; Oculus VR Design Guidelines
   - updated:: 2026-06-13

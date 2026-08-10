@@ -317,6 +317,23 @@ public:: true
   - **ROS sensor_msgs/Imu** — de facto robotics interface message defining the data structure for IMU output (orientation quaternion, angular velocity, linear acceleration, covariance matrices); part of the Robot Operating System ecosystem feeding [[SLAM]] and [[Sensor Fusion]] pipelines.
   - Key standards bodies: IEEE Aerospace and Electronic Systems Society (AESS), RTCA (aviation), SAE International (automotive).
 
+- ### Current Landscape (2026)
+  - At CES 2026 Bosch Sensortec unveiled its BMI5 platform (BMI560/BMI563/BMI570) built on a new MEMS architecture with sub-0.5 ms latency, ~0.6 µs time increments and 1 ns timing resolution, plus an on-sensor programmable edge-AI classification engine; the XR-optimised BMI560 targets head tracking, frame prediction and SLAM, with high-volume production slated for Q3 2026.
+  - Bosch also announced the BMI423 IMU (±32 g / ±4000 dps range, 25 µA always-on draw, 2.5×3×0.8 mm LGA) with bone-conduction voice-activity detection, sampling now and shipping via distribution in Q3 2026.
+  - STMicroelectronics extended its third-generation MEMS line: the LSM6DSV80X 6-axis IMU began distribution in November 2025, building on the LSM6DSV family's embedded Sensor Fusion Low Power (SFLP), machine-learning core and Qvar charge-variation sensing for head tracking and spatial audio in XR and hearables.
+  - Automotive-grade IMUs advanced with Murata's SCH1633-D05 (SCH1600 family), announced May 2026 for autonomous driving, ADAS and humanoid robotics, delivering ceramic-grade temperature stability (offset below 0.15 °/s) in a plastic SOIC package with factory calibration; the consumer-grade SCH16T-K20 (shown January 2026) pushed accelerometer noise density to ~33 µg/√Hz and gyro bias instability to 0.3 °/h.
+  - MEMS is closing the gap on fibre-optic and ring-laser gyros: Honeywell's all-silicon HG3900 tactical/near-navigation-grade IMU claimed a 20x performance improvement over the HG1900 and completed US Army/NTA environmental testing in 2025, with design verification in 2026 and initial production in 2027.
+  - On the algorithms side, camera-less inertial odometry matured — the MARIO framework (CVPR 2026) fused a primary IMU with magnetometer, barometer and a secondary IMU already present on commercial AR glasses to cut positional drift by up to 42% on the large Nymeria dataset.
+  - Open challenges as of 2026 remain long-horizon drift and bias-instability in fully inertial (GNSS/camera-denied) tracking, temperature-dependent offset without per-unit calibration, and balancing always-on edge-AI motion classification against microamp-level power budgets for glasses and hearables.
+
+- ### References
+  - 1. Embedded.com (2026). Bosch Sensortec Debuts Motion Sensor Platform at CES. https://www.embedded.com/bosch-sensortec-debuts-motion-sensor-platform-at-ces/
+  - 2. Mouser Electronics (2025). STMicroelectronics' LSM6DSV80X 6-Axis IMU, Now at Mouser, Measures High-Impact Motion. https://www.mouser.com/newsroom/publicrelations-stmicroelectronics-lsm6dsv80x-2025final/
+  - 3. Murata Manufacturing (2026). Murata Launches High-Performance 6DoF IMU Optimised for Automated Driving. https://www.murata.com/en-global/news/sensor/gyro/2026/0526
+  - 4. Honeywell Aerospace (2025). MEMS the Word: Meet Our Near Navigation-Grade Tactical IMU (HG3900). https://www.honeywellaerospace.com/us/en/insights/articles/mems-the-word-meet-our-near-navigation-grade-tactical-imu
+  - 5. Li et al. (2026). MARIO: Motion-Augmented Real-Time Multi-Sensor Inertial Odometry (CVPR 2026). https://arxiv.org/html/2606.02996v1
+  - 6. MarketsandMarkets (2025). Inertial Measurement Unit (IMU) Market Trends & Outlook. https://www.marketsandmarkets.com/ResearchInsight/inertial-measurement-unit-market-future-outlook.asp
+
 - ### Provenance
   - sources:: IEEE 1559, IEEE Std 952, ROS sensor_msgs, PX4/ArduPilot documentation, Meta Quest developer documentation, Xsens MTi technical reference
   - updated:: 2026-06-13

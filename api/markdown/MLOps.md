@@ -259,6 +259,23 @@ public:: true
   - **NIST AI RMF** (Risk Management Framework, 2023) provides a governance overlay that MLOps tooling must support, particularly around documentation, testing, and deployment safeguards.
   - Platform ecosystems: AWS SageMaker, Google Vertex AI, Azure ML, and Databricks MLflow all provide integrated MLOps stacks implementing the full CI/CD/CT lifecycle; open-source alternatives include Kubeflow (CNCF), MLflow, and ZenML.
 
+- ### Current Landscape (2026)
+  - The 2024–2026 period saw MLOps split into a mature core stack (version everything, promotion gates, drift monitoring) and a fast-growing LLMOps layer for foundation models, adding prompt/version control, embedding freshness, RAG orchestration, hallucination/factuality metrics and token-cost management as first-class operational signals.
+  - MLflow 3.0 (Databricks, June 2025) made GenAI artefacts first-class with prompt tracing, LLM-as-judge quality scoring, expert feedback and production monitoring; the line has since advanced to MLflow 3.10 (integrated into Amazon SageMaker AI in May 2026) adding multi-turn tracing and built-in latency, token-use and quality dashboards.
+  - Kubeflow pushed further into LLM territory: 1.10 revamped the model registry and added KServe integration, and 1.11 (December 2025) shipped KServe 0.15.2 with vLLM support for reasoning models, tool calling, Llama 4 and Qwen 3, a governed Model Catalog, and KEDA event-driven autoscaling.
+  - The market consolidated around a handful of credible platforms — Databricks (Mosaic AI, MLflow, Unity Catalog governance), the three hyperscalers (AWS SageMaker, Azure ML, Google Vertex AI), plus Microsoft Fabric emerging as a fourth end-to-end contender in 2026 — while open-source cores MLflow, Kubeflow, W&B and ZenML remain the standard for teams with engineering depth.
+  - Estimates put the MLOps market at roughly 4.4–5.8 billion USD in 2026 with 38–46% CAGR forecasts through the early 2030s; the LLMOps-specific segment reached about 3.2 billion USD in 2025, growing at ~24% CAGR toward tens of billions by 2034.
+  - Governance and compliance shifted from optional to mandatory in enterprise evaluations, driven by the EU AI Act and sector rules in finance and healthcare; end-to-end lineage from raw source to prediction (e.g. Databricks Unity Catalog) is now a purchasing prerequisite, and platforms lacking audit trails, bias detection and explainability are being phased out.
+  - Open frontiers as of 2026 remain unsettled: agent harnesses and long-running-agent memory systems are in active flux, "context engineering" has emerged as a distinct discipline, MCP has stabilised as integration infrastructure, and evaluation-first development with full multi-step agent tracing is displacing "ship and pray" deployment.
+
+- ### References
+  - 1. ZenML (2025). What 1,200 Production Deployments Reveal About LLMOps in 2025. https://www.zenml.io/blog/what-1200-production-deployments-reveal-about-llmops-in-2025
+  - 2. ZenML (2025). Kubeflow vs MLflow vs ZenML: Which MLOps Platform Is the Best? (updated November 2025). https://www.zenml.io/blog/kubeflow-vs-mlflow
+  - 3. Mordor Intelligence (2026). Machine Learning Operations (MLOps) Market Size & Share. https://www.mordorintelligence.com/industry-reports/machine-learning-operations-mlops-market
+  - 4. Azumo (2026). MLOps Platform Comparison 2026: Databricks vs. SageMaker vs. Vertex AI. https://azumo.com/artificial-intelligence/ai-insights/mlops-platform-comparison-2026
+  - 5. Braintrust (2026). Best LLMOps platforms in 2026 compared. https://www.braintrust.dev/articles/best-llmops-platforms-2025
+  - 6. Kolekar, R. (2026). MLOps in 2026 — The Definitive Guide: tools, cloud platforms, architectures and a practical playbook. https://rahulkolekar.com/mlops-in-2026-the-definitive-guide-tools-cloud-platforms-architectures-and-a-practical-playbook/
+
 - ### Provenance
   - sources:: Google MLOps whitepaper (practitioners.google/guides/mlops); CD Foundation MLOps SIG; Sculley et al. "Hidden Technical Debt in Machine Learning Systems" (NIPS 2015); Kreuzberger et al. "Machine Learning Operations: A Survey" (2023); NIST AI RMF 1.0 (2023)
   - updated:: 2026-06-13

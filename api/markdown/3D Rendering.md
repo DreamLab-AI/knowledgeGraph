@@ -286,6 +286,22 @@ public:: true
     - Academy Software Foundation (ASWF) — governs OpenVDB, OpenEXR, MaterialX, OpenColorIO for VFX production.
     - W3C WebGPU Working Group — browser-based GPU standard.
 
+- ### Current Landscape (2026)
+  - Radiance-field rendering has gone mainstream: 3D Gaussian Splatting (Kerbl et al., SIGGRAPH 2023) now trains a scene in 10-30 minutes on a single RTX 5080 and rasterises at 120+ FPS in 4K, decisively displacing slower ray-marched NeRFs for real-time reconstruction while NeRFs retain edges in memory-efficiency and cross-scene priors.
+  - Standardisation arrived in 2026: Khronos announced the KHR_gaussian_splatting extension for glTF 2.0 in February 2026 (release-candidate stage, full ratification expected Q2 2026), while the Alliance for OpenUSD advances a Particle Fields schema for splats and OGC 3D Tiles 2.0 adds Gaussian splats as a first-class tile type.
+  - Real-time path tracing became production-grade: NVIDIA's RTX Kit (v2025.3) and the NvRTX 5.6 branch of Unreal Engine bring RTX Mega Geometry (ray tracing of full-quality Nanite geometry) and ReSTIR PT; the November 2025 "Bonsai" demo hit 60 FPS at 2160p (upscaled from 1080p) but required an RTX 5090.
+  - Neural rendering reshaped the pipeline: DLSS 4 added Multi Frame Generation (up to three generated frames per rendered frame on GeForce RTX 50-series) plus a transformer-based super-resolution and ray-reconstruction model, and RTX Neural Shaders now train tiny networks inside shaders for texture compression and material evaluation.
+  - Engine-level splat support shipped natively: Unity 6.2 and Unreal Engine 5.6 both include native Gaussian runtimes, with NVIDIA Omniverse carrying USD-native splats for simulation-grade digital twins.
+  - Research pushed splats past their early limits with relightable Gaussians (GS-IR, Relightable 3DGS), dynamic/4D temporal splats, animatable Gaussian avatars from Meta and Microsoft, and generative 3DGS from single prompts (Luma Genie, Tencent Hunyuan3D); optimisation work such as Faster-GS (CVPR 2026) cut training to under two minutes with ~5x speed-ups and 30% less VRAM.
+  - Capital and open challenges: World Labs raised roughly $1bn in February 2026 (backers including NVIDIA, AMD, Autodesk) to pursue spatial intelligence, but format fragmentation (PLY still dominant pre-ratification), relighting and material decomposition, level-of-detail streaming for large scenes on constrained devices, and editability of learned primitives remain unsolved frontiers.
+
+- ### References
+  - 1. The Future 3D (2026). The State of Gaussian Splatting in 2026: Standards and Tools. https://www.thefuture3d.com/blog/state-of-gaussian-splatting-2026/
+  - 2. Internet Pros (2026). 3D Gaussian Splatting 2026 - Neural Rendering Revolution. https://internet-pros.com/blog/gaussian-splatting-neural-rendering-2026/
+  - 3. NVIDIA Developer (2025). NVIDIA Releases RTX Neural Rendering Tech for Unreal Engine Developers (RTX Kit v2025.3). https://developer.nvidia.com/blog/nvidia-releases-rtx-neural-rendering-tech-for-unreal-engine-developers/
+  - 4. Digital Foundry (2025). RTX Mega Geometry in our hands: Nvidia's new UE5 path tracing demo. https://www.digitalfoundry.net/news/2025/11/rtx-mega-geometry-in-our-hands-nvidias-new-ue5-path-tracing-demo
+  - 5. Hahlbohm et al. (2026). Faster-GS: Analyzing and Improving Gaussian Splatting Optimization (CVPR 2026). https://openaccess.thecvf.com/content/CVPR2026/papers/Hahlbohm_Faster-GS_Analyzing_and_Improving_Gaussian_Splatting_Optimization_CVPR_2026_paper.pdf
+
 - ### Provenance
   - sources:: Established computer graphics literature (Shirley & Morley "Realistic Ray Tracing"; Akenine-Möller et al. "Real-Time Rendering"); Khronos Group specifications; ASWF documentation; GPU vendor technical documentation (NVIDIA, AMD, Intel); public research on NeRF and 3D Gaussian Splatting.
   - updated:: 2026-06-13

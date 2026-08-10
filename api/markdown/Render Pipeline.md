@@ -327,6 +327,24 @@ public:: true
   - **glTF 2.0** — Khronos transmission format defining PBR material parameters that map directly to fragment shader inputs in compliant pipelines.
   - **SPIR-V** — Khronos intermediate binary representation for [[Shader]] modules, consumed by Vulkan and WebGPU pipeline objects.
 
+- ### Current Landscape (2026)
+  - GPU-driven rendering crossed into GPU-orchestrated rendering: Microsoft shipped D3D12 Work Graphs 1.0 in the Agility SDK (1.613/1.614, 2024), letting a shader enqueue further GPU work without a CPU round-trip, and Unreal Engine 5.7 (2026) landed the first production engine integration, collapsing frustum/occlusion cull, LOD selection, material binning and indirect draw into a single graph (r.WorkGraphs.MeshDrawing), cutting transient GPU memory for the culling path by roughly 60-75%.
+  - Mesh Nodes extended Work Graphs to drive the rasteriser directly (D3D12 preview, July 2024, Agility SDK 1.715), turning graphs into GPU-scheduled amplification pipelines; AMD/NVIDIA demos reported large gains (a procedural-geometry case showed a ~64% FPS uplift and up to ~76x lower VRAM versus ExecuteIndirect).
+  - Neural rendering entered the standard pipeline: Microsoft added Cooperative Vectors to DirectX/HLSL under Shader Model 6.9 (preview announced January 2025, shipped in Agility SDK 1.717-preview, September 2025), exposing tensor/matrix-accelerator hardware from any shader stage so small neural networks can run per-pixel inside a pixel shader, worked cross-vendor with AMD, Intel, NVIDIA and Qualcomm.
+  - NVIDIA's RTX Kit built on this with RTX Neural Shaders and Neural Texture Compression (up to ~8x texture-memory reduction), initially exploiting Blackwell RTX 50-series tensor cores via the DirectX Cooperative Vectors path; DirectX Raytracing 1.2 (2025) added Opacity Micromaps and Shader Execution Reordering, cited at up to ~2x path-tracing gains.
+  - Unreal Engine's shading side advanced with MegaLights, a stochastic direct-lighting path presented at SIGGRAPH 2025, allowing orders of magnitude more dynamic shadow-casting area lights than the previous many-light budget allowed.
+  - Gaussian splatting became a first-class render primitive alongside meshes: Khronos (with OGC, Niantic, Cesium and Esri) added KHR_gaussian_splatting and the SPZ compression extension to glTF (announced August/September 2025), reaching release-candidate in February 2026 with ratification targeted for Q2 2026, while the Alliance for OpenUSD develops a Particle Fields schema for splats.
+  - Splat tooling matured through 2025-2026 (Luma AI and Polycam UE5 plugins, Houdini GSOPs, Chaos V-Ray/Vantage, FlashGS for 4K city-scale, Voyager streaming), and cross-vendor Vulkan pipelines emerged (nvpro vk_gaussian_splatting adding ray-traced 3DGRT/3DGUT hybrids; VkSplat training ~3.3x faster than CUDA+PyTorch).
+  - Open challenges as of 2026: hardware fragmentation for Work Graphs (Intel Arc Alchemist unsupported, RDNA2 non-recursive only, PS5 integration incomplete) keeps them opt-in with legacy fallbacks; splats still lack shadow casting and PBR-style relighting in most engine pipelines; and cross-vendor Cooperative Vector drivers, plus mixed splat-mesh-Nanite authoring workflows, remain immature.
+
+- ### References
+  - 1. Strayspark Studio (2026). Work Graph Rendering in UE5.7: Beyond Traditional Draw Calls. https://www.strayspark.studio/blog/work-graph-rendering-ue5-7-beyond-draw-calls
+  - 2. Microsoft DirectX Team (2024). D3D12 Work Graphs. https://devblogs.microsoft.com/directx/d3d12-work-graphs/
+  - 3. Microsoft DirectX Team (2025). D3D12 Cooperative Vector. https://devblogs.microsoft.com/directx/cooperative-vector/
+  - 4. NVIDIA Developer (2025). NVIDIA RTX Advances with Neural Rendering and Digital Human Technologies at GDC 2025. https://developer.nvidia.com/blog/nvidia-rtx-advances-with-neural-rendering-and-digital-human-technologies-at-gdc-2025/
+  - 5. Khronos Group / Digital Production (2025). 3D Gaussian Splats Officially Added to glTF Standard. https://digitalproduction.com/2025/09/02/3d-gaussian-splats-officially-added-to-gltf-standard/
+  - 6. The Future 3D (2026). The State of Gaussian Splatting in 2026: Standards and Ecosystem. https://www.thefuture3d.com/blog/state-of-gaussian-splatting-2026/
+
 - ### Provenance
   - sources:: Vulkan Specification 1.3 (Khronos); DirectX 12 documentation (Microsoft Learn); WebGPU W3C Working Draft; "Real-Time Rendering" 4th ed. (Akenine-Möller et al.); Apple Metal Best Practices Guide; OpenXR Specification 1.0 (Khronos)
   - updated:: 2026-06-13

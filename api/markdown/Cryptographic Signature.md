@@ -313,6 +313,23 @@ public:: true
   - **Side-channel attacks** — timing and power-analysis attacks can leak private key material from non-constant-time implementations; Ed25519 reference implementations are constant-time.
   - **Quantum threat** — Shor's algorithm would break ECDSA, Ed25519, and RSA-PSS on a sufficiently powerful quantum computer; NIST post-quantum migration is underway.
 
+- ### Current Landscape (2026)
+  - On 13 August 2024 NIST finalised its first post-quantum signature standards, FIPS 204 (ML-DSA, from CRYSTALS-Dilithium) and FIPS 205 (SLH-DSA, from SPHINCS+); the FALCON-derived FN-DSA (draft FIPS 206) remains unfinalised as of 2026, with publication expected late 2026 or early 2027.
+  - NIST IR 8547 (initial public draft, November 2024) sets the migration clock for classical signatures: RSA, ECDSA and EdDSA are deprecated after 2030 and disallowed after 2035, while NSA's CNSA 2.0 mandates ML-DSA-87 for national security systems with new products required to use CNSA 2.0 algorithms from 1 January 2027.
+  - The key-agreement half of the transition is largely solved: the X25519MLKEM768 hybrid is now the default in Chrome (since v124, April 2024), Firefox, Safari 26 and Edge, and Cloudflare telemetry reported at RWPQC 2026 that roughly 65% of non-bot traffic already negotiates ML-KEM, though origin servers lag near 10%.
+  - Post-quantum authentication has barely started: a June 2026 measurement study found 0% adoption of PQC or hybrid X.509 certificates in the wild, with TLS certificates still signed by RSA (~57%) and ECDSA (~43%), and no ML-DSA root chains into the Mozilla, Apple, Microsoft or Chrome trust stores.
+  - Because ML-DSA signatures and keys are roughly 40 times larger than ECDSA (a naive TLS swap adds ~14KB per handshake), Google Chrome and Cloudflare are pursuing Merkle Tree Certificates (MTCs) via the new IETF PLANTS working group rather than heavy X.509 chains, with a Chrome/Cloudflare feasibility experiment underway and CA onboarding phases planned for 2027.
+  - Let's Encrypt committed on 3 June 2026 to MTCs as its post-quantum Web PKI path (staging targeted late 2026, production 2027), and the IETF draft-ietf-tls-mldsa reached working-group last call around May 2026.
+  - Key frontier problems as of 2026 are operational, not cryptographic: no FIPS 140-3 validated module yet offers PQC in approved mode (with FIPS 140-2 validations moving to the Historical list on 21 September 2026), HSM firmware often lacks ML-DSA support, DNSSEC signatures no longer fit in UDP without fragmentation, and most organisations lack a cryptographic inventory of where signing actually happens.
+
+- ### References
+  - 1. NIST / CSRC (2024). Announcing Approval of Three FIPS for Post-Quantum Cryptography (FIPS 203/204/205). https://csrc.nist.gov/news/2024/postquantum-cryptography-fips-approved
+  - 2. NIST (2024). Transition to Post-Quantum Cryptography Standards (NIST IR 8547, initial public draft). https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf
+  - 3. Google Security Blog (2026). Cultivating a robust and efficient quantum-safe HTTPS (Merkle Tree Certificates / PLANTS). https://blog.google/security/cultivating-a-robust-and-efficient-quantum-safe-https/
+  - 4. Encryption Consulting (2026). PQC Migration Frameworks: What Changed Between March and June 2026 (Let's Encrypt MTCs, FIPS 140-3 gap). https://www.encryptionconsulting.com/pqc-migration-frameworks-updates-june-2026/
+  - 5. Evertrust (2026). Hybrid Post-Quantum Certificates: Why Your First PQC Deployment Is Not What You Think (draft-ietf-tls-mldsa, X25519MLKEM768 adoption). https://evertrust.io/blog/hybrid-post-quantum-certificates/
+  - 6. arXiv (2026). Measurement Study of Post-Quantum Readiness of the Internet: 2026. https://arxiv.org/html/2606.16473v1
+
 - ### Provenance
   - sources:: NIST FIPS 186-5; RFC 8032 (EdDSA); RFC 8017 (RSA-PSS); W3C Verifiable Credentials Data Model 2.0; BIP-340; NIST SP 800-57
   - updated:: 2026-06-13

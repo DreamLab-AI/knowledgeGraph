@@ -300,6 +300,24 @@ public:: true
   - **Shader Model Versioning** — DirectX Shader Models define capability tiers; SM 6.6 (DirectX 12 Ultimate) introduced resource binding, sampler feedback, and mesh/amplification shader tiers aligned with hardware capability.
   - **Cross-compilation Ecosystem** — SPIRV-Cross translates SPIR-V back to GLSL/HLSL/MSL; GLSLANG and DXC compile GLSL and HLSL to SPIR-V; Naga (Rust-native) handles WGSL, GLSL, HLSL, and SPIR-V interoperably for the [[WebGPU]] ecosystem.
 
+- ### Current Landscape (2026)
+  - Slang emerged as the defining cross-platform shading language of the period: NVIDIA donated it to the Khronos Group under the Slang Initiative (announced 21 November 2024, Apache 2.0, GitHub-hosted), moving it from single-vendor control to multi-vendor governance and a self-governing contributor model where core language decisions are made in the open without Khronos membership.
+  - Slang's single-source-to-many-targets compiler now emits SPIR-V (Vulkan), HLSL (Direct3D), GLSL (OpenGL), WGSL (WebGPU) and Metal Shading Language, with a WebAssembly-based live playground (~5MB) that compiles shaders locally in the browser; the 2024.14.x line added Metal and WGSL backends, and releases have continued steadily (v2025.18.2 in October 2025).
+  - Neural graphics became the dominant theme of 2025: Slang's automatic differentiation reached performance parity with hand-written CUDA on a Gaussian-splatting rasteriser, positioning shading languages as a vehicle for in-shader neural computation rather than purely classical rendering.
+  - Adoption is measurable — the 2026 Khronos Real-Time Shading Ecosystem Survey put Slang at roughly 34% usage (ranked #4), approaching HLSL's 41%, with GLSL still most widely used and direct SPIR-V usage at ~39%; Valve compiled its entire Source 2 HLSL codebase with Slang (shipping generated SPIR-V in Counter-Strike 2 and Dota 2) with only around 10 lines changed.
+  - WebGPU's shading language WGSL reached a W3C Candidate Recommendation ("1.0"-equivalent) milestone in 2025, with WebGPU shipping in Chrome (Windows, Mac, and beginning Intel Linux) and Safari on macOS 26, cementing WGSL as the browser-native successor to WebGL/GLSL ES.
+  - HLSL is being modernised and, for the first time, standardised: Microsoft and Google continued the Clang-based HLSL implementation (adding RWBuffer/RWStructuredBuffer support and an LLVM Offload Test Suite), and in early 2026 Ecma International formed Technical Committee 57 (TC57) to produce an open, royalty-free HLSL language specification.
+  - Rust-based GPU programming matured as an alternative front end — Rust GPU (SPIR-V for wgpu/Bevy/Vulkan) and Rust CUDA — alongside the Naga cross-compiler (WGSL/GLSL/SPIR-V/MSL/HLSL) that underpins the wgpu ecosystem.
+  - Open challenges as of 2026 include reconciling divergent atomics and binding-model semantics across backends (Slang added an Atomic type to paper over HLSL/MSL/WGSL differences), maturing still-experimental Metal and WGSL Slang backends, and delivering complete, interoperable open specifications for both HLSL (TC57) and WGSL (W3C) so multiple independent implementations can converge.
+
+- ### References
+  - 1. Khronos Group / shader-slang.org (2024). Khronos Hosts Open Source Slang Shading Language and Compiler. http://shader-slang.org/news/2024/11/21/khronos-hosts-open-source-slang-shading-language-and-compiler/
+  - 2. shader-slang.org (2024). There's a lot going on with Slang! (Metal, WGSL, playground, auto-diff). https://shader-slang.org/blog/2024/11/20/theres-a-lot-going-on-with-slang/
+  - 3. Khronos Group (2026). 2026 Real-Time Shading Ecosystem Survey Report. https://members.khronos.org/document/dl/36688
+  - 4. Chris Bieneman / Abolish \r\n (2026). State of HLSL: February 2026 (Clang implementation, Ecma TC57). https://www.abolishcrlf.org/2026/02/10/HLSLState.html
+  - 5. Shading Languages Symposium 2026 (2026). WGSL - Past, Present, and Future. https://www.youtube.com/watch?v=wY9NbaGYum8
+  - 6. GamingOnLinux (2024). Khronos Group takes over cross-platform Slang shading language from NVIDIA (Valve / Source 2). https://www.gamingonlinux.com/2024/11/khronos-group-takes-over-cross-platform-slang-shading-language-from-nvidia/
+
 - ### Provenance
   - sources:: Khronos GLSL specification; HLSL documentation (Microsoft Learn); W3C WGSL specification; Metal Shading Language Specification (Apple); Real-Time Rendering 4th ed. (Akenine-Möller et al.)
   - updated:: 2026-06-13

@@ -289,6 +289,22 @@ public:: true
   - Model cards (Mitchell et al., 2019) and datasheets for datasets (Gebru et al., 2021) are community norms for documenting intended use, limitations, and training data provenance.
   - The Chinchilla scaling laws (Hoffmann et al., 2022) provide empirical guidance for compute-optimal training, informing responsible resource allocation.
 
+- ### Current Landscape (2026)
+  - The frontier has consolidated around a handful of closed reasoning-native families: OpenAI shipped GPT-5 in August 2025 and moved to the GPT-5.6 Sol/Terra/Luna tiers (GA 9 July 2026), while Anthropic's Claude line progressed from Opus 4 (May 2025) to Opus 4.5 (Nov 2025) and Opus 5 (24 July 2026), and Google released Gemini 3 in November 2025.
+  - Reasoning has become table stakes rather than a differentiator: since OpenAI's o1 and DeepSeek-R1 (Jan 2025), almost every major lab now trains chain-of-thought models using reinforcement learning with verifiable rewards (RLVR) and inference-time (test-time) compute scaling.
+  - Mixture-of-experts is now the dominant frontier architecture, with total parameters exceeding one trillion while only tens of billions activate per token; open-weight MoE models such as DeepSeek and Qwen have largely closed the benchmark gap with GPT-4-class proprietary systems.
+  - The "DeepSeek moment" reshaped the market: capable open-weight releases from DeepSeek, Qwen, Moonshot (Kimi) and Mistral, plus OpenAI's own gpt-oss (120B/20B, Apache 2.0, August 2025 — its first open weights since GPT-2), have driven token prices down sharply.
+  - The centre of gravity is shifting from chatbots to agents: models are post-trained for tool use, long-horizon autonomy, structured outputs and coding, with benchmarks moving from the now-saturated SWE-bench Verified towards SWE-bench Pro and Terminal-Bench.
+  - Regulation has arrived: the EU AI Act's general-purpose AI obligations entered application on 2 August 2025, backed by the GPAI Code of Practice (published 10 July 2025), with the Commission's enforcement powers (including fines) commencing 2 August 2026 and systemic-risk duties triggered above the 10^25 FLOP training threshold.
+  - Reliability remains the frontier's open problem: reasoning models paradoxically hallucinate more, with every reasoning system tested on Vectara's dataset in May 2026 exceeding a 10% hallucination rate, keeping output grounding, verification layers and continual learning as unsolved challenges.
+
+- ### References
+  - 1. IBM (2026). A list of large language models (LLMs). https://www.ibm.com/think/topics/large-language-models-list
+  - 2. OpenAI (2026). GPT-5.6: Frontier intelligence that scales with your ambition. https://openai.com/index/gpt-5-6/
+  - 3. European Commission (2025). EU rules on general-purpose AI models start to apply. https://digital-strategy.ec.europa.eu/en/news/eu-rules-general-purpose-ai-models-start-apply-bringing-more-transparency-safety-and-accountability
+  - 4. ByteByteGo (2026). What's Next in AI: Five Trends to Watch in 2026. https://blog.bytebytego.com/p/whats-next-in-ai-five-trends-to-watch
+  - 5. Build Fast with AI (2026). Best AI Models June 2026: Every Major LLM Ranked & Compared. https://www.buildfastwithai.com/blogs/latest-ai-models-all-companies-2026
+
 - ### Provenance
   - sources:: NeurIPS, ICLR, ACL proceedings; Vaswani et al. (2017) "Attention Is All You Need"; Radford et al. GPT-2/3; Wei et al. (2022) "Emergent Abilities of Large Language Models"; Hoffmann et al. (2022) Chinchilla; established textbook knowledge in [[Natural Language Processing]] and [[Machine Learning]].
   - updated:: 2026-06-13

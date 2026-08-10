@@ -549,6 +549,23 @@ public:: true
 
   #blockchain #infrastructure #nodes #networks #protocols
 
+- ### Current Landscape (2026)
+  - Ethereum's rollup-centric base layer matured through three back-to-back upgrades: Dencun (March 2024, EIP-4844 blobs), Pectra (7 May 2025, 11 EIPs adding EIP-7702 account abstraction, a 2,048 ETH max effective balance via EIP-7251, and doubled blob throughput via EIP-7691), and Fusaka (3 December 2025), whose headline EIP-7594 PeerDAS lets validators sample blob data rather than download it in full, unlocking roughly 8x data-availability capacity.
+  - The community raised the L1 gas limit from 30M to 60M across 2025 (standardised by Fusaka's EIP-7935), the first significant increase since 2021, while new Blob Parameter Only (BPO) forks now allow blob counts to be raised between major hard forks rather than waiting for a coordinated upgrade.
+  - Layer 2 has become the dominant execution venue: by November 2025 rollups accounted for around 95% of Ethereum transaction throughput, aggregate L2 fees settled consistently below $0.02, and Base alone generated roughly $75.4M in 2025 revenue (about 62% of total L2 revenue); Arbitrum shipped its Timeboost and BoLD upgrades in 2025.
+  - Institutional adoption crossed from pilots to production: tokenised real-world assets on-chain reached around $18.6bn by October 2025 (tokenised treasuries, money-market funds, private credit), with BlackRock (BUIDL), Franklin Templeton and UBS running regulated products, and stablecoins processing an estimated $10.66tn in annual transaction volume as settlement infrastructure.
+  - Regulation consolidated the operating environment: the EU's MiCA became fully effective for crypto-asset service providers on 30 December 2024, and the US GENIUS Act was signed on 18 July 2025, creating the first federal stablecoin framework (1:1 reserve backing, no yield to holders, OCC oversight of nonbank issuers); implementing rules are due by 18 July 2026 with the Act taking effect by January 2027.
+  - Ethereum's forward roadmap shifted to a roughly six-monthly cadence with Glamsterdam (targeted Q4 2026, introducing block-level access lists for parallel execution) followed by Hegotá (2027), alongside a "Trillion Dollar Security" initiative and a multi-phase Interop Layer to standardise cross-rollup messaging.
+  - Open challenges as of 2026 centre on liquidity fragmentation across chains, custody-to-settlement integration gaps, immature institutional risk-management tooling, and unresolved legal enforceability of token-based ownership and creditor rights across jurisdictions.
+
+- ### References
+  - 1. ethereum.org (2026). Building on Ethereum in 2026: what has changed. https://ethereum.org/latest/building-on-ethereum-in-2026/
+  - 2. Ethereum Foundation (2026). Protocol Priorities Update for 2026. https://blog.ethereum.org/2026/02/18/protocol-priorities-update-2026
+  - 3. Everstake (2026). Pectra Upgrade One Year On: Impact on Ethereum Staking. https://everstake.one/resources/blog/pectra-anniversary-how-ethereum-changed-2026
+  - 4. AMINA Group (2026). Why 2026 Could Be Crypto's Most Important Year Yet. https://aminagroup.com/research/why-2026-could-be-cryptos-most-important-year-yet/
+  - 5. Latham & Watkins (2025). The GENIUS Act of 2025 Stablecoin Legislation Adopted in the US. https://www.lw.com/en/insights/the-genius-act-of-2025-stablecoin-legislation-adopted-in-the-us
+  - 6. Binance Square (2026). Layer 2 Heading into 2026: The End of Promises, the Start of Delivery. https://www.binance.com/en/square/post/35596680327793
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

@@ -477,6 +477,22 @@ public:: true
   - Natural language
   - Recommendation systems
 
+- ### Current Landscape (2026)
+  - Reasoning models became the default paradigm: DeepSeek released the open-weight R1 (20 January 2025, MIT-licensed, 671B/37B-active MoE) matching OpenAI's o1 at roughly 30x lower API cost, and OpenAI's GPT-5 (7 August 2025) unified fast generation and chain-of-thought reasoning into a single routed system, folding the earlier o1/o3 line into the mainline.
+  - The frontier consolidated around a handful of labs — OpenAI (GPT-5.x), Google DeepMind (Gemini 2.5 Pro, released 25 March 2025, native-multimodal MoE on TPU v5p), Anthropic (Claude Opus 4.5, November 2025, leading agentic coding and computer-use), xAI (Grok 4) and DeepSeek — competing on agentic coding (SWE-bench Verified), long context (1M+ tokens) and autonomous computer use (OSWorld).
+  - "MoE-ification" of the open ecosystem: nearly every major open-weight model released in 2025–2026 (Llama 4 Scout/Maverick, Qwen 3.x, Kimi K2, DeepSeek V3/V4, OpenAI's gpt-oss) moved from dense transformers to sparse mixture-of-experts, decoupling total parameters (memory) from active parameters (per-token compute).
+  - Open-weight parity: by mid-2026 open models from DeepSeek, Alibaba (Qwen), Meta (Llama) and Mistral score within single digits of closed frontier models on mainstream coding, extraction and summarisation tasks, at roughly 8–12x lower inference cost, leaving a narrowing closed-model advantage mainly in hardest multi-step reasoning and freshest world knowledge.
+  - Regulation crystallised around general-purpose AI: the EU AI Act's GPAI obligations entered into application on 2 August 2025, backed by the voluntary GPAI Code of Practice (published 10 July 2025, covering Transparency, Copyright, and Safety & Security), with a training-content disclosure template and a 10^25 FLOP threshold defining "systemic risk" models.
+  - Enforcement teeth arrived in 2026: from 2 August 2026 the European Commission and AI Office can enforce GPAI obligations with fines, models placed on the market before 2 August 2025 must comply by 2 August 2027, and providers submit documentation via the EU SEND platform.
+  - Open frontier challenges as of 2026 include the high memory footprint and low-utilisation inefficiency of sparse MoE serving, reliability and hallucination in long-horizon agentic workflows, evaluation saturation (benchmarks like AIME and SWE-bench being maxed out), and reconciling rapid open-weight proliferation with systemic-risk governance.
+
+- ### References
+  - 1. European Commission — Shaping Europe's Digital Future (2026). AI Act — regulatory framework and application timeline. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 2. European Commission (2025). The General-Purpose AI Code of Practice. https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+  - 3. Epoch AI (2025). What went into training DeepSeek-R1? https://epoch.ai/gradient-updates/what-went-into-training-deepseek-r1
+  - 4. DigitalOcean (2026). The MoE-ification of the Open Model Ecosystem, and What It Means for Inference Cost. https://www.digitalocean.com/community/tutorials/mixture-of-experts-inference-cost
+  - 5. IBM (2026). A list of large language models (LLMs). https://www.ibm.com/think/topics/large-language-models-list
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

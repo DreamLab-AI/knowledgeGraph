@@ -338,6 +338,23 @@ alias:: Public-Key Infrastructure, PublicKeyInfrastructure
   - **[[Post-Quantum Cryptography]] Migration** — existing RSA and ECC algorithms are vulnerable to Shor's algorithm on sufficiently powerful quantum computers. Migrating billions of deployed certificates and relying-party software is a decade-scale challenge.
   - **Short Certificate Lifetimes** — CA/Browser Forum has progressively reduced maximum TLS certificate validity (from 5 years to 398 days); proposals exist to reduce to 90 days, increasing automation requirements for certificate management (ACME protocol, RFC 8555).
 
+- ### Current Landscape (2026)
+  - In April 2025 the CA/Browser Forum passed Ballot SC-081v3 (29 votes for, none against; backed by Apple, Google, Mozilla and Microsoft), writing a phased cut of maximum public TLS certificate validity into the Baseline Requirements: 398 days until 14 March 2026, 200 days from 15 March 2026, 100 days from 15 March 2027 and 47 days from 15 March 2029.
+  - The first mandatory milestone is now live: the 200-day cap took effect on 15 March 2026, with major CAs front-running it (DigiCert and Sectigo moved to 199-day issuance in late February/March 2026); domain-control-validation reuse shrinks in lockstep, collapsing to just 10 days by 2029 and making manual renewal untenable versus roughly 8-9 renewals per certificate per year.
+  - A parallel deadline landed on 15 June 2026: publicly trusted CAs may no longer issue "dual-use" TLS certificates carrying the clientAuth EKU under the Chrome Root Program policy, ending the long-standing combined server/client-authentication certificate; Let's Encrypt, DigiCert, Sectigo and SwissSign had already announced withdrawal of such certificates.
+  - Post-quantum migration moved from planning to production sequencing: hybrid key exchange X25519MLKEM768 (ML-KEM, FIPS 203) is being deployed at scale by Cloudflare, Google and browser vendors to counter "harvest now, decrypt later", while ML-DSA (FIPS 204) signatures in X.509 were standardised as RFC 9881 and NIST added HQC as a backup KEM in March 2025.
+  - On 3 June 2026 Let's Encrypt (which issued 54.4% of public TLS certificates in Q1 2026) committed to Merkle Tree Certificates as its post-quantum Web PKI path, batching a single signature over millions of certificates to keep handshakes small; it targets a staging environment in late 2026 and production in 2027, aligning with Chrome, Cloudflare and the IETF PLANTS working group (draft-ietf-plants-merkle-tree-certs-04, May 2026).
+  - Major CAs published concrete cutover plans: DigiCert aims to complete core post-quantum infrastructure migration by 2029 (using x25519mlkem768 and ML-DSA-44 internally), Google set a 2029 target across Chrome, Android and Cloud, and Meta published a five-level PQ maturity model on 16 April 2026.
+  - Open challenges as of 2026 include a hard FIPS 140-3 gap (no FIPS 140-3 validated module offers PQC in approved mode, with FIPS 140-2 validations moving to Historical on 21 September 2026), HSM throughput limits for ML-DSA/ML-KEM, crypto-agility and inventory blind spots in private PKI, and legacy browsers, embedded systems and custom SDKs that cannot move to short-lived or PQC-safe certificates, all against NIST IR 8547 deadlines disallowing new RSA/ECC after 2030 and all use after 2035.
+
+- ### References
+  - 1. DigiCert (2025). TLS Certificate Lifetimes Will Officially Reduce to 47 Days. https://www.digicert.com/blog/tls-certificate-lifetimes-will-officially-reduce-to-47-days
+  - 2. CA/Browser Forum (2025). Ballot SC081v3: Introduce Schedule of Reducing Validity and Data Reuse Periods. https://cabforum.org/2025/04/11/ballot-sc081v3-introduce-schedule-of-reducing-validity-and-data-reuse-periods/
+  - 3. Temet AG (2025). PKI: Focus Areas 2025. https://www.temet.ch/en/publications/schwerpunkte_pki_2025/
+  - 4. Let's Encrypt / ISRG (2026). A Post-Quantum Future for Let's Encrypt. https://letsencrypt.org/2026/06/03/pq-certs
+  - 5. Encryption Consulting (2026). PQC Migration Frameworks: What Changed Between March and June 2026. https://www.encryptionconsulting.com/pqc-migration-frameworks-updates-june-2026/
+  - 6. DigiCert (2026). DigiCert's 2029 post-quantum infrastructure migration plan. https://www.digicert.com/blog/digicert-post-quantum-infrastructure-migration-plan
+
 - ### Provenance
   - sources:: IETF RFC 5280 (PKIX Profile), ITU-T X.509, CA/Browser Forum Baseline Requirements, NIST SP 800-57, NIST FIPS 203/204/205, W3C Verifiable Credentials Data Model, RFC 6962 (Certificate Transparency), eIDAS Regulation EU 910/2014
   - updated:: 2026-06-13

@@ -310,6 +310,23 @@ alias:: SensorData
   - **ISO 26262 and SOTIF** — functional safety standards governing the use of sensor data in automotive safety-critical systems; require systematic coverage of sensor failure modes, degraded-mode operation, and data quality monitoring.
   - **W3C SOSA/SSN Ontology** — the Sensor, Observation, Sample, and Actuator (SOSA) ontology and Semantic Sensor Network (SSN) ontology define semantic vocabulary for describing sensors, observations, and observed properties; enables interoperability across IoT and scientific data platforms.
 
+- ### Current Landscape (2026)
+  - The Khronos OpenXR Working Group ratified its Spatial Entities framework in June 2025 (OpenXR 1.1.49), delivering the first cross-vendor open standard for consuming environment-sensing data: XR_EXT_spatial_entity, XR_EXT_spatial_anchor, XR_EXT_spatial_plane_tracking, XR_EXT_spatial_marker_tracking, XR_EXT_spatial_persistence and _persistence_operations, with Meta, Google, Pico, Varjo, Unity and Godot committing support.
+  - OpenXR has continued to standardise raw environmental sensor streams through 2025, adding XR_META_spatial_entity_discovery for large-area retrieval (1.1.52, September 2025) and vendor mesh/scene extensions such as XR_BD_spatial_mesh and XR_BD_spatial_scene; mesh generation and object tracking remain the next extensions under discussion.
+  - Device sensor architectures have diverged sharply: Apple Vision Pro fuses roughly twelve cameras, dual depth sensors and IMUs on its dedicated R1 co-processor at sub-12 ms motion-to-photon latency but exposes only abstracted ARKit/RealityKit data, whereas Meta Quest 3 relies on RGB visual-inertial odometry (no dedicated depth sensor) yet grants developers direct access to raw RGB, depth and IMU streams.
+  - Silicon for sensor capture is shifting to three-layer stacked CMOS image sensors and compute-near-sensor direct time-of-flight LiDAR (detailed at Hot Chips 2025 and ISSCC-class 2025 work), with dToF modules now emitting fused depth, IR, reflectance, ambient and confidence streams at the edge, and Sony shipping lower-power ToF sensors aimed at AR headsets and smart glasses.
+  - Regulators have moved on always-on sensor capture: the G7 data protection authorities published a June 2026 compendium treating smart-glasses sensor fusion as terminal-equipment data under the EU ePrivacy Directive and UK PECR, and in July 2026 the European Commission ordered Google to open Android 18 ambient sensor feeds (camera, microphone, accelerometer) to rival assistants under consent gating.
+  - On-device processing has become the default privacy posture for depth, gaze and spatial-mapping data, with differential privacy applied to eye-tracking signals and bystander protections (face blurring, activity indicators) now standard mitigation, though GDPR/BIPA coverage of behavioural sensor data such as gaze and gait remains legally contested.
+  - Open challenges as of 2026 include the absence of harmonised global standards for LiDAR performance and validation, semantic labelling of scene meshes, cross-vendor persistence and sharing of spatial anchors in a global AR cloud, and reconciling raw-sensor developer access with tightening biometric-privacy obligations.
+
+- ### References
+  - 1. Khronos Group (2025). OpenXR Specification 1.1.49–1.1.52 Registry Releases (Spatial Entities extensions). https://github.com/KhronosGroup/OpenXR-Registry/releases
+  - 2. UploadVR (2025). OpenXR Spatial Entities Extensions Standardize Surfaces, Markers, Anchors & Persistence. https://www.uploadvr.com/openxr-spatial-entities-extensions/
+  - 3. Laser Focus World (2026). High-resolution direct time-of-flight LiDAR brings spatial intelligence to edge AI. https://www.laserfocusworld.com/test-measurement/article/55391021/high-resolution-direct-time-of-flight-lidar-brings-spatial-intelligence-to-edge-ai
+  - 4. Alibaba Product Insights (2026). Apple Vision Pro Vs Meta Quest 3 For Developers Building Spatial Computing Apps. https://www.alibaba.com/product-insights/apple-vision-pro-vs-meta-quest-3-for-developers-building-spatial-computing-apps-right-now.html
+  - 5. CNIL / G7 Data Protection Authorities (2026). Compendium of G7 DPAs' approaches on smart glasses. https://www.cnil.fr/sites/default/files/2026-06/g7_dpas_compendium_of_approches_on_smart_glasses.pdf
+  - 6. The Hacker News (2026). E.U. Orders Google to Open Android Mic, Camera and Sensors to Rival AI Assistants. https://thehackernews.com/2026/07/eu-orders-google-to-open-android-mic.html
+
 - ### Provenance
   - sources:: ROS documentation; IEEE 1588-2019 standard; W3C SOSA/SSN ontology specification; autonomous driving dataset documentation (NuScenes, Waymo, KITTI)
   - updated:: 2026-06-13

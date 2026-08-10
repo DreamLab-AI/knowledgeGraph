@@ -262,6 +262,21 @@ public:: true
   - **Basis Universal / KTX2** — Khronos GPU texture compression supercompression standard; a canonical pipeline output format for cross-platform texture delivery, supported in glTF 2.0 via the `KHR_texture_basisu` extension.
   - **OpenUSD Alliance** — Industry consortium (Apple, Adobe, Autodesk, NVIDIA, Pixar) accelerating USD adoption and toolchain interoperability across entertainment and industrial pipelines.
 
+- ### Current Landscape (2026)
+  - OpenUSD v26.03 (released 23 March 2026, a collaboration between Apple, Adobe and NVIDIA) made 3D Gaussian Splatting a first-class asset type via the new UsdVolParticleField3DGaussianSplat schema, shipping an hdParticleField reference renderer for usdview, a PLY-to-USD conversion script, and WebAssembly build support so USD scenes run in the browser.
+  - Khronos published the KHR_gaussian_splatting release candidate for glTF 2.0 on 4 February 2026 (backed by Google, NVIDIA, Apple and Bentley Systems), with full ratification expected Q2 2026; the algorithm-agnostic spec adds graceful point-cloud fallback plus proposed compression via Niantic Spatial's SPZ and Qualcomm's L-GSC, targeting up to 90% file-size reduction.
+  - The Alliance for OpenUSD reached ~46 members by SIGGRAPH 2025 and its Core Specification Working Group targeted v1.0 by end of 2025, with a new Physics WG defining rigid-body schemas, a Geometry WG drafting a BREP schema, and Materials WG coordination with MaterialX and OpenPBR; recent glTF PBR additions include diffuse transmission and volumetric scattering.
+  - Generative-AI asset creation has become a mainstream pipeline stage: tools such as Meshy 4, Hyper3D Rodin Gen-2.5, Tripo3D, Tencent Hunyuan 3D 2.0 and Luma produce PBR-textured, UV-unwrapped, auto-rigged meshes from text or image prompts in roughly 30-90 seconds, exporting GLB/FBX/USDZ straight into Unity, Unreal, Godot and Roblox, with API pricing as low as ~$0.80 per generation.
+  - Standards convergence extends to geospatial and XR: OGC 3D Tiles 2.0 adds Gaussian Splatting as a first-class tile type for Cesium web delivery, while NVIDIA's Omniverse spatial framework couples OpenUSD with RTX ray tracing over OpenXR/SteamVR/CloudXR and exposes Omniverse Cloud APIs (ChatUSD, RunUSD, USD-GDN Publisher) for non-destructive, cloud-native pipelines.
+  - Open frontier issues as of 2026 include lossy round-tripping between glTF, USD and FBX (unresolved tooling pain points flagged at the SIGGRAPH 2025 interoperability BOF), out-of-date PLY plug-ins lagging the new USD splat schemas, and the fact that AI-generated meshes still require manual retopology, UV repacking and PBR re-texturing before they are truly production-ready.
+
+- ### References
+  - 1. Metaverse Standards Forum / Khronos / AOUSD (2025). State of 3D Asset Interoperability using USD and glTF (SIGGRAPH 2025 BOF slides). https://metaverse-standards.org/wp-content/uploads/glTF-USD-BOF-SIGGRAPH-Vancouver-Aug25-FINAL.pdf
+  - 2. IK3D (2026). Splats Are Now Infrastructure: OpenUSD and glTF Just Made Gaussian Splatting Official. https://ik3d.fr/splats-are-now-infrastructure-openusd-and-gltf-just-made-gaussian-splatting-official/
+  - 3. CG Channel (2026). OpenUSD 26.03 adds support for 3D Gaussian Splats. https://www.cgchannel.com/2026/03/openusd-26-03-adds-support-for-3d-gaussian-splats/
+  - 4. The Future 3D (2026). The State of Gaussian Splatting in 2026: Standards and Tools. https://www.thefuture3d.com/blog/state-of-gaussian-splatting-2026/
+  - 5. Aukimi (2026). AI Mesh Generation 2026: Tripo, Meshy, Rodin in Production Pipelines. https://aukimi.com/ms/blog/ai-mesh-generation-game-pipelines-2026
+
 - ### Provenance
   - sources:: Khronos Group glTF specification; Pixar OpenUSD documentation; Unity Accelerator product documentation; Unreal Engine Derived Data Cache documentation; NVIDIA Omniverse technical overview; OpenAssetIO project (ASWF/Khronos); Academy Software Foundation OpenColorIO and MaterialX specifications.
   - updated:: 2026-06-13

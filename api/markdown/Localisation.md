@@ -339,6 +339,23 @@ alias:: Localization
   - **ISO 3691-4**: safety requirements for driverless industrial trucks; indirectly mandates reliable localisation for autonomous operation.
   - **IEEEE 802.15.4z (UWB)**: radio standard underpinning high-precision [[Ultra-Wideband]] ranging used in [[Indoor Positioning System]].
 
+- ### Current Landscape (2026)
+  - Visual foundation models have become the dominant lever for robust localisation: Voedisch and Scaramuzza's "LiDAR Registration with Visual Foundation Models" (RSS 2025) used DINOv2 surround-view descriptors to lift 6-DoF registration recall by +24.8 and +17.3 points on the NCLT and Oxford Radar RobotCar datasets, and feed-forward 3D models (DUSt3R, MASt3R, VGGT) now bootstrap dense SLAM front-ends directly from RGB.
+  - End-to-end learned dense SLAM matured through 2025-2026: FoundationSLAM (AAAI 2026 Oral) couples optical flow with foundation depth priors to run monocular dense tracking and mapping in real time at 18 FPS, while DINO-VO and ZeroVO push zero-shot, cross-camera visual odometry.
+  - NVIDIA consolidated a GPU-accelerated localisation stack in Isaac ROS: cuVSLAM (visual-inertial SLAM, ROS 2 Jazzy support landed October 2025), cuVGL for global re-localisation in prebuilt maps, FoundationStereo depth, and nvblox reconstruction; the January 2026 GR00T N1.6 humanoid release makes this vision-centric SLAM its core localisation layer, and PyCuVSLAM (2025) opened the library to Python users.
+  - 3D Gaussian Splatting overtook NeRF as the mapping substrate for photorealistic SLAM, with SplaTAM, MonoGS, DROID-Splat (ICCV 2025 workshop) and Gaussian-LIC2 (LiDAR-inertial-camera) as reference systems; a dedicated SLAM&Render benchmark (2025) and an October 2025 survey on collaborative multi-robot 3DGS SLAM signal the field's consolidation.
+  - Localisation is shifting from purely geometric to "AI-native" semantic SLAM: 2026 Chinese patents (Hefei Keda) integrate Vision-Language-Action models into the SLAM back-end for keyframe selection, dynamic-object filtering and loop closure, building hierarchical situational maps that support natural-language navigation goals.
+  - Radio positioning standards advanced sharply: 3GPP Release 18 added carrier-phase measurement and PRS/SRS bandwidth aggregation (up to 400 MHz) for centimetric accuracy, and Release 19's Sidelink Positioning Protocol was published as ETSI TS 138 355 V19.0.0 in October 2025, defining SL-TDOA/TOA/AoA/RTT device-to-device ranging plus seven positioning service levels, including millisecond-latency tiers explicitly for AMR cooperation and collision avoidance, with AI/ML for NLOS mitigation.
+  - Open frontiers as of 2026 remain robustness in degenerate, GNSS-denied and low-texture settings (planetary, subterranean, factory), long-term cross-session re-localisation against maps that are months or years old, and dynamic-scene consistency — motivating multimodal loop-closure pipelines such as MPRF (under review for ICRA 2026) that fuse DINOv2/SALAD visual retrieval with LiDAR geometric verification.
+
+- ### References
+  - 1. Voedisch, Cioffi, Cannici, Burgard & Scaramuzza / UZH Robotics and Perception Group (2025). LiDAR Registration with Visual Foundation Models (RSS 2025). https://rpg.ifi.uzh.ch/research_vo.html
+  - 2. Wu, Li, Tosi, Poggi, Zheng & Bai (2026). FoundationSLAM: Unleashing the Power of Depth Foundation Models for End-to-End Dense Visual SLAM (AAAI 2026 Oral). https://arxiv.org/abs/2512.25008v2
+  - 3. NVIDIA Developer (2026). Building Generalist Humanoid Capabilities with NVIDIA Isaac GR00T N1.6 — cuVSLAM, cuVGL, FoundationStereo and nvblox localisation stack. https://developer.nvidia.com/blog/building-generalist-humanoid-capabilities-with-nvidia-isaac-gr00t-n1-6-using-a-sim-to-real-workflow/
+  - 4. arXiv (2025). A Survey on Collaborative SLAM with 3D Gaussian Splatting. https://arxiv.org/html/2510.23988v1
+  - 5. ETSI / 3GPP (2025). Sidelink Positioning Protocol (SLPP), ETSI TS 138 355 V19.0.0 Release 19. https://www.etsi.org/deliver/etsi_ts/138300_138399/138355/19.00.00_60/ts_138355v190000p.pdf
+  - 6. Ericsson (2026). Recommended positioning technologies for 5G — 3GPP Release 16-19 positioning evolution. https://www.ericsson.com/en/reports-and-papers/white-papers/5g-positioning
+
 - ### Provenance
   - sources:: IEEE 1873-2015; Thrun, Burgard & Fox "Probabilistic Robotics" (MIT Press); Cadena et al. "Past, Present, and Future of SLAM" (IEEE TRO 2016); ROS REP-105
   - updated:: 2026-06-13
