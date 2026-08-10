@@ -289,6 +289,24 @@ public:: true
   - **Industry consortia** — the XR Association, SMPTE (ST 2110 for professional media transport), and the Metaverse Standards Forum all have working groups touching volumetric capture pipeline standardisation.
   - **Privacy & consent** — high-fidelity biometric reconstruction (face, body shape, gait) raises significant GDPR and CCPA implications; regulatory guidance on biometric data captured volumetrically is actively evolving.
 
+- ### Current Landscape (2026)
+  - The field has decisively pivoted from mesh-and-texture and NeRF toward dynamic 4D Gaussian Splatting: 4Dviews shipped native Gaussian-splat export in HOLOSYS+ in July 2025 (demoed at SIGGRAPH 2025, Vancouver), the first system to offer both mesh-and-texture and splat output from one capture workflow.
+  - Production-grade research matured through 2025: Eyeline Labs' Detail Enhanced Gaussian Splatting (SIGGRAPH Asia 2025) combines HDR-aware 4DGS with a diffusion-based detail-enhancement model for multi-performer free-viewpoint video up to 4K facial close-ups, and an open-source RGB-D/RGB pipeline from HSLU/EPFL (arXiv 2512.15719, December 2025) exports to PLY, MPEG V-PCC and SPLAT with Unity/Unreal and WebXR playback.
+  - Capture is being democratised: GeniusXR reports cutting rigs from Microsoft-era 300-camera, ~$8M stages down to ~28-camera setups (with smartphone capture emerging), while Clear Angle Studios' Volumetric Capture Rig (VCR) - a 40-camera genlocked half-dome used with Union VFX for relightable splat crowds - targets feature-film pipelines.
+  - Standards consolidated around MPEG-I: V3C (Visual Volumetric Video Coding) plus V-PCC/G-PCC saw growing integration (DVB BlueBook S101, Feb 2024), and in September 2025 Nokia introduced a standards-based real-time volumetric communication system using MPEG Immersive Video (MIV) and V3C without green-screen studios.
+  - Compression and streaming remain the frontier: proprietary codecs such as Arcturus's Accelerated Volumetric Video (AVV) and Brown University's PackUV framework (May 2026), which packs volumetric data into conventional video formats, target the persistent bandwidth and storage problem (roughly 45GB down to ~2GB per minute in cited pipelines).
+  - Live and broadcast deployment arrived: Milano Cortina 2026 partners demonstrated AI-powered volumetric sports replay (March 2026), with practical use also in government training simulations, medical education and retail planning.
+  - The market is valued in the ~$3.4-4.7bn range for 2025-2026 across analyst estimates, with 23-31% CAGR forecasts; key players include 4Dviews, Depthkit (Scatter), Evercoast, 8i, Arcturus Studios, Canon, Microsoft, Google and Unity.
+  - Open challenges as of 2026 centre on real-time low-latency streaming of splats, temporal stability and relightability of dynamic Gaussians in production lighting, standardised interchange for radiance-field formats (still in early JPEG/MPEG discussion), and headset-side demand softness (Vision Pro paused, Quest shipments down).
+
+- ### References
+  - 1. Charisoudis, A. et al. / HSLU & EPFL (2025). A Fast Volumetric Capture and Reconstruction Pipeline for Dynamic Point Clouds and Gaussian Splats (arXiv 2512.15719). https://arxiv.org/abs/2512.15719
+  - 2. Philip, J., Ma, L., Debevec, P. et al. / Eyeline Labs (2025). Detail Enhanced Gaussian Splatting for Large-Scale Volumetric Capture (SIGGRAPH Asia 2025). https://eyeline-labs.github.io/DEGS/
+  - 3. Digital Production (2025). Dual Export: 4Dviews Adds Gaussian Splatting to HOLOSYS+. https://digitalproduction.com/2025/07/30/dual-export-4dviews-adds-gaussian-splatting-to-holosys/
+  - 4. fxguide / fxpodcast (2026). Union VFX on production-ready Gaussian splat crowds (Clear Angle VCR rig). https://www.youtube.com/watch?v=Ybln1zAQDVc
+  - 5. openPR (2026). United States Volumetric Video Market - Nokia MIV/V3C, Milano Cortina 2026, PackUV milestones. https://www.openpr.com/news/4551652/united-states-volumetric-video-market-set-to-reach-us-25-784-46
+  - 6. Streaming Learning Center (2026). Emerging Markets for Video and Video Codecs - V-PCC/G-PCC and Arcturus AVV. https://streaminglearningcenter.com/articles/emerging-markets-for-video-and-video-codecs.html
+
 - ### Provenance
   - sources:: Microsoft Mixed Reality documentation; MPEG ISO/IEC 23090 series; Khronos OpenXR specification; Arcturus and 8i technical whitepapers; CyArk heritage preservation project; established computer vision and graphics literature.
   - updated:: 2026-06-13

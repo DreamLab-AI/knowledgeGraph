@@ -275,6 +275,23 @@ public:: true
   - Spatial computing productivity
   - Therapeutic and medical applications
 
+- ### Current Landscape (2026)
+  - Samsung's Galaxy XR (codenamed Project Moohan) launched on 21 October 2025 in the US and Korea at $1,799, becoming the first headset to ship Google's Android XR operating system; it runs Snapdragon XR2+ Gen 2 with 16GB RAM, dual 4K micro-OLED panels (3,552 x 3,840 per eye, ~27-29M pixels) and a tethered battery, undercutting Vision Pro by roughly half.
+  - Apple refreshed Vision Pro in October 2025 with the M5 chip and a new Dual Knit Band, raising the display to 120Hz and adding battery life while holding the price ($3,499 in the US); visionOS also gained native WebXR support, opening the platform to web-native spatial apps.
+  - Android XR, first announced by Google in December 2024, is the defining platform shift: it deeply integrates the Gemini multimodal AI assistant, runs all existing 2D Google Play apps in resizable spatial windows from day one, and supports OpenXR, WebXR and Unity for developers.
+  - Valve officially announced the standalone, streaming-first Steam Frame (formerly codenamed Deckard) in November 2025 as the successor to the Valve Index; it runs a VR build of SteamOS on Snapdragon 8 Gen 3, ships without base stations, and by mid-2026 was confirmed shipping "this summer" after RAM/storage shortages delayed pricing.
+  - The centre of gravity is shifting from bulky headsets to lightweight AR smart glasses: by mid-2026 roughly 42% of XR press coverage touched glasses, with Samsung readying Google-co-developed frames from Gentle Monster and Warby Parker, plus XREAL Project Aura and Snap Spectacles all targeting 2026.
+  - Meta has moved to a software-first bridge strategy, promoting Meta AI to a system-level voice assistant on Quest via the v2.6 update while teasing next-generation headsets (codenamed Puffin/Griffin) at Meta Connect on 23 September 2026; a consumer Quest 4 is now widely pushed to H2 2027 or later.
+  - Open challenges as of 2026 include weight and comfort (headsets still rely on external tethered battery packs and sit at 545-800g), sub-2.5-hour battery life, the persistent lack of a mass-market "killer app", high prices at the premium tier, and standards consolidation around OpenXR/WebXR as the industry bifurcates between AI-driven glasses and high-fidelity headsets.
+
+- ### References
+  - 1. TechCrunch (2025). Samsung takes on Apple's Vision Pro with new Galaxy XR headset. https://techcrunch.com/2025/10/22/samsung-takes-on-apples-vision-pro-with-new-galaxy-xr-headset/
+  - 2. 9to5Google (2025). Samsung's Galaxy XR is the first Android XR headset. https://9to5google.com/2025/10/21/samsung-galaxy-xr-launch/
+  - 3. Wikipedia (2025). Samsung Galaxy XR. https://en.wikipedia.org/wiki/Samsung_Galaxy_XR
+  - 4. UploadVR (2025). Valve Officially Announces Steam Frame, A "Streaming-First" Standalone VR Headset. https://www.uploadvr.com/valve-steam-frame-official-announcement-features-details/
+  - 5. VR.org (2026). The State of VR, AR & XR 2026: A News Data Study. https://vr.org/state-of-vr-2026
+  - 6. AnIntent (2026). Best AR/VR Headset 2026: Vision Pro M5 vs Quest 3S. https://anintent.com/blog/best-ar-vr-headset-buying-guide/
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

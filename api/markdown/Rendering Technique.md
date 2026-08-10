@@ -304,6 +304,23 @@ public:: true
   - **Physically Based Shading**: The PBR metallic-roughness workflow is de-facto standardised via glTF 2.0 (Khronos) for web and game assets.
   - **[[Khronos Group]]**: Maintains Vulkan, OpenGL, OpenCL, glTF — the primary open standards body for GPU rendering interfaces.
 
+- ### Current Landscape (2026)
+  - 3D Gaussian splatting (3DGS), first published at SIGGRAPH 2023, has become the dominant real-time radiance-field primitive, moving from research curiosity to production rendering in under three years and now sitting alongside mesh rasterisation and path tracing as a mainstream technique.
+  - Standardisation arrived in February 2026 when the Khronos Group released the KHR_gaussian_splatting extension for glTF 2.0 as a release candidate, paired with a KHR_gaussian_splatting_compression_spz extension built on Niantic Spatial's open-source SPZ container (up to ~90% smaller than PLY); ratification is targeted for Q2 2026, after which native support is expected in Three.js, Babylon.js, Unity and Unreal.
+  - MPEG opened a formal Explorations track (Part 45, Gaussian Splat Coding), publishing draft use cases and requirements through 2025 and common test conditions dated October 2025 and May 2026, signalling that a formal coding/compression standard is likely to follow the glTF interchange work.
+  - NVIDIA advanced the technique with 3D Gaussian Ray Tracing and the 3D Gaussian Unscented Transform (3DGUT), which add secondary lighting and support for nonlinear/fisheye cameras and rolling-shutter compensation, exposed through NuRec reconstruction APIs for physical-AI and autonomous-vehicle simulation; DLSS 4 (2025) pushed neural rendering (transformer-based ray reconstruction and multi-frame generation) into consumer real-time pipelines.
+  - Engine integration in 2026 remains third-party rather than first-party: Unreal Engine 5.5-5.7 relies on plugins such as Luma AI's free UE plugin and Jawset's Postshot, with no shipping Epic-native GS module; Epic's own MegaLights (stochastic many-light direct lighting) shipped in UE 5.5 for path-traced-quality lighting at scale.
+  - Real-time path tracing is now the target for high-end games and virtual production, with SIGGRAPH 2025's Advances in Real-Time Rendering course covering hybrid ReSTIR-plus-diffusion subsurface scattering, order-independent transparency and neural radiance caching (for example GSCache adapting 3DGS as a path-space radiance cache).
+  - Open frontiers as of 2026: splats bake lighting at capture time, so relightability, dynamic shadows and physically based response to scene lights are the most-requested gaps; DCC-grade editing (selections, boolean ops), mesh-splat-point-cloud hybrid pipelines, city-scale streaming, and mobile/embedded efficiency (e.g. LOD schemes like Octree-GS, foveation and hardware-algorithm co-design such as Lumina) remain active research.
+
+- ### References
+  - 1. Khronos Group / AEC Magazine (2026). Khronos announces glTF Gaussian Splatting extension (KHR_gaussian_splatting release candidate). https://aecmag.com/news/khronos-announces-gltf-gaussian-splatting-extension/
+  - 2. MPEG (2026). Explorations Part 45 - Gaussian Splat Coding (use cases, requirements, common test conditions). https://www.mpeg.org/standards/Explorations/45/
+  - 3. Strayspark Studio (2026). Gaussian Splatting in Unreal Engine 5: The Capture-to-Game Pipeline. https://www.strayspark.studio/blog/gaussian-splatting-unreal-engine-5-capture-to-game-pipeline
+  - 4. NVIDIA (2025). 3D Gaussian Splatting for Realistic Physical AI Simulations - 3D Gaussian Ray Tracing, 3DGUT and NuRec. https://www.nvidia.com/en-us/on-demand/session/siggraph25-s07/
+  - 5. Advances in Real-Time Rendering in Games, SIGGRAPH 2025 (2025). Course programme - real-time path tracing, subsurface scattering, MegaLights. https://advances.realtimerendering.com/s2025/index.html
+  - 6. Emergent Mind (2025). Neural Rendering Techniques - survey of NeRF, 3DGS, radiance caching and hardware-algorithm co-design (Lumina, MetaSapiens). https://www.emergentmind.com/topics/neural-rendering-techniques
+
 - ### Provenance
   - sources:: Scratchapixel.com; Physically Based Rendering: From Theory to Implementation (Pharr, Jakob, Humphreys); SIGGRAPH Advances in Real-Time Rendering course notes; NVIDIA Developer Blog; Khronos Vulkan / DXR specifications; Unreal Engine 5 documentation (Lumen, Nanite)
   - updated:: 2026-06-13

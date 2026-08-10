@@ -282,6 +282,23 @@ public:: true
   - **IEEE P2510 (IoT Data)** and **IEEE P7000-series (Ethics)**: adjacent standards whose ethical agent-behaviour clauses inform trust constraints in IAC design.
   - **W3C DID (Decentralised Identifiers)**: foundational specification for [[Agent Identity]] in cross-organisational IAC, enabling cryptographic verification of agent provenance without central registries.
 
+- ### Current Landscape (2026)
+  - The field has consolidated around a two-layer stack: Anthropic's Model Context Protocol (MCP, launched November 2024) for the vertical agent-to-tool axis, and Google's Agent2Agent (A2A, launched April 2025) for the horizontal agent-to-agent axis, with the two positioned as complementary rather than competing.
+  - Governance moved decisively to neutral foundations: Google donated A2A to the Linux Foundation on 23 June 2025 (50+ launch partners including AWS, Microsoft, Salesforce and SAP), and MCP moved under the Linux Foundation's Agentic AI Foundation (AAIF) in December 2025, with the current MCP spec dated 2025-11-25.
+  - A2A reached its v1.0 stable specification in January 2026 and by its one-year mark in April 2026 had 150+ backing organisations plus production deployments in financial services, insurance and supply chain; v1.0.1 (May 2026) added an extension mechanism (example extensions include Secure Passport, Timestamp and Traceability).
+  - Consolidation is under way: IBM's Agent Communication Protocol (ACP/BeeAI) has effectively merged into A2A, with IBM's own documentation now redirecting adopters, leaving A2A as the dominant inter-agent coordination standard.
+  - Supporting infrastructure has emerged around the core protocols: Cisco Outshift's AGNTCY (open-sourced March 2025, donated to the Linux Foundation July 2025) supplies agent discovery via OASF, cryptographic identity, SLIM messaging and observability, while WebMCP is a proposed W3C standard extending tool calls into the browser.
+  - Standards scrutiny intensified: an IETF "agentproto" Birds-of-a-Feather session convened at the Vienna meeting in July 2026 to push agent protocols towards a genuine RFC, using the Rosenberg-Jennings framework to flag unmet requirements such as cross-domain identity federation and user confirmation before irreversible actions.
+  - Open challenges as of 2026 remain substantial: agent discovery is still the hardest unsolved problem, and academic analysis finds governance primitives (voting, dissent preservation, deliberation) universally absent across MCP, A2A, ACP, ANP and the newer ERC-8004, alongside gaps in fine-grained delegated authorisation, multi-hop lifecycle management and cross-domain audit/attribution.
+
+- ### References
+  - 1. Ehtesham, A. et al. / arXiv (2025). A Survey of Agent Interoperability Protocols: MCP, ACP, A2A, and ANP. https://arxiv.org/html/2505.02279v1
+  - 2. Google Developers Blog (2025). Announcing the Agent2Agent Protocol (A2A). https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/
+  - 3. Boldare (2026). ACP Explained: AI Agent Orchestration in 2026. https://www.boldare.com/blog/agent-communication-protocol-acp-explained-what-it-is-and-why-it-matters/
+  - 4. Zylos.ai (2026). Agent Interoperability Protocols 2026: MCP, A2A, ACP and the Convergence. https://zylos.ai/research/2026-03-26-agent-interoperability-protocols-mcp-a2a-acp-convergence/
+  - 5. Tech Times (2026). Competing AI Agent Protocols Face IETF Standards Scrutiny at Vienna Meeting. https://www.techtimes.com/articles/320919/20260718/competing-ai-agent-protocols-face-ietf-standards-scrutiny-vienna-meeting.htm
+  - 6. arXiv (2026). Governance Gaps in Agent Interoperability Protocols. https://arxiv.org/html/2606.31498
+
 - ### Provenance
   - sources:: FIPA Specifications (FIPA 2002), KQML reference (Finin et al. 1994), Anthropic MCP specification (Nov 2024), Google A2A specification (Apr 2025), Wooldridge "An Introduction to MultiAgent Systems" (2009), LangGraph / AutoGen documentation
   - updated:: 2026-06-13

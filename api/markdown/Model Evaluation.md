@@ -276,6 +276,23 @@ public:: true
   - **IEEE 7003** — standard for algorithmic bias considerations, which feeds into fairness-focused model evaluation
   - **MLflow Model Registry** and **ONNX** provide standardised artefact interchange enabling reproducible evaluation across environments
 
+- ### Current Landscape (2026)
+  - Classic static benchmarks have saturated: by 2026 frontier models cluster at 88-94% on MMLU and 95-99% on HumanEval, so both have been retired from serious comparison and evaluation has shifted to harder discriminators such as GPQA Diamond, MMLU-Pro, AIME 2025, ARC-AGI-2 and Humanity's Last Exam (HLE).
+  - Abstract-reasoning evaluation moved fast: ARC-AGI-2 (2025) still separates models (GPT-5.5 around 85%, Gemini 3.1 Pro around 77% by May 2026), while ARC-AGI-3, launched 25 March 2026 as an interactive no-instructions game suite, left all frontier systems below 1% against a 100% human baseline.
+  - Agentic software-engineering evals became the headline signal, but contamination pushed the field from SWE-bench Verified (OpenAI's 500-task set, August 2024) to the multi-language SWE-bench Pro; scores collapse across the two (e.g. Claude Opus 4.5 around 80.9% Verified versus about 45.9% Pro), exposing how much the older set had leaked.
+  - Methodology maturity is the defining shift: practitioners now triangulate a static academic eval, a human-preference arena (LMArena, formerly LMSYS Chatbot Arena, with roughly 5 million votes and Bradley-Terry rating) and an agentic suite, and account for the "harness effect" where identical weights swing 10-20 points on SWE-bench purely from the agent scaffold.
+  - Contamination-resistant and dynamic benchmarks are now standard practice: LiveBench and LiveCodeBench refresh questions monthly from post-cutoff sources, and 2026 research such as the GEM systematic review formalised a four-tier contamination taxonomy and a Contamination Transparency Card for future releases.
+  - LLM-as-judge went mainstream for bespoke evaluation, reporting 80-90% agreement with human judgement at 500-5000x lower cost, productised through frameworks like DeepEval (G-Eval), Langfuse, Arize Phoenix and Amazon Bedrock Model Evaluation; meanwhile Hugging Face's Open LLM Leaderboard v2 was deprecated and cross-model indices such as the Artificial Analysis Intelligence Index took its place.
+  - Regulation hardened evaluation into a legal obligation: the EU AI Act's Article 55 requires providers of systemic-risk GPAI models to perform model evaluation under standardised protocols with documented adversarial testing, with the GPAI Code of Practice applying from 2 August 2025 and enforcement from 2 August 2026, prompting proposals (e.g. RAND's EU GPAI Model Evaluation Standards Task Force) to codify internal validity, external validity, reproducibility and portability as evaluation desiderata.
+
+- ### References
+  - 1. EU Artificial Intelligence Act (2025). Article 55: Obligations for Providers of General-Purpose AI Models with Systemic Risk. https://artificialintelligenceact.eu/article/55/
+  - 2. EU Artificial Intelligence Act (2025). Overview of the Code of Practice (GPAI). https://artificialintelligenceact.eu/code-of-practice-overview/
+  - 3. RAND Corporation (2025). Toward Best Practices for AI Evaluation and Governance: A Proposal for a European Union General-Purpose AI Model Evaluation Standards Task Force. https://www.rand.org/content/dam/rand/pubs/perspectives/PEA3600/PEA3624-1/RAND_PEA3624-1.pdf
+  - 4. Digital Applied (2026). LLM Benchmark Methodology 2026: Contamination and Reading Leaderboards. https://www.digitalapplied.com/blog/llm-benchmark-methodology-2026-contamination-leaderboard-guide
+  - 5. posttrainllm (2026). LLM Quality Benchmark Landscape, May 2026. https://posttrainllm.com/docs/research/quality_benchmarks_may_2026/
+  - 6. GEM Workshop, ACL Anthology (2026). Are LLM Benchmarks Already Contaminated? A Systematic Review. https://aclanthology.org/2026.gem-main.50/
+
 - ### Provenance
   - sources:: ISO/IEC 42001; NIST AI RMF; EU AI Act (2024); HELM (Liang et al. 2022); BIG-Bench (Srivastava et al. 2023); EleutherAI LM Evaluation Harness; Hugging Face Open LLM Leaderboard documentation; UK AISI pre-deployment evaluation framework
   - updated:: 2026-06-13

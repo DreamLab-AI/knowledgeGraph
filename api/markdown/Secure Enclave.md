@@ -312,6 +312,23 @@ public:: true
   - **Common Criteria and FIPS 140-3**
     - Evaluation frameworks used to certify enclave-adjacent security products (HSMs, TEE implementations); SEP and some SGX configurations are evaluated against these.
 
+- ### Current Landscape (2026)
+  - At WWDC 2025 Apple shipped the largest Secure Enclave developer expansion since 2013: with iOS 26, macOS 26 Tahoe and the rest of the 2025 releases, the SE now performs hardware-isolated post-quantum operations via SecureEnclave.MLKEM768/MLKEM1024 (FIPS 203) and MLDSA65/MLDSA87 (FIPS 204), while URLSession and Network.framework upgrade to quantum-secure TLS 1.3 by default using the X-Wing hybrid (ML-KEM768 + X25519).
+  - Apple's 2024 A18/M4 silicon introduced "Exclaves" and a hardware-rendered Secure Indicator Light, isolating sensitive services (camera/mic sensors, key material) into hardware-controlled regions that remain protected even if the main kernel is compromised.
+  - A real 2025 attack surfaced: the zero-click iMessage chain CVE-2025-31200 (CoreAudio heap corruption) plus CVE-2025-31201 (PAC bypass), disclosed publicly in June 2025, was chained to extract Secure Enclave-protected keys via CryptoTokenKit before Apple's quiet fix in iOS 18.4.1 (April 2025).
+  - Apple has hardened the SEP boot chain: A17 Pro (iPhone 15 Pro, 2023) added patchable-ROM firmware and the Trusted Boot Monitor now forms a second layer, so a working exploit needs a vulnerability in both SEP and the TBM; as of the 2025 Hexacon analysis the SEP patch slots remain effectively no-ops (no known unpatched flaw).
+  - The Apple Corecrypto Module OS 26 (sepOS across A14-A19 Pro and M1-M5) is progressing through FIPS 140-3 validation (Security Level 2, Physical Level 3), with the v18 module for iOS 18 receiving certificates 5305/5306 in June 2026.
+  - In the broader "secure enclave" market the centre of gravity has shifted to confidential-computing CVMs: Azure is retiring SGX-based DCsv2 instances by 30 June 2026 in favour of Intel TDX (5th-Gen Xeon Emerald Rapids) and AMD SEV-SNP, Linux 6.16 (mid-2025) merged TDX host support, and a 2025 IDC survey found 75% of organisations adopting confidential computing, largely for AI training and inference.
+  - Open frontier challenges as of 2026 include API fragmentation across SGX/TDX/SEV-SNP/Arm CCA (partly addressed by Open Enclave SDK and Enarx), reliance on unverified microcode/firmware in CVM TEEs, per-VM key isolation blocking confidential shared memory for multi-agent AI, and extending attestation to GPUs (NVIDIA H100/H200 confidential computing) for end-to-end confidential inference.
+
+- ### References
+  - 1. Apple (2024). The Secure Enclave — Apple Platform Security. https://support.apple.com/guide/security/the-secure-enclave-sec59b0b31ff/web
+  - 2. Salingue, Q. / Hexacon (2025). Inside Apple Secure Enclave Processor in 2025. https://www.hexacon.fr/slides/inside_secure_enclave_processor_in_2025.pdf
+  - 3. Full Disclosure / seclists (2025). CVE-2025-31200 & CVE-2025-31201 — 0-Click iMessage Chain to Secure Enclave Key Theft. https://seclists.org/fulldisclosure/2025/Jun/14
+  - 4. tessl / swift-ios-skills (2025). Secure Enclave — WWDC 2025 quantum-secure cryptography (ML-KEM/ML-DSA) reference. https://tessl.io/registry/dpearson2699/swift-ios-skills/3.7.0/files/skills/swift-security/references/secure-enclave.md
+  - 5. TS2 (2025). Trusted Execution Environment (TEE) Hardware News June–July 2025. https://ts2.tech/en/trusted-execution-environment-tee-hardware-news-june-july-2025/
+  - 6. Apple (2026). Secure Enclave Processor security certifications (Corecrypto Module OS 26). https://support.apple.com/guide/certifications/secure-enclave-processor-security-apc3a7433eb89/web
+
 - ### Provenance
   - sources:: Intel SGX Developer Guide; ARM Security Technology — Building a Secure System using TrustZone Technology; AMD SEV-SNP white paper; IETF RFC 9334 (RATS Architecture); Confidential Computing Consortium project documentation
   - updated:: 2026-06-13

@@ -287,6 +287,22 @@ public:: true
   - Evaluation conventions: Fréchet Video Distance (FVD) as the primary distribution-level metric; CLIP Score for text-video alignment; human-preference studies for qualitative assessment.
   - [[AI Safety]] considerations include watermarking, detection-resistant content policies, and model-card disclosure requirements that are increasingly mandated by platform operators.
 
+- ### Current Landscape (2026)
+  - Native single-pass audio-visual generation became the defining capability of 2025-2026: Google's Veo 3 (Google I/O, May 2025) and its Veo 3.1 successor generate synchronised dialogue, sound effects and ambience in the same pass, and this synced-audio approach is now matched by Kling and by ByteDance's Seedance line.
+  - The competitive frontier shifted decisively towards Chinese and enterprise players: as of mid-2026 the Artificial Analysis Video Arena is led by ByteDance Seedance 2.0, Alibaba's HappyHorse and Kuaishou's Kling 3.0, with Runway Gen-4.5 topping the physical-accuracy board and Kling O1 unifying 18+ video tasks into one multimodal model.
+  - OpenAI retreated from the market it defined: after Sora 2 launched in 2025, OpenAI discontinued the standalone Sora web and app experiences on 26 April 2026 and scheduled the Sora 2 API for shutdown on 24 September 2026, leaving Veo 3.1, Kling 3.0 and Runway Gen-4.5 as the safest production foundations.
+  - Open-weight models effectively closed the quality gap: Lightricks' LTX-2 (January 2026) and the LTX-2.3 update (March 2026, ~22B DiT) became the first open model to generate synchronised 4K video and stereo audio in a single pass, alongside Alibaba's Apache-2.0 Wan 2.7 (April 2026) and Tencent's HunyuanVideo 1.5 (November 2025), which renders roughly 75 seconds on a single RTX 4090.
+  - Regulation went live and binding: the EU AI Act Article 50 transparency duties became enforceable on 2 August 2026 (machine-readable marking, visible deepfake labels; penalties up to EUR15 million or 3% of global turnover), with the EU Code of Practice finalised 10 June 2026 mandating a C2PA-plus-SynthID multi-layer approach; California's SB 942 became operative the same day and India's IT Rules 2026 imposed a three-hour takedown window.
+  - Provenance standardised around C2PA: Content Credentials (C2PA 2.1) was ratified as ISO/IEC 22144, and platforms and labs layered signed manifests with imperceptible watermarks such as Google SynthID and Meta's July 2026 Content Seal (VideoSeal/PixelSeal).
+  - Open challenges as of 2026 remain acute: signed manifests do not survive screenshots or re-encoding, open-weight generators can be recompiled without any watermark, provenance verifies declared origin rather than detecting fabrication, and sustaining character consistency and coherent physics beyond the easy 6-second range towards 60-second clips is still the frontier.
+
+- ### References
+  - 1. Masonry (2026). Best AI Video Generators in 2026: Sora vs Runway vs Kling vs Veo. https://masonry.so/blog/best-ai-video-generator-2025-comparison
+  - 2. Teamday (2026). Best AI Video Models 2026: Veo, Runway, Kling, Sora Ranked. https://www.teamday.ai/blog/best-ai-video-models-2026
+  - 3. Netarx (2025-2026). EU AI Act Article 50: What Deepfake Compliance Requires Now. https://www.netarx.com/blog/eu-ai-act-article-50-what-deepfake-compliance
+  - 4. TechTimes (2026). California AI Transparency Act Operative: Midjourney Has No Watermark, Fines Start Today. https://www.techtimes.com/articles/322713/20260802/california-ai-transparency-act-operative-midjourney-has-no-watermark-fines-start-today.htm
+  - 5. Pinggy (2026). Best Video Generation AI Models in 2026. https://pinggy.io/blog/best_video_generation_ai_models/
+
 - ### Provenance
   - sources:: C2PA specification (c2pa.org); EU AI Act (2024); NIST AI RMF; research literature on CogVideoX, Open-Sora, Wan2.1, Stable Video Diffusion
   - updated:: 2026-06-13

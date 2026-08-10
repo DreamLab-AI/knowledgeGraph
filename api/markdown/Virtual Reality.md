@@ -305,6 +305,23 @@ alias:: VirtualReality
   - owl-class:: spatial-computing:VirtualReality
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - Apple refreshed the Vision Pro on 15 October 2025 with the M5 chip, a 120 Hz micro-OLED display and a Dual Knit Band, running visionOS 26; it held its 3,499 US dollar starting price before a rise to 3,699 on 25 June 2026, and remains a premium professional niche device.
+  - Meta continues to dominate consumer VR, controlling roughly 75 per cent of the headset market (IDC) largely via the 299 dollar Quest 3S and the Quest 3, both on Qualcomm's Snapdragon XR2 Gen 2; a Quest 4 on the newer 3nm Snapdragon XR4-class silicon is emerging for 2026-2027.
+  - The field broadened in 2026 with Samsung's Galaxy XR (circa 1,799 dollars), the first device shipping Google's Gemini-powered Android XR OS, the 107-gram Bigscreen Beyond 2, and Valve's confirmed Steam Frame for summer 2026.
+  - Standards consolidated around Khronos' OpenXR (version 1.1, April 2024, folding hand-tracking and scene-understanding extensions into core), now backed by 30-plus vendors, while W3C's WebXR reached Candidate Recommendation and became an Interop 2026 focus area for genuine cross-browser, install-free experiences.
+  - Regulation and safety frameworks matured: ISO/IEC 5927:2024 covers AR/VR safety and vection, the US Leadership in Immersive Technology Act of 2025 (H.R. 2321/S. 1106) proposes a Commerce advisory panel, and the FDA now recognises certain VR exposure-therapy platforms as reimbursable treatments.
+  - Market estimates for 2026 diverge widely, from Mordor Intelligence's 15.64 billion dollars to Fortune Business Insights' 26.71 billion, with the broader XR market around 10.64 billion and 40-plus per cent forecast CAGR to 2031.
+  - Open challenges as of 2026 include sub-12ms passthrough latency for convincing mixed reality, thermal build-up and cybersickness limiting session length, biometric-data privacy for eye and hand tracking (EU AI Act scrutiny), and a still-struggling social metaverse as Meta trims Horizon Worlds' in-headset creation tools.
+
+- ### References
+  - 1. Wikipedia (2026). Apple Vision Pro. https://en.wikipedia.org/wiki/Apple_Vision_Pro
+  - 2. Mordor Intelligence (2026). Extended Reality (XR) Market Size and Share Analysis. https://www.mordorintelligence.com/industry-reports/extended-reality-xr-market
+  - 3. jacar.es (2026). XR, AR and VR in 2026: the honest state after the cycle. https://jacar.es/en/xr-ar-and-vr-in-2026-the-honest-state-after-the-cycle/
+  - 4. Hololight (2026). OpenXR vs OpenVR: The Enterprise Developer's Guide. https://hololight.com/news/openxr-vs-openvr
+  - 5. vr.org (2026). WebXR Is Finally Becoming a Real Cross-Browser Standard. https://vr.org/articles/webxr-interop-2026-cross-browser-standard
+  - 6. vr.org (2026). Upcoming VR Headsets 2026: New Releases and What's Coming Next. https://vr.org/upcoming-vr-headsets-2026
+
 - ### Provenance
   - sources:: Khronos Group OpenXR Specification; W3C WebXR Device API; IEEE VR Conference proceedings; ISO/IEC JTC 1/SC 24 documentation; SIGGRAPH research corpus
   - updated:: 2026-06-13

@@ -259,6 +259,24 @@ public:: true
   - Seoul AI Safety Summit commitments (2024) — international agreement on safety testing and transparency for frontier AI developers.
   - International AI Safety Report (2025) — produced by an international scientific panel convened at the Bletchley Summit; provides the first internationally agreed technical assessment of frontier AI risks.
 
+- ### Current Landscape (2026)
+  - Regulation moved from voluntary to enforceable: the EU AI Act's obligations for general-purpose AI models became applicable on 2 August 2025, and the Commission's enforcement powers over GPAI models with systemic risk (those trained above 10^25 FLOPs) apply from 2 August 2026.
+  - The EU published its General-Purpose AI Code of Practice on 10 July 2025 (Transparency, Copyright, and Safety & Security chapters, the last chaired by Yoshua Bengio, Marietje Schaake and Matthias Samwald); signatories including OpenAI, Anthropic and Google gain a presumption of conformity, while Meta declined and xAI signed only the Safety and Security chapter.
+  - Frontier safety frameworks became a statutory filing rather than a voluntary gesture: California's SB 53 took effect on 1 January 2026 requiring large frontier developers to publish and annually review a frontier AI framework, with New York's RAISE Act following on 1 January 2027.
+  - Each major lab now differentiates on a named safety framework layered over raw capability: Anthropic's Responsible Scaling Policy and ASL tiers (Opus 4.5 deployed under ASL-3), OpenAI's Preparedness and Frontier Governance Frameworks, and Google DeepMind's Frontier Safety Framework.
+  - Capability leadership stayed tightly contested through late 2025 and into 2026, with Google's Gemini 3 Pro and Anthropic's Claude Opus 4.5 (released within a week of each other in November 2025) trading the top of general-capability benchmarks, though safety scores varied widely between them.
+  - Open-weight models closed much of the capability gap while widening the safety gap: SaferAI reported in August 2026 that Z.ai's open-weight GLM-5.2 trailed leading closed models on cyber and bio capability by only a few months yet refused none of the offensive tasks it was set, whereas Claude Opus refused so consistently that some cyber benchmarks could not be completed.
+  - External evaluation matured into an ecosystem: bodies such as METR, the UK AI Safety Institute and US CAISI now run pre-deployment assessments, with METR's 2026 frontier risk reporting finding that agents as of early 2026 still lacked the capability to sustain a hidden rogue deployment against active investigation, while warning that margin could erode quickly.
+  - Open challenges as of 2026 centre on robustness rather than raw refusal: red-team and universal-jailbreak research (Far.ai) continues to collapse safety scores under attack, agentic misalignment, honesty and shutdown-resistance metrics show little improvement, and benchmark contamination (e.g. SWE-bench) is eroding trust in headline capability numbers.
+
+- ### References
+  - 1. European Commission (2026). Regulatory framework on AI (AI Act) — GPAI obligations and timelines. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 2. Center for Security and Emerging Technology, Georgetown (2025). AI Safety under the EU AI Code of Practice — A New Global Standard? https://cset.georgetown.edu/article/eu-ai-code-safety/
+  - 3. AI Frontiers (2025). How the EU's Code of Practice Advances AI Safety. https://ai-frontiers.org/articles/how-the-eus-code-of-practice-advances-ai-safety
+  - 4. Vorpal Labs (2026). Frontier AI safety framework tracker. https://vorplabs.com/ai-regulatory-updates/frontier-ai-frameworks
+  - 5. METR (2026). Frontier Risk Report (February to March 2026). https://metr.org/blog/2026-05-19-frontier-risk-report/
+  - 6. TechCrunch (2026). Open-weight AI models are catching up to the frontier. The safety gap remains. https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/
+
 - ### Provenance
   - sources:: UK AI Safety Institute technical reports; EU AI Act General-Purpose AI provisions; Frontier Model Forum documentation; Anthropic, OpenAI, and Google DeepMind model cards; academic literature on scaling laws and emergent capabilities (Hoffmann et al. 2022; Wei et al. 2022)
   - updated:: 2026-06-13

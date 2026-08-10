@@ -272,6 +272,23 @@ public:: true
   - Cross-functional project collaboration
   - Global team building and social events
 
+- ### Current Landscape (2026)
+  - The consumer-metaverse era of virtual collaboration closed abruptly in early 2026: Microsoft ended its Mesh mixed-reality platform in December 2025 and killed HoloLens hardware in late 2024, while Meta discontinued Horizon Workrooms on 16 February 2026 and halted commercial Quest SKU and Managed Services sales on 20 February, following a reported $19.1bn Reality Labs loss and a 30% budget cut.
+  - Rather than collapsing, the enterprise market consolidated and cleared out around durable, ROI-led use cases; Grand View Research pegs the enterprise metaverse at roughly $59.87bn in 2026 (41.1% CAGR to $667bn by 2033), and IDC notes smart glasses reached about 50% of the 14.5m XR devices shipped in 2025 while consumer VR shipments fell 42.8%.
+  - Apple has pushed hardware cadence with an M5-refreshed Vision Pro and a more comfortable Dual Knit Band; visionOS 26 (previewed June 2025) added spatial scenes, spatial widgets, redesigned Personas and remote FaceTime participants, and visionOS 27 at WWDC 2026 layered on Apple Intelligence, a spatial Siri, 3D Gaussian-splat rendering and SharePlay-based Mac spatial preview.
+  - The key-player field has re-formed around specialists: Samsung Galaxy XR ($1,799) on Android XR entered the premium tier in late 2025, Pico unveiled PICO OS 6 and the enterprise Project Swan headset (targeting late 2026) on 2 March 2026, and collaboration/training vendors such as Arthur (PwC, NTT DATA), Strivr (Walmart, Bank of America), Immersed, raum.app and Glue by Hyperspace now carry the meeting and simulation workloads.
+  - Open standards are displacing proprietary lock-in: at SIGGRAPH 2026 Khronos reframed OpenXR (1.1, plus a cross-vendor Spatial Entity Framework) as a spatial-computing platform rather than a mere portability layer, while OpenUSD and W3C WebXR — and Pico's open-source WebSpatial framework spanning PICO OS 6, visionOS and Android XR — let vendors build once and deploy across headsets.
+  - Enterprise XR shifted from proof-of-concept pilots to IT-governed infrastructure in 2026, assessed on Teams/Zoom integration, MDM and IAM support, endpoint encryption and measurable workflow ROI, with NVIDIA CloudXR 4.0 streaming heavy spatial workloads and sub-20ms 5G/edge latency enabling untethered multi-user sessions.
+  - Open challenges as of 2026 remain headset ergonomics (600-700g devices with 2-3 hour battery life), residual platform fragmentation and vendor-lock-in risk, always-on spatial-capture privacy and security in sensitive facilities, and high content-development costs — though generative AI is reported to cut authoring cost by 60-75%.
+
+- ### References
+  - 1. VR.org (2026). Apple, Meta, and Microsoft Are All Out of Enterprise XR Hardware. https://vr.org/articles/big-tech-quit-enterprise-xr-pico-vuzix-realwear-2026
+  - 2. raum.app (2026). Enterprise VR in 2026: Headsets, Use Cases, Costs & How to Deploy. https://www.raum.app/enterprise-vr/
+  - 3. UC Today (2026). The Metaverse is Dead. Pico Thinks Enterprise XR is Just Getting Started. https://www.uctoday.com/immersive-workplace-xr-tech/the-metaverse-is-dead-pico-thinks-enterprise-xr-is-just-getting-started/
+  - 4. Apple Newsroom (2025). visionOS 26 introduces powerful new spatial experiences for Apple Vision Pro. https://www.apple.com/newsroom/2025/06/visionos-26-introduces-powerful-new-spatial-experiences-for-apple-vision-pro/
+  - 5. VR.org (2026). OpenXR Is Quietly Becoming a Spatial Computing Platform (SIGGRAPH 2026). https://vr.org/articles/openxr-spatial-computing-platform-siggraph-2026
+  - 6. Reality Atlas (2026). XR Industry Statistics 2026 — Market Size, Headset Shipments. https://www.reality-atlas.com/blog/xr-industry-statistics
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

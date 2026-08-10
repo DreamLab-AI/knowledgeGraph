@@ -272,6 +272,22 @@ public:: true
   - Standardisation bodies: [[IETF]] (Internet Engineering Task Force) through the TLS working group, [[NIST]] for implementation guidance and post-quantum transitions.
   - Key implementations: OpenSSL, BoringSSL (Google), wolfSSL, mbedTLS (Arm), rustls (Rust), s2n-tls (AWS), SChannel (Windows), Secure Transport (Apple).
 
+- ### Current Landscape (2026)
+  - Post-quantum key agreement has gone mainstream: the hybrid X25519MLKEM768 group (ECDHE X25519 combined with NIST ML-KEM-768, FIPS 203) is now enabled by default in Chrome 131+, Firefox 132+, Safari 26+ and Edge 131+, and was formalised by the IETF as RFC 9954 (Hybrid Key Exchange in TLS 1.3) in July 2026.
+  - Adoption has scaled fast to counter "harvest now, decrypt later" attacks: by mid-2025 over 30% of TLS 1.3 connections to Cloudflare's edge negotiated a PQC hybrid group (above 50% for modern browsers), and OpenSSL 3.5 (April 2025) shipped ML-KEM in the mainline tree so NGINX/Apache/HAProxy can negotiate it without patches.
+  - Platform and library support matured through 2025-2026: hybrid ML-KEM TLS reached general availability in Windows 11 and Windows Server 2025 (Schannel GA, July 2026, opt-in via Enable-TlsEccCurve), and the JDK added it via JEP 527 in JDK 27; Akamai rolled PQC to origin and browser-facing edges across 2025.
+  - Certificate lifetimes are being cut dramatically: the CA/Browser Forum passed Ballot SC-081v3 in April 2025, reducing maximum public TLS certificate validity from 398 days to 200 days (effective 15 March 2026), then 100 days (2027) and 47 days (2029), with domain-validation reuse falling to 10 days by 2029 - making certificate-lifecycle automation (ACME) essential.
+  - Encrypted Client Hello (ECH), which encrypts the SNI and other ClientHello metadata under an HPKE server key, is now default-on in Chrome, Firefox and Safari (with DoH) and widely deployed by CDNs such as Cloudflare, Fastly, Amazon and Akamai, shifting hostname privacy across the web.
+  - Key open challenges as of 2026: the authentication layer remains classical - the IETF has not yet finalised hybrid PQC certificates (ML-DSA/FN-DSA signatures), so measurement studies report roughly 0% PQC-certificate adoption; ML-KEM's ~1,184-byte keys push the ClientHello past a single packet and can trip old middleboxes; ECH erodes enterprise network visibility and compliance inspection; and around 15% of domains in banking and government still run legacy TLS 1.2.
+
+- ### References
+  - 1. Cloudflare (2025). The state of the post-quantum Internet in 2025. https://blog.cloudflare.com/pq-2025/
+  - 2. Akamai (2025). Post-Quantum Cryptography Implementation Considerations in TLS. https://www.akamai.com/blog/security/post-quantum-cryptography-implementation-considerations-tls
+  - 3. IETF (2026). RFC 9954 - Hybrid Key Exchange in TLS 1.3. https://datatracker.ietf.org/doc/rfc9954/
+  - 4. DigiCert (2025). TLS Certificate Lifetimes Will Officially Reduce to 47 Days. https://www.digicert.com/blog/tls-certificate-lifetimes-will-officially-reduce-to-47-days
+  - 5. Microsoft (2026). ASP.NET, Kestrel and Schannel GA with TLS 1.3 Post-Quantum Cryptography. https://techcommunity.microsoft.com/blog/post-quantum-crypto-tech-blog/asp-net-kestrel-and-schannel-ga-with-tls-1-3-post-quantum-cryptography/4536649
+  - 6. Systems Hardening (2026). Encrypted Client Hello (ECH) Deployment on NGINX, Cloudflare and Beyond. https://www.systemshardening.com/articles/network/encrypted-client-hello/
+
 - ### Provenance
   - sources:: RFC 8446 (TLS 1.3), RFC 8996, RFC 9001, NIST SP 800-52r2, IETF TLS WG charter
   - updated:: 2026-06-13

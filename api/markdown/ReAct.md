@@ -183,6 +183,23 @@ public:: true
   - **Step budget sensitivity**: performance degrades sharply when the step budget is too tight; overshooting budgets wastes compute and can loop. Adaptive early stopping remains an open problem.
   - **Reproducibility**: stochastic decoding means identical prompts may follow different reasoning paths, complicating benchmarking and regression testing.
 
+- ### Current Landscape (2026)
+  - ReAct (Yao et al., 2022) has become the default backbone of production agent frameworks: AgentScope 1.0 (arXiv:2508.16279, Aug 2025) adopts the reason-act-observe loop as its primary recommended architecture, and it underpins tool-calling stacks such as Red Hat's Llama Stack agents (2025).
+  - A wave of 2025 successor architectures targets ReAct's next-action myopia: ReflAct (EMNLP 2025) reorients reasoning to continual goal-state reflection and reports a 27.7% average success-rate gain over ReAct (93.3% on ALFWorld), while REBACT (Zeng et al., Sep 2025) inserts a reflect-before-act step reaching 98.51% on ALFWorld.
+  - Plan-first variants are displacing purely reactive loops on complex multi-tool tasks: Pre-Act (arXiv:2505.09970, May 2025) builds a multi-step plan and improves Action Recall over ReAct by ~70-102%, with a fine-tuned Llama 3.1 70B surpassing GPT-4; Planner-centric plan-execute paradigms similarly set state-of-the-art on StableToolBench.
+  - Hierarchical decoupling is a clear 2025 frontier: RP-ReAct (arXiv:2512.03560, Dec 2025) supervises a ReAct executor with a separate Reasoner-Planner and adds context-saving external storage to stop large tool outputs overflowing small open-weight context windows.
+  - Empirical scrutiny has grown sharper: "On the Brittle Foundations of ReAct Prompting" (arXiv:2405.13966) argues gains stem largely from exemplar-query similarity rather than genuine interleaved reasoning, and a 2025 enterprise benchmark (arXiv:2509.10769) found multi-agent ReAct consistently underperforms, with top models reaching only ~35% success on complex workflows.
+  - Security and reliability remain open challenges: Agent Security Bench (ICLR 2025) recorded prompt-injection/memory-poisoning attack success rates exceeding 84% against ReAct-style agents with largely ineffective defences, and pass^k consistency across repeated trials on tau-bench still typically falls below 50%.
+  - Reasoning models (Gemma, Qwen, o-series) are reshaping the loop by emitting native chain-of-thought before each action, making agentic workloads decode-dominated and heavily dependent on long-lived KV-cache state (arXiv tool-call characterisation, 2025-26), shifting optimisation toward context caching rather than prompt engineering.
+
+- ### References
+  - 1. Yao, S. et al. (2022/2023). ReAct: Synergising Reasoning and Acting in Language Models. https://www.semanticscholar.org/paper/ReAct:-Synergizing-Reasoning-and-Acting-in-Language-Yao-Zhao/99832586d55f540f603637e458a292406a0ed75d
+  - 2. Kim, J. et al. (2025). ReflAct: World-Grounded Decision Making in LLM Agents via Goal-State Reflection (EMNLP 2025). https://aclanthology.org/anthology-files/anthology-files/pdf/emnlp/2025.emnlp-main.1697.pdf
+  - 3. Mishra, S. et al. (2025). Pre-Act: Multi-Step Planning and Reasoning Improves Acting in LLM Agents. https://arxiv.org/pdf/2505.09970.pdf
+  - 4. AgentScope Team (2025). AgentScope 1.0: A Developer-Centric Framework for Building Agentic Applications. https://arxiv.org/pdf/2508.16279
+  - 5. Molinari, A. et al. (2025). RP-ReAct: A Reasoner-Planner Supervising a ReAct Executor for Complex Tasks. https://arxiv.org/html/2512.03560v1
+  - 6. Verma, M. et al. (2024). On the Brittle Foundations of ReAct Prompting for Agentic LLMs. https://arxiv.org/html/2405.13966v1
+
 - ### Provenance
   - sources:: Yao et al. (2022), arXiv:2210.03629; LangChain docs; LangGraph docs; OpenAI Assistants docs
   - updated:: 2026-06-13

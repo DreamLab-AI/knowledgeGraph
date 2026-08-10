@@ -342,6 +342,23 @@ public:: true
   - Algorithmic bias in facial recognition components can produce disparate error rates across demographic groups. ISO/IEC 19795 and emerging regulations mandate bias testing and reporting for biometric systems used in consequential decisions.
   - Reusable [[Verifiable Credential]] architectures reduce the need for repeated full verification, minimising data exposure over time.
 
+- ### Current Landscape (2026)
+  - NIST finalised SP 800-63-4 (Digital Identity Guidelines) in July 2025, superseding the 2017 Revision 3; for the first time it adds explicit controls for injection attacks and forged media (deepfakes), integrates syncable passkeys, and admits subscriber-controlled wallets into the federation model.
+  - The EU's eIDAS 2.0 framework (Regulation (EU) 2024/1183, in force 20 May 2024) obliges every member state to issue at least one European Digital Identity (EUDI) Wallet by the end of 2026, standardising selective disclosure via SD-JWT and ISO/IEC 18013-5/-7 mobile credentials, with regulated private services and Very Large Online Platforms required to accept it by late 2027.
+  - Deepfakes have become a mainstream attack vector: Entrust's 2026 Identity Fraud Report (18 November 2025) found deepfakes now drive roughly 1 in 5 biometric fraud attempts, Sumsub logged a 700% rise in deepfake video scams and a 2,665% surge in virtual-camera attacks over 2025, and AU10TIX reported AI-generated fraud overtaking physical document forgery for the first time in Q1 2026.
+  - Verification architecture is shifting from perception to provenance: injection-attack detection (with ISO/IEC 25456 in development), ISO/IEC 30107-3 Level 2 certified presentation-attack detection, NFC chip reading, C2PA content provenance and hardware capture attestation are now baseline expectations for high-assurance onboarding.
+  - Regulatory pressure is intensifying and fragmenting globally: the EU AI Act classes remote biometric verification as high-risk with Article 50 transparency/labelling obligations binding from 2 August 2026, the UK's Data (Use and Access) Act 2025 (Royal Assent 19 June 2025) created a statutory digital-identity trust framework and register, and across APAC new AI and data-protection laws (Vietnam, South Korea, Thailand, Malaysia) took force in early 2026 reclassifying biometric data and demanding higher assurance.
+  - Key players and reference points now include Entrust, Sumsub, iProov, Regula, AU10TIX and Onfido on the vendor side, with NIST SP 800-63-4, FIDO Face Verification and CEN/TS 18099 emerging as the certification benchmarks regulators cite; the World Economic Forum published guidance (2026) on strengthening identity verification against deepfakes.
+  - Open challenges as of 2026: scalable digital injection attacks that bypass camera-side liveness, fragmented and divergent cross-border regulation, balancing privacy (unlinkability, data minimisation) against multi-signal fraud detection, and the industry consensus that single-factor face-match without corroborating document, behavioural and transactional signals no longer meets the assurance bar.
+
+- ### References
+  - 1. NIST (2025). SP 800-63-4, Digital Identity Guidelines (Final, July 2025). https://csrc.nist.gov/pubs/sp/800/63/4/final
+  - 2. Regula Forensics (2025). Identity Verification News Digest: Summer 2025 (NIST 800-63-4, Data (Use and Access) Act 2025, EUDI Wallet). https://regulaforensics.com/blog/identity-verification-news-summer-2025/
+  - 3. WWPass (2025). eIDAS 2.0 & the EUDI Wallet: A Practical Guide for Enterprise IAM 2025-2027. https://www.wwpass.com/blog/eidas-2-0-the-eudi-wallet-a-practical-guide-for-enterprise-iam-2025-2027/
+  - 4. Digital Applied (2026). Deepfake Statistics 2026: Fraud and Detection Data (Entrust, Gartner, EU AI Act Article 50). https://www.digitalapplied.com/blog/deepfake-statistics-2026-fraud-detection-data
+  - 5. iProov (2026). APAC Races to Regulate Digital Identity & AI Amid Deepfake Surge. https://www.iproov.com/blog/apac-regulation-digital-identity-ai-deepfake-surge
+  - 6. World Economic Forum (2026). Unmasking Cybercrime: Strengthening Digital Identity Verification against Deepfakes. https://reports.weforum.org/docs/WEF_Unmasking_Cybercrime_Strengthening_Digital_Identity_Verification_against_Deepfakes_2026.pdf
+
 - ### Provenance
   - sources:: NIST SP 800-63-3, ISO/IEC 30107-3, eIDAS Regulation (EU 910/2014), ICAO Doc 9303, W3C Verifiable Credentials Data Model, FATF Recommendations, UK DIATF
   - updated:: 2026-06-13

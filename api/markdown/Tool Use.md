@@ -295,6 +295,23 @@ public:: true
   - Safety considerations are addressed in emerging AI governance frameworks such as the EU AI Act and NIST AI Risk Management Framework, which flag autonomous tool invocation as a high-risk AI capability requiring transparency and human oversight.
   - Benchmark suites such as ToolBench, BFCL (Berkeley Function-Calling Leaderboard), and APIBench evaluate tool-use accuracy across diverse API collections.
 
+- ### Current Landscape (2026)
+  - Anthropic's Model Context Protocol (MCP), released 25 November 2024, became the de facto cross-vendor standard for exposing tools to models: OpenAI adopted it across the Responses API and Agents SDK in March 2025 and Google committed Gemini support in April 2025, collapsing the N×M integration problem to N+M.
+  - MCP was donated to the vendor-neutral Agentic AI Foundation under the Linux Foundation on 9 December 2025 (co-founded with OpenAI and Block; Google, Microsoft and AWS as platinum members); by that point the ecosystem counted over 10,000 active public MCP servers and 97M+ monthly SDK downloads.
+  - The protocol matured rapidly through spec revisions — Streamable HTTP transport (2025-03-26), an OAuth 2.1 resource-server authorisation model with elicitation (2025-06-18), and the current 2025-11-25 revision — turning remote, enterprise-grade tool servers into a viable deployment target.
+  - "Too many tools" emerged as the new bottleneck: Anthropic's Advanced Tool Use release (24 November 2025) added tool search and programmatic tool calling, while code-execution patterns (CodeAct, Cloudflare's Code Mode) let models write one program orchestrating many calls — Anthropic reported a 98.7% token reduction on a Google Drive-to-Salesforce workflow.
+  - Evaluation matured from single-call accuracy to agentic, multi-turn behaviour: the Berkeley Function Calling Leaderboard reached V4 with relevance detection and closed-source test sets, alongside tau-bench (Sierra), MCPVerse (550+ executable tools) and MCPToolBench++ (4k+ MCP servers); frontier closed models (Claude Opus 4.x, GPT-5.x, Gemini 3) cluster near the top with open weights like Qwen3 and GLM within a few points.
+  - Multi-turn coherence remains the hard problem: models that top BFCL often degrade on tau-bench, where Claude Sonnet 4.5 posted the strongest published airline/retail scores, and larger tool sets still cause accuracy loss for most models.
+  - Security became the dominant frontier concern: prompt injection ranks #1 on OWASP's 2025 LLM Top 10 with tool abuse as the primary attack surface, and Check Point's August 2026 analysis of Cloudflare Code Mode found five vulnerabilities in the workerd runtime (two rated Critical), underscoring the risk of giving models a code-execution sandbox over live tools.
+
+- ### References
+  - 1. Taskade (2026). How LLMs Got Hands: A History of Tool Use. https://www.taskade.com/blog/tool-use-history
+  - 2. Zylos AI (2026). Tool Use and Function Calling in AI Agents — Standards and Benchmarks. https://zylos.ai/research/2026-04-07-tool-use-function-calling-standards-benchmarks/
+  - 3. Dubrov, S. (2026). AI Agent Tool Use: MCP, CLI, Skills, and Code Execution. https://slavadubrov.github.io/blog/2026/03/24/ai-agent-tool-use/
+  - 4. Model Context Protocol (2026). Tools — Server Specification (2026-07-28). https://modelcontextprotocol.io/specification/2026-07-28/server/tools
+  - 5. Yu et al. (2025). MCPVerse: An Expansive, Real-World Benchmark for Agentic Tool Use. https://arxiv.org/html/2508.16260v1
+  - 6. Check Point Research (2026). When Agentic Glue Melts: Exploiting Cloudflare Code Mode. https://research.checkpoint.com/2026/when-agentic-glue-melts/
+
 - ### Provenance
   - sources:: OpenAI Function Calling documentation; Anthropic Tool Use documentation; Model Context Protocol specification; ReAct (Yao et al. 2022); Toolformer (Schick et al. 2023); Berkeley Function-Calling Leaderboard
   - updated:: 2026-06-13

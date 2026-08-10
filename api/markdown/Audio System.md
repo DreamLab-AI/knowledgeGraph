@@ -323,6 +323,23 @@ public:: true
   - **ITU-R BS.1770** — loudness measurement and normalisation recommendation used by streaming platforms and broadcast chains to ensure consistent perceived loudness across content.
   - Major platform audio APIs: **Core Audio** (macOS/iOS), **ALSA / PipeWire** (Linux), **WASAPI / DirectSound** (Windows), **Oboe** (Android) — all provide the hardware abstraction layer that higher-level audio systems build on.
 
+- ### Current Landscape (2026)
+  - At WWDC 2025 (June) Apple publicly disclosed the Apple Spatial Audio Format (ASAF) and the Apple Positional Audio Codec (APAC, standardised mid-2024), a metadata-driven system that fuses object-based audio with fifth-order Higher Order Ambisonics and renders acoustic cues in real time from listener and object position; it is purpose-built for Vision Pro and mandated for all Apple Immersive Video titles.
+  - ASAF does not replace Dolby Atmos but wraps and extends it, adding head-tracked binaural rendering plus environment-aware reverb, volume and echo adaptation; APAC streams between 64 kbps and 768 kbps (matching current Atmos streaming ceilings) and falls back to Atmos or stereo on unsupported devices.
+  - The MPEG-I Immersive Audio standard (ISO/IEC 23090-4) was technically completed in January 2025, reached FDIS in March 2025, and delivers full six-degrees-of-freedom (6DoF) rendering (x/y/z translation plus yaw/pitch/roll) with modelled reverberation, occlusion, diffraction and Doppler; the reference software (ISO/IEC 23090-34) hit FDIS at MPEG 150 in April 2025, with Ericsson-contributed volumetric source rendering.
+  - An open, royalty-free rival has consolidated around Eclipsa Audio, the Google and Samsung format built on the Alliance for Open Media's IAMF specification; announced 2024, it shipped across Samsung's entire 2025 TV and soundbar lineup, gained YouTube upload support in 2025, and by 2025-2026 is being tested for live concerts and sports via Samsung TV Plus, with THX joining AOM for certification.
+  - Personalised HRTF has moved from novelty to baseline: 2025 work spans spatially-aware transformers reconstructing high-resolution HRTFs from sparse measurements (arXiv, Oct 2025) and camera-based head-width estimation for HRTF selection on commodity Android phones, reducing reliance on Apple's TrueDepth ear-scan flow.
+  - Key players now split into three camps: Apple (ASAF/APAC, closed, Vision Pro-centric), the Google/Samsung/AOM open bloc (Eclipsa/IAMF, TV and YouTube-centric), and the MPEG/ISO standards line (Fraunhofer, Ericsson, MPEG-I) targeting cross-platform XR interoperability.
+  - Open challenges as of 2026 include fragmentation across three incompatible immersive formats, the absence of a shared authoring pipeline (each requires format-specific DAW plugins), correct real-world signal-chain configuration (Eclipsa requires HDMI eARC and non-PCM passthrough to work at all), and generalising personalised HRTFs without per-user calibration.
+
+- ### References
+  - 1. audioXpress (2025). Blackmagic Design Announces DaVinci Resolve 20.1 Adding Support for Apple Spatial Audio and Apple Vision Pro. https://audioxpress.com/news/blackmagic-design-announces-davinci-resolve-20-1-adding-support-for-apple-spatial-audio-and-apple-vision-pro
+  - 2. Apple Developer (2025). Learn about Apple Immersive Video technologies — WWDC25 (Session 403). https://developer.apple.com/videos/play/wwdc2025/403/
+  - 3. Fraunhofer IIS (2025). MPEG-I Immersive Audio (AES Convention Paper 10234). https://www.iis.fraunhofer.de/content/dam/iis/en/doc/ame/Whitepaper/mpeg-i/MPEG-I_Immersive_Audio_AES_Convention_Paper.pdf
+  - 4. Ericsson (2026). Heterogeneous volumetric sound rendering for XR. https://www.ericsson.com/en/blog/2026/3/heterogeneous-sound-sources
+  - 5. Google Open Source Blog (2025). Introducing Eclipsa Audio: immersive audio for everyone. https://opensource.googleblog.com/2025/01/introducing-eclipsa-audio-immersive-audio-for-everyone.html
+  - 6. SamMobile (2026). Samsung reveals new details about Eclipsa Audio, its Dolby Atmos rival. https://www.sammobile.com/news/samsung-eclipsa-audio-dolby-atmos-rival-details-revealed/
+
 - ### Provenance
   - sources:: W3C Web Audio API specification; Khronos OpenXR specification; ISO/IEC 23008-3; AES67 standard; IETF RFC 7587; ITU-R BS.1770; established audio engineering literature
   - updated:: 2026-06-13

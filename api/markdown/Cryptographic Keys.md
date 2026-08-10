@@ -374,6 +374,23 @@ public:: true
   - enables:: [[Digital Signature]]
   - is-subclass-of:: [[Cryptography]]
 
+- ### Current Landscape (2026)
+  - The centre of gravity has shifted decisively to post-quantum key material: on 13 August 2024 NIST finalised FIPS 203 (ML-KEM, from CRYSTALS-Kyber) for key establishment alongside FIPS 204 (ML-DSA) and FIPS 205 (SLH-DSA) for signatures, making quantum-resistant keys a ratified standard rather than a research topic.
+  - Hybrid post-quantum key exchange is now the largest live deployment of PQC: the X25519MLKEM768 group (IANA code point 0x11EC) is enabled by default in Chrome (from v124, May 2024), Firefox, Edge and Safari, and on Cloudflare, AWS and Google edges, with over 30% of TLS 1.3 handshakes to Cloudflare negotiating a PQC hybrid by mid-2025 and OpenSSL 3.5 (April 2025) shipping ML-KEM in the mainline tree.
+  - Regulatory deadlines have hardened the migration: NIST IR 8547 and NSA's CNSA 2.0 deprecate RSA/ECC after 2030 and disallow them by 2035, CNSA 2.0 mandates that all new key-management and PKI systems support ML-KEM-1024 and ML-DSA-87 natively by end-2026, and US Executive Order 14412 with OMB memo M-26-15 (June 2026) set a hard target of PQC key establishment by 31 December 2030.
+  - Key-management infrastructure is being re-tooled around larger PQC keys: KMIP 2.2 adds ML-KEM/ML-DSA key object types, PKCS#11 is being extended for PQC, AWS KMS added ML-DSA signing in FIPS 140-3 HSMs in 2025, and FIPS 140-3 Level 3 HSMs such as Thales Luna (and the new Luna 8, launched August 2026) now carry ML-KEM, ML-DSA and LMS/HSS in firmware with crypto-agile upgrade paths.
+  - NIST is updating its foundational key-management guidance: SP 800-57 Part 1 Revision 6 (initial public draft December 2025, comments closed February 2026) folds in the FIPS 203/204/205 algorithms plus Ascon (SP 800-232) and separates key-establishment from key-storage keys for the first time.
+  - Authentication keys are following: IANA added ML-DSA-44/65/87 to the COSE codelist on 24 April 2025, laying the standards groundwork for quantum-safe FIDO2 passkeys, though production passkeys still sign with P-256/Ed25519 pending browser and authenticator support expected around 2027-2028.
+  - Open challenges as of 2026 centre on the certificate layer and algorithm diversity: PQC certificates lag key exchange (draft-ietf-tls-mldsa is still in working-group last call and no major browser negotiates ML-DSA server certificates by default), FN-DSA/FIPS 206 (Falcon) and the code-based HQC KEM backup (selected March 2025) remain unfinished and expected to finalise in 2026-2027, and enterprises face the harvest-now-decrypt-later threat while completing cryptographic inventory and crypto-agility work.
+
+- ### References
+  - 1. NIST CSRC (2024). Post-Quantum Cryptography FIPS Approved (FIPS 203, 204, 205). https://csrc.nist.gov/news/2024/postquantum-cryptography-fips-approved
+  - 2. NIST CSRC (2024–2025). Post-Quantum Cryptography Project (FIPS 203 ML-KEM; NIST IR 8547 transition timeline). https://csrc.nist.gov/projects/post-quantum-cryptography
+  - 3. Cloudflare (2025). The State of the Post-Quantum Internet in 2025 (X25519MLKEM768 deployment). https://blog.cloudflare.com/pq-2025/
+  - 4. Wultra (2025). Passkeys and FIDO2 Quietly Became Quantum-Safe (IANA COSE ML-DSA update, 24 April 2025). https://www.wultra.com/blog/passkeys-and-fido2-quietly-became-quantum-safe-heres-what-changed
+  - 5. Quantum Security Defence (2026). CNSA 2.0 vs CNSA 1.0 Quantum Key Management: 2026–2027 (KMIP 2.2, HSM/PKCS#11 milestones). https://quantumsecuritydefence.com/insights/cnsa-2-vs-1-quantum-key-management/
+  - 6. NIST (2025). SP 800-57 Part 1 Revision 6 Initial Public Draft — Recommendation for Key Management. https://csrc.nist.gov/pubs/sp/800/57/pt1/r6/ipd
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

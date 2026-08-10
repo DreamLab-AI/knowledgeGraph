@@ -305,6 +305,23 @@ public:: true
   - owl-class:: spatial-computing:DesignSoftware
   - owl-role:: concept
 
+- ### Current Landscape (2026)
+  - Neural CAD has emerged as a distinct category: at Autodesk University 2025 (Nashville, Sep 2025) Autodesk announced neural CAD foundation models — "neural CAD for geometry" in Fusion (an autoregressive transformer generating fully editable BREP geometry from text) and "neural CAD for buildings" in Forma — with commercial availability rolling out from 2026, positioned to automate 80–90% of routine design tasks.
+  - Incumbent CAD suites have embedded AI copilots and immersive review: Siemens renamed Solid Edge to Designcenter Solid Edge 2026 (Oct 2025) with an AI Magnetic Snap, AI-generated 2D drawing views (up to 80%) and a Design Copilot chatbot, while Autodesk shipped Autodesk Assistant across Fusion, Inventor, Moldflow and Vault plus public Fusion MCP and Fusion Data MCP servers (Apr 2026) for agentic workflows.
+  - Figma's Config 2026 (Jun–Jul 2026) reframed the design canvas around AI and spatial expression, shipping Motion (timeline animation), prompt-built WebGPU shaders, native 3D transforms, Code Layers and a first-party Figma agent; by 31 Jul 2026 over 50% of paid customers with >$10k ARR were using the agent weekly.
+  - Spatial-computing design tooling matured on headsets: Spatial released Analogue 26 for Apple Vision Pro with Logitech Muse stylus support plus a companion Analogue Portal iPhone app for headset-free review, and NVIDIA Omniverse's OpenUSD spatial framework brought full RTX ray tracing to XR design reviews over OpenXR, SteamVR and CloudXR.
+  - Interoperability standards consolidated around OpenUSD and glTF: AOUSD ratified OpenUSD Core Specification 1.0 at the end of 2025, Khronos advanced the KHR_gaussian_splatting glTF extension to release candidate (full ratification targeted Q2 2026, backed by Google, NVIDIA, Apple and Bentley), and OpenUSD 26.03 added a native Gaussian-splat schema, with the AOUSD–Khronos liaison and Metaverse Standards Forum working group pursuing USD⇄glTF round-tripping.
+  - WebGPU reached universal browser support (Safari 26 completing coverage across macOS, iOS and visionOS), making GPU-accelerated 3D — including Gaussian splats — a browser baseline, and WebXR adoption rose roughly 40% in 2026, narrowing the gap between browser-based and native immersive design.
+  - Open challenges as of 2026 include reliable USD⇄glTF round-tripping (PBR/MaterialX/OpenPBR material fidelity, FBX migration, physics and Gaussian-splat interchange), grounding generative models in real-world constraints (dimensions, materials, CNC and manufacturability — a gap Sunvega's July 2026 AI-native spatial workspace targets), editability and IP provenance of AI-generated geometry, and interoperability across fragmented XR runtimes and headsets.
+
+- ### References
+  - 1. Autodesk News (2026). Upcoming 3D generative AI foundation models for Autodesk (neural CAD). https://adsknews.autodesk.com/en/news/upcoming-3d-generative-ai-foundation-models/
+  - 2. Engineering.com (2025). Siemens launches Solid Edge 2026 (Designcenter) with AI Design Copilot. https://www.engineering.com/siemens-launches-solid-edge-2026-with-ai-design-copilot/
+  - 3. Figma (2026). Config 2026 Recap: New Materials, New Tools and a More Expressive Canvas. https://www.figma.com/blog/config-2026-recap/
+  - 4. Engineering.com (2026). Autodesk announces Fusion MCP servers and more AI updates. https://www.engineering.com/autodesk-announces-fusion-mcp-servers-and-more-ai-updates/
+  - 5. AOUSD (2026). A Landmark Year for OpenUSD Standardization and Growth in 2025. https://aousd.org/blog/aousd-year-in-review-a-landmark-year-for-openusd-standardization-and-growth-in-2025/
+  - 6. Khronos / AOUSD (2026). Gaussian Splatting Enters Standards Era with glTF (KHR_gaussian_splatting) and OpenUSD 26.03. https://www.khronos.org/blog/building-bridges-in-3d-aousd-and-khronos-collaborate-on-openusd-and-gltf-interoperability
+
 - ### Provenance
   - sources:: Autodesk documentation; Blender Foundation; Adobe product documentation; Khronos Group glTF specification; Academy Software Foundation USD and OpenColorIO specifications; established industry knowledge
   - updated:: 2026-06-13

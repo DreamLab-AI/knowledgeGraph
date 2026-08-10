@@ -291,6 +291,23 @@ alias:: SelectiveDisclosure
   - [[Secure Multi-Party Computation]] — enables joint computation across parties without revealing inputs; related in the broader landscape of privacy-preserving computation.
   - [[Attribute-Based Encryption]] — cryptographic access control scheme where decryption keys encode attributes; shares design goals with selective disclosure but operates on a different trust model.
 
+- ### Current Landscape (2026)
+  - The core mechanism was finalised as an internet standard: IETF published RFC 9901, "Selective Disclosure for JSON Web Tokens" (SD-JWT), as a Proposed Standard on 19 November 2025 (authors D. Fett, K. Yasuda, B. Campbell), promoting the long-running draft-ietf-oauth-selective-disclosure-jwt-22 to a stable RFC with the SD-JWT+KB key-binding variant.
+  - The credential-layer profile SD-JWT VC (draft-ietf-oauth-sd-jwt-vc) reached draft-18 by August 2026 and sits in IESG AD Evaluation, with a working-group milestone to submit to the IESG in July 2026; it adds credential typing (vct), issuer metadata and status checking on top of RFC 9901.
+  - Selective disclosure has become a regulatory mandate rather than a nicety: eIDAS 2.0 (Regulation EU/2024/1183) requires all EU member states to provide a European Digital Identity (EUDI) Wallet by the end of 2026, and the Architecture and Reference Framework (ARF) mandates SD-JWT (online) and ISO/IEC 18013-5 mdoc/MSO (in-person) as the baseline selective-disclosure formats.
+  - Both mandated formats rely on salted-hash commitments and therefore leave stable digests that permit verifier correlation; a June 2024 cryptographers' open letter (Camenisch, Troncoso, Lehmann, Baum and others) argued this fails the eIDAS unlinkability requirement and pushed the ARF and W3C VCDM towards BBS-family anonymous credentials.
+  - Unlinkable and zero-knowledge approaches are maturing: the W3C BBS Data Integrity cryptosuite reached Candidate Recommendation in April 2025, and ARF 2.9.0 added a dedicated zero-knowledge-proof discussion topic, though the BBS pairing curve remains unapproved by SOG-IS for EU public-sector use.
+  - As a stop-gap for unlinkability with the mandated formats, deployments now issue batches of single-use credentials so a fresh instance is presented to each verifier, adding operational cost for Qualified Trust Service Providers and PID providers.
+  - Active research frontiers in 2025-2026 include predicate/range proofs for age-gating without revealing date of birth, ZK-SNARK-based ZK-native wallet designs, and accumulator-based compaction such as CSD-JWT (arXiv, June 2025), which cuts verifiable-presentation size by 27-93% and hides the claim count.
+
+- ### References
+  - 1. IETF / D. Fett, K. Yasuda, B. Campbell (2025). RFC 9901: Selective Disclosure for JSON Web Tokens (SD-JWT). https://www.rfc-editor.org/rfc/rfc9901.html
+  - 2. IETF OAuth Working Group (2026). SD-JWT-based Verifiable Digital Credentials (SD-JWT VC), draft-ietf-oauth-sd-jwt-vc-18. https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/
+  - 3. European Commission / EUDI Wallet ARF (2026). Discussion Topic G: Zero-Knowledge Proof (ARF 2.9.0). https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/2.9.0/discussion-topics/g-zero-knowledge-proof/
+  - 4. C. Baum, J. Camenisch, A. Lehmann, C. Troncoso et al. (2024). Cryptographers' Feedback on the EU Digital Identity's ARF. https://hpi.de/oldsite/fileadmin/user_upload/fachgebiete/lehmann/Publications/cryptographers-feedback.pdf
+  - 5. IDnow / S. Lundberg (2024). EUDI Wallets: Balancing privacy with usability (on ETSI TR 119 476, SD-JWT, mDL and BBS+/ZKP). https://idnow.io/insights/blog/eudi-wallets-privacy-usability/
+  - 6. R. et al. (2025). Compact and Selective Disclosure for Verifiable Credentials (CSD-JWT). arXiv. https://arxiv.org/html/2506.00262v1
+
 - ### Provenance
   - sources:: W3C VCDM 2.0; IETF draft-ietf-oauth-selective-disclosure-jwt; IETF draft-irtf-cfrg-bbs-signatures; EU eIDAS 2.0 ARF; ISO/IEC 18013-5; Hyperledger AnonCreds specification
   - updated:: 2026-06-13
