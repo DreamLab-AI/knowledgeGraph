@@ -273,6 +273,23 @@ public:: true
   - **Blockchain Applications** — EIP-1559 (Ethereum fee market), Gitcoin Grants (quadratic funding), Compound/Aave governance mechanisms.
   - Domain remapped from "blockchain" to "governance" — mechanism design is a foundational cross-domain field; governance is its most accurate primary domain given its application to institutional design, voting, and public resource allocation across both traditional and decentralised systems.
 
+- ### Current Landscape (2026)
+  - The field has pivoted sharply toward AI: Dütting, Mirrokni, Paes Leme, Xu and Zuo's "Mechanism Design for Large Language Models" (WWW 2024 Best Paper, re-published as an IJCAI 2025 sister-conference best paper) introduced the token-auction model, letting self-interested LLM agents shape AI-generated content token-by-token through single-dimensional bids while preserving a second-price, incentive-compatible rule.
+  - Differentiable economics has become the dominant automated approach: building on RegretNet and RochetNet, Wang et al.'s GemNet (GEneral Menu-based NETwork, 2024) is now the state-of-the-art multi-bidder method, resolving the prior trade-off between full expressiveness and exact strategyproofness, as catalogued in Curry's 2024 ACM SIGecom Exchanges survey of automated mechanism design.
+  - LLMs are being used to design mechanisms, not just to be governed by them: a February 2025 CMU/Adelaide framework (arXiv 2502.12203) reformulates mechanism design as a code-generation task in a FunSearch loop, evolving interpretable heuristic mechanisms that rediscover Myerson's optimal auction and virtual valuations while enforcing strategy-proofness via a problem-specific fixing process.
+  - Mechanism design is being applied directly to AI governance: the Auction-Based Regulation work (arXiv 2410.01871, revised through 2026) casts AI regulation as an all-pay auction (CIRCA/SIRA) whose Nash equilibria provably push firms to exceed compliance and safety thresholds, reporting roughly 20% higher compliance/safety spend and 15% higher participation than baseline regulation.
+  - Deep mechanism design has reached the policy frontier: the June 2025 PNAS review (Deep mechanism design, e2319949121) surveys RL-trained neural social planners for tax and redistribution policies that win popular votes, while cautioning that such AI-designed social mechanisms remain proof-of-concept and are not yet deployment-ready.
+  - Theoretical foundations are being rebuilt for informationally rich settings: the Bergemann-Dütting et al. Cowles Foundation paper (No. 2418R1, March 2025) shows standard message-driven mechanisms cannot implement efficient allocations under multidimensional types, proposing data-driven mechanisms that exploit post-allocation state estimators.
+  - Open challenges as of 2026 centre on interpretability and safety of neural/LLM-designed mechanisms, provable strategyproofness at scale, market design for allocating and pricing scarce LLM inference capacity, and the readiness of AI-authored social and fiscal mechanisms for real-world deployment.
+
+- ### References
+  - 1. Dütting, P. and Zuo, S. / Google Research (2025). Mechanism design for large language models. https://research.google/blog/mechanism-design-for-large-language-models/
+  - 2. Dütting, P., Mirrokni, V., Paes Leme, R., Xu, H. and Zuo, S. (2025). Mechanism Design for Large Language Models (Extended Abstract), IJCAI 2025. https://www.ijcai.org/proceedings/2025/1210.pdf
+  - 3. Curry, M. (2024). Automated Mechanism Design: A Survey, ACM SIGecom Exchanges 22(2). https://www.sigecom.org/exchanges/volume_22/2/CURRY.pdf
+  - 4. Anonymous (2025). An Interpretable Automated Mechanism Design Framework with Large Language Models, arXiv:2502.12203. https://arxiv.org/html/2502.12203v1
+  - 5. Bornstein, M. et al. (2026). Auction-Based Regulation for Artificial Intelligence, arXiv:2410.01871. https://arxiv.org/html/2410.01871v3
+  - 6. Bergemann, D., Bojko, M., Dütting, P., Paes Leme, R., Xu, H. and Zuo, S. (2025). Data-Driven Mechanism Design: Jointly Eliciting Preferences and Information, Cowles Foundation Discussion Paper No. 2418R1. https://cowles.yale.edu/sites/default/files/2025-03/d2418r1.pdf
+
 - ### Provenance
   - sources:: Nobel Prize Committee 2007 (Hurwicz, Maskin, Myerson); Myerson (1979) "Incentive Compatibility and the Bargaining Problem"; Vickrey (1961) "Counterspeculation, Auctions, and Competitive Sealed Tenders"; Buterin, Hitzig, Weyl (2019) "A Flexible Design for Funding Public Goods"
   - updated:: 2026-06-13

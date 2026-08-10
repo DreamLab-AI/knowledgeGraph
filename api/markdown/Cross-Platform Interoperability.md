@@ -427,6 +427,23 @@ public:: true
   - Intent-based cross-chain routing
   - Atomic cross-chain transactions
 
+- ### Current Landscape (2026)
+  - AI-agent interoperability has become the fastest-moving frontier: Anthropic's Model Context Protocol (MCP, launched November 2024) standardises agent-to-tool access, while Google's Agent2Agent (A2A, released April 2025) handles agent-to-agent discovery and delegation via "Agent Cards"; both were placed under neutral Linux Foundation governance in 2025 (A2A donated June 2025, MCP to the Agentic AI Foundation co-founded with Block and OpenAI in December 2025).
+  - The agent-protocol field consolidated in August 2025 when IBM's Agent Communication Protocol (ACP) merged into A2A under LF AI & Data; the Linux Foundation roadmap targets an MCP 2.0 (Streamable HTTP, OAuth 2.1) and a first joint A2A-MCP interoperability specification through 2026, with a compliance-certification programme planned for late 2026.
+  - EU Digital Markets Act enforcement drove concrete messaging interoperability: Meta's Article 7 obligations took effect (WhatsApp 7 March 2024, Messenger 7 September 2024), Phase 2 group-chat deadlines fell on 7 September 2025, and in November 2025 two third-party services, BirdyChat and Haiket, announced working interoperability with WhatsApp while preserving end-to-end encryption.
+  - DMA device and OS interoperability advanced under Article 6(7): Apple, Google and Microsoft opened developer portals for interoperability requests, and following the Commission's 19 March 2025 connected-devices decision Apple must ship new iOS interoperability solutions (notifications, proximity pairing, audio switching) by 1 June 2026, alongside cross-ecosystem device-transfer data portability tools.
+  - WebAssembly matured as a universal portable runtime: Wasm 3.0 was declared the live standard on 17 September 2025 (adding Wasm GC, multiple memories, 64-bit address space and a deterministic execution profile), and the browser-facing Interop 2026 project (announced February 2026) added JSPI for Wasm and WebTransport across twenty focus areas.
+  - 3D content interoperability consolidated around OpenUSD: the Alliance for OpenUSD ratified Core Specification 1.0 in 2025 and shipped OpenUSD v26.08 in 2026, with a Physics Rigid Body spec targeted for Q2 2026 ratification and ongoing USD/glTF and Gaussian-splatting alignment work presented at SIGGRAPH 2025.
+  - Open challenges as of 2026 centre on semantic rather than transport-level interoperability, addressed by the Open Semantic Interchange (launched September 2025 by Snowflake, Salesforce and dbt Labs), plus preserving end-to-end encryption and GDPR compliance across interoperable messaging, mandatory cloud-switching interoperability under the EU Data Act, and the absence of certified compliance test suites for the still-draft agent-protocol stack.
+
+- ### References
+  - 1. European Commission (2026). Messaging Interoperability — Digital Markets Act (Article 7). https://digital-markets-act.ec.europa.eu/developer-portal/messaging-interoperability_en
+  - 2. European Commission (2026). Factsheet — How the DMA is making smartphones better: interoperability and data portability case studies. https://digital-markets-act.ec.europa.eu/factsheet-how-dma-making-smartphones-better-interoperability-and-data-portability-case-studies-2026-05-11_en
+  - 3. Linux Foundation (2025). Linux Foundation Launches the Agent2Agent Protocol Project to Enable Secure, Intelligent Communication Between AI Agents. https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents
+  - 4. Atlan (2026). Agent Interoperability Protocols: MCP, A2A, OSI Explained. https://atlan.com/know/agent-interoperability-protocols/
+  - 5. WebAssembly Community Group (2025). Wasm 3.0 Completed. https://webassembly.org/news/2025-09-17-wasm-3.0/
+  - 6. Alliance for OpenUSD (2026). AOUSD Drives Global 3D Data Interoperability and Agentic AI Workflows with New Core Specification Milestones. https://aousd.org/news/alliance-for-openusd-drives-global-3d-data-interoperability-and-agentic-ai-workflows-with-new-core-specification-milestones-and-members/
+
 - ### Provenance
   - sources:: [[ERC-5164]], [[W3C DID]], [[IEEE blockchain standards]]
   - migration-date:: 2026-04-26T00:00:00Z

@@ -315,6 +315,22 @@ alias:: CloudNativeApplications
   - Industry adoption
   - North England innovation (where relevant)
 
+- ### Current Landscape (2026)
+  - The CNCF Annual Cloud Native Survey published 20 January 2026 (fielded 2025, "The Infrastructure of AI's Future") reports 98% of organisations now use cloud-native techniques and 82% of container users run Kubernetes in production, up from 66% in 2023 and 80% in 2024 — the technology has crossed from differentiator to enterprise default.
+  - Kubernetes has been reframed as the de facto "operating system for AI": 66% of organisations hosting generative-AI models now use it to run some or all of their inference workloads, though maturity remains early — only 7% deploy models daily and roughly half do not train models at all.
+  - Platform engineering and internal developer platforms (IDPs) have become the dominant operating model: Backstage ranks as the #5 CNCF project by velocity, and GitOps is now a clear maturity marker (used extensively by 58% of "innovators" versus 23% of "adopters").
+  - Serverless containers (Google Cloud Run, AWS Fargate) and lightweight distributions (K3s) are shifting workloads off self-managed clusters, producing a mixed operating model rather than a Kubernetes-versus-serverless choice; CNCF/SlashData's State of Cloud Native Development Q1 2026 counts roughly 20 million cloud-native developers, with 88% of backend developers working in standardised platform environments.
+  - WebAssembly (Wasm) is maturing from experimental to an operational server-side runtime for edge functions, plugin systems and high-density multi-tenant workloads (signalled by efforts such as Kube-Wasm), though mainstream adoption remains modest and gated on tooling and language support.
+  - For the first time the top adoption barrier is organisational rather than technical: 47% of respondents cite cultural change within development teams as their biggest challenge, ahead of training, security and complexity.
+  - Open frontiers as of 2026 include closing the gap between AI ambition and infrastructure readiness (GPU scheduling and inference at scale), FinOps-driven cost governance for multi-cluster estates (average 12+ clusters per organisation), and eBPF-based observability and zero-trust security via projects such as Cilium and OpenTelemetry.
+
+- ### References
+  - 1. Cloud Native Computing Foundation (2026). Kubernetes Established as the De Facto 'Operating System' for AI as Production Use Hits 82% in 2025 — CNCF Annual Cloud Native Survey. https://www.cncf.io/announcements/2026/01/20/kubernetes-established-as-the-de-facto-operating-system-for-ai-as-production-use-hits-82-in-2025-cncf-annual-cloud-native-survey/
+  - 2. Linux Foundation Research (2026). CNCF Annual Cloud Native Survey: The Infrastructure of AI's Future. https://www.linuxfoundation.org/research/cncf-2025-annual-survey
+  - 3. CNCF + SlashData (2026). State of Cloud Native Development Q1 2026. https://www.cncf.io/reports/state-of-cloud-native-development-q1-2026/
+  - 4. Cloud Native Computing Foundation (2026). Kubernetes Fuels AI Growth; Organizational Culture Remains the Decisive Factor. https://www.cncf.io/blog/2026/01/20/kubernetes-fuels-ai-growth-organizational-culture-remains-the-decisive-factor/
+  - 5. Apex Logic (2026). Cloud-Native 2026: The Microservices Evolution Beyond Containers. https://www.apex-logic.net/news/cloud-native-2026-the-microservices-evolution-beyond-containers
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

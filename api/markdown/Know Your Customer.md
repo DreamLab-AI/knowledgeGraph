@@ -253,6 +253,23 @@ public:: true
   - **Synthetic identity fraud** — AI-generated deepfake documents and spoofed biometrics challenge traditional KYC verification; counter-measures include injection attack detection and hardware attestation.
   - **Cross-border consistency** — divergent national implementations of FATF recommendations create compliance complexity for multinational institutions operating across many jurisdictions.
 
+- ### Current Landscape (2026)
+  - The dominant shift is from point-in-time onboarding to perpetual KYC (pKYC) — continuous, event-driven customer due diligence that refreshes a risk profile on triggers (beneficial-ownership change, sanctions update, adverse media, anomalous transactions) rather than on fixed 1-to-5-year cycles; Capgemini, KYC360 and vendors such as Avallone frame it as the 2026 baseline rather than a premium add-on.
+  - The EU's single AML rulebook is now the reference framework: AMLA (the Authority for Anti-Money Laundering, based in Frankfurt) became operational on 1 July 2025, the AMLR (Regulation (EU) 2024/1624) applies from 10 July 2027 (2029 for some entities), and AMLA published its draft ongoing-monitoring guidelines on 3 June 2026 ahead of a 10 July 2026 deadline to submit 23 technical standards and guidelines to the European Commission.
+  - Digital identity is being elevated over document and video checks: the draft RTS on customer due diligence makes eIDAS-compliant electronic identification (at Levels of Assurance Substantial or High) and EUDI Wallet credentials the default for remote onboarding, demoting video identification (e.g. Germany's BaFin Circular 3/2017 approach) to a justified fallback option from July 2027.
+  - The US framework was redrawn between February and May 2026 via a FinCEN exemptive order, an April NPRM reforming the AML programme rule toward an effectiveness-based, risk-driven model, and executive orders; banks are now expected to cross-reference Ultimate Beneficial Owner claims against the FinCEN BOI registry under the Corporate Transparency Act rather than accept self-certification.
+  - Other jurisdictions moved in parallel: FATF clarified in February 2025 that non-face-to-face onboarding is no longer inherently high-risk; the RBI issued Amendment Directions in June 2025 easing CKYCR-based periodic updation and Aadhaar/V-CIP e-KYC; and Australia's AML/CTF Amendment Rules took effect on 31 March 2026, adjusting KYC verification timeframes and PEP/virtual-asset obligations.
+  - AI has moved from optional to a core expectation for alert triage, document extraction, NLP-based adverse-media and multilingual sanctions screening, with regulators emphasising auditable, explainable models and demonstrable evidence trails.
+  - The frontier challenge is synthetic-identity and deepfake fraud: commercially available AI-generated identity documents and face-overlay injection attacks expose gaps in the draft AMLR RTS, which critics (including iProov and IDnow) note does not yet mandate injection-attack detection or robust anti-spoofing on the biometric feed.
+
+- ### References
+  - 1. KYC360 (2026). 2026 KYC/AML Outlook: Key Trends and Takeaways. https://kyc360.com/knowledge-hub/resources/2026-kyc-aml-outlook
+  - 2. Encompass Corporation (2026). The US KYC landscape just shifted: here's what banks need to understand. https://www.encompasscorporation.com/blog/the-us-kyc-landscape-just-shifted-heres-what-banks-need-to-understand/
+  - 3. IDnow (2026). AMLA is Rewriting Europe's AML Rules. Here's What it Means. https://idnow.io/insights/blog/amla-europes-aml-rules-rewritten/
+  - 4. iProov (2026). AMLR Requires eIDAS-compliant Identity Verification. Is Your Business Ready? https://www.iproov.com/blog/eu-amlr-2027-eidas-digital-identity-verification
+  - 5. timveroOS (2025). KYC and AML Compliance for Digital Lenders in 2026. https://timvero.com/blog/kyc-and-aml-compliance-in-digital-lending
+  - 6. Grant Thornton Australia (2026). Understanding recent changes to the AML/CTF legislation and what reporting entities need to know. https://www.grantthornton.com.au/insights/blogs/understanding-recent-changes-to-the-amlctf-legislation-and-what-reporting-entities-need-to-know/
+
 - ### Provenance
   - sources:: FATF 40 Recommendations; EU AMLD5/AMLD6; US Bank Secrecy Act; Basel BCBS CDD Guidance; EU MiCA Regulation 2023/1114; W3C Verifiable Credentials Data Model; FinCEN CDD Rule 2018
   - updated:: 2026-06-13

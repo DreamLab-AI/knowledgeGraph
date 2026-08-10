@@ -296,6 +296,24 @@ public:: true
   - owl-class:: finance:FinancialInstruments
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - Accelerated settlement is the defining structural shift: the EU adopted Regulation (EU) 2025/2075 amending CSDR in October 2025, mandating a move from T+2 to T+1 for transferable securities from 11 October 2027, with the UK (draft CSDR amendment SI, November 2025) and Switzerland aligning to the same date; securities financing transactions documented as single linked operations are exempt.
+  - Tokenisation of regulated instruments has moved from pilot to scaled product: BlackRock's tokenised money market fund BUIDL (issued via Securitize) grew from a March 2024 launch to roughly $2.87bn across nine chains by mid-2026, while total tokenised US Treasuries passed $14.6bn and tokenised real-world assets excluding stablecoins crossed $30bn in 2026.
+  - The US enacted the GENIUS Act stablecoin law in July 2025, and in August 2026 BlackRock launched two tokenised money market funds (BSTBL and BRSRV) explicitly structured to qualify as eligible reserve assets for permitted payment-stablecoin issuers under that Act.
+  - Market-infrastructure incumbents are building native tokenised rails: a December 2025 SEC staff no-action letter cleared DTC to run a three-year tokenisation initiative, DTCC scheduled its Tokenization Service for an October 2026 rollout, and NYSE/ICE filed in April 2026 to trade qualifying tokenised equities (matching ticker, CUSIP and shareholder rights) on the same order books as conventional shares.
+  - The EU's Market Integration and Supervision Package (published 4 December 2025) proposes a "Master Regulation" migrating core trading-venue rules into MiFIR, expands ESMA's direct supervisory remit, and introduces a new Settlement Finality Regulation, alongside ongoing MiFID II/MiFIR non-equity transparency (RTS 2) reforms in both the EU and UK.
+  - UK regulators advanced the tokenisation regime with FCA policy statement PS26/7 "Progressing Fund Tokenisation" (30 April 2026, following CP25/28), while the Property (Digital Assets etc) Act 2025 received Royal Assent on 2 December 2025, giving digital assets a recognised category of personal property under English law.
+  - Asia is catching up: Hong Kong's SFC opened regulated secondary trading of tokenised SFC-authorised funds via licensed VATPs (April 2026 circulars) and HKEX consulted on a T+1 cash-market shift targeting Q4 2027.
+  - Open challenges as of 2026 include reconciling T+0 atomic settlement of digital assets against T+1 conventional cycles, achieving programmable central-bank-money settlement (the Bank of England's Synchronisation service is not expected before 2028), fragmented cross-jurisdiction rulebooks, and thin secondary-market liquidity and narrow investor gating on tokenised instruments.
+
+- ### References
+  - 1. MUFG Investor Services (2026). Regulatory Round-Up for Fund Managers (Q2 2026): EU/UK T+1 and CSDR amendments. https://www.mufg-investorservices.com/wp-content/uploads/regulatory-round-up-fund-managers-q2-2026.pdf
+  - 2. Financial Conduct Authority (2026). PS26/7: Progressing Fund Tokenisation. https://www.fca.org.uk/publication/policy/ps26-7.pdf
+  - 3. Yahoo Finance / The Block (2026). BlackRock's BUIDL nears $1 billion on Avalanche; tokenised Treasuries surpass $14.6bn. https://finance.yahoo.com/markets/crypto/articles/blackrocks-buidl-nears-1-billion-140715821.html
+  - 4. Cointelegraph (2026). BlackRock launches tokenised money market funds (BSTBL, BRSRV) for stablecoin reserves under the GENIUS Act. https://cointelegraph.com/news/blackrock-launches-tokenized-money-market-funds-stablecoin-reserves
+  - 5. Blockonomi (2026). NYSE launches blockchain initiative for tokenised securities settlement; DTCC Tokenization Service and SEC no-action letter. https://blockonomi.com/nyse-launches-blockchain-initiative-for-instant-stock-settlement-with-stablecoins/
+  - 6. PwC Legal / Huertas (2026). Towards a More Unified Regime for Security Interests in Financial Instruments and Digital Assets (EU MIP, Property (Digital Assets etc) Act 2025). https://legal.pwc.de/content/services/regcore-client-alert/Practitioner%20Publications/m-huertas-2026-jiblr-issue-2-towards-a-more-unified-regime-for-security-interests-in-financial-instruments-and-digital-assets.pdf
+
 - ### Provenance
   - sources:: IAS 32; IFRS 9; MiFID II; Dodd-Frank Act; Basel III FRTB; BIS Working Paper on DeFi
   - updated:: 2026-06-13

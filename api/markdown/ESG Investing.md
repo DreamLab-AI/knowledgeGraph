@@ -291,6 +291,23 @@ public:: true
   - [[Smart Contract]] automation can enforce sustainability-linked coupon step-ups without manual verification, reducing counterparty risk in SLBs
   - Satellite data, IoT sensors, and [[Machine Learning]] increasingly used to generate independent ESG signals (deforestation detection, methane leak identification) that bypass company self-reporting biases
 
+- ### Current Landscape (2026)
+  - On 29 May 2026 the SEC voted to propose rescinding its March 2024 climate-related disclosure rules in their entirety (Release No. 33-11421, published in the Federal Register on 3 June 2026, comment period closing 3 August 2026), citing lack of statutory authority after it had ceased defending the rule in March 2025.
+  - The EU's "Omnibus I" simplification package, formally adopted on 24 February 2026, sharply narrowed the CSRD (now applying only to firms with more than 1,000 employees and over EUR 450m turnover), made climate transition plans and sector standards voluntary, and pushed CSDDD due-diligence duties out to July 2029; a 6 May 2026 draft delegated act cut mandatory ESRS data points by more than 60%.
+  - Global sustainable funds swung back to net inflows of USD 3.5bn in Q1 2026 and roughly USD 3.7bn in Q2 2026 after full-year 2025 saw a record USD 84bn of outflows (the first annual redemptions since Morningstar began tracking in 2018); US funds ended 14 straight quarters of outflows with nearly USD 3bn of inflows in Q2 2026.
+  - The rebound is heavily skewed to passive, index-tracking climate-transition and clean-energy strategies (e.g. First Trust's GRID ETF gathering USD 3.1bn in Q2 2026), while actively managed sustainable funds continued to bleed money for a 13th consecutive quarter; global sustainable assets stood at roughly USD 3.7 trillion by end-June 2026.
+  - ISSB-aligned disclosure regimes advanced globally even as US federal rules retreated: the UK published ISSB-based UK Sustainability Reporting Standards (UK SRS S1/S2) for voluntary use in February 2026, and Taiwan's FSC adopted IFRS Sustainability Disclosure Standards from 2026, while Brazil shifted its ISSB-based regime from mandatory to voluntary.
+  - US state-level rules diverged from the federal retreat: California's SB 253 (Scope 1 and 2 emissions reporting for firms with over USD 1bn revenue) held its first reporting deadline near 10 November 2026 after CARB deferred it from August, while SB 261's climate-risk disclosure was enjoined pending a Ninth Circuit First Amendment appeal.
+  - The EU Carbon Border Adjustment Mechanism (CBAM) moved from reporting-only to substantive payment obligations from 1 January 2026, and the European Commission's November 2025 proposal to overhaul the SFDR (replacing the Article 6/8/9 categories with a simpler classification) is being negotiated through 2026.
+  - Open challenges as of 2026 include a widening transatlantic regulatory split, persistent politicisation (the US "Protecting Americans' Retirement Savings From Politics Act" advancing in the House and scrutiny of proxy advisers), and a shift by large UK institutions from pooled ESG funds into bespoke segregated mandates that distorts headline flow data.
+
+- ### References
+  - 1. Pulsora (2026). ESG regulations and framework updates: Q2 2026. https://www.pulsora.com/blog/esg-regulations-and-framework-updates-q2-2026
+  - 2. U.S. Securities and Exchange Commission (2026). SEC Proposes Rescission of Climate-Related Disclosure Rules (Press Release 2026-49). https://www.sec.gov/newsroom/press-releases/2026-49-sec-proposes-rescission-climate-related-disclosure-rules
+  - 3. Morningstar (2026). US Sustainable Funds Returned to Positive Flows in Q2 2026. https://www.morningstar.com/sustainable-investing/us-sustainable-funds-returned-positive-flows-q2-2026
+  - 4. Morningstar (2026). ESG Funds: 2025 Closes With Continued Outflows Amid Persistent Headwinds. https://www.morningstar.com/sustainable-investing/esg-funds-2025-closes-with-continued-outflows-amid-persistent-headwinds
+  - 5. Generation Impact (2026). ESG Strategy: Global Regulatory Guide 2026. https://generationimpact.global/blog/esg-strategy-global-guide/
+
 - ### Provenance
   - sources:: UNPRI "Who Cares Wins" (2004); EU SFDR Regulation (EU) 2019/2088; ISSB IFRS S1 and S2 (2023); GRI Standards; TCFD Recommendations; SASB Standards
   - updated:: 2026-06-13

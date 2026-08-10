@@ -340,6 +340,23 @@ public:: true
   - The [[Shared Responsibility Model]] defines the division of security obligations between Google (infrastructure security) and the customer (data, IAM, application security).
   - Google participates in [[Open Compute Project]] hardware standardisation and contributes designs for its custom silicon (TPUs, Titanium security chip) to relevant industry bodies.
 
+- ### Current Landscape (2026)
+  - At Cloud Next '26 (22-24 April 2026, Las Vegas) Google consolidated Vertex AI and Agentspace into a single Gemini Enterprise Agent Platform, an end-to-end environment for building, governing and scaling AI agents with a 200+ model Model Garden that includes third-party models such as Anthropic's Claude.
+  - Google unveiled its eighth-generation TPUs as a dual-chip design: TPU 8t for training (superpods of up to 9,600 chips, 2PB shared HBM, ~3x Ironwood's compute) and TPU 8i for inference (up to 80% better performance per dollar), alongside plans to be among the first to offer NVIDIA's Vera Rubin NVL72 systems and the new Virgo interconnect network.
+  - The Agent2Agent (A2A) protocol, first launched at Next '25 with 50+ partners, reached v1.2, is now governed by the Linux Foundation's Agentic AI Foundation, and is reported in production at ~150 organisations including Microsoft, AWS, Salesforce, SAP and ServiceNow; it complements Anthropic's Model Context Protocol (MCP) rather than competing with it.
+  - Financial momentum accelerated sharply: Google Cloud posted its first $20B+ quarter in Q1 2026 (up 63% YoY) and $24.8B in Q2 2026 (up 82% YoY), with backlog swelling past $460B-$514B as Alphabet began recognising TPU-system sales into customer data centres, effectively turning Google into an emerging silicon vendor.
+  - Google Cloud reached roughly 14% of global cloud infrastructure market share by Q1 2026 (behind AWS ~28% and Azure ~21%), the largest share gain of the three hyperscalers since 2022, and completed its ~$32B acquisition of security firm Wiz in March 2026, folding it under the Google Cloud Unified Security umbrella.
+  - New infrastructure and go-to-market moves include Ironwood (7th-gen) TPUs reaching general availability, the Antigravity agentic development platform, a $750M partner fund targeting large consultancies (Accenture, Deloitte, KPMG, PwC, NTT DATA), Workspace Studio no-code agent building, and Managed Lustre storage moving up to 10TB/s.
+  - Open challenges as of 2026 centre on acute compute supply constraints (Google plans to lean on third-party capacity as a bridge into 2027), balancing TPU allocation between frontier model development and external cloud demand, and the governance and security of large-scale multi-agent deployments as A2A/MCP interoperability becomes a baseline expectation.
+
+- ### References
+  - 1. Google (2026). 7 highlights from Google Cloud Next '26. https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/google-cloud-next-26-recap/
+  - 2. TheNextWeb (2026). Google Cloud Next 2026: AI agents, A2A protocol, Workspace Studio. https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era
+  - 3. CRN (2026). Top 10 Biggest Google Cloud News Stories Of 2026 So Far. https://www.crn.com/news/cloud/2026/top-10-biggest-google-cloud-news-of-2026-so-far-wiz-agentic-ai-and-new-partner-program
+  - 4. Constellation Research (2026). Google Cloud starts shipping TPU systems, becomes chipmaker. https://www.constellationr.com/insights/news/google-cloud-starts-shipping-tpu-systems-becomes-chipmaker
+  - 5. Vectrel (2026). Google Declares the Agentic Enterprise Has Arrived: Google Cloud Next 2026. https://www.vectrel.ai/blog/google-cloud-next-2026-agentic-enterprise
+  - 6. Axis Intelligence (2026). Google Cloud Statistics: revenue, market share and TPU generations. https://axis-intelligence.com/google-cloud-statistics/
+
 - ### Provenance
   - sources:: Google Cloud official documentation (cloud.google.com); CNCF project registry; IEEE and ACM published research on Google infrastructure (Bigtable, Spanner, MapReduce, Borg papers); public GCP product announcements through 2025.
   - updated:: 2026-06-13

@@ -284,6 +284,22 @@ public:: true
   - **FMI/FMU (Functional Mock-up Interface)** — an IEC standard for co-simulation between heterogeneous physics models (e.g., coupling a fluid-dynamics FMU into a rigid-body engine) widely used in automotive and industrial simulation.
   - **OpenAI Gymnasium (formerly Gym)** — the de facto API contract between AI training code and simulation environments; most modern robotics and RL simulation engines implement or wrap this interface.
 
+- ### Current Landscape (2026)
+  - Simulation engines have converged on physical AI: at SIGGRAPH (August 2025) NVIDIA open-sourced Isaac Sim 5.0 and Isaac Lab 2.2 on GitHub, adding NuRec neural rendering (RTX ray-traced 3D Gaussian splatting) and OpenUSD robot/sensor schemas to narrow the sim-to-real gap.
+  - Newton, an open-source GPU physics engine jointly built by NVIDIA, Google DeepMind and Disney Research on the Warp framework, was announced at GTC (March 2025); its MuJoCo-Warp solver is reported to accelerate robot-learning workloads by more than 70x over the earlier JAX-based MJX implementation.
+  - Interoperability has become a headline feature: the August 2025 Omniverse SDKs added a MuJoCo (MJCF) to OpenUSD data bridge, opening cross-platform simulation to the roughly 250,000 MJCF robot-learning developers.
+  - Neural world-model "simulators" now sit alongside classical engines: NVIDIA Cosmos world foundation models (Cosmos Predict at CES January 2025, Cosmos Transfer and the 7-billion-parameter Cosmos Reason VLM through 2025) had passed 2 million downloads by mid-2025, generating controllable photoreal synthetic data for training and closed-loop testing.
+  - A credible open challenger emerged in May 2026 when Genesis AI released Genesis World 1.0 (the Genesis World physics engine, the Nyx path-traced renderer and the Apache-2.0 Quadrants Python-to-GPU compiler), reporting a 0.90 Pearson correlation between simulation and on-hardware rollouts and powering its GENE-26.5 robotic foundation model with zero simulated pre-training data.
+  - Adoption is now enterprise-scale: NVIDIA reported Omniverse at 300,000-plus downloads and 252-plus enterprise deployments (BMW, GM, Amazon, Siemens) by August 2025, while the legacy Omniverse Launcher was deprecated on 1 October 2025 in favour of the modular libraries/SDK distribution.
+  - Open frontiers as of 2026 include closing the residual sim-to-real gap for contact-rich and deformable manipulation, differentiable and multi-physics solvers, and coverage gaps in newer engines (Genesis still lacks LiDAR, GPS and ROS integration), alongside the unresolved question of how far generative neural simulators can substitute for physically grounded engines.
+
+- ### References
+  - 1. NVIDIA (2025). NVIDIA Opens Portals to World of Robotics With New Omniverse Libraries, Cosmos Physical AI Models and AI Computing Infrastructure (SIGGRAPH). https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Opens-Portals-to-World-of-Robotics-With-New-Omniverse-Libraries-Cosmos-Physical-AI-Models-and-AI-Computing-Infrastructure/default.aspx
+  - 2. NVIDIA (2025). NVIDIA Announces Isaac GR00T N1 and Simulation Frameworks, Including the Newton Physics Engine (GTC). https://nvidianews.nvidia.com/news/nvidia-isaac-gr00t-n1-open-humanoid-robot-foundation-model-simulation-frameworks
+  - 3. MarkTechPost (2026). Genesis AI Releases Nyx, Quadrants, and Genesis World 1.0 Physics Platform for Scalable Robotics Foundation Model Evaluation. https://www.marktechpost.com/2026/05/30/genesis-ai-releases-nyx-quadrants-and-genesis-world-1-0-physics-platform-for-scalable-robotics-foundation-model-evaluation/
+  - 4. Introl (2025). NVIDIA Omniverse: The Operating System for Physical AI and Industrial Digitalization. https://introl.com/blog/nvidia-omniverse-the-operating-system-for-physical-ai-and-industrial-digitalization
+  - 5. arXiv (2025). A Survey: Learning Embodied Intelligence from Physical Simulators and World Models. https://arxiv.org/html/2507.00917v2
+
 - ### Provenance
   - sources:: IEEE 1516 HLA Standard; SISO Standards Catalogue; NVIDIA Isaac Sim Documentation; MuJoCo Physics Documentation; OpenAI Gymnasium; ROS 2 Documentation; Unreal Engine Physics Documentation; Unity Physics Manual
   - updated:: 2026-06-13

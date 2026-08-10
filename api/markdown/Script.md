@@ -349,6 +349,22 @@ public:: true
 
   <!-- Merged from Script.md: Patreon -->
 
+- ### Current Landscape (2026)
+  - Bitcoin Script's frontier in 2024-2026 is the covenant debate: extending scripts from "who may spend" to constraining "where funds may go" via proposed opcodes, yet as of mid-2026 no covenant proposal has been merged into Bitcoin Core or activated on mainnet.
+  - OP_CTV (BIP-119, Jeremy Rubin) is closest to activation: a February 2026 activation client set Speedy Trial / BIP-9 parameters (90% miner threshold of 1,815 of 2,016 blocks, signalling from 30 March 2026 to 30 March 2027, minimum activation height around May 2027), but miner signalling stood at 0% as of late May 2026.
+  - OP_CAT (BIP-347, Ethan Heilman and Armin Sabouri) takes the opposite, general-primitive approach by reintroducing tapscript stack concatenation (repurposing OP_SUCCESS126 under BIP-342's 520-byte cap); its specification reached "Complete" status on 1 March 2026, it has run on Bitcoin Inquisition signet since April 2024 with roughly 74,000 test transactions, but it has no mainnet activation client.
+  - A phased consensus is forming around CTV plus CSFS (OP_CHECKSIGFROMSTACK, BIP-348, merged Nov 2024) as the likely first covenant soft fork, promoted by the September 2025 "CTV + CSFS letter" and the LNHANCE bundle aimed at Lightning (LN-Symmetry, PTLCs, vaults).
+  - Competing and reshaped proposals proliferated: OP_VAULT (BIP-345) was formally withdrawn in May 2025 and superseded by Salvatore Ingala's OP_CHECKCONTRACTVERIFY (BIP-443); BIP-446 (OP_TEMPLATEHASH, by Greg Sanders, Antoine Poinsot and Steven Roose) entered Draft in March 2026 as a Taproot-native drop-in replacement for CTV.
+  - Soft-fork-free alternatives gained ground: BitVM2 requires no consensus change and is already live, powering Citrea's mainnet bridge launched January 2026, and StarkWare demonstrated a STARK proof verified on signet via an OP_CAT covenant (12 July 2024).
+  - The central open challenge as of 2026 is activation governance and social consensus, not cryptographic design: recursive-covenant concerns (fungibility, MEV), disagreement over whether Speedy Trial is appropriate absent overwhelming consensus, and a growing institutional camp arguing Bitcoin's consensus rules should be treated as effectively immutable.
+
+- ### References
+  - 1. Spark (2026). Bitcoin Covenant Activation: Navigating the Path Forward After Years of Debate. https://www.spark.money/research/bitcoin-covenant-activation-path-forward
+  - 2. Spark (2026). Bitcoin Covenant Proposals Compared: CTV, APO, OP_CAT. https://www.spark.money/tools/bitcoin-covenant-proposals-compared
+  - 3. BlockEden (2026). How OP_CTV, LNHANCE, OP_CAT, and BitVM2 Could Reshape Bitcoin. https://blockeden.xyz/blog/2026/04/21/bitcoin-covenant-renaissance-op-ctv-lnhance-cat-bitvm2/
+  - 4. Spark (2026). OP_CAT and the Great Covenant Debate: Bitcoin's Most Divisive Opcode. https://www.spark.money/research/bitcoin-op-cat-covenant-debate
+  - 5. Cointelegraph Research (2026). Bitcoin Covenants Part 2: OP_CHECKTEMPLATEVERIFY. https://cointelegraph.com/research/bitcoin-covenants-part-2-op-checktemplateverify
+
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
   - migration-date:: 2026-04-26T00:00:00Z

@@ -273,6 +273,23 @@ public:: true
   - **Tally** and **Boardroom**: governance analytics and participation platforms that aggregate on-chain governance data across protocols.
   - Research into governance mechanism design intersects with academic work in [[Social Choice Theory]], [[Mechanism Design]], and public economics. Key researchers include Glen Weyl (quadratic mechanisms) and groups at Ethereum Foundation and Optimism's Law of Chains working group.
 
+- ### Current Landscape (2026)
+  - A 2026 Frontiers in Blockchain audit of eighteen protocols found delegation amplifies governance concentration in thirteen of them (Uniswap 2.7×, Arbitrum 3.1×, Optimism 3.6×), while vote-escrow designs are far more extreme — veCRV (Curve) 15×, veBAL (Balancer) 21× and veFXS (Frax) 11.4× — hardening the critique that token-weighted voting trends toward plutocracy.
+  - The dominant response has been professional delegate governance rather than direct one-token-one-vote: Uniswap, Aave, Optimism and Arbitrum now route most voting power through roughly 30–100 public, accountable delegates, and Arbitrum's DIP v1.7 update (2025) added a "Tier X" for holders of 500,000+ ARB while cutting delegate compensation by about 40% amid falling 2025 turnout.
+  - 2025–2026 saw a marked recentralisation wave: Arbitrum launched an Operating Company (OpCo), Uniswap introduced the DUNI legal-wrapper framework centralising operational authority, Jupiter paused governance for nearly six months, Scroll moved to a CEO-led structure and Celo merged its foundation with cLabs.
+  - Uniswap finally activated its long-debated fee switch (late 2024, after three failed attempts, ~72% approval), directing protocol fees to lockers and pledging to burn nearly $600M of UNI — a landmark shift in governance-token value accrual.
+  - Optimistic (veto-based) governance is spreading: Uniswap's Accountability Committee RFC explores it for treasury and operational actions alongside identity-verified delegates, while Lido adopted a dual-governance framework separating stakers from LDO holders to check unilateral token-weight control.
+  - Standardisation is maturing around ERC-5805 (delegatable, checkpointed votes) and ERC-6372 (clock-based voting), enabling fluid delegation and time-bound accountability, while quadratic voting (Gitcoin, Optimism grants) and conviction voting (1Hive) remain niche supplements rather than replacements.
+  - Open challenges as of 2026: turnout remains structurally low (10% is now considered "good"), Chainalysis-style analyses still show under 1% of holders controlling roughly 90% of voting power in major DAOs, and quadratic/reputation alternatives stay vulnerable to Sybil attacks, collusion and implementation complexity.
+
+- ### References
+  - 1. Frontiers in Blockchain (2026). Auditing governance concentration beyond token allocation. https://www.frontiersin.org/journals/blockchain/articles/10.3389/fbloc.2026.1853465/full
+  - 2. Frontiers in Blockchain (2025). Delegated voting in decentralized autonomous organizations. https://www.frontiersin.org/journals/blockchain/articles/10.3389/fbloc.2025.1598283/full
+  - 3. StableLab (2025). Governance Lab #106: Uniswap quorum/optimistic-governance RFC and Arbitrum Tier X. https://stablelab.substack.com/p/governance-lab-106
+  - 4. HTX Insights (2026). It's 2026 Already, DAOs Should Have Matured by Now. https://www.htx.com/news/its-2026-already-daos-should-have-matured-by-now-hLGmu38k/
+  - 5. Uniswap Governance Forum (2025). RFC: Governance Logistics Improvements. https://gov.uniswap.org/t/rfc-governance-logistics-improvements/25737
+  - 6. Chainscore Labs (2026). Arbitrum vs Optimism: DAO Voting 2026. https://chainscorelabs.com/comparisons/layer-1-monolithic-vs-modular-chains/governance-models/arbitrum-vs-optimism-dao-voting-2026
+
 - ### Provenance
   - sources:: Compound Governor Bravo documentation; OpenZeppelin Governor docs; Curve Finance veCRV design; Snapshot documentation; Vitalik Buterin "Moving beyond coin voting governance" (2021); Optimism Token House governance docs; Beanstalk post-mortem (2022)
   - updated:: 2026-06-13

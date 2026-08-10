@@ -286,6 +286,21 @@ public:: true
   - **Quantum optimisation**: NIST, IBM Quantum, and Google Quantum AI publish results on quantum advantage for combinatorial optimisation; QAOA circuits target MaxCut and related graph problems.
   - **Hardware acceleration**: GPU-parallel optimisation (CUDA kernels for [[Gradient Descent]]) and tensor cores for matrix operations are now standard in ML training infrastructure.
 
+- ### Current Landscape (2026)
+  - The headline shift since 2024 is the rise of matrix-preconditioned optimisers that challenge AdamW's long default status: Muon (Jordan et al., 2024), which orthogonalises each 2-D weight matrix's momentum via a matmul-only Newton-Schulz iteration, graduated from nanoGPT speedruns to frontier-scale training and stores only one momentum buffer per parameter (roughly half AdamW's optimiser-state memory).
+  - "Muon is Scalable for LLM Training" (Liu et al., Moonshot AI and UCLA, arXiv:2502.16982, Feb 2025) showed Muon scales with two additions - decoupled weight decay and consistent per-parameter update-RMS scaling - reaching a target loss on about 52% of AdamW's FLOPs (approximately 2x compute efficiency) on the Moonlight 16B/3B-active MoE trained on 5.7T tokens.
+  - Moonshot's Kimi K2 (arXiv:2507.20534, July 2025), a 1T-parameter / 32B-active MoE, introduced MuonClip - Muon plus a QK-Clip mechanism that rescales query/key projection weights whenever attention logits exceed a threshold (tau = 100) - and pre-trained on 15.5T tokens with zero loss spikes, solving the attention-logit-explosion instability that had blocked Muon at scale.
+  - Adoption has moved into production: Zhipu AI's GLM-4.5 and GLM-5 (744B) use Muon variants including a "Muon Split" that orthogonalises MLA up-projections per attention head, DeepSeek-V4 (1.6T) employs Muon, and framework support landed in DeepSpeed and PyTorch (PyTorch blog, mid-2026) plus Karpathy's nanochat, cementing the hybrid recipe of Muon for 2-D matrices and AdamW for embeddings, norms and the LM head.
+  - The MLCommons AlgoPerf benchmark reshaped the field: Distributed Shampoo (Anil et al.) won the 2024 external-tuning track and Schedule-Free AdamW (Defazio et al.) won the self-tuning track (Kasimbeg et al., 2025), reviving interest in second-order/dense-preconditioning methods and learning-rate-schedule-free training; a parallel wave includes SOAP (Vyas et al., 2025, Adam in Shampoo's eigenbasis), MARS, Prodigy, ADOPT and AdEMAMix.
+  - Frontier open challenges as of 2026: rigorous benchmarks temper the hype - "Fantastic Pretraining Optimizers and Where to Find Them" (arXiv:2509.02046, Sept 2025) finds matrix optimisers deliver only about 1.3-1.4x speedup (not 2x) below ~520M parameters and that gains depend heavily on well-tuned hyperparameter transfer (muP with 1/width-scaled weight decay, NeurIPS 2025); orthogonalisation remains defined only for 2-D weights, per-step runtime overhead is higher, and numerical-stability guarantees at multi-trillion-parameter scale are still being established.
+
+- ### References
+  - 1. Liu et al., Moonshot AI and UCLA (2025). Muon is Scalable for LLM Training. https://arxiv.org/abs/2502.16982
+  - 2. Kimi K2 Team, Moonshot AI (2025). Kimi K2: Open Agentic Intelligence (MuonClip / QK-Clip). https://arxiv.org/abs/2507.20534
+  - 3. PyTorch / DeepSpeed (2026). Using Muon Optimizer with DeepSpeed. https://pytorch.org/blog/using-muon-optimizer-with-deepspeed/
+  - 4. Semenov et al. (2025). Fantastic Pretraining Optimizers and Where to Find Them. https://arxiv.org/pdf/2509.02046.pdf
+  - 5. NeurIPS (2025). Hyperparameter Transfer Enables Consistent Gains of Matrix-Preconditioned Optimizers. https://proceedings.neurips.cc/paper_files/paper/2025/file/bdcd9f6327db5877dee502cdec183159-Paper-Conference.pdf
+
 - ### Provenance
   - sources:: Nocedal & Wright — "Numerical Optimization" (2nd ed.); Boyd & Vandenberghe — "Convex Optimization"; Sutton & Barto — "Reinforcement Learning: An Introduction"; Goodfellow, Bengio & Courville — "Deep Learning"
   - updated:: 2026-06-13

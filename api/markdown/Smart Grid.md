@@ -253,6 +253,22 @@ public:: true
     - **[[Anomaly Detection]]** applied to SCADA telemetry and smart meter data identifies both equipment degradation signatures and potential cyberattack indicators (e.g., false data injection attacks on state estimators).
   - The interaction between smart grids and AI infrastructure runs in both directions: AI data centres are emerging as significant flexible loads that participate in [[Demand Response]], and their growth is central to discourse around [[AI Energy Scarcity]].
 
+- ### Current Landscape (2026)
+  - Grid-forming (GFM) inverters have moved from optional to mandated: FERC approved NERC reliability standard PRC-029-1 under Order 909 on 24 July 2025, imposing inverter-based-resource (IBR) ride-through obligations that take effect 1 October 2026; in the EU, Network Code RfG 2.0 is being finalised through 2026 with a grid-forming obligation for new plants above 1 MW.
+  - Standards for IBRs firmed up sharply: IEEE 2800.2-2026 (conformance test procedures) was published in spring 2026, the UNIFI Consortium released Version 3 of its grid-forming performance specification in January 2026, and IEEE approved three follow-on projects (P2800a, P2800.1 and a full 2800 revision) in December 2025 to define equipment-level GFM requirements.
+  - NERC continues filing the Order 901 IBR standard suite in tranches (data sharing, model validation, planning studies, performance) with full implementation by 1 January 2030; FERC approved a further set of five NERC IBR data-and-model standards on 19 February 2026.
+  - AI-driven grid operations have become the defining software layer: the AI-in-grid-operations and DERMS market is put at roughly US$5bn in 2025 (some estimates US$8.4bn), with GE Vernova (GridOS, NVIDIA partnership), Siemens (Spectrum Power/PGIM, Microsoft partnership) and Schneider Electric (EcoStruxure, AutoGrid) as leaders, alongside AWS's commercial Outage Prediction Agent.
+  - DERMS matured but unevenly: the inaugural Verdantix Green Quadrant: DERMS (November 2025) named Emerson's AspenTech, GE Vernova, OATI and Schneider Electric as Leaders, with utilities prioritising feeder-safe DER hosting, faster interconnections and virtual-power-plant (VPP) orchestration under local constraints.
+  - The AI data-centre load surge is now a primary grid-planning driver: US data-centre demand of roughly 80 GW in 2025 is projected toward ~150 GW by 2028 (Bloom Energy, January 2026), prompting the US DOE's October 2025 ANOPR directing FERC to reform large-load and co-located interconnection rules by April 2026, plus a FERC directive to PJM.
+  - Open challenges as of 2026 include chronic interconnection-queue backlogs, proving grid-forming behaviour across heterogeneous inverter/battery fleets to regulators, DER cybersecurity (IEEE 1547.3 guidance), and integrating DERMS with legacy ADMS/SCADA estates while the global smart-grid market scales past US$52bn (2025).
+
+- ### References
+  - 1. Codibly (2026). When the Grid Stops Spinning: Grid-Forming as Software. https://codibly.com/blog/white-papers/grid-resilience-grid-forming-software
+  - 2. IEEE Power & Energy Society (2026). Inverter-Based Resources Standards in Electric Power Grids. https://ieee-pes.org/trending-tech/inverter-based-resources-standards-in-electric-power-grids/
+  - 3. Morgan Lewis (2026). Federal Regulatory Outlook for Electric Storage, QFs and Inverter-Based Resources. https://www.morganlewis.com/pubs/2026/03/federal-regulatory-outlook-for-electric-storage-qfs-and-inverter-based-resources
+  - 4. Verdantix (2025). New Green Quadrant Report Finds Utilities Exploring DERMS Capabilities. https://www.verdantix.com/insights/press-release/new-verdantix-green-quadrant-report-finds-utilities-exploring-derms-capabilities-to-enhance-grid-reliability--flexibility-and-forecasting
+  - 5. Alora Advisory (2026). Global AI in Grid Operations and DERMS Market Outlook to 2032. https://aloraadvisory.com/insights/global-ai-in-grid-operations-and-derms-market-outlook-2032
+
 - ### Provenance
   - sources:: IEC TC57, IEEE Power and Energy Society, NIST Smart Grid Programme, US DOE Office of Electricity, ENTSO-E, IEA Electricity Security reports
   - updated:: 2026-06-13

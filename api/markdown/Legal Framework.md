@@ -363,6 +363,23 @@ public:: true
   - Documented decision-making for processing activities
   - Incident response procedures for data breaches
 
+- ### Current Landscape (2026)
+  - The EU AI Act (Regulation (EU) 2024/1689), the world's first comprehensive horizontal legal framework for AI, moved into phased application: prohibited-practice and AI-literacy rules from 2 February 2025, general-purpose AI (GPAI) obligations and the governance regime from 2 August 2025, with the European AI Office assuming enforcement powers over GPAI models.
+  - On 19 November 2025 the European Commission tabled the "Digital Omnibus" and "Digital Omnibus on AI" simplification packages; the AI Omnibus "stops the clock" on high-risk obligations, replacing the fixed 2 August 2026 date with a standards-conditional timeline (backstops of 2 December 2027 for Annex III systems and 2 August 2028 for product-embedded Annex I systems). A political agreement was reached in May 2026 and the AI Omnibus entered into force on 27 July 2026.
+  - The Digital Omnibus also recalibrates the wider rulebook: it consolidates the Data Governance Act, Open Data Directive and Free Flow of Non-Personal Data Regulation into a restructured Data Act, amends GDPR (narrowing "personal data", enabling legitimate-interest AI training, extending breach notification to 96 hours), and creates a single-entry point routing incident reports across NIS2, GDPR, DORA, eIDAS and CER.
+  - The United States continues to lack a comprehensive federal AI statute, producing a fragmented state-law patchwork: California's Transparency in Frontier AI Act (SB 53, >10^26 FLOPS threshold), Texas's Responsible AI Governance Act (TRAIGA) and several California transparency laws took effect on 1 January 2026, while Colorado's risk-based AI Act was repealed and replaced by the narrower ADMT-focused SB 26-189, effective 1 January 2027.
+  - Federal-versus-state conflict intensified: President Trump's Executive Order 14179 (January 2025) revoked the Biden-era EO 14110, and the 11 December 2025 order "Ensuring a National Policy Framework for Artificial Intelligence" established a DOJ AI Litigation Task Force to challenge state AI laws on preemption and interstate-commerce grounds, naming Colorado's law specifically; by May 2026 three state laws (CO, NY, IL) faced active federal litigation.
+  - Standardisation and enforcement scaffolding matured: prEN 18286 (AI quality-management system for AI Act purposes) entered public enquiry on 30 October 2025 as the first harmonised AI standard, the DSA's Data Access Portal became operational in October 2025 with first fines against platforms expected in 2026, and the UK's Data (Use and Access) Act 2025 began phased commencement from August 2025.
+  - Key open challenges as of 2026 include delayed harmonised standards jeopardising high-risk AI compliance, the extraterritorial reach and regulatory overlap of the EU regime, unresolved US federal-preemption litigation creating compliance uncertainty, and reconciling data-protection simplification with maintaining fundamental-rights safeguards.
+
+- ### References
+  - 1. European Commission (2026). AI Act — Regulatory framework on AI. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 2. European Parliament (2026). The Digital Omnibus Regulation Proposal — Legislative Train Schedule. https://www.europarl.europa.eu/legislative-train/theme-a-new-plan-for-europe-s-sustainable-prosperity-and-competitiveness/file-digital-package
+  - 3. White & Case LLP (2025). EU Digital Omnibus: What changes lie ahead for the Data Act, GDPR and AI Act. https://www.whitecase.com/insight-alert/eu-digital-omnibus-what-changes-lie-ahead-data-act-gdpr-and-ai-act
+  - 4. Baker Botts (2026). U.S. Artificial Intelligence Law Update: Navigating the Patchwork. https://www.bakerbotts.com/thought-leadership/publications/2026/january/us-ai-law-update
+  - 5. VerifyWise (2026). State of AI Governance Regulations in the United States (March 2026). https://verifywise.ai/documents/state-of-ai-governance-regulations-us-march-2026.pdf
+  - 6. European Commission (2025). Standardisation of the AI Act — prEN 18286. https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

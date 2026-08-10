@@ -312,6 +312,23 @@ public:: true
   - **BPMN 2.0 (OMG)** — Business Process Model and Notation standard used to specify and document automated [[Business Process Management]] workflows.
   - Governance bodies include the International Society of Automation (ISA), the IEC TC65 technical committee, and the IEEE Robotics and Automation Society.
 
+- ### Current Landscape (2026)
+  - The defining shift of 2024–2026 is agentic automation: autonomous, goal-driven agents that plan, execute and adapt across whole workflows rather than running fixed scripts. Gartner's 2026 Hype Cycle places Agentic AI at the Peak of Inflated Expectations, and it forecasts that 40% of enterprise applications will embed task-specific AI agents in 2026, up from under 5% in 2025.
+  - Infrastructure automation is being re-architected around governed agent access. At HashiConf 2025 (25 September) HashiCorp — now an IBM company — previewed Project Infragraph, a real-time infrastructure graph for policy-aware agentic action (private beta opening December 2025), and shipped MCP servers for Terraform, Vault and Vault Radar to give agents auditable, RBAC-scoped endpoints.
+  - The Model Context Protocol (Anthropic) has become the connective tissue for infrastructure agents: Red Hat previewed MCP support in Ansible Lightspeed at AnsibleFest 2025 with Open Policy Agent (OPA) guardrails, and HashiCorp/GitHub wired GitHub Copilot to the Terraform MCP server at Microsoft Build 2025.
+  - Core IaC tooling matured in 2025: HCP Terraform Stacks reached general availability, OpenTofu (the open-source Terraform fork) gained ground and CNCF standing, and new entrants such as Formae (Platform Engineering Labs, October 2025) and Spacelift Intent pushed generative, drift-free approaches.
+  - Markets are scaling fast and consolidating. The agentic automation market was roughly USD 6.02bn in 2025 heading to USD 7.36bn in 2026 (Future Market Insights); AI-in-RPA is around USD 5.6bn in 2026; and Q1 2026 workflow-automation venture funding hit about USD 2.1bn. RPA is increasingly being reclassified as the reliable execution layer inside agentic platforms.
+  - Key players span IaC/DevOps (HashiCorp/IBM, Red Hat Ansible, Pulumi, Microsoft), agentic and RPA platforms (UiPath, Microsoft Power Automate, Automation Anywhere, ServiceNow, SS&C Blue Prism, Salesforce, SAP, Anthropic) and industrial/physical AI (NVIDIA, Siemens, Bosch, Rockwell Automation, ABB), with alliances like Siemens–NVIDIA and ABB–Microsoft co-developing full-stack systems.
+  - Open challenges as of 2026 centre on trust and control: proving ROI, orchestrating multi-agent systems (single-task bots are giving way to co-ordinated agents), and enforcing "governance-as-code" for security and compliance under regimes such as the EU AI Act, SOC 2 and HIPAA. Physical/embodied AI is the emerging frontier, with Capgemini reporting 79% of large organisations already engaging with it.
+
+- ### References
+  - 1. IBM Newsroom / HashiCorp (2025). HashiCorp Previews the Future of Agentic Infrastructure Automation with Project Infragraph. https://newsroom.ibm.com/2025-09-25-hashicorp-previews-the-future-of-agentic-infrastructure-automation-with-project-infragraph
+  - 2. HashiCorp (2025). Scale infrastructure with new Terraform and Packer features at HashiConf 2025. https://www.hashicorp.com/en/blog/scale-infrastructure-with-new-terraform-and-packer-features-at-hashiconf-2025
+  - 3. DevOps.com (2025). Red Hat Previews Series of Updates to Ansible Automation Platform. https://devops.com/red-hat-previews-series-of-updates-to-ansible-automation-platform/
+  - 4. Future Market Insights (2026). Agentic Automation Market. https://www.futuremarketinsights.com/reports/agentic-automation-market
+  - 5. accio.com (2026). RPA Trends Gartner 2026: AI & Automation Insights. https://www.accio.com/business/rpa_trends_gartner
+  - 6. Mordor Intelligence (2025). Agentic AI in Manufacturing and Industrial Automation Market. https://www.mordorintelligence.com/industry-reports/agentic-artificial-intelligence-in-manufacturing-and-industrial-automation-market
+
 - ### Provenance
   - sources:: IEC 61131-3; ISA-95; NIST SP 500-321; IEEE 7010; established engineering and computer science literature
   - updated:: 2026-06-13

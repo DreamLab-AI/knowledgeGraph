@@ -315,6 +315,23 @@ public:: true
   - owl-class:: infrastructure:RealTimeCommunication
   - owl-role:: Class
 
+- ### Current Landscape (2026)
+  - Media over QUIC (MoQ) matured rapidly: the IETF moq working group's core transport draft reached draft-ietf-moq-transport-19 (July 2026, editors from Cisco, Google and Meta) with an IESG publication target of December 2026 and a likely RFC in 2027, aiming to unify sub-second interactive latency with CDN-scale fan-out over QUIC/WebTransport.
+  - Cloudflare launched the first production MoQ relay network in August 2025 across 330+ cities; nanocosmos, WINK Streaming and CDN77 also run production MoQ, and NAB Show 2026 saw eleven vendors (Ant Media, AWS, Bitmovin, Cloudflare, Oracle, Red5 and others) demonstrate cross-implementation interop, delivering roughly 200–300 ms glass-to-glass.
+  - WebTransport reached cross-browser Baseline in March 2026 when Safari 26.4 shipped it out of the box, joining Chrome, Edge and Firefox — finally making a browser-native MoQ client a normal web app rather than a Chromium-only experiment.
+  - WHIP became an IETF standard (RFC 9725) in March 2025, making WebRTC ingest portable between encoders and media servers without vendor glue; paired with WHEP for egress, it is now the default for pulling non-browser sources into WebRTC pipelines.
+  - AI voice agents drove a WebRTC resurgence: OpenAI made its Realtime API generally available on 28 August 2025 with gpt-realtime (later gpt-realtime-2 in May 2026 and gpt-realtime-2.1), offering WebRTC, WebSocket and now-GA SIP transports, remote MCP tools and roughly 800 ms voice-to-voice latency at about $0.06–$0.10 per conversational minute.
+  - AV1 crossed from research codec to practical use: Netflix reports roughly 30% of streaming hours are now AV1 and YouTube serves 90%+ of desktop 4K in AV1, with hardware-accelerated encoding on Apple M-series, Intel 12th-gen+ and AMD RDNA3+ — though for interactive WebRTC, VP8 and H.264 remain the workhorses because AV1 software encoding is still 5–10× slower.
+  - Open challenges as of 2026: MoQ is still a draft with no named at-scale independent benchmark, lacks a DRM/SCTE-35 framework for regulated broadcast, and does not replace WebRTC for one-to-one voice; OpenAI's Realtime audio path remains non-HIPAA-eligible, leaving healthcare voice agents to route through separate speech-to-text/text-to-speech.
+
+- ### References
+  - 1. IETF Media Over QUIC Working Group (2026). draft-ietf-moq-transport-19: Media over QUIC Transport. https://datatracker.ietf.org/group/moq/documents/
+  - 2. Cloudflare (2025). MoQ: Refactoring the Internet's real-time media stack (first production MoQ relay network across 330+ cities). https://blog.cloudflare.com/moq/
+  - 3. Digital Samba (2026). Media over QUIC (MoQ) Explained — Streaming Guide 2026. https://www.digitalsamba.com/blog/media-over-quic-explained
+  - 4. Fora Soft (2026). Media over QUIC: 2026 Architecture & Migration Guide (WebTransport Baseline, draft-18, production deployments). https://www.forasoft.com/blog/article/moq-application-development-architecture
+  - 5. OpenAI (2025). Introducing gpt-realtime and Realtime API updates — general availability with SIP and WebRTC. https://openai.com/index/introducing-gpt-realtime/
+  - 6. Fora Soft (2026). Best Technologies for Video Streaming Apps 2026 — WHIP (RFC 9725), AV1 adoption, MoQ production pilots. https://www.forasoft.com/blog/article/best-technologies-video-streaming-app-2024
+
 - ### Provenance
   - sources:: W3C WebRTC 1.0 Recommendation; IETF RFC 3550 (RTP); IETF RFC 3261 (SIP); IETF RFC 8445 (ICE); IETF RFC 8825 (WebRTC Overview)
   - updated:: 2026-06-13

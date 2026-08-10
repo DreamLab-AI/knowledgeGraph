@@ -270,6 +270,23 @@ public:: true
   - PAC (Probably Approximately Correct) learning theory, developed by Valiant (1984), translates probability theory into computational learning guarantees and informs modern understanding of [[Machine Learning]] generalisation.
   - [[Information Theory]] (Shannon 1948) is an immediate application domain that has reciprocally enriched probability theory through concentration inequalities and entropy-based proof techniques.
 
+- ### Current Landscape (2026)
+  - Score-based diffusion has become the flagship application of modern probability theory in ML, and 2024-2025 saw the sampling theory sharpen dramatically: the JMLR convergence paper (Li and Yan, published Sept 2025, first shown at ICLR 2025) proved an O(d/T) total-variation bound for the DDPM sampler under only a finite-first-moment assumption, improving the earlier O(sqrt(d)/T) state of the art.
+  - The probabilistic-programming toolchain has matured into production infrastructure: PyMC reached v5.27.1 (January 2026) with active monthly releases and deployments at firms such as Salesforce, while JAX-based NumPyro reports roughly 11x GPU-over-CPU speedups for large-scale MCMC and variational inference.
+  - Uncertainty quantification consolidated around efficient, single-pass alternatives to full Bayesian inference - SWAG/MultiSWAG, Last-Layer Laplace, SNGP, evidential deep learning and credal (interval-valued) ensembles - as catalogued in the July 2026 survey by Gillis and Trappenberg and the April 2026 JCST calibration survey by Zhang and Wang.
+  - Prior-Fitted Networks (PFNs), presented at ICML 2025, generalised amortised Bayesian prediction from small tabular tasks to larger and more complex domains, offering approximate posteriors in a single forward pass rather than via sampling.
+  - Probabilistic hardware moved from theory toward silicon: Extropic's October 2025 architecture paper introduced Denoising Thermodynamic Models on an all-transistor probabilistic computer, projecting image-generation parity with GPUs at roughly 10,000x lower energy.
+  - Regulatory and applied uptake is now concrete - the US FDA signalled acceptance of Bayesian methods for clinical-trial design (particularly rare-disease and oncology) as of January 2026 - and conformal prediction gained ground as a distribution-free route to finite-sample coverage guarantees under exchangeability.
+  - Open frontiers as of 2026 include reliable epistemic-uncertainty estimates for large language models (via approximate Bayesian computation and prompt-based frameworks), calibration robustness under distribution shift, low signal-to-noise-ratio failure of naive Monte Carlo predictive-density estimators, and heavy-tailed / alpha-stable noise models (e.g. Denoising Levy Probabilistic Models) that relax the ubiquitous Gaussian assumption.
+
+- ### References
+  - 1. Deepgram (2026). Bayesian Machine Learning: Probabilistic AI Framework Guide. https://deepgram.com/learn/bayesian-machine-learning
+  - 2. Li, G. and Yan, Y. (2025). O(d/T) Convergence Theory for Diffusion Probabilistic Models under Minimal Assumptions. Journal of Machine Learning Research 26. https://www.jmlr.org/papers/volume26/25-0272/25-0272.pdf
+  - 3. Jelincic, A., Lockwood, O., Garlapati, A., Verdon, G. and McCourt, T. / Extropic (2025). An efficient probabilistic hardware architecture for diffusion-like models. arXiv:2510.23972. https://arxiv.org/html/2510.23972v1
+  - 4. Gillis, H. M. and Trappenberg, T. (2026). Uncertainty quantification for trustworthy deep learning: Methods and measures. arXiv:2607.28248. https://arxiv.org/abs/2607.28248
+  - 5. Zhang, M.-L. and Wang, D.-B. (2026). Uncertainty Calibration in Deep Learning: Methods, Emerging Challenges, and LLM Frontiers. Journal of Computer Science and Technology 41(1). https://www.sciopen.com/article/10.1007/s11390-026-6426-z
+  - 6. Anonymous (2025). A Survey of 26K Papers (CVPR, ICLR, NeurIPS 2023-2025). arXiv:2510.09586. https://arxiv.org/html/2510.09586v1
+
 - ### Provenance
   - sources:: Kolmogorov, A.N. (1933), *Grundbegriffe der Wahrscheinlichkeitsrechnung*; Billingsley, P. (1995), *Probability and Measure* (3rd ed.); Williams, D. (1991), *Probability with Martingales*; Durrett, R. (2019), *Probability: Theory and Examples* (5th ed.); Pearl, J. (2009), *Causality*; Shannon, C.E. (1948), "A Mathematical Theory of Communication"
   - updated:: 2026-06-13

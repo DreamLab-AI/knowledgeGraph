@@ -255,6 +255,22 @@ public:: true
   - owl-class:: quadratic-funding:Quadratic Funding
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - Gitcoin Grants 24 (GG24, October 2025) launched "Gitcoin 3.0" under the tagline "Fund What Matters", distributing roughly $1.8M and running QF as just one of six parallel mechanisms alongside Deep Funding, MACI private voting, conviction voting, retroactive funding and peer-reviewed Hypercerts — marking a decisive shift from a single-mechanism QF programme to a plural, multi-mechanism model.
+  - GG24's QF rounds (donation window 14–28 October 2025) were operated by Giveth rather than Gitcoin itself, with ~$300K in matching pools on Arbitrum and Celo, per-project caps of 5%/$10K (Dev Tooling) and 15%/$15K (Interop), and multi-chain donation checkout across Ethereum, Base, Optimism, Polygon, Gnosis, Celo and Arbitrum.
+  - Deep Funding has emerged as the flagship "reformed" mechanism, using AI to rank millions of dependency-graph edges (via Seer prediction markets in GG24) with human jurors spot-checking — reflecting a 2026 priority framed by Gitcoin and Vitalik Buterin as "proof of impact, not vibes" and "fund your dependencies" over broad one-off QF rounds.
+  - Sybil resistance has hardened around Human Passport (formerly Gitcoin Passport): GG24 required a Passport model score above 50 or 15+ stamps and only matched donations over ~$1, while Connection-Oriented Cluster Matching (COCM) increasingly replaces naive pairwise matching to embrace rather than merely penalise coordination.
+  - Anti-collusion is the recognised research frontier: MACI (now MACI 2.0, deployed via clr.fund on multiple L2s) uses zk-SNARKs for receipt-free encrypted voting, though a November 2025 ethresear.ch agenda notes it remains limited to mid-sized rounds by usability, and argues collusion — not sybils — is QF's core unsolved vulnerability.
+  - The ecosystem has become polycentric: cumulative Gitcoin QF has channelled roughly $60M to 3,700+ projects, but capital now flows through complementary models including Optimism's Retroactive Public Goods Funding, Octant's yield/staking-based allocation, Drips, Giveth and Nouns, with total Ethereum public-goods funding surpassing $150M.
+  - Open challenges as of 2026 include persistent collusion resistance without a trusted coordinator, sustainable structural revenue (sequencer fees, OSS licensing, treasury yield) to replace episodic matching pools, and reconciling QF's democratic breadth with the reformed emphasis on tight, provable, dependency-driven "existential infrastructure" funding.
+
+- ### References
+  - 1. Gitcoin (2026). Quadratic Funding — mechanisms overview. https://gitcoin.co/mechanisms/quadratic-funding
+  - 2. Gitcoin (2026). Gitcoin Grants 24 (GG24) — campaign overview. https://gitcoin.co/campaigns/gitcoin-grants-24-gg24
+  - 3. Giveth / Gitcoin Governance (2025). GG24 OSS Quadratic Funding Results. https://gov.gitcoin.co/t/gg24-oss-quadratic-funding-results/24782
+  - 4. ethresear.ch (2025). Three Fundamental Problems in Ethereum Public Goods Funding: A Research Agenda. https://ethresear.ch/t/three-fundamental-problems-in-ethereum-public-goods-funding-a-research-agenda/23474
+  - 5. Gitcoin (2025). Reforming ETH Public Goods Funding in 2026+. https://gitcoin.co/research/reforming-eth-public-goods-funding-2026
+
 - ### Provenance
   - sources:: Buterin, Hitzig & Weyl (2018) *Liberal Radicalism*; Buterin (2019) *Quadratic Payments: A Primer*; Gitcoin Grants Stack open-source contracts; RadicalxChange Foundation documentation
   - updated:: 2026-06-13

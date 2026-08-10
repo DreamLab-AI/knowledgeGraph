@@ -389,6 +389,24 @@ alias:: AutonomousNavigation
   - [[SLAM]]
   - [[Localisation]]
 
+- ### Current Landscape (2026)
+  - The field has pivoted from purely geometric SLAM toward AI-native, semantic navigation: 2025-2026 work fuses vision foundation models with mapping, e.g. DINO-VO (2025) using DINOv2 features for robust monocular visual odometry, and Gaussian-splatting SLAM systems such as OpenGS-SLAM (2025) and FeatureSLAM (2026) that build open-vocabulary semantic maps.
+  - Vision-Language-Action (VLA) generalist models moved into navigation pipelines in 2026 — surveyed comprehensively in the April 2026 "Foundation Models in Robotics" review (arXiv:2604.15395), covering models like UniVLA (8.5B params) — enabling instruction-following, long-horizon planning rather than task-specific policies.
+  - NVIDIA shipped a unified 3D perception stack for robots in 2025: cuVSLAM (now with a PyCuVSLAM Python API), the zero-shot FoundationStereo depth model (CVPR 2025 best-paper nominee), and the nvblox GPU reconstruction library, lowering the barrier to onboard real-time localisation and mapping.
+  - Waymo became the first robotaxi service at genuine commercial scale: by mid-2026 roughly 3,500-3,871 vehicles, ~500,000 paid rides and ~4M autonomous miles per week, and over 200M cumulative driverless miles; it raised a $16B round at a $126B valuation in February 2026.
+  - Rapid geographic expansion through 2025-2026 took Waymo to 11 US metros, added freeway rides (introduced November 2025, paused May-July 2026 over construction-zone handling, restored from 29 July 2026), and set first international launches in London (targeted September 2026) and Tokyo.
+  - Regulation and safety scrutiny intensified: NHTSA opened investigations into Waymo behaviour, issued recall 26E035 tied to freeway construction zones, and set a 31 July 2026 deadline for AV operators to submit first-responder remediation plans; each new US market still needs separate state DMV and CPUC-style approvals.
+  - VLA-SLAM patenting accelerated in 2024-2026 (e.g. Hefei Keda's 2026 filings integrating VLA models into loop closure, keyframe selection and hierarchical situational maps), signalling a shift from geometry-first to task-semantics-first navigation.
+  - Open challenges as of 2026 remain robustness under adverse conditions (low light, fog, motion blur, dynamic obstacles), efficient deployment of large models on embedded/edge compute, GNSS-denied long-range relocalisation, and closing the gap between benchmark performance and safety-critical real-world generalisation.
+
+- ### References
+  - 1. arXiv (Ravichandran et al.) (2026). Foundation Models in Robotics: A Comprehensive Review of Navigation, Manipulation and Perception. https://arxiv.org/abs/2604.15395
+  - 2. Edge AI and Vision Alliance / NVIDIA Research (2025). R²D²: Building AI-based 3D Robot Perception and Mapping (cuVSLAM, FoundationStereo, nvblox). https://www.edge-ai-vision.com/2025/06/r%C2%B2d%C2%B2-building-ai-based-3d-robot-perception-and-mapping-with-nvidia-research/
+  - 3. PatSnap Eureka (2026). Robot SLAM Technology Landscape 2026. https://www.patsnap.com/resources/blog/rd-blog/robot-slam-technology-landscape-2026-patsnap-eureka/
+  - 4. The Charge Port (2026). Robotaxi Status Tracker — Waymo, Tesla & Zoox (July 2026). https://thechargeport.com/robotaxi-tracker
+  - 5. Electrek (2026). Waymo goes driverless in Las Vegas, with Denver, San Diego, Tampa next. https://electrek.co/2026/07/08/waymo-driverless-las-vegas-four-new-cities/
+  - 6. Wikipedia (2026). Waymo. https://en.wikipedia.org/wiki/Waymo
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

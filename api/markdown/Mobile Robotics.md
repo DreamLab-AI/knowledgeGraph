@@ -143,6 +143,23 @@ public:: true
   - **IEEE RAS (Robotics and Automation Society)** — primary professional body, publishing IEEE Transactions on Robotics and co-organising ICRA (International Conference on Robotics and Automation), the leading venue for mobile robotics research.
   - **Integration with [[Digital Twin]]** — mobile robots increasingly feed live telemetry into digital twin environments, allowing facility operators to visualise real-time robot positions and occupancy within simulated plant layouts, bridging to [[Spatial Computing]] platforms.
 
+- ### Current Landscape (2026)
+  - Vision-Language-Action (VLA) models moved from research curiosity to production stack and now feature in roughly 40% of new robot deployments: DeepMind shipped Gemini Robotics (March 2025) with zero-shot cross-embodiment transfer, followed by Gemini Robotics 1.5 and the Gemini Robotics 2 / ER 2 series (July 2026), while Physical Intelligence progressed from open-sourced pi0 (October 2024) through pi0.5, pi0.6 and pi0.7 (April 2026).
+  - Open humanoid foundation models matured rapidly: NVIDIA's GR00T line ran from N1 (GTC, March 2025) to N1.7 Early Access (April 2026), a 3B-parameter commercially licensed VLA on a Cosmos-Reason2 backbone with an Action Cascade dual-system architecture; open alternatives include OpenVLA (7B), RDT-1B, and HuggingFace's 450M SmolVLA (June 2025).
+  - Humanoid mobile manipulators reached paid factory work: Figure 03 (Helix model) deployed on BMW's Spartanburg line, Boston Dynamics' all-electric Atlas (56 DoF, up to 50 kg lift) began production in early 2026 with Hyundai and DeepMind commitments, Agility's Digit was tested in live Amazon operations, and Unitree's G1 shipped as a sub-$16,000 research platform.
+  - Humanoid shipments jumped from around 3,000 units in 2024 to about 13,000 in 2025 (Omdia), with Counterpoint estimating over 50,000 humanoids operating commercially in 2026; the broader autonomous mobile robot market is put at roughly USD 4.5-5.5 billion in 2025-2026 with the installed industrial AMR fleet passing 1.2 million units.
+  - Navigation is shifting from LiDAR-only to sensor-fusion with Visual SLAM for cheaper semantic mapping, aided by 5G-Advanced connectivity, UWB positioning and lower-cost lithium-ion batteries enabling heavy-payload (above 1,000 kg) AMRs.
+  - Safety and standards tightened around ISO 3691-4:2023 (driverless industrial trucks), the ANSI/RIA R15.08 industrial mobile robot family (Part 2 added October 2023), ISO/DIS 13482 for service robots, and the EU Machinery Regulation (EU) 2023/1230 requiring CE marking; DeepMind also released the ASIMOV-Agentic embodied-AI safety benchmark alongside Gemini Robotics 2.
+  - Open challenges as of 2026 include the persistent sim-to-real gap for agile whole-body control (addressed by work such as NVIDIA's ASAP), the absence of standardised fleet-communication protocols that locks buyers into single-vendor ecosystems, on-device inference and latency constraints, and formal safety verification for language-conditioned autonomy in shared human spaces.
+
+- ### References
+  - 1. Robotics Center / SVRC (2026). State of Robotics 2026 Report: $38B Market, 12 Humanoids, VLA Adoption. https://www.roboticscenter.ai/state-of-robotics-2026
+  - 2. Vicon (2026). What Are Humanoid Robots? The State of Robotics in 2026. https://www.vicon.com/resources/blog/the-rise-of-humanoid-robots-where-are-we-in-2026/
+  - 3. MarkTechPost (2026). Top 10 Physical AI Models Powering Real-World Robots in 2026. https://www.marktechpost.com/2026/04/28/top-10-physical-ai-models-powering-real-world-robots-in-2026/
+  - 4. SiliconANGLE (2026). Google DeepMind debuts Gemini Robotics 2 model series for humanoid robots. https://siliconangle.com/2026/07/30/google-deepmind-debuts-gemini-robotics-2-model-series-humanoid-robots/
+  - 5. Mordor Intelligence (2026). Autonomous Mobile Robot Market Size, Share & Outlook 2031. https://www.mordorintelligence.com/industry-reports/autonomous-mobile-robot-market
+  - 6. A3 / Automate.org. The Latest in Autonomous Mobile Robots: New Safety Standards, Greater Usability, and Advanced Features. https://www.automate.org/robotics/industry-insights/autonomous-mobile-robot-safety-updates-new-features
+
 - ### Provenance
   - sources:: Thrun, Burgard & Fox — *Probabilistic Robotics* (MIT Press, 2005); LaValle — *Planning Algorithms* (Cambridge, 2006); IEEE Transactions on Robotics; ICRA/IROS proceedings; ROS 2 documentation; ISO 3691-4:2020 standard synopsis
   - updated:: 2026-06-13

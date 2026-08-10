@@ -248,6 +248,22 @@ alias:: ISO (International Organization for Standardization)
   - ISO SC 42 (AI) directly interfaces with the [[EU AI Act]] harmonisation process; EU Standardisation Request M/623 tasks CEN/CENELEC and ISO/IEC with producing harmonised standards that provide presumption-of-conformity pathways for high-risk AI systems.
   - CASCO (ISO Committee on Conformity Assessment) develops [[Conformity Assessment]] standards (ISO/IEC 17000 series) and coordinates with IAF (International Accreditation Forum) and ILAC (International Laboratory Accreditation Cooperation) to maintain the global accreditation infrastructure.
 
+- ### Current Landscape (2026)
+  - ISO's headline governance move of this period is ISO/IEC 42001:2023, the world's first certifiable AI management system standard (developed with IEC via JTC 1/SC 42), which through 2024-2026 became the reference framework organisations use to operationalise responsible AI governance on the familiar Plan-Do-Check-Act / Annex SL backbone.
+  - The AI governance family expanded around it: ISO/IEC 42005:2025 (AI system impact assessment) and ISO/IEC 42006 (requirements for bodies certifying AI management systems) matured the certification ecosystem, with ISO/IEC 42001 and 42005 now marketed as a paired responsible-AI toolkit.
+  - ISO/IEC 42001 is increasingly positioned as the practical "how" companion to the EU AI Act's "what" — commentary through 2025 pairs it with the Act as GPAI obligations began applying from 2 August 2025 and earlier prohibitions took effect in February 2025.
+  - On sustainability governance, ISO and the UNDP are developing ISO/UNDP 53001, a management system standard for embedding the UN SDGs into organisational governance, expected mid-2026 and building on the ISO/UNDP PAS 53002:2024 guidelines; it was profiled at COP30 as supporting the Baku to Belem Roadmap.
+  - Following the 2021 London Declaration, ISO amended all new and existing management system standards to require consideration of climate change, a change that propagated across the MSS catalogue during 2024.
+  - Governance leadership shifted: Sung Hwan Cho (Republic of Korea) served as ISO President for 2024-2025, and Khaled Soufi (Egypt) took over as President for a three-year term from 1 January 2026, while Sergio Mujica continues as Secretary-General steering the decade-long ISO Strategy 2030 (AI and climate as core priorities, ~173 member-country input).
+  - Open challenges as of 2026 include enabling equitable participation by developing countries in standards development, keeping standards current against fast-moving AI and quantum technology, and closing the gap between voluntary certification and hardening regulatory mandates.
+
+- ### References
+  - 1. ISO/IEC (2023-2025). ISO/IEC 42001 AI management systems (overview and explainer). https://www.iso.org/artificial-intelligence/ai-management-systems
+  - 2. ISACA (2025). ISO/IEC 42001 and EU AI Act: A Practical Pairing for AI Governance. https://www.isaca.org/resources/news-and-trends/industry-news/2025/isoiec-42001-and-eu-ai-act-a-practical-pairing-for-ai-governance
+  - 3. ISO (2025). Responsible AI governance and impact standards package (ISO/IEC 42001 and ISO/IEC 42005:2025). https://www.iso.org/publication/PUB200420.html
+  - 4. UNDP (2025). UNDP and ISO Advance New Global Partnership to Build 'Impact Economies' at COP30 (ISO/UNDP 53001, expected mid-2026). https://sdgfinance.undp.org/news-events/undp-and-iso-advance-new-global-partnership-build-impact-economies-cop30
+  - 5. ISO (2024-2026). Principal Officers (Sung Hwan Cho, Khaled Soufi, Sergio Mujica). https://www.iso.org/principal-officers.html
+
 - ### Provenance
   - sources:: ISO official documentation; ISO/IEC Directives; WTO TBT Agreement text; EU AI Act recitals; established technical literature on international standardisation
   - updated:: 2026-06-13

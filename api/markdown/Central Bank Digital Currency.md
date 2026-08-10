@@ -325,6 +325,23 @@ alias:: CBDC, CentralBankDigitalCurrency
   - Monetary policy implementation
   - Government benefit distribution
 
+- ### Current Landscape (2026)
+  - The ECB concluded its two-year digital euro preparation phase in October 2025 and, on 29-30 October 2025, moved to a technical-readiness phase; on 2 October 2025 it signed framework agreements with providers for all five infrastructure components, and estimates development costs of around EUR 1.3 billion until first issuance.
+  - The digital euro timeline is now explicitly legislation-gated: assuming EU co-legislators adopt the Regulation on the establishment of the digital euro during 2026, a pilot exercise could start mid-2027 with a potential first issuance during 2029; the Governing Council will only decide to issue once the legislative act is adopted.
+  - China's People's Bank of China introduced interest-bearing e-CNY wallets from 1 January 2026, a global first that shifts much of the digital yuan from "digital cash" towards "digital deposits" held on commercial-bank balance sheets; cumulative e-CNY transactions reached roughly 16.7 trillion yuan (about USD 2.4 trillion) across ~3.5 billion transactions and 2.25 billion wallets by November 2025.
+  - The United States moved decisively against a retail CBDC: the GENIUS Act (stablecoin framework) was signed on 18 July 2025, and Title XI of the 21st Century ROAD to Housing Act (P.L. 119-101) prohibits the Federal Reserve from issuing a CBDC through 2030, favouring privately issued regulated stablecoins instead.
+  - Wholesale and cross-border work has overtaken retail as the frontier: China's mBridge continued after the BIS Innovation Hub exited in 2024 (with Saudi Arabia joining that year), while multilateral wholesale efforts such as Project Agora and the SNB's Helvetia advanced, and the ECB ran interoperability trials with Singapore.
+  - Other major pilots progressed on staggered timelines: Russia plans to have its largest banks offer digital ruble access from September 2026, Brazil's Drex entered a phased 2026 rollout, Kazakhstan targeted full Digital Tenge launch by end-2025, the UAE moved towards a Digital Dirham launch, and India expanded e-rupee offline and programmability features to non-bank wallet providers.
+  - Live retail CBDCs remain confined to smaller economies -- the Bahamas' Sand Dollar, Jamaica's JAM-DEX, Nigeria's eNaira and the Eastern Caribbean's DCash -- with persistently modest adoption; the core open challenges as of 2026 are avoiding bank disintermediation (privacy-preserving holding limits), delivering genuine offline payments, and demonstrating retail demand where private rails already dominate.
+
+- ### References
+  - 1. European Central Bank (2025). Eurosystem moving to next phase of digital euro project (press release, 30 October 2025). https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251030~8c5b5beef0.en.html
+  - 2. European Central Bank (2025). Preparation phase of a digital euro - Closing report. https://www.ecb.europa.eu/euro/digital_euro/progress/html/ecb.deprp202510.en.html
+  - 3. Peterson Institute for International Economics (2026). China gives up on state-backed digital cash: The US and Europe should take note. https://www.piie.com/blogs/realtime-economics/2026/china-gives-state-backed-digital-cash-us-and-europe-should-take-note
+  - 4. Congressional Research Service (2026). Central Bank Digital Currencies: Policy Issues (updated 15 July 2026). https://www.congress.gov/crs_external_products/IF/HTML/IF11471.html
+  - 5. International Monetary Fund (2025). Central Bank Digital Currency: Further Navigating Challenges. https://www.imf.org/-/media/files/publications/pp/2025/english/ppea2025041.pdf
+  - 6. Observer Research Foundation (2026). China's Evolving CBDC Architecture. https://www.orfonline.org/expert-speak/china-s-evolving-cbdc-architecture
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

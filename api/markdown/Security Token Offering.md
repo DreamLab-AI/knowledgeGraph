@@ -301,6 +301,22 @@ public:: true
   - **[[Initial DEX Offering]] (IDO)** — permissionless token launch on a decentralised exchange; minimal compliance, no investor protections; direct contrast to the STO compliance model.
   - **[[Regulation Crowdfunding]] (Reg CF)** — SEC-authorised small-scale public fundraising; shares some STO characteristics but uses traditional equity instruments rather than blockchain tokens.
 
+- ### Current Landscape (2026)
+  - On 28 January 2026 the staff of the SEC's Divisions of Corporation Finance, Investment Management, and Trading and Markets issued a joint statement confirming that federal securities laws apply to a tokenised security regardless of whether ownership is recorded on-chain or off-chain, settling the long-standing legal-status question for STOs.
+  - Regulated market rails opened rapidly in the first half of 2026: the SEC approved a Nasdaq rule change (March 2026) to trade tokenised forms of listed securities on its main order book, FINRA approved the first broker-dealer custody of tokenised securities with atomic settlement (May 2026), and DTCC received SEC no-action relief for a DTC tokenisation pilot covering Russell 1000 equities, Treasuries and major ETFs.
+  - On-chain real-world-asset value (excluding stablecoins) reached roughly $31–36 billion by mid-2026 (rwa.xyz reported $33.5B in July 2026), about 4x early-2025 levels, led by tokenised Treasuries and private credit, with tokenised equities the fastest-growing new category; Securitize listed on the NYSE (SECZ) in July 2026 at a $1.25B valuation as the first pure-play tokenisation IPO.
+  - Regulation D Rule 506(c) remains the dominant US pathway, used in an estimated 80–85% of US STO issuances, and the January 2025 reversal of Staff Accounting Bulletin 121 (via SAB 122) removed a key balance-sheet barrier to bank participation in tokenised-asset custody; 12+ Alternative Trading Systems for digital securities held SEC registration as of Q1 2026.
+  - Standards consolidated around compliance-embedded tokens: ERC-3643 (formerly Tokeny's T-REX) for permissioned securities, with ERC-7943 (uRWA) reaching Final status in May 2026 as a neutral RWA standard and Switzerland's CMTA CMTAT adding support for it.
+  - International frameworks matured in parallel: the EU completed MiCA's transition (with tokenised securities remaining under MiFID II/the Prospectus Regulation), the EU Listing Act (Regulation 2024/2809) set a single €12m prospectus-exemption threshold from 5 June 2026, MAS replaced its 2020 digital-token guidance with a new Guide on the Tokenisation of Capital Markets Products (November 2025), and South Korea legislated tokenised securities in January 2026 (effective February 2027).
+  - Open challenges as of 2026 include the absence of any completed formal SEC rulemaking on exchange-listing eligibility for tokenised securities, stalled US market-structure legislation (the CLARITY/Digital Asset Market Structure Act awaits a Senate floor vote after passing the House in July 2025), fragmented secondary-market liquidity, and jurisdictional patchwork with China still banning STOs outright.
+
+- ### References
+  - 1. AmericaTokenization (2026). Security Token Offerings in 2026: Market Structure and Outlook. https://americatokenization.com/securities/security-token-offerings-2026/
+  - 2. Stobox (2026). The State of RWA Tokenization — 2026 Mid-Year Report. https://www.stobox.io/reports/state-of-rwa-2026
+  - 3. Buzko Legal (2026). Legal Guide to Real-World Assets (RWA) Tokenization. https://www.buzko.legal/content-eng/legal-guide-to-real-world-assets-rwa-tokenization
+  - 4. Otonomos (2026). Security Token Regulations Demystified (2026 Update). https://helpdesk.otonomos.com/docs/security-token-regulations-demystified
+  - 5. European Central Bank (2026). Towards an efficient and integrated digital capital market in Europe. https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu202604_02.en.html
+
 - ### Provenance
   - sources:: SEC Howey Test case law; Polymath ERC-1400 specification; Tokeny ERC-3643 EIP; EU MiCA Regulation; FINMA DLT guidance; MAS digital token framework; IOSCO crypto-assets reports
   - updated:: 2026-06-13

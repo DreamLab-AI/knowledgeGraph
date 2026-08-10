@@ -298,6 +298,23 @@ public:: true
   - Industry adoption is tracked through implementations in etcd (CNCF), Apache ZooKeeper (Apache Software Foundation), and consensus layers of major cloud providers.
   - The correctness of SMR implementations is formally verified using tools such as TLA+ (by Lamport), Coq, and Isabelle/HOL; the Raft paper includes a full TLA+ specification.
 
+- ### Current Landscape (2026)
+  - The 2024-2026 frontier is dominated by uncertified DAG-based BFT-SMR: Mysticeti-C (NDSS 2025, Babel/Sonnino et al.) drops explicit block certification to commit in the theoretical minimum of 3 message delays, reaching sub-0.5s WAN commit latency at over 200k TPS.
+  - Mysticeti went live on Sui Mainnet in July 2024 across roughly 106 validators, replacing Bullshark and cutting P50 latency about 80% (from ~1,900ms to ~400ms); it has since also been adopted by the IOTA network.
+  - A rapid wave of DAG-SMR designs followed: Shoal++ (NSDI 2025) reduces end-to-end commit to ~4.5 message delays, while Sailfish, Mahi-Mahi (ICDCS 2025, the first asynchronous DAG protocol with sub-second WAN latency at 100k+ TPS) and Autobahn (Giridharan/Suri-Payer et al.) push latency and seamless recovery from transient asynchrony ("blips").
+  - Autobahn re-couples an asynchronous dissemination layer with a partially synchronous PBFT-style core, matching Bullshark throughput (~234k tx/s) while roughly halving its latency and avoiding HotStuff-style "hangovers" after network blips.
+  - Key players are now largely industrial L1 blockchain teams and their labs: Mysten Labs (Sui), Aptos Labs (Bullshark/Shoal), and academic groups at Cornell, Yale and UC Berkeley, alongside the long-standing BFT-SMaRt lineage (2f+1 designs such as uBFT reaching ~10us in data-centre RDMA settings).
+  - Formal verification matured in parallel: Yale's LiDO-DAG framework produced mechanised safety and liveness proofs for the deployed Mysticeti protocol (S&P 2026), reflecting a push to machine-check protocols already running in production.
+  - Open challenges as of 2026 are post-quantum security (signature-free designs like Simple-IT, 2026, avoid the ~2x latency penalty of PQ signatures), DAG bandwidth/scalability under large committees (tribe/clan sub-committee broadcast, IACR 2025), and recovery under excessive faults beyond the n/3 bound (recoverable HotStuff fault-detection work, 2025).
+
+- ### References
+  - 1. Babel, Sonnino, Kokoris-Kogias et al. (2025). Mysticeti: Reaching the Latency Limits with Uncertified DAGs (NDSS 2025). https://www.ndss-symposium.org/wp-content/uploads/2025-929-paper.pdf
+  - 2. Mysten Labs / Sui (2024). Consensus — Mysticeti (Sui Documentation). https://docs.sui.io/develop/sui-architecture/consensus
+  - 3. Arun, Gelashvili, Spiegelman et al. (2025). Shoal++: High Throughput DAG BFT Can Be Fast! (NSDI 2025). https://www.usenix.org/system/files/nsdi25-arun.pdf
+  - 4. Giridharan, Suri-Payer, Abraham, Alvisi, Crooks (2024). Autobahn: Seamless High Speed BFT. https://www.cs.cornell.edu/lorenzo/papers/Suri24Autobahn.pdf
+  - 5. Wu, Yue, Fan, Li, Flynn, Zhang (2024/2025). Half a Century of Distributed Byzantine Fault-Tolerant Consensus. https://arxiv.org/html/2407.19863v3
+  - 6. Qiu, Xiao, Shin, Shao (2026). Mechanized Safety and Liveness Proofs for the Mysticeti Consensus Protocol (IEEE S&P 2026). https://flint.cs.yale.edu/flint/publications/sp26.pdf
+
 - ### Provenance
   - sources:: Schneider (1990) "Implementing Fault-Tolerant Services Using the State Machine Approach"; Lamport (1998) Paxos; Castro & Liskov (1999) PBFT; Ongaro & Ousterhout (2014) Raft
   - updated:: 2026-06-13

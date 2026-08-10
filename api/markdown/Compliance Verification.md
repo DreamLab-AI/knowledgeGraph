@@ -312,6 +312,23 @@ public:: true
 
   The UK Financial Conduct Authority (FCA) issued a 42 million GBP penalty to Barclays in July 2025 for failing to gather sufficient KYC information and conduct adequate monitoring of client accounts, demonstrating continued regulatory scrutiny of compliance programmes.
 
+- ### Current Landscape (2026)
+  - The dominant shift since 2024 is from point-in-time audits to Continuous Controls Monitoring (CCM), where controls are re-tested automatically (Vanta advertises 1,200+ automated tests per hour, Drata a 15-minute Auto Pilot scan) rather than sampled annually; in July 2026 DigitalXForce claimed the first "Continuous Control Assurance (CCA)" platform, extending CCM to real-time, evidence-based validation across 250+ integrations.
+  - 2025 was widely branded "the year GRC went AI-first" (MetricStream), with agentic AI now doing evidence collection, control-drift detection and cross-framework mapping, so a single control can be mapped simultaneously to SOC 2, ISO 27001, HIPAA, PCI DSS and GDPR (vendors cite roughly 80% control reuse and around 60% lower audit cost).
+  - Regulation has driven the market: DORA has been legally in force for EU financial entities since 17 January 2025, and the EU AI Act's obligations phase in across 2025-2027, prompting purpose-built products such as Vanta's EU AI Act module (150+ controls, 16 policies) and Drata's framework overlays.
+  - AI is now itself a compliance object: ISO/IEC 42001 (AI management systems), the NIST AI Risk Management Framework and the EU AI Act (with fundamental-rights impact assessments and conformity assessment for high-risk systems) have become the reference standards for verifying AI governance.
+  - Machine-readable, "compliance-as-code" verification is maturing around NIST OSCAL and FedRAMP 20x, with platforms such as RegScale generating OSCAL artefacts and supporting 60+ frameworks, and CMMC 2.0 driving continuous-monitoring requirements in the US defence supply chain.
+  - The vendor landscape has consolidated around Vanta (circa $2.45B valuation, 10,000+ customers, 300+ integrations), Drata (circa $2B, which acquired trust-centre firm SafeBase in February 2025), Secureframe and Sprinto in the CCM tier, with OneTrust, ServiceNow GRC, AuditBoard, IBM OpenPages and MetricStream leading enterprise GRC.
+  - Open challenges as of 2026 include DORA-specific reporting gaps (native xBRL-CSV export and a structured Register of Information are still unverified in most general GRC tools, opening space for EU-native entrants such as Venvera and Orbiq), plus EU data-residency concerns and the accuracy, drift and explainability risks of using AI agents to attest to compliance evidence.
+
+- ### References
+  - 1. Cloud Security Alliance (2025). How to Transform Your GRC with Continuous Controls Monitoring. https://cloudsecurityalliance.org/blog/2025/03/26/how-to-transform-your-grc-with-continuous-controls-monitoring
+  - 2. MetricStream (2025). 2025: The Year GRC Went AI-First. https://www.metricstream.com/blog/the-year-grc-went-ai-first-2025.html
+  - 3. Vanta (2025). New frameworks to help European companies achieve compliance (EU AI Act, DORA, NIS2). https://www.vanta.com/resources/european-momentum-new-frameworks
+  - 4. DigitalXForce via EIN Presswire (2026). DigitalXForce Becomes the Industry's First Continuous Control Assurance (CCA) Platform. https://www.cincinnati.com/press-release/story/102185/digitalxforce-becomes-the-industrys-first-continuous-control-assurance-cca-platform/
+  - 5. RegScale (2026). What Is Continuous Controls Monitoring for Compliance? (OSCAL / compliance-as-code). https://regscale.com/continuous-controls-monitoring/
+  - 6. Venvera (2026). DORA Compliance Solutions for Banks: The Honest Comparison (2026). https://venvera.com/best/saas-platforms-for-dora-compliance-in-2026
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

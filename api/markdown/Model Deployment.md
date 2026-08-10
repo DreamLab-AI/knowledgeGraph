@@ -316,6 +316,22 @@ public:: true
   - **ISO/IEC 42001** — the AI management system standard that includes governance requirements relevant to AI model deployment, covering risk assessment, transparency, and operational monitoring.
   - **EU AI Act** — European regulation imposing conformity assessments and technical documentation requirements on high-risk AI systems, directly governing how models may be deployed in sensitive domains.
 
+- ### Current Landscape (2026)
+  - By 2026 the deployment stack has fractured into distinct layers — full-lifecycle platforms (Amazon SageMaker AI, Vertex AI/Gemini Enterprise, Azure ML), inference servers (NVIDIA Triton, ONNX Runtime), and purpose-built LLM engines (vLLM, TensorRT-LLM, SGLang) — with inference servers increasingly acting as the runtime inside broader platforms rather than standalone products.
+  - vLLM has become the de facto open-source LLM serving engine, exceeding one million installs per week and averaging 200-250 commits per week (Red Hat and IBM contributing ~25%); release 0.10.0 (mid-2025) deprecated the legacy "V0" engine and prioritised MoE cluster-scale serving, NVIDIA Blackwell FP4, and faster start-up.
+  - NVIDIA Dynamo, launched March 2025 as an open-source datacentre-scale orchestration layer above vLLM/SGLang/TensorRT-LLM, popularised disaggregated prefill/decode serving, KV-aware routing and multi-tier KV-cache offloading, claiming up to 30x more requests served on DeepSeek-R1 on Blackwell; by 2026 it ships SLA-driven Kubernetes deployment (DynamoGraphDeploymentRequest) and an AI Configurator for offline tuning.
+  - Kubernetes-native serving matured sharply: KServe v0.15 (May 2025), now a CNCF incubating project, added first-class vLLM backend support, distributed KV cache via LMCache, KEDA autoscaling on LLM-specific metrics and initial Envoy AI Gateway support; Triton 25.12 added multi-LoRA for the TensorRT-LLM backend.
+  - Cost and efficiency now dominate the agenda — disaggregated serving, speculative decoding (e.g. Eagle3 draft models), FP8/FP4 quantisation, prefix-cache-aware routing, and scale-to-zero serverless GPUs; ByteDance reported ~50% cost reduction serving multimodal LLMs on AWS Inferentia2 with INT8 quantisation and tensor parallelism.
+  - EU AI Act GPAI provider obligations (Articles 53/55) have applied since 2 August 2025, and from 2 August 2026 the Commission's enforcement and fining powers (up to 3% of global turnover or EUR 15m) plus Article 50 transparency duties for deployers take effect, making documentation, training-data summaries and synthetic-content marking hard deployment requirements.
+  - Open challenges as of 2026 include there being no single best serving stack (teams must benchmark per workload), reliable long-context and MoE serving at cluster scale, LLM-specific fault tolerance and fast cold-starts, KV-cache memory pressure, and governing variable token-level cost and compliance across agentic, multi-model production pipelines.
+
+- ### References
+  - 1. Anaconda (2026). AI Model Deployment Platforms: The 2026 Landscape. https://www.anaconda.com/guides/ai-model-deployment-platforms
+  - 2. NVIDIA (2025). Introducing NVIDIA Dynamo, A Low-Latency Distributed Inference Framework for Scaling Reasoning AI Models. https://developer.nvidia.com/blog/introducing-nvidia-dynamo-a-low-latency-distributed-inference-framework-for-scaling-reasoning-ai-models/
+  - 3. DataFormatHub (2026). MLOps 2026: Why KServe and Triton are Dominating Model Inference. https://dev.to/dataformathub/mlops-2026-why-kserve-and-triton-are-dominating-model-inference-577m
+  - 4. InferenceOps (2025). State of the Model Serving Communities - October 2025. https://inferenceops.substack.com/p/state-of-the-model-serving-communities-269
+  - 5. European Commission (2025). Guidelines for providers of general-purpose AI models under the AI Act. https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers
+
 - ### Provenance
   - sources:: ONNX specification; MLflow documentation; KServe V2 Inference Protocol; Sculley et al. "Hidden Technical Debt in Machine Learning Systems" (NeurIPS 2015); Google ML Engineering best practices
   - updated:: 2026-06-13

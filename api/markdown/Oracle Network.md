@@ -277,6 +277,23 @@ public:: true
   - **Chronicle Protocol** (formerly MakerDAO's oracle system) uses a privacy-preserving Schnorr-signature-based aggregation where individual node submissions remain private until the aggregated result is committed.
   - Regulatory context: oracle networks that deliver financial price data may fall within scope of data service or financial market infrastructure regulation in various jurisdictions, particularly as [[Real-World Asset Tokenisation]] grows.
 
+- ### Current Landscape (2026)
+  - In August 2025 the U.S. Department of Commerce began publishing official Bureau of Economic Analysis macro data (Real GDP, PCE Price Index, Real Final Sales) on-chain, selecting both Chainlink Data Feeds (six indicators across ten networks) and Pyth Network (five years of quarterly GDP across 100+ chains) — the first time a government body has distributed official statistics through decentralised oracle networks.
+  - Chainlink consolidated Functions and Automation into the unified Chainlink Runtime Environment (CRE), retiring the legacy Functions infrastructure at the end of June 2026 and migrating applications to CRE, which now spans 22 mainnets and natively supports ISO 20022; Confidential Compute using Trusted Execution Environments entered early access in early 2026.
+  - Cross-chain interoperability became the dominant growth vector: after more than $650M was lost to bridge hacks in 2026, over $7B in token value migrated to Chainlink CCIP in Q2 2026 (a "flight to safety"), with Aave making CCIP its default cross-chain engine in mid-July and Mantle moving its $2.5B bridge onto it; CCIP now covers roughly 60-70 mainnets and extended to non-EVM chains such as Canton.
+  - Institutional adoption deepened markedly: DTCC ran its first live production trades of tokenised U.S. securities on Chainlink on 15 July 2026 and is building CRE into its Collateral AppChain (targeting Q4 2026 go-live), Chainlink and 50+ banks launched Project Pangea for T+0 FX settlement, and Circle's institutional L1 Arc joined Chainlink Scale ahead of its 16 September 2026 mainnet launch.
+  - The competitive field sharpened around a roughly $100B total-value-secured market: Chainlink held ~50-70% share (a November 2025 Messari report put it above 80% of RWA data/interoperability tooling), while Pyth pushed low-latency with its 1ms Lazer product and RedStone scaled to 120+ chains, launched its RED token in March 2025, and reached ~$9B TVS by September 2025.
+  - Oracle economics shifted from "free public good" toward paid revenue: Chainlink launched subscription Data Streams (from ~$150/month per stream) in August 2026 and routes enterprise payments plus recaptured OEV/MEV (e.g. ~$16M via Smart Value Recapture with Aave) into the Chainlink Reserve, which accumulated over 5M LINK by August 2026.
+  - Open challenges as of 2026 remain mispricing and manipulation risk (documented wrongful-liquidation and depeg incidents on competitors), the concentration of ~80% of secured value in the top five providers, monetisation sustainability, and securing an expanding cross-chain and non-EVM attack surface amid record bridge losses.
+
+- ### References
+  - 1. BlockEden (2026). The Oracle Wars of 2026: Who Will Control the Future of Blockchain Infrastructure. https://blockeden.xyz/blog/2026/01/19/blockchain-oracle-wars-chainlink-pyth-redstone-defi-infrastructure/
+  - 2. Chainlink (2026). Chainlink Quarterly Review: Q2 2026. https://chain.link/blog/quarterly-review-q2-2026
+  - 3. CoinDesk (2025). Chainlink and Pyth Selected to Deliver U.S. Economic Data On-Chain. https://www.coindesk.com/business/2025/08/28/chainlink-to-provide-u-s-department-of-commerce-data-on-chain-for-smart-contract-use
+  - 4. Pyth Network (2025). The U.S. Department of Commerce is Working with Pyth Network to Verify & Distribute Economic Data Onchain. https://www.pyth.network/blog/pyth-network-selected-by-u-s-department-of-commerce-to-verify-and-distribute-economic-data-onchain
+  - 5. Galaxy Research (2025). Chainlink: Oracles, CCIP, and Cross-Chain Infrastructure. https://www.galaxy.com/insights/research/chainlink-oracle-ccip-price-feeds
+  - 6. RedStone (2026). RedStone vs Chainlink vs Pyth — Blockchain Oracles Comparison 2026. https://blog.redstone.finance/2026/03/30/blockchain-oracles-comparison-chainlink-vs-pyth-vs-redstone-2026/
+
 - ### Provenance
   - sources:: Chainlink whitepaper (2017, Nazarov & Ellis); API3 whitepaper; Band Protocol documentation; Pyth Network documentation; UMA Protocol documentation
   - updated:: 2026-06-13

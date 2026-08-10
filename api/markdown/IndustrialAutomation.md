@@ -260,6 +260,23 @@ alias:: Industrial Automation
   - owl-class:: industrial-automation:IndustrialAutomation
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - "Physical AI" became the dominant narrative for the factory floor: in April 2026 (Hannover Messe) Siemens, NVIDIA and UK startup Humanoid reported a successful two-week live test of the HMND 01 Alpha wheeled humanoid on Siemens' Erlangen electronics line, running autonomous tote logistics at ~60 box movements/hour over 8+ hour shifts with a >90% success rate, built on NVIDIA's Jetson Thor, Isaac Sim and Isaac Lab stack.
+  - Industrial-robot safety standards were overhauled: ISO 10218:2025 landed as the first major revision since 2011 (an eight-year effort led by A3), folding collaborative-robot, manual-operation and cybersecurity requirements into the core standard, while the US R15.06 sections were harmonised with European norms and AMR/AGV safety standards are expected in early 2026.
+  - The IFR reported (8 Jan 2026) that industrial-robot installations hit an all-time-high market value of US$16.7bn, naming its top-5 2026 trends as AI-driven autonomy, versatile/IT-OT-converged robots, humanoids, sustainability and workforce shortage; Deloitte pegged the cumulative installed base surpassing 5 million units in 2025 and heading toward ~5.5 million in 2026.
+  - Major consolidation and partnership activity reshaped vendor tiers: SoftBank agreed to acquire ABB's Robotics division for US$5.4bn (expected to close mid-to-late 2026), Honeywell began splitting into standalone units, and NVIDIA Omniverse blueprints spread to Rockwell, Omron, Siemens, Hyundai/Boston Dynamics Atlas and Mercedes-Benz/Apptronik Apollo lines.
+  - "Software-defined automation" gained ground with virtual/soft PLCs (a small but fast ~13% CAGR segment), Siemens' on-prem Industrial Copilot for shop-floor operators, and a shift towards standardised hardware with more value migrating into software.
+  - Humanoid units for industrial use remain early — Deloitte estimated only ~5,000-7,000 shipments in 2025 rising to perhaps ~15,000 in 2026 (a ~US$210-270m market), and there are still no dedicated humanoid safety standards, with developers borrowing existing industrial-robot norms.
+  - Open frontier challenges as of 2026: an estimated 80% of US factories still run with no robotics/automation, and Deloitte flags data quality/standardisation, systems integration and OT cybersecurity (e.g. Siemens/NVIDIA BlueField DPU work) as the bottlenecks gating faster growth, with new safety-certified sensing (Sonair's SIL 2 / PL d 3D ultrasonic sensor) and ISO/IEC 27001:2022 certifications (e.g. Yaskawa) beginning to separate vendors.
+
+- ### References
+  - 1. International Federation of Robotics (2026). Top 5 Global Robotics Trends 2026. https://ifr.org/ifr-press-releases/news/top-5-global-robotics-trends-2026
+  - 2. Siemens AG (2026). Siemens and Humanoid bring Physical AI to the factory floor: deploying humanoids in industrial operations with NVIDIA. https://press.siemens.com/global/en/pressrelease/siemens-and-humanoid-bring-physical-ai-factory-floor-deploying-humanoids-industrial
+  - 3. Deloitte (2025). AI for industrial robotics, humanoid robots, and drones (TMT Predictions 2026). https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/ai-for-robots-drones.html
+  - 4. Roland Berger (2026). Industrial automation update 2026. https://www.rolandberger.com/en/Insights/Publications/Industrial-automation-update-2026.html
+  - 5. MarketScale (2026). Industrial automation's mid-2026 moment: AI picking, superhumanoids and the safety certification push. https://www.marketscale.com/industries/industrial-iot/industrial-automations-mid-2026-moment-ai-picking-superhumanoids-and-the-safety-certification-push
+  - 6. TS2 (2025). Industrial Robotics & Automation Breakthroughs – June–July 2025 (ISO 10218:2025; Foxconn/NVIDIA Houston). https://ts2.tech/en/industrial-robotics-automation-breakthroughs-june-july-2025/
+
 - ### Provenance
   - sources:: IEC 61131-3, IEC 62443, ISO 10218, ISA-95, ISA-88, OPC Foundation UA specifications; established domain knowledge
   - updated:: 2026-06-13

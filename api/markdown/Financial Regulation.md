@@ -282,6 +282,23 @@
     - **Sustainable finance**: EU Taxonomy Regulation, SFDR, and TCFD-aligned disclosure requirements bring ESG into the regulatory perimeter.
     - **Open banking / open finance**: PSD2 (EU), UK Open Banking, and equivalents mandate data sharing via APIs, reshaping competitive dynamics.
 
+- ### Current Landscape (2026)
+  - The US enacted its first federal payment-stablecoin framework, the GENIUS Act (Public Law 119-27), on 18 July 2025; implementing rules are due by 18 July 2026 and the OCC issued a 376-page notice of proposed rulemaking on 25 February 2026 setting reserve, redemption and capital expectations for Permitted Payment Stablecoin Issuers.
+  - Basel III "endgame" has been effectively reset: the 2023 US proposal will not be finalised as drafted, regulators finalised a revised enhanced supplementary leverage ratio for GSIBs in November 2025, and Fed Vice Chair for Supervision Michelle Bowman confirmed a "roughly capital-neutral" re-proposal targeted before the end of March 2026.
+  - The Basel Committee agreed in November 2025 to fast-track a reassessment of its prudential crypto-exposure standards (originally due 1 January 2026) after the US and UK declined to adopt them; the UK's PRA separately delayed Basel 3.1 to 1 January 2027, while the EU deferred the FRTB market-risk component to 1 January 2027.
+  - The EU's crypto and resilience single rulebook moved from legislation to enforcement: MiCA became fully applicable (in force since 30 December 2024) with the CASP transitional window closing 1 July 2026, and DORA applied from 17 January 2025, giving the ESAs new oversight of critical third-party ICT providers.
+  - AML supervision recentralised in the EU: the new Anti-Money Laundering Authority (AMLA) in Frankfurt took over the AML/CFT mandate from the EBA on 1 January 2026 and will directly supervise up to 40 large cross-border institutions by 2028.
+  - Divergent transatlantic direction is now the defining tension: the second Trump administration and a reconstituted SEC (which withdrew 14 Gensler-era proposed rules in June 2025) are pursuing deregulation and digital-asset embrace, while the EU pursues harmonisation via its December 2025 Savings and Investments Union package and a "Digital Omnibus" that may delay high-risk EU AI Act obligations (currently 2 August 2026) by up to 16 months.
+  - Open challenges as of 2026 include potential deposit migration from banks to stablecoin issuers, the unresolved US crypto market-structure regime (the CLARITY Act passed the House but awaits the Senate), reconciling internationally inconsistent Basel capital standards, and integrating AI governance into prudential supervision.
+
+- ### References
+  - 1. PwC (2026). GENIUS Act implementation proposal – February 27, 2026. https://www.pwc.com/us/en/industries/financial-services/library/our-take/genius-act-implementation-proposal-feb-27-2026.html
+  - 2. Freshfields (2026). 2025 Bank Regulatory Roundup and What to Look for in 2026. https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/2025-bank-regulatory-roundup-and-what-to-look-for-in-2026-102lymd
+  - 3. Gibson Dunn (2026). Monthly Bank Regulatory Report (February 2026). https://www.gibsondunn.com/monthly-bank-regulatory-report-february-2026/
+  - 4. TRM Labs (2025). Global Crypto Policy Review Outlook 2025/26 Report. https://www.trmlabs.com/reports-and-whitepapers/global-crypto-policy-review-outlook-2025-26
+  - 5. Taylor Wessing (2026). 2026: what's in store for EU financial regulation. https://www.taylorwessing.com/en/insights-and-events/insights/2026/01/eu-financial-regulation-trends-companies-need-to-watch-in-2026
+  - 6. KPMG (2026). European Regulatory Radar (October 2025). https://kpmg.com/xx/en/our-insights/regulatory-insights/european-regulatory-radar-october-2025.html
+
 - ### Provenance
   - sources:: Basel Committee on Banking Supervision publications; FSB crypto-asset regulatory framework reports; FATF Recommendations (2012, updated 2023); EU MiCA Regulation (2023/1114); FCA Regulatory Sandbox reports; IOSCO Principles for Financial Market Infrastructures.
   - updated:: 2026-06-13

@@ -342,6 +342,23 @@ public:: true
   - **Delta Lake / Apache Iceberg / Apache Hudi** — open table formats enabling ACID transactions on [[Data Lake]] storage, blurring the boundary between batch and streaming processing.
   - Relevant bodies: Apache Software Foundation, Linux Foundation Data & AI, ISO/IEC JTC1 SC32 (data management and interchange).
 
+- ### Current Landscape (2026)
+  - Stream and batch processing have converged on unified engines: Apache Flink 2.0.0 (March 2025) and 2.1.0 (July 2025) reframe Flink as a "real-time Data + AI" platform, adding Materialised Tables, an AI Model DDL with the ML_PREDICT table-valued function for in-SQL model inference, a VARIANT type for semi-structured JSON, and DeltaJoin/MultiJoin operators that remove streaming-join state bottlenecks.
+  - Open table formats have effectively won as the substrate for processing, standardising on Apache Iceberg; the V3 spec matured with Iceberg 1.10.0 (September 2025), bringing deletion vectors for efficient row-level updates and a Dynamic Iceberg Sink that ingests Kafka streams into many tables with automatic schema evolution and table creation without job restarts, and 1.11.0 added initial Flink 2.1 support.
+  - The "streamhouse"/Kappa pattern is displacing Lambda: Apache Fluss (incubating) 0.8 (November 2025) adds a hot streaming storage tier that continuously tiers into Iceberg and Lance (vector-native) tables with exactly-once semantics, upserts and built-in compaction, targeting sub-second freshness for operational analytics and AI features.
+  - Vendor platforms have realigned around interoperability: Snowflake BUILD 2025 shipped OpenFlow (managed NiFi ingestion) and Streaming V2 (up to 10 GB/s, queryable within ~10 seconds) to GA, open-sourced pg_lake, and opened Horizon Catalog via Apache Polaris/Iceberg REST; Databricks made Managed Iceberg, Iceberg V3 and Foreign Iceberg generally available in Unity Catalog in 2026, following its 2024 acquisition of Tabular.
+  - Zero-ETL and CDC-driven ingestion have gone mainstream (a 2024 Forrester study cited ~60% enterprise adoption of zero-ETL), with catalog-linked databases federating across AWS Glue, Unity Catalog and OneLake, and AI-assisted pipeline authoring (Copilot-style dbt/SQL generation) becoming standard tooling.
+  - Lightweight, embedded processing has spread: DuckDB added Iceberg REST catalog support and S3 Tables integration through 2025, and DuckDB-Wasm shipped an Iceberg extension by December 2025, making it the first in-browser reader/writer of Iceberg REST catalogs with no backend server.
+  - Open challenges as of 2026 centre on catalog governance and vendor lock-in (read/write federation still uneven across the Big Three), small-file and compaction management on hot streaming partitions, data-contract enforcement and observability at source, cost/FinOps control, and compliance pressure from the EU AI Act, the EU Data Act and India's DPDP Act.
+
+- ### References
+  - 1. Apache Flink PMC (2025). Apache Flink 2.1.0: Ushers in a New Era of Unified Real-Time Data + AI with Comprehensive Upgrades. https://flink.apache.org/2025/07/31/apache-flink-2.1.0-ushers-in-a-new-era-of-unified-real-time-data--ai-with-comprehensive-upgrades/
+  - 2. Google Open Source Blog (2025). Apache Iceberg 1.10: Maturing the V3 spec, the REST API and Google contributions. https://opensource.googleblog.com/2025/09/apache-iceberg-110-maturing-the-v3-spec-the-rest-api-and-google-contributions.html
+  - 3. Apache Fluss (2025). Streaming Lakehouse for Data + AI - Apache Fluss (Incubating) 0.8. https://fluss.apache.org/blog/releases/0.8/
+  - 4. Nand Research (2025). Research Note: Snowflake BUILD 2025 Announcements. https://nand-research.com/research-note-snowflake-build-2025-announcements/
+  - 5. Alex Merced / LinkedIn (2026). Best Data Lakehouse Tools with Apache Iceberg (2026 Complete Guide). https://www.linkedin.com/pulse/best-data-lakehouse-tools-apache-iceberg-2026-complete-alex-merced-xn2de
+  - 6. Rivery (2025). The Top 5 Data Engineering Trends Heading into 2025. https://rivery.io/downloads/the-top-5-data-engineering-trends-heading-into-2025/
+
 - ### Provenance
   - sources:: Apache Software Foundation documentation; ISO/IEC 9075 SQL Standard; OpenLineage specification; Linux Foundation Data & AI project catalogue; established computer science literature on database systems and distributed computing.
   - updated:: 2026-06-13

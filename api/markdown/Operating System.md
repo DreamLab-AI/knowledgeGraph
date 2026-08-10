@@ -306,6 +306,22 @@ public:: true
   - **Real-Time Linux (PREEMPT_RT)**: a patch set incorporated into mainline Linux that adds fully preemptible kernel paths, bringing Linux closer to RTOS latency characteristics for industrial and robotics use cases.
   - **OCI (Open Container Initiative)**: defines container image and runtime specifications that standardise how OS-level container isolation is implemented across different [[Containerisation]] engines.
 
+- ### Current Landscape (2026)
+  - Windows 10 reached end of support on 14 October 2025 after a decade in service, forcing a mass migration to Windows 11; Microsoft's consumer Extended Security Updates programme now bridges eligible 22H2 devices with critical fixes through 12 October 2027.
+  - At Build 2026 (2 June) Microsoft repositioned Windows 11 as an "agent-native" OS, shipping Coreutils for Windows (a Rust reimplementation of GNU coreutils via the uutils project) to general availability, previewing WSL containers, and adding on-device SLMs Aion 1.0 Instruct and Aion 1.0 Plan for local agentic workflows.
+  - A defining 2026 theme is OS-level containment for AI agents: Microsoft Execution Containers (MXC) introduce a policy-driven runtime isolation layer with OS-enforced agent identity, integrated with Agent 365, Defender, Entra and Intune.
+  - Rust crossed a milestone in the Linux kernel: at the December 2025 Kernel Maintainers Summit in Tokyo it was declared no longer experimental and is now recognised as the kernel's second core language alongside C, underpinning drivers such as Apple AGX (Asahi), NVIDIA Nova and Android Binder, though it remains roughly 25,000 lines against 34 million lines of C.
+  - Memory-safe rewriting is spreading through core tooling, with Debian committing to migrate its APT package manager to Rust by May 2026 and Microsoft pushing Rust deeper into Windows components and its driver API.
+  - Apple released macOS Tahoe 26 on 15 September 2025 with the cross-platform "Liquid Glass" redesign, an on-device Foundation Models framework exposing Apple Intelligence to developers, and Live Translation; it is confirmed as the final macOS to support Intel Macs, with macOS 27 Golden Gate (late 2026) going Apple-silicon only.
+  - Open challenges as of 2026 centre on securing OS-level autonomy for AI agents (privilege containment, identity, auditability), the slow and contested pace of C-to-Rust migration, and vendor consolidation around proprietary on-device model stacks.
+
+- ### References
+  - 1. Microsoft (2026). Build 2026: Furthering Windows as the trusted platform for development. https://blogs.windows.com/windowsdeveloper/2026/06/02/build-2026-furthering-windows-as-the-trusted-platform-for-development/
+  - 2. Microsoft (2025). Windows 10 reached end of support on October 14, 2025. https://www.microsoft.com/en-us/windows/end-of-support
+  - 3. Kent (2026). Rust in 2025-2026: From 'Most Loved Language' to Core Infrastructure (reporting the December 2025 Kernel Maintainers Summit, Tokyo). https://dev.to/kent-tokyo/rust-in-2025-2026-from-most-loved-language-to-core-infrastructure-4l5k
+  - 4. Steven Vaughan-Nichols, ZDNET (2026). Microsoft continues its big Linux push at Build 2026. https://www.zdnet.com/article/microsoft-continues-its-linux-company-shift/
+  - 5. Apple (2025). macOS Tahoe 26 makes the Mac more capable, productive, and intelligent than ever. https://www.apple.com/newsroom/2025/06/macos-tahoe-26-makes-the-mac-more-capable-productive-and-intelligent-than-ever/
+
 - ### Provenance
   - sources:: IEEE POSIX specifications; Linux Kernel documentation; Tanenbaum, A. S. — Modern Operating Systems; Silberschatz, Galvin, Gagne — Operating System Concepts; Khronos OpenXR specification; ROS2 Design documentation
   - updated:: 2026-06-13

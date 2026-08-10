@@ -300,6 +300,23 @@ public:: true
   - **MiFID II / MiFIR** — EU markets regulation requiring real-time transaction reporting, best-execution monitoring, and communications surveillance—all primary RegTech use cases.
   - Key industry bodies: Financial Data and Technology Association (FDATA), Global Legal Entity Identifier Foundation (GLEIF), International RegTech Association (IRTA), Cambridge Centre for Alternative Finance (CCAF).
 
+- ### Current Landscape (2026)
+  - The global RegTech market reached USD 24.3bn in 2025 and USD 29.3bn in 2026 (Grand View Research), projected to hit USD 112.1bn by 2033 at a 21.1% CAGR, with North America holding roughly 40.8% share and cloud deployment about 65%; adoption is now near-ubiquitous, with FinTech Global's Global State of RegTech 2026 reporting that around 95% of financial institutions have scaled RegTech.
+  - 2026 is being framed as the shift from generative-AI pilots to production-grade "agentic AI", with autonomous agents replacing static rules: Fenergo launched its Fen-AI orchestration platform and KYRA family of agents for client lifecycle management, and NICE Actimize introduced the Actimize Insights Network (January 2026) for real-time counterparty and authorised-push-payment fraud intelligence.
+  - Consolidation accelerated: Regnology is integrating Wolters Kluwer's Financial Risk and Reporting business and moving to acquire US provider Fed Reporter, Cube acquired the AI risk-analytics firm Acin (June 2025), and Diginex agreed a roughly USD 2bn acquisition of Resulticks (June 2025) for AI-driven ESG data.
+  - The vendor landscape remains concentrated, with Thomson Reuters, NICE Actimize and Wolters Kluwer holding around 45% of the market, followed by Fenergo and ComplyAdvantage; AI-native and adjacent players such as Nasdaq Verafin, Quantexa, Behavox, ThetaRay and Ascent are expanding into integrated AML/KYC, surveillance and regulatory-reporting suites.
+  - Regulatory drivers intensified: the EU's DORA took effect in January 2025, the EU AI Act's high-risk obligations began applying in February 2026 with general-purpose AI governance duties from August 2026, and firms are also absorbing CARF, MiCA, eIDAS 2.0 and the delayed Basel 3.1 standards, pushing compliance from retrospective reporting toward a continuous operational layer.
+  - Supervisors themselves are going digital (SupTech): the FCA advanced its Digital Regulatory Reporting Phase 3 work toward machine-readable and machine-executable regulation (MER), ran a joint Bank of England/Immuta TechSprint (2025), consolidated RegData behind a single My FCA sign-in by March 2026, and expanded its Supercharged Sandbox and AI Live Testing (a second cohort of eight firms entered in April 2026, evaluation expected Q1 2027).
+  - Open challenges centre on governing rather than merely deploying AI: the Bank of England and PRA set out plans for safe AI innovation (1 April 2026 letter) naming AI a 2026 supervisory priority while keeping a technology-agnostic stance and declining a dedicated AI sandbox for now; the 2026 BoE/FCA AI Survey went live in June 2026, and Gartner expects AI-governance-platform spending of USD 492m in 2026, rising above USD 1bn by 2030, as auditability, explainability, data quality and model validation become the binding constraints.
+
+- ### References
+  - 1. Grand View Research (2026). RegTech Market Size, Share & Trends | Industry Report 2033. https://www.grandviewresearch.com/industry-analysis/regulatory-technology-market
+  - 2. FinTech Global (2026). The Global State of RegTech 2026. https://fintech.global/about/the-global-state-of-regtech-2026/
+  - 3. Financial Conduct Authority (2026). FCA sets out next phase of smarter, more effective regulation. https://www.fca.org.uk/news/news-stories/fca-sets-out-next-phase-smarter-more-effective-regulation
+  - 4. Financial Conduct Authority (2025). Digital Regulatory Reporting / Machine Executable Regulation. https://www.fca.org.uk/innovation/regtech/digital-regulatory-reporting
+  - 5. TLT LLP (2026). The Bank of England and PRA set out plans for safe AI innovation: what firms need to know. https://www.tlt.com/insights-and-events/insight/the-bank-of-england-and-pra-set-out-plans-for-safe-ai-innovation-what-firms-need-to-know
+  - 6. A-Team Insight (2026). RegTech Insight: Regnology, Fenergo Fen-AI and market moves. https://a-teaminsight.com/regtech-insight/
+
 - ### Provenance
   - sources:: FCA RegTech publications; FATF Digital Transformation Guidance; Basel Committee on Banking Supervision; EU AI Act (2024); ISO 20022 Standard; EBA COREP/FINREP taxonomy documentation; GLEIF LEI data standards.
   - updated:: 2026-06-13

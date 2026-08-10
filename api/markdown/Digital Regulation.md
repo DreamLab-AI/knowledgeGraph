@@ -310,6 +310,24 @@ public:: true
   - owl-class:: governance:DigitalRegulation
   - owl-role:: concept
 
+- ### Current Landscape (2026)
+  - The EU's "Digital Omnibus" package, proposed by the Commission in November 2025 (COM(2025)0836) and given a European Parliament position on 25 March 2026, restructured the AI Act timeline: high-risk Annex III obligations were pushed to 2 December 2027 and Annex I product-embedded rules to 2 August 2028, while the Commission retained discretion to accelerate by 6-12 months once harmonised standards are deemed adequate.
+  - Despite the delays, 2 August 2026 remains the pivotal date when the bulk of the AI Act became applicable and AI Office enforcement powers switched on, alongside Article 50 transparency duties (machine-readable marking of AI-generated content and deepfake disclosure); GPAI model obligations had already applied since 2 August 2025, backed by the voluntary GPAI Code of Practice published 10 July 2025 and a Signatory Taskforce established 2 February 2026.
+  - DMA enforcement moved decisively from dialogue to penalties: the Commission fined Apple 500 million euros for anti-steering breaches and Meta 200 million euros over its consent-or-pay model in 2025, and its 28 April 2026 review (COM(2026) 178) concluded the DMA is "fit for purpose" without revision while flagging AI and cloud computing as new focus areas, having opened a cloud market investigation in November 2025.
+  - DSA enforcement intensified through 2025 with proceedings against TikTok, AliExpress and adult platforms (Stripchat, Pornhub, XVideos), a strong focus on protecting minors and age verification, final minors-protection guidelines in July 2025, and the Data Access Portal going live in October 2025; first DSA fines are expected during 2026.
+  - GDPR enforcement hit records, with the EDPB's 2025 annual report (published 9 April 2026) documenting roughly 1.15 billion euros in national DPA fines and the first-ever jointly authored EDPB-Commission guidelines on the DMA-GDPR interplay (October 2025), plus DSA-GDPR guidelines adopted 11 September 2025.
+  - The UK diverged from the EU model: the Online Safety Act reached hard deadlines (children's risk assessments due 25 July 2025 under Ofcom's Protection of Children Codes), the Data (Use and Access) Act 2025 received Royal Assent on 19 June 2025, and the Crime and Policing Act 2026 (Royal Assent 29 April 2026) inserted a new section 216A targeting AI chatbot services, while a March 2026 DSIT/DCMS report kept commercial AI training subject to UK copyright licensing.
+  - US regulation stayed fragmented with no federal law: California's SB 53 frontier-model law took effect January 2026, Colorado's AI Act was repealed and re-enacted (SB 26-189, signed 14 May 2026) pushing its effective date to 1 January 2027, and Illinois amendments took effect 1 January 2026, leaving a patchwork as all 50 states pursue AI legislation.
+  - The frontier challenge as of 2026 is competitiveness-versus-protection tension: European leaders openly weighed AI Act "pauses" citing US and Chinese competition, standards and implementing acts (including Q2 2026 GPAI enforcement procedures) lagged behind statutory deadlines, and cross-jurisdictional interoperability via G7 Hiroshima and OECD frameworks remained aspirational.
+
+- ### References
+  - 1. European Commission (2026). DMA Review Report, COM(2026) 178 final. https://digital-markets-act.ec.europa.eu/system/files/2026-04/DMA%20Review%20Report_COM_2026_178_1_EN.pdf
+  - 2. YPOG (2026). EU Digital Rulebook: A new phase of Digital Regulation. https://www.ypog.law/en/insight/eu-digital-rulebook
+  - 3. Centre for Future Generations (2025). Enforcement spotlight - Autumn 2025. https://cfg.eu/enforcement-spotlight-autumn-2025/
+  - 4. PPC Land (2026). EDPB 2025 annual report: 1.15bn in GDPR fines, new AI and DMA rules. https://ppc.land/edpb-2025-annual-report-eur1-15bn-in-gdpr-fines-new-ai-and-dma-rules/
+  - 5. BD Emerson (2026). AI Regulations Around the World: A 2026 Guide. https://www.bdemerson.com/article/ai-regulations-around-the-world
+  - 6. European Commission, Shaping Europe's Digital Future (2026). Enforcement of the AI Act. https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act
+
 - ### Provenance
   - sources:: EU AI Act (2024/1689); GDPR (2016/679); DSA (2022/2065); DMA (2022/1925); UK Online Safety Act 2023; NIST AI RMF 1.0; ISO/IEC 42001:2023; OECD AI Principles
   - updated:: 2026-06-13

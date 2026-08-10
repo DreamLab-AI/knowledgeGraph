@@ -265,6 +265,22 @@ public:: true
   - Security considerations: MQTT 3.1.1 transmits credentials in plaintext without transport-layer security; production deployments mandate [[TLS/SSL]] (port 8883) and broker-level ACLs. MQTT 5.0's enhanced authentication supports OAuth 2.0 and Kerberos SASL mechanisms.
   - Governing bodies: [[OASIS Open]], Eclipse Foundation (Eclipse Mosquitto, Eclipse Paho client libraries), [[ISO/IEC 20922]].
 
+- ### Current Landscape (2026)
+  - MQTT over QUIC has become the headline protocol evolution, replacing the TCP transport with QUIC/UDP (RFC 9000) for single round-trip connection setup, no head-of-line blocking and seamless connection migration across Wi-Fi/cellular handovers; it is documented as an OASIS Technical Note and EMQX remains the first and, as of 2026, effectively the only major broker with production support (NanoMQ also ships it), with Mosquitto and VerneMQ still in development.
+  - The OASIS MQTT Technical Committee is shaping post-5.0 work informally branded MQTT 5.1 and beyond, targeting subscription filters, batch publishing and MQTT-SN for ultra-constrained devices, alongside exploratory efforts such as MQTT/RT (real-time peer-to-peer for robotics/autonomous systems) and MQTT Streams (built-in replay, persistence and deduplication).
+  - The broker market in 2026 consolidates around EMQX (Erlang, proven 100M concurrent connections on a 23-node cluster, v6.2.0 released April 2026, and now under BSL 1.1 since v5.9.0), Eclipse Mosquitto (lightweight C edge broker, ~v2.0.22, commercialised as Cedalo/Pro Mosquitto), HiveMQ (Java, enterprise/Sparkplug backbone) and the fast-growing NanoMQ for edge/gateway workloads.
+  - MCP over MQTT and A2A over MQTT emerged in 2025-2026 as EMQX-led profiles carrying the Model Context Protocol and agent-to-agent traffic over the broker, adding service registration/discovery, load balancing and centralised broker-based authentication for edge AI agents.
+  - Broker-native transport is being positioned as a security answer to HTTP-native agent flaws: after the Starlette/FastAPI "BadHost" vulnerability (CVE-2026-48710) exposed large fleets of MCP servers, EMQX argued that outbound MQTT clients with zero inbound ports and topic-based ACLs eliminate the URL-spoofing and header-parser attack surface of HTTP listeners.
+  - Sparkplug 3.0 (Eclipse Sparkplug Working Group, Eclipse Tahu) has formalised the IIoT payload and state-management specification, tightening MQTT 5.0 session semantics (Clean Start vs Clean Session) and driving MQTT+Sparkplug as the Unified Namespace standard competing with OPC UA Pub/Sub (IEC 62541-14).
+  - Security remains the frontier: plaintext MQTT on port 1883 and unauthenticated public brokers persist, and audits through 2025-2026 repeatedly found large numbers of exposed MCP/broker endpoints with no authentication, keeping TLS 1.3, mutual auth and strict topic ACLs the central operational challenge.
+
+- ### References
+  - 1. EMQ (EMQX) (2025). MQTT Trends for 2025 and Beyond: Powering the Future of AI and IoT. https://www.emqx.com/en/blog/mqtt-trends-for-2025-and-beyond
+  - 2. EMQ (EMQX) (2026). A Comprehensive Comparison of Open Source MQTT Brokers in 2026. https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023
+  - 3. ASP Wiki (2026). MQTT and Sparkplug for Industrial IoT — Deep Dive (incl. MQTT over QUIC 2025). https://wiki.aspotomasyon.com/article/mqtt-sparkplug-industrial-iot-deep-dive
+  - 4. EMQX Enterprise Docs (2026). MCP over MQTT — Overview. https://docs.emqx.com/en/emqx/latest/emqx-ai/mcp-over-mqtt/overview.html
+  - 5. EMQTech / EMQ (2026). Fixing AI Agent Security with MQTT Broker Architecture (Starlette BadHost, CVE-2026-48710). https://www.linkedin.com/posts/emqtech_cybersecurity-aiagents-badhost-activity-7470913136435331072-Hzgx
+
 - ### Provenance
   - sources:: OASIS MQTT 5.0 specification; ISO/IEC 20922:2016; Eclipse Foundation MQTT resources; Sparkplug B specification (Eclipse Foundation); EMQX documentation
   - updated:: 2026-06-13

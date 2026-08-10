@@ -245,6 +245,21 @@ public:: true
   - owl-class:: distributed-systems:DistributedSystemProtocol
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - Raft consolidated as the de-facto crash-fault-tolerant default (etcd/Kubernetes, CockroachDB, TiKV, YugabyteDB), while Kafka completed its move off ZooKeeper to the built-in Raft-based KRaft protocol — ZooKeeper was deprecated in Kafka 3.5 and fully removed in Kafka 4.0 (2025).
+  - DAG-based Byzantine fault-tolerant protocols matured rapidly: Sailfish was published at IEEE S&P 2025, and Shoal++ (arXiv, March 2025) cut end-to-end DAG-BFT commit latency to roughly 4.5 message delays, around a 60% reduction versus prior state-of-the-art such as Shoal.
+  - Production blockchains standardised on the Narwhal/Bullshark DAG lineage — Sui shipped Mysticeti (Mysticeti-C reaching the theoretical 3-message-round latency lower bound), while Aptos and others iterate on Shoal/Bullshark variants.
+  - Leaderless and geo-distributed designs advanced on the CFT side: Apache Cassandra's Accord (EPaxos-style) targets strict-serialisable multi-partition transactions, and research protocols like Cabinet (weighted/heterogeneous consensus, 2025) and Autobahn (seamless high-speed BFT) push throughput and WAN latency.
+  - Formal verification and automated bug-finding became a live concern: a 2026 study (the "Agora" LLM-agent effort) reported 15 previously unknown protocol-level logic bugs across Raft, EPaxos, HotStuff and Bullshark implementations, reinforcing "do not roll your own consensus".
+  - Open challenges as of 2026 centre on cutting WAN write latency below cross-region RTT bounds, making BFT practical for federated/partially-trusted infrastructure, taming DAG-BFT implementation complexity, and closing the persistent gap between verified specifications and deployed code.
+
+- ### References
+  - 1. Youngju (2026). Distributed Consensus Deep Dive — Paxos, Raft, ZAB, FLP, etcd, KRaft, BFT, CRDT (2025 landscape). https://www.youngju.dev/blog/culture/2026-04-15-distributed-consensus-paxos-raft-zab-flp-etcd-zookeeper-kraft-bft-crdt-deep-dive-guide-2025.en
+  - 2. Nanotech Insight (2026). Consensus Algorithms in Distributed Systems: Engineering Guide 2026. https://nanotechinsight.com/post/distributed-systems-consensus-algorithms-engineering-guide-2026
+  - 3. Decentralized Thoughts (2025). What's DAG got to do with it? https://decentralizedthoughts.github.io/2025-08-08-DAGs/
+  - 4. Arun, B. et al. (2025). Shoal++: High Throughput DAG BFT Can Be Fast! arXiv:2405.20488v2. https://arxiv.org/pdf/2405.20488.pdf
+  - 5. Ding, J. & Qin, Y. (2026). Raft and Beyond: Practical Consensus Mechanisms for Geo-Distributed Data Systems. Computer Life 14(1). http://computer-life.org/index.php/ojs/article/view/37
+
 - ### Provenance
   - sources:: Lamport (1978) "Time, Clocks, and the Ordering of Events in a Distributed System", CACM. Oki & Liskov (1988) "Viewstamped Replication". Fischer, Lynch & Paterson (1985) "Impossibility of Distributed Consensus with One Faulty Process". Ongaro & Ousterhout (2014) "In Search of an Understandable Consensus Algorithm (Raft)". Castro & Liskov (1999) "Practical Byzantine Fault Tolerance". Nakamoto (2008) "Bitcoin: A Peer-to-Peer Electronic Cash System".
   - updated:: 2026-06-13

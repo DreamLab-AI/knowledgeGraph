@@ -258,6 +258,23 @@ public:: true
   - **Algorithmic instability**: Fully algorithmic monetary policies (as in algorithmic stablecoins) have repeatedly demonstrated fragility under adversarial market conditions, where the automated rules themselves can create destabilising feedback loops.
   - **Interoperability fragmentation**: Proliferation of incompatible token standards and ledger platforms risks fragmenting liquidity and increasing systemic complexity, countering the efficiency gains programmability promises.
 
+- ### Current Landscape (2026)
+  - The US GENIUS Act (Public Law 119-27) was signed on 18 July 2025, creating the first federal framework for payment stablecoins; issuers must hold 1:1 reserves in cash and short-dated Treasuries, are barred from paying yield, and fall under the Bank Secrecy Act. Federal regulators (OCC, FDIC, NCUA, Treasury/FinCEN/OFAC) issued implementing proposals through early 2026, with rules due by 18 July 2026 and the Act taking effect on 18 January 2027.
+  - Regulators are drawing a sharp line between programmable payment stablecoins (no interest, no pass-through deposit insurance) and tokenised bank deposits, which can pay yield and inherit FDIC insurance; the FDIC's April 2026 proposal confirmed deposit insurance is technology-neutral so tokenised deposits qualify if they meet the statutory definition of a deposit.
+  - The EU's MiCA regulation reached full application, with its stablecoin (ART/EMT) regime live since 30 June 2024 and the CASP licensing regime since 30 December 2024; by November 2025 over 53 CASP licences had been granted, and the European Commission opened a MiCA review consultation in May 2026 (closing 31 August 2026), partly to address tokenised real-world assets under Title V.
+  - Wholesale programmability advanced via central bank rails: the ECB will launch Project Pontes, its DLT-to-TARGET bridge for settling tokenised transactions in central bank money, in Q3 2026 (targeting roughly 10 transactions per second), with the longer-horizon Appia initiative exploring the broader tokenised ecosystem and an "enhanced" Pontes product possible by 2028.
+  - The retail digital euro moved to its next phase in October 2025 after the preparation phase closed; contingent on EU legislation being adopted in 2026, a pilot could start in 2027 with potential first issuance in 2029, at an estimated 1.3 billion euro development cost.
+  - Market infrastructure is consolidating around compliance-embedded token standards such as ERC-3643 (T-REX), which builds identity, access control and transfer rules directly into tokens, while Swift's blockchain shared-ledger initiative (announced September 2025) completed its design phase in March 2026 and began building its first iteration.
+  - Adoption is globalising fast, with Hong Kong's stablecoin regime effective 1 August 2025, the UAE's Payment Token Services Regulation in full effect from mid-2025, and Japan, Korea and the UK advancing issuer rules; open challenges as of 2026 include reserve run-risk during stress, preserving the "singleness of money" across private and public forms, cross-border and multi-issuance interoperability, and privacy-preserving compliance for programmable transfers.
+
+- ### References
+  - 1. Morgan Lewis (2026). GENIUS Act Implementation: Key Proposals and What Comes Next. https://www.morganlewis.com/pubs/2026/04/genius-act-implementation-key-proposals-and-what-comes-next
+  - 2. Brookings Institution — Liang & Dudley (2026). Next steps for GENIUS payment stablecoins. https://www.brookings.edu/articles/next-steps-for-genius-payment-stablecoins/
+  - 3. Federal Deposit Insurance Corporation (2026). Notice of Proposed Rulemaking to Establish GENIUS Act Requirements. https://www.fdic.gov/news/financial-institution-letters/2026/notice-proposed-rulemaking-establish-genius-act
+  - 4. European Central Bank (2026). The Eurosystem's comprehensive payments strategy. https://www.ecb.europa.eu/press/pubbydate/2026/html/ecb.eurosystemcomprehensivepaymentsstrategy202603.en.html
+  - 5. European Central Bank (2026). Pontes. https://www.ecb.europa.eu/paym/target/pontes/html/index.en.html
+  - 6. TRM Labs (2025). Global Crypto Policy Review Outlook 2025/26. https://www.trmlabs.com/reports-and-whitepapers/global-crypto-policy-review-outlook-2025-26
+
 - ### Provenance
   - sources:: BIS Working Papers on CBDCs; Ethereum ERC token specification documents; MiCA Regulation (EU) 2023/1114; FATF Virtual Assets Guidance 2021; Bank of England CBDC Discussion Papers; academic literature on DeFi protocol mechanics
   - updated:: 2026-06-13

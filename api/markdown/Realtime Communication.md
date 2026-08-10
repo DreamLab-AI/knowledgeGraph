@@ -288,6 +288,23 @@ public:: true
   - owl-class:: infrastructure:RealtimeCommunication
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - Media over QUIC (MoQ) has emerged as the most serious attempt to unify interactive real-time and scalable streaming: the IETF moq working group's core draft-ietf-moq-transport reached draft-18 (12 May 2026), a publish/subscribe relay protocol over QUIC/WebTransport targeting 200-300 ms glass-to-glass at CDN-style fan-out, though it remains an internet-draft with a formal RFC not expected before 2027.
+  - Cloudflare launched the first MoQ relay network in August 2025, running open-source moq-rs relays on servers in 330+ cities, joining Meta, Google and Cisco; the OpenMOQ Software Consortium (Red5, Akamai, CDN77, Cisco, Synamedia, YouTube, with Bitmovin and Qualabs) formed to push interoperable implementations.
+  - WebTransport over HTTP/3 reached Web Platform "Baseline" in March 2026 when Safari 26.4 shipped it unflagged alongside Chrome, Edge and Firefox, finally closing the browser-support gap that had held back QUIC-based media transport.
+  - Speech-to-speech voice AI became a mainstream real-time workload: OpenAI's Realtime API went generally available on 28 August 2025 with the gpt-realtime model, adding native SIP telephony and remote MCP tool calls; the reasoning-grade 2.x line followed (gpt-realtime-2 in May 2026, 2.1 in July 2026) alongside gpt-realtime-mini, gpt-realtime-translate (70+ input languages) and streaming transcription, with WebRTC as the recommended browser transport at roughly 800 ms voice-to-voice.
+  - RCS gained interoperable end-to-end encryption: the GSMA published Universal Profile 3.0 in March 2025 defining E2EE via the IETF's Messaging Layer Security (MLS) protocol, making RCS the first large-scale messaging service with cross-provider E2EE; Apple began the iPhone-to-Android beta rollout with iOS 26.5 on 11 May 2026, with Google matching on the Android side.
+  - The consensus positioning in 2026 is that MoQ complements rather than replaces WebRTC, which remains the right answer for sub-250 ms two-way conversation (calls, telehealth, AI voice agents), while researchers (Meetecho/Janus) demonstrated the first practical WebRTC-to-MoQ gateway interoperability.
+  - Open challenges as of 2026 include MoQ's lack of a DRM framework, SCTE-35 conformance and any named at-scale production deployment beyond vendor betas and NAB/IBC demos; undefined congestion-response and rate-adaptation policies; RCS E2EE not extending to business (A2P) messaging and depending on gradual carrier activation of Universal Profile 3.0; and the OpenAI Realtime audio path still not being HIPAA-eligible under any BAA.
+
+- ### References
+  - 1. Cloudflare (2025). MoQ: Refactoring the Internet's real-time media stack. https://blog.cloudflare.com/moq/
+  - 2. IETF moq Working Group / Nandakumar, Vasiliev, Swett, Frindell (2025). Media over QUIC Transport (draft-ietf-moq-transport-13). https://datatracker.ietf.org/doc/draft-ietf-moq-transport/13/
+  - 3. Fora Soft (2026). Media over QUIC (MoQ) In Depth: The 2026 Turning Point. https://www.forasoft.com/learn/video-streaming/articles-streaming/media-over-quic-moq
+  - 4. OpenAI (2025). Introducing gpt-realtime and Realtime API updates for production voice agents. https://openai.com/index/introducing-gpt-realtime/
+  - 5. GSMA (2025). RCS Encryption: A Leap Towards Secure and Interoperable Messaging. https://www.gsma.com/newsroom/article/rcs-encryption-a-leap-towards-secure-and-interoperable-messaging/
+  - 6. Infosecurity Magazine (2026). Apple Rolls Out E2EE for RCS Across iPhone and Android. https://www.infosecurity-magazine.com/news/apple-google-rcs-end-to-end/
+
 - ### Provenance
   - sources:: IETF RFC 3261, RFC 3550, RFC 8825 series; W3C WebRTC 1.0 Recommendation; 3GPP IMS specifications; MDN Web Docs (WebRTC); Mozilla Hacks; ITU-T H-series and G-series standards
   - updated:: 2026-06-13

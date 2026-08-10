@@ -281,6 +281,23 @@ public:: true
   - Token binding (DPoP) should be adopted where the client runtime supports asymmetric keys, particularly for high-value API access.
   - Resource servers validating JWT access tokens must verify the `iss`, `aud`, `exp`, `nbf`, and signature; ignoring any one of these opens vulnerability windows.
 
+- ### Current Landscape (2026)
+  - The IETF published RFC 9700 (BCP 240), "Best Current Practice for OAuth 2.0 Security", in January 2025, consolidating a decade of hardening: it formally deprecates the Implicit and Resource Owner Password Credentials grants, mandates PKCE and exact redirect-URI matching, and requires sender-constrained or rotated refresh tokens for public clients.
+  - OAuth 2.1 remains an in-progress IETF draft (draft-ietf-oauth-v2-1-15, last revised 2 March 2026) authored by Dick Hardt, Aaron Parecki and Torsten Lodderstedt; it consolidates RFC 6749/6750 plus PKCE, native-app and browser-app guidance, with the working-group milestone to submit to the IESG targeted for December 2026.
+  - Sender-constrained tokens have moved into the mainstream via RFC 9449 (DPoP, Demonstrating Proof-of-Possession); FAPI 2.0 and OAuth 2.1 now accept DPoP or mutual-TLS (RFC 8705) as equivalent binding mechanisms, and Bluesky's atproto profile mandates DPoP on every authorised request.
+  - The OpenID Foundation approved the FAPI 2.0 Security Profile as a Final specification in February 2025, with final conformance tests and certifications for both the Security Profile and Message Signing published on 9 July 2025, cementing the open-banking/high-assurance baseline.
+  - Anthropic's Model Context Protocol has become a major new consumer of the stack: the 2025-11-25 MCP authorisation spec makes OAuth 2.1 with PKCE (S256) mandatory for all client types, classes MCP servers strictly as OAuth 2.0 resource servers, and requires RFC 9728 Protected Resource Metadata, RFC 8414 server metadata and RFC 8707 resource indicators, whilst forbidding token pass-through to upstream APIs.
+  - Fresh RFCs have filled long-standing gaps: RFC 9728 (Protected Resource Metadata, April 2025) and RFC 9701 (JWT Response for Token Introspection), enabling the resource-server-first discovery pattern that agentic deployments depend on.
+  - Open challenges as of 2026 centre on agent and machine-to-machine identity: the working group is progressing draft-ietf-oauth-security-topics-update (addressing cross-user session-fixation and multi-tenant OAuth-connection attacks), and MCP is shifting from open Dynamic Client Registration (RFC 7591) toward Client ID Metadata Documents (CIMD) to counter client-impersonation risk at agent-fleet scale.
+
+- ### References
+  - 1. IETF (2025). RFC 9700: Best Current Practice for OAuth 2.0 Security (BCP 240). https://datatracker.ietf.org/doc/rfc9700/
+  - 2. Hardt, Parecki & Lodderstedt / IETF (2026). draft-ietf-oauth-v2-1-15: The OAuth 2.1 Authorization Framework. https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/
+  - 3. OAuth.net / OpenID Foundation (2025). RFC 9449: OAuth 2.0 Demonstrating Proof-of-Possession (DPoP). https://oauth.net/2/dpop/
+  - 4. OpenID Foundation (2025). FAPI 2.0 Security Profile and Message Signing: Final Conformance Tests and Certifications Now Available. https://openid.net/fapi2-0-final-conformance-tests-available/
+  - 5. Anthropic / Model Context Protocol (2025). Authorization — MCP Specification 2025-11-25. https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization
+  - 6. WorkOS (2026). DPoP (RFC 9449) explained: How sender-constrained OAuth tokens work. https://workos.com/blog/dpop-rfc-9449-explained
+
 - ### Provenance
   - sources:: RFC 6749, RFC 6750, RFC 7009, RFC 7636, RFC 7662, RFC 9068, RFC 9449, RFC 9700
   - updated:: 2026-06-13

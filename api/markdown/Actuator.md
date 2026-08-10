@@ -270,6 +270,23 @@ public:: true
   - **IEEE 1872 (Ontologies for Robotics and Automation)** — Provides formal vocabulary for actuator types, consistent with this ontology's classification under `robo-actuation-and-control`.
   - Standardisation bodies involved: ISO TC 299 (Robotics), IEC TC 22 (Power Electronics), IEEE Robotics and Automation Society.
 
+- ### Current Landscape (2026)
+  - The humanoid-robot boom has become the dominant driver of actuator R&D: the 2025-2026 wave of designs has decisively standardised on all-electric actuation (frameless torque motor plus strain-wave/harmonic-drive or planetary-roller-screw reduction with integrated torque, position and encoder feedback), displacing the hydraulics that defined early legged robots such as the pre-2024 Boston Dynamics Atlas.
+  - Tesla began Optimus mass production in January 2026; its Gen 3 hands relocate all 25 actuators per hand into the forearm, driving 22 degrees of freedom per hand (50 actuators total) through wrist-routed tendons with fingertip tactile sensors, mirroring Figure AI's in-house-designed Figure 03 hand (fingertip force sensing down to ~3 grams) unveiled in the same period.
+  - Major suppliers are locking in the supply chain: Schaeffler premiered a purpose-built two-stage planetary-gear actuator (60-250 Nm, back-driveable) for humanoids at CES 2026 and signed a five-year preferred-supply agreement covering over 50% of a partner's joint-actuator needs, while ABB, Festo, Moog, SMC and Harmonic Drive Systems together held roughly 42% of the broader robotics-actuator market in 2025.
+  - Market sizing reflects the surge: analysts put the 2025 robotics-actuator market near USD 17.1 billion (ABB leading at ~15% share), with the narrower humanoid-actuator segment growing fast (one forecast projects roughly USD 290 million in 2025 to USD 16.97 billion by 2032); electric actuation held ~57% of actuation-type share and rotary designs ~61% in 2025.
+  - Soft and artificial-muscle actuation matured on the research frontier: Keplinger's group at CU Boulder advanced HASEL electrohydraulic artificial muscles, and a 2024 Science Advances "HALVE" design cut driving voltage ~5-6x while reaching ~50 W/kg power density and near-mammalian-muscle strain rates, though efficiency (~20-30%) and high-voltage drive still bar mass deployment.
+  - New motor architectures are targeting weight and torque density: at the 2026 Robotics Summit, Quanten Technologies showed dynamically reconfigurable multi-phase motors claiming ~30% weight savings over conventional three-phase BLDC, and Festo introduced its BionicSoftActuator 2.0 (Automatica 2025) with 98% stroke repeatability at 40% lower air consumption.
+  - Open challenges as of 2026 centre on hitting the industry's five performance thresholds — power density above 100 Nm/kg, force-control accuracy under 1% of rated torque, sub-1 ms whole-body control latency, 4-plus hours of runtime, and sub-USD 30,000 unit cost — with actuators (still 1-3 kW per leg, limiting battery life to 2-4 hours) and thermal management remaining the binding constraints on humanoid commercialisation.
+
+- ### References
+  - 1. The Dynamics (2026). Actuators and hands of humanoid robots. https://thedynamics.ai/articles/humanoid-actuators
+  - 2. optimusk.blog (2026). Tesla Optimus Hardware: Actuators, Hands & Sensors (2026). https://optimusk.blog/blog/tesla-optimus-hardware-specs/
+  - 3. Global Market Insights (2026). Robotics Actuators Market Size & Share 2026-2035. https://www.gminsights.com/industry-analysis/robotics-actuators-market
+  - 4. Schaeffler (2026). Schaeffler presents innovative planetary gear actuator for humanoid robots (CES 2026). https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88156672
+  - 5. PatSnap (2026). Humanoid robot actuators: 530,554+ patents analysed. https://www.patsnap.com/resources/blog/articles/humanoid-robot-actuators-530554-patents-analysed/
+  - 6. Rothemund et al., Science Advances (2024). Low-voltage electrohydraulic (HALVE) actuators for untethered robotics. https://www.science.org/doi/10.1126/sciadv.adi9319
+
 - ### Provenance
   - sources:: ISO 10218-1:2011; ISO/TS 15066:2016; Siciliano et al. "Robotics: Modelling, Planning and Control" (2009); IEEE 1872-2015; Hogan N. "Impedance Control" ASME J. Dyn. Syst. 1985; Pratt & Williamson "Series elastic actuators" IROS 1995
   - updated:: 2026-06-13
