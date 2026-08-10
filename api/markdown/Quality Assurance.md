@@ -303,6 +303,22 @@ alias:: QualityAssurance
   - owl-class:: infrastructure:QualityAssurance
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - The defining shift of 2025-2026 is the move from AI-assisted to agentic testing: autonomous agents that observe an application, reason about what to test, generate cases from plain-language prompts or user stories, execute them, prioritise by risk and analyse failures with minimal per-cycle human direction. Playwright Test Agents brought multi-agent frameworks from research into production, and Tricentis, Mabl, Functionize and testers.ai now ship closed-loop agentic platforms.
+  - Self-healing test automation matured into a baseline expectation rather than a differentiator, with leading systems reporting 80-90% reductions in test-maintenance effort by identifying UI elements through multi-attribute ML recognition instead of rigid selectors.
+  - Adoption is now mainstream: dev.to/Currents reporting cites roughly 81% of teams using AI in testing workflows, ThinkSys puts AI-first quality-engineering adoption at ~77.7%, and the global software-testing market is projected to grow from about USD 55.8B (2024) to USD 112.5B (2034) at ~7.2% CAGR.
+  - The vendor field spans AI-native autonomous tools (Momentic, Meticulous, testers.ai), managed AI-plus-human QA (QA Wolf, Rainforest QA, Bug0), AI-assisted platforms (Mabl, Testsigma, LambdaTest KaneAI, ACCELQ) and visual AI (Applitools), while newer categories such as vision-based mobile automation and "vibe/experience testing" of AI-generated UIs emerged through 2026.
+  - Regulation reshaped QA scope: the EU AI Act became applicable on 2 August 2026, mandating documented quality-management systems (Article 17) and conformity assessment for high-risk AI providers, with high-risk Annex III obligations extended to 2 December 2027 under the AI Omnibus simplification.
+  - On standards, prEN 18286 (Artificial Intelligence - Quality Management System for EU AI Act Regulatory Purposes) entered public enquiry on 30 October 2025 as the first harmonised AI standard, sitting alongside established frameworks such as ISO/IEC 25010, ISO/IEC 5055 and ISO/IEC 12207 that do not yet explicitly address AI tooling.
+  - Open challenges as of 2026 centre on trust and governance: fully autonomous "deploy-and-forget" agents remain experimental, so supervised autonomy with human review before commitment to regression suites is the realistic norm, and QA is increasingly tasked with validating the AI systems that now help build and test the software itself.
+
+- ### References
+  - 1. InnovateBits (2026). Top AI Testing Trends QA Engineers Must Know in 2025-2026. https://www.innovatebits.com/blog/ai-testing-trends-2025-2026
+  - 2. Tricentis (2026). QA trends for 2026: AI, agents, and the future of testing. https://www.tricentis.com/blog/qa-trends-ai-agentic-testing
+  - 3. ThinkSys (2025). QA Trends Report 2026: Key QA & AI Testing Shifts. https://thinksys.com/qa-testing/qa-trends-report-2026/
+  - 4. European Commission (2026). Standardisation of the AI Act (prEN 18286, harmonised standards). https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation
+  - 5. European Union (2026). AI Act — Regulatory framework and application timeline. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+
 - ### Provenance
   - sources:: ISO/IEC 25010:2023; ISO/IEC 42001:2023; IEEE Std 829; ISTQB Foundation Level Syllabus v4.0; EU AI Act (Regulation EU 2024/1689); Humble, J. & Farley, D. — Continuous Delivery (2010)
   - updated:: 2026-06-13

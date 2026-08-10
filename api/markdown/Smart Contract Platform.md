@@ -302,6 +302,24 @@ public:: true
   - **[[Formal Verification]]**: Certora Prover (CVL specification language), the K Framework (EVM-K semantics), and the Move Prover provide machine-checked correctness proofs for high-value contract code.
   - **Audit standards**: OpenZeppelin, Trail of Bits, ChainSecurity, and Quantstamp publish structured audit methodologies; the Smart Contract Security Alliance advocates for common vulnerability taxonomies aligned with Ethereum's EEA security standards.
 
+- ### Current Landscape (2026)
+  - Ethereum shipped two major upgrades that reshaped its smart-contract layer: Pectra (7 May 2025) introduced EIP-7702, letting ordinary externally-owned accounts temporarily execute contract code for transaction batching, gas sponsorship and social recovery, and raised the max effective validator balance from 32 to 2,048 ETH; over 11,000 EIP-7702 authorisations were created within a week of activation.
+  - Fusaka (3 December 2025) brought PeerDAS (EIP-7594) to mainnet, letting validators sample rather than download blob data (cutting bandwidth roughly 85%), while blob-parameter-only forks raised the target blob count (14 target/21 max by BPO-2 on 7 January 2026) and the L1 gas limit was lifted from 30M to 60M.
+  - As a result L1 median fees fell from over $2 to under $0.02 and L2 median fees dropped more than 95%, with Etherscan showing standard gas around 0.15 gwei by May 2026; the next upgrade, Glamsterdam (targeted H2 2026), adds enshrined proposer-builder separation and block-level access lists.
+  - Solana moved its Firedancer validator client out of beta (with lab tests exceeding 1M TPS on a single node) and passed the Alpenglow consensus upgrade by 98% community vote in September 2025, replacing Proof-of-History and TowerBFT with the Votor and Rotor engines to target ~150ms finality, with mainnet activation expected Q1 2026.
+  - Move-language platforms gained ground as an alternative to Solidity: Sui's developer base grew 219% over the year, and Base captured nearly half of all L2 DeFi TVL, signalling fragmentation of smart-contract activity across L2s and non-EVM chains.
+  - Market share shifted: Ethereum's share of global DeFi TVL slid from 63.5% in January 2025 to about 53% by May 2026 (still ~$45.5B), while Solana, BNB Chain, Tron, Base and Hyperliquid collectively grew to roughly 47% of the total.
+  - The EU's MiCA regime became the dominant regulatory force, favouring compliant euro stablecoins (Circle's EURC reached ~41% euro-stablecoin market share by mid-2025) and cementing Ethereum as the primary settlement layer, hosting ~90% of euro-stablecoin issuance.
+  - Open challenges as of 2026 include sustaining ETH's deflationary fee burn after cheap blobs suppressed it (addressed provisionally by Fusaka's EIP-7918 blob price floor), realising 1M TPS at network scale (realistically a 2027-2028 target), and maturing cross-chain interoperability standards such as ERC-7930/7828 interoperable addresses.
+
+- ### References
+  - 1. Ethereum Foundation (2026). Protocol Priorities Update for 2026. https://blog.ethereum.org/2026/02/18/protocol-priorities-update-2026
+  - 2. Ethereum.org (2026). Building on Ethereum in 2026: what has changed. https://ethereum.org/latest/building-on-ethereum-in-2026/
+  - 3. Sherlock (2026). Best Blockchain to Build On in 2026. https://sherlock.xyz/post/best-blockchain-to-build-on-in-2026
+  - 4. The Block (2025). From Pectra to Fusaka: How Ethereum's protocol changed in 2025. https://www.theblock.co/post/383451/how-ethereums-protocol-changed-2025
+  - 5. BingX News (2026). Ethereum DeFi TVL Share Slides to 53% as Rivals Gain Ground. https://bingx.com/en/news/post/ethereum-defi-tvl-share-slides-to-as-rivals-gain-ground-jan-may
+  - 6. Utila (2025). Euro Stablecoin Landscape: Trends and Insights for 2026. https://utila.io/blog/euro-stablecoin-report-what-mica-means-for-fintechs
+
 - ### Provenance
   - sources:: Ethereum Yellow Paper (Wood 2014); Solana whitepaper (Yakovenko 2018); Cardano eUTXO paper (Chakravarty et al. 2020); EIP-4337 (Buterin et al. 2021); Polkadot lightpaper; Move language specification (Blackshear et al. 2019)
   - updated:: 2026-06-13

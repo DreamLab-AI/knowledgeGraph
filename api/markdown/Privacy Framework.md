@@ -291,6 +291,22 @@ public:: true
   - owl-class:: governance:PrivacyFramework
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - NIST released the Initial Public Draft of the Privacy Framework 1.1 (CSWP 40) on 14 April 2025, with the comment period closing 13 June 2025; NIST confirmed during Data Privacy Week (27 January 2026) that the finalised version will publish in 2026.
+  - Version 1.1 realigns the Core with the Cybersecurity Framework (CSF) 2.0, adds a standalone Govern function/category holding leadership accountable for privacy outcomes, and expands the Core subcategories (roughly 100 to 139) so organisations can operate the two frameworks together.
+  - A new Section 1.2.2 on AI and privacy risk management addresses AI-specific threats such as data reconstruction, prompt injection and membership-inference attacks, inadequate protection of training data, and computational or human bias; the Section 3 usage guidelines were relocated to an interactive online FAQ.
+  - The EU AI Act (Regulation (EU) 2024/1689) is the dominant parallel regime: in force since 1 August 2024, with general-purpose AI model obligations applying from 2 August 2025 and high-risk-system rules originally due 2 August 2026, now creating a dual GDPR-plus-AI-Act compliance layer for personal-data processing.
+  - The European Commission's Digital Omnibus package (proposed 19 November 2025; Council adoption of the "Omnibus VII" simplification regulation on 29 June 2026) defers high-risk AI obligations to 2 December 2027 (standalone Annex III systems) and 2 August 2028 (embedded systems), and proposes redefining personal data and pseudonymisation in the GDPR, drawing sharp criticism from Amnesty International as a rollback of protections.
+  - US state law fragmentation intensified: comprehensive laws in Indiana, Kentucky and Rhode Island took effect on 1 January 2026 (about twenty states now covered), Texas's Responsible AI Governance Act (TRAIGA) took effect 1 January 2026, new California CCPA regulations on automated decision-making technology, risk assessments and cybersecurity audits took effect 1 January 2026, and Colorado's AI Act follows on 30 June 2026.
+  - In the UK, the Data (Use and Access) Act 2025 (Royal Assent 19 June 2025) brought its principal data-protection provisions into force on 5 February 2026, while the EU Data Act became applicable from 12 September 2025 — signalling that the frontier challenge for 2026 is operationalising overlapping, fast-shifting privacy, AI and data-governance regimes at once.
+
+- ### References
+  - 1. NIST (2025). NIST Privacy Framework 1.1 — Initial Public Draft (CSWP 40). https://csrc.nist.gov/pubs/cswp/40/nist-privacy-framework-11/ipd
+  - 2. NIST (2025). NIST Updates Privacy Framework, Tying It to Recent Cybersecurity Guidelines. https://www.nist.gov/news-events/news/2025/04/nist-updates-privacy-framework-tying-it-recent-cybersecurity-guidelines
+  - 3. NIST (2026). Celebrating Data Privacy Week with NIST's Privacy Engineering Program. https://www.nist.gov/blogs/cybersecurity-insights/celebrating-data-privacy-week-nists-privacy-engineering-program
+  - 4. aosphere (2026). Global Data Protection, Cybersecurity, and AI Regulation: Key Developments from Summer 2026. https://www.aosphere.com/know-how/global-data-protection-cybersecurity-and-ai-regulation-key-developments-from-summer-2026/
+  - 5. Covington InsidePrivacy (2026). What to Watch in 2026: Key EU Privacy & Cybersecurity Developments. https://www.insideprivacy.com/european-union-2/what-to-watch-in-2026-key-eu-privacy-cybersecurity-developments/
+
 - ### Provenance
   - sources:: GDPR (EU 2016/679); ISO/IEC 29100:2011; ISO/IEC 27701:2019; NIST Privacy Framework v1.0; W3C Privacy Principles; XRSI Privacy Framework
   - updated:: 2026-06-13

@@ -274,6 +274,23 @@ alias:: BlockchainTechnology
   - **FATF Travel Rule** — Financial Action Task Force guidance requiring originator/beneficiary information to travel with crypto transfers above thresholds.
   - **EIP-1559** — Ethereum fee market reform introducing base fee burn; EIP-4844 (proto-danksharding) reducing rollup data costs.
 
+- ### Current Landscape (2026)
+  - Ethereum shipped two major upgrades: Pectra (mainnet 7 May 2025) introduced EIP-7702 (letting externally-owned accounts temporarily run smart-contract code for batching, gas sponsorship and social recovery), doubled blob throughput and raised the maximum effective validator balance from 32 to 2,048 ETH (EIP-7251); Fusaka (activated 3 December 2025) shipped PeerDAS (EIP-7594), cutting validator bandwidth by roughly 85% while scaling blob capacity up to 8x and raising the L1 gas limit.
+  - Stablecoins went mainstream and were codified into law: the US GENIUS Act was signed on 18 July 2025 (Public Law 119-27), mandating 1:1 liquid reserves, monthly disclosures and BSA compliance, with final implementing rules due July 2026 and full effect on 18 January 2027; total stablecoin market cap surpassed roughly 300-315 billion USD in 2026, up more than 50% from about 205 billion at the start of 2025.
+  - The EU's MiCA framework took full effect at the start of 2025 and its transitional period closed on 1 July 2026, triggering the largest stablecoin delisting wave in European history as Coinbase, Kraken, Crypto.com and Binance restricted non-compliant tokens such as USDT for EU users, while compliant issuers like Circle (EURC) absorbed the demand.
+  - Real-world asset (RWA) tokenisation graduated from pilots to production: on-chain tokenised RWAs excluding stablecoins grew from around 5 billion USD in early 2025 to roughly 30-34 billion by mid-2026, led by tokenised US Treasuries, with BlackRock's BUIDL fund surpassing 1 billion USD AUM and expanding to Solana, alongside products from Franklin Templeton (BENJI), Fidelity and UBS.
+  - Traditional-finance infrastructure moved on-chain: DTCC (via DTC) secured an SEC No-Action Letter to tokenise select DTC-custodied assets in a permissioned Hyperledger Besu environment, with rollout expected in the second half of 2026, and on 12 December 2025 the OCC conditionally approved national trust-bank charters for BitGo, Circle, Fidelity Digital Assets, Paxos and Ripple.
+  - Layer 2 rollups became the dominant execution venue, with L2 total value locked reaching roughly 47 billion USD by early 2026 and L2s handling around 95% of Ethereum's transaction throughput; ERC-4337 account abstraction and passkey (WebAuthn/P-256) wallets moved into production.
+  - Open challenges as of 2026 include tightening validator-transparency and staking-disclosure mandates (MiCA registration for large staking pools, SEC governance-token scrutiny, Singapore MAS licensing), concerns over staking centralisation, unresolved US market-structure legislation (the CLARITY Act passed the House but stalled in the Senate), and the emerging quantum-resistance and privacy/ZK frontier.
+
+- ### References
+  - 1. Ethereum Foundation (2026). Protocol Priorities Update for 2026. https://blog.ethereum.org/2026/02/18/protocol-priorities-update-2026
+  - 2. The Blockchain History (2026). Chapter 9: Latest Development Trends and Future Outlook (2024-2026). https://theblockchainhistory.com/history/latest-trends
+  - 3. Crypto.com Research (2025). 2025 Year Review & 2026 Year Ahead. https://crypto.com/en/research/2025-review-2026-ahead
+  - 4. AMINA Group (2026). Why 2026 Could Be Crypto's Most Important Year Yet. https://aminagroup.com/research/why-2026-could-be-cryptos-most-important-year-yet/
+  - 5. CoinGecko (2026). Top Crypto Narratives for 2026 (Stablecoins, RWA, MiCA, Circle Arc). https://www.coingecko.com/learn/crypto-narratives
+  - 6. Chainalysis (2025). 2025 Crypto Regulatory Round-Up. https://www.chainalysis.com/blog/2025-crypto-regulatory-round-up/
+
 - ### Provenance
   - sources:: Nakamoto, S. (2008) "Bitcoin: A Peer-to-Peer Electronic Cash System"; Buterin, V. (2013) Ethereum whitepaper; W3C DID Core 1.0 specification; ISO 22739:2020; Hyperledger documentation; FATF Virtual Assets Guidance 2021.
   - updated:: 2026-06-13

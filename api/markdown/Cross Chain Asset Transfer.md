@@ -213,6 +213,23 @@ alias:: Cross-Chain Asset Transfer
   - [[Decentralised Exchange]] — frequently built on cross-chain transfer primitives
   - [[Consensus Mechanism]] — the security foundation each chain's state transitions rest upon
 
+- ### Current Landscape (2026)
+  - An 18 April 2026 exploit that drained roughly $292M from Kelp DAO's LayerZero-based bridge triggered the largest cross-chain infrastructure migration to date, with a cumulative ~$15bn in assets announced as moving from LayerZero to Chainlink's CCIP by August 2026.
+  - Major issuers and protocols have standardised on CCIP's Cross-Chain Token (CCT) burn-and-mint model: BitGo made CCIP the exclusive rail for $7.7bn of WBTC and the default for all future BitGo assets (Aug 2026), following Kelp (>$1.5bn), Lombard (>$1bn), Aave (default for GHO and all cross-chain ops from 13 July 2026), Kraken, Solv, Re.xyz and Mantle.
+  - The burn-and-mint CCT design (one canonical deployment per chain, no locked bridge reserves) has largely displaced the older lock-and-unlock and wrapped-variant models seen as honeypots after $2.8bn+ in historic bridge losses (Ronin, Wormhole, Nomad).
+  - Intent-based transfer has matured around ERC-7683 (authored by Uniswap Labs/Across; created April 2024, adoption from 2025), which standardises a signed cross-chain order that any solver can fill; as of April 2026 Across, UniswapX, CoW Protocol, Eco, LI.FI and Symbiosis run production endpoints, with wallet support in Safe, Argent, Rabby and MetaMask.
+  - Institutional and RWA rails advanced sharply: CCIP processed over $18bn in Q1 2026 (319% year-on-year growth), connects 70+ public and private chains, and in April 2026 completed Swift interoperability trials with Citi, BNY Mellon, Euroclear, Clearstream and Lloyds; Lido selected CCIP for wstETH (Nov 2025) and CCIP holds ISO 27001 and SOC 2 certification.
+  - In response, LayerZero removed 1-of-1 DVN configurations and is shifting most routes to stricter 5-of-5 X-of-Y-of-N verifier setups, while retaining scale (150+ chains, ~$44bn total bridged, USDT0 and TRON/TON integrations).
+  - Open challenges as of 2026 centre on the "lowest common denominator" security problem in chain abstraction: intents hide rather than remove trust boundaries, and solver networks add new attack surfaces (front-running, routing to weaker chains, solver collusion), prompting calls for security-tier parameters, solver reputation/slashing and post-execution security receipts.
+
+- ### References
+  - 1. Blockhead (2026). BitGo Drops LayerZero for Chainlink CCIP on $7.7 Billion of WBTC. https://www.blockhead.co/2026/08/06/bitgo-drops-layerzero-for-chainlink-ccip-on-7-7-billion-of-wbtc/
+  - 2. thirdweb blog (2026). Aave Picks Chainlink CCIP as $7.2B Exits LayerZero. https://blog.thirdweb.com/aave-picks-chainlink-ccip-as-7-2b-exits-layerzero/
+  - 3. Gate.com (2026). Chainlink CCIP Cross-Chain Architecture Analysis: The Core Logic Behind Institutional Adoption. https://www.gate.com/en-us/blog/chainlink-ccip-cross-chain-architecture-analysis-the-core-logic-behind-institutional
+  - 4. Eco (2026). ERC-7683 Cross-Chain Intents Standard Explained. https://eco.com/support/en/articles/14799834-erc-7683-cross-chain-intents-standard-explained
+  - 5. crypto.news (2026). Chainlink CCIP draws $4b from LayerZero exodus. https://crypto.news/chainlink-ccip-draws-4b-from-layerzero-exodus/
+  - 6. BlockEden (2026). Chain Abstraction Is Coming: ERC-7683 and Intent-Based Bridging. https://blockeden.xyz/forum/t/chain-abstraction-is-coming-erc-7683-and-intent-based-bridging-promise-users-wont-care-which-chain-theyre-on-but-21-9b-in-bridge-tvl-says-the-transition-will-be-messy/4658
+
 - ### Provenance
   - sources:: ICS-20 Interchain Standards, Cosmos SDK documentation, Polkadot XCM specification, Chainlink CCIP whitepaper, LayerZero whitepaper, Rekt.news bridge exploit post-mortems, Circle CCTP documentation, ERC-7281 EIP
   - updated:: 2026-06-13

@@ -273,6 +273,23 @@ public:: true
   - Regulatory attention is increasing: the US CFTC and SEC have both examined whether [[Governance Token]] holders of DeFi protocols bear liability as control-persons under financial regulation. The EU's MiCA regulation touches on DAO governance structures.
   - [[Polkadot]]'s OpenGov (2023) represents a significant evolution — multi-track governance with differentiated privilege levels is becoming an influential design pattern for future L1 governance systems.
 
+- ### Current Landscape (2026)
+  - Legal recognition of on-chain governance has matured: Wyoming's Decentralised Unincorporated Nonprofit Association (DUNA) Act took effect on 1 July 2024, letting a DAO's governing principles embed token votes and smart-contract proposals as legally binding while preserving limited liability, and requiring at least 100 members; the EU's MiCA regime became fully applicable on 30 December 2024, and in 2026 UNCITRAL advanced a model-law text formalising Council-plus-token-holder governance.
+  - Pure token-weighted voting is being displaced by hybrid and delegate-based models: by 2026 Uniswap, Optimism, Arbitrum and Aave route most voting power through roughly 30-100 professional delegates, and structures such as Optimism's Token House plus Citizens House and Arbitrum's Security Council reserve on-chain votes for council elections and major parameter or upgrade decisions.
+  - Protocol-layer governance shipped concrete upgrades: Solana's Alpenglow consensus redesign was approved by validator governance in September 2025 (introducing the Votor voting component and removing on-chain vote transactions), and Aave's DAO backed the V4 mainnet path in a near-unanimous Snapshot vote (over 645,000 votes in favour) in early 2026 ahead of a formal on-chain AIP.
+  - AI-assisted governance moved from experiment to standard practice, with MakerDAO developing Governance AI Tools (GAITs) for proposal summarisation and outcome simulation as part of its Endgame plan, NEAR building the Pulse sentiment tool and AI delegates, and Aave deploying AI-assisted proposal analysis.
+  - Governance is being streamlined to fight fatigue: on 27 July 2026 Lido shipped its Curated Module v2 upgrade, delegating routine administrative actions (previously requiring a full on-chain vote) to operators and a Curated Module Committee while the DAO retains key parameters and a veto right.
+  - Participation and centralisation remain the core unsolved problems: turnout among decision-makers hovers around 20% (often nearer 10%), academic analysis of 370+ proposals found as few as three to five voters could sway most outcomes with roughly 1% of holders controlling 90% of voting power, and cases of frozen or paused governance (for example Jupiter suspending governance votes) multiplied through 2026.
+  - Emerging frontiers include ZK-based private voting, gasless proposals via account abstraction, reputation- and expertise-weighted voting, and cross-chain DAO coordination over IBC-style messaging, alongside optimistic governance where proposals execute by default after a challenge window.
+
+- ### References
+  - 1. daotimes.com (2025). DAO Regulation News 2025: Wyoming DUNA, EU MiCA, FATF Requirements. https://daotimes.com/dao-regulation-news/
+  - 2. Astraea Law (2026). DAO LLC Formation Guide: Step-by-Step Wyoming DUNA. https://astraea.law/insights/dao-llc-formation-wyoming-duna-guide-2025
+  - 3. Cointelegraph Magazine (2026). The Biggest Blockchain Upgrades Still to Come in 2026. https://cointelegraph.com/magazine/the-biggest-blockchain-upgrades-still-to-come-in-2026
+  - 4. Crypto University Network (2026). AI Meets DAOs: How Artificial Intelligence Is Changing On-Chain Governance in 2026. https://cryptouniversity.network/guides/ai-meets-daos-how-artificial-intelligence-is-changing-on-chain-governance-in-2026
+  - 5. TechBullion (2026). DAO Governance Models in America in 2026: How On-Chain Voting Has Actually Performed. https://techbullion.com/dao-governance-models-in-america-in-2026-how-on-chain-voting-has-actually-performed/
+  - 6. ForkLog (2026). Lido launches biggest protocol upgrade since V2. https://forklog.com/en/lido-launches-biggest-protocol-upgrade-since-v2/
+
 - ### Provenance
   - sources:: OpenZeppelin Governor documentation; Polkadot Wiki OpenGov; Tezos self-amendment specification; Compound Governor Bravo; Uniswap governance forum
   - updated:: 2026-06-13

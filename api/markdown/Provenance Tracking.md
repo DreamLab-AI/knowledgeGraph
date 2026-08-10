@@ -624,6 +624,23 @@ alias:: BC-0441-provenance-tracking
 		- [[BC-0029-permissioned-blockchain]] - Access-controlled networks
 		- [[Internet of Things]] - Sensor integration for data capture
 
+- ### Current Landscape (2026)
+  - The centre of gravity has shifted from "blockchain as the ledger" to standards-based event sharing anchored to a chain: GS1 EPCIS/CBV 2.0 (ratified June 2022, with the EPCIS Sandbox live since February 2024) is now the lingua franca, adding JSON/JSON-LD syntax, a REST capture/query API, GS1 Digital Link URIs, and native sensor/IoT and certification data. GS1 US issued recommendations in May 2025 mapping FDA Food Traceability Rule events directly into EPCIS structures.
+  - The dominant 2025-2026 architecture is hybrid on-chain/off-chain: full event detail lives in an off-chain EPCIS repository while only cryptographic hashes (batch anchors) are written to a consortium ledger such as Hyperledger Fabric with Private Data Collections, paired with W3C Verifiable Credentials 2.0 (now a W3C Recommendation) for selectively-disclosable origin and sustainability claims.
+  - Regulation is the primary driver. The EU Ecodesign for Sustainable Products Regulation (ESPR, Regulation 2024/1781) entered into force on 18 July 2024; its central Digital Product Passport (DPP) Registry becomes operational on 20 July 2026, and Commission Implementing Decision (EU) 2026/1736 (14 July 2026) set the first harmonised DPP standards.
+  - Sectoral DPP obligations are now dated: batteries first under the EU Batteries Regulation (2023/1542) from 18 February 2027, followed by textiles, tyres and aluminium in 2027, iron and steel from 2026, and furniture, mattresses and ICT products through 2028-2029. Volvo launched an early battery passport on the EX90 at roughly $10 per vehicle.
+  - Other regulatory clocks reshaped provenance priorities: the EU Deforestation Regulation (EUDR) was pushed to 30 December 2025 and politically agreed in December 2025 to extend to 30 December 2026 (geolocation provenance for coffee, cocoa, rubber), while US FDA FSMA 204 food-traceability enforcement was extended to 20 July 2028 - though retailer mandates run ahead, with Walmart requiring EPCIS/ASN data from suppliers by 1 August 2025.
+  - Standards bodies have filled gaps around the ledger layer: ASTM D8558-2024 standardises blockchain-verified Certificates of Authentication, complementing ISO/TR 16340:2023 for cold-chain food traceability platforms, and 2D-barcode adoption (GS1 Digital Link / DataMatrix) is targeting the "Sunrise 2027" POS transition across 48 countries.
+  - Open challenges as of 2026: reconciling GDPR and confidentiality with immutable ledgers (hence hash-anchoring rather than raw on-chain data), interoperability between competing DPP service-provider platforms, the cost and data-quality burden on SMEs and third-country suppliers, and avoiding "garbage-in" provenance where tamper-evidence guarantees integrity of the record but not the truth of the original claim.
+
+- ### References
+  - 1. GS1 (2022-2024). EPCIS & CBV 2.0 - flagship data-sharing standard (JSON/JSON-LD, REST API, sensor data, EPCIS Sandbox). https://www.gs1.org/standards/epcis
+  - 2. European Commission (2026). Digital Product Passport (DPP) - ESPR framework, DPP Registry operational 20 July 2026, sector timeline. https://single-market-economy.ec.europa.eu/single-market/digital-product-passport_en
+  - 3. eudigitalproductpassport.org (2025). ESPR 2024/1781: The EU Digital Product Passport Framework - Article 13 registry deadline and battery obligation from 18 February 2027. https://eudigitalproductpassport.org/regulations/espr
+  - 4. 7BlockLabs (2025). Blockchain Supply Chain Management 101: From Pilot to Global Rollout - EPCIS 2.0 + VC 2.0 + on-chain anchoring, regulatory deadlines (EUDR, FSMA 204, DSCSA, Battery Regulation). https://www.7blocklabs.com/blog/blockchain-supply-chain-management-101-from-pilot-to-global-rollout
+  - 5. Kim et al., KAIST (2025). Hybrid EPCIS: Integrating GS1/ISO Standards with On-chain and Off-chain Storage on Hyperledger Fabric. https://pure.kaist.ac.kr/en/publications/hybrid-epcis-integrating-gs1iso-standards-with-on-chain-and-off-c/
+  - 6. BlockStand / EU (2025). State-of-the-Art Analysis of Blockchain Standards for Supply Chains (ASTM D8558-2024, ISO/TR 16340:2023, GS1 Global Traceability Standard). https://blockstand.eu/blockstand/uploads/2025/05/RZ01-State-of-the-Art-Analysis-20250423_Zonai.pdf
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

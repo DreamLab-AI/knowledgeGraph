@@ -308,6 +308,24 @@ public:: true
   - Enhanced delegation mechanisms with accountability frameworks
   - Integration of reputation systems alongside token-based voting
 
+- ### Current Landscape (2026)
+  - The EU Digital Services Act shifted decisively from designation to hard enforcement: on 5 December 2025 the European Commission issued its first non-compliance decision and fine under the DSA, penalising X €120 million for breaches of the deceptive-design ban, advertising transparency and researcher data access.
+  - Article 40.4 of the DSA came into force on 29 October 2025, and its delegated act now lets vetted researchers request non-public platform data to study systemic risks; the Commission simultaneously pursued preliminary findings (24 October 2025) that Meta and TikTok had breached researcher-access and notice-and-action obligations.
+  - Enforcement broadened through 2026, with a €550 million fine against AliExpress (July 2026) for failing to mitigate illegal-product risks, and a summer 2026 wave of preliminary findings targeting addictive design on Instagram/Facebook and minor-safety failings on TikTok.
+  - At the DSA's two-year mark (February 2026) the Commission reported that platforms had reversed nearly 50 million content or account decisions via the new appeal rights, with out-of-court settlement bodies overturning platform decisions in 52% of closed cases in H1 2025 - evidence of a functioning platform-observability regime built on the Statement of Reasons transparency database.
+  - India overhauled its intermediary regime with the IT (Intermediary Guidelines) Amendment Rules 2026 (notified 10 February 2026, effective 20 February), defining synthetically generated information, mandating deepfake labelling and metadata, and cutting takedown windows to three hours for court/government orders and two hours for non-consensual intimate imagery.
+  - The wider regulatory map fragmented and hardened: the UK's Online Safety Act took full effect (March 2025) with proposed secondary legislation to bar under-16s from social media, Australia enforced a social-media minimum age, Brazil's Supreme Federal Court held Article 19 intermediary immunity partly unconstitutional, and Canada introduced a Digital Safety Act (2026).
+  - Soft-law norms consolidated alongside binding regimes, notably UNESCO's Guidelines for the Governance of Digital Platforms setting five principles (human-rights due diligence, adherence to human-rights standards, transparency, accessibility, accountability).
+  - Open challenges as of 2026 include reconciling divergent extraterritorial regimes, operationalising algorithmic-transparency and AI-content-labelling duties at scale, sustaining independent researcher access against platform friction, and managing tension between the DSA and US free-expression politics.
+
+- ### References
+  - 1. European Commission / Directorate-General CNECT (2025). Commission preliminarily finds TikTok and Meta in breach of their transparency obligations under the Digital Services Act. https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktok-and-meta-breach-their-transparency-obligations-under-digital
+  - 2. AlgorithmWatch (2025). A guide to the Digital Services Act, the EU's law to rein in Big Tech (incl. Oct 2025 Article 40.4 and Dec 2025 X fine timeline). https://algorithmwatch.org/en/dsa-explained/
+  - 3. European Commission Representation (2026). Two years of the Digital Services Act: 50 million content moderation decisions reversed on platforms. https://luxembourg.representation.ec.europa.eu/actualites-et-evenements/actualites/two-years-digital-services-act-allows-50-million-content-moderation-decisions-platforms-be-reversed-2026-02-17_fr
+  - 4. Freshfields (2026). India targets deepfakes and AI-generated content: key changes under MeitY's 2026 IT Rules amendments. https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/india-targets-deepfakes-and-ai-generated-content-key-changes-under-meitys-2026-102mjwn
+  - 5. Tech Policy Press (2026). Global Digital Policy Roundup: June 2026 (DSA/DMA enforcement, UK under-16 ban, Brazil Article 19, Canada Digital Safety Act). https://www.techpolicy.press/global-digital-policy-roundup-june-2026/
+  - 6. UNESCO (2026). Guidelines for the Governance of Digital Platforms. https://www.unesco.org/en/internet-trust/guidelines
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

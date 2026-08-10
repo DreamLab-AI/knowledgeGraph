@@ -278,6 +278,23 @@ public:: true
   - **CAP Theorem** — [[CAP Theorem]] (Consistency, Availability, Partition Tolerance) proves that distributed systems can guarantee at most two of three properties during a network partition. HA systems often choose Availability + Partition Tolerance (AP) and accept eventual consistency, or Consistency + Partition Tolerance (CP) and risk brief unavailability during partition healing.
   - **PACELC Model** — extends CAP to consider the latency-consistency trade-off even when partitions are absent, providing a more complete framework for HA database selection.
 
+- ### Current Landscape (2026)
+  - The AWS us-east-1 outage of 19-20 October 2025 became the defining HA event of the era: a latent race condition in DynamoDB's automated DNS management left the endpoint resolving to an empty record, cascading through roughly 70% of AWS services (EC2, Lambda, ECS, EKS) for about 15 hours and affecting over 4 million users across 1,000+ companies, including Coinbase, Robinhood, Lloyds Bank and Snapchat.
+  - Only ten days later the Azure Front Door outage of 29 October 2025 (an inadvertent configuration change) reinforced that control-plane and single-region dependencies, not hardware failure, are now the dominant HA risk, shifting best-practice baselines from multi-AZ to multi-region.
+  - The EU's Digital Operational Resilience Act (DORA, Regulation 2022/2554) became fully applicable on 17 January 2025 with no transition period, turning tested failover, documented dependency mapping and provider exit strategies into legal obligations for 22,000+ financial entities, with major-incident notification due within 4 hours of classification.
+  - In November 2025 the European Supervisory Authorities designated 19 critical ICT third-party providers, and by early 2026 hyperscalers including AWS, Azure, Google Cloud, Oracle and SAP were placed under direct ESA oversight with Joint Examination Teams and on-site inspections.
+  - Managed multi-region tooling matured: Google Cloud launched its Multi-Cluster Orchestrator (MCO) for GKE Enterprise in April 2025 with automated regional-outage detection and workload migration, while AWS advanced Amazon Application Recovery Controller (ARC) and granular per-application Route 53 failover for multi-tenant EKS.
+  - Reliability data hardened expectations: the State of Cloud Reliability 2026 report puts median major-incident duration at 204 minutes (~3.4 hours) with a 90th percentile of 11 hours, and finds 68% of incidents breached at least one monthly SLA target while under 10% of owed credits are ever claimed.
+  - The frontier has moved to the "sovereign fault domain" model (InfoQ, 2026), reframing geopolitical events - sanctions, internet shutdowns, data-localisation law - as distributed-systems failure modes and demanding region-evacuation playbooks, independent per-region control planes and chaos testing of control-plane and cross-region blackholing scenarios.
+
+- ### References
+  - 1. AlgeriaTech News (2025). Cloud Outages & Disaster Recovery: 2026 Reality Check. https://algeriatech.news/cloud-outages-disaster-recovery-business-continuity/
+  - 2. Delta Capita (2025). Cloud Outages Expose the Need for DORA-Level Resilience. https://www.deltacapita.com/insights/cloud-outages-expose-the-need-for-dora-level-resilience
+  - 3. EU Cloud Patterns (2026). What DORA Actually Expects from Your Cloud Architecture. https://www.eucloudpatterns.eu/posts/dora-cloud-architecture/
+  - 4. InfoQ / Sudhir (2026). When a Cloud Region Fails: Rethinking High Availability in Sovereign Fault Domains. https://www.infoq.com/articles/sovereign-fault-domains-cloud-resilience/
+  - 5. InfoQ (2025). Google Cloud Introduces Multi-Cluster Orchestrator for Cross-Region Kubernetes. https://www.infoq.com/news/2025/04/google-kubernetes-cross-region/
+  - 6. Cloud Downtime (2026). State of Cloud Reliability 2026. https://www.clouddowntime.com/downloads/report-2026.pdf
+
 - ### Provenance
   - sources:: ISO/IEC 25010; ITIL v4; NIST SP 800-34; Telcordia GR-512-CORE; AWS Well-Architected Framework Reliability Pillar; Google SRE Book (Beyer et al., O'Reilly, 2016)
   - updated:: 2026-06-13

@@ -328,6 +328,22 @@ public:: true
   - **Budapest Convention on Cybercrime** (Council of Europe, 2001) — landmark treaty harmonising national cybercrime laws; frequently cited as a digital governance instrument in the security domain.
   - **OECD AI Principles** (2019) — intergovernmental soft-law framework influencing national AI strategies and feeding into [[EU AI Act]] design.
 
+- ### Current Landscape (2026)
+  - The EU AI Act (Regulation (EU) 2024/1689) moved decisively from drafting into enforcement: GPAI governance obligations applied from 2 August 2025 and the AI Office's enforcement powers, including fines of up to 3% of global turnover, took effect on 2 August 2026, alongside transparency and synthetic-content labelling duties.
+  - The "Digital Omnibus" simplification package (COM(2025) 836/837, proposed 19 November 2025) was adopted and the AI Omnibus entered into force on 27 July 2026, extending high-risk timelines (Annex III to 2 December 2027, Annex I products to 2 August 2028), adding new prohibitions on nudifier and CSAM-generation tools, and repealing overlapping instruments such as the P2B Regulation, DGA and Open Data Directive.
+  - Platform enforcement intensified under the DSA and DMA: in 2026 the Commission fined AliExpress EUR 550 million under the DSA and Alphabet EUR 460 million (Search self-preferencing) plus EUR 430 million (Google Play steering) under the DMA, with preliminary DSA findings against Meta and TikTok over minor protection.
+  - Digital public infrastructure went global: building on India's 2023 G20 consensus and the Global DPI Repository, India had signed DPI/India Stack MoUs with roughly 23-25 countries by February 2026, with UPI live in eight-plus nations and the open-source MOSIP identity platform spreading across the Global South.
+  - Multilateral norm-setting advanced through the UN Global Digital Compact, adopted at the September 2024 Summit of the Future, and the UN High Impact Initiative aiming to strengthen DPI in 100 countries; 29 states signed an agreement establishing a World Artificial Intelligence Cooperation Organisation in 2026.
+  - Governance capacity is being built out unevenly: as of mid-2026 only about 14 of 27 EU Member States had designated their national AI competent authority, zero Article 99 AI Act fines had been issued, and think-tanks such as Bruegel argued for a dedicated EU digital enforcement authority amid pressure to soften enforcement.
+  - Open challenges as of 2026 centre on regulatory coherence across the AI Act, DSA, DMA and GDPR, fragmented and under-resourced national enforcement, tension between simplification and safeguards, and geopolitical contest between India's open DPI "third way", China's model and Western Big Tech platforms.
+
+- ### References
+  - 1. European Commission (2026). AI Omnibus enters into force — Shaping Europe's digital future. https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force
+  - 2. European Commission (2026). AI Act — Regulatory framework for AI. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 3. Tech Policy Press (2026). Global Digital Policy Roundup: July 2026. https://www.techpolicy.press/global-digital-policy-roundup-july-2026/
+  - 4. Bruegel (2026). The case for a European Union digital enforcement authority. https://www.bruegel.org/policy-brief/case-european-union-digital-enforcement-authority
+  - 5. Press Information Bureau, Government of India (2026). India's Digital Public Infrastructure. https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/mar/doc202636812701.pdf
+
 - ### Provenance
   - sources:: ITU, OECD, European Commission, Council of Europe, ICANN, IGF Secretariat, academic literature on internet governance and regulatory theory
   - updated:: 2026-06-13

@@ -274,6 +274,22 @@ alias:: NFTs
   - **Smart contract risk**: bugs in minting or marketplace contracts have resulted in exploits and loss of funds (e.g., re-entrancy attacks).
   - **Royalty enforcement**: without protocol-level enforcement, marketplaces can bypass creator royalties, undermining the creator-economy value proposition.
 
+- ### Current Landscape (2026)
+  - The market has completed a "K-shaped" consolidation: 2025 annual trade volume fell to roughly $5.5-5.6 billion (down 37% year-on-year and ~95% below the 2021 peak), average sale prices slid to about $96, and monthly Ethereum volume stabilised near $720 million in early 2026 after bottoming around $480 million in 2024 — a small tier of blue-chip and utility collections retains liquidity while the long tail is effectively dead.
+  - The token-standard family has diversified well beyond static ERC-721/ERC-1155: ERC-6551 token-bound accounts (2023) give each NFT a smart-contract wallet that can own other assets, ERC-4337 account abstraction removes UX friction, ERC-4907 enables rentable NFTs, and experimental hybrids like ERC-404 (2024) and dynamic/AI standards such as ERC-7857 (iNFTs) and ERC-8004 (on-chain AI-agent identities) are emerging.
+  - Utility, not speculation, now drives activity: gaming NFTs command roughly 38% of on-chain transaction volume in 2026 (Immutable/Mythos titles like Guild of Guardians and DMarket), while real-world-asset tokenisation has become the institutional use case, with on-chain RWA value growing roughly fourfold to over $24-26 billion and real estate NFTs (e.g. DAMAC tokenising $1bn+ in property, Courtyard on Polygon) as the largest category.
+  - Marketplaces have consolidated and bifurcated: Blur overtook OpenSea to capture around 38% of Ethereum NFT volume via incentive-driven trading, low-friction AMM pools serve floor collections while order-book venues handle unique assets, and most new projects now launch on Layer 2s (Base, Zora, Immutable X, Arbitrum, Polygon) rather than Ethereum L1.
+  - Regulation shifted from "enforcement-first" to purpose-built frameworks: the EU's MiCA became fully applicable on 30 December 2024 (excluding genuinely unique NFTs but re-qualifying fractionalised or large-series tokens), DAC8 tax reporting took effect 1 January 2026, and the SEC closed its OpenSea investigation without charges on 21 February 2025 — though classification remains fragmented across the SEC, ESMA, FCA, MAS and Japan's FSA.
+  - Open challenges as of 2026: jurisdiction-specific securities/AML classification inflates compliance costs (reportedly up sixfold since 2023), royalty enforcement remains marketplace-dependent despite EIP-2981, centralised infrastructure fragility was exposed by 2025 data breaches, and scaling RWA tokenisation into durable, liquid market structure — rather than pilots — is the central frontier.
+
+- ### References
+  - 1. Zipmex (2026). Are NFTs Dead in 2026? The Honest Market Breakdown. https://zipmex.com/blog/are-nfts-dead/
+  - 2. CleanSky (2026). The NFT Market in 2026: Post-Mortem of a Bubble, Birth of Digital Ownership. https://cleansky.io/blog/nft-market-2026/
+  - 3. Calmops (2026). NFT Standards and Marketplace Architecture 2026. https://calmops.com/web3/nft-standards-marketplace-architecture/
+  - 4. CoinLaw (2026). NFT Regulatory Framework 2026: Global Compliance Map. https://coinlaw.io/nft-regulatory-framework/
+  - 5. CoinMarketCap (2026). NFT Supply Hits 1.3B as Sales Drop 37% in 2025. https://coinmarketcap.com/academy/article/nft-supply-hits-13b-sales-drop-37-percent-2025
+  - 6. Bitcoin.com News (2026). NFT Market Matures in 2025: Utility, Gaming, and RWA Drive Growth. https://news.bitcoin.com/nft-market-matures-in-2025-utility-gaming-and-rwa-drive-growth/
+
 - ### Provenance
   - sources:: EIP-721 (eips.ethereum.org), EIP-1155, EIP-2981, Ethereum Foundation documentation, OpenSea developer docs, Metaplex documentation
   - updated:: 2026-06-13

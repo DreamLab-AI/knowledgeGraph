@@ -303,6 +303,23 @@ alias:: FinancialTechnology
 - ### Domain Remapping Note
   - The original domain classification was `blockchain`, reflecting the file's initial focus on blockchain-adjacent FinTech subsets. This enrichment remaps the domain to `finance`, the correct primary classification for Financial Technology as a broad industry concept. Blockchain remains a key component (captured in `uses` relations) but does not define the domain.
 
+- ### Current Landscape (2026)
+  - The GENIUS Act (Public Law 119-27), signed 18 July 2025, created the first US federal framework for payment stablecoins, restricting issuance to Permitted Payment Stablecoin Issuers (PPSIs) with full 1-to-1 reserve backing and BSA/AML obligations; agencies moved fast, with the OCC issuing a 350-plus-page Notice of Proposed Rulemaking on 25 February 2026 and the FDIC, NCUA, Treasury and a joint FinCEN/OFAC rule all publishing proposals through early 2026 ahead of the Act's effective date of 18 January 2027.
+  - Agentic commerce became the defining frontier, with AI agents autonomously discovering, deciding and transacting; competing open protocols emerged including Anthropic's Model Context Protocol (MCP), the Agentic Commerce Protocol (ACP) from OpenAI and Stripe, and Google's Agent Payments Protocol (AP2) and Universal Commerce Protocol (UCP).
+  - Card networks operationalised agentic payments: Mastercard launched its Agent Pay programme, partnering with Microsoft and IBM to embed tokenised, AI-initiated payments inside conversational and enterprise AI systems for both consumer and B2B use.
+  - Stablecoin transaction volume more than quadrupled in under three years per J.P. Morgan's 2026 fintech report, and fintech's share of overall venture dollars reached 13.4% in Q1, as the 2025 IPO window reopened and M&A accelerated toward full-stack, infrastructure-focused platforms.
+  - In Europe, PSD3 and the Payment Services Regulation (PSR) reached political agreement in November 2025, with the PSR expected to enter force in summer 2026 and PSD3 applying around 2027-2028 after transposition, alongside continued ISO 20022 migration and instant-payment schemes (SEPA Instant, FedNow).
+  - Embedded finance and open banking hardened into default API-first, event-driven architecture, with A2A payments at checkout beginning to bypass card interchange, particularly in open-banking-mature markets.
+  - Open challenges as of 2026 include agent authorisation and liability (the IMF flags authorisation traceability, opacity and correlated agent behaviour as systemic risks), reconciling probabilistic AI with deterministic settlement rails, AI-powered cyberattacks on authentication flows, and cross-jurisdictional regulatory fragmentation across AML/KYC, the EU AI Act and identity frameworks such as eIDAS 2.0.
+
+- ### References
+  - 1. US Congress (2025). S.1582 — GENIUS Act, Public Law 119-27. https://www.congress.gov/bill/119th-congress/senate-bill/1582/text
+  - 2. Morgan Lewis (2026). GENIUS Act Implementation: Key Proposals and What Comes Next. https://www.morganlewis.com/pubs/2026/04/genius-act-implementation-key-proposals-and-what-comes-next
+  - 3. FintechFutures (2026). Agentic commerce in 2026: Where we stand and what lies ahead. https://www.fintechfutures.com/ai-in-fintech/agentic-commerce-in-2026-where-we-stand-and-what-lies-ahead
+  - 4. J.P. Morgan (2026). Sector spotlight: Fintech 2026 — industry trends report. https://www.jpmorgan.com/content/dam/jpmorgan/documents/cb/insights/technology/jpm-2026-fintech-industry-trends-report.pdf
+  - 5. Finacle / Infosys (2026). Payments Trends 2026. https://www.finacle.com/insights/research-reports/banking-trends-2026/payments-trends-2026/
+  - 6. International Monetary Fund (2026). How Agentic AI Will Reshape Payments. https://www.imf.org/-/media/files/publications/imf-notes/2026/english/insea2026004.pdf
+
 - ### Provenance
   - sources:: ISO 20022 standard documentation; BIS Quarterly Reviews on FinTech; FSB FinTech reports; FATF Guidance on Virtual Assets; FCA Innovation Hub publications; academic literature on open banking and DeFi
   - updated:: 2026-06-13

@@ -240,6 +240,23 @@ alias:: Content Addressed Storage
   - **Ethereum EIP-4844 (Proto-Danksharding)** — Introduced blob-carrying transactions whose data is committed via KZG polynomial commitments; the blob sidecar is pruned after a retention window but the commitment (a form of content address) remains on-chain permanently.
   - **Software Heritage** — An international initiative archiving all public source code using SHA-1/SHA-256 content addresses, providing a [[Verifiable Provenance]] layer for the global software commons.
 
+- ### Current Landscape (2026)
+  - IPIP-0499, merged into the IPFS specification in early 2026, finally makes CIDs deterministic across implementations by defining named DAG-construction profiles (unixfs-v1-2025 and unixfs-v0-2015); the new default raises chunk size from 256 KiB to 1 MiB and links-per-node from 174 to 1024, giving shallower DAGs and roughly 4x fewer nodes for a 1 TiB file. It shipped across kubo 0.40, boxo 0.37 and helia/unixfs 7.0.3.
+  - Filecoin launched Proof of Data Possession (PDP) on mainnet in early 2025, a challenge-response proof (about 160 bytes per challenge) that lets providers prove they hold an immediately available hot copy without unsealing, complementing the older Proof of Replication (PoRep) for cold storage.
+  - Filecoin Onchain Cloud went live on 18 November 2025, packaging Warm Storage (backed by PDP), Filecoin Pay and Filecoin Beam behind the Synapse SDK, and moving the network from cold archival storage towards a programmable, verifiable cloud aimed at AI datasets and dApp frontends.
+  - 2025 also brought Fast Finality (F3) and three network upgrades (NV25, plus NV27 "Golden Week"); Q3 2025 network utilisation reached around 36% with roughly 1,110 PiB stored under active deals, and Filecoin Pay with the USDFC stablecoin enabled on-chain storage payments.
+  - Content addressing broadened beyond IPFS/Filecoin: the DASL family (CID, CAR, DRISL/dag-cbor, plus RASL/MASL) drove a wave of small interoperable libraries, an IETF Internet-Draft for CBOR tag-42 CIDs was submitted, and IPLD now underpins Bluesky/AT Protocol (over 40 million users, 5+ billion files on IPFS).
+  - Browser-native verified retrieval matured: helia/verified-fetch (2024) plus Ed25519 support reaching every major engine (Chrome 137, May 2025) enable in-service-worker verification of content-addressed data, and CAR-focused tooling such as the CAR Content Locator improved access to individual files inside large archives.
+  - Key open challenges as of 2026 are economic sustainability of unincentivised layers (a 2025 IFIP TMA study measured IPFS peer availability falling from 60% to 40% across 2024–2025), routing/retrieval latency versus centralised clouds, and migrating the long tail of legacy non-deterministic CIDs.
+
+- ### References
+  - 1. IPFS Foundation (2026). IPIP-0499: Updating IPFS Standards for Consistent, Reproducible CIDs. https://ipfsfoundation.org/ipip-0499-updating-ipfs-standards-for-consistent-reproducible-cids/
+  - 2. Filecoin (2026). Filecoin in 2025: Year in Review. https://www.filecoin.io/blog/filecoin-in-2025-year-in-review
+  - 3. Filecoin Foundation / fil.org (2025). Introducing Proof of Data Possession (PDP): Verifiable Hot Storage on Filecoin. https://fil.org/blog/introducing-proof-of-data-possession-pdp-verifiable-hot-storage-on-filecoin
+  - 4. AInvest (2025). Filecoin Onchain Cloud: A New Decentralized Infrastructure Paradigm for Web3 and AI. https://www.ainvest.com/news/filecoin-onchain-cloud-decentralized-infrastructure-paradigm-web3-ai-2511/
+  - 5. IPFS Foundation (2026). Content Addressing: 2025 in Review. https://ipfsfoundation.org/content-addressing-2025-in-review/
+  - 6. IFIP TMA (2025). Degrees of Decentralized Freedom: Comparing Modern Decentralized Storage Systems. https://tma.ifip.org/2025/wp-content/uploads/sites/14/2025/06/tma2025_paper16.pdf
+
 - ### Provenance
   - sources:: IPFS documentation (docs.ipfs.tech); Git internals documentation (git-scm.com); Ethereum EIP-4844 specification; OCI Image Specification; Protocol Labs IPLD documentation; Restic backup documentation
   - updated:: 2026-06-13

@@ -285,6 +285,23 @@ alias:: EmbeddedSystems
   - **Toolchains**: GCC/LLVM cross-compilers, JTAG/SWD debuggers, hardware-in-the-loop (HIL) testing rigs, static analysis (Polyspace, Klocwork, SonarQube for C/C++).
   - **Software architecture patterns**: layered HAL → RTOS → middleware → application stack; event-driven state machines; actor model concurrency for resource-constrained systems.
 
+- ### Current Landscape (2026)
+  - Embedded World 2026 (Nuremberg, March) confirmed edge AI as the defining shift, with NPUs becoming standard across the power spectrum: Alif Semiconductor paired an Arm Cortex-M52 with an Ethos-U55 NPU (up to 50 GOPS), and NXP's i.MX 93W became the first application processor to integrate an NPU with secure tri-radio wireless (Wi-Fi 6, Bluetooth 5.4 LE, 802.15.4 for Thread and Matter), reportedly replacing up to 60 discrete components.
+  - Sub-dollar NPUs reached the entry-level market via Texas Instruments (MSPM0 series) and STMicroelectronics, delivering roughly 90x lower inference latency and 120x better energy efficiency than traditional Cort-M cores, and pushing TinyML from pattern recognition towards on-device Small Language Models and "agentic" edge inference.
+  - RISC-V crossed from evaluation to production design-in: the RVA23 application profile (ratified end of 2024, with vector, hypervisor and cryptography baked in) became the common Linux/Android baseline, and Infineon announced in 2025 that its entire automotive MCU roadmap (AURIX) will move to RISC-V, shipping DriveCore bundles with a RISC-V virtual prototype and Synopsys/HighTec/Lauterbach toolchains.
+  - The EU Cyber Resilience Act (in force since 10 December 2024) is driving a security-first redesign of connected embedded products: Chapter IV (notification of conformity assessment bodies) applies from 11 June 2026 and Article 14 vulnerability/incident reporting obligations bite from 11 September 2026, requiring 24-hour early-warning reports of actively exploited vulnerabilities to ENISA and national CSIRTs, with full application on 11 December 2027.
+  - The Commission adopted Implementing Regulation (EU) 2025/2392 (28 November 2025) classifying important and critical products; the first horizontal and product-specific harmonised standards (of roughly 40 planned) are due in Q3 2026, with deadlines around 30 August and 30 October 2026, making secure boot, hardware root-of-trust, SBOMs, encrypted OTA and PSA Certified paths table stakes rather than options.
+  - The embedded systems market was valued near USD 103.3 billion in 2024, rising to an estimated USD 110.5 billion in 2025, with longer forecasts reaching roughly USD 169 billion by 2030, underpinned by RISC-V's projected penetration growth from 2.5% (2021) towards 33.7% by 2031.
+  - Emerging frontiers for 2026 include chiplet-based modular silicon migrating from server SoCs into embedded designs, edge generative AI running locally on NPUs and high-end MCUs, and virtual AI sensors replacing physical sensors in motor control to predict bearing failure 48-72 hours ahead.
+  - Open challenges as of 2026 remain RISC-V's still-maturing safety-certification and tooling ecosystem versus Arm, non-negotiable ultra-low-power budgets for on-device inference, and CRA compliance burdens (SBOM hygiene, batch-level traceability and support-period commitments) that also reach legacy products already on the EU market.
+
+- ### References
+  - 1. Moor Insights & Strategy (2026). Embedded World 2026 — 10 Strategic Trends Driving Embedded Systems. https://moorinsightsstrategy.com/embedded-world-2026-10-strategic-trends-driving-embedded-systems/
+  - 2. RISC-V International (2026). RISC-V Annual Report 2025. https://riscv.org/wp-content/uploads/2026/01/RISC-V-Annual-Report-2025.pdf
+  - 3. European Commission, Directorate-General for Communications Networks (2025). The Cyber Resilience Act - Summary of the legislative text. https://digital-strategy.ec.europa.eu/en/policies/cra-summary
+  - 4. European Commission (2025). Cyber Resilience Act - Implementation timeline. https://digital-strategy.ec.europa.eu/en/factpages/cyber-resilience-act-implementation
+  - 5. Promwad (2026). Embedded Systems Trends 2026: Chiplets, RISC-V Expansion, and Edge Generative AI. https://promwad.com/news/embedded-systems-trends-2026-chiplets-risc-v-edge-ai
+
 - ### Provenance
   - sources:: ARM Architecture Reference Manuals; IEC 61508:2010; ISO 26262:2018; MISRA C:2012; FreeRTOS documentation; Zephyr Project documentation; AUTOSAR Classic Platform specification; Embedded Systems Design (Noergaard, 2005); The Art of Designing Embedded Systems (Ganssle, 2008)
   - updated:: 2026-06-13

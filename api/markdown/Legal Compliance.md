@@ -256,6 +256,23 @@ public:: true
   - **Sector Regulators** — The European Banking Authority (EBA), Financial Conduct Authority (FCA), US OCC, and FDA each publish AI-specific supervisory guidance layering on top of horizontal legal requirements.
   - **Digital Services Act** and **Digital Markets Act** — EU regulations with AI-relevant provisions for large online platforms, including algorithmic transparency, recommender system explanations, and prohibition on certain dark patterns.
 
+- ### Current Landscape (2026)
+  - The EU AI Act (in force since 1 August 2024) has reshaped legal-compliance agendas: prohibited-practice bans and AI-literacy duties applied from 2 February 2025, GPAI-model obligations and the penalty regime from 2 August 2025, and Article 50 transparency duties (chatbot disclosure, deepfake labelling) from 2 August 2026, with the AI Office and national market-surveillance authorities beginning enforcement that same date.
+  - The May 2026 "Digital Omnibus" political agreement extended most stand-alone high-risk (Annex III) obligations from August 2026 to 2 December 2027 (and embedded-product/Annex I systems to 2 August 2028), added a new prohibition on "nudifier"/CSAM applications from 2 December 2026, and deferred watermarking for pre-existing generative systems to December 2026, though formal co-legislator adoption remained pending.
+  - Financial-sector compliance has been dominated by DORA (applicable 17 January 2025), which imposes ICT risk management, a 4-hour major-incident reporting window and third-party oversight on roughly 22,000 EU entities; 19 critical ICT providers including AWS, Microsoft Azure and Google Cloud were designated for direct EU supervisory oversight from November 2025.
+  - Enforcement has intensified sharply: cumulative GDPR fines now exceed 5.88 billion euros, the five largest fines in H1 2025 alone totalled over 3 billion euros, and AI Act breaches carry penalties up to 35 million euros or 7% of global turnover; ESMA reported a 30% action rate on 2025 CSRD/NFRD sustainability-statement examinations.
+  - Compliance is shifting from periodic audits to continuous, AI-assisted assurance: Compliance Week found 56% of teams using AI in 2024 (up from 41%), and the compliance-automation AI market was valued at about 6.8 billion US dollars in 2025 with forecast growth to roughly 28.4 billion by 2034 (CAGR ~17.2%), led by GRC platforms mapping shared controls across DORA, NIS2, the AI Act, CSRD and GDPR.
+  - The UK is charting a divergent post-Brexit path: the Data (Use and Access) Act 2025 received royal assent on 18 June 2025 and is being phased in between August 2025 and June 2026, easing automated-decision and cookie rules while expanding ICO enforcement powers, alongside a Cyber Security and Resilience Bill extending NIS obligations to data centres and managed services.
+  - Open challenges as of 2026 include hyper-fragmentation across 144+ jurisdictions with data-protection laws, deepfake-driven fraud in KYC/identity verification, personal liability of senior management under NIS2 and DORA for cybersecurity failings, and reconciling the AI Act's shifting deadlines with overlapping cyber and sustainability regimes.
+
+- ### References
+  - 1. European Commission (2026). AI Act — Regulatory framework for AI. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 2. Latham & Watkins (2026). AI Act Update: EU Resolves to Change Rules and Extend Deadlines. https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines
+  - 3. Mayer Brown (2026). Global Privacy Watchlist. https://www.mayerbrown.com/en/insights/publications/2026/01/global-privacy-watchlist
+  - 4. BuildMVPfast (2026). AI RegTech Compliance Automation: How DORA and NIS2 Are Driving the End of Manual Audits. https://www.buildmvpfast.com/blog/ai-regtech-compliance-automation-dora-nis2
+  - 5. KPMG (2025). How AI is poised to reshape compliance functions. https://assets.kpmg.com/content/dam/kpmg/xx/pdf/2025/07/how-ai-is-poised-to-reshape-compliance-functions.pdf
+  - 6. DLA Piper (2025). Latest wave of obligations under the EU AI Act take effect. https://www.dlapiper.com/en-us/insights/publications/2025/08/latest-wave-of-obligations-under-the-eu-ai-act-take-effect
+
 - ### Provenance
   - sources:: EU AI Act (Regulation (EU) 2024/1689); GDPR (Regulation (EU) 2016/679); ISO/IEC 42001:2023; NIST AI RMF (NIST AI 100-1); ISO/IEC 23894:2023; IEEE 7000 series
   - updated:: 2026-06-13

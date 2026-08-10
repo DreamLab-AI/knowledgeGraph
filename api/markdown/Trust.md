@@ -295,6 +295,23 @@ public:: true
   - **Floridi and cowley** — digital trust frameworks extending trust concepts to AI agents, data intermediaries, and algorithmic governance.
   - **Zero-trust security** (BeyondCorp, NIST SP 800-207) — architectural approach treating all network requests as untrusted by default, verifying continuously; a deliberate inversion of perimeter-based trust assumptions.
 
+- ### Current Landscape (2026)
+  - The 25th-anniversary 2025 Edelman Trust Barometer (33,000 respondents, 28 countries, fielded Oct-Nov 2024) reframed the crisis around "grievance": 61% report a moderate-to-high sense of grievance, and a 30-point trust-index gap separates high-grievance (36) from low-grievance (66) populations, with Japan (37), Germany (41) and the UK (43) among the least-trusting economies.
+  - OECD's Government at a Glance 2025 (published June 2025) found only 39% of people across surveyed countries express high or moderately-high trust in national government versus 44% low or no trust; the single strongest driver is a sense of political agency, with a 47-point trust gap between those who feel they have a voice (69%) and those who do not (22%).
+  - Trust governance has become explicitly data-conditional: OECD reports only 52% of citizens are confident their personal data is used only for legitimate reasons, tying institutional trust directly to how administrations handle data and, increasingly, AI.
+  - The EU AI Act (Regulation 2024/1689), whose stated aim is to foster "trustworthy AI", became broadly applicable on 2 August 2026, with the AI Office and national authorities beginning enforcement and new generative-AI transparency and content-labelling obligations taking effect from that date; high-risk obligations are staged to December 2027 and August 2028.
+  - The November 2025 Digital Omnibus / "AI Omnibus" simplification package reached political agreement in May 2026, adjusting timelines and adding a trustworthy-AI investment framework; the EDPS published its 2026-2027 "Compass" positioning itself as independent guardian of trustworthy AI across EU institutions.
+  - Standards and certification are consolidating as the operational layer of digital trust: ISO/IEC 42001 (AI management systems), the NIST AI Risk Management Framework, and CEN-CENELEC's JTC 21 harmonised standards (which in January 2026 signed an MoU with the EU Fundamental Rights Agency) now anchor conformity assessment.
+  - Open challenge as of 2026: existing instruments build a compliance "floor" but lack independent, outcome-oriented verification of deployed systems, leaving a persistent gap between stated trustworthiness and demonstrable public evidence; meanwhile eroding information integrity (63% say it is harder to tell credible sources from deception) continues to undermine trust across both public institutions and AI.
+
+- ### References
+  - 1. Edelman (2025). 2025 Edelman Trust Barometer. https://www.edelman.com/trust/2025/trust-barometer
+  - 2. OECD (2025). Levels of trust in public institutions — Government at a Glance 2025. https://www.oecd.org/en/publications/2025/06/government-at-a-glance-2025_70e14c6c/full-report/levels-of-trust-in-public-institutions_62a3b94e.html
+  - 3. European Commission (2026). AI Act — Regulatory framework for AI. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 4. European Data Protection Supervisor (2026). Towards trustworthy AI in the EU public administration: EDPS Compass 2026-2027. https://www.edps.europa.eu/system/files/2026-03/26-03-17_edps-compass-under-ai-act-2026-2027_en.pdf
+  - 5. Nemko / CEN-CENELEC (2026). Bridging AI Standards and Fundamental Rights: Building Trust in AI. https://digital.nemko.com/insights/bridging-ai-standards-fundamental-rights
+  - 6. OECD (2025). Drivers of trust in public institutions — Government at a Glance 2025. https://www.oecd.org/en/publications/2025/06/government-at-a-glance-2025_70e14c6c/full-report/drivers-of-trust-in-public-institutions_fe2b7742.html
+
 - ### Provenance
   - sources:: Mayer, Davis & Schoorman (1995) — organisational trust; NIST AI RMF (2023); EU AI Act (2024); W3C Verifiable Credentials Data Model 2.0; Trust Over IP Foundation Hourglass Model; ISO/IEC 42001:2023; OECD AI Principles (2019); UK AI Safety Institute publications; Lee & See (2004) human-automation trust review.
   - updated:: 2026-06-13

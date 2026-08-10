@@ -305,6 +305,23 @@ alias:: InternetOfThings
   - **[[Machine Learning]]**-based anomaly detection is applied to IoT network traffic to identify compromised devices exhibiting unusual communication patterns.
   - Zero-trust network access (ZTNA) architectures are increasingly applied to IoT segments, replacing implicit perimeter trust with continuous device and user verification.
 
+- ### Current Landscape (2026)
+  - The connected-device base has kept scaling: IoT Analytics counts roughly 18.5 billion devices in 2024 rising to 21.1 billion in 2025, with industry estimates near 24 billion in 2026 and forecasts approaching 30 billion by the early 2030s. Global IoT market revenue is projected to cross the trillion-dollar mark in 2026 (about $864 billion in 2025 rising to an estimated $1.055 trillion).
+  - Matter has matured rapidly into the consumer-IoT interoperability baseline: version 1.4 (7 November 2024) added energy devices (solar, battery storage, heat pumps, water heaters, EV chargers) and the Home Router and Access Point (HRAP) class, followed by 1.4.1 (May 2025, NFC and multi-device onboarding) and 1.4.2 (11 August 2025, Certificate Revocation Lists, Access Restriction Lists and Vendor ID verification).
+  - Matter 1.5 (20 November 2025) was the broadest expansion yet, adding native cameras and video doorbells over WebRTC, a modular Closures framework (shades, gates, awnings), soil sensors, full TCP transport, and a standardised electrical-energy-tariff device type carrying dynamic pricing and carbon-intensity data. Governance is via the Connectivity Standards Alliance, which listed over 850 certified products by mid-2026 and nearly 900 participating companies.
+  - Thread 1.4 became mandatory for all new border-router certifications on 1 January 2026, standardising credential sharing so devices such as the Amazon eero 7, IKEA Dirigera and GL.iNet GL-S20 can merge previously isolated meshes into one network; Matter 1.4.2 further requires border routers to certify for Thread 1.4 and address at least 150 devices.
+  - Security is shifting from optional to regulated: the EU Cyber Resilience Act moves toward full roll-out imposing lifecycle security and update obligations and manufacturer liability, the US FCC Cyber Trust Mark gives consumer IoT a visible security label, and the UK PSTI Act plus ETSI EN 303 645 and ISO/IEC 27400 form a tightening compliance mesh. On the connectivity side, SGP.32 eSIM remote provisioning is maturing to simplify fleet-scale credential and lifecycle management.
+  - Key players consolidate around the big ecosystems (Apple Home, Google Home, Amazon Alexa, Samsung SmartThings) alongside broad vendor adoption including IKEA, Philips Hue, Aqara, Bosch, Yale, ABB and LG; IKEA in particular is driving mass adoption with sub-$10 Matter/Thread products.
+  - Open challenges as of 2026: fragmented and uneven ecosystem support (Matter 1.5 cameras initially work only on SmartThings), no mandated software-support lifespan, platform-dependent logging and underspecified secure storage in the Matter spec, cheap non-compliant imports falling outside regulatory scope, and the push toward hardware roots of trust (TPMs and secure elements) and AI-driven operational intelligence over raw connectivity.
+
+- ### References
+  - 1. Institute of Internet Economics (2026). IoT – 2026 Stats and Summary Report (Mid-Year). https://instituteofinterneteconomics.org/iot-2026-stats-and-summary-report-mid-year/
+  - 2. Krasamo (2026). Building with Matter: Navigating the Matter Specification (up to 1.5). https://www.krasamo.com/matter-specification/
+  - 3. Wikipedia (2025). Matter (standard). https://en.wikipedia.org/wiki/Matter_(standard)
+  - 4. Smart Home Brief (2026). The Matter Smart Home 2026 Status Review. https://smarthomebrief.com/protocols-and-platforms/matter-smart-home-2026-status-review
+  - 5. GlobalSign (2026). IoT Security in 2026: Regulation, Standards & Trust. https://www.globalsign.com/en/blog/will-iot-security-finally-grow-up-in-2026
+  - 6. IoT Business News (2025). IoT in 2026: Regulatory Pressure, New Standards and the Race to Future-Proof Connectivity. https://iotbusinessnews.com/2025/12/23/iot-in-2026-regulatory-pressure-new-standards-and-the-race-to-future-proof-connectivity/
+
 - ### Provenance
   - sources:: ETSI EN 303 645; ISO/IEC 30141; RFC 7252; OMA LwM2M v1.2; NIST SP 800-213; Connectivity Standards Alliance Matter spec
   - updated:: 2026-06-13

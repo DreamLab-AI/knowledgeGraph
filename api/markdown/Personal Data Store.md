@@ -296,6 +296,23 @@ public:: true
   - **[[Data Broker]]**: commercial entities that aggregate personal data from many sources and sell it; PDSs disintermediate this model by returning data ownership to the individual.
   - **Cloud storage services (Google Drive, iCloud)**: offer user-accessible storage but do not implement consent-based third-party access controls or semantic interoperability at the PDS level.
 
+- ### Current Landscape (2026)
+  - Solid, the leading personal-data-store (Pod) architecture, moved onto the formal W3C standards track in October 2024 with the new Linked Web Storage Working Group (co-chaired by Inrupt's Aaron Coburn), graduating the protocol from Community Group draft to an official work item alongside HTML and Verifiable Credentials.
+  - The Open Data Institute (ODI), co-founded by Tim Berners-Lee and Nigel Shadbolt, took over stewardship of the Solid project, protocol and community from October 2024, folding it into its data-stewardship portfolio.
+  - The frontier has shifted decisively towards AI: Inrupt released Enterprise Solid Server (ESS) 3.0 in mid-2026 ("making consumer data ready for AI assistants"), adding a standards-based MCP server bridging AI agents to consented Pod data, native identity-provider support (Okta, Azure AD, Ping), stable identifiers and environment isolation.
+  - "Agentic Wallets" emerged as a design pattern combining Solid's Web Access Control with Anthropic's Model Context Protocol to enforce least-privilege, time-bound agent access; the academic Liquid Protocol (OpenReview, 2025) formalised MCP-to-Pod operations, arguing PDS query-at-source enables instant GDPR Right-to-be-Forgotten compliance versus data baked into model weights.
+  - Regulation converged on user-held stores: eIDAS 2.0 (Regulation (EU) 2024/1183) mandates every Member State offer a European Digital Identity Wallet by end of 2026, with a further tranche of implementing regulations (EU 2026/1730, 2026/1731, 2026/1735) published 22 July 2026 specifying PID formats (ISO mdoc, SD-JWT VC), selective disclosure and relying-party registration.
+  - The EU Data Governance Act's data-intermediation rules became applicable in September 2025 and most Data Act provisions from 12 September 2025, but uptake of registered Data Intermediation Service Providers stayed low; MyData Global's October 2025 "Human-Centric Roadmap for Europe" flagged that DMA real-time data portability remains largely theoretical and proposed a lighter-touch DIASP category plus a "European Personal Cloud" programme.
+  - Consolidation continued around consumer reach: Project Liberty's Frank McCourt confirmed Solid-integration talks with Berners-Lee at SXSW 2025, while Inrupt's own sandbox Pods still discourage storing real personal data, underlining the open challenge that a mature, paid, consumer-grade Pod-hosting market has yet to materialise.
+
+- ### References
+  - 1. Inrupt (2026). ESS Version 3.0: Making consumer data ready for AI assistants (Inrupt Blog). https://www.inrupt.com/blog
+  - 2. Inrupt (2025). Solid and MCP: Safer Identity and Permissioning for AI Agents. https://www.inrupt.com/blog/why-were-excited-about-solid-and-mcp
+  - 3. Open Data Institute (2024). ODI and Solid come together to give individuals greater control over personal data. https://theodi.org/news-and-events/news/odi-and-solid-come-together-to-give-individuals-greater-control-over-personal-data/
+  - 4. European Data Protection Supervisor (2025). TechDispatch #3/2025 - Digital Identity Wallets. https://www.edps.europa.eu/data-protection/our-work/publications/techdispatch/2025-12-15-techdispatch-32025-digital-identity-wallets_en
+  - 5. MyData Global (2025). A Human-Centric Roadmap for Europe. https://mydata.org/wp-content/uploads/2025/10/Roadmap-for-Europe-MyDataGlobal-2025.pdf
+  - 6. European Parliament (2025). Data Act: Data sharing and competitiveness (EPRS At a Glance). https://www.europarl.europa.eu/RegData/etudes/ATAG/2025/775915/EPRS_ATA(2025)775915_EN.pdf
+
 - ### Provenance
   - sources:: W3C Solid specification; W3C DID Core; W3C Verifiable Credentials Data Model; GDPR (EU 2016/679); MyData Global operator framework; Kantara Initiative Consent Receipt; ISO/IEC 29184; DIF DIDComm specification
   - updated:: 2026-06-13

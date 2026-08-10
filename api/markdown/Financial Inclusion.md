@@ -287,6 +287,22 @@ public:: true
   - **[[Predatory Lending]]** — informal moneylenders and some digital credit providers charge exploitative interest rates to populations with no alternatives, requiring regulatory enforcement to distinguish inclusive from extractive products.
   - **Currency Volatility** — in economies with high inflation or restricted foreign exchange, [[Stablecoin]] access can provide genuine store-of-value benefits but also introduces de-dollarisation policy tensions for central banks.
 
+- ### Current Landscape (2026)
+  - The World Bank's fifth Global Findex, released 16 July 2025 and based on surveys of about 145,000 adults across 141 economies in 2024, found 79% of adults worldwide now hold an account (bank, similar institution or mobile money), up from 74% in 2021 and 51% in 2011; account ownership in low- and middle-income economies reached 75%.
+  - Formal saving surged: 40% of adults in developing economies saved in an account in 2024, a 16-percentage-point rise since 2021 and the fastest in over a decade, with mobile-money saving in Sub-Saharan Africa a key driver; the gender gap in account ownership narrowed to four points globally (77% of women versus 81% of men).
+  - Findex 2025 introduced the inaugural Digital Connectivity Tracker, reframing inclusion around mobile access: 86% of adults own a mobile phone, yet 1.3 billion adults remain unbanked, of whom roughly 900 million own a phone (530 million a smartphone) but no account, marking the frontier for closure.
+  - Digital public infrastructure (DPI) has become the dominant inclusion lever, with interoperable fast-payment rails such as India's UPI, Brazil's Pix, Turkiye's FAST and Thailand's PromptPay; UPI passed its 10-year mark in April 2026, processing over 18-21 billion transactions monthly and, per the IMF's June 2025 report, handling nearly half of the world's real-time payment volume.
+  - Cross-border and standard-setting momentum built through 2025-2026: UPI went live in eight countries (including France, its first European market, plus UAE, Singapore and Qatar), India signed DPI cooperation agreements with 24 nations, and the World Bank launched Project FASTT to finance frictionless, affordable payment systems.
+  - The IMF's 2025 Financial Access Survey expanded to 163 reporting economies and piloted over 100 fintech variables (e-money, mobile-money lending, neobanks, P2P lending) for future integration, reflecting regulators' push to measure the fintech and neobank layer directly.
+  - Open challenges as of 2026: greater access has not yet translated into better financial health, with over 40% of adults unable to raise emergency funds; digital-safety gaps persist (only about half of mobile-money owners in Sub-Saharan Africa password-protect their phones), and rural connectivity, digital-ID coverage and cross-jurisdiction interoperability remain binding constraints.
+
+- ### References
+  - 1. Klapper, L., Singer, D., Starita, L. & Norris, A. / World Bank (2025). The Global Findex Database 2025: Connectivity and Financial Inclusion in the Digital Economy. https://www.worldbank.org/en/publication/globalfindex
+  - 2. World Bank (2025). Mobile-Phone Technology Powers Saving Surge in Developing Economies (press release, 16 July 2025). https://www.worldbank.org/en/news/press-release/2025/07/16/mobile-phone-technology-powers-saving-surge-in-developing-economies
+  - 3. International Monetary Fund (2025). Financial Access Survey 2025 Annual Report. https://data.imf.org/-/media/iData/External-Storage/Documents/7FC05452C6C743D2BFB6188D2E248A38/en/2025-FAS-Annual-Report.pdf
+  - 4. Press Information Bureau, Government of India (2025). UPI Completes 10 Years, Emerges as World's Largest Real-Time Payment System. https://www.pib.gov.in/PressReleasePage.aspx?PRID=2257087
+  - 5. Observer Research Foundation (2026). Digital Public Infrastructure and the Future of Digital Payments: Lessons from Pix and UPI. https://www.orfonline.org/research/digital-public-infrastructure-and-the-future-of-digital-payments-lessons-from-pix-and-upi
+
 - ### Provenance
   - sources:: World Bank Global Findex; FATF Guidance on Financial Inclusion (2020); CGAP; Alliance for Financial Inclusion (AFI) publications; BIS CPMI cross-border payments roadmap; ITU Focus Group on Digital Financial Services
   - updated:: 2026-06-13

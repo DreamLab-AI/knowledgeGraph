@@ -358,6 +358,24 @@ alias:: NetworkLayer
 - ### Content
   The Network Layer provides the communication backbone for distributed narrative systems. It abstracts physical network heterogeneity and provides reliable, ordered delivery of messages across potentially unreliable and latency-prone physical networks. Through sophisticated routing and congestion control, it maintains performance and resilience.
 
+- ### Current Landscape (2026)
+  - On 28 March 2026 Google's public measurement recorded native IPv6 crossing 50% of traffic (50.10%) for the first time, an 18-year milestone; cross-source averages remain lower (Cloudflare Radar ~40.1% of HTTP requests, APNIC ~42-43% network capability), and Asia-Pacific passed 50% in 2025 led by India, Japan and South Korea.
+  - The IETF published RFC 9800 (Compressed SRv6 Segment List Encoding, June 2025), standardising micro-SID (uSID) via NEXT-C-SID and REPLACE-C-SID flavours; it updates RFC 8754 and cuts Segment Routing Header overhead so SRv6 is cost-competitive with SR-MPLS.
+  - SRv6 has shifted from trial to a mainstream transport pillar: at EANTC's MPLS/SDN interop tests uSID became the de-facto industry standard (all SRv6 testing now uSID-only from 2024), and the segment-routing market was valued at roughly $3.8bn in 2025 with SRv6 the faster-growing data plane.
+  - The "IPv6 Enhanced" agenda continues to layer services on the network layer: SRv6 network programming (RFC 8986), network slicing/VPN+ (enhanced VTN-ID, draft-ietf-6man-enhanced-vpn-vtn-id at rev 16 in 2026), IFIT telemetry, BIERv6 multicast and Application-Aware Networking (APN6).
+  - Active 2025-2026 standards work is broadening scope: SRv6 inter-layer network programming (draft-ietf-spring-srv6-inter-layer-programming-01, Nov 2025), an SRv6 Operations WG deployment-options draft (Sept 2025), and clarifications such as draft-ietf-6man-sidlist-clarification and RFC 8504-bis IPv6 Node Requirements.
+  - Security and robustness of the layer are being hardened: draft-ietf-spring-srv6-security reached rev 08 (Oct 2025), SLAAC flash-renumbering robustness (draft-ietf-6man-slaac-renum) and ICMPv6 reflection work advanced through 2026, addressing SRH trust-domain and address-configuration concerns.
+  - Transport-adjacent evolution is reshaping the layer's role: QUIC/HTTP-3 is now the default transport for much web traffic and IETF IDR work on BGP-over-QUIC aims to replace BGP-over-TCP, mapping BGP channels to QUIC streams to remove head-of-line blocking in inter-domain routing.
+  - Open challenges as of 2026 include managing persistent dual-stack operational debt as IPv6 nears parity, achieving multi-vendor SRv6/uSID interoperability at scale, hardening SRH security across trust boundaries, and integrating transport-layer slicing without overlay tunnelling for 5G xHaul.
+
+- ### References
+  - 1. Internet Society Pulse (2026). 18 Years Later, IPv6 Reaches Majority. https://pulse.internetsociety.org/en/blog/2026/04/18-years-later-ipv6-reaches-majority/
+  - 2. The Register (2026). IPv6 carried half of internet traffic - for one day, according to Google. https://www.theregister.com/on-prem/2026/04/17/google-ipv6-carried-half-of-internet-traffic-for-one-day/5227544
+  - 3. IETF / RFC Editor (2025). RFC 9800: Compressed SRv6 Segment List Encoding. https://datatracker.ietf.org/doc/rfc9800/
+  - 4. IETF Datatracker (2025). SRv6 for Inter-Layer Network Programming (draft-ietf-spring-srv6-inter-layer-programming-01). https://datatracker.ietf.org/doc/draft-ietf-spring-srv6-inter-layer-programming/
+  - 5. APNIC Blog (2024). Bytes from IETF 120 - a few routing topics (BGP over QUIC). https://blog.apnic.net/2024/08/09/bytes-from-ietf-120-a-few-routing-topics/
+  - 6. Ciena (2024). The state of Segment Routing: past, present and future. https://www.ciena.com/insights/blog/2024/the-state-of-segment-routing-a-look-at-the-past-present-and-future
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

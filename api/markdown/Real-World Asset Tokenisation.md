@@ -294,6 +294,23 @@ alias:: Real World Asset Tokenisation
   - **Regulatory Fragmentation** — Inconsistent securities regulations across jurisdictions impede secondary-market trading and cross-border issuance.
   - **Smart Contract Risk** — Vulnerabilities in issuance or distribution contracts can result in loss of assets or circumvention of transfer restrictions.
 
+- ### Current Landscape (2026)
+  - On-chain tokenised RWA value (excluding stablecoins) reached roughly $33.5B by July 2026 per RWA.xyz, about 4x the ~$5-8B of early 2025, with tokenised US Treasuries the dominant category at around $15B and Ethereum hosting close to 60% of total value.
+  - Tokenised Treasury and money-market products lead adoption: BlackRock's BUIDL fund (launched March 2024 via Securitize, now multi-chain across Ethereum, Solana, Polygon, Avalanche, Aptos, Optimism, Arbitrum and BNB Chain) sits in the multi-billion range alongside Ondo Finance's OUSG and USDY, Franklin Templeton's BENJI, Circle/Hashnote's USYC, WisdomTree and Superstate's USTB.
+  - The US regulatory picture shifted decisively: the SEC published its formal Tokenisation Statement on 28 January 2026 (first official US taxonomy, affirming that a security's technological format does not change its legal character), the GENIUS Act was signed into law on 18 July 2025, Nasdaq won SEC approval to trade tokenised listed securities, and FINRA approved the first broker-dealer custody of tokenised securities with atomic settlement in May 2026.
+  - Institutional entrants deepened in late 2025: JP Morgan launched its MONY tokenised money-market fund on 15 December 2025, Kraken acquired Backed Finance (xStocks) on 2 December 2025, BNY and Goldman Sachs opened tokenised money-market fund rails, and BUIDL was accepted as off-exchange collateral on Binance.
+  - EU rules matured: MiCA became fully applicable on 30 December 2024 with the CASP transitional period ending 1 July 2026, mandatory iXBRL white-paper technical standards took effect 23 December 2025, and the ECB agreed to accept certain DLT-issued assets as eligible Eurosystem collateral from 30 March 2026.
+  - Token standards converged on compliance-first designs: ERC-3643 (T-REX, Tokeny) remains the dominant permissioned-token standard while the neutral ERC-7943 (uRWA) reached Final status on 27 May 2026, with Switzerland's CMTAT adding support; other jurisdictions advanced via Cayman's first statutory tokenised-funds regime (24 March 2026), the UK's Digital Securities Sandbox and Singapore's Project Guardian.
+  - The frontier challenge is concentration and breadth: roughly 80% of on-chain RWA value sits in Treasuries and cash-equivalents, while tokenised real estate remains tiny (around $200M) and secondary-market liquidity, cross-chain interoperability and off-chain enforceability of legal claims remain unresolved as of 2026.
+
+- ### References
+  - 1. Stobox (2026). The State of RWA Tokenization — 2026 Mid-Year Report. https://www.stobox.io/reports/state-of-rwa-2026
+  - 2. Crypto.news (2026). Tokenized real world assets triple to $34 billion as Treasuries and Ethereum lead. https://crypto.news/tokenized-real-world-assets-triple-to-34-billion-as-treasuries-and-ethereum-lead/
+  - 3. CoinGecko (2026). 2026 RWA Report. https://assets.coingecko.com/reports/2026/CoinGecko-2026-RWA-Report.pdf
+  - 4. QuillAudits (2025). Understanding RWA Regulations — RWA Handbook. https://www.quillaudits.com/research/rwa-development/rwa-handbook/understanding-rwa-regulations
+  - 5. DeFi Intel (2026). RWA Tokenization 2026: BlackRock BUIDL, Treasuries & Market Guide. https://defi-intel.com/guides/real-world-asset-tokenization-2026-guide/
+  - 6. RWA.media (2026). The tokenization regulatory changelog. https://rwa.media/guides/changelog
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-05-19T00:00:00Z

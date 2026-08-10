@@ -332,6 +332,24 @@ public:: true
   - **ANSI/HFES 200** — American national standard for software ergonomics, covering presentation of information, user guidance, and input device design.
   - **Nielsen's Ten Heuristics** — widely adopted practitioner framework published by Jakob Nielsen (1994), covering visibility of system status, match between system and real world, user control, error prevention, and recognition over recall, among others; not a formal standard but broadly referenced in industry.
 
+- ### Current Landscape (2026)
+  - The European Accessibility Act (EAA) became enforceable on 28 June 2025, making usability and accessibility a legal requirement for e-commerce, banking, transport, e-books and communication services across the EU, with penalties reaching EUR 100,000 or up to 4% of annual revenue and EN 301 549 (harmonised to WCAG) as the technical benchmark.
+  - WCAG 2.2 (released 5 October 2023, nine new success criteria covering focus visibility, 24x24px target size, dragging alternatives and accessible authentication) consolidated as the de facto baseline and was formally approved as an international standard, ISO/IEC 40500:2025, elevating it from guideline to globally recognised benchmark for policy and procurement.
+  - Classical usability heuristics are being reworked for generative and agentic AI: NN/G published a research agenda for genAI in UX (June 2025) including AI-generated heuristic reviews, and practitioner frameworks now reinterpret Nielsen's ten heuristics around confidence scores, model status signalling, hallucination guardrails, override/undo controls and human-in-the-loop traceability.
+  - A distinct "agent experience" (AX) usability discipline emerged for computer-use agents (CUAs): 2025-2026 research proposes agent-specific heuristics (CUA-perceivable visual states, stable layouts, step-wise control signals, explicit skill exposure), with experiments showing that agent-aware UI redesign alone lifted task success dramatically (e.g. Qwen3-VL from 0.13 to 0.59, roughly 3.5x).
+  - Usability metrics are shifting from pure task-completion/time toward trust, transparency and controllability dimensions for probabilistic AI systems - user-reported trust scores, confidence-alignment against ground truth, override and error rates, and "dual evaluation" of human satisfaction plus agent reliability.
+  - AI-driven accessibility tooling (axe DevTools, automated scanners) now catches roughly 57% of machine-testable WCAG rules with projections approaching 70%, but the consensus in 2025-2026 remains that automation is a fast first pass only and cannot replace usability testing with people with disabilities.
+  - Notable usability regressions are being called out publicly: NN/G's most-read 2025 article criticised Apple's iOS 26 "Liquid Glass" visual language for obscuring content and replacing established conventions, underscoring that novel aesthetics can degrade usability.
+  - Open challenges as of 2026 include measuring usability of temporally-extended agentic interactions that unfold over minutes or days, designing interrogable/auditable AI reasoning as a first-class affordance, and closing the gap between EAA legal compliance and genuine inclusive practice, since preliminary 2025-2026 data showed no dramatic spike in real-world site accessibility after the deadline.
+
+- ### References
+  - 1. W3C (2023). Web Content Accessibility Guidelines (WCAG) 2.2. https://www.w3.org/TR/WCAG22/
+  - 2. HTTP Archive (2026). Accessibility - The 2025 Web Almanac. https://almanac.httparchive.org/en/2025/accessibility
+  - 3. Kalidindi, R. (2026). 2025 Accessibility Trends & What They Mean for 2026 (incl. WCAG 2.2 as ISO/IEC 40500:2025, EAA enforcement June 2025). https://www.linkedin.com/pulse/2025-accessibility-trends-what-mean-2026-rajesh-kalidindi-eo4wc
+  - 4. Nielsen Norman Group (2025). A Research Agenda for Generative AI in UX. https://www.nngroup.com/articles/genai-ux-research-agenda/
+  - 5. arXiv (2026). Augmenting Interface Usability Heuristics for Reliable Computer-Use Agents. https://arxiv.org/pdf/2605.02729v1.pdf
+  - 6. accessibility-test.org (2025). AI Vs. Human Testers | The 2025 European Accessibility Act. https://accessibility-test.org/blog/compare/ai-vs-human-testers-the-2025-european-accessibility-act/
+
 - ### Provenance
   - sources:: [[https://www.nngroup.com/articles/usability-101-introduction-to-usability/]], [[https://www.iso.org/standard/77520.html]]
   - updated:: 2026-06-13

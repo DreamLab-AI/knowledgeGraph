@@ -321,6 +321,23 @@ public:: true
   - owl-class:: data:DataInteroperability
   - owl-role:: concept
 
+- ### Current Landscape (2026)
+  - The EU Data Act (Regulation (EU) 2023/2854) became applicable on 12 September 2025, with Chapter VIII (Article 33) imposing binding essential requirements on data-space participants to describe dataset content, formats, vocabularies and API access in machine-readable form, and Chapter VI mandating cloud switching and interoperability, with data-egress and switching charges to be abolished from 12 January 2027.
+  - In health, Regulation (EU) 2025/327 establishing the European Health Data Space (EHDS) entered into force on 26 March 2025; it mandates a FHIR-based European Electronic Health Record Exchange Format (EEHRxF), with the Commission's key implementing acts due by March 2027 and cross-border primary-use exchange of priority category 1 (patient summaries, ePrescriptions) operational from March 2029 via MyHealth@EU.
+  - HL7 Europe published three new FHIR Implementation Guides (R4, R5 and Extensions) in November 2025 as an EHDS technical baseline, and in March 2026 the HL7 Europe/IHE-Europe EURIDICE collaboration extended coordinated IGs to imaging and the EU Health Data API; FHIR R6 opened its first normative ballot in January 2026 with a second in July 2026, and OMOP CDM is the de facto secondary-use model for HealthData@EU.
+  - The Dataspace Protocol reached its stable 2025-1 final release (1.0.0) in July 2025 under the Eclipse Dataspace Working Group, adding an automated Technology Compatibility Kit (TCK) that the IDSA Certification Scheme now uses to extend certification from security/trust to verified protocol compliance; the Eclipse Dataspace Components (EDC) remain the reference connector, adopted by Catena-X.
+  - Gaia-X released its Trust Framework 3.0 "Danube" at the November 2025 Porto Summit, introducing domain and geographic extensions and a unified extensibility mechanism to federate trust across ecosystems and compliance regimes; Estonia's X-Road 8 "Spaceship" (2026) is replacing its custom stack with the Dataspace Protocol stack to interoperate with Gaia-X.
+  - Formal standardisation is consolidating: CEN/CENELEC JTC 25 (established September 2024) is developing the EN 18235 "Trusted Data Transactions" series (Part 1 published; Part 2 final vote July 2026; Part 3 in enquiry, publication expected H1 2027) plus ETSI EN 303 760 (semantic interoperability) and EN 304 199 (data catalogue framework), alongside the international ISO/IEC 20151 data-space standard.
+  - The frontier challenge as of 2026 is cross-ecosystem connector interoperability: EDC, FIWARE, Solid and IDSA connectors remain siloed with no native bridge (a Catena-X participant cannot natively connect to EHDS), self-declared Gaia-X labels lack independent audit, and observers frame the blocker as governance and interoperability rather than technology.
+
+- ### References
+  - 1. European Commission, DG Health (2026). European Health Data Space Regulation (EHDS). https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds_en
+  - 2. HL7 (2026). New HL7 Europe FHIR Implementation Guides to support the European Health Data Space. https://hl7news.hl7.org/2026/01/02/new-hl7-europe-fhir-implementation-guides-to-support-the-european-health-data-space/
+  - 3. International Data Spaces Association (2026). IDSA Data Space Connector Report (Dataspace Protocol 2025-1). https://internationaldataspaces.org/idsa-data-space-connector-report/
+  - 4. Gaia-X (2025). Gaia-X Enters Season 2.0 with Trust Framework 3.0 "Danube" at Summit 2025. https://gaia-x.eu/gaia-x-enters-season-two-of-dataspaces-and-digital-ecosystems-with-summit-2025/
+  - 5. Gaia-X Architecture Working Group (2026). Gaia-X Architecture Document — context (X-Road 8, JTC 25, EN 18235). https://gaia-x.gitlab.io/technical-committee/architecture-working-group/architecture-document/gaia-x_context/
+  - 6. European Commission (2025). Data Act explained — Chapter VIII interoperability, applicable 12 September 2025. https://digital-strategy.ec.europa.eu/en/factpages/data-act-explained
+
 - ### Provenance
   - sources:: W3C Data on the Web Best Practices; FAIR Data Principles (Wilkinson et al.); HL7 FHIR specification; ISO 11179; EU Data Governance Act
   - updated:: 2026-06-13

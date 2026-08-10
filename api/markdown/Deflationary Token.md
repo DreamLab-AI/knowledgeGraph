@@ -374,6 +374,23 @@ public:: true
 
   <!-- Merged from Deflationary Token.md: Blockchain, Fungible Token -->
 
+- ### Current Landscape (2026)
+  - The canonical deflationary case, Ethereum's "ultrasound money" thesis built on EIP-1559 base-fee burning, broke after the March 2024 Dencun upgrade (EIP-4844 blob transactions) moved activity onto near-zero-fee layer-2 rollups; daily burn collapsed from thousands of ETH to as low as 50–70 ETH, leaving ETH mildly inflationary at roughly 0.2–0.8% net annually through 2025 into 2026 and pushing supply back above its post-Merge low.
+  - Ethereum's December 2025 Fusaka upgrade (activated 3 December 2025) added EIP-7918, a "blob base fee bound" that floors blob pricing at roughly the execution base fee divided by 16, guaranteeing a minimum burn stream; Fidelity modelled it would have added around $78.6m in cumulative burn across about 93% of days since 2024, but it only prevents burn collapsing to zero rather than restoring post-Merge deflation.
+  - The dominant 2025–2026 shift has been from protocol fee-burns to revenue-funded buyback-and-burn: across 27 tracked tokens the sector spent or destroyed roughly $18.8bn since January 2025 (about $14.9bn in 2025, of which ~$12.7bn burns versus ~$2.2bn buybacks), reframing deflation as a value-accrual mechanism tied to real protocol revenue.
+  - Hyperliquid emerged as the archetype, routing about 97% of trading fees through its keyless Assistance Fund; a 24 December 2025 validator vote (85% in favour) formally recognised roughly 37m HYPE (about 13–16% of supply, ~$1bn) as permanently burned and committed future fee buybacks to burning, converting a discretionary treasury policy into a governance-enforced deflationary commitment.
+  - BNB continued its dual-track model, quarterly Auto-Burn plus the real-time BEP-95 gas burn (~10% of fees), toward its 100m supply target; the 36th quarterly burn on 15 July 2026 destroyed 1,615,827.795 BNB (about $931.7m), cutting supply to roughly 133m and sustaining a ~4–5% annual deflation rate.
+  - Analysts increasingly stress that a burn only shrinks supply if it outruns issuance and unlocks: on a forward net-emission basis only a handful of tokens (notably BNB and Raydium's RAY) are genuinely net-deflationary, whereas HYPE, ETH and others remain net inflationary once staking rewards or scheduled unlocks are subtracted.
+  - Open challenges into 2026 centre on the tension between L2 scaling and base-layer scarcity, growing investor scrutiny of exchange-token burn transparency and consistency, and persistent unlock schedules (for example HYPE's monthly ~9.9m-token unlocks running through 2027) that structurally offset even aggressive buyback-and-burn programmes.
+
+- ### References
+  - 1. crypto.news (2026). Did L2s break Ethereum's ultrasound money? https://crypto.news/ethereum-ultrasound-money-l2-burn-broken/
+  - 2. Unlocks Insights (2026). Crypto's $19B Buyback and Burn Meta, 2025-2026. https://insights.unlocks.app/buyback-and-burn-explained-what-they-are-who-is-doing-them-and-whether-they-actually-work/
+  - 3. crypto.news (2026). Why HYPE is different: inside Hyperliquid's buyback. https://crypto.news/why-hype-is-different-inside-hyperliquids-buyback/
+  - 4. Binance Square (2025). Deep Dive into BNB Burn Mechanism: 2025 Data Review. https://www.binance.com/en/square/post/30633546555273
+  - 5. The Block (2025). Ethereum supply climbs to pre-Merge upgrade levels; analysts point to Dencun blob update. https://www.theblock.co/news/ecosystems/2025-02-05-ethereum-supply-climbs-to-pre-merge-upgrade-levels-analysts-point-to-dencun-blob-update-338964
+  - 6. MEXC News (2026). Ethereum Token Supply in 2026: The "Ultrasound Money" Reality Check. https://www.mexc.com/news/1013167
+
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
   - migration-date:: 2026-04-26T00:00:00Z

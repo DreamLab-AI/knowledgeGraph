@@ -383,6 +383,23 @@ public:: true
     - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
     - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+- ### Current Landscape (2026)
+  - Ethereum's Fusaka (Fulu-Osaka) upgrade activated on mainnet on 3 December 2025 (slot 13,164,544), introducing PeerDAS data-availability sampling so each full node custodies only a subset (as little as 1/8th, non-validating nodes ~1/32nd) of blob data rather than all of it, with staged Blob-Parameter-Only (BPO) forks raising the blob target to 10 (Dec 2025) and 14 (Jan 2026).
+  - Partial history expiry (EIP-4444) shipped across all execution clients from July 2025, letting node operators drop pre-Merge block data to reclaim 300-500 GB and fit a node on a 2 TB disk; ERA files (ERA-E execution, ERA-C consensus) standardise how pruned history is archived, with retention shifting to archive nodes, the Portal Network and specialised indexers.
+  - Stateless clients moved from theory towards production: Paradigm's Ress (Reth Stateless), announced March 2025, ran fully-validating stakers on the Holesky testnet with only ~14 GB disk (a ~70x reduction) and sub-second block validation, natively supported via the ress RLPx subprotocol in Reth from v1.3.1 without any hard fork.
+  - The Rust-based Reth execution client has become the high-performance default: Base deprecated Geth entirely in its favour, Optimism scheduled the end of op-geth support by May 2026, and networks such as 0G migrated validators from Geth to Reth (March 2026), citing ~24% lower block-execution latency (Geth 25.3ms to Reth 19.1ms p50) and ~40% faster sync on BNB Chain.
+  - Verkle Trees are slated as the headline of Ethereum's Hegotá fork (targeted H2 2026, following Glamsterdam in H1), swapping the Merkle Patricia Trie for polynomial vector commitments that shrink block witnesses from megabytes to ~1-2 KB and cut node storage by roughly 90%, with Geth, Nethermind, Besu, Erigon and Reth already running testnet migration tools.
+  - Node operation is increasingly outsourced to managed and decentralised RPC infrastructure: QuickNode, Alchemy, Helius, Chainstack, Ankr and dRPC dominate provisioning, while decentralised fabrics such as Pocket Network, Lava Network and dRPC provide censorship-resistant fallback; on Solana, Jump Crypto's Firedancer (tile-based C/C++ validient client) and Agave set a high hardware floor of 512 GB+ RAM and 24+ cores for production validators.
+  - Open challenges as of 2026 centre on capping state growth rather than merely slowing it (state expiry must accompany Verkle Trees), completing multi-client Verkle migration and security audits, reconciling ever-higher throughput (bigger blobs, gas-limit increases) with home-staker hardware limits, and preserving decentralisation as heavy RPC and archive workloads consolidate onto a handful of specialised operators.
+
+- ### References
+  - 1. Ethereum Foundation (2025). Partial history expiry announcement. https://blog.ethereum.org/2025/07/08/partial-history-exp
+  - 2. Paradigm (Krasiuk & Konstantopoulos) (2025). Ress: Scaling Ethereum with Stateless Reth Nodes. https://www.paradigm.xyz/2025/03/stateless-reth-nodes
+  - 3. ethereum.org (2026). Fulu-Osaka (Fusaka) roadmap. https://ethereum.org/roadmap/fusaka/
+  - 4. BlockEden (2026). Ethereum Hegota: The Post-Glamsterdam Fork and Three-Fork Pipeline. https://blockeden.xyz/blog/2026/04/19/ethereum-hegota-roadmap-glamsterdam-three-fork-pipeline/
+  - 5. 0G / GlobeNewswire (2026). 0G Ships Major Infrastructure Upgrade: Geth-to-Reth Validator Migration. https://www.globenewswire.com/news-release/2026/03/13/3255713/0/en/0G-Ships-Major-Infrastructure-Upgrade-Geth-to-Reth-Validator-Migration.html
+  - 6. Dysnix (2026). Solana RPC Node Infrastructure Guide. https://dysnix.com/blog/solana-rpc-node-infrastructure
+
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
   - migration-date:: 2026-04-26T00:00:00Z

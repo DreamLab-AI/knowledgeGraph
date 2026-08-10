@@ -269,6 +269,24 @@
   - **Solvency II** (EU) — risk-based capital framework for [[Insurance]] undertakings, analogous to Basel for banks.
   - **Open Finance frameworks** — emerging extensions of [[Open Banking]] to cover savings, investments, pensions, and insurance data, under development in the UK (FCA), EU (FIDA), and other jurisdictions.
 
+- ### Current Landscape (2026)
+  - The GENIUS Act (Public Law 119-27), signed on 18 July 2025, created the first US federal framework for payment stablecoins, mandating 100% liquid reserves, monthly reserve attestations, Bank Secrecy Act/AML compliance and a ban on yield-bearing coins; implementing rules from the OCC, Federal Reserve and FDIC are due by 18 July 2026, with full effect by January 2027.
+  - Agentic commerce has moved from concept to deployed infrastructure: Google's Agent Payments Protocol (AP2) launched September 2025 with 60+ partners (Mastercard, PayPal, Amex, Coinbase), alongside Coinbase's x402 (V2 shipped December 2025, Stripe integrated on Base in February 2026) and the Stripe/Tempo Machine Payments Protocol (MPP, launched 18 March 2026); x402 crossed 100 million agentic transactions on Base by Q1 2026.
+  - Real-world asset tokenisation scaled sharply — total tokenised RWAs exceed roughly US$34 billion (double a year earlier) and tokenised US Treasuries surpass US$15 billion, up from about US$1 billion in early 2024; BlackRock's BUIDL (~US$2.5 billion AUM) now underpins products such as Ethena's USDtb and Ondo's OUSG.
+  - Traditional institutions are settling on-chain: in May 2026 JPMorgan's Kinexys, with Mastercard and Ripple, piloted redeeming a tokenised Treasury fund on the XRP Ledger with cash paid through JPMorgan's network in under five seconds, illustrating tokenised-deposit and DLT settlement moving into the banking mainstream.
+  - Regulators are hardening AI governance: the US Treasury released an AI Lexicon and a Financial Services AI Risk Management Framework in February 2026, and the OCC, Federal Reserve and FDIC issued revised interagency model-risk guidance in April 2026; the UK FCA ran an NVIDIA-backed "supercharged" AI sandbox from October 2025.
+  - The UK is building a two-tier stablecoin regime — the FCA regulates all qualifying issuers (remit effective 25 October 2027) while the Bank of England jointly supervises HMT-designated systemic sterling stablecoins, with a draft Code of Practice consulted through June 2026 (closing 22 September 2026); the EU continued MiCAR implementation with a PSD2 transition for e-money-token CASPs ending 2 March 2026.
+  - US prudential policy recalibrated under new agency leadership — a revised Basel III Endgame package that softens operational- and credit-risk elements, the November 2025 GSIB supplementary-leverage-ratio rule, and a revived de novo bank-charter route — even as financial services became the most targeted sector for AI-powered cyberattacks (roughly 33% of AI-driven incidents in 2025).
+  - Open challenges as of 2026 include unresolved consumer-protection questions for stablecoin/agent transactions (EFTA "funds" ambiguity), fragmentation across competing agent-payment standards, whether tokenised RWA yield density can sustain autonomous machine-to-machine allocation, and pending market-structure legislation (the CLARITY Act) to define when crypto assets are securities.
+
+- ### References
+  - 1. Wolters Kluwer (2026). The Fintech Landscape in 2026. https://www.wolterskluwer.com/en/expert-insights/the-fintech-landscape-in-2026
+  - 2. Freshfields (2026). 2025 Bank Regulatory Roundup and What to Look for in 2026. https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/2025-bank-regulatory-roundup-and-what-to-look-for-in-2026-102lymd
+  - 3. U.S. Congress (2025). S.1582 — GENIUS Act (Public Law 119-27). https://www.congress.gov/bill/119th-congress/senate-bill/1582/text
+  - 4. Google Cloud (2025). Announcing Agent Payments Protocol (AP2). https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol
+  - 5. Crossmint (2026). Agentic Payments Protocols Compared: MPP, ACP, AP2, x402. https://www.crossmint.com/learn/agentic-payments-protocols-compared
+  - 6. Bloomberg Professional Services (2026). July 2026 Global Regulatory Brief: Stablecoins, AI governance and regulatory sandboxes. https://www.bloomberg.com/professional/insights/regulation/july-2026-global-regulatory-brief-stablecoins-ai-governance-and-regulatory-sandboxes/
+
 - ### Provenance
   - sources:: Basel Committee on Banking Supervision (BCBS); Financial Stability Board (FSB); Bank for International Settlements (BIS); European Banking Authority (EBA); Financial Action Task Force (FATF); SWIFT Institute; ISO TC68 (Financial Services Technical Committee); HM Treasury; European Commission DG FISMA
   - updated:: 2026-06-13

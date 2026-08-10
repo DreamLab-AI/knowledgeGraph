@@ -289,6 +289,21 @@ alias:: Data-Availability
   - **Modular blockchain taxonomy**: The Celestia and Eclipse ecosystems use a layered taxonomy distinguishing execution, settlement, consensus, and data availability layers as discrete protocol components.
   - Related standards and cryptographic primitives: [[Reed-Solomon Code]], [[KZG Polynomial Commitment]], [[Merkle Tree]] (all have independent formal specifications)
 
+- ### Current Landscape (2026)
+  - Ethereum's Fusaka hard fork activated on mainnet on 3 December 2025, shipping PeerDAS (EIP-7594) — the first production data-availability sampling on L1, where each node stores only ~1/8 of erasure-coded blob data (128 columns, Reed-Solomon) and verifies availability against KZG commitments rather than downloading every blob.
+  - Fusaka replaced named-fork blob scaling with Blob-Parameter-Only (BPO) forks (EIP-7892): BPO1 (9 December 2025) raised the per-block blob target/max from 6/9 to 10/15, and BPO2 (7 January 2026) to 14/21 (~2.7 MB of blob data per block), with a longer-term roadmap toward 48 and eventually 128 blobs (~16 MB) per block.
+  - EIP-7918 introduced a blob base-fee reserve in Fusaka so blob prices no longer collapse to near-zero when execution gas dominates, forcing L2s to pay a meaningful floor for the bandwidth and storage their data imposes.
+  - The dedicated DA market has consolidated around five players by 2026 — Celestia (TIA), EigenDA, Avail (AVAIL), NearDA and Ethereum blobspace — with EigenDA V2 (July 2025) claiming ~100 MB/s throughput via its restaking-secured committee, while Celestia and Avail run live light-node DAS in production.
+  - Full Danksharding remains the endgame but is still years out (commonly cited around 2027+ on current roadmaps); external DA layers are betting on better economics and specialised features (cross-rollup interoperability, sovereign rollups) even after Ethereum's native DAS scales.
+  - Open challenges as of 2026 include the "supernode" centralisation pressure in PeerDAS (validators staking 4,096 ETH or more must serve all 128 columns as data healers), the security trade-offs of committee-based DACs like EigenDA versus fully sampled chains, and softening DA-token prices (TIA down ~23% over the six months to November 2025) squeezing standalone DA economics.
+
+- ### References
+  - 1. Ethereum Foundation (2025). Fusaka Mainnet Announcement. https://blog.ethereum.org/2025/11/06/fusaka-mainnet-announcement
+  - 2. Ethereum.org (2026). PeerDAS — Fusaka roadmap. https://ethereum.org/roadmap/fusaka/peerdas/
+  - 3. BlockEden (2026). PeerDAS and the Future of Ethereum: Transforming Data Availability. https://blockeden.xyz/blog/2026/03/27/ethereum-fusaka-peerdas-full-danksharding-l2-scaling/
+  - 4. Datawallet (2026). Ethereum Fusaka Upgrade & EIPs Explained. https://www.datawallet.com/crypto/ethereum-fusaka-upgrade-explained
+  - 5. Spark (2025). Data Availability — Spark Glossary. https://www.spark.money/glossary/data-availability
+
 - ### Provenance
   - sources:: Formal literature on fraud and data availability proofs (Al-Bassam et al. 2018); Ethereum EIP-4844 specification; Celestia whitepaper; Ethereum Foundation danksharding research blog posts; EigenDA and Avail documentation
   - updated:: 2026-06-13
