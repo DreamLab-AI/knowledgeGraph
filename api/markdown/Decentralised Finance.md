@@ -280,6 +280,23 @@ alias:: DecentralisedFinance
   - **OpenZeppelin**: widely adopted open-source library of audited [[Smart Contract]] modules (ERC-20, access control, upgradeability patterns) that many DeFi protocols use as a security baseline.
   - **Chainlink CCIP (Cross-Chain Interoperability Protocol)**: a standardised messaging and token bridge protocol aimed at providing a shared security layer for cross-chain DeFi interactions.
 
+- ### Current Landscape (2026)
+  - Regulation arrived in force: the US GENIUS Act (P.L. 119-27), signed 18 July 2025, established the first federal framework for dollar-backed stablecoins (1:1 audited reserves, monthly attestations, freeze/block capabilities), with implementing regulations due by 18 July 2026; the EU's MiCA reached its enforcement deadline around 1 July 2026 after finalising Level 2/3 measures in December 2025.
+  - US market-structure clarity advanced: the House passed the CLARITY Act in July 2025 and the Digital Asset Market Clarity Act (12 January 2026) formalised the "Digital Commodity" designation, shifting jurisdiction over non-security tokens from the SEC to the CFTC, with DeFi protocols and infrastructure development explicitly carved out of the regime.
+  - Total value locked has been volatile rather than uniformly booming: figures ranged from roughly $130-149bn in early 2026 (Dwellir, BlockEden) down to about $72-98bn by mid-2026 (DeFiLlama-tracked, CRS), still well below the ~$180bn late-2021 peak, with Ethereum anchoring over half of all TVL.
+  - Stablecoins decoupled from and dwarfed DeFi: aggregate market cap reached about $314-317bn by April-June 2026 (up over 50% since early 2025 per the Federal Reserve), roughly 4.4x total DeFi TVL, with USDT near 60% share, USDC around 25%, and MakerDAO rebranded to Sky (DAI/USDS); yield-bearing stablecoins such as Ethena's USDe grew from about $9.5bn to over $20bn.
+  - Major protocol upgrades reshaped the stack: Uniswap v4 (live January 2025) introduced customisable "hooks" across 10+ chains, and activated its fee switch via the UNIfication proposal on 25 December 2025; Aave v4 launched on Ethereum mainnet on 30 March 2026 with a hub-and-spoke unified-liquidity architecture, expanding to USDG (June 2026) and Avalanche (July 2026).
+  - Restaking and account abstraction matured: EigenLayer shipped mainnet slashing on 17 April 2025, enabling Actively Validated Services; EIP-4844 blob transactions cut L2 fees 80-95%, while ERC-4337 and EIP-7702 (letting EOAs act as smart accounts) plus paymaster gas sponsorship became standard UX layers.
+  - Institutional and TradFi convergence became the dominant theme: BlackRock and other asset managers deployed into tokenised Treasuries and money-market funds, Aave launched its Horizon RWA market for institutions, and analysts project TVL toward $250bn by end-2026 - though most stablecoin liquidity still circulates outside DeFi and no overarching DeFi-specific legislative framework yet exists.
+
+- ### References
+  - 1. Congressional Research Service (2026). An Overview of Decentralized Finance (DeFi), R48883. https://www.congress.gov/crs-product/R48883
+  - 2. Federal Reserve (2026). Stablecoins in 2025: Developments and Financial Stability Implications, FEDS Notes. https://www.federalreserve.gov/econres/notes/feds-notes/stablecoins-in-2025-developments-and-financial-stability-implications-20260408.html
+  - 3. Dwellir (2026). The State of DeFi in 2026. https://www.dwellir.com/blog/state-of-defi-2026
+  - 4. Aave Labs (2026). Aave V4 is Live on Ethereum. https://aave.com/blog/aave-v4-live-ethereum
+  - 5. Uniswap Labs (2025). Uniswap v4 is Here - A New Era of DeFi. https://blog.uniswap.org/uniswap-v4-is-here
+  - 6. Symbiosis Finance (2026). How DeFi works now: 2026 tech stack explained. https://symbiosis.finance/blog/defi-in-2025-2026-what-changed-technically
+
 - ### Provenance
   - sources:: Buterin (2013 Ethereum whitepaper); Adams et al. (2021 Uniswap v3 whitepaper); Gudgeon et al. (2020 DeFi protocols survey); Jensen et al. (2021 DeFi crisis and systemic risk); FATF Guidance on Virtual Assets (2021 updated)
   - updated:: 2026-06-13

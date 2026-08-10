@@ -806,6 +806,23 @@ public:: true
 		- [[Multi-Layer Agentic Governance Framework]]
 		- This is an [[AI-Assisted Ontology Elicitation Method]]
 
+- ### Current Landscape (2026)
+  - The first formal international metaverse ontology reached final drafting in 2026: ISO/IEC FDIS 24931-1 "Information technology — Metaverse — Part 1: Concepts, characteristics and technology" entered FDIS ballot (draft released 29 May 2026) under JTC 1/SC 24/WG 10, providing the first authoritative ISO terms, definitions and concepts; until it publishes, ISO notes the metaverse remains formally undefined.
+  - ISO/IEC extended this into a multi-part suite of preliminary work items under SC 24 ad hoc groups: Part 2 (framework and architecture), Part 3 (use cases), Part 4 (reference model), Part 5 (information model) and Part 6 (governance), signalling a shift from a single glossary toward a layered, machine-usable ontology stack.
+  - IEEE ratified IEEE 2874-2025 Spatial Web in May 2025, whose Hyperspace Modeling Language (HSML) is an explicit semantic modelling language encoding a Spatial Web ontology of domains (Geographic, Concept, Agent, Person, Thing), with OGC GeoPose 1.0 (OGC 21-056r11) as a normative reference for spatial anchoring.
+  - MPAI's Metaverse Model (MPAI-MMM) advanced toward IEEE adoption as IEEE P3312 (PAR approved 4 November 2025), standardising an ontology of Processes, Actions, Items and Protocols to let one metaverse instance interoperate with another, released as an open-source BSD-3 reference project.
+  - The Metaverse Standards Forum operationalised its Metaverse Ontology domain work through a public Standards Register glossary (register.metaverse-standards.org), the 3D Web Interoperability WG's "Web of Worlds" whitepaper (2025), and 2025 use-case artefacts including Consistency of Experience (MSF2025-COE-001), the Metaverse Universal Manifest (MUM) and NFT Metadata for the Metaverse.
+  - ITU-T consolidated the terminology layer: its Focus Group on Metaverse produced the FGMV-51 standardisation roadmap and gap analysis (2024) calling for a common terminology-ontology for minimal semantic interoperability, followed by Recommendation ITU-T H.770-1 (December 2025) on cross-platform interoperability spanning avatar, asset, content and identity domains, alongside the emerging ISO/IEC 23090-39 (MPEG-I Avatar Representation Format).
+  - The open frontier as of 2026 is fragmentation and alignment: the MSF's October 2025 report to EU policymakers flags persistent data-management gaps and prioritises spatially-anchored ontologies, spatial scene description and privacy-by-design, while IEEE P2048 (metaverse terminology, definitions and taxonomy) remains under development, so competing IEEE, ISO/IEC, ITU-T and Spatial Web vocabularies are not yet reconciled into one interoperable semantic model.
+
+- ### References
+  - 1. ISO/IEC JTC 1/SC 24 (2026). ISO/IEC FDIS 24931-1 Information technology — Metaverse — Part 1: Concepts, characteristics and technology. https://www.iso.org/standard/88529.html
+  - 2. IEEE SA (2025). IEEE P3312 — Adoption of MPAI Metaverse Model (MPAI-MMM) Technologies Version 2.0. https://standards.ieee.org/ieee/3312/12311/
+  - 3. Metaverse Standards Forum (2025). Spatial Web to GeoPose Summit — IEEE 2874-2025 Spatial Web, HSML and Spatial Web Ontology. https://metaverse-standards.org/wp-content/uploads/2025-10-27-Spatial-Web-to-GeoPose-Summit.pdf
+  - 4. ITU-T Focus Group on Metaverse (2024). Technical Report FGMV-51 — Standardization roadmap for metaverse (common terminology-ontology for semantic interoperability). https://www.itu.int/dms_pub/itu-t/opb/fg/T-FG-MV-2024-51-PDF-E.pdf
+  - 5. ITU-T (2025). Recommendation ITU-T H.770-1 — Service scenarios and high-level requirements for metaverse cross-platform interoperability. https://www.itu.int/epublications/en/publication/itu-t-h-770-1-2025-12-service-scenarios-and-high-level-requirements-for-metaverse-cross-platform-interoperability
+  - 6. Metaverse Standards Forum (2025). Progress in Virtual Worlds Interoperability Standards — recommendations for EU policymakers on spatially-anchored ontologies. https://metaverse-standards.org/wp-content/uploads/Progress-in-Virtual-Worlds-Interoperability-Standards-and-Metaverse-Standards-Forum.pdf
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

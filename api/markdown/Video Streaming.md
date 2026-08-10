@@ -291,6 +291,22 @@ public:: true
   - **DRM interoperability** — multi-DRM licensing across Widevine (Android/Chrome), FairPlay (Apple), and PlayReady (Microsoft) adds operational complexity.
   - **Origin scalability for live events** — synchronised multi-CDN distribution and origin shielding are required to handle sudden audience spikes (e.g. major sporting finals).
 
+- ### Current Landscape (2026)
+  - AV1 crossed from experimental to mainstream: Netflix reported roughly 30% of streaming hours in AV1 by December 2025 (its second-most-used codec), with 85% HDR10+ coverage and about one-third less bandwidth than AVC/HEVC; YouTube now serves the majority of its 4K catalogue in AV1. AV1 hardware decode is standard from iPhone 15 Pro (A17 Pro) and Apple Silicon M3+, Android 14 mandates decode, and recent living-room devices (Fire TV 4K Max, Google TV Streamer, Roku Ultra) support it.
+  - WHIP (WebRTC-HTTP Ingestion Protocol) was published as IETF RFC 9725 in March 2025 and FFmpeg merged support in June 2025, making WebRTC low-latency ingest portable and positioning it to replace RTMP for new builds, while LL-HLS with CMAF chunked transfer settles the 2-5 second live tier and Media over QUIC (MoQ) matures as the next frontier.
+  - The codec patent and standards landscape reshuffled in 2025: Access Advance launched its Video Distribution Patent (VDP) Pool (16 January 2025), Nokia and Amazon settled global streaming patent litigation (31 March 2025), InterDigital acquired AI-native compression startup Deep Render (30 October 2025), and AOMedia announced the next-generation AV2 codec (15 September 2025) targeting around 30% better efficiency than AV1.
+  - Streaming business models pivoted decisively to hybrid monetisation: Netflix's ad tier reached roughly 190 million monthly active viewers by early 2026 (94 million on the older MAU basis mid-2025), and by August 2025 about 45% of US Netflix household viewing hours were on the ad tier, up from 34% a year earlier. Multiple platforms (Netflix, Disney's streaming unit, Tubi) reached sustained profitability in 2025.
+  - FAST (free ad-supported streaming TV) surged, with Nielsen/Gracenote counting nearly 1,850 active channels globally in Q3 2025 (a 76% rise since 2023) and the FAST market reaching around $12.26 billion; consolidation is concentrating channels into a few mega-platforms (Tubi, Pluto, Roku Channel, Samsung TV Plus, LG Channels).
+  - Live sports and events became the retention engine: Netflix's 2025 Christmas Day NFL game (Lions-Vikings) set a streaming record at 27.5 million average viewers, its 10-year WWE Raw deal converted wrestling fans to subscribers, and Amazon (NBA/WNBA), YouTube (NFL Sunday Ticket) and Apple TV+ (MLB) expanded rights, with FIFA World Cup 2026 and the Olympics set to concentrate broadcast-scale traffic into streaming.
+  - Consolidation and re-aggregation define 2026, marked by Netflix's late-2025 bid for Warner Bros. Discovery assets, telco-led super-bundling (roughly 25% of platforms actively bundling, 75%+ tied to telecom operators), and rising regulatory pressure on content moderation, provenance and encryption; Brazil's Decree No. 12,595/2025 formalised its next-generation "TV 3.0"/DTV+ stack (27 August 2025).
+
+- ### References
+  - 1. Streaming Media (2026). The State of Streaming Codecs 2026. https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/The-State-of-Streaming-Codecs-2026-173838.aspx
+  - 2. Fora Soft (2026). Best Technology Stack for Video Streaming Apps in 2026. https://www.forasoft.com/blog/article/best-technologies-video-streaming-app-2024
+  - 3. Free-Codecs (2026). AV1 Codec Dominates Streaming Landscape as 2026 Begins. https://www.free-codecs.com/news/av1-codec-dominates-streaming-landscape-as-2026-begins.htm
+  - 4. Fora Soft (2026). Streaming Platform Development: Why Some Win in 2026. https://www.forasoft.com/blog/article/why-some-streaming-services-thrive-while-others-falter
+  - 5. 2coders via LinkedIn (2026). OTT Trends 2026: FAST, Ad Tiers & Live Sports. https://www.linkedin.com/pulse/ott-trends-2026-fast-ad-tiers-live-sports-2coders-2ftjc
+
 - ### Provenance
   - sources:: IETF RFC 8216 (HLS), ISO/IEC 23009 (MPEG-DASH), W3C WebRTC specification, Alliance for Open Media AV1 specification, SMPTE standards for streaming media.
   - updated:: 2026-06-13

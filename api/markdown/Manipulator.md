@@ -353,6 +353,23 @@ alias:: RB-0003-manipulator
   - **URDF / SDF** — XML-based formats describing manipulator geometry, inertia, and joint properties for simulation and planning.
   - Major commercial families: KUKA KR-series, ABB IRB-series, Fanuc M-series, YASKAWA Motoman, Universal Robots UR-series, Franka Emika Panda.
 
+- ### Current Landscape (2026)
+  - Manipulator control has shifted decisively toward learned vision-language-action (VLA) foundation policies: Physical Intelligence's pi0 for dexterous bimanual work, Google DeepMind's Gemini Robotics (2025), NVIDIA's GR00T N1 open humanoid model (March 2025) and Tsinghua's 1.2B-parameter RDT-1B diffusion model now let arms generalise to unseen objects from as few as one to five demonstrations.
+  - Dexterity-first hand foundation models emerged in 2026, including RLWRLD's RLDX-1 (May 2026) and Genesis AI's GENE-26.5 (announced 6 May 2026), the latter paired with a human-scale dexterous hand and a data engine to claim human-level physical manipulation.
+  - Multi-fingered end-effectors proliferated: Tesla Optimus Gen 3 (22-DoF, tactile), Unitree Dex5-1 (20-DoF), Tesollo DG-3F and EFORT Dexterous I, alongside maturing tactile sensing (GelSight, Meta's open-source DIGIT at roughly 20 USD, BioTac) and tactile foundation models such as UniTouch enabling in-hand regrasping and tool use.
+  - The core safety framework was rewritten: ISO 10218-1:2025 (Edition 3) and ISO 10218-2:2025 (Edition 2) came into force on 1 April 2025, replacing the 2011 editions, folding the former ISO/TS 15066 power-and-force-limiting content into ISO 10218-2 and adding first-time cybersecurity requirements plus new Class 1/Class 2 robot classifications.
+  - The US aligned within months via ANSI/A3 R15.06-2025 (Parts 1 and 2 published September-October 2025, Part 3 early November 2025), reframing the field around "collaborative applications" rather than the "cobot" as a product category; the EU Cyber Resilience Act applies to connected robots from 11 December 2027.
+  - Market momentum remains strong: the collaborative-robot segment was valued at roughly USD 1.9 billion in 2025 and USD 2.28 billion in 2026, projected toward USD 5.72 billion by 2031 (~20% CAGR), with sub-5 kg arms holding about 52% share and 10-20 kg payload classes growing fastest; ABB, FANUC, KUKA, Yaskawa and Universal Robots remain the incumbent manipulator OEMs.
+  - Open frontiers as of 2026 include the data bottleneck for high-DoF hands (still reliant on teleoperation, human demonstration and simulation such as DexGraspNet), reliable sim-to-real transfer, robust contact-rich in-hand manipulation, and certifying learned policies against the tightened functional-safety and cybersecurity clauses of ISO 10218:2025.
+
+- ### References
+  - 1. Li, G. et al. (2025). The Developments and Challenges towards Dexterous and Embodied Robotic Manipulation: A Survey. arXiv. https://arxiv.org/html/2507.11840v1
+  - 2. Genesis AI (2026). Genesis AI Unveils GENE-26.5, the First AI Brain to Enable Robots with Human-Level Physical Manipulation Capabilities. PR Newswire. https://www.prnewswire.com/news-releases/genesis-ai-unveils-gene-26-5--the-first-ai-brain-to-enable-robots-with-human-level-physical-manipulation-capabilities-302763638.html
+  - 3. EVS International (2026). Collaborative Robot Safety Standards 2026: ISO 10218:2025 and TS 15066. https://www.evsint.com/collaborative-robot-safety-standards-2026-iso-10218-2025-ts-15066/
+  - 4. InMotion (2026). Collaborative Robot Safety Standards: ISO 10218, ISO/TS 15066, ANSI/A3 R15.06. https://www.inmotion.global/resources/cobot-safety/collaborative-robot-safety-standards/
+  - 5. Mordor Intelligence (2026). Collaborative Robots Market Size, Share & Forecast, 2031. https://www.mordorintelligence.com/industry-reports/collaborative-robot-market
+  - 6. RoboCloud (2026). Tactile Sensing for Dexterous Manipulation: 2026 State of the Art. https://robocloud-dashboard.vercel.app/learn/blog/tactile-dexterous-manipulation-2026
+
 - ### Provenance
   - sources:: [[ISO 8373:2021]]
   - relatedStandard:: ISO 9283:1998

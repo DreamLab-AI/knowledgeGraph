@@ -282,6 +282,22 @@ public:: true
   - **Performance heterogeneity** — a high-poly asset portable by format may be impractical on mobile or low-power XR devices; [[Level of Detail]] (LOD) strategies must also be portable, not only base geometry.
   - **Security concerns** — arbitrary 3D files can embed malicious scripts (glTF allows JavaScript in KTX2 extensions; USD Python layers); receiving platforms must sandbox or validate untrusted assets.
 
+- ### Current Landscape (2026)
+  - The Alliance for OpenUSD (AOUSD) and the Khronos Group signed a liaison agreement in 2025 to align OpenUSD and glTF, establishing normative references between the two formats so 3D assets can round-trip between authoring (USD) and delivery (glTF) pipelines with less friction.
+  - The Metaverse Standards Forum's "3D Asset Interoperability using USD and glTF" Working Group ran a high-profile Birds of a Feather session at SIGGRAPH 2025 (Vancouver, 12 August 2025), advancing two concrete projects: glTF-USD conversion guidelines with test assets, and an FBX Migration project to move toolchains off proprietary FBX dependence.
+  - Khronos submitted the KHR_interactivity extension for glTF 2.0 for ratification in July 2026; using portable behaviour graphs embedded in the asset itself, it lets configurators, guides and mini-games travel across any compliant viewer without platform-specific code, with support already shipping in Babylon.js, Needle Engine, Google's Android XR (Jetpack XR SDK) and Magic Leap.
+  - The Forum published the Metaverse Universal Manifest (MUM) v1.0 in September 2025, a JSON-LD "passport" that links an asset's glTF/X3D data to decentralised storage (e.g. IPFS) and to ownership via DIDs and verifiable credentials, and formally approved the "Portable Personal Content" use case (MSF2025-PPC-001) on 14 November 2025.
+  - Material and physics portability advanced through OpenPBR and MaterialX translation graphs (open_pbr_to_gltf_pbr and back) to preserve appearance across formats, while a shared physics representation aligning the glTF Physics extension and the USD Physics template was targeted for early 2026.
+  - New geometry types entered the portability agenda: the group is aligning 3D Gaussian Splatting representations across glTF and USD (draft 3DGS specification), and drafting glTF Avatar extensions alongside the .vrm ecosystem to make avatars portable.
+  - Open challenges as of 2026 remain non-trivial capability gaps in USD-glTF round-tripping (spherical harmonics, subsurface, iridescence and dispersion are unevenly supported), authenticated cross-world ownership at scale, and the fact that KHR_interactivity explicitly covers only single-user experiences, leaving multi-user networked portability unresolved.
+
+- ### References
+  - 1. Metaverse Standards Forum (2025). State of 3D Asset Interoperability using USD and glTF (SIGGRAPH 2025 BOF slides). https://metaverse-standards.org/wp-content/uploads/glTF-USD-BOF-SIGGRAPH-Vancouver-Aug25-FINAL.pdf
+  - 2. Khronos Group (2025). Building Bridges in 3D: AOUSD and Khronos Collaborate on OpenUSD and glTF Interoperability. https://www.khronos.org/blog/building-bridges-in-3d-aousd-and-khronos-collaborate-on-openusd-and-gltf-interoperability
+  - 3. Khronos Group / GamesBeat (2026). glTF gets KHR_interactivity extension submitted for ratification. https://gamesbeat.com/gltf-web-graphics-standard-files-for-gets-interactivity-extension/
+  - 4. Metaverse Standards Forum (2025). Portable Personal Content use case (MSF2025-PPC-001), incl. Metaverse Universal Manifest (MUM) v1.0. https://portal.metaverse-standards.org/document/dl/7984
+  - 5. Metaverse Standards Forum, 3D Asset Interoperability Working Group (2025). https://metaverse-standards.org/domain-groups/introduction-to-3d-asset-interoperability-working-group/
+
 - ### Provenance
   - sources:: Khronos Group glTF specification; Alliance for OpenUSD documentation; Metaverse Standards Forum working papers; Open Metaverse Interoperability Group GitHub; W3C Immersive Web WG
   - updated:: 2026-06-13

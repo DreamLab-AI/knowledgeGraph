@@ -395,6 +395,22 @@ public:: true
   - owl-class:: security:CryptographicSecurity
   - owl-role:: concept
 
+- ### Current Landscape (2026)
+  - On 13 August 2024 NIST finalised the first three post-quantum cryptography standards — FIPS 203 (ML-KEM, key encapsulation, from CRYSTALS-Kyber), FIPS 204 (ML-DSA, from CRYSTALS-Dilithium) and FIPS 205 (SLH-DSA, from SPHINCS+) — shifting the field from algorithm selection to migration; in March 2025 NIST added HQC as a backup KEM (draft standard expected 2026), and FIPS 206 (FN-DSA, from FALCON) was submitted for Commerce clearance in August 2025 for finalisation in 2026.
+  - Craig Gidney's May 2025 Google Quantum AI paper cut the estimated qubit count to factor RSA-2048 from ~20 million to fewer than 1 million noisy qubits (in under a week), and a February 2026 Iceberg Quantum "Pinnacle" architecture using quantum LDPC codes claimed under 100,000 physical qubits — sharply advancing perceived "Q-day" and hardening the harvest-now-decrypt-later (HNDL) threat model.
+  - Hybrid post-quantum TLS has reached real production scale: the X25519MLKEM768 key agreement is now default in recent Chrome, Edge, Firefox, OpenSSL, Go and Apple OSes, and Cloudflare reported roughly 38% of TLS 1.3 connections post-quantum-secured by March 2025; a March 2026 protocol survey found TLS and Signal leading, while IPsec and SSH have standardised mechanisms but lag in production adoption.
+  - Regulatory clocks are converging: NIST IR 8547 sets deprecation of RSA/ECC by 2030 and full disallowance by 2035; NSA's CNSA 2.0 requires new National Security System acquisitions to support ML-KEM-1024 / ML-DSA-87 from 1 January 2027, with mandatory adoption by 2031; the EU's 2025 Coordinated PQC Roadmap requires Member State strategies by 31 December 2026, and January 2026's COM(2026) 13 proposal writes an explicit PQC requirement into NIS2.
+  - Sector-specific pressure intensified in 2025-2026: DORA (applicable from 17 January 2025) and ESMA's 13 May 2026 risk analysis frame quantum as an "evolving cryptographic threat" for EU finance, PCI DSS 4.0 (Req. 12.3.3) already mandates a cryptographic inventory and migration plan, and FIPS 140-2 moves to historical status on 21 September 2026, forcing re-validation against FIPS 140-3.
+  - Enterprise readiness remains the key gap: a May 2025 survey of over 1,000 senior security managers found only 5% had quantum-safe encryption deployed while 81% reported libraries and HSMs were not PQC-ready, making cryptographic discovery/inventory and crypto-agility (algorithm swapping without architectural rework) the dominant 2026 frontier alongside unsettled approaches to post-quantum signatures and PKI.
+
+- ### References
+  - 1. National Institute of Standards and Technology (2024). Post-Quantum Cryptography Project (FIPS 203/204/205). https://csrc.nist.gov/projects/post-quantum-cryptography
+  - 2. Gidney, C. / Google Quantum AI (2025). How to factor 2048 bit RSA integers with less than a million noisy qubits. https://arxiv.org/html/2505.15917v1
+  - 3. Cloudflare (2025). The state of the post-quantum Internet in 2025. https://blog.cloudflare.com/pq-2025/
+  - 4. Cloud Security Alliance (2026). Strategic Post-Quantum Cryptography Migration: A Phased Enterprise Roadmap. https://labs.cloudsecurityalliance.org/research/strategic-post-quantum-cryptography-migration-enterprise-roa/
+  - 5. DLA Piper / ESMA (2026). Innovation Law Insights: Quantum Computing in Financial Markets and the EU PQC Roadmap. https://www.dlapiper.com/en-bh/insights/publications/innovation-law-insights/2026/innovation-law-insights-3-june-2026
+  - 6. Study of Post-Quantum status of Widely Used Protocols (2026). arXiv. https://arxiv.org/html/2603.28728v1
+
 - ### Provenance
   - sources:: NIST FIPS publications; IETF RFCs; ISO/IEC JTC 1/SC 27 standards; Handbook of Applied Cryptography (Menezes, van Oorschot, Vanstone); Introduction to Modern Cryptography (Katz & Lindell)
   - updated:: 2026-06-13

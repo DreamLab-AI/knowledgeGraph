@@ -283,6 +283,22 @@ public:: true
   - owl-class:: hugging-face-diffusers:Hugging Face Diffusers
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - The 2025 release cadence (v0.32 in December 2024 through v0.35 in October 2025) folded in the major diffusion-transformer wave: Black Forest Labs' FLUX.1 family (schnell/dev, plus Fill, Canny/Depth Control, Redux and the instruction-editing FLUX.1 Kontext), Stability's Stable Diffusion 3.5, Alibaba's Qwen-Image and Qwen-Image-Edit, and NVIDIA/THUDM contributions such as SANA and CogView3-plus.
+  - Diffusers has become the de-facto integration hub for open video generation: pipelines for Mochi-1, Allegro, LTX-Video (0.9.5+), HunyuanVideo, CogVideoX, Wan 2.1/2.2 (MoE) and Wan VACE for controllable video now ship in-library, with a companion "State of open video generation models" effort tracking their heavy memory footprints (HunyuanVideo ~60GB, LTX-Video ~18GB).
+  - Modular Diffusers, released experimentally in v0.35 and formalised as the headline feature of v0.37 (March 2026), lets developers compose pipelines from reusable, mix-and-match "pipeline blocks" rather than writing monolithic pipelines, complementing the classic DiffusionPipeline class.
+  - Quantisation and memory optimisation are now first-class: bitsandbytes (4-bit NF4), TorchAO, Quanto (fp8/int8/int4/int2) and GGUF backends, a unified PipelineQuantizationConfig, native GGUF CUDA kernels (~10% speed-up) and a checkpoint-to-GGUF conversion tool, driving community quantisations of Wan 2.2 and LTX from 60GB+ down to sub-10GB VRAM.
+  - The v0.38 line (around May 2026) broadened scope beyond image/video into audio and language diffusion, adding pipelines such as ACE-Step, LongCat-AudioDiT and the LLaDA2 discrete diffusion language models, alongside FLUX.2 decoder/inpaint support and modular support for LTX-2 and HunyuanVideo 1.5.
+  - Newest 2026 arrivals include the compact FLUX.2 [Klein] (unified generation/editing, sub-second inference on ~13GB VRAM), Tongyi's Z-Image (Turbo and full Omni base), Qwen-Image-Layered for RGBA layer decomposition, audio-conditioned LTX-2, and NVIDIA Cosmos Predict2.5/Transfer2.5 world-foundation models, with the library made fully compatible with Transformers v5.
+  - Open challenges as of 2026 centre on the escalating VRAM cost of frontier video models (80GB+ for full-quality Wan 2.2 / LTX-2.3), fragmentation between Diffusers-native and ComfyUI/GGUF ecosystems, licensing and safety governance around powerful editing models like FLUX.1 Kontext, and stabilising the still-evolving Modular Diffusers API.
+
+- ### References
+  - 1. Hugging Face (2025). Diffusers 0.35.0: Qwen Image pipelines, Flux Kontext, Wan 2.2, and more (Releases). https://github.com/huggingface/diffusers/releases
+  - 2. Hugging Face (2026). Diffusers 0.37.0: Modular Diffusers, new image and video pipelines (release notes). https://newreleases.io/project/github/huggingface/diffusers/release/v0.37.0
+  - 3. Releasebot (2026). diffusers by Hugging Face — Release Notes (0.32–0.38, incl. LLaDA2, FLUX.2, GGUF kernels). https://releasebot.io/updates/huggingface/diffusers
+  - 4. Hugging Face (2025). State of open video generation models in Diffusers. https://huggingface.co/blog/video_gen
+  - 5. Milo C. (2026). 2026 Complete Guide: Top Text-to-Video Models on HuggingFace (GGUF quantisation of Wan 2.2). https://dev.to/czmilo/2026-complete-guide-top-text-to-video-models-on-huggingface-49p2
+
 - ### Provenance
   - sources:: Hugging Face Diffusers documentation (huggingface.co/docs/diffusers); Ho et al. 2020 DDPM; Rombach et al. 2022 Latent Diffusion Models; Peebles & Xie 2023 DiT
   - updated:: 2026-06-13

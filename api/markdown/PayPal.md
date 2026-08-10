@@ -330,6 +330,23 @@ public:: true
   - [[Decentralised Finance]] protocols represent a structural long-term alternative to intermediated payment networks; PYUSD is PayPal's hedge into this space.
   - Regional alternatives (Alipay, WeChat Pay, M-Pesa, UPI) dominate outside North America and Europe, limiting PayPal's total addressable market in high-growth emerging economies.
 
+- ### Current Landscape (2026)
+  - Under CEO Alex Chriss, PayPal reorganised in April 2026 into a three-business model — Checkout Solutions & PayPal, Consumer Financial Services & Venmo, and a new Payment Services & Crypto division that groups the PYUSD stablecoin with Braintree and merchant processing; full-year 2025 total payment volume reached USD 1.79 trillion (up 7%) across 439 million active accounts.
+  - The PYUSD stablecoin (issued by Paxos, distributed by PayPal) went global, expanding from a US/UK product to 70 markets on 17 March 2026; market cap peaked above USD 4 billion in Q1 2026 before easing to roughly USD 2.7 billion by early August, and PayPal advertises a variable ~4% rewards rate on balances held in the PayPal and Venmo apps.
+  - PayPal launched PayPal World on 23 July 2025 — a cloud-native cross-border interoperability platform whose founding partners (Mercado Pago, NPCI International/UPI, Tenpay Global, PayPal and Venmo) span nearly two billion users; it makes PayPal and Venmo interoperable for the first time and, from 2026, lets Venmo users pay at global PayPal-accepting merchants.
+  - PayPal is building for agentic commerce, backing Google's Agent Payments Protocol (AP2, announced 16 September 2025, 60+ collaborators including Mastercard, Coinbase and Adyen) alongside its open-source Agent Toolkit, and partnering with Google, OpenAI and Perplexity on agent-driven checkout.
+  - PYUSD deepened its multi-chain and DeFi footprint: native issuance on Polygon (9 July 2026) via the Open Money Stack, availability on Arbitrum and Stellar, a LayerZero cross-chain variant reaching a dozen-plus chains, plus payout integrations including YouTube creator payouts (January 2026) and Visa Direct via BVNK.
+  - Regulation crystallised with the US GENIUS Act, enacted July 2025, which created a federal stablecoin framework and designates PayPal a digital-asset service provider; Paxos converted to a national trust charter under OCC supervision in December 2025, and ongoing OCC rulemaking is a live risk to the PYUSD rewards programme.
+  - Open challenges as of 2026: sustaining branded-checkout and transaction-margin growth against Apple Pay, Shopify/Shop Pay and Stripe; the fact that under 1% of stablecoin volume is currently used for payments rather than trading; competing agentic-commerce standards (Stripe/OpenAI's ACP and Coinbase's x402 versus AP2); and converting PYUSD distribution into durable everyday-payment usage.
+
+- ### References
+  - 1. PayPal Holdings (2026). PayPal Brings PayPal USD to Users Across 70 Markets. https://investor.pypl.com/news-and-events/news-details/2026/PAYPAL-BRINGS-PAYPAL-USD-TO-USERS-ACROSS-70-MARKETS/default.aspx
+  - 2. PayPal (2025). Introducing PayPal World: a global platform connecting the world's largest payment systems and digital wallets. https://about.pypl.com/news-details/2025/Introducing-PayPal-World-a-global-platform-connecting-the-worlds-largest-payment-systems-and-digital-wallets-starting-with-interoperability-to-PayPal-and-Venmo/default.aspx
+  - 3. Cryptonomist (2026). PayPal PYUSD Expansion Advances with New Crypto Division. https://en.cryptonomist.ch/2026/08/03/paypal-pyusd-expansion/
+  - 4. PayPal Developer (2025). Agent Payments Protocol: Building Verifiable Trust for Agentic Commerce. https://developer.paypal.com/community/blog/PayPal-Agent-Payments-Protocol/
+  - 5. PayPal Holdings / SEC (2025). PYPL Q3 2025 Earnings Release. https://www.sec.gov/Archives/edgar/data/1633917/000163391725000194/pypl3q-25earningsrelease.htm
+  - 6. StockTitan (2026). PayPal (NASDAQ: PYPL) 10-K details 2025 growth, TPV, GENIUS Act and risks. https://www.stocktitan.net/sec-filings/PYPL/10-k-pay-pal-holdings-inc-files-annual-report-0d7a9cc1b582.html
+
 - ### Provenance
   - sources:: Wikipedia (PayPal), PayPal Investor Relations, Paxos PYUSD whitepaper, CFPB 2022 BNPL report, PCI Security Standards Council
   - updated:: 2026-06-13

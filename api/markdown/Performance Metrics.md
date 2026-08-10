@@ -313,6 +313,22 @@ public:: true
   - **OpenTelemetry** — vendor-neutral observability framework defining trace, metric, and log data models; the de facto standard for [[Observability]] instrumentation in production ML systems.
   - **Prometheus / OpenMetrics** — open-source metric exposition and collection standards widely used in Kubernetes-based [[MLOps]] deployments.
 
+- ### Current Landscape (2026)
+  - MLPerf Inference v5.1 (results published 9 September 2025) shifted system-level metrics toward generative and reasoning workloads, adding the suite's first reasoning benchmark (DeepSeek-R1), a small-LLM benchmark (Llama 3.1 8B, replacing GPT-J), and Whisper Large V3 for speech, with a record 27 submitters.
+  - Latency has been formalised into standard serving metrics: Time To First Token (TTFT) and Time Per Output Token (TPOT) reported per-percentile, with v5.1 introducing an aggressive interactive scenario (TTFT under 0.5s, TPOT under 30ms) alongside conversational targets, reflecting agent and coding-assistant use.
+  - MLCommons broadened measurement to the edge with MLPerf Client v1.0 (July 2025), standardising on-device LLM throughput and latency across AMD, Intel, NVIDIA, Qualcomm and Apple accelerators via runtimes such as ONNX Runtime GenAI, OpenVINO, Ryzen AI and MLX.
+  - Static accuracy benchmarks are visibly saturating: the Stanford HAI AI Index 2025 highlights that frontier systems still score only single digits on Humanity's Last Exam (~8.8%) and FrontierMath (~2%), pushing evaluation toward harder, long-context suites (Stanford's HELM Long Context leaderboard, HELMET, RULER).
+  - Benchmark contamination has become the central reliability problem: a 2026 systematic review of 55 studies (GEM/aclanthology) reports inflation estimates of roughly 6-40% and finds no detection method reliable across contamination tiers, motivating contamination-resistant and dynamically refreshed evaluations (MathArena, SWE-bench Live, LLMEval-3).
+  - Human-preference and model-judged metrics now sit alongside traditional scores: LMArena (formerly LMSYS Chatbot Arena) had passed ~5 million pairwise votes by January 2026, while LLM-as-Judge methods reach 80-90% agreement with humans at a fraction of the cost, though position bias and overlapping confidence intervals undermine naive leaderboard rankings.
+  - Open frontier challenges as of 2026 include harness sensitivity (identical weights differing 10-20 points on SWE-bench depending on scaffold), construct validity, and the move from single-metric accuracy toward multi-axis reporting that folds in latency, cost, efficiency (EffiBench-X), safety and calibration.
+
+- ### References
+  - 1. MLCommons (2025). MLPerf Inference v5.1 Results. https://mlcommons.org/2025/09/mlperf-inference-v5-1-results/
+  - 2. MLCommons (2025). MLPerf Client v1.0: A New Standard for AI PC Benchmarking. https://mlcommons.org/2025/07/mlperf-client-v1-0/
+  - 3. Stanford HAI (2025). AI Index Report 2025, Chapter 2: Technical Performance. https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter2_final.pdf
+  - 4. Nourbakhsh, E. et al. (2026). Are LLM Benchmarks Already Contaminated? A Systematic Literature Review. https://aclanthology.org/2026.gem-main.50/
+  - 5. Stanford CRFM (2025). HELM Long Context Leaderboard. https://crfm.stanford.edu/2025/09/29/helm-long-context.html
+
 - ### Provenance
   - sources:: MLCommons MLPerf specification; Stanford HELM benchmark documentation; ISO/IEC 25010:2023; EU AI Act (2024); NIST AI Risk Management Framework (2023)
   - updated:: 2026-06-13

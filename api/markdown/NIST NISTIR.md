@@ -312,6 +312,22 @@ public:: true
   - **NISTIR 8276** — Key Practices in Cyber Supply Chain Risk Management; a precursor to [[Supply Chain Risk Management]] guidance in SP 800-161r1
   - **NISTIR 8427** — Discussion of the Circuit Complexity of Quantum Circuits; illustrates the series' reach into fundamental [[Quantum Computing]] research
 
+- ### Current Landscape (2026)
+  - The series was rebranded from "NISTIR" to "NIST IR" (NIST Interagency or Internal Report) under the reorganised NIST Technical Series, though legacy NISTIR numbers and DOIs (10.6028/NIST.IR.*) persist across older and superseding documents.
+  - Post-quantum transition dominated recent output: IR 8547, "Transition to Post-Quantum Cryptography Standards" (initial public draft, 12 November 2024), set out NIST's migration approach, including deprecation of quantum-vulnerable algorithms after 2030 and disallowance by 2035.
+  - IR 8545 (final, 11 March 2025) reported the fourth-round PQC evaluation and accompanied the selection of HQC (Hamming Quasi-Cyclic) as a fifth algorithm for standardisation; IR 8610 (final, 14 May 2026) advanced nine candidates to the third round of the Additional Digital Signature Schemes process.
+  - A wave of CSF 2.0 alignment landed in late 2025: on 18 December 2025 NIST reissued the enterprise-risk IR 8286 series (8286r1, 8286Ar1, 8286Cr1), alongside IR 8374 Rev 1 (Ransomware Risk Management CSF 2.0 Community Profile) and IR 8484r1 (Safeguarding International Science research-security framework, November 2025).
+  - Cyber-physical and sector-specific IRs expanded scope: IR 8259r1 broadened IoT guidance from "devices" to "products" (2025 drafts), while draft IR 8546 introduced a CSF profile for semiconductor manufacturing and IR 8467 covered genomic-data cybersecurity and privacy.
+  - The programme context is captured in the FY 2025 Annual Report (SP 800-238, May 2026), which frames IR outputs across cryptography, cybersecurity and AI, hardware/software security and risk management, reflecting NIST's post-2024 pivot toward AI trustworthiness (Dioptra, COSAiS) and crypto-agility.
+  - Open challenges as of 2026 centre on driving real-world PQC migration to the 2030/2035 milestones across federal agencies and industry, sustaining the pace of CSF 2.0 re-profiling, and extending IR guidance to fast-moving AI-security and supply-chain assurance domains.
+
+- ### References
+  - 1. National Institute of Standards and Technology (2025). NIST IR 8545: Status Report on the Fourth Round of the NIST Post-Quantum Cryptography Standardization Process. https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8545.pdf
+  - 2. NIST CSRC (2024). NIST IR 8547 (Initial Public Draft): Transition to Post-Quantum Cryptography Standards. https://csrc.nist.gov/pubs/ir/8547/ipd
+  - 3. NIST Cybersecurity Framework (2025). Updates Archive (IR 8286 series, IR 8374 Rev 1, IR 8467). https://www.nist.gov/cyberframework/updates-archive
+  - 4. Strouse, G.F. et al. / NIST (2025). NIST IR 8484r1: Safeguarding International Science — Research Security Framework. https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8484r1.pdf
+  - 5. O'Reilly, P. (Ed.) / NIST (2026). NIST SP 800-238: Fiscal Year 2025 Annual Report for NIST Cybersecurity and Privacy Program. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-238.pdf
+
 - ### Provenance
   - sources:: NIST PUBS portal (nvlpubs.nist.gov), NIST CSRC (csrc.nist.gov), Federal Register notices referencing NISTIRs, NIST AI RMF supporting documentation
   - updated:: 2026-06-13

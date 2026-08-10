@@ -261,6 +261,23 @@ public:: true
   - **Shared database integration**: Systems share state via a common database. Tightly couples schemas and ownership, creating upgrade and permission risk. Anti-pattern in modern distributed design.
   - **File-based batch transfer**: SFTP/EDI file drops between systems. Still prevalent in legacy supply-chain and finance contexts but lacks real-time capability and observability.
 
+- ### Current Landscape (2026)
+  - The Model Context Protocol (MCP), introduced by Anthropic in November 2024, has become the dominant shift in API integration, reframing APIs from application-to-application plumbing into agent-callable capabilities; Anthropic donated MCP to the Agentic AI Foundation under the Linux Foundation on 9 December 2025, removing single-vendor governance.
+  - Gartner projects that by end-2026 roughly 75% of API gateway vendors and 50% of iPaaS vendors will natively support MCP, up from a near-zero 2024 baseline, with integration platforms repositioning themselves as the governed "enterprise MCP layer" between AI agents and systems of record.
+  - Major vendors shipped agent-ready features through 2025: MuleSoft added MCP and Agent-to-Agent (A2A) support plus an MCP Connector in Anypoint (June 2025), Postman launched Agent Mode and the first MCP Server Network at POST/CON (June 2025), Google Apigee's Gemini Code Assist reached GA (18 June 2025), and Kong rolled out its AI Gateway (May 2025).
+  - Core specification standards consolidated: OpenAPI 3.1 (fully aligned with JSON Schema 2020-12) is the settled de-facto REST baseline with 3.2 in progress, complemented by the OpenAPI Initiative's Arazzo (workflow sequencing) and Overlay specs; AsyncAPI 3.0 covers event-driven APIs and the GraphQL September 2025 edition landed as the first spec revision since October 2021 alongside settled Federation v2.
+  - The iPaaS market is projected to grow from about $19.15bn in 2026 to $108.76bn by 2034 (CAGR ~24.2%), with AI-native agentic capability now the primary differentiator between platforms rather than raw connector count.
+  - Emerging integration architecture is coalescing around a split stack: bulk, scheduled and large-payload workloads stay in classical iPaaS while conversational, real-time, agent-driven actions move to MCP, often paired with Unified-API providers for 10-100+ SaaS endpoints and A2A for early-stage multi-agent delegation.
+  - Open challenges as of 2026 centre on authorisation and governance for autonomous agents, just-in-time and least-privilege access, MCP server discovery, rate limiting and cost control for AI-driven traffic, and ROI pressure, with Gartner cautioning that more than 40% of agentic AI projects may be cancelled by 2027 over cost and value concerns.
+
+- ### References
+  - 1. Zuplo (2026). Gartner: 75% of API Gateways Will Integrate MCP by 2026. https://zuplo.com/blog/gartner-75-percent-api-gateways-mcp
+  - 2. Albato (2025). Model Context Protocol (MCP): 2026 Guide to How It Works. https://albato.com/blog/publications/model-context-protocol_guide
+  - 3. TS2 (2025). API Management and Integration Platforms Mid-2025: Key Innovations, Deals and Trends. https://ts2.tech/en/api-management-and-integration-platforms-mid-2025-key-innovations-deals-and-trends/
+  - 4. NeosAlpha (2026). Enterprise Integration Trends to Watch in 2026: AI, Agents and the MCP Layer. https://neosalpha.com/blogs/top-enterprise-integration-trends/
+  - 5. Youngju.dev (2026). API Schema Landscape 2026 — JSON Schema, OpenAPI 3.1, AsyncAPI, GraphQL, gRPC Deep Dive. https://www.youngju.dev/blog/culture/2026-05-14-api-schema-2026-json-schema-openapi-3-1-asyncapi-graphql-grpc-deep-dive.en
+  - 6. Nordic APIs (2025). 10 AI-Driven API Economy Predictions for 2026. https://nordicapis.com/10-ai-driven-api-economy-predictions-for-2026/
+
 - ### Provenance
   - sources:: Fielding (2000) REST dissertation; IETF RFC 6749 (OAuth 2.0); OpenAPI Initiative; AsyncAPI specification; CNCF landscape; AWS, Azure, GCP integration documentation.
   - updated:: 2026-06-13

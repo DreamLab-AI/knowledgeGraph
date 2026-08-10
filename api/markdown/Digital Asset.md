@@ -328,6 +328,23 @@ alias:: Digital-Asset, DigitalAsset
   - domain:: blockchain
   - maturity:: established
 
+- ### Current Landscape (2026)
+  - Digital-asset policy consolidated into hard law in 2025: the US GENIUS Act (signed 18 July 2025) established the first federal framework for payment stablecoins, mandating 1:1 high-quality-liquid-asset reserves, monthly reserve disclosures and licensed issuers, with OCC implementing rulemakings (NPRM issued 2 March 2026) and a January 2027 deadline to bring the regime into force.
+  - The EU's MiCA regime moved from transition to full enforcement, with the transitional window for crypto-asset service providers closing 30 June 2026; national regulators such as Spain's CNMV began policing the cut-off, and Europe saw a rotation toward MiCA-compliant e-money tokens and asset-referenced tokens.
+  - Tokenisation of real-world assets scaled from experiment to institutional infrastructure: on-chain RWA value (excluding stablecoins) rose from roughly $5.8bn in January 2025 to around $30-33bn by mid-2026, with tokenised US Treasuries the leading category and fiat-backed stablecoins separately exceeding $220bn.
+  - BlackRock and Securitize's BUIDL fund became the flagship tokenised Treasury product, operating across eight chains (Ethereum, Solana, Polygon, Avalanche, Arbitrum, Optimism, Aptos, BNB Chain); Franklin Templeton (BENJI), Ondo (USDY/OUSG), Fidelity (FDIT, launched September 2025) and Circle (USYC) round out a market now dominated by regulated asset managers.
+  - Tokenised equities emerged as a new front from June 2025: Backed Finance's xStocks (distributed via Kraken and Bybit on Solana), Robinhood's EU-only stock tokens on Arbitrum (with a planned Robinhood Chain L2), Dinari's US broker-dealer-registered dShares, and Coinbase's 1:1-backed tokenised shares (2026) — though almost all remain geofenced out of the US pending an SEC framework.
+  - Other jurisdictions advanced parallel regimes: Hong Kong's Stablecoins Ordinance took effect 1 August 2025, the UAE built a layered federal/free-zone approach, and the UK's Cryptoassets Regulations 2026 (SI 2026/102) set a phased FCA-led regime with full application expected 25 October 2027.
+  - Open challenges as of 2026 include fragmented cross-border stablecoin and tokenised-deposit rules, heavy concentration (US Treasury products account for roughly 80% of liquid RWA value), thin secondary liquidity beyond Treasuries, and unresolved US market-structure questions pending the CLARITY Act and SEC action on tokenised securities.
+
+- ### References
+  - 1. State Street (2026). Digital Digest: Digital asset regulation accelerates in 2026. https://www.statestreet.com/us/en/insights/digital-digest-march-2026-regulations
+  - 2. Chainalysis (2025). 2025 Crypto Regulatory Round-Up. https://www.chainalysis.com/blog/2025-crypto-regulatory-round-up/
+  - 3. Latham & Watkins (2026). US Crypto Policy Tracker: Regulatory Developments. https://www.lw.com/en/us-crypto-policy-tracker/regulatory-developments
+  - 4. CoinGecko (2025). 2025 RWA Report. https://assets.coingecko.com/reports/2025/CoinGecko-2025-RWA-Report.pdf
+  - 5. Cointelegraph via TradingView (2026). Tokenized RWA market grows 420% since 2025 on regulatory clarity, access. https://www.tradingview.com/news/cointelegraph:e1463c753094b:0-tokenized-rwa-market-grows-420-since-2025-on-regulatory-clarity-access/
+  - 6. Eco (2026). Robinhood Tokenized Stocks: What's Live and How It Works. https://eco.com/support/en/articles/15083160-robinhood-tokenized-stocks-what-s-live-and-how-it-works
+
 - ### Provenance
   - sources:: established knowledge; MiCA Regulation (EU) 2023/1114; FATF Guidance on Virtual Assets 2021; BIS Working Paper on Tokenisation
   - updated:: 2026-06-13

@@ -383,6 +383,23 @@ alias:: ModelArchitecture
   - Complexity vs interpretability
   - Training vs inference
 
+- ### Current Landscape (2026)
+  - Mixture-of-Experts (MoE) has become the default frontier architecture: by 2025-2026 essentially every major open-weight flagship is sparse, including DeepSeek-V3/R1 (671B total / 37B active), Llama 4 Maverick (400B / 17B, 128 routed experts), Qwen3-235B-A22B, Mistral Large 3, Kimi K2 and OpenAI's gpt-oss-120b, with NVIDIA noting the top ten open models all use MoE.
+  - Attention itself is being restructured for long-context economics: DeepSeek's V3.2 introduced DeepSeek Sparse Attention (DSA), subsequently adopted by Zhipu's GLM-5 (released February 2026), building on Multi-head Latent Attention (MLA) which compresses the KV cache, while Llama 4 uses interleaved-RoPE (iRoPE) to push context towards 10M tokens.
+  - The Transformer-versus-SSM debate resolved into hybrids rather than replacement: production stacks now keep a minority of attention layers and swap the rest for Mamba-2 recurrence, as in NVIDIA's Nemotron-H (~3x faster inference), IBM's Granite 4.0 (>70% lower memory, ~2x faster serving), AI21's Jamba and TII's Falcon-H1.
+  - State-space modelling advanced at the research frontier with Mamba-3 (Princeton's Goomba Lab, ICLR 2026 Oral, arXiv 2603.15569), adding complex-valued state updates and a MIMO formulation that matches Mamba-2 perplexity at half the state size, alongside RWKV-7 "Goose" from the RNN side.
+  - New frontier releases treat long-context efficiency as a first-class architectural objective: DeepSeek-V4-Pro (April 2026, 1.6T total / ~49B active, native 1M context) combines compressed sparse attention with FP4 expert training, reaching roughly 27% of V3.2's per-token FLOPs and 10% of its KV cache at 1M context.
+  - Diffusion Transformers (DiT) consolidated as the backbone for generative image and video systems such as Sora 2 and Veo, keeping the Transformer central outside pure language modelling.
+  - Open challenges as of 2026 include the SSM in-context recall gap (exact long-range retrieval remains weak versus attention), MoE routing stability and load balancing, and the serving-infrastructure shift to data-parallel attention plus expert-parallel MoE (e.g. vLLM wide expert-parallelism) needed to run these sparse trillion-parameter models economically.
+
+- ### References
+  - 1. AcingAI (2026). State Space Models in 2026: The Recall Gap, and What Shipped Instead. https://acingai.com/articles/state-space-models-2026
+  - 2. Birjob (2026). Why Every Frontier Model Uses MoE (And What It Means for Self-Hosting). https://www.birjob.com/blog/mixture-of-experts-won-frontier-models-self-hosting
+  - 3. Largo.dev (2026). 2026 Frontier LLM Architectures Compared: MLA, iRoPE, mHC. https://largo.dev/articles/frontier-llm-architectures-2026/
+  - 4. TensorOps (2026). LLM Mixture of Experts Explained — A 2026 Field Guide. https://tensorops.ai/blog/what-is-mixture-of-experts-llm
+  - 5. AI Weekly (2026). Frontier Research: The Next Architecture Is Not Transformer (Week of April 19-25, 2026). https://aiweekly.co/issues/frontier-research-week-of-april-19-25-2026
+  - 6. Monarch Inti Teknologi (2026). MoE Transformer Architectures and Training Innovations in Frontier LLMs. https://monarchintiteknologi.com/moe-transformer-architectures-and-training-innovations-in-frontier-llms/
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

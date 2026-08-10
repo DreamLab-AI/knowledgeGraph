@@ -293,6 +293,23 @@ public:: true
   - The `OP_CAT` re-enablement debate (active 2024–2025, formalised as BIP 347) centres on whether concatenation of stack elements opens excessive attack surface or provides necessary covenant expressiveness. The outcome will shape Bitcoin's programmability trajectory through the late 2020s.
   - Unlike the [[Ethereum Virtual Machine]], which permits arbitrary computation bounded only by gas, Bitcoin Script's bounded opcode set means its security properties can be fully enumerated and verified through [[Formal Verification]] techniques, an active area of academic research.
 
+- ### Current Landscape (2026)
+  - The dominant 2024-2026 theme is the covenant debate: proposals to extend Bitcoin Script with opcodes that constrain not just who or when, but where a UTXO can be spent. As of mid-2026 no covenant opcode has been merged into Bitcoin Core or activated on mainnet, though several are live on the Bitcoin Inquisition signet.
+  - OP_CAT (BIP-347, Ethan Heilman and Armin Sabouri) was assigned its BIP number in April 2024, activated on signet via Bitcoin Inquisition 25.2 on 30 April 2024, and reached "Complete" (finalised) specification status on 1 March 2026 — but no mainnet activation client has been released.
+  - OP_CHECKTEMPLATEVERIFY (CTV, BIP-119, Jeremy Rubin) got its first concrete activation client in early 2026, with parameters proposing a 30 March 2026 signalling start, a 30 March 2027 timeout and a 90% miner threshold (1,815 of 2,016 blocks); as of late May 2026 miner signalling stood at 0%.
+  - Bundled approaches have become the frontrunners: CTV+CSFS (BIP-119 + BIP-348, with CHECKSIGFROMSTACKVERIFY merged into Inquisition in November 2024) is widely seen as the likely first soft fork, packaged by Brandon Black's LNHANCE (adding OP_INTERNALKEY / BIP-349) to target Lightning use cases such as LN-Symmetry, timeout trees and PTLCs.
+  - The proposal field kept churning: BIP-345 OP_VAULT (O'Beirne, Sanders) was formally withdrawn in May 2025, superseded by Salvatore Ingala's more general OP_CHECKCONTRACTVERIFY (BIP-443); and in March 2026 a competing Taproot-native bundle, BIP-446 (OP_TEMPLATEHASH) plus BIP-448, emerged from Greg Sanders, Antoine Poinsot and Steven Roose.
+  - Rusty Russell's "Great Script Restoration" (Bitcoin-Dev, October 2025) proposes a tapscript v2 that reinstates opcodes disabled in 2010 behind a new "varops" validation-cost budget, adds a general introspection opcode OP_TX, and introduces OP_MULTI and OP_SEGMENT — a broader alternative to narrowly scoped covenant opcodes.
+  - A parallel track sidesteps consensus change entirely: BitVM2 needs no soft fork and is already in production, powering Citrea's mainnet bridge which launched in January 2026, demonstrating covenant-like enforcement via fraud proofs rather than new script opcodes.
+  - Open challenges as of 2026 include the lack of activation consensus (the "bundle problem" of overlapping CTV+CSFS, LNHANCE and BIP-446+448 proposals), a growing institutional camp arguing Bitcoin's consensus rules should be treated as effectively immutable, and forward-looking work such as Winternitz signatures over OP_CAT for quantum resistance at roughly 2,000 vbytes per input.
+
+- ### References
+  - 1. Spark (2026). Bitcoin Covenant Activation: Navigating the Path Forward After Years of Debate. https://www.spark.money/research/bitcoin-covenant-activation-path-forward
+  - 2. Spark (2026). OP_CAT and the Great Covenant Debate: Bitcoin's Most Contentious Upgrade. https://www.spark.money/research/bitcoin-op-cat-covenant-debate
+  - 3. Bitcoin Optech (2025). Newsletter #374 — Draft BIPs for Script Restoration (tapscript v2). https://bitcoinops.org/en/newsletters/2025/10/03/
+  - 4. Bitcoin Optech (2025). Newsletter #385: 2025 Year-in-Review Special. https://bitcoinops.org/en/newsletters/2025/12/19/
+  - 5. BlockEden (2026). Bitcoin's Covenant Renaissance: How OP_CTV, LNHANCE, OP_CAT, and BitVM2 Could Reshape Bitcoin. https://blockeden.xyz/blog/2026/04/21/bitcoin-covenant-renaissance-op-ctv-lnhance-cat-bitvm2/
+
 - ### Provenance
   - sources:: Satoshi Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System (2008); Bitcoin Core documentation; BIP 11, 16, 65, 112, 141, 340, 341, 342; Bitcoin Optech newsletter series.
   - updated:: 2026-06-13

@@ -329,6 +329,23 @@ public:: true
   - owl-class:: infrastructure:HardwareComponent
   - owl-role:: concept
 
+- ### Current Landscape (2026)
+  - The defining hardware-component shift of 2024-2026 is that memory and interconnect fabrics, rather than raw FLOPS, now gate AI system performance; NVIDIA's Vera Rubin platform (announced at Computex 2024, in full production from CES 2026) is the first accelerator to ship HBM4, pairing 336 billion transistors on TSMC 3nm with up to 288GB of HBM4 at ~22 TB/s (roughly 2.75x Blackwell's HBM3e bandwidth) and NVLink 6 at 3.6 TB/s per GPU.
+  - HBM4 moved from sampling to volume production: Samsung announced HBM4 mass production in February 2026 (1c DRAM, 4nm logic base die, 11.7 Gbps), SK hynix and Micron ramped 12-high 36GB/48GB parts, and SK hynix shipped 12-layer 48GB HBM4E samples in June 2026 with over 20% better power efficiency; HBM4 doubles the interface to 2,048 bits per stack.
+  - Component competition intensified: AMD's Instinct MI350 (CDNA 4, early 2025) and the MI400/MI455X (2026, 432GB HBM4, ~19.6 TB/s) contest NVIDIA on memory capacity, while custom hyperscaler ASICs, Google TPU v7 Ironwood, AWS Trainium 3, Microsoft Maia 200 and Meta MTIA, are projected to grow ~44.6% in 2026 versus ~16% for merchant GPUs as inference overtakes training as the dominant workload.
+  - Chiplet standardisation matured with the UCIe 3.0 die-to-die specification released 5 August 2025 (48 and 64 GT/s, up to ~4 Tbps bidirectional across 16 lanes, 100mm sideband reach), building on UCIe 2.0 (August 2024, adding 3D hybrid-bonding support); GUC demonstrated the first 32G UCIe PHY silicon on TSMC N3P and CoWoS in March 2025.
+  - Memory-fabric components advanced in parallel: CXL 3.x cache-coherent pooling reached rack-scale multi-host sharing and CXL 4.0 (doubled bandwidth) was demonstrated around SC25, positioning AI memory as a layered stack (HBM at the accelerator, DDR5/LPDDR at the host, CXL for expansion, NAND for storage).
+  - Advanced packaging (TSMC CoWoS-L interposers, silicon interposers and 3D stacks) became the binding constraint, with foundries integrating HBM ever closer to logic chiplets; Deloitte projects 2026 semiconductor sales near US$975 billion with generative-AI chips approaching US$500 billion of that.
+  - Open challenges as of 2026 include a severe memory supply squeeze, HBM demand cannibalising DDR4/DDR5 supply with consumer memory prices up roughly 4x between September and November 2025, alongside CoWoS packaging bottlenecks, per-GPU power and cooling budgets climbing toward 1,800-2,300W (Rubin) and mandatory full liquid cooling at rack scale.
+
+- ### References
+  - 1. NVIDIA Developer Blog (2026). Inside the NVIDIA Vera Rubin Platform: Six New Chips, One AI Supercomputer. https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/
+  - 2. Deloitte Insights (2026). 2026 Global Semiconductor Industry Outlook. https://www.deloitte.com/us/en/insights/industry/technology/technology-media-telecom-outlooks/semiconductor-industry-outlook.html
+  - 3. Aetrix Electronics (2026). How AI Servers Are Driving HBM, DDR5 and CXL Demand. https://www.aetrixelec.com/blog/memory-chip-shortage-ai-servers-hbm-ddr5-cxl
+  - 4. UCIe Consortium (2025). UCIe Specifications (2.0 and 3.0). https://www.uciexpress.org/specifications
+  - 5. Introl (2026). The TSMC Bottleneck: Custom Silicon Inflection 2026. https://introl.com/blog/custom-silicon-inflection-2026-hyperscaler-asics-nvidia-gpu
+  - 6. Mordor Intelligence (2026). AI Accelerator Memory Market Size, Share & 2031 Growth Trends. https://www.mordorintelligence.com/industry-reports/ai-accelerator-memory-market
+
 - ### Provenance
   - sources:: IEEE Standards Association; JEDEC; PCI-SIG; IPC International; Open Compute Project
   - updated:: 2026-06-13

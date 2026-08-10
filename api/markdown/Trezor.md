@@ -346,6 +346,22 @@ public:: true
   - **Seed Phrase Storage**: The security of a Trezor wallet ultimately depends on physical security of the BIP39 seed phrase; metal backup solutions ([[Cryptosteel]], [[Bilodeau Plates]]) are recommended for durable offline storage.
   - **Passphrase as Second Factor**: The BIP39 passphrase creates a hidden wallet unrecoverable without both the seed and the passphrase; it provides protection even if the physical device and seed phrase are simultaneously compromised.
 
+- ### Current Landscape (2026)
+  - Trezor (SatoshiLabs) launched the Trezor Safe 7 flagship in October 2025 (shipping from 23 November 2025, $249/€249), its first wallet with Bluetooth Low Energy, Qi2 wireless charging, a 2.5" colour touchscreen and an anodised aluminium unibody.
+  - The Safe 7 introduced a dual-secure-element, three-chip architecture: the TROPIC01 chip (built with sister company Tropic Square) alongside an NDA-free EAL6+ Infineon OPTIGA Trust M and an STMicro STM32U5 MCU, marketed as the first consumer hardware wallet with a fully transparent, auditable secure element.
+  - It is positioned as the first quantum-ready hardware wallet, using post-quantum signatures (SLH-DSA-128 for device integrity, ML-DSA-44 for signing) to secure the boot process, firmware updates and device authentication.
+  - On 3 June 2026 Trezor and Tropic Square disclosed a TROPIC01 vulnerability found by rival Ledger's Donjon team, who used a 1064 nm laser fault-injection attack on a decapsulated chip to bypass firmware signature verification; Tropic Square then found a further path affecting the MAC-and-Destroy PIN mechanism.
+  - The flaw affects all production TROPIC01 chips in the field and cannot be fully patched by firmware; a hardened silicon revision is targeted for late 2026 with full technical details expected spring 2027, while disabling MAINTENANCE mode mitigates the primary entry point. Trezor maintains user funds are not at risk given the layered design and advises no user action.
+  - Phishing off the back of a January 2024 third-party support-portal breach remains the live threat: roughly 66,000 support contacts were exposed, and in June 2025 attackers abused Trezor's contact form and auto-reply system to send convincing fake support emails, with a purported 470k-record "leads" database later touted for sale.
+  - Open challenges as of 2026 include hardening open secure-element silicon against invasive physical attacks, sustaining supply of the quantum-ready and BLE-equipped Safe 7 amid geo-staggered availability, and countering seed-phrase phishing that increasingly leans on leaked contact data rather than device compromise.
+
+- ### References
+  - 1. Trezor / SatoshiLabs (2025). Meet Trezor Safe 7: the first quantum-ready hardware wallet with a next-gen Secure Element chip. https://trezor.io/blog/news/meet-trezor-safe-7-the-first-quantum-ready-hardware-wallet-with-a-next-gen-secure-element-chip
+  - 2. CryptoSlate (2026). Trezor Safe 7 Review 2026: Open Secure Element, Real Price. https://cryptoslate.com/crypto-wallets/trezor-safe-7-review/
+  - 3. Trezor (2026). Trezor response: TROPIC01 chip disclosure (no impact to your funds). https://trezor.io/blog/news/Trezor-response-TROPIC01-chip-disclosure-no-impact-to-your-funds
+  - 4. The Block (2026). Ledger researchers find flaw in chip used by Trezor Safe 7; Trezor says user funds safe. https://www.theblock.co/news/business/2026-06-03-ledger-researchers-find-flaw-in-chip-used-by-trezor-safe-7-trezor-says-user-funds-safe-403492
+  - 5. BleepingComputer (2025). Trezor's support platform abused in crypto theft phishing attacks. https://www.bleepingcomputer.com/news/security/trezors-support-platform-abused-in-crypto-theft-phishing-attacks/
+
 - ### Provenance
   - sources:: SatoshiLabs documentation; BIP32/BIP39/BIP44 specification texts; SLIP39 specification; published academic and security research on hardware wallet attack surfaces
   - updated:: 2026-06-13

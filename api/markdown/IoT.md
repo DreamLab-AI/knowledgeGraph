@@ -284,6 +284,23 @@ public:: true
   - **[[Spatial Computing]]**: AR overlays contextualised by live IoT data enable field technicians to visualise sensor readings, asset status, and maintenance history spatially via HMDs.
   - **[[5G]]**: network slicing and URLLC modes promise deterministic low-latency connectivity for industrial control and collaborative robotics beyond what current LPWAN or Wi-Fi provide.
 
+- ### Current Landscape (2026)
+  - The Connectivity Standards Alliance closed the residential interoperability gap fast: Matter 1.4 (November 2024) added energy management and Enhanced Multi-Admin, Matter 1.5 (20 November 2025) added camera streaming over RTSP plus solar/battery/heat-pump energy clusters, and Matter 1.6 (June 2026) introduced NFC-based commissioning (setup before power-on), Joint Fabric for co-administered networks, and thermostat suggestions.
+  - Security certification has hardened in parallel: the CSA's Product Security 1.1 specification (June 2026) extends scope from individual devices to complete IoT systems, adds two assurance levels (self-assessment reviewed by an Authorised Test Laboratory versus independent ATL testing), and maps onto the EU Radio Equipment Directive harmonised standards and Singapore's labelling scheme.
+  - Regulation has shifted IoT security from optional to mandatory: the EU Radio Equipment Directive cybersecurity requirements (via EN 18031) became mandatory on 1 August 2025, and the EU Cyber Resilience Act (in force since 10 December 2024) phases in reporting duties from 11 September 2026 and full obligations from 11 December 2027, with fines up to EUR 15 million or 2.5% of global turnover.
+  - In the US the FCC launched the voluntary Cyber Trust Mark on 7 January 2025 (built on NIST IR 8425), and Executive Order 14306 (June 2025) pushed it toward de-facto mandatory by directing federal agencies to prioritise procurement of labelled devices from 2027; rollout has since faced administrative delays. Universal default passwords are now effectively illegal for new devices across the UK, EU and Japan, with mandated multi-year update support and SBOMs becoming standard.
+  - Markets keep scaling: IoT Analytics put connected IoT devices at 21.1 billion by end-2025 (up 13% YoY) and the enterprise IoT market at USD 324 billion, projecting 14% growth for 2026. Ericsson reported roughly 4.5 billion cellular IoT connections at end-2025.
+  - Connectivity is consolidating around 5G RedCap as the mid-tier bridge as 2G/3G sunset: 14 operators had launched RedCap commercially by end-2025 (the Apple Watch range adopted it), eRedCap modules arrive in 2026, and IoT Analytics projects RedCap chipset shipments at an 82% CAGR to 2030. Satellite-cellular hybrid modules are emerging for always-on remote links.
+  - The open frontier is intelligence at the edge: IoT Analytics estimates under 1% of the 21.1 billion connections carried a true edge-AI accelerator (NPU/GPU) as of December 2025, so TinyML on-device inference, secure lifecycle/update governance at fleet scale, and fragmented cross-jurisdiction compliance remain the key unsolved challenges.
+
+- ### References
+  - 1. Connectivity Standards Alliance / 9to5Mac (2026). Matter 1.6 and Product Security 1.1 officially announced — here's what's new. https://9to5mac.com/2026/06/17/matter-1-6-and-product-security-1-1-officially-announced-heres-whats-new/
+  - 2. Amazon Web Services (2026). Adopting the Matter standard for IoT device makers (updated for Matter 1.5). https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-matter-standard/strategy-matter-standard.pdf
+  - 3. IoT M2M Council (2026). Global Cybersecurity Regulation in 2025. https://iotm2mcouncil.org/iot-library/news/iot-security-public-policy/global-cybersecurity-regulation-in-2025/
+  - 4. European Commission (2026). Cyber Resilience Act — Shaping Europe's digital future. https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act
+  - 5. IoT Analytics (2026). State of enterprise IoT: From IoT to autonomous connected operations. https://iot-analytics.com/state-of-enterprise-iot-from-iot-autonomous-connected-operations/
+  - 6. Ericsson (2026). IoT connections outlook — Ericsson Mobility Report. https://www.ericsson.com/en/reports-and-papers/mobility-report/dataforecasts/iot-connections-outlook
+
 - ### Provenance
   - sources:: IEEE, IETF RFCs, Connectivity Standards Alliance (CSA), ETSI EN 303 645, IEC 62443, W3C WoT, NISTIR 8259A, IoT Analytics research.
   - updated:: 2026-06-13

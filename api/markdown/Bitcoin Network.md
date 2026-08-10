@@ -289,6 +289,24 @@ public:: true
   - Regulatory treatment varies by jurisdiction. In many territories Bitcoin is treated as a commodity, property, or currency for different legal purposes. Financial regulators (e.g., the FCA in the UK, the SEC and CFTC in the US) apply different frameworks to Bitcoin-related services, custody, and exchange products.
   - Energy consumption from [[Proof Of Work]] mining is a subject of ongoing policy debate. The Bitcoin Network consumes significant electricity, with the mix of energy sources varying across mining regions. This creates regulatory surface at the intersection of climate policy and financial infrastructure.
 
+- ### Current Landscape (2026)
+  - The fourth halving fired at block 840,000 on 20 April 2024, cutting the block subsidy from 6.25 to 3.125 BTC; the same block launched Casey Rodarmor's Runes fungible-token protocol, spiking that block's fees to a record 37.6 BTC (~$2.4m) and briefly pushing median feerates above 1,800 sat/vByte.
+  - On-chain fee demand then collapsed: after the Runes/Ordinals mania faded in late 2024, median daily fees fell more than 80% and by August 2025 roughly 15% of blocks were near-empty "free" blocks at ~1 sat/vByte, reviving concern about miners' long-term fee-only revenue.
+  - US spot Bitcoin ETFs (approved January 2024) had drawn ~$54.4bn net inflows and accumulated over 1.29m BTC (~6% of supply) by end-August 2025, with BlackRock's IBIT alone holding ~52.6% share; in September 2025 the SEC approved generic listing standards streamlining future crypto ETFs.
+  - Mining hashrate crossed 1 zettahash/s (1,000 EH/s) for the first time in early April 2025 and set an all-time high near 1.085 ZH/s on 4 August 2025, though a ~4% Nov–Dec 2025 drop and record-low ~$38.7k/EH/day revenue squeezed less efficient operators.
+  - Protocol development remains effectively frozen with no agreed activation path: the contested BIP-110 "Reduced Data Temporary Softfork" faced a mandatory signalling window around block 961,632 (~August/September 2026) at under 1% miner support, and Paul Sztorc's eCash hard fork was scheduled for block 964,000 (~21 August 2026).
+  - The covenant debate dominates: OP_CAT (BIP 347) reached "Complete" specification status on 1 March 2026 with no activation parameters, while OP_CTV (BIP 119) published an activation client starting 30 March 2026 (90% miner threshold, ~2027 minimum activation) sitting at ~0% signalling; consensus is edging toward a phased CTV+CSFS-first approach.
+  - Bitcoin Core 30.0 (2025) made multiple OP_RETURN outputs standard, raised default datacarriersize to 100,000 bytes, added an experimental Stratum v2 IPC mining interface and removed legacy-wallet creation; post-quantum hardening via BIP-360 plus OP_CAT-based Winternitz signatures remains an unstarted multi-year programme.
+  - On the policy front, President Trump's Executive Order 14233 (6 March 2025) established a Strategic Bitcoin Reserve capitalised with forfeited government BTC that will not be sold; by mid-2026 US government holdings were estimated at roughly 324,000–328,000 BTC, though trackers disagree by over 130,000 BTC.
+
+- ### References
+  - 1. CoinGecko (2025). Bitcoin Report 2025 (ETF inflows, 1 zettahash hashrate, IBIT dominance). https://www.coingecko.com/research/publications/bitcoin-report-2025
+  - 2. CoinDesk (2024). The Bitcoin Halving Is Here, and With It a Giant Surge in Transaction Fees. https://www.coindesk.com/tech/2024/04/20/bitcoin-blockchain-has-fourth-halving-in-15-year-history-in-show-of-monetary-policy-set-by-code
+  - 3. Amina Group (2026). Bitcoin Fork August 2026: BIP-110, eCash, Covenants and the Quantum Clock. https://aminagroup.com/research/bitcoin-fork-august-2026-bip-110-ecash-covenants-and-the-quantum-clock/
+  - 4. Spark / Buffett Labs (2026). Bitcoin Covenant Proposals Compared: CTV, APO, OP_CAT. https://www.spark.money/tools/bitcoin-covenant-proposals-compared
+  - 5. Bitcoin Optech (2025). Newsletter #385: 2025 Year-in-Review (Bitcoin Core 30.0, BIP-360, OP_CAT Winternitz). https://bitcoinops.org/en/newsletters/2025/12/19/
+  - 6. The White House (2025). Fact Sheet: President Trump Establishes the Strategic Bitcoin Reserve and U.S. Digital Asset Stockpile (Executive Order 14233). https://www.whitehouse.gov/fact-sheets/2025/03/fact-sheet-president-donald-j-trump-establishes-the-strategic-bitcoin-reserve-and-u-s-digital-asset-stockpile/
+
 - ### Provenance
   - sources:: Satoshi Nakamoto, "Bitcoin: A Peer-to-Peer Electronic Cash System" (2008); Bitcoin Core documentation; Bitcoin Improvement Proposals (BIPs); Andreas M. Antonopoulos, "Mastering Bitcoin" (O'Reilly, 3rd ed.); established protocol knowledge through training cutoff January 2026
   - updated:: 2026-06-13

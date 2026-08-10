@@ -251,6 +251,24 @@ public:: true
   - The [[SPIR-V]] intermediate representation is increasingly the universal shader IR for the industry, consumed by Vulkan, OpenCL, HLSL-to-SPIR-V compilers (DXC), and LLVM-based GPU toolchains.
   - Khronos's work on [[OpenXR]] positions it as the governance body for the runtime layer of the spatial computing industry, which is expected to grow substantially with the maturation of standalone headsets and smart glasses.
 
+- ### Current Landscape (2026)
+  - Khronos shipped Vulkan 1.4 on 3 December 2024 at SIGGRAPH Asia 2024 (SDK in January 2025), its first core version derived from the Vulkan Roadmap process; it mandates previously optional features (push descriptors, dynamic rendering local read, scalar block layout), folds in maintenance extensions up to VK_KHR_maintenance6, and guarantees 8K rendering with up to eight render targets.
+  - The two-year roadmap cadence continued with Roadmap 2026 (variable-rate shading, cooperative matrix, host image copies, compute-shader derivatives and a full descriptor-API revision), with milestones now planned out to 2030; stable Vulkan reached 1.4.359 by August 2026.
+  - OpenXR 1.1 landed on 15 April 2024, consolidating extensions into core to cut fragmentation, and in June 2025 the Spatial Entities extensions arrived as the industry's first open standard for spatial computing, with further spatial-perception work contributed by PICO.
+  - Khronos launched the Slang Initiative on 21 November 2024, taking stewardship of NVIDIA's open-sourced Slang shading language and compiler and positioning it for neural and differentiable rendering alongside Vulkan.
+  - glTF 2.1 was released on 11 June 2026, extending the nine-year-old format to large composed scenes with multi-file scene graphs, embedded preview thumbnails, new spatial primitives, progressive delivery and a 64-bit GLB format that lifts the 4GB ceiling.
+  - Gaussian Splatting is being standardised into glTF via the experimental KHR_gaussian_splatting and KHR_gaussian_splatting_compression_spz extensions (SPZ format from Niantic Spatial), announced at SIGGRAPH 2025, reaching release-candidate in February 2026 with ratification targeted for Q2 2026, developed with OGC, Cesium, Esri, Autodesk, XGRIDS, Huawei and NVIDIA.
+  - The organisation now spans over 180 member companies under president Neil Trevett (who also chairs the Metaverse Standards Forum); a new Khronos Machine Learning Council is working toward a cross-platform inferencing-acceleration API modelled on Vulkan's compute model to reduce ML runtime vendor lock-in.
+  - Open challenges as of 2026 include combating extension sprawl through core consolidation, aligning glTF Gaussian Splats with the parallel Alliance for OpenUSD (AOUSD) Particle Fields schema, and delivering a credible cross-vendor ML inferencing standard against entrenched proprietary stacks.
+
+- ### References
+  - 1. The Khronos Group / vulkan.org (2024). Khronos Streamlines Development and Deployment of GPU-Accelerated Applications with Vulkan 1.4. https://www.vulkan.org/news/auto-23155-a676f167a3982c6a4f6d36a46284cad8
+  - 2. Larabel, M. / Phoronix (2026). Khronos Releases glTF 2.1 To Make This 3D Asset Standard Work Well For Large Scenes. https://www.phoronix.com/news/Khronos-glTF-2.1-Released
+  - 3. The Khronos Group (2024). Khronos Releases OpenXR 1.1 to Further Streamline Cross-Platform XR Development. https://www.khronos.org/news/press/khronos-releases-openxr-1.1-to-further-streamline-cross-platform-xr-development
+  - 4. TheFuture3D (2026). The State of Gaussian Splatting in 2026: Standards and Tools. https://www.thefuture3d.com/blog/state-of-gaussian-splatting-2026/
+  - 5. Let's Data Science (2025). Khronos Presents Open Standards Roadmap at SIGGRAPH ASIA 2025. https://letsdatascience.com/news/khronos-presents-open-standards-roadmap-at-siggraph-asia-202-ebff0720
+  - 6. Potter, R. / Khronos (2026). Forging Ahead - Vulkan (Vulkanised 2026, Roadmap 2026). https://vulkan.org/user/pages/09.events/vulkanised-2026/1430-RalphPotter-Vulkanised2026SoU.pptx.pdf
+
 - ### Provenance
   - sources:: Khronos Group official specifications (khronos.org); industry analysis of GPU standards ecosystems; established knowledge of Vulkan, OpenGL, OpenXR, glTF, and OpenCL.
   - updated:: 2026-06-13

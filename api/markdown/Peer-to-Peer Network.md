@@ -354,6 +354,23 @@ alias:: Peer To Peer Network, Peer to Peer Network
     - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
 
+- ### Current Landscape (2026)
+  - The libp2p 2025 annual report documents QUIC and WebTransport maturing into production transports, with community benchmarks showing roughly 60% mobile battery savings, alongside stabilised WebRTC-Direct and AutoNAT v2 (per-address reachability) enabling browser-native "wallet-as-a-node" peer-to-peer connectivity without centralised RPC.
+  - IPFS shipped seven Kubo releases in 2025 (v0.33 through v0.39); the flagship change was the rebuilt DHT "Sweep" provider (default in v0.39, ~97% fewer lookups when announcing many CIDs), plus AutoTLS, verifiable HTTP retrieval, and Bitswap broadcast reduction cutting messages by 80-98%, making self-hosting a node at home viable.
+  - Iroh emerged as a leaner Tailscale-inspired alternative to libp2p, delivering direct hole-punched QUIC connections with BLAKE3-verified streaming and pushing IETF drafts (draft-seemann-quic-address-discovery, draft-seemann-quic-nat-traversal, and QUIC Multipath) that replace STUN with encrypted in-band address discovery.
+  - Parity's litep2p reached production readiness and became the default networking backend in the Polkadot 2503 release, displacing the legacy Rust libp2p stack in a major live network.
+  - A large-scale October 2025 measurement study (4.4M traversal attempts across 85,000+ networks in 167 countries) established a ~70% decentralised NAT hole-punching success rate for DCUtR and empirically refuted the long-held belief in UDP's superiority, showing TCP and QUIC perform statistically indistinguishably.
+  - GossipSub scaling work (driven by nim-libp2p researchers, coordinated at libp2p Day @ DevConnect) is hardening block, attestation and blob-sidecar propagation for Ethereum L1/L2s, with GossipSub now the coordination layer for shared-sequencer networks such as Espresso and Astria and data-availability networks Celestia, Avail and EigenDA.
+  - Governance shifted as IPFS and libp2p spun out of Protocol Labs into independent foundations, with day-to-day maintenance of go-libp2p and js-libp2p (v3, September 2025) transitioning to community stewardship.
+  - Open frontiers for 2026 centre on confidential/privacy-first networking as a default property, decentralised-AI use cases (federated learning over libp2p plus distributed MCP), mobile-native Kotlin/Swift implementations reaching production, and path-aware routing research such as native IPFS-over-SCION integration reducing retrieval times up to 2.9x while hardening against routing attacks.
+
+- ### References
+  - 1. libp2p / Protocol Labs (2026). libp2p Annual Report 2025. https://libp2p.io/reports/annual-reports/2025/
+  - 2. Interplanetary Shipyard (2025). Shipyard 2025: Bringing IPFS Home — Year in Review. https://ipshipyard.com/blog/2025-shipyard-ipfs-year-in-review/
+  - 3. Trautwein, D. et al. (2025). Challenging Tribal Knowledge — Large Scale Measurement Campaign on Decentralized NAT Traversal (DCUtR in IPFS). https://arxiv.org/abs/2510.27500v1
+  - 4. Bruynooghe, F. / n0 (2025). iroh p2p connections — direct QUIC connections between nodes (FOSDEM 2026). https://fosdem.org/2026/events/attachments/T9ACNE-iroh_p2p_connections/slides/267568/iroh_2p2_bineq6t.pdf
+  - 5. IFIP CNSM (2025). IPFS over SCION: Secure and Performant Content Retrieval on Next-Generation Networks. https://dl.ifip.org/db/conf/cnsm/cnsm2025/1571162804.pdf
+
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
   - migration-date:: 2026-04-26T00:00:00Z

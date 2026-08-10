@@ -282,6 +282,23 @@ public:: true
   - **Nature and Biodiversity**: Carbon-centric frameworks inadequately address biodiversity, land use, and ecosystem services; biodiversity credit markets are nascent and methodologically immature.
   - **Emerging Market Access**: Most green capital is directed to developed economies; the structural financing gap for adaptation in low-income countries remains unmet.
 
+- ### Current Landscape (2026)
+  - The global labelled green-bond market crossed a landmark in 2025: cumulative issuance reached roughly US$3.5 trillion and outstanding stock passed US$3 trillion for the first time at end-Q3 2025 (LSEG), after a record ~US$572bn issued in 2024; Europe still supplies over half of annual volume, though 2025 issuance softened year-on-year.
+  - The EU Green Bond Standard (Regulation (EU) 2023/2631) became applicable on 21 December 2024 and completed a strong first year, with more than €22bn of "EuGB"-labelled bonds issued (about 7% of the European green-bond market) — each requiring at least 85% EU-taxonomy-aligned use of proceeds, mandatory external review and standardised reporting.
+  - Flagship EuGB issuance validated demand: the EIB integrated the standard into its Climate Awareness Bond framework and priced a €3bn 12-year EuGB on 2 April 2025 that was oversubscribed more than 13 times (~€40bn of orders); Denmark launched the first sovereign EuGB as a "green twin bond" in 2025.
+  - Europe pivoted from expansion to simplification: the Commission's Omnibus I package (proposed 25/26 February 2025, enacted early 2026) plus the Taxonomy Simplification Delegated Act (in force 28 January 2026) exempt around 80% of firms from CSRD scope, add a 10% materiality threshold and let banks and insurers defer detailed taxonomy reporting to 2028; an SFDR Level 1 review ("SFDR 2.0") proposal followed in November 2025, raising the taxonomy-aligned safe-harbour threshold from 15% to 20%.
+  - Global disclosure convergence accelerated around the ISSB's IFRS S1/S2: by end-2025 the IFRS Foundation counted 36-40 jurisdictions adopting or aligning (covering roughly 60% of global GDP and emissions), including Australia, Japan, China, Singapore, Brazil and Nigeria; the UK finalised UK SRS S1/S2 in early 2026 with the FCA consulting on mandatory application for listed issuers.
+  - Regulatory direction diverged sharply by region: after prolonged litigation the US SEC left its climate-disclosure rule unenforced (the Eighth Circuit paused proceedings in September 2025), so no federal US mandate is in force, even as California's SB 253/SB 261 climate-reporting laws advanced with CARB rulemaking published on 23 December 2025.
+  - From 21 June 2026 external reviewers of European green bonds must be registered and supervised by ESMA under finalised technical standards, and a separate EU ESG-ratings regulation applies from 2 July 2026 — tightening oversight to curb greenwashing, which remains the central open challenge alongside taxonomy usability, sovereign-exposure treatment and reconciling EU simplification with ISSB interoperability.
+
+- ### References
+  - 1. LSEG (2025). Green debt market passes $3 trillion milestone. https://www.lseg.com/en/insights/green-debt-market-passes-3-trillion-milestone
+  - 2. IEEFA (2026). EU Green Bond Standard: A strong first year, but more to be done. https://ieefa.org/sites/default/files/2026-02/IEEFA_EU%20Green%20Bond%20Standard-%20A%20strong%20first%20year,%20but%20more%20to%20be%20done_February%202025%20(1).pdf
+  - 3. European Commission, DG FISMA (2026). Shaping a sustainable future: key updates for EU green bonds. https://finance.ec.europa.eu/news/shaping-sustainable-future-key-updates-eu-green-bonds-2026-03-19_en
+  - 4. EY Luxembourg (2025). ESG Regulatory agenda 2026: are you up-to-date and well prepared? https://www.ey.com/en_lu/insights/wealth-asset-management/luxembourg-market-pulse/sustainable-finance-2025
+  - 5. IFRS Foundation (2025). IFRS Foundation publishes jurisdictional profiles for ISSB Standards. https://www.ifrs.org/news-and-events/news/2025/06/ifrs-foundation-publishes-jurisdictional-profiles-issb-standards/
+  - 6. Reuters (2026). Two steps back, but three forward for sustainability reporting. https://www.reuters.com/sustainability/sustainable-finance-reporting/two-steps-back-three-forward-sustainability-reporting--ecmii-2026-05-26/
+
 - ### Provenance
   - sources:: ICMA Green Bond Principles; EU Taxonomy Regulation (EU) 2020/852; TCFD Recommendations; ISSB IFRS S1/S2; ICVCM Core Carbon Principles; IOSCO Voluntary Carbon Markets Guidance
   - updated:: 2026-06-13

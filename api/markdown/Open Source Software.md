@@ -187,6 +187,23 @@
   - **Licence compatibility** — copyleft licence interaction creates incompatibility graphs that maintainers and legal teams must navigate when combining components; the OSI maintains compatibility guidance.
   - **CRA (EU Cyber Resilience Act)** exemptions and obligations for open source stewards represent an evolving regulatory frontier as of 2024–2025.
 
+- ### Current Landscape (2026)
+  - The EU Cyber Resilience Act (Regulation (EU) 2024/2847) entered into force on 10 December 2024 and is reshaping open-source obligations: manufacturer vulnerability and incident reporting duties apply from 11 September 2026, with full applicability on 11 December 2027, and the Commission published practical implementation guidance on 27 July 2026.
+  - The CRA introduces a new legal category, the "open-source software steward" (Article 24) — foundations or organisations that sustain FOSS intended for commercial use face a light-touch regime (a cybersecurity policy plus vulnerability reporting) and, under Article 64(10), are exempt from administrative fines; individual maintainers and non-monetised projects remain out of scope.
+  - The Act elevates the Software Bill of Materials from best practice to a legal requirement, with manufacturers obliged to produce machine-readable SBOMs (SPDX or CycloneDX) covering at least top-level dependencies, given that roughly 76% of a typical application is open-source code.
+  - The OSI's Open Source AI Definition (OSAID v1.0, released October 2024) continues to set the openness benchmark, requiring the four freedoms plus available training-data information; systems such as Pythia, OLMo, Amber and T5 passed validation while Llama 2, Grok, Phi-2 and Mixtral did not, and OSI plans to run an issues process and update the definition by Q4 2026.
+  - Ecosystem coordination is intensifying: OpenSSF, Linux Foundation Research and Linux Foundation Europe published "Unaware and Uncertain: The Stark Realities of Cyber Resilience Act Readiness in Open Source" in 2025, and on 30 July 2026 the Eclipse Foundation and OWASP signed an MoU on CRA readiness, steward support and SBOM adoption.
+  - Security is the dominant frontier: following the 2024 xz Utils backdoor, OpenSSF CTO Christopher Robinson (CROB) warned at KubeCon 2026 of a likely major AI-driven attack, citing AI-scaled sock-puppet social engineering, "slot squatting" on hallucinated package names, and the risk that a simultaneous flood of CRA-driven upstream patches overwhelms under-resourced maintainers.
+  - Maintainer sustainability and funding remain unresolved as regulatory expectations rise faster than volunteer capacity, prompting OSI's 2025 launch of the Open Technology Research initiative to build the evidence base for future open-source policy.
+
+- ### References
+  - 1. European Commission (2026). Cyber Resilience Act — Open source. Shaping Europe's digital future. https://digital-strategy.ec.europa.eu/en/policies/cra-open-source
+  - 2. Open Source Security Foundation (2026). EU Cyber Resilience Act (CRA). https://openssf.org/public-policy/eu-cyber-resilience-act/
+  - 3. Open Source Initiative (2026). The OSI 2025 Annual Report Is Now Available. https://opensource.org/blog/the-osi-2025-annual-report-is-now-available
+  - 4. Open Source Initiative (2024). Final Board Report — Open Source AI Definition v1.0. https://opensource.org/ai/final-board-report
+  - 5. Eclipse Foundation and OWASP (2026). Eclipse Foundation and OWASP Join Forces to Strengthen Open Source Security and CRA Readiness. https://www.globenewswire.com/news-release/2026/07/30/3335836/0/en/eclipse-foundation-and-owasp-join-forces-to-strengthen-open-source-security-and-cra-readiness.html
+  - 6. Techzine (2026). Why open source faces its biggest security threat in 2026. https://www.techzine.eu/blogs/security/141699/why-open-source-faces-its-biggest-security-threat-in-2026/
+
 - ### Provenance
   - sources:: Open Source Initiative (opensource.org), Linux Foundation, Apache Software Foundation, FSF GNU Project, SPDX specification, ISO/IEC 5230 (OpenChain), NTIA SBOM guidance
   - updated:: 2026-06-13

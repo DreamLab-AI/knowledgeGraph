@@ -589,6 +589,22 @@ public:: true
 		  - [[False Negative]]: Confusion matrix cell
 		  - [[ROC Curve]]: Uses confusion matrix values across thresholds
 
+- ### Current Landscape (2026)
+  - scikit-learn's class-based visualisation API is now the settled standard: the legacy `plot_confusion_matrix` was deprecated in 1.0 and removed, with `ConfusionMatrixDisplay.from_estimator`/`from_predictions` as replacements, and recent 1.9.x work (merged mid-2025) adds a threshold-sweep `confusion_matrix_at_thresholds` returning TN/FP/FN/TP counts across decision thresholds.
+  - The scalability failure of the classic O(n^2) matrix on many-class and multi-label problems is a live research frontier: the MLMC interactive tool (arXiv 2501.14460, January 2025) offers a visual instance/label/classifier exploration alternative, building on the earlier MLCM multi-label confusion matrix formulation.
+  - Standardisation of confusion-matrix-derived metrics is emerging: the Outperformance Standardisation (OPS) function (arXiv 2505.07033, May 2025) maps any confusion-matrix-based metric onto a common [0,1] percentile-rank scale to make scores comparable under varying class-imbalance rates.
+  - Metric theory has been tightened: "A Closer Look at Classification Evaluation Metrics" (arXiv 2404.16958, 2024) formalises five properties — monotonicity, class sensitivity, class decomposability, prevalence invariance and chance correction — to reason about which confusion-matrix summaries are trustworthy under imbalance.
+  - Confusion matrices have become a default artefact for evaluating LLM-as-classifier pipelines, pairing `classification_report` and heatmaps against a held-out supervised sample to expose systematic off-diagonal error modes and prompt-driven miscategorisation.
+  - Guidance from a widely cited 2024 Nature Scientific Reports survey (s41598-024-56706-x) reinforces reporting balanced accuracy, Matthew's correlation coefficient (MCC) and Cohen's kappa alongside raw accuracy, since single-number summaries hide class-imbalance effects visible in the full matrix.
+  - Open challenges as of 2026 centre on multi-label and long-tail settings, where the traditional matrix is undefined and aggregate metrics (Hamming loss, micro/macro F-scores) obscure per-class false-positive/false-negative distribution, and on scaling legible visual diagnostics to hundreds of classes.
+
+- ### References
+  - 1. scikit-learn developers (2025). confusion_matrix / ConfusionMatrixDisplay — scikit-learn 1.9.0 documentation. https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html
+  - 2. MLMC authors (2025). MLMC: Interactive multi-label multi-classifier evaluation. arXiv:2501.14460. https://arxiv.org/html/2501.14460v1
+  - 3. OPS authors (2025). A Universal Standardization for Confusion-Matrix-Based Classification Performance Metrics. arXiv:2505.07033. https://arxiv.org/html/2505.07033v2
+  - 4. Various (2024). A Closer Look at Classification Evaluation Metrics and a Reflection of Good Practice. arXiv:2404.16958. https://arxiv.org/html/2404.16958v2
+  - 5. Various (2024). Evaluation metrics and statistical tests for machine learning. Scientific Reports (Nature). https://www.nature.com/articles/s41598-024-56706-x
+
 - ### Provenance
   - sources:: [[ISO/IEC 25059]], [[ISO/IEC 25024]], [[NIST AI RMF]]
   - migration-date:: 2026-04-26T00:00:00Z

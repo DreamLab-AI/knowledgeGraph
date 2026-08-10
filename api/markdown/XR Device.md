@@ -279,6 +279,23 @@ public:: true
   - Industrial AR maintenance guidance
   - Medical and therapeutic applications
 
+- ### Current Landscape (2026)
+  - Google and Samsung launched Android XR, the first Android platform built for the Gemini era, in October 2025; its debut device is the Samsung Galaxy XR (codenamed Project Moohan), which shipped on 31 October 2025 in the US and Korea at US$1,799 running a Snapdragon XR2+ Gen 2 with dual micro-OLED panels at 3,552 x 3,840 per eye (~27 megapixels) and system-level Gemini.
+  - Apple refreshed the Vision Pro in October 2025 with the M5 chip, a 120 Hz refresh rate (up from 100 Hz), a Dual Knit Band and visionOS 26, holding the entry price at US$3,499, while Meta held the low end with the Quest 3 (US$499) and Quest 3S (from US$299), splitting the category into three distinct platform ecosystems (Android XR, visionOS, Meta Horizon OS).
+  - The device category is visibly bifurcating towards lightweight AI glasses: Meta shipped Ray-Ban Display in 2025 (its first smart glasses with an in-lens display, paired with a neural wristband), and Samsung confirmed on its Q4 2025 earnings call (29 January 2026) that Android XR smart glasses (models SM-O200P/SM-O200J) would arrive in 2026.
+  - Khronos released OpenXR 1.1 on 15 April 2024, folding widely used extensions into core (Local Floor reference space, Grip Surface, stereo with foveated rendering, 13 new interaction profiles) and committing to an annual release cadence; Spatial Entities extensions for body tracking followed in June 2025, and vendors including Meta, Valve, XREAL and Varjo have deprecated their proprietary APIs in favour of OpenXR.
+  - Valve announced Steam Frame, its second-ever VR headset, in 2025 (targeting summer 2026), and the enthusiast PC-VR niche gained the 107 g Bigscreen Beyond 2; XREAL previewed Project Aura, set to be the first AR headset on Android XR in 2026, and raised US$100 million alongside an extended Google partnership.
+  - Strategically, Meta signalled a pivot away from the "metaverse" framing towards AI-centric smart glasses and away from a near-term Quest 4 (now reported for 2027), reflecting a wider industry bet that lightweight, Gemini/AI-assisted glasses rather than bulky headsets are the mass-market form factor.
+  - Open challenges as of 2026 remain: sub-2.5-hour battery life on tethered headsets, premium pricing that keeps spatial computing niche, thin native XR software libraries outside gaming, waveguide field-of-view limits on display glasses (production waveguides only now reaching ~70 degrees), and privacy concerns around always-on cameras and on-device AI.
+
+- ### References
+  - 1. Road to VR (2026). XR Year in Review: The Most Important Stories of 2025 and What They Mean for 2026. https://roadtovr.com/xr-year-in-review-2025-most-important-stories-2026/
+  - 2. TechCrunch (2025). Samsung takes on Apple's Vision Pro with new Galaxy XR headset. https://techcrunch.com/2025/10/22/samsung-takes-on-apples-vision-pro-with-new-galaxy-xr-headset/
+  - 3. Google (2025). Introducing Galaxy XR, the first Android XR headset. https://blog.google/products-and-platforms/platforms/android/samsung-galaxy-xr/
+  - 4. The Khronos Group (2024). Khronos Releases OpenXR 1.1 to Further Streamline Cross-Platform XR Development. https://www.khronos.org/news/press/khronos-releases-openxr-1.1-to-further-streamline-cross-platform-xr-development
+  - 5. Reality Atlas (2026). Samsung Earnings Confirm Android XR Smart Glasses in 2026. https://www.reality-atlas.com/weekly/week-4-2026
+  - 6. Wikipedia (2025). Samsung Galaxy XR. https://en.wikipedia.org/wiki/Samsung_Galaxy_XR
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

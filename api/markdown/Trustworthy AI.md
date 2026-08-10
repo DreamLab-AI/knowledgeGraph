@@ -284,6 +284,23 @@ public:: true
   - **Scalability of oversight**: As AI systems proliferate and operate at scale, meaningful [[Human Oversight]] of individual decisions becomes impractical; systemic oversight mechanisms must substitute.
   - **General-purpose AI**: Foundation models and large language models deployed in diverse contexts pose novel trustworthy AI challenges, as their downstream uses cannot be fully anticipated at development time.
 
+- ### Current Landscape (2026)
+  - The EU AI Act (Regulation (EU) 2024/1689), the world's first comprehensive AI law and the anchor of "trustworthy AI" policy, entered into force on 1 August 2024 and became broadly applicable on 2 August 2026; GPAI obligations applied from 2 August 2025 and Commission enforcement powers began on 2 August 2026, with fines up to EUR 35M or 7% of global turnover.
+  - The "Digital Omnibus on AI" (COM(2025) 836), politically agreed on 7 May 2026, pushes high-risk deadlines back to 2 December 2027 (Annex III) and 2 August 2028 (Annex I) while leaving substantive obligations unchanged; a new prohibition on non-consensual explicit content takes effect December 2026.
+  - Standards have matured rapidly: ISO/IEC 42001 (the first certifiable AI management-system standard) was adopted as EN ISO/IEC 42001:2026 on 17 March 2026, and on 30 October 2025 prEN 18286 (Quality Management System for AI Act purposes) became the first harmonised AI standard to enter public enquiry under CEN-CENELEC JTC 21.
+  - Certification is now a competitive differentiator: Microsoft achieved ISO/IEC 42001 recertification in March 2026 across eight AI systems (including Microsoft 365 Copilot, GitHub Copilot and Security Copilot) with zero non-conformities, having first certified in March 2025.
+  - In the US, NIST released a concept note on 7 April 2026 launching an AI RMF "Trustworthy AI in Critical Infrastructure Profile" (energy-focused, covering TEVV, adversarial robustness, AIBOMs and agent guardrails), and on 29 July 2026 published a "Zero Draft" for public-facing AI documentation.
+  - Stanford HAI's 2026 AI Index reports responsible-AI practice lagging capability: documented AI incidents rose to 362 in 2025 (up from 233 in 2024), hallucination rates across 26 top models span 22-94%, and the Foundation Model Transparency Index average fell to 40 in 2025 after reaching 58 in 2024.
+  - Frontier safety remains uneven: the Future of Life Institute's Summer 2026 AI Safety Index again ranked Anthropic, OpenAI and Google DeepMind highest while xAI, DeepSeek and Mistral received failing grades, and the International AI Safety Report 2026 flagged growing reward-hacking and oversight-undermining behaviours as key open challenges.
+
+- ### References
+  - 1. European Commission (2026). AI Act — Shaping Europe's digital future. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 2. Baker Botts (2026). AI Regulatory Update for Energy: New Timelines in the EU, New Standards in the US. https://www.bakerbotts.com/thought-leadership/publications/2026/may/ai-regulatory-update-for-energy-new-timelines-in-the-eu-new-standards-in-the-us
+  - 3. European Commission (2026). Standardisation of the AI Act (CEN-CENELEC JTC 21, prEN 18286). https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation
+  - 4. Stanford HAI (2026). Responsible AI — The 2026 AI Index Report. https://hai.stanford.edu/ai-index/2026-ai-index-report/responsible-ai
+  - 5. Microsoft (2026). Recertified: How Microsoft 365 Copilot continues to earn trust (ISO/IEC 42001). https://techcommunity.microsoft.com/blog/microsoft365copilotblog/recertified-how-microsoft-365-copilot-continues-to-earn-trust-and-what-changed-i/4521693
+  - 6. Future of Life Institute (2026). AI Safety Index — Summer 2026. https://futureoflife.org/wp-content/uploads/2026/07/AI-Safety-Index-Summer-2026-Digital.pdf
+
 - ### Provenance
   - sources:: EU HLEG Ethics Guidelines for Trustworthy AI (2019); EU AI Act (2024); NIST AI Risk Management Framework (2023); ISO/IEC 42001 (2023); OECD AI Principles (2019)
   - updated:: 2026-06-13

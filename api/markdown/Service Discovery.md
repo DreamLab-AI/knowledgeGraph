@@ -272,6 +272,22 @@ public:: true
   - **W3C Web of Things (WoT) Thing Description** — IoT-oriented service description standard enabling discovery and interaction with smart devices.
   - Governed by practices from the **CNCF** (Cloud Native Computing Foundation), **IETF** (DNS-SD, mDNS RFCs), and vendor-driven de facto standards (Consul API, Kubernetes Endpoints API).
 
+- ### Current Landscape (2026)
+  - The sidecar-per-pod model that dominated service discovery and mesh dataplanes is being displaced: Istio's ambient mode reached General Availability in v1.24 on 7 November 2024, using a per-node ztunnel for L4 mTLS and identity plus optional per-namespace waypoint proxies for L7, cutting mesh overhead from ~166% (sidecar) to roughly 8% and node memory from ~250MB/pod to ~26MB/node.
+  - eBPF-native discovery and routing has matured as the sidecar-free alternative: Cilium (CNCF-graduated October 2023) delivers kube-proxy replacement, identity-based policy and SPIFFE mTLS directly in the kernel, though Istio's 2024 benchmarks still showed ambient handling ~56% more throughput at large scale where Cilium stressed the API server.
+  - The Kubernetes Gateway API (v1.0 GA, late 2023) has become the de-facto standard for north-south and, via the GAMMA initiative, east-west service-to-service routing, replacing bespoke per-vendor CRDs; Istio ambient multi-cluster mesh landed as Alpha in Istio 1.27 (August 2025).
+  - HashiCorp Consul evolved as the cross-runtime (VM + Kubernetes + bare metal) discovery layer: Consul 1.21 (8 May 2025) is an LTS release that simplified external-service discovery by dropping the Consul ESM agent requirement and added OpenShift 4.16/4.17 support, while Consul 1.22 (2026) added dual IPv4/IPv6 addressing and native multi-port service registration in the catalog and DNS.
+  - Ownership consolidated when IBM completed its $6.4bn acquisition of HashiCorp on 27 February 2025 (after FTC and UK CMA clearance), folding Consul into IBM Software alongside Red Hat OpenShift; HashiCorp previewed "Project Infragraph" for agentic infrastructure automation in September 2025.
+  - For the common all-Kubernetes single-region case the prevailing 2026 guidance is to stay with native Service + DNS (CoreDNS) and readiness probes, reserving Consul for mixed/multi-datacentre or SPIFFE-grade zero-trust identity needs, and treating direct etcd use as an anti-pattern.
+  - Open challenges as of 2026 include production-grade multi-cluster ambient mesh (still largely single-cluster/Alpha), kernel-version and CNI-compatibility constraints for eBPF dataplanes, and reconciling identity-based discovery (SPIFFE/mTLS on every call) with the low-latency, high-cardinality churn of large fleets.
+
+- ### References
+  - 1. HashiCorp (2025). Consul 1.21 improves service discovery, Consul on Kubernetes, and supports OpenShift 4.17. https://www.hashicorp.com/en/blog/consul-1-21-service-discovery-consul-kubernetes-openshift-4-17
+  - 2. HashiCorp / Consul Docs (2026). Consul v1.22.x Release Notes (IPv6 and multi-port service discovery). https://developer.hashicorp.com/consul/docs/release-notes/consul/v1_22_x
+  - 3. Istio (2024). Fast, Secure, and Simple: Istio's Ambient Mode Reaches General Availability in v1.24. https://istio.io/latest/blog/2024/ambient-reaches-ga/
+  - 4. Istio (2025). Istio Roadmap for 2025-2026 (multi-cluster ambient Alpha in 1.27, Gateway API to Stable). https://istio.io/latest/blog/2025/roadmap/
+  - 5. IBM Newsroom (2025). IBM Completes Acquisition of HashiCorp, Creates Comprehensive, End-to-End Hybrid Cloud Platform. https://newsroom.ibm.com/2025-02-27-ibm-completes-acquisition-of-hashicorp,-creates-comprehensive,-end-to-end-hybrid-cloud-platform
+
 - ### Provenance
   - sources:: RFC 6763 (DNS-SD), RFC 6762 (mDNS), HashiCorp Consul documentation, Kubernetes core DNS documentation, Netflix Eureka GitHub, CNCF Service Mesh Interface specification, Istio xDS control-plane documentation
   - updated:: 2026-06-13

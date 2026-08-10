@@ -473,6 +473,23 @@ public:: true
   - Community contribution
   - Ecosystem building
 
+- ### Current Landscape (2026)
+  - Metaverse architecture in 2024-2026 has crystallised around an open "constellation of standards" rather than a single walled platform: the Alliance for OpenUSD (AOUSD) drove its OpenUSD Core Specification toward a v1.0 release targeted for end of 2025, alongside new Physics and Geometry working groups (draft BREP schema), while Khronos glTF advanced interactivity and a draft 3D Gaussian Splatting specification.
+  - The Metaverse Standards Forum's glTF/USD 3D Asset Interoperability Working Group formalised glTF-USD round-tripping and an FBX migration project (with Adobe's open-source USD file-format plug-ins), presenting the state of interoperability at SIGGRAPH 2025 in Vancouver (August 2025).
+  - Cross-world portability advanced through OMA3's Inter-World Portaling System (IWPS), released in late 2024 as a "3D hyperlink" protocol standardising decentralised teleportation of avatars and NFT-based assets between virtual worlds via a two-phase handshake.
+  - Formal standardisation matured: the ITU-T Focus Group on Metaverse (FG-MV) approved its standardisation roadmap (FGMV-51/52) classifying metaverse standards into general, application, enabling-technology and interoperability categories, while IEEE progressed P2048 (terminology/taxonomy) and P7016 (ethically aligned metaverse systems), and the MSF approved a "Consistency of Experience" use case (MSF2025-COE-001, v1.0, November 2025) covering cross-device parity and hybrid fiat/crypto payment protocols.
+  - The dominant architectural shift is from consumer social worlds to enterprise spatial computing: digital-twin front-ends built on NVIDIA Omniverse, Siemens Xcelerator and PTC ThingWorx now serve as the interaction layer, with the spatial-computing market at roughly $20-135bn in 2025 (depending on scope) and survey data showing about 67% of manufacturing CIOs planning XR-plus-digital-twin integration by 2027.
+  - Hardware architecture polarised into two poles: Apple's Vision Pro line (Vision Pro 2 with M5 chip and 120Hz, unveiled 15 October 2025, at $3,499) anchoring the premium professional niche, versus Meta's mass-market Quest 3S ($299-800) holding roughly 75% combined XR share; consumer VR headset shipments fell sharply in 2025 even as overall XR shipments rebounded to about 14.5m units (+41.6% YoY).
+  - Consumer social-metaverse architecture contracted markedly: Meta shut down Horizon Workrooms on 16 February 2026 and pared back Horizon Worlds' in-headset creation tools, underscoring that persistent shared-world adoption still lags the "silent" enterprise deployments.
+  - Open challenges as of 2026 remain seamless glTF-USD-FBX round-tripping (capability gaps and lossy conversion), portable decentralised identity and payments across worlds, standardising 3D Gaussian Splatting and interactive/physics semantics, and sustaining persistent, interoperable social spaces beyond siloed enterprise use cases.
+
+- ### References
+  - 1. Metaverse Standards Forum (2025). State of 3D Asset Interoperability using USD and glTF — SIGGRAPH 2025 BOF (slides). https://metaverse-standards.org/wp-content/uploads/glTF-USD-BOF-SIGGRAPH-Vancouver-Aug25-FINAL.pdf
+  - 2. Metaverse Standards Forum (2025). Consistency of Experience (Use Case MSF2025-COE-001, v1.0), incl. OMA3 IWPS reference. https://portal.metaverse-standards.org/document/dl/7966
+  - 3. ITU-T Focus Group on Metaverse (2024). Technical Report FGMV-51: Standardization roadmap for metaverse. https://www.itu.int/dms_pub/itu-t/opb/fg/T-FG-MV-2024-51-PDF-E.pdf
+  - 4. Treeview Studio (2026). AR/VR/MR/XR & Spatial Computing Industry Statistics Report. https://treeview.studio/blog/ar-vr-mr-xr-metaverse-spatial-computing-industry-stats
+  - 5. Jacar (2026). XR, AR and VR in 2026: the honest state after the cycle. https://jacar.es/en/xr-ar-and-vr-in-2026-the-honest-state-after-the-cycle/
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

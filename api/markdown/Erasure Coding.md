@@ -296,6 +296,24 @@ public:: true
   - owl-class:: erasure-coding:Erasure Coding
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - Erasure coding moved from data-centre storage into blockchain data availability: Ethereum's Fusaka hard fork activated PeerDAS (EIP-7594) on mainnet at slot 13,164,544 on 3 December 2025, applying 1D Reed-Solomon extension to each blob and splitting it into 128 columns so the full data reconstructs from any 64, letting nodes sample rather than download everything.
+  - PeerDAS scaling has been ramped via Blob-Parameter-Only (BPO) forks: BPO1 (9 December 2025) raised the blob target/max to 10/15 and BPO2 (7 January 2026) to 14/21, cutting validator blob bandwidth by roughly 85% while a long-term roadmap targets up to 128 blobs (~16 MB) per block.
+  - Ceph's Tentacle release (2025) shipped "Fast EC" (allow_ec_optimizations), adding partial reads, partial writes and parity-delta writes plus small-object padding to reduce the long-standing write-amplification and read penalties of erasure-coded pools.
+  - Research is pushing past classic stripe-based schemes: the OSDI '25 paper "Nos/Nostor" (Gao, Shu et al.) introduced stripeless erasure coding using symmetric balanced incomplete block designs, reporting 1.61x-2.60x throughput over stripe-based baselines for in-memory key-value stores.
+  - Coding-theory frontier work in 2025 includes rateless/random-linear-network-coding approaches to data-availability sampling (arXiv 2509.21586), where a single RLNC sample is claimed to give assurance equivalent to ~73 two-dimensional Reed-Solomon samples, and hybrid replication-plus-EC schemes such as HyRES (arXiv, November 2025) that cut storage cost versus pure replication while lowering file-loss probability.
+  - The December 2024 ACM Transactions on Storage survey (Cheng et al.) consolidated the field, positioning Clay codes as the state-of-the-art general (n,k) minimum-storage regenerating codes and cataloguing deployed profiles such as Backblaze Vaults (20,17) and Tencent ultra-cold storage (12,10).
+  - Key production players remain Ceph, MinIO (inline per-object Reed-Solomon), Colossus, HDFS and DAOS on the storage side, with Ethereum and Celestia now the highest-profile erasure-coding adopters in decentralised data availability.
+  - Open challenges as of 2026 centre on repair cost and configuration sensitivity (HotStorage '24 work showed recovery time varying up to 426% by configuration), on verifying that DAS custody actually holds in practice (ethPandaOps' dasmon monitors column custody against KZG commitments post-Fusaka), and on hardware offload (FPGA EC accelerators reporting up to 2.67x throughput) to close the CPU bottleneck.
+
+- ### References
+  - 1. Ethereum Foundation (2025). Fusaka Testnet Announcement (PeerDAS / EIP-7594 and BPO forks). https://blog.ethereum.org/2025/09/26/fusaka-testnet-announcement
+  - 2. tryethernal / ethPandaOps (2026). PeerDAS Has Been Live for 8 Months: How Ethereum Verifies It's Working (dasmon custody verification). https://tryethernal.com/blog/peerdas-custody-verification-dasmon
+  - 3. Ceph Project (2025). Fast Erasure Coding for Tentacle: Performance Updates. https://ceph.io/en/news/blog/2025/tentacle-fastec-performance-updates/
+  - 4. Cheng, K. et al. (2024). A Survey of the Past, Present, and Future of Erasure Coding for Storage Systems. ACM Transactions on Storage 20(4). https://keyuncheng.github.io/files/publications/tos24ecsurvey.pdf
+  - 5. Gao, J., Shu, J., Yan, B., Zhang, Y. (2025). Stripeless Data Placement for Erasure-Coded In-Memory Storage (Nos/Nostor). USENIX OSDI '25. https://www.usenix.org/conference/osdi25/presentation/gao
+  - 6. Anonymous (2025). From Indexing to Coding: A New Paradigm for Data Availability Sampling (RLNC rateless codes). arXiv:2509.21586. https://arxiv.org/html/2509.21586v1
+
 - ### Provenance
   - sources:: IETF RFCs 5053, 6330, 5510; Ceph documentation; Ethereum EIP-4844 specification; Plank & Blumenthal "A Tutorial on Reed-Solomon Coding for Fault-Tolerance in RAID-like Systems"
   - updated:: 2026-06-13

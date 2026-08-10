@@ -350,6 +350,23 @@ public:: true
   - Higher customisability for enterprise requirements
   - Improved interoperability between blockchain networks
 
+- ### Current Landscape (2026)
+  - Enterprise DLT has shifted decisively from pilots to production: IDC projects permissioned blockchain spending of roughly $19.9bn in 2026, and Gartner's 2025 market guide attributes about 68% of enterprise blockchain revenue to permissioned deployments led by Hyperledger Fabric, Hyperledger Besu and R3 Corda.
+  - Canton Network (built by Digital Asset on the DAML language) has become the capital-markets front-runner since its Global Synchronizer mainnet launch in July 2024, reporting 600+ participating institutions and a governance roster spanning Goldman Sachs, HSBC, BNP Paribas, DTCC, Nasdaq, BNY, Moody's and S&P Global; it is distinctive for sub-transaction privacy and a native token, Canton Coin (CC), listed on major exchanges in late 2025.
+  - Real-world-asset tokenisation is now the dominant use case: on-chain RWA value (excluding stablecoins) passed roughly $26bn by early 2026 after around 266% growth in 2025, with production settlement at scale, e.g. Broadridge's DLT repo platform averaging about $384bn/day in December 2025 on Canton.
+  - In December 2025 the DTCC selected Canton Network as infrastructure for tokenising a subset of US Treasury securities, with a controlled production MVP (DTC-custodied Treasuries via the ComposerX platform, with Digital Asset) targeted for the first half of 2026 and DTCC taking a network governance role.
+  - Platform releases matured the stack: Hyperledger Fabric 3.x introduced SmartBFT Byzantine-fault-tolerant ordering (benchmarked around 2,000 TPS on a four-node deployment), while Corda 5 moved to a source-available model and Besu became the fastest-growing choice for EVM-compatible tokenisation.
+  - Regulation crystallised the operating envelope: the EU's MiCA became fully applicable on 30 December 2024 with the grandfathering deadline for existing providers expiring 1 July 2026, and by April 2026 over 185 operators held MiCA licences; in the US the GENIUS Act (stablecoins, signed July 2025) plus a March 2026 joint Fed/OCC/FDIC FAQ affirming technology-neutral capital treatment of tokenised securities de-risked institutional participation.
+  - Open frontier challenges as of 2026 centre on cross-ledger interoperability between permissioned and public chains, tokenised-cash rails for atomic delivery-versus-payment (regulated stablecoins and tokenised deposits), enterprise-grade zero-knowledge privacy, and unresolved classification gaps between MiCA and MiFID II now under a European Commission consultation (opened May 2026, running to 31 August 2026).
+
+- ### References
+  - 1. ChainLaunch (2026). 8 Permissioned Blockchain Trends Shipping in 2026 — Not Hype. https://chainlaunch.dev/blog/permissioned-blockchain-trends-2026
+  - 2. Alchemy (2026). Top Enterprise Blockchain Solutions in 2026. https://www.alchemy.com/overviews/top-enterprise-blockchain-solutions
+  - 3. Aegas.io (2026). Private Blockchain Development for Enterprise (2026). https://aegas.io/blog/private-blockchain-development
+  - 4. Cypherock (2026). Canton Network vs R3 Corda vs Hyperledger Fabric (2026). https://www.cypherock.com/blogs/canton-network-vs-r3-corda-vs-hyperledger
+  - 5. FintechWeekly (2026). What Is Real-World Asset Tokenization? The IMF Just Called It a Structural Shift. https://www.fintechweekly.com/news/real-world-asset-tokenization-explainer-institutional-2026
+  - 6. 4IRE Labs (2026). Real World Asset Tokenization 2026: Complete Guide (MiCA and the GENIUS Act). https://4irelabs.com/articles/real-world-asset-tokenization/
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

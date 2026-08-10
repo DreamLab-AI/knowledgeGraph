@@ -298,6 +298,23 @@ public:: true
   - owl-class:: spatial-computing:Simulation
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - The dominant 2024-2026 shift is the rise of neural "world models" as learned simulators that replace hand-coded physics engines: Google DeepMind's Genie 3 (5 August 2025) was the first real-time, general-purpose interactive world model, generating navigable 720p worlds at 24fps from a text prompt with multi-minute consistency and "promptable world events"; DeepMind opened Project Genie to US Google AI Ultra subscribers on 29 January 2026.
+  - NVIDIA's Cosmos world foundation models (WFMs), first announced at CES January 2025, became the reference platform for physical-AI simulation, surpassing 2 million downloads; Cosmos Predict 2.5 and Transfer 2.5 (CoRL, September-October 2025) unified text/image/video-to-world generation and cut model size 3.5x for Sim2Real synthetic-data pipelines.
+  - Cosmos 3, launched at GTC Taipei on 31 May 2026, is the first fully open "omnimodel" on a mixture-of-transformers architecture, fusing vision reasoning, world generation and action prediction across text, image, video, audio and action (Super 64B, Nano 16B, Edge 4B), and shipped alongside the new Cosmos Coalition (Runway, Black Forest Labs, Skild AI, Agile Robots, Generalist, LTX).
+  - NVIDIA Omniverse consolidated as the OpenUSD-based simulation substrate: at SIGGRAPH (11 August 2025) it open-sourced Isaac Sim 5.0 and Isaac Lab 2.2, added NuRec RTX ray-traced 3D Gaussian-splatting world reconstruction, and introduced MuJoCo (MJCF)-to-OpenUSD interoperability plus the "Newton" GPU physics engine (a PhysX/MuJoCo collaboration with Google DeepMind and Disney Research).
+  - Standardisation matured sharply: the Alliance for OpenUSD (AOUSD, under the Linux Foundation) ratified Core Specification 1.0 on 17 December 2025 as a formal SDO standard for composable 3D worlds, completed a first Physics Rigid Body Specification draft in October 2025, grew to 50 general members, and in March 2026 formed a Characters, Motion and Interactivity (CMI) Interest Group; Core Spec 1.1 (animation, massive-scene scaling) is targeted for 2026.
+  - Key players now span the neural-simulator frontier (DeepMind Genie 3, NVIDIA Cosmos, World Labs' "Marble" from Fei-Fei Li backed by ~$230M, Decart's Oasis, Microsoft Muse, Wayve GAIA-2) alongside the deterministic digital-twin stack (Omniverse adopters BMW, Siemens, General Motors, Foxconn, Rockwell Automation), with the two approaches increasingly composed together.
+  - Open challenges as of 2026 remain the persistent sim-to-real gap, short temporal memory and coherence (Genie 3 holds roughly one minute of world memory and struggles with multi-agent interaction), photorealistic-but-not-physically-exact generation, real-time latency and compute cost, and safety/evaluation of learned simulators used to train embodied agents.
+
+- ### References
+  - 1. Google DeepMind (2025). Genie 3: A new frontier for world models. https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/
+  - 2. NVIDIA (2025). NVIDIA Opens Portals to World of Robotics With New Omniverse Libraries, Cosmos Physical AI Models and AI Computing Infrastructure (SIGGRAPH). https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Opens-Portals-to-World-of-Robotics-With-New-Omniverse-Libraries-Cosmos-Physical-AI-Models-and-AI-Computing-Infrastructure/default.aspx
+  - 3. NVIDIA (2026). NVIDIA Launches Cosmos 3, the Open Frontier Foundation Model for Physical AI (GTC Taipei). https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai
+  - 4. The Linux Foundation / AOUSD (2025). Alliance for OpenUSD Announces Core Specification 1.0: The Universal Language For Building 3D Worlds. https://www.linuxfoundation.org/press/alliance-for-openusd-announces-core-specification-1.0-the-universal-language-for-building-3d-worlds
+  - 5. NVIDIA Research (2025). World Simulation with Video Foundation Models for Physical AI (Cosmos-Predict2.5 / Transfer2.5). https://arxiv.org/abs/2511.00062
+  - 6. AOUSD (2026). AOUSD Year in Review: A Landmark Year for OpenUSD Standardization and Growth in 2025. https://aousd.org/blog/aousd-year-in-review-a-landmark-year-for-openusd-standardization-and-growth-in-2025/
+
 - ### Provenance
   - sources:: IEEE 1516 standard documentation; SISO standards body publications; NVIDIA Isaac Sim documentation; established simulation science literature
   - updated:: 2026-06-13

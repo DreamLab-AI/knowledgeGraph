@@ -245,6 +245,23 @@ public:: true
 - ### Historical Context
   - The concept originates with Ivan Sutherland's "Sword of Damocles" (1968), the first HMD connected to a computer-generated graphics system. Military flight simulators at Evans & Sutherland and NASA's VIEW system refined tracking and optics through the 1970s–80s. Consumer attempts in the 1990s — Nintendo Virtual Boy, VPL Research, Virtuality Group arcades — were undermined by inadequate display resolution, high latency, and prohibitive cost. The modern era began with the Oculus Rift DK1 (2012), which leveraged commodity mobile OLED panels and MEMS gyroscopes to achieve viable latency at consumer price points. Subsequent generations introduced positional 6DoF tracking (Rift CV1, 2016), standalone compute (Oculus Go, 2018; Quest, 2019), eye tracking for [[Foveated Rendering]] (Varjo, PlayStation VR2), and fully integrated spatial computing platforms (Apple Vision Pro, 2024).
 
+- ### Current Landscape (2026)
+  - The Android XR platform (co-developed by Google, Samsung and Qualcomm on OpenXR) shipped its first head-mounted display in the Samsung Galaxy XR ("Project Moohan") on 21 October 2025 at $1,799, pairing Snapdragon XR2+ Gen 2 with dual 4K micro-OLED panels (~29 million pixels, 90Hz) and Gemini-powered spatial AI.
+  - Apple refreshed Vision Pro in October 2025 with the M5 chip (10% more rendered pixels, up-to-120Hz, ~3 hours video), later raising the price to $3,699; Apple has since deprioritised headsets, pausing and then cancelling the cheaper "Vision Air" and winding down Samsung Display's low-cost glass-substrate "G-VR" micro-OLED panel by September 2026 to chase Meta-style smart glasses.
+  - 2025 marked a structural inflection: IDC reported XR device shipments grew ~44% to 14.5 million units, but display-less AI smart glasses (Ray-Ban Meta, Oakley Meta) reached ~7.25 million units, roughly half of all XR volume and outselling standalone VR/MR headsets for the first time, with headset shipments themselves contracting sharply.
+  - Meta dominates the combined XR market (~72-75% share through 2025-2026 on the strength of its EssilorLuxottica Ray-Ban partnership), while Samsung/Google's headset-plus-glasses strategy is now the most credible challenge since Quest; Meta's own Quest 4 has slipped to 2027 or later.
+  - Enthusiast and PC-VR hardware advanced on the display and weight frontier: the Bigscreen Beyond 2 arrived at just 107 grams, and Valve confirmed the Steam Frame (dual 2160x2160 panels, Snapdragon 8 Gen 3, bundled 6GHz wireless streaming dongle) for summer 2026.
+  - OpenXR has consolidated as the cross-vendor standard (backed by ~13 major vendors and underpinning Android XR, WebXR and Unity workflows), reducing lock-in as the market fragments across headsets and glasses form factors.
+  - The XR market was valued at roughly $20 billion in 2025 with analysts projecting $85 billion-plus by 2030; head-mounted displays held ~42% of XR device revenue in 2025 but growth is shifting toward spatial/holographic displays and optical see-through glasses (the fastest-growing segment at ~42% CAGR).
+  - Open challenges as of 2026 remain display cost and manufacturability (micro-OLED yields), headset weight and 2-3 hour battery limits, and a strategic pivot of R&D and capital away from immersive HMDs toward lightweight all-day AI glasses.
+
+- ### References
+  - 1. MacRumors (2026). Report: Cheaper Apple Vision Pro Display Work Winds Down. https://www.macrumors.com/2026/07/08/cheaper-apple-vision-pro-display-work-ended/
+  - 2. TechCrunch (2025). Samsung takes on Apple's Vision Pro with new Galaxy XR headset. https://techcrunch.com/2025/10/22/samsung-takes-on-apples-vision-pro-with-new-galaxy-xr-headset/
+  - 3. Apple Newsroom (2025). Apple Vision Pro upgraded with the M5 chip and Dual Knit Band. https://www.apple.com/newsroom/2025/10/apple-vision-pro-upgraded-with-the-m5-chip-and-dual-knit-band/
+  - 4. IDC (2026). XR Market Grew 44.4% in 2025 as Smart Glasses Redefine the Category. https://www.idc.com/resource-center/press-releases/xr-market-grew-44-4-in-2025-as-smart-glasses-redefine-the-category/
+  - 5. Mordor Intelligence (2026). Extended Reality (XR) Market Size, Trends & Share Analysis, 2026-2031. https://www.mordorintelligence.com/industry-reports/extended-reality-xr-market
+
 - ### Provenance
   - sources:: Established knowledge of HMD hardware, optics, tracking systems, and XR ecosystem as of training cutoff; Khronos OpenXR 1.0 specification; W3C WebXR Device API specification; IEEE and ITU-T XR standards literature.
   - updated:: 2026-06-13

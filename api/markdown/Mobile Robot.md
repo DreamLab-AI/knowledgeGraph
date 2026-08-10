@@ -374,6 +374,23 @@ alias:: Mobile Robots, MobileRobot
     - Autonomous Mobile Robot (AMR) — high-autonomy commercial logistics subtype
     - Automated Guided Vehicle (AGV) — lower-autonomy, infrastructure-guided predecessor
 
+- ### Current Landscape (2026)
+  - AI foundation models moved into fleet coordination: in June 2025 Amazon deployed its one-millionth warehouse robot and launched DeepFleet, a generative-AI foundation model that orchestrates robot traffic and is claimed to improve fleet travel efficiency by roughly 10%.
+  - Vendor platforms shifted from 2D laser guidance to AI-driven 3D Visual SLAM: ABB's Flexley Mover P603/P604 (launched June 2025, handling up to 1,500 kg) pairs Visual SLAM with the AMR Studio programming platform and won an iF Design Award in April 2026; OMRON showed next-generation LD-150/LD-300 units with fast wireless charging at Automate 2026.
+  - VDA 5050 version 3.0.0 (2025) advanced the vendor-neutral MQTT interface between mobile robots and fleet-control systems, pushing multi-vendor interoperability as a procurement requirement.
+  - Safety standardisation consolidated around ISO 3691-4:2023 (driverless industrial trucks) and the ANSI/A3 R15.08 family — Part 1 (2020), Part 2 (2023) and Part 3 (user-side, targeted late 2025) — with personnel-detection functions typically resolving to PL d / Category 3 and requiring certified safety laser scanners rather than navigation LiDAR.
+  - The EU AI Act's phased implementation began imposing explainability and conformity obligations on autonomous navigation systems, raising certification cost and timelines for AMR makers selling into Europe.
+  - Market consolidation accelerated through late 2025 into 2026: Aptiv partnered with Vecna and Chang Robotics with OTTO/Rockwell (Dec 2025), while Serve Robotics acquired Diligent Robotics (Jan 2026), Amazon acquired stair-climbing specialist Rivr (Mar 2026), Skild AI bought Zebra's Fetch Robotics division (Apr 2026) and Meta acquired Assured Robot Intelligence (May 2026).
+  - Competition is led by Geek+ (reported top global AMR share for seven consecutive years, ~48.5% of goods-to-person), alongside ABB, OMRON, KUKA, Zebra/Fetch, Locus Robotics, MiR, Seegrid and OTTO Motors, with 2026 market estimates spanning roughly USD 2.75–5.5 billion and CAGR forecasts of ~14–19%.
+  - Open frontiers as of 2026 include safe, certifiable operation in mixed human-robot environments, convergence of AMRs with humanoid and mobile-manipulation platforms, and turning interoperability standards into genuine cross-vendor fleet portability.
+
+- ### References
+  - 1. MarknTel Advisors (2026). Autonomous Mobile Robots Market Trends Forecast 2032 (Amazon DeepFleet, ABB Flexley Mover). https://www.marknteladvisors.com/research-library/autonomous-mobile-robots-market-study.html
+  - 2. Grand View Research (2026). Autonomous Mobile Robots Market Size Report, 2026-2033 (recent partnerships and SLAM upgrades). https://www.grandviewresearch.com/industry-analysis/autonomous-mobile-robots-market
+  - 3. Knowledge Sourcing Intelligence (2026). Autonomous Mobile Robots (AMR) Market — Key Developments 2025-2026 M&A. https://www.knowledge-sourcing.com/report/autonomous-mobile-robots-amr-market
+  - 4. VDA (2025). VDA 5050 v3.0.0 — Interface for the Communication between Mobile Robots and a Fleet Control. https://www.vda.de/dam/jcr:09f03b91-13e2-4db3-bf30-4f221710071b/VDA5050-V3.0.0-2025-03.pdf
+  - 5. FSD (2026). ANSI/RIA R15.08 Explained — North America's Mobile Robot Safety Standard for AGVs and AMRs. https://www.fsddsk.com/ansi-ria-r1508-explained-mobile-robot-safety-standard-agv-amr-north-america
+
 - ### Provenance
   - sources:: [[ISO 8373:2021]], [[Robot Operating System]], [[Simultaneous Localisation and Mapping]], [[Warehouse Automation]], [[Swarm Robotics]]
   - updated:: 2026-06-13

@@ -323,6 +323,23 @@ public:: true
   - Global illumination computation
   - Large-scale scene management
 
+- ### Current Landscape (2026)
+  - Cluster-based acceleration is the defining 2024–2026 shift: NVIDIA's RTX Mega Geometry (unveiled at CES, January 2025) introduces Cluster-level Acceleration Structures (CLAS) that batch up to 256 triangles as first-class BVH primitives, cutting per-frame BVH rebuild cost by roughly two orders of magnitude and enabling up to 100x more ray-traced triangles.
+  - Blackwell RTX 50-series (2025) ships fourth-generation RT Cores with a dedicated Triangle Cluster Intersection Engine and cluster compression engine, roughly doubling the ray-triangle intersection rate over Ada while trimming several hundred megabytes of VRAM on dense geometry; Alan Wake 2 was the first shipping title (February 2025), later joined by UE5 Nanite path-tracing demos.
+  - GPU build algorithms advanced sharply with H-PLOC (Benthin, Meister, Barczak et al., HPG/ACM, July 2024), which constructs a binary BVH in a single kernel launch at 0.44–0.83 billion triangles/second and 1.1–3.6x faster than PLOC++/ATRBVH, and is now the standard input stage for most 2025 research pipelines.
+  - Oriented and skewed bounding volumes returned to the frontier: SOBB (Kacerik and Bittner, Computer Graphics Forum 2025), DOBB-BVH (arXiv, June 2025) and UBVH (2025) convert AABB hierarchies to tighter oriented boxes as a post-process, reporting 18–65% traversal gains on incoherent secondary rays for a ~10–15% build overhead.
+  - Standards are consolidating but fragmented: the vendor extension VK_NV_cluster_acceleration_structure (revision 1, August 2024; revision 4, July 2025) and its SPIR-V counterpart expose CLAS in Vulkan, while AMD's competing Dense Geometry Format (DGF) landed as an experimental extension in Vulkan 1.4.324 (August 2025) — neither is yet a ratified cross-vendor KHR standard.
+  - Open-source access democratised via Jacco Bikker's single-header tinybvh (first released October 2024, v1.6.x by early 2025), bringing binned-SAH, spatial-split, reinsertion-optimised and CWBVH wide-BVH builders plus GPU traversal to any project dependency-free.
+  - Open challenges as of 2026 include the acceleration-structure build/refit bottleneck for heavily animated and streamed geometry, VRAM pressure, cross-vendor incompatibility of NVIDIA and AMD cluster formats, and closing the quality-versus-build-speed gap — recent reinsertion-based optimisation (PRBVH) now beats the long-standing SBVH quality ceiling by around 7%.
+
+- ### References
+  - 1. Benthin, C., Meister, D., Barczak, J., Mehalwal, R., Tsakok, J. & Kensler, A. (2024). H-PLOC: Hierarchical Parallel Locally-Ordered Clustering for Bounding Volume Hierarchy Construction. https://gpuopen.com/download/HPLOC.pdf
+  - 2. NVIDIA (2025). NVIDIA RTX Blackwell GPU Architecture (Mega Geometry, CLAS, 4th-gen RT Cores). https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf
+  - 3. Khronos / Kushwaha, V. (2024–2025). VK_NV_cluster_acceleration_structure extension specification. https://docs.vulkan.org/refpages/latest/refpages/source/VK_NV_cluster_acceleration_structure.html
+  - 4. Tom's Hardware (2026). Testing Nvidia's RTX Mega Geometry tech — VRAM-reducing tech a leap forward for path-traced rendering. https://www.tomshardware.com/pc-components/gpus/testing-nvidias-rtx-mega-geometry-tech-vram-reducing-tech-a-leap-forward-for-path-traced-rendering
+  - 5. DOBB-BVH authors (2025). DOBB-BVH: Efficient Ray Traversal by Transforming Wide BVHs into Oriented Bounding Box Hierarchies. https://arxiv.org/html/2506.22849v1
+  - 6. Bikker, J. (2024–2025). tinybvh: Single-header dependency-free BVH construction and traversal library. https://github.com/jbikker/tinybvh
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

@@ -292,6 +292,23 @@ public:: true
   - **NVIDIA DLSS / AMD FSR / Intel XeSS** — Vendor-specific AI-upscaling and frame-generation technologies that extend the visual budget for real-time VFX by rendering at sub-native resolution and reconstructing detail; DLSS uses [[Neural Rendering]] inference.
   - **ACES (Academy Color Encoding System)** — The industry standard colour management framework for VFX production, ensuring consistent colour appearance across cameras, renders, and display devices.
 
+- ### Current Landscape (2026)
+  - 3D Gaussian Splatting has crossed from research novelty into a first-class production asset type: Foundry shipped native splat support in the Nuke 17.0 open beta (late 2025), Houdini 21 added a technical preview, OpenUSD 26.03 introduced a first-class splat schema, and Chaos V-Ray 7 can now ray-trace splat data alongside conventional geometry.
+  - Generative AI moved into the pipeline interior rather than just denoising: Netflix's Argentine series El Eternauta (April 2025) became the first major production to integrate AI-generated final-pixel footage, using 3DGS plus Eyeline Studios' "Go-with-the-Flow" motion-control tool and Runway under Kevin Baillie, reporting a roughly tenfold cut in shot-production time; Netflix's Frankenstein (2025) is cited as a further theatrical-quality benchmark.
+  - Video-generation models matured into studio tooling: Runway Gen-3 Alpha and successors, Kling (now licensed by major studios for background plates), Pika and OpenAI's Sora are used in previs, concepting and background work, while World Labs' Marble generates complete environments exportable directly as splats.
+  - OpenUSD hardened as the interchange standard: the Alliance for OpenUSD (AOUSD) ratified Core Specification 1.0 in December 2025 (a first step toward ISO ratification), USD 25.02 added MaterialX/OpenPBR support, and membership grew from the five founders (Pixar, Adobe, Apple, Autodesk, NVIDIA) to roughly 50, with a Characters, Motion and Interactivity Interest Group formed in March 2026.
+  - Real-time rendering crossed the final-pixel threshold, with Unreal Engine 5's Movie Render Queue delivering hero shots for ICVFX on LED volumes and mid-budget broadcast; NAB Show 2025 featured Sony's Ocellus marker-free camera tracking and Crystal LED off-axis colour compensation to lower LED-volume operating costs.
+  - Market signals: analysts size the virtual-production market at roughly USD 2.9 billion in 2025 with projections toward USD 18.5 billion by 2035, and GPU rendering's share is rising toward about 60% by 2026, though the VFX/animation business itself was near-flat (about 1.0% growth) across the 12 months spanning H2 2024 to H1 2025.
+  - Open challenges as of 2026 centre on unresolved copyright and training-data provenance for AI-generated assets (studios adopting pragmatic, preemptive sourcing policies), labour reallocation away from repetitive technical tasks toward creative direction, and interoperability friction moving splats and 4D radiance-field data cleanly across departments.
+
+- ### References
+  - 1. SuperRenders Farm (2026). VFX Industry Trends 2026: Real-Time, AI, USD, Cloud. https://superrendersfarm.com/article/vfx-industry-trends-2026
+  - 2. Alliance for OpenUSD / Steve May (2026). AOUSD Year in Review: A Landmark Year for OpenUSD Standardization and Growth in 2025. https://aousd.org/blog/aousd-year-in-review-a-landmark-year-for-openusd-standardization-and-growth-in-2025/
+  - 3. CGChannel (2025). AOUSD releases the first OpenUSD Core Specification. https://www.cgchannel.com/2025/12/aousd-releases-the-first-openusd-core-specification/
+  - 4. FinancialContent / TokenRing (2026). The AI Revolution in Cinema: How Netflix's 'El Eternauta' Redefined the VFX Pipeline. https://markets.financialcontent.com/bpas/article/tokenring-2026-1-8-the-ai-revolution-in-cinema-how-netflixs-el-eternauta-redefined-the-vfx-pipeline
+  - 5. Volinga.ai (2026). The Next Big Thing in Splats: 2025's Turning Point and 2026 Trends. https://web.volinga.ai/2025-turning-point-and-2026-trends-blog/
+  - 6. VFX Voice (2026). Entering 2026, VFX/Animation Industry Balances Uncertainty and Opportunity. https://vfxvoice.com/entering-2026-vfx-animation-industry-balances-uncertainty-and-opportunity/
+
 - ### Provenance
   - sources:: Academy Software Foundation documentation; Khronos Group specifications; SIGGRAPH proceedings; VFX Reference Platform; Unreal Engine and Unity technical documentation
   - updated:: 2026-06-13

@@ -320,6 +320,23 @@ public:: true
   - **MaterialX** (Academy Software Foundation) — open standard for specifying material and texture graph networks portably across DCC tools and renderers.
   - **USD (Universal Scene Description)** (Pixar/Nvidia) — scene description format that includes material and texture binding; textures are referenced as asset paths and resolved by the runtime.
 
+- ### Current Landscape (2026)
+  - Neural texture compression (NTC) has moved from research to production: NVIDIA's RTX Neural Texture Compression SDK (v0.5 beta Feb 2025, reaching v0.10 beta by 2025-2026) compresses up to 16 correlated PBR channels per material into a shared latent representation plus a tiny per-material MLP decoder, reporting up to roughly 7x lower VRAM than block-compressed (BCn) textures at comparable quality (PSNR ~40-50 dB).
+  - Hardware-accelerated decode arrived via Cooperative Vectors, which expose RTX Tensor Cores directly to shaders: Microsoft shipped a DirectX 12 Agility SDK preview (Shader Model 6.9) in 2025 alongside NVIDIA OptiX 9.0, Vulkan (VK_NV_cooperative_vector) and Slang paths, giving a 2-4x inference speed-up on Ada/Blackwell GPUs; early July 2025 RTX 5080 tests reported ~80% higher framerates and up to 90% VRAM reduction.
+  - NTC shipped in a commercial title with Ubisoft's Assassin's Creed Mirage (documented Feb 2026), using latent textures exported as standard BC formats to keep mipmapping, anisotropic filtering and streaming intact, cutting material memory by about 30%.
+  - AI text-to-texture and image-to-material generation matured into mainstream DCC tooling: Adobe Substance 3D Sampler added Firefly-powered Text-to-Texture, Text-to-Pattern and Image-to-Texture (beta, 2024 onward, iterated through v4.4 in 2026) producing tileable maps, while Meshy 6 generates full PBR-textured meshes (albedo, normal, metalness, roughness bound to UVs) in about a minute.
+  - Research on decomposing generated images into physically-based svBRDF maps advanced with Ubisoft La Forge's CHORD "Chain of Rendering Decomposition" (open-weights, SIGGRAPH Asia 2025) and academic methods like TexPro that output relightable procedural materials rather than baked-lighting RGB.
+  - Intel added its own path: cooperative-vector-accelerated neural block texture compression on Arc B-series GPUs reporting up to ~5x compression over traditional BC and ~10x faster decode, signalling multi-vendor rather than NVIDIA-only adoption.
+  - Key open challenges as of 2026 remain the lack of shipping DXR 1.2 / Cooperative Vector drivers for AMD and (until recently) Intel, NVIDIA's own guidance not to ship DX12 Cooperative-Vector builds until Microsoft finalises the API, decode cost and quality loss at very low bitrates versus BCn blockiness, the requirement that all channels share resolution, and integrating neural decode cleanly with virtual texturing and stochastic texture filtering.
+
+- ### References
+  - 1. NVIDIA (2025). RTX Neural Texture Compression (NTC) SDK. https://github.com/NVIDIA-RTX/RTXNTC
+  - 2. NVIDIA Developer Blog (2025). Neural Rendering in NVIDIA OptiX Using Cooperative Vectors. https://developer.nvidia.com/blog/neural-rendering-in-nvidia-optix-using-cooperative-vectors/
+  - 3. Ubisoft (2026). Shipping Neural Texture Compression in Assassin's Creed Mirage. https://www.ubisoft.com/en-us/news/ignt.58488/shipping-neural-texture-compression-in-assassin-s-creed-mirage
+  - 4. Microsoft DirectX Developer Blog (2025). D3D12 Cooperative Vector. https://devblogs.microsoft.com/directx/cooperative-vector/
+  - 5. Ubisoft La Forge (2025). Generative Base Material and the CHORD model for PBR material estimation (SIGGRAPH Asia 2025). https://www.ubisoft.com/en-us/studio/laforge/news/1i3YOvQX2iArLlScBPqBZs/generative-base-material-an-opensource-prototype-for-pbr-material-estimation-debuting-at-siggraph-asia-2025
+  - 6. Adobe (2026). Substance 3D Sampler Generative Workflows: Text-to-Texture, Image-to-Texture. https://experienceleague.adobe.com/en/docs/substance-3d-sampler/using/features-and-workflows/generative-workflows
+
 - ### Provenance
   - sources:: Ed Catmull, "A Subdivision Algorithm for Computer Display of Curved Surfaces" (1974); Khronos OpenGL 4.6 specification; glTF 2.0 specification; ASTC Texture Compression specification (ARM); MaterialX specification (ASWF)
   - updated:: 2026-06-13

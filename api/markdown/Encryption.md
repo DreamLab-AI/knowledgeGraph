@@ -281,6 +281,23 @@ public:: true
   - **Implementation bugs**: memory-safety vulnerabilities in cryptographic libraries (e.g., Heartbleed in OpenSSL) can expose keys or plaintext; formally verified implementations (e.g., HACL*) reduce this risk.
   - **Legal and regulatory tension**: lawful access demands and "exceptional access" proposals (backdoors) remain controversial; cryptographic consensus holds that algorithmic backdoors are incompatible with strong security.
 
+- ### Current Landscape (2026)
+  - The defining shift is the move to post-quantum encryption: on 13 August 2024 NIST finalised its first three PQC standards — FIPS 203 (ML-KEM, the primary general-encryption key-encapsulation mechanism, formerly CRYSTALS-Kyber), FIPS 204 (ML-DSA signatures) and FIPS 205 (SLH-DSA hash-based signatures) — urging administrators to begin migrating immediately.
+  - NIST broadened the portfolio by selecting the code-based HQC (Hamming Quasi-Cyclic) as a backup KEM to ML-KEM on 11 March 2025 (draft standard expected early 2026, final 2027), while FIPS 206 (FN-DSA, based on Falcon) remained in draft as of mid-2026; NIST also published SP 800-227 (Recommendations for KEMs) in September 2025.
+  - Real-world deployment accelerated sharply around the hybrid X25519MLKEM768 key exchange: Cloudflare reported on 7 April 2026 that more than half of the human web traffic it processes now uses post-quantum key agreement, up from roughly 2% in early 2024, and Chrome, Edge and Firefox now enable the hybrid handshake by default.
+  - Encrypted messaging led the consumer rollout — Apple shipped its PQ3 protocol for iMessage from iOS 17.4 in 2024 (adding ML-KEM to the ongoing ratchet for "Level 3" security), Signal deployed its PQXDH hybrid, and platforms such as Zoom added PQC support; OpenSSL 3.5 now ships a quantum-resistant hybrid KEM.
+  - Regulatory and vendor timelines hardened: NSA's CNSA 2.0 mandates PQC in new national-security acquisitions from 1 January 2027, NIST IR 8547 targets deprecating RSA-2048/ECC P-256 by 2030 and removing quantum-vulnerable algorithms by 2035, and Google announced a 2029 target for completing PQC migration across Chrome, Android and Google Cloud.
+  - The frontier is shifting from confidentiality to authentication: Google and others are now prioritising signature migration (ML-DSA/SLH-DSA) to counter "trust now, forge later", with Let's Encrypt committing to Merkle Tree Certificates for post-quantum Web PKI (staging late 2026, production 2027).
+  - Open challenges as of 2026 include a near-total gap in post-quantum certificates (one measurement study found ~49% of domains support hybrid PQ key exchange but 0% use hybrid PQ certificates), no FIPS 140-3 validated module yet offering PQC in approved mode, and the "harvest now, decrypt later" exposure of long-lived data still under classical RSA/ECC.
+
+- ### References
+  - 1. NIST (2024). NIST Releases First 3 Finalized Post-Quantum Encryption Standards (FIPS 203/204/205). https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards
+  - 2. NIST CSRC (2025). Post-Quantum Cryptography Standardization Process (HQC selection, FIPS 206 status). https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization
+  - 3. Shattered.io (2026). Post-Quantum Cryptography: 50% of Web Now Safe [2026]. https://shattered.io/post-quantum-cryptography-2026/
+  - 4. Wiz (2026). State of Post-Quantum Cryptography (Google 2029 target; authentication pivot). https://www.wiz.io/blog/state-of-post-quantum-cryptography
+  - 5. Encryption Consulting (2026). PQC Migration Frameworks: What Changed Between March and June 2026. https://www.encryptionconsulting.com/pqc-migration-frameworks-updates-june-2026/
+  - 6. arXiv (2026). Measurement Study of Post-Quantum Readiness of the Internet: 2026. https://arxiv.org/html/2606.16473v1
+
 - ### Provenance
   - sources:: NIST FIPS 197; NIST FIPS 203/204; RFC 8446 (TLS 1.3); ISO/IEC 18033; Rogaway & Shrimpton (2006) "A Provable-Security Treatment of the Key-Wrap Problem"; Ferguson, Schneier & Kohno "Cryptography Engineering"
   - updated:: 2026-06-13

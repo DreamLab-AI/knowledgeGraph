@@ -329,6 +329,22 @@ public:: true
     - **[[TensorFlow Model Optimisation Toolkit]]**: Google's companion library codifying quantisation and pruning recipes used with TFLite deployment.
   - The Apache 2.0 licence covers all TFLite / LiteRT source code; Google coordinates development on GitHub under the `tensorflow/tensorflow` monorepo and, since 2024, the `google-ai-edge/LiteRT` repository.
 
+- ### Current Landscape (2026)
+  - On 4 September 2024 Google rebranded TensorFlow Lite as LiteRT (short for "Lite Runtime"), reflecting a framework-neutral vision that runs models authored in PyTorch, JAX, Keras and TensorFlow; documentation moved to ai.google.dev/edge/litert and packages migrated to com.google.ai.edge.litert (Maven) and ai-edge-litert (PyPI), while the .tflite file format and Interpreter API stayed backward-compatible.
+  - The runtime is now positioned within the Google AI Edge suite, and a LiteRT 2.x line introduced a modern CompiledModel API that supersedes the legacy Interpreter/delegate model with automated accelerator selection; all new features and performance work ship under LiteRT rather than the frozen TFLite packages.
+  - At Google I/O 2025 (20 May 2025) Google previewed the "maximum performance, simplified" release built on ML Drift, its next-generation GPU engine spanning OpenCL, OpenGL, Metal and WebGPU across Android, iOS, macOS, Windows, Linux and Web; on 28 January 2026 these acceleration capabilities "fully graduated" into the production stack, averaging roughly 1.4x faster GPU inference than the legacy TFLite GPU delegate.
+  - Unified NPU acceleration became a headline feature, co-developed with Qualcomm and MediaTek: the LiteRT Qualcomm AI Engine Direct (QNN) Accelerator announced in November 2025 replaced the old TFLite QNN delegate, and on Snapdragon 8 Elite Gen 5 NPU inference is reported up to 100x faster than CPU (about 10x faster than GPU), with over 50 of 72 benchmarked models running under 5 ms via an ahead-of-time (AOT) compilation and Google Play On-device AI (PODAI) delivery workflow.
+  - On-device generative AI is now central through LiteRT-LM, a cross-platform LLM pipeline library shipping in Chrome, ChromeOS, Pixel Watch and the viral Google AI Edge Gallery app (announced with audio support and Google Play availability in September 2025); it runs models such as Gemma 4 E2B in the new .litertlm packaging format across CPU, GPU and NPU backends.
+  - Key players span Google (AI Edge / LiteRT team), silicon partners Qualcomm, MediaTek, Intel (OpenVINO offload to Intel NPUs on AI PCs) and Arm (SME2 acceleration), with pre-optimised models distributed via Qualcomm AI Hub and delivered through Google Play AI Packs.
+  - Open challenges as of 2026 include silicon fragmentation across NPU vendors and SoC variants despite the unified API, the added complexity of AOT compilation and runtime-library distribution, memory pressure from multi-gigabyte on-device LLMs (Gemma 4 E2B is around 2.58 GB), and a migration burden as the TFLite name and its support-library/Tasks components are progressively retired in favour of LiteRT and MediaPipe Tasks.
+
+- ### References
+  - 1. Google AI Edge team / Google Developers Blog (2024). TensorFlow Lite is now LiteRT. https://developers.googleblog.com/en/tensorflow-lite-is-now-litert/
+  - 2. Google Developers Blog (2026). LiteRT: The Universal Framework for On-Device AI. https://developers.googleblog.com/litert-the-universal-framework-for-on-device-ai/
+  - 3. Google Developers Blog (2025). LiteRT: Maximum performance, simplified. https://developers.googleblog.com/litert-maximum-performance-simplified/
+  - 4. Edge AI and Vision Alliance (2025). Google Announces LiteRT Qualcomm AI Engine Direct Accelerator. https://www.edge-ai-vision.com/2025/11/google-announces-litert-qualcomm-ai-engine-direct-accelerator/
+  - 5. Google Developers Blog (2026). Blazing fast on-device GenAI with LiteRT-LM. https://developers.googleblog.com/blazing-fast-on-device-genai-with-litert-lm/
+
 - ### Provenance
   - sources:: Google AI Edge documentation; TensorFlow GitHub repository; MLPerf Inference benchmark reports; Google I/O 2017–2024 session materials; Android Neural Networks API developer guide.
   - updated:: 2026-06-13

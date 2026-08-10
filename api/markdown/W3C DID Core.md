@@ -300,6 +300,22 @@ public:: true
   - The `did:peer` and `did:key` methods are particularly relevant for offline-first and airgapped scenarios where blockchain connectivity is unavailable.
   - DID method selection involves trade-offs between decentralisation, performance, cost, and trust assumptions — `did:web` is simple but trust depends on DNS/TLS; `did:ion` provides stronger anchoring guarantees at higher resolution latency.
 
+- ### Current Landscape (2026)
+  - The W3C Decentralized Identifier Working Group published Decentralized Identifiers (DIDs) v1.1 as a Candidate Recommendation Snapshot on 5 March 2026, revising the v1.0 Recommendation of 19 July 2022 and opening a public comment window that ran until 5 April 2026.
+  - v1.1 is a refinement rather than a structural overhaul: it consolidates the core media type to `application/did` following IANA registration, adds a v1.1 JSON-LD context (`https://www.w3.org/ns/did/v1.1`), and re-layers the specification on top of the Controlled Identifiers v1.0 Recommendation that W3C published on 15 May 2025.
+  - DID resolution has been split out into a separate deliverable, with Decentralized Identifier Resolution (DID Resolution) reaching its own Candidate Recommendation Snapshot on 6 August 2026, though the DID URL dereferencing feature is currently flagged as at risk and may be changed or removed.
+  - To exit Candidate Recommendation the Working Group requires at least two independent, interoperable implementations per machine-testable feature, with full Recommendation not expected before Q1 2027 per the draft charter.
+  - eIDAS 2.0 entered into force in May 2024 and mandates that every EU member state offer at least one interoperable European Digital Identity Wallet (EUDI Wallet) for free by the end of 2026, with private-sector relying parties (including banks for KYC and payment authentication) required to accept wallets by end 2027, driving demand for standardised decentralised identity.
+  - The EUDI Architecture and Reference Framework currently centres on W3C Verifiable Credentials and ISO/IEC 18013-5/-7 mdoc formats, and recent analysis (arXiv, December 2025 EDPS TechDispatch) pushes for autonomously wallet-generated DIDs bound to official eIDs to preserve user control alongside PKI-based trust.
+  - Key contributors remain W3C editors Manu Sporny and Dmitri Zagidulin, alongside vendors such as Sphereon, Northern Block and Spherity active in EU wallet conformance; open challenges include proving cross-method interoperability at scale, resolving the at-risk dereferencing model, and reconciling self-sovereign DID architecture with regulator-favoured centralised trust anchors.
+
+- ### References
+  - 1. W3C Decentralized Identifier Working Group (2026). Decentralized Identifiers (DIDs) v1.1, Candidate Recommendation Snapshot. https://www.w3.org/TR/2026/CR-did-1.1-20260305/
+  - 2. PPC Land (2026). W3C pushes DIDs v1.1 to implementations - and your ad stack may feel it. https://ppc.land/w3c-pushes-dids-v1-1-to-implementations-and-your-ad-stack-may-feel-it/
+  - 3. W3C Decentralized Identifier Working Group (2026). Decentralized Identifier Resolution (DID Resolution) v1.0, Candidate Recommendation Snapshot. https://www.w3.org/TR/2026/CR-did-resolution-1.0-20260806/
+  - 4. GS1 (2025). Verifiable Credentials and Decentralised Identifiers: technology landscape. https://ref.gs1.org/docs/2025/VCs-and-DIDs-tech-landscape
+  - 5. European Data Protection Supervisor (2025). TechDispatch #3/2025 - Digital Identity Wallets. https://www.edps.europa.eu/data-protection/our-work/publications/techdispatch/2025-12-15-techdispatch-32025-digital-identity-wallets_en
+
 - ### Provenance
   - sources:: W3C DID Core 1.0 Recommendation (2022-07-19), W3C Verifiable Credentials Data Model, DIF Universal Resolver documentation, W3C DID Specification Registries
   - updated:: 2026-06-13

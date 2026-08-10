@@ -344,6 +344,23 @@ public:: true
   - Papernot et al. (2017) — PATE (Private Aggregation of Teachers' Ensembles), enabling DP knowledge distillation.
   - Bonawitz et al. (2019) — practical secure aggregation for FL at scale.
 
+- ### Current Landscape (2026)
+  - Confidential-computing (TEE-based) inference has moved from research to production: as of mid-2026, confidential GPU offerings on NVIDIA H100/H200 and Blackwell B200 are generally available across Azure and Google Cloud, and NVIDIA has reached its third generation with the Vera Rubin architecture, extending near-unencrypted-performance TEEs to rack scale (NVL72) with CPU TEEs (Intel TDX, AMD SEV-SNP).
+  - Apple, in June 2026, extended Private Cloud Compute (first launched June 2024 with Apple Intelligence) beyond its own data centres to Google Cloud, running Apple Intelligence workloads on NVIDIA Confidential Computing GPUs with Intel TDX and Google's Titan chip while preserving its stateless-computation, non-targetability and verifiable-transparency guarantees.
+  - Provider-run confidential inference is now an industry pattern: Anthropic published its Confidential Inference architecture (SEV-SNP/TDX plus H100/H200 in CC mode) in June 2025, and open frameworks such as OpenPcc (Intel TDX + H100, demonstrated on Llama-3 8B via vLLM) appeared in 2026; measured overheads have fallen to roughly 4-10% for CPU/GPU TEE LLM inference.
+  - Differential privacy gained formal standardisation footing when NIST finalised SP 800-226, Guidelines for Evaluating Differential Privacy Guarantees, in March 2025 (with accompanying Python notebooks); DP-SGD with Renyi/f-DP accounting is now the audited baseline, and ISO/IEC 27559 plus GDPR privacy-by-design are increasingly cited together for regulated deployments.
+  - Homomorphic encryption is closing the practicality gap for private inference: 2025-2026 work on selective parameter encryption, Homomorphic Adversarial Networks and multi-key HE (MK-HE), plus CKKS tooling such as TenSEAL, reported around 100x computation reductions for GPT-2-scale models versus full-model HE.
+  - Federated learning has stratified into cross-silo (regulated hospitals, banks) and cross-device (Google Gboard, Apple on-device) modes, and hybrid PPML designs now let clients choose HE or DP per their compute budget; the European Data Protection Supervisor issued a dedicated FL TechDispatch (#1/2025) in June 2025.
+  - The PPML market is estimated at roughly USD 4.77 billion in 2026 (about 25% CAGR), yet open challenges persist: the privacy-utility-fairness trade-off (DP noise at epsilon under 1 can cost 15-30% accuracy), cross-border data-localisation compliance, cross-vendor TEE attestation trust, and machine unlearning for GDPR erasure remain unresolved frontiers.
+
+- ### References
+  - 1. AI Cloud Insider (2026). Privacy-Preserving Machine Learning in 2026. https://www.aicloudinsider.com/articles/privacy-preserving-machine-learning-in-2026
+  - 2. Apple Security Engineering (2026). Expanding Private Cloud Compute. https://security.apple.com/blog/expanding-pcc/
+  - 3. AI Wiki (2026). Trusted Execution Environments for machine learning. https://aiwiki.ai/wiki/tee_for_ml
+  - 4. NVIDIA (2026). AI Security with Confidential Computing. https://www.nvidia.com/en-us/data-center/solutions/confidential-computing/
+  - 5. Near, J., Darais, D., Lefkovitz, N. & Howarth, G. / NIST (2025). Guidelines for Evaluating Differential Privacy Guarantees (SP 800-226). https://csrc.nist.gov/pubs/sp/800/226/final
+  - 6. European Data Protection Supervisor (2025). TechDispatch #1/2025 - Federated Learning. https://www.edps.europa.eu/data-protection/our-work/publications/techdispatch/2025-06-10-techdispatch-12025-federated-learning_en
+
 - ### Provenance
   - sources:: Dwork & Roth "The Algorithmic Foundations of Differential Privacy" (2014); McMahan et al. "Communication-Efficient Learning of Deep Networks from Decentralized Data" (2017); Yang et al. "Federated Machine Learning: Concept and Applications" (2019); Gentry "A Fully Homomorphic Encryption Scheme" (2009)
   - updated:: 2026-06-13

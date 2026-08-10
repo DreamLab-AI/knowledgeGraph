@@ -257,6 +257,23 @@ public:: true
   - **OAuth 2.0 (RFC 6749) and OpenID Connect** — widely used token protocols that PEPs validate at API enforcement points, with token introspection (RFC 7662) enabling dynamic validation against the authorisation server.
   - **Open Policy Agent (OPA)** — a de facto standard open-source PDP engine (CNCF graduated project) that PEPs query via REST or gRPC, using the Rego policy language. OPA supports Kubernetes, Envoy, Terraform, and many other PEP integration points.
   - **ISO/IEC 29115** (Entity Authentication Assurance) provides the assurance level framework that PEPs consume when enforcing authentication-strength requirements as part of authorisation decisions.
+- ### Current Landscape (2026)
+  - The OpenID Foundation's AuthZEN Working Group published the Authorization API 1.0 as a Standards Track final specification on 11 March 2026, standardising the PEP-to-PDP interface (SARC model: Subject, Action, Resource, Context) with a strict contract in which a deny is never a 4xx and a malformed request is never a false decision; it defines Access Evaluation, batch Evaluations, Search and PDP Metadata/discovery endpoints plus new IANA registries.
+  - This is the first industry-standard PEP/PDP wire protocol, letting organisations swap policy decision points (OPA, Cedar/Amazon Verified Permissions, Axiomatics, Cerbos, Aserto/Topaz, SGNL) without rewriting enforcement code; the WG completed seven interop events between Identiverse 2024 and Gartner IAM 2025, progressing from app-code PEPs to API gateways (Kong, Envoy, Layer7) and an IdP-centric interop in December 2025.
+  - AuthZEN is being positioned as a complement to OAuth 2.1 for fine-grained decisions that scopes cannot express, and directly aligns with NIST SP 800-207 Zero Trust and the older SP 800-162 ABAC model by providing per-request authorisation.
+  - A major 2026 frontier is agent/AI authorisation: the AuthZEN profile for Model Context Protocol tool authorisation (COAZ), showcased at Identiverse 2026, has a gateway or MCP server consult the PDP before an AI tool runs to answer whether a given agent, acting for a given user, may call a tool with specific arguments.
+  - Vendors are converging AuthZEN with adjacent standards for defence-in-depth: Shared Signals (SSF/CAEP) feeds fresh security context to the PDP, AuthZEN handles the fast local decision, and IETF Transaction Tokens (TraTs) propagate that decision across internal services; an Access Request and Approval Profile (ARAP) is in draft to cover human approval flows.
+  - On the managed-service side, AWS published an open-source AuthZEN-compliant PEP reference implementation for Amazon Verified Permissions (Cedar) in April 2025 and guidance in November 2025 for migrating PDPs from Open Policy Agent (Rego) to Verified Permissions (Cedar).
+  - Open challenges as of 2026 include enforcing fail-closed behaviour under PDP outage, keeping sub-10ms decision latency for in-path PEPs (gateway, service-mesh sidecar, in-process middleware), maintaining a canonical request schema across many PEPs, and extending externalised authorisation to SaaS/COTS products and native app-development frameworks, which remain future interop targets.
+
+- ### References
+  - 1. dev.to / kanywst (2026). AuthZEN Authorization API 1.0 Deep Dive: The Standard API That Separates Authorization Decisions from Enforcement. https://dev.to/kanywst/authzen-authorization-api-10-deep-dive-the-standard-api-that-separates-authorization-decisions-1m2a
+  - 2. OpenID Foundation (2026). AuthZEN at Identiverse 2026: authorization in the agent era. https://openid.net/authzen-at-identiverse-2026-authorization-in-the-agent-era/
+  - 3. OpenID Foundation / AuthZEN WG (2025). OpenID AuthZEN Overview - Gartner IAM 2025 (draft timeline and interop history). https://www.slideshare.net/slideshow/openid-authzen-overview-gartner-iam-25/284612101
+  - 4. Amazon Web Services (2025). How to support OpenID AuthZEN requests with Amazon Verified Permissions. https://aws.amazon.com/blogs/security/how-to-support-openid-authzen-requests-with-amazon-verified-permissions/
+  - 5. Axiomatics (2025). Enforcement Strategies: When PEPs are not enough. https://axiomatics.com/blog/enforcement-strategies-when-peps-not-enough
+  - 6. Session-Management.com (2026). Policy Enforcement Points in Microservices. https://www.session-management.com/advanced-access-control-authorization/policy-enforcement-points-in-microservices/
+
 - ### Provenance
   - sources:: OASIS XACML 3.0 Specification; NIST SP 800-207 (Zero Trust Architecture); NIST SP 800-162 (ABAC Guide); RFC 6749 (OAuth 2.0); OPA Documentation (openpolicyagent.org); CSA SDP Specification v2
   - updated:: 2026-06-13

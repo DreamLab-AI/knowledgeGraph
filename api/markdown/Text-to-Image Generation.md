@@ -311,6 +311,23 @@ alias:: Text to Image Generation
   - **2024**: Stable Diffusion 3, Flux (DiT), DALL-E 4/GPT-4o native image generation; video models (Sora, Runway, Kling) extend paradigm to motion; EU AI Act enters force
   - **2025–2026**: Real-time generation on consumer hardware; character consistency and multi-reference conditioning mature; on-device deployment via distilled models
 
+- ### Current Landscape (2026)
+  - The frontier has shifted from standalone diffusion models to natively multimodal image systems: OpenAI replaced DALL-E 3 with gpt-image-1 (23 April 2025), then GPT Image 1.5 (16 December 2025) and GPT Image 2 (April 2026), the latter topping the Artificial Analysis text-to-image arena at roughly 1,370 Elo.
+  - Black Forest Labs released the FLUX.2 series on 25 November 2025 (Pro, Flex, Dev and the Apache-2.0 Klein variant, with FLUX.2 [max] following 16 December 2025), displacing Stable Diffusion as the most-loaded open-weight base model in ComfyUI and Forge; Stable Diffusion 3.5 (October 2024) remains the second most-deployed open family.
+  - Google made Imagen 4 generally available on 14 August 2025 but is now retiring the entire Imagen line on 17 August 2026, steering users to its Gemini-native "Nano Banana" image models (Nano Banana 2 / Gemini 3.1 Flash Image shipped 26 February 2026).
+  - Midjourney moved off Discord-only access: v7 became the default on 17 June 2025, V8.1 became default in June 2026, and an official API arrived in late 2025 / 2026 after years of unofficial-only access.
+  - Reliable in-image text rendering, long the signature failure mode, is now broadly considered solved across GPT Image, Imagen, Ideogram 3.0 and FLUX.2, and per-image API pricing has commoditised to roughly USD 0.01–0.17 depending on tier.
+  - The EU AI Act's Article 50 transparency obligations became enforceable on 2 August 2026, requiring providers to machine-readable-mark synthetic image output and deployers to visibly label deepfakes, with the supporting Code of Practice published 10 June 2026.
+  - The mandated marking stack layers C2PA Content Credentials with imperceptible pixel watermarking such as Google SynthID; systems already on the market get a grace period to 2 December 2026 and cross-vendor watermark detection is due by February 2027, with non-compliance fines up to EUR 15 million or 3% of worldwide turnover.
+  - Open frontier challenges as of 2026 include watermark robustness against re-uploads and screenshots, provenance metadata being stripped or forgeable, copyright-safe training data (favouring indemnified offerings like Adobe Firefly and FLUX.2 Klein), and the persistent gap between machine-readable marking and actual deepfake detection.
+
+- ### References
+  - 1. Gradually (2026). The 9 Best AI Image Generation Models in 2026. https://www.gradually.ai/en/ai-image-models/
+  - 2. Yenra (2026). Text-to-Image AI in 2026: From Diffusion Breakthrough to Editing. https://yenra.com/ai/text-to-image/
+  - 3. Artificial Analysis (2026). Text to Image Leaderboard — Top AI Image Models. https://artificialanalysis.ai/image/leaderboard/text-to-image
+  - 4. Netarx (2026). EU AI Act Article 50: What Deepfake Compliance Requires Now. https://www.netarx.com/blog/eu-ai-act-article-50-what-deepfake-compliance
+  - 5. ComplianceHub (2026). Watermarks and Metadata: How to Actually Comply With the EU AI Act (Code of Practice, Article 50). https://compliancehub.wiki/eu-ai-act-marking-labelling-code-of-practice-article-50-2026/
+
 - ### Provenance
   - sources:: Training data from authoritative ML publications (Ho et al. 2020, Ramesh et al. 2021, Saharia et al. 2022, Rombach et al. 2022), EU AI Act text, US Copyright Office guidance, C2PA specification
   - updated:: 2026-06-13

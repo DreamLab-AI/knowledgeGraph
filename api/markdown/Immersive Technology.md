@@ -343,6 +343,22 @@ alias:: ImmersiveTechnology
   - Education sector expansion
   - Entertainment innovation
 
+- ### Current Landscape (2026)
+  - The centre of gravity has shifted from headsets to AI smart glasses: IDC reports the display-eyewear XR segment grew roughly 86% year-on-year in Q1 2026, with smart glasses making up about half of the 14.5 million XR devices shipped in 2025 (up from ~25% share in 2024) while standalone VR/MR headset shipments contracted.
+  - Meta dominates the combined market (69.2% share in Q1 2026, ~75% of the VR headset segment) on the strength of its EssilorLuxottica partnership, shipping Ray-Ban Meta (Gen 2) and Oakley Meta HSTN glasses, and in 2026 attributed Reality Labs growth to AI glasses rather than Quest sales.
+  - Google and Samsung opened a third front with Android XR: Samsung's Galaxy XR headset (formerly Project Moohan, ~$1,799, Gemini AI) shipped with modest ~125,000-unit 2026 forecasts, while Android XR unifies ARCore and OpenXR 1.1 with sub-20ms motion-to-photon latency and a staged roadmap of audio glasses (Warby Parker, Gentle Monster), display glasses and headsets.
+  - Apple kept Vision Pro in a premium niche, shipping visionOS 26 (WWDC June 2025) with 90Hz hand tracking, a spatial accessory API and PS VR2 controller support, followed by an M5-refreshed Vision Pro in late 2025; reported production cut-backs left Q4 2025 shipments around 45,000 units.
+  - Standards matured materially: in June 2025 Khronos added OpenXR extensions for plane detection, spatial anchors and persistence to improve cross-platform interoperability, and WebXR reached practical maturity (Snap's Snap OS 2.0 ships a WebXR browser for its 2026 consumer "Specs" glasses, backed by an 11-year, $3bn programme).
+  - Regulation is coalescing around biometric privacy: EU, US and Asia-Pacific regulators are moving to govern the continuous eye-tracking, hand-geometry, voice and environmental-mapping data these devices capture, now cited as the most pressing near-term compliance risk for platform vendors.
+  - The frontier challenges as of 2026 are operating-system fragmentation across visionOS, Android XR, Meta Horizon OS and Windows Mixed Reality, persistent human-factors barriers (motion sickness, visual fatigue, social stigma of public wearables), and proving enterprise ROI in manufacturing, logistics, training and remote maintenance where adoption is quietly strongest.
+
+- ### References
+  - 1. IDC (2026). Smart Glasses Surge: The XR Market Is Rewriting Its Own Rules. https://www.idc.com/resource-center/blog/smart-glasses-surge-the-xr-market-is-rewriting-its-own-rules/
+  - 2. Treeview Studio (2026). XR & Smart Glasses Market Statistics Report (2026). https://treeview.studio/blog/xr-spatial-computing-smart-glasses-market-statistics-report
+  - 3. Marketintelo (2026). Spatial Computing and Mixed Reality Market Research Report. https://marketintelo.com/report/spatial-computing-and-mixed-reality-market
+  - 4. TS2 Tech (2025). XR Revolution Unleashed: June–July 2025's Biggest Extended/Mixed Reality Breakthroughs. https://ts2.tech/en/xr-revolution-unleashed-june-july-2025s-biggest-extended-mixed-reality-breakthroughs/
+  - 5. SFVR (2026). Android XR's CES Moment Signals a New Battle for Spatial Computing. https://sfvr.io/android-xrs-ces-moment-signals-a-new-battle-for-spatial-computing/
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

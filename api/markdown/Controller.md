@@ -310,6 +310,23 @@ public:: true
   - **Optimal Control** — Pontryagin's minimum principle and dynamic programming (Bellman equation) underpin MPC and [[Reinforcement Learning]]; connects robotics control to [[Machine Learning]] policy optimisation.
   - **Adaptive Control** — controllers that update their parameters online as plant dynamics change; relevant to systems subject to wear, load variation, or environmental shifts.
 
+- ### Current Landscape (2026)
+  - Learned, RL-trained whole-body controllers have become the dominant paradigm for humanoids: HugWBC (arXiv 2502.03206, Feb 2025) demonstrated a single reinforcement-learning policy producing walking, jumping, standing and hopping gaits with real-time upper-body teleoperation intervention on real hardware.
+  - Behavioural Foundation Models (BFMs) reframed the controller as a pre-trained, reusable skill prior enabling zero-shot or few-shot task adaptation; NVIDIA's HOVER and the "Next-Generation Whole-Body Control System" survey (arXiv 2506.20487, updated Feb 2026) typify the shift away from per-task retraining.
+  - Agility Robotics deployed a whole-body control foundation model as Digit's learned "motor cortex" (a sub-one-million-parameter LSTM trained in NVIDIA Isaac Sim over decades of simulated time in three to four days) that transfers zero-shot to hardware (Aug 2026).
+  - Sim-to-real training collapsed dramatically: Seo et al. (arXiv 2512.01996, Dec 2025) trained deployable humanoid locomotion controllers for Unitree G1 and Booster T1 in roughly 15 minutes on a single RTX 4090 using off-policy FastTD3/FastSAC.
+  - Industrial controllers moved onto open, GPU-accelerated stacks: NVIDIA released Isaac ROS 4.0 on the Jetson Thor platform at ROSCon 2025 (Oct 2025) and joined the Open Source Robotics Alliance's new Physical AI Special Interest Group, while FANUC open-sourced a ros2_control-compatible ROS 2 driver with 1 ms real-time control in Dec 2025.
+  - Real-time motion-control hardware advanced with AI accelerators fused into the control loop: NEXCOM unveiled one of the first dual-EtherCAT-master AI robot controllers on NVIDIA Jetson AGX Orin at GTC 2025 (Mar 2025), targeting ultra-low-latency multi-axis control of humanoids and quadrupeds.
+  - The open frontier as of 2026 centres on safe deployment of neural policies at control-loop rates: NVIDIA's Isaac ROS Deploy (v4.4.0, May 2026) wraps ONNX policies in a safety controller via ros2_control or Triton, reflecting unresolved challenges around verifiable safety, deterministic timing and sim-to-real robustness for learned controllers.
+
+- ### References
+  - 1. Xue et al. / arXiv (2025). HugWBC: A Unified and General Humanoid Whole-Body Controller for Fine-Grained Locomotion. https://arxiv.org/html/2502.03206v3
+  - 2. arXiv (2026). Next-Generation Whole-Body Control System of Humanoid Robots (behavioural foundation models). https://arxiv.org/html/2506.20487v5
+  - 3. Agility Robotics (2026). Training a Whole-Body Control Foundation Model. https://www.agilityrobotics.com/content/training-a-whole-body-control-foundation-model
+  - 4. Seo, Sferrazza, Chen, Shi, Duan, Abbeel / arXiv (2025). Learning Sim-to-Real Humanoid Locomotion in 15 Minutes. https://arxiv.org/abs/2512.01996
+  - 5. FANUC (2025). ROBOT New Technology: Open Platforms & Physical AI (ROS 2 driver, 1 ms ros2_control). https://www.fanuc.co.jp/en/product/new_product/2025/202512_robot_physicalai.html
+  - 6. Edge AI and Vision Alliance / NVIDIA (2025). NVIDIA Contributes to Open Frameworks for Next-Generation Robotics Development (Isaac ROS 4.0, Jetson Thor, Physical AI SIG). https://www.edge-ai-vision.com/2025/10/nvidia-contributes-to-open-frameworks-for-next-generation-robotics-development/
+
 - ### Provenance
   - sources:: IEC 61131-3; Åström & Wittenmark "Computer-Controlled Systems"; Franklin, Powell & Emami-Naeini "Feedback Control of Dynamic Systems"; Siciliano et al. "Robotics: Modelling, Planning and Control"; ros2_control documentation
   - updated:: 2026-06-13

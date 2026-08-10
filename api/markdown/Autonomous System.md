@@ -278,6 +278,24 @@ alias:: Autonomous Systems
   - **IEEE P7009** — Standard on Fail-Safe Design of Autonomous Systems (under development), addressing graceful degradation requirements.
   - Regulatory bodies including the FAA (USA), EASA (Europe), and IMO (maritime) are progressively certifying autonomous platforms under adapted frameworks.
 
+- ### Current Landscape (2026)
+  - The dominant shift since 2024 is the rise of "physical AI" — vision-language-action (VLA) foundation models that let autonomous systems perceive, reason and act end-to-end rather than run hand-coded behaviours; NVIDIA released the open GR00T N1 humanoid foundation model at GTC in March 2025, with GR00T N1.7 Early Access (a 3B-parameter Apache-2.0 VLA) following on 17 April 2026.
+  - Google DeepMind launched Gemini Robotics 2 and the Gemini Robotics ER 2 embodied-reasoning orchestrator on 30 July 2026, extending VLA control from upper-body to whole-body humanoid motion; Physical Intelligence's pi-0.7 (16 April 2026) demonstrated generalisation to unseen appliances, and Mistral's simulation-trained Robostral Navigate (8 July 2026) does RGB-only navigation without LiDAR.
+  - Commercial deployment accelerated sharply: Boston Dynamics committed its entire 2026 electric Atlas production to Hyundai and Google DeepMind, AgiBot scaled from 1,000 units in 2025 to its 10,000th humanoid by late March 2026, and Japan Airlines began a Unitree-based humanoid trial at Haneda Airport (via GMO AI & Robotics) in May 2026 for baggage and cabin work.
+  - Key players now span foundation-model vendors (NVIDIA, Google DeepMind, Physical Intelligence, Mistric/Mistral), humanoid makers (Figure with Figure 03 and Helix-02, Boston Dynamics, Unitree, AgiBot, NEURA Robotics, Agility), and open tooling — Hugging Face's LeRobot reached v0.6.0 (7 July 2026) with world-model policies and integrated Isaac GR00T 1.7.
+  - Safety standardisation caught up: ISO 10218-1:2025 and ISO 10218-2:2025 (published 5 February 2025) delivered the first major industrial-robot safety revision since 2011, adding risk-based functional safety (per-function PLr/SIL), robot Class I/II classification and — for the first time — cybersecurity as a safety requirement; the US adopted these as ANSI/A3 R15.06-2025 on 29 October 2025.
+  - New standards target the residual risks of dynamically stable machines that collapse when power is cut: ISO 25785-1 and ISO 26058-1 (with TR R15.108) address legged and balancing mobile robots, a gap the older statically stable framework never covered.
+  - Regulation is converging on autonomy: the EU AI Act entered into force on 1 August 2024 and, alongside the revised Machinery Regulation and the Cyber Resilience Act, places AI-enabled safety functions in the high-risk category, forcing autonomous-system builders to combine safety, cybersecurity and AI-governance compliance.
+  - The frontier challenge as of 2026 is the "GPT-2.5 moment" gap between impressive lab demos and reliable production autonomy: most headline capability figures remain vendor-reported and not independently reproduced, and sim-to-real transfer, long-horizon reliability and safety assurance of learned policies are still open problems.
+
+- ### References
+  - 1. MarkTechPost (2026). Top 10 Physical AI Models Powering Real-World Robots in 2026. https://www.marktechpost.com/2026/04/28/top-10-physical-ai-models-powering-real-world-robots-in-2026/
+  - 2. Let's Data Science (2026). AI Robotics News: Humanoids, Foundation Models & VLA. https://letsdatascience.com/news/topic/robotics
+  - 3. NVIDIA (2026). Into the Omniverse: Physical AI Open Models and Frameworks for Autonomous Systems. https://blogs.nvidia.com/blog/physical-ai-open-models-robot-autonomous-systems-omniverse/
+  - 4. KraneShares (2026). Humanoid Robotics in 2026: The Race From Pilot to Platform. https://kraneshares.com/humanoid-robotics-in-2026-the-race-from-pilot-to-platform/
+  - 5. ISO (2025). ISO 10218-1:2025 — Robotics — Safety requirements — Part 1. https://www.iso.org/standard/73933.html
+  - 6. Robotics Tomorrow (2026). International Robotic Safety Conference 2025: Key Takeaways Shaping the Future of Safe Automation. https://www.roboticstomorrow.com/story/2026/01/international-robotic-safety-conference-2025-key-takeaways-shaping-the-future-of-safe-automation/25964/
+
 - ### Provenance
   - sources:: SAE J3016 (Levels of Driving Automation); IEC 61508; ISO 26262; ROS 2 documentation; IEEE Robotics and Automation Society reference materials; Thrun, Burgard & Fox "Probabilistic Robotics" (MIT Press); Russell & Norvig "Artificial Intelligence: A Modern Approach"
   - updated:: 2026-06-13
