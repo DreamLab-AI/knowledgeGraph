@@ -313,6 +313,23 @@ public:: true
   - owl-role:: GovernanceFramework
   - is-subclass-of:: [[AI Governance Framework]]
 
+- ### Current Landscape (2026)
+  - NIST published NIST AI 600-1, the Generative AI Profile, on 26 July 2024 as the first cross-sectoral companion to AI RMF 1.0, defining 12 GenAI-specific risk categories (CBRN information, confabulation, data privacy, information integrity, value chain and others) and over 200 suggested actions mapped to the GOVERN, MAP, MEASURE and MANAGE functions.
+  - The framework's political anchor shifted sharply: President Trump's EO 14148 (20 January 2025) rescinded EO 14110, and EO 14179 (23 January 2025) reoriented federal AI policy toward deregulation and competitiveness, though AI RMF 1.0 itself was not rescinded and remains the operational baseline.
+  - America's AI Action Plan (23 July 2025) names NIST in over 25 actions and directs the AI RMF to be revised to eliminate references to misinformation, diversity/equity/inclusion and climate change; the RMF is now formally in revision for a future version.
+  - Institutional rebranding continued: the US AI Safety Institute became the Center for AI Standards and Innovation (CAISI) in June 2025 under Commerce Secretary Lutnick, and on 29 May 2026 NIST renamed the AI Safety Institute Consortium (over 280 members) the NIST Artificial Intelligence Consortium via Federal Register notice, dropping "safety" and broadening scope to measurement, innovation and adoption.
+  - NIST is expanding the profile family: the Cyber AI Profile (NIST IR 8596) preliminary draft landed 16 December 2025 bridging CSF 2.0 and the AI RMF, NIST AI 800-4 on post-deployment monitoring appeared in March 2026, and an AI RMF Profile for Trustworthy AI in Critical Infrastructure reached concept-note stage on 7 April 2026.
+  - Implementation scaffolding is maturing alongside the core: NIST is developing SP 800-53 Control Overlays for Securing AI Systems (COSAiS), while the Cloud Security Alliance published crosswalks (AICM to AI 600-1, August 2025) and a draft NIST AI RMF Agentic Profile (27 March 2026) to extend governance to autonomous, tool-using agents not contemplated by the original documents.
+  - Open challenges as of 2026 include reconciling the de-emphasis of societal-risk language (misinformation, equity, environmental impact) with enterprises that still rely on those categories, the absence of binding federal enforcement, and gaps in governing agentic autonomy, continuous post-deployment drift and third-party model supply chains.
+
+- ### References
+  - 1. National Institute of Standards and Technology (2024). Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
+  - 2. National Institute of Standards and Technology (2026). AI Risk Management Framework. https://www.nist.gov/itl/ai-risk-management-framework
+  - 3. The White House (2025). America's AI Action Plan. https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf
+  - 4. National Institute of Standards and Technology (2025). Cybersecurity Framework Profile for Artificial Intelligence (NIST IR 8596, preliminary draft). https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8596.iprd.pdf
+  - 5. Cloud Security Alliance (2026). NIST AI Consortium Expansion: Enterprise Security Governance. https://labs.cloudsecurityalliance.org/research/csa-research-note-nist-ai-consortium-expansion-governance-20/
+  - 6. Akin Gump (2025). White House Issues Long-Awaited AI Action Plan and Accompanying Executive Orders. https://www.akingump.com/en/insights/alerts/white-house-issues-long-awaited-ai-action-plan-and-accompanying-executive-orders
+
 - ### Provenance
   - sources:: NIST AI 100-1 (January 2023); NIST AI 600-1 (July 2024); US Executive Order 14110 on Safe, Secure, and Trustworthy AI (October 2023)
   - updated:: 2026-06-13

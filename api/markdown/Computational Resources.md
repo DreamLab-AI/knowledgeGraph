@@ -283,6 +283,23 @@ public:: true
     - OpenStack Foundation standards for IaaS resource pooling and [[Virtualisation]] management.
     - Green500 / TOP500 benchmarks (HPL, HPCG) provide standardised rankings of HPC system performance and energy efficiency, contextualising resource capacity claims.
 
+- ### Current Landscape (2026)
+  - The binding constraint on computational resources shifted from raw GPU supply (the 2024 H100 crunch) to power and physical infrastructure: Gartner projects 40% of AI data centres will be power-constrained by 2027, US/European grid-connection approvals now run 24-36 months, and GE Vernova and Siemens Energy report gas turbines nearly sold out through 2029.
+  - The five largest US hyperscalers (Amazon, Alphabet, Microsoft, Meta, Oracle) guided to roughly $700-800 billion of combined 2026 capex — a ~60-77% year-on-year jump from ~$402-410 billion in 2025, with about 75% (~$450 billion) targeting AI silicon, servers and data centres (Q1 2026 earnings, 29 April 2026).
+  - NVIDIA's Blackwell rack-scale systems (GB200/GB300 NVL72) have been "sold out" for consecutive quarters; the company reported $193.7 billion FY2026 data-centre revenue and guided to ~$500 billion of combined Blackwell-plus-Rubin orders through end-2026 and ~$1 trillion through 2027, with the Rubin generation moving racks from 72 to 576 GPUs.
+  - The hard bottleneck is TSMC CoWoS-L advanced packaging (sold out through 2026, expanding toward ~130,000 wafers/month by end-2026) and high-bandwidth memory: all three HBM makers (SK Hynix, Samsung, Micron) are booked through 2026, spot DRAM has risen roughly 8x since early 2025, and Intel's Lip-Bu Tan warned of "no relief until 2028".
+  - Custom accelerators scaled materially — Google TPU, AWS Trainium, Microsoft Maia and Meta MTIA now claim 40-65% TCO advantages and have pushed NVIDIA's accelerator share down from ~86% (2024) toward ~75% (2026) — while workloads tilt to inference, forecast at roughly two-thirds of all compute in 2026 (up from half in 2025), driving a $50 billion-plus inference-chip market.
+  - Access fragmented into neoclouds (CoreWeave, Lambda, Nebius, typically 40-70% cheaper than hyperscaler on-demand), sovereign-AI programmes across the Gulf, India, Japan and Europe, and heterogeneous NVIDIA/AMD estates; compute is increasingly financed as an asset via GPU-collateralised debt and structured credit.
+  - Regulation and geopolitics tightened around compute as a strategic resource: EU GPAI rules began applying 2 August 2025, the US pursued chip location-verification/attestation (Chip Security Act), and export controls hardened a multi-bloc order with China scaling Huawei 910C/CloudMatrix domestic accelerators.
+
+- ### References
+  - 1. Al Capital Advisory (2026). AI Capex Cycle 2026: $725B Hyperscaler Buildout — CFA Analysis. https://alcapitaladvisory.com/research/intelligence/ai-infrastructure.html
+  - 2. Apollo Global Management (2026). The Growing Compute Shortage. https://www.apollo.com/wealth/insights-news/insights/2026/06/growing-compute-shortage
+  - 3. Spheron Network (2026). AI Data Center Power Constraints Are the Real 2026 Bottleneck. https://www.spheron.network/blog/ai-data-center-power-constraints-2026/
+  - 4. Barrack AI (2026). The 2026 GPU Memory Crisis: What the Data Actually Shows. https://blog.barrack.ai/2026-gpu-memory-crisis/
+  - 5. Deloitte Insights (2025). More compute for AI, not less (TMT Predictions 2026). https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/compute-power-ai.html
+  - 6. J.P. Morgan Asset Management (2026). Is AI running out of compute? https://am.jpmorgan.com/us/en/asset-management/liq/insights/market-insights/market-updates/on-the-minds-of-investors/is-ai-running-out-of-compute/
+
 - ### Provenance
   - sources:: IEEE Spectrum; ACM Computing Surveys; CNCF Documentation; TOP500 Project; JEDEC Standards; InfiniBand Trade Association
   - updated:: 2026-06-13

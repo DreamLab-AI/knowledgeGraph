@@ -236,6 +236,22 @@ public:: true
   - BIP-340 (Schnorr Signatures for secp256k1) and BIP-341/342 (Taproot) are the Bitcoin Improvement Proposals that standardise the cryptographic primitives Nostr reuses, ensuring interoperability with Bitcoin tooling.
   - NIP-90 Data Vending Machines intersect with emerging [[Decentralised AI]] inference markets and [[Agent-to-Agent Communication]] patterns, positioning Nostr as potential coordination infrastructure for autonomous AI agents operating without centralised API gatekeepers.
 
+- ### Current Landscape (2026)
+  - End-to-end encrypted messaging has been the dominant frontier: NIP-ee (published July 2026) proposes E2EE direct and group messages built on the Messaging Layer Security (MLS) protocol for forward secrecy and post-compromise security, and the associated "Marmot" protocol now underpins encrypted group chat in clients such as White Noise and OpenChat, with the Marmot Development Kit shipping its first public release in early 2026.
+  - Encryption has migrated off the deprecated XOR-based NIP-04 to NIP-44 (ChaCha20-Poly1305); a June 2025 change (PR #1907, merged 28 June) lifted NIP-44's 65,535-byte payload ceiling to a roughly 4-GiB cap, letting NIP-17 private DMs and NIP-59 gift wraps carry large events without application-layer splitting.
+  - Bitcoin/Lightning is now natively woven in through Nostr Wallet Connect (NIP-47, with hold-invoice support merged in early 2026); "zapping" reached reported volumes near 792,000 zaps and roughly 2 million USD in value, and wallets including Zeus, Alby and Primal plus clients Damus and Amethyst implement NWC for payments.
+  - The three leading clients as of 2025-2026 are Primal (feed-focused, backed by its own caching relay infrastructure, shipping v3.5.x), Damus (iOS, which added the Notedeck native Rust desktop client) and Amethyst (Android, powered by Vitor Pamplona's Quartz Kotlin Multiplatform library); the ecosystem spans 140+ clients and 2,500+ relays across some 50 countries.
+  - Funding continues via OpenSats' 10-million-USD Nostr Fund, which reached its Seventeenth Wave of grants in 2026 (funding app-discovery launcher 44Billion, encrypted calling app NosCall, AI-payments protocol Routstr and onboarding client Wisp) after the Fourteenth Wave in December 2025 backed YakiHonne, Quartz and Nostr Feedz.
+  - Usability frictions are being addressed at the protocol layer: NIP-05 verification was redesigned in January 2026 to let users claim human-readable addresses for free, while the outbox/relay-selection model, NIP-65 relay lists and draft "Trusted Relay Assertions" (kind 30385 trust scoring from NIP-66 metrics) target content discovery and relay trust.
+  - Open challenges as of 2026 include stagnant active usage (roughly 21,000 total and around 3,700 daily active users measured in October 2025, with activity reported flat since late 2025) and security concerns raised by cryptographers - public-key substitution via compromised relays, unauthenticated legacy DM encryption, metadata/DNS leaks and clients skipping signature verification - alongside reputational risks such as the disowned "NostrAssets/NOSTR token" affair that fiatjaf and the Damus team publicly warned against.
+
+- ### References
+  - 1. OnNetwork (2025). The State of Nostr in 2025: Bitcoin, Freedom, and Friction. https://www.onnetwork.io/the-state-of-nostr-in-2025-bitcoin/
+  - 2. Nostr Compass (2026). Nostr Compass #29 - NIP-44 lifts the 65,535-byte payload limit; Marmot and E2EE developments. https://nostrcompass.org/en/newsletters/2026-07-01-newsletter/
+  - 3. OpenSats (2026). Seventeenth Wave of Nostr Grants. https://opensats.org/blog/seventeenth-wave-of-nostr-grants
+  - 4. Bitcoin Products (2026). Damus Review After Two Years of Nostr Growth. https://www.bitcoinproducts.com/blog/damus-review-nostr-growth-2026
+  - 5. Nostr Magazine (2026). Seventeenth Wave grants, NIP-ee MLS E2EE proposal, and client shipping activity. https://nostrmag.com/article/w29nostr01
+
 - ### Provenance
   - sources:: Nostr protocol specification (github.com/nostr-protocol/nostr), NIP repository, fiatjaf blog posts, Bitcoin Magazine Nostr coverage, Primal and Damus client documentation, NIP-90 DVM specification.
   - updated:: 2026-06-13

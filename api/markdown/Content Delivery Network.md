@@ -296,6 +296,24 @@ alias:: ContentDeliveryNetwork
   - CDN market is mature — Akamai launched the first commercial CDN service in 1998. [[Distributed Systems]] principles (consistent hashing, eventual consistency, distributed cache invalidation) underpin CDN design at scale.
   - Regulatory context: CDN operators who store user-request logs must comply with [[Data Governance]] frameworks such as GDPR (EU) and data residency requirements, influencing PoP placement strategies.
 
+- ### Current Landscape (2026)
+  - The CDN market reached roughly USD 28–29 billion in 2026 (Mordor Intelligence puts it at USD 29.34bn, Straits Research at USD 28.21bn), growing at a 9–12% CAGR, driven by 4K/8K OTT video, API acceleration and edge-AI use-cases rather than raw byte delivery.
+  - Consolidation reshaped the field: Edgio (ex-Limelight) filed for Chapter 11 in September 2024 and ceased operations in January 2025, with parts of its infrastructure acquired by Akamai and Lumen; Akamai's estimated share compressed from ~34% toward ~31% as Cloudflare (~22%) and Amazon CloudFront (~21%, now with 600+ ISP-embedded PoPs) closed the gap.
+  - Edge compute has decisively shifted from containers to WebAssembly: Cloudflare Workers deployed Llama-3-8b across 330+ locations in February 2026 with sub-5ms cold starts (2–4x faster inference via speculative decoding), and Fastly's Wasm-native Compute platform fully replaced VCL, adding persistent edge key-value storage.
+  - Akamai acquired Fermyon (announced as a partnership in March 2025, deepening through 2025) to run Fermyon Wasm Functions across its distributed network at sub-millisecond cold starts, repositioning the CDN as a full edge-native application and AI-inferencing platform.
+  - Semantic and AI-driven features went mainstream: Fastly launched AI Accelerator (February 2025) using edge semantic caching to cut redundant OpenAI/LLM API calls, while AI-driven traffic routing engines now run quantised sub-50MB models on SmartNIC/DPU NPUs for per-request path steering, reportedly trimming egress bills 20–30% and cutting P99 latency.
+  - Protocol and standards movement: HTTP/3 and QUIC are now fully supported across the major CDNs (AWS expanded CloudFront HTTP/3 support in February 2026), and 2026 multi-CDN steering has become QUIC-connection-ID aware to avoid mid-stream reroutes; IO River launched the first multi-CDN security engine (Check Point WAF) in March 2026.
+  - Regulatory and geopolitical shifts include Akamai confirming its exit from mainland-China CDN delivery by June 2026 (migrating customers via Tencent Cloud and Wangsu), plus tightening convergence of CDN with WAF, DDoS and bot management under zero-trust/WAAP security bundles.
+  - Open challenges as of 2026: opaque enterprise pricing and burst-overage risk complicate apples-to-apples comparison, GPU/energy costs and sustainability mandates constrain edge-AI density, and stale-model and cross-provider telemetry-exchange problems remain frontier issues for federated edge routing.
+
+- ### References
+  - 1. Mordor Intelligence (2026). Content Delivery Network Market Size & Share Analysis. https://www.mordorintelligence.com/industry-reports/content-delivery-network-market
+  - 2. BlazingCDN (2026). 9 Biggest CDN Providers by Market Share and Network Size in 2026. https://blog.blazingcdn.com/en-us/biggest-cdn-providers-market-share-pop-count-2025
+  - 3. byteiota (2026). WebAssembly at Edge: How Wasm Replaced Containers. https://byteiota.com/webassembly-at-edge-how-wasm-replaced-containers/
+  - 4. Fermyon Technologies / GlobeNewswire (2025). Akamai and Fermyon First to Support Edge-Native Serverless and AI Applications Powered by WebAssembly. https://www.globenewswire.com/news-release/2025/03/27/3050369/0/en/akamai-and-fermyon-first-to-support-edge-native-serverless-and-ai-applications-powered-by-webassembly.html
+  - 5. BlazingCDN (2026). Edge-AI Routing for Content Delivery Networks: 2025 Innovations. https://blog.blazingcdn.com/en-us/edge-ai-routing-content-delivery-networks-2025-innovations
+  - 6. Straits Research (2026). Content Delivery Network Market Size, Share, 2034. https://straitsresearch.com/report/content-delivery-network-market
+
 - ### Provenance
   - sources:: IETF RFC 9111 (HTTP Caching), RFC 9000 (QUIC), IETF CDNI WG (RFC 7336), W3C Resource Timing Level 2, vendor documentation (Cloudflare, Akamai, Fastly), OWASP CRS
   - updated:: 2026-06-13

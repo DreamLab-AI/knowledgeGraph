@@ -310,6 +310,23 @@ public:: true
   - **Automotive**: ISO 26262 functional-safety standard indirectly governs state estimation in safety-critical AV perception pipelines.
   - Connects to broader AI and machine-learning domains via [[Probabilistic Inference]], [[Deep Learning]] perception frontends, and [[Reinforcement Learning]] environments that rely on accurate state representations.
 
+- ### Current Landscape (2026)
+  - The invariant extended Kalman filter (InEKF), grounded in Barrau and Bonnabel's Lie-group symmetry theory, has become the dominant proprioceptive backbone; the open-source DRIFT library (UMich CURLY, arXiv 2311.04320, updated 2024) packages symmetry-preserving dead-reckoning for legged, wheeled and other platforms.
+  - Multi-sensor invariant estimators matured in 2025: Nisticò et al.'s E-InEKF and E-IS (IEEE RA-L, 2025) fuse kinematics, IMU, LiDAR and GPS via group-affine observation models, cutting absolute trajectory error by up to 28% indoors and 40% outdoors against LIO-SAM and FAST-LIO2 on the KAIST HOUND2 quadruped.
+  - Humanoid state estimation reached moving/non-inertial ground in mid-2026: Mandali, He and Gu's proprioceptive InEKF with foot-mounted IMUs (arXiv 2606.19512) demonstrated 96% faster convergence and 80% lower position error on the Agility Digit robot squatting and walking on swaying, pitching and rotating platforms.
+  - Hybrid learning-plus-filter architectures are the clear frontier: OptiState (arXiv 2401.16719, 2024) couples a Kalman filter with GRUs and a Vision Transformer for a 65% RMSE gain over VIO SLAM, and DFKI's InEKFormer (ICAR 2025) fuses an InEKF with a Transformer on the RH5 humanoid, though it flags the need for robust autoregressive training.
+  - Setup-agnostic factor-graph fusion advanced with Holistic Fusion (Nubert et al., ETH Zurich/NASA JPL/MPI, arXiv 2504.06479, 2026), a task-agnostic framework fusing arbitrary absolute, local and landmark measurements across reference frames with automatic frame alignment.
+  - Decoupled and optimisation-based estimators gained traction: moving-horizon estimation (MHE) approaches now jointly recover state, ground-reaction forces and inertial parameters, typically pairing an invariant EKF for orientation with a constrained MHE for velocity and contact quantities (ICRA/RSS 2025).
+  - Key open challenges as of 2026 include reliable estimation under slippage and compressible or moving terrain, high-dimensional humanoid whole-body estimation, drift-free operation in vision- and LiDAR-denied environments, and stable training of the learned components inside filters.
+
+- ### References
+  - 1. Mandali, F., He, Z. & Gu, Y. (2026). Proprioceptive Invariant State Estimation for Humanoid Robots on Non-Inertial Ground. https://arxiv.org/abs/2606.19512
+  - 2. Nisticò, Y., Kim, H., Soares, J. C. V., Fink, G., Park, H.-W. & Semini, C. (2025). Multi-Sensor Fusion for Quadruped Robot State Estimation using Invariant Filtering and Smoothing (E-InEKF/E-IS), IEEE RA-L. https://arxiv.org/abs/2504.20615
+  - 3. Nubert, J., Tuna, T., Frey, J., Cadena, C., Kuchenbecker, K. J., Khattak, S. & Hutter, M. (2026). Holistic Fusion: Task- and Setup-Agnostic Robot Localization and State Estimation with Factor Graphs. https://arxiv.org/abs/2504.06479
+  - 4. DFKI Robotics Innovation Center (2026). InEKFormer: A Hybrid State Estimator for Humanoid Robots, Proc. IEEE ICAR 2025. https://robotik.dfki-bremen.de/de/forschung/publikationen/16541
+  - 5. Lee, K., Wisth, D. et al. / authors (2024). OptiState: State Estimation of Legged Robots using Gated Networks with Transformer-based Vision and Kalman Filtering. https://arxiv.org/abs/2401.16719
+  - 6. Yu, T. (Tzu-Yuan Lin) et al., UMich CURLY (2024). Proprioceptive Invariant Robot State Estimation (DRIFT). https://arxiv.org/abs/2311.04320
+
 - ### Provenance
   - sources:: Thrun, Burgard & Fox — *Probabilistic Robotics* (MIT Press); Barfoot — *State Estimation for Robotics* (Cambridge UP); IEEE Transactions on Robotics; IJRR
   - updated:: 2026-06-13

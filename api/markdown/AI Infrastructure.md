@@ -316,6 +316,23 @@ public:: true
   - belongs-to-domain:: [[Digital Infrastructure]]
   - subclass-of:: [[Digital Infrastructure]]
 
+- ### Current Landscape (2026)
+  - Capital expenditure has reached historic scale: the five largest US hyperscalers (Amazon, Alphabet, Microsoft, Meta, Oracle) have committed roughly USD 660-725 billion for 2026, up around 60-77% on 2025, with Amazon alone guiding to about USD 200 billion; Dell'Oro projects worldwide data-centre capex to surpass USD 1 trillion in 2026, roughly a year ahead of prior forecasts.
+  - Nvidia dominates the accelerator layer: at GTC in March 2026 Jensen Huang guided to about USD 500 billion in combined Blackwell and Vera Rubin revenue through 2027 (later doubled toward USD 1 trillion), with GB200/GB300 systems sold out through mid-2026 and the Rubin platform entering production, delivering roughly 5x Blackwell inference performance.
+  - The binding constraint has decisively shifted from GPU supply to electricity and physical plant: analysts note over 60% of 2026 hyperscaler capex now goes to power and shells rather than chips, and nearly half of planned US data-centre capacity for 2026 has been delayed or cancelled, with only about one-third of the roughly 12 GW announced under active construction.
+  - Grid and supply-chain bottlenecks are structural: US interconnection queues average around five years (ERCOT's large-load queue surged from 63 GW to over 225 GW in a single year), power-transformer lead times run to about 128 weeks and generator step-up units to 144 weeks, and the PJM capacity auction cleared at USD 269.92/MW-day for 2025/2026, an 833% jump, before an emergency 15 GW procurement in April 2026.
+  - OpenAI's Stargate joint venture (with SoftBank and Oracle), announced at the White House in January 2025, has expanded to roughly seven US sites and about 7-9 GW of planned capacity with over USD 400 billion committed against a USD 500 billion / 10 GW target; Oracle broke ground on a sixth site in Saline Township, Michigan in June 2026.
+  - On-site generation and nuclear are the primary workarounds: tech firms have collectively committed to over 10-13 GW of nuclear capacity (restarts, PPAs, and SMR developers such as Oklo and TerraPower), while several Stargate sites use behind-the-meter natural gas and closed-loop liquid cooling to bypass multi-year grid delays.
+  - Frontier challenges as of 2026 include monetisation and financing risk (hyperscalers raised over USD 108 billion of debt in 2025, with free cash flow compressing sharply at Meta), a projected 1-11 GW US power deficit through 2028 even after all mitigations (Morgan Stanley), custom-silicon diversification (Google TPUs, Broadcom/AVGO XPUs, AWS Trainium) eroding pure-GPU dependence, and the IEA estimate that data centres will consume around 1,000 TWh annually, comparable to Japan's total electricity use.
+
+- ### References
+  - 1. BloombergNEF (2026). AI Data Center Build Advances at Full Speed: Five Things to Know. https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/
+  - 2. Futurum Group (2026). AI Capex 2026: The $690B Infrastructure Sprint. https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/
+  - 3. Dell'Oro Group (2026). Data Center Capex Surges 57 Percent in 2025 as AI Deployments Accelerate. https://www.delloro.com/news/data-center-capex-surges-57-percent-in-2025-as-ai-deployments-accelerate/
+  - 4. Economic Times / Data Centres (2026). AI Infrastructure Spending Hits $1 Trillion, Straining Power, Capital, Construction. https://datacenters.economictimes.indiatimes.com/news/ai-compute-infrastructure/ai-infrastructure-spending-hits-1-trillion-straining-power-capital-construction/132779107
+  - 5. Informed Clearly (2026). $650B Power Gap: AI Data Centers Collide with Grid Reality in 2026. https://informedclearly.com/en/ai/56053/ai-data-center-power-gap-grid-bottleneck-2026
+  - 6. TFTC (2026). Stargate 7 GW AI Buildout Squeezes Bitcoin Miners. https://www.tftc.io/stargate-ai-buildout-bitcoin-miners-power-grid
+
 - ### Provenance
   - sources:: Kubeflow documentation, NVIDIA AI Infrastructure reference architectures, Google Vertex AI documentation, AWS SageMaker documentation, Linux Foundation AI & Data Foundation project catalogue, MLflow and Weights & Biases documentation, CNCF AI Working Group, EU AI Act (2024).
   - updated:: 2026-06-13

@@ -339,6 +339,23 @@ public:: true
   - **SRE Book (Google)** — Google's Site Reliability Engineering book formalised the four golden signals (Latency, Traffic, Errors, Saturation) as a practical observability framework, now widely adopted across the industry.
   - **eBPF** — Extended Berkeley Packet Filter enables kernel-level auto-instrumentation without code changes, allowing observability agents to collect system-call, network, and file-I/O telemetry with minimal overhead.
 
+- ### Current Landscape (2026)
+  - On 21 May 2026 the CNCF announced OpenTelemetry's graduation at the Observability Summit in Minneapolis, cementing OTel as the de facto vendor-neutral telemetry standard; the project reported over 12,000 contributors from 2,800+ companies, with the JavaScript and Python API packages each surpassing 1.3 billion downloads in the preceding year.
+  - Profiling has emerged as the fourth observability signal alongside logs, metrics and traces: the OTLP Profiles data model (added in OTLP 1.30.0) entered public Alpha on 26 March 2026, built on a pprof-compatible, deduplicated format with trace_id/span_id correlation and a reference eBPF profiler donated by Elastic.
+  - Zero-code eBPF instrumentation consolidated under OpenTelemetry eBPF Instrumentation (OBI), the Grafana Beyla donation approved in May 2025, which shipped its first alpha on 3 November 2025 with Splunk, Coralogix and Odigos collaborating; it captures RED metrics, service graphs and traces for HTTP/2, gRPC, SQL, Redis, Kafka and more out-of-process with no code changes.
+  - Semantic conventions v1 were locked between 2025 and 2026 for HTTP, databases (db.system.name, db.query.text), messaging, RPC and system metrics, stabilising dashboard and alert queries; Prometheus 3.0 (14 November 2024) added native OTLP ingestion and UTF-8 metric names, and Grafana 13.0 (April 2026) shipped Dynamic Dashboards and Git Sync for observability-as-code.
+  - LLM observability has moved from optional tooling to core infrastructure, sized at roughly 2.69 billion US dollars in 2026 (heading to 9.26 billion by 2030 at a 36.2% CAGR); the market splits into AI-native platforms (Langfuse, now part of ClickHouse, LangSmith, Braintrust, Arize), eval libraries (Phoenix, DeepEval, RAGAS), AI gateways (Helicone, Portkey, LiteLLM) and APM extensions (Datadog, New Relic, Dynatrace), unified by the OpenTelemetry GenAI gen_ai.* semantic conventions.
+  - Adoption figures diverge by survey but all point up: the CNCF 2025 Annual Survey (published January 2026) put OTel at roughly 49-78% production use, while Elastic's Dimensional Research report recorded 85% of organisations using generative AI for observability, and cloud providers (AWS CloudWatch, GKE Autopilot, Azure AKS) added native OTLP or eBPF ingestion through early 2026.
+  - Open challenges as of 2026 centre on cost-aware telemetry discipline as data volumes grow, the still-alpha maturity of continuous profiling and OBI, privacy-preserving observability for regulated workloads, and guardrails plus human-in-the-loop controls for agentic-AI-driven autonomous remediation.
+
+- ### References
+  - 1. Cloud Native Computing Foundation (2026). CNCF Announces OpenTelemetry's Graduation, Solidifying Status as the De Facto Observability Standard. https://www.cncf.io/announcements/2026/05/21/cloud-native-computing-foundation-announces-opentelemetrys-graduation-solidifying-status-as-the-de-facto-observability-standard/
+  - 2. OpenTelemetry Profiling SIG (2026). OpenTelemetry Profiles Enters Public Alpha. https://opentelemetry.io/blog/2026/profiles-alpha/
+  - 3. OpenTelemetry Project (2025). OpenTelemetry eBPF Instrumentation Marks the First Release. https://opentelemetry.io/blog/2025/obi-announcing-first-release/
+  - 4. Stimac, G. (2026). Monitoring and Observability Stack 2026: What Changed. https://goranstimac.com/blog/monitoring-observability-stack-2026-what-changed/
+  - 5. MarkTechPost (2026). Top LLM Observability and Evaluation Platforms in 2026: Langfuse, LangSmith, Braintrust, Arize, and More Compared. https://www.marktechpost.com/2026/08/09/top-llm-observability-and-evaluation-platforms-in-2026-langfuse-langsmith-braintrust-arize-and-more-compared/
+  - 6. Elastic / Dimensional Research (2026). The Landscape of Observability in 2026. https://www.elastic.co/blog/2026-observability-trends-generative-ai-opentelemetry
+
 - ### Provenance
   - sources:: OpenTelemetry specification (opentelemetry.io); CNCF Cloud Native Landscape; Google SRE Book; W3C TraceContext Recommendation; Honeycomb.io observability documentation
   - updated:: 2026-06-13

@@ -286,6 +286,23 @@ public:: true
   - owl-class:: infrastructure:TelecommunicationsInfrastructure
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - AI-RAN moved from concept to live trials: NVIDIA and Nokia announced a strategic AI-RAN partnership in October 2025 (with a $1bn NVIDIA investment in Nokia), while T-Mobile and Ericsson pushed an AI-native scheduler into large-scale commercial trials on live 5G-Advanced traffic, reporting roughly 10% better spectral efficiency and up to 15% higher downlink throughput, targeting commercial deployment in Q3 2026.
+  - Open RAN's commercial reality diverged sharply from forecasts: Dell'Oro put cumulative open RAN revenue near $10bn by August 2025 but recorded a roughly 40% decline within two years of the Japan/US scaling wave, with the top five RAN vendors holding 96% of the market in Q1–Q3 2025 (up from 95%), landing open RAN at the low end of its 5–10% share target rather than the once-forecast 15%.
+  - AT&T's roughly $14bn five-year Ericsson-led build reported over 50% of network traffic on open-capable hardware and Cloud RAN live in two cities by March 2026, and became the first operator to put a third-party rApp into live production (July 2025) plus the first third-party-radio open RAN call using 1Finity/Fujitsu units on Ericsson baseband (August 2025).
+  - The FCC voted unanimously (3-0) on 25 June 2026 to overhaul submarine cable licensing, extending direct authority to Submarine Line Terminal Equipment (SLTE), imposing blanket country-of-origin bans on foreign-adversary hardware, and offering trusted operators a fast-track exemption from Team Telecom review against 10 national-security standards.
+  - Europe advanced its Digital Networks Act: the Commission published the DNA proposal (COM(2026) 16) on 21 January 2026 to replace the European Electronic Communications Code, tackling copper decommissioning, coordinated spectrum policy, submarine cable resilience (including an EU cable-vessel reserve) and the 'fair share' cost-contribution debate; the 2026 5G Observatory reported the EU near full basic 5G population coverage at 96.8% of households.
+  - 6G standardisation crystallised around 3GPP Release 21 (timeline to be finalised by June 2026) as the basis for the first IMT-2030 specifications, with a targeted functional freeze around December 2028 and ITU-R IMT-2030 technical performance requirements approval expected December 2026; the US NTIA also launched a 'Call to Action for 6G Leadership and Security' uniting over 20 governments.
+  - Open challenges as of 2026 centre on the gap between open interfaces and genuine multi-vendor diversity (markets remain highly concentrated, HHI above 2,500 in five of six tracked regions, with multi-vendor RAN projected at just $2–3bn by 2029), plus physical and suspected-sabotage threats to subsea cables in the Baltic and around Taiwan driving a reframing of cables as strategic critical infrastructure.
+
+- ### References
+  - 1. 5G/6G Academy (2026). Open RAN in Practice: What the 2026 Deployments Actually Tell Us — Whitepaper Nº02. https://www.5g6gacademy.com/whitepapers/pdf/wp02-open-ran-in-practice.pdf
+  - 2. Submarine Networks / SubmarineNetworks.com (2026). FCC Overhauls Subsea Cable Licensing: SLTE Fast-Track Process. https://www.submarinenetworks.com/en/nv/insights/fcc-subsea-cable-licensing-slte-fast-tract-process
+  - 3. European Commission (2026). Digital Networks Act — SWD(2026) 13 / COM(2026) 16. https://ec.europa.eu/transparency/documents-register/api/files/SWD(2026)13_0/090166e52c637a28
+  - 4. NVIDIA / Nokia (2025). NVIDIA and Nokia to Pioneer the AI Platform for 6G. https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-and-Nokia-to-Pioneer-the-AI-Platform-for-6G--Powering-Americas-Return-to-Telecommunications-Leadership/default.aspx
+  - 5. Telecoms Tech News (2026). T-Mobile and Ericsson test AI-RAN on live 5G-Advanced network. https://www.telecomstechnews.com/news/t-mobile-ericsson-ai-ran-5g-advanced-trial/
+  - 6. IEEE ComSoc Technology Blog (2026). IMT-2030 / 6G and 3GPP Release 21 timeline. https://techblog.comsoc.org/category/imt-2030/
+
 - ### Provenance
   - sources:: ITU-R, 3GPP, IETF RFCs, O-RAN Alliance specifications, ETSI NFV ISG documents, Ofcom and FCC regulatory publications
   - updated:: 2026-06-13

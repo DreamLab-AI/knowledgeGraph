@@ -301,6 +301,23 @@ public:: true
     - Net neutrality regulations in various jurisdictions constrain how ISPs may prioritise or throttle traffic, affecting connectivity quality for different application classes.
     - [[Network Security]] regulations (NIS2 in the EU, NERC CIP for critical infrastructure) impose baseline connectivity resilience and monitoring requirements.
 
+- ### Current Landscape (2026)
+  - IEEE published the Wi-Fi 7 standard (802.11be, Extremely High Throughput) on 22 July 2025; adoption is scaling fast, with Wi-Fi 7 access-point shipments rising from 26.3 million in 2024 to a projected 66.5 million in 2025 and a forecast 117.9 million in 2026 as ISPs make it the default option.
+  - The first Wi-Fi 8 (802.11bn, Ultra High Reliability) chipsets were unveiled at the tail-end of 2025, prioritising deterministic latency and multi-AP coordination over raw throughput; the draft D1.0 was consolidated in 2025 with prototype APs expected through 2026.
+  - Direct-to-cell (satellite-to-smartphone) moved from beta to commercial service: T-Mobile launched T-Satellite on SpaceX Starlink in July 2025 (texting, then voice/data), while AST SpaceMobile made the first-ever 5G and video calls from space and targets early US service via its AT&T/Verizon partnerships.
+  - 3GPP standards work advanced sharply — Release 19 reached functional freeze (RAN1 June 2025, code freeze December 2025) adding regenerative-payload NTN, inter-satellite links and AI-driven beam scheduling, while Release 20 opened 6G study items with normative 6G work slated for Release 21 (IMT-2030 window); AST's Rel-19 L-/S-band conformance packages are now stabilised.
+  - Operators shifted from initial 5G coverage to 5G-Advanced ("5.5G") and 5G Standalone cores as the default revenue platform, with Vodafone and AST forming the SatCo joint venture to launch a mid-band direct-to-cell constellation across Europe.
+  - The Ethernet Alliance released its 2026 Roadmap (9 December 2025) charting 800G/1.6 Tb/s interfaces and Linear Pluggable Optics for AI/cloud fabrics; IEEE 802.3dj (200G–1.6 Tb/s) is expected to complete by late 2026, and 6 GHz usage in the US grew 62% year-on-year to 13.8% of Speedtest samples by Q1 2026.
+  - Open frontiers as of 2026 include sub-1 Mbps direct-to-cell throughput and line-of-sight/indoor limits, post-quantum cryptography migration for network security, regulatory harmonisation of Standard Power 6 GHz and satellite Supplemental Coverage from Space, and experimental sub-terahertz 6G (NTT/Keysight demonstrated a 280 Gb/s link in the 300 GHz band).
+
+- ### References
+  - 1. Wireless Broadband Alliance (2026). Wireless Broadband Alliance Reveals its Wi-Fi Predictions for 2026 and Beyond. https://wballiance.com/wireless-broadband-alliance-reveals-its-wi-fi-predictions-for-2026-and-beyond/
+  - 2. Ofinno (2026). 2025 Retrospective on Cellular, Wi-Fi, and Video Compression Standards and What We're Watching in 2026. https://ofinno.com/standards-readout/2025-retrospective-on-cellular-wi-fi-and-video-compression-standards-and-what-were-watching-in-2026/
+  - 3. Ethernet Alliance (2025). Ethernet Alliance 2026 Ethernet Roadmap Sets a New Course for Connectivity. https://ethernetalliance.org/blog/2025/12/09/ethernet-alliance-2026-ethernet-roadmap-sets-a-new-course-for-connectivity/
+  - 4. Bhattacharya et al. / arXiv (2026). Comparative Analysis of Direct-to-Cell (D2C) and 3GPP Non-Terrestrial Networks. https://arxiv.org/html/2605.05843v1
+  - 5. AST SpaceMobile (2026). Frequently Asked Questions. https://ast-science.com/faqs/
+  - 6. Private LTE and 5G (2026). Direct-to-Device Satellite: How D2D Is Becoming a Complementary Connectivity Layer. https://www.privatelteand5g.com/direct-to-device-satellite-how-d2d-is-becoming-a-complementary-connectivity-layer/
+
 - ### Provenance
   - sources:: IEEE 802 standard family; IETF RFC corpus (791, 793, 2460, 4271, 5340, 9000); 3GPP Release 15–18 specifications; ONF OpenFlow specification
   - updated:: 2026-06-13

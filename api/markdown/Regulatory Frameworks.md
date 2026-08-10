@@ -346,6 +346,22 @@ public:: true
   - Also referred to as [[Regulatory Regime]] or [[Regulatory Architecture]] in policy literature.
   - Distinct from but closely related to [[Regulatory Requirements]] (the specific obligations within a framework) and [[Compliance]] (the organisational response to those obligations).
 
+- ### Current Landscape (2026)
+  - The EU AI Act (Regulation (EU) 2024/1689) is the reference model for risk-based regulation: it entered into force on 1 August 2024, prohibitions and AI-literacy duties applied from 2 February 2025, general-purpose AI (GPAI) obligations and EU-level governance from 2 August 2025, and the bulk of provisions plus enforcement from 2 August 2026, with high-risk rules phased to 2 December 2027 (Annex III) and 2 August 2028 (Annex I).
+  - The Commission's voluntary GPAI Code of Practice was published on 10 July 2025 covering transparency, copyright and safety/security, and was judged an "adequate" compliance tool by the AI Office and AI Board on 1 August 2025 to bridge the gap until harmonised CEN/CENELEC standards arrive (expected 2027 or later); each Member State must stand up at least one AI regulatory sandbox, with the deadline realigned to 2 August 2027.
+  - The late-2025 "Digital Omnibus" simplification package proposes to align and streamline the AI Act, GDPR and ePrivacy rules, and analysts expect the high-risk AI compliance deadline to slip by up to 16 months from the original August 2026 date via the AI Omnibus amendments.
+  - Regulatory fragmentation is the dominant 2026 theme across finance and data: the EY and Deloitte 2026 outlooks describe a shift from cross-border harmonisation towards nationally driven "localisation", with the US deregulating for growth, the EU pursuing simplification, and the UK prioritising competitiveness (e.g. the Financial Services Growth & Competitiveness Strategy and the Data (Use and Access) Act 2025).
+  - Digital-asset frameworks matured rapidly: the US GENIUS Act became the first federal legal framework for payment stablecoins, while the EU's Digital Operational Resilience Act (DORA) steps up through 2026 and Hong Kong's critical-infrastructure computer-systems ordinance took effect on 1 January 2026; regulators are converging on full reserve backing, clear redemption rights and robust custody.
+  - US state-level AI and privacy rules proliferated: Colorado's AI Act and Texas's Responsible Artificial Intelligence Governance Act take effect in 2026, alongside California's AI Transparency Act and new state privacy laws, deepening a patchwork in the absence of a federal statute.
+  - Open challenges as of 2026 include reconciling divergent US/EU/UK/APAC rulebooks for globally operating firms, delayed technical standards leaving compliance to non-binding codes, the convergence of AI governance with data-protection and cybersecurity regimes (GDPR reopening, NIS2 roll-out), and heightened focus on children's online safety, operational resilience and cross-border data flows amid rising digital-sovereignty pressures.
+
+- ### References
+  - 1. European Commission (2026). AI Act — Regulatory framework for AI. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 2. EU Artificial Intelligence Act (2026). Implementation Timeline. https://artificialintelligenceact.eu/implementation-timeline/
+  - 3. EY (2025). Global Financial Services Regulatory Outlook 2026: four regulatory shifts. https://www.ey.com/en_gl/insights/financial-services/four-regulatory-shifts-financial-firms-must-watch-in-2026
+  - 4. Deloitte (2025). Financial Services Regulatory Outlook 2026. https://mkto.deloitte.com/rs/712-CNF-326/images/regulatory-outlook-2026.pdf
+  - 5. OneTrust (2026). The 5 trends shaping global privacy and enforcement in 2026. https://www.onetrust.com/blog/the-5-trends-shaping-global-privacy-and-enforcement-in-2026/
+
 - ### Provenance
   - sources:: [[https://www.oecd.org/gov/regulatory-policy/]], [[https://en.wikipedia.org/wiki/Regulation]]
   - updated:: 2026-06-13

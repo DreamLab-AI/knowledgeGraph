@@ -166,6 +166,23 @@ public:: true
   - **Children's privacy** — COPPA (US), GDPR recital 38, and national age-appropriate design codes impose enhanced obligations for processing children's data, intersecting with social media and educational technology governance.
   - **Biometric data** — Facial recognition, voice prints, and gait data are classified as special-category data under GDPR Article 9, requiring explicit consent or narrow statutory bases; enforcement against commercial biometric databases is intensifying.
 
+- ### Current Landscape (2026)
+  - The EU Digital Omnibus and AI Omnibus proposals, published by the European Commission on 19 November 2025, mark a shift from expansion to simplification: they would narrow the GDPR definition of personal data (excluding information not reasonably linkable to an individual), clarify when pseudonymised data counts as anonymised, and ease AI-related processing, with political agreement targeted for later in 2026.
+  - The EU AI Act now overlaps directly with data-protection law; its Article 50 transparency obligations (AI-disclosure, synthetic-content marking, emotion/biometric notices) took effect on 2 August 2026, but the most onerous high-risk obligations were deferred to 2 December 2027 (and August 2028 for AI in regulated products) under the Omnibus, ending Europe's technology-neutral approach.
+  - Enforcement intensified sharply: cumulative GDPR fines passed 7.1 billion euros by early 2026 (1.2 billion in 2025 alone per DLA Piper), authorities now receive around 443 breach notifications per day (up 22% year on year), and the GDPR Procedural Regulation entered into force on 1 January 2026 to harmonise cross-border cases.
+  - US fragmentation deepened: twenty states now have comprehensive consumer privacy laws in effect as of 1 January 2026 (Indiana, Kentucky and Rhode Island the latest), still with no federal law, while California's CPPA automated decision-making technology (ADMT) rules begin enforcement in January 2027, making 2026 a preparation year.
+  - The UK diverged via the Data (Use and Access) Act 2025 (Royal Assent 18 June 2025), phasing in between August 2025 and June 2026 with recognised legitimate interests, a more permissive automated-decision regime, simplified cookie rules and expanded ICO powers.
+  - Privacy-enhancing technologies matured into a compositional stack (TEEs, MPC, FHE, differential privacy, ZKPs, federated learning, data clean rooms); the PET market reached roughly 2.8 billion dollars in 2025 (Gartner projecting over 25 billion by 2030), and NIST finalised SP 800-226 differential-privacy evaluation guidelines in March 2025.
+  - Open challenges as of 2026 centre on reconciling AI training with data minimisation, the utility-versus-privacy trade-off in differential privacy (epsilon calibration and cumulative budget depletion), gradient-leakage and model-inversion risks in federated learning, the compute overhead of FHE/MPC, and operationalising overlapping GDPR, AI Act, Data Act and 20-plus US state regimes simultaneously.
+
+- ### References
+  - 1. OneTrust (2026). The 5 trends shaping global privacy and enforcement in 2026. https://www.onetrust.com/blog/the-5-trends-shaping-global-privacy-and-enforcement-in-2026/
+  - 2. Kiteworks (2026). GDPR Fines Hit 7.1 Billion Euros: Data Privacy Enforcement Trends in 2026. https://www.kiteworks.com/gdpr-compliance/gdpr-fines-data-privacy-enforcement-2026/
+  - 3. Al Jazeera (2026). What came into force with the EU's AI Act this week and what didn't. https://www.aljazeera.com/news/2026/8/6/what-came-into-force-with-the-eus-ai-act-this-week-and-what-didnt
+  - 4. Covington (Inside Privacy) (2026). What to Watch in 2026: Key EU Privacy and Cybersecurity Developments. https://www.insideprivacy.com/european-union-2/what-to-watch-in-2026-key-eu-privacy-cybersecurity-developments/
+  - 5. NIST (2025). NIST Finalizes Guidelines for Evaluating Differential Privacy Guarantees (SP 800-226). https://www.nist.gov/news-events/news/2025/03/nist-finalizes-guidelines-evaluating-differential-privacy-guarantees-de
+  - 6. StealthCloud (2026). Privacy-Enhancing Technologies: The Complete 2026 Guide. https://stealthcloud.ai/cryptography/privacy-enhancing-technologies/
+
 - ### Provenance
   - sources:: GDPR (EU 2016/679); CCPA/CPRA; ISO/IEC 27701:2019; NIST Privacy Framework v1.0; Ann Cavoukian "Privacy by Design" (2009); academic literature on differential privacy (Dwork et al.), federated learning (McMahan et al.), and k-anonymity (Sweeney).
   - updated:: 2026-06-13

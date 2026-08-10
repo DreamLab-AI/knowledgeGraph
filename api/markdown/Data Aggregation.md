@@ -307,6 +307,23 @@ public:: true
   - **Approximation trade-offs**: exact aggregates over very large datasets are prohibitively expensive; probabilistic data structures (HyperLogLog, Count-Min Sketch, Bloom filters) provide sub-percent error at orders-of-magnitude lower cost.
   - **Semantic drift**: when source schemas evolve over time, historical aggregates may become incomparable to new ones without careful versioning via [[Metadata Management]].
 
+- ### Current Landscape (2026)
+  - The lakehouse has consolidated as the reference aggregation architecture, displacing the two-tier data-lake-plus-warehouse split; open table formats (Apache Iceberg, Delta Lake, Hudi) are now near-universal, with Snowflake, Databricks, Google BigQuery and Teradata all shipping native Iceberg support to cut multi-engine vendor lock-in.
+  - Real-time ELT streaming has overtaken batch ETL as the dominant paradigm: Confluent's Tableflow exposes Kafka topics directly as Iceberg tables, and warehouses now aggregate via incremental materialised views, dynamic aggregations and continuously refreshed semantic layers rather than T+1 loads.
+  - Kai Waehner's Data Streaming Landscape 2026 (December 2025) frames streaming as strategic infrastructure, flagging "diskless" Kafka plus Iceberg as a new low-cost unified storage foundation and streaming as the context layer for agentic-AI inference.
+  - Market state as of 2026: data management is estimated at roughly $125bn, with Snowflake vs Databricks the defining rivalry and a de-facto modern stack of Fivetran plus dbt plus Snowflake/Databricks; Confluent (~$1bn+ ARR) anchors the streaming tier alongside ClickHouse Cloud for sub-second real-time aggregation.
+  - Privacy-preserving aggregation matured in 2024-2026 around hybrid designs combining differential privacy with cryptographic secure aggregation (SecAgg); federated-analytics reviews report DP-enhanced FL in ~40% of deployments and DP-plus-SecAgg hybrids growing fastest, with 2025 work (e.g. DDP-SA, post-quantum Beskar) pushing distributed DP and quantum-safe masking.
+  - Regulation reshaped aggregation duties: the EU Data Act (Regulation 2023/2854) became applicable on 12 September 2025, mandating FRAND access to connected-product/IoT data and banning cloud switching and data-egress charges from 12 January 2027.
+  - The Commission's Digital Omnibus (19 November 2025) proposes folding the Data Governance Act, Free Flow of Non-Personal Data Regulation and Open Data Directive into the Data Act, re-anchoring "personal data" to "means reasonably likely to be used" and exempting own-use aggregated audience measurement from consent; the EDPB-EDPS Joint Opinion 2/2026 responded in February 2026.
+  - Open frontiers as of 2026: reconciling continuous streaming freshness with governance and lineage, managing small-file and exactly-once commit overheads in streaming-first lakehouses, controlling cloud aggregation costs, and preserving the privacy-utility trade-off (typically 1-5% accuracy loss) as aggregation feeds LLM and agentic pipelines.
+
+- ### References
+  - 1. TechDogs (2026). Top 10 Data Platforms in 2026. https://www.techdogs.com/top-10-technology-rankings/top-10-data-platforms
+  - 2. Kai Waehner (2025). The Data Streaming Landscape 2026. https://www.kai-waehner.de/blog/2025/12/05/the-data-streaming-landscape-2026/
+  - 3. European Commission (2025). Data Act explained — Shaping Europe's digital future. https://digital-strategy.ec.europa.eu/en/factpages/data-act-explained
+  - 4. White & Case LLP (2025). EU Digital Omnibus: What changes lie ahead for the Data Act, GDPR and AI Act. https://www.whitecase.com/insight-alert/eu-digital-omnibus-what-changes-lie-ahead-data-act-gdpr-and-ai-act
+  - 5. JCEIM (2026). Federated Learning Approaches for Privacy-Preserving Big Data Analytics. https://jceim.org/index.php/ojs/article/view/152
+
 - ### Provenance
   - sources:: SQL:2003 standard; W3C SPARQL 1.1 specification; Apache Spark documentation; GDPR Article 89; BCBS 239
   - updated:: 2026-06-13

@@ -352,6 +352,23 @@ public:: true
   - **Ossification** — overly conservative governance processes prevent necessary protocol evolution; Bitcoin's governance has been criticised on this basis.
   - **Legal Uncertainty** — DAO governance decisions may create legal liabilities for token holders; jurisdiction and liability remain unsettled in most legal systems.
 
+- ### Current Landscape (2026)
+  - Civic-tech participation platforms have matured into the default infrastructure for community governance: the 2025 Guide to Digital Participation Platforms (People Powered with UNDP and FNF) now catalogues over 80 tools, with open-source Decidim, Go Vocal, Consul and Pol.is anchoring participatory budgeting and deliberation across dozens of countries.
+  - AI has become the defining 2024–2026 shift, moving from translation into sense-making and deliberation; People Powered's 2025 Digital Participation Tool Ratings assessed 30 tools specifically on responsible AI use, while the UNDP guide added standards for accessible, privacy-preserving AI-assisted engagement.
+  - On the on-chain side, pure token-weighted voting is being abandoned in favour of hybrid models: DAOs have adopted quadratic voting (Gitcoin, Optimism), conviction voting (1Hive) and delegated councils (Arbitrum's Security Council), while Optimism's bicameral Token House and Citizens' House restructured its Citizens' House into three groups in Season 8.
+  - Legal recognition has advanced sharply, with the Marshall Islands DAO LLC used by 80+ organisations, Wyoming's amended DAO law recognising decentralised limited liability cooperatives, and UNCITRAL circulating draft model-law work (document A/CN.9/1267, May 2026) on DAO legal status.
+  - EU regulation is forcing structural change ahead of the 1 July 2026 MiCA CASP-authorisation deadline: MiCA's Recital 22 exempts only "fully decentralised" arrangements but leaves the term undefined, and Malta's MFSA opened a DeFi discussion paper (ref. 03-2026) on 12 June 2026 probing DAOs, account abstraction and "Guardian Agents".
+  - Evidence of hollow decentralisation is the central open challenge: an ECB working paper (26 March 2026) found voting power heavily concentrated, with the top 20 delegates controlling 96% of Ampleforth's power, top 10 controlling 66% of MakerDAO's and top 18 controlling 52% of Uniswap's, undermining "fully decentralised" claims under MiCA.
+  - Persistent frontier problems span both worlds: chronically low turnout (on-chain participation often 2–11%, offline pilots struggling to institutionalise), the digital-inclusion and literacy divide flagged by UNDP, and the difficulty of turning one-off participatory pilots into durable governance, which People Powered's 2025 "Mainstreaming Participation" track directly targets.
+
+- ### References
+  - 1. People Powered & UNDP (2025). Guide to Digital Participation Platforms (2025 Edition). https://www.undp.org/publications/guide-digital-participation-platforms-2025
+  - 2. People Powered (2025). 2025 Rewind! Top 5 Participatory Democracy Wins. https://www.peoplepowered.org/news-content/2025-rewind-top-5-participatory-democracy-wins
+  - 3. European Parliamentary Research Service (2024). Participatory budgeting: A pathway to inclusive and engaged local governance. https://www.europarl.europa.eu/RegData/etudes/BRIE/2024/762412/EPRS_BRI(2024)762412_EN.pdf
+  - 4. European Central Bank (2026). The future of DAOs in finance (Occasional Paper Series No. 331). https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op331~a03e416045.en.pdf
+  - 5. DeFi Planet (2026). Are Decentralized Autonomous Organizations Too Centralized to Escape MiCA? https://defi-planet.com/2026/06/are-decentralized-autonomous-organizations-too-centralized-to-escape-mica/
+  - 6. Cryptorank (2026). Malta Regulator Opens DeFi Consultation As DAO Governance Enters Policy. https://cryptorank.io/news/feed/462ae-malta-regulator-opens-defi-consultation-as-dao-governance-enters-policy
+
 - ### Provenance
   - sources:: Ostrom (1990) Governing the Commons; IETF RFC 7282; OpenZeppelin Governor documentation; Vitalik Buterin governance writings; Compound/Uniswap governance documentation; DAOstack whitepaper
   - updated:: 2026-06-13

@@ -262,6 +262,22 @@ public:: true
   - **Open review norms**: unlike ICLR (which uses fully public OpenReview), ICML has historically kept reviews confidential; community debate on transparency continues
   - **Code and reproducibility**: ICML increasingly encourages or requires code submissions and reproducibility checklists to address the ML replication crisis
 
+- ### Current Landscape (2026)
+  - ICML 2026, the 43rd edition, runs 6-11 July 2026 at the COEX Convention and Exhibition Center in Gangnam, Seoul, marking the conference's first time in South Korea (Expo/tutorials 6 July, main conference 7-9 July, workshops 10-11 July).
+  - Submissions hit a record 23,918 with 6,352 papers accepted (26.6% acceptance), roughly doubling the 12,107 submissions and 3,260 acceptances of ICML 2025 (Vancouver, 13-19 July 2025) and continuing a steep decade-long climb from about 1,037 submissions in 2015.
+  - A peer-review integrity crisis dominated the 2026 cycle: program chairs embedded hidden PDF watermarks drawn from a roughly 170,000-phrase dictionary to detect LLM-generated reviews, flagging around 795 reviews (about 1%) and desk-rejecting 497 papers (about 2% of submissions) tied to 398 reciprocal reviewers who breached rules they had agreed to.
+  - ICML introduced a formal two-policy framework for LLM use in reviewing: Policy A (conservative, no LLM use) and Policy B (permissive, LLMs may aid comprehension and polish prose but not judge quality or draft the review), with reviewers assigned a policy and prompt injection by authors triggering automatic desk rejection.
+  - New authorship and transparency rules took effect: LLMs are barred from being listed as authors, and for all accepted papers ICML now publishes the originally submitted version alongside the camera-ready plus anonymised reviews, meta-reviews and rebuttals; rejected authors may opt in to the same disclosure.
+  - Governance reforms include making in-person attendance optional for authors of accepted papers (virtual registration suffices for proceedings-only inclusion), a cap limiting any person to reciprocal-reviewer duty on at most two of their own submissions, and a voluntary author self-ranking scheme to help triage papers needing extra scrutiny.
+  - ICML piloted Google's experimental Paper Assistant Tool (PAT) over a limited 14-22 January 2026 window to help authors improve submissions, signalling a move toward sanctioned, auditable AI assistance even as unsanctioned LLM use remains the central open challenge for scaling peer review.
+
+- ### References
+  - 1. ICML (2026). ICML 2026 Call for Papers (43rd International Conference on Machine Learning, Seoul). https://icml.cc/Conferences/2026/CallForPapers
+  - 2. ICML (2026). ICML 2026 Policy for LLM use in Reviewing. https://icml.cc/Conferences/2026/LLM-Policy
+  - 3. ICML Blog (2026). Announcing the ICML 2026 Awards / registration and desk-rejection update. https://blog.icml.cc/category/icml-2026/
+  - 4. TechTimes (2026). ICML 2026 Opens in Seoul: Agentic AI Tops Record Year as Peer Review Strains. https://www.techtimes.com/articles/319684/20260704/icml-2026-opens-monday-seoul-agentic-ai-tops-record-year-peer-review-strains.htm
+  - 5. Wikipedia (2026). International Conference on Machine Learning (submission/acceptance statistics and locations). https://en.wikipedia.org/wiki/International_Conference_on_Machine_Learning
+
 - ### Provenance
   - sources:: International Machine Learning Society (imls.cc); Proceedings of Machine Learning Research (PMLR); ICML conference proceedings 1980–2024
   - updated:: 2026-06-13

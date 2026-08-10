@@ -318,6 +318,24 @@ public:: true
   - **[[Zero-Knowledge Proof]]s**: Emerging approaches allow proving possession of a valid certificate attribute without revealing the underlying certificate, enhancing privacy beyond classical CA disclosure.
   - **Blockchain Certificate Transparency variants**: Namecoin, EthDNS, and Ethereum Name Service (ENS) have explored blockchain-anchored naming to reduce reliance on CAs for domain-to-key binding.
 
+- ### Current Landscape (2026)
+  - In April 2025 the CA/Browser Forum unanimously passed Ballot SC-081v3 (proposed by Apple, endorsed by Sectigo, Google and Mozilla), committing every public CA to a phased collapse of TLS certificate lifetimes from 398 days down to 47 days: 200 days from 15 March 2026, 100 days from 15 March 2027 and 47 days from 15 March 2029.
+  - Domain-control validation reuse is being cut in parallel to just 10 days by 2029 (with OV/EV subject-identity reuse dropping from 825 to 398 days), which forces near-continuous re-validation and makes automated certificate lifecycle management (ACME/CLM) mandatory rather than optional; DigiCert began enforcing 199-day limits from 24 February 2026.
+  - The distrust of Entrust remains the defining trust-erosion event: after Chrome blocked new Entrust-rooted certificates issued after 11 November 2024 (Apple after 15 November, Mozilla after 30 November) over a six-year pattern of compliance failures, Entrust exited the public TLS business, underscoring that browser root programmes now hold decisive power over CA survival.
+  - Google's Chrome Root Program continued pruning trust in 2025, removing default trust for Chunghwa Telecom (ePKI, HiPKI) and NetLock roots for certificates with SCTs after 31 July 2025 via Chrome 139, using its SCTNotAfter mechanism to limit disruption to existing subscribers.
+  - Short-lived certificates went mainstream: Let's Encrypt made six-day (160-hour) certificates and, for the first time, publicly trusted IP-address certificates generally available in January 2026 (opt-in "shortlived" ACME profile), joining Google Trust Services which supports custom validity down to a few days.
+  - New governance guardrails landed alongside the speed-ups: MPIC (multi-perspective issuance corroboration) and pre-issuance linting became mandatory Baseline Requirements from 15 March 2025, and Ballot SC-089 (July 2025) now requires every public CA to maintain and annually test a mass-revocation plan.
+  - Post-quantum migration is the emerging frontier: RFC 9881 (ML-DSA) and RFC 9909 (SLH-DSA) standardised quantum-resistant signatures in X.509, and Let's Encrypt is prototyping Merkle Tree Certificates to keep PQC certificate chains manageable, but no public CA yet issues production PQC certificates at scale.
+  - Open challenges as of 2026 centre on operational fragility: manual certificate handling is effectively obsolete, no single body owns cross-sector coordination when a major CA is distrusted, and organisations still lack complete certificate inventories needed to survive either a distrust event or the looming PQC forced migration.
+
+- ### References
+  - 1. DigiCert (2025). TLS Certificate Lifetimes Will Officially Reduce to 47 Days. https://www.digicert.com/blog/tls-certificate-lifetimes-will-officially-reduce-to-47-days
+  - 2. CA/Browser Forum (2025). Ballot SC-081v3: Introduce Schedule of Reducing Validity and Data Reuse Periods. https://cabforum.org/2025/04/11/ballot-sc081v3-introduce-schedule-of-reducing-validity-and-data-reuse-periods/
+  - 3. Google Security Blog (2025). Upcoming Changes to the Chrome Root Store. https://blog.google/security/sustaining-digital-certificate-security-chrome-root-store-changes/
+  - 4. DigiCert (2024). Entrust Certificate Distrust. https://www.digicert.com/campaigns/entrust-certificate-distrust
+  - 5. Let's Encrypt (2025-2026). Announcing Six Day and IP Address Certificate Options in 2025. https://letsencrypt.org/2025/01/16/6-day-and-ip-certs
+  - 6. Let's Encrypt (2025). Decreasing Certificate Lifetimes to 45 Days. https://letsencrypt.org/2025/12/02/from-90-to-45
+
 - ### Provenance
   - sources:: RFC 5280; RFC 8555; CA/Browser Forum Baseline Requirements; Mozilla Root Store Policy; NIST SP 800-57; ETSI EN 319 401; CNCF SPIFFE specification
   - updated:: 2026-06-13

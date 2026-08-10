@@ -327,6 +327,23 @@ public:: true
   - related-to:: [[Tokenization]]
   - supports:: [[Institutional Investment]]
 
+- ### Current Landscape (2026)
+  - Global assets under management hit a record 128 trillion USD in 2024 (up 12%, per BCG) and reached roughly 147 trillion USD by mid-2025 (McKinsey), yet the industry is squeezed by persistent fee compression, with asset-weighted active fund fees falling to about 0.36%.
+  - The fee war intensified in 2025: Vanguard cut expense ratios across 87 share classes in February 2025 (saving investors around 350 million USD annually) and Schwab followed in June 2025, dropping its 1000 Index ETF (SCHK) from 0.05% to 0.03%, accelerating consolidation pressure on midsize managers.
+  - Scale and integration define the leaders: BlackRock closed a record 15.3 trillion USD AUM in June 2026 after 321 billion USD of net H1 inflows, having absorbed GIP (2024) and HPS, Preqin and ElmTree (all closed 2025) to build an integrated public-private, technology and data platform targeting 400 billion USD of private-markets fundraising by 2030.
+  - Agentic AI moved from pilots to core operating model in 2025-26 (BCG's April 2026 "Rebuilding Asset Management for an AI-First World"), and proprietary platforms are being commercialised as revenue lines - BlackRock's Aladdin (16% organic ACV growth, tripled desktop reach via Preqin) and Amundi's Alto being the leading examples.
+  - Tokenisation reached an inflection point: tokenised real-world assets sit at roughly 37 billion USD and Oliver Wyman projects they will cross the 100 billion USD barrier in 2026, with managers now choosing between retrofitting existing funds and building digital-native vehicles.
+  - US regulatory clarity arrived via the GENIUS Act (stablecoins) and the Digital Asset Market Clarity Act, while the SEC weighs applications to bolt ETF share classes onto mutual funds; in the EU, ESMA's fund-naming (ESG) guidelines took effect on 21 May 2025 pending the SFDR review.
+  - Democratisation of private markets is the dominant frontier: wealthy-client private assets are growing three times faster than institutional channels, private credit faces its first real credit-cycle test in 2026, and blending public and private exposure (increasingly for AI and infrastructure themes) is the defining product challenge.
+
+- ### References
+  - 1. Oliver Wyman (2025). 10 Asset Management Trends To Know In 2026. https://www.oliverwyman.com/our-expertise/insights/2025/dec/10-asset-management-trends-to-know-in-2026.html
+  - 2. Boston Consulting Group (2026). Global Asset Management Report 2026: Rebuilding Asset Management for an AI-First World. https://www.bcg.com/publications/2026/rebuilding-asset-management-for-an-ai-first-world
+  - 3. BlackRock (2026). Larry Fink Annual Chairman's Letter. https://www.blackrock.com/corporate/investor-relations/larry-fink-annual-chairmans-letter
+  - 4. AInvest (2025). Active Management Fee Compression: Navigating Profitability and Strategic Adaptation. https://www.ainvest.com/news/active-management-fee-compression-navigating-profitability-strategic-adaptation-2025-2509/
+  - 5. BDO (2026). 2026 Asset Management Industry Predictions. https://www.bdo.com/insights/industries/asset-management/2026-asset-management-industry-predictions
+  - 6. KPMG (2025). Evolving Asset Management Regulation Report 2025. https://assets.kpmg.com/content/dam/kpmgsites/dp/pdf/2025/Evolving-Asset-Management-Regulation-Report-2025.pdf.coredownload.pdf
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

@@ -486,6 +486,23 @@ alias:: ObjectDetection
   - [[Image Classification]]
   - [[Instance Segmentation]]
 
+- ### Current Landscape (2026)
+  - The real-time crown is now split between two lineages: CNN-style YOLO detectors and NMS-free real-time transformers (RT-DETR/RT-DETRv2/v3). YOLOv12 (February 2025) folded attention into the YOLO recipe via an Area Attention (A2) module and Residual ELAN (R-ELAN) blocks, reaching transformer-level accuracy (55.2% mAP for the X variant on COCO) at YOLO latencies.
+  - Ultralytics YOLO26, released January 2026, became the recommended production default: a natively NMS-free, DFL-free end-to-end design with the MuSGD optimiser, up to ~43% faster CPU inference than YOLO11, and multi-task support (detection, segmentation, pose, oriented boxes, classification). Notably, Ultralytics no longer recommends YOLO12/13 for production, citing attention-driven training instability and slower CPU throughput.
+  - Roboflow's RF-DETR (2025), a DINOv2-backbone real-time transformer under an Apache-2.0 licence, became the first real-time detector to cross 60 mAP on COCO and leads the RF100-VL domain-transfer benchmark (~60.6% mAP), pressuring the AGPL-licensed YOLO line on both accuracy and licensing terms.
+  - Open-vocabulary/zero-shot detection matured into a standard tier: YOLO-World (Tencent, prompt-then-detect), Grounding DINO, OWLv2 and Florence-2 detect from text prompts with no task-specific training, though the NeurIPS 2025 Roboflow100-VL benchmark showed Grounding DINO and VLMs like Qwen2.5-VL scoring under 2% zero-shot on hard medical domains, exposing a large domain-transfer gap that still needs few-shot alignment.
+  - Regulation moved to centre stage: the EU AI Act (Regulation (EU) 2024/1689) classifies ADAS/autonomous-driving perception (object, pedestrian and lane detection) as high-risk AI, with GPAI obligations live from August 2025, transparency rules from August 2026, and high-risk product deadlines extended to December 2027/August 2028, adding third-party conformity assessment, robustness stress-testing and data-lineage burdens.
+  - Deployment is overwhelmingly at the edge: the automotive edge-AI inference market was ~$8.7bn in 2025 (projected $24.8bn by 2034, 22.4% CAGR), with a modern vehicle running 5-15 concurrent inference tasks under sub-100ms latency budgets, driving demand for quantised, power- and thermal-constrained detectors.
+  - Open frontiers as of 2026: closing the open-vocabulary domain-transfer gap on specialised imagery, calibrated confidence (documented scale-bias in OVD scores), robustness to distribution shift and adversarial perturbation on COCO-O/COCO-C style benchmarks, and the lack of a standardised cross-EU benchmark suite for validating perception reliability in safety-critical corner cases.
+
+- ### References
+  - 1. Roboflow (2026). Best Object Detection Models 2026: RF-DETR, YOLOv12 & Beyond. https://blog.roboflow.com/best-object-detection-models/
+  - 2. Ultralytics (2025-2026). Model Comparisons / YOLO26 and YOLO12 Documentation. https://docs.ultralytics.com/compare
+  - 3. Sapkota et al. (2025). Ultralytics YOLO Evolution: YOLO26, YOLO11, YOLOv12 and RT-DETR (arXiv:2510.09653 / YOLO26 arXiv:2509.25164). https://arxiv.org/html/2509.25164v5
+  - 4. Roboflow / NeurIPS (2025). Roboflow100-VL: A Multi-Domain Object Detection Benchmark for Vision-Language Models. https://papers.neurips.cc/paper_files/paper/2025/file/1013f8ff40a194f3f12a6bcc5221bb34-Paper-Datasets_and_Benchmarks_Track.pdf
+  - 5. Automotive IQ (2026). EU AI Act Explained for Automotive: ADAS and Autonomous Driving. https://www.automotive-iq.com/generative-ai/articles/eu-ai-act-explained-for-automotive-what-changes-for-ai-vehicle-safety-adas-and-autonomous-driving
+  - 6. MarketIntelo (2025). Edge AI Inference for Automotive Market Research Report 2034. https://marketintelo.com/report/edge-ai-inference-for-automotive-market
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

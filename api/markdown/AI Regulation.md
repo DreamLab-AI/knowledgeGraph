@@ -285,6 +285,24 @@ public:: true
   - **Compute Governance** — emerging controls on the export of AI training hardware and cloud compute resources as a supply-chain lever for AI regulation; intersects with [[Supply Chain]] and export control law.
   - **Regulatory Capacity** — most regulators lack technical expertise to evaluate complex AI systems; building inspection and audit capacity is a systemic challenge.
 
+- ### Current Landscape (2026)
+  - The EU AI Act, which entered into force on 1 August 2024, reached its central milestone on 2 August 2026: the bulk of the Regulation became applicable and enforcement powers activated, including the European AI Office's authority to fine general-purpose AI (GPAI) providers up to EUR 15 million or 3% of global turnover under Article 101, and Article 50 transparency duties (chatbot disclosure, deepfake and AI-content marking).
+  - The EU softened its own timeline via the "Digital Omnibus on AI" (Regulation (EU) 2026/1744, in force 27 July 2026), which pushed Annex III high-risk obligations to 2 December 2027 and Annex I embedded high-risk systems to 2 August 2028; new prohibitions on non-consensual intimate deepfakes and AI-generated CSAM apply from 2 December 2026.
+  - GPAI obligations have applied since 2 August 2025, operationalised through the voluntary GPAI Code of Practice; models above the 10^25 FLOP systemic-risk threshold face additional safety, security and copyright assessment duties, with pre-2 August 2025 models given until 2 August 2027 to comply.
+  - The United States pivoted to deregulation: Executive Order 14179 (January 2025) revoked the Biden-era safety order, and EO 14365 "Ensuring a National Policy Framework for Artificial Intelligence" (11 December 2025) created a DOJ AI Litigation Task Force to challenge state laws and threatened to condition USD 42bn of BEAD broadband funding on states repealing "onerous" AI rules.
+  - State-level activity nonetheless accelerated, with NYU's Center on Technology Policy counting 109 state AI laws across 29 states in the first half of 2026; California's Transparency in Frontier AI Act (SB 53) and Texas's Responsible AI Governance Act (TRAIGA) took effect on 1 January 2026, while Colorado repealed its pioneering AI Act and replaced it with the narrower Automated Decision-Making Technology Act (SB 26-189), effective 1 January 2027.
+  - Standards consolidated around ISO/IEC 42001, the first certifiable AI management system standard, now adopted in Europe as EN ISO/IEC 42001:2026 (CEN, March 2026) and increasingly demanded by enterprise procurement; 2025 added six companion standards (ISO/IEC 42005 impact assessment, 42006 certification bodies, 42007 conformity schemes, 12792 transparency, TS 6254 explainability, TR 20226 sustainability).
+  - Multilateral governance matured: the UN General Assembly in August 2025 approved terms for an Independent International Scientific Panel on AI and a Global Dialogue on AI Governance, and the second International AI Safety Report (chaired by Yoshua Bengio, published February 2026) synthesised evidence from experts across dozens of countries to underpin policymaking.
+  - Open challenges as of 2026 include the US federal-versus-state preemption fight (36 state attorneys general are resisting the EO), the gap between GPAI obligations and not-yet-finalised harmonised EU standards, defining international "red lines" for unacceptable AI outcomes, and governing increasingly autonomous agentic AI, which Singapore addressed with a dedicated framework in January 2026.
+
+- ### References
+  - 1. European Commission — Digital Strategy (2026). AI Act: regulatory framework and enforcement timeline. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 2. Future of Life Institute — EU Artificial Intelligence Act (2026). Implementation Timeline and Enforcement of Chapter V. https://artificialintelligenceact.eu/implementation-timeline/
+  - 3. The White House (2025). Executive Order 14365: Ensuring a National Policy Framework for Artificial Intelligence. https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/
+  - 4. Skadden, Arps (2026). Colorado Repeals and Replaces Its AI Act. https://www.skadden.com/insights/publications/2026/06/colorado-repeals-and-replaces-its-ai-act
+  - 5. International AI Safety Report (2026). International AI Safety Report 2026. https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026
+  - 6. ITU (2025). The Annual AI Governance Report 2025: Steering the Future of AI. https://www.itu.int/epublications/zh/publication/the-annual-ai-governance-report-2025-steering-the-future-of-ai/en
+
 - ### Provenance
   - sources:: EU AI Act (Regulation 2024/1689); NIST AI RMF 1.0 (2023); OECD AI Principles (2019/2024); Council of Europe Framework Convention on AI (2024); ISO/IEC 42001:2023
   - updated:: 2026-06-13

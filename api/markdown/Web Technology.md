@@ -310,6 +310,23 @@ public:: true
   - **2015–2020** — HTTP/2 deployed; ES6/ES2015 modernises [[JavaScript]]; React, Angular, Vue popularise component-based front-ends; [[WebAssembly]] reaches MVP (2017).
   - **2020–present** — HTTP/3 (QUIC) rolls out; [[Web3]] ecosystem matures (DeFi, NFTs, DAOs); WebGPU standardised for GPU compute; [[Spatial Computing]] via WebXR gains traction; in-browser [[Machine Learning]] via TensorFlow.js and WebGPU accelerated runtimes.
 
+- ### Current Landscape (2026)
+  - WebGPU reached Web Platform Baseline "Newly available" in January 2026 once Safari 26 (macOS Tahoe, iOS, iPadOS, visionOS) and Firefox (141+ on Windows, 145+ on macOS ARM64) joined Chrome/Edge; the 2025 Web Almanac put WebGPU at roughly 65% of new 3D web apps (up from about 8% two years earlier), and Three.js has shipped it as the recommended renderer since r171, effectively ending WebGL's 15-year run as the default web 3D API.
+  - WebAssembly 3.0 was announced in September 2025, consolidating garbage collection (WasmGC), 64-bit memory (Memory64), exception handling with exnref, tail calls, relaxed SIMD and multiple memories; the Bytecode Alliance ratified WASI 0.3.0 in June 2026, rebasing WASI onto the Component Model with native async primitives.
+  - The Interop 2025 project closed the year at a 97% cross-browser pass rate (Safari alone jumped from 43 to 99), making anchor positioning, same-document View Transitions, the Navigation API, URLPattern and the Popover API interoperable; Interop 2026 continued the cadence, pushing cross-document View Transitions and WebGPU to a 90%+ Web Platform Tests pass rate across all four engines within Q1.
+  - WebTransport (low-latency bidirectional transport over HTTP/3) crossed Baseline in March 2026 when Safari 26.4 shipped support, and WebCodecs reached near-Baseline with Safari 26 full support, underpinning production tools such as Zoom Web, Loom and Adobe Premiere Web.
+  - In-browser AI moved onto the platform via Chrome's built-in AI APIs (Prompt, Summariser, Writer, Rewriter, Translator, Proofreader) powered by on-device Gemini Nano and the Gemma 197M expert model, with the Prompt API reaching stable in Chrome 148; WebNN, by contrast, remains an origin trial (Chrome 147-149) with production as a default path estimated for 2027.
+  - The "agentic web" emerged as the dominant framing at Google I/O 2026: WebMCP (a proposed standard exposing site JavaScript functions and forms to browser agents) entered origin trial in Chrome 149, Chrome Auto Browse (Gemini 3) rolled out from late January and reached Android at OS level from late June, while OpenAI retired its standalone ChatGPT Atlas browser on 9 August 2026.
+  - Open challenges as of 2026: WebGPU's mobile/Linux tail (Linux Firefox and pre-A12 iPhones still fall back to WebGL2), several hardware APIs (WebUSB, WebHID, WebSerial, Speculation Rules, Document PiP) remaining permanently Chromium-only under WebKit/Mozilla negative positions, agentic-browser security (prompt injection, DLP) driving enterprise controls such as Chrome Enterprise Premium, and WebAssembly's flat real-world footprint at about 0.35% of desktop sites per the 2025 Web Almanac.
+
+- ### References
+  - 1. Utsubo (2026). Frontier Web APIs 2026: WebGPU, WebTransport & What's Production-Ready. https://www.utsubo.com/blog/frontier-web-apis-2026-production-ready
+  - 2. Platform.uno / Jerome Laban (2026). The State of WebAssembly – 2025 and 2026. https://platform.uno/blog/the-state-of-webassembly-2025-2026/
+  - 3. WebKit (2026). Interop 2025: A year of convergence. https://webkit.org/blog/17808/interop-2025-review/
+  - 4. web.dev (2026). March 2026 Baseline monthly digest. https://web.dev/blog/baseline-digest-mar-2026
+  - 5. Chrome for Developers (2026). 15 updates from Google I/O 2026: Powering the agentic web. https://developer.chrome.com/blog/chrome-at-io26
+  - 6. NoHacks (2026). The Agentic Browser Landscape in 2026: A Complete Guide. https://nohacks.co/blog/agentic-browser-landscape-2026
+
 - ### Provenance
   - sources:: W3C specifications; IETF RFCs; WHATWG Living Standards; Protocol Labs IPFS documentation; Ethereum Foundation developer docs; MDN Web Docs
   - updated:: 2026-06-13

@@ -277,6 +277,23 @@ alias:: IncidentResponse
   - **FIRST (Forum of Incident Response and Security Teams)**: The global association of incident response teams, publishing guidelines on incident coordination, vulnerability disclosure, and cross-organisational response.
   - **Cybersecurity & Infrastructure Security Agency (CISA)**: US federal agency publishing sector-specific IR guidance, coordinating national-level response to major incidents, and operating the Government Emergency Response Team (GERT).
 
+- ### Current Landscape (2026)
+  - NIST finalised SP 800-61 Revision 3 in April 2025, the first major revision since 2012, withdrawing the 2012 Computer Security Incident Handling Guide and reframing incident response as a CSF 2.0 Community Profile organised around the six Govern-Identify-Protect-Detect-Respond-Recover functions rather than the old four-phase lifecycle; it explicitly endorses automation of alerts, triage and information sharing.
+  - The market has pivoted from static SOAR runbooks to agentic AI SOC platforms that reason across SIEM, EDR and identity data and run investigations they have not seen before; Gartner retired the SOAR Magic Quadrant in 2025 as native platform automation absorbed standalone SOAR.
+  - Vendor consolidation around the agentic SOC accelerated through 2025-2026: Palo Alto Cortex XSIAM with AgentiX, CrowdStrike Charlotte AI and Agentic SOAR (Fall 2025 release), SentinelOne Purple AI over OCSF-normalised data, Microsoft Sentinel/Defender, and Splunk AI SOC now anchor the field, alongside challengers such as Prophet Security, Stellar Cyber and Torq.
+  - Regulatory notification clocks are now designed into playbooks rather than bolted on: the SEC Form 8-K Item 1.05 four-business-day materiality-disclosure rule (with Inline XBRL tagging mandatory from December 2024), EU NIS2 24-hour early warning and 72-hour report (transposed October 2024, moving to active enforcement in 2026), and DORA's 4-hour classification, 24-hour advance and 72-hour detailed report windows (effective 17 January 2025).
+  - Governance of autonomous response tightened: teams use a trust-gradient model (auto-execute, auto-execute-with-notify, approve-then-execute, human-only) to keep irreversible actions such as regulatory notification and public disclosure with humans, driven partly by the EU AI Act treating high-stakes cyber decision systems as high-risk from June 2026, which mandates auditable reasoning traces and human oversight.
+  - CISA replaced flat KEV remediation deadlines with a risk-tiered model under Binding Operational Directive 26-04 (June 2026): assets meeting all four criteria (publicly exposed, KEV-listed, automatable exploit, serious post-exploitation impact) must be remediated within three days with forensic triage for prior compromise.
+  - The frontier challenge as of 2026 is documented agentic cybercrime (per Anthropic's 2025-2026 threat-intelligence reporting on AI-orchestrated attack chains) colliding with faster auto-remediation, which starts disclosure clocks sooner and raises, not lowers, the evidentiary bar; auditors are beginning to demand automation-coverage metrics the way they demand patching cadence.
+
+- ### References
+  - 1. National Institute of Standards and Technology (2025). SP 800-61 Rev. 3, Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile. https://csrc.nist.gov/pubs/sp/800/61/r3/final
+  - 2. Vectra AI (2026). Incident response automation: from SOAR to agentic AI. https://www.vectra.ai/topics/incident-response-automation
+  - 3. Palo Alto Networks (2026). Best AI SOC Tools: Top 10 Platforms for 2026 (Compared). https://www.paloaltonetworks.com/cyberpedia/ai-soc-tools-comparison
+  - 4. Security Boulevard (2026). Auto-Remediation Doesn't Lower Your Disclosure Bar. It Raises It. https://securityboulevard.com/2026/08/auto-remediation-doesnt-lower-your-disclosure-bar-it-raises-it/
+  - 5. Simbian (2026). Automated Incident Response in 2026: The End of Playbooks. https://simbian.ai/blog/automated-incident-response-2026
+  - 6. KuppingerCole (2026). Advisory Note: Research Compass Cybersecurity 2026. https://www.kuppingercole.com/research/an82014/research-compass-cybersecurity-2026
+
 - ### Provenance
   - sources:: NIST SP 800-61 Rev 2; ISO/IEC 27035-1:2023; SANS Institute PICERL Model; MITRE ATT&CK Framework; NIS2 Directive (EU) 2022/2555; GDPR Article 33; FIRST Guidelines
   - updated:: 2026-06-13

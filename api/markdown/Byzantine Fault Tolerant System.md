@@ -252,6 +252,23 @@
   - **Latency**: Multi-round all-to-all communication introduces latency overhead compared to crash-tolerant protocols; typical PBFT latency is 3 message delays for finality.
   - **Complexity**: Implementing a correct BFT protocol is notoriously difficult; subtle bugs in view-change logic have historically led to safety violations in deployed systems.
 
+- ### Current Landscape (2026)
+  - The frontier has shifted decisively to DAG-based BFT, which separates data dissemination from ordering so every replica proposes in parallel; the long-standing throughput-versus-latency tension is now largely closed by uncertified-DAG designs.
+  - Mysticeti-C (NDSS 2025) is the first DAG-based protocol to hit the 3-message-delay latency lower bound using an uncertified DAG; it went live on the Sui mainnet across roughly 100-137 validators, replacing Bullshark and cutting p50 commit latency about 80% (from ~1.9s to ~400ms) while sustaining 200k+ TPS.
+  - Competing academic designs pushed latency further: Autobahn (SOSP 2024, Cornell) matches Bullshark's ~230k TPS at ~280ms with seamless blip recovery, Shoal++ (NSDI 2025) cuts DAG commit to ~4.5 message delays, and Starfish (IACR 2025) and Sailfish++ target O(n) amortised communication with erasure-coded dissemination.
+  - Enterprise and permissioned stacks matured in parallel: Hyperledger Fabric v3.0 (September 2024) shipped a production SmartBFT ordering service with dynamic reconfiguration, and QBFT (finalised as the EEA specification in 2023) is now the default BFT consensus for permissioned Hyperledger Besu networks in 2026.
+  - MEV and order-fairness became the dominant security concern: a 2026 analysis showed Mysticeti's validator-index tiebreaker leaks a systematic ordering bias exploitable on Sui mainnet (a lower-indexed validator wins same-round ordering ~89% of the time, rising above 94% via silent-timing attacks, extracting roughly $18,000/day), while MonadBFT (2025) adds resistance to tail-forking reorganisation attacks.
+  - Formal verification advanced: a machine-checked ACL2 proof of blockchain non-forking for a DAG-based BFT protocol with dynamic stake (2025) generalised the classic n greater than 3f bound to validator sets that change at every block.
+  - Open challenges as of 2026 include censorship resistance and inclusion guarantees (addressed by Prefix/Raptr consensus work), unpredictable-tiebreaker fixes for order-fairness, robust synchronisation under attack (e.g. the Beluga block-synchroniser, November 2025), and closing the residual gap between single-sender pipelined protocols and DAG-based throughput ceilings.
+
+- ### References
+  - 1. Babel, Chursin, Danezis, Kokoris-Kogias & Sonnino (2025). Mysticeti: Reaching the Latency Limits with Uncertified DAGs (NDSS 2025). https://www.ndss-symposium.org/wp-content/uploads/2025-929-paper.pdf
+  - 2. Giridharan, Suri-Payer, Abraham, Alvisi et al. (2024). Autobahn: Seamless High Speed BFT (SOSP 2024). https://www.cs.cornell.edu/~fsp/reports/Autobahn__SOSP24_CR.pdf
+  - 3. Arun, Li, Suri-Payer, Das & Spiegelman (2025). Shoal++: High Throughput DAG BFT Can Be Fast! (NSDI 2025). https://www.usenix.org/system/files/nsdi25-arun.pdf
+  - 4. Liu et al. (2026). Fair on the Surface: Transaction-Ordering Bias and MEV in the Mysticeti DAG-based BFT Protocol. https://arxiv.org/html/2607.13378v1
+  - 5. Barger / LF Decentralized Trust (2024). Hyperledger Fabric v3: Delivering Smart Byzantine Fault Tolerant Consensus. https://www.lfdecentralizedtrust.org/blog/hyperledger-fabric-v3-delivering-smart-byzantine-fault-tolerant-consensus
+  - 6. ChainLaunch (2026). QBFT in Besu: Genesis Config, Validators, and Block Time. https://chainlaunch.dev/blog/qbft-consensus-besu-guide
+
 - ### Provenance
   - sources:: Lamport, Shostak & Pease (1982); Castro & Liskov (1999, PBFT); Abraham et al. (2019, HotStuff); Tendermint whitepaper; Hyperledger Fabric documentation
   - updated:: 2026-06-13

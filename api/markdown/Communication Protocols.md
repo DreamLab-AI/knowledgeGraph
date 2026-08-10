@@ -331,6 +331,22 @@ public:: true
   - **Security by design**: modern protocols incorporate encryption and authentication at the protocol level (TLS, QUIC's mandatory encryption) rather than leaving it to applications
   - **Versioning and negotiation**: protocols must evolve without breaking existing implementations; HTTP content negotiation, TLS cipher suite negotiation, and gRPC service reflection all address this
 
+- ### Current Landscape (2026)
+  - WebTransport over HTTP/3 reached Web Platform Baseline in March 2026 when Safari 26.4 shipped it unflagged alongside Chrome, Firefox and Edge, giving browsers a QUIC-based, multiplexed low-latency transport (reliable streams plus unreliable datagrams) positioned as the successor to TCP-era WebSockets.
+  - Media over QUIC Transport (MOQT), the IETF moq working group's publish/subscribe protocol over QUIC/WebTransport, advanced to draft-ietf-moq-transport-18 (12 May 2026) with production relay deployments at Cloudflare, WINK Streaming and nanocosmos delivering roughly 200-300 ms glass-to-glass latency; a formal RFC is expected in 2027.
+  - The QUIC working group continued maintenance and extension work through 2026, with QUIC Multipath (draft-ietf-quic-multipath-21) in the RFC Editor queue and further extensions (QMux, reliable stream reset with partial delivery, extended key update) progressing atop the core RFC 9000/9001/9002 and RFC 9369 (QUIC v2) stack.
+  - A new class of AI agent communication protocols consolidated under neutral governance: Google donated Agent2Agent (A2A) to the Linux Foundation on 23 June 2025, IBM's Agent Communication Protocol merged into A2A in August 2025, and Anthropic donated the Model Context Protocol (MCP) to the Linux Foundation's Agentic AI Foundation in December 2025.
+  - MCP hardened its security model around the stable 2025-11-25 revision (with a 2026-07-28 release candidate), now mandating OAuth 2.0 Protected Resource Metadata (RFC 9728) and Resource Indicators (RFC 8707) so tokens bind to a specific server, while A2A v1.0 standardised three transport bindings: JSON-RPC 2.0 over HTTP, gRPC and HTTP+JSON/REST.
+  - The IETF moved to formalise agent communication: an agentproto Birds-of-a-Feather session at IETF 126 in Vienna (23 July 2026) weighed chartering a working group to bring MCP, A2A and rivals under an RFC, grounded in the Rosenberg-Jennings framework draft that frames agent protocols as a new application layer above HTTP, SIP and RTP.
+  - Open challenges as of 2026 include cross-domain identity federation, multi-hop agent lifecycle management, user confirmation before irreversible API actions, and protocol-level attribution for prompt-injection incidents, alongside post-quantum concerns driving proposals such as CURRENT to add quantum-robust rekeying at the transport layer using MLS (RFC 9420).
+
+- ### References
+  - 1. Fora Soft (2026). Media over QUIC: 2026 Architecture & Migration Guide. https://www.forasoft.com/blog/article/moq-application-development-architecture
+  - 2. WebRTC.ventures (2026). WebTransport Is Now Baseline: What It Means for Real-Time Media. https://webrtc.ventures/2026/04/webtransport-is-now-baseline-what-it-means-for-real-time-media/
+  - 3. IETF QUIC Working Group (2026). QUIC Working Group documents. https://datatracker.ietf.org/group/quic/documents/
+  - 4. Zuplo (2026). MCP, A2A, and Where ACP Went. https://zuplo.com/blog/agent-protocol-stack-mcp-a2a-acp-2026
+  - 5. TechTimes (2026). AI Agent Protocol Standard Vote Arrives Thursday at IETF 126 in Vienna. https://www.techtimes.com/articles/321247/20260722/ai-agent-protocol-standard-vote-arrives-thursday-ietf-126-vienna.htm
+
 - ### Provenance
   - sources:: IETF RFC series; ISO/IEC 7498 OSI Reference Model; Tanenbaum & Wetherall "Computer Networks" (5th ed.); Kurose & Ross "Computer Networking: A Top-Down Approach"
   - updated:: 2026-06-13

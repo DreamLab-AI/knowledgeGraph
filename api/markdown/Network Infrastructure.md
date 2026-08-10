@@ -328,6 +328,23 @@ alias:: NetworkInfrastructure
     - **6G** — ITU-R IMT-2030 framework targets terabit-scale peak rates, sub-100-microsecond latency, integrated sensing and communication (ISAC), and AI-native air interface design; commercial deployment anticipated late 2030s.
     - **Deterministic networking** — IETF DetNet working group and IEEE TSN extend packet networks with bounded latency guarantees for industrial and real-time control applications.
 
+- ### Current Landscape (2026)
+  - The Ultra Ethernet Consortium (now governed by the Linux Foundation) released its UEC Specification 1.0 on 11 June 2025, defining Ultra Ethernet Transport (UET) with modern RDMA semantics, multipath routing and AI-tuned congestion control; a 1.0.1 update followed in September 2025, positioning open Ethernet as a credible rival to InfiniBand for AI and HPC fabrics.
+  - Data-centre networking has moved to 800G as the de facto standard for AI GPU fabrics in 2025, with NVIDIA's Quantum-X800 InfiniBand and Spectrum-X800 Ethernet platforms shipping in volume and Microsoft Azure deploying non-blocking 800G fat-tree fabrics for GB200/GB300 clusters; 1.6T trials are underway with a projected shift to 1.6T ports by 2027.
+  - The IEEE 802.3dj standard (200G/lane, spanning 200G/400G/800G/1.6T) is on track for completion in late 2026, with early 200G/lane products reaching market and the community already initiating a 400G/lane project for the next bandwidth generation.
+  - Coherent pluggable optics matured across 2024-2025: the OIF 400ZR-3.0 implementation agreement was published (October 2024), 800ZR reached multi-vendor interoperability (five DSP vendors demonstrated at ECOC 2025), and work advanced on 1600ZR/1600ZR+ alongside 448G and 224G electrical I/O (CEI) for scaling AI networks.
+  - On the mobile side, 3GPP completed 5G-Advanced Release 19 functional and core specification work in September 2025 with protocols stabilised in December 2025, bringing native AI/ML in the RAN and air interface, ambient IoT, non-terrestrial network (NTN) integration and 15-30% network energy savings; Release 20 work (the bridge to 6G) began in late 2025.
+  - Key players are consolidating around open, scheduled and enhanced Ethernet displacing proprietary interconnect at 100K+ XPU scale: Broadcom (Tomahawk 5/Jericho), Arista, DriveNets scheduled fabric, Marvell (targeting 100T-200T scale-out and UALink/NVLink Fusion scale-up), plus challengers such as Xsight Labs, which raised over 300M dollars at a 2.8bn valuation in July 2026 for its X2 12.8 Tbps switch and E1 DPU.
+  - Open frontiers as of 2026 include co-packaged optics (CPO) and silicon photonics to curb power (800G modules draw 14-20W per port, straining rack cooling), tail latency under incast for Ethernet fabrics versus InfiniBand, and scale-up interconnect standardisation via UALink 1.0 (adopting the Ethernet PHY) and the emerging ESUN effort.
+
+- ### References
+  - 1. Network World (2026). Ethernet groups keep 2026 focus on higher bandwidth, AI demands. https://www.networkworld.com/article/4113364/ethernet-groups-keep-2026-focus-on-higher-bandwidth-ai-demands.html
+  - 2. Ultra Ethernet Consortium (2025). UEC 2025 in Review: Preparing for What Comes Next — A Letter from UEC's Chair. https://ultraethernet.org/uec-2025-in-review-preparing-for-what-comes-next-a-letter-from-uecs-chair/
+  - 3. Introl (2025). 800G Networking for AI: Planning Your Next-Generation GPU Fabric. https://introl.com/blog/800g-networking-ai-gpu-fabric-planning-2025
+  - 4. Unite.ai (2026). Xsight Labs Raises 300M for Programmable AI Network Silicon. https://www.unite.ai/xsight-labs-raises-300m-for-programmable-ai-network-silicon/
+  - 5. OIF / Semiconductor Today (2025). OIF highlighting how interoperability enables scalable, AI-era networks at ECOC 2025. https://www.semiconductor-today.com/news_items/2025/sep/oif-260925.shtml
+  - 6. 3GPP (2025). 3GPP Highlights Issue 11 — Release 19 completion of 5G-Advanced. https://www.3gpp.org/ftp/Information/Highlights/3GPP_Highlights_Issue_11_WEB.pdf
+
 - ### Provenance
   - sources:: [[3GPP]], [[IETF]], [[IEEE 802 Standards]], [[ETSI]], [[ITU-T]]
   - updated:: 2026-06-13

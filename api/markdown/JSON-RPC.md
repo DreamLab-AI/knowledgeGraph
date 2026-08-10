@@ -293,6 +293,23 @@ public:: true
   - **Replay attacks**: stateless HTTP transport is vulnerable to replay unless tokens or nonces are applied at the application layer.
   - In the [[Ethereum]] context, the JSON-RPC endpoint is a high-value target — node operators should restrict `personal_` and `debug_` namespace access via firewall rules or authentication middleware.
 
+- ### Current Landscape (2026)
+  - Anthropic's Model Context Protocol (MCP), open-sourced on 25 November 2024, made JSON-RPC 2.0 the message format for AI agent-to-tool communication and became its most consequential new use case in a decade; by Anthropic's December 2025 ecosystem update MCP reported over 10,000 active public servers and 97M+ monthly SDK downloads, with adoption across OpenAI, Google Gemini, Microsoft Copilot, Cursor and VS Code.
+  - MCP's dated spec revisions repeatedly reshaped JSON-RPC usage: 2025-03-26 replaced the old HTTP+SSE transport with Streamable HTTP and added JSON-RPC batching, whereas 2025-06-18 removed batching as a breaking change, added structured tool output and elicitation, and required the MCP-Protocol-Version header.
+  - Security hardening dominated 2025: the 2025-06-18 profile reclassifies servers as OAuth 2.1 Resource Servers, mandating RFC 9728 Protected Resource Metadata and RFC 8707 audience binding after confused-deputy and token-passthrough incidents; Streamable HTTP servers must also validate the Origin header (HTTP 403) to block DNS-rebinding attacks.
+  - Governance moved to a neutral home: in November 2025 Anthropic donated MCP to the Linux Foundation's Agentic AI Foundation, and September 2025 saw the launch of an official MCP Registry (roughly 9,600 latest server records by a May 2026 snapshot) to consolidate discovery previously scattered across npm, PyPI and GitHub.
+  - The 2026-07-28 release candidate (published 21 May 2026) pushes JSON-RPC transport towards a stateless core, removing protocol-level sessions and the Mcp-Session-Id header, adding Multi Round-Trip Requests and an extensions framework, while keeping JSON-RPC as the wire format but exposing routing-critical fields such as method and tool name via HTTP headers.
+  - In blockchain, Ethereum's canonical JSON-RPC interface continued to standardise via the OpenRPC-formatted execution-apis spec (at 1.0.0-beta.7), adding methods such as eth_simulateV1, eth_config and eth_getBlockAccessList alongside expanding engine_* payload versions for post-Merge consensus/execution coupling.
+  - Open challenges as of 2026 include reconciling stateless HTTP scaling with long-running streamed calls, closing OAuth/token-scoping gaps for remote servers, and taming ecosystem fragmentation, with fewer than 5% of the 22,000+ MCP-tagged GitHub repos actually shipping working servers.
+
+- ### References
+  - 1. Hidekazu Konishi (2026). Model Context Protocol Specification Version Timeline. https://hidekazu-konishi.com/entry/mcp_specification_version_timeline.html
+  - 2. Model Context Protocol project (2025). Key Changes — Specification revision 2025-06-18 changelog. https://modelcontextprotocol.info/specification/2025-06-18/changelog/
+  - 3. StackOne (2026). MCP: What's Working, What's Broken, and What Comes Next. https://www.stackone.com/blog/mcp-where-its-been-where-its-going/
+  - 4. Digital Applied (2026). MCP Adoption Statistics 2026: Model Context Protocol. https://www.digitalapplied.com/blog/mcp-adoption-statistics-2026-model-context-protocol
+  - 5. Model Context Protocol Blog (2025). Exploring the Future of MCP Transports. https://blog.modelcontextprotocol.io/posts/2025-12-19-mcp-transport-future/
+  - 6. Felix Lange / Ethereum Foundation (2025). State of the RPC Standardization Process (01/2025); Ethereum Execution APIs spec. https://ethereum.github.io/execution-apis/
+
 - ### Provenance
   - sources::
   - updated:: 2026-06-13

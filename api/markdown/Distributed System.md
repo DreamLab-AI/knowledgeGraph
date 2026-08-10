@@ -345,6 +345,23 @@ public:: true
     - Brewer (2000) / Gilbert and Lynch (2002) — CAP theorem formalisation.
     - Vogels (2009) — eventual consistency survey (Amazon CTO blog, widely cited).
 
+- ### Current Landscape (2026)
+  - Consensus research is moving decisively beyond leader-based Raft: Cloudflare's Meerkat control-plane service (announced August 2026), built on the QuePaxa algorithm, allows leaderless writes to avoid the availability loss when a leader becomes unreachable across wide-area networks, with proofs of concept running up to 50 globally-distributed replicas.
+  - OSDI '26 (July 2026) showcased a wave of new protocols — Bodega serves linearizable local reads from any node via a generalised "roster", and Jetpack retrofits a 1-RTT fast path onto existing consensus protocols like Raft — while the pod protocol (arXiv:2501.14931, revised January 2026) targets the physically-optimal 2-delta latency by eliminating inter-replica communication.
+  - Distributed SQL has fragmented into three branches by 2026: true shared-nothing consensus systems (CockroachDB, TiDB, YugabyteDB, Spanner, and the now-GA Aurora DSQL), sharded orchestration layers (Vitess, Citus, PlanetScale Metal), and serverless storage/compute-split Postgres (Neon, Aurora Serverless v2, Xata).
+  - Cockroach Labs continues to publish core techniques — its SIGMOD 2026 paper "Scalable Leader Leases for Multi Consensus Groups" (presented in Bengaluru, June 2026) — while its August 2024 licensing shift required enterprise contracts for self-hosting from v24 onward; Spanner has fully rolled out a GA PostgreSQL wire interface, retiring its homegrown dialect.
+  - Serverless and edge have effectively merged: Q4 2025 industry data reported over 60% of new web applications incorporate edge compute (up from ~35% two years prior), with Cloudflare Workers AI exiting beta in Q1 2026 and Durable Objects providing globally consistent stateful storage co-located with logic.
+  - WebAssembly is displacing containers for edge FaaS, with frameworks like WASP (WSCC 2026) bringing pluggable, stateful serverless execution across the edge-cloud continuum, and distributed LLM inference at the edge (WISP, HALO/INFOCOM 2026) emerging as a major workload class.
+  - Verification remains a live frontier: a 2026 study (Liu et al., arXiv:2605.29910) used LLM-powered agents to uncover 15 previously unknown protocol-level logic bugs across four production consensus implementations (Raft, EPaxos, HotStuff, BullShark), underscoring that even battle-tested consensus code demands rigorous formal and simulation-based verification such as TigerBeetle's deterministic simulation testing.
+
+- ### References
+  - 1. InfoQ (2026). Cloudflare Introduces Meerkat for Strongly Consistent Global Coordination. https://www.infoq.com/news/2026/08/cloudflare-meerkat-consensus/
+  - 2. USENIX (2026). OSDI '26 Technical Sessions — Consensus and Byzantine Fault Tolerance (Bodega, Jetpack, Pompe-SRO). https://www.usenix.org/conference/osdi26/technical-sessions
+  - 3. Youngju Kim (2026). Distributed SQL / NewSQL 2026 — CockroachDB / TiDB / YugabyteDB / Spanner / Aurora DSQL / Neon Deep Dive. https://www.youngju.dev/blog/culture/2026-05-15-distributed-sql-newsql-2026-cockroachdb-tidb-yugabytedb-spanner-aurora-dsql-neon-deep-dive.en
+  - 4. Cockroach Labs (2026). Scalable Leader Leases for Multi Consensus Groups in CockroachDB (SIGMOD 2026). https://www.cockroachlabs.com/blog/distributed-database-leader-leases/
+  - 5. Apex Logic (2026). Serverless & Edge in 2026: The New Frontier of Distributed Deployment. https://www.apex-logic.net/news/serverless-and-edge-in-2026-the-new-frontier-of-distributed-deployment
+  - 6. Nanotech Insight (2026). Consensus Algorithms in Distributed Systems: Engineering Guide 2026 (citing Liu et al., arXiv:2605.29910). https://nanotechinsight.com/post/distributed-systems-consensus-algorithms-engineering-guide-2026
+
 - ### Provenance
   - sources:: Lamport et al. (1982) Byzantine Generals; Brewer (2000) CAP Theorem; Fischer, Lynch, Paterson (1985) FLP; Vogels (2009) Eventually Consistent; Kleppmann (2017) Designing Data-Intensive Applications; CNCF landscape documentation
   - updated:: 2026-06-13
