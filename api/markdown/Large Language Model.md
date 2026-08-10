@@ -297,6 +297,22 @@ public:: true
   - The Chinchilla scaling laws (Hoffmann et al., 2022) and Kaplan et al. (2020) power-law scaling results are the empirical foundation for compute-budget allocation decisions in frontier training runs.
   - Responsible Scaling Policies (Anthropic ASL, OpenAI Preparedness Framework) establish voluntary capability thresholds that trigger additional safety evaluations before continued scaling.
 
+- ### Current Landscape (2026)
+  - Reasoning models became a distinct category through 2025 — OpenAI's o1/o3, Anthropic's extended-thinking Claude, and DeepSeek-R1 (which claimed frontier reasoning at roughly $6M training cost) — normalising inference-time "thinking" budgets rather than single-pass generation.
+  - The frontier flagship race intensified across late 2025 into 2026: Google's Gemini 3 Pro (18 November 2025), OpenAI's GPT-5.2 (11 December 2025) and Anthropic's Claude Opus 4.5 (October 2025), followed by Opus 4.6 with adaptive thinking on 5 February 2026, with 1M-token context windows moving from premium to default.
+  - Coding and agentic benchmarks converged near saturation, with SWE-bench Verified scores clustering around 76–81% (Claude Opus 4.5 leading at ~80.9%) and AIME 2025 maths hitting 100% for several models, shifting evaluation toward harder frontier suites like ARC-AGI-2, Humanity's Last Exam and Terminal-Bench.
+  - Open-weight models closed much of the gap: DeepSeek scaled its Mixture-of-Experts line from V3 (December 2024) through V3.2 with Sparse Attention to a V4 Preview (April 2026), while Alibaba's Qwen3/Qwen3.5 (Apache 2.0), Meta's Llama 4 Scout (10M-token context), GLM-5, Kimi K2 and Mistral Large 3 gave regulated enterprises viable self-hosted options — parity on coding, but a persistent ~5–18 point closed-model lead on general knowledge and long-context retrieval.
+  - The Model Context Protocol (MCP) emerged as the de facto standard for agent tool connectivity — a provider-agnostic JSON-RPC interface adopted by AWS, Azure, GCP, VS Code and JetBrains through 2025 — alongside the Agent-to-Agent (A2A) protocol for multi-agent coordination, accelerating enterprise agentic deployments.
+  - Regulation tightened materially: the EU AI Act's obligations for general-purpose AI (GPAI) model providers entered into application on 2 August 2025 (transparency, technical documentation, copyright policy, training-data summaries), with models above 10^25 FLOP presumed to carry "systemic risk"; the Commission's enforcement powers, including fines up to €35M or 7% of global turnover, took effect on 2 August 2026.
+  - Open challenges as of 2026 include residual hallucination (best models around 6% on targeted evals), inference cost and energy, model provenance and data-sovereignty scrutiny (especially for Chinese-origin open weights), and the shift from single-model selection to per-workload routing across mixed open/closed fleets.
+
+- ### References
+  - 1. European Commission (2025). Guidelines for providers of general-purpose AI models under the AI Act. https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers
+  - 2. European Commission (2026). AI Act — Regulatory framework for AI (Regulation (EU) 2024/1689). https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 3. Introl (2026). GPT-5.2 vs Gemini 3 Pro: 2026 Benchmark Comparison. https://introl.com/blog/gpt-5-2-vs-gemini-3-benchmark-comparison-2026
+  - 4. Hidekazu Konishi (2026). Open-Weights LLM Release History and Timeline — Llama, Mistral, Qwen, DeepSeek. https://hidekazu-konishi.com/entry/open_weights_llm_release_history_and_timeline.html
+  - 5. SimuPro (2026). LLM & AI Developments 2025–2026. https://simupro.nl/guides/llm-ai-developments-2025-2026/
+
 - ### Provenance
   - sources:: Vaswani et al. (2017) "Attention Is All You Need"; Radford et al. GPT-2 (2019) and Brown et al. GPT-3 (2020); Hoffmann et al. (2022) "Training Compute-Optimal Large Language Models" (Chinchilla); Ouyang et al. (2022) "Training language models to follow instructions with human feedback"; Touvron et al. Llama 1 & 2 (2023); established knowledge in [[Natural Language Processing]], [[Machine Learning]], and [[AI Safety]] literature; EU AI Act official text (2024).
   - updated:: 2026-06-13

@@ -280,6 +280,23 @@ public:: true
   - **2022** — EU Digital Identity Wallet Architecture and Reference Framework (ARF) published; SD-JWT IETF draft initiated.
   - **2024** — eIDAS 2.0 published as EU law; ISO 18013-5 widely deployed in Apple/Google wallets; OID4VC profiles stabilised.
 
+- ### Current Landscape (2026)
+  - eIDAS 2.0 (Regulation (EU) 2024/1183, in force 20 May 2024) has become the anchoring force for privacy-preserving identity, obliging every EU member state to provide at least one European Digital Identity (EUDI) Wallet by the end of 2026, with mandatory acceptance by regulated sectors (banking, telecoms, healthcare, platforms) from December 2027.
+  - The EUDI Architecture and Reference Framework has iterated rapidly through 2025-2026 (version 2.8.0, published 2 February 2026), fixing SD-JWT VC and ISO/IEC 18013-5 mdoc as the credential formats over OpenID4VCI/OpenID4VP, while zero-knowledge proofs remain the single open discussion topic pending selection of a concrete scheme.
+  - The EU age-verification "mini wallet" blueprint moved from a July 2025 release to a feature-ready, ZKP-based solution on 15 April 2026, letting users prove they are over 18 without disclosing birthdate or identity; it is being piloted by front-runner states France, Denmark, Greece, Italy, Spain, Cyprus and Ireland, with per-transaction verification cost projected to fall from EUR 1-5 to under EUR 0.05.
+  - Standards bodies have advanced the privacy toolkit: ETSI TR 119 476 catalogues cryptographic selective-disclosure and unlinkability schemes for eIDAS 2.0, ISO/IEC TS 18013-7:2025 extends mDL add-on functions, and the EDPS TechDispatch 3/2025 (December 2025) foregrounds anonymous-credential technology to counter over-disclosure and linkability.
+  - In the US, mobile driving licences reached roughly 21 states plus Puerto Rico by early 2026 (ISO/IEC 18013-5, TSA-accepted at 250-plus checkpoints), with California passing SB 169 to expand its programme to 60% of drivers and roughly 8 million mDLs issued nationwide, though real activation stayed near 7% of eligible holders.
+  - Key players span state issuers and platform wallets (Apple, Google, Samsung, Idemia), EUDI-ecosystem vendors, and a Tier-A zero-knowledge KYC category (zkMe, Galactica, Verifyo) shipping reusable ZK proofs rather than repeated document scans.
+  - Open challenges as of 2026 include US fragmentation (around 17 incompatible wallets, largely optional privacy protections and a "phone home" default the ACLU and EFF are contesting), unresolved unlinkability with salted-hash formats such as SD-JWT, and the still-unselected EUDI ZKP scheme that leaves attestation-provider linkability only partly mitigated.
+
+- ### References
+  - 1. European Commission / EUDI Wallet (2026). Age Verification Use Case Manual and EU Age Verification Blueprint. https://ageverification.dev/
+  - 2. European Commission, Digital Strategy (2026). The EU approach to age verification. https://digital-strategy.ec.europa.eu/en/policies/eu-age-verification
+  - 3. EUDI Wallet ARF (2026). Discussion topic: Zero-Knowledge Proof. https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/2.9.0/discussion-topics/g-zero-knowledge-proof/
+  - 4. European Data Protection Supervisor (2025). TechDispatch 3/2025 - Digital Identity Wallets. https://www.edps.europa.eu/data-protection/our-work/publications/techdispatch/2025-12-15-techdispatch-32025-digital-identity-wallets_en
+  - 5. PM Researcher (2026). The State of Digital ID in the US, Explained. https://pmresearcher.substack.com/p/the-state-of-digital-id-in-the-us
+  - 6. Biometric Update (2026). US states deepen mobile ID rollouts as focus shifts to verification and privacy. https://www.biometricupdate.com/202605/us-states-deepen-mobile-id-rollouts-as-focus-shifts-to-verification-and-privacy
+
 - ### Provenance
   - sources:: W3C VC Data Model 2.0; IETF SD-JWT and BBS+ drafts; ISO/IEC 18013-5; eIDAS 2.0 Regulation; Camenisch & Lysyanskaya (2001); Chaum (1985); NIST SP 800-63-4; OpenID Foundation OID4VC specifications
   - updated:: 2026-06-13

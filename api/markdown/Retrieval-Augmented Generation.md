@@ -235,6 +235,22 @@ alias:: Retrieval Augmented Generation, RAG, Retrieval-Augmented LLM
   - The [[Agentic AI]] ecosystem (LangChain, LlamaIndex, AutoGen) has standardised RAG as a first-class primitive, with tool-calling conventions enabling models to invoke retrievers dynamically.
   - ISO/IEC standards for AI trustworthiness (ISO/IEC 42001, ISO/IEC 23053) are relevant to RAG deployments in regulated industries, as RAG's source attribution capability directly supports auditability requirements.
 
+- ### Current Landscape (2026)
+  - The defining 2025 shift was from static "retrieve-then-generate" pipelines to agentic RAG, where RL-trained agents (Search-R1, ReSearch, DeepResearcher, using PPO/GRPO) learn to interleave reasoning with search and decide when, what and how to retrieve; agentic loops and multi-hop chains are now the default orchestration layer in production stacks.
+  - Microsoft Research's GraphRAG (Edge et al., arXiv:2404.16130) popularised entity-relationship knowledge graphs with Leiden community summaries for global "sensemaking" queries, and its June 2025 successor LazyGraphRAG defers community summarisation to query time, cutting indexing cost to roughly 0.1% of full GraphRAG while remaining competitive.
+  - Independent benchmarking has tempered the graph hype: GraphRAG-Bench (arXiv:2506.05690, accepted at ICLR 2026) found GraphRAG about 13.4% less accurate than vanilla RAG on Natural Questions and only +4.5% on multi-hop HotpotQA at ~2.3x higher latency, confirming graph retrieval pays off mainly for entity-relationship traversal over stable corpora, not simple factoid lookups.
+  - Hybrid retrieval became the standard baseline: BM25 plus dense embeddings fused with Reciprocal Rank Fusion, topped by a cross-encoder reranker (Cohere Rerank, Voyage Rerank-2, BGE-M3), consistently beats dense-only retrieval across BEIR/MTEB-style evaluations.
+  - The "RAG is dead" long-context debate was settled empirically as a trade-off rather than a winner: ICML 2025's LaRA benchmark (2,326 cases, 11 LLMs) concluded neither approach dominates, with RAG favoured when corpora exceed ~2M tokens, freshness or source attribution matter, and cost is a concern (long-context reported 8-82x more expensive at scale).
+  - The framework ecosystem consolidated around LangChain/LangGraph, LlamaIndex, Haystack and DSPy for agentic RAG, alongside vector stores such as Pinecone, Weaviate, Qdrant and Milvus; standardised evaluation (groundedness, context adherence, faithfulness, answer relevance) is now run continuously, and NIST's TREC 2025 RAG track over MS MARCO V2.1 added formal attribution-verification and response-completeness assessment.
+  - Open challenges as of 2026 include controlling the token and latency cost of multi-step agentic and graph pipelines, multimodal and real-time dynamic-graph retrieval, confidence calibration and hallucination guardrails for high-stakes domains, and privacy-preserving retrieval, with research pointing towards unified graph foundation models and end-to-end optimised retriever-generator systems.
+
+- ### References
+  - 1. Edge, D. et al. / Microsoft Research (2024). From Local to Global: A Graph RAG Approach to Query-Focused Summarization. https://arxiv.org/abs/2404.16130
+  - 2. Xiang, Y. et al. (2025). When to use Graphs in RAG: A Comprehensive Analysis for Graph Retrieval-Augmented Generation (GraphRAG-Bench, ICLR 2026). https://arxiv.org/html/2506.05690v3
+  - 3. Singh, A. et al. (2025). Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG. https://arxiv.org/html/2501.09136v4
+  - 4. Han, H. et al. (2025). RAG vs. GraphRAG: A Systematic Evaluation and Key Insights. https://arxiv.org/html/2502.11371v3
+  - 5. NIST (2025). TREC 2025 Retrieval-Augmented Generation (RAG) Track Proceedings. https://pages.nist.gov/trec-browser/trec34/rag/proceedings/
+
 - ### Provenance
   - sources:: Lewis et al. (2020), "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"; LangChain and LlamaIndex documentation; RAGAS evaluation framework
   - updated:: 2026-06-13

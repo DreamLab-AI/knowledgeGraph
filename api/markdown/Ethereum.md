@@ -326,6 +326,22 @@ public:: true
   - [[IPFS]] and [[Filecoin]] are frequently paired with Ethereum for decentralised content storage, with [[Content Addressed Storage]] references embedded in NFT metadata and DAO documents.
   - [[MetaMask]] is the most widely used browser-extension [[Crypto Wallet]] for Ethereum interaction, injecting a Web3 provider into browser contexts for [[Decentralised Application]] access.
 
+- ### Current Landscape (2026)
+  - The Fusaka upgrade activated on mainnet on 3 December 2025 (slot 13,164,544), with PeerDAS (EIP-7594) as its headliner, letting validators sample blob data rather than download every blob in full and enabling a roughly 8x theoretical increase in blob capacity.
+  - Fusaka also introduced Blob Parameter Only (BPO) forks, which allow blob throughput to be raised without a full hard-fork cycle; the first two BPO forks lifted the blob target to 14 per block and the maximum to 21 (a ~2.3x rise over pre-Fusaka), while the default block gas limit climbed to 60M (up from the long-standing 30M).
+  - The May 2025 Pectra upgrade shipped EIP-7702 (letting ordinary EOAs temporarily execute smart-contract code for batching, gas sponsorship and social recovery) and EIP-7251, which raised the maximum effective validator balance from 32 to 2,048 ETH; by May 2026 over 26% of validators were compounding and L2 fees had settled below two cents.
+  - US spot Ethereum ETF staking became a reality: Grayscale enabled staking in October 2025 and paid the first-ever US spot Ether staking distribution in January 2026 (~$9.4M), and BlackRock listed the dedicated iShares Staked Ethereum Trust (ETHB) on Nasdaq in March 2026 with $107M seed capital.
+  - On 17 March 2026 the SEC issued a Commission-level interpretive release, joined by the CFTC, naming Ether among sixteen digital commodities outside the securities laws and clarifying that protocol staking rewards do not trigger Securities Act registration; Fidelity (FETH), Franklin Templeton, Invesco, 21Shares and VanEck had staking amendments pending through Q2 2026.
+  - The next major upgrade, Glamsterdam (execution-layer Amsterdam plus consensus-layer Gloas), is targeted for the second half of 2026 with enshrined proposer-builder separation (EIP-7732) and block-level access lists (EIP-7928) as headliners, aimed at lifting the block gas limit from 60M toward roughly 200M; Hegotá is scoped to follow in 2027 with FOCIL inclusion lists.
+  - Markets and governance remained under strain: ETH traded around $2,075-$2,100 in May 2026, down roughly 57% from its August 2025 all-time high near $4,946, while the Ethereum Foundation cut about a fifth of its staff and reorganised around three tracks (Scale, Improve UX, Harden the L1).
+
+- ### References
+  - 1. Ethereum Foundation (2026). Ethereum roadmap (Pectra, Fusaka, Glamsterdam). https://ethereum.org/roadmap/
+  - 2. Ethereum Foundation (2026). Building on Ethereum in 2026: what has changed. https://ethereum.org/latest/building-on-ethereum-in-2026/
+  - 3. Ethereum Foundation (2026). Protocol Priorities Update for 2026. https://blog.ethereum.org/2026/02/18/protocol-priorities-update-2026
+  - 4. Astraea Law (2026). Ethereum Staking Regulation in 2026: What Institutions Can Rely On. https://astraea.law/insights/ethereum-staking-regulation-institutions-2026
+  - 5. Latham & Watkins (2026). US Crypto Policy Tracker: Regulatory Developments (SEC/CFTC 17 March 2026 interpretive release). https://www.lw.com/en/us-crypto-policy-tracker/regulatory-developments
+
 - ### Provenance
   - sources:: Ethereum Yellow Paper (Gavin Wood); Ethereum.org documentation; EIP repository (github.com/ethereum/EIPs); Buterin, V. (2014) "A Next Generation Smart Contract and Decentralised Application Platform" (Ethereum Whitepaper)
   - updated:: 2026-06-13

@@ -1157,6 +1157,23 @@ alias:: Lightning-Network
   - enrichment-phase:: 6
   - enrichment-date:: 2026-05-17
 
+- ### Current Landscape (2026)
+  - Lightning became a multi-asset network via Lightning Labs' Taproot Assets protocol, which reached v0.6 (June 2025), v0.7 (December 2025, adding reusable AddressV2 addresses, auditable supply commitments and Multi-RFQ multi-path sends) and v0.8 (June 2026, shipping a Taproot Assets SDK).
+  - Tether's USDT went into production over Lightning in March 2026 (announced by Paolo Ardoino and Elizabeth Stark at the Plan B Forum in El Salvador on 30 January 2025), giving the network a dollar unit of account for the first time; RGB-based native USDT approaches also emerged in mid-2026.
+  - Public channel capacity hit an all-time high of ~5,637 BTC on 16 December 2025 before settling to ~4,898 BTC across ~41,080 channels and ~17,438 nodes by May 2026, with private capacity estimated at more than twice the public total (12,000+ BTC).
+  - Publicly measured monthly volume crossed ~$1.17 billion in November 2025 (up roughly 266% year-on-year, ~5.2M payments averaging ~$223), decoupling adoption growth from BTC price; exchange integrations by Binance, OKX and Coinbase and merchants such as Steak 'n Shake and Square drove much of the surge.
+  - Long-promised spec upgrades matured: BOLT12 offers (merged September 2024) are native in Core Lightning, LDK and Eclair but still absent from LND (accessible only via the LNDK sidecar); splicing became default in Core Lightning in 2026; and async payments and a high-performance LDK Server debuted at Bitcoin 2026.
+  - Regulatory pressure intensified under the US GENIUS Act, which restricts payment stablecoins to permitted issuers and leaves Tether's status as a foreign issuer an open compliance question for US distribution.
+  - Frontier challenges as of 2026 include liquidity centralisation (node-capacity Gini ~0.97, consolidation into fewer large routing hubs), a node count down from the ~20,700 peak of 2022, and competition from channelless designs such as Spark and Ark that offer native stablecoins without channel management.
+
+- ### References
+  - 1. Lightning Labs (2025). Announcing Taproot Assets v0.7: The Set-and-Forget Asset Layer for Lightning. https://lightning.engineering/posts/2025-12-16-tapd-0.7-launch/
+  - 2. Spark (2026). State of the Lightning Network in 2026: Growth Metrics, Pain Points, and Roadmap. https://www.spark.money/research/lightning-network-2026-state
+  - 3. Spark (2026). Taproot Assets: Issuing Tokens on Bitcoin and Routing Them Over Lightning. https://www.spark.money/research/taproot-assets-protocol-lightning
+  - 4. Forbes / Boaz Sobrado (2026). Tether Was Born On Bitcoin. Twelve Years Later, Is It Coming Back? https://www.forbes.com/sites/boazsobrado/2026/03/31/tether-was-born-on-bitcoin-twelve-years-later-is-it-coming-back/
+  - 5. MEXC News (2025). Lightning Network capacity hits new ATH as exchanges lead adoption. https://www.mexc.com/en-NG/news/288556
+  - 6. BlockEden (2026). Bitcoin Lightning Network Crosses $1B Monthly Volume. https://blockeden.xyz/blog/2026/03/17/bitcoin-lightning-network-1b-monthly-volume-payment-utility-decouples-speculation/
+
 - ### Provenance
   - primary-source:: Poon, J. & Dryja, T. (2016). "The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments." https://lightning.network/lightning-network-paper.pdf
   - specification-source:: BOLT Specifications (BOLT 0-12), https://github.com/lightning/bolts — collaborative standard by Lightning Labs, Blockstream, ACINQ, Spiral

@@ -289,6 +289,23 @@ public:: true
   - owl-class:: meta-ai:Meta AI
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - In April 2025 Meta shipped the Llama 4 herd — its first mixture-of-experts, natively multimodal open-weight models: Scout (17B active, 16 experts, 10M-token context, single-H100) and Maverick (17B active, 128 experts), both distilled from the still-training ~2T-parameter Behemoth teacher model, which remains unreleased as of 2026.
+  - In June 2025 Meta invested US$14.3bn for a 49% non-voting stake in Scale AI (valuing it at US$29bn) and hired founder Alexandr Wang as its first-ever Chief AI Officer, alongside an aggressive talent raid on OpenAI, Anthropic and Google researchers.
+  - On 30 June 2025 Meta consolidated FAIR and its model teams under a new division, Meta Superintelligence Labs (MSL), reorganised in August 2025 into four groups — TBD Lab (Wang), FAIR (Rob Fergus, with Yann LeCun as chief scientist), Products and Applied Research (Nat Friedman) and MSL Infra (Aparna Ramani) — with ChatGPT co-creator Shengjia Zhao installed as MSL chief scientist.
+  - On 8 April 2026 MSL released Muse Spark, Meta's first proprietary (non-open-weight) reasoning model, a natively multimodal system with tool-use, visual chain-of-thought and a parallel-agent "Contemplating"/"Thinking" mode; it now powers the Meta AI assistant across the Meta AI app, meta.ai, WhatsApp, Instagram, Facebook, Messenger and Ray-Ban/Oakley Meta glasses.
+  - Muse Spark benchmarks competitively but does not lead the frontier: 89.5% on GPQA Diamond (behind Gemini 3.1 Pro, GPT-5.4 and Claude Opus 4.6) while topping HealthBench Hard at 42.8%; it still trails rivals on coding.
+  - Muse Spark 1.1 followed on 9 July 2026 with a public-preview Meta Model API (US$1.25/M input, US$4.25/M output tokens, US$20 free credits), marking Meta's strategic pivot from open weights towards a paid, proprietary API revenue stream even as Zuckerberg promises future open-source releases.
+  - Open challenges as of 2026: closing the coding and long-horizon agentic gap with OpenAI/Anthropic/Google, justifying capex ramping toward ~US$135bn/year, privacy scrutiny over training the "personal superintelligence" assistant on Facebook/Instagram data, and safety concerns after Apollo Research found Muse Spark showed the highest "evaluation awareness" (recognising alignment tests) of any model it had assessed.
+
+- ### References
+  - 1. Meta AI (2025). The Llama 4 herd: The beginning of a new era of natively multimodal AI innovation. https://ai.meta.com/blog/llama-4-multimodal-intelligence/
+  - 2. Business Insider (2025). Read the Full Memo Alexandr Wang Sent About Meta's AI Superintelligence Labs Reorg. https://www.businessinsider.com/meta-ai-superintelligence-labs-reorg-alexandr-wang-memo-2025-8
+  - 3. Reuters (2025). Meta deepens AI push with 'Superintelligence' lab, source says. https://www.reuters.com/business/meta-deepens-ai-push-with-superintelligence-lab-source-says-2025-06-30/
+  - 4. Meta AI (2026). Introducing Muse Spark: Scaling Towards Personal Superintelligence. https://ai.meta.com/blog/introducing-muse-spark-msl/
+  - 5. Fortune (2026). Meta unveils Muse Spark, its first new AI model since hiring Alexandr Wang. https://fortune.com/2026/04/08/meta-unveils-muse-spark-mark-zuckerberg-ai-push/
+  - 6. Reuters (2026). Meta debuts Muse Spark 1.1 with preview open to developers. https://www.reuters.com/business/meta-debuts-muse-spark-11-with-preview-open-developers-2026-07-09/
+
 - ### Provenance
   - sources:: FAIR publications; Meta AI blog; LLaMA model cards; SAM paper (Kirillov et al. 2023); ImageBind paper (Girdhar et al. 2023); SeamlessM4T technical report; PyTorch Foundation governance documentation
   - updated:: 2026-06-13

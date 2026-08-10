@@ -344,6 +344,23 @@ alias:: BC-0023-zero-knowledge-proofs, BC-0202-zero-knowledge-proofs, BC-0315-ze
     - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
 
+- ### Current Landscape (2026)
+  - The zkVM paradigm has largely displaced hand-written circuits: developers now write ordinary Rust compiled to a RISC-V target, with production systems including Succinct's SP1 Hypercube, RISC Zero's R0VM 2.0, Matter Labs' Airbender (ZKsync), Axiom's OpenVM, Brevis' Pico Prism, ZisK and a16z's Jolt.
+  - Real-time Ethereum proving was achieved in 2025: Succinct first proved Ethereum blocks in real time in May 2025, and by November 2025 SP1 Hypercube proved 99.7% of L1 blocks in under 12 seconds on just 16 NVIDIA RTX 5090 GPUs; Brevis' Pico Prism and ZisK hit similar sub-12s results by late 2025.
+  - In July 2025 the Ethereum Foundation published its "realtime proving" north-star definition (sub-10s latency for 99% of blocks, under 100k USD CAPEX, under 10 kW, proofs under 300 KiB, at least 128-bit security, no trusted setup); by December 2025 average proving cost on the public ethproofs tracker had fallen roughly 45x, from 1.69 dollars in January to under 4 cents.
+  - Standardisation matured: ISO/IEC 27565:2026 "Guidelines on privacy preservation based on zero-knowledge proofs" was published in February 2026, and the L1-zkEVM roadmap advanced via EIP-8025 (optional execution proofs), moving Ethereum validation toward proof verification rather than transaction re-execution.
+  - Big-tech ZK identity shipped: Google open-sourced its Longfellow ZK library in July 2025 to power privacy-preserving "over 18" age assurance in Google Wallet (layered on ISO/IEC 18013-5 mdocs and the EUDI wallet), and Microsoft's Vega (May 2026) generates age proofs in around 92 milliseconds on commodity phones.
+  - ZK reached Bitcoin: Citrea launched in January 2026 as Bitcoin's first production ZK rollup (a RISC Zero-based zkEVM with STARK proofs compressed to Groth16), alongside BitVM2-based L2s and the RGB v0.12 client-side-validation release, though combined Bitcoin ZK-rollup TVL remains under 2 million dollars versus roughly 9.6 billion for Ethereum ZK rollups.
+  - Open frontiers as of 2026 centre on security assurance rather than raw speed: the Foundation's soundcalc tool and staged milestones target 128-bit provable security and sub-300 KiB proofs by end-2026, while formal-verification coverage of zkVMs remains partial (a bug was found in SP1 Hypercube in May 2026) and tooling still concentrates on Circom circuits, leaving newer DSLs and zkVMs weakly supported.
+
+- ### References
+  - 1. Wavect (2026). Zero-Knowledge Proofs in 2026: Production-Ready? https://wavect.io/blog/zero-knowledge-proofs-production-2026/
+  - 2. Succinct Labs (2025). SP1 Hypercube Achieves Real Time Proving with 16 GPUs. https://blog.succinct.xyz/real-time-proving-16-gpus/
+  - 3. Ethereum Foundation / Sophia Gold (2025). Shipping an L1 zkEVM #1: Realtime Proving. https://blog.ethereum.org/2025/07/10/realtime-proving
+  - 4. ISO/IEC (2026). ISO/IEC 27565:2026 Guidelines on privacy preservation based on zero-knowledge proofs. https://www.sis.se/en/produkter/information-technology-office-machines/it-security/ss-isoiec-275652026/
+  - 5. Google (2025). Opening up Zero-Knowledge Proof technology to promote privacy in age assurance (Longfellow ZK). https://blog.google/innovation-and-ai/technology/safety-security/opening-up-zero-knowledge-proof-technology-to-promote-privacy-in-age-assurance/
+  - 6. Spark / spark.money (2026). Zero-Knowledge Proofs on Bitcoin: From Client-Side Validation to ZK Rollups. https://www.spark.money/research/zero-knowledge-proofs-bitcoin-applications
+
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
   - migration-date:: 2026-04-26T00:00:00Z

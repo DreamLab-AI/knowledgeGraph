@@ -317,6 +317,23 @@ alias:: Asset Tokenization, asset-tokenization
   - **Regulatory Risk** — classification of a token as a security triggers extensive compliance obligations that vary by jurisdiction
   - **Interoperability Fragmentation** — proliferation of incompatible token standards and blockchain networks limits composability
 
+- ### Current Landscape (2026)
+  - On-chain real-world-asset value (excluding stablecoins) reached roughly $33.5B on the canonical rwa.xyz tracker by July 2026, about 4x its early-2025 level, though tokenised US Treasuries and cash-equivalents account for around 80% of that total, exposing heavy concentration in a single asset class.
+  - BlackRock's BUIDL fund (launched March 2024 on Ethereum via Securitize, now multichain across Aptos, Arbitrum, Avalanche, Optimism, Polygon and more) grew past $1.7B and by mid-2026 was cited above $2.5B AUM, and has become the reference collateral asset for protocols such as Sky/MakerDAO, Spark, Ondo (OUSG) and Frax.
+  - The US settled the legal question: the SEC's Division of Corporation Finance issued its first formal statement (28 January 2026) that a security's technological format does not change its legal character, followed by FINRA approval of the first broker-dealer custody of tokenised securities with atomic settlement, plus the GENIUS Act stablecoin framework enacted July 2025.
+  - DTCC/DTC, custodian to over $114T of traditional securities, received a three-year SEC no-action letter in December 2025 and began limited production trades of tokenised Russell 1000 equities, major ETFs and Treasuries in July 2026, with a broader service launch targeted for October 2026.
+  - In the EU, MiCA moved into its "zero tolerance" enforcement phase across all 27 member states, with the grandfathering period for pre-existing crypto-asset service providers expiring on 1 July 2026 (non-compliance risking fines up to 15% of annual turnover); over 500 CASPs had been authorised by early 2026.
+  - The sector converged on a neutral token standard, ERC-7943, alongside the established permissioned ERC-3643 (T-REX), improving interoperability for compliant tokenised securities.
+  - Cross-institution settlement matured: in May 2026 Ondo Finance, JPMorgan's Kinexys, Mastercard and Ripple completed the first live cross-border, cross-bank redemption of tokenised US Treasuries on the XRP Ledger, while the BIS-led Project Agorá tested atomic wholesale settlement with seven central banks and 40+ institutions.
+  - Open challenges as of 2026 remain: extreme concentration in Treasury proxies, thin secondary-market and DeFi liquidity (only ~$2.5B actively deployed as collateral), fragmentation across chains and trackers with divergent value methodologies ($24-36B range), and slow expansion into equities, private credit and real estate.
+
+- ### References
+  - 1. Stobox (2026). The State of RWA Tokenization — 2026 Mid-Year Report. https://www.stobox.io/reports/state-of-rwa-2026
+  - 2. Orochi Network (2026). Real-World Asset Tokenization News: Launches, Regulation, and What to Watch. https://orochi.network/blog/real-world-asset-tokenization-news
+  - 3. CleanSky (2026). Real-World Asset Tokenization in 2026: From Treasuries to Real Estate. https://cleansky.io/blog/rwa-tokenization-2026/
+  - 4. Yellow.com Research (2026). RWA Tokenization Tripled But 80% Of Value Sits In Just One Asset Class. https://yellow.com/research/rwa-tokenization-concentration-treasury-dominance-2026
+  - 5. Spark Money Research (2026). Real-World Asset Tokenization: Can Bitcoin Compete in the $30B+ Market. https://www.spark.money/research/rwa-tokenization-bitcoin-blockchain
+
 - ### Provenance
   - sources:: Ethereum Improvement Proposals (EIPs); IOSCO guidance on crypto-asset markets; MiCA Regulation (EU) 2023/1114; BIS Working Paper No. 1002 (tokenisation); ERC-1400 / ERC-3643 specifications
   - updated:: 2026-06-13

@@ -294,6 +294,22 @@ public:: true
   - The [[Bitcoin Improvement Proposals]] process served as the governance framework; no hard fork or contentious split occurred, distinguishing Taproot's activation from the 2017 SegWit/BCH fork.
   - Related to Ethereum's EIP process and similar smart-contract upgrade paths, but philosophically distinct: Taproot preserves Bitcoin's UTXO model and does not introduce a general-purpose VM at the consensus layer.
 
+- ### Current Landscape (2026)
+  - Taproot (P2TR) transaction share has fallen sharply from its early-2024 peak of roughly 42-54% (driven by Ordinals inscriptions and the Runes launch) to about 15-22% by early 2026, as inscription demand cooled and users grew wary of its quantum exposure; analyst Willy Woo flagged the decline in late 2025.
+  - Taproot's quantum weakness has become the dominant 2025-2026 discussion: P2TR encodes a 32-byte x-only Schnorr public key directly in the address, so coins are exposed on receipt with no hash protection. Google, Project Eleven and a HRF report estimate roughly 6.5-6.9M BTC (about a third of supply, including ~1.7M in ancient P2PK addresses attributed to Satoshi) sit in quantum-vulnerable outputs.
+  - BIP-360 (Pay-to-Quantum-Resistant-Hash / Pay-to-Merkle-Root, authored by Hunter Beast with Ethan Heilman and Isabel Foxen Duke, first proposed September 2024) was merged into the official Bitcoin Improvement Proposal repository on 11 February 2026. It adds a soft-fork output type on a new SegWit version (addresses prefixed bc1r/bc1z) that commits only to a script Merkle root, removing the vulnerable key-path spend while preserving Taproot's script tree.
+  - BTQ Technologies (Nasdaq: BTQ) shipped the first working BIP-360 implementation on its Bitcoin Quantum testnet v0.3.0 in March 2026, processing 100,000+ blocks with 50+ miners and contributions from 100+ cryptographers; no implementation work has yet begun in Bitcoin Core itself.
+  - A companion proposal, BIP-361 ("Post Quantum Migration and Legacy Signature Sunset", co-authored by Jameson Lopp and others, published 14 April 2026), sets a contentious three-phase timeline that would eventually stop honouring legacy ECDSA/Schnorr spends, potentially freezing non-migrated coins - the flashpoint of current governance debate.
+  - Underpinning the migration path, NIST finalised its three post-quantum standards in August 2024 (including ML-DSA/CRYSTALS-Dilithium), the algorithms BIP-360 successors are expected to adopt for signature verification.
+  - Open challenges as of 2026: no mainnet activation timeline, migration horizons stretching to 2029-2035 (5-10 years), P2MR still cannot defend against short-term mempool exposure attacks without a true PQC signature scheme, and the political question of whether to freeze dormant (including Satoshi-era) coins remains unresolved.
+
+- ### References
+  - 1. Cointelegraph (2026). Bitcoiners To Quantum-Proof BTC 2026: BIP-360, Hash-Based Signatures. https://regional-front.cointelegraph.com/news/bitcoin-quantum-resistant-bip-360-post-quantum-signatures-taproot
+  - 2. Jared Watkins (2026). Bitcoin - Post-Quantum Cryptography Exposure and Migration. https://www.jaredwatkins.com/research/post-quantum-encryption/cryptocurrencies/bitcoin-pqc/
+  - 3. Gate.com (2026). Bitcoin BIP-360 Merge Analysis: The First Technical Defense of the Quantum Era (P2MR Soft Fork). https://www.gate.com/blog/bitcoin-bip-360-merge-quantum-era-technical-defense-p2mr-soft-fork-analysis
+  - 4. crypto.news (2026). Bitcoin is going quantum-proof: Inside BIP-360 and the migration. https://crypto.news/bitcoin-is-going-quantum-proof-inside-bip-360-and-the-migration/
+  - 5. Spark Money (2026). Bitcoin SegWit & Taproot Adoption Tracker. https://www.spark.money/tools/bitcoin-segwit-adoption-tracker
+
 - ### Provenance
   - sources:: BIP 340 (Wuille, Nick, Ruffing), BIP 341, BIP 342; Gregory Maxwell's 2018 taproot proposal; Lightning Labs Taproot Assets documentation; BitVM whitepaper (Robin Linus, 2023)
   - updated:: 2026-06-13

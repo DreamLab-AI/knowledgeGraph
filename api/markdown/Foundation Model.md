@@ -292,6 +292,22 @@ public:: true
   - **[[Compute Governance]]**: Policy discussions increasingly target foundation model training compute as a proxy for capability and risk, with proposals for compute thresholds, export controls on AI chips, and training run registries.
   - **Open versus closed weights**: A significant policy and ecosystem dimension is whether foundation model weights are publicly released (open-weight models: Llama, Mistral, Falcon) or held proprietary (closed models: GPT-4, Claude, Gemini). Open-weight models enable community fine-tuning and auditing; closed models provide tighter access controls.
 
+- ### Current Landscape (2026)
+  - The reasoning-model paradigm has become the frontier default: following OpenAI's o1/o3 (2024), test-time (inference-time) compute reshaped how foundation models are scaled, with o1 scoring 74.4% on an IMO qualifying exam versus GPT-4o's 9.3% — but at roughly 6x the cost and 30x the latency, forcing a new training-versus-inference cost trade-off.
+  - Open-weight models have essentially closed the quality gap: Stanford HAI's 2025 AI Index found the leading open-weight-versus-closed gap on the Chatbot Arena narrowed from about 8% (Jan 2024) to 1.7% (Feb 2025), and on MMLU from roughly 16 points to 0.1 points, with permissive releases from DeepSeek, Meta Llama, Alibaba Qwen and Mistral driving adoption.
+  - Efficiency and cost collapsed: inference for GPT-3.5-equivalent quality fell more than 280-fold (roughly $20 to $0.07 per million tokens) between Nov 2022 and Oct 2024, while DeepSeek-V3 reportedly trained for around $6M against frontier runs estimated in the hundreds of millions to $1bn-plus.
+  - The competitive field broadened and Chinese labs reached near parity: US institutions produced 40 notable models in 2024 to China's 15, yet benchmark gaps (MMLU, MATH, HumanEval) shrank to low single digits, and around 90% of notable 2024 models came from industry rather than academia.
+  - Regulation moved from principle to obligation: the EU AI Act's general-purpose AI (GPAI) provider obligations took effect on 2 August 2025 (technical documentation, copyright policy, published training-data summaries; systemic-risk duties above 10^25 FLOP), the voluntary GPAI Code of Practice was finalised on 10 July 2025, and the Commission's enforcement powers and fines apply from 2 August 2026.
+  - Labs are recalibrating their openness strategies: OpenAI shipped gpt-oss-20b/120b in August 2025, its first open-weight release since GPT-2, while several previously open-first providers have begun keeping their most capable flagships proprietary, and 2025-26 releases increasingly optimise for agentic, long-horizon tool-use and multi-hundred-thousand to million-token context windows.
+  - Open challenges as of 2026 centre on the looming data wall (Epoch AI projects the usable stock of public training text could be exhausted between 2026 and 2032, pushing synthetic data), the rising energy and carbon footprint of training (Llama 3.1 405B at roughly 8,930 tons CO2), and durable gaps in reliability on long-running autonomous tasks, provenance and copyright compliance, and systemic-risk evaluation.
+
+- ### References
+  - 1. Stanford HAI (2025). The 2025 AI Index Report — Technical Performance and R&D chapters. https://hai.stanford.edu/ai-index/2025-ai-index-report
+  - 2. European Commission (2025). The General-Purpose AI Code of Practice (final version, 10 July 2025). https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+  - 3. European Commission (2025). General-purpose AI obligations under the AI Act. https://digital-strategy.ec.europa.eu/en/factpages/general-purpose-ai-obligations-under-ai-act
+  - 4. Future of Life Institute (2025). An Introduction to the Code of Practice for General-Purpose AI. https://artificialintelligenceact.eu/introduction-to-code-of-practice/
+  - 5. Stanford HAI (2025). Chapter 1: Research and Development (2025 AI Index Report). https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf
+
 - ### Provenance
   - sources:: Stanford HAI Centre for Research on Foundation Models, "On the Opportunities and Risks of Foundation Models" (Bommasani et al., 2021); OpenAI GPT series technical reports; Anthropic Claude model cards; DeepMind Gemini technical report; Hugging Face model documentation; EU AI Act General-Purpose AI provisions (2024); UK AI Safety Institute frontier model evaluation reports
   - updated:: 2026-06-13
