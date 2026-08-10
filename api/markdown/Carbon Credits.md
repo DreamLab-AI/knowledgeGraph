@@ -306,6 +306,23 @@ public:: true
   - **Price fragmentation** — the VCM exhibits wide price dispersion by project type, vintage, and standard, complicating liquidity and price discovery compared to compliance markets.
   - **Double-counting risk** — without robust adjustment mechanisms (Article 6 corresponding adjustments), both host countries and corporates may claim the same mitigation outcome.
 
+- ### Current Landscape (2026)
+  - The UN's Paris Agreement Crediting Mechanism (PACM, Article 6.4) became operational after COP29 (Baku, 2024) finalised the rulebook and COP30 (Belem, November 2025) endorsed additionality, baseline and removals standards; on 26 February 2026 the Supervisory Body approved the first-ever Article 6.4 credits, a clean-cooking cookstove project in Myanmar authorised for use in Korea's ETS, with a pipeline of 165+ CDM projects transitioning across.
+  - The ICVCM's Core Carbon Principles have become the market's de facto quality floor: by end-2025 seven to nine major programmes (Verra, Gold Standard, ACR, CAR, GCC) were CCP-Eligible covering roughly 98% of volume, yet only ~36 methodologies were CCP-Approved and just ~51 million credits (about 4% of 2024 issuance) carried the CCP label, with CCP-labelled credits commanding up to a 25% price premium.
+  - The market consolidated around quality rather than volume: Sylvera data show 2025 retirements fell about 4.5-7% to roughly 157-168 million tonnes (the lowest issuance since around 2020) while total spending rose about 6% to ~$1.04 billion, and Climate Focus reported H1 2026 issuances and retirements coming into balance near 98-100 million.
+  - Durable carbon removal (CDR) emerged as a distinct premium tier: CDR.fyi reported a record Q1 2026 with 2.3 million tonnes contracted (~560% year-on-year growth, biochar ~93% of volume), and cumulative direct offtake agreements surpassed $7 billion by November 2025, up from $2.6 billion in 2024.
+  - CORSIA Phase I (2024-2026) tightened integrity ahead of its mandatory phase from 2027: ICAO's Technical Advisory Body expanded approved programmes to include Verra, Gold Standard, CAR and GCC, excluded large grid-connected renewables (>15 MW) and REDD+, and introduced Article 6 Letter of Authorisation revocation insurance, turning airlines into anchor buyers for high-integrity credits.
+  - Regulatory pressure sharpened: the EU's Empowering Consumers for the Green Transition Directive (effective September 2026) bans generic "climate neutral" product claims built on unverified offsets, the EU floated allowing up to 5% international Article 6 credits toward its 90%-by-2040 target and up to 10% within CBAM, and India's Carbon Credit Trading Scheme plus other compliance markets are scaling faster than the voluntary market.
+  - Open challenges as of 2026 include chronic demand weakness (2025 retirements far below the earlier billion-tonne projections despite a 227% surge in corporate commitments, per Carbon Direct), an ~$7 billion durable-CDR offtake gap with over 80% of high-durability capacity at risk of going unrealised, and unresolved structural problems flagged by Stanford Law School's June 2026 analysis: weak additionality (first-generation REDD+ over-issued by roughly 10x), registry fragmentation and double-counting, and undefined legal ownership of credits.
+
+- ### References
+  - 1. MSCI (2025). 2025 State of Integrity in the Global Carbon-Credit Market. https://www.msci.com/downloads/web/msci-com/research-and-insights/paper/2025-state-of-integrity-in-the-global-carbon-credit-market/2025%20State%20of%20Integrity%20in%20the%20Global%20Carbon-Credit%20Market.pdf
+  - 2. UNFCCC (2026). UN carbon market approves first-ever issuance of credits under the Paris Agreement. https://unfccc.int/news/un-carbon-market-approves-first-ever-issuance-of-credits-under-the-paris-agreement
+  - 3. Climate Focus (2026). Carbon Markets 2026 H1: Review and Outlook. https://climatefocus.com/publications/carbon-markets-2026-h1/
+  - 4. Sylvera (2026). Carbon Market Trends 2026: Prices, Quality, and the Integrity Shift. https://www.sylvera.com/blog/carbon-market-trends
+  - 5. Carbon Direct (2026). Key trends in the 2026 voluntary carbon market. https://www.carbon-direct.com/insights/key-trends-2026-voluntary-carbon-market
+  - 6. ICVCM (2026). CCP Impact Report 2025. https://icvcm.org/engagement-impact/ccp-impact-report-2025/
+
 - ### Provenance
   - sources:: IPCC AR6 Working Group III (Ch. 13 — Demand, Services and Social Aspects of Mitigation); UNFCCC Article 6 rulebook (CMA.3); ICVCM Core Carbon Principles (2023); Verra VCS Standard v4; Greenhouse Gas Protocol Project Protocol
   - updated:: 2026-06-13

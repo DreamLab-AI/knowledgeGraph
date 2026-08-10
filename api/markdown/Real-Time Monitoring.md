@@ -296,6 +296,24 @@ public:: true
   - **IEEE 802.1AS / TSN** — Time-Sensitive Networking standards enabling deterministic Ethernet transport for industrial monitoring at sub-millisecond jitter tolerances, critical for real-time control in [[Cyber-Physical Systems]].
   - **ITIL 4** — IT service-management framework that positions monitoring and event management as core practices, connecting [[Alerting]] workflows to [[Incident Response]] and [[Service Level Objective]] governance.
 
+- ### Current Landscape (2026)
+  - OpenTelemetry graduated to the CNCF's highest maturity level in May 2026, cementing OTLP (gRPC/HTTP) as the de facto wire format for real-time telemetry; the CNCF 2025 Annual Survey put OTel at 49% production use, making it the second-largest CNCF project after Kubernetes.
+  - Prometheus 3.x (3.0 shipped 2024-11-14, stable v3.13.2 by 2026-07-30) now speaks OTLP natively and accepts UTF-8 metric names, positioning it as the OTLP-native metric server at the centre of the modern stack.
+  - Continuous profiling became a first-class fourth signal alongside metrics, logs and traces, with OpenTelemetry Profiles entering public alpha on 2026-03-26 using an OTLP Profiles data model and a reference eBPF profiler donated by Elastic (Pyroscope, Parca and Polar Signals lead the tooling).
+  - Zero-code eBPF instrumentation moved from novelty to production discipline: Grafana donated Beyla to OpenTelemetry as OpenTelemetry eBPF Instrumentation (OBI), which shipped its first alpha on 2025-11-03 and targets a stable 1.0 in 2026, while Groundcover's eAPM reached GA in December 2025 for single-command Kubernetes monitoring with no code changes.
+  - AI-assisted operations became baseline in 2025, with Datadog Bits AI, New Relic AI and Dynatrace Davis AI shipping natural-language root-cause summaries, automatic anomaly detection and incident-timeline generation; roughly 9 in 10 respondents to Grafana's 2026 survey see value in AI for forecasting, root-cause analysis and query generation.
+  - The first experimental OpenTelemetry GenAI Semantic Conventions landed in March 2026 (attributes such as gen_ai.usage.input_tokens and gen_ai.operation.name), standardising real-time monitoring of LLM and agent workloads across OpenAI, Anthropic, Bedrock and Azure AI, with support in Datadog v1.37+ and Grafana.
+  - Cost and cardinality remain the central operating challenge: Elastic/Dimensional Research's 2026 survey found 97% of organisations hit unexpected observability costs, driving demand for adaptive metrics, telemetry tiering and FinOps convergence (Chronosphere, Cribl, Adaptive Metrics); the market sat around USD 3.1-3.4 billion in 2025-2026 and is forecast toward roughly USD 9-17 billion by 2035.
+  - The remaining frontier as of 2026 is maturation, not invention: continuous-profiling backends and eBPF instrumentation are still alpha and not recommended for critical production, and eBPF's weak parameter extraction in user-space runtimes like Go means business-logic spans still require an OTel SDK.
+
+- ### References
+  - 1. Goran Stimac (2026). Monitoring and Observability Stack in 2026: What Changed. https://goranstimac.com/blog/monitoring-observability-stack-2026-what-changed/
+  - 2. Grafana Labs (2026). OpenTelemetry and Grafana Labs: What's new and what's next in 2026. https://grafana.com/blog/opentelemetry-and-grafana-labs-whats-new-and-whats-next-in-2026/
+  - 3. OpenTelemetry Project (2026). OpenTelemetry eBPF Instrumentation 2026 Goals. https://opentelemetry.io/blog/2026/obi-goals/
+  - 4. Augment Code (2026). 8 Best APM Tools for 2026. https://www.augmentcode.com/tools/best-apm-tools
+  - 5. Uptrace (2026). Top 10 Observability Tools in 2026: APM Platforms. https://uptrace.dev/tools/top-observability-tools
+  - 6. onfire.ai (2026). Observability Market Map 2026: Top 50 Vendors for 2026. https://www.onfire.ai/blog/observability-market-map
+
 - ### Provenance
   - sources:: OpenTelemetry project documentation; Prometheus documentation; Google SRE Book (Beyer et al.); NIST SP 800-137; IEC 61970 CIM standard; Apache Flink and Kafka Streams documentation; CNCF Observability landscape; ITIL 4 Foundation Guide; ISA/IEC 62443 standard overview
   - updated:: 2026-06-13

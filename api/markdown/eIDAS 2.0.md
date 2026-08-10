@@ -303,6 +303,23 @@ public:: true
   - **GDPR (Regulation EU 2016/679)** — eIDAS 2.0 is designed to reinforce [[GDPR]] data minimisation and purpose limitation; wallet presentations do not enable cross-service tracking
   - **Digital Markets Act (Regulation EU 2022/1925)** — mandates that gatekeeper platforms accept the EUDIW; [[Digital Markets Act]] and eIDAS 2.0 are complementary instruments in the EU digital regulatory stack
   - **NIS2 Directive (Directive EU 2022/2555)** — reinforces cybersecurity obligations for trust service providers and critical digital infrastructure; [[NIS2 Directive]] compliance intersects with EUDIW deployment requirements
+- ### Current Landscape (2026)
+  - The core wallet implementing acts under Article 5a were adopted in late 2024, starting a 24-month clock to the hard deadline of 24 December 2026, by which every EU Member State must offer at least one certified EU Digital Identity (EUDI) Wallet; private relying parties in regulated sectors and very large online platforms must accept it around December 2027.
+  - Throughout 2025 the Commission adopted the trust-service implementing acts (IR 2025/1942 validation, IR 2025/1943 qualified certificates, IR 2025/1946 preservation, IR 2025/1567 remote QSCD management, IR 2025/1929 timestamps), and by early September 2025 22 implementing acts had been adopted (10 for the Wallet ecosystem, 12 for trust services).
+  - The Architecture and Reference Framework has advanced rapidly, with ARF v2.6.0 released on 13 October 2025 fixing the interoperability stack: ISO/IEC 18013-5 mdoc/mDL and SD-JWT VC credential formats over OpenID4VCI (issuance) and OpenID4VP (presentation), with ECDSA P-256 and SHA-256 as the mandatory cryptographic baseline.
+  - On 7 April 2026 the Commission adopted CIR (EU) 2026/798 mandating ETSI TS 119 461 v2.1.1 for remote onboarding, and on 29 April 2026 the eIDAS Trusted List ecosystem completed migration from TLv5 to TLv6 (LOTL notice C/2026/1944), enabling listing of new qualified services such as Qualified Electronic Attestations of Attributes (QEAAs), qualified archiving and electronic ledgers.
+  - Member State readiness is uneven, with fewer than a third meeting benchmarks eight months before the deadline: France (France Identite), Austria (eAusweise) and Italy (IT-Wallet) are ahead, Germany has scheduled its state wallet for early January 2027 after a January 2026 sandbox, France plans public testing in H2 2026, and Poland is integrating the wallet into mObywatel.
+  - The first four large-scale pilots (POTENTIAL, EWC, NOBID, DC4EU) concluded, with second-wave consortia now running: APTITUDE launched in October 2025 (EUR 20.3m, 117 organisations across 12 countries) alongside WE BUILD, and grant calls worth over EUR 200m opened in October 2025 for development, certification and issuance.
+  - Sector integration is deepening: under the European Health Data Space Regulation (EU 2025/327) a draft Identity Management CIR would be the first EU instrument to mandate Member States issue sector-specific Electronic Attestations of Attributes to citizens' wallets at scale, while ENISA's draft candidate EUDIW cybersecurity certification scheme (v0.4.614) went out for feedback until 30 April 2026.
+  - Open challenges as of 2026 include the distinction that 24 December 2026 mandates issuance and public-sector acceptance rather than continent-wide functional interoperability, incomplete relying-party registers coming online through 2026, still-pending certification schemes, and the standing target of equipping 80% of EU citizens with a wallet by 2030.
+
+- ### References
+  - 1. Hopae (2026). How to be eIDAS 2.0 ready in 2026. https://www.hopae.com/blog/how-to-be-eidas-2.0-ready-in-2026
+  - 2. IDnow (2026). MILA's Regulatory Radar March 2026 (CIR 2026/798, TLv6 migration, EHDS EAAs). https://idnow.io/insights/blog/milas-regulatory-radar-march-2026-2/
+  - 3. B2Trust (2026). eIDAS 2.0 Across EU-27: Implementation Status, Q2 2026. https://b2trust.com/en/blog/eidas-2-implementation-status-eu-27-q2-2026
+  - 4. Vidos (2025). October 2025: Europe Achieves More Digital Identity Implementation Milestones (ARF 2.6.0, APTITUDE, grant calls). https://vidos.id/blog/october-2025-europe-achieves-more-digital-identity-implementation-milestones
+  - 5. Evertrust (2026). EUDI Wallet 2026: Five Things Private PKI Teams Must Do. https://evertrust.io/blog/eudi-wallet-private-pki/
+
 - ### Provenance
   - sources:: EU Official Journal (Regulation EU 2024/1183), European Commission EUDIW Architecture and Reference Framework (ARF v1.x), W3C Verifiable Credentials Data Model, OpenID Foundation OID4VCI/OID4VP specifications, ETSI EN 319 series, ISO 18013-5
   - updated:: 2026-06-13

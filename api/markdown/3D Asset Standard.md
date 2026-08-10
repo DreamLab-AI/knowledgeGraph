@@ -332,6 +332,24 @@ public:: true
   - **Rights and provenance** — linking 3D asset ownership to [[Non-Fungible Token]] smart contracts or W3C Verifiable Credentials requires metadata extensions not yet in core specifications.
   - **AI/ML integration** — annotated 3D datasets conforming to a standard schema enable [[Machine Learning]] model training on geometry; this bridges to [[Semantic Web]] knowledge graph enrichment of spatial scenes.
 
+- ### Current Landscape (2026)
+  - The Alliance for OpenUSD (AOUSD) ratified its OpenUSD Core Specification 1.0 at the end of 2025, delivering the long-promised written standard for how low-level 3D scene data is structured and resolved, alongside sample implementations, USDA/USDC parsers and a conformance rubric.
+  - Two open 3D-asset standards now dominate as complementary layers: glTF 2.0 (an ISO/IEC 12113:2022 International Standard) as the lightweight delivery/transmission format, and OpenUSD as the extensible authoring, composition and simulation framework, with the industry increasingly converging on USD plus MaterialX/OpenPBR for authoring.
+  - Standardisation of 3D Gaussian Splatting is the fastest-moving front: Khronos announced the KHR_gaussian_splatting extension for glTF in February 2026 (release-candidate that month, full ratification expected Q2 2026), paired with KHR_gaussian_splatting_compression_spz using Niantic Spatial's open SPZ format, developed with OGC, Esri and Cesium.
+  - AOUSD is developing a Particle Fields schema giving OpenUSD native representation of Gaussian-splat data, while OGC's 3D Tiles 2.0 (built on glTF) adds splats as a first-class tile type, with Cesium shipping streamed Gaussian-splat tilesets with hierarchical LOD in April 2026.
+  - Khronos submitted the KHR_interactivity extension for ratification in 2026, embedding portable behaviour-graph interactivity directly in glTF assets, with real-world support already in Babylon.js, Needle Engine, Google Android XR (Jetpack XR SDK) and Magic Leap.
+  - Governance and adoption have deepened: the AOUSD-Khronos liaison and the Metaverse Standards Forum's "3D Asset Interoperability using USD and glTF" Working Group drove alignment (SIGGRAPH 2025 BOF with Autodesk, Bentley, NVIDIA and Pixar), AOUSD added members including Amazon, Microsoft, Siemens and IKEA, and NVIDIA launched an OpenUSD Development Certification exam.
+  - Cesium and Bentley extended glTF with CAD/AEC-style workflow extensions (edge visibility, line/point styling) for 3D Tiles 2.0 in mid-2026, reflecting a shift towards engineering, digital-twin and physical-AI use cases beyond entertainment.
+  - Open challenges as of 2026 remain lossless glTF-USD round-tripping (capability gaps in materials, spherical-harmonic colour spaces, physics and FBX bridging), avatar portability across extension subsets, and preventing fragmentation as new primitives such as splats and voxels proliferate.
+
+- ### References
+  - 1. Steve May / Alliance for OpenUSD (2026). AOUSD Year in Review: A Landmark Year for OpenUSD Standardization and Growth in 2025. https://aousd.org/blog/aousd-year-in-review-a-landmark-year-for-openusd-standardization-and-growth-in-2025/
+  - 2. The Khronos Group (2022-2026). glTF - Runtime 3D Asset Delivery (ISO/IEC 12113:2022, KHR extensions). https://www.khronos.org/gltf/
+  - 3. TheFuture3D (2026). The State of Gaussian Splatting in 2026: Standards and Interoperability. https://www.thefuture3d.com/blog/state-of-gaussian-splatting-2026/
+  - 4. Cesium / CesiumGS (2026). Introducing 3D Gaussian Splats with Hierarchical Level of Detail. https://cesium.com/blog/2026/04/27/3d-gaussian-splats-lod/
+  - 5. daily.dev / Khronos Group (2026). glTF Interactivity (KHR_interactivity) Extension Submitted for Ratification. https://daily.dev/posts/gltf-interactivity-extension-submitted-for-ratification-xvtct4kpe
+  - 6. Metaverse Standards Forum (2025). State of 3D Asset Interoperability using USD and glTF (SIGGRAPH 2025 BOF). https://metaverse-standards.org/wp-content/uploads/glTF-USD-BOF-SIGGRAPH-Vancouver-Aug25-FINAL.pdf
+
 - ### Provenance
   - sources:: [[ISO/IEC 14496-16]]
   - sources:: Khronos Group glTF 2.0 Specification

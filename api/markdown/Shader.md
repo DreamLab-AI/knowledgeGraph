@@ -306,6 +306,22 @@ public:: true
   - **ISO/IEC** — No formal ISO standard for shaders exists; Khronos and W3C are the de facto standards bodies.
   - **OpenXR** — Defines how XR runtimes consume swapchain images rendered by shaders, specifying colour-space requirements and composition layer formats relevant to [[Spatial Computing]].
   - Shader programs must comply with API versioning and hardware feature levels; a shader using mesh-shader capabilities will not load on hardware predating NVIDIA Turing or AMD RDNA 2.
+- ### Current Landscape (2026)
+  - The Slang shading language moved from NVIDIA stewardship to multi-vendor governance under the Khronos Group on 21 November 2024, establishing it as an open-source, single-source language that cross-compiles to SPIR-V (Vulkan), HLSL (Direct3D), MSL (Metal), WGSL (WebGPU) and CUDA/CPU targets; releases continued rapidly through 2025 (v2025.18.2, October 2025) and it now ships within the Vulkan SDK.
+  - Neural shading became a mainstream direction: NVIDIA unveiled RTX Neural Shaders at CES in January 2025, embedding small MLPs directly inside programmable shaders for techniques such as RTX Neural Texture Compression and neural materials, with the open RTXNS SDK built on Slang.
+  - Microsoft and NVIDIA introduced Cooperative Vectors to DirectX 12 and HLSL via the Agility SDK preview in April 2025, exposing RTX Tensor Cores from within shader threads; the feature landed as part of Shader Model 6.9 (Long Vector plus Cooperative Vector) alongside a Vulkan VK_NV_cooperative_vector path and OptiX 9.0 support.
+  - Cooperative Vector support is being made cross-vendor, with Microsoft collaborating with AMD, Intel, NVIDIA and Qualcomm; preview drivers now cover NVIDIA GeForce RTX, Intel Arc B-series and AMD hardware, with a retail DirectX release targeted from late 2025.
+  - WebGPU's shading language WGSL advanced to a W3C Candidate Recommendation Draft (call for wide review) on 2 April 2025, and browser adoption broadened as Firefox shipped WebGPU on Windows and Apple detailed WGSL/WebGPU support across macOS, iOS and Vision Pro at WWDC 2025.
+  - Slang gained production traction as the emerging default for cross-platform shader authoring: Valve ported the Source 2 engine to it, Autodesk Aurora and NVIDIA Omniverse use it, and updated Khronos Vulkan tutorials now default to Slang; a proof-of-concept console backend was presented in 2026.
+  - Open frontier challenges as of 2026 include maturing WGSL/WebAssembly and console backends beyond experimental status, standardising low-precision formats (FP8/FP6/INT8, with FP4 not yet supported by cooperative vectors), unifying auto-differentiation and training workflows inside shaders, and achieving consistent cross-vendor neural-shading performance and tooling.
+
+- ### References
+  - 1. Khronos Group / GameFromScratch (2024). Khronos Group Launch Slang Shader Language. https://gamefromscratch.com/khronos-group-launch-slang-shader-language/
+  - 2. Shader Slang / Khronos (2024). There's a lot going on with Slang! (Metal and WGSL backends, playground). https://shader-slang.org/blog/2024/11/20/theres-a-lot-going-on-with-slang/
+  - 3. NVIDIA Developer (2025). NVIDIA RTX Advances with Neural Rendering and Digital Human Technologies at GDC 2025. https://developer.nvidia.com/blog/nvidia-rtx-advances-with-neural-rendering-and-digital-human-technologies-at-gdc-2025/
+  - 4. Microsoft DirectX Developer Blog (2025). D3D12 Cooperative Vector (Shader Model 6.9). https://devblogs.microsoft.com/directx/cooperative-vector/
+  - 5. W3C GPU for the Web Working Group (2025). WebGPU Shading Language — Candidate Recommendation Draft. https://www.w3.org/TR/2025/CRD-WGSL-20250402/
+
 - ### Provenance
   - sources:: Khronos OpenGL/Vulkan specifications; Microsoft DirectX HLSL reference; W3C WebGPU/WGSL Working Draft; "Real-Time Rendering" (Akenine-Möller et al.); "The Book of Shaders" (Patricio Gonzalez Vivo); NVIDIA DXR and Vulkan RT extensions documentation
   - updated:: 2026-06-13

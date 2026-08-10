@@ -323,6 +323,23 @@ public:: true
   - **Service mesh** — Layer 7 overlay (Istio, Linkerd) providing mTLS, observability, and traffic policy between microservices, abstracting [[Network Security]] into the application layer.
   - **Zero-trust networking** — eliminates implicit trust based on network location; every connection is authenticated and authorised regardless of whether it originates inside or outside a perimeter, addressing insider threats and lateral movement.
 
+- ### Current Landscape (2026)
+  - AI training clusters drove a step-change in data-centre networking: 800GbE became the mainstream fabric speed through 2025, with 800G ports making up the bulk of AI back-end switch shipments, and 1.6T (IEEE 802.3dj, 200 Gb/s per lane) entering early spine and inter-cluster deployment in 2026 ahead of the standard's expected completion in late 2026.
+  - The Ultra Ethernet Consortium (now governed under the Linux Foundation) released its UEC 1.0 specification in June 2025 and updated it to 1.0.1 in September 2025, adding modern RDMA, packet spraying with NIC-side reordering, Link Level Retry and new Packet Delivery and Semantic sublayers to close Ethernet's historical gap with InfiniBand for AI/HPC workloads.
+  - Ethernet overtook InfiniBand as the primary large-scale AI fabric during 2025: IDC put data-centre Ethernet switch revenue up 62% year-on-year in Q3 2025 with 800GbE up 91.6% sequentially, and Dell'Oro reported NVIDIA's AI-tuned Spectrum-X surpassing Cisco and Arista in data-centre Ethernet revenue.
+  - Silicon photonics and co-packaged optics reached commercial deployment: NVIDIA's Quantum-X Photonics InfiniBand CPO switches (115 Tb/s, 144x 800G) began shipping in early 2026, with Spectrum-X Photonics Ethernet CPO (up to 512x 800G, ~400 Tb/s) following in H2 2026, both built on TSMC COUPE technology announced at GTC in March 2025.
+  - Key players and silicon crystallised around Broadcom (Tomahawk 6, Jericho4, and Thor Ultra, the first UEC 1.0-compliant 800G AI NIC, October 2025), Cisco (Silicon One G200/P200, 51.2 Tbps Nexus 9364E-SG2 and 8223 router), Arista Etherlink, and NVIDIA Spectrum-X/Quantum-X.
+  - Scale-up interconnect standardisation accelerated: the UALink Consortium published its 200G 1.0 specification in April 2025 (up to 1,024 accelerators per pod), and the OCP 2025 Global Summit launched ESUN (Broadcom with AMD, Arm, Arista, Cisco, HPE, Marvell, Meta, Microsoft, NVIDIA, OpenAI and Oracle) to define open standards-based scale-up Ethernet.
+  - Long-haul AI interconnect advanced with 800ZR/ZR+ coherent pluggables (roughly 30% lower power per bit than 400ZR, reaching beyond 1,000 km) enabling distributed training across sites, while open challenges remain around per-port power (800G modules draw 14-21W, 1.6T OSFP-XD 30W+), thermal density, congestion control maturity (UEC's 2026 work on Programmable Congestion Management, CSIG and In-Network Collectives) and CPO field serviceability.
+
+- ### References
+  - 1. Network World (2026). Ethernet groups keep 2026 focus on higher bandwidth, AI demands. https://www.networkworld.com/article/4113364/ethernet-groups-keep-2026-focus-on-higher-bandwidth-ai-demands.html
+  - 2. Network World (2025). Ethernet, InfiniBand, and Omni-Path battle for the AI-optimized data center. https://www.networkworld.com/article/4058889/ethernet-infiniband-and-omni-path-battle-for-the-ai-optimized-data-center.html
+  - 3. CyberDevHub (2026). The 50-Year-Old Technology Quietly Eating Nvidia's AI Networking Lock-In: Ultra Ethernet Explained. https://cyberdevhub.com/the-50-year-old-technology-quietly-eating-nvidias-ai-networking-lock-in-ultra-ethernet-explained/
+  - 4. NVIDIA (2025). NVIDIA Announces Spectrum-X Photonics, Co-Packaged Optics Networking Switches to Scale AI Factories to Millions of GPUs. https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Spectrum-X-Photonics-Co-Packaged-Optics-Networking-Switches-to-Scale-AI-Factories-to-Millions-of-GPUs/default.aspx
+  - 5. Broadcom (2025). 2025 OCP Global Summit: Broadcom Advances Industry Support for Ethernet for AI Networking. https://www.broadcom.com/blog/2025-ocp-global-summit-broadcom-advances-industry-support-for-ethernet-for-ai-networking
+  - 6. MapYourTech (2026). Optical Pluggables: Trends Analysis & Future Outlook. https://mapyourtech.com/optical-pluggables-trends-analysis-future-outlook/
+
 - ### Provenance
   - sources:: IETF RFCs (791, 793, 4271, 9000), IEEE 802.3-2022, 3GPP TS 23.501 (5G System Architecture), ETSI GS NFV 002, ONF TR-521
   - updated:: 2026-06-13

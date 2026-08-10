@@ -285,6 +285,22 @@ alias:: CloudComputing
   - **FinOps Foundation** — open practitioner community standardising [[Cost Optimisation]] practices for cloud spend; FinOps framework defines crawl/walk/run maturity for cloud financial management.
   - **Green Software Foundation** — develops standards for measuring and reducing the carbon footprint of cloud workloads; relevant to sustainable AI training.
 
+- ### Current Landscape (2026)
+  - AI has become the dominant growth engine: global cloud infrastructure services spending hit US$129bn in Q1 2026, up 35% year on year (the steepest since late 2021) on a run-rate above half a trillion dollars, per Synergy Research Group, driven by generative-AI workloads rather than the earlier pandemic-era migration wave.
+  - Growth-rate divergence among the "Big Three" widened in Q1 2026: AWS grew 28% (its fastest in 15 quarters, ~28% share), Microsoft Azure 40% (~21-25% share) and Google Cloud 63% to US$20.0bn (~14% share), with Alphabet's cloud backlog nearly doubling to over US$460bn as enterprises commit to multi-year capacity.
+  - Hyperscaler capital expenditure is exploding: the big five (Amazon, Alphabet, Microsoft, Meta, Oracle) are forecast to spend over US$600bn in 2026 (up ~36% on 2025), roughly 75% (~US$450bn) tied directly to AI infrastructure (GPUs, servers, data centres); AWS alone guided to ~US$200bn capex in 2026.
+  - "Neocloud" GPU-specialist providers (CoreWeave and peers) collectively crossed 5% of the cloud market by late 2025, with several second-tier names entering the top thirty, reshaping supply for scarce accelerated-compute capacity.
+  - The EU Data Act's cloud-switching regime (Chapter VI) became applicable on 12 September 2025, forcing providers to remove technical and contractual lock-in and complete switches within 30 days; all switching and data-egress fees must fall to zero by 12 January 2027, with national enforcers (e.g. Germany's Bundesnetzagentur) empowered to fine up to 4% of global turnover.
+  - Sovereign cloud moved from preference to mandate: the Commission proposed the Cloud and AI Development Act (CADA) on 3 June 2026, introducing a four-level Union sovereignty-assurance framework and aiming to at least triple EU data-centre capacity within 5-7 years, layered on DORA (full enforcement January 2025), NIS2 and the EU AI Act (full application 2 August 2026).
+  - Open challenges as of 2026 include AI-driven power and data-centre capacity constraints, GPU scarcity and capital intensity straining ROI, spiralling FinOps/GreenOps pressure, and reconciling US CLOUD Act extraterritorial exposure with tightening EU sovereignty and switching obligations.
+
+- ### References
+  - 1. Omdia / Informa (2026). Global cloud infrastructure spending rose 29% in Q4 2025 as hyperscalers scaled AI infrastructure investment. https://omdia.tech.informa.com/pr/2026/mar/global-cloud-infrastructure-spending-rose-29percent-in-q4-2025-as-hyperscalers-scaled-ai-infrastructure-investment
+  - 2. Synergy Research Group / VoxBooster (2026). Cloud Computing Statistics 2026: 55+ Data Points on Market Growth, Provider Share, and Spending. https://voxbooster.com/blog/cloud-computing-statistics-2026/
+  - 3. TechBlog / ComSoc (2025). Hyperscaler capex > $600bn in 2026, a 36% increase over 2025, while global spending on cloud infrastructure services skyrockets. https://techblog.comsoc.org/2025/12/22/hyperscaler-capex-600-bn-in-2026-a-36-increase-over-2025-while-global-spending-on-cloud-infrastructure-services-skyrockets/
+  - 4. Greenberg Traurig (2025). Cloud Switching Under the EU Data Act. https://www.gtlaw.com/en/insights/2025/9/cloud-switching-under-the-eu-data-act
+  - 5. Cloud Security Alliance (2026). EU Tech Sovereignty: Cloud Concentration Risk and the Cloud and AI Development Act (CADA). https://labs.cloudsecurityalliance.org/research/eu-tech-sovereignty-cloud-ai-enterprise-risk-v1-0-csa-styled/
+
 - ### Provenance
   - sources:: NIST SP 800-145; ISO/IEC 17788:2014; AWS/Azure/GCP public documentation; Cloud Security Alliance CCM; FinOps Foundation framework
   - updated:: 2026-06-13

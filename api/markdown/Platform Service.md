@@ -328,6 +328,23 @@ public:: true
   - **vs [[Software-as-a-Service]]** — SaaS is a complete, end-user application (e.g., Gmail). A platform service is an intermediate, composable capability consumed by developers, not end-users.
   - **vs [[Serverless Computing]]** — Serverless (FaaS) is a specific execution model for event-triggered functions; it is one implementation pattern for a compute platform service, but platform services encompass a far broader capability surface.
 
+- ### Current Landscape (2026)
+  - Platform services are now consumed chiefly through Internal Developer Platforms (IDPs) and portals: Gartner's 2026 Market Guide for Internal Developer Portals frames an IDP as "a single front door to engineering" that exposes APIs, catalogues and self-service automation while treating underlying technical platforms as reusable assets.
+  - Backstage remains the de facto standard portal layer — a CNCF Incubating project sitting in the "adopt" position (alongside Helm and kro) on the CNCF Q1 2026 Technology Radar; the mid-2025 snapshot reported over 270 organisations running it in production, at release line 1.42.x.
+  - "Platform as a product" has become mainstream: Gartner projected 80% of large software-engineering organisations would run dedicated platform teams by 2026 (up from ~45% in 2022), and Futurum found more than 80% of enterprise platforms are now managed as products rather than projects.
+  - The commercial layer has consolidated around a two-tier split — provisioning/orchestration engines (Humanitec, Qovery, Appvia Wayfinder, Mia-Platform, Crossplane, Kratix) beneath developer portals (Backstage, Port, Cortex, OpsLevel) — with Spotify's hosted Backstage Enterprise and Roadie adding managed, AI-assisted cataloguing.
+  - Standardisation is maturing: the Score workload specification moved under CNCF custodianship, kro and the emerging platformspec.io effort are formalising platform interfaces, and OPA/Kyverno policy-as-code plus OpenTelemetry observability are now expected baseline capabilities.
+  - The defining 2026 shift is that platform services must be "AI-operable", not just developer-operable — IDPs are being extended to broker self-service access to AI models, orchestration frameworks and ModelOps for agents; the 2026 Gartner Software Engineering Survey found 67% of leaders cite building AI capabilities into applications as a top pain point.
+  - Open challenges remain adoption and bypass: CNCF/SlashData's Q1 2026 radar found only 28% of organisations have a dedicated platform team (41% still collaborate across multiple teams), and surveys report roughly 64% of engineers still route around platform tooling in some cases.
+
+- ### References
+  - 1. Gartner / Mia-Platform (2026). Mia-Platform mentioned in the 2026 Gartner Market Guide for Internal Developer Portals. https://mia-platform.eu/news-en/mia-platform-mentioned-in-the-gartner-market-guide-internal-developer-portals-2026/
+  - 2. Cloud Native Computing Foundation (2026). Q1 2026 CNCF Technology Radar Report (platform engineering). https://www.cncf.io/wp-content/uploads/2026/03/Q1-2026-CNCF-Technology-Radar-Report.pdf
+  - 3. Platform Engineering (2025). Backstage, a Mid-Year Snapshot. https://platformengineering.com/social-facebook/backstage-a-mid-year-snapshot/
+  - 4. Facets.cloud (2026). The Best Internal Developer Platforms (IDPs) to Consider in 2026. https://www.facets.cloud/blog/7-best-internal-developer-platforms-idps-to-consider
+  - 5. Frontiers in Computer Science (2026). Platform engineering and internal developer portals: a multivocal literature review. https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2026.1814498/full
+  - 6. Signiscys (2026). GitOps, IaC and Platform as Product: Three Pillars of Modern DevOps in 2026. https://www.signisys.com/blog/gitops-iac-and-platform-as-product-three-pillars-of-modern-devops-in-2026/
+
 - ### Provenance
   - sources:: ISO/IEC 17788 (Cloud computing vocabulary); NIST SP 800-204; CNCF Landscape; OpenAPI Initiative; RFC 6749 (OAuth2)
   - updated:: 2026-06-13

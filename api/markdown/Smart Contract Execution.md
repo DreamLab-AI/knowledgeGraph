@@ -307,6 +307,23 @@ public:: true
   - **[[Decentralised AI Inference]]** — Emerging protocols (Giza, Modulus Labs, Bonsai) encode machine-learning model inference as verifiable computation and call results into smart contracts, bridging blockchain execution to the AI domain.
   - **[[Inter-Blockchain Communication]]** — IBC packets trigger execution of handler contracts on destination chains, enabling composable cross-chain DeFi and NFT operations across the Cosmos ecosystem.
 
+- ### Current Landscape (2026)
+  - Ethereum's Pectra hard fork (mainnet 7 May 2025) shipped EIP-7702, a new type-0x04 "set code" transaction that lets an externally owned account temporarily execute a delegate contract's bytecode, retrofitting batching, gas sponsorship, session keys and social recovery onto the 200M+ existing EOAs without migration; account abstraction now spans three coexisting models — ERC-4337 (alt-mempool UserOperations), EIP-7702 (consensus-level delegation) and native AA (zkSync Era, Starknet).
+  - The Ethereum Foundation's February 2026 protocol-priorities update pushes execution toward enshrined account abstraction (proposals EIP-7701 and EIP-8141 "Frame Transactions"), parallel execution, higher gas limits and enshrined proposer-builder separation, with the Fusaka/Glamsterdam upgrades slated across 2026.
+  - Parallel-EVM Layer 1s reached production: Sei V2 has run optimistic parallel execution (OCC/Block-STM-style) since late 2024 sustaining ~2,500-3,500 TPS under real load, and Monad launched mainnet on 24 November 2025 with parallel plus deferred execution over its MonadDB state store targeting ~10,000 TPS and sub-second finality; MegaETH and Sei's "Giga" (Autobahn multi-proposer consensus, ~200,000 TPS devnet target) push the frontier further.
+  - Zero-knowledge execution proving crossed the "real-time" threshold: RISC Zero's R0VM 2.0 (April 2025) cut Ethereum block proving from ~35 minutes to ~44 seconds, and by the EF's December 2025 update the zkVM ecosystem hit real-time proving — latency down from ~16 minutes to ~16 seconds, costs collapsing ~45x, proving 99% of blocks in under 10 seconds on target hardware.
+  - Vitalik Buterin's April 2025 proposal to replace the EVM with a RISC-V execution target (keeping backward compatibility for existing contracts) gained traction because the EVM interpreter adds an estimated 50-800x overhead to zk proving; RISC-V zkVMs such as SP1, RISC Zero, OpenVM, Jolt and Zisk are now the leading L1 block-proving candidates tracked via Ethproofs.
+  - Formal verification of execution correctness became a first-class goal: the EF's Verified zkEVM initiative aims for formally verified, bug-free zk(E)VMs by 2027 (verifying revm against KEVM/Lean semantics), and the December 2025 zkEVM security roadmap set staged provable-security milestones — soundcalc integration (Feb 2026), 100-bit at Glamsterdam (May 2026) and 128-bit "H-star" (end 2026).
+  - Open challenges as of 2026: closing the gap between headline TPS ceilings and sustained real-dApp throughput, proving soundness (not just speed) to 128 bits without trusted setups, EIP-7702 security regressions (the tx.origin == msg.sender invariant no longer holds), and delivering enshrined AA and home-affordable real-time proving (<=100k USD CAPEX, <=10kW) at scale.
+
+- ### References
+  - 1. Ethereum Foundation (2026). Protocol Priorities Update for 2026. https://blog.ethereum.org/2026/02/18/protocol-priorities-update-2026
+  - 2. Eco (2026). ERC-4337 vs ERC-7702 vs Native AA 2026 - Standards Compared. https://eco.com/support/en/articles/15254047-erc-4337-vs-erc-7702-vs-native-aa-2026-standards-compared
+  - 3. BlockEden (2026). Inside Sei V2's Parallel EVM: 12,500 TPS, Monad and the Giga Roadmap. https://blockeden.xyz/blog/2026/05/07/sei-v2-parallel-evm-12500-tps-mainnet-monad-giga-roadmap/
+  - 4. Atomic Wallet Academy (2025). What Is Monad? The High-Throughput EVM Layer-1 With Parallel Execution. https://atomicwallet.io/academy/articles/what-is-monad
+  - 5. Ethereum Foundation (2025). Shipping an L1 zkEVM #2: The Security Foundations. https://blog.ethereum.org/2025/12/18/zkevm-security-foundations
+  - 6. Blockworks (2025). Vitalik Buterin suggests replacing EVM with RISC-V to improve Ethereum scaling. https://blockworks.com/news/vitalik-ethereum-evm-scaling-l1-plan
+
 - ### Provenance
   - sources:: Ethereum Yellow Paper (Dr Gavin Wood); Solidity documentation (Ethereum Foundation); EIP-1559 specification; Solana architecture documentation; Cosmos SDK / CosmWasm documentation; Move language specification (Diem/Aptos); OpenZeppelin contract security guides.
   - updated:: 2026-06-13

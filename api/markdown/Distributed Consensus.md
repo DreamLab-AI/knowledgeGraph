@@ -308,6 +308,23 @@ alias:: DistributedConsensus
   - Academic venues: SOSP, OSDI, PODC, and DISC are the primary publication venues for new consensus protocols.
   - The Ethereum Foundation maintains EIPs (Ethereum Improvement Proposals) formalising consensus-related protocol changes.
 
+- ### Current Landscape (2026)
+  - Solana's Alpenglow (SIMD-0326) is the biggest shift in production consensus: validator governance approved it in September 2025 with 98.27% support, and its Votor voting engine replaces TowerBFT and removes Proof of History from consensus, targeting deterministic finality of roughly 100-150ms versus the previous 12.8s. It went live on Anza's community test cluster on 11 May 2026, with mainnet targeted for late Q3/early Q4 2026.
+  - Votor moves validator votes off-chain as lightweight messages aggregated into a ~1,000-byte BLS12-381 certificate, running concurrent fast (80% stake, one round) and slow (60% stake, two rounds) paths; this removes vote transactions that had consumed ~75% of Solana block space.
+  - DAG-based BFT has matured from research into the dominant high-throughput design, separating data dissemination from ordering: Sui's Mysticeti and the Narwhal/Bullshark lineage now underpin Aptos and Sui, and 2024-2025 work such as Shoal++ cut end-to-end DAG-BFT commit latency to ~4.5 message delays (a ~60% reduction over Shoal), while Mysticeti-C reached the 3-message-round latency lower bound.
+  - Leaderless consensus became a notable frontier through 2025-2026, with designs like Democratic BFT (DBFT), Mir-BFT and epidemic/gossip protocols (e.g. BECP, July 2025) aiming to remove the single-leader bottleneck and scale BFT across wide-area networks, complementing asynchronous DAG approaches (Mahi-Mahi, Sailfish, BBCA-CHAIN).
+  - Crash-fault-tolerant consensus in the datacentre remains anchored on Raft and multi-Raft (CockroachDB, TiKV, YugabyteDB), with KRaft replacing ZooKeeper as Kafka's metadata quorum; 2024-2025 refinements include CFT-Forensics (Byzantine accountability layered onto Raft/multi-Paxos) and streamlined Mencius/MultiPaxos reimplementations.
+  - Standardisation and supervisory attention grew: the IMF published a 2025 update to its "Blockchain Consensus Mechanisms: A Primer for Supervisors" (September 2025), reflecting regulatory interest in how proof-of-stake and BFT finality underpin financial-market infrastructure.
+  - Open challenges as of 2026 include closing the latency-throughput gap in asynchronous DAG-BFT, MEV-resistance in DAG total-ordering (e.g. Aptos and Chainlink's Fino), formally verifying newer leaderless protocols at production scale, and validating claimed finality figures (Alpenglow's 100-150ms remains simulation-based pending mainnet p50/p99 measurement).
+
+- ### References
+  - 1. Anza (2025). Alpenglow: A New Consensus for Solana. https://www.anza.xyz/blog/alpenglow-a-new-consensus-for-solana
+  - 2. Chainstack (2026). Solana: Alpenglow consensus explained. https://docs.chainstack.com/docs/solana-alpenglow-consensus
+  - 3. Solana Foundation (2025). SIMD-0326: Alpenglow. https://github.com/solana-foundation/solana-improvement-documents/blob/main/proposals/0326-alpenglow.md
+  - 4. Gelashvili, R. et al. (2025). Shoal++: High Throughput DAG BFT Can Be Fast! https://arxiv.org/pdf/2405.20488.pdf
+  - 5. Wu, H. et al. (2025). Half a Century of Distributed Byzantine Fault-Tolerant Consensus: Design Principles and Evolutionary Pathways. https://arxiv.org/html/2407.19863v3
+  - 6. Bains, P. / IMF (2025). Blockchain Consensus Mechanisms: A Primer for Supervisors (2025 Update). https://www.imf.org/-/media/files/publications/wp/2025/english/wpiea2025186-source-pdf.pdf
+
 - ### Provenance
   - sources:: Lamport, Shostak & Pease (1982) "Byzantine Generals Problem"; Fischer, Lynch & Paterson (1985) FLP; Castro & Liskov (1999) PBFT; Oki & Liskov (1988) Viewstamped Replication; Ongaro & Ousterhout (2014) Raft; Abraham & Malkhi (2019) HotStuff
   - updated:: 2026-06-13

@@ -331,6 +331,22 @@ public:: true
   - owl-role:: Class
   - belongs-to-domain:: [[Robotics Systems]]
 
+- ### Current Landscape (2026)
+  - Vision-based tactile (VBT) sensing has become the default touch modality for dexterous robots: Meta FAIR's late-2024 release of Sparsh (the first general-purpose touch representation), the Digit 360 fingertip and the Digit Plexus integration platform, commercialised via partnerships with GelSight Inc and Wonik Robotics, lowered the barrier and set the direction for the 2025-2026 wave.
+  - Tactile feedback moved from novelty to expectation inside generalist humanoid policies: 2025 saw the first foundation-model manipulation papers explicitly fusing touch with vision and proprioception (Physical Intelligence's Pi-0 and Figure's Helix), and the ICLR/ICRA/CoRL 2026 cycle now frames tactile representation as a foundation-model problem, training shared encoders across DIGIT, GelSight and TacTip data toward a "CLIP for touch".
+  - LiDAR for robotics went fully solid-state and digital: at CES 2025 RoboSense launched the E1R (billed as the first fully solid-state digital LiDAR for robotics) and the Airy 192-line hemispherical unit (360 deg x 90 deg field of view in a ping-pong-ball form factor), followed by the AC1 "Active Camera" that hardware-synchronises LiDAR, camera and IMU, deployed on humanoids such as Qinglong Pro at WAIC 2025.
+  - Defence and industrial capital entered tactile sensing: GelSight won a US Air Force Phase II SBIR on 10 March 2026 to build a rugged, miniaturised tactile "digital fingertip" for robotic grasping, signalling a shift from lab research to hardened production hardware.
+  - Sensor stacks are densifying, with a typical humanoid now carrying roughly 40-80 sensors spanning vision, IMU/encoder, force-torque, proximity and tactile arrays; a notable architectural split persists between multimodal LiDAR-plus-camera designs and Tesla Optimus's camera-only perception strategy.
+  - Market signals are strong but scope-dependent: the humanoid-robot sensors market was put at about USD 1.84 billion in 2025 (forecast ~USD 9.2 billion by 2032, ~25.8% CAGR), the broad tactile-sensing market at roughly USD 14 billion in 2026, and the emerging neuromorphic tactile-sensor niche at about USD 95 million in 2025, with tactile the fastest-growing segment.
+  - Open frontiers as of 2026 include generalising a single tactile embedding across incompatible sensor designs, neuromorphic and spiking-neural-network fusion of vision and touch (led by groups such as NUS), durability and wear of elastomer contact layers, and the compute cost of running image-like tactile streams in real time on-robot.
+
+- ### References
+  - 1. Meta AI (FAIR) (2024). Advancing embodied AI through progress in touch perception, dexterity, and human-robot interaction. https://ai.meta.com/blog/fair-robotics-open-source/
+  - 2. RoboticsTomorrow / RoboSense (2025). RoboSense Unveils AI Robotics Strategy and Cutting-Edge Innovations at 2025 Global Launch Event. https://www.roboticstomorrow.com/news/2025/01/03/robosense-unveils-ai-robotics-strategy-and-cutting-edge-innovations-at-2025-global-launch-event/23793/
+  - 3. GelSight, Inc. (2026). GelSight Awarded U.S. Air Force Phase II SBIR to Advance Compact Tactile Fingertip Sensors for Intelligent Robotic Grasping and Dexterity. https://www.gelsight.com/gelsight-air-force-sbir-robotic-tactile-sensors/
+  - 4. Visuotactile.com (2026). Visuotactile Sensing — A Field Guide to Camera-Based Tactile Sensing (research timeline 2009-2026). https://visuotactile.com/
+  - 5. Maximize Market Research (2026). Humanoid Robot Sensors Market: APAC Manufacturing Dominance (2025-2032 forecast and 2025-2026 developments). https://www.maximizemarketresearch.com/market-report/humanoid-robot-sensors-market/301991/
+
 - ### Provenance
   - sources:: IEEE Std 1451; ROS REP-103; ISO 26262:2018; OGC SensorThings API OGC 15-078r6; MEMS & Microsystems: Design, Manufacture, and Nanoscale Engineering (Chang Liu)
   - updated:: 2026-06-13

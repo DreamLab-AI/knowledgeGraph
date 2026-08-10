@@ -282,6 +282,21 @@ alias:: Cryptographic Hash Functions
   - **Algorithm Agility**: Systems should be designed to allow hash function substitution without architectural changes, enabling migration from deprecated algorithms (MD5, SHA-1) or in response to future cryptanalytic advances.
   - **Chosen-Prefix Collisions**: Practical chosen-prefix collisions against MD5 and SHA-1 have been demonstrated (SHAttered, 2017); these are the attacks that rendered those algorithms cryptographically broken for certificate issuance.
 
+- ### Current Landscape (2026)
+  - On 13 August 2024 NIST finalised FIPS 205, standardising SLH-DSA (derived from SPHINCS+), the first quantum-resistant signature scheme whose security rests solely on the second-preimage resistance of the SHA-2 (FIPS 180-4) and SHA-3/SHAKE (FIPS 202) hash families, elevating hash functions to the security foundation of post-quantum signatures.
+  - NIST's PQC transition roadmap (IR 8547, draft November 2024) and SP 800-131A Rev. 3 (draft October 2024) set a schedule to deprecate SHA-1 and the 224-bit hash functions (SHA-224, SHA-3-224, SHA-512/224) and to remove quantum-vulnerable algorithms by 2035; SHA-1 is to be withdrawn entirely by 31 December 2030, with FIPS 180-5 planned to delete its specification.
+  - As of 2026 SHA-256 (SHA-2) remains the practical default for general hashing, TLS and signatures, while SHA-3/Keccak stays the standardised backup with newer members TupleHash and ParallelHash promoted as replacements for retiring 224-bit variants; NIST maintains there is still no need to migrate applications from SHA-2 to SHA-3.
+  - BLAKE3 has become the de facto high-throughput non-cryptographic-compliance choice (roughly 3-6x faster than SHA-256), but NIST has not opened a standardisation process and confirmed (per January 2026 guidance) it will not be eligible for FIPS 140-3 validation before 2028, so regulated, PCI-DSS 4.0 and government workloads remain on SHA-2/SHA-3.
+  - Hardware acceleration is a live frontier: research such as the SLotH accelerator (NIST 5th PQC conference, 2024) shows dedicated Keccak/SHAKE and SHA-2 cores can speed SLH-DSA hashing up to ~300x, while the shift to Arm (e.g. AWS Graviton4, announced December 2025) erodes x86 SHA-NI advantages and reshapes hashing performance economics.
+  - Key standards players remain NIST/CSRC (FIPS 180-4, FIPS 202, FIPS 205) alongside ecosystem adoption signals such as Git's SHA-256 repository support and xxHash3-128 becoming the default in Zstandard 1.6 (November 2025); open challenges centre on migrating long-lived legacy SHA-1/MD5 code, provisioning crypto-agility (NIST CSWP 39 on crypto agility, updated June 2026), and validating faster designs like BLAKE3 for regulated use.
+
+- ### References
+  - 1. National Institute of Standards and Technology (2024). FIPS 205: Stateless Hash-Based Digital Signature Standard. https://csrc.nist.gov/pubs/fips/205/final
+  - 2. NIST CSRC (2024). Transition to Post-Quantum Cryptography Standards (NIST IR 8547, initial public draft). https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf
+  - 3. NIST CSRC (2024). SP 800-131A Rev. 3 (Initial Public Draft): Transitioning the Use of Cryptographic Algorithms and Key Lengths. https://csrc.nist.gov/pubs/sp/800/131/a/r3/ipd
+  - 4. NIST (2022, updated 2026). NIST Retires SHA-1 Cryptographic Algorithm. https://www.nist.gov/news-events/news/2022/12/nist-retires-sha-1-cryptographic-algorithm
+  - 5. DevToolsPro (2026). SHA-256 Alternatives 2026: Which Hash Function to Use. https://devtoolspro.org/articles/sha256-alternatives-2026-guide/
+
 - ### Provenance
   - sources:: NIST FIPS 180-4; NIST FIPS 202; RFC 2104; RFC 6234; NIST SP 800-107; Ethereum Yellow Paper; Bitcoin Developer Reference; SHAttered (Stevens et al., 2017)
   - updated:: 2026-06-13

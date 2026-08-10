@@ -306,6 +306,23 @@ public:: true
     - **Finality model**: real-time gross (Fedwire), deferred net (ACH), probabilistic (proof-of-work blockchain), deterministic (BFT-based consensus).
     - **Value scope**: fiat currencies only, cryptoassets only, or multi-asset ([[Stablecoin]], tokenised assets).
 
+- ### Current Landscape (2026)
+  - ISO 20022 reached critical mass across the major rails: SWIFT completed its cut-over from legacy MT messages on 22 November 2025 (around 97% of payment instructions now in the new format), and the US Fedwire Funds Service migrated on 14 July 2026, joining already-native rails such as The Clearing House's RTP and FedNow; by November 2026 all SWIFT users must be able to consume ISO 20022 camt.110 investigation requests.
+  - US instant-payment rails scaled sharply: FedNow reached roughly 1,600 participating institutions by end-2025 (up ~500 on the year), raised its per-transaction limit from $1m to $10m in November 2025, and is piloting a network-intelligence "pre-check" tool; The Clearing House's RTP raised its own ceiling from $1m to $10m in February 2025 and processed over $1.3tn in 2025.
+  - The GENIUS Act, signed on 18 July 2025, created the first US federal framework for payment stablecoins (100% high-quality liquid-asset reserves, BSA/AML compliance, dual federal/state chartering), with FDIC, OCC and FinCEN/OFAC rulemakings running in parallel through 2026 and full effect from 18 January 2027; an IMF working paper estimated the law cut incumbent payment firms' market capitalisation by ~18% (~$300bn).
+  - Card networks moved stablecoin settlement into production: Visa deployed stablecoin capability across Visa Direct from 5 August 2026 (USDC, Zero Hash compliance layer, 195 countries), building on the Visa Stablecoin Platform launched 16 July, while Mastercard completed its acquisition of BVNK (up to $1.8bn) and extended 24/7 intraday/weekend card settlement in fiat or regulated stablecoins.
+  - Stablecoins matured as a parallel settlement rail: total supply passed $300bn in 2025 (Circle USDC, Tether USDT), Circle's CCTP V2 launched March 2025 across 17 chains, and Western Union launched its Solana-based Stablecard on 4 August 2026 — though stablecoins remain roughly 1% of global payment flows.
+  - Europe tightened its regime: the Instant Payments Regulation mandates 10-second euro credit transfers with mandatory Verification of Payee (phase two live from October 2025), MiCA's transitional runway for crypto-asset service providers closed on 1 July 2026, and DORA supervision shifted from remediation to enforcement.
+  - Open challenges as of 2026 include settlement finality and par-convertibility risk for stablecoin rails, the $10m instant-rail ceiling that keeps large-value flows on Fedwire/CHIPS, extending FedNow beyond its domestic-only design for cross-border use, and embedding AI-driven, explainable fraud and sanctions controls as a baseline across every rail.
+
+- ### References
+  - 1. Spark Money (2026). Payment Network Interoperability: Standards Bridging Crypto and Traditional Rails. https://www.spark.money/research/payment-network-interoperability-standards
+  - 2. Qube Events (2026). 5 Payments Trends Reshaping the US Market in 2026. https://www.qubevents.com/post/payments-trends-reshaping-us-market-2026
+  - 3. Chargeflow (2026). Cross Border Payments Trends 2026: What's Changing and Why. https://www.chargeflow.io/blog/cross-border-payments-trends
+  - 4. Yahoo Finance (2026). Visa Puts Stablecoins Into Its Cross-Border Payout Rail via Visa Direct. https://finance.yahoo.com/markets/crypto/articles/visa-puts-stablecoins-cross-border-222304577.html
+  - 5. IMF (2026). Stablecoins and the Future of Payments: Evidence from Financial Markets (WP/2026/052). https://www.imf.org/-/media/files/publications/wp/2026/english/wpiea2026052-source-pdf.pdf
+  - 6. Federal Reserve Bank of Chicago (2026). Could Instant Payments or Stablecoins Be the Answer to 24/7 Settlement? Chicago Fed Letter No. 519. https://www.chicagofed.org/publications/chicago-fed-letter/2026/519
+
 - ### Provenance
   - sources:: BIS CPMI Red Book on Payment Systems; SWIFT GPI public documentation; Lightning Network BOLT specifications; EU PSD2 and MiCA legislative texts; Federal Reserve FedNow service documentation; ISO 20022 standard documentation.
   - updated:: 2026-06-13

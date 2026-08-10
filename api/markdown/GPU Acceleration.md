@@ -253,6 +253,23 @@ public:: true
   - **NVLink / NVSwitch** — NVIDIA's proprietary GPU interconnect fabric, enabling fully connected GPU topologies within nodes at bandwidths far exceeding PCIe; critical for multi-GPU [[Distributed Training]].
   - **IEEE P3120 (Quantum Computing Interface)** — Emerging standard that will intersect with GPU acceleration as hybrid quantum-classical computing pipelines use GPUs for classical pre/post-processing.
 
+- ### Current Landscape (2026)
+  - NVIDIA moved to an annual data-centre cadence: Blackwell B200/GB200 NVL72 shipped in volume through 2025, the Blackwell Ultra B300/GB300 refresh (288GB HBM3e, ~1.1 ExaFLOPS FP4 per NVL72 rack) arrived in H2 2025, and Vera Rubin (VR200, HBM4, ~13 TB/s) entered full production at GTC Taipei on 1 June 2026 with partner availability ramping in H2 2026.
+  - AMD closed much of the gap with the CDNA 4 Instinct MI350X/MI355X, launched mid-2025 with 288GB HBM3e and native FP4/FP6 support; the MI355X hit 93,045 tokens/s on MLPerf Inference v5.1 Llama 2 70B and AMD now claims inference parity-to-lead versus NVIDIA B200/GB200, ahead of the MI400 (CDNA "Next") generation due in 2026.
+  - The software stack modernised in step: CUDA 13 (November 2025) dropped Maxwell/Pascal/Volta and introduced the cuTile Python tile DSL, while AMD's ROCm 7.0 added MI350-series GA support and MX FP4/FP6/FP8 datatypes, narrowing CUDA lock-in for inference workloads.
+  - Cross-vendor portability gained ground through the UXL Foundation's oneAPI/SYCL effort (DPC++ upstreamed into LLVM Clang) and OpenAI's Triton kernel language, which now targets both NVIDIA Blackwell and AMD CDNA back-ends from a single source.
+  - US export policy whipsawed the market: NVIDIA's China-specific H20 was banned in April 2025, relicensed in July 2025 under a 15% revenue-share deal, and a 15 January 2026 BIS rule shifted H200 and AMD MI325X exports to case-by-case review, stacked with a 25% tariff, a 50% volume cap and mandatory third-party testing.
+  - Hyperscaler custom silicon accelerated as a hedge against GPU allocation queues and export friction: AWS Trainium3 (its first 3nm part) ramped through 2026, Google's seventh-gen "Ironwood" TPU matured with the JAX/XLA stack, and Microsoft's Maia 200 (TSMC 3nm, 140B+ transistors) moved into Azure deployment in early 2026.
+  - Frontier constraints as of 2026 are power and supply rather than raw FLOPS: racks now draw 120-140kW with mandatory liquid cooling, Rubin-class GPUs are projected at 1,800-2,300W each, and Rubin volume is capped near 250,000-300,000 units in 2026 by TSMC N3 wafer and HBM4 supply limits.
+
+- ### References
+  - 1. IntuitionLabs (2025). NVIDIA Data Center GPU Specs: A Complete Comparison Guide. https://intuitionlabs.ai/articles/nvidia-data-center-gpu-specs
+  - 2. VRLA Tech (2026). NVIDIA GPU Roadmap 2026-2030: Rubin, Rubin Ultra, Feynman. https://vrlatech.com/nvidia-gpu-roadmap-2026-2030/
+  - 3. Tom's Hardware (2026). ISSCC 2026: AMD discloses how the Instinct MI355X doubled per-CU throughput. https://www.tomshardware.com/tech-industry/semiconductors/inside-the-instinct-mi355x
+  - 4. AMD (2025). AMD ROCm 7.0 Software: Supercharging AI and HPC Infrastructure. https://www.amd.com/en/blogs/2025/rocm7-supercharging-ai-and-hpc-infrastructure.html
+  - 5. The Register (2026). US GPU export rules put Chinese buyers last. https://www.theregister.com/on-prem/2026/01/14/us-gpu-export-rules-put-chinese-buyers-last/5071762
+  - 6. Spheron Network (2026). GPU Export Controls 2026: What It Means for Cloud Pricing. https://www.spheron.network/blog/gpu-export-controls-2026-cloud-pricing/
+
 - ### Provenance
   - sources:: NVIDIA CUDA documentation; Krizhevsky et al. (2012) AlexNet paper; Hopper and Blackwell architecture whitepapers; MLCommons MLPerf benchmarks; PyTorch and JAX documentation; Khronos OpenCL specification
   - updated:: 2026-06-13

@@ -329,6 +329,23 @@ public:: true
   - **PCIe / CXL** — high-bandwidth, cache-coherent interconnects enabling composable hardware architectures in data-centre and desktop platforms.
   - **OpenXR** — Khronos Group standard API abstracting over heterogeneous [[Head-Mounted Display]] hardware, reducing fragmentation for [[Spatial Computing]] developers.
   - **Export Control (ITAR / EAR / BIS)** — advanced semiconductor hardware (especially AI accelerators above defined FLOP thresholds) is subject to international export restrictions, making [[Supply Chain]] compliance a governance concern.
+- ### Current Landscape (2026)
+  - The market bifurcated between premium headsets and lightweight glasses: Apple refreshed the Vision Pro with the M5 chip and a Dual Knit Band in October 2025 (still $3,499), while multiple April 2026 reports (MacRumors, Tom's Hardware, AppleInsider) indicated Apple had halted active Vision Pro hardware development and pivoted engineering toward AR glasses.
+  - Android XR arrived as a credible third platform: Samsung's Galaxy XR headset launched in October 2025 at $1,799 on the Snapdragon XR2+ Gen 2, co-developed with Google, positioning Android XR against visionOS and Meta's Horizon OS.
+  - Display-in-glasses crossed a consumer threshold when Meta shipped the Meta Ray-Ban Display at $799 on 30 September 2025 - the first full-colour waveguide inside a Ray-Ban frame, paired with a wrist-worn EMG Neural Band for gesture input.
+  - Silicon specialised into two tiers: Qualcomm's Snapdragon AR1 / AR1+ Gen 1 (unveiled at AWE 2025, ~26-28% smaller, running Llama 3.2 1B on-device) targets sub-50g display-free and monocular glasses, while the XR2+ Gen 2 powers full headsets such as Galaxy XR and Quest 3.
+  - Meta opened Horizon OS to third-party OEMs (announced April 2024), yielding ASUS and Lenovo XR devices and an Xbox-edition Quest, while confirming Quest 4 is pushed to roughly H2 2027 or later at an expected $700-800.
+  - Samsung confirmed on its Q4 2025 earnings call (late January 2026) that Android XR smart glasses (codenamed "Haean"/"Jinju", models SM-O200P/SM-O200J) with deep Gemini integration will ship in 2026, with display versions expected in 2027.
+  - Open challenges as of 2026 remain waveguide field-of-view and brightness, all-day battery within eyewear thermal/weight budgets (~50g on 155mAh cells), on-device versus cloud AI inference, and weak consumer demand for high-end headsets despite chip and display gains.
+
+- ### References
+  - 1. Apple Newsroom (2025). Apple Vision Pro upgraded with the M5 chip and Dual Knit Band. https://www.apple.com/newsroom/2025/10/apple-vision-pro-upgraded-with-the-m5-chip-and-dual-knit-band/
+  - 2. UploadVR (2025). Snapdragon AR1+ Is A New Chip For High-End Smart Glasses. https://www.uploadvr.com/qualcomm-snapdragon-ar1-plus-smart-glasses-chip/
+  - 3. VR/AR Association (2026). Samsung Confirms Android XR Smart Glasses Are Coming in 2026, And Qualcomm Is Building the Silicon. https://www.thevrara.com/blog/2026/2/9/samsung-confirms-android-xr-smart-glasses-are-coming-in-2026-and-vrara-member-qualcomm-is-building-the-silicon-behind-the-revolution
+  - 4. The Gadgeteer (2026). Every Smart Glasses Design Tells You Who They're Chasing. https://the-gadgeteer.com/2026/05/25/smart-glasses-2026-design-strategy/
+  - 5. Frame Sixty (2026). Mixed Reality Products in 2026: Headsets to Frameworks. https://framesixty.com/mixed-reality-products/
+  - 6. TS2 (2025). XR Revolution Unfolds: Major Spatial Computing News (July 23-24, 2025). https://ts2.tech/en/xr-revolution-unfolds-major-spatial-computing-news-july-23-24-2025/
+
 - ### Provenance
   - sources:: IEEE Standards Association; JEDEC Solid State Technology Association; Khronos Group OpenXR specification; Arm Architecture Reference Manual; industry knowledge to training cutoff
   - updated:: 2026-06-13

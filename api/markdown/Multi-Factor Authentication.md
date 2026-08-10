@@ -281,6 +281,23 @@ public:: true
   - **Account recovery bypass** — weak account recovery flows (e.g. SMS reset) can entirely bypass MFA; secure recovery requires equivalent assurance to authentication itself
   - **Authenticator app malware** — malware on the user's device can extract TOTP seeds if they are stored insecurely; hardware security keys store keys in tamper-resistant hardware, preventing extraction
 
+- ### Current Landscape (2026)
+  - The centre of gravity has shifted decisively from traditional (phishable) MFA to phishing-resistant, origin-bound FIDO2/WebAuthn credentials; NCSC announced at CYBERUK 2026 (Glasgow, April 2026) that it will recommend passkeys wherever services support them, keeping two-step verification only as a fallback.
+  - NIST SP 800-63-4 (finalised 31 July 2025) is now the governing specification: it formally recognises synced passkeys as AAL2-compliant, requires that AAL2 verifiers must offer a phishing-resistant option, and reserves AAL3 for non-exportable hardware-backed keys — meaning sync-only passkeys are not permitted at AAL3.
+  - Microsoft's July 2026 announcement makes passkeys the default sign-in for all Entra ID users from 1 September 2026, auto-enrols SMS/voice users onto passkeys, and fully retires Microsoft-provided SMS and voice authentication on 1 February 2027 with no opt-out.
+  - Regulation has turned phishing-resistant MFA into a legal baseline: PCI DSS v4.0.1 made MFA mandatory for all cardholder-data-environment access from 31 March 2025 (with FIDO2 named in Appendix G and FAQ 1595 allowing synced passkeys to stand in for MFA under Requirement 8.4.2), while EU NIS2 (Article 21, in force October 2024) and DORA (January 2025) mandate multi-factor or continuous authentication for essential entities and financial firms.
+  - European alignment deepened with ENISA's NIS2 Technical Implementation Guide (26 June 2025) naming domain-bound passkeys the strongest available phishing-resistant MFA method across the EU.
+  - Adoption is now mainstream rather than pilot-stage: FIDO Alliance research across 1,400 large-organisation decision-makers reports 68% have deployed or are actively deploying passkeys for employee sign-in, and CISA's guidance names FIDO/WebAuthn and PIV/CAC as the only methods resistant to phishing, push-bombing and SIM-swap.
+  - The live frontier is defending against Adversary-in-the-Middle (AiTM) session-cookie theft that defeats classic SMS/TOTP/push MFA, managing the operational migration off retiring SMS/voice channels, and reconciling the AAL3 tension where convenient synced passkeys are disallowed and device-bound hardware keys or smart cards are required.
+
+- ### References
+  - 1. Forrester (2026). Microsoft Makes Passkeys Default: What Identity And Security Leaders Need To Do. https://www.forrester.com/blogs/microsoft-makes-passkeys-default-what-identity-and-security-leaders-need-to-do/
+  - 2. WWPASS (2025). Phishing-Resistant MFA in 2025: Buyer's Guide to NIST SP 800-63-4 and OMB M-22-09. https://www.wwpass.com/blog/phishing-resistant-mfa-in-2025-buyer-s-guide-to-nist-sp-800-63-4-omb-m-22-09/
+  - 3. NCSC (2026). Passkeys are more secure than traditional ways to log in. https://www.ncsc.gov.uk/blogs/passkeys-are-more-secure-than-traditional-ways-to-log-in
+  - 4. Corbado (2026). ENISA & Passkeys: NIS2 Technical Implementation Guide. https://www.corbado.com/blog/enisa-passkeys
+  - 5. Schellman (2026). PCI DSS v4.x MFA Requirements Explained: Passkeys, Phishing-Resistant Authentication. https://www.schellman.com/blog/pci-compliance/pci-dss-v4.x-mfa-requirements-explained
+  - 6. Swif.ai (2026). MFA Statistics: Push Bombing, Adoption and Compliance. https://www.swif.ai/blog/mfa-statistics
+
 - ### Provenance
   - sources:: NIST SP 800-63B (2017, updated 2022 addendum); W3C WebAuthn Level 2 specification; FIDO Alliance technical specifications; ISO/IEC 27001:2022; IETF RFC 6238, RFC 4226; UK NCSC MFA guidance
   - updated:: 2026-06-13

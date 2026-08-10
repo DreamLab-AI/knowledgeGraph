@@ -297,6 +297,22 @@ public:: true
   - **FinOps Foundation**: the industry body defining [[FinOps]] — cloud financial operations — as a practice discipline for cost accountability, forecasting, and optimisation on cloud platforms.
   - **OpenTelemetry (CNCF)**: emerging standard for vendor-neutral telemetry (traces, metrics, logs) across cloud-native workloads, reducing observability lock-in.
 
+- ### Current Landscape (2026)
+  - Cloud infrastructure spending is being reshaped by AI: Synergy Research Group put Q1 2026 quarterly spend at a record ~$129 billion (up 35% year-on-year, the ninth consecutive quarter of accelerating growth), with Gartner forecasting public-cloud end-user spending of ~$850 billion for 2026 and AI-related workloads now roughly 19% of total cloud spend, up from 8% in 2023.
+  - The "Big Three" still hold ~63% of the market but growth is diverging sharply: in Q1 2026 AWS led at ~28% share (revenue $37.6bn, +28% YoY), Azure ~21% (+40% YoY), and Google Cloud ~14% (+63% YoY, first quarter above $20bn) — and AWS disclosed plans to lift 2026 capital expenditure to ~$200 billion, more than 50% above 2025.
+  - "Neoclouds" have emerged as a distinct AI-native platform tier: CoreWeave (Nasdaq: CRWV, largest US tech IPO since 2021 in March 2025) runs a Kubernetes-native GPU cloud, was first to deploy NVIDIA's GB300 NVL72 (July 2025), launched CoreWeave Inference (serverless/dedicated, March 2026) and closed the first investment-grade GPU-backed financing ($8.5bn, March 2026); Nebius, Lambda and Together AI compete on cheaper per-GPU pricing and faster cluster provisioning.
+  - Platform capability is shifting towards agentic AI and native model integration — Azure integrated GPT-5 across enterprise services, and after Azure exclusivity ended OpenAI's models reached AWS Bedrock (April 2026), backed by an AWS commitment reported at over $100 billion.
+  - EU cloud sovereignty moved from policy to procurement: the Commission awarded a €180 million sovereign-cloud tender (17 April 2026) to four European consortia — Post Telecom/OVHcloud/CleverCloud, STACKIT, Scaleway, and Proximus/S3NS — assessed against the Cloud Sovereignty Framework's eight objectives and SEAL assurance levels.
+  - The Cloud and AI Development Act (CADA), unveiled as the centrepiece of the Commission's Tech Sovereignty package on 3 June 2026, proposes a single EU-wide four-level cloud-sovereignty assurance framework (Levels 3–4 generally exclude hyperscalers) with final adoption targeted for Q4 2027.
+  - Open challenges as of 2026 include AI-driven capex and power/data-centre constraints, debt-financed neocloud business models exposed to demand risk, multi-cloud sprawl (enterprise multi-cloud adoption reported near ~89%), and reconciling sovereignty/jurisdiction requirements with reliance on non-EU hyperscaler technology.
+
+- ### References
+  - 1. Omdia (2026). Global cloud infrastructure spending rose 29% in Q4 2025 as hyperscalers scaled AI infrastructure investment. https://omdia.tech.informa.com/pr/2026/mar/global-cloud-infrastructure-spending-rose-29percent-in-q4-2025-as-hyperscalers-scaled-ai-infrastructure-investment
+  - 2. CRN / Synergy Research Group (2026). Cloud Market Share Q1 2026: AWS, Microsoft, Google Battling in AI Era. https://www.crn.com/news/cloud/2026/cloud-market-share-q1-2026-aws-microsoft-google-battling-in-ai-era
+  - 3. European Commission (2026). Commission advances cloud sovereignty through strategic procurement (€180 million sovereign-cloud tender). https://commission.europa.eu/news-and-media/news/commission-advances-cloud-sovereignty-through-strategic-procurement-2026-04-17_en
+  - 4. European Commission (2026). Cloud and AI Development Act — Shaping Europe's digital future. https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act
+  - 5. CoreWeave (2025). CoreWeave Becomes First Hyperscaler to Deploy NVIDIA GB300 NVL72 Platform. https://investors.coreweave.com/news/news-details/2025/CoreWeave-Becomes-First-Hyperscaler-to-Deploy-NVIDIA-GB300-NVL72-Platform/default.aspx
+
 - ### Provenance
   - sources:: NIST SP 800-145 (NIST Definition of Cloud Computing); CNCF Annual Survey; AWS/Azure/GCP public documentation; FinOps Foundation; established industry knowledge
   - updated:: 2026-06-13

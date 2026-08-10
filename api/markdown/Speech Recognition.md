@@ -353,6 +353,24 @@ public:: true
   - owl-class:: artificial-intelligence:SpeechRecognition
   - owl-role:: concept
 
+- ### Current Landscape (2026)
+  - The architecture has consolidated on Conformer/FastConformer encoders paired with LLM decoders: every system that set state of the art in 2025–2026 (FireRedASR2-LLM, Qwen3-ASR, Alibaba Fun-ASR, NVIDIA Canary-Qwen) adopted this pattern, displacing standalone CTC/transducer decoders to the efficiency tier.
+  - NVIDIA's Canary-Qwen-2.5B (FastConformer encoder + Qwen3-1.7B decoder) took the top of the Hugging Face Open ASR Leaderboard around May 2026 at 5.63% average WER and 418x real-time, becoming the open-model English-accuracy leader.
+  - The leaderboard has since compressed to under one WER point at the top: Cohere released Transcribe (2B, Apache 2.0) in March 2026 at 5.42%, IBM shipped Granite Speech 4.1 2B at 5.33% roughly five weeks later, followed by ARK-ASR-3B and MOSS-Transcribe, so licence, language coverage, streaming support and cost per audio-hour now decide model choice rather than rank.
+  - OpenAI did not release a Whisper v4; the latest open checkpoint remains large-v3-turbo (October 2024) and the company shifted to an API-only multimodal path with GPT-4o-transcribe (March 2025), though Whisper's tooling ecosystem (faster-whisper, WhisperX, whisper.cpp) is still unmatched.
+  - Meta's Omnilingual ASR (10 November 2025) pushed massively multilingual coverage to more than 1,600 languages, including around 500 never previously transcribed, with zero-shot in-context extension to over 5,400 languages, released under Apache 2.0 alongside a 7B wav2vec 2.0 model and a 348-language corpus.
+  - Real-time voice-agent ASR matured in parallel: Deepgram shipped Flux for sub-300ms end-of-speech detection, and ElevenLabs' Scribe v2 Realtime reached roughly 150ms latency across 30 languages at 93.5% FLEURS accuracy.
+  - Benchmarking became more rigorous via the Open ASR Leaderboard (arXiv 2510.06961), which by March 2026 compared 86 systems from 26 organisations across 12 datasets with dedicated multilingual and long-form tracks.
+  - Open frontiers as of 2026 include the persistent low-resource and multilingual accuracy gap, model hallucination on noisy long-form audio, streaming latency for agentic use, and a sharp divergence between English and Chinese ecosystems (Whisper large-v3's Chinese CER runs 5–10x behind purpose-built models such as FireRedASR2, which reaches 0.57% CER on AISHELL-1).
+
+- ### References
+  - 1. Ruoqi Jin (2026). ASR in 2025-2026: A Deep Dive into Speech Recognition. https://ruoqijin.com/blog/asr-deep-dive-2025-2026
+  - 2. MarkTechPost (2026). Best Open Speech Recognition (ASR) Models in 2026: WER, Languages, Latency and License Compared. https://www.marktechpost.com/2026/07/23/best-open-speech-recognition-asr-models-in-2026-wer-languages-latency-and-license-compared/
+  - 3. Meta AI / FAIR (2025). Omnilingual ASR: Advancing Automatic Speech Recognition for 1,600+ Languages. https://ai.meta.com/blog/omnilingual-asr-advancing-automatic-speech-recognition/
+  - 4. Srinath et al. (2026). Open ASR Leaderboard: Towards Reproducible and Transparent Multilingual and Long-Form Speech Recognition Evaluation. https://arxiv.org/html/2510.06961v4
+  - 5. Future AGI (2026). Speech-to-Text APIs in 2026: Benchmarks, Pricing and Developer's Decision Guide. https://futureagi.com/blog/speech-to-text-apis-in-2026-benchmarks-pricing-developer-s-decision-guide/
+  - 6. Qwen Team (2026). Qwen3-ASR Technical Report. https://arxiv.org/html/2601.21337v1
+
 - ### Provenance
   - sources:: LibriSpeech benchmark documentation; Wav2Vec 2.0 (Baevski et al., 2020); Whisper (Radford et al., 2022); W3C Web Speech API specification; NIST Speech evaluation series
   - updated:: 2026-06-13

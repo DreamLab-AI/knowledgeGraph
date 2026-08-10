@@ -298,6 +298,23 @@ alias:: Sustainability Reporting
   - **Framework proliferation** — multiple competing standards create reporting burden; ISSB/GRI interoperability agreement (2023) and CSRD–ISSB equivalence assessment aim to reduce duplication
   - **Nature and biodiversity** — [[TNFD]] (Taskforce on Nature-related Financial Disclosures) framework (2023) extends sustainability reporting into ecosystem accounting, adding new data demands
 
+- ### Current Landscape (2026)
+  - The EU's Omnibus I Amending Directive (EU) 2026/470 was published in the Official Journal on 26 February 2026 and entered into force on 18 March 2026, sharply narrowing CSRD scope: mandatory reporting now applies only to undertakings with more than 1,000 employees and net turnover above EUR 450 million (up from roughly 250 employees), removing listed SMEs and around 80% of previously in-scope companies; member states must transpose by 19 March 2027.
+  - The earlier "Stop-the-Clock" Directive (EU) 2025/794 (in force 17 April 2025) postponed CSRD reporting by two years for original Wave 2 (now FY2027, reporting 2028) and Wave 3 entities, while a July 2025 "Quick Fix" delegated act extended transitional reliefs for Wave 1 companies across FY2025 and FY2026.
+  - Revised, simplified ESRS were finalised on 3 July 2026, cutting the number of mandatory datapoints by roughly 61% versus the 2023 standards, making disclosure more quantitative and rendering sector-specific standards voluntary; the standards are mandatory from FY2027 with optional early use for FY2026, and a new VSME voluntary standard acts as a "value chain cap" protecting sub-1,000-employee partners.
+  - On 11 December 2025 the ISSB issued targeted amendments to IFRS S2 addressing GHG-emissions implementation challenges (notably Scope 3 and financed emissions reliefs), effective for annual periods beginning on or after 1 January 2027 with early application permitted.
+  - In April 2026 the ISSB agreed to develop nature-related disclosure guidance as a non-mandatory IFRS Practice Statement building on the TNFD framework (rather than a standalone standard), complementing IFRS S1/S2, with an Exposure Draft targeted for October 2026; separately it advanced its "Enhancing the SASB Standards" initiative touching 53 of 77 standards to improve GRI/TNFD interoperability.
+  - ISSB Standards are consolidating as the global baseline, with roughly 39 to 40 jurisdictions adopting or aligning (including China, Japan, Australia, Singapore and the Philippines); the UK published its UK Sustainability Reporting Standards (UK SRS) based on IFRS S1/S2 in early 2026, with an FCA consultation on requiring aligned disclosures for listed firms from 2027.
+  - The CSDDD due-diligence regime was simultaneously scaled back to only the largest corporations (over 5,000 employees and EUR 1.5 billion turnover), with mandatory compliance pushed to July 2029 and climate transition plan obligations removed from direct scope; the central open challenge for 2026 is regulatory fragmentation and interoperability between the pared-back EU regime and the expanding ISSB-aligned global baseline.
+
+- ### References
+  - 1. AL Goodbody (2026). Sustainability reporting and due diligence update – June 2026. https://www.algoodbody.com/insights-publications/sustainability-reporting-and-due-diligence-update-june-2026
+  - 2. Deloitte (2026). Heads Up — European Sustainability Reporting — Omnibus Legislative Developments and Updates to ESRS. https://dart.deloitte.com/USDART/home/publications/deloitte/heads-up/2026/eu-sustainability-reporting-omnibus-esrs-updates
+  - 3. KPMG International (2026). ESG Bulletin — 2026 Issue 02. https://assets.kpmg.com/content/dam/kpmgsites/cn/pdf/en/2026/05/esg-bulletin-02.pdf
+  - 4. White & Case (2026). Simplified, not abandoned: EU Corporate Sustainability after the Omnibus I Package. https://www.whitecase.com/insight-alert/simplified-not-abandoned-eu-corporate-sustainability-after-omnibus-i-package
+  - 5. Anthesis Group (2026). Sustainability Reporting in 2026: CSRD, EU Omnibus and ISSB — What Your Business Must Do Now. https://www.anthesisgroup.com/me/insights/sustainability-reporting-in-2026/
+  - 6. European Commission (2026). CSRD Delegated Act 2026/5010 (revised ESRS). https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010_en.pdf
+
 - ### Provenance
   - sources:: GRI Standards (2021), ISSB IFRS S1/S2 (2023), TCFD Recommendations (2017, 2021 update), EU CSRD (2022/2464), GHG Protocol Corporate Standard
   - updated:: 2026-06-13

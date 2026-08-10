@@ -305,6 +305,23 @@ public:: true
   - The relationship between DevOps and [[Site Reliability Engineering]] is complementary rather than competitive: SRE is Google's opinionated implementation of DevOps principles, adding quantitative reliability contracts and formal error budget management.
   - [[DevSecOps]] extends the DevOps model by treating security as a shared responsibility embedded throughout the delivery pipeline, rather than a gate at the end.
 
+- ### Current Landscape (2026)
+  - The 2025 DORA Report, "State of AI-assisted Software Development" (Google Cloud, September 2025; ~5,000 respondents), reframed AI as an amplifier rather than a fix: AI adoption correlates positively with throughput but negatively with stability, so the CD Foundation added Rework Rate as a fifth metric (16 October 2025) and published the seven-practice DORA AI Capabilities Model.
+  - Platform engineering became the default operating model, with DORA reporting ~90% of organisations now running at least one internal developer platform and 76% having a dedicated platform team; Gartner projects 80% of large engineering organisations will have platform teams by end of 2026, though CNCF/SlashData found 40.9% cannot demonstrate value within twelve months.
+  - Backstage consolidated its lead as the CNCF-governed IDP standard (reaching v1.42.x with 3,400+ adopters including Netflix, LEGO and Booking.com), while commercial rivals Port and Cortex each raised ~$60M; CNCF and SlashData's March 2026 radar placed Backstage, Helm and kro in the "Adopt" tier and launched a platform-engineering certification with 13,000+ developers certified.
+  - Software supply-chain attacks industrialised: the self-propagating Shai-Hulud npm worm (first September 2025, then Shai-Hulud 2.0 in November 2025 hitting 25,000+ repos), and the May 2026 "Mini Shai-Hulud"/Megalodon campaign by TeamPCP, which forged the first cryptographically valid SLSA Build Level 3 provenance attestations and weaponised AI-agent config files such as Claude Code's .claude/settings.json for persistence.
+  - Regulation diverged sharply: the EU Cyber Resilience Act (in force December 2024) sets a 24-hour actively-exploited-vulnerability reporting clock from 11 September 2026 and full SBOM/CE-marking obligations from 11 December 2027 with fines up to EUR 15M or 2.5% of turnover, whereas the US OMB memo M-26-05 (29 January 2026) rescinded prior federal SBOM attestation mandates, creating a two-speed compliance environment.
+  - Infrastructure churn accelerated: ingress-nginx is retiring in March 2026 (pushing migration to the Kubernetes Gateway API), Kubernetes shipped Dynamic Resource Allocation GA in v1.34 and In-Place Pod Resize GA in v1.35, IBM completed its $6.4B HashiCorp acquisition, and GitHub Actions (now ~71M jobs/day) introduced pricing changes effective January 2026.
+  - The open frontier is governing autonomous "agentic" DevOps: IDPs are evolving into Agentic Development Platforms treating AI agents as first-class users needing GPU provisioning, non-human identity and MCP gateways, while ~30% of engineers still distrust AI-generated code and Puppet's 2026 State of Platform Engineering found only 31% of organisations report fully autonomous infrastructure operations.
+
+- ### References
+  - 1. Google Cloud DORA (2025). Announcing the 2025 DORA Report: State of AI-assisted Software Development. https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report
+  - 2. DevNewsletter (2026). State of DevOps 2026. https://devnewsletter.com/p/state-of-devops-2026/
+  - 3. CNCF / SlashData (2026). CNCF and SlashData Report Finds Platform Engineering Tools Maturing as Organizations Prepare for AI-Driven Infrastructure. https://www.cncf.io/announcements/2026/03/24/cncf-and-slashdata-report-finds-platform-engineering-tools-maturing-as-organizations-prepare-for-ai-driven-infrastructure/
+  - 4. Cloud Security Alliance Labs (2026). Shai-Hulud/Megalodon: A Two-Wave AI Developer Supply Chain Attack. https://labs.cloudsecurityalliance.org/research/csa-research-note-shai-hulud-megalodon-supply-chain-cascade/
+  - 5. Mapshock (2026). Software Supply Chain Security: Dependency Confusion, Open Source Risk, and SBOM Mandates. https://mapshock.com/briefings/software-supply-chain-security-dependency-confusion-open
+  - 6. Puppet (2026). State of DevOps Report: Platform Engineering Edition 2026. https://www.puppet.com/resources/2026-state-of-platform-engineering
+
 - ### Provenance
   - sources:: DORA State of DevOps Report; *The DevOps Handbook* (Kim, Humble, Debois, Willis); *Site Reliability Engineering* (Beyer et al., Google); CNCF landscape documentation; Patrick Debois's DevOpsDays founding materials (2009)
   - updated:: 2026-06-13

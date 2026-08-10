@@ -349,6 +349,23 @@ public:: true
   - **Continuum and tendon-driven systems**: Cable-driven and tendon-based transmissions decouple the motor mass from the distal link, reducing limb inertia; used in dexterous robotic hands, [[Exoskeleton]] orthoses, and surgical robots.
   - **AI-driven actuator control**: [[Machine Learning]] approaches (model-based RL, neural network inverse dynamics) are beginning to replace classical [[PID Control]] for actuators operating in highly nonlinear or time-varying regimes, particularly in [[Soft Robotics]] where analytic models are intractable.
 
+- ### Current Landscape (2026)
+  - The 2023-2026 period settled the electric-versus-hydraulic debate: Boston Dynamics, Tesla, Figure AI, Unitree and UBTECH have all standardised on electric actuation, with Boston Dynamics' fully electric Atlas Gen 2 (2023) marking the industry's clearest break from the hydraulic era.
+  - Quasi-direct-drive (QDD) architectures - a high-torque frameless BLDC/PMSM motor paired with a low-ratio (roughly 5:1-20:1) cycloidal or planetary gearbox plus integrated current-sensing - became the dominant commercial joint design, delivering 100-200 Nm/kg torque density and 1-2 kHz torque-control bandwidth without external force sensors.
+  - Actuators now dominate humanoid economics: McKinsey (April 2026) puts them at 40-60% of the bill of materials, and Tesla states around 56% of Optimus's BOM sits in its actuators; Tesla's Optimus Gen 3 (full-body production targeted for summer 2026) reportedly carries about 50 actuators, using frameless-motor + harmonic-drive rotary joints and planetary-roller-screw linear actuators.
+  - Supply and cost pressure intensified: Unitree's G1 listed from roughly $13,500-$16,000 (and $17,990 on Amazon US in February 2026) while shipping 5,500+ units in 2025, and on 30 July 2026 Tesla's Ashok Elluswamy revised Optimus's long-term annual capacity target to 10 million units; Unitree began its STAR Market IPO process in August 2026.
+  - The frameless-motor and reducer supply chain is scaling and shifting toward Chinese vendors: HDIN Research sizes the 2026 frameless-motor market at roughly $0.9-3.6bn (8-16% CAGR to 2031), while harmonic-drive makers Leaderdrive and Laifu expand capacity against Japan's Harmonic Drive Systems and Shinpo, with Suzhou Green Harmonic supplying Tesla.
+  - Power-electronics integration is a live 2025-2026 frontier: joint modules increasingly embed GaN or SiC field-oriented-control servo drives directly behind the motor (GaN for fingers/wrists, SiC for hip/knee/torso), with the robot servo-drive segment valued at about $1.65bn in 2024 and forecast to reach $4.39bn by 2032.
+  - Open challenges as of 2026: driving per-joint actuator cost below roughly $500 (from $500-2,000 today) to hit $20,000-30,000 unit economics; harmonic-drive fragility under backdriving shock loads (for example when a robot falls); rare-earth magnet supply risk ahead of a suspension expiring 10 November 2026; and battery-limited runtimes of roughly 2-8 hours.
+
+- ### References
+  - 1. Biped.news (2026). Humanoid Robot Actuators Explained: Why Quasi-Direct Drive Won. https://biped.news/article/humanoid-robot-actuators-explained
+  - 2. McKinsey & Company (2026). Turning humanoid supply chain constraints into billion-dollar wins. https://www.mckinsey.com/industries/industrials/our-insights/turning-humanoid-supply-chain-constraints-into-billion-dollar-wins
+  - 3. Optimusk (2026). Tesla Optimus Hardware: Actuators, Hands & Sensors (2026). https://optimusk.blog/blog/tesla-optimus-hardware-specs/
+  - 4. Patsnap (2026). Humanoid Robots in 2026: Chips Are 5% of the Problem. https://www.patsnap.com/resources/blog/articles/humanoid-robots-in-2026-chips-are-5-of-the-problem/
+  - 5. WhyChips (2026). SiC Servo Drives: Shrinking Humanoid Robot Joints in 2026. https://whychips.com/sic-servo-drives-shrinking-humanoid-robot-joints-in-2026/
+  - 6. HDIN Research (2026). The Global Frameless Motor Market 2026. https://www.hdinresearch.com/news/991
+
 - ### Provenance
   - sources:: ISO 9283, ISO 10218, IEC 61800, IEEE Transactions on Robotics, ROS 2 documentation, established robotics textbooks (Siciliano et al. "Robotics: Modelling, Planning and Control"; Spong, Hutchinson & Vidyasagar "Robot Modelling and Control")
   - updated:: 2026-06-13

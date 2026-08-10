@@ -316,6 +316,23 @@ public:: true
     - CIS Control 8 (Audit Log Management) mandates centralised log collection and retention as a foundational security control.
   - **Relevant bodies**: CNCF (monitoring, tracing working groups), IETF (OpenMetrics, telemetry), NIST, ISO/IEC 27001 (Annex A — monitoring controls).
 
+- ### Current Landscape (2026)
+  - OpenTelemetry (OTel) has consolidated as the de-facto instrumentation standard for monitoring systems — now the second-largest CNCF project after Kubernetes — with the CNCF survey reporting roughly 78% of organisations running OTel in production in 2026, up from around 52% a year earlier, and the project working towards full CNCF graduation.
+  - Telemetry signals reached maturity: logs hit general availability alongside metrics and traces at KubeCon Europe 2025 (unified over OTLP), Semantic Conventions were stabilised for HTTP and databases (PostgreSQL, MySQL, MariaDB, SQL Server), and profiling became a formal OTLP signal in Collector v1.30.0, standardising a fourth pillar of monitoring.
+  - eBPF-based zero-code instrumentation went mainstream: Grafana donated Beyla to OpenTelemetry as OpenTelemetry eBPF Instrumentation (OBI), which shipped its first alpha release in November 2025, and Google Kubernetes Engine Autopilot enabled eBPF-based observability by default in February 2026.
+  - AI-driven monitoring shifted from dashboards to autonomous operations: the Elastic 2026 landscape report finds 85% of organisations now use generative AI for observability (projected to reach 98% within two years), with agentic AI adoption at roughly 23% and use cases centred on automated log/metric/trace correlation, root-cause analysis and guarded auto-remediation, though 95% of practitioners insist AI must show its reasoning.
+  - Monitoring of AI itself became a first-class concern: OpenTelemetry released experimental GenAI Semantic Conventions (e.g. gen_ai.request.model, gen_ai.usage.input_tokens/output_tokens) with the first experimental agent-tracing conventions landing around March 2026 and support in Datadog (v1.37+) and Grafana, letting teams standardise token cost, model-version drift and agent-decision traces across OpenAI, Anthropic, AWS Bedrock and Azure AI.
+  - Cost governance and vendor risk dominate procurement: the Elastic survey reports 67% of teams hit unexpected observability overages and 96% are actively cutting costs, pushing flat-rate and consumption-based alternatives (Uptrace, Better Stack) against Datadog's per-host model, while consolidation raised risk — ServiceNow's Cloud Observability (Lightstep) reaches end of life by March 2026.
+  - Open frontier challenges as of 2026 include telemetry signal-to-noise and data-value-over-volume filtering, securing autonomous remediation with adequate guardrails, instrumenting AI-native pipelines (GPU utilisation, KV-cache hit rates, RAG retrieval precision) that legacy APM was never designed for, and emerging efforts to treat carbon footprint of AI and cloud workloads as a monitored SLO.
+
+- ### References
+  - 1. IBM (2026). Observability trends 2026. https://www.ibm.com/think/insights/observability-trends
+  - 2. Grafana Labs (2026). Observability Survey 2026. https://grafana.com/observability-survey/
+  - 3. Uptrace (2026). Top 10 Observability Tools in 2026: APM Platforms. https://uptrace.dev/tools/top-observability-tools
+  - 4. Elastic / Dimensional Research (2026). The Landscape of Observability in 2026. https://www.elastic.co/pdf/dimensional-research-2026-landscape-observability-white-paper.pdf
+  - 5. Grafana Labs (2026). OpenTelemetry and Grafana Labs: What's new and what's next in 2026. https://grafana.com/blog/opentelemetry-and-grafana-labs-whats-new-and-whats-next-in-2026/
+  - 6. OpenTelemetry (2025). AI Agent Observability - Evolving Standards and Best Practices. https://opentelemetry.io/blog/2025/ai-agent-observability/
+
 - ### Provenance
   - sources:: OpenTelemetry specification (opentelemetry.io); Prometheus documentation (prometheus.io); NIST SP 800-137; CNCF landscape; Google SRE Book; Grafana Labs observability documentation.
   - updated:: 2026-06-13

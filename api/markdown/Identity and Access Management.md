@@ -284,6 +284,23 @@ public:: true
   - **GDPR and CCPA** — Data protection regulations that impose consent management, data minimisation, and right-to-erasure obligations on identity systems, especially CIAM platforms.
   - **SOC 2 Type II** — Audit framework requiring evidence of access control design and operating effectiveness, making IAM audit trails a compliance deliverable for SaaS providers.
 
+- ### Current Landscape (2026)
+  - NIST finalised SP 800-63-4 Digital Identity Guidelines on 31 July 2025, integrating FIDO2 and passkeys into the federal standard; it mandates a phishing-resistant option at AAL2 and a non-exportable private key at AAL3, with syncable (cloud-following) passkeys qualifying only at AAL2.
+  - Passwordless authentication has crossed into the mainstream: passkey support now spans over 80% of enterprise applications (up from ~35% in 2024), Apple, Google and Microsoft have collectively enabled passkeys for over 4 billion accounts, and HYPR's 2026 report finds roughly 43% of enterprises have deployed passwordless in some form.
+  - Non-human identity (NHI) management became a distinct discipline as service accounts, API keys, workloads and autonomous AI agents now vastly outnumber human users, driving a shift to short-lived, just-in-time credentials and dedicated tooling (CyberArk/Venafi, Astrix, Oasis, Aembit, Silverfort, Token Security).
+  - Identity Threat Detection and Response (ITDR) matured from a Gartner concept into a standard architecture component, converging with core IAM platforms to detect token theft, session hijacking and lateral movement in real time.
+  - Heavy market consolidation reshaped the vendor field: Palo Alto Networks agreed to acquire CyberArk for around $25 billion, Delinea moved to acquire StrongDM, and in early 2026 CrowdStrike announced deals for SGNL ($740m) and Seraphic ($420m) while Zscaler acquired SquareX.
+  - Established leaders hold the core segments: Microsoft Entra ID and Okta lead workforce IAM (Gartner named Microsoft, Okta and Ping Identity Access Management Leaders for a ninth consecutive year), SailPoint and Saviynt lead IGA, and CyberArk, BeyondTrust and Delinea lead PAM; Okta reported $2.919bn FY2026 revenue, CyberArk $1.44bn ARR and SailPoint $1.163bn ARR.
+  - European regulation is differentiating the market, with NIS2, DORA and eIDAS 2.0 pushing adoption of the EU Digital Identity Wallet and W3C Verifiable Credentials/decentralised identifiers, which are moving from pilots toward workforce credentialing and supply-chain verification.
+  - Open frontiers as of 2026 include governing agentic-AI identities, post-quantum "harvest now, decrypt later" readiness for identity tokens, the shift from RBAC to attribute- and policy-based access control (ABAC/PBAC) with continuous verification, and modular "Identity Fabric" architectures replacing monolithic stacks.
+
+- ### References
+  - 1. StartWithIdentity (2026). Top 10 IAM Trends for 2026: From Passwordless to Autonomous Identity. https://startwithidentity.com/news/2026-01-08-top-10-iam-trends-2026/
+  - 2. Analysis Atlas (2026). IAM Market 2026: Machine Identity and the Agent Wave. https://analysis-atlas.com/research/identity-access-management-iam-market/
+  - 3. CSO Online (2026). 6 key trends reshaping the IAM market. https://www.csoonline.com/article/4148282/6-key-trends-reshaping-the-iam-market.html
+  - 4. KuppingerCole (2026). Research Compass Identity and Access Management 2026. https://www.kuppingercole.com/research/an82012/research-compass-identity-and-access-management-2026
+  - 5. ALM Corp (2026). 12 Best Identity and Access Management Tools in 2026. https://almcorp.com/blog/best-identity-and-access-management-tools/
+
 - ### Provenance
   - sources:: ISO/IEC 27001:2022; NIST SP 800-53 Rev 5; NIST SP 800-63-3; RFC 6749 (OAuth 2.0); OASIS SAML 2.0; W3C WebAuthn Level 2; SCIM RFC 7642-7644; Gartner IAM Magic Quadrant research; FIDO Alliance specifications
   - updated:: 2026-06-13

@@ -268,6 +268,22 @@ alias:: NetworkSecurity
   - **Post-Quantum Cryptography migration** — NIST finalised ML-KEM (CRYSTALS-Kyber), ML-DSA, and SLH-DSA in 2024; organisations must inventory cryptographic dependencies across network stacks to plan migration before quantum computers threaten RSA/ECC.
   - Key standardisation bodies: IETF (protocol standards), IEEE 802.1X (port-based NAC), NIST, ISO/IEC JTC 1/SC 27, ETSI (telecommunications).
 
+- ### Current Landscape (2026)
+  - Post-quantum cryptography has moved from standard to deployment: after NIST finalised FIPS 203 (ML-KEM), 204 (ML-DSA) and 205 (SLH-DSA) in August 2024 and added HQC as a fourth-round selection in March 2025, network vendors are now shipping quantum-resistant transport — Cloudflare declared Cloudflare One the first SASE platform with end-to-end hybrid ML-KEM encryption across Zero Trust, Secure Web Gateway and IPsec/WAN in February 2026.
+  - Migration deadlines are now hard drivers of procurement: NIST and NSA's CNSA 2.0 timeline deprecates RSA/ECC after 2030 and disallows classical public-key cryptography in national security systems by 2035, pushing "harvest now, decrypt later" defence and crypto-agility (automated rotation, short-lived certificates) into 2026 network roadmaps.
+  - AI has become a force multiplier on both sides: the Unit 42 2026 Global Incident Response Report (17 February 2026, based on 750+ incidents) found AI compressed the fastest attacks to just 72 minutes from access to exfiltration — a 4x speed-up year on year — with 87% of attacks spanning two or more attack surfaces.
+  - The perimeter has decisively shifted to identity and the browser: identity weaknesses featured in 89% of Unit 42 investigations, 65% of initial access was identity-driven, 48% of attacks involved the browser, and SaaS supply-chain attacks abusing OAuth tokens and API keys have surged 3.8x since 2022.
+  - Zero Trust and SASE are now mainstream architecture rather than aspiration: AlgoSec's 2025 State of Network Security report found 56% of organisations fully or partially implementing zero trust, with Zscaler leading SASE at ~35%, and NIST NCCoE published SP 1800-35 ("Implementing a Zero Trust Architecture") with 24 vendors.
+  - The threat landscape is increasingly AI-augmented and ransomware-centric: ENISA's Threat Landscape 2025 (1 October 2025, 4,875 incidents) reported phishing driving ~60% of intrusions, infostealers dominant, and threat groups using jailbroken LLMs such as WormGPT, EscapeGPT and FraudGPT to automate social engineering.
+  - Open frontier as of 2026: securing "agentic" AI identities and runtime AI firewalls (Palo Alto Networks' 2026 predictions warn of compromised agents as an "autonomous insider"), closing east-west inspection and visibility gaps (71% of teams cite visibility struggles), and completing PQC migration across TLS, SSH and IPsec before the 2030 deadline while maintaining crypto-agility as algorithms evolve (e.g. the HAWK signature candidate was withdrawn in July 2026 after an AI-discovered flaw).
+
+- ### References
+  - 1. Cloudflare (2026). Cloudflare One is the first SASE offering modern post-quantum encryption. https://blog.cloudflare.com/post-quantum-sase/
+  - 2. Palo Alto Networks Unit 42 (2026). Unit 42 Report: AI and Attack Surface Complexity Fuel Majority of Breaches (2026 Global Incident Response Report). https://www.paloaltonetworks.com/company/press/2026/unit-42-report--ai-and-attack-surface-complexity-fuel-majority-of-breaches
+  - 3. NIST (2025-2026). Post-Quantum Cryptography — standards, HQC selection and migration timeline. https://csrc.nist.gov/Projects/post-quantum-cryptography/news
+  - 4. ENISA (2025). ENISA Threat Landscape 2025. https://www.enisa.europa.eu/publications/enisa-threat-landscape-2025
+  - 5. AlgoSec (2025). The State of Network Security Report 2025. https://www.algosec.com/press-release/algosec-2025-state-of-network-security-report
+
 - ### Provenance
   - sources:: NIST SP 800-series; ISO/IEC 27001:2022; RFC 8446; NIST PQC Final Standards 2024; IETF working group publications; established cybersecurity literature
   - updated:: 2026-06-13

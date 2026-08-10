@@ -355,6 +355,23 @@ public:: true
   - **OpenTelemetry** — emerging standard for instrumenting database query tracing and latency metrics across [[Microservices]] deployments.
   - Key organisations: ISO/IEC JTC 1/SC 32 (Data Management), ACM SIGMOD, VLDB Endowment, Apache Software Foundation (Cassandra, Hive, HBase, Flink).
 
+- ### Current Landscape (2026)
+  - PostgreSQL cemented its dominance, shipping v18 in September 2025 with an asynchronous I/O subsystem (io_uring on Linux, up to ~3x faster scan-heavy queries), native UUIDv7, skip scans, virtual generated columns and OAuth 2.0; v19 is on track for September 2026 with a planner-advisor framework and rumoured 64-bit transaction IDs. It topped Stack Overflow's 2025 survey as most-used database (~55.6%).
+  - Vectors shifted from a database category to a data type: pgvector 0.8 added iterative HNSW index scans, and Timescale's pgvectorscale (StreamingDiskANN) benchmarked ~471 QPS at 99% recall on 50M 1536-dim vectors versus ~41 QPS for Qdrant, with roughly 28x lower p95 latency than Pinecone's storage-optimised index.
+  - Enterprise incumbents folded vector search into their engines for free: Oracle rebranded to AI Database 26ai (AI Vector Search at no extra charge, RAFT-based global replication, quantum-resistant encryption, Iceberg lakehouse), and Microsoft SQL Server 2025 reached GA with a native vector data type, DiskANN indexes and in-SQL REST calls to Azure AI/OpenAI/Ollama.
+  - The Postgres-first consolidation wave saw Databricks acquire Neon for ~$1B (May 2025), Snowflake acquire Crunchy Data for ~$250M (June 2025), Microsoft launch its HorizonDB DBaaS, and Supabase raise large rounds at a multi-billion valuation, pressuring standalone vector vendors (PostgresML, Hydra and Voltron Data struggled or shut down).
+  - Anthropic's Model Context Protocol became the year's interoperability standard: after OpenAI's March 2025 adoption, essentially every DBMS vendor shipped MCP servers across OLAP (ClickHouse, Snowflake), SQL (Oracle, YugabyteDB, PlanetScale) and NoSQL (MongoDB, Neo4j, Redis) categories.
+  - Apache Iceberg won the open table-format war, with native read/write across Snowflake, Databricks, Microsoft Fabric and Oracle 26ai; DuckDB shipped its first LTS (1.4.0 "Andium", September 2025) with AES-256-GCM encryption and full Iceberg write support, alongside the new DuckLake format.
+  - Standalone vector databases fragmented rather than vanished: Qdrant raised a $50M Series B and shipped v1.17 (March 2026), while the market is projected to grow from roughly $3.73B in 2026 to over $10B by 2032 (~23-24% CAGR); billion-scale, filter-heavy and edge workloads remain the frontier where dedicated engines (Milvus, Pinecone, Weaviate, LanceDB, Turbopuffer) still win.
+  - Security and operational maturity stayed front-of-mind: PGDG issued critical fixes for CVE-2025-8714/8715 (pg_dump arbitrary code execution, CVSS 8.8), and features such as row-level TTL (CockroachDB 25.2), in-database SQL firewalls and database branching (Neon) reflect a shift toward compliance and CI/CD-native workflows.
+
+- ### References
+  - 1. Andy Pavlo, Carnegie Mellon University (2026). Databases in 2025: A Year in Review. https://www.cs.cmu.edu/~pavlo/blog/2026/01/2025-databases-retrospective.html
+  - 2. The Dev Newsletter (2026). State of Databases 2026. https://devnewsletter.com/p/state-of-databases-2026/
+  - 3. Actian Corporation (2026). State of Vector Databases Q2 2026. https://www.actian.com/blog/developer/state-of-vector-databases-q2-2026/
+  - 4. PostgreSQLHTX (2026). PostgreSQL and AI in 2026 and Beyond: What's Coming Next. https://postgresqlhtx.com/postgresql-and-ai-in-2026-and-beyond-whats-coming-next/
+  - 5. The Stack Stories (2026). Vector Database Consolidation: Who Is Left in 2026, and What Won. https://www.thestackstories.com/blog/vector-db-consolidation-2026
+
 - ### Provenance
   - sources:: [[https://en.wikipedia.org/wiki/Database]], [[https://www.postgresql.org/docs/]]
   - updated:: 2026-06-13

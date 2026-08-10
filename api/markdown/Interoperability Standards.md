@@ -340,6 +340,24 @@ public:: true
   - **Profile proliferation**: Too many domain profiles of a base standard can recreate the fragmentation the standard was meant to solve.
   - **Security standardisation lag**: New attack surfaces (e.g. quantum computing threats to TLS) require coordinated migration, which depends on all implementers updating — a classic [[Distributed Systems]] coordination problem.
 
+- ### Current Landscape (2026)
+  - The EU turned interoperability into hard law: the European Health Data Space Regulation (EU) 2025/327 was published on 5 March 2025 and entered into force on 26 March 2025, mandating a FHIR-based European Electronic Health Record Exchange Format (EEHRxF), with the defining implementing acts due by 26 March 2027 and first priority-category exchange (patient summaries, ePrescriptions) from March 2029.
+  - HL7 Europe published three new FHIR Implementation Guides in November 2025 (Base and Core for R4 and R5, plus an Extensions package), balloted across all 22 European affiliates, giving member states a harmonised EHDS baseline; in March 2026 the HL7 Europe/IHE-Europe EURIDICE collaboration extended this into imaging and a secondary-use EU Health Data API.
+  - FHIR is consolidating as the global default: roughly 80% of countries with health-data regulation now mandate or advise it (up from 56% in 2023), and FHIR R6 entered its first normative ANSI ballot in January 2026 (second ballot July 2026), moving most clinical resources to normative status and splitting immature resources into incubator IGs.
+  - In the US, the CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F) began operational provisions on 1 January 2026 with FHIR API mandates phasing in, while TEFCA advanced toward Stage 3 FHIR-to-FHIR ("Facilitated FHIR") exchange across Qualified Health Information Networks in 2026.
+  - The EU Data Act's Article 33 essential requirements for data-space interoperability drove new horizontal standardisation: CEN/CENELEC JTC 25 ("Data management, Dataspaces, Cloud and Edge") was established in September 2024 to deliver harmonised standards for a European Trusted Data Framework, covering trusted data transactions, catalogue metadata (DCAT-AP/HealthDCAT-AP) and semantic assets.
+  - In the smart-home and IoT space, the Connectivity Standards Alliance shipped Matter 1.4 (November 2024, energy/solar/heat pumps) through Matter 1.5 (November 2025, cameras via WebRTC, closures, energy tariffs) and the 1.5.1 maintenance release (March 2026), while Thread 1.4 (September 2024) fixed cross-vendor border-router fragmentation by unifying credential sharing into a single mesh.
+  - A new interoperability frontier opened around AI agents: Anthropic's Model Context Protocol (MCP, open-sourced 2024) and Google's Agent2Agent protocol (A2A, launched April 2025 with 50+ partners) became complementary de facto standards, with AWS, OpenAI and Microsoft joining or backing MCP and A2A steering/support through 2025.
+  - Open challenges as of 2026 include the gap between legal mandates and finalised technical specifications (EHDS implementing acts still pending until 2027), vendor certification and semantic-alignment burdens (SNOMED CT, LOINC, OMOP), and the immaturity, security and governance of the agent-protocol stack (MCP/A2A/ACP/ANP) which lacks a single standards body.
+
+- ### References
+  - 1. European Commission, DG Health (2026). European Health Data Space Regulation (EHDS). https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds_en
+  - 2. European Union (2025). Regulation (EU) 2025/327 on the European Health Data Space. EUR-Lex. https://eur-lex.europa.eu/eli/reg/2025/327/oj/eng
+  - 3. HL7 Europe (2025). New HL7 Europe FHIR Implementation Guides to support the European Health Data Space. https://hl7europe.eu/new-hl7-europe-fhir-implementation-guides-to-support-the-european-health-data-space/
+  - 4. European Commission (2026). Data interoperability (Rolling Plan for ICT Standardisation 2026) — EU Data Act Article 33 and CEN/CLC JTC 25. https://interoperable-europe.ec.europa.eu/collection/rolling-plan-ict-standardisation/data-interoperability-rp-2026
+  - 5. Chatforest (2026). Matter Meets MCP: How the Smart Home's Universal Protocol Is Evolving (Matter 1.4/1.5/1.5.1, Thread 1.4). https://chatforest.com/guides/mcp-matter-smart-home-protocol/
+  - 6. Google Developers (2025). Announcing the Agent2Agent Protocol (A2A). https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/
+
 - ### Provenance
   - sources:: W3C Technical Reports (w3.org/TR), IETF RFC Index (rfc-editor.org), ISO Standards Catalogue, IEEE Xplore, NIST CSRC, HL7 International, GS1 Standards
   - updated:: 2026-06-13

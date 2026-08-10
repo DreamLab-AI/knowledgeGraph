@@ -318,6 +318,23 @@ alias:: MiddlewareLayer
   - **Boundary with [[Protocol Layer]]** — the Protocol Layer implements the rules of communication (block structure, consensus algorithm, wire encoding); the Middleware Layer exposes those rules through higher-level interfaces (JSON-RPC, SDKs, event subscriptions) that insulate application developers from protocol churn.
   - **Boundary with [[Application Layer]]** — the Application Layer delivers end-user value (wallet UX, DEX trading interface, enterprise dashboard); the Middleware Layer delivers developer-facing infrastructure (APIs, brokers, bridges) that the Application Layer consumes.
 
+- ### Current Landscape (2026)
+  - The service-mesh middleware layer has moved decisively away from per-pod sidecars: Istio's ambient mode reached General Availability in v1.24 (November 2024), and by 2026 it is the recommended deployment model, decoupling L4 identity/mTLS (the per-node ztunnel) from optional per-namespace L7 waypoint proxies.
+  - eBPF kernel-native data planes have matured as the sidecarless alternative, with Cilium Service Mesh (CNCF-graduated October 2023) running mesh logic directly in the kernel networking path and replacing kube-proxy; industry write-ups in 2026 report roughly 60% of cloud-native organisations running a mesh in production.
+  - Istio 1.29 (February 2026) shipped ambient multi-network multicluster in Beta, and at KubeCon + CloudNativeCon Europe 2026 (Amsterdam, March 2026) the project announced the Gateway API Inference Extension (beta) plus experimental agentgateway support, signalling a pivot of the middleware layer towards AI-inference-aware traffic routing.
+  - The Kubernetes Gateway API, together with the GAMMA initiative, has become the vendor-neutral standard for both north-south and east-west traffic, with conformant mesh implementations (Istio, Linkerd, Kuma) converging on it to reduce CRD sprawl and lock-in.
+  - A new "AI middleware" tier has emerged: LLM gateways (Bifrost, LiteLLM, Portkey, Kong AI Gateway, Cloudflare AI Gateway, OpenRouter) provide a unified multi-provider API with routing, failover, token-based rate limiting and cost governance, distinct from but complementary to MCP gateways.
+  - Anthropic's Model Context Protocol (introduced November 2024, spec revision 2025-06-18) has spawned a dedicated MCP-gateway middleware layer, with implementations such as IBM ContextForge, Docker MCP Gateway, Lasso, Obot and the Bloomberg/Tetrate-built Envoy AI Gateway federating many MCP servers behind one governed endpoint; Gartner's 2025 framing calls this the "missing enterprise layer" for registration, discovery, authorisation and observability.
+  - Consolidation is visible at the low end: Microsoft's Open Service Mesh was archived in 2024 and AWS App Mesh reaches end-of-life on 30 September 2026, pushing users towards CNCF-graduated meshes or newer sidecarless/eBPF options.
+  - Open challenges as of 2026 include achieving feature parity and safe migration between sidecar and ambient modes, standardising security for namespace-based multi-tenancy, and governing the fast-proliferating AI/MCP middleware surface for prompt-injection, token spend and cross-cloud policy enforcement.
+
+- ### References
+  - 1. Istio / CNCF (2026). Istio Brings Future-Ready Service Mesh to the AI Era with Ambient Multicluster, Gateway API Inference Extension and More. https://www.cncf.io/announcements/2026/03/25/istio-brings-future-ready-service-mesh-to-the-ai-era-with-new-ambient-multicluster-gateway-api-inference-extension-and-more/
+  - 2. Istio Steering Committee (2025). Istio Roadmap for 2025-2026. https://istio.io/latest/blog/2025/roadmap/
+  - 3. CSOH (2026). Service Mesh Security - East-West Traffic in K8s (ambient/sidecarless shift; OSM archived, AWS App Mesh EOL). https://csoh.org/service-mesh-security.html
+  - 4. TrueFoundry (2026). TrueFoundry and the Rise of MCP Gateways in Enterprise AI (Gartner 2025 report). https://www.truefoundry.com/blog/truefoundry-and-the-mcp-gateway-revolution-insights-from-gartners-2025-report
+  - 5. OpenRouter (2026). LLM Gateway: What It Is and How to Choose One. https://openrouter.ai/blog/insights/llm-gateway/
+
 - ### Provenance
   - sources:: OASIS AMQP specification; Ethereum JSON-RPC documentation; CNCF service mesh landscape; Chainlink whitepaper; The Graph Protocol documentation; OpenAPI Initiative
   - updated:: 2026-06-13

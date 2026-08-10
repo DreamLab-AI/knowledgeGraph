@@ -325,6 +325,23 @@ public:: true
   - owl-class:: spatial-computing:PhotorealisticRendering
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - 3D Gaussian Splatting (3DGS), introduced by Inria at SIGGRAPH 2023, has become the dominant real-time radiance-field representation for photorealistic novel-view synthesis, rendering 60-200 FPS at 1080p-4K from a few hundred phone photos and training in 10-30 minutes on a single RTX 5080.
+  - Engine adoption reached production maturity in Q1 2026, with Unreal Engine 5.6 and Unity 6.2 both shipping native Gaussian-splatting renderers, and OTOY releasing OctaneRender 2026 with fully path-traced Gaussian splats.
+  - NVIDIA DLSS 4 launched at CES (January 2025) alongside the RTX 50 Series, replacing convolutional models with a transformer-based architecture for Super Resolution and Ray Reconstruction and adding Multi Frame Generation; it surpassed 175 supported titles by Gamescom (August 2025), making it NVIDIA's fastest-adopted game technology.
+  - NVIDIA's RTX Kit pushed neural rendering into the shader itself via RTX Neural Shaders and the RTX Neural Radiance Cache (learning multi-bounce indirect lighting), together with ReSTIR Path Tracing and RTX Mega Geometry for ray-tracing full-quality Nanite geometry.
+  - On standards, the Academy Software Foundation released OpenPBR 1.0 in June 2024 (spec now v1.1.1, dated 2026-04-17) as the MaterialX-based successor to Autodesk Standard Surface and Adobe Standard Material; it is now the default material in Maya, 3ds Max, Arnold, Blender 4.5, Redshift and V-Ray, with MaterialX 1.39.3 the default in OpenUSD 25.05.
+  - The AOUSD Materials Working Group (NVIDIA-led) is standardising MaterialX shader graphs within OpenUSD's UsdShade, targeting renderer-agnostic material interchange and future neural-material descriptions.
+  - A 2025-2026 research wave largely closed the relighting gap: methods such as GS-IR and Relightable 3DGS decompose captured splats into material and lighting for HDRI relighting and dynamic shadows, while temporal 4D Gaussians capture motion as walkable volumetric video.
+  - Open challenges as of 2026 include the large storage and streaming footprint of high-quality splats (200 MB-2 GB per scene, driving cloud splat-streaming from Luma, Niantic and AWS), robust physically based relighting of real-world captures, and the frame-rate cost of transformer denoisers on older RTX hardware.
+
+- ### References
+  - 1. NVIDIA Developer (2025). NVIDIA RTX Neural Rendering Introduces Next Era of AI-Powered Graphics Innovation. https://developer.nvidia.com/blog/nvidia-rtx-neural-rendering-introduces-next-era-of-ai-powered-graphics-innovation/
+  - 2. NVIDIA (2025). NVIDIA DLSS 4 Introduces Multi Frame Generation and AI Innovations. https://www.nvidia.com/en-us/geforce/news/dlss4-multi-frame-generation-ai-innovations/
+  - 3. Academy Software Foundation (2024). Academy Software Foundation Releases OpenPBR 1.0. https://www.aswf.io/blog/academy-software-foundation-releases-openpbr-1-0/
+  - 4. NVIDIA Developer (2024). Unlock Seamless Material Interchange for Virtual Worlds with OpenUSD, MaterialX, and OpenPBR. https://developer.nvidia.com/blog/unlock-seamless-material-interchange-for-virtual-worlds-with-openusd-materialx-and-openpbr/
+  - 5. Internet Pros (2026). 3D Gaussian Splatting 2026 — Neural Rendering Revolution. https://internet-pros.com/blog/gaussian-splatting-neural-rendering-2026/
+
 - ### Provenance
   - sources:: Kajiya (1986) "The rendering equation"; Pharr, Jakob & Humphreys "Physically Based Rendering" (PBRT); Akenine-Möller et al. "Real-Time Rendering"; Khronos glTF 2.0 specification; NVIDIA OptiX SDK documentation; Pixar USD documentation
   - updated:: 2026-06-13

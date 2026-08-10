@@ -275,6 +275,22 @@ public:: true
   - **Session Management** — single sign-on implies single sign-out must also be federated; SAML defines SLO (Single Logout) bindings; OIDC Back-Channel Logout (RFC 9672) propagates logout events to all registered relying parties.
   - **Phishing-Resistant MFA** — coupling federation with passkeys or FIDO2 hardware tokens at the IdP layer removes the password from the attack surface entirely, raising the federation's assurance level to AAL3 (NIST 800-63B).
 
+- ### Current Landscape (2026)
+  - The OpenID Foundation moved OpenID Federation to Final in February 2026 (v1.0 Final, plus backward-compatible v1.1 that splits out the OpenID Connect binding), positioning multilateral federation metadata as the "next generation of X.509" trust anchoring for large ecosystems.
+  - Federation is shifting from bilateral SAML/OIDC single sign-on towards wallet-based, credential-centric models: OpenID for Verifiable Presentations (OpenID4VP) 1.0, OpenID for Verifiable Credential Issuance (OpenID4VCI) 1.0 and the High Assurance Interoperability Profile (HAIP) 1.0 reached the stage where the OIDF opened self-certification (from 26 February 2026, with HAIP conformance suites completed and open on 7 August 2026).
+  - eIDAS 2.0 (Regulation (EU) 2024/1183, in force 20 May 2024) obliges every EU Member State to offer at least one European Digital Identity (EUDI) Wallet by the end of 2026, with relying-party acceptance including banks under Strong Customer Authentication mandated by December 2027; the Architecture and Reference Framework (ARF) v1.4 fixes ISO/IEC 18013-5 mdoc and SD-JWT VC formats over OpenID4VP/OpenID4VCI.
+  - FAPI 2.0 reached Final (February 2025) and secured an ITU determination (June 2026), hardening federated authorisation for financial-grade and open-banking deployments; PAR, JAR and DPoP are increasingly expected for high-value transactions.
+  - Passkeys (FIDO2/WebAuthn) are now routinely paired with OIDC so that phishing-resistant authentication sits behind the standard federated token flow; an emerging pattern uses a government-issued verifiable credential as the identity anchor to enrol and recover passkeys, reserving credential presentation for high-assurance events.
+  - The FIDO Alliance launched a Digital Credentials Working Group (4 December 2025) to add wallet certification, cross-device credential presentation and relying-party enablement, working alongside the OpenID Foundation, ISO, W3C and EMVCo; a new OIDF ecosystem accreditation programme signed initial MOUs with FIDO, Kantara, FIME and others.
+  - A key open challenge is protocol convergence: an ISO/OIDF joint working group (running since December 2025) is doing due diligence on unifying ISO/IEC 18013-5 and OpenID4VP into a single presentation protocol, while privacy regulators (EDPS TechDispatch 3/2025) flag unlinkability, over-identification and relying-party over-collection as unresolved risks in cross-border federated wallets.
+
+- ### References
+  - 1. OpenID Foundation (2026). OpenID launches conformance tests for widely adopted digital identity standards. https://openid.net/oidf-completes-conformance-programme-for-widely-adopted-digital-identity-standards/
+  - 2. OpenID Foundation (2026). OpenID Federation 1.0 (Final). https://openid.net/specs/openid-federation-1_0.html
+  - 3. FIDO Alliance (2025). FIDO Alliance Launches New Digital Credentials Initiative to Accelerate and Secure an Interoperable Digital Identity Ecosystem. https://fidoalliance.org/fido-alliance-launches-new-digital-credentials-initiative-to-accelerate-and-secure-an-interoperable-digital-identity-ecosystem/
+  - 4. European Data Protection Supervisor (2025). TechDispatch #3/2025 - Digital Identity Wallets. https://www.edps.europa.eu/data-protection/our-work/publications/techdispatch/2025-12-15-techdispatch-32025-digital-identity-wallets_en
+  - 5. Evertrust (2026). EUDI Wallet 2026: Five Things Private PKI Teams Should Know (eIDAS 2.0, ARF 1.4). https://evertrust.io/blog/eudi-wallet-private-pki/
+
 - ### Provenance
   - sources:: OASIS SAML 2.0 Specification (2005); IETF RFC 6749/6750 (OAuth 2.0); OpenID Connect Core 1.0 Specification; NIST SP 800-63-3; W3C DID Core Recommendation; InCommon Federation Documentation; eduGAIN Technical Architecture; eIDAS 2.0 Regulation (EU) 2024/1183
   - updated:: 2026-06-13

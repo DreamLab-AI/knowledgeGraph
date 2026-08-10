@@ -464,6 +464,24 @@ elevatedFrom:: [[Politics, Law, Privacy]]
   - #### 4.12.18 A New Social Contract for AI
   - #### 4.12.19 Conclusion
 
+- ### Current Landscape (2026)
+  - The EU AI Act became broadly applicable on 2 August 2026, and from that date the European Commission's AI Office and national competent authorities began exercising enforcement powers; the general-purpose AI (GPAI) governance obligations and penalty provisions had already applied since 2 August 2025, with legacy pre-August-2025 models required to comply by 2 August 2027.
+  - Article 50 transparency rules took effect on 2 August 2026, mandating that chatbots disclose they are AI, that deepfakes be labelled, and that AI-generated content carry machine-readable marks (e.g. watermarking); the Commission published a first list of over 180 organisations that signed the accompanying Code of Practice on transparency of AI-generated content, with a first-draft marking-and-labelling code released on 5 March 2026.
+  - The voluntary GPAI Code of Practice (published 10 July 2025, with Transparency, Copyright, and Safety and Security chapters) was endorsed by the Commission and AI Board as an adequate compliance tool; enforcement carries fines up to EUR 35M or 7% of global turnover for prohibited practices and up to EUR 15M or 3% for GPAI breaches, with the "AI Omnibus" simplification package pushing several high-risk Annex III obligations back to 2 December 2027.
+  - US state law fragmented sharply in 2025-2026: Texas's TRAIGA (HB 149, signed 22 June 2025) took effect 1 January 2026 as an intent-based, prohibition-focused statute enforced solely by the state Attorney General, with civil penalties up to $200,000 per uncurable violation and a 60-day cure period; as of May 2026 no public TRAIGA enforcement actions had been reported.
+  - Colorado reversed course: on 14 May 2026 Governor Polis signed SB 26-189, repealing the original Colorado AI Act (SB 24-205) and replacing its risk assessments and duty of care with a narrower automated-decision-making-technology (ADMT) framework built on pre-use consumer notices, 30-day adverse-outcome explanations, and human-review rights, effective 1 January 2027.
+  - California advanced a distinct stack effective 1 January 2026, including the Frontier AI Act (SB 53) on frontier-model safety, AB 2013 on training-data transparency, and the SB 942 AI Transparency Act, while CCPA cyber, risk, and ADMT regulations also began phasing in from January 2026.
+  - Biometric and data-privacy law tightened alongside AI rules: TRAIGA amended Texas's biometric-identifier statute (CUBI) to clarify that publicly available online images do not constitute consent to biometric capture, and multiple new state privacy regimes plus international measures (Vietnam's first national data protection law, UK digital verification services, Australian automated-decision transparency) entered force in 2026.
+  - Key open challenges as of 2026 include overlapping jurisdiction between the EU AI Office, the EDPS, national data protection authorities and market surveillance bodies; a patchwork of divergent US state approaches (intent-based Texas vs disclosure-based Colorado vs risk-tiered EU) creating cross-border compliance friction; and unresolved tension between AI training-data practices and GDPR/state privacy obligations.
+
+- ### References
+  - 1. European Commission — Shaping Europe's Digital Future (2026). AI Act regulatory framework and application timeline. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 2. European Commission (2026). Commission starts enforcing AI Act rules and new transparency requirements from 2 August. https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august
+  - 3. European Commission (2025). The General-Purpose AI Code of Practice. https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+  - 4. Mayer Brown (2026). Global Privacy Watchlist. https://www.mayerbrown.com/en/insights/publications/2026/01/global-privacy-watchlist
+  - 5. Texas AI Report (2026). Texas, Colorado, and the EU Just Diverged on AI Law. https://texasaireport.com/news/texas-colorado-eu-ai-law-compared/
+  - 6. VerifyWise (2026). US AI regulations 2026: the state laws you must comply with. https://verifywise.ai/blog/state-of-ai-governance-regulations-united-states-2026
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

@@ -342,6 +342,24 @@ public:: true
   - **Common implementations** — PostgreSQL, MySQL, Oracle Database, Microsoft SQL Server, IBM Db2, SQLite; these are the dominant centralised RDBMS products in use worldwide.
   - **[[NoSQL Database]] variants** — MongoDB, Redis, Cassandra can also operate in a centralised single-primary mode, extending the centralised model beyond relational schemas.
 
+- ### Current Landscape (2026)
+  - The classic single-node centralised store is being pushed toward "regionless" and geo-fenced designs: Gartner estimates that by 2025 around 75% of enterprise-generated data is created and processed outside traditional centralised data centres, and Mordor Intelligence attributes roughly +1.7% of forecast CAGR to regionless architectures answering sovereignty laws.
+  - Data-sovereignty regulation is the dominant 2025–2026 force reshaping where centralised data may sit: the EU Data Act became fully applicable on 12 September 2025 (mandating portability and banning lock-in), the EU published its Cloud Sovereignty Framework in October 2025 with an eight-requirement sovereignty score, and the EU AI Act reaches full enforcement in August 2026.
+  - PostgreSQL has consolidated as the default relational engine underpinning modern centralised and DBaaS deployments, hitting ~55.6% adoption in the 2025 Stack Overflow survey; PostgreSQL 18 shipped in late 2025 with a new asynchronous I/O subsystem, skip scans and UUIDv7.
+  - A $1.25bn acquisition wave concentrated Postgres DBaaS into hyperscalers: Databricks bought Neon for ~$1bn (rebranded Lakebase), Snowflake bought Crunchy Data for ~$250m (Snowflake Postgres, public preview December 2025), and Microsoft launched HorizonDB (previewed at Ignite, November 2025).
+  - Horizontal scale-out to escape single-node limits intensified in 2025 with three competing distributed-Postgres sharding projects — Supabase's Multigres, PlanetScale's Neki and the PgDog pooler — alongside AWS Aurora DSQL and Google AlloyDB.
+  - AI-native integration became baseline: vector search is now standard in mainstream databases, and 2025 saw near-universal adoption of Anthropic's Model Context Protocol (MCP) for agent access, with over 13,000 MCP servers launched on GitHub.
+  - Market sizing shows continued strong growth despite the decentralisation pressure — analysts placed the cloud database / DBaaS market at roughly $22–28bn in 2025–2026 (Mordor: $28.51bn in 2026) with forecast CAGRs of ~15–20% to the early 2030s.
+  - Open challenges as of 2026 centre on the residency-versus-sovereignty gap: storing data in an EU region owned by a US provider does not escape the US CLOUD Act, driving customer-managed encryption keys, EU-native open-source stacks (Trino, Iceberg, DuckDB) and a measurable move from SaaS back to self-hosted, jurisdiction-bound deployments.
+
+- ### References
+  - 1. Andy Pavlo, CMU (2026). Databases in 2025: A Year in Review. https://www.cs.cmu.edu/~pavlo/blog/2026/01/2025-databases-retrospective.html
+  - 2. Cloud Data Insights (2025). 2025 Cloud Database Market: The Year in Review. https://www.clouddatainsights.com/2025-cloud-database-market-the-year-in-review/
+  - 3. Mordor Intelligence (2026). Cloud Database And DBaaS Market Size & Share Analysis. https://www.mordorintelligence.com/industry-reports/cloud-database-and-dbaas-market
+  - 4. Coderio (2026). Data Sovereignty in 2026: Breaking Cloud Vendor Lock-In. https://www.coderio.com/blog/software-development/data-sovereignty-and-regional-clouds-strategy-2026/
+  - 5. The Dev Newsletter (2026). State of Databases 2026. https://devnewsletter.com/p/state-of-databases-2026/
+  - 6. IOMETE (2026). Why 2026 Is the Year Enterprises Move From SaaS to Self-Hosted Lakehouses. https://iomete.com/resources/blog/why-2026-enterprises-move-saas-to-selfhosted-lakehouses
+
 - ### Provenance
   - sources:: ISO/IEC 9075 SQL Standard; Date, C.J. (2003) _An Introduction to Database Systems_; Codd, E.F. (1970) foundational relational model paper; PostgreSQL and MySQL documentation
   - updated:: 2026-06-13

@@ -333,6 +333,24 @@ public:: true
   - owl-class:: data-persistence:Data Persistence
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - The Intel Optane / 3D XPoint era of byte-addressable persistent memory has fully ended: Intel took final 200-series DIMM orders by December 2024 and wound down shipments through late 2025, closing the most mature storage-class-memory line and forcing a post-Optane rethink of durable memory.
+  - Compute Express Link (CXL) has become the mainstream successor for fabric-attached persistence, carrying a first-class Global Persistent Flush (GPF) mechanism that guarantees in-flight data is written back to media on power loss; CXL 3.2 shipped in November 2025 and CXL 4.0 was announced on 4 December 2025.
+  - CXL Type-3 devices reintroduce the proven NVDIMM-N pattern (fast volatile media plus non-volatile backup and hold-up energy) onto a cache-coherent PCIe fabric, enabling composable memory pooling; Netlist demonstrated its NVault CXL persistent-memory solution preserving and restoring memory state across a power event.
+  - Socket-local persistence has not disappeared: NVDIMM-P on the DDR5 bus (Micron/Samsung prototypes sampling in 2025, roughly 120-150 ns latency) remains the low-latency option, while CXL Type-3 modules (roughly 350-500 ns) trade latency for capacity and pooling.
+  - In cloud databases, durability has decisively shifted to disaggregated storage-compute architectures: Neon's serverless Postgres streams the write-ahead log to Paxos-quorum Safekeepers and materialises pages on Pageservers, with object storage (S3, ~11 nines durability) as the source of truth off the hot path.
+  - This pattern reached the enterprise mainstream when Databricks announced general availability of Lakebase on AWS (built on Neon's architecture) on 3 February 2026, integrating serverless Postgres with Unity Catalog governance.
+  - Active research frontiers as of 2026 include pushing persistence into the network layer: persistent CXL switches and the Distributed Persistence Domain abstraction report 12-36% speedups by persisting updates as they reach the switch, and CXL-SSD prototypes turn block PCIe SSDs into byte-addressable, cacheable working memory.
+  - Open challenges remain around persist ordering and flush semantics (deterministic behaviour on surprise power loss), the latency penalty of fabric-attached persistence versus DRAM, and the absence of a like-for-like Optane replacement that unifies memory and storage tiers at comparable endurance and cost.
+
+- ### References
+  - 1. Compute Express Link Consortium (2026). From NVDIMM-N to CXL Persistent Memory: Bringing Persistence to the Memory Fabric. https://computeexpresslink.org/blog/from-nvdimm-n-to-cxl-persistent-memory-bringing-persistence-to-the-memory-fabric-4635/
+  - 2. Compute Express Link Consortium (2025). Introducing the CXL 4.0 Specification (webinar, December 2025). https://computeexpresslink.org/wp-content/uploads/2025/12/CXL_4.0-Webinar_December-2025_FINAL.pdf
+  - 3. Corewave Labs (2025). Persistent Memory vs RAM (2025) – CXL & Post-Optane Guide. https://corewavelabs.com/persistent-memory-vs-ram-cxl/
+  - 4. Tom's Hardware / Anton Shilov (2024). Intel schedules the end of its 200-series Optane memory DIMMs. https://www.tomshardware.com/pc-components/ssds/intel-schedules-the-end-of-its-200-series-optane-memory-dimms-shipments-to-draw-to-an-end-in-late-2025
+  - 5. Neon (2025). Database storage: Bottomless, Branchable. https://neon.com/storage
+  - 6. Evlampiev, A. (2026). The Architectural Implications of Databricks Lakebase. https://alexeyevlampiev.github.io/posts/decoupling-compute-storage-postgres-lakebase/
+
 - ### Provenance
   - sources:: PostgreSQL documentation, Apache Kafka documentation, Brewer CAP conjecture (2000), Gilbert & Lynch formal proof (2002), Abadi PACELC model (2012), Martin Kleppmann "Designing Data-Intensive Applications" (O'Reilly, 2017)
   - updated:: 2026-06-13

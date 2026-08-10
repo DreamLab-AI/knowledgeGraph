@@ -297,6 +297,23 @@ public:: true
     - OpenID Foundation (OIDF) — OID4VC suite for VC-over-OIDC deployment.
     - IMS Global / 1EdTech — Open Badges 3.0 adoption of VC format for education.
 
+- ### Current Landscape (2026)
+  - On 15 May 2025 the W3C Verifiable Credentials Working Group published the Verifiable Credentials 2.0 family as seven W3C Recommendations, including the Verifiable Credentials Data Model v2.0, Verifiable Credential Data Integrity 1.0, Bitstring Status List v1.0, Securing Verifiable Credentials using JOSE and COSE, and Controlled Identifiers v1.0 (editors Ivan Herman, Michael Jones, Manu Sporny, Ted Thibodeau Jr and Gabe Cohen).
+  - The headline architectural shift in 2.0 is that it decouples the data model from the securing mechanism, admitting Data Integrity (JSON-LD) proofs, JOSE/COSE (JWT/CWT), BBS selective-disclosure signatures and SD-JWT rather than mandating one, which formally ended years of incompatible proof-format silos.
+  - Under the current charter (running to 11 October 2026) the Working Group has moved into maintenance mode handling errata only, with no further Recommendations planned, so 2.0 is effectively the stable baseline for deployment.
+  - The dominant real-world driver is the EU: eIDAS 2.0 (Regulation (EU) 2024/1183, in force 20 May 2024) obliges every Member State to offer a European Digital Identity Wallet (EUDI Wallet) by the end of 2026, with an Article 5b obligation forcing very large online platforms and regulated sectors to accept it.
+  - Notably, in the EUDI Architecture and Reference Framework (ARF v2.x) support for W3C VCDM 2.0 is only optional and limited to non-qualified attestations, while SD-JWT VC and ISO/IEC 18013-5 mdoc are the two mandatory PID formats, carried over OpenID4VCI (issuance) and OpenID4VP (presentation).
+  - SD-JWT was finalised as IETF RFC 9901 in 2025, with SD-JWT VC layering credential typing and status on top, sharpening the competitive tension between the W3C stack and the IETF/ISO stack now favoured by government wallets.
+  - Key open challenges as of 2026 are genuine interoperability (two conforming implementations can still fail to interoperate if one issues SD-JWT and the other expects Data Integrity proofs), unlinkability and privacy-preserving selective disclosure at scale (BBS), and the risk of W3C VC being sidelined in the largest deployment (450 million EU citizens) by SD-JWT VC and mdoc.
+
+- ### References
+  - 1. W3C Verifiable Credentials Working Group (2025). Verifiable Credentials Data Model v2.0 (W3C Recommendation, 15 May 2025). https://www.w3.org/TR/vc-data-model-2.0/
+  - 2. W3C (2025). The Verifiable Credentials 2.0 family of specifications is now a W3C Recommendation. https://www.w3.org/news/2025/the-verifiable-credentials-2-0-family-of-specifications-is-now-a-w3c-recommendation/
+  - 3. Michael Jones (2025). W3C Verifiable Credentials 2.0 Specifications are Now Standards. https://self-issued.info/?p=2694
+  - 4. European Commission / EUDI Wallet (2025). Architecture and Reference Framework. https://eudi.dev/2.2.0/architecture-and-reference-framework-main/
+  - 5. Shane De Coninck (2026). EUDI Credential Formats Crash Course: X.509, mDL, SD-JWT VC and W3C VC. https://shanedeconinck.be/posts/eudi-credential-formats-crash-course/
+  - 6. Evertrust (2026). EUDI Wallet 2026: Five Things Private PKI Teams Must Prepare (eIDAS 2.0, Regulation (EU) 2024/1183). https://evertrust.io/blog/eudi-wallet-private-pki/
+
 - ### Provenance
   - sources:: W3C VC Data Model 2.0 Recommendation; DIF Interoperability Working Group; eIDAS 2.0 Implementing Acts; IMS Global Open Badges 3.0; SMART Health Cards specification; OIDF OID4VC suite; W3C DID v1.0 Recommendation
   - updated:: 2026-06-13

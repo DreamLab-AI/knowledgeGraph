@@ -573,6 +573,23 @@ public:: true
 
   #blockchain #dapp #decentralized-application #web3
 
+- ### Current Landscape (2026)
+  - The dominant 2024-2026 shift is from pilots to production: institutional tokenisation and enterprise blockchain moved into live workflows, with RWA.xyz reporting tokenised real-world assets above 24 billion USD by February 2026 after 266% growth in 2025, and tokenised US Treasuries emerging as the largest RWA category (~9.6 billion USD).
+  - Stablecoins became de facto settlement infrastructure rather than trading pairs, reaching roughly 307-311 billion USD market capitalisation by end-2025 with annual on-chain transfer volume estimated near 33 trillion USD; Circle's leadership has projected regulated USD stablecoins could approach 1 trillion USD.
+  - The US enacted its first federal stablecoin law, the GENIUS Act, signed 18 July 2025 (House 308-122, Senate 68-30), mandating 100% liquid-asset reserve backing, monthly reserve disclosures, Bank Secrecy Act/AML obligations and priority of stablecoin holders in insolvency; it takes effect the earlier of 18 months after enactment or 120 days after final regulations.
+  - Regulatory architecture consolidated across jurisdictions: the EU's MiCA reached full effect in early 2025 (regulating stablecoins as e-money or asset-referenced tokens), Hong Kong's Stablecoins Ordinance issuer-licensing regime began 1 August 2025, and the UAE, Singapore and others advanced comparable frameworks, while the US CLARITY Act on SEC/CFTC jurisdiction progressed through 2026.
+  - Traditional finance moved from observing to acting: Franklin Templeton, JPMorgan, BlackRock (BUIDL fund), Fidelity and Apollo launched or expanded tokenised products, JPMorgan tokenised a private equity fund, Siemens issued a 300 million EUR on-chain bond, Nasdaq filed to list tokenised equities and NYSE announced a 24/7 tokenised-securities venue.
+  - US bank-regulatory friction eased materially: the SEC rescinded SAB 121, the Fed and FDIC withdrew restrictive crypto guidance, the OCC clarified custody authority (Interpretive Letter 1184) and conditionally granted national trust bank charters to Circle, Paxos and others in December 2025, with the Fed weighing limited payment-rail access for chartered issuers.
+  - Open challenges as of 2026 centre on scaling tokenisation into durable secondary-market structure and liquidity, fragmented cross-jurisdiction stablecoin/tokenised-deposit rules, interoperability across chains, and banks defending funding via competing tokenised-deposit products.
+
+- ### References
+  - 1. World Economic Forum (2026). What to expect for digital assets in 2026. https://www.weforum.org/stories/financial-and-monetary-systems/digital-economy-inflection-point-what-to-expect-for-digital-assets-in-2026/
+  - 2. Blockchain Council (2026). Institutional Tokenized Asset Adoption Hits New Milestones in 2026. https://www.blockchain-council.org/news/institutional-tokenized-asset-adoption-2026-trends-challenges-opportunities/
+  - 3. State Street (2026). Digital asset regulation accelerates in 2026. https://www.statestreet.com/us/en/insights/digital-digest-march-2026-regulations
+  - 4. Paul Hastings (2025). The GENIUS Act: A Comprehensive Guide to US Stablecoin Regulation. https://www.paulhastings.com/insights/crypto-policy-tracker/the-genius-act-a-comprehensive-guide-to-us-stablecoin-regulation
+  - 5. Brookings Institution (2026). Next steps for GENIUS payment stablecoins. https://www.brookings.edu/articles/next-steps-for-genius-payment-stablecoins/
+  - 6. InvestaX (2026). Real World Asset Tokenization: Trends and Outlook for 2026. https://investax.io/blog/real-world-asset-tokenization-trends-and-outlook-for-2026
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

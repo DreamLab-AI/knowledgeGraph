@@ -299,6 +299,23 @@ alias:: VisualOdometry
   - **Computational cost**: real-time VO on embedded processors (ARM Cortex-A or RISC-V) with battery constraints requires careful algorithm selection and hardware-accelerated feature detection.
   - **Scale ambiguity** (monocular only): metric scale requires auxiliary sensors or learned depth priors.
 
+- ### Current Landscape (2026)
+  - Visual foundation models have moved into the VO front end: DINO-VO (arXiv 2507.13145, July 2025) builds sparse feature matching on DINOv2, cutting absolute trajectory error by roughly 70% versus TartanVO while running at 72 FPS in under 1GB of GPU memory, and generalising across TartanAir, KITTI and EuRoC.
+  - Zero-shot and calibration-free VO became a headline goal, with ZeroVO (CVPR 2025) using a transformer to estimate metric-scale motion without known camera intrinsics, reporting over 30% improvement on KITTI, nuScenes and Argoverse 2 under day, night and rain conditions.
+  - Learned patch-based systems such as Deep Patch Visual Odometry (DPVO) and DROID-SLAM remain the reference baselines, and 2025 work confirmed that the gains of deep V-SLAM stem chiefly from learned 2D data association and uncertainty rather than the recurrent architecture itself.
+  - Event-camera and inertial fusion advanced sharply: DEIO (ICCV 2025 workshop) was presented as the first deep learning-based event-inertial odometry, cutting pose-tracking error by up to 71% versus DEVO, while UZH's RAMP-VO fuses asynchronous events with images for 8x faster inference, and HDVIO2.0 (IEEE T-RO 2025) folds full 6-DoF vehicle dynamics into VIO for wind-disturbance estimation.
+  - Foundation-model thinking spread to the inertial channel with Tartan IMU (CVPR 2025), pre-trained on 100+ hours of multi-platform data, adapted via LoRA (1.1M trainable parameters) and updated by online test-time adaptation at 200 FPS.
+  - Benchmarking matured toward egocentric, city-scale evaluation: the LaMAria benchmark (ICCV 2025, ETH Zurich, using Meta Project Aria devices) provides centimetre-accurate surveyed ground truth over kilometres, exposing that even state-of-the-art systems such as stereo ORB-SLAM3 and mono DM-VIO still report around 0.6% scale drift on EuRoC.
+  - Open challenges as of 2026 centre on robustness under low texture, motion blur, poor and changing illumination, real-time cost and VRAM footprint, cross-platform generalisation without per-scene tuning, and reliable metric scale from monocular input, motivating hybrid learning-plus-optimisation designs and adaptive, RL-scheduled fusion.
+
+- ### References
+  - 1. Maulana, R. et al. (2025). DINO-VO: A Feature-based Visual Odometry Leveraging a Visual Foundation Model. https://arxiv.org/abs/2507.13145
+  - 2. Lai, Z. et al. (2025). ZeroVO: Visual Odometry with Minimal Assumptions (CVPR 2025). https://openaccess.thecvf.com/content/CVPR2025/papers/Lai_ZeroVO_Visual_Odometry_with_Minimal_Assumptions_CVPR_2025_paper.pdf
+  - 3. Guan, W. et al. (2025). DEIO: Deep Event Inertial Odometry (ICCV 2025 Workshop). https://openaccess.thecvf.com/content/ICCV2025W/NeVi/papers/Guan_DEIO_Deep_Event_Inertial_Odometry_ICCVW_2025_paper.pdf
+  - 4. Krishnan, A. et al. (2025). Benchmarking Egocentric Visual-Inertial SLAM at City Scale (ICCV 2025, LaMAria/Project Aria). https://openaccess.thecvf.com/content/ICCV2025/papers/Krishnan_Benchmarking_Egocentric_Visual-Inertial_SLAM_at_City_Scale_ICCV_2025_paper.pdf
+  - 5. Zhao, S. et al. (2025). Tartan IMU: A Light Foundation Model for Inertial Positioning in Robotics (CVPR 2025). https://openaccess.thecvf.com/content/CVPR2025/papers/Zhao_Tartan_IMU_A_Light_Foundation_Model_for_Inertial_Positioning_in_CVPR_2025_paper.pdf
+  - 6. Robotics and Perception Group, UZH (2025). Visual and Inertial Odometry and SLAM (RAMP-VO, HDVIO2.0, IEEE T-RO 2025). https://rpg.ifi.uzh.ch/research_vo.html
+
 - ### Provenance
   - sources:: KITTI Odometry Benchmark; EuRoC MAV Dataset; ORB-SLAM3 (Campos et al., TRO 2021); VINS-Mono (Qin et al., TRO 2018); Kimera (Rosinol et al., ICRA 2020)
   - updated:: 2026-06-13

@@ -285,6 +285,23 @@ public:: true
   - **Clock Skew**: expiry checks depend on accurate clocks; systems must handle NTP drift and grace periods carefully.
   - **Quantum Threats**: current EC-based signatures (ECDSA, EdDSA) are vulnerable to sufficiently large quantum computers; NIST PQC standards (ML-DSA, SLH-DSA) are expected to be adopted in long-lived credential ecosystems.
 
+- ### Current Landscape (2026)
+  - On 15 May 2025 the W3C published the Verifiable Credentials 2.0 family as seven Recommendations (including Data Model v2.0, Data Integrity 1.0, EdDSA/ECDSA Cryptosuites, and Bitstring Status List), giving verifiers a stable, formally standardised basis for cryptographic credential checking.
+  - VC Data Model 2.0 deliberately admits multiple securing mechanisms (Data Integrity proofs, JOSE/COSE, and SD-JWT) rather than mandating one, which improves flexibility but means "supports verifiable credentials" no longer guarantees interoperability between an issuer and a verifier.
+  - The new specifications are explicitly "crypto-modular" to accommodate post-quantum cryptography (PQC) and zero-knowledge proofs (ZKPs), and prioritise selective disclosure so a holder can prove an attribute (e.g. being over 18) without revealing the underlying data.
+  - The W3C Digital Credentials API reached First Public Working Draft on 1 July 2025 in the Federated Identity Working Group, letting websites request credentials from wallets; Google and Apple are already shipping early implementations, though unlinkability and privacy issues remain unresolved.
+  - Under the revised eIDAS Regulation (EU 2024/1183, in force 20 May 2024), every EU member state must offer at least one certified EU Digital Identity (EUDI) Wallet by 24 December 2026, with mandatory acceptance by regulated relying parties (banks, telecoms, VLOPs) following in late 2027; W3C VCDM 2.0 is a referenced standard in the ARF alongside ISO/IEC 18013-5 mdoc and SD-JWT VC.
+  - Practitioner consensus in 2026 is that the December 2026 EUDI deadline will be met formally but not substantively: analysts such as Trinsic and Signicat predict only around half of member states will have fully compliant production wallets, with many launching thin shells of limited credential types until well into 2027.
+  - In the US, mobile driver's licences (mDLs) conforming to ISO/IEC 18013-5 continue to spread across states via Apple, Google and Samsung Wallet, but rollout is uneven, with several states (e.g. Florida, Oklahoma) having paused or pulled apps.
+  - The frontier challenge as of 2026 is governance rather than cryptography: relying-party registration, who is authorised to verify, cross-border reciprocity, revocation/status handling at scale, and viable business models remain the main barriers to widespread verifier adoption.
+
+- ### References
+  - 1. W3C (2025). W3C publishes Verifiable Credentials 2.0 as a W3C Standard. https://www.w3.org/press-releases/2025/verifiable-credentials-2-0/
+  - 2. W3C (2025). The Verifiable Credentials 2.0 family of specifications is now a W3C Recommendation. https://www.w3.org/news/2025/the-verifiable-credentials-2-0-family-of-specifications-is-now-a-w3c-recommendation/
+  - 3. W3C (2025). W3C Digital Credentials API publication: the next step to privacy-preserving identities on the web. https://www.w3.org/blog/2025/w3c-digital-credentials-api-publication-the-next-step-to-privacy-preserving-identities-on-the-web/
+  - 4. eIDAS-Pro (2026). EU 27 EUDI Wallet Readiness Scorecard, April 2026. https://eidas-pro.com/blog/eu-27-eudi-wallet-readiness-scorecard-april-2026
+  - 5. Corbado (2025). Mobile Driver's License are here: ultimate Guide to mDLs. https://www.corbado.com/blog/mobile-drivers-license
+
 - ### Provenance
   - sources:: W3C Verifiable Credentials Data Model 2.0 (2024), OpenID Foundation OID4VC specs, ISO 18013-5:2021, eIDAS 2.0 Regulation (EU 2024/1183), NIST SP 800-63-3, DIF Presentation Exchange spec, Hyperledger Anoncreds documentation
   - updated:: 2026-06-13

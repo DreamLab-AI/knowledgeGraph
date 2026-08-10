@@ -278,6 +278,23 @@ alias:: CryptographicProof
   - Standards bodies: W3C (Credentials CG), IETF (COSE, JOSE working groups), IEEE, NIST Post-Quantum Cryptography standardisation programme.
   - Post-quantum considerations: Current SNARK/STARK designs rely on elliptic curve pairings (SNARKs) or collision-resistant hashes (STARKs). STARKs are considered post-quantum secure; pairing-based SNARKs are not. [[Post-Quantum Cryptography]] standardisation (NIST FIPS 203/204/205) will influence future proof system designs.
 
+- ### Current Landscape (2026)
+  - The general-purpose zkVM displaced hand-written arithmetic circuits as the dominant way to produce cryptographic proofs: developers now write ordinary Rust, compile to a RISC-V target, and the zkVM proves correct execution — collapsing what was months of specialist DSL work per feature.
+  - Real-time proving of Ethereum L1 blocks moved from theory to production in 2025: after the Ethereum Foundation's July 2025 "Realtime Proving" targets (under 10s for 99% of mainnet blocks, at most a 100k-dollar/10kW rig, proofs under 300 KiB, no trusted setup), Brevis's Pico Prism (October 2025) and Succinct's SP1 Hypercube (99.6-99.7% of blocks in under 12s on consumer GPUs, November 2025) both met the bar.
+  - Proving economics collapsed roughly 45x in a year: the average cost to prove a full Ethereum block on the public ethproofs.org tracker fell from about 1.69 dollars in January 2025 to under 4 cents by December 2025.
+  - Key players and systems now span SP1/Hypercube (Succinct), RISC Zero (R0VM, plus the Boundless proving network), OpenVM (Axiom, used by Scroll), Airbender (Matter Labs/ZKsync), Jolt (a16z crypto, sped up ~6x by the Twist and Shout memory-checking arguments), plus ZisK, Pico, Nexus and zkMIPS/Ziren (ZKM); zkVerify and Boundless have emerged as dedicated proof-aggregation and proving-market layers.
+  - Formal verification of provers became a live requirement after soundness bugs were found in circuit logic: Succinct and Nethermind formally verified SP1 Hypercube's core RISC-V chips in the Lean proof assistant, and RISC Zero published a path to a formally verified zkVM.
+  - Verifiable machine-learning inference matured: Lagrange's DeepProve-1 generated a cryptographic proof of a full GPT-2 inference (reported 50-150x faster than EZKL), and academic zkLLM work verified a 13-billion-parameter model in under 15 minutes with sub-200 kB proofs.
+  - Post-quantum security became the central open challenge: hash-based STARKs are quantum-resilient, but most production systems still wrap the final proof in a pairing-based Groth16 or PLONK layer that is not post-quantum, and NIST's own PQC migration guidance (IR 8547, Nov 2024) plus the UK NCSC 2035 roadmap omit ZK verification infrastructure entirely — even as NIST's October 2024 second-round PQ-signature call included six ZKP-based candidates (Mirath, MQOM, PERK, RYDE, SDitH, FAEST).
+
+- ### References
+  - 1. Wavect (2026). Zero-Knowledge Proofs in 2026: Production-Ready? https://wavect.io/blog/zero-knowledge-proofs-production-2026/
+  - 2. Aligned (2026). Ethereum and Zero Knowledge: Key Highlights from 2025. https://blog.alignedlayer.com/ethereum-and-zero-knowledge-key-highlights-from-2025/
+  - 3. Extropy Academy (2025). The zkML Singularity: A Comprehensive Analysis of the 2025 Landscape. https://academy.extropy.io/pages/articles/zkml-singularity.html
+  - 4. 0xjacobzhao / Brevis (2025). The Infinite Verifiable Computing Layer of zkVM and ZK Data Coprocessor. https://medium.com/@0xjacobzhao/brevis-research-report-the-infinite-verifiable-computing-layer-of-zkvm-and-zk-data-coprocessor-3761f902ecd7
+  - 5. Encryptorium (2026). PQC Migration Plans Have a ZK Blind Spot. https://encryptorium.medium.com/pqc-migration-plans-have-a-zk-blind-spot-11a96c4ecf5f
+  - 6. arXiv (2025). Zero-Knowledge Proof Frameworks: A Survey. https://arxiv.org/html/2502.07063v1
+
 - ### Provenance
   - sources:: Goldwasser-Micali-Rackoff 1985; Groth 2016; Ben-Sasson et al. 2018; W3C VC Data Model 2.0; NIST SP 800-186; Ethereum EIPs 196/197; IETF BBS draft
   - updated:: 2026-06-13

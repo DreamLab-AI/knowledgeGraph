@@ -276,6 +276,24 @@ public:: true
   - **Relationship to BOLTs** — The [[Lightning Network]] specification uses a separate process (Basis of Lightning Technology, BOLTs) that is parallel to but compatible with BIPs, since Lightning operates as a Layer-2 protocol that does not require on-chain consensus for its own upgrades.
   - **Security and Conservatism** — Bitcoin's monetary role demands extreme conservatism. BIPs proposing consensus changes undergo multi-year review periods, formal verification efforts, and extensive testnet deployment before mainnet activation, reflecting the asymmetric cost of errors in a $1+ trillion asset network with no rollback mechanism.
 
+- ### Current Landscape (2026)
+  - The governance process itself was overhauled: BIP 3 ("Updated BIP Process", authored by Murch, assigned 9 January 2025 and now Deployed) replaced BIP 2, collapsing the old nine statuses into four (Draft, Complete, Deployed, Closed), abolishing the comment system and removing the three-year staleness closure rule.
+  - Covenant proposals dominate the standards-track debate, centred on OP_CHECKTEMPLATEVERIFY (CTV, BIP 119) and OP_CAT (BIP 347); OP_CAT reached "Complete" specification status on 1 March 2026, while a CTV activation client published a Speedy Trial with a signalling window from 30 March 2026 to 30 March 2027 and a 90% miner threshold.
+  - That CTV activation attempt has stalled — miner signalling stood at 0% as of late May 2026 despite roughly 66 developer endorsements — illustrating that no soft fork has activated since Taproot in November 2021 and that consensus, not specification, remains the binding constraint.
+  - A cluster of data-restriction proposals emerged after Bitcoin Core v30 lifted the OP_RETURN size limit: the pseudonymous "Reduced Data Temporary Softfork" (published October 2025, later assigned BIP 110, with Luke Dashjr credited on the original draft) proposes a one-year temporary soft fork capping OP_RETURN at 83 bytes, with a mandatory-signalling lock-in phase scheduled for around August 2026.
+  - Quantum resistance became a live workstream: BIP 360 (Pay-to-Merkle-Root / P2QRH, a Taproot output with the key-path spend removed) was merged on 11 February 2026, and the companion BIP 361 ("Post Quantum Migration and Legacy Signature Sunset", published 14 April 2026) controversially proposes eventually sunsetting spends from quantum-vulnerable outputs holding an estimated 6.5–6.9 million BTC.
+  - Housekeeping progressed where consensus is broader: the Consensus Cleanup soft fork was drafted, merged as BIP 54 in 2025 with an implementation and test vectors, and forbids problematic constructs such as 64-byte transactions (BIP 53), addressing long-known attack vectors.
+  - Key players and venues include Bitcoin Core and Bitcoin Knots maintainers, the bitcoindev mailing list and Delving Bitcoin forum, Bitcoin Inquisition's signet for testing, Jeremy Rubin (CTV), Ethan Heilman and Armin Sabouri (OP_CAT), and Hunter Beast, Ethan Heilman and Isabel Foxen Duke (BIP 360); Anthony Towns' 2025 "Bitcoin Forking Guide" codified a four-stage community-consensus path.
+  - The central open challenge as of 2026 is activation legitimacy: whether Speedy Trial-style miner signalling is appropriate for proposals lacking overwhelming consensus, amid a growing institutional camp arguing Bitcoin's consensus rules should be treated as effectively immutable.
+
+- ### References
+  - 1. Bitcoin Optech (2025). Newsletter #385: 2025 Year-in-Review Special. https://bitcoinops.org/en/newsletters/2025/12/19/
+  - 2. Spark (2026). Bitcoin Covenant Activation: Navigating the Path Forward After Years of Debate. https://www.spark.money/research/bitcoin-covenant-activation-path-forward
+  - 3. Murch (2025). BIP 3: Updated BIP Process. https://bips.dev/3/
+  - 4. crypto.news (2026). Bitcoin is going quantum-proof: Inside BIP-360 and the migration. https://crypto.news/bitcoin-is-going-quantum-proof-inside-bip-360-and-the-migration/
+  - 5. Bitfinex (2026). BIP-110 and Bitcoin's High Bar for Consensus Change. https://blog.bitfinex.com/industry-news/bip-110-and-bitcoins-high-bar-for-consensus-change/
+  - 6. Amina Group (2026). Bitcoin Fork August 2026: BIP-110, eCash, Covenants and the Quantum Clock. https://aminagroup.com/research/bitcoin-fork-august-2026-bip-110-ecash-covenants-and-the-quantum-clock/
+
 - ### Provenance
   - sources:: Bitcoin BIP repository (github.com/bitcoin/bips), Bitcoin Developer Documentation, BIP-0001 (Amir Taaki), BIP-0002 (Luke Dashjr), academic literature on blockchain governance
   - updated:: 2026-06-13

@@ -310,6 +310,23 @@ public:: true
     - 2018: [[GitHub Actions]] launches, consolidating CI/CD within GitHub.
     - 2020s: AI-assisted CI (test selection, flake detection, pipeline optimisation) emerges as a distinct capability.
 
+- ### Current Landscape (2026)
+  - In February 2026 GitHub launched Agentic Workflows in technical preview under the banner "Continuous AI", embedding AI agents (Copilot, Claude Code, Codex) directly into GitHub Actions; developers write Markdown intent that `gh aw compile` turns into executable YAML, shifting CI from human-in-the-loop to human-on-the-loop where agents autonomously generate tests, investigate build failures and open PRs for review.
+  - Software supply-chain hardening became the defining CI theme after the March 2025 compromise of tj-actions/changed-files (CVE-2025-30066) and reviewdog/action-setup (CVE-2025-30154), which hit over 23,000 repositories and were added to CISA's Known Exploited Vulnerabilities catalogue, and the August 2025 Nx build-system attack that specifically targeted AI coding tools' credential files.
+  - GitHub's 2026 Actions security roadmap (published March 2026) introduces structural defences: a workflow-level `dependencies:` section that locks direct and transitive actions to commit SHAs with cryptographic hashes, org-level ruleset execution policies, fine-grained secret scoping, plus infrastructure controls in the Actions Data Stream telemetry and a Layer-7 native egress firewall enforced outside the runner VM.
+  - actions/checkout v7 (effective 18 June 2026) blocks fork pull-request checkouts in privileged pull_request_target and workflow_run contexts by default, requiring an explicit allow-unsafe-pr-checkout opt-out, and the change is being backported to all supported major versions.
+  - Build provenance and attestation have consolidated as CI standards: GitHub Artifact Attestations (Sigstore-based, keyless OIDC signing) deliver SLSA v1.0 Build Level 2 out of the box and Level 3 with reusable workflows, verification went monotonic in February 2025, and Google Cloud Build now emits SLSA Level 3 provenance natively, with in-toto/cosign/Kyverno enforcing verification at deployment.
+  - New CI security threats emerged around embedded agents: researchers documented the "Comment and Control" prompt-injection attack class in April 2026, showing a single malicious PR comment could exfiltrate secrets such as GITHUB_TOKEN and ANTHROPIC_API_KEY into public logs, prompting defence patterns of sandboxed ephemeral agent containers, read-only-by-default execution, scoped expiring tokens and runner-level monitoring like StepSecurity Harden-Runner.
+  - Adoption and cost remain open challenges: a June 2026 Kaspersky study found over 250,000 potential CI/CD misconfigurations (mostly overly broad permissions and missing version pinning), while early agentic-workflow token benchmarks showed wide variance (roughly 12 million tokens per Codex run versus 600,000 for Claude-powered runs), leaving governance, auditability and economics as the 2026 frontier.
+
+- ### References
+  - 1. GitHub (2026). What's coming to our GitHub Actions 2026 security roadmap. https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/
+  - 2. Cloud Security Alliance (2026). Prompt Injection in AI-Powered GitHub Actions. https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-github-actions-security-20260503-csa-st/
+  - 3. AgentMarketCap (2026). GitHub Actions Goes Agentic: AI Takes Over CI/CD in 2026. https://agentmarketcap.ai/blog/2026/04/07/github-actions-agentic-ci-cd-ai-native-pipelines
+  - 4. Rescana (2026). GitHub Actions Updates Checkout to Block Forked Pull Request Supply Chain Attacks. https://www.rescana.com/post/github-actions-updates-checkout-to-block-forked-pull-request-supply-chain-attacks-in-ci-cd-workflows
+  - 5. GitHub Docs (2026). Artifact attestations. https://docs.github.com/en/actions/concepts/security/artifact-attestations
+  - 6. Kaspersky (2026). Kaspersky Uncovers Over 250,000 Potential Security Issues in GitHub Actions Workflows. https://www.kaspersky.com/about/press-releases/kaspersky-uncovers-over-250000-potential-security-issues-in-github-actions-workflows
+
 - ### Provenance
   - sources:: Martin Fowler, "Continuous Integration" (martinfowler.com, 2006 revision); Kent Beck, "Extreme Programming Explained" (1999); DORA State of DevOps Reports; SLSA framework (slsa.dev); OpenSSF Scorecard documentation.
   - updated:: 2026-06-13

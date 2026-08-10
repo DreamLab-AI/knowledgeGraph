@@ -313,6 +313,23 @@ public:: true
   - **ARIA (Accessible Rich Internet Applications)**: a W3C specification for annotating custom UI widgets with semantic roles, states, and properties to ensure screen-reader compatibility.
   - **Spatial audio standards**: MPEG-H Audio, Dolby Atmos, and platform-specific spatialiser APIs (Apple Spatial Audio, Meta Audio SDK) underpin [[Spatial Audio]] feedback in XR UIs.
 
+- ### Current Landscape (2026)
+  - Gaze-and-pinch (look-and-tap) has consolidated as the default spatial input paradigm: Apple's visionOS treats eyes as the cursor and a bare-finger pinch as the click, and Android XR adopted a comparable held-pinch model for scrolling, moving and resizing spatial panels, making it the de facto convention across the two dominant platforms.
+  - Apple previewed visionOS 26 at WWDC in June 2025, adding spatially anchored widgets, generative-AI spatial scenes, more expressive Personas, Nearby Window Sharing, hand tracking up to three times faster, and — for the first time — physical controller input via the Sony PlayStation VR2 Sense controller and the Logitech Muse stylus, softening its controller-free stance.
+  - Samsung Galaxy XR shipped on 21 October 2025 as the first Android XR device, opening a second major spatial-UI ecosystem built on OpenXR 1.1, with hand and eye tracking, scene meshing and anchor persistence available to developers.
+  - Google formalised Android XR spatial-UI design guidance through 2025–2026, introducing distance-independent units (the 0.868 dp-to-dmm conversion), Home Space versus Full Space layouts, 56dp minimum touch targets, panels spawned at 1.75m and 5 degrees below eye level, and a 72fps floor to limit motion sickness.
+  - WebXR is maturing into a governed cross-browser standard: the W3C WebXR Device API reached Candidate Recommendation and WebXR became a focus area for Interop 2026, while Safari on visionOS now exposes WebXR with a native gaze-and-pinch input mode and the Meta Quest Browser added experimental WebXR depth projection and WebGPU support (Chromium 146, April 2026).
+  - The Android XR SDK advanced from Developer Preview 3 (December 2025) to Developer Preview 4 (June 2026), which brought a Kotlin-first perception stack and an early Geospatial API pairing ARCore for Jetpack XR with Google's Visual Positioning System to anchor UI to high-precision real-world locations.
+  - Open challenges as of 2026 include gaze-driven interaction fatigue and eye strain, the readability constraints of see-through displays (bright-equals-opaque additive rendering), fragmented capability parity — WebXR still lacks spatial anchors and scene understanding versus native SDKs — and the unresolved question of genuinely volumetric 6DOF interfaces beyond flat panels floating in space.
+
+- ### References
+  - 1. Apple (2025). visionOS 26 introduces powerful new spatial experiences for Apple Vision Pro. https://www.apple.com/newsroom/2025/06/visionos-26-introduces-powerful-new-spatial-experiences-for-apple-vision-pro/
+  - 2. Google / Android Developers (2025). Giving your apps a new home on Samsung Galaxy XR, the first device powered by Android XR. https://developer.android.com/blog/posts/giving-your-apps-a-new-home-on-samsung-galaxy-xr-the-first-device-powered-by-android-xr
+  - 3. Android Developers (2026). Spatial UI — XR Headsets & wired XR Glasses design guides. https://developer.android.com/design/ui/xr/guides/spatial-ui
+  - 4. VR.org (2026). WebXR Is Finally Becoming a Real Cross-Browser Standard. https://vr.org/articles/webxr-interop-2026-cross-browser-standard
+  - 5. Android Developers Blog (2026). What's New in Android XR: Tooling, Engine Support, and Developer Preview 4. https://android-developers.googleblog.com/2026/06/what-is-new-android-xr.html
+  - 6. Meta Horizon OS Developers (2026). Browser release notes (WebXR depth projection, WebGPU, Chromium 146). https://developers.meta.com/horizon/release-notes/web/
+
 - ### Provenance
   - sources:: ISO 9241, W3C/WAI documentation, OpenXR specification (Khronos Group), Apple Human Interface Guidelines, Google Material Design documentation, established HCI literature (Dix et al., Norman's "The Design of Everyday Things")
   - updated:: 2026-06-13

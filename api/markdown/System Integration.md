@@ -316,6 +316,22 @@ public:: true
   - sameAs:: [[Application Integration]]
   - sameAs:: [[Enterprise Application Integration]]
 
+- ### Current Landscape (2026)
+  - Integration has re-centred on the enterprise iPaaS layer: the global iPaaS market reached roughly USD 17.64bn in 2025 and about USD 23.36bn in 2026 (Precedence Research), with public cloud (61% share) and BFSI dominant, as the average enterprise now runs 300-plus applications that mostly remain unintegrated.
+  - The March 2026 Gartner Magic Quadrant for iPaaS reframed the category around AI orchestration rather than pure data movement: Boomi was named a Leader for the 12th consecutive time and highest for Ability to Execute, Workato was placed Furthest in Vision, and Tray.ai was named a Visionary for the third year running.
+  - Anthropic's Model Context Protocol (MCP) has become the de facto agent-to-system interface, adopted by OpenAI (March 2025) and Microsoft; Gartner's assumption that by 2026, 75% of API-gateway vendors and 50% of iPaaS vendors ship MCP features has effectively materialised, with vendors launching governed MCP gateways (Workato MCP Gateway, Boomi's broadened MCP support, Tray.ai Agent Gateway for MCP).
+  - Gartner's 2026 guidance ("How to Enable Agentic AI via API-Based Integration") argues incremental API rework is insufficient and prescribes a real-time "context mesh" mixing MCP dynamic discovery with deterministic APIs, delegated OAuth 2.1 identity, separated agent-to-model/environment/agent traffic paths, and scoped "Back end for Agent" toolsets; it warns 40% of agentic AI initiatives risk cancellation by 2027 without this shift.
+  - Adoption is scaling fast but governance-constrained: Boomi reports over 75,000 agents in production via its Agentstudio, while Gartner notes the MCP community created over 16,000 MCP servers in 2026 alone, raising "shadow MCP" security and observability concerns.
+  - Architecture patterns have shifted from scheduled batch synchronisation towards event-driven meshes (Confluent, Redpanda, AWS EventBridge, Azure Event Grid, Debezium CDC), WebAssembly edge connectors near legacy systems, and AI-assisted field mapping and natural-language flow building embedded across the major platforms.
+  - Regulated-sector requirements have hardened procurement: EU data residency, on-premises and air-gapped deployment, signed connectors with SBOMs, immutable audit logging, and EU AI Act conformity checks for high-risk workflows are now baseline evaluation criteria rather than optional extras.
+
+- ### References
+  - 1. Precedence Research (2026). Integration Platform as a Service (iPaaS) Market Size to Hit USD 292.9 Billion by 2035. https://www.precedenceresearch.com/integration-platform-as-a-service-market
+  - 2. Boomi (2026). Boomi, a 12X Leader, Positioned Highest for Ability to Execute in the 2026 Gartner Magic Quadrant for iPaaS. https://boomi.com/resources/resources-library/gartner-magic-quadrant-ipaas-12x-leader/
+  - 3. Kong (2026). Agentic AI Integration: Why Gartner's "Context Mesh" Changes Everything. https://konghq.com/blog/enterprise/gartners-context-mesh
+  - 4. Workato (2026). Workato Named Gartner Magic Quadrant iPaaS Leader and Furthest in Vision in 2026. https://www.workato.com/the-connector/gartner-magic-quadrant-2026/
+  - 5. Frends (2026). MCP and Enterprise Integration: Architecture, Governance and Hybrid Patterns. https://frends.com/insights/mcp-and-enterprise-integration-architecture-governance-and-hybrid-patterns
+
 - ### Provenance
   - sources:: IEEE 12207, TOGAF ADM, OpenAPI Initiative, AsyncAPI Specification, CNCF landscape, OASIS AMQP, W3C WoT
   - updated:: 2026-06-13

@@ -339,6 +339,22 @@ public:: true
   - **EU Regulatory context** — GDPR Article 20 (data portability) and the EU Data Act (2024) mandate interoperable formats; the European Interoperability Framework (EIF) drives adoption of open standards across public administrations.
   - **[[FAIR Principles]]** — Wilkinson et al. (2016) meta-framework for scientific data management, now embedded in EU Horizon funding requirements and OpenAIRE guidelines.
 
+- ### Current Landscape (2026)
+  - The EU Data Act (Regulation (EU) 2023/2854) became applicable on 12 September 2025, making data-space interoperability a legal requirement under Articles 33–35: participants must describe dataset content, formats, vocabularies, taxonomies and code lists in a machine-readable, publicly consistent manner, with connected-product design duties following from September 2026 and the removal of cloud switching/egress fees from 12 January 2027.
+  - On 7 July 2025 CEN, CENELEC and ETSI formally accepted the Commission's Standardisation Request under Mandate M/614 (European Trusted Data Framework), committing to seven deliverables — four European Standards (two intended for citation in the Official Journal) plus three Technical Specifications — to underpin Data Act conformity.
+  - CEN/CLC JTC 25 'Data management, Dataspaces, Cloud and Edge', established in September 2024, now leads work on data governance, quality and lifecycle management, portability and switchability, building on CEN/CWA 18125:2024 'Trusted Data Transaction'; ETSI TC Data covers semantic frameworks and catalogues.
+  - The IDSA Dataspace Protocol is being promoted to an international standard, with ISO/IEC 20151 building directly on the IDSA Rulebook, signalling convergence of European sovereign data-sharing efforts (Gaia-X, IDSA, the Data Spaces Support Centre and SIMPL middleware) toward common protocol-level standards.
+  - The European Health Data Space Regulation (EU) 2025/327 was adopted on 11 February 2025, extending FAIR-aligned standardised health-data exchange and secondary-use mechanisms across the Union as a flagship sectoral data space among the 14 domains under development.
+  - The Data Union Strategy, adopted in November 2025, proposed expanding data spaces (including a new defence data space) and flagged a forthcoming standardisation request for a European data quality standard covering completeness, consistency, provenance, semantic clarity and governance.
+  - Semantic interoperability work under the SEMIC framework is pushing JSON-LD and machine-readable annotation of CSV/XML/JSON as minimum documentation requirements, but open challenges remain: few Member States have designated Data Act competent authorities, M/614 deliverables are not yet binding until referenced in the Official Journal, and the Act still lacks a statutory definition of "data space".
+
+- ### References
+  - 1. European Commission — Shaping Europe's Digital Future (2025). Data Act explained. https://digital-strategy.ec.europa.eu/en/factpages/data-act-explained
+  - 2. CEN-CENELEC (2025). Data Act: Standardization Request Officially Accepted by CEN and CENELEC (Mandate M/614). https://www.cencenelec.eu/news-events/news/2025/brief-news/2025-07-11-data-act-standardization-request/
+  - 3. International Data Spaces Association (2025). How the EU Data Act will shape data spaces. https://internationaldataspaces.org/how-the-eu-data-act-will-shape-data-spaces/
+  - 4. European Parliament and Council (2025). Regulation (EU) 2025/327 on the European Health Data Space. https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202500327
+  - 5. European Commission — Interoperable Europe (2025). Data Economy / Data Interoperability, Rolling Plan for ICT Standardisation 2025. https://interoperable-europe.ec.europa.eu/collection/rolling-plan-ict-standardisation/data-economy-rp-2025
+
 - ### Provenance
   - sources:: ISO/IEC JTC 1 publications; W3C standards track; IETF RFCs; HL7 FHIR documentation; NIST SP 800 series; EU Data Act (2024); FAIR Principles (Wilkinson et al. 2016)
   - domain-remap:: spatial-computing → data (Data Standards is a cross-domain foundational concept most precisely classified under the data domain)

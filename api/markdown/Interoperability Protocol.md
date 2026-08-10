@@ -294,6 +294,21 @@ alias:: InteroperabilityProtocol
   - **Supply chain** — GS1 Digital Link, PEPPOL Access Point specification, EPCIS 2.0.
   - **Security overlay** — NIST SP 800-204 (microservice security), NIST SP 800-63 (digital identity), ISO/IEC 27001 as governance backdrop.
 
+- ### Current Landscape (2026)
+  - LayerZero V2's modular Decentralised Verifier Network (DVN) design dominates cross-chain messaging, carrying roughly 75-85% of bridge volume (~$293M/day) across 130+ chains; in early 2026 the team announced Zero, a purpose-built layer-1 settlement and coordination chain for the ecosystem.
+  - Chainlink CCIP consolidated its institutional position with the v1.5 upgrade (January 2025) introducing the Cross-Chain Token (CCT) standard, Fast Transfers and Hooks, followed by the current v1.6.x line; it now underpins real-world-asset and tokenised-fund flows (e.g. BlackRock's BUIDL) and in 2026 the Gravity L1 migrated its standardised interoperability layer from LayerZero to CCIP.
+  - Wormhole's Native Token Transfer (NTT) standard, which mints natively rather than using pooled liquidity, expanded Ripple's RLUSD stablecoin to 40+ chains and continues to push zero-knowledge proofs into its 19-Guardian security model; Cosmos IBC v2 (early 2025) cut bridging costs by roughly 40% and raised throughput toward ~5,000 TPS.
+  - Formal standardisation accelerated: ERC-7281 (the xERC20 sovereign-bridge token standard), the ISO/TS 23516 blockchain interoperability framework, and the ITU-T X.1414 recommendation on cross-chain security requirements are converging the field toward common interfaces.
+  - Security remained the central weakness, with 2026 incidents including a ~$292M LayerZero configuration-flaw loss and a ~$4.67M Axelar third-party-contract exploit, keeping trust-minimisation and light-client verification a live concern.
+  - The 2025-2026 frontier shifted toward intent-based architectures (users specify an outcome, not execution steps), shared sequencers enabling atomic cross-chain transactions, and ZK light clients expected to become the default high-security verification primitive, alongside academic surveys (e.g. arXiv 2603.21797, March 2026) mapping the design space.
+
+- ### References
+  - 1. Gate.com Research (2026). Gravity vs LayerZero vs Wormhole: Cross-Chain Interoperability Protocol Architecture and Ecosystem Analysis. https://www.gate.com/blog/gravity-vs-layerzero-vs-wormhole-2026-cross-chain-interoperability-protocol-architecture-and-ecosystem-analysis
+  - 2. BlockEden.xyz (2026). Cross-Chain Interoperability Wars 2026: LayerZero, Wormhole, CCIP, Axelar. https://blockeden.xyz/blog/2026/01/26/cross-chain-interoperability-wars-layerzero-wormhole-ccip-axelar/
+  - 3. Protofire (2026). CCIP vs LayerZero vs Wormhole vs Axelar vs Hyperlane. https://protofire.io/guides/cross-chain-messaging/
+  - 4. Sei (2025). What Is Blockchain Interoperability? 2025 Guide to Cross-Chain. https://blog.sei.io/blockchain/fundamentals/what-is-blockchain-interoperability-guide-2025/
+  - 5. Yellow.com Research (2025). Cross-Chain Messaging: Comparing IBC, Wormhole, LayerZero, CCIP and More. https://yellow.com/research/cross-chain-messaging-comparing-ibc-wormhole-layerzero-ccip-and-more
+
 - ### Provenance
   - sources:: IETF (ietf.org), W3C (w3.org), Khronos Group (khronos.org), Cosmos IBC specification (github.com/cosmos/ibc), HL7 FHIR (hl7.org/fhir), Anthropic MCP documentation, Polkadot XCM documentation
   - updated:: 2026-06-13

@@ -276,6 +276,22 @@ alias:: MultiAgentSystem
   - The introduction of [[Reinforcement Learning]]-trained agent policies in the late 1990s — and the explosion of [[Deep Learning]] from 2012 — shifted MAS research toward learned, data-driven policies, culminating in [[Multi-Agent Reinforcement Learning]] breakthroughs such as OpenAI Five (2019) and AlphaStar (2019).
   - From 2023 onwards, LLM-based MAS frameworks proliferated rapidly, bringing MAS concepts into mainstream software engineering under labels such as "agentic AI" and "AI orchestration".
 
+- ### Current Landscape (2026)
+  - Multi-agent systems have converged on a layered open-protocol stack: Anthropic's Model Context Protocol (MCP, launched November 2024) standardises the vertical agent-to-tool layer, while Google's Agent2Agent (A2A) protocol, announced April 2025, handles horizontal agent-to-agent discovery and delegation via Agent Cards published at /.well-known/agent-card.json over JSON-RPC 2.0.
+  - A2A was donated to the Linux Foundation in June 2025 and reached version 1.0 in early 2026, introducing cryptographically signed Agent Cards for verifiable identity; by its one-year mark (April 2026) it had 150-plus production organisations, over 22,000 GitHub stars, and SDKs across five languages (Python, JavaScript, Java, Go, .NET).
+  - MCP has effectively won the tool layer with roughly 97 million downloads and 10,000-plus published servers (PulseMCP directory), native support in VS Code (GA July 2025), Cursor, Claude Code and JetBrains, and in December 2025 governance moved to the new Linux Foundation Agentic AI Foundation.
+  - Adoption spans Google, Microsoft, AWS, Salesforce, SAP, ServiceNow, Workday, IBM and Cisco, with native integration in Azure AI Foundry, Amazon Bedrock AgentCore and Google Cloud; complementary protocols have also emerged, including IBM's ACP, the community ANP, CopilotKit's AG-UI (agent-to-frontend, May 2025) and commerce-oriented ACP/UCP.
+  - Orchestration frameworks consolidated in 2026: LangGraph leads enterprise production (an estimated ~38% of multi-agent deployments, paired with LangSmith observability), custom orchestration is ~28%, CrewAI (~35k stars) dominates prototyping, and Microsoft's Agent Framework (October 2025) merged AutoGen with Semantic Kernel while OpenAI's Agents SDK (March 2025) replaced the experimental Swarm.
+  - Reliability remains the frontier rather than framework choice: a January 2026 arXiv large-scale study of 42K commits and 4.7K issues across eight leading MAS found agent-coordination challenges account for ~10% of issues, with recurring emergent failure modes (agents disagreeing, corrupted shared state, runaway loops) driving emphasis on eval pipelines, budget caps, replayable traces and human-in-the-loop checkpoints.
+
+- ### References
+  - 1. Iceberg Lakehouse (2026). The State of Agentic AI Standards in 2026: MCP, A2A and the Protocol Stack. https://iceberglakehouse.com/posts/state-of-agentic-ai-standards-2026/
+  - 2. Zylos Research (2026). A2A, MCP, and Multi-Agent Orchestration. https://zylos.ai/research/2026-05-16-agent-to-agent-communication-protocols-a2a-mcp/
+  - 3. 47Billion (2026). AI Agents in Production: What Actually Works in 2026 — Frameworks, Protocols. https://47billion.com/blog/ai-agents-in-production-frameworks-protocols-and-what-actually-works-in-2026/
+  - 4. Presenc AI (2026). Multi-Agent Orchestration Frameworks 2026. https://presenc.ai/research/multi-agent-orchestration-frameworks-2026
+  - 5. arXiv (2026). A Large-Scale Study on the Development and Issues of Multi-Agent AI Systems. https://arxiv.org/abs/2601.07136
+  - 6. Digital Applied (2026). AI Agent Protocol Ecosystem Map 2026: MCP, A2A, ACP, UCP. https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp
+
 - ### Provenance
   - sources:: Wooldridge & Jennings (1995) "Intelligent Agents: Theory and Practice"; Shoham & Leyton-Brown (2009) "Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations"; FIPA specifications; Russell & Norvig "Artificial Intelligence: A Modern Approach" (4th ed.)
   - updated:: 2026-06-13

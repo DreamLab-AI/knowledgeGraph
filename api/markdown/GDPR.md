@@ -304,6 +304,23 @@ public:: true
   - **Data Localisation and Sovereignty** — GDPR transfer restrictions, combined with national security carve-outs, have accelerated EU cloud sovereignty initiatives (GAIA-X, EuroStack) and [[Data Sovereignty]] frameworks.
   - **Synthetic Data** — organisations explore synthetic data generation as a privacy-preserving alternative to real personal data for ML training; genuinely anonymous synthetic data falls outside GDPR scope, but re-identification risk must be carefully assessed.
 
+- ### Current Landscape (2026)
+  - The GDPR Procedural Regulation (Regulation (EU) 2025/2518) — the first major overhaul of GDPR enforcement machinery since 2018 — was adopted on 26 November 2025 and published in the Official Journal on 12 December 2025; it entered into force on 1 January 2026 but only applies from 2 April 2027, harmonising cross-border complaint admissibility and imposing binding deadlines of 15 months (extendable by 12 for complex cases) and 12 months for simplified cooperation.
+  - The European Commission launched the Digital Omnibus (Digital Simplification Package) on 19 November 2025, proposing to amend the GDPR itself: a more "relative", entity-driven definition of personal data anchored in "means reasonably likely to be used to identify", recognition of legitimate interest (Art 6(1)(f)) as a basis for AI training and operation, and a new Art 9 exemption permitting residual processing of special-category data for AI development.
+  - The Omnibus also proposes easing operational duties — raising the breach-notification threshold to high-risk cases only and extending the deadline from 72 to 96 hours, a single EU incident-reporting portal piloted by ENISA (spanning GDPR, NIS2, DORA, eIDAS and CER), and folding ePrivacy cookie-consent rules into the GDPR with browser-level, six-month one-click consent.
+  - Enforcement intensity remains high: the EDPB's 2025 Annual Report (published 9 April 2026) recorded national DPAs issuing roughly €1.15bn in fines during 2025, lifting the cumulative GDPR total since 2018 to about €4.2bn across 6,680-plus fines.
+  - Cross-regulatory coordination is now central — the EDPB and Commission endorsed the first-ever jointly authored guidance (DMA–GDPR interplay) in October 2025, with joint AI Act–GDPR guidelines and DPIA/breach templates rolling out through 2026, reflecting a rulebook now spanning GDPR, DSA, DMA and the AI Act.
+  - In the UK, the divergent Data (Use and Access) Act 2025 was largely brought into force via statutory instruments in December 2025 and January 2026 (relaxing automated decision-making and cookie rules, expanding ICO powers), and the Commission renewed the UK's two adequacy decisions in December 2025, now running to 27 December 2031.
+  - The frontier challenge for 2026 is contested: privacy advocates warn the Omnibus's narrowing of "personal data" and AI-training carve-outs weaken core protections, while the reforms are still moving through the ordinary legislative procedure and remain subject to Parliament and Council amendment, leaving compliance planning uncertain ahead of the 2 April 2027 procedural-rules application date.
+
+- ### References
+  - 1. European Parliament (2026). Further specifying procedural rules relating to the enforcement of the GDPR — Legislative Train Schedule. https://www.europarl.europa.eu/legislative-train/theme-protecting-our-democracy-upholding-our-values/file-specifying-procedural-rules-relating-to-the-enforcement-of-the-gdpr
+  - 2. PPC Land (2026). EDPB 2025 annual report: €1.15bn in GDPR fines, new AI and DMA rules. https://ppc.land/edpb-2025-annual-report-eur1-15bn-in-gdpr-fines-new-ai-and-dma-rules/
+  - 3. Eucrim (2025). New Regulation Speeds Up Handling of Cross-Border GDPR Complaints. https://eucrim.eu/news/new-regulation-speeds-up-handling-of-cross-border-gdpr-complaints/
+  - 4. Skadden (2025). Commission Proposes Significant Changes to EU Digital Rules. https://www.skadden.com/insights/publications/2025/11/commission-proposes-significant-changes-to-eu-digital-rules
+  - 5. Jones Day (2025). EU Digital Omnibus: How EU Data, Cyber, and AI Rules Will Shift. https://www.jonesday.com/en/insights/2025/12/eu-digital-omnibus-how-eu-data-cyber-and-ai-rules-will-shift
+  - 6. Slaughter and May (2026). Data Privacy Newsletter — Issue 30. https://www.slaughterandmay.com/insights/new-insights/data-privacy-newsletter-issue-30/
+
 - ### Provenance
   - sources:: EU Official Journal — Regulation (EU) 2016/679 of the European Parliament and of the Council; EDPB Guidelines; ENISA; ICO guidance; academic literature on data protection law.
   - updated:: 2026-06-13

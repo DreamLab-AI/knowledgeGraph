@@ -310,6 +310,23 @@ alias:: DecentralizedIdentity
   - **Evernym / Avast** — Early pioneers of Hyperledger Indy-based self-sovereign identity; technology absorbed into Avast's identity products.
   - **Hyperledger AnonCreds** — Specification for privacy-preserving verifiable credentials with ZK-proof selective disclosure; originated in Hyperledger Indy; now a standalone Hyperledger project.
 
+- ### Current Landscape (2026)
+  - The W3C published the Verifiable Credentials Data Model 2.0 as a full Recommendation in 2025, standardising a JSON-LD credential structure and selective-disclosure primitives (including BBS+ signatures adopted by most DID methods in late 2025) that now underpin production wallet stacks.
+  - eIDAS 2.0 (Regulation (EU) 2024/1183, in force 20 May 2024) has turned decentralised identity from experiment into mandatory infrastructure: all 27 member states must offer at least one certified EU Digital Identity (EUDI) Wallet by end-2026, with regulated private-sector relying parties and DSA very-large online platforms obliged to accept it from 2027.
+  - The EUDI Architecture and Reference Framework (ARF v1.4, iterating toward v2.4.0 in early 2026) fixes the technical stack on ISO/IEC 18013-5 mDL (mdoc) plus SD-JWT VC for selective disclosure, with OpenID4VCI for issuance and OpenID4VP for presentation over eIDAS Trusted Lists; ISO/IEC TS 18013-7:2024 extends mdoc to remote/online presentation.
+  - The four EU large-scale pilots (POTENTIAL, EWC, NOBID, DC4EU) concluded in 2025; POTENTIAL alone ran over 1,300 interoperability tests and 249 cross-border scenarios across 19 member states, and the EUDI Wallets Launchpad event in Brussels (December 2025) demonstrated working cross-border conformance.
+  - Conformance and certification tightened in 2026: ENISA published a draft EUDIW cybersecurity certification scheme (v0.4, consultation to 30 April 2026), and the OpenID Foundation's OpenID4VC High Assurance Interoperability Profile (HAIP) entered self-certification in February 2026.
+  - Beyond the EU, the UK confirmed in January 2026 that digital identity stays voluntary while scaling the GOV.UK Wallet and the statutory DVS Trust Framework (48 certified providers); Ireland launched a c.2,000-person wallet pilot in Q1 2026 ahead of its EU Council presidency.
+  - Open challenges as of 2026 remain acute: poor interoperability between competing DID methods and trust frameworks, privacy-friendly revocation and unlinkability that conflicts with issuer/verifier charging and payment flows, hardware secure-element binding for anonymous credentials, and crypto-agility for post-quantum migration beyond the mandated P-256/ECDSA baseline.
+
+- ### References
+  - 1. European Data Protection Supervisor (2025). TechDispatch #3/2025 — Digital Identity Wallets. https://www.edps.europa.eu/data-protection/our-work/publications/techdispatch/2025-12-15-techdispatch-32025-digital-identity-wallets_en
+  - 2. GS1 (2025). Verifiable Credentials and Decentralised Identifiers — Technology Landscape. https://ref.gs1.org/docs/2025/VCs-and-DIDs-tech-landscape
+  - 3. Cloud Security Alliance Labs (2026). ENISA EUDIW Certification: AI Agent Identity in EU Markets. https://labs.cloudsecurityalliance.org/research/csa-research-note-enisa-eu-digital-wallet-ai-agent-identity/
+  - 4. Evertrust (2026). EUDI Wallet 2026: Five Things Private PKI Teams Must Know. https://evertrust.io/blog/eudi-wallet-private-pki/
+  - 5. Riigi Infosüsteemi Amet / POTENTIAL LSP (2025). Main Findings, Lessons Learned and Recommendations. https://www.ria.ee/sites/default/files/documents/2025-10/Potential-takeaways-and-lessons-learned.pdf
+  - 6. Vidos (2026). Digital Identity Blog — 2026 developments (GOV.UK Wallet, ARF v2.4.0, EUDI Launchpad). https://vidos.id/blog
+
 - ### Provenance
   - sources:: W3C DID v1.0 Recommendation (2022); W3C Verifiable Credentials Data Model v1.1/v2.0; EUDI ARF v1.4; DIF specifications; Christopher Allen, "The Path to Self-Sovereign Identity" (2016); IETF SD-JWT draft; ISO/IEC 18013-5.
   - updated:: 2026-06-13
