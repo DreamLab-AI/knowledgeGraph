@@ -317,6 +317,23 @@ public:: true
   - Governance bodies: W3C (Web standards), ACM SIGLOG, ASL (Association for Symbolic Logic), IFIP Working Group 1.6 (Rewriting).
   - Logic is a foundational concern across AI safety (correctness guarantees), [[Governance]] (policy formalisation), and [[Data]] integration (schema alignment via ontological reasoning).
 
+- ### Current Landscape (2026)
+  - The "reasoning-model era" that began with OpenAI o1 in late 2024 reframed machine logic around long-horizon chain-of-thought and reinforcement learning from verifiable rewards (RLVR); DeepSeek-R1 (open-weights, January 2025) showed this reasoning behaviour could be elicited by pure RL on verifiable rewards with no supervised reasoning traces.
+  - Formal deductive logic reached competition frontier: at IMO 2025 an advanced Gemini with Deep Think solved five of six problems (35/42, gold) end-to-end in natural language under the official time limit, while Google's neuro-symbolic AlphaGeometry 2 delivered gold-medal geometry performance.
+  - Neural theorem proving over Lean 4 matured rapidly with DeepSeek-Prover-V2-671B (April 2025) reaching 88.9% pass ratio on MiniF2F-test and solving 47/658 PutnamBench problems, narrowing the gap between informal and formal mathematical reasoning.
+  - The dominant applied paradigm is now neuro-symbolic: LLMs autoformalise natural language into first-order logic, SAT/SMT (Z3), constraint programs or Lean, then hand off to deterministic solvers, with frameworks such as Logic-LM, VERUS-LM and adaptive multi-paradigm systems (EACL 2026) reporting 17-39% accuracy gains over pure chain-of-thought.
+  - Theoretical grounding advanced too: "Sound and Complete Neurosymbolic Reasoning with LLM-Grounded Interpretations" (NeSy 2025) embeds an LLM inside the interpretation function of a paraconsistent logic, preserving soundness and completeness despite the model's inconsistency.
+  - Key players span frontier labs (OpenAI o3/GPT-5, DeepSeek, Google DeepMind Gemini Deep Think, Anthropic, xAI) and an active academic neuro-symbolic community (NeSy conference; a January 2026 ScienceDirect survey of 178 papers maps the field across knowledge representation, learning/inference and formal reasoning).
+  - Open challenges persist: LogiEval-Hard (2025) exposes consistent failures (avg ~38% accuracy) across all frontier models on artificial-language and syllogism tasks, and hard autoformalisation benchmarks (IndiMathBench, PutnamBench) remain largely unsolved, with translation fidelity, solver brittleness and logical consistency the frontier bottlenecks as of 2026.
+
+- ### References
+  - 1. Emergent Mind / arXiv (2026). An Integrated Survey of Language Models, Neuro-symbolic Systems and Formal Reasoning. https://arxiv.org/html/2606.08728v1
+  - 2. Ren et al., DeepSeek-AI (2025). DeepSeek-Prover-V2: Advancing Formal Mathematical Reasoning via Reinforcement Learning for Subgoal Decomposition. https://arxiv.org/pdf/2504.21801
+  - 3. Allen, Chhikara, Ferguson, Ilievski & Groth (2025). Sound and Complete Neurosymbolic Reasoning with LLM-Grounded Interpretations (NeSy 2025). https://arxiv.org/abs/2507.09751
+  - 4. Anonymous (2025). Evaluating the Logical Reasoning Abilities of Large Language Models (LogiEval / LogiEval-Hard). https://openreview.net/pdf?id=uDP3P9TTRA
+  - 5. Adaptive LLM-Symbolic Reasoning via Dynamic Logical Solver Composition (EACL 2026). https://aclanthology.org/2026.eacl-long.54.pdf
+  - 6. Zylos Research (2026). Neuro-Symbolic AI for Agent Reasoning: Bridging Neural Fluency and Symbolic Rigour. https://zylos.ai/research/2026-03-21-neuro-symbolic-ai-agent-reasoning/
+
 - ### Provenance
   - sources:: Aristotle, *Prior Analytics* (c. 350 BCE); Frege, *Begriffsschrift* (1879); Gödel completeness theorem (1930); W3C OWL 2 Specification (2012); Robinson, "A Machine-Oriented Logic Based on the Resolution Principle" (1965); standard AI textbooks (Russell & Norvig, *Artificial Intelligence: A Modern Approach*)
   - updated:: 2026-06-13

@@ -242,6 +242,22 @@
   - **glTF** — Khronos Group's runtime 3D asset format designed for efficient delivery of 3D content to real-time renderers and web applications.
   - **SPIR-V** — Khronos intermediate shader representation, enabling portable shader compilation across Vulkan, OpenCL, and other runtimes.
 
+- ### Current Landscape (2026)
+  - Neural rendering became mainstream: NVIDIA launched DLSS 4 at CES 2025 alongside the Blackwell GeForce RTX 50 series, introducing the graphics industry's first real-time transformer-based Super Resolution and Ray Reconstruction plus Multi Frame Generation (up to three AI frames per rendered frame, ~8x uplift); at CES 2026 it followed with DLSS 4.5, adding a 2nd-generation Super Resolution transformer and 6X Dynamic Multi Frame Generation.
+  - By CES 2026 DLSS 4 was supported in over 250 games and became NVIDIA's most rapidly adopted gaming technology, with more than 800 games and apps carrying RTX features; DLSS 4.5 Ray Reconstruction (a 2nd-gen denoiser-plus-upscaler transformer) shipped in August 2026 across all RTX GPUs and is coming to Blender 5.3.
+  - AI-driven shading moved into the core pipeline: NVIDIA's RTX Kit brought RTX Neural Shaders, Neural Radiance Cache (learned multi-bounce indirect light), Neural Texture Compression and RTX Mega Geometry (ray-traced full-quality Nanite geometry), with neural-shading access to Tensor Cores added to Microsoft DirectX 12 via the Agility SDK preview in April 2025.
+  - 3D Gaussian Splatting consolidated as the dominant novel-view-synthesis representation, with 2025 work (VRSplat hitting 72+ FPS in VR, 3DGS2 second-order convergence, GSCache radiance caching) and production adoption such as Dune: Prophecy environments trained as ~16M-point splats on a single RTX 4090 for real-time scouting at 60-90 FPS.
+  - WebGPU reached critical mass: as of November 2025 it ships by default in Chrome, Edge, Firefox and Safari (Safari 26, Firefox 141), was declared Baseline in early 2026, and Chrome shipped WebGPU Compatibility Mode on Android to reach OpenGL ES 3.1 devices; the GPU for the Web Working Group intends to keep it at Candidate Recommendation rather than push to full W3C Recommendation.
+  - Open challenges as of 2026 include fragmented cross-platform WebGPU support (Linux and Android still maturing, WebGL fallbacks still required), temporal stability and artefact control in transformer-based frame generation and splatting under motion, memory and streaming costs for gigantic geometry, and vendor lock-in around proprietary neural-rendering stacks.
+
+- ### References
+  - 1. NVIDIA GeForce (2026). DLSS 4 Is Available In Over 250 Games, and Coming To More at CES 2026. https://www.nvidia.com/en-us/geforce/news/dlss-4-rtx-path-tracing-game-announcements-ces-2026/
+  - 2. NVIDIA GeForce (2026). DLSS 4.5 Ray Reconstruction + 1000 RTX Games & Apps Out Now. https://www.nvidia.com/en-us/geforce/news/dlss-4-5-ray-reconstruction-1000-rtx-games-apps-out-now/
+  - 3. NVIDIA Developer (2025). NVIDIA RTX Advances with Neural Rendering and Digital Human Technologies at GDC 2025. https://developer.nvidia.com/blog/nvidia-rtx-advances-with-neural-rendering-and-digital-human-technologies-at-gdc-2025/
+  - 4. web.dev / Google (2025). WebGPU is now supported in major browsers. https://web.dev/blog/webgpu-supported-major-browsers
+  - 5. SIGGRAPH / ACM (2025). Talks '25 Proceedings: The Environments of Dune: Prophecy through the Gaussian Splat. https://www.siggraph.org/wp-content/uploads/2025/08/Talks.html
+  - 6. NVIDIA (2025). NVIDIA Blackwell GeForce RTX 50 Series Opens New World of AI Computer Graphics. https://nvidianews.nvidia.com/news/nvidia-blackwell-geforce-rtx-50-series-opens-new-world-of-ai-computer-graphics
+
 - ### Provenance
   - sources:: ACM SIGGRAPH proceedings; Pharr, Jakob & Humphreys "Physically Based Rendering" (3rd ed.); Akenine-Möller et al. "Real-Time Rendering" (4th ed.); Khronos Group specifications
   - updated:: 2026-06-13

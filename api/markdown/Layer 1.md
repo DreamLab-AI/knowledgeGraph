@@ -307,6 +307,23 @@ public:: true
   - **[[W3C DID]] Core** — while not Layer-1-specific, Decentralised Identifiers are frequently anchored on Layer 1 networks, and W3C has published the DID Core specification as a W3C Recommendation.
   - Layer 1 networks operating as financial market infrastructure in major jurisdictions are increasingly subject to regulatory frameworks: MiCA in the European Union, guidance from the SEC and CFTC in the United States, and forthcoming frameworks in the UK (FCA).
 
+- ### Current Landscape (2026)
+  - Ethereum shipped two hard forks in 2025 — Pectra (7 May 2025), which added EIP-7702 account abstraction and raised the validator stake cap to 2,048 ETH, and Fusaka (3 December 2025), whose headline EIP-7594 PeerDAS lets validators sample blob data rather than download it in full, with Blob-Parameter-Only forks (BPO1 on 9 December 2025, BPO2 on 7 January 2026) lifting the per-block blob target/max to 14/21 and the L1 gas limit standardised at 60M.
+  - Ethereum's 2026 roadmap centres on Glamsterdam (mainnet targeted for the second half of 2026), introducing enshrined proposer-builder separation (ePBS) and groundwork for parallel execution, followed by Hegotá, which extends work on censorship resistance, native account abstraction and early post-quantum resilience.
+  - Solana's Firedancer/Frankendancer client (Jump Crypto, written in C) reached roughly 22-26% of stake by late 2025, cutting single-client risk, while the network completed its first full calendar year without downtime at ~400ms slot times on the Agave 3.0 client.
+  - Solana governance overwhelmingly approved Alpenglow in September 2025 — described by Anza as its biggest-ever core-protocol change — replacing TowerBFT/Proof of History with new Votor (voting) and Rotor (block propagation) components to push median finality from ~12.8 seconds toward 100-150 milliseconds, with staged rollout alongside Agave 4.x clients through late 2026.
+  - The base layer has specialised rather than consolidated: as of end-2025 there are 35+ active L1s securing roughly $120bn TVL, with distinct roles — Ethereum as settlement/data-availability layer, Solana and BNB Chain for high-throughput trading, plus dedicated "stablechains" optimised for stablecoin settlement and privacy-native chains (Aztec, Aleo, Namada).
+  - Avalanche's Etna hard fork replaced legacy subnets with sovereign Avalanche L1s, cutting the cost of launching a dedicated chain by over 99% and drawing institutional issuance such as Japan's Progmat moving billions in tokenised securities; Coinbase's Base L2 activated its Beryl hard fork in mid-2026 (B20 token standard, Reth V2, withdrawal finality cut from seven to five days).
+  - Open challenges into 2026 include cross-chain interoperability and intent-based routing to make fragmented L1/L2 ecosystems "feel like one chain", full Firedancer migration (1M TPS realistically a 2027-2028 target), and rising bars for institutional-grade compliance, predictable governance and eventual post-quantum security.
+
+- ### References
+  - 1. Ethereum Foundation (2025). Fusaka Mainnet Announcement. https://blog.ethereum.org/2025/11/06/fusaka-mainnet-announcement
+  - 2. Ethereum.org (2026). Fulu-Osaka (Fusaka) Roadmap. https://ethereum.org/roadmap/fusaka/
+  - 3. Cointelegraph / TradingView (2026). The biggest blockchain upgrades still to come in 2026. https://www.tradingview.com/news/cointelegraph:d99fef4c5094b:0-the-biggest-blockchain-upgrades-still-to-come-in-2026/
+  - 4. Hotcoin Research (2026). The 2026 L1 Upgrade Race: Ethereum's Hard Fork Roadmap vs Solana's Consensus Overhaul. https://www.hotcoin.com/en_US/learn/article/HotcoinResearchThe2026L1UpgradeRaceEthereumsHardForkRoadmapvsSolanasConsensusOverhaulWhichChainWillAnchortheFutureofFinance/
+  - 5. The Block (2025). 2026 Layer 1 Outlook. https://www.theblock.co/post/382935/2026-layer-1-outlook
+  - 6. BlockEden (2026). Ethereum vs Solana 2026: The Battle Reshapes After Pectra and Firedancer. https://blockeden.xyz/blog/2026/01/13/ethereum-vs-solana-2026-pectra-firedancer-comparison/
+
 - ### Provenance
   - sources:: Bitcoin Whitepaper (Nakamoto 2008); Ethereum Yellow Paper (Wood 2014); Ethereum Research blog; academic literature on Byzantine Fault Tolerance; Solana, Cardano, and Avalanche technical documentation
   - updated:: 2026-06-13

@@ -312,6 +312,22 @@ public:: true
   - **ISO/IEC 14739-1 (3D PDF)** — older standard for embedding 3D models in PDF documents, relevant in engineering documentation.
   - **Open Standards imperative**: the lack of a single universal binary format means pipelines must maintain conversion chains; the convergence around glTF (real-time) and USD (production/DCC) is narrowing this gap.
 
+- ### Current Landscape (2026)
+  - The Alliance for OpenUSD (AOUSD) ratified the OpenUSD Core Specification 1.0 on 17 December 2025 — the first production-ready open standard formalising USD's data models for 3D asset interchange — with Core Specification 1.1 (animation, large-scene scaling, compliance testing) already in progress for 2026.
+  - USD and glTF are converging rather than competing: the AOUSD–Khronos liaison and the Metaverse Standards Forum's "3D Asset Interoperability using USD and glTF" working group are standardising round-tripping, PBR material alignment (OpenPBR/MaterialX), and physics, as presented at the SIGGRAPH 2025 Vancouver Birds-of-a-Feather (12 August 2025); glTF 2.0 remains the delivery format and is now an ISO/IEC international standard.
+  - 3D Gaussian splatting is being standardised as a first-class asset type: a joint glTF/AOUSD/MPEG education session on 10 February 2026 covered a glTF Gaussian-splat extension (ratification expected around Q2 2026), OpenUSD's Particle Field schema, and MPEG splat-coding requirements.
+  - Generative 3D-asset creation crossed from research demo to production tool in 2025–2026, with meshes, clean geometry and PBR textures produced in minutes: leaders include Tencent's Hunyuan3D (open weights, up to 8K PBR), Microsoft's MIT-licensed TRELLIS.2 (1536-res assets in under 20s on 24GB VRAM), VAST's Tripo 3.0/H3.1, and Deemos/Hyper3D's Rodin Gen-2/2.5 for hero assets.
+  - New milestones in 2026 include Meshy-6 (18 January 2026) adding a low-poly game mode and multi-colour 3D printing, and ByteDance's closed Seed3D 2.0 (April 2026) reporting a 69–89.9% human-preference win rate on geometry and texture.
+  - The frontier moved beyond single objects to whole explorable scenes: World Labs' Marble reached general availability on 12 November 2025, turning text/image/video prompts into navigable 3D worlds exported as Gaussian splats or meshes.
+  - Open challenges as of 2026 remain game-ready topology (auto-retopology, quad meshes and rigging still favour tools like Meshy and Rodin), lossless USD↔glTF round-tripping where capability gaps persist, and licensing friction — Hunyuan3D's open weights ship under a community licence with regional restrictions.
+
+- ### References
+  - 1. Alliance for OpenUSD (2025). Alliance for OpenUSD Announces Core Specification 1.0. https://aousd.org/news/core-spec-announcement/
+  - 2. Alliance for OpenUSD (2026). AOUSD Year in Review: A Landmark Year for OpenUSD Standardisation and Growth in 2025. https://aousd.org/blog/aousd-year-in-review-a-landmark-year-for-openusd-standardization-and-growth-in-2025/
+  - 3. Metaverse Standards Forum / Khronos (2026). 3D Gaussian Splatting Standardization Updates - glTF, AOUSD, MPEG (10 February 2026 education session). https://www.youtube.com/watch?v=f7tn0MA8TXM
+  - 4. 3D AI Studio (2026). State of AI 3D Generation 2026 - Market, Models. https://www.3daistudio.com/state-of-ai-3d-generation-2026
+  - 5. Entagl (2026). AI 3D Generation in 2026: What's New. https://www.entagl.com/blog/ai-3d-generation-2026-product-ar-creative?lang=en
+
 - ### Provenance
   - sources:: [[W3C]], [[Khronos Group]], [[Academy Software Foundation]]
   - updated:: 2026-06-13

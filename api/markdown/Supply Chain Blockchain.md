@@ -357,6 +357,24 @@ public:: true
   - Privacy requirements between competitors
   - Cost of IoT sensor deployment and maintenance
 
+- ### Current Landscape (2026)
+  - The dominant 2024-2026 shift is from voluntary pilots to regulation-driven, standards-first traceability: the EU's Ecodesign for Sustainable Products Regulation (ESPR, Regulation (EU) 2024/1781) entered into force in July 2024 and anchors the Digital Product Passport (DPP), whose central EU Registry went live in a testing environment on 20 July 2026 ahead of the first mandatory deadline of 18 February 2027 for certain large batteries under the EU Battery Regulation (EU) 2023/1542.
+  - Blockchain is explicitly optional rather than mandated for DPPs, but is positioned as a strong integrity layer; eIDAS 2.0 (2024) introduced Electronic Registers confirming the admissibility of blockchain-recorded traceability evidence, and industry forecasts cited in late-2025 panels put blockchain-based systems at roughly 45% of DPP solutions.
+  - The data-standards stack has matured decisively: GS1 EPCIS 2.0 and CBV 2.0 (JSON-LD/REST) plus GS1 Digital Link are now the default event and identifier model, with the retailer-led 2D-barcode "Sunrise 2027" pushing QR/Data Matrix acceptance at point of sale; W3C Verifiable Credentials 2.0 reached Recommendation status in May 2025 for supplier attestations and audit credentials.
+  - The prevailing architecture has consolidated on a "thin-ledger" pattern (hashes anchored on-chain, bulk data held off-chain) combined with Verifiable Credentials, DIDs and SCITT transparency, alongside the UN Transparency Protocol (UNTP) adopting VCs/DIDs (did:web, JSON-LD) for anti-greenwashing traceability.
+  - Enterprise consolidation continued: IBM withdrew its IBM Blockchain Transparent Supply and Supply Chain Intelligence Suite cloud services (announced January 2025), following the earlier shutdowns of Maersk/IBM TradeLens (2023) and the Marco Polo trade-finance consortium (insolvency 2023) and the archiving of Hyperledger Grid, leaving Hyperledger Fabric, IBM Food Trust (300+ participants across 25 countries), VeChainThor/ToolChain, SAP GreenToken and Oracle Blockchain Platform as the surviving anchors.
+  - Regulatory pressure now spans multiple instruments beyond ESPR - the EU Toy Safety Regulation (2025/2509) embedding DPP requirements, the Green Claims Directive moving toward enforcement in September 2026, and the CSDDD - while in the US the FDA proposed a 30-month extension of FSMA 204 traceability (from January 2026 to 20 July 2028) even as Walmart continues to mandate EPCIS/ASN data now.
+  - On the public-chain frontier, emerging Ethereum standards such as ERC-7683 (intent-based, conditional "release payment on inspection" logistics execution) and ERC-7802 (cross-chain messaging) are being explored for cross-border and rollup coordination.
+  - Open challenges as of 2026 remain interoperability and fragmentation: the W3C VC/DID ecosystem still has no dominant, mutually interoperable "flavour", eight CEN-CENELEC harmonised DPP standards are only partially published (six of eight), and upstream evidence quality, tier-N supplier data collection, and privacy-appropriate integrity choices (permissioned vs public+ZK) are the practical blockers to scaling.
+
+- ### References
+  - 1. European Commission, DG GROW (2026). The Digital Product Passport Registry is now live. https://single-market-economy.ec.europa.eu/news/digital-product-passport-registry-now-live-2026-07-20_en
+  - 2. 7BlockLabs (2025). Blockchain in Supply Chain Management: Where to Start in 2025. https://www.7blocklabs.com/blog/blockchain-in-supply-chain-management-where-to-start-in-2025
+  - 3. GS1 (2025). Verifiable Credentials and Decentralised Identifiers - Technology Landscape. https://ref.gs1.org/docs/2025/VCs-and-DIDs-tech-landscape
+  - 4. Blockchain Council (2026). Enterprise Blockchain Supply Chain Systems. https://www.blockchain-council.org/blockchain/enterprise-blockchain-supply-chain-systems/
+  - 5. IBM (2025). Cloud service program withdrawal of IBM Supply Chain Intelligence Suite and IBM Blockchain Transparent Supply. https://www.ibm.com/support/pages/cloud-service-program-withdrawal-ibm-supply-chain-intelligence-suite-and-ibm-blockchain-transparent-supply-and-select-parts-withdrawal-ibm-sterling-order-management
+  - 6. PSQR (2026). The State of Supply Chain Traceability in 2026. https://psqr.eu/publications-resources/state-of-supply-chain-traceability-2026/
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

@@ -251,6 +251,22 @@ public:: true
   - Edge and cloud offload architectures supplement on-device compute for workloads — particularly neural radiance field reconstruction, photogrammetry, and large-model inference — that exceed wearable power budgets. [[Edge Computing]] nodes co-located with 5G base stations target sub-20 ms round-trip latencies required for comfortable tethered rendering.
   - [[Simultaneous Localisation and Mapping]] pipelines on modern devices integrate visual-inertial odometry, plane detection, mesh reconstruction, and semantic labelling within a unified scene graph maintained across sessions, enabling persistent AR anchors tied to physical locations.
 
+- ### Current Landscape (2026)
+  - Samsung's Galaxy XR, the first headset running Google's Android XR (Android-14-based, Snapdragon XR2+ Gen 2, 27MP micro-OLED, Gemini built in), launched in October 2025 at $1,799, breaking Apple's premium price monopoly and marking the Android ecosystem's entry into high-end spatial computing.
+  - Apple Vision Pro momentum reversed sharply: after roughly 390,000 units in its 2024 launch year, it shipped only about 85,000 in 2025 (a ~78% year-on-year fall), prompting an M5-chip refresh in October 2025 and reports that Apple has pivoted toward smart glasses rather than a near-term Vision Pro successor.
+  - Smart glasses became the growth story, shipping around 7.25 million units in 2025 (roughly half of all XR devices and up ~247% on 2024), led by Ray-Ban Meta Gen 2; total XR shipments reached about 14.5 million units in 2025, up 41.6% year-on-year, with the market valued near $20.43 billion and forecast toward $85 billion by 2030 (Mordor Intelligence, ~33% CAGR).
+  - Khronos ratified the OpenXR Spatial Entities Extensions in June 2025 (part of OpenXR 1.1), the first open standard for spatial anchors, plane/marker tracking and cross-session persistence; by 2026 there were 11 conformant runtimes and engine support across Unity, Unreal and Godot, reframing OpenXR from a portability layer into a spatial-computing platform (SIGGRAPH 2026 session theme).
+  - AI became a standard headset feature: Gemini Live on Android XR, Apple Intelligence in visionOS, and multimodal assistants aware of spatial context, alongside OpenUSD/USDZ consolidating as the cross-vendor 3D interchange format (Apple, NVIDIA Omniverse, Adobe, Autodesk).
+  - WebXR matured as the browser-native layer, enabled by default in Safari on visionOS 2 (immersive-vr sessions; AR module still unsupported), with Apple working with the W3C on a new "transient-pointer" input mode and WebGPU pushing web spatial rendering forward.
+  - Open challenges as of 2026 remain weak consumer demand for premium headsets, comfort and weight, thin native app catalogues, fragmented spatial-video codecs beyond MV-HEVC, and true optical see-through AR glasses (Snap Spectacles, Meta Orion, XREAL) still short of a mainstream all-day form factor.
+
+- ### References
+  - 1. Treeview Studio (2026). XR & Smart Glasses Market Statistics Report (2026). https://treeview.studio/blog/xr-spatial-computing-smart-glasses-market-statistics-report
+  - 2. Treeview Studio (2026). AR/VR/MR/XR Spatial Computing Industry Statistics Report (2026). https://treeview.studio/blog/ar-vr-mr-xr-metaverse-spatial-computing-industry-stats
+  - 3. Youngju.dev (2026). AR/VR & Spatial Computing 2026 Complete Guide — visionOS, Meta Quest 3, Android XR, OpenXR & OpenUSD Deep Dive. https://www.youngju.dev/blog/culture/2026-05-16-ar-vr-spatial-computing-2026-visionos-2-meta-quest-3-android-xr-unity-unreal-5-5-reality-composer-pro-deep-dive.en
+  - 4. Develop3D (2025). Spatial Entities Extensions released by Khronos and OpenXR. https://develop3d.com/vr-ar-mr/spatial-entities-extensions-released-by-khronos-and-openxr/
+  - 5. VR.org (2026). OpenXR Is Quietly Becoming a Spatial Computing Platform (SIGGRAPH 2026). https://vr.org/articles/openxr-spatial-computing-platform-siggraph-2026
+
 - ### Provenance
   - sources:: Simon Greenwold, "Spatial Computing" (MIT thesis, 2003); Khronos Group OpenXR specification; W3C WebXR Device API; Apple Vision Pro product documentation (2024); Meta Quest platform developer documentation; academic literature on SLAM, AR/VR systems, and HCI
   - updated:: 2026-06-13

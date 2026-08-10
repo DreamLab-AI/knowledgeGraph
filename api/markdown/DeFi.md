@@ -271,6 +271,24 @@ public:: true
   - **Financial Action Task Force (FATF)**: the FATF has issued guidance classifying DeFi protocols as virtual asset service providers (VASPs) in certain jurisdictions when sufficiently decentralised controls are absent, a contested regulatory classification.
   - **Markets in Crypto-Assets (MiCA)**: the EU MiCA framework (effective 2024–2025) addresses stablecoin issuers and CASPs, with ongoing regulatory analysis of decentralised protocol coverage.
 
+- ### Current Landscape (2026)
+  - Regulation shifted from headwind to enabling layer: the US GENIUS Act (S.1582) was signed into law on 18 July 2025 as Public Law 119-27, creating a federal payment-stablecoin regime that mandates 1:1 liquid reserves, monthly reserve disclosure, and a ban on issuers paying interest or yield to holders, with implementing regulations due by mid-2026.
+  - In parallel the EU's MiCA regime moved into phased enforcement (ESMA required CASPs to delist non-compliant stablecoins by end-January 2025), while narrowly carving out "fully decentralised" services under Recital 22, leaving ESMA Level 3 guidance on DeFi expected during 2026.
+  - Yield models were forced to restructure around the issuer interest ban, pivoting to swap fees, liquidity incentives, tokenised-T-bill exposure and KYC-gated institutional pools (Aave Arc, Maple Finance) rather than direct stablecoin rewards.
+  - Tokenised real-world assets became the standout growth category: on-chain public-market RWA value grew from roughly USD 5.6bn to over USD 16-18bn during 2025 and pushed past USD 30bn on-chain by early 2026, led by BlackRock's BUIDL, Ondo Finance and Franklin Templeton's BENJI, though most value remains inside permissioned rails with limited DeFi composability.
+  - Major protocol upgrades reshaped the stack: Aave v4 introduced a unified cross-chain liquidity layer (borrow on one chain against collateral posted on another), Uniswap v4 shipped customisable "hooks" for dynamic fees and on-chain limit orders, and Uniswap activated its long-delayed fee switch via the UNIfication proposal in late December 2025.
+  - Aave launched a structured AAVE buyback programme (about USD 1m/week over a six-month pilot) tied to a new fee-switch mechanism, marking a broader shift toward revenue-backed tokenomics over emissions-driven farming.
+  - The technical frontier converged on account abstraction and AI agents: ERC-4337 smart accounts plus EIP-7702 (letting ordinary wallets act temporarily as smart accounts), Circle's burn-and-mint CCTP as the institutional cross-chain USDC standard, and the ERC-8004 trustless-AI-agent standard going live on mainnet on 29 January 2026.
+  - Open challenges as of 2026 include a sharp TVL drawdown through the year (DeFiLlama tracking a retreat toward roughly USD 72-98bn by mid-2026 from the ~USD 171bn October-2025 cycle peak), the "composability gap" keeping tokenised RWAs siloed in closed rails, and unresolved jurisdictional treatment of DeFi front-ends and developers under US enforcement-led policy and the UK FCA perimeter regime (mandatory from October 2027).
+
+- ### References
+  - 1. US Congress (2025). S.1582 — GENIUS Act, 119th Congress, Public Law 119-27. https://www.congress.gov/bill/119th-congress/senate-bill/1582
+  - 2. World Economic Forum (2025). Crypto rule comparison: the US GENIUS Act versus EU's MiCA. https://www.weforum.org/stories/financial-and-monetary-systems/us-genius-act-eu-mica-convergence-crypto-rules/
+  - 3. The Block (2025). 2026 DeFi Outlook. https://www.theblock.co/post/383120/2026-defi-outlook
+  - 4. Symbiosis Finance (2026). How DeFi works now: 2026 tech stack explained. https://symbiosis.finance/blog/defi-in-2025-2026-what-changed-technically
+  - 5. Dwellir (2026). The State of DeFi in 2026. https://www.dwellir.com/blog/state-of-defi-2026
+  - 6. European Systemic Risk Board (2025). Crypto-assets and decentralised finance. https://www.esrb.europa.eu/pub/pdf/reports/esrb.report202510_cryptoassets.en.pdf
+
 - ### Provenance
   - sources:: Ethereum documentation; Uniswap whitepaper; Aave protocol documentation; MakerDAO whitepaper; FATF DeFi guidance; established academic and industry literature on decentralised finance
   - updated:: 2026-06-13

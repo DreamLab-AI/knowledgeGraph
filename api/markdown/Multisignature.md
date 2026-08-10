@@ -257,6 +257,23 @@ public:: true
   - Smart contract multisig introduces additional attack surface: contract bugs, signature replay, malicious calldata, and governance manipulation. Formal verification and audit are essential.
   - Time-lock extensions (CLTV/CSV in Bitcoin, TimelockController in OpenZeppelin) are frequently combined with multisig to add a delay period during which a disputed transaction can be vetoed.
 
+- ### Current Landscape (2026)
+  - The 21 February 2025 Bybit theft (~$1.46bn: 401,347 ETH plus stETH/mETH/cmETH) became the largest crypto heist on record and reframed multisig risk: attackers did not break the M-of-N cryptography but compromised a Safe{Wallet} developer machine and injected scoped JavaScript into app.safe.global, so all signers reviewed a benign transfer on a spoofed UI while their Ledger devices signed a malicious delegatecall that swapped the wallet's implementation contract. The FBI attributed it to North Korea's Lazarus/TraderTraitor cluster on 26 February 2025.
+  - The incident shifted the frontier from on-chain signing logic to signer-side integrity: blind-signing on hardware wallets, verified/clear-signing, transaction simulation and independent second-channel verification are now treated as mandatory, since a year on only ~3.5% of the stolen funds had been frozen despite ~89% initially being traceable.
+  - Safe (formerly Gnosis Safe) remains the dominant EVM smart-contract multisig for DAOs and treasuries, built on the Singleton-plus-Proxy pattern with Modules and Guards; its Safe{Core} 4337 Module lets a Safe act as an ERC-4337 account (EntryPoint v0.7 live mid-2024) while keeping native threshold logic, and Safe v1.5.0 shipped as the current core release.
+  - Account abstraction matured into the default account model: ERC-4337 passed 30 million-plus deployed smart accounts by June 2026 across Ethereum, Base, Arbitrum, Optimism and Polygon, and EIP-7702 (shipped in the Pectra upgrade on 7 May 2025) now lets existing EOAs temporarily act as programmable multi-signer accounts without migrating address. Coinbase Smart Wallet (passkey-based, launched 5 June 2024) and MetaMask's 2025 Smart Account/Delegation Toolkit broadened adoption.
+  - On Bitcoin, key-aggregation displaced script multisig for cost and privacy: MuSig2 was standardised as BIP-327, Ledger added MuSig2 in Bitcoin app v2.4.0 (April 2025), BitGo reported ~30% per-input fee savings, and Nunchuk launched a Taproot MuSig2 multisig in beta; a MuSig2 or FROST key-path spend is ~57.5 vB versus ~104 vB for a P2WSH 2-of-3.
+  - Threshold Schnorr (FROST) advanced toward true t-of-n with a single on-chain signature: RFC 9591 was published June 2024, BIP-445 specifying the FROST3/Taproot variant was assigned in January 2026, and Frostsnap devices plus the FROSTR/nostr tooling shipped in 2025 — though no production Bitcoin wallet had deployed FROST on mainnet as of mid-2026.
+  - Open challenges as of 2026: securing the human-in-the-loop signing surface against supply-chain and UI-spoofing attacks; fragmented, proprietary MPC threshold schemes with no cross-vendor key migration standard; EntryPoint/validation divergence across L2s where the same UserOperation can validate on one chain and revert on another; and audit depth for paymaster, aggregator and account-upgrade paths lagging behind DeFi-grade scrutiny.
+
+- ### References
+  - 1. Cloudskope (2025). Bybit Hack 2025: $1.5B Stolen by North Korea. https://www.cloudskope.com/breaches/bybit-hack-2025
+  - 2. BleepingComputer (2025). Lazarus hacked Bybit via breached Safe{Wallet} developer machine. https://www.bleepingcomputer.com/news/security/lazarus-hacked-bybit-via-breached-safe-wallet-developer-machine/
+  - 3. BlockEden (2026). Bybit's $1.5B Hack One Year Later: 88% Traceable, Only 3% Frozen. https://blockeden.xyz/blog/2026/03/11/bybit-1-5b-hack-one-year-retrospective-lazarus-crypto-theft/
+  - 4. Eco (2026). Safe Wallet Deep Dive 2026: Multisig and Smart Accounts. https://eco.com/support/en/articles/15254042-safe-wallet-deep-dive-2026-multisig-and-smart-accounts
+  - 5. thirdweb (2026). ERC-4337 Account Abstraction in 2026: How Smart Wallets Are Reshaping Web3 UX. https://blog.thirdweb.com/erc-4337-account-abstraction-in-2026-how-smart-wallets-are-reshaping-web3-ux/
+  - 6. Spark (2026). MPC vs Multisig vs Threshold Signatures: Bitcoin Custody. https://www.spark.money/research/bitcoin-mpc-vs-multisig-custody
+
 - ### Provenance
   - sources:: Bitcoin BIP 11, BIP 16, BIP 327, BIP 340-342; Ethereum ERC-4337; Gnosis Safe documentation; NIST SP 800-57; academic literature on threshold signatures and MPC (Shamir 1979, Boneh et al.)
   - updated:: 2026-06-13

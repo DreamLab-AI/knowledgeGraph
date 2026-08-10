@@ -297,6 +297,23 @@ public:: true
   - owl-class:: series-elastic-actuation:Series Elastic Actuation
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - The commercial humanoid wave has reframed the SEA-versus-quasi-direct-drive (QDD) debate: patent-landscape analysis (PatSnap, 2026) records over 530,000 humanoid-actuator patents and notes that while SEAs remain the preferred architecture for safe human contact and dynamic locomotion in research, most 2026 volume platforms (Tesla Optimus Gen 3, Figure 02, Unitree G1/H1, UBTECH Walker) have converged on electric QDD, and Boston Dynamics moved Atlas off hydraulics to an electric platform across 2024–2025.
+  - Design work in 2024–2026 has pushed force and power density sharply upward; a single-coil-spring SEA reported among the highest force densities in the field at roughly 4,634 N/kg and 235 W/kg for powered knee exoskeletons, emulating a bidirectional torsional spring from one coil spring plus a backdrivable ball-screw.
+  - Sony researchers (Koda et al., arXiv:2409.15791, Sept 2024) demonstrated a compact bidirectional torsion-coil-spring SEA on a single-legged robot achieving compliant landing and continuous hopping under simple PD control, signalling SEA interest for small entertainment and consumer robots, not just heavy legged platforms.
+  - Low-cost and open-hardware SEAs matured: the OpenSEA 3D-printed planetary-gear torsional-spring actuator for elbow-rehabilitation exoskeletons (Frontiers in Robotics and AI, Feb 2025) was released openly to widen clinical access, reflecting a broader open-source actuation trend.
+  - Novel transmission topologies target the distal-mass problem: KAIST's Flexi-SEA (IEEE/ASME Transactions on Mechatronics, 2025) uses a proximal motor driving a distal spring-loaded end-effector through a flexible shaft to cut moment of inertia without cable-slack delays, while variable-transmission SEAs (VTSEA, ICRA 2024) switch discrete gear ratios across walking, running and sit-to-stand modes.
+  - Control research has shifted toward observer-based, disturbance-observer and adaptive/learning-driven torque controllers, plus proprioceptive grasp and contact-stiffness estimation from spring deflection (per the EmergentMind SEA survey, updated Sept 2025), reducing reliance on external force/torque sensors.
+  - The open frontier as of 2026 remains the intrinsic bandwidth ceiling imposed by the series spring: SEAs act as a mechanical low-pass filter on force transmission, so variable-stiffness actuators (VSAs) are being pursued to escape the fixed-stiffness limitation, and the field is still resolving whether passive elastic compliance or low-ratio backdrivable QDD wins for impact-rich, at-scale humanoids.
+
+- ### References
+  - 1. PatSnap (2026). Humanoid robot actuators: 530,554+ patents analysed. https://www.patsnap.com/resources/blog/articles/humanoid-robot-actuators-530554-patents-analysed/
+  - 2. EmergentMind (2025). Series Elastic Actuators in Robotics. https://www.emergentmind.com/topics/series-elastic-actuators-seas
+  - 3. Koda, Y., Osawa, H., Nagatsuka, N., Kariya, S., Inagawa, T. & Ishizuka, K. (2024). Development of Bidirectional Series Elastic Actuator with Torsion Coil Spring and Implementation to the Legged Robot. arXiv:2409.15791. https://arxiv.org/abs/2409.15791
+  - 4. Jenks, B., Levan, H. & Stefanovic, F. (2025). OpenSEA: a 3D printed planetary gear series elastic actuator for a compliant elbow joint exoskeleton. Frontiers in Robotics and AI. https://doi.org/10.3389/frobt.2025.1528266
+  - 5. KAIST (2025). Flexi-SEA: Flexible-Shaft-Driven Series Elastic Actuator for Wearable Robots. IEEE/ASME Transactions on Mechatronics. https://pure.kaist.ac.kr/en/publications/flexi-sea-flexible-shaft-driven-series-elastic-actuator-for-weara/
+  - 6. PatSnap Eureka (2026). SEA vs Quasi-Direct Drive for Legged Robots. https://www.patsnap.com/resources/blog/rd-blog/sea-vs-quasi-direct-drive-for-legged-robots-patsnap-eureka/
+
 - ### Provenance
   - sources:: Pratt & Williamson (1995) IEEE IROS; IEEE Transactions on Robotics SEA survey literature; ISO TS 15066:2016; Hurst et al. ATRIAS; Sup et al. Vanderbilt prosthetic ankle
   - updated:: 2026-06-13

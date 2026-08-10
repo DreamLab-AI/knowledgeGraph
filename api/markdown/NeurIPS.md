@@ -261,6 +261,23 @@ public:: true
   - **2020** — Fully virtual format due to COVID-19; broader-impact review criterion introduced.
   - **2021-present** — Hybrid and in-person formats resume; ethics review board formalised; competition track expanded.
 
+- ### Current Landscape (2026)
+  - NeurIPS 2025 (the 39th edition, 2-7 December) ran for the first time as a dual-location event, headquartered at the San Diego Convention Center with a co-located secondary site in Mexico City (Hilton Reforma, 30 November - 5 December), the first time the conference operated outside its traditional single US/Canada venue.
+  - Scale reached record levels: the main track drew 21,575 valid submissions (up roughly 38% on 2024's 15,671) and accepted 5,290 papers for a 24.5% acceptance rate, supported by a reviewing pool of over 20,500 reviewers, 1,663 area chairs and 199 senior area chairs; total registrants numbered around 26,000, with about 24,500 in person in San Diego.
+  - Award-winning work signalled a shift from raw scaling towards reasoning and systems: the 2025 Best Paper Awards honoured seven papers, including "Gated Attention for Large Language Models" (Qiu et al., Alibaba), "Why Diffusion Models Don't Memorise" (Bonnaire et al.), "1000 Layer Networks for Self-Supervised RL" (Wang et al.) and the datasets-track winner "Artificial Hivemind" (Jiang et al.); the Test of Time Award went to Faster R-CNN (Ren, He, Girshick, Sun, NeurIPS 2015, 56,700+ citations).
+  - Geopolitically, US and Chinese institutions produced roughly 2,450 and 2,370 accepted papers respectively, together comprising nearly 90% of accepted work, with the two nations effectively tied on paper counts and top awards.
+  - Peer review integrity became the defining governance issue: NeurIPS issued a formal 2025 LLM policy permitting AI writing assistance but requiring disclosure of methodologically important LLM use and holding authors fully responsible for verifying citations, while reviewers are barred from sharing submissions with any LLM.
+  - In January 2026 GPTZero reported that over 100 AI-hallucinated citations spanning at least 53 accepted 2025 papers had slipped past reviewers, prompting a measured NeurIPS board statement that it is actively monitoring LLM use and had already instructed reviewers to flag hallucinations.
+  - Governance also tightened around reviewer conduct: under the "responsible reviewing" initiative, chairs may now withhold reviews from authors who miss their own reviewing duties and desk-reject the co-authored papers of grossly negligent reviewers; a November 2025 OpenReview security breach exposing reviewer identities triggered a firm confidentiality reaffirmation.
+  - Looking to 2026, the main track is planning a controlled experiment in which reviewers receive sanctioned OpenReview-provided LLM support on some papers and none on others, alongside stricter dataset requirements such as mandatory Croissant metadata and code release for artifact submissions.
+
+- ### References
+  - 1. NeurIPS (2025). NeurIPS 2025 Fact Sheet. https://media.neurips.cc/Conferences/NeurIPS2025/press/NeurIPS2025-Fact_Sheet.pdf
+  - 2. NeurIPS Program Committee Chairs (2025). Announcing the NeurIPS 2025 Best Paper Awards. https://blog.neurips.cc/2025/11/26/announcing-the-neurips-2025-best-paper-awards/
+  - 3. Fortune / GPTZero (2026). NeurIPS research papers contained 100+ AI-hallucinated citations. https://fortune.com/2026/01/21/neurips-ai-conferences-research-papers-hallucinations/
+  - 4. NeurIPS (2025). NeurIPS 2025 Policy on the Use of Large Language Models. https://neurips.cc/Conferences/2025/LLM
+  - 5. IntuitionLabs (2025). NeurIPS 2025: A Guide to Key Papers, Trends & Stats. https://intuitionlabs.ai/articles/neurips-2025-conference-summary-trends
+
 - ### Provenance
   - sources:: NeurIPS Foundation (neurips.cc); Advances in Neural Information Processing Systems proceedings; academic literature on conference impact metrics; established training-data knowledge of AI research community.
   - updated:: 2026-06-13

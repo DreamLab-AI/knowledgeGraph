@@ -271,6 +271,22 @@ public:: true
     - NIST is standardising threshold signature schemes under its post-quantum cryptography process; quorum-based key custody is expected to become a compliance baseline for custodians.
     - [[FROST]] (Flexible Round-Optimised Schnorr Threshold signatures) is an IETF draft defining a performant t-of-n signing scheme.
 
+- ### Current Landscape (2026)
+  - Consensys Quorum has effectively converged with Hyperledger Besu: as of 2025-2026 Consensys and the ecosystem recommend Besu for all new permissioned deployments, while GoQuorum (latest release v24.4.1, June 2024) is kept in maintenance and remains in production at several major banks and financial institutions.
+  - QBFT (Quorum Byzantine Fault Tolerant) is now the de facto standard consensus for new permissioned Ethereum networks; the EEA finalised the QBFT specification in 2023, Besu made QBFT snap-sync default in 25.7.0 and shipped an IBFT-to-QBFT migration path in 25.3.0 plus faster quorum-recovery (early round change) since 25.2.0.
+  - Besu moved under Linux Foundation Decentralized Trust (LF Decentralized Trust) governance, which launched a Besu Certified Service Provider programme in June 2025 (first CSPs: Consensys, Kaleido, Cheesecake Labs, CPQD, DSR Corporation, Kerala Blockchain Academy) and reported Besu at roughly 16-18% of Ethereum mainnet execution clients.
+  - The classic Quorum privacy stack is being retired: LF Decentralized Trust announced the sunsetting of Tessera private transactions and smart-contract permissioning (September 2024), and native Tessera privacy was removed from Besu in release 25.6.0 (June 2025), pushing users toward application-layer privacy.
+  - New privacy frameworks have stepped in: Kaleido's Paladin (pluggable EVM privacy with privacy groups, private tokens and a notary system) graduated from LFDT Lab to a full project in November 2025 with central and commercial bank adopters, and the ZK-oriented Minokawa (Compact language) was contributed in September 2025.
+  - Besu tracked Ethereum's roadmap closely, delivering Pectra/Prague support (activated 2025-05-07, releases 25.4.0-25.5.0) and Fusaka/BPO forks across 2025, keeping permissioned Quorum-lineage networks aligned with mainnet EVM semantics.
+  - Adoption is being driven by real-world asset tokenisation, CBDC pilots and institutional finance (Citi joined the Besu for Financial Services working group; Deutsche Bundesbank and Bank of Korea joined LFDT), while open challenges centre on migrating legacy GoQuorum/Tessera deployments, EIP-4444 history expiry, and modularising consensus out of the core Besu monorepo.
+
+- ### References
+  - 1. Chainlaunch (2026). QBFT in Besu: Genesis Config, Validators, and Block Time. https://chainlaunch.dev/blog/qbft-consensus-besu-guide
+  - 2. LF Decentralized Trust (2024). Sunsetting Tessera and Simplifying Hyperledger Besu. https://www.lfdecentralizedtrust.org/blog/sunsetting-tessera-and-simplifying-hyperledger-besu
+  - 3. LF Decentralized Trust / Linux Foundation (2025). LF Decentralized Trust Announces Six New Members, Expanded Certified Service Provider Program. https://www.linuxfoundation.org/press/lf-decentralized-trust-announces-six-new-members-expanded-certified-service-provider-program-1
+  - 4. Ledger Insights (2025). Paladin privacy framework graduates as Bank of Korea joins LF Decentralized Trust. https://www.ledgerinsights.com/paladin-privacy-framework-graduates-as-bank-of-korea-joins-lf-decentralized-trust/
+  - 5. LF Decentralized Trust (2025). 2025 Q2 Besu Project Update. https://lf-decentralized-trust.github.io/governance/project-updates/2025/2025-Q2-Besu/
+
 - ### Provenance
   - sources:: Lamport et al. "The Byzantine Generals Problem" (1982); Ongaro & Ousterhout "In Search of an Understandable Consensus Algorithm" (2014); Mazières "The Stellar Consensus Protocol" (2015); Ethereum Beacon Chain specs; OpenZeppelin Governor documentation; Polkadot OpenGov RFC
   - updated:: 2026-06-13

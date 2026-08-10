@@ -348,6 +348,23 @@ public:: true
   - [[Artificial Intelligence]] planning layers (large language model-based task planners, reinforcement-learning controllers) are increasingly layered atop traditional robot middleware.
   - Edge computing and neuromorphic chips reduce latency for time-critical perception-action loops.
 
+- ### Current Landscape (2026)
+  - The defining shift of 2024-2026 is the rise of robot foundation models: Physical Intelligence released the pi-0 generalist VLA (October 2024) and pi-0.5 with open-world generalisation (April 2025), while NVIDIA open-sourced Isaac GR00T N1 at GTC (March 2025) and iterated to GR00T N1.6 (December 2025) and the Apache-2.0 GR00T 1.7 checkpoint, all built on the dual-system Vision-Language-Action architecture (a VLM planner plus a diffusion-transformer action expert).
+  - Google DeepMind advanced embodied AI from Gemini Robotics and Gemini Robotics-ER (March 2025) to Gemini Robotics 2 (July 2026), adding whole-body humanoid control, multi-robot teaming, an on-device variant, and the ASIMOV-Agentic safety benchmark.
+  - Humanoid robots crossed from demo to real production: Figure AI's Figure 02 completed an 11-month programme at BMW Group Plant Spartanburg (1,250+ operating hours, 90,000+ sheet-metal parts, supporting 30,000+ X3 vehicles) confirmed by BMW, and the company moved Figure 03 into logistics sequencing; Agility Robotics' Digit is deployed with GXO and Amazon.
+  - Boston Dynamics retired the hydraulic Atlas (2024) and moved the fully electric Atlas into production, showcasing sim-trained whole-body behaviours at CES 2026 with 2026 fleets committed to Hyundai and Google DeepMind; 1X began shipping its NEO and EVE platforms.
+  - Scale is now concentrated in China: global humanoid shipments grew an estimated ~500% in 2025 to roughly 16,000-20,000 units, with AgiBot (cumulative ~15,000 by mid-2026) and Unitree accounting for close to 90% of volume, and 2026 projections of 50,000-100,000+ units.
+  - Tesla Optimus remains a laggard on independently verified deployment: on the Q4 2025 earnings call (28 January 2026) Musk said Optimus was "not in usage in our factories in a material way", Fremont Gen 3 production only began ramping in late July-August 2026, and external sales are pushed to 2027.
+  - The open frontier as of 2026 is bridging the gap between viral demos and audited commercial evidence: only the Figure/BMW and Agility/GXO programmes have independently corroborated throughput KPIs, deployments stay confined to structured material handling under heavy human oversight, and dexterity, generalisation, unit economics, and collaborative-safety certification remain unresolved.
+
+- ### References
+  - 1. Physical Intelligence (2025). pi-0.5: a VLA with Open-World Generalization. https://www.pi.website/blog/pi05
+  - 2. NVIDIA (2025). NVIDIA Announces Isaac GR00T N1 — the World's First Open Humanoid Robot Foundation Model. https://nvidianews.nvidia.com/news/nvidia-isaac-gr00t-n1-open-humanoid-robot-foundation-model-simulation-frameworks
+  - 3. NVIDIA GEAR Lab (2025). GR00T N1.6: An Improved Open Foundation Model for Generalist Humanoid Robots. https://research.nvidia.com/labs/gear/gr00t-n1_6/
+  - 4. Google DeepMind (2026). Gemini Robotics 2 brings whole body intelligence to robots. https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/
+  - 5. Physical AI Journal (2026). Humanoid Deployment Evidence Report 2026. https://www.physicalaijournal.org/post/humanoid-deployment-evidence-report-2026
+  - 6. Humanoid Guide / Technology.org (2026). Humanoid deployments in 2026 favor Figure and Agility. https://humanoid.guide/humanoid-deployments-in-2026-favor-figure-and-agility/
+
 - ### Provenance
   - sources:: [[ISO 8373:2021]], [[Robotics]] domain knowledge base, [[IEEE Robotics and Automation Society]] publications
   - updated:: 2026-06-13

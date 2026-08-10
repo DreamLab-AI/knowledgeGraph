@@ -238,6 +238,22 @@ alias:: Proof-of-Stake, ProofOfStake, proof-of-stake
 - ### Content
   Proof of Stake — content pending enrichment.
 
+- ### Current Landscape (2026)
+  - Ethereum's Pectra hard fork (activated 7 May 2025, epoch 364032) bundled 11 EIPs and reshaped PoS economics: EIP-7251 raised the maximum effective validator balance from 32 to 2,048 ETH, enabling automatic reward compounding via 0x02 withdrawal credentials, while EIP-6110 and EIP-7002 cut validator activation to roughly 13 minutes and moved exits/withdrawals to the execution layer.
+  - By early August 2026 around 41.4 million ETH (about 35% of supply, an all-time high) is staked, with consensus-layer APR near 2.6% and all-in yields of roughly 3-3.8%; over a quarter of validators had adopted compounding 0x02 credentials by mid-2026, driving consolidation into fewer, larger validators.
+  - The follow-up Fusaka hard fork went live on 3 December 2025, extending Pectra with PeerDAS to scale rollup data; a draft EIP-8361 "Tapered Issuance Burn" is under discussion in 2026 that would taper and eventually zero consensus issuance once roughly 50% of ETH is staked.
+  - US regulation shifted decisively: SEC Division of Corporation Finance staff statements (29 May 2025 on protocol staking, 5 August 2025 on liquid staking) held that solo, custodial and qualifying liquid staking are not securities offerings, and a 17 March 2026 Commission-level interpretive release, joined by the CFTC, classified ETH and 15 other assets as digital commodities outside the securities laws.
+  - Staking-enabled ETFs arrived: Grayscale enabled staking on ETHE and its mini ETF from October 2025, BlackRock launched the iShares Staked Ethereum Trust (ETHB) on 12 March 2026 with 107 million dollars seed, and Solana staking ETFs (Bitwise BSOL from 28 October 2025, VanEck VSOL) plus Canary's Sui SUIS reached market first in late 2025.
+  - Liquid staking remains the largest DeFi collateral layer (Lido leading at roughly 27 billion dollars TVL and about 47% of staked ETH), while restaking has entered consolidation: EigenLayer (rebranded EigenCloud) holds around 90-94% of a restaking market that peaked above 20 billion dollars in 2025 and settled near 9-19 billion dollars in early 2026 amid correlated-slashing concerns.
+  - Solana now shows the highest participation of any major PoS chain, with about 421.8 million SOL (roughly 68% of supply) staked in Q4 2025 and its liquid-staking ratio jumping from 11.6% to 17.6% in a single quarter; open challenges as of 2026 centre on validator concentration, the unresolved legal status of restaking, and issuance/yield-reduction debates.
+
+- ### References
+  - 1. Crypto Times (2026). Ethereum Staking Guide 2026: How to Earn 3-3.8% APR After Pectra Upgrade. https://www.cryptotimes.io/learn/ethereum-staking/
+  - 2. Everstake (2026). Pectra Upgrade One Year On: Impact on Ethereum Staking 2026. https://everstake.one/resources/blog/pectra-anniversary-how-ethereum-changed-2026
+  - 3. SEC Division of Corporation Finance (2025). Statement on Certain Liquid Staking Activities. https://www.sec.gov/newsroom/speeches-statements/corpfin-certain-liquid-staking-activities-080525
+  - 4. Astraea (2026). Ethereum Staking Regulation in 2026: What Institutions Need to Know. https://astraea.law/insights/ethereum-staking-regulation-institutions-2026
+  - 5. Everstake (2026). Ethereum Staking ETFs for Institutions: Full Guide 2026. https://everstake.one/resources/blog/ethereum-staking-etfs-for-institutions
+
 - ### Provenance
   - sources:: Chimera Prime Research
   - migration-date:: 2026-04-26T00:00:00Z

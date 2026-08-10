@@ -264,6 +264,23 @@ alias:: VotingMechanism
   - **Polkadot OpenGov** — multi-track, conviction-weighted governance system with origin-specific tracks (treasury, root, whitelist) and continuous proposal processing, representing a mature production deployment of non-trivial voting mechanism design.
   - **Cosmos SDK governance module** — standard governance module providing deposit, voting, and tally phases with configurable parameters; used across Cosmos SDK chains (Osmosis, Cosmos Hub, Juno).
 
+- ### Current Landscape (2026)
+  - The Optimism Collective's Season 8 governance overhaul introduced a new Protocol Upgrades process (effective 1 August 2025) and pushed voting beyond tokenholders, giving end-users, apps and OP Chains a say through the non-token Citizens' House alongside the token-weighted Token House.
+  - Legal wrappers matured into a governance-defining trend: Uniswap governance voted (ending 7 September 2025) to establish itself as "DUNI", a Wyoming DUNA, part of a wider 2025-2026 shift as regulators in the EU, UK, Singapore and Australia moved toward treating unwrapped DAOs as general partnerships exposing active voters to joint-and-several liability.
+  - A May 2026 arXiv result, "Concave is the New Linear" (echoed by Circle research), formally proved that no wallet-balance voting rule - quadratic voting included - can avoid plutocracy under a rational Sybil attacker, since wallet-splitting drives voting power asymptotically back to one-token-one-vote; anti-plutocratic designs now require an identity-based Sybil-resistance layer (Proof of Personhood, BrightID) rather than concave maths alone.
+  - Alternative mechanisms consolidated around clear niches: quadratic voting/funding for one-off and public-goods decisions (Gitcoin Grants, Optimism RetroPGF), conviction voting for continuous treasury allocation (1Hive Gardens, Commons Stack, Giveth), and vote-escrow (ve) locking for long-horizon alignment, with quadratic-voting adoption reportedly up roughly 30% across 2024-2025.
+  - Empirical audits punctured the decentralisation narrative: a 2026 Frontiers in Blockchain study found delegation amplifies voting concentration above raw holdings in 13 of 18 protocols sampled (Optimism 3.6x, Arbitrum 3.1x, Uniswap 2.7x), while SEEDGov analysis showed a handful of Optimism whales can still clear quorum despite a Gini near 0.998.
+  - Infrastructure moved toward fully on-chain execution and privacy: Agora's proposal to let OP treasury transfers execute automatically on-chain (removing manual Foundation administration) advanced, and shielded/encrypted voting on Snapshot and Arbitrum gained traction to curb last-mover and vote-buying dynamics.
+  - The frontier as of 2026 is hybrid and AI-assisted governance - elected councils or expert committees for routine decisions with on-chain votes reserved for treasury and protocol upgrades - alongside reputation and Governance-NFT models, though Sybil resistance, delegate accountability and durable voter turnout remain unresolved.
+
+- ### References
+  - 1. L2BEAT (2025). Governance Review #67 - Optimism Season 8 updates and Uniswap DUNI vote. https://l2beat.com/publications/governance-review-67
+  - 2. Reuben, D. et al. / arXiv (2026). Concave is the New Linear: The Impossibility of Anti-Plutocratic DAO Governance. https://arxiv.org/pdf/2605.18990v1.pdf
+  - 3. Frontiers in Blockchain (2026). Auditing governance concentration beyond token allocation. https://www.frontiersin.org/journals/blockchain/articles/10.3389/fbloc.2026.1853465/full
+  - 4. Forbes Digital Assets (2026). DAOs Keep Centralizing - Decades Of Governance Research Explain Why. https://www.forbes.com/sites/digital-assets/2026/04/04/daos-keep-centralizingdecades-of-governance-research-explain-why/
+  - 5. Chainscore Labs (2026). Arbitrum vs Optimism: DAO Voting 2026. https://chainscorelabs.com/comparisons/layer-1-monolithic-vs-modular-chains/governance-models/arbitrum-vs-optimism-dao-voting-2026
+  - 6. Optimism Documentation (2025). Governance FAQ - Token House and Citizens' House voting. https://docs.optimism.io/governance/gov-faq
+
 - ### Provenance
   - sources:: OpenZeppelin Governor documentation; Snapshot platform documentation; Vitalik Buterin "Moving beyond coin voting governance" (2021); Glen Weyl & Eric Posner "Radical Markets" (2018); Polkadot OpenGov specification; Cosmos SDK governance module documentation
   - updated:: 2026-06-13

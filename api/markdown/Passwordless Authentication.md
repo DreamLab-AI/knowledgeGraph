@@ -248,6 +248,22 @@ public:: true
   - **Phishing of OTP/magic-link modalities** — Only cryptographic (FIDO2) passwordless modalities are phishing-resistant; email magic links and SMS OTP are susceptible to real-time phishing and SIM-swap attacks.
   - **Enterprise PKI integration** — Existing certificate-based [[Public Key Infrastructure]] deployments need coexistence or migration strategies when adopting FIDO2-based passwordless infrastructure.
 
+- ### Current Landscape (2026)
+  - Passkeys (FIDO2/WebAuthn discoverable credentials) moved from roadmap to default: the FIDO Alliance's State of Passkeys 2026 report (Sapio Research, April 2026) estimates 5 billion passkeys in active use, 90% consumer awareness and 75% of people having enabled a passkey on at least one account, with roughly 48% of the world's top 100 sites supporting them.
+  - NIST finalised SP 800-63-4 in July 2025, for the first time formally recognising synced (syncable) passkeys as AAL2-compliant and mandating phishing-resistant authenticators for AAL2, while reserving AAL3 for non-exportable hardware-bound keys (YubiKey, Google Titan, TPM/Secure Enclave) — SMS OTP no longer qualifies.
+  - Microsoft made passkeys the default for new consumer accounts in May 2025 ("nearly a million passkeys a day") and in March 2026 began general-availability rollout of Passkey Profiles across Entra ID tenants, adding a passkeyType property and group-based device-bound vs synced policies with attestation enforcement, auto-applying defaults to non-configured tenants from April 2026.
+  - The FIDO Credential Exchange Protocol and Credential Exchange Format (CXP/CXF) were published as a Proposed Standard in August 2025, tackling vendor lock-in; Apple shipped CXF-based on-device transfer in iOS 26 / macOS 26 (via ASCredentialExportManager / ASCredentialImportManager), with Google, 1Password, Bitwarden and Dashlane contributing.
+  - Key players and platform maturity: Apple (iCloud Keychain), Google (Google Password Manager, 1 billion-plus users signing in with passkeys), and Microsoft (Entra ID) cover most workforce and consumer devices, alongside IdPs Okta, Auth0, Ping and hardware/credential vendors Thales (36 FIDO-certified products) and HID.
+  - Regulatory pressure is compressing timelines: the UAE CBUAE mandate retires standalone SMS/email OTP by 31 March 2026, India's RBI Authentication Directions require compliance by 1 April 2026, and Singapore's PDPC bars NRIC-based authentication from 1 January 2027 — pushing phishing-resistant auth from best practice to obligation.
+  - Open challenges as of 2026: account recovery and the synced-vs-device-bound assurance trade-off (synced credentials cannot be isolated in secure hardware and are exposed to on-device malware), uneven European deployment (splitting synced-only vs device-bound rather than mixed), lagging desktop adoption (~20% versus 55-60% on mobile apps), and authenticating AI agents, where OAuth 2.1 with PKCE (baselined by the MCP 2025-11-25 spec) is emerging alongside passkeys.
+
+- ### References
+  - 1. FIDO Alliance (2026). FIDO Alliance Reports Accelerating Global Passkey Adoption on World Passkey Day 2026 / The State of Passkeys 2026 Report. https://fidoalliance.org/fido-alliance-reports-accelerating-global-passkey-adoption-on-world-passkey-day-2026/
+  - 2. Security Boulevard (2026). The Complete Guide to Passwordless Authentication in 2026: How It Works, Why It Matters, and How to Implement It. https://securityboulevard.com/2026/04/the-complete-guide-to-passwordless-authentication-in-2026-how-it-works-why-it-matters-and-how-to-implement-it/
+  - 3. Clerk (2026). Authentication Trends in 2026: Passkeys, AI Agents, and Edge. https://clerk.com/articles/authentication-trends-in-2026-passkeys-ai-agents-and-edge
+  - 4. Security Boulevard (2026). Passkeys Hit Critical Mass: Microsoft Auto-Enables for Millions, 87% of Companies Deploy as Passwords Near End-of-Life. https://securityboulevard.com/2026/03/passkeys-hit-critical-mass-microsoft-auto-enables-for-millions-87-of-companies-deploy-as-passwords-near-end-of-life/
+  - 5. FIDO Alliance (2025). Authenticate 2025: Day 1 Recap (Credential Exchange Protocol/Format, platform APIs). https://fidoalliance.org/authenticate-2025-day-1-recap/
+
 - ### Provenance
   - sources:: FIDO Alliance specifications (CTAP2, WebAuthn), W3C Web Authentication Level 2, NIST SP 800-63B, NIST SP 800-207, ISO/IEC 24760, eIDAS 2.0 regulation
   - updated:: 2026-06-13

@@ -314,6 +314,23 @@ alias:: Privacy-Preserving Technology
   - owl-class:: security:PrivacyPreservingTechnology
   - owl-role:: Concept
 
+- ### Current Landscape (2026)
+  - NIST finalised Internal Report IR 8214C, the "First Call for Multi-Party Threshold Schemes", on 20 January 2026, formally bringing fully-homomorphic encryption (category S5) and zero-knowledge proofs of knowledge (S6) into a public submission and scrutiny process alongside MPC — a significant step toward future FHE/ZKP standardisation.
+  - NIST's Privacy-Enhancing Cryptography programme is running a dense standardisation calendar around this call, including the MPTS 2026 workshop (26–29 January 2026, with a dedicated Threshold-FHE session) and the upcoming WPEC 2026 workshop scheduled for October 2026.
+  - Zero-knowledge proofs have crossed into production infrastructure: general-purpose zkVMs such as RISC Zero (Risc0), StarkWare's Cairo VM and early zkEVMs let developers write provable programs in Rust or Solidity, and by January 2026 several are live or in advanced testnet supporting private DEX trades, confidential governance and KYC-verifiable transactions.
+  - FHE is moving from research into early production at hyperscalers — Apple shipped FHE-derived techniques in iOS 18 Private Cloud Compute and Google uses FHE for privacy-preserving ad measurement in the Privacy Sandbox — while remaining orders of magnitude slower than plaintext (roughly 10,000–100,000x overhead), keeping most real-time and on-chain use uneconomic as of 2026.
+  - The privacy-enhancing technologies market reached about $2.8 billion in 2025 (up from $1.1 billion in 2022), with Gartner projecting it to exceed $25 billion by 2030; key commercial players include Zama (which raised a $73m Series A in 2024 to commercialise TFHE) and Duality, while DARPA's DPRIVE programme delivered first-generation FHE ASIC demonstrators in 2025.
+  - Regulators and standards bodies are converging on PETs guidance rather than mandates: the UK ICO, Singapore's IMDA/PDPC PET Sandbox, the OECD and ITIF (October 2025 explainer) all frame differential privacy, federated learning, MPC, TEEs and homomorphic encryption as tools for GDPR-style data-protection compliance, though the lack of formal certification and DP standards still slows institutional adoption.
+  - Post-quantum readiness is now entangled with privacy tooling, as NIST's FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA) finalisation in 2025–2026 pushes lattice-based, quantum-resistant primitives into identity systems that combine ZKP selective disclosure with homomorphic encryption.
+  - Open frontier challenges as of 2026: FHE performance and hardware acceleration (Intel HEXL, Cornami, Niobium Microsystems) not yet catalysing broad commercial adoption before ~2028, residual hardware-trust assumptions in TEEs, gradient-leakage risks in federated learning, and immature interoperability standards and DP guidance across vendors.
+
+- ### References
+  - 1. NIST, Computer Security Division (2026). NIST First Call for Multi-Party Threshold Schemes (NIST IR 8214C). https://csrc.nist.gov/pubs/ir/8214/c/final
+  - 2. NIST (2026). Privacy-Enhancing Cryptography (PEC) project — WPEC 2026, MPTS 2026, FHE. https://csrc.nist.gov/projects/pec
+  - 3. StealthCloud (2026). Privacy-Enhancing Technologies: The Complete 2026 Guide. https://stealthcloud.ai/cryptography/privacy-enhancing-technologies/
+  - 4. insights4vc (2026). Privacy Trends for 2026. https://insights4vc.substack.com/p/privacy-trends-for-2026
+  - 5. ITIF (2025). Technology Explainer: What Are Privacy Enhancing Technologies? https://itif.org/publications/2025/09/02/itif-technology-explainer-privacy-enhancing-technologies/
+
 - ### Provenance
   - sources:: GDPR (EU 2016/679); Dwork & Roth "The Algorithmic Foundations of Differential Privacy" (2014); Bonawitz et al. "Practical Secure Aggregation for Privacy-Preserving Machine Learning" (CCS 2017); Gentry "A Fully Homomorphic Encryption Scheme" (2009); W3C Verifiable Credentials Data Model; NIST Privacy Framework v1.0 (2020)
   - updated:: 2026-06-13

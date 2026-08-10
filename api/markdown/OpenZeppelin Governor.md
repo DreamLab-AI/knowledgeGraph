@@ -299,6 +299,22 @@ public:: true
   - #### Relation to Legal DAOs
     - Some jurisdictions (Wyoming, Marshall Islands) recognise DAO LLCs where Governor-based on-chain voting constitutes legally binding decisions, bridging [[Smart Contract]] execution with formal legal frameworks.
 
+- ### Current Landscape (2026)
+  - The v5.x line has steadily extended the Governor module suite: v5.1.0 (October 2024) changed `_countVote` to return a `uint256`, unlocking richer partial and fractional voting via `GovernorCountingFractional` and `GovernorCountingOverridable`.
+  - v5.3.0 (April 2025) added super-quorum support through `GovernorSuperQuorum` and `GovernorVotesSuperQuorumFraction`, letting proposals with overwhelming early support bypass the late-quorum wait.
+  - v5.4.0 (July 2025) introduced `GovernorProposalGuardian` (a guardian who can cancel proposals at any lifecycle stage), `GovernorSequentialProposalId` (human-readable sequential proposal ids instead of hashes), `GovernorNoncesKeyed` for keyed nonces in vote-by-signature, and a new `getProposalId` on `IGovernor`; it also raised the minimum Solidity pragma to 0.8.24.
+  - The library has kept shipping into 2026 (v5.5.0 in October 2025, v5.6.1 in February 2026), reflecting an actively maintained rather than frozen governance stack; `GovernorTimelockAccess` continues to pair the Governor with the `AccessManager` introduced in v5.0.
+  - Governor has expanded beyond the EVM: OpenZeppelin now ships Governor implementations for Starknet/Cairo (Contracts for Cairo 3.x) and for Stellar/Soroban, bringing the same modular propose-vote-queue-execute model to non-Solidity ecosystems.
+  - Adoption remains dominant among major DAOs (Uniswap, ENS, Compound, The Graph, Gitcoin, Nouns), typically fronted by the Tally interface, with 2025 audit-derived estimates putting Governor at roughly two-thirds of on-chain governance deployments.
+  - Open challenges as of 2026 centre on persistently low voter turnout (often 8-15%), the security of upgradeable Governors behind timelocks, and hybrid off-chain/on-chain flows (Snapshot temperature checks bridged to on-chain execution via Zodiac or Tally) rather than pure on-chain voting.
+
+- ### References
+  - 1. OpenZeppelin (2026). Changelog — OpenZeppelin Contracts 5.x (v5.6.1, v5.5.0, v5.4.0). https://docs.openzeppelin.com/contracts/5.x/changelog
+  - 2. OpenZeppelin (2025). openzeppelin-contracts-upgradeable CHANGELOG (v5.4.0, v5.3.0, v5.2.0, v5.1.0). https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/blob/master/CHANGELOG.md
+  - 3. OpenZeppelin (2026). Governance API — Governor modules and extensions. https://docs.openzeppelin.com/contracts/5.x/api/governance
+  - 4. OpenZeppelin (2026). Governor — Stellar/Soroban Contracts. https://docs.openzeppelin.com/stellar-contracts/governance/governor
+  - 5. markaicode (2026). Building On-Chain Governance with OpenZeppelin Governor. https://markaicode.com/howto/dao-governance-governor-setup/
+
 - ### Provenance
   - sources:: OpenZeppelin Contracts documentation (docs.openzeppelin.com/contracts), Ethereum EIPs (eips.ethereum.org), Uniswap/ENS governance forum posts
   - updated:: 2026-06-13

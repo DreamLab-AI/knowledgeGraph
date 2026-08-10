@@ -322,6 +322,23 @@ alias:: IdentityManagement
   - Lost private keys result in permanent identity loss
   - No central authority available for recovery
 
+- ### Current Landscape (2026)
+  - The EU's eIDAS 2.0 regulation (Regulation (EU) 2024/1183) entered into force on 20 May 2024 and obliges every member state to issue at least one European Digital Identity (EUDI) Wallet by Q4 2026, with mandatory acceptance by regulated private-sector services and Very Large Online Platforms from late 2027; the current canonical spec is the Architecture and Reference Framework (ARF) v1.4, standardising SD-JWT VC and ISO/IEC 18013-5 mDL credentials over OpenID4VP/OpenID4VCI.
+  - Implementing acts are now landing: CIR (EU) 2026/798 (adopted 7 April 2026) makes ETSI TS 119 461 remote onboarding legally binding for wallet issuance, the eIDAS Trusted List ecosystem migrated from TLv5 to TLv6 in April 2026 to list new qualified trust services (QEAAs, qualified archiving, electronic ledgers), and four large-scale pilots (POTENTIAL, EWC, NOBID, DC4EU) have been validating the architecture since 2023.
+  - Non-human identity (NHI) has become the dominant identity-security concern: CyberArk's 2025 Landscape and Gartner's 2025 IAM Summit put machine identities at roughly 82:1 over human identities (up to 40,000:1 in cloud-native estates), with 99% of service accounts over-permissioned; the OWASP NHI Top 10 was released in 2025 and Gartner's 2025 Machine Identity survey found 94% of organisations facing rising machine identities driven by AI agents.
+  - Gartner has formalised new market categories reflecting this shift, including Identity Visibility and Intelligence Platforms (IVIP), Identity Security Posture Management (ISPM) and Identity Threat Detection and Response (ITDR), all featured in the Hype Cycle for Digital Identity 2026; the 2025 PAM Magic Quadrant now treats "PAM for machines" and workload/secrets management as table stakes.
+  - Passkeys have crossed into the mainstream: Google reports hundreds of millions of consumer accounts using passkeys and Okta, Microsoft Entra ID, Ping and Duo now support passkey enrolment as a first-class factor, aligned with NIST SP 800-63-4 guidance pushing federal contractors toward phishing-resistant MFA; the FIDO Alliance published guidance in 2025 on harmonising passkeys with verifiable digital credentials.
+  - The IAM market is consolidating and accelerating, with over $96bn in M&A during 2025 and European IAM spend up 10.8% in 2025 (reportedly a 24% YoY jump in January 2026), as vendors converge IGA, PAM and NHI governance and push zero standing privilege (ZSP) and just-in-time access, now increasingly demanded by cyber insurers.
+  - Open challenges as of 2026 include securing autonomous AI agents that act as privileged machine identities using delegated human credentials, retrofitting ephemeral secretless attestation (Kubernetes/AWS IAM/OIDC) onto session-scoped PAM tooling, cross-jurisdiction runtime trust and audit for wallet-based credentials, and post-quantum readiness for identity cryptography still anchored on P-256/ECDSA.
+
+- ### References
+  - 1. Evertrust (2026). EUDI Wallet 2026: Five Things Private PKI Teams Must Prepare. https://evertrust.io/blog/eudi-wallet-private-pki/
+  - 2. IDnow (2026). Mila's Regulatory Radar March 2026 — EU Digital Identity & Compliance Updates. https://idnow.io/insights/blog/milas-regulatory-radar-march-2026-2/
+  - 3. Aembit (2026). Non-Human Identity Security: Key Takeaways From Gartner's 2025 PAM Magic Quadrant. https://aembit.io/blog/key-takeaways-on-non-human-identity-security-from-gartners-pam-report/
+  - 4. Zluri (2025). What the Gartner IAM 2025 Summit Revealed About the Future of Identity Governance. https://www.zluri.com/blog/what-gartner-iam-2025-reveals-about-the-future-of-identity-governance
+  - 5. CSO Online (2026). 6 Key Trends Reshaping the IAM Market. https://www.csoonline.com/article/4148282/6-key-trends-reshaping-the-iam-market.html
+  - 6. FIDO Alliance (2025). Passkeys and Verifiable Digital Credentials: A Harmonized Path to Secure Digital Identity. https://fidoalliance.org/passkeys-and-verifiable-digital-credentials-a-harmonized-path-to-secure-digital-identity/
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

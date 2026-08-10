@@ -269,6 +269,21 @@ public:: true
   - **EVM-compatible chains** — Polygon, BNB Chain, Avalanche C-Chain, Arbitrum, Optimism, Base, and others accept the same Solidity source and EVM bytecode, amplifying the language's reach beyond Ethereum mainnet.
   - **Alternative languages** — [[Vyper]] (auditability-focused Python-like language), Fe (Rust-inspired, still experimental), Yul (low-level IR used internally by solc) provide contrast with Solidity's design trade-offs.
 
+- ### Current Landscape (2026)
+  - Solidity 0.8.29 (12 March 2025) shipped experimental EVM Object Format (EOF) support, custom storage-layout specifiers (the "layout at" syntax to relocate contract storage), and initial ethdebug debugging-format output; the EOF backend compiles via IR with the optimiser enabled and provides SWAPN/DUPN access that virtually eliminates "Stack Too Deep" errors.
+  - Solidity 0.8.30 (7 May 2025) was a maintenance release aligned with the Pectra network upgrade, switching the default EVM target from "cancun" to "prague".
+  - The wider ecosystem plan around EOF was disrupted when Ethereum core developers cut EOF from the Fusaka scope after the 28 April 2025 All Core Developers "final decision" call, moving 16 EOF EIPs to "Declined for Inclusion"; Fusaka activated on mainnet on 3 December 2025 with PeerDAS (EIP-7594) as its headline feature, leaving Solidity's experimental EOF/Osaka backend without a near-term live deployment target.
+  - Solidity remains the dominant EVM smart-contract language: 2026 block-explorer analyses put it at roughly 85% of deployed contracts, backed by the largest developer pool and the deepest tooling stack (Foundry, Hardhat, Remix, OpenZeppelin, Slither).
+  - Vyper continues as the main security-first alternative, gaining ground in high-value niches such as custodial bridges and institutional DeFi; its 0.4.0 line introduced a composable module system and the Venom backend, and 2026 benchmarks report Vyper using roughly 8-15% less gas on simple token transfers, keeping competitive pressure on Solidity's audit and gas story.
+  - Open challenges as of 2026 centre on Solidity's large audit surface relative to minimalist languages (delegatecall, inline assembly, inheritance and upgradeable-proxy storage risks), the uncertain future of EOF adoption, and competition from Rust and Move on non-EVM chains for high-throughput and formally verifiable workloads.
+
+- ### References
+  - 1. Solidity Team / Ethereum (2025). Solidity 0.8.29 Release Announcement. https://www.soliditylang.org/blog/2025/03/12/solidity-0.8.29-release-announcement/
+  - 2. Solidity Team / Ethereum (2025). Solidity 0.8.30 Release Announcement. https://www.soliditylang.org/blog/2025/05/07/solidity-0.8.30-release-announcement/
+  - 3. Ethereum Foundation (2025). Fusaka Mainnet Announcement. https://blog.ethereum.org/2025/11/06/fusaka-mainnet-announcement
+  - 4. Ethereum Foundation (2025). Process Improvements (Checkpoint 2 — EOF removed from Fusaka). https://blog.ethereum.org/2025/04/29/checkpoint-2
+  - 5. CryptoChain Blog (2026). Solidity vs Vyper for Secure Smart Contracts: 2026 Comparison. https://www.cryptochainblog.com/smart-contracts/solidity-vs-vyper-secure-smart-contracts-2026-comparison
+
 - ### Provenance
   - sources:: Ethereum Foundation documentation (docs.soliditylang.org), OpenZeppelin documentation, Ethereum Yellow Paper, EIP repository, Foundry Book, Hardhat documentation.
   - updated:: 2026-06-13

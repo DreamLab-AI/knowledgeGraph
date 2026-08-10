@@ -270,6 +270,22 @@ public:: true
   - Academic venues: ICRA, IROS, CVPR, ECCV, ICCV, and RSS publish the majority of SLAM research; foundational work published in IJRR and IEEE TRO.
   - Commercial deployment contexts include [[SAE Level 4]] and [[SAE Level 5]] autonomous driving where SLAM-derived localisation must meet safety integrity requirements (ISO 26262 functional safety, SOTIF ISO 21448).
 
+- ### Current Landscape (2026)
+  - The field's centre of gravity has shifted from classical sparse-feature pipelines (ORB-SLAM, DROID-SLAM) to differentiable dense mapping built on 3D Gaussian Splatting (3DGS), which replaced NeRF-style implicit fields because its rasterisation back-end avoids ray marching and reaches real-time rendering (reported up to ~769 FPS) with sub-centimetre ATE on indoor benchmarks such as Replica and TUM-RGBD.
+  - MASt3R-SLAM (Murai et al., CVPR 2025) marked a milestone as the first real-time dense SLAM system built on a learned two-view 3D reconstruction prior (MASt3R), handling uncalibrated in-the-wild monocular video and pushing "foundation-model" priors into the SLAM front-end.
+  - DROID-Splat (ICCV 2025 workshop) fused an end-to-end optical-flow tracker with a 3DGS renderer to hit state-of-the-art tracking and photorealistic reconstruction near real time, exemplifying the 2024-2026 convergence of learned trackers with splatting map representations.
+  - Scaling frontiers advanced on two axes: GigaSLAM (2025) demonstrated the first RGB NeRF/3DGS SLAM for kilometre-scale outdoor driving (KITTI, KITTI-360, 4Seasons, A2D2), while multi-robot collaborative Gaussian SLAM matured with systems like GRAND-SLAM, MNE-SLAM, MAC-Ego3D and MAGS-SLAM (2025-2026) plus new large-area benchmarks (INS >1,000 m2 indoor, DES >276,000 m2 outdoor).
+  - Commercially, visual SLAM is now core infrastructure for spatial computing (Apple Vision Pro), humanoid and warehouse robotics, and ADAS; market trackers put the visual-SLAM segment around USD 2.8-3.3 billion in 2025 with ~14-23% CAGR forecasts, and consolidation is visible in ABB's January 2024 acquisition of Sevensense and NVIDIA/Zivid and Google/SLAMcore integration deals.
+  - Persistent open challenges as of 2026 include robustness in dynamic and non-rigid scenes, compute and memory cost of Gaussian maps on edge platforms (a cited bottleneck for over half of deployed systems), globally consistent loop closure and cross-agent map fusion at scale, and the absence of standardised interoperability for exchanging Gaussian/neural maps between vendors.
+
+- ### References
+  - 1. Murai, R. et al. (2025). MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors (CVPR 2025). https://openaccess.thecvf.com/content/CVPR2025/papers/Murai_MASt3R-SLAM_Real-Time_Dense_SLAM_with_3D_Reconstruction_Priors_CVPR_2025_paper.pdf
+  - 2. Homeyer, C. et al. (2025). DROID-Splat: Combining End-to-End SLAM with 3D Gaussian Splatting (ICCV 2025 Workshop). https://openaccess.thecvf.com/content/ICCV2025W/NeuSLAM/papers/Homeyer_DROID-Splat_Combining_end-to-end_SLAM_with_3D_Gaussian_Splatting_ICCVW_2025_paper.pdf
+  - 3. Deng, K. et al. (2025). GigaSLAM: Large-Scale Monocular SLAM with Hierarchical Gaussian Splats. https://arxiv.org/html/2503.08071v2
+  - 4. Survey (2025). A Survey on Collaborative SLAM with 3D Gaussian Splatting (arXiv). https://arxiv.org/html/2510.23988v1
+  - 5. Tosi, F. et al. (2024/2025). How NeRFs and 3D Gaussian Splatting are Reshaping SLAM: a Survey (arXiv 2402.13255). https://arxiv.org/abs/2402.13255
+  - 6. Market Intelo (2025). Visual SLAM Market Research Report. https://marketintelo.com/report/visual-slam-market
+
 - ### Provenance
   - sources:: Thrun, Burgard & Fox "Probabilistic Robotics" (MIT Press); Cadena et al. "Past, Present, and Future of SLAM" IEEE TRO 2016; Placed et al. "A Survey on Active Simultaneous Localization and Mapping" IEEE TRO 2023
   - updated:: 2026-06-13

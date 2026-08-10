@@ -291,6 +291,23 @@ alias:: Multi Agent Systems
   - **AgentOps / OpenTelemetry**: emerging observability standards for tracing agent execution chains, monitoring token budgets, and auditing inter-agent communication logs.
   - Academic canonical venues: AAMAS (Autonomous Agents and Multi-Agent Systems), AAAI, IJCAI, and the journal Autonomous Agents and Multi-Agent Systems (Springer).
 
+- ### Current Landscape (2026)
+  - Interoperability standardised around two complementary protocols: Anthropic's Model Context Protocol (MCP, Nov 2024) for agent-to-tool access and Google's Agent2Agent (A2A, announced April 2025 at Cloud Next) for agent-to-agent delegation; A2A reached a stable v1.0 in April 2026 with signed Agent Cards for cryptographic agent identity.
+  - Both protocols moved to neutral governance: Google donated A2A to the Linux Foundation in June 2025, and in December 2025 Anthropic donated MCP to the new Agentic AI Foundation (AAIF) under the Linux Foundation, co-founded with OpenAI and Block and backed by Google, Microsoft, AWS, Cloudflare and Bloomberg; IBM's competing Agent Communication Protocol merged into A2A, effectively ending the standards contest.
+  - Adoption is now mainstream: MCP crossed roughly 97 million monthly SDK downloads with ~10,000 public servers and native support in ChatGPT, Claude, Cursor, Gemini, Copilot and VS Code, while A2A passed 150+ adopting organisations (AWS, Microsoft, Salesforce, SAP, IBM, ServiceNow) with production runtimes in Azure AI Foundry, AWS Bedrock AgentCore and Google Cloud.
+  - The orchestrator-worker pattern became the default production architecture: a lead agent decomposes a task and spawns ephemeral isolated subagents that return compressed 1,000-2,000 token summaries; Anthropic reported its multi-agent Research system outperformed single-agent Claude Opus 4 by 90.2% on internal evaluation, with token usage alone explaining ~80% of performance variance on BrowseComp.
+  - Framework consolidation in 2026 saw Microsoft Agent Framework 1.0 (GA 3 April 2026) supersede both AutoGen and Semantic Kernel with native MCP and A2A, alongside LangGraph 1.x, CrewAI 1.14, OpenAI Agents SDK, Google ADK 2.0 and the Claude Agent SDK; a commerce-protocol layer also emerged (Google's AP2, OpenAI/Stripe's ACP, Google/Shopify's UCP) for agent-initiated payments.
+  - Reliability research matured: the MAST failure taxonomy (arXiv:2503.13657, validated across 1,600+ execution traces and cited at NeurIPS 2025 / ICLR 2026) attributes failures to specification ambiguity (~42%), coordination breakdowns (~37%) and verification gaps (~21%), with reported production failure rates of 41-86.7%.
+  - Open challenges as of 2026 centre on cost and coordination: orchestrator-worker topologies consume roughly 15x the tokens of a single chat turn, "context rot" degrades every frontier model as windows fill, and shared-resource contention between parallel agents (rate limits, working directories) demands explicit per-agent isolation, verification-before-trust boundaries and context-engineering discipline.
+
+- ### References
+  - 1. Alice Labs (2026). Best AI Agent Frameworks 2026: Top 10 Ranked. https://alicelabs.ai/en/insights/best-ai-agent-frameworks-2026
+  - 2. Seekvana (2026). What Changed in Agentic AI in 2026: A Builder's Guide. https://seekvana.com/library/agentic-ai/what-changed-in-agentic-ai-2026
+  - 3. Itexus (2026). The AI Agent Infrastructure Stack in 2026: Protocols, Frameworks and Models. https://itexus.com/the-ai-agent-infrastructure-stack-in-2026-protocols-frameworks-and-models/
+  - 4. Anthropic (2025). How we built our multi-agent research system. https://www.anthropic.com/engineering/multi-agent-research-system
+  - 5. Cemri et al. (2025). Why Do Multi-Agent LLM Systems Fail? (MAST taxonomy). https://arxiv.org/html/2503.13657v1
+  - 6. Google Developers (2025). Announcing the Agent2Agent Protocol (A2A). https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/
+
 - ### Provenance
   - sources:: FIPA specifications; Wooldridge & Jennings "Intelligent Agents" (1995); Russell & Norvig AIMA; Shoham & Leyton-Brown "Multiagent Systems" (2009); Liang et al. "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate" (2023)
   - updated:: 2026-06-13

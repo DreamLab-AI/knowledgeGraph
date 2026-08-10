@@ -270,6 +270,23 @@ alias:: Hash Time Locked Contract
   - **Interledger Protocol (ILP)** — W3C community group specification that generalises HTLC-style conditional transfers across arbitrary ledger types, abstracting over the specific hash and timeout mechanisms.
   - The HTLC pattern is now considered an established primitive in blockchain protocol design, referenced in academic literature on payment channel networks, cross-chain protocols, and cryptographic protocol design.
 
+- ### Current Landscape (2026)
+  - The dominant 2024-2026 trend is migration from HTLCs to Point Time-Locked Contracts (PTLCs), which swap the shared SHA-256 hash lock for per-hop elliptic-curve points via Schnorr adaptor signatures; this decorrelates routing hops and defeats wormhole attacks, but as of early 2026 PTLCs are still at the proposal stage with no finalised BOLT specification, gated on Taproot-channel and MuSig2 rollout across LND, Core Lightning and Eclair.
+  - Security research consolidated the replacement-cycling attack against Lightning HTLCs first disclosed by Antoine Riard in 2023: Bitcoin Optech Newsletter #339 (January 2025) reported a further miner-exploitation variant, alongside a separate LDK claim-processing vulnerability fixed in LDK 0.1 where batched HTLC resolution could be stalled or, in the 0.1-beta logic, allow theft.
+  - Protocol-level hardening landed in the spec and implementations: BOLTs #1233 (2025) recommends never failing an HTLC upstream once the node knows the preimage, and LDK #3556 proactively fails HTLCs backwards near expiry even before upstream confirmation, with Core Lightning #7190 adding chainlag for safe payments during block sync.
+  - Cross-chain HTLC bridges scaled in production: Garden Finance operates a Bitcoin bridge spanning five chains simultaneously (EVM/Arbitrum, Starknet, Sui and Solana) using an off-chain solver to coordinate HTLC legs, while Fiber's Cross-Chain Hub (CCH) atomically swaps CKB-wrapped BTC against native Lightning BTC under a shared payment hash.
+  - Academic work advanced HTLC theory and alternatives: Clark et al. (ISAAC 2024) proved a swap digraph admits an atomic HTLC-based protocol if and only if it is a "reuniclus" graph, and a March 2025 arXiv white paper (arXiv:2503.12719) demonstrated PTLC-based Bitcoin-Ethereum atomic swaps settling in roughly 15 seconds versus the up-to-60-minute HTLC timeout windows.
+  - New academic countermeasures target HTLC's persistent griefing, Fakey and wormhole attack surface, e.g. the CommTLC scheme (IET Blockchain, 2025) using Pedersen commitments to detect adversaries in under 112 ms on a five-hop path, and MP-HTLC (2025) enabling constant-transaction multi-party UTXO swaps without leader election.
+  - Open challenges as of 2026 remain the coordination cost of the PTLC transition (mixed HTLC/PTLC routing, in-place channel upgrades via splicing), unresolved griefing/liquidity-locking denial-of-service on mainnet channels (483-HTLC saturation), and the fact that Bitcoin-to-altchain bridges will likely keep HTLCs given cross-chain reliance on standardised SHA-256 rather than Schnorr.
+
+- ### References
+  - 1. Bitcoin Optech (2026). Hash Time Locked Contract (HTLC) — topic page and newsletter mentions. https://bitcoinops.org/en/topics/htlc/
+  - 2. Bitcoin Optech (2025). Newsletter #339 — LDK claim-processing vulnerability and replacement cycling with miner exploitation. https://bitcoinops.org/en/newsletters/2025/01/31/
+  - 3. Spark (2026). PTLCs: Point Time Locked Contracts and Lightning's Privacy Future. https://www.spark.money/research/ptlcs-next-evolution-lightning
+  - 4. Garden Finance / rya-sge (2026). Hash Time-Locked Contracts — From First Principles to Garden Finance's Five-Chain Bridge. https://rya-sge.github.io/access-denied/2026/05/11/htlc-garden-finance-bridge/
+  - 5. Clark, J. et al. (2024). On HTLC-Based Protocols for Multi-Party Cross-Chain Swaps (ISAAC 2024). https://drops.dagstuhl.de/storage/00lipics/lipics-vol322-isaac2024/LIPIcs.ISAAC.2024.22/LIPIcs.ISAAC.2024.22.pdf
+  - 6. Anon. (2025). Enabling High-Frequency Trading with Near-Instant Atomic Swaps via PTLCs (arXiv:2503.12719). https://arxiv.org/html/2503.12719v1
+
 - ### Provenance
   - sources:: Lightning Network white paper (Poon & Dryja, 2016); Bitcoin BIP-65 and BIP-112; BOLT-02, BOLT-03, BOLT-11 specifications; academic literature on payment channel networks and atomic swaps
   - updated:: 2026-06-13

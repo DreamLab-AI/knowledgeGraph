@@ -2440,6 +2440,23 @@ public:: true
   - #### Simulated Humans
   - ### Summary TL;DR
 
+- ### Current Landscape (2026)
+  - The field's centre of gravity has shifted from consumer "metaverse" worlds to enterprise telecollaboration and lightweight glasses: IDC reported smart-glasses shipments surged roughly 247% in 2025 while dedicated VR headset sales fell about 43%, and Meta cut its Reality Labs budget by around 30% in December 2025, explicitly dropping the walled-garden metaverse as a strategic imperative.
+  - Interoperability gained its first real foundation when Khronos and the OpenXR Working Group ratified the Spatial Entities Extensions in June 2025 (spatial anchors, plane and marker tracking, and cross-session persistence as the first open standard for spatial computing); by mid-2026 there were 11 conformant runtimes and two game engines (Unity 6, plus Godot/Unreal support) implementing them, alongside OpenXR 1.1 core consolidation and in-progress multi-app extensions.
+  - A wave of platform retrenchment reshaped the collaboration tooling: Microsoft retired standalone Microsoft Mesh on 1 December 2025 (Mesh Toolkit had already gone on 24 June 2025), folding a smaller "immersive events" capability into Teams; Meta announced Horizon Workrooms would close on 16 February 2026 with commercial Quest SKUs and Horizon Managed Services ending days later; and Microsoft had earlier ended HoloLens 2 hardware, handing its IVAS military contract to Anduril.
+  - Hardware competition became genuinely three-way: Samsung's Galaxy XR, the first Android XR headset, launched on 21 October 2025 at $1,799 (co-developed with Google and Qualcomm, with Gemini built in), while Apple refreshed Vision Pro with an M5 chip and shipped visionOS 26 features aimed squarely at telecollaboration - more realistic Personas, colocated shared AR, and macOS Spatial Rendering.
+  - Industrial telecollaboration consolidated around digital twins and remote expert assistance rather than avatar meetings: platforms such as NVIDIA Omniverse, ABB's and Dassault's 3DEXPERIENCE-based industrial metaverse offerings, and PTC/Scope AR remote-assist tooling reported 60-75% mean-time-to-repair reductions, with the enterprise spatial-computing/XR market sized at roughly $26.4 billion in 2025.
+  - The open web-native direction advanced through Khronos' experimental KHR_gaussian_splatting glTF extensions (announced at SIGGRAPH August 2025 with OGC, Niantic Spatial, Cesium and Esri) and the Open Metaverse Browser Initiative (OMBI), announced by Neil Trevett at AWE 2026 - a browser-side spatial compositor (reference engine "Sneeze", Apache 2.0, maintained with RP1) intended to composite multi-vendor spatial services without a proprietary intermediary.
+  - The frontier challenge as of 2026 is that big-platform withdrawal has left enterprise telecollaboration reliant on specialist vendors (Pico, Vuzix, RealWear, Varjo, Lenovo's ANSI Z87.1-rated Android XR device), and the promised open, interoperable metaverse still depends on unproven standards stacks - proprietary enterprise data cannot yet flow safely through third-party spatial intermediaries, which Khronos itself cites as the reason enterprise spatial computing has stalled.
+
+- ### References
+  - 1. Khronos Group / OpenXR Working Group via Develop3D (2025). Spatial Entities Extensions released by Khronos and OpenXR. https://develop3d.com/vr-ar-mr/spatial-entities-extensions-released-by-khronos-and-openxr/
+  - 2. Microsoft Teams Blog (2025). Immersive events in Microsoft Teams: Now generally available (Mesh retired 1 December 2025). https://techcommunity.microsoft.com/blog/microsoftteamsblog/immersive-events-in-microsoft-teams-now-generally-available/4468628
+  - 3. vr.org (2026). Apple, Meta, and Microsoft Are All Out of Enterprise XR Hardware. https://vr.org/articles/big-tech-quit-enterprise-xr-pico-vuzix-realwear-2026
+  - 4. New Market Pitch (2026). XR Market Update (Q4 2025) - Android XR, Galaxy XR and the smart-glasses pivot. https://newmarketpitch.com/blogs/news/xr-market-update
+  - 5. Awesome Future Studio / The Glow Up podcast (2026). Neil Trevett (Khronos, Metaverse Standards Forum) on standards, the spatial web browser and OMBI (AWE 2026). https://awesomefuture.studio/podcast/the-glow-up/episode/can-standards-a-spatial-web-browser-deliver-the-metaverse-we-were-promised-years-ago-neil-trevett-khronos-group-metaverse-standards-forum-nvidia
+  - 6. MarketIntelo (2026). Spatial Computing Extended Reality Enterprise Market Research. https://marketintelo.com/report/spatial-computing-extended-reality-enterprise-market
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

@@ -287,6 +287,23 @@ public:: true
   - Cryptographic threats: advances in [[Quantum Computing]] threatening ECDSA and EdDSA schemes used for most blockchain transaction signing; post-quantum signature migration is a long-term concern for custody infrastructure design.
   - Mitigations include geographic distribution of [[Cold Storage]] vaults, insurance coverage (Lloyd's of London syndicates offer crypto custody insurance), penetration testing programmes, and third-party audits.
 
+- ### Current Landscape (2026)
+  - On 23 January 2025 the SEC issued Staff Accounting Bulletin 122, rescinding SAB 121 and removing the requirement that banks gross up custodied crypto onto their own balance sheets, which had effectively blocked bank-scale custody since 2022; the FDIC then rescinded FIL-16-2022 in March 2025, reopening the door for regulated custodians.
+  - US federal chartering advanced sharply: on 12 December 2025 the OCC conditionally approved five national trust bank charters for digital-asset custody — BitGo Bank & Trust, Fidelity Digital Assets, Paxos Trust, Circle's First National Digital Bank and Ripple National Trust Bank — joining Anchorage Digital, which held the only such charter (since January 2021) for over four years.
+  - The GENIUS Act (Senate 68-30 on 17 June 2025, signed 18 July 2025, effective January 2027) created the first federal payment-stablecoin regime, specifying permitted federal and state custodial categories, mandating 1:1 high-quality-liquid-asset reserves and seize/freeze/burn capability, and firewalling stablecoin issuance into capital-segregated bank subsidiaries.
+  - In the EU, MiCA's Title V custody rules applied from 30 December 2024 with a transitional window closing at the hard enforcement deadline of 1 July 2026 (ESMA confirming no extension); Article 75 uniquely codifies on-chain segregation of client assets onto separate ledger addresses, sets a €125,000 minimum for custody services and makes custodians liable for client asset loss.
+  - The definition of qualified custody shifted from mere key possession toward legal/operational segregation, bankruptcy-remoteness and verifiable proof of reserves; SEC staff no-action relief on 29 September 2025 confirmed state-chartered trust companies can serve as qualified custodians for RIAs, and NYDFS updated its virtual-currency custody guidance on 30 September 2025.
+  - Market structure consolidated around MPC-plus-HSM and multi-sig architectures: Fireblocks (MPC-CMP with TEE, NYDFS trust charter secured 2025, ~$1bn aggregate insurance), BitGo (~$90bn AUC by July 2025), Coinbase Custody (over $220bn AUC), and Anchorage lead, while incumbents BNY Mellon (tokenised deposits announced January 2026) and US Bank (custody resumed September 2025) re-entered.
+  - Open challenges centre on governance rather than cryptography — the Bybit breach was a transaction-authorisation failure, not a key-compromise — driving focus on policy-enforcement layers, transaction simulation, tested recovery/key-refresh ceremonies, MiCA's ban on delegating custody to unauthorised sub-providers, and reconciling omnibus wallet structures with per-client segregation expectations.
+
+- ### References
+  - 1. Clifford Chance (2025). SEC rescinds 2022 accounting guidance regarding crypto-assets under custody and issues new guidance (SAB 122). https://www.cliffordchance.com/content/dam/cliffordchance/briefings/2025/01/SEC%20rescinds%202022%20accounting%20guidance%20regarding%20crypto-assets%20under%20custody%20and%20issues%20new%20guidance.pdf
+  - 2. Ankura (2026). SEC Rescinds Crypto Accounting Rule: What It Means for Money Transmitters and Digital Asset Custody. https://ankura.com/insights/sec-rescinds-crypto-accounting-rule-what-it-means-for-money-transmitters-and-digital-asset-custody
+  - 3. CoinLaw (2026). Crypto Custody Regulations 2026: US vs EU. https://coinlaw.io/crypto-custody-regulations/
+  - 4. CertiK (2025). Skynet U.S. Digital Asset Policy Report. https://www.certik.com/skynet-report/certik-us-digital-asset-policy-report
+  - 5. StateBay (2026). Crypto Custody Licensing 2026: MiCA, FCA, FINMA, MAS. https://statebay.com/blog/crypto-custody-license-requirements-institutional-2026
+  - 6. Changelly (2026). Crypto Custody in 2026: Multisig, MPC, and Qualified Custodians. https://changelly.com/blog/crypto-custody-in-details/
+
 - ### Provenance
   - sources:: OCC Interpretive Letter 1170 (2020); MiCA Regulation (EU) 2023/1114; FATF Updated Guidance for Virtual Assets (2021); Anchorage Digital OCC charter announcement (2021); SEC SAB 121 (2022); published custody architecture documentation from BitGo, Fireblocks, Coinbase Custody.
   - updated:: 2026-06-13

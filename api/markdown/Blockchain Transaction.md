@@ -318,6 +318,22 @@ public:: true
   - FATF (Financial Action Task Force) Recommendation 16 (Travel Rule) governs information accompanying virtual asset transfers, influencing how transaction metadata is structured for regulatory compliance.
   - W3C Decentralised Identifiers (DIDs) and Verifiable Credentials specifications intersect with [[Digital Identity]] anchoring via blockchain transactions.
 
+- ### Current Landscape (2026)
+  - Ethereum's Pectra hard fork (activated on mainnet 7 May 2025, epoch 364032) introduced EIP-7702 and a new transaction type 0x04 (SetCode), letting ordinary externally-owned accounts temporarily borrow smart-contract code to enable transaction batching, gas sponsorship, session keys and social recovery without migrating wallets.
+  - EIP-7702 adoption was rapid: over 11,000 authorisations appeared within a week of launch, and by early 2026 major wallets (Coinbase Wallet, Safe, Argent, Rabby, Zerion, MetaMask) had shipped support, with sponsored ("gasless") transactions where a dApp pays fees becoming a significant share of activity and reshaping onboarding.
+  - Blob-based data availability continued to reprice transactions: Pectra's EIP-7691 doubled blob throughput (target 3 to 6, max 6 to 9 per block), and the Fusaka upgrade with PeerDAS (activated 8 December 2025) distributed blob data across nodes, driving L2 fees down further so median L2 fees now sit near $0.001-0.01 on Arbitrum, Base and Optimism.
+  - Ethereum L1 base-layer throughput remains modest (roughly 15-30 TPS), keeping the scaling thesis firmly modular: rollups such as Arbitrum, Optimism and Base handle execution while L1 provides settlement and data availability, with combined L2 capacity pushed toward the 100,000 TPS range.
+  - On the high-throughput side, Solana crossed 1 billion transactions in a single week (27 July-2 August 2026) and sustains roughly 1,000-3,000 non-vote TPS at sub-cent fees; the Firedancer/Frankendancer client (Jump) has demonstrated bursts above 100,000 TPS on mainnet and over 1 million TPS in testing, with the Alpenglow consensus proposal targeting sub-150ms finality.
+  - Regulation moved from enforcement to statute: the US GENIUS Act (Public Law 119-27, signed 18 July 2025) set the first federal framework for payment stablecoins, mandating full reserve backing and monthly disclosure, while the EU's MiCA transitional period closed on 1 July 2026.
+  - Open challenges as of 2026 include L1 throughput still lagging (forecasts put mainnet below 100 TPS for years absent aggressive gas-limit increases like EIP-7938), fragmentation of user experience and liquidity across many L2s, security surface expanded by delegated EOA code under EIP-7702, and cross-chain interoperability and MEV on transaction ordering remaining unresolved.
+
+- ### References
+  - 1. Ethereum Foundation (2025). Pectra Mainnet Announcement. https://blog.ethereum.org/2025/04/23/pectra-mainnet
+  - 2. The Block (2025). Ethereum developers activate Pectra upgrade with 11 changes to improve UX, validator ops and Layer 2 scaling. https://www.theblock.co/news/ecosystems/2025-05-07-ethereum-pectra-upgrade-353407
+  - 3. Ethereum.org (2026). Building on Ethereum in 2026: what has changed. https://ethereum.org/latest/building-on-ethereum-in-2026/
+  - 4. Memeburn (2026). Solana Hits 1 Billion Weekly Transactions While Tokenized Equities Dominate at 82%. https://memeburn.com/solana-hits-1-billion-weekly-transactions/
+  - 5. The Blockchain History (2025). Chapter 9: Latest Development Trends and Future Outlook (2024-2026). https://theblockchainhistory.com/history/latest-trends
+
 - ### Provenance
   - sources:: [[IEEE (Institute of Electrical and Electronics Engineers)]]
   - updated:: 2026-06-13

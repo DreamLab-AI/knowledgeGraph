@@ -263,6 +263,22 @@ alias:: ExtendedReality
   - **Privacy** — inside-out tracking cameras and [[Eye Tracking]] generate dense behavioural biometric data; regulatory frameworks (GDPR, CCPA) are still adapting.
   - **Accessibility** — vestibulo-ocular conflicts, inter-pupillary distance ranges, and controller affordances exclude users with certain disabilities or conditions.
 
+- ### Current Landscape (2026)
+  - Android XR, the Google–Samsung–Qualcomm operating system co-announced in December 2024, reached its first commercial device on 21–22 October 2025 with the Samsung Galaxy XR (Project Moohan) at $1,799, featuring dual micro-OLED displays at ~4,032 PPI, Snapdragon XR2+ Gen 2 silicon and Gemini spatial AI; it reached the UK in July 2026.
+  - Apple refreshed the Vision Pro with an M5 chip in 2026 (now around $3,699), while the wider hardware calendar for the year included Bigscreen Beyond 2 (107g PC VR) and Valve's confirmed Steam Frame for summer 2026; Meta's next gaming Quest slipped to H2 2027.
+  - The category's centre of gravity shifted decisively from headsets to lightweight smart glasses: IDC reported XR shipments grew 44.4% in 2025 to roughly 14.5 million units, even as enclosed VR/MR headset shipments fell ~42.8%, with smart glasses making up about half of all volume.
+  - Meta dominates via its EssilorLuxottica partnership, holding around 72–76% of the combined XR market; Ray-Ban Meta sold an estimated 6.5 million units in 2025, and Meta unveiled a new $499 Ray-Ban line on 31 March 2026 targeting 13.4 million shipments for the year, with the Ray-Ban Display model pushing into remote-assist enterprise use.
+  - Open standards consolidated around OpenXR 1.1 and WebXR as the cross-runtime dev paths; Android XR reached Developer Preview 4 (19 May 2026) with six development paths (Jetpack XR, Unity, Unreal 5, Godot, OpenXR 1.1, WebXR), letting a single build also target Meta Quest.
+  - Consumer smart-glasses distribution remains immature: as of mid-2026 no Android XR AI glasses had shipped and Google Play offered no distribution channel for the audio/display glasses class, with Google's audio glasses only slated for "this fall" 2026.
+  - Open challenges as of 2026 include short battery life, thin app ecosystems, privacy concerns over always-on cameras, an IP-intensive and immature supply chain, and rising memory-component costs that Counterpoint flagged as a genuine 2026 headwind — pushing vendors to compete on AI and software rather than hardware.
+
+- ### References
+  - 1. IDC (2026). XR Market Grew 44.4% in 2025 as Smart Glasses Redefine the Category. https://www.idc.com/resource-center/press-releases/xr-market-grew-44-4-in-2025-as-smart-glasses-redefine-the-category/
+  - 2. IDC (2026). Smart Glasses Surge: The XR Market Is Rewriting Its Own Rules. https://www.idc.com/resource-center/blog/smart-glasses-surge-the-xr-market-is-rewriting-its-own-rules/
+  - 3. Google / Samsung (2025). Introducing Galaxy XR, the first Android XR headset. https://blog.google/products-and-platforms/platforms/android/samsung-galaxy-xr/
+  - 4. Extentos (2026). Android XR for developers: SDK, app model & distribution (2026). https://extentos.com/docs/ecosystem/platforms/android-xr
+  - 5. Computer Weekly (2026). Intelligent eyewear market sees opportunities. https://www.computerweekly.com/news/366645176/Intelligent-eyewear-market-sees-opportunities
+
 - ### Provenance
   - sources:: Milgram & Kishino (1994) Reality-Virtuality Continuum; Khronos OpenXR 1.x specification; W3C WebXR Device API W3C Recommendation; IEEE 2048 Working Group; industry analyst reports (IDC, Gartner) on XR adoption
   - updated:: 2026-06-13

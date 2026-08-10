@@ -263,6 +263,21 @@ public:: true
   - **AI assertion completeness**: the AI/ML assertion type relies on voluntary disclosure by AI system operators. Systems that do not implement C2PA or that deliberately omit assertions cannot be detected by downstream verifiers.
   - **Computational overhead**: embedding and verifying credentials adds latency to media ingest pipelines; high-volume distribution platforms must optimise credential verification throughput.
 
+- ### Current Landscape (2026)
+  - The specification has iterated rapidly: v2.1 (September 2024) hardened validation and Durable Content Credentials, v2.2 (May 2025) refined implementer features, v2.3 (December 2025) added live and broadcast provenance via CMAF segment-level signing, and v2.4 (April 2026) introduced the crJSON serialisation plus manifest embedding in HTML and structured text formats; the standard is also being fast-tracked as ISO 22144.
+  - Trust infrastructure matured around the C2PA Conformance Program (launched mid-2025) and an official Trust List with a public Conforming Products List at spec.c2pa.org/conformance-explorer; the older Interim Trust List was frozen on 1 January 2026, so legacy ITL certificates must now be distinguished from formally conforming products.
+  - Hardware capture reached consumers: the Google Pixel 10 (September 2025) signs every photo by default using hardware-backed keys (Titan M2) and on-device timestamping (Tensor G5), while the Samsung Galaxy S25 (January 2025) signs only AI-edited images; Sony's PXW-Z300 debuted at IBC 2025 as the first camcorder with native C2PA signing, alongside C2PA-capable models from Leica, Canon, Fujifilm and Panasonic.
+  - Steering-committee membership expanded to Adobe, Amazon, BBC, Google, Intel, Meta, Microsoft, OpenAI, Publicis Groupe, Sony and Truepic; OpenAI joined and adopted SynthID watermarking (updated 19 May 2026), and TikTok upgraded from General to Steering Committee member on 27 July 2026.
+  - Distribution and verification surfaces grew: Cloudflare became the first major CDN to preserve Content Credentials (February 2025), Google is rolling out combined C2PA and SynthID verification across Gemini, Search and Chrome, and the CAI verify.contentauthenticity.org tool checks manifests offline with certificates travelling inside the file.
+  - Open challenges as of 2026 remain the first-mile trust gap (C2PA attests who signed and when, not whether the underlying content is truthful), missing capture timestamps on many signing cameras, uneven and opt-in adoption, and resilience failures such as the Nikon Z6 III whose firmware C2PA support was suspended and certificates revoked after a critical signing vulnerability (September 2025).
+
+- ### References
+  - 1. C2PA / Joint Development Foundation (2026). Content Credentials: C2PA Technical Specification 2.4 (Version History). https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html
+  - 2. SoftwareSeni (2026). C2PA Adoption in 2026: Hardware Platforms and Verification Reality. https://www.softwareseni.com/c2pa-adoption-in-2026-hardware-platforms-and-verification-reality/
+  - 3. C2PA (2026). Announcements — TikTok upgrades to Steering Committee Member; Amazon and Meta join. https://c2pa.org/news/
+  - 4. Google (2024). How we're increasing transparency for gen AI content with the C2PA. https://blog.google/innovation-and-ai/products/google-gen-ai-content-transparency-c2pa/
+  - 5. NSA / CISA (2025). Content Credentials: Strengthening Multimedia Integrity in the Generative AI Era. https://media.defense.gov/2025/Jan/29/2003634788/-1/-1/0/CSI-CONTENT-CREDENTIALS.PDF
+
 - ### Provenance
   - sources:: C2PA Technical Specification v2.x; Content Authenticity Initiative documentation; JPEG Universal Metadata Box Format (ISO 19566-5); COSE RFC 9052; C2PA GitHub repositories
   - updated:: 2026-06-13

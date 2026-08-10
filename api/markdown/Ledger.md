@@ -317,6 +317,23 @@ public:: true
   - **Hyperledger** — Linux Foundation umbrella project hosting permissioned ledger frameworks (Fabric, Besu, Indy) targeting enterprise and consortium deployments.
   - **Ledger SAS** — private company founded 2014; products include Ledger Nano S Plus, Ledger Nano X, Ledger Stax; the Ledger Connect Kit supply-chain attack of December 2023 highlighted the security criticality of [[Key Management]] in hardware wallet ecosystems.
 
+- ### Current Landscape (2026)
+  - The distributed-ledger standards stack matured sharply: ISO/TC 307 published ISO/TS 23516:2026, a formal blockchain/DLT interoperability framework, on 11 March 2026, approved a Web3.0 Reference Architecture in February 2026, and in August 2026 opened a new Blockchain-as-a-Service technical-framework project (project lead China) aimed at reducing vendor lock-in across the 100,000+ enterprise deployments now running on BaaS.
+  - The dominant 2024-2026 shift is from speculative chains to ledgers as settlement infrastructure for real-world assets (RWA): tokenised RWA value rose from roughly $5.8bn in January 2025 to over $30bn by late 2025 and past the $26bn threshold on some stricter counts by March 2026, led by private credit (~$17-18bn) and tokenised US Treasuries (~$8-15bn).
+  - Institutional issuers now dominate the ledger: BlackRock's BUIDL tokenised Treasury fund (live March 2024) surpassed $2bn, Fidelity launched its FDIT token in September 2025, and Apollo, Franklin Templeton, Goldman Sachs, BNY Mellon and Societe Generale moved money-market funds and bonds on-chain across Ethereum, Solana, XRP Ledger, Canton Network and Provenance.
+  - Regulation crystallised into concrete ledger rules: the US GENIUS Act (July 2025) set a federal stablecoin settlement framework, the EU's MiCA and DORA (applicable from January 2025) plus the DLT Pilot Regime governed on-chain market infrastructure, and the UK passed the Property (Digital Assets etc.) Act 2025 with cryptoasset regulation now penciled for an October 2027 go-live.
+  - Enterprise architecture consolidated around permissioned and hybrid ledgers (Hyperledger Fabric, Besu, Corda-style networks) using public-chain anchoring for notarisation; private blockchains held roughly 54% of the enterprise supply-chain segment in 2025 as that market scaled from about $3.27bn (2025) to $5.23bn (2026).
+  - Concrete infrastructure milestones landed in Europe: Switzerland's FINMA granted its first DLT trading-facility licence to BX Digital in 2025 under the amended Financial Market Infrastructure Act, enabling integrated trading and settlement of tokenised securities on a regulated ledger.
+  - Open frontiers as of 2026 remain cross-ledger interoperability and common data standards (driven by ISO/TC 307, ICMA and AFME), privacy-preserving compliance on shared ledgers, avoiding technology lock-in, and reconciling immutability with GDPR, AML and the EU Data Act's smart-contract requirements.
+
+- ### References
+  - 1. TechTimes (2026). China Wins ISO Project Lead on Blockchain Standard Targeting Vendor Lock-In. https://www.techtimes.com/articles/322755/20260803/china-wins-iso-project-lead-blockchain-standard-targeting-vendor-lock.htm
+  - 2. ISO / iTeh (2026). ISO/TS 23516:2026 — Blockchain and distributed ledger technology — Interoperability framework. https://standards.iteh.ai/catalog/standards/iso/6c5ccbb2-7e68-495d-bc58-1b0a799c1db6/iso-ts-23516-2026
+  - 3. InvestaX (2026). Q3 2025 Real World Asset Tokenization Market Report. https://investax.io/blog/q3-2025-real-world-asset-tokenization-market-report
+  - 4. Cointelegraph / TradingView (2026). Tokenized RWA market grows 420% since 2025 on regulatory clarity, access. https://www.tradingview.com/news/cointelegraph:e1463c753094b:0-tokenized-rwa-market-grows-420-since-2025-on-regulatory-clarity-access/
+  - 5. Ashurst / Perkins Coie (2026). Digital Assets in 2026: What to Watch. https://www.ashurstperkinscoie.com/en/insights/digital-assets-in-2026-what-to-watch/
+  - 6. KPMG (2025). DLT Report 2025 (FINMA BX Digital DLT trading facility licence). https://assets.kpmg.com/content/dam/kpmgsites/ch/pdf/kpmg-dlt-report-2025.pdf.coredownload.inline.pdf
+
 - ### Provenance
   - sources:: ISO 22739:2020; Satoshi Nakamoto — Bitcoin Whitepaper (2008); Ethereum Yellow Paper (Gavin Wood, 2014); Hyperledger documentation; Ledger SAS corporate documentation
   - updated:: 2026-06-13

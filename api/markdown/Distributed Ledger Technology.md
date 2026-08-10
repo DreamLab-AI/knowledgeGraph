@@ -286,6 +286,24 @@
     - ConsenSys Quorum — Ethereum-based permissioned variant used by banks and consortia.
     - Hedera Hashgraph — DAG-based public ledger governed by a council of enterprises.
 
+- ### Current Landscape (2026)
+  - Regulation moved from policy to practice: the EU's MiCA became fully applicable for crypto-asset service providers on 31 December 2024 (its grandfathering period ending 30 June 2026), while in the US the GENIUS Act (2025) created a federal payment-stablecoin regime and the SEC's 2025 Crypto Task Force issued no-action relief clarifying that payment stablecoins and staking are not securities.
+  - Real-world asset (RWA) tokenisation scaled sharply: tokenised RWAs on public chains grew past roughly USD 35 billion by late 2025 and hit about USD 23 billion (excluding stablecoins) by February 2026, with BlackRock's BUIDL fund (launched March 2024 with Securitize) growing to around USD 2.4-2.9 billion across eight chains.
+  - Market infrastructure went on-chain: in December 2025 the SEC cleared the DTCC to begin settling tokenised versions of frequently traded securities (ETFs, Treasuries, bonds), Nasdaq gained approval in March 2026 to let investors choose per-trade blockchain settlement, and JPMorgan rebranded Onyx as Kinexys (over USD 1.5 trillion processed), launching its MONY tokenised money-market fund in December 2025 and JLTXX in May 2026.
+  - Central banks advanced wholesale DLT settlement: the ECB's Governing Council decided on 20 February 2025 to pursue a two-track strategy (Pontes for near-term TARGET interoperability, aiming to launch Q3 2026, and the longer-term Appia vision), while the SNB extended Project Helvetia's wholesale CBDC on SIX Digital Exchange to at least mid-2027.
+  - The digital euro entered its preparation phase: the ECB targets a 12-month pilot from H2 2027 and potential first issuance in 2029 (pending 2026 adoption of the Regulation), selecting 36 payment service providers in 2026 from over 50 applicants.
+  - Interoperability consolidated around permissioned, privacy-enabled networks: the Canton Network pilot linked 45 institutions across 22 permissioned blockchains for atomic transactions, and JPMorgan announced native JPM Coin issuance on Canton in January 2026, with ISO 20022 remaining the connective standard between DLT and legacy rails.
+  - Switzerland issued its first DLT trading facility licence to BX Digital (Börse Stuttgart Group) in March 2025 under its DLT Act, a concrete operational milestone for regulated DLT market infrastructure.
+  - Open challenges as of 2026 include fragmented cross-chain settlement finality and legal recognition, modest uptake under the EU DLT Pilot Regime (prompting a December 2025 Commission proposal to extend and widen it), lost-key recovery and forced-transfer controls for tokenised assets, and preparing ledgers for post-quantum cryptography.
+
+- ### References
+  - 1. State Street (2026). Digital Digest March 2026: Digital asset regulation accelerates in 2026. https://www.statestreet.com/us/en/insights/digital-digest-march-2026-regulations
+  - 2. TRM Labs (2025). Global Crypto Policy Review & Outlook 2025/26. https://www.trmlabs.com/reports-and-whitepapers/global-crypto-policy-review-outlook-2025-26
+  - 3. Cleary Gottlieb (2026). 2026 Digital Assets Regulatory Update: A Landmark 2025 But More Developments on the Horizon. https://www.clearymawatch.com/2026/02/2026-digital-assets-regulatory-update-a-landmark-2025-but-more-developments-on-the-horizon/
+  - 4. Dakota (2026). The 6 Asset Managers Leading the Tokenized Real-World Asset Market in 2026. https://www.dakota.com/resources/blog/the-6-asset-managers-leading-the-tokenized-real-world-asset-market-in-2026
+  - 5. Charles Schwab (2026). Tokenization: Real-World Assets on the Blockchain. https://www.schwab.com/learn/story/tokenization-real-world-assets-on-blockchain
+  - 6. European Central Bank (2026). The digital euro: strengthening Europe's payments ecosystem (speech, 6 February 2026). https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260206~dd5354fe95.en.html
+
 - ### Provenance
   - sources:: ISO 22739:2020 (Blockchain and DLT — Vocabulary); BIS CPMI Report on DLT in Payment, Clearing and Settlement (2017); Hyperledger Architecture Working Group; Ethereum Yellow Paper; Nakamoto (2008) Bitcoin whitepaper; W3C DID Core Recommendation.
   - updated:: 2026-06-13

@@ -1261,6 +1261,22 @@ public:: true
     **Regulatory**:
     - [[KYC]], [[AML]], [[SEC]], [[MiCA]], [[Howey Test]]
   - ### Standards & References
+- ### Current Landscape (2026)
+  - Token issuance has shifted decisively toward compliant real-world-asset (RWA) formats: on-chain RWA value excluding stablecoins reached roughly 31-36 billion USD by mid-2026 (rwa.xyz showed 33.5 billion in July 2026, about 4x early-2025), led by tokenised US Treasuries and private credit, with tokenised equities the fastest-growing new category.
+  - The compliance-token stack matured around ERC-3643 (T-REX) for permissioned fungible tokens, and ERC-7943 (uRWA), a neutral universal RWA interface that extends ERC-20/721/1155/6909, which reached Final status on 27 May 2026 (CMTA's Swiss CMTAT added support); ERC-1400 notably remains a Draft rather than a finalised standard.
+  - US regulation consolidated fast: the GENIUS Act was signed into law on 18 July 2025 (federal stablecoin framework, no yield to holders), and on 28 January 2026 the SEC published its first formal Tokenization Statement affirming that a security's technological format does not change its legal character.
+  - Institutional rails went live: BNY and Goldman Sachs launched tokenised money-market-fund rails (July 2025, with BlackRock and Fidelity), JPMorgan launched its MONY tokenised MMF (December 2025), WisdomTree won SEC relief for 24/7 instant-settlement fund shares (February 2026), and Nasdaq gained SEC approval (19 March 2026) to trade tokenised stocks and ETFs natively.
+  - In the EU, MiCA became fully applicable on 30 December 2024 and its CASP transitional period ended on 1 July 2026; the ECB agreed (January 2026) to accept certain DLT-issued assets as eligible Eurosystem collateral from 30 March 2026, and a December 2025 Market Integration Package proposes raising the DLT Pilot Regime cap from 6 billion to 100 billion EUR.
+  - Solana's Token-2022 extension (Transfer Hooks, Permanent Delegate, confidential and interest-bearing transfers) emerged as the main non-EVM compliant-token model, while stablecoins remained a distinct 290-321 billion USD market dominated by USDT and USDC.
+  - Open challenges as of 2026 include fragmentation across competing token standards and chains, cross-chain transfers that pull routing protocols into the CASP regulatory perimeter, portable on-chain identity/KYC, and low capital efficiency, with analyses noting a large share of tokenised assets still sitting idle.
+
+- ### References
+  - 1. Stobox (2026). The State of RWA Tokenization — 2026 Mid-Year Report. https://www.stobox.io/reports/state-of-rwa-2026
+  - 2. Brickken (2026). RWA Token Standards in 2026. https://www.brickken.com/post/blog-tokenization-asset-standards
+  - 3. CoinGecko (2026). RWA Report 2026. https://www.coingecko.com/research/publications/rwa-report-2026
+  - 4. MetaMask (2026). Tokenization methods for unlocking real-world asset liquidity in 2026. https://metamask.io/news/tokenization-methods-real-world-asset-liquidity
+  - 5. Eco (2026). MiCA and Tokenized RWAs 2026: EU Regulatory Framework. https://eco.com/support/en/articles/15254022-mica-and-tokenized-rwas-2026-eu-regulatory-framework
+
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], Chimera Prime Research
   - migration-date:: 2026-04-26T00:00:00Z

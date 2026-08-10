@@ -245,6 +245,23 @@ public:: true
   - **Proactive security** (periodic share refresh) addresses the long-term mobile adversary who can compromise different sets of nodes in different time windows.
   - **Threshold vs multisig privacy**: On-chain multisig exposes the signing policy to observers; threshold schemes produce a single signature, hiding the custody architecture.
 
+- ### Current Landscape (2026)
+  - NIST published the final NIST IR 8214C, "First Call for Multi-Party Threshold Schemes" (DOI 10.6028/NIST.IR.8214C), on 20 January 2026, after two public drafts (ipd 2023, 2pd March 2025); it organises submissions into Class N (NIST-specified primitives such as threshold ECDSA and EdDSA) and Class S (special primitives including FHE and ZKP), across three phases (Previews, Packages, Analysis).
+  - The call is now mid-flight: MPTS 2026 (26–29 January) hosted 45 talks, Previews Phase 1 posted 26 writeups from 23 teams (185 authors), Phase 2 added 10 more (6–8 July), the Phase 3 preview deadline was 7 August 2026, and the package-submission deadline has been set to 30 November 2026 (postponed from October).
+  - FROST (Flexible Round-Optimised Schnorr Threshold signatures) was standardised as IETF RFC 9591 in June 2024 and is a headline NIST submission (team led by Chelsea Komlo, Waterloo/NEAR), sitting alongside competing Schnorr/EdDSA entries such as Gargos, Fireblocks' Classic Schnorr, and threshold-ECDSA proposals (TECLA, CCGMP, DKLs-based).
+  - Adaptive security has become the live research frontier: Crites et al. (CRYPTO 2025) showed FROST's adaptive security rests on an inherently non-standard assumption, prompting new constructions such as Mask-FROST (Chenzhi Zhu, NTT Research), which achieves adaptive security under only AOMDL in the algebraic group model.
+  - Post-quantum threshold signing advanced with Threshold Raccoon (eprint 2024/184, PQShield with the Ethereum Foundation and others), the first efficient lattice-based threshold signature (~13 KiB signatures, up to 1024 signers) built on Dilithium-style assumptions without heavy threshold FHE.
+  - Industry adoption of TSS-MPC is now mainstream in digital-asset custody: Fireblocks, Coinbase, and Dynamic run distributed key generation with DKLs19 for threshold ECDSA and FROST for EdDSA, reaching dozens-to-hundreds of signatures per second where only single-digit throughput was feasible a few years ago.
+  - Regulatory pressure is building ahead of standards: in an August 2025 cross-industry letter, Fireblocks and partners urged NIST to fast-track a prescriptive Special Publication on Threshold Signature Schemes (achievable within roughly two years), arguing the IR-track timelines are too long and unclear for regulated financial institutions.
+  - Open challenges as of 2026 include closing the gap between deployed TSS and formal NIST guidance, standardising adaptively and actively secure protocols, maturing efficient post-quantum threshold schemes, and handling proactive/dynamic committee refresh and identifiable-abort robustness at scale.
+
+- ### References
+  - 1. NIST (2026). NIST IR 8214C: First Call for Multi-Party Threshold Schemes (final). https://csrc.nist.gov/pubs/ir/8214/c/final
+  - 2. NIST CSRC (2026). Multi-Party Threshold Cryptography — project and NIST Threshold Call status. https://csrc.nist.gov/projects/threshold-cryptography/tcall-1
+  - 3. Connolly, Komlo, Goldberg & Wood / IRTF CFRG (2024). RFC 9591: The Flexible Round-Optimized Schnorr Threshold (FROST) Protocol. https://www.rfc-editor.org/rfc/rfc9591.html
+  - 4. del Pino, Katsumata, Prest, Rossi et al. / PQShield (2024). Threshold Raccoon: Practical Threshold Signatures from Standard Lattice Assumptions. https://eprint.iacr.org/2024/184
+  - 5. Fireblocks (2025). Standardizing MPC Cryptography: A Cross-Industry Call to Action. https://www.fireblocks.com/blog/standardizing-mpc-cryptography-a-cross-industry-call-to-action
+
 - ### Provenance
   - sources:: Shamir (1979) "How to Share a Secret", IACR ePrint threshold ECDSA literature, NIST IR 8214, IETF CFRG FROST draft, Ethereum DVT specifications
   - updated:: 2026-06-13

@@ -258,6 +258,22 @@ public:: true
   - **OpenAI-compatible REST API**: An informal but widely adopted API standard (originally from OpenAI) that vLLM, Ollama, LM Studio, and many other inference servers implement, enabling application portability across self-hosted and cloud-hosted inference backends.
   - **GGUF format** (GPT-Generated Unified Format): A binary model serialisation format used by llama.cpp and compatible engines for storing quantised LLM weights with metadata, increasingly adopted as a distribution format for quantised open-weight models.
 
+- ### Current Landscape (2026)
+  - By 2026 the term "inference engine" in AI most commonly denotes an LLM serving runtime, where vLLM (v0.25.x, Red Hat/community, PagedAttention plus a fully async V1 engine), SGLang (v0.5.x, LMSYS, RadixAttention prefix-tree KV reuse) and NVIDIA's compiled TensorRT-LLM (v1.2.1, April 2026) are the three dominant open engines, alongside LMDeploy and local runtimes such as Ollama and llama.cpp.
+  - Prefill-decode (PD) disaggregation, splitting GPU pools into prefill-optimised and decode-optimised workers connected by a KV-cache transfer layer, moved from research (UCSD/Splitwise, DeepSeek-V3) to the de-facto large-scale architecture, productised in NVIDIA Dynamo, the llm-d project and SGLang during 2025-2026.
+  - Speculative decoding matured into a standard cost lever, with EAGLE-3 / EAGLE 3.1 (self-drafting, no separate model), P-EAGLE/PEARL parallel variants and heterogeneous draft-target vocabulary support landing in vLLM through 2026, typically delivering 2-3x latency reduction.
+  - Independent H100 benchmarks in 2026 show the raw feature gap has largely closed (all three do continuous batching, paged KV cache and FP8): TensorRT-LLM leads peak throughput on dense NVIDIA models by roughly 10-25% but needs ~28 minutes to compile an engine, while SGLang's RadixAttention gives ~29% higher throughput on prefix-heavy Llama 3.1 8B workloads (about 16,200 vs 12,500 tok/s); vLLM remains the broad default with 200-400+ supported architectures and ~60s cold start.
+  - Low-bit quantisation shifted the cost curve: FP8 became the default on Hopper (roughly 30% faster, near-lossless) and NVIDIA Blackwell / NVFP4 kernels (via FlashInfer, CUTLASS, TensorRT-LLM) drove FP4 MoE serving, with vLLM reporting ~25K tokens/sec/GPU on Qwen3.5-class models in August 2026.
+  - Hardware and modality coverage broadened beyond NVIDIA: vLLM added AMD ROCm, Google TPU, Intel Gaudi/XPU and Arm CPU paths, EAGLE3 speculative decoding runs on AMD Instinct, and edge stacks (LiteRT, ExecuTorch, OpenVINO, Qualcomm, Apple MLX) turned on-device inference into an NPU/WebGPU packaging contest.
+  - Open frontier challenges as of 2026 include efficient long-context and 1M-token multimodal serving, sparse/MoE expert-routing and cache-layout pressure from models like DeepSeek, Kimi, GLM and Qwen3.5, dynamic prefill/decode worker rebalancing, and operational complexity of multi-node disaggregated clusters versus simpler single-node deployments.
+
+- ### References
+  - 1. vLLM Project (2026). vLLM Blog — release and engineering updates (Qwen3.5 25K TPS/GPU, disaggregated serving, EAGLE 3.1, day-0 model support). https://vllm-project.github.io/
+  - 2. Packet.ai (2026). SGLang vs vLLM vs TensorRT-LLM: Decision Guide 2026. https://packet.ai/blog/sglang-vs-vllm-vs-tensorrt-llm
+  - 3. zhuoqidev (2026). LLM Inference Engine Selection: A 2026 Map from Local Single-GPU to PD Disaggregation. https://zhuoqidev.com/en/posts/llm-inference-engine-selection/
+  - 4. Red Hat Developers (2026). Optimizing distributed AI inference: Advanced deployment patterns. https://developers.redhat.com/articles/2026/06/24/optimizing-distributed-ai-inference-advanced-deployment-patterns
+  - 5. MarkTechPost (2025). Comparing the Top 6 Inference Runtimes for LLM Serving in 2025. https://www.marktechpost.com/2025/11/07/comparing-the-top-6-inference-runtimes-for-llm-serving-in-2025/
+
 - ### Provenance
   - sources:: MLCommons MLPerf Inference benchmark documentation; NVIDIA TensorRT and TensorRT-LLM documentation; vLLM project documentation; ONNX specification; Apache TVM documentation; ExecuTorch documentation (Meta); general established knowledge of AI systems and compiler toolchains.
   - updated:: 2026-06-13

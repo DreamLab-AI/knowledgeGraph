@@ -466,6 +466,24 @@ public:: true
   - Brain interfaces
   - Persistent worlds
 
+- ### Current Landscape (2026)
+  - The market has bifurcated sharply between a struggling consumer social metaverse and a fast-scaling industrial/enterprise one: Meta shut Horizon Workrooms and cut roughly 10% of Reality Labs in early 2026, and on 15 June 2026 disabled Horizon Worlds' in-headset creation tools (making world-building phone-only) after a March 2026 reversal, while Reality Labs still posted an ~$19bn operating loss on ~$2.2bn revenue for 2025.
+  - Roblox has become the strongest pure-play platform, reporting ~$4.9bn 2025 revenue (up 36%), ~$6.8bn bookings and around 111-144 million daily active users, even as it continues to struggle to penetrate enterprise use cases.
+  - Hardware split into premium versus mass tiers: Apple's Vision Pro passed ~3 million cumulative units by December 2025 and refreshed to an M5, 120Hz model at $3,499 (later raised to $3,699), but Apple cancelled its cheaper "Vision Air" headset in 2026 and pivoted mixed-reality staff toward smart glasses (now expected ~2027), while Meta's $299 Quest 3S drove Meta to roughly 75-77% of the VR headset market.
+  - Attention has shifted decisively toward AI smart glasses and "physical AI": IDC reported smart-glasses shipments up 167% year-on-year in Q1 2026, and the industrial metaverse surged around NVIDIA Omniverse - Siemens launched Digital Twin Composer at CES 2026 (PepsiCo cites ~20% throughput gains and 10-15% capex reductions), and at GTC March 2026 NVIDIA tied Omniverse to Cadence, Dassault, PTC, Siemens and Synopsys plus manufacturers like Mercedes-Benz, TSMC and Foxconn.
+  - Interoperability standardisation advanced materially: the Metaverse Standards Forum (2,400+ members) published its Open Metaverse Interoperability Profile (OMIP) 2.0 in early 2026 covering avatars, asset portability and identity federation, and released the "Web of Worlds" whitepaper (March 2026) reorganised under a new Spatial Computing Working Group; OpenXR 1.1 standardised hand/eye tracking and spatial mapping across major headsets.
+  - OpenUSD and glTF continue converging as the twin backbone formats - the MSF's USD/glTF interoperability group (with Adobe open-source importers/exporters and OpenPBR/MaterialX alignment) worked through 2025-2026 on Gaussian-splatting storage in glTF and roundtrip fidelity, with glTF now an ISO/IEC standard positioned as "the JPEG of 3D".
+  - Government and defence demand is now a key anchor: the US DoD committed over $900m to AR/MR via the IVAS programme across 2024-2025, alongside national spatial-computing programmes in South Korea, Singapore, the UAE and Saudi Arabia, while EU deployments (e.g. NVIDIA's Germany-based industrial AI cloud and GDPR-compliant Project Hafnia) foreground data-governance compliance.
+  - Open challenges as of 2026: viable social presence at scale remains unproven, avatar portability is still only partial (attribute-mapping "Rosetta Stone" rather than true fidelity), consumer hardware economics stay unresolved between $3,500 headsets and cheap glasses, and the sector's centre of gravity is migrating from immersive VR worlds toward AI-driven digital twins and lightweight glasses.
+
+- ### References
+  - 1. Informa TechTarget (2025). Top Metaverse Platforms in 2025, Rise of Spatial Computing. https://www.techtarget.com/searchcio/tip/Top-metaverse-platforms-to-know-about
+  - 2. jacar.es (2026). XR, AR and VR in 2026: the honest state after the cycle. https://jacar.es/en/xr-ar-and-vr-in-2026-the-honest-state-after-the-cycle/
+  - 3. Emergen Research (2026). Metaverse Market Report (size, players, IVAS and national programmes). https://www.emergenresearch.com/industry-report/metaverse-market
+  - 4. InnTech Academy (2026). Metaverse Interoperability in 2026: Why Open Standards Are the Key (OMIP 2.0, OpenXR 1.1). https://inntechacademy.com/posts/metaverse-interoperability-open-standards-2026/
+  - 5. Siemens (2026). Siemens unveils Digital Twin Composer (CES 2026, industrial metaverse with NVIDIA Omniverse). https://news.siemens.com/en-us/digital-twin-composer-ces-2026/
+  - 6. NVIDIA (2026). NVIDIA and Global Industrial Software Giants Bring Design, Engineering and Manufacturing Into the AI Era (GTC, 16 March 2026). https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Global-Industrial-Software-Giants-Bring-Design-Engineering-and-Manufacturing-Into-the-AI-Era/default.aspx
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

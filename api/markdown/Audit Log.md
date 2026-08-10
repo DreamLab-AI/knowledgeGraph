@@ -260,6 +260,23 @@ public:: true
   - The shift to cloud-native and microservices architectures in the 2010s created orders-of-magnitude increases in log volume, driving the development of purpose-built log aggregation platforms, streaming architectures using Apache Kafka, and AI-powered log analysis for [[Anomaly Detection]].
   - [[Blockchain]] and distributed ledger technology introduced new possibilities for audit logs requiring third-party verifiable tamper evidence, as seen in certificate transparency initiatives and financial regulatory reporting use cases.
 
+- ### Current Landscape (2026)
+  - The EU AI Act's Article 12 record-keeping duty for high-risk AI systems becomes enforceable on 2 August 2026, mandating automatic, tamper-evident event logging with a six-month minimum retention for both providers (Art. 19) and deployers (Art. 26(6)), backed by fines up to EUR 15m or 3% of worldwide turnover; a proposed Digital Omnibus delay to December 2027 remained in trilogue and unpassed as of mid-2026.
+  - Regulatory pressure has promoted audit-log integrity from an implementation detail to a first-class control: DORA took effect on 17 January 2025 (five-year incident-record retention, four-hour major-incident reporting), NIS2 (effective 17 October 2024) sets a de facto 12-month log-retention expectation, and PCI DSS 4.0.1's future-dated controls became mandatory on 31 March 2025.
+  - The architectural baseline has shifted from "we logged it" to cryptographically verifiable trails: hash-chained leaves on the producing host, rolled into signed Merkle roots on a fixed cadence, externally anchored, and held on WORM/Object Lock storage with publishable verification tooling an auditor can re-run without the producer's cooperation.
+  - OpenTelemetry has become the de facto structured-logging substrate for audit pipelines, with 2026 reference designs pairing OTel Collector instrumentation and content hashing with append-only sinks such as AWS S3 Object Lock (compliance mode), Azure Immutable Blob Storage and GCS retention policies, dual-exported alongside a searchable SIEM copy.
+  - Agentic AI has opened a new frontier: OWASP's MCP Top 10 lists "MCP08:2025 - Lack of Audit and Telemetry", the IETF is drafting a standard Agent Audit Trail logging format (draft-sharif-agent-audit-trail, March 2026), and vendors now log decision-level events (inferences, tool calls, RAG retrievals, multi-agent handoffs) with per-agent cryptographic identity.
+  - Post-quantum and blockchain approaches are emerging, including hash-chained receipts signed with ML-DSA-65 for adversarial-operator resistance, and research systems such as Nitro (ACM CCS '25) for high-performance tamper-evident logging and LogProof (IEEE iSES 2025) anchoring log hashes on MultiChain.
+  - Open challenges as of 2026 include reconciling tamper-evident retention with GDPR data-minimisation and pseudonymisation, capturing decision-level agent context without storing raw personal data, protecting logs against privileged-insider deletion, and proving non-bypassable capture rather than opt-in application logging.
+
+- ### References
+  - 1. Novantra (2026). Tamper-evident audit trails: when 'we logged it' is not enough anymore. https://novantra.io/en/articles/insights/tamper-proof-audit-trails
+  - 2. Help Net Security (2026). What the EU AI Act requires for AI agent logging. https://www.helpnetsecurity.com/2026/04/16/eu-ai-act-logging-requirements/
+  - 3. OneUptime (2026). How to Build an Immutable Audit Log Pipeline Using OpenTelemetry. https://oneuptime.com/blog/post/2026-02-06-immutable-audit-log-pipeline-otel/view
+  - 4. OWASP Foundation (2025). MCP08:2025 - Lack of Audit and Telemetry. https://owasp.org/www-project-mcp-top-10/2025/MCP08-2025%E2%80%93Lack-of-Audit-and-Telemetry
+  - 5. AuditKit (2026). DORA Audit Log Requirements 2026: Setup Checklist + SDK. https://auditkit.dev/compliance/dora
+  - 6. Zhao, R., Shoaib, M., Hoang, V.T., Hassan, W.U. (2025). Rethinking Tamper-Evident Logging: A High-Performance, Co-Designed Auditing System (ACM CCS '25). https://arxiv.org/pdf/2509.03821
+
 - ### Provenance
   - sources:: NIST SP 800-92, ISO/IEC 27001:2022, PCI DSS v4.0, HIPAA Security Rule, OCSF specification, RFC 5424
   - updated:: 2026-06-13

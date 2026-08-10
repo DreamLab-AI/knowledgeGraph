@@ -319,6 +319,23 @@ public:: true
   - **Graph500** benchmark measures graph search (BFS) throughput on high-performance computing systems.
   - Learned heuristics and [[Neural Network]]-guided search are active areas in NeurIPS, ICAPS, IJCAI, and AAAI conferences.
 
+- ### Current Landscape (2026)
+  - Graph-based retrieval, not flat vector similarity, became the defining shift of 2025-2026 for reasoning over connected corpora: Microsoft Research's LazyGraphRAG (announced November 2024) defers LLM community summarisation to query time, cutting indexing cost to roughly 0.1% of full GraphRAG (about $33 rather than $33,000 on large datasets) while matching global-query quality at around 700x lower query cost.
+  - LazyGraphRAG shipped into production in mid-2025, integrated into Microsoft Discovery and Azure Local as public previews; Microsoft's own BenchmarkQED harness (June 2025) reported it beating vector RAG, RAPTOR, LightRAG and full GraphRAG across query classes, even against 1M-token context windows.
+  - The Microsoft GraphRAG open-source library matured from its 1.0 release (December 2024) through v3.1.x (2026), adding native incremental indexing (the graphrag update delta command), DRIFT search that fuses local and global modes, and dynamic community selection (January 2025) for a further ~77% query-cost reduction.
+  - Hybrid graph-plus-vector engines converged the two paradigms in a single store: TigerVector landed in TigerGraph v4.2 (December 2024, arXiv:2501.11216) reporting 3.77-5.19x higher throughput than Neo4j; NebulaGraph Enterprise v5.1/v5.2 added native vector and full-text indexes; and Neo4j, Memgraph, Kuzu and Weaviate all now expose combined traversal plus ANN search.
+  - Independent evaluation tempered the hype: the GraphRAG-Bench study (accepted ICLR 2026) found GraphRAG frequently underperforms vanilla RAG on simple real-world lookups (only about +4.5% on HotpotQA at ~2.3x latency), and Han et al. (arXiv:2502.11371, February 2025) confirmed the advantage concentrates on multi-hop, temporal and reasoning-intensive questions where gains can exceed 20 accuracy points.
+  - Cheaper alternatives proliferated around the same frontier: Ohio State's HippoRAG uses Personalised PageRank walks to run 10-30x cheaper than iterative retrieval, LightRAG (EMNLP 2025) reaches 70-90% of GraphRAG quality at roughly 1/100th indexing cost and added OpenSearch integration in March 2026, and Zep/Graphiti brought temporal knowledge-graph memory to agents.
+  - Market momentum is strong but the open challenge is economics-versus-value: the knowledge-graph market is projected to grow from about $1.07B (2024) to $6.94B (2030) and Neo4j passed $200M ARR with 84% of the Fortune 100, yet teams increasingly default to vector plus reranker and reach for graph search only for multi-hop reasoning, entity disambiguation, or regulated domains demanding explainable, provenance-carrying answers.
+
+- ### References
+  - 1. Microsoft Research (2024). LazyGraphRAG: Setting a new standard for quality and cost. https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost/
+  - 2. Microsoft Research (2026). Project GraphRAG (LazyGraphRAG, DRIFT, BenchmarkQED, Microsoft Discovery). https://www.microsoft.com/en-us/research/project/graphrag/
+  - 3. Han, B. et al. (2025). Retrieval-Augmented Generation with Graphs (GraphRAG): a systematic evaluation. arXiv:2502.11371. https://arxiv.org/abs/2502.11371
+  - 4. Jin, S. et al. (2025). TigerVector: Supporting Vector Search in Graph Databases for Advanced RAGs. arXiv:2501.11216. https://arxiv.org/abs/2501.11216
+  - 5. NebulaGraph (2026). NebulaGraph 2025 Year in Review: Charting a New Era of Graph Intelligence and AI Convergence. https://nebula-graph.io/posts/nebulagraph-2025-year-in-review-charting-a-new-era-of-graph-intelligence-and-ai-convergence
+  - 6. Future AGI (2025). Vector Databases vs Knowledge Graphs in 2026: How to Pick for RAG. https://futureagi.com/blog/vector-databases-knowledge-graphs-rag-2025/
+
 - ### Provenance
   - sources:: LaValle (2006) Planning Algorithms; Russell & Norvig AIMA 4th ed.; Hart, Nilsson & Raphael (1968) A* original paper; Karaman & Frazzoli (2011) RRT*; Koenig & Likhachev (2002) D* Lite; Coulom (2006) MCTS
   - updated:: 2026-06-13
