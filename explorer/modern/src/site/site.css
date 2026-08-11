@@ -550,6 +550,69 @@ a.ng-textlink:hover,
   color: var(--ng-text);
 }
 
+/* Loom panel — ground a live LLM in the ontology behind a model-swappable
+   façade (sibling repo DreamLab-AI/loom). The ~0.94 figure is a measured eval
+   result from the Loom, NOT a pipeline-emitted corpus stat, so it deliberately
+   does not reuse .ng-stats (which is reserved for /data/graph/stats.json). */
+.ng-loom {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--ng-space-5);
+  align-items: center;
+  padding: var(--ng-space-5) var(--ng-space-6);
+  border-radius: var(--ng-radius-lg);
+  background: var(--ng-bg-raised);
+  border: var(--ng-border-width) solid var(--ng-border);
+  border-left: 4px solid var(--ng-orange);
+  box-shadow: var(--ng-shadow-sm);
+}
+@media (max-width: 640px) {
+  .ng-loom {
+    grid-template-columns: 1fr;
+  }
+}
+.ng-loom__proof {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--ng-space-4) var(--ng-space-5);
+  border-radius: var(--ng-radius-md);
+  background: var(--ng-charcoal);
+  color: var(--ng-cream-100);
+  min-width: 8rem;
+}
+.ng-loom__stat {
+  font-family: var(--ng-font-serif);
+  font-size: var(--ng-text-4xl);
+  font-weight: var(--ng-weight-bold);
+  line-height: 1;
+}
+.ng-loom__statlabel {
+  font-size: var(--ng-text-xs);
+  letter-spacing: var(--ng-tracking-wide);
+  text-transform: uppercase;
+  color: var(--ng-cream-400);
+  margin-top: var(--ng-space-2);
+}
+.ng-loom__body p {
+  margin: 0 0 var(--ng-space-4);
+  color: var(--ng-text-muted);
+  font-size: var(--ng-text-base);
+  line-height: var(--ng-leading-snug);
+}
+.ng-loom__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ng-space-3);
+  align-items: center;
+}
+.ng-loom__facade {
+  font-family: var(--ng-font-mono);
+  font-size: var(--ng-text-xs);
+  color: var(--ng-teal-600);
+}
+
 /* ─────────────────────────── Page (reading) ────────────────────────────── */
 
 .ng-page {

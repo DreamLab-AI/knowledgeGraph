@@ -16,10 +16,11 @@ import {
   GraphIcon,
   ChevronRightIcon,
   MeshMarkIcon,
+  ExternalIcon,
 } from '../site/icons';
 import { useStats, fmt, corpusOf } from '../site/useStats';
 import { fmtDate } from '../site/pageMeta';
-import { VISIONCLAW, MESH_REPOS } from '../site/mesh';
+import { VISIONCLAW, MESH_REPOS, LOOM } from '../site/mesh';
 import './HomePage.css';
 
 function StatsStrip() {
@@ -220,6 +221,52 @@ export default function HomePage() {
               </a>
             ))}
           </nav>
+        </div>
+      </section>
+
+      <section className="ng-section">
+        <div className="ng-wide">
+          <div className="ng-section__head">
+            <h2>Ground your LLM in this ontology</h2>
+            <p>
+              The same reasoned ontology this corpus compiles to can ground a live model. The{' '}
+              <a
+                className="ng-textlink"
+                href={LOOM.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Loom
+              </a>{' '}
+              serves it behind a model-swappable façade: an OpenAI-compatible endpoint where the
+              model is just a URL you can swap without touching the consumer.
+            </p>
+          </div>
+          <div className="ng-loom">
+            <div className="ng-loom__proof">
+              <span className="ng-loom__stat">~0.94</span>
+              <span className="ng-loom__statlabel">grounded recall</span>
+            </div>
+            <div className="ng-loom__body">
+              <p>
+                Grounding two different models in the static ontology scaffold lifted grounded
+                recall to ~0.94 for both &mdash; Gemma from 0.15, Muse from 0.27 &mdash; and
+                answered 3&ndash;6&times; faster. The scaffold does the work; the model behind the
+                façade stays swappable.
+              </p>
+              <div className="ng-loom__actions">
+                <a
+                  className="ng-btn ng-btn--primary ng-btn--sm"
+                  href={LOOM.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  The Loom on GitHub <ExternalIcon size={15} />
+                </a>
+                <code className="ng-loom__facade">OpenAI-compatible façade · swap the model, not the consumer</code>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

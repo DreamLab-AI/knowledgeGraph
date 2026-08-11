@@ -27,3 +27,14 @@ export const VISIONCLAW = {
   repo: `${ORG}/VisionClaw`,
   site: 'https://visionflow.info',
 } as const;
+
+/**
+ * The Loom — the grounding node. Serves the same reasoned ontology this corpus
+ * compiles to, to a live LLM behind a model-swappable, OpenAI-compatible façade
+ * (the model is a URL you can swap without changing the consumer). Kept as its
+ * own link contract rather than folded into MESH_REPOS so the canonical
+ * "seven-repository mesh" copy stays intact.
+ */
+export const LOOM = {
+  repo: `${ORG}/loom`,
+} as const;
