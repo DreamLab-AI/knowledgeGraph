@@ -117,6 +117,241 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:consensus-protocol",
+      "label": "Consensus Protocol",
+      "slug": "consensus-protocol"
+    },
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus",
+      "slug": "bc-protocol-and-consensus"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      },
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "id": "urn:ngm:class:network-hash-rate",
+        "label": "Network Hash Rate"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:finality-gadget",
+        "label": "Finality Gadget"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      },
+      {
+        "id": "urn:ngm:class:mining-hardware",
+        "label": "Mining Hardware"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-agreement",
+        "label": "Distributed Agreement"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "Replicated State Machine"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-spacetime",
+        "label": "Proof of Spacetime"
+      },
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semiconductor-manufacturing",
+        "label": "Semiconductor Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:double-spend-prevention",
+        "label": "Double Spending Prevention"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:halving",
+        "label": "Halving"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:selfish-mining",
+        "label": "Selfish Mining"
+      },
+      {
+        "id": "urn:ngm:class:block-production",
+        "label": "Block Production"
+      },
+      {
+        "id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "hash-function",

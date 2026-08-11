@@ -111,6 +111,202 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
+      },
+      {
+        "id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      },
+      {
+        "id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      },
+      {
+        "id": "urn:ngm:class:deadline-scheduling",
+        "label": "Deadline Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:controller",
+        "label": "Controller"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-networking",
+        "label": "Deterministic Networking"
+      },
+      {
+        "id": "urn:ngm:class:priority-scheduling",
+        "label": "Priority Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:task-scheduling",
+        "label": "Task Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator Output"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computation",
+        "label": "Real-Time Computation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Engineering"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:determinism",
+        "label": "Determinism"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:worst-case-execution-time",
+        "label": "Worst-Case Execution Time"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

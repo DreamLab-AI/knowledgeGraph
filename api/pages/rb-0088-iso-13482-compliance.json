@@ -69,6 +69,192 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:safety-engineering",
+      "label": "Safety Engineering",
+      "slug": "safety-engineering"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      },
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:rb-0090-emergency-stop",
+        "label": "rb 0090 emergency stop"
+      },
+      {
+        "id": "urn:ngm:class:failure-mode-and-effects-analysis",
+        "label": "Failure Mode and Effects Analysis"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Human-Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:safety-case",
+        "label": "Safety Case"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Engineering"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:iso-pas-8800",
+        "label": "ISO/PAS 8800"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "id": "urn:ngm:class:robo-robot-type",
+        "label": "Robot Type"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "robotics",

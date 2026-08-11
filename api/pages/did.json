@@ -142,6 +142,278 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:credential-definition",
+        "label": "Credential Definition"
+      },
+      {
+        "id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "id": "urn:ngm:class:didcomm",
+        "label": "DIDComm"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:revocation-registry",
+        "label": "Revocation Registry"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet Software"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-identity",
+        "label": "Cross-Border Identity"
+      },
+      {
+        "id": "urn:ngm:class:holder-binding",
+        "label": "Holder Binding"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Reusable Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:offline-verification",
+        "label": "Offline Verification"
+      },
+      {
+        "id": "urn:ngm:class:portable-identity",
+        "label": "Portable Identity"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Predicate Proof"
+      },
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:anon-creds",
+        "label": "AnonCreds"
+      },
+      {
+        "id": "urn:ngm:class:bbs-signatures",
+        "label": "BBS+ Signatures"
+      },
+      {
+        "id": "urn:ngm:class:didcomm-v2",
+        "label": "DIDComm v2"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-18013-5-m-dl",
+        "label": "ISO 18013-5"
+      },
+      {
+        "id": "urn:ngm:class:sd-jwt",
+        "label": "SD-JWT"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-stack",
+        "label": "Trust over IP Stack"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bbs-signatures",
+        "label": "BBS+ Signatures"
+      },
+      {
+        "id": "urn:ngm:class:bitstring-status-list",
+        "label": "Bitstring Status List"
+      },
+      {
+        "id": "urn:ngm:class:cbor",
+        "label": "CBOR"
+      },
+      {
+        "id": "urn:ngm:class:cha-cha20-poly1305",
+        "label": "XChacha20Poly1305"
+      },
+      {
+        "id": "urn:ngm:class:ed-dsa",
+        "label": "EdDSA"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:sidetree-protocol",
+        "label": "Sidetree Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:e-idas",
+        "label": "eIDAS"
+      },
+      {
+        "id": "urn:ngm:class:educational-credentials",
+        "label": "Educational Credentials"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      },
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust Over IP Foundation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "public-key",

@@ -98,6 +98,267 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:ssl-termination",
+        "label": "SSL Termination"
+      },
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:normalisation-layer",
+        "label": "Normalisation Layer"
+      },
+      {
+        "id": "urn:ngm:class:residual-connection",
+        "label": "Skip Connection"
+      },
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:ssl-termination",
+        "label": "SSL Termination"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:web-application-firewall",
+        "label": "Web Application Firewall"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

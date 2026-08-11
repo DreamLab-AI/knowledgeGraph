@@ -117,6 +117,182 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feature-attribution",
+        "label": "Feature Attribution"
+      },
+      {
+        "id": "urn:ngm:class:intrinsic-interpretability",
+        "label": "Intrinsic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:post-hoc-explanation",
+        "label": "Post Hoc Explanation"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      },
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:lime",
+        "label": "LIME"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:black-box-model",
+        "label": "Black-Box Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interpretable-ai",
+        "label": "Interpretable AI"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-transparency-framework",
+        "label": "Ai Transparency Framework"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "shapley-value",

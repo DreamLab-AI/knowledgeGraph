@@ -120,6 +120,261 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:collective-anomaly-detection",
+        "label": "Collective Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:contextual-anomaly-detection",
+        "label": "Contextual Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:point-anomaly-detection",
+        "label": "Point Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
+      },
+      {
+        "id": "urn:ngm:class:threshold-calibration",
+        "label": "Threshold Calibration"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "IoT Sensor Data"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:change-point-detection",
+        "label": "Change Point Detection"
+      },
+      {
+        "id": "urn:ngm:class:concept-drift",
+        "label": "Concept Drift"
+      },
+      {
+        "id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:outlier-detection",
+        "label": "Outlier Detection"
+      },
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

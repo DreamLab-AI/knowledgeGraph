@@ -69,6 +69,199 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      },
+      {
+        "id": "urn:ngm:class:open-government",
+        "label": "Open Government"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deregulation",
+        "label": "Deregulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc-1",
+        "label": "ISO/IEC JTC 1"
+      },
+      {
+        "id": "urn:ngm:class:itu",
+        "label": "ITU"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:public-policy",
+        "label": "Public Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-transparency-framework",
+        "label": "Ai Transparency Framework"
+      },
+      {
+        "id": "urn:ngm:class:e-government",
+        "label": "E-Government"
+      },
+      {
+        "id": "urn:ngm:class:net-neutrality",
+        "label": "Net Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "digital-governance",

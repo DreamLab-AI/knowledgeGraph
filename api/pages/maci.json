@@ -39,6 +39,272 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation",
+      "slug": "bc-governance-and-regulation"
+    },
+    {
+      "id": "urn:ngm:class:public-goods-funding",
+      "label": "Public Goods Funding",
+      "slug": "public-goods-funding"
+    },
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gitcoin-passport",
+        "label": "Gitcoin Passport"
+      },
+      {
+        "id": "urn:ngm:class:grant-round",
+        "label": "Grant Round"
+      },
+      {
+        "id": "urn:ngm:class:liberal-radicalism",
+        "label": "Liberal Radicalism"
+      },
+      {
+        "id": "urn:ngm:class:pairwise-qf",
+        "label": "Pairwise QF"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:commit-reveal-scheme",
+        "label": "Commit-Reveal Scheme"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incentive-compatibility",
+        "label": "Incentive Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:commons-based-peer-production",
+        "label": "Commons-Based Peer Production"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:protocol-development",
+        "label": "Protocol Development"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptoeconomics",
+        "label": "Cryptoeconomics"
+      },
+      {
+        "id": "urn:ngm:class:token-governance",
+        "label": "Token Governance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:allo-protocol",
+        "label": "Allo Protocol"
+      },
+      {
+        "id": "urn:ngm:class:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      },
+      {
+        "id": "urn:ngm:class:liberal-radicalism",
+        "label": "Liberal Radicalism"
+      },
+      {
+        "id": "urn:ngm:class:optimism-rpgf",
+        "label": "Optimism RPGF"
+      },
+      {
+        "id": "urn:ngm:class:pairwise-qf",
+        "label": "Pairwise QF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-commons",
+        "label": "Digital Commons"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:allo-protocol",
+        "label": "Allo Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bright-id",
+        "label": "BrightID"
+      },
+      {
+        "id": "urn:ngm:class:commit-reveal-scheme",
+        "label": "Commit-Reveal Scheme"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Mainnet"
+      },
+      {
+        "id": "urn:ngm:class:gitcoin-passport",
+        "label": "Gitcoin Passport"
+      },
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "id": "urn:ngm:class:polygon-id",
+        "label": "Polygon ID"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-democracy",
+        "label": "Digital Democracy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gitcoin",
+        "label": "Gitcoin"
+      },
+      {
+        "id": "urn:ngm:class:optimism-collective",
+        "label": "Optimism Collective"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:common-pool-resources",
+        "label": "Common Pool Resources"
+      },
+      {
+        "id": "urn:ngm:class:gitcoin",
+        "label": "Gitcoin"
+      },
+      {
+        "id": "urn:ngm:class:liberal-radicalism",
+        "label": "Liberal Radicalism"
+      },
+      {
+        "id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "zero-knowledge-proof",

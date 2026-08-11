@@ -132,6 +132,217 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      },
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dynamic-model",
+        "label": "Dynamic Model"
+      },
+      {
+        "id": "urn:ngm:class:kinematic-model",
+        "label": "KinematicModel"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cnc-machining",
+        "label": "CNC Machining"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "id": "urn:ngm:class:pick-and-place",
+        "label": "Pick and Place Automation"
+      },
+      {
+        "id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      },
+      {
+        "id": "urn:ngm:class:computed-torque-control",
+        "label": "Computed Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:field-oriented-control",
+        "label": "Field Oriented Control"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Tuning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:ether-cat",
+        "label": "EtherCAT"
+      },
+      {
+        "id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131-3"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:delta-robot",
+        "label": "Delta Robot"
+      },
+      {
+        "id": "urn:ngm:class:scara-robot",
+        "label": "SCARA Robot"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131-3"
+      },
+      {
+        "id": "urn:ngm:class:iec-61158",
+        "label": "IEC 61158"
+      },
+      {
+        "id": "urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems",
+        "label": "IEC 61800-7"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1588-ptp",
+        "label": "IEEE 1588 PTP"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:learning-from-demonstration",
+        "label": "Learning from Demonstration"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "motion-control",

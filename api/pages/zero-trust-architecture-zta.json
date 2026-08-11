@@ -93,6 +93,306 @@
     ],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:digital-safety",
+        "label": "Digital Safety"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:spatial-embodiment-harm-taxonomy",
+        "label": "Spatial Embodiment Harm Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:security-policy",
+        "label": "Security Policy"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:immersive-computing",
+        "label": "Immersive Computing"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:defence-in-depth",
+        "label": "Defence in Depth"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      },
+      {
+        "id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:audit-and-accountability",
+        "label": "Audit and Accountability"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:sc-platform-and-environment",
+        "label": "Platform and Environment"
+      },
+      {
+        "id": "urn:ngm:class:sc-standards-and-interop",
+        "label": "Standards and Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:security-operations-centre",
+        "label": "Security Operations Centre"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "authentication-protocol",

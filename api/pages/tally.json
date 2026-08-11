@@ -113,6 +113,255 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation",
+      "slug": "bc-governance-and-regulation"
+    },
+    {
+      "id": "urn:ngm:class:governance-infrastructure",
+      "label": "Governance Infrastructure",
+      "slug": "governance-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:legal-wrapper",
+        "label": "Legal Wrapper"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Execution Oracle"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management System"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-execution",
+        "label": "Optimistic Execution"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-votes",
+        "label": "ERC-20 Votes"
+      },
+      {
+        "id": "urn:ngm:class:futarchy",
+        "label": "Futarchy"
+      },
+      {
+        "id": "urn:ngm:class:gnosis-safe",
+        "label": "Safe Multi-Sig"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:reality-eth-oracle",
+        "label": "Reality ETH Oracle"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-off-chain-voting",
+        "label": "Snapshot Off-Chain Voting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:delegated-voting",
+        "label": "Delegated Voting"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature Approval"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-oracle",
+        "label": "Optimistic Oracle"
+      },
+      {
+        "id": "urn:ngm:class:timelock-controller",
+        "label": "Timelock Controller"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:creator-compensation",
+        "label": "Contributor Compensation"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-governance",
+        "label": "Cross-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:protocol-governance",
+        "label": "Protocol Governance"
+      },
+      {
+        "id": "urn:ngm:class:treasury-diversification",
+        "label": "Treasury Diversification"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eip-5805",
+        "label": "EIP-5805"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-votes",
+        "label": "ERC-20 Votes"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin-contracts",
+        "label": "OpenZeppelin Contracts"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "decentralised-autonomous-organisation",

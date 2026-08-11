@@ -58,6 +58,239 @@
     ],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:explainable-ai",
+      "label": "Explainable AI",
+      "slug": "explainable-ai"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "id": "urn:ngm:class:global-explanation",
+        "label": "Global Explanation"
+      },
+      {
+        "id": "urn:ngm:class:intrinsic-interpretability",
+        "label": "Intrinsic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:post-hoc-explanation",
+        "label": "Post Hoc Explanation"
+      },
+      {
+        "id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      },
+      {
+        "id": "urn:ngm:class:feature-attribution",
+        "label": "Feature Attribution"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:predictive-model",
+        "label": "Predictive Model"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      },
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "AI Auditing"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:lime",
+        "label": "LIME"
+      },
+      {
+        "id": "urn:ngm:class:shap",
+        "label": "SHAP"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:black-box-model",
+        "label": "Black-Box Model"
+      },
+      {
+        "id": "urn:ngm:class:model-complexity",
+        "label": "Model Complexity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Medical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:lime",
+        "label": "LIME"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias Detection"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:interpretable-ai",
+        "label": "Interpretable AI"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-transparency-framework",
+        "label": "Ai Transparency Framework"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "counterfactual-explanation",

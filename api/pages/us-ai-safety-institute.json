@@ -44,6 +44,255 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety",
+      "slug": "ai-safety"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-evaluation",
+        "label": "AI Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-ethics-board",
+        "label": "AI Ethics Board"
+      },
+      {
+        "id": "urn:ngm:class:ai-capabilities-research",
+        "label": "AI Capabilities Research"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:national-security",
+        "label": "National Security"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Cyber Security"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "Government AI Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-safety-summit",
+        "label": "AI Safety Summit"
+      },
+      {
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:existential-ai-risk",
+        "label": "Existential AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "id": "urn:ngm:class:mesa-optimisation",
+        "label": "Mesa-Optimisation"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "ai-safety-institute",

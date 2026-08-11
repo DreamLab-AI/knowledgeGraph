@@ -209,6 +209,302 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      },
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "id": "urn:ngm:class:communication-interface",
+        "label": "Communication Interface"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:battery-management-system",
+        "label": "Battery Management System"
+      },
+      {
+        "id": "urn:ngm:class:dds-middleware",
+        "label": "DDS Middleware"
+      },
+      {
+        "id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      },
+      {
+        "id": "urn:ngm:class:nav2",
+        "label": "Nav2"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:dds",
+        "label": "DDS"
+      },
+      {
+        "id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Mapping"
+      },
+      {
+        "id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      },
+      {
+        "id": "urn:ngm:class:mobile-manipulation",
+        "label": "Mobile Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree Control"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:move-it-2",
+        "label": "MoveIt 2"
+      },
+      {
+        "id": "urn:ngm:class:nav2",
+        "label": "Nav2"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      },
+      {
+        "id": "urn:ngm:class:move-it-2",
+        "label": "MoveIt 2"
+      },
+      {
+        "id": "urn:ngm:class:nav2",
+        "label": "Nav2"
+      },
+      {
+        "id": "urn:ngm:class:slam-toolbox",
+        "label": "SLAM Toolbox"
+      },
+      {
+        "id": "urn:ngm:class:eigen-layer",
+        "label": "Eigen"
+      },
+      {
+        "id": "urn:ngm:class:open-cv",
+        "label": "OpenCV"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot Systems"
+      },
+      {
+        "id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim2Real Transfer"
+      },
+      {
+        "id": "urn:ngm:class:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482"
+      },
+      {
+        "id": "urn:ngm:class:ros-2",
+        "label": "ROS 2 Humble"
+      },
+      {
+        "id": "urn:ngm:class:dds",
+        "label": "OMG DDS Standard"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1872",
+        "label": "IEEE 1872"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iso-9283",
+        "label": "ISO 9283"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "actuator",

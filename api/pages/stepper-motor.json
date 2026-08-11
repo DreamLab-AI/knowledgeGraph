@@ -91,6 +91,237 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:electric-actuator",
+      "label": "Electric Actuator",
+      "slug": "electric-actuator"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:robot-actuator",
+      "label": "Robot Actuator",
+      "slug": "robot-actuator"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      },
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mechanical-load",
+        "label": "Mechanical Load"
+      },
+      {
+        "id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver Electronics"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Electrical Power Supply"
+      },
+      {
+        "id": "urn:ngm:class:control-signal",
+        "label": "Control Signal"
+      },
+      {
+        "id": "urn:ngm:class:electrical-power",
+        "label": "Electrical Power"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:joint-actuation",
+        "label": "Joint Actuation"
+      },
+      {
+        "id": "urn:ngm:class:torque-generation",
+        "label": "Torque Generation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Engineering"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:passive-mechanism",
+        "label": "Passive Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "Robot End-Effector"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems",
+        "label": "IEC 61800 Adjustable Speed Electrical Power Drive Systems"
+      },
+      {
+        "id": "urn:ngm:class:iso-9283",
+        "label": "ISO 9283"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Robotic Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "electric-motor",

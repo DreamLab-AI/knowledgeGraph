@@ -29,6 +29,243 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol",
+      "slug": "communication-protocol"
+    },
+    {
+      "id": "urn:ngm:class:human-robot-interaction",
+      "label": "Human Robot Interaction",
+      "slug": "human-robot-interaction"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:addressing-scheme",
+        "label": "Addressing Scheme"
+      },
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      },
+      {
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      },
+      {
+        "id": "urn:ngm:class:message-format",
+        "label": "Message Format"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth Constraints"
+      },
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Network Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:safety-metrics",
+        "label": "Safety Metrics"
+      },
+      {
+        "id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Data Fusion"
+      },
+      {
+        "id": "urn:ngm:class:swarm-control",
+        "label": "Swarm Coordination"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Remote Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:safety-metrics",
+        "label": "Safety Metrics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:communication-infrastructure",
+        "label": "Communication Systems"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:manipulator-arm",
+        "label": "Manipulator Arm"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-access-interface",
+        "label": "Data Access Interface"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ergonomics",
+        "label": "Cognitive Ergonomics"
+      },
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

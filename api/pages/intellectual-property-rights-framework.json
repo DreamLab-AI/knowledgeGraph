@@ -117,6 +117,240 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:breach-notification",
+        "label": "Breach Notification"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance Programme"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-officer",
+        "label": "Data Protection Officer"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-enforcement",
+        "label": "Regulatory Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:rights-protection",
+        "label": "Rights Protection"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:jurisdiction",
+        "label": "Jurisdiction"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Data Protection by Design"
+      },
+      {
+        "id": "urn:ngm:class:privacy-requirements",
+        "label": "Privacy Requirements"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security Obligations"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-policy",
+        "label": "Cybersecurity Policy"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:infra-software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

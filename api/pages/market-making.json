@@ -112,6 +112,228 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fee-tier",
+        "label": "Fee Tier"
+      },
+      {
+        "id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining Reward"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:lp-token",
+        "label": "LP Token"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-tokens",
+        "label": "ERC-20 Tokens"
+      },
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:capital-efficiency",
+        "label": "Capital Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV Extraction"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-trading",
+        "label": "Permissionless Trading"
+      },
+      {
+        "id": "urn:ngm:class:token-swapping",
+        "label": "Token Swap"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:constant-product-formula",
+        "label": "Constant Product Formula"
+      },
+      {
+        "id": "urn:ngm:class:stable-swap-invariant",
+        "label": "Stable Swap Invariant"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:gauge-voting",
+        "label": "Gauge Voting"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:twap-oracle",
+        "label": "TWAP Oracle"
+      },
+      {
+        "id": "urn:ngm:class:vote-escrow-model",
+        "label": "Vote-Escrowed Token"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:dex",
+        "label": "Perpetual DEX"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-token-standard",
+        "label": "ERC-20 Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:fatf-guidance-on-virtual-assets",
+        "label": "FATF DeFi Guidance"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aave",
+        "label": "Aave"
+      },
+      {
+        "id": "urn:ngm:class:balancer",
+        "label": "Balancer"
+      },
+      {
+        "id": "urn:ngm:class:compound",
+        "label": "Compound"
+      },
+      {
+        "id": "urn:ngm:class:convex-finance",
+        "label": "Convex Finance"
+      },
+      {
+        "id": "urn:ngm:class:curve-finance",
+        "label": "Curve Finance"
+      },
+      {
+        "id": "urn:ngm:class:d-yd-x",
+        "label": "dYdX"
+      },
+      {
+        "id": "urn:ngm:class:gmx",
+        "label": "GMX"
+      },
+      {
+        "id": "urn:ngm:class:maker-dao",
+        "label": "MakerDAO"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "price-discovery",

@@ -103,6 +103,244 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:advertising-and-marketing",
+      "label": "Advertising and Marketing",
+      "slug": "advertising-and-marketing"
+    },
+    {
+      "id": "urn:ngm:class:digital-marketing",
+      "label": "Digital Marketing",
+      "slug": "digital-marketing"
+    },
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management (Infrastructure)",
+      "slug": "infra-data-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      },
+      {
+        "id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audience-segmentation",
+        "label": "Audience Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:data-infrastructure",
+        "label": "Data Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      },
+      {
+        "id": "urn:ngm:class:advertising",
+        "label": "Advertising"
+      },
+      {
+        "id": "urn:ngm:class:conversion-rate-optimisation",
+        "label": "Conversion Rate Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:loyalty-programs",
+        "label": "Loyalty Programs"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      },
+      {
+        "id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:social-media-platform-infrastructure",
+        "label": "Social Media Platform Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      },
+      {
+        "id": "urn:ngm:class:brand-identity",
+        "label": "Brand Identity"
+      },
+      {
+        "id": "urn:ngm:class:privacy-regulation",
+        "label": "Privacy Regulation"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

@@ -133,6 +133,270 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:industrial-robot",
+      "label": "Industrial Robot",
+      "slug": "industrial-robot"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:collision-detection-system",
+        "label": "Collision Detection System"
+      },
+      {
+        "id": "urn:ngm:class:joint-encoder",
+        "label": "Joint Encoder"
+      },
+      {
+        "id": "urn:ngm:class:kinematic-chain",
+        "label": "Kinematic Chain"
+      },
+      {
+        "id": "urn:ngm:class:robot-controller",
+        "label": "Robot Controller"
+      },
+      {
+        "id": "urn:ngm:class:safety-system",
+        "label": "Safety System"
+      },
+      {
+        "id": "urn:ngm:class:servo-drive",
+        "label": "Servo Drive"
+      },
+      {
+        "id": "urn:ngm:class:teach-pendant",
+        "label": "Teach Pendant"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO/TS 15066 Compliance"
+      },
+      {
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "Power and Force Limiting"
+      },
+      {
+        "id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
+        "label": "Speed and Separation Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:calibration-system",
+        "label": "Calibration System"
+      },
+      {
+        "id": "urn:ngm:class:industrial-network",
+        "label": "Industrial Network"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mass-customisation",
+        "label": "Mass Customisation"
+      },
+      {
+        "id": "urn:ngm:class:quality-inspection",
+        "label": "Quality Inspection"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Engineering"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218 Safety Standard"
+      },
+      {
+        "id": "urn:ngm:class:rb-0104-hand-guiding",
+        "label": "Hand Guiding Mode"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:ether-cat",
+        "label": "EtherCAT"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT Protocol"
+      },
+      {
+        "id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      },
+      {
+        "id": "urn:ngm:class:profinet",
+        "label": "PROFINET"
+      },
+      {
+        "id": "urn:ngm:class:ros-industrial",
+        "label": "ROS-Industrial"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO (International Organization for Standardization)"
+      },
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:iso-9283",
+        "label": "ISO 9283"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality",
+        "label": "Collaborative Manufacturing System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation-systems",
+        "label": "Teleoperation Systems"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

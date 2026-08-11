@@ -94,6 +94,202 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology",
+      "slug": "dc-communication"
+    },
+    {
+      "id": "urn:ngm:class:telecollaboration",
+      "label": "Telecollaboration",
+      "slug": "telecollaboration"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocols",
+        "label": "TC-0040-Communication-Protocols"
+      },
+      {
+        "id": "urn:ngm:class:communication-infrastructure",
+        "label": "Communication Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:tele-151-real-time-protocols",
+        "label": "Real-Time Protocols"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-team",
+        "label": "Virtual Team"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:real-time-messaging",
+        "label": "Real-Time Messaging"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-supported-cooperative-work",
+        "label": "Computer-Supported Cooperative Work"
+      },
+      {
+        "id": "urn:ngm:class:groupware",
+        "label": "Groupware"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-technology",
+        "label": "Collaboration Technology"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

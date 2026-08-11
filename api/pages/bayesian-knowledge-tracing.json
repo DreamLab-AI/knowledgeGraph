@@ -183,6 +183,363 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:education-technology",
+      "label": "Education Technology",
+      "slug": "education-technology"
+    },
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network",
+      "slug": "neural-network"
+    },
+    {
+      "id": "urn:ngm:class:personalised-learning",
+      "label": "Personalised Learning",
+      "slug": "personalised-learning"
+    },
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:acquisition-function",
+        "label": "Acquisition Function"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
+      },
+      {
+        "id": "urn:ngm:class:inference-algorithm",
+        "label": "Inference Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:likelihood-function",
+        "label": "Likelihood Function"
+      },
+      {
+        "id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-repository",
+        "label": "Content Repository"
+      },
+      {
+        "id": "urn:ngm:class:domain-model",
+        "label": "Domain Model"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:learner-model",
+        "label": "Learner Model"
+      },
+      {
+        "id": "urn:ngm:class:real-time-data-processing",
+        "label": "Real-Time Data Processing"
+      },
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:computational-graph",
+        "label": "Computational Graph"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-decision-theory",
+        "label": "Bayesian Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:conformal-prediction",
+        "label": "Conformal Prediction"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-forecasting",
+        "label": "Probabilistic Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:content-repository",
+        "label": "Content Repository"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-component-model",
+        "label": "Knowledge Component Model"
+      },
+      {
+        "id": "urn:ngm:class:psychometrics",
+        "label": "Psychometrics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:item-response-theory",
+        "label": "Item Response Theory"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes Theorem"
+      },
+      {
+        "id": "urn:ngm:class:evidence-lower-bound",
+        "label": "Evidence Lower Bound"
+      },
+      {
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      },
+      {
+        "id": "urn:ngm:class:hamiltonian-monte-carlo",
+        "label": "Hamiltonian Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-knowledge-tracing",
+        "label": "Deep Knowledge Tracing"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "id": "urn:ngm:class:item-response-theory",
+        "label": "Item Response Theory"
+      },
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:spaced-repetition",
+        "label": "Spaced Repetition"
+      },
+      {
+        "id": "urn:ngm:class:belief-propagation",
+        "label": "Belief Propagation"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mastery-learning",
+        "label": "Mastery Learning"
+      },
+      {
+        "id": "urn:ngm:class:metacognition",
+        "label": "Metacognition"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:journal-of-machine-learning-research",
+        "label": "Journal of Machine Learning Research"
+      },
+      {
+        "id": "urn:ngm:class:scorm",
+        "label": "SCORM"
+      },
+      {
+        "id": "urn:ngm:class:xapi",
+        "label": "xAPI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-behaviour",
+        "label": "Adaptive Behaviour"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-load-theory",
+        "label": "Cognitive Load Theory"
+      },
+      {
+        "id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      },
+      {
+        "id": "urn:ngm:class:open-learner-model",
+        "label": "Open Learner Model"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "adaptive-learning",

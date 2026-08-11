@@ -194,6 +194,293 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol",
+      "slug": "communication-protocol"
+    },
+    {
+      "id": "urn:ngm:class:human-robot-interaction",
+      "label": "Human Robot Interaction",
+      "slug": "human-robot-interaction"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "id": "urn:ngm:class:addressing-scheme",
+        "label": "Addressing Scheme"
+      },
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      },
+      {
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      },
+      {
+        "id": "urn:ngm:class:message-format",
+        "label": "Message Format"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-format",
+        "label": "Message Schema"
+      },
+      {
+        "id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth Constraints"
+      },
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Network Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-transaction",
+        "label": "Distributed Transaction"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "Replicated State Machine"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Data Fusion"
+      },
+      {
+        "id": "urn:ngm:class:swarm-control",
+        "label": "Swarm Coordination"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Remote Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:safety-metrics",
+        "label": "Safety Metrics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:formal-specification",
+        "label": "Formal Specification"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "id": "urn:ngm:class:speech-act-theory",
+        "label": "Speech Act Theory"
+      },
+      {
+        "id": "urn:ngm:class:communication-infrastructure",
+        "label": "Communication Systems"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:serialisation-format",
+        "label": "Data Serialisation Format"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:llm-application-framework",
+        "label": "LLM Agent Framework"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:manipulator-arm",
+        "label": "Manipulator Arm"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fipa",
+        "label": "FIPA"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ergonomics",
+        "label": "Cognitive Ergonomics"
+      },
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "agent-communication-protocol",

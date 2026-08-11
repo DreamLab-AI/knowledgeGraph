@@ -83,6 +83,254 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive (Blockchain)",
+      "slug": "bc-cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptographic-signing",
+        "label": "Signing Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:key-generation-algorithm",
+        "label": "Key Generation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Random Nonce"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-hardness-assumption",
+        "label": "Computational Hardness Assumption"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generator",
+        "label": "Cryptographically Secure Random Number Generator"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Software Supply Chain Integrity"
+      },
+      {
+        "id": "urn:ngm:class:transaction-authorisation",
+        "label": "Transaction Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      },
+      {
+        "id": "urn:ngm:class:fiat-shamir-heuristic",
+        "label": "Fiat-Shamir Heuristic"
+      },
+      {
+        "id": "urn:ngm:class:lattice-cryptography",
+        "label": "Lattice Trapdoor"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blake3",
+        "label": "BLAKE3"
+      },
+      {
+        "id": "urn:ngm:class:curve25519",
+        "label": "Curve25519"
+      },
+      {
+        "id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:sha-3",
+        "label": "SHA-3"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "id": "urn:ngm:class:sigstore",
+        "label": "Sigstore"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "id": "urn:ngm:class:fips-186-5",
+        "label": "FIPS 186-5"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

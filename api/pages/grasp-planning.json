@@ -124,6 +124,217 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robotics-systems",
+      "label": "Robotics Systems",
+      "slug": "robotics-systems"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Object Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:assembly-automation",
+        "label": "Assembly Automation"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Engineering"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:locomotion",
+        "label": "Locomotion"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "id": "urn:ngm:class:task-and-motion-planning",
+        "label": "Task and Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

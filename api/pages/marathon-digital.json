@@ -39,6 +39,235 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus",
+      "slug": "bc-protocol-and-consensus"
+    },
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "id": "urn:ngm:class:coinbase-transaction",
+        "label": "Coinbase Transaction"
+      },
+      {
+        "id": "urn:ngm:class:difficulty-target",
+        "label": "Difficulty Target"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "id": "urn:ngm:class:sha-256-hashing",
+        "label": "SHA-256 Hashing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asic-hardware",
+        "label": "ASIC Hardware"
+      },
+      {
+        "id": "urn:ngm:class:cooling-system",
+        "label": "Cooling System"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Bitcoin Full Node"
+      },
+      {
+        "id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:stratum-protocol",
+        "label": "Stratum Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      },
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response Services"
+      },
+      {
+        "id": "urn:ngm:class:double-spend-prevention",
+        "label": "Double-Spend Prevention"
+      },
+      {
+        "id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:halving-schedule",
+        "label": "Halving Schedule"
+      },
+      {
+        "id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-security-and-identity",
+        "label": "Security and Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:immersion-cooling",
+        "label": "Immersion Cooling"
+      },
+      {
+        "id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root Construction"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:stratum-v2",
+        "label": "Stratum V2"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "id": "urn:ngm:class:stranded-energy-monetisation",
+        "label": "Stranded Energy Monetisation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
+        "label": "Bitcoin Core Reference Implementation"
+      },
+      {
+        "id": "urn:ngm:class:cbeci-methodology",
+        "label": "CBECI Methodology"
+      },
+      {
+        "id": "urn:ngm:class:stratum-v2",
+        "label": "Stratum V2 Specification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "id": "urn:ngm:class:halving",
+        "label": "Halving"
+      },
+      {
+        "id": "urn:ngm:class:hash-rate",
+        "label": "Hash Rate"
+      },
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "bitcoin-mining",

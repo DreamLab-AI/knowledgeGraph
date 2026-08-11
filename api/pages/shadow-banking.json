@@ -90,6 +90,300 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics",
+      "slug": "economics"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science",
+      "slug": "complexity-science"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      },
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "id": "urn:ngm:class:market-design",
+        "label": "Market Design"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:principal-agent-theory",
+        "label": "Principal-Agent Theory"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:banking-system",
+        "label": "Banking System"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      },
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:incentive-structures",
+        "label": "Incentive Structures"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fintech",
+        "label": "FinTech"
+      },
+      {
+        "id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:platform-regulation",
+        "label": "Platform Regulation"
+      },
+      {
+        "id": "urn:ngm:class:protocol-design",
+        "label": "Protocol Design"
+      },
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
+      },
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:token-economy",
+        "label": "Token Economy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      },
+      {
+        "id": "urn:ngm:class:risk",
+        "label": "Risk"
+      },
+      {
+        "id": "urn:ngm:class:agent-based-models",
+        "label": "Agent-Based Models"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:econometrics",
+        "label": "Econometrics"
+      },
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:banking",
+        "label": "Banking"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      },
+      {
+        "id": "urn:ngm:class:bis",
+        "label": "BIS"
+      },
+      {
+        "id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      },
+      {
+        "id": "urn:ngm:class:hm-treasury",
+        "label": "UK HM Treasury"
+      },
+      {
+        "id": "urn:ngm:class:imf",
+        "label": "IMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd",
+        "label": "OECD"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

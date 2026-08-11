@@ -196,6 +196,218 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cognitive-ergonomics",
+        "label": "Cognitive Ergonomics"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:usability-engineering",
+        "label": "Usability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:user-interface-design",
+        "label": "User Interface Design"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-fusion",
+        "label": "Multimodal Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adaptive-learning-system",
+        "label": "Adaptive Learning System"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-feedback-interface",
+        "label": "Cognitive Feedback Interface"
+      },
+      {
+        "id": "urn:ngm:class:driver-monitoring-system",
+        "label": "Driver Monitoring System"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-labelling",
+        "label": "Data Labelling"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:biometric-sensing",
+        "label": "Biometric Sensing"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "affective-computing",

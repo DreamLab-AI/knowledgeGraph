@@ -43,6 +43,275 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:layer-2-networks",
+      "label": "Layer 2 Networks",
+      "slug": "layer-2-networks"
+    },
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus",
+      "slug": "bc-protocol-and-consensus"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aztec-protocol",
+        "label": "Aztec Protocol"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechains"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channels"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:layer-1",
+        "label": "Layer 1"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transaction"
+      },
+      {
+        "id": "urn:ngm:class:private-smart-contract",
+        "label": "Private Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:programmable-privacy",
+        "label": "Programmable Privacy"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK Rollup"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:arbitrum",
+        "label": "Arbitrum"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Transparent Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "id": "urn:ngm:class:layer-1",
+        "label": "Layer 1"
+      },
+      {
+        "id": "urn:ngm:class:plasma",
+        "label": "Plasma"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:noir",
+        "label": "Noir Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proofs",
+        "label": "Cryptographic Proofs"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proofs"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Trees"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proofs"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:polygon-zkevm",
+        "label": "Polygon zkEVM"
+      },
+      {
+        "id": "urn:ngm:class:starknet",
+        "label": "StarkNet"
+      },
+      {
+        "id": "urn:ngm:class:tornado-cash",
+        "label": "Tornado Cash"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network",
+        "label": "Bitcoin Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      },
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "aztec-protocol",

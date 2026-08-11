@@ -94,6 +94,229 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:linear-algebra",
+      "label": "Linear Algebra",
+      "slug": "linear-algebra"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      },
+      {
+        "id": "urn:ngm:class:singular-value-decomposition",
+        "label": "Singular Value Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:tensor-flow",
+        "label": "TensorFlow"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:matrix-factorisation",
+        "label": "Matrix Factorization"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimization"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

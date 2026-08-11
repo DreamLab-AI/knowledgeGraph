@@ -92,6 +92,332 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency",
+      "slug": "cryptocurrency"
+    },
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Transaction Nonce"
+      },
+      {
+        "id": "urn:ngm:class:transaction-input",
+        "label": "Transaction Input"
+      },
+      {
+        "id": "urn:ngm:class:transaction-output",
+        "label": "Transaction Output"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-halving",
+        "label": "Bitcoin Halving"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-layer-2",
+        "label": "Bitcoin Layer 2"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "id": "urn:ngm:class:double-spend-prevention",
+        "label": "Double-Spending Prevention"
+      },
+      {
+        "id": "urn:ngm:class:emission-schedule",
+        "label": "Predictable Issuance Schedule"
+      },
+      {
+        "id": "urn:ngm:class:hard-money",
+        "label": "Hard Money Property"
+      },
+      {
+        "id": "urn:ngm:class:trustless-settlement",
+        "label": "Trustless Settlement"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Database Transaction"
+      },
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:solana",
+        "label": "Solana"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:fedimint",
+        "label": "Fedimint"
+      },
+      {
+        "id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:bip-32-hd-wallet",
+        "label": "BIP-32 HD Wallet"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bip-341-taproot",
+        "label": "BIP-341 Taproot"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Request for Comments"
+      },
+      {
+        "id": "urn:ngm:class:fasb-asu-2023-08",
+        "label": "FASB ASU 2023-08"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:iso-24165",
+        "label": "ISO 24165 Digital Token Identifier"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-protocol",
+        "label": "Layer-2 Protocol"
+      },
+      {
+        "id": "urn:ngm:class:transaction-throughput",
+        "label": "Transaction Throughput"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

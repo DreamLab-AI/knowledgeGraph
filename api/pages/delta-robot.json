@@ -64,6 +64,298 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:manipulator-robot",
+      "label": "Manipulator Robot",
+      "slug": "manipulator-robot"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:robot",
+      "label": "Robot",
+      "slug": "robot"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aerial-robot",
+        "label": "Aerial Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:service-robot",
+        "label": "Service Robot"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:calibration-system",
+        "label": "Calibration System"
+      },
+      {
+        "id": "urn:ngm:class:industrial-network",
+        "label": "Industrial Network"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:flexible-manufacturing",
+        "label": "Flexible Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:mass-customisation",
+        "label": "Mass Customisation"
+      },
+      {
+        "id": "urn:ngm:class:quality-inspection",
+        "label": "Quality Inspection"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Engineering"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cylindrical-robot",
+        "label": "Cylindrical Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:electric-linear-actuator",
+        "label": "Electric Linear Actuator"
+      },
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "id": "urn:ngm:class:ether-cat",
+        "label": "EtherCAT"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT Protocol"
+      },
+      {
+        "id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      },
+      {
+        "id": "urn:ngm:class:profinet",
+        "label": "PROFINET"
+      },
+      {
+        "id": "urn:ngm:class:ros-industrial",
+        "label": "ROS-Industrial"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iso-9283",
+        "label": "ISO 9283"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical System"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:scara-robot",
+        "label": "SCARA Robot"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "actuator-motors",

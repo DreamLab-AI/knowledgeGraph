@@ -60,6 +60,279 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology",
+      "slug": "dc-communication"
+    },
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools",
+      "slug": "dc-workspace-tools"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:kanban-board",
+        "label": "Kanban Board"
+      },
+      {
+        "id": "urn:ngm:class:mind-map",
+        "label": "Mind Map"
+      },
+      {
+        "id": "urn:ngm:class:sticky-notes",
+        "label": "Sticky Notes"
+      },
+      {
+        "id": "urn:ngm:class:timer",
+        "label": "Timer"
+      },
+      {
+        "id": "urn:ngm:class:voting-systems",
+        "label": "Voting Systems"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "id": "urn:ngm:class:web-gl",
+        "label": "WebGL"
+      },
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-design",
+        "label": "Collaborative Design"
+      },
+      {
+        "id": "urn:ngm:class:design-sprint",
+        "label": "Design Sprint"
+      },
+      {
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      },
+      {
+        "id": "urn:ngm:class:retrospective",
+        "label": "Retrospective"
+      },
+      {
+        "id": "urn:ngm:class:sprint-planning",
+        "label": "Sprint Planning"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "id": "urn:ngm:class:or-set",
+        "label": "OR-Set"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON Data Interchange Format"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:web-gl",
+        "label": "WebGL"
+      },
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-participation",
+        "label": "Inclusive Participation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:sprint-planning",
+        "label": "Sprint Planning"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG 2.2"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:breakout-room",
+        "label": "Breakout Room"
+      },
+      {
+        "id": "urn:ngm:class:confluence",
+        "label": "Confluence"
+      },
+      {
+        "id": "urn:ngm:class:fig-jam",
+        "label": "FigJam"
+      },
+      {
+        "id": "urn:ngm:class:figma",
+        "label": "Figma"
+      },
+      {
+        "id": "urn:ngm:class:jira",
+        "label": "Jira"
+      },
+      {
+        "id": "urn:ngm:class:miro",
+        "label": "Miro"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

@@ -85,6 +85,225 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:numerical-methods",
+      "label": "Numerical Methods",
+      "slug": "numerical-methods"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:quasi-monte-carlo",
+        "label": "Quasi-Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      },
+      {
+        "id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      },
+      {
+        "id": "urn:ngm:class:numerical-linear-algebra",
+        "label": "Numerical Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:numerical-optimisation",
+        "label": "Numerical Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generator",
+        "label": "Pseudorandom Number Generator"
+      },
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "Floating-Point Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:volume-rendering",
+        "label": "Volume Rendering"
+      },
+      {
+        "id": "urn:ngm:class:computational-fluid-dynamics",
+        "label": "Computational Fluid Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-limit-theorem",
+        "label": "Central Limit Theorem"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Statistical Sampling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deterministic-integration",
+        "label": "Deterministic Integration"
+      },
+      {
+        "id": "urn:ngm:class:quadrature",
+        "label": "Quadrature"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-computation",
+        "label": "Symbolic Computation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:financial-risk-modeling",
+        "label": "Financial Risk Modeling"
+      },
+      {
+        "id": "urn:ngm:class:physical-simulation",
+        "label": "Physical Simulation"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Robotics Motion Planning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:law-of-large-numbers",
+        "label": "Law of Large Numbers"
+      },
+      {
+        "id": "urn:ngm:class:error-analysis",
+        "label": "Error Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "id": "urn:ngm:class:sequential-monte-carlo",
+        "label": "Sequential Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:stochastic-methods",
+        "label": "Stochastic Methods"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:statistical-estimation",
+        "label": "Statistical Estimation"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

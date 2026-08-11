@@ -106,6 +106,216 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive (Blockchain)",
+      "slug": "bc-cryptographic-primitive"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:key-generation-algorithm",
+        "label": "Key Generation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      },
+      {
+        "id": "urn:ngm:class:one-way-function",
+        "label": "One-Way Function"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symmetric-key",
+        "label": "Symmetric Key"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:address",
+        "label": "Blockchain Wallet Address"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:rsa-algorithm",
+        "label": "RSA Algorithm"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23257-2021",
+        "label": "ISO-IEC 23257 2021"
+      },
+      {
+        "id": "urn:ngm:class:nist-nistir",
+        "label": "NIST NISTIR"
+      },
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:asymmetric-key-pair",
+        "label": "Asymmetric Key Pair"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

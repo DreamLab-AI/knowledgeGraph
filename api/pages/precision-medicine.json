@@ -117,6 +117,170 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-analytics",
+        "label": "Healthcare Analytics"
+      },
+      {
+        "id": "urn:ngm:class:medical-diagnosis-ai",
+        "label": "Medical Diagnosis AI"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging Analysis"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:general-purpose-ai-model",
+        "label": "General-Purpose AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:genomics",
+        "label": "Genomics"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      },
+      {
+        "id": "urn:ngm:class:robotic-surgery",
+        "label": "Robotic Surgery"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "id": "urn:ngm:class:iec-62304",
+        "label": "IEC 62304"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      },
+      {
+        "id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "genomics",

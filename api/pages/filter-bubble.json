@@ -48,6 +48,319 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:sociotechnical-risk",
+      "label": "Sociotechnical Risk",
+      "slug": "sociotechnical-risk"
+    },
+    {
+      "id": "urn:ngm:class:ai-risk",
+      "label": "AI Risk",
+      "slug": "ai-risk"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management",
+      "slug": "risk-management"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:harm-taxonomy",
+        "label": "Harm Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:incident-reporting",
+        "label": "Incident Reporting"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:platform-liability",
+        "label": "Platform Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-incident",
+        "label": "AI Incident"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:risk-register",
+        "label": "Risk Register"
+      },
+      {
+        "id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modeling"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO-IEC 23894"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-safety",
+        "label": "Digital Safety"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-risk-management",
+        "label": "Cybersecurity Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:financial-risk-management",
+        "label": "Financial Risk Management"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Audit"
+      },
+      {
+        "id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:transparency-reporting",
+        "label": "Transparency Reporting"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection"
+      },
+      {
+        "id": "urn:ngm:class:failure-mode-analysis",
+        "label": "Failure Mode Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:child-safety-online",
+        "label": "Child Safety Online"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "EU Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-amplification",
+        "label": "Algorithmic Amplification"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:attention-economy",
+        "label": "Attention Economy"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "digital-society-harms",

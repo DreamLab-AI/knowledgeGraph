@@ -128,6 +128,270 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning",
+      "slug": "robo-navigation-and-planning"
+    },
+    {
+      "id": "urn:ngm:class:robot",
+      "label": "Robot",
+      "slug": "robot"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:locomotion",
+        "label": "Locomotion System"
+      },
+      {
+        "id": "urn:ngm:class:onboard-computer",
+        "label": "Onboard Computer"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      },
+      {
+        "id": "urn:ngm:class:sensor-suite",
+        "label": "Robot Sensor Suite"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:occupancy-mapping",
+        "label": "Occupancy Mapping"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:planetary-exploration",
+        "label": "Planetary Exploration"
+      },
+      {
+        "id": "urn:ngm:class:precision-agriculture",
+        "label": "Precision Agriculture"
+      },
+      {
+        "id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power System"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Industrial Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-3691-4",
+        "label": "ISO 3691-4"
+      },
+      {
+        "id": "urn:ngm:class:iso-8373-2021",
+        "label": "ISO 8373 2021"
+      },
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot System"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical System"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:drone",
+        "label": "Drone"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      },
+      {
+        "id": "urn:ngm:class:legged-robot",
+        "label": "Legged Robot"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "id": "urn:ngm:class:unmanned-aerial-vehicle",
+        "label": "Unmanned Aerial Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

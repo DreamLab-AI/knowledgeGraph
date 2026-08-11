@@ -29,6 +29,310 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:photogrammetry",
+      "label": "Photogrammetry",
+      "slug": "photogrammetry"
+    },
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets",
+      "slug": "sc-content-and-assets"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      },
+      {
+        "id": "urn:ngm:class:mesh-reconstruction",
+        "label": "Mesh Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-generation",
+        "label": "Point Cloud Generation"
+      },
+      {
+        "id": "urn:ngm:class:triangulation",
+        "label": "Triangulation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:computational-resources",
+        "label": "Computational Resources"
+      },
+      {
+        "id": "urn:ngm:class:image-processing-software",
+        "label": "Image Processing Software"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:holographic-telepresence",
+        "label": "Holographic Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:immersive-media",
+        "label": "Immersive Media"
+      },
+      {
+        "id": "urn:ngm:class:asset-digitization",
+        "label": "Asset Digitization"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-construction",
+        "label": "Digital Twin Construction"
+      },
+      {
+        "id": "urn:ngm:class:spatial-measurement",
+        "label": "Spatial Measurement"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:mesh-reconstruction",
+        "label": "Mesh Reconstruction"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:360-video",
+        "label": "360-Degree Video"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:reality-capture-workflow",
+        "label": "Reality Capture Workflow"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:light-field-display",
+        "label": "Light Field Display"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

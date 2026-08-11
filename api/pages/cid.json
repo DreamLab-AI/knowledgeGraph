@@ -64,6 +64,211 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:content-addressing",
+      "label": "Content Addressing",
+      "slug": "content-addressing"
+    },
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:content-identifier",
+        "label": "Content Hash"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-serialisation",
+        "label": "Deterministic Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:sha-256-hashing",
+        "label": "SHA-256 Hashing"
+      },
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:canonical-json",
+        "label": "Canonical JSON"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-encoding",
+        "label": "Deterministic Encoding"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deduplication",
+        "label": "Content Deduplication"
+      },
+      {
+        "id": "urn:ngm:class:tamper-detection",
+        "label": "Tamper Detection"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage Principles"
+      },
+      {
+        "id": "urn:ngm:class:ipfs-content-addressing",
+        "label": "IPFS Content Addressing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      },
+      {
+        "id": "urn:ngm:class:multibase",
+        "label": "Multibase"
+      },
+      {
+        "id": "urn:ngm:class:multicodec",
+        "label": "Multicodec"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "id": "urn:ngm:class:ipfs-content-addressing",
+        "label": "IPFS Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:nft-metadata",
+        "label": "NFT Metadata"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

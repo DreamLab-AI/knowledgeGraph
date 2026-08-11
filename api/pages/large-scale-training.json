@@ -61,6 +61,366 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network",
+      "slug": "neural-network"
+    },
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation",
+      "slug": "optimisation"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-foundations",
+      "label": "Mathematical Foundations",
+      "slug": "mathematical-foundations"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI Training Methodology"
+      },
+      {
+        "id": "urn:ngm:class:data-curation",
+        "label": "Data Curation"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimization"
+      },
+      {
+        "id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      },
+      {
+        "id": "urn:ngm:class:kto",
+        "label": "KTO"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:policy-optimisation",
+        "label": "Policy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      },
+      {
+        "id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "AdamW"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:causal-language-modelling",
+        "label": "Causal Language Modelling"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-do-ra-etc",
+        "label": "LoRA DoRA etc"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:ze-ro-optimisation",
+        "label": "ZeRO Optimisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      },
+      {
+        "id": "urn:ngm:class:satisfiability",
+        "label": "Satisfiability"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:jax",
+        "label": "JAX"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:megatron-lm",
+        "label": "Megatron-LM"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
+        "label": "Constitutional AI Language Model Family"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
+        "label": "Google DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
+        "label": "Instruction-Following Conversational AI System"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "id": "urn:ngm:class:portfolio-optimisation",
+        "label": "Portfolio Optimisation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aisi-frontier-ai-safety-framework",
+        "label": "AISI Frontier AI Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Chinchilla Scaling Laws"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "model-training",

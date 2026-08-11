@@ -293,6 +293,415 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:deep-generative-model",
+      "label": "Deep Generative Model",
+      "slug": "deep-generative-model"
+    },
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network",
+      "slug": "neural-network"
+    },
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation",
+      "slug": "optimisation"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI",
+      "slug": "generative-ai"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-foundations",
+      "label": "Mathematical Foundations",
+      "slug": "mathematical-foundations"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      },
+      {
+        "id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "AdamW"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:causal-language-modelling",
+        "label": "Causal Language Modelling"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:ze-ro-optimisation",
+        "label": "ZeRO Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:classifier",
+        "label": "Classifier"
+      },
+      {
+        "id": "urn:ngm:class:discriminative-model",
+        "label": "Discriminative Model"
+      },
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      },
+      {
+        "id": "urn:ngm:class:satisfiability",
+        "label": "Satisfiability"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:jax",
+        "label": "JAX"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
+        "label": "Constitutional AI Language Model Family"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
+        "label": "Google DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
+        "label": "Instruction-Following Conversational AI System"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-captioning",
+        "label": "Accessibility Captioning"
+      },
+      {
+        "id": "urn:ngm:class:advertising",
+        "label": "Advertising"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aisi-frontier-ai-safety-framework",
+        "label": "AISI Frontier AI Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Chinchilla Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "advertising-and-marketing",

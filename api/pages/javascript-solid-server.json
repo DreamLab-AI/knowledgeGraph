@@ -115,6 +115,369 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:data-sovereignty",
+      "label": "Data Sovereignty",
+      "slug": "data-sovereignty"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance",
+      "slug": "data-governance"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management (Infrastructure)",
+      "slug": "infra-data-management"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:access-control-policy",
+        "label": "Access Control Policy"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:linked-data-platform",
+        "label": "Linked Data Platform"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:solid-oidc",
+        "label": "Solid-OIDC"
+      },
+      {
+        "id": "urn:ngm:class:solid-pod",
+        "label": "Pod"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-residency",
+        "label": "Data Residency"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:access-control-policy",
+        "label": "Access Control Policy"
+      },
+      {
+        "id": "urn:ngm:class:ldp-container",
+        "label": "LDP Container"
+      },
+      {
+        "id": "urn:ngm:class:linked-data-platform",
+        "label": "Linked Data Platform"
+      },
+      {
+        "id": "urn:ngm:class:web-access-control",
+        "label": "Web Access Control"
+      },
+      {
+        "id": "urn:ngm:class:web-id-profile",
+        "label": "WebID Profile"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cloud-portability",
+        "label": "Cloud Portability"
+      },
+      {
+        "id": "urn:ngm:class:data-free-flow",
+        "label": "Data Free Flow"
+      },
+      {
+        "id": "urn:ngm:class:data-anarchy",
+        "label": "Data Anarchy"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:n-triples",
+        "label": "N-Triples"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "HTTP REST"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "id": "urn:ngm:class:web-sockets",
+        "label": "WebSockets"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Health Data Management"
+      },
+      {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Financial Data Portability"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Government Open Data"
+      },
+      {
+        "id": "urn:ngm:class:digital-autonomy",
+        "label": "Digital Autonomy"
+      },
+      {
+        "id": "urn:ngm:class:national-security",
+        "label": "National Security"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:open-data-institute",
+        "label": "Open Data Institute"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27701",
+        "label": "ISO-IEC 27701"
+      },
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-8000",
+        "label": "ISO 8000"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:foaf",
+        "label": "FOAF"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

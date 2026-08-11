@@ -145,6 +145,321 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:network-performance-metrics",
+      "label": "Network Performance Metrics",
+      "slug": "network-performance-metrics"
+    },
+    {
+      "id": "urn:ngm:class:quality-of-service",
+      "label": "Quality Of Service",
+      "slug": "quality-of-service"
+    },
+    {
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure",
+      "slug": "network-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:processing-delay",
+        "label": "Processing Delay"
+      },
+      {
+        "id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
+      },
+      {
+        "id": "urn:ngm:class:transmission-delay",
+        "label": "Transmission Delay"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:network-component",
+        "label": "Network Component"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-networking",
+        "label": "Low-Latency Networking"
+      },
+      {
+        "id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      },
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      },
+      {
+        "id": "urn:ngm:class:power-infrastructure",
+        "label": "Power Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:jitter",
+        "label": "Jitter"
+      },
+      {
+        "id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:traffic-shaping",
+        "label": "Traffic Shaping"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      },
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "id": "urn:ngm:class:voice-over-ip",
+        "label": "Voice over IP"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802.1"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-performance-metrics",
+        "label": "Network Performance Metrics"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:round-trip-time",
+        "label": "Round-Trip Time"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:jitter",
+        "label": "Jitter"
+      },
+      {
+        "id": "urn:ngm:class:network-congestion",
+        "label": "Network Congestion"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

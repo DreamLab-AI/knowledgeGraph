@@ -87,6 +87,286 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network",
+      "slug": "neural-network"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:acquisition-function",
+        "label": "Acquisition Function"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
+      },
+      {
+        "id": "urn:ngm:class:inference-algorithm",
+        "label": "Inference Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:likelihood-function",
+        "label": "Likelihood Function"
+      },
+      {
+        "id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:computational-graph",
+        "label": "Computational Graph"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:numerical-linear-algebra",
+        "label": "Numerical Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-decision-theory",
+        "label": "Bayesian Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:conformal-prediction",
+        "label": "Conformal Prediction"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-forecasting",
+        "label": "Probabilistic Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes Theorem"
+      },
+      {
+        "id": "urn:ngm:class:evidence-lower-bound",
+        "label": "Evidence Lower Bound"
+      },
+      {
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      },
+      {
+        "id": "urn:ngm:class:hamiltonian-monte-carlo",
+        "label": "Hamiltonian Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:score-matching",
+        "label": "Score Matching"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:belief-propagation",
+        "label": "Belief Propagation"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:hamiltonian-monte-carlo",
+        "label": "Hamiltonian Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:journal-of-machine-learning-research",
+        "label": "Journal of Machine Learning Research"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:conformal-prediction",
+        "label": "Conformal Prediction"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

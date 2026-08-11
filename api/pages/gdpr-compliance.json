@@ -129,6 +129,222 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management (Infrastructure)",
+      "slug": "infra-data-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      },
+      {
+        "id": "urn:ngm:class:data-stewardship",
+        "label": "Data Stewardship"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-classification",
+        "label": "Data Classification"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-anarchy",
+        "label": "Data Anarchy"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-8000",
+        "label": "ISO 8000"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "id": "urn:ngm:class:information-governance",
+        "label": "Information Governance"
+      },
+      {
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      },
+      {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      },
+      {
+        "id": "urn:ngm:class:infra-software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

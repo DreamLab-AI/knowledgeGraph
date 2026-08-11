@@ -173,6 +173,367 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:foundation-model-layer",
+      "label": "Foundation Model Layer",
+      "slug": "foundation-model-layer"
+    },
+    {
+      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+      "label": "Large-Scale Pretrained Foundation Model",
+      "slug": "large-scale-pretrained-foundation-model"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model",
+      "slug": "machine-learning-discipline-model"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "slug": "machine-learning-discipline-models"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Large-Scale Data Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture-layer",
+        "label": "Model Architecture Layer"
+      },
+      {
+        "id": "urn:ngm:class:training-layer",
+        "label": "Training Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-ai-systems",
+        "label": "Agentic AI Systems"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:history-and-path-to-agi",
+        "label": "History and Path to AGI"
+      },
+      {
+        "id": "urn:ngm:class:scientific-discovery",
+        "label": "AI-Enabled Scientific Discovery"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:narrow-ai",
+        "label": "Narrow AI"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:edge-deployment",
+        "label": "Edge Deployment"
+      },
+      {
+        "id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "agent-layer",

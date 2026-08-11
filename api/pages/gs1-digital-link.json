@@ -102,6 +102,287 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-management",
+      "label": "Supply Chain Management",
+      "slug": "supply-chain-management"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:global-location-number",
+        "label": "Global Location Number"
+      },
+      {
+        "id": "urn:ngm:class:global-trade-item-number",
+        "label": "Global Trade Item Number"
+      },
+      {
+        "id": "urn:ngm:class:gs1-epcis",
+        "label": "EPCIS"
+      },
+      {
+        "id": "urn:ngm:class:serial-shipping-container-code",
+        "label": "Serial Shipping Container Code"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "id": "urn:ngm:class:electronic-data-interchange",
+        "label": "Electronic Data Interchange"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:food-safety-blockchain",
+        "label": "Food Safety Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:just-in-time-manufacturing",
+        "label": "Just-In-Time Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-standards",
+        "label": "ISO Standard"
+      },
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-28000",
+        "label": "ISO 28000"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:resilience-engineering",
+        "label": "Resilience Engineering"
+      },
+      {
+        "id": "urn:ngm:class:trade-compliance",
+        "label": "Trade Compliance"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

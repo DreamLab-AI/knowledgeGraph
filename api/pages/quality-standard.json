@@ -87,6 +87,263 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      },
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:rb-0090-emergency-stop",
+        "label": "rb 0090 emergency stop"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1872",
+        "label": "IEEE 1872"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment-body",
+        "label": "Conformity Assessment Body"
+      },
+      {
+        "id": "urn:ngm:class:declaration-of-conformity",
+        "label": "Declaration of Conformity"
+      },
+      {
+        "id": "urn:ngm:class:harmonised-standard",
+        "label": "Harmonised Standard"
+      },
+      {
+        "id": "urn:ngm:class:safety-function",
+        "label": "Safety Function"
+      },
+      {
+        "id": "urn:ngm:class:safety-measure",
+        "label": "Protective Measure"
+      },
+      {
+        "id": "urn:ngm:class:technical-documentation",
+        "label": "Technical Documentation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
+      },
+      {
+        "id": "urn:ngm:class:cobot-deployment",
+        "label": "Cobot Deployment"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Safe Human-Robot Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:io-t-integration",
+        "label": "IIoT Integration"
+      },
+      {
+        "id": "urn:ngm:class:market-access",
+        "label": "Market Access"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-299",
+        "label": "ISO/TC 299"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL Ontology"
+      },
+      {
+        "id": "urn:ngm:class:rb-0101-performance-level",
+        "label": "Performance Level Method"
+      },
+      {
+        "id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
+        "label": "Speed and Separation Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensing"
+      },
+      {
+        "id": "urn:ngm:class:laser-scanner",
+        "label": "Laser Scanner"
+      },
+      {
+        "id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
+      },
+      {
+        "id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL 2 DL"
+      },
+      {
+        "id": "urn:ngm:class:rb-0101-performance-level",
+        "label": "Performance Level"
+      },
+      {
+        "id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      },
+      {
+        "id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robots"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ansi",
+        "label": "ANSI"
+      },
+      {
+        "id": "urn:ngm:class:bsi-germany",
+        "label": "BSI"
+      },
+      {
+        "id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "id": "urn:ngm:class:ieee-robotics-and-automation-society",
+        "label": "IEEE Robotics And Automation Society"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-299",
+        "label": "ISO/TC 299"
+      },
+      {
+        "id": "urn:ngm:class:opc-foundation",
+        "label": "OPC Foundation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "id": "urn:ngm:class:robo-robot-type",
+        "label": "Robot Type"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "robot-standard",

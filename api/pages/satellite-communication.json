@@ -117,6 +117,288 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure",
+      "slug": "network-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:networking",
+        "label": "Networking"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:spectrum-management",
+        "label": "Spectrum Management"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:mobile-broadband",
+        "label": "Mobile Broadband"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:power-infrastructure",
+        "label": "Power Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Technology"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:3-gpp",
+        "label": "3GPP"
+      },
+      {
+        "id": "urn:ngm:class:international-telecommunication-union",
+        "label": "International Telecommunication Union"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802 Standards"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:critical-national-infrastructure",
+        "label": "Critical National Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

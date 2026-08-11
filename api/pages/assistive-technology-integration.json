@@ -118,6 +118,291 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety",
+      "slug": "sc-governance-and-safety"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:live-captions",
+        "label": "Captions"
+      },
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:semantic-html",
+        "label": "Semantic HTML"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:digital-safety",
+        "label": "Digital Safety"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:semantic-html",
+        "label": "Semantic HTML"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research with Disabled Users"
+      },
+      {
+        "id": "urn:ngm:class:wai-aria",
+        "label": "WAI-ARIA"
+      },
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:disability-inclusion",
+        "label": "Disability Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:independent-living",
+        "label": "Independent Living"
+      },
+      {
+        "id": "urn:ngm:class:market-expansion",
+        "label": "Market Expansion"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Universal Usability"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:immersive-computing",
+        "label": "Immersive Computing"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:en-301-549",
+        "label": "EN 301 549"
+      },
+      {
+        "id": "urn:ngm:class:section-508",
+        "label": "Section 508"
+      },
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG 2.2"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:jaws",
+        "label": "JAWS"
+      },
+      {
+        "id": "urn:ngm:class:lighthouse",
+        "label": "Lighthouse"
+      },
+      {
+        "id": "urn:ngm:class:nvda",
+        "label": "NVDA"
+      },
+      {
+        "id": "urn:ngm:class:pa11y",
+        "label": "Pa11y"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility-captioning",
+        "label": "Captioning Users"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:en-301-549",
+        "label": "EN 301 549"
+      },
+      {
+        "id": "urn:ngm:class:section-508",
+        "label": "Section 508"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:disability-rights",
+        "label": "Disability Rights"
+      },
+      {
+        "id": "urn:ngm:class:internationalisation",
+        "label": "Internationalisation"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      },
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "accessibility",

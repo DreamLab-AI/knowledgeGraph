@@ -133,6 +133,303 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:privacy-preserving-technology",
+      "label": "Privacy Preserving Technology",
+      "slug": "privacy-preserving-technology"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Cryptographic Commitment Scheme"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:noise-mechanisms",
+        "label": "Noise Mechanisms"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bbs-signatures",
+        "label": "BBS+ Signatures"
+      },
+      {
+        "id": "urn:ngm:class:zk-snarks",
+        "label": "ZK-SNARKs"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      },
+      {
+        "id": "urn:ngm:class:anonymisation",
+        "label": "Data Anonymisation"
+      },
+      {
+        "id": "urn:ngm:class:pseudonymisation",
+        "label": "Pseudonymisation"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-security",
+        "label": "Machine Learning Security"
+      },
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Decentralised Data Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralised Identity Foundation"
+      },
+      {
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Biometric Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

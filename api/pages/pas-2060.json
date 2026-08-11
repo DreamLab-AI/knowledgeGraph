@@ -93,6 +93,311 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:climate-policy",
+      "label": "Climate Policy",
+      "slug": "climate-policy"
+    },
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability",
+      "slug": "sustainability"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality-planning",
+        "label": "Carbon Neutrality Planning"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality-verification",
+        "label": "Carbon Neutrality Verification"
+      },
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:greenhouse-gas-accounting",
+        "label": "Greenhouse Gas Accounting"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions Reporting"
+      },
+      {
+        "id": "urn:ngm:class:third-party-assurance",
+        "label": "Third-Party Assurance"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:institutional-trust",
+        "label": "Institutional Trust"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:green-computing",
+        "label": "Green Computing"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      },
+      {
+        "id": "urn:ngm:class:coordination",
+        "label": "Coordination"
+      },
+      {
+        "id": "urn:ngm:class:legitimacy",
+        "label": "Legitimacy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-decarbonisation",
+        "label": "Supply Chain Decarbonisation"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:internet-governance",
+        "label": "Internet Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:carbon-offset-programme",
+        "label": "Carbon Offset Programme"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Digital Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:carbon-aware-computing",
+        "label": "Carbon-Aware Computing"
+      },
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "id": "urn:ngm:class:iso-14001",
+        "label": "ISO 14001"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD Principles on AI"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-neutrality-verification",
+        "label": "Carbon Neutrality Verification"
+      },
+      {
+        "id": "urn:ngm:class:direct-air-capture",
+        "label": "Direct Air Capture"
+      },
+      {
+        "id": "urn:ngm:class:eu-green-claims-directive",
+        "label": "EU Green Claims Directive"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      },
+      {
+        "id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Equity"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

@@ -91,6 +91,263 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "id": "urn:ngm:class:visual-design",
+        "label": "Visual Design"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ergonomics",
+        "label": "Cognitive Ergonomics"
+      },
+      {
+        "id": "urn:ngm:class:usability-engineering",
+        "label": "Usability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:user-interface-design",
+        "label": "User Interface Design"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      },
+      {
+        "id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      },
+      {
+        "id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Digital Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:heuristic-evaluation",
+        "label": "Heuristic Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:journey-mapping",
+        "label": "Journey Mapping"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-9241-210",
+        "label": "ISO 9241-210"
+      },
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      },
+      {
+        "id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

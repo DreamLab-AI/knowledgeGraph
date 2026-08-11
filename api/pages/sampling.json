@@ -241,6 +241,272 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory",
+      "slug": "probability-theory"
+    },
+    {
+      "id": "urn:ngm:class:measure-theory",
+      "label": "Measure Theory",
+      "slug": "measure-theory"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "Floating-Point Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:computational-fluid-dynamics",
+        "label": "Computational Fluid Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-finance",
+        "label": "Quantitative Finance"
+      },
+      {
+        "id": "urn:ngm:class:queueing-theory",
+        "label": "Queueing Theory"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:filtration",
+        "label": "Filtration"
+      },
+      {
+        "id": "urn:ngm:class:sigma-algebra",
+        "label": "Sigma-Algebra"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Axiomatic Set Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symbolic-computation",
+        "label": "Symbolic Computation"
+      },
+      {
+        "id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      },
+      {
+        "id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Robotics Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:statistical-mechanics",
+        "label": "Statistical Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:conformal-prediction",
+        "label": "Conformal Prediction"
+      },
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:error-analysis",
+        "label": "Error Analysis"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:time-series-analysis",
+        "label": "Time-Series Analysis"
+      },
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence Theorems"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Probabilistic Graphical Models"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "id": "urn:ngm:class:ergodic-theory",
+        "label": "Ergodic Theory"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Processes"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "algorithm-layer",

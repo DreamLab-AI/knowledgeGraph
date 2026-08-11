@@ -69,6 +69,311 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:trajectory-optimisation",
+      "label": "Trajectory Optimisation",
+      "slug": "trajectory-optimisation"
+    },
+    {
+      "id": "urn:ngm:class:motion-planning",
+      "label": "Motion Planning",
+      "slug": "motion-planning"
+    },
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning",
+      "slug": "robo-navigation-and-planning"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      },
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:constraint-specification",
+        "label": "Constraint Specification"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-model",
+        "label": "Dynamic Model"
+      },
+      {
+        "id": "urn:ngm:class:inertia-tensor",
+        "label": "Inertia Tensor"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimator"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator Output"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computation",
+        "label": "Real-Time Computation"
+      },
+      {
+        "id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronisation",
+        "label": "Timing Synchronisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-control",
+        "label": "Autonomous Vehicle Control"
+      },
+      {
+        "id": "urn:ngm:class:compliant-manipulation",
+        "label": "Compliant Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:data-efficient-learning",
+        "label": "Sample Efficient Learning"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-behaviour",
+        "label": "Adaptive Behaviour"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:task-execution",
+        "label": "Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Mapping"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:differential-dynamic-programming",
+        "label": "Differential Dynamic Programming"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-programming",
+        "label": "Quadratic Programming"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:potential-field-method",
+        "label": "Potential Field Method"
+      },
+      {
+        "id": "urn:ngm:class:rapidly-exploring-random-tree",
+        "label": "Rapidly-Exploring Random Tree"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reactive-control",
+        "label": "Reactive Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:drake",
+        "label": "Drake Toolbox"
+      },
+      {
+        "id": "urn:ngm:class:mu-jo-co",
+        "label": "MuJoCo"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:sampling-based-planning",
+        "label": "Sampling-Based Planning"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aerial-robotics",
+        "label": "Aerial Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:industrial-manipulation",
+        "label": "Industrial Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:process-control",
+        "label": "Process Control"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "id": "urn:ngm:class:ifac",
+        "label": "IFAC"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218-robot-safety",
+        "label": "ISO 10218 Robot Safety"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:robot-autonomy",
+        "label": "Robot Autonomy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Processes"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "robotics",

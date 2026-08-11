@@ -81,6 +81,228 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:differential-kinematics",
+      "label": "Differential Kinematics",
+      "slug": "differential-kinematics"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robot-kinematics",
+      "label": "Robot Kinematics",
+      "slug": "robot-kinematics"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      },
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Parameters"
+      },
+      {
+        "id": "urn:ngm:class:joint-configuration",
+        "label": "Joint Configuration"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-frame",
+        "label": "Coordinate Frames"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-transformation",
+        "label": "Transformation Matrix"
+      },
+      {
+        "id": "urn:ngm:class:rb-0023-degrees-of-freedom",
+        "label": "Degrees of Freedom"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:force-torque-control",
+        "label": "Force-Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:singularity-analysis",
+        "label": "Singularity Analysis"
+      },
+      {
+        "id": "urn:ngm:class:task-space-control",
+        "label": "Task Space Control"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End-Effector Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-programming",
+        "label": "Robot Programming"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Neural Network Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:quaternion-math",
+        "label": "Quaternion Representation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0032-manipulability",
+        "label": "Manipulability"
+      },
+      {
+        "id": "urn:ngm:class:redundancy-resolution",
+        "label": "Redundancy Resolution"
+      },
+      {
+        "id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

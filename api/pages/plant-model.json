@@ -34,6 +34,271 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:controller",
+        "label": "Controller"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:reference-signal",
+        "label": "Reference Signal"
+      },
+      {
+        "id": "urn:ngm:class:stability-analysis",
+        "label": "Stability Analysis"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:sensor-interface",
+        "label": "Sensor Interface"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computation",
+        "label": "Real-Time Computation"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Operation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "id": "urn:ngm:class:process-regulation",
+        "label": "Process Regulation"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-behaviour",
+        "label": "Adaptive Behaviour"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:task-execution",
+        "label": "Task Execution"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:linear-quadratic-regulator",
+        "label": "Linear Quadratic Regulator"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:sliding-mode-control",
+        "label": "Sliding Mode Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bode-plot",
+        "label": "Bode Plot"
+      },
+      {
+        "id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      },
+      {
+        "id": "urn:ngm:class:transfer-function",
+        "label": "Transfer Function"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aerospace-engineering",
+        "label": "Aerospace Engineering"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:biomedical-engineering",
+        "label": "Biomedical Engineering"
+      },
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:arp4754-a",
+        "label": "ARP4754A"
+      },
+      {
+        "id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C Avionics"
+      },
+      {
+        "id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131-3"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508 Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "id": "urn:ngm:class:ifac",
+        "label": "IFAC"
+      },
+      {
+        "id": "urn:ngm:class:isa-95",
+        "label": "ISA-95"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:estimation-theory",
+        "label": "Estimation Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

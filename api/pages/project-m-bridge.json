@@ -38,6 +38,358 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:cross-border-payments",
+      "label": "Cross-Border Payments",
+      "slug": "cross-border-payments"
+    },
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services",
+      "slug": "financial-services"
+    },
+    {
+      "id": "urn:ngm:class:economic-systems",
+      "label": "Economic Systems",
+      "slug": "economic-systems"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "id": "urn:ngm:class:banking",
+        "label": "Banking"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      },
+      {
+        "id": "urn:ngm:class:insurance",
+        "label": "Insurance"
+      },
+      {
+        "id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment Systems"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML Compliance"
+      },
+      {
+        "id": "urn:ngm:class:currency-conversion",
+        "label": "Currency Conversion"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
+      },
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payment-transparency",
+        "label": "Cross-Border Payment Transparency"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "International Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:remittances",
+        "label": "Remittance"
+      },
+      {
+        "id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      },
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "id": "urn:ngm:class:nostro-vostro-accounts",
+        "label": "Nostro/Vostro Accounts"
+      },
+      {
+        "id": "urn:ngm:class:swift-messaging",
+        "label": "SWIFT Messaging"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cbdc-cross-border-settlement",
+        "label": "CBDC Cross-Border Settlement"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:swift-messaging",
+        "label": "SWIFT Messaging"
+      },
+      {
+        "id": "urn:ngm:class:api-economy",
+        "label": "API Economy"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "G20 Cross-Border Payments Initiative"
+      },
+      {
+        "id": "urn:ngm:class:fsb-cross-border-payments-roadmap",
+        "label": "FSB Cross-Border Payments Roadmap"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bis-cpmi",
+        "label": "BIS CPMI"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "International Payments System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:delivery-versus-payment",
+        "label": "Delivery-Versus-Payment"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:forex",
+        "label": "Forex"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "wholesale-cbdc",

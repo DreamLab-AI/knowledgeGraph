@@ -38,6 +38,252 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bridge-contract",
+        "label": "Bridge Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof-system",
+        "label": "Cryptographic Proof System"
+      },
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:relayer",
+        "label": "Relayer"
+      },
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement Contract"
+      },
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:destination-chain-execution",
+        "label": "Destination Chain Execution"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Source Chain Finality"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-composability",
+        "label": "Cross-Chain Composability"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-swap",
+        "label": "Cross-Chain Swap"
+      },
+      {
+        "id": "urn:ngm:class:multi-chain-de-fi",
+        "label": "Multi-Chain DeFi"
+      },
+      {
+        "id": "urn:ngm:class:omnichain-application",
+        "label": "Omnichain Application"
+      },
+      {
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      },
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:bridge",
+        "label": "Intent-Based Bridge"
+      },
+      {
+        "id": "urn:ngm:class:burn-and-mint-bridge",
+        "label": "Burn-and-Mint Bridge"
+      },
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Zero-Knowledge Light Client"
+      },
+      {
+        "id": "urn:ngm:class:lock-and-mint-bridge",
+        "label": "Lock-and-Mint Bridge"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-verification",
+        "label": "Optimistic Verification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:zk-snarks",
+        "label": "ZK-SNARKs"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cross-chain-dex",
+        "label": "Cross-Chain DEX"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-governance",
+        "label": "Cross-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-nft",
+        "label": "Cross-Chain NFT"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Bridged Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-real-world-asset-transfer",
+        "label": "Tokenised Real World Asset Transfer"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Chain Abstraction Wallet"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:erc-7683",
+        "label": "ERC-7683"
+      },
+      {
+        "id": "urn:ngm:class:ibc-specification",
+        "label": "IBC Specification"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:open-bridge-standard",
+        "label": "Open Bridge Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:across-protocol",
+        "label": "Across Protocol"
+      },
+      {
+        "id": "urn:ngm:class:axelar",
+        "label": "Axelar"
+      },
+      {
+        "id": "urn:ngm:class:chainlink-ccip",
+        "label": "Chainlink CCIP"
+      },
+      {
+        "id": "urn:ngm:class:connext",
+        "label": "Connext"
+      },
+      {
+        "id": "urn:ngm:class:hyperlane",
+        "label": "Hyperlane"
+      },
+      {
+        "id": "urn:ngm:class:layer-zero",
+        "label": "LayerZero"
+      },
+      {
+        "id": "urn:ngm:class:squid-router",
+        "label": "Squid Router"
+      },
+      {
+        "id": "urn:ngm:class:wormhole",
+        "label": "Wormhole"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

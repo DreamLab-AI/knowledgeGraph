@@ -169,6 +169,364 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:agentic-workflow",
+      "label": "Agentic Workflow",
+      "slug": "agentic-workflow"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:workflow-automation",
+      "label": "Workflow Automation",
+      "slug": "workflow-automation"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-talent",
+        "label": "AI Talent"
+      },
+      {
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-infrastructure",
+        "label": "Data Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:executive-sponsorship",
+        "label": "Executive Sponsorship"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:risk-management-framework",
+        "label": "Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience Enhancement"
+      },
+      {
+        "id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:automated-code-review",
+        "label": "Automated Code Review"
+      },
+      {
+        "id": "urn:ngm:class:ci-cd-automation",
+        "label": "CI-CD Automation"
+      },
+      {
+        "id": "urn:ngm:class:dev-sec-ops",
+        "label": "DevSecOps"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering-agents",
+        "label": "Software Engineering Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "LLM Inference"
+      },
+      {
+        "id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:diffusion-of-innovations-theory",
+        "label": "Diffusion of Innovations Theory"
+      },
+      {
+        "id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
+      },
+      {
+        "id": "urn:ngm:class:technology-acceptance-model",
+        "label": "Technology Acceptance Model"
+      },
+      {
+        "id": "urn:ngm:class:toe-framework",
+        "label": "TOE Framework"
+      },
+      {
+        "id": "urn:ngm:class:agent2-agent-protocol",
+        "label": "Agent2Agent Protocol"
+      },
+      {
+        "id": "urn:ngm:class:auto-gen",
+        "label": "AutoGen"
+      },
+      {
+        "id": "urn:ngm:class:crew-ai",
+        "label": "CrewAI"
+      },
+      {
+        "id": "urn:ngm:class:lang-graph",
+        "label": "LangGraph"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:single-turn-inference",
+        "label": "Single-Turn Inference"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:organizational-change",
+        "label": "Organizational Change"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-copilot",
+        "label": "Copilot Systems"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier",
+        "label": "Public Service Modernisation"
+      },
+      {
+        "id": "urn:ngm:class:national-competitiveness",
+        "label": "National Competitiveness"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:automated-testing",
+        "label": "Automated Testing"
+      },
+      {
+        "id": "urn:ngm:class:code-execution",
+        "label": "Code Execution"
+      },
+      {
+        "id": "urn:ngm:class:dev-sec-ops",
+        "label": "DevSecOps"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop-learning",
+        "label": "Human-in-the- Loop Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001-ai-management-system",
+        "label": "ISO IEC 42001 AI Management System"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:uk-ai-opportunities-action-plan",
+        "label": "UK AI Opportunities Action Plan"
+      },
+      {
+        "id": "urn:ngm:class:agent2-agent-protocol",
+        "label": "Agent2Agent Protocol"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation-agents-sdk",
+        "label": "OpenAI Agents SDK"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:ai-investment",
+        "label": "AI Investment Cycle"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-talent-war",
+        "label": "AI Talent War"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model Race"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI Boom"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "agent-layer",

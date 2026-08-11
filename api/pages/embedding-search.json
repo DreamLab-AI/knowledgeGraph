@@ -53,6 +53,261 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    },
+    {
+      "id": "urn:ngm:class:search-technology",
+      "label": "Search Technology",
+      "slug": "search-technology"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-retrieval",
+        "label": "Hybrid Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour"
+      },
+      {
+        "id": "urn:ngm:class:query-encoder",
+        "label": "Query Encoder"
+      },
+      {
+        "id": "urn:ngm:class:reranker",
+        "label": "Reranker"
+      },
+      {
+        "id": "urn:ngm:class:vector-index",
+        "label": "Vector Index"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Evaluation Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:query-understanding",
+        "label": "Query Understanding"
+      },
+      {
+        "id": "urn:ngm:class:text-embeddings",
+        "label": "Text Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:document-retrieval",
+        "label": "Document Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      },
+      {
+        "id": "urn:ngm:class:cross-encoder-reranking",
+        "label": "Cross-Encoder Reranking"
+      },
+      {
+        "id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:hnsw-index",
+        "label": "HNSW Index"
+      },
+      {
+        "id": "urn:ngm:class:reciprocal-rank-fusion",
+        "label": "Reciprocal Rank Fusion"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "id": "urn:ngm:class:faiss",
+        "label": "Faiss"
+      },
+      {
+        "id": "urn:ngm:class:inner-product",
+        "label": "Inner Product"
+      },
+      {
+        "id": "urn:ngm:class:pinecone",
+        "label": "Pinecone"
+      },
+      {
+        "id": "urn:ngm:class:weaviate",
+        "label": "Weaviate"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Biomedical Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:beir-benchmark",
+        "label": "BEIR Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:mteb-benchmark",
+        "label": "MTEB Benchmark"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

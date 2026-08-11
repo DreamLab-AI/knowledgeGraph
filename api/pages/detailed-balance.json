@@ -89,6 +89,239 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:monte-carlo-methods",
+      "label": "Monte Carlo Methods",
+      "slug": "monte-carlo-methods"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:quasi-monte-carlo",
+        "label": "Quasi-Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:sequential-monte-carlo",
+        "label": "Sequential Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ergodicity",
+        "label": "Ergodicity"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:law-of-large-numbers",
+        "label": "Law of Large Numbers"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-localization",
+        "label": "Monte Carlo Localization"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:risk-analysis",
+        "label": "Risk Analysis"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gibbs-sampling",
+        "label": "Gibbs Sampling"
+      },
+      {
+        "id": "urn:ngm:class:metropolis-hastings",
+        "label": "Metropolis-Hastings"
+      },
+      {
+        "id": "urn:ngm:class:no-u-turn-sampler",
+        "label": "No-U-Turn Sampler"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      },
+      {
+        "id": "urn:ngm:class:sequential-monte-carlo",
+        "label": "Sequential Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      },
+      {
+        "id": "urn:ngm:class:statistical-physics",
+        "label": "Statistical Physics"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:financial-modelling",
+        "label": "Financial Modelling"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:hamiltonian-dynamics",
+        "label": "Hamiltonian Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Bayesian Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

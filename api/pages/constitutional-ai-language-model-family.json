@@ -91,6 +91,323 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:cognitive-ai",
+      "label": "Cognitive AI",
+      "slug": "cognitive-ai"
+    },
+    {
+      "id": "urn:ngm:class:transformer-architecture",
+      "label": "Transformer Architecture",
+      "slug": "transformer-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI Training Methodology"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:system-prompt",
+        "label": "System Prompt"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback Data"
+      },
+      {
+        "id": "urn:ngm:class:inference-infrastructure",
+        "label": "Inference Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-compute",
+        "label": "Large-Scale Compute"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      },
+      {
+        "id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "label": "Multimodal AI Architecture"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:companion-cognitive-architecture",
+        "label": "Companion Cognitive Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI Training Methodology"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "label": "Multimodal AI Architecture"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:tokenizer",
+        "label": "Tokenizer"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      },
+      {
+        "id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:call-centres",
+        "label": "Call Centres"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:asia-pacific-regulation",
+        "label": "Asia Pacific Regulation"
+      },
+      {
+        "id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:uk-ai-safety-institute",
+        "label": "UK AI Safety Institute"
+      },
+      {
+        "id": "urn:ngm:class:soar",
+        "label": "Soar Workshop"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:artificial-superintelligence-theory",
+        "label": "Artificial Superintelligence Theory"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

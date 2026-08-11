@@ -34,6 +34,342 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure as a Service"
+      },
+      {
+        "id": "urn:ngm:class:platform-as-a-service",
+        "label": "Platform as a Service"
+      },
+      {
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      },
+      {
+        "id": "urn:ngm:class:software-as-a-service",
+        "label": "Software as a Service"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      },
+      {
+        "id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cooling-system",
+        "label": "Cooling Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-cloud",
+        "label": "Hybrid Cloud"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-17788",
+        "label": "ISO/IEC 17788"
+      },
+      {
+        "id": "urn:ngm:class:nist-cloud-computing",
+        "label": "NIST Cloud Computing Definition"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      },
+      {
+        "id": "urn:ngm:class:cost-optimisation",
+        "label": "Cost Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:multi-cloud",
+        "label": "Multi-Cloud"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "database-systems",

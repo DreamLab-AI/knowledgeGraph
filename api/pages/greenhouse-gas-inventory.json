@@ -93,6 +93,392 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:environmental-accounting",
+      "label": "Environmental Accounting",
+      "slug": "environmental-accounting"
+    },
+    {
+      "id": "urn:ngm:class:sustainability-reporting",
+      "label": "SustainabilityReporting",
+      "slug": "sustainability-reporting"
+    },
+    {
+      "id": "urn:ngm:class:corporate-governance",
+      "label": "Corporate Governance",
+      "slug": "corporate-governance"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:ecosystem-services-accounting",
+        "label": "Ecosystem Services Accounting"
+      },
+      {
+        "id": "urn:ngm:class:natural-capital-valuation",
+        "label": "Natural Capital Valuation"
+      },
+      {
+        "id": "urn:ngm:class:audit-committee",
+        "label": "Audit Committee"
+      },
+      {
+        "id": "urn:ngm:class:board-of-directors",
+        "label": "Board of Directors"
+      },
+      {
+        "id": "urn:ngm:class:shareholder-rights",
+        "label": "Shareholder Rights"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:emission-factors",
+        "label": "Emission Factors"
+      },
+      {
+        "id": "urn:ngm:class:greenhouse-gas-protocol",
+        "label": "Greenhouse Gas Protocol"
+      },
+      {
+        "id": "urn:ngm:class:materiality-assessment",
+        "label": "Materiality Assessment"
+      },
+      {
+        "id": "urn:ngm:class:verification-process",
+        "label": "Verification Process"
+      },
+      {
+        "id": "urn:ngm:class:environmental-impact-metric",
+        "label": "Environmental Impact Metric"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:material-flow-analysis",
+        "label": "Material Flow Analysis"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      },
+      {
+        "id": "urn:ngm:class:emissions-reporting",
+        "label": "Emissions Reporting"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-target-setting",
+        "label": "Net Zero Target Setting"
+      },
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investment"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:emission-factors",
+        "label": "Emission Factor Databases"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gri-standards",
+        "label": "GRI Standards"
+      },
+      {
+        "id": "urn:ngm:class:csrd-compliance",
+        "label": "CSRD"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG Framework"
+      },
+      {
+        "id": "urn:ngm:class:global-reporting-initiative",
+        "label": "Global Reporting Initiative"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "id": "urn:ngm:class:governance-code",
+        "label": "Governance Code"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:decision-rights",
+        "label": "Decision Rights"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprinting"
+      },
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Financial Accounting"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-disclosure",
+        "label": "Voluntary Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:ai-for-sustainability",
+        "label": "AI for Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:supply-chain-data",
+        "label": "Supply Chain Data"
+      },
+      {
+        "id": "urn:ngm:class:environmental-impact-metric",
+        "label": "Environmental Impact Metric"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:climate-policy",
+        "label": "Climate Policy"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ifrs-s2",
+        "label": "ISSB IFRS S2"
+      },
+      {
+        "id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD Framework"
+      },
+      {
+        "id": "urn:ngm:class:european-sustainability-reporting-standards",
+        "label": "European Sustainability Reporting Standards"
+      },
+      {
+        "id": "urn:ngm:class:global-reporting-initiative",
+        "label": "Global Reporting Initiative"
+      },
+      {
+        "id": "urn:ngm:class:issb",
+        "label": "ISSB"
+      },
+      {
+        "id": "urn:ngm:class:oecd-principles-of-corporate-governance",
+        "label": "OECD Principles of Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:uk-corporate-governance-code",
+        "label": "UK Corporate Governance Code"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:climate-risk-management",
+        "label": "Climate Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      },
+      {
+        "id": "urn:ngm:class:national-accounts",
+        "label": "National Accounts"
+      },
+      {
+        "id": "urn:ngm:class:institutional-framework",
+        "label": "Institutional Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credit"
+      },
+      {
+        "id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      },
+      {
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:environmental-assessment",
+        "label": "Environmental Assessment"
+      },
+      {
+        "id": "urn:ngm:class:waste-management",
+        "label": "Waste Management"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      },
+      {
+        "id": "urn:ngm:class:double-materiality",
+        "label": "Double Materiality"
+      },
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

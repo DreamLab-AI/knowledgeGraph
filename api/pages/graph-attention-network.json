@@ -99,6 +99,265 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network",
+      "slug": "neural-network"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:graph-convolutional-network",
+        "label": "Graph Convolutional Network"
+      },
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "id": "urn:ngm:class:hidden-layer",
+        "label": "Hidden Layer"
+      },
+      {
+        "id": "urn:ngm:class:neuron",
+        "label": "Neuron"
+      },
+      {
+        "id": "urn:ngm:class:weight-matrix",
+        "label": "Weight Matrix"
+      },
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:adjacency-matrix",
+        "label": "Adjacency Matrix"
+      },
+      {
+        "id": "urn:ngm:class:graph-structured-data",
+        "label": "Graph-Structured Data"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:graph-classification",
+        "label": "Graph Classification"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:message-passing-neural-network",
+        "label": "Message-Passing Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:spectral-graph-theory",
+        "label": "Spectral Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:universal-function-approximation",
+        "label": "Universal Function Approximation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:graph-attention-mechanism",
+        "label": "Graph Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:node-embedding",
+        "label": "Node Embedding"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-rag",
+        "label": "GraphRAG"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

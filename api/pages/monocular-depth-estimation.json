@@ -97,6 +97,263 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:3-d-perception",
+      "label": "3D Perception",
+      "slug": "3-d-perception"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision",
+      "slug": "computer-vision"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:camera-extrinsics",
+        "label": "Camera Extrinsics"
+      },
+      {
+        "id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      },
+      {
+        "id": "urn:ngm:class:cost-volume",
+        "label": "Cost Volume"
+      },
+      {
+        "id": "urn:ngm:class:depth-map",
+        "label": "Depth Map"
+      },
+      {
+        "id": "urn:ngm:class:disparity-map",
+        "label": "Disparity Map"
+      },
+      {
+        "id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Photometric Loss"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimization"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:ar-occlusion",
+        "label": "AR Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:visual-slam",
+        "label": "Visual SLAM"
+      },
+      {
+        "id": "urn:ngm:class:6-do-f-tracking",
+        "label": "6DoF Tracking"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:multi-view-stereo",
+        "label": "Multi-View Stereo"
+      },
+      {
+        "id": "urn:ngm:class:semi-global-matching",
+        "label": "Semi-Global Matching"
+      },
+      {
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "RAFT-Stereo"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:rgb-d-camera",
+        "label": "RGB-D Camera"
+      },
+      {
+        "id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "id": "urn:ngm:class:time-of-flight-sensor",
+        "label": "Time-of-Flight Camera"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:arcore",
+        "label": "ARCore"
+      },
+      {
+        "id": "urn:ngm:class:arkit",
+        "label": "ARKit"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "Middlebury Stereo"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:ne-rf",
+        "label": "NeRF"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Monocular 3D Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:visual-slam",
+        "label": "Visual SLAM"
+      },
+      {
+        "id": "urn:ngm:class:3-d-scanning",
+        "label": "3D Scanning"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

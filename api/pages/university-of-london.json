@@ -38,6 +38,205 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:research-institution",
+      "label": "Research Institution",
+      "slug": "research-institution"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:laboratory",
+        "label": "Laboratory"
+      },
+      {
+        "id": "urn:ngm:class:phd-programme",
+        "label": "PhD Programme"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      },
+      {
+        "id": "urn:ngm:class:grant-funding",
+        "label": "Grant Funding"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      },
+      {
+        "id": "urn:ngm:class:talent-pipeline",
+        "label": "Talent Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      },
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:grant-funding",
+        "label": "Grant Funding"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:think-tank",
+        "label": "Think Tank"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:innovation-ecosystem",
+        "label": "Innovation Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:innovation-ecosystem",
+        "label": "Innovation Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:scientific-publication",
+        "label": "Scientific Publication"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:research-university",
+        "label": "Research University"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:research-institution",
+        "label": "Research Institution"
+      },
+      {
+        "id": "urn:ngm:class:academia",
+        "label": "Academia"
+      },
+      {
+        "id": "urn:ngm:class:think-tank",
+        "label": "Think Tank"
+      },
+      {
+        "id": "urn:ngm:class:university",
+        "label": "University"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

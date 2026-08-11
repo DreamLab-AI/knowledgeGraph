@@ -97,6 +97,180 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:scientific-discovery",
+      "label": "Scientific Discovery",
+      "slug": "scientific-discovery"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:statistical-testing",
+        "label": "Statistical Testing"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      },
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model",
+        "label": "Model"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery-ai",
+        "label": "Drug Discovery AI"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

@@ -197,6 +197,259 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:graph-algorithms",
+      "label": "Graph Algorithms",
+      "slug": "graph-algorithms"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:informed-search",
+        "label": "Informed Search"
+      },
+      {
+        "id": "urn:ngm:class:breadth-first-search",
+        "label": "Breadth-First Search"
+      },
+      {
+        "id": "urn:ngm:class:depth-first-search",
+        "label": "Depth-First Search"
+      },
+      {
+        "id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "A* Search"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Graph Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-function",
+        "label": "Heuristic Function"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:game-playing",
+        "label": "Game Playing"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:game-tree-search",
+        "label": "Game Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:route-planning",
+        "label": "Route Planning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structures"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:breadth-first-search",
+        "label": "Breadth-First Search"
+      },
+      {
+        "id": "urn:ngm:class:depth-first-search",
+        "label": "Depth-First Search"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:route-planning",
+        "label": "Route Planning"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Indexing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-technique",
+        "label": "Machine Learning Technique"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-function",
+        "label": "Heuristic Function"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Complexity Theory"
+      },
+      {
+        "id": "urn:ngm:class:constraint",
+        "label": "Constraint"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:satisfiability",
+        "label": "Satisfiability"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "search-algorithm",

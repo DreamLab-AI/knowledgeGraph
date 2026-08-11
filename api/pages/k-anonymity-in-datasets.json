@@ -86,6 +86,250 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:data-governance-framework",
+        "label": "Data Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-safe-harbour",
+        "label": "Regulatory Safe Harbour"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ckks-scheme",
+        "label": "CKKS Scheme"
+      },
+      {
+        "id": "urn:ngm:class:encryption-scheme",
+        "label": "BFV Scheme"
+      },
+      {
+        "id": "urn:ngm:class:garbled-circuits",
+        "label": "Garbled Circuits"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-mechanism",
+        "label": "Gaussian Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:laplace-mechanism",
+        "label": "Laplace Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:randomised-response",
+        "label": "Randomised Response"
+      },
+      {
+        "id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      },
+      {
+        "id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gradient-compression",
+        "label": "Gradient Compression"
+      },
+      {
+        "id": "urn:ngm:class:oblivious-ram",
+        "label": "Oblivious RAM"
+      },
+      {
+        "id": "urn:ngm:class:secure-aggregation",
+        "label": "Secure Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-sharing",
+        "label": "Clinical Trial Data Sharing"
+      },
+      {
+        "id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime Detection"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-analytics",
+        "label": "Healthcare Analytics"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "National Statistics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR Article 89"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF PRIO Protocol"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27701",
+        "label": "ISO-IEC 27701"
+      },
+      {
+        "id": "urn:ngm:class:nist-privacy-framework",
+        "label": "NIST Privacy Framework"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C Data Privacy Vocabulary"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "li-et-al-2007",

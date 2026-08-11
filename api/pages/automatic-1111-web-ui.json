@@ -126,6 +126,443 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure",
+      "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI",
+      "slug": "generative-ai"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+      "label": "Machine Learning Infrastructure",
+      "slug": "machine-learning-discipline-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:civitai",
+        "label": "Civitai"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-hub",
+        "label": "HuggingFace Hub"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "LLM Inference"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:local-llm-runtime-platform",
+        "label": "Local LLM Runtime Platform"
+      },
+      {
+        "id": "urn:ngm:class:meta-llama-model-family-3",
+        "label": "Llama 3"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:inference-runtime",
+        "label": "Inference Runtime"
+      },
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      },
+      {
+        "id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
+        "label": "ComfyUI Workflows"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU-Accelerated Computing"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture-of-Experts Architecture"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Rotary Positional Encoding"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:general-purpose-computing",
+        "label": "General-Purpose Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-ecosystem",
+        "label": "AI Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:gguf-format",
+        "label": "GGUF Format"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Diffusers Library"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation-chat-completions-api",
+        "label": "Open AI Chat Completions API"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      },
+      {
+        "id": "urn:ngm:class:transformers-library",
+        "label": "Transformers Library"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-scrapers",
+        "label": "AI Scrapers"
+      },
+      {
+        "id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
+        "label": "Node-Based Diffusion Pipeline Interface"
+      },
+      {
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Research Reproducibility"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:apache-license-2-0",
+        "label": "Apache License 2.0"
+      },
+      {
+        "id": "urn:ngm:class:gguf-format",
+        "label": "GGUF Specification"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-hub",
+        "label": "HuggingFace Hub"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation-chat-completions-api",
+        "label": "Open AI Chat Completions API"
+      },
+      {
+        "id": "urn:ngm:class:safetensors-format",
+        "label": "Safetensors Format"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "stable-diffusion",

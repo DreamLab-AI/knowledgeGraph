@@ -42,6 +42,229 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
+      },
+      {
+        "id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      },
+      {
+        "id": "urn:ngm:class:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Parameters"
+      },
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:homogeneous-transformation",
+        "label": "Homogeneous Transformation"
+      },
+      {
+        "id": "urn:ngm:class:joint-configuration",
+        "label": "Joint Configuration"
+      },
+      {
+        "id": "urn:ngm:class:reference-frames",
+        "label": "Reference Frames"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Engineering"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Robot Calibration"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Neural Inverse Kinematics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:drake",
+        "label": "Drake"
+      },
+      {
+        "id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo"
+      },
+      {
+        "id": "urn:ngm:class:mu-jo-co",
+        "label": "MuJoCo"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "ROS"
+      },
+      {
+        "id": "urn:ngm:class:sdf",
+        "label": "SDF"
+      },
+      {
+        "id": "urn:ngm:class:urdf",
+        "label": "URDF"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robots"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton-control",
+        "label": "Exoskeleton Control"
+      },
+      {
+        "id": "urn:ngm:class:industrial-manipulation",
+        "label": "Industrial Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:space-robotics",
+        "label": "Space Robotics"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-robotics-and-automation-society",
+        "label": "IEEE Robotics And Automation Society"
+      },
+      {
+        "id": "urn:ngm:class:ros-industrial",
+        "label": "ROS Industrial Consortium"
+      },
+      {
+        "id": "urn:ngm:class:urdf",
+        "label": "URDF Specification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:rb-0032-manipulability",
+        "label": "Manipulability Ellipsoid"
+      },
+      {
+        "id": "urn:ngm:class:task-space-control",
+        "label": "Task Space Control"
+      },
+      {
+        "id": "urn:ngm:class:workspace-analysis",
+        "label": "Workspace Analysis"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

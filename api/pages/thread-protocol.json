@@ -140,6 +140,290 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ieee-802-x",
+      "label": "IEEE 802-X",
+      "slug": "ieee-802-x"
+    },
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard",
+      "slug": "technical-standard"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:csma-ca",
+        "label": "CSMA-CA"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:ultra-wideband",
+        "label": "Ultra-Wideband"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      },
+      {
+        "id": "urn:ngm:class:standards-conformance",
+        "label": "Conformance Clause"
+      },
+      {
+        "id": "urn:ngm:class:test-method",
+        "label": "Test Method"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ism-band",
+        "label": "ISM Band"
+      },
+      {
+        "id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "Wireless Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:mesh-networking",
+        "label": "Mesh Networking"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:market-access",
+        "label": "Market Access"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:6lowpan",
+        "label": "6LoWPAN"
+      },
+      {
+        "id": "urn:ngm:class:wireless-hart",
+        "label": "WirelessHART"
+      },
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "id": "urn:ngm:class:specification",
+        "label": "Specification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ieee-802-11",
+        "label": "IEEE 802.11"
+      },
+      {
+        "id": "urn:ngm:class:de-facto-standard",
+        "label": "De Facto Standard"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-specification",
+        "label": "Proprietary Specification"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:precision-agriculture",
+        "label": "Precision Agriculture"
+      },
+      {
+        "id": "urn:ngm:class:smart-building",
+        "label": "Smart Building"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "id": "urn:ngm:class:security-protocol",
+        "label": "Security Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
+      },
+      {
+        "id": "urn:ngm:class:smart-metering",
+        "label": "Smart Metering"
+      },
+      {
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802-X"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lpwan",
+        "label": "LPWAN"
+      },
+      {
+        "id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
+      },
+      {
+        "id": "urn:ngm:class:wireless-hart",
+        "label": "WirelessHART"
+      },
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:protocol",
+        "label": "Protocol"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

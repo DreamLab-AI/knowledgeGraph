@@ -120,6 +120,181 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision",
+      "slug": "computer-vision"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cls-token",
+        "label": "CLS Token"
+      },
+      {
+        "id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Large-Scale Pre-Training"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-understanding",
+        "label": "Video Understanding"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Vehicle Navigation"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      },
+      {
+        "id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Self-Attention"
+      },
+      {
+        "id": "urn:ngm:class:patch-embedding",
+        "label": "Patch Embedding"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-transformer",
+        "label": "Diffusion Transformer"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:masked-image-modelling",
+        "label": "Masked Image Modelling"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "transformer",

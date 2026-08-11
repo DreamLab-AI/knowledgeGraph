@@ -130,6 +130,359 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:token-economy",
+      "label": "Token Economy",
+      "slug": "token-economy"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-economics",
+      "label": "Blockchain Economics",
+      "slug": "blockchain-economics"
+    },
+    {
+      "id": "urn:ngm:class:token-economics",
+      "label": "Token Economics",
+      "slug": "token-economics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-oracle",
+        "label": "Cryptographic Oracle"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      },
+      {
+        "id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-composability",
+        "label": "Atomic Composability"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-lending",
+        "label": "Permissionless Lending"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Tokenised Real World Assets"
+      },
+      {
+        "id": "urn:ngm:class:trustless-trading",
+        "label": "Trustless Trading"
+      },
+      {
+        "id": "urn:ngm:class:yield-optimisation",
+        "label": "Yield Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:algorithmic-stablecoin",
+        "label": "Algorithmic Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan-arbitrage",
+        "label": "Flash Loan Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining Incentives"
+      },
+      {
+        "id": "urn:ngm:class:overcollateralised-lending",
+        "label": "Overcollateralised Lending"
+      },
+      {
+        "id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Traditional Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-finance",
+        "label": "Supply Chain Finance"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chainlink",
+        "label": "Chainlink"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-as-a-service",
+        "label": "Blockchain As A Service"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:social-token-economy",
+        "label": "Social Token Economy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-token-standard",
+        "label": "ERC-20 Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:fatf-guidance-on-virtual-assets",
+        "label": "FATF Guidance on Virtual Assets"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

@@ -163,6 +163,214 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:electric-motor",
+        "label": "Electric Motor"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-cylinder",
+        "label": "Hydraulic Cylinder"
+      },
+      {
+        "id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      },
+      {
+        "id": "urn:ngm:class:robot-controller",
+        "label": "Robot Controller"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliant-motion",
+        "label": "Compliant Motion"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-control",
+        "label": "Force-Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Robot Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-locomotion",
+        "label": "Robot Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Engineering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:passive-mechanism",
+        "label": "Passive Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "Robot End-Effector"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems",
+        "label": "IEC 61800 Adjustable Speed Electrical Power Drive Systems"
+      },
+      {
+        "id": "urn:ngm:class:iso-9283",
+        "label": "ISO 9283"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Robotic Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

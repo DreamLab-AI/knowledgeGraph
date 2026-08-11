@@ -51,6 +51,254 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:motion-planning",
+      "label": "Motion Planning",
+      "slug": "motion-planning"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:environment-model",
+        "label": "Environment Model"
+      },
+      {
+        "id": "urn:ngm:class:goal-configuration",
+        "label": "Goal Configuration"
+      },
+      {
+        "id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      },
+      {
+        "id": "urn:ngm:class:rb-1013-localization",
+        "label": "RB 1013 localization"
+      },
+      {
+        "id": "urn:ngm:class:start-configuration",
+        "label": "Start Configuration"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:rb-1007-trajectory-generation",
+        "label": "RB-1007-trajectory-generation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Mapping"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:potential-field-method",
+        "label": "Potential Field Method"
+      },
+      {
+        "id": "urn:ngm:class:rapidly-exploring-random-tree",
+        "label": "Rapidly-Exploring Random Tree"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reactive-control",
+        "label": "Reactive Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-roadmap",
+        "label": "Probabilistic Roadmap"
+      },
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "A* Search"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:sampling-based-planning",
+        "label": "Sampling-Based Planning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:drone-navigation",
+        "label": "Drone Navigation"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robots"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:robot-autonomy",
+        "label": "Robot Autonomy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-coordination",
+        "label": "Multi-Robot Coordination"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "autonomous-vehicles",

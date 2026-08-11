@@ -130,6 +130,213 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:mathematical-optimisation",
+      "label": "Mathematical Optimisation",
+      "slug": "mathematical-optimisation"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      },
+      {
+        "id": "urn:ngm:class:momentum",
+        "label": "Momentum"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:weight-decay",
+        "label": "Weight Decay"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:objective-function",
+        "label": "Objective Function"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      },
+      {
+        "id": "urn:ngm:class:objective-function",
+        "label": "Objective Function"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mini-batch",
+        "label": "Mini-Batch"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mathematical-optimisation",
+        "label": "Mathematical Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      },
+      {
+        "id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:simulated-annealing",
+        "label": "Simulated Annealing"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "ieee-institute-of-electrical-and-electronics-engineers",

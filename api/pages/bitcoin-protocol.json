@@ -133,6 +133,272 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency",
+      "slug": "cryptocurrency"
+    },
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-transfer",
+        "label": "Cross-Border Transfer"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-innovation",
+        "label": "Permissionless Innovation"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:real-time-settlement",
+        "label": "24/7 Settlement"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:double-spend-prevention",
+        "label": "Double-Spending Prevention"
+      },
+      {
+        "id": "urn:ngm:class:emission-schedule",
+        "label": "Predictable Issuance Schedule"
+      },
+      {
+        "id": "urn:ngm:class:hard-money",
+        "label": "Hard Money Property"
+      },
+      {
+        "id": "urn:ngm:class:trustless-settlement",
+        "label": "Trustless Settlement"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-centralisation-risks",
+        "label": "Bitcoin Centralisation Risks"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:bip-32-hd-wallet",
+        "label": "BIP-32 HD Wallet"
+      },
+      {
+        "id": "urn:ngm:class:bip-39-mnemonic",
+        "label": "BIP-39 Mnemonic"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "id": "urn:ngm:class:keccak-256",
+        "label": "Keccak-256"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Request for Comments"
+      },
+      {
+        "id": "urn:ngm:class:fasb-asu-2023-08",
+        "label": "FASB ASU 2023-08"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:iso-24165",
+        "label": "ISO 24165 Digital Token Identifier"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
+        "label": "Bitcoin ETF"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "consensus-protocol",

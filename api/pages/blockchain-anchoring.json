@@ -68,6 +68,318 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive (Blockchain)",
+      "slug": "bc-cryptographic-primitive"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:blockchain-node",
+        "label": "Blockchain Node"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:avalanche-effect",
+        "label": "Avalanche Effect"
+      },
+      {
+        "id": "urn:ngm:class:collision-resistance",
+        "label": "Collision Resistance"
+      },
+      {
+        "id": "urn:ngm:class:preimage-resistance",
+        "label": "Preimage Resistance"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-application",
+        "label": "Blockchain Application"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:one-way-function",
+        "label": "One-Way Function"
+      },
+      {
+        "id": "urn:ngm:class:pseudorandom-function",
+        "label": "Pseudorandom Function"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralized Database"
+      },
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Traditional Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:checksums",
+        "label": "Checksums"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:blake2",
+        "label": "BLAKE2"
+      },
+      {
+        "id": "urn:ngm:class:keccak-256",
+        "label": "Keccak-256"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:sha-3",
+        "label": "SHA-3"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "id": "urn:ngm:class:password-hashing",
+        "label": "Password Hashing"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:web-3-infrastructure",
+        "label": "Web3 Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:modular-blockchain",
+        "label": "Modular Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      },
+      {
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

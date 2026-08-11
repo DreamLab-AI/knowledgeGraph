@@ -86,6 +86,337 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:real-time-processing",
+      "label": "Real-time Processing",
+      "slug": "real-time-processing"
+    },
+    {
+      "id": "urn:ngm:class:data-processing",
+      "label": "Data Processing",
+      "slug": "data-processing"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management (Infrastructure)",
+      "slug": "infra-data-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:in-memory-computing",
+        "label": "In-Memory Computing"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
+      },
+      {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:state-management",
+        "label": "State Management"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-network",
+        "label": "Low-Latency Network"
+      },
+      {
+        "id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:schema-management",
+        "label": "Schema Management"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:lambda-architecture",
+        "label": "Lambda Architecture"
+      },
+      {
+        "id": "urn:ngm:class:raw-data",
+        "label": "Raw Data"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:online-learning",
+        "label": "Online Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apache-flink",
+        "label": "Apache Flink"
+      },
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:lambda-architecture",
+        "label": "Lambda Architecture"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:backpressure",
+        "label": "Backpressure"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:time-series-database",
+        "label": "Time-Series Database"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

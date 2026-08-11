@@ -64,6 +64,294 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:closed-loop-control",
+      "label": "Closed-Loop Control",
+      "slug": "closed-loop-control"
+    },
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:error-signal",
+        "label": "Error Signal"
+      },
+      {
+        "id": "urn:ngm:class:feedback-mechanism",
+        "label": "Feedback Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:setpoint",
+        "label": "Setpoint"
+      },
+      {
+        "id": "urn:ngm:class:controller",
+        "label": "Controller"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:sensor-interface",
+        "label": "Sensor Interface"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:state-space-representation",
+        "label": "State Space Representation"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:controller",
+        "label": "Controller"
+      },
+      {
+        "id": "urn:ngm:class:feedback-mechanism",
+        "label": "Feedback Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      },
+      {
+        "id": "urn:ngm:class:stability",
+        "label": "Stability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-control",
+        "label": "Autonomous Vehicle Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      },
+      {
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "id": "urn:ngm:class:disturbance-rejection",
+        "label": "Disturbance Rejection"
+      },
+      {
+        "id": "urn:ngm:class:rb-1007-trajectory-generation",
+        "label": "Trajectory Generation"
+      },
+      {
+        "id": "urn:ngm:class:rb-1013-localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-behaviour",
+        "label": "Adaptive Behaviour"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:optimization-theory",
+        "label": "Optimization Theory"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:robust-control",
+        "label": "Robust Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:controller",
+        "label": "Controller"
+      },
+      {
+        "id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      },
+      {
+        "id": "urn:ngm:class:state-space-representation",
+        "label": "State Space Representation"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-8373-2021",
+        "label": "ISO 8373:2021"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:numerical-optimization",
+        "label": "Numerical Optimization"
+      },
+      {
+        "id": "urn:ngm:class:robust-control",
+        "label": "Robust Control"
+      },
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

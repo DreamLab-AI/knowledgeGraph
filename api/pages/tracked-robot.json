@@ -79,6 +79,315 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:autonomous-system",
+      "label": "Autonomous System",
+      "slug": "autonomous-system"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:communication-interface",
+        "label": "Communication Interface"
+      },
+      {
+        "id": "urn:ngm:class:locomotion",
+        "label": "Locomotion Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:manipulator-arm",
+        "label": "Manipulator Arm"
+      },
+      {
+        "id": "urn:ngm:class:navigation-stack",
+        "label": "Navigation Stack"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      },
+      {
+        "id": "urn:ngm:class:safety-system",
+        "label": "Safety System"
+      },
+      {
+        "id": "urn:ngm:class:task-and-motion-planning",
+        "label": "Task Planner"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:battery-management-system",
+        "label": "Battery Management System"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:military-operations",
+        "label": "Military Operations"
+      },
+      {
+        "id": "urn:ngm:class:planetary-exploration",
+        "label": "Planetary Exploration"
+      },
+      {
+        "id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
+      },
+      {
+        "id": "urn:ngm:class:technology-infrastructure-domain-inspection",
+        "label": "Infrastructure Inspection"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:navigation-stack",
+        "label": "Nav2 Navigation Stack"
+      },
+      {
+        "id": "urn:ngm:class:ros-2",
+        "label": "ROS 2"
+      },
+      {
+        "id": "urn:ngm:class:rtab-map",
+        "label": "RTAB-Map"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "Cartographer SLAM"
+      },
+      {
+        "id": "urn:ngm:class:whole-body-control",
+        "label": "Whole Body Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:teleoperated-robot",
+        "label": "Teleoperated System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulation"
+      },
+      {
+        "id": "urn:ngm:class:move-it-2",
+        "label": "MoveIt2"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-corporation-isaac-sim",
+        "label": "NVIDIA Isaac Sim"
+      },
+      {
+        "id": "urn:ngm:class:open-cv",
+        "label": "OpenCV"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "PCL Point Cloud Library"
+      },
+      {
+        "id": "urn:ngm:class:ros-2",
+        "label": "ROS 2"
+      },
+      {
+        "id": "urn:ngm:class:slam-toolbox",
+        "label": "SLAM Toolbox"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:disaster-response",
+        "label": "Disaster Response"
+      },
+      {
+        "id": "urn:ngm:class:industrial-inspection",
+        "label": "Industrial Inspection"
+      },
+      {
+        "id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      },
+      {
+        "id": "urn:ngm:class:precision-agriculture",
+        "label": "Precision Agriculture"
+      },
+      {
+        "id": "urn:ngm:class:scientific-discovery",
+        "label": "Scientific Exploration"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot Systems"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1872",
+        "label": "IEEE 1872-2015"
+      },
+      {
+        "id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482"
+      },
+      {
+        "id": "urn:ngm:class:iso-3691-4",
+        "label": "ISO 3691-4"
+      },
+      {
+        "id": "urn:ngm:class:ul-3100",
+        "label": "UL 3100"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42010",
+        "label": "ISO/IEC 42010"
+      },
+      {
+        "id": "urn:ngm:class:sae-j-3016",
+        "label": "SAE Levels of Driving Automation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:5-g-connectivity",
+        "label": "5G Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot Systems"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical System"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "ground-robot",

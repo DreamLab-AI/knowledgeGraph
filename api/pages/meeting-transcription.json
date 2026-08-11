@@ -64,6 +64,263 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing",
+      "slug": "natural-language-processing"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      },
+      {
+        "id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:language-translation",
+        "label": "Language Translation"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:real-time-captioning",
+        "label": "Real-Time Captioning"
+      },
+      {
+        "id": "urn:ngm:class:virtual-assistant",
+        "label": "Virtual Assistant"
+      },
+      {
+        "id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:annotated-training-data",
+        "label": "Labelled Training Data"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:speaker-recognition",
+        "label": "Speaker Recognition"
+      },
+      {
+        "id": "urn:ngm:class:voice-activity-detection",
+        "label": "Voice Activity Detection"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility Technology"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      },
+      {
+        "id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:connectionist-temporal-classification",
+        "label": "Connectionist Temporal Classification"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Networks"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-web-speech-api",
+        "label": "W3C Web Speech API"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "id": "urn:ngm:class:speech-synthesis",
+        "label": "SpeechSynthesis"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "artificial-intelligence",

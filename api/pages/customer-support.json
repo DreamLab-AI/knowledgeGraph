@@ -113,6 +113,255 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    },
+    {
+      "id": "urn:ngm:class:workflow-automation",
+      "label": "Workflow Automation",
+      "slug": "workflow-automation"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      },
+      {
+        "id": "urn:ngm:class:escalation-management",
+        "label": "Escalation Management"
+      },
+      {
+        "id": "urn:ngm:class:interactive-voice-response",
+        "label": "Interactive Voice Response"
+      },
+      {
+        "id": "urn:ngm:class:virtual-agent",
+        "label": "Virtual Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:intelligent-ticket-routing",
+        "label": "Intelligent Ticket Routing"
+      },
+      {
+        "id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel Support"
+      },
+      {
+        "id": "urn:ngm:class:self-service-portal",
+        "label": "Self-Service Portal"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:hyperautomation",
+        "label": "Hyperautomation"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:customer-relationship-management",
+        "label": "Customer Relationship Management"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Rule-Based Automation"
+      },
+      {
+        "id": "urn:ngm:class:human-agent-assistance",
+        "label": "Human Agent Assistance"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bpmn",
+        "label": "BPMN"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "id": "urn:ngm:class:customer-support-automation",
+        "label": "Customer Support Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:integration-platform-as-a-service",
+        "label": "Integration Platform as a Service"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "conversational-ai",

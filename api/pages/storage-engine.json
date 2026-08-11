@@ -95,6 +95,309 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management (Infrastructure)",
+      "slug": "infra-data-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:database-replication",
+        "label": "Database Replication"
+      },
+      {
+        "id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:ngm:class:crash-recovery",
+        "label": "Crash Recovery"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:pacelc-model",
+        "label": "PACELC Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:in-memory-computing",
+        "label": "In-Memory Computing"
+      },
+      {
+        "id": "urn:ngm:class:volatile-storage",
+        "label": "Volatile Storage"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-ledger",
+        "label": "Blockchain Ledger"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:b-tree-index",
+        "label": "B-Tree Index"
+      },
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "id": "urn:ngm:class:lsm-tree",
+        "label": "LSM Tree"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cqrs-pattern",
+        "label": "CQRS Pattern"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      },
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:replication-system",
+        "label": "Replication System"
+      },
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
+      },
+      {
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

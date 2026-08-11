@@ -197,6 +197,321 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System",
+      "slug": "ai-agent-system"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:persistent-memory",
+        "label": "Persistent Memory"
+      },
+      {
+        "id": "urn:ngm:class:reasoning-engine",
+        "label": "Reasoning Engine"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "id": "urn:ngm:class:computer-use",
+        "label": "Computer Use"
+      },
+      {
+        "id": "urn:ngm:class:deep-research",
+        "label": "Deep Research"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-behaviour",
+        "label": "Adaptive Behavior"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-rpc",
+        "label": "JSON-RPC"
+      },
+      {
+        "id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "id": "urn:ngm:class:tool-schema",
+        "label": "Tool Schema"
+      },
+      {
+        "id": "urn:ngm:class:bdi-model",
+        "label": "BDI Architecture"
+      },
+      {
+        "id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "id": "urn:ngm:class:plan-and-execute",
+        "label": "Plan and Execute"
+      },
+      {
+        "id": "urn:ngm:class:re-act",
+        "label": "ReAct"
+      },
+      {
+        "id": "urn:ngm:class:reflexion",
+        "label": "Reflexion"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sociotechnical-system",
+        "label": "Sociotechnical System"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-systems",
+        "label": "Intelligent Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:google-ai-technology-corporation-gemini",
+        "label": "Google Gemini"
+      },
+      {
+        "id": "urn:ngm:class:gpt",
+        "label": "OpenAI GPT"
+      },
+      {
+        "id": "urn:ngm:class:meta-llama-model-family",
+        "label": "Meta Llama"
+      },
+      {
+        "id": "urn:ngm:class:mistral",
+        "label": "Mistral"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "id": "urn:ngm:class:personal-assistance",
+        "label": "Personal Assistants"
+      },
+      {
+        "id": "urn:ngm:class:research-agents",
+        "label": "Research Agents"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering-agents",
+        "label": "Software Engineering Agents"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-workflow",
+        "label": "Enterprise Workflow"
+      },
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      },
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      },
+      {
+        "id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust Over IP Foundation"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:agent2-agent-protocol-google-2025",
+        "label": "Agent2Agent Protocol (Google 2025)"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol-anthropic-2024",
+        "label": "Model Context Protocol Anthropic 2024"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:browser-automation",
+        "label": "Browser Use"
+      },
+      {
+        "id": "urn:ngm:class:computer-use",
+        "label": "Computer Use"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "ai-application",

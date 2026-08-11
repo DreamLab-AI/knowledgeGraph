@@ -90,6 +90,235 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing",
+      "slug": "natural-language-processing"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:event-extraction",
+        "label": "Event Extraction"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:part-of-speech-tagging",
+        "label": "Part-of-Speech Tagging"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:document-summarisation",
+        "label": "Document Summarisation"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:conditional-random-field",
+        "label": "Conditional Random Field"
+      },
+      {
+        "id": "urn:ngm:class:sequence-labelling",
+        "label": "Sequence Labelling"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer Model"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
+      },
+      {
+        "id": "urn:ngm:class:text-mining",
+        "label": "Text Mining"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

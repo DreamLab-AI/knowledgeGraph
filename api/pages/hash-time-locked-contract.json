@@ -145,6 +145,240 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:ngm:class:contract-code",
+        "label": "Contract Code"
+      },
+      {
+        "id": "urn:ngm:class:event-emission",
+        "label": "Event Emission"
+      },
+      {
+        "id": "urn:ngm:class:oracle-integration",
+        "label": "Oracle Integration"
+      },
+      {
+        "id": "urn:ngm:class:proxy-pattern",
+        "label": "Proxy Pattern"
+      },
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:gas-mechanism",
+        "label": "Gas Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-4337",
+        "label": "ERC-4337"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin",
+        "label": "OpenZeppelin Standards"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rust-systems-programming-language",
+        "label": "Rust Systems Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:vyper",
+        "label": "Vyper"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:insurance-automation",
+        "label": "Insurance Automation"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Markets"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eip-process",
+        "label": "EIP Process"
+      },
+      {
+        "id": "urn:ngm:class:erc-standards",
+        "label": "ERC Standards"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
+        "label": "Ethereum Foundation"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin",
+        "label": "OpenZeppelin"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-did-specification",
+        "label": "W3C DID Spec"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

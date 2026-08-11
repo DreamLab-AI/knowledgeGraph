@@ -34,6 +34,234 @@
     ],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:dynamical-systems",
+      "label": "Dynamical Systems",
+      "slug": "dynamical-systems"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:filtration",
+        "label": "Filtration"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "id": "urn:ngm:class:martingale",
+        "label": "Martingale"
+      },
+      {
+        "id": "urn:ngm:class:poisson-process",
+        "label": "Poisson Process"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:wiener-process",
+        "label": "Wiener Process"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:filtration",
+        "label": "Filtration"
+      },
+      {
+        "id": "urn:ngm:class:it-calculus",
+        "label": "It\u00f4 Calculus"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "id": "urn:ngm:class:sigma-algebra",
+        "label": "Sigma-Algebra"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process-regression",
+        "label": "Gaussian Process Regression"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:chapman-kolmogorov-equation",
+        "label": "Chapman-Kolmogorov Equation"
+      },
+      {
+        "id": "urn:ngm:class:detailed-balance",
+        "label": "Detailed Balance"
+      },
+      {
+        "id": "urn:ngm:class:fokker-planck-equation",
+        "label": "Fokker-Planck Equation"
+      },
+      {
+        "id": "urn:ngm:class:score-matching",
+        "label": "Score Matching"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:it-calculus",
+        "label": "It\u00f4 Integral"
+      },
+      {
+        "id": "urn:ngm:class:kernel-methods",
+        "label": "Kernel Methods"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:wiener-process",
+        "label": "Wiener Process"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-finance",
+        "label": "Quantitative Finance"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "Robotics State Estimation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:statistical-physics",
+        "label": "Statistical Physics"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

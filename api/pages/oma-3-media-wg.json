@@ -39,6 +39,301 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body",
+      "slug": "standards-body"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:working-group",
+        "label": "Working Group"
+      },
+      {
+        "id": "urn:ngm:class:specification-document",
+        "label": "Specification Document"
+      },
+      {
+        "id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Conformance Test Suite"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-licence-instrument",
+        "label": "Intellectual Property Licensing"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-portability",
+        "label": "Digital Asset Portability"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standards",
+        "label": "Interoperability Standards"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:vendor-neutrality",
+        "label": "Vendor Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:stakeholder-participation",
+        "label": "Stakeholder Participation"
+      },
+      {
+        "id": "urn:ngm:class:technical-expertise",
+        "label": "Technical Expertise"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:open-governance",
+        "label": "Open Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-platform",
+        "label": "Proprietary Platform"
+      },
+      {
+        "id": "urn:ngm:class:walled-garden",
+        "label": "Walled Garden"
+      },
+      {
+        "id": "urn:ngm:class:de-facto-standard",
+        "label": "De Facto Standard"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-specification",
+        "label": "Proprietary Specification"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-framework",
+        "label": "AI Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:api-specification",
+        "label": "API Specification"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "id": "urn:ngm:class:protocol-specification",
+        "label": "Protocol Specification"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentraland",
+        "label": "Decentraland"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      },
+      {
+        "id": "urn:ngm:class:open-metaverse-interoperability-group",
+        "label": "Open Metaverse Interoperability Group"
+      },
+      {
+        "id": "urn:ngm:class:certification-scheme",
+        "label": "Certification Scheme"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance Institution"
+      },
+      {
+        "id": "urn:ngm:class:industry-consortium",
+        "label": "Industry Consortium"
+      },
+      {
+        "id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "oma-3",

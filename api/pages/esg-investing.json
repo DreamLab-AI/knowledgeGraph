@@ -140,6 +140,324 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation",
+      "slug": "financial-regulation"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:climate-risk-disclosure",
+        "label": "Climate Risk Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing-prevention",
+        "label": "Greenwashing Prevention"
+      },
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:institutional-trust",
+        "label": "Institutional Trust"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-linked-loan",
+        "label": "Sustainability-Linked Loan"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Carbon Credit Market"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      },
+      {
+        "id": "urn:ngm:class:coordination",
+        "label": "Coordination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "UN Sustainable Development Goals"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      },
+      {
+        "id": "urn:ngm:class:eu-sustainable-finance-disclosure-regulation",
+        "label": "EU Sustainable Finance Disclosure Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:conventional-finance",
+        "label": "Conventional Finance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:climate-science",
+        "label": "Climate Science"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-green-bonds",
+        "label": "Tokenised Green Bonds"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "EU Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-s1",
+        "label": "IFRS S1 S2"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:icma-green-bond-principles",
+        "label": "ICMA Green Bond Principles"
+      },
+      {
+        "id": "urn:ngm:class:issb",
+        "label": "ISSB"
+      },
+      {
+        "id": "urn:ngm:class:ngfs",
+        "label": "NGFS"
+      },
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

@@ -98,6 +98,287 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body",
+      "slug": "standards-body"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "id": "urn:ngm:class:lf-ai-data-foundation",
+        "label": "LF AI & Data Foundation"
+      },
+      {
+        "id": "urn:ngm:class:lf-edge",
+        "label": "LF Edge"
+      },
+      {
+        "id": "urn:ngm:class:lf-energy",
+        "label": "LF Energy"
+      },
+      {
+        "id": "urn:ngm:class:openssf",
+        "label": "OpenSSF"
+      },
+      {
+        "id": "urn:ngm:class:specification-document",
+        "label": "Specification Document"
+      },
+      {
+        "id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Conformance Test Suite"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-licence-instrument",
+        "label": "Intellectual Property Licensing"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaborative-software-development",
+        "label": "Collaborative Software Development"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      },
+      {
+        "id": "urn:ngm:class:vendor-neutral-governance",
+        "label": "Vendor Neutral Governance"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:vendor-neutrality",
+        "label": "Vendor Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:stakeholder-participation",
+        "label": "Stakeholder Participation"
+      },
+      {
+        "id": "urn:ngm:class:technical-expertise",
+        "label": "Technical Expertise"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:contributor-license-agreement",
+        "label": "Contributor License Agreement"
+      },
+      {
+        "id": "urn:ngm:class:ip-stewardship",
+        "label": "IP Stewardship"
+      },
+      {
+        "id": "urn:ngm:class:open-governance",
+        "label": "Open Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:apache-software-foundation",
+        "label": "Apache Software Foundation"
+      },
+      {
+        "id": "urn:ngm:class:eclipse-foundation",
+        "label": "Eclipse Foundation"
+      },
+      {
+        "id": "urn:ngm:class:de-facto-standard",
+        "label": "De Facto Standard"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-specification",
+        "label": "Proprietary Specification"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native Computing"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-framework",
+        "label": "AI Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing Standard"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:linux-kernel",
+        "label": "Linux Kernel"
+      },
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:open-source-security",
+        "label": "Open Source Security"
+      },
+      {
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:api-specification",
+        "label": "API Specification"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "id": "urn:ngm:class:protocol-specification",
+        "label": "Protocol Specification"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-source-ai-definition",
+        "label": "Open Source AI Definition"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:free-standards-group",
+        "label": "Free Standards Group"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development-labs",
+        "label": "Open Source Development Labs"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:standardization-bodies",
+        "label": "Standardization Bodies"
+      },
+      {
+        "id": "urn:ngm:class:certification-scheme",
+        "label": "Certification Scheme"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance Institution"
+      },
+      {
+        "id": "urn:ngm:class:industry-consortium",
+        "label": "Industry Consortium"
+      },
+      {
+        "id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

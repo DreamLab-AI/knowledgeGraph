@@ -56,6 +56,324 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:digital-content",
+      "label": "Digital Content",
+      "slug": "digital-content"
+    },
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets",
+      "slug": "sc-content-and-assets"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:editorial-workflow",
+        "label": "Editorial Workflow"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:storage-systems",
+        "label": "Storage"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audience-engagement",
+        "label": "Audience Engagement"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      },
+      {
+        "id": "urn:ngm:class:social-media-platform-infrastructure",
+        "label": "Social Media Platform Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:encoding",
+        "label": "Encoding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:content-curation",
+        "label": "Content Curation"
+      },
+      {
+        "id": "urn:ngm:class:user-generated-content",
+        "label": "User-Generated Content"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:brand-identity",
+        "label": "Brand Identity"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "id": "urn:ngm:class:content-strategy",
+        "label": "Content Strategy"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:etsi-domain-creative-media",
+        "label": "ETSI Domain: Creative Media"
+      },
+      {
+        "id": "urn:ngm:class:generative-content",
+        "label": "Generative Content"
+      },
+      {
+        "id": "urn:ngm:class:media-production",
+        "label": "Media Production"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

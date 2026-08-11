@@ -29,6 +29,250 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:catastrophic-risk-assessment",
+      "label": "Catastrophic Risk Assessment",
+      "slug": "catastrophic-risk-assessment"
+    },
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety",
+      "slug": "ai-safety"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:engineered-pathogen-risk",
+        "label": "Engineered Pathogen Risk"
+      },
+      {
+        "id": "urn:ngm:class:existential-ai-risk",
+        "label": "Existential AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:nuclear-risk",
+        "label": "Nuclear Risk"
+      },
+      {
+        "id": "urn:ngm:class:pandemic-risk",
+        "label": "Pandemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:moral-philosophy",
+        "label": "Moral Philosophy"
+      },
+      {
+        "id": "urn:ngm:class:probability-estimation",
+        "label": "Probability Estimation"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Safety Policy"
+      },
+      {
+        "id": "urn:ngm:class:catastrophic-risk-reduction",
+        "label": "Catastrophic Risk Reduction"
+      },
+      {
+        "id": "urn:ngm:class:pandemic-preparedness",
+        "label": "Pandemic Preparedness"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:longtermism",
+        "label": "Longtermism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-capabilities-research",
+        "label": "AI Capabilities Research"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      },
+      {
+        "id": "urn:ngm:class:future-of-humanity-institute",
+        "label": "Future of Humanity Institute"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Cyber Security"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Biosafety Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:risk-analysis",
+        "label": "Risk Analysis"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:centre-for-the-study-of-existential-risk",
+        "label": "Centre for the Study of Existential Risk"
+      },
+      {
+        "id": "urn:ngm:class:future-of-humanity-institute",
+        "label": "Future of Humanity Institute"
+      },
+      {
+        "id": "urn:ngm:class:longtermism",
+        "label": "Longtermism"
+      },
+      {
+        "id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

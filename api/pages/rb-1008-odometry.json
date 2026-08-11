@@ -64,6 +64,316 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:state-estimation",
+      "label": "State Estimation",
+      "slug": "state-estimation"
+    },
+    {
+      "id": "urn:ngm:class:probabilistic-inference",
+      "label": "Probabilistic Inference",
+      "slug": "probabilistic-inference"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:wheel-odometry",
+        "label": "Wheel Odometry"
+      },
+      {
+        "id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:factor-graph",
+        "label": "Factor Graph"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:belief-propagation",
+        "label": "Belief Propagation"
+      },
+      {
+        "id": "urn:ngm:class:expectation-propagation",
+        "label": "Expectation Propagation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:kinematic-model",
+        "label": "KinematicModel"
+      },
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Motion Sensors"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Models"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:system-dynamics",
+        "label": "System Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:likelihood-function",
+        "label": "Likelihood Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:rb-1013-localization",
+        "label": "RB 1013 localization"
+      },
+      {
+        "id": "urn:ngm:class:robot-pose",
+        "label": "Robot Pose"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-decision-theory",
+        "label": "Bayesian Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:predictive-modelling",
+        "label": "Predictive Modelling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      },
+      {
+        "id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes Theorem"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS Positioning"
+      },
+      {
+        "id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:frequentist-inference",
+        "label": "Frequentist Inference"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Visual Sensors"
+      },
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "Gps"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:wheel-odometry",
+        "label": "Wheel Odometry"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:latent-variable-model",
+        "label": "Latent Variable Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

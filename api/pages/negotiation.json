@@ -102,6 +102,302 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism",
+      "slug": "dispute-resolution-mechanism"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:legal-framework",
+      "label": "Legal Framework",
+      "slug": "legal-framework"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:arbitration-process",
+        "label": "Arbitration Process"
+      },
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution Protocol"
+      },
+      {
+        "id": "urn:ngm:class:e-contract-arbitration",
+        "label": "E-Contract Arbitration"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property Rights Framework"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:trust-model",
+        "label": "Trust Model"
+      },
+      {
+        "id": "urn:ngm:class:evidence-collection",
+        "label": "Evidence Collection"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance Programme"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-officer",
+        "label": "Data Protection Officer"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:community-governance-model",
+        "label": "Community Governance Model"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:trustless-coordination",
+        "label": "Trustless Coordination"
+      },
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "id": "urn:ngm:class:fair-adjudication",
+        "label": "Fair Adjudication"
+      },
+      {
+        "id": "urn:ngm:class:participant-protection",
+        "label": "Participant Protection"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:jurisdiction",
+        "label": "Jurisdiction"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Data Protection by Design"
+      },
+      {
+        "id": "urn:ngm:class:privacy-requirements",
+        "label": "Privacy Requirements"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security Obligations"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-policy",
+        "label": "Cybersecurity Policy"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-coordination",
+        "label": "Smart Contract Coordination"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:organisational-resilience",
+        "label": "Organisational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:arbitration-decision-engine",
+        "label": "Arbitration Decision Engine"
+      },
+      {
+        "id": "urn:ngm:class:arbitration-process",
+        "label": "Arbitration Process"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:mediation",
+        "label": "Mediation"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:infra-software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

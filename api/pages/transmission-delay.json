@@ -53,6 +53,222 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:processing-delay",
+        "label": "Processing Delay"
+      },
+      {
+        "id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
+      },
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-participation",
+        "label": "Network Participation"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Transparent Audit Trails"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-governance",
+        "label": "Autonomous Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
+      },
+      {
+        "id": "urn:ngm:class:distributed-trust",
+        "label": "Distributed Trust"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:round-trip-time",
+        "label": "Round-Trip Time"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:block-propagation-time",
+        "label": "Block Propagation Time"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-performance-metrics",
+        "label": "Network Performance"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:sub-millisecond-latency",
+        "label": "Sub-Millisecond Latency"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "network-latency",

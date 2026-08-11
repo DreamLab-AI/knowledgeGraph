@@ -93,6 +93,281 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolver"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Cryptographic Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
+      },
+      {
+        "id": "urn:ngm:class:pseudonymity",
+        "label": "Pseudonymity"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:anon-creds",
+        "label": "AnonCreds"
+      },
+      {
+        "id": "urn:ngm:class:bbs-signatures",
+        "label": "BBS Plus Signatures"
+      },
+      {
+        "id": "urn:ngm:class:didcomm",
+        "label": "DIDComm"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-18013-5-m-dl",
+        "label": "ISO 18013-5 mDL"
+      },
+      {
+        "id": "urn:ngm:class:open-id4-vci",
+        "label": "OpenID4VCI"
+      },
+      {
+        "id": "urn:ngm:class:open-id4-vp",
+        "label": "OpenID4VP"
+      },
+      {
+        "id": "urn:ngm:class:sd-jwt-vc",
+        "label": "SD-JWT VC"
+      },
+      {
+        "id": "urn:ngm:class:siopv2",
+        "label": "SIOPv2"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cbor",
+        "label": "CBOR"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-accumulator",
+        "label": "Cryptographic Accumulator"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "id": "urn:ngm:class:educational-credentials",
+        "label": "Educational Credentials"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:oasis",
+        "label": "OASIS"
+      },
+      {
+        "id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust Over IP Foundation"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:bluesky-at-protocol",
+        "label": "Bluesky AT Protocol"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-personhood",
+        "label": "Proof of Personhood"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "adr-013",

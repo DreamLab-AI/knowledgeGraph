@@ -126,6 +126,235 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:graph-theory",
+      "label": "Graph Theory",
+      "slug": "graph-theory"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Traversal"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Shortest Path"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:combinatorics",
+        "label": "Combinatorics"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:influence-maximisation",
+        "label": "Influence Maximisation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      },
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:euclidean-geometry",
+        "label": "Euclidean Geometry"
+      },
+      {
+        "id": "urn:ngm:class:relational-algebra",
+        "label": "Relational Algebra"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:epidemiological-modelling",
+        "label": "Epidemiological Modelling"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-resilience",
+        "label": "Supply Chain Resilience"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:matrix-factorisation",
+        "label": "Matrix Factorisation"
+      },
+      {
+        "id": "urn:ngm:class:pagerank",
+        "label": "PageRank"
+      },
+      {
+        "id": "urn:ngm:class:social-network-graph",
+        "label": "Social Network Graph"
+      },
+      {
+        "id": "urn:ngm:class:adjacency-matrix",
+        "label": "Adjacency Matrix"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:topology",
+        "label": "Topology"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

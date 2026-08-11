@@ -177,6 +177,366 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:coordination-protocol",
+      "label": "Coordination Protocol",
+      "slug": "coordination-protocol"
+    },
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol",
+      "slug": "communication-protocol"
+    },
+    {
+      "id": "urn:ngm:class:human-robot-interaction",
+      "label": "Human Robot Interaction",
+      "slug": "human-robot-interaction"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "id": "urn:ngm:class:addressing-scheme",
+        "label": "Addressing Scheme"
+      },
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      },
+      {
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      },
+      {
+        "id": "urn:ngm:class:message-format",
+        "label": "Message Format"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:trust-management",
+        "label": "Trust Management"
+      },
+      {
+        "id": "urn:ngm:class:agent-identity",
+        "label": "Agent Identity"
+      },
+      {
+        "id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
+      {
+        "id": "urn:ngm:class:message-format",
+        "label": "Message Schema"
+      },
+      {
+        "id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:negotiation",
+        "label": "Negotiation"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:distributed-transaction",
+        "label": "Distributed Transaction"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "Replicated State Machine"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:concurrent-programming",
+        "label": "Concurrent Programming"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:formal-specification",
+        "label": "Formal Specification"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA ACL"
+      },
+      {
+        "id": "urn:ngm:class:kqml",
+        "label": "KQML"
+      },
+      {
+        "id": "urn:ngm:class:agent2-agent-protocol-google-2025",
+        "label": "Agent2Agent Protocol (Google 2025)"
+      },
+      {
+        "id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "id": "urn:ngm:class:speech-act-theory",
+        "label": "Speech Act Theory"
+      },
+      {
+        "id": "urn:ngm:class:communication-infrastructure",
+        "label": "Communication Systems"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:serialisation-format",
+        "label": "Data Serialisation Format"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:llm-application-framework",
+        "label": "LLM Agent Framework"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-rpc-2-0",
+        "label": "JSON-RPC 2.0"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:speech-act-theory",
+        "label": "Speech Act Theory"
+      },
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      },
+      {
+        "id": "urn:ngm:class:error-handling",
+        "label": "Error Handling"
+      },
+      {
+        "id": "urn:ngm:class:negotiation",
+        "label": "Negotiation"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fipa",
+        "label": "FIPA"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bdi-architecture",
+        "label": "BDI Architecture"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:kqml",
+        "label": "KQML"
+      },
+      {
+        "id": "urn:ngm:class:agent-network-protocol",
+        "label": "Agent Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "agent-to-agent-protocol",

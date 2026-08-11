@@ -29,6 +29,305 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:computational-intelligence",
+      "label": "Computational Intelligence",
+      "slug": "computational-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:dynamical-systems",
+      "label": "Dynamical Systems",
+      "slug": "dynamical-systems"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:adaptation-law",
+        "label": "Adaptation Law"
+      },
+      {
+        "id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "id": "urn:ngm:class:receding-horizon",
+        "label": "Receding Horizon"
+      },
+      {
+        "id": "urn:ngm:class:reference-model",
+        "label": "Reference Model"
+      },
+      {
+        "id": "urn:ngm:class:reward-signal",
+        "label": "Reward Signal"
+      },
+      {
+        "id": "urn:ngm:class:safety-constraint",
+        "label": "Safety Constraint"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuator-model",
+        "label": "Actuator Model"
+      },
+      {
+        "id": "urn:ngm:class:constraint-specification",
+        "label": "Constraint Specification"
+      },
+      {
+        "id": "urn:ngm:class:plant-model",
+        "label": "Plant Model"
+      },
+      {
+        "id": "urn:ngm:class:sensor-feedback",
+        "label": "Sensor Feedback"
+      },
+      {
+        "id": "urn:ngm:class:stability-analysis",
+        "label": "Stability Analysis"
+      },
+      {
+        "id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:h-infinity-control",
+        "label": "H-Infinity Control"
+      },
+      {
+        "id": "urn:ngm:class:iterative-learning-control",
+        "label": "Iterative Learning Control"
+      },
+      {
+        "id": "urn:ngm:class:linear-quadratic-regulator",
+        "label": "Linear Quadratic Regulator"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:sliding-mode-control",
+        "label": "Sliding Mode Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardware-in-the-loop-testing",
+        "label": "Hardware-in-the-Loop Testing"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aerospace",
+        "label": "Aerospace"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C"
+      },
+      {
+        "id": "urn:ngm:class:iec-61511",
+        "label": "IEC 61511"
+      },
+      {
+        "id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "id": "urn:ngm:class:ifac",
+        "label": "IFAC"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:dynamics",
+        "label": "Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:safety-critical-systems",
+        "label": "Safety-Critical Systems"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

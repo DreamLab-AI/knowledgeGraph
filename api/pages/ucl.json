@@ -34,6 +34,194 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "UCL Centre for Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "UCL Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:ucl-gatsby-computational-neuroscience-unit",
+        "label": "Gatsby Computational Neuroscience Unit"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:computational-neuroscience",
+        "label": "Computational Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:imperial-college-london",
+        "label": "Imperial College London"
+      },
+      {
+        "id": "urn:ngm:class:king-s-college-london",
+        "label": "King's College London"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:university-of-london",
+        "label": "University of London"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-mind",
+        "label": "DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:imperial-college-london",
+        "label": "Imperial College London"
+      },
+      {
+        "id": "urn:ngm:class:research-university",
+        "label": "Research University"
+      },
+      {
+        "id": "urn:ngm:class:uk-research-and-innovation",
+        "label": "UK Research and Innovation"
+      },
+      {
+        "id": "urn:ngm:class:university-of-cambridge",
+        "label": "University of Cambridge"
+      },
+      {
+        "id": "urn:ngm:class:university-of-oxford",
+        "label": "University of Oxford"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "machine-learning",

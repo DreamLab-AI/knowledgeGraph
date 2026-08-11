@@ -38,6 +38,324 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:proof-based-consensus",
+      "label": "Proof-Based Consensus",
+      "slug": "proof-based-consensus"
+    },
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus",
+      "slug": "bc-protocol-and-consensus"
+    },
+    {
+      "id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism",
+      "slug": "consensus-mechanism"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      },
+      {
+        "id": "urn:ngm:class:liquid-proof-of-stake",
+        "label": "Liquid Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:slashing-condition",
+        "label": "Slashing Condition"
+      },
+      {
+        "id": "urn:ngm:class:staking-reward",
+        "label": "Staking Reward"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:nominated-proof-of-stake",
+        "label": "Nominated Proof of Stake"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:clock-synchronization",
+        "label": "Synchronised Clock"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:validator-registry",
+        "label": "Validator Registry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:avalanche",
+        "label": "Avalanche"
+      },
+      {
+        "id": "urn:ngm:class:hedera-hashgraph",
+        "label": "Hashgraph"
+      },
+      {
+        "id": "urn:ngm:class:hot-stuff",
+        "label": "HotStuff"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof of Authority"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-history",
+        "label": "Proof of History"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof of Authority"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-history",
+        "label": "Proof of History"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:quorum-intersection",
+        "label": "Quorum Intersection"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer 2 Rollups"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin BIPs"
+      },
+      {
+        "id": "urn:ngm:class:cosmos",
+        "label": "Cosmos ICS Standards"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum EIPs"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF RFC 7574 BitTorrent-like Gossip"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307-blockchain-standards",
+        "label": "ISO TC 307 Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:nist-post-quantum-cryptography",
+        "label": "NIST FIPS 204 Post-Quantum"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-consensus",
+        "label": "Sustainable Consensus"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

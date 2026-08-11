@@ -85,6 +85,342 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:rasterization",
+      "label": "Rasterization",
+      "slug": "rasterization"
+    },
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering",
+      "slug": "sc-display-and-rendering"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:acceleration-structure",
+        "label": "Acceleration Structure"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "id": "urn:ngm:class:g-buffer",
+        "label": "G-Buffer"
+      },
+      {
+        "id": "urn:ngm:class:geometry-shader",
+        "label": "Geometry Shader"
+      },
+      {
+        "id": "urn:ngm:class:pixel-shader",
+        "label": "Fragment Shader"
+      },
+      {
+        "id": "urn:ngm:class:render-target",
+        "label": "Render Target"
+      },
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-resources",
+        "label": "GPU Resources"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "id": "urn:ngm:class:index-buffer",
+        "label": "Index Buffer"
+      },
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:shader-compilation",
+        "label": "Shader Compilation"
+      },
+      {
+        "id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:post-processing",
+        "label": "Post Processing"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:deferred-rendering",
+        "label": "Deferred Rendering"
+      },
+      {
+        "id": "urn:ngm:class:forward-rendering",
+        "label": "Forward Rendering"
+      },
+      {
+        "id": "urn:ngm:class:gpu-driven-rendering",
+        "label": "GPU-Driven Rendering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dlss",
+        "label": "DLSS"
+      },
+      {
+        "id": "urn:ngm:class:glsl",
+        "label": "GLSL"
+      },
+      {
+        "id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
+      },
+      {
+        "id": "urn:ngm:class:metal",
+        "label": "Metal"
+      },
+      {
+        "id": "urn:ngm:class:spir-v",
+        "label": "SPIR-V"
+      },
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      },
+      {
+        "id": "urn:ngm:class:wgsl",
+        "label": "WGSL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Video Game Development"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:scientific-visualisation",
+        "label": "Scientific Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Film Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:post-processing",
+        "label": "Post Processing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-754",
+        "label": "IEEE 754"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:open-gl",
+        "label": "OpenGL ARB"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

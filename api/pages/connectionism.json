@@ -97,6 +97,195 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:interdisciplinary-science",
+      "label": "Interdisciplinary Science",
+      "slug": "interdisciplinary-science"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-neuroscience",
+        "label": "Cognitive Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-psychology",
+        "label": "Cognitive Psychology"
+      },
+      {
+        "id": "urn:ngm:class:computational-linguistics",
+        "label": "Computational Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:psychology",
+        "label": "Psychology"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-systems",
+        "label": "Intelligent Tutoring Systems"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neurosymbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      },
+      {
+        "id": "urn:ngm:class:neuroimaging",
+        "label": "Neuroimaging"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:consciousness",
+        "label": "Consciousness"
+      },
+      {
+        "id": "urn:ngm:class:embodied-cognition",
+        "label": "Embodied Cognition"
+      },
+      {
+        "id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
+      },
+      {
+        "id": "urn:ngm:class:situated-cognition",
+        "label": "Situated Cognition"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

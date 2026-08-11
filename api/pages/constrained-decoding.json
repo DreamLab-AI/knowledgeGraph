@@ -52,6 +52,262 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:language-modeling",
+      "label": "Language Modeling",
+      "slug": "language-modeling"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing",
+      "slug": "natural-language-processing"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autoregressive-generation",
+        "label": "Autoregressive Generation"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:causal-language-modelling",
+        "label": "Autoregressive Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:text-summarisation",
+        "label": "Summarisation"
+      },
+      {
+        "id": "urn:ngm:class:translation",
+        "label": "Translation"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-systems",
+        "label": "Dialogue Systems"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:state-space-models",
+        "label": "State Space Models"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Abilities"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "text-generation",

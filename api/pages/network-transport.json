@@ -101,6 +101,246 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:connection-management",
+        "label": "Connection Management"
+      },
+      {
+        "id": "urn:ngm:class:error-detection-and-correction",
+        "label": "Error Detection and Correction"
+      },
+      {
+        "id": "urn:ngm:class:segmentation-and-reassembly",
+        "label": "Segmentation and Reassembly"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ip-addressing",
+        "label": "IP Addressing"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:integration-layer",
+        "label": "Integration Layer"
+      },
+      {
+        "id": "urn:ngm:class:protocol-layer",
+        "label": "Protocol Layer"
+      },
+      {
+        "id": "urn:ngm:class:session-layer",
+        "label": "Session Layer"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "QUIC Protocol"
+      },
+      {
+        "id": "urn:ngm:class:stream-control-transmission-protocol",
+        "label": "Stream Control Transmission Protocol"
+      },
+      {
+        "id": "urn:ngm:class:transmission-control-protocol",
+        "label": "Transmission Control Protocol"
+      },
+      {
+        "id": "urn:ngm:class:user-datagram-protocol",
+        "label": "User Datagram Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-link-layer",
+        "label": "Data Link Layer"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:port-number",
+        "label": "Port Number"
+      },
+      {
+        "id": "urn:ngm:class:socket-api",
+        "label": "Socket API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF (Internet Engineering Task Force)"
+      },
+      {
+        "id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:end-to-end-principle",
+        "label": "End-to-End Principle"
+      },
+      {
+        "id": "urn:ngm:class:multiplexing",
+        "label": "Multiplexing"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:infra-security-and-identity",
+        "label": "Security and Identity"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

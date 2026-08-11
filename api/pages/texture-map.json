@@ -122,6 +122,362 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:3d-modelling",
+      "label": "3D Modelling",
+      "slug": "3d-modelling"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:3-d-development",
+      "label": "3D Development",
+      "slug": "3-d-development"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics",
+      "slug": "computer-graphics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering",
+      "slug": "sc-display-and-rendering"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:6-do-f-tracking",
+        "label": "6DoF Tracking"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:vertex-attribute",
+        "label": "Vertex Attribute"
+      },
+      {
+        "id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "id": "urn:ngm:class:geometry-processing",
+        "label": "Geometry Processing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      },
+      {
+        "id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:immersive-computing",
+        "label": "Immersive Computing"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:normal-map",
+        "label": "Normal Map"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:asset-creation",
+        "label": "Asset Creation"
+      },
+      {
+        "id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modelling"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-rig",
+        "label": "Skeletal Rig"
+      },
+      {
+        "id": "urn:ngm:class:computer-aided-design",
+        "label": "Computer-Aided Design"
+      },
+      {
+        "id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:texture-atlas",
+        "label": "Texture Atlas"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:obj-format",
+        "label": "OBJ Format"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:siggraph",
+        "label": "SIGGRAPH"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modelling"
+      },
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "id": "urn:ngm:class:fbx",
+        "label": "FBX"
+      },
+      {
+        "id": "urn:ngm:class:skinning",
+        "label": "Skinning"
+      },
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

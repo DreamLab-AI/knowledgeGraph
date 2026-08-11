@@ -145,6 +145,334 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-architecture",
+        "label": "Differentiable Architecture"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:training-data-distribution",
+        "label": "Training Data Distribution"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-generation",
+        "label": "3D Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-editing",
+        "label": "Image Editing"
+      },
+      {
+        "id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:denoising-score-matching",
+        "label": "Denoising Score Matching"
+      },
+      {
+        "id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "id": "urn:ngm:class:rectified-flow",
+        "label": "Rectified Flow"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:discriminative-model",
+        "label": "Discriminative Model"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:ngm:class:clip-encoder",
+        "label": "CLIP Encoder"
+      },
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:game-asset-generation",
+        "label": "Game Asset Generation"
+      },
+      {
+        "id": "urn:ngm:class:medical-image-synthesis",
+        "label": "Medical Image Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      },
+      {
+        "id": "urn:ngm:class:world-models",
+        "label": "World Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:fid-benchmark-protocol",
+        "label": "FID Benchmark Protocol"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:text-to-video-generation",
+        "label": "Text-to-Video"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

@@ -39,6 +39,255 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:custody",
+      "label": "Custody",
+      "slug": "custody"
+    },
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:key-management-system",
+        "label": "Key Management Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:institutional-investment",
+        "label": "Institutional Investment"
+      },
+      {
+        "id": "urn:ngm:class:spot-bitcoin-etf",
+        "label": "Spot Bitcoin ETF"
+      },
+      {
+        "id": "urn:ngm:class:asset-transfer",
+        "label": "Asset Transfer"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:transaction-signing",
+        "label": "Transaction Signing"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:fiduciary-duty",
+        "label": "Fiduciary Duty"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-pair",
+        "label": "Cryptographic Key Pair"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:segregation-of-duties",
+        "label": "Segregation of Duties"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:counterparty-risk",
+        "label": "Counterparty Risk"
+      },
+      {
+        "id": "urn:ngm:class:non-custodial-wallet",
+        "label": "Non-Custodial Wallet"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:financial-asset-custody",
+        "label": "Financial Asset Custody"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:custody-infrastructure",
+        "label": "Custody Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      },
+      {
+        "id": "urn:ngm:class:asset-recovery",
+        "label": "Asset Recovery"
+      },
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "id": "urn:ngm:class:hot-wallet",
+        "label": "Hot Wallet"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "key-management",

@@ -77,6 +77,204 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:fluid-power-device",
+      "label": "Fluid Power Device",
+      "slug": "fluid-power-device"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      },
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:directional-control-valves",
+        "label": "Directional Control Valves"
+      },
+      {
+        "id": "urn:ngm:class:pressure-regulation",
+        "label": "Pressure Regulation"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:locomotion",
+        "label": "Soft Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:rehabilitation-robotics",
+        "label": "Rehabilitation Robotics"
+      },
+      {
+        "id": "urn:ngm:class:robotic-grasping",
+        "label": "Compliant Grasping"
+      },
+      {
+        "id": "urn:ngm:class:safe-human-robot-interaction",
+        "label": "Safe Physical Interaction"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO 15552 Standard"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:proportional-control",
+        "label": "Proportional Pressure Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton Design"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:medical-robotics",
+        "label": "Medical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:pick-and-place",
+        "label": "Pick and Place Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:emc-standard",
+        "label": "IEC 61000 EMC Standards for Control Valves"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO 15552"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:variable-stiffness-actuator",
+        "label": "Variable Stiffness Actuator"
+      },
+      {
+        "id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:proportional-valve",
+        "label": "Proportional Valve"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "pneumatic-actuator",

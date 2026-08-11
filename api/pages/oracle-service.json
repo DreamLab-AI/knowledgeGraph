@@ -39,6 +39,265 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain-oracle",
+      "label": "Blockchain Oracle",
+      "slug": "blockchain-oracle"
+    },
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:twap-oracle",
+        "label": "TWAP Oracle"
+      },
+      {
+        "id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation Layer"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:oracle-node",
+        "label": "Oracle Node"
+      },
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Collateralised Lending"
+      },
+      {
+        "id": "urn:ngm:class:liquidation-mechanism",
+        "label": "Liquidation Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:perpetual-futures",
+        "label": "Perpetual Futures"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-asset",
+        "label": "Synthetic Asset"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:parametric-insurance",
+        "label": "Parametric Insurance"
+      },
+      {
+        "id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Markets"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Cryptoeconomic Staking"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:external-data-source",
+        "label": "External Data Source"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Spot Price"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-data-feed",
+        "label": "On-Chain Data Feed"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Centralized Oracle"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-aggregation",
+        "label": "Multi-Source Data Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:defi-infrastructure",
+        "label": "DeFi Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      },
+      {
+        "id": "urn:ngm:class:oracle-extractable-value",
+        "label": "Oracle Extractable Value"
+      },
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "smart-contract",

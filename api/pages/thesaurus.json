@@ -99,6 +99,380 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:information-architecture",
+      "label": "Information Architecture",
+      "slug": "information-architecture"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-organization-system",
+      "label": "Knowledge Organization System",
+      "slug": "knowledge-organization-system"
+    },
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure",
+      "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
+        "label": "Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:process",
+        "label": "Maintenance Process"
+      },
+      {
+        "id": "urn:ngm:class:content-strategy",
+        "label": "Content Strategy"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:networking-fabric",
+        "label": "Networking Fabric"
+      },
+      {
+        "id": "urn:ngm:class:cooling-system",
+        "label": "Cooling Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "id": "urn:ngm:class:faceted-classification",
+        "label": "Faceted Classification"
+      },
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-modelling",
+        "label": "Data Modelling"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:skos-vocabulary",
+        "label": "SKOS"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:folksonomy",
+        "label": "Folksonomy"
+      },
+      {
+        "id": "urn:ngm:class:free-text-search",
+        "label": "Free Text Search"
+      },
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:general-purpose-computing",
+        "label": "General-Purpose Computing"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
+        "label": "Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:faceted-classification",
+        "label": "Faceted Classification"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "Accelerated Computing"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-25964",
+        "label": "ISO 25964 Thesaurus Standard"
+      },
+      {
+        "id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-organization-system",
+        "label": "Knowledge Organization System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:content-management-system",
+        "label": "Content Management System"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-organization",
+        "label": "Knowledge Organization"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:empirical-experimental-design-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

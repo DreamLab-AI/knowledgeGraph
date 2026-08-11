@@ -77,6 +77,300 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:digital-platform",
+      "label": "Digital Platform",
+      "slug": "digital-platform"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:network-effects",
+        "label": "Network Effect"
+      },
+      {
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-ecosystem",
+        "label": "Digital Asset Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality-platform",
+        "label": "Mixed Reality Platform"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:creator-monetization",
+        "label": "Creator Monetization"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:algorithmic-recommendation",
+        "label": "Algorithmic Recommendation"
+      },
+      {
+        "id": "urn:ngm:class:data-monetisation",
+        "label": "Data Monetisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:token-economy",
+        "label": "Tokenised Economy"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:platform-layer",
+        "label": "Platform Layer"
+      },
+      {
+        "id": "urn:ngm:class:platform-service",
+        "label": "Platform Service"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:marketplace-integration",
+        "label": "Marketplace Integration"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:antitrust-regulation",
+        "label": "Antitrust Regulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-markets-act",
+        "label": "Digital Markets Act"
+      },
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:computing-platform",
+        "label": "Computing Platform"
+      },
+      {
+        "id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      },
+      {
+        "id": "urn:ngm:class:sc-display-and-rendering",
+        "label": "Display and Rendering"
+      },
+      {
+        "id": "urn:ngm:class:sc-interaction",
+        "label": "Interaction Technology"
+      },
+      {
+        "id": "urn:ngm:class:sc-standards-and-interop",
+        "label": "Standards and Interoperability"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

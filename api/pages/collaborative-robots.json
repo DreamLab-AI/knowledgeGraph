@@ -42,6 +42,306 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:robotics-application",
+      "label": "Robotics Application",
+      "slug": "robotics-application"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effectors"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Controllers"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:joint-encoder",
+        "label": "Joint Encoder"
+      },
+      {
+        "id": "urn:ngm:class:kinematic-chain",
+        "label": "Kinematic Chain"
+      },
+      {
+        "id": "urn:ngm:class:robot-controller",
+        "label": "Robot Controller"
+      },
+      {
+        "id": "urn:ngm:class:safety-system",
+        "label": "Safety System"
+      },
+      {
+        "id": "urn:ngm:class:servo-drive",
+        "label": "Servo Drive"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:calibration-system",
+        "label": "Calibration System"
+      },
+      {
+        "id": "urn:ngm:class:industrial-network",
+        "label": "Industrial Network"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robots"
+      },
+      {
+        "id": "urn:ngm:class:flexible-manufacturing",
+        "label": "Flexible Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:mass-customisation",
+        "label": "Mass Customisation"
+      },
+      {
+        "id": "urn:ngm:class:quality-inspection",
+        "label": "Quality Inspection"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Engineering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:communication-protocols",
+        "label": "Industrial Communication Protocols"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:service-robotics",
+        "label": "Service Robotics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:ether-cat",
+        "label": "EtherCAT"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT Protocol"
+      },
+      {
+        "id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      },
+      {
+        "id": "urn:ngm:class:profinet",
+        "label": "PROFINET"
+      },
+      {
+        "id": "urn:ngm:class:ros-industrial",
+        "label": "ROS-Industrial"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-automation",
+        "label": "Supply Chain Automation"
+      },
+      {
+        "id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iso-9283",
+        "label": "ISO 9283"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robots"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation-systems",
+        "label": "Teleoperation Systems"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "sensors",

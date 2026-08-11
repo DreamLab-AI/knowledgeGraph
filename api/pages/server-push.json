@@ -29,6 +29,345 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:http",
+      "label": "HTTP",
+      "slug": "http"
+    },
+    {
+      "id": "urn:ngm:class:application-layer",
+      "label": "Application Layer",
+      "slug": "application-layer"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:application-api",
+        "label": "Application API"
+      },
+      {
+        "id": "urn:ngm:class:business-logic-layer",
+        "label": "Business Logic Layer"
+      },
+      {
+        "id": "urn:ngm:class:service-interface",
+        "label": "Service Interface"
+      },
+      {
+        "id": "urn:ngm:class:user-interface-framework",
+        "label": "User Interface Framework"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality-platform",
+        "label": "Mixed Reality Platform"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tcp",
+        "label": "TCP"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      },
+      {
+        "id": "urn:ngm:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:restful-api",
+        "label": "RESTful API"
+      },
+      {
+        "id": "urn:ngm:class:web-browser",
+        "label": "Web Browser"
+      },
+      {
+        "id": "urn:ngm:class:business-services",
+        "label": "Business Services"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:domain-specific-applications",
+        "label": "Domain-Specific Applications"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:tls-handshake",
+        "label": "TLS Handshake"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:request-response-pattern",
+        "label": "Request-Response Pattern"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      },
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multiplexing",
+        "label": "Multiplexing"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:http-header",
+        "label": "HTTP Header"
+      },
+      {
+        "id": "urn:ngm:class:http-status-code",
+        "label": "HTTP Status Code"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:graph-ql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-architecture-stack",
+        "label": "Metaverse Architecture Stack"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-stack",
+        "label": "Metaverse Stack"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocols",
+        "label": "Communication Protocols"
+      },
+      {
+        "id": "urn:ngm:class:http2",
+        "label": "HTTP/2"
+      },
+      {
+        "id": "urn:ngm:class:http3",
+        "label": "HTTP/3"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

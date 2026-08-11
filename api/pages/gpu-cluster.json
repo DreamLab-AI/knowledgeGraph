@@ -43,6 +43,308 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:hardware-acceleration",
+      "label": "Hardware Acceleration",
+      "slug": "hardware-acceleration"
+    },
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering",
+      "slug": "sc-display-and-rendering"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing Core"
+      },
+      {
+        "id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      },
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      },
+      {
+        "id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
+      },
+      {
+        "id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High Bandwidth Memory"
+      },
+      {
+        "id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Real-Time Ray Tracing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cpu-computing",
+        "label": "CPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field-Programmable Gate Array"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:cpu-compute",
+        "label": "CPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Triton Compiler"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      },
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      },
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cloud-rendering",
+        "label": "Cloud Rendering"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:nvlink",
+        "label": "NVLink"
+      },
+      {
+        "id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency Reduction"
+      },
+      {
+        "id": "urn:ngm:class:variable-rate-shading",
+        "label": "Variable Rate Shading"
+      },
+      {
+        "id": "urn:ngm:class:ai-upscaling-and-super-resolution",
+        "label": "AI Upscaling and Super-Resolution"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "gpu",

@@ -126,6 +126,310 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:data-format",
+      "label": "Data Format",
+      "slug": "data-format"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management (Infrastructure)",
+      "slug": "infra-data-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:encoding",
+        "label": "Encoding"
+      },
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      },
+      {
+        "id": "urn:ngm:class:serialisation",
+        "label": "Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:schema-evolution",
+        "label": "Schema Evolution"
+      },
+      {
+        "id": "urn:ngm:class:codec",
+        "label": "Codec"
+      },
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "id": "urn:ngm:class:data-exchange",
+        "label": "Data Exchange"
+      },
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Compression"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      },
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:apache-avro",
+        "label": "Apache Avro"
+      },
+      {
+        "id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      },
+      {
+        "id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON Data Interchange Format"
+      },
+      {
+        "id": "urn:ngm:class:messagepack",
+        "label": "MessagePack"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffer",
+        "label": "Protocol Buffer"
+      },
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      },
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

@@ -56,6 +56,300 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cradle-to-cradle-design",
+        "label": "Cradle-to-Cradle Design"
+      },
+      {
+        "id": "urn:ngm:class:deposit-return-scheme",
+        "label": "Deposit Return Scheme"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:extended-producer-responsibility",
+        "label": "Extended Producer Responsibility"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:material-flow-analysis",
+        "label": "Material Flow Analysis"
+      },
+      {
+        "id": "urn:ngm:class:reverse-logistics",
+        "label": "Reverse Logistics"
+      },
+      {
+        "id": "urn:ngm:class:waste-management",
+        "label": "Waste Hierarchy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Material Traceability"
+      },
+      {
+        "id": "urn:ngm:class:waste-management",
+        "label": "Waste Management"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-manufacturing",
+        "label": "Sustainable Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cradle-to-cradle-design",
+        "label": "Cradle-to-Cradle Design"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:ecodesign-for-sustainable-products-regulation",
+        "label": "Ecodesign For Sustainable Products Regulation"
+      },
+      {
+        "id": "urn:ngm:class:eu-green-deal",
+        "label": "EU Green Deal"
+      },
+      {
+        "id": "urn:ngm:class:extended-producer-responsibility",
+        "label": "Extended Producer Responsibility"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:economic-model",
+        "label": "Economic Model"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:ngm:class:io-t",
+        "label": "IoT"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:ve-chain",
+        "label": "VeChain"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:climate-change-mitigation",
+        "label": "Climate Change Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "SDGs"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ecodesign-for-sustainable-products-regulation",
+        "label": "Ecodesign For Sustainable Products Regulation"
+      },
+      {
+        "id": "urn:ngm:class:eu-battery-regulation",
+        "label": "EU Battery Regulation"
+      },
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "GS1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:gs1-epcis",
+        "label": "EPCIS"
+      },
+      {
+        "id": "urn:ngm:class:iso-14040",
+        "label": "ISO 14040"
+      },
+      {
+        "id": "urn:ngm:class:iso-14044",
+        "label": "ISO 14044"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "id": "urn:ngm:class:eu-green-deal",
+        "label": "EU Green Deal"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

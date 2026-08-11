@@ -48,6 +48,259 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-policy",
+      "label": "AI Policy",
+      "slug": "ai-policy"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:technological-sovereignty",
+        "label": "Technological Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-consultation",
+        "label": "Stakeholder Consultation"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "id": "urn:ngm:class:economic-development",
+        "label": "Economic Development"
+      },
+      {
+        "id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:economic-development",
+        "label": "Economic Development"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-policy",
+        "label": "Cybersecurity Policy"
+      },
+      {
+        "id": "urn:ngm:class:export-controls",
+        "label": "Semiconductor Export Controls"
+      },
+      {
+        "id": "urn:ngm:class:human-rights-law",
+        "label": "Human Rights Law"
+      },
+      {
+        "id": "urn:ngm:class:national-security",
+        "label": "National Security"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:digital-sovereignty",
+        "label": "Digital Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-policy",
+        "label": "Digital Policy"
+      },
+      {
+        "id": "urn:ngm:class:public-policy",
+        "label": "Public Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:competition-policy",
+        "label": "Competition Policy"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property"
+      },
+      {
+        "id": "urn:ngm:class:technology-policy",
+        "label": "Technology Policy"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "national-ai-strategy",

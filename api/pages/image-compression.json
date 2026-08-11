@@ -56,6 +56,188 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:entropy-coding",
+        "label": "Entropy Coding"
+      },
+      {
+        "id": "urn:ngm:class:lossless-compression",
+        "label": "Lossless Compression"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bandwidth-efficient-communication",
+        "label": "Bandwidth-Efficient Communication"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:full-precision-model",
+        "label": "Full-Precision Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-bandwidth-management",
+        "label": "Network Bandwidth Management"
+      },
+      {
+        "id": "urn:ngm:class:storage-optimisation",
+        "label": "Storage Optimisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:sparse-representation",
+        "label": "Sparse Representation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "Efficient Inference"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:tiny-ml",
+        "label": "TinyML"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-pruning-for-edge-deployment",
+        "label": "Model Pruning for Edge Deployment"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:weight-sharing",
+        "label": "Weight Sharing"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "data-compression",

@@ -102,6 +102,342 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:corporate-governance",
+      "label": "Corporate Governance",
+      "slug": "corporate-governance"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:audit-committee",
+        "label": "Audit Committee"
+      },
+      {
+        "id": "urn:ngm:class:board-of-directors",
+        "label": "Board of Directors"
+      },
+      {
+        "id": "urn:ngm:class:shareholder-rights",
+        "label": "Shareholder Rights"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:compliance-management",
+        "label": "Compliance Management"
+      },
+      {
+        "id": "urn:ngm:class:decision-rights",
+        "label": "Decision Rights"
+      },
+      {
+        "id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit and Assurance"
+      },
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:fiduciary-duty",
+        "label": "Fiduciary Duty"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:executive-sponsorship",
+        "label": "Executive Sponsorship"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investment"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:emission-factors",
+        "label": "Emission Factor Databases"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:csrd-compliance",
+        "label": "CSRD"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG Framework"
+      },
+      {
+        "id": "urn:ngm:class:global-reporting-initiative",
+        "label": "Global Reporting Initiative"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "id": "urn:ngm:class:governance-code",
+        "label": "Governance Code"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:decision-rights",
+        "label": "Decision Rights"
+      },
+      {
+        "id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-disclosure",
+        "label": "Voluntary Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-for-sustainability",
+        "label": "AI for Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:european-sustainability-reporting-standards",
+        "label": "European Sustainability Reporting Standards"
+      },
+      {
+        "id": "urn:ngm:class:global-reporting-initiative",
+        "label": "Global Reporting Initiative"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-s2",
+        "label": "IFRS S2"
+      },
+      {
+        "id": "urn:ngm:class:oecd-principles-of-corporate-governance",
+        "label": "OECD Principles of Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:uk-corporate-governance-code",
+        "label": "UK Corporate Governance Code"
+      },
+      {
+        "id": "urn:ngm:class:cobit",
+        "label": "COBIT"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      },
+      {
+        "id": "urn:ngm:class:itil",
+        "label": "ITIL"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:institutional-framework",
+        "label": "Institutional Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      },
+      {
+        "id": "urn:ngm:class:double-materiality",
+        "label": "Double Materiality"
+      },
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:executive-compensation",
+        "label": "Executive Compensation"
+      },
+      {
+        "id": "urn:ngm:class:stewardship",
+        "label": "Stewardship"
+      },
+      {
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

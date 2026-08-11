@@ -39,6 +39,189 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:content-addressing",
+      "label": "Content Addressing",
+      "slug": "content-addressing"
+    },
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      },
+      {
+        "id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-serialisation",
+        "label": "Deterministic Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:sha-256-hashing",
+        "label": "SHA-256 Hashing"
+      },
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:canonical-json",
+        "label": "Canonical JSON"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-encoding",
+        "label": "Deterministic Encoding"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "id": "urn:ngm:class:deduplication",
+        "label": "Deduplication"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:tamper-detection",
+        "label": "Tamper Detection"
+      },
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage Principles"
+      },
+      {
+        "id": "urn:ngm:class:ipfs-content-addressing",
+        "label": "IPFS Content Addressing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-file-storage",
+        "label": "Decentralised file storage"
+      },
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

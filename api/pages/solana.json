@@ -133,6 +133,327 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract",
+      "slug": "smart-contract"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:gas-metering",
+        "label": "Gas Metering"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:archive-node",
+        "label": "Archive Node"
+      },
+      {
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:transport-protocol",
+        "label": "Network Transport Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:casper-ffg",
+        "label": "Casper FFG"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "GossipSub"
+      },
+      {
+        "id": "urn:ngm:class:kademlia-dht",
+        "label": "Kademlia DHT"
+      },
+      {
+        "id": "urn:ngm:class:lmd-ghost",
+        "label": "LMD-GHOST"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-contract",
+        "label": "Traditional Contract"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "id": "urn:ngm:class:nat-traversal",
+        "label": "NAT Traversal"
+      },
+      {
+        "id": "urn:ngm:class:noise-protocol",
+        "label": "Noise Protocol"
+      },
+      {
+        "id": "urn:ngm:class:tls-encryption",
+        "label": "TLS Encryption"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:vyper",
+        "label": "Vyper"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer 2 Solutions"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "id": "urn:ngm:class:ieee-blockchain-initiative",
+        "label": "IEEE Blockchain Initiative"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
+        "id": "urn:ngm:class:eip-process",
+        "label": "EIP Process"
+      },
+      {
+        "id": "urn:ngm:class:erc-standards",
+        "label": "ERC Standards"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
+        "label": "Ethereum Foundation"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin",
+        "label": "OpenZeppelin"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-did-specification",
+        "label": "W3C DID Spec"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:eclipse-attack",
+        "label": "Eclipse Attack"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:fork",
+        "label": "Fork"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

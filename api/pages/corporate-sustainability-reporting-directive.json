@@ -106,6 +106,218 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation",
+      "slug": "bc-governance-and-regulation"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:climate-scenario-analysis",
+        "label": "Climate Scenario Analysis"
+      },
+      {
+        "id": "urn:ngm:class:ghg-inventory",
+        "label": "GHG Inventory"
+      },
+      {
+        "id": "urn:ngm:class:materiality-assessment",
+        "label": "Materiality Assessment"
+      },
+      {
+        "id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      },
+      {
+        "id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:xbrl",
+        "label": "XBRL Digital Tagging"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:board-level-oversight",
+        "label": "Board-Level Oversight"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Investor Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "EU Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol-corporate-standard",
+        "label": "GHG Protocol Corporate Standard"
+      },
+      {
+        "id": "urn:ngm:class:gri-standards",
+        "label": "GRI Standards"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-s1",
+        "label": "IFRS S1"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-s2",
+        "label": "IFRS S2"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD Recommendations"
+      },
+      {
+        "id": "urn:ngm:class:tnfd",
+        "label": "TNFD Recommendations"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-accounting-software",
+        "label": "Carbon Accounting Software"
+      },
+      {
+        "id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Scenario Modelling"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:xbrl",
+        "label": "XBRL Inline Reporting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:carbon-border-adjustment-mechanism",
+        "label": "Carbon Border Adjustment Mechanism"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "EU Taxonomy Regulation 2020/852"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol-corporate-standard",
+        "label": "GHG Protocol Corporate Standard"
+      },
+      {
+        "id": "urn:ngm:class:gri-standards",
+        "label": "GRI Universal Standards 2021"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-s1",
+        "label": "IFRS S1"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-s2",
+        "label": "IFRS S2"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "id": "urn:ngm:class:fca",
+        "label": "FCA"
+      },
+      {
+        "id": "urn:ngm:class:gri-standards",
+        "label": "GRI"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-foundation",
+        "label": "IFRS Foundation"
+      },
+      {
+        "id": "urn:ngm:class:issb",
+        "label": "ISSB"
+      },
+      {
+        "id": "urn:ngm:class:sbti",
+        "label": "SBTi"
+      },
+      {
+        "id": "urn:ngm:class:sec",
+        "label": "SEC"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

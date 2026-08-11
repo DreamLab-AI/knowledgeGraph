@@ -94,6 +94,343 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:numerical-methods",
+      "label": "Numerical Methods",
+      "slug": "numerical-methods"
+    },
+    {
+      "id": "urn:ngm:class:stochastic-processes",
+      "label": "Stochastic Processes",
+      "slug": "stochastic-processes"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory",
+      "slug": "probability-theory"
+    },
+    {
+      "id": "urn:ngm:class:measure-theory",
+      "label": "Measure Theory",
+      "slug": "measure-theory"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autoregressive-sampling",
+        "label": "Autoregressive Sampling"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:nested-sampling",
+        "label": "Nested Sampling"
+      },
+      {
+        "id": "urn:ngm:class:quasi-monte-carlo",
+        "label": "Quasi-Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:sequential-monte-carlo",
+        "label": "Sequential Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:convergence-criterion",
+        "label": "Convergence Criterion"
+      },
+      {
+        "id": "urn:ngm:class:proposal-distribution",
+        "label": "Proposal Distribution"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generator",
+        "label": "Random Number Generator"
+      },
+      {
+        "id": "urn:ngm:class:target-density",
+        "label": "Target Density"
+      },
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "Floating-Point Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion Image Model"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:computational-fluid-dynamics",
+        "label": "Computational Fluid Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:filtration",
+        "label": "Filtration"
+      },
+      {
+        "id": "urn:ngm:class:sigma-algebra",
+        "label": "Sigma-Algebra"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Axiomatic Set Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gibbs-sampling",
+        "label": "Gibbs Sampling"
+      },
+      {
+        "id": "urn:ngm:class:hamiltonian-monte-carlo",
+        "label": "Hamiltonian Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:metropolis-hastings-algorithm",
+        "label": "Metropolis-Hastings Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:nucleus-sampling",
+        "label": "Nucleus Sampling"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symbolic-computation",
+        "label": "Symbolic Computation"
+      },
+      {
+        "id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      },
+      {
+        "id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Robotics Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:statistical-mechanics",
+        "label": "Statistical Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:conformal-prediction",
+        "label": "Conformal Prediction"
+      },
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "id": "urn:ngm:class:gradient-information",
+        "label": "Gradient Information"
+      },
+      {
+        "id": "urn:ngm:class:kullback-leibler-divergence",
+        "label": "Kullback-Leibler Divergence"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:noise-schedule",
+        "label": "Noise Schedule"
+      },
+      {
+        "id": "urn:ngm:class:score-function",
+        "label": "Score Function"
+      },
+      {
+        "id": "urn:ngm:class:error-analysis",
+        "label": "Error Analysis"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
+        "label": "Node-Based Diffusion Pipeline Interface"
+      },
+      {
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      },
+      {
+        "id": "urn:ngm:class:py-mc",
+        "label": "PyMC"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
+        "label": "Node-Based Diffusion Pipeline Interface"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

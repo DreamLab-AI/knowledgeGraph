@@ -95,6 +95,275 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:data-storage",
+      "label": "Data Storage",
+      "slug": "data-storage"
+    },
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management (Infrastructure)",
+      "slug": "infra-data-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:access-control-list",
+        "label": "Access Control List"
+      },
+      {
+        "id": "urn:ngm:class:block-storage",
+        "label": "Block Storage"
+      },
+      {
+        "id": "urn:ngm:class:file-storage",
+        "label": "File Storage"
+      },
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-encryption-at-rest",
+        "label": "Data Encryption at Rest"
+      },
+      {
+        "id": "urn:ngm:class:data-redundancy",
+        "label": "Data Redundancy"
+      },
+      {
+        "id": "urn:ngm:class:storage-architecture",
+        "label": "Storage Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:block-storage",
+        "label": "Block Storage"
+      },
+      {
+        "id": "urn:ngm:class:file-storage",
+        "label": "File Storage"
+      },
+      {
+        "id": "urn:ngm:class:in-memory-computing",
+        "label": "In-Memory Computing"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-file-system",
+        "label": "Distributed File System"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:storage-tiering",
+        "label": "Storage Tiering"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "id": "urn:ngm:class:raid",
+        "label": "RAID"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:lifecycle-management",
+        "label": "Data Lifecycle Management"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-durability",
+        "label": "Data Durability"
+      },
+      {
+        "id": "urn:ngm:class:immutable-storage",
+        "label": "Immutable Storage"
+      },
+      {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      },
+      {
+        "id": "urn:ngm:class:infra-software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

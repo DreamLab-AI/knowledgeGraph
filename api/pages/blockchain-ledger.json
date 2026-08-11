@@ -133,6 +133,276 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:notary-service",
+        "label": "Notary Service"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:state-transition-function",
+        "label": "State Transition Function"
+      },
+      {
+        "id": "urn:ngm:class:transaction-pool",
+        "label": "Transaction Pool"
+      },
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:node-software",
+        "label": "Node Software"
+      },
+      {
+        "id": "urn:ngm:class:time-ordering",
+        "label": "Time Ordering"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:immutable-record",
+        "label": "Immutable Record"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      },
+      {
+        "id": "urn:ngm:class:state-synchronisation",
+        "label": "State Synchronisation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:channel-isolation-pattern",
+        "label": "Channel Isolation Pattern"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree Structure"
+      },
+      {
+        "id": "urn:ngm:class:notary-service",
+        "label": "Notary Validation Pattern"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Replication Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:hash-pointers",
+        "label": "Hash Pointers"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:retail-cbdc",
+        "label": "Retail CBDC"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-deposits",
+        "label": "Tokenised Deposits"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Tokenised Real World Assets"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:wholesale-cbdc",
+        "label": "Wholesale CBDC"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-dlt-pilot-regime",
+        "label": "EU DLT Pilot Regime"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p2418",
+        "label": "IEEE P2418"
+      },
+      {
+        "id": "urn:ngm:class:isda-common-domain-model",
+        "label": "ISDA Common Domain Model"
+      },
+      {
+        "id": "urn:ngm:class:iso-22739",
+        "label": "ISO 22739"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
+        "id": "urn:ngm:class:iso-tr-23244",
+        "label": "ISO TR 23244"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-23258",
+        "label": "ISO TS 23258"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

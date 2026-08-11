@@ -91,6 +91,245 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit-function",
+        "label": "Independent Audit Function"
+      },
+      {
+        "id": "urn:ngm:class:board-level-oversight",
+        "label": "Board-Level Oversight"
+      },
+      {
+        "id": "urn:ngm:class:risk-based-approach",
+        "label": "Risk-Based Approach"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:corporate-tax-compliance-framework",
+        "label": "Tax Evasion Detection"
+      },
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Banking Correspondent Relationships"
+      },
+      {
+        "id": "urn:ngm:class:counter-terrorist-financing",
+        "label": "Terrorist Financing Disruption"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-enforcement",
+        "label": "Sanctions Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bank-secrecy-act",
+        "label": "Bank Secrecy Act"
+      },
+      {
+        "id": "urn:ngm:class:fatf-40-recommendations",
+        "label": "FATF 40 Recommendations"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:risk-based-approach",
+        "label": "Risk-Based Approach Methodology"
+      },
+      {
+        "id": "urn:ngm:class:uk-mlr-2017",
+        "label": "UK MLR 2017"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics-platform",
+        "label": "Blockchain Analytics Platform"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Electronic Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening Engine"
+      },
+      {
+        "id": "urn:ngm:class:travel-rule-protocol",
+        "label": "Travel Rule Protocol"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:licensing-requirements",
+        "label": "VASP Licensing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bank-secrecy-act",
+        "label": "Bank Secrecy Act 1970"
+      },
+      {
+        "id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "id": "urn:ngm:class:fatf-40-recommendations",
+        "label": "FATF 40 Recommendations"
+      },
+      {
+        "id": "urn:ngm:class:fatf-recommendations",
+        "label": "FATF Recommendation 15"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Recommendation 16 Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022 Payment Messaging"
+      },
+      {
+        "id": "urn:ngm:class:uk-mlr-2017",
+        "label": "UK MLR 2017"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:beneficial-ownership",
+        "label": "Beneficial Ownership"
+      },
+      {
+        "id": "urn:ngm:class:chainalysis",
+        "label": "Chainalysis"
+      },
+      {
+        "id": "urn:ngm:class:elliptic",
+        "label": "Elliptic"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:fca",
+        "label": "FCA"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "anti-money-laundering",

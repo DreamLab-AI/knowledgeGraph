@@ -44,6 +44,330 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:security-infrastructure",
+      "label": "Security Infrastructure",
+      "slug": "security-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:security-framework",
+      "label": "Security Framework",
+      "slug": "security-framework"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "id": "urn:ngm:class:credential-store",
+        "label": "Credential Store"
+      },
+      {
+        "id": "urn:ngm:class:session-manager",
+        "label": "Session Manager"
+      },
+      {
+        "id": "urn:ngm:class:user-directory",
+        "label": "User Directory"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Delegated Authorization"
+      },
+      {
+        "id": "urn:ngm:class:continuous-authentication",
+        "label": "Continuous Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity Governance"
+      },
+      {
+        "id": "urn:ngm:class:passkey-authentication",
+        "label": "Passkey Authentication"
+      },
+      {
+        "id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      },
+      {
+        "id": "urn:ngm:class:ldap",
+        "label": "LDAP"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:scim",
+        "label": "SCIM"
+      },
+      {
+        "id": "urn:ngm:class:web-authn",
+        "label": "WebAuthn"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "id": "urn:ngm:class:pkce",
+        "label": "PKCE"
+      },
+      {
+        "id": "urn:ngm:class:push-notification",
+        "label": "Push Notification"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "id": "urn:ngm:class:risk-based-authentication",
+        "label": "Risk-Based Authentication"
+      },
+      {
+        "id": "urn:ngm:class:social-login",
+        "label": "Social Login"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fido-alliance",
+        "label": "FIDO Alliance"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:oasis",
+        "label": "OASIS"
+      },
+      {
+        "id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-framework",
+        "label": "Digital Identity Framework"
+      },
+      {
+        "id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

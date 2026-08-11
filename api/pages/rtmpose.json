@@ -44,6 +44,396 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:perception",
+      "label": "Perception",
+      "slug": "perception"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:cognitive-architecture",
+      "label": "Cognitive Architecture",
+      "slug": "cognitive-architecture"
+    },
+    {
+      "id": "urn:ngm:class:embodied-ai",
+      "label": "Embodied AI",
+      "slug": "embodied-ai"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:6-do-f-estimation",
+        "label": "6DoF Estimation"
+      },
+      {
+        "id": "urn:ngm:class:keypoint-detection",
+        "label": "Keypoint Detection"
+      },
+      {
+        "id": "urn:ngm:class:mesh-recovery",
+        "label": "Mesh Recovery"
+      },
+      {
+        "id": "urn:ngm:class:risk-intensity-heatmap-regression",
+        "label": "Heatmap Regression"
+      },
+      {
+        "id": "urn:ngm:class:smpl-body-model",
+        "label": "Body Model"
+      },
+      {
+        "id": "urn:ngm:class:temporal-smoothing",
+        "label": "Temporal Smoothing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      },
+      {
+        "id": "urn:ngm:class:body-prior",
+        "label": "Body Prior"
+      },
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:image-features",
+        "label": "Image Features"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:action-recognition",
+        "label": "Action Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:robotic-grasping",
+        "label": "Robotic Grasping"
+      },
+      {
+        "id": "urn:ngm:class:sports-analytics",
+        "label": "Sports Analytics"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:4-d-humans",
+        "label": "4D-Humans"
+      },
+      {
+        "id": "urn:ngm:class:center-pose",
+        "label": "CenterPose"
+      },
+      {
+        "id": "urn:ngm:class:dwpose",
+        "label": "DWPose"
+      },
+      {
+        "id": "urn:ngm:class:foundation-pose",
+        "label": "FoundationPose"
+      },
+      {
+        "id": "urn:ngm:class:gdr-net",
+        "label": "GDR-Net"
+      },
+      {
+        "id": "urn:ngm:class:hrnet",
+        "label": "HRNet"
+      },
+      {
+        "id": "urn:ngm:class:media-pipe-pose",
+        "label": "MediaPipe Pose"
+      },
+      {
+        "id": "urn:ngm:class:open-pose",
+        "label": "OpenPose"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:narrow-ai",
+        "label": "Narrow AI"
+      },
+      {
+        "id": "urn:ngm:class:task-specific-model",
+        "label": "Task-Specific Model"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain-Computer Interface"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "id": "urn:ngm:class:direct-coordinate-regression",
+        "label": "Direct Coordinate Regression"
+      },
+      {
+        "id": "urn:ngm:class:perspective-n-point",
+        "label": "Perspective-n-Point"
+      },
+      {
+        "id": "urn:ngm:class:risk-intensity-heatmap-regression",
+        "label": "Heatmap Regression"
+      },
+      {
+        "id": "urn:ngm:class:smpl-body-model",
+        "label": "SMPL Body Model"
+      },
+      {
+        "id": "urn:ngm:class:vi-t-backbone",
+        "label": "ViT Backbone"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:clinical-gait-analysis",
+        "label": "Clinical Gait Analysis"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:sports-science",
+        "label": "Sports Science"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:3-dpw-benchmark",
+        "label": "3DPW Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:bop-benchmark",
+        "label": "BOP Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:coco-dataset",
+        "label": "COCO Dataset"
+      },
+      {
+        "id": "urn:ngm:class:human3-6-m",
+        "label": "Human3.6M"
+      },
+      {
+        "id": "urn:ngm:class:mpii-human-pose-dataset",
+        "label": "MPII Human Pose Dataset"
+      },
+      {
+        "id": "urn:ngm:class:ycb-video-dataset",
+        "label": "YCB-Video Dataset"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:action-recognition",
+        "label": "Action Recognition"
+      },
+      {
+        "id": "urn:ngm:class:body-segmentation",
+        "label": "Body Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:gaze-estimation",
+        "label": "Gaze Estimation"
+      },
+      {
+        "id": "urn:ngm:class:human-parsing",
+        "label": "Human Parsing"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "pose-estimation",

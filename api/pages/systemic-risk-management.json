@@ -104,6 +104,300 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation",
+      "slug": "financial-regulation"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:macroprudential-policy",
+        "label": "Macroprudential Policy"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk-monitoring",
+        "label": "Systemic Risk Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:institutional-trust",
+        "label": "Institutional Trust"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-participation",
+        "label": "Stakeholder Participation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      },
+      {
+        "id": "urn:ngm:class:coordination",
+        "label": "Coordination"
+      },
+      {
+        "id": "urn:ngm:class:legitimacy",
+        "label": "Legitimacy"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      },
+      {
+        "id": "urn:ngm:class:deposit-insurance",
+        "label": "Deposit Insurance"
+      },
+      {
+        "id": "urn:ngm:class:lender-of-last-resort",
+        "label": "Lender of Last Resort"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:crypto-regulation",
+        "label": "Crypto-Asset Regulation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD Principles on AI"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:prudential-supervision",
+        "label": "Prudential Supervision"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

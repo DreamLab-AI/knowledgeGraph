@@ -56,6 +56,251 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing",
+      "slug": "signal-processing"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
+      },
+      {
+        "id": "urn:ngm:class:microphone-array",
+        "label": "Microphone Array"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:sampling-theory",
+        "label": "Sampling Theory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      },
+      {
+        "id": "urn:ngm:class:audio-driver",
+        "label": "Audio Driver"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:radar",
+        "label": "Radar Sensing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audio-compression",
+        "label": "Audio Compression"
+      },
+      {
+        "id": "urn:ngm:class:head-related-transfer-function",
+        "label": "Head-Related Transfer Function"
+      },
+      {
+        "id": "urn:ngm:class:pulse-code-modulation",
+        "label": "Pulse-Code Modulation"
+      },
+      {
+        "id": "urn:ngm:class:compressed-sensing",
+        "label": "Compressed Sensing"
+      },
+      {
+        "id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:wavelet-transform",
+        "label": "Wavelet Transform"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ambisonics",
+        "label": "Ambisonics"
+      },
+      {
+        "id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      },
+      {
+        "id": "urn:ngm:class:binaural-audio",
+        "label": "Binaural Audio"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:noise-reduction",
+        "label": "Noise Reduction"
+      },
+      {
+        "id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

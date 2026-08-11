@@ -91,6 +91,219 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:measure-theory",
+      "label": "Measure Theory",
+      "slug": "measure-theory"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:random-variable",
+        "label": "Random Variable"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "id": "urn:ngm:class:sigma-algebra",
+        "label": "Sigma-Algebra"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "id": "urn:ngm:class:real-analysis",
+        "label": "Real Analysis"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:topology",
+        "label": "Topology"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:ergodic-theory",
+        "label": "Ergodic Theory"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:sigma-algebra",
+        "label": "Sigma-Algebra"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Axiomatic Set Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:conformal-prediction",
+        "label": "Conformal Prediction"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-finance",
+        "label": "Quantitative Finance"
+      },
+      {
+        "id": "urn:ngm:class:quantum-mechanics",
+        "label": "Quantum Mechanics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence Theorems"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Probabilistic Graphical Models"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bayesian-decision-theory",
+        "label": "Bayesian Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:optimal-transport",
+        "label": "Optimal Transport"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

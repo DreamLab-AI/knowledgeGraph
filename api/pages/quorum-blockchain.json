@@ -205,6 +205,298 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-network",
+      "label": "Blockchain Network",
+      "slug": "blockchain-network"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:endorsement-policy",
+        "label": "Endorsement Policy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:atomic-delivery-versus-payment",
+        "label": "Atomic DvP Settlement"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting-automation",
+        "label": "Regulatory Reporting Automation"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-deposit",
+        "label": "Tokenised Deposit"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:pbft",
+        "label": "PBFT"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof of Authority"
+      },
+      {
+        "id": "urn:ngm:class:smart-bft",
+        "label": "SMaRT-BFT"
+      },
+      {
+        "id": "urn:ngm:class:casper-ffg",
+        "label": "Casper FFG"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "GossipSub"
+      },
+      {
+        "id": "urn:ngm:class:kademlia-dht",
+        "label": "Kademlia DHT"
+      },
+      {
+        "id": "urn:ngm:class:lmd-ghost",
+        "label": "LMD-GHOST"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-system",
+        "label": "Federated System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:go-quorum",
+        "label": "GoQuorum"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-iroha",
+        "label": "Hyperledger Iroha"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:citi-token-services",
+        "label": "Citi Token Services"
+      },
+      {
+        "id": "urn:ngm:class:ebsi",
+        "label": "EBSI"
+      },
+      {
+        "id": "urn:ngm:class:hsbc-orion",
+        "label": "HSBC Orion"
+      },
+      {
+        "id": "urn:ngm:class:ibm-food-trust",
+        "label": "IBM Food Trust"
+      },
+      {
+        "id": "urn:ngm:class:medi-ledger",
+        "label": "MediLedger"
+      },
+      {
+        "id": "urn:ngm:class:project-agora",
+        "label": "Project Agor\u00e1"
+      },
+      {
+        "id": "urn:ngm:class:project-m-bridge",
+        "label": "Project mBridge"
+      },
+      {
+        "id": "urn:ngm:class:project-rosalind",
+        "label": "Project Rosalind"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:enterprise-ethereum-alliance",
+        "label": "Enterprise Ethereum Alliance"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "id": "urn:ngm:class:iso-22739",
+        "label": "ISO 22739"
+      },
+      {
+        "id": "urn:ngm:class:iso-23257",
+        "label": "ISO 23257"
+      },
+      {
+        "id": "urn:ngm:class:iso-24165",
+        "label": "ISO 24165"
+      },
+      {
+        "id": "urn:ngm:class:lf-decentralized-trust",
+        "label": "Linux Foundation Decentralized Trust"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "alastria-network",

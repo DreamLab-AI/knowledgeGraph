@@ -170,6 +170,300 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:logic",
+      "label": "Logic",
+      "slug": "logic"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation",
+      "slug": "knowledge-representation"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:modal-logic",
+        "label": "Modal Logic"
+      },
+      {
+        "id": "urn:ngm:class:predicate-logic",
+        "label": "Predicate Logic"
+      },
+      {
+        "id": "urn:ngm:class:propositional-logic",
+        "label": "Propositional Logic"
+      },
+      {
+        "id": "urn:ngm:class:temporal-logic",
+        "label": "Temporal Logic"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      },
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:closed-world-assumption",
+        "label": "Closed World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:sub-symbolic-ai",
+        "label": "Sub-Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:database-schema",
+        "label": "Database Schema"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:model-theory",
+        "label": "Model Theory"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:programming-language-semantics",
+        "label": "Programming Language Semantics"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:mathematics",
+        "label": "Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:philosophy",
+        "label": "Philosophy"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:neural-symbolic-integration",
+        "label": "Neural-Symbolic Integration"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "computational-complexity-theory",

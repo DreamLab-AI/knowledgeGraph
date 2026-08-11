@@ -113,6 +113,404 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)",
+      "slug": "cat-ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:mlops",
+      "label": "MLOps",
+      "slug": "mlops"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:edge-gateway",
+        "label": "Edge Gateway"
+      },
+      {
+        "id": "urn:ngm:class:edge-node",
+        "label": "Edge Node"
+      },
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:model-serialisation",
+        "label": "Model Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      },
+      {
+        "id": "urn:ngm:class:edge-orchestration",
+        "label": "Edge Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:batch-inference",
+        "label": "Batch Inference"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:real-time-prediction",
+        "label": "Real-Time Prediction"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Reduced Latency"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:fog-computing",
+        "label": "Fog Computing"
+      },
+      {
+        "id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "MultiAccessEdgeComputing"
+      },
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      },
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:docker-containerisation-platform",
+        "label": "Docker"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:container-image",
+        "label": "Container Image"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      },
+      {
+        "id": "urn:ngm:class:canary-deployment",
+        "label": "Canary Deployment"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:on-device-llm",
+        "label": "On-Device LLM"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:3-gpp",
+        "label": "3GPP"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:etsi-mec",
+        "label": "ETSI MEC"
+      },
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation Edge"
+      },
+      {
+        "id": "urn:ngm:class:o-ran-alliance",
+        "label": "O-RAN Alliance"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:data-drift",
+        "label": "Data Drift"
+      },
+      {
+        "id": "urn:ngm:class:model-versioning",
+        "label": "Model Versioning"
+      },
+      {
+        "id": "urn:ngm:class:5-g",
+        "label": "5G"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

@@ -97,6 +97,334 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity",
+      "slug": "cybersecurity"
+    },
+    {
+      "id": "urn:ngm:class:information-security",
+      "label": "Information Security",
+      "slug": "information-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:reproducible-builds",
+        "label": "Reproducible Builds"
+      },
+      {
+        "id": "urn:ngm:class:endpoint-security",
+        "label": "Endpoint Security"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection",
+        "label": "Intrusion Detection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signing",
+        "label": "Cryptographic Signing"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modeling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:ai-security",
+        "label": "AI Security"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:package-repository",
+        "label": "Package Repository"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication Protocols"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:slsa-framework",
+        "label": "SLSA Framework"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-security",
+        "label": "Distributed Systems Security"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:sigstore",
+        "label": "Sigstore"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security",
+        "label": "Hardware Security"
+      },
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      },
+      {
+        "id": "urn:ngm:class:third-party-risk-management",
+        "label": "Third-Party Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

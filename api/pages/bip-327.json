@@ -56,6 +56,267 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain-governance",
+      "label": "Blockchain Governance",
+      "slug": "blockchain-governance"
+    },
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation",
+      "slug": "bc-governance-and-regulation"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bip-141",
+        "label": "BIP-141 SegWit"
+      },
+      {
+        "id": "urn:ngm:class:bip-173",
+        "label": "BIP-173 Bech32"
+      },
+      {
+        "id": "urn:ngm:class:bip-32",
+        "label": "BIP-32 HD Wallets"
+      },
+      {
+        "id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "id": "urn:ngm:class:bip-341",
+        "label": "BIP-341"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO Structure"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Organization"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:rough-consensus",
+        "label": "Rough Consensus"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token-Based Representation"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:ngm:class:hard-fork",
+        "label": "Hard Fork"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrades",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:ngm:class:soft-fork",
+        "label": "Soft Fork"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralized Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:consensus-rule",
+        "label": "Consensus Rule"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposals"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc",
+        "label": "IETF RFC"
+      },
+      {
+        "id": "urn:ngm:class:w3c-recommendation",
+        "label": "W3C Recommendation"
+      },
+      {
+        "id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-governance",
+        "label": "Distributed Systems Governance"
+      },
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-democracy",
+        "label": "Digital Democracy"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:git-hub",
+        "label": "GitHub"
+      },
+      {
+        "id": "urn:ngm:class:user-activated-soft-fork",
+        "label": "User-Activated Soft Fork"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-source-governance",
+        "label": "Open Source Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:hd-wallet",
+        "label": "HD Wallet"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
+      },
+      {
+        "id": "urn:ngm:class:network-effects",
+        "label": "Network Effect"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-coordination",
+        "label": "Stakeholder Coordination"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

@@ -77,6 +77,250 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robot-sensor",
+      "label": "Robot Sensor",
+      "slug": "robot-sensor"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensor",
+        "label": "Tactile Sensor"
+      },
+      {
+        "id": "urn:ngm:class:magnetometer",
+        "label": "Magnetometer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:imu-calibration",
+        "label": "IMU Calibration"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "id": "urn:ngm:class:signal-conditioning",
+        "label": "Signal Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:attitude-estimation",
+        "label": "Attitude Estimation"
+      },
+      {
+        "id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:visual-inertial-odometry",
+        "label": "Visual-Inertial Odometry"
+      },
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:wheel-odometry",
+        "label": "Wheel Odometry"
+      },
+      {
+        "id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality-tracking",
+        "label": "Augmented Reality Tracking"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:complementary-filter",
+        "label": "Complementary Filter"
+      },
+      {
+        "id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:mems",
+        "label": "MEMS"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:flight-control-system",
+        "label": "Flight Control System"
+      },
+      {
+        "id": "urn:ngm:class:robot-hardware",
+        "label": "Robot Hardware"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:allan-variance",
+        "label": "Allan Variance"
+      },
+      {
+        "id": "urn:ngm:class:gnss",
+        "label": "GNSS"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "robotics",

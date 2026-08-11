@@ -96,6 +96,282 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotic-control",
+      "label": "Robotic Control",
+      "slug": "robotic-control"
+    },
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Frame"
+      },
+      {
+        "id": "urn:ngm:class:control-law",
+        "label": "Control Law"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:anti-windup",
+        "label": "Anti-Windup"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computation",
+        "label": "Real-Time Computation"
+      },
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics Model"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bipedal-balance",
+        "label": "Bipedal Balance"
+      },
+      {
+        "id": "urn:ngm:class:compliant-manipulation",
+        "label": "Compliant Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:safe-human-robot-interaction",
+        "label": "Safe Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot Systems"
+      },
+      {
+        "id": "urn:ngm:class:robot-locomotion",
+        "label": "Robot Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-behaviour",
+        "label": "Adaptive Behaviour"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      },
+      {
+        "id": "urn:ngm:class:computed-torque-control",
+        "label": "Computed Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:differential-dynamic-programming",
+        "label": "Differential Dynamic Programming"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Six-Axis Force Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-programming",
+        "label": "Quadratic Programming"
+      },
+      {
+        "id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:variable-stiffness-actuator",
+        "label": "Variable Stiffness Actuator"
+      },
+      {
+        "id": "urn:ngm:class:whole-body-control",
+        "label": "Whole-Body Controller"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "id": "urn:ngm:class:rehabilitation-robotics",
+        "label": "Rehabilitation Robotics"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:icra",
+        "label": "ICRA"
+      },
+      {
+        "id": "urn:ngm:class:ieee-ras",
+        "label": "IEEE RAS"
+      },
+      {
+        "id": "urn:ngm:class:iros",
+        "label": "IROS"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

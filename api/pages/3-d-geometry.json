@@ -34,6 +34,261 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:algorithm",
+      "label": "Algorithm",
+      "slug": "algorithm"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:voronoi-diagram",
+        "label": "Voronoi Diagram"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-engine",
+        "label": "3D Engine"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:computer-aided-design",
+        "label": "Computer-Aided Design"
+      },
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:turing-machine",
+        "label": "Turing Machine"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:computational-model",
+        "label": "Computational Model"
+      },
+      {
+        "id": "urn:ngm:class:software-system",
+        "label": "Software System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-framework",
+        "label": "Algorithmic Framework"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

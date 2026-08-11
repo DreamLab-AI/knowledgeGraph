@@ -84,6 +84,387 @@
     ],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:authentication-mechanism",
+      "label": "Authentication Mechanism",
+      "slug": "authentication-mechanism"
+    },
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication",
+      "slug": "authentication"
+    },
+    {
+      "id": "urn:ngm:class:identity-and-access-management",
+      "label": "Identity and Access Management",
+      "slug": "identity-and-access-management"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:one-time-password",
+        "label": "One-Time Password"
+      },
+      {
+        "id": "urn:ngm:class:challenge-response-protocol",
+        "label": "Challenge-Response Protocol"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-standard",
+        "label": "Credential"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:directory-service",
+        "label": "Directory Services"
+      },
+      {
+        "id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:secure-channel",
+        "label": "Secure Channel"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificates"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:secure-channel",
+        "label": "Secure Channel"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:password-authentication",
+        "label": "Password Authentication"
+      },
+      {
+        "id": "urn:ngm:class:anonymity",
+        "label": "Anonymity"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:network-access-control",
+        "label": "Network Access Control"
+      },
+      {
+        "id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:biometric-binding-mechanism",
+        "label": "Biometric Binding Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2 WebAuthn"
+      },
+      {
+        "id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      },
+      {
+        "id": "urn:ngm:class:biometric-data",
+        "label": "Biometric Data"
+      },
+      {
+        "id": "urn:ngm:class:one-time-password",
+        "label": "One-Time Password"
+      },
+      {
+        "id": "urn:ngm:class:ldap",
+        "label": "LDAP"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      },
+      {
+        "id": "urn:ngm:class:fido-alliance",
+        "label": "FIDO Alliance"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-800-63",
+        "label": "NIST SP 800-63"
+      },
+      {
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-800-53",
+        "label": "NIST SP 800-53"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:security-protocol",
+        "label": "Security Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:adaptive-authentication",
+        "label": "Adaptive Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:phishing-resistance",
+        "label": "Phishing Resistance"
+      },
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      },
+      {
+        "id": "urn:ngm:class:federation",
+        "label": "Federation"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

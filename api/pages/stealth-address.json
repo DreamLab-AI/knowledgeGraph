@@ -118,6 +118,252 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive (Blockchain)",
+      "slug": "bc-cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bulletproofs",
+        "label": "Bulletproofs"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree Accumulator"
+      },
+      {
+        "id": "urn:ngm:class:pedersen-commitment",
+        "label": "Pedersen Commitment"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Spend Key"
+      },
+      {
+        "id": "urn:ngm:class:ring-signature",
+        "label": "Ring Signature"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "id": "urn:ngm:class:computational-hardness-assumption",
+        "label": "Cryptographic Hardness Assumption"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof-system",
+        "label": "Proof System"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:trusted-setup-ceremony",
+        "label": "Trusted Setup Ceremony"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:confidential-transactions",
+        "label": "Anonymous Transactions"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "Confidential DeFi"
+      },
+      {
+        "id": "urn:ngm:class:financial-privacy",
+        "label": "Financial Privacy"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bulletproofs",
+        "label": "Bulletproofs Range Proof"
+      },
+      {
+        "id": "urn:ngm:class:pedersen-commitment",
+        "label": "Pedersen Commitment Scheme"
+      },
+      {
+        "id": "urn:ngm:class:plonk",
+        "label": "PLONK Proof System"
+      },
+      {
+        "id": "urn:ngm:class:ring-signature",
+        "label": "RingCT Protocol"
+      },
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "Groth16 zk-SNARK"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Assets"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Viewing Keys"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:multisignature-wallets",
+        "label": "MPC Wallets"
+      },
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "id": "urn:ngm:class:zk-snarks",
+        "label": "ZK-SNARKs"
+      },
+      {
+        "id": "urn:ngm:class:zk-starks",
+        "label": "ZK-STARKs"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-data-privacy",
+        "label": "Healthcare Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain Confidentiality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:ieee-2418-1",
+        "label": "IEEE P2418.1"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:nist-post-quantum-cryptography",
+        "label": "NIST Post-Quantum Standards"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-did-specification",
+        "label": "W3C DID Specification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aleo",
+        "label": "Aleo"
+      },
+      {
+        "id": "urn:ngm:class:aztec-protocol",
+        "label": "Aztec Protocol"
+      },
+      {
+        "id": "urn:ngm:class:mina-protocol",
+        "label": "Mina Protocol"
+      },
+      {
+        "id": "urn:ngm:class:tornado-cash",
+        "label": "Tornado Cash"
+      },
+      {
+        "id": "urn:ngm:class:zcash",
+        "label": "Zcash"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

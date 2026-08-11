@@ -44,6 +44,269 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:encoder-decoder-architecture",
+      "label": "Encoder Decoder Architecture",
+      "slug": "encoder-decoder-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:decoder",
+        "label": "Decoder"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:entropy-coding",
+        "label": "Entropy Coding"
+      },
+      {
+        "id": "urn:ngm:class:motion-estimation",
+        "label": "Motion Estimation"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed Forward Network"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:discrete-cosine-transform",
+        "label": "Discrete Cosine Transform"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adaptive-bitrate-streaming",
+        "label": "Adaptive Bitrate Streaming"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-optimization",
+        "label": "Bandwidth Optimization"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-video-analysis",
+        "label": "Computer Vision Video Analysis"
+      },
+      {
+        "id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:text-summarisation",
+        "label": "Text Summarisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:lossless-compression",
+        "label": "Lossless Compression"
+      },
+      {
+        "id": "urn:ngm:class:decoder-only-architecture",
+        "label": "Decoder Only Architecture"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantization"
+      },
+      {
+        "id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "id": "urn:ngm:class:softmax-function",
+        "label": "Softmax Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "CDN"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "id": "urn:ngm:class:autoregressive-generation",
+        "label": "Autoregressive Generation"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      },
+      {
+        "id": "urn:ngm:class:open-media-alliance",
+        "label": "Open Media Alliance"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:bart",
+        "label": "BART Model"
+      },
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "id": "urn:ngm:class:t5-model",
+        "label": "T5 Model"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

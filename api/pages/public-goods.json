@@ -89,6 +89,265 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science",
+      "slug": "complexity-science"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "id": "urn:ngm:class:market-design",
+        "label": "Market Design"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:principal-agent-theory",
+        "label": "Principal-Agent Theory"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:welfare-economics",
+        "label": "Welfare Economics"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:incentive-structures",
+        "label": "Incentive Structures"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:platform-regulation",
+        "label": "Platform Regulation"
+      },
+      {
+        "id": "urn:ngm:class:protocol-design",
+        "label": "Protocol Design"
+      },
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
+      },
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agent-based-models",
+        "label": "Agent-Based Models"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:econometrics",
+        "label": "Econometrics"
+      },
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      },
+      {
+        "id": "urn:ngm:class:bis",
+        "label": "BIS"
+      },
+      {
+        "id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      },
+      {
+        "id": "urn:ngm:class:hm-treasury",
+        "label": "UK HM Treasury"
+      },
+      {
+        "id": "urn:ngm:class:imf",
+        "label": "IMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd",
+        "label": "OECD"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:call-centres",
+        "label": "Call Centres"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

@@ -43,6 +43,353 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:xr-headset",
+      "label": "XR Headset",
+      "slug": "xr-headset"
+    },
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering",
+      "slug": "sc-display-and-rendering"
+    },
+    {
+      "id": "urn:ngm:class:xr-hardware",
+      "label": "XR Hardware",
+      "slug": "xr-hardware"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:optical-systems",
+        "label": "Optical System"
+      },
+      {
+        "id": "urn:ngm:class:passthrough-camera",
+        "label": "Passthrough Camera"
+      },
+      {
+        "id": "urn:ngm:class:micro-oled-display",
+        "label": "Micro-OLED Display"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio-system",
+        "label": "Spatial Audio System"
+      },
+      {
+        "id": "urn:ngm:class:tracking-system",
+        "label": "Inside-Out Tracking System"
+      },
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:six-degrees-of-freedom",
+        "label": "Six Degrees of Freedom"
+      },
+      {
+        "id": "urn:ngm:class:web-xr-api",
+        "label": "WebXR API"
+      },
+      {
+        "id": "urn:ngm:class:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:immersive-collaboration",
+        "label": "Immersive Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:ngm:class:spatial-presence",
+        "label": "Spatial Presence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:system-on-chip",
+        "label": "System on Chip"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:openxr-standard",
+        "label": "OpenXR Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:flat-panel-display",
+        "label": "Flat Panel Display"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Cave Automatic Virtual Environment"
+      },
+      {
+        "id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
+      },
+      {
+        "id": "urn:ngm:class:desktop-computing",
+        "label": "Desktop Computing"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:inside-out-tracking",
+        "label": "Inside-Out Tracking"
+      },
+      {
+        "id": "urn:ngm:class:passthrough-camera",
+        "label": "Passthrough Camera"
+      },
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:passthrough-video",
+        "label": "Passthrough Video"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:wearable-computing-platform",
+        "label": "Wearable Computing Platform"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:field-of-view",
+        "label": "Field of View"
+      },
+      {
+        "id": "urn:ngm:class:ai-upscaling-and-super-resolution",
+        "label": "AI Upscaling and Super-Resolution"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:sc-display-and-rendering",
+        "label": "Display and Rendering"
+      },
+      {
+        "id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "spatial-mesh",

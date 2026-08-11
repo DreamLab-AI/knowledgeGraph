@@ -69,6 +69,259 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-teams",
+      "label": "Distributed Teams",
+      "slug": "distributed-teams"
+    },
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology",
+      "slug": "dc-communication"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:tc-0002-collaborative-document-editing",
+        "label": "Collaborative Document Editing"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:virtual-workspace",
+        "label": "Virtual Workspace"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback-telepresence",
+        "label": "Haptic Feedback Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-teams",
+        "label": "Distributed Teams"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-team",
+        "label": "Virtual Team"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-located Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-communication",
+        "label": "Synchronous Communication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-telepresence-bridge",
+        "label": "Metaverse-Telepresence Bridge"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:real-time-messaging",
+        "label": "Real-Time Messaging"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Development"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-supported-cooperative-work",
+        "label": "Computer-Supported Cooperative Work"
+      },
+      {
+        "id": "urn:ngm:class:presence-awareness",
+        "label": "Presence Awareness"
+      },
+      {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "id": "urn:ngm:class:dc-workspace-tools",
+        "label": "Workspace Tools"
+      },
+      {
+        "id": "urn:ngm:class:robotics-telepresence-bridge",
+        "label": "Robotics-Telepresence Bridge"
+      },
+      {
+        "id": "urn:ngm:class:groupware",
+        "label": "Groupware"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-video",
+        "label": "Asynchronous Video"
+      },
+      {
+        "id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

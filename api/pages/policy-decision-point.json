@@ -130,6 +130,274 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "id": "urn:ngm:class:identity-system",
+        "label": "Identity Store"
+      },
+      {
+        "id": "urn:ngm:class:policy-administration-point",
+        "label": "Policy Administration Point"
+      },
+      {
+        "id": "urn:ngm:class:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      },
+      {
+        "id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "id": "urn:ngm:class:policy-information-point",
+        "label": "Policy Information Point"
+      },
+      {
+        "id": "urn:ngm:class:session-manager",
+        "label": "Session Manager"
+      },
+      {
+        "id": "urn:ngm:class:token-service",
+        "label": "Token Service"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:trusted-timestamping",
+        "label": "Trusted Time Source"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:auditability",
+        "label": "Auditability"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:separation-of-duties",
+        "label": "Separation of Duties"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      },
+      {
+        "id": "urn:ngm:class:ldap",
+        "label": "LDAP"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:web-authn",
+        "label": "WebAuthn"
+      },
+      {
+        "id": "urn:ngm:class:xacml",
+        "label": "XACML"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:forensic-investigation",
+        "label": "Forensic Investigation"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ansi-incits-359",
+        "label": "ANSI INCITS 359"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF RFC 4120"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27002",
+        "label": "ISO IEC 27002"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST SP 800-162"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-800-207",
+        "label": "NIST SP 800-207"
+      },
+      {
+        "id": "urn:ngm:class:web-authn",
+        "label": "W3C WebAuthn"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Customer Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "id": "urn:ngm:class:secrets-management",
+        "label": "Secrets Management"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

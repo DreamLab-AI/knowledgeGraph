@@ -47,6 +47,208 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:multimodal-ai-architecture-models",
+      "label": "Multimodal Models",
+      "slug": "multimodal-ai-architecture-models"
+    },
+    {
+      "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+      "label": "Multimodal AI",
+      "slug": "multimodal-ai-architecture-ai"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:decoder",
+        "label": "Multimodal Decoder"
+      },
+      {
+        "id": "urn:ngm:class:modality-specific-encoder",
+        "label": "Modality-Specific Encoder"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-understanding",
+        "label": "Multimodal Understanding"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Paired Training Data"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:visual-grounding",
+        "label": "Visual Grounding"
+      },
+      {
+        "id": "urn:ngm:class:visual-question-answering",
+        "label": "Visual Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Audio-Visual Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:visual-representation",
+        "label": "Visual Representation"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Vision Encoder"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-reasoning",
+        "label": "Multimodal Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

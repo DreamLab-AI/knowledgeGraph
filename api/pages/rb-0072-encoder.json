@@ -69,6 +69,236 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensor",
+        "label": "Tactile Sensor"
+      },
+      {
+        "id": "urn:ngm:class:current-sensor",
+        "label": "Current Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog To Digital Converter"
+      },
+      {
+        "id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "id": "urn:ngm:class:signal-conditioning",
+        "label": "Signal Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:safe-human-robot-interaction",
+        "label": "Safe Physical Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gyroscope",
+        "label": "MEMS Gyroscope"
+      },
+      {
+        "id": "urn:ngm:class:hall-effect-sensing",
+        "label": "Hall Effect Sensing"
+      },
+      {
+        "id": "urn:ngm:class:photometric-stereo",
+        "label": "Photometric Stereo"
+      },
+      {
+        "id": "urn:ngm:class:quadrature-encoding",
+        "label": "Quadrature Encoding"
+      },
+      {
+        "id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:can-bus",
+        "label": "CAN Bus"
+      },
+      {
+        "id": "urn:ngm:class:ether-cat",
+        "label": "EtherCAT"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity-ssi",
+        "label": "SSI Protocol"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:exoskeleton-control",
+        "label": "Exoskeleton Control"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems",
+        "label": "IEC 61800 Adjustable Speed Drives"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1451",
+        "label": "IEEE 1451 Sensor Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-9283-manipulating-industrial-robots-performance-criteria",
+        "label": "ISO 9283 Robot Performance Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "robotics",

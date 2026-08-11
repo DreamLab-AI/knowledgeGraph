@@ -84,6 +84,319 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component",
+      "slug": "hardware-component"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:ultrasonic-sensor",
+        "label": "Ultrasonic Sensor"
+      },
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      },
+      {
+        "id": "urn:ngm:class:memory-module",
+        "label": "Memory Module"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog To Digital Converter"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:condition-monitoring",
+        "label": "Condition Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Fabrication"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:component",
+        "label": "Software Component"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-accelerator",
+        "label": "AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neuromorphic-chip",
+        "label": "Neuromorphic Chip"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-1451",
+        "label": "IEEE 1451"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "ROS"
+      },
+      {
+        "id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      },
+      {
+        "id": "urn:ngm:class:jedec",
+        "label": "JEDEC"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      },
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-acquisition",
+        "label": "Data Acquisition"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field-Programmable Gate Array"
+      },
+      {
+        "id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:infra-network-and-comms",
+        "label": "Network and Communication"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

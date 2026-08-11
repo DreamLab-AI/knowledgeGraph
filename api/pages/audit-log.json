@@ -136,6 +136,154 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:access-logs",
+        "label": "Access Logs"
+      },
+      {
+        "id": "urn:ngm:class:event-log",
+        "label": "Event Logs"
+      },
+      {
+        "id": "urn:ngm:class:system-state-snapshots",
+        "label": "System State Snapshots"
+      },
+      {
+        "id": "urn:ngm:class:timestamp-records",
+        "label": "Timestamp Records"
+      },
+      {
+        "id": "urn:ngm:class:transaction-records",
+        "label": "Transaction Records"
+      },
+      {
+        "id": "urn:ngm:class:user-activity-logs",
+        "label": "User Activity Logs"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronization"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-integrity-protection",
+        "label": "Cryptographic Integrity Protection"
+      },
+      {
+        "id": "urn:ngm:class:logging-infrastructure",
+        "label": "Logging Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:secure-storage",
+        "label": "Secure Storage"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:ngm:class:forensic-analysis",
+        "label": "Forensic Analysis"
+      },
+      {
+        "id": "urn:ngm:class:incident-investigation",
+        "label": "Incident Investigation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:algorithmic-transparency-index",
+        "label": "Algorithmic Transparency Index"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:governance-system",
+        "label": "Governance System"
+      },
+      {
+        "id": "urn:ngm:class:security-infrastructure",
+        "label": "Security Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-transparency-framework",
+        "label": "Ai Transparency Framework"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

@@ -176,6 +176,195 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:scientific-research",
+      "label": "Scientific Research",
+      "slug": "scientific-research"
+    },
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:proceedings",
+        "label": "Proceedings"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:double-blind-review",
+        "label": "Double-Blind Review"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:arxiv",
+        "label": "arXiv"
+      },
+      {
+        "id": "urn:ngm:class:open-review",
+        "label": "OpenReview"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence-research",
+        "label": "Artificial Intelligence Research"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:academia",
+        "label": "Academia"
+      },
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:publication",
+        "label": "Publication"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "artificial-intelligence",

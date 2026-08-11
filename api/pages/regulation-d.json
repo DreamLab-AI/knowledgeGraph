@@ -49,6 +49,279 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation",
+      "slug": "bc-governance-and-regulation"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:broker-dealer-registration",
+        "label": "Broker-Dealer Registration"
+      },
+      {
+        "id": "urn:ngm:class:disclosure-obligations",
+        "label": "Disclosure Obligations"
+      },
+      {
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:howey-test",
+        "label": "Howey Test"
+      },
+      {
+        "id": "urn:ngm:class:securities-exchange-act-1934",
+        "label": "Securities Exchange Act"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:accredited-investor-verification",
+        "label": "Accredited Investor Verification"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:investor-disclosure",
+        "label": "Investor Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-authority",
+        "label": "Regulatory Authority"
+      },
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:capital-formation",
+        "label": "Capital Formation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody Innovation"
+      },
+      {
+        "id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Crypto Adoption"
+      },
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "id": "urn:ngm:class:spot-bitcoin-etf",
+        "label": "Spot Bitcoin ETF"
+      },
+      {
+        "id": "urn:ngm:class:spot-ethereum-etf",
+        "label": "Spot Ethereum ETF"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:fca-consumer-duty",
+        "label": "FCA Consumer Duty"
+      },
+      {
+        "id": "urn:ngm:class:genius-act",
+        "label": "GENIUS Act"
+      },
+      {
+        "id": "urn:ngm:class:howey-test",
+        "label": "Howey Test"
+      },
+      {
+        "id": "urn:ngm:class:iosco",
+        "label": "IOSCO Recommendations"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca",
+        "label": "MiCA"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation Analysis"
+      },
+      {
+        "id": "urn:ngm:class:economic-substance-test",
+        "label": "Economic Substance Test"
+      },
+      {
+        "id": "urn:ngm:class:investment-contract-analysis",
+        "label": "Investment Contract Analysis"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "id": "urn:ngm:class:spot-bitcoin-etf",
+        "label": "Spot Bitcoin ETF"
+      },
+      {
+        "id": "urn:ngm:class:spot-ethereum-etf",
+        "label": "Spot Ethereum ETF"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "id": "urn:ngm:class:bis",
+        "label": "BIS"
+      },
+      {
+        "id": "urn:ngm:class:esma",
+        "label": "ESMA"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:fca",
+        "label": "FCA"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "G20 Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:fsb",
+        "label": "FSB"
+      },
+      {
+        "id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "securities-regulation",

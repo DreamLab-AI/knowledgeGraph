@@ -94,6 +94,259 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning",
+      "slug": "parameter-efficient-fine-tuning"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
+      },
+      {
+        "id": "urn:ngm:class:adapter-modules",
+        "label": "Adapter Modules"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-do-ra-etc",
+        "label": "AdaLoRA"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:prefix-tuning",
+        "label": "Prefix Tuning"
+      },
+      {
+        "id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      },
+      {
+        "id": "urn:ngm:class:qlo-ra",
+        "label": "QLoRA"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-Trained Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:multi-task-learning",
+        "label": "Multi-Task Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-deployment",
+        "label": "Edge Deployment"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Modular Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:full-fine-tuning",
+        "label": "Full Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:prefix-tuning",
+        "label": "Prefix Tuning"
+      },
+      {
+        "id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:low-rank-decomposition",
+        "label": "Low-Rank Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:model-adaptation",
+        "label": "Model Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

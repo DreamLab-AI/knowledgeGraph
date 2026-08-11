@@ -34,6 +34,319 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development",
+      "slug": "software-development"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering (Infrastructure)",
+      "slug": "infra-software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:programming-paradigm",
+        "label": "Programming Paradigm"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      },
+      {
+        "id": "urn:ngm:class:model-based-systems-engineering",
+        "label": "Model-Based Systems Engineering"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-analysis",
+        "label": "Stakeholder Analysis"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Application"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:waterfall-model",
+        "label": "Waterfall Model"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "AI Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
+      },
+      {
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "id": "urn:ngm:class:opcodes",
+        "label": "Opcodes"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
+      },
+      {
+        "id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain-Driven Design"
+      },
+      {
+        "id": "urn:ngm:class:refactoring",
+        "label": "Refactoring"
+      },
+      {
+        "id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

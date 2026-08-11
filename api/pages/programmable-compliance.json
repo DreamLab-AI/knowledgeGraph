@@ -34,6 +34,238 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance Module"
+      },
+      {
+        "id": "urn:ngm:class:identity-registry",
+        "label": "Identity Registry"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-identity",
+        "label": "On-Chain Identity ONCHAINID"
+      },
+      {
+        "id": "urn:ngm:class:transfer-restriction",
+        "label": "Transfer Restriction"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:custody-infrastructure",
+        "label": "Custody Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:legal-wrapper",
+        "label": "Legal Wrapper"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-authorisation",
+        "label": "Regulatory Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:atomic-delivery-versus-payment",
+        "label": "Atomic Delivery versus Payment"
+      },
+      {
+        "id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "24-7 Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:financial-instruments",
+        "label": "Regulated Financial Instrument"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-standards",
+        "label": "Digital Asset Standards"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc-735",
+        "label": "ERC-735"
+      },
+      {
+        "id": "urn:ngm:class:foundry",
+        "label": "Foundry"
+      },
+      {
+        "id": "urn:ngm:class:hardhat",
+        "label": "Hardhat"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin",
+        "label": "OpenZeppelin Libraries"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-estate-tokenization",
+        "label": "Tokenised Real Estate"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:global-digital-finance",
+        "label": "Global Digital Finance"
+      },
+      {
+        "id": "urn:ngm:class:isda-cdm",
+        "label": "ISDA CDM"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:black-rock-buidl",
+        "label": "BlackRock BUIDL"
+      },
+      {
+        "id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
+      },
+      {
+        "id": "urn:ngm:class:erc-3525",
+        "label": "ERC-3525"
+      },
+      {
+        "id": "urn:ngm:class:erc-3643",
+        "label": "ERC-3643"
+      },
+      {
+        "id": "urn:ngm:class:erc-4626",
+        "label": "ERC-4626"
+      },
+      {
+        "id": "urn:ngm:class:erc-7540",
+        "label": "ERC-7540"
+      },
+      {
+        "id": "urn:ngm:class:hsbc-orion",
+        "label": "HSBC Orion"
+      },
+      {
+        "id": "urn:ngm:class:ondo-finance",
+        "label": "Ondo Finance"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

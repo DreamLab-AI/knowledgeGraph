@@ -86,6 +86,189 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      },
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-accumulator",
+        "label": "Accumulator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:feedback-sensor",
+        "label": "Feedback Sensor"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Compliant Force Control"
+      },
+      {
+        "id": "urn:ngm:class:haptic-interface",
+        "label": "Haptic Interface"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "High-Force Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Robot Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Heavy Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Force Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:position-control",
+        "label": "Closed-Loop Position Control"
+      },
+      {
+        "id": "urn:ngm:class:proportional-control",
+        "label": "Proportional Flow Control"
+      },
+      {
+        "id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:proportional-valve",
+        "label": "Proportional Valve"
+      },
+      {
+        "id": "urn:ngm:class:servo-valve",
+        "label": "Electrohydraulic Servo Valve"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion Research"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robotics",
+        "label": "Industrial Robotics"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "hydraulic-actuator",

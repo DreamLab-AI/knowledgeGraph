@@ -102,6 +102,318 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework",
+      "slug": "regulatory-framework"
+    },
+    {
+      "id": "urn:ngm:class:legal-framework",
+      "label": "Legal Framework",
+      "slug": "legal-framework"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
+      },
+      {
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:legal-jurisdiction",
+        "label": "Legal Jurisdiction"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      },
+      {
+        "id": "urn:ngm:class:jurisdiction",
+        "label": "Jurisdiction"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:genius-act",
+        "label": "GENIUS Act"
+      },
+      {
+        "id": "urn:ngm:class:privacy-requirements",
+        "label": "Privacy Requirements"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security Obligations"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-free-flow",
+        "label": "Data Free Flow"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-policy",
+        "label": "Cybersecurity Policy"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "id": "urn:ngm:class:international-organization-of-securities-commissions",
+        "label": "International Organization of Securities Commissions"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-law",
+        "label": "Cybersecurity Law"
+      },
+      {
+        "id": "urn:ngm:class:data-residency",
+        "label": "Data Residency"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptoasset",
+        "label": "Cryptoasset"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

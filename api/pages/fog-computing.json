@@ -44,6 +44,305 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:coordination-layer",
+        "label": "Coordination Service"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "id": "urn:ngm:class:logical-clock",
+        "label": "Logical Clock"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Partial Failure Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "id": "urn:ngm:class:serialisation-format",
+        "label": "Serialisation Format"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:geographic-distribution",
+        "label": "Geographic Distribution"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scalability"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:actor-model",
+        "label": "Actor Model"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:map-reduce",
+        "label": "MapReduce"
+      },
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:pbft",
+        "label": "PBFT"
+      },
+      {
+        "id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "id": "urn:ngm:class:saga-pattern",
+        "label": "Saga Pattern"
+      },
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apache-flink",
+        "label": "Apache Flink"
+      },
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "id": "urn:ngm:class:etcd",
+        "label": "etcd"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      },
+      {
+        "id": "urn:ngm:class:distributed-databases",
+        "label": "Distributed Databases"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:apache-software-foundation",
+        "label": "Apache Software Foundation"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC Specification"
+      },
+      {
+        "id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "IETF QUIC"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Computing"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:infra-network-and-comms",
+        "label": "Network and Communication"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

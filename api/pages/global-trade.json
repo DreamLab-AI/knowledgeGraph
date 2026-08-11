@@ -47,6 +47,327 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:macroeconomics",
+      "label": "Macroeconomics",
+      "slug": "macroeconomics"
+    },
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics",
+      "slug": "economics"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science",
+      "slug": "complexity-science"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:customs",
+        "label": "Customs"
+      },
+      {
+        "id": "urn:ngm:class:fiscal-policy",
+        "label": "Fiscal Policy"
+      },
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:national-income-accounting",
+        "label": "National Income Accounting"
+      },
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "id": "urn:ngm:class:market-design",
+        "label": "Market Design"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:customs",
+        "label": "Customs"
+      },
+      {
+        "id": "urn:ngm:class:econometrics",
+        "label": "Econometrics"
+      },
+      {
+        "id": "urn:ngm:class:national-income-accounting",
+        "label": "National Income Accounting"
+      },
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:incentive-structures",
+        "label": "Incentive Structures"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      },
+      {
+        "id": "urn:ngm:class:inflation-hedge",
+        "label": "Inflation Hedge"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:platform-regulation",
+        "label": "Platform Regulation"
+      },
+      {
+        "id": "urn:ngm:class:protocol-design",
+        "label": "Protocol Design"
+      },
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
+      },
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:microeconomics",
+        "label": "Microeconomics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:financial-market",
+        "label": "Financial Market"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:balance-of-payments",
+        "label": "Balance of Payments"
+      },
+      {
+        "id": "urn:ngm:class:consumer-price-index",
+        "label": "Consumer Price Index"
+      },
+      {
+        "id": "urn:ngm:class:gross-domestic-product",
+        "label": "Gross Domestic Product"
+      },
+      {
+        "id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      },
+      {
+        "id": "urn:ngm:class:agent-based-models",
+        "label": "Agent-Based Models"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:econometrics",
+        "label": "Econometrics"
+      },
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      },
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      },
+      {
+        "id": "urn:ngm:class:bis",
+        "label": "BIS"
+      },
+      {
+        "id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      },
+      {
+        "id": "urn:ngm:class:hm-treasury",
+        "label": "UK HM Treasury"
+      },
+      {
+        "id": "urn:ngm:class:imf",
+        "label": "IMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd",
+        "label": "OECD"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gross-domestic-product",
+        "label": "Gross Domestic Product"
+      },
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "id": "urn:ngm:class:balance-of-payments",
+        "label": "Balance of Payments"
+      },
+      {
+        "id": "urn:ngm:class:exchange-rate",
+        "label": "Exchange Rate"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "international-trade",

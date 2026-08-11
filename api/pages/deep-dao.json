@@ -64,6 +64,266 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation",
+      "slug": "bc-governance-and-regulation"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:boardroom",
+        "label": "Boardroom"
+      },
+      {
+        "id": "urn:ngm:class:cross-dao-benchmarking",
+        "label": "Cross-DAO Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:dune-analytics",
+        "label": "Dune Analytics"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-data-indexing",
+        "label": "On-Chain Data Indexing"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance Metrics"
+      },
+      {
+        "id": "urn:ngm:class:tally",
+        "label": "Tally"
+      },
+      {
+        "id": "urn:ngm:class:treasury-analytics",
+        "label": "Treasury Analytics"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:block-explorer",
+        "label": "Block Explorer"
+      },
+      {
+        "id": "urn:ngm:class:chainlink",
+        "label": "Chainlink"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-data-indexing",
+        "label": "On-Chain Data Indexing"
+      },
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Oracle Price Feeds"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-dao-benchmarking",
+        "label": "Cross-DAO Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gini-coefficient",
+        "label": "Gini Coefficient"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-coefficient",
+        "label": "Nakamoto Coefficient"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting Analytics"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apache-parquet",
+        "label": "Apache Parquet"
+      },
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:graph-ql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:time-series-analysis",
+        "label": "Time-Series Analysis"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aave-governance",
+        "label": "Aave Governance"
+      },
+      {
+        "id": "urn:ngm:class:arbitrum-dao",
+        "label": "Arbitrum DAO"
+      },
+      {
+        "id": "urn:ngm:class:compound",
+        "label": "Compound"
+      },
+      {
+        "id": "urn:ngm:class:ens-dao",
+        "label": "ENS DAO"
+      },
+      {
+        "id": "urn:ngm:class:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      },
+      {
+        "id": "urn:ngm:class:lido-dao",
+        "label": "Lido DAO"
+      },
+      {
+        "id": "urn:ngm:class:maker-dao",
+        "label": "MakerDAO"
+      },
+      {
+        "id": "urn:ngm:class:nouns-dao",
+        "label": "Nouns DAO"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "DAOstar Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin-governor",
+        "label": "OpenZeppelin Governor"
+      },
+      {
+        "id": "urn:ngm:class:tally",
+        "label": "Tally Governor Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:delegate-democracy",
+        "label": "Delegate Democracy"
+      },
+      {
+        "id": "urn:ngm:class:gitcoin-passport",
+        "label": "Gitcoin Passport"
+      },
+      {
+        "id": "urn:ngm:class:grant-programs",
+        "label": "Grant Programs"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "id": "urn:ngm:class:maci",
+        "label": "MACI"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": [
     {

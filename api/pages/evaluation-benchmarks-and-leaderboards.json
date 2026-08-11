@@ -174,6 +174,145 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:capability-elicitation",
+        "label": "Capability Elicitation"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:llm-as-judge",
+        "label": "LLM-as-Judge"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red-Teaming"
+      },
+      {
+        "id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:held-out-test-set",
+        "label": "Held-Out Test Set"
+      },
+      {
+        "id": "urn:ngm:class:human-oracle",
+        "label": "Human Oracle"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:alignment-evaluation",
+        "label": "Alignment Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:model-cards",
+        "label": "Model Card"
+      },
+      {
+        "id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:benchmark-contamination",
+        "label": "Benchmark Contamination"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-saturation",
+        "label": "Benchmark Saturation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-benchmark-epistemological-critique",
+        "label": "AI Benchmark Epistemological Critique"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "a-b-testing",

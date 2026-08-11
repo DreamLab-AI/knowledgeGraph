@@ -120,6 +120,294 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:edge-computing",
+      "label": "Edge Computing",
+      "slug": "edge-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:edge-gateway",
+        "label": "Edge Gateway"
+      },
+      {
+        "id": "urn:ngm:class:edge-node",
+        "label": "Edge Node"
+      },
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      },
+      {
+        "id": "urn:ngm:class:edge-orchestration",
+        "label": "Edge Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:technology-infrastructure-domain-layer",
+        "label": "Infrastructure Layer"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Reduced Latency"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:fog-computing",
+        "label": "Fog Computing"
+      },
+      {
+        "id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "MultiAccessEdgeComputing"
+      },
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      },
+      {
+        "id": "urn:ngm:class:edge-orchestration",
+        "label": "Edge Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:container-image",
+        "label": "Container Image"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:on-device-llm",
+        "label": "On-Device LLM"
+      },
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:3-gpp",
+        "label": "3GPP"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation Edge"
+      },
+      {
+        "id": "urn:ngm:class:o-ran-alliance",
+        "label": "O-RAN Alliance"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:fog-computing",
+        "label": "Fog Computing"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:5-g",
+        "label": "5G"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:tiny-ml",
+        "label": "TinyML"
+      }
+    ]
+  },
   "wikilinks": [
     {
       "slug": "etsi",

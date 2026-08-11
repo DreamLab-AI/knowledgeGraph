@@ -43,6 +43,235 @@
       }
     ]
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bayesian-inference",
+      "label": "Bayesian Inference",
+      "slug": "bayesian-inference"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:likelihood-function",
+        "label": "Likelihood Function"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:confounding-variable",
+        "label": "Confounding Variable"
+      },
+      {
+        "id": "urn:ngm:class:observational-data",
+        "label": "Observational Data"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistical-model",
+        "label": "Statistical Model"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      },
+      {
+        "id": "urn:ngm:class:causal-language-modelling",
+        "label": "Causal Language Modelling"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes' Theorem"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:correlation-analysis",
+        "label": "Correlation Analysis"
+      },
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:econometrics",
+        "label": "Econometrics"
+      },
+      {
+        "id": "urn:ngm:class:epidemiology",
+        "label": "Epidemiology"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      },
+      {
+        "id": "urn:ngm:class:instrumental-variables",
+        "label": "Instrumental Variables"
+      },
+      {
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:randomised-controlled-trial",
+        "label": "Randomised Controlled Trial"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Probabilistic Graphical Model"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }

@@ -29,6 +29,359 @@
     "partOf": [],
     "relatedTo": []
   },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sustainable-finance",
+      "label": "Sustainable Finance",
+      "slug": "sustainable-finance"
+    },
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation",
+      "slug": "financial-regulation"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:blended-finance",
+        "label": "Blended Finance"
+      },
+      {
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      },
+      {
+        "id": "urn:ngm:class:green-bonds",
+        "label": "Green Bonds"
+      },
+      {
+        "id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "Green Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk-disclosure",
+        "label": "Climate Risk Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing-prevention",
+        "label": "Greenwashing Prevention"
+      },
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-transition",
+        "label": "Net Zero Transition"
+      },
+      {
+        "id": "urn:ngm:class:green-bond-market",
+        "label": "Green Bond Market"
+      },
+      {
+        "id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-linked-loan",
+        "label": "Sustainability-Linked Loan"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Carbon Credit Market"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "UN Sustainable Development Goals"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      },
+      {
+        "id": "urn:ngm:class:eu-sustainable-finance-disclosure-regulation",
+        "label": "EU Sustainable Finance Disclosure Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:conventional-finance",
+        "label": "Conventional Finance"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-tokenisation",
+        "label": "Blockchain Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:regenerative-finance",
+        "label": "Regenerative Finance"
+      },
+      {
+        "id": "urn:ngm:class:climate-science",
+        "label": "Climate Science"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-green-bonds",
+        "label": "Tokenised Green Bonds"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "EU Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-s1",
+        "label": "IFRS S1 S2"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "EU Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:icma-green-bond-principles",
+        "label": "ICMA Green Bond Principles"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "id": "urn:ngm:class:issb",
+        "label": "ISSB"
+      },
+      {
+        "id": "urn:ngm:class:ngfs",
+        "label": "NGFS"
+      },
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      },
+      {
+        "id": "urn:ngm:class:corporate-social-responsibility",
+        "label": "Corporate Social Responsibility"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      },
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ]
+  },
   "wikilinks": [],
   "backlinks": []
 }
