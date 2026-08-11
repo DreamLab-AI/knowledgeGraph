@@ -11852,6 +11852,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "agentic-mycelia",
+      "title": "Agentic Mycelia",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "ambient-computing",
       "title": "Ambient Computing",
       "qualityScore": 0.72

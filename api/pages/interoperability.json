@@ -919,6 +919,10 @@
       "label": "Agent Communication Protocol"
     },
     {
+      "slug": "agentic-mycelia",
+      "label": "Agentic Mycelia"
+    },
+    {
       "slug": "allo-protocol",
       "label": "Allo Protocol"
     },

@@ -819,6 +819,10 @@
       "label": "Agent Identity"
     },
     {
+      "slug": "agentic-mycelia",
+      "label": "Agentic Mycelia"
+    },
+    {
       "slug": "cashu",
       "label": "Cashu"
     },

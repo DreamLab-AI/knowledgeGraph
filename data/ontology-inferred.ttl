@@ -5,7 +5,7 @@
 
 <https://narrativegoldmine.com/ontology/inferred> a owl:Ontology ;
     rdfs:label "NarrativeGoldmine Inferred Axioms"@en ;
-    vc:generatedAt "2026-08-11T11:31:52.660837+00:00"^^xsd:dateTime ;
+    vc:generatedAt "2026-08-11T18:48:49.276187+00:00"^^xsd:dateTime ;
     vc:inferenceMethod "transitive-subclass-closure" .
 
 <urn:ngm:class:1-hive> rdfs:subClassOf <urn:ngm:class:bc-governance-and-regulation>,
@@ -720,6 +720,12 @@
         <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core> .
+
+<urn:ngm:class:agentic-mycelia> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:human-computer-interaction>,
+        <urn:ngm:class:sc-platform-and-environment>,
+        <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:agentic-rag> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
