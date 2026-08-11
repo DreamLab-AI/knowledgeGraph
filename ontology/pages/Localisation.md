@@ -1,4 +1,5 @@
 public:: true
+alias:: Localization
 
 # localisation
 ```json-ld
@@ -34,6 +35,10 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-navigation-and-planning",
       "label": "Navigation and Planning"
+    },
+    {
+      "@id": "urn:ngm:class:state-estimation",
+      "label": "State Estimation"
     }
   ],
   "relations": {
@@ -61,6 +66,22 @@ public:: true
       {
         "@id": "urn:ngm:class:occupancy-grid",
         "label": "Occupancy Grid"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-localization",
+        "label": "Monte Carlo Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "@id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-model",
+        "label": "Sensor Model"
       }
     ],
     "enables": [
@@ -97,6 +118,10 @@ public:: true
       {
         "@id": "urn:ngm:class:coordinate-frame",
         "label": "Coordinate Frame"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
       }
     ],
     "dependsOn": [
@@ -111,6 +136,10 @@ public:: true
       {
         "@id": "urn:ngm:class:loop-closure-detection",
         "label": "Loop Closure Detection"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-robotics",
+        "label": "Probabilistic Robotics"
       }
     ],
     "relatedTo": [
@@ -129,6 +158,14 @@ public:: true
       {
         "@id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:robot-pose",
+        "label": "Robot Pose"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty",
+        "label": "Uncertainty"
       }
     ],
     "bridgesTo": [
@@ -153,6 +190,20 @@ public:: true
       {
         "@id": "urn:ngm:class:position-control",
         "label": "Position Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
       }
     ]
   },
@@ -221,13 +272,35 @@ public:: true
   - **Search and Rescue**: SLAM-equipped robots map and localise in GPS-denied collapsed structures or underground environments.
   - **Digital Twin Synchronisation**: real-time robot pose fed to a [[Digital Twin]] model for live simulation mirroring and predictive maintenance.
 
+- ### Types of Localisation
+  - **Position Tracking** (local localisation): the robot knows its initial pose and tracks it over time; the less challenging variant.
+  - **Global Localisation** (the "kidnapped robot" problem): the initial pose is unknown and must be determined from scratch; significantly harder, typically requiring multi-modal belief representations such as the [[Particle Filter]].
+
+- ### Localisation in Different Environments
+  - **Indoor**: no GNSS; structured environments; LiDAR, vision, and beacon-based sensing dominate.
+  - **Outdoor**: GNSS available but environments are unstructured and dynamic; fusion of GNSS, LiDAR, and vision.
+  - **Underwater**: neither GNSS nor LiDAR is usable; acoustic sensors and Doppler velocity logs (DVL) provide ranging and odometry.
+  - **Aerial**: GNSS, IMU, and vision fused under high dynamics for drones and UAVs.
+  - **Space**: planetary rovers rely on visual odometry and landmark matching in the absence of satellite positioning.
+
+- ### Challenges
+  - Sensor noise and [[Uncertainty]]; dynamic environments with moving objects; perceptual aliasing (similar-looking places); computational complexity; ambiguous situations; limited sensing range; GNSS-denied environments.
+
+- ### Performance Metrics
+  - Localisation accuracy (pose error); precision (repeatability); convergence time to the correct pose; computational efficiency; robustness to failures; coverage (area over which localisation succeeds).
+
 - ### Relationships
+  - is-subclass-of:: [[State Estimation]]
   - uses:: [[LiDAR]]
   - uses:: [[Particle Filter]]
   - uses:: [[Kalman Filter]]
   - uses:: [[Inertial Measurement Unit]]
   - uses:: [[Point Cloud]]
   - uses:: [[Occupancy Grid]]
+  - uses:: [[Monte Carlo Localisation]]
+  - uses:: [[Bayes Filter]]
+  - uses:: [[Motion Model]]
+  - uses:: [[Sensor Model]]
   - enables:: [[Autonomous Navigation]]
   - enables:: [[Simultaneous Localisation and Mapping]]
   - enables:: [[Path Planning]]
@@ -236,19 +309,26 @@ public:: true
   - requires:: [[Sensor Fusion]]
   - requires:: [[Probabilistic Inference]]
   - requires:: [[Coordinate Frame]]
+  - requires:: [[Sensor System]]
   - dependsOn:: [[Odometry]]
   - dependsOn:: [[Feature Extraction]]
   - dependsOn:: [[Loop Closure Detection]]
+  - dependsOn:: [[Probabilistic Robotics]]
   - relatedTo:: [[SLAM]]
   - relatedTo:: [[Dead Reckoning]]
   - relatedTo:: [[Global Navigation Satellite System]]
   - relatedTo:: [[Pose Estimation]]
   - relatedTo:: [[Map Matching]]
+  - relatedTo:: [[Robot Pose]]
+  - relatedTo:: [[Uncertainty]]
   - bridges-to:: [[Spatial Computing]]
   - bridges-to:: [[Digital Twin]]
   - bridges-to:: [[Indoor Positioning System]]
   - contrastsWith:: [[Global Localisation]]
   - contrastsWith:: [[Position Tracking]]
+  - contrastsWith:: [[Mapping]]
+  - supports:: [[Autonomous Vehicles]]
+  - supports:: [[Mobile Robotics]]
 
 - ### Standards and Context
   - **ROS / ROS 2**: de facto middleware for robotics localisation; REP-105 defines canonical coordinate frame conventions; the `nav_stack` (Navigation Stack) bundles AMCL, costmap2d, move_base for 2-D mobile robot localisation.

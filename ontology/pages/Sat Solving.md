@@ -90,7 +90,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -152,7 +152,7 @@ public:: true
   - supports:: [[Theorem Proving]]
   - supports:: [[Verification]]
   - implements:: [[Automated Reasoning]]
-  - requires:: [[Optimization Algorithm]]
+  - requires:: [[Optimisation Algorithm]]
   - relatedTo:: [[Planning]]
   - relatedTo:: [[Electronic Design Automation]]
   - partOf:: [[Automated Reasoning]]

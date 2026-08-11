@@ -174,7 +174,7 @@ public:: true
         "label": "Semantic Web"
       },
       {
-        "@id": "urn:ngm:class:agent2agent-protocol",
+        "@id": "urn:ngm:class:agent2-agent-protocol",
         "label": "Agent2Agent Protocol"
       },
       {

@@ -73,7 +73,7 @@ public:: true
         "label": "Transaction Monitoring"
       },
       {
-        "@id": "urn:ngm:class:suspicious-activity-reporting",
+        "@id": "urn:ngm:class:suspicious-activity-report",
         "label": "Suspicious Activity Reporting"
       },
       {

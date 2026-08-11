@@ -63,7 +63,7 @@ public:: true
       "vc:label": "Maintenance Schedule"
     },
     {
-      "@id": "urn:visionflow:linked:real-time-synchronization",
+      "@id": "urn:visionflow:linked:real-time-synchronisation",
       "vc:label": "Real-time Synchronization"
     },
     {
@@ -184,7 +184,7 @@ public:: true
         "label": "IoT Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:real-time-synchronization",
+        "@id": "urn:ngm:class:real-time-synchronisation",
         "label": "Real-time Synchronization"
       },
       {
@@ -305,8 +305,8 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Real-time Synchronization]]",
-      "resolved": "urn:visionflow:linked:real-time-synchronization",
+      "raw": "[[Real-Time Synchronisation]]",
+      "resolved": "urn:visionflow:linked:real-time-synchronisation",
       "kind": "StubLink"
     },
     {
@@ -390,7 +390,7 @@ public:: true
   - bridges-to:: [[Autonomous Robot]]
   - has-part:: [[BIM Model]], [[IoT Sensor Network]], [[Asset Database]], [[Maintenance Schedule]], [[Energy Management System]]
   - is-part-of:: [[Smart Building Ecosystem]], [[Digital Twin]]
-  - requires:: [[BIM Software]], [[IoT Infrastructure]], [[Cloud Platform]], [[Real-time Synchronization]]
+  - requires:: [[BIM Software]], [[IoT Infrastructure]], [[Cloud Platform]], [[Real-Time Synchronisation]]
   - enables:: [[Lifecycle Management]], [[Predictive Maintenance]], [[Energy Optimization]], [[Space Planning]]
   - depends-on:: [[Building Information Modeling]], [[Construction Data]], [[Facility Management System]]
 

@@ -38,7 +38,7 @@ public:: true
         "label": "Provenance Tracking"
       },
       {
-        "@id": "urn:ngm:class:logistics-optimization",
+        "@id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       },
       {
@@ -145,10 +145,10 @@ public:: true
 ```
 
 - ### Definition
-  - [[Supply Chain Visibility]] is the organisation-wide capability to obtain real-time, multi-tier awareness of inventory positions, shipment locations, and supplier conditions across the full [[Supply Chain]], enabling proactive disruption response through integrated [[Supply Chain Traceability]], [[Logistics Optimization]], and data sharing across supply network participants.
+  - [[Supply Chain Visibility]] is the organisation-wide capability to obtain real-time, multi-tier awareness of inventory positions, shipment locations, and supplier conditions across the full [[Supply Chain]], enabling proactive disruption response through integrated [[Supply Chain Traceability]], [[Logistics Optimisation]], and data sharing across supply network participants.
 
 - ### Relationships
-  - [[Supply Chain Visibility]] is operationally implemented through [[Supply Chain Traceability]] systems that assign unique identifiers to shipments and record events at each handover point, and [[Provenance Tracking]] mechanisms that extend this to raw material origin. [[Logistics Optimization]] algorithms consume visibility data to reroute shipments around delays. The capability extends to [[Cold Chain Monitoring]] for temperature-sensitive goods and enables [[Compliance Monitoring]] against regulations such as the EU Deforestation Regulation and the UK Modern Slavery Act. [[Supply Chain Blockchain]] architectures provide immutable, multi-party [[Supply Chain Transparency]] where trust between participants is limited.
+  - [[Supply Chain Visibility]] is operationally implemented through [[Supply Chain Traceability]] systems that assign unique identifiers to shipments and record events at each handover point, and [[Provenance Tracking]] mechanisms that extend this to raw material origin. [[Logistics Optimisation]] algorithms consume visibility data to reroute shipments around delays. The capability extends to [[Cold Chain Monitoring]] for temperature-sensitive goods and enables [[Compliance Monitoring]] against regulations such as the EU Deforestation Regulation and the UK Modern Slavery Act. [[Supply Chain Blockchain]] architectures provide immutable, multi-party [[Supply Chain Transparency]] where trust between participants is limited.
 
 - ### Content
   - Supply chain visibility emerged as a strategic priority following a series of high-profile disruptions: the 2011 Fukushima earthquake and Thai floods revealed how single-source dependencies could halt global automotive production, the 2017 WannaCry ransomware attack disrupted Maersk's container logistics, and the 2020-2021 COVID-19 pandemic caused cascading shortages from semiconductor chips to medical PPE. In each case, the fundamental problem was that organisations could not see beyond their immediate tier-1 suppliers, creating blind spots for risk and inventory positioning. Gartner began tracking supply chain visibility as a distinct technology category in the mid-2010s.

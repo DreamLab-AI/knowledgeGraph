@@ -37,7 +37,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:occupancy-grid", "label": "Occupancy Grid"},
-      {"@id": "urn:ngm:class:localization", "label": "Localization"}
+      {"@id": "urn:ngm:class:localisation", "label": "Localization"}
     ]
   },
   "quality": 0.8
@@ -48,7 +48,7 @@ public:: true
   Environmental mapping is the process of building structured, machine-interpretable representations of physical spaces using sensors and algorithms, forming the perceptual foundation for [[Autonomous Navigation]] and [[Robotics]] applications.
 
 - ### Relationships
-  Environmental mapping depends on [[Sensor Fusion]] to combine heterogeneous data streams and [[Lidar]] for precise depth measurement. It consumes [[Point Cloud]] data and applies [[SLAM]] algorithms to localise the agent within the map simultaneously. The resulting representations, including [[Occupancy Grid]] structures, directly enable [[Localization]] and downstream planning.
+  Environmental mapping depends on [[Sensor Fusion]] to combine heterogeneous data streams and [[Lidar]] for precise depth measurement. It consumes [[Point Cloud]] data and applies [[SLAM]] algorithms to localise the agent within the map simultaneously. The resulting representations, including [[Occupancy Grid]] structures, directly enable [[Localisation]] and downstream planning.
 
 - ### Content
   - Environmental mapping emerged from the robotic navigation literature of the 1980s and 1990s, evolving from simple grid-based representations pioneered by Moravec and Elfes to rich 3-D volumetric models. The simultaneous localisation and mapping (SLAM) problem, formalised in the late 1990s, became the central theoretical challenge: how to build a consistent map while localising within it without external reference. Early probabilistic approaches used particle filters and extended Kalman filters to manage uncertainty, establishing environmental mapping as a mature sub-discipline of robotics.

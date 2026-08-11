@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:standards-organization",
   "@type": "Class",
   "label": "Standards Organization",
-  "definition": "Standards Organization is an artificial intelligence concept.",
+  "definition": "A standards organisation is a body that develops, publishes, and maintains technical standards through consensus among industry, academic, and governmental stakeholders. Bodies such as the W3C, ISO, IEEE, and the Khronos Group produce the specifications that underpin interoperability across the web, extended reality, and artificial intelligence systems.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "relations": {
@@ -51,6 +51,15 @@ public:: true
         "@id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
       }
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:world-wide-web-consortium", "label": "World Wide Web Consortium"},
+      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
+      {"@id": "urn:ngm:class:web-standards", "label": "Web Standards"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:open-standards", "label": "Open Standards"},
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
     ]
   },
   "quality": 0.35,
@@ -95,14 +104,18 @@ public:: true
 
 
 - ### Definition
-  - Standards Organization is a concept within the metaverse domain. Further enrichment pending.
+  - A standards organisation is a body that develops, publishes, and maintains technical standards through consensus among industry, academic, and governmental stakeholders. Bodies such as the W3C, ISO, IEEE, and the Khronos Group produce the specifications that underpin interoperability across the web, extended reality, and artificial intelligence systems.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:StandardsOrganization
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - related-to:: [[World Wide Web Consortium]]
+  - related-to:: [[Khronos Group]]
+  - related-to:: [[Web Standards]]
+  - enables:: [[Open Standards]]
+  - enables:: [[Interoperability]]
 
 - ### Content
 

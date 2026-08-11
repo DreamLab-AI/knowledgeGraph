@@ -11,7 +11,7 @@ public:: true
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
-      "@id": "urn:visionflow:linked:data-center",
+      "@id": "urn:visionflow:linked:data-centre",
       "vc:label": "DataCenter"
     },
     {
@@ -207,7 +207,7 @@ public:: true
   "vc:resolutions": [
     {
       "raw": "[[DataCenter|data centers]]",
-      "resolved": "urn:visionflow:linked:data-center",
+      "resolved": "urn:visionflow:linked:data-centre",
       "kind": "StubLink"
     },
     {

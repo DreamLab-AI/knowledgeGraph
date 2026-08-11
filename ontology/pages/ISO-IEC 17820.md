@@ -39,10 +39,22 @@ alias:: ISO/IEC 17820
   "@id": "urn:ngm:class:iso-iec-17820",
   "@type": "Class",
   "label": "ISO-IEC 17820",
-  "definition": "ISO/IEC 17820 is a standard published by the joint ISO/IEC technical committee.",
+  "definition": "ISO/IEC 17820 is a standard designation attributed to the joint ISO/IEC technical committee. Within this corpus it is cited as a normative reference for motion capture rigs and reality capture systems, but no published standard under this number appears in the public ISO catalogue as of 2026, so the designation should be treated as provisional pending verification.",
   "domain": "standards",
   "maturity": "established",
   "qualityScore": 0.7,
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:reality-capture-system",
+        "label": "Reality Capture System"
+      }
+    ]
+  },
   "subClassOf": [
     {
       "@id": "urn:ngm:class:technical-standard",
@@ -85,7 +97,7 @@ alias:: ISO/IEC 17820
 
 
 - ### Definition
-  - ISO/IEC 17820 is a standard published by the joint ISO/IEC technical committee.
+  - ISO/IEC 17820 is a standard designation attributed to the joint ISO/IEC technical committee. Within this corpus it is cited as a normative reference for motion capture rigs and reality capture systems, but no published standard under this number appears in the public ISO catalogue as of 2026, so the designation should be treated as provisional pending verification.
 
 - ### Semantic Classification
   - owl-class:: standards:ISOIEC17820
@@ -93,6 +105,7 @@ alias:: ISO/IEC 17820
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standard]]
+  - related-to:: [[Motion Capture]], [[Reality Capture System]]
 
 - ### Content
   - ISO/IEC 17820 is a standard published by the joint ISO/IEC technical committee.

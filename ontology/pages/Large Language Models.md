@@ -232,6 +232,7 @@ alias:: LLM, Large Language Model
   "@type": "Class",
   "label": "Large Language Models",
   "definition": "Large Language Models (LLMs) are Foundation Models with s to s of parameters trained on massive text corpora using Transformer architectures and Self-Supervised Learning, capable of performing diverse Natural Language Processing tasks through Few-Shot Learning,",
+  "vc:plainGloss": "The AI engine behind chatbots and assistants: trained on vast amounts of text so it can read your request and write a fitting reply. It predicts likely wording rather than looking things up, which makes it fluent and flexible but also prone to stating something confidently even when it is wrong.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -618,6 +619,9 @@ alias:: LLM, Large Language Model
 
 - ### Definition
   - [[Large Language Models]] (LLMs) are [[Large-Scale Pretrained Foundation Model]] with billions to trillions of parameters trained on massive text corpora using [[Transformer]] architectures and [[Self-Supervised Learning]], capable of performing diverse [[Natural Language Processing]] tasks through [[Few-Shot Learning]], [[Zero-Shot Learning]], and [[Prompt Engineering]]. LLMs represent a paradigm shift in [[Artificial Intelligence]], demonstrating emergent capabilities in reasoning, code generation, multilingual understanding, and complex task decomposition.
+
+- ### In Plain Terms
+  - The AI engine behind chatbots and assistants: trained on vast amounts of text so it can read your request and write a fitting reply. It predicts likely wording rather than looking things up, which makes it fluent and flexible but also prone to stating something confidently even when it is wrong.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:LargeLanguageModel

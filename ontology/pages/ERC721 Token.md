@@ -86,7 +86,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:nft", "label": "NFT"},
       {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"},
+      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenization"},
       {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"}
     ],
     "standardizedBy": [
@@ -147,7 +147,7 @@ public:: true
   - requires:: [[ERC721 Standard]], [[Blockchain Transaction]], [[Digital Ownership]]
   - enables:: [[NFT Marketplace]], [[NFT Minting]], [[Digital Asset Trading]], [[Fractionalized NFT]]
   - contrastsWith:: [[ERC-20]], [[ERC-1155]], [[ERC1155 Token]]
-  - relatedTo:: [[NFT]], [[Digital Asset]], [[Asset Tokenization]], [[Smart Contracts]]
+  - relatedTo:: [[NFT]], [[Digital Asset]], [[Asset Tokenisation]], [[Smart Contracts]]
   - standardizedBy:: [[ERC721]], [[Token Standard]]
 
 - ### Content

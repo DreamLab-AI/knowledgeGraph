@@ -127,7 +127,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:robo-human-robot-interaction",
+      "@id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     },
     {
@@ -376,7 +376,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -408,17 +408,17 @@ public:: true
 - ### Semantic Classification
   - owl-class:: robotics:SocialRobotics
   - owl-role:: Field
-  - belongs-to-domain:: [[Robotics]], [[Human-Robot Interaction]], [[AI]]
+  - belongs-to-domain:: [[Robotics]], [[Human Robot Interaction]], [[AI]]
 
 - ### Relationships
-  - is-subclass-of:: [[Human-Robot Interaction]]
+  - is-subclass-of:: [[Human Robot Interaction]]
   - requires:: [[Communication Capabilities]]
   - enables:: [[Human-Robot Collaboration]], [[Assistive Robotics]]
 
 - ### Content
 
   - #### OWL Restrictions
-  - is-subclass-of:: [[Human-Robot Interaction]]
+  - is-subclass-of:: [[Human Robot Interaction]]
   - requires:: [[Social Intelligence]]
   - requires:: [[Communication Capabilities]]
   - exhibits:: [[Social Behavior]]
@@ -426,7 +426,7 @@ public:: true
   - characterized-by:: [[Emotional Expression]], [[Social Awareness]]
 
   - #### Relationships
-  - is-subclass-of:: [[Human-Robot Interaction]]
+  - is-subclass-of:: [[Human Robot Interaction]]
   - skos:related:: [[RB-1012-trust-in-automation]], [[RB-1010-telepresence]]
   - enables:: [[Human-Robot Collaboration]], [[Assistive Robotics]]
   - uses:: [[Natural Language Processing]], [[Computer Vision]], [[Affective Computing]]
@@ -517,5 +517,5 @@ public:: true
   - accuracy:: 0.91
 
 - ### Provenance
-  - sources:: [[Human-Robot Interaction]], [[Social Sciences]]
+  - sources:: [[Human Robot Interaction]], [[Social Sciences]]
   - migration-date:: 2026-04-26T00:00:00Z

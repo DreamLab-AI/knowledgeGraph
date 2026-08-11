@@ -164,7 +164,7 @@ public:: true
         "label": "Network Topology"
       },
       {
-        "@id": "urn:ngm:class:state-synchronization",
+        "@id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization"
       }
     ],
@@ -348,7 +348,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[State Synchronization]]",
+      "raw": "[[State Synchronisation]]",
       "resolved": "urn:visionflow:owl:class:state-synchronization",
       "kind": "ResolvedLink"
     },
@@ -383,7 +383,7 @@ public:: true
   - implemented-in-layer:: [[Network Layer]], [[Data Layer]]
 
 - ### Relationships
-  - has-part:: [[Distributed Nodes]], [[State Synchronization]], [[Consensus Protocol]], [[Replication Strategy]], [[Network Topology]], [[Load Balancing]]
+  - has-part:: [[Distributed Nodes]], [[State Synchronisation]], [[Consensus Protocol]], [[Replication Strategy]], [[Network Topology]], [[Load Balancing]]
   - is-part-of:: [[System Architecture]], [[Reference Architecture]]
   - requires:: [[Network Infrastructure]], [[Synchronization Protocols]], [[Distributed Consensus]], [[Fault Tolerance]]
   - enables:: [[Scalability]], [[Geographic Distribution]], [[High Availability]], [[Fault Tolerance]], [[Decentralization]]

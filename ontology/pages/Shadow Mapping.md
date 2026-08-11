@@ -47,7 +47,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:rasterisation",
+        "@id": "urn:ngm:class:rasterization",
         "label": "Rasterisation"
       },
       {
@@ -109,7 +109,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:rasterisation",
+        "@id": "urn:ngm:class:rasterization",
         "label": "Rasterisation"
       },
       {

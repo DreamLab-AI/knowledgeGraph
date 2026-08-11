@@ -225,7 +225,7 @@ elevatedFrom:: [[Human tracking and SLAM capture]]
     - Film and game studios replace optical marker suits with camera-array SLAM rigs, reducing setup time from hours to minutes.
     - Tools like [[OpenPose]] and commercial successors (Move.ai, Kinetix) approximate this pipeline without dedicated SLAM backends.
   - **Human-robot collaboration**
-    - [[Human-Robot Interaction]] safety requires a robot to know exactly where human limbs are relative to its own trajectory plan.
+    - [[Human Robot Interaction]] safety requires a robot to know exactly where human limbs are relative to its own trajectory plan.
     - Shared SLAM maps allow a robot arm to update a joint occupancy model in real time, enabling predictive collision avoidance.
   - **Telepresence and volumetric communication**
     - Capturing a speaker's full body in a metrically accurate room model lets remote participants perceive realistic spatial audio and gaze direction.
@@ -251,7 +251,7 @@ elevatedFrom:: [[Human tracking and SLAM capture]]
   - enables:: [[Motion Capture]]
   - enables:: [[Avatar Animation]]
   - enables:: [[Extended Reality]]
-  - enables:: [[Human-Robot Interaction]]
+  - enables:: [[Human Robot Interaction]]
   - requires:: [[Computer Vision]]
   - requires:: [[Real-Time Processing]]
   - requires:: [[Sensor Fusion]]

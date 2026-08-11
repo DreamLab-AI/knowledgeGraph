@@ -49,7 +49,7 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"},
+      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"},
       {"@id": "urn:ngm:class:design-software", "label": "Design Software"}
     ],
     "uses": [

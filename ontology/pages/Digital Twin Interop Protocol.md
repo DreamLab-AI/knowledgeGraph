@@ -138,7 +138,7 @@ public:: true
   "@id": "urn:ngm:class:digital-twin-interop-protocol",
   "@type": "Class",
   "label": "Digital Twin Interop Protocol",
-  "definition": "Digital Twin Interop Protocol is a spatial computing concept.",
+  "definition": "A standardised API and communication framework enabling the exchange of state, simulation data, and behaviour models between heterogeneous digital twin systems, defining data formats, query interfaces, and synchronisation semantics so twins built on different platforms can interoperate and compose into federated simulations.",
   "domain": "spatial-computing",
   "maturity": "established",
   "relations": {
@@ -160,7 +160,7 @@ public:: true
         "label": "Metadata Schema"
       },
       {
-        "@id": "urn:ngm:class:state-synchronization",
+        "@id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronization"
       }
     ],
@@ -350,7 +350,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[State Synchronization]]",
+      "raw": "[[State Synchronisation]]",
       "resolved": "urn:visionflow:owl:class:state-synchronization",
       "kind": "ResolvedLink"
     }
@@ -367,7 +367,7 @@ public:: true
 
 
 - ### Definition
-  - Standardised API and communication framework enabling exchange of state, simulation data, and behaviour models between heterogeneous digital twin systems across platforms.
+  - A standardised API and communication framework enabling the exchange of state, simulation data, and behaviour models between heterogeneous digital twin systems, defining data formats, query interfaces, and synchronisation semantics so twins built on different platforms can interoperate and compose into federated simulations.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalTwinInteropProtocol
@@ -377,7 +377,7 @@ public:: true
   - implemented-in-layer:: [[DataLayer]]
 
 - ### Relationships
-  - has-part:: [[Data Exchange Format]], [[API Specification]], [[Authentication Layer]], [[State Synchronization]], [[Metadata Schema]], [[Query Interface]]
+  - has-part:: [[Data Exchange Format]], [[API Specification]], [[Authentication Layer]], [[State Synchronisation]], [[Metadata Schema]], [[Query Interface]]
   - is-part-of:: [[Digital Twin Framework]], [[Interoperability Architecture]]
   - requires:: [[Data Serialization]], [[Network Protocol]], [[Identity Management]], [[Schema Registry]]
   - enables:: [[Cross-Platform Digital Twins]], [[Federated Simulation]], [[Twin Composition]], [[Real-Time State Sync]]

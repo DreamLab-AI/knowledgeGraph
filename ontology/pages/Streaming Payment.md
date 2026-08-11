@@ -60,7 +60,7 @@ public:: true
         "label": "Web Monetization"
       },
       {
-        "@id": "urn:ngm:class:machine-to-machine-payment",
+        "@id": "urn:ngm:class:machine-to-machine-payments",
         "label": "Machine-to-Machine Payment"
       },
       {

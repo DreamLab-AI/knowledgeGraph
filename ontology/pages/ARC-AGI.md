@@ -190,7 +190,7 @@ public:: true
       {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
       {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
       {"@id": "urn:ngm:class:ai-benchmark-epistemological-critique", "label": "AI Benchmark Epistemological Critique"},
-      {"@id": "urn:ngm:class:neurosymbolic-ai", "label": "Neurosymbolic AI"}
+      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neurosymbolic AI"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},

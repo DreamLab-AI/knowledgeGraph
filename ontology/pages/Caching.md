@@ -11,6 +11,7 @@ public:: true
   "@type":"Class",
   "label":"Caching",
   "definition":"Caching is the technique of storing copies of frequently accessed data or computed results in a faster, closer storage tier so that subsequent requests can be served without repeating the expensive original operation. It trades additional memory or storage for reduced latency and lower load on backend systems, governed by policies for placement, expiry and invalidation. Caches appear at every layer of a system, from CPU registers and operating systems to content delivery networks and application-level stores.",
+  "vc:plainGloss":"Keeping a ready copy of something you have already fetched or worked out, so the next time it is asked for you can hand it over instantly instead of doing the slow work again — like keeping your most-used files on the desk rather than in the archive.",
   "domain":"infrastructure",
   "maturity":"mature",
   "subClassOf":[{"@id":"urn:ngm:class:performance-optimization","label":"Performance Optimization"}],
@@ -32,6 +33,8 @@ public:: true
 ```
 - ### Definition
 - Caching stores copies of frequently used data in a faster tier so repeat requests avoid the original expensive operation. It is a foundational element of [[Performance Optimization]], reducing [[Latency]] and improving [[Throughput]] while supporting [[Scalability]] across [[Distributed Systems]].
+- ### In Plain Terms
+- Keeping a ready copy of something you have already fetched or worked out, so the next time it is asked for you can hand it over instantly instead of doing the slow work again — like keeping your most-used files on the desk rather than in the archive.
 - ### Overview
 - A cache sits between a consumer and an authoritative data source, intercepting reads and serving them from local fast storage when a copy is present (a cache hit). When the data is absent (a cache miss) the request falls through to the source and the result is typically stored for future use.
 - The effectiveness of a cache is measured by its hit ratio: the fraction of requests satisfied from the cache. High hit ratios are achieved by exploiting temporal and spatial locality in access patterns.

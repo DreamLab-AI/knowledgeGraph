@@ -43,6 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Information Retrieval",
   "definition": "Information Retrieval (IR) is the science and engineering discipline concerned with representing, storing, organising, and providing access to items of information — typically documents, passages, or structured records — so that a user's information need, expressed as a query, can be satisfied efficiently and accurately. Classical IR models such as the Boolean model, the vector space model (TF-IDF), and probabilistic models (BM25) underpin search engines and document ranking systems; neural IR extends these with dense vector representations derived from transformer language models, enabling semantic matching that generalises beyond exact term overlap. Modern IR encompasses sparse retrieval, dense retrieval, re-ranking, and hybrid architectures, and is the core subsystem enabling Retrieval-Augmented Generation (RAG), question answering, and knowledge-graph-grounded AI systems.",
+  "vc:plainGloss": "The technology behind search: sifting a large pile of documents to surface the handful most relevant to your question. It is the engine that powers search boxes and lets AI assistants look things up before they answer.",
   "domain": "ai",
   "maturity": "mature",
   "subClassOf": [
@@ -195,6 +196,9 @@ public:: true
 
 - ### Definition
   - Information Retrieval (IR) is the science and engineering discipline concerned with representing, storing, organising, and providing efficient access to documents, passages, or structured records so that a user's information need can be satisfied in response to a query. It sits at the intersection of [[Natural Language Processing]], [[Machine Learning]], and database systems, encompassing classical statistical models such as TF-IDF and BM25 as well as modern neural approaches using [[Transformer]] encoders and [[Vector Database]] nearest-neighbour search. IR is the foundational subsystem powering [[Search Engine]] technology, [[Retrieval-Augmented Generation]] pipelines, and [[Question Answering]] systems, and has reached maturity as a field through decades of [[Evaluation Metrics]] research, standard benchmarks (TREC, BEIR), and large-scale production deployments.
+
+- ### In Plain Terms
+  - The technology behind search: sifting a large pile of documents to surface the handful most relevant to your question. It is the engine that powers search boxes and lets AI assistants look things up before they answer.
 
 - ### Overview
   - Information Retrieval addresses the fundamental challenge of matching an expressed user need — a query — against a potentially vast, heterogeneous corpus of information items to return those items most likely to be relevant.

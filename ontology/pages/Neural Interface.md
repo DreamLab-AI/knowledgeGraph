@@ -115,7 +115,7 @@ public:: true
 - ### Definition
   - [[Prosthetics]]
   - [[Electromyography]]
-  - [[Human-Robot Interaction]]
+  - [[Human Robot Interaction]]
   - [[Exoskeleton]]
   - [[Signal Processing]]
 - ### Overview
@@ -145,7 +145,7 @@ public:: true
   - requires:: [[Control System]]
   - dependsOn:: [[Feedback Control]]
   - implements:: [[Actuator]]
-  - bridgesTo:: [[Human-Robot Interaction]]
+  - bridgesTo:: [[Human Robot Interaction]]
   - relatedTo:: [[Robotics]]
 - ### Provenance
   - attributedTo:: did:nostr:ontology-mesh

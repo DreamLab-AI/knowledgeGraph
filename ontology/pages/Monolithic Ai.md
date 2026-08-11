@@ -29,7 +29,7 @@ public:: true
     "contrastsWith": [
       {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
       {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
-      {"@id": "urn:ngm:class:microservice", "label": "Microservice"},
+      {"@id": "urn:ngm:class:microservices", "label": "Microservice"},
       {"@id": "urn:ngm:class:modular-ai", "label": "Modular AI"},
       {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
     ],

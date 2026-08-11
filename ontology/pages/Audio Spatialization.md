@@ -142,7 +142,7 @@ public:: true
         "label": "Immersive Audio"
       },
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Sound Localization"
       },
       {

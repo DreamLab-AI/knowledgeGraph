@@ -136,7 +136,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:light-field-camera", "label": "Light Field Camera"},
       {"@id": "urn:ngm:class:plenoptic-camera", "label": "Plenoptic Camera"},
-      {"@id": "urn:ngm:class:nerf", "label": "NeRF"},
+      {"@id": "urn:ngm:class:ne-rf", "label": "NeRF"},
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
       {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
       {"@id": "urn:ngm:class:video-stabilisation", "label": "Video Stabilisation"},

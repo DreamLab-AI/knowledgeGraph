@@ -134,11 +134,11 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:node-graph-visual-programming-interface", "label": "Node-Based Programming"},
       {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:civit-ai", "label": "CivitAI"},
+      {"@id": "urn:ngm:class:civitai", "label": "CivitAI"},
       {"@id": "urn:ngm:class:hugging-face-hub", "label": "Hugging Face Hub"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:automatic1111-web-ui", "label": "AUTOMATIC1111 Stable Diffusion WebUI"},
+      {"@id": "urn:ngm:class:automatic-1111-web-ui", "label": "AUTOMATIC1111 Stable Diffusion WebUI"},
       {"@id": "urn:ngm:class:pip", "label": "pip"}
     ],
     "relatedTo": [

@@ -192,7 +192,7 @@ public:: true
 ```
 
 - ### Definition
-  - Robot Dynamics is the branch of classical and computational mechanics that characterises the forces, torques, inertias, and energy flows governing the motion of robotic mechanisms. It is built upon [[Rigid Body Mechanics]], [[Kinematics]], and [[Lagrangian Mechanics]], and provides two complementary computational pathways: [[Forward Dynamics]] (given joint torques, determine resulting accelerations and trajectories) and [[Inverse Dynamics]] (given a desired motion trajectory, determine the required joint torques). The field underpins virtually every aspect of advanced [[Robot Control]], from high-speed pick-and-place to [[Legged Locomotion]] and [[Human-Robot Interaction]].
+  - Robot Dynamics is the branch of classical and computational mechanics that characterises the forces, torques, inertias, and energy flows governing the motion of robotic mechanisms. It is built upon [[Rigid Body Mechanics]], [[Kinematics]], and [[Lagrangian Mechanics]], and provides two complementary computational pathways: [[Forward Dynamics]] (given joint torques, determine resulting accelerations and trajectories) and [[Inverse Dynamics]] (given a desired motion trajectory, determine the required joint torques). The field underpins virtually every aspect of advanced [[Robot Control]], from high-speed pick-and-place to [[Legged Locomotion]] and [[Human Robot Interaction]].
 
 - ### Overview
   - Robot Dynamics extends classical mechanics to articulated, multi-link mechanical systems that may interact with their environment through contact, external loads, and constrained motion. Unlike purely kinematic analysis, which addresses position and velocity without regard to forces, dynamics captures the inertial coupling between links, gravitational effects, Coriolis and centrifugal terms, and joint-level friction.
@@ -202,7 +202,7 @@ public:: true
   - Why it matters:
     - Model-based controllers that exploit dynamic models outperform pure kinematic or PID control in speed, energy efficiency, and payload capacity.
     - Physics-based simulation of robots requires accurate dynamic parameters to predict behaviour before hardware deployment.
-    - Safe [[Human-Robot Interaction]] depends on predicting impact forces and implementing compliant control laws grounded in the dynamic model.
+    - Safe [[Human Robot Interaction]] depends on predicting impact forces and implementing compliant control laws grounded in the dynamic model.
 
 - ### Key Components
   - #### Forward Dynamics
@@ -239,7 +239,7 @@ public:: true
     - [[Legged Locomotion]] (bipedal and quadrupedal robots such as Boston Dynamics' Atlas and Spot) requires whole-body dynamic models to plan footsteps, balance, and recover from disturbances.
     - [[Whole-Body Control]] frameworks solve optimisation problems grounded in the full-body dynamic model at kilohertz rates.
   - #### Compliant and Collaborative Robots
-    - [[Compliant Actuation]] (series elastic actuators, variable-impedance drives) requires knowledge of link dynamics to implement impedance and admittance control for safe [[Human-Robot Interaction]].
+    - [[Compliant Actuation]] (series elastic actuators, variable-impedance drives) requires knowledge of link dynamics to implement impedance and admittance control for safe [[Human Robot Interaction]].
     - Collaborative robots (cobots) use dynamic models to detect unexpected external forces indicative of collisions with human operators.
   - #### Trajectory Optimisation
     - [[Trajectory Optimisation]] methods (DDP, iLQR, TOPP) incorporate the robot's dynamic equations as constraints or cost-function terms to generate energy-efficient or time-optimal paths.
@@ -271,7 +271,7 @@ public:: true
   - enables:: [[Robot Simulation]]
   - enables:: [[Whole-Body Control]]
   - supports:: [[Legged Locomotion]]
-  - supports:: [[Human-Robot Interaction]]
+  - supports:: [[Human Robot Interaction]]
   - supports:: [[Compliant Actuation]]
   - relatedTo:: [[Robot Safety]]
   - relatedTo:: [[State Estimation]]

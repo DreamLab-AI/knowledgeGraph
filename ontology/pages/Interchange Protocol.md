@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:interchange-protocol",
   "@type": "Class",
   "label": "Interchange Protocol",
-  "definition": "Interchange Protocol is a spatial computing concept.",
+  "definition": "An interchange protocol is an agreed set of rules and data formats for transferring assets, avatars, scenes and other content between platforms and applications. Such protocols enable interoperability across virtual environments and spatial computing systems, allowing content to move between implementations without loss of structure or meaning.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "relations": {
@@ -50,6 +50,26 @@ public:: true
       {
         "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:protocol",
+        "label": "Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-interoperability",
+        "label": "Metaverse Interoperability"
       }
     ]
   },
@@ -95,14 +115,15 @@ public:: true
 
 
 - ### Definition
-  - Interchange Protocol is a concept within the metaverse domain. Further enrichment pending.
+  - An interchange protocol is an agreed set of rules and data formats for transferring assets, avatars, scenes and other content between platforms and applications. Such protocols enable interoperability across virtual environments and spatial computing systems, allowing content to move between implementations without loss of structure or meaning.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:InterchangeProtocol
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - related-to:: [[Interoperability]], [[Data Interoperability]], [[Protocol]]
+  - enables:: [[Metaverse Interoperability]]
 
 - ### Content
 

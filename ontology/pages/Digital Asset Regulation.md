@@ -23,7 +23,7 @@ public:: true
     ],
     "bridgesTo":[
       {"@id":"urn:ngm:class:digital-securities","label":"Digital Securities"},
-      {"@id":"urn:ngm:class:asset-tokenization","label":"Asset Tokenization"}
+      {"@id":"urn:ngm:class:asset-tokenisation","label":"Asset Tokenization"}
     ],
     "implements":[
       {"@id":"urn:ngm:class:securities-regulation","label":"Securities Regulation"},
@@ -53,7 +53,7 @@ public:: true
   - Digital asset regulation is the legal and supervisory regime governing the issuance, trading, and custody of [[Crypto Asset]] instruments.
   - It is a specialised branch of [[Financial Regulation]] that adapts [[Securities Law]] to blockchain-based instruments.
   - It applies tests such as the [[Howey Test]] to classify whether a [[Digital Asset]] is a security.
-  - It aims at [[Investor Protection]] while accommodating innovations like [[Asset Tokenization]].
+  - It aims at [[Investor Protection]] while accommodating innovations like [[Asset Tokenisation]].
 - ### Overview
   - Digital asset regulation addresses how existing financial law applies to novel cryptographic instruments and where new frameworks are needed.
   - Classification is central: whether a token is a security, commodity, payment instrument, or something new determines which rules apply.
@@ -74,7 +74,7 @@ public:: true
   - supports:: [[Investor Protection]]
   - supports:: [[Regulatory Compliance]]
   - bridgesTo:: [[Digital Securities]]
-  - bridgesTo:: [[Asset Tokenization]]
+  - bridgesTo:: [[Asset Tokenisation]]
   - implements:: [[Securities Regulation]]
   - implements:: [[Securities Law]]
   - uses:: [[Howey Test]]

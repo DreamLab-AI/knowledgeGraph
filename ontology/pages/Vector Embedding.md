@@ -21,6 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Vector Embedding",
   "definition": "A vector embedding is a dense, fixed-length numerical representation of a discrete object — a word, sentence, image, or user — in a continuous high-dimensional space, learned such that semantically similar objects map to nearby points. Embeddings convert unstructured data into a form amenable to mathematical operations like distance and dot product, enabling similarity search, clustering, recommendation, and retrieval. They are produced by neural encoders and are the representational substrate beneath modern search, retrieval-augmented generation, and multimodal AI.",
+  "vc:plainGloss": "A way of turning a word, sentence, image, or document into a list of numbers that captures its meaning, so that things which mean similar things end up close together. This is what lets a system find results by what you actually meant rather than just matching exact keywords.",
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:embedding", "label": "Embedding"}],
@@ -42,6 +43,9 @@ public:: true
 
 - ### Definition
   - A vector embedding is a dense numerical representation of an object in continuous high-dimensional space, learned so that semantically similar objects map to nearby points, enabling mathematical similarity operations over unstructured data.
+
+- ### In Plain Terms
+  - A way of turning a word, sentence, image, or document into a list of numbers that captures its meaning, so that things which mean similar things end up close together. This is what lets a system find results by what you actually meant rather than just matching exact keywords.
 
 - ### Relationships
   - Vector Embedding is a subclass of [[Embedding]] and is produced by an [[Embedding Model]]. It enables [[Semantic Search]] and is the data type stored and indexed by a [[Vector Database]]. It relates intrinsically to [[Natural Language Processing]], the domain in which learned vector representations of text first transformed the field.

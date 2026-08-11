@@ -90,7 +90,7 @@ public:: true
         "label": "AI Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:data-center",
+        "@id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       }
     ],

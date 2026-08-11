@@ -71,7 +71,7 @@ alias:: BC-0044-supply-chain-management
         "label": "Procurement"
       },
       {
-        "@id": "urn:ngm:class:logistics-optimization",
+        "@id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       }
     ],
@@ -220,7 +220,7 @@ alias:: BC-0044-supply-chain-management
 ```
 
 - ### Definition
-  - Supply Chain Management (SCM) is the integrative discipline that plans, implements, and controls the efficient flow and storage of goods, services, information, and finances from point of origin to point of consumption. It spans [[Procurement]], [[Inventory Management]], [[Logistics Optimization]], and [[Supplier Relationship Management]] within a unified strategic framework. Contemporary SCM employs [[Digital Twin]] modelling, [[Machine Learning]]-driven [[Demand Forecasting]], and [[Blockchain Technology]] for provenance assurance to achieve end-to-end visibility across multi-tier networks. The discipline is underpinned by [[Operations Management]] theory and draws on tools from [[Data Integration]], [[Enterprise Resource Planning]], and [[Resilience Engineering]].
+  - Supply Chain Management (SCM) is the integrative discipline that plans, implements, and controls the efficient flow and storage of goods, services, information, and finances from point of origin to point of consumption. It spans [[Procurement]], [[Inventory Management]], [[Logistics Optimisation]], and [[Supplier Relationship Management]] within a unified strategic framework. Contemporary SCM employs [[Digital Twin]] modelling, [[Machine Learning]]-driven [[Demand Forecasting]], and [[Blockchain Technology]] for provenance assurance to achieve end-to-end visibility across multi-tier networks. The discipline is underpinned by [[Operations Management]] theory and draws on tools from [[Data Integration]], [[Enterprise Resource Planning]], and [[Resilience Engineering]].
 
 - ### Overview
   - SCM emerged as a formalised field in the 1980s as global sourcing created networks too complex to coordinate through traditional purchasing and logistics silos.
@@ -246,7 +246,7 @@ alias:: BC-0044-supply-chain-management
     - Quality management systems (QMS) enforcing standards such as [[ISO 28000]] for supply chain security.
     - Lean manufacturing and [[Just-In-Time Manufacturing]] pull systems to reduce work-in-progress inventory.
   - #### Logistics & Fulfilment
-    - [[Logistics Optimization]] — route planning, carrier selection, modal trade-offs (air vs ocean vs rail), and last-mile delivery.
+    - [[Logistics Optimisation]] — route planning, carrier selection, modal trade-offs (air vs ocean vs rail), and last-mile delivery.
     - Warehouse management systems (WMS) for picking, packing, cross-docking, and slotting optimisation.
     - [[RFID]] and [[IoT Sensor]] networks enabling real-time track-and-trace of shipments and cold-chain monitoring.
   - #### Inventory Management
@@ -263,7 +263,7 @@ alias:: BC-0044-supply-chain-management
 - ### Applications and Use Cases
   - **Food safety traceability** — [[GS1 Standards]]-compliant barcodes and blockchain ledgers allow contaminated produce to be traced to the specific farm lot within minutes rather than days, enabling targeted recalls.
   - **Pharmaceutical serialisation** — Drug Supply Chain Security Act (DSCSA) compliance requires item-level serial numbers and electronic track-and-trace, driving adoption of [[Provenance Tracking]] systems.
-  - **Automotive just-in-sequence delivery** — Tier-1 suppliers receive sequenced delivery windows to assembly lines, requiring near-perfect demand signal sharing and [[Logistics Optimization]].
+  - **Automotive just-in-sequence delivery** — Tier-1 suppliers receive sequenced delivery windows to assembly lines, requiring near-perfect demand signal sharing and [[Logistics Optimisation]].
   - **E-commerce fulfilment** — AI-driven [[Demand Forecasting]] and robotics in fulfilment centres compress order-to-delivery from days to hours.
   - **Trade finance automation** — [[Smart Contract]] instruments on permissioned blockchains (e.g. Contour, Marco Polo) automate letter-of-credit settlement, cutting cycle time from weeks to hours and enabling [[Trade Finance]] inclusion for smaller exporters.
   - **Carbon footprint accounting** — Scope 3 emissions tracking requires product-level carbon data from upstream suppliers, driving [[Sustainability Reporting]] integration into SCM platforms.
@@ -275,7 +275,7 @@ alias:: BC-0044-supply-chain-management
   - hasPart:: [[Demand Forecasting]]
   - hasPart:: [[Inventory Management]]
   - hasPart:: [[Procurement]]
-  - hasPart:: [[Logistics Optimization]]
+  - hasPart:: [[Logistics Optimisation]]
   - hasPart:: [[Supplier Relationship Management]]
   - requires:: [[Data Integration]]
   - requires:: [[Enterprise Resource Planning]]

@@ -70,7 +70,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:data-center",
+        "@id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
       {
@@ -135,7 +135,7 @@ public:: true
 - enables:: [[Volumetric Rendering]]
 - supports:: [[Interactive Rendering]]
 - supports:: [[Metaverse]]
-- requires:: [[Data Center]]
+- requires:: [[Data Centre]]
 - requires:: [[Edge Computing]]
 - bridgesTo:: [[Cloud Computing]]
 - relatedTo:: [[Real-Time Rendering]]

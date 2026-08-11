@@ -46,7 +46,7 @@ public:: true
         "label": "Bluetooth Low Energy"
       },
       {
-        "@id": "urn:ngm:class:wifi",
+        "@id": "urn:ngm:class:wi-fi",
         "label": "Wi-Fi"
       },
       {

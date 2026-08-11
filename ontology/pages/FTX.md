@@ -46,6 +46,22 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:coinbase",
+        "label": "Coinbase"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ]
+  },
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
@@ -102,6 +118,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[Coinbase]]
+  - related-to:: [[Cryptocurrency Exchange]], [[Financial Regulation]]
 
 - ### Content
   - FTX was a cryptocurrency exchange founded by Sam Bankman-Fried in 2019 and based in the Bahamas. At its peak it was among the largest exchanges by trading volume and offered spot and derivatives trading.

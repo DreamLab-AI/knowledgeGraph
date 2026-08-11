@@ -177,7 +177,7 @@ alias:: MotionPlanning
         "label": "Sampling-Based Planning"
       },
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],

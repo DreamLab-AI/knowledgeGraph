@@ -63,7 +63,7 @@ public:: true
         "label": "Language Modeling"
       },
       {
-        "@id": "urn:ngm:class:masked-language-model",
+        "@id": "urn:ngm:class:masked-language-modelling",
         "label": "Masked Language Model"
       },
       {

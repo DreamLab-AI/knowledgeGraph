@@ -23,7 +23,7 @@ public:: true
       {"@id":"urn:ngm:class:gpu","label":"GPU"}
     ],
     "dependsOn":[
-      {"@id":"urn:ngm:class:data-center","label":"Data Center"},
+      {"@id":"urn:ngm:class:data-centre","label":"Data Center"},
       {"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}
     ],
     "enables":[
@@ -43,7 +43,7 @@ public:: true
     ],
     "relatedTo":[
       {"@id":"urn:ngm:class:distributed-computing","label":"Distributed Computing"},
-      {"@id":"urn:ngm:class:data-center","label":"Data Center"},
+      {"@id":"urn:ngm:class:data-centre","label":"Data Center"},
       {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}
     ]
   },
@@ -78,7 +78,7 @@ public:: true
   - requires:: [[Scheduler]]
   - requires:: [[Resource Management]]
   - requires:: [[GPU]]
-  - dependsOn:: [[Data Center]]
+  - dependsOn:: [[Data Centre]]
   - dependsOn:: [[Cloud Computing]]
   - enables:: [[Distributed Training]]
   - enables:: [[Model Training]]
@@ -88,7 +88,7 @@ public:: true
   - supports:: [[MLOps]]
   - partOf:: [[High-Performance Computing]]
   - relatedTo:: [[Distributed Computing]]
-  - relatedTo:: [[Data Center]]
+  - relatedTo:: [[Data Centre]]
   - relatedTo:: [[Deep Learning]]
 - ### Provenance
   - updated:: 2026-06-15

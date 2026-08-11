@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:visioning-lab-property-crosswalk",
   "@type": "Class",
   "label": "VisioningLab-Property-Crosswalk",
-  "definition": "Mapping framework for aligning VisioningLab hybrid page properties to RDF/OWL/SKOS predicates for ontology interoperability.",
+  "definition": "A mapping framework that aligns VisioningLab's hybrid Logseq page properties with standard RDF, OWL, and SKOS predicates so that locally authored metadata can be published as valid linked data. The crosswalk records each property-to-predicate correspondence, supporting ontology interoperability and round-tripping between the knowledge graph and external semantic web tooling.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [
@@ -55,7 +55,14 @@ public:: true
       "label": "Standards and Interoperability"
     }
   ],
-  "relations": {},
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -97,7 +104,7 @@ public:: true
 
 
 - ### Definition
-  - Mapping framework for aligning VisioningLab hybrid page properties to RDF/OWL/SKOS predicates for ontology interoperability.
+  - A mapping framework that aligns VisioningLab's hybrid Logseq page properties with standard RDF, OWL, and SKOS predicates so that locally authored metadata can be published as valid linked data. The crosswalk records each property-to-predicate correspondence, supporting ontology interoperability and round-tripping between the knowledge graph and external semantic web tooling.
 - ### Semantic Classification
   - owl-class:: spatial-computing:VisioningLabPropertyCrosswalk
   - owl-role:: Concept

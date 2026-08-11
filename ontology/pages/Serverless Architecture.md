@@ -38,6 +38,7 @@ public:: true
   "@type": "Class",
   "label": "Serverless Architecture",
   "definition": "Serverless Architecture is a cloud execution model in which application logic is deployed as discrete, stateless functions that are provisioned and scaled automatically by the cloud provider in response to events, with billing proportional to actual execution time. By abstracting away server provisioning and capacity management, serverless architectures reduce operational overhead and enable fine-grained, event-driven compute patterns suited to metaverse backends, AI inference endpoints, and IoT data pipelines.",
+  "vc:plainGloss": "A way of running your code where you just hand over the individual functions and the cloud provider quietly supplies and scales the machines to run them, only when something triggers them. You never manage servers, and you pay only for the moments your code is actually running.",
   "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
@@ -94,6 +95,9 @@ public:: true
 
 - ### Definition
   - Serverless Architecture is a cloud execution model in which application logic is deployed as discrete, stateless functions that are provisioned and scaled automatically by the cloud provider in response to events, with billing proportional to actual execution time. By abstracting away server provisioning and capacity management, serverless architectures reduce operational overhead and enable fine-grained, event-driven compute patterns suited to metaverse backends, AI inference endpoints, and IoT data pipelines.
+
+- ### In Plain Terms
+  - A way of running your code where you just hand over the individual functions and the cloud provider quietly supplies and scales the machines to run them, only when something triggers them. You never manage servers, and you pay only for the moments your code is actually running.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ServerlessArchitecture

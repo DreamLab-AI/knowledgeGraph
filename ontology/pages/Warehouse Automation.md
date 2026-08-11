@@ -73,7 +73,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:logistics-optimization",
+        "@id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       },
       {
@@ -228,7 +228,7 @@ public:: true
   - requires:: [[Simultaneous Localisation and Mapping]]
   - requires:: [[Computer Vision]]
   - requires:: [[Robot Fleet Management]]
-  - enables:: [[Logistics Optimization]]
+  - enables:: [[Logistics Optimisation]]
   - enables:: [[Order Fulfilment]]
   - enables:: [[Inventory Management]]
   - uses:: [[Mobile Robot]]

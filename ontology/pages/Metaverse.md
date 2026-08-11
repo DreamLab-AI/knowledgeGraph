@@ -47,7 +47,7 @@ public:: true
       "vc:label": "ISO 23257"
     },
     {
-      "@id": "urn:visionflow:linked:real-time-synchronization",
+      "@id": "urn:visionflow:linked:real-time-synchronisation",
       "vc:label": "Real-time Synchronization"
     },
     {
@@ -244,7 +244,7 @@ public:: true
         "label": "3D Rendering"
       },
       {
-        "@id": "urn:ngm:class:real-time-synchronization",
+        "@id": "urn:ngm:class:real-time-synchronisation",
         "label": "Real-time Synchronization"
       },
       {
@@ -369,8 +369,8 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Real-time Synchronization]]",
-      "resolved": "urn:visionflow:linked:real-time-synchronization",
+      "raw": "[[Real-Time Synchronisation]]",
+      "resolved": "urn:visionflow:linked:real-time-synchronisation",
       "kind": "StubLink"
     },
     {
@@ -531,7 +531,7 @@ public:: true
 - ### Relationships
   - has-part:: [[Virtual World]], [[Avatar]], [[Digital Asset]], [[Spatial Computing Paradigm]], [[Virtual Economy]], [[Social System]], [[Interoperability Protocol]], [[Persistent State]], [[Synchronous Interaction]], [[User Identity System]]
   - is-part-of:: [[Multiverse]]
-  - requires:: [[3D Rendering]], [[Network Infrastructure]], [[Distributed Computing]], [[Identity Management]], [[Asset Management]], [[Blockchain]], [[Real-time Synchronization]]
+  - requires:: [[3D Rendering]], [[Network Infrastructure]], [[Distributed Computing]], [[Identity Management]], [[Asset Management]], [[Blockchain]], [[Real-Time Synchronisation]]
   - enables:: [[Social VR]], [[Virtual Commerce]], [[Immersive Entertainment]], [[Virtual Collaboration]], [[Digital Ownership]], [[Creator Economy]], [[Cross-World Portability]]
   - depends-on:: [[Internet]], [[Cloud Computing]], [[Extended Reality]], [[Game Engine]], [[Database System]], [[Content Distribution Network]]
 - ### Content

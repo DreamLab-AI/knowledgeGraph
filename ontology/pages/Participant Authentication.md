@@ -50,7 +50,7 @@ public:: true
   "@id": "urn:ngm:class:participant-authentication",
   "@type": "Class",
   "label": "Participant Authentication",
-  "definition": "The process of verifying the identity of users in virtual environments, events, and metaverse platforms through mods including multi-factor authentication, biometrics, blockchain-based identity, and AI-powered verification to prevent impersonation and ensure secure access.",
+  "definition": "The process of verifying the identity of users in virtual environments, events, and metaverse platforms through methods including multi-factor authentication, biometrics, blockchain-based identity, and AI-powered verification to prevent impersonation and ensure secure access.",
   "domain": "infrastructure",
   "maturity": "draft",
   "subClassOf": [
@@ -63,7 +63,28 @@ public:: true
       "label": "Identity Management"
     }
   ],
-  "relations": {},
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -120,6 +141,8 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Identity Management]]
   - enables:: [[Secure Virtual Events]]
+  - related-to:: [[Multi-Factor Authentication]], [[Biometric Authentication]], [[Decentralized Identity]]
+  - requires:: [[Digital Identity]]
 
 - ### Content
 

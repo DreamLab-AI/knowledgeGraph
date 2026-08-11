@@ -1253,7 +1253,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -1851,7 +1851,7 @@ public:: true
   - worker-model:: claude-sonnet-4-6
   - last-enriched:: 2026-05-17T10:00:00Z
   - related-standards:: [[ISO 10218]], [[ISO TS 15066]], [[ISO 13482]], [[ISO 3691-4]], [[ISO 22166]], [[ISO 25132]], [[IEEE 1872]], [[OPC UA Robotics]], [[EU Machinery Regulation]], [[ISO 12100]], [[ISO 13849]], [[IEC 62061]], [[ISO 9283]], [[ISO 13855]]
-  - related-concepts:: [[Robotics]], [[Collaborative Robots]], [[Autonomous Mobile Robots]], [[Industrial Safety]], [[Functional Safety]], [[Ontology Engineering]], [[Human-Robot Interaction]], [[Machine Learning Discipline]], [[EU AI Act Regulatory Instrument]], [[Risk Assessment]], [[Performance Level]], [[Safety Integrity Level]]
+  - related-concepts:: [[Robotics]], [[Collaborative Robots]], [[Autonomous Mobile Robots]], [[Industrial Safety]], [[Functional Safety]], [[Ontology Engineering]], [[Human Robot Interaction]], [[Machine Learning Discipline]], [[EU AI Act Regulatory Instrument]], [[Risk Assessment]], [[Performance Level]], [[Safety Integrity Level]]
   - key-institutions:: [[BSI]], [[NPL]], [[AMRC]], [[University of Manchester]], [[MTC]], [[BARA]], [[ISO TC 299]], [[IEEE Robotics and Automation Society]], [[RIA]], [[OPC Foundation]], [[NIOSH]]
   - key-standards-tiers:: Tier 1 (ISO 10218 industrial safety), Tier 2 (ISO/TS 15066 collaborative), Tier 3 (ISO 13482 personal care), Tier 4 (ISO 3691-4 driverless trucks), Tier 5 (ISO 22166 modular), Tier 6 (ISO 25132 skill ontology), Tier 7 (IEEE 1872 CORA), Tier 8 (OPC UA Robotics), Tier 9 (EU Machinery Regulation 2023/1230)
   - effective-regulation-date-eu:: 2027-01-14

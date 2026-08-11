@@ -189,7 +189,7 @@ alias:: SoftRobotics
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:materials-science",
+        "@id": "urn:ngm:class:material-science",
         "label": "Materials Science"
       },
       {

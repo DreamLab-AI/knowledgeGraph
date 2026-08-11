@@ -243,7 +243,7 @@ public:: true
   },
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:robo-human-robot-interaction",
+      "@id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ]

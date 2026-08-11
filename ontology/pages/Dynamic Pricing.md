@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"}, {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}]
+    "relatedTo": [{"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"}, {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}]
   },
   "quality": 0.72
 }

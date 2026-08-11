@@ -74,7 +74,7 @@ public:: true
   "@id": "urn:ngm:class:digital-marketplace",
   "@type": "Class",
   "label": "Digital Marketplace",
-  "definition": "Digital Marketplace is a type of E Commerce in the spatial computing domain.",
+  "definition": "A virtual platform enabling the discovery, purchase, sale, and exchange of digital assets, NFTs, virtual goods, and services within metaverse environments, utilising blockchain technology for transparent transactions, ownership verification, and decentralised commerce.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

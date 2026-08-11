@@ -19,7 +19,7 @@ public:: true
       "vc:label": "Bayesian Inference"
     },
     {
-      "@id": "urn:visionflow:linked:localization",
+      "@id": "urn:visionflow:linked:localisation",
       "vc:label": "Localization"
     },
     {
@@ -91,7 +91,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -179,8 +179,8 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Localization]]",
-      "resolved": "urn:visionflow:linked:localization",
+      "raw": "[[Localisation]]",
+      "resolved": "urn:visionflow:linked:localisation",
       "kind": "ResolvedLink"
     },
     {
@@ -221,7 +221,7 @@ public:: true
   - is-subclass-of:: [[Kalman Filter]]
   - bridges-to:: [[Probabilistic Robotics]]
   - requires:: [[State Estimation]], [[Bayesian Inference]]
-  - enables:: [[Localization]], [[Sensor Fusion]]
+  - enables:: [[Localisation]], [[Sensor Fusion]]
 
 - ### Content
   - The Extended Kalman Filter handles non-linear dynamics and observation models by computing Jacobians to form local linear approximations, then applying the standard Kalman predict and update equations to a Gaussian estimate of state. It maintains a mean and covariance that summarise current uncertainty.

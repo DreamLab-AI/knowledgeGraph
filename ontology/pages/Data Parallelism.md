@@ -68,7 +68,7 @@ public:: true
       { "@id": "urn:ngm:class:sharded-data-parallel", "label": "Sharded Data Parallel" },
       { "@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing" },
       { "@id": "urn:ngm:class:zero-optimizer", "label": "ZeRO Optimizer" },
-      { "@id": "urn:ngm:class:deepspeed", "label": "DeepSpeed" }
+      { "@id": "urn:ngm:class:deep-speed", "label": "DeepSpeed" }
     ]
   },
   "sameAs": [

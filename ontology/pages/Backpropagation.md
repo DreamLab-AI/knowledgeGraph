@@ -58,7 +58,7 @@ public:: true
   "domain": "machine-learning",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:optimization-algorithm",
+    "@id": "urn:ngm:class:optimisation-algorithm",
     "label": "Optimization Algorithm"
   },
   "relations": {

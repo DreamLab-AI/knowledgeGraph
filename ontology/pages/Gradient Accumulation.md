@@ -26,7 +26,7 @@ public:: true
     "relatedTo":[{"@id":"urn:ngm:class:learning-rate","label":"Learning Rate"},{"@id":"urn:ngm:class:pipeline-parallelism","label":"Pipeline Parallelism"}],
     "partOf":[{"@id":"urn:ngm:class:model-training","label":"Model Training"}],
     "bridgesTo":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}],
-    "implements":[{"@id":"urn:ngm:class:optimization-algorithm","label":"Optimization Algorithm"}]
+    "implements":[{"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimization Algorithm"}]
   },
   "sameAs":[],
   "quality":0.62,
@@ -66,7 +66,7 @@ public:: true
 - relatedTo:: [[Pipeline Parallelism]]
 - partOf:: [[Model Training]]
 - bridgesTo:: [[Deep Learning]]
-- implements:: [[Optimization Algorithm]]
+- implements:: [[Optimisation Algorithm]]
 - ### Provenance
 - updated:: 2026-06-15
 - attributedTo:: did:nostr:ontology-mesh

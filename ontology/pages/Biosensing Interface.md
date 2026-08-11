@@ -171,7 +171,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:robo-human-robot-interaction",
+      "@id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],
@@ -365,7 +365,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -402,7 +402,7 @@ public:: true
 
 
 - ### Definition
-  - Physical sensor hardware system that detects physiological signals such as heart rate, electroencephalography (EEG), galvanic skin response (GSR), and electromyography (EMG) to enable real-time adaptation of virtual interaction and user experience. Biosensing interfaces bridge human physiology and computational systems, translating biological measurements into actionable digital feedback for [[Affective Computing]] and [[Human-Robot Interaction]] applications.
+  - Physical sensor hardware system that detects physiological signals such as heart rate, electroencephalography (EEG), galvanic skin response (GSR), and electromyography (EMG) to enable real-time adaptation of virtual interaction and user experience. Biosensing interfaces bridge human physiology and computational systems, translating biological measurements into actionable digital feedback for [[Affective Computing]] and [[Human Robot Interaction]] applications.
 
 - ### Semantic Classification
   - owl-class:: robotics:BiosensingInterface

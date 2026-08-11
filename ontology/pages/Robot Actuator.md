@@ -268,12 +268,12 @@ public:: true
   - **Shape-Memory and Smart-Material Actuators**
     - Shape-memory alloys (SMAs), electroactive polymers (EAPs), and dielectric elastomers offer muscle-like actuation with high energy density but lower efficiency and bandwidth; active area in [[Soft Robotics]] and wearable [[Exoskeleton]] research.
   - **Series Elastic Actuators (SEAs)**
-    - [[Series Elastic Actuation]]: a compliant spring element is inserted in series between the motor and load, enabling accurate torque sensing and control, shock absorption, and safer [[Human-Robot Interaction]]; pioneered at MIT and widely adopted in collaborative and rehabilitation robots.
+    - [[Series Elastic Actuation]]: a compliant spring element is inserted in series between the motor and load, enabling accurate torque sensing and control, shock absorption, and safer [[Human Robot Interaction]]; pioneered at MIT and widely adopted in collaborative and rehabilitation robots.
 
 - ### Actuator Performance Metrics
   - **Torque/force density**: output torque (Nm) or force (N) per unit mass (kg); critical for mobile and aerial robots.
   - **Bandwidth**: the frequency at which the actuator can faithfully track torque or position commands; limited by inertia, friction, and electronics.
-  - **Back-drivability**: the ease with which the load can move the actuator output; high back-drivability enables compliant, safe [[Human-Robot Interaction]]; low back-drivability (harmonic drives) provides holding torque at rest.
+  - **Back-drivability**: the ease with which the load can move the actuator output; high back-drivability enables compliant, safe [[Human Robot Interaction]]; low back-drivability (harmonic drives) provides holding torque at rest.
   - **Efficiency**: ratio of mechanical output to electrical input; losses arise from winding resistance, iron losses, friction, and gear mesh.
   - **Repeatability and resolution**: governed by [[Encoder]] resolution and control loop latency; sub-micron resolution achievable with piezoelectric or voice-coil drives.
   - **Thermal limits**: continuous and peak torque ratings constrained by motor winding temperature; thermal management is a key design constraint.
@@ -283,7 +283,7 @@ public:: true
     - Six-degree-of-freedom articulated arms (KUKA, Fanuc, ABB) use harmonic-drive + BLDC actuator stacks at each joint for high-repeatability pick-and-place, welding, and assembly.
     - SCARA robots use a combination of rotary and linear actuators for fast, planar assembly tasks.
   - **Collaborative Robotics (Cobots)**
-    - [[Collaborative Robot]] platforms (Universal Robots UR series, Franka Emika) embed torque sensors or [[Series Elastic Actuation]] at each joint to enable compliant, force-limited [[Human-Robot Interaction]] without safety cages.
+    - [[Collaborative Robot]] platforms (Universal Robots UR series, Franka Emika) embed torque sensors or [[Series Elastic Actuation]] at each joint to enable compliant, force-limited [[Human Robot Interaction]] without safety cages.
   - **Legged and Mobile Robots**
     - [[Robot Locomotion]] in legged robots (Boston Dynamics Spot, Unitree Go) requires high-bandwidth, back-drivable actuators capable of impact rejection; direct-drive or quasi-direct-drive designs are favoured.
     - Wheeled and tracked mobile robots use electric hub motors or differential drive actuator pairs.
@@ -319,7 +319,7 @@ public:: true
   - implements:: [[Direct Drive Actuation]]
   - uses:: [[PID Control]]
   - uses:: [[Encoder]]
-  - supports:: [[Human-Robot Interaction]]
+  - supports:: [[Human Robot Interaction]]
   - supports:: [[Robot End-Effector]]
   - standardizedBy:: [[ISO 9283 Manipulating Industrial Robots]]
   - standardizedBy:: [[IEC 61800 Adjustable Speed Electrical Power Drive Systems]]

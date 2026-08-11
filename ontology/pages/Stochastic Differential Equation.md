@@ -34,7 +34,7 @@ public:: true
         "label": "Probability Theory"
       },
       {
-        "@id": "urn:ngm:class:ito-calculus",
+        "@id": "urn:ngm:class:it-calculus",
         "label": "Ito Calculus"
       },
       {

@@ -1,4 +1,5 @@
 public:: true
+alias:: 3D Modeling
 
 # 3D Modelling
 
@@ -15,18 +16,20 @@ public:: true
   "definition":"3D modelling is the creation of a mathematical representation of a three-dimensional surface or volume using specialised software. Models are commonly built from polygon meshes, parametric surfaces or volumetric data and define the geometry that is later textured, rigged, animated and rendered. It is the foundational discipline for games, film, visualisation, product design and spatial computing.",
   "domain":"spatial-computing",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}],
+  "subClassOf":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"},{"@id":"urn:ngm:class:3-d-development","label":"3D Development"}],
   "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:polygon-mesh","label":"Polygon Mesh"},{"@id":"urn:ngm:class:geometry-processing","label":"Geometry Processing"},{"@id":"urn:ngm:class:topology","label":"Topology"}],
-    "requires":[{"@id":"urn:ngm:class:design-software","label":"Design Software"}],
-    "enables":[{"@id":"urn:ngm:class:rendering","label":"Rendering"},{"@id":"urn:ngm:class:character-model","label":"Character Model"},{"@id":"urn:ngm:class:texture-mapping","label":"Texture Mapping"}],
-    "uses":[{"@id":"urn:ngm:class:uv-mapping","label":"UV Mapping"},{"@id":"urn:ngm:class:computer-aided-design","label":"Computer-Aided Design"}],
-    "supports":[{"@id":"urn:ngm:class:visual-effects","label":"Visual Effects"},{"@id":"urn:ngm:class:game-engine","label":"Game Engine"},{"@id":"urn:ngm:class:virtual-production","label":"Virtual Production"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:computer-aided-design","label":"Computer-Aided Design"}],
-    "relatedTo":[{"@id":"urn:ngm:class:fbx","label":"FBX"},{"@id":"urn:ngm:class:character-rigging","label":"Character Rigging"},{"@id":"urn:ngm:class:skinning","label":"Skinning"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"}]
+    "hasPart":[{"@id":"urn:ngm:class:polygon-mesh","label":"Polygon Mesh"},{"@id":"urn:ngm:class:geometry-processing","label":"Geometry Processing"},{"@id":"urn:ngm:class:topology","label":"Topology"},{"@id":"urn:ngm:class:character-rigging","label":"Character Rigging"},{"@id":"urn:ngm:class:material-definition","label":"Material Definition"}],
+    "partOf":[{"@id":"urn:ngm:class:asset-pipeline","label":"Asset Pipeline"}],
+    "requires":[{"@id":"urn:ngm:class:design-software","label":"Design Software"},{"@id":"urn:ngm:class:polygon-mesh","label":"Polygon Mesh"}],
+    "enables":[{"@id":"urn:ngm:class:rendering","label":"Rendering"},{"@id":"urn:ngm:class:character-model","label":"Character Model"},{"@id":"urn:ngm:class:texture-mapping","label":"Texture Mapping"},{"@id":"urn:ngm:class:asset-creation","label":"Asset Creation"},{"@id":"urn:ngm:class:character-animation","label":"Character Animation"},{"@id":"urn:ngm:class:virtual-environment-design","label":"Virtual Environment Design"},{"@id":"urn:ngm:class:real-time-graphics","label":"Real-Time Graphics"}],
+    "uses":[{"@id":"urn:ngm:class:uv-mapping","label":"UV Mapping"},{"@id":"urn:ngm:class:computer-aided-design","label":"Computer-Aided Design"},{"@id":"urn:ngm:class:3-d-model","label":"3D Model"},{"@id":"urn:ngm:class:level-of-detail","label":"Level of Detail"}],
+    "supports":[{"@id":"urn:ngm:class:visual-effects","label":"Visual Effects"},{"@id":"urn:ngm:class:game-engine","label":"Game Engine"},{"@id":"urn:ngm:class:virtual-production","label":"Virtual Production"},{"@id":"urn:ngm:class:virtual-reality","label":"Virtual Reality"},{"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"},{"@id":"urn:ngm:class:game-development","label":"Game Development"}],
+    "standardizedBy":[{"@id":"urn:ngm:class:gltf-standard","label":"glTF"},{"@id":"urn:ngm:class:obj-format","label":"OBJ Format"}],
+    "contrastsWith":[{"@id":"urn:ngm:class:computer-aided-design","label":"Computer-Aided Design"},{"@id":"urn:ngm:class:digital-art","label":"Digital Art"}],
+    "relatedTo":[{"@id":"urn:ngm:class:fbx","label":"FBX"},{"@id":"urn:ngm:class:character-rigging","label":"Character Rigging"},{"@id":"urn:ngm:class:skinning","label":"Skinning"},{"@id":"urn:ngm:class:visual-effects","label":"Visual Effects"}],
+    "bridgesTo":[{"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"},{"@id":"urn:ngm:class:computer-vision","label":"Computer Vision"},{"@id":"urn:ngm:class:photogrammetry","label":"Photogrammetry"},{"@id":"urn:ngm:class:generative-ai","label":"Generative AI"}]
   },
-  "sameAs":[{"@id":"urn:ngm:class:3-d-modeling","label":"3D Modeling"}],
+  "sameAs":[{"@id":"urn:ngm:class:3d-modelling","label":"3D Modeling"},{"@id":"urn:ngm:class:3-d-model-authoring","label":"3D Model Authoring"},{"@id":"urn:ngm:class:three-dimensional-modeling","label":"Three-Dimensional Modeling"}],
   "quality":0.62,
   "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
 }
@@ -58,25 +61,51 @@ public:: true
 - Film and visual effects environments and creatures.
 - Product visualisation and industrial design.
 - Digital humans and props for augmented and virtual reality.
+- ### Workflow stages
+- Concept and planning from visual references.
+- Rough blocking establishing proportions and silhouette.
+- Detail sculpting and refinement.
+- Topology optimisation for animation capability.
+- Unwrapping for texture application.
 - ### Relationships
 - hasPart:: [[Polygon Mesh]]
 - hasPart:: [[Geometry Processing]]
 - hasPart:: [[Topology]]
+- hasPart:: [[Character Rigging]]
+- hasPart:: [[Material Definition]]
+- partOf:: [[Asset Pipeline]]
 - requires:: [[Design Software]]
+- requires:: [[Polygon Mesh]]
 - enables:: [[Rendering]]
 - enables:: [[Character Model]]
 - enables:: [[Texture Mapping]]
+- enables:: [[Asset Creation]]
+- enables:: [[Character Animation]]
+- enables:: [[Virtual Environment Design]]
+- enables:: [[Real-Time Graphics]]
 - uses:: [[UV Mapping]]
 - uses:: [[Computer-Aided Design]]
+- uses:: [[3D Model]]
+- uses:: [[Level of Detail]]
 - supports:: [[Visual Effects]]
 - supports:: [[Game Engine]]
 - supports:: [[Virtual Production]]
+- supports:: [[Virtual Reality]]
+- supports:: [[Augmented Reality]]
+- supports:: [[Game Development]]
+- standardizedBy:: [[glTF]]
+- standardizedBy:: [[OBJ Format]]
 - contrastsWith:: [[Computer-Aided Design]]
+- contrastsWith:: [[Digital Art]]
 - relatedTo:: [[FBX]]
 - relatedTo:: [[Character Rigging]]
 - relatedTo:: [[Skinning]]
+- relatedTo:: [[Visual Effects]]
 - bridgesTo:: [[Augmented Reality]]
-- sameAs:: [[3D Modeling]]
+- bridgesTo:: [[Computer Vision]]
+- bridgesTo:: [[Photogrammetry]]
+- bridgesTo:: [[Generative AI]]
+- sameAs:: [[3D Modelling]]
 - ### Provenance
 - updated:: 2026-06-15
 - attributedTo:: did:nostr:ontology-mesh

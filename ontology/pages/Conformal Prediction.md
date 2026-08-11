@@ -109,7 +109,7 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"},
       {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"},
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous Systems"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ]
   },

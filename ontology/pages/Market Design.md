@@ -39,7 +39,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:spectrum-allocation", "label": "Spectrum Allocation"},
-      {"@id": "urn:ngm:class:carbon-market", "label": "Carbon Market"},
+      {"@id": "urn:ngm:class:carbon-markets", "label": "Carbon Market"},
       {"@id": "urn:ngm:class:decentralised-exchange", "label": "Decentralised Exchange"}
     ],
     "uses": [
@@ -62,7 +62,7 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:defi", "label": "Defi"}
+      {"@id": "urn:ngm:class:de-fi", "label": "Defi"}
     ]
   },
   "sameAs": [],

@@ -123,7 +123,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "3D Modeling"
       },
       {
@@ -229,7 +229,7 @@ public:: true
 ```
 
 - ### Definition
-  - Design software comprises applications used to create, edit, visualise, and publish visual, spatial, and interactive artefacts. The category spans [[Vector Graphics Editor]] and raster image editors, parametric [[CAD Tool]] environments, [[3D Modeling]] and sculpting suites, [[Animation Software]], [[User Interface Design]] prototyping platforms, and real-time 3D authoring environments that feed [[Game Engine]] and [[Extended Reality]] runtimes. Modern design software increasingly integrates [[Generative AI]] for layout suggestion, texture synthesis, and variant exploration, and exports directly into [[Spatial Computing]] and [[Digital Twin]] pipelines.
+  - Design software comprises applications used to create, edit, visualise, and publish visual, spatial, and interactive artefacts. The category spans [[Vector Graphics Editor]] and raster image editors, parametric [[CAD Tool]] environments, [[3D Modelling]] and sculpting suites, [[Animation Software]], [[User Interface Design]] prototyping platforms, and real-time 3D authoring environments that feed [[Game Engine]] and [[Extended Reality]] runtimes. Modern design software increasingly integrates [[Generative AI]] for layout suggestion, texture synthesis, and variant exploration, and exports directly into [[Spatial Computing]] and [[Digital Twin]] pipelines.
 
 - ### Overview
   - Design software forms the creative authoring layer of virtually every digital content pipeline, from print and screen media to immersive [[Extended Reality]] experiences and industrial [[Digital Twin]] simulations.
@@ -243,7 +243,7 @@ public:: true
   - **2D Raster Editors** — pixel-based tools (e.g. Adobe Photoshop, Affinity Photo) for image retouching, compositing, and texture painting; form the foundation of [[Colour Management]] workflows.
   - **[[Vector Graphics Editor]]** — resolution-independent tools (e.g. Adobe Illustrator, Figma, Inkscape) for logo, icon, and print layout creation; export to SVG and PDF standards.
   - **[[User Interface Design]] & Prototyping Platforms** — tools such as Figma, Sketch, and Adobe XD that combine vector drawing with interactive state definition for screen products; closely tied to [[User Experience]] practice.
-  - **[[3D Modeling]] Suites** — polygon, NURBS, and sub-division surface modellers (Autodesk Maya, 3ds Max, Blender, Foundry Modo) that produce geometry consumed by [[3D Rendering Engine]] and [[Game Engine]] runtimes.
+  - **[[3D Modelling]] Suites** — polygon, NURBS, and sub-division surface modellers (Autodesk Maya, 3ds Max, Blender, Foundry Modo) that produce geometry consumed by [[3D Rendering Engine]] and [[Game Engine]] runtimes.
   - **Sculpting Applications** — digital sculpting tools (ZBrush, Mudbox) that use voxel and dynamic-mesh techniques to create high-resolution organic forms, subsequently retopologised for [[Content Pipeline]] use.
   - **[[CAD Tool]]** — parametric and direct-modelling CAD (Autodesk AutoCAD, SolidWorks, Rhino, Fusion 360) targeting engineering, architecture, and manufacturing; interoperates with [[Building Information Modelling]] platforms.
   - **[[Animation Software]]** — rigging, keyframe, and procedural animation tools (Maya, Blender, MotionBuilder) producing skeletal and blend-shape animations for character runtimes and cinematic rendering.
@@ -279,7 +279,7 @@ public:: true
   - partOf:: [[Creative Technology Stack]]
   - partOf:: [[Content Pipeline]]
   - hasPart:: [[Vector Graphics Editor]]
-  - hasPart:: [[3D Modeling]]
+  - hasPart:: [[3D Modelling]]
   - hasPart:: [[Animation Software]]
   - hasPart:: [[CAD Tool]]
   - supports:: [[Extended Reality]]

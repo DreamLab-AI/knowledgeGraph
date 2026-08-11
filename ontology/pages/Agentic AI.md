@@ -77,6 +77,7 @@ public:: true
   "@type": "Class",
   "label": "Agentic AI",
   "definition": "Agentic AI refers to AI systems characterised by autonomy, goal-directedness, and the capacity to take sustained sequences of actions — including calling external tools, spawning sub-agents, and modifying their own environment — in pursuit of high-level objectives specified by a user or orchestrator. Agentic systems differ from reactive or conversational AI in that they operate over extended time horizons, maintain persistent state across steps, and may take consequential or irreversible actions without per-step human approval. The architectural backbone is typically a large language model serving as a cognitive core inside a closed sense-plan-act loop, augmented by memory stores, tool registries, and inter-agent communication protocols. The term encompasses both single-agent pipelines and heterogeneous multi-agent architectures in which agentic components collaborate, compete, or are hierarchically orchestrated.",
+  "vc:plainGloss": "AI that does not just answer questions but gets on with the work — planning a task, using tools, and taking a run of actions over time to reach a goal you have handed it, rather than pausing for your approval at every step.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
@@ -126,11 +127,11 @@ public:: true
       {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
       {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:react-pattern", "label": "ReAct Pattern"}
+      {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:reactive-system", "label": "Reactive System"}
+      {"@id": "urn:ngm:class:reactive-systems", "label": "Reactive System"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},
@@ -218,6 +219,9 @@ public:: true
 
 - ### Definition
   - Agentic AI refers to AI systems characterised by autonomy, goal-directedness, and the capacity to take sustained sequences of actions — including calling external tools, spawning sub-agents, and modifying their own environment — in pursuit of high-level objectives specified by a user or orchestrator, without requiring per-step human instruction. The architectural backbone is typically a [[Large Language Models]] serving as a cognitive core inside a closed sense-plan-act loop, augmented by [[Memory Management]] stores, [[Tool Use]] registries, and inter-agent communication protocols. Agentic systems differ fundamentally from [[Conversational AI]] and [[Reactive System]] architectures in that they maintain persistent state across arbitrarily long task horizons, initiate actions proactively, plan and re-plan in response to environmental feedback, and may interact with external services, file systems, APIs, databases, and other agents. The concept encompasses both single-agent pipelines — one [[Foundation Models]] instance with many tools — and heterogeneous [[Multi-Agent Systems]] architectures in which agentic components collaborate, critique, or are hierarchically orchestrated under a planner model. Agentic systems rely on [[Agent Memory]] to accumulate episodic, semantic, and procedural knowledge across steps; on [[Task Planning]] for goal decomposition; on [[Chain of Thought]] or extended reasoning traces for transparent intermediate cognition; on [[Orchestration]] for coordinating concurrent sub-agent threads; and on the [[ReAct Pattern]] (Reasoning + Acting) for interleaving thought and action within a single generation pass. The architectural emergence of agentic AI during 2024–2026 marked a pivotal transition in applied artificial intelligence: from systems that answer questions to systems that complete work, fundamentally reshaping productivity in software engineering, research, data analysis, legal services, and enterprise process automation.
+
+- ### In Plain Terms
+  - AI that does not just answer questions but gets on with the work — planning a task, using tools, and taking a run of actions over time to reach a goal you have handed it, rather than pausing for your approval at every step.
 
 - ### Semantic Classification
   - owl-class:: ai:AgenticAI

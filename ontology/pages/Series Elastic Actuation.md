@@ -103,7 +103,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:robo-human-robot-interaction",
+        "@id": "urn:ngm:class:human-robot-interaction",
         "label": "Human-Robot Interaction"
       },
       {
@@ -268,7 +268,7 @@ public:: true
   - uses:: [[Hooke's Law]]
   - uses:: [[Deflection Measurement]]
   - uses:: [[Rotary Encoder]]
-  - supports:: [[Human-Robot Interaction]]
+  - supports:: [[Human Robot Interaction]]
   - supports:: [[Legged Locomotion]]
   - supports:: [[Rehabilitation Robotics]]
   - standardizedBy:: [[ISO TS 15066]]

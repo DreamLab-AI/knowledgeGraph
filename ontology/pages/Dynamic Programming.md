@@ -38,7 +38,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -68,7 +68,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
@@ -97,7 +97,7 @@ public:: true
 ```
 
 - ### Definition
-  - Dynamic programming (DP) is an [[Algorithm]] design paradigm and [[Optimization Algorithm]] technique formalised by Richard Bellman in the 1950s at RAND Corporation that solves complex problems by decomposing them into simpler overlapping subproblem instances, storing each solved subproblem's result — a strategy called memoisation in the top-down recursive form and tabulation in the bottom-up iterative form — so that each unique subproblem is computed exactly once. The technique applies wherever a problem exhibits two structural properties: *optimal substructure*, meaning the globally optimal solution can be assembled from optimal solutions to its constituent subproblems, and *overlapping subproblems*, meaning the same subproblems recur across many branches of a naive recursion tree, creating the exponential redundancy that DP eliminates. By trading additional memory for drastically reduced computation, DP turns combinatorially explosive searches into polynomial-time procedures, a transformation that underpins classical results such as the [[Floyd-Warshall Algorithm]] for all-pairs shortest paths, the [[Viterbi Algorithm]] for decoding in [[Hidden Markov Model]] chains, the [[Needleman-Wunsch Algorithm]] and [[Smith-Waterman Algorithm]] for [[Sequence Alignment]] in bioinformatics, and the [[CYK Algorithm]] for context-free grammar parsing in [[Natural Language Processing]]. In the domain of sequential decision-making, DP is the mathematical engine behind the [[Bellman Equation]], which expresses the value of a state as a recursive combination of the immediate [[Reward Function]] and the discounted value of successor states under a [[Markov Decision Process]]; the classical [[Value Iteration]] and [[Policy Iteration]] algorithms solve or approximate the Bellman equation iteratively, providing the theoretical foundation on which modern [[Reinforcement Learning]] and [[Approximate Dynamic Programming]] methods — including [[Deep Q-Network]] (DQN), [[Proximal Policy Optimisation]], and [[AlphaGo]] — are built. The unifying insight across all these domains — from bioinformatics and computational linguistics to operations research, robotics, and deep learning — is that an exponentially large space of candidate decisions can be organised as a directed acyclic dependency graph of manageable size, whose entries can be filled in a principled order to yield the global optimum without redundant recomputation.
+  - Dynamic programming (DP) is an [[Algorithm]] design paradigm and [[Optimisation Algorithm]] technique formalised by Richard Bellman in the 1950s at RAND Corporation that solves complex problems by decomposing them into simpler overlapping subproblem instances, storing each solved subproblem's result — a strategy called memoisation in the top-down recursive form and tabulation in the bottom-up iterative form — so that each unique subproblem is computed exactly once. The technique applies wherever a problem exhibits two structural properties: *optimal substructure*, meaning the globally optimal solution can be assembled from optimal solutions to its constituent subproblems, and *overlapping subproblems*, meaning the same subproblems recur across many branches of a naive recursion tree, creating the exponential redundancy that DP eliminates. By trading additional memory for drastically reduced computation, DP turns combinatorially explosive searches into polynomial-time procedures, a transformation that underpins classical results such as the [[Floyd-Warshall Algorithm]] for all-pairs shortest paths, the [[Viterbi Algorithm]] for decoding in [[Hidden Markov Model]] chains, the [[Needleman-Wunsch Algorithm]] and [[Smith-Waterman Algorithm]] for [[Sequence Alignment]] in bioinformatics, and the [[CYK Algorithm]] for context-free grammar parsing in [[Natural Language Processing]]. In the domain of sequential decision-making, DP is the mathematical engine behind the [[Bellman Equation]], which expresses the value of a state as a recursive combination of the immediate [[Reward Function]] and the discounted value of successor states under a [[Markov Decision Process]]; the classical [[Value Iteration]] and [[Policy Iteration]] algorithms solve or approximate the Bellman equation iteratively, providing the theoretical foundation on which modern [[Reinforcement Learning]] and [[Approximate Dynamic Programming]] methods — including [[Deep Q-Network]] (DQN), [[Proximal Policy Optimisation]], and [[AlphaGo]] — are built. The unifying insight across all these domains — from bioinformatics and computational linguistics to operations research, robotics, and deep learning — is that an exponentially large space of candidate decisions can be organised as a directed acyclic dependency graph of manageable size, whose entries can be filled in a principled order to yield the global optimum without redundant recomputation.
 
 - ### Semantic Classification
   - owl-class:: ai:DynamicProgramming
@@ -107,11 +107,11 @@ public:: true
   - implemented-in-layer:: [[Algorithm Layer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Programming Paradigm]], [[Optimization Algorithm]]
+  - is-subclass-of:: [[Programming Paradigm]], [[Optimisation Algorithm]]
   - has-part:: [[Memoization]], [[Tabulation]], [[Bellman Equation]], [[State Space]], [[Subproblem]], [[Recurrence Relation]], [[Optimal Substructure]], [[Overlapping Subproblems]], [[Value Function]]
   - requires:: [[Optimal Substructure]], [[Overlapping Subproblems]], [[State Space Representation]], [[Recursion]], [[Data Structure]]
   - enables:: [[Reinforcement Learning]], [[Value Iteration]], [[Policy Iteration]], [[Sequence Alignment]], [[Speech Recognition]], [[Natural Language Processing]], [[Approximate Dynamic Programming]], [[Combinatorial Optimisation]]
-  - implements:: [[Optimization Algorithm]], [[Bellman Equation]], [[Principle of Optimality]]
+  - implements:: [[Optimisation Algorithm]], [[Bellman Equation]], [[Principle of Optimality]]
   - depends-on:: [[Recursion]], [[Data Structure]], [[Graph Theory]], [[Directed Acyclic Graph]]
   - supports:: [[Markov Decision Process]], [[Hidden Markov Model]], [[Stochastic Control]], [[Operations Research]], [[Bioinformatics]]
   - uses:: [[Algorithm]], [[Hash Table]], [[Array]], [[Value Function]], [[Directed Acyclic Graph]], [[Priority Queue]]

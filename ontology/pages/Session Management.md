@@ -38,6 +38,7 @@ public:: true
   "@type": "Class",
   "label": "Session Management",
   "definition": "Session management is the set of mechanisms by which a networked system creates, maintains, secures, and terminates bounded interaction contexts — called sessions — between a client and a server or distributed service. It encompasses token issuance and validation, state serialisation and synchronisation, session expiry and renewal, concurrent-session policy, and secure revocation. Session management bridges authentication (establishing identity) and authorisation (enforcing capability) by preserving verified context across otherwise stateless request–response cycles. It is a foundational layer for any multi-user application, from web platforms and APIs to real-time collaborative environments and spatial computing runtimes.",
+  "vc:plainGloss": "How a system keeps track of who you are and what you're doing across a series of interactions, so you don't have to log in again on every click — like a wristband that proves you've already paid to get back into a venue. It covers issuing that pass, keeping it valid for a while, and cancelling it when you leave.",
   "domain": "infrastructure",
   "maturity": "mature",
   "qualityScore": 0.74,
@@ -192,6 +193,9 @@ public:: true
 
 - ### Definition
   - Session management is the set of mechanisms by which a networked system creates, maintains, secures, and terminates bounded interaction contexts — called sessions — between a client and a server or distributed service. It bridges [[Authentication]] and [[Access Control]] by preserving verified identity context across otherwise stateless request–response cycles, relying on [[Secure Token]] issuance, [[Encryption]], and lifecycle policies to enforce trust boundaries. A well-designed session layer underpins everything from [[Single Sign-On]] federations to real-time [[Multi-User Collaboration]] environments and [[Spatial Computing]] runtimes.
+
+- ### In Plain Terms
+  - How a system keeps track of who you are and what you're doing across a series of interactions, so you don't have to log in again on every click — like a wristband that proves you've already paid to get back into a venue. It covers issuing that pass, keeping it valid for a while, and cancelling it when you leave.
 
 - ### Overview
   - Session management addresses a fundamental tension in distributed systems: HTTP and most RPC transports are inherently stateless, yet users and services require continuity of context across multiple interactions.

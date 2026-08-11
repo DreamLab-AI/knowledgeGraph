@@ -114,7 +114,7 @@ public:: true
         "label": "Provenance Tracking"
       },
       {
-        "@id": "urn:ngm:class:logistics-optimization",
+        "@id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       }
     ],
@@ -193,7 +193,7 @@ public:: true
     - Fresh produce, meat, and seafood supply chains use GTINs combined with batch/lot AIs and EPCIS to enable farm-to-fork traceability aligned with [[Supply Chain Provenance]] requirements.
   - #### Logistics and Transportation
     - SSCC barcodes on pallets and cases enabling warehouse management systems (WMS) to track, sort, and route logistics units through distribution centres. Advance Shipping Notices (ASNs) in GS1 EDI/XML format allow receivers to pre-process incoming shipments before physical arrival.
-    - [[Logistics Optimization]] through RFID-tagged pallets and cases scanned at dock doors, enabling real-time inventory positioning and reducing manual scanning labour.
+    - [[Logistics Optimisation]] through RFID-tagged pallets and cases scanned at dock doors, enabling real-time inventory positioning and reducing manual scanning labour.
     - Cold chain monitoring using EPCIS sensor events to record temperature excursions during transport of food, pharmaceuticals, and biologics.
   - #### Digital Product Passport and Sustainability
     - EU Ecodesign for Sustainable Products Regulation (ESPR) and related Battery Regulation, Textile Regulation, and Construction Products Regulation mandate [[Digital Product Passport]] (DPP) data carriers; GS1 Digital Link QR codes are specified as the preferred carrier, encoding a GS1 identifier that resolves to the passport data repository.
@@ -223,7 +223,7 @@ public:: true
   - relatedTo:: [[Supply Chain]]
   - relatedTo:: [[Supply Chain Provenance]]
   - relatedTo:: [[Provenance Tracking]]
-  - relatedTo:: [[Logistics Optimization]]
+  - relatedTo:: [[Logistics Optimisation]]
   - relatedTo:: [[Retail Technology]]
   - relatedTo:: [[Healthcare Supply Chain]]
   - standardizedBy:: [[ISO Standard]]

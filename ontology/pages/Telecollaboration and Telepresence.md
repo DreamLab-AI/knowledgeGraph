@@ -119,7 +119,7 @@ public:: true
       "vc:label": "Action Item Extraction"
     },
     {
-      "@id": "urn:visionflow:linked:adam-optimizer",
+      "@id": "urn:visionflow:linked:adam-optimiser",
       "vc:label": "Adam Optimizer"
     },
     {
@@ -4556,8 +4556,8 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Adam Optimizer]]",
-      "resolved": "urn:visionflow:linked:adam-optimizer",
+      "raw": "[[Adam Optimiser]]",
+      "resolved": "urn:visionflow:linked:adam-optimiser",
       "kind": "StubLink"
     },
     {
@@ -10059,7 +10059,7 @@ public:: true
   - **[[Structure-from-Motion]] Initialization**: [[COLMAP]] generates sparse point cloud
   - **[[Gaussian Primitives]]**: Each has position (μ), covariance (Σ), opacity (α), spherical harmonic coefficients
   - **[[Differentiable Rasterization]]**: GPU-accelerated splatting with alpha blending
-  - **[[Optimization]]**: [[Adam Optimizer]] minimizes [[L1 Loss]] + [[D-SSIM]] perceptual loss
+  - **[[Optimization]]**: [[Adam Optimiser]] minimizes [[L1 Loss]] + [[D-SSIM]] perceptual loss
 
   **Advantages for Telepresence**:
   - **Real-Time Performance**: 60-200 FPS at 1080p-4K on [[RTX 4090]]

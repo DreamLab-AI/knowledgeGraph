@@ -46,7 +46,7 @@ public:: true
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
-      {"@id": "urn:ngm:class:iot-infrastructure", "label": "IoT Infrastructure"}
+      {"@id": "urn:ngm:class:io-t-infrastructure", "label": "IoT Infrastructure"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:real-time", "label": "Real Time"},

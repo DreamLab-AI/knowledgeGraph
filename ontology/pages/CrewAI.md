@@ -63,7 +63,7 @@ public:: true
       { "@id": "urn:ngm:class:cli-multi-agent-systems", "label": "CLI Multi-Agent Systems" },
       { "@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow" },
       { "@id": "urn:ngm:class:auto-gen", "label": "AutoGen" },
-      { "@id": "urn:ngm:class:langgraph", "label": "LangGraph" }
+      { "@id": "urn:ngm:class:lang-graph", "label": "LangGraph" }
     ],
     "uses": [
       { "@id": "urn:ngm:class:large-language-model", "label": "Large Language Model" },

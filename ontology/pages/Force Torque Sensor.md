@@ -356,7 +356,7 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
   - enables:: [[Soft Robotic Grasping]], [[Precision Assembly]], [[Impedance Control]], [[Contact Detection]], [[Force Feedback]], [[Compliance Control]]
   - depends-on:: [[Robot Wrist]], [[Real-Time Control System]]
   - uses:: [[EtherCAT]], [[Sensor Fusion]]
-  - supports:: [[Human-Robot Interaction]], [[Collaborative Robotics]], [[Surgical Robotics]]
+  - supports:: [[Human Robot Interaction]], [[Collaborative Robotics]], [[Surgical Robotics]]
   - standardized-by:: [[ISO 8373]]
   - contrasts-with:: [[Tactile Sensor]], [[Proximity Sensor]]
   - bridges-to:: [[Machine Learning]]

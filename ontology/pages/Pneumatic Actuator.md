@@ -1155,7 +1155,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -1213,7 +1213,7 @@ public:: true
   - is-subclass-of:: [[Actuator]], [[Fluid Power Device]], [[Robotic Actuator]], [[Compliant Mechanism]], [[Soft Robotics]]
   - has-part:: [[Pneumatic Cylinder]], [[McKibben Muscle]], [[Directional Control Valve]], [[Pressure Regulator]], [[Air Supply System]], [[Proportional Valve]], [[Pneumatic Network]], [[Elastomeric Chamber]], [[Fibre Reinforcement]], [[Position Sensor]]
   - requires:: [[Compressed Air Supply]], [[Air Compressor]], [[Pressure Regulation]], [[Directional Control Valves]], [[Pneumatic Tubing]], [[Filter-Regulator-Lubricator Unit]]
-  - enables:: [[Human-Robot Interaction]], [[Safe Physical Interaction]], [[Compliant Grasping]], [[Soft Locomotion]], [[Rehabilitation Robotics]], [[Hazardous Environment Operation]], [[Explosion-Proof Actuation]]
+  - enables:: [[Human Robot Interaction]], [[Safe Physical Interaction]], [[Compliant Grasping]], [[Soft Locomotion]], [[Rehabilitation Robotics]], [[Hazardous Environment Operation]], [[Explosion-Proof Actuation]]
   - implements:: [[McKibben Muscle Mechanics]], [[PneuNet Architecture]], [[Fibre-Reinforced Elastomer Actuation]], [[ISO 15552 Standard]], [[ISO 6432 Standard]], [[Fluidic Muscle Principle]]
   - depends-on:: [[Fluid Mechanics]], [[Elasticity Theory]], [[Control Theory]], [[Pneumatic Circuit Design]], [[Material Science]], [[Thermodynamics]]
   - supports:: [[Industrial Automation]], [[Pick and Place Robotics]], [[Collaborative Robotics]], [[Medical Robotics]], [[Exoskeleton Design]], [[Agricultural Robotics]], [[Soft Gripper Systems]]
@@ -1717,7 +1717,7 @@ public:: true
   - ## Metadata
   - domain:: [[Robotics]]
   - subdomain:: [[Soft Robotics]], [[Fluid Power]], [[Mechanical Engineering]], [[Industrial Automation]]
-  - related-ontology-terms:: [[Actuator]], [[Compliant Mechanism]], [[McKibben Muscle]], [[Soft Robotics]], [[Fluidic Elastomers]], [[PneuNet]], [[Pneumatic Cylinder]], [[Variable Stiffness Actuator]], [[Robot Compliance]], [[Human-Robot Interaction]], [[Exoskeleton]], [[Rehabilitation Robotics]], [[Industrial Automation]], [[Compressed Air Supply]], [[Proportional Valve]], [[Model Predictive Control]], [[Fibre Reinforced Elastomers]]
+  - related-ontology-terms:: [[Actuator]], [[Compliant Mechanism]], [[McKibben Muscle]], [[Soft Robotics]], [[Fluidic Elastomers]], [[PneuNet]], [[Pneumatic Cylinder]], [[Variable Stiffness Actuator]], [[Robot Compliance]], [[Human Robot Interaction]], [[Exoskeleton]], [[Rehabilitation Robotics]], [[Industrial Automation]], [[Compressed Air Supply]], [[Proportional Valve]], [[Model Predictive Control]], [[Fibre Reinforced Elastomers]]
   - toolchain:: [[Festo Fluidic Muscle]], [[SMC Cylinders]], [[Parker Hannifin]], [[COMSOL Multiphysics]], [[Abaqus FEA]], [[MuJoCo]], [[IsaacGym]], [[AMESim]], [[MATLAB Simhydraulics]], [[Harvard Soft Robotics Toolkit]], [[OpenFOAM]]
   - regulatory-frameworks:: [[ISO 15552]], [[ISO 6432]], [[ISO 4414]], [[HSE HSG244]], [[EU Ecodesign Regulation 2019/1781]], [[ATEX Directive 2014/34/EU]], [[BSI BS EN ISO 15552:2021]], [[UK Noise at Work Regulations 2005]]
   - key-institutions:: [[Whitesides Research Group Harvard]], [[MIT CSAIL Rus Group]], [[Festo BionicLearning Network]], [[Imperial College Hamlyn Centre]], [[Bristol Robotics Laboratory]], [[University of Manchester Compliant Systems]], [[Edinburgh Centre for Robotics]], [[UCL Hawkes Group]], [[Norgren IMI Precision Engineering]], [[AMRC Sheffield]]

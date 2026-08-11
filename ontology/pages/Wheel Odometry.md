@@ -61,7 +61,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -121,7 +121,7 @@ public:: true
 
 - ### Definition
 - Wheel odometry estimates a [[Mobile Robot]]'s pose change from [[Encoder]] readings of wheel rotation combined with a [[Kinematics]] motion model, a form of [[Dead Reckoning]].
-- It feeds [[Localization]] and [[Navigation]] but accumulates drift over distance.
+- It feeds [[Localisation]] and [[Navigation]] but accumulates drift over distance.
 - ### Overview
 - By measuring how far each wheel turns, the robot computes incremental translation and rotation, integrating these to track its position relative to a start point.
 - The approach is cheap and self-contained, requiring no external infrastructure, but small per-step errors compound, especially under wheel slip or uneven terrain.
@@ -145,7 +145,7 @@ public:: true
 - uses:: [[Encoder]]
 - uses:: [[Kinematics]]
 - implements:: [[Dead Reckoning]]
-- enables:: [[Localization]]
+- enables:: [[Localisation]]
 - enables:: [[Navigation]]
 - enables:: [[Pose Estimation]]
 - requires:: [[Calibration]]

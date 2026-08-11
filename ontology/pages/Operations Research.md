@@ -32,7 +32,7 @@ public:: true
   "relations": {
     "uses": [
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       },
       {
@@ -58,7 +58,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:logistics-optimization",
+        "@id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       },
       {
@@ -165,10 +165,10 @@ public:: true
 ```
 
 - ### Definition
-  - [[Operations Research]] is the scientific discipline that constructs and solves mathematical models of complex decision problems — using [[Optimization Algorithm]] techniques such as linear programming, integer programming, and stochastic simulation — to prescribe optimal or near-optimal courses of action under resource and [[Constraint]] boundaries.
+  - [[Operations Research]] is the scientific discipline that constructs and solves mathematical models of complex decision problems — using [[Optimisation Algorithm]] techniques such as linear programming, integer programming, and stochastic simulation — to prescribe optimal or near-optimal courses of action under resource and [[Constraint]] boundaries.
 
 - ### Relationships
-  - Operations research relies on [[Constraint Solver]] tools and [[Heuristic Methods]] to tackle NP-hard combinatorial problems, uses [[Monte Carlo Methods]] for stochastic uncertainty quantification, directly enables [[Logistics Optimization]] and [[Planning and Scheduling]] workflows, and increasingly integrates with [[Reinforcement Learning]] for sequential decision-making problems beyond the reach of classical exact solvers.
+  - Operations research relies on [[Constraint Solver]] tools and [[Heuristic Methods]] to tackle NP-hard combinatorial problems, uses [[Monte Carlo Methods]] for stochastic uncertainty quantification, directly enables [[Logistics Optimisation]] and [[Planning and Scheduling]] workflows, and increasingly integrates with [[Reinforcement Learning]] for sequential decision-making problems beyond the reach of classical exact solvers.
 
 - ### Content
   - The discipline crystallised during World War II when Allied forces applied systematic quantitative methods to problems including convoy routing, bombing campaign planning, and supply chain allocation. Post-war, operations researchers formalised linear programming (Dantzig's simplex method, 1947) and extended it to integer, nonlinear, and stochastic variants, founding a mathematical canon that underpins modern industrial optimisation.

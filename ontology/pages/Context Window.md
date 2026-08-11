@@ -55,6 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Context Window",
   "definition": "The maximum sequence length that a language model can process in a single forward pass, measured in tokens; it determines how much prior context the model can attend to during generation or understanding tasks and directly bounds memory, coherence, and long-range reasoning capabilities.",
+  "vc:plainGloss": "The model's working memory — the most it can hold in mind at once: your instructions, the conversation so far, and any documents you have pasted in. Once a session runs past this limit, the earliest material starts slipping out of view.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": {
@@ -237,6 +238,9 @@ public:: true
 
 - ### Definition
   - The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.
+
+- ### In Plain Terms
+  - The model's working memory — the most it can hold in mind at once: your instructions, the conversation so far, and any documents you have pasted in. Once a session runs past this limit, the earliest material starts slipping out of view.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:ContextWindow

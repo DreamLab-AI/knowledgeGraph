@@ -171,7 +171,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:3-d-modeling",
+        "@id": "urn:ngm:class:3d-modelling",
         "label": "Manual 3D Modeling"
       },
       {

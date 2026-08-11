@@ -54,7 +54,7 @@ public:: true
         "label": "Recommendation Engine"
       },
       {
-        "@id": "urn:ngm:class:behavioral-analytics",
+        "@id": "urn:ngm:class:behavioural-analytics",
         "label": "Behavioral Analytics"
       }
     ],
@@ -118,7 +118,7 @@ public:: true
 
 - ### Definition
   - Personalisation is the practice of tailoring content, recommendations, services and user experiences to the characteristics, behaviour and preferences of individual users or narrowly defined segments. It draws on collected and inferred data — profiles, interaction histories and contextual signals — to deliver differentiated outputs rather than a single uniform experience. Personalisation underpins recommendation systems, targeted marketing and adaptive interfaces, and raises associated privacy, consent and fairness considerations.
-  - Related: [[Customer Data Platform]] [[Recommendation System]] [[Behavioral Analytics]] [[Digital Marketing]]
+  - Related: [[Customer Data Platform]] [[Recommendation System]] [[Behavioural Analytics]] [[Digital Marketing]]
 - ### Overview
   - Personalisation systems combine explicit data (preferences a user states) with implicit data (observed behaviour) to model intent and predict relevant content. Modern implementations rely heavily on machine learning, where collaborative filtering, content-based models and contextual bandits select items likely to satisfy a given user. The discipline spans data collection, feature engineering, model serving and continuous evaluation against engagement and satisfaction metrics.
 - ### Key aspects
@@ -141,7 +141,7 @@ public:: true
   - requires:: [[Data Quality]]
   - uses:: [[Recommendation System]]
   - uses:: [[Recommendation Engine]]
-  - uses:: [[Behavioral Analytics]]
+  - uses:: [[Behavioural Analytics]]
   - enables:: [[E-Commerce]]
   - enables:: [[Digital Marketing]]
   - supports:: [[Customer Data Platform]]

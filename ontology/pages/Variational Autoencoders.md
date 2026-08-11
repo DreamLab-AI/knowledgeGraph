@@ -19,7 +19,7 @@ public:: true
       "vc:label": "Active Units"
     },
     {
-      "@id": "urn:visionflow:linked:adam-optimizer",
+      "@id": "urn:visionflow:linked:adam-optimiser",
       "vc:label": "Adam Optimizer"
     },
     {
@@ -1443,8 +1443,8 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Adam Optimizer]]",
-      "resolved": "urn:visionflow:linked:adam-optimizer",
+      "raw": "[[Adam Optimiser]]",
+      "resolved": "urn:visionflow:linked:adam-optimiser",
       "kind": "StubLink"
     },
     {
@@ -3340,7 +3340,7 @@ public:: true
       return recon_loss + kl_loss
   ```
 
-  - Standard [[Stochastic Gradient Descent]], [[Adam Optimizer]], or [[AdamW]] are used for optimization
+  - Standard [[Stochastic Gradient Descent]], [[Adam Optimiser]], or [[AdamW]] are used for optimization
 
   - Typical hyperparameters [Updated 2025]:
   - Learning rate: 1e-3 to 1e-4 with [[Learning Rate Scheduling]]

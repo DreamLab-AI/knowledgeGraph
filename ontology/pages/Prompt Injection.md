@@ -28,6 +28,7 @@ public:: true
   "@type": "Class",
   "label": "Prompt Injection",
   "definition": "Prompt injection is a class of adversarial attacks against large language model (LLM) systems in which attacker-controlled text embedded within the model's input context overrides or subverts the developer-specified system prompt, causing the model to follow attacker instructions instead of its intended operating constraints. Direct prompt injection occurs when a user submits malicious instructions directly; indirect prompt injection occurs when the model retrieves or processes external content such as web pages, documents, or tool outputs that contain embedded adversarial instructions. As LLMs are increasingly deployed in agentic pipelines with tool-calling and autonomous action capabilities, prompt injection constitutes a critical security boundary violation that can lead to data exfiltration, privilege escalation, and unauthorised actions on external systems.",
+  "vc:plainGloss": "A way of tricking an AI by hiding sneaky instructions inside the text it reads — a pasted document, a web page, or another person's message — so it quietly does what the attacker wants instead of what you asked. Because the AI struggles to tell trusted instructions apart from ordinary text, this is hard to stamp out entirely.",
   "domain": "security",
   "maturity": "established",
   "subClassOf": [
@@ -155,6 +156,9 @@ public:: true
   - Prompt injection is a class of [[Adversarial Attack]] targeting [[Large Language Model]] systems, in which attacker-controlled text embedded in the model's input context overrides or subverts the developer-specified [[System Prompt]], causing the model to follow attacker instructions rather than its intended operating constraints.
   - It is structurally analogous to [[SQL Injection]] in relational databases: both exploit the conflation of control and data channels within a single input stream. Unlike SQL injection, which can be mitigated with syntactic parameterisation, prompt injection has no robust syntactic defence because natural language instructions are semantically indistinguishable from natural language data.
   - The two canonical sub-types are direct prompt injection (malicious instructions from the user turn) and indirect prompt injection (adversarial instructions hidden in external content processed by the model, such as web pages, documents, or tool results). The latter is especially dangerous in [[Agentic AI]] deployments where the model has tool-calling access to email, calendars, code interpreters, or external APIs.
+
+- ### In Plain Terms
+  - A way of tricking an AI by hiding sneaky instructions inside the text it reads — a pasted document, a web page, or another person's message — so it quietly does what the attacker wants instead of what you asked. Because the AI struggles to tell trusted instructions apart from ordinary text, this is hard to stamp out entirely.
 
 - ### Overview
   - Prompt injection was first systematically described as a distinct LLM vulnerability class around 2022–2023, coinciding with widespread deployment of instruction-tuned models via APIs and chat interfaces.

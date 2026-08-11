@@ -125,7 +125,7 @@ public:: true
     ],
     "implements": [
       {"@id": "urn:ngm:class:plan-and-execute-pattern", "label": "Plan-and-Execute Pattern"},
-      {"@id": "urn:ngm:class:react-pattern", "label": "ReAct Pattern"},
+      {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"},
       {"@id": "urn:ngm:class:contract-net-protocol", "label": "Contract Net Protocol"}
     ],
     "depends-on": [

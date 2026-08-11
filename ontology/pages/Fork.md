@@ -97,7 +97,7 @@ public:: true
     ],
     "impacts": [
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],

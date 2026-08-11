@@ -47,7 +47,7 @@ public:: true
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {"@id": "urn:ngm:class:w3-c", "label": "W3C"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}

@@ -15,7 +15,7 @@ public:: true
       "vc:label": "Cache System"
     },
     {
-      "@id": "urn:visionflow:linked:data-center",
+      "@id": "urn:visionflow:linked:data-centre",
       "vc:label": "Data Center"
     },
     {
@@ -203,8 +203,8 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Data Center]]",
-      "resolved": "urn:visionflow:linked:data-center",
+      "raw": "[[Data Centre]]",
+      "resolved": "urn:visionflow:linked:data-centre",
       "kind": "StubLink"
     },
     {
@@ -330,7 +330,7 @@ public:: true
   - is-part-of:: [[Network Infrastructure]]
   - requires:: [[Network Infrastructure]], [[Storage System]], [[DNS Service]]
   - enables:: [[Low-Latency Content Delivery]], [[Scalable Distribution]], [[Geographic Redundancy]], [[DDoS Protection]]
-  - depends-on:: [[Internet Service Provider]], [[Data Center]], [[Network Protocol]]
+  - depends-on:: [[Internet Service Provider]], [[Data Centre]], [[Network Protocol]]
 
 - ### Content
   Content Delivery Network (CDN) — content pending enrichment.

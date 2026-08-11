@@ -119,7 +119,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ]
@@ -168,7 +168,7 @@ public:: true
   - relatedTo:: [[Stereo Vision]]
   - relatedTo:: [[SLAM]]
   - bridgesTo:: [[Autonomous Navigation]]
-  - contrastsWith:: [[Localization]]
+  - contrastsWith:: [[Localisation]]
 - ### Provenance
   - attributedTo:: did:nostr:ontology-mesh
   - inferenceRule:: GapMaterialisation

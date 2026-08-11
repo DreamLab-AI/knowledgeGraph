@@ -60,6 +60,18 @@ public:: true
       "label": "Legal and Regulatory"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
+  },
   "quality": 0.6,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -120,6 +132,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[Governance]]
+  - related-to:: [[Regulatory Compliance]]
 
 - ### Content
   - Reed Smith is a global law firm that advises clients across a range of practice areas, including litigation, finance, and regulatory matters. It operates offices in multiple countries.

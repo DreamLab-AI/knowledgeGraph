@@ -47,6 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Hallucination",
   "definition": "Hallucination in artificial intelligence refers to the phenomenon whereby a generative model produces fluent, confident, and syntactically plausible output that is factually incorrect, unsupported by provided context, or entirely fabricated. It is a fundamental failure mode of large language models, vision-language models, and other neural generative systems that optimise for next-token probability rather than verifiable truth. Hallucinations range from subtle factual distortions to wholesale invention of citations, persons, dates, or events, and represent a critical safety and reliability concern for deployed AI systems. Mitigation strategies include retrieval-augmented generation, grounding with tool use, chain-of-thought prompting, and output verification pipelines.",
+  "vc:plainGloss": "When an AI states something false with complete confidence — inventing a fact, a quote, a source or a figure that sounds entirely plausible but is not real. It happens because the model is built to produce likely-sounding text, not to check whether that text is true, so its output always needs verifying.",
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
@@ -212,6 +213,9 @@ public:: true
 
 - ### Definition
   - Hallucination in [[Artificial Intelligence]] is the generation of fluent, confident output by a [[Generative Model]] that is factually incorrect, unsupported by its input context, or entirely fabricated. The term borrows from psychology — where hallucination denotes perception without external stimulus — to describe a structural failure in models that predict likely text rather than verify truth. Hallucination is a critical concern for [[AI Safety]], [[AI Alignment]], and the responsible deployment of [[Large Language Model]] systems in high-stakes domains such as medicine, law, and science.
+
+- ### In Plain Terms
+  - When an AI states something false with complete confidence — inventing a fact, a quote, a source or a figure that sounds entirely plausible but is not real. It happens because the model is built to produce likely-sounding text, not to check whether that text is true, so its output always needs verifying.
 
 - ### Overview
   - Hallucination emerges from the core optimisation objective of autoregressive [[Neural Network]] architectures: maximising the probability of the next token given prior context. Because the model has no explicit mechanism for distinguishing remembered facts from plausible-sounding inventions, it can generate output that is stylistically fluent yet semantically false.

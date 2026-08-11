@@ -22,6 +22,7 @@ public:: true
   "@type": "Class",
   "label": "Telemetry",
   "definition": "Telemetry is the automated collection, transmission and aggregation of measurements and signals from remote or distributed systems to a central point for monitoring and analysis. In software and infrastructure it commonly refers to the emission of metrics, logs, traces and events that describe a system's behaviour and health. Telemetry data is the raw substrate on which observability, alerting and performance analysis are built.",
+  "vc:plainGloss": "The steady stream of readings a running system reports about itself — how fast it is going, what it is doing, and where it is struggling. It is the raw data that dashboards and alerts are built from, much like the gauges on a car dashboard.",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
@@ -111,6 +112,8 @@ public:: true
 - ### Definition
   - Telemetry is the automated collection, transmission and aggregation of measurements and signals from remote or distributed systems to a central point for monitoring and analysis. In software and infrastructure it commonly refers to the emission of metrics, logs, traces and events that describe a system's behaviour and health. Telemetry data is the raw substrate on which observability, alerting and performance analysis are built.
   - Related core concepts: [[Observability]] [[Instrumentation]] [[Monitoring]] [[Distributed Tracing]] [[Sensor]]
+- ### In Plain Terms
+  - The steady stream of readings a running system reports about itself — how fast it is going, what it is doing, and where it is struggling. It is the raw data that dashboards and alerts are built from, much like the gauges on a car dashboard.
 - ### Overview
   - The term originates in remote sensing, where measurements from inaccessible locations were transmitted back for analysis. In modern distributed systems, telemetry pipelines gather signals at the source through instrumentation, transport them efficiently, and store them as time-series, structured logs or trace spans. Standards such as OpenTelemetry have converged the emission and collection of these signals, decoupling instrumentation from any particular backend.
 - ### Key aspects

@@ -59,7 +59,7 @@ alias:: RB-1013-localization
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:localization", "label": "Localization"},
+      {"@id": "urn:ngm:class:localisation", "label": "Localization"},
       {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"}
     ],
     "enables": [
@@ -112,7 +112,7 @@ alias:: RB-1013-localization
   - uses [[Particle Filter]]
   - uses [[Lidar]]
   - relatedTo [[SLAM]]
-  - relatedTo [[Localization]]
+  - relatedTo [[Localisation]]
   - relatedTo [[Visual Odometry]]
   - enables [[Autonomous Navigation]]
 

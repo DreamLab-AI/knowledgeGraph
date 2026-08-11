@@ -113,7 +113,7 @@ public:: true
       { "@id": "urn:ngm:class:content-provenance", "label": "Content Provenance" },
       { "@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "Intellectual Property" },
       { "@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration" },
-      { "@id": "urn:ngm:class:c2pa", "label": "C2PA" }
+      { "@id": "urn:ngm:class:c2-pa", "label": "C2PA" }
     ]
   },
   "sameAs": [

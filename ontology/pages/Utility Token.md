@@ -70,7 +70,7 @@ public:: true
         "label": "Crypto Token"
       },
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {

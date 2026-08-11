@@ -178,7 +178,7 @@ public:: true
   - enables:: [[Robot-Assisted Surgery]]
   - enables:: [[Remote Surgery]]
   - relatedTo:: [[Artificial Intelligence]]
-  - relatedTo:: [[Human-Robot Interaction]]
+  - relatedTo:: [[Human Robot Interaction]]
   - dependsOn:: [[Control Loop]]
 
 - ### Provenance

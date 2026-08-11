@@ -40,7 +40,7 @@ public:: true
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
       {"@id": "urn:ngm:class:slam", "label": "SLAM"},
       {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:localization", "label": "Localization"},
+      {"@id": "urn:ngm:class:localisation", "label": "Localization"},
       {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"},
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
       {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},

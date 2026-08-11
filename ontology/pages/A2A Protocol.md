@@ -128,7 +128,7 @@ public:: true
       {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
       {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
       {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:protocol-buffers", "label": "Protocol Buffers"}
+      {"@id": "urn:ngm:class:protocol-buffer", "label": "Protocol Buffers"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},

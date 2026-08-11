@@ -89,7 +89,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       }
     ],
@@ -144,7 +144,7 @@ public:: true
   - dependsOn:: [[Supply Chain Transparency]]
   - dependsOn:: [[Payment Settlement]]
   - enables:: [[Supply Chain Provenance]]
-  - requires:: [[Asset Tokenization]]
+  - requires:: [[Asset Tokenisation]]
   - partOf:: [[Supply Chain Management]]
 - ### Provenance
   - attributedTo:: did:nostr:ontology-mesh

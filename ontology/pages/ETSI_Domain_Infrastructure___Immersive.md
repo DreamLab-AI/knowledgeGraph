@@ -218,7 +218,7 @@ public:: true
         "label": "Extended Reality"
       },
       {
-        "@id": "urn:ngm:class:real-time-synchronization",
+        "@id": "urn:ngm:class:real-time-synchronisation",
         "label": "Real-time Synchronization"
       },
       {

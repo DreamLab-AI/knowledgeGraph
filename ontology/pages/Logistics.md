@@ -29,7 +29,7 @@ public:: true
       {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},
+      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"},
       {"@id": "urn:ngm:class:reverse-logistics", "label": "Reverse Logistics"}
     ]
   },
@@ -40,7 +40,7 @@ public:: true
 - ### Definition
   - [[Logistics]] is the planning, execution, and control of the movement and storage of goods, services, and information from origin to consumption. It is a [[Process]] spanning transportation, warehousing, inventory, and fulfilment.
 - ### Relationships
-  - Logistics is a constituent function and is therefore part of [[Supply Chain Management]]. Its efficiency is improved through [[Logistics Optimization]] techniques, and its scope extends to [[Reverse Logistics]] flows for returns, repair, and recycling.
+  - Logistics is a constituent function and is therefore part of [[Supply Chain Management]]. Its efficiency is improved through [[Logistics Optimisation]] techniques, and its scope extends to [[Reverse Logistics]] flows for returns, repair, and recycling.
 - ### Content
   - Logistics balances competing objectives of cost, speed, and reliability across transportation modes, inventory positioning, and facility location. The classic trade-off between holding inventory and incurring transportation cost is central to network design.
 

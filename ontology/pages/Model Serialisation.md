@@ -83,7 +83,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:checkpoint",
+        "@id": "urn:ngm:class:checkpoints",
         "label": "Checkpoint"
       },
       {
@@ -129,7 +129,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:storage-system",
+        "@id": "urn:ngm:class:storage-systems",
         "label": "Storage System"
       }
     ]

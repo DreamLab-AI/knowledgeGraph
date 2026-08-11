@@ -233,7 +233,7 @@ public:: true
   - enables [[Minimally Invasive Surgery]]
   - enables [[Telesurgery]]
   - enables [[Tremor Filtration]]
-  - dependsOn [[Human-Robot Interaction]]
+  - dependsOn [[Human Robot Interaction]]
   - dependsOn [[Surgical Planning]]
   - standardizedBy [[IEC 80601-2-77]]
   - standardizedBy [[ISO 8373]]

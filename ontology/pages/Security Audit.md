@@ -49,7 +49,7 @@ public:: true
     "standardizedBy": [
       {"@id": "urn:ngm:class:iso-27001", "label": "ISO 27001"},
       {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"},
-      {"@id": "urn:ngm:class:soc2", "label": "SOC 2"}
+      {"@id": "urn:ngm:class:soc-2", "label": "SOC 2"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:security-monitoring", "label": "Security Monitoring"}

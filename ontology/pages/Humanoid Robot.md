@@ -845,7 +845,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -958,7 +958,7 @@ public:: true
   - enables:: [[Warehouse Automation]], [[Manufacturing Automation]], [[Elder Care Robotics]], [[Hazardous Environment Inspection]], [[Human-Robot Collaboration]], [[General-Purpose Manipulation]]
   - implements:: [[Model Predictive Control]], [[Reinforcement Learning]], [[Whole-Body Control]], [[Vision-Language-Action Models]], [[Sim-to-Real Transfer]], [[Series Elastic Actuation]]
   - depends-on:: [[Control Theory]], [[Rigid Body Dynamics]], [[Machine Learning Discipline]], [[Computer Vision]], [[Natural Language Processing]], [[Real-Time Operating Systems]]
-  - supports:: [[Agent Frameworks]], [[Embodied AI]], [[Imitation Learning]], [[Human-Robot Interaction]], [[Task and Motion Planning]]
+  - supports:: [[Agent Frameworks]], [[Embodied AI]], [[Imitation Learning]], [[Human Robot Interaction]], [[Task and Motion Planning]]
   - uses:: [[SLAM]], [[Deep Learning]], [[Transformer Architecture]], [[Physics Simulation]], [[Domain Randomisation]], [[Multi-Modal Sensing]]
   - contrasts-with:: [[Wheeled Robot]], [[Industrial Robot Arm]], [[Exoskeleton]], [[Quadruped Robot]], [[Drone]]
   - related-to:: [[AI Adoption]], [[Agents]], [[Agent Frameworks]], [[Brain Computer Interfaces]], [[AI Risks]]

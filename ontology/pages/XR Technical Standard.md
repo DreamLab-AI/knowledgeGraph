@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:xr-technical-standard",
   "@type": "Class",
   "label": "XR Technical Standard",
-  "definition": "XR Technical Standard is a spatial computing concept.",
+  "definition": "An XR technical standard is a formal specification defining interfaces, data formats, or performance requirements for extended reality hardware and software — for example OpenXR for runtime APIs, WebXR for browser-based immersive experiences, and glTF for 3D asset interchange. Such standards reduce fragmentation and let content run across headsets from different vendors.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "relations": {
@@ -51,6 +51,17 @@ public:: true
         "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"},
+      {"@id": "urn:ngm:class:web-xr", "label": "WebXR"},
+      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"}
     ]
   },
   "quality": 0.35,
@@ -95,14 +106,18 @@ public:: true
 
 
 - ### Definition
-  - X R Technical Standard is a concept within the metaverse domain. Further enrichment pending.
+  - An XR technical standard is a formal specification defining interfaces, data formats, or performance requirements for extended reality hardware and software — for example OpenXR for runtime APIs, WebXR for browser-based immersive experiences, and glTF for 3D asset interchange. Such standards reduce fragmentation and let content run across headsets from different vendors.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:XRTechnicalStandard
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - related-to:: [[OpenXR]]
+  - related-to:: [[WebXR]]
+  - related-to:: [[Khronos Group]]
+  - enables:: [[Interoperability]]
+  - bridges-to:: [[Extended Reality (XR)]]
 
 - ### Content
 

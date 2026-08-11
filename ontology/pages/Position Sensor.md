@@ -34,7 +34,7 @@ alias:: PositionSensor
       {"@id": "urn:ngm:class:imu", "label": "IMU"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:localization", "label": "Localization"},
+      {"@id": "urn:ngm:class:localisation", "label": "Localization"},
       {"@id": "urn:ngm:class:robot-manipulation", "label": "Robot Manipulation"}
     ],
     "supports": [
@@ -50,7 +50,7 @@ alias:: PositionSensor
   - A [[Position Sensor]] is a [[Sensor]] that converts the physical displacement or angular position of a mechanical element into an electrical signal, serving as the primary feedback element in closed-loop control systems for [[Robot Manipulation]] and [[Robotic Control]].
 
 - ### Relationships
-  - Position sensors encompass the [[Encoder]], [[Rotary Encoder]], and [[Linear Encoder]] families as principal implementations, and function as [[Proprioceptive Sensor]] devices within robot joint assemblies. Combined with [[IMU]] data, they support full-body [[Localization]] and provide the joint-angle measurements required for accurate [[Robot Kinematics]] computations that underpin precise [[Robot Manipulation]].
+  - Position sensors encompass the [[Encoder]], [[Rotary Encoder]], and [[Linear Encoder]] families as principal implementations, and function as [[Proprioceptive Sensor]] devices within robot joint assemblies. Combined with [[IMU]] data, they support full-body [[Localisation]] and provide the joint-angle measurements required for accurate [[Robot Kinematics]] computations that underpin precise [[Robot Manipulation]].
 
 - ### Content
   - Position sensing in mechanical systems dates to 19th-century potentiometric devices used in telegraph and early industrial automation. The introduction of optical incremental encoders in the 1960s transformed precision motion control, providing digital quadrature signals with resolutions in the thousands of counts per revolution. Absolute encoders, which encode absolute position as a multi-track Gray code pattern, eliminated the homing requirement that limited incremental designs, becoming standard in CNC machining and industrial robotics from the 1980s onward.

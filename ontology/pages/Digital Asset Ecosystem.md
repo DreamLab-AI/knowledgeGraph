@@ -118,7 +118,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-tokenization",
+        "@id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenization"
       },
       {
@@ -240,7 +240,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Asset Tokenization]]",
+      "raw": "[[Asset Tokenisation]]",
       "resolved": "urn:visionflow:owl:class:asset-tokenization",
       "kind": "ResolvedLink"
     },
@@ -297,7 +297,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Digital Economy]]
   - requires:: [[Blockchain Network]], [[Wallet Infrastructure]], [[Exchange Platforms]]
-  - enables:: [[Asset Tokenization]], [[DeFi Services]], [[Digital Ownership]]
+  - enables:: [[Asset Tokenisation]], [[DeFi Services]], [[Digital Ownership]]
 
 - ### Content
 

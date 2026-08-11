@@ -34,7 +34,7 @@ elevatedFrom:: [[perplexity]]
   "@id": "urn:ngm:class:perplexity-ai-search-platform",
   "@type": "Class",
   "label": "Perplexity AI Search Platform",
-  "definition": "perplexity is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Perplexity AI is a conversational search platform that combines large language models with live web retrieval to produce cited, synthesised answers to natural-language queries. Offered through consumer applications and an API, it applies retrieval-augmented generation to web-scale content, sitting between traditional search engines and generative AI assistants.",
   "domain": "infrastructure",
   "maturity": "draft",
   "subClassOf": [
@@ -57,6 +57,18 @@ elevatedFrom:: [[perplexity]]
       {
         "@id": "urn:ngm:class:technology-infrastructure",
         "label": "Technology Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       }
     ]
   }
@@ -84,14 +96,14 @@ elevatedFrom:: [[perplexity]]
 
 
 - ### Definition
-  - perplexity is a concept within the ngm domain.
+  - Perplexity AI is a conversational search platform that combines large language models with live web retrieval to produce cited, synthesised answers to natural-language queries. Offered through consumer applications and an API, it applies retrieval-augmented generation to web-scale content, sitting between traditional search engines and generative AI assistants.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Perplexity
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - related-to:: [[Search Engine]], [[Large Language Models]], [[Retrieval-Augmented Generation]]
 
 - ### Content
   - [Introducing Perplexity Pages](https://www.perplexity.ai/hub/blog/perplexity-pages)

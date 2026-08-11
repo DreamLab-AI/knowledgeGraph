@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:erc1400-standard",
   "@type": "Class",
   "label": "ERC1400 Standard",
-  "definition": "Security token standard with compliance controls and transfer restrictions.",
+  "definition": "An Ethereum security token standard (ERC-1400) combining fungible token behaviour with regulatory compliance controls, including partitioned balances, transfer restrictions, forced transfers for legal recovery, and on-chain document attachment, enabling the issuance and lifecycle management of regulated securities on public blockchains.",
   "domain": "blockchain",
   "maturity": "established",
   "relations": {
@@ -50,6 +50,28 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contract-platform",
         "label": "Smart Contract Platform"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ]
   },
@@ -95,7 +117,7 @@ public:: true
 
 
 - ### Definition
-  - Security token standard with compliance controls and transfer restrictions.
+  - An Ethereum security token standard (ERC-1400) combining fungible token behaviour with regulatory compliance controls, including partitioned balances, transfer restrictions, forced transfers for legal recovery, and on-chain document attachment, enabling the issuance and lifecycle management of regulated securities on public blockchains.
 
 - ### Semantic Classification
   - owl-class:: blockchain:ERC1400Standard

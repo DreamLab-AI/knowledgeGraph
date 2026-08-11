@@ -179,7 +179,7 @@ public:: true
         "label": "Variational Autoencoder"
       },
       {
-        "@id": "urn:ngm:class:masked-language-model",
+        "@id": "urn:ngm:class:masked-language-modelling",
         "label": "Masked Language Model"
       },
       {

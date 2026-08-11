@@ -167,7 +167,7 @@ alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
         "label": "Sensor Fusion"
       },
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ],

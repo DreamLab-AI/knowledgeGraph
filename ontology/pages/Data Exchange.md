@@ -27,7 +27,7 @@ public:: true
       {"@id": "urn:ngm:class:api", "label": "API"},
       {"@id": "urn:ngm:class:data-format", "label": "Data Format"},
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:data-serialisation", "label": "Data Serialisation"}
+      {"@id": "urn:ngm:class:data-serialization", "label": "Data Serialisation"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},

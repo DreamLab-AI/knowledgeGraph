@@ -28,7 +28,7 @@ public:: true
   "relations": {
     "supports": [
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"}
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous Systems"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:satellite-communication", "label": "Satellite Communication"},

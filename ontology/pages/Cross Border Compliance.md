@@ -642,7 +642,7 @@ public:: true
         "label": "Data Protection Rights"
       },
       {
-        "@id": "urn:ngm:class:digital-single-market",
+        "@id": "urn:ngm:class:eu-digital-single-market",
         "label": "Digital Single Market"
       },
       {

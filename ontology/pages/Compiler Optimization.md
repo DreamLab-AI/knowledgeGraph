@@ -31,7 +31,7 @@ public:: true
     ],
     "enables":[
       {"@id":"urn:ngm:class:performance-optimization","label":"Performance Optimization"},
-      {"@id":"urn:ngm:class:optimization-algorithm","label":"Optimization Algorithm"}
+      {"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimization Algorithm"}
     ],
     "supports":[
       {"@id":"urn:ngm:class:programming-language","label":"Programming Language"}
@@ -82,7 +82,7 @@ public:: true
   - uses:: [[Just-In-Time Compilation]]
   - uses:: [[Profiling]]
   - enables:: [[Performance Optimization]]
-  - enables:: [[Optimization Algorithm]]
+  - enables:: [[Optimisation Algorithm]]
   - supports:: [[Programming Language]]
   - partOf:: [[Compiler]]
   - relatedTo:: [[Performance Optimization]]

@@ -1,4 +1,5 @@
 public:: true
+alias:: ETSI_Domain_Governance_Compliance
 
 # ETSI Domain: Governance & Compliance
 ```json-ld
@@ -128,6 +129,10 @@ public:: true
       {
         "@id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "requires": [
@@ -568,6 +573,20 @@ public:: true
   | SOC 2 Type II | Audit | Service-organisation controls for security and availability (relevant to cloud-hosted compliance systems) | Yes — CPA firms |
   | ISO/IEC 27001:2022 | Management System | Information security management (often implemented alongside ISO/IEC 42001) | Yes — accredited CABs |
   | ISO/IEC 29101:2018 | Architecture | Privacy reference architecture for compliance system design | No (architecture standard) |
+
+  ## Digital Identity and Data Ecosystem Governance (ETSI TR 104 077 Series)
+
+  Beyond the metaverse-specific taxonomy of GR MEC 032, ETSI's [[ETSI TR 104 077 series]] provides a comprehensive mapping of governance and compliance requirements for digital identity and data ecosystems, including the European Digital Identity (EUDI) Wallet initiative. Companion deliverables address adjacent compliance obligations: ETSI TR 104 027 covers data governance and retention, and ETSI TR 104 119 covers documentation and audit. Across this series the emphasis has shifted from reactive compliance to proactive governance — embedding compliance into system design and daily operations rather than treating it as a post-hoc verification exercise. The domain's intellectual foundations also draw on established IT-governance frameworks that predate AI-specific standards: [[ISO/IEC 38500]] (corporate governance of IT), [[COBIT]] (control objectives for information and related technologies), the [[NIST Cybersecurity Framework]], and the decision-rights literature (Weill & Ross, ''IT Governance'', 2004). Governance capabilities delivered through this lineage include robust access control, audit trails, privacy-by-design, and interoperability with other standards families; persistent limitations include the complexity of cross-border implementation and the need for continuous updates to keep pace with evolving regulation.
+
+  In the UK, the Digital Identity and Attributes Trust Framework (DIATF), the National Cyber Security Centre (NCSC), and the ICO all reference ETSI standards in their guidance. Regional implementations include the Greater Manchester Combined Authority's digital identity pilot for citizen services, Leeds City Council's smart-city data governance initiative, and digital identity and compliance research at Newcastle and Sheffield universities, often conducted in collaboration with ETSI working groups. Ongoing research directions in this strand include AI and machine learning in compliance monitoring, cross-border data governance under the EU Digital Identity Wallet, and privacy-preserving technologies for compliance verification.
+
+  ### Additional References (Digital Identity Governance Strand)
+
+  1. European Telecommunications Standards Institute (2025). ETSI TR 104 077-3 V1.1.1: Compliance and Governance. https://www.etsi.org/deliver/etsi_tr/104000_104099/10407703/01.01.01_60/tr_10407703v010101p.pdf
+  2. European Telecommunications Standards Institute (2025). ETSI TR 104 027 V1.1.1: Data Governance and Retention. https://www.etsi.org/deliver/etsi_tr/104000_104099/104027/01.01.01_60/tr_104027v010101p.pdf
+  3. European Telecommunications Standards Institute (2025). ETSI TR 104 119 V1.1.1: Documentation and Audit. https://www.etsi.org/deliver/etsi_tr/104100_104199/104119/01.01.01_60/tr_104119v010101p.pdf
+  4. Weill, P. & Ross, J. W. (2004). IT Governance: How Top Performers Manage IT Decision Rights for Superior Results. Harvard Business Press.
+  5. ISACA (2018). COBIT 2019 Framework: Governance and Management Objectives. https://www.isaca.org/resources/cobit
 
 - ### Provenance
   - sources:: https://www.etsi.org/newsroom/news/2642-global-digital-policy-2026/, https://ieeexplore.ieee.org/document/10571927/, https://www.iso.org/standard/42001, https://kpmg.com/ch/en/insights/artificial-intelligence/iso-iec-42001.html, https://www.deloitte.com/uk/en/services/audit-assurance/blogs/navigating-ai-assurance-spotlight-on-iso-iec.html, https://link.springer.com/article/10.1007/s44206-025-00163-0, https://www.frontiersin.org/journals/blockchain/articles/10.3389/fbloc.2025.1675735/full, https://www.nature.com/articles/s41599-023-01750-7, https://www.legalnodes.com/article/eu-ai-act-2026-updates-compliance-requirements-and-business-risks, [[ETSI GR MEC 032]]

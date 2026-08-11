@@ -20,7 +20,7 @@ public:: true
     "uses":[{"@id":"urn:ngm:class:on-chain-governance","label":"On-Chain Governance"},{"@id":"urn:ngm:class:dao","label":"DAO"}],
     "requires":[{"@id":"urn:ngm:class:token-standard","label":"Token Standard"},{"@id":"urn:ngm:class:compliance","label":"Compliance"}],
     "implements":[{"@id":"urn:ngm:class:token-governance","label":"Token Governance"}],
-    "enables":[{"@id":"urn:ngm:class:asset-tokenization","label":"Asset Tokenization"}],
+    "enables":[{"@id":"urn:ngm:class:asset-tokenisation","label":"Asset Tokenization"}],
     "supports":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
     "dependsOn":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
     "bridgesTo":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"},{"@id":"urn:ngm:class:tokenization","label":"Tokenization"}],
@@ -52,7 +52,7 @@ public:: true
   - #### Standards and conformance
     - Adherence to [[Token Standard]]s for fungible and non-fungible assets, ensuring interoperability and predictable behaviour.
   - #### Compliance and accountability
-    - KYC/AML, transfer restrictions, and reporting integrated for regulated [[Asset Tokenization]], aligning on-chain rules with [[Regulatory Compliance]].
+    - KYC/AML, transfer restrictions, and reporting integrated for regulated [[Asset Tokenisation]], aligning on-chain rules with [[Regulatory Compliance]].
 
 - ### Applications
   - #### Protocol and treasury governance
@@ -72,7 +72,7 @@ public:: true
   - requires:: [[Token Standard]]
   - requires:: [[Compliance]]
   - implements:: [[Token Governance]]
-  - enables:: [[Asset Tokenization]]
+  - enables:: [[Asset Tokenisation]]
   - supports:: [[Regulatory Compliance]]
   - dependsOn:: [[Smart Contract]]
   - bridgesTo:: [[Regulatory Compliance]]

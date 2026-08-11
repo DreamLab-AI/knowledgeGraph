@@ -151,8 +151,8 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": {
-    "@id": "urn:ngm:class:robo-human-robot-interaction",
-    "label": "Human-Robot Interaction"
+    "@id": "urn:ngm:class:robotics",
+    "label": "Robotics"
   },
   "relations": {
     "hasPart": [
@@ -167,6 +167,34 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
       {
         "@id": "urn:ngm:class:teach-pendant",
         "label": "Teach Pendant"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
       }
     ],
     "partOf": [
@@ -261,6 +289,22 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
       {
         "@id": "urn:ngm:class:intent-recognition",
         "label": "Intent Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "@id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      },
+      {
+        "@id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
       }
     ]
   },
@@ -272,6 +316,10 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
     {
       "@id": "urn:ngm:class:hri",
       "label": "HRI"
+    },
+    {
+      "@id": "urn:ngm:class:human-robot-interaction",
+      "label": "Human-Robot Interaction"
     }
   ],
   "quality": 0.72,

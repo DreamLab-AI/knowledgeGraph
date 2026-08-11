@@ -19,7 +19,7 @@ public:: true
       "vc:label": "Probability Theory"
     },
     {
-      "@id": "urn:visionflow:linked:localization",
+      "@id": "urn:visionflow:linked:localisation",
       "vc:label": "Localization"
     },
     {
@@ -93,7 +93,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -213,8 +213,8 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Localization]]",
-      "resolved": "urn:visionflow:linked:localization",
+      "raw": "[[Localisation]]",
+      "resolved": "urn:visionflow:linked:localisation",
       "kind": "ResolvedLink"
     },
     {
@@ -255,7 +255,7 @@ public:: true
   - is-subclass-of:: [[Robotics Domain]]
   - bridges-to:: [[Particle Filter]]
   - requires:: [[Bayesian Inference]], [[Probability Theory]]
-  - enables:: [[Localization]], [[SLAM]]
+  - enables:: [[Localisation]], [[SLAM]]
 
 - ### Content
   - Probabilistic robotics models sensor noise, actuation error and incomplete knowledge as probability distributions over robot and world state, rather than assuming exact values. Estimation algorithms such as Bayes filters update these distributions as measurements and control inputs arrive.

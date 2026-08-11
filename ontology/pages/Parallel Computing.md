@@ -59,6 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Parallel Computing",
   "definition": "Parallel computing executes many operations simultaneously across multiple processing units to reduce wall-clock time for workloads that can be decomposed into independent or loosely coupled parts.",
+  "vc:plainGloss": "Splitting a big job into pieces and working on many of them at the same time across several processors, so the whole thing finishes far faster — like a team each tackling part of a task at once instead of one person doing it all in sequence.",
   "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -242,6 +243,9 @@ public:: true
 
 - ### Definition
   - Parallel computing executes many operations simultaneously across multiple processing units to reduce wall-clock time for workloads that can be decomposed into independent or loosely coupled parts.
+
+- ### In Plain Terms
+  - Splitting a big job into pieces and working on many of them at the same time across several processors, so the whole thing finishes far faster — like a team each tackling part of a task at once instead of one person doing it all in sequence.
 
 - ### Semantic Classification
   - owl-class:: metaverse:ParallelComputing

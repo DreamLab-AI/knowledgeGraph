@@ -33,30 +33,30 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:smart-city-infrastructure", "label": "Smart City Infrastructure"},
-      {"@id": "urn:ngm:class:iot-ai-integration", "label": "IoT AI Integration"},
+      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"},
       {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:iot-sensor", "label": "IoT Sensor"},
       {"@id": "urn:ngm:class:building-automation", "label": "Building Automation"},
-      {"@id": "urn:ngm:class:iot-infrastructure", "label": "IoT Infrastructure"}
+      {"@id": "urn:ngm:class:io-t-infrastructure", "label": "IoT Infrastructure"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
       {"@id": "urn:ngm:class:building-information-modelling", "label": "Building Information Modelling"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:iot-sensor-network", "label": "Iot Sensor Network"},
+      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "Iot Sensor Network"},
       {"@id": "urn:ngm:class:iot-device", "label": "IoT Device"},
       {"@id": "urn:ngm:class:real-time-analytics", "label": "Real-Time Analytics"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:iot-integration", "label": "IoT Integration"},
-      {"@id": "urn:ngm:class:industrial-iot", "label": "Industrial IoT"}
+      {"@id": "urn:ngm:class:io-t-integration", "label": "IoT Integration"},
+      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:smart-home-automation", "label": "Smart Home Automation"},
-      {"@id": "urn:ngm:class:iot", "label": "IoT"},
+      {"@id": "urn:ngm:class:io-t", "label": "IoT"},
       {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
     ],
     "requires": [

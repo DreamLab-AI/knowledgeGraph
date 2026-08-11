@@ -32,7 +32,7 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:logistics-optimization",
+      "@id": "urn:ngm:class:logistics-optimisation",
       "label": "Logistics Optimization"
     }
   ],
@@ -75,7 +75,7 @@ public:: true
         "label": "Provenance Tracking"
       },
       {
-        "@id": "urn:ngm:class:logistics-optimization",
+        "@id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
       },
       {
@@ -170,7 +170,7 @@ public:: true
 ```
 
 - ### Definition
-  - A **supply chain** is the end-to-end network of organisations, people, activities, information flows, and resources involved in transforming raw materials into finished products and delivering them to end consumers. It spans [[Procurement]], [[Inventory Management]], [[Manufacturing]], quality assurance, [[Logistics Optimization]], customs compliance, and retail fulfilment across multiple tiers of suppliers and distributors. Digital technologies—including [[Supply Chain Blockchain]], [[Artificial Intelligence]], and [[Digital Twin]] simulations—are increasingly deployed to improve resilience, transparency, and sustainability across all tiers.
+  - A **supply chain** is the end-to-end network of organisations, people, activities, information flows, and resources involved in transforming raw materials into finished products and delivering them to end consumers. It spans [[Procurement]], [[Inventory Management]], [[Manufacturing]], quality assurance, [[Logistics Optimisation]], customs compliance, and retail fulfilment across multiple tiers of suppliers and distributors. Digital technologies—including [[Supply Chain Blockchain]], [[Artificial Intelligence]], and [[Digital Twin]] simulations—are increasingly deployed to improve resilience, transparency, and sustainability across all tiers.
 
 - ### Overview
   - A supply chain encompasses every step that converts natural resources and components into goods or services that reach a buyer. The concept extends beyond physical flows to include financial flows ([[Trade Finance]]), information flows ([[Data Integration]]), and contractual relationships between entities at each tier.
@@ -186,7 +186,7 @@ public:: true
   - **[[Procurement]]** — selection, contracting, and qualification of suppliers; strategic sourcing decisions.
   - **[[Demand Forecasting]]** — statistical and AI-driven techniques to anticipate customer demand and align production schedules.
   - **[[Inventory Management]]** — optimising stock levels to balance service continuity against holding costs; safety stock, reorder points, ABC analysis.
-  - **[[Logistics Optimization]]** — routing, carrier selection, modal shift, last-mile delivery, and warehouse management.
+  - **[[Logistics Optimisation]]** — routing, carrier selection, modal shift, last-mile delivery, and warehouse management.
   - **[[Supply Chain Management]]** — the discipline of planning, executing, and monitoring all supply chain activities as an integrated system.
   - **[[Supply Chain Traceability]]** — the ability to track the provenance and custody history of materials and products across tiers.
   - **[[Risk Management]]** — supplier diversification, geographic redundancy, business continuity planning, and stress-testing via [[Digital Twin]] simulations.
@@ -218,7 +218,7 @@ public:: true
   - hasPart:: [[Inventory Management]]
   - hasPart:: [[Demand Forecasting]]
   - requires:: [[Provenance Tracking]]
-  - requires:: [[Logistics Optimization]]
+  - requires:: [[Logistics Optimisation]]
   - requires:: [[Risk Management]]
   - enables:: [[Just-in-Time Manufacturing]]
   - enables:: [[Sustainability Reporting]]

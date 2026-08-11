@@ -28,7 +28,7 @@ public:: true
   "relations": {
     "partOf": [
       {
-        "@id": "urn:ngm:class:data-center",
+        "@id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
       {
@@ -133,7 +133,7 @@ public:: true
 - ### Definition
 	- An [[Nvidia Gpu]] is a [[Graphics Processing Unit]] produced by NVIDIA that delivers massively parallel computation for [[Deep Learning]] and scientific workloads.
 	- It pairs thousands of cores with tensor units and is programmed primarily via [[CUDA]].
-	- NVIDIA GPUs are the dominant accelerator in [[Data Center]] and [[High-Performance Computing]] environments.
+	- NVIDIA GPUs are the dominant accelerator in [[Data Centre]] and [[High-Performance Computing]] environments.
 - ### Overview
 	- NVIDIA GPUs originated as graphics accelerators but evolved into general-purpose parallel processors after the introduction of the CUDA programming model.
 	- Their architecture excels at the dense linear algebra that underpins neural network training and inference, making them the de facto standard for modern machine learning.
@@ -156,7 +156,7 @@ public:: true
 	- Underpinning [[Model Serving]] infrastructure in production AI systems.
 - ### Relationships
 	- subClassOf:: [[Graphics Processing Unit]]
-	- partOf:: [[Data Center]]
+	- partOf:: [[Data Centre]]
 	- partOf:: [[High-Performance Computing]]
 	- enables:: [[Deep Learning]]
 	- enables:: [[Hardware Acceleration]]

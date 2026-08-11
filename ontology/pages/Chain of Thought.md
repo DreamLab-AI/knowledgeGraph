@@ -29,6 +29,7 @@ alias:: Chain-of-Thought
   "@type": "Class",
   "label": "Chain of Thought",
   "definition": "Chain-of-Thought (CoT) prompting is a technique for eliciting explicit intermediate reasoning steps from autoregressive large language models before producing a final answer, substantially improving accuracy on arithmetic, symbolic, commonsense, and multi-hop reasoning tasks. The mechanism exploits the sequential token-generation process of transformer-based models: each generated reasoning token conditions all subsequent tokens, enabling multi-step deductions that single-pass prompting cannot reliably perform. CoT encompasses a family of variants — few-shot exemplar CoT, zero-shot CoT, self-consistency decoding, tree-of-thought search, and process reward modelling — collectively forming a foundational paradigm for inference-time compute scaling and complex reasoning in large language models.",
+  "vc:plainGloss": "Getting a model to show its working — spelling out the reasoning step by step before giving its final answer. Thinking out loud this way makes it noticeably more accurate on tricky, multi-step problems.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -184,6 +185,9 @@ alias:: Chain-of-Thought
 
 - ### Definition
   - Chain-of-Thought (CoT) is a reasoning elicitation paradigm for [[Large Language Models]] in which the model is guided or trained to generate a sequence of explicit intermediate reasoning steps before producing a final answer. The technique exploits the autoregressive architecture of [[Transformer]]-based decoder models: each generated reasoning token is fed back as context for every subsequent token, enabling multi-step logical deductions that a single forward pass cannot reliably accomplish. CoT encompasses a rich family of variants — few-shot exemplar prompting (Wei et al., 2022), zero-shot CoT triggered by the phrase "Let's think step by step" (Kojima et al., 2022), [[Self-Consistency]] majority-vote decoding (Wang et al., 2022), [[Tree of Thought]] search-based exploration (Yao et al., 2023), Least-to-Most sequential decomposition (Zhou et al., 2022), ReAct interleaved reasoning-and-action (Yao et al., 2022), and [[Process Reward Model]]-guided reinforcement learning (Lightman et al., 2023; Uesato et al., 2022). The paradigm has matured from a pure prompting trick into an architectural training objective: as of 2025–2026, frontier models from OpenAI (o1, o3), Anthropic (Claude 3.7 Sonnet extended thinking), Google (Gemini 2.0/2.5 Pro), and DeepSeek (R1) all internalise long reasoning chains as first-class training targets via reinforcement learning over verifiable rewards. CoT thereby forms the foundational pillar of [[Inference-Time Compute Scaling]], repositioning test-time reasoning as a controllable resource that can be traded against training compute, and bridging the conceptual divide between [[Symbolic AI]] and contemporary neural [[Large Language Models]]. The technique substantially improves accuracy on [[Mathematical Reasoning]], [[Commonsense Reasoning]], [[Multi-Hop Reasoning]], code synthesis, and legal analysis tasks while also providing interpretability affordances through inspectable reasoning traces.
+
+- ### In Plain Terms
+  - Getting a model to show its working — spelling out the reasoning step by step before giving its final answer. Thinking out loud this way makes it noticeably more accurate on tricky, multi-step problems.
 
 - ### Semantic Classification
   - owl-class:: ai:ChainOfThought

@@ -130,7 +130,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:direct-preference-optimization",
+        "@id": "urn:ngm:class:direct-preference-optimisation",
         "label": "Direct Preference Optimization"
       },
       {
@@ -207,7 +207,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Direct Preference Optimization]]",
+      "raw": "[[Direct Preference Optimisation]]",
       "resolved": "urn:visionflow:owl:class:direct-preference-optimization",
       "kind": "ResolvedLink"
     },
@@ -256,13 +256,13 @@ public:: true
 - ### Content
   - A neural network trained to predict scalar rewards for model outputs based on human feedback, used to provide learning signals in reinforcement learning from human feedback (RLHF). The reward model serves as a proxy for human preferences, enabling efficient optimization without constant human evaluation.
 
-		- #### 4️⃣ Direct Preference Optimisation [[Direct Preference Optimization]]
+		- #### 4️⃣ Direct Preference Optimisation [[Direct Preference Optimisation]]
 			- **Description:** *DPO dramatically simplifies the whole thing.
 			- **Explain:** Removes the reward function, and so the human in the loop.
 			- **Paper:** [Direct Preference Optimization: Your Language Model is Secretly a Reward Model (arxiv.org)](https://arxiv.org/abs/2305.18290?)
 		- **In operation:  [[Proprietary Large Language Models]]:**
 
-		- #### 4️⃣ Direct Preference Optimisation [[Direct Preference Optimization]]
+		- #### 4️⃣ Direct Preference Optimisation [[Direct Preference Optimisation]]
 			- **Description:** *DPO dramatically simplifies the whole thing.
 			- **Explain:** Removes the reward function, and so the human in the loop.
 			- **Paper:** [Direct Preference Optimization: Your Language Model is Secretly a Reward Model (arxiv.org)](https://arxiv.org/abs/2305.18290?)

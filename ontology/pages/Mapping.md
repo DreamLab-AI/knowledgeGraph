@@ -84,7 +84,7 @@ public:: true
         "label": "SLAM"
       },
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
       {
@@ -140,7 +140,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:localization",
+        "@id": "urn:ngm:class:localisation",
         "label": "Localization"
       }
     ]
@@ -168,7 +168,7 @@ public:: true
   - Mapping is the construction of structured correspondences between domains — whether [[Simultaneous Localisation and Mapping]] for spatial environments, [[Data Integration]] schemas, or [[Knowledge Graph Construction]] ontologies — enabling systematic translation, navigation, and reasoning across heterogeneous representations.
 
 - ### Relationships
-  - Mapping underpins [[Simultaneous Localisation and Mapping]] and broader [[Spatial Mapping]] tasks used in robotics and AR/VR, while also driving [[Data Integration]] and [[Knowledge Graph Construction]] in information systems. It relies on [[SLAM]] algorithms and [[Localization]] techniques at the perception layer, and enables [[Autonomous Navigation]] in embodied systems. [[Geospatial Technology]] applies mapping to geographic information, and the concept threads through every layer of the knowledge graph.
+  - Mapping underpins [[Simultaneous Localisation and Mapping]] and broader [[Spatial Mapping]] tasks used in robotics and AR/VR, while also driving [[Data Integration]] and [[Knowledge Graph Construction]] in information systems. It relies on [[SLAM]] algorithms and [[Localisation]] techniques at the perception layer, and enables [[Autonomous Navigation]] in embodied systems. [[Geospatial Technology]] applies mapping to geographic information, and the concept threads through every layer of the knowledge graph.
 
 - ### Content
   - The concept of mapping spans millennia of cartographic tradition — from hand-drawn navigation charts to satellite-derived geodatabases — but has expanded dramatically with digital computing into any process that defines correspondences between two structured spaces. In computer science the term covers data mappings between schemas, ontology alignment, and learned feature transformations in neural networks, reflecting a unifying principle of structured correspondence.

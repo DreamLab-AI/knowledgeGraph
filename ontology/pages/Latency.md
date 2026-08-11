@@ -111,6 +111,7 @@ public:: true
   "@type": "Class",
   "label": "Latency",
   "definition": "Performance metric representing the time delay between a stimulus (user action, network request, or computation trigger) and the corresponding system response; a fundamental constraint in networked, real-time, and interactive systems spanning communication networks, distributed computing, and immersive environments.",
+  "vc:plainGloss": "The delay between asking for something and getting a response — for an AI assistant, how long you wait after sending a prompt before the answer starts to appear. Lower latency means a snappier, more responsive experience.",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": {
@@ -351,6 +352,8 @@ public:: true
 
 - ### Definition
   - Virtual performance metric representing the time delay between a user action and corresponding system response within networked immersive environments.
+- ### In Plain Terms
+  - The delay between asking for something and getting a response — for an AI assistant, how long you wait after sending a prompt before the answer starts to appear. Lower latency means a snappier, more responsive experience.
 - ### Semantic Classification
   - owl-class:: spatial-computing:Latency
   - owl-role:: Object

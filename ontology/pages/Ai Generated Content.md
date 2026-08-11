@@ -37,7 +37,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:deepfake", "label": "Deepfake"},
+      {"@id": "urn:ngm:class:deepfakes", "label": "Deepfake"},
       {"@id": "urn:ngm:class:intellectual-property", "label": "Intellectual Property"},
       {"@id": "urn:ngm:class:misinformation", "label": "Misinformation"}
     ],
@@ -54,7 +54,7 @@ public:: true
       {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:c2pa", "label": "C2pa"}
+      {"@id": "urn:ngm:class:c2-pa", "label": "C2pa"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:digital-watermarking", "label": "Digital Watermarking"}

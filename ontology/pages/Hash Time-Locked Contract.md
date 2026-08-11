@@ -117,7 +117,7 @@ alias:: Hash Time Locked Contract
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:point-time-locked-contract",
+        "@id": "urn:ngm:class:point-time-locked-contracts",
         "label": "Point Time-Locked Contract"
       },
       {

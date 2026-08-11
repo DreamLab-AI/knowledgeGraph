@@ -107,8 +107,8 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:controlnet", "label": "ControlNet"},
-      {"@id": "urn:ngm:class:controlnet-conditioning", "label": "ControlNet Conditioning"},
+      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
+      {"@id": "urn:ngm:class:control-net-conditioning", "label": "ControlNet Conditioning"},
       {"@id": "urn:ngm:class:upscaling", "label": "Upscaling"}
     ],
     "implements": [
@@ -170,7 +170,7 @@ public:: true
     {"wikilink": "ComfyUI Workflows", "@id": "urn:ngm:class:comfyui-workflows"},
     {"wikilink": "ComfyUI Manager", "@id": "urn:ngm:class:comfyui-manager"},
     {"wikilink": "ComfyUI API Specification", "@id": "urn:ngm:class:comfyui-api-specification"},
-    {"wikilink": "ControlNet Conditioning", "@id": "urn:ngm:class:controlnet-conditioning"},
+    {"wikilink": "ControlNet Conditioning", "@id": "urn:ngm:class:control-net-conditioning"},
     {"wikilink": "Score-Based Generative Model", "@id": "urn:ngm:class:score-based-generative-model"},
     {"wikilink": "Upscaling", "@id": "urn:ngm:class:upscaling"},
     {"wikilink": "Batch Image Processing", "@id": "urn:ngm:class:batch-image-processing"},

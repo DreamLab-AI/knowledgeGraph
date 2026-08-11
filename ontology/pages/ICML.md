@@ -92,7 +92,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
+        "@id": "urn:ngm:class:optimisation-algorithm",
         "label": "Optimization Algorithm"
       },
       {
@@ -223,7 +223,7 @@ public:: true
   - enables:: [[Transfer Learning]]
   - enables:: [[Federated Learning]]
   - enables:: [[Peer Review]]
-  - uses:: [[Optimization Algorithm]]
+  - uses:: [[Optimisation Algorithm]]
   - uses:: [[Machine Learning Model]]
   - uses:: [[Double-Blind Review]]
   - partOf:: [[Machine Learning Community]]

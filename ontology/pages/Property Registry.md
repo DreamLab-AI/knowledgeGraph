@@ -91,7 +91,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:asset-registry", "label": "Asset Registry"},
-      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"}
+      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenization"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
@@ -174,7 +174,7 @@ public:: true
 - ### Relationships
   - requires: [[Distributed Ledger]], [[Smart Contract]]
   - uses: [[Cryptography]], [[Blockchain Domain]]
-  - enables: [[Asset Registry]], [[Asset Tokenization]]
+  - enables: [[Asset Registry]], [[Asset Tokenisation]]
   - relatedTo: [[Decentralised Identity]], [[Digital Identity]]
 
 - ### Content

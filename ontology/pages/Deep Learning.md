@@ -292,7 +292,7 @@ alias:: DeepLearning
         "label": "Model Architecture"
       },
       {
-        "@id": "urn:ngm:class:optimizer",
+        "@id": "urn:ngm:class:optimiser",
         "label": "Optimizer"
       }
     ],

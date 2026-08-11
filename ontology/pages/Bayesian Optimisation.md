@@ -100,7 +100,7 @@ public:: true
       {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
-      {"@id": "urn:ngm:class:materials-science", "label": "Materials Science"},
+      {"@id": "urn:ngm:class:material-science", "label": "Materials Science"},
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ],
     "contrastsWith": [
@@ -114,7 +114,7 @@ public:: true
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
       {"@id": "urn:ngm:class:kriging", "label": "Kriging"},
       {"@id": "urn:ngm:class:expected-improvement", "label": "Expected Improvement"},
-      {"@id": "urn:ngm:class:exploration-exploitation-trade-off", "label": "Exploration-Exploitation Trade-off"},
+      {"@id": "urn:ngm:class:exploration-exploitation-tradeoff", "label": "Exploration-Exploitation Trade-off"},
       {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
     ],

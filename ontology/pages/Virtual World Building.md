@@ -67,7 +67,7 @@ public:: true
       {"@id": "urn:ngm:class:virtual-destination", "label": "Virtual Destination"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"},
+      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"},
       {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
     ],
     "relatedTo": [
@@ -128,7 +128,7 @@ public:: true
   - is-subclass-of:: [[3D Design]]
   - requires:: [[Game Engine]], [[Real-Time Rendering]]
   - enables:: [[Virtual World Platform]], [[Virtual Environment Creation]], [[Virtual Destination]]
-  - uses:: [[3D Modeling]], [[Immersive Experience]]
+  - uses:: [[3D Modelling]], [[Immersive Experience]]
   - relatedTo:: [[Virtual World Creation]]
 
 - ### Content

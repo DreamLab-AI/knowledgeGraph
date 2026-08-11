@@ -136,7 +136,7 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"},
       {"@id": "urn:ngm:class:digital-twin-interop-protocol", "label": "Digital Twin Interop Protocol"},
-      {"@id": "urn:ngm:class:state-synchronization", "label": "State Synchronization"},
+      {"@id": "urn:ngm:class:state-synchronisation", "label": "State Synchronization"},
       {"@id": "urn:ngm:class:portability", "label": "Portability"}
     ],
     "standardizedBy": [
@@ -256,7 +256,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[State Synchronization]]",
+      "raw": "[[State Synchronisation]]",
       "resolved": "urn:visionflow:owl:class:state-synchronization",
       "kind": "ResolvedLink"
     },

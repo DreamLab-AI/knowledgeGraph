@@ -283,7 +283,7 @@ public:: true
   - **Enterprise Software** — usability engineering of ERP, CRM, and productivity tools reduces training overhead, minimises costly data-entry errors, and accelerates operator throughput.
   - **Consumer Electronics** — smartphones, wearables, and smart-home devices must be usable by diverse populations including older adults and people with limited digital literacy; usability testing is embedded in hardware product development cycles.
   - **Medical Devices** — IEC 62366 mandates a full usability engineering process for devices such as infusion pumps, diagnostic scanners, and robotic surgery platforms; here, usability failures are directly linked to patient harm.
-  - **[[Human-Robot Interaction]]** — the usability of robot control interfaces and programming tools determines whether non-expert operators can direct robots safely and productively; bridges to the robotics domain.
+  - **[[Human Robot Interaction]]** — the usability of robot control interfaces and programming tools determines whether non-expert operators can direct robots safely and productively; bridges to the robotics domain.
   - **[[Spatial User Interface]]** and XR — head-mounted displays and AR overlays introduce novel interaction modalities (gaze, gesture, voice) where established 2D heuristics must be reinterpreted, making usability research in spatial computing an active frontier.
   - **[[Explainability]] in AI Systems** — as AI systems make consequential decisions, the usability of explanation interfaces determines whether domain experts can effectively audit model behaviour; bridges usability to the AI and governance domains.
   - **[[Accessibility]]** — closely related to usability, accessibility extends usable design to users with disabilities, underpinned by [[WCAG]] standards and overlapping strongly in evaluation methods and design principles.
@@ -310,14 +310,14 @@ public:: true
   - uses:: [[Cognitive Walkthrough]]
   - uses:: [[Think-Aloud Protocol]]
   - uses:: [[Eye Tracking]]
-  - supports:: [[Human-Robot Interaction]]
+  - supports:: [[Human Robot Interaction]]
   - supports:: [[Interface Design]]
   - standardizedBy:: [[ISO 9241]]
   - standardizedBy:: [[WCAG]]
   - contrastsWith:: [[Functionality]]
   - contrastsWith:: [[Aesthetics]]
   - bridges-to:: [[Explainability]]
-  - bridges-to:: [[Human-Robot Interaction]]
+  - bridges-to:: [[Human Robot Interaction]]
   - bridges-to:: [[Spatial User Interface]]
   - relatedTo:: [[Affordance]]
   - relatedTo:: [[Mental Model]]

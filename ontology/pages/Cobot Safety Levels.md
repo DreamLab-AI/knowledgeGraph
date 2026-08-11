@@ -255,7 +255,7 @@ alias:: RB-1011-cobot-safety-levels
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human-Robot Interaction]]",
+      "raw": "[[Human Robot Interaction]]",
       "resolved": "urn:visionflow:owl:class:human-robot-interaction",
       "kind": "ResolvedLink"
     },
@@ -312,7 +312,7 @@ alias:: RB-1011-cobot-safety-levels
 
   - #### Relationships
   - is-subclass-of:: [[Safety Standard]]
-  - applies-to:: [[Collaborative Robot]], [[Human-Robot Interaction]]
+  - applies-to:: [[Collaborative Robot]], [[Human Robot Interaction]]
   - skos:related:: [[RB-1012-trust-in-automation]], [[RB-1004-adaptive-control]]
   - implements:: [[Force Limiting]], [[Speed Monitoring]]
   - requires:: [[Risk Assessment]], [[Safety Certification]]

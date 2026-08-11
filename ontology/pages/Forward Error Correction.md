@@ -86,7 +86,7 @@ public:: true
         "label": "Telecommunications"
       },
       {
-        "@id": "urn:ngm:class:satellite-communications",
+        "@id": "urn:ngm:class:satellite-communication",
         "label": "Satellite Communications"
       }
     ],

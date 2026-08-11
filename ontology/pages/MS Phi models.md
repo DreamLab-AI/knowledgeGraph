@@ -492,7 +492,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:direct-preference-optimization",
+        "@id": "urn:ngm:class:direct-preference-optimisation",
         "label": "Direct Preference Optimization"
       },
       {
@@ -797,7 +797,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Direct Preference Optimization]]",
+      "raw": "[[Direct Preference Optimisation]]",
       "resolved": "urn:visionflow:owl:class:direct-preference-optimization",
       "kind": "ResolvedLink"
     },
@@ -1093,7 +1093,7 @@ public:: true
   - has-part:: [[Attention Mechanism]], [[Attention Head]], [[Multi-Head Attention]], [[Knowledge Distillation]], [[Instruction Tuning]], [[Fine Tuning]], [[Mixture-of-Experts Architecture]], [[Multimodal AI]], [[Adapter Modules]]
   - requires:: [[Pre Training]], [[Continued Pre Training]], [[Curriculum Learning]], [[Model Training]], [[Evaluation benchmarks and leaderboards]], [[Compute Infrastructure]], [[Training and fine tuning]]
   - enables:: [[Edge Computing]], [[On-Device Learning]], [[Microsoft Copilot]], [[Code Generation]], [[Reasoning]], [[Multimodal Understanding]], [[AI Deployment]], [[Edge AI System]], [[Context Aware Computing]]
-  - implements:: [[Supervised Fine Tuning]], [[Direct Preference Optimization]], [[Parameter-Efficient Fine-Tuning]], [[QLoRA]], [[Knowledge Distillation]], [[Instruction Tuning]], [[Safety Fine Tuning]], [[Full Fine Tuning]]
+  - implements:: [[Supervised Fine Tuning]], [[Direct Preference Optimisation]], [[Parameter-Efficient Fine-Tuning]], [[QLoRA]], [[Knowledge Distillation]], [[Instruction Tuning]], [[Safety Fine Tuning]], [[Full Fine Tuning]]
   - depends-on:: [[Attention]], [[Transformer]], [[Layer Normalisation]], [[Positional Encoding]], [[Activation Function]], [[Context Window]], [[BERT]], [[Scaled Dot Product Attention]]
   - supports:: [[Edge Computing Architecture]], [[NPU]], [[Inference Hardware]], [[Model Optimisation and Performance]], [[AI-Augmented Software Engineering]], [[Embedded AI Frameworks]], [[Knowledge Distillation for Edge]]
   - uses:: [[Prompt Engineering]], [[Retrieval Augmented Generation - RAG]], [[Function Calling]], [[Model Compression for Edge]], [[Model Pruning for Edge Deployment]], [[Context Engineering]]
