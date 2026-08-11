@@ -12,8 +12,11 @@ It is also a working example of the layer the industry began demanding of agenti
 systems in 2026: a shared, formal semantic substrate — an ontology agents can be
 grounded in and checked against (neurosymbolic AI, in the current vocabulary). The
 sibling [VisionClaw](https://github.com/DreamLab-AI/VisionClaw) engine reasons over
-this corpus with OWL 2 EL and measured the grounding lift; this repo gives you the
-corpus, the pipeline and the method to build your own.
+this corpus with OWL 2 EL and measured the grounding lift; the sibling
+[Loom](https://github.com/DreamLab-AI/loom) consumes the generations this repo
+publishes and serves that ontology as grounding to any LLM behind an
+OpenAI-compatible, model-swappable façade (measured ~0.94 grounded recall). This repo
+gives you the corpus, the pipeline and the method to build your own.
 
 > **What this corpus is.** Mostly **AI-generated synthetic content, produced under
 > human direction, by design**. It is an ontology testbed (built to exercise a
@@ -168,6 +171,7 @@ flowchart LR
         rdf["RDF tooling<br/>rdflib · Oxigraph · Protégé"]
         exp["explorer/<br/>React + Rust/WASM"]
         vc["VisionClaw<br/>Oxigraph + Whelk"]
+        loom["Loom<br/>model-swap façade<br/>ontology grounding"]
     end
 
     md --> p1
@@ -179,6 +183,7 @@ flowchart LR
     p6 --> api
     ttl --> rdf
     ttl --> vc
+    api --> loom
     bin --> exp
     api --> exp
     vowl --> exp
@@ -315,6 +320,7 @@ this one are listed.
 | Repository | Relationship | Licence |
 |---|---|---|
 | [VisionClaw](https://github.com/DreamLab-AI/VisionClaw) | Second, independent consumer of the same corpus. Its `GitHubSyncService` writes SHACL-gated triples into an embedded Oxigraph store and reasons over them with Whelk. Does **not** build this site. | AGPL-3.0-only |
+| [Loom](https://github.com/DreamLab-AI/loom) | Serving sibling. Consumes the corpus generations this repo publishes (via its `mirror.sh`) and serves them as retrieval grounding to any LLM behind an OpenAI-compatible, model-swappable façade — the model is a URL, swappable with zero consumer change. Measured ~0.94 grounded recall on this synthetic corpus (Gemma 0.15→0.94, Muse 0.27→0.94). Does **not** build this site. | No root licence file |
 | [VisionFlow](https://github.com/DreamLab-AI/VisionFlow) | Ecosystem canon: vision report, ADRs, PRDs, website. | No root licence file |
 | [WasmVOWL](https://github.com/DreamLab-AI/WasmVOWL/tree/master) | Upstream of `explorer/`; itself a fork of VisualDataWeb/WebVOWL. Default branch is `master`. | MIT |
 | [agentbox](https://github.com/DreamLab-AI/agentbox) | Agent runtime used to build and maintain this pipeline. | AGPL-3.0 |
