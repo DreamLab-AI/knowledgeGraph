@@ -392,7 +392,7 @@ alias:: KnowledgeGraph
   - depends-on:: [[RDF Framework]], [[SPARQL Query Engine]], [[Reasoning Service]], [[Entity Resolution]]
 
 - ### Content
-  This page holds the canonical class definition for the concept; the fuller article lives at [[Knowledge Graphs]]. In the layered stack this graph documents itself with, a knowledge graph is the [[Ontology]]'s vocabulary populated at scale — the pages and typed links you can traverse, query and cite — with [[Reasoning]] as the machine check that classifies the result and gates what enters it. Body content pending enrichment; merge with [[Knowledge Graphs]] is an open editorial decision.
+  This page holds the canonical class definition for the concept; the fuller article lives at [[Knowledge Graphs]]. In the layered stack this corpus documents itself with, a knowledge graph is the [[Ontology]]'s vocabulary populated with instance data, with [[Reasoning]] as the machine check that classifies the result and gates what enters it. This published corpus is itself pure TBox — the ontology, not a knowledge graph; the mesh's runtime graphs are where individuals live. Body content pending enrichment; merge with [[Knowledge Graphs]] is an open editorial decision.
 
 - ### Provenance
   - sources:: [[W3C RDF]], [[W3C OWL]], [[Schema.org]]

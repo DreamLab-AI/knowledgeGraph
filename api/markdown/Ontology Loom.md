@@ -48,7 +48,7 @@ public:: true
   "@id": "urn:ngm:class:ontology-loom",
   "@type": "Class",
   "label": "Ontology Loom",
-  "definition": "A portable serving node that grounds LLM responses in a formal ontology behind a stable, model-swappable façade. At query time it retrieves the relevant slice of the reasoned knowledge graph, injects it as a budget-clamped structured scaffold, and delegates generation to whichever model sits behind it, so the model restates checked facts rather than performing open-ended recall. On a held-out benchmark, static scaffold grounding lifted paired answer scores to 0.94 on two different models, from parametric baselines of 0.146 and 0.268, at three to six times lower latency. The Ontology Loom is the DreamLab mesh's implementation of the context-graph layer. Distinct from Loom, the screen-recording product.",
+  "definition": "A portable serving node that grounds LLM responses in a formal ontology behind a stable, model-swappable façade. At query time it retrieves the relevant slice of the reasoned ontology, injects it as a budget-clamped structured scaffold, and delegates generation to whichever model sits behind it, so the model restates checked facts rather than performing open-ended recall. On a held-out benchmark, static scaffold grounding lifted paired answer scores to 0.94 on two different models, from parametric baselines of 0.146 and 0.268, at three to six times lower latency. The Ontology Loom is the DreamLab mesh's implementation of the context-graph layer. Distinct from Loom, the screen-recording product.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -98,7 +98,7 @@ public:: true
 ```
 
 - ## What it does
-	- Consumers — agents, an email gateway, any OpenAI-compatible client — hold one endpoint. The Loom retrieves the relevant slice of the [[Knowledge Graph]] under its [[Ontology]], injects it as structured context, and delegates generation to the model deployed behind the façade. Swapping that model changes no consumer.
+	- Consumers — agents, an email gateway, any OpenAI-compatible client — hold one endpoint. The Loom retrieves the relevant slice of the reasoned [[Ontology]], injects it as structured context, and delegates generation to the model deployed behind the façade. Swapping that model changes no consumer.
 	- `POST /loom/scaffold` returns the retrieval alone — taxonomy slice, typed relations, definitions — with no model in the loop. This is the [[Context Graph]] assembly step, exposed as its own primitive.
 - ## The measured case for grounding
 	- On a held-out 37-question benchmark with gold answers derived from the graph itself, two models with very different parametric baselines (0.146 and 0.268) both landed at 0.94 when grounded through the scaffold, three to six times faster than ungrounded generation.

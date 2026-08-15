@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:context-graph",
   "domain": "artificial-intelligence",
-  "definition": "The assembly layer at the top of the knowledge stack. A context graph consumes the layers beneath it \u2014 a formal ontology, a populated knowledge graph, and operational sources such as documents, chat history and tool outputs \u2014 to assemble the working set of information an AI agent needs for its next response. It does not compete with the ontology or the knowledge graph; it selects from them under a token budget. In the DreamLab mesh this layer is implemented by the Ontology Loom, which retrieves a budget-clamped structured scaffold from the reasoned knowledge graph and injects it into model context at query time.",
+  "definition": "The assembly layer at the top of the knowledge stack. A context graph consumes the layers beneath it \u2014 a formal ontology, a populated knowledge graph, and operational sources such as documents, chat history and tool outputs \u2014 to assemble the working set of information an AI agent needs for its next response. It does not compete with the ontology or the knowledge graph; it selects from them under a token budget. In the DreamLab mesh this layer is implemented by the Ontology Loom, which retrieves a budget-clamped structured scaffold from the reasoned ontology and injects it into model context at query time.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:knowledge-representation",
