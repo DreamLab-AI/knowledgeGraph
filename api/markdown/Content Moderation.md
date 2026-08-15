@@ -88,7 +88,7 @@ public:: true
       {"@id": "urn:ngm:class:community-standards", "label": "Community Standards"},
       {"@id": "urn:ngm:class:moderation-policy", "label": "Moderation Policy"},
       {"@id": "urn:ngm:class:content-analysis-tools", "label": "Content Analysis Tools"},
-      {"@id": "urn:ngm:class:machine-learning-models", "label": "Machine Learning Models"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-models", "label": "Machine Learning Models"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},

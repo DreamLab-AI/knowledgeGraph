@@ -100,7 +100,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:hybrid-search", "label": "Hybrid Search"},
       {"@id": "urn:ngm:class:cross-encoder-reranking", "label": "Cross-Encoder Reranking"},
-      {"@id": "urn:ngm:class:mteb", "label": "MTEB Benchmark"},
+      {"@id": "urn:ngm:class:mteb-benchmark", "label": "MTEB Benchmark"},
       {"@id": "urn:ngm:class:colbert", "label": "ColBERT"},
       {"@id": "urn:ngm:class:splade", "label": "SPLADE"},
       {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"}

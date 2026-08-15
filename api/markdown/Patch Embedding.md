@@ -46,7 +46,7 @@ public:: true
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multimodal-learning", "label": "Multimodal Learning"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-learning", "label": "Multimodal Learning"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
     ],
     "relatedTo": [

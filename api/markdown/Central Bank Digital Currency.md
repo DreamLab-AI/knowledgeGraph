@@ -204,7 +204,7 @@ alias:: CBDC, CentralBankDigitalCurrency
   },
   "sameAs": [
     {
-      "@id": "urn:ngm:class:cbdc",
+      "@id": "urn:ngm:class:central-bank-digital-currency",
       "label": "CBDC"
     },
     {

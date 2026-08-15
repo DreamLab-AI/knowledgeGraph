@@ -77,7 +77,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:rbac",
+        "@id": "urn:ngm:class:role-based-access-control",
         "label": "Role-Based Access Control"
       },
       {

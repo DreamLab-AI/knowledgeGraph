@@ -137,7 +137,7 @@ public:: true
       {"@id": "urn:ngm:class:controlnet-xs", "label": "ControlNet-XS"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:comfyui-workflows", "label": "ComfyUI Workflows"},
+      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"},
       {"@id": "urn:ngm:class:automatic1111", "label": "Automatic1111"},
       {"@id": "urn:ngm:class:architectural-visualisation", "label": "Architectural Visualisation"},
       {"@id": "urn:ngm:class:image-to-image", "label": "Image-to-Image"},

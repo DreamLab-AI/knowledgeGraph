@@ -58,7 +58,7 @@ public:: true
     {"@id": "urn:ngm:class:creator-economy-platform", "vc:label": "Creator Economy Platform"},
     {"@id": "urn:ngm:class:short-form-video", "vc:label": "Short-Form Video"},
     {"@id": "urn:ngm:class:esports", "vc:label": "Esports"},
-    {"@id": "urn:ngm:class:collaborative-filtering", "vc:label": "Collaborative Filtering"}
+    {"@id": "urn:ngm:class:collaborative-systems-modality-filtering", "vc:label": "Collaborative Filtering"}
   ]
 }
 ```

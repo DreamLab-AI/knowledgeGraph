@@ -77,9 +77,9 @@ public:: true
       {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:comfyui-workflows", "label": "ComfyUI Workflows"},
-      {"@id": "urn:ngm:class:comfyui-manager", "label": "ComfyUI Manager"},
-      {"@id": "urn:ngm:class:comfyui-api-specification", "label": "ComfyUI API Specification"},
+      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"},
+      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager", "label": "ComfyUI Manager"},
+      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification", "label": "ComfyUI API Specification"},
       {"@id": "urn:ngm:class:node-graph", "label": "Node Graph"},
       {"@id": "urn:ngm:class:checkpoint-model", "label": "Checkpoint Model"}
     ],
@@ -167,9 +167,9 @@ public:: true
     {"wikilink": "Python", "@id": "urn:ngm:class:python"},
     {"wikilink": "GPU Compute", "@id": "urn:ngm:class:gpu-compute"},
     {"wikilink": "API", "@id": "urn:ngm:class:api"},
-    {"wikilink": "ComfyUI Workflows", "@id": "urn:ngm:class:comfyui-workflows"},
-    {"wikilink": "ComfyUI Manager", "@id": "urn:ngm:class:comfyui-manager"},
-    {"wikilink": "ComfyUI API Specification", "@id": "urn:ngm:class:comfyui-api-specification"},
+    {"wikilink": "ComfyUI Workflows", "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows"},
+    {"wikilink": "ComfyUI Manager", "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager"},
+    {"wikilink": "ComfyUI API Specification", "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification"},
     {"wikilink": "ControlNet Conditioning", "@id": "urn:ngm:class:control-net-conditioning"},
     {"wikilink": "Score-Based Generative Model", "@id": "urn:ngm:class:score-based-generative-model"},
     {"wikilink": "Upscaling", "@id": "urn:ngm:class:upscaling"},

@@ -106,7 +106,7 @@
         "label": "ComfyUI Client"
       },
       {
-        "id": "urn:ngm:class:json-serialisation",
+        "id": "urn:ngm:class:json-data-interchange-format-serialisation",
         "label": "JSON Serialisation"
       },
       {
@@ -419,10 +419,6 @@
         "label": "HuggingFace Hub"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-serialisation",
-        "label": "JSON Serialisation"
-      },
-      {
         "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
         "label": "ComfyUI Manager"
       },
@@ -441,6 +437,10 @@
       {
         "id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON Data Interchange Format"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
       }
     ],
     "supports": [

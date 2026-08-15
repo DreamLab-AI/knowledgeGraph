@@ -92,7 +92,7 @@ public:: true
       {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"},
       {"@id": "urn:ngm:class:participation-equity", "label": "Participation Equity"},
       {"@id": "urn:ngm:class:breakout-room", "label": "Breakout Room"},
       {"@id": "urn:ngm:class:personalised-learning", "label": "Personalised Learning"}

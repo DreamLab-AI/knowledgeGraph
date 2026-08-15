@@ -86,7 +86,7 @@ public:: true
             {"@id": "urn:ngm:class:claude-agent-sdk", "label": "Claude Agent SDK"},
             {"@id": "urn:ngm:class:google-adk", "label": "Google ADK"},
             {"@id": "urn:ngm:class:strands-agents", "label": "Strands Agents"},
-            {"@id": "urn:ngm:class:openai-agents-sdk", "label": "OpenAI Agents SDK"},
+            {"@id": "urn:ngm:class:openai-research-organisation-agents-sdk", "label": "OpenAI Agents SDK"},
             {"@id": "urn:ngm:class:pydantic-ai", "label": "Pydantic AI"},
             {"@id": "urn:ngm:class:tool-registry", "label": "Tool Registry"},
             {"@id": "urn:ngm:class:memory-store", "label": "Memory Store"}

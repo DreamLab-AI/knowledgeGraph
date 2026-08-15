@@ -18,15 +18,15 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:comfyui-workflows",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       },
       {
-        "id": "urn:ngm:class:comfyui-manager",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
         "label": "ComfyUI Manager"
       },
       {
-        "id": "urn:ngm:class:comfyui-api-specification",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification",
         "label": "ComfyUI API Specification"
       },
       {

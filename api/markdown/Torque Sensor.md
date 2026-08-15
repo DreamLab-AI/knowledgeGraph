@@ -43,7 +43,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:strain-gauge_note",
+        "@id": "urn:ngm:class:sensor",
         "label": "Sensor"
       }
     ],

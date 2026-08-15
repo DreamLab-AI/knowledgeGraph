@@ -83,7 +83,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:consistency_note",
+        "@id": "urn:ngm:class:replication",
         "label": "Replication"
       }
     ],

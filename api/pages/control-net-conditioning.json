@@ -160,7 +160,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:comfyui-workflows",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       },
       {

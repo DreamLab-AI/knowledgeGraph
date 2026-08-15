@@ -72,7 +72,7 @@ public:: true
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
       {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:zero-shot-learning", "label": "Zero-Shot Learning"},
-      {"@id": "urn:ngm:class:multimodal-reasoning", "label": "Multimodal Reasoning"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-reasoning", "label": "Multimodal Reasoning"},
       {"@id": "urn:ngm:class:cross-modal-retrieval", "label": "Cross Modal Retrieval"}
     ],
     "uses": [
@@ -94,7 +94,7 @@ public:: true
       {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
       {"@id": "urn:ngm:class:lo-ra-fine-tuning", "label": "LoRA Fine-Tuning"},
       {"@id": "urn:ngm:class:instruct-blip", "label": "InstructBLIP"},
-      {"@id": "urn:ngm:class:multimodal-understanding", "label": "Multimodal Understanding"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-understanding", "label": "Multimodal Understanding"},
       {"@id": "urn:ngm:class:gemini-multimodal-language-model", "label": "Gemini Multimodal Language Model"}
     ],
     "contrastsWith": [

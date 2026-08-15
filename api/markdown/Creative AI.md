@@ -85,7 +85,7 @@ public:: true
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
       {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
       {"@id": "urn:ngm:class:style-transfer", "label": "Neural Style Transfer"},
-      {"@id": "urn:ngm:class:clip-model", "label": "CLIP"},
+      {"@id": "urn:ngm:class:clip", "label": "CLIP"},
       {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"},
       {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
     ],

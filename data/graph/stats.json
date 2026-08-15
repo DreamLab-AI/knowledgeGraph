@@ -28,35 +28,35 @@
     "declared": 113506,
     "declaredBackbone": 9750,
     "declaredRelations": 103756,
-    "resolvable": 101332,
+    "resolvable": 101360,
     "backbone": 9622,
-    "relations": 91710
+    "relations": 91738
   },
   "scopes": {
     "full": {
       "nodes": 8146,
       "backbone": 9622,
-      "relations": 91710,
-      "shipped": 101332,
+      "relations": 91738,
+      "shipped": 101360,
       "relationsCapped": 0,
-      "bytes": 1380870
+      "bytes": 1381010
     },
     "domain-artificial-intelligence": {
       "nodes": 1500,
       "backbone": 1722,
-      "relations": 10386,
-      "shipped": 12108,
-      "relationsCapped": 7303,
-      "bytes": 222243,
+      "relations": 10389,
+      "shipped": 12111,
+      "relationsCapped": 7315,
+      "bytes": 222259,
       "nodesTruncated": 489
     },
     "domain-blockchain": {
       "nodes": 1455,
       "backbone": 1457,
-      "relations": 8147,
-      "shipped": 9604,
-      "relationsCapped": 5357,
-      "bytes": 200677,
+      "relations": 8150,
+      "shipped": 9607,
+      "relationsCapped": 5358,
+      "bytes": 200693,
       "nodesTruncated": 0
     },
     "domain-spatial-computing": {
@@ -73,7 +73,7 @@
       "backbone": 701,
       "relations": 3068,
       "shipped": 3769,
-      "relationsCapped": 1165,
+      "relationsCapped": 1166,
       "bytes": 82917,
       "nodesTruncated": 0
     },
@@ -91,7 +91,7 @@
       "backbone": 1287,
       "relations": 10410,
       "shipped": 11697,
-      "relationsCapped": 5244,
+      "relationsCapped": 5245,
       "bytes": 217177,
       "nodesTruncated": 1224
     }

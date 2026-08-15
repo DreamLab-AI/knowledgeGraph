@@ -39,7 +39,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:opcode_note",
+        "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
@@ -97,7 +97,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:interpreter_note",
+        "@id": "urn:ngm:class:runtime-environment",
         "label": "Runtime Environment"
       }
     ]

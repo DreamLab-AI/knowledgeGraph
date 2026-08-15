@@ -129,7 +129,7 @@
         "label": "Neural Style Transfer"
       },
       {
-        "id": "urn:ngm:class:clip-model",
+        "id": "urn:ngm:class:clip",
         "label": "CLIP"
       },
       {

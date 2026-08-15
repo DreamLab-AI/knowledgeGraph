@@ -97,7 +97,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
       {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client", "label": "ComfyUI Client"},
-      {"@id": "urn:ngm:class:json-serialisation", "label": "JSON Serialisation"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-serialisation", "label": "JSON Serialisation"},
       {"@id": "urn:ngm:class:aiohttp", "label": "aiohttp"}
     ],
     "enables": [

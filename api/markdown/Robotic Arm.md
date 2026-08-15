@@ -43,7 +43,7 @@ public:: true
       {"@id":"urn:ngm:class:manufacturing-automation","label":"Manufacturing Automation"}
     ],
     "relatedTo":[
-      {"@id":"urn:ngm:class:collaborative-robot","label":"Collaborative Robot"},
+      {"@id":"urn:ngm:class:collaborative-systems-modality-robot","label":"Collaborative Robot"},
       {"@id":"urn:ngm:class:robotics","label":"Robotics"}
     ]
   },

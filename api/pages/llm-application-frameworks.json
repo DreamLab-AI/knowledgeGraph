@@ -575,7 +575,7 @@
       "label": "Microservices Architecture"
     },
     {
-      "slug": "comfyui-workflows",
+      "slug": "node-based-diffusion-pipeline-interface-workflows",
       "label": "ComfyUI Workflows"
     }
   ],

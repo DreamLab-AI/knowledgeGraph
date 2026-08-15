@@ -55,7 +55,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:cbdc",
+        "@id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {

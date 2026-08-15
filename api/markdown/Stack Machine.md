@@ -23,7 +23,7 @@ public:: true
     ],
     "enables":[
       {"@id":"urn:ngm:class:bitcoin-script","label":"Bitcoin Script"},
-      {"@id":"urn:ngm:class:ethereum-virtual-machine","label":"Ethereum Virtual Machine"}
+      {"@id":"urn:ngm:class:ethereum-smart-contract-platform-virtual-machine","label":"Ethereum Virtual Machine"}
     ],
     "partOf":[
       {"@id":"urn:ngm:class:virtual-machine","label":"Virtual Machine"}

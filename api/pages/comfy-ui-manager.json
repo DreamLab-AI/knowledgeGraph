@@ -177,7 +177,7 @@
         "label": "IP-Adapter"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-api-specification",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification",
         "label": "ComfyUI API Specification"
       },
       {

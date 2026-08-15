@@ -344,10 +344,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:clip-model",
-        "label": "CLIP"
-      },
-      {
         "id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model"
       },
@@ -374,6 +370,10 @@
       {
         "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "supports": [

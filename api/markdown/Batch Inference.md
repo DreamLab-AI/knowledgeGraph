@@ -145,7 +145,7 @@ public:: true
         "label": "Tensor Processing"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-infrastructure",
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
       }
     ],
@@ -187,7 +187,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:machine-learning-infrastructure",
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
       },
       {

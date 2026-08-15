@@ -41,7 +41,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
-      {"@id": "urn:ngm:class:merkel-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
       {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"}
     ],
     "contrastsWith": [

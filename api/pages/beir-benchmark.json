@@ -125,7 +125,7 @@
         "label": "Cross-Encoder Reranking"
       },
       {
-        "id": "urn:ngm:class:mteb",
+        "id": "urn:ngm:class:mteb-benchmark",
         "label": "MTEB Benchmark"
       },
       {

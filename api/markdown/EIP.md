@@ -51,7 +51,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ethereum-foundation",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
         "label": "Ethereum Foundation"
       },
       {

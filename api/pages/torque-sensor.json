@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:strain-gauge_note",
+        "id": "urn:ngm:class:sensor",
         "label": "Sensor"
       }
     ],
@@ -117,10 +117,6 @@
         "label": "Analog To Digital Converter"
       },
       {
-        "id": "urn:ngm:class:sensor",
-        "label": "Sensor Transducer"
-      },
-      {
         "id": "urn:ngm:class:imu",
         "label": "IMU"
       },
@@ -143,6 +139,10 @@
       {
         "id": "urn:ngm:class:stereo-camera",
         "label": "Stereo Camera"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensor",
+        "label": "Tactile Sensor"
       }
     ],
     "requires": [

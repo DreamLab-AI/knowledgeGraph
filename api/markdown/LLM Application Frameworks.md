@@ -55,7 +55,7 @@ public:: true
     { "@id": "urn:ngm:class:natural-language-processing", "vc:label": "Natural Language Processing" },
     { "@id": "urn:ngm:class:document-retrieval", "vc:label": "Document Retrieval" },
     { "@id": "urn:ngm:class:microservices-architecture", "vc:label": "Microservices Architecture" },
-    { "@id": "urn:ngm:class:comfyui-workflows", "vc:label": "ComfyUI Workflows" }
+    { "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "vc:label": "ComfyUI Workflows" }
   ],
   "vc:schemaVersion": 2
 }

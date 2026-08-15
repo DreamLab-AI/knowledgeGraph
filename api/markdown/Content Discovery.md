@@ -69,7 +69,7 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:collaborative-filtering", "label": "Collaborative Filtering"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-filtering", "label": "Collaborative Filtering"},
       {"@id": "urn:ngm:class:content-based-filtering", "label": "Content-Based Filtering"},
       {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
       {"@id": "urn:ngm:class:dense-retrieval", "label": "Dense Retrieval"}
@@ -143,7 +143,7 @@ public:: true
     {"wikilink": "Knowledge Graph", "@id": "urn:ngm:class:knowledge-graph", "status": "resolved"},
     {"wikilink": "Personalisation", "@id": "urn:ngm:class:personalisation", "status": "resolved"},
     {"wikilink": "Filter Bubble", "@id": "urn:ngm:class:filter-bubble", "status": "resolved"},
-    {"wikilink": "Collaborative Filtering", "@id": "urn:ngm:class:collaborative-filtering", "status": "resolved"},
+    {"wikilink": "Collaborative Filtering", "@id": "urn:ngm:class:collaborative-systems-modality-filtering", "status": "resolved"},
     {"wikilink": "Content-Based Filtering", "@id": "urn:ngm:class:content-based-filtering", "status": "resolved"},
     {"wikilink": "Retrieval-Augmented Generation", "@id": "urn:ngm:class:retrieval-augmented-generation", "status": "resolved"},
     {"wikilink": "Dense Retrieval", "@id": "urn:ngm:class:dense-retrieval", "status": "resolved"},

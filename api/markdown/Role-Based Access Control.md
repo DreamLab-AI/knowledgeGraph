@@ -133,7 +133,7 @@ public:: true
   },
   "sameAs": [
     {
-      "@id": "urn:ngm:class:rbac",
+      "@id": "urn:ngm:class:role-based-access-control",
       "label": "RBAC"
     }
   ],

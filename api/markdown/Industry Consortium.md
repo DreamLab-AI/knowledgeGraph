@@ -39,7 +39,7 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
-      {"@id": "urn:ngm:class:ai", "label": "Artificial Intelligence"}
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:working-group", "label": "Working Group"}

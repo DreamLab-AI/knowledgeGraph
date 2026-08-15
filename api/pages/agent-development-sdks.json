@@ -34,7 +34,7 @@
         "label": "Strands Agents"
       },
       {
-        "id": "urn:ngm:class:openai-agents-sdk",
+        "id": "urn:ngm:class:openai-research-organisation-agents-sdk",
         "label": "OpenAI Agents SDK"
       },
       {

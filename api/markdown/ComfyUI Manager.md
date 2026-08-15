@@ -145,7 +145,7 @@ public:: true
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
       {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"},
       {"@id": "urn:ngm:class:ip-adapter", "label": "IP-Adapter"},
-      {"@id": "urn:ngm:class:comfy-ui-api-specification", "label": "ComfyUI API Specification"},
+      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification", "label": "ComfyUI API Specification"},
       {"@id": "urn:ngm:class:comfy-node-registry", "label": "Comfy Node Registry"}
     ]
   },

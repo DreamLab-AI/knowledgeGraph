@@ -54,7 +54,7 @@ public:: true
     { "@id": "urn:ngm:class:ai-alignment", "vc:label": "AI Alignment" },
     { "@id": "urn:ngm:class:reinforcement-learning", "vc:label": "Reinforcement Learning" },
     { "@id": "urn:ngm:class:swe-bench", "vc:label": "SWE-bench" },
-    { "@id": "urn:ngm:class:openai-agents-sdk", "vc:label": "OpenAI Agents SDK" }
+    { "@id": "urn:ngm:class:openai-research-organisation-agents-sdk", "vc:label": "OpenAI Agents SDK" }
   ],
   "vc:schemaVersion": 2
 }
@@ -187,7 +187,7 @@ public:: true
     { "raw": "[[AI Alignment]]", "resolved": "urn:ngm:class:ai-alignment", "kind": "ResolvedLink" },
     { "raw": "[[Reinforcement Learning]]", "resolved": "urn:ngm:class:reinforcement-learning", "kind": "ResolvedLink" },
     { "raw": "[[SWE-bench]]", "resolved": "urn:ngm:class:swe-bench", "kind": "StubLink" },
-    { "raw": "[[OpenAI Agents SDK]]", "resolved": "urn:ngm:class:openai-agents-sdk", "kind": "StubLink" }
+    { "raw": "[[OpenAI Agents SDK]]", "resolved": "urn:ngm:class:openai-research-organisation-agents-sdk", "kind": "StubLink" }
   ],
   "prov:wasAttributedTo": { "@id": "did:nostr:enrichment-swarm" },
   "prov:generatedAtTime": { "@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime" }

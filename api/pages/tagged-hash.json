@@ -108,7 +108,7 @@
         "label": "Bitcoin"
       },
       {
-        "id": "urn:ngm:class:merkel-tree",
+        "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
       },
       {

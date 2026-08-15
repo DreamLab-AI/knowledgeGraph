@@ -53,7 +53,7 @@ public:: true
       {"@id": "urn:ngm:class:expert-driven-design", "label": "Expert-Driven Design"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai", "label": "Artificial Intelligence"}
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:co-design-workshop", "label": "Co-Design Workshop"}

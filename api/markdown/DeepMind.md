@@ -178,7 +178,7 @@ public:: true
   },
   "sameAs": [
     {
-      "@id": "urn:ngm:class:google-deepmind",
+      "@id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
       "label": "Google DeepMind"
     }
   ],

@@ -20,11 +20,11 @@ public:: true
       {"@id":"urn:ngm:class:blockstream","label":"Blockstream"}
     ],
     "uses":[
-      {"@id":"urn:ngm:class:bitcoin-core","label":"Bitcoin Core"},
+      {"@id":"urn:ngm:class:bitcoin-proof-of-work-protocol-core","label":"Bitcoin Core"},
       {"@id":"urn:ngm:class:cryptography","label":"Cryptography"}
     ],
     "dependsOn":[
-      {"@id":"urn:ngm:class:bitcoin-core","label":"Bitcoin Core"}
+      {"@id":"urn:ngm:class:bitcoin-proof-of-work-protocol-core","label":"Bitcoin Core"}
     ],
     "implements":[
       {"@id":"urn:ngm:class:confidential-transactions","label":"Confidential Transactions"},
