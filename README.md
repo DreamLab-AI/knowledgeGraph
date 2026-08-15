@@ -1,18 +1,22 @@
-# narrativegoldmine: a Logseq graph that is also an OWL ontology
+# narrativegoldmine: a Logseq corpus that is also an OWL ontology
 
 ![Narrative Goldmine](explorer/modern/public/images/heroes/ngm-hero.webp)
 
-This repository holds an 8,138-class OWL ontology whose source of truth is 8,138
-ordinary Logseq markdown pages, the Python pipeline that compiles them into RDF and
-a binary graph format, and the WebAssembly explorer that renders the result. It is a
-self-contained release: corpus, build, viewer and method in one tree, published at
-[narrativegoldmine.com](https://narrativegoldmine.com).
+This repository holds a **corpus** of 8,138 ordinary Logseq markdown pages, the Python
+pipeline that compiles them into a formal **OWL 2 ontology** — the classes, typed
+properties and axioms that define what *can* be said — and the **knowledge graph** that
+vocabulary populates: 262k RDF triples and resolvable typed edges you can traverse, query
+and cite, emitted in Turtle and a binary graph format. The WebAssembly explorer renders
+the result. It is a self-contained release: corpus, build, viewer and method in one tree,
+published at [narrativegoldmine.com](https://narrativegoldmine.com).
 
 It is also a working example of the layer the industry began demanding of agentic
 systems in 2026: a shared, formal semantic substrate — an ontology agents can be
 grounded in and checked against (neurosymbolic AI, in the current vocabulary). The
 sibling [VisionClaw](https://github.com/DreamLab-AI/VisionClaw) engine reasons over
-this corpus with OWL 2 EL and measured the grounding lift; the sibling
+this corpus with a Whelk OWL 2 EL reasoner — the machine check that classifies the
+graph and rejects contradictions before they enter it — and measured the grounding
+lift; the sibling
 [Loom](https://github.com/DreamLab-AI/loom) consumes the generations this repo
 publishes and serves that ontology as grounding to any LLM behind an
 OpenAI-compatible, model-swappable façade (measured ~0.94 grounded recall). This repo
