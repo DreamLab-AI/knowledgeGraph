@@ -61,29 +61,14 @@
       "slug": "3d-modelling"
     },
     {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
-    },
-    {
       "id": "urn:ngm:class:3-d-development",
       "label": "3D Development",
       "slug": "3-d-development"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
       "id": "urn:ngm:class:computer-graphics",
       "label": "Computer Graphics",
       "slug": "computer-graphics"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -235,10 +220,6 @@
       {
         "id": "urn:ngm:class:digital-art",
         "label": "Digital Art"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
       },
       {
         "id": "urn:ngm:class:image-processing",

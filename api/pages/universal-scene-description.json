@@ -161,24 +161,9 @@
       "slug": "spatial-computing"
     },
     {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
-    },
-    {
       "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards",
       "slug": "technical-standards"
-    },
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -246,8 +231,8 @@
         "label": "Sensor Fusion"
       },
       {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
+        "id": "urn:ngm:class:reference-implementation",
+        "label": "Reference Implementation"
       }
     ],
     "enables": [
@@ -316,10 +301,6 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
       },
       {
         "id": "urn:ngm:class:proprietary-protocol",
@@ -410,14 +391,6 @@
       {
         "id": "urn:ngm:class:virtual-production",
         "label": "Virtual Production"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -486,16 +459,16 @@
         "label": "OpenUSD"
       },
       {
-        "id": "urn:ngm:class:affective-computing",
-        "label": "Affective Computing"
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
       },
       {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
+        "id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
       },
       {
-        "id": "urn:ngm:class:user-experience-design",
-        "label": "User Experience Design"
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ]
   },

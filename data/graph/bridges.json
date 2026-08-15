@@ -1,7 +1,7 @@
 {
   "pipelineVersion": "ng-1.0.0",
   "note": "Classes bridging more than one taxonomy category or domain. Overlap is a design property of this corpus. The NGG1 node record carries a single u16 category (FORMAT-NGG1 3), so tiers keep the nearest one; the full membership is here. Indices match overview.json.",
-  "count": 563,
+  "count": 543,
   "bridges": [
     {
       "iri": "https://narrativegoldmine.com/class/3-d-generation",
@@ -1551,21 +1551,6 @@
       "parents": [
         "Mobile Robotics",
         "Robot Type"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/building-information-modelling",
-      "label": "Building Information Modelling",
-      "categories": [
-        5,
-        15
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Digital Twin"
       ]
     },
     {
@@ -3191,21 +3176,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/disaster-response",
-      "label": "Disaster Response",
-      "categories": [
-        5,
-        15
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Remote Sensing"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/distributed-computing",
       "label": "Distributed Computing",
       "categories": [
@@ -3575,21 +3545,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/extended-reality",
-      "label": "Extended Reality",
-      "categories": [
-        5,
-        15
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Extended Reality (XR)"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/external-ai-harness",
       "label": "External AI Harness",
       "categories": [
@@ -3786,21 +3741,6 @@
       "parents": [
         "Diffusion Model",
         "Generative AI"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/formative-assessment",
-      "label": "Formative Assessment",
-      "categories": [
-        5,
-        14
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Learning Analytics"
       ]
     },
     {
@@ -4067,36 +4007,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/geographic-information-system",
-      "label": "Geographic Information System",
-      "categories": [
-        5,
-        15
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Remote Sensing"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/geospatial-technology",
-      "label": "Geospatial Technology",
-      "categories": [
-        5,
-        15
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Geospatial Engine"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/global-explanation",
       "label": "Global Explanation",
       "categories": [
@@ -4156,21 +4066,6 @@
       "parents": [
         "Graphics Processing",
         "Computing Infrastructure"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/graphics-processing",
-      "label": "Graphics Processing",
-      "categories": [
-        5,
-        12
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Display and Rendering"
       ]
     },
     {
@@ -4513,7 +4408,6 @@
       "iri": "https://narrativegoldmine.com/class/indoor-navigation",
       "label": "Indoor Navigation",
       "categories": [
-        5,
         14
       ],
       "domains": [
@@ -4738,21 +4632,6 @@
       "parents": [
         "Cryptographic Primitive",
         "Blockchain Entity"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/khronos-open-xr",
-      "label": "Khronos OpenXR",
-      "categories": [
-        5,
-        16
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Standards and Interoperability"
       ]
     },
     {
@@ -6128,21 +6007,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/presence-technology",
-      "label": "Presence Technology",
-      "categories": [
-        5,
-        15
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Platform and Environment"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/prime-intellect",
       "label": "Prime Intellect",
       "categories": [
@@ -7034,36 +6898,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/service-layer",
-      "label": "Service Layer",
-      "categories": [
-        15,
-        5
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Platform and Environment",
-        "Spatial Computing"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/shadow-mapping",
-      "label": "Shadow Mapping",
-      "categories": [
-        5,
-        12
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Display and Rendering"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/shared-whiteboards",
       "label": "Shared Whiteboards",
       "categories": [
@@ -7309,21 +7143,6 @@
       "parents": [
         "Standards and Interoperability",
         "Coordinate System"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/spatial-web",
-      "label": "Spatial Web",
-      "categories": [
-        5,
-        15
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Semantic Spatial Web Layer"
       ]
     },
     {
@@ -7647,7 +7466,6 @@
       "iri": "https://narrativegoldmine.com/class/tamper-evidence",
       "label": "Tamper Evidence",
       "categories": [
-        5,
         10
       ],
       "domains": [
@@ -7722,36 +7540,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/texture-compression",
-      "label": "Texture Compression",
-      "categories": [
-        5,
-        12
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Display and Rendering"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/texture-map",
-      "label": "Texture Map",
-      "categories": [
-        5,
-        12
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Uv Mapping"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/tezos",
       "label": "Tezos",
       "categories": [
@@ -7764,21 +7552,6 @@
       "parents": [
         "Layer 1",
         "Layer 1 Blockchain"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/think-aloud-protocol",
-      "label": "Think Aloud Protocol",
-      "categories": [
-        5,
-        13
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Human Computer Interface"
       ]
     },
     {
@@ -8363,21 +8136,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/voxel-grid",
-      "label": "Voxel Grid",
-      "categories": [
-        5,
-        14
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Point Cloud"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/wallet-address",
       "label": "Wallet Address",
       "categories": [
@@ -8390,36 +8148,6 @@
       "parents": [
         "Blockchain",
         "Public Key"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/wearable-ai",
-      "label": "Wearable AI",
-      "categories": [
-        5,
-        13
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Wearable Device Integration"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/wearable-computing",
-      "label": "Wearable Computing",
-      "categories": [
-        5,
-        13
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Human Interface Device"
       ]
     },
     {
@@ -8455,21 +8183,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/web-xr",
-      "label": "WebXR",
-      "categories": [
-        5,
-        16
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Standards and Interoperability"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/working-memory",
       "label": "Working Memory",
       "categories": [
@@ -8497,21 +8210,6 @@
       "parents": [
         "Governance and Safety",
         "Accessibility Standard"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/xr-hardware",
-      "label": "XR Hardware",
-      "categories": [
-        5,
-        12
-      ],
-      "domains": [
-        2
-      ],
-      "parents": [
-        "Spatial Computing",
-        "Display and Rendering"
       ]
     },
     {

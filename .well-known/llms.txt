@@ -5,12 +5,16 @@
 > Revolution across six domains: artificial intelligence, blockchain, spatial
 > computing, robotics, distributed collaboration and infrastructure. It exists to
 > exercise and demonstrate the VisionFlow pipeline and VisionClaw engine on a
-> medium-scale ontology (~8.1k classes, ~100k relations). It is a testbed, NOT an
-> authoritative human-authored encyclopedia. It compiles to a reasoned OWL2 DL
-> ontology (Whelk EL++), not a pile of hyperlinks. Every page carries OWL2
-> semantics in embedded JSON-LD and a traceable generation record
-> (prov:wasAttributedTo did:nostr:jjohare): the record says who directed the
-> generation and when, never that a human wrote it.
+> medium-scale ontology (~8.1k classes, 0 individuals, ~100k typed relations: a
+> terminology, not an instance graph). It is a testbed, NOT an authoritative
+> human-authored encyclopedia. It compiles to an OWL 2 EL ontology, validated
+> and closed at build; Whelk (OWL EL+RL) classifies it downstream in VisionClaw.
+> Pages carry OWL2 semantics in embedded JSON-LD, and most (6,697 of 8,160
+> class records) carry a traceable generation record: prov:wasAttributedTo
+> resolves to five did:nostr identities, agent swarms (ontology-mesh,
+> lcr-swarm, enrichment-swarm) and humans (jjohare), saying who directed the
+> generation and when, never that a human wrote it. Coverage is partial and
+> enumerated in the data, not assumed.
 
 This site is also an API. Every artifact below is a public, CORS-open,
 documented endpoint you may build on as a stable ground-truth dependency. All
@@ -29,9 +33,12 @@ site is hand-typed.
 
 ## Ontology & semantics
 
-- [ontology.ttl](/data/ontology.ttl): the corpus as Turtle: classes, the
-  subClassOf backbone and object properties, reasoned under EL++. The TTL
-  download is the contract; static hosting excludes a live SPARQL endpoint.
+- [ontology.ttl](/data/ontology.ttl): the corpus as Turtle, asserted triples
+  only: classes, the subClassOf backbone, restriction axioms and object
+  properties. The pipeline's EL-profile closure ships separately as
+  [ontology-inferred.ttl](/data/ontology-inferred.ttl); load both if you want
+  entailments materialised. The TTL downloads are the contract; static hosting
+  excludes a live SPARQL endpoint.
 - [JSON-LD context](/ns/): the @context for the ngm: vocabulary.
 
 ## Graph tiers (NGG1 binary, so the explorer never loads a monolith)

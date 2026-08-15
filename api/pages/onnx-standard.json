@@ -73,11 +73,6 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
     }
   ],
   "inheritedRelations": {
@@ -213,10 +208,6 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -295,14 +286,6 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [

@@ -25,8 +25,8 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction"
+      "@id": "owl:Thing",
+      "label": "Thing"
     }
   ],
   "sameAs": [

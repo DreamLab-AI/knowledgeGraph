@@ -55,11 +55,6 @@
       "slug": "spatial-computing"
     },
     {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
-    },
-    {
       "id": "urn:ngm:class:immersive-technology",
       "label": "Immersive Technology",
       "slug": "immersive-technology"
@@ -70,19 +65,9 @@
       "slug": "sc-platform-and-environment"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
       "id": "urn:ngm:class:digital-technology",
       "label": "Digital Technology",
       "slug": "digital-technology"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -208,10 +193,6 @@
         "label": "Pervasive Computing"
       },
       {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
-      },
-      {
         "id": "urn:ngm:class:display-technology",
         "label": "Traditional Display Technology"
       }
@@ -246,8 +227,8 @@
         "label": "Gesture Recognition"
       },
       {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
       }
     ],
     "uses": [
@@ -285,14 +266,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
-      },
       {
         "id": "urn:ngm:class:enterprise-training",
         "label": "Enterprise Training"
@@ -344,20 +317,20 @@
         "label": "Presence"
       },
       {
-        "id": "urn:ngm:class:affective-computing",
-        "label": "Affective Computing"
-      },
-      {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
-      },
-      {
-        "id": "urn:ngm:class:user-experience-design",
-        "label": "User Experience Design"
-      },
-      {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:presence-technology",
+        "label": "Presence Technology"
+      },
+      {
+        "id": "urn:ngm:class:sc-display-and-rendering",
+        "label": "Display and Rendering"
+      },
+      {
+        "id": "urn:ngm:class:sc-interaction",
+        "label": "Interaction Technology"
       }
     ]
   },

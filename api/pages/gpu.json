@@ -167,21 +167,6 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
-    },
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -309,10 +294,6 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -343,10 +324,6 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
-      },
-      {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
       }
     ],
     "uses": [
@@ -403,14 +380,6 @@
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [

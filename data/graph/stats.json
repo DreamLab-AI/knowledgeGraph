@@ -17,29 +17,29 @@
   "nodes": 8146,
   "domains": 6,
   "categories": 34,
-  "uncategorised": 66,
+  "uncategorised": 67,
   "domainless": 0,
   "bridging": {
     "multiParent": 1396,
-    "crossCategory": 478,
+    "crossCategory": 456,
     "crossDomain": 156
   },
   "edges": {
     "declared": 113506,
     "declaredBackbone": 9750,
     "declaredRelations": 103756,
-    "resolvable": 101360,
-    "backbone": 9622,
+    "resolvable": 101359,
+    "backbone": 9621,
     "relations": 91738
   },
   "scopes": {
     "full": {
       "nodes": 8146,
-      "backbone": 9622,
+      "backbone": 9621,
       "relations": 91738,
-      "shipped": 101360,
+      "shipped": 101359,
       "relationsCapped": 0,
-      "bytes": 1381010
+      "bytes": 1381006
     },
     "domain-artificial-intelligence": {
       "nodes": 1500,

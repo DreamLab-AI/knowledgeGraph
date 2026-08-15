@@ -182,11 +182,6 @@
       "slug": "artificial-intelligence-core"
     },
     {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
-    },
-    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
@@ -317,10 +312,6 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -347,14 +338,6 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
-      },
-      {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
       }
     ],
     "uses": [

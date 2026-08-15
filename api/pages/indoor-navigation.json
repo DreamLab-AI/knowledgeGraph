@@ -110,29 +110,14 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
-    },
-    {
       "id": "urn:ngm:class:mapping",
       "label": "Mapping",
       "slug": "mapping"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
       "id": "urn:ngm:class:knowledge-graph",
       "label": "Knowledge Graph",
       "slug": "knowledge-graph"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -163,16 +148,16 @@
         "label": "Virtual Reality"
       },
       {
-        "id": "urn:ngm:class:cognitive-ergonomics",
-        "label": "Cognitive Ergonomics"
+        "id": "urn:ngm:class:metric-map",
+        "label": "Metric Map"
       },
       {
-        "id": "urn:ngm:class:interaction-design",
-        "label": "Interaction Design"
+        "id": "urn:ngm:class:semantic-mapping",
+        "label": "Semantic Mapping"
       },
       {
-        "id": "urn:ngm:class:usability-engineering",
-        "label": "Usability Engineering"
+        "id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
       }
     ],
     "requires": [
@@ -197,16 +182,16 @@
         "label": "Lidar"
       },
       {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
-      },
-      {
-        "id": "urn:ngm:class:user-research",
-        "label": "User Research"
-      },
-      {
         "id": "urn:ngm:class:feature-extraction",
         "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
       }
     ],
     "enables": [
@@ -227,30 +212,26 @@
         "label": "Scene Understanding"
       },
       {
-        "id": "urn:ngm:class:accessibility",
-        "label": "Accessibility"
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
       },
       {
-        "id": "urn:ngm:class:adaptive-user-interface",
-        "label": "Adaptive User Interface"
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
       },
       {
-        "id": "urn:ngm:class:human-ai-collaboration",
-        "label": "Human-AI Collaboration"
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:user-experience",
-        "label": "User Experience"
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
       },
       {
         "id": "urn:ngm:class:localisation",
@@ -271,20 +252,16 @@
         "label": "Gesture Recognition"
       },
       {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
-      },
-      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "uses": [
@@ -321,16 +298,6 @@
         "label": "Point Cloud"
       }
     ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
-      }
-    ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:open-xr",
@@ -361,18 +328,6 @@
         "label": "Occupancy Grid"
       },
       {
-        "id": "urn:ngm:class:affective-computing",
-        "label": "Affective Computing"
-      },
-      {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
-      },
-      {
-        "id": "urn:ngm:class:user-experience-design",
-        "label": "User Experience Design"
-      },
-      {
         "id": "urn:ngm:class:coordinate-system",
         "label": "Coordinate System"
       },
@@ -383,6 +338,18 @@
       {
         "id": "urn:ngm:class:ontology-alignment",
         "label": "Ontology Alignment"
+      },
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
       }
     ]
   },

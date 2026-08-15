@@ -154,29 +154,14 @@
       "slug": "spatial-computing"
     },
     {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
-    },
-    {
       "id": "urn:ngm:class:immersive-technology",
       "label": "Immersive Technology",
       "slug": "immersive-technology"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
       "id": "urn:ngm:class:digital-technology",
       "label": "Digital Technology",
       "slug": "digital-technology"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -240,12 +225,8 @@
         "label": "Sensor Fusion"
       },
       {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
-      },
-      {
-        "id": "urn:ngm:class:user-research",
-        "label": "User Research"
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
       }
     ],
     "enables": [
@@ -302,10 +283,6 @@
         "label": "Pervasive Computing"
       },
       {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
-      },
-      {
         "id": "urn:ngm:class:display-technology",
         "label": "Traditional Display Technology"
       }
@@ -336,12 +313,12 @@
         "label": "Gesture Recognition"
       },
       {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       }
     ],
     "uses": [
@@ -379,14 +356,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
-      },
       {
         "id": "urn:ngm:class:enterprise-training",
         "label": "Enterprise Training"
@@ -446,8 +415,8 @@
         "label": "Standards and Interoperability"
       },
       {
-        "id": "urn:ngm:class:affective-computing",
-        "label": "Affective Computing"
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ]
   },

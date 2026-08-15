@@ -99,24 +99,9 @@
       "slug": "blockchain-entity"
     },
     {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
-    },
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
       "id": "urn:ngm:class:bc-network-component",
       "label": "Network Component (Blockchain)",
       "slug": "bc-network-component"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:blockchain",
@@ -241,10 +226,6 @@
       {
         "id": "urn:ngm:class:right-to-erasure",
         "label": "Right to Erasure"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -267,18 +248,6 @@
       {
         "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
-      },
-      {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
       }
     ],
     "uses": [
@@ -323,14 +292,6 @@
       {
         "id": "urn:ngm:class:supply-chain-integrity",
         "label": "Supply Chain Integrity"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -359,28 +320,16 @@
         "label": "Finality"
       },
       {
-        "id": "urn:ngm:class:affective-computing",
-        "label": "Affective Computing"
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
       },
       {
-        "id": "urn:ngm:class:user-experience-design",
-        "label": "User Experience Design"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
       }
     ]
   },

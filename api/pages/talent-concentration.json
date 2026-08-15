@@ -83,11 +83,6 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
-    },
-    {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
     }
   ],
   "inheritedRelations": {
@@ -245,10 +240,6 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -263,18 +254,6 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
-      },
-      {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
       }
     ],
     "uses": [

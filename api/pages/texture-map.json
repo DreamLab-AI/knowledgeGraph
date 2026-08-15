@@ -129,29 +129,14 @@
       "slug": "3d-modelling"
     },
     {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
-    },
-    {
       "id": "urn:ngm:class:3-d-development",
       "label": "3D Development",
       "slug": "3-d-development"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
       "id": "urn:ngm:class:computer-graphics",
       "label": "Computer Graphics",
       "slug": "computer-graphics"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -225,12 +210,12 @@
         "label": "Design Software"
       },
       {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
+        "id": "urn:ngm:class:3-d-graphics-standard",
+        "label": "3D Graphics Standard"
       },
       {
-        "id": "urn:ngm:class:user-research",
-        "label": "User Research"
+        "id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
       }
     ],
     "enables": [
@@ -295,10 +280,6 @@
       {
         "id": "urn:ngm:class:digital-art",
         "label": "Digital Art"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
       },
       {
         "id": "urn:ngm:class:image-processing",
@@ -401,10 +382,6 @@
       {
         "id": "urn:ngm:class:visual-effects",
         "label": "Visual Effects"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
       }
     ],
     "standardizedBy": [
@@ -469,12 +446,12 @@
         "label": "Visual Effects"
       },
       {
-        "id": "urn:ngm:class:affective-computing",
-        "label": "Affective Computing"
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
       },
       {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ]
   },

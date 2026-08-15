@@ -64,11 +64,6 @@
       "slug": "spatial-computing"
     },
     {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
-    },
-    {
       "id": "urn:ngm:class:immersive-technology",
       "label": "Immersive Technology",
       "slug": "immersive-technology"
@@ -79,19 +74,9 @@
       "slug": "sc-platform-and-environment"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
       "id": "urn:ngm:class:digital-technology",
       "label": "Digital Technology",
       "slug": "digital-technology"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -237,10 +222,6 @@
         "label": "Pervasive Computing"
       },
       {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
-      },
-      {
         "id": "urn:ngm:class:display-technology",
         "label": "Traditional Display Technology"
       }
@@ -321,14 +302,6 @@
       {
         "id": "urn:ngm:class:remote-collaboration",
         "label": "Remote Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
       },
       {
         "id": "urn:ngm:class:enterprise-training",

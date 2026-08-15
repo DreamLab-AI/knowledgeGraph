@@ -46,24 +46,9 @@
       "slug": "blockchain-entity"
     },
     {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
-    },
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
       "id": "urn:ngm:class:bc-network-component",
       "label": "Network Component (Blockchain)",
       "slug": "bc-network-component"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:blockchain",
@@ -192,10 +177,6 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -222,14 +203,6 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
-      },
-      {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -282,14 +255,6 @@
       {
         "id": "urn:ngm:class:supply-chain-integrity",
         "label": "Supply Chain Integrity"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -330,16 +295,16 @@
         "label": "Tamper Evidence"
       },
       {
-        "id": "urn:ngm:class:affective-computing",
-        "label": "Affective Computing"
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
       },
       {
-        "id": "urn:ngm:class:user-experience-design",
-        "label": "User Experience Design"
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
       }
     ]
   },
