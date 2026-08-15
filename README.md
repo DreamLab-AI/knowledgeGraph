@@ -2,11 +2,15 @@
 
 ![Narrative Goldmine](explorer/modern/public/images/heroes/ngm-hero.webp)
 
-This repository holds a **corpus** of 8,138 ordinary Logseq markdown pages, the Python
-pipeline that compiles them into a formal **OWL 2 ontology** — the classes, typed
-properties and axioms that define what *can* be said — and the **knowledge graph** that
-vocabulary populates: 262k RDF triples and resolvable typed edges you can traverse, query
-and cite, emitted in Turtle and a binary graph format. The WebAssembly explorer renders
+This repository holds a **corpus** of 8,138 ordinary Logseq markdown pages and the Python
+pipeline that compiles them losslessly into a formal **OWL 2 ontology** — the classes,
+typed properties and axioms that define what *can* be said, emitted as RDF triples and
+resolvable typed edges you can traverse, query and cite, in Turtle and a binary graph
+format. The corpus is **pure TBox: every entity is a class, and there are zero
+individuals, by design**. That is the fact that licenses the word ontology — and it is
+why this artefact is not called a knowledge graph: instance data lives in the mesh's
+runtime graphs (VisionClaw, agents' working graphs, Solid pods), which populate this
+vocabulary against these classes. The WebAssembly explorer renders
 the result. It is a self-contained release: corpus, build, viewer and method in one tree,
 published at [narrativegoldmine.com](https://narrativegoldmine.com).
 
@@ -395,8 +399,6 @@ left.
   share a page IRI (`bitcoin`, `comfy-ui`, `ethereum`, `foundation-models`). The page
   count is deliberately deduplicated by IRI rather than reported as the class count
   under a "pages" label.
-- **0 individuals.** The corpus is terminology only: every entity is a class, and
-  nothing is asserted as an instance of one.
 - **97 wikilinks across 2 files** (`Data Parallelism.md`, `Data Preprocessing.md`) are
   bare strings rather than `{@id, vc:label}` objects and therefore produce no backlinks.
 - **51 pages have an empty body** and so get no markdown mirror in `dist/api/markdown/`.
