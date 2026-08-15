@@ -87,7 +87,7 @@
         "label": "Thesaurus"
       },
       {
-        "id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
+        "id": "urn:ngm:class:taxonomy",
         "label": "Taxonomy"
       }
     ],
@@ -150,12 +150,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
-        "label": "Taxonomy"
-      },
-      {
         "id": "urn:ngm:class:metadata-standard",
         "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
       },
       {
         "id": "urn:ngm:class:ontology",

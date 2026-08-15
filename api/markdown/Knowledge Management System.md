@@ -112,7 +112,7 @@ public:: true
         "label": "Access Control"
       },
       {
-        "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
+        "@id": "urn:ngm:class:taxonomy",
         "label": "Taxonomy"
       }
     ],

@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
+  "@id": "urn:ngm:class:taxonomy",
   "@type": "Class",
   "label": "Taxonomy",
   "definition": "A taxonomy is a hierarchical classification scheme that organises concepts or entities into nested categories based on shared characteristics, typically expressing broader-than and narrower-than relationships. It provides a controlled vocabulary that supports consistent naming, navigation, and retrieval within a domain. Taxonomies are a simpler precursor to fuller ontologies, which add richer relations and formal axioms.",

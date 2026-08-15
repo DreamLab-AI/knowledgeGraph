@@ -213,12 +213,12 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
-        "label": "Taxonomy"
-      },
-      {
         "id": "urn:ngm:class:database-schema",
         "label": "Database Schema"
+      },
+      {
+        "id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
       },
       {
         "id": "urn:ngm:class:neural-network",

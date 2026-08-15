@@ -138,12 +138,12 @@
         "label": "Controlled Vocabulary"
       },
       {
-        "id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
-        "label": "Taxonomy"
-      },
-      {
         "id": "urn:ngm:class:metadata-standard",
         "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
       },
       {
         "id": "urn:ngm:class:ontology",
@@ -336,7 +336,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
+        "id": "urn:ngm:class:taxonomy",
         "label": "Taxonomy"
       },
       {

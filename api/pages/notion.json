@@ -182,12 +182,12 @@
         "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
-        "label": "Taxonomy"
-      },
-      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
       },
       {
         "id": "urn:ngm:class:data-centre",

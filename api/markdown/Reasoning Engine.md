@@ -20,7 +20,7 @@ public:: true
   "@id": "urn:ngm:class:reasoning-engine",
   "@type": "Class",
   "label": "Reasoning Engine",
-  "definition": "A reasoning engine is a software component that derives new conclusions from a body of knowledge by applying logical inference rules, probabilistic methods, or learned heuristics. Classical reasoning engines operate over symbolic knowledge bases using forward or backward chaining, description-logic subsumption, or constraint solving, while modern neuro-symbolic and LLM-based engines combine learned language representations with structured tool use and search. Reasoning engines power expert systems, semantic-web query answering, automated planning, and multi-step problem solving in agentic AI systems.",
+  "definition": "A reasoning engine is a software component that derives new conclusions from a body of knowledge by applying logical inference rules, probabilistic methods, or learned heuristics. Classical reasoning engines operate over symbolic knowledge bases using forward or backward chaining, description-logic subsumption, or constraint solving, while modern neuro-symbolic and LLM-based engines combine learned language representations with structured tool use and search. Reasoning engines power expert systems, semantic-web query answering, automated planning, and multi-step problem solving in agentic AI systems. In the DreamLab mesh the reasoning engine is Whelk, an OWL 2 EL classifier that derives entailments and rejects contradictions before they enter the shared knowledge graph.",
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}],

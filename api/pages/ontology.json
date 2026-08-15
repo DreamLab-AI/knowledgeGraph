@@ -66,7 +66,7 @@
         "label": "Database Schema"
       },
       {
-        "id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
+        "id": "urn:ngm:class:taxonomy",
         "label": "Taxonomy"
       }
     ],
@@ -352,6 +352,10 @@
       "label": "Constraint"
     },
     {
+      "slug": "context-graph",
+      "label": "Context Graph"
+    },
+    {
       "slug": "database-schema",
       "label": "Database Schema"
     },
@@ -396,6 +400,10 @@
       "label": "OWL 2 Web Ontology Language"
     },
     {
+      "slug": "ontology-loom",
+      "label": "Ontology Loom"
+    },
+    {
       "slug": "rdf-data-model",
       "label": "RDF Data Model"
     },
@@ -410,6 +418,10 @@
     {
       "slug": "set-theory",
       "label": "Set Theory"
+    },
+    {
+      "slug": "terminology-playbook",
+      "label": "Terminology Playbook"
     }
   ]
 }

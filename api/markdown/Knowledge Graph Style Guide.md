@@ -172,3 +172,7 @@ elevatedFrom:: [[Style Guide]]
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z
+
+- ## Canonical Terminology
+	- The words for the knowledge stack are owned by the [[Terminology Playbook]]. In short: a [[Taxonomy]] is the is-a backbone (one part of the ontology, never a synonym for it); the [[Ontology]] is the formal vocabulary that defines what can be said; the [[Knowledge Graph]] is that vocabulary populated at scale; [[Reasoning]] is the Whelk machine check that gates what enters; and the [[Ontology Loom]] serves the checked graph into a model's context at query time.
+	- On every public surface, "reasoned" means checked by Whelk, the corpus provenance is stated in one plain line, and "living ontology" is retired.

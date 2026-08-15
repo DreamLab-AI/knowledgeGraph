@@ -5,7 +5,7 @@
 
 <https://narrativegoldmine.com/ontology/inferred> a owl:Ontology ;
     rdfs:label "NarrativeGoldmine Inferred Axioms"@en ;
-    vc:generatedAt "2026-08-11T18:48:49.276187+00:00"^^xsd:dateTime ;
+    vc:generatedAt "2026-08-15T09:33:49.726061+00:00"^^xsd:dateTime ;
     vc:inferenceMethod "transitive-subclass-closure" .
 
 <urn:ngm:class:1-hive> rdfs:subClassOf <urn:ngm:class:bc-governance-and-regulation>,
@@ -5721,6 +5721,9 @@
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core> .
 
+<urn:ngm:class:context-graph> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:context-management> rdfs:subClassOf <urn:ngm:class:ai-application>,
         <urn:ngm:class:ai-model-architecture>,
         <urn:ngm:class:ai-research-area>,
@@ -5958,9 +5961,6 @@
 <urn:ngm:class:corporate-tax-compliance-framework-treatment-crypto> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
 <urn:ngm:class:corporate-tax-compliance-frameworkonomic-framework> rdfs:subClassOf <urn:ngm:class:robotics> .
-
-<urn:ngm:class:corporate-tax-compliance-frameworkonomy> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
-        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:corporate-training> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence>,
@@ -18777,6 +18777,9 @@
 
 <urn:ngm:class:ontology-in-llm-operations> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ontology-loom> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ontology-property-definitions> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:ontology-structure> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
@@ -26405,6 +26408,9 @@
         <urn:ngm:class:economics>,
         <urn:ngm:class:macroeconomics> .
 
+<urn:ngm:class:taxonomy> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:tc-0002-collaborative-document-editing> rdfs:subClassOf <urn:ngm:class:distributed-collaboration> .
 
 <urn:ngm:class:tc-0003-telepresence-robot> rdfs:subClassOf <urn:ngm:class:distributed-collaboration> .
@@ -26697,6 +26703,9 @@
 <urn:ngm:class:terminal-coding-agents> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
         <urn:ngm:class:digital-infrastructure>,
         <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:terminology-playbook> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:terraform> rdfs:subClassOf <urn:ngm:class:automation>,

@@ -185,10 +185,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
-        "label": "Taxonomy"
-      },
-      {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
       },
@@ -203,6 +199,10 @@
       {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
       }
     ],
     "supports": [

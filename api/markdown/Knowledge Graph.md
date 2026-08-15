@@ -392,7 +392,7 @@ alias:: KnowledgeGraph
   - depends-on:: [[RDF Framework]], [[SPARQL Query Engine]], [[Reasoning Service]], [[Entity Resolution]]
 
 - ### Content
-  Knowledge Graph — content pending enrichment.
+  This page holds the canonical class definition for the concept; the fuller article lives at [[Knowledge Graphs]]. In the layered stack this graph documents itself with, a knowledge graph is the [[Ontology]]'s vocabulary populated at scale — the pages and typed links you can traverse, query and cite — with [[Reasoning]] as the machine check that classifies the result and gates what enters it. Body content pending enrichment; merge with [[Knowledge Graphs]] is an open editorial decision.
 
 - ### Provenance
   - sources:: [[W3C RDF]], [[W3C OWL]], [[Schema.org]]

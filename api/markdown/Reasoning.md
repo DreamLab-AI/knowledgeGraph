@@ -246,7 +246,7 @@ public:: true
   "@id": "urn:ngm:class:reasoning",
   "@type": "Class",
   "label": "Reasoning",
-  "definition": "Reasoning in artificial intelligence encompasses the computational processes by which systems derive conclusions, formulate plans, solve problems, and generate explanations from knowledge, data, and prior context.",
+  "definition": "Reasoning in artificial intelligence encompasses the computational processes by which systems derive conclusions, formulate plans, solve problems, and generate explanations from knowledge, data, and prior context. On this graph, unqualified reasoning names the symbolic form: a reasoner deriving entailments that necessarily follow from the ontology's axioms. LLM chain-of-thought is always qualified as such.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

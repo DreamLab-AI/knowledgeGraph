@@ -375,6 +375,10 @@
       "label": "Context Engineering"
     },
     {
+      "slug": "context-graph",
+      "label": "Context Graph"
+    },
+    {
       "slug": "continuous-batching",
       "label": "Continuous Batching"
     },
@@ -481,6 +485,10 @@
     {
       "slug": "multi-agent-orchestration-frameworks",
       "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "ontology-loom",
+      "label": "Ontology Loom"
     },
     {
       "slug": "personal-agent-runtimes",

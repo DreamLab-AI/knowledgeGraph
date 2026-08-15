@@ -3,7 +3,7 @@
   "title": "Taxonomy",
   "slug": "taxonomy",
   "public": true,
-  "classIri": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
+  "classIri": "urn:ngm:class:taxonomy",
   "domain": "data",
   "definition": "A taxonomy is a hierarchical classification scheme that organises concepts or entities into nested categories based on shared characteristics, typically expressing broader-than and narrower-than relationships. It provides a controlled vocabulary that supports consistent naming, navigation, and retrieval within a domain. Taxonomies are a simpler precursor to fuller ontologies, which add richer relations and formal axioms.",
   "subClassOf": [
@@ -321,12 +321,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "context-graph",
+      "label": "Context Graph"
+    },
+    {
       "slug": "domain-ontology",
       "label": "Domain Ontology"
     },
     {
       "slug": "etsi-metaverse-domain-taxonomy",
       "label": "Etsi Metaverse Domain Taxonomy"
+    },
+    {
+      "slug": "terminology-playbook",
+      "label": "Terminology Playbook"
     }
   ]
 }

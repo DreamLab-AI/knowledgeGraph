@@ -547,6 +547,10 @@
       "label": "Content Generation"
     },
     {
+      "slug": "context-graph",
+      "label": "Context Graph"
+    },
+    {
       "slug": "coreference-resolution",
       "label": "Coreference Resolution"
     },
@@ -615,6 +619,10 @@
       "label": "Neo4j"
     },
     {
+      "slug": "ontology-loom",
+      "label": "Ontology Loom"
+    },
+    {
       "slug": "progressive-disclosure-harnesses",
       "label": "Progressive Disclosure Harnesses"
     },
@@ -637,6 +645,10 @@
     {
       "slug": "solid",
       "label": "Solid"
+    },
+    {
+      "slug": "terminology-playbook",
+      "label": "Terminology Playbook"
     },
     {
       "slug": "verification-report",
