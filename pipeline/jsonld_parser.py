@@ -46,6 +46,7 @@ class OntologyEntity:
     definition: str
     sub_class_of: list[WikilinkRef] = field(default_factory=list)
     instance_of: list[WikilinkRef] = field(default_factory=list)
+    same_as: list[WikilinkRef] = field(default_factory=list)
     quality_score: float = 0.0
     maturity: str = "draft"
     inference_rule: str = ""
@@ -215,6 +216,7 @@ def parse_page(path: Path) -> Optional[PageData]:
 
         sub_class_of = _parse_refs(ontology_block.get("subClassOf", []))
         instance_of = _parse_refs(ontology_block.get("instanceOf", []))
+        same_as = _parse_refs(ontology_block.get("sameAs", []))
 
         # v2 quality is a plain float; v1 is a typed object
         quality = _extract_float(
@@ -245,6 +247,7 @@ def parse_page(path: Path) -> Optional[PageData]:
             definition=ontology_block.get("definition", ""),
             sub_class_of=sub_class_of,
             instance_of=instance_of,
+            same_as=same_as,
             quality_score=quality,
             maturity=ontology_block.get("maturity",
                 ontology_block.get("vc:maturity", "draft")),

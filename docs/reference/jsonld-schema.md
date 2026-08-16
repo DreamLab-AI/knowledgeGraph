@@ -6,7 +6,8 @@ independent parser. All counts are from a scan of the 7874 public pages in this
 repository on 2026-07-25.
 
 The reference implementation is `pipeline/jsonld_parser.py`. Where this document and
-that file disagree, the file wins.
+that file disagree, the file wins. `sameAs` is parsed and round-tripped to
+`owl:sameAs`; project-parameterised v3 `urn:` identities remain absolute in Turtle.
 
 The corpus these pages make up is mostly AI-generated synthetic content produced under
 human direction, by design: it is an ontology testbed, not an authoritative

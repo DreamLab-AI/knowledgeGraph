@@ -45,12 +45,12 @@ the quickstart below.
 |---|---|
 | Source pages | 8,138 markdown files in `ontology/pages/` (137 MB) |
 | OWL classes | 8,138 (0 individuals) |
-| RDF triples | 262,217 in Turtle (12.4 MB) |
+| RDF triples | 265,796 in Turtle (12.5 MiB) |
 | Declared edges | 113,506 (9,749 `subClassOf` + 103,757 object-property) |
 | Resolvable graph edges | 101,321 after self-loop, duplicate and unresolved-target removal |
 | Domains / categories | 6 / 34 |
 | Multiple inheritance | 1,403 classes with more than one parent; 479 spanning categories, 156 spanning domains |
-| Validation | 0 errors, 0 warnings, 1,404 info |
+| Validation | 0 errors, 0 warnings, 1,403 info |
 | Build time | ~18 s, single-threaded, `rdflib` only |
 
 Classes per domain, before the 1,500-node tier cap (`nodes` + `nodesTruncated`
@@ -171,7 +171,7 @@ flowchart LR
     end
 
     subgraph art["dist/ artefacts"]
-        ttl["data/ontology.ttl<br/>258200 triples"]
+        ttl["data/ontology.ttl<br/>265796 triples"]
         vowl["data/ontology.json<br/>WebVOWL"]
         bin["data/graph/*.bin<br/>NGG1 binary tiers<br/>+ bridges.json · overview.json"]
         api["api/pages/*.json<br/>api/search-index.json"]
@@ -217,6 +217,10 @@ flowchart LR
 
 ## Quickstart
 
+OntoCast users can stage extracted RDF as private, reviewable Logseq candidates
+through the [OntoCast integration](docs/integrations/ontocast.md). It is an
+upstream producer seam, not a second publication path.
+
 ```bash
 git clone https://github.com/DreamLab-AI/knowledgeGraph.git
 cd knowledgeGraph
@@ -232,11 +236,11 @@ Expected output, from a clean run:
 
 ```
 [1/7] Parsing ontology/pages...
-       8152 pages (8152 OntologyClass, 8138 public)
+       8138 pages (8138 OntologyClass, 8138 public)
 [2/7] Validating...
        0 errors, 0 warnings
 [3/7] Generating Turtle...
-       258200 triples → dist/data/ontology.ttl
+       265796 triples → dist/data/ontology.ttl
 ...
 Pipeline complete in 18.3s
 ```
@@ -246,7 +250,7 @@ Individual stages, if you want only one artefact:
 ```bash
 python -m pipeline.validate ontology/pages [--json]         # advisory report
 python -m pipeline.jsonld_to_turtle ontology/pages out.ttl  # Turtle only
-pip install pytest && python -m pytest pipeline/tests -q    # 9 passed
+pip install pytest && python -m pytest pipeline/tests -q    # 13 passed
 ```
 
 The explorer needs a Rust toolchain and Node:
@@ -258,7 +262,7 @@ cd ../modern && npm install && npm install ../rust-wasm/pkg && npm run build
 
 ## What you get, and how to consume it
 
-**`dist/data/ontology.ttl`**: 262,217 triples, 12.4 MB. Load it in anything that
+**`dist/data/ontology.ttl`**: 265,796 triples, 12.5 MiB. Load it in anything that
 speaks RDF. IRIs are `https://narrativegoldmine.com/class/<slug>`, rewritten from the
 `urn:ngm:class:<slug>` form in the source. The ontology targets **OWL 2 EL**:
 `owl:inverseOf` and `owl:SymmetricProperty` are deliberately omitted because neither
@@ -268,11 +272,13 @@ of `vc:utilises`. <!-- slop-ignore: vc:utilises is a real ontology property IRI 
 Every `requires` and `hasPart` edge onto a declared class also emits
 an `owl:Restriction` (`someValuesFrom`) as an extra `rdfs:subClassOf`, and the six
 domain roots are asserted pairwise disjoint via a single `owl:AllDisjointClasses`.
+The 3,579 source `sameAs` alignments are preserved as `owl:sameAs`, including
+external identities retained by the OntoCast candidate importer.
 
 ```python
 from rdflib import Graph
 g = Graph().parse("dist/data/ontology.ttl", format="turtle")
-print(len(g))  # 258200
+print(len(g))  # 265796
 ```
 
 **`dist/data/ontology.json`** is 38.5 MB of WebVOWL-format JSON (`class` /

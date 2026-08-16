@@ -81,6 +81,11 @@ first, and stops to re-seed if acceptance falls. The method behind that loop is 
 [../../methodology/the-hybrid-approach.md](../../methodology/the-hybrid-approach.md);
 the reproduction walkthrough is in [../../guides/reproduce.md](../../guides/reproduce.md).
 
+For document-derived extraction, the optional
+[OntoCast adapter](../../integrations/ontocast.md) converts RDF into private review
+candidates without weakening these contracts. The extractor is a producer; the
+normal WAVE E audit remains the acceptance gate.
+
 ## Proposal, not shipped fact
 
 - **Grounding block** (`sources`, `method`, `confidence`) on every entity. The

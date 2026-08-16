@@ -38,6 +38,16 @@ One term per concept, defined once, used identically below.
 
 ## 2. Roles and their boundaries
 
+### Optional extraction engine: OntoCast
+
+WAVE E MAY use OntoCast for document chunking, ontology-assisted fact extraction,
+cross-chunk entity alignment, and upstream SHACL repair. OntoCast output MUST enter
+through the private candidate adapter documented in
+[`../integrations/ontocast.md`](../integrations/ontocast.md); it MUST NOT write
+public pages or count as acceptance evidence. The adapter preserves the RDF input,
+re-mints project identity, and leaves every candidate pending the same sampling,
+grounding, and human-promotion gates as any other author.
+
 Five roles run the mesh; distinct roles make parallel output mergeable. Each
 role's MUST NOT list is normative.
 

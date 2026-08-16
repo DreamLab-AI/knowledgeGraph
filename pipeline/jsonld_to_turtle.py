@@ -60,6 +60,10 @@ def _iri_to_uriref(iri: str) -> URIRef:
         return URIRef(iri.replace("urn:visionflow:linked:", "https://narrativegoldmine.com/linked/"))
     if iri.startswith("urn:visionflow:page:"):
         return URIRef(iri.replace("urn:visionflow:page:", "https://narrativegoldmine.com/page/"))
+    # v3 profiles use project-owned, parameterised URNs. They are already
+    # absolute identifiers and must not be mistaken for local v2 slugs.
+    if iri.startswith("urn:"):
+        return URIRef(iri)
     if iri.startswith("http"):
         return URIRef(iri)
     return URIRef(f"https://narrativegoldmine.com/class/{iri}")
@@ -273,6 +277,9 @@ def build_graph(pages: list[PageData], public_only: bool = True,
 
         if oc.definition:
             g.add((entity_uri, RDFS.comment, Literal(oc.definition, lang="en")))
+
+        for aligned in oc.same_as:
+            g.add((entity_uri, OWL.sameAs, _iri_to_uriref(aligned.iri)))
 
         g.add((entity_uri, VC.sourceDomain, Literal(oc.domain)))
         g.add((entity_uri, VC.qualityScore, Literal(oc.quality_score, datatype=XSD.float)))
