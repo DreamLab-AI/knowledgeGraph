@@ -26,6 +26,8 @@ publishes and serves that ontology as grounding to any LLM behind an
 OpenAI-compatible, model-swappable façade (measured ~0.94 grounded recall). This repo
 gives you the corpus, the pipeline and the method to build your own.
 
+> **Self-improvement.** The pipeline is dream-able: a nightly [dream cycle](https://github.com/DreamLab-AI/dream-engine) can propose evidence-gated improvements to the corpus build and method as draft PRs a human merges — validated against the same 0-errors/0-warnings gate.
+
 > **What this corpus is.** Mostly **AI-generated synthetic content, produced under
 > human direction, by design**. It is an ontology testbed (built to exercise a
 > medium-scale Logseq→OWL pipeline and a GPU graph renderer), not an authoritative
