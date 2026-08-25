@@ -262,6 +262,15 @@ publish full membership in JSON alongside any compact format that cannot carry
 it. Contract register. [`05-publication.md`](05-publication.md); reference
 pipeline in [`architecture/pipeline.md`](../architecture/pipeline.md).
 
+**Phase 6 — Continuous enrichment (`07`).** The day after publication: keep the
+corpus absorbing a stream source (news, podcasts, logs) without rotting its
+curated pages or fossilising. Three tiers — append-only evidence ledger,
+two-instrument promotion gate, and a fork into governed proposals (survivors)
+versus working-graph news pages (rejects). Human register, with the August 2026
+operating record as evidence: direct-to-curated ingest fails *measurably* — the
+blind judge scores news digests on mature pages at −2, and only thin pages
+gain. [`07-continuous-enrichment.md`](07-continuous-enrichment.md).
+
 A full worked walk of the first month, seed to first publication, is
 [`06-worked-example.md`](06-worked-example.md). Read it if you learn better from
 one concrete run than from six abstract phases.
@@ -377,4 +386,5 @@ Then, in order:
 Next: **[01 Discovery](01-discovery.md)**. Then
 **[02 Schema](02-schema.md)** · **[03 Generation](03-generation.md)** ·
 **[04 Quality](04-quality.md)** · **[05 Publication](05-publication.md)** ·
-**[06 Worked example](06-worked-example.md)**.
+**[06 Worked example](06-worked-example.md)** ·
+**[07 Continuous enrichment](07-continuous-enrichment.md)**.
