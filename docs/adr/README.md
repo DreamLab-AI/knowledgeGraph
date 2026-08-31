@@ -36,8 +36,11 @@ governing document **in the same change**, and regenerate this index
 frontmatter against the required fields and enums and exits non-zero on a bad
 record, so run it before committing; it is not yet wired into CI).
 
-_1 record(s). Regenerate with_ `node scripts/adr-index-gen.js docs/adr`.
+_4 record(s). Regenerate with_ `node scripts/adr-index-gen.js docs/adr`.
 
 | ID | Title | Date | Decision | Impl | Activation | Supersedes | Superseded by | Owner | Repo |
 |----|-------|------|----------|------|------------|------------|---------------|-------|------|
 | [ADR-2001](ADR-2001-corpus-consolidation.md) | Consolidate ADR corpus into a living baseline and thin ledger | 2026-08-31 | accepted | complete | live | — | — | jjohare | narrativegoldmine |
+| [ADR-2002](ADR-2002-corpus-is-the-ontology.md) | Fuse corpus and ontology — a Logseq page IS an OWL class | 2026-08-31 | accepted | complete | live | — | — | jjohare | narrativegoldmine |
+| [ADR-2003](ADR-2003-expected-classes-tripwire.md) | Gate corpus integrity with a hand-typed EXPECTED_CLASSES tripwire | 2026-08-31 | accepted | complete | live | — | — | jjohare | narrativegoldmine |
+| [ADR-2004](ADR-2004-corpus-page-identity-immutable.md) | Treat corpus page identity as immutable — no file moves, no archive tree | 2026-08-31 | accepted | complete | live | — | — | jjohare | narrativegoldmine |
