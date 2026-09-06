@@ -22,32 +22,20 @@ modern/                     # React Three Fiber app
 │   ├── types/              # TypeScript definitions
 │   └── utils/              # Helpers
 
-rust-wasm/                  # Physics engine
-├── src/
-│   ├── ontology/           # OWL parsing
-│   ├── graph/              # Graph structures
-│   ├── layout/             # Force simulation (Barnes-Hut)
-│   └── bindings/           # WASM API
-└── pkg/                    # Built WASM (215KB)
 ```
+
+The physics engine is NOT in this repo. It lives in https://github.com/DreamLab-AI/vowl-wasm
+(crate `vowl-wasm`, bundle `@dreamlab-ai/vowl-wasm`) and is consumed here as a pinned,
+integrity-locked dependency — see `modern/package.json`.
 
 ## 🚀 Development Commands
 
 ### WASM Development
 
-```bash
-cd rust-wasm
-export PATH="$HOME/.cargo/bin:$PATH"
-
-# Build WASM
-wasm-pack build --target web --release
-
-# Test
-cargo test
-
-# Benchmark
-cargo bench
-```
+The engine is a published dependency, so nothing here builds it. To change
+it, work in https://github.com/DreamLab-AI/vowl-wasm, publish a new version, then bump
+the pin in `modern/package.json` and regenerate `modern/package-lock.json`.
+No Rust toolchain is needed to build this repo.
 
 ### React Development
 
@@ -80,7 +68,7 @@ npm run typecheck
 - Shows simulation overlay when isRunning=true
 
 ### WASM Bindings
-`rust-wasm/src/bindings/mod.rs`
+`src/bindings/mod.rs` in https://github.com/DreamLab-AI/vowl-wasm
 - WebVowl class with 15 methods
 - JavaScript API for simulation control
 
@@ -91,21 +79,18 @@ npm run typecheck
 **Fix**: 10-second setTimeout in useWasmSimulation (commit 5d50a09c)
 
 ### Issue: WASM Not Found
+**Cause**: dependencies not installed, or a lockfile out of sync with package.json
 **Solution**:
 ```bash
-cd rust-wasm && wasm-pack build --target web --release
+cd modern && npm ci
 ```
-
-### Issue: Build Fails in GitHub Actions
-**Cause**: WASM not copied to node_modules
-**Fix**: See `.github/workflows/publish.yml` line 129-134
 
 ## 📊 Performance Optimization
 
 ### Current Settings (for 1,700 nodes)
 
 ```rust
-// rust-wasm/src/layout/simulation.rs
+// src/layout/simulation.rs, in the engine repo
 link_distance: 250.0,      // Wide spacing
 charge_strength: -2000.0,  // Strong repulsion
 center_strength: 0.001,    // Minimal centering
@@ -124,15 +109,15 @@ barnes_hut_theta: 0.9,     // Speed/accuracy balance
 
 ### Adding WASM Features
 
-1. Implement in Rust: `rust-wasm/src/`
-2. Export via bindings: `rust-wasm/src/bindings/mod.rs`
-3. Rebuild WASM: `wasm-pack build`
-4. Use in React: Import from `../../../rust-wasm/pkg/`
+1. Implement in Rust and export via bindings, in https://github.com/DreamLab-AI/vowl-wasm
+2. Publish a new version of that crate/bundle
+3. Bump the pin in `modern/package.json`, regenerate `modern/package-lock.json`
+4. Use in React: `await import('@dreamlab-ai/vowl-wasm')`
 
 ### Modifying Physics
 
-1. Edit: `rust-wasm/src/layout/force.rs`
-2. Test: `cargo test`
+1. Edit `src/layout/force.rs` in the engine repo
+2. Test: `cargo test` there
 3. Rebuild and test in browser
 
 ### UI Changes
@@ -153,21 +138,12 @@ npm run preview  # Test production build
 
 ### GitHub Actions
 
-Commits to `main` trigger:
-1. Build WASM (rust-wasm/)
-2. Build React (modern/)
-3. Deploy to DreamLab-AI/knowledgeGraph gh-pages
+Commits to `main` trigger the corpus build-and-verify workflow. It deploys
+nothing, by design (see `.github/workflows/build.yml`).
 
 **Live Site**: https://narrativegoldmine.com
 
 ## 🧪 Testing
-
-### Rust Tests
-```bash
-cd rust-wasm
-cargo test --all-features
-# 47 tests should pass
-```
 
 ### React Tests
 ```bash
@@ -209,7 +185,6 @@ npm test
 
 ## ⚠️ Important Notes
 
-- WASM must be built BEFORE React build
-- PATH must include `$HOME/.cargo/bin` for Rust tools
+- The WASM engine is an external pinned dependency; `npm ci` fetches it
+- No Rust toolchain is required to build this repo
 - Large graphs (>5,000 nodes) may need chunked rendering
-- GitHub Actions requires wasm-pack installation step

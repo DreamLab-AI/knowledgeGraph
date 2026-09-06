@@ -96,9 +96,9 @@ async function instantiate(wasmUrl: string): Promise<WasmPhysics> {
   try {
     mod = wasmUrl
       ? ((await import(/* @vite-ignore */ wasmUrl)) as WasmGlue)
-      : ((await import('webvowl-wasm')) as unknown as WasmGlue);
+      : ((await import('@dreamlab-ai/vowl-wasm')) as unknown as WasmGlue);
   } catch {
-    mod = (await import('webvowl-wasm')) as unknown as WasmGlue;
+    mod = (await import('@dreamlab-ai/vowl-wasm')) as unknown as WasmGlue;
   }
 
   const out = await mod.default(wasmUrl || undefined);

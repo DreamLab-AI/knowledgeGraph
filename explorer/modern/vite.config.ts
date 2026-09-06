@@ -17,7 +17,7 @@ export default defineConfig({
     }
   },
   optimizeDeps: {
-    exclude: ['@dreamlab-ai/webvowl-wasm']
+    exclude: ['@dreamlab-ai/vowl-wasm']
   },
   // The physics worker (physics.worker.ts) dynamically imports the wasm glue, so
   // it is a code-splitting build — that requires ES module workers, not the

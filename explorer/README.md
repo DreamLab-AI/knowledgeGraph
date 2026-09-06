@@ -88,15 +88,18 @@ For complete changelog and migration guide, see [CHANGELOG.md](CHANGELOG.md).
 
 - **/legacy**: The original WebVOWL codebase, preserved for reference and comparison.
 - **/modern**: The new React-based frontend application.
-- **/rust-wasm**: The Rust-powered WebAssembly backend for graph layout and rendering.
+- The Rust-powered WebAssembly backend for graph layout and rendering is no longer
+  vendored here. It lives in its own MIT repo, [DreamLab-AI/vowl-wasm](https://github.com/DreamLab-AI/vowl-wasm),
+  and is consumed as the pinned `@dreamlab-ai/vowl-wasm` package (crate `vowl-wasm` on crates.io).
 
 ## Getting Started
 
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v18 or higher)
-- [Rust](https://www.rust-lang.org/) (latest stable version)
-- [wasm-pack](https://rustwasm.github.io/wasm-pack/)
+
+No Rust or wasm-pack toolchain is required: the WASM engine is installed as a
+pinned, integrity-locked npm dependency.
 
 ### Installation and Setup
 
@@ -107,21 +110,14 @@ For complete changelog and migration guide, see [CHANGELOG.md](CHANGELOG.md).
     cd WasmVOWL
     ```
 
-2.  **Build the Wasm backend:**
+2.  **Install frontend dependencies** (this pulls the pinned WASM engine):
 
     ```bash
-    cd rust-wasm
-    wasm-pack build --target web
+    cd modern
+    npm ci
     ```
 
-3.  **Install frontend dependencies:**
-
-    ```bash
-    cd ../modern
-    npm install
-    ```
-
-4.  **Run the development server:**
+3.  **Run the development server:**
 
     ```bash
     npm run dev
@@ -138,7 +134,7 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 ### Project Documentation
 
 - **Main README** (this file) - Quick start and features
-- **Rust WASM README** (`rust-wasm/README.md`) - WASM module details
+- **WASM engine** ([DreamLab-AI/vowl-wasm](https://github.com/DreamLab-AI/vowl-wasm)) - engine crate and its README
 - **Modern Frontend README** (`modern/README.md`) - React app details
 - **Development Guide** (`CLAUDE.md`) - For development sessions
 
