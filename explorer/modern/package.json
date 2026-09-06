@@ -17,7 +17,7 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "@dreamlab-ai/vowl-wasm": "https://github.com/DreamLab-AI/vowl-wasm/releases/download/v0.1.0/vowl-wasm-0.1.0-pkg.tgz",
+    "@dreamlab-ai/vowl-wasm": "https://github.com/DreamLab-AI/vowl-wasm/releases/download/v0.1.1/vowl-wasm-0.1.1-pkg.tgz",
     "@radix-ui/react-dropdown-menu": "^2.1.16",
     "@radix-ui/react-navigation-menu": "^1.2.14",
     "@radix-ui/react-tabs": "^1.1.13",
