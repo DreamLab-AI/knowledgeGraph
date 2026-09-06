@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # HL7 FHIR
 

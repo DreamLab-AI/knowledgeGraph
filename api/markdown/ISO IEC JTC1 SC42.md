@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ISO IEC JTC1 SC42
 ```json-ld

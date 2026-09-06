@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Axie Infinity
 ```json-ld

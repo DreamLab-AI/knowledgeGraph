@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Metadata Repository
 ```json-ld

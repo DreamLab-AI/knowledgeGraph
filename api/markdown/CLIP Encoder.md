@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # CLIP Encoder
 ```json-ld

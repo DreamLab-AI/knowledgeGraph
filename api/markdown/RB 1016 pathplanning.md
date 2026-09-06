@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # RB 1016 pathplanning
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: DigitalIdentity
+---
+public: true
+aliases:
+  - DigitalIdentity
+---
 
 # Digital Identity
 ```json-ld

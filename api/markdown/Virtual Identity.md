@@ -1,5 +1,8 @@
-public:: true
-alias:: VirtualIdentity
+---
+public: true
+aliases:
+  - VirtualIdentity
+---
 
 # Virtual Identity
 ```json-ld

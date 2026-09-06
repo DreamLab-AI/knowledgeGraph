@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # UK MLR 2017
 ```json-ld

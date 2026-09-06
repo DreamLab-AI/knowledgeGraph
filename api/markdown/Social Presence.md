@@ -1,5 +1,8 @@
-public:: true
-alias:: SocialPresence
+---
+public: true
+aliases:
+  - SocialPresence
+---
 
 # Social Presence
 ```json-ld

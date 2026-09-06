@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Incident Investigation
 ```json-ld

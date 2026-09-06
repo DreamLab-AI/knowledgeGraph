@@ -1,5 +1,8 @@
-public:: true
-alias:: Visual Servoing
+---
+public: true
+aliases:
+  - Visual Servoing
+---
 
 # VisualServoing
 ```json-ld

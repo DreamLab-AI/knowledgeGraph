@@ -1,5 +1,8 @@
-public:: true
-alias:: ProximitySensor
+---
+public: true
+aliases:
+  - ProximitySensor
+---
 
 # Proximity Sensor
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Deposit Return Scheme
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Text Summarisation
 ```json-ld

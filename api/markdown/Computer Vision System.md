@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Computer Vision System
 ```json-ld

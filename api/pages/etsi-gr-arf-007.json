@@ -278,12 +278,12 @@
   ],
   "backlinks": [
     {
-      "slug": "etsi-domain-human-interface",
-      "label": "ETSI_Domain_Human_Interface"
-    },
-    {
       "slug": "etsi-domain-human-interface-ux",
       "label": "ETSI_Domain_Human_Interface___UX"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
     },
     {
       "slug": "etsi-domain-virtual-society",

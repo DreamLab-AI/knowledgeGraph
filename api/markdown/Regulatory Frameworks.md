@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Regulatory Frameworks
 ```json-ld

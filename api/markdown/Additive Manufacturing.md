@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Additive Manufacturing
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Contract Theory
 ```json-ld

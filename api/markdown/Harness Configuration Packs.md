@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Harness Configuration Packs
 ```json-ld

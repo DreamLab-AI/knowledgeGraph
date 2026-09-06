@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Snapshot Block
 ```json-ld

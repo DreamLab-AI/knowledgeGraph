@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Depth-First Search
 ```json-ld

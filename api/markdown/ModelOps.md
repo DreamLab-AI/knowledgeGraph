@@ -1,5 +1,8 @@
-public:: true
-alias:: Model Ops
+---
+public: true
+aliases:
+  - Model Ops
+---
 
 # ModelOps
 ```json-ld

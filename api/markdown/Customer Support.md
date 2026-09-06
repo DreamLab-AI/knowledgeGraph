@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Customer Support
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Civic Participation
 ```json-ld

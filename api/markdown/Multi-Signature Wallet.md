@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Multi-Signature Wallet
 ```json-ld

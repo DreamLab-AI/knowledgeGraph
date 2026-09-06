@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Parameter Modulation System
 ```json-ld

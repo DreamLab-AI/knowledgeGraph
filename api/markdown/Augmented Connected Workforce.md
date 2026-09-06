@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Augmented Connected Workforce
 ```json-ld

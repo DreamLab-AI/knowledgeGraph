@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Feature Matching
 ```json-ld

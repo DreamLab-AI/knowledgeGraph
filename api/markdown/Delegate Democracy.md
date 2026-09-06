@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Delegate Democracy
 ```json-ld

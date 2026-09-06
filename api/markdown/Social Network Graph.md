@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Social Network Graph
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # UK Tech Ecosystem
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Supervisor-Worker Pattern
 ```json-ld

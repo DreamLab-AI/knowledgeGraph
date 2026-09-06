@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # FSB Cross-Border Payments Roadmap
 ```json-ld

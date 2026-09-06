@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Power-Efficient AI
 ```json-ld

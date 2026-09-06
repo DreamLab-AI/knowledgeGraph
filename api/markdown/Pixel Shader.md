@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Pixel Shader
 ```json-ld

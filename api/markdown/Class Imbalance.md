@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Class Imbalance
 ```json-ld

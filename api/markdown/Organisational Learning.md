@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Organisational Learning
 ```json-ld

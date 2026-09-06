@@ -1,5 +1,8 @@
-public:: true
-alias:: RB-1005-forward-kinematics
+---
+public: true
+aliases:
+  - RB-1005-forward-kinematics
+---
 
 # Forward Kinematics
 ```json-ld

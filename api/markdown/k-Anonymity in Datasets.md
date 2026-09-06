@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # k-Anonymity in Datasets
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ETSI MEC
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Holder Binding
 ```json-ld

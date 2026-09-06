@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Shared Spatial Anchors
 ```json-ld

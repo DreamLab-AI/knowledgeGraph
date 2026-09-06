@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Electronic Design Automation
 ```json-ld

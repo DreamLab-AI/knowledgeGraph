@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # CRM Systems
 ```json-ld

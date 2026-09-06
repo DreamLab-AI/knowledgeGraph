@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Motion Capture Rig
 ```json-ld

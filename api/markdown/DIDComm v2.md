@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # DIDComm v2
 ```json-ld

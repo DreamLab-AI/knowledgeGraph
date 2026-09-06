@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Automatic Differentiation
 ```json-ld

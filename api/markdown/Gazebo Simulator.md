@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Gazebo Simulator
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # EU Green Deal
 ```json-ld

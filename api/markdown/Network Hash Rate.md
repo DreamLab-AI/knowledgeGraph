@@ -1,5 +1,8 @@
-public:: true
-alias:: NetworkHashRate
+---
+public: true
+aliases:
+  - NetworkHashRate
+---
 
 # Network Hash Rate
 ```json-ld

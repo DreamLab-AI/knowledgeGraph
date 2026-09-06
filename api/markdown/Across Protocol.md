@@ -1,5 +1,8 @@
-public:: true
-alias:: Across-Protocol
+---
+public: true
+aliases:
+  - Across-Protocol
+---
 
 # Across Protocol
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Perpetual Futures
 ```json-ld

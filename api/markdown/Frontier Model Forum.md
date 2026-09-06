@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # frontier model forum
 ```json-ld

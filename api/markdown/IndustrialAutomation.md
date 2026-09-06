@@ -1,5 +1,8 @@
-public:: true
-alias:: Industrial Automation
+---
+public: true
+aliases:
+  - Industrial Automation
+---
 
 # industrialautomation
 ```json-ld

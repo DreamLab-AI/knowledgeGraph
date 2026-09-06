@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ML Experiment Tracking
 ```json-ld

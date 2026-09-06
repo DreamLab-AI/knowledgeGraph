@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Agentic Metaverse for Global Creatives]]
 # Decentralised Creative Metaverse Framework

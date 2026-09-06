@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Blender]]
 # Blender 3D Creation Suite

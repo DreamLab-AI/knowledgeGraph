@@ -1,5 +1,8 @@
-public:: true
-alias:: Real-Time Character Animation
+---
+public: true
+aliases:
+  - Real-Time Character Animation
+---
 
 # Real Time Character Animation
 ```json-ld

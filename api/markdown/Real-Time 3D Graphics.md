@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Real-Time 3D Graphics
 

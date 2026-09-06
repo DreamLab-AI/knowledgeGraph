@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Privacy-Enhancing Computation (PEC)
 ```json-ld

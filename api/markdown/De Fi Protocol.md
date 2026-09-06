@@ -1,5 +1,9 @@
-public:: true
-alias:: DeFi Protocol, DeFiProtocol
+---
+public: true
+aliases:
+  - DeFi Protocol
+  - DeFiProtocol
+---
 
 # De Fi Protocol
 ```json-ld

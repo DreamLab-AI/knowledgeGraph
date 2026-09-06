@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mass Customisation
 ```json-ld

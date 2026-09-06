@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Journal of Machine Learning Research
 ```json-ld

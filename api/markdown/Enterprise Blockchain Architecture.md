@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0428-enterprise-blockchain-architecture
+---
+public: true
+aliases:
+  - BC-0428-enterprise-blockchain-architecture
+---
 
 # Enterprise Blockchain Architecture
 ```json-ld

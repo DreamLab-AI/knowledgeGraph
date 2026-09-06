@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Specification Gaming
 ```json-ld

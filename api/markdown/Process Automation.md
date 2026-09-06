@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Process Automation
 ```json-ld

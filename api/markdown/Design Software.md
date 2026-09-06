@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Design Software
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # cross-chain governance
 ```json-ld

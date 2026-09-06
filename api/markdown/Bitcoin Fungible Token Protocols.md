@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Runes and Glyphs]]
 # Bitcoin Fungible Token Protocols
@@ -141,14 +143,14 @@ elevatedFrom:: [[Runes and Glyphs]]
   - **relatedTo**: Decentralised Autonomous Organisation
 
 - ### Content
-  - ![the-future-of-bitcoin-2-tokens.pdf](../assets/the-future-of-bitcoin-2-tokens_1723564035683_0.pdf)
+  - ![the-future-of-bitcoin-2-tokens.pdf](assets/the-future-of-bitcoin-2-tokens_1723564035683_0.pdf)
   - [Note by Melvin Carvalho (primal.net)](https://primal.net/e/note1rneeteg526e9e9zqrst35c93y46xlayzn77augvfhcsutq0d39qscga4xa) [[Bitcoin Fungible Token Protocols]]
-  - ![5882083039473943016.jpg](../assets/5882083039473943016_1723118472953_0.jpg)
+  - ![5882083039473943016.jpg](assets/5882083039473943016_1723118472953_0.jpg)
   - [Note by Melvin Carvalho (primal.net)](https://primal.net/e/note1we622z6jpdl8xpuw2vy966ud8fgf0t40n009qxw3de4edc7gs55qrqldzp) [[Digital Objects]] [[Bitcoin Fungible Token Protocols]] [[Testnet]]
   - [Testnet Glyph Explorer (testcoin.org)](https://testcoin.org/)
   - [Art (npub.info)](https://pages.npub.info/glyphs/TESTNETARTAAA/)
   - [flossverse/rustyGlyphs: based on Melvin Carvalho glyphs and Runes protocols (github.com)](https://github.com/flossverse/rustyGlyphs)
-  - ![photo_2024-08-14_00-40-13.jpg](../assets/photo_2024-08-14_00-40-13_1723627663591_0.jpg)
+  - ![photo_2024-08-14_00-40-13.jpg](assets/photo_2024-08-14_00-40-13_1723627663591_0.jpg)
   - [jeasonstudio/runestone: 👁‍🗨 Ordinals runestone javascript implementation (github.com)](https://github.com/jeasonstudio/runestone) [[Bitcoin Fungible Token Protocols]]
   - [jeasonstudio/runestone: 👁‍🗨 Ordinals runestone javascript implementation (github.com)](https://github.com/jeasonstudio/runestone) [[Bitcoin Fungible Token Protocols]]
   - [Testcoin Glyph Explorer](https://testcoin.org/glyphs.html#) [[Melvin Carvalho Decentralised Web Advocate]] [[Testnet]] [[Bitcoin Fungible Token Protocols]]

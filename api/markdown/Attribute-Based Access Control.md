@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Attribute-Based Access Control
 

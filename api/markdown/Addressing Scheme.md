@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Addressing Scheme
 ```json-ld

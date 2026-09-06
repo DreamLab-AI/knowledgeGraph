@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Software Licence
 ```json-ld

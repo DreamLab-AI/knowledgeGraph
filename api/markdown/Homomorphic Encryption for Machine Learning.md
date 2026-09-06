@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Homomorphic Encryption for Machine Learning
 ```json-ld

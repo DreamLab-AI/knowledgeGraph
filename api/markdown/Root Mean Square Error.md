@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Root Mean Square Error
 ```json-ld

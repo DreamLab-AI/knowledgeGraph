@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Appearance Translation
 ```json-ld

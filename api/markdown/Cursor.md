@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cursor
 ```json-ld

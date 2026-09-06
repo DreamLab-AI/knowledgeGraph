@@ -1,0 +1,45 @@
+{
+  "id": "urn:visionflow:page:cerebras-wafer-scale-chips",
+  "title": "Cerebras Wafer Scale Chips",
+  "slug": "cerebras-wafer-scale-chips",
+  "public": true,
+  "classIri": "urn:ngm:class:cerebras-wafer-scale-chips",
+  "domain": "infrastructure",
+  "definition": "A specialized AI hardware architecture developed by Cerebras that integrates a massive number of transistors onto a single wafer-scale integrated circuit to enable high-speed AI inference and training.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-hardware-infrastructure",
+      "label": "AI Hardware Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gpt-53-codex-spark",
+        "label": "GPT-5.3 Codex Spark"
+      },
+      {
+        "id": "urn:ngm:class:ai-hardware-infrastructure",
+        "label": "AI Hardware Infrastructure"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

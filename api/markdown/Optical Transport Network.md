@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Optical Transport Network
 ```json-ld

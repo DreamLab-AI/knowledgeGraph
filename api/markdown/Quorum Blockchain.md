@@ -1,5 +1,8 @@
-public:: true
-alias:: QuorumBlockchain
+---
+public: true
+aliases:
+  - QuorumBlockchain
+---
 
 # Quorum Blockchain
 ```json-ld

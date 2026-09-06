@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # End-to-End Encrypted Collaboration
 ```json-ld

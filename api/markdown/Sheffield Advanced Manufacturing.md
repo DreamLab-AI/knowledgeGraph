@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sheffield Advanced Manufacturing
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # tool use
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Khronos OpenXR 1.1 Specification
 ```json-ld

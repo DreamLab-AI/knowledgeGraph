@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Jupyter like behaviour within a page]]
 # In-Page Executable Notebook Pattern

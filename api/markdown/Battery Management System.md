@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Battery Management System
 ```json-ld

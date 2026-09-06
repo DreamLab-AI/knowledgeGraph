@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Phoenix Wallet
 ```json-ld

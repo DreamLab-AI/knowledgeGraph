@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # UN Global Compact
 ```json-ld

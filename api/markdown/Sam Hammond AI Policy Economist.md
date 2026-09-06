@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Sam Hammond]]
 # Sam Hammond AI Policy Economist

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # FASB ASU 2023-08
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Text Generation
 ```json-ld

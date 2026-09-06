@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Data Anonymization Pipeline
 ```json-ld

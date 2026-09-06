@@ -1,5 +1,9 @@
-public:: true
-alias:: LLM, Large Language Model
+---
+public: true
+aliases:
+  - LLM
+  - Large Language Model
+---
 
 # Large Language Models
 ```json-ld

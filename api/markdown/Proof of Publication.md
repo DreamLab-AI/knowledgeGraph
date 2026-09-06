@@ -1,5 +1,9 @@
-public:: true
-alias:: Proof-of-Publication, Proof Of Publication
+---
+public: true
+aliases:
+  - Proof-of-Publication
+  - Proof Of Publication
+---
 
 # Proof of Publication
 ```json-ld

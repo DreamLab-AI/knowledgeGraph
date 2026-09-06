@@ -1,5 +1,8 @@
-public:: true
-alias:: SurgicalRobotics
+---
+public: true
+aliases:
+  - SurgicalRobotics
+---
 
 # surgical robotics
 ```json-ld

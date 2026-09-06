@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AI Trust Risk and Security Management
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Link Preview]]
 # Open Graph Link Preview Protocol

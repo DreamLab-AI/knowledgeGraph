@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[webid]]
 # WebID Decentralised Identity URI

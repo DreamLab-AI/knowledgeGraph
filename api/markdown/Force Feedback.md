@@ -1,5 +1,8 @@
-public:: true
-alias:: ForceFeedback
+---
+public: true
+aliases:
+  - ForceFeedback
+---
 
 # Force Feedback
 ```json-ld

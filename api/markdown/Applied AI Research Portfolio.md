@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Recent Projects]]
 # Applied AI Research Portfolio
@@ -130,9 +132,9 @@ elevatedFrom:: [[Recent Projects]]
   - Educational products with a couple of top flight product managers such as [Parent's guide to Artificial Intelligence)](https://parentsguidetoai.com/)
   - LogSeq based training and [[presentation]] material**
   - .#.v-gallery-col3
-		- ![image.png](../assets/image_1704299260090_0.png){:width 600}
-		- ![image.png](../assets/image_1705148081233_0.png)
-		- ![image.png](../assets/image_1705148236040_0.png) -
+		- ![image.png](assets/image_1704299260090_0.png){:width 600}
+		- ![image.png](assets/image_1705148081233_0.png)
+		- ![image.png](assets/image_1705148236040_0.png) -
 
 - ### Provenance
   - sources::

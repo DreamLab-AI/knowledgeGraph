@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Derivative Control
 ```json-ld

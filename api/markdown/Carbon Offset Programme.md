@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Carbon Offset Programme
 ```json-ld

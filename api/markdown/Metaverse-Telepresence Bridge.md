@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Metaverse-Telepresence Bridge
 ```json-ld

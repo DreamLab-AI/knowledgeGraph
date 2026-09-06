@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hugging Face Accelerate
 ```json-ld

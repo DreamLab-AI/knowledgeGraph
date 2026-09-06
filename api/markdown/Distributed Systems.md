@@ -1,5 +1,8 @@
-public:: true
-alias:: DistributedSystems
+---
+public: true
+aliases:
+  - DistributedSystems
+---
 
 # Distributed Systems
 ```json-ld

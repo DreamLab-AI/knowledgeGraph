@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0048 pid controller
 ```json-ld

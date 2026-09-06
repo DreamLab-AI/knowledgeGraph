@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Maple Finance
 ```json-ld

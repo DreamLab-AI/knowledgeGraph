@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Standards Conformance Testing
 ```json-ld

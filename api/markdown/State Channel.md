@@ -1,5 +1,8 @@
-public:: true
-alias:: StateChannel
+---
+public: true
+aliases:
+  - StateChannel
+---
 
 # State Channel
 ```json-ld

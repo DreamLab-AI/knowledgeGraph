@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Definitions and frameworks for Metaverse
 ```json-ld

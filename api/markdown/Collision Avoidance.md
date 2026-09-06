@@ -1,5 +1,8 @@
-public:: true
-alias:: CollisionAvoidance
+---
+public: true
+aliases:
+  - CollisionAvoidance
+---
 
 # Collision Avoidance
 ```json-ld

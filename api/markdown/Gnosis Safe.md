@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Gnosis Safe
 ```json-ld

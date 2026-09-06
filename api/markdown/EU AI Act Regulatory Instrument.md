@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[EU AI Act]]
 # EU AI Act Regulatory Instrument

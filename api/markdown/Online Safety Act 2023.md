@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Online Safety Act 2023
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Privileged Access Management
 ```json-ld

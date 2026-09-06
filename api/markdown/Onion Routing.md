@@ -1,5 +1,9 @@
-public:: true
-alias:: OnionRouting, onion-routing
+---
+public: true
+aliases:
+  - OnionRouting
+  - onion-routing
+---
 
 # Onion Routing
 ```json-ld

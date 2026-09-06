@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Construction Digital Twin
 ```json-ld

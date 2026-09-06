@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Consensus Process
 ```json-ld

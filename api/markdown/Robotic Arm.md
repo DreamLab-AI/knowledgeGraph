@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Robotic Arm
 ```json-ld

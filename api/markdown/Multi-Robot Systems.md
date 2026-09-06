@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Multi-Robot Systems
 ```json-ld

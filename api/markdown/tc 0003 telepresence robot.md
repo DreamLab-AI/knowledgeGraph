@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # tc 0003 telepresence robot
 ```json-ld

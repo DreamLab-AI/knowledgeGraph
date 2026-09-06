@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # secure enclave
 ```json-ld

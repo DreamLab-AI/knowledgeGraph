@@ -1,5 +1,9 @@
-public:: true
-alias:: LoRA, LoRa
+---
+public: true
+aliases:
+  - LoRA
+  - LoRa
+---
 
 # Lo RA
 ```json-ld

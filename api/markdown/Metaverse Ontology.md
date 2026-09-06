@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Metaverse Ontology
 ```json-ld
@@ -378,9 +380,9 @@ public:: true
 		- Although the established OWL can richly describe our ontology, it's a little too arcane. Nonetheless the full text can be seen where with the diagram.
 			- OWL based Ontology
 				- https://github.com/VisualDataWeb/WebVOWL
-				- [FormalMetaverseOWL.txt](../assets/FormalMetaverseOWL_1712495895941_0.txt)
-				- [FormalMetaverseBTC.owl](../assets/FormalMetaverseBTC_1712344339842_0.owl)
-			- ![metaverse.png](../assets/metaverse_1712344788144_0.png){:height 439, :width 818}
+				- [FormalMetaverseOWL.txt](assets/FormalMetaverseOWL_1712495895941_0.txt)
+				- [FormalMetaverseBTC.owl](assets/FormalMetaverseBTC_1712344339842_0.owl)
+			- ![metaverse.png](assets/metaverse_1712344788144_0.png){:height 439, :width 818}
 		- For ease of comprehension I attempted to convert the OWL schema to JSON-LD. This attempt did achieve a result, but it proved difficult to visualise.
 		- Many of the JSON-LD tools online are now unmaintained, making it hard to visually check the output of the [[Large Language Models]].
 		- Because of this the decision was made to switch to [Linked-JSON](https://linkedobjects.org/Linked-JSON), which is a simpler and less expressive subset of JSON-LD. Linked-JSON focusses on `@id` linking. It sacrifices some features provided by JSON-LD 1.1's context definitions, typing, and alignment with RDF concepts.
@@ -395,7 +397,7 @@ public:: true
 				- Reduced interoperability with RDF and Linked Data ecosystem
 		- # LINKED JSON
 			- Finally the, to improve on the OWL by simplifying it, this is a version using [Linked-JSON](https://linkedobjects.org/Linked-JSON) (by [Melvin Carvalho](https://github.com/melvincarvalho)). Some details are lost.
-				- [Linked-JSON](../assets/output_linked_json_1713698682322_0.json) version of the OWL ontology
+				- [Linked-JSON](assets/output_linked_json_1713698682322_0.json) version of the OWL ontology
 					- Mermaid version stripped back to Linked-JSON expressiveness
 						- ```mermaid
 						  classDiagram

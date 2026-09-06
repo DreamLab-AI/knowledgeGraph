@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Identity Management System
 ```json-ld

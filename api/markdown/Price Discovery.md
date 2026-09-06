@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Price Discovery
 ```json-ld

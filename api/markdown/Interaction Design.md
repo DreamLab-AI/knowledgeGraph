@@ -1,5 +1,8 @@
-public:: true
-alias:: InteractionDesign
+---
+public: true
+aliases:
+  - InteractionDesign
+---
 
 # Interaction Design
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Distributed AI Training
 ```json-ld

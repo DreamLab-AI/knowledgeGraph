@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Strict Encoding
 ```json-ld

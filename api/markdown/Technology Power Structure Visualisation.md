@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Calculating Empires]]
 # Technology Power Structure Visualisation

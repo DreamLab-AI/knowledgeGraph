@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BIP Process
 ```json-ld

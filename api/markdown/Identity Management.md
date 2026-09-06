@@ -1,5 +1,8 @@
-public:: true
-alias:: IdentityManagement
+---
+public: true
+aliases:
+  - IdentityManagement
+---
 
 # Identity Management
 ```json-ld

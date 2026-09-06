@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NIST Post-Quantum Cryptography
 ```json-ld

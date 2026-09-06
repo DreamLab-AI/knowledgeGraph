@@ -1,5 +1,8 @@
-public:: true
-alias:: InfrastructureArchitecture
+---
+public: true
+aliases:
+  - InfrastructureArchitecture
+---
 
 # Infrastructure Architecture
 ```json-ld

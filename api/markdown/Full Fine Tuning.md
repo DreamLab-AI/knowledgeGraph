@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Full Fine Tuning
 ```json-ld

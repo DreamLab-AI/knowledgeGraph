@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Emergent Gameplay
 ```json-ld

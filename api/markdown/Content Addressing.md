@@ -1,5 +1,8 @@
-public:: true
-alias:: ContentAddressing
+---
+public: true
+aliases:
+  - ContentAddressing
+---
 
 # Content Addressing
 ```json-ld

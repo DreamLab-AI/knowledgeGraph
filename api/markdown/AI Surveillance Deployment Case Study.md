@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[AI privacy at the 2024 Olympics]]
 # AI Surveillance Deployment Case Study

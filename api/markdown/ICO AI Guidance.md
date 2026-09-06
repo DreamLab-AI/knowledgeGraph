@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ICO AI Guidance
 ```json-ld

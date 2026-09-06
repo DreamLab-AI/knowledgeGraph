@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Identity Verification
 ```json-ld

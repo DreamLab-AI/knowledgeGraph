@@ -1,5 +1,8 @@
-public:: true
-alias:: CommunicationTheory
+---
+public: true
+aliases:
+  - CommunicationTheory
+---
 
 # Communication Theory
 ```json-ld

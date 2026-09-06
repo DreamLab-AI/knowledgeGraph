@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Disturbance Rejection
 ```json-ld

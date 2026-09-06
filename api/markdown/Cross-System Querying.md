@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cross-System Querying
 ```json-ld

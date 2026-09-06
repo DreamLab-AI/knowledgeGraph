@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mining Pool
 ```json-ld

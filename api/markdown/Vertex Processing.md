@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Vertex Processing
 ```json-ld

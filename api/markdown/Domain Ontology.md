@@ -1,5 +1,8 @@
-public:: true
-alias:: DomainOntology
+---
+public: true
+aliases:
+  - DomainOntology
+---
 
 # Domain Ontology
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # UK Data Protection Act 2018
 ```json-ld

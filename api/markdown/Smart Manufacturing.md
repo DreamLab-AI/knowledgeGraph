@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Smart Manufacturing
 ```json-ld

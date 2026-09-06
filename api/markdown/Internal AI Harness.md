@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Internal AI Harness
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Environmental Asset Market
 ```json-ld

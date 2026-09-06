@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Social Robotics
 ```json-ld

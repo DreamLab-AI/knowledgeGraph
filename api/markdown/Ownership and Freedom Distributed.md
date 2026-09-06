@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ownership and Freedom Distributed
 ```json-ld

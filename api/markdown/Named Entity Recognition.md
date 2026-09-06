@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Named Entity Recognition
 ```json-ld

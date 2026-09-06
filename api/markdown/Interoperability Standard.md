@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Interoperability Standard
 ```json-ld

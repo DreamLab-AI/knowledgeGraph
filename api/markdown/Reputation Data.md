@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reputation Data
 ```json-ld

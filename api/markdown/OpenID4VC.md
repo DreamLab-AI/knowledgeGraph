@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # OpenID4VC
 ```json-ld

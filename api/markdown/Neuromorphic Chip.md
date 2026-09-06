@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Neuromorphic Chip
 ```json-ld

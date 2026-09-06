@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Video Compression
 ```json-ld

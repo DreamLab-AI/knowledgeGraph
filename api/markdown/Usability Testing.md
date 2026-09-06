@@ -1,5 +1,8 @@
-public:: true
-alias:: UsabilityTesting
+---
+public: true
+aliases:
+  - UsabilityTesting
+---
 
 # Usability Testing
 ```json-ld

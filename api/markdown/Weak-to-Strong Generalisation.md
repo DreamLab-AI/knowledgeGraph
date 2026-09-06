@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Weak-to-Strong Generalisation
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-003-social-presence-theory
+---
+public: true
+aliases:
+  - TELE-003-social-presence-theory
+---
 
 # Social Presence Theory
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Open Bridge Standard
 ```json-ld

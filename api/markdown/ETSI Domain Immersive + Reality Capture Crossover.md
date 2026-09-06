@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ETSI Domain Immersive + Reality Capture Crossover
 ```json-ld

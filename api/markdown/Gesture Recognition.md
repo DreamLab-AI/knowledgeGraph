@@ -1,5 +1,8 @@
-public:: true
-alias:: GestureRecognition
+---
+public: true
+aliases:
+  - GestureRecognition
+---
 
 # Gesture Recognition
 ```json-ld

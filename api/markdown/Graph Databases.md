@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Graph Databases
 ```json-ld

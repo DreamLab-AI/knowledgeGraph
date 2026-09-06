@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Bitcoin Whitepaper
 ```json-ld

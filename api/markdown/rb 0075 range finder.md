@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0075 range finder
 ```json-ld

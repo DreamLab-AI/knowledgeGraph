@@ -1,5 +1,8 @@
-public:: true
-alias:: CrossChainBridge
+---
+public: true
+aliases:
+  - CrossChainBridge
+---
 
 # Cross-Chain Bridge
 ```json-ld

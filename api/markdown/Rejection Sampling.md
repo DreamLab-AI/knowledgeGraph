@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Rejection Sampling
 ```json-ld

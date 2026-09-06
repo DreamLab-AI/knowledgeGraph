@@ -1,5 +1,8 @@
-public:: true
-alias:: AutonomousRobot
+---
+public: true
+aliases:
+  - AutonomousRobot
+---
 
 # Autonomous Robot
 ```json-ld

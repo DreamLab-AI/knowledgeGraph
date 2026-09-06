@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Product and Risk Management]]
 # AI Product and Risk Framework
@@ -160,7 +162,7 @@ elevatedFrom:: [[Product and Risk Management]]
   - This won't be you and your company, but this is a great time to work out these checklists.
 		- **SWOT Analysis**: Evaluating strengths, weaknesses, opportunities, and threats.
 		- I am trying to build **this** bit of the business journey through these presentations
-		- ![GCh-erEbgAAZS3c](../assets/GCh-erEbgAAZS3c.jpeg){:height 700, :width 400}
+		- ![GCh-erEbgAAZS3c](assets/GCh-erEbgAAZS3c.jpeg){:height 700, :width 400}
   - # Everyone's pivoting to generative AI.
   - {{twitter https://twitter.com/petergyang/status/1667539634577092609}}
 		- [Link to Tweet](https://twitter.com/petergyang/status/1667539634577092609)

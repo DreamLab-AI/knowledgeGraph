@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ssl Termination
 ```json-ld

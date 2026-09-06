@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Quantum Network Node
 ```json-ld

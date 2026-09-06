@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Coding Theory
 ```json-ld

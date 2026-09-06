@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Privacy Framework
 ```json-ld

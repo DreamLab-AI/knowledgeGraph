@@ -1,5 +1,8 @@
-public:: true
-alias:: ConsentManagement
+---
+public: true
+aliases:
+  - ConsentManagement
+---
 
 # Consent Management
 ```json-ld

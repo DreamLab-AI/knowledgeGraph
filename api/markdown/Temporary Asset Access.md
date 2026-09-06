@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Temporary Asset Access
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Scalable Deployment
 ```json-ld

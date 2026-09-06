@@ -1,5 +1,8 @@
-public:: true
-alias:: ContentDeliveryNetwork
+---
+public: true
+aliases:
+  - ContentDeliveryNetwork
+---
 
 # content delivery network
 ```json-ld

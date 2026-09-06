@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[perplexity]]
 # Perplexity AI Search Platform

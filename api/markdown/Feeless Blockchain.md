@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Feeless Blockchain
 ```json-ld

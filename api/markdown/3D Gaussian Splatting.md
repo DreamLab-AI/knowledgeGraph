@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-051-3d-gaussian-splatting
+---
+public: true
+aliases:
+  - TELE-051-3d-gaussian-splatting
+---
 
 # 3D Gaussian Splatting
 ```json-ld

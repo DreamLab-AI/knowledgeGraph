@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Teacher Student Training
 ```json-ld

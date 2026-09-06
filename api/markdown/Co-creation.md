@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Co-creation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Toxicity Detection
 ```json-ld

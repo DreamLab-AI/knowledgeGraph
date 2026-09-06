@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Metaverse Application Platform
 ```json-ld

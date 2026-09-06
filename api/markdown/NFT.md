@@ -1,5 +1,8 @@
-public:: true
-alias:: NFTs
+---
+public: true
+aliases:
+  - NFTs
+---
 
 # nft
 ```json-ld

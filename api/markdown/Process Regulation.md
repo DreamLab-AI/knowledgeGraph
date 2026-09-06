@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Process Regulation
 ```json-ld

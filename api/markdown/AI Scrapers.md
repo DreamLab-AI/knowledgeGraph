@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AI Scrapers
 ```json-ld

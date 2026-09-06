@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Tendermint Consensus
 ```json-ld

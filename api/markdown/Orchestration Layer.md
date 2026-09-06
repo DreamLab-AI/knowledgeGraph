@@ -1,5 +1,8 @@
-public:: true
-alias:: OrchestrationLayer
+---
+public: true
+aliases:
+  - OrchestrationLayer
+---
 
 # Orchestration Layer
 ```json-ld

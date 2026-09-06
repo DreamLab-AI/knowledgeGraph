@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # w3c did core
 ```json-ld

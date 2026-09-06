@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stdio Transport
 ```json-ld

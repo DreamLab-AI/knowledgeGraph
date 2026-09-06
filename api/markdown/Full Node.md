@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Full Node
 ```json-ld

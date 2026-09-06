@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Offline Reinforcement Learning
 ```json-ld

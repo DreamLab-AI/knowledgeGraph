@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0053 force control
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rectified flow
 ```json-ld

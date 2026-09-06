@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Uniswap Governance
 ```json-ld

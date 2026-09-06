@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Wireless Connectivity
 ```json-ld

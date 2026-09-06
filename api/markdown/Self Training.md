@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Self Training
 ```json-ld
@@ -245,7 +247,7 @@ public:: true
 			- AI revolutionizing industries with specialized gadgets and applications.
 
 		- ### Cloud AI versus On-Premise Models
-			- DONE Cloud services offer simplicity and scale, whereas self-hosted models (e.g. running Stable Diffusion locally or deploying your own LLM) give you full control over data and costs.
+			- [x] Cloud services offer simplicity and scale, whereas self-hosted models (e.g. running Stable Diffusion locally or deploying your own LLM) give you full control over data and costs.
 
 		- ### Characteristics of Deep Agents
 			- Deep agents distinguish themselves through:
@@ -361,7 +363,7 @@ public:: true
 			- AI revolutionizing industries with specialized gadgets and applications.
 
 		- ### Cloud AI versus On-Premise Models
-			- DONE Cloud services offer simplicity and scale, whereas self-hosted models (e.g. running Stable Diffusion locally or deploying your own LLM) give you full control over data and costs.
+			- [x] Cloud services offer simplicity and scale, whereas self-hosted models (e.g. running Stable Diffusion locally or deploying your own LLM) give you full control over data and costs.
 
   - ### Self-Improvement of GPT Models
 		- **GPT-4 Can Improve Itself**: Featuring Reflexion, HuggingGPT, Bard Upgrade, and more ([YouTube Video](https://youtu.be/5SgJKZLBrmg)).
@@ -373,7 +375,7 @@ public:: true
 			- AI revolutionizing industries with specialized gadgets and applications.
 
 		- ### Cloud AI versus On-Premise Models
-			- DONE Cloud services offer simplicity and scale, whereas self-hosted models (e.g. running Stable Diffusion locally or deploying your own LLM) give you full control over data and costs.
+			- [x] Cloud services offer simplicity and scale, whereas self-hosted models (e.g. running Stable Diffusion locally or deploying your own LLM) give you full control over data and costs.
 
 		- ### Planning and Execution
 				- Extended runtime (minutes to hours or days)

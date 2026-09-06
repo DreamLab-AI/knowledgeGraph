@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # digital product passport
 ```json-ld

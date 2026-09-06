@@ -1,5 +1,9 @@
-public:: true
-alias:: AdaptiveControl, RB-1004-adaptive-control
+---
+public: true
+aliases:
+  - AdaptiveControl
+  - RB-1004-adaptive-control
+---
 
 # Adaptive Control
 ```json-ld

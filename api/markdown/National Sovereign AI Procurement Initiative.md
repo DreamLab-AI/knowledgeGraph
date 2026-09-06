@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Sovereign AI bid]]
 # National Sovereign AI Procurement Initiative
@@ -117,7 +119,7 @@ elevatedFrom:: [[Sovereign AI bid]]
 - ### Content
   - [Runpod GPU Cloud](https://console.runpod.io/deploy?gpu=H200+SXM&count=1&template=runpod-torch-v280) [[Visionflow]]
   - [modular/max/pipelines/architectures/qwen3 at main · modular/modular](https://github.com/modular/modular/tree/main/max/pipelines/architectures/qwen3)
-  - TODO [Untitled spreadsheet - Google Sheets](https://docs.google.com/spreadsheets/d/1B4HvsCu5lYE_7ohB8llLHw3IDQqI53BX9c3XhoGMHmU/edit?gid=1599771355#gid=1599771355) from jess for the demo ontology graph
+  - [ ] [Untitled spreadsheet - Google Sheets](https://docs.google.com/spreadsheets/d/1B4HvsCu5lYE_7ohB8llLHw3IDQqI53BX9c3XhoGMHmU/edit?gid=1599771355#gid=1599771355) from jess for the demo ontology graph
   - [Competition overview - Sovereign AI - Proof of concept - Innovation Funding Service](https://apply-for-innovation-funding.service.gov.uk/competition/2259/overview/9061ddb2-fa12-45c9-8691-d36649c96e9c#scope)
   - [Water Reg Agent - Proposal for Innovate UK call - Google Docs](https://docs.google.com/document/d/1X0KOjMwL4DkdZOcgkip5L44YuDF6seigci65oOouPx0/edit?pli=1&tab=t.0)
   - # Qwen3-Coder A35B on NVIDIA H200 SXM

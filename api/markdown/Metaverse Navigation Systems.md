@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Metaverse Navigation Systems
 ```json-ld

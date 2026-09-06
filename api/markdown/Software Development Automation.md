@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Software Development Automation
 ```json-ld

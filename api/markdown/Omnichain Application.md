@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Omnichain Application
 ```json-ld

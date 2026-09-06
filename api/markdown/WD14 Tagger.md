@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # WD14 Tagger
 ```json-ld

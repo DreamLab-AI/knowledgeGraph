@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Anthropic Claude]]
 # Constitutional AI Language Model Family

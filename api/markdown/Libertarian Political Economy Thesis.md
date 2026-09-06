@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Libertarian thesis]]
 # Libertarian Political Economy Thesis

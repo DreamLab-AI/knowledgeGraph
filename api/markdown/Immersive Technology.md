@@ -1,5 +1,8 @@
-public:: true
-alias:: ImmersiveTechnology
+---
+public: true
+aliases:
+  - ImmersiveTechnology
+---
 
 # Immersive Technology
 ```json-ld

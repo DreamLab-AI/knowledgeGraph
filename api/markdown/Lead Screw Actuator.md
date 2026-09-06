@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Lead Screw Actuator
 ```json-ld

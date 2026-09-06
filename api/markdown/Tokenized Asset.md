@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Tokenized Asset
 ```json-ld

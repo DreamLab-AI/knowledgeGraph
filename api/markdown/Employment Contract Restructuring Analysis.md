@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Role reorg]]
 # Employment Contract Restructuring Analysis

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # SIOPv2
 ```json-ld

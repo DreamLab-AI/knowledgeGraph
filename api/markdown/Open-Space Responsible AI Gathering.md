@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Responsible AI Unconference]]
 # Open-Space Responsible AI Gathering
@@ -107,7 +109,7 @@ elevatedFrom:: [[Responsible AI Unconference]]
   - Carebot 2020
   - Digital Toy for Inventions
   - 1956 dartmouth summer research project "artificial intelligence"
-  - Computational creativity the final frontier ![FAIA242-0021.pdf](../assets/FAIA242-0021_1732021185404_0.pdf)
+  - Computational creativity the final frontier ![FAIA242-0021.pdf](assets/FAIA242-0021_1732021185404_0.pdf)
   - Dr Erinma Ochu
   - Acceptable and Unacceptable AI
   - Dartmouth summer school had zero diversity

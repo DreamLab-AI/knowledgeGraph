@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mentions and Notifications
 ```json-ld

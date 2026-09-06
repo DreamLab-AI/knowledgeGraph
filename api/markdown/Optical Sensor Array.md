@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Optical Sensor Array
 ```json-ld

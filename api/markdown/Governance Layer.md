@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Governance Layer
 ```json-ld

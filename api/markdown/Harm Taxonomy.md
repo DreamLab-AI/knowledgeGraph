@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Harm Taxonomy
 ```json-ld

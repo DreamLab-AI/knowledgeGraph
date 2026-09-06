@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reed Smith
 ```json-ld

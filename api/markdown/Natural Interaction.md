@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Natural Interaction
 ```json-ld

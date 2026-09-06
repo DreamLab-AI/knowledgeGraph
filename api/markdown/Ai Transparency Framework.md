@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ai Transparency Framework
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: TrainingData
+---
+public: true
+aliases:
+  - TrainingData
+---
 
 # Training Data
 ```json-ld

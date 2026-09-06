@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Nuclear Energy
 ```json-ld

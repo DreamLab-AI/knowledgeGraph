@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Last-Mile Delivery
 ```json-ld

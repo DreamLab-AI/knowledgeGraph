@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # FATF 40 Recommendations
 ```json-ld

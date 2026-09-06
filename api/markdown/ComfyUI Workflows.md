@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ComfyUI Workflows
 ```json-ld

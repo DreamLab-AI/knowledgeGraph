@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0427-hyperledger-besu
+---
+public: true
+aliases:
+  - BC-0427-hyperledger-besu
+---
 
 # Hyperledger Besu
 ```json-ld

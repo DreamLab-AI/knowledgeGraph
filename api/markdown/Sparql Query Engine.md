@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sparql Query Engine
 ```json-ld

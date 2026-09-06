@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ETSI Domain AI
 ```json-ld

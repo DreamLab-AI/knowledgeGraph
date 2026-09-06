@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Generative Models
 ```json-ld

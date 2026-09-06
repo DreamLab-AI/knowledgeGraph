@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # glTF (3D File Format)
 ```json-ld

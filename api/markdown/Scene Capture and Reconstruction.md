@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Scene Capture and Reconstruction
 ```json-ld

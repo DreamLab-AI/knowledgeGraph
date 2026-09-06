@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0038 compliance
 ```json-ld

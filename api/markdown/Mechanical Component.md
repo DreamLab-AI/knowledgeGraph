@@ -1,5 +1,8 @@
-public:: true
-alias:: MechanicalComponent
+---
+public: true
+aliases:
+  - MechanicalComponent
+---
 
 # Mechanical Component
 ```json-ld

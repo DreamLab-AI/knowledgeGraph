@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[List Of Agent Projects]]
 # Autonomous Agent Framework Catalogue

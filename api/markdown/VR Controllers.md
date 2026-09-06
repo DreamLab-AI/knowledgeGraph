@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # VR Controllers
 ```json-ld

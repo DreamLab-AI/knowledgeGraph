@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Immersive Collaboration
 ```json-ld

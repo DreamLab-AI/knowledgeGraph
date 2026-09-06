@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Six Degrees Of Freedom
 ```json-ld

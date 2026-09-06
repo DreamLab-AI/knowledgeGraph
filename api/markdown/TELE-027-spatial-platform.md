@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-027-spatial-platform
 ```json-ld

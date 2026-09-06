@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Emotional Immersion
 ```json-ld

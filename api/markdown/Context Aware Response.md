@@ -1,5 +1,8 @@
-public:: true
-alias:: Context-Aware Response
+---
+public: true
+aliases:
+  - Context-Aware Response
+---
 
 # Context Aware Response
 ```json-ld

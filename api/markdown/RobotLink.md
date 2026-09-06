@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # RobotLink
 ```json-ld

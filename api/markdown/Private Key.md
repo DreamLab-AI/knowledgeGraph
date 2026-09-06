@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Private Key
 ```json-ld

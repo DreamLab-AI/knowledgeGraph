@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Player Two code]]
 # Player Two Platform Implementation

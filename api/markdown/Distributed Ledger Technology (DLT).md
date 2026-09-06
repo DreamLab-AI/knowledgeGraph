@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Distributed Ledger Technology (DLT)
 ```json-ld

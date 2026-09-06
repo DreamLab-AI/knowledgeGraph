@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Feedforward Control
 ```json-ld

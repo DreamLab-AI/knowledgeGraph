@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # MAS
 ```json-ld

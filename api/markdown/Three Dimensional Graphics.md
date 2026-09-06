@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Three Dimensional Graphics
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Nakamoto 2008 Bitcoin Whitepaper
 ```json-ld

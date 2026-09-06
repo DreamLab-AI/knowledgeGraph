@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Bank for International Settlements
 ```json-ld

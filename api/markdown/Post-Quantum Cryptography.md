@@ -1,5 +1,8 @@
-public:: true
-alias:: Post-Quantum-Cryptography
+---
+public: true
+aliases:
+  - Post-Quantum-Cryptography
+---
 
 # Post-Quantum Cryptography
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: PresenceDetection
+---
+public: true
+aliases:
+  - PresenceDetection
+---
 
 # Presence Detection
 ```json-ld

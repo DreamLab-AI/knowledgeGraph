@@ -1,5 +1,8 @@
-public:: true
-alias:: QualityOfService
+---
+public: true
+aliases:
+  - QualityOfService
+---
 
 # Quality Of Service
 ```json-ld

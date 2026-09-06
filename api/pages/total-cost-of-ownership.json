@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:total-cost-of-ownership",
+  "title": "Total Cost of Ownership",
+  "slug": "total-cost-of-ownership",
+  "public": true,
+  "classIri": "urn:ngm:class:total-cost-of-ownership",
+  "domain": "economics",
+  "definition": "The comprehensive financial assessment of an AI system's lifecycle costs, including inference, maintenance, integration, and opportunity costs, rather than just per-unit pricing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-economics",
+      "label": "AI Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cost-effectiveness",
+        "label": "Cost-Effectiveness"
+      },
+      {
+        "id": "urn:ngm:class:token-efficiency",
+        "label": "Token Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

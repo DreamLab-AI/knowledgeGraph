@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Safe Immersive Experience
 ```json-ld

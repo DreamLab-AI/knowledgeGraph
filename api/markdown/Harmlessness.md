@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Harmlessness
 ```json-ld
@@ -166,7 +168,7 @@ public:: true
   - ## Less Optimistic
   - This is taken from [[Sam Hammond AI Policy Economist]] who I have discovered recently. All his stuff is summarised and linked here.
   - ### Summarizing Web Pages with Google Assistant
-   Google Assistant can summarize web pages using Generative AI. However, this service is currently only available on Pixel 8 and Pixel 8 Pro devices in English, and it cannot summarize paywalled articles or content less than 200 words. Users can provide feedback on summaries, which helps improve the service. The Assistant Summarize feature filters out sensitive information like pornography, violence, and hate speech. #[[🤖]]
+   Google Assistant can summarize web pages using Generative AI. However, this service is currently only available on Pixel 8 and Pixel 8 Pro devices in English, and it cannot summarize paywalled articles or content less than 200 words. Users can provide feedback on summaries, which helps improve the service. The Assistant Summarize feature filters out sensitive information like pornography, violence, and hate speech. #🤖
   - [[AI-Augmented Research Tooling Suite]] [Undermind](https://www.undermind.ai/home/)
   - [Perplexity](https://www.perplexity.ai/) for [[AI-Augmented Research Tooling Suite]].
   - [Tutorial: Perplexity Basics (youtube.com)](https://www.youtube.com/watch?v=ue4NU-U-hAE)

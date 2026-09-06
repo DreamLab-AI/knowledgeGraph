@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stable Swap Invariant
 ```json-ld

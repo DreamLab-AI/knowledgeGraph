@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Methane Abatement
 ```json-ld

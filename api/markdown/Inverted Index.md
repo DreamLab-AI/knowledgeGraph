@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Inverted Index
 ```json-ld

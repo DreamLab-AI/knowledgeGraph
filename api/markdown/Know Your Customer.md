@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Know Your Customer
 ```json-ld

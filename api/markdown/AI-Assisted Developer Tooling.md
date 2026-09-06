@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Coding support]]
 # AI-Assisted Developer Tooling
@@ -195,7 +197,7 @@ elevatedFrom:: [[Coding support]]
 		- ChatGPT's answers were more formal, analytical, and positive in tone.
 		- Politeness and comprehensiveness made ChatGPT answers appear more convincing.
   - # Specialised Models
-  - ![image.png](../assets/image_1717159684964_0.png)
+  - ![image.png](assets/image_1717159684964_0.png)
   - # Products
 		- {{video https://www.youtube.com/watch?v=fjHtjT7GO1c&}}
 		- [Blog (cognition-labs.com)](https://www.cognition-labs.com/blog)

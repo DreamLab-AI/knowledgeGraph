@@ -1,5 +1,9 @@
-public:: true
-alias:: Post-Processing, Post-processing
+---
+public: true
+aliases:
+  - Post-Processing
+  - Post-processing
+---
 
 # Post Processing
 ```json-ld

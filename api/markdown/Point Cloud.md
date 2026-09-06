@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Point Cloud
 ```json-ld

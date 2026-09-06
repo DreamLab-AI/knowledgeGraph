@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stablecoin Regulation
 ```json-ld

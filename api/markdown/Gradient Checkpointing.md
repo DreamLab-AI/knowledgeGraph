@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Gradient Checkpointing
 ```json-ld

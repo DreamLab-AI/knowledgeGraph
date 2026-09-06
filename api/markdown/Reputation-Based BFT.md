@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reputation-Based BFT
 ```json-ld

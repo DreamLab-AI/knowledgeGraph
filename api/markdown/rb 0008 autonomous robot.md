@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0008 autonomous robot
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: Multi Agent Systems
+---
+public: true
+aliases:
+  - Multi Agent Systems
+---
 
 # multi-agent systems
 ```json-ld

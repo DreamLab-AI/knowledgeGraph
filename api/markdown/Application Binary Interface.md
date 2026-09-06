@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Application Binary Interface
 ```json-ld

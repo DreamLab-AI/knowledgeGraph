@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-025-microsoft-hololens
 ```json-ld

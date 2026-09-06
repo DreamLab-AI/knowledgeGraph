@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Corporate Governance
 ```json-ld

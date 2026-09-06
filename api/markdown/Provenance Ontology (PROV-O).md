@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Provenance Ontology (PROV-O)
 ```json-ld

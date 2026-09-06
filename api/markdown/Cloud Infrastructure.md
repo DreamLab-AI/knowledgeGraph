@@ -1,5 +1,8 @@
-public:: true
-alias:: CloudInfrastructure
+---
+public: true
+aliases:
+  - CloudInfrastructure
+---
 
 # Cloud Infrastructure
 ```json-ld

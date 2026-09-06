@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stranded Energy Monetisation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Distributed System Protocol
 ```json-ld

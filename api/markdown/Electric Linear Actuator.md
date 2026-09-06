@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Electric Linear Actuator
 ```json-ld

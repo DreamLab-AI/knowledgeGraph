@@ -1,5 +1,8 @@
-public:: true
-alias:: GameAI
+---
+public: true
+aliases:
+  - GameAI
+---
 
 # Game AI
 ```json-ld

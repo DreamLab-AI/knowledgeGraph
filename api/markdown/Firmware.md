@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Firmware
 ```json-ld

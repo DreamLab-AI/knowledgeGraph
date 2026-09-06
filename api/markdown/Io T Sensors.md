@@ -1,5 +1,8 @@
-public:: true
-alias:: IoT Sensors
+---
+public: true
+aliases:
+  - IoT Sensors
+---
 
 # Io T Sensors
 ```json-ld

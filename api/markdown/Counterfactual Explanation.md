@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Counterfactual Explanation
 ```json-ld

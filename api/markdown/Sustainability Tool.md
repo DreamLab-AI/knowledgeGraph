@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sustainability Tool
 ```json-ld

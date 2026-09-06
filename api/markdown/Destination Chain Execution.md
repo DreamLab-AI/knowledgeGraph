@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Destination Chain Execution
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Advice for developing GenAI]]
 # Generative AI Development Methodology

@@ -1,5 +1,8 @@
-public:: true
-alias:: OrganisationalTheory
+---
+public: true
+aliases:
+  - OrganisationalTheory
+---
 
 # Organisational Theory
 ```json-ld

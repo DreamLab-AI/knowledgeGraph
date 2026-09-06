@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sandboxed Execution
 ```json-ld

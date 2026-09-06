@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Universal Access
 ```json-ld

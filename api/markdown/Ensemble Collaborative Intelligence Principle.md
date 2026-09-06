@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Two Heads Are Better Than One]]
 # Ensemble Collaborative Intelligence Principle

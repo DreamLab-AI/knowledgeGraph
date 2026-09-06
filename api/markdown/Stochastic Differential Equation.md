@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stochastic Differential Equation
 ```json-ld

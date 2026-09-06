@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Non Player Character
 ```json-ld

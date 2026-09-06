@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Genetic Algorithm
 ```json-ld

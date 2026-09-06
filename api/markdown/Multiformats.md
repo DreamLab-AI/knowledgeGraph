@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Multiformats
 ```json-ld

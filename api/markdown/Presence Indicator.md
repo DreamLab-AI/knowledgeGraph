@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Presence Indicator
 ```json-ld

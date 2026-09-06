@@ -1,5 +1,8 @@
-public:: true
-alias:: ConsensusMechanism
+---
+public: true
+aliases:
+  - ConsensusMechanism
+---
 
 # Consensus Mechanism
 ```json-ld

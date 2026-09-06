@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # MS Phi models
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Human-Robot Collaboration
 ```json-ld

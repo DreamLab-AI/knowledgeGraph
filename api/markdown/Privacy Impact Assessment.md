@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Privacy Impact Assessment
 ```json-ld

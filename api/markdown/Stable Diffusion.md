@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stable Diffusion
 ```json-ld

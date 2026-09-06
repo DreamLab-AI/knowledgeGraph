@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Continued Pre Training
 ```json-ld

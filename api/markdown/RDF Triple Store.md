@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # RDF Triple Store
 ```json-ld

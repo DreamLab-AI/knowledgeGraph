@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Business Logic Layer
 ```json-ld

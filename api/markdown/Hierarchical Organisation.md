@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hierarchical Organisation
 ```json-ld

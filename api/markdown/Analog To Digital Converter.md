@@ -1,5 +1,8 @@
-public:: true
-alias:: Analog-to-Digital Converter
+---
+public: true
+aliases:
+  - Analog-to-Digital Converter
+---
 
 # Analog To Digital Converter
 ```json-ld

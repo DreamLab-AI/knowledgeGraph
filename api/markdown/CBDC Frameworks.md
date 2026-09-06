@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # CBDC Frameworks
 ```json-ld

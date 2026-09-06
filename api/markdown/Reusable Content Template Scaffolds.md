@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Templates]]
 # Reusable Content Template Scaffolds

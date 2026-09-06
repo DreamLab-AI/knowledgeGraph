@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Certificate Transparency
 ```json-ld

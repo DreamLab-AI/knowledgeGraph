@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mixture of Experts
 ```json-ld

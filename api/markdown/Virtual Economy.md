@@ -1,5 +1,8 @@
-public:: true
-alias:: VirtualEconomy
+---
+public: true
+aliases:
+  - VirtualEconomy
+---
 
 # Virtual Economy
 ```json-ld

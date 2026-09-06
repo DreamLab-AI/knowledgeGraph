@@ -1,5 +1,8 @@
-public:: true
-alias:: ETSI_Domain_Governance___Ethics
+---
+public: true
+aliases:
+  - ETSI_Domain_Governance___Ethics
+---
 
 # ETSI Domain: Governance & Ethics
 ```json-ld

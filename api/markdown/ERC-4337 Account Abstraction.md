@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ERC-4337 Account Abstraction
 ```json-ld

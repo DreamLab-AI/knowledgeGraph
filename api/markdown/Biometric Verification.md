@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Biometric Verification
 ```json-ld

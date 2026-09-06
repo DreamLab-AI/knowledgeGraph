@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # WebRTC W3C Specification
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Simulation Software
 ```json-ld

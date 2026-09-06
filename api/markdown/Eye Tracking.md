@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Eye Tracking
 ```json-ld

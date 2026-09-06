@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Peer-to-Peer Trading
 ```json-ld

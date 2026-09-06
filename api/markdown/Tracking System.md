@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Tracking System
 ```json-ld

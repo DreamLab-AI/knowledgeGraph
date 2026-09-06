@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Token Issuance
 ```json-ld

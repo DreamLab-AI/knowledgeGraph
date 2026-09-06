@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # COMPLETION_REPORT
 ```json-ld

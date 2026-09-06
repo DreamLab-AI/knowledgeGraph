@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Residual Network
 ```json-ld

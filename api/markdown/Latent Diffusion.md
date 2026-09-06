@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # latent diffusion
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mining Reward
 ```json-ld

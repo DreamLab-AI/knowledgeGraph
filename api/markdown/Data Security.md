@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Data Security
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: DigitalTransformation
+---
+public: true
+aliases:
+  - DigitalTransformation
+---
 
 # Digital Transformation
 ```json-ld

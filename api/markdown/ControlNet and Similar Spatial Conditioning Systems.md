@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ControlNet and Similar Spatial Conditioning Systems
 ```json-ld

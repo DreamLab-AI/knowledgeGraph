@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Vanishing Gradient Problem
 ```json-ld

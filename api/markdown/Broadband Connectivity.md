@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Broadband Connectivity
 ```json-ld

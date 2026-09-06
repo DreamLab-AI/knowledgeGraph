@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Informed Consent
 ```json-ld

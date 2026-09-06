@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Building Information Modelling
 ```json-ld

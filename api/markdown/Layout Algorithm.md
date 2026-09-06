@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Layout Algorithm
 ```json-ld

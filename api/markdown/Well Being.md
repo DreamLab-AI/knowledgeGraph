@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Well Being
 ```json-ld
@@ -192,7 +194,7 @@ public:: true
 		- Highlighted the immediate environmental benefits and the role of the project as a bridge while the RNG facility is being built.
   - ## Spatial web
 		- "The Spatial Web", a blurring of the boundaries between digital and geospatial physical objects, seems to have developed from the strands in the original W3C scope around devices in the real world. It has been concentrating around AR and VR but is being marketed and amplified with the same references to availability of data (See Figure [2.1](https://arxiv.org/html/2207.09460v11/#Ch2.F1 "Figure 2.1 ‣ 2.2 Spatial web ‣ Chapter 2 Decentralisation & The Web ‣ Part I State of the art") from a Deloitte accounting report). This too is finding little traction in practice, though obviously the component technologies continue to enjoy rapid development. Nonetheless, this interpretation of Web3 becomes valuable when examining [[Metaverse and Telecollaboration]].
-		- ![Figure 2.1: [Deloitte Spatial Web Overview](https://www2.deloitte.com/us/en/insights/topics/digital-transformation/web-3-0-technologies-in-business.html) Reused with permission.](../assets/deloitteWeb3.jpg){:height 1075, :width 1172}
+		- ![Figure 2.1: [Deloitte Spatial Web Overview](https://www2.deloitte.com/us/en/insights/topics/digital-transformation/web-3-0-technologies-in-business.html) Reused with permission.](assets/deloitteWeb3.jpg){:height 1075, :width 1172}
   - ### Spatial web
   - “The Spatial Web”, a blurring of the boundaries between digital andgeospatial physical objects, seems to have developed from the strands inthe original W3C scope around devices in the real world. It has beenconcentrating around AR and VR but is being marketed and amplified withthe same references to availability of data (See Figure<a href="#fig:deloitteSpatial" data-reference-type="ref" data-reference="fig:deloitteSpatial">2.1</a>from a Deloitte accounting report). This too is finding little tractionin practice, though obviously the component technologies continue toenjoy rapid development. Nonetheless, this interpretation of Web3becomes valuable when examining Metaverse later.
   - <span class="image">[Deloitte Spatial WebOverview](https://www2.deloitte.com/us/en/insights/topics/digital-transformation/web-3-0-technologies-in-business.html)Reused with permission.</span>
@@ -254,7 +256,7 @@ public:: true
 		- Highlighted the immediate environmental benefits and the role of the project as a bridge while the RNG facility is being built.
   - ## Spatial web
 		- "The Spatial Web", a blurring of the boundaries between digital and geospatial physical objects, seems to have developed from the strands in the original W3C scope around devices in the real world. It has been concentrating around AR and VR but is being marketed and amplified with the same references to availability of data (See Figure [2.1](https://arxiv.org/html/2207.09460v11/#Ch2.F1 "Figure 2.1 ‣ 2.2 Spatial web ‣ Chapter 2 Decentralisation & The Web ‣ Part I State of the art") from a Deloitte accounting report). This too is finding little traction in practice, though obviously the component technologies continue to enjoy rapid development. Nonetheless, this interpretation of Web3 becomes valuable when examining [[Metaverse and Telecollaboration]].
-		- ![Figure 2.1: [Deloitte Spatial Web Overview](https://www2.deloitte.com/us/en/insights/topics/digital-transformation/web-3-0-technologies-in-business.html) Reused with permission.](../assets/deloitteWeb3.jpg){:height 1075, :width 1172}
+		- ![Figure 2.1: [Deloitte Spatial Web Overview](https://www2.deloitte.com/us/en/insights/topics/digital-transformation/web-3-0-technologies-in-business.html) Reused with permission.](assets/deloitteWeb3.jpg){:height 1075, :width 1172}
   - ### Spatial web
   - “The Spatial Web”, a blurring of the boundaries between digital andgeospatial physical objects, seems to have developed from the strands inthe original W3C scope around devices in the real world. It has beenconcentrating around AR and VR but is being marketed and amplified withthe same references to availability of data (See Figure<a href="#fig:deloitteSpatial" data-reference-type="ref" data-reference="fig:deloitteSpatial">2.1</a>from a Deloitte accounting report). This too is finding little tractionin practice, though obviously the component technologies continue toenjoy rapid development. Nonetheless, this interpretation of Web3becomes valuable when examining Metaverse later.
   - <span class="image">[Deloitte Spatial WebOverview](https://www2.deloitte.com/us/en/insights/topics/digital-transformation/web-3-0-technologies-in-business.html)Reused with permission.</span>

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Multi-Head Attention
 ```json-ld

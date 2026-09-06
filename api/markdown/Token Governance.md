@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Token Governance
 ```json-ld

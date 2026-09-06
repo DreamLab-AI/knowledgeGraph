@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ethics and Law
 ```json-ld

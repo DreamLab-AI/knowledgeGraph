@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Trade Finance Automation
 ```json-ld

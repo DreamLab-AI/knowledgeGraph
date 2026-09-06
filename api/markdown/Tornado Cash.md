@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Tornado Cash
 ```json-ld

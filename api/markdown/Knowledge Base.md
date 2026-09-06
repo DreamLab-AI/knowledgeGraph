@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # knowledge base
 ```json-ld

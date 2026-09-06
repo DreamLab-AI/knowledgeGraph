@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Spot Bitcoin ETF
 ```json-ld

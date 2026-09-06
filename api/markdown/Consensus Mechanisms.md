@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Consensus Mechanisms
 ```json-ld

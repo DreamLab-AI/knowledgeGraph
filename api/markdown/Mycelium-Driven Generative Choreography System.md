@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[GOLM]]
 # Mycelium-Driven Generative Choreography System

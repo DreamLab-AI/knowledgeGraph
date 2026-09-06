@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Diversity, Non-Discrimination, and Fairness
 ```json-ld

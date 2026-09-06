@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Smart Royalties Ledger
 ```json-ld

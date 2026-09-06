@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Subscription Model
 ```json-ld

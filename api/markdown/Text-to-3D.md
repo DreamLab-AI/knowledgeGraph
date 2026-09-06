@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Text-to-3D
 ```json-ld

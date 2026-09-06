@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Voluntary Carbon Market
 ```json-ld

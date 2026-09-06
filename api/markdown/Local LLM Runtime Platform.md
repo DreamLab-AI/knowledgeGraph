@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[ollama]]
 # Local LLM Runtime Platform
@@ -191,7 +193,7 @@ elevatedFrom:: [[ollama]]
   - https://www.mindsdb.com/
   - [[Ollama]] [[Open Webui and Pipelines]] [open-webui/pipelines: Pipelines: Versatile, UI-Agnostic OpenAI-Compatible Plugin Framework (github.com)](https://github.com/open-webui/pipelines)
   - [pipelines/examples/pipelines/providers at 8b5e0a05e982473c205d2a0d7f8e34b8ce539885 · open-webui/pipelines (github.com)](https://github.com/open-webui/pipelines/tree/8b5e0a05e982473c205d2a0d7f8e34b8ce539885/examples/pipelines/providers)
-  - DONE Fix the [[Ollama]] directory issue.
+  - [x] Fix the [[Ollama]] directory issue.
   - [[Node-Based Diffusion Pipeline Interface]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
   - [agent_tutorials/ollama_agents/llama3_local/llama3_json.py at main · samwit/agent_tutorials (github.com)](https://github.com/samwit/agent_tutorials/blob/main/ollama_agents/llama3_local/llama3_json.py) [[Meta Llama Model Family]] [[Ollama]] [[Function Calling]] [[Python PyTorch Deep Learning Stack]] [[Agents]]
 

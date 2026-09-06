@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[AI Defence Doc]]
 # AI Capability Evidence Compendium

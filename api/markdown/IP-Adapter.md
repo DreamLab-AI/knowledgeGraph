@@ -1,5 +1,8 @@
-public:: true
-alias:: IP Adapter
+---
+public: true
+aliases:
+  - IP Adapter
+---
 
 # IP-Adapter
 ```json-ld

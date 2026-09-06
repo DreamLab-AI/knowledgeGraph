@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Geospatial Information
 ```json-ld

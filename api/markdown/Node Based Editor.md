@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Node Based Editor
 ```json-ld

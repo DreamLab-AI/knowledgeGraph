@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Google DeepMind
 ```json-ld

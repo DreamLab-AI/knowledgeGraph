@@ -1,5 +1,8 @@
-public:: true
-alias:: High Performance Computing
+---
+public: true
+aliases:
+  - High Performance Computing
+---
 
 # High-Performance Computing
 ```json-ld

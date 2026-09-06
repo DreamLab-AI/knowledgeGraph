@@ -1,13 +1,14 @@
 {
-  "total_pages": 8160,
-  "pages_with_ontology": 8160,
-  "public_pages": 8146,
-  "total_issues": 1397,
+  "total_pages": 8446,
+  "pages_with_ontology": 8446,
+  "public_pages": 8432,
+  "total_issues": 1481,
   "errors": 0,
-  "warnings": 0,
+  "warnings": 84,
   "info": 1397,
   "by_code": {
-    "MULTI_PARENT": 1397
+    "MULTI_PARENT": 1397,
+    "INVALID_DOMAIN": 84
   },
   "issues": [
     {
@@ -59,6 +60,30 @@
       "message": "Bridging class, 2 parents: Time-Series Forecasting, Capability Forecasting"
     },
     {
+      "path": "AI Acceleration Gap.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Adoption Barriers.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Advertising.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Agent Acquisition.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "AI Agent System.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -71,10 +96,76 @@
       "message": "Bridging class, 2 parents: Generative AI, Creative AI"
     },
     {
+      "path": "AI Bubble Dynamics.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Bubble Narrative.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Bubble.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Business Model.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI CapEx Forecast.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI CapEx Spend.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Capital Expenditure.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Compute Strategy.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Demand Elasticity Framework.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "AI Documentation Standards.md",
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: AI Governance and Ethics, Documentation Standards"
+    },
+    {
+      "path": "AI Economic Impact.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Employment Effects.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "AI Energy Optimisation.md",
@@ -113,10 +204,40 @@
       "message": "Bridging class, 2 parents: AI Application, Combinatorial Optimisation"
     },
     {
+      "path": "AI IPO.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "AI Incident.md",
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: AI Governance and Ethics, AI Risk"
+    },
+    {
+      "path": "AI Industry Consolidation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Inference Cost Management.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Inference Costs.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Infrastructure Economics.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "AI Investment.md",
@@ -125,10 +246,52 @@
       "message": "Bridging class, 2 parents: Economics, Capital Markets"
     },
     {
+      "path": "AI Job Creation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Job Displacement.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Labor Market Impact.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "AI Liability.md",
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 3 parents: AI Governance and Ethics, AI Governance and Ethics, AI Governance and Ethics"
+    },
+    {
+      "path": "AI Mandate.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Market Dynamics.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Market Growth.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Market Impact.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "AI Model Inference Engine.md",
@@ -137,10 +300,70 @@
       "message": "Bridging class, 2 parents: Inference Serving, AI Infrastructure (Artificial Intelligence)"
     },
     {
+      "path": "AI Model Race.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "AI Model.md",
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Generative Model, AI Model Architecture"
+    },
+    {
+      "path": "AI Pricing Models.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Product Strategy.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Productivity Debate.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Productivity Gains.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Productivity Impact.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI ROI Benchmarking.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI ROI Measurement.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI ROI.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Return on Investment.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "AI Risk Register.md",
@@ -155,10 +378,28 @@
       "message": "Bridging class, 3 parents: AI Governance and Ethics, AI Safety, Harm Taxonomy"
     },
     {
+      "path": "AI Sales Quotas.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "AI Search.md",
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 3 parents: AI Application, Natural Language Processing, Retrieval-Augmented Generation"
+    },
+    {
+      "path": "AI Stock Market.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Talent Acquisition.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "AI Talent War.md",
@@ -173,16 +414,40 @@
       "message": "Bridging class, 2 parents: Workforce Development, Human Capital"
     },
     {
+      "path": "AI Traffic Conversion.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "AI Upscaling and Super-Resolution.md",
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: AI Application, Generative AI"
     },
     {
+      "path": "AI User Demographics.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Venture Capital.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "AI Video.md",
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: AI Application, Deep Generative Model"
+    },
+    {
+      "path": "AI Workforce Impact.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "AI companions.md",
@@ -201,6 +466,30 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Software Engineering, Software Engineering"
+    },
+    {
+      "path": "AI-Augmented Service Ecosystems.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI-Driven Efficiency.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI-Driven Unemployment.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI-Driven Workforce Reduction.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "AI-Generated Content Disclosure.md",
@@ -243,6 +532,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Benchmarks, Benchmark Standard"
+    },
+    {
+      "path": "ARPU.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "AUTOMATIC1111 WebUI.md",
@@ -335,6 +630,12 @@
       "message": "Bridging class, 2 parents: Agent, AI Research Area"
     },
     {
+      "path": "Adaptive Capacity Index.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Adaptive Learning.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -395,6 +696,12 @@
       "message": "Bridging class, 2 parents: Affective Computing, Human-Computer Interaction"
     },
     {
+      "path": "Affordability Unlock.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Agent Development SDKs.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -453,6 +760,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Information Retrieval, Retrieval-Augmented Generation"
+    },
+    {
+      "path": "Agentic Workload Economics.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Agreement Protocol.md",
@@ -519,6 +832,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: AI Research Area, Applied Machine Learning"
+    },
+    {
+      "path": "Anthropic Economic Index.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Anti Counterfeiting.md",
@@ -1355,6 +1674,12 @@
       "message": "Bridging class, 3 parents: AI Application, Dialogue System, AI Agent System"
     },
     {
+      "path": "Chinese AI Ecosystem.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Circulating Supply.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -1395,6 +1720,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Actuation and Control, Control System"
+    },
+    {
+      "path": "Cloud Computing Revenue.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Clustering.md",
@@ -1709,6 +2040,18 @@
       "message": "Bridging class, 2 parents: Platform and Environment, Digital Twin"
     },
     {
+      "path": "Consumer AI Adoption.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "Consumer AI Market.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Consumer Protection.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -1811,6 +2154,12 @@
       "message": "Bridging class, 3 parents: AI Technique, AI Research Area, AI Research Area"
     },
     {
+      "path": "Conversational Commerce.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Conviction Voting.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -1821,6 +2170,18 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 3 parents: AI Application, Agentic Internet, Agents"
+    },
+    {
+      "path": "Cost-Effectiveness.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "Cost-Per-Intelligence.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Covariance Matrix.md",
@@ -1911,6 +2272,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Customer Service Automation, Enterprise Workflow"
+    },
+    {
+      "path": "Customer World Model.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Cybernetics.md",
@@ -2723,7 +3090,7 @@
       "message": "Bridging class, 2 parents: Legal and Regulatory, AI Governance and Ethics"
     },
     {
-      "path": "ETSI_Domain_Reality_Capture___Creative.md",
+      "path": "Creative.md",
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Content and Assets, Digital Performance Capture"
@@ -2745,6 +3112,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 3 parents: Protocol and Consensus, Blockchain Entity, Network Component"
+    },
+    {
+      "path": "Economic Multiplier Effect.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Economic Security.md",
@@ -2859,6 +3232,18 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Machine Learning, AI Technique"
+    },
+    {
+      "path": "Enterprise AI Cost Management.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "Enterprise AI Spend.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Enterprise Ai.md",
@@ -3827,6 +4212,12 @@
       "message": "Bridging class, 2 parents: Robotics, Robotics Application"
     },
     {
+      "path": "Inference Economics.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Inference Runtime.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -4029,6 +4420,24 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Model Evaluation, AI Evaluation"
+    },
+    {
+      "path": "LLM Token Expenditure Index.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "Labor Displacement.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "Labor Statistics Revision.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Land Economics.md",
@@ -4335,6 +4744,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Infrastructure, Wireless Communication"
+    },
+    {
+      "path": "Lump of Labor Fallacy.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "MLOps.md",
@@ -5189,6 +5604,12 @@
       "message": "Bridging class, 2 parents: AI Infrastructure, Machine Learning Infrastructure"
     },
     {
+      "path": "Open Source Monetization.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Open Webui and Pipelines.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -5393,6 +5814,12 @@
       "message": "Bridging class, 2 parents: Cognitive Architecture, Embodied AI"
     },
     {
+      "path": "Performance Marketing.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Performance Metrics.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -5513,6 +5940,12 @@
       "message": "Bridging class, 3 parents: AI Technique, Perception, Human Computer Interaction"
     },
     {
+      "path": "Possibility Unlock.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Post Hoc Explanation.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -5621,6 +6054,12 @@
       "message": "Bridging class, 2 parents: Computing and Cloud, Decentralised Web"
     },
     {
+      "path": "Pro-Worker AI.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Probabilistic Model.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -5661,6 +6100,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Display and Rendering, Physical Hardware"
+    },
+    {
+      "path": "Product Adoption Metrics.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Prompt Engineering.md",
@@ -5811,6 +6256,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Artificial Intelligence, AI Research Area"
+    },
+    {
+      "path": "Public Wealth Fund.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Pulse Width Modulation.md",
@@ -6287,6 +6738,12 @@
       "message": "Bridging class, 2 parents: AI Technique, Knowledge Representation"
     },
     {
+      "path": "SaaS Pricing Models.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Safety Evaluation.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -6657,6 +7114,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Display and Rendering, Metaverse"
+    },
+    {
+      "path": "Software Moats.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Solana.md",
@@ -7103,6 +7566,12 @@
       "message": "Bridging class, 2 parents: AI Governance and Ethics, AI Trustworthiness Dimensions"
     },
     {
+      "path": "Technology Diffusion.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Teleoperation Systems.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -7241,6 +7710,12 @@
       "message": "Bridging class, 2 parents: AI Technique, Deep Learning"
     },
     {
+      "path": "Token Efficiency.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "Token Generation.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -7263,6 +7738,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Actuation and Control, Robot Dynamics"
+    },
+    {
+      "path": "Total Cost of Ownership.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Total Supply.md",
@@ -7523,6 +8004,18 @@
       "message": "Bridging class, 2 parents: Machine Learning, AI Technique"
     },
     {
+      "path": "Usage-Based Consumption.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "Usage-Based Pricing.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
       "path": "User Awareness.md",
       "severity": "info",
       "code": "MULTI_PARENT",
@@ -7587,6 +8080,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: Model Evaluation, Dataset"
+    },
+    {
+      "path": "Valuation Multiples.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Value Function.md",
@@ -8001,6 +8500,12 @@
       "severity": "info",
       "code": "MULTI_PARENT",
       "message": "Bridging class, 2 parents: AI Technique, Machine Learning Technique"
+    },
+    {
+      "path": "Wholesale Power Auction.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Working Memory.md",

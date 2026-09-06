@@ -1,5 +1,9 @@
-public:: true
-alias:: Cross Chain Messaging, cross-chain-messaging
+---
+public: true
+aliases:
+  - Cross Chain Messaging
+  - cross-chain-messaging
+---
 
 # Cross-Chain Messaging
 ```json-ld

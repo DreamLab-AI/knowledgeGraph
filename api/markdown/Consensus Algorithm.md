@@ -1,5 +1,8 @@
-public:: true
-alias:: ConsensusAlgorithm
+---
+public: true
+aliases:
+  - ConsensusAlgorithm
+---
 
 # Consensus Algorithm
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Extended Kalman Filter
 ```json-ld

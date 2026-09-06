@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stream Processing
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: ISO/IEC 18033
+---
+public: true
+aliases:
+  - ISO/IEC 18033
+---
 
 # ISO-IEC 18033
 ```json-ld

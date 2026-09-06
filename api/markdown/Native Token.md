@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Native Token
 ```json-ld

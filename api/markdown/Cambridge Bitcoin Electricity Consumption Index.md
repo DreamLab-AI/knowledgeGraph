@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cambridge Bitcoin Electricity Consumption Index
 ```json-ld

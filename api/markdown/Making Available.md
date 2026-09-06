@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Making Available
 ```json-ld

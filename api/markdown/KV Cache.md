@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # KV Cache
 ```json-ld

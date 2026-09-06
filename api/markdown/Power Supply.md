@@ -1,5 +1,8 @@
-public:: true
-alias:: PowerSupply
+---
+public: true
+aliases:
+  - PowerSupply
+---
 
 # Power Supply
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BC-0442-certification-and-compliance
 ```json-ld

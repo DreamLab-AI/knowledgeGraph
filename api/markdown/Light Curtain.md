@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Light Curtain
 ```json-ld

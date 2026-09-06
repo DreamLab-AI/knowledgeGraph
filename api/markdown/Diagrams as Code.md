@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Diagrams as Code
 ```json-ld

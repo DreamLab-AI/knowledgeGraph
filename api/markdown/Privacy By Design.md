@@ -1,5 +1,8 @@
-public:: true
-alias:: Privacy-by-Design
+---
+public: true
+aliases:
+  - Privacy-by-Design
+---
 
 # Privacy By Design
 ```json-ld

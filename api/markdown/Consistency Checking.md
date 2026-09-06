@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Consistency Checking
 ```json-ld

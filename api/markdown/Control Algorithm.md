@@ -1,5 +1,9 @@
-public:: true
-alias:: Control-Algorithm, ControlAlgorithm
+---
+public: true
+aliases:
+  - Control-Algorithm
+  - ControlAlgorithm
+---
 
 # Control Algorithm
 ```json-ld

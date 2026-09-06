@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ethereum Attestation Service
 ```json-ld

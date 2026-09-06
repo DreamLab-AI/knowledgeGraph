@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fork Choice Rule
 ```json-ld

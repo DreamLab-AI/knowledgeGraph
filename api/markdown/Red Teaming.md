@@ -1,5 +1,8 @@
-public:: true
-alias:: Red-Teaming
+---
+public: true
+aliases:
+  - Red-Teaming
+---
 
 # Red Teaming
 ```json-ld

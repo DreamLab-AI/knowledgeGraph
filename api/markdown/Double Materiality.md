@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Double Materiality
 ```json-ld

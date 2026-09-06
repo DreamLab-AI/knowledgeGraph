@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # SMPTE ST 2128
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: SocialVR
+---
+public: true
+aliases:
+  - SocialVR
+---
 
 # Social VR
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # quadratic funding
 ```json-ld

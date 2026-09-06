@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Machine Learning Platform
 ```json-ld

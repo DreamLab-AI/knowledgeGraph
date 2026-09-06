@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Permissionless Innovation
 ```json-ld

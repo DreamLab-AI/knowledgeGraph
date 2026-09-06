@@ -1,5 +1,8 @@
-public:: true
-alias:: BlockchainGovernance
+---
+public: true
+aliases:
+  - BlockchainGovernance
+---
 
 # Blockchain Governance
 ```json-ld

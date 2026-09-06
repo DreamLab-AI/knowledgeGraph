@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Metaverse Content Creation
 ```json-ld

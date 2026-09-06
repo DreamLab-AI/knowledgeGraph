@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Pay To Public Key Hash
 ```json-ld

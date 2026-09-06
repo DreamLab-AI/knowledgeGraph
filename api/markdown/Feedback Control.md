@@ -1,5 +1,8 @@
-public:: true
-alias:: FeedbackControl
+---
+public: true
+aliases:
+  - FeedbackControl
+---
 
 # Feedback Control
 ```json-ld

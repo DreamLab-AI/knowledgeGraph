@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Mistral and Mixtral]]
 # Mistral AI Open-Weight Model Family

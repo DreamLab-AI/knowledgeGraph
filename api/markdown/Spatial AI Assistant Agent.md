@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Spatial AI Associate]]
 # Spatial AI Assistant Agent

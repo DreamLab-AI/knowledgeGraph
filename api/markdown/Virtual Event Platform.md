@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Event Platform
 ```json-ld

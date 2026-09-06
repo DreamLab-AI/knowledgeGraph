@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Autonomy Level
 ```json-ld

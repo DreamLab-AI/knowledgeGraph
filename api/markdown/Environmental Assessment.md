@@ -1,5 +1,8 @@
-public:: true
-alias:: EnvironmentalAssessment
+---
+public: true
+aliases:
+  - EnvironmentalAssessment
+---
 
 # Environmental Assessment
 ```json-ld

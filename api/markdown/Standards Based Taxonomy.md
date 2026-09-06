@@ -1,5 +1,8 @@
-public:: true
-alias:: StandardsBasedTaxonomy
+---
+public: true
+aliases:
+  - StandardsBasedTaxonomy
+---
 
 # Standards Based Taxonomy
 ```json-ld

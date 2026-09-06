@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Differential Dynamic Programming
 ```json-ld

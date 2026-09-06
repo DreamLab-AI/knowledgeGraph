@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Resolution Test Chart
 ```json-ld

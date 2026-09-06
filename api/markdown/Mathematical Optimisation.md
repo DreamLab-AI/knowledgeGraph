@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mathematical Optimisation
 ```json-ld

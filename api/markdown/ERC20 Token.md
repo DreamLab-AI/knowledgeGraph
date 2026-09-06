@@ -1,5 +1,8 @@
-public:: true
-alias:: ERC-20 Token
+---
+public: true
+aliases:
+  - ERC-20 Token
+---
 
 # ERC20 Token
 ```json-ld

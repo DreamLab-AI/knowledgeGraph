@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:token-efficiency",
+  "title": "Token Efficiency",
+  "slug": "token-efficiency",
+  "public": true,
+  "classIri": "urn:ngm:class:token-efficiency",
+  "domain": "economics",
+  "definition": "The measure of how effectively an AI model utilizes input and output tokens to complete a task, where higher efficiency can reduce total costs even if per-token prices are higher.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-economics",
+      "label": "AI Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cost-effectiveness",
+        "label": "Cost-Effectiveness"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Financial Crime Detection
 ```json-ld

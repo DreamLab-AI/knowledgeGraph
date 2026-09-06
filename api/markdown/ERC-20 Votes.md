@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ERC-20 Votes
 ```json-ld

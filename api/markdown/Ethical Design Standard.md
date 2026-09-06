@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ethical Design Standard
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Agile Software Development
 ```json-ld

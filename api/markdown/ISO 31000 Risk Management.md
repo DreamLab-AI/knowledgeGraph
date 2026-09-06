@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ISO 31000 Risk Management
 ```json-ld

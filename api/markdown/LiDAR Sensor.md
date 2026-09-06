@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # LiDAR Sensor
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # WCO SAFE Framework
 ```json-ld

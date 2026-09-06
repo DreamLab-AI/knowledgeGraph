@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Node-Independent Validation PBFT
 ```json-ld

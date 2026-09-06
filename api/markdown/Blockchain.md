@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0001-blockchain
+---
+public: true
+aliases:
+  - BC-0001-blockchain
+---
 
 # Blockchain
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mechanistic Interpretability
 ```json-ld

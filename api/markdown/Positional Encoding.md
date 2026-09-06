@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Positional Encoding
 ```json-ld

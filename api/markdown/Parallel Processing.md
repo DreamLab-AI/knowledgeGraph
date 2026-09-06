@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Parallel Processing
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # homomorphic encryption
 ```json-ld

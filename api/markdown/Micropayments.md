@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0319-micropayments
+---
+public: true
+aliases:
+  - BC-0319-micropayments
+---
 
 # Micropayments
 ```json-ld

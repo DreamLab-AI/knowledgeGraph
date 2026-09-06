@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ai Origin Declaration
 ```json-ld

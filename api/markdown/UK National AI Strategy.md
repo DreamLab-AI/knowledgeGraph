@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # UK National AI Strategy
 ```json-ld

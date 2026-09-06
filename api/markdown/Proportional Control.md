@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Proportional Control
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-300-digital-twin-collaboration
+---
+public: true
+aliases:
+  - TELE-300-digital-twin-collaboration
+---
 
 # Digital Twin Collaboration
 ```json-ld

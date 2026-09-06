@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual World Building
 ```json-ld

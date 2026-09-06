@@ -1,5 +1,8 @@
-public:: true
-alias:: BlockchainScalability
+---
+public: true
+aliases:
+  - BlockchainScalability
+---
 
 # Blockchain Scalability
 ```json-ld

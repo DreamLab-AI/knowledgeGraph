@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Object Storage
 ```json-ld

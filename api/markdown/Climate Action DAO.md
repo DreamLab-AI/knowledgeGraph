@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Climate Action DAO
 ```json-ld

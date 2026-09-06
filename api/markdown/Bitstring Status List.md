@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Bitstring Status List
 ```json-ld

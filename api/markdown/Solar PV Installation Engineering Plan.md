@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[solar plans]]
 # Solar PV Installation Engineering Plan

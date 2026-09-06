@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-028-horizon-workrooms
+---
+public: true
+aliases:
+  - TELE-028-horizon-workrooms
+---
 
 # Horizon Workrooms
 ```json-ld

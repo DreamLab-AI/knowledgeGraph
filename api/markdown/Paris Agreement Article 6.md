@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Paris Agreement Article 6
 ```json-ld

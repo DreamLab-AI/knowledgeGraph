@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Environmental Sustainability Label
 ```json-ld

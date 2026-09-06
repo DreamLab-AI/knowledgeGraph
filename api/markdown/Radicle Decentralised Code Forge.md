@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Radicle]]
 # Radicle Decentralised Code Forge
@@ -120,7 +122,7 @@ elevatedFrom:: [[Radicle]]
 	  2. **Content as Material**: In a broader sense, content can refer to the substance or matter contained within something. For example, the contents of a jar, a book's table of contents, or the principal substance offered by a website.
 	  3. **Content as Feeling**: Content can also describe a state of satisfaction or happiness, where one's needs or desires are met. For instance, someone might be content with their current situation or find contentment in simple pleasures.
 	  4. **Newsworthy Content**: In the context of news and media, content refers to information that is deemed newsworthy. This includes determining whether the content surfaces an imminent threat to public health or safety, gives voice to perspectives in a political process, or meets other criteria for newsworthiness.
-	  Understanding the specific context in which "content" is used is crucial to providing a relevant and accurate answer. #[[🤖]]
+	  Understanding the specific context in which "content" is used is crucial to providing a relevant and accurate answer. #🤖
 
 - ### Provenance
   - sources::

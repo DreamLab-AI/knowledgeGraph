@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mental Health Monitoring
 ```json-ld

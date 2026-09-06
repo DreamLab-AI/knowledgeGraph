@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Subsurface Scattering
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sat Solving
 ```json-ld

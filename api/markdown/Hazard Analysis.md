@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hazard Analysis
 ```json-ld

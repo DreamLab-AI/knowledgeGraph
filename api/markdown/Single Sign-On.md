@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # single sign-on
 ```json-ld

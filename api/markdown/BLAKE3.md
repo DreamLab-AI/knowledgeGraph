@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BLAKE3
 ```json-ld

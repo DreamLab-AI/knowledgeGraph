@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Planning and Scheduling
 ```json-ld

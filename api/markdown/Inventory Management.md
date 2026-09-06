@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Inventory Management
 ```json-ld

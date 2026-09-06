@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Security Information and Event Management
 

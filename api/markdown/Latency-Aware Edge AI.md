@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Latency-Aware Edge AI
 ```json-ld

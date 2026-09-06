@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # 3D Content Creation
 ```json-ld

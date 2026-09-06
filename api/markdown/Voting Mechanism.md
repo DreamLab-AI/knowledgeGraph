@@ -1,5 +1,8 @@
-public:: true
-alias:: VotingMechanism
+---
+public: true
+aliases:
+  - VotingMechanism
+---
 
 # voting mechanism
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # One Time Password
 ```json-ld

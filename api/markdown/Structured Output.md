@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Structured Output
 ```json-ld

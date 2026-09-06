@@ -1,5 +1,8 @@
-public:: true
-alias:: Bulletproofs+
+---
+public: true
+aliases:
+  - Bulletproofs+
+---
 
 # Bulletproofs
 ```json-ld

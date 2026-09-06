@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Branch and Bound
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: AdaptiveInterfaces
+---
+public: true
+aliases:
+  - AdaptiveInterfaces
+---
 
 # Adaptive Interfaces
 ```json-ld

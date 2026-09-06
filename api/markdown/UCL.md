@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # UCL
 ```json-ld

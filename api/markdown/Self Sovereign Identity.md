@@ -1,5 +1,11 @@
-public:: true
-alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-Sovereign Identity, self-sovereign identity
+---
+public: true
+aliases:
+  - BC-0188-self-sovereign-identity
+  - BC-0456-self-sovereign-identity
+  - Self-Sovereign Identity
+  - self-sovereign identity
+---
 
 # Self Sovereign Identity
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Empathetic AI
 ```json-ld

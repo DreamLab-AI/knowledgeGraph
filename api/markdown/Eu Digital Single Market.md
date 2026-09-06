@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Eu Digital Single Market
 

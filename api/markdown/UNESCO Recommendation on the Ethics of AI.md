@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # UNESCO Recommendation on the Ethics of AI
 ```json-ld

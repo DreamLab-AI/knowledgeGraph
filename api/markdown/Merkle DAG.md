@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Merkle DAG
 ```json-ld

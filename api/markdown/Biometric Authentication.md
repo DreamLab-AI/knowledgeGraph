@@ -1,5 +1,8 @@
-public:: true
-alias:: BiometricAuthentication
+---
+public: true
+aliases:
+  - BiometricAuthentication
+---
 
 # Biometric Authentication
 ```json-ld

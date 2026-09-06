@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # security audit guide
 ```json-ld

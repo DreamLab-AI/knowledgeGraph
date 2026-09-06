@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Noise Function Library
 ```json-ld

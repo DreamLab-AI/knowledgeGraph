@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Virscapes]]
 # GAN Virtual Landscape Art

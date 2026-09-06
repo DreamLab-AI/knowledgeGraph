@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Participant Coordination
 ```json-ld

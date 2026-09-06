@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fiat On-Ramp
 ```json-ld

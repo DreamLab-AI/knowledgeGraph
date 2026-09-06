@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NIST AI RMF
 ```json-ld

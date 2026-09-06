@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Marathon Digital
 ```json-ld

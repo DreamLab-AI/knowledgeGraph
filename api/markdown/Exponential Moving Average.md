@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Exponential Moving Average
 ```json-ld

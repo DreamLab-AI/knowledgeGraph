@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Energy Attribute Certificates
 ```json-ld

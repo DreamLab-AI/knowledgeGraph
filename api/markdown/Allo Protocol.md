@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Allo Protocol
 ```json-ld

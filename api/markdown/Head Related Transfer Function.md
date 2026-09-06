@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Head Related Transfer Function
 

@@ -1,5 +1,8 @@
-public:: true
-alias:: DistributedLedger
+---
+public: true
+aliases:
+  - DistributedLedger
+---
 
 # Distributed Ledger
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Markets Act
 ```json-ld

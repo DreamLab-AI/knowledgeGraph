@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Computer Hardware
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ISO 10218 Robot Safety
 ```json-ld

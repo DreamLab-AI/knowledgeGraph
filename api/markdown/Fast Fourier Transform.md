@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fast Fourier Transform
 ```json-ld

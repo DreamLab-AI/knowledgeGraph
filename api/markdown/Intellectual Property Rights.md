@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Intellectual Property Rights
 ```json-ld

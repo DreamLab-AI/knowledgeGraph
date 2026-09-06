@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Linked Data Platform
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # URDF Robot Model
 ```json-ld

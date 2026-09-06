@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0095 safety zone
 ```json-ld

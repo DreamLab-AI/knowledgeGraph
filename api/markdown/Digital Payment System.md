@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Payment System
 ```json-ld

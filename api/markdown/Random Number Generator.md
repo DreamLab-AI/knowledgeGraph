@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Random Number Generator
 ```json-ld

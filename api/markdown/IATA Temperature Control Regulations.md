@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IATA Temperature Control Regulations
 ```json-ld

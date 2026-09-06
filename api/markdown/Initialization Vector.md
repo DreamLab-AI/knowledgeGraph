@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Initialization Vector
 ```json-ld

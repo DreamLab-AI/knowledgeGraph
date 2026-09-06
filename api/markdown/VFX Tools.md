@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # VFX Tools
 ```json-ld

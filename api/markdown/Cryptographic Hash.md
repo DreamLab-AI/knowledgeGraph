@@ -1,5 +1,8 @@
-public:: true
-alias:: CryptographicHash
+---
+public: true
+aliases:
+  - CryptographicHash
+---
 
 # Cryptographic Hash
 ```json-ld

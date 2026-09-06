@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Boston Dynamics Spot
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Accountability (AI-0068)
 ```json-ld

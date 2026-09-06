@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Vote Delegation
 ```json-ld

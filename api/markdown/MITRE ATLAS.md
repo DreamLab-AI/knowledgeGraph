@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # MITRE ATLAS
 ```json-ld

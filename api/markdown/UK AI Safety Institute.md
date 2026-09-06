@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # uk ai safety institute
 ```json-ld

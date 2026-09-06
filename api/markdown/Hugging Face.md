@@ -1,5 +1,8 @@
-public:: true
-alias:: HuggingFace
+---
+public: true
+aliases:
+  - HuggingFace
+---
 
 # hugging face
 ```json-ld

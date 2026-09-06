@@ -1,5 +1,8 @@
-public:: true
-alias:: ComputerVision
+---
+public: true
+aliases:
+  - ComputerVision
+---
 
 # Computer Vision
 ```json-ld

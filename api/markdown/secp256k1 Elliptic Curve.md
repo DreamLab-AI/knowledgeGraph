@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # secp256k1 Elliptic Curve
 ```json-ld

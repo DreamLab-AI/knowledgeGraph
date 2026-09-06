@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ready Player Me
 ```json-ld

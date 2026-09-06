@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # SAML 2.0
 ```json-ld

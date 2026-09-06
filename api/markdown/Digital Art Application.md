@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Art Application
 ```json-ld

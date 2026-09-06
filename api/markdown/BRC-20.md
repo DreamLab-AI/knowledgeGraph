@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BRC-20
 ```json-ld

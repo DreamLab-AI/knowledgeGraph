@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0043 torque
 ```json-ld

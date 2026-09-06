@@ -1,5 +1,8 @@
-public:: true
-alias:: MotorDriver
+---
+public: true
+aliases:
+  - MotorDriver
+---
 
 # Motor Driver
 ```json-ld

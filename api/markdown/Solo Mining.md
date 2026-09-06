@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Solo Mining
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ECDSA Cryptography
 ```json-ld

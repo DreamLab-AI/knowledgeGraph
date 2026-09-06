@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # F1 Score
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Normalising Flows
 ```json-ld

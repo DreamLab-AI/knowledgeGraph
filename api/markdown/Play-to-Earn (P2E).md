@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Play-to-Earn (P2E)
 ```json-ld

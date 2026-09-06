@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Payment Token
 ```json-ld

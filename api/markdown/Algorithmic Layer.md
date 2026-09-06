@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Algorithmic Layer
 ```json-ld

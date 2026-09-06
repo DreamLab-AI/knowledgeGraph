@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Few-Shot Learning
 ```json-ld

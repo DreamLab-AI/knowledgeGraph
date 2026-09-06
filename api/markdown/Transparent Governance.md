@@ -1,5 +1,8 @@
-public:: true
-alias:: TransparentGovernance
+---
+public: true
+aliases:
+  - TransparentGovernance
+---
 
 # Transparent Governance
 ```json-ld

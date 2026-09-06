@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cultural Heritage XR Experience
 ```json-ld

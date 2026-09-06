@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mint-Burn Mechanism
 ```json-ld

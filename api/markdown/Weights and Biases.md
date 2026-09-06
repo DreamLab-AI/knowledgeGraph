@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Weights and Biases
 ```json-ld

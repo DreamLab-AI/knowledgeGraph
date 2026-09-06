@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Crash Fault Tolerance
 ```json-ld

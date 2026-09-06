@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Vision Language Model
 ```json-ld

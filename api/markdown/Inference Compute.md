@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Inference Compute
 ```json-ld

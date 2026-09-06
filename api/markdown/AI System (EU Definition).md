@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AI System (EU Definition)
 ```json-ld

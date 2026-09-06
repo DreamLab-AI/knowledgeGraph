@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cloth Simulation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Calibration Target
 ```json-ld

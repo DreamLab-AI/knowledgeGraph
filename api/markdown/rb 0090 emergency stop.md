@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0090 emergency stop
 ```json-ld

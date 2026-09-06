@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Collision Resistance
 ```json-ld

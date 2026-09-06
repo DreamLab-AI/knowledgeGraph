@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Compression Function
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ERC-20 Token Standard
 ```json-ld

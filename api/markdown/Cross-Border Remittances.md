@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cross-Border Remittances
 ```json-ld

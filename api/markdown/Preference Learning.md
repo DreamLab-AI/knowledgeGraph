@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Preference Learning
 ```json-ld

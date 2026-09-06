@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Algorithmic Impact Assessment
 ```json-ld

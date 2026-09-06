@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Functional Analysis
 ```json-ld

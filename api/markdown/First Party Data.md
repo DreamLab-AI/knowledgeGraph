@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # First Party Data
 ```json-ld

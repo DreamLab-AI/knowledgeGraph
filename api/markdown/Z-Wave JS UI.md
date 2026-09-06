@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Z-Wave JS UI
 ```json-ld

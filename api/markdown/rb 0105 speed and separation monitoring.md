@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0105 speed and separation monitoring
 ```json-ld

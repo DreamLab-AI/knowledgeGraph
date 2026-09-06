@@ -1,5 +1,10 @@
-public:: true
-alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
+---
+public: true
+aliases:
+  - BC-0462-on-chain-voting
+  - On-Chain Voting
+  - OnChainVoting
+---
 
 # On Chain Voting
 ```json-ld

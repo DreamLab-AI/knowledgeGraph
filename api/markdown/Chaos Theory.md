@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Chaos Theory
 ```json-ld

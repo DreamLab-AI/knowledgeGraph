@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ERC-721 Standard
 ```json-ld

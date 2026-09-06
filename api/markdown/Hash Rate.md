@@ -1,5 +1,8 @@
-public:: true
-alias:: HashRate
+---
+public: true
+aliases:
+  - HashRate
+---
 
 # Hash Rate
 ```json-ld

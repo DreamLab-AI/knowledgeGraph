@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Identity Wallet
 ```json-ld

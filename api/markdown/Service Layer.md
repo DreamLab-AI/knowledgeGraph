@@ -1,5 +1,8 @@
-public:: true
-alias:: ServiceLayer
+---
+public: true
+aliases:
+  - ServiceLayer
+---
 
 # Service Layer
 ```json-ld

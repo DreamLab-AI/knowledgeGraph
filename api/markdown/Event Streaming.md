@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Event Streaming
 ```json-ld

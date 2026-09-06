@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Content Moderation Standards
 ```json-ld

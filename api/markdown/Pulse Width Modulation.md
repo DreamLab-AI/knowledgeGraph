@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Pulse Width Modulation
 ```json-ld

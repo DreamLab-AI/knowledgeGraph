@@ -1,5 +1,8 @@
-public:: true
-alias:: DigitalOwnership
+---
+public: true
+aliases:
+  - DigitalOwnership
+---
 
 # Digital Ownership
 ```json-ld

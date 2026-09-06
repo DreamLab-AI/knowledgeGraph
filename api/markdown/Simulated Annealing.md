@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Simulated Annealing
 ```json-ld

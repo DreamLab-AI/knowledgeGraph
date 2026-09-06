@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # blockchain core concepts
 ```json-ld

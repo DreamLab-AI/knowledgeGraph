@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[heatmap]]
 # Risk Intensity Heatmap

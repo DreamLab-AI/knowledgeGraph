@@ -1,5 +1,8 @@
-public:: true
-alias:: DifferentiableRendering
+---
+public: true
+aliases:
+  - DifferentiableRendering
+---
 
 # differentiable rendering
 ```json-ld

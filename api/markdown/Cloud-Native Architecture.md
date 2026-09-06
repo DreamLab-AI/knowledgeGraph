@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cloud-Native Architecture
 ```json-ld

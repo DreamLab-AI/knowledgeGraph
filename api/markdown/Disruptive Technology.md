@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Disruptive Technology
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0057 admittance control
 ```json-ld

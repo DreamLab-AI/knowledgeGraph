@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # F2Pool
 ```json-ld

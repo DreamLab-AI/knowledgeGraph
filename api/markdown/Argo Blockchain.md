@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Argo Blockchain
 ```json-ld

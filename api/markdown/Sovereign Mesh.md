@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sovereign Mesh
 ```json-ld

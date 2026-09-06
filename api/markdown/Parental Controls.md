@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Parental Controls
 ```json-ld

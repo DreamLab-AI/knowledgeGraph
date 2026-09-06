@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-200-robotic-telepresence
+---
+public: true
+aliases:
+  - TELE-200-robotic-telepresence
+---
 
 # Robotic Telepresence
 ```json-ld

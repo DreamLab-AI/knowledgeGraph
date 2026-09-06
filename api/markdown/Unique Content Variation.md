@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Unique Content Variation
 ```json-ld

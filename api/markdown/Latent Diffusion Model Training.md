@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Stable Diffusion Training]]
 # Latent Diffusion Model Training

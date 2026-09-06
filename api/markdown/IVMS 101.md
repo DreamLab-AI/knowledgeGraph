@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IVMS 101
 ```json-ld

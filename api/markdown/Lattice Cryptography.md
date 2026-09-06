@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Lattice Cryptography
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[multimodal]]
 # Multimodal AI Architecture

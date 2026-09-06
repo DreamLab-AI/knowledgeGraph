@@ -1,5 +1,8 @@
-public:: true
-alias:: ETSI Domain AI Data Mgmt
+---
+public: true
+aliases:
+  - ETSI Domain AI Data Mgmt
+---
 
 # ETSI Domain AI + Data Mgmt
 ```json-ld

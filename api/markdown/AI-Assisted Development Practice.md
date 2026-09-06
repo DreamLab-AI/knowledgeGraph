@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Vibe Coding]]
 # AI-Assisted Development Practice

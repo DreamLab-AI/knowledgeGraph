@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # 6DoF Tracking
 ```json-ld

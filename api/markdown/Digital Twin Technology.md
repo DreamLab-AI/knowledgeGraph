@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Twin Technology
 ```json-ld

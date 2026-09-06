@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Content Creation Pipeline
 ```json-ld

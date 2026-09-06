@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # W3C Linked Data Platform
 ```json-ld

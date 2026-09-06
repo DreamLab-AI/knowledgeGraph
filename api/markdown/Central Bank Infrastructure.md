@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Central Bank Infrastructure
 ```json-ld

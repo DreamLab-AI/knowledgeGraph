@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AI Agent
 ```json-ld

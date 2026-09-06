@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Strict Types
 ```json-ld

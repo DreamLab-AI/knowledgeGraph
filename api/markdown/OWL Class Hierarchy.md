@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # OWL Class Hierarchy
 ```json-ld

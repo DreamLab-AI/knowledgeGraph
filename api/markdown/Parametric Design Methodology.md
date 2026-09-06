@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Parametric]]
 # Parametric Design Methodology
@@ -119,7 +121,7 @@ elevatedFrom:: [[Parametric]]
   - relatedTo: [[Spatial Computing Paradigm]], [[Rendering Engine]]
 
 - ### Content
-  - ![BB1mNtGj.jpeg](../assets/BB1mNtGj_1716451730618_0.jpeg)
+  - ![BB1mNtGj.jpeg](assets/BB1mNtGj_1716451730618_0.jpeg)
   - Microsoft are bringing parametric (volume) design to Meta Quest.
   - Microsoft is integrating parametric (volume) design capabilities into the Meta Quest platform, enhancing the expressivity of interfaces focused on retrieving and customizing artifacts through extended reality. This approach leverages parametric designs to simplify and streamline the design process, situating relevant design efforts within the usage context and embedding domain knowledge in the system. The integration aims to make design variations effortless, aligning with the concept of in-situ interaction with parametric designs, as described by Mario Carpo, where primary authors design generic objects, and secondary authors or interactors adapt variable aspects of the original notation at will.
 		- Stemasov, A. pARam: Leveraging Parametric Design in Extended Reality to Enhance Expressivity. ACM CHI 2024. Available online:

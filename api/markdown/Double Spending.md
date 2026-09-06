@@ -1,5 +1,10 @@
-public:: true
-alias:: Double-Spending, Double-spending, double-spending
+---
+public: true
+aliases:
+  - Double-Spending
+  - Double-spending
+  - double-spending
+---
 
 # Double Spending
 ```json-ld

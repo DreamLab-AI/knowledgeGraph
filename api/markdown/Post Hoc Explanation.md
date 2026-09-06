@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Post Hoc Explanation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Answer AI
 ```json-ld

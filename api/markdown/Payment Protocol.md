@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Payment Protocol
 ```json-ld

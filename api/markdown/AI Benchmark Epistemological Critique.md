@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Lies Damn Lies and Statistics]]
 # AI Benchmark Epistemological Critique

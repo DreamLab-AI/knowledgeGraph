@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TC-0080-Team-Coordination
 ```json-ld

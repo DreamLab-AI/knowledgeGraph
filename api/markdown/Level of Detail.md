@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Level of Detail
 ```json-ld

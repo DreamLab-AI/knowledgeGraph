@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Failure Mode And Effects Analysis
 ```json-ld

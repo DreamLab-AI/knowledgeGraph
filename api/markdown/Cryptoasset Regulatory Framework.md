@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Crypto Legal from DigiSoc]]
 # Cryptoasset Regulatory Framework

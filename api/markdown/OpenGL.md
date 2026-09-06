@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # OpenGL
 ```json-ld

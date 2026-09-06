@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Development Platform
 ```json-ld

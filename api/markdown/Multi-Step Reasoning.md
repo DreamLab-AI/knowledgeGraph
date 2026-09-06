@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Multi-Step Reasoning
 ```json-ld

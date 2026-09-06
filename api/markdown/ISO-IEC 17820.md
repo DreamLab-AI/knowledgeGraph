@@ -1,5 +1,8 @@
-public:: true
-alias:: ISO/IEC 17820
+---
+public: true
+aliases:
+  - ISO/IEC 17820
+---
 
 # ISO-IEC 17820
 ```json-ld

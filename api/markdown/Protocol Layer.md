@@ -1,5 +1,8 @@
-public:: true
-alias:: ProtocolLayer
+---
+public: true
+aliases:
+  - ProtocolLayer
+---
 
 # Protocol Layer
 ```json-ld

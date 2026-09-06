@@ -1,5 +1,8 @@
-public:: true
-alias:: VirtualEnvironment
+---
+public: true
+aliases:
+  - VirtualEnvironment
+---
 
 # Virtual Environment
 ```json-ld

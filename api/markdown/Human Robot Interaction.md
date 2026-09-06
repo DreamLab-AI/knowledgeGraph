@@ -1,5 +1,9 @@
-public:: true
-alias:: Human-Robot Interaction, HumanRobotInteraction
+---
+public: true
+aliases:
+  - Human-Robot Interaction
+  - HumanRobotInteraction
+---
 
 # Human Robot Interaction
 ```json-ld

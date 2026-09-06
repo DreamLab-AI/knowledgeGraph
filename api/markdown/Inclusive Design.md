@@ -1,5 +1,8 @@
-public:: true
-alias:: InclusiveDesign
+---
+public: true
+aliases:
+  - InclusiveDesign
+---
 
 # Inclusive Design
 ```json-ld

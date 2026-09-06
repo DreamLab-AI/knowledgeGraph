@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0029 inverse kinematics
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Privacy Preserving Data Mining
 ```json-ld

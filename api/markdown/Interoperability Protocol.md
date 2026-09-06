@@ -1,5 +1,8 @@
-public:: true
-alias:: InteroperabilityProtocol
+---
+public: true
+aliases:
+  - InteroperabilityProtocol
+---
 
 # Interoperability Protocol
 ```json-ld

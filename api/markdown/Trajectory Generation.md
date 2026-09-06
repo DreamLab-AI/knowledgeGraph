@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Trajectory Generation
 ```json-ld

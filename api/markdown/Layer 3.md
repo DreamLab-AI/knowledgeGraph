@@ -1,5 +1,8 @@
-public:: true
-alias:: Layer3
+---
+public: true
+aliases:
+  - Layer3
+---
 
 # Layer 3
 ```json-ld

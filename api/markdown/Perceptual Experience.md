@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Perceptual Experience
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Tracking Hardware
 ```json-ld

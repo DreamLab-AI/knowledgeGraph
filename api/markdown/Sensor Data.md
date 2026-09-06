@@ -1,5 +1,8 @@
-public:: true
-alias:: SensorData
+---
+public: true
+aliases:
+  - SensorData
+---
 
 # sensor data
 ```json-ld

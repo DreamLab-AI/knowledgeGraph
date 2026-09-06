@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Network Participation
 ```json-ld

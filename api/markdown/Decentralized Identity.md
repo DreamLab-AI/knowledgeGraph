@@ -1,5 +1,8 @@
-public:: true
-alias:: DecentralizedIdentity
+---
+public: true
+aliases:
+  - DecentralizedIdentity
+---
 
 # Decentralized Identity
 ```json-ld

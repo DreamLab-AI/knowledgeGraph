@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Binaural Rendering
 ```json-ld

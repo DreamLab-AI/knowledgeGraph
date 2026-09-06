@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Novel View Synthesis
 ```json-ld

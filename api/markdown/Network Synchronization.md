@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Network Synchronization
 ```json-ld

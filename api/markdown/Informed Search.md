@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Informed Search
 ```json-ld

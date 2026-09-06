@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Site Reliability Engineering
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Suspicious Activity Report
 ```json-ld

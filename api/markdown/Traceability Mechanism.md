@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Traceability Mechanism
 ```json-ld

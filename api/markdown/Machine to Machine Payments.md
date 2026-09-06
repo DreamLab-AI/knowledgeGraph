@@ -1,5 +1,8 @@
-public:: true
-alias:: Machine-to-Machine Payments
+---
+public: true
+aliases:
+  - Machine-to-Machine Payments
+---
 
 # Machine to Machine Payments
 ```json-ld

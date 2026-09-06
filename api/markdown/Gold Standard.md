@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Gold Standard
 ```json-ld

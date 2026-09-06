@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Adobe Firefly
 ```json-ld

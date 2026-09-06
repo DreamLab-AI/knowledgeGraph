@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[personal accounts]]
 # Personal Digital Asset Account

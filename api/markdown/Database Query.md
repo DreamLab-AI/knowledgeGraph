@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Database Query
 ```json-ld

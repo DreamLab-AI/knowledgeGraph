@@ -1,5 +1,8 @@
-public:: true
-alias:: payment-channel
+---
+public: true
+aliases:
+  - payment-channel
+---
 
 # Payment Channel
 ```json-ld

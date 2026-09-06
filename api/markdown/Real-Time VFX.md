@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Real-Time VFX
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: StorageInfrastructure
+---
+public: true
+aliases:
+  - StorageInfrastructure
+---
 
 # Storage Infrastructure
 ```json-ld

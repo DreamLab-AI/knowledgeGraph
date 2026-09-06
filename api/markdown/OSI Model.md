@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # OSI Model
 ```json-ld

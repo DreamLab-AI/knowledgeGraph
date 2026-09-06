@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Midjourney]]
 # Midjourney Text-to-Image Service

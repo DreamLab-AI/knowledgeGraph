@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # real-time transcription
 ```json-ld

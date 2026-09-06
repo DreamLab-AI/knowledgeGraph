@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Notary Service
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # DID Controller
 ```json-ld

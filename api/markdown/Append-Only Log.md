@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Append-Only Log
 ```json-ld

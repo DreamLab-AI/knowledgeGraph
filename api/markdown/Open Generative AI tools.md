@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Open Generative AI tools
 ```json-ld

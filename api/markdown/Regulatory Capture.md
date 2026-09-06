@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Regulatory Capture
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # In-Context Learning
 ```json-ld

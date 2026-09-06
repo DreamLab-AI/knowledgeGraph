@@ -1,5 +1,8 @@
-public:: true
-alias:: ConvergenceConcept
+---
+public: true
+aliases:
+  - ConvergenceConcept
+---
 
 # Convergence Concept
 ```json-ld

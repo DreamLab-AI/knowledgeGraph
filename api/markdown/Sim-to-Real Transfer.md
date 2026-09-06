@@ -1,5 +1,8 @@
-public:: true
-alias:: Sim to Real Transfer
+---
+public: true
+aliases:
+  - Sim to Real Transfer
+---
 
 # sim-to-real transfer
 ```json-ld

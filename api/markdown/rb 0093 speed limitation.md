@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0093 speed limitation
 ```json-ld

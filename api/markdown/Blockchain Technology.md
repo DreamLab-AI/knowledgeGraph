@@ -1,5 +1,8 @@
-public:: true
-alias:: BlockchainTechnology
+---
+public: true
+aliases:
+  - BlockchainTechnology
+---
 
 # Blockchain Technology
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ambient Occlusion
 ```json-ld

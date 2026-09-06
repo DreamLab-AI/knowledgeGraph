@@ -1518,12 +1518,12 @@
       "label": "ETSI Domain: Governance & Ethics"
     },
     {
-      "slug": "etsi-domain-governance-security",
-      "label": "ETSI_Domain_Governance_Security"
-    },
-    {
       "slug": "etsi-domain-governance-economy",
       "label": "ETSI_Domain_Governance___Economy"
+    },
+    {
+      "slug": "etsi-domain-governance-security",
+      "label": "ETSI_Domain_Governance_Security"
     },
     {
       "slug": "etsi-domain-human-interface-governance",

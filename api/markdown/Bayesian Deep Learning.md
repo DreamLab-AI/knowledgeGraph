@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Bayesian Deep Learning
 ```json-ld

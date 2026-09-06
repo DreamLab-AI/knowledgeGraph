@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Two-Phase Commit
 ```json-ld

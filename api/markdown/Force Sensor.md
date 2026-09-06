@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Force Sensor
 ```json-ld

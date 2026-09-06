@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # COMPLETE_HRI_TERMS_REFERENCE
 ```json-ld

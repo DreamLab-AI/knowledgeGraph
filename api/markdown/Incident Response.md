@@ -1,5 +1,8 @@
-public:: true
-alias:: IncidentResponse
+---
+public: true
+aliases:
+  - IncidentResponse
+---
 
 # Incident Response
 ```json-ld

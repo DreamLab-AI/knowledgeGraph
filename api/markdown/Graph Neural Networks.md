@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Graph Neural Networks
 ```json-ld

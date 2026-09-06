@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # json-rpc
 ```json-ld

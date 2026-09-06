@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Costmap
 ```json-ld

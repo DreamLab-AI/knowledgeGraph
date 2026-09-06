@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Haptic Feedback System
 ```json-ld

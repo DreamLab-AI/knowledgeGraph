@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Supply Chain Visibility
 ```json-ld

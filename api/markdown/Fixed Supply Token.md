@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fixed Supply Token
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Geospatial Engine
 ```json-ld

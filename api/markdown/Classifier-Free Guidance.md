@@ -1,5 +1,8 @@
-public:: true
-alias:: Classifier Free Guidance
+---
+public: true
+aliases:
+  - Classifier Free Guidance
+---
 
 # classifier-free guidance
 ```json-ld

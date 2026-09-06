@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Permissioned Network
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NGSI-LD
 ```json-ld

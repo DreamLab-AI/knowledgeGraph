@@ -1,5 +1,9 @@
-public:: true
-alias:: Force-Torque Sensor, Force/Torque Sensor
+---
+public: true
+aliases:
+  - Force-Torque Sensor
+  - Force/Torque Sensor
+---
 
 # Force Torque Sensor
 ```json-ld

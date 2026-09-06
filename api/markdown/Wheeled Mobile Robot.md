@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Wheeled Mobile Robot
 ```json-ld

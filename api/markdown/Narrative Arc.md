@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Narrative Arc
 ```json-ld

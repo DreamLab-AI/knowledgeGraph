@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # LoRa
 ```json-ld

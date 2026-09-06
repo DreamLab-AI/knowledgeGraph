@@ -1,5 +1,8 @@
-public:: true
-alias:: AI Application
+---
+public: true
+aliases:
+  - AI Application
+---
 
 ```json-ld
 {

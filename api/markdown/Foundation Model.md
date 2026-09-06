@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Foundation Model
 ```json-ld

@@ -1,5 +1,10 @@
-public:: true
-alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredentials
+---
+public: true
+aliases:
+  - BC-0458-verifiable-credentials
+  - Verifiable Credential
+  - VerifiableCredentials
+---
 
 # Verifiable Credentials
 ```json-ld

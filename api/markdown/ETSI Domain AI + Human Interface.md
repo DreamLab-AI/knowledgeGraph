@@ -1,5 +1,8 @@
-public:: true
-alias:: ETSI Domain AI Human Interface
+---
+public: true
+aliases:
+  - ETSI Domain AI Human Interface
+---
 
 # ETSI Domain AI + Human Interface
 ```json-ld

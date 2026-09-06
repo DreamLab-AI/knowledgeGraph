@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Landvættir]]
 # Landvaettir Generative AI Art Research

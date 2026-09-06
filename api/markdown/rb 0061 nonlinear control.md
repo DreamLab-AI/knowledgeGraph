@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0061 nonlinear control
 ```json-ld

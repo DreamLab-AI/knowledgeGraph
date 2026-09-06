@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cooling System
 ```json-ld

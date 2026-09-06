@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Channel Coding
 ```json-ld

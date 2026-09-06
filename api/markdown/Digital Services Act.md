@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Services Act
 ```json-ld

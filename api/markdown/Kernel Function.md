@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Kernel Function
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Metadata Standards
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Timestamp Service
 ```json-ld

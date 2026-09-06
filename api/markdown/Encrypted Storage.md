@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Encrypted Storage
 ```json-ld

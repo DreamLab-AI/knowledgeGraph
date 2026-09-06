@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Chain of Custody
 ```json-ld

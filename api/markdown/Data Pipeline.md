@@ -1,5 +1,8 @@
-public:: true
-alias:: DataPipeline
+---
+public: true
+aliases:
+  - DataPipeline
+---
 
 # Data Pipeline
 ```json-ld

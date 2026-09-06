@@ -1,5 +1,8 @@
-public:: true
-alias:: ArtificialIntelligence
+---
+public: true
+aliases:
+  - ArtificialIntelligence
+---
 
 # Artificial Intelligence
 ```json-ld

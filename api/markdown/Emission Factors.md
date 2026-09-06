@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Emission Factors
 ```json-ld

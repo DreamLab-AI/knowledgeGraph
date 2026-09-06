@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # FATF Guidance on Virtual Assets
 ```json-ld

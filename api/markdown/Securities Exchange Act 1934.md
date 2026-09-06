@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Securities Exchange Act 1934
 ```json-ld

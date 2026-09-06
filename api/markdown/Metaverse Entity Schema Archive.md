@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Some legacy Linked-JSON]]
 # Metaverse Entity Schema Archive

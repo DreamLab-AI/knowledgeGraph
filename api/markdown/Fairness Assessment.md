@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fairness Assessment
 ```json-ld

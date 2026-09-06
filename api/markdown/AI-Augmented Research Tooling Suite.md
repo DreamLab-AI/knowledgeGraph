@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Research Tools]]
 # AI-Augmented Research Tooling Suite
@@ -184,7 +186,7 @@ elevatedFrom:: [[Research Tools]]
   - **Gaining varied perspectives**
 	  Audiences prefer news that provides context and wider perspectives, making the news more accessible and engaging. The report also notes that younger audiences are more interested in stories that inspire, connect, and entertain, while older audiences prioritize local and international news, as well as political news.
    Cambridge IGCSE First Language English is designed for learners whose first language is English. The course aims to develop learners' analysis and communication skills, including inference and presenting opinions effectively. The syllabus encourages learners to read widely for enjoyment and to further their awareness of English usage. Cambridge IGCSE English also provides teaching and learning resources for teachers, including schemes of work, example candidate responses, past papers, and digital resources.
-   Google Assistant can summarize web pages using Generative AI. However, this service is currently only available on Pixel 8 and Pixel 8 Pro devices in English, and it cannot summarize paywalled articles or content less than 200 words. Users can provide feedback on summaries, which helps improve the service. The Assistant Summarize feature filters out sensitive information like pornography, violence, and hate speech. #[[🤖]]
+   Google Assistant can summarize web pages using Generative AI. However, this service is currently only available on Pixel 8 and Pixel 8 Pro devices in English, and it cannot summarize paywalled articles or content less than 200 words. Users can provide feedback on summaries, which helps improve the service. The Assistant Summarize feature filters out sensitive information like pornography, violence, and hate speech. #🤖
   - [[AI-Augmented Research Tooling Suite]] [Undermind](https://www.undermind.ai/home/)
   - [Perplexity](https://www.perplexity.ai/) for [[AI-Augmented Research Tooling Suite]].
   - [Tutorial: Perplexity Basics (youtube.com)](https://www.youtube.com/watch?v=ue4NU-U-hAE)

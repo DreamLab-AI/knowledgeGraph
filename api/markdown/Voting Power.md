@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Voting Power
 ```json-ld

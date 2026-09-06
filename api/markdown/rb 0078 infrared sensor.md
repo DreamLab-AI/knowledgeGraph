@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0078 infrared sensor
 ```json-ld

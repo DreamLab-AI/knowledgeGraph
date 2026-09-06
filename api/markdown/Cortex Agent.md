@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cortex Agent
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: Cryptographic Hash Functions
+---
+public: true
+aliases:
+  - Cryptographic Hash Functions
+---
 
 # cryptographic hash function
 ```json-ld

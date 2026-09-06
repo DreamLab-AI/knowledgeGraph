@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IBM Food Trust
 ```json-ld

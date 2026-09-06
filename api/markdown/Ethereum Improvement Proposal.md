@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ethereum Improvement Proposal
 ```json-ld

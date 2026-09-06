@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # enterprise search
 ```json-ld

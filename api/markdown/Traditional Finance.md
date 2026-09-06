@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Traditional Finance
 ```json-ld

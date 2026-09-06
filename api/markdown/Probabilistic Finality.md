@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Probabilistic Finality
 ```json-ld

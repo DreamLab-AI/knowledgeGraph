@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Inflationary Token
 ```json-ld

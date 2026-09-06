@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Quadratic Voting
 ```json-ld

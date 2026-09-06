@@ -1,5 +1,8 @@
-public:: true
-alias:: OpenAI Whisper
+---
+public: true
+aliases:
+  - OpenAI Whisper
+---
 
 # Open AI Whisper
 ```json-ld

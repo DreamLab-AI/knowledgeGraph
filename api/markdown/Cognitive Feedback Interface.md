@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cognitive Feedback Interface
 ```json-ld

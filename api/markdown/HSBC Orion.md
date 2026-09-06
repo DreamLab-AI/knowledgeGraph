@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # HSBC Orion
 ```json-ld

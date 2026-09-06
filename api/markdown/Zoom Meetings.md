@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Zoom Meetings
 ```json-ld

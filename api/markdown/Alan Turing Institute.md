@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Alan Turing Institute
 ```json-ld

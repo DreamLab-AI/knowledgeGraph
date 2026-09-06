@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Gasper Consensus
 ```json-ld

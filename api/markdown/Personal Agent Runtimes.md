@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Personal Agent Runtimes
 ```json-ld

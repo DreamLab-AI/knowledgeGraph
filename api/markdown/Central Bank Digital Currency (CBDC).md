@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Central Bank Digital Currency (CBDC)
 ```json-ld

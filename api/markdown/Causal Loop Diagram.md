@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Causal Loop Diagram
 ```json-ld

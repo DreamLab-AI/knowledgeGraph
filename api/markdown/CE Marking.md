@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # CE Marking
 ```json-ld

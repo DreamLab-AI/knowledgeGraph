@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[State of the art in AI]]
 # AI Frontier Capability Survey
@@ -220,7 +222,7 @@ elevatedFrom:: [[State of the art in AI]]
 			- [Roy Amara Oxford Reference](https://www.oxfordreference.com/display/10.1093/acref/9780191826719.001.0001/q-oro-ed4-00018679)
 			- [AI Index Report 2024 – Artificial Intelligence Index (stanford.edu)](https://aiindex.stanford.edu/report/)
 			- [I. From GPT-4 to AGI: Counting the OOMs - SITUATIONAL AWARENESS (situational-awareness.ai)](https://situational-awareness.ai/from-gpt-4-to-agi/)
-			- ![photo_2024-06-05_08-47-39.jpg](../assets/photo_2024-06-05_08-47-39_1717573793476_0.jpg){:width 600}
+			- ![photo_2024-06-05_08-47-39.jpg](assets/photo_2024-06-05_08-47-39_1717573793476_0.jpg){:width 600}
 		- Mercedes and VW now have ChatGPT4 integrated into their cars. Ford have Alexa, and when that inevitably upgrades so will all Fords.
 		- Lots more hardware for consumer AI, lots more Edge and task specific inferencing. Lot more edge meets cloud. Some more local inferencing.
 		- {{tweet [https://twitter.com/llama_index/status/1745148547560059277}}
@@ -232,9 +234,9 @@ elevatedFrom:: [[State of the art in AI]]
 			- 🟢 This is Professor [Ethan Mollick | LinkedIn](https://www.linkedin.com/in/emollick/) using HeyGen and 30s of footage to create a deepfake.
 			- [One Useful Thing | Ethan Mollick | Substack](https://www.oneusefulthing.org/) [[Education and AI]] and [[Proprietary Large Language Models]] blog
 				- His most recent post is [Signs and Portents](https://www.oneusefulthing.org/p/signs-and-portents) and you should check it.
-			- ![1704433632082.mp4](../assets/1704433632082_1704449202180_0.mp4)
+			- ![1704433632082.mp4](assets/1704433632082_1704449202180_0.mp4)
 		- Autodial chatbots that can have plausible and convincing conversations with voters. I briefly saw someone had made one of these using a $20 GPT subscription.
-		- ![image.png](../assets/image_1704292836040_0.png)
+		- ![image.png](assets/image_1704292836040_0.png)
 		- [Kyle Taylor: books, biography](https://www.amazon.co.uk/stores/Kyle-Taylor/author/B09G759JR3?)
 		- He talks about something I have similarly been saying:
 			- In the event of a complete breakdown of trust in digital information channels people will simply choose only to trust their priors.
@@ -247,11 +249,11 @@ elevatedFrom:: [[State of the art in AI]]
 			- America is supportive of UK positioning around [[Trust and Safety]]. They have a compatible legal framework, and we are doing useful work that they are ill positioned to do in exploring the legal space.
 			- This perhaps explains the £2.5B [[Infrastructure]] and training investment plan by Microsoft.
 			- These companies are **as big** as the UK. Beware tech bros bearing gifts?
-			  ![image.png](../assets/image_1704045603470_0.png)
+			  ![image.png](assets/image_1704045603470_0.png)
 			- All this makes funding seem disproportionately risk sensitive right now.
   - [This robot can tidy a room without any help | MIT Technology Review](https://www.technologyreview.com/2024/02/01/1087445/this-robot-can-tidy-a-room-without-any-help/)
   - <iframe src="https://arxiv.org/pdf/2401.12202.pdf" style="width: 100%; height: 600px"></iframe>
-  - ![1705344178256.mp4](../assets/1705344178256_1705352121045_0.mp4)
+  - ![1705344178256.mp4](assets/1705344178256_1705352121045_0.mp4)
   - # To Close
 			- As trust in the internet evolves, the situation will change and adapt as people learn to use informational agents. Intentional UX will allow users to ask their AI to bring them the information they want from a far more decentralised and confusing internet. This will promote incredible diversity in humans as they fracture somewhat into informational enclaves.
 			- Two future scenarios include the rise of AI in Truth Verification and Education. AI will become sophisticated enough to verify the truthfulness of information on the internet, combating the spread of misinformation and ensuring that users have access to accurate and reliable informa- tion. AI will also become an integral part of education, acting as a personalised tutor that adapts to each student's learning style and pace, revolutionising the way we learn and acquire new skills.

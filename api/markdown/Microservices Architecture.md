@@ -1,5 +1,8 @@
-public:: true
-alias:: MicroservicesArchitecture
+---
+public: true
+aliases:
+  - MicroservicesArchitecture
+---
 
 # Microservices Architecture
 ```json-ld

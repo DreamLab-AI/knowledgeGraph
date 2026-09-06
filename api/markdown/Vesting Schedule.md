@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Vesting Schedule
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cross-Chain Interoperability
 ```json-ld

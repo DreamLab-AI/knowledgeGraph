@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0444-luxury-goods-authentication
+---
+public: true
+aliases:
+  - BC-0444-luxury-goods-authentication
+---
 
 # Luxury Goods Authentication
 ```json-ld

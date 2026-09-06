@@ -1,5 +1,10 @@
-public:: true
-alias:: Single-Use Seal, Single-Use Seals, Single Use Seal
+---
+public: true
+aliases:
+  - Single-Use Seal
+  - Single-Use Seals
+  - Single Use Seal
+---
 
 # Single Use Seals
 ```json-ld

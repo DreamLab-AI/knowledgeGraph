@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0092 protective stop
 ```json-ld

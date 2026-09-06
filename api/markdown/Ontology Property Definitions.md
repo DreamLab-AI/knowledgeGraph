@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ontology Property Definitions
 ```json-ld

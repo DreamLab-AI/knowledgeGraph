@@ -1,5 +1,8 @@
-public:: true
-alias:: Human-Computer Interface
+---
+public: true
+aliases:
+  - Human-Computer Interface
+---
 
 # Human Computer Interface
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Bullet Physics
 ```json-ld

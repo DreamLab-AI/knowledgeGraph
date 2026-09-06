@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Lakehouse Architecture
 ```json-ld

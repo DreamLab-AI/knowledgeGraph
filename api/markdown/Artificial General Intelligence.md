@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Artificial General Intelligence
 ```json-ld

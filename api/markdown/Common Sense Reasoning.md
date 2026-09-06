@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Common Sense Reasoning
 ```json-ld

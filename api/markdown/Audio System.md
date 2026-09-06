@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Audio System
 ```json-ld

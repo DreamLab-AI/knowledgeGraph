@@ -1,5 +1,8 @@
-public:: true
-alias:: Content Addressed Storage
+---
+public: true
+aliases:
+  - Content Addressed Storage
+---
 
 # Content-Addressed Storage
 ```json-ld

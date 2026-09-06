@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # EVM Compatibility
 ```json-ld

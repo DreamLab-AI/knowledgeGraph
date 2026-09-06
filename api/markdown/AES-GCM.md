@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AES-GCM
 ```json-ld

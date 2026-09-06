@@ -1,5 +1,8 @@
-public:: true
-alias:: Context-Aware Computing
+---
+public: true
+aliases:
+  - Context-Aware Computing
+---
 
 # Context Aware Computing
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # History and Path to AGI
 ```json-ld

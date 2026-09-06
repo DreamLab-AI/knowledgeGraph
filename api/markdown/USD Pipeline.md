@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # USD Pipeline
 ```json-ld

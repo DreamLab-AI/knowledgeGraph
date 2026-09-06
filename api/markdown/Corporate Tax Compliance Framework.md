@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Tax]]
 # Corporate Tax Compliance Framework
@@ -121,7 +123,7 @@ elevatedFrom:: [[Tax]]
   - **Personal Tax**: If you're drawing a salary or dividends from your company, you must report this on your personal tax return, known as self-assessment.
 		- **Deadlines**: The self-assessment tax return must be filed by January 31st for the previous tax year. For example, for the 2023/2024 tax year, the deadline is January 31, 2025. However, it's good practice to prepare this well in advance.
   - I am not drawing salaries and shouldn't have done this. I have pushed it to Castletons.
-		- DONE Awaiting an email about selling the car and the insurance for it
+		- [x] Awaiting an email about selling the car and the insurance for it
   - **Reporting and Documentation**:
   - **Annual Accounts**: You need to prepare annual accounts, including a balance sheet and a profit and loss statement.
 		- **Company Tax Return (CT600)**: This form is used to report your company’s income, expenses, and allowances. It's separate from your personal tax return.

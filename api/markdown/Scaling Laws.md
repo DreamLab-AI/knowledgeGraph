@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # scaling laws
 ```json-ld

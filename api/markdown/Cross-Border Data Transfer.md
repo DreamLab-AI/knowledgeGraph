@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cross-Border Data Transfer
 ```json-ld

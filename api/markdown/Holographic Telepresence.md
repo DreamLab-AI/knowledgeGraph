@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Holographic Telepresence
 ```json-ld

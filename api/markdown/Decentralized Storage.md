@@ -1,5 +1,8 @@
-public:: true
-alias:: DecentralizedStorage
+---
+public: true
+aliases:
+  - DecentralizedStorage
+---
 
 # Decentralized Storage
 ```json-ld

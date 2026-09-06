@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Micro-OLED Display
 ```json-ld

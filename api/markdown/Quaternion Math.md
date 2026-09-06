@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Quaternion Math
 ```json-ld

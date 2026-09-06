@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Api Economy
 ```json-ld

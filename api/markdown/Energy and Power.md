@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Energy and Power
 ```json-ld

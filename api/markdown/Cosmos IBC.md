@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cosmos IBC
 ```json-ld

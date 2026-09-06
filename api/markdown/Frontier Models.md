@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Frontier Models
 ```json-ld

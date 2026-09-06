@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # GPT 4
 ```json-ld

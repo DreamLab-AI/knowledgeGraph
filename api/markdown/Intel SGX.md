@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Intel SGX
 ```json-ld

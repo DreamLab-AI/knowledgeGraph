@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Surface Marine Robot
 ```json-ld

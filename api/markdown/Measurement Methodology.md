@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Measurement Methodology
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Accounts]]
 # UK Company Financial Filing Obligations
@@ -132,13 +134,13 @@ elevatedFrom:: [[Accounts]]
   - Keep track of these dates in your calendar and maintain regular communication with your accountant to ensure all filings are completed on time.
   - Your accountant will be able to provide the exact dates for your specific circumstances, but this general framework should give you a good idea of what to expect.
   - https://docs.google.com/spreadsheets/d/1fIM6SqpkZdfRsnAInrd1e-A5cPOG3r76CfQhRCQGeE0/edit?usp=sharing
-  - ![rawaccounts.pdf](../assets/rawaccounts_1714229501722_0.pdf)
-  - ![Feb2024-flossverse-010.pdf](../assets/Feb2024-flossverse-010_1717315840873_0.pdf)
-  - ![Feb2024-flossverse-011.pdf](../assets/Feb2024-flossverse-011_1717315846806_0.pdf)
-  - ![Jan2024-flossverse-009.pdf](../assets/Jan2024-flossverse-009_1717315853965_0.pdf)
-  - ![March2024-flossverse-012.pdf](../assets/March2024-flossverse-012_1717315861420_0.pdf)
-  - ![October2023-flossverse-007.pdf](../assets/October2023-flossverse-007_1717315868338_0.pdf)
-  - ![October2023-flossverse-008.pdf](../assets/October2023-flossverse-008_1717315874531_0.pdf)
+  - ![rawaccounts.pdf](assets/rawaccounts_1714229501722_0.pdf)
+  - ![Feb2024-flossverse-010.pdf](assets/Feb2024-flossverse-010_1717315840873_0.pdf)
+  - ![Feb2024-flossverse-011.pdf](assets/Feb2024-flossverse-011_1717315846806_0.pdf)
+  - ![Jan2024-flossverse-009.pdf](assets/Jan2024-flossverse-009_1717315853965_0.pdf)
+  - ![March2024-flossverse-012.pdf](assets/March2024-flossverse-012_1717315861420_0.pdf)
+  - ![October2023-flossverse-007.pdf](assets/October2023-flossverse-007_1717315868338_0.pdf)
+  - ![October2023-flossverse-008.pdf](assets/October2023-flossverse-008_1717315874531_0.pdf)
 
 - ### Provenance
   - sources::

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Flux.1
 ```json-ld

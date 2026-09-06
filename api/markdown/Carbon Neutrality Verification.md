@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Carbon Neutrality Verification
 ```json-ld

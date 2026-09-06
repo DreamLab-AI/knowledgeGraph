@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Human Development Index
 ```json-ld

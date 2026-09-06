@@ -1,5 +1,10 @@
-public:: true
-alias:: Retrieval Augmented Generation, RAG, Retrieval-Augmented LLM
+---
+public: true
+aliases:
+  - Retrieval Augmented Generation
+  - RAG
+  - Retrieval-Augmented LLM
+---
 
 # retrieval-augmented generation
 ```json-ld

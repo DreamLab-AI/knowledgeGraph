@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # OpenAI API
 ```json-ld

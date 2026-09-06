@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Heatmap Regression
 ```json-ld

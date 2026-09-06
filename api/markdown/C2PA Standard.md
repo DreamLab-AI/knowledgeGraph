@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # C2PA Standard
 ```json-ld

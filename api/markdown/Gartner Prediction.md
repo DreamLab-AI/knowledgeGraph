@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Gartner Prediction
 ```json-ld

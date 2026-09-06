@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Scene Optimization
 ```json-ld

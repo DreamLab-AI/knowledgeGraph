@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0089 risk assessment
 ```json-ld

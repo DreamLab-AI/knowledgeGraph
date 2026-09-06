@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Web3 Wallet
 ```json-ld

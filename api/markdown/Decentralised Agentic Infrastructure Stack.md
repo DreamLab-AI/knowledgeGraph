@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Emerging tech stack]]
 # Decentralised Agentic Infrastructure Stack

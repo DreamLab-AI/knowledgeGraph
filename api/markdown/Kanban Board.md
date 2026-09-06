@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Kanban Board
 ```json-ld

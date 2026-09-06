@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Slot Filling
 ```json-ld

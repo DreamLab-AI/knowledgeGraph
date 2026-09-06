@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0453-ethical-sourcing
+---
+public: true
+aliases:
+  - BC-0453-ethical-sourcing
+---
 
 # Ethical Sourcing
 ```json-ld

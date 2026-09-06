@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Live Co-authoring
 ```json-ld

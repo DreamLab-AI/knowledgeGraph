@@ -1,5 +1,8 @@
-public:: true
-alias:: MiddlewareLayer
+---
+public: true
+aliases:
+  - MiddlewareLayer
+---
 
 # Middleware Layer
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sociotechnical Risk
 ```json-ld

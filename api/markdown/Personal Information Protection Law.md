@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Personal Information Protection Law
 ```json-ld

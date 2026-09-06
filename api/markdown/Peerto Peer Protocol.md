@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Peerto Peer Protocol
 ```json-ld

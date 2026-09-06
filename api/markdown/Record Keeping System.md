@@ -1,5 +1,8 @@
-public:: true
-alias:: Record-Keeping System
+---
+public: true
+aliases:
+  - Record-Keeping System
+---
 
 # Record Keeping System
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: AccessibilityStandards
+---
+public: true
+aliases:
+  - AccessibilityStandards
+---
 
 # Accessibility Standards
 ```json-ld

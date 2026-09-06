@@ -1,5 +1,8 @@
-public:: true
-alias:: Data Center
+---
+public: true
+aliases:
+  - Data Center
+---
 
 # Data Centre
 ```json-ld

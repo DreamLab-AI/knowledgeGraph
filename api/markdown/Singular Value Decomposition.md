@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Singular Value Decomposition
 ```json-ld

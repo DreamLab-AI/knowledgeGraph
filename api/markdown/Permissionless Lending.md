@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Permissionless Lending
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-301-virtual-office-spaces
+---
+public: true
+aliases:
+  - TELE-301-virtual-office-spaces
+---
 
 # Virtual Office Spaces
 ```json-ld

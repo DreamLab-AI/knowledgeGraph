@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Semi-Supervised Learning
 ```json-ld

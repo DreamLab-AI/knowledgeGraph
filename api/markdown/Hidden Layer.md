@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hidden Layer
 ```json-ld

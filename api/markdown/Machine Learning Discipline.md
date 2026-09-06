@@ -1,6 +1,9 @@
-public:: true
-elevatedFrom:: [[Machine Learning]]
-alias:: MachineLearning
+---
+public: true
+aliases:
+  - MachineLearning
+elevatedFrom: "[[Machine Learning]]"
+---
 
 # Machine Learning Discipline
 ```json-ld

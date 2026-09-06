@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Elements Project
 ```json-ld

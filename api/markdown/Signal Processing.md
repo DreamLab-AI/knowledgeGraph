@@ -1,5 +1,8 @@
-public:: true
-alias:: SignalProcessing
+---
+public: true
+aliases:
+  - SignalProcessing
+---
 
 # Signal Processing
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[mermaid]]
 # Markdown Diagramming As Code Tool

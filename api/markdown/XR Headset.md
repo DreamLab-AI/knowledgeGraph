@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # XR Headset
 ```json-ld

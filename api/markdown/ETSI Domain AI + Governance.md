@@ -1,5 +1,8 @@
-public:: true
-alias:: ETSI Domain AI Governance
+---
+public: true
+aliases:
+  - ETSI Domain AI Governance
+---
 
 # ETSI Domain AI + Governance
 ```json-ld

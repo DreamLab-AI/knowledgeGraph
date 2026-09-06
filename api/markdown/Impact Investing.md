@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Impact Investing
 ```json-ld

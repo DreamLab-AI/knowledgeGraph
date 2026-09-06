@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BC-0120-consensus-mechanism
 ```json-ld

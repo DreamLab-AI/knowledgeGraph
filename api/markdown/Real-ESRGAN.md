@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Real-ESRGAN
 ```json-ld

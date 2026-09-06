@@ -1,6 +1,9 @@
-public:: true
-elevatedFrom:: [[OpenAI]]
-alias:: Open AI
+---
+public: true
+aliases:
+  - Open AI
+elevatedFrom: "[[OpenAI]]"
+---
 
 # OpenAI Research Organisation
 ```json-ld

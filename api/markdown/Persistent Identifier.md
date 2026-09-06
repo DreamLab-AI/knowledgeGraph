@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Persistent Identifier
 ```json-ld

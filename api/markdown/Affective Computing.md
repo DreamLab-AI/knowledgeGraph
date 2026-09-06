@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Affective Computing
 ```json-ld

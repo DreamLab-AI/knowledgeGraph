@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Issue Tracking
 ```json-ld

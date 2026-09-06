@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Trajectory Planning
 ```json-ld

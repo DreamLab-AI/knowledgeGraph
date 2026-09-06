@@ -1,5 +1,8 @@
-public:: true
-alias:: MultiAgentSystem
+---
+public: true
+aliases:
+  - MultiAgentSystem
+---
 
 # Multi-Agent System
 ```json-ld

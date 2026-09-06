@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Education and AI
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: NetworkSecurity
+---
+public: true
+aliases:
+  - NetworkSecurity
+---
 
 # Network Security
 ```json-ld

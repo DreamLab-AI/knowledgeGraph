@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Revision List]]
 # Practitioner Learning Roadmap Backlog
@@ -101,24 +103,24 @@ elevatedFrom:: [[Revision List]]
 - ### Content
   - from here [xandie985/data-scientist-roadmap2024 (github.com)](https://github.com/xandie985/data-scientist-roadmap2024?tab=readme-ov-file)
   - Languages
-  - TODO Python
-  - DONE R
+  - [ ] Python
+  - [x] R
   - **Frameworks & Libraries:**
-  - TODO Scikit-learn
-  - TODO Numpy
-  - TODO Pandas
-  - TODO TensorFlow
-  - TODO PyTorch
-  - TODO XGBoost
-  - TODO LightGBM
-  - TODO **Keras** (High-level deep learning API)
-  - TODO **Jax** (High-performance numerical computation)
-  - TODO **CatBoost** (Gradient boosting framework)
-  - TODO **StaMPS** (Scalable Modeling and Partitioning for Statistics)
+  - [ ] Scikit-learn
+  - [ ] Numpy
+  - [ ] Pandas
+  - [ ] TensorFlow
+  - [ ] PyTorch
+  - [ ] XGBoost
+  - [ ] LightGBM
+  - [ ] **Keras** (High-level deep learning API)
+  - [ ] **Jax** (High-performance numerical computation)
+  - [ ] **CatBoost** (Gradient boosting framework)
+  - [ ] **StaMPS** (Scalable Modeling and Partitioning for Statistics)
   - **Cloud Platforms & Services:**
-  - TODO Docker (Containerization platform)
-  - TODO Learn any one of the following:
-		- TODO GCP (Google Cloud Platform)
+  - [ ] Docker (Containerization platform)
+  - [ ] Learn any one of the following:
+		- [ ] GCP (Google Cloud Platform)
 			- Cloud Storage
 			  :LOGBOOK:
 			  CLOCK: [2024-04-19 Fri 12:26:41]--[2024-04-19 Fri 12:26:42] =>  00:00:01
@@ -143,77 +145,77 @@ elevatedFrom:: [[Revision List]]
 			  :LOGBOOK:
 			  CLOCK: [2024-04-19 Fri 12:26:42]--[2024-04-19 Fri 12:26:42] =>  00:00:00
 			  :END:
-		- TODO Azure (Microsoft Azure)
+		- [ ] Azure (Microsoft Azure)
 			- Blob Storage
 			- Virtual Machines
 			- SQL Database / Azure Database for PostgreSQL/MySQL
 			- Azure Functions
 			- Azure Synapse Analytics
 			- Azure Machine Learning
-		- DONE AWS (Amazon Web Services)
+		- [x] AWS (Amazon Web Services)
 			- AWS S3
 			- AWS EC2
 			- AWS RDS
 			- AWS Lambda
 			- AWS Redshift
 			- AWS SageMaker
-  - TODO Kubeflow (Cloud-native machine learning platform)
-  - TODO Kubernetes (Container orchestration platform)
+  - [ ] Kubeflow (Cloud-native machine learning platform)
+  - [ ] Kubernetes (Container orchestration platform)
   - **Data Tools & Libraries:**
-  - TODO SQL (including OLAP & OLTP variations)
-  - TODO Pandas
-  - TODO Elasticsearch
-  - TODO **Dask** (Parallel computing library for big data)
-  - TODO **Spark** (Large-scale data processing framework)
-  - TODO **Airbyte** (Open-source data integration platform)
+  - [ ] SQL (including OLAP & OLTP variations)
+  - [ ] Pandas
+  - [ ] Elasticsearch
+  - [ ] **Dask** (Parallel computing library for big data)
+  - [ ] **Spark** (Large-scale data processing framework)
+  - [ ] **Airbyte** (Open-source data integration platform)
   - **Web Development Frameworks:**
-  - TODO FastAPI
-  - TODO Uvicorn (likely mentioned in conjunction with FastAPI)
-  - TODO **Streamlit** (Machine learning app development framework)
+  - [ ] FastAPI
+  - [ ] Uvicorn (likely mentioned in conjunction with FastAPI)
+  - [ ] **Streamlit** (Machine learning app development framework)
   - **Machine Learning Concepts:**
-  - TODO Supervised Learning
-		- TODO Regression
-		- TODO Classification
-  - TODO Unsupervised Learning
-		- TODO Clustering
-		- TODO Dimensionality Reduction
-  - TODO Recommendation Systems
-  - TODO Time Series Forecasting
-  - TODO Natural Language Processing (NLP)
-		- TODO Text Mining
-		- TODO Natural Language Understanding (NLU)
-			- TODO Sentiment Analysis
-			- TODO Named Entity Recognition (NER)
-			- TODO Question Answering (QA)
-		- TODO Natural Language Generation (NLG)
-  - TODO Deep Learning Techniques
-		- TODO Convolutional Neural Networks (CNNs)
-		- TODO Long Short-Term Memory networks (LSTMs)
-		- TODO Generative AI
-  - TODO Reinforcement Learning
-  - TODO Bayesian Optimization
+  - [ ] Supervised Learning
+		- [ ] Regression
+		- [ ] Classification
+  - [ ] Unsupervised Learning
+		- [ ] Clustering
+		- [ ] Dimensionality Reduction
+  - [ ] Recommendation Systems
+  - [ ] Time Series Forecasting
+  - [ ] Natural Language Processing (NLP)
+		- [ ] Text Mining
+		- [ ] Natural Language Understanding (NLU)
+			- [ ] Sentiment Analysis
+			- [ ] Named Entity Recognition (NER)
+			- [ ] Question Answering (QA)
+		- [ ] Natural Language Generation (NLG)
+  - [ ] Deep Learning Techniques
+		- [ ] Convolutional Neural Networks (CNNs)
+		- [ ] Long Short-Term Memory networks (LSTMs)
+		- [ ] Generative AI
+  - [ ] Reinforcement Learning
+  - [ ] Bayesian Optimization
   - **DevOps & MLOps Tools:**
-  - TODO Airflow (Workflow orchestration tool)
-  - TODO MLFlow (Machine learning lifecycle management)
-  - TODO **Prometheus** (Monitoring and alerting system)
-  - TODO **Grafana** (Data visualization and analytics tool)
-  - TODO **Git version control** (e.g., GitLab, GitHub)
+  - [ ] Airflow (Workflow orchestration tool)
+  - [ ] MLFlow (Machine learning lifecycle management)
+  - [ ] **Prometheus** (Monitoring and alerting system)
+  - [ ] **Grafana** (Data visualization and analytics tool)
+  - [ ] **Git version control** (e.g., GitLab, GitHub)
   - **Data Visualization Tools:**
-  - TODO Tableau
-  - TODO Matplotlib (Python plotting library)
-  - TODO Seaborn (Statistical data visualization library built on top of Matplotlib)
-  - TODO Power BI (Microsoft business intelligence platform)
+  - [ ] Tableau
+  - [ ] Matplotlib (Python plotting library)
+  - [ ] Seaborn (Statistical data visualization library built on top of Matplotlib)
+  - [ ] Power BI (Microsoft business intelligence platform)
   - **Other:**
-  - TODO ETL (Extract, Transform, Load) processes
-  - TODO Optimisation algorithms (can be broader than just machine learning)
-  - TODO Distributed training
-  - TODO Curse of dimensionality
-  - TODO Financial modeling
+  - [ ] ETL (Extract, Transform, Load) processes
+  - [ ] Optimisation algorithms (can be broader than just machine learning)
+  - [ ] Distributed training
+  - [ ] Curse of dimensionality
+  - [ ] Financial modeling
   - LLMs
-  - TODO Lang-chain Agents
-  - TODO Prompt engineering
-  - TODO RAG
-  - TODO Fine-tuning
+  - [ ] Lang-chain Agents
+  - [ ] Prompt engineering
+  - [ ] RAG
+  - [ ] Fine-tuning
 
 - ### Provenance
   - sources::

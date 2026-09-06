@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Prefix Tuning
 ```json-ld

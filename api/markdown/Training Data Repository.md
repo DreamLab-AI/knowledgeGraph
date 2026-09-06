@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Training Data Repository
 ```json-ld

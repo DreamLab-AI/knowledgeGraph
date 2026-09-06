@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # mT5
 ```json-ld

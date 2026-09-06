@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Enterprise Service Bus
 ```json-ld

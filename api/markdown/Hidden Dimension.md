@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hidden Dimension
 ```json-ld

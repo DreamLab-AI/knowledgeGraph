@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reed-Solomon Erasure Coding
 ```json-ld

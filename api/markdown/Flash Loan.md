@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Flash Loan
 ```json-ld

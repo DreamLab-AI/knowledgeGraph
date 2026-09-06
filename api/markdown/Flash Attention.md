@@ -1,5 +1,8 @@
-public:: true
-alias:: FlashAttention
+---
+public: true
+aliases:
+  - FlashAttention
+---
 
 # flash attention
 ```json-ld

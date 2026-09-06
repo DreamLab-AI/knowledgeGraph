@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[devpod]]
 # Provider-Agnostic Dev Environment Tool

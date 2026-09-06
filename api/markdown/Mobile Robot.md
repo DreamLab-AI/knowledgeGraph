@@ -1,5 +1,9 @@
-public:: true
-alias:: Mobile Robots, MobileRobot
+---
+public: true
+aliases:
+  - Mobile Robots
+  - MobileRobot
+---
 
 # Mobile Robot
 ```json-ld

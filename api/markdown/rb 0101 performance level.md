@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0101 performance level
 ```json-ld

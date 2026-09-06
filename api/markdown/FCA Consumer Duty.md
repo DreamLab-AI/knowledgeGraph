@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # FCA Consumer Duty
 ```json-ld

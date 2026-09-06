@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Project BroBots]]
 # Toxic Content Counter-Narrative System

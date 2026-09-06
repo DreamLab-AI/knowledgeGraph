@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Procedural Audio Generator
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0100 safety integrity level
 ```json-ld

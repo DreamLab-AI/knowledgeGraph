@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Queries]]
 # Datalog Knowledge Graph Query Language

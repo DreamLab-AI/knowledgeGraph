@@ -1,5 +1,8 @@
-public:: true
-alias:: LoRA Fine Tuning
+---
+public: true
+aliases:
+  - LoRA Fine Tuning
+---
 
 # lora fine-tuning
 ```json-ld

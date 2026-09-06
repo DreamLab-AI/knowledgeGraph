@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ONNX Operator Set
 ```json-ld

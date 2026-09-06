@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Momentum Contrast
 ```json-ld

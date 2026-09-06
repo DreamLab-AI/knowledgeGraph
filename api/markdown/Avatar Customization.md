@@ -1,5 +1,8 @@
-public:: true
-alias:: AvatarCustomization
+---
+public: true
+aliases:
+  - AvatarCustomization
+---
 
 # Avatar Customization
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Animation Rig
 ```json-ld

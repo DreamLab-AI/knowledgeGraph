@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0088 iso 13482 compliance
 ```json-ld

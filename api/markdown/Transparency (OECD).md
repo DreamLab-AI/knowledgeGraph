@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Transparency (OECD)
 ```json-ld

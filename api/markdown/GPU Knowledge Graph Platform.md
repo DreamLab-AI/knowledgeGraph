@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[VisionFlow and Junkie Jarvis]]
 # GPU Knowledge Graph Platform

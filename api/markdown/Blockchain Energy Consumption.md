@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Blockchain Energy Consumption
 ```json-ld

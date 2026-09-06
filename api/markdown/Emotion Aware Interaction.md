@@ -1,5 +1,8 @@
-public:: true
-alias:: Emotion-Aware Interaction
+---
+public: true
+aliases:
+  - Emotion-Aware Interaction
+---
 
 # Emotion Aware Interaction
 ```json-ld

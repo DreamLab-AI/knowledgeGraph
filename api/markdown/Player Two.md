@@ -1,5 +1,8 @@
-public:: true
-alias:: PlayerTwo
+---
+public: true
+aliases:
+  - PlayerTwo
+---
 
 # Player Two
 ```json-ld

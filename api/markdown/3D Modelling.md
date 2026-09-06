@@ -1,5 +1,8 @@
-public:: true
-alias:: 3D Modeling
+---
+public: true
+aliases:
+  - 3D Modeling
+---
 
 # 3D Modelling
 

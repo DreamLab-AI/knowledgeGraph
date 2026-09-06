@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Non-Convex Optimisation
 ```json-ld

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:ai-demand-elasticity-framework",
+  "title": "AI Demand Elasticity Framework",
+  "slug": "ai-demand-elasticity-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-demand-elasticity-framework",
+  "domain": "economics",
+  "definition": "A conceptual model categorizing how artificial intelligence alters market demand through specific dimensions such as price, access, complexity, continuity, personalization, and relational value.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-impact-of-ai",
+      "label": "Economic Impact of AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:demand-elasticity",
+        "label": "Demand Elasticity"
+      },
+      {
+        "id": "urn:ngm:class:price-elasticity",
+        "label": "Price Elasticity"
+      },
+      {
+        "id": "urn:ngm:class:personalization-elasticity",
+        "label": "Personalization Elasticity"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

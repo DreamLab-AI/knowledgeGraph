@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Event Sourcing
 ```json-ld

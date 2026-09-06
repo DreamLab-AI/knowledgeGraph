@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NFT Ownership Proof
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Incident Management
 ```json-ld

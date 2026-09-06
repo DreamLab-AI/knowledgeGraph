@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Vector Index
 ```json-ld

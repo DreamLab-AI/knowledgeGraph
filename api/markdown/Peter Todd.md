@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Peter Todd
 ```json-ld

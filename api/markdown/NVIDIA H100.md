@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NVIDIA H100
 ```json-ld

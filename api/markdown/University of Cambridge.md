@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # University of Cambridge
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Enhanced Due Diligence
 ```json-ld

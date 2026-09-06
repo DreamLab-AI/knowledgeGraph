@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Kullback-Leibler Divergence
 ```json-ld

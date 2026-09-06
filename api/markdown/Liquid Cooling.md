@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Liquid Cooling
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Proto-Danksharding
 ```json-ld

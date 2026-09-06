@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # financial inclusion
 ```json-ld

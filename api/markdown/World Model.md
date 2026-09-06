@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # World Model
 ```json-ld

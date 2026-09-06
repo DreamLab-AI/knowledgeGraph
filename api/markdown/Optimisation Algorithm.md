@@ -1,5 +1,8 @@
-public:: true
-alias:: Optimization Algorithm
+---
+public: true
+aliases:
+  - Optimization Algorithm
+---
 
 # Optimisation Algorithm
 ```json-ld

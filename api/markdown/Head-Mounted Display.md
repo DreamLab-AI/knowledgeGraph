@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Head-Mounted Display
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Multimodal Artificial Intelligence
 ```json-ld

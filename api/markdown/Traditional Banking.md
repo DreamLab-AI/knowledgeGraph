@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Traditional Banking
 ```json-ld

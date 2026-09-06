@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Safety Function
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Lock and Mint Mechanism
 ```json-ld

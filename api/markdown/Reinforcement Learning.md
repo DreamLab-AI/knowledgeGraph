@@ -1,5 +1,8 @@
-public:: true
-alias:: ReinforcementLearning
+---
+public: true
+aliases:
+  - ReinforcementLearning
+---
 
 # Reinforcement Learning
 ```json-ld

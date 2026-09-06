@@ -1,5 +1,8 @@
-public:: true
-alias:: CollaborativeRobot
+---
+public: true
+aliases:
+  - CollaborativeRobot
+---
 
 # Collaborative Robot
 ```json-ld

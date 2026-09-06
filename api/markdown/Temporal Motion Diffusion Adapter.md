@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[AnimateDiff]]
 # Temporal Motion Diffusion Adapter

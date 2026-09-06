@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Layer 2 Networks
 ```json-ld

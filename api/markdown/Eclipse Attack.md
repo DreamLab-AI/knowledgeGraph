@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Eclipse Attack
 ```json-ld

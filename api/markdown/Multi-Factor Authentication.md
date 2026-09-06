@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Multi-Factor Authentication
 ```json-ld

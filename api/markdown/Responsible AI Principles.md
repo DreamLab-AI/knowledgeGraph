@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Responsible AI Principles
 ```json-ld

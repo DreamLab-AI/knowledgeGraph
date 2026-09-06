@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Burning Mechanism
 ```json-ld

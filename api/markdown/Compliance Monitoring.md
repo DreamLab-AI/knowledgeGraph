@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0487-compliance-monitoring
+---
+public: true
+aliases:
+  - BC-0487-compliance-monitoring
+---
 
 # Compliance Monitoring
 ```json-ld

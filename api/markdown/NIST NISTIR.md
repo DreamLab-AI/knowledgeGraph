@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NIST NISTIR
 ```json-ld

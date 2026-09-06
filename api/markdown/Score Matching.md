@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Score Matching
 ```json-ld

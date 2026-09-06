@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:cost-per-intelligence",
+  "title": "Cost-Per-Intelligence",
+  "slug": "cost-per-intelligence",
+  "public": true,
+  "classIri": "urn:ngm:class:cost-per-intelligence",
+  "domain": "economics",
+  "definition": "A benchmarking metric that evaluates the cost of achieving a specific level of AI capability or task performance, often used to identify the Pareto frontier of model efficiency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-economics",
+      "label": "AI Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cost-effectiveness",
+        "label": "Cost-Effectiveness"
+      },
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-100-ai-avatars
+---
+public: true
+aliases:
+  - TELE-100-ai-avatars
+---
 
 # AI Avatars
 ```json-ld

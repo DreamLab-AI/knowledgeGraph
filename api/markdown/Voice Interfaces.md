@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Voice Interfaces
 ```json-ld

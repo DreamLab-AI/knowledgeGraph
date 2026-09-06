@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Procedural and Hybrid 4D
 ```json-ld

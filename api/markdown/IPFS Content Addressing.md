@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IPFS Content Addressing
 ```json-ld

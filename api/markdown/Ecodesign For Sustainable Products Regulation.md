@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ecodesign For Sustainable Products Regulation
 ```json-ld

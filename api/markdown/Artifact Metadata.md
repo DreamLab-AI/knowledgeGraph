@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Artifact Metadata
 ```json-ld

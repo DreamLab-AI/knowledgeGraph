@@ -1,5 +1,8 @@
-public:: true
-alias:: ERC-1155 Standard
+---
+public: true
+aliases:
+  - ERC-1155 Standard
+---
 
 # ERC1155 Standard
 ```json-ld

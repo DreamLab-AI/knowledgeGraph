@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Provenance Standard
 ```json-ld

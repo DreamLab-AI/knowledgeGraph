@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # CAD Software
 ```json-ld

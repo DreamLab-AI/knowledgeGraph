@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # COMPLETE ONTOLOGY INDEX
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cambridge Centre for Alternative Finance
 ```json-ld

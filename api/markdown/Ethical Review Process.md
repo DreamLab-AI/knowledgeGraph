@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ethical Review Process
 ```json-ld

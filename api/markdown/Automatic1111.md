@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Automatic1111
 ```json-ld

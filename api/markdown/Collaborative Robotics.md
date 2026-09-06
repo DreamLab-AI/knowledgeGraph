@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Collaborative Robotics
 ```json-ld

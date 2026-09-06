@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Lightning and Similar L2
 ```json-ld

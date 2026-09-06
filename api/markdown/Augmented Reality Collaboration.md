@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-021-augmented-reality-collaboration
+---
+public: true
+aliases:
+  - TELE-021-augmented-reality-collaboration
+---
 
 # Augmented Reality Collaboration
 ```json-ld

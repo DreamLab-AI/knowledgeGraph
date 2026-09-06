@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Authenticated Encryption
 ```json-ld

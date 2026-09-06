@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hiroshima AI Process
 ```json-ld

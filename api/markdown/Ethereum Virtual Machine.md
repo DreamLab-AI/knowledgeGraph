@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ethereum Virtual Machine
 ```json-ld

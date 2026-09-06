@@ -1,5 +1,8 @@
-public:: true
-alias:: Logistics Optimization
+---
+public: true
+aliases:
+  - Logistics Optimization
+---
 
 # Logistics Optimisation
 ```json-ld

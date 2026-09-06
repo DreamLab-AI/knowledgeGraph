@@ -1,5 +1,8 @@
-public:: true
-alias:: VirtualMeeting
+---
+public: true
+aliases:
+  - VirtualMeeting
+---
 
 # Virtual Meeting
 ```json-ld

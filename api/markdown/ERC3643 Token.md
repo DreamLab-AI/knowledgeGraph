@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ERC3643 Token
 ```json-ld

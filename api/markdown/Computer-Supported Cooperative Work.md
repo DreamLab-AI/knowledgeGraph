@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Computer-Supported Cooperative Work
 

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[copyright]]
 # Intellectual Property Rights Framework

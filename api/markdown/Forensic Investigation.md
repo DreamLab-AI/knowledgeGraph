@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Forensic Investigation
 ```json-ld

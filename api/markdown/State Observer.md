@@ -1,5 +1,8 @@
-public:: true
-alias:: StateObserver
+---
+public: true
+aliases:
+  - StateObserver
+---
 
 # State Observer
 ```json-ld

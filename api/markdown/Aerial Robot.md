@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Aerial Robot
 ```json-ld

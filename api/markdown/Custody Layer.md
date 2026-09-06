@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Custody Layer
 ```json-ld

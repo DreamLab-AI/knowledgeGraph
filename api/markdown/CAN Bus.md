@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # CAN Bus
 ```json-ld

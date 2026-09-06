@@ -1,5 +1,8 @@
-public:: true
-alias:: Proof-of-History
+---
+public: true
+aliases:
+  - Proof-of-History
+---
 
 # Proof of History
 ```json-ld

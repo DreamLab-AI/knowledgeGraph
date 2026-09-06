@@ -1,5 +1,8 @@
-public:: true
-alias:: ForceControl
+---
+public: true
+aliases:
+  - ForceControl
+---
 
 # Force Control
 ```json-ld

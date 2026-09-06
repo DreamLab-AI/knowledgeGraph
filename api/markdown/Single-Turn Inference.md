@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Single-Turn Inference
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: UserExperience
+---
+public: true
+aliases:
+  - UserExperience
+---
 
 # user experience
 ```json-ld

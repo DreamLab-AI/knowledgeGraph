@@ -1,5 +1,8 @@
-public:: true
-alias:: ISO/IEC 18013-5 mDL
+---
+public: true
+aliases:
+  - ISO/IEC 18013-5 mDL
+---
 
 # ISO-IEC 18013-5 mDL
 ```json-ld

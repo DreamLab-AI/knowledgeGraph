@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ar Display Device
 ```json-ld

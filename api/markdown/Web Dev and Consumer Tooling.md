@@ -1,5 +1,8 @@
-public:: true
-alias:: WebDev and Consumer Tooling
+---
+public: true
+aliases:
+  - WebDev and Consumer Tooling
+---
 
 # Web Dev and Consumer Tooling
 ```json-ld

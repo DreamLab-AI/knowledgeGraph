@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AI Self-Regulation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Newton-Euler Dynamics
 ```json-ld

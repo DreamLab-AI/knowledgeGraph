@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Training Methods
 ```json-ld

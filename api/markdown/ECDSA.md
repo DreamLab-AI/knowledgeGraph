@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ECDSA
 ```json-ld

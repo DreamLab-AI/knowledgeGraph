@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stepper Motor
 ```json-ld

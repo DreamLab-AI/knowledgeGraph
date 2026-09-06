@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Impedance Control
 ```json-ld

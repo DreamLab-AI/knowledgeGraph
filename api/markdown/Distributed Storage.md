@@ -1,5 +1,8 @@
-public:: true
-alias:: DistributedStorage
+---
+public: true
+aliases:
+  - DistributedStorage
+---
 
 # Distributed Storage
 

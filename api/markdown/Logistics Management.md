@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Logistics Management
 ```json-ld

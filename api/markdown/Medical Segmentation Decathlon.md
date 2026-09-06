@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Medical Segmentation Decathlon
 ```json-ld

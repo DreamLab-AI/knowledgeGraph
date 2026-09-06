@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0214-environmental-sustainability
+---
+public: true
+aliases:
+  - BC-0214-environmental-sustainability
+---
 
 # Environmental Sustainability
 ```json-ld

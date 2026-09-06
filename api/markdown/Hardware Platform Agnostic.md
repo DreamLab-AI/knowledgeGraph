@@ -1,5 +1,8 @@
-public:: true
-alias:: Hardware-/Platform-Agnostic
+---
+public: true
+aliases:
+  - Hardware-/Platform-Agnostic
+---
 
 # Hardware Platform Agnostic
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Prudential Regulation
 ```json-ld

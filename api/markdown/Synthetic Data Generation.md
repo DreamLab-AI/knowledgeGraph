@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Synthetic Data Generation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[ChatGPT]]
 # Instruction-Following Conversational AI System

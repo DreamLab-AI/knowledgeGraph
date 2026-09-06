@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Two-Tier Distribution Model
 ```json-ld

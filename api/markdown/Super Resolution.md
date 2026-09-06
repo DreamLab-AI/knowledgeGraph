@@ -1,5 +1,8 @@
-public:: true
-alias:: Super-resolution
+---
+public: true
+aliases:
+  - Super-resolution
+---
 
 # Super Resolution
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Technical History (extended CV)
 ```json-ld
@@ -243,10 +245,10 @@ public:: true
 - ### Content
   - {{embed ((65e1a2f6-f063-44f9-8181-cc6e8d5e2339))}}
   - .#.v-gallery-col2
-		- ![Screenshot 2024-02-08 114439.png](../assets/Screenshot_2024-02-08_114439_1707412253991_0.png)
-		- ![Screenshot 2024-02-08 114401.png](../assets/Screenshot_2024-02-08_114401_1707412288338_0.png)
-		- ![Screenshot 2024-02-08 114348.png](../assets/Screenshot_2024-02-08_114348_1707412293437_0.png)
-		- ![Screenshot 2024-02-08 114331.png](../assets/Screenshot_2024-02-08_114331_1707412302063_0.png)
+		- ![Screenshot 2024-02-08 114439.png](assets/Screenshot_2024-02-08_114439_1707412253991_0.png)
+		- ![Screenshot 2024-02-08 114401.png](assets/Screenshot_2024-02-08_114401_1707412288338_0.png)
+		- ![Screenshot 2024-02-08 114348.png](assets/Screenshot_2024-02-08_114348_1707412293437_0.png)
+		- ![Screenshot 2024-02-08 114331.png](assets/Screenshot_2024-02-08_114331_1707412302063_0.png)
   - Over 15 years aligning technology roadmaps to strategic priorities across academic, government, and industry partners.
   - Proven leader in securing bids and instrumental in driving innovative projects forward​​.
 		- Spatial Computing and Immersive Platforms:
@@ -301,19 +303,19 @@ public:: true
 		- **Collaboration Example:**
 		- **Project Name:** "CROSSDRIVE 25M euro project for virtual exploration of Mars.
 		- **Role:** Technical deployment on Octave Multi Modal Laboratory.
-		- ![image.png](../assets/image_1707424255345_0.png)
+		- ![image.png](assets/image_1707424255345_0.png)
 		- **Outcome:** Worked with Dulcideo and the teams between 2014 and 2018. The above is still on the CrossDrive website.
 		- **Innovation in Gaming and Interactive Technologies**
 		- **Collaboration Example:**
 			- **Project Name:** "HTC Vive eSports lab"
-			- ![image.png](../assets/image_1707426690538_0.png)
+			- ![image.png](assets/image_1707426690538_0.png)
 			- **Role:** Conceived the project, secured funding through school, negotiated with HTC EMEA, the UoS eSports society, Maria Stokoff, and Andy Miah. This was bootstrapping a collaborative space for students, across schools, and external organisations, under my own direction.
 			- **Outcome:** Was ready to do the estates work buy when the pandemic unfortunately realigned priorities.
 		- **Project:** "Future Fleet
 		- NDA"
 		- **Role:** Co Founder and AI Lead.
 		- **Outcome:** Implemented GenAI algorithm integrated with a Cesium and [[Unreal Engine]] global ship digital twin system, to revolutionise ship to shore communications with Michal (ex thinklab), IBM, Patent Pending.
-		- ![labelled3D.png](../assets/labelled3D_1707471298514_0.png)
+		- ![labelled3D.png](assets/labelled3D_1707471298514_0.png)
 		- /upload -
 		- **Engagement and Visibility**: Increase readiness to engage publicly with project initiatives.
 		- **Engagement with the local Universities and academics.**
@@ -347,7 +349,7 @@ public:: true
 			- **Engagement Example:**
 				- **I use LinkedIn as my primary engagement tool:** I'll always jump at the chance to present my thoughts.""
 				- **Outcome:** nearly 200k impressions in the last year.
-				- ![image.png](../assets/image_1707423332833_0.png)
+				- ![image.png](assets/image_1707423332833_0.png)
 		- **Community Building Within the City and Region**
 			- **Community Initiative:**
 				- **Event:** "GenAI, Metaverse, and VP conference"

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Transport Protocol
 ```json-ld

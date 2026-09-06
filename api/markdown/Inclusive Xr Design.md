@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Inclusive Xr Design
 ```json-ld

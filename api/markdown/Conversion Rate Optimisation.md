@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Conversion Rate Optimisation
 ```json-ld

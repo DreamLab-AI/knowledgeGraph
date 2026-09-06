@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Pre-Trained Model
 ```json-ld

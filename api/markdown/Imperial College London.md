@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Imperial College London
 ```json-ld

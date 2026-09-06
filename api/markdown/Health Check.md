@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Health Check
 ```json-ld

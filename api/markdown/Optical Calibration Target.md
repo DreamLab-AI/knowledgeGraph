@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Optical Calibration Target
 ```json-ld

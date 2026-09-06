@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # sovereign ai
 ```json-ld

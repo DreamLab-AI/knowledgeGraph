@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Net Zero Targets
 ```json-ld

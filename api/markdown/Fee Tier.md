@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fee Tier
 ```json-ld

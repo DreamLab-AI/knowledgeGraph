@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ReLU Activation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Agentic RAG
 ```json-ld

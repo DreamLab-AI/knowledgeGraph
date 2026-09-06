@@ -1,5 +1,8 @@
-public:: true
-alias:: Cross-Chain Asset Transfer
+---
+public: true
+aliases:
+  - Cross-Chain Asset Transfer
+---
 
 # Cross Chain Asset Transfer
 ```json-ld

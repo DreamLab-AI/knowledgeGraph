@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TF-IDF
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # UK Online Safety Act
 ```json-ld

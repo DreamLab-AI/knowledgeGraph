@@ -1,5 +1,8 @@
-public:: true
-alias:: Long-Term Archival
+---
+public: true
+aliases:
+  - Long-Term Archival
+---
 
 # Long Term Archival
 ```json-ld

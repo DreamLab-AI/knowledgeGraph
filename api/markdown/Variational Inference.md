@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # variational inference
 ```json-ld

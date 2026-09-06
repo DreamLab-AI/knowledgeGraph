@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Browser Engine
 ```json-ld

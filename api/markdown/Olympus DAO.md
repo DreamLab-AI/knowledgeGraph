@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Olympus DAO
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Optimistic Oracle
 ```json-ld

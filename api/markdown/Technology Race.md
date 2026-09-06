@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Technology Race
 ```json-ld

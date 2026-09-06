@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Panoptic Segmentation
 ```json-ld

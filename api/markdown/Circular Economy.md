@@ -1,5 +1,8 @@
-public:: true
-alias:: CircularEconomy
+---
+public: true
+aliases:
+  - CircularEconomy
+---
 
 # Circular Economy
 ```json-ld

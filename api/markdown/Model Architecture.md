@@ -1,5 +1,8 @@
-public:: true
-alias:: ModelArchitecture
+---
+public: true
+aliases:
+  - ModelArchitecture
+---
 
 # Model Architecture
 ```json-ld

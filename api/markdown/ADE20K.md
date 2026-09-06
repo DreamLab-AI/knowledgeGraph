@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ADE20K
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: UnsupervisedLearning
+---
+public: true
+aliases:
+  - UnsupervisedLearning
+---
 
 # Unsupervised Learning
 ```json-ld

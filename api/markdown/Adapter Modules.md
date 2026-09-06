@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Adapter Modules
 ```json-ld

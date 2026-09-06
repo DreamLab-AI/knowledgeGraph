@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Order Book
 ```json-ld

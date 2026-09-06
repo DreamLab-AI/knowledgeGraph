@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Human Oversight
 ```json-ld

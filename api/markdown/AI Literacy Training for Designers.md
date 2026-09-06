@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Training for Design Practitioners]]
 # AI Literacy Training for Designers
@@ -234,28 +236,28 @@ elevatedFrom:: [[Training for Design Practitioners]]
 				- **Obsidian:** Recommended for building a personal knowledge base, linking ideas, and storing notes long-term.
 				- **Google Drive:** Use for storing documents and potentially allowing Gemini access.
 			- **Process:** Be deliberate about saving useful AI conversations/outputs and potentially tagging or linking them for future reference (e.g., saving a good prompt, storing generated text in Obsidian).
-  - DOING It takes a couple of months of pretty serious exploration to find where you are comfortable with AI.
+  - [ ] It takes a couple of months of pretty serious exploration to find where you are comfortable with AI.
 		- [[Gemini Multimodal Language Model]]
-  - DOING It typically takes a couple of months of focused exploration to become comfortable with AI tools and workflows.
+  - [ ] It typically takes a couple of months of focused exploration to become comfortable with AI tools and workflows.
   - {{embed ((66f3fee3-6b3f-48df-b61b-2ba06e75b1b4))}}
 		- It will ALWAYS help the AI for have more data about you. This can be done in a few ways
-			- DONE Cloud services offer simplicity and scale, whereas self-hosted models (e.g. running Stable Diffusion locally or deploying your own LLM) give you full control over data and costs.
-			- DOING [[Gemini Multimodal Language Model]] connected to Google Drive and all you data.
-			- DONE Loading data inline on each session gives precise control but can be time-consuming and requires expertise. Alternatively the platforms can manage this for you.
-			- DONE Available free with the [[Instruction-Following Conversational AI System]] tool. Convenient, but you may find it hard to separate business and personal content, and the process is largely a black box.
-			- DONE [[Retrieval Augmented Generation - RAG]] - Combines your own document store with AI retrieval. Steeper learning curve, but extremely powerful over the medium term for keeping knowledge up to date.
+			- [x] Cloud services offer simplicity and scale, whereas self-hosted models (e.g. running Stable Diffusion locally or deploying your own LLM) give you full control over data and costs.
+			- [ ] [[Gemini Multimodal Language Model]] connected to Google Drive and all you data.
+			- [x] Loading data inline on each session gives precise control but can be time-consuming and requires expertise. Alternatively the platforms can manage this for you.
+			- [x] Available free with the [[Instruction-Following Conversational AI System]] tool. Convenient, but you may find it hard to separate business and personal content, and the process is largely a black box.
+			- [x] [[Retrieval Augmented Generation - RAG]] - Combines your own document store with AI retrieval. Steeper learning curve, but extremely powerful over the medium term for keeping knowledge up to date.
 			- ‘[Markitdown](https://github.com/microsoft/markitdown)’ for converting Microsoft docs to Markdown
 			- [Obsidian](https://obsidian.md/) or Logseq for personal knowledge bases
-			- DOING Notion for collaborative wikis
+			- [ ] Notion for collaborative wikis
 			- [[Knowledge Graphing]] can help you to organise semi structured data.
-			- DOING Obsidian
-			- DONE Logseq
-			- DONE Notion
+			- [ ] Obsidian
+			- [x] Logseq
+			- [x] Notion
   - # Media Creation
 		- Landscape renders using custom Stable Diffusion LoRAs (for example, JJ’s Landscape Render, StreetScape and Ecology Park models on Civitai)
 		- General tools such as Midjourney, Stable Diffusion and DALL·E 3
-			- ![image.png](../assets/image_1745922516312_0.png)
-			- ![ChatGPT Image Apr 29, 2025, 11_37_28 AM.png](../assets/ChatGPT_Image_Apr_29,_2025,_11_37_28_AM_1745923062112_0.png)
+			- ![image.png](assets/image_1745922516312_0.png)
+			- ![ChatGPT Image Apr 29, 2025, 11_37_28 AM.png](assets/ChatGPT_Image_Apr_29,_2025,_11_37_28_AM_1745923062112_0.png)
 		- [[Image Generation]]
 			- Image processing from drawings
 		- [JJ's Landscape Render - XL v1.0 | Stable Diffusion XL LoRA | Civitai](https://civitai.com/models/257038/jjs-landscape-render)

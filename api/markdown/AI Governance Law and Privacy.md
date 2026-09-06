@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Politics, Law, Privacy]]
 # AI Governance Law and Privacy
@@ -309,11 +311,11 @@ elevatedFrom:: [[Politics, Law, Privacy]]
   - Politicians, law enforcement, and private companies have various constraints and restraints based on jurisdiction, but even strong laws like GDPR are routinely (always) ignored through technologies like browser fingerprinting.
 		- [Cover Your Tracks (eff.org)](https://coveryourtracks.eff.org/)
 		- [CreepJS (abrahamjuliot.github.io)](https://abrahamjuliot.github.io/creepjs/)
-  - ![1715109606571.jpeg](../assets/1715109606571_1715110469719_0.jpeg)
+  - ![1715109606571.jpeg](assets/1715109606571_1715110469719_0.jpeg)
   - logseq://graph/ResearchPapers?block-id=656c99ec-9ee4-46f5-bbf2-33f54f2090d9
   - As we have seen in the overturning of the USA abortion ban, the law can change, leaving individuals vulnerable to external forces. Googles promise to delete sensitive data in this case was not carried out. This is their business model and they are not our friends. Police went through 24GB of data from companies with key private chats provided by Meta in order to prosecute a 17 year old girl.
 		- [The Hidden-Pregnancy Experiment | The New Yorker](https://www.newyorker.com/culture/the-weekend-essay/the-hidden-pregnancy-experiment)
-  - ![image.png](../assets/image_1701614102581_0.png){:width 600}
+  - ![image.png](assets/image_1701614102581_0.png){:width 600}
   - [Justice John Roberts 2023 end of year report)](https://www.supremecourt.gov/publicinfo/year-end/2023year-endreport.pdf)
 		- And now we face the latest technological frontier: artificial intelligence (AI). At its core, AI combines algorithms and enormous data sets to solve problems. Its many forms and applications include the facial recognition we use to unlock our smart phones and the voice recognition we use to direct our smart televisions. Law professors report with both awe and angst that AI apparently can earn Bs on law school assignments and even pass the bar exam. Legal research may soon be unimaginable without it. AI obviously has great potential to dramatically increase access to key information for lawyers and non-lawyers alike. But just as obviously it risks invading privacy interests and dehumanizing the law.
 		- Proponents of AI tout its potential to increase access to justice, particularly for litigants with limited resources. Our court system has a monopoly on many forms of relief. If you want a discharge in bankruptcy, for example, you must see a federal judge. For those who cannot afford a lawyer, AI can help. It drives new, highly accessible tools that provide answers to basic questions, including where to find templates and court forms, how to fill them out, and where to bring them for presentation to the judge—all without leaving home. These tools have the welcome potential to smooth out any mismatch between available resources and urgent needs in our court system.

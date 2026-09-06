@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # GDPR Article 22 Compliance
 ```json-ld

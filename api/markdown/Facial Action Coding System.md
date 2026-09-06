@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Facial Action Coding System
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Relay Network
 ```json-ld

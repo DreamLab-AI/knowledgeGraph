@@ -1,5 +1,9 @@
-public:: true
-alias:: BC-0464-treasury-management, TreasuryManagement
+---
+public: true
+aliases:
+  - BC-0464-treasury-management
+  - TreasuryManagement
+---
 
 # Treasury Management
 ```json-ld

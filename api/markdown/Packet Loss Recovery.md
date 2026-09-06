@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Packet Loss Recovery
 ```json-ld

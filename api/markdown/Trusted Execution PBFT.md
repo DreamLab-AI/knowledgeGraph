@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Trusted Execution PBFT
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: ROS2
+---
+public: true
+aliases:
+  - ROS2
+---
 
 # ros 2
 ```json-ld

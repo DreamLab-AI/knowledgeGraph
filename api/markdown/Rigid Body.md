@@ -1,5 +1,8 @@
-public:: true
-alias:: RigidBody
+---
+public: true
+aliases:
+  - RigidBody
+---
 
 # Rigid Body
 ```json-ld

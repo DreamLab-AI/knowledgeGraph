@@ -1,5 +1,8 @@
-public:: true
-alias:: Chain of Thought Reasoning
+---
+public: true
+aliases:
+  - Chain of Thought Reasoning
+---
 
 # chain-of-thought reasoning
 ```json-ld

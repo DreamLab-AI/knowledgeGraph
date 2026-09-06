@@ -1,5 +1,9 @@
-public:: true
-alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
+---
+public: true
+aliases:
+  - BC-0431-privacy-preserving-blockchain
+  - Privacy-Preserving Blockchain
+---
 
 # Privacy Preserving Blockchain
 ```json-ld

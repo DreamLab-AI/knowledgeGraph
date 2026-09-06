@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # on-chain governance
 ```json-ld

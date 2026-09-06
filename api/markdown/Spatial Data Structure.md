@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Spatial Data Structure
 ```json-ld

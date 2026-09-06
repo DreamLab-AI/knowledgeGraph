@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Image-to-Image
 ```json-ld

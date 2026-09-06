@@ -1,5 +1,8 @@
-public:: true
-alias:: ComputeResources
+---
+public: true
+aliases:
+  - ComputeResources
+---
 
 # Compute Resources
 ```json-ld

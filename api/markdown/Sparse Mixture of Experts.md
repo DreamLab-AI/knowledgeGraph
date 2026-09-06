@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sparse Mixture of Experts
 ```json-ld

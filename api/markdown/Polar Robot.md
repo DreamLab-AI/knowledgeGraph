@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Polar Robot
 ```json-ld

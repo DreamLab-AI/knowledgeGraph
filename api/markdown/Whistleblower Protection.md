@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Whistleblower Protection
 ```json-ld

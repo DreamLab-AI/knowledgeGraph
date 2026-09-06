@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Enterprise Ethereum Alliance Specification
 ```json-ld

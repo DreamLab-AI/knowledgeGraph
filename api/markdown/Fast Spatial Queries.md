@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fast Spatial Queries
 ```json-ld

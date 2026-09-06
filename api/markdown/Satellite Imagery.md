@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Satellite Imagery
 ```json-ld

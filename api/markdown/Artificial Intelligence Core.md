@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Artificial Intelligence Core
 ```json-ld

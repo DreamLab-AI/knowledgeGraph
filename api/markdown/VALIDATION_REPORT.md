@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # VALIDATION_REPORT
 ```json-ld

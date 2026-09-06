@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Material Flow Analysis
 ```json-ld

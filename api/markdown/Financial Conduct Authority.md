@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Financial Conduct Authority
 ```json-ld

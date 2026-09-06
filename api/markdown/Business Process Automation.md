@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Business Process Automation
 ```json-ld

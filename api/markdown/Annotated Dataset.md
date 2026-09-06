@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Annotated Dataset
 ```json-ld

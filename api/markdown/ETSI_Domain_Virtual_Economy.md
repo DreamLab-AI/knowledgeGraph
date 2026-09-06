@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ETSI_Domain_Virtual_Economy
 ```json-ld

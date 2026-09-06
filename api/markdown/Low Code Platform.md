@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Low Code Platform
 ```json-ld

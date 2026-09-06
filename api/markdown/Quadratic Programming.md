@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Quadratic Programming
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Federated Identity System
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Back-Translation
 ```json-ld

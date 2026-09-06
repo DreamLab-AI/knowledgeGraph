@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hardware Abstraction Layer (HAL)
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: KinematicChain
+---
+public: true
+aliases:
+  - KinematicChain
+---
 
 # Kinematic Chain
 ```json-ld

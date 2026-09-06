@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # High-Frequency Trading
 ```json-ld

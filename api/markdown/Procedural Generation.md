@@ -1,5 +1,8 @@
-public:: true
-alias:: ProceduralGeneration
+---
+public: true
+aliases:
+  - ProceduralGeneration
+---
 
 # Procedural Generation
 ```json-ld

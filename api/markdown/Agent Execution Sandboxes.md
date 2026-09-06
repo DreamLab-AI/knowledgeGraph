@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Agent Execution Sandboxes
 ```json-ld

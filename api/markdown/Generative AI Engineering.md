@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Generative AI Engineering
 ```json-ld

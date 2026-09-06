@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Incentive Alignment
 ```json-ld

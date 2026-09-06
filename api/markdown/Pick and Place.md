@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Pick and Place
 ```json-ld

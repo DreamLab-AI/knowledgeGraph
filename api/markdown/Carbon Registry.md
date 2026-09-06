@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Carbon Registry
 ```json-ld

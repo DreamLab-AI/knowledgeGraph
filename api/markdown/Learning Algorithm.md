@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Learning Algorithm
 ```json-ld

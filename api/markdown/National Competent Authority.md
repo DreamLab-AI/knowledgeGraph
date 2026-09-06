@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # National Competent Authority
 ```json-ld

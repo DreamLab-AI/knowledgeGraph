@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sensory Feedback
 ```json-ld

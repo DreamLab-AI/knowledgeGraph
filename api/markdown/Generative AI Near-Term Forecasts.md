@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Predictions]]
 # Generative AI Near-Term Forecasts

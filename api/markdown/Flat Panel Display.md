@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Flat Panel Display
 

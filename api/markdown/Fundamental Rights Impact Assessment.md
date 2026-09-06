@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fundamental Rights Impact Assessment
 

@@ -1,5 +1,8 @@
-public:: true
-alias:: Search & Discovery
+---
+public: true
+aliases:
+  - Search & Discovery
+---
 
 # Search Discovery
 ```json-ld

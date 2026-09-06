@@ -1,5 +1,8 @@
-public:: true
-alias:: ValueFunction
+---
+public: true
+aliases:
+  - ValueFunction
+---
 
 # Value Function
 ```json-ld

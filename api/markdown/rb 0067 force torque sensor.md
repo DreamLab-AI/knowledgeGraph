@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0067 force torque sensor
 ```json-ld

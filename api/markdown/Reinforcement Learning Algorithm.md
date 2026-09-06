@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reinforcement Learning Algorithm
 ```json-ld

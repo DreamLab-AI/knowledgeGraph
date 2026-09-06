@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AI Model Inference Engine
 ```json-ld

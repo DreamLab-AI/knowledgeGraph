@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Drug Discovery AI
 ```json-ld

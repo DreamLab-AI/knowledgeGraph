@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # High Bandwidth Memory
 ```json-ld

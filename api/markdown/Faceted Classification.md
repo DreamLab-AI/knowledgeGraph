@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Faceted Classification
 ```json-ld

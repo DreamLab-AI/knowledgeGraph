@@ -1,5 +1,8 @@
-public:: true
-alias:: RegulatoryFramework
+---
+public: true
+aliases:
+  - RegulatoryFramework
+---
 
 # Regulatory Framework
 ```json-ld

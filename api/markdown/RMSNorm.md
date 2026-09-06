@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rmsnorm
 ```json-ld

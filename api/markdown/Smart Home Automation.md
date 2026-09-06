@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Smart Home Automation
 ```json-ld

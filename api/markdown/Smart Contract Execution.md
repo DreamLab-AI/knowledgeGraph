@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # smart contract execution
 ```json-ld

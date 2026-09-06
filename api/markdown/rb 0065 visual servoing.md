@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0065 visual servoing
 ```json-ld

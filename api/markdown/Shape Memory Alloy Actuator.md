@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Shape Memory Alloy Actuator
 ```json-ld

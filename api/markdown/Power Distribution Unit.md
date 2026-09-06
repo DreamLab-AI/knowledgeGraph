@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Power Distribution Unit
 ```json-ld

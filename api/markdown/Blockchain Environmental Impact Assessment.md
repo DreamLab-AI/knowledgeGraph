@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Blockchain Environmental Impact Assessment
 ```json-ld

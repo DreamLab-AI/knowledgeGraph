@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ROS Navigation Stack
 ```json-ld

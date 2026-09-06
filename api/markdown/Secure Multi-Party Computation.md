@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Secure Multi-Party Computation
 ```json-ld

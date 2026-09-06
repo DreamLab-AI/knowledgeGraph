@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Side-Channel Attack
 ```json-ld

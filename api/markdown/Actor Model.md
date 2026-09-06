@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Actor Model
 ```json-ld

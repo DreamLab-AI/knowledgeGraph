@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Dagger]]
 # Dagger CI Pipeline Engine

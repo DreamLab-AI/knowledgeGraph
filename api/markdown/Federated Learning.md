@@ -1,5 +1,8 @@
-public:: true
-alias:: FederatedLearning
+---
+public: true
+aliases:
+  - FederatedLearning
+---
 
 # Federated Learning
 ```json-ld

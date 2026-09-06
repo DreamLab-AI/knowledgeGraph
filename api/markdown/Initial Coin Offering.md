@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Initial Coin Offering
 ```json-ld

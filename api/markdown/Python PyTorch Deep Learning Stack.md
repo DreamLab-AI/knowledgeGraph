@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Python and PyTorch]]
 # Python PyTorch Deep Learning Stack

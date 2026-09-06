@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # comfyui manager
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Density Estimation
 ```json-ld

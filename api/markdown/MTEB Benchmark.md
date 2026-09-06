@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # MTEB Benchmark
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Perimeter Security
 ```json-ld

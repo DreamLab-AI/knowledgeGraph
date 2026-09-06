@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # EU AI Act Article 53
 ```json-ld

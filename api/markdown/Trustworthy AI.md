@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # trustworthy ai
 ```json-ld

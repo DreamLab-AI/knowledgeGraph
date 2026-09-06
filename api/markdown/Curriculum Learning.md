@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Curriculum Learning
 ```json-ld

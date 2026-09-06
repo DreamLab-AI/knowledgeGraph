@@ -1,5 +1,8 @@
-public:: true
-alias:: R3Corda
+---
+public: true
+aliases:
+  - R3Corda
+---
 
 # R3 Corda
 ```json-ld

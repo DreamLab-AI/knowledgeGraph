@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Warehouse Management System
 ```json-ld

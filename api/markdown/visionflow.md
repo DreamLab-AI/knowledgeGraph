@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # visionflow
 ```json-ld

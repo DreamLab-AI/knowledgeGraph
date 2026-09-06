@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Multisignature
 ```json-ld

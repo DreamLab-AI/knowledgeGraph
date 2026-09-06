@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0056 impedance control
 ```json-ld

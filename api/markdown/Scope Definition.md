@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Scope Definition
 ```json-ld

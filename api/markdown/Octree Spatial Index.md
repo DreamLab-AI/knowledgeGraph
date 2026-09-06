@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Octree Spatial Index
 ```json-ld

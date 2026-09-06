@@ -1,5 +1,8 @@
-public:: true
-alias:: GenerativeAI
+---
+public: true
+aliases:
+  - GenerativeAI
+---
 
 # Generative AI
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Presentation%3A Conclusion]]
 # Presentation Concluding Synthesis Slide

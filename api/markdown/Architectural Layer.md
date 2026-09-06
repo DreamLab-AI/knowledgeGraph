@@ -1,5 +1,8 @@
-public:: true
-alias:: ArchitecturalLayer
+---
+public: true
+aliases:
+  - ArchitecturalLayer
+---
 
 # Architectural Layer
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Self-Sovereign Identity (SSI)
 ```json-ld

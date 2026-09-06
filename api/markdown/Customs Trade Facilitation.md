@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Customs Trade Facilitation
 ```json-ld

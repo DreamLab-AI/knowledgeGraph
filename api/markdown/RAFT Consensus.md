@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # raft consensus
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: SpatialAudio
+---
+public: true
+aliases:
+  - SpatialAudio
+---
 
 # Spatial Audio
 ```json-ld

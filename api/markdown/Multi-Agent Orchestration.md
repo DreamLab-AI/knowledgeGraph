@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Multi-Agent Orchestration
 ```json-ld

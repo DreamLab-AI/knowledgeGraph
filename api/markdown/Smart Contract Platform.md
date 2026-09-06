@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Smart Contract Platform
 ```json-ld

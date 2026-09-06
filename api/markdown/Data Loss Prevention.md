@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Data Loss Prevention
 ```json-ld

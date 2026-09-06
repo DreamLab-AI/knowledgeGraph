@@ -1,5 +1,8 @@
-public:: true
-alias:: DistributedWork
+---
+public: true
+aliases:
+  - DistributedWork
+---
 
 # Distributed Work
 ```json-ld

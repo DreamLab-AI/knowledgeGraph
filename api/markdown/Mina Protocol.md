@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mina Protocol
 ```json-ld

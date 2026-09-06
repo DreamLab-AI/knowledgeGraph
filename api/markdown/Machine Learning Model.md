@@ -1,5 +1,8 @@
-public:: true
-alias:: MachineLearningModel
+---
+public: true
+aliases:
+  - MachineLearningModel
+---
 
 # Machine Learning Model
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Denoising Score Matching
 ```json-ld

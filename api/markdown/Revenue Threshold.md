@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Revenue Threshold
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Knowledge Co-Construction
 ```json-ld

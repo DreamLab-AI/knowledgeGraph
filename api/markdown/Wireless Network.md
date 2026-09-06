@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Wireless Network
 ```json-ld

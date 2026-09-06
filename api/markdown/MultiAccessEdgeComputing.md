@@ -1,5 +1,8 @@
-public:: true
-alias:: Multi-access Edge Computing
+---
+public: true
+aliases:
+  - Multi-access Edge Computing
+---
 
 # MultiAccessEdgeComputing
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Update Cycle]]
 # Knowledge Artefact Update Cycle

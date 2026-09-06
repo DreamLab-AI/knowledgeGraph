@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Agentic Workflow
 ```json-ld

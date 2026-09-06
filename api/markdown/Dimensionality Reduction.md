@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Dimensionality Reduction
 ```json-ld

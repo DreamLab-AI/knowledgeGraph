@@ -1,5 +1,8 @@
-public:: true
-alias:: TaxonomicFramework
+---
+public: true
+aliases:
+  - TaxonomicFramework
+---
 
 # Taxonomic Framework
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Pathology AI
 ```json-ld

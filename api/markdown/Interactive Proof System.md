@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Interactive Proof System
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Operational Layer
 ```json-ld

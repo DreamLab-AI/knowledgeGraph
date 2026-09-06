@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hardware Acceleration
 ```json-ld

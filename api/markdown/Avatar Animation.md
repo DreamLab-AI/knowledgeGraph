@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Avatar Animation
 ```json-ld

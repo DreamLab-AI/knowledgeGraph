@@ -1,5 +1,8 @@
-public:: true
-alias:: TechnologyAdoption
+---
+public: true
+aliases:
+  - TechnologyAdoption
+---
 
 # Technology Adoption
 ```json-ld

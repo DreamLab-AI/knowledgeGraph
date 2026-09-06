@@ -1,5 +1,8 @@
-public:: true
-alias:: CollectiveIntelligence
+---
+public: true
+aliases:
+  - CollectiveIntelligence
+---
 
 # Collective Intelligence
 ```json-ld

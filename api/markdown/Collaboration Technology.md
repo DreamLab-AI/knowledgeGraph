@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Collaboration Technology
 ```json-ld

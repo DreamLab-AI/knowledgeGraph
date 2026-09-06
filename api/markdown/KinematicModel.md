@@ -1,5 +1,8 @@
-public:: true
-alias:: Kinematic Model
+---
+public: true
+aliases:
+  - Kinematic Model
+---
 
 # kinematicmodel
 ```json-ld

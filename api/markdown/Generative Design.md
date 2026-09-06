@@ -1,5 +1,8 @@
-public:: true
-alias:: GenerativeDesign
+---
+public: true
+aliases:
+  - GenerativeDesign
+---
 
 # Generative Design
 ```json-ld

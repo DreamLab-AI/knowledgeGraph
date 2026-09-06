@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Evidence-Based Design
 ```json-ld

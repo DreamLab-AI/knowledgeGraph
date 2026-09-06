@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Backup and Recovery
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Resilience Engineering
 ```json-ld

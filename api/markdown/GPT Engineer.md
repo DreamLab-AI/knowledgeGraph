@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # GPT Engineer
 ```json-ld

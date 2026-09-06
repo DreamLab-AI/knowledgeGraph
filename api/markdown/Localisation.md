@@ -1,5 +1,8 @@
-public:: true
-alias:: Localization
+---
+public: true
+aliases:
+  - Localization
+---
 
 # localisation
 ```json-ld

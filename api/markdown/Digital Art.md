@@ -1,5 +1,8 @@
-public:: true
-alias:: DigitalArt
+---
+public: true
+aliases:
+  - DigitalArt
+---
 
 # Digital Art
 ```json-ld

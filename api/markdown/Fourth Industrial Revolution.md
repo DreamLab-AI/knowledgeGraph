@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fourth Industrial Revolution
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # LoRaWAN
 ```json-ld

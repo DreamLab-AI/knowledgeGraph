@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Anonymous Credential
 ```json-ld

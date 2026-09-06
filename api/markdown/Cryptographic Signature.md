@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # cryptographic signature
 ```json-ld

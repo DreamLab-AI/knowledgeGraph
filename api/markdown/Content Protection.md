@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Content Protection
 ```json-ld

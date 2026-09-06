@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Data Analytics
 ```json-ld

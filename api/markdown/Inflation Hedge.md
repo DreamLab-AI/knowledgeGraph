@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Inflation Hedge
 ```json-ld

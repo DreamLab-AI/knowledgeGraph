@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Blob Transaction
 ```json-ld

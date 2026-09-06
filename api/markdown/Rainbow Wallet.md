@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Rainbow Wallet
 ```json-ld

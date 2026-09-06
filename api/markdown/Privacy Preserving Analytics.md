@@ -1,5 +1,8 @@
-public:: true
-alias:: Privacy-Preserving Analytics
+---
+public: true
+aliases:
+  - Privacy-Preserving Analytics
+---
 
 # Privacy Preserving Analytics
 ```json-ld

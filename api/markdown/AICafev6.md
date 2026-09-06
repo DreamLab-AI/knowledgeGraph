@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AICafev6
 ```json-ld
@@ -129,12 +131,12 @@ public:: true
   - {{video https://youtu.be/cEqt-OnlBzY}}
   - {{video https://youtu.be/3wMCUgBEjos}}
   - # Examples of things it's made
-		- ![OctaveBigData.mp4](../assets/OctaveBigData_1759325311429_0.mp4)
+		- ![OctaveBigData.mp4](assets/OctaveBigData_1759325311429_0.mp4)
 		- ![groupOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/groupOctave.jpg?raw=true){:height 659, :width 1158}
 		- ![ChloeOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/ChloeOctave.jpg?raw=true)
-		- ![image.png](../assets/visionflow-architecture-diagram.png){:height 1804, :width 1167}
+		- ![image.png](assets/visionflow-architecture-diagram.png){:height 1804, :width 1167}
 			- <iframe src="https://jjohare.github.io/visionflowwebsite/" style="width: 100%; height: 600px"></iframe>
-					- ![image.png](../assets/image_1759159517520_0.png){:height 798, :width 708}
+					- ![image.png](assets/image_1759159517520_0.png){:height 798, :width 708}
 		- ```
 		  a preamp with a bit of character,
 		  not too expensive, nothing too flashy, 
@@ -215,31 +217,31 @@ public:: true
 							- 4. kicad.run_drc - Validated PCB design rules
 							- 5. kicad.generate_bom - Created component list with 32 parts
 							- The design is 95% production-ready - just needs the edge connector moved 1mm inward to pass final DRC. All specifications from task.md have been met and verified using the MCP tools!
-		- ![Screenshot 2025-07-28 114502.png](../assets/kicad-preamp-pcb-layout.png)
+		- ![Screenshot 2025-07-28 114502.png](assets/kicad-preamp-pcb-layout.png)
   - ## World Class Immersive System Quote
 		- Three tier quote in 4 hours.
 		- 300 pages
 		- Selected the team and branding guidelines from the DreamLab website
-			- ![image.png](../assets/cave-quote-document-pages.png)
-			- ![image.png](../assets/cave-quote-audio-spec-page.png)
+			- ![image.png](assets/cave-quote-document-pages.png)
+			- ![image.png](assets/cave-quote-audio-spec-page.png)
 		- Includes things like HVAC, detailed specifications
 		- Created a website to pitch it, which was kinda slop and made wild claims.
-		- ![CaveSystemQuote.pdf](../assets/cave-system-quote-document.pdf)
+		- ![CaveSystemQuote.pdf](assets/cave-system-quote-document.pdf)
   - ## Business Case for DreamLab Cumbria
 		- ### Market Analysis
-			- ![Screenshot 2025-07-11 224637.png](../assets/Screenshot_2025-07-11_224637_1759158829593_0.png)
+			- ![Screenshot 2025-07-11 224637.png](assets/Screenshot_2025-07-11_224637_1759158829593_0.png)
 		- ### 300 pages of report
-			- ![image.png](../assets/image_1759157795020_0.png)
-		- ![DreamLabCumbria.pdf](../assets/DreamLabCumbria_1759151307438_0.pdf)
+			- ![image.png](assets/image_1759157795020_0.png)
+		- ![DreamLabCumbria.pdf](assets/DreamLabCumbria_1759151307438_0.pdf)
 		- ### A website for my company (free hosting auto push to github pages)
 			- [DreamLab AI Consulting Ltd.](https://dreamlab-ai.com/)
 			- <iframe src="https://www.dreamlab-ai.com" style="width: 100%; height: 600px"></iframe>
-			- ![image.png](../assets/image_1759158444878_0.png)
+			- ![image.png](assets/image_1759158444878_0.png)
 			- ### Automated course material with diagrams based on audio recordings
-			- ![image.png](../assets/image_1759158570382_0.png)
+			- ![image.png](assets/image_1759158570382_0.png)
   - ## Blender
 		- ### First attempt, test scene in a headless container - just returned the PNG
-			- ![Screenshot 2025-07-15 075620.png](../assets/blender-mcp-first-test-scene.png)
+			- ![Screenshot 2025-07-15 075620.png](assets/blender-mcp-first-test-scene.png)
 		- ### Gimme a swarm of Shuriken
 			- ```
 			  connect to the blender mcp and create me a swarm of shurikan which exhibit flocking behaviour. 

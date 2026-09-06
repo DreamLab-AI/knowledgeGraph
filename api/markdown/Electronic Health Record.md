@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Electronic Health Record
 ```json-ld

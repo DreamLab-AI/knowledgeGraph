@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Interaction Logging
 ```json-ld

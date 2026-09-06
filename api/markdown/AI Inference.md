@@ -1,5 +1,8 @@
-public:: true
-alias:: AI-inference
+---
+public: true
+aliases:
+  - AI-inference
+---
 
 # AI Inference
 ```json-ld

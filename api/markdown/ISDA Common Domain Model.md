@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ISDA Common Domain Model
 ```json-ld

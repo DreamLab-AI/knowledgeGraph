@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Bayesian Knowledge Tracing
 ```json-ld

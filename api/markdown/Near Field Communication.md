@@ -1,5 +1,8 @@
-public:: true
-alias:: Near-Field Communication
+---
+public: true
+aliases:
+  - Near-Field Communication
+---
 
 # Near Field Communication
 ```json-ld

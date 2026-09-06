@@ -1,5 +1,8 @@
-public:: true
-alias:: AI & Machine Learning
+---
+public: true
+aliases:
+  - AI & Machine Learning
+---
 
 # Ai Machine Learning
 ```json-ld

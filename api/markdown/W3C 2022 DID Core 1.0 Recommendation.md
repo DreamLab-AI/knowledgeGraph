@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # W3C 2022 DID Core 1.0 Recommendation
 ```json-ld

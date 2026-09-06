@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Twin of the Customer
 ```json-ld

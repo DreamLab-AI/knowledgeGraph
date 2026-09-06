@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IEEE Control Systems Society
 ```json-ld

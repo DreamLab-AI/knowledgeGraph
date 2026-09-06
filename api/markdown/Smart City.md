@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Smart City
 ```json-ld

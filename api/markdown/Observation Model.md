@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Observation Model
 ```json-ld

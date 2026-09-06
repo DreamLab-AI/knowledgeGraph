@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reciprocal Rank Fusion
 ```json-ld

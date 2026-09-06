@@ -1357,10 +1357,6 @@
       "label": "ETSIDomainClassification"
     },
     {
-      "slug": "etsi-domain-governance-security",
-      "label": "ETSI_Domain_Governance_Security"
-    },
-    {
       "slug": "etsi-domain-governance-economy",
       "label": "ETSI_Domain_Governance___Economy"
     },
@@ -1369,8 +1365,8 @@
       "label": "ETSI_Domain_Governance___Society"
     },
     {
-      "slug": "etsi-domain-human-interface",
-      "label": "ETSI_Domain_Human_Interface"
+      "slug": "etsi-domain-governance-security",
+      "label": "ETSI_Domain_Governance_Security"
     },
     {
       "slug": "etsi-domain-human-interface-governance",
@@ -1381,20 +1377,12 @@
       "label": "ETSI_Domain_Human_Interface___UX"
     },
     {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
+    },
+    {
       "slug": "etsi-domain-immersive-experiences",
       "label": "ETSI_Domain_Immersive_Experiences"
-    },
-    {
-      "slug": "etsi-domain-infrastructure",
-      "label": "ETSI_Domain_Infrastructure"
-    },
-    {
-      "slug": "etsi-domain-infrastructure",
-      "label": "ETSI_Domain_Infrastructure"
-    },
-    {
-      "slug": "etsi-domain-infrastructure-data",
-      "label": "ETSI_Domain_Infrastructure_Data"
     },
     {
       "slug": "etsi-domain-infrastructure-governance",
@@ -1409,20 +1397,32 @@
       "label": "ETSI_Domain_Infrastructure___Security"
     },
     {
-      "slug": "etsi-domain-interoperability",
-      "label": "ETSI_Domain_Interoperability"
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-data",
+      "label": "ETSI_Domain_Infrastructure_Data"
     },
     {
       "slug": "etsi-domain-interoperability-creative",
       "label": "ETSI_Domain_Interoperability___Creative"
     },
     {
-      "slug": "etsi-domain-reality-capture",
-      "label": "ETSI_Domain_Reality_Capture"
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
     },
     {
       "slug": "etsi-domain-reality-capture-creative",
       "label": "ETSI_Domain_Reality_Capture___Creative"
+    },
+    {
+      "slug": "etsi-domain-reality-capture",
+      "label": "ETSI_Domain_Reality_Capture"
     },
     {
       "slug": "etsi-domain-virtual-economy",

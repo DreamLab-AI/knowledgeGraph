@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Dispute Resolution Mechanism
 ```json-ld

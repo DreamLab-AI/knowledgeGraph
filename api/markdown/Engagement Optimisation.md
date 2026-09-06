@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Engagement Optimisation
 ```json-ld

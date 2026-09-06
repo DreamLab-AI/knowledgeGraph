@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cyber Security and Cryptography
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Intrusion Detection
 ```json-ld

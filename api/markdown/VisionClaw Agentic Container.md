@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # VisionClaw Agentic Container
 ```json-ld

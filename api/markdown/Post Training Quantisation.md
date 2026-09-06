@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Post Training Quantisation
 ```json-ld

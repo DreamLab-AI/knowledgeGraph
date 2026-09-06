@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Dynamic Scalable BFT
 ```json-ld

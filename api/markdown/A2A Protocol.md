@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # A2A Protocol
 ```json-ld

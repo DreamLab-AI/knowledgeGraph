@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Open Webui and Pipelines
 ```json-ld

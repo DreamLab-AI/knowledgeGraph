@@ -1,5 +1,8 @@
-public:: true
-alias:: TimelockController
+---
+public: true
+aliases:
+  - TimelockController
+---
 
 # Timelock Controller
 ```json-ld

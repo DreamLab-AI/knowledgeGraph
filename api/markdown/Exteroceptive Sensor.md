@@ -1,5 +1,8 @@
-public:: true
-alias:: ExteroceptiveSensor
+---
+public: true
+aliases:
+  - ExteroceptiveSensor
+---
 
 # Exteroceptive Sensor
 ```json-ld

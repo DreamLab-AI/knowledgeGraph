@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sigma-Algebra
 ```json-ld

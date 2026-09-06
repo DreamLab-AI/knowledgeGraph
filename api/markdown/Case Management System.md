@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Case Management System
 ```json-ld

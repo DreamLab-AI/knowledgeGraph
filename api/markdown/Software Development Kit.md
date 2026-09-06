@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Software Development Kit
 ```json-ld

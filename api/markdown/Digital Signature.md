@@ -1,5 +1,9 @@
-public:: true
-alias:: Digital-Signature, DigitalSignature
+---
+public: true
+aliases:
+  - Digital-Signature
+  - DigitalSignature
+---
 
 # Digital Signature
 ```json-ld

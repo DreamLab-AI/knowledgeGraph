@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Humaninthe Loop Learning
 ```json-ld

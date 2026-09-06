@@ -1,5 +1,8 @@
-public:: true
-alias:: KnowledgeOrganizationSystem
+---
+public: true
+aliases:
+  - KnowledgeOrganizationSystem
+---
 
 # Knowledge Organization System
 ```json-ld

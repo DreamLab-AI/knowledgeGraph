@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # tendermint
 ```json-ld

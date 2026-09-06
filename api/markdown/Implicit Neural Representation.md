@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Implicit Neural Representation
 

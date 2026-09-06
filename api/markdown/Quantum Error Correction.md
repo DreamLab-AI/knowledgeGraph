@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Quantum Error Correction
 ```json-ld

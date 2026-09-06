@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Programming Language
 ```json-ld

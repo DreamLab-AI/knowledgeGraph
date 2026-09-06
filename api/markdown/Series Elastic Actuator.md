@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Series Elastic Actuator
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: DataLayer
+---
+public: true
+aliases:
+  - DataLayer
+---
 
 # Data Layer
 ```json-ld

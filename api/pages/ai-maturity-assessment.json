@@ -1,0 +1,221 @@
+{
+  "id": "urn:visionflow:page:ai-maturity-assessment",
+  "title": "AI Maturity Assessment",
+  "slug": "ai-maturity-assessment",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-maturity-assessment",
+  "domain": "governance",
+  "definition": "A structured framework for evaluating an organization's readiness and capability in adopting and integrating AI technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:enterprise-ai",
+      "label": "Enterprise Ai"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise Ai"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-automation",
+        "label": "Enterprise Automation"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-copilot",
+        "label": "Microsoft Copilot"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-ai-adoption",
+        "label": "Enterprise AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

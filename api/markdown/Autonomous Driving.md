@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # autonomous driving
 ```json-ld

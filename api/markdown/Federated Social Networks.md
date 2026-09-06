@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Federated Social Networks
 ```json-ld

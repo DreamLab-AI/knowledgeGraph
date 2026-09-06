@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[today presentation 2]]
 # Knowledge Graph Presentation Session Artefact

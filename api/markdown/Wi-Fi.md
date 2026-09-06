@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Wi-Fi
 ```json-ld

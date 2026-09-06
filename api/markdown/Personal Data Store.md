@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Personal Data Store
 ```json-ld

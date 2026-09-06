@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[PEOPLE]]
 # Domain Expert Contact Index
@@ -211,7 +213,7 @@ elevatedFrom:: [[PEOPLE]]
 - ### Content
   # Nick Avis
 		- Nick is after a CTO for his new project which is ostensibly training for ultrasound using graphics that are hand made, but it is trending toward GenAI
-		- DONE Send a LinkedIn message to catch up soon. Follow up #SHOULD
+		- [x] Send a LinkedIn message to catch up soon. Follow up #SHOULD
 			- Thanks for the link
 		- looks great and to win the STAR at MICCAI it must be good/leading edge
 		   I'm still pursuing the opportunity I mentioned to you in Manchester

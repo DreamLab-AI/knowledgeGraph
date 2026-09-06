@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Predictive Analytics
 ```json-ld

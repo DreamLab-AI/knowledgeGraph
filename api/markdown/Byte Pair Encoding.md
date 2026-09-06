@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Byte Pair Encoding
 ```json-ld

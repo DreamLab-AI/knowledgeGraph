@@ -1,6 +1,9 @@
-public:: true
-elevatedFrom:: [[Semantic Web]]
-alias:: semanticWeb
+---
+public: true
+aliases:
+  - semanticWeb
+elevatedFrom: "[[Semantic Web]]"
+---
 
 # Semantic Web Linked Data Standard
 ```json-ld

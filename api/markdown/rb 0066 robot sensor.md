@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0066 robot sensor
 ```json-ld

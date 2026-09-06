@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stakeholder Engagement in AI
 ```json-ld

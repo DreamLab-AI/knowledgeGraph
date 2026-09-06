@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # CPMI-IOSCO PFMI
 ```json-ld

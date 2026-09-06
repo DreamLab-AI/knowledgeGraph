@@ -1,5 +1,8 @@
-public:: true
-alias:: Behavior Tree
+---
+public: true
+aliases:
+  - Behavior Tree
+---
 
 # Behaviour Tree
 ```json-ld

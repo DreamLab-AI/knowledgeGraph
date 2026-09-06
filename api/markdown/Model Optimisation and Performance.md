@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Model Optimisation and Performance
 ```json-ld

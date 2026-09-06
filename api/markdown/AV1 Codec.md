@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AV1 Codec
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cryptographic Key Management
 ```json-ld

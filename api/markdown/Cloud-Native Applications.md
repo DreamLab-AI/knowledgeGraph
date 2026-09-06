@@ -1,5 +1,8 @@
-public:: true
-alias:: CloudNativeApplications
+---
+public: true
+aliases:
+  - CloudNativeApplications
+---
 
 # Cloud-Native Applications
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # grouped query attention
 ```json-ld

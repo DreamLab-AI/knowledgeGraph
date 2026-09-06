@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # High Risk AI System
 ```json-ld

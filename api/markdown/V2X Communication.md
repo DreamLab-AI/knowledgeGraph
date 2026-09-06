@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # V2X Communication
 ```json-ld

@@ -1,6 +1,10 @@
-public:: true
-elevatedFrom:: [[Quantum Computing]]
-alias:: Quantum-Computing, QuantumComputing
+---
+public: true
+aliases:
+  - Quantum-Computing
+  - QuantumComputing
+elevatedFrom: "[[Quantum Computing]]"
+---
 
 # Quantum Computation Paradigm
 ```json-ld

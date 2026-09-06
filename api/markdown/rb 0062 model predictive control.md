@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0062 model predictive control
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Temporal Difference Learning
 ```json-ld

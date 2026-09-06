@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0039 stiffness
 ```json-ld

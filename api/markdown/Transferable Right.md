@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Transferable Right
 ```json-ld

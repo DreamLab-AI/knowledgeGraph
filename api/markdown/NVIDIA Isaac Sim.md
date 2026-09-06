@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NVIDIA Isaac Sim
 ```json-ld

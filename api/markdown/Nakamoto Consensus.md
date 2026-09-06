@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Nakamoto Consensus
 ```json-ld

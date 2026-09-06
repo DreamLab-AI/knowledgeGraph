@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Liverpool Smart Cities
 ```json-ld

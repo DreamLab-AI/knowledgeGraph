@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Light Node
 ```json-ld

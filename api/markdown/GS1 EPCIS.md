@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # GS1 EPCIS
 ```json-ld

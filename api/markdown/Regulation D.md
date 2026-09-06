@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Regulation D
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: ComputeLayer
+---
+public: true
+aliases:
+  - ComputeLayer
+---
 
 # Compute Layer
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Transparent Data Processing
 ```json-ld

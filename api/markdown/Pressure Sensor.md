@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Pressure Sensor
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Particle Filter
 ```json-ld

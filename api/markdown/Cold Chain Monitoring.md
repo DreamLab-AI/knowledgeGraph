@@ -1,5 +1,8 @@
-public:: true
-alias:: ColdChainMonitoring
+---
+public: true
+aliases:
+  - ColdChainMonitoring
+---
 
 # Cold Chain Monitoring
 ```json-ld

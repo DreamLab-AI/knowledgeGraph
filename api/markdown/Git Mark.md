@@ -1,5 +1,10 @@
-public:: true
-alias:: Git-mark, git-mark, Gitmark
+---
+public: true
+aliases:
+  - Git-mark
+  - git-mark
+  - Gitmark
+---
 
 # Git Mark
 ```json-ld

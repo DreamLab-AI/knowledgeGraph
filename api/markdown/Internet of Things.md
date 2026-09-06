@@ -1,5 +1,8 @@
-public:: true
-alias:: InternetOfThings
+---
+public: true
+aliases:
+  - InternetOfThings
+---
 
 # internet of things
 ```json-ld

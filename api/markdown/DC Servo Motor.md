@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # DC Servo Motor
 ```json-ld

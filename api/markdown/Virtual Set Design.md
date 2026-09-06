@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Set Design
 ```json-ld

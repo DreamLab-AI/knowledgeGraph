@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Model Pruning for Edge Deployment
 ```json-ld

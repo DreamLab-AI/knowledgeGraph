@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Clearing House
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: Behavioral Analytics
+---
+public: true
+aliases:
+  - Behavioral Analytics
+---
 
 # Behavioural Analytics
 ```json-ld

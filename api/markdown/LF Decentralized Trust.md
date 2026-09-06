@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # LF Decentralized Trust
 ```json-ld

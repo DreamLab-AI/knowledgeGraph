@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Llama 3
 ```json-ld

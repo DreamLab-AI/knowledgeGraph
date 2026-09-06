@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ISO 9283 Manipulating Industrial Robots Performance Criteria
 ```json-ld

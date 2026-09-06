@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Self-Organisation
 ```json-ld

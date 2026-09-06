@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Edge Computing Architecture
 ```json-ld

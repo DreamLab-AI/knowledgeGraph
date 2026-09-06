@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Commerce
 ```json-ld

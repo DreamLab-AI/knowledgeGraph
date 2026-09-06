@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Threshold Signature Scheme
 ```json-ld

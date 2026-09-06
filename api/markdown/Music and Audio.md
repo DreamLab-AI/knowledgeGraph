@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Music and Audio
 ```json-ld

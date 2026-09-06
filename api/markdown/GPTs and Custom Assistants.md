@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # GPTs and Custom Assistants
 ```json-ld

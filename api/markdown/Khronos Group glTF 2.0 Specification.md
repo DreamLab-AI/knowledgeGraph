@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Khronos Group glTF 2.0 Specification
 ```json-ld

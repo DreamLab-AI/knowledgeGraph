@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Message Passing
 ```json-ld

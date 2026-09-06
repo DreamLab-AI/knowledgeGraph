@@ -1,5 +1,8 @@
-public:: true
-alias:: AccessControl
+---
+public: true
+aliases:
+  - AccessControl
+---
 
 # Access Control
 ```json-ld

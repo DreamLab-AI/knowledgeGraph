@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Convex Optimisation
 ```json-ld

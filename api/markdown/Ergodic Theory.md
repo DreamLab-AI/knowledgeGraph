@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ergodic Theory
 ```json-ld

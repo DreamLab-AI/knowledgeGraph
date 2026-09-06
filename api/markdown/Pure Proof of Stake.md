@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Pure Proof of Stake
 ```json-ld

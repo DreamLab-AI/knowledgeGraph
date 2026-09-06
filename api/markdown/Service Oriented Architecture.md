@@ -1,5 +1,8 @@
-public:: true
-alias:: Service-Oriented Architecture
+---
+public: true
+aliases:
+  - Service-Oriented Architecture
+---
 
 # Service Oriented Architecture
 ```json-ld

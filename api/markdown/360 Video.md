@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # 360 Video
 ```json-ld

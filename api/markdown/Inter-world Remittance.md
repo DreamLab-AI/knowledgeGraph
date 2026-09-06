@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Inter-world Remittance
 ```json-ld

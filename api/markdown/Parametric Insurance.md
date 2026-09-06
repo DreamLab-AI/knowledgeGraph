@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Parametric Insurance
 ```json-ld

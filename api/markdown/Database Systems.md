@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Database Systems
 ```json-ld

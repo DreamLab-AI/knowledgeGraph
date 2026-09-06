@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # FID Benchmark Protocol
 ```json-ld

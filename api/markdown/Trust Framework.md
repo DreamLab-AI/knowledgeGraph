@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Trust Framework
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Federated Credential Exchange
 ```json-ld

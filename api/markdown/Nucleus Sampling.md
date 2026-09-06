@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Nucleus Sampling
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Feedback Sensor
 ```json-ld

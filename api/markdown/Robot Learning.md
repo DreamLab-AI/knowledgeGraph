@@ -1,5 +1,8 @@
-public:: true
-alias:: RobotLearning
+---
+public: true
+aliases:
+  - RobotLearning
+---
 
 # Robot Learning
 ```json-ld

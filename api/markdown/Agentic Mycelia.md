@@ -1,5 +1,9 @@
-public:: true
-alias:: Agentic Mycelium, AgenticMycelia
+---
+public: true
+aliases:
+  - Agentic Mycelium
+  - AgenticMycelia
+---
 
 # Agentic Mycelia
 ```json-ld

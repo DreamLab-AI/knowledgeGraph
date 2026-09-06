@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ChaCha20-Poly1305
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AI Energy Optimisation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sequence To Sequence Model
 ```json-ld

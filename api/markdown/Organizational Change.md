@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Organizational Change
 ```json-ld

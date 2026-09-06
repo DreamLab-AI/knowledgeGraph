@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Computational Photography
 ```json-ld

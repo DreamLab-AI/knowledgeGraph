@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Session Management
 ```json-ld

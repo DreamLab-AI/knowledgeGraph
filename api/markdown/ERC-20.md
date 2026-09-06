@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # erc-20
 ```json-ld

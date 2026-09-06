@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # c2pa content credentials
 ```json-ld

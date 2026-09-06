@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Calibration Standards
 ```json-ld

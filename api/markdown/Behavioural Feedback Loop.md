@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Behavioural Feedback Loop
 ```json-ld

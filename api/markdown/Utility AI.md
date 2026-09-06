@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Utility AI
 ```json-ld

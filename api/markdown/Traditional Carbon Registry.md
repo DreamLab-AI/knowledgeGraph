@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Traditional Carbon Registry
 ```json-ld

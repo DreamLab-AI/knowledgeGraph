@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Eye Contact Correction
 ```json-ld

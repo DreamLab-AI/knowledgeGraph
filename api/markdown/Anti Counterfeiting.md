@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Anti Counterfeiting
 ```json-ld

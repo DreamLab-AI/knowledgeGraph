@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # fatf travel rule
 ```json-ld

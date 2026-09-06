@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cultural Provenance Record
 ```json-ld

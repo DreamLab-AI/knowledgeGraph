@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # JSON-LD Context
 ```json-ld

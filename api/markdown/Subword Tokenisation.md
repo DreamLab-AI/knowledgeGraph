@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Subword Tokenisation
 ```json-ld

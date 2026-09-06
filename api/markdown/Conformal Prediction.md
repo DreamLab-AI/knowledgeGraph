@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Conformal Prediction
 ```json-ld

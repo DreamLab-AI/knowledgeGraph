@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # SWIFT
 ```json-ld

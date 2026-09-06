@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Environmental K P I
 ```json-ld

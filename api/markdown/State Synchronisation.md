@@ -1,5 +1,8 @@
-public:: true
-alias:: State Synchronization
+---
+public: true
+aliases:
+  - State Synchronization
+---
 
 # State Synchronisation
 ```json-ld

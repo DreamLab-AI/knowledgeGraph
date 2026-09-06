@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Stable Diffusion]]
 # Stable Diffusion Image Model

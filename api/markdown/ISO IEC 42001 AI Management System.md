@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ISO IEC 42001 AI Management System
 ```json-ld

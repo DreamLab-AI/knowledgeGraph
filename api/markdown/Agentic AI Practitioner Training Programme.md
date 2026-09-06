@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Agentic Workshop]]
 # Agentic AI Practitioner Training Programme
@@ -146,7 +148,7 @@ elevatedFrom:: [[Agentic Workshop]]
 			- -Data visualisation (new python tools)
 			- -Academic research and verifying sources. (latex)
   - phase two (tomorrow)
-		- TODO Mcp security course. Context, sheaf of papers
+		- [ ] Mcp security course. Context, sheaf of papers
   - use the search on agentics video site [Agentics Foundation Video Portal](https://video.agentics.org/search?keyword=middleware)
 
 - ### Provenance

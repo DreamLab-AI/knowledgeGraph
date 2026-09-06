@@ -308,16 +308,16 @@
       "label": "ETSI Domain Identity and Trust"
     },
     {
-      "slug": "etsi-domain-human-interface",
-      "label": "ETSI_Domain_Human_Interface"
-    },
-    {
       "slug": "etsi-domain-human-interface-governance",
       "label": "ETSI_Domain_Human_Interface___Governance"
     },
     {
       "slug": "etsi-domain-human-interface-ux",
       "label": "ETSI_Domain_Human_Interface___UX"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
     },
     {
       "slug": "manipulator-arm",

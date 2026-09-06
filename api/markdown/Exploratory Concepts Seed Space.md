@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Ideas]]
 # Exploratory Concepts Seed Space

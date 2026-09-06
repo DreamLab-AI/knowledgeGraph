@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Projection Mapping
 ```json-ld

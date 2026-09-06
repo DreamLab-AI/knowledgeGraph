@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:ai-inference-cost-management",
+  "title": "AI Inference Cost Management",
+  "slug": "ai-inference-cost-management",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-inference-cost-management",
+  "domain": "economics",
+  "definition": "The practice of monitoring, optimizing, and budgeting for the computational expenses associated with running large language models and AI services in production.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:enterprise-budgeting",
+      "label": "Enterprise Budgeting"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-code-generation",
+        "label": "AI Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

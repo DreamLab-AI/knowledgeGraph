@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Standards Body
 ```json-ld

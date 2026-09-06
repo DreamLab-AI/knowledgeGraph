@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Proximal Policy Optimisation
 ```json-ld

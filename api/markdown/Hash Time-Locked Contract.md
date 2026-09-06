@@ -1,5 +1,8 @@
-public:: true
-alias:: Hash Time Locked Contract
+---
+public: true
+aliases:
+  - Hash Time Locked Contract
+---
 
 # Hash Time-Locked Contract
 ```json-ld

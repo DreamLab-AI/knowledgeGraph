@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Grid Infrastructure
 ```json-ld

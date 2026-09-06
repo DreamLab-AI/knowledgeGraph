@@ -1,5 +1,8 @@
-public:: true
-alias:: Direct Preference Optimization
+---
+public: true
+aliases:
+  - Direct Preference Optimization
+---
 
 # Direct Preference Optimisation
 ```json-ld

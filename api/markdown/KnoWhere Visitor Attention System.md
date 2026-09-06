@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Knowhere]]
 # KnoWhere Visitor Attention System
@@ -201,7 +203,7 @@ elevatedFrom:: [[Knowhere]]
 		- **Economic Benefits**: Boosting productivity in creative industries
 		- **Environmental Sustainability**: Minimal hardware use and reduced cloud computing footprint
 		- **Regional Impacts**: Job creation and positioning the UK as a leader in creative technology
-		- ![finalKnowWhere.pdf](../assets/finalKnowWhere_1706197940092_0.pdf)
+		- ![finalKnowWhere.pdf](assets/finalKnowWhere_1706197940092_0.pdf)
   - Collaborators
 		- Ross Verrall [[Domain Expert Contact Index]] at [[NVIDIA Omniverse Platform]]has suggested applying for the Inception grant to assist with our bid.
 		- Simon Graham : Creative Technology Director at Pixel Artworks has promised some hours and a market potential report as a match fund to the project for £3000
@@ -463,8 +465,8 @@ elevatedFrom:: [[Knowhere]]
   - ## Funding
   - ## Sequence Diagram
   - [iperov/DeepFaceLive: Real-time face swap for PC streaming or video calls (github.com)](https://github.com/iperov/DeepFaceLive)
-  - ![image.png](../assets/image_1706624390895_0.png){:height 493, :width 1219}
-  - ![image.png](../assets/image_1706626142618_0.png)
+  - ![image.png](assets/image_1706624390895_0.png){:height 493, :width 1219}
+  - ![image.png](assets/image_1706626142618_0.png)
   - ## Rough notes to be integrated
   - [[Head Gaze]]
   - https://www.linkedin.com/posts/bradley-wilson_roboflow-supervision-is-the-open-source-swiss-activity-7155297916453015552-KIPV?utm_source=share&utm_medium=member_desktop

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # LoRA DoRA etc
 ```json-ld

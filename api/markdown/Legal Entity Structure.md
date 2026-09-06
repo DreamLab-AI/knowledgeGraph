@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Legal Entity Structure
 ```json-ld

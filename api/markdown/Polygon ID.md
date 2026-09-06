@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Polygon ID
 ```json-ld

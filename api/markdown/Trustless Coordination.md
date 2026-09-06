@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Trustless Coordination
 ```json-ld

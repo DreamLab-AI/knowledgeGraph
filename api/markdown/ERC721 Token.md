@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ERC721 Token
 ```json-ld

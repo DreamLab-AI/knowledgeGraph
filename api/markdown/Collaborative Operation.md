@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Collaborative Operation
 ```json-ld

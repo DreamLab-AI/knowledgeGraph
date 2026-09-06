@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reinforcement Learning for Robotics
 ```json-ld

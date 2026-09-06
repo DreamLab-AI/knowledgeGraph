@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0486-regulatory-reporting
+---
+public: true
+aliases:
+  - BC-0486-regulatory-reporting
+---
 
 # Regulatory Reporting
 ```json-ld

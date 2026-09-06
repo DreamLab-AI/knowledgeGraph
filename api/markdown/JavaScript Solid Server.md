@@ -1,5 +1,11 @@
-public:: true
-alias:: javascriptsolidserver, JavaScriptSolidServer, JSS, JS Solid Server
+---
+public: true
+aliases:
+  - javascriptsolidserver
+  - JavaScriptSolidServer
+  - JSS
+  - JS Solid Server
+---
 
 # JavaScript Solid Server
 ```json-ld

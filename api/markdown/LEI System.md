@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # LEI System
 ```json-ld

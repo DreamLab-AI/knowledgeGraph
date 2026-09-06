@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Reality Applications
 ```json-ld

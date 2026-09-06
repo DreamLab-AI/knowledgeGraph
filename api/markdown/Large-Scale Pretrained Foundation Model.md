@@ -1,6 +1,9 @@
-public:: true
-elevatedFrom:: [[Foundation Models]]
-alias:: Foundation Model
+---
+public: true
+aliases:
+  - Foundation Model
+elevatedFrom: "[[Foundation Models]]"
+---
 
 # Large-Scale Pretrained Foundation Model
 ```json-ld

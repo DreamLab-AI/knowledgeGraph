@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0104 hand guiding
 ```json-ld

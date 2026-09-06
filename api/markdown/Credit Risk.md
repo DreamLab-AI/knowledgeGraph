@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Credit Risk
 ```json-ld

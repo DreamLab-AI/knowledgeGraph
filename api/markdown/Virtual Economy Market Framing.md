@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Metaverse as Markets]]
 # Virtual Economy Market Framing

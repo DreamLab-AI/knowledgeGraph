@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fiat Currency
 ```json-ld

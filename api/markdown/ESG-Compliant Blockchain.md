@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ESG-Compliant Blockchain
 ```json-ld

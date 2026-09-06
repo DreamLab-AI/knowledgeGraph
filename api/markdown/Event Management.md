@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Event Management
 ```json-ld

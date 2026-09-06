@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # GS1
 ```json-ld

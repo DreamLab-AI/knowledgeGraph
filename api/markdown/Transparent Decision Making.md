@@ -1,5 +1,8 @@
-public:: true
-alias:: TransparentDecisionMaking
+---
+public: true
+aliases:
+  - TransparentDecisionMaking
+---
 
 # Transparent Decision Making
 ```json-ld

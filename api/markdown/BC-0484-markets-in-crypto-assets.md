@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BC-0484-markets-in-crypto-assets
 ```json-ld

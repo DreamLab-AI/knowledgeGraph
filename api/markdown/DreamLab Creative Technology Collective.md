@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Dreamlab]]
 # DreamLab Creative Technology Collective

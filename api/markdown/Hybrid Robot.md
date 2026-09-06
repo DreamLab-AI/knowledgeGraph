@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hybrid Robot
 ```json-ld

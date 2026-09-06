@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Diffie-Hellman Key Exchange
 ```json-ld

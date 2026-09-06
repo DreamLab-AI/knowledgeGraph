@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Property Schema
 ```json-ld

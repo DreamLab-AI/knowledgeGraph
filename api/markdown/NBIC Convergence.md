@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NBIC Convergence
 ```json-ld

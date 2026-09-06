@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # QR Code
 ```json-ld

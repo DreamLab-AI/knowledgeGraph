@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Graph Representation
 ```json-ld

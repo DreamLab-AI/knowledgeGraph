@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AI System Component
 ```json-ld

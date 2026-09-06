@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Narrative Theme
 ```json-ld

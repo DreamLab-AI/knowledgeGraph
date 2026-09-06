@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Health Metaverse Application
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TLS Encryption
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: Time Series Analysis
+---
+public: true
+aliases:
+  - Time Series Analysis
+---
 
 # Time-Series Analysis
 ```json-ld

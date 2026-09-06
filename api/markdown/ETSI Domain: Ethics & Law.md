@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ETSI Domain: Ethics & Law
 ```json-ld

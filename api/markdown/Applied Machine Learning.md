@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Applied Machine Learning
 ```json-ld

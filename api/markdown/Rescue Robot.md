@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Rescue Robot
 ```json-ld

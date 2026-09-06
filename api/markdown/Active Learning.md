@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Active Learning
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Markov Chain Monte Carlo
 ```json-ld

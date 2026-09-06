@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # RDF Data Model
 ```json-ld

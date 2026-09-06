@@ -1,5 +1,8 @@
-public:: true
-alias:: DigitalCertificate
+---
+public: true
+aliases:
+  - DigitalCertificate
+---
 
 # Digital Certificate
 ```json-ld

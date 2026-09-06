@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Metaverse Stack
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Least Privilege
 ```json-ld

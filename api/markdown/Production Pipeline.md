@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Production Pipeline
 ```json-ld

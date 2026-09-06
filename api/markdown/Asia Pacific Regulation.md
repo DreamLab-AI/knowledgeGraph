@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Asia Pacific Regulation
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: DeepLearning
+---
+public: true
+aliases:
+  - DeepLearning
+---
 
 # Deep Learning
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Plant Model
 ```json-ld

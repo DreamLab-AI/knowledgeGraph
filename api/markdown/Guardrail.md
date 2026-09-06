@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Guardrail
 ```json-ld

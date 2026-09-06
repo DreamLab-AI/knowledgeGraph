@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Section 508
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Standardized Asset Classification
 ```json-ld

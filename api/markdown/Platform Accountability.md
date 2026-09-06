@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Platform Accountability
 ```json-ld

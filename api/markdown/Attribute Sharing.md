@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Attribute Sharing
 ```json-ld

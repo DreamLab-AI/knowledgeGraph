@@ -1,0 +1,283 @@
+{
+  "id": "urn:visionflow:page:product-adoption-metrics",
+  "title": "Product Adoption Metrics",
+  "slug": "product-adoption-metrics",
+  "public": true,
+  "classIri": "urn:ngm:class:product-adoption-metrics",
+  "domain": "economics",
+  "definition": "Quantitative indicators used to measure the uptake, engagement, and retention of a software product or feature among its target user base.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-adoption",
+      "label": "AI Adoption"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:claude",
+        "label": "Claude"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-talent",
+        "label": "AI Talent Capacity"
+      },
+      {
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management Programme"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-talent",
+        "label": "AI Talent"
+      },
+      {
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-infrastructure",
+        "label": "Data Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:executive-sponsorship",
+        "label": "Executive Sponsorship"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:risk-management-framework",
+        "label": "Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience Enhancement"
+      },
+      {
+        "id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:diffusion-of-innovations-theory",
+        "label": "Diffusion of Innovations Theory"
+      },
+      {
+        "id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
+      },
+      {
+        "id": "urn:ngm:class:technology-acceptance-model",
+        "label": "Technology Acceptance Model"
+      },
+      {
+        "id": "urn:ngm:class:toe-framework",
+        "label": "TOE Framework"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:organizational-change",
+        "label": "Organizational Change"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-copilot",
+        "label": "Copilot Systems"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier",
+        "label": "Public Service Modernisation"
+      },
+      {
+        "id": "urn:ngm:class:national-competitiveness",
+        "label": "National Competitiveness"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001-ai-management-system",
+        "label": "ISO IEC 42001 AI Management System"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:uk-ai-opportunities-action-plan",
+        "label": "UK AI Opportunities Action Plan"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-investment",
+        "label": "AI Investment Cycle"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-talent-war",
+        "label": "AI Talent War"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model Race"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI Boom"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

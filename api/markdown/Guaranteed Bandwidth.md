@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Guaranteed Bandwidth
 ```json-ld

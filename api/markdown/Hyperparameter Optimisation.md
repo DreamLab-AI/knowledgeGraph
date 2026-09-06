@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hyperparameter Optimisation
 ```json-ld

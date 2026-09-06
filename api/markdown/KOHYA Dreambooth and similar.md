@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # KOHYA Dreambooth and similar
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[flossverse]]
 # Open Source Social Immersive Space
@@ -114,7 +116,7 @@ elevatedFrom:: [[flossverse]]
 - ### Content
   - #Public page
   - automatically published
-  - ![BFDtU4hZsjFhVnWXuVtyB4.webp](../assets/BFDtU4hZsjFhVnWXuVtyB4_1705085798733_0.webp)
+  - ![BFDtU4hZsjFhVnWXuVtyB4.webp](assets/BFDtU4hZsjFhVnWXuVtyB4_1705085798733_0.webp)
   - With all this attention it seems timely to explore the potential ofrecent technologies, which can address collaborative mixed realityinteractions in itbusiness to business (B2B), itbusiness to customer(B2C), and the newer C2C (social commerce; itcreator to consumer,customer to customer, consumer to consumer [[jones2008trust]].
   - This book seeks to overview and explain the available open sourcetechnologies. It supports an open source [githubrepository](https://github.com/flossverse/product) which enables SMEs toaccess these emergent platforms and ecosystems. It aims to build towarda minimum viable product for trust minimised transfer of value within asocial immersive space, but also across all internet connected devices.
   - Referencing is in two styles; academic works and books are numeric,while opinion pieces, gray statistics, and pertinent news articles arehyperlinked from the text. This hybrid style yields about twice thecitation density of a normal PhD thesis, which is a lot. For this reasonthe normal blue hyperlink colour was eschewed in favour of a moreaesthetic “gray”.

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Knowledge Graph Construction
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Document Verification
 ```json-ld

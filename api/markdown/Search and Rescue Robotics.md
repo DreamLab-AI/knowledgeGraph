@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Search and Rescue Robotics
 ```json-ld

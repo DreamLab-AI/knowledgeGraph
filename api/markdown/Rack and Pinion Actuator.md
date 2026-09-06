@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Rack and Pinion Actuator
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: GenerativeModel
+---
+public: true
+aliases:
+  - GenerativeModel
+---
 
 # Generative Model
 ```json-ld

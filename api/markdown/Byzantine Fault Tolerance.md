@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Byzantine Fault Tolerance
 ```json-ld

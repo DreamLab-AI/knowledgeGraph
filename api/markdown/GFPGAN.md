@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # GFPGAN
 ```json-ld

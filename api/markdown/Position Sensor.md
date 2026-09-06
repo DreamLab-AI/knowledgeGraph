@@ -1,5 +1,8 @@
-public:: true
-alias:: PositionSensor
+---
+public: true
+aliases:
+  - PositionSensor
+---
 
 # Position Sensor
 ```json-ld

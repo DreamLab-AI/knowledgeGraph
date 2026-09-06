@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Physical Hardware
 ```json-ld

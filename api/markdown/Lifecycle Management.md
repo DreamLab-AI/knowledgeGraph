@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Lifecycle Management
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Adaptive Virtual World
 ```json-ld

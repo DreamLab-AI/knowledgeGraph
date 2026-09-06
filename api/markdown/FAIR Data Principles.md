@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # FAIR Data Principles
 ```json-ld

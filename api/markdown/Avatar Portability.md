@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Avatar Portability
 ```json-ld

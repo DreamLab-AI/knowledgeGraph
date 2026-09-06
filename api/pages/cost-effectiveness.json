@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:cost-effectiveness",
+  "title": "Cost-Effectiveness",
+  "slug": "cost-effectiveness",
+  "public": true,
+  "classIri": "urn:ngm:class:cost-effectiveness",
+  "domain": "economics",
+  "definition": "The economic efficiency of an AI model or system, evaluated by the ratio of output quality or task completion rate to the total cost of inference and deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-economics",
+      "label": "AI Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

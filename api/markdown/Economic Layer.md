@@ -1,5 +1,8 @@
-public:: true
-alias:: EconomicLayer
+---
+public: true
+aliases:
+  - EconomicLayer
+---
 
 # Economic Layer
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Typing Indicators
 ```json-ld

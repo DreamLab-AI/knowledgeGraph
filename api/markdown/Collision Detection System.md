@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Collision Detection System
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: Event-Driven Architecture
+---
+public: true
+aliases:
+  - Event-Driven Architecture
+---
 
 # Event Driven Architecture
 ```json-ld

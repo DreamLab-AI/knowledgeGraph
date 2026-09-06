@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Limited Risk AI
 ```json-ld

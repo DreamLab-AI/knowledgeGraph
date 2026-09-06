@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Harmonic Drive
 ```json-ld

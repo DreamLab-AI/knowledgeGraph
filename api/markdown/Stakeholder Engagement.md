@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stakeholder Engagement
 ```json-ld

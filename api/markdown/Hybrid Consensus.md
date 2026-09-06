@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hybrid Consensus
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # WebID Profile
 ```json-ld

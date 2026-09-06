@@ -1,5 +1,8 @@
-public:: true
-alias:: ETSI_Domain_Governance_Compliance
+---
+public: true
+aliases:
+  - ETSI_Domain_Governance_Compliance
+---
 
 # ETSI Domain: Governance & Compliance
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Gaussian Process Regression
 ```json-ld

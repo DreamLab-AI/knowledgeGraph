@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Inverse Reinforcement Learning
 ```json-ld

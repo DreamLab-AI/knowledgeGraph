@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ENS DAO
 ```json-ld

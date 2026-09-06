@@ -1,5 +1,9 @@
-public:: true
-alias:: Asset Tokenization, asset-tokenization
+---
+public: true
+aliases:
+  - Asset Tokenization
+  - asset-tokenization
+---
 
 # asset tokenisation
 ```json-ld

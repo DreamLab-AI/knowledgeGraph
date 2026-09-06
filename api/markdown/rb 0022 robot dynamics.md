@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0022 robot dynamics
 ```json-ld

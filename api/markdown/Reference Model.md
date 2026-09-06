@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reference Model
 ```json-ld

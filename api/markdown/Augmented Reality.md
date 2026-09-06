@@ -1,5 +1,8 @@
-public:: true
-alias:: AugmentedReality
+---
+public: true
+aliases:
+  - AugmentedReality
+---
 
 # Augmented Reality
 ```json-ld

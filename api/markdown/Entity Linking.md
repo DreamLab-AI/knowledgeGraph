@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Entity Linking
 ```json-ld

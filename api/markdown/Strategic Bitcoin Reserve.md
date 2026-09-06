@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Strategic Bitcoin Reserve
 ```json-ld

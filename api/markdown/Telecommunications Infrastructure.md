@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Telecommunications Infrastructure
 ```json-ld

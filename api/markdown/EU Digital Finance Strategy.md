@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # EU Digital Finance Strategy
 ```json-ld

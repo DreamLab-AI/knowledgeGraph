@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Delegation System
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: SoftRobotics
+---
+public: true
+aliases:
+  - SoftRobotics
+---
 
 # Soft Robotics
 ```json-ld

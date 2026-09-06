@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Kelly Drecourt]]
 # Kelly Drecourt EdTech Practitioner

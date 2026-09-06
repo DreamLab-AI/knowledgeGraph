@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Flow Control
 ```json-ld

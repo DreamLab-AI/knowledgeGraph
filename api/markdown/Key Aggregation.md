@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Key Aggregation
 ```json-ld

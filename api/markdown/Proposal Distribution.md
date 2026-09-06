@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Proposal Distribution
 ```json-ld

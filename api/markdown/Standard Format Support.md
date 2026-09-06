@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Standard Format Support
 ```json-ld

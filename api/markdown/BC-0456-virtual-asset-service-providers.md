@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BC-0456-virtual-asset-service-providers
 ```json-ld

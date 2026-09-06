@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Consumer Tools for SMEs]]
 # SME AI Productivity Toolkit

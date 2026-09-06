@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Compliance Audit Trail
 ```json-ld

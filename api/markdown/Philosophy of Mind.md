@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Philosophy of Mind
 ```json-ld

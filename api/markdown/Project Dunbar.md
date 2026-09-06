@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Project Dunbar
 ```json-ld

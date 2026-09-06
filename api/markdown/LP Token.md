@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # LP Token
 ```json-ld

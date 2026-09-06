@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Tokenisation]]
 # Neural Network Text Tokenisation

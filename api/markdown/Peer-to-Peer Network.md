@@ -1,5 +1,9 @@
-public:: true
-alias:: Peer To Peer Network, Peer to Peer Network
+---
+public: true
+aliases:
+  - Peer To Peer Network
+  - Peer to Peer Network
+---
 
 # Peer-to-Peer Network
 ```json-ld

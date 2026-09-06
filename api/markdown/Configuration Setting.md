@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Configuration Setting
 ```json-ld

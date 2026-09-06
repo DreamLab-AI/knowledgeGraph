@@ -1,5 +1,8 @@
-public:: true
-alias:: Time-Series Forecasting
+---
+public: true
+aliases:
+  - Time-Series Forecasting
+---
 
 # Time Series Forecasting
 ```json-ld

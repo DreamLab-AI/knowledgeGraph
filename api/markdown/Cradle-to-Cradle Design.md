@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cradle-to-Cradle Design
 ```json-ld

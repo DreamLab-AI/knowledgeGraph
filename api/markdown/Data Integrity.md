@@ -1,5 +1,8 @@
-public:: true
-alias:: DataIntegrity
+---
+public: true
+aliases:
+  - DataIntegrity
+---
 
 # data integrity
 ```json-ld

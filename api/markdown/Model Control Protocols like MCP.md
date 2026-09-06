@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Model Control Protocols like MCP
 ```json-ld

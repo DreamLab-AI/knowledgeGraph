@@ -1,5 +1,8 @@
-public:: true
-alias:: MathematicalFoundations
+---
+public: true
+aliases:
+  - MathematicalFoundations
+---
 
 # Mathematical Foundations
 ```json-ld

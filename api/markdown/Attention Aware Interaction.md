@@ -1,5 +1,8 @@
-public:: true
-alias:: Attention-Aware Interaction
+---
+public: true
+aliases:
+  - Attention-Aware Interaction
+---
 
 # Attention Aware Interaction
 ```json-ld

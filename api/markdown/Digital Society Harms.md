@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Society Harms
 ```json-ld

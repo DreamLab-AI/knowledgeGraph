@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Encoder-Decoder
 ```json-ld

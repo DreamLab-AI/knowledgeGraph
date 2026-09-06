@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Production
 ```json-ld

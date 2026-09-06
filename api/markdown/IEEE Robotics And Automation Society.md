@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IEEE Robotics And Automation Society
 ```json-ld

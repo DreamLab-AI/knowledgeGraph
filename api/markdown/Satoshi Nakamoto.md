@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Satoshi Nakamoto
 ```json-ld

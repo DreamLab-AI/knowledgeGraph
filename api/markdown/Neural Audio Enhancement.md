@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Neural Audio Enhancement
 ```json-ld

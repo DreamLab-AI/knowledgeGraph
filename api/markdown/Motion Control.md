@@ -1,5 +1,8 @@
-public:: true
-alias:: MotionControl
+---
+public: true
+aliases:
+  - MotionControl
+---
 
 # Motion Control
 ```json-ld

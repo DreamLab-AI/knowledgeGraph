@@ -1,5 +1,8 @@
-public:: true
-alias:: CoordinationMechanisms
+---
+public: true
+aliases:
+  - CoordinationMechanisms
+---
 
 # Coordination Mechanisms
 ```json-ld

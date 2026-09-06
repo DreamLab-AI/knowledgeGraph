@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IoT AI Integration
 ```json-ld

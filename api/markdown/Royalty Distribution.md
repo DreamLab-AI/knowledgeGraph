@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Royalty Distribution
 ```json-ld

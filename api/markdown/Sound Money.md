@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sound Money
 ```json-ld

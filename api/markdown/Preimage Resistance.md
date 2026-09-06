@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Preimage Resistance
 ```json-ld

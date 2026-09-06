@@ -1,5 +1,8 @@
-public:: true
-alias:: Informed Decision Making
+---
+public: true
+aliases:
+  - Informed Decision Making
+---
 
 # Informed decision-making
 ```json-ld

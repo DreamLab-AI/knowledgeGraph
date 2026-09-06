@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Push To Local RAG]]
 # Local RAG Corpus Ingestion Pipeline

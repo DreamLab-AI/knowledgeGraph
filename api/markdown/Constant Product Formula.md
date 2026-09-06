@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Constant Product Formula
 ```json-ld

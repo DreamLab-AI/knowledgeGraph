@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Access Control Policy
 ```json-ld

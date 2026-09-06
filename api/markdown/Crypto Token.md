@@ -1,5 +1,8 @@
-public:: true
-alias:: CryptoToken
+---
+public: true
+aliases:
+  - CryptoToken
+---
 
 # Crypto Token
 ```json-ld

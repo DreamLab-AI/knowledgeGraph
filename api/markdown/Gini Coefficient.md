@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # gini coefficient
 ```json-ld

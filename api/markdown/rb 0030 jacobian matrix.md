@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0030 jacobian matrix
 ```json-ld

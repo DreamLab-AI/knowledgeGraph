@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ERC1400 Token
 ```json-ld

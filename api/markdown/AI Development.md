@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AI Development
 ```json-ld
@@ -1409,7 +1411,7 @@ public:: true
   - This section needs building out to describe the stack and the choices made, but can be seen in Figure <a href="#fig:pyramind" data-reference-type="ref" data-reference="fig:pyramind">[fig:pyramind]</a> and Figure <a href="#fig:highlevelstack" data-reference-type="ref" data-reference="fig:highlevelstack">[fig:highlevelstack]</a>.
 
 	  ![image](assets/eca327e7bb2caa27aa4753ec0b4f1be3737ac371.jpg)
-		- ![image.png](../assets/highlevelstack.png){:width 600}
+		- ![image.png](assets/highlevelstack.png){:width 600}
 		- Collaborative space
 		- Fedimint \[Pear credits, RGB, Taro main net\]
 		- Hardware signing
@@ -1466,7 +1468,7 @@ public:: true
   - This section needs building out to describe the stack and the choices made, but can be seen in Figure <a href="#fig:pyramind" data-reference-type="ref" data-reference="fig:pyramind">[fig:pyramind]</a> and Figure <a href="#fig:highlevelstack" data-reference-type="ref" data-reference="fig:highlevelstack">[fig:highlevelstack]</a>.
 
 	  ![image](assets/eca327e7bb2caa27aa4753ec0b4f1be3737ac371.jpg)
-		- ![image.png](../assets/highlevelstack.png){:width 600}
+		- ![image.png](assets/highlevelstack.png){:width 600}
   collaboration in virtual production is challenging, often breaking the
   flow of communication and limiting the ability to convey spatial
   bfSlide 7: Competitive Landscape bfSlide 8: Team  
@@ -1508,7 +1510,7 @@ public:: true
   - This section needs building out to describe the stack and the choices made, but can be seen in Figure <a href="#fig:pyramind" data-reference-type="ref" data-reference="fig:pyramind">[fig:pyramind]</a> and Figure <a href="#fig:highlevelstack" data-reference-type="ref" data-reference="fig:highlevelstack">[fig:highlevelstack]</a>.
 
 	  ![image](assets/eca327e7bb2caa27aa4753ec0b4f1be3737ac371.jpg)
-		- ![image.png](../assets/highlevelstack.png){:width 600}
+		- ![image.png](assets/highlevelstack.png){:width 600}
   collaboration in virtual production is challenging, often breaking the
   flow of communication and limiting the ability to convey spatial
   bfSlide 7: Competitive Landscape bfSlide 8: Team  

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Double-Spend Prevention
 ```json-ld

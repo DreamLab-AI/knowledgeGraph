@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Master Data Management
 ```json-ld

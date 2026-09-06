@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # GS1 Standards
 ```json-ld

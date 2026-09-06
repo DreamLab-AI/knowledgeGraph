@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Intelligence Explosion
 ```json-ld

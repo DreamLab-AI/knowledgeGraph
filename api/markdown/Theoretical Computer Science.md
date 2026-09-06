@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Theoretical Computer Science
 ```json-ld

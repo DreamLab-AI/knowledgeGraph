@@ -1,5 +1,8 @@
-public:: true
-alias:: Infrared Sensor
+---
+public: true
+aliases:
+  - Infrared Sensor
+---
 
 # InfraredSensor
 ```json-ld

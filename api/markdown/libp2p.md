@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # libp2p
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Etsi Metaverse Domain Model
 ```json-ld

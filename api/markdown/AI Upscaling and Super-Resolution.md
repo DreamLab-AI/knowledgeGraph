@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AI Upscaling and Super-Resolution
 ```json-ld
@@ -664,7 +666,7 @@ public:: true
 
 - ### Content
   - CSSR [[Node-Based Diffusion Pipeline Interface]] SOTA  [workflow for upscale](https://discord.com/channels/1076117621407223829/1196177599244812468/1196177599244812468)
-  - [ccsr_creative_upscale.json](../assets/ccsr_creative_upscale_1706648180350_0.json)
+  - [ccsr_creative_upscale.json](assets/ccsr_creative_upscale_1706648180350_0.json)
   - Might have to install from github [kijai/ComfyUI-CCSR: ComfyUI wrapper node for CCSR (github.com)](https://github.com/kijai/ComfyUI-CCSR)
   - [kijai/ComfyUI-SUPIR: SUPIR upscaling wrapper for ComfyUI (github.com)](https://github.com/kijai/ComfyUI-SUPIR)
   - [SUPIR: Best Stable Diffusion Super Resolution Upscaler + full workflow. (youtube.com)](https://www.youtube.com/watch?v=Q9y-7Nwj2ic)
@@ -919,7 +921,7 @@ public:: true
 
   - **CCSR Workflow**:
   - CSSR [[Node-Based Diffusion Pipeline Interface]] SOTA [workflow for upscale](https://discord.com/channels/1076117621407223829/1196177599244812468/1196177599244812468)
-  - [ccsr_creative_upscale.json](../assets/ccsr_creative_upscale_1706648180350_0.json)
+  - [ccsr_creative_upscale.json](assets/ccsr_creative_upscale_1706648180350_0.json)
   - Might have to install from github [kijai/ComfyUI-CCSR: ComfyUI wrapper node for CCSR (github.com)](https://github.com/kijai/ComfyUI-CCSR)
   - Settings: guidance_scale (2.0-4.0), steps (20-30), tile_size (512)
 
@@ -1059,7 +1061,7 @@ public:: true
   - `CCSR_Tile_Simple`: Tiled processing wrapper
 
   - **CCSR Creative Upscale Workflow**:
-  - Reference: [ccsr_creative_upscale.json](../assets/ccsr_creative_upscale_1706648180350_0.json)
+  - Reference: [ccsr_creative_upscale.json](assets/ccsr_creative_upscale_1706648180350_0.json)
   - Features: Color matching, tile processing, adjustable creativity
   - Settings: guidance_scale (2.0-4.0), steps (20-30)
 

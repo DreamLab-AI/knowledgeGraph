@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Basel Committee on Banking Supervision
 ```json-ld

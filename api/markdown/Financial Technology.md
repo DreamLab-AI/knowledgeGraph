@@ -1,5 +1,8 @@
-public:: true
-alias:: FinancialTechnology
+---
+public: true
+aliases:
+  - FinancialTechnology
+---
 
 # Financial Technology
 ```json-ld

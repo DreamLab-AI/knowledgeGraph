@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Identity Standards
 ```json-ld

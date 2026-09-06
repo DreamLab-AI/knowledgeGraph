@@ -1,5 +1,8 @@
-public:: true
-alias:: RB-1003-optimal-control
+---
+public: true
+aliases:
+  - RB-1003-optimal-control
+---
 
 # Optimal Control
 ```json-ld

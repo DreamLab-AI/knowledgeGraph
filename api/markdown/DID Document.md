@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # did document
 ```json-ld

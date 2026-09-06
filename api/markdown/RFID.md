@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # RFID
 ```json-ld

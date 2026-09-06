@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Block Reward Halving
 ```json-ld

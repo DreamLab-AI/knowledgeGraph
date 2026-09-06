@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # system identification
 ```json-ld

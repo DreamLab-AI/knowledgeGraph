@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Forward Guidance
 ```json-ld

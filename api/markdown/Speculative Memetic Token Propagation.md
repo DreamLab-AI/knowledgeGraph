@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Financialised Agentic Memetics]]
 # Speculative Memetic Token Propagation

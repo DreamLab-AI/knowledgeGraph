@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # differentiable architecture
 ```json-ld

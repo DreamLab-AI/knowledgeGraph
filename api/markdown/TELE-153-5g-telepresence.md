@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-153-5g-telepresence
 ```json-ld

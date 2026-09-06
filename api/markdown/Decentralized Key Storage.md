@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Decentralized Key Storage
 ```json-ld

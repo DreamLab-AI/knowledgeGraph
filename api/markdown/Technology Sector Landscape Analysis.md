@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Landscape]]
 # Technology Sector Landscape Analysis

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AI Ethics Board
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hyperledger Indy
 ```json-ld

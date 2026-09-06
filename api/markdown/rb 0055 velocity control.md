@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0055 velocity control
 ```json-ld

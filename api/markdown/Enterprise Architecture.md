@@ -1,5 +1,8 @@
-public:: true
-alias:: EnterpriseArchitecture
+---
+public: true
+aliases:
+  - EnterpriseArchitecture
+---
 
 # Enterprise Architecture
 ```json-ld

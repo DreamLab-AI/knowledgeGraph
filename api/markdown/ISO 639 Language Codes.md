@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ISO 639 Language Codes
 ```json-ld

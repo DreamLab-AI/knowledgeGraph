@@ -1,5 +1,8 @@
-public:: true
-alias:: StorageLayer
+---
+public: true
+aliases:
+  - StorageLayer
+---
 
 # Storage Layer
 ```json-ld

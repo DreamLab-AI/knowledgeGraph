@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Knowledge Representation
 ```json-ld

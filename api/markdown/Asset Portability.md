@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # asset portability
 ```json-ld

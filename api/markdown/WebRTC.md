@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-150-webrtc
+---
+public: true
+aliases:
+  - TELE-150-webrtc
+---
 
 # WebRTC
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Context Awareness System
 ```json-ld

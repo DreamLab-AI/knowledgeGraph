@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Trusted Execution Environments
 ```json-ld

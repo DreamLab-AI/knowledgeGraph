@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # GENIUS Act
 ```json-ld

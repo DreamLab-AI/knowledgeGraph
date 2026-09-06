@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Query Processor
 ```json-ld

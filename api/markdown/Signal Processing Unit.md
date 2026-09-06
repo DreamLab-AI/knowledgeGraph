@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Signal Processing Unit
 ```json-ld

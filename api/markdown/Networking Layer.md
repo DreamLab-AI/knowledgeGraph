@@ -1,5 +1,8 @@
-public:: true
-alias:: NetworkingLayer
+---
+public: true
+aliases:
+  - NetworkingLayer
+---
 
 # Networking Layer
 ```json-ld

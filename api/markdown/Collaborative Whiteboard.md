@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Collaborative Whiteboard
 ```json-ld

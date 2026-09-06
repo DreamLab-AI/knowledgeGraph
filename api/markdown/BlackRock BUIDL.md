@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BlackRock BUIDL
 ```json-ld

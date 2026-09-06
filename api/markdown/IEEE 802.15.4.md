@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IEEE 802.15.4
 ```json-ld

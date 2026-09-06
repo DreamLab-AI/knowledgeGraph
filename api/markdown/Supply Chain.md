@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # supply chain
 ```json-ld

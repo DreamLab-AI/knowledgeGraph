@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Recommendation Engine
 ```json-ld

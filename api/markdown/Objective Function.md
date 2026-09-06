@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Objective Function
 ```json-ld

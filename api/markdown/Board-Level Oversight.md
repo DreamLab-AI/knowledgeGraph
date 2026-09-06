@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Board-Level Oversight
 ```json-ld

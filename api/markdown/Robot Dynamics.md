@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Robot Dynamics
 ```json-ld

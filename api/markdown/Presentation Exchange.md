@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Presentation Exchange
 ```json-ld

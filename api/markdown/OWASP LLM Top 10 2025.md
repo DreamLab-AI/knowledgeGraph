@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # OWASP LLM Top 10 2025
 ```json-ld

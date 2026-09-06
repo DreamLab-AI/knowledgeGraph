@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NIST Blockchain Technology Overview
 ```json-ld

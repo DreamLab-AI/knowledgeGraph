@@ -1,5 +1,8 @@
-public:: true
-alias:: RoboticSystem
+---
+public: true
+aliases:
+  - RoboticSystem
+---
 
 # Robotic System
 ```json-ld

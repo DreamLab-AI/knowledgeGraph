@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # trust over ip foundation
 ```json-ld

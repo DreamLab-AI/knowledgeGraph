@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Link Prediction
 ```json-ld

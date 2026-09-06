@@ -1,5 +1,8 @@
-public:: true
-alias:: SwarmRobotics
+---
+public: true
+aliases:
+  - SwarmRobotics
+---
 
 # Swarm Robotics
 ```json-ld

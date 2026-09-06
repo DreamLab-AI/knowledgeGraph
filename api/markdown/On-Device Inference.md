@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # On-Device Inference
 ```json-ld

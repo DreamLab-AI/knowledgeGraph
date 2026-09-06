@@ -1,5 +1,8 @@
-public:: true
-alias:: ObjectDetection
+---
+public: true
+aliases:
+  - ObjectDetection
+---
 
 # Object Detection
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Market Efficiency
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Photorealistic Telepresence
 ```json-ld

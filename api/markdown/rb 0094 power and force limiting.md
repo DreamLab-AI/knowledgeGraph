@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0094 power and force limiting
 ```json-ld

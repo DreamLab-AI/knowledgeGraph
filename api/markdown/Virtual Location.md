@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Location
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Shared Virtual Space
 ```json-ld

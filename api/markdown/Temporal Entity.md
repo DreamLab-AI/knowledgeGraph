@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Temporal Entity
 ```json-ld

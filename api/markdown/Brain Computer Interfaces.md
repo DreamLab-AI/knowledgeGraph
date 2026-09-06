@@ -1,5 +1,8 @@
-public:: true
-alias:: Brain-Computer Interfaces
+---
+public: true
+aliases:
+  - Brain-Computer Interfaces
+---
 
 # Brain Computer Interfaces
 ```json-ld

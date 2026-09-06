@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Banodoco]]
 # Open-Source Video Diffusion Community Platform

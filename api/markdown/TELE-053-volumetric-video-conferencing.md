@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-053-volumetric-video-conferencing
 ```json-ld

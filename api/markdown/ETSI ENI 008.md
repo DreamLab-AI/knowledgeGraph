@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ETSI ENI 008
 ```json-ld

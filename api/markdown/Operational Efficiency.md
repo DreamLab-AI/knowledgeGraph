@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Operational Efficiency
 ```json-ld

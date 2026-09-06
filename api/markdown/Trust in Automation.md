@@ -1,5 +1,8 @@
-public:: true
-alias:: RB-1012-trust-in-automation
+---
+public: true
+aliases:
+  - RB-1012-trust-in-automation
+---
 
 # Trust in Automation
 ```json-ld

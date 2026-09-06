@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Loss Function
 ```json-ld

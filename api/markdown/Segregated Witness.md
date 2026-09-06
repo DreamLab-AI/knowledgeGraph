@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Segregated Witness
 ```json-ld

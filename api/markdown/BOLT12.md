@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BOLT12
 ```json-ld

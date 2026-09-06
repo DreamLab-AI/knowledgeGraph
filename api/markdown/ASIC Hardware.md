@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ASIC Hardware
 ```json-ld

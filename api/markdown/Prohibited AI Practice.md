@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Prohibited AI Practice
 ```json-ld

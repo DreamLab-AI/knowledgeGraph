@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # quantum threat to cryptography
 ```json-ld

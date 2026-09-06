@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Open X-Embodiment
 ```json-ld

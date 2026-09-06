@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Protein Structure Prediction
 ```json-ld

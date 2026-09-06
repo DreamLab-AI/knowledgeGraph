@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mesh Network
 ```json-ld

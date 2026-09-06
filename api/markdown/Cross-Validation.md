@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cross-Validation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Training and fine tuning
 ```json-ld

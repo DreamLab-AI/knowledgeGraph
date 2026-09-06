@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # micro-ROS
 ```json-ld

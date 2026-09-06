@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reality Capture Workflow
 ```json-ld

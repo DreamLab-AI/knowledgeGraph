@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Customer Due Diligence
 ```json-ld

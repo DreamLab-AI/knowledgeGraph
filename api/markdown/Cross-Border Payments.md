@@ -1,5 +1,8 @@
-public:: true
-alias:: Cross Border Payments
+---
+public: true
+aliases:
+  - Cross Border Payments
+---
 
 # cross-border payments
 ```json-ld

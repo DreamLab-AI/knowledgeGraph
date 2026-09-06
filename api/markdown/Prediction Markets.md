@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Prediction Markets
 ```json-ld

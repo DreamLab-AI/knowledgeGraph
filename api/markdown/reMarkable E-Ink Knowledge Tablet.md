@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Remarkable]]
 # reMarkable E-Ink Knowledge Tablet

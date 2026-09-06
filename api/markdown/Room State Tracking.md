@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Room State Tracking
 ```json-ld

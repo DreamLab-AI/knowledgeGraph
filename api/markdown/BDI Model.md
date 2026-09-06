@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BDI Model
 ```json-ld

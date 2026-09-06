@@ -1,5 +1,8 @@
-public:: true
-alias:: TokenEconomics
+---
+public: true
+aliases:
+  - TokenEconomics
+---
 
 # Token Economics
 ```json-ld

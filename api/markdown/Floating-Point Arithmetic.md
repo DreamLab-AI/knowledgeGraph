@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Floating-Point Arithmetic
 ```json-ld

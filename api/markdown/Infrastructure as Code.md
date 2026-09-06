@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Infrastructure as Code
 ```json-ld

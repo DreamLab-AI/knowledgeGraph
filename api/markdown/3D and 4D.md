@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # 3D and 4D
 ```json-ld

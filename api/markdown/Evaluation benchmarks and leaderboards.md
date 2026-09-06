@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Evaluation benchmarks and leaderboards
 ```json-ld

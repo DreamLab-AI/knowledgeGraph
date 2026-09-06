@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[social media]]
 # Social Media Platform Infrastructure

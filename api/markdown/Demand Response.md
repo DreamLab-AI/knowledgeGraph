@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Demand Response
 ```json-ld

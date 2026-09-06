@@ -1,5 +1,8 @@
-public:: true
-alias:: Text to Image
+---
+public: true
+aliases:
+  - Text to Image
+---
 
 # Text-to-Image
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: ExplainableAI
+---
+public: true
+aliases:
+  - ExplainableAI
+---
 
 # Explainable AI
 ```json-ld

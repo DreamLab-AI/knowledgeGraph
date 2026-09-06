@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Death of the Internet
 ```json-ld

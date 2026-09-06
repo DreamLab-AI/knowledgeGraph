@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NFT Minting
 ```json-ld

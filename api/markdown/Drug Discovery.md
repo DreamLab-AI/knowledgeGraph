@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # drug discovery
 ```json-ld

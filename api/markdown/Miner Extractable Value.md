@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Miner Extractable Value
 ```json-ld

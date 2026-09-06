@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Apache License 2.0
 ```json-ld

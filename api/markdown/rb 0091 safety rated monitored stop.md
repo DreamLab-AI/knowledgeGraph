@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0091 safety rated monitored stop
 ```json-ld

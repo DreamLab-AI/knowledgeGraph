@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Neuromorphic Computing
 ```json-ld

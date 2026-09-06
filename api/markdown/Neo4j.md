@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Neo4j
 ```json-ld

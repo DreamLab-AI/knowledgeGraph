@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Single-Agent System
 ```json-ld

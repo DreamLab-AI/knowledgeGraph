@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Installation and display tech]]
 # Immersive Display Infrastructure

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fiscal Policy
 ```json-ld

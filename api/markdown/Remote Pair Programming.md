@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Remote Pair Programming
 ```json-ld

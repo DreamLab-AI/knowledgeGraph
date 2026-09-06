@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Vision Pro]]
 # Apple Mixed Reality Headset

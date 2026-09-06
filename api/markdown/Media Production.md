@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Media Production
 ```json-ld

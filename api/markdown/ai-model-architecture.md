@@ -1,5 +1,8 @@
-public:: true
-alias:: AI Model Architecture
+---
+public: true
+aliases:
+  - AI Model Architecture
+---
 
 ```json-ld
 {

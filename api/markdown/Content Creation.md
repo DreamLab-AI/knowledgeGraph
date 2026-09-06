@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Content Creation
 ```json-ld

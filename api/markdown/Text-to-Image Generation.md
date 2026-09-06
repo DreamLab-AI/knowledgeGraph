@@ -1,5 +1,8 @@
-public:: true
-alias:: Text to Image Generation
+---
+public: true
+aliases:
+  - Text to Image Generation
+---
 
 # Text-to-Image Generation
 ```json-ld

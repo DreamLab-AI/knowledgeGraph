@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Universal Scene Description
 ```json-ld

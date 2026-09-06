@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Runtime Inspection
 ```json-ld

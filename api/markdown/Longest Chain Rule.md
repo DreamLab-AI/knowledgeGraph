@@ -1,5 +1,8 @@
-public:: true
-alias:: Longest-Chain Rule
+---
+public: true
+aliases:
+  - Longest-Chain Rule
+---
 
 # Longest Chain Rule
 ```json-ld

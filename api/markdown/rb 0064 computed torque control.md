@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0064 computed torque control
 ```json-ld

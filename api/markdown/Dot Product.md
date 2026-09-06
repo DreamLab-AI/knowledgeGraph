@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Dot Product
 ```json-ld

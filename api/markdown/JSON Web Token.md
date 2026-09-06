@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # JSON Web Token
 ```json-ld

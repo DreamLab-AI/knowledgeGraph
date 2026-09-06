@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Neural Radiance Field
 ```json-ld

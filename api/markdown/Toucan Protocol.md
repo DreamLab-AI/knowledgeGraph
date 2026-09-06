@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Toucan Protocol
 ```json-ld

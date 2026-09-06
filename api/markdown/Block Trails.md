@@ -1,5 +1,9 @@
-public:: true
-alias:: Blocktrails, Block Trails Protocol
+---
+public: true
+aliases:
+  - Blocktrails
+  - Block Trails Protocol
+---
 
 # Block Trails
 ```json-ld

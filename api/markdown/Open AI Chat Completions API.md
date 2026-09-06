@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Open AI Chat Completions API
 ```json-ld

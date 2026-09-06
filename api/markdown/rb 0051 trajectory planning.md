@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0051 trajectory planning
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Balance of Payments
 ```json-ld

@@ -1,5 +1,9 @@
-public:: true
-alias:: Atomic Swaps, AtomicSwap
+---
+public: true
+aliases:
+  - Atomic Swaps
+  - AtomicSwap
+---
 
 # Atomic Swap
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # XR Technical Standard
 ```json-ld

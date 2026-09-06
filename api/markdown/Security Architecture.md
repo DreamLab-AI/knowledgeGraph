@@ -1,5 +1,8 @@
-public:: true
-alias:: SecurityArchitecture
+---
+public: true
+aliases:
+  - SecurityArchitecture
+---
 
 # Security Architecture
 ```json-ld

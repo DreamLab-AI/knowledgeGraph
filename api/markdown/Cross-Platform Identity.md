@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cross-Platform Identity
 ```json-ld

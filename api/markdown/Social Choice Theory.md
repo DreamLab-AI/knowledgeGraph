@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Social Choice Theory
 ```json-ld

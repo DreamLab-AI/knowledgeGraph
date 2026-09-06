@@ -1,5 +1,8 @@
-public:: true
-alias:: FaultTolerance
+---
+public: true
+aliases:
+  - FaultTolerance
+---
 
 # Fault Tolerance
 ```json-ld

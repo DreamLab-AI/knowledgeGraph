@@ -1,5 +1,8 @@
-public:: true
-alias:: ImmersiveInterface
+---
+public: true
+aliases:
+  - ImmersiveInterface
+---
 
 # Immersive Interface
 ```json-ld

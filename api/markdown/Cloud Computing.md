@@ -1,5 +1,8 @@
-public:: true
-alias:: CloudComputing
+---
+public: true
+aliases:
+  - CloudComputing
+---
 
 # Cloud Computing
 ```json-ld

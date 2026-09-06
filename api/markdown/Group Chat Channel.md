@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Group Chat Channel
 ```json-ld

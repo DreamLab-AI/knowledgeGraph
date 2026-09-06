@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Relationship Edge
 ```json-ld

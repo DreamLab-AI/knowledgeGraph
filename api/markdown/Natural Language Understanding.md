@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # natural language understanding
 ```json-ld

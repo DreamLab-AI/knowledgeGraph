@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Soft Prompt Embedding
 ```json-ld

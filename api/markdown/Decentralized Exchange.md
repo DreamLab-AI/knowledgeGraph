@@ -1,5 +1,8 @@
-public:: true
-alias:: DecentralizedExchange
+---
+public: true
+aliases:
+  - DecentralizedExchange
+---
 
 # Decentralized Exchange
 ```json-ld

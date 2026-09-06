@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # W3C RDF 1.1
 ```json-ld

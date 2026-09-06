@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Swarm Control
 ```json-ld

@@ -1,5 +1,9 @@
-public:: true
-alias:: Fine-Tuning, Fine-tuning
+---
+public: true
+aliases:
+  - Fine-Tuning
+  - Fine-tuning
+---
 
 # Fine Tuning
 ```json-ld

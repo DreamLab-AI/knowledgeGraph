@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Small Modular Reactors
 ```json-ld

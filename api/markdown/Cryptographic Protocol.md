@@ -1,5 +1,8 @@
-public:: true
-alias:: Cryptographic-Protocol
+---
+public: true
+aliases:
+  - Cryptographic-Protocol
+---
 
 # Cryptographic Protocol
 ```json-ld

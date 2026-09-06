@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Agent Harness
 ```json-ld

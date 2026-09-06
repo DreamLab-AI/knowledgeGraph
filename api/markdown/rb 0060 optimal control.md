@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0060 optimal control
 ```json-ld

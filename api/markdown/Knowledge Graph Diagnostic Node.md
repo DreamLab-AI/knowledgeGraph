@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[debug linked node]]
 # Knowledge Graph Diagnostic Node

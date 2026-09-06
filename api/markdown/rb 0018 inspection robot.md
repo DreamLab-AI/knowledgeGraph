@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0018 inspection robot
 ```json-ld

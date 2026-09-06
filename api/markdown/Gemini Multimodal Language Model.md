@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Gemini]]
 # Gemini Multimodal Language Model

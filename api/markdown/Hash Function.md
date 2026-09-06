@@ -1,5 +1,9 @@
-public:: true
-alias:: Hash-Function, HashFunction
+---
+public: true
+aliases:
+  - Hash-Function
+  - HashFunction
+---
 
 # Hash Function
 ```json-ld

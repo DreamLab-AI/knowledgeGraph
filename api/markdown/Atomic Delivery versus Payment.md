@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Atomic Delivery versus Payment
 ```json-ld

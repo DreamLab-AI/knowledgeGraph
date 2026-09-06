@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Social Network Analysis
 ```json-ld

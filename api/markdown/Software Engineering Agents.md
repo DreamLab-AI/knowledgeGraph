@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Software Engineering Agents
 ```json-ld

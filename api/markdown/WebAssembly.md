@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # WebAssembly
 ```json-ld

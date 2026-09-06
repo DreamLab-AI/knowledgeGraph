@@ -1,5 +1,8 @@
-public:: true
-alias:: PoseEstimation
+---
+public: true
+aliases:
+  - PoseEstimation
+---
 
 # Pose Estimation
 ```json-ld

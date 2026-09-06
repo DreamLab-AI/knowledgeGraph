@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Corporate Sustainability Reporting
 ```json-ld

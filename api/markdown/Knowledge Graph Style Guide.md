@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Style Guide]]
 # Knowledge Graph Style Guide

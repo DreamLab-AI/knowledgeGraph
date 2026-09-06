@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IMF CBDC Framework
 ```json-ld

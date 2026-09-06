@@ -1,5 +1,8 @@
-public:: true
-alias:: CollaborativeSimulation
+---
+public: true
+aliases:
+  - CollaborativeSimulation
+---
 
 # Collaborative Simulation
 ```json-ld

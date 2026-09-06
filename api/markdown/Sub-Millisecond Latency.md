@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sub-Millisecond Latency
 ```json-ld

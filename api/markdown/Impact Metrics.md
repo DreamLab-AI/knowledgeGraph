@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Impact Metrics
 ```json-ld

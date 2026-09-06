@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Law Commission
 ```json-ld

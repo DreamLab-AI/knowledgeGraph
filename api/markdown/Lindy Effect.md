@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Lindy Effect
 ```json-ld

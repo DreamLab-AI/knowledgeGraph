@@ -1,5 +1,8 @@
-public:: true
-alias:: RB-1018-dijkstra-algorithm
+---
+public: true
+aliases:
+  - RB-1018-dijkstra-algorithm
+---
 
 # Dijkstra Algorithm
 ```json-ld

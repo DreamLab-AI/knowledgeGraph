@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[lognet]]
 # Distributed Logseq Knowledge Network

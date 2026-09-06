@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # OWL 2 Web Ontology Language
 ```json-ld

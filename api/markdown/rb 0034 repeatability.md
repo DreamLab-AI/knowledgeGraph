@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0034 repeatability
 ```json-ld

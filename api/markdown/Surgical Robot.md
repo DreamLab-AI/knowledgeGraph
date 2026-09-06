@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Surgical Robot
 ```json-ld

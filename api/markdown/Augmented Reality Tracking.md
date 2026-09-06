@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Augmented Reality Tracking
 ```json-ld

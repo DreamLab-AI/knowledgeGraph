@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Collective Memory Archive
 ```json-ld

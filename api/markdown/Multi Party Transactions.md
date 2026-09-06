@@ -1,5 +1,8 @@
-public:: true
-alias:: Multi-Party Transactions
+---
+public: true
+aliases:
+  - Multi-Party Transactions
+---
 
 # Multi Party Transactions
 ```json-ld

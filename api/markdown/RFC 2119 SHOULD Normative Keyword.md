@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[SHOULD]]
 # RFC 2119 SHOULD Normative Keyword

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Meta-Learning
 ```json-ld

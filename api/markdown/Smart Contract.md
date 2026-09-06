@@ -1,5 +1,9 @@
-public:: true
-alias:: SmartContract, smart-contract
+---
+public: true
+aliases:
+  - SmartContract
+  - smart-contract
+---
 
 # Smart Contract
 ```json-ld

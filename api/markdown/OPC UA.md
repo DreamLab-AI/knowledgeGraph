@@ -1,5 +1,8 @@
-public:: true
-alias:: OPC-UA
+---
+public: true
+aliases:
+  - OPC-UA
+---
 
 # OPC UA
 ```json-ld

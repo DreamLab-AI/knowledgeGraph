@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Moderation Tools
 ```json-ld

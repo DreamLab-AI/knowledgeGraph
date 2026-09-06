@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Filter Bubble
 ```json-ld

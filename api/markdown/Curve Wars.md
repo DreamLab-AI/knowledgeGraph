@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Curve Wars
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Confusion Matrix
 ```json-ld

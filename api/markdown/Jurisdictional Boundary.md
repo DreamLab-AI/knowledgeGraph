@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Jurisdictional Boundary
 ```json-ld

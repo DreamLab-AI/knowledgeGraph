@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Segregation of Duties
 ```json-ld

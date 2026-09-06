@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Bias-Variance Tradeoff
 ```json-ld

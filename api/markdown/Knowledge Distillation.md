@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Knowledge Distillation
 ```json-ld
@@ -275,7 +277,7 @@ public:: true
 		- ### Tools for Notes and Knowledge
 			- ‘[Markitdown](https://github.com/microsoft/markitdown)’ for converting Microsoft docs to Markdown
 			- [Obsidian](https://obsidian.md/) or Logseq for personal knowledge bases
-			- DOING Notion for collaborative wikis
+			- [ ] Notion for collaborative wikis
 
   - # What are these pages?
   - This interface is an example of [[Knowledge Graphing]].
@@ -309,7 +311,7 @@ public:: true
 		- ### Tools for Notes and Knowledge
 			- ‘[Markitdown](https://github.com/microsoft/markitdown)’ for converting Microsoft docs to Markdown
 			- [Obsidian](https://obsidian.md/) or Logseq for personal knowledge bases
-			- DOING Notion for collaborative wikis
+			- [ ] Notion for collaborative wikis
 
   - ### Local Knowledge Base
 
@@ -318,7 +320,7 @@ public:: true
 		- ### Tools for Notes and Knowledge
 			- ‘[Markitdown](https://github.com/microsoft/markitdown)’ for converting Microsoft docs to Markdown
 			- [Obsidian](https://obsidian.md/) or Logseq for personal knowledge bases
-			- DOING Notion for collaborative wikis
+			- [ ] Notion for collaborative wikis
 
   - ## Core Innovation
 		- AI captures what each expert sees, says, and does—building a complete, multi-viewpoint picture.
@@ -333,7 +335,7 @@ public:: true
 		- ### Tools for Notes and Knowledge
 			- ‘[Markitdown](https://github.com/microsoft/markitdown)’ for converting Microsoft docs to Markdown
 			- [Obsidian](https://obsidian.md/) or Logseq for personal knowledge bases
-			- DOING Notion for collaborative wikis
+			- [ ] Notion for collaborative wikis
 
   - ### Local Knowledge Base
 		- Marketers distribute product variations across a cloud of [[Nostr]] servers, each variation associated with a unique Nostr event containing metadata and content.
@@ -348,13 +350,13 @@ public:: true
 		- ### Tools for Notes and Knowledge
 			- ‘[Markitdown](https://github.com/microsoft/markitdown)’ for converting Microsoft docs to Markdown
 			- [Obsidian](https://obsidian.md/) or Logseq for personal knowledge bases
-			- DOING Notion for collaborative wikis
+			- [ ] Notion for collaborative wikis
 
 		- ### Tools for Notes and Knowledge
 			- ‘[Markitdown](https://github.com/microsoft/markitdown)’ for converting Microsoft docs to Markdown
-			- DOING Obsidian
-			- DONE Logseq
-			- DONE Notion
+			- [ ] Obsidian
+			- [x] Logseq
+			- [x] Notion
 
   - ## Semantic Annotation and Knowledge Graphs
 

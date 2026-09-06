@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IEEE 1588 PTP
 ```json-ld

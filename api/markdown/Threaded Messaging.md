@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Threaded Messaging
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: Autonomous Vehicles
+---
+public: true
+aliases:
+  - Autonomous Vehicles
+---
 
 # Autonomous Vehicle
 ```json-ld

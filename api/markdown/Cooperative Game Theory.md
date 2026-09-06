@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cooperative Game Theory
 ```json-ld

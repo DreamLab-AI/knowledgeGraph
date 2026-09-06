@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Agent-to-Agent Protocol
 ```json-ld

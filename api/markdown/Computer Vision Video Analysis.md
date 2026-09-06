@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Video Processing]]
 # Computer Vision Video Analysis

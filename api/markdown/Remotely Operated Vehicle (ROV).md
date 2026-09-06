@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Remotely Operated Vehicle (ROV)
 ```json-ld

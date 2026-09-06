@@ -1,5 +1,8 @@
-public:: true
-alias:: RGB-Protocol
+---
+public: true
+aliases:
+  - RGB-Protocol
+---
 
 # RGB Protocol
 ```json-ld

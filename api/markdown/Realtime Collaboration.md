@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Realtime Collaboration
 ```json-ld

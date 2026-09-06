@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[ComfyUI]]
 # Node-Based Diffusion Pipeline Interface

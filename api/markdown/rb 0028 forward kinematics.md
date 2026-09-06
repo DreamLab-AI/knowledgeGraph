@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0028 forward kinematics
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Robin Hanson]]
 # Robin Hanson AI Sceptic Economist

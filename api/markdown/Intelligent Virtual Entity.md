@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Intelligent Virtual Entity
 ```json-ld

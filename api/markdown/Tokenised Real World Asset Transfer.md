@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Tokenised Real World Asset Transfer
 ```json-ld

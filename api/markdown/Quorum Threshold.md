@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Quorum Threshold
 ```json-ld

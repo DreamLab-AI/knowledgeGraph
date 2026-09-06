@@ -1,5 +1,8 @@
-public:: true
-alias:: Science-Based Targets
+---
+public: true
+aliases:
+  - Science-Based Targets
+---
 
 # Science Based Targets
 ```json-ld

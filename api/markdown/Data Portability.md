@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Data Portability
 ```json-ld

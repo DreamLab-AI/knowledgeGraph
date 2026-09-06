@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Rapid AI Deployment
 ```json-ld

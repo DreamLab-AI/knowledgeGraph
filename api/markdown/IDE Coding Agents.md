@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IDE Coding Agents
 ```json-ld

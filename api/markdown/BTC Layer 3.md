@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BTC Layer 3
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Screen Sharing
 ```json-ld

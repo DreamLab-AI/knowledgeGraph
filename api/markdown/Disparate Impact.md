@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Disparate Impact
 ```json-ld

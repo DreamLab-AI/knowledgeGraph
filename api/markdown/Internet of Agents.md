@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Internet of Agents
 ```json-ld

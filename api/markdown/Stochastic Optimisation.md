@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stochastic Optimisation
 ```json-ld

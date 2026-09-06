@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Wearable Computing
 ```json-ld

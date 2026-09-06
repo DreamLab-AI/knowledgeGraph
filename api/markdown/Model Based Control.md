@@ -1,5 +1,8 @@
-public:: true
-alias:: Model-based Control
+---
+public: true
+aliases:
+  - Model-based Control
+---
 
 # Model Based Control
 ```json-ld

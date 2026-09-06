@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Coordination Layer
 ```json-ld

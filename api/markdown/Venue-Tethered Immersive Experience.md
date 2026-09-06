@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Location Based Experience]]
 # Venue-Tethered Immersive Experience

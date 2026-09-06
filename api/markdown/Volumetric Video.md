@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Volumetric Video
 ```json-ld

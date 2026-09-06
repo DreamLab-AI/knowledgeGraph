@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Distributed Communication
 ```json-ld

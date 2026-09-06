@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Replication System
 ```json-ld

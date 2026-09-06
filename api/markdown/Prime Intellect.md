@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Prime Intellect
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Coordinate Transformation
 ```json-ld

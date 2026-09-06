@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Convex Finance
 ```json-ld

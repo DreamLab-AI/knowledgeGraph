@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Tokenised Securities
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Robotic Process Automation
 ```json-ld

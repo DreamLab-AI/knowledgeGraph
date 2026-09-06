@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Bluetooth Low Energy
 ```json-ld

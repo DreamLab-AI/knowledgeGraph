@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Beam Search
 ```json-ld

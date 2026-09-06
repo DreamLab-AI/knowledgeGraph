@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0080 radar
 ```json-ld

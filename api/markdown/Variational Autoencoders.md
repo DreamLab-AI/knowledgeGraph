@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Variational Autoencoders
 ```json-ld

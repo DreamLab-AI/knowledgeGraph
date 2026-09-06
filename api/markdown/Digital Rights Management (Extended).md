@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Rights Management (Extended)
 ```json-ld

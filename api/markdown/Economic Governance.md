@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Economic Governance
 ```json-ld

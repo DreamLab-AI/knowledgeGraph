@@ -1,5 +1,8 @@
-public:: true
-alias:: Real-time Synchronization
+---
+public: true
+aliases:
+  - Real-time Synchronization
+---
 
 # Real-Time Synchronisation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Client-Side Validation Theory
 ```json-ld

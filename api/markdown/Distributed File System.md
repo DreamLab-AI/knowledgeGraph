@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Distributed File System
 ```json-ld

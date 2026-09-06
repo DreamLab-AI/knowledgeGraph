@@ -1,5 +1,8 @@
-public:: true
-alias:: DigitalAvatar
+---
+public: true
+aliases:
+  - DigitalAvatar
+---
 
 # Digital Avatar
 ```json-ld

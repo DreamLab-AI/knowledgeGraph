@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Optimism Collective
 ```json-ld

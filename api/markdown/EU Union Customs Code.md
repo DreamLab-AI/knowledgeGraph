@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # EU Union Customs Code
 ```json-ld

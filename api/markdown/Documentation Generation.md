@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Documentation Generation
 ```json-ld

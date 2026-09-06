@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stereo Camera
 ```json-ld

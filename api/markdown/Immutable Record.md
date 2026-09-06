@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Immutable Record
 ```json-ld

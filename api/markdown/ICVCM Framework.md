@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ICVCM Framework
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Creator Monetization
 ```json-ld

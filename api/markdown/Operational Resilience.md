@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # operational resilience
 ```json-ld

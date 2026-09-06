@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Securities Offering (VSO)
 ```json-ld

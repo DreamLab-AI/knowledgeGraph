@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0049 motion planning
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # OpenAI Agents SDK
 ```json-ld

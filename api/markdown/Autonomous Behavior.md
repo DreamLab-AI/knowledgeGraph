@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Autonomous Behavior
 ```json-ld

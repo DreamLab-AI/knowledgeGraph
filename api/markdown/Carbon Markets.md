@@ -1,5 +1,8 @@
-public:: true
-alias:: CarbonMarkets
+---
+public: true
+aliases:
+  - CarbonMarkets
+---
 
 # Carbon Markets
 ```json-ld

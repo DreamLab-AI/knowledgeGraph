@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Plotting a graph using matplotlib python library]]
 # Matplotlib Inline Visualisation Pattern

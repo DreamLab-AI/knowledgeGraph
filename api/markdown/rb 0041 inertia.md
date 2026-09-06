@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0041 inertia
 ```json-ld

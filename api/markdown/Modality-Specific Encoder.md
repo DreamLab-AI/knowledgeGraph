@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Modality-Specific Encoder
 ```json-ld

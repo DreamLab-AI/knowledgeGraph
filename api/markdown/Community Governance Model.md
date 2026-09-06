@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Community Governance Model
 ```json-ld

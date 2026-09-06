@@ -1,5 +1,8 @@
-public:: true
-alias:: KinematicElement
+---
+public: true
+aliases:
+  - KinematicElement
+---
 
 # Kinematic Element
 ```json-ld

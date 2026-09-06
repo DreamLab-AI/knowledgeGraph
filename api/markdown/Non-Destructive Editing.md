@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Non-Destructive Editing
 ```json-ld

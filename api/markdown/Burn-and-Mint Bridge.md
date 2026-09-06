@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Burn-and-Mint Bridge
 ```json-ld

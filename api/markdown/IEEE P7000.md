@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IEEE P7000
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: BlockchainNetwork
+---
+public: true
+aliases:
+  - BlockchainNetwork
+---
 
 # Blockchain Network
 ```json-ld

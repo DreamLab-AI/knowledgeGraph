@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Learner Model
 ```json-ld

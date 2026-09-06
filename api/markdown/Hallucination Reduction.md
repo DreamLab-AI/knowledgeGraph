@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hallucination Reduction
 ```json-ld

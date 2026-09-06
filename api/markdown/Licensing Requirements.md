@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0488-licensing-requirements
+---
+public: true
+aliases:
+  - BC-0488-licensing-requirements
+---
 
 # Licensing Requirements
 ```json-ld

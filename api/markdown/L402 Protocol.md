@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # L402 Protocol
 ```json-ld

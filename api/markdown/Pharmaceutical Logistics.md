@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Pharmaceutical Logistics
 ```json-ld

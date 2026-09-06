@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Verifiable Random Function
 ```json-ld

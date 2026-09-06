@@ -1,0 +1,307 @@
+{
+  "id": "urn:visionflow:page:persistent-research-agent",
+  "title": "Persistent Research Agent",
+  "slug": "persistent-research-agent",
+  "public": true,
+  "classIri": "urn:ngm:class:persistent-research-agent",
+  "domain": "artificial-intelligence",
+  "definition": "An autonomous AI agent designed for continuous, long-horizon information gathering and synthesis across multiple sources.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agents",
+      "label": "Agents"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:action-executor",
+        "label": "Action Executor"
+      },
+      {
+        "id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:planning-module",
+        "label": "Planning Module"
+      },
+      {
+        "id": "urn:ngm:class:reasoning-trace",
+        "label": "Reasoning Trace"
+      },
+      {
+        "id": "urn:ngm:class:reflection-loop",
+        "label": "Reflection Loop"
+      },
+      {
+        "id": "urn:ngm:class:system-prompt",
+        "label": "System Prompt"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:inference-compute",
+        "label": "Inference Compute"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:tool-definition",
+        "label": "Tool Definition"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "id": "urn:ngm:class:computer-use",
+        "label": "Computer Use"
+      },
+      {
+        "id": "urn:ngm:class:deep-research",
+        "label": "Deep Research"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bdi-model",
+        "label": "BDI Architecture"
+      },
+      {
+        "id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "id": "urn:ngm:class:plan-and-execute",
+        "label": "Plan and Execute"
+      },
+      {
+        "id": "urn:ngm:class:re-act",
+        "label": "ReAct"
+      },
+      {
+        "id": "urn:ngm:class:reflexion",
+        "label": "Reflexion"
+      },
+      {
+        "id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
+      },
+      {
+        "id": "urn:ngm:class:subsumption-architecture",
+        "label": "Subsumption Architecture"
+      },
+      {
+        "id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-systems",
+        "label": "Intelligent Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agent2-agent-protocol",
+        "label": "Agent2Agent Protocol"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:embedding-search",
+        "label": "Embedding Search"
+      },
+      {
+        "id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA-ACL"
+      },
+      {
+        "id": "urn:ngm:class:function-schemas",
+        "label": "Function Schemas"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-workflow",
+        "label": "Enterprise Workflow"
+      },
+      {
+        "id": "urn:ngm:class:personal-assistance",
+        "label": "Personal Assistance"
+      },
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      },
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      },
+      {
+        "id": "urn:ngm:class:software-development-automation",
+        "label": "Software Development Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:agent2-agent-protocol-google-2025",
+        "label": "Agent2Agent Protocol (Google 2025)"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol-anthropic-2024",
+        "label": "Model Context Protocol Anthropic 2024"
+      },
+      {
+        "id": "urn:ngm:class:owasp-llm-top-10-2025",
+        "label": "OWASP LLM Top 10 2025"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:tool-augmented-llm",
+        "label": "Tool-Augmented LLM"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

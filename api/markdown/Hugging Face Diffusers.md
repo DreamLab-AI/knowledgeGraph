@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # hugging face diffusers
 ```json-ld

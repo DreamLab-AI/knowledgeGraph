@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fibre Optic Network
 ```json-ld

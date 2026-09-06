@@ -1,5 +1,8 @@
-public:: true
-alias:: VirtualWorld
+---
+public: true
+aliases:
+  - VirtualWorld
+---
 
 # Virtual World
 ```json-ld

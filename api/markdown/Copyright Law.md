@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Copyright Law
 ```json-ld

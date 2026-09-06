@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # DALL-E 3
 ```json-ld

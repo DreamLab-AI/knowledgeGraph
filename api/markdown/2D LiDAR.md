@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # 2D LiDAR
 ```json-ld

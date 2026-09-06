@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # 3D Graphics Standard
 ```json-ld

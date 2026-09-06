@@ -1,5 +1,8 @@
-public:: true
-alias:: FeatureEngineering
+---
+public: true
+aliases:
+  - FeatureEngineering
+---
 
 # Feature Engineering
 ```json-ld

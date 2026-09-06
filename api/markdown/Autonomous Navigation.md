@@ -1,5 +1,8 @@
-public:: true
-alias:: AutonomousNavigation
+---
+public: true
+aliases:
+  - AutonomousNavigation
+---
 
 # Autonomous Navigation
 ```json-ld

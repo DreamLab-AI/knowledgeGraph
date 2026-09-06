@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # 5G Connectivity
 ```json-ld

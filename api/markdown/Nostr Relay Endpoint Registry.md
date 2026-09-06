@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[nostr relay list]]
 # Nostr Relay Endpoint Registry

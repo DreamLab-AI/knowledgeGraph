@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Markov Decision Process
 ```json-ld

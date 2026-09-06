@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # LLM Orchestration
 ```json-ld

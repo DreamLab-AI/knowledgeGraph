@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Verra VCS Methodology
 ```json-ld

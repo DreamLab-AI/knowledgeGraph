@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Itô Calculus
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Processing Hardware
 ```json-ld

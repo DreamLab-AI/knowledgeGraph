@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Various Links]]
 # Cross-Domain Reference Corpus

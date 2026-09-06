@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Statistical Learning Theory
 ```json-ld

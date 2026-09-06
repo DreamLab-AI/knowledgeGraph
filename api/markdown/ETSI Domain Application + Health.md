@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ETSI Domain Application + Health
 ```json-ld

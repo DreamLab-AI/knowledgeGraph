@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Wireless Telemetry Module
 ```json-ld

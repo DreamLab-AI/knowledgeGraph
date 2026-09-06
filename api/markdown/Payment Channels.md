@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Payment Channels
 ```json-ld

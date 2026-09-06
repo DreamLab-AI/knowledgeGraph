@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Layoff tracker and threatened roles]]
 # AI-Driven Workforce Displacement Registry

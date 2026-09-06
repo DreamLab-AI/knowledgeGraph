@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Serialisation Format
 ```json-ld

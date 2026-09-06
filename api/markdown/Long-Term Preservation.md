@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Long-Term Preservation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Regenerative Finance
 ```json-ld

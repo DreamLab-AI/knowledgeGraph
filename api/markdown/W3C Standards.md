@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # W3C Standards
 ```json-ld

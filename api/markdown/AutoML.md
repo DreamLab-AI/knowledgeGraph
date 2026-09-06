@@ -1,5 +1,8 @@
-public:: true
-alias:: Auto-ML
+---
+public: true
+aliases:
+  - Auto-ML
+---
 
 # AutoML
 ```json-ld

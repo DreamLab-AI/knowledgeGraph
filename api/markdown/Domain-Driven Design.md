@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Domain-Driven Design
 ```json-ld

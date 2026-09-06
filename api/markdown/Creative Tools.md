@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # creative tools
 ```json-ld

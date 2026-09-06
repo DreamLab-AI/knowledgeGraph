@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Shared Ar Experiences
 ```json-ld

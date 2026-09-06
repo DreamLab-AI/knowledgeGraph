@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hardware Root of Trust
 ```json-ld

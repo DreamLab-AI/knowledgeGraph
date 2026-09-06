@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Scaled Dot Product Attention
 ```json-ld

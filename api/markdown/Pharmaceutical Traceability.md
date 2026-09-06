@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0442-pharmaceutical-traceability
+---
+public: true
+aliases:
+  - BC-0442-pharmaceutical-traceability
+---
 
 # Pharmaceutical Traceability
 ```json-ld

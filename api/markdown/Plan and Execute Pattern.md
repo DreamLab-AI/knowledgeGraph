@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Plan and Execute Pattern
 ```json-ld

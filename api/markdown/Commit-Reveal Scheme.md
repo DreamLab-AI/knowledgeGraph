@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Commit-Reveal Scheme
 ```json-ld

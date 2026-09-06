@@ -1,5 +1,8 @@
-public:: true
-alias:: MotionCapture
+---
+public: true
+aliases:
+  - MotionCapture
+---
 
 # Motion Capture
 ```json-ld

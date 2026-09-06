@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Connector Standards
 ```json-ld

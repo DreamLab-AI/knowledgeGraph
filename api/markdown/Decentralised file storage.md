@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Decentralised file storage
 ```json-ld

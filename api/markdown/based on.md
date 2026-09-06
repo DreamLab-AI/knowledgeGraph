@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # based on
 ```json-ld

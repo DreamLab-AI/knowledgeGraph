@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Telecollaboration and Telepresence
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Bounding Volume Hierarchy
 ```json-ld

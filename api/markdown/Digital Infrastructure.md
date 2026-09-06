@@ -1,5 +1,8 @@
-public:: true
-alias:: Digital-Infrastructure
+---
+public: true
+aliases:
+  - Digital-Infrastructure
+---
 
 # Digital Infrastructure
 ```json-ld

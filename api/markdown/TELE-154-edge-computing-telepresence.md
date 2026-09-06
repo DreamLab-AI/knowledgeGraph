@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-154-edge-computing-telepresence
 ```json-ld

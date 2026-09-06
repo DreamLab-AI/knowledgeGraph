@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Educational Methodology
 ```json-ld

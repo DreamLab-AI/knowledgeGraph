@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Columnar Storage
 ```json-ld

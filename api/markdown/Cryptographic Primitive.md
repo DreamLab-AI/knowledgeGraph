@@ -1,5 +1,9 @@
-public:: true
-alias:: Cryptographic Primitives, CryptographicPrimitive
+---
+public: true
+aliases:
+  - Cryptographic Primitives
+  - CryptographicPrimitive
+---
 
 # Cryptographic Primitive
 ```json-ld

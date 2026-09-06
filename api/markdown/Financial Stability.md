@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # financial stability
 ```json-ld

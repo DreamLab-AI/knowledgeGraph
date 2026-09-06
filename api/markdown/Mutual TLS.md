@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mutual TLS
 ```json-ld

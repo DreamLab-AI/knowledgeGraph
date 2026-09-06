@@ -1,5 +1,10 @@
-public:: true
-alias:: ISO IEC JTC 1 SC 42, ISO/IEC JTC 1/SC 42, ISO/IEC JTC1 SC42
+---
+public: true
+aliases:
+  - ISO IEC JTC 1 SC 42
+  - ISO/IEC JTC 1/SC 42
+  - ISO/IEC JTC1 SC42
+---
 
 # ISO/IEC JTC 1/SC 42
 ```json-ld

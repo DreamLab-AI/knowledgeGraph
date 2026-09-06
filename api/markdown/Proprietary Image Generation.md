@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Proprietary Image Generation
 ```json-ld

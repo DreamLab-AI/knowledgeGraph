@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Dynamic Character Animation
 ```json-ld

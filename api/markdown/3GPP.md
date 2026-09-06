@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # 3GPP
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: RB-0003-manipulator
+---
+public: true
+aliases:
+  - RB-0003-manipulator
+---
 
 # Manipulator
 ```json-ld

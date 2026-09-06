@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ICE Protocol
 ```json-ld

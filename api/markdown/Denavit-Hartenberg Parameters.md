@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Denavit-Hartenberg Parameters
 ```json-ld

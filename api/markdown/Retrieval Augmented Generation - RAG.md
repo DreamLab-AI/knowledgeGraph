@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Retrieval Augmented Generation - RAG
 ```json-ld

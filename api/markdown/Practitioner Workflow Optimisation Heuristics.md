@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Tips and Tricks]]
 # Practitioner Workflow Optimisation Heuristics

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Privacy and Data Governance
 ```json-ld

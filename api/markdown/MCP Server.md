@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # MCP Server
 ```json-ld

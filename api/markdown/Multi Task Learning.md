@@ -1,5 +1,8 @@
-public:: true
-alias:: multi-task learning
+---
+public: true
+aliases:
+  - multi-task learning
+---
 
 # Multi Task Learning
 ```json-ld

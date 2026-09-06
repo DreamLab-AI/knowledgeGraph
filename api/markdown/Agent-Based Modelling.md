@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Agent-Based Modelling
 ```json-ld

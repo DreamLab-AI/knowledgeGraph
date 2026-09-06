@@ -5,7 +5,7 @@
 
 <https://narrativegoldmine.com/ontology/inferred> a owl:Ontology ;
     rdfs:label "NarrativeGoldmine Inferred Axioms"@en ;
-    vc:generatedAt "2026-08-22T08:19:43.776950+00:00"^^xsd:dateTime ;
+    vc:generatedAt "2026-09-06T17:51:15.249218+00:00"^^xsd:dateTime ;
     vc:inferenceMethod "transitive-subclass-closure" .
 
 <urn:ngm:class:1-hive> rdfs:subClassOf <urn:ngm:class:bc-governance-and-regulation>,
@@ -336,6 +336,9 @@
         <urn:ngm:class:infrastructure>,
         <urn:ngm:class:network-infrastructure> .
 
+<urn:ngm:class:adaptive-capacity-index> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:adaptive-control> rdfs:subClassOf <urn:ngm:class:control-system>,
         <urn:ngm:class:robo-actuation-and-control>,
         <urn:ngm:class:robotics> .
@@ -510,6 +513,10 @@
         <urn:ngm:class:sc-platform-and-environment>,
         <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:agent-capability-scaling> rdfs:subClassOf <urn:ngm:class:autonomous-system>,
+        <urn:ngm:class:robo-robot-type>,
+        <urn:ngm:class:robotics> .
+
 <urn:ngm:class:agent-communication-language> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence> .
 
@@ -529,6 +536,9 @@
         <urn:ngm:class:machine-learning-discipline-model>,
         <urn:ngm:class:machine-learning-discipline-models>,
         <urn:ngm:class:neural-network> .
+
+<urn:ngm:class:agent-ecosystem> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:agent-evaluation-benchmarks> rdfs:subClassOf <urn:ngm:class:ai-evaluation>,
         <urn:ngm:class:ai-infrastructure>,
@@ -575,6 +585,8 @@
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:agent-management> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:agent-memory> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:autonomous-agent>,
@@ -591,10 +603,18 @@
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core> .
 
+<urn:ngm:class:agent-primitives> rdfs:subClassOf <urn:ngm:class:autonomous-system>,
+        <urn:ngm:class:robo-robot-type>,
+        <urn:ngm:class:robotics> .
+
 <urn:ngm:class:agent-runtime> rdfs:subClassOf <urn:ngm:class:ai-application>,
         <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core> .
+
+<urn:ngm:class:agent-security> rdfs:subClassOf <urn:ngm:class:governance>,
+        <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:agent-skill> rdfs:subClassOf <urn:ngm:class:ai-application>,
         <urn:ngm:class:ai-research-area>,
@@ -629,12 +649,28 @@
         <urn:ngm:class:sociotechnical-system>,
         <urn:ngm:class:systems-theory> .
 
+<urn:ngm:class:agentic-architecture> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
+        <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:software-architecture>,
+        <urn:ngm:class:system-architecture> .
+
+<urn:ngm:class:agentic-coding> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:agentic-finance> rdfs:subClassOf <urn:ngm:class:blockchain> .
+
+<urn:ngm:class:agentic-harness> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:agentic-internet> rdfs:subClassOf <urn:ngm:class:ai-application>,
         <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core> .
+
+<urn:ngm:class:agentic-knowledge-base> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:agentic-mycelia> rdfs:subClassOf <urn:ngm:class:sc-platform-and-environment>,
         <urn:ngm:class:spatial-computing> .
@@ -643,6 +679,17 @@
         <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:natural-language-processing> .
+
+<urn:ngm:class:agentic-shift> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:agentic-software-engineering> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:software-engineering>,
+        <urn:ngm:class:systems-engineering> .
+
+<urn:ngm:class:agentic-workload-economics> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:agents> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -670,6 +717,8 @@
         <urn:ngm:class:robotic-system>,
         <urn:ngm:class:robotics> .
 
+<urn:ngm:class:ai-acceleration-gap> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-accelerator> rdfs:subClassOf <urn:ngm:class:hardware-acceleration>,
         <urn:ngm:class:sc-display-and-rendering>,
         <urn:ngm:class:spatial-computing> .
@@ -681,20 +730,61 @@
 
 <urn:ngm:class:ai-adoption> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ai-adoption-barriers> rdfs:subClassOf <urn:ngm:class:governance-framework>,
+        <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-adoption-platform> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-advertising> rdfs:subClassOf <urn:ngm:class:advertising-and-marketing>,
+        <urn:ngm:class:digital-marketing>,
+        <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-agent-acquisition> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-agent-capabilities> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-agent-coordination> rdfs:subClassOf <urn:ngm:class:ai-application>,
         <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core> .
 
+<urn:ngm:class:ai-agent-harness> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-agent-identity> rdfs:subClassOf <urn:ngm:class:bc-cryptographic-primitive> .
+
+<urn:ngm:class:ai-agent-misalignment> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:ai-agent-payments> rdfs:subClassOf <urn:ngm:class:bc-defi-and-economics>,
         <urn:ngm:class:blockchain> .
+
+<urn:ngm:class:ai-agent-risk-disclosure> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-agent-tool-selection> rdfs:subClassOf <urn:ngm:class:autonomous-agent>,
+        <urn:ngm:class:sc-platform-and-environment>,
+        <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:ai-agents> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:ai-alignment> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
         <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-anxiety> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-app-store> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:deep-learning>,
+        <urn:ngm:class:machine-learning-discipline> .
 
 <urn:ngm:class:ai-applications> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -718,6 +808,11 @@
 
 <urn:ngm:class:ai-audit> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ai-augmented-code-review> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:software-engineering>,
+        <urn:ngm:class:systems-engineering> .
+
 <urn:ngm:class:ai-augmented-research-tooling-suite> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:ai-augmented-software-engineering> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
@@ -726,7 +821,21 @@
 
 <urn:ngm:class:ai-benchmark-epistemological-critique> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:ai-benchmarks> rdfs:subClassOf <urn:ngm:class:ai-evaluation>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:evaluation-benchmarks-and-leaderboards> .
+
 <urn:ngm:class:ai-board> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-bubble> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-bubble-narrative> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:complexity-science>,
+        <urn:ngm:class:economics>,
+        <urn:ngm:class:finance> .
 
 <urn:ngm:class:ai-capability-discontinuity-model> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -734,14 +843,44 @@
 
 <urn:ngm:class:ai-capability-temporal-horizon-framework> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ai-capex-forecast> rdfs:subClassOf <urn:ngm:class:data-management>,
+        <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-capex-spend> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:ai-certification> rdfs:subClassOf <urn:ngm:class:compliance>,
         <urn:ngm:class:governance>,
         <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:ai-chip-geopolitics> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:ai-governance-principle>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:regulatory-compliance> .
+
+<urn:ngm:class:ai-chip-manufacturing> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:ai-chips> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-code-generation> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-coding-agents> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-coding-assistant> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-coding-assistants> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-coding-tools> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:ai-companies> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -752,7 +891,25 @@
 
 <urn:ngm:class:ai-concept> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ai-context> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-copyright-infringement> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-core-concepts> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-corporate-governance> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-data-center-capacity> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-data-centers> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-data-retention-policy> rdfs:subClassOf <urn:ngm:class:data-management>,
+        <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:ai-deployment> rdfs:subClassOf <urn:ngm:class:ai-governance>,
         <urn:ngm:class:governance-framework>,
@@ -775,12 +932,40 @@
         <urn:ngm:class:spatial-computing>,
         <urn:ngm:class:technical-standards> .
 
+<urn:ngm:class:ai-driven-software-development> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-driven-unemployment> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-driven-vulnerability-discovery> rdfs:subClassOf <urn:ngm:class:cybersecurity>,
+        <urn:ngm:class:information-security>,
+        <urn:ngm:class:infra-security-and-identity>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:ai-driven-workforce-displacement-registry> rdfs:subClassOf <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-driven-workforce-reduction> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:complexity-science> .
+
+<urn:ngm:class:ai-economic-impact> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:complexity-science> .
 
 <urn:ngm:class:ai-ecosystem> rdfs:subClassOf <urn:ngm:class:digital-economy>,
         <urn:ngm:class:economic-systems>,
         <urn:ngm:class:sc-platform-and-environment>,
         <urn:ngm:class:spatial-computing> .
+
+<urn:ngm:class:ai-employment-effects> rdfs:subClassOf <urn:ngm:class:economic-systems>,
+        <urn:ngm:class:sc-platform-and-environment>,
+        <urn:ngm:class:spatial-computing> .
+
+<urn:ngm:class:ai-energy-consumption> rdfs:subClassOf <urn:ngm:class:governance>,
+        <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:sustainability> .
 
 <urn:ngm:class:ai-energy-scarcity> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
@@ -788,7 +973,12 @@
 
 <urn:ngm:class:ai-ethics-checklist> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ai-executive-accountability> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-existential-risk-probability-estimate> rdfs:subClassOf <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-export-controls> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:ai-fairness> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -807,6 +997,12 @@
 
 <urn:ngm:class:ai-generated-content-disclosure> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ai-generated-pathogens> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-geopolitics> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-governance-framework> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:ai-governance-law-and-privacy> rdfs:subClassOf <urn:ngm:class:infrastructure> .
@@ -822,6 +1018,22 @@
         <urn:ngm:class:mathematical-science>,
         <urn:ngm:class:optimisation> .
 
+<urn:ngm:class:ai-hardware-ecosystem> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
+        <urn:ngm:class:computer-hardware>,
+        <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-harnesses> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-image-generation> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:machine-learning-discipline> .
+
 <urn:ngm:class:ai-impact-assessment> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:ai-in-games> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
@@ -829,8 +1041,38 @@
 <urn:ngm:class:ai-incident> rdfs:subClassOf <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:risk-management> .
 
+<urn:ngm:class:ai-industry-consolidation> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-inequality> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:ai-inference> rdfs:subClassOf <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-inference-costs> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:machine-learning> .
+
+<urn:ngm:class:ai-inference-hardware> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-inference-infrastructure> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-infrastructure-capital-expenditure> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-infrastructure-investment> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-infrastructure-regulation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-infrastructure-strategy> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:ai-investment> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence>,
@@ -841,7 +1083,13 @@
         <urn:ngm:class:infrastructure>,
         <urn:ngm:class:traditional-finance> .
 
+<urn:ngm:class:ai-kill-switch-bill> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-liability> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-licensing-regime> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:ai-lifecycle> rdfs:subClassOf <urn:ngm:class:governance-framework>,
         <urn:ngm:class:infra-legal-and-regulatory>,
@@ -854,6 +1102,18 @@
 
 <urn:ngm:class:ai-machine-learning> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ai-mandate> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-market-dynamics> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-market-growth> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-maturity-assessment> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-metadata> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
@@ -863,6 +1123,9 @@
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core>,
         <urn:ngm:class:machine-learning-discipline> .
+
+<urn:ngm:class:ai-model-auditing> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:ai-model-card> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -883,6 +1146,12 @@
         <urn:ngm:class:model-deployment>,
         <urn:ngm:class:model-serving> .
 
+<urn:ngm:class:ai-model-portfolio> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-model-release-cadence> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-monitoring> rdfs:subClassOf <urn:ngm:class:ai-governance>,
         <urn:ngm:class:governance-framework>,
         <urn:ngm:class:infra-legal-and-regulatory>,
@@ -892,11 +1161,52 @@
 
 <urn:ngm:class:ai-operator> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ai-organizational-structure> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-origin-declaration> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-policy-discourse> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-portfolio-agent> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-pricing-models> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-privacy> rdfs:subClassOf <urn:ngm:class:governance-framework>,
+        <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:ai-product-and-risk-framework> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:ai-productivity-debate> rdfs:subClassOf <urn:ngm:class:economic-systems>,
+        <urn:ngm:class:sc-platform-and-environment>,
+        <urn:ngm:class:spatial-computing> .
+
+<urn:ngm:class:ai-productivity-gains> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:complexity-science> .
+
+<urn:ngm:class:ai-productivity-impact> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:ai-provider> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-public-opinion> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-regulatory-flexibility> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-regulatory-framework> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-regulatory-preemption> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:legal-framework> .
+
+<urn:ngm:class:ai-release-cadence> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:ai-research-talent> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence>,
@@ -906,6 +1216,9 @@
         <urn:ngm:class:sc-content-and-assets>,
         <urn:ngm:class:spatial-computing>,
         <urn:ngm:class:workforce-development> .
+
+<urn:ngm:class:ai-return-on-investment> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:ai-risk-assessment> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infra-software-engineering>,
@@ -919,7 +1232,25 @@
 
 <urn:ngm:class:ai-risks> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ai-roi> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-roi-benchmarking> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-safety-assessment> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-safety-evaluation> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-safety-institute> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-safety-preparedness-framework> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-safety-red-lines> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
         <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:ai-safety-research> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
@@ -929,6 +1260,11 @@
         <urn:ngm:class:digital-governance>,
         <urn:ngm:class:international-cooperation>,
         <urn:ngm:class:internet-governance> .
+
+<urn:ngm:class:ai-sales-quotas> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:distributed-systems>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:ai-scrapers> rdfs:subClassOf <urn:ngm:class:ai-application>,
         <urn:ngm:class:ai-technique>,
@@ -943,13 +1279,29 @@
         <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:ai-security-breach> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-self-regulation> rdfs:subClassOf <urn:ngm:class:governance-framework>,
         <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:ai-shopping-assistant> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-sovereign-wealth-fund> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-sovereignty> rdfs:subClassOf <urn:ngm:class:governance-framework>,
         <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-supply-chain-risk> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-supply-chain-shortage> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:software-development>,
+        <urn:ngm:class:software-engineering>,
+        <urn:ngm:class:systems-engineering> .
 
 <urn:ngm:class:ai-surveillance> rdfs:subClassOf <urn:ngm:class:governance>,
         <urn:ngm:class:infra-legal-and-regulatory>,
@@ -968,6 +1320,8 @@
 
 <urn:ngm:class:ai-system-eu-definition> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ai-systems-thinking> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-talent> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:complexity-science>,
@@ -975,10 +1329,32 @@
         <urn:ngm:class:sc-content-and-assets>,
         <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:ai-talent-acquisition> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-talent-war> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
         <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ai-tax-policy> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ai-technology-skills-curriculum> rdfs:subClassOf <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-traffic-conversion> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-training-data-scarcity> rdfs:subClassOf <urn:ngm:class:data-management>,
+        <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-training-formats> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ai-training-infrastructure> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-training-monitoring> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:ai-transparency-framework> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -999,6 +1375,12 @@
 
 <urn:ngm:class:ai-user> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:ai-user-demographics> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:ai-venture-capital> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:ai-video> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
@@ -1006,6 +1388,12 @@
         <urn:ngm:class:deep-learning>,
         <urn:ngm:class:generative-ai>,
         <urn:ngm:class:machine-learning-discipline> .
+
+<urn:ngm:class:ai-wearables> rdfs:subClassOf <urn:ngm:class:sc-platform-and-environment>,
+        <urn:ngm:class:spatial-computing> .
+
+<urn:ngm:class:ai-workflow-automation> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:aiapplications> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -1048,6 +1436,9 @@
         <urn:ngm:class:infrastructure>,
         <urn:ngm:class:reliability-engineering>,
         <urn:ngm:class:systems-engineering> .
+
+<urn:ngm:class:alethea-agent> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:algorand> rdfs:subClassOf <urn:ngm:class:bc-protocol-and-consensus>,
         <urn:ngm:class:blockchain>,
@@ -1147,6 +1538,9 @@
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infra-network-and-comms>,
         <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:ambient-observation> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:ambient-occlusion> rdfs:subClassOf <urn:ngm:class:sc-display-and-rendering>,
         <urn:ngm:class:spatial-computing> .
@@ -1265,6 +1659,10 @@
 
 <urn:ngm:class:anthropic> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
         <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:anthropic-economic-index> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:complexity-science> .
 
 <urn:ngm:class:anti-aliasing> rdfs:subClassOf <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure>,
@@ -1518,6 +1916,9 @@
         <urn:ngm:class:blockchain>,
         <urn:ngm:class:cryptocurrency> .
 
+<urn:ngm:class:arkg-i2-benchmark> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:arkit> rdfs:subClassOf <urn:ngm:class:digital-technology>,
         <urn:ngm:class:extended-reality>,
         <urn:ngm:class:extended-reality-xr>,
@@ -1534,6 +1935,11 @@
 <urn:ngm:class:arp4754-a> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:compliance-standards> .
+
+<urn:ngm:class:arpu> rdfs:subClassOf <urn:ngm:class:advertising-and-marketing>,
+        <urn:ngm:class:digital-marketing>,
+        <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:artifact-metadata> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
@@ -2114,6 +2520,9 @@
 
 <urn:ngm:class:autonomous-operation> rdfs:subClassOf <urn:ngm:class:robo-robot-type>,
         <urn:ngm:class:robotics> .
+
+<urn:ngm:class:autonomous-proof-generation> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:autonomous-task-execution> rdfs:subClassOf <urn:ngm:class:ai-application>,
         <urn:ngm:class:artificial-intelligence> .
@@ -3468,6 +3877,9 @@
         <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:capability-overhang> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:capacity-planning> rdfs:subClassOf <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
 
@@ -3571,6 +3983,9 @@
         <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure>,
         <urn:ngm:class:sustainability> .
+
+<urn:ngm:class:career-strategy> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:case-management> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
         <urn:ngm:class:digital-infrastructure>,
@@ -3765,6 +4180,9 @@
         <urn:ngm:class:blockchain>,
         <urn:ngm:class:digital-asset> .
 
+<urn:ngm:class:ceo-led-ai-strategy> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:ceph> rdfs:subClassOf <urn:ngm:class:distributed-system>,
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
@@ -3931,6 +4349,20 @@
 
 <urn:ngm:class:china> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:china-ai-regulation> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:legal-framework> .
+
+<urn:ngm:class:china-tech-export-controls> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:legal-framework> .
+
+<urn:ngm:class:chinese-ai-ecosystem> rdfs:subClassOf <urn:ngm:class:digital-asset-ecosystem>,
+        <urn:ngm:class:digital-economy>,
+        <urn:ngm:class:economic-systems>,
+        <urn:ngm:class:sc-platform-and-environment>,
+        <urn:ngm:class:spatial-computing> .
+
 <urn:ngm:class:chinese-seal-art-ai-classification-pipeline> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:chivo-wallet> rdfs:subClassOf <urn:ngm:class:bc-network-component>,
@@ -4041,6 +4473,39 @@
         <urn:ngm:class:machine-learning-discipline-models>,
         <urn:ngm:class:transformer-architecture> .
 
+<urn:ngm:class:claude-co-work> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:claude-code> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:cognitive-ai>,
+        <urn:ngm:class:foundation-model>,
+        <urn:ngm:class:foundation-model-layer>,
+        <urn:ngm:class:large-language-model>,
+        <urn:ngm:class:machine-learning-discipline>,
+        <urn:ngm:class:machine-learning-discipline-model>,
+        <urn:ngm:class:machine-learning-discipline-models>,
+        <urn:ngm:class:proprietary-large-language-models>,
+        <urn:ngm:class:transformer-architecture> .
+
+<urn:ngm:class:claude-design> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:cognitive-ai>,
+        <urn:ngm:class:foundation-model>,
+        <urn:ngm:class:foundation-model-layer>,
+        <urn:ngm:class:large-language-model>,
+        <urn:ngm:class:machine-learning-discipline>,
+        <urn:ngm:class:machine-learning-discipline-model>,
+        <urn:ngm:class:machine-learning-discipline-models>,
+        <urn:ngm:class:proprietary-large-language-models>,
+        <urn:ngm:class:transformer-architecture> .
+
 <urn:ngm:class:clean-spark> rdfs:subClassOf <urn:ngm:class:bc-protocol-and-consensus>,
         <urn:ngm:class:bc-token-and-asset>,
         <urn:ngm:class:blockchain> .
@@ -4128,6 +4593,12 @@
         <urn:ngm:class:blockchain-entity>,
         <urn:ngm:class:consensus-protocol> .
 
+<urn:ngm:class:closed-loop-cooling> rdfs:subClassOf <urn:ngm:class:cloud-computing>,
+        <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:distributed-systems>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:closed-world-assumption> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence> .
 
@@ -4135,6 +4606,8 @@
         <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:cloud-api-provisioning-process> rdfs:subClassOf <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:cloud-computing-revenue> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:cloud-gaming> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
@@ -4208,6 +4681,15 @@
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:benchmarks>,
         <urn:ngm:class:evaluation-benchmarks-and-leaderboards> .
+
+<urn:ngm:class:code-based-design> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:deep-learning>,
+        <urn:ngm:class:generative-ai>,
+        <urn:ngm:class:machine-learning-discipline> .
 
 <urn:ngm:class:code-execution> rdfs:subClassOf <urn:ngm:class:ai-application>,
         <urn:ngm:class:ai-technique>,
@@ -5120,6 +5602,9 @@
 
 <urn:ngm:class:context-window> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:context-window-management> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:contextual-embedding> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
@@ -5132,11 +5617,17 @@
 
 <urn:ngm:class:continued-pre-training> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:continuous-ai-strategy> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:continuous-authentication> rdfs:subClassOf <urn:ngm:class:identity-and-access-management>,
         <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:continuous-batching> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:continuous-care-navigator> rdfs:subClassOf <urn:ngm:class:ai-application>,
         <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:continuous-delivery> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
@@ -5250,6 +5741,11 @@
 
 <urn:ngm:class:conversational-ai> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:conversational-commerce> rdfs:subClassOf <urn:ngm:class:advertising-and-marketing>,
+        <urn:ngm:class:digital-marketing>,
+        <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:conversion-pipeline> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
@@ -5883,6 +6379,10 @@
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:natural-language-processing> .
 
+<urn:ngm:class:customer-world-model> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:knowledge-representation> .
+
 <urn:ngm:class:customs-trade-facilitation> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
 <urn:ngm:class:cut-mix> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
@@ -6027,6 +6527,23 @@
 <urn:ngm:class:data-catalog> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:data-catalogue> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:data-center-infrastructure> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:data-center-moratorium> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:data-center-power-demand> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:data-center-sustainability> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:distributed-systems>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:data-centers> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:data-classification> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
@@ -6518,6 +7035,9 @@
 <urn:ngm:class:deep-speed> rdfs:subClassOf <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:cat-ai-infrastructure> .
 
+<urn:ngm:class:deep-think> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:deepfake-detection> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence> .
 
@@ -6569,6 +7089,9 @@
 
 <urn:ngm:class:delegation-system> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:deliberate-demonstration> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:delivery-versus-payment> rdfs:subClassOf <urn:ngm:class:economic-layer>,
         <urn:ngm:class:financial-infrastructure>,
@@ -7239,6 +7762,9 @@
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:directly-responsible-individual> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:directory-service> rdfs:subClassOf <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure>,
         <urn:ngm:class:security-framework>,
@@ -7510,6 +8036,17 @@
 
 <urn:ngm:class:domain-randomisation> rdfs:subClassOf <urn:ngm:class:robotics> .
 
+<urn:ngm:class:domain-specific-llms> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:large-scale-pretrained-foundation-model>,
+        <urn:ngm:class:machine-learning-discipline>,
+        <urn:ngm:class:machine-learning-discipline-model>,
+        <urn:ngm:class:machine-learning-discipline-models>,
+        <urn:ngm:class:neural-network> .
+
 <urn:ngm:class:dot-product> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence> .
 
@@ -7733,6 +8270,11 @@
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:complexity-science> .
 
+<urn:ngm:class:economic-multiplier-effect> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:complexity-science>,
+        <urn:ngm:class:economics> .
+
 <urn:ngm:class:economic-parameters> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:economic-participation> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
@@ -7750,6 +8292,10 @@
 
 <urn:ngm:class:ed25519> rdfs:subClassOf <urn:ngm:class:bc-cryptographic-primitive>,
         <urn:ngm:class:blockchain> .
+
+<urn:ngm:class:eda-software> rdfs:subClassOf <urn:ngm:class:hardware>,
+        <urn:ngm:class:sc-platform-and-environment>,
+        <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:edge-ai-accelerator> rdfs:subClassOf <urn:ngm:class:computer-hardware>,
         <urn:ngm:class:digital-infrastructure>,
@@ -8047,6 +8593,12 @@
         <urn:ngm:class:artificial-intelligence-core>,
         <urn:ngm:class:machine-learning-discipline> .
 
+<urn:ngm:class:employee-incentives> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:complexity-science>,
+        <urn:ngm:class:economics>,
+        <urn:ngm:class:finance> .
+
 <urn:ngm:class:employment-contract-restructuring-analysis> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:employment-social-contract-under-automation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
@@ -8122,6 +8674,9 @@
         <urn:ngm:class:mathematical-foundations>,
         <urn:ngm:class:mathematical-science> .
 
+<urn:ngm:class:energy-policy> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:energy-storage> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
         <urn:ngm:class:energy-and-power>,
         <urn:ngm:class:grid-infrastructure>,
@@ -8157,6 +8712,19 @@
 
 <urn:ngm:class:enterprise-ai-adoption> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:enterprise-ai-cost-management> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:enterprise-ai-deployment> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:enterprise-ai-spend> rdfs:subClassOf <urn:ngm:class:data-management>,
+        <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:enterprise-ai-strategy> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:systems-engineering> .
+
 <urn:ngm:class:enterprise-automation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:enterprise-blockchain> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
@@ -8174,6 +8742,17 @@
 
 <urn:ngm:class:enterprise-integration> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
         <urn:ngm:class:systems-engineering> .
+
+<urn:ngm:class:enterprise-model-post-training> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:machine-learning-discipline>,
+        <urn:ngm:class:mathematical-foundations>,
+        <urn:ngm:class:mathematical-science>,
+        <urn:ngm:class:neural-network>,
+        <urn:ngm:class:optimisation> .
 
 <urn:ngm:class:enterprise-resource-planning> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
         <urn:ngm:class:digital-infrastructure>,
@@ -9221,6 +9800,9 @@
         <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:fiber-optics> rdfs:subClassOf <urn:ngm:class:infra-network-and-comms>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:fibre-optic-network> rdfs:subClassOf <urn:ngm:class:infra-network-and-comms>,
         <urn:ngm:class:infrastructure> .
 
@@ -9687,6 +10269,10 @@
         <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:frontier-ai-governance> rdfs:subClassOf <urn:ngm:class:governance-framework>,
+        <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:frontier-model-evaluation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:frontier-model-forum> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
@@ -9955,6 +10541,9 @@
 
 <urn:ngm:class:generative-design-tool> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:generative-engine-optimization> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:generative-models> rdfs:subClassOf <urn:ngm:class:ai-application>,
         <urn:ngm:class:ai-model-architecture>,
         <urn:ngm:class:ai-research-area>,
@@ -9963,6 +10552,17 @@
         <urn:ngm:class:artificial-intelligence-core>,
         <urn:ngm:class:deep-learning>,
         <urn:ngm:class:machine-learning-discipline> .
+
+<urn:ngm:class:generative-world-models> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:large-scale-pretrained-foundation-model>,
+        <urn:ngm:class:machine-learning-discipline>,
+        <urn:ngm:class:machine-learning-discipline-model>,
+        <urn:ngm:class:machine-learning-discipline-models>,
+        <urn:ngm:class:neural-network> .
 
 <urn:ngm:class:generator-network> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
@@ -10239,6 +10839,9 @@
 
 <urn:ngm:class:governance-voting> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
+<urn:ngm:class:government-ai-modernization> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:government-digital-identity> rdfs:subClassOf <urn:ngm:class:identity>,
         <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
@@ -10259,6 +10862,9 @@
         <urn:ngm:class:machine-learning-discipline-model>,
         <urn:ngm:class:machine-learning-discipline-models>,
         <urn:ngm:class:neural-network> .
+
+<urn:ngm:class:gpt-5-3-codex-spark> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:gpt-engineer> rdfs:subClassOf <urn:ngm:class:agentic-workflow>,
         <urn:ngm:class:ai-governance-and-ethics>,
@@ -10606,6 +11212,9 @@
 <urn:ngm:class:hallucination> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:risk-management> .
+
+<urn:ngm:class:hallucination-rate> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:hallucination-reduction> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -11006,6 +11615,10 @@
         <urn:ngm:class:sc-platform-and-environment>,
         <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:huawei-chips> rdfs:subClassOf <urn:ngm:class:hardware-acceleration>,
+        <urn:ngm:class:sc-display-and-rendering>,
+        <urn:ngm:class:spatial-computing> .
+
 <urn:ngm:class:hugging-face> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
@@ -11093,6 +11706,9 @@
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:humaninthe-loop-learning> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:humanities-last-exam> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:humanity-attestation> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
@@ -11611,6 +12227,9 @@
         <urn:ngm:class:robotics>,
         <urn:ngm:class:robotics-systems> .
 
+<urn:ngm:class:in-house-ai-infrastructure> rdfs:subClassOf <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:in-page-executable-notebook-pattern> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:in-process-communication> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
@@ -11753,6 +12372,13 @@
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:inference-cost-efficiency> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:inference-economics> rdfs:subClassOf <urn:ngm:class:data-management>,
+        <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:inference-hardware> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
         <urn:ngm:class:computer-hardware>,
         <urn:ngm:class:digital-infrastructure>,
@@ -11774,6 +12400,9 @@
         <urn:ngm:class:machine-learning-discipline>,
         <urn:ngm:class:mlops>,
         <urn:ngm:class:model-deployment> .
+
+<urn:ngm:class:inference-speed> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:infiniband> rdfs:subClassOf <urn:ngm:class:computing-infrastructure>,
         <urn:ngm:class:infra-computing-and-cloud>,
@@ -13150,6 +13779,13 @@
         <urn:ngm:class:infra-data-management>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:labor-displacement> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:labor-statistics-revision> rdfs:subClassOf <urn:ngm:class:economic-systems>,
+        <urn:ngm:class:sc-platform-and-environment>,
+        <urn:ngm:class:spatial-computing> .
+
 <urn:ngm:class:lakehouse-architecture> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
         <urn:ngm:class:infrastructure> .
 
@@ -13214,15 +13850,6 @@
         <urn:ngm:class:machine-learning-discipline>,
         <urn:ngm:class:mathematical-science> .
 
-<urn:ngm:class:large-language-model> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
-        <urn:ngm:class:ai-research-area>,
-        <urn:ngm:class:ai-technique>,
-        <urn:ngm:class:artificial-intelligence>,
-        <urn:ngm:class:artificial-intelligence-core>,
-        <urn:ngm:class:machine-learning-discipline>,
-        <urn:ngm:class:machine-learning-discipline-model>,
-        <urn:ngm:class:machine-learning-discipline-models> .
-
 <urn:ngm:class:large-language-model-training> rdfs:subClassOf <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence> .
 
@@ -13273,6 +13900,10 @@
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:latency-management-protocol> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
+
+<urn:ngm:class:latency-sensitive-workflows> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:machine-learning> .
 
 <urn:ngm:class:latent-diffusion> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
         <urn:ngm:class:ai-research-area>,
@@ -13537,6 +14168,9 @@
 <urn:ngm:class:life-cycle-assessment> rdfs:subClassOf <urn:ngm:class:sc-governance-and-safety>,
         <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:life-science-ai> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:lifecycle-assessment> rdfs:subClassOf <urn:ngm:class:sc-governance-and-safety>,
         <urn:ngm:class:spatial-computing>,
         <urn:ngm:class:sustainable-development> .
@@ -13766,6 +14400,10 @@
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:machine-learning> .
 
+<urn:ngm:class:llm-token-expenditure-index> rdfs:subClassOf <urn:ngm:class:data-management>,
+        <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:lnd> rdfs:subClassOf <urn:ngm:class:bc-network-component>,
         <urn:ngm:class:bc-protocol-and-consensus>,
         <urn:ngm:class:blockchain>,
@@ -13913,6 +14551,9 @@
         <urn:ngm:class:automated-planning>,
         <urn:ngm:class:planning-and-scheduling>,
         <urn:ngm:class:symbolic-ai> .
+
+<urn:ngm:class:long-horizon-task-benchmark> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:long-range-dependency-modelling> rdfs:subClassOf <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
@@ -15029,6 +15670,11 @@
 <urn:ngm:class:modality-specific-encoder> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
         <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:model-access-suspension> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:ai-governance-principle>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:regulatory-compliance> .
+
 <urn:ngm:class:model-adaptation> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
@@ -15118,7 +15764,16 @@
         <urn:ngm:class:infrastructure>,
         <urn:ngm:class:machine-learning> .
 
+<urn:ngm:class:model-deprecation> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:model-depth> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:model-distillation> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:model-distillation-artifacts> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:model-documentation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -15129,6 +15784,17 @@
 <urn:ngm:class:model-extraction> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
         <urn:ngm:class:ai-safety>,
         <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:model-fine-tuning> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:machine-learning-discipline>,
+        <urn:ngm:class:mathematical-foundations>,
+        <urn:ngm:class:mathematical-science>,
+        <urn:ngm:class:neural-network>,
+        <urn:ngm:class:optimisation> .
 
 <urn:ngm:class:model-generalisation> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
@@ -15209,12 +15875,25 @@
 
 <urn:ngm:class:model-robustness> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:model-router> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:model-routing-architecture> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
+        <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:software-architecture>,
+        <urn:ngm:class:system-architecture> .
+
 <urn:ngm:class:model-scaling> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:model-selection> rdfs:subClassOf <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:machine-learning> .
+
+<urn:ngm:class:model-selection-strategy> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:model-tier> rdfs:subClassOf <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
@@ -15423,6 +16102,13 @@
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:multi-agent-interaction> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:knowledge-representation> .
+
+<urn:ngm:class:multi-agent-monitoring> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:multi-agent-orchestration> rdfs:subClassOf <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
 
@@ -15485,6 +16171,20 @@
         <urn:ngm:class:machine-learning-discipline-model>,
         <urn:ngm:class:machine-learning-discipline-models>,
         <urn:ngm:class:neural-network> .
+
+<urn:ngm:class:multi-model-orchestration> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
+        <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:software-architecture>,
+        <urn:ngm:class:system-architecture> .
+
+<urn:ngm:class:multi-model-routing> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
+        <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:software-architecture>,
+        <urn:ngm:class:system-architecture> .
 
 <urn:ngm:class:multi-objective-optimisation> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
@@ -15745,6 +16445,8 @@
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:national-sovereign-ai-procurement-initiative> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:native-audio-generation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:native-token> rdfs:subClassOf <urn:ngm:class:bc-defi-and-economics>,
         <urn:ngm:class:bc-network-component>,
@@ -16133,6 +16835,9 @@
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:nlptask> rdfs:subClassOf <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:no-code-ai-development> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification> rdfs:subClassOf <urn:ngm:class:ai-application>,
         <urn:ngm:class:ai-model-architecture>,
@@ -16821,6 +17526,17 @@
         <urn:ngm:class:software-engineering>,
         <urn:ngm:class:systems-engineering> .
 
+<urn:ngm:class:open-source-ai-models> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:foundation-model>,
+        <urn:ngm:class:foundation-model-layer>,
+        <urn:ngm:class:machine-learning-discipline>,
+        <urn:ngm:class:machine-learning-discipline-model>,
+        <urn:ngm:class:machine-learning-discipline-models> .
+
 <urn:ngm:class:open-source-development> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
         <urn:ngm:class:infrastructure>,
         <urn:ngm:class:software-engineering>,
@@ -16843,6 +17559,20 @@
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:open-source-licence> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:open-source-llms> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:large-scale-pretrained-foundation-model>,
+        <urn:ngm:class:machine-learning-discipline>,
+        <urn:ngm:class:machine-learning-discipline-model>,
+        <urn:ngm:class:machine-learning-discipline-models>,
+        <urn:ngm:class:neural-network> .
+
+<urn:ngm:class:open-source-monetization> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:open-source-social-immersive-space> rdfs:subClassOf <urn:ngm:class:blockchain> .
@@ -16877,6 +17607,12 @@
         <urn:ngm:class:artificial-intelligence-core>,
         <urn:ngm:class:dialogue-system>,
         <urn:ngm:class:natural-language-processing> .
+
+<urn:ngm:class:open-weight-models> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:open-weights-model> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:open-world> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
@@ -17520,6 +18256,11 @@
 <urn:ngm:class:performance-capture> rdfs:subClassOf <urn:ngm:class:sc-display-and-rendering>,
         <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:performance-marketing> rdfs:subClassOf <urn:ngm:class:advertising-and-marketing>,
+        <urn:ngm:class:digital-marketing>,
+        <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:performance-monitoring> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
         <urn:ngm:class:infrastructure>,
         <urn:ngm:class:reliability-engineering>,
@@ -17573,6 +18314,9 @@
 <urn:ngm:class:persistent-memory> rdfs:subClassOf <urn:ngm:class:sc-platform-and-environment>,
         <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:persistent-research-agent> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:persistent-state> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:persistent-storage> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
@@ -17599,6 +18343,9 @@
 
 <urn:ngm:class:personalisation> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
         <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:personalized-ai-recommendations> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:personalized-experiences> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -17719,6 +18466,8 @@
 
 <urn:ngm:class:pixel-shader> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:pjm-interconnection> rdfs:subClassOf <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:pkce> rdfs:subClassOf <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
 
@@ -17786,6 +18535,9 @@
 <urn:ngm:class:play-to-earn-p2-e> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:player-agency> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
+
+<urn:ngm:class:player-coach> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:player-engagement> rdfs:subClassOf <urn:ngm:class:multiverse>,
         <urn:ngm:class:sc-platform-and-environment>,
@@ -17884,6 +18636,10 @@
 <urn:ngm:class:political-economy> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:complexity-science> .
+
+<urn:ngm:class:political-impact-of-ai> rdfs:subClassOf <urn:ngm:class:governance-framework>,
+        <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:polkadot> rdfs:subClassOf <urn:ngm:class:bc-protocol-and-consensus>,
         <urn:ngm:class:blockchain>,
@@ -18370,6 +19126,10 @@
 <urn:ngm:class:privileged-access-management> rdfs:subClassOf <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:pro-worker-ai> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:complexity-science> .
+
 <urn:ngm:class:probabilistic-finality> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
 <urn:ngm:class:probabilistic-forecasting> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
@@ -18472,6 +19232,9 @@
         <urn:ngm:class:mathematical-foundations>,
         <urn:ngm:class:mathematical-science>,
         <urn:ngm:class:optimisation> .
+
+<urn:ngm:class:product-adoption-metrics> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:product-design> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
@@ -18698,13 +19461,16 @@
         <urn:ngm:class:neural-network>,
         <urn:ngm:class:optimisation> .
 
+<urn:ngm:class:proprietary-evals> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:proprietary-format> rdfs:subClassOf <urn:ngm:class:data-management>,
         <urn:ngm:class:infra-data-management>,
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:proprietary-image-generation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
-<urn:ngm:class:proprietary-large-language-models> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+<urn:ngm:class:proprietary-model> rdfs:subClassOf <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:proprietary-protocol> rdfs:subClassOf <urn:ngm:class:human-robot-interaction>,
@@ -18895,11 +19661,18 @@
         <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:public-opinion-on-ai> rdfs:subClassOf <urn:ngm:class:governance-framework>,
+        <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:public-policy> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:public-trust-in-ai> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
         <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:public-wealth-fund> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:publish-subscribe-pattern> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
@@ -20696,6 +21469,12 @@
 <urn:ngm:class:sa8000> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:saas-pricing-models> rdfs:subClassOf <urn:ngm:class:cloud-computing>,
+        <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:distributed-systems>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:sablier> rdfs:subClassOf <urn:ngm:class:bc-network-component>,
         <urn:ngm:class:blockchain> .
 
@@ -20945,6 +21724,10 @@
 
 <urn:ngm:class:scene-understanding> rdfs:subClassOf <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:scheduled-ai-tasks> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:workflow-automation> .
 
 <urn:ngm:class:scheduler> rdfs:subClassOf <urn:ngm:class:computing-infrastructure>,
         <urn:ngm:class:infra-computing-and-cloud>,
@@ -21274,6 +22057,10 @@
 <urn:ngm:class:security-protocol> rdfs:subClassOf <urn:ngm:class:sc-standards-and-interop>,
         <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:security-scanning> rdfs:subClassOf <urn:ngm:class:governance>,
+        <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:security-services> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:security-technology> rdfs:subClassOf <urn:ngm:class:blockchain> .
@@ -21448,6 +22235,10 @@
 
 <urn:ngm:class:semiconductor-industry> rdfs:subClassOf <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:semiconductor-self-reliance> rdfs:subClassOf <urn:ngm:class:hardware>,
+        <urn:ngm:class:sc-platform-and-environment>,
+        <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:semiconductor-supply-chain> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
@@ -21937,6 +22728,17 @@
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:natural-language-processing> .
 
+<urn:ngm:class:small-language-models> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:large-scale-pretrained-foundation-model>,
+        <urn:ngm:class:machine-learning-discipline>,
+        <urn:ngm:class:machine-learning-discipline-model>,
+        <urn:ngm:class:machine-learning-discipline-models>,
+        <urn:ngm:class:neural-network> .
+
 <urn:ngm:class:small-modular-reactors> rdfs:subClassOf <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
 
@@ -22160,6 +22962,12 @@
 
 <urn:ngm:class:software-licence> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:software-moats> rdfs:subClassOf <urn:ngm:class:cloud-computing>,
+        <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:distributed-systems>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:software-supply-chain> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
         <urn:ngm:class:infrastructure>,
         <urn:ngm:class:systems-engineering> .
@@ -22218,6 +23026,10 @@
         <urn:ngm:class:blockchain-entity>,
         <urn:ngm:class:network-component> .
 
+<urn:ngm:class:space-data-centers> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:space-robotics> rdfs:subClassOf <urn:ngm:class:robo-robot-type>,
         <urn:ngm:class:robotic-system>,
         <urn:ngm:class:robotics> .
@@ -22226,6 +23038,10 @@
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:education-technology>,
         <urn:ngm:class:personalised-learning> .
+
+<urn:ngm:class:spacefaring-data-centers> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:model> .
 
 <urn:ngm:class:spam-prevention> rdfs:subClassOf <urn:ngm:class:bc-protocol-and-consensus> .
 
@@ -22843,6 +23659,12 @@
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:stripe-atlas> rdfs:subClassOf <urn:ngm:class:economic-layer>,
+        <urn:ngm:class:financial-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:payment-network> .
+
 <urn:ngm:class:strips> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence> .
 
@@ -23191,6 +24013,15 @@
         <urn:ngm:class:governance>,
         <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:systems-design> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:deep-learning>,
+        <urn:ngm:class:generative-ai>,
+        <urn:ngm:class:machine-learning-discipline> .
 
 <urn:ngm:class:systolic-array> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
         <urn:ngm:class:computer-hardware>,
@@ -23571,6 +24402,9 @@
 
 <urn:ngm:class:term-index> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:terminal-bench-2-0> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:terminal-coding-agents> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
         <urn:ngm:class:digital-infrastructure>,
         <urn:ngm:class:infra-computing-and-cloud>,
@@ -23658,6 +24492,15 @@
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core>,
         <urn:ngm:class:deep-learning>,
+        <urn:ngm:class:machine-learning-discipline> .
+
+<urn:ngm:class:text-to-image-benchmark> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:deep-learning>,
+        <urn:ngm:class:generative-ai>,
         <urn:ngm:class:machine-learning-discipline> .
 
 <urn:ngm:class:text-to-image-generation> rdfs:subClassOf <urn:ngm:class:ai-application>,
@@ -24646,6 +25489,16 @@
         <urn:ngm:class:infrastructure>,
         <urn:ngm:class:network-protocol> .
 
+<urn:ngm:class:ui-code-generation> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:deep-learning>,
+        <urn:ngm:class:generative-ai>,
+        <urn:ngm:class:machine-learning-discipline>,
+        <urn:ngm:class:program-synthesis> .
+
 <urn:ngm:class:uk-ai-opportunities-action-plan> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
         <urn:ngm:class:artificial-intelligence> .
 
@@ -24854,6 +25707,10 @@
         <urn:ngm:class:ai-safety>,
         <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:us-china-chip-export-policy> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:legal-framework> .
+
 <urn:ngm:class:us-regulatory-framework> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
 <urn:ngm:class:usability> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
@@ -24865,6 +25722,9 @@
         <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:usage-analytics> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:usage-based-consumption> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:usb-interface> rdfs:subClassOf <urn:ngm:class:communication-protocol>,
@@ -25301,9 +26161,15 @@
 
 <urn:ngm:class:vertex-shader> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:vertical-ai-models> rdfs:subClassOf <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:vesting-schedule> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
 <urn:ngm:class:vfx-tools> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
+
+<urn:ngm:class:vibe-coding> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:vibration-isolation> rdfs:subClassOf <urn:ngm:class:cyber-physical-systems>,
         <urn:ngm:class:embedded-systems>,
@@ -26113,6 +26979,10 @@
         <urn:ngm:class:sc-platform-and-environment>,
         <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:wholesale-power-auction> rdfs:subClassOf <urn:ngm:class:governance>,
+        <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:wi-fi> rdfs:subClassOf <urn:ngm:class:infra-network-and-comms>,
         <urn:ngm:class:infrastructure> .
 
@@ -26620,9 +27490,6 @@
         <urn:ngm:class:artificial-intelligence-core>,
         <urn:ngm:class:machine-learning-discipline> .
 
-<urn:ngm:class:digital-asset-ecosystem> rdfs:subClassOf <urn:ngm:class:economic-systems>,
-        <urn:ngm:class:spatial-computing> .
-
 <urn:ngm:class:digital-experience> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:digital-rights-management> rdfs:subClassOf <urn:ngm:class:sc-governance-and-safety>,
@@ -26664,10 +27531,6 @@
 
 <urn:ngm:class:federated-identity> rdfs:subClassOf <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
-
-<urn:ngm:class:finance> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
-        <urn:ngm:class:artificial-intelligence>,
-        <urn:ngm:class:complexity-science> .
 
 <urn:ngm:class:financial-market-infrastructure> rdfs:subClassOf <urn:ngm:class:bc-defi-and-economics>,
         <urn:ngm:class:blockchain> .
@@ -26768,8 +27631,6 @@
 
 <urn:ngm:class:middleware> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:model> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
-
 <urn:ngm:class:model-optimisation-and-performance> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
@@ -26807,10 +27668,6 @@
 
 <urn:ngm:class:parametric-design-methodology-modeling> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
-<urn:ngm:class:payment-network> rdfs:subClassOf <urn:ngm:class:economic-layer>,
-        <urn:ngm:class:infra-computing-and-cloud>,
-        <urn:ngm:class:infrastructure> .
-
 <urn:ngm:class:payment-system> rdfs:subClassOf <urn:ngm:class:economic-layer>,
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
@@ -26823,14 +27680,6 @@
         <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:production-pipeline> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
-
-<urn:ngm:class:program-synthesis> rdfs:subClassOf <urn:ngm:class:ai-application>,
-        <urn:ngm:class:ai-research-area>,
-        <urn:ngm:class:ai-technique>,
-        <urn:ngm:class:artificial-intelligence>,
-        <urn:ngm:class:artificial-intelligence-core>,
-        <urn:ngm:class:deep-learning>,
-        <urn:ngm:class:machine-learning-discipline> .
 
 <urn:ngm:class:programming-language> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
@@ -27012,9 +27861,6 @@
         <urn:ngm:class:sc-platform-and-environment>,
         <urn:ngm:class:spatial-computing> .
 
-<urn:ngm:class:advertising-and-marketing> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
-        <urn:ngm:class:infrastructure> .
-
 <urn:ngm:class:aerial-robot> rdfs:subClassOf <urn:ngm:class:robot>,
         <urn:ngm:class:robotics> .
 
@@ -27116,6 +27962,9 @@
 
 <urn:ngm:class:differential-privacy> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:digital-asset-ecosystem> rdfs:subClassOf <urn:ngm:class:economic-systems>,
+        <urn:ngm:class:spatial-computing> .
+
 <urn:ngm:class:digital-content-creation> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:digital-society-harms> rdfs:subClassOf <urn:ngm:class:ai-risk>,
@@ -27178,6 +28027,15 @@
 <urn:ngm:class:language-modeling> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:large-language-model> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:machine-learning-discipline>,
+        <urn:ngm:class:machine-learning-discipline-model>,
+        <urn:ngm:class:machine-learning-discipline-models> .
+
 <urn:ngm:class:layer-2-networks> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
 <urn:ngm:class:linear-algebra> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
@@ -27195,6 +28053,8 @@
 
 <urn:ngm:class:metaverse-governance-and-safeguarding> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:model> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:money> rdfs:subClassOf <urn:ngm:class:bc-network-component>,
         <urn:ngm:class:blockchain> .
 
@@ -27209,6 +28069,10 @@
         <urn:ngm:class:network-infrastructure> .
 
 <urn:ngm:class:off-chain-scaling> rdfs:subClassOf <urn:ngm:class:blockchain> .
+
+<urn:ngm:class:payment-network> rdfs:subClassOf <urn:ngm:class:economic-layer>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:peer-to-peer-network> rdfs:subClassOf <urn:ngm:class:bc-network-component>,
         <urn:ngm:class:blockchain>,
@@ -27227,12 +28091,23 @@
 <urn:ngm:class:privacy-framework> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:program-synthesis> rdfs:subClassOf <urn:ngm:class:ai-application>,
+        <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:deep-learning>,
+        <urn:ngm:class:machine-learning-discipline> .
+
 <urn:ngm:class:prompt-engineering> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core>,
         <urn:ngm:class:machine-learning-discipline>,
         <urn:ngm:class:machine-learning-discipline-technique>,
         <urn:ngm:class:meta-learning> .
+
+<urn:ngm:class:proprietary-large-language-models> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:quality-assurance> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
         <urn:ngm:class:infrastructure>,
@@ -27323,8 +28198,6 @@
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:cognitive-ai> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
-
 <urn:ngm:class:combinatorial-optimisation> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
@@ -27364,8 +28237,6 @@
 
 <urn:ngm:class:decision-theory> rdfs:subClassOf <urn:ngm:class:ai-research-area> .
 
-<urn:ngm:class:digital-marketing> rdfs:subClassOf <urn:ngm:class:infrastructure> .
-
 <urn:ngm:class:digital-platform> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:digital-security> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
@@ -27379,6 +28250,10 @@
 
 <urn:ngm:class:energy-and-power> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
         <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:finance> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:complexity-science> .
 
 <urn:ngm:class:financial-trading> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
@@ -27475,8 +28350,6 @@
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:transformer-architecture> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
-
 <urn:ngm:class:web-standards> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:accountability-mechanism> rdfs:subClassOf <urn:ngm:class:ai-governance>,
@@ -27499,8 +28372,6 @@
 <urn:ngm:class:authentication-mechanism> rdfs:subClassOf <urn:ngm:class:identity-and-access-management>,
         <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
-
-<urn:ngm:class:autonomous-agent> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:autonomous-robot> rdfs:subClassOf <urn:ngm:class:robo-robot-type>,
         <urn:ngm:class:robotics> .
@@ -27528,13 +28399,6 @@
 <urn:ngm:class:explainable-ai> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:fault-tolerance> rdfs:subClassOf <urn:ngm:class:infrastructure> .
-
-<urn:ngm:class:foundation-model> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
-        <urn:ngm:class:ai-technique>,
-        <urn:ngm:class:artificial-intelligence>,
-        <urn:ngm:class:artificial-intelligence-core>,
-        <urn:ngm:class:machine-learning-discipline>,
-        <urn:ngm:class:machine-learning-discipline-models> .
 
 <urn:ngm:class:hardware-security> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
         <urn:ngm:class:digital-infrastructure>,
@@ -27584,8 +28448,6 @@
 
 <urn:ngm:class:quality-of-service> rdfs:subClassOf <urn:ngm:class:infra-network-and-comms>,
         <urn:ngm:class:infrastructure> .
-
-<urn:ngm:class:regulatory-compliance> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:research-methods> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
@@ -27640,14 +28502,12 @@
 
 <urn:ngm:class:audio-technology> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
-<urn:ngm:class:autonomous-system> rdfs:subClassOf <urn:ngm:class:robotics> .
+<urn:ngm:class:autonomous-agent> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:blockchain-economics> rdfs:subClassOf <urn:ngm:class:bc-defi-and-economics>,
         <urn:ngm:class:blockchain> .
 
-<urn:ngm:class:cloud-computing> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
-        <urn:ngm:class:infra-computing-and-cloud>,
-        <urn:ngm:class:infrastructure> .
+<urn:ngm:class:cognitive-ai> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:compliance> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure> .
@@ -27674,12 +28534,8 @@
 
 <urn:ngm:class:electric-actuator> rdfs:subClassOf <urn:ngm:class:robotics> .
 
-<urn:ngm:class:evaluation-benchmarks-and-leaderboards> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
-
 <urn:ngm:class:grid-infrastructure> rdfs:subClassOf <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
-
-<urn:ngm:class:hardware> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:high-performance-computing> rdfs:subClassOf <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
@@ -27716,8 +28572,13 @@
 
 <urn:ngm:class:supply-chain-management> rdfs:subClassOf <urn:ngm:class:distributed-collaboration> .
 
+<urn:ngm:class:transformer-architecture> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:user-experience> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:advertising-and-marketing> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:blockchain-interoperability> rdfs:subClassOf <urn:ngm:class:blockchain>,
         <urn:ngm:class:cross-chain-bridge> .
@@ -27741,6 +28602,8 @@
         <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:evaluation-benchmarks-and-leaderboards> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:graph-theory> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:monetary-system> rdfs:subClassOf <urn:ngm:class:bc-defi-and-economics>,
@@ -27757,6 +28620,8 @@
 
 <urn:ngm:class:process> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:regulatory-compliance> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:statistics> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:measure-theory> .
@@ -27767,6 +28632,8 @@
 
 <urn:ngm:class:access-control> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:autonomous-system> rdfs:subClassOf <urn:ngm:class:robotics> .
+
 <urn:ngm:class:control-theory> rdfs:subClassOf <urn:ngm:class:robotics> .
 
 <urn:ngm:class:data-quality> rdfs:subClassOf <urn:ngm:class:infra-data-management>,
@@ -27776,6 +28643,17 @@
         <urn:ngm:class:economic-systems>,
         <urn:ngm:class:sc-platform-and-environment>,
         <urn:ngm:class:spatial-computing> .
+
+<urn:ngm:class:digital-marketing> rdfs:subClassOf <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:foundation-model> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:machine-learning-discipline>,
+        <urn:ngm:class:machine-learning-discipline-models> .
+
+<urn:ngm:class:hardware> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:industrial-automation> rdfs:subClassOf <urn:ngm:class:embedded-systems>,
         <urn:ngm:class:infra-computing-and-cloud>,
@@ -27804,9 +28682,11 @@
 
 <urn:ngm:class:safety-engineering> rdfs:subClassOf <urn:ngm:class:robotics> .
 
-<urn:ngm:class:game-theory> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+<urn:ngm:class:cloud-computing> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:hardware-acceleration> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
+<urn:ngm:class:game-theory> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:inference-layer> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -27835,6 +28715,8 @@
 
 <urn:ngm:class:environmental-asset-market> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
+<urn:ngm:class:hardware-acceleration> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
+
 <urn:ngm:class:identity-proofing> rdfs:subClassOf <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
 
@@ -27858,8 +28740,6 @@
 <urn:ngm:class:telecommunications> rdfs:subClassOf <urn:ngm:class:infra-network-and-comms>,
         <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:workflow-automation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
-
 <urn:ngm:class:applied-machine-learning> rdfs:subClassOf <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core> .
@@ -27876,10 +28756,6 @@
         <urn:ngm:class:sc-platform-and-environment>,
         <urn:ngm:class:spatial-computing> .
 
-<urn:ngm:class:software-development> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
-        <urn:ngm:class:infrastructure>,
-        <urn:ngm:class:systems-engineering> .
-
 <urn:ngm:class:standards> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:systems-theory> rdfs:subClassOf <urn:ngm:class:infrastructure> .
@@ -27888,6 +28764,8 @@
         <urn:ngm:class:blockchain> .
 
 <urn:ngm:class:token-economics> rdfs:subClassOf <urn:ngm:class:blockchain> .
+
+<urn:ngm:class:workflow-automation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:communication-protocol> rdfs:subClassOf <urn:ngm:class:robotics> .
 
@@ -27904,6 +28782,10 @@
 
 <urn:ngm:class:neural-network-component> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:software-development> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
+        <urn:ngm:class:infrastructure>,
+        <urn:ngm:class:systems-engineering> .
+
 <urn:ngm:class:distributed-computing> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:extended-reality> rdfs:subClassOf <urn:ngm:class:digital-technology>,
@@ -27913,8 +28795,6 @@
 <urn:ngm:class:proof-based-consensus> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
 <urn:ngm:class:security-architecture> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
-
-<urn:ngm:class:ai-evaluation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:corporate-governance> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
         <urn:ngm:class:infrastructure> .
@@ -27928,8 +28808,7 @@
         <urn:ngm:class:artificial-intelligence-core>,
         <urn:ngm:class:machine-learning-discipline> .
 
-<urn:ngm:class:sustainability> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
-        <urn:ngm:class:infrastructure> .
+<urn:ngm:class:ai-evaluation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:authentication> rdfs:subClassOf <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
@@ -27948,6 +28827,9 @@
 <urn:ngm:class:risk-management> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:robotics-systems> rdfs:subClassOf <urn:ngm:class:robotics> .
+
+<urn:ngm:class:sustainability> rdfs:subClassOf <urn:ngm:class:infra-legal-and-regulatory>,
+        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:animation-technique> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
@@ -27995,23 +28877,17 @@
 
 <urn:ngm:class:computer-graphics> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
-<urn:ngm:class:computer-hardware> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
-        <urn:ngm:class:infra-computing-and-cloud>,
-        <urn:ngm:class:infrastructure> .
-
 <urn:ngm:class:computer-vision> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:cross-chain-bridge> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
 <urn:ngm:class:technical-standard> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:cryptocurrency> rdfs:subClassOf <urn:ngm:class:blockchain> .
+<urn:ngm:class:computer-hardware> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:generative-ai> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
-        <urn:ngm:class:ai-technique>,
-        <urn:ngm:class:artificial-intelligence>,
-        <urn:ngm:class:artificial-intelligence-core>,
-        <urn:ngm:class:machine-learning-discipline> .
+<urn:ngm:class:cryptocurrency> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
 <urn:ngm:class:network-component> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
@@ -28031,11 +28907,6 @@
         <urn:ngm:class:machine-learning-discipline-models> .
 
 <urn:ngm:class:payment-channel-network> rdfs:subClassOf <urn:ngm:class:blockchain> .
-
-<urn:ngm:class:system-architecture> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
-        <urn:ngm:class:digital-infrastructure>,
-        <urn:ngm:class:infra-computing-and-cloud>,
-        <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:technical-standards> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
@@ -28061,15 +28932,22 @@
 
 <urn:ngm:class:ai-safety> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:generative-ai> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core>,
+        <urn:ngm:class:machine-learning-discipline> .
+
 <urn:ngm:class:probability-theory> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence> .
 
+<urn:ngm:class:system-architecture> rdfs:subClassOf <urn:ngm:class:ai-infrastructure>,
+        <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:digital-economy> rdfs:subClassOf <urn:ngm:class:sc-platform-and-environment>,
         <urn:ngm:class:spatial-computing> .
-
-<urn:ngm:class:legal-framework> rdfs:subClassOf <urn:ngm:class:infrastructure> .
-
-<urn:ngm:class:foundation-model-layer> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:hardware-component> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
@@ -28085,10 +28963,9 @@
 
 <urn:ngm:class:digital-asset> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
-<urn:ngm:class:knowledge-representation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+<urn:ngm:class:foundation-model-layer> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
-<urn:ngm:class:financial-infrastructure> rdfs:subClassOf <urn:ngm:class:infra-computing-and-cloud>,
-        <urn:ngm:class:infrastructure> .
+<urn:ngm:class:legal-framework> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:multiverse> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
@@ -28096,15 +28973,20 @@
 
 <urn:ngm:class:embedded-systems> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
+<urn:ngm:class:financial-infrastructure> rdfs:subClassOf <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:knowledge-representation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
 <urn:ngm:class:model-evaluation> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:network-infrastructure> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:semantic-spatial-web-layer> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
-<urn:ngm:class:software-architecture> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
-        <urn:ngm:class:infra-computing-and-cloud>,
-        <urn:ngm:class:infrastructure> .
+<urn:ngm:class:measure-theory> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:human-computer-interaction> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:optimisation> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
@@ -28113,18 +28995,20 @@
         <urn:ngm:class:machine-learning-discipline>,
         <urn:ngm:class:mathematical-science> .
 
-<urn:ngm:class:measure-theory> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+<urn:ngm:class:software-architecture> rdfs:subClassOf <urn:ngm:class:digital-infrastructure>,
+        <urn:ngm:class:infra-computing-and-cloud>,
+        <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:blockchain-scalability> rdfs:subClassOf <urn:ngm:class:blockchain> .
 
 <urn:ngm:class:cybersecurity> rdfs:subClassOf <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:human-computer-interaction> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
-
-<urn:ngm:class:blockchain-scalability> rdfs:subClassOf <urn:ngm:class:blockchain> .
-
 <urn:ngm:class:identity-and-access-management> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:cryptographic-primitive> rdfs:subClassOf <urn:ngm:class:blockchain> .
+
+<urn:ngm:class:control-system> rdfs:subClassOf <urn:ngm:class:robotics> .
 
 <urn:ngm:class:economic-layer> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
@@ -28135,16 +29019,14 @@
         <urn:ngm:class:machine-learning-discipline>,
         <urn:ngm:class:machine-learning-discipline-models> .
 
-<urn:ngm:class:control-system> rdfs:subClassOf <urn:ngm:class:robotics> .
-
 <urn:ngm:class:economics> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+
+<urn:ngm:class:identity> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:neural-network> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:distributed-systems> rdfs:subClassOf <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
-
-<urn:ngm:class:identity> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:machine-learning-discipline-model> rdfs:subClassOf <urn:ngm:class:ai-model-architecture>,
         <urn:ngm:class:ai-research-area>,
@@ -28152,8 +29034,7 @@
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core> .
 
-<urn:ngm:class:machine-learning-discipline-models> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
-        <urn:ngm:class:ai-technique>,
+<urn:ngm:class:machine-learning-discipline-technique> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core> .
 
@@ -28163,7 +29044,8 @@
         <urn:ngm:class:artificial-intelligence-core>,
         <urn:ngm:class:machine-learning-discipline> .
 
-<urn:ngm:class:machine-learning-discipline-technique> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+<urn:ngm:class:machine-learning-discipline-models> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:ai-technique>,
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core> .
 
@@ -28171,16 +29053,9 @@
 
 <urn:ngm:class:ai-governance-principle> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
-<urn:ngm:class:economic-systems> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
-
-<urn:ngm:class:deep-learning> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
-        <urn:ngm:class:artificial-intelligence>,
-        <urn:ngm:class:artificial-intelligence-core> .
-
-<urn:ngm:class:software-engineering> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
-        <urn:ngm:class:infrastructure> .
-
 <urn:ngm:class:blockchain-entity> rdfs:subClassOf <urn:ngm:class:blockchain> .
+
+<urn:ngm:class:economic-systems> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:information-security> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
@@ -28188,12 +29063,19 @@
         <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:artificial-intelligence-core> .
 
+<urn:ngm:class:software-engineering> rdfs:subClassOf <urn:ngm:class:infra-software-engineering>,
+        <urn:ngm:class:infrastructure> .
+
 <urn:ngm:class:cryptography> rdfs:subClassOf <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:complexity-science> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
+<urn:ngm:class:deep-learning> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
+        <urn:ngm:class:artificial-intelligence>,
+        <urn:ngm:class:artificial-intelligence-core> .
 
 <urn:ngm:class:governance-framework> rdfs:subClassOf <urn:ngm:class:infrastructure> .
+
+<urn:ngm:class:complexity-science> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:data-management> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 

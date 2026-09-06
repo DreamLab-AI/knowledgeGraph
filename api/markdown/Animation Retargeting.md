@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Animation Retargeting
 ```json-ld

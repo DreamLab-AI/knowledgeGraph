@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Microsoft Entra Verified ID
 ```json-ld

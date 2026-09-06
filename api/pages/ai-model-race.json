@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:ai-model-race",
+  "title": "AI Model Race",
+  "slug": "ai-model-race",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-model-race",
+  "domain": "economics",
+  "definition": "The competitive dynamic among AI developers and providers, characterized by multiple parallel races for superiority in capability, speed, cost, distribution, and other strategic dimensions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-strategy",
+      "label": "AI Strategy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:strategic-positioning",
+        "label": "Strategic Positioning"
+      },
+      {
+        "id": "urn:ngm:class:inference-speed",
+        "label": "Inference Speed"
+      },
+      {
+        "id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

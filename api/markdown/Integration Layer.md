@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Integration Layer
 ```json-ld

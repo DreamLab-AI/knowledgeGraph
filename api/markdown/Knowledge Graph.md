@@ -1,5 +1,8 @@
-public:: true
-alias:: KnowledgeGraph
+---
+public: true
+aliases:
+  - KnowledgeGraph
+---
 
 # Knowledge Graph
 ```json-ld

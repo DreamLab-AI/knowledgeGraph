@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Diffusion of Innovations Theory
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Large-Scale Training
 ```json-ld

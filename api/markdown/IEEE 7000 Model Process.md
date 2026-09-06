@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IEEE 7000 Model Process
 ```json-ld

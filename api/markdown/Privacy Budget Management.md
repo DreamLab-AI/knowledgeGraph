@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Privacy Budget Management
 ```json-ld

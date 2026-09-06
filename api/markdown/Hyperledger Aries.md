@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hyperledger Aries
 ```json-ld

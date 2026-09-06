@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # VP9 Codec
 ```json-ld

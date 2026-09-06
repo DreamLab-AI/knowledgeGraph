@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Access Control System
 ```json-ld

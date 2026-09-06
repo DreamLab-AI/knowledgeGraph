@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Text-to-Video Generation
 ```json-ld

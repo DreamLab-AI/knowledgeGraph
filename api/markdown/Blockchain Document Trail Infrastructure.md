@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[blocktrails]]
 # Blockchain Document Trail Infrastructure

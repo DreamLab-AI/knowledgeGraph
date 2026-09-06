@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Liquidity Provider
 ```json-ld

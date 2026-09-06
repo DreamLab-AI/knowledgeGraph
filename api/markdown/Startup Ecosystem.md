@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Startup Ecosystem
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # liquidity mining
 ```json-ld

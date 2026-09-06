@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reality ETH Oracle
 ```json-ld

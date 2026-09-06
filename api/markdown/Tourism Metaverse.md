@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Tourism Metaverse
 ```json-ld

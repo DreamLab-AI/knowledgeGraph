@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Variable Stiffness Actuator
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Python to list nodes]]
 # Pyodide Knowledge Graph Node Enumerator

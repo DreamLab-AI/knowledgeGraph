@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0103 collaborative operation
 ```json-ld

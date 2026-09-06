@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # UN Guiding Principles on Business and Human Rights
 ```json-ld

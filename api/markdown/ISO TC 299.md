@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ISO/TC 299
 ```json-ld

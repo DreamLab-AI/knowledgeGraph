@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Context Engineering
 ```json-ld

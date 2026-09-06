@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Planetary Exploration
 ```json-ld

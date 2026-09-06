@@ -1,5 +1,8 @@
-public:: true
-alias:: EconomicMechanism
+---
+public: true
+aliases:
+  - EconomicMechanism
+---
 
 # Economic Mechanism
 ```json-ld

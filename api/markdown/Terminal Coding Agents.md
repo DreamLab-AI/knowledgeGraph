@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Terminal Coding Agents
 ```json-ld

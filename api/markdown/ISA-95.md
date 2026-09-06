@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ISA-95
 ```json-ld

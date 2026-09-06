@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AGI Timelines
 ```json-ld

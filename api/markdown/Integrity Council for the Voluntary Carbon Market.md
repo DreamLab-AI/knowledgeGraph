@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Integrity Council for the Voluntary Carbon Market
 ```json-ld

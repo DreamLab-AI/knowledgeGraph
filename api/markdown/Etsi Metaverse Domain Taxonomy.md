@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Etsi Metaverse Domain Taxonomy
 ```json-ld

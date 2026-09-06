@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # DAO Legal Structures
 ```json-ld

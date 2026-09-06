@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-110-spatial-audio-processing
 ```json-ld

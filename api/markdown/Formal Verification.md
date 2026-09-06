@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # formal verification
 ```json-ld

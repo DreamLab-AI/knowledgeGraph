@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cycloidal Drive
 ```json-ld

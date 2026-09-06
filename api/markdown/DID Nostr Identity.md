@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # DID Nostr Identity
 ```json-ld

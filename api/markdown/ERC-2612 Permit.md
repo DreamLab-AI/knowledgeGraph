@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ERC-2612 Permit
 ```json-ld

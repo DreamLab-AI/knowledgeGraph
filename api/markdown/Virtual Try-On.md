@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Try-On
 ```json-ld

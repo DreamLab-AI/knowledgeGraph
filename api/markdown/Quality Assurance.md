@@ -1,5 +1,8 @@
-public:: true
-alias:: QualityAssurance
+---
+public: true
+aliases:
+  - QualityAssurance
+---
 
 # Quality Assurance
 ```json-ld

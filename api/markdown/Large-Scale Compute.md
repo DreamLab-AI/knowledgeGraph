@@ -1,5 +1,8 @@
-public:: true
-alias:: Large Scale Compute
+---
+public: true
+aliases:
+  - Large Scale Compute
+---
 
 # Large-Scale Compute
 ```json-ld

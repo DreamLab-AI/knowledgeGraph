@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reserve Asset
 ```json-ld

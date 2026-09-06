@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sliding Mode Control
 ```json-ld

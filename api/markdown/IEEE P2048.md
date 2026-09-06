@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IEEE P2048
 ```json-ld

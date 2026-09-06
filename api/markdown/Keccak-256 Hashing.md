@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Keccak-256 Hashing
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Monitoring Infrastructure
 ```json-ld

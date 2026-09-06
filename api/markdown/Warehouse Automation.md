@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # warehouse automation
 ```json-ld

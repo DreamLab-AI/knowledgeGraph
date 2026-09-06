@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Retry with Backoff
 ```json-ld

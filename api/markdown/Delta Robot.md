@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Delta Robot
 ```json-ld

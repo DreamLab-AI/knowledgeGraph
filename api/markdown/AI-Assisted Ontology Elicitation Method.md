@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Ontology conversation with AIs]]
 # AI-Assisted Ontology Elicitation Method

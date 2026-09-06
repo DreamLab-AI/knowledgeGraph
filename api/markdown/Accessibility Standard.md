@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Accessibility Standard
 ```json-ld

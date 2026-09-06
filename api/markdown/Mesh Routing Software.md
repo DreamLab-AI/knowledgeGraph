@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mesh Routing Software
 ```json-ld

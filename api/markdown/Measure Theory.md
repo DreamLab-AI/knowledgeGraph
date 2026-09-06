@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Measure Theory
 ```json-ld

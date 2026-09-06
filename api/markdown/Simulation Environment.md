@@ -1,5 +1,8 @@
-public:: true
-alias:: SimulationEnvironment
+---
+public: true
+aliases:
+  - SimulationEnvironment
+---
 
 # Simulation Environment
 ```json-ld

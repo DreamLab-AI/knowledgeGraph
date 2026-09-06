@@ -1,5 +1,8 @@
-public:: true
-alias:: RecommendationSystem
+---
+public: true
+aliases:
+  - RecommendationSystem
+---
 
 # Recommendation System
 ```json-ld

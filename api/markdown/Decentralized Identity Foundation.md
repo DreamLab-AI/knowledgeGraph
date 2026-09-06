@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # decentralized identity foundation
 ```json-ld

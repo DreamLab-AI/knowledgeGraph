@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Planning Kanban - currently broken]]
 # Knowledge Graph Kanban Board

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Carbon Neutrality Planning
 ```json-ld

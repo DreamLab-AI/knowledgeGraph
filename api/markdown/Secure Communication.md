@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Secure Communication
 ```json-ld

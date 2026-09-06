@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Polygon AggLayer
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Human tracking and SLAM capture]]
 # Human Pose SLAM Capture System

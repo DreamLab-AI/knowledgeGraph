@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[RuV Agents]]
 # ruv-FANN Multi-Agent Swarm Framework

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # game development
 ```json-ld

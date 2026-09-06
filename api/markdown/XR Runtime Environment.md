@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # XR Runtime Environment
 ```json-ld

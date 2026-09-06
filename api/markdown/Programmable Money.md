@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # programmable money
 ```json-ld

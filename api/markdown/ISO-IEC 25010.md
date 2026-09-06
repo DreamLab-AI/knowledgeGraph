@@ -1,5 +1,8 @@
-public:: true
-alias:: ISO/IEC 25010
+---
+public: true
+aliases:
+  - ISO/IEC 25010
+---
 
 # ISO-IEC 25010
 ```json-ld

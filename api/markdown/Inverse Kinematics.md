@@ -1,5 +1,9 @@
-public:: true
-alias:: InverseKinematics, RB-1006-inverse-kinematics
+---
+public: true
+aliases:
+  - InverseKinematics
+  - RB-1006-inverse-kinematics
+---
 
 # Inverse Kinematics
 ```json-ld

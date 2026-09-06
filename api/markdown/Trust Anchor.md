@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Trust Anchor
 ```json-ld

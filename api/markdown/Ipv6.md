@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ipv6
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ETSI Domain Application + Creative
 ```json-ld

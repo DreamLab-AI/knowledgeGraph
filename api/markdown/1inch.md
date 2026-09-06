@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # 1inch
 ```json-ld

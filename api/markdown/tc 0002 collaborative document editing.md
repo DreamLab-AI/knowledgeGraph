@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # tc 0002 collaborative document editing
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Dense Passage Retrieval
 ```json-ld

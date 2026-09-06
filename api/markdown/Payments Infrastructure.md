@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Payments Infrastructure
 ```json-ld

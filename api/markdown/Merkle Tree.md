@@ -1,5 +1,9 @@
-public:: true
-alias:: Merkle Trees, MerkleTree
+---
+public: true
+aliases:
+  - Merkle Trees
+  - MerkleTree
+---
 
 # Merkle Tree
 ```json-ld

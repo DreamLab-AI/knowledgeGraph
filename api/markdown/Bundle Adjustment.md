@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # bundle adjustment
 ```json-ld

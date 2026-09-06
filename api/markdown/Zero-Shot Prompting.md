@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Zero-Shot Prompting
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cambridge Judge Business School
 ```json-ld

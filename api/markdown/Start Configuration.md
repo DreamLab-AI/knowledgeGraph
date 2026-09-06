@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Start Configuration
 ```json-ld

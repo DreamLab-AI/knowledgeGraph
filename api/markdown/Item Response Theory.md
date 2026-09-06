@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Item Response Theory
 ```json-ld

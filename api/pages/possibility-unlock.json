@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:possibility-unlock",
+  "title": "Possibility Unlock",
+  "slug": "possibility-unlock",
+  "public": true,
+  "classIri": "urn:ngm:class:possibility-unlock",
+  "domain": "economics",
+  "definition": "A market creation mechanism where AI renders new service models operationally viable at scale, enabling the emergence of entirely new markets that were previously impossible due to technical or logistical constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-impact-of-ai",
+      "label": "Economic Impact of AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:new-market-creation",
+        "label": "New Market Creation"
+      },
+      {
+        "id": "urn:ngm:class:operational-viability",
+        "label": "Operational Viability"
+      },
+      {
+        "id": "urn:ngm:class:continuous-preventative-healthcare",
+        "label": "Continuous Preventative Healthcare"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

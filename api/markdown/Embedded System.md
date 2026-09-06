@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Embedded System
 ```json-ld

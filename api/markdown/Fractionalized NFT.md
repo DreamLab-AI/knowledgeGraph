@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fractionalized NFT
 ```json-ld

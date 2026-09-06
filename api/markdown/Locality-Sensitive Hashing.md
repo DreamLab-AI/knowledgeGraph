@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Locality-Sensitive Hashing
 ```json-ld

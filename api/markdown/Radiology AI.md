@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Radiology AI
 ```json-ld

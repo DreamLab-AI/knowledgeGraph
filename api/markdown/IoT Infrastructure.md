@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IoT Infrastructure
 ```json-ld

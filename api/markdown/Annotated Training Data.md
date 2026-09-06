@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Annotated Training Data
 ```json-ld

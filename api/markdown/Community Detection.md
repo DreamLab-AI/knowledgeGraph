@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Community Detection
 ```json-ld

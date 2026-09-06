@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # RB 1002 closedloopcontrol
 ```json-ld

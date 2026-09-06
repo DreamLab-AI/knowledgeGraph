@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Social Impact
 ```json-ld
@@ -470,7 +472,7 @@ public:: true
 
   - ## Elder Care
 		- [Where and who you are in VR has a real impact, study finds | Stanford News](https://news.stanford.edu/2022/12/14/vr-real-impact-study-finds/)
-		- [New Stanford University study reveals almost 60% of seniors felt less isolated socially after their #[[Virtual Reality]] experience
+		- [New Stanford University study reveals almost 60% of seniors felt less isolated socially after their #Virtual-Reality experience
 		- the opposite of the stereotype that #VR is an isolating technology! Additionally, 80% of them had a more positive attitude after the experience. The study involved interviewing residents of 17 senior communities who who could choose from virtual experiences such as parachuting, watching stage performances, or visiting places like Paris and Egypt. They used both HTC VIVE Flow and PICO XR headsets. The study was conducted in collaboration with Chris B., CEO of Mynd Immersive, and is part of a wider study to help lessen the impact of #dementia. I particularly enjoyed the final comment by senior resident Pete Audet at the end of this video who shared our wonder about how exciting the next 10 years of this technology is going to be 𣰊	 - Search (bing.com)](https://www.bing.com/search?q=New+Stanford+University+study+reveals+almost+60%25+of+seniors+felt+less+isolated+socially+after+their+%23VirtualReality+experience+-+the+opposite+of+the+stereotype+that+%23VR+is+an+isolating+technology!+Additionally%2C+80%25+of+them+had+a+more+positive+attitude+after+the+experience.+The+study+involved+interviewing+residents+of+17+senior+communities+who+who+could+choose+from+virtual+experiences+such+as+parachuting%2C+watching+stage+performances%2C+or+visiting+places+like+Paris+and+Egypt.+They+used+both+HTC+VIVE+Flow+and+PICO+XR+headsets.+The+study+was+conducted+in+collaboration+with+Chris+B.%2C+CEO+of+Mynd+Immersive%2C+and+is+part+of+a+wider+study+to+help+lessen+the+impact+of+%23dementia.+I+particularly+enjoyed+the+final+comment+by+senior+resident+Pete+Audet+at+the+end+of+this+video+who+shared+our+wonder+about+how+exciting+the+next+10+years+of+this+technology+is+going+to+be+%F0%9F%91%8F&cvid=3fc42482a4bb482d8ea881dc2efc2960&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEHNTcxajBqNKgCALACAA&FORM=ANAB01&PC=U531)
 		- [moore-et-al-2023-from-65-to-103-older-adults-experience-virtual-reality-differently-depending-on-their-age-evidence.pdf (stanford.edu)](https://vhil.stanford.edu/sites/g/files/sbiybj29011/files/media/file/moore-et-al-2023-from-65-to-103-older-adults-experience-virtual-reality-differently-depending-on-their-age-evidence.pdf) -
 

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mango Markets
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Enterprise AI Adoption
 ```json-ld

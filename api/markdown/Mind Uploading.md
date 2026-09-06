@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mind Uploading
 ```json-ld

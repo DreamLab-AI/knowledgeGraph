@@ -1,5 +1,8 @@
-public:: true
-alias:: ImitationLearning
+---
+public: true
+aliases:
+  - ImitationLearning
+---
 
 # Imitation Learning
 ```json-ld

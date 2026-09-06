@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Tooling Layer
 ```json-ld

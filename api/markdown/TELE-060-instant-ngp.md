@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-060-instant-ngp
 ```json-ld

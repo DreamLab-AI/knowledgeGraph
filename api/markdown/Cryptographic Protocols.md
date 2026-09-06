@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cryptographic Protocols
 ```json-ld

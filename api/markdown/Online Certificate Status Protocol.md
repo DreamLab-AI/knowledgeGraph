@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Online Certificate Status Protocol
 ```json-ld

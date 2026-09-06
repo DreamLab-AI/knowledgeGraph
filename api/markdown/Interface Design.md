@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Interface Design
 ```json-ld

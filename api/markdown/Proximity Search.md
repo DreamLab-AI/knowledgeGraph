@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Proximity Search
 ```json-ld

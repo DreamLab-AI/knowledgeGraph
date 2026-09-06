@@ -1,0 +1,45 @@
+{
+  "id": "urn:visionflow:page:mcp-connectors",
+  "title": "MCP Connectors",
+  "slug": "mcp-connectors",
+  "public": true,
+  "classIri": "urn:ngm:class:mcp-connectors",
+  "domain": "infrastructure",
+  "definition": "Standardized interfaces that allow AI models to connect to external tools, data sources, and systems via the Model Context Protocol.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-hardware-infrastructure",
+      "label": "AI Hardware Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-hardware-infrastructure",
+        "label": "AI Hardware Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:claude-co-work",
+        "label": "Claude Co-work"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

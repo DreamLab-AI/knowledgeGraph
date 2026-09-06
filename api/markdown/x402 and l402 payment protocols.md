@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # x402 and l402 payment protocols
 ```json-ld

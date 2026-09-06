@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # SPIR-V
 ```json-ld

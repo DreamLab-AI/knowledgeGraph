@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Postquantum Cryptography
 ```json-ld

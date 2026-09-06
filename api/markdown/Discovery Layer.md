@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Discovery Layer
 ```json-ld

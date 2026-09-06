@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Container Registry
 ```json-ld

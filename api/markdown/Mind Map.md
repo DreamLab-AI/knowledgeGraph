@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mind Map
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Exchange Rate
 ```json-ld

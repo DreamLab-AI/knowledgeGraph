@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # VisioningLab-Property-Crosswalk
 ```json-ld

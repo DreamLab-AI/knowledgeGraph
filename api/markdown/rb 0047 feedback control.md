@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0047 feedback control
 ```json-ld

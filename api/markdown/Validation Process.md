@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Validation Process
 ```json-ld

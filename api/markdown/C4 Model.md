@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # C4 Model
 ```json-ld

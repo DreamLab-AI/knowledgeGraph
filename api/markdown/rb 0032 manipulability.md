@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0032 manipulability
 ```json-ld

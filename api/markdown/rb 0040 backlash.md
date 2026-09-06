@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0040 backlash
 ```json-ld

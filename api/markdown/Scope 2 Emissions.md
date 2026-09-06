@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Scope 2 Emissions
 ```json-ld

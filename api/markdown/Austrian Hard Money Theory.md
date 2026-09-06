@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Austrian Hard Money Theory
 ```json-ld

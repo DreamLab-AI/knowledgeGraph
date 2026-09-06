@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Consortium Governance
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Carbon Neutral Blockchain
 ```json-ld

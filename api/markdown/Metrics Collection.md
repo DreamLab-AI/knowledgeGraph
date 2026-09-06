@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Metrics Collection
 ```json-ld

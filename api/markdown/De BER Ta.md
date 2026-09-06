@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # De BER Ta
 ```json-ld

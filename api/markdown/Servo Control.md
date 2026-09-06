@@ -1,5 +1,8 @@
-public:: true
-alias:: ServoControl
+---
+public: true
+aliases:
+  - ServoControl
+---
 
 # Servo Control
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Public]]
 # Knowledge Graph Publication Classifier

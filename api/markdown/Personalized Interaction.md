@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Personalized Interaction
 ```json-ld

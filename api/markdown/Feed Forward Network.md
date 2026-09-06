@@ -1,5 +1,8 @@
-public:: true
-alias:: Feed-Forward Network
+---
+public: true
+aliases:
+  - Feed-Forward Network
+---
 
 # Feed Forward Network
 ```json-ld

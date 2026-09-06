@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Carbon Offsetting
 ```json-ld

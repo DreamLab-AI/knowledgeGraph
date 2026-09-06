@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Interfaces]]
 # Human-Agent Interaction Surfaces

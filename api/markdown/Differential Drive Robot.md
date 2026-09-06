@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Differential Drive Robot
 ```json-ld

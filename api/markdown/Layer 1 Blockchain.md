@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Layer 1 Blockchain
 

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NIST FIPS 186
 ```json-ld

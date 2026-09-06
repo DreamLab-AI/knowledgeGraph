@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Browser-Based Screen Capture
 ```json-ld

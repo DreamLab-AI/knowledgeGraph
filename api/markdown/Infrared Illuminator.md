@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Infrared Illuminator
 ```json-ld

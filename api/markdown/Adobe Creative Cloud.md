@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Adobe Creative Cloud
 ```json-ld

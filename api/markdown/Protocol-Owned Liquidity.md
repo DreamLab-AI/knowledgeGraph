@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Protocol-Owned Liquidity
 ```json-ld

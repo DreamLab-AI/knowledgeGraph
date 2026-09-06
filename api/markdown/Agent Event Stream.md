@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Agent Event Stream
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # International AI Cooperation
 ```json-ld

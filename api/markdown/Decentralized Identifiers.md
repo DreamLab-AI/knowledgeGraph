@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0457-decentralized-identifiers
+---
+public: true
+aliases:
+  - BC-0457-decentralized-identifiers
+---
 
 # Decentralized Identifiers
 ```json-ld

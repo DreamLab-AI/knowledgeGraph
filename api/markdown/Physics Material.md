@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Physics Material
 ```json-ld

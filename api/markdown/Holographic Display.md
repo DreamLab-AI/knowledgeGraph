@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Holographic Display
 ```json-ld

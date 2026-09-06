@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Documentation As Code
 ```json-ld

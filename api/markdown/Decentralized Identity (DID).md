@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Decentralized Identity (DID)
 ```json-ld

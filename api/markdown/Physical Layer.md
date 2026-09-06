@@ -1,5 +1,8 @@
-public:: true
-alias:: PhysicalLayer
+---
+public: true
+aliases:
+  - PhysicalLayer
+---
 
 # Physical Layer
 ```json-ld

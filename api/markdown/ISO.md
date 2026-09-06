@@ -1,5 +1,8 @@
-public:: true
-alias:: ISO (International Organization for Standardization)
+---
+public: true
+aliases:
+  - ISO (International Organization for Standardization)
+---
 
 # ISO
 ```json-ld

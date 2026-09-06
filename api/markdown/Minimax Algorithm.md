@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Minimax Algorithm
 ```json-ld

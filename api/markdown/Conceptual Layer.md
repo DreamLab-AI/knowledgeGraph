@@ -1,5 +1,8 @@
-public:: true
-alias:: ConceptualLayer
+---
+public: true
+aliases:
+  - ConceptualLayer
+---
 
 # Conceptual Layer
 ```json-ld

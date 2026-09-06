@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Field-Programmable Gate Array
 ```json-ld

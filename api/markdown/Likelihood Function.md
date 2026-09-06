@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Likelihood Function
 ```json-ld

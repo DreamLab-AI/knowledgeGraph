@@ -1,5 +1,8 @@
-public:: true
-alias:: ProposalSystem
+---
+public: true
+aliases:
+  - ProposalSystem
+---
 
 # Proposal System
 ```json-ld

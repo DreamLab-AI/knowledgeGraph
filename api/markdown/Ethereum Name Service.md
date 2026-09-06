@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ethereum Name Service
 ```json-ld

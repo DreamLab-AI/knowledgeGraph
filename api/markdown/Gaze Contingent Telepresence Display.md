@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Telethrone]]
 # Gaze Contingent Telepresence Display

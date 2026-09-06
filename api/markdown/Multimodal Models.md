@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Multimodal Models
 ```json-ld

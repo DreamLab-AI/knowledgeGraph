@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-006-presence
+---
+public: true
+aliases:
+  - TELE-006-presence
+---
 
 # Presence
 ```json-ld

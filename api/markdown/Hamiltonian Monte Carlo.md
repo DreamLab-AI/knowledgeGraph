@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hamiltonian Monte Carlo
 ```json-ld

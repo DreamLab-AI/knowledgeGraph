@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Current Sensor
 ```json-ld

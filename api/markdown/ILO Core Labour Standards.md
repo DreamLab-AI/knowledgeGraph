@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ILO Core Labour Standards
 ```json-ld

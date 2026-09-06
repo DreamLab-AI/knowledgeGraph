@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Standards Organization
 ```json-ld

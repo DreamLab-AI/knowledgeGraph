@@ -1,5 +1,8 @@
-public:: true
-alias:: PhysicsEngine
+---
+public: true
+aliases:
+  - PhysicsEngine
+---
 
 # Physics Engine
 ```json-ld

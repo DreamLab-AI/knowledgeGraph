@@ -1,5 +1,8 @@
-public:: true
-alias:: AuditTrail
+---
+public: true
+aliases:
+  - AuditTrail
+---
 
 # Audit Trail
 ```json-ld

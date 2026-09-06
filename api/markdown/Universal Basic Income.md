@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Universal Basic Income
 ```json-ld

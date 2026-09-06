@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Glossary Index
 ```json-ld

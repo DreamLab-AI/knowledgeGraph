@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reproducible Research
 ```json-ld

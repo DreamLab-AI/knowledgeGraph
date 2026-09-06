@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BC-0480-kyc-requirements
 ```json-ld

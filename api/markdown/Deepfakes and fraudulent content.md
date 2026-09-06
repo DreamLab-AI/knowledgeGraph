@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Deepfakes and fraudulent content
 ```json-ld

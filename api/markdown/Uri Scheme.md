@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Uri Scheme
 ```json-ld

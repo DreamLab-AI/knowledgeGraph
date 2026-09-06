@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Bitcoin Environmental Issues
 ```json-ld

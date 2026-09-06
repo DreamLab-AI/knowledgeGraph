@@ -1,5 +1,8 @@
-public:: true
-alias:: DistributedDataStructure
+---
+public: true
+aliases:
+  - DistributedDataStructure
+---
 
 # Distributed Data Structure
 ```json-ld

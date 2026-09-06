@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # EU MiCA Regulation
 ```json-ld

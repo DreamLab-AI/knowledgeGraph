@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Community Platform
 ```json-ld

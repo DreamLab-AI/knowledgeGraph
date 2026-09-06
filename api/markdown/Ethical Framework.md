@@ -1,5 +1,8 @@
-public:: true
-alias:: EthicalFramework
+---
+public: true
+aliases:
+  - EthicalFramework
+---
 
 # Ethical Framework
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: NeuralMachineTranslation
+---
+public: true
+aliases:
+  - NeuralMachineTranslation
+---
 
 # Neural Machine Translation
 ```json-ld

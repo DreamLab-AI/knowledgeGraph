@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ETSI ARF 010
 ```json-ld

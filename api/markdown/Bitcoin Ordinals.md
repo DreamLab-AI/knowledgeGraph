@@ -1,5 +1,8 @@
-public:: true
-alias:: Bitcoin-Ordinals
+---
+public: true
+aliases:
+  - Bitcoin-Ordinals
+---
 
 # Bitcoin Ordinals
 ```json-ld

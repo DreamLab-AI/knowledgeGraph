@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # UK AI Opportunities Action Plan
 ```json-ld

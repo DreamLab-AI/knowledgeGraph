@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # GDPR Article 25
 ```json-ld

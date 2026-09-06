@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:ai-augmented-service-ecosystems",
+  "title": "AI-Augmented Service Ecosystems",
+  "slug": "ai-augmented-service-ecosystems",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-augmented-service-ecosystems",
+  "domain": "economics",
+  "definition": "New professional structures in sectors like legal, education, and finance where human roles are redefined as navigators, support workers, and operators who manage and interpret AI-driven services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-impact-of-ai",
+      "label": "Economic Impact of AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-augmented-service-operators",
+        "label": "AI-Augmented Service Operators"
+      },
+      {
+        "id": "urn:ngm:class:continuous-support-workers",
+        "label": "Continuous Support Workers"
+      },
+      {
+        "id": "urn:ngm:class:job-ecosystems",
+        "label": "Job Ecosystems"
+      },
+      {
+        "id": "urn:ngm:class:cross-industry-ai-impact",
+        "label": "Cross-Industry AI Impact"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

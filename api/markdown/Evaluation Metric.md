@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Evaluation Metric
 ```json-ld

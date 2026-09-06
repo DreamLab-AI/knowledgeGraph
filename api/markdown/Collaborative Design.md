@@ -1,5 +1,8 @@
-public:: true
-alias:: CollaborativeDesign
+---
+public: true
+aliases:
+  - CollaborativeDesign
+---
 
 # Collaborative Design
 ```json-ld

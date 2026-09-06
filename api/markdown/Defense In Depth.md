@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Defense In Depth
 ```json-ld

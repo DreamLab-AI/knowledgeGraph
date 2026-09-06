@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Semantic Search
 ```json-ld

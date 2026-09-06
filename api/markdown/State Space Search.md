@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # State Space Search
 ```json-ld

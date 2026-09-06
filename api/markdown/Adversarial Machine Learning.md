@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Adversarial Machine Learning
 ```json-ld

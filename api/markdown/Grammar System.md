@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Grammar System
 ```json-ld

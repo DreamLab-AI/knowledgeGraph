@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Selfish Mining
 ```json-ld

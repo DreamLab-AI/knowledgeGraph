@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Matter Protocol
 ```json-ld

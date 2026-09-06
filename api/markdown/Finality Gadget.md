@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Finality Gadget
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # eIDAS 2.0
 ```json-ld

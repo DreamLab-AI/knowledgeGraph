@@ -1,5 +1,8 @@
-public:: true
-alias:: LifeCycleAssessment
+---
+public: true
+aliases:
+  - LifeCycleAssessment
+---
 
 # life cycle assessment
 ```json-ld

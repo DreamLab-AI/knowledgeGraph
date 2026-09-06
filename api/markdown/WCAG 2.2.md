@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # WCAG 2.2
 ```json-ld

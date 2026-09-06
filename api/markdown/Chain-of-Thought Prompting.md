@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Chain-of-Thought Prompting
 ```json-ld

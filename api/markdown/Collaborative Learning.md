@@ -1,5 +1,8 @@
-public:: true
-alias:: CollaborativeLearning
+---
+public: true
+aliases:
+  - CollaborativeLearning
+---
 
 # Collaborative Learning
 ```json-ld

@@ -1,5 +1,9 @@
-public:: true
-alias:: BC-0430-private-channels, PrivateChannels
+---
+public: true
+aliases:
+  - BC-0430-private-channels
+  - PrivateChannels
+---
 
 # Private Channels
 ```json-ld

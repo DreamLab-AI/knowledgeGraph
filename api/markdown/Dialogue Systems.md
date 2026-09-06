@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Dialogue Systems
 ```json-ld

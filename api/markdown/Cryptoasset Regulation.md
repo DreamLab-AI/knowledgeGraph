@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cryptoasset Regulation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Gas Limit
 ```json-ld

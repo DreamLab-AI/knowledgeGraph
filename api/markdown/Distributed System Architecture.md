@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Distributed System Architecture
 ```json-ld

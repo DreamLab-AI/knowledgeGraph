@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Industry 4.0
 ```json-ld

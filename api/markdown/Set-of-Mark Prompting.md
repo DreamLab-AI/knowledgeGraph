@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Set-of-Mark Prompting
 ```json-ld

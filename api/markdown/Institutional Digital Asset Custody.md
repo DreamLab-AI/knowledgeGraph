@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Institutional Digital Asset Custody
 ```json-ld

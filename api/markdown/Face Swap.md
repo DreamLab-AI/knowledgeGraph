@@ -1,5 +1,8 @@
-public:: true
-alias:: FaceSwap
+---
+public: true
+aliases:
+  - FaceSwap
+---
 
 # Face Swap
 ```json-ld

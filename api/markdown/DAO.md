@@ -1,5 +1,8 @@
-public:: true
-alias:: DAOs
+---
+public: true
+aliases:
+  - DAOs
+---
 
 # DAO
 ```json-ld

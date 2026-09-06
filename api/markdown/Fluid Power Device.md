@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fluid Power Device
 ```json-ld

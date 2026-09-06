@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Robotics Systems
 ```json-ld

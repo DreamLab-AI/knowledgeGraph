@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IEEE 802-X
 ```json-ld

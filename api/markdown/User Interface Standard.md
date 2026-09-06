@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # User Interface Standard
 ```json-ld

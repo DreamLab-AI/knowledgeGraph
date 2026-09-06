@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Home Assistant
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0077 depth camera
 ```json-ld

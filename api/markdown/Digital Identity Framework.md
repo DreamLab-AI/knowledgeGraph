@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Identity Framework
 ```json-ld

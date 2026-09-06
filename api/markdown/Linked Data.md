@@ -1,5 +1,8 @@
-public:: true
-alias:: LinkedData
+---
+public: true
+aliases:
+  - LinkedData
+---
 
 # linked data
 ```json-ld

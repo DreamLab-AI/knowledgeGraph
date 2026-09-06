@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Point Cloud Processing
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Distributed Validator Technology
 ```json-ld

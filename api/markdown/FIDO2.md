@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # FIDO2
 ```json-ld

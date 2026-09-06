@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Causal Language Modelling
 ```json-ld

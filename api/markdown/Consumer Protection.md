@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0489-consumer-protection
+---
+public: true
+aliases:
+  - BC-0489-consumer-protection
+---
 
 # Consumer Protection
 ```json-ld

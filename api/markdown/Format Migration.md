@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Format Migration
 ```json-ld

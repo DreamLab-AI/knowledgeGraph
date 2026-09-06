@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hash Collision
 ```json-ld

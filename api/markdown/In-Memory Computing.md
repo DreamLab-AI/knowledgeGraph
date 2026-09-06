@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # In-Memory Computing
 ```json-ld

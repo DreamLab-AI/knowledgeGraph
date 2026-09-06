@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Embodied Cognition
 ```json-ld

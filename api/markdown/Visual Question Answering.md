@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Visual Question Answering
 ```json-ld

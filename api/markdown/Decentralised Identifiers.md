@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Decentralised Identifiers
 ```json-ld

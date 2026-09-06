@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NFT Trading
 ```json-ld

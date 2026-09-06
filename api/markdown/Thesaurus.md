@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Thesaurus
 ```json-ld

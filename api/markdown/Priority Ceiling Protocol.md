@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Priority Ceiling Protocol
 ```json-ld

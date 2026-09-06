@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # retroactive public goods funding
 ```json-ld

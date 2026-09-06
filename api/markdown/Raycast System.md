@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Raycast System
 ```json-ld

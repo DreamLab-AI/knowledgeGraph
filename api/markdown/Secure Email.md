@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Secure Email
 ```json-ld

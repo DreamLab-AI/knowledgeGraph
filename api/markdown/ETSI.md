@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # etsi
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: Public Key Cryptography
+---
+public: true
+aliases:
+  - Public Key Cryptography
+---
 
 # Public-Key Cryptography
 ```json-ld

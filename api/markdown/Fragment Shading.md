@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fragment Shading
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Carbon Footprint Measurement
 ```json-ld

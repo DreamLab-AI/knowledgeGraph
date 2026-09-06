@@ -1,5 +1,8 @@
-public:: true
-alias:: RB-1013-localization
+---
+public: true
+aliases:
+  - RB-1013-localization
+---
 
 # RB 1013 localization
 ```json-ld

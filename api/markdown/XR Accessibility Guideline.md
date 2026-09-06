@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # XR Accessibility Guideline
 ```json-ld

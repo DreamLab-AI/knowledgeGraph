@@ -1,5 +1,10 @@
-public:: true
-alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-compliance
+---
+public: true
+aliases:
+  - AML/KYC Compliance
+  - BC-0457-aml-kyc-compliance
+  - BC-0476-aml-kyc-compliance
+---
 
 # AML KYC Compliance
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0037 dexterity
 ```json-ld

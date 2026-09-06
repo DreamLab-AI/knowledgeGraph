@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Language Model
 ```json-ld

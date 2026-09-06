@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Parameter Count
 ```json-ld

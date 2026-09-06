@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Renewable Energy
 ```json-ld

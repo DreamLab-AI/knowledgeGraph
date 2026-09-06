@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Privacy Engineering
 ```json-ld

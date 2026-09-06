@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Perception Module
 ```json-ld

@@ -1,5 +1,9 @@
-public:: true
-alias:: Proof-of-Authority, ProofOfAuthority
+---
+public: true
+aliases:
+  - Proof-of-Authority
+  - ProofOfAuthority
+---
 
 # Proof of Authority
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Feature Attribution
 ```json-ld

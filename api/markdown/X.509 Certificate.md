@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # X.509 Certificate
 ```json-ld

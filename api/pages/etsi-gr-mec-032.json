@@ -472,10 +472,6 @@
       "label": "ETSI Domain: Governance & Ethics"
     },
     {
-      "slug": "etsi-domain-governance-security",
-      "label": "ETSI_Domain_Governance_Security"
-    },
-    {
       "slug": "etsi-domain-governance-economy",
       "label": "ETSI_Domain_Governance___Economy"
     },
@@ -484,8 +480,8 @@
       "label": "ETSI_Domain_Governance___Society"
     },
     {
-      "slug": "etsi-domain-human-interface",
-      "label": "ETSI_Domain_Human_Interface"
+      "slug": "etsi-domain-governance-security",
+      "label": "ETSI_Domain_Governance_Security"
     },
     {
       "slug": "etsi-domain-human-interface-governance",
@@ -494,6 +490,10 @@
     {
       "slug": "etsi-domain-human-interface-ux",
       "label": "ETSI_Domain_Human_Interface___UX"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
     },
     {
       "slug": "metaverse",

@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0044-supply-chain-management
+---
+public: true
+aliases:
+  - BC-0044-supply-chain-management
+---
 
 # Supply Chain Management
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Complexity Science
 ```json-ld

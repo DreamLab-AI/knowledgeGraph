@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # On-Device Learning
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-001-telepresence
+---
+public: true
+aliases:
+  - TELE-001-telepresence
+---
 
 # TELE 001 telepresence
 ```json-ld

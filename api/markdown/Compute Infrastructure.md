@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Compute Infrastructure
 ```json-ld

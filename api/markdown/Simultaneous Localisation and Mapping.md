@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # simultaneous localisation and mapping
 ```json-ld

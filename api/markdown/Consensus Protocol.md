@@ -1,5 +1,9 @@
-public:: true
-alias:: Consensus-Protocol, ConsensusProtocol
+---
+public: true
+aliases:
+  - Consensus-Protocol
+  - ConsensusProtocol
+---
 
 # Consensus Protocol
 ```json-ld

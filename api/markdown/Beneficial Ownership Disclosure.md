@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Beneficial Ownership Disclosure
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: Stablecoins
+---
+public: true
+aliases:
+  - Stablecoins
+---
 
 # Stable Coins
 ```json-ld

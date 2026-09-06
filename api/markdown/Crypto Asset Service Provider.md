@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Crypto Asset Service Provider
 ```json-ld

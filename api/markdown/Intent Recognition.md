@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Intent Recognition
 ```json-ld

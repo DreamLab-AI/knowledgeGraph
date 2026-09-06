@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Lightning Service Provider
 ```json-ld

@@ -1,5 +1,11 @@
-public:: true
-alias:: did:nostr, DID Nostr, nostr-did, DID-Nostr
+---
+public: true
+aliases:
+  - "did:nostr"
+  - DID Nostr
+  - nostr-did
+  - DID-Nostr
+---
 
 # did:nostr
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Kyoto Protocol
 ```json-ld

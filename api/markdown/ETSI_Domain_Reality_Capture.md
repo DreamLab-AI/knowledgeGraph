@@ -1,5 +1,8 @@
-public:: true
-alias:: ETSI Domain Reality Capture
+---
+public: true
+aliases:
+  - ETSI Domain Reality Capture
+---
 
 # ETSI_Domain_Reality_Capture
 ```json-ld

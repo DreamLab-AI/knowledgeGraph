@@ -1,5 +1,8 @@
-public:: true
-alias:: Whole-Body Control
+---
+public: true
+aliases:
+  - Whole-Body Control
+---
 
 # whole body control
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Structurizr DSL
 ```json-ld

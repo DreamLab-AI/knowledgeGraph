@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-157-predictive-tracking
 ```json-ld

@@ -1,5 +1,9 @@
-public:: true
-alias:: Autonomous Agents, AutonomousAgent
+---
+public: true
+aliases:
+  - Autonomous Agents
+  - AutonomousAgent
+---
 
 # Autonomous Agent
 ```json-ld

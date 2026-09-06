@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Key Generation
 ```json-ld

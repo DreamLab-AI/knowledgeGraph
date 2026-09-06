@@ -1,5 +1,8 @@
-public:: true
-alias:: AI Technique
+---
+public: true
+aliases:
+  - AI Technique
+---
 
 ```json-ld
 {

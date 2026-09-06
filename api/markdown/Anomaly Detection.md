@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # anomaly detection
 ```json-ld

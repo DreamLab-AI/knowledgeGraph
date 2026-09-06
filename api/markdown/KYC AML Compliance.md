@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # KYC/AML Compliance
 ```json-ld

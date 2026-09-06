@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Feedforward Neural Network
 ```json-ld

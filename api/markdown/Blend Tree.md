@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Blend Tree
 ```json-ld

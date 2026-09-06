@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Symbolic Reasoning
 ```json-ld

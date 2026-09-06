@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Experience Layer
 ```json-ld

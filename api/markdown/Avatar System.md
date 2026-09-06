@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Avatar System
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Zigbee2MQTT
 ```json-ld

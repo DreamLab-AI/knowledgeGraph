@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Internet Governance
 ```json-ld

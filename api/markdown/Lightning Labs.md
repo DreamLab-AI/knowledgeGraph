@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Lightning Labs
 ```json-ld

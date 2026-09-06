@@ -1,5 +1,8 @@
-public:: true
-alias:: Decentralised Decision Making
+---
+public: true
+aliases:
+  - Decentralised Decision Making
+---
 
 # Decentralised Decision-Making
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Laser Scanner
 ```json-ld

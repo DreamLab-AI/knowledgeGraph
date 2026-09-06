@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Authoring Tool
 ```json-ld

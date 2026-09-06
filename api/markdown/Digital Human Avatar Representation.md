@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Humans, Avatars , Character]]
 # Digital Human Avatar Representation

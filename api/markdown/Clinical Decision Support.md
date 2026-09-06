@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Clinical Decision Support
 ```json-ld

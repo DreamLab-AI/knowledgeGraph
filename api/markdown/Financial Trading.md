@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Financial Trading
 ```json-ld

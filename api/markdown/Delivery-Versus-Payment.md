@@ -1,5 +1,8 @@
-public:: true
-alias:: Delivery Versus Payment
+---
+public: true
+aliases:
+  - Delivery Versus Payment
+---
 
 # Delivery-Versus-Payment
 ```json-ld

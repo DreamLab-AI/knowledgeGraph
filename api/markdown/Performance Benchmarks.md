@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Performance Benchmarks
 ```json-ld

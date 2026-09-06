@@ -1,5 +1,8 @@
-public:: true
-alias:: PersistentStorage
+---
+public: true
+aliases:
+  - PersistentStorage
+---
 
 # Persistent Storage
 ```json-ld

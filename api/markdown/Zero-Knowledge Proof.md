@@ -1,5 +1,14 @@
-public:: true
-alias:: BC-0023-zero-knowledge-proofs, BC-0202-zero-knowledge-proofs, BC-0315-zero-knowledge-proof, Zero Knowledge Proof, Zero Knowledge Proofs, Zero-Knowledge Proofs, ZeroKnowledgeProof
+---
+public: true
+aliases:
+  - BC-0023-zero-knowledge-proofs
+  - BC-0202-zero-knowledge-proofs
+  - BC-0315-zero-knowledge-proof
+  - Zero Knowledge Proof
+  - Zero Knowledge Proofs
+  - Zero-Knowledge Proofs
+  - ZeroKnowledgeProof
+---
 
 # Zero-Knowledge Proof
 ```json-ld

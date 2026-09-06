@@ -1,5 +1,8 @@
-public:: true
-alias:: OccupancyGrid
+---
+public: true
+aliases:
+  - OccupancyGrid
+---
 
 # Occupancy Grid
 ```json-ld

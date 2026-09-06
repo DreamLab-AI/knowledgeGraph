@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NIST SP 800-53
 ```json-ld

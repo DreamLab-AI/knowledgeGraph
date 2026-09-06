@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Agentic Mycelia]]
 # Multi-Layer Agentic Governance Framework

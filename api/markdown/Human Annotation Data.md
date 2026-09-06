@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Human Annotation Data
 ```json-ld

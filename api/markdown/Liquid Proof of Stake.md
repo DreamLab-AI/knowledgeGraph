@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Liquid Proof of Stake
 ```json-ld

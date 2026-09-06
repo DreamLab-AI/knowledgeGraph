@@ -1,5 +1,9 @@
-public:: true
-alias:: Extended Reality Xr, ExtendedRealityXR
+---
+public: true
+aliases:
+  - Extended Reality Xr
+  - ExtendedRealityXR
+---
 
 # Extended Reality (XR)
 ```json-ld

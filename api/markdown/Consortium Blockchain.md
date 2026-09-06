@@ -1,5 +1,9 @@
-public:: true
-alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
+---
+public: true
+aliases:
+  - BC-0432-consortium-blockchain
+  - ConsortiumBlockchain
+---
 
 # Consortium Blockchain
 ```json-ld

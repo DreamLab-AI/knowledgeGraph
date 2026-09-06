@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-251-smart-contract-coordination
+---
+public: true
+aliases:
+  - TELE-251-smart-contract-coordination
+---
 
 # Smart Contract Coordination
 ```json-ld

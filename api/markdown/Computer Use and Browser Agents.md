@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Computer Use and Browser Agents
 ```json-ld

@@ -1,6 +1,9 @@
-public:: true
-elevatedFrom:: [[Mixture of Experts]]
-alias:: Mixture-of-Experts
+---
+public: true
+aliases:
+  - Mixture-of-Experts
+elevatedFrom: "[[Mixture of Experts]]"
+---
 
 # Mixture-of-Experts Architecture
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Long-Horizon Planning
 ```json-ld

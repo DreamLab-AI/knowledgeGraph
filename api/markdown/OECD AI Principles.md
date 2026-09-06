@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # OECD AI Principles
 ```json-ld

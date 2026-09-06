@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Embodied AI Simulation
 ```json-ld

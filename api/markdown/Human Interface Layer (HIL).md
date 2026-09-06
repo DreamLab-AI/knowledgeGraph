@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Human Interface Layer (HIL)
 ```json-ld

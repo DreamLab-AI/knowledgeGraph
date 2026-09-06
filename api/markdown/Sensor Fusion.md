@@ -1,5 +1,8 @@
-public:: true
-alias:: SensorFusion
+---
+public: true
+aliases:
+  - SensorFusion
+---
 
 # Sensor Fusion
 ```json-ld

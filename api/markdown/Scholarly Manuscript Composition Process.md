@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Paper Writing]]
 # Scholarly Manuscript Composition Process
@@ -103,8 +105,8 @@ elevatedFrom:: [[Paper Writing]]
   - [Metaverseconf_Busan1 - Google Slides](https://docs.google.com/presentation/d/1AVstOhBoV4El6v42VG3bSeZAwy6XgU1KRl0M7A1FvIc/edit#slide=id.g2cf3cc11597_0_81)
   - # Frontiers in VR
   - [Interactive Audio Systems and Artefacts within Extended Reality: Innovation, Creativity and Accessibility | Frontiers Research Topic (frontiersin.org)](https://www.frontiersin.org/research-topics/58000/interactive-audio-systems-and-artefacts-within-extended-reality-innovation-creativity-and-accessibility)
-  - [Frontiers_LaTeX_Templates.zip](../assets/Frontiers_LaTeX_Templates_1713949644922_0.zip)
-  - [Metaverseconf_Busan1.txt](../assets/Metaverseconf_Busan1_1713949788418_0.txt) Jess's presentation snapshot [Metaverseconf_Busan1 - Google Slides](https://docs.google.com/presentation/d/1AVstOhBoV4El6v42VG3bSeZAwy6XgU1KRl0M7A1FvIc/edit#slide=id.g2bfac131e9c_0_14)
+  - [Frontiers_LaTeX_Templates.zip](assets/Frontiers_LaTeX_Templates_1713949644922_0.zip)
+  - [Metaverseconf_Busan1.txt](assets/Metaverseconf_Busan1_1713949788418_0.txt) Jess's presentation snapshot [Metaverseconf_Busan1 - Google Slides](https://docs.google.com/presentation/d/1AVstOhBoV4El6v42VG3bSeZAwy6XgU1KRl0M7A1FvIc/edit#slide=id.g2bfac131e9c_0_14)
   - [FinalDraftMetaverseOntology_240425 - Google Sheets](https://docs.google.com/spreadsheets/d/13k7lC4BZbxF9EXrWN0nJSqfLUjMw_qD3sIns_pqR-m0/edit#gid=2098276378)
   - Examples of Jess's style
 		- [Full article: Strategies for connecting low income communities to the creative economy through play: two case studies in Northern England (tandfonline.com)](https://www.tandfonline.com/doi/full/10.1080/17510694.2018.1453770)

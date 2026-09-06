@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # N-Triples
 ```json-ld

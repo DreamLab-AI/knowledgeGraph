@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-102-codec-avatars
 ```json-ld

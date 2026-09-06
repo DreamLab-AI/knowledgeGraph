@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Autonomous Task Execution
 ```json-ld

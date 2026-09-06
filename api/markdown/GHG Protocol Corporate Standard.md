@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # GHG Protocol Corporate Standard
 ```json-ld

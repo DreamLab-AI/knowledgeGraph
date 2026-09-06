@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Code Signing
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # DAO Analytics
 ```json-ld

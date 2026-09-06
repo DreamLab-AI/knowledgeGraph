@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Innovation Diffusion
 ```json-ld

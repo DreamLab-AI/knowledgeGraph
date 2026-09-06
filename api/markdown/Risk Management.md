@@ -1,5 +1,8 @@
-public:: true
-alias:: RiskManagement
+---
+public: true
+aliases:
+  - RiskManagement
+---
 
 # Risk Management
 ```json-ld

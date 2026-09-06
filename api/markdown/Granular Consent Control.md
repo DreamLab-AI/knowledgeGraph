@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Granular Consent Control
 ```json-ld

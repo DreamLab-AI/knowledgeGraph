@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IBC Specification
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Matrix Factorisation
 ```json-ld

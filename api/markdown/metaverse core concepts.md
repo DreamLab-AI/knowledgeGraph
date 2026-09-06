@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # metaverse core concepts
 ```json-ld

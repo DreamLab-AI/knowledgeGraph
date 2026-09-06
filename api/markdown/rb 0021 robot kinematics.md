@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0021 robot kinematics
 ```json-ld

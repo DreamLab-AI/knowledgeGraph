@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Visual-Inertial Odometry
 ```json-ld

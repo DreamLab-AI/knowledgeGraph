@@ -1,5 +1,8 @@
-public:: true
-alias:: GameEngine
+---
+public: true
+aliases:
+  - GameEngine
+---
 
 # Game Engine
 ```json-ld

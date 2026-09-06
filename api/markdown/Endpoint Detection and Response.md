@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Endpoint Detection and Response
 ```json-ld

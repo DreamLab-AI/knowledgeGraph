@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ai safety research
 ```json-ld

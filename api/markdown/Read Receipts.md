@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Read Receipts
 ```json-ld

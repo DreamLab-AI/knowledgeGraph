@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[NVIDIA Omniverse]]
 # NVIDIA Omniverse Platform

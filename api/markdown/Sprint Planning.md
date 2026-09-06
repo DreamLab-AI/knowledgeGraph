@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sprint Planning
 ```json-ld

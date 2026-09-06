@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Government Digital Identity
 ```json-ld

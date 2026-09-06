@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Spaced Repetition
 ```json-ld

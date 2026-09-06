@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Task Adaptation
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Experience
 ```json-ld

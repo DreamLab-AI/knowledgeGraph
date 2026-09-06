@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # OMA3 Media WG
 ```json-ld

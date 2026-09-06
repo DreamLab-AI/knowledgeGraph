@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # identity and access management
 ```json-ld

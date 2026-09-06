@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ONTOLOGY_TECHNICAL_DETAILS
 ```json-ld

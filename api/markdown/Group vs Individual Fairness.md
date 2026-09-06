@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Group vs Individual Fairness
 ```json-ld

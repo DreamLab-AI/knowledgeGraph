@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Zero-Trust Architecture (ZTA)
 ```json-ld

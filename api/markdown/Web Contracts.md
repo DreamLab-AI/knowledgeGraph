@@ -1,5 +1,10 @@
-public:: true
-alias:: webcontracts, Web Contract, WebContracts
+---
+public: true
+aliases:
+  - webcontracts
+  - Web Contract
+  - WebContracts
+---
 
 # Web Contracts
 ```json-ld

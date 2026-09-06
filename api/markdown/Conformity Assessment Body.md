@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Conformity Assessment Body
 ```json-ld

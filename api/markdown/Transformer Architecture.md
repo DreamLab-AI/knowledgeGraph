@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Transformer Architecture
 ```json-ld
@@ -448,10 +450,10 @@ public:: true
 			      AJ --> AK[Short-term Forecasts]
 			      AJ --> AL[Long-term Projections]
 
-				- TODO Incorporating domain knowledge and ontology-specific constraints
-				- TODO Leveraging transfer learning from pre-trained models on similar ontological graphs
-				- TODO Evaluating the model's performance using appropriate graph-based metrics and validation techniques
-				- TODO Interpreting and visualizing the learned graph representations for ontology engineers and domain experts
+				- [ ] Incorporating domain knowledge and ontology-specific constraints
+				- [ ] Leveraging transfer learning from pre-trained models on similar ontological graphs
+				- [ ] Evaluating the model's performance using appropriate graph-based metrics and validation techniques
+				- [ ] Interpreting and visualizing the learned graph representations for ontology engineers and domain experts
 
   - ## AI in Architecture Report for ARXIV
 		- ![0b20c32c-df85-498a-9f93-bd8f365e2a89.jpg](assets/0b20c32c-df85-498a-9f93-bd8f365e2a89_1759152439221_0.jpg)

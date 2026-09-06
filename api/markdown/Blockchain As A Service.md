@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0434-blockchain-as-a-service
+---
+public: true
+aliases:
+  - BC-0434-blockchain-as-a-service
+---
 
 # Blockchain As A Service
 ```json-ld

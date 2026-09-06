@@ -1,5 +1,8 @@
-public:: true
-alias:: Third-Party Auditor
+---
+public: true
+aliases:
+  - Third-Party Auditor
+---
 
 # Third Party Auditor
 ```json-ld

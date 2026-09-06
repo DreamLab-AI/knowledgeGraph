@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sentiment Analysis
 ```json-ld

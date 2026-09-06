@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Standards Documentation
 ```json-ld

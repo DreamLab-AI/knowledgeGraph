@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0033 payload
 ```json-ld

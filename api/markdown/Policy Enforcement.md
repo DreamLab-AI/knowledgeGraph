@@ -1,5 +1,8 @@
-public:: true
-alias:: PolicyEnforcement
+---
+public: true
+aliases:
+  - PolicyEnforcement
+---
 
 # Policy Enforcement
 ```json-ld

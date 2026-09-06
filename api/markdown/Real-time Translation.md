@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Real-time Translation
 ```json-ld

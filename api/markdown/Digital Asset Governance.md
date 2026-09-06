@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Asset Governance
 ```json-ld

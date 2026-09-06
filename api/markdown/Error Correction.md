@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Error Correction
 ```json-ld

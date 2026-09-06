@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Transmission Delay
 ```json-ld

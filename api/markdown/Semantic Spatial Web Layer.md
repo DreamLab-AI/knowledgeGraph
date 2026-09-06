@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Spatial Web]]
 # Semantic Spatial Web Layer

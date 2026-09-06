@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Model Ensembling
 ```json-ld
@@ -143,7 +145,7 @@ public:: true
 		- ## AI Models and Technical Discussions
 
   - # May Event workflow with 3D models and VTON try it on.
-  - [memoryEfficient.json](../assets/memoryEfficient_1715084451554_0.json)
+  - [memoryEfficient.json](assets/memoryEfficient_1715084451554_0.json)
 
   - ### [Llama](https://ai.meta.com/llama/)
 		- A family of open-source models from Meta AI.
@@ -166,7 +168,7 @@ public:: true
 		- ## AI Models and Technical Discussions
 
   - # May Event workflow with 3D models and VTON try it on.
-  - [memoryEfficient.json](../assets/memoryEfficient_1715084451554_0.json)
+  - [memoryEfficient.json](assets/memoryEfficient_1715084451554_0.json)
 
   - ### [Llama](https://ai.meta.com/llama/)
 		- A family of open-source models from Meta AI.
@@ -186,13 +188,13 @@ public:: true
 		- ## AI Models and Technical Discussions
 
   - # May Event workflow with 3D models and VTON try it on.
-  - [memoryEfficient.json](../assets/memoryEfficient_1715084451554_0.json)
+  - [memoryEfficient.json](assets/memoryEfficient_1715084451554_0.json)
 
   - ### [BlenderGPT](https://github.com/gd3kr/BlenderGPT)
 		- A plugin for controlling Blender using GPT models.
 
   - # May Event workflow with 3D models and VTON try it on.
-  - [memoryEfficient.json](../assets/memoryEfficient_1715084451554_0.json)
+  - [memoryEfficient.json](assets/memoryEfficient_1715084451554_0.json)
 
   - ### [BlenderGPT](https://github.com/gd3kr/BlenderGPT)
 		- A plugin for controlling Blender using GPT models.

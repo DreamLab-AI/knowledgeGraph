@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Algorithmic Bias and Variance
 ```json-ld

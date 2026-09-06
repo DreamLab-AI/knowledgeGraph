@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Store of Value
 ```json-ld

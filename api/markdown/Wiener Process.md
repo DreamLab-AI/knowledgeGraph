@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Wiener Process
 ```json-ld

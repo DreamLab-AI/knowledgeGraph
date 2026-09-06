@@ -1,5 +1,8 @@
-public:: true
-alias:: ContentDistribution
+---
+public: true
+aliases:
+  - ContentDistribution
+---
 
 # Content Distribution
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Generative Adversarial Network
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # SWIFT Messaging
 ```json-ld

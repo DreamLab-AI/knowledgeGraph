@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # RB-1007-trajectory-generation
 ```json-ld

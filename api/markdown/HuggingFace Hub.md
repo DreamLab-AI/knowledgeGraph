@@ -1,5 +1,8 @@
-public:: true
-alias:: Hugging Face Hub
+---
+public: true
+aliases:
+  - Hugging Face Hub
+---
 
 # huggingface hub
 ```json-ld

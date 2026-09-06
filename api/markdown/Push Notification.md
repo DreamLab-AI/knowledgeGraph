@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Push Notification
 ```json-ld

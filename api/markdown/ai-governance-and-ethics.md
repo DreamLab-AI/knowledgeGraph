@@ -1,5 +1,8 @@
-public:: true
-alias:: AI Governance and Ethics
+---
+public: true
+aliases:
+  - AI Governance and Ethics
+---
 
 ```json-ld
 {

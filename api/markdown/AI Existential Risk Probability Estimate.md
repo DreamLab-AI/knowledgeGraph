@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[p(doom)]]
 # AI Existential Risk Probability Estimate

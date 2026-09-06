@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Thread Protocol
 ```json-ld

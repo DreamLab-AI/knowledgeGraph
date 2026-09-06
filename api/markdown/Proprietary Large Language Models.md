@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Proprietary Large Language Models
 ```json-ld

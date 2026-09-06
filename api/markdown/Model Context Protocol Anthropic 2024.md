@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Model Context Protocol Anthropic 2024
 ```json-ld

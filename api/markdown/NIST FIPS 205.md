@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NIST FIPS 205
 ```json-ld

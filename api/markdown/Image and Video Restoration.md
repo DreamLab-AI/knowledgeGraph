@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Image and Video Restoration
 ```json-ld

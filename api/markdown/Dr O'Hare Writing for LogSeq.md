@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Dr O'Hare Writing for LogSeq
 ```json-ld
@@ -182,7 +184,7 @@ public:: true
 					- *Videos:** Use the `{{video URL}}` renderer (e.g., `{{video https://www.youtube.com/watch?v=y48uAeHwZGg}}`).
 					- **Tweets/X:** Use the `{{twitter URL}}` renderer.
 					- **Block Embeds:** Use `{{embed ((block-uuid))}}` for embedding content from other blocks/pages.
-					- *Images:** Use standard Markdown image syntax `![filename.jpg](../assets/filename.jpg)`. Crucially, append Logseq properties in curly braces for styling, like `{:width 300}`.
+					- *Images:** Use standard Markdown image syntax `![filename.jpg](assets/filename.jpg)`. Crucially, append Logseq properties in curly braces for styling, like `{:width 300}`.
 		- **Formatting and page style**
 			- Keep sections and subsections medium to long length.
 			- Don't section further than four hash ####

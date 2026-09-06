@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Token Bonding Curve
 ```json-ld

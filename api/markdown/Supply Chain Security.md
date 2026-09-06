@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Supply Chain Security
 ```json-ld

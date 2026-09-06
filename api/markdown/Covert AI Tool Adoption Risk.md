@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[The Secret Cyborg Problem]]
 # Covert AI Tool Adoption Risk
@@ -102,7 +104,7 @@ elevatedFrom:: [[The Secret Cyborg Problem]]
   # Trust Attitudes in the Use of Artificial Intelligence
   - KPMG & Univ. of Melbourne
 		- (48 000 workers across 47 countries) - Nov 2024 - Jan 2025
-		- ![trust-attitudes-and-use-of-ai-global-report.pdf](../assets/trust-attitudes-and-use-of-ai-global-report_1746178190862_0.pdf)
+		- ![trust-attitudes-and-use-of-ai-global-report.pdf](assets/trust-attitudes-and-use-of-ai-global-report_1746178190862_0.pdf)
   - Some key findings
 		- 50 % present AI-generated content as their own
 		- 67 % intentionally use AI at work

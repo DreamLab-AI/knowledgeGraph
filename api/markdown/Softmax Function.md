@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Softmax Function
 ```json-ld

@@ -1,0 +1,179 @@
+{
+  "id": "urn:visionflow:page:autonomous-proof-generation",
+  "title": "Autonomous Proof Generation",
+  "slug": "autonomous-proof-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:autonomous-proof-generation",
+  "domain": "artificial-intelligence",
+  "definition": "The capability of AI systems to independently formulate, generate, and verify mathematical proofs without human intervention.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "id": "urn:ngm:class:alethea-agent",
+        "label": "Alethea Agent"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      },
+      {
+        "id": "urn:ngm:class:model-depth",
+        "label": "Model Depth"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:pretrained-model",
+        "label": "Pretrained Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

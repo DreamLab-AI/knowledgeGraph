@@ -293,12 +293,12 @@
   ],
   "backlinks": [
     {
-      "slug": "etsi-domain-infrastructure-data",
-      "label": "ETSI_Domain_Infrastructure_Data"
-    },
-    {
       "slug": "etsi-domain-infrastructure-interop",
       "label": "ETSI_Domain_Infrastructure___Interop"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-data",
+      "label": "ETSI_Domain_Infrastructure_Data"
     },
     {
       "slug": "etsi-domain-interoperability",

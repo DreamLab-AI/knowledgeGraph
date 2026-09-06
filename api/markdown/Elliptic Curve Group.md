@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Elliptic Curve Group
 ```json-ld

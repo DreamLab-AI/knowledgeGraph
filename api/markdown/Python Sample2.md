@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Python Sample2
 ```json-ld

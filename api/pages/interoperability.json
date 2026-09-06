@@ -963,12 +963,12 @@
       "label": "Decentralised Web"
     },
     {
-      "slug": "etsi-domain-interoperability",
-      "label": "ETSI_Domain_Interoperability"
-    },
-    {
       "slug": "etsi-domain-interoperability-creative",
       "label": "ETSI_Domain_Interoperability___Creative"
+    },
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
     },
     {
       "slug": "etsi-domain-virtual-society",

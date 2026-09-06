@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Deep Reinforcement Learning
 ```json-ld

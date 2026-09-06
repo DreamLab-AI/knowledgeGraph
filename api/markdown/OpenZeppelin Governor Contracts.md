@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # OpenZeppelin Governor Contracts
 ```json-ld

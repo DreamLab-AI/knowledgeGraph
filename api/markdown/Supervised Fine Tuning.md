@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Supervised Fine Tuning
 ```json-ld

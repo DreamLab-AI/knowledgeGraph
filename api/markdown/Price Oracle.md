@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # price oracle
 ```json-ld

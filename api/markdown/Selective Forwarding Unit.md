@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Selective Forwarding Unit
 ```json-ld

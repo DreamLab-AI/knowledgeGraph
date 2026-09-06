@@ -1,5 +1,8 @@
-public:: true
-alias:: Data-Availability
+---
+public: true
+aliases:
+  - Data-Availability
+---
 
 # Data Availability
 ```json-ld

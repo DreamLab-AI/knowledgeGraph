@@ -1,5 +1,8 @@
-public:: true
-alias:: DistributedConsensus
+---
+public: true
+aliases:
+  - DistributedConsensus
+---
 
 # Distributed Consensus
 ```json-ld

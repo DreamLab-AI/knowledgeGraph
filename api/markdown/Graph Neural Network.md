@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Graph Neural Network
 ```json-ld
@@ -633,7 +635,7 @@ public:: true
   - [terraphim/terraphim-ai: This is monorepo for Terraphim AI assistant, no submodules anymore (github.com)](https://github.com/terraphim/terraphim-ai) Private knowledge graph AI search which might support [[Knowledge Graphing]]
 		- [AtomicData.dev (github.com)](https://github.com/atomicdata-dev)
   - Add a tagging system to [[Knowledge Graphing]]
-		- **Status Tags**: #[[fleeting 🪴]], #🌱growing, #[[Active Research Projects Registry]], #🌲evergreen
+		- **Status Tags**: #fleeting-🪴, #🌱growing, #Active-Research-Projects-Registry, #🌲evergreen
 		- **Action Tags**: #🌹NeedsImprovement, #🍂SunsetSoon
 		- **Context Tags**: #PEOPLE, #📖read/learn
   - [[Diagrams as Code]] page added for the new plugin for [[Knowledge Graphing]]

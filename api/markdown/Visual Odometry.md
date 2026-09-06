@@ -1,5 +1,8 @@
-public:: true
-alias:: VisualOdometry
+---
+public: true
+aliases:
+  - VisualOdometry
+---
 
 # visual odometry
 ```json-ld

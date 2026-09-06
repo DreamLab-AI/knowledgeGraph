@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Proof Of Stake Sustainability
 ```json-ld

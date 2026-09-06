@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # NIST Cybersecurity Framework
 ```json-ld

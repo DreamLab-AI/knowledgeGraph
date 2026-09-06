@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stratum V2
 ```json-ld

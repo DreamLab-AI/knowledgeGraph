@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Binding Corporate Rules
 ```json-ld

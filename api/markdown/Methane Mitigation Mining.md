@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Methane Mitigation Mining
 ```json-ld

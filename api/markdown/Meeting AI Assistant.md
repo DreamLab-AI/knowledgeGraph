@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Meeting AI Assistant
 ```json-ld

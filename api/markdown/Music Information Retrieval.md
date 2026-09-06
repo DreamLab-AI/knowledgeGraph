@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Music Information Retrieval
 ```json-ld

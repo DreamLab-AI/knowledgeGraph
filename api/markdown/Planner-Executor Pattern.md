@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Planner-Executor Pattern
 ```json-ld

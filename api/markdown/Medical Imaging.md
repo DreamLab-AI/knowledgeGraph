@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # medical imaging
 ```json-ld

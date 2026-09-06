@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Clustering
 ```json-ld

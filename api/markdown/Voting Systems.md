@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Voting Systems
 ```json-ld

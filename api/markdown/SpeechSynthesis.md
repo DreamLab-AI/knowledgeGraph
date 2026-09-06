@@ -1,5 +1,9 @@
-public:: true
-alias:: Speech Synthesis, Speech synthesis
+---
+public: true
+aliases:
+  - Speech Synthesis
+  - Speech synthesis
+---
 
 # SpeechSynthesis
 ```json-ld

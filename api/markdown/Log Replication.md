@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Log Replication
 ```json-ld

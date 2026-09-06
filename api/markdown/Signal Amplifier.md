@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Signal Amplifier
 ```json-ld

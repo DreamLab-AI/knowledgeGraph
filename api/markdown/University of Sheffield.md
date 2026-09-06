@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # University of Sheffield
 ```json-ld

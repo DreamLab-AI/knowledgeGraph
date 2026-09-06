@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ETL Pipeline
 ```json-ld

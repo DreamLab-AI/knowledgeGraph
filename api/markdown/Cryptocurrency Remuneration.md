@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-253-cryptocurrency-remuneration
+---
+public: true
+aliases:
+  - TELE-253-cryptocurrency-remuneration
+---
 
 # Cryptocurrency Remuneration
 ```json-ld

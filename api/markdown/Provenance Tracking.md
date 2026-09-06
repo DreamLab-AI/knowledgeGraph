@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0441-provenance-tracking
+---
+public: true
+aliases:
+  - BC-0441-provenance-tracking
+---
 
 # Provenance Tracking
 ```json-ld

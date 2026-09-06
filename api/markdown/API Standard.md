@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # API Standard
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Hardware-in-the-Loop Testing
 ```json-ld

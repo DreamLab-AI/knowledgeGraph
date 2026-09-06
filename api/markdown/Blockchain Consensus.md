@@ -1,5 +1,8 @@
-public:: true
-alias:: BlockchainConsensus
+---
+public: true
+aliases:
+  - BlockchainConsensus
+---
 
 # Blockchain Consensus
 ```json-ld

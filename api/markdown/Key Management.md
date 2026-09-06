@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # key management
 ```json-ld

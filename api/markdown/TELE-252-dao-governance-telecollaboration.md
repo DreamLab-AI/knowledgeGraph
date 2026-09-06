@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-252-dao-governance-telecollaboration
 ```json-ld

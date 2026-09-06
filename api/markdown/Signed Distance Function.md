@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Signed Distance Function
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Scope 3 Emissions
 ```json-ld

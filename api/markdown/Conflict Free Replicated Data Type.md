@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Conflict Free Replicated Data Type
 ```json-ld

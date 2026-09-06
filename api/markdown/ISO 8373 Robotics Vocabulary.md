@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ISO 8373 Robotics Vocabulary
 ```json-ld

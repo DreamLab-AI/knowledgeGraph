@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Language Modeling
 ```json-ld
@@ -946,7 +948,7 @@ public:: true
 
 	  At this time we favour the following component units, with alternatives in brackets.
 		- 🟩 Open source collaborative space 🟩 Headset VR integration 🟨 WebGL interface 🟩 Minting digital assets (Ordinal then RGB) 🟨 Digital asset integration and management 🟩 Large language model MVP 🟩 Large language model API integration 🟩 Large language model voice to voice interface 🟩 Stable diffusion image creation MVP 🟩 Stable diffusion image creation MVP 🟨 AutoGPT voice to voice integration MVP 🟨 Stable diffusion image creation API 🟨 Nostr social media integration 🟨 Nostr identity management 🟨 Nostr machine to machine finacially enabled bots (ubiquitous federating agents) 🟨 Nostr human programmable semi autonomous economic actors 🟩 Bitcoin / Lightning / stablecoin stack 🟥 Bitcoin / Lightning / stablecoin integration 🟨 Collaborative virtual production MVP 🟥 Collaborative virtual production integration 🟥 3D asset generation with ML
-		- ![image.png](../assets/highlevelstack.png){:width 600}
+		- ![image.png](assets/highlevelstack.png){:width 600}
 		- Collaborative space
 		- Vircadia \[Omniverse, Open3D foundation, Unreal\]
 		- Distributed truth

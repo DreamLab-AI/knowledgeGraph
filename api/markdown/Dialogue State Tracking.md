@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Dialogue State Tracking
 ```json-ld

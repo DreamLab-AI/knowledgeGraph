@@ -1,5 +1,8 @@
-public:: true
-alias:: RealityCapture
+---
+public: true
+aliases:
+  - RealityCapture
+---
 
 # Reality Capture
 ```json-ld

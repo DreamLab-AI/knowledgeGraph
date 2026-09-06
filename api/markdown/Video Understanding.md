@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Video Understanding
 ```json-ld

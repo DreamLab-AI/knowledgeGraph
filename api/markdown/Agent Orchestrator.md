@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Agent Orchestrator
 ```json-ld

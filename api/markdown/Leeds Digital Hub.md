@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Leeds Digital Hub
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Performance Metrics
 ```json-ld

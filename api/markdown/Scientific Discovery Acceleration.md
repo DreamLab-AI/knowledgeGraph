@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Scientific Discovery Acceleration
 ```json-ld

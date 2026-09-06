@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Format Parser
 ```json-ld

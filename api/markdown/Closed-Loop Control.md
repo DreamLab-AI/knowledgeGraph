@@ -1,5 +1,9 @@
-public:: true
-alias:: Closed Loop Control, RB-1002-closed-loop-control
+---
+public: true
+aliases:
+  - Closed Loop Control
+  - RB-1002-closed-loop-control
+---
 
 # Closed-Loop Control
 ```json-ld

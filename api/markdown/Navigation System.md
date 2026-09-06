@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Navigation System
 ```json-ld

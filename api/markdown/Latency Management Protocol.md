@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Latency Management Protocol
 ```json-ld

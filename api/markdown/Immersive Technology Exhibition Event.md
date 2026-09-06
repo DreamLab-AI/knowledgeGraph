@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[exhibition]]
 # Immersive Technology Exhibition Event

@@ -1,5 +1,8 @@
-public:: true
-alias:: EllipticCurveCryptography
+---
+public: true
+aliases:
+  - EllipticCurveCryptography
+---
 
 # Elliptic Curve Cryptography
 ```json-ld

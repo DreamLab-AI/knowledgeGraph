@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mixed Reality Platform
 ```json-ld

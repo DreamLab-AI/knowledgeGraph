@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-005-common-ground-theory
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # JSON-RPC 2.0
 ```json-ld

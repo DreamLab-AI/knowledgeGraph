@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Action Recognition
 ```json-ld

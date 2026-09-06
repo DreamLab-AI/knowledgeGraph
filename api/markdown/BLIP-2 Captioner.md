@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BLIP-2 Captioner
 ```json-ld

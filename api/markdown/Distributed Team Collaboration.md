@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Distributed Team Collaboration
 ```json-ld

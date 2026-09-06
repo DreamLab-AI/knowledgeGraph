@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Environment Design
 ```json-ld

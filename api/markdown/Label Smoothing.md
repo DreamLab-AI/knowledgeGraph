@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Label Smoothing
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Transaction History
 ```json-ld

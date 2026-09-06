@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Bias in Large Language Models
 ```json-ld

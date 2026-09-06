@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Controlled Vocabulary
 ```json-ld

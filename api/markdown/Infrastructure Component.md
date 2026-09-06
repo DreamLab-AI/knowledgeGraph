@@ -1,5 +1,8 @@
-public:: true
-alias:: InfrastructureComponent
+---
+public: true
+aliases:
+  - InfrastructureComponent
+---
 
 # Infrastructure Component
 ```json-ld

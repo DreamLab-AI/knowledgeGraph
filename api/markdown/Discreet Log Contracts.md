@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Discreet Log Contracts
 ```json-ld

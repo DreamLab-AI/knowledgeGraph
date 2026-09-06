@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Digital Twin Synchronisation Bus
 ```json-ld

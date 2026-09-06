@@ -1,5 +1,8 @@
-public:: true
-alias:: ManipulatorArm
+---
+public: true
+aliases:
+  - ManipulatorArm
+---
 
 # Manipulator Arm
 ```json-ld

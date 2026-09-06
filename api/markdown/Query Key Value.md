@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Query Key Value
 ```json-ld

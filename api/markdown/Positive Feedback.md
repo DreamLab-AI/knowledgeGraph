@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Positive Feedback
 ```json-ld

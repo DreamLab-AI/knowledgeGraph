@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Runtime Layer
 ```json-ld

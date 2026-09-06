@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Product Liability Directive
 ```json-ld

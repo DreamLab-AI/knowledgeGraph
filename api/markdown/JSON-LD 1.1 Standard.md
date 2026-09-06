@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # JSON-LD 1.1 Standard
 ```json-ld

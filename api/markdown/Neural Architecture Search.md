@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Neural Architecture Search
 ```json-ld

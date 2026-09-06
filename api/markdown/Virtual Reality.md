@@ -1,5 +1,8 @@
-public:: true
-alias:: VirtualReality
+---
+public: true
+aliases:
+  - VirtualReality
+---
 
 # Virtual Reality
 ```json-ld

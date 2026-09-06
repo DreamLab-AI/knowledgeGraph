@@ -1,5 +1,8 @@
-public:: true
-alias:: CameraCalibration
+---
+public: true
+aliases:
+  - CameraCalibration
+---
 
 # camera calibration
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Securities Act 1933
 

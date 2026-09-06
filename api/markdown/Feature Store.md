@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Feature Store
 ```json-ld

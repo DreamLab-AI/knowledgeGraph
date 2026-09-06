@@ -1,5 +1,8 @@
-public:: true
-alias:: DeFi Services
+---
+public: true
+aliases:
+  - DeFi Services
+---
 
 # De Fi Services
 ```json-ld

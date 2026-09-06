@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:lump-of-labor-fallacy",
+  "title": "Lump of Labor Fallacy",
+  "slug": "lump-of-labor-fallacy",
+  "public": true,
+  "classIri": "urn:ngm:class:lump-of-labor-fallacy",
+  "domain": "economics",
+  "definition": "An economic fallacy that assumes a fixed total amount of work exists, leading to the incorrect conclusion that technological increases in labor supply or productivity necessarily result in unemployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-impact-of-ai",
+      "label": "Economic Impact of AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:labor-supply",
+        "label": "Labor Supply"
+      },
+      {
+        "id": "urn:ngm:class:demand-elasticity",
+        "label": "Demand Elasticity"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

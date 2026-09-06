@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Parameter-Efficient Fine-Tuning
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # speculative decoding
 ```json-ld

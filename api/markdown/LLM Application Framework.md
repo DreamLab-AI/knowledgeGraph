@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # LLM Application Framework
 ```json-ld

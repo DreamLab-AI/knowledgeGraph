@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE020virtualrealitytelepresence
 ```json-ld

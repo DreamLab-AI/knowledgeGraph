@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cross-DAO Benchmarking
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Private Network
 ```json-ld

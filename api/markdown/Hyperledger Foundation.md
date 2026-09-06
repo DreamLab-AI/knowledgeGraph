@@ -1,5 +1,8 @@
-public:: true
-alias:: HyperledgerFoundation
+---
+public: true
+aliases:
+  - HyperledgerFoundation
+---
 
 # hyperledger foundation
 ```json-ld

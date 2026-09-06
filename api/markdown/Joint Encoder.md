@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Joint Encoder
 ```json-ld

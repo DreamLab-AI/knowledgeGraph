@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reward Distribution
 ```json-ld

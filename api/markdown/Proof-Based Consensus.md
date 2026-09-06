@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Proof-Based Consensus
 ```json-ld

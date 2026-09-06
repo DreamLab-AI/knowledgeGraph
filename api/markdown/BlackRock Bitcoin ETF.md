@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BlackRock Bitcoin ETF
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: DigitalGoods
+---
+public: true
+aliases:
+  - DigitalGoods
+---
 
 # Digital Goods
 ```json-ld

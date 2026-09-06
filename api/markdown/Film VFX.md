@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Film VFX
 ```json-ld

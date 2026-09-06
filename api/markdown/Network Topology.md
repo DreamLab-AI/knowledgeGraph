@@ -1,5 +1,8 @@
-public:: true
-alias:: NetworkTopology
+---
+public: true
+aliases:
+  - NetworkTopology
+---
 
 # Network Topology
 ```json-ld

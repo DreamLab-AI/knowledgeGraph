@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Snapshot Off-Chain Voting
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Catastrophic Risk Reduction
 ```json-ld

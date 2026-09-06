@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-302-shared-whiteboards
+---
+public: true
+aliases:
+  - TELE-302-shared-whiteboards
+---
 
 # Shared Whiteboards
 ```json-ld

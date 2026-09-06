@@ -1,5 +1,8 @@
-public:: true
-alias:: DataStructure
+---
+public: true
+aliases:
+  - DataStructure
+---
 
 # Data Structure
 ```json-ld

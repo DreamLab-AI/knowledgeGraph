@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Existential AI Risk
 ```json-ld

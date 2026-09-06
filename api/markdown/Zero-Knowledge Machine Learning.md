@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # zero-knowledge machine learning
 ```json-ld

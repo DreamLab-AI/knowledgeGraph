@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0027 robot link
 ```json-ld

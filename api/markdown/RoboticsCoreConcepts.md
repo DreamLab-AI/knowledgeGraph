@@ -1,5 +1,8 @@
-public:: true
-alias:: Robotics Core Concepts
+---
+public: true
+aliases:
+  - Robotics Core Concepts
+---
 
 # RoboticsCoreConcepts
 ```json-ld

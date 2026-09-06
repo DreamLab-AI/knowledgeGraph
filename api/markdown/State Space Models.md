@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # State Space Models
 ```json-ld

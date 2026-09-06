@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Group Dynamics
 ```json-ld

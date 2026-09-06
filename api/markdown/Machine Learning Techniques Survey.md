@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Overview of Machine Learning Techniques]]
 # Machine Learning Techniques Survey
@@ -186,7 +188,7 @@ elevatedFrom:: [[Overview of Machine Learning Techniques]]
   - Artificial intelligence is a marketing term, but it's supported in literature as the high level term.
   - [That's OK!](https://simonwillison.net/2024/Jan/7/call-it-ai/)
   - I'm mainly going to use AI from here in.
-  - ![1706985611136.gif](../assets/1706985611136_1707078214092_0.gif)
+  - ![1706985611136.gif](assets/1706985611136_1707078214092_0.gif)
   - # Machine Learning Techniques Overview
 		- **Concept**: Techniques where models learn from labeled data.
 		- **Explain**: Like teaching a child with clear examples and answers.

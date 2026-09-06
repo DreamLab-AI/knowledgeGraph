@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Word Embeddings
 ```json-ld

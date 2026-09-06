@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Customer Experience
 ```json-ld

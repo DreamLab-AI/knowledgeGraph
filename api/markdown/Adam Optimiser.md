@@ -1,5 +1,10 @@
-public:: true
-alias:: Adam Optimizer, Adaptive Moment Estimation, AdaM
+---
+public: true
+aliases:
+  - Adam Optimizer
+  - Adaptive Moment Estimation
+  - AdaM
+---
 
 # adam optimiser
 ```json-ld

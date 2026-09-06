@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Nominated Proof of Stake
 ```json-ld

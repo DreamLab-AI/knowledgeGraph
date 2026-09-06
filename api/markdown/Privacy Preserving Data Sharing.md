@@ -1,5 +1,8 @@
-public:: true
-alias:: Privacy-Preserving Data Sharing
+---
+public: true
+aliases:
+  - Privacy-Preserving Data Sharing
+---
 
 # Privacy Preserving Data Sharing
 ```json-ld

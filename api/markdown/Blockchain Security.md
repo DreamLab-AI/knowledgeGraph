@@ -1,5 +1,8 @@
-public:: true
-alias:: Blockchain-Security
+---
+public: true
+aliases:
+  - Blockchain-Security
+---
 
 # Blockchain Security
 ```json-ld

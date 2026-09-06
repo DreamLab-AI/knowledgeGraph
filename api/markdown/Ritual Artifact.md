@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ritual Artifact
 ```json-ld

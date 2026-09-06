@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Variance Reduction
 ```json-ld

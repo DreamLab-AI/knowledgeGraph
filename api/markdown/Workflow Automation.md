@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # workflow automation
 ```json-ld

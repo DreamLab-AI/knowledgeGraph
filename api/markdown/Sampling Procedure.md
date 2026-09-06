@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sampling Procedure
 ```json-ld

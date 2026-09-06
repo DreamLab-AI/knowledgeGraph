@@ -1,0 +1,41 @@
+{
+  "id": "urn:visionflow:page:valuation-multiples",
+  "title": "Valuation Multiples",
+  "slug": "valuation-multiples",
+  "public": true,
+  "classIri": "urn:ngm:class:valuation-multiples",
+  "domain": "economics",
+  "definition": "A financial metric representing the ratio of a company's stock price or market capitalization to a fundamental value such as earnings or revenue, used to assess relative worth.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-metrics",
+      "label": "Financial Metrics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ebitda",
+        "label": "EBITDA"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

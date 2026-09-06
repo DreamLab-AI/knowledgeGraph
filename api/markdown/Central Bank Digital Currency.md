@@ -1,5 +1,9 @@
-public:: true
-alias:: CBDC, CentralBankDigitalCurrency
+---
+public: true
+aliases:
+  - CBDC
+  - CentralBankDigitalCurrency
+---
 
 # Central Bank Digital Currency
 ```json-ld

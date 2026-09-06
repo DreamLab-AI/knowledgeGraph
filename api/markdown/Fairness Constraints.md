@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fairness Constraints
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: PervasiveComputing
+---
+public: true
+aliases:
+  - PervasiveComputing
+---
 
 # Pervasive Computing
 ```json-ld

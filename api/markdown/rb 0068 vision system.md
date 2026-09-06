@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0068 vision system
 ```json-ld

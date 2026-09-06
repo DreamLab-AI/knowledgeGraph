@@ -1,5 +1,8 @@
-public:: true
-alias:: Chainlink-CCIP
+---
+public: true
+aliases:
+  - Chainlink-CCIP
+---
 
 # Chainlink CCIP
 ```json-ld

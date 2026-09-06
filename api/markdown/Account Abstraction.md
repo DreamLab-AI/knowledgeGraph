@@ -1,5 +1,8 @@
-public:: true
-alias:: account-abstraction
+---
+public: true
+aliases:
+  - account-abstraction
+---
 
 # Account Abstraction
 ```json-ld

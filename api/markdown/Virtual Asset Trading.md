@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Asset Trading
 ```json-ld

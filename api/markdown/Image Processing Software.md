@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Image Processing Software
 ```json-ld

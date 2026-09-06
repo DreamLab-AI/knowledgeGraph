@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Neural 3D Generation
 ```json-ld

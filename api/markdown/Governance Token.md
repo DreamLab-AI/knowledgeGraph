@@ -1,5 +1,9 @@
-public:: true
-alias:: BC-0463-governance-token, GovernanceToken
+---
+public: true
+aliases:
+  - BC-0463-governance-token
+  - GovernanceToken
+---
 
 # Governance Token
 ```json-ld

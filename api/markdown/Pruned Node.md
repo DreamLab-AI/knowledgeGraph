@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Pruned Node
 ```json-ld

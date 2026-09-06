@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Seals]]
 # Chinese Seal Art AI Classification Pipeline
@@ -103,8 +105,8 @@ elevatedFrom:: [[Seals]]
   - This is [海豹
 	 - Chinese Seal](https://en.wiktionary.org/wiki/%E6%B5%B7%E8%B1%B9)
   - Five shot example with 256x256 gif of the image uploaded
-  - ![photo_2024-01-09_18-10-53.jpg](../assets/photo_2024-01-09_18-10-53_1705085581457_0.jpg)
-  - ![photo_2024-01-12_14-38-01.jpg](../assets/photo_2024-01-12_14-38-01_1705085469063_0.jpg)
+  - ![photo_2024-01-09_18-10-53.jpg](assets/photo_2024-01-09_18-10-53_1705085581457_0.jpg)
+  - ![photo_2024-01-12_14-38-01.jpg](assets/photo_2024-01-12_14-38-01_1705085469063_0.jpg)
   - ```mermaid
   sequenceDiagram
       participant Client as Client Script

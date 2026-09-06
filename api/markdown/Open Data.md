@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Open Data
 ```json-ld

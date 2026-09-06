@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Tone Mapping
 ```json-ld

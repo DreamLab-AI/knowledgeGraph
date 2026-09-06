@@ -1,5 +1,11 @@
-public:: true
-alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-contracts
+---
+public: true
+aliases:
+  - BC-0013-smart-contracts
+  - BC-0142-smart-contract
+  - SmartContracts
+  - smart-contracts
+---
 
 # Smart Contracts
 ```json-ld

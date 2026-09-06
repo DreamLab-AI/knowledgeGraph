@@ -1,5 +1,8 @@
-public:: true
-alias:: TC-0010-Synchronous-Collaboration
+---
+public: true
+aliases:
+  - TC-0010-Synchronous-Collaboration
+---
 
 # Synchronous Collaboration
 ```json-ld

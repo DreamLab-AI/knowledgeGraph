@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Biometric Binding Mechanism
 ```json-ld

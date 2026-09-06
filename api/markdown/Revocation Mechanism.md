@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Revocation Mechanism
 ```json-ld

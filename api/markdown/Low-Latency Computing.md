@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Low-Latency Computing
 ```json-ld

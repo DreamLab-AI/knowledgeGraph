@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Onem2M
 ```json-ld

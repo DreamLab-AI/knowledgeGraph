@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Yjs Framework
 ```json-ld

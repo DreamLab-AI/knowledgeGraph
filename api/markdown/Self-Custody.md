@@ -1,5 +1,8 @@
-public:: true
-alias:: Self Custody
+---
+public: true
+aliases:
+  - Self Custody
+---
 
 # self-custody
 ```json-ld

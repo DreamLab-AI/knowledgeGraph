@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ubiquitous Computing
 ```json-ld

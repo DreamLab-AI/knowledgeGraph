@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Interchange Protocol
 ```json-ld

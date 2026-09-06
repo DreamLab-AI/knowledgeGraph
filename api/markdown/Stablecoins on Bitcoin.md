@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stablecoins on Bitcoin
 ```json-ld

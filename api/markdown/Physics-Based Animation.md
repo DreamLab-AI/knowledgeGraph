@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Physics-Based Animation
 ```json-ld

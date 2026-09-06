@@ -1,5 +1,8 @@
-public:: true
-alias:: ISO/IEC JTC 1/SC 24
+---
+public: true
+aliases:
+  - ISO/IEC JTC 1/SC 24
+---
 
 # ISO-IEC JTC 1-SC 24
 ```json-ld

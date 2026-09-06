@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Image Compression
 ```json-ld

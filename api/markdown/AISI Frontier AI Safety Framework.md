@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AISI Frontier AI Safety Framework
 ```json-ld

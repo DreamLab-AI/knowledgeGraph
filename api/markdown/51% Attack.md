@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # 51% Attack
 ```json-ld

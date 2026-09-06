@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0019 exoskeleton robot
 ```json-ld

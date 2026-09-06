@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Training Dataset Metadata
 ```json-ld

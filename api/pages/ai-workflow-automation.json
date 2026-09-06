@@ -1,0 +1,239 @@
+{
+  "id": "urn:visionflow:page:ai-workflow-automation",
+  "title": "AI Workflow Automation",
+  "slug": "ai-workflow-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-workflow-automation",
+  "domain": "artificial-intelligence",
+  "definition": "The use of AI agents and large language models to automate complex, multi-step business processes and decision-making workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agents",
+      "label": "AI Agents"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:memory-store",
+        "label": "Memory Store"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-decision-making",
+        "label": "Autonomous Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:vector-databases",
+        "label": "Vector Databases"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:plan-and-execute",
+        "label": "Plan and Execute"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic Systems"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

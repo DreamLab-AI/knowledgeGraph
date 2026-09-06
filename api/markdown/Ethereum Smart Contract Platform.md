@@ -1,6 +1,9 @@
-public:: true
-elevatedFrom:: [[Ethereum]]
-alias:: BC-0066-ethereum
+---
+public: true
+aliases:
+  - BC-0066-ethereum
+elevatedFrom: "[[Ethereum]]"
+---
 
 # Ethereum Smart Contract Platform
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Tensor Processing Unit
 ```json-ld

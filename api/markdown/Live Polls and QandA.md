@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Live Polls and QandA
 ```json-ld

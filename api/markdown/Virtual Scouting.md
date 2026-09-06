@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Virtual Scouting
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Human Capital
 ```json-ld

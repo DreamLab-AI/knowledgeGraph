@@ -1,5 +1,8 @@
-public:: true
-alias:: NetworkInfrastructure
+---
+public: true
+aliases:
+  - NetworkInfrastructure
+---
 
 # Network Infrastructure
 ```json-ld

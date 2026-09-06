@@ -1,5 +1,8 @@
-public:: true
-alias:: Open API Specification
+---
+public: true
+aliases:
+  - Open API Specification
+---
 
 # OpenAPI Specification
 ```json-ld

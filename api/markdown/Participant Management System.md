@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Participant Management System
 ```json-ld

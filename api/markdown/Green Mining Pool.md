@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Green Mining Pool
 ```json-ld

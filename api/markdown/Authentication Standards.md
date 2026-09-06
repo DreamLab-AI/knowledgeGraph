@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Authentication Standards
 ```json-ld

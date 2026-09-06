@@ -1,0 +1,50 @@
+{
+  "id": "urn:visionflow:page:usage-based-pricing",
+  "title": "Usage-Based Pricing",
+  "slug": "usage-based-pricing",
+  "public": true,
+  "classIri": "urn:ngm:class:usage-based-pricing",
+  "domain": "economics",
+  "definition": "A pricing strategy where customers are charged based on the actual consumption of a service or resource, such as compute time, API calls, or data tokens, rather than a fixed periodic fee.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:saas-business-model",
+      "label": "SaaS Business Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-business-model",
+        "label": "AI Business Model"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

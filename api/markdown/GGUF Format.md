@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # GGUF Format
 ```json-ld

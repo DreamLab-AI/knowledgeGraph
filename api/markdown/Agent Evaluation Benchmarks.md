@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Agent Evaluation Benchmarks
 ```json-ld

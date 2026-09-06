@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Few-Shot Examples
 ```json-ld

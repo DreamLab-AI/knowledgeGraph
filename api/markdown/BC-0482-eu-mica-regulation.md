@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BC-0482-eu-mica-regulation
 ```json-ld

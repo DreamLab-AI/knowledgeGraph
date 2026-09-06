@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Wide Area Network
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cryptocurrency Wallet
 ```json-ld

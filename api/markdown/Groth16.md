@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Groth16
 ```json-ld

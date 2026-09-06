@@ -1,5 +1,8 @@
-public:: true
-alias:: ImmersiveExperience
+---
+public: true
+aliases:
+  - ImmersiveExperience
+---
 
 # Immersive Experience
 ```json-ld

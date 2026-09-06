@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # AUTOMATIC1111 WebUI
 ```json-ld

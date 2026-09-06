@@ -1,5 +1,8 @@
-public:: true
-alias:: BC-0440-blockchain-interoperability
+---
+public: true
+aliases:
+  - BC-0440-blockchain-interoperability
+---
 
 # Blockchain Interoperability
 ```json-ld

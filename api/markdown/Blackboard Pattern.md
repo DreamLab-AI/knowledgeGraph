@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Blackboard Pattern
 ```json-ld

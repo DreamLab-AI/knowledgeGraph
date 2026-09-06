@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stack Machine
 ```json-ld

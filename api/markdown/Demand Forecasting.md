@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Demand Forecasting
 ```json-ld

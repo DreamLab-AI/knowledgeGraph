@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Soon-Next-Later (AI futurology)]]
 # AI Capability Temporal Horizon Framework

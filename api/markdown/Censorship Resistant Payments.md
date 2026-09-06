@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Censorship Resistant Payments
 ```json-ld

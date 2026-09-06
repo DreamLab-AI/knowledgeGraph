@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Lens and Camera Calibration
 ```json-ld

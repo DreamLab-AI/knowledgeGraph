@@ -1,5 +1,8 @@
-public:: true
-alias:: TELE-002-telecollaboration
+---
+public: true
+aliases:
+  - TELE-002-telecollaboration
+---
 
 # Telecollaboration
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-026-microsoft-mesh
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Cross-Border Enforcement
 ```json-ld

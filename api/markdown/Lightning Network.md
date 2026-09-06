@@ -1,5 +1,8 @@
-public:: true
-alias:: Lightning-Network
+---
+public: true
+aliases:
+  - Lightning-Network
+---
 
 # Lightning Network
 ```json-ld

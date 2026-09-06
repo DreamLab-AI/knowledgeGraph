@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Placing on the Market
 ```json-ld

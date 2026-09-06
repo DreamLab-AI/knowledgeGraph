@@ -1,5 +1,9 @@
-public:: true
-alias:: PathPlanning, RB-1016-path-planning
+---
+public: true
+aliases:
+  - PathPlanning
+  - RB-1016-path-planning
+---
 
 # Path Planning
 ```json-ld

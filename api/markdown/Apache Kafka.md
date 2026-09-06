@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Apache Kafka
 ```json-ld

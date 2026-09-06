@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Human on the Loop
 ```json-ld

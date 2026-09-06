@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Psychological Research
 ```json-ld

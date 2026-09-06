@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[new tag for demos]]
 # Demonstration Content Curation Tag

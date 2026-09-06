@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-107-ai-meeting-assistants
 ```json-ld

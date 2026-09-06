@@ -1,5 +1,8 @@
-public:: true
-alias:: PlatformLayer
+---
+public: true
+aliases:
+  - PlatformLayer
+---
 
 # Platform Layer
 ```json-ld

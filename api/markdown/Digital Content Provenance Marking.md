@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Watermarks]]
 # Digital Content Provenance Marking

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Facial Capture System
 ```json-ld

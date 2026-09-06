@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Persistent Memory
 ```json-ld

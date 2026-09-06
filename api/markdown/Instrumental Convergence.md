@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Instrumental Convergence
 ```json-ld

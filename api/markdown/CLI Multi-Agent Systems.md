@@ -1,5 +1,8 @@
-public:: true
-alias:: CLI multi agent systems
+---
+public: true
+aliases:
+  - CLI multi agent systems
+---
 
 # CLI Multi-Agent Systems
 ```json-ld

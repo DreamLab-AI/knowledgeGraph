@@ -1,5 +1,8 @@
-public:: true
-alias:: NaturalLanguageProcessing
+---
+public: true
+aliases:
+  - NaturalLanguageProcessing
+---
 
 # Natural Language Processing
 ```json-ld

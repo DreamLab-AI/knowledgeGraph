@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Proof-of-Work Energy Consumption
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ETSI_Domain_Human_Interface
 ```json-ld
@@ -220,7 +222,7 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - **hasPart**: [[ETSI_Domain_Human_Interface___UX]], [[Accessibility Standards]]
+  - **hasPart**: [[ETSI_Domain_Human_Interface/UX]], [[Accessibility Standards]]
   - **requires**: [[Virtual Environment]], [[Telecollaboration]]
   - **enables**: [[Immersive Interface]], [[Accessibility]]
   - **relatedTo**: [[ETSIDomainClassification]]

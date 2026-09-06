@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Graphics Library
 ```json-ld

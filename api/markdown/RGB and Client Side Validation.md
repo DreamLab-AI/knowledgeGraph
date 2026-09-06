@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # RGB and Client Side Validation
 ```json-ld

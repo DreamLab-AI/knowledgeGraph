@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Geometry Shader
 ```json-ld

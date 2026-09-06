@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Design Thinking
 ```json-ld
@@ -49,7 +51,7 @@ public:: true
 - ### Definition
   - Design Thinking is a human-centred iterative methodology that applies empathetic [[User Research]] and rapid prototyping to generate innovative solutions, shaping both [[Product Design]] processes and broader [[User Experience]] strategy.
 - ### Relationships
-  - Design Thinking relies on [[User Research]] and interviews to build empathy maps, informing a problem definition stage that anchors subsequent ideation. [[Collaborative Design]] workshops—often called design sprints—generate diverse ideas that are quickly translated into low-fidelity prototypes using [[Design Software]]. Tested insights feed back into the definition stage, making the process genuinely iterative. Outputs influence [[Information Architecture]], [[Accessible Design]] decisions, and [[Human Computer Interaction]] guidelines. The [[ETSI_Domain_Human_Interface___UX]] standards domain formalises many of these practices for regulated sectors.
+  - Design Thinking relies on [[User Research]] and interviews to build empathy maps, informing a problem definition stage that anchors subsequent ideation. [[Collaborative Design]] workshops—often called design sprints—generate diverse ideas that are quickly translated into low-fidelity prototypes using [[Design Software]]. Tested insights feed back into the definition stage, making the process genuinely iterative. Outputs influence [[Information Architecture]], [[Accessible Design]] decisions, and [[Human Computer Interaction]] guidelines. The [[ETSI_Domain_Human_Interface/UX]] standards domain formalises many of these practices for regulated sectors.
 - ### Content
   - Design Thinking emerged as a challenge to purely analytical problem-solving. Where traditional engineering processes begin with requirements and proceed linearly to delivery, Design Thinking front-loads understanding of human needs. Ethnographic observation, contextual inquiry, and empathy interviews are used to surface latent needs that users cannot always articulate directly.
 

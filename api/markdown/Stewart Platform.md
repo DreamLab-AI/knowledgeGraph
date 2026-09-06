@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Stewart Platform
 ```json-ld

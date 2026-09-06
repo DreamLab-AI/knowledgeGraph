@@ -1,5 +1,8 @@
-public:: true
-alias:: EdgeComputingNode
+---
+public: true
+aliases:
+  - EdgeComputingNode
+---
 
 # Edge Computing Node
 ```json-ld

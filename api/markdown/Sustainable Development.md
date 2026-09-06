@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sustainable Development
 ```json-ld

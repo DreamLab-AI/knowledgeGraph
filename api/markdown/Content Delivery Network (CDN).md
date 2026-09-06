@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Content Delivery Network (CDN)
 ```json-ld

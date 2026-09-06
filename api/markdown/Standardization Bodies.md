@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Standardization Bodies
 ```json-ld

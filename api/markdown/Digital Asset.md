@@ -1,5 +1,9 @@
-public:: true
-alias:: Digital-Asset, DigitalAsset
+---
+public: true
+aliases:
+  - Digital-Asset
+  - DigitalAsset
+---
 
 # Digital Asset
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Gaze Awareness
 ```json-ld

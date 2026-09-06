@@ -1,5 +1,8 @@
-public:: true
-alias:: ApplicationLayer
+---
+public: true
+aliases:
+  - ApplicationLayer
+---
 
 # Application Layer
 ```json-ld

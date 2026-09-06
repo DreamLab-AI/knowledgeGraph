@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Human Agency and Oversight
 ```json-ld

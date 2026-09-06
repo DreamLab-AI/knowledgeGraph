@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Value Alignment
 ```json-ld

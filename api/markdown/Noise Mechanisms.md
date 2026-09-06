@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Noise Mechanisms
 ```json-ld

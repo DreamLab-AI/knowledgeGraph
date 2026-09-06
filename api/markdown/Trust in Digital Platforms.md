@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Trust in Digital Platforms
 ```json-ld

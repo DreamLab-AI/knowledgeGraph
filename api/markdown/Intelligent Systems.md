@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Intelligent Systems
 ```json-ld

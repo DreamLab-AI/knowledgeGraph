@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Function Schemas
 ```json-ld

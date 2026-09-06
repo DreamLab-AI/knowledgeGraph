@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Sensor Interface
 ```json-ld

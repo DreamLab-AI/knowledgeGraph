@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Calibration System
 ```json-ld

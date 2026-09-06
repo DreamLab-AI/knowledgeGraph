@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Suggested Reading Order
 ```json-ld

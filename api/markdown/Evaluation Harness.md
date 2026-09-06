@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Evaluation Harness
 ```json-ld

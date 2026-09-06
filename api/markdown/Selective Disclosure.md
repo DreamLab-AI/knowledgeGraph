@@ -1,5 +1,8 @@
-public:: true
-alias:: SelectiveDisclosure
+---
+public: true
+aliases:
+  - SelectiveDisclosure
+---
 
 # selective disclosure
 ```json-ld

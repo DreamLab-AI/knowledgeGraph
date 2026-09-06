@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Metaverse and Spatial Risks]]
 # Spatial Embodiment Harm Taxonomy

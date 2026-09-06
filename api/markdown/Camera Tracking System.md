@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Camera Tracking System
 ```json-ld

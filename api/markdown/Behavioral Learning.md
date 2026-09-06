@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Behavioral Learning
 ```json-ld

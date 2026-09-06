@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Regulatory Licence
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # TELE-050-neural-rendering-telepresence
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Apple Vision Pro
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ISO/IEC TR 24028
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: BlindSignatures
+---
+public: true
+aliases:
+  - BlindSignatures
+---
 
 # Blind Signatures
 ```json-ld

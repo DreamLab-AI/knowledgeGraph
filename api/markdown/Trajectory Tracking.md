@@ -1,5 +1,8 @@
-public:: true
-alias:: TrajectoryTracking
+---
+public: true
+aliases:
+  - TrajectoryTracking
+---
 
 # Trajectory Tracking
 ```json-ld

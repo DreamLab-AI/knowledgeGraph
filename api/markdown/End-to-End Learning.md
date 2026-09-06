@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # End-to-End Learning
 ```json-ld

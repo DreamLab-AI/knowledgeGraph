@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Equalized Odds
 ```json-ld

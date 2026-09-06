@@ -1,5 +1,8 @@
-public:: true
-alias:: GraspPlanning
+---
+public: true
+aliases:
+  - GraspPlanning
+---
 
 # Grasp Planning
 ```json-ld

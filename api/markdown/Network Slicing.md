@@ -1,5 +1,8 @@
-public:: true
-alias:: NetworkSlicing
+---
+public: true
+aliases:
+  - NetworkSlicing
+---
 
 # Network Slicing
 ```json-ld

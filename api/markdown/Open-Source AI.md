@@ -1,5 +1,8 @@
-public:: true
-alias:: Open Source AI
+---
+public: true
+aliases:
+  - Open Source AI
+---
 
 # open-source ai
 ```json-ld

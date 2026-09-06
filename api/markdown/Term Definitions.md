@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Term Definitions
 ```json-ld

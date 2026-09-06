@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Reporting Mechanisms
 ```json-ld

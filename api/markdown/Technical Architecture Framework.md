@@ -1,5 +1,8 @@
-public:: true
-alias:: TechnicalArchitectureFramework
+---
+public: true
+aliases:
+  - TechnicalArchitectureFramework
+---
 
 # Technical Architecture Framework
 ```json-ld

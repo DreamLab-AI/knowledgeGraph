@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ownership Transfer
 ```json-ld

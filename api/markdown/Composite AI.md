@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Composite AI
 ```json-ld

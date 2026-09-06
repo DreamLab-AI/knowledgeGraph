@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IP Addressing
 ```json-ld

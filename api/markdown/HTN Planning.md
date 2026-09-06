@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # HTN Planning
 ```json-ld

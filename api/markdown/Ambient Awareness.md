@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ambient Awareness
 ```json-ld

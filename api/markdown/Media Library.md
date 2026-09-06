@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Media Library
 ```json-ld

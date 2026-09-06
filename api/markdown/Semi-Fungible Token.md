@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Semi-Fungible Token
 ```json-ld

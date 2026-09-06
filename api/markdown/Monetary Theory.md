@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Monetary Theory
 ```json-ld

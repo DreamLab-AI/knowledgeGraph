@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Trustless Execution
 ```json-ld

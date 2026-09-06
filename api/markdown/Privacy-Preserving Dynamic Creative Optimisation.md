@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Client side DCO]]
 # Privacy-Preserving Dynamic Creative Optimisation

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Part-of-Speech Tagging
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Green Bond Market
 ```json-ld

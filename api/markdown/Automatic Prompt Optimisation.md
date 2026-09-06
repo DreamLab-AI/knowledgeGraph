@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Automatic Prompt Optimisation
 ```json-ld

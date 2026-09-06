@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Triton Inference Server
 ```json-ld

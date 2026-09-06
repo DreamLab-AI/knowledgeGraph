@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Volume Rendering
 ```json-ld

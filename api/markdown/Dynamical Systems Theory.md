@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Dynamical Systems Theory
 ```json-ld

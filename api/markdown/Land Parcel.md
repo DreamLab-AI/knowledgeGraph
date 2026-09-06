@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Land Parcel
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # transaction fees
 ```json-ld

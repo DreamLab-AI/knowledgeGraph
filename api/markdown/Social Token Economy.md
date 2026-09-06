@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Social Token Economy
 ```json-ld

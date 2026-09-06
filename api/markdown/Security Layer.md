@@ -1,5 +1,8 @@
-public:: true
-alias:: SecurityLayer
+---
+public: true
+aliases:
+  - SecurityLayer
+---
 
 # Security Layer
 ```json-ld

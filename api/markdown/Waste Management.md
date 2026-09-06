@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Waste Management
 ```json-ld

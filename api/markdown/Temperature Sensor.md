@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Temperature Sensor
 ```json-ld

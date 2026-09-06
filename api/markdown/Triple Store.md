@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Triple Store
 ```json-ld

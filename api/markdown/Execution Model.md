@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Execution Model
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Rotary Encoder
 ```json-ld

@@ -1,5 +1,9 @@
-public:: true
-alias:: BC-0479-regulatory-compliance, RegulatoryCompliance
+---
+public: true
+aliases:
+  - BC-0479-regulatory-compliance
+  - RegulatoryCompliance
+---
 
 # Regulatory Compliance
 ```json-ld

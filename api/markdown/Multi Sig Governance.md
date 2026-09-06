@@ -1,5 +1,8 @@
-public:: true
-alias:: Multi-Sig Governance
+---
+public: true
+aliases:
+  - Multi-Sig Governance
+---
 
 # Multi Sig Governance
 ```json-ld

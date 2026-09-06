@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Ontology in LLM Operations
 ```json-ld

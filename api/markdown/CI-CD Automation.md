@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # CI-CD Automation
 ```json-ld

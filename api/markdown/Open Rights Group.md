@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Open Rights Group
 ```json-ld

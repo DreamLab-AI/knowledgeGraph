@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Query Engine
 ```json-ld

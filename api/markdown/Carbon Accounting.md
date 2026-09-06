@@ -1,5 +1,8 @@
-public:: true
-alias:: CarbonAccounting
+---
+public: true
+aliases:
+  - CarbonAccounting
+---
 
 # Carbon Accounting
 ```json-ld

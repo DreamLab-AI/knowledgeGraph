@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # RESTful API
 ```json-ld

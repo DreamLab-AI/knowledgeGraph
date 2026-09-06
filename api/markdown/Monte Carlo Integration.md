@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Monte Carlo Integration
 ```json-ld

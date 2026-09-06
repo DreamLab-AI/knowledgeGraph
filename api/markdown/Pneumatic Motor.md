@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Pneumatic Motor
 ```json-ld

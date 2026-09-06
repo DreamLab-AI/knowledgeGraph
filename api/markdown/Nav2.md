@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Nav2
 ```json-ld

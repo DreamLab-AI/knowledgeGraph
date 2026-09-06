@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Social contract and jobs]]
 # Employment Social Contract Under Automation

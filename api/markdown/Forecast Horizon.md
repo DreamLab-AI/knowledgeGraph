@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Forecast Horizon
 ```json-ld

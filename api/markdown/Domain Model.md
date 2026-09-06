@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Domain Model
 ```json-ld

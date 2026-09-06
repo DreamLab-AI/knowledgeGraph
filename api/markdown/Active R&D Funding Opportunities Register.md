@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Funding (active and available)]]
 # Active R&D Funding Opportunities Register
@@ -131,21 +133,21 @@ elevatedFrom:: [[Funding (active and available)]]
   - [Creative Industries Policy & Evidence Centre | Calling for a UK… (pec.ac.uk)](https://pec.ac.uk/news/calling-for-a-uk-centre-for-ai-and-the-creative-industries)
   - [Connected tech: AI and creative technology: Government Response to the Committee’s Eleventh Report of Session 2022–23
 		- Culture, Media and Sport Committee (parliament.uk)](https://publications.parliament.uk/pa/cm5804/cmselect/cmcumeds/441/report.html)
-  - TODO Talk to FuzzyDuck
-  - TODO Get NVIDIA and/or Microsoft buy in
-  - TODO Talk to Badger and Coombes
-  - TODO Talk to Immersive
-  - TODO Start application document
-  - DONE Finances meeting with Marco
-		- ![KnowherePrevious.pdf](../assets/KnowherePrevious_1706709691210_0.pdf)
+  - [ ] Talk to FuzzyDuck
+  - [ ] Get NVIDIA and/or Microsoft buy in
+  - [ ] Talk to Badger and Coombes
+  - [ ] Talk to Immersive
+  - [ ] Start application document
+  - [x] Finances meeting with Marco
+		- ![KnowherePrevious.pdf](assets/KnowherePrevious_1706709691210_0.pdf)
 		- [ChatGPT
 		- Structured exploration
 		- main daily driver (openai.com)](https://chat.openai.com/g/g-QjexzLwl7-structured-exploration-main-daily-driver/c/43c2aa80-a317-40b2-b842-283611fceb62)
-		- [MITIH Project Grant Application.docx](../assets/MITIH_Project_Grant_Application_1706695237566_0.docx)
-		- [MITIH_ Risk Register .docx](../assets/MITIH_Risk_Register_1706695247428_0.docx)
+		- [MITIH Project Grant Application.docx](assets/MITIH_Project_Grant_Application_1706695237566_0.docx)
+		- [MITIH_ Risk Register .docx](assets/MITIH_Risk_Register_1706695247428_0.docx)
 		- [IUK Official
-		- Claim Validation Guidance.docx](../assets/IUK_Official_-_Claim_Validation_Guidance_1706695268541_0.docx)
-		- [InnnovateUK Company Finance workbook (1).xlsm](../assets/InnnovateUK_Company_Finance_workbook_(1)_1706695277680_0.xlsm)
+		- Claim Validation Guidance.docx](assets/IUK_Official_-_Claim_Validation_Guidance_1706695268541_0.docx)
+		- [InnnovateUK Company Finance workbook (1).xlsm](assets/InnnovateUK_Company_Finance_workbook_(1)_1706695277680_0.xlsm)
 			- This needs to be paid for.
 		- **Timing**
 			- April May start time, run to December?

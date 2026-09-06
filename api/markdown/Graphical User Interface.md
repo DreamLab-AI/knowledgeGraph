@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Graphical User Interface
 ```json-ld

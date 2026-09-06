@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Safety Integrity Level
 ```json-ld

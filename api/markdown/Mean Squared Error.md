@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Mean Squared Error
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Role-Based Access Control
 ```json-ld

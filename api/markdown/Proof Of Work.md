@@ -1,5 +1,10 @@
-public:: true
-alias:: Proof-of-Work, ProofOfWork, proof-of-work
+---
+public: true
+aliases:
+  - Proof-of-Work
+  - ProofOfWork
+  - proof-of-work
+---
 
 # Proof Of Work
 ```json-ld

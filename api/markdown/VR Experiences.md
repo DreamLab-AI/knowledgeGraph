@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # VR Experiences
 ```json-ld

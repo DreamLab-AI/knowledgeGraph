@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Applied Mathematics
 ```json-ld

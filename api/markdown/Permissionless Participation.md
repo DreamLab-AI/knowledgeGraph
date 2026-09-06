@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Permissionless Participation
 ```json-ld

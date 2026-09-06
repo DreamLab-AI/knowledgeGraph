@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Partition Tolerance
 ```json-ld

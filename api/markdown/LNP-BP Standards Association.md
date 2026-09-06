@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # LNP-BP Standards Association
 ```json-ld

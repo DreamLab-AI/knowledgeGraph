@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Future of Humanity Institute
 ```json-ld

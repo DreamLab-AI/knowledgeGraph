@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Backward Chaining
 ```json-ld

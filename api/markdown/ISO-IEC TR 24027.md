@@ -1,5 +1,8 @@
-public:: true
-alias:: ISO/IEC TR 24027
+---
+public: true
+aliases:
+  - ISO/IEC TR 24027
+---
 
 # ISO-IEC TR 24027
 ```json-ld

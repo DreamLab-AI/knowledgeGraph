@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Saga Pattern
 ```json-ld

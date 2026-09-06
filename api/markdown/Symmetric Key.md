@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Symmetric Key
 ```json-ld

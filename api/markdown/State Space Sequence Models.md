@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[State Space and Other Approaches]]
 # State Space Sequence Models

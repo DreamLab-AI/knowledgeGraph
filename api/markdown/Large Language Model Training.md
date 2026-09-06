@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Large Language Model Training
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: RenderingPipeline
+---
+public: true
+aliases:
+  - RenderingPipeline
+---
 
 # Rendering Pipeline
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: Control Systems
+---
+public: true
+aliases:
+  - Control Systems
+---
 
 # Control System
 ```json-ld

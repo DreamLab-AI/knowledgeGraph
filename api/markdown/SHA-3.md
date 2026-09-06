@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # SHA-3
 ```json-ld

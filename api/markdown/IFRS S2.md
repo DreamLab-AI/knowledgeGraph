@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IFRS S2
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Co-Presence
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # rb 0007 collaborative robot
 ```json-ld

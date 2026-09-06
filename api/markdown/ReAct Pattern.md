@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ReAct Pattern
 ```json-ld

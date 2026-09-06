@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Monolithic Architecture
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Bayesian Decision Theory
 ```json-ld

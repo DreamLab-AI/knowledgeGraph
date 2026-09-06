@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Log Seq Spring Thing
 ```json-ld
@@ -96,7 +98,7 @@ public:: true
 
 - ### Content
   - [(4) AI Project Hacking | LinkedIn](https://www.linkedin.com/pulse/ai-project-hacking-dreamlabinstitute-6u5ue/?trackingId=H%2FB9cbMIRf2u%2FJuM8BAYkg%3D%3D)
-  - [jingsprigthinghandover.txt](../assets/jingsprigthinghandover_1718787978349_0.txt)
+  - [jingsprigthinghandover.txt](assets/jingsprigthinghandover_1718787978349_0.txt)
   - <iframe src="https://www.visionflow.info" style="width: 100%; height: 600px"></iframe>
 
 - ### Provenance

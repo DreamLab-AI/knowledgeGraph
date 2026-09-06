@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Universal Design
 ```json-ld

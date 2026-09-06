@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[AI as a step function]]
 # AI Capability Discontinuity Model

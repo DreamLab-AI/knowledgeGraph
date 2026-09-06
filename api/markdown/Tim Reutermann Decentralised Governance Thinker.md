@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Tim Reutermann]]
 # Tim Reutermann Decentralised Governance Thinker

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Human vs AI]]
 # Human-AI Capability Complementarity

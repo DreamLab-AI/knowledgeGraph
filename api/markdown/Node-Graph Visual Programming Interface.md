@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Node based visual interfaces]]
 # Node-Graph Visual Programming Interface

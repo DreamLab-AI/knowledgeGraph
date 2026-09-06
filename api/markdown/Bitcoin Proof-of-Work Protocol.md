@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Bitcoin]]
 # Bitcoin Proof-of-Work Protocol

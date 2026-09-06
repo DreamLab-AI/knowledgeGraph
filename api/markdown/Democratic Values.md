@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Democratic Values
 ```json-ld

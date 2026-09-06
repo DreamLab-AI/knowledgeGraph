@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # ETSI GR MEC 032
 ```json-ld

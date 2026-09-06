@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Trust over IP Stack
 ```json-ld

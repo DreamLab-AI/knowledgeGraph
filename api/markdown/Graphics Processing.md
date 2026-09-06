@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Graphics Processing
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # BNB Chain
 ```json-ld

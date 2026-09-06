@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Instant Settlement
 ```json-ld

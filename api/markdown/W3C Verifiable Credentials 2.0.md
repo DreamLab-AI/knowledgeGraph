@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # W3C Verifiable Credentials 2.0
 ```json-ld

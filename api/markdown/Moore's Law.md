@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Moore's Law
 ```json-ld

@@ -1,5 +1,8 @@
-public:: true
-alias:: TechnologyStack
+---
+public: true
+aliases:
+  - TechnologyStack
+---
 
 # Technology Stack
 ```json-ld

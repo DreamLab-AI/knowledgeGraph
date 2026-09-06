@@ -349,12 +349,12 @@
       "label": "Distributed Ledger Technology (DLT)"
     },
     {
-      "slug": "etsi-domain-infrastructure",
-      "label": "ETSI_Domain_Infrastructure"
-    },
-    {
       "slug": "etsi-domain-infrastructure-immersive",
       "label": "ETSI_Domain_Infrastructure___Immersive"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
     },
     {
       "slug": "edge-computing",

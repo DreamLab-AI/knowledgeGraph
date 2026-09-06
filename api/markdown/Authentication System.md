@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Authentication System
 ```json-ld

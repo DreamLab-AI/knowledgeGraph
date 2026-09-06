@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Vertex Shader
 ```json-ld

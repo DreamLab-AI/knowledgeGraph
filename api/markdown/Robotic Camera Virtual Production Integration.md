@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[VP robotics project]]
 # Robotic Camera Virtual Production Integration

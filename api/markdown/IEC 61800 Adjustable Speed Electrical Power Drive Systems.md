@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # IEC 61800 Adjustable Speed Electrical Power Drive Systems
 ```json-ld

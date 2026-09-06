@@ -1,5 +1,8 @@
-public:: true
-alias:: Real Time Control
+---
+public: true
+aliases:
+  - Real Time Control
+---
 
 # Real-Time Control
 ```json-ld

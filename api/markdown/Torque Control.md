@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Torque Control
 ```json-ld

@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Fraud Proof
 ```json-ld

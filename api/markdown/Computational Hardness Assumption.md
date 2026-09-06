@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Computational Hardness Assumption
 ```json-ld

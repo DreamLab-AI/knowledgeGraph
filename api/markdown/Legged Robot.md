@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Legged Robot
 ```json-ld

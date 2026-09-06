@@ -1,5 +1,8 @@
-public:: true
-alias:: Data-Efficient Learning
+---
+public: true
+aliases:
+  - Data-Efficient Learning
+---
 
 # Data Efficient Learning
 ```json-ld

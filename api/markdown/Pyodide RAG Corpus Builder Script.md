@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 elevatedFrom:: [[Python to build RAG data page]]
 # Pyodide RAG Corpus Builder Script

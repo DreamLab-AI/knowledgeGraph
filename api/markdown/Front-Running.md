@@ -1,4 +1,6 @@
-public:: true
+---
+public: true
+---
 
 # Front-Running
 ```json-ld
