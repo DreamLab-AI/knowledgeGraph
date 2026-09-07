@@ -27,11 +27,24 @@ const REQUIRED_FIELDS = [
   'owner', 'review_trigger', 'repo',
 ];
 
+// Repository identity. `narrativegoldmine` is the historical publishing name
+// this corpus was minted under: it is baked into every class IRI
+// (https://narrativegoldmine.com/class/<slug>), the CNAME and 30+ in-tree
+// citations, and ADR-2004 makes those identifiers immutable — so the alias is
+// kept, not rewritten. The canonical repository is stated explicitly here and
+// printed into the generated index, so a reader never has to guess which
+// repository a record governs.
+const CANONICAL_REPO = 'DreamLab-AI/knowledgeGraph';
+const REPO_IDENTITY = {
+  narrativegoldmine: CANONICAL_REPO,            // historical publishing name
+  'DreamLab-AI/knowledgeGraph': CANONICAL_REPO, // canonical, accepted verbatim
+};
+
 const ENUMS = {
   decision_status: ['proposed', 'accepted', 'rejected', 'superseded'],
   implementation_status: ['none', 'partial', 'complete'],
   activation_status: ['inactive', 'staged', 'live'],
-  repo: ['narrativegoldmine'],
+  repo: Object.keys(REPO_IDENTITY),
 };
 
 // Files that are templates/skeletons: validated for structure but excluded
@@ -175,6 +188,11 @@ function main() {
     md += fs.readFileSync(preamblePath, 'utf8').trim() + '\n\n';
   }
   md += `_${rows.length} record(s). Regenerate with_ \`node scripts/adr-index-gen.js ${dir}\`.\n\n`;
+  // Identity map, emitted so the historical name in `repo:` resolves to the
+  // canonical repository without rewriting immutable identifiers (ADR-2004).
+  md += `_Canonical repository: **${CANONICAL_REPO}**. The \`repo\` column may carry the historical `;
+  md += `publishing name \`narrativegoldmine\` — the name minted into every class IRI, the CNAME and `;
+  md += `the site — which maps to the canonical repository above._\n\n`;
   md += '| ID | Title | Date | Decision | Impl | Activation | Supersedes | Superseded by | Owner | Repo |\n';
   md += '|----|-------|------|----------|------|------------|------------|---------------|-------|------|\n';
   for (const r of rows) {
