@@ -5,7 +5,7 @@
 
 <https://narrativegoldmine.com/ontology/inferred> a owl:Ontology ;
     rdfs:label "NarrativeGoldmine Inferred Axioms"@en ;
-    vc:generatedAt "2026-09-07T12:00:59.703246+00:00"^^xsd:dateTime ;
+    vc:generatedAt "2026-09-07T13:15:39.845219+00:00"^^xsd:dateTime ;
     vc:inferenceMethod "transitive-subclass-closure" .
 
 <urn:ngm:class:1-hive> rdfs:subClassOf <urn:ngm:class:bc-governance-and-regulation>,
